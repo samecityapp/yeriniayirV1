@@ -64,10 +64,10 @@ export function HotelDetails({ features, tabs, mapImageUrl, location, websiteUrl
                         key={index}
                         className="flex items-center gap-2.5 p-3.5 bg-white border border-gray-200 rounded-xl"
                       >
-                        <div className="w-9 h-9 rounded-lg bg-gray-900 flex items-center justify-center flex-shrink-0">
+                        <div className="w-9 h-9 rounded-lg bg-gray-400 flex items-center justify-center flex-shrink-0">
                           <IconComponent className="w-4.5 h-4.5 text-white" strokeWidth={2} />
                         </div>
-                        <span className="text-gray-900 font-medium text-[14px] leading-snug">{tag.name}</span>
+                        <span className="text-gray-600 font-medium text-[14px] leading-snug">{tag.name}</span>
                       </div>
                     );
                   })}
