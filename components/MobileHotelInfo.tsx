@@ -31,11 +31,11 @@ export function MobileHotelInfo({
       <div className="flex items-center justify-center gap-2 mb-2">
         <div className="flex-1 bg-white shadow-lg rounded-2xl p-4 text-center">
           <p className="text-xs font-medium text-gray-600 mb-0.5">Konum</p>
-          <p className="text-lg font-bold text-gray-900">{locationCity}</p>
+          <p className="text-base font-bold text-gray-900">{locationCity}</p>
         </div>
         <div className="flex-1 bg-white shadow-lg rounded-2xl p-4 text-center">
           <p className="text-xs font-medium text-gray-600 mb-0.5">GNK Skor</p>
-          <p className="text-lg font-bold text-gray-900 mb-1">{rating}<span className="mx-0.5">/</span>5</p>
+          <p className="text-base font-bold text-gray-900 mb-1">{rating}<span className="mx-0.5">/</span>5</p>
           <div className="flex justify-center gap-0.5">
             {[1, 2, 3, 4, 5].map((star) => (
               <svg
@@ -51,7 +51,7 @@ export function MobileHotelInfo({
         </div>
         <div className="flex-1 bg-white shadow-lg rounded-2xl p-4 text-center">
           <p className="text-xs font-medium text-gray-600 mb-0.5">Fiyat</p>
-          <p className="text-lg font-bold text-gray-900">{price.toLocaleString('tr-TR')} ₺</p>
+          <p className="text-base font-bold text-gray-900">{price.toLocaleString('tr-TR')} ₺</p>
         </div>
       </div>
 
