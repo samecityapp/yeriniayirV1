@@ -353,10 +353,15 @@ export const db = {
 
     async delete(id: string): Promise<boolean> {
       // First delete all group_hotels relationships
-      await supabase
+      const { error: deleteError } = await supabase
         .from('group_hotels')
         .delete()
         .eq('group_id', id);
+
+      if (deleteError) {
+        console.error('Error deleting group_hotels:', deleteError);
+        throw new Error(`İlişkili oteller silinirken hata: ${deleteError.message}`);
+      }
 
       // Then soft delete the group
       const { error } = await supabase
@@ -364,7 +369,11 @@ export const db = {
         .update({ deleted_at: new Date().toISOString() })
         .eq('id', id);
 
-      if (error) throw error;
+      if (error) {
+        console.error('Error soft deleting group:', error);
+        throw new Error(`Grup silinirken hata: ${error.message}`);
+      }
+
       return true;
     },
 

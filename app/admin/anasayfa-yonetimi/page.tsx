@@ -38,8 +38,9 @@ export default function AnasayfaYonetimiPage() {
 
       setGroups(groupsWithHotels);
       setHotels(hotelsData);
-    } catch (error) {
+    } catch (error: any) {
       console.error('Error loading data:', error);
+      alert(`Veri yüklenirken hata: ${error?.message || 'Bilinmeyen hata'}`);
     } finally {
       setIsLoading(false);
     }
@@ -99,14 +100,24 @@ export default function AnasayfaYonetimiPage() {
   };
 
   const handleDeleteGroup = async (groupId: string, title: string) => {
-    if (confirm(`"${title}" grubunu silmek istediginizden emin misiniz?`)) {
-      try {
-        await db.groups.delete(groupId);
-        await loadData();
-      } catch (error) {
-        console.error('Error deleting group:', error);
-        alert('Grup silinirken hata olustu!');
-      }
+    if (!confirm(`"${title}" grubunu silmek istediginizden emin misiniz?`)) {
+      return;
+    }
+
+    setIsLoading(true);
+    try {
+      console.log('Deleting group:', groupId);
+      const result = await db.groups.delete(groupId);
+      console.log('Delete result:', result);
+
+      await loadData();
+      alert('Grup başarıyla silindi!');
+    } catch (error: any) {
+      console.error('Error deleting group:', error);
+      const errorMessage = error?.message || error?.toString() || 'Bilinmeyen hata';
+      alert(`Grup silinirken hata oluştu: ${errorMessage}`);
+    } finally {
+      setIsLoading(false);
     }
   };
 
