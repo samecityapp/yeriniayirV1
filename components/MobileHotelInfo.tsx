@@ -49,9 +49,12 @@ export function MobileHotelInfo({
             ))}
           </div>
         </div>
-        <div className="flex-1 bg-white shadow-lg rounded-2xl p-4 text-center">
+        <div className="flex-1 bg-white shadow-lg rounded-2xl p-4 text-center min-w-0">
           <p className="text-xs font-medium text-gray-600 mb-0.5">Fiyat</p>
-          <p className="text-base font-bold text-gray-900">{price.toLocaleString('tr-TR')} ₺</p>
+          <div className="flex items-baseline justify-center gap-1">
+            <span className="text-sm font-bold text-gray-900">{price.toLocaleString('tr-TR')}</span>
+            <span className="text-sm font-bold text-gray-900">₺</span>
+          </div>
         </div>
       </div>
 
