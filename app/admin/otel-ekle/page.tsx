@@ -121,7 +121,7 @@ export default function OtelEklePage() {
     }
 
     // Validate rating
-    const validatedRating = Math.max(0, Math.min(5, gnkScore || 0));
+    const validatedRating = Math.max(0, Math.min(10, gnkScore || 0));
 
     // Validate price
     const validatedPrice = Math.max(0, parseFloat(price) || 0);
@@ -240,19 +240,20 @@ export default function OtelEklePage() {
 
               <div className="space-y-2">
                 <Label htmlFor="score" className="text-sm font-semibold">
-                  Otel Puanı
+                  Otel Puanı (10 Üzerinden)
                 </Label>
                 <Input
                   id="score"
                   type="number"
                   step="0.1"
                   min="0"
-                  max="5"
+                  max="10"
                   value={gnkScore}
                   onChange={(e) => setGnkScore(parseFloat(e.target.value) || 0)}
-                  placeholder="0.0 - 5.0"
+                  placeholder="0.0 - 10.0"
                   className="h-11"
                 />
+                <p className="text-xs text-gray-500">Örn: 9.6 gibi ondalık değerler girebilirsiniz</p>
               </div>
 
               <div className="space-y-2">

@@ -150,7 +150,7 @@ export default function OtelListesiPage() {
                       <div className="flex items-center gap-2">
                         <div className="flex items-center gap-1 bg-yellow-50 text-yellow-700 px-3 py-1.5 rounded-full">
                           <Star className="w-4 h-4 fill-current" />
-                          <span className="font-semibold">{hotel.gnkScore.toFixed(1)}</span>
+                          <span className="font-semibold">{hotel.gnkScore.toFixed(1)}/10</span>
                         </div>
                         {hotel.price > 0 && (
                           <div className="bg-blue-50 text-blue-700 px-3 py-1.5 rounded-full text-sm font-medium">

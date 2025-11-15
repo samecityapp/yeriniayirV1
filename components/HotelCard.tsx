@@ -111,7 +111,7 @@ export default function HotelCard({ hotel }: HotelCardProps) {
             {hotel.gnkScore > 0 && (
               <div className="absolute top-3 right-3 flex items-center bg-black/40 backdrop-blur-sm px-3 py-1 rounded-full text-white text-sm font-semibold">
                 <Star size={14} className="mr-1.5 fill-white" />
-                <span>{hotel.gnkScore.toFixed(1)}</span>
+                <span>{hotel.gnkScore.toFixed(1)}/10</span>
               </div>
             )}
 

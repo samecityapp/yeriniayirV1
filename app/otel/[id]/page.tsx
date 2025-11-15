@@ -134,7 +134,7 @@ export default async function HotelDetailPage({ params }: Props) {
             <div className="flex-shrink-0 border-2 border-blue-600 bg-white px-6 py-4 rounded-xl shadow-sm">
               <div className="text-center">
                 <p className="text-xs font-medium mb-1 text-gray-600">GNK Puan</p>
-                <p className="font-bold text-4xl text-blue-600">{rating.score}</p>
+                <p className="font-bold text-4xl text-blue-600">{rating.score.toFixed(1)}<span className="text-2xl text-gray-500">/10</span></p>
               </div>
             </div>
           </div>

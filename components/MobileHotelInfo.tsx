@@ -35,12 +35,12 @@ export function MobileHotelInfo({
         </div>
         <div className="flex-1 bg-white shadow-lg rounded-2xl p-4 text-center">
           <p className="text-xs font-medium text-gray-600 mb-0.5">GNK Skor</p>
-          <p className="text-base font-bold text-gray-900 mb-1">{rating}<span className="mx-0.5">/</span>5</p>
+          <p className="text-base font-bold text-gray-900 mb-1">{rating.toFixed(1)}<span className="mx-0.5">/</span>10</p>
           <div className="flex justify-center gap-0.5">
             {[1, 2, 3, 4, 5].map((star) => (
               <svg
                 key={star}
-                className={`w-3.5 h-3.5 ${star <= rating ? 'text-yellow-400' : 'text-gray-300'}`}
+                className={`w-3.5 h-3.5 ${star <= rating / 2 ? 'text-yellow-400' : 'text-gray-300'}`}
                 fill="currentColor"
                 viewBox="0 0 20 20"
               >

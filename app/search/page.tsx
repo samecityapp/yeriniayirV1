@@ -277,7 +277,7 @@ export default function SearchPage() {
                             />
                             <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full flex items-center text-sm">
                               <Star className="w-4 h-4 text-yellow-400 fill-current mr-1.5" />
-                              <span className="font-bold text-gray-900">{hotel.gnkScore}</span>
+                              <span className="font-bold text-gray-900">{hotel.gnkScore.toFixed(1)}/10</span>
                             </div>
                           </div>
                           <div className="flex-1 p-5 flex flex-col">
