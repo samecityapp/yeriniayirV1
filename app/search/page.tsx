@@ -108,14 +108,14 @@ export default function SearchPage() {
               hotel.tags?.includes(tagQuery.slug)
           );
       } else if (query) {
-          const searchLower = query.toLowerCase();
+          const searchLower = query.toLocaleLowerCase('tr-TR');
           processedHotels = processedHotels.filter(hotel => {
-              const nameMatch = hotel.name.toLowerCase().includes(searchLower);
-              const locationMatch = hotel.location.toLowerCase().includes(searchLower);
-              const aboutMatch = hotel.about?.toLowerCase().includes(searchLower);
+              const nameMatch = hotel.name.toLocaleLowerCase('tr-TR').includes(searchLower);
+              const locationMatch = hotel.location.toLocaleLowerCase('tr-TR').includes(searchLower);
+              const aboutMatch = hotel.about?.toLocaleLowerCase('tr-TR').includes(searchLower);
               const tagMatch = hotel.tags?.some(tagSlug => {
                 const tag = allTags.find(t => t.slug === tagSlug);
-                return tag?.name.toLowerCase().includes(searchLower);
+                return tag?.name.toLocaleLowerCase('tr-TR').includes(searchLower);
               });
               return nameMatch || locationMatch || aboutMatch || tagMatch;
           });

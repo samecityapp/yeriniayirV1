@@ -99,11 +99,11 @@ export default function SearchFilters() {
       return;
     }
 
-    const query = searchQuery.toLowerCase();
+    const query = searchQuery.toLocaleLowerCase('tr-TR');
     const newSuggestions: SearchSuggestion[] = [];
 
     allHotels.forEach(hotel => {
-      if (hotel.name.toLowerCase().includes(query)) {
+      if (hotel.name.toLocaleLowerCase('tr-TR').includes(query)) {
         newSuggestions.push({
           type: 'hotel',
           value: hotel.name,
@@ -114,7 +114,7 @@ export default function SearchFilters() {
 
     const uniqueLocations = Array.from(new Set(allHotels.map(h => h.location)));
     uniqueLocations.forEach(location => {
-      if (location.toLowerCase().includes(query)) {
+      if (location.toLocaleLowerCase('tr-TR').includes(query)) {
         newSuggestions.push({
           type: 'location',
           value: location,
@@ -124,7 +124,7 @@ export default function SearchFilters() {
     });
 
     allTags.forEach(tag => {
-      if (tag.name.toLowerCase().includes(query)) {
+      if (tag.name.toLocaleLowerCase('tr-TR').includes(query)) {
         newSuggestions.push({
           type: 'tag',
           value: tag.slug,
@@ -149,7 +149,11 @@ export default function SearchFilters() {
 
   const handleSuggestionClick = (suggestion: SearchSuggestion) => {
     setSearchQuery(suggestion.label);
-    handleSearch(suggestion.value);
+    if (suggestion.type === 'location') {
+      handleSearch(suggestion.label);
+    } else {
+      handleSearch(suggestion.value);
+    }
   };
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
