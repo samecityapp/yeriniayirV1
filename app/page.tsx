@@ -97,13 +97,10 @@ function HomePageSkeleton() {
 export default function HomePage() {
   return (
     <main className="container mx-auto px-4 pt-2 pb-8">
-      <div className="text-center mt-2 mb-8">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
-          Hayalinizdeki Tatili Keşfedin
+      <div className="text-center mt-2 mb-6">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">
+          Türkiye'nin En Seçkin Otellerini Keşfedin
         </h1>
-        <p className="text-sm text-gray-600 max-w-3xl mx-auto mb-8 font-light">
-          Türkiye'nin en seçkin otellerini sizin için bir araya getirdik
-        </p>
         <SearchFilters />
       </div>
 
