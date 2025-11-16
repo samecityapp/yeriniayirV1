@@ -235,9 +235,9 @@ export default function SearchPage() {
           </div>
           <button
             onClick={() => setShowFilters(!showFilters)}
-            className="lg:hidden inline-flex items-center px-4 py-2 bg-white border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors"
+            className="lg:hidden inline-flex items-center px-6 py-3 bg-gradient-to-r from-gray-900 to-gray-800 text-white rounded-xl font-semibold shadow-lg shadow-gray-900/30 hover:shadow-xl hover:shadow-gray-900/40 hover:scale-105 transition-all duration-200 active:scale-95"
           >
-            <SlidersHorizontal className="w-4 h-4 mr-2" />
+            <SlidersHorizontal className="w-5 h-5 mr-2" />
             Filtrele
           </button>
         </div>
