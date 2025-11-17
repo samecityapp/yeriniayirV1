@@ -9,6 +9,7 @@ import { Restaurant, RestaurantCategory } from '@/lib/types';
 import { sapancaPlaces } from '@/data/sapancaPlaces';
 import { bodrumPlaces } from '@/data/bodrumPlaces';
 import { antalyaPlaces } from '@/data/antalyaPlaces';
+import { kapadokyaPlaces } from '@/data/kapadokyaPlaces';
 
 const RestaurantDetailsModal = dynamic(() =>
   import('./RestaurantDetailsModal').then(mod => ({ default: mod.RestaurantDetailsModal }))
@@ -61,6 +62,19 @@ export function NearbyPlacesTab({ location, coordinates }: NearbyPlacesTabProps)
 
       if (location.toLowerCase().includes('antalya') || location.toLowerCase().includes('kemer') || location.toLowerCase().includes('side')) {
         const normalizedCategories = antalyaPlaces.map(cat => ({
+          ...cat,
+          restaurants: cat.places || cat.restaurants || []
+        }));
+        setCategories(normalizedCategories);
+        if (normalizedCategories.length > 0) {
+          setActiveCategory(normalizedCategories[0].title);
+        }
+        setLoading(false);
+        return;
+      }
+
+      if (location.toLowerCase().includes('kapadokya') || location.toLowerCase().includes('göreme') || location.toLowerCase().includes('uçhisar') || location.toLowerCase().includes('ürgüp')) {
+        const normalizedCategories = kapadokyaPlaces.map(cat => ({
           ...cat,
           restaurants: cat.places || cat.restaurants || []
         }));
