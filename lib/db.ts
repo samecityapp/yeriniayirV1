@@ -194,6 +194,8 @@ export const db = {
         coordinates: row.latitude && row.longitude
           ? { lat: parseFloat(row.latitude), lng: parseFloat(row.longitude) }
           : undefined,
+        latitude: row.latitude ? parseFloat(row.latitude) : undefined,
+        longitude: row.longitude ? parseFloat(row.longitude) : undefined,
         videoUrl: row.video_url || '',
         video_url: row.video_url || '',
         video_thumbnail_url: row.video_thumbnail_url || '',

@@ -3,10 +3,13 @@ import { notFound } from 'next/navigation';
 import { MapPin } from 'lucide-react';
 import { db } from '@/lib/db';
 import { ImageGallery } from '@/components/ImageGallery';
-import { HotelDetails } from '@/components/HotelDetails';
 import { BackButton } from '@/components/BackButton';
 import { RelatedArticles } from '@/components/RelatedArticles';
 import { MobileHotelInfo } from '@/components/MobileHotelInfo';
+import { HotelFeatures } from '@/components/hotel/HotelFeatures';
+import { HotelDescription } from '@/components/hotel/HotelDescription';
+import { LocationCard } from '@/components/hotel/LocationCard';
+import { NearbyGuide } from '@/components/hotel/NearbyGuide';
 
 export const revalidate = 1800;
 
@@ -100,24 +103,28 @@ export default async function HotelDetailPage({ params }: Props) {
           />
         </div>
 
-        <div className="px-5 space-y-1.5">
-          <HotelDetails
-            features={hotel.amenities || []}
-            tabs={{ about: hotel.about || '', rules: hotel.rules || '' }}
-            mapImageUrl={''}
-            location={hotel.location}
-            websiteUrl={hotel.website_url}
-            instagramUrl={hotel.instagram_url}
-            googleMapsUrl={hotel.google_maps_url}
-            tags={hotelTagsWithIcons}
-            coordinates={hotel.coordinates}
-          />
+        <div className="px-5 flex flex-col space-y-1.5">
+          <div className="order-1">
+            <HotelFeatures tags={hotelTagsWithIcons} isMobile={true} />
+          </div>
+
+          <div className="order-2">
+            <HotelDescription about={hotel.about || ''} isMobile={true} />
+          </div>
+
+          <div className="order-3">
+            <LocationCard latitude={hotel.latitude} longitude={hotel.longitude} hotelName={hotel.name} />
+          </div>
+
+          <div className="order-4">
+            <NearbyGuide location={hotel.location} coordinates={hotel.coordinates} isMobile={true} />
+          </div>
 
           <RelatedArticles location={hotel.location.split(',')[0].trim()} />
         </div>
       </div>
 
-      {/* Desktop View - Original Design */}
+      {/* Desktop View */}
       <div className="hidden md:block">
         <div className="container mx-auto px-4 sm:px-6 py-4 sm:py-8">
           <BackButton />
@@ -178,17 +185,22 @@ export default async function HotelDetailPage({ params }: Props) {
             </div>
           </div>
 
-          <HotelDetails
-            features={hotel.amenities || []}
-            tabs={{ about: hotel.about || '', rules: hotel.rules || '' }}
-            mapImageUrl={''}
-            location={hotel.location}
-            websiteUrl={hotel.website_url}
-            instagramUrl={hotel.instagram_url}
-            googleMapsUrl={hotel.google_maps_url}
-            tags={hotelTagsWithIcons}
-            coordinates={hotel.coordinates}
-          />
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
+            <div className="lg:col-span-2">
+              <HotelFeatures tags={hotelTagsWithIcons} />
+            </div>
+            <div className="lg:col-span-1">
+              <LocationCard latitude={hotel.latitude} longitude={hotel.longitude} hotelName={hotel.name} />
+            </div>
+          </div>
+
+          <div className="mb-6">
+            <HotelDescription about={hotel.about || ''} />
+          </div>
+
+          <div className="mb-6">
+            <NearbyGuide location={hotel.location} coordinates={hotel.coordinates} />
+          </div>
 
           <RelatedArticles location={hotel.location.split(',')[0].trim()} />
         </div>

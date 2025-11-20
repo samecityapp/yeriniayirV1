@@ -12,6 +12,8 @@ export type Hotel = {
   aboutFacility?: string;
   rules?: string;
   coordinates?: { lat: number; lng: number };
+  latitude?: number;
+  longitude?: number;
   videoUrl?: string;
   video_url?: string;
   video_thumbnail_url?: string;
