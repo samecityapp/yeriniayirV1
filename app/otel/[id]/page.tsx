@@ -8,7 +8,7 @@ import { RelatedArticles } from '@/components/RelatedArticles';
 import { MobileHotelInfo } from '@/components/MobileHotelInfo';
 import { HotelFeatures } from '@/components/hotel/HotelFeatures';
 import { HotelDescription } from '@/components/hotel/HotelDescription';
-import { LocationCard } from '@/components/hotel/LocationCard';
+import LocationCard from '@/components/hotel/LocationCard';
 import { NearbyGuide } from '@/components/hotel/NearbyGuide';
 
 export const revalidate = 1800;
@@ -113,7 +113,7 @@ export default async function HotelDetailPage({ params }: Props) {
           </div>
 
           <div className="order-3">
-            <LocationCard latitude={hotel.latitude} longitude={hotel.longitude} hotelName={hotel.name} address={hotel.location} />
+            <LocationCard latitude={hotel.latitude} longitude={hotel.longitude} address={hotel.location} />
           </div>
 
           <div className="order-4">
@@ -190,7 +190,7 @@ export default async function HotelDetailPage({ params }: Props) {
               <HotelFeatures tags={hotelTagsWithIcons} />
             </div>
             <div className="lg:col-span-1">
-              <LocationCard latitude={hotel.latitude} longitude={hotel.longitude} hotelName={hotel.name} address={hotel.location} />
+              <LocationCard latitude={hotel.latitude} longitude={hotel.longitude} address={hotel.location} />
             </div>
           </div>
 

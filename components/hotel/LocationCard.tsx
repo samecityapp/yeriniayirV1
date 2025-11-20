@@ -5,13 +5,12 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 interface LocationCardProps {
-  address?: string;
+  address: string;
   latitude?: number | null;
   longitude?: number | null;
-  hotelName?: string;
 }
 
-export function LocationCard({
+export default function LocationCard({
   address,
   latitude,
   longitude,
@@ -49,12 +48,10 @@ export function LocationCard({
       </div>
 
       <CardContent className="flex-grow flex flex-col justify-between pt-4 pb-5 gap-4 bg-card">
-        {address && (
-          <div className="text-sm text-muted-foreground leading-relaxed">
-            <span className="font-medium text-foreground block mb-1">Adres:</span>
-            {address}
-          </div>
-        )}
+        <div className="text-sm text-muted-foreground leading-relaxed">
+          <span className="font-medium text-foreground block mb-1">Adres:</span>
+          {address}
+        </div>
 
         <Button
           asChild
