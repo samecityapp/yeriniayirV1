@@ -113,7 +113,7 @@ export default async function HotelDetailPage({ params }: Props) {
           </div>
 
           <div className="order-3">
-            <LocationCard latitude={hotel.latitude} longitude={hotel.longitude} hotelName={hotel.name} />
+            <LocationCard latitude={hotel.latitude} longitude={hotel.longitude} hotelName={hotel.name} address={hotel.location} />
           </div>
 
           <div className="order-4">
@@ -190,7 +190,7 @@ export default async function HotelDetailPage({ params }: Props) {
               <HotelFeatures tags={hotelTagsWithIcons} />
             </div>
             <div className="lg:col-span-1">
-              <LocationCard latitude={hotel.latitude} longitude={hotel.longitude} hotelName={hotel.name} />
+              <LocationCard latitude={hotel.latitude} longitude={hotel.longitude} hotelName={hotel.name} address={hotel.location} />
             </div>
           </div>
 
