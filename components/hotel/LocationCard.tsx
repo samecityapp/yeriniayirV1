@@ -1,5 +1,3 @@
-'use client';
-
 import { MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -19,10 +17,14 @@ export default function LocationCard({
     return null;
   }
 
-  // OpenStreetMap kullanımı - ÜCRETSİZ, API key gerektirmez
-  const embedMapUrl = `https://www.openstreetmap.org/export/embed.html?bbox=${longitude-0.01},${latitude-0.01},${longitude+0.01},${latitude+0.01}&layer=mapnik&marker=${latitude},${longitude}`;
+  const delta = 0.005;
+  const minLat = latitude - delta;
+  const maxLat = latitude + delta;
+  const minLon = longitude - delta;
+  const maxLon = longitude + delta;
 
-  // Google Maps yol tarifi (harici link, iframe değil)
+  const embedMapUrl = `https://www.openstreetmap.org/export/embed.html?bbox=${minLon}%2C${minLat}%2C${maxLon}%2C${maxLat}&layer=mapnik&marker=${latitude}%2C${longitude}`;
+
   const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`;
 
   return (
@@ -34,7 +36,7 @@ export default function LocationCard({
         </CardTitle>
       </CardHeader>
 
-      <div className="relative w-full h-[250px] bg-muted">
+      <div className="relative w-full h-[250px] bg-muted z-0">
         <iframe
           title="Otel Konumu"
           width="100%"
@@ -44,10 +46,12 @@ export default function LocationCard({
           marginHeight={0}
           marginWidth={0}
           src={embedMapUrl}
-          className="filter grayscale-[20%] hover:grayscale-0 transition-all duration-500"
-          allowFullScreen
+          className="filter grayscale-[10%] hover:grayscale-0 transition-all duration-500"
           loading="lazy"
-        />
+        ></iframe>
+        <div className="absolute bottom-1 right-1 text-[10px] text-black/50 bg-white/70 px-1 rounded">
+           © OpenStreetMap
+        </div>
       </div>
 
       <CardContent className="flex-grow flex flex-col justify-between pt-4 pb-5 gap-4 bg-card">
