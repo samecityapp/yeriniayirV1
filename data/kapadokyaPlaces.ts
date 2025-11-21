@@ -6,7 +6,7 @@ export const kapadokyaPlaces: RestaurantCategory[] = [
     places: [
       {
         name: 'Goreme Han Restaurant',
-        image: '/restaurants/kapadokya/goreme-han.jpg',
+        image: 'https://images.pexels.com/photos/1395964/pexels-photo-1395964.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Tarihi bir konağın avlusunda, otantik bir atmosferde, inanılmaz zengin bir serpme kahvaltı. Tam bir "anne kahvaltısı" hissi veriyor.',
         googleRating: 4.7,
         reviewCount: '2.2k',
@@ -19,7 +19,7 @@ export const kapadokyaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Viewpoint Sunset Cafe',
-        image: '/restaurants/kapadokya/viewpoint-cafe.jpg',
+        image: 'https://images.pexels.com/photos/1410235/pexels-photo-1410235.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Adı üstünde, Göreme\'yi ve vadileri tepeden gören, belki de bölgenin en iyi manzaralı kahvaltı noktası. Balonları izlemek için de ideal.',
         googleRating: 4.7,
         reviewCount: '3.1k',
@@ -32,7 +32,7 @@ export const kapadokyaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Tandır Cafe Restaurant',
-        image: '/restaurants/kapadokya/tandir-cafe.jpg',
+        image: 'https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Göreme\'de, güler yüzlü bir aile işletmesi. Odun ateşinde pişen taze ekmekleri ve otantik sunumlarıyla biliniyorlar.',
         googleRating: 4.8,
         reviewCount: '1.4k',
@@ -50,7 +50,7 @@ export const kapadokyaPlaces: RestaurantCategory[] = [
     places: [
       {
         name: 'Dibek (Göreme)',
-        image: '/restaurants/kapadokya/dibek-restaurant.jpg',
+        image: 'https://images.pexels.com/photos/5409015/pexels-photo-5409015.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Kapadokya\'da "Testi Kebabı" denince akla gelen ilk, en otantik ve en meşhur yer. Yere kurulu masaları ve atmosferiyle tam bir mağara deneyimi.',
         googleRating: 4.5,
         reviewCount: '4.8k',
@@ -63,7 +63,7 @@ export const kapadokyaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Topdeck Cave Restaurant (Göreme)',
-        image: '/restaurants/kapadokya/topdeck-cave.jpg',
+        image: 'https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Küçük, samimi ve bir aile tarafından işletilen gizli bir gurme durağı. Geleneksel Anadolu yemeklerini modern bir dokunuşla sunuyorlar.',
         googleRating: 4.8,
         reviewCount: '2.5k',
@@ -76,7 +76,7 @@ export const kapadokyaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Seten Restaurant (Göreme)',
-        image: '/restaurants/kapadokya/seten-restaurant.jpg',
+        image: 'https://images.pexels.com/photos/3659862/pexels-photo-3659862.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Sultan Cave Suites otelin içinde yer alan, lüks ve şık bir Anadolu mutfağı. Mağara atmosferini "fine dining" ile birleştirmek isteyenler için ideal.',
         googleRating: 4.6,
         reviewCount: '1.9k',
@@ -94,7 +94,7 @@ export const kapadokyaPlaces: RestaurantCategory[] = [
     places: [
       {
         name: 'Lil\'a Restaurant (Uçhisar - Museum Hotel)',
-        image: '/restaurants/kapadokya/lila-restaurant.jpg',
+        image: 'https://images.pexels.com/photos/2788792/pexels-photo-2788792.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Türkiye\'nin tek Relais & Châteaux oteli olan Museum Hotel\'in içinde, Michelin Yeşil Yıldızlı bir restoran. Nefes kesen vadi manzarası ve gurme lezzetler.',
         googleRating: 4.8,
         reviewCount: '700',
@@ -107,7 +107,7 @@ export const kapadokyaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Seki Restaurant (Uçhisar - Argos in Cappadocia)',
-        image: '/restaurants/kapadokya/seki-restaurant.jpg',
+        image: 'https://images.pexels.com/photos/1907228/pexels-photo-1907228.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Argos in Cappadocia otelin içinde, Güvercinlik Vadisi\'ne bakan, devasa bir yer altı şarap kavına sahip, şık ve modern bir restoran.',
         googleRating: 4.6,
         reviewCount: '1.1k',
@@ -120,7 +120,7 @@ export const kapadokyaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Haruna Restaurant (Göreme)',
-        image: '/restaurants/kapadokya/haruna-restaurant.jpg',
+        image: 'https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Göreme\'nin tam merkezinde, vadiye tepeden bakan, harika bir gün batımı manzarasına sahip yeni nesil, popüler ve çok şık bir mekan.',
         googleRating: 4.7,
         reviewCount: '1.5k',
@@ -138,7 +138,7 @@ export const kapadokyaPlaces: RestaurantCategory[] = [
     places: [
       {
         name: 'Coffeedocia (Göreme)',
-        image: '/restaurants/kapadokya/coffeedocia.jpg',
+        image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Göreme\'nin merkezindeki en popüler "üçüncü nesil" kahveci. Hem yerli hem yabancı turistlerin buluşma noktası. Modern ve rahat bir atmosfere sahip.',
         googleRating: 4.5,
         reviewCount: '2.3k',
@@ -151,7 +151,7 @@ export const kapadokyaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Cafe Safak (Göreme)',
-        image: '/restaurants/kapadokya/cafe-safak.jpg',
+        image: 'https://images.pexels.com/photos/4350099/pexels-photo-4350099.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Büyük ve modern kafelerin aksine, küçük, samimi, bir aile işletmesi. Kaliteli kahveleri ve ev yapımı tatlılarıyla biliniyor.',
         googleRating: 4.6,
         reviewCount: '950',
@@ -164,7 +164,7 @@ export const kapadokyaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'K\'ai Cafe (Uçhisar - Argos in Cappadocia)',
-        image: '/restaurants/kapadokya/kai-cafe.jpg',
+        image: 'https://images.pexels.com/photos/1120970/pexels-photo-1120970.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Argos otelin içinde yer alan, vadiye bakan terasıyla, lüks ve sakin bir kahve & tatlı molası için mükemmel bir nokta.',
         googleRating: 4.7,
         reviewCount: '300',
@@ -182,7 +182,7 @@ export const kapadokyaPlaces: RestaurantCategory[] = [
     places: [
       {
         name: 'Turasan Şarap Fabrikası (Ürgüp)',
-        image: '/restaurants/kapadokya/turasan.jpg',
+        image: 'https://images.pexels.com/photos/541216/pexels-photo-541216.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Kapadokya şarapçılığının en köklü ve en bilinen ismi. Hem fabrika satış mağazası hem de tadım alanı olarak hizmet veriyorlar.',
         googleRating: 4.4,
         reviewCount: '3.3k',
@@ -195,7 +195,7 @@ export const kapadokyaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Kocabağ Şarapları (Uçhisar)',
-        image: '/restaurants/kapadokya/kocabag.jpg',
+        image: 'https://images.pexels.com/photos/1657849/pexels-photo-1657849.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Bölgenin diğer büyük ve köklü üreticisi. Uçhisar\'da, kayaya oyulmuş muhteşem bir yer altı kavına (mahzen) sahipler.',
         googleRating: 4.7,
         reviewCount: '1.4k',
@@ -208,7 +208,7 @@ export const kapadokyaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Mahzen Şarap Evi (Ürgüp)',
-        image: '/restaurants/kapadokya/mahzen-sarap.jpg',
+        image: 'https://images.pexels.com/photos/1850629/pexels-photo-1850629.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Bir üretici değil, Ürgüp merkezde, kayaya oyulmuş bir mağara içinde çeşitli yerel şarapları tadabileceğiniz otantik bir şarap barı.',
         googleRating: 4.6,
         reviewCount: '1.2k',

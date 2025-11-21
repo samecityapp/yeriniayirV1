@@ -6,7 +6,7 @@ export const bodrumPlaces: RestaurantCategory[] = [
     places: [
       {
         name: 'Limon Gümüşlük',
-        image: '/restaurants/bodrum/limon-gumusluk.jpg',
+        image: 'https://images.pexels.com/photos/1395964/pexels-photo-1395964.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Bodrum\'un belki de en meşhur kahvaltısı. Antik Myndos kalıntılarının yanında, tarlaların içinde, muhteşem bir gün batımı ve kahvaltı mekanı.',
         googleRating: 4.6,
         reviewCount: '3.1k',
@@ -19,7 +19,7 @@ export const bodrumPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Asmalı Çardak (Bitez)',
-        image: '/restaurants/bodrum/asmali-cardak.jpg',
+        image: 'https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Bitez\'in mandalina bahçeleri içinde, asma yapraklarının altında, inanılmaz huzurlu ve otantik bir köy kahvaltısı. Tam bir aile işletmesi.',
         googleRating: 4.5,
         reviewCount: '2.4k',
@@ -32,7 +32,7 @@ export const bodrumPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Zai Bodrum (Konacık)',
-        image: '/restaurants/bodrum/zai-bodrum.jpg',
+        image: 'https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Burası bir kahvaltı mekanından çok daha fazlası; bir kütüphane, sanat galerisi ve zeytin ağaçları altında bir kültür vahası. Modern ve rafine bir kahvaltı sunar.',
         googleRating: 4.7,
         reviewCount: '1.9k',
@@ -45,7 +45,7 @@ export const bodrumPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Havandan (Bitez)',
-        image: '/restaurants/bodrum/havandan.jpg',
+        image: 'https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Yeni nesil, modern ve sağlıklı kahvaltının adresi. Yerel üreticilerden alınan ürünlerle, şık ve "Instagrammable" sunumlar hazırlıyorlar.',
         googleRating: 4.8,
         reviewCount: '550',
@@ -63,7 +63,7 @@ export const bodrumPlaces: RestaurantCategory[] = [
     places: [
       {
         name: 'Kukla Bodrum (Yalıkavak & Merkez)',
-        image: '/restaurants/bodrum/kukla-bodrum.jpg',
+        image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Bodrum\'da "nitelikli kahve" denince akla gelen ilk ve en popüler yer. Kendi çekirdeklerini kavuruyorlar ve kahve demleme işini çok ciddiye alıyorlar.',
         googleRating: 4.6,
         reviewCount: '1.3k',
@@ -76,7 +76,7 @@ export const bodrumPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Zai Bodrum (Konacık)',
-        image: '/restaurants/bodrum/zai-bodrum-kahve.jpg',
+        image: 'https://images.pexels.com/photos/4350099/pexels-photo-4350099.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Sadece bir kahveci değil, bir kültür merkezi. Zeytin ağaçları altındaki kütüphanede kahvenizi yudumlamak, Bodrum\'daki en huzurlu deneyimlerden biri.',
         googleRating: 4.7,
         reviewCount: '1.9k',
@@ -89,7 +89,7 @@ export const bodrumPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Gugagon (Bodrum Merkez)',
-        image: '/restaurants/bodrum/gugagon.jpg',
+        image: 'https://images.pexels.com/photos/1833399/pexels-photo-1833399.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Bodrum\'un yerel ve sevilen kahvecilerinden. Çarşının içinde, samimi bir ortamda, kaliteli çekirdeklerle hazırlanmış kahveler sunuyorlar.',
         googleRating: 4.5,
         reviewCount: '700',
@@ -107,7 +107,7 @@ export const bodrumPlaces: RestaurantCategory[] = [
     places: [
       {
         name: 'Arka Pizza (Bodrum Merkez)',
-        image: '/restaurants/bodrum/arka-pizza.jpg',
+        image: 'https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Bodrum Çarşısı\'nda, saklı bir avluda, odun ateşinde gerçek Napoli pizzası yapan efsanevi mekan. Bodrum\'un "en iyi pizza"sı konusunda çoğu kişi hemfikir.',
         googleRating: 4.5,
         reviewCount: '2.1k',
@@ -120,7 +120,7 @@ export const bodrumPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Pizzeria Davida (Bitez)',
-        image: '/restaurants/bodrum/pizzeria-davida.jpg',
+        image: 'https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Bitez\'de, incecik hamuru ve kaliteli malzemeleriyle öne çıkan, otantik bir İtalyan pizzacısı. Gurme lezzetler arayanlar için ideal.',
         googleRating: 4.7,
         reviewCount: '800',
@@ -133,7 +133,7 @@ export const bodrumPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Sulu Mutfak Pizza (Bodrum Merkez)',
-        image: '/restaurants/bodrum/sulu-mutfak.jpg',
+        image: 'https://images.pexels.com/photos/2762942/pexels-photo-2762942.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Adı "Sulu Mutfak" olsa da, odun fırınından çıkan Napoliten pizzaları Bodrum\'un en iyileri arasında gösteriliyor. Yerellerin gizli favorisi.',
         googleRating: 4.9,
         reviewCount: '1.2k',
@@ -151,7 +151,7 @@ export const bodrumPlaces: RestaurantCategory[] = [
     places: [
       {
         name: 'Memedof (Bodrum Merkez & Yalıkavak)',
-        image: '/restaurants/bodrum/memedof.jpg',
+        image: 'https://images.pexels.com/photos/725992/pexels-photo-725992.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Bodrum\'da taze balık ve kusursuz meze denince akla gelen ilk, en güvenilir markalardan biri. Her zaman taze, her zaman lezzetli.',
         googleRating: 4.5,
         reviewCount: '5.1k',
@@ -164,7 +164,7 @@ export const bodrumPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Mimoza (Gümüşlük)',
-        image: '/restaurants/bodrum/mimoza.jpg',
+        image: 'https://images.pexels.com/photos/1907228/pexels-photo-1907228.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Bodrum\'un en ikonik, en romantik restoranı. Denizin tam üstünde, mor çiçekler ve meşhur su kabağı lambaları altında bir peri masalı.',
         googleRating: 4.4,
         reviewCount: '2.5k',
@@ -177,7 +177,7 @@ export const bodrumPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Tuz Duman (Gümüşlük)',
-        image: '/restaurants/bodrum/tuz-duman.jpg',
+        image: 'https://images.pexels.com/photos/2788792/pexels-photo-2788792.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Gümüşlük\'te, Mimoza\'nın kalabalığına alternatif, yeni nesil, modern ve çok şık bir meze restoranı. Yaratıcı ve lezzetli soğuk mezeleriyle öne çıkıyor.',
         googleRating: 4.7,
         reviewCount: '700',
@@ -190,7 +190,7 @@ export const bodrumPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Kocadon Restaurant (Bodrum Merkez)',
-        image: '/restaurants/bodrum/kocadon.jpg',
+        image: 'https://images.pexels.com/photos/5409015/pexels-photo-5409015.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Tarihi bir taş binanın avlusunda, Bodrum\'un yerel lezzetlerini (Çökertme Kebabı gibi) en şık ve en doğru haliyle sunan bir klasik.',
         googleRating: 4.5,
         reviewCount: '1.2k',
@@ -208,7 +208,7 @@ export const bodrumPlaces: RestaurantCategory[] = [
     places: [
       {
         name: 'B.O.B (Bodrum O Bi Burger)',
-        image: '/restaurants/bodrum/bob-burger.jpg',
+        image: 'https://images.pexels.com/photos/580612/pexels-photo-580612.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Bodrum\'un en çok konuşulan, en yüksek puanlı gurme hamburgercilerinden. Et kalitesi, özel sosları ve brioche ekmeği ile fark yaratıyor.',
         googleRating: 4.8,
         reviewCount: '1.3k',
@@ -221,7 +221,7 @@ export const bodrumPlaces: RestaurantCategory[] = [
       },
       {
         name: 'YAZ Burger (Yalıkavak)',
-        image: '/restaurants/bodrum/yaz-burger.jpg',
+        image: 'https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Yalıkavak\'ta, taze çekilmiş etleri ve özel yapım ekmekleriyle öne çıkan, yeni nesil ve çok popüler bir gurme burgerci.',
         googleRating: 4.6,
         reviewCount: '600',
@@ -234,7 +234,7 @@ export const bodrumPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Musto Bitez (Bitez)',
-        image: '/restaurants/bodrum/musto-bitez.jpg',
+        image: 'https://images.pexels.com/photos/1410235/pexels-photo-1410235.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Bitez sahilinin klasiklerinden. Sadece bir hamburgerci değil, günün her saati keyifli olan bir bistro. Hamburgerleri ise yıllardır kalitesini bozmuyor.',
         googleRating: 4.4,
         reviewCount: '2.5k',

@@ -6,7 +6,7 @@ export const antalyaPlaces: RestaurantCategory[] = [
     places: [
       {
         name: 'Seraser Fine Dining Restaurant (Kaleiçi)',
-        image: '/restaurants/antalya/seraser.jpg',
+        image: 'https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Genellikle akşam yemeğiyle bilinse de, Kaleiçi\'nin tarihi ve büyüleyici avlusunda sunduğu serpme kahvaltı, Antalya\'nın en şık ve en özel deneyimlerinden biridir.',
         googleRating: 4.7,
         reviewCount: '2.1k',
@@ -19,7 +19,7 @@ export const antalyaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Big Man (Lara & Konyaaltı)',
-        image: '/restaurants/antalya/big-man.jpg',
+        image: 'https://images.pexels.com/photos/1395964/pexels-photo-1395964.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Antalya\'nın birçok noktasında şubesi olan, özellikle falezlerin üzerindeki muhteşem deniz manzaralı Lara şubesiyle ünlü, zengin menülü bir klasik.',
         googleRating: 4.4,
         reviewCount: '6.3k',
@@ -32,7 +32,7 @@ export const antalyaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Van Kahvaltı Evi (Konyaaltı)',
-        image: '/restaurants/antalya/van-kahvalti.jpg',
+        image: 'https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Antalya\'da "gerçek Van kahvaltısı" denince akla gelen ilk, en otantik ve en meşhur mekan. Her zaman kalabalık, her zaman lezzetli.',
         googleRating: 4.3,
         reviewCount: '4.1k',
@@ -50,7 +50,7 @@ export const antalyaPlaces: RestaurantCategory[] = [
     places: [
       {
         name: 'Piyazcı Ahmet',
-        image: '/restaurants/antalya/piyazci-ahmet.jpg',
+        image: 'https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Antalya\'nın imzası olan "Tahinli Piyaz"ı yemek için gidilecek en meşhur ve en iyi yerlerden biri. Bir turistik noktadan çok bir lezzet mabedi.',
         googleRating: 4.4,
         reviewCount: '5.4k',
@@ -63,7 +63,7 @@ export const antalyaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Meşhur Aksu Köftecisi (Şimşek Köfte)',
-        image: '/restaurants/antalya/aksu-kofte.jpg',
+        image: 'https://images.pexels.com/photos/7625056/pexels-photo-7625056.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Antalya-Alanya yolu üzerinde, Aksu\'da bulunan bir başka efsane. "Aksu usulü" piyazı ve ızgara köftesiyle ünlenmiş, hızlı ve lezzetli bir durak.',
         googleRating: 4.5,
         reviewCount: '4.7k',
@@ -76,7 +76,7 @@ export const antalyaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Dönerci Hakkı Baba (Kaleiçi)',
-        image: '/restaurants/antalya/hakki-baba.jpg',
+        image: 'https://images.pexels.com/photos/6210747/pexels-photo-6210747.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Kaleiçi\'nin turistik kalabalığının içinde, yerellerin bildiği gizli bir dönerci. Odun ateşinde pişen, yaprak yaprak kesilen gerçek bir döner klasiği.',
         googleRating: 4.7,
         reviewCount: '2.2k',
@@ -94,7 +94,7 @@ export const antalyaPlaces: RestaurantCategory[] = [
     places: [
       {
         name: 'Arma Restaurant (Kaleiçi Marina)',
-        image: '/restaurants/antalya/arma-restaurant.jpg',
+        image: 'https://images.pexels.com/photos/2788792/pexels-photo-2788792.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Eski İtalyan konsolosluk binasında, tarihi Kaleiçi Yat Limanı\'na ve Beydağları\'na bakan, muhteşem manzaralı, şık bir Akdeniz restoranı.',
         googleRating: 4.5,
         reviewCount: '3.1k',
@@ -107,7 +107,7 @@ export const antalyaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Lara Balık Evi',
-        image: '/restaurants/antalya/lara-balik-evi.jpg',
+        image: 'https://images.pexels.com/photos/725992/pexels-photo-725992.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Antalya\'nın en bilinen ve en güvenilir balık restoranlarından biri. Taptaze ve çok çeşitli meze dolabı ile balık tezgahıyla ünlü.',
         googleRating: 4.4,
         reviewCount: '5.8k',
@@ -120,7 +120,7 @@ export const antalyaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Kaleiçi Marina Restaurant',
-        image: '/restaurants/antalya/kaleici-marina-restaurant.jpg',
+        image: 'https://images.pexels.com/photos/1907228/pexels-photo-1907228.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Adı üstünde, yat limanının tam içinde, teknelere karşı rakı-balık keyfi yapmak için en otantik ve keyifli yerlerden biri.',
         googleRating: 4.6,
         reviewCount: '4.5k',
@@ -138,7 +138,7 @@ export const antalyaPlaces: RestaurantCategory[] = [
     places: [
       {
         name: '7 Mehmet',
-        image: '/restaurants/antalya/7-mehmet.jpg',
+        image: 'https://images.pexels.com/photos/5409015/pexels-photo-5409015.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Sadece Antalya\'nın değil, Türkiye\'nin en önemli restoranlarından biri. 3 nesildir devam eden, geleneksel Türk mutfağını modern ve kusursuz bir şekilde yorumlayan bir efsane.',
         googleRating: 4.5,
         reviewCount: '11.2k',
@@ -151,7 +151,7 @@ export const antalyaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Seraser Fine Dining Restaurant (Kaleiçi)',
-        image: '/restaurants/antalya/seraser-aksam.jpg',
+        image: 'https://images.pexels.com/photos/3659862/pexels-photo-3659862.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Tarihi bir konakta, romantik bir avluda, piyano eşliğinde uluslararası mutfaktan seçkiler sunan, Antalya\'nın en şık ve en romantik mekanı.',
         googleRating: 4.7,
         reviewCount: '2.1k',
@@ -164,7 +164,7 @@ export const antalyaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Vahap Usta Et Restaurant (Lara)',
-        image: '/restaurants/antalya/vahap-usta.jpg',
+        image: 'https://images.pexels.com/photos/769289/pexels-photo-769289.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Antalya\'da lüks bir "steakhouse" deneyimi arayanlar için en doğru adres. Et şovları, zengin sunumları ve kaliteli etleriyle biliniyor.',
         googleRating: 4.6,
         reviewCount: '6.9k',
@@ -182,7 +182,7 @@ export const antalyaPlaces: RestaurantCategory[] = [
     places: [
       {
         name: 'The Sudd Coffee (Konyaaltı & Lara)',
-        image: '/restaurants/antalya/the-sudd-coffee.jpg',
+        image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Antalya\'nın kendi yerel "üçüncü nesil" kahve kavurucusu. Nitelikli kahve ve modern bir kafe ortamı arayanlar için şehrin en iyisi.',
         googleRating: 4.5,
         reviewCount: '2k',
@@ -195,7 +195,7 @@ export const antalyaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Akra Patisserie (Akra Hotel)',
-        image: '/restaurants/antalya/akra-patisserie.jpg',
+        image: 'https://images.pexels.com/photos/1120970/pexels-photo-1120970.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Lüks Akra Otel\'in içinde yer alan, adeta bir mücevher dükkanını andıran, dünya standartlarında tatlılar üreten bir pastane.',
         googleRating: 4.8,
         reviewCount: '900',
@@ -208,7 +208,7 @@ export const antalyaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Börekçi Tevfik (Merkez)',
-        image: '/restaurants/antalya/borekci-tevfik.jpg',
+        image: 'https://images.pexels.com/photos/4958792/pexels-photo-4958792.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: '1930\'dan beri hizmet veren, Antalya\'nın en tarihi ve en meşhur börekçisi. Burası bir kafe değil, bir lezzet mirası. "Serpme Böreği" ile ünlü.',
         googleRating: 4.7,
         reviewCount: '3.4k',

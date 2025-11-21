@@ -6,7 +6,7 @@ export const sapancaPlaces: RestaurantCategory[] = [
     places: [
       {
         name: 'Sasa Harmanlık',
-        image: '/restaurants/sapanca/sasa-harmanlik.jpg',
+        image: 'https://images.pexels.com/photos/1395964/pexels-photo-1395964.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Sapanca Gölü\'nün tam kenarında, muhteşem bir manzaraya karşı, bölgenin en popüler ve en zengin serpme kahvaltılarından biri.',
         googleRating: 4.4,
         reviewCount: '5.2k',
@@ -19,7 +19,7 @@ export const sapancaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Beta Home Gölevi',
-        image: '/restaurants/sapanca/beta-home.jpg',
+        image: 'https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Butik bir otelin içinde yer alan, göl kenarında, inanılmaz huzurlu ve "Instagram\'lık" bir kahvaltı deneyimi. Sakinlik ve estetik arayanlar için ideal.',
         googleRating: 4.6,
         reviewCount: '850',
@@ -32,7 +32,7 @@ export const sapancaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'İstanbuldere Alabalık Evi',
-        image: '/restaurants/sapanca/istanbuldere.jpg',
+        image: 'https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Göl kenarı değil, ormanın içinde ve derenin hemen yanında. Yeşillikler içinde, su sesi eşliğinde, tam bir doğa kaçamağı kahvaltısı.',
         googleRating: 4.4,
         reviewCount: '4.1k',
@@ -50,7 +50,7 @@ export const sapancaPlaces: RestaurantCategory[] = [
     places: [
       {
         name: 'Vadi Restaurant (Maşukiye)',
-        image: '/restaurants/sapanca/vadi-restaurant.jpg',
+        image: 'https://images.pexels.com/photos/725992/pexels-photo-725992.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Maşukiye\'nin en bilinen klasiklerinden. Şelalenin hemen dibinde, derenin üzerine kurulmuş ahşap platformlarda yemek yeme deneyimi sunar.',
         googleRating: 4.3,
         reviewCount: '7.3k',
@@ -63,7 +63,7 @@ export const sapancaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Cansu Tesisleri (Maşukiye)',
-        image: '/restaurants/sapanca/cansu-tesisleri.jpg',
+        image: 'https://images.pexels.com/photos/1907228/pexels-photo-1907228.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Derenin tam üzerine kurulmuş sedirlerde, ayaklarınızı buz gibi sulara sokarak alabalık yiyebileceğiniz otantik ve salaş bir mekan.',
         googleRating: 4.2,
         reviewCount: '3.9k',
@@ -76,7 +76,7 @@ export const sapancaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Green Blue Restaurant (Maşukiye)',
-        image: '/restaurants/sapanca/green-blue.jpg',
+        image: 'https://images.pexels.com/photos/2788792/pexels-photo-2788792.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Maşukiye\'deki geleneksel dere kenarı mekanlarına göre daha modern ve şık bir alternatif. Menüsü sadece alabalık değil, dünya mutfağından seçenekler de sunar.',
         googleRating: 4.5,
         reviewCount: '2.8k',
@@ -94,7 +94,7 @@ export const sapancaPlaces: RestaurantCategory[] = [
     places: [
       {
         name: 'Güven Et Mangal (Kırkpınar)',
-        image: '/restaurants/sapanca/guven-et.jpg',
+        image: 'https://images.pexels.com/photos/769289/pexels-photo-769289.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Bölgenin en sevilen kasap & restoran (steakhouse) konseptlerinden biri. Kendi etinizi vitrinden seçiyorsunuz ve sizin için pişiriyorlar.',
         googleRating: 4.4,
         reviewCount: '3.1k',
@@ -107,7 +107,7 @@ export const sapancaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Meşhur Taraklı Dönercisi (Adapazarı)',
-        image: '/restaurants/sapanca/tarakli-doner.jpg',
+        image: 'https://images.pexels.com/photos/6210747/pexels-photo-6210747.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Adapazarı merkezde (Sapanca\'ya yakın) bulunan, odun ateşinde pişen efsanevi bir dönerci. Öğlen saatlerinde biten, kuyruk olan bir lezzet.',
         googleRating: 4.6,
         reviewCount: '1.2k',
@@ -120,7 +120,7 @@ export const sapancaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Çiftlik Restaurant (Kırkpınar)',
-        image: '/restaurants/sapanca/ciftlik-restaurant.jpg',
+        image: 'https://images.pexels.com/photos/5409015/pexels-photo-5409015.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Geniş bir bahçe içinde, hem et & mangal seçenekleri sunan hem de meşhur kabak tatlısıyla ünlü bir aile restoranı.',
         googleRating: 4.2,
         reviewCount: '2.9k',
@@ -138,7 +138,7 @@ export const sapancaPlaces: RestaurantCategory[] = [
     places: [
       {
         name: 'Uzun Teras Cafe & Bistro',
-        image: '/restaurants/sapanca/uzun-teras.jpg',
+        image: 'https://images.pexels.com/photos/1410235/pexels-photo-1410235.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Adının hakkını veren, Sapanca Gölü\'nü tepeden gören, belki de bölgenin en panoramik manzaralı mekanı. Yemekten çok kahve ve manzara için tercih ediliyor.',
         googleRating: 4.5,
         reviewCount: '2.1k',
@@ -151,7 +151,7 @@ export const sapancaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'EFG Coffee Company (Kırkpınar)',
-        image: '/restaurants/sapanca/efg-coffee.jpg',
+        image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Sapanca ve Kırkpınar bölgesindeki "nitelikli kahve" ve "üçüncü nesil kahveci" açığını kapatan, modern ve popüler bir mekan.',
         googleRating: 4.5,
         reviewCount: '900',
@@ -164,7 +164,7 @@ export const sapancaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'White Mill Cafe & Restoran',
-        image: '/restaurants/sapanca/white-mill.jpg',
+        image: 'https://images.pexels.com/photos/1120970/pexels-photo-1120970.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Değirmen konseptli, şık dekorasyonu ve popülerliğiyle bilinen bir mekan. Hem kahve-tatlı hem de dünya mutfağı için tercih ediliyor.',
         googleRating: 4.3,
         reviewCount: '2.2k',
@@ -182,7 +182,7 @@ export const sapancaPlaces: RestaurantCategory[] = [
     places: [
       {
         name: 'Eker Lokantası (Adapazarı)',
-        image: '/restaurants/sapanca/eker-lokantasi.jpg',
+        image: 'https://images.pexels.com/photos/7625056/pexels-photo-7625056.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Sakarya\'nın imzası olan Islama Köfte\'yi yemek için gidilmesi gereken en meşhur, en tarihi ve en iyi yer. Bir efsane.',
         googleRating: 4.4,
         reviewCount: '4.8k',
@@ -195,7 +195,7 @@ export const sapancaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Köfteci Hacı Bekir (Adapazarı)',
-        image: '/restaurants/sapanca/haci-bekir.jpg',
+        image: 'https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: '1970\'lerden beri hizmet veren, Adapazarı\'nın en eski ve otantik köftecilerinden biri. Eker kadar popüler ama daha salaş ve yerel.',
         googleRating: 4.5,
         reviewCount: '1.9k',
@@ -208,7 +208,7 @@ export const sapancaPlaces: RestaurantCategory[] = [
       },
       {
         name: 'Meşhur Köfteci Mustafa (Adapazarı)',
-        image: '/restaurants/sapanca/kofteci-mustafa.jpg',
+        image: 'https://images.pexels.com/photos/4958792/pexels-photo-4958792.jpeg?auto=compress&cs=tinysrgb&w=800',
         description: 'Adapazarı\'nda Islama Köfte denince Eker ile birlikte adı anılan diğer büyük usta. Daha modern bir dükkanı var ama lezzeti geleneksel.',
         googleRating: 4.3,
         reviewCount: '2.5k',
