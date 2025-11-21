@@ -30,13 +30,18 @@ export default function SearchFilters() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const { data: tagsData } = await supabase
+        const { data: tagsData, error: tagsError } = await supabase
           .from('tags')
           .select('*')
           .is('deleted_at', null)
           .order('name', { ascending: true });
 
+        if (tagsError) {
+          console.error('Tags error:', tagsError);
+        }
+
         if (tagsData) {
+          console.log('[SearchFilters] Raw tags:', tagsData);
           const mappedTags = tagsData.map(t => ({
             id: t.id,
             name: t.name,
@@ -44,17 +49,24 @@ export default function SearchFilters() {
             icon: t.icon || 'Tag',
             isFeatured: t.is_featured || false
           }));
+          const featured = mappedTags.filter(t => t.isFeatured);
+          console.log('[SearchFilters] Featured tags count:', featured.length, featured);
           setAllTags(mappedTags);
-          setFeaturedTags(mappedTags.filter(t => t.isFeatured));
+          setFeaturedTags(featured);
         }
 
-        const { data: priceTagsData } = await supabase
+        const { data: priceTagsData, error: priceError } = await supabase
           .from('price_tags')
           .select('*')
           .is('deleted_at', null)
           .order('min_price', { ascending: true });
 
+        if (priceError) {
+          console.error('Price tags error:', priceError);
+        }
+
         if (priceTagsData) {
+          console.log('[SearchFilters] Price tags count:', priceTagsData.length);
           setPriceTags(priceTagsData.map(p => ({
             id: p.id,
             label: p.label,
@@ -74,7 +86,7 @@ export default function SearchFilters() {
           setAllHotels(hotelsData);
         }
       } catch (error) {
-        console.error('Error fetching tags:', error);
+        console.error('[SearchFilters] Error fetching data:', error);
       }
     };
 
@@ -264,8 +276,12 @@ export default function SearchFilters() {
         </div>
       </div>
 
-      <div className="mt-6 space-y-3">
-        {featuredTags.length > 0 && (
+      <div className="mt-6 space-y-3 relative z-10">
+        {(() => {
+          console.log('[SearchFilters RENDER] featuredTags.length:', featuredTags.length, 'priceTags.length:', priceTags.length);
+          return null;
+        })()}
+        {featuredTags.length > 0 ? (
           <div className="flex items-center justify-center gap-2 flex-wrap">
             {featuredTags.slice(0, 5).map(tag => {
               const IconComponent = (LucideIcons as any)[tag.icon || 'Tag'] || LucideIcons.Tag;
@@ -281,9 +297,11 @@ export default function SearchFilters() {
               );
             })}
           </div>
+        ) : (
+          <div className="text-center text-sm text-gray-500">Tag'ler yükleniyor...</div>
         )}
 
-        {priceTags.length > 0 && (
+        {priceTags.length > 0 ? (
           <div className="flex items-center justify-center gap-2">
             {priceTags.slice(0, 3).map((pt) => (
               <Link
@@ -295,6 +313,8 @@ export default function SearchFilters() {
               </Link>
             ))}
           </div>
+        ) : (
+          <div className="text-center text-sm text-gray-500">Fiyat filtreleri yükleniyor...</div>
         )}
       </div>
     </div>
