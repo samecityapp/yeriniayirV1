@@ -137,18 +137,17 @@ export default async function HotelDetailPage({ params }: Props) {
         <div className="container mx-auto px-4 sm:px-6 py-4 sm:py-8">
           <BackButton />
 
-          <div className="flex flex-row justify-between items-start gap-4 mb-6">
-            <div className="flex-1">
-              <p className="text-sm text-gray-500 mb-2">Otel / {hotel.location} / {hotel.name}</p>
-              <h1 className="text-3xl lg:text-4xl font-bold text-gray-900">{hotel.name}</h1>
-              <div className="flex items-center text-gray-600 mt-2">
-                <MapPin size={16} className="mr-2" />
-                <span className="text-base">{hotel.location}</span>
-              </div>
+          <div className="mb-4">
+            <p className="text-sm text-gray-500 mb-2">Otel / {hotel.location} / {hotel.name}</p>
+            <h1 className="text-3xl lg:text-4xl font-bold text-gray-900">{hotel.name}</h1>
+            <div className="flex items-center text-gray-600 mt-2">
+              <MapPin size={16} className="mr-2" />
+              <span className="text-base">{hotel.location}</span>
             </div>
-            <div className="flex-shrink-0">
-              <PremiumClassic score={rating.score} />
-            </div>
+          </div>
+
+          <div className="mb-4">
+            <PremiumClassic score={rating.score} />
           </div>
 
           <ImageGallery
