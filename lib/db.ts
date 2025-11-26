@@ -201,7 +201,9 @@ export const db = {
         video_thumbnail_url: row.video_thumbnail_url || '',
         website_url: row.website_url || '',
         instagram_url: row.instagram_url || '',
-        google_maps_url: row.google_maps_url || ''
+        google_maps_url: row.google_maps_url || '',
+        breakfast_description: row.breakfast_description || '',
+        breakfast_images: row.breakfast_images || []
       };
     }
   },
