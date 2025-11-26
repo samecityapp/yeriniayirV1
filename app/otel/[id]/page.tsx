@@ -119,15 +119,24 @@ export default async function HotelDetailPage({ params }: Props) {
             <HotelDescription about={hotel.about || ''} isMobile={true} />
           </div>
 
-          <div className="order-3">
+          {hotel.breakfast_description && (
+            <div className="order-3">
+              <BreakfastSection
+                description={hotel.breakfast_description}
+                images={hotel.breakfast_images || []}
+              />
+            </div>
+          )}
+
+          <div className="order-4">
             <LocationCard latitude={hotel.latitude} longitude={hotel.longitude} address={hotel.location} />
           </div>
 
-          <div className="order-4">
+          <div className="order-5">
             <NearbyGuide location={hotel.location} coordinates={hotel.coordinates} isMobile={true} />
           </div>
 
-          <div className="order-5">
+          <div className="order-6">
             <RelatedArticles location={hotel.location.split(',')[0].trim()} />
           </div>
         </div>
