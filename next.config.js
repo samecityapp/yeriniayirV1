@@ -36,18 +36,48 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   async headers() {
+    const csp = `
+      default-src 'self';
+      script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com;
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+      img-src 'self' data: blob: https://*.supabase.co https://*.tile.openstreetmap.org https://www.openstreetmap.org https://images.pexels.com https://placehold.co https://maps.gstatic.com https://api.mapbox.com;
+      font-src 'self' https://fonts.gstatic.com data:;
+      connect-src 'self' https://*.supabase.co https://*.supabase.in wss://*.supabase.co https://*.tile.openstreetmap.org;
+      frame-src 'self' https://www.openstreetmap.org https://*.openstreetmap.org;
+      object-src 'none';
+      base-uri 'self';
+      form-action 'self';
+      frame-ancestors 'none';
+    `.replace(/\s{2,}/g, ' ').trim();
+
     return [
       {
-        source: '/:path*',
+        source: '/(.*)',
         headers: [
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: blob:; font-src 'self' data:; frame-src 'self' https://*.openstreetmap.org https://www.openstreetmap.org https://*.google.com; connect-src 'self' https://*.supabase.co https://*.supabase.in https://*.tile.openstreetmap.org wss://*.supabase.co;",
+            value: csp,
           },
           {
             key: 'X-Frame-Options',
-            value: 'SAMEORIGIN',
-          }
+            value: 'DENY',
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+          {
+            key: 'Strict-Transport-Security',
+            value: 'max-age=63072000; includeSubDomains; preload',
+          },
+          {
+            key: 'Referrer-Policy',
+            value: 'strict-origin-when-cross-origin',
+          },
+          {
+            key: 'Permissions-Policy',
+            value: 'camera=(), microphone=(), geolocation=(self)',
+          },
         ],
       },
     ];

@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { Ratelimit } from "@upstash/ratelimit";
 import { Redis } from "@upstash/redis";
+import { createClient } from "@supabase/supabase-js";
 
 const redis = new Redis({
   url: process.env.UPSTASH_REDIS_REST_URL!,
@@ -42,9 +43,50 @@ function isBot(userAgent: string): boolean {
   return BOT_USER_AGENTS.some((bot) => ua.includes(bot));
 }
 
+async function checkAdminAccess(req: NextRequest): Promise<boolean> {
+  try {
+    const supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+      {
+        global: {
+          headers: {
+            cookie: req.headers.get("cookie") || "",
+          },
+        },
+      }
+    );
+
+    const { data: { user } } = await supabase.auth.getUser();
+
+    if (!user) {
+      return false;
+    }
+
+    const { data: profile } = await supabase
+      .from("profiles")
+      .select("is_admin")
+      .eq("id", user.id)
+      .maybeSingle();
+
+    return profile?.is_admin === true;
+  } catch (error) {
+    console.error("Admin check error:", error);
+    return false;
+  }
+}
+
 export async function middleware(req: NextRequest) {
   const userAgent = req.headers.get("user-agent") || "";
   const path = req.nextUrl.pathname;
+
+  if (path.startsWith("/admin")) {
+    const isAdmin = await checkAdminAccess(req);
+
+    if (!isAdmin) {
+      return NextResponse.redirect(new URL("/", req.url));
+    }
+  }
 
   if (isBot(userAgent)) {
     return NextResponse.next();
@@ -93,5 +135,5 @@ export async function middleware(req: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/api/:path*", "/search/:path*"],
+  matcher: ["/api/:path*", "/search/:path*", "/admin/:path*"],
 };
