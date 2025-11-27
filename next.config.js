@@ -36,8 +36,6 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   async headers() {
-    const isDevelopment = process.env.NODE_ENV === 'development';
-
     const csp = `
       default-src 'self';
       script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com;
@@ -49,7 +47,7 @@ const nextConfig = {
       object-src 'none';
       base-uri 'self';
       form-action 'self';
-      ${isDevelopment ? "frame-ancestors 'self' https://*.webcontainer-api.io https://*.bolt.new;" : "frame-ancestors 'none';"}
+      frame-ancestors 'self' https://*.webcontainer-api.io https://*.bolt.new;
     `.replace(/\s{2,}/g, ' ').trim();
 
     return [
@@ -62,7 +60,7 @@ const nextConfig = {
           },
           {
             key: 'X-Frame-Options',
-            value: isDevelopment ? 'SAMEORIGIN' : 'DENY',
+            value: 'SAMEORIGIN',
           },
           {
             key: 'X-Content-Type-Options',
