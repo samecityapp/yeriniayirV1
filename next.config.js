@@ -47,7 +47,7 @@ const nextConfig = {
       object-src 'none';
       base-uri 'self';
       form-action 'self';
-      frame-ancestors 'self' https://*.webcontainer-api.io https://*.bolt.new;
+      frame-ancestors 'self' https://*.bolt.new https://*.webcontainer-api.io https://*.local-credentialless.webcontainer-api.io;
     `.replace(/\s{2,}/g, ' ').trim();
 
     return [
@@ -57,10 +57,6 @@ const nextConfig = {
           {
             key: 'Content-Security-Policy',
             value: csp,
-          },
-          {
-            key: 'X-Frame-Options',
-            value: 'SAMEORIGIN',
           },
           {
             key: 'X-Content-Type-Options',
