@@ -102,7 +102,7 @@ export default function SearchPage() {
     if (locationQuery) {
       const locationLower = locationQuery.toLocaleLowerCase('tr-TR');
       processedHotels = processedHotels.filter(hotel =>
-        hotel.location.toLocaleLowerCase('tr-TR') === locationLower
+        getLocalizedText(hotel.location).toLocaleLowerCase('tr-TR') === locationLower
       );
     } else {
       const priceQuery = priceTags.find(pt => pt.slug === query);
