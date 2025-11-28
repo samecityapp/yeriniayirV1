@@ -14,6 +14,7 @@ const VideoPlayer = dynamic(() => import('./VideoPlayer'), {
 
 interface HotelCardProps {
   hotel: Hotel;
+  priority?: boolean;
 }
 
 const amenityIcons: Record<string, JSX.Element> = {
@@ -22,7 +23,7 @@ const amenityIcons: Record<string, JSX.Element> = {
   Spa: <Droplets size={16} />,
 };
 
-export default function HotelCard({ hotel }: HotelCardProps) {
+export default function HotelCard({ hotel, priority = false }: HotelCardProps) {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const formattedPrice = new Intl.NumberFormat('tr-TR').format(hotel.price);
   const featuredAmenities = hotel.amenities?.slice(0, 3) || [];
@@ -47,10 +48,10 @@ export default function HotelCard({ hotel }: HotelCardProps) {
                     src={hotel.video_thumbnail_url}
                     alt={getLocalizedText(hotel.name)}
                     fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    priority={false}
-                    loading="lazy"
+                    priority={priority}
+                    loading={priority ? undefined : "lazy"}
                     quality={75}
                   />
                 ) : hotel.coverImageUrl ? (
@@ -58,10 +59,10 @@ export default function HotelCard({ hotel }: HotelCardProps) {
                     src={hotel.coverImageUrl}
                     alt={getLocalizedText(hotel.name)}
                     fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    priority={false}
-                    loading="lazy"
+                    priority={priority}
+                    loading={priority ? undefined : "lazy"}
                     quality={75}
                   />
                 ) : (
@@ -84,9 +85,10 @@ export default function HotelCard({ hotel }: HotelCardProps) {
                 alt={getLocalizedText(hotel.name)}
                 width={400}
                 height={533}
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="w-full aspect-[3/4] object-cover transition-transform duration-300 group-hover:scale-105"
-                priority={false}
+                priority={priority}
+                loading={priority ? undefined : "lazy"}
               />
             ) : (
               <div className="w-full aspect-[3/4] flex items-center justify-center bg-gray-100">

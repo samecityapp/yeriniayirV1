@@ -7,7 +7,7 @@ import { AlertCircle } from 'lucide-react';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { generateOrganizationSchema } from '@/lib/schema-generator';
 
-export const revalidate = 600;
+export const revalidate = 3600;
 
 async function HotelGroups() {
   try {
@@ -27,16 +27,16 @@ async function HotelGroups() {
 
     return (
       <div className="space-y-8 sm:space-y-16">
-        {groups.map((group) => (
+        {groups.map((group, groupIndex) => (
           <section key={group.id}>
             <h2 className="text-xl sm:text-3xl font-bold text-gray-800 mb-4 sm:mb-6 px-4 sm:px-0">{group.title}</h2>
 
             {/* Mobil: Yan yana kaydırılabilir */}
             <div className="sm:hidden overflow-x-auto -mx-4 px-4 pb-2 scrollbar-hide">
               <div className="flex gap-4" style={{ width: 'fit-content' }}>
-                {group.hotels.map((hotel: any) => (
+                {group.hotels.map((hotel: any, hotelIndex: number) => (
                   <div key={hotel.id} className="w-[calc(100vw-7rem)]" style={{ minWidth: 'calc(100vw - 7rem)' }}>
-                    <HotelCard key={hotel.id} hotel={hotel} />
+                    <HotelCard key={hotel.id} hotel={hotel} priority={groupIndex === 0 && hotelIndex === 0} />
                   </div>
                 ))}
               </div>
@@ -44,8 +44,8 @@ async function HotelGroups() {
 
             {/* Desktop: Grid görünümü */}
             <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-              {group.hotels.map((hotel: any) => (
-                <HotelCard key={hotel.id} hotel={hotel} />
+              {group.hotels.map((hotel: any, hotelIndex: number) => (
+                <HotelCard key={hotel.id} hotel={hotel} priority={groupIndex === 0 && hotelIndex === 0} />
               ))}
             </div>
           </section>

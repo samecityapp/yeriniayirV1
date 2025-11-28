@@ -23,7 +23,7 @@ const LocationCard = dynamic(() => import('@/components/hotel/LocationCard'), {
   loading: () => <div className="h-[250px] w-full bg-gray-100 animate-pulse rounded-xl" />
 });
 
-export const revalidate = 1800;
+export const revalidate = 3600;
 
 type Props = {
   params: { id: string };
