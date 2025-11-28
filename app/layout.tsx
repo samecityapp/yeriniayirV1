@@ -55,6 +55,12 @@ export const viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode; }) {
   return (
     <html lang="tr" className={inter.variable}>
+      <head>
+        <link rel="preconnect" href="https://aknhkpevrlpsrfxzqtop.supabase.co" />
+        <link rel="preconnect" href="https://images.pexels.com" />
+        <link rel="dns-prefetch" href="https://aknhkpevrlpsrfxzqtop.supabase.co" />
+        <link rel="dns-prefetch" href="https://images.pexels.com" />
+      </head>
       <body className="font-sans">
         <Providers>
           <Header />
