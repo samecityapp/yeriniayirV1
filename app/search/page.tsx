@@ -57,7 +57,7 @@ export default function SearchPage() {
             tags: h.tags || [],
             amenities: h.amenities || [],
             galleryImages: h.gallery_images || [],
-            about: h.about || h.description,
+            about: h.about || getLocalizedText(h.description),
             description: h.description || h.name
           }));
           setAllHotels(mappedHotels);
