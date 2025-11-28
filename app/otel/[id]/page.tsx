@@ -41,7 +41,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const hotelName = getLocalizedText(hotel.name);
   const location = getLocalizedText(hotel.location);
-  const description = hotel.about || getLocalizedText(hotel.description) || `${hotelName} hakkında detaylı bilgi ve rezervasyon`;
+  const aboutText = getLocalizedText(hotel.about);
+  const descText = getLocalizedText(hotel.description);
+  const description = aboutText || descText || `${hotelName} hakkında detaylı bilgi ve rezervasyon`;
 
   return {
     title: `${hotelName} - ${location}`,

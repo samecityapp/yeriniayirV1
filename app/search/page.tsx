@@ -121,7 +121,8 @@ export default function SearchPage() {
             processedHotels = processedHotels.filter(hotel => {
                 const nameMatch = getLocalizedText(hotel.name).toLocaleLowerCase('tr-TR').includes(searchLower);
                 const locationMatch = getLocalizedText(hotel.location).toLocaleLowerCase('tr-TR').includes(searchLower);
-                const aboutMatch = hotel.about?.toLocaleLowerCase('tr-TR').includes(searchLower);
+                const aboutText = getLocalizedText(hotel.about);
+                const aboutMatch = aboutText ? aboutText.toLocaleLowerCase('tr-TR').includes(searchLower) : false;
                 const tagMatch = hotel.tags?.some(tagSlug => {
                   const tag = allTags.find(t => t.slug === tagSlug);
                   return tag ? getLocalizedText(tag.name).toLocaleLowerCase('tr-TR').includes(searchLower) : false;
@@ -326,7 +327,7 @@ export default function SearchPage() {
                               <span>{getLocalizedText(hotel.location)}</span>
                             </div>
                             <p className="text-gray-600 text-sm mb-4 line-clamp-2 flex-grow">
-                              {hotel.about || 'Bu muhteşem otel, konforlu konaklama deneyimi sunar.'}
+                              {getLocalizedText(hotel.about) || 'Bu muhteşem otel, konforlu konaklama deneyimi sunar.'}
                             </p>
                             {hotel.tags && (
                               <div className="flex flex-wrap gap-2 pt-2 border-t border-gray-100">

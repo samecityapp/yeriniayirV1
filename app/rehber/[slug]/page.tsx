@@ -65,7 +65,7 @@ export default async function ArticlePage({ params }: Props) {
   const articleSchema = generateArticleSchema({
     title: getLocalizedText(article.title),
     description: getLocalizedText(article.meta_description),
-    content: article.content,
+    content: getLocalizedText(article.content),
     slug: article.slug,
     coverImage: article.cover_image_url,
     createdAt: article.created_at,
@@ -152,7 +152,7 @@ export default async function ArticlePage({ params }: Props) {
                 prose-blockquote:border-l-4 prose-blockquote:border-zinc-900 prose-blockquote:bg-zinc-50 prose-blockquote:p-6 prose-blockquote:not-italic prose-blockquote:my-8
                 prose-ul:my-6 prose-li:my-2 prose-li:text-zinc-700
                 max-w-none"
-              dangerouslySetInnerHTML={{ __html: article.content }}
+              dangerouslySetInnerHTML={{ __html: getLocalizedText(article.content) }}
             />
           </div>
 

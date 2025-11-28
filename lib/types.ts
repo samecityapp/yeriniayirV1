@@ -9,17 +9,17 @@ export type LocalizedString = {
 
 export type Hotel = {
   id: string;
-  name: LocalizedString;
+  name: LocalizedString | string;
   location: LocalizedString | string;
   gnkScore: number;
   price: number;
-  about?: string;
+  about?: LocalizedString | string;
   tags?: string[];
   amenities?: string[];
   coverImageUrl?: string;
   galleryImages?: string[];
-  aboutFacility?: string;
-  rules?: string;
+  aboutFacility?: LocalizedString | string;
+  rules?: LocalizedString | string;
   coordinates?: { lat: number; lng: number };
   latitude?: number;
   longitude?: number;
@@ -29,8 +29,8 @@ export type Hotel = {
   website_url?: string;
   instagram_url?: string;
   google_maps_url?: string;
-  description: LocalizedString;
-  breakfast_description?: LocalizedString;
+  description: LocalizedString | string;
+  breakfast_description?: LocalizedString | string;
   breakfast_images?: string[];
 };
 
