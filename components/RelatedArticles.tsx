@@ -2,6 +2,7 @@ import { db } from '@/lib/db';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Sparkles, ChevronRight, Clock } from 'lucide-react';
+import { getLocalizedText } from '@/lib/localization';
 
 export async function RelatedArticles({ location }: { location: string }) {
   const articles = await db.articles.getAllByLocation(location);
@@ -28,7 +29,7 @@ export async function RelatedArticles({ location }: { location: string }) {
               {article.cover_image_url ? (
                 <Image
                   src={article.cover_image_url}
-                  alt={article.title}
+                  alt={getLocalizedText(article.title)}
                   fill
                   sizes="96px"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -40,10 +41,10 @@ export async function RelatedArticles({ location }: { location: string }) {
 
             <div className="flex-1 flex flex-col justify-center min-w-0">
               <h4 className="text-base font-semibold text-zinc-900 leading-tight mb-1 group-hover:text-black line-clamp-2">
-                {article.title}
+                {getLocalizedText(article.title)}
               </h4>
               <p className="text-sm text-zinc-500 line-clamp-2 leading-relaxed">
-                {article.meta_description}
+                {getLocalizedText(article.meta_description)}
               </p>
               <div className="mt-2 flex items-center gap-2 text-xs text-zinc-400 font-medium uppercase tracking-wider">
                 <span>Rehber</span>

@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Star, MapPin, Heart, Wifi, Wind, Droplets, Play } from 'lucide-react';
 import { Hotel } from '@/lib/types';
+import { getLocalizedText } from '@/lib/localization';
 
 const VideoPlayer = dynamic(() => import('./VideoPlayer'), {
   loading: () => <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center"><p className="text-white">Video Oynatıcı Yükleniyor...</p></div>
@@ -44,7 +45,7 @@ export default function HotelCard({ hotel }: HotelCardProps) {
                 {hotel.video_thumbnail_url ? (
                   <Image
                     src={hotel.video_thumbnail_url}
-                    alt={hotel.name}
+                    alt={getLocalizedText(hotel.name)}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -55,7 +56,7 @@ export default function HotelCard({ hotel }: HotelCardProps) {
                 ) : hotel.coverImageUrl ? (
                   <Image
                     src={hotel.coverImageUrl}
-                    alt={hotel.name}
+                    alt={getLocalizedText(hotel.name)}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -80,7 +81,7 @@ export default function HotelCard({ hotel }: HotelCardProps) {
             ) : hotel.coverImageUrl ? (
               <Image
                 src={hotel.coverImageUrl}
-                alt={hotel.name}
+                alt={getLocalizedText(hotel.name)}
                 width={400}
                 height={533}
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
@@ -128,10 +129,10 @@ export default function HotelCard({ hotel }: HotelCardProps) {
           <div className="p-4 space-y-3">
             {/* 1. Satır: İsim ve Konum */}
             <div>
-              <h3 className="text-lg font-bold text-gray-900 truncate">{hotel.name}</h3>
+              <h3 className="text-lg font-bold text-gray-900 truncate">{getLocalizedText(hotel.name)}</h3>
               <p className="flex items-center text-sm text-gray-500 mt-1">
                 <MapPin size={14} className="mr-1.5 flex-shrink-0" />
-                <span className="truncate">{hotel.location}</span>
+                <span className="truncate">{getLocalizedText(hotel.location)}</span>
               </p>
             </div>
 

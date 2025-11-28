@@ -18,7 +18,7 @@ export function HotelListItem({ hotel }: HotelListItemProps) {
         <h3 className="font-bold text-xl text-gray-800 mb-1">{getLocalizedText(hotel.name)}</h3>
         <div className="flex items-center text-gray-500 mb-3">
           <MapPin size={14} className="mr-1.5 flex-shrink-0" />
-          <p className="text-sm truncate">{hotel.location}</p>
+          <p className="text-sm truncate">{getLocalizedText(hotel.location)}</p>
         </div>
         <div className="flex items-center mb-4">
           <span className="bg-blue-600 text-white px-2 py-0.5 rounded-full text-sm font-bold">{hotel.gnkScore}</span>

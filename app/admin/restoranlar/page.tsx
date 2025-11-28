@@ -254,7 +254,7 @@ export default function RestaurantsAdminPage() {
                   className="w-full border rounded px-3 py-2"
                 >
                   {categories.map(cat => (
-                    <option key={cat.id} value={cat.id}>{cat.title}</option>
+                    <option key={cat.id} value={cat.id}>{getLocalizedText(cat.title)}</option>
                   ))}
                 </select>
               </div>

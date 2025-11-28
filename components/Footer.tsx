@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Hotel, Mail, Phone, MapPin, Instagram, Globe } from 'lucide-react';
 import { db } from '@/lib/db';
+import { getLocalizedText } from '@/lib/localization';
 
 export async function Footer() {
   const currentYear = new Date().getFullYear();
@@ -56,7 +57,7 @@ export async function Footer() {
                       href={`/rehber/${article.slug}`}
                       className="text-sm hover:text-blue-400 transition-colors line-clamp-1"
                     >
-                      {article.title}
+                      {getLocalizedText(article.title)}
                     </Link>
                   </li>
                 ))
