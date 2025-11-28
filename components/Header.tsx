@@ -11,7 +11,7 @@ export function Header() {
         <div className="hidden md:flex items-center space-x-8">
           <Link href="/search" className="text-gray-600 hover:text-primary transition font-medium">Oteller</Link>
           <Link href="/rehber" className="text-gray-600 hover:text-primary transition font-medium">Rehber</Link>
-          <Link href="#" className="text-gray-600 hover:text-primary transition font-medium">Hakkımızda</Link>
+          <Link href="/hakkimizda" className="text-gray-600 hover:text-primary transition font-medium">Hakkımızda</Link>
           <Link href="#" className="text-gray-600 hover:text-primary transition font-medium">İletişim</Link>
         </div>
         <div>
