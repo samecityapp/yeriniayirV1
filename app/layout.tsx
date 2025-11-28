@@ -12,8 +12,35 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'GNK Otel Platformu',
-  description: "Erdem'in Seçtiği En İyi Oteller",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gnkhotels.com'),
+  title: {
+    default: 'GNK Otel Rehberi',
+    template: '%s | GNK Otel Rehberi',
+  },
+  description: "Erdem'in Seçtiği En İyi Oteller - Türkiye'nin en güvenilir otel rehberi",
+  keywords: ['otel', 'tatil', 'konaklama', 'türkiye otelleri', 'otel rehberi', 'otel önerileri'],
+  authors: [{ name: 'GNK Otel Rehberi' }],
+  creator: 'GNK',
+  publisher: 'GNK',
+  openGraph: {
+    type: 'website',
+    locale: 'tr_TR',
+    siteName: 'GNK Otel Rehberi',
+  },
+  twitter: {
+    card: 'summary_large_image',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export const viewport = {

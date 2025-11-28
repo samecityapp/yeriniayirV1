@@ -13,6 +13,8 @@ import { NearbyGuide } from '@/components/hotel/NearbyGuide';
 import { BreakfastSection } from '@/components/hotel/BreakfastSection';
 import PremiumClassic from '@/components/hotel/ScoreCard/PremiumClassic';
 import { getLocalizedText } from '@/lib/localization';
+import { JsonLd } from '@/components/seo/JsonLd';
+import { generateHotelSchema, generateBreadcrumbSchema } from '@/lib/schema-generator';
 
 const LocationCard = dynamic(() => import('@/components/hotel/LocationCard'), {
   ssr: false,
@@ -30,14 +32,38 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!hotel) {
     return {
-      title: 'Otel Bulunamadı | GNK',
+      title: 'Otel Bulunamadı',
       description: 'Aradığınız otel sistemimizde mevcut değil.',
     };
   }
 
+  const hotelName = getLocalizedText(hotel.name);
+  const location = getLocalizedText(hotel.location);
+  const description = hotel.about || getLocalizedText(hotel.description) || `${hotelName} hakkında detaylı bilgi ve rezervasyon`;
+
   return {
-    title: `GNK | ${getLocalizedText(hotel.name)} - ${getLocalizedText(hotel.location)}`,
-    description: `${getLocalizedText(hotel.name)} hakkında detaylı bilgi. ${(hotel.about || '').substring(0, 120)}...`,
+    title: `${hotelName} - ${location}`,
+    description: description.substring(0, 160),
+    keywords: [
+      hotelName,
+      location,
+      'otel',
+      'konaklama',
+      'rezervasyon',
+      ...(hotel.tags || []),
+    ],
+    openGraph: {
+      title: `${hotelName} - ${location}`,
+      description: description.substring(0, 160),
+      images: hotel.coverImageUrl ? [hotel.coverImageUrl] : [],
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${hotelName} - ${location}`,
+      description: description.substring(0, 160),
+      images: hotel.coverImageUrl ? [hotel.coverImageUrl] : [],
+    },
   };
 }
 
@@ -58,6 +84,15 @@ export default async function HotelDetailPage({ params }: Props) {
     reviewCount: 0,
     text: 'İyi',
   };
+
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gnkhotels.com';
+  const hotelSchema = generateHotelSchema(hotel);
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Ana Sayfa', url: baseUrl },
+    { name: 'Oteller', url: `${baseUrl}/search` },
+    { name: getLocalizedText(hotel.location), url: `${baseUrl}/search?location=${encodeURIComponent(getLocalizedText(hotel.location))}` },
+    { name: getLocalizedText(hotel.name), url: `${baseUrl}/otel/${hotel.id}` },
+  ]);
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -87,6 +122,9 @@ export default async function HotelDetailPage({ params }: Props) {
 
   return (
     <>
+      <JsonLd data={hotelSchema} />
+      <JsonLd data={breadcrumbSchema} />
+
       {/* Mobile View */}
       <div className="md:hidden bg-gray-50 min-h-screen">
         <div className="relative w-full">
