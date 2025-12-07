@@ -54,7 +54,8 @@ export default function HotelCard({ hotel, priority = false }: HotelCardProps) {
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                     priority={priority}
                     loading={priority ? undefined : "lazy"}
-                    quality={priority ? 85 : 75}
+                    quality={75}
+                    {...(priority ? { fetchPriority: "high" } : {})}
                   />
                 ) : hotel.coverImageUrl ? (
                   <Image
@@ -65,7 +66,8 @@ export default function HotelCard({ hotel, priority = false }: HotelCardProps) {
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                     priority={priority}
                     loading={priority ? undefined : "lazy"}
-                    quality={priority ? 85 : 75}
+                    quality={75}
+                    {...(priority ? { fetchPriority: "high" } : {})}
                   />
                 ) : (
                   <div className="absolute inset-0 w-full h-full flex items-center justify-center bg-gray-100">
@@ -91,7 +93,8 @@ export default function HotelCard({ hotel, priority = false }: HotelCardProps) {
                 className="w-full aspect-[3/4] object-cover transition-transform duration-300 group-hover:scale-105"
                 priority={priority}
                 loading={priority ? undefined : "lazy"}
-                quality={priority ? 85 : 75}
+                quality={75}
+                {...(priority ? { fetchPriority: "high" } : {})}
               />
             ) : (
               <div className="w-full aspect-[3/4] flex items-center justify-center bg-gray-100">
