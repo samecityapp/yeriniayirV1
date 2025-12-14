@@ -19,6 +19,19 @@ import { getLocalizedText } from '@/lib/localization';
 import { LocalizedInput } from '@/components/admin/LocalizedInput';
 import { LocalizedTextarea } from '@/components/admin/LocalizedTextarea';
 
+const FIXED_FAQ_QUESTIONS = [
+  'Giriş ve çıkış saatleri neler?',
+  'Tesisin kahvaltı saatleri?',
+  'Otopark var mı?',
+  'Denize Uzaklığı Nedir?',
+  'Engelliler için uygun mu?',
+  'Çocuk Kabul Ediyor musunuz?',
+  'Bu otele gelmek için en iyi zaman ne zaman?',
+  'Bölgede mutlaka görülmesi gereken yerler nereler?',
+  'Tesiste spor olanağı var mı? Gym, Yoga, Pilates?',
+  'Evcil hayvan kabul ediyor musunuz?'
+];
+
 export default function OtelEklePage() {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -43,6 +56,7 @@ export default function OtelEklePage() {
   const [googleMapsUrl, setGoogleMapsUrl] = useState('');
   const [breakfastDescription, setBreakfastDescription] = useState<LocalizedString>({ tr: '', en: '', de: '' });
   const [breakfastImages, setBreakfastImages] = useState<string[]>([]);
+  const [faqs, setFaqs] = useState<{ question: string; answer: string }[]>([]);
 
   const [allTags, setAllTags] = useState<Tag[]>([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -89,7 +103,21 @@ export default function OtelEklePage() {
             const breakfastData = hotelData.breakfast_description || '';
             setBreakfastDescription(typeof breakfastData === 'string' ? { tr: breakfastData, en: '', de: '' } : breakfastData || { tr: '', en: '', de: '' });
             setBreakfastImages(hotelData.breakfast_images || []);
+
+            // Initialize FAQs
+            const existingFaqs = hotelData.faqs || [];
+            const initializedFaqs = FIXED_FAQ_QUESTIONS.map(q => {
+              const existing = existingFaqs.find((f: any) => f.question === q);
+              return {
+                question: q,
+                answer: existing ? existing.answer : ''
+              };
+            });
+            setFaqs(initializedFaqs);
           }
+        } else if (!isEdit) {
+          // New hotel, initialize empty FAQs
+          setFaqs(FIXED_FAQ_QUESTIONS.map(q => ({ question: q, answer: '' })));
         }
       } catch (error) {
         console.error('Veri yüklenirken hata:', error);
@@ -156,7 +184,8 @@ export default function OtelEklePage() {
       instagram_url: instagramUrl.trim() || null,
       google_maps_url: googleMapsUrl.trim() || null,
       breakfast_description: breakfastDescription,
-      breakfast_images: breakfastImages.length > 0 ? breakfastImages : null
+      breakfast_images: breakfastImages.length > 0 ? breakfastImages : null,
+      faqs: faqs
     };
 
     try {
@@ -334,11 +363,10 @@ export default function OtelEklePage() {
                       key={tag.id}
                       type="button"
                       onClick={() => handleToggleTag(tag.slug)}
-                      className={`flex items-center gap-2 px-4 py-3 rounded-lg border-2 transition-all ${
-                        isSelected
-                          ? 'border-blue-500 bg-blue-50 text-blue-700'
-                          : 'border-gray-200 bg-white text-gray-700 hover:border-gray-300'
-                      }`}
+                      className={`flex items-center gap-2 px-4 py-3 rounded-lg border-2 transition-all ${isSelected
+                        ? 'border-blue-500 bg-blue-50 text-blue-700'
+                        : 'border-gray-200 bg-white text-gray-700 hover:border-gray-300'
+                        }`}
                     >
                       <IconComponent size={18} />
                       <span className="text-sm font-medium">{getLocalizedText(tag.name)}</span>
@@ -499,6 +527,35 @@ export default function OtelEklePage() {
                 <p className="text-xs text-gray-500">
                   Mobil cihazlarda tıklandığında Google Maps uygulamasını açar
                 </p>
+              </div>
+            </div>
+
+
+            <div className="border-t pt-6">
+              <Label className="text-sm font-semibold mb-3 block">
+                Sıkça Sorulan Sorular
+              </Label>
+              <p className="text-sm text-gray-500 mb-6">
+                Aşağıdaki sorular için otelinize özel yanıtları giriniz.
+              </p>
+              <div className="space-y-6">
+                {faqs.map((faq, index) => (
+                  <div key={index} className="space-y-2">
+                    <Label className="text-sm font-medium text-gray-700">
+                      {faq.question}
+                    </Label>
+                    <Input
+                      value={faq.answer}
+                      onChange={(e) => {
+                        const newFaqs = [...faqs];
+                        newFaqs[index] = { ...newFaqs[index], answer: e.target.value };
+                        setFaqs(newFaqs);
+                      }}
+                      placeholder="Cevabı buraya giriniz..."
+                      className="h-11"
+                    />
+                  </div>
+                ))}
               </div>
             </div>
           </div>

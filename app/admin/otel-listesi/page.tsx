@@ -161,7 +161,7 @@ export default function OtelListesiPage() {
                 className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow"
               >
                 <div className="flex flex-col md:flex-row">
-                  <div className="md:w-48 h-32 md:h-auto bg-gray-200 flex-shrink-0">
+                  <div className="relative md:w-48 h-32 md:h-auto bg-gray-200 flex-shrink-0">
                     {hotel.coverImageUrl ? (
                       <Image
                         src={hotel.coverImageUrl}

@@ -2,8 +2,8 @@ import React from 'react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Gizlilik Politikası | GNK',
-  description: 'GNK (Gez, Nerede Kal) platformu veri koruma, KVKK ve GDPR uyumluluk politikası.',
+  title: 'Gizlilik Politikası | Yerini Ayır',
+  description: 'Yerini Ayır platformu veri koruma, KVKK ve GDPR uyumluluk politikası.',
 };
 
 export default function PrivacyPolicy() {
@@ -29,7 +29,7 @@ export default function PrivacyPolicy() {
 
         {/* Giriş */}
         <p>
-          GNK (Gez, Nerede Kal) ("Platform", "Biz") olarak, kullanıcılarımızın kişisel verilerinin güvenliğini en yüksek standartlarda korumayı taahhüt ediyoruz.
+          Yerini Ayır ("Platform", "Biz") olarak, kullanıcılarımızın kişisel verilerinin güvenliğini en yüksek standartlarda korumayı taahhüt ediyoruz.
           Bu Gizlilik Politikası; <strong>6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK")</strong>, Avrupa Birliği <strong>Genel Veri Koruma Tüzüğü ("GDPR")</strong> ve ilgili diğer mevzuata uygun olarak hazırlanmıştır.
         </p>
 
@@ -42,7 +42,7 @@ export default function PrivacyPolicy() {
           <li><strong>Kullanım Verileri:</strong> Arama terimleri ve filtreleme tercihleri.</li>
         </ul>
         <div className="bg-zinc-50 p-4 rounded-lg border-l-4 border-zinc-900 text-sm my-6">
-          <strong>Önemli Not:</strong> GNK bir rezervasyon acentesi değildir. Sitemiz üzerinden doğrudan ödeme alınmaz, kredi kartı bilgisi işlenmez ve saklanmaz. Tüm rezervasyon işlemleri yönlendirilen otelin veya partner sitenin sorumluluğundadır.
+          <strong>Önemli Not:</strong> Yerini Ayır bir rezervasyon acentesi değildir. Sitemiz üzerinden doğrudan ödeme alınmaz, kredi kartı bilgisi işlenmez ve saklanmaz. Tüm rezervasyon işlemleri yönlendirilen otelin veya partner sitenin sorumluluğundadır.
         </div>
 
         {/* 2. İşleme Amaçları */}
@@ -97,7 +97,7 @@ export default function PrivacyPolicy() {
             Gizlilik veya veri güvenliği ile ilgili sorularınız için bizimle iletişime geçebilirsiniz:
           </p>
           <p className="font-medium text-zinc-900">
-            GNK Veri Koruma Birimi<br />
+            Yerini Ayır Veri Koruma Birimi<br />
             E-posta: info@gnkotel.com<br />
             Konum: İstanbul, Türkiye
           </p>

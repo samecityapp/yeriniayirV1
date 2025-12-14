@@ -2,8 +2,8 @@ import React from 'react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Çerez Politikası | GNK',
-  description: 'GNK (Gez, Nerede Kal) platformu çerez kullanım politikası ve tercih yönetimi.',
+  title: 'Çerez Politikası | Yerini Ayır',
+  description: 'Yerini Ayır platformu çerez kullanım politikası ve tercih yönetimi.',
 };
 
 export default function CookiePolicy() {
@@ -29,7 +29,7 @@ export default function CookiePolicy() {
 
         {/* Giriş */}
         <p>
-          Bu Çerez Politikası, GNK ("Biz", "Platform") tarafından kullanılan çerezlerin türlerini, kullanım amaçlarını ve bu çerezleri nasıl yönetebileceğinizi açıklamaktadır.
+          Bu Çerez Politikası, Yerini Ayır ("Biz", "Platform") tarafından kullanılan çerezlerin türlerini, kullanım amaçlarını ve bu çerezleri nasıl yönetebileceğinizi açıklamaktadır.
           Çerez kullanımımız, <strong>KVKK</strong> ve <strong>GDPR</strong> düzenlemelerine tam uyumlu olarak yürütülmektedir.
         </p>
 

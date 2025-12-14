@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Button } from './ui/button';
 import { Menu, X } from 'lucide-react';
+import { BrandLogo } from './ui/BrandLogo';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,8 +13,9 @@ export function Header() {
     <header className="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b">
       <nav className="container mx-auto px-6 py-3">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold text-gray-800">
-            GNK
+          <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-gray-800">
+            <BrandLogo className="w-10 h-10" />
+            <span>YeriniAyır</span>
           </Link>
 
           {/* Desktop Menu */}
@@ -21,7 +23,7 @@ export function Header() {
             <Link href="/search" className="text-gray-600 hover:text-primary transition font-medium">Oteller</Link>
             <Link href="/rehber" className="text-gray-600 hover:text-primary transition font-medium">Rehber</Link>
             <Link href="/hakkimizda" className="text-gray-600 hover:text-primary transition font-medium">Hakkımızda</Link>
-            <a href="mailto:info@gnkoteller.com" className="text-gray-600 hover:text-primary transition font-medium">İletişim</a>
+
           </div>
 
           <div className="hidden md:block">
@@ -64,13 +66,7 @@ export function Header() {
             >
               Hakkımızda
             </Link>
-            <a
-              href="mailto:info@gnkoteller.com"
-              className="text-gray-600 hover:text-primary transition font-medium py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              İletişim
-            </a>
+
             <div className="pt-2">
               <Button asChild className="w-full">
                 <Link href="/admin/dashboard" onClick={() => setIsMenuOpen(false)}>Panel</Link>

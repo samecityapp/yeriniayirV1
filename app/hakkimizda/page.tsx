@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import { Instagram } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Hakkımızda | GNK',
-  description: '10 yıllık deneyimle Türkiye\'nin en özel otellerini keşfediyoruz. GNK (Gez, Nerede Kal) hikayesi.',
+  title: 'Hakkımızda | Yerini Ayır',
+  description: '10 yıllık deneyimle Türkiye\'nin en özel otellerini keşfediyoruz. Yerini Ayır hikayesi.',
 };
 
 export default function AboutPage() {
@@ -38,10 +38,10 @@ export default function AboutPage() {
           <div>
             <h3 className="text-xl font-bold text-zinc-900 mb-3 flex items-center gap-2">
               <span className="w-8 h-1 bg-black rounded-full"></span>
-              GNK Nedir?
+              Yerini Ayır Nedir?
             </h3>
             <p className="text-zinc-600 leading-relaxed">
-              GNK (Gez, Nerede Kal), bir otel rezervasyon sitesi değildir. Biz, binlerce seçenek arasında kaybolmamanız için hazırlanmış <strong>seçkin bir otel keşif platformuyuz.</strong> Amacımız satış yapmak değil, size en doğru deneyimi önermektir.
+              Yerini Ayır, bir otel rezervasyon sitesi değildir. Biz, binlerce seçenek arasında kaybolmamanız için hazırlanmış <strong>seçkin bir otel keşif platformuyuz.</strong> Amacımız satış yapmak değil, size en doğru deneyimi önermektir.
             </p>
           </div>
 

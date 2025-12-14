@@ -1,5 +1,6 @@
 import { db } from '@/lib/db';
 import HotelCard from '@/components/HotelCard';
+
 import HotelCardSkeleton from '@/components/skeletons/HotelCardSkeleton';
 import SearchFilters from '@/components/SearchFilters';
 import { Suspense } from 'react';
@@ -13,7 +14,7 @@ export const revalidate = 3600;
 export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
-  title: 'GNK Otel Rehberi - Türkiye\'nin En Seçkin Otelleri',
+  title: 'Yerini Ayır - Türkiye\'nin En Seçkin Otelleri',
   description: 'Türkiye\'nin en iyi otellerini keşfedin. Bodrum, Antalya, Çeşme ve daha fazlası için detaylı otel rehberi ve öneriler.',
   alternates: {
     canonical: 'https://www.gnkhotels.com',
@@ -59,6 +60,8 @@ async function HotelGroups() {
                 <HotelCard key={hotel.id} hotel={hotel} priority={groupIndex === 0 && hotelIndex === 0} />
               ))}
             </div>
+
+
           </section>
         ))}
       </div>

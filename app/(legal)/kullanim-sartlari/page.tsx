@@ -2,8 +2,8 @@ import React from 'react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Kullanım Şartları | GNK',
-    description: 'GNK (Gez, Nerede Kal) platformu kullanım koşulları ve yasal sorumluluk reddi beyanı.',
+    title: 'Kullanım Şartları | Yerini Ayır',
+    description: 'Yerini Ayır platformu kullanım koşulları ve yasal sorumluluk reddi beyanı.',
 };
 
 export default function TermsOfUse() {
@@ -29,24 +29,24 @@ export default function TermsOfUse() {
 
                 {/* Giriş */}
                 <p>
-                    Bu Kullanım Şartları ("Şartlar"), <strong>GNK (Gez, Nerede Kal)</strong> platformu ("Site", "Hizmet") aracılığıyla sunulan tüm içerik ve hizmetlerden yararlanırken uymanız gereken koşulları düzenlemektedir.
+                    Bu Kullanım Şartları ("Şartlar"), <strong>Yerini Ayır</strong> platformu ("Site", "Hizmet") aracılığıyla sunulan tüm içerik ve hizmetlerden yararlanırken uymanız gereken koşulları düzenlemektedir.
                     Siteyi kullanmanız, bu Şartları okuduğunuzu, anladığınızı ve kabul ettiğinizi gösterir.
                 </p>
 
                 <h3>1. Tanımlar</h3>
                 <ul>
                     <li><strong>Kullanıcı:</strong> Platforma erişen, kayıt olan veya hizmetten yararlanan gerçek/tüzel kişi.</li>
-                    <li><strong>Hizmet:</strong> GNK tarafından sunulan otel keşfi, içerik görüntüleme, blog yazıları ve ilgili tüm dijital hizmetler.</li>
+                    <li><strong>Hizmet:</strong> Yerini Ayır tarafından sunulan otel keşfi, içerik görüntüleme, blog yazıları ve ilgili tüm dijital hizmetler.</li>
                     <li><strong>İçerik:</strong> Platformda yer alan tüm metin, görsel, video, veri ve yazılımlar.</li>
                 </ul>
 
                 {/* Vurgulu Kutu: Hizmetin Kapsamı */}
                 <div className="bg-amber-50 p-6 rounded-xl border-l-4 border-amber-500 my-8">
                     <h3 className="text-amber-900 mt-0">2. Hizmetin Kapsamı (Önemli)</h3>
-                    <p className="mb-2 text-amber-800">GNK; oteller ve seyahat içerikleri sağlayan bir dijital keşif platformudur.</p>
-                    <ul className="text-amber-800 marker:text-amber-500 mb-0">
-                        <li><strong>GNK bir rezervasyon sitesi değildir.</strong></li>
-                        <li>GNK otel fiyatlarını belirlemez veya rezervasyon işlemlerini doğrudan yürütmez.</li>
+                    <p className="mb-2 text-amber-800">Yerini Ayır; oteller ve seyahat içerikleri sağlayan bir dijital keşif platformudur.</p>
+                    <ul className="list-disc pl-6 text-zinc-600 space-y-1">
+                        <li><strong>Yerini Ayır bir rezervasyon sitesi değildir.</strong></li>
+                        <li>Yerini Ayır otel fiyatlarını belirlemez veya rezervasyon işlemlerini doğrudan yürütmez.</li>
                         <li>Platformda yer alan bilgiler yalnızca genel bilgilendirme amacı taşır. Nihai fiyat ve müsaitlik, yönlendirilen otelin kendi sitesinde geçerlidir.</li>
                     </ul>
                 </div>
@@ -55,7 +55,7 @@ export default function TermsOfUse() {
                 <p>Kullanıcı, hizmeti yalnızca hukuka uygun amaçlarla kullanacağını kabul eder. Platformun işleyişine zarar verecek (bot kullanımı, veri kazıma vb.) faaliyetlerde bulunamaz.</p>
 
                 <h3>4. Sorumluluk Reddi (Disclaimer)</h3>
-                <p>GNK aşağıdaki konulardan sorumlu tutulamaz:</p>
+                <p>Yerini Ayır aşağıdaki konulardan sorumlu tutulamaz:</p>
                 <ul>
                     <li>Listelenen otellerin hizmet kalitesi veya fiyat değişiklikleri.</li>
                     <li>Üçüncü taraf (Booking.com vb.) sitelerdeki hatalı bilgiler.</li>
@@ -65,21 +65,25 @@ export default function TermsOfUse() {
 
                 <h3>5. Fikri Mülkiyet Hakları</h3>
                 <p>
-                    Platformdaki tüm içerikler (metinler, görseller, GNK logosu, tasarım) GNK'ye aittir veya lisanslıdır.
+                    Platformdaki tüm içerikler (metinler, görseller, Yerini Ayır logosu, tasarım) Yerini Ayır'a aittir veya lisanslıdır.
                     İzinsiz kopyalanması, çoğaltılması veya ticari amaçla kullanılması yasaktır.
                 </p>
 
-                <h3>6. Üçüncü Taraf Bağlantıları</h3>
-                <p>
-                    Sitemiz, otellerin web sitelerine veya sosyal medya platformlarına bağlantılar içerebilir.
-                    Bu bağlantılar sadece kolaylık sağlamak içindir; yönlendirilen sitelerin içeriğinden veya güvenliğinden GNK sorumlu değildir.
-                </p>
+                <section className="mb-8">
+                    <h2 className="text-xl font-bold text-zinc-900 mb-4">6. Üçüncü Taraf Bağlantıları</h2>
+                    <p className="text-zinc-600 leading-relaxed">
+                        Sitemiz, otellerin web sitelerine veya sosyal medya platformlarına bağlantılar içerebilir.
+                        Bu bağlantılar sadece kolaylık sağlamak içindir; yönlendirilen sitelerin içeriğinden veya güvenliğinden Yerini Ayır sorumlu değildir.
+                    </p>
+                </section>
 
-                <h3>7. Değişiklik Hakkı</h3>
-                <p>
-                    GNK, bu Şartları önceden bildirimde bulunmaksızın güncelleme hakkını saklı tutar.
-                    Güncellemeler yayınlandığı anda yürürlüğe girer.
-                </p>
+                <section className="mb-8">
+                    <h2 className="text-xl font-bold text-zinc-900 mb-4">6. Değişiklikler</h2>
+                    <p className="text-zinc-600 leading-relaxed">
+                        Yerini Ayır, bu Şartları önceden bildirimde bulunmaksızın güncelleme hakkını saklı tutar.
+                        Güncellemeler yayınlandığı anda yürürlüğe girer.
+                    </p>
+                </section>
 
                 <h3>8. Uygulanacak Hukuk</h3>
                 <p>
@@ -92,7 +96,7 @@ export default function TermsOfUse() {
                         Bu şartlarla ilgili sorularınız için bizimle iletişime geçebilirsiniz:
                     </p>
                     <p className="font-medium text-zinc-900">
-                        GNK Hukuk Birimi<br />
+                        Yerini Ayır Hukuk Birimi<br />
                         E-posta: legal@gnkotel.com<br />
                         Konum: İstanbul, Türkiye
                     </p>

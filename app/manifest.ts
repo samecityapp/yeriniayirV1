@@ -2,8 +2,8 @@ import { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'GNK Otel Rehberi',
-    short_name: 'GNK Oteller',
+    name: 'Yerini Ayır',
+    short_name: 'Yerini Ayır',
     description: "Erdem'in Seçtiği En İyi Oteller - Türkiye'nin en güvenilir otel rehberi",
     start_url: '/',
     display: 'standalone',

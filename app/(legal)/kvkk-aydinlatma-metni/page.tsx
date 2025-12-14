@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { Download } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'KVKK Aydınlatma Metni | GNK',
+  title: 'KVKK Aydınlatma Metni | Yerini Ayır',
   description: '6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında aydınlatma metni.',
 };
 
@@ -30,12 +30,12 @@ export default function KVKKPolicy() {
 
         {/* Giriş */}
         <p>
-          GNK Platformu ("Veri Sorumlusu") olarak, kişisel verilerinizin güvenliğini en üst seviyede sağlamak amacıyla, <strong>6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK")</strong> uyarınca sizleri bilgilendiriyoruz.
-        </p>
-
-        <h3>1. Veri Sorumlusunun Kimliği</h3>
-        <p>
-          <strong>Unvan:</strong> GNK Platformu<br />
+          Yerini Ayır Platformu ("Veri Sorumlusu") olarak, kişisel verilerinizin güvenliğini en üst seviyede sağlamak amacıyla, <strong>6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK")</strong> uyarınca sizleri bilgilendiriyoruz.
+          <br /><br />
+          <strong>1. Veri Sorumlusu</strong><br />
+          Kişisel verileriniz, veri sorumlusu sıfatıyla <strong>Yerini Ayır Platformu</strong> tarafından aşağıda açıklanan kapsamda işlenebilecektir.<br />
+          <br />
+          <strong>Unvan:</strong> Yerini Ayır Platformu<br />
           <strong>E-posta:</strong> privacy@gnkotel.com<br />
           <strong>Adres:</strong> İstanbul, Türkiye
         </p>

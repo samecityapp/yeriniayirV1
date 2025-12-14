@@ -32,6 +32,7 @@ export type Hotel = {
   description: LocalizedString | string;
   breakfast_description?: LocalizedString | string;
   breakfast_images?: string[];
+  faqs?: { question: string; answer: string }[];
 };
 
 export type Group = {

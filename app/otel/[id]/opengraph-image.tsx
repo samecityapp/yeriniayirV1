@@ -3,7 +3,7 @@ import { db } from '@/lib/db';
 import { getLocalizedText } from '@/lib/localization';
 
 export const runtime = 'edge';
-export const alt = 'GNK Otel Detay';
+export const alt = 'Yerini Ayır Otel Detay';
 export const size = {
   width: 1200,
   height: 630,
@@ -146,7 +146,7 @@ export default async function Image({ params }: { params: { id: string } }) {
                   fontWeight: 600,
                 }}
               >
-                GNK Puanı
+                Yerini Ayır Puanı
               </div>
             </div>
 
@@ -162,7 +162,7 @@ export default async function Image({ params }: { params: { id: string } }) {
                 textShadow: '0 2px 10px rgba(0, 0, 0, 0.8)',
               }}
             >
-              GNK
+              Yerini Ayır
             </div>
           </div>
         </div>
@@ -185,7 +185,7 @@ export default async function Image({ params }: { params: { id: string } }) {
           }}
         >
           <div style={{ fontSize: 60, fontWeight: 'bold' }}>
-            GNK Otel Rehberi
+            Yerini Ayır
           </div>
         </div>
       ),

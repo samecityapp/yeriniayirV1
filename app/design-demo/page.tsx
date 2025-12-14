@@ -21,7 +21,7 @@ export default function DesignDemo() {
             <p className="text-lg font-bold text-gray-900">{locationCity}</p>
           </div>
           <div className="flex-1 border-2 border-gray-900 rounded-xl p-4 text-center">
-            <p className="text-xs font-medium text-gray-600 mb-1.5">GNK Skor</p>
+            <p className="text-xs font-medium text-gray-600 mb-1.5">Yerini Ayır Skor</p>
             <p className="text-lg font-bold text-gray-900">{rating} / 5</p>
           </div>
           <div className="flex-1 border-2 border-gray-900 rounded-xl p-4 text-center">
@@ -41,7 +41,7 @@ export default function DesignDemo() {
             <p className="text-lg font-bold text-gray-900">{locationCity}</p>
           </div>
           <div className="flex-1 bg-white shadow-lg rounded-2xl p-4 text-center">
-            <p className="text-xs font-medium text-gray-600 mb-1.5">GNK Skor</p>
+            <p className="text-xs font-medium text-gray-600 mb-1.5">Yerini Ayır Skor</p>
             <p className="text-lg font-bold text-gray-900">{rating} / 5</p>
           </div>
           <div className="flex-1 bg-white shadow-lg rounded-2xl p-4 text-center">
@@ -61,7 +61,7 @@ export default function DesignDemo() {
             <p className="text-lg font-bold text-gray-900">{locationCity}</p>
           </div>
           <div className="flex-1 bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 rounded-2xl p-4 text-center">
-            <p className="text-xs font-semibold text-gray-600 mb-1.5">GNK Skor</p>
+            <p className="text-xs font-semibold text-gray-600 mb-1.5">Yerini Ayır Skor</p>
             <p className="text-lg font-bold text-gray-900">{rating} / 5</p>
           </div>
           <div className="flex-1 bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 rounded-2xl p-4 text-center">
@@ -81,7 +81,7 @@ export default function DesignDemo() {
             <p className="text-base font-bold text-gray-900">{locationCity}</p>
           </div>
           <div className="flex-1 border-[3px] border-gray-800 rounded-full p-4 text-center">
-            <p className="text-xs font-medium text-gray-600 mb-1">GNK Skor</p>
+            <p className="text-xs font-medium text-gray-600 mb-1">Yerini Ayır Skor</p>
             <p className="text-base font-bold text-gray-900">{rating} / 5</p>
           </div>
           <div className="flex-1 border-[3px] border-gray-800 rounded-full p-4 text-center">
@@ -101,7 +101,7 @@ export default function DesignDemo() {
             <p className="text-lg font-bold text-white">{locationCity}</p>
           </div>
           <div className="flex-1 bg-gray-900 rounded-xl p-4 text-center">
-            <p className="text-xs font-medium text-gray-400 mb-1.5">GNK Skor</p>
+            <p className="text-xs font-medium text-gray-400 mb-1.5">Yerini Ayır Skor</p>
             <p className="text-lg font-bold text-white">{rating} / 5</p>
           </div>
           <div className="flex-1 bg-gray-900 rounded-xl p-4 text-center">
@@ -121,7 +121,7 @@ export default function DesignDemo() {
             <p className="text-lg font-bold text-gray-900">{locationCity}</p>
           </div>
           <div className="flex-1 border-b-4 border-gray-900 pb-3 text-center">
-            <p className="text-xs font-medium text-gray-600 mb-2">GNK Skor</p>
+            <p className="text-xs font-medium text-gray-600 mb-2">Yerini Ayır Skor</p>
             <p className="text-lg font-bold text-gray-900">{rating} / 5</p>
           </div>
           <div className="flex-1 border-b-4 border-gray-900 pb-3 text-center">
@@ -141,7 +141,7 @@ export default function DesignDemo() {
             <p className="text-lg font-bold text-gray-900">{locationCity}</p>
           </div>
           <div className="flex-1 border-2 border-gray-300 rounded-2xl p-4 text-center shadow-md hover:shadow-xl transition-shadow">
-            <p className="text-xs font-semibold text-gray-500 mb-1.5">GNK Skor</p>
+            <p className="text-xs font-semibold text-gray-500 mb-1.5">Yerini Ayır Skor</p>
             <p className="text-lg font-bold text-gray-900">{rating} / 5</p>
           </div>
           <div className="flex-1 border-2 border-gray-300 rounded-2xl p-4 text-center shadow-md hover:shadow-xl transition-shadow">
@@ -161,7 +161,7 @@ export default function DesignDemo() {
             <p className="text-xl font-black text-gray-900">{locationCity}</p>
           </div>
           <div className="flex-1 bg-gray-100 rounded-3xl p-5 text-center border-2 border-gray-200">
-            <p className="text-[10px] font-bold text-gray-500 uppercase tracking-wider mb-2">GNK Skor</p>
+            <p className="text-[10px] font-bold text-gray-500 uppercase tracking-wider mb-2">Yerini Ayır Skor</p>
             <p className="text-xl font-black text-gray-900">{rating} / 5</p>
           </div>
           <div className="flex-1 bg-gray-100 rounded-3xl p-5 text-center border-2 border-gray-200">
@@ -181,7 +181,7 @@ export default function DesignDemo() {
             <p className="text-lg font-bold text-gray-900">{locationCity}</p>
           </div>
           <div className="flex-1 border-2 border-dashed border-gray-400 rounded-xl p-4 text-center">
-            <p className="text-xs font-medium text-gray-600 mb-1.5">GNK Skor</p>
+            <p className="text-xs font-medium text-gray-600 mb-1.5">Yerini Ayır Skor</p>
             <p className="text-lg font-bold text-gray-900">{rating} / 5</p>
           </div>
           <div className="flex-1 border-2 border-dashed border-gray-400 rounded-xl p-4 text-center">
@@ -201,7 +201,7 @@ export default function DesignDemo() {
             <p className="text-lg font-bold text-gray-900">{locationCity}</p>
           </div>
           <div className="flex-1 bg-white rounded-2xl p-4 text-center border border-gray-200 shadow-inner">
-            <p className="text-xs font-semibold text-gray-500 mb-1.5 uppercase tracking-wide">GNK Skor</p>
+            <p className="text-xs font-semibold text-gray-500 mb-1.5 uppercase tracking-wide">Yerini Ayır Skor</p>
             <p className="text-lg font-bold text-gray-900">{rating} / 5</p>
           </div>
           <div className="flex-1 bg-white rounded-2xl p-4 text-center border border-gray-200 shadow-inner">
@@ -221,7 +221,7 @@ export default function DesignDemo() {
             <p className="text-sm font-bold">{locationCity}</p>
           </div>
           <div className="flex-1 bg-gray-900 text-white rounded-full px-4 py-3 text-center">
-            <p className="text-[10px] font-medium text-gray-300 mb-0.5">GNK Skor</p>
+            <p className="text-[10px] font-medium text-gray-300 mb-0.5">Yerini Ayır Skor</p>
             <p className="text-sm font-bold">{rating} / 5</p>
           </div>
           <div className="flex-1 bg-gray-900 text-white rounded-full px-4 py-3 text-center">
@@ -243,7 +243,7 @@ export default function DesignDemo() {
           </div>
           <div className="flex-1 bg-white border border-gray-200 rounded-xl p-4 text-center relative overflow-hidden">
             <div className="absolute top-0 left-0 right-0 h-1 bg-gray-900"></div>
-            <p className="text-xs font-medium text-gray-600 mb-1.5 mt-1">GNK Skor</p>
+            <p className="text-xs font-medium text-gray-600 mb-1.5 mt-1">Yerini Ayır Skor</p>
             <p className="text-lg font-bold text-gray-900">{rating} / 5</p>
           </div>
           <div className="flex-1 bg-white border border-gray-200 rounded-xl p-4 text-center relative overflow-hidden">
@@ -264,7 +264,7 @@ export default function DesignDemo() {
             <p className="text-lg font-bold text-gray-900">{locationCity}</p>
           </div>
           <div className="flex-1 bg-gray-100 rounded-2xl p-4 text-center" style={{ boxShadow: '8px 8px 16px #d1d5db, -8px -8px 16px #ffffff' }}>
-            <p className="text-xs font-medium text-gray-600 mb-1.5">GNK Skor</p>
+            <p className="text-xs font-medium text-gray-600 mb-1.5">Yerini Ayır Skor</p>
             <p className="text-lg font-bold text-gray-900">{rating} / 5</p>
           </div>
           <div className="flex-1 bg-gray-100 rounded-2xl p-4 text-center" style={{ boxShadow: '8px 8px 16px #d1d5db, -8px -8px 16px #ffffff' }}>
@@ -287,7 +287,7 @@ export default function DesignDemo() {
           </div>
           <div className="flex-1 text-center">
             <div className="bg-gray-50 rounded-2xl p-5 border-l-4 border-gray-900">
-              <p className="text-xs font-semibold text-gray-500 mb-2">GNK Skor</p>
+              <p className="text-xs font-semibold text-gray-500 mb-2">Yerini Ayır Skor</p>
               <p className="text-xl font-bold text-gray-900">{rating} / 5</p>
             </div>
           </div>
@@ -310,7 +310,7 @@ export default function DesignDemo() {
             <p className="text-lg font-bold text-white">{locationCity}</p>
           </div>
           <div className="flex-1 bg-gray-900 rounded-xl p-5 text-center transform hover:scale-105 transition-transform">
-            <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">GNK Skor</p>
+            <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Yerini Ayır Skor</p>
             <p className="text-lg font-bold text-white">{rating} / 5</p>
           </div>
           <div className="flex-1 bg-gray-900 rounded-xl p-5 text-center transform hover:scale-105 transition-transform">
@@ -331,7 +331,7 @@ export default function DesignDemo() {
               <p className="text-lg font-bold text-white">{locationCity}</p>
             </div>
             <div className="flex-1 rounded-2xl p-4 text-center backdrop-blur-lg" style={{ background: 'rgba(255, 255, 255, 0.15)', border: '1px solid rgba(255, 255, 255, 0.2)' }}>
-              <p className="text-xs font-medium text-white/80 mb-1.5">GNK Skor</p>
+              <p className="text-xs font-medium text-white/80 mb-1.5">Yerini Ayır Skor</p>
               <p className="text-lg font-bold text-white">{rating} / 5</p>
             </div>
             <div className="flex-1 rounded-2xl p-4 text-center backdrop-blur-lg" style={{ background: 'rgba(255, 255, 255, 0.15)', border: '1px solid rgba(255, 255, 255, 0.2)' }}>
@@ -352,7 +352,7 @@ export default function DesignDemo() {
             <p className="text-xl font-black text-gray-900">{locationCity}</p>
           </div>
           <div className="flex-1 border-2 border-gray-900 rounded-lg p-4 text-center">
-            <p className="text-[11px] font-bold text-gray-600 uppercase mb-2">GNK Skor</p>
+            <p className="text-[11px] font-bold text-gray-600 uppercase mb-2">Yerini Ayır Skor</p>
             <p className="text-xl font-black text-gray-900">{rating} / 5</p>
           </div>
           <div className="flex-1 border-2 border-gray-900 rounded-lg p-4 text-center">
@@ -375,7 +375,7 @@ export default function DesignDemo() {
           </div>
           <div className="flex-1 p-[2px] rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600">
             <div className="bg-white rounded-2xl p-4 text-center">
-              <p className="text-xs font-medium text-gray-600 mb-1.5">GNK Skor</p>
+              <p className="text-xs font-medium text-gray-600 mb-1.5">Yerini Ayır Skor</p>
               <p className="text-lg font-bold text-gray-900">{rating} / 5</p>
             </div>
           </div>
@@ -460,11 +460,10 @@ export default function DesignDemo() {
                 </div>
                 <button
                   onClick={() => setSelectedDesign(design.id)}
-                  className={`px-4 py-2 rounded-lg font-semibold transition-all ${
-                    selectedDesign === design.id
+                  className={`px-4 py-2 rounded-lg font-semibold transition-all ${selectedDesign === design.id
                       ? 'bg-gray-900 text-white'
                       : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-gray-900'
-                  }`}
+                    }`}
                 >
                   {selectedDesign === design.id ? '✓ Seçildi' : 'Seç'}
                 </button>

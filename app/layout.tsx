@@ -16,14 +16,14 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gnkhotels.com'),
   title: {
-    default: 'GNK Otel Rehberi',
-    template: '%s | GNK Otel Rehberi',
+    default: 'Yerini Ayır',
+    template: '%s | Yerini Ayır',
   },
   description: "Erdem'in Seçtiği En İyi Oteller - Türkiye'nin en güvenilir otel rehberi",
   keywords: ['otel', 'tatil', 'konaklama', 'türkiye otelleri', 'otel rehberi', 'otel önerileri'],
-  authors: [{ name: 'GNK Otel Rehberi' }],
-  creator: 'GNK',
-  publisher: 'GNK',
+  authors: [{ name: 'Yerini Ayır' }],
+  creator: 'Yerini Ayır',
+  publisher: 'Yerini Ayır',
   manifest: '/manifest.json',
   icons: {
     icon: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'tr_TR',
-    siteName: 'GNK Otel Rehberi',
+    siteName: 'Yerini Ayır',
   },
   twitter: {
     card: 'summary_large_image',
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   alternates: {
     types: {
       'application/rss+xml': [
-        { url: '/feed.xml', title: 'GNK Gezi Rehberi RSS Feed' },
+        { url: '/feed.xml', title: 'Yerini Ayır Gezi Rehberi RSS Feed' },
       ],
     },
   },

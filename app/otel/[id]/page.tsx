@@ -12,7 +12,8 @@ import { HotelFeatures } from '@/components/hotel/HotelFeatures';
 import { HotelDescription } from '@/components/hotel/HotelDescription';
 import { NearbyGuide } from '@/components/hotel/NearbyGuide';
 import { BreakfastSection } from '@/components/hotel/BreakfastSection';
-import { HotelHighlights } from '@/components/hotel/HotelHighlights';
+
+
 import { HotelFAQ } from '@/components/hotel/HotelFAQ';
 import PremiumClassic from '@/components/hotel/ScoreCard/PremiumClassic';
 import { getLocalizedText } from '@/lib/localization';
@@ -125,6 +126,54 @@ export default async function HotelDetailPage({ params }: Props) {
     priceRange: '₺₺₺',
   };
 
+
+  const defaultFaqs = [
+    {
+      question: 'Giriş ve çıkış saatleri neler?',
+      answer: 'Giriş saati 14:00, çıkış saati 12:00\'dir. Erken giriş ve geç çıkış talepleri müsaitliğe bağlıdır.',
+    },
+    {
+      question: 'Tesisin kahvaltı saatleri?',
+      answer: 'Kahvaltı her gün 07:30 - 10:30 saatleri arasında servis edilmektedir.',
+    },
+    {
+      question: 'Otopark var mı?',
+      answer: 'Evet, tesis bünyesinde misafirler için ücretsiz otopark mevcuttur.',
+    },
+    {
+      question: 'Denize Uzaklığı Nedir?',
+      answer: hotel.tags?.includes('denize-sifir') ? 'Tesisimiz denize sıfır konumdadır.' : 'Plaja yürüme mesafesindedir.',
+    },
+    {
+      question: 'Engelliler için uygun mu?',
+      answer: 'Tesisimiz engelli misafirlerimizin erişimi için tekerlekli sandalye rampaları ve asansör ile donatılmıştır.',
+    },
+    {
+      question: 'Çocuk Kabul Ediyor musunuz?',
+      answer: hotel.tags?.includes('yetiskin-oteli') ? 'Hayır, tesisimiz +12 yaş yetişkin oteli konseptindedir.' : 'Evet, her yaş grubundan çocuk misafirimiz kabul edilmektedir.',
+    },
+    {
+      question: 'Bu otele gelmek için en iyi zaman ne zaman?',
+      answer: 'Bahar ve yaz ayları (Mayıs-Ekim) deniz tatili için en ideal dönemdir.',
+    },
+    {
+      question: 'Bölgede mutlaka görülmesi gereken yerler nereler?',
+      answer: `Konumumuz ${getLocalizedText(hotel.location).split(',')[0]} merkezine yakındır. Tarihi çarşı ve liman mutlaka görülmelidir.`,
+    },
+    {
+      question: 'Tesiste spor olanağı var mı? Gym, Yoga, Pilates?',
+      answer: 'Otelimizde tam donanımlı fitness merkezi bulunmaktadır. Ayrıca sabahları yoga dersleri düzenlenmektedir.',
+    },
+    {
+      question: 'Evcil hayvan kabul ediyor musunuz?',
+      answer: 'Maalesef tesisimize evcil hayvan kabul edilmemektedir.',
+    },
+  ];
+
+  const displayFaqs = (hotel.faqs && hotel.faqs.length > 0)
+    ? hotel.faqs.filter(f => f.answer && f.answer.trim().length > 0)
+    : defaultFaqs;
+
   return (
     <>
       <JsonLd data={hotelSchema} />
@@ -157,15 +206,9 @@ export default async function HotelDetailPage({ params }: Props) {
 
         <div className="px-5 flex flex-col space-y-1.5">
           <div className="order-1">
-            <HotelHighlights highlights={[
-              hotel.tags?.includes('denize-sifir') ? 'Denize Sıfır Konum' : '',
-              hotel.tags?.includes('yetiskin-oteli') ? 'Yalnızca Yetişkinler' : '',
-              hotel.price < 2000 ? 'Uygun Fiyat' : hotel.price < 5000 ? 'Orta Segment' : 'Lüks Segment',
-              hotel.amenities?.includes('Havuz') ? 'Havuz Mevcut' : '',
-              hotel.amenities?.includes('WiFi') ? 'Ücretsiz Wi-Fi' : '',
-              hotel.amenities?.includes('Spa') ? 'Spa & Wellness' : '',
-            ].filter(Boolean)} />
+
           </div>
+
 
           <div className="order-2">
             <HotelFeatures tags={hotelTagsWithIcons} isMobile={true} />
@@ -184,40 +227,15 @@ export default async function HotelDetailPage({ params }: Props) {
             </div>
           )}
 
-          <div className="order-5">
-            <HotelFAQ faqs={[
-              {
-                question: 'Bu otel çocuk kabul ediyor mu?',
-                answer: hotel.tags?.includes('yetiskin-oteli')
-                  ? 'Hayır, bu otel yalnızca yetişkinlere hizmet vermektedir.'
-                  : 'Evet, bu otel çocuk misafir kabul etmektedir.',
-              },
-              {
-                question: 'Otelde havuz var mı?',
-                answer: hotel.amenities?.includes('Havuz')
-                  ? 'Evet, otelde havuz bulunmaktadır.'
-                  : 'Otel tesislerinde havuz bulunmamaktadır.',
-              },
-              {
-                question: 'Ücretsiz Wi-Fi var mı?',
-                answer: hotel.amenities?.includes('WiFi')
-                  ? 'Evet, otel genelinde ücretsiz Wi-Fi hizmeti sunulmaktadır.'
-                  : 'Wi-Fi hizmeti hakkında bilgi için otelle iletişime geçiniz.',
-              },
-              {
-                question: 'Denize uzaklık ne kadar?',
-                answer: hotel.tags?.includes('denize-sifir')
-                  ? 'Otel denize sıfır konumda yer almaktadır.'
-                  : 'Denize uzaklık bilgisi için otel detaylarını inceleyiniz.',
-              },
-            ]} />
+          <div className="order-7">
+            <HotelFAQ faqs={displayFaqs} />
           </div>
 
-          <div className="order-6">
+          <div className="order-5">
             <LocationCard latitude={hotel.latitude} longitude={hotel.longitude} address={getLocalizedText(hotel.location)} />
           </div>
 
-          <div className="order-7">
+          <div className="order-6">
             <Suspense fallback={
               <div className="bg-white p-5 rounded-xl border border-gray-200">
                 <div className="h-6 w-40 bg-gray-200 rounded animate-pulse mb-4" />
@@ -299,7 +317,7 @@ export default async function HotelDetailPage({ params }: Props) {
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 bg-white border-2 border-gray-900 hover:bg-gray-900 text-gray-900 hover:text-white font-semibold py-3 px-6 rounded-xl transition-colors whitespace-nowrap"
                   >
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" /></svg>
                     <span>Instagram</span>
                   </a>
                 )}
@@ -309,14 +327,8 @@ export default async function HotelDetailPage({ params }: Props) {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
             <div className="lg:col-span-2 space-y-6">
-              <HotelHighlights highlights={[
-                hotel.tags?.includes('denize-sifir') ? 'Denize Sıfır Konum' : '',
-                hotel.tags?.includes('yetiskin-oteli') ? 'Yalnızca Yetişkinler' : '',
-                hotel.price < 2000 ? 'Uygun Fiyat' : hotel.price < 5000 ? 'Orta Segment' : 'Lüks Segment',
-                hotel.amenities?.includes('Havuz') ? 'Havuz Mevcut' : '',
-                hotel.amenities?.includes('WiFi') ? 'Ücretsiz Wi-Fi' : '',
-                hotel.amenities?.includes('Spa') ? 'Spa & Wellness' : '',
-              ].filter(Boolean)} />
+
+
               <HotelFeatures tags={hotelTagsWithIcons} />
               <HotelDescription about={hotel.about || ''} />
               {hotel.breakfast_description && (
@@ -325,32 +337,7 @@ export default async function HotelDetailPage({ params }: Props) {
                   images={hotel.breakfast_images || []}
                 />
               )}
-              <HotelFAQ faqs={[
-                {
-                  question: 'Bu otel çocuk kabul ediyor mu?',
-                  answer: hotel.tags?.includes('yetiskin-oteli')
-                    ? 'Hayır, bu otel yalnızca yetişkinlere hizmet vermektedir.'
-                    : 'Evet, bu otel çocuk misafir kabul etmektedir.',
-                },
-                {
-                  question: 'Otelde havuz var mı?',
-                  answer: hotel.amenities?.includes('Havuz')
-                    ? 'Evet, otelde havuz bulunmaktadır.'
-                    : 'Otel tesislerinde havuz bulunmamaktadır.',
-                },
-                {
-                  question: 'Ücretsiz Wi-Fi var mı?',
-                  answer: hotel.amenities?.includes('WiFi')
-                    ? 'Evet, otel genelinde ücretsiz Wi-Fi hizmeti sunulmaktadır.'
-                    : 'Wi-Fi hizmeti hakkında bilgi için otelle iletişime geçiniz.',
-                },
-                {
-                  question: 'Denize uzaklık ne kadar?',
-                  answer: hotel.tags?.includes('denize-sifir')
-                    ? 'Otel denize sıfır konumda yer almaktadır.'
-                    : 'Denize uzaklık bilgisi için otel detaylarını inceleyiniz.',
-                },
-              ]} />
+
             </div>
             <div className="lg:col-span-1">
               <LocationCard latitude={hotel.latitude} longitude={hotel.longitude} address={getLocalizedText(hotel.location)} />
@@ -371,6 +358,10 @@ export default async function HotelDetailPage({ params }: Props) {
             }>
               <NearbyGuide location={getLocalizedText(hotel.location)} coordinates={hotel.coordinates} />
             </Suspense>
+          </div>
+
+          <div className="mb-6">
+            <HotelFAQ faqs={displayFaqs} />
           </div>
 
           <Suspense fallback={

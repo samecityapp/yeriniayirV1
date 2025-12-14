@@ -267,7 +267,7 @@ export default function AnasayfaYonetimiPage() {
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {groupHotels.map(hotel => (
                       <div key={hotel.id} className="border rounded-lg overflow-hidden">
-                        <div className="aspect-video bg-gray-200">
+                        <div className="relative aspect-video bg-gray-200">
                           {hotel.coverImageUrl ? (
                             <Image
                               src={hotel.coverImageUrl}
