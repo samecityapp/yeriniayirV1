@@ -140,8 +140,10 @@ export default function SearchFilters() {
         });
       });
 
-    const uniqueLocations = Array.from(new Set(allHotels.map(h => h.location)));
-    uniqueLocations
+    // Localize locations first, then deduplicate
+    const normalizedLocations = Array.from(new Set(allHotels.map(h => getLocalizedText(h.location))));
+
+    normalizedLocations
       .filter(loc => loc && loc.toLowerCase().includes(query))
       .slice(0, 3)
       .forEach(loc => {

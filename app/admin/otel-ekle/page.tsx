@@ -19,6 +19,22 @@ import { getLocalizedText } from '@/lib/localization';
 import { LocalizedInput } from '@/components/admin/LocalizedInput';
 import { LocalizedTextarea } from '@/components/admin/LocalizedTextarea';
 
+// Helper for slug generation
+const slugify = (text: string) => {
+  return text
+    .toLowerCase()
+    .replace(/ğ/g, 'g')
+    .replace(/ü/g, 'u')
+    .replace(/ş/g, 's')
+    .replace(/ı/g, 'i')
+    .replace(/ö/g, 'o')
+    .replace(/ç/g, 'c')
+    .replace(/[^a-z0-9\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-')
+    .trim();
+};
+
 const FIXED_FAQ_QUESTIONS = [
   'Giriş ve çıkış saatleri neler?',
   'Tesisin kahvaltı saatleri?',
@@ -31,6 +47,50 @@ const FIXED_FAQ_QUESTIONS = [
   'Tesiste spor olanağı var mı? Gym, Yoga, Pilates?',
   'Evcil hayvan kabul ediyor musunuz?'
 ];
+
+// Helper for localized data parsing
+const tryParseLocalized = (val: any): LocalizedString => {
+  if (!val) return { tr: '', en: '', de: '' };
+
+  // If it's already an object
+  if (typeof val === 'object') {
+    return {
+      tr: val.tr || '',
+      en: val.en || '',
+      de: val.de || ''
+    };
+  }
+
+  // If it's a string, try to parse it as JSON
+  if (typeof val === 'string') {
+    // Check if it looks like a JSON object
+    if (val.trim().startsWith('{')) {
+      try {
+        const parsed = JSON.parse(val);
+
+        // Handle double-stringified JSON (recursive check)
+        if (typeof parsed === 'string' && parsed.trim().startsWith('{')) {
+          return tryParseLocalized(parsed);
+        }
+
+        // If parsed successfully into an object
+        if (typeof parsed === 'object' && parsed !== null) {
+          return {
+            tr: parsed.tr || '',
+            en: parsed.en || '',
+            de: parsed.de || ''
+          };
+        }
+      } catch (e) {
+        // Not a valid JSON, verify fallback below
+      }
+    }
+    // Fallback: treat as plain string for default language (tr)
+    return { tr: val, en: '', de: '' };
+  }
+
+  return { tr: String(val), en: '', de: '' };
+};
 
 export default function OtelEklePage() {
   const router = useRouter();
@@ -83,8 +143,8 @@ export default function OtelEklePage() {
             .maybeSingle();
 
           if (!hotelError && hotelData) {
-            setName(typeof hotelData.name === 'string' ? { tr: hotelData.name, en: '', de: '' } : hotelData.name || { tr: '', en: '', de: '' });
-            setLocation(typeof hotelData.location === 'string' ? { tr: hotelData.location, en: '', de: '' } : hotelData.location || { tr: '', en: '', de: '' });
+            setName(tryParseLocalized(hotelData.name));
+            setLocation(tryParseLocalized(hotelData.location));
             setLatitude(hotelData.latitude?.toString() || '');
             setLongitude(hotelData.longitude?.toString() || '');
             setGnkScore(hotelData.rating || 0);
@@ -93,16 +153,15 @@ export default function OtelEklePage() {
             setCoverImageUrl(hotelData.image_url || '');
             setGalleryUrls(hotelData.gallery_images || []);
             setSelectedAmenities(hotelData.amenities || []);
-            const aboutData = hotelData.about || hotelData.description || '';
-            setAbout(typeof aboutData === 'string' ? { tr: aboutData, en: '', de: '' } : aboutData || { tr: '', en: '', de: '' });
+            setAbout(tryParseLocalized(hotelData.about || hotelData.description));
             setVideoUrl(hotelData.video_url || '');
             setVideoThumbnailUrl(hotelData.video_thumbnail_url || '');
             setWebsiteUrl(hotelData.website_url || '');
             setInstagramUrl(hotelData.instagram_url || '');
             setGoogleMapsUrl(hotelData.google_maps_url || '');
-            const breakfastData = hotelData.breakfast_description || '';
-            setBreakfastDescription(typeof breakfastData === 'string' ? { tr: breakfastData, en: '', de: '' } : breakfastData || { tr: '', en: '', de: '' });
+            setBreakfastDescription(tryParseLocalized(hotelData.breakfast_description));
             setBreakfastImages(hotelData.breakfast_images || []);
+
 
             // Initialize FAQs
             const existingFaqs = hotelData.faqs || [];
@@ -167,6 +226,7 @@ export default function OtelEklePage() {
 
     const hotelData = {
       name: name,
+      slug: slugify(name.tr),
       location: location,
       latitude: lat,
       longitude: lng,

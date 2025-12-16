@@ -25,7 +25,7 @@ const LocationCard = dynamic(() => import('@/components/hotel/LocationCard'), {
   loading: () => <div className="h-[250px] w-full bg-gray-100 animate-pulse rounded-xl" />
 });
 
-export const revalidate = 3600;
+export const revalidate = 0;
 
 type Props = {
   params: { id: string };
@@ -215,7 +215,7 @@ export default async function HotelDetailPage({ params }: Props) {
           </div>
 
           <div className="order-3">
-            <HotelDescription about={hotel.about || ''} isMobile={true} />
+            <HotelDescription about={hotel.about || hotel.description || ''} isMobile={true} />
           </div>
 
           {hotel.breakfast_description && (
@@ -330,7 +330,7 @@ export default async function HotelDetailPage({ params }: Props) {
 
 
               <HotelFeatures tags={hotelTagsWithIcons} />
-              <HotelDescription about={hotel.about || ''} />
+              <HotelDescription about={hotel.about || hotel.description || ''} />
               {hotel.breakfast_description && (
                 <BreakfastSection
                   description={hotel.breakfast_description}

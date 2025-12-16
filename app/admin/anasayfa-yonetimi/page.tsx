@@ -11,6 +11,41 @@ import { Plus, Trash2, Eye, EyeOff, Save, Loader2 } from 'lucide-react';
 import Image from 'next/image';
 import { getLocalizedText } from '@/lib/localization';
 
+// Helper for localized data parsing
+const tryParseLocalized = (val: any): { tr: string; en: string; de: string } => {
+  if (!val) return { tr: '', en: '', de: '' };
+
+  if (typeof val === 'object') {
+    return {
+      tr: val.tr || '',
+      en: val.en || '',
+      de: val.de || ''
+    };
+  }
+
+  if (typeof val === 'string') {
+    if (val.trim().startsWith('{')) {
+      try {
+        const parsed = JSON.parse(val);
+        // Handle double-stringified JSON (recursive check)
+        if (typeof parsed === 'string' && parsed.trim().startsWith('{')) {
+          return tryParseLocalized(parsed);
+        }
+        if (typeof parsed === 'object' && parsed !== null) {
+          return {
+            tr: parsed.tr || '',
+            en: parsed.en || '',
+            de: parsed.de || ''
+          };
+        }
+      } catch (e) { }
+    }
+    return { tr: val, en: '', de: '' };
+  }
+
+  return { tr: String(val), en: '', de: '' };
+};
+
 export default function AnasayfaYonetimiPage() {
   const [groups, setGroups] = useState<Group[]>([]);
   const [hotels, setHotels] = useState<Hotel[]>([]);
@@ -26,10 +61,18 @@ export default function AnasayfaYonetimiPage() {
   const loadData = async () => {
     setIsLoading(true);
     try {
-      const [groupsData, hotelsData] = await Promise.all([
+      const [groupsData, rawHotelsData] = await Promise.all([
         db.groups.getAll(),
         db.hotels.getAll()
       ]);
+
+      // Parse localized fields for hotels
+      const hotelsData = rawHotelsData.map((h: any) => ({
+        ...h,
+        name: tryParseLocalized(h.name),
+        location: tryParseLocalized(h.location),
+        description: tryParseLocalized(h.description || '')
+      }));
 
       const groupsWithHotels = await Promise.all(
         groupsData.map(async (group) => {

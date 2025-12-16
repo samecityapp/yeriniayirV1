@@ -12,7 +12,7 @@ interface BreakfastSectionProps {
 }
 
 export function BreakfastSection({ description, images }: BreakfastSectionProps) {
-  const descriptionText = typeof description === 'string' ? description : getLocalizedText(description);
+  const descriptionText = getLocalizedText(description);
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
 
   if (!description && (!images || images.length === 0)) {

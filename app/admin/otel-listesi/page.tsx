@@ -11,6 +11,44 @@ import Image from 'next/image';
 import { getLocalizedText } from '@/lib/localization';
 import { ReportGenerator } from '@/components/admin/ReportGenerator';
 
+// Helper for localized data parsing
+const tryParseLocalized = (val: any): { tr: string; en: string; de: string } => {
+  if (!val) return { tr: '', en: '', de: '' };
+
+  if (typeof val === 'object') {
+    return {
+      tr: val.tr || '',
+      en: val.en || '',
+      de: val.de || ''
+    };
+  }
+
+  if (typeof val === 'string') {
+    if (val.trim().startsWith('{')) {
+      try {
+        const parsed = JSON.parse(val);
+        // Handle double-stringified JSON (recursive check)
+        if (typeof parsed === 'string' && parsed.trim().startsWith('{')) {
+          return tryParseLocalized(parsed);
+        }
+        if (typeof parsed === 'object' && parsed !== null) {
+          return {
+            tr: parsed.tr || '',
+            en: parsed.en || '',
+            de: parsed.de || ''
+          };
+        }
+      } catch (e) {
+        // Not a valid JSON, fallback below
+      }
+    }
+    // Fallback: treat as plain string for default language (tr)
+    return { tr: val, en: '', de: '' };
+  }
+
+  return { tr: String(val), en: '', de: '' };
+};
+
 export default function OtelListesiPage() {
   const [hotels, setHotels] = useState<Hotel[]>([]);
   const [filteredHotels, setFilteredHotels] = useState<Hotel[]>([]);
@@ -31,9 +69,9 @@ export default function OtelListesiPage() {
 
       const mappedHotels: Hotel[] = (data || []).map(hotel => ({
         id: hotel.id,
-        name: hotel.name,
-        location: hotel.location,
-        description: hotel.description || '',
+        name: tryParseLocalized(hotel.name),
+        location: tryParseLocalized(hotel.location),
+        description: tryParseLocalized(hotel.description || ''),
         price: hotel.price || 0,
         gnkScore: hotel.rating || 0,
         coverImageUrl: hotel.image_url || '',
