@@ -233,10 +233,10 @@ export default function SearchFilters() {
             </div>
             <button
               type="submit"
-              className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white rounded-full px-6 py-2 m-1.5 font-semibold shadow-lg hover:shadow-xl transition-all duration-200 flex items-center gap-1.5 text-sm"
+              className="bg-[#FF385C] hover:bg-[#D90B3E] text-white rounded-full p-3 m-1.5 shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center shrink-0"
+              aria-label="Ara"
             >
-              <Search className="h-4 w-4" />
-              <span className="hidden sm:inline">Ara</span>
+              <Search className="h-5 w-5 stroke-[2.5]" />
             </button>
           </form>
 
