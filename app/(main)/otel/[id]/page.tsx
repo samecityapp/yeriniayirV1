@@ -64,6 +64,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: hotel.coverImageUrl ? [hotel.coverImageUrl] : [],
       type: 'website',
     },
+    alternates: {
+      canonical: `https://www.yeriniayir.com/otel/${hotel.id}`,
+    },
     twitter: {
       card: 'summary_large_image',
       title: `${hotelName} - ${location}`,
@@ -91,7 +94,7 @@ export default async function HotelDetailPage({ params }: Props) {
     text: 'İyi',
   };
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gnkhotels.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.yeriniayir.com';
   const hotelSchema = generateHotelSchema(hotel);
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Ana Sayfa', url: baseUrl },

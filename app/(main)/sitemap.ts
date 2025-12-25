@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { db } from '@/lib/db';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://www.gnkhotels.com';
+  const baseUrl = 'https://www.yeriniayir.com';
 
   // Get all hotels
   const hotels = await db.hotels.getAll();
@@ -10,16 +10,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     url: `${baseUrl}/otel/${hotel.id}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
-    priority: 0.8,
+    priority: 0.9,
   }));
 
   // Get all articles
   const articles = await db.articles.getAll();
   const articleUrls = articles.map((article) => ({
-    url: `${baseUrl}/blog/${article.slug}`,
-    lastModified: new Date(article.published_at),
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
+    url: `${baseUrl}/rehber/${article.slug}`,
+    lastModified: new Date(article.published_at || article.updated_at),
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
   }));
 
   return [
@@ -38,8 +38,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     {
       url: `${baseUrl}/rehber`,
       lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
+      changeFrequency: 'daily',
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/hakkimizda`,
@@ -54,7 +54,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.3,
     },
     {
-      url: `${baseUrl}/kullanim-kosullari`,
+      url: `${baseUrl}/kullanim-sartlari`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.3,

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: 'Yerini Ayır - Türkiye\'nin En Seçkin Otelleri',
   description: 'Türkiye\'nin en iyi otellerini keşfedin. Bodrum, Antalya, Çeşme ve daha fazlası için detaylı otel rehberi ve öneriler.',
   alternates: {
-    canonical: 'https://www.gnkhotels.com',
+    canonical: 'https://www.yeriniayir.com',
   },
 };
 

@@ -29,6 +29,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title: `${location.title} Gezi Rehberi`,
         description: location.description,
         images: [location.image],
+      },
+      alternates: {
+        canonical: `https://www.yeriniayir.com/rehber/${params.slug}`,
       }
     };
   }
@@ -50,6 +53,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${title}`,
     description: description,
     keywords: [title, articleLocation, 'rehber', 'gezi', 'otel', 'türkiye'],
+    alternates: {
+      canonical: `https://www.yeriniayir.com/rehber/${article.slug}`,
+    },
     openGraph: {
       title: title,
       description: description,
@@ -124,7 +130,7 @@ export default async function ArticlePage({ params }: Props) {
     day: 'numeric',
   });
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gnkhotels.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.yeriniayir.com';
   const articleSchema = generateArticleSchema({
     title: getLocalizedText(article.title),
     description: getLocalizedText(article.meta_description),
@@ -133,7 +139,7 @@ export default async function ArticlePage({ params }: Props) {
     coverImage: article.cover_image_url,
     createdAt: article.created_at,
     updatedAt: article.updated_at,
-    author: 'GNK Otel Rehberi',
+    author: 'Yerini Ayır Rehberi',
   });
 
   const breadcrumbSchema = generateBreadcrumbSchema([
@@ -186,7 +192,7 @@ export default async function ArticlePage({ params }: Props) {
 
             <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden mb-16">
               <Image
-                src={article.cover_image_url || 'https://placehold.co/1200x675/e5e5e5/666666?text=GNK'}
+                src={article.cover_image_url || 'https://placehold.co/1200x675/e5e5e5/666666?text=Yerini+Ayir'}
                 alt={getLocalizedText(article.title)}
                 fill
                 sizes="100vw"
