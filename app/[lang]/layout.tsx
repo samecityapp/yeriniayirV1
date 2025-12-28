@@ -79,12 +79,18 @@ const quicksand = Quicksand({
   variable: '--font-quicksand',
 });
 
-export default function RootLayout({ children }: { children: React.ReactNode; }) {
+export default function RootLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: { lang: string };
+}) {
   const orgSchema = generateOrganizationSchema();
   const websiteSchema = generateWebSiteSchema();
 
   return (
-    <html lang="tr" className={`${inter.variable} ${quicksand.variable}`}>
+    <html lang={params.lang} className={`${inter.variable} ${quicksand.variable}`}>
       <head>
         <link rel="preconnect" href="https://jerkkxwgddujigsbeqwo.supabase.co" />
         <link rel="preconnect" href="https://images.pexels.com" />

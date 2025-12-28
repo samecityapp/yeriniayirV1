@@ -4,11 +4,12 @@ import { db } from '@/lib/db';
 import { getLocalizedText } from '@/lib/localization';
 import { Article } from '@/lib/types';
 import { BrandLogo } from './ui/BrandLogo';
+import { getDictionary } from '@/lib/dictionary';
 
-export async function Footer() {
-  // Hardcoded as requested: 2026
-  // const currentYear = new Date().getFullYear(); 
+export async function Footer({ lang = 'tr' }: { lang?: 'tr' | 'en' }) {
+  const currentYear = 2026;
   const latestArticles = await db.articles.getLatest(3);
+  const dict = await getDictionary(lang);
 
   return (
     <footer className="bg-white text-gray-600 mt-20 border-t border-gray-200">
@@ -21,82 +22,70 @@ export async function Footer() {
               <BrandLogo className="h-8 w-auto aspect-[3.5/1]" />
             </div>
             <p className="text-sm text-gray-500">
-              Kalabalıkların değil, &quot;bilenlerin&quot; tercih ettiği yerleri keşfet
+              {lang === 'tr'
+                ? 'Kalabalıkların değil, "bilenlerin" tercih ettiği yerleri keşfet'
+                : 'Discover the places chosen by those "in the know", not the crowds'}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-gray-900 font-semibold text-lg mb-4">Hızlı Bağlantılar</h3>
+            <h3 className="text-gray-900 font-semibold text-lg mb-4">{dict.navigation.explore}</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-sm hover:text-blue-600 transition-colors">
-                  Ana Sayfa
+                <Link href={`/${lang}`} className="text-sm hover:text-blue-600 transition-colors">
+                  {dict.navigation.home}
                 </Link>
               </li>
               <li>
-                <Link href="/search" className="text-sm hover:text-blue-600 transition-colors">
-                  Otel Ara
+                <Link href={`/${lang}/search`} className="text-sm hover:text-blue-600 transition-colors">
+                  {dict.navigation.search}
                 </Link>
               </li>
               <li>
-                <Link href="/rehber" className="text-sm hover:text-blue-600 transition-colors">
-                  Gezi Rehberi
+                <Link href={`/${lang}/rehber`} className="text-sm hover:text-blue-600 transition-colors">
+                  {dict.navigation.blog}
                 </Link>
               </li>
-              {/* Admin Panel removed as requested */}
             </ul>
           </div>
 
           {/* Latest Articles */}
           <div>
-            <h3 className="text-gray-900 font-semibold text-lg mb-4">Son Yazılar</h3>
+            <h3 className="text-gray-900 font-semibold text-lg mb-4">{dict.home.latest_articles}</h3>
             <ul className="space-y-2">
               {latestArticles.length > 0 ? (
                 latestArticles.map((article: Article) => (
                   <li key={article.slug}>
                     <Link
-                      href={`/rehber/${article.slug}`}
+                      href={`/${lang}/rehber/${article.slug}`}
                       className="text-sm hover:text-blue-600 transition-colors line-clamp-1"
                     >
-                      {getLocalizedText(article.title)}
+                      {getLocalizedText(article.title, lang)}
                     </Link>
                   </li>
                 ))
               ) : (
-                <li className="text-sm text-gray-400">Henüz yazı yok</li>
+                <li className="text-sm text-gray-400">
+                  {lang === 'tr' ? 'Henüz yazı yok' : 'No articles yet'}
+                </li>
               )}
             </ul>
           </div>
 
           {/* Popular Locations */}
           <div>
-            <h3 className="text-gray-900 font-semibold text-lg mb-4">Popüler Lokasyonlar</h3>
+            <h3 className="text-gray-900 font-semibold text-lg mb-4">{dict.home.popular_locations}</h3>
             <ul className="space-y-2">
-              <li>
-                <Link href="/search?location=Fethiye" className="text-sm hover:text-blue-600 transition-colors">
-                  Fethiye Otelleri
-                </Link>
-              </li>
-              <li>
-                <Link href="/search?location=Antalya" className="text-sm hover:text-blue-600 transition-colors">
-                  Antalya Otelleri
-                </Link>
-              </li>
-              <li>
-                <Link href="/search?location=Bodrum" className="text-sm hover:text-blue-600 transition-colors">
-                  Bodrum Otelleri
-                </Link>
-              </li>
-              <li>
-                <Link href="/search?location=Marmaris" className="text-sm hover:text-blue-600 transition-colors">
-                  Marmaris Otelleri
-                </Link>
-              </li>
+              {['Fethiye', 'Antalya', 'Bodrum', 'Marmaris'].map((loc) => (
+                <li key={loc}>
+                  <Link href={`/${lang}/search?location=${loc}`} className="text-sm hover:text-blue-600 transition-colors">
+                    {loc} {lang === 'tr' ? 'Otelleri' : 'Hotels'}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
-
-
         </div>
 
         {/* Bottom Bar */}
@@ -104,28 +93,28 @@ export async function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex flex-col items-center md:items-start gap-3">
               <p className="text-sm text-gray-500">
-                &copy; 2026 Yerini Ayır. Tüm Haklar saklıdır.
+                &copy; {currentYear} Yerini Ayır. {dict.footer.rights}
               </p>
               <div className="flex flex-wrap justify-center md:justify-start gap-4 text-xs text-gray-500">
-                <Link href="/kullanim-kosullari" className="hover:text-blue-600 transition-colors">
-                  Kullanım Koşulları
+                <Link href={`/${lang}/kullanim-kosullari`} className="hover:text-blue-600 transition-colors">
+                  {dict.footer.terms}
                 </Link>
-                <Link href="/gizlilik-politikasi" className="hover:text-blue-600 transition-colors">
-                  Gizlilik Politikası
+                <Link href={`/${lang}/gizlilik-politikasi`} className="hover:text-blue-600 transition-colors">
+                  {dict.footer.privacy}
                 </Link>
-                <Link href="/cerez-politikasi" className="hover:text-blue-600 transition-colors">
-                  Çerez Politikası
+                <Link href={`/${lang}/cerez-politikasi`} className="hover:text-blue-600 transition-colors">
+                  {dict.footer.cookie}
                 </Link>
-                <Link href="/kvkk-aydinlatma-metni" className="hover:text-blue-600 transition-colors">
-                  KVKK
+                <Link href={`/${lang}/kvkk-aydinlatma-metni`} className="hover:text-blue-600 transition-colors">
+                  {dict.footer.kvkk}
                 </Link>
-                <Link href="/hakkimizda" className="hover:text-blue-600 transition-colors">
-                  Hakkımızda
+                <Link href={`/${lang}/hakkimizda`} className="hover:text-blue-600 transition-colors">
+                  {dict.navigation.about}
                 </Link>
               </div>
             </div>
 
-            {/* Social Media - Kept logic but updated styling for light theme */}
+            {/* Social Media */}
             <div className="flex gap-4">
               <a
                 href="https://instagram.com/gnkoteller"
@@ -136,7 +125,6 @@ export async function Footer() {
               >
                 <Instagram className="w-5 h-5" />
               </a>
-
             </div>
           </div>
         </div>
