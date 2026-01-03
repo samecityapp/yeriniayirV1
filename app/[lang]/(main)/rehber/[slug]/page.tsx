@@ -1,4 +1,6 @@
 import { db } from '@/lib/db';
+import { supabase } from '@/lib/supabase';
+import { cn, calculateReadingTime } from '@/lib/utils';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import Image from 'next/image';
@@ -7,7 +9,7 @@ import { ArrowLeft, Calendar, Clock } from 'lucide-react';
 import { getLocalizedText } from '@/lib/localization';
 import { getDictionary } from '@/lib/dictionary';
 import { JsonLd } from '@/components/seo/JsonLd';
-import { generateArticleSchema, generateBreadcrumbSchema } from '@/lib/schema-generator';
+import { generateArticleSchema, generateBreadcrumbSchema, generateFAQSchema } from '@/lib/schema-generator';
 import { QuickSummary } from '@/components/blog/QuickSummary';
 import { RelatedHotels } from '@/components/blog/RelatedHotels';
 import { RelatedArticles } from '@/components/RelatedArticles';
@@ -15,6 +17,7 @@ import { LOCATIONS } from '@/lib/constants';
 import { ArticleList } from '@/components/ArticleList';
 import { getRandomAuthor } from '@/lib/authors';
 import { BlogAuthor } from '@/components/blog/BlogAuthor';
+import { SmartContent } from '@/components/blog/SmartContent';
 
 
 type Props = { params: { slug: string; lang: 'tr' | 'en' } };
@@ -160,28 +163,120 @@ export default async function ArticlePage({ params }: Props) {
 
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.yeriniayir.com';
   const author = getRandomAuthor(article.slug);
+  // const supabase = createClient(); // using imported singleton
+
+  const title = getLocalizedText(article.title, lang);
+  const description = getLocalizedText(article.meta_description, lang);
+  const slugTr = article.slug;
+  const slugEn = (article as any).slug_en || article.slug;
+
+  // Extract FAQs from content for Schema
+  // Logic: Look for "Sıkça Sorulan Sorular" or "FAQ" H2/H3/H4
+  // Then look for strong/bold questions and paragraphs following them, or H-tags and P-tags.
+  // Simplest robust method for this specific format:
+  // Usually Q: <p><strong>Question?</strong></p> or <h3>Question?</h3>
+  // A: <p>Answer...</p>
+
+  const content = getLocalizedText(article.content, lang);
+
+  // Extract Image URLs from content to fetch metadata
+  const imgUrlRegex = /<img[^>]+src="([^">]+)"/g;
+  const imgUrls: string[] = [];
+  let imgMatch;
+  while ((imgMatch = imgUrlRegex.exec(content)) !== null) {
+    if (imgMatch[1]) imgUrls.push(imgMatch[1]);
+  }
+
+  // Fetch metadata for these images if any
+  let imageMetadata: Record<string, { alt_tr: string; alt_en: string }> | undefined;
+
+  if (imgUrls.length > 0) {
+    const { data: mediaData } = await supabase
+      .from('article_media')
+      .select('url, alt_tr, alt_en')
+      .in('url', imgUrls);
+
+    if (mediaData && mediaData.length > 0) {
+      imageMetadata = mediaData.reduce((acc, item) => {
+        acc[item.url] = { alt_tr: item.alt_tr, alt_en: item.alt_en };
+        return acc;
+      }, {} as Record<string, { alt_tr: string; alt_en: string }>);
+    }
+  }
+
+  const readingTime = calculateReadingTime(content);
+  const faqs: { question: string; answer: string }[] = [];
+
+  // Detection Strategy:
+  // 1. Find the FAQ section header (approximate)
+  // 2. Parse Q&A pairs.
+
+  // Matches <h3>Question?</h3> <p>Answer</p> which is common in these articles.
+  // Or <p><strong>Question?</strong></p> <p>Answer</p>
+
+  // Let's try to find H3 tags that represent questions.
+  // Regex to find <h3>...</h3> followed by <p>...</p>
+  // Regex to find <h3>...</h3> followed by <p>...</p>
+  const faqRegex = /<(h[34]|p><strong>)(.*?)<\/\1>(?:\s*<p>)?(.*?)(?:<\/p>)/gi;
+
+  // We strictly only look for FAQs if the content mentions "Sıkça Sorulan" or "FAQ" to avoid false positives?
+  // Or just parse everything that looks like a Q&A structure?
+  // Let's rely on the structure being somewhat semantic if it exists.
+  // However, global H3 -> P parsing might catch non-FAQs.
+  // Best to only do this if we find a "FAQ" section header.
+
+  const faqSectionRegex = /(?:Sıkça Sorulan Sorular|FAQ|Hakkında Merak Edilenler)/i;
+
+  if (faqSectionRegex.test(content)) {
+    // If we are in the FAQ area. 
+    // Since split is hard with regex in TS without DOM, we'll use a simpler regex across the whole file
+    // but acceptable for now.
+    let match;
+    // Reset lastIndex if using global regex object, but here we create new.
+    const qnaRegex = /<(?:h3|strong)>(.*?)<\/(?:h3|strong)>\s*<p>(.*?)<\/p>/gi;
+
+    while ((match = qnaRegex.exec(content)) !== null) {
+      const q = match[1].replace(/<[^>]*>/g, '').trim();
+      const a = match[2].replace(/<[^>]*>/g, '').trim();
+
+      if (q.length > 5 && a.length > 10 && (q.includes('?') || q.includes('Mı') || q.includes('Mi'))) {
+        faqs.push({ question: q, answer: a });
+      }
+    }
+  }
 
   const articleSchema = generateArticleSchema({
-    title: getLocalizedText(article.title, lang),
-    description: getLocalizedText(article.meta_description, lang),
+    title,
+    description,
     content: getLocalizedText(article.content, lang),
-    slug: article.slug,
-    coverImage: article.cover_image_url,
-    createdAt: article.created_at,
+    slug: lang === 'tr' ? slugTr : slugEn,
+    coverImage: article.cover_image_url || undefined,
+    createdAt: article.published_at,
     updatedAt: article.updated_at,
-    author: { name: author.name, image: author.image },
   });
 
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: lang === 'tr' ? 'Ana Sayfa' : 'Home', url: `${baseUrl}/${lang}` },
-    { name: lang === 'tr' ? 'Rehber' : 'Guide', url: `${baseUrl}/${lang}/rehber` },
-    { name: getLocalizedText(article.title, lang), url: `${baseUrl}/${lang}/rehber/${article.slug}` },
+    {
+      name: lang === 'tr' ? 'Ana Sayfa' : 'Home',
+      url: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.yeriniayir.com'
+    },
+    {
+      name: lang === 'tr' ? 'Rehber' : 'Guide',
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/${lang === 'tr' ? 'tr/rehber' : 'en/guide'}`
+    },
+    {
+      name: title,
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/${lang === 'tr' ? 'tr/rehber' : 'en/guide'}/${lang === 'tr' ? slugTr : slugEn}`
+    }
   ]);
+
+  const faqSchema = faqs.length > 0 ? generateFAQSchema(faqs) : null;
 
   return (
     <>
       <JsonLd data={articleSchema} />
       <JsonLd data={breadcrumbSchema} />
+      {faqSchema && <JsonLd data={faqSchema} />}
 
       <div className="min-h-screen bg-background">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -207,7 +302,7 @@ export default async function ArticlePage({ params }: Props) {
                 <span className="text-zinc-300">•</span>
                 <div className="flex items-center gap-1.5 text-xs text-zinc-400">
                   <Clock className="w-3 h-3" />
-                  <span>{lang === 'tr' ? '8 DK OKUMA' : '8 MIN READ'}</span>
+                  <span>{lang === 'tr' ? `${readingTime} DK OKUMA` : `${readingTime} MIN READ`}</span>
                 </div>
               </div>
 
@@ -239,21 +334,7 @@ export default async function ArticlePage({ params }: Props) {
                 lang === 'tr' ? 'Ulaşım bilgileri ve ipuçları' : 'Transportation info and tips',
               ]} />
 
-              <div
-                className="prose prose-base md:prose-lg lg:prose-xl prose-zinc dark:prose-invert
-                mx-auto
-                prose-headings:font-bold prose-headings:tracking-tight prose-headings:text-zinc-900 
-                prose-h2:text-2xl md:prose-h2:text-3xl prose-h2:mt-16 prose-h2:mb-6
-                prose-h3:text-xl md:prose-h3:text-2xl prose-h3:mt-12 prose-h3:mb-4
-                prose-p:text-zinc-700 prose-p:leading-loose prose-p:mb-8 prose-p:font-normal
-                prose-a:text-primary prose-a:font-semibold prose-a:no-underline hover:prose-a:underline prose-a:transition-colors
-                prose-strong:text-zinc-900 prose-strong:font-bold
-                prose-img:rounded-2xl prose-img:shadow-xl prose-img:my-12 prose-img:w-full
-                prose-blockquote:border-l-4 prose-blockquote:border-foreground/80 prose-blockquote:bg-zinc-50 prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:rounded-r-lg prose-blockquote:not-italic prose-blockquote:my-10
-                prose-ul:my-8 prose-li:my-3 prose-li:text-zinc-700 prose-li:leading-loose
-                max-w-none"
-                dangerouslySetInnerHTML={{ __html: getLocalizedText(article.content, lang) }}
-              />
+              <SmartContent content={getLocalizedText(article.content, lang)} lang={lang} imageMetadata={imageMetadata} />
 
               <BlogAuthor author={author} />
             </div>
