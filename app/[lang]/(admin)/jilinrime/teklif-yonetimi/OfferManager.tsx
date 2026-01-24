@@ -3,14 +3,6 @@
 import { useState } from 'react';
 import { Offer } from '@/lib/types';
 import { createOffer, updateOffer, deleteOffer } from './actions';
-import {
-    Table,
-    TableBody,
-    TableCell,
-    TableHead,
-    TableHeader,
-    TableRow,
-} from '@/components/ui/table'; // Assuming ui/table exists, if not I will use simple divs or generic HTML table. 
 // Wait, I didn't see table.tsx in list_dir components/ui. I will use standard HTML table with Tailwind classes instead to be safe.
 
 import { Button } from '@/components/ui/button';
