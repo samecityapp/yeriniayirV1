@@ -6,21 +6,24 @@ import OfferPageTemplate from '@/components/OfferPageTemplate';
 // It checks if it matches an Offer in the DB.
 // If not, it triggers 404 (or allows other catch-alls if they existed, but here likely 404).
 
-export default async function DynamicOfferPage({ params }: { params: { slug: string } }) {
-    const { slug } = params;
+export default async function DynamicOfferPage({ params }: { params: { slug: string; lang: string } }) {
+    const { slug, lang } = params;
 
     const offer = await offers.getBySlug(slug);
 
     if (!offer) {
-        // Option: Check for other content types here if needed in future
         notFound();
     }
+
+    // Determine language, default to 'tr'
+    const language = (lang === 'en' || lang === 'tr' || lang === 'el') ? lang : 'tr';
 
     return (
         <OfferPageTemplate
             hotelName={offer.hotel_name}
             price={offer.price}
             region={offer.region}
+            lang={language}
         />
     );
 }

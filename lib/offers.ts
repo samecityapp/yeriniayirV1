@@ -13,14 +13,15 @@ export const offers = {
     },
 
     async getBySlug(slug: string): Promise<Offer | null> {
+        // Updated to use array fetch to avoid potential issues with single()/maybeSingle()
         const { data, error } = await supabase
             .from('offers')
             .select('*')
             .eq('slug', slug)
-            .maybeSingle();
+            .limit(1);
 
         if (error) throw error;
-        return data;
+        return (data && data.length > 0) ? data[0] : null;
     },
 
     async create(offer: Omit<Offer, 'id' | 'created_at' | 'updated_at'>): Promise<Offer> {
