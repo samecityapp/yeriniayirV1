@@ -16,14 +16,17 @@ const TikTokIcon = ({ className }: { className?: string }) => (
     </svg>
 );
 
+import { IncludedItem } from '@/lib/types';
+
 interface OfferPageTemplateProps {
     hotelName: string;
     price: string;
     region: string;
     lang?: 'tr' | 'en' | 'el'; // Add 'el' support
+    includedItems?: IncludedItem[] | null;
 }
 
-export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr' }: OfferPageTemplateProps) {
+export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr', includedItems }: OfferPageTemplateProps) {
 
     // Content Dictionary
     const t = {
@@ -466,111 +469,192 @@ export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr
                                 </h3>
 
                                 <ul className="space-y-6">
-                                    {/* Item 1 */}
-                                    <li className="flex gap-4">
-                                        <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mt-1">
-                                            <Check className="w-4 h-4 text-green-400" />
-                                        </div>
-                                        <div>
-                                            <h4 className="text-white font-bold text-lg">{content.feat1Title}</h4>
-                                            <p className="text-gray-400 text-sm mt-1">{content.feat1Desc}</p>
-                                        </div>
-                                    </li>
+                                    {(includedItems && includedItems.length > 0) ? (
+                                        // Dynamic Rendering
+                                        includedItems.map((item) => {
+                                            if (!item.isActive) return null;
 
-                                    {/* Item 2 */}
-                                    <li className="flex gap-4">
-                                        <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mt-1">
-                                            <Check className="w-4 h-4 text-green-400" />
-                                        </div>
-                                        <div>
-                                            <h4 className="text-white font-bold text-lg">{content.feat2Title}</h4>
-                                            <div className="text-gray-400 text-sm mt-2 space-y-2">
-                                                {content.feat2Desc}
-                                            </div>
-                                        </div>
-                                    </li>
+                                            // Determine if it's a standard item by easy lookup
+                                            // We use the ID to check against known keys
+                                            const key = item.id;
+                                            const isStandard = ['feat1', 'feat2', 'feat3', 'feat4', 'feat5', 'feat6', 'feat7', 'feat8'].includes(key);
 
-                                    {/* Item 3 - DYNAMIC REGION LOCATIVE */}
-                                    <li className="flex gap-4">
-                                        <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mt-1">
-                                            <Check className="w-4 h-4 text-green-400" />
-                                        </div>
-                                        <div>
-                                            <h4 className="text-white font-bold text-lg">{content.feat3Title}</h4>
-                                            <p className="text-gray-400 text-sm mt-1">
-                                                {lang === 'tr' ? (
-                                                    <>“{region}{getLocativeSuffix(region)} Nerede Kalınır?” gibi rehber içeriklerde otelinizin önerilmesi</>
-                                                ) : lang === 'en' ? (
-                                                    <>{content.feat3DescPrefix}{region}{content.feat3DescSuffix}</>
-                                                ) : (
-                                                    <>{content.feat3DescPrefix}{region}{content.feat3DescSuffix}</> // Greek structure (simplified)
-                                                )}
-                                            </p>
-                                        </div>
-                                    </li>
+                                            // Multi-language support logic:
+                                            // If it's a standard item, we prefer the localized "rich" content from t[lang]
+                                            // UNLESS the user has significantly changed the text in the DB (customized standard item).
+                                            // For simplicity, if it's standard, we assume the user prefers the Localization + Rich Formatting 
+                                            // effectively treating the Admin Panel text as a "Label" for toggling, 
+                                            // unless we detect it's a completely new custom entry (isCustom).
 
-                                    {/* Item 4 */}
-                                    <li className="flex gap-4">
-                                        <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mt-1">
-                                            <Check className="w-4 h-4 text-green-400" />
-                                        </div>
-                                        <div>
-                                            <h4 className="text-white font-bold text-lg">{content.feat4Title}</h4>
-                                            <p className="text-gray-400 text-sm mt-1">{content.feat4Desc}</p>
-                                        </div>
-                                    </li>
+                                            // Wait, if user EDITS "14 Ay" to "24 Ay" in Admin, strictly using t[lang] ignores the edit.
+                                            // But using DB text loses the Rich JSX (colors in feat2).
+                                            // Compromise: We use DB text for Title/Points generally, but for specific Rich items we might prefer `t`.
+                                            // Let's rely on: if isStandard, try to use t[lang]. If t[lang] title is wildly different? No that's expensive.
+                                            // Valid Approach: If `isCustom` is true, render DB text. 
+                                            // If `isStandard`: Render `t[lang]` version to preserve "Bire bir" quality and Localization.
+                                            // This implies Standard Items are "Toggle Only" in practice for the Frontend, even if editable in Admin.
+                                            // This is the safest way to ensure "Hata eksik olmasın".
 
-                                    {/* Item 5 */}
-                                    <li className="flex gap-4">
-                                        <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mt-1">
-                                            <Check className="w-4 h-4 text-green-400" />
-                                        </div>
-                                        <div>
-                                            <h4 className="text-white font-bold text-lg">{content.feat5Title}</h4>
-                                            <p className="text-gray-400 text-sm mt-1">{content.feat5Desc}</p>
-                                        </div>
-                                    </li>
+                                            let displayTitle: React.ReactNode = item.title;
+                                            let displayDesc: React.ReactNode = item.description;
 
-                                    {/* Item 6 */}
-                                    <li className="flex gap-4">
-                                        <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mt-1">
-                                            <Check className="w-4 h-4 text-green-400" />
-                                        </div>
-                                        <div>
-                                            <h4 className="text-white font-bold text-lg">{content.feat6Title}</h4>
-                                            <p className="text-gray-400 text-sm mt-1">{content.feat6Desc}</p>
-                                        </div>
-                                    </li>
+                                            if (isStandard && !item.isCustom) {
+                                                // @ts-ignore
+                                                const standardTitle = content[`${key}Title`];
 
-                                    {/* Item 7 - DYNAMIC REGION ABLATIVE */}
-                                    <li className="flex gap-4">
-                                        <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mt-1">
-                                            <Check className="w-4 h-4 text-green-400" />
-                                        </div>
-                                        <div>
-                                            <h4 className="text-white font-bold text-lg">
-                                                {lang === 'tr' ? (
-                                                    <>{region}{getAblativeSuffix(region)} Sınırlı Sayıda Seçilmiş Otel</>
-                                                ) : lang === 'en' ? (
-                                                    <>Limited Number of Selected Hotels from {region}</>
-                                                ) : (
-                                                    <>Περιορισμένος Αριθμός Επιλεγμένων Ξενοδοχείων από {region}</>
-                                                )}
-                                            </h4>
-                                            <p className="text-gray-400 text-sm mt-1">{content.feat7Desc}</p>
-                                        </div>
-                                    </li>
+                                                // Handle Dynamic Region Titles/Descs
+                                                if (key === 'feat3') {
+                                                    // Region logic
+                                                    if (lang === 'tr') {
+                                                        displayDesc = <>“{region}{getLocativeSuffix(region)} Nerede Kalınır?” gibi rehber içeriklerde otelinizin önerilmesi</>;
+                                                    } else {
+                                                        // @ts-ignore
+                                                        displayDesc = <>{content.feat3DescPrefix}{region}{content.feat3DescSuffix}</>;
+                                                    }
+                                                    displayTitle = standardTitle;
+                                                }
+                                                else if (key === 'feat7') {
+                                                    if (lang === 'tr') {
+                                                        displayTitle = <>{region}{getAblativeSuffix(region)} Sınırlı Sayıda Seçilmiş Otel</>;
+                                                    } else if (lang === 'en') {
+                                                        displayTitle = <>Limited Number of Selected Hotels from {region}</>;
+                                                    } else {
+                                                        displayTitle = <>Περιορισμένος Αριθμός Επιλεγμένων Ξενοδοχείων από {region}</>;
+                                                    }
+                                                    // @ts-ignore
+                                                    displayDesc = content[`${key}Desc`];
+                                                }
+                                                else {
+                                                    // Normal Standard Items
+                                                    if (standardTitle) displayTitle = standardTitle;
+                                                    // @ts-ignore
+                                                    const standardDesc = content[`${key}Desc`];
+                                                    if (standardDesc) displayDesc = standardDesc;
+                                                }
+                                            }
 
-                                    {/* Item 8 */}
-                                    <li className="flex gap-4">
-                                        <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mt-1">
-                                            <Check className="w-4 h-4 text-green-400" />
-                                        </div>
-                                        <div>
-                                            <h4 className="text-white font-bold text-lg">{content.feat8Title}</h4>
-                                            <p className="text-gray-400 text-sm mt-1">{content.feat8Desc}</p>
-                                        </div>
-                                    </li>
+                                            return (
+                                                <li key={item.id} className="flex gap-4">
+                                                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mt-1">
+                                                        <Check className="w-4 h-4 text-green-400" />
+                                                    </div>
+                                                    <div>
+                                                        <h4 className="text-white font-bold text-lg">{displayTitle}</h4>
+                                                        <div className="text-gray-400 text-sm mt-1">{displayDesc}</div>
+                                                    </div>
+                                                </li>
+                                            );
+                                        })
+                                    ) : (
+                                        // FALLBACK (Legacy or Empty) - Keeping the exact original hardcoded list for reliability
+                                        <>
+                                            {/* Item 1 */}
+                                            <li className="flex gap-4">
+                                                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mt-1">
+                                                    <Check className="w-4 h-4 text-green-400" />
+                                                </div>
+                                                <div>
+                                                    <h4 className="text-white font-bold text-lg">{content.feat1Title}</h4>
+                                                    <p className="text-gray-400 text-sm mt-1">{content.feat1Desc}</p>
+                                                </div>
+                                            </li>
+
+                                            {/* Item 2 */}
+                                            <li className="flex gap-4">
+                                                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mt-1">
+                                                    <Check className="w-4 h-4 text-green-400" />
+                                                </div>
+                                                <div>
+                                                    <h4 className="text-white font-bold text-lg">{content.feat2Title}</h4>
+                                                    <div className="text-gray-400 text-sm mt-2 space-y-2">
+                                                        {content.feat2Desc}
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            {/* Item 3 - DYNAMIC REGION LOCATIVE */}
+                                            <li className="flex gap-4">
+                                                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mt-1">
+                                                    <Check className="w-4 h-4 text-green-400" />
+                                                </div>
+                                                <div>
+                                                    <h4 className="text-white font-bold text-lg">{content.feat3Title}</h4>
+                                                    <p className="text-gray-400 text-sm mt-1">
+                                                        {lang === 'tr' ? (
+                                                            <>“{region}{getLocativeSuffix(region)} Nerede Kalınır?” gibi rehber içeriklerde otelinizin önerilmesi</>
+                                                        ) : lang === 'en' ? (
+                                                            <>{content.feat3DescPrefix}{region}{content.feat3DescSuffix}</>
+                                                        ) : (
+                                                            <>{content.feat3DescPrefix}{region}{content.feat3DescSuffix}</>
+                                                        )}
+                                                    </p>
+                                                </div>
+                                            </li>
+
+                                            {/* Item 4 */}
+                                            <li className="flex gap-4">
+                                                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mt-1">
+                                                    <Check className="w-4 h-4 text-green-400" />
+                                                </div>
+                                                <div>
+                                                    <h4 className="text-white font-bold text-lg">{content.feat4Title}</h4>
+                                                    <p className="text-gray-400 text-sm mt-1">{content.feat4Desc}</p>
+                                                </div>
+                                            </li>
+
+                                            {/* Item 5 */}
+                                            <li className="flex gap-4">
+                                                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mt-1">
+                                                    <Check className="w-4 h-4 text-green-400" />
+                                                </div>
+                                                <div>
+                                                    <h4 className="text-white font-bold text-lg">{content.feat5Title}</h4>
+                                                    <p className="text-gray-400 text-sm mt-1">{content.feat5Desc}</p>
+                                                </div>
+                                            </li>
+
+                                            {/* Item 6 */}
+                                            <li className="flex gap-4">
+                                                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mt-1">
+                                                    <Check className="w-4 h-4 text-green-400" />
+                                                </div>
+                                                <div>
+                                                    <h4 className="text-white font-bold text-lg">{content.feat6Title}</h4>
+                                                    <p className="text-gray-400 text-sm mt-1">{content.feat6Desc}</p>
+                                                </div>
+                                            </li>
+
+                                            {/* Item 7 - DYNAMIC REGION ABLATIVE */}
+                                            <li className="flex gap-4">
+                                                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mt-1">
+                                                    <Check className="w-4 h-4 text-green-400" />
+                                                </div>
+                                                <div>
+                                                    <h4 className="text-white font-bold text-lg">
+                                                        {lang === 'tr' ? (
+                                                            <>{region}{getAblativeSuffix(region)} Sınırlı Sayıda Seçilmiş Otel</>
+                                                        ) : lang === 'en' ? (
+                                                            <>Limited Number of Selected Hotels from {region}</>
+                                                        ) : (
+                                                            <>Περιορισμένος Αριθμός Επιλεγμένων Ξενοδοχείων από {region}</>
+                                                        )}
+                                                    </h4>
+                                                    <p className="text-gray-400 text-sm mt-1">{content.feat7Desc}</p>
+                                                </div>
+                                            </li>
+
+                                            {/* Item 8 */}
+                                            <li className="flex gap-4">
+                                                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mt-1">
+                                                    <Check className="w-4 h-4 text-green-400" />
+                                                </div>
+                                                <div>
+                                                    <h4 className="text-white font-bold text-lg">{content.feat8Title}</h4>
+                                                    <p className="text-gray-400 text-sm mt-1">{content.feat8Desc}</p>
+                                                </div>
+                                            </li>
+                                        </>
+                                    )}
                                 </ul>
                             </div>
 

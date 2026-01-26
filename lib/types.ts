@@ -113,12 +113,21 @@ export interface Article {
   updated_at?: string;
 }
 
+export interface IncludedItem {
+  id: string;
+  title: string;
+  description: string;
+  isActive: boolean;
+  isCustom?: boolean; // To identify manually added items vs defaults
+}
+
 export interface Offer {
   id: string;
   slug: string;
   hotel_name: string;
   price: string;
   region: string;
+  included_items?: IncludedItem[] | null;
   created_at: string;
   updated_at: string;
 }

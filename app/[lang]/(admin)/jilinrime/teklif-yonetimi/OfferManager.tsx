@@ -1,9 +1,9 @@
 'use client';
 
-import { useState } from 'react';
-import { Offer } from '@/lib/types';
+import { useState, useEffect } from 'react';
+import { Offer, IncludedItem } from '@/lib/types';
 import { createOffer, updateOffer, deleteOffer } from './actions';
-// Wait, I didn't see table.tsx in list_dir components/ui. I will use standard HTML table with Tailwind classes instead to be safe.
+import { getDefaultIncludedItems } from '@/lib/defaults';
 
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -16,16 +16,220 @@ import {
     DialogTrigger,
     DialogFooter,
 } from '@/components/ui/dialog';
-import { Pencil, Trash2, Plus, ExternalLink } from 'lucide-react';
+import { Pencil, Trash2, Plus, ExternalLink, GripVertical, Check, X } from 'lucide-react';
 import Link from 'next/link';
+
+// Imports for DnD
+import {
+    DndContext,
+    closestCenter,
+    KeyboardSensor,
+    PointerSensor,
+    useSensor,
+    useSensors,
+    DragEndEvent
+} from '@dnd-kit/core';
+import {
+    arrayMove,
+    SortableContext,
+    sortableKeyboardCoordinates,
+    verticalListSortingStrategy,
+    useSortable
+} from '@dnd-kit/sortable';
+import { CSS } from '@dnd-kit/utilities';
+
+// Sortable Item Component
+function SortableItem({ item, index, toggleActive, updateText, removeItem }: {
+    item: IncludedItem,
+    index: number,
+    toggleActive: (index: number) => void,
+    updateText: (index: number, field: 'title' | 'description', value: string) => void,
+    removeItem: (index: number) => void
+}) {
+    const {
+        attributes,
+        listeners,
+        setNodeRef,
+        transform,
+        transition,
+    } = useSortable({ id: item.id });
+
+    const style = {
+        transform: CSS.Transform.toString(transform),
+        transition,
+    };
+
+    return (
+        <div ref={setNodeRef} style={style} className={`flex gap-3 items-start p-3 rounded border ${item.isActive ? 'bg-white border-blue-200' : 'bg-gray-100 border-gray-200 opacity-75'}`}>
+            <div className="pt-2 cursor-grab active:cursor-grabbing text-gray-400 hover:text-gray-600" {...attributes} {...listeners}>
+                <GripVertical className="w-5 h-5" />
+            </div>
+
+            <div className="pt-2">
+                <input
+                    type="checkbox"
+                    checked={item.isActive}
+                    onChange={() => toggleActive(index)}
+                    className="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                />
+            </div>
+
+            <div className="flex-1 space-y-2">
+                <Input
+                    value={item.title}
+                    onChange={(e) => updateText(index, 'title', e.target.value)}
+                    placeholder="Başlık"
+                    className="font-medium h-8"
+                />
+                <Input
+                    value={item.description}
+                    onChange={(e) => updateText(index, 'description', e.target.value)}
+                    placeholder="Açıklama"
+                    className="text-xs h-7"
+                />
+            </div>
+
+            <Button
+                type="button"
+                variant="ghost"
+                size="icon"
+                onClick={() => removeItem(index)}
+                className="h-8 w-8 text-red-400 hover:text-red-700 hover:bg-red-50"
+            >
+                <Trash2 className="w-4 h-4" />
+            </Button>
+        </div>
+    );
+}
+
+// Included Item Editor Component
+function IncludedItemsEditor({
+    items,
+    onChange,
+    region
+}: {
+    items: IncludedItem[],
+    onChange: (items: IncludedItem[]) => void,
+    region: string
+}) {
+    const sensors = useSensors(
+        useSensor(PointerSensor),
+        useSensor(KeyboardSensor, {
+            coordinateGetter: sortableKeyboardCoordinates,
+        })
+    );
+
+    const handleDragEnd = (event: DragEndEvent) => {
+        const { active, over } = event;
+
+        if (over && active.id !== over.id) {
+            const oldIndex = items.findIndex((item) => item.id === active.id);
+            const newIndex = items.findIndex((item) => item.id === over.id);
+
+            onChange(arrayMove(items, oldIndex, newIndex));
+        }
+    };
+
+    const toggleActive = (index: number) => {
+        const newItems = [...items];
+        newItems[index].isActive = !newItems[index].isActive;
+        onChange(newItems);
+    };
+
+    const updateText = (index: number, field: 'title' | 'description', value: string) => {
+        const newItems = [...items];
+        newItems[index][field] = value;
+        onChange(newItems);
+    };
+
+    const addItem = () => {
+        const newItem: IncludedItem = {
+            id: crypto.randomUUID(),
+            title: "",
+            description: "",
+            isActive: true,
+            isCustom: true
+        };
+        onChange([...items, newItem]);
+    };
+
+    const removeItem = (index: number) => {
+        const newItems = [...items];
+        newItems.splice(index, 1);
+        onChange(newItems);
+    };
+
+    // Auto-update defaults if region changes and item is NOT custom and NOT modified?
+    // User wants "Localhost check" -> We will stick to manual manual is safer.
+    // But we need to populate defaults initially.
+
+    return (
+        <div className="space-y-3 max-h-[400px] overflow-y-auto pr-2 border rounded-md p-2 bg-gray-50">
+            <h3 className="font-semibold text-sm text-gray-700 mb-2">Neler Dahil? (Sürükle bırak ile sıralayabilirsiniz)</h3>
+
+            <DndContext
+                sensors={sensors}
+                collisionDetection={closestCenter}
+                onDragEnd={handleDragEnd}
+            >
+                <SortableContext
+                    items={items.map(i => i.id)}
+                    strategy={verticalListSortingStrategy}
+                >
+                    <div className="space-y-3">
+                        {items.map((item, index) => (
+                            <SortableItem
+                                key={item.id}
+                                item={item}
+                                index={index}
+                                toggleActive={toggleActive}
+                                updateText={updateText}
+                                removeItem={removeItem}
+                            />
+                        ))}
+                    </div>
+                </SortableContext>
+            </DndContext>
+
+            <Button type="button" variant="outline" size="sm" onClick={addItem} className="w-full dashed border-gray-400 text-gray-600 mt-2">
+                <Plus className="w-4 h-4 mr-2" /> Yeni Madde Ekle
+            </Button>
+        </div>
+    );
+}
+
 
 export default function OfferManager({ offers }: { offers: Offer[] }) {
     const [isAddOpen, setIsAddOpen] = useState(false);
     const [isEditOpen, setIsEditOpen] = useState(false);
-    const [editingOffer, setEditingOffer] = useState<Offer | null>(null);
 
+    // Form States
+    const [editingOffer, setEditingOffer] = useState<Offer | null>(null);
+    const [tempRegion, setTempRegion] = useState("");
+    const [currentItems, setCurrentItems] = useState<IncludedItem[]>([]);
+
+    // Init Defaults on Add Open
+    useEffect(() => {
+        if (isAddOpen && currentItems.length === 0) {
+            // Wait for user to type region or just giving empty?
+            // Better: When "Add" is clicked, init with empty region defaults if region empty, or just empty list?
+            // Let's Init with generic defaults or empty
+            setCurrentItems(getDefaultIncludedItems("Bölge"));
+        }
+    }, [isAddOpen]);
+
+    // Handle Edit Click
     const handleEditClick = (offer: Offer) => {
         setEditingOffer(offer);
+        setTempRegion(offer.region);
+
+        // If items exist, use them. If null/undefined (legacy), generate defaults based on saved region.
+        if (offer.included_items && offer.included_items.length > 0) {
+            setCurrentItems(offer.included_items);
+        } else {
+            setCurrentItems(getDefaultIncludedItems(offer.region));
+        }
+
         setIsEditOpen(true);
     };
 
@@ -35,22 +239,32 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
         }
     };
 
+    // When region changes in Add mode, maybe we want to refresh defaults?
+    // BUT user said "I want to manually add". AUTOMAGIC might be annoying.
+    // Use a "Şablondan Doldur" button? Or just let them edit.
+    // I will stick to: Initial Load -> Populate. Then User Edits. No Auto-overwrite.
+
     return (
         <div className="space-y-6">
             <div className="flex justify-between items-center">
                 <h2 className="text-2xl font-bold tracking-tight">Teklif Yönetimi</h2>
                 <Dialog open={isAddOpen} onOpenChange={setIsAddOpen}>
                     <DialogTrigger asChild>
-                        <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                        <Button className="bg-blue-600 hover:bg-blue-700 text-white" onClick={() => {
+                            setTempRegion("Kapadokya"); // Default
+                            setCurrentItems(getDefaultIncludedItems("Kapadokya"));
+                        }}>
                             <Plus className="w-4 h-4 mr-2" /> Yeni Teklif Ekle
                         </Button>
                     </DialogTrigger>
-                    <DialogContent className="sm:max-w-[425px]">
+                    <DialogContent className="sm:max-w-[600px] max-h-[90vh] overflow-y-auto">
                         <DialogHeader>
                             <DialogTitle>Yeni Teklif Oluştur</DialogTitle>
                         </DialogHeader>
                         <form
                             action={async (formData) => {
+                                // Inject JSON
+                                formData.append('included_items', JSON.stringify(currentItems));
                                 await createOffer(formData);
                                 setIsAddOpen(false);
                             }}
@@ -63,9 +277,6 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
                             <div className="grid gap-2">
                                 <Label htmlFor="slug">URL Slug</Label>
                                 <Input id="slug" name="slug" placeholder="Örn: luvicavehotel-teklif" required />
-                                <p className="text-xs text-gray-500">
-                                    Adres: yeriniayir.com/<b>slug</b>
-                                </p>
                             </div>
                             <div className="grid gap-2">
                                 <Label htmlFor="price">Fiyat</Label>
@@ -73,8 +284,23 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
                             </div>
                             <div className="grid gap-2">
                                 <Label htmlFor="region">Bölge</Label>
-                                <Input id="region" name="region" placeholder="Örn: Kapadokya" required />
+                                <Input
+                                    id="region"
+                                    name="region"
+                                    placeholder="Örn: Kapadokya"
+                                    required
+                                    onChange={(e) => setTempRegion(e.target.value)}
+                                // defaultValue="Kapadokya"
+                                />
                             </div>
+
+                            {/* INCLUDED ITEMS */}
+                            <IncludedItemsEditor
+                                items={currentItems}
+                                onChange={setCurrentItems}
+                                region={tempRegion}
+                            />
+
                             <DialogFooter>
                                 <Button type="submit">Oluştur</Button>
                             </DialogFooter>
@@ -142,13 +368,14 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
             </div>
 
             <Dialog open={isEditOpen} onOpenChange={setIsEditOpen}>
-                <DialogContent className="sm:max-w-[425px]">
+                <DialogContent className="sm:max-w-[600px] max-h-[90vh] overflow-y-auto">
                     <DialogHeader>
                         <DialogTitle>Teklifi Düzenle</DialogTitle>
                     </DialogHeader>
                     {editingOffer && (
                         <form
                             action={async (formData) => {
+                                formData.append('included_items', JSON.stringify(currentItems));
                                 await updateOffer(editingOffer.id, formData);
                                 setIsEditOpen(false);
                             }}
@@ -187,9 +414,18 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
                                     id="edit-region"
                                     name="region"
                                     defaultValue={editingOffer.region}
+                                    onChange={(e) => setTempRegion(e.target.value)}
                                     required
                                 />
                             </div>
+
+                            {/* INCLUDED ITEMS */}
+                            <IncludedItemsEditor
+                                items={currentItems}
+                                onChange={setCurrentItems}
+                                region={tempRegion}
+                            />
+
                             <DialogFooter>
                                 <Button type="submit">Güncelle</Button>
                             </DialogFooter>
