@@ -6,6 +6,8 @@ import OfferPageTemplate from '@/components/OfferPageTemplate';
 // It checks if it matches an Offer in the DB.
 // If not, it triggers 404 (or allows other catch-alls if they existed, but here likely 404).
 
+export const dynamic = 'force-dynamic';
+
 export default async function DynamicOfferPage({ params }: { params: { slug: string; lang: string } }) {
     const { slug, lang } = params;
 

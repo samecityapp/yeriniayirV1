@@ -26,6 +26,8 @@ export async function createOffer(data: FormData) {
     });
 
     revalidatePath('/[lang]/(admin)/jilinrime/teklif-yonetimi');
+    revalidatePath(`/tr/${slug}`);
+    revalidatePath(`/en/${slug}`);
 }
 
 export async function updateOffer(id: string, data: FormData) {
@@ -42,6 +44,8 @@ export async function updateOffer(id: string, data: FormData) {
     });
 
     revalidatePath('/[lang]/(admin)/jilinrime/teklif-yonetimi');
+    revalidatePath(`/tr/${slug}`);
+    revalidatePath(`/en/${slug}`);
 }
 
 export async function deleteOffer(id: string) {
