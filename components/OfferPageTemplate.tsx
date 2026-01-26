@@ -469,7 +469,7 @@ export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr
                                 </h3>
 
                                 <ul className="space-y-6">
-                                    {(includedItems && includedItems.length > 0) ? (
+                                    {(includedItems && Array.isArray(includedItems) && includedItems.length > 0) ? (
                                         // Dynamic Rendering
                                         includedItems.map((item) => {
                                             if (!item.isActive) return null;
