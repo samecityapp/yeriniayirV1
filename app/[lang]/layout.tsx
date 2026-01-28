@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     default: 'Yerini Ayır',
     template: '%s | Yerini Ayır',
   },
-  description: "Erdem'in Seçtiği En İyi Oteller - Türkiye'nin en güvenilir otel rehberi",
+  description: "Influencer gücüyle desteklenen, sadece en seçkin otellerin platformu",
   keywords: ['otel', 'tatil', 'konaklama', 'türkiye otelleri', 'otel rehberi', 'otel önerileri'],
   authors: [{ name: 'Yerini Ayır' }],
   creator: 'Yerini Ayır',
