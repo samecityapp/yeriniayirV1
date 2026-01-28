@@ -415,39 +415,49 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
                     </DialogHeader>
                     {editingOffer && (
                         <form
-                            action={async (formData) => {
+                            onSubmit={async (e) => {
+                                e.preventDefault();
                                 setIsWarming(true);
+                                const formData = new FormData(e.currentTarget);
                                 const slug = formData.get('slug') as string;
 
                                 formData.append('included_items', JSON.stringify(currentItems));
-                                const result = await updateOffer(editingOffer.id, formData);
 
-                                if (!result?.success) {
+                                try {
+                                    const result = await updateOffer(editingOffer.id, formData);
+
+                                    if (!result?.success) {
+                                        setIsWarming(false);
+                                        alert(`Hata: ${result?.error || 'Güncelleme başarısız oldu.'}`);
+                                        return;
+                                    }
+
+                                    // Client-Side Verification Gate
+                                    const checkUrl = `https://www.yeriniayir.com/tr/${slug}`;
+                                    const maxRetries = 20;
+                                    let attempts = 0;
+                                    let success = false;
+
+                                    while (attempts < maxRetries && !success) {
+                                        try {
+                                            const res = await fetch(`${checkUrl}?t=${Date.now()}`, { method: 'GET' });
+                                            if (res.ok) {
+                                                success = true;
+                                                break;
+                                            }
+                                        } catch (e) { console.log("Warmup retry...", e); }
+                                        await new Promise(r => setTimeout(r, 1000));
+                                        attempts++;
+                                    }
+
                                     setIsWarming(false);
-                                    alert(`Hata: ${result?.error || 'Güncelleme başarısız oldu.'}`);
-                                    return;
+                                    setIsEditOpen(false);
+                                    window.location.reload(); // Refresh to show changes immediately
+                                } catch (err) {
+                                    setIsWarming(false);
+                                    console.error(err);
+                                    alert("Beklenmeyen bir hata oluştu.");
                                 }
-
-                                // Client-Side Verification Gate
-                                const checkUrl = `https://www.yeriniayir.com/tr/${slug}`;
-                                const maxRetries = 20;
-                                let attempts = 0;
-                                let success = false;
-
-                                while (attempts < maxRetries && !success) {
-                                    try {
-                                        const res = await fetch(`${checkUrl}?t=${Date.now()}`, { method: 'GET' });
-                                        if (res.ok) {
-                                            success = true;
-                                            break;
-                                        }
-                                    } catch (e) { console.log("Warmup retry...", e); }
-                                    await new Promise(r => setTimeout(r, 1000));
-                                    attempts++;
-                                }
-
-                                setIsWarming(false);
-                                setIsAddOpen(false);
                             }}
                             className="space-y-4 py-4"
                         >
