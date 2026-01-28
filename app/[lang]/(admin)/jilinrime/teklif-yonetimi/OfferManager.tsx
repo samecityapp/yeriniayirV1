@@ -331,6 +331,17 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
                                 region={tempRegion}
                             />
 
+                            {isWarming && (
+                                <div className="absolute inset-0 bg-white/90 z-50 flex flex-col items-center justify-center p-4 text-center">
+                                    <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mb-4" />
+                                    <h3 className="text-lg font-bold text-gray-900">Teklif Oluşturuluyor & Hızlandırılıyor...</h3>
+                                    <p className="text-gray-500 text-sm mt-2">
+                                        Sayfanın dünya genelinde (CDN) önbelleğe alınması için erişim testi yapılıyor.
+                                        <br />Lütfen bekleyiniz...
+                                    </p>
+                                </div>
+                            )}
+
                             <DialogFooter>
                                 <Button type="submit">Oluştur</Button>
                             </DialogFooter>
@@ -479,6 +490,17 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
                                 onChange={setCurrentItems}
                                 region={tempRegion}
                             />
+
+                            {isWarming && (
+                                <div className="absolute inset-0 bg-white/90 z-50 flex flex-col items-center justify-center p-4 text-center">
+                                    <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mb-4" />
+                                    <h3 className="text-lg font-bold text-gray-900">Teklif Oluşturuluyor & Hızlandırılıyor...</h3>
+                                    <p className="text-gray-500 text-sm mt-2">
+                                        Sayfanın dünya genelinde (CDN) önbelleğe alınması için erişim testi yapılıyor.
+                                        <br />Lütfen bekleyiniz...
+                                    </p>
+                                </div>
+                            )}
 
                             <DialogFooter>
                                 <Button type="submit">Güncelle</Button>
