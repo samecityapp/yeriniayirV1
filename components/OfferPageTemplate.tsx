@@ -37,6 +37,7 @@ export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr
             titleDomain: ".com",
             subtitle: <>Influencer gücüyle desteklenen, <span className="text-white font-semibold">sadece en seçkin otellerin platformu.</span></>,
             statsTitle: "Tanıtım Gücü",
+            followersSuffix: " Takipçi",
             quote: "\"Otelinizi yıl boyunca sosyal medya hesaplarımızda ve web sitemizde öne çıkarır, rezervasyonlarınızı artırırız.\"",
 
             val1Title: "Premium Misafir Kitlesi",
@@ -108,6 +109,7 @@ export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr
             titleDomain: ".com",
             subtitle: <>Supported by influencer power, <span className="text-white font-semibold">the platform for only the most exclusive hotels.</span></>,
             statsTitle: "Promotion Power",
+            followersSuffix: " Followers",
             quote: "\"We highlight your hotel on our social media accounts and website throughout the year, increasing your reservations.\"",
 
             val1Title: "Premium Guest Audience",
@@ -178,6 +180,7 @@ export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr
             titleDomain: ".com",
             subtitle: <>Υποστηριζόμενη από τη δύναμη των influencer, <span className="text-white font-semibold">η πλατφόρμα μόνο για τα πιο εκλεκτά ξενοδοχεία.</span></>,
             statsTitle: "Δύναμη Προώθησης",
+            followersSuffix: " ακόλουθοι",
             quote: "\"Προβάλλουμε το ξενοδοχείο σας στους λογαριασμούς μας στα social media και στην ιστοσελίδα μας καθ' όλη τη διάρκεια του έτους, αυξάνοντας τις κρατήσεις σας.\"",
 
             val1Title: "Premium Κοινό Επισκεπτών",
@@ -287,34 +290,34 @@ export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr
                     {/* Stats Cards */}
                     <div className="grid md:grid-cols-3 gap-6 mb-16">
                         {/* Card 1 */}
-                        <div className="bg-[#0A101D] border border-white/5 rounded-2xl p-8 hover:border-indigo-500/30 transition-all duration-300 group">
+                        <a href="https://www.instagram.com/turkeyandhotels" target="_blank" rel="noopener noreferrer" className="bg-[#0A101D] border border-white/5 rounded-2xl p-8 hover:border-indigo-500/30 transition-all duration-300 group block">
                             <div className="flex items-center gap-2 mb-3">
                                 <Instagram className="w-4 h-4 text-[#D62976]" />
                                 <span className="text-[10px] font-bold tracking-widest text-[#D62976] uppercase">Instagram</span>
                             </div>
                             <div className="text-sm text-gray-400 mb-2">@turkeyandhotels</div>
-                            <div className="text-4xl font-bold text-white group-hover:text-indigo-400 transition-colors">323.000+</div>
-                        </div>
+                            <div className="text-4xl font-bold text-white group-hover:text-indigo-400 transition-colors">323.000+{content.followersSuffix}</div>
+                        </a>
 
                         {/* Card 2 */}
-                        <div className="bg-[#0A101D] border border-white/5 rounded-2xl p-8 hover:border-indigo-500/30 transition-all duration-300 group">
+                        <a href="https://www.instagram.com/geceligi.ne.kadar" target="_blank" rel="noopener noreferrer" className="bg-[#0A101D] border border-white/5 rounded-2xl p-8 hover:border-indigo-500/30 transition-all duration-300 group block">
                             <div className="flex items-center gap-2 mb-3">
                                 <Instagram className="w-4 h-4 text-[#FA7E1E]" />
                                 <span className="text-[10px] font-bold tracking-widest text-[#FA7E1E] uppercase">Instagram</span>
                             </div>
                             <div className="text-sm text-gray-400 mb-2">@geceligi.ne.kadar</div>
-                            <div className="text-4xl font-bold text-white group-hover:text-indigo-400 transition-colors">303.000+</div>
-                        </div>
+                            <div className="text-4xl font-bold text-white group-hover:text-indigo-400 transition-colors">303.000+{content.followersSuffix}</div>
+                        </a>
 
                         {/* Card 3 */}
-                        <div className="bg-[#0A101D] border border-white/5 rounded-2xl p-8 hover:border-indigo-500/30 transition-all duration-300 group">
+                        <a href="https://www.tiktok.com/@geceligi.nekadar" target="_blank" rel="noopener noreferrer" className="bg-[#0A101D] border border-white/5 rounded-2xl p-8 hover:border-indigo-500/30 transition-all duration-300 group block">
                             <div className="flex items-center gap-2 mb-3">
                                 <TikTokIcon className="w-4 h-4 text-[#00F2EA]" />
                                 <span className="text-[10px] font-bold tracking-widest text-[#00f2ea] uppercase">TikTok</span>
                             </div>
                             <div className="text-sm text-gray-400 mb-2">@geceligi.nekadar</div>
-                            <div className="text-4xl font-bold text-white group-hover:text-indigo-400 transition-colors">60.000+</div>
-                        </div>
+                            <div className="text-4xl font-bold text-white group-hover:text-indigo-400 transition-colors">60.000+{content.followersSuffix}</div>
+                        </a>
                     </div>
 
                     {/* Quote Box */}
