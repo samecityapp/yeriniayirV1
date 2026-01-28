@@ -202,6 +202,7 @@ function IncludedItemsEditor({
 export default function OfferManager({ offers }: { offers: Offer[] }) {
     const [isAddOpen, setIsAddOpen] = useState(false);
     const [isEditOpen, setIsEditOpen] = useState(false);
+    const [isWarming, setIsWarming] = useState(false);
 
     // Form States
     const [editingOffer, setEditingOffer] = useState<Offer | null>(null);
@@ -263,10 +264,39 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
                         </DialogHeader>
                         <form
                             action={async (formData) => {
+                                setIsWarming(true); // Start Loop
+                                const slug = formData.get('slug') as string;
+
                                 // Inject JSON
                                 formData.append('included_items', JSON.stringify(currentItems));
+
+                                // 1. Create on Server (waits for db + server-side warmup)
                                 await createOffer(formData);
+
+                                // 2. Client-Side Verification Gate
+                                const checkUrl = `https://www.yeriniayir.com/tr/${slug}`;
+                                const maxRetries = 20;
+                                let attempts = 0;
+                                let success = false;
+
+                                while (attempts < maxRetries && !success) {
+                                    try {
+                                        // Cache bust query to bypass local browser cache if any
+                                        const res = await fetch(`${checkUrl}?t=${Date.now()}`, { method: 'GET' });
+                                        if (res.ok) {
+                                            success = true;
+                                            break;
+                                        }
+                                    } catch (e) {
+                                        console.log("Warmup check failed, retrying...", e);
+                                    }
+                                    await new Promise(r => setTimeout(r, 1000)); // Wait 1s
+                                    attempts++;
+                                }
+
+                                setIsWarming(false);
                                 setIsAddOpen(false);
+                                // Optional: Alert user or Toast? User sees table update.
                             }}
                             className="space-y-4 py-4"
                         >
@@ -375,9 +405,33 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
                     {editingOffer && (
                         <form
                             action={async (formData) => {
+                                setIsWarming(true);
+                                const slug = formData.get('slug') as string;
+
+                                // Inject JSON
                                 formData.append('included_items', JSON.stringify(currentItems));
-                                await updateOffer(editingOffer.id, formData);
-                                setIsEditOpen(false);
+                                await createOffer(formData);
+
+                                // Client-Side Verification Gate
+                                const checkUrl = `https://www.yeriniayir.com/tr/${slug}`;
+                                const maxRetries = 20;
+                                let attempts = 0;
+                                let success = false;
+
+                                while (attempts < maxRetries && !success) {
+                                    try {
+                                        const res = await fetch(`${checkUrl}?t=${Date.now()}`, { method: 'GET' });
+                                        if (res.ok) {
+                                            success = true;
+                                            break;
+                                        }
+                                    } catch (e) { console.log("Warmup retry...", e); }
+                                    await new Promise(r => setTimeout(r, 1000));
+                                    attempts++;
+                                }
+
+                                setIsWarming(false);
+                                setIsAddOpen(false);
                             }}
                             className="space-y-4 py-4"
                         >

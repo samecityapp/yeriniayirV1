@@ -4,9 +4,9 @@ import OfferPageTemplate from '@/components/OfferPageTemplate';
 
 // This page catches all root-level slugs like /luvicavehotel-teklif
 // It checks if it matches an Offer in the DB.
-// If not, it triggers 404 (or allows other catch-alls if they existed, but here likely 404).
 
-export const dynamic = 'force-dynamic';
+export const dynamicParams = true;
+export const revalidate = 3600; // 1 Hour Cache
 
 export default async function DynamicOfferPage({ params }: { params: { slug: string; lang: string } }) {
     const { slug, lang } = params;
@@ -33,12 +33,17 @@ export default async function DynamicOfferPage({ params }: { params: { slug: str
     }
 
     return (
-        <OfferPageTemplate
-            hotelName={offer.hotel_name}
-            price={offer.price}
-            region={offer.region}
-            lang={language}
-            includedItems={includedItems}
-        />
+        <>
+            <OfferPageTemplate
+                hotelName={offer.hotel_name}
+                price={offer.price}
+                region={offer.region}
+                lang={language}
+                includedItems={includedItems}
+            />
+            <footer className="py-4 text-center text-xs opacity-30 bg-black text-white">
+                Cache Debug: {new Date().toLocaleTimeString('tr-TR')}
+            </footer>
+        </>
     );
 }

@@ -145,7 +145,7 @@ async function generateArticleOpenAI(topic: string) {
        - **H1**: SEO-optimized title (UK search intent: "What / How / Guide to...").
        - **H1**: SEO-optimized title (UK search intent: "What / How / Guide to...").
        - **LENGTH**: **EXTREMELY STRICT TARGET: 2300 - 2500 words**. Do NOT write less than 2000, do NOT write more than 2600.
-       - **IMAGE PLACEMENT (CRITICAL)**: You MUST insert exactly 5 image placeholders `[IMAGE_PLACEHOLDER_1]`, `[IMAGE_PLACEHOLDER_2]`, etc. evenly distributed throughout the text. Do NOT forget them.
+       - **IMAGE PLACEMENT (CRITICAL)**: You MUST insert exactly 5 image placeholders "[IMAGE_PLACEHOLDER_1]", "[IMAGE_PLACEHOLDER_2]", etc. evenly distributed throughout the text. Do NOT forget them.
        - **BREVITY**: Be direct. No "fluffy" intros. Start with the value. Use bullet points heavily.
        - **VALUE DENSITY**: Maximum information in minimum words.
        - **FEATURED SNIPPET**: The first section MUST be a "Key Takeaways" box (HTML div with strict styling).
@@ -254,11 +254,13 @@ async function processTopic(topic: string) {
     }
 
     // 3. Save to Supabase (Upsert)
+    const sanitize = (str: string) => str ? str.replace(/\u0000/g, '') : str;
+
     const { error } = await supabase.from('articles').upsert({
-        slug: articleData.slug,
-        title: { en: articleData.title, tr: `${articleData.title} (TR)` },
-        meta_description: { en: articleData.meta_description, tr: "TR Pasif." },
-        content: { en: finalContent, tr: "<p>Content available in English only.</p>" },
+        slug: sanitize(articleData.slug),
+        title: { en: sanitize(articleData.title), tr: sanitize(`${articleData.title} (TR)`) },
+        meta_description: { en: sanitize(articleData.meta_description), tr: "TR Pasif." },
+        content: { en: sanitize(finalContent), tr: "<p>Content available in English only.</p>" },
         cover_image_url: coverImageUrl,
         published_at: new Date().toISOString(),
         updated_at: new Date().toISOString()

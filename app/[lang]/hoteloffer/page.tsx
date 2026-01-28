@@ -14,8 +14,8 @@ export default function HotelOfferPage({ params }: { params: { lang: string } })
             {/* 1. HERO SECTION & VALUE PROP - Tighter vertical spacing */}
             <section className="relative pt-16 pb-12 px-6 overflow-hidden">
                 {/* Background Gradients */}
-                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-rose-100/40 to-orange-100/40 rounded-full blur-[100px] -z-10 translate-x-1/2 -translate-y-1/2" />
-                <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-blue-100/30 rounded-full blur-[80px] -z-10 -translate-x-1/2 translate-y-1/2" />
+                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-rose-100/40 to-orange-100/40 rounded-full opacity-50 -z-10 translate-x-1/2 -translate-y-1/2 pointer-events-none" />
+                <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-blue-100/30 rounded-full opacity-50 -z-10 -translate-x-1/2 translate-y-1/2 pointer-events-none" />
 
                 <div className="max-w-6xl mx-auto text-center space-y-6">
                     <div className="inline-flex items-center gap-2 px-3 py-1 bg-rose-50 border border-rose-100 rounded-full text-rose-600 text-xs font-bold tracking-wider uppercase mb-2">

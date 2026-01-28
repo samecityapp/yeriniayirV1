@@ -90,14 +90,14 @@ export default function RootLayout({
   const websiteSchema = generateWebSiteSchema();
 
   return (
-    <html lang={params.lang} className={`${inter.variable} ${quicksand.variable}`}>
+    <html lang={params.lang} className={`${inter.variable} ${quicksand.variable}`} style={{ backgroundColor: '#ffffff' }}>
       <head>
         <link rel="preconnect" href="https://jerkkxwgddujigsbeqwo.supabase.co" />
         <link rel="preconnect" href="https://images.pexels.com" />
         <link rel="dns-prefetch" href="https://jerkkxwgddujigsbeqwo.supabase.co" />
         <link rel="dns-prefetch" href="https://images.pexels.com" />
       </head>
-      <body className="font-sans">
+      <body className="font-sans" style={{ backgroundColor: '#ffffff' }}>
         <Providers>
           {children}
         </Providers>
