@@ -255,7 +255,8 @@ export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr
             <section className="relative pt-20 pb-16 px-6 overflow-hidden">
 
                 {/* Background Glows */}
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-indigo-900/20 rounded-full blur-[120px] -z-10" />
+                {/* Background Glows - Optimized for Safari (No Blur) */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-indigo-900/20 rounded-full opacity-30 -z-10" />
 
                 <div className="max-w-5xl mx-auto text-center">
 
@@ -388,7 +389,7 @@ export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr
 
             {/* --- GROWTH STRATEGY --- */}
             <section className="py-24 px-6 relative overflow-hidden">
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-900/10 rounded-full blur-[100px] -z-10" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-900/10 rounded-full opacity-20 -z-10" />
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">{content.growthTitle}</h2>
@@ -441,7 +442,7 @@ export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr
             {/* --- PRICING / OFFER SECTION --- */}
             <section className="py-24 px-6 relative overflow-hidden">
                 <div className="max-w-3xl mx-auto relative z-10">
-                    <div className="absolute inset-0 bg-indigo-500/10 blur-[100px] rounded-full pointer-events-none" />
+                    <div className="absolute inset-0 bg-indigo-500/5 rounded-full pointer-events-none" />
 
                     <div className="relative bg-[#0F1623] border border-white/10 rounded-3xl overflow-hidden shadow-2xl ring-1 ring-white/5">
 
