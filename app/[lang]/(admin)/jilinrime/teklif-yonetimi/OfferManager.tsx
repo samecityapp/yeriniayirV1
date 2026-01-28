@@ -419,9 +419,8 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
                                 setIsWarming(true);
                                 const slug = formData.get('slug') as string;
 
-                                // Inject JSON
                                 formData.append('included_items', JSON.stringify(currentItems));
-                                await createOffer(formData);
+                                await updateOffer(editingOffer.id, formData);
 
                                 // Client-Side Verification Gate
                                 const checkUrl = `https://www.yeriniayir.com/tr/${slug}`;

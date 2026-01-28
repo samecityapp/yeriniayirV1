@@ -41,9 +41,7 @@ export default async function DynamicOfferPage({ params }: { params: { slug: str
                 lang={language}
                 includedItems={includedItems}
             />
-            <footer className="py-4 text-center text-xs opacity-30 bg-black text-white">
-                Cache Debug: {new Date().toLocaleTimeString('tr-TR')}
-            </footer>
+
         </>
     );
 }
