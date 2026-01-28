@@ -420,7 +420,13 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
                                 const slug = formData.get('slug') as string;
 
                                 formData.append('included_items', JSON.stringify(currentItems));
-                                await updateOffer(editingOffer.id, formData);
+                                const result = await updateOffer(editingOffer.id, formData);
+
+                                if (!result?.success) {
+                                    setIsWarming(false);
+                                    alert(`Hata: ${result?.error || 'Güncelleme başarısız oldu.'}`);
+                                    return;
+                                }
 
                                 // Client-Side Verification Gate
                                 const checkUrl = `https://www.yeriniayir.com/tr/${slug}`;
