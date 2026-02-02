@@ -29,7 +29,7 @@ export function Header({ lang: propLang, variant = 'default' }: { lang?: string;
   };
 
   return (
-    <header className="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b">
+    <header className="bg-white shadow-sm sticky top-0 z-50 border-b">
       <nav className="container mx-auto px-6 py-3">
         <div className="flex justify-between items-center">
           <Link href={`/${lang}`} className="flex items-center gap-2">

@@ -41,7 +41,7 @@ export const offers = {
                 hotel_name: 'Luvi Cave Hotel',
                 price: '75.000',
                 region: 'Kapadokya',
-                promo_text: 'Aylık karşılığı ~2.071 TL',
+                promo_text: 'Aylık ~2.071 TL',
                 created_at: new Date().toISOString(),
                 updated_at: new Date().toISOString(),
                 included_items: [

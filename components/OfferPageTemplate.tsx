@@ -464,7 +464,8 @@ export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr
                                     {/* Smart Formatting: Bold/White for Price parts, Gray/Soft for Labels */}
                                     {(promoText || content.promoBadge).split(/(\s+)/).map((part, i) => {
                                         // Create a regex to detect price-like parts: Numbers, currency symbols, TL, /
-                                        const isPricePart = /[\d\.,]+|TL|~|\/|Ay/i.test(part);
+                                        // Added \b for Ay to prevent matching 'Aylık'
+                                        const isPricePart = /[\d\.,]+|TL|~|\/|\bAy\b/i.test(part);
                                         return (
                                             <span key={i} className={isPricePart ? "text-white font-bold" : ""}>
                                                 {part}
