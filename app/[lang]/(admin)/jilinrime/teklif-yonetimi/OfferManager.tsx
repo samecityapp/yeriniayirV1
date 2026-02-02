@@ -498,6 +498,15 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
                                     required
                                 />
                             </div>
+                            <div className="grid gap-2">
+                                <Label htmlFor="edit-promo_text">Tanıtım/Fiyat Metni</Label>
+                                <Input
+                                    id="edit-promo_text"
+                                    name="promo_text"
+                                    defaultValue={editingOffer.promo_text}
+                                    placeholder="Örn: Aylık 2071 TL"
+                                />
+                            </div>
 
                             {/* INCLUDED ITEMS */}
                             <IncludedItemsEditor

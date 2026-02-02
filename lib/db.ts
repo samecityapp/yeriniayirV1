@@ -1,6 +1,8 @@
 import { supabase } from './supabase';
 import { Hotel, Group, Tag, PriceTag, SearchTerm } from './types';
 import { mockArticles, mockFethiyeArticle } from '@/data/mockArticles';
+import { fallbackArticles } from '@/data/fallbackArticles';
+
 
 export const db = {
   hotels: {
@@ -114,20 +116,25 @@ export const db = {
     },
 
     async searchByLocation(location: string): Promise<Hotel[]> {
-      // Split location by comma and take the first part for broader matching
-      // e.g. "Bodrum, Muğla" -> "Bodrum"
-      const searchTerm = location.split(',')[0].trim();
+      try {
+        // Split location by comma and take the first part for broader matching
+        // e.g. "Bodrum, Muğla" -> "Bodrum"
+        const searchTerm = location.split(',')[0].trim();
 
-      const { data, error } = await supabase
-        .from('hotels')
-        .select('*')
-        .ilike('location', `%${searchTerm}%`)
-        .is('deleted_at', null)
-        .order('rating', { ascending: false })
-        .limit(6);
+        const { data, error } = await supabase
+          .from('hotels')
+          .select('*')
+          .ilike('location', `%${searchTerm}%`)
+          .is('deleted_at', null)
+          .order('rating', { ascending: false })
+          .limit(6);
 
-      if (error) throw error;
-      return (data || []).map(this.mapFromDb);
+        if (error) throw error;
+        return (data || []).map(this.mapFromDb);
+      } catch (error) {
+        console.warn('Error in searchByLocation:', error);
+        return [];
+      }
     },
 
     async search(filters: {
@@ -751,58 +758,89 @@ export const db = {
     },
 
     async getAllByLocation(location: string) {
-      const { data, error } = await supabase
-        .from('articles')
-        .select('*')
-        .ilike('location', `%${location}%`)
-        .eq('is_published', true)
-        .is('deleted_at', null)
-        .order('published_at', { ascending: false });
+      try {
+        const { data, error } = await supabase
+          .from('articles')
+          .select('*')
+          .ilike('location', `%${location}%`)
+          .eq('is_published', true)
+          .is('deleted_at', null)
+          .order('published_at', { ascending: false });
 
-      if (error) throw error;
+        if (error) throw error;
+        return data || [];
+      } catch (error) {
+        console.warn('Error in getAllByLocation:', error);
 
+        // Fallback: search in fallbackArticles and mockArticles for matches
+        const fallbackMatches = fallbackArticles.filter((a: any) =>
+          (a.location || '').toLowerCase().includes(location.toLowerCase())
+        );
 
-      return data || [];
+        const mockMatches = mockArticles.filter((a: any) =>
+          (a.location || '').toLowerCase().includes(location.toLowerCase())
+        );
+
+        return [...fallbackMatches, ...mockMatches];
+      }
     },
 
     async getBySlug(slug: string) {
-      const { data, error } = await supabase
-        .from('articles')
-        .select('*')
-        .or(`slug.eq.${slug},slug_en.eq.${slug}`)
-        .maybeSingle();
+      try {
+        const { data, error } = await supabase
+          .from('articles')
+          .select('*')
+          .or(`slug.eq.${slug},slug_en.eq.${slug}`)
+          .maybeSingle();
 
-      if (error) throw error;
-
-      const mockResult = mockArticles.find((a: any) => a.slug === slug);
-      if (!data && mockResult) {
-        return mockResult;
+        if (error) throw error;
+        if (data) return { ...data, slug_en: data.slug_en };
+      } catch (e) {
+        console.warn('Database error in getBySlug, using fallback:', e);
       }
 
-      return data ? { ...data, slug_en: data.slug_en } : null;
+      // Fallback: search in fallbackArticles and mockArticles
+      const fallbackResult = fallbackArticles.find((a: any) => a.slug === slug);
+      if (fallbackResult) return fallbackResult;
+
+      const mockResult = mockArticles.find((a: any) => a.slug === slug);
+      if (mockResult) return mockResult;
+
+      return null;
     },
 
     async getLatest(limit: number = 3) {
-      const { data, error } = await supabase
-        .from('articles')
-        .select('id, title, slug, cover_image_url')
-        .eq('is_published', true)
-        .is('deleted_at', null)
-        .order('published_at', { ascending: false })
-        .limit(limit);
+      let dbArticles: any[] = [];
+      try {
+        const { data, error } = await supabase
+          .from('articles')
+          .select('id, title, slug, cover_image_url, published_at')
+          .eq('is_published', true)
+          .is('deleted_at', null)
+          .order('published_at', { ascending: false })
+          .limit(limit);
 
-      if (error) throw error;
-      if (error) throw error;
-
-      // Fallback: merge mock data for latest list too
-      const existingSlugs = (data || []).map((a: any) => a.slug);
-      const textMocks = mockArticles.filter((a: any) => !existingSlugs.includes(a.slug));
-
-      if (textMocks.length > 0) {
-        return [...textMocks, ...(data || [])].slice(0, limit);
+        if (error) throw error;
+        dbArticles = data || [];
+      } catch (e) {
+        console.warn('Database error in getLatest, using fallback:', e);
       }
 
-      return data || [];
+      // Combine with fallbacks and deduplicate
+      const allArticles = [...dbArticles, ...fallbackArticles, ...mockArticles];
+      const seenSlugs = new Set();
+      const uniqueArticles = [];
+
+      for (const article of allArticles) {
+        if (!seenSlugs.has(article.slug)) {
+          seenSlugs.add(article.slug);
+          uniqueArticles.push(article);
+        }
+      }
+
+      return uniqueArticles
+        .sort((a: any, b: any) => new Date(b.published_at || 0).getTime() - new Date(a.published_at || 0).getTime())
+        .slice(0, limit);
     }
   }
 };

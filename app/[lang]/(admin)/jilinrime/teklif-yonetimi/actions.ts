@@ -12,7 +12,7 @@ export async function createOffer(data: FormData) {
     const hotel_name = data.get('hotel_name') as string;
     const slug = data.get('slug') as string;
     const price = data.get('price') as string;
-    const region = data.get('region') as string;
+    const promo_text = data.get('promo_text') as string;
     const included_items_json = data.get('included_items') as string;
 
     let included_items = null;
@@ -29,7 +29,8 @@ export async function createOffer(data: FormData) {
         slug,
         price,
         region,
-        included_items
+        included_items,
+        promo_text
     });
 
     revalidatePath('/[lang]/(admin)/jilinrime/teklif-yonetimi');
@@ -51,6 +52,7 @@ export async function updateOffer(id: string, data: FormData) {
         const slug = data.get('slug') as string;
         const price = data.get('price') as string;
         const region = data.get('region') as string;
+        const promo_text = data.get('promo_text') as string;
         const included_items_json = data.get('included_items') as string;
 
         // Parse JSON if valid
@@ -68,7 +70,8 @@ export async function updateOffer(id: string, data: FormData) {
             slug,
             price,
             region,
-            included_items
+            included_items,
+            promo_text
         });
 
         revalidatePath('/[lang]/(admin)/jilinrime/teklif-yonetimi');

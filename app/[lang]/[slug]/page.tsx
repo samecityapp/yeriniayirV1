@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { offers } from '@/lib/offers';
 import OfferPageTemplate from '@/components/OfferPageTemplate';
+import { Header } from '@/components/Header';
 
 // This page catches all root-level slugs like /luvicavehotel-teklif
 // It checks if it matches an Offer in the DB.
@@ -34,12 +35,14 @@ export default async function DynamicOfferPage({ params }: { params: { slug: str
 
     return (
         <>
+            <Header lang={language} variant="offer" />
             <OfferPageTemplate
                 hotelName={offer.hotel_name}
                 price={offer.price}
                 region={offer.region}
                 lang={language}
                 includedItems={includedItems}
+                promoText={offer.promo_text}
             />
 
         </>

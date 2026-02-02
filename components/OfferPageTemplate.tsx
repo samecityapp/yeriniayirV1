@@ -24,9 +24,10 @@ interface OfferPageTemplateProps {
     region: string;
     lang?: 'tr' | 'en' | 'el'; // Add 'el' support
     includedItems?: IncludedItem[] | null;
+    promoText?: string;
 }
 
-export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr', includedItems }: OfferPageTemplateProps) {
+export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr', includedItems, promoText }: OfferPageTemplateProps) {
 
     // Content Dictionary
     const t = {
@@ -35,7 +36,7 @@ export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr
             titlePrefix: "Yerini",
             titleHighlight: "Ayir",
             titleDomain: ".com",
-            subtitle: <>Influencer gücüyle desteklenen, <span className="text-white font-semibold">sadece en seçkin otellerin platformu.</span></>,
+            subtitle: <span className="block text-3xl md:text-4xl font-extrabold tracking-tight mt-2"><span className="text-indigo-400">Sıfır Komisyon</span>, <span className="text-white">Direkt Rezervasyon</span></span>,
             statsTitle: "Tanıtım Gücü",
             followersSuffix: " Takipçi",
             quote: "\"Otelinizi yıl boyunca sosyal medya hesaplarımızda ve web sitemizde öne çıkarır, rezervasyonlarınızı artırırız.\"",
@@ -107,7 +108,7 @@ export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr
             titlePrefix: "WorldAnd",
             titleHighlight: "Hotels",
             titleDomain: ".com",
-            subtitle: <>Supported by influencer power, <span className="text-white font-semibold">the platform for only the most exclusive hotels.</span></>,
+            subtitle: <span className="block text-3xl md:text-4xl font-extrabold tracking-tight mt-2"><span className="text-indigo-400">Zero Commission</span>, <span className="text-white">Direct Reservation</span></span>,
             statsTitle: "Promotion Power",
             followersSuffix: " Followers",
             quote: "\"We highlight your hotel on our social media accounts and website throughout the year, increasing your reservations.\"",
@@ -335,14 +336,14 @@ export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr
             <section className="pt-24 pb-10 px-6 bg-[#080E1A]">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid md:grid-cols-3 gap-8">
-                        {/* Card 1 */}
+                        {/* Card 1 (Renamed from Card 3) */}
                         <div className="bg-[#0F1623] p-8 rounded-3xl border border-white/5 hover:border-indigo-500/30 transition-all duration-300 group hover:-translate-y-1">
                             <div className="w-14 h-14 bg-indigo-500/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-indigo-500/20 transition-colors">
-                                <Users className="w-7 h-7 text-indigo-400" />
+                                <Zap className="w-7 h-7 text-indigo-400" />
                             </div>
-                            <h3 className="text-xl font-bold text-white mb-4">{content.val1Title}</h3>
+                            <h3 className="text-xl font-bold text-white mb-4">{content.val3Title}</h3>
                             <p className="text-gray-400 leading-relaxed text-sm">
-                                {content.val1Desc}
+                                {content.val3Desc}
                             </p>
                         </div>
 
@@ -357,14 +358,14 @@ export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr
                             </p>
                         </div>
 
-                        {/* Card 3 */}
+                        {/* Card 3 (Renamed from Card 1) */}
                         <div className="bg-[#0F1623] p-8 rounded-3xl border border-white/5 hover:border-indigo-500/30 transition-all duration-300 group hover:-translate-y-1">
                             <div className="w-14 h-14 bg-indigo-500/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-indigo-500/20 transition-colors">
-                                <Zap className="w-7 h-7 text-indigo-400" />
+                                <Users className="w-7 h-7 text-indigo-400" />
                             </div>
-                            <h3 className="text-xl font-bold text-white mb-4">{content.val3Title}</h3>
+                            <h3 className="text-xl font-bold text-white mb-4">{content.val1Title}</h3>
                             <p className="text-gray-400 leading-relaxed text-sm">
-                                {content.val3Desc}
+                                {content.val1Desc}
                             </p>
                         </div>
                     </div>
@@ -458,9 +459,20 @@ export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr
                                 </div>
                             </div>
 
-                            <span className="inline-block px-4 py-1.5 rounded-full bg-indigo-500/20 text-indigo-300 text-sm font-bold tracking-wide border border-indigo-500/30">
-                                {content.promoBadge}
-                            </span>
+                            <div className="mt-4">
+                                <span className="text-lg md:text-xl font-medium text-gray-500 block">
+                                    {/* Smart Formatting: Bold/White for Price parts, Gray/Soft for Labels */}
+                                    {(promoText || content.promoBadge).split(/(\s+)/).map((part, i) => {
+                                        // Create a regex to detect price-like parts: Numbers, currency symbols, TL, /
+                                        const isPricePart = /[\d\.,]+|TL|~|\/|Ay/i.test(part);
+                                        return (
+                                            <span key={i} className={isPricePart ? "text-white font-bold" : ""}>
+                                                {part}
+                                            </span>
+                                        );
+                                    })}
+                                </span>
+                            </div>
                         </div>
 
                         <div className="p-8 md:p-12 space-y-12">

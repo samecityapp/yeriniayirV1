@@ -191,16 +191,21 @@ export default async function ArticlePage({ params }: Props) {
   let imageMetadata: Record<string, { alt_tr: string; alt_en: string }> | undefined;
 
   if (imgUrls.length > 0) {
-    const { data: mediaData } = await supabase
-      .from('article_media')
-      .select('url, alt_tr, alt_en')
-      .in('url', imgUrls);
+    try {
+      const { data: mediaData, error: mediaError } = await supabase
+        .from('article_media')
+        .select('url, alt_tr, alt_en')
+        .in('url', imgUrls);
 
-    if (mediaData && mediaData.length > 0) {
-      imageMetadata = mediaData.reduce((acc, item) => {
-        acc[item.url] = { alt_tr: item.alt_tr, alt_en: item.alt_en };
-        return acc;
-      }, {} as Record<string, { alt_tr: string; alt_en: string }>);
+      if (!mediaError && mediaData && mediaData.length > 0) {
+        imageMetadata = mediaData.reduce((acc, item) => {
+          acc[item.url] = { alt_tr: item.alt_tr, alt_en: item.alt_en };
+          return acc;
+        }, {} as Record<string, { alt_tr: string; alt_en: string }>);
+      }
+    } catch (e) {
+      console.warn('Failed to fetch image metadata:', e);
+      // Continue without metadata
     }
   }
 

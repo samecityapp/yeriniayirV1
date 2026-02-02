@@ -128,6 +128,7 @@ export interface Offer {
   price: string;
   region: string;
   included_items?: IncludedItem[] | null;
+  promo_text?: string;
   created_at: string;
   updated_at: string;
 }
