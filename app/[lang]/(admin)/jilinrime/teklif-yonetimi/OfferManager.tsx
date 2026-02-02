@@ -313,6 +313,10 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
                                 <Input id="price" name="price" placeholder="Örn: 29.000" required />
                             </div>
                             <div className="grid gap-2">
+                                <Label htmlFor="promo_text">Aylık Fiyat (Metin)</Label>
+                                <Input id="promo_text" name="promo_text" placeholder="Örn: Aylık ~2.071 TL" />
+                            </div>
+                            <div className="grid gap-2">
                                 <Label htmlFor="region">Bölge</Label>
                                 <Input
                                     id="region"
@@ -489,6 +493,15 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
                                 />
                             </div>
                             <div className="grid gap-2">
+                                <Label htmlFor="edit-promo_text">Aylık Fiyat (Metin)</Label>
+                                <Input
+                                    id="edit-promo_text"
+                                    name="promo_text"
+                                    defaultValue={editingOffer.promo_text}
+                                    placeholder="Örn: Aylık ~2.071 TL"
+                                />
+                            </div>
+                            <div className="grid gap-2">
                                 <Label htmlFor="edit-region">Bölge</Label>
                                 <Input
                                     id="edit-region"
@@ -496,15 +509,6 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
                                     defaultValue={editingOffer.region}
                                     onChange={(e) => setTempRegion(e.target.value)}
                                     required
-                                />
-                            </div>
-                            <div className="grid gap-2">
-                                <Label htmlFor="edit-promo_text">Tanıtım/Fiyat Metni</Label>
-                                <Input
-                                    id="edit-promo_text"
-                                    name="promo_text"
-                                    defaultValue={editingOffer.promo_text}
-                                    placeholder="Örn: Aylık 2071 TL"
                                 />
                             </div>
 

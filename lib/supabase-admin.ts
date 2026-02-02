@@ -2,7 +2,8 @@ import { createClient } from '@supabase/supabase-js';
 
 // Use placeholders to prevent build-time crash if env vars are missing
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
-const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY || 'placeholder-key';
+// Fallback to Anon Key if Service Role is missing (allows read if RLS permits)
+const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key';
 
 console.log('Admin Key Status:', supabaseServiceRoleKey === 'placeholder-key' ? 'USING PLACEHOLDER ⚠️' : 'LOADED ✅ (' + supabaseServiceRoleKey.substring(0, 5) + '...)');
 

@@ -3,13 +3,18 @@ import { Offer } from './types';
 
 export const offers = {
     async getAll(): Promise<Offer[]> {
-        const { data, error } = await supabase
-            .from('offers')
-            .select('*')
-            .order('created_at', { ascending: false });
+        try {
+            const { data, error } = await supabase
+                .from('offers')
+                .select('*')
+                .order('created_at', { ascending: false });
 
-        if (error) throw error;
-        return data || [];
+            if (error) throw error;
+            return data || [];
+        } catch (error) {
+            console.error("Error fetching offers:", error);
+            return []; // Return empty array instead of crashing
+        }
     },
 
     async getBySlug(slug: string): Promise<Offer | null> {
