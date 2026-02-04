@@ -1630,6 +1630,496 @@ export const fallbackArticles = [
     published_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
     language: 'en'
+  },
+  {
+    id: 'fallback-8',
+    title: 'Hidden Costs in Turkey Resorts: What UK Travellers Get Surprised By (All-Inclusive Reality Check)',
+    slug: 'hidden-costs-in-turkey-resorts-what-uk-travellers-get-surprised-by-all-inclusive-reality-check',
+    slug_en: 'hidden-costs-in-turkey-resorts-what-uk-travellers-get-surprised-by-all-inclusive-reality-check',
+    cover_image_url: '/images/articles/hidden-costs-in-turkey-resorts-1-1769335351354.jpg',
+    meta_description: 'All-inclusive in Turkey can be excellent value — but UK travellers sometimes get surprised by extras. This guide lists the most common hidden costs (restaurants, drinks, transfers, spa, activities, room upgrades, beach extras), shows how to spot them early, and gives copy-paste questions + checklists + FAQs (no hotel names).',
+    content: `
+      <h2>Quick answer: Turkey all-inclusive resorts can be fantastic — but “all-inclusive” rarely means literally everything. The most common surprises for UK travellers are: à la carte restaurant charges or limits, premium drinks, spa treatments, paid activities, transfers not included, and room/location upgrades that change the holiday feel. The fix is simple: ask a short set of questions before you book, and you’ll avoid almost all surprises.</h2>
+      
+      <div class="relative w-full h-96 my-8 rounded-2xl overflow-hidden shadow-lg">
+        <img src="/images/articles/hidden-costs-in-turkey-resorts-1-1769335351354.jpg" alt="A detailed shot of a resort bill or menu illustrating potential extra costs" class="absolute inset-0 w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 text-white max-w-2xl">
+          <p class="text-lg font-medium opacity-90">Knowing what’s extra before you fly is the key to a stress-free holiday.</p>
+        </div>
+      </div>
+
+      <p><strong>Note:</strong> This guide is not about fear or negativity — it’s a practical “avoid surprises” checklist so your holiday stays smooth and enjoyable.</p>
+
+      <h2>First: what “hidden costs” really are</h2>
+      <p>Most “hidden costs” aren’t scams. They’re usually one of these:</p>
+      <ul>
+        <li>an extra feature that’s optional</li>
+        <li>a premium version of something that exists in a basic included form</li>
+        <li>a booking-type difference (package vs separate, standard vs ultra style)</li>
+        <li>a timing rule (included only at certain hours)</li>
+      </ul>
+      <p><strong>Simple rule:</strong> If you know the rules, there are no surprises.</p>
+
+      <h2>The UK mindset: you want a clean holiday budget</h2>
+      <p>UK travellers usually want one of two things:</p>
+      <ol>
+        <li>A fixed-feeling holiday (spend little on-site)</li>
+        <li>A flexible holiday (spend on a few upgrades intentionally)</li>
+      </ol>
+      <p>Both are great. Problems happen when you want “fixed” but book “flexible” without knowing it.</p>
+      <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 my-6">
+        <h3 class="text-blue-800 font-semibold mb-2">🇬🇧 UK-friendly tip</h3>
+        <p class="text-blue-700">Decide upfront: “Are we aiming to spend almost nothing on-site, or are we happy to spend on 2–3 planned extras?” That one decision makes everything clearer.</p>
+      </div>
+
+      <h2>1) À la carte restaurants: the #1 surprise</h2>
+      <p>Many UK travellers assume all restaurants are included. Often, the main buffet is fully included, while à la carte restaurants may be:</p>
+      <ul>
+        <li>included but limited (e.g., one visit per stay)</li>
+        <li>included only for longer stays</li>
+        <li>available with a surcharge</li>
+        <li>available with reservation limits (prime slots fill)</li>
+      </ul>
+      <p><strong>Simple rule:</strong> Ask “How many à la carte visits are included for our stay — and which restaurants count?”</p>
+      <p>Deep guide: <a href="/en/guide/a-la-carte-restaurants-in-turkey-all-inclusive-how-it-works-uk-friendly-no-surprises-guide">A La Carte Restaurants in All-Inclusive: How It Works</a></p>
+
+      <div class="my-8">
+        <img src="/images/articles/restaurant-bill-tip-tray-authentic-1767991127565.jpg" alt="A waiter presenting a bill tray, representing potential extra meal costs" class="w-full h-auto rounded-xl shadow-md" />
+        <p class="text-sm text-gray-500 mt-2 text-center">Sometimes special dinners come with a small surcharge—check before you book.</p>
+      </div>
+
+      <h2>2) Drinks: standard vs premium (and timing rules)</h2>
+      <p>All-inclusive usually covers standard drinks, but “premium” categories can be extra:</p>
+      <ul>
+        <li>imported spirits</li>
+        <li>certain wines/champagnes</li>
+        <li>premium cocktails</li>
+        <li>minibar upgrades</li>
+        <li>some branded items (depends on the resort policy)</li>
+      </ul>
+      <p>Sometimes the surprise is not “extra cost” but “included only at certain times”.</p>
+      <p><strong>Simple rule:</strong> Ask “Which drinks are included, and are there any time limits?”</p>
+      <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 my-6">
+        <h3 class="text-blue-800 font-semibold mb-2">🇬🇧 UK-friendly tip</h3>
+        <p class="text-blue-700">If you’re not a big drinker, don’t pay more for premium drink packages. Spend on room comfort instead.</p>
+      </div>
+
+      <div class="my-8">
+        <img src="/images/articles/premium-drinks-menu-bar-authentic-1767986640560.jpg" alt="A close-up of a bar menu showing premium drink prices" class="w-full h-auto rounded-xl shadow-md" />
+        <p class="text-sm text-gray-500 mt-2 text-center">Imported spirits and premium cocktails often sit outside the standard all-inclusive package.</p>
+      </div>
+
+      <h2>3) Transfers: included in package or separate?</h2>
+      <p>One of the biggest surprises happens before you even arrive: transfers.</p>
+      <p>Possible situations:</p>
+      <ul>
+        <li>included in package</li>
+        <li>offered as an add-on</li>
+        <li>not included if you booked flights and accommodation separately</li>
+        <li>included but shared (not private)</li>
+      </ul>
+      <p><strong>Simple rule:</strong> If you care about smooth arrival, confirm transfers before paying.</p>
+      <p>Transfer guide: <a href="/en/guide/resort-transfers-in-turkey-reliable-options-and-what-to-avoid-uk-friendly-guide">Resort Transfers in Turkey: Reliable Options and What to Avoid</a></p>
+
+      <h2>4) Spa and wellness: usually extra (but easy to plan for)</h2>
+      <p>Spa access and treatments vary. Common patterns:</p>
+      <ul>
+        <li>basic facilities may be included</li>
+        <li>treatments are often extra</li>
+        <li>packages and upgrades can add up quickly</li>
+      </ul>
+      <p><strong>Simple rule:</strong> Treat spa as a planned extra, not an “included” assumption.</p>
+      <div class="my-8">
+        <img src="/images/articles/spa-treatment-menu-pricing-authentic-1767986640560.jpg" alt="A spa menu showing treatment prices" class="w-full h-auto rounded-xl shadow-md" />
+        <p class="text-sm text-gray-500 mt-2 text-center">Massages and treatments are rarely included in the base price.</p>
+      </div>
+      <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 my-6">
+        <h3 class="text-blue-800 font-semibold mb-2">🇬🇧 UK-friendly tip</h3>
+        <p class="text-blue-700">If spa is a key part of your holiday, budget for it intentionally — then it feels like a highlight, not a surprise.</p>
+      </div>
+
+      <h2>5) Activities and water sports: what’s included vs what’s paid</h2>
+      <p>Resorts may include:</p>
+      <ul>
+        <li>basic activities (fitness classes, some sports)</li>
+        <li>evening entertainment (varies)</li>
+      </ul>
+      <p>Often paid:</p>
+      <ul>
+        <li>motorised water sports</li>
+        <li>special excursions</li>
+        <li>certain sports lessons</li>
+        <li>premium experiences (cabana-style setups, private sessions)</li>
+      </ul>
+      <p><strong>Simple rule:</strong> Ask “Which activities are included daily, and which are paid add-ons?”</p>
+
+      <h2>6) Kids’ club and family extras (families: read this)</h2>
+      <p>Most family resorts include kids’ clubs, but extras can exist:</p>
+      <ul>
+        <li>private babysitting</li>
+        <li>special lessons or premium activities</li>
+        <li>some “paid play” add-ons</li>
+        <li>pram/buggy-related services (rare, but check if you need it)</li>
+      </ul>
+      <p><strong>Simple rule:</strong> If you need babysitting or specific child support, confirm it before booking.</p>
+      <p>Family guide: <a href="/en/guide/all-inclusive-for-families-in-turkey-the-non-negotiables-uk-parent-checklist">All-Inclusive for Families: The Non-Negotiables</a></p>
+
+      <h2>7) Room upgrades: the cost that changes your whole holiday</h2>
+      <p>This is the “hidden cost” that can be worth paying — because it changes daily comfort.</p>
+      <p>Common upgrade triggers:</p>
+      <ul>
+        <li>family room vs standard room</li>
+        <li>separate sleeping area (sleep quality)</li>
+        <li>quieter location (noise-sensitive travellers)</li>
+        <li>sea view (only worth it if you’ll enjoy it)</li>
+        <li>access to calm zones (couples/adults-only vibes)</li>
+      </ul>
+      <p><strong>Simple rule:</strong> If you spend on anything, spend on sleep and comfort first.</p>
+      <p>Value guide: <a href="/en/guide/how-to-get-the-best-all-inclusive-value-in-turkey-from-the-uk-timing-room-types-simple-rules">How to Get the Best All-Inclusive Value from the UK</a></p>
+
+      <h2>8) “Premium zones”: paid seating, cabanas, reserved areas</h2>
+      <p>Some resorts have:</p>
+      <ul>
+        <li>paid cabanas</li>
+        <li>reserved beach/pool seating</li>
+        <li>premium loungers or “VIP areas”</li>
+      </ul>
+      <p>These aren’t essential — but if the resort is busy, they can tempt people.</p>
+      <p><strong>Simple rule:</strong> Don’t budget for these unless you know you’ll use them. You can still have an amazing holiday without VIP seating.</p>
+
+      <h2>9) Mini bar rules: included… or not exactly</h2>
+      <p>Mini bar surprises can happen if:</p>
+      <ul>
+        <li>only water is free</li>
+        <li>restocking rules are limited</li>
+        <li>premium items are charged</li>
+      </ul>
+      <p><strong>Simple rule:</strong> Ask “What’s included in the minibar, and how does restocking work?”</p>
+
+      <h2>10) Laundry, late checkout, and “convenience costs”</h2>
+      <p>These small costs can add up:</p>
+      <ul>
+        <li>laundry services</li>
+        <li>late checkout</li>
+        <li>room service rules</li>
+        <li>special requests (varies)</li>
+      </ul>
+      <p><strong>Simple rule:</strong> Plan one “convenience buffer” in your budget so you don’t feel annoyed by small charges.</p>
+
+      <h2>11) Excursions and tours: optional but common spend</h2>
+      <p>Even if your resort is perfect, many UK travellers still book:</p>
+      <ul>
+        <li>a boat day</li>
+        <li>a scenic trip</li>
+        <li>a cultural outing</li>
+      </ul>
+      <p>These aren’t “hidden” — but they’re often forgotten during budgeting.</p>
+      <p><strong>Simple rule:</strong> If you want 1–2 excursions, budget for them upfront so it feels intentional.</p>
+      <p>Package vs DIY planning: <a href="/en/guide/package-holiday-vs-booking-separately-for-turkey-from-uk-cost-comparison-framework">Package Holiday vs Booking Separately for Turkey</a></p>
+
+      <div class="my-8">
+        <img src="/images/articles/resort-extras-drinks-menu-authentic-1767985612952.jpg" alt="A menu showing extras at a resort, highlighting what might not be included" class="w-full h-auto rounded-xl shadow-md" />
+        <p class="text-sm text-gray-500 mt-2 text-center">Extras like imported drinks or special dining can add up—check the menu prices.</p>
+      </div>
+
+      <h2>12) How to read bills and avoid awkward checkout moments</h2>
+      <p>Most surprises happen because people don’t check as they go.</p>
+      <h3>The simple habit</h3>
+      <ul>
+        <li>keep notes of anything you charge to your room</li>
+        <li>ask politely if something is included before you say yes</li>
+        <li>check your account once mid-week if you’re using extras</li>
+      </ul>
+      <p><strong>Simple rule:</strong> “Confirm before you commit” keeps everything calm.</p>
+
+      <h2>The 12 questions that prevent 95% of surprises (copy-paste)</h2>
+      <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 my-6">
+        <p>Use these before booking or at check-in:</p>
+        <ul class="list-none space-y-2 mt-4">
+            <li>📝 “What exactly is included in all-inclusive for our booking (meals, snacks, drinks)?”</li>
+            <li>📝 “Are there time limits for snacks or drinks?”</li>
+            <li>📝 “How many à la carte visits are included, and which restaurants count?”</li>
+            <li>📝 “Are any restaurants always paid?”</li>
+            <li>📝 “Which drinks are included vs premium?”</li>
+            <li>📝 “Is minibar included, and how does restocking work?”</li>
+            <li>📝 “Are transfers included in our package — and are they private or shared?”</li>
+            <li>📝 “Which activities are included daily, and which are paid?”</li>
+            <li>📝 “Is spa access included, and are treatments extra?”</li>
+            <li>📝 “Are there paid cabanas or premium seating areas?”</li>
+            <li>📝 “Are kids’ clubs included, and is babysitting available (paid)?”</li>
+            <li>📝 “Which room upgrades improve sleep/quiet, and what do they cost?”</li>
+        </ul>
+      </div>
+      <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 my-6">
+        <h3 class="text-blue-800 font-semibold mb-2">🇬🇧 UK-friendly tip</h3>
+        <p class="text-blue-700">If a resort can answer these clearly, it’s usually well-organised.</p>
+      </div>
+
+      <h2>Quick checklist: “no surprise” booking routine (UK)</h2>
+      <p>Tick these before you pay:</p>
+      <ul>
+        <li>We know what’s included for food and drink ✅</li>
+        <li>We understand à la carte rules ✅</li>
+        <li>We know transfer plan and cost ✅</li>
+        <li>We know what’s premium/paid (spa, activities, seating) ✅</li>
+        <li>We chose the right room type for comfort ✅</li>
+        <li>We budgeted for 1–2 optional extras (if we want them) ✅</li>
+      </ul>
+      <p><strong>Simple rule:</strong> Clarity is the real luxury.</p>
+
+      <h2>FAQ: Hidden costs in Turkey resorts (UK)</h2>
+      <div class="space-y-4">
+        <div>
+          <h4 class="font-bold text-gray-900">Is all-inclusive in Turkey really all-inclusive?</h4>
+          <p>It’s usually very comprehensive, especially for buffet meals and standard drinks, but it often doesn’t include every premium option. À la carte restaurants, premium drinks, spa treatments, and certain activities can be extra depending on the resort.</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-gray-900">What’s the most common surprise for UK travellers?</h4>
+          <p>À la carte rules (limits or surcharges) and premium drinks are the most common surprises, followed by transfers not being included in some bookings.</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-gray-900">Are these “extras” a bad sign?</h4>
+          <p>Not necessarily. Many resorts offer paid extras as optional upgrades. The key is knowing what’s included so you can choose intentionally.</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-gray-900">How do we avoid surprises completely?</h4>
+          <p>Ask the 12 questions in this guide before booking, and confirm any unclear points at check-in. If you do that, surprises are rare.</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-gray-900">Should we pay for upgrades?</h4>
+          <p>Only if they improve your daily comfort. Room layout and quiet positioning often give the best value. Premium seating and paid zones are optional and usually not necessary.</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-gray-900">Do families face different hidden costs?</h4>
+          <p>Sometimes. Babysitting, premium kids’ activities, and certain convenience services can be paid extras. Families get the best results by prioritising room layout, snack access, shade, and simple transfers.</p>
+        </div>
+      </div>
+      
+      <p class="text-sm text-gray-500 mt-6">Last updated: ${new Date().toLocaleDateString('en-GB')}</p>
+    `,
+    published_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    language: 'en'
+  },
+  {
+    id: 'fallback-9',
+    title: 'Is Turkey Safe for UK Tourists? A Calm, Practical Guide (No Scare Stories)',
+    slug: 'is-turkey-safe-for-uk-tourists-a-calm-practical-guide-no-scare-stories',
+    slug_en: 'is-turkey-safe-for-uk-tourists-a-calm-practical-guide-no-scare-stories',
+    cover_image_url: '/images/articles/is-turkey-safe-for-uk-tourists-1-1769335507146.jpg',
+    meta_description: 'UK travellers often ask: "Is Turkey safe right now?" The short answer is yes — especially in resort areas. This guide covers real safety advice for families, couples, and solo travellers, including taxi safety, scams to avoid, earthquake facts, and emergency numbers. No scaremongering, just practical tips.',
+    content: `
+      <h2>Quick answer: Yes, Turkey is generally very safe for UK tourists, especially in the coastal resort areas (Antalya, Bodrum, Dalaman, Fethiye). Millions of British families visit every year without incident. The most common issues aren’t dangerous — they’re annoyances like taxi overcharging or pushy shopkeepers. Serious crime against tourists is rare.</h2>
+      
+      <div class="relative w-full h-96 my-8 rounded-2xl overflow-hidden shadow-lg">
+        <img src="/images/articles/is-turkey-safe-for-uk-tourists-1-1769335507146.jpg" alt="Tourists walking safely in a sunny Turkish resort town" class="absolute inset-0 w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 text-white max-w-2xl">
+          <p class="text-lg font-medium opacity-90">Resort towns are welcoming and family-focused.</p>
+        </div>
+      </div>
+
+      <p><strong>Note:</strong> We check UK FCDO advice, but always check the official government site before you travel for the latest updates.</p>
+
+      <h2>1) The reality of resort towns implies safety</h2>
+      <p>Places like Antalya, Belek, Side, Fethiye, and Bodrum are heavily tourism-focused. The local economy depends on tourists being safe and happy. Police presence is high, and locals are generally extremely helpful.</p>
+      <p><strong>What you’ll feel:</strong> A very relaxed, holiday atmosphere. It doesn’t feel “tense”.</p>
+
+      <h2>2) Scams vs Danger (Know the difference)</h2>
+      <p>Most “safety” warnings are actually about scams (losing money), not physical danger.</p>
+      <p><strong>Common annoyances:</strong></p>
+      <ul>
+        <li>Taxi drivers not using the meter (insist on the meter or agree a price first)</li>
+        <li>Restaurant bills with mysterious items (check the menu price first)</li>
+        <li>"Free" gifts that turn out to be sales pitches</li>
+      </ul>
+      <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 my-6">
+        <h3 class="text-blue-800 font-semibold mb-2">🇬🇧 UK-friendly tip</h3>
+        <p class="text-blue-700">Be polite but firm. If a shopkeeper is pushy, a smile and a firm “No thank you” works perfectly. You are not being rude; you are being clear.</p>
+      </div>
+      <p>Money guide: <a href="/en/guide/money-in-turkey-for-uk-travellers-cash-vs-card-tipping-and-scams-to-avoid">Money in Turkey: Cash vs Card & Scams to Avoid</a></p>
+
+      <h2>3) Solo female travel safety</h2>
+      <p>Turkey is popular for solo female travellers. In resort towns, it is generally safe to walk alone during the day and evening in busy areas.</p>
+      <p><strong>What to expect:</strong> You may get some attention (catcalling or “come into my shop”). It is rarely aggressive, just annoying.</p>
+      <p><strong>Advice:</strong></p>
+      <ul>
+        <li>Ignore catcalls (don’t engage)</li>
+        <li>Dress modestly if leaving the resort (shoulders/knees covered prevents staring)</li>
+        <li>Use registered yellow taxis or hotel transfers at night</li>
+      </ul>
+      <div class="my-8">
+        <img src="/images/articles/solo-travel-in-turkey-from-the-uk-1-1769336546487.jpg" alt="A solo traveller enjoying a coffee in a Turkish cafe" class="w-full h-auto rounded-xl shadow-md" />
+        <p class="text-sm text-gray-500 mt-2 text-center">Solo travel is common and safe if you stick to normal precautions.</p>
+      </div>
+
+      <h2>4) Taxis and Transport</h2>
+      <p>Yellow taxis are official. Use them.</p>
+      <ul>
+        <li>Always check the taxi has a registration number on the side.</li>
+        <li>Antalya and Istanbul taxis now mostly use meters. In some smaller resorts, there are fixed price boards at the taxi rank.</li>
+        <li>BiTaksi and Uber exist in some cities (Istanbul/Antalya), but standard yellow taxis are everywhere.</li>
+      </ul>
+      <p>Transport guide: <a href="/en/guide/resort-transfers-in-turkey-reliable-options-and-what-to-avoid-uk-friendly-guide">Resort Transfers in Turkey</a></p>
+
+      <h2>5) Earthquake safety (The realistic view)</h2>
+      <p>Turkey is seismically active. However, the main tourist coast (Antalya region) is in a lower risk zone compared to the East or Istanbul. Hotels are built to strict codes.</p>
+      <p><strong>Fact:</strong> The likelihood of a major event affecting your holiday is statistically very low. Don’t let fear ruin your planning.</p>
+
+      <h2>6) Drinking water and food hygiene</h2>
+      <p><strong>Tap water:</strong> Don’t drink it. It’s safe to wash with, but not for drinking. Hotels provide bottled water — use it.</p>
+      <p><strong>Food:</strong> Hygiene standards in resorts are generally high (comparable to Spain/Greece). “Turkey tummy” is often caused by heat + ice-cold drinks + alcohol, not just food poisoning.</p>
+
+      <h2>7) Emergency Numbers (Save these)</h2>
+      <p>Turkey has a unified emergency number (like 999):</p>
+      <ul class="text-xl font-bold text-red-600">
+        <li>112 (Ambulance, Police, Fire)</li>
+      </ul>
+      <p>Operators usually have English speakers available.</p>
+      <div class="my-8">
+        <img src="/images/articles/emergency-numbers-getting-help-in-turkey-uk-travellers-1-1769345424059.jpg" alt="An emergency services vehicle in Turkey" class="w-full h-auto rounded-xl shadow-md" />
+        <p class="text-sm text-gray-500 mt-2 text-center">Dial 112 for all emergencies.</p>
+      </div>
+
+      <h2>8) Terrorism and border areas</h2>
+      <p>The FCDO advises against travel to areas bordering Syria (in the far South East). </p>
+      <p><strong>Context:</strong> These areas are hundreds of miles away from Antalya, Bodrum, or Marmaris. It’s like avoiding London because of an event in Edinburgh — the distance is huge.</p>
+      <p>Resort areas remain unaffected and calm.</p>
+
+      <h2>9) Cultural respect = Better safety</h2>
+      <p>Being respectful earns you warmth and protection from locals.</p>
+      <ul>
+        <li>Don’t argue loudly in public.</li>
+        <li>Be polite to police/security (they are there to protect you).</li>
+        <li>Respect local customs (dress slightly smarter in cities than on the beach).</li>
+      </ul>
+      <div class="my-8">
+        <img src="/images/articles/friendly-handshake-greeting-turkey-authentic-1767987445923.jpg" alt="A friendly handshake between a tourist and a local" class="w-full h-auto rounded-xl shadow-md" />
+        <p class="text-sm text-gray-500 mt-2 text-center">Turkish hospitality is famous—friendliness is usually genuine.</p>
+      </div>
+
+      <h2>10) Family safety checklist</h2>
+      <p>If you are travelling with kids:</p>
+      <ul>
+        <li>Sun safety is the #1 risk. The sun is stronger than you think.</li>
+        <li>Pool safety: Ensure lifeguards are present.</li>
+        <li>Pavements can be uneven — bring a sturdy buggy.</li>
+      </ul>
+      <div class="my-8">
+        <img src="/images/articles/family-travel-safety-turkey-uk-parents-checklist-2-1769372422114.jpg" alt="A family walking safely near a resort pool" class="w-full h-auto rounded-xl shadow-md" />
+      </div>
+
+      <h2>Summary: Is it safe?</h2>
+      <p>Yes. Exercise normal "big city" caution (watch your bag, don't get too drunk alone), and you will likely have a wonderful, safe holiday.</p>
+      
+      <p class="text-sm text-gray-500 mt-6">Last updated: ${new Date().toLocaleDateString('en-GB')}</p>
+    `,
+    published_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    language: 'en'
+  },
+  {
+    id: 'fallback-10',
+    title: 'Local Laws & Etiquette in Turkey for Brits: Simple Rules to Avoid Awkward Moments',
+    slug: 'local-laws-and-etiquette-in-turkey-for-brits-simple-rules-to-avoid-awkward-moments',
+    slug_en: 'local-laws-and-etiquette-in-turkey-for-brits-simple-rules-to-avoid-awkward-moments',
+    cover_image_url: '/images/articles/local-laws-etiquette-in-turkey-for-brits-1-1769335714631.jpg',
+    meta_description: 'Turkey is relaxed and welcoming, but a few simple rules make a huge difference. This guide covers the "must-knows" for UK travellers: dress codes for mosques vs beaches, Ataturk statues, alcohol laws, tipping rules, and how to avoid accidental offence. It’s not strict — it’s just helpful context.',
+    content: `
+      <h2>Quick answer: Turkey is secular and modern, especially in tourist areas. You don’t need to cover up everywhere. The main rules are: dress modestly when visiting mosques (cover shoulders/knees), don’t insult Ataturk or the flag, and be polite. Alcohol is legal and widely available. Turkish people are generally very forgiving of tourists, but making an effort goes a long way.</h2>
+      
+      <div class="relative w-full h-96 my-8 rounded-2xl overflow-hidden shadow-lg">
+        <img src="/images/articles/local-laws-etiquette-in-turkey-for-brits-1-1769335714631.jpg" alt="A respectful tourist visiting a cultural site in Turkey" class="absolute inset-0 w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 text-white max-w-2xl">
+          <p class="text-lg font-medium opacity-90">Being respectful is easy and makes your trip better.</p>
+        </div>
+      </div>
+
+      <p><strong>Note:</strong> You are a guest in a country famously hospitable to guests. The rules are simple.</p>
+
+      <h2>1) Dress Code: Beach vs Town vs Mosque</h2>
+      <p><strong>Beach/Pool:</strong> Bikinis, shorts, anything goes. It’s like Spain.</p>
+      <p><strong>Town/Resort Centre:</strong> It’s polite to cover up slightly when leaving the beach. Guys, put a t-shirt on. Ladies, a sarong or dress is perfect in shops.</p>
+      <p><strong>Mosques:</strong> Strict rules apply here.</p>
+      <ul>
+        <li>Women: Headscarf (often provided), shoulders and knees covered.</li>
+        <li>Men: No vest tops, shorts should cover knees (long trousers preferred).</li>
+      </ul>
+      <div class="my-8">
+        <img src="/images/articles/mosque-entry-shoe-shelves-authentic-1767989380712.jpg" alt="Shoe shelves at a mosque entrance—shoes must be removed" class="w-full h-auto rounded-xl shadow-md" />
+        <p class="text-sm text-gray-500 mt-2 text-center">Shoes off, voices low. It’s a place of worship.</p>
+      </div>
+
+      <h2>2) Respect for Ataturk and the Flag</h2>
+      <p>Mustafa Kemal Ataturk is the founder of modern Turkey. His face is on money, statues, and pictures everywhere.</p>
+      <p><strong>The Law:</strong> It is illegal to insult Ataturk or deface the Turkish flag.</p>
+      <ul>
+        <li>Don’t make jokes about him.</li>
+        <li>Treat the currency (Lira) with respect (don’t rip it up).</li>
+        <li>The flag is sacred to locals. Don’t step on it or treat it as a toy.</li>
+      </ul>
+
+      <h2>3) Public Displays of Affection (PDA)</h2>
+      <p>Turkey is more conservative than the UK.</p>
+      <ul>
+        <li><strong>Fine:</strong> Holding hands, quick kiss.</li>
+        <li><strong>Avoid:</strong> Heavy making out in public streets. It draws stares and is seen as disrespectful.</li>
+      </ul>
+
+      <h2>4) Alcohol and Smoking</h2>
+      <p><strong>Alcohol:</strong> Legal and available. Raki is the national drink. Being drunk is tolerated in resorts, but being famously aggressive or overly loud is frowned upon.</p>
+      <p><strong>Smoking:</strong> Turks smoke a lot. Smoking is banned indoors, but widely accepted on terraces and outdoors.</p>
+      <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 my-6">
+        <h3 class="text-blue-800 font-semibold mb-2">🇬🇧 UK-friendly tip</h3>
+        <p class="text-blue-700">Don’t expect strict "non-smoking" zones on outdoor terraces. It’s just how it is.</p>
+      </div>
+
+      <h2>5) Tipping Culture (Bahşiş)</h2>
+      <p>Tipping is expected but not aggressive.</p>
+      <ul>
+        <li><strong>Restaurants:</strong> 10% is standard.</li>
+        <li><strong>Bellboys:</strong> Small note (e.g. 50-100 TL or £1/£2/€2 coins).</li>
+        <li><strong>Taxis:</strong> Round up the fare.</li>
+      </ul>
+      <p>Money guide: <a href="/en/guide/money-in-turkey-for-uk-travellers-cash-vs-card-tipping-and-scams-to-avoid">Money in Turkey</a></p>
+
+      <h2>6) Bargaining (Haggling)</h2>
+      <p><strong>Where to do it:</strong> Bazaars, markets, souvenir shops.</p>
+      <p><strong>Where NOT to do it:</strong> Supermarkets, pharmacies, brand name stores, restaurants.</p>
+      <p><strong>How to do it:</strong> Keep it fun. Offer 60% of the price, meet in the middle. If you don’t like the price, walk away politely. They might call you back with a better offer.</p>
+
+      <h2>7) Bathroom Etiquette</h2>
+      <p><strong>The "Bidet" Nozzle:</strong> Most Turkish toilets have a small water nozzle built into the bowl for washing. It’s a hygiene thing—try it if you like!</p>
+      <p><strong>Toilet Paper:</strong> In some older places or rural areas, pipes are narrow, and signs may ask you to put paper in the bin. In modern hotels, flushing paper is fine.</p>
+
+      <h2>8) Meal Times and Invites</h2>
+      <p>Dinner is often late (8pm onwards) in summer.</p>
+      <p>If a shopkeeper offers you tea (çay), it’s usually hospitality, not just a sales trick. Accepting a small glass is polite and doesn’t obligate you to buy anything.</p>
+      <div class="my-8">
+        <img src="/images/articles/turkish-tea-glasses-conversation-1767987445923.jpg" alt="Turkish tea glasses on a table" class="w-full h-auto rounded-xl shadow-md" />
+        <p class="text-sm text-gray-500 mt-2 text-center">Tea is the fuel of Turkish social life.</p>
+      </div>
+
+      <h2>9) Taking Photos</h2>
+      <ul>
+        <li><strong>Landscapes/Sites:</strong> Fine.</li>
+        <li><strong>People:</strong> Always ask permission, especially with older people or women.</li>
+        <li><strong>Military/Police:</strong> Never photograph military bases or police checkpoints.</li>
+      </ul>
+
+      <h2>10) Sensitive Topics</h2>
+      <p>Avoid discussing politics (Erdogan, elections, etc.) or religion casually with strangers unless you know them well. People have strong opinions, and it’s best to keep holiday talk light.</p>
+
+      <h2>Summary: The Golden Rule</h2>
+      <p>Be polite, smile, and say "Merhaba" (Hello) and "Teşekkür ederim" (Thank you). If you do that, Turkey will welcome you with open arms.</p>
+      
+      <p class="text-sm text-gray-500 mt-6">Last updated: ${new Date().toLocaleDateString('en-GB')}</p>
+    `,
+    published_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    language: 'en'
   }
 ];
 
