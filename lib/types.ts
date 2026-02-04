@@ -111,6 +111,7 @@ export interface Article {
   published_at?: string;
   created_at?: string;
   updated_at?: string;
+  language?: 'tr' | 'en' | string;
 }
 
 export interface IncludedItem {

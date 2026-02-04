@@ -60,3 +60,28 @@ export function setCurrentLanguage(lang: string): void {
     localStorage.setItem('language', lang);
   }
 }
+
+export function doesArticleSupportLang(article: any, lang: string = 'tr'): boolean {
+  // 1. Explicit language tag takes precedence
+  if (article.language) {
+    return article.language === lang;
+  }
+
+  // 2. Logic for objects with localized title (e.g. { tr: "...", en: "..." })
+  if (article.title && typeof article.title === 'object') {
+    // Strict check: The object MUST have a key for the requested language
+    // We do NOT partial match or fallback here for LISTING purposes.
+    // If user wants to show mixed content, they can change this policy.
+    // But currently: "NEVER mix languages".
+    return !!(article.title as any)[lang];
+  }
+
+  // 3. Logic for legacy string-only articles
+  // Assumption: Legacy content is generally Turkish unless specified otherwise
+  if (typeof article.title === 'string') {
+    return lang === 'tr';
+  }
+
+  // Default deny if structure is unknown
+  return false;
+}

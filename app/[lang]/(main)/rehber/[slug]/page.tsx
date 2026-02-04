@@ -107,7 +107,7 @@ export default async function ArticlePage({ params }: Props) {
 
   // --- LOCATION DETAIL PAGE LOGIC ---
   if (locationConstant) {
-    const articles = await db.articles.getAllByLocation(locationConstant.title);
+    const articles = await db.articles.getAllByLocation(locationConstant.title, lang);
     const locationDescription = dict.guide.locations[locationConstant.slug as keyof typeof dict.guide.locations] || locationConstant.description;
 
     return (

@@ -2,6 +2,7 @@ import { supabase } from './supabase';
 import { Hotel, Group, Tag, PriceTag, SearchTerm } from './types';
 import { mockArticles, mockFethiyeArticle } from '@/data/mockArticles';
 import { fallbackArticles } from '@/data/fallbackArticles';
+import { doesArticleSupportLang } from '@/lib/localization';
 
 
 export const db = {
@@ -745,7 +746,7 @@ export const db = {
   },
 
   articles: {
-    async getAll() {
+    async getAll(lang: string = 'tr') {
       const { data, error } = await supabase
         .from('articles')
         .select('*')
@@ -754,10 +755,12 @@ export const db = {
         .order('published_at', { ascending: false });
 
       if (error) throw error;
-      return data || [];
+
+      const allArticles = data || [];
+      return allArticles.filter((article: any) => doesArticleSupportLang(article, lang));
     },
 
-    async getAllByLocation(location: string) {
+    async getAllByLocation(location: string, lang: string = 'tr') {
       try {
         const { data, error } = await supabase
           .from('articles')
@@ -768,17 +771,35 @@ export const db = {
           .order('published_at', { ascending: false });
 
         if (error) throw error;
-        return data || [];
+
+        const dbMatches = (data || []).filter((article: any) => doesArticleSupportLang(article, lang));
+
+        // Return DB matches if found
+        if (dbMatches.length > 0) return dbMatches;
+
+        // Fallback: search in fallbackArticles and mockArticles for matches
+        // FILTER: Only return fallback articles that support the requested language
+        const fallbackMatches = fallbackArticles.filter((a: any) =>
+          (a.location || '').toLowerCase().includes(location.toLowerCase()) && doesArticleSupportLang(a, lang)
+        );
+
+        const mockMatches = mockArticles.filter((a: any) =>
+          (a.location || '').toLowerCase().includes(location.toLowerCase()) && doesArticleSupportLang(a, lang)
+        );
+
+        return [...fallbackMatches, ...mockMatches];
+
       } catch (error) {
         console.warn('Error in getAllByLocation:', error);
 
         // Fallback: search in fallbackArticles and mockArticles for matches
+        // FILTER: Only return fallback articles that support the requested language
         const fallbackMatches = fallbackArticles.filter((a: any) =>
-          (a.location || '').toLowerCase().includes(location.toLowerCase())
+          (a.location || '').toLowerCase().includes(location.toLowerCase()) && doesArticleSupportLang(a, lang)
         );
 
         const mockMatches = mockArticles.filter((a: any) =>
-          (a.location || '').toLowerCase().includes(location.toLowerCase())
+          (a.location || '').toLowerCase().includes(location.toLowerCase()) && doesArticleSupportLang(a, lang)
         );
 
         return [...fallbackMatches, ...mockMatches];
