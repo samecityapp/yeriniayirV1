@@ -40,6 +40,7 @@ export type Group = {
   title: string;
   isPublished: boolean;
   hotelIds: string[];
+  domains?: string[];
 };
 
 export type Tag = {

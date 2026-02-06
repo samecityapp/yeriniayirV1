@@ -258,12 +258,13 @@ export const db = {
       return (data || []).map(this.mapFromDb);
     },
 
-    async getPublishedWithHotels(): Promise<any[]> {
+    async getPublishedWithHotels(domain?: string): Promise<any[]> {
       const { data, error } = await supabase
         .from('groups')
         .select(`
           id,
           title,
+          domains,
           group_hotels (
             order_index,
             hotels (
@@ -282,9 +283,24 @@ export const db = {
 
       if (error) throw error;
 
-      const sortedGroups = (data || []).map(group => ({
+      let filteredData = data || [];
+
+      // Client-side filtering for domains if a domain is specified
+      // (Since we are using an array column, server-side filtering with 'contains' is also possible 
+      // but client-side is flexible for 'empty means all' logic)
+      if (domain) {
+        filteredData = filteredData.filter(g => {
+          // If domains array is empty or null, show everywhere (Legacy support)
+          if (!g.domains || g.domains.length === 0) return true;
+          // Otherwise, check if domain is included
+          return g.domains.includes(domain);
+        });
+      }
+
+      const sortedGroups = filteredData.map(group => ({
         id: group.id,
         title: group.title,
+        domains: group.domains || [],
         hotels: (group.group_hotels || [])
           .sort((a: any, b: any) => a.order_index - b.order_index)
           .map((gh: any) => gh.hotels)
@@ -329,7 +345,8 @@ export const db = {
         .from('groups')
         .insert([{
           title: group.title,
-          is_published: group.isPublished
+          is_published: group.isPublished,
+          domains: group.domains || []
         }])
         .select()
         .single();
@@ -348,6 +365,7 @@ export const db = {
 
       if (updates.title !== undefined) updateData.title = updates.title;
       if (updates.isPublished !== undefined) updateData.is_published = updates.isPublished;
+      if (updates.domains !== undefined) updateData.domains = updates.domains;
       updateData.updated_at = new Date().toISOString();
 
       const { data, error } = await supabase
@@ -429,11 +447,22 @@ export const db = {
     },
 
     mapFromDb(row: any): Group {
+      let title = row.title;
+      // Attempt to parse JSON title if it looks like a JSON string
+      if (typeof title === 'string' && title.trim().startsWith('{')) {
+        try {
+          title = JSON.parse(title);
+        } catch (e) {
+          // keep as string if parse fails
+        }
+      }
+
       return {
         id: row.id,
-        title: row.title,
+        title: title,
         isPublished: row.is_published,
-        hotelIds: []
+        hotelIds: [],
+        domains: row.domains || []
       };
     }
   },
@@ -830,16 +859,16 @@ export const db = {
       return null;
     },
 
-    async getLatest(limit: number = 3) {
+    async getLatest(limit: number = 3, lang: string = 'tr') {
       let dbArticles: any[] = [];
       try {
         const { data, error } = await supabase
           .from('articles')
-          .select('id, title, slug, cover_image_url, published_at')
+          .select('id, title, slug, cover_image_url, published_at, language')
           .eq('is_published', true)
           .is('deleted_at', null)
           .order('published_at', { ascending: false })
-          .limit(limit);
+          .limit(limit * 2); // Fetch more to ensure we have enough after filtering
 
         if (error) throw error;
         dbArticles = data || [];
@@ -853,7 +882,7 @@ export const db = {
       const uniqueArticles = [];
 
       for (const article of allArticles) {
-        if (!seenSlugs.has(article.slug)) {
+        if (!seenSlugs.has(article.slug) && doesArticleSupportLang(article, lang)) {
           seenSlugs.add(article.slug);
           uniqueArticles.push(article);
         }

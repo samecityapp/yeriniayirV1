@@ -49,8 +49,10 @@ const tryParseLocalized = (val: any): { tr: string; en: string; de: string } => 
 export default function AnasayfaYonetimiPage() {
   const [groups, setGroups] = useState<Group[]>([]);
   const [hotels, setHotels] = useState<Hotel[]>([]);
-  const [newGroupTitle, setNewGroupTitle] = useState('');
+  const [newGroupTitleTr, setNewGroupTitleTr] = useState('');
+  const [newGroupTitleEn, setNewGroupTitleEn] = useState('');
   const [selectedHotelIds, setSelectedHotelIds] = useState<string[]>([]);
+  const [newGroupDomains, setNewGroupDomains] = useState<string[]>([]); // Default empty = all
   const [isCreating, setIsCreating] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -105,29 +107,42 @@ export default function AnasayfaYonetimiPage() {
   };
 
   const handleCreateGroup = async () => {
-    if (!newGroupTitle.trim()) {
-      alert('Grup basligi bos olamaz!');
+    if (!newGroupTitleTr.trim()) {
+      alert('Grup başlığı (Türkçe) boş olamaz!');
+      return;
+    }
+    if (!newGroupTitleEn.trim()) {
+      alert('Grup başlığı (İngilizce) boş olamaz!');
       return;
     }
     if (selectedHotelIds.length === 0) {
-      alert('En az 1 otel secmelisiniz!');
+      alert('En az 1 otel seçmelisiniz!');
       return;
     }
 
     try {
+      // Create JSON string for title
+      const titleJson = JSON.stringify({
+        tr: newGroupTitleTr.trim(),
+        en: newGroupTitleEn.trim()
+      });
+
       await db.groups.create({
-        title: newGroupTitle.trim(),
+        title: titleJson, // Save as JSON string
         isPublished: false,
-        hotelIds: []
+        hotelIds: [],
+        domains: newGroupDomains
       }, selectedHotelIds);
 
-      setNewGroupTitle('');
+      setNewGroupTitleTr('');
+      setNewGroupTitleEn('');
+      setNewGroupDomains([]);
       setSelectedHotelIds([]);
       setIsCreating(false);
       await loadData();
     } catch (error) {
       console.error('Error creating group:', error);
-      alert('Grup olusturulurken hata olustu!');
+      alert('Grup oluşturulurken hata oluştu!');
     }
   };
 
@@ -139,13 +154,14 @@ export default function AnasayfaYonetimiPage() {
         await loadData();
       } catch (error) {
         console.error('Error updating group:', error);
-        alert('Grup guncellenirken hata olustu!');
+        alert('Grup güncellenirken hata oluştu!');
       }
     }
   };
 
-  const handleDeleteGroup = async (groupId: string, title: string) => {
-    if (!confirm(`"${title}" grubunu silmek istediginizden emin misiniz?`)) {
+  const handleDeleteGroup = async (groupId: string, title: any) => {
+    const displayTitle = getLocalizedText(title);
+    if (!confirm(`"${displayTitle}" grubunu silmek istediğinizden emin misiniz?`)) {
       return;
     }
 
@@ -196,18 +212,70 @@ export default function AnasayfaYonetimiPage() {
 
         {isCreating && (
           <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
-            <h2 className="text-2xl font-bold mb-4">Yeni Grup Olustur</h2>
-
             <div className="space-y-4 mb-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <Label htmlFor="groupTitleTr">Grup Basligi (Türkçe) 🇹🇷</Label>
+                  <Input
+                    id="groupTitleTr"
+                    value={newGroupTitleTr}
+                    onChange={(e) => setNewGroupTitleTr(e.target.value)}
+                    placeholder="Örn: Akdenizin İncileri"
+                    className="h-11"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="groupTitleEn">Grup Basligi (İngilizce) 🇬🇧</Label>
+                  <Input
+                    id="groupTitleEn"
+                    value={newGroupTitleEn}
+                    onChange={(e) => setNewGroupTitleEn(e.target.value)}
+                    placeholder="Ex: Pearls of Mediterranean"
+                    className="h-11"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="groupTitleEn">Grup Basligi (İngilizce) 🇬🇧</Label>
+                  <Input
+                    id="groupTitleEn"
+                    value={newGroupTitleEn}
+                    onChange={(e) => setNewGroupTitleEn(e.target.value)}
+                    placeholder="Ex: Pearls of Mediterranean"
+                    className="h-11"
+                  />
+                </div>
+              </div>
+
+              {/* DOMAIN SELECTION */}
               <div className="space-y-2">
-                <Label htmlFor="groupTitle">Grup Basligi</Label>
-                <Input
-                  id="groupTitle"
-                  value={newGroupTitle}
-                  onChange={(e) => setNewGroupTitle(e.target.value)}
-                  placeholder="Örn: Akdenizin Incileri"
-                  className="h-11"
-                />
+                <Label>Yayınlanacağı Siteler</Label>
+                <div className="flex gap-6 p-4 border rounded-lg bg-gray-50">
+                  <div className="flex items-center space-x-2">
+                    <Checkbox
+                      id="domain-yeriniayir"
+                      checked={newGroupDomains.includes('yeriniayir.com')}
+                      onCheckedChange={(checked) => {
+                        if (checked) setNewGroupDomains([...newGroupDomains, 'yeriniayir.com']);
+                        else setNewGroupDomains(newGroupDomains.filter(d => d !== 'yeriniayir.com'));
+                      }}
+                    />
+                    <Label htmlFor="domain-yeriniayir" className="font-medium cursor-pointer">YeriniAyir.com</Label>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Checkbox
+                      id="domain-worldandhotels"
+                      checked={newGroupDomains.includes('worldandhotels.com')}
+                      onCheckedChange={(checked) => {
+                        if (checked) setNewGroupDomains([...newGroupDomains, 'worldandhotels.com']);
+                        else setNewGroupDomains(newGroupDomains.filter(d => d !== 'worldandhotels.com'));
+                      }}
+                    />
+                    <Label htmlFor="domain-worldandhotels" className="font-medium cursor-pointer">WorldAndHotels.com</Label>
+                  </div>
+                  <div className="text-xs text-gray-500 self-center ml-auto">
+                    *Hiçbiri seçilmezse her iki sitede de görünür.
+                  </div>
+                </div>
               </div>
 
               <div className="space-y-2">
@@ -254,7 +322,11 @@ export default function AnasayfaYonetimiPage() {
                 variant="outline"
                 onClick={() => {
                   setIsCreating(false);
-                  setNewGroupTitle('');
+                  setNewGroupTitleTr('');
+                  setNewGroupTitleEn('');
+                  setNewGroupTitleTr('');
+                  setNewGroupTitleEn('');
+                  setNewGroupDomains([]);
                   setSelectedHotelIds([]);
                 }}
                 className="flex-1"
@@ -276,8 +348,19 @@ export default function AnasayfaYonetimiPage() {
                 <div className="p-6">
                   <div className="flex items-start justify-between mb-4">
                     <div>
-                      <h3 className="text-2xl font-bold text-gray-900 mb-1">{group.title}</h3>
+                      <h3 className="text-2xl font-bold text-gray-900 mb-1">{getLocalizedText(group.title)}</h3>
                       <p className="text-gray-600">{groupHotels.length} otel</p>
+                      <div className="flex gap-2 mt-2">
+                        {(!group.domains || group.domains.length === 0) ? (
+                          <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Tüm Siteler</span>
+                        ) : (
+                          group.domains.map(d => (
+                            <span key={d} className="text-xs bg-blue-50 text-blue-600 px-2 py-1 rounded border border-blue-100">
+                              {d === 'yeriniayir.com' ? 'YeriniAyir' : 'WorldAndHotels'}
+                            </span>
+                          ))
+                        )}
+                      </div>
                     </div>
                     <div className="flex items-center gap-2">
                       <Button

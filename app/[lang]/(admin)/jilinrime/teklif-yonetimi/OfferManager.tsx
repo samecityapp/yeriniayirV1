@@ -380,9 +380,22 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
                                     <td className="p-4">{offer.region}</td>
                                     <td className="p-4">{offer.price} TL</td>
                                     <td className="p-4">
-                                        <Link href={`/${offer.slug}`} target="_blank" className="flex items-center text-blue-600 hover:underline">
-                                            /{offer.slug} <ExternalLink className="w-3 h-3 ml-1" />
-                                        </Link>
+                                        <div className="flex flex-col gap-1">
+                                            <Link
+                                                href={`https://www.yeriniayir.com/tr/${offer.slug}`}
+                                                target="_blank"
+                                                className="flex items-center text-xs text-blue-600 hover:underline"
+                                            >
+                                                <span className="font-bold w-6">TR:</span> /{offer.slug} <ExternalLink className="w-3 h-3 ml-1" />
+                                            </Link>
+                                            <Link
+                                                href={`https://www.worldandhotels.com/en/${offer.slug}`}
+                                                target="_blank"
+                                                className="flex items-center text-xs text-emerald-600 hover:underline"
+                                            >
+                                                <span className="font-bold w-6">EN:</span> /{offer.slug} <ExternalLink className="w-3 h-3 ml-1" />
+                                            </Link>
+                                        </div>
                                     </td>
                                     <td className="p-4 text-gray-500">
                                         {new Date(offer.created_at).toLocaleDateString('tr-TR')}

@@ -31,7 +31,8 @@
         "latest_articles": "Latest Guides",
         "main_h1": "Explore the Most Exclusive Hotels in Turkey",
         "no_hotels_found": "No Hotels Found Yet",
-        "add_hotels_prompt": "Start by adding hotels from the management panel."
+        "add_hotels_prompt": "Start by adding hotels from the management panel.",
+        "demo_disclaimer": "The hotels listed on the website are demo examples used to demonstrate the functionality of the platform. Real hotels will be listed soon."
     },
     "hotel": {
         "price_from": "Prices from",
@@ -106,5 +107,35 @@
         "error_loading": "An error occurred",
         "error_loading_desc": "There was an error loading the data. Please refresh the page.",
         "no_results_location": "We don’t have any hotel recommendations for this location yet."
+    },
+    "cookie_banner": {
+        "title": "Cookie Policy",
+        "description": "We use necessary cookies for our website to function properly and to improve your experience. You can find details on our <a href=\"/en/privacy-policy\" class=\"text-red-600 font-bold hover:underline decoration-2 underline-offset-4\">Cookie Policy</a> page.",
+        "configure": "Configure",
+        "reject": "Reject",
+        "accept_all": "Accept All",
+        "preferences_title": "Cookie Preferences",
+        "reject_all": "Reject All",
+        "save_preferences": "Save Preferences",
+        "necessary": {
+            "title": "Strictly Necessary Cookies",
+            "description": "Required for the website to function properly. Without these cookies, the site cannot perform its basic features.",
+            "status": "Required"
+        },
+        "analytics": {
+            "title": "Analytics Cookies",
+            "description": "Helps us understand how visitors interact with our website (page views, traffic sources).",
+            "status": "Optional"
+        },
+        "marketing": {
+            "title": "Marketing Cookies",
+            "description": "Used to deliver advertisements more relevant to you and your interests and to measure the effectiveness of our advertising campaigns.",
+            "status": "Optional"
+        },
+        "functional": {
+            "title": "Functional Cookies",
+            "description": "Used to provide enhanced functionality and personalization, such as videos or live chats.",
+            "status": "Optional"
+        }
     }
 }

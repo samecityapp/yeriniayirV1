@@ -1,19 +1,30 @@
 import { Hotel } from './types';
 import { getLocalizedText } from './localization';
+import { absoluteUrl } from './utils';
 
-export function generateHotelSchema(hotel: Hotel) {
-  const hotelName = getLocalizedText(hotel.name);
-  const location = getLocalizedText(hotel.location);
-  const description = getLocalizedText(hotel.description);
-  const about = getLocalizedText(hotel.about);
+export function generateHotelSchema(hotel: Hotel, lang: string = 'tr') {
+  const hotelName = getLocalizedText(hotel.name, lang);
+  const location = getLocalizedText(hotel.location, lang);
+  const description = getLocalizedText(hotel.description, lang);
+  const about = getLocalizedText(hotel.about, lang);
 
   const [city, country] = location.split(',').map(s => s.trim());
+
+  // Determine standard path. TR -> /otel/, EN -> /hotel/ (per rewritten logic)
+  // But strictly internal ID should match the canonical URL.
+  // absoluteUrl handles domain. We just need to give it the correct path prefix relative to lang.
+  // TR: /otel/slug
+  // EN: /hotel/slug
+  const pathPrefix = lang === 'en' ? 'hotel' : 'otel';
+  const url = absoluteUrl(`/${pathPrefix}/${hotel.slug || hotel.id}`, lang);
 
   const schema: Record<string, any> = {
     '@context': 'https://schema.org',
     '@type': 'LodgingBusiness',
+    '@id': url,
+    url: url,
     name: hotelName,
-    description: about || description || `${hotelName} - Konforlu konaklama imkanı`,
+    description: about || description || `${hotelName} - ${lang === 'en' ? 'Comfortable accommodation' : 'Konforlu konaklama imkanı'}`,
     image: hotel.galleryImages && hotel.galleryImages.length > 0
       ? hotel.galleryImages
       : hotel.coverImageUrl
@@ -62,7 +73,7 @@ export function generateHotelSchema(hotel: Hotel) {
   }
 
   if (hotel.website_url) {
-    schema.url = hotel.website_url;
+    schema.sameAs = [hotel.website_url];
   }
 
   if (hotel.google_maps_url) {
@@ -92,37 +103,47 @@ export function generateArticleSchema(article: {
   description: string;
   content: string;
   slug: string;
+  slug_en?: string;
   coverImage?: string;
   createdAt?: string;
   updatedAt?: string;
   author?: { name: string; image?: string };
-}) {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.yeriniayir.com';
+}, lang: string = 'tr') {
+
+  // TR: /rehber/slug
+  // EN: /guide/slug_en
+  const pathPrefix = lang === 'en' ? 'guide' : 'rehber';
+  const slug = (lang === 'en' && article.slug_en) ? article.slug_en : article.slug;
+  const url = absoluteUrl(`/${pathPrefix}/${slug}`, lang);
+  const baseUrl = absoluteUrl('/', lang);
+
+  const orgName = lang === 'en' ? 'World And Hotels' : 'Yerini Ayır';
 
   return {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: article.title,
     description: article.description,
-    image: article.coverImage || `${baseUrl}/og-image.jpg`,
+    image: article.coverImage || `${baseUrl}og-image.jpg`,
     datePublished: article.createdAt || new Date().toISOString(),
     dateModified: article.updatedAt || article.createdAt || new Date().toISOString(),
+    url: url,
     author: {
       '@type': 'Person',
-      name: article.author?.name || 'Yerini Ayır Rehberi',
+      name: article.author?.name || (lang === 'en' ? 'Travel Guide' : 'Yerini Ayır Rehberi'),
       image: article.author?.image ? `${baseUrl}${article.author.image}` : undefined
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Yerini Ayır',
+      name: orgName,
       logo: {
         '@type': 'ImageObject',
-        url: `${baseUrl}/logo.svg`,
+        url: `${baseUrl}logo.svg`,
       },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `${baseUrl}/rehber/${article.slug}`,
+      '@id': url,
     },
   };
 }
@@ -140,43 +161,49 @@ export function generateBreadcrumbSchema(items: { name: string; url: string }[])
   };
 }
 
-export function generateOrganizationSchema() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.yeriniayir.com';
+export function generateOrganizationSchema(lang: string = 'tr') {
+  const baseUrl = absoluteUrl('/', lang);
+  const orgName = lang === 'en' ? 'World And Hotels' : 'Yerini Ayır';
+  const description = lang === 'en'
+    ? "Turkey's most exclusive hotels and travel guide - Best accommodation suggestions"
+    : "Türkiye'nin en seçkin otelleri ve gezi rehberi - Erdem'in kaleminden en iyi konaklama önerileri";
 
   return {
     '@context': 'https://schema.org',
-    '@id': `${baseUrl}/#organization`,
+    '@id': `${baseUrl}#organization`,
     '@type': 'Organization',
-    name: 'Yerini Ayır',
+    name: orgName,
     url: baseUrl,
     logo: {
       '@type': 'ImageObject',
-      url: `${baseUrl}/logo.svg`,
+      url: `${baseUrl}logo.svg`,
       width: '800',
       height: '250'
     },
-    description: "Türkiye'nin en seçkin otelleri ve gezi rehberi - Erdem'in kaleminden en iyi konaklama önerileri",
+    description: description,
     sameAs: [
       // Add social media URLs here if available
     ],
   };
 }
 
-export function generateWebSiteSchema() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.yeriniayir.com';
+export function generateWebSiteSchema(lang: string = 'tr') {
+  const baseUrl = absoluteUrl('/', lang);
+  const siteName = lang === 'en' ? 'World And Hotels' : 'Yerini Ayır';
 
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'Yerini Ayır',
+    name: siteName,
     url: baseUrl,
     potentialAction: {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: `${baseUrl}/search?q={search_term_string}`
+        urlTemplate: `${baseUrl}search?q={search_term_string}`
       },
       'query-input': 'required name=search_term_string'
     }
   };
 }
+

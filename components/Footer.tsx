@@ -8,7 +8,7 @@ import { getDictionary } from '@/lib/dictionary';
 
 export async function Footer({ lang = 'tr' }: { lang?: 'tr' | 'en' }) {
   const currentYear = 2026;
-  const latestArticles = await db.articles.getLatest(3);
+  const latestArticles = await db.articles.getLatest(3, lang);
   const dict = await getDictionary(lang);
 
   return (
@@ -19,7 +19,7 @@ export async function Footer({ lang = 'tr' }: { lang?: 'tr' | 'en' }) {
           {/* Brand Section */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <BrandLogo className="h-8 w-auto aspect-[3.5/1]" />
+              <BrandLogo className="h-8 w-auto aspect-[3.5/1]" lang={lang} />
             </div>
             <p className="text-sm text-gray-500">
               {lang === 'tr'
@@ -93,7 +93,7 @@ export async function Footer({ lang = 'tr' }: { lang?: 'tr' | 'en' }) {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex flex-col items-center md:items-start gap-3">
               <p className="text-sm text-gray-500">
-                &copy; {currentYear} Yerini Ayır. {dict.footer.rights}
+                &copy; {currentYear} {lang === 'en' ? 'WorldandHotels' : 'Yerini Ayır'}. {dict.footer.rights}
               </p>
               <div className="flex flex-wrap justify-center md:justify-start gap-4 text-xs text-gray-500">
                 <Link href={`/${lang}/kullanim-kosullari`} className="hover:text-blue-600 transition-colors">

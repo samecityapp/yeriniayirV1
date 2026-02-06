@@ -135,40 +135,13 @@ export default async function HotelDetailPage({ params }: Props) {
   };
 
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.yeriniayir.com';
-  const hotelSchema = generateHotelSchema(hotel);
+  const hotelSchema = generateHotelSchema(hotel, lang);
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: dict.navigation.home, url: `${baseUrl}/${lang}` },
     { name: dict.navigation.hotels || 'Oteller', url: `${baseUrl}/${lang}/search` },
     { name: getLocalizedText(hotel.location, lang), url: `${baseUrl}/${lang}/search?location=${encodeURIComponent(getLocalizedText(hotel.location, lang))}` },
     { name: getLocalizedText(hotel.name, lang), url: `${baseUrl}/${lang}/otel/${hotel.id}` },
   ]);
-
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Hotel',
-    name: getLocalizedText(hotel.name, lang),
-    description: getLocalizedText(hotel.about, lang) || '',
-    image: hotel.galleryImages && hotel.galleryImages.length > 0 ? hotel.galleryImages[0] : hotel.coverImageUrl,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: getLocalizedText(hotel.location, lang),
-      addressLocality: getLocalizedText(hotel.location, lang).split(',')[1]?.trim() || getLocalizedText(hotel.location, lang),
-      addressCountry: 'TR',
-    },
-    geo: hotel.coordinates ? {
-      '@type': 'GeoCoordinates',
-      latitude: hotel.coordinates.lat,
-      longitude: hotel.coordinates.lng,
-    } : undefined,
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: rating.score,
-      reviewCount: rating.reviewCount,
-      bestRating: 10,
-    },
-    priceRange: '₺₺₺',
-  };
-
 
   const defaultFaqs = [
     {
@@ -464,10 +437,6 @@ export default async function HotelDetailPage({ params }: Props) {
         </div>
       </div>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
     </>
   );
 }

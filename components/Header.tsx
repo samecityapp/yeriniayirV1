@@ -22,18 +22,14 @@ export function Header({ lang: propLang, variant = 'default' }: { lang?: string;
     en: { hotels: 'Hotels', guide: 'Guide', about: 'About Us', backToSite: 'Click to Visit Site' },
   }[lang];
 
-  const switchLanguage = (newLang: string) => {
-    const segments = pathname.split('/');
-    segments[1] = newLang; // segments[0] is empty string
-    router.push(segments.join('/'));
-  };
+
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50 border-b">
       <nav className="container mx-auto px-6 py-3">
         <div className="flex justify-between items-center">
           <Link href={`/${lang}`} className="flex items-center gap-2">
-            <BrandLogo className="h-10 w-auto aspect-[3.5/1]" />
+            <BrandLogo className="h-10 w-auto aspect-[3.5/1]" lang={lang} />
           </Link>
 
           {/* Desktop Menu */}
@@ -43,21 +39,19 @@ export function Header({ lang: propLang, variant = 'default' }: { lang?: string;
               <Link href={`/${lang}/${lang === 'en' ? 'guide' : 'rehber'}`} className="text-gray-600 hover:text-primary transition font-medium">{navLabels.guide}</Link>
               <Link href={`/${lang}/hakkimizda`} className="text-gray-600 hover:text-primary transition font-medium">{navLabels.about}</Link>
 
-              <div className="flex items-center gap-2 pl-4 border-l ml-4 h-6">
-                <button
-                  onClick={() => switchLanguage('tr')}
-                  className={`text-xs font-bold ${lang === 'tr' ? 'text-primary' : 'text-gray-400'}`}
-                >
-                  TR
-                </button>
-                <span className="text-gray-300 text-xs">|</span>
-                <button
-                  onClick={() => switchLanguage('en')}
-                  className={`text-xs font-bold ${lang === 'en' ? 'text-primary' : 'text-gray-400'}`}
-                >
-                  EN
-                </button>
-              </div>
+              <Link
+                href={`/tr${pathname.replace(/^\/(en|tr)/, '')}`}
+                className={`text-xs font-bold transition-colors hover:text-primary p-1 ${lang === 'tr' ? 'text-primary' : 'text-gray-400'}`}
+              >
+                TR
+              </Link>
+              <span className="text-gray-300 text-xs">|</span>
+              <Link
+                href={`/en${pathname.replace(/^\/(en|tr)/, '')}`}
+                className={`text-xs font-bold transition-colors hover:text-primary p-1 ${lang === 'en' ? 'text-primary' : 'text-gray-400'}`}
+              >
+                EN
+              </Link>
             </div>
           ) : (
             /* Offer Page Variant - CTA Only */
@@ -74,12 +68,12 @@ export function Header({ lang: propLang, variant = 'default' }: { lang?: string;
           {/* Mobile Menu Button - Hide for Offer Variant */}
           {variant === 'default' && (
             <div className="flex items-center gap-4 md:hidden">
-              <button
-                onClick={() => switchLanguage(lang === 'tr' ? 'en' : 'tr')}
+              <Link
+                href={`/${lang === 'tr' ? 'en' : 'tr'}${pathname.replace(/^\/(en|tr)/, '')}`}
                 className="p-2 text-gray-500 hover:text-primary"
               >
                 <Globe size={20} />
-              </button>
+              </Link>
               <button
                 className="p-2 text-gray-600"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -118,6 +112,6 @@ export function Header({ lang: propLang, variant = 'default' }: { lang?: string;
           </div>
         )}
       </nav>
-    </header>
+    </header >
   );
 }

@@ -325,7 +325,7 @@ export default function SearchFilters({ lang = 'tr', dict }: SearchFiltersProps)
           </div>
         )}
 
-        {priceTags.length > 0 && (
+        {lang !== 'en' && priceTags.length > 0 && (
           <div className="flex items-center justify-center gap-2">
             {priceTags.slice(0, 3).map((pt) => (
               <Link

@@ -30,7 +30,8 @@
     "featured_hotels": "Öne Çıkan Oteller",
     "latest_articles": "Son Eklenen Rehberler",
     "no_hotels_found": "Henüz Otel Bulunamadı",
-    "add_hotels_prompt": "Yönetim panelinden otel ekleyerek başlayın."
+    "add_hotels_prompt": "Yönetim panelinden otel ekleyerek başlayın.",
+    "demo_disclaimer": "Websitesinde yer alan oteller, platformun işleyişini göstermek amacıyla kullanılan demo örneklerdir. Gerçek oteller yakında listelenecektir."
   },
   "hotel": {
     "price_from": "Gecelik Başlangıç Fiyatı",
@@ -102,5 +103,35 @@
     "error_loading": "Bir hata oluştu",
     "error_loading_desc": "Veriler yüklenirken bir hata oluştu. Lütfen sayfayı yenileyin.",
     "no_results_location": "Bu konum için henüz otel önerimiz yok."
+  },
+  "cookie_banner": {
+    "title": "Çerez Politikası",
+    "description": "Sitemizin doğru şekilde çalışması ve deneyiminizi iyileştirmek için gerekli çerezleri kullanıyoruz. Detaylara <a href=\"/tr/gizlilik-politikasi\" class=\"text-red-600 font-bold hover:underline decoration-2 underline-offset-4\">Çerez Politikası</a> sayfamızdan ulaşabilirsiniz.",
+    "configure": "Yapılandır",
+    "reject": "Reddet",
+    "accept_all": "Tümünü Kabul Et",
+    "preferences_title": "Çerez Tercihleri",
+    "reject_all": "Tümünü Reddet",
+    "save_preferences": "Tercihleri Kaydet",
+    "necessary": {
+      "title": "Zorunlu Çerezler",
+      "description": "Web sitesinin düzgün çalışması için gereklidir. Bu çerezler olmadan site temel özelliklerini yerine getiremez.",
+      "status": "Zorunlu"
+    },
+    "analytics": {
+      "title": "Analitik Çerezler",
+      "description": "Ziyaretçilerin web sitemizle nasıl etkileşime girdiğini anlamamıza (sayfa görüntülemeleri, trafik kaynakları) yardımcı olur.",
+      "status": "İsteğe Bağlı"
+    },
+    "marketing": {
+      "title": "Pazarlama Çerezleri",
+      "description": "İlgi alanlarınıza göre size daha uygun reklamlar sunmak ve reklam kampanyalarımızın performansını ölçmek için kullanılır.",
+      "status": "İsteğe Bağlı"
+    },
+    "functional": {
+      "title": "İşlevsel Çerezler",
+      "description": "Videolar veya canlı sohbetler gibi gelişmiş işlevsellik ve kişiselleştirme sağlamak için kullanılır.",
+      "status": "İsteğe Bağlı"
+    }
   }
 }

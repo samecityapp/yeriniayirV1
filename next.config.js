@@ -109,6 +109,10 @@ const nextConfig = {
         source: '/en/guide/:slug*',
         destination: '/en/rehber/:slug*',
       },
+      {
+        source: '/en/hotel/:slug*',
+        destination: '/en/otel/:slug*',
+      },
     ];
   },
 };

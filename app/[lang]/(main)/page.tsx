@@ -12,15 +12,19 @@ import { Hotel } from '@/lib/types';
 
 import { getDictionary } from '@/lib/dictionary';
 import { getLocalizedText } from '@/lib/localization';
+import { absoluteUrl } from '@/lib/utils';
+import { headers } from 'next/headers';
 
-export const revalidate = 60;
-export const dynamic = 'force-static';
+// Remove force-static to allow headers() to work
+// export const revalidate = 60; 
+// export const dynamic = 'force-static'; 
 
-async function HotelGroups({ lang }: { lang: 'tr' | 'en' }) {
+async function HotelGroups({ lang, domain }: { lang: 'tr' | 'en', domain?: string }) {
   const dict = await getDictionary(lang);
 
   try {
-    const groups = await db.groups.getPublishedWithHotels();
+    // Pass the current domain to filter groups
+    const groups = await db.groups.getPublishedWithHotels(domain);
 
     if (!groups || groups.length === 0) {
       return (
@@ -111,23 +115,49 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   const lang = params.lang as 'tr' | 'en' || 'tr';
   const dict = await getDictionary(lang);
 
+  // Using new absoluteUrl helper that handles domains automatically
+  const canonical = absoluteUrl('/', lang);
+  const trUrl = absoluteUrl('/', 'tr');
+  const enUrl = absoluteUrl('/', 'en');
+
   return {
     title: dict.seo.home.title,
     description: dict.seo.home.description,
     alternates: {
-      canonical: `https://www.yeriniayir.com${lang === 'tr' ? '' : `/${lang}`}`,
+      canonical: canonical,
       languages: {
-        'tr': 'https://www.yeriniayir.com',
-        'en': 'https://www.yeriniayir.com/en',
+        'tr': trUrl,
+        'en': enUrl,
+        // x-default typically points to the international version for multi-domain setups
+        'x-default': enUrl
       },
     },
   };
 }
 
+
+
 export default async function HomePage({ params }: { params: { lang: string } }) {
   const lang = params.lang as 'tr' | 'en' || 'tr';
   const dict = await getDictionary(lang);
   const organizationSchema = generateOrganizationSchema();
+
+  // Detect domain
+  const headersList = headers();
+  const host = headersList.get('host') || '';
+  let currentDomain = 'yeriniayir.com'; // default
+
+  if (host.includes('worldandhotels.com')) {
+    currentDomain = 'worldandhotels.com';
+  } else if (host.includes('yeriniayir.com')) {
+    currentDomain = 'yeriniayir.com';
+  } else if (host.includes('localhost')) {
+    // For local testing: map language to domain
+    // This allows testing WorldAndHotels logic by visiting /en
+    currentDomain = lang === 'en' ? 'worldandhotels.com' : 'yeriniayir.com';
+  }
+
+  console.log(`[HomePage] Host: ${host}, Lang: ${lang} -> Detected Domain: ${currentDomain}`);
 
   return (
     <>
@@ -140,7 +170,7 @@ export default async function HomePage({ params }: { params: { lang: string } })
           </h1>
 
           <p className="text-[10px] text-gray-400 mt-[-1rem] mb-6 max-w-2xl mx-auto px-4">
-            Websitesinde yer alan oteller, platformun işleyişini göstermek amacıyla kullanılan demo örneklerdir. Gerçek oteller yakında listelenecektir..
+            {dict.home.demo_disclaimer}
           </p>
 
           <Suspense fallback={<div className="h-40" />}>
@@ -149,7 +179,7 @@ export default async function HomePage({ params }: { params: { lang: string } })
         </div>
 
         <Suspense fallback={<HomePageSkeleton />}>
-          <HotelGroups lang={lang} />
+          <HotelGroups lang={lang} domain={currentDomain} />
         </Suspense>
       </main>
     </>

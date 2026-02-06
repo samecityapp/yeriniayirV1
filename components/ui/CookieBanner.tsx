@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Cookie, Settings, ShieldCheck, ChevronLeft, Check, X, Info } from 'lucide-react';
+import { Cookie, Settings, ShieldCheck, ChevronLeft, Check, X } from 'lucide-react';
 
 type CookiePreferences = {
   necessary: boolean;
@@ -19,7 +19,7 @@ const DEFAULT_PREFERENCES: CookiePreferences = {
   performance: false,
 };
 
-export function CookieBanner() {
+export function CookieBanner({ dict }: { dict: any }) {
   const [isVisible, setIsVisible] = useState(false);
   const [view, setView] = useState<'banner' | 'settings'>('banner');
   const [preferences, setPreferences] = useState<CookiePreferences>(DEFAULT_PREFERENCES);
@@ -99,13 +99,13 @@ export function CookieBanner() {
               </div>
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-1">
-                  <h3 className="text-xl font-extrabold text-gray-900 tracking-tight">Çerez Politikası</h3>
+                  <h3 className="text-xl font-extrabold text-gray-900 tracking-tight">{dict.cookie_banner.title}</h3>
                   <ShieldCheck className="w-4 h-4 text-emerald-500" />
                 </div>
-                <p className="text-[15px] text-gray-600 leading-relaxed font-medium">
-                  Sitemizin doğru şekilde çalışması ve deneyiminizi iyileştirmek için gerekli çerezleri kullanıyoruz.
-                  Detaylara <a href="/gizlilik-politikasi" className="text-red-600 font-bold hover:underline decoration-2 underline-offset-4">Çerez Politikası</a> sayfamızdan ulaşabilirsiniz.
-                </p>
+                <p
+                  className="text-[15px] text-gray-600 leading-relaxed font-medium"
+                  dangerouslySetInnerHTML={{ __html: dict.cookie_banner.description }}
+                />
               </div>
             </div>
 
@@ -115,21 +115,21 @@ export function CookieBanner() {
                 className="w-full sm:w-auto flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-bold text-gray-700 bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-2xl transition-all active:scale-95"
               >
                 <Settings className="w-4 h-4" />
-                Yapılandır
+                {dict.cookie_banner.configure}
               </button>
               <button
                 onClick={handleRejectAll}
                 className="w-full sm:w-auto flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-bold text-gray-700 bg-gray-100/50 hover:bg-gray-100 border border-gray-200 rounded-2xl transition-all active:scale-95"
               >
                 <X className="w-4 h-4" />
-                Reddet
+                {dict.cookie_banner.reject}
               </button>
               <button
                 onClick={handleAcceptAll}
                 className="w-full sm:w-auto flex-[1.5] inline-flex items-center justify-center gap-2 px-8 py-3.5 text-sm font-extrabold text-white bg-red-600 hover:bg-red-700 rounded-2xl transition-all shadow-lg shadow-red-200 active:scale-95"
               >
                 <Check className="w-5 h-5" />
-                Tümünü Kabul Et
+                {dict.cookie_banner.accept_all}
               </button>
             </div>
           </div>
@@ -142,40 +142,40 @@ export function CookieBanner() {
               >
                 <ChevronLeft className="w-6 h-6 text-gray-500 group-hover:text-red-600" />
               </button>
-              <h3 className="text-lg font-extrabold text-gray-900 tracking-tight">Çerez Tercihleri</h3>
+              <h3 className="text-lg font-extrabold text-gray-900 tracking-tight">{dict.cookie_banner.preferences_title}</h3>
               <div className="w-10"></div> {/* Spacer */}
             </div>
 
             <div className="overflow-y-auto pr-2 space-y-4 custom-scrollbar">
               <CookieCategorySection
-                title="Zorunlu Çerezler"
-                description="Web sitesinin düzgün çalışması için gereklidir. Bu çerezler olmadan site temel özelliklerini yerine getiremez."
-                status="Zorunlu"
+                title={dict.cookie_banner.necessary.title}
+                description={dict.cookie_banner.necessary.description}
+                status={dict.cookie_banner.necessary.status}
                 statusColor="bg-emerald-100 text-emerald-700"
                 checked={preferences.necessary}
                 disabled={true}
                 onChange={() => { }}
               />
               <CookieCategorySection
-                title="Analitik Çerezler"
-                description="Ziyaretçilerin web sitemizle nasıl etkileşime girdiğini anlamamıza (sayfa görüntülemeleri, trafik kaynakları) yardımcı olur."
-                status="İsteğe Bağlı"
+                title={dict.cookie_banner.analytics.title}
+                description={dict.cookie_banner.analytics.description}
+                status={dict.cookie_banner.analytics.status}
                 statusColor="bg-blue-100 text-blue-700"
                 checked={preferences.analytics}
                 onChange={() => togglePreference('analytics')}
               />
               <CookieCategorySection
-                title="Pazarlama Çerezleri"
-                description="İlgi alanlarınıza göre size daha uygun reklamlar sunmak ve reklam kampanyalarımızın performansını ölçmek için kullanılır."
-                status="İsteğe Bağlı"
+                title={dict.cookie_banner.marketing.title}
+                description={dict.cookie_banner.marketing.description}
+                status={dict.cookie_banner.marketing.status}
                 statusColor="bg-blue-100 text-blue-700"
                 checked={preferences.marketing}
                 onChange={() => togglePreference('marketing')}
               />
               <CookieCategorySection
-                title="İşlevsel Çerezler"
-                description="Videolar veya canlı sohbetler gibi gelişmiş işlevsellik ve kişiselleştirme sağlamak için kullanılır."
-                status="İsteğe Bağlı"
+                title={dict.cookie_banner.functional.title}
+                description={dict.cookie_banner.functional.description}
+                status={dict.cookie_banner.functional.status}
                 statusColor="bg-blue-100 text-blue-700"
                 checked={preferences.functional}
                 onChange={() => togglePreference('functional')}
@@ -187,13 +187,13 @@ export function CookieBanner() {
                 onClick={handleRejectAll}
                 className="w-full sm:w-auto flex-1 px-6 py-3.5 text-sm font-bold text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-2xl transition-all"
               >
-                Tümünü Reddet
+                {dict.cookie_banner.reject_all}
               </button>
               <button
                 onClick={handleSavePreferences}
                 className="w-full sm:w-auto flex-[1.5] px-8 py-3.5 text-sm font-extrabold text-white bg-red-600 hover:bg-red-700 rounded-2xl transition-all shadow-lg shadow-red-200"
               >
-                Tercihleri Kaydet
+                {dict.cookie_banner.save_preferences}
               </button>
             </div>
           </div>

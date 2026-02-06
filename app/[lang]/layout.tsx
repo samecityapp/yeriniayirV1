@@ -10,62 +10,74 @@ const inter = Inter({
   preload: true,
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.yeriniayir.com'),
-  title: {
-    default: 'Yerini Ayır',
-    template: '%s | Yerini Ayır',
-  },
-  description: "Influencer gücüyle desteklenen, sadece en seçkin otellerin platformu",
-  keywords: ['otel', 'tatil', 'konaklama', 'türkiye otelleri', 'otel rehberi', 'otel önerileri'],
-  authors: [{ name: 'Yerini Ayır' }],
-  creator: 'Yerini Ayır',
-  publisher: 'Yerini Ayır',
-  manifest: '/manifest.json',
+// 13: export const metadata: Metadata = {
+// ...
+// 70: };
 
-  openGraph: {
-    type: 'website',
-    locale: 'tr_TR',
-    siteName: 'Yerini Ayır',
-  },
-  twitter: {
-    card: 'summary_large_image',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  viewportFit: "cover",
+  themeColor: "#10b981",
+};
+
+export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
+  const lang = params.lang as 'tr' | 'en' || 'tr';
+  const siteName = lang === 'en' ? 'WorldandHotels' : 'Yerini Ayır';
+
+  return {
+    // DOMAIN LOGIC: metadataBase needs a valid URL.
+    // We can set it to the primary domain since absoluteUrl handles the rest.
+    metadataBase: new URL('https://www.yeriniayir.com'),
+    title: {
+      default: siteName,
+      template: `%s | ${siteName}`,
+    },
+    description: "Influencer gücüyle desteklenen, sadece en seçkin otellerin platformu",
+    keywords: ['otel', 'tatil', 'konaklama', 'türkiye otelleri', 'otel rehberi', 'otel önerileri'],
+    authors: [{ name: siteName }],
+    creator: siteName,
+    publisher: siteName,
+    manifest: '/manifest.json',
+
+    openGraph: {
+      type: 'website',
+      locale: lang === 'en' ? 'en_US' : 'tr_TR',
+      siteName: siteName,
+    },
+    twitter: {
+      card: 'summary_large_image',
+    },
+    robots: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
     },
-  },
-  verification: {
-    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '',
-    yandex: process.env.NEXT_PUBLIC_YANDEX_VERIFICATION || '',
-  },
-  alternates: {
-    types: {
-      'application/rss+xml': [
-        { url: '/feed.xml', title: 'Yerini Ayır Gezi Rehberi RSS Feed' },
-      ],
+    verification: {
+      google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '',
+      yandex: process.env.NEXT_PUBLIC_YANDEX_VERIFICATION || '',
     },
-  },
-  other: {
-    "apple-mobile-web-app-capable": "yes",
-    "apple-mobile-web-app-status-bar-style": "black-translucent",
-  },
-  themeColor: "#10b981",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-    userScalable: false,
-    viewportFit: "cover",
-  },
-};
+    alternates: {
+      types: {
+        'application/rss+xml': [
+          { url: '/feed.xml', title: `${siteName} Gezi Rehberi RSS Feed` },
+        ],
+      },
+    },
+    other: {
+      "apple-mobile-web-app-capable": "yes",
+      "apple-mobile-web-app-status-bar-style": "black-translucent",
+    },
+  };
+}
 
 import Script from 'next/script';
 
