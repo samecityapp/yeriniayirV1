@@ -57,7 +57,8 @@ const nextConfig = {
           },
           {
             key: 'Access-Control-Allow-Origin',
-            value: '*',
+            // Update this to your specific domains in production
+            value: 'https://yeriniayir.com',
           },
           {
             key: 'Access-Control-Allow-Methods',
@@ -69,7 +70,28 @@ const nextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: "frame-ancestors 'self' https://*.bolt.new https://bolt.new https://*.webcontainer-api.io https://*.local-credentialless.webcontainer-api.io;",
+            // Added report-only or stricter directives. 
+            // Note: 'unsafe-inline' is often needed for Next.js in some configs, 
+            // but we try to restrict it. 
+            // Added img-src and others to allow Supabase/Unsplash/etc.
+            // Added 'https://www.clarity.ms' to script-src and connect-src for Microsoft Clarity.
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.google-analytics.com https://*.googletagmanager.com https://www.clarity.ms https://c.bing.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: blob:; font-src 'self' data:; connect-src 'self' https://*.supabase.co https://*.google-analytics.com https://www.clarity.ms https://c.bing.com; frame-ancestors 'none';",
+          },
+          {
+            key: 'X-DNS-Prefetch-Control',
+            value: 'on',
+          },
+          {
+            key: 'Strict-Transport-Security',
+            value: 'max-age=63072000; includeSubDomains; preload',
+          },
+          {
+            key: 'X-XSS-Protection',
+            value: '1; mode=block',
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'DENY', // Prevent clickjacking
           },
           {
             key: 'X-Content-Type-Options',
@@ -80,20 +102,8 @@ const nextConfig = {
             value: 'strict-origin-when-cross-origin',
           },
           {
-            key: 'X-Frame-Options',
-            value: 'DENY',
-          },
-          {
-            key: 'Strict-Transport-Security',
-            value: 'max-age=31536000; includeSubDomains; preload',
-          },
-          {
-            key: 'X-XSS-Protection',
-            value: '1; mode=block',
-          },
-          {
             key: 'Permissions-Policy',
-            value: 'camera=(), microphone=(), geolocation=(), interest-cohort=()',
+            value: 'camera=(), microphone=(), geolocation=(), browsing-topics=()',
           },
         ],
       },
