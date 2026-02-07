@@ -384,13 +384,21 @@ export const db = {
     },
 
     async setHotels(groupId: string, hotelIds: string[]): Promise<void> {
-      await supabase
+      const { error: deleteError } = await supabase
         .from('group_hotels')
         .delete()
         .eq('group_id', groupId);
 
+      if (deleteError) {
+        console.error('Error deleting group_hotels:', deleteError);
+        throw deleteError;
+      }
+
       if (hotelIds.length > 0) {
-        const inserts = hotelIds.map((hotelId, index) => ({
+        // Ensure unique hotelIds
+        const uniqueHotelIds = Array.from(new Set(hotelIds));
+
+        const inserts = uniqueHotelIds.map((hotelId, index) => ({
           group_id: groupId,
           hotel_id: hotelId,
           order_index: index

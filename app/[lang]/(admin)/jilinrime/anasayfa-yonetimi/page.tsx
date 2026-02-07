@@ -55,6 +55,7 @@ export default function AnasayfaYonetimiPage() {
   const [newGroupDomains, setNewGroupDomains] = useState<string[]>([]); // Default empty = all
   const [isCreating, setIsCreating] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [editingGroupId, setEditingGroupId] = useState<string | null>(null);
 
   useEffect(() => {
     loadData();
@@ -127,23 +128,52 @@ export default function AnasayfaYonetimiPage() {
         en: newGroupTitleEn.trim()
       });
 
-      await db.groups.create({
-        title: titleJson, // Save as JSON string
-        isPublished: false,
-        hotelIds: [],
-        domains: newGroupDomains
-      }, selectedHotelIds);
+      if (editingGroupId) {
+        // UPDATE EXISTING GROUP
+        await db.groups.update(editingGroupId, {
+          title: titleJson,
+          domains: newGroupDomains
+        });
+        // Update hotels relationships
+        await db.groups.setHotels(editingGroupId, selectedHotelIds);
+      } else {
+        // CREATE NEW GROUP
+        await db.groups.create({
+          title: titleJson, // Save as JSON string
+          isPublished: false,
+          hotelIds: [],
+          domains: newGroupDomains
+        }, selectedHotelIds);
+      }
 
-      setNewGroupTitleTr('');
-      setNewGroupTitleEn('');
-      setNewGroupDomains([]);
-      setSelectedHotelIds([]);
-      setIsCreating(false);
+      resetForm();
       await loadData();
     } catch (error) {
-      console.error('Error creating group:', error);
-      alert('Grup oluşturulurken hata oluştu!');
+      console.error('Error saving group:', error);
+      alert('Grup kaydedilirken hata oluştu!');
     }
+  };
+
+  const handleEditGroup = (group: any) => {
+    const title = tryParseLocalized(group.title);
+    setNewGroupTitleTr(title.tr);
+    setNewGroupTitleEn(title.en);
+    setNewGroupDomains(group.domains || []);
+    setSelectedHotelIds(group.hotelIds || []);
+    setEditingGroupId(group.id);
+    setIsCreating(true);
+
+    // Scroll to top to see key form
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const resetForm = () => {
+    setNewGroupTitleTr('');
+    setNewGroupTitleEn('');
+    setNewGroupDomains([]);
+    setSelectedHotelIds([]);
+    setEditingGroupId(null);
+    setIsCreating(false);
   };
 
   const handleTogglePublish = async (groupId: string) => {
@@ -203,19 +233,25 @@ export default function AnasayfaYonetimiPage() {
     <div className="min-h-screen bg-gray-50 py-8">
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="flex items-center justify-between mb-8">
-          <h1 className="text-4xl font-bold text-gray-900">Ana Sayfa Gruplari</h1>
-          <Button onClick={() => setIsCreating(!isCreating)} size="lg">
+          <h1 className="text-4xl font-bold text-gray-900">Ana Sayfa Grupları</h1>
+          <Button onClick={() => { resetForm(); setIsCreating(!isCreating); }} size="lg">
             <Plus className="mr-2" size={18} />
-            Yeni Grup Olustur
+            Yeni Grup Oluştur
           </Button>
         </div>
 
         {isCreating && (
           <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+            <div className="flex justify-between items-center mb-6">
+              <h2 className="text-xl font-semibold text-gray-800">
+                {editingGroupId ? 'Grubu Düzenle' : 'Yeni Grup Oluştur'}
+              </h2>
+            </div>
+
             <div className="space-y-4 mb-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <Label htmlFor="groupTitleTr">Grup Basligi (Türkçe) 🇹🇷</Label>
+                  <Label htmlFor="groupTitleTr">Grup Başlığı (Türkçe) 🇹🇷</Label>
                   <Input
                     id="groupTitleTr"
                     value={newGroupTitleTr}
@@ -225,17 +261,7 @@ export default function AnasayfaYonetimiPage() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="groupTitleEn">Grup Basligi (İngilizce) 🇬🇧</Label>
-                  <Input
-                    id="groupTitleEn"
-                    value={newGroupTitleEn}
-                    onChange={(e) => setNewGroupTitleEn(e.target.value)}
-                    placeholder="Ex: Pearls of Mediterranean"
-                    className="h-11"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="groupTitleEn">Grup Basligi (İngilizce) 🇬🇧</Label>
+                  <Label htmlFor="groupTitleEn">Grup Başlığı (İngilizce) 🇬🇧</Label>
                   <Input
                     id="groupTitleEn"
                     value={newGroupTitleEn}
@@ -279,7 +305,7 @@ export default function AnasayfaYonetimiPage() {
               </div>
 
               <div className="space-y-2">
-                <Label>Oteller Secin (Maksimum 4 - Secili: {selectedHotelIds.length}/4)</Label>
+                <Label>Otelleri Seçin (Maksimum 4 - Seçili: {selectedHotelIds.length}/4)</Label>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-h-96 overflow-y-auto p-2">
                   {hotels.map(hotel => (
                     <div
@@ -316,22 +342,14 @@ export default function AnasayfaYonetimiPage() {
             <div className="flex gap-3">
               <Button onClick={handleCreateGroup} className="flex-1">
                 <Save className="mr-2" size={18} />
-                Grubu Kaydet
+                {editingGroupId ? 'Grubu Güncelle' : 'Grubu Kaydet'}
               </Button>
               <Button
                 variant="outline"
-                onClick={() => {
-                  setIsCreating(false);
-                  setNewGroupTitleTr('');
-                  setNewGroupTitleEn('');
-                  setNewGroupTitleTr('');
-                  setNewGroupTitleEn('');
-                  setNewGroupDomains([]);
-                  setSelectedHotelIds([]);
-                }}
+                onClick={resetForm}
                 className="flex-1"
               >
-                Iptal
+                İptal
               </Button>
             </div>
           </div>
@@ -340,10 +358,12 @@ export default function AnasayfaYonetimiPage() {
         <div className="space-y-4">
           {groups.map(group => {
             const groupHotels = getHotelsByIds(group.hotelIds);
+            const isEditing = editingGroupId === group.id;
+
             return (
               <div
                 key={group.id}
-                className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden"
+                className={`bg-white rounded-xl shadow-sm border overflow-hidden transition-colors ${isEditing ? 'border-blue-500 ring-2 ring-blue-200' : 'border-gray-200'}`}
               >
                 <div className="p-6">
                   <div className="flex items-start justify-between mb-4">
@@ -364,6 +384,15 @@ export default function AnasayfaYonetimiPage() {
                     </div>
                     <div className="flex items-center gap-2">
                       <Button
+                        variant="outline"
+                        size="sm"
+                        onClick={() => handleEditGroup(group)}
+                        disabled={isCreating && editingGroupId !== group.id}
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>
+                        Düzenle
+                      </Button>
+                      <Button
                         variant={group.isPublished ? 'default' : 'outline'}
                         size="sm"
                         onClick={() => handleTogglePublish(group.id)}
@@ -371,7 +400,7 @@ export default function AnasayfaYonetimiPage() {
                         {group.isPublished ? (
                           <>
                             <Eye className="mr-2" size={16} />
-                            Yayinda
+                            Yayında
                           </>
                         ) : (
                           <>
@@ -421,10 +450,10 @@ export default function AnasayfaYonetimiPage() {
 
           {groups.length === 0 && !isCreating && (
             <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-12 text-center">
-              <p className="text-gray-500 text-lg mb-4">Henuz grup olusturulmamis</p>
+              <p className="text-gray-500 text-lg mb-4">Henüz grup oluşturulmamış</p>
               <Button onClick={() => setIsCreating(true)}>
                 <Plus className="mr-2" size={18} />
-                Ilk Grubu Olustur
+                İlk Grubu Oluştur
               </Button>
             </div>
           )}
