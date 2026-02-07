@@ -40,8 +40,9 @@ export async function middleware(request: NextRequest) {
     }
 
     // RATE LIMITING LOGIC (Skip for localhost to avoid dev friction)
+    // OPTIMIZATION: Only limit API routes and Admin sections to prevent latency on normal page navigation
     try {
-        if (process.env.NODE_ENV === 'production' && !pathname.startsWith('/api')) {
+        if (process.env.NODE_ENV === 'production' && (pathname.startsWith('/api') || pathname.includes('/jilinrime'))) {
             // We limit page views here. API routes can have their own limits if needed.
             const { success, pending, limit, reset, remaining } = await ratelimit.limit(
                 `ratelimit_middleware_${ip}`
