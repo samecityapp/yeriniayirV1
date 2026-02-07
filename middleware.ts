@@ -22,24 +22,25 @@ const ratelimit = new Ratelimit({
 });
 
 export async function middleware(request: NextRequest) {
+
+    const pathname = request.nextUrl.pathname;
+    const hostname = request.headers.get('host') || '';
+    const ip = request.ip || '127.0.0.1';
+
+    // 1. CRITICAL: Skip all internal Next.js paths and static files
+    if (
+        pathname.startsWith('/_next') ||
+        pathname.startsWith('/static') ||
+        pathname.includes('.') ||
+        pathname === '/favicon.ico' ||
+        pathname === '/robots.txt' ||
+        pathname === '/sitemap.xml'
+    ) {
+        return NextResponse.next();
+    }
+
+    // RATE LIMITING LOGIC (Skip for localhost to avoid dev friction)
     try {
-        const pathname = request.nextUrl.pathname;
-        const hostname = request.headers.get('host') || '';
-        const ip = request.ip || '127.0.0.1';
-
-        // 1. CRITICAL: Skip all internal Next.js paths and static files
-        if (
-            pathname.startsWith('/_next') ||
-            pathname.startsWith('/static') ||
-            pathname.includes('.') ||
-            pathname === '/favicon.ico' ||
-            pathname === '/robots.txt' ||
-            pathname === '/sitemap.xml'
-        ) {
-            return NextResponse.next();
-        }
-
-        // RATE LIMITING LOGIC (Skip for localhost to avoid dev friction)
         if (process.env.NODE_ENV === 'production' && !pathname.startsWith('/api')) {
             // We limit page views here. API routes can have their own limits if needed.
             const { success, pending, limit, reset, remaining } = await ratelimit.limit(
@@ -58,26 +59,22 @@ export async function middleware(request: NextRequest) {
                 });
             }
         }
+    } catch (error) {
+        console.error('Rate Limiting Error (Fail Open):', error);
+        // Continue execution if Redis/RateLimit fails
+    }
 
-        // 5. ADMIN PROTECTION (Basic Auth) - MOVED UP
-        // This must run before locale rewrites to ensure it catches the path
-        if (pathname.includes('/jilinrime')) {
-            const basicAuth = request.headers.get('authorization');
+    // 5. ADMIN PROTECTION (Basic Auth) - MOVED UP
+    // This must run before locale rewrites to ensure it catches the path
+    if (pathname.includes('/jilinrime')) {
+        const basicAuth = request.headers.get('authorization');
 
-            if (basicAuth) {
-                const authValue = basicAuth.split(' ')[1];
-                const [user, pwd] = atob(authValue).split(':');
+        if (basicAuth) {
+            const authValue = basicAuth.split(' ')[1];
+            const [user, pwd] = atob(authValue).split(':');
 
-                if (user === 'admin' && pwd === (process.env.ADMIN_PASSWORD || 'Otel2024!')) {
-                    // Valid credentials, proceed
-                } else {
-                    return new NextResponse('Auth Required', {
-                        status: 401,
-                        headers: {
-                            'WWW-Authenticate': 'Basic realm="Secure Area"',
-                        },
-                    });
-                }
+            if (user === 'admin' && pwd === (process.env.ADMIN_PASSWORD || 'Otel2024!')) {
+                // Valid credentials, proceed
             } else {
                 return new NextResponse('Auth Required', {
                     status: 401,
@@ -86,66 +83,70 @@ export async function middleware(request: NextRequest) {
                     },
                 });
             }
+        } else {
+            return new NextResponse('Auth Required', {
+                status: 401,
+                headers: {
+                    'WWW-Authenticate': 'Basic realm="Secure Area"',
+                },
+            });
         }
-
-        // 2. Domain-Based Routing Configuration
-        const DOMAIN_TR = 'yeriniayir.com';
-        const DOMAIN_EN = 'worldandhotels.com';
-
-        // Development / Vercel Preview support
-        const isDev = hostname.includes('localhost') || hostname.endsWith('.vercel.app');
-
-        // Determine which domain we are on
-        // Check for both bare domain and www subdomain
-        const isTurkishDomain = hostname === DOMAIN_TR || hostname === `www.${DOMAIN_TR}` || (isDev && !request.cookies.get('NEXT_LOCALE')?.value);
-        const isEnglishDomain = hostname === DOMAIN_EN || hostname === `www.${DOMAIN_EN}`;
-
-        // 3. Locale Logic
-        const pathnameIsMissingLocale = locales.every(
-            (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
-        );
-
-        // ANALYZE CURRENT PATH LOCALE
-        const urlLocale = locales.find(
-            (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
-        );
-
-        // --- CASE A: WORLDANDHOTELS.COM (English Domain) ---
-        if (isEnglishDomain) {
-            if (urlLocale === 'tr') {
-                const newUrl = new URL(pathname, `https://${DOMAIN_TR}`);
-                return NextResponse.redirect(newUrl);
-            }
-
-            if (pathnameIsMissingLocale) {
-                return NextResponse.rewrite(
-                    new URL(`/en${pathname}`, request.url)
-                );
-            }
-        }
-
-        // --- CASE B: YERINIAYIR.COM (Turkish Domain) ---
-        else {
-            if (urlLocale === 'en' && !isDev) {
-                const newUrl = new URL(pathname, `https://${DOMAIN_EN}`);
-                return NextResponse.redirect(newUrl);
-            }
-
-            if (pathnameIsMissingLocale) {
-                return NextResponse.rewrite(
-                    new URL(`/tr${pathname}`, request.url)
-                );
-            }
-        }
-
-        // 4. Fallback for other languages or mixed states
-        return NextResponse.next();
-
-    } catch (error) {
-        console.error('Middleware Processing Error:', error);
-        // Fail open to prevent site downtime
-        return NextResponse.next();
     }
+
+    // 2. Domain-Based Routing Configuration
+    const DOMAIN_TR = 'yeriniayir.com';
+    const DOMAIN_EN = 'worldandhotels.com';
+
+    // Development / Vercel Preview support
+    const isDev = hostname.includes('localhost') || hostname.endsWith('.vercel.app');
+
+    // Determine which domain we are on
+    // Check for both bare domain and www subdomain
+    const isTurkishDomain = hostname === DOMAIN_TR || hostname === `www.${DOMAIN_TR}` || (isDev && !request.cookies.get('NEXT_LOCALE')?.value);
+    const isEnglishDomain = hostname === DOMAIN_EN || hostname === `www.${DOMAIN_EN}`;
+
+    // 3. Locale Logic
+    const pathnameIsMissingLocale = locales.every(
+        (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
+    );
+
+    // ANALYZE CURRENT PATH LOCALE
+    const urlLocale = locales.find(
+        (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+    );
+
+    // --- CASE A: WORLDANDHOTELS.COM (English Domain) ---
+    if (isEnglishDomain) {
+        if (urlLocale === 'tr') {
+            const newUrl = new URL(pathname, `https://${DOMAIN_TR}`);
+            return NextResponse.redirect(newUrl);
+        }
+
+        if (pathnameIsMissingLocale) {
+            return NextResponse.rewrite(
+                new URL(`/en${pathname}`, request.url)
+            );
+        }
+    }
+
+    // --- CASE B: YERINIAYIR.COM (Turkish Domain) ---
+    else {
+        if (urlLocale === 'en' && !isDev) {
+            const newUrl = new URL(pathname, `https://${DOMAIN_EN}`);
+            return NextResponse.redirect(newUrl);
+        }
+
+        if (pathnameIsMissingLocale) {
+            return NextResponse.rewrite(
+                new URL(`/tr${pathname}`, request.url)
+            );
+        }
+    }
+
+    // 4. Fallback for other languages or mixed states
+    return NextResponse.next();
+
+
 }
 
 export const config = {
