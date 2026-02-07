@@ -18,6 +18,13 @@ import LocationSelect from '@/components/LocationSelect';
 import { getLocalizedText } from '@/lib/localization';
 import { LocalizedInput } from '@/components/admin/LocalizedInput';
 import { LocalizedTextarea } from '@/components/admin/LocalizedTextarea';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
 
 // Helper for slug generation
 const slugify = (text: string) => {
@@ -104,6 +111,7 @@ export default function OtelEklePage() {
   const [longitude, setLongitude] = useState<string>('');
   const [gnkScore, setGnkScore] = useState<number>(0);
   const [price, setPrice] = useState('');
+  const [currency, setCurrency] = useState('TL');
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [coverImageUrl, setCoverImageUrl] = useState('');
   const [galleryUrls, setGalleryUrls] = useState<string[]>([]);
@@ -149,6 +157,7 @@ export default function OtelEklePage() {
             setLongitude(hotelData.longitude?.toString() || '');
             setGnkScore(hotelData.rating || 0);
             setPrice(hotelData.price?.toString() || '');
+            setCurrency(hotelData.currency || 'TL');
             setSelectedTags(hotelData.tags || []);
             setCoverImageUrl(hotelData.image_url || '');
             setGalleryUrls(hotelData.gallery_images || []);
@@ -232,6 +241,7 @@ export default function OtelEklePage() {
       longitude: lng,
       rating: validatedRating,
       price: validatedPrice,
+      currency: currency,
       tags: selectedTags,
       image_url: coverImageUrl.trim() || '',
       gallery_images: galleryUrls,
@@ -359,18 +369,31 @@ export default function OtelEklePage() {
 
               <div className="space-y-2">
                 <Label htmlFor="price" className="text-sm font-semibold">
-                  Fiyat (TL)
+                  Fiyat
                 </Label>
-                <Input
-                  id="price"
-                  type="number"
-                  step="1"
-                  min="0"
-                  value={price}
-                  onChange={(e) => setPrice(e.target.value)}
-                  placeholder="Örn: 8500"
-                  className="h-11"
-                />
+                <div className="flex gap-2">
+                  <Input
+                    id="price"
+                    type="number"
+                    step="1"
+                    min="0"
+                    value={price}
+                    onChange={(e) => setPrice(e.target.value)}
+                    placeholder="Örn: 8500"
+                    className="h-11 flex-1"
+                  />
+                  <Select value={currency} onValueChange={setCurrency}>
+                    <SelectTrigger className="w-[100px] h-11">
+                      <SelectValue placeholder="Birim" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="TL">TL (₺)</SelectItem>
+                      <SelectItem value="EUR">EUR (€)</SelectItem>
+                      <SelectItem value="USD">USD ($)</SelectItem>
+                      <SelectItem value="GBP">GBP (£)</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
                 <p className="text-xs text-gray-500">Sadece tam sayı giriniz (12500 gibi)</p>
               </div>
             </div>

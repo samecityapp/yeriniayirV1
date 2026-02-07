@@ -21,6 +21,7 @@ import { getLocalizedText } from '@/lib/localization';
 import { getDictionary } from '@/lib/dictionary';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { generateHotelSchema, generateBreadcrumbSchema, generateFAQSchema } from '@/lib/schema-generator';
+import { formatCurrency } from '@/lib/utils';
 
 const LocationCard = dynamic(() => import('@/components/hotel/LocationCard'), {
   ssr: false,
@@ -337,7 +338,7 @@ export default async function HotelDetailPage({ params }: Props) {
               <div>
                 <p className="text-sm text-gray-600 font-medium mb-2">{lang === 'tr' ? 'Gecelik Başlangıç Fiyatı' : 'Starting Price per Night'}</p>
                 <p className="text-3xl sm:text-4xl font-bold text-gray-900">
-                  {hotel.price.toLocaleString(lang === 'tr' ? 'tr-TR' : 'en-GB')} ₺
+                  {formatCurrency(hotel.price, hotel.currency, lang)}
                 </p>
               </div>
               <div className="flex flex-col gap-3 w-full sm:w-auto">

@@ -9,6 +9,7 @@ import { Plus, Edit, Trash2, Star, Loader2, Search } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getLocalizedText } from '@/lib/localization';
+import { formatCurrency } from '@/lib/utils';
 import { ReportGenerator } from '@/components/admin/ReportGenerator';
 
 // Helper for localized data parsing
@@ -73,6 +74,7 @@ export default function OtelListesiPage() {
         location: tryParseLocalized(hotel.location),
         description: tryParseLocalized(hotel.description || ''),
         price: hotel.price || 0,
+        currency: hotel.currency || 'TL',
         gnkScore: hotel.rating || 0,
         coverImageUrl: hotel.image_url || '',
         tags: hotel.tags || [],
@@ -229,7 +231,7 @@ export default function OtelListesiPage() {
                         </div>
                         {hotel.price > 0 && (
                           <div className="bg-blue-50 text-blue-700 px-2 py-1 rounded-full text-xs font-medium">
-                            {new Intl.NumberFormat('tr-TR').format(hotel.price)} TL
+                            {formatCurrency(hotel.price, hotel.currency, 'tr')}
                           </div>
                         )}
                       </div>

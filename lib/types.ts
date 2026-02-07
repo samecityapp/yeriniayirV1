@@ -14,6 +14,7 @@ export type Hotel = {
   slug?: string;
   gnkScore: number;
   price: number;
+  currency?: string;
   about?: LocalizedString | string;
   tags?: string[];
   amenities?: string[];

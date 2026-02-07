@@ -67,3 +67,30 @@ export function absoluteUrl(path: string, lang: string = 'tr'): string {
 
   return `${protocol}://${domain}${finalPath}`;
 }
+
+export function formatCurrency(amount: number, currency: string = 'TL', lang: string = 'tr'): string {
+  // Normalize currency code
+  const code = (currency || 'TL').toUpperCase().trim();
+
+  // Locale for formatting
+  const locale = lang === 'tr' ? 'tr-TR' : 'en-GB';
+
+  let currencyCode = 'TRY';
+
+  if (['EUR', 'EURO', 'AVRO'].includes(code)) currencyCode = 'EUR';
+  else if (['USD', 'DOLAR', 'DLR'].includes(code)) currencyCode = 'USD';
+  else if (['GBP', 'STERLIN', 'POUND'].includes(code)) currencyCode = 'GBP';
+  else if (['TRY', 'TL', 'TURK LIRASI'].includes(code)) currencyCode = 'TRY';
+
+  try {
+    return new Intl.NumberFormat(locale, {
+      style: 'currency',
+      currency: currencyCode,
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0,
+    }).format(amount);
+  } catch (error) {
+    console.error('Currency format error:', error);
+    return `${amount} ${code}`;
+  }
+}

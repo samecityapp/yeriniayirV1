@@ -211,6 +211,7 @@ export const db = {
         location: row.location,
         gnkScore: row.rating || 0,
         price: row.price,
+        currency: row.currency || 'TL',
         about: row.about || '',
         tags: row.tags || [],
         amenities: row.amenities || [],
@@ -273,6 +274,7 @@ export const db = {
               name,
               location,
               price,
+              currency,
               rating,
               image_url
             )
@@ -311,6 +313,7 @@ export const db = {
             name: hotel.name,
             location: hotel.location,
             price: hotel.price,
+            currency: hotel.currency || 'TL',
             gnkScore: hotel.rating || 0,
             coverImageUrl: hotel.image_url || ''
           }))

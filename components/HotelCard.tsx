@@ -8,6 +8,7 @@ import Image from 'next/image';
 import { Star, MapPin, Heart, Wifi, Wind, Droplets, Play } from 'lucide-react';
 import { Hotel } from '@/lib/types';
 import { getLocalizedText } from '@/lib/localization';
+import { formatCurrency } from '@/lib/utils';
 import FoodGuideCard from '@/components/ui/FoodGuideCard';
 
 const VideoPlayer = dynamic(() => import('./VideoPlayer'), {
@@ -29,7 +30,7 @@ const amenityIcons: Record<string, JSX.Element> = {
 export default function HotelCard({ hotel, lang = 'tr', priority = false }: HotelCardProps) {
   const router = useRouter();
   const [isVideoOpen, setIsVideoOpen] = useState(false);
-  const formattedPrice = new Intl.NumberFormat(lang === 'tr' ? 'tr-TR' : 'en-GB').format(hotel.price);
+  const formattedPrice = formatCurrency(hotel.price, hotel.currency, lang);
   const featuredAmenities = hotel.amenities?.slice(0, 3) || [];
 
   const handleVideoClick = (e: React.MouseEvent) => {
@@ -131,7 +132,7 @@ export default function HotelCard({ hotel, lang = 'tr', priority = false }: Hote
             {/* Fiyat (Sol Alt) */}
             {hotel.price > 0 && (
               <div className="absolute bottom-4 left-4 text-white">
-                <span className="text-2xl font-bold">{formattedPrice} TL</span>
+                <span className="text-2xl font-bold">{formattedPrice}</span>
                 <span className="text-sm"> / {lang === 'tr' ? 'Gece' : 'Night'}</span>
               </div>
             )}
