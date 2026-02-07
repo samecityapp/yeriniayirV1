@@ -338,7 +338,12 @@ export default function OtelEklePage() {
                 <div className="relative">
                   <LocationSelect
                     value={location.tr}
-                    onChange={(val) => setLocation({ tr: val, en: val, de: val })}
+                    onChange={(val) => {
+                      const enVal = val.includes('Yunanistan')
+                        ? val.replace('Yunanistan', 'Greece')
+                        : val;
+                      setLocation({ tr: val, en: enVal, de: val });
+                    }}
                   />
                   <p className="text-xs text-muted-foreground mt-1">
                     Listeden seçim yapınız. (Örn: Sapanca, Bodrum)
