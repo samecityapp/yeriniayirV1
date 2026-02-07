@@ -207,6 +207,7 @@ export const db = {
       return {
         id: row.id,
         name: row.name,
+        slug: row.slug,
         location: row.location,
         gnkScore: row.rating || 0,
         price: row.price,
