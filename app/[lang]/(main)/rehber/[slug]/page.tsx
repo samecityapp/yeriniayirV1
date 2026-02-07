@@ -346,7 +346,7 @@ export default async function ArticlePage({ params }: Props) {
 
 
             <div className="mt-20">
-              <RelatedHotels location={getLocalizedText(article.location, lang)} />
+              <RelatedHotels location={getLocalizedText(article.location, lang)} lang={lang} />
             </div>
 
             <div className="mt-8">
@@ -356,16 +356,16 @@ export default async function ArticlePage({ params }: Props) {
             <div className="mt-12 pt-12 border-t border-zinc-200">
               <div className="max-w-3xl mx-auto text-center">
                 <h3 className="text-2xl font-bold text-foreground mb-4">
-                  Bu rehber işinize yaradı mı?
+                  {dict.blog_detail.was_guide_helpful}
                 </h3>
                 <p className="text-muted-foreground mb-8 leading-relaxed">
-                  {getLocalizedText(article.location, lang)} bölgesindeki daha fazla gizli cenneti keşfetmek için diğer rehberlerimize göz atın.
+                  {dict.blog_detail.discover_more_text.replace('{location}', getLocalizedText(article.location, lang))}
                 </p>
                 <Link
                   href={`/${lang}/rehber`}
                   className="inline-flex items-center gap-2 bg-foreground hover:bg-zinc-800 text-background px-8 py-3 rounded-full font-semibold transition-colors"
                 >
-                  Tüm Rehberleri Keşfet
+                  {dict.blog_detail.explore_all_guides}
                 </Link>
               </div>
             </div>
