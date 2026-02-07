@@ -1,8 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient } from '@supabase/supabase-js';
-
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+import { supabase } from '@/lib/supabase';
 
 export const dynamic = 'force-dynamic';
 
@@ -15,14 +12,13 @@ export async function GET(request: NextRequest) {
       return NextResponse.redirect(new URL('/', request.url));
     }
 
-    const supabase = createClient(supabaseUrl, supabaseAnonKey);
-
     const userIp = request.headers.get('x-forwarded-for') ||
-                   request.headers.get('x-real-ip') ||
-                   'unknown';
+      request.headers.get('x-real-ip') ||
+      'unknown';
     const userAgent = request.headers.get('user-agent') || 'unknown';
     const referrer = request.headers.get('referer') || request.headers.get('referrer') || '';
 
+    // Insert click record
     const clickPromise = supabase
       .from('hotel_clicks')
       .insert({
@@ -32,6 +28,7 @@ export async function GET(request: NextRequest) {
         referrer: referrer
       });
 
+    // Get hotel URL
     const hotelPromise = supabase
       .from('hotels')
       .select('website_url')
@@ -44,18 +41,17 @@ export async function GET(request: NextRequest) {
       console.error('Failed to track click:', clickResult.error);
     }
 
-    if (hotelResult.error || !hotelResult.data) {
+    if (hotelResult.error || !hotelResult.data || !hotelResult.data.website_url) {
+      // If hotel not found or no URL, redirect home
       return NextResponse.redirect(new URL('/', request.url));
     }
 
     const bookingUrl = hotelResult.data.website_url;
 
-    if (!bookingUrl) {
-      return NextResponse.redirect(new URL('/', request.url));
-    }
-
+    // Create redirect response
     const response = NextResponse.redirect(bookingUrl);
 
+    // Add custom header for debugging/tracking if needed
     response.headers.set('X-Hotel-Click-Tracked', 'true');
 
     return response;
