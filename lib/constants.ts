@@ -1,5 +1,11 @@
 export const LOCATIONS = [
     {
+        slug: 'samos',
+        title: 'Samos',
+        image: '/images/articles/samos/samos-cover.png',
+        description: 'Yeşil dağlar, turkuaz koylar ve otantik köylerle dolu sakin bir Yunan adası.',
+    },
+    {
         slug: 'istanbul',
         title: 'Istanbul',
         image: '/images/guidemaps/category-istanbul-1767118284118.jpg',

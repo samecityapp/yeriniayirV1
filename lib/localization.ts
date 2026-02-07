@@ -66,12 +66,22 @@ export function doesArticleSupportLang(article: any, lang: string = 'tr'): boole
   }
 
   // 2. Logic for objects with localized title (e.g. { tr: "...", en: "..." })
-  if (article.title && typeof article.title === 'object') {
+  let titleObj = article.title;
+
+  // Try to parse stringified JSON if needed
+  if (typeof titleObj === 'string' && titleObj.trim().startsWith('{')) {
+    const parsed = tryParseJSON(titleObj);
+    if (parsed) {
+      titleObj = parsed;
+    }
+  }
+
+  if (titleObj && typeof titleObj === 'object') {
     // Strict check: The object MUST have a key for the requested language
     // We do NOT partial match or fallback here for LISTING purposes.
     // If user wants to show mixed content, they can change this policy.
     // But currently: "NEVER mix languages".
-    return !!(article.title as any)[lang];
+    return !!(titleObj as any)[lang];
   }
 
   // 3. Logic for legacy string-only articles
