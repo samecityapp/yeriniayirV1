@@ -1,4 +1,5 @@
 import { LocalizedString } from './types';
+import { LOCATION_TRANSLATIONS } from '@/lib/constants/regions';
 
 const tryParseJSON = (jsonString: string): any => {
   try {
@@ -21,21 +22,18 @@ export function getLocalizedText(
     if (text.trim().startsWith('{')) {
       const parsed = tryParseJSON(text);
       if (parsed) {
-        // If double stringified (e.g. "{\"tr\":...}"), recursive check might be needed logicwise, 
-        // but here we just pass the object to recursive getLocalizedText call.
-        // Wait, if result is object, we can treat it as LocalizedString.
-        // If result is string (double stringified inside), tryParseJSON would have returned false unless logic handles it.
-        // Let's improve tryParse logic for recursion inline or just recursive call.
-
-        // Actually, JSON.parse("{\"tr\":\"x\"}") -> object.
-        // JSON.parse("\"{\"tr\":\"x\"}\"") -> string. 
-
         if (typeof parsed === 'string') {
           return getLocalizedText(parsed, lang);
         }
         return getLocalizedText(parsed, lang);
       }
     }
+
+    // Automatic Location Translation for non-TR languages
+    if (lang !== 'tr' && LOCATION_TRANSLATIONS[text]) {
+      return LOCATION_TRANSLATIONS[text];
+    }
+
     return text;
   }
 

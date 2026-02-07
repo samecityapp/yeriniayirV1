@@ -288,8 +288,60 @@ export const holidayRegions = [
         areas: ["Çakraz"]
       }
     ]
+  },
+
+  // --- YUNAN ADALARI ---
+  {
+    city: "Yunanistan",
+    districts: [
+      { name: "Samos", areas: [] },
+      { name: "Kos", areas: [] },
+      { name: "Rodos", areas: [] },
+      { name: "Midilli", areas: [] },
+      { name: "Sakız Adası", areas: [] },
+      { name: "Leros", areas: [] },
+      { name: "Kalymnos", areas: [] },
+      { name: "Simi", areas: [] },
+      { name: "Meis Adası", areas: [] },
+      { name: "Patmos", areas: [] }
+    ]
   }
 ];
+
+// Location Translation Map (TR -> EN)
+export const LOCATION_TRANSLATIONS: Record<string, string> = {
+  // Cities/Countries
+  "Yunanistan": "Greece",
+  "Muğla": "Muğla", // No change needed usually, but good to have
+  "İzmir": "Izmir",
+  "Antalya": "Antalya",
+  "Kapadokya": "Cappadocia",
+  "İstanbul": "Istanbul",
+
+  // Islands (Specific requests)
+  "Samos, Yunanistan": "Samos, Greece",
+  "Kos, Yunanistan": "Kos, Greece",
+  "Rodos, Yunanistan": "Rhodes, Greece",
+  "Midilli, Yunanistan": "Lesbos, Greece",
+  "Sakız Adası, Yunanistan": "Chios, Greece",
+  "Leros, Yunanistan": "Leros, Greece",
+  "Kalymnos, Yunanistan": "Kalymnos, Greece",
+  "Simi, Yunanistan": "Symi, Greece",
+  "Meis Adası, Yunanistan": "Kastellorizo, Greece",
+  "Patmos, Yunanistan": "Patmos, Greece",
+
+  // Generic fallback for just the island names if used without country
+  "Samos": "Samos",
+  "Kos": "Kos",
+  "Rodos": "Rhodes",
+  "Midilli": "Lesbos",
+  "Sakız Adası": "Chios",
+  "Leros": "Leros",
+  "Kalymnos": "Kalymnos",
+  "Simi": "Symi",
+  "Meis Adası": "Kastellorizo",
+  "Patmos": "Patmos"
+};
 
 // Helper to get a flat list of all searchable locations
 export const getSearchableLocations = () => {
