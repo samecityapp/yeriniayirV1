@@ -39,6 +39,7 @@ export default async function DynamicOfferPage({ params }: { params: { slug: str
             <OfferPageTemplate
                 hotelName={offer.hotel_name}
                 price={offer.price}
+                currency={offer.currency}
                 region={offer.region}
                 lang={language}
                 includedItems={includedItems}

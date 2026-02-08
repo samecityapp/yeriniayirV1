@@ -21,13 +21,21 @@ import { IncludedItem } from '@/lib/types';
 interface OfferPageTemplateProps {
     hotelName: string;
     price: string;
+    currency?: string; // Add currency prop
     region: string;
     lang?: 'tr' | 'en' | 'el'; // Add 'el' support
     includedItems?: IncludedItem[] | null;
     promoText?: string;
 }
 
-export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr', includedItems, promoText }: OfferPageTemplateProps) {
+export default function OfferPageTemplate({ hotelName, price, currency = 'TL', region, lang = 'tr', includedItems, promoText }: OfferPageTemplateProps) {
+
+    // Helper to get symbol or code
+    const getCurrencyLabel = (code: string) => {
+        // You can return symbol or code. User screenshot shows "TL".
+        // If EUR is selected, user wants "EUR".
+        return code;
+    };
 
     // Content Dictionary
     const t = {
@@ -66,7 +74,7 @@ export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr
             step3Desc: "SEO ile web aramalarında, GEO ile yapay zekâ tabanlı aramalarda öne çıkmanızı sağlıyor; yabancı misafirleri doğrudan size getiriyoruz.",
 
             offerTitle: "Özel Katılım Teklifi – Founding Partner",
-            currency: "TL",
+            currency: getCurrencyLabel(currency),
             vat: "+ KDV",
             promoBadge: "Lansmana Özel - İlk 100 Otel",
 
@@ -138,12 +146,7 @@ export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr
             step3Desc: "We ensure you stand out in web searches with SEO and AI-based searches with GEO; we bring foreign guests directly to you.",
 
             offerTitle: "Special Access Offer – Founding Partner",
-            currency: {
-                'TL': 'TL',
-                'USD': 'USD',
-                'EUR': 'EUR',
-                'GBP': 'GBP'
-            }[region === 'Bodrum' ? 'TL' : 'TL'], // Fallback, handled in render
+            currency: getCurrencyLabel(currency),
             vat: "+ VAT",
             promoBadge: "Launch Special - First 100 Hotels",
 
@@ -214,7 +217,7 @@ export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr
             step3Desc: "Σας εξασφαλίζουμε να ξεχωρίζετε στις διαδικτυακές αναζητήσεις με SEO και στις αναζητήσεις βάσει τεχνητής νοημοσύνης με GEO; φέρνουμε ξένους επισκέπτες απευθείας σε εσάς.",
 
             offerTitle: "Ειδική Προσφορά Πρόσβασης – Founding Partner",
-            currency: "TL",
+            currency: getCurrencyLabel(currency),
             vat: "+ ΦΠΑ",
             promoBadge: "Ειδική Προσφορά Λανσαρίσματος - Πρώτα 100 Ξενοδοχεία",
 
