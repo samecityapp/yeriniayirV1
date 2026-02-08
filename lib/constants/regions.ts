@@ -298,12 +298,14 @@ export const holidayRegions = [
       { name: "Kos", areas: [] },
       { name: "Rodos", areas: [] },
       { name: "Midilli", areas: [] },
-      { name: "Sakız Adası", areas: [] },
+      { name: "Sakız Adası", areas: [] }, // Matches official list
+      { name: "Sakız", areas: [] },       // Matches DB variant
       { name: "Leros", areas: [] },
       { name: "Kalymnos", areas: [] },
       { name: "Simi", areas: [] },
       { name: "Meis Adası", areas: [] },
-      { name: "Patmos", areas: [] }
+      { name: "Patmos", areas: [] },
+      { name: "Thassos", areas: [] }
     ]
   }
 ];
@@ -324,11 +326,13 @@ export const LOCATION_TRANSLATIONS: Record<string, string> = {
   "Rodos, Yunanistan": "Rhodes, Greece",
   "Midilli, Yunanistan": "Lesbos, Greece",
   "Sakız Adası, Yunanistan": "Chios, Greece",
+  "Sakız, Yunanistan": "Chios, Greece", // DB variant
   "Leros, Yunanistan": "Leros, Greece",
   "Kalymnos, Yunanistan": "Kalymnos, Greece",
   "Simi, Yunanistan": "Symi, Greece",
   "Meis Adası, Yunanistan": "Kastellorizo, Greece",
   "Patmos, Yunanistan": "Patmos, Greece",
+  "Thassos, Yunanistan": "Thassos, Greece",
 
   // Generic fallback for just the island names if used without country
   "Samos": "Samos",
@@ -336,11 +340,13 @@ export const LOCATION_TRANSLATIONS: Record<string, string> = {
   "Rodos": "Rhodes",
   "Midilli": "Lesbos",
   "Sakız Adası": "Chios",
+  "Sakız": "Chios",
   "Leros": "Leros",
   "Kalymnos": "Kalymnos",
   "Simi": "Symi",
   "Meis Adası": "Kastellorizo",
-  "Patmos": "Patmos"
+  "Patmos": "Patmos",
+  "Thassos": "Thassos"
 };
 
 // Helper to get a flat list of all searchable locations

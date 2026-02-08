@@ -130,6 +130,7 @@ export interface Offer {
   slug: string;
   hotel_name: string;
   price: string;
+  currency: string;
   region: string;
   included_items?: IncludedItem[] | null;
   promo_text?: string;

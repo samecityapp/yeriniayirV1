@@ -44,9 +44,10 @@ export const offers = {
                 id: 'mock-luvi',
                 slug: 'luvicavehotel-teklif',
                 hotel_name: 'Luvi Cave Hotel',
-                price: '75.000',
+                price: '12.000',
+                currency: 'TL',
                 region: 'Kapadokya',
-                promo_text: 'Aylık ~2.071 TL',
+                promo_text: '3 Gece Kal 2 Öde',
                 created_at: new Date().toISOString(),
                 updated_at: new Date().toISOString(),
                 included_items: [

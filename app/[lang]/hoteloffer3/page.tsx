@@ -56,7 +56,7 @@ export default function HotelOfferPageV3() {
                                 <Instagram className="w-5 h-5 text-pink-500" />
                                 <div className="text-left">
                                     <div className="text-xs text-gray-500 font-medium">@turkeyandhotels</div>
-                                    <div className="text-lg font-bold text-white leading-none">323.000+</div>
+                                    <div className="text-lg font-bold text-white leading-none">321.000+</div>
                                 </div>
                             </div>
                             <div className="w-px h-8 bg-white/10 hidden md:block"></div>
@@ -64,7 +64,7 @@ export default function HotelOfferPageV3() {
                                 <Instagram className="w-5 h-5 text-orange-500" />
                                 <div className="text-left">
                                     <div className="text-xs text-gray-500 font-medium">@geceligi.ne.kadar</div>
-                                    <div className="text-lg font-bold text-white leading-none">303.000+</div>
+                                    <div className="text-lg font-bold text-white leading-none">305.000+</div>
                                 </div>
                             </div>
                             <div className="w-px h-8 bg-white/10 hidden md:block"></div>

@@ -138,7 +138,12 @@ export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr
             step3Desc: "We ensure you stand out in web searches with SEO and AI-based searches with GEO; we bring foreign guests directly to you.",
 
             offerTitle: "Special Access Offer – Founding Partner",
-            currency: "TL",
+            currency: {
+                'TL': 'TL',
+                'USD': 'USD',
+                'EUR': 'EUR',
+                'GBP': 'GBP'
+            }[region === 'Bodrum' ? 'TL' : 'TL'], // Fallback, handled in render
             vat: "+ VAT",
             promoBadge: "Launch Special - First 100 Hotels",
 
@@ -298,7 +303,7 @@ export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr
                                 <span className="text-[10px] font-bold tracking-widest text-[#D62976] uppercase">Instagram</span>
                             </div>
                             <div className="text-sm text-gray-400 mb-2">@turkeyandhotels</div>
-                            <div className="text-4xl font-bold text-white group-hover:text-indigo-400 transition-colors">323.000+{content.followersSuffix}</div>
+                            <div className="text-4xl font-bold text-white group-hover:text-indigo-400 transition-colors">321.000+{content.followersSuffix}</div>
                         </a>
 
                         {/* Card 2 */}
@@ -308,7 +313,7 @@ export default function OfferPageTemplate({ hotelName, price, region, lang = 'tr
                                 <span className="text-[10px] font-bold tracking-widest text-[#FA7E1E] uppercase">Instagram</span>
                             </div>
                             <div className="text-sm text-gray-400 mb-2">@geceligi.ne.kadar</div>
-                            <div className="text-4xl font-bold text-white group-hover:text-indigo-400 transition-colors">303.000+{content.followersSuffix}</div>
+                            <div className="text-4xl font-bold text-white group-hover:text-indigo-400 transition-colors">305.000+{content.followersSuffix}</div>
                         </a>
 
                         {/* Card 3 */}

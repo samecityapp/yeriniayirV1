@@ -16,6 +16,13 @@ import {
     DialogTrigger,
     DialogFooter,
 } from '@/components/ui/dialog';
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from "@/components/ui/select";
 import { Pencil, Trash2, Plus, ExternalLink, GripVertical, Check, X } from 'lucide-react';
 import Link from 'next/link';
 
@@ -263,40 +270,55 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
                             <DialogTitle>Yeni Teklif Oluştur</DialogTitle>
                         </DialogHeader>
                         <form
-                            action={async (formData) => {
+                            onSubmit={async (e) => {
+                                e.preventDefault();
                                 setIsWarming(true); // Start Loop
+                                const formData = new FormData(e.currentTarget);
                                 const slug = formData.get('slug') as string;
 
                                 // Inject JSON
                                 formData.append('included_items', JSON.stringify(currentItems));
 
-                                // 1. Create on Server (waits for db + server-side warmup)
-                                await createOffer(formData);
+                                try {
+                                    // 1. Create on Server (waits for db + server-side warmup)
+                                    const result = await createOffer(formData);
 
-                                // 2. Client-Side Verification Gate
-                                const checkUrl = `https://www.yeriniayir.com/tr/${slug}`;
-                                const maxRetries = 20;
-                                let attempts = 0;
-                                let success = false;
-
-                                while (attempts < maxRetries && !success) {
-                                    try {
-                                        // Cache bust query to bypass local browser cache if any
-                                        const res = await fetch(`${checkUrl}?t=${Date.now()}`, { method: 'GET' });
-                                        if (res.ok) {
-                                            success = true;
-                                            break;
-                                        }
-                                    } catch (e) {
-                                        console.log("Warmup check failed, retrying...", e);
+                                    if (!result?.success) {
+                                        setIsWarming(false);
+                                        // Handle specific "duplicate key" error if visible, but actions.ts handles it nicely now
+                                        alert(`Hata: ${result?.error || 'Oluşturma başarısız oldu'}`);
+                                        return;
                                     }
-                                    await new Promise(r => setTimeout(r, 1000)); // Wait 1s
-                                    attempts++;
-                                }
 
-                                setIsWarming(false);
-                                setIsAddOpen(false);
-                                // Optional: Alert user or Toast? User sees table update.
+                                    // 2. Client-Side Verification Gate
+                                    const checkUrl = `https://www.yeriniayir.com/tr/${slug}`;
+                                    const maxRetries = 20;
+                                    let attempts = 0;
+                                    let success = false;
+
+                                    while (attempts < maxRetries && !success) {
+                                        try {
+                                            // Cache bust query to bypass local browser cache if any
+                                            const res = await fetch(`${checkUrl}?t=${Date.now()}`, { method: 'GET' });
+                                            if (res.ok) {
+                                                success = true;
+                                                break;
+                                            }
+                                        } catch (e) {
+                                            console.log("Warmup check failed, retrying...", e);
+                                        }
+                                        await new Promise(r => setTimeout(r, 1000)); // Wait 1s
+                                        attempts++;
+                                    }
+
+                                    setIsWarming(false);
+                                    setIsAddOpen(false);
+                                    window.location.reload(); // Refresh list
+                                } catch (err) {
+                                    setIsWarming(false);
+                                    console.error(err);
+                                    alert("Beklenmeyen bir hata oluştu.");
+                                }
                             }}
                             className="space-y-4 py-4"
                         >
@@ -310,7 +332,20 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
                             </div>
                             <div className="grid gap-2">
                                 <Label htmlFor="price">Fiyat</Label>
-                                <Input id="price" name="price" placeholder="Örn: 29.000" required />
+                                <div className="flex gap-2">
+                                    <Input id="price" name="price" placeholder="Örn: 29.000" className="flex-1" required />
+                                    <Select name="currency" defaultValue="TL">
+                                        <SelectTrigger className="w-[100px]">
+                                            <SelectValue placeholder="Para Birimi" />
+                                        </SelectTrigger>
+                                        <SelectContent>
+                                            <SelectItem value="TL">TL (₺)</SelectItem>
+                                            <SelectItem value="USD">USD ($)</SelectItem>
+                                            <SelectItem value="EUR">EUR (€)</SelectItem>
+                                            <SelectItem value="GBP">GBP (£)</SelectItem>
+                                        </SelectContent>
+                                    </Select>
+                                </div>
                             </div>
                             <div className="grid gap-2">
                                 <Label htmlFor="promo_text">Aylık Fiyat (Metin)</Label>
@@ -347,7 +382,14 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
                             )}
 
                             <DialogFooter>
-                                <Button type="submit">Oluştur</Button>
+                                <Button type="submit" disabled={isWarming}>
+                                    {isWarming ? (
+                                        <>
+                                            <span className="w-4 h-4 border-2 border-white/50 border-t-transparent rounded-full animate-spin mr-2" />
+                                            Oluşturuluyor...
+                                        </>
+                                    ) : 'Oluştur'}
+                                </Button>
                             </DialogFooter>
                         </form>
                     </DialogContent>
@@ -378,7 +420,10 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
                                 <tr key={offer.id} className="border-b last:border-0 hover:bg-gray-50">
                                     <td className="p-4 font-medium">{offer.hotel_name}</td>
                                     <td className="p-4">{offer.region}</td>
-                                    <td className="p-4">{offer.price} TL</td>
+                                    <td className="p-4">{offer.region}</td>
+                                    <td className="p-4">
+                                        {offer.price} {offer.currency === 'USD' ? '$' : offer.currency === 'EUR' ? '€' : offer.currency === 'GBP' ? '£' : 'TL'}
+                                    </td>
                                     <td className="p-4">
                                         <div className="flex flex-col gap-1">
                                             <Link
@@ -449,24 +494,7 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
                                         return;
                                     }
 
-                                    // Client-Side Verification Gate
-                                    const checkUrl = `https://www.yeriniayir.com/tr/${slug}`;
-                                    const maxRetries = 20;
-                                    let attempts = 0;
-                                    let success = false;
-
-                                    while (attempts < maxRetries && !success) {
-                                        try {
-                                            const res = await fetch(`${checkUrl}?t=${Date.now()}`, { method: 'GET' });
-                                            if (res.ok) {
-                                                success = true;
-                                                break;
-                                            }
-                                        } catch (e) { console.log("Warmup retry...", e); }
-                                        await new Promise(r => setTimeout(r, 1000));
-                                        attempts++;
-                                    }
-
+                                    // Removed blocking loop for speed
                                     setIsWarming(false);
                                     setIsEditOpen(false);
                                     window.location.reload(); // Refresh to show changes immediately
@@ -498,12 +526,26 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
                             </div>
                             <div className="grid gap-2">
                                 <Label htmlFor="edit-price">Fiyat</Label>
-                                <Input
-                                    id="edit-price"
-                                    name="price"
-                                    defaultValue={editingOffer.price}
-                                    required
-                                />
+                                <div className="flex gap-2">
+                                    <Input
+                                        id="edit-price"
+                                        name="price"
+                                        defaultValue={editingOffer.price}
+                                        className="flex-1"
+                                        required
+                                    />
+                                    <Select name="currency" defaultValue={editingOffer.currency || "TL"}>
+                                        <SelectTrigger className="w-[100px]">
+                                            <SelectValue placeholder="Para Birimi" />
+                                        </SelectTrigger>
+                                        <SelectContent>
+                                            <SelectItem value="TL">TL (₺)</SelectItem>
+                                            <SelectItem value="USD">USD ($)</SelectItem>
+                                            <SelectItem value="EUR">EUR (€)</SelectItem>
+                                            <SelectItem value="GBP">GBP (£)</SelectItem>
+                                        </SelectContent>
+                                    </Select>
+                                </div>
                             </div>
                             <div className="grid gap-2">
                                 <Label htmlFor="edit-promo_text">Aylık Fiyat (Metin)</Label>
@@ -544,7 +586,9 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
                             )}
 
                             <DialogFooter>
-                                <Button type="submit">Güncelle</Button>
+                                <Button type="submit" disabled={isWarming}>
+                                    {isWarming ? 'Güncelleniyor...' : 'Güncelle'}
+                                </Button>
                             </DialogFooter>
                         </form>
                     )}

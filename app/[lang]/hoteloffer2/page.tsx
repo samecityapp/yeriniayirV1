@@ -65,7 +65,7 @@ export default function HotelOfferPageV2() {
                                 <span className="text-[10px] font-bold tracking-widest text-[#D62976] uppercase">Instagram</span>
                             </div>
                             <div className="text-sm text-gray-400 mb-2">@turkeyandhotels</div>
-                            <div className="text-4xl font-bold text-white group-hover:text-indigo-400 transition-colors">323.000+</div>
+                            <div className="text-4xl font-bold text-white group-hover:text-indigo-400 transition-colors">321.000+</div>
                         </div>
 
                         {/* Card 2 */}
@@ -75,7 +75,7 @@ export default function HotelOfferPageV2() {
                                 <span className="text-[10px] font-bold tracking-widest text-[#FA7E1E] uppercase">Instagram</span>
                             </div>
                             <div className="text-sm text-gray-400 mb-2">@geceligi.ne.kadar</div>
-                            <div className="text-4xl font-bold text-white group-hover:text-indigo-400 transition-colors">303.000+</div>
+                            <div className="text-4xl font-bold text-white group-hover:text-indigo-400 transition-colors">305.000+</div>
                         </div>
 
                         {/* Card 3 */}
