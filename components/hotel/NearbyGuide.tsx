@@ -15,7 +15,7 @@ export function NearbyGuide({ location, coordinates, isMobile = false, lang = 't
         <h2 className="text-[20px] font-semibold text-gray-900 mb-4">
           {lang === 'tr' ? 'Yakında Ne Yenir?' : 'Where to Eat Nearby?'}
         </h2>
-        <NearbyPlacesTab location={location} coordinates={coordinates} />
+        <NearbyPlacesTab location={location} coordinates={coordinates} lang={lang} />
       </div>
     );
   }
@@ -26,7 +26,7 @@ export function NearbyGuide({ location, coordinates, isMobile = false, lang = 't
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
           {lang === 'tr' ? 'Yakında Ne Yenir?' : 'Where to Eat Nearby?'}
         </h2>
-        <NearbyPlacesTab location={location} coordinates={coordinates} />
+        <NearbyPlacesTab location={location} coordinates={coordinates} lang={lang} />
       </div>
     </div>
   );
