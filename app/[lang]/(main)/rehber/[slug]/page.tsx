@@ -63,6 +63,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
+  // CHECK: If article is English-only (marked as TR Pasif or similar) and we are on TR locale, return 404 metadata or handle gracefully
+  // However, metadata generation usually happens before page render. 
+  // For now, let's allow metadata but 404 the page content below.
+  // Actually, for SEO it's better to 404 here too if possible, but let's stick to page logic for safety first.
+
   const title = getLocalizedText(article.title, lang);
   const description = getLocalizedText(article.meta_description, lang);
   const articleLocation = getLocalizedText(article.location, lang);
@@ -153,6 +158,15 @@ export default async function ArticlePage({ params }: Props) {
 
   if (!article) {
     notFound();
+  }
+
+  // CRITICAL: Prevent English-only articles (marked as "TR Pasif") from showing on TR locale
+  // This ensures they are only visible on worldandhotels.com (en) and not yeriniayir.com (tr)
+  if (lang === 'tr') {
+    const titleTr = typeof article.title === 'object' ? (article.title as any).tr : article.title;
+    if (titleTr && (titleTr.includes('TR Pasif') || titleTr.includes('İngilizce'))) {
+      notFound();
+    }
   }
 
   const publishedDate = new Date(article.published_at).toLocaleDateString(lang === 'tr' ? 'tr-TR' : 'en-GB', {

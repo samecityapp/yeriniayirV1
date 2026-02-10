@@ -169,9 +169,16 @@ export default async function HomePage({ params }: { params: { lang: string } })
             {dict.home.hero_title}
           </h1>
 
-          <p className="text-[10px] text-gray-400 mt-[-1rem] mb-6 max-w-2xl mx-auto px-4">
-            {dict.home.demo_disclaimer}
-          </p>
+          {/* Disclaimer - Version 3: Modern Professional */}
+          <div className="relative bg-white rounded-xl p-5 mb-8 max-w-3xl mx-auto flex flex-col sm:flex-row items-center gap-5 shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-gray-100 overflow-hidden">
+            <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-rose-500"></div>
+            <div className="bg-rose-50 p-3 rounded-full shrink-0">
+              <AlertCircle className="w-6 h-6 text-rose-600" />
+            </div>
+            <p className="text-sm font-medium text-gray-700 leading-relaxed text-center sm:text-left">
+              {dict.home.demo_disclaimer}
+            </p>
+          </div>
 
           <Suspense fallback={<div className="h-40" />}>
             <SearchFilters lang={lang} dict={dict} />
