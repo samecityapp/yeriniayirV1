@@ -101,6 +101,11 @@ export default function RootLayout({
   const orgSchema = generateOrganizationSchema();
   const websiteSchema = generateWebSiteSchema();
 
+  // Dynamic Google Analytics ID
+  // yeriniayir.com (TR) -> G-593PL85N6Q
+  // worldandhotels.com (EN) -> G-XXXXXXXXXX (Placeholder - Replace with actual ID)
+  const gaId = params.lang === 'en' ? 'G-E2Z6W3YXSM' : 'G-593PL85N6Q';
+
   return (
     <html lang={params.lang} className={`${inter.variable} ${quicksand.variable}`} style={{ backgroundColor: '#ffffff' }}>
       <head>
@@ -123,7 +128,7 @@ export default function RootLayout({
           `}
         </Script>
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-593PL85N6Q"
+          src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -132,7 +137,7 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'G-593PL85N6Q');
+            gtag('config', '${gaId}');
           `}
         </Script>
         <script
