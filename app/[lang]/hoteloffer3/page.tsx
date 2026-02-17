@@ -271,9 +271,7 @@ export default function HotelOfferPageV3() {
                             </div>
                         </div>
                     </div>
-                    <div className="text-center mt-8 text-gray-600 text-xs">
-                        *Bu kampanyalı teklif, yalnızca ilk 100 üye otel için geçerlidir.
-                    </div>
+
                 </section>
 
                 <footer className="mt-20 text-center border-t border-white/5 pt-8">

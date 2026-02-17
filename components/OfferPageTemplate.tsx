@@ -109,7 +109,7 @@ export default function OfferPageTemplate({ hotelName, price, currency = 'TL', r
             feat8Title: "“YeriniAyir Seçilmiş Oteli” Rozeti",
             feat8Desc: "Web sitenizde ve tanıtımlarınızda kullanabileceğiniz prestij rozeti",
 
-            disclaimer: "*Bu kampanyalı teklif, yalnızca ilk 100 üye otel için geçerlidir."
+
         },
         en: {
             badge: "Next Generation Stay Experience",
@@ -180,7 +180,7 @@ export default function OfferPageTemplate({ hotelName, price, currency = 'TL', r
             feat8Title: "“WorldAndHotels Selected Hotel” Badge",
             feat8Desc: "A prestige badge you can use on your website and promotions",
 
-            disclaimer: "*This campaign offer is valid only for the first 100 member hotels."
+
         },
         el: {
             badge: "Εμπειρία Διαμονής Επόμενης Γενιάς",
@@ -251,7 +251,7 @@ export default function OfferPageTemplate({ hotelName, price, currency = 'TL', r
             feat8Title: "Σήμα “WorldAndHotels Selected Hotel”",
             feat8Desc: "Ένα σήμα κύρους που μπορείτε να χρησιμοποιήσετε στην ιστοσελίδα και τις προωθητικές σας ενέργειες",
 
-            disclaimer: "*Αυτή η προσφορά καμπάνιας ισχύει μόνο για τα πρώτα 100 μέλη ξενοδοχεία."
+
         }
     };
 
@@ -683,12 +683,7 @@ export default function OfferPageTemplate({ hotelName, price, currency = 'TL', r
                                 </ul>
                             </div>
 
-                            {/* Footer Disclaimer */}
-                            <div className="text-center pt-4">
-                                <p className="text-gray-500 text-sm font-medium">
-                                    {content.disclaimer}
-                                </p>
-                            </div>
+
 
                         </div>
                     </div>

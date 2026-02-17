@@ -349,12 +349,7 @@ export default function HotelOfferPageV2() {
                                 </ul>
                             </div>
 
-                            {/* Footer Disclaimer */}
-                            <div className="text-center pt-4">
-                                <p className="text-gray-500 text-sm font-medium">
-                                    *Bu kampanyalı teklif, yalnızca ilk 100 üye otel için geçerlidir.
-                                </p>
-                            </div>
+
 
                         </div>
                     </div>
