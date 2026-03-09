@@ -14,7 +14,7 @@ async function listRecent() {
         .from('articles')
         .select('title, slug')
         .order('created_at', { ascending: false })
-        .limit(10);
+        .limit(25);
 
     if (error) {
         console.error(error);
@@ -23,9 +23,8 @@ async function listRecent() {
 
     console.log("Recent Articles:");
     data.forEach(a => {
-        // Handle title if it's an object (JSONB) or string
-        const title = typeof a.title === 'object' ? a.title?.en : a.title;
-        console.log(`- [${title}](http://localhost:3000/en/guide/${a.slug})`);
+        const title = typeof a.title === 'object' ? a.title?.tr : a.title;
+        console.log(`- [${title}](http://localhost:3000/tr/rehber/${a.slug})`);
     });
 }
 
