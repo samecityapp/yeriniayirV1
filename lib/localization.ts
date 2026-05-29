@@ -40,6 +40,11 @@ export function getLocalizedText(
   // Handle object
   const result = (text as any)[lang] || (text as any).tr || (text as any).en || Object.values(text)[0] || '';
 
+  // Handle nested object recursively
+  if (result && typeof result === 'object') {
+    return getLocalizedText(result, lang);
+  }
+
   // If result is a JSON string (double stringified or just nested JSON), parse it recursively
   if (typeof result === 'string' && result.trim().startsWith('{')) {
     return getLocalizedText(result, lang);

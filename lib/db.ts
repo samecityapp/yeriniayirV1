@@ -46,7 +46,8 @@ export const db = {
           video_url: hotel.videoUrl || '',
           gallery_images: hotel.galleryImages || [],
           latitude: hotel.coordinates?.lat || null,
-          longitude: hotel.coordinates?.lng || null
+          longitude: hotel.coordinates?.lng || null,
+          faqs: hotel.faqs || []
         }])
         .select()
         .single();
@@ -70,6 +71,7 @@ export const db = {
       if (updates.rules !== undefined) updateData.rules = updates.rules;
       if (updates.videoUrl !== undefined) updateData.video_url = updates.videoUrl;
       if (updates.galleryImages !== undefined) updateData.gallery_images = updates.galleryImages;
+      if (updates.faqs !== undefined) updateData.faqs = updates.faqs;
       if (updates.coordinates !== undefined) {
         updateData.latitude = updates.coordinates?.lat || null;
         updateData.longitude = updates.coordinates?.lng || null;
@@ -232,7 +234,8 @@ export const db = {
         google_maps_url: row.google_maps_url || '',
         description: row.description || row.name,
         breakfast_description: row.breakfast_description || '',
-        breakfast_images: row.breakfast_images || []
+        breakfast_images: row.breakfast_images || [],
+        faqs: row.faqs || []
       };
     }
   },
