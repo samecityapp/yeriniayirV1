@@ -165,7 +165,7 @@ export default async function HomePage({ params }: { params: { lang: string } })
 
       <main className="container mx-auto px-4 pt-2 pb-8">
         <div className="text-center mt-2 mb-6">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">
+          <h1 className="text-xl min-[375px]:text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight whitespace-nowrap">
             {dict.home.hero_title}
           </h1>
 
