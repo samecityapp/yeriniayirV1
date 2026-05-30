@@ -107,8 +107,10 @@ export default function HotelCard({ hotel, lang = 'tr', priority = false }: Hote
               </div>
             )}
 
-            {/* Alttan Yukarı Gradient */}
-            <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black/60 to-transparent" />
+            {/* Alttan Yukarı Gradient - Sadece fiyat varsa gösterilir */}
+            {hotel.price > 0 && (
+              <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black/60 to-transparent" />
+            )}
 
             {/* Favori Butonu (Sol Üst) */}
             <button
