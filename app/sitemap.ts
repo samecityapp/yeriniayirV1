@@ -5,8 +5,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const TR_DOMAIN = 'https://www.yeriniayir.com';
   const EN_DOMAIN = 'https://www.worldandhotels.com';
 
-  // Get all hotels
-  const hotels = await db.hotels.getAll();
+  // Get all hotels (graceful fallback in isolated Preview builds)
+  let hotels: Awaited<ReturnType<typeof db.hotels.getAll>> = [];
+  try {
+    hotels = await db.hotels.getAll();
+  } catch {
+    hotels = [];
+  }
   const hotelUrls = hotels.flatMap((hotel) => {
     // TR URL
     const tr = {
@@ -25,8 +30,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     return [tr, en];
   });
 
-  // Get all articles
-  const articles = await db.articles.getAll();
+  // Get all articles (graceful fallback in isolated Preview builds)
+  let articles: Awaited<ReturnType<typeof db.articles.getAll>> = [];
+  try {
+    articles = await db.articles.getAll();
+  } catch {
+    articles = [];
+  }
   const articleUrls = articles.flatMap((article) => {
     // Turkish URL
     const trUrl = {
