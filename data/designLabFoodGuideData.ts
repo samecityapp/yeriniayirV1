@@ -158,6 +158,106 @@ export const DESIGN_VARIATIONS: DesignMeta[] = [
     philosophy: 'Telefon kullanımını önceliklendiren yatay kaydırmalı kategori barı, hızlı özet rozetleri, dokunmatik dostu aksiyon alanı ve masaüstünde modern bento uyumu.',
     colorDirection: 'Canlı Yerini Ayır Mavisi & Modern Kartlar',
     bestFor: 'Tatil sırasında yürürken veya otelde telefondan hızlıca karar veren mobil kullanıcı kitlesi.'
+  },
+  {
+    number: 11,
+    id: 'design-11',
+    name: 'Mobil Vitrin + Kompakt Akış',
+    shortName: 'Vitrin + Liste',
+    badge: 'Mobil UX #1 · Hibrit Hiyerarşi',
+    philosophy: 'İlk sırada seçili kategorinin öne çıkan işletmesini görsel vitrin kartı olarak sunar; hemen altında diğer mekanları 88x88px sabit görselli, jilet gibi hizalanmış kompakt satırlar halinde dizer. Telefonda ilk bakışta 3-4 işletme birden görünür.',
+    colorDirection: 'Safir Mavi - Beyaz - Yumuşak Arduvaz',
+    bestFor: 'Göz yormadan hem güçlü fotoğraf etkisi hem de yüksek liste yoğunluğu isteyen mobil ekranlar.'
+  },
+  {
+    number: 12,
+    id: 'design-12',
+    name: 'Kaydırmalı Karusel + Hızlı Dizin',
+    shortName: 'Snap Karusel',
+    badge: 'Mobil UX #2 · Sıfır Dikey Yorgunluk',
+    philosophy: 'Sağdaki kartın ucunu göstererek (peek) yatay kaydırmaya davet eden pürüzsüz scroll-snap kart destesi ve altında tüm mekanların tek satırlık hızlı karşılaştırma dizini. Otel sayfasını dikeyde hiç uzatmaz.',
+    colorDirection: 'Mavi - Beyaz - Havalı Gri',
+    bestFor: 'Otel detay sayfasında aşağı doğru uzun kaydırma yapmadan tek parmakla sağa-sola gezinti.'
+  },
+  {
+    number: 13,
+    id: 'design-13',
+    name: 'İki Sütunlu Mobil Bento (2x2)',
+    shortName: 'Mobil 2x2 Grid',
+    badge: 'Mobil UX #3 · Maksimum Görünürlük',
+    philosophy: 'Telefonda bile yan yana 2 sütunlu simetrik bento ızgarası. Sabit 4:3 fotoğraf oranı, tek satır taşmayan başlık ve hizalı alt butonlarıyla tek telefon ekranında 4 işletmeyi aynı anda ferahça gösterir.',
+    colorDirection: 'Buz Mavisi - Beyaz - Koyu Lacivert',
+    bestFor: 'Kullanıcının kaydırma yapmadan tek ekranda 4 farklı mekanı ve fotoğrafını aynı anda görmesi.'
+  },
+  {
+    number: 14,
+    id: 'design-14',
+    name: 'iOS App Store "Günün Seçkisi" Düzeni',
+    shortName: 'iOS Gruplu Kart',
+    badge: 'Mobil UX #4 · Apple HIG Disiplini',
+    philosophy: 'Yumuşak iOS sistem grisi (#F2F2F7) zemin üzerinde yuvarlatılmış beyaz kart grupları. Üstte görsel ve konum, altta App Store aksiyon barı disiplininde hizalanmış imza yemek ve hap şeklinde "Detayları Gör" butonu.',
+    colorDirection: 'iOS Sistem Grisi - Saf Beyaz - Sistem Mavisi',
+    bestFor: 'Telefonda yerel bir mobil uygulama (native app) kullanıyormuş hissi veren kusursuz hizalama.'
+  },
+  {
+    number: 15,
+    id: 'design-15',
+    name: 'Akıllı Akordeon Önizlemeli Liste',
+    shortName: 'Akıllı Akordeon',
+    badge: 'Mobil UX #5 · Kademeli Bilgi',
+    philosophy: 'İlk bakışta ekranda 4-5 işletmeyi çok temiz yatay kartlar halinde gösterir. Kullanıcı "Hızlı Özeti Aç" butonuna dokunduğunda kartın altında imza tabak ve ipucu açılır; tam rehber için "Detayları Gör" penceresi her zaman hazırdır.',
+    colorDirection: 'Beyaz - Kobalt Mavi - Zümrüt İpucu',
+    bestFor: 'Ekranı bilgiye boğmadan, kullanıcı istedikçe detay açan (progressive disclosure) modern mobil UX.'
+  },
+  {
+    number: 16,
+    id: 'design-16',
+    name: 'Airbnb "Misafir Favorisi" Tarzı',
+    shortName: 'Misafir Favorisi',
+    badge: 'Mobil UX #6 · Çerçevesiz Ferahlık',
+    philosophy: 'Kart kenarlıklarını ve kutu kalabalığını ortadan kaldıran ferah mobil tasarım. Yuvarlatılmış fotoğraf, sol üstte "Müdavim Favorisi" rozeti ve altında 3 satırlık kusursuz tipografik hiza.',
+    colorDirection: 'Saf Beyaz - Antrasit - Mavi Vurgu',
+    bestFor: 'Gözü hiç yormayan, fotoğraf ve tipografinin nefes aldığı modern seyahat uygulaması estetiği.'
+  },
+  {
+    number: 17,
+    id: 'design-17',
+    name: 'Optik Hizalı Kompakt Rehber',
+    shortName: 'Optik Rehber',
+    badge: 'Mobil UX #7 · Kusursuz Hiza',
+    philosophy: 'Sol kenarda numara rozeti, ortada 3 katmanlı sabit tipografi (Ad, Mahalle, Mavi İmza Tabak kutusu) ve sağda 84x84px fotoğraf + puan. Göz yukarıdan aşağıya tek bir düz çizgide tüm mekanları zahmetsizce tarar.',
+    colorDirection: 'Mavi - Beyaz - Kontrast Arduvaz',
+    bestFor: 'Okunabilirlik, hız ve milimetrik hizalamanın (optical alignment) en kritik olduğu mobil listeler.'
+  },
+  {
+    number: 18,
+    id: 'design-18',
+    name: 'Michelin Mobil Uygulama Kartları',
+    shortName: 'Michelin Mobil',
+    badge: 'Mobil UX #8 · Gurme Bilgi Tablosu',
+    philosophy: 'Göz dinlendiren sıcak fildişi zemin üzerinde her mekanı üst başlık barı, orta görsel ve altta iki sütunlu yapılandırılmış bilgi kutusu (Ne Yenir? | Ne Zaman Gidilir?) ile sunan mobil gurme rehberi.',
+    colorDirection: 'Sıcak Fildişi - Koyu Taş - Bordo/Mavi',
+    bestFor: 'Hem çok şık görünen hem de bilgileri tablo netliğinde hizalayan premium mobil deneyim.'
+  },
+  {
+    number: 19,
+    id: 'design-19',
+    name: 'Hikâye Halkaları + Modern Akış',
+    shortName: 'Story Kategori',
+    badge: 'Mobil UX #9 · Sosyal Medya Ergonomisi',
+    philosophy: 'Kategorileri üstte yuvarlak fotoğraflı "Hikâye Halkaları" (Story Rings) olarak sunar; altında ise başparmakla kolayca tıklanan, imza lezzet şeritli modern yatay-dikey hibrit kartlar yer alır.',
+    colorDirection: 'Mavi Halka Vurgusu - Temiz Beyaz Kartlar',
+    bestFor: 'Instagram/Sosyal medya alışkanlığıyla kategoriler arasında anında geçiş yapmak isteyen mobil kullanıcılar.'
+  },
+  {
+    number: 20,
+    id: 'design-20',
+    name: 'Yerini Ayır "Kusursuz Mobil" (Pro)',
+    shortName: 'Kusursuz Mobil',
+    badge: 'Mobil UX #10 · Final Adayı',
+    philosophy: 'Yerini Ayır’ın sevilen mavi-beyaz karakterini en yüksek mobil UI/UX standartlarıyla birleştirir: Sabit 96x96px sol görsel, sağda taşmayan tipografi, alt barda tam hizalı mavi "Ne Sipariş Etmeli?" hapı ve "Detayları Gör" butonu.',
+    colorDirection: 'Yerini Ayır İmza Mavisi & Saf Beyaz',
+    bestFor: 'Marka kimliğini %100 korurken telefonda tek ekrana 3 tam işletme sığdıran kusursuz hizalı tasarım.'
   }
 ];
 

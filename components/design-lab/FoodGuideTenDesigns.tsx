@@ -25,6 +25,7 @@ import {
   LabVenue,
   DesignMeta
 } from '@/data/designLabFoodGuideData';
+import { FoodGuideMobileProDesigns } from './FoodGuideMobileProDesigns';
 
 interface DesignInstanceProps {
   design: DesignMeta;
@@ -120,9 +121,18 @@ export function FoodGuideDesignSection({
       <div className="mb-4 rounded-2xl bg-slate-900 text-white p-4 sm:p-5 shadow-md border border-slate-800 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
         <div className="space-y-1.5">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="inline-flex items-center justify-center px-3 py-1 rounded-full text-xs font-extrabold bg-blue-600 text-white tracking-wide">
+            <span
+              className={`inline-flex items-center justify-center px-3 py-1 rounded-full text-xs font-extrabold text-white tracking-wide ${
+                design.number >= 11 ? 'bg-emerald-600' : 'bg-blue-600'
+              }`}
+            >
               TASARIM #{design.number}
             </span>
+            {design.number >= 11 && (
+              <span className="px-2.5 py-0.5 rounded-full text-[11px] font-extrabold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+                YENİ MOBİL ODAKLI SERİ
+              </span>
+            )}
             <h2 className="text-lg sm:text-xl font-bold text-white">
               {design.name}
             </h2>
@@ -1498,6 +1508,21 @@ export function FoodGuideDesignSection({
               </div>
             </div>
           </div>
+        )}
+
+        {/* =====================================================================
+            DESIGNS 11 TO 20: MOBİL PRO SERİSİ (10 New Mobile-Obsessed Designs)
+           ===================================================================== */}
+        {design.number >= 11 && (
+          <FoodGuideMobileProDesigns
+            design={design}
+            region={region}
+            venues={venues}
+            activeCategory={activeCategory}
+            setActiveCategory={setActiveCategory}
+            onSelectVenue={onSelectVenue}
+            viewportMode={viewportMode}
+          />
         )}
       </div>
     </section>
