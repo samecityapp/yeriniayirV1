@@ -65,19 +65,41 @@ export async function middleware(request: NextRequest) {
         // Continue execution if Redis/RateLimit fails
     }
 
-    // 5. ADMIN PROTECTION (Basic Auth) - MOVED UP
+    // 5. ADMIN PROTECTION (Basic Auth) - Fail-closed without hardcoded password fallback
     // This must run before locale rewrites to ensure it catches the path
     if (pathname.includes('/jilinrime')) {
+        const expectedUser = process.env.ADMIN_USER?.trim() || 'admin';
+        const expectedPassword = process.env.ADMIN_PASSWORD?.trim();
+
+        if (!expectedPassword) {
+            console.error('SECURITY CRITICAL: ADMIN_PASSWORD environment variable is not set.');
+            return new NextResponse('Admin configuration error: ADMIN_PASSWORD is required.', {
+                status: 503,
+            });
+        }
+
         const basicAuth = request.headers.get('authorization');
 
-        if (basicAuth) {
-            const authValue = basicAuth.split(' ')[1];
-            const [user, pwd] = atob(authValue).split(':');
+        if (basicAuth && basicAuth.startsWith('Basic ')) {
+            try {
+                const authValue = basicAuth.slice(6).trim();
+                const decoded = atob(authValue);
+                const colonIndex = decoded.indexOf(':');
+                const user = colonIndex !== -1 ? decoded.slice(0, colonIndex) : '';
+                const pwd = colonIndex !== -1 ? decoded.slice(colonIndex + 1) : '';
 
-            if (user === 'admin' && pwd === (process.env.ADMIN_PASSWORD || 'Otel2024!')) {
-                // Valid credentials, proceed
-            } else {
-                return new NextResponse('Auth Required', {
+                if (user === expectedUser && pwd === expectedPassword) {
+                    // Valid credentials, proceed
+                } else {
+                    return new NextResponse('Auth Required', {
+                        status: 401,
+                        headers: {
+                            'WWW-Authenticate': 'Basic realm="Secure Area"',
+                        },
+                    });
+                }
+            } catch {
+                return new NextResponse('Invalid Auth Header', {
                     status: 401,
                     headers: {
                         'WWW-Authenticate': 'Basic realm="Secure Area"',
