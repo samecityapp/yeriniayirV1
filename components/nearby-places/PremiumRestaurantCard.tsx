@@ -66,15 +66,15 @@ export function PremiumRestaurantCard({
           <GooglePlaceRating ratings={restaurant.ratings} />
         </div>
 
-        {/* ALT BLOK: 4. NE SİPARİŞ ETMELİ? (Doğrulanmış Ürün Kutusu) */}
-        {restaurant.orderSuggestion?.title && (
+        {/* ALT BLOK: 4. NE SİPARİŞ ETMELİ? / MENÜDEN ÖNE ÇIKANLAR (Doğrulanmış Ürün Kutusu) */}
+        {(restaurant.orderSuggestion?.title || (restaurant.menuFrom && restaurant.menuFrom.length > 0)) && (
           <div className="bg-blue-50/70 border border-blue-150 rounded-2xl p-3 sm:p-3.5 transition-colors group-hover:bg-blue-50 group-hover:border-blue-200">
             <div className="flex items-center gap-1.5 text-[10px] font-extrabold uppercase tracking-wider text-blue-800 mb-1">
               <Utensils size={13} className="text-blue-600" />
-              <span>Ne Sipariş Etmeli?</span>
+              <span>{restaurant.orderSuggestion?.title ? 'Ne Sipariş Etmeli?' : 'Menüden Öne Çıkanlar'}</span>
             </div>
             <p className="text-xs sm:text-[13px] font-bold text-slate-900 leading-snug line-clamp-2">
-              {restaurant.orderSuggestion.title}
+              {restaurant.orderSuggestion?.title || restaurant.menuFrom.join(' · ')}
             </p>
           </div>
         )}
