@@ -84,66 +84,66 @@ Ham rating/userRatingCount yanıtları diske/DB'ye saklanmadı. Kalıcı metadat
 
 Sürdürülebilir çözüm hâlâ açık: resmi puanın sunum/yenileme yaşam döngüsü, Google Maps atıfları ve güncel lisans saklama kurallarıyla uyumlu olmalı; keyfi TTL ile puan depolama veya ziyaretçi başına kontrolsüz ücretli istek yasak. Yeni araştırma/ücret izni olmadan sahte fixture puanını gerçekmiş gibi bağlama.
 
-## 7. Supabase ortam ayrımı ve RLS
+## 7. Supabase ortamları ve RLS
 
-**Production:** YeriniAyir, `jerkkxwgddujigsbeqwo`, Frankfurt. Kullanıcının 1 Kasım ekranı YeriniAyir kuruluşunda **PRO** ve bu projeyi doğruladı; hesap ekstresi bağımsız okunmadı. Önceki duraklama kaldırıldı, veritabanı gerçek yedeği alındı.
+**Production:** YeriniAyir, `jerkkxwgddujigsbeqwo`, Frankfurt. Kullanıcının 1 Kasım ekranı YeriniAyir kuruluşunda **Pro** ve bu projeyi doğruladı. Hesap ekstresi ayrıca okunmadı. Duraklama kaldırıldı; gerçek veritabanı yedeği alındı.
 
-**Staging:** YeriniAyir-Staging, `vhptlecaixpawtxnhsde`, İrlanda; ayrı turkeyandhotels **Free** kuruluşunda. Panelin `main PRODUCTION` etiketi proje içi ana dal etiketidir; bu kimliği gerçek production projesiyle karıştırma.
+**Staging:** YeriniAyir-Staging, `vhptlecaixpawtxnhsde`, İrlanda. Ayrı **turkeyandhotels Free** kuruluşundadır. Paneldeki `main PRODUCTION` etiketi o proje içindeki ana daldır; staging kimliğini gerçek production ile karıştırma.
 
-Production'da kullanıcı onayıyla daha önce uygulanmış **42 RESTRICTIVE false yazma engeli +45 eski PERMISSIVE =87 politika**, 13 uygulama tablosu ve storage.objects (14 ilişki) vardır. Kural `OR(PERMISSIVE) AND AND(RESTRICTIVE)`; eski geniş izinler restrictive false'u aşamaz. Geçici engelleri kalıcı yetki ve ayrı onay olmadan kaldırma. Service-role bypass ayrı risk; sadece sunucu tarafında ve dar işlerde.
+Production'da daha önce kullanıcı onayıyla uygulanmış **42 RESTRICTIVE false yazma engeli + 45 eski PERMISSIVE = 87 politika** vardır: 13 uygulama tablosu ve storage.objects, toplam 14 ilişki. Birleşim `OR(PERMISSIVE) AND AND(RESTRICTIVE)` olduğundan eski geniş izinler false engelini aşamaz. Service-role bypass ayrı risktir; yalnız sunucu tarafında kalır. Bu devirde production değiştirilmedi.
 
-Production'a yeni cloud şeması, gastronomi paketi, üyelik, cron veya kalıcı RLS taslağı **uygulanmadı**. Devirde production değişikliği yapılmadı.
+**Production'a uygulanmayanlar:** yeni cloud şeması, gastronomi veri paketi, kişisel yönetici üyeliği, yayın cron'u ve kalıcı RLS geçişi. Geçici 42 engeli kaldırma.
 
-Yalnız staging'e uygulanmış dosyalar:
+Yalnız staging'e uygulanmış değişiklikler:
 1. `supabase/proposed/20261101_gastronomy_cloud_admin.sql`
-2. `20261101_staging_conflict_fix.sql` (40001 yerine PT409; PostgREST uzun retry engeli)
+2. `20261101_staging_conflict_fix.sql` — PostgREST'in uzun retry davranışı nedeniyle 40001 yerine PT409.
 3. `20261101_publication_pipeline.sql`
-4. Özel `work/release-system/pipeline-input.private.sql` veri paketi
+4. Özel `work/release-system/pipeline-input.private.sql` veri paketi.
 5. `20261101_publication_cron.sql`
 
-`supabase/proposed/20261101_permanent_write_boundary.sql` **yalnız taslak ve yerel test**. AşamaA eski42'yi tutup kalıcı42 ekler129politika; AşamaB ayrı onay/test sonrası eski42'yi çıkarır87kalır. Eski45 silinmez. Legacy tabloları geniş admin yazmasına açmaz; yeni gastronomi dar MFA RPC'sini kullanır. Local288kontrol geçti; production uygulandı diye yorumlama.
+`supabase/proposed/20261101_permanent_write_boundary.sql` **yalnız taslak ve yerel testtir**. Aşama A eski 42'yi tutup kalıcı 42 ekler: 129 politika. Aşama B ayrı onay/test sonrası geçici 42'yi çıkarır: 87 kalır. Eski 45 silinmez. Legacy tablolara geniş yönetici yazması açılmaz; gastronomi dar MFA RPC'sini kullanır. Yerelde 288 kontrol geçti; production uygulanması değildir.
 
-Storage salt okunur envanteri358dosya /662804194bayt. EskiDBreferanslarına göre217incelemeadayı var; kesin kullanılmayan değil. Hiçbiri silinmedi. DB SQL yedeği yaklaşık4,9MB ve StorageZIP yaklaşık662,7MB ayrı şeylerdir; tam geri yükleme tatbikatı henüz yayına hazır kabul edilmedi. Yedek konumlarını `docs/SUPABASE_ACTUAL_BACKUP_RLS_RESULTS.md` ve `SUPABASE_PRODUCTION_RECOVERY.md` üzerinden bul; içeriklerini ziyaretçiye/Git'e açma.
+Production Storage salt okunur envanteri: **358 dosya / 662.804.194 bayt**. Eski DB referanslarına göre 217 inceleme adayı vardır; kesin kullanılmayan demek değildir. Hiçbiri silinmedi. SQL yedeği yaklaşık 4,9 MB; Storage ZIP yaklaşık 662,7 MB, ayrı yedeklerdir. Tam geri yükleme tatbikatı yayın kapısı olarak henüz tamamlanmadı. Konumlar: `docs/SUPABASE_ACTUAL_BACKUP_RLS_RESULTS.md`, `SUPABASE_PRODUCTION_RECOVERY.md`. İçeriği Git'e veya ziyaretçiye açma.
 
 ## 8. Yönetici ve üçlü ortak içerik yönetimi
 
-Çalışan temel: insan yönetici paneli + Codex + Antigravity aynı doğrulanmış canonical kayıt/yayın geçmişi üzerinden ilerlemeli; **üç ayrı dosya kaynağı son-yazan-kazan şeklinde senkron değildir**. Tek bulut kaynak modeli hazırlanmıştır, fakat iki ajanın araştırma çıktısını aynı güvenli, sürüm kontrollü girişe yazması ve tam yeni araştırma işçisi henüz bitmedi.
+İnsan yönetici paneli, Codex ve Antigravity aynı doğrulanmış canonical kayıt ve yayın geçmişini kullanmalıdır. **Üç ayrı dosya kaynağı arasında tamamlanmış bir senkronizasyon yoktur.** Tek bulut kaynak modeli hazırlanmıştır; iki ajanın araştırma çıktısını güvenli ve sürüm kontrollü ortak girişe yazması, tam yeni kaynak araştırma işçisi ve nihai entegrasyon eksiktir.
 
-Staging özel şeması `ya_private`: üyelik, canonical workspace, SHA ile tam araştırma arşivi, değişiklik geçmişi, publication_inputs ve publication_jobs. Public: yalnız ziyaretçi yayın snapshots ve aktif head. Özel araştırma arşivi doğrudan anon/auth'a açık değil. `ya_is_admin` aktif üyelik + gerçek Auth + **aal2** ister; user_metadata admin bayrağı kabul edilmez.
+Özel `ya_private` şeması üyelikleri, canonical workspace'i, SHA ile araştırma arşivini, karar geçmişini, publication_inputs ve publication_jobs tablolarını tutar. Public tablolar yalnız ziyaretçi yayın snapshots ve aktif head içerir. `ya_is_admin` aktif özel üyelik + gerçek Auth + **aal2** ister; kullanıcı metadata'sındaki admin bayrağı kabul edilmez.
 
-Kayıtlar optimistic revision ile atomik; manuel sıralama/çıkarma ve geri alma yeni değişmez sürüm oluşturur, eskiyi silmez. Canonical dışı ID/serbest kalite iddiası kabul edilmez. Son staging head devir salt-okunur kontrolünde **8**. Önceki test reorders/undo kayıtları test gerekçeli, dört orijinal mekan restore edilmişti. Yenileme işi mevcut manuel order/exclusion'ı korur.
+Yayın optimistic revision ile atomiktir. Manuel sıralama/çıkarma ve geri alma yeni değişmez sürüm oluşturur; geçmiş silinmez. Canonical dışı ID veya serbest kalite iddiası kabul edilmez. Son salt okunur staging kontrolünde **head 8** bulundu. Önceki sentetik reorder/undo testleri gerekçeli geçmişte durur; dört mekanın orijinal sırası geri yüklenmişti. Otomatik yenileme mevcut manuel sıra ve çıkarımları korur.
 
-Gerçek staging'de iki **sentetik** hesapla Auth/MFA/yayın/geri alma test edildi. Kullanıcının kişisel admin hesabı henüz yok. Kendi şifresi ve MFA'sı yalnız kullanıcı tarafından Dashboard/siteye girilir; ajan bu alanları okumaz, görüntülemez, dosyaya almaz. Tam kurulum: `docs/PERSONAL_ADMIN_ONBOARDING.md`. Yetki için yalnız kullanıcı UUID'si yeterlidir. Runtime'da service/secret key yok; kurulum secret'ı yalnız özel test kurulumu içindir.
+Gerçek staging'de iki **sentetik** hesapla Auth/MFA/yayın/geri alma test edildi. Kullanıcının kişisel hesabı henüz oluşturulmadı. Parola ve MFA yalnız kullanıcı tarafından Dashboard/siteye girilir; ajan alanları okumaz, görüntülemez veya dosyaya almaz. Akış `docs/PERSONAL_ADMIN_ONBOARDING.md` içindedir. Yetki ataması için yalnız kullanıcı UUID'si gerekir; kişisel parola gerekmez. Runtime'da service/secret key yoktur. Özel kurulum secret'ı yalnız test kurulumu içindir.
 
-Eski Basic yardımcı endpointleri cloud auth modunda503 ile kapanır. Oturum HttpOnly/SameSiteStrict, HTTPS'teSecure; Origin kontrolü ve logout sonrası eski oturum401. Son QR kayıt görünümü derlendi; gerçek kullanıcıyla veya yeni sentetik kayıtla son regresyon hâlâ gerekir.
+Eski Basic yardımcı endpointleri cloud auth modunda 503 ile kapanır. Oturum HttpOnly/SameSite Strict, HTTPS'te Secure; Origin kontrolü ve logout sonrası eski oturum 401 doğrulandı. Son QR kayıt görünümü derlendi; yeni hesapla QR kayıt regresyonu henüz yapılmadı.
 
-## 9. Yayın pipeline ve önbellek
+## 9. Araştırma arşivi, yayın pipeline ve önbellek
 
-46 dinamik araştırma JSON dosyası ve manuel seçimler SHA manifestiyle staging özel arşivine taşındı; canonical/arşiv eşitliği gerçek SQL ile kanıtlandı. Arşiv1740589bayt; kaynakları silme. `work/cloud-admin/source-manifest.json` tam46yol+SHA'dır. Yerel source, staging arşivi ve eski kopyalar arasındaki farklar bu manifestle karşılaştırılmalı.
+**46 dinamik araştırma JSON dosyası**, manuel seçimler ve SHA manifesti staging özel arşivine taşındı. Canonical/arşiv eşitliği gerçek SQL ile kanıtlandı. Arşiv 1.740.589 bayttır. `work/cloud-admin/source-manifest.json` tam 46 yol ve SHA'yı içerir; eski kopyalarla farkları bu manifest üzerinden karşılaştır. Kaynaklar silinmez. Sabit kod defteri `lib/pilot/quality/product-evidence.json` ayrıca korunur.
 
-Staging'de gerçek **pg_cron**, `yeriniayir-staging-publication`, her5dakika aktif. Devir anında salt okunur kayıtta published ve sonraki unchanged işleri görüldü. Sınırlı scope, advisory lock, hata gecikmesi ve değişmez iş kayıtları vardır. **Yaptığı mevcut kanıtı tekrar değerlendirip yayın lease'ini yenilemektir; internetten yeni bağımsız kaynak araştırması değildir.**
+Staging'de gerçek **pg_cron** işi `yeriniayir-staging-publication`, her 5 dakika aktif. Devir kontrolünde bir **published** ve sonraki **unchanged** işi görüldü. İşler sınırlı scope, advisory lock, hata gecikmesi ve kalıcı kayıt kullanır. **Bu iş mevcut kanıtı yeniden değerlendirip yayın lease'ini yeniler; internetten yeni bağımsız kaynak araştırmaz.**
 
-`prepare_pipeline.cjs` gerçek ürün motoruyla çıktıyı tekrar değerlendirir, eski checkedAt tarihlerini değiştirmez. Kanıtın hard sınırı bu pakette **5 Kasım2026 20:10:28UTC (23:10Türkiye)**; bu tarih gelince yeni gerçek kanıt olmadan yenileme yapılmaz/gösterim gizlenir. Zamanı uzatıp araştırılmış gibi gösterme. Eski `CLOUD_ADMIN_READINESS.md` içindeki1saatlik12:44lease artık tarihi test durumudur; güncel pg_cron yayını8'e geçti. SQL cron tek başına yeni kaynak işçisini tamamlamaz.
+`prepare_pipeline.cjs` gerçek ürün motoruyla değerlendirme yapar, eski checkedAt tarihlerini değiştirmez. Bu pakette hard kanıt sınırı **5 Kasım 2026 20:10:28 UTC / 23:10 Türkiye**. Yeni gerçek kanıt bulunmazsa süre dolunca yenileme durur ve içerik gizlenir. Tarihi ileri alarak araştırılmış gibi gösterme. Eski `CLOUD_ADMIN_READINESS.md` içindeki 1 saatlik 12:44 lease artık tarihsel test durumudur; güncel cron yayını head 8'e geçti.
 
-Ziyaretçi servercache60s bounded/deduplicated +NextDataCache/tag invalidation; adminno-store. Expiry hercachehit'te de kontrol edilir. Cloudhatasında demoya/yerel veriye sessizfallback yok. Yayın güncellemesi aynı süreçte anlık, diğer süreçlerdeTTLsonunda; hosting/CDN üzerinde ayrıca test gerekir. Rating kalıcı yayın belgesinin parçası değildir.
+Ziyaretçi sunucusunda 60 saniyelik bounded/deduplicated cache, Next Data Cache ve tag invalidation vardır. Yönetici cevapları no-store. Expiry cache vuruşlarında da kontrol edilir. Cloud hatasında yerel/demo veriye sessiz fallback yoktur. Yayın güncellemesi aynı süreçte anlık, diğer süreçlerde en geç TTL sonunda görülür; gerçek hosting/CDN ayrıca test edilmelidir. Rating kalıcı yayın belgesine dahil değildir.
 
-Ölçülmüş gerçek staging yolu: soğukSSR959ms, RPC827ms; beşsıcakSSR9–23ms, toplam0ekSupabaseverisorgusu. RPC648B gzipbody /1726B açılmışJSON +924B yanıtbaşlık; TLS/istekbaşlık dahil değil. Bunlar fatura garantisi değil. Tarayıcıdan doğrudanSupabase/Google0. Yeni cron sonrası tüm ziyaret akışı ölçümleri yeniden yapılmalı.
+Ölçülmüş gerçek staging yolu: soğuk SSR 959 ms, RPC 827 ms. Beş sıcak SSR 9–23 ms, toplam 0 ek Supabase veri sorgusu. RPC 648 B gzip gövde / 1.726 B açılmış JSON + 924 B yanıt başlığı. TLS ve istek başlıkları dahil değildir, fatura garantisi sayılamaz. Tarayıcıdan doğrudan Supabase/Google sorgusu 0. Yeni cron sonrası bütün ziyaret akışı ölçümleri tekrar yapılmalıdır.
 
 ## 10. Testlerin güvenilir durumu
 
-**Tamamlanan önceki gerçek staging testleri:** anonim8; Auth/MFA14; yönetici browser5 +logout replay401; ziyaretçi13grup375/390/430/1440px; SHA/arşiv eşitliği. Kanıtlar `work/cloud-admin/real-*-tests.json`, browserloglar ve `import-verification.json`.
+**Tamamlanan önceki gerçek staging testleri:** anonim erişim 8; Auth/MFA 14; yönetici tarayıcı akışı 5 + logout replay 401; ziyaretçi 13 grup, 375/390/430/1440 px; SHA/arşiv eşitliği. Kanıtlar `work/cloud-admin/real-*-tests.json`, browser logları ve `import-verification.json` içindedir.
 
-**Son yerel test:** yeni pipeline dahil42PostgreSQLcheck geçti (`work/release-system/pipeline-sql-tests.log`); kalıcı RLS geçişinin288sentetikcheck'i geçti (`work/free-capacity/permanent-rls-test.json`). Bunlar yerel sentetik Auth ve gerçek DDL/politika tanımlarıdır; production saldırı testi değildir.
+**Son yerel testler:** pipeline dahil 42 PostgreSQL kontrolü (`work/release-system/pipeline-sql-tests.log`); kalıcı RLS geçişi için 288 sentetik kontrol (`work/free-capacity/permanent-rls-test.json`). Bunlar gerçek DDL/politika tanımlarıyla yerel sentetik Auth testleridir; production saldırı testi değildir.
 
-**Son kod:** TypeScript ve Next15.5.28 productionbuild başarılı (`work/release-system/{typecheck,build}.log`). Önceki lint hatasız, devralınmış uyarılar var; son QR düzenlemesinden sonra tüm gerçek Auth/browserregresyonu tekrarlanmadı. Eski117clientchunk sır taraması0eşleşme; yeni build için yeniden çalıştır.
+**Son kod:** TypeScript ve Next.js 15.5.28 production build başarılı (`work/release-system/{typecheck,build}.log`). Önceki lint hatasız, devralınmış uyarılar var. Son QR düzenlemesinden sonra bütün gerçek Auth/browser regresyonu tekrarlanmadı. Önceki 117 client chunk sır taraması 0 eşleşmeydi; yeni build için yeniden çalıştırılmalı.
 
-**Performans ayrımı:** dosya tabanlı3300 önceki mobil97–98/desktop100 ölçümleri yeni bulut3401puanı değildir. İki eskiLCP2,5süstü, previewnoindex yüzündenSEO66; `perf:check` bu nedenlebaşarısızdı. Yeni gerçekbulut Lighthouse3tekrarı **henüz yapılmadı**. Puan için içeriği/güvenliği gizleme/noindexkorumasını kaldırma. INP saha ölçümü labTBT ileeşit değildir.
+**Performans ayrımı:** dosya tabanlı 3300'ün önceki mobil 97–98 / desktop 100 puanları yeni bulut 3401 ölçümü değildir. İki eski LCP 2,5 saniyeyi aştı. Preview noindex nedeniyle SEO 66; `perf:check` bu nedenle başarısızdı. Yeni gerçek bulut Lighthouse üç tekrarı **henüz yapılmadı**. Puan için içerik veya güvenlik gizlenmez, preview noindex koruması kaldırılmaz. INP saha ölçümü, laboratuvar TBT ile aynı değildir.
 
-Hedefler kalıcı: mobilmin90/hedef95+, desktop95+, A11y/BP95+, SEO100(gerçekyayındakural), LCP≤2,5s, INP≤200ms, CLS≤0,1. Herönemlisayfa3tekrar. Eski50/100/300concurrency yalnızloopbackHTTPburst; SupabaseFree300DBquerygarantisi değil; üretimde yük testi yasak.
+Kalıcı hedefler: mobil minimum 90/hedef 95+, desktop 95+, A11y/Best Practices 95+, SEO 100 gerçek yayında; LCP ≤2,5 s, INP ≤200 ms, CLS ≤0,1. Her önemli sayfada en az üç tekrar. Eski 50/100/300 eşzamanlılık ölçümü yalnız loopback HTTP patlamasıdır; Free planın 300 eşzamanlı DB sorgusunu kaldırdığını kanıtlamaz. Production yük testi yasaktır.
 
-## 11. Yerelde çalıştırma ve doğrulama
+## 11. Çalıştırma ve doğrulama
 
-Komutları Antigravity kendisi çalıştırır, kullanıcıya terminal işi verilmez. Tümkomutlar başlangıçklasöründe:
+Komutları Antigravity çalıştırır; kullanıcıya terminal işi verilmez. Başlangıç:
 
 ```sh
 cd /Users/erdems/Documents/Codex/yeriniayir-cloud-admin
@@ -152,20 +152,22 @@ git log -1 --oneline
 npm run typecheck
 npm run lint
 npm run build
-# Salt okunur; yalnız sabit staging kimliğine izin verir:
+# Salt okunur; yalnız staging kimliğine izin verir:
 python3 scripts/cloud/staging_operations.py check
-# Gerçek bulut uygulaması, loopback3401; private config otomatik okunur:
+# Gerçek bulut uygulaması; özel config otomatik okunur, sırları yazdırmaz:
 node scripts/cloud/start_staging.cjs
 ```
 
-Son devir HTTP kontrolünde **3300 ve3401kapalıydı (HTTP000/bağlantıreddi)**; açık çalışan sunucu varmış gibi raporlama. 3300 korunmuş eskiintegration,3401yeni cloud-admin. Önizleme URL'leri:
+Son devir HTTP kontrolünde **3300 ve 3401 kapalıydı: HTTP 000 / bağlantı reddi**. Çalışan sunucu varmış gibi raporlama. 3300 korunmuş eski integration; 3401 yeni cloud-admin kopyasıdır.
+
 - `http://127.0.0.1:3300/tr?region=moda&category=kahve`
 - `http://127.0.0.1:3401/tr?region=moda&category=kahve`
 - `http://127.0.0.1:3401/tr/gastronomi-yonetimi`
 
-3300gerekirse integrationklasörünün kendi korumalı `.env.local` ayarlarıyla `node node_modules/next/dist/bin/next start -H 127.0.0.1 -p3300`; öncebuilddurumunukontrol et. Onunorijinaldosyalarını değiştirmeden yeni3401'ideğerlendir.
+3300 gerekirse integration klasörünün kendi korumalı yerel ayarlarıyla `node node_modules/next/dist/bin/next start -H 127.0.0.1 -p 3300` komutunu kullanır; önce build durumunu kontrol et. Orijinal dosyaları değiştirmeden yeni 3401'i değerlendir.
 
-Yerel güvenlik testleri (cloudklasöründe, üretimebağlanmaz):
+Yerel güvenlik testleri, cloud klasöründe (production'a bağlanmaz):
+
 ```sh
 node scripts/cloud/verify_contracts.cjs
 python3 scripts/cloud/verify_database.py
@@ -174,7 +176,8 @@ node scripts/verify_security_upgrade.cjs
 node scripts/verify_google_places_transport.cjs
 ```
 
-Gerçek staging testleri bazıları **sentetik reorder/undo oturumları yazar**; saltokunur değil. Gerçek kullanıcıolmadan, mevcuttestUUID'leri ve orijinalorderrestore doğrulanarak çalıştır:
+Gerçek staging testlerinin bazıları **sentetik reorder/undo ve oturum işlemleri yazar**, salt okunur değildir. Mevcut test UUID'lerini ve sonunda orijinal sıranın geri geldiğini doğrula:
+
 ```sh
 node scripts/cloud/verify_real_anonymous.cjs
 node scripts/cloud/verify_real_auth.cjs
@@ -182,33 +185,35 @@ node scripts/cloud/verify_real_admin_browser.cjs
 VERIFY_ORIGIN=http://127.0.0.1:3401 VERIFY_CLOUD_MODE=1 node scripts/verify_gastronomy_integration_browser.cjs
 ```
 
-Önce endpointlerde4gerçekmekan olduğunu doğrula; süresidolmuşboşsayfayla skorölçme. CPUyükleyenbaşkaişolmaksızın:
+Önce dört gerçek kaydın çıktıda bulunduğunu kontrol et; süresi dolmuş boş sayfada performans ölçme. CPU yükleyen başka işler olmadan:
+
 ```sh
 PERF_ORIGIN=http://127.0.0.1:3401 PERF_REPORT_DIR=work/release-system/lighthouse-mobile PERF_DEVICES=mobile node scripts/run_premium_lighthouse.mjs after
 ```
-Harnes3mobilrun ve detaymodaldenetimlerini içerir. Toolingsymlink'i okunur; kurulumgerekirse ayrıdizineyap. Gerçekperformanssonuçlarını eskiraporların üstünebaşarısızölçümleri silerekyazma.
 
-`staging_operations.py` diğeraction'larımigration/import/grant yapar; checkdışındakileri körlemesine tekrarçalıştırma. Mevcutşemavarsa schemaactionyenidenbaşlatmaz. Eskiimport.private.sqllease'ieskidir; tekrarimportetme. Productionkimliğiniengelleyen guard'larıkaldırma.
+Harness üç mobil run ve detay modal denetimleri içerir. Tooling symlink'i yalnız okunur; kurulum gerekirse ayrı dizine yapılır. Başarısız ölçümleri silme.
+
+`staging_operations.py check` dışındaki action'lar şema/import/üyelik değiştirir; körlemesine tekrar çalıştırma. Mevcut şemayı sıfırlama. Eski `import.private.sql` lease'i eskidir; tekrar import etme. Production kimliğini engelleyen guard'ları kaldırma.
 
 ## 12. Öncelikli devam sırası ve gerçek yayın engelleri
 
-1. **Üçlü ortak içerik yönetimi:** insan paneli ve iki ajan için tek canonical bulutkaynağı; yetkili,sürümkontrollü araştırmagirdisi, manueloverride/undo, kaynakçelişkisindeekaraştırma. Panel/MFAyayınRPC'sini yenidenyazma, mevcuttemelintestlerini koru. ŞuankiSQLcron'unu yenikeşifmotoru sanma.
-2. **Kalıcı yayın/veritabanı düzeni:** kişiseladminonboarding, hardexpiry'ninyenigerçekaraştırmaylayenilenmesi, sınırlıbütçeli kalıcıkaynakworker'ı ve hatauyarıları. ProductionProhazır ama cloudşema/veri/kişiselUUIDüyeliği/kalıcıRLSgeçişi ayrıaçı konaygerektirir. Mevcut42engeliaçma.
-3. **Google:** üçdoğrulanmışşube içinlisanslı güncelsunumubütçeonayıylatamamla; GutenMorgenbağımsızbölümünü doğrula, belirsizpuanıgizle. Mevcutkartlarda0Googlepuanıgerçekaçıkengel.
-4. **Ürün:** dörtşube veBrekkie'de hedeflikaynakaraştırması; güçlüuzmanincelemesininkesinşube/güncelmenüeşleşmesiniara. Şuanda0öneri, Story/Montagmenüsüvar. Standardıdüşürme.
-5. **Bulutmobilperformans:** 3run/sayfa,375/390/430, gerçek4kayıt, runtimeerror/sızıntıcheck; eksikLCPveSEOyu doğruçerçevele.
-6. **Son güvenlik/regresyon:** yenibuildsırtaraması, kişiselMFAQRakışı, logoutreplay, yetkisizDML, revizyonçatışması, eskiURL'ler ve manuelçıkarma/ekleme/undo. Yedektenizolegeridönüşprovası.
-7. **Korumalı VercelPreview:** hiçsecretkopyalamadan yalnızstagingruntimeanonconfig,HTTPS Securecookie/Origin/canonical, deploymentprotection,norobots. Servicekeytarayıcıdayok. Kullanıcıpush/deploymentonayıvermedenoluşturma.
-8. **Son canlıkapısı:** Google+gerçekürünşartları, veri/worker/yetki ve performansbaşarılmadan “yayınahazır”deme. Productionmigrationveveriaktarımıiçinkapsam/rollbackgöster, ayrıonayal.
+1. **Üçlü ortak içerik yönetimi:** insan paneli ve iki ajan için tek canonical bulut kaynak; yetkili, sürüm kontrollü araştırma girdisi, manuel override/undo, kaynak çelişkisinde ek araştırma. Panel/MFA yayın RPC'sini yeniden yazma; mevcut temeli koru. SQL cron'u yeni keşif motoru sanma.
+2. **Kalıcı yayın/veritabanı düzeni:** kişisel yönetici kurulumu, hard expiry'nin yeni gerçek araştırmayla yenilenmesi, sınırlı bütçeli kalıcı kaynak işçisi ve hata takibi. Production Pro hazır fakat cloud şema/veri/kişisel UUID üyeliği ve kalıcı RLS geçişi ayrı onay gerektirir. Mevcut 42 engeli açma.
+3. **Google:** üç doğrulanmış şube için lisanslı güncel sunumu yeni bütçe onayıyla tamamla. Guten Morgen bağımsız bölümünü doğrula; belirsiz puanı gizle. Mevcut kartlarda 0 Google puanı gerçek yayın engelidir.
+4. **Ürün:** dört şube ve Brekkie için hedefli kaynak araştırması; güçlü uzman incelemesinin kesin şube/güncel menü eşleşmesini ara. Şu an 0 güçlü öneri; Story/Montag menüsü var. Standardı düşürme.
+5. **Bulut mobil performans:** üç run/sayfa, 375/390/430 px, gerçek dört kayıt, runtime hata/sızıntı kontrolü; LCP ve SEO eksiklerini doğru raporla.
+6. **Son güvenlik/regresyon:** yeni build sır taraması, MFA QR kaydı, logout replay, yetkisiz DML, revizyon çatışması, eski URL'ler ve manuel ekleme/çıkarma/undo. Yedekten izole geri dönüş tatbikatı.
+7. **Korumalı Vercel Preview:** yalnız staging runtime bağlantısı, HTTPS Secure cookie/Origin/canonical, deployment protection ve noindex. Service key tarayıcıda olmaz. Push/deployment için kullanıcı onayı olmadan oluşturma.
+8. **Son canlı kapısı:** Google ve gerçek ürün şartları, veri/işçi/yetki ve performans başarılmadan “yayına hazır” deme. Production migration/veri aktarımının kapsam ve geri dönüş planını göster, ayrı onay al.
 
 ## 13. Güvenli koruma, erişim ve geri alma
 
-Devirpaketi: `/Users/erdems/Documents/Codex/yeriniayir-antigravity-handoff-20261101`. Kullanıcının aynı macOS hesabından okunabilir; projevepaketdosyasistemerişimikontroledildi. **Antigravityuygulamasınıniçinden dosyaaçıldığı/ajanınbaşlatıldığıtestedilmedi**; erişimyetkisioradaayrıcaonaygerektirebilir. Paketaktarımıiçine-posta/mesaj/pushyapılmadı.
+Devir paketi: `/Users/erdems/Documents/Codex/yeriniayir-antigravity-handoff-20261101`. Aynı macOS kullanıcısının proje ve paket dosya sistemi erişimi kontrol edildi. **Antigravity uygulamasının içinden dosya açıldığı veya ajanın başlatıldığı test edilmedi.** Uygulamanın kendi sandbox izni ayrıca gerekebilir. E-posta, mesaj veya push ile aktarım yapılmadı.
 
-`INVENTORY.json`: tümGitdurumları,symlinkler; `SNAPSHOTS.json`: kaynak/özelarşivSHAveverifikasyon; `COMMIT.json`: yeni güvenliktaranmışyerelcommit. Özelarşivler `.env`/yerelbağlantılar/yedekleri deiçerebilir: dizin0700,dosyalar0600; **Git'e,bulutdrive'a,sohbete veya halka açık URL'yekoyma.** Bunlar sırların korumalıkopyasıdır, dağıtılabilirkaynakpaketideğildir. `work/`Gitdışında kalır. Manifesttestsonuçlarını veya gövdelerinitopluziyaretçiyeaçma.
+`INVENTORY.json`: tüm Git durumları ve symlink'ler. `SNAPSHOTS.json`: kaynak/arşiv SHA ve doğrulama. `COMMIT.json`: güvenlik taramalı yerel commit. Özel arşivler .env, yerel bağlantı ayarları ve yedekler de içerebilir: dizin 0700, dosyalar 0600. **Git'e, bulut drive'a, sohbete veya halka açık URL'ye koyma.** Bunlar yalnız aynı bilgisayardaki korumalı kopyalardır. `work/` Git dışında kalır.
 
-Arşivler tümgerçekçalışmadosyalarını dahil eder; node_modules/.nextyenidenüretilebilir. Gitleizlenmeyenkaynaklar,araştırma/testçıktıları ve eskiGitobject/ref/worktreemetadatası da korunur. Orijinal worktreepointer'ları mutlak eskiyollara bağlıdır; `.git`dosyalarını farklıyereçıkarıppointer'larıkörlemesinekullanma.
+Arşivler kaynakları, izlenmeyen çalışmaları, araştırma/test çıktılarını ve Git metadata'sını içerir. Yeniden üretilebilir node_modules/.next/cache hariçtir; symlink'ler hedefi kopyalamadan korunur ve envanterde yazılıdır. Orijinal worktree pointer'ları eski mutlak yollara bağlıdır; başka yere çıkarınca körlemesine kullanma. Orijinal klasörleri silme veya taşıma.
 
-Geri alma: öncesha256'yımanifestlekontrol et; arşivi **yeniözelboşklasöre** çıkar, mevcutkopyanınüstüneaçma. gitreset--hard/clean kullanma. Sırlar0600kalmalı; testDB'yeproductiondumpsızdırma. Kodrollback cloud-adminyerelcommit/snapshotile, yayınıgeri alma yeniimmutableversionile yapılır. ProductionrollbackSQLyalnızayrıonayla; temporaryhold'unDROPkomutunuyereldebilehangiDBolduğunudoğrulamadançalıştırma.
+Geri alma: önce arşiv SHA'sını manifestle karşılaştır, arşivi **yeni, özel, boş klasöre** çıkar; mevcut kopyanın üstüne açma. `git reset --hard` veya `git clean` kullanma. Sırlar 0600 kalmalı. Production dump'ını staging'e kopyalama. Kod geri alma yerel commit/snapshot ile; yayın geri alma yeni değişmez sürümle yapılır. Production geri dönüş SQL'i yalnız ayrı onayla uygulanır.
 
-Devir sırasında yeni özellik, ücretli API, push, deployment, production değişikliği yapılmadı. İlk önce bu belgenin güncel durum notlarını oku; eski belgelerdeki tek saatlik lease ve “önceden doğrulanmış puan” ifadeleri güncel UI başarısı değildir.
+Bu devirde yeni özellik, ücretli API, push, deployment veya production değişikliği yapılmadı. Önce bu belgedeki güncel durum notlarını oku; eski belgelerdeki bir saatlik lease ve önceden doğrulanmış Google puanı ifadeleri bugünkü UI başarısı değildir.
