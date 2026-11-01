@@ -4,7 +4,7 @@ let checks=0;const pass=label=>{checks++;console.log('PASS '+label);};
 const m={exports:{}};new Function('require','module','exports',ts.transpileModule(fs.readFileSync('components/food/CategoryBar.tsx','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,jsx:ts.JsxEmit.ReactJSX}}).outputText)(require,m,m.exports);
 const categoryFixtures=[3,6,7].map(count=>renderToStaticMarkup(React.createElement(m.exports.CategoryBar,{categories:Array.from({length:count},(_,i)=>({slug:'test-'+i,label:i===0?'Mutlaka Denenmesi Gerekenler':['Kahve','Hamburger','Pizza','Kahvaltı','Tatlı ve Pastane','Yöresel Lezzetler'][i-1],isMustTry:i===0})),activeCategorySlug:'test-0',onSelectCategory:()=>{}})));
 (async()=>{
- const browser=await puppeteer.launch({headless:true,args:['--no-sandbox']});
+ const browser=await puppeteer.launch({headless:true,executablePath:process.env.PUPPETEER_EXECUTABLE_PATH||'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',args:['--no-sandbox']});
  try{
  const page=await browser.newPage(),errors=[],external=[],responses=[];
  page.on('pageerror',e=>errors.push(e.message));
