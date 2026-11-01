@@ -21,12 +21,12 @@ export function GooglePlaceRating({ ratings }: { ratings: readonly VisitorGoogle
         target="_blank"
         rel="noopener noreferrer"
         translate="no"
-        className="text-xs font-medium text-slate-500 hover:text-slate-800 underline decoration-slate-300 transition-colors"
+        className="inline-flex items-center min-h-[24px] py-1 text-xs font-medium text-slate-500 hover:text-slate-800 underline decoration-slate-300 transition-colors"
       >
         Google Maps
       </a>
       {rating.attribution.providers.map((p, i) => (
-        <a key={i} href={p.uri} target="_blank" rel="noopener noreferrer" className="text-xs text-slate-500 hover:underline">
+        <a key={i} href={p.uri} target="_blank" rel="noopener noreferrer" className="inline-flex items-center min-h-[24px] py-1 text-xs text-slate-500 hover:underline">
           {p.provider}
         </a>
       ))}
