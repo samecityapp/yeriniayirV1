@@ -1,3 +1,5 @@
+> **1 Kasım 2026 devir güncellemesi:** Güncel ana kaynak `../ANTIGRAVITY_HANDOFF.md`. Bu belgedeki önceki test raporu tarihidir. Staging cron kurulmuş, head8 ve published/unchanged işi salt okunur doğrulanmıştır; eski1saatliklease güncel değildir. Yeni internet araştırma işçisi, kişisel admin kurulumu, kart Google puanı ve bulut Lighthouse hâlâ açık. Son QR düzenlemesi typecheck/build geçti; tüm gerçek browserregresyonu tekrar edilmedi. Production42engeli korunur.
+
 # PROJECT HANDOFF — ANTIGRAVITY'DEN CODEX'E PROJE DEVİR RAPORU
 
 **Tarih:** 29 Ekim 2026  

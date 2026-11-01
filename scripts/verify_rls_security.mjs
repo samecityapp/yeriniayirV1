@@ -288,6 +288,19 @@ async function runRlsVerification() {
 
   await db.exec(`RESET ROLE;`);
 
+  await db.exec(`GRANT UPDATE ON public.profiles TO authenticated; ALTER TABLE public.profiles ADD COLUMN is_admin boolean DEFAULT false;`);
+  for (const column of ['role', 'is_admin']) {
+    await db.exec(`SET ROLE authenticated;`);
+    let blocked=false;
+    try { await db.exec(`UPDATE public.profiles SET ${column} = ${column==='role'?"'admin'":'true'};`); }
+    catch { blocked=true; }
+    await db.exec(`RESET ROLE;`);
+    results.push({test:'Authenticated cannot self-assign '+column,expected:'BLOCK',actual:blocked?'BLOCK':'ALLOW',passed:blocked});
+  }
+  await db.exec(`ALTER TABLE public.profiles DROP COLUMN role;`);
+  await db.query(`SELECT public.is_admin_user();`);
+  results.push({test:'Migration supports historical is_admin-only profiles schema',expected:'No missing-column error',actual:'PASS',passed:true});
+  await db.close();
   console.log('[AŞAMA 3] Test Sonuç Tablosu:');
   for (const r of results) {
     console.log(`  [${r.passed ? 'PASS ✅' : 'FAIL ❌'}] ${r.test}`);

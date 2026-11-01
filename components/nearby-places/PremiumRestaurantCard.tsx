@@ -1,0 +1,84 @@
+'use client';
+
+import React from 'react';
+import {VenueImage} from '@/components/food/VenueImage';
+import type { VisitorFoodVenue } from '@/lib/food/types';
+import { GooglePlaceRating } from '@/components/food/GooglePlaceRating';
+import { getLocalizedText } from '@/lib/localization';
+import { MapPin, Star, Utensils, ChevronRight } from 'lucide-react';
+
+interface PremiumRestaurantCardProps {
+  restaurant: VisitorFoodVenue;
+  onViewDetails: () => void;
+  lang?: 'tr' | 'en';
+  priority?: boolean;
+}
+
+export function PremiumRestaurantCard({
+  restaurant,
+  onViewDetails,
+  lang = 'tr',
+  priority = false,
+}: PremiumRestaurantCardProps) {
+
+
+  return (
+    <article data-venue-id={restaurant.id}
+      onClick={onViewDetails}
+      tabIndex={0}
+      role="button"
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onViewDetails();
+        }
+      }}
+      className="group relative w-full bg-white rounded-3xl border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] hover:shadow-[0_12px_32px_-4px_rgba(0,0,0,0.12)] active:scale-[0.99] transition-all duration-200 overflow-hidden cursor-pointer flex flex-col select-none touch-manipulation"
+      style={{ WebkitTapHighlightColor: 'transparent' }}
+    >
+      {/* 1. MEKAN FOTOĞRAFI (Geniş, oranlı, sade) */}
+      <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] overflow-hidden bg-slate-100">
+        <VenueImage visual={{url:restaurant.imageUrl,kind:restaurant.imageIsRepresentative?'illustration':'rights-cleared-photo',category:restaurant.imageCategory,venueId:restaurant.id,attribution:restaurant.imageAttribution}} priority={priority} className="group-hover:scale-105 transition-transform duration-500 ease-out" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent opacity-60" />
+
+        {/* Mobil dokunma ipucu */}
+        <div className="absolute top-3.5 right-3.5 w-8 h-8 rounded-full bg-white/90 backdrop-blur-md text-slate-800 flex items-center justify-center shadow-xs opacity-90 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-200">
+          <ChevronRight size={16} />
+        </div>
+      </div>
+
+      {/* İÇERİK: YALNIZCA 4 BİLGİ */}
+      <div className="p-4 sm:p-5 flex flex-col flex-1 justify-between gap-3">
+        {/* ÜST BLOK: Konum, Başlık ve Google Puanı */}
+        <div>
+          {/* 2. KONUM (Mahalle / Semt) */}
+          <div className="flex items-center gap-1 text-[11px] font-semibold text-slate-500 uppercase tracking-wider mb-1">
+            <MapPin size={12} className="text-blue-600 flex-shrink-0" />
+            <span className="truncate">{getLocalizedText(restaurant.location, lang)}</span>
+          </div>
+
+          {/* 1. MEKAN ADI */}
+          <h2 className="text-lg sm:text-xl font-black text-slate-950 tracking-tight leading-snug group-hover:text-blue-900 transition-colors">
+            {getLocalizedText(restaurant.name, lang)}
+          </h2>
+
+          {/* 3. GOOGLE MAPS PUANI (MOCKUP İLE BİREBİR: SADE PUAN ROZETİ) */}
+          <GooglePlaceRating ratings={restaurant.ratings} />
+        </div>
+
+        {/* ALT BLOK: 4. NE SİPARİŞ ETMELİ? (Doğrulanmış Ürün Kutusu) */}
+        {restaurant.orderSuggestion?.title && (
+          <div className="bg-blue-50/70 border border-blue-150 rounded-2xl p-3 sm:p-3.5 transition-colors group-hover:bg-blue-50 group-hover:border-blue-200">
+            <div className="flex items-center gap-1.5 text-[10px] font-extrabold uppercase tracking-wider text-blue-800 mb-1">
+              <Utensils size={13} className="text-blue-600" />
+              <span>Ne Sipariş Etmeli?</span>
+            </div>
+            <p className="text-xs sm:text-[13px] font-bold text-slate-900 leading-snug line-clamp-2">
+              {restaurant.orderSuggestion.title}
+            </p>
+          </div>
+        )}
+      </div>
+    </article>
+  );
+}

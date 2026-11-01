@@ -1,3 +1,13 @@
+# Güncel görev ve devir önceliği — 1 Kasım 2026
+
+Önce `ANTIGRAVITY_HANDOFF.md` oku. Önümüzdeki dört günün yürütücüsü Antigravity'dir. Başlangıç klasörü `/Users/erdems/Documents/Codex/yeriniayir-cloud-admin`, dal `feat/gastronomy-cloud-admin`; orijinal klasörler korunur. Yeni özellik değil yayın engelleri üzerinde çalış.
+
+Bu bölüm aşağıdaki eski pilot varsayımlarından üstündür: kategori üst sınırı7, “Mutlaka Denenmesi Gerekenler” yalnız uygun bölgelerde ilk; yürüyüş/rota geliştirilmez. Cloud auth gerçek Supabase üyeliği+MFA aal2 ister, Basic koruması bunun yerine kullanılamaz. Üç eski Google doğrulaması kartlarda güncel puan demek değildir; şu an cloud ratings boş. Menü ürününü tavsiye diye gösterme. Production42RESTRICTIVE engeli ayrı onay olmadan kaldırılmaz. Push/deployment/productionmigration/ücretliAPI ayrı onay gerektirir. node_modules symlink'i üzerinden bağımlılık değiştirme.
+
+Devir paketi `/Users/erdems/Documents/Codex/yeriniayir-antigravity-handoff-20261101`: özel arşivler yalnız yereldir, Git'e eklenmez. Kişisel parola/MFA kullanıcı tarafından girilir; ajan okumaz veya kaydetmez.
+
+---
+
 # AGENTS.md — OpenAI Codex & AI Geliştirici Kılavuzu
 
 Bu belge, **Yerini Ayır (`samecityapp/yeriniayirV1`)** projesinde çalışacak yapay zeka ajanları (OpenAI Codex, Antigravity, Claude, vb.) için bağlayıcı geliştirme ve güvenlik kurallarını içerir.

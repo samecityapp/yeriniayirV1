@@ -36,3 +36,29 @@ yarn-error.log*
 next-env.d.ts
 google-credentials.json
 .env*
+
+# Local-only research runs and source inspection scratch files
+/work/pilot-research/
+/work/research/
+/work/pilot-quality/
+/work/gastronomy-management/
+/work/quality-auditor/
+
+/work/focused-research/
+
+/work/source-access-pilot/
+
+/work/first-selection/
+/work/first-selection-search.log
+
+/work/google-places/
+
+/work/integration/
+
+/work/product-research/
+
+# All transient audits, snapshots and private research remain local
+/work/
+
+# Local CLI metadata; never publish account connection caches
+/supabase/.temp/

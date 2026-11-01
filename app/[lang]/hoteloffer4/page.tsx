@@ -82,7 +82,7 @@ export default function HotelOfferPageV4() {
                         {/* Quote Box - Minimalist */}
                         <div className="relative bg-gray-50 rounded-2xl p-8 border-l-4 border-black text-left max-w-3xl mx-auto shadow-sm">
                             <p className="text-xl text-gray-800 font-serif italic leading-relaxed">
-                                "Otelinizi yıl boyunca sosyal medya hesaplarımızda ve web sitemizde öne çıkarır, rezervasyonlarınızı artırırız."
+                                &quot;Otelinizi yıl boyunca sosyal medya hesaplarımızda ve web sitemizde öne çıkarır, rezervasyonlarınızı artırırız.&quot;
                             </p>
                         </div>
                     </div>
@@ -112,7 +112,7 @@ export default function HotelOfferPageV4() {
                                 <div className="w-12 h-12 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-8">
                                     <Zap className="w-6 h-6 text-black" />
                                 </div>
-                                <h3 className="text-2xl font-bold text-black mb-4">"0" Komisyon</h3>
+                                <h3 className="text-2xl font-bold text-black mb-4">&quot;0&quot; Komisyon</h3>
                                 <p className="text-gray-600 leading-relaxed text-base">
                                     Biz aradan çekilir, misafiri doğrudan size bağlarız. Sizinle misafir arasındaki bağı koparmayız. Komisyon almayız
                                 </p>

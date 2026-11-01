@@ -30,7 +30,7 @@ AS $$
       SELECT 1
       FROM public.profiles
       WHERE profiles.id = auth.uid()
-        AND profiles.role = 'admin'
+        AND ((to_jsonb(profiles) ->> 'role') = 'admin' OR (to_jsonb(profiles) ->> 'is_admin') = 'true')
     );
 $$;
 
@@ -133,3 +133,27 @@ CREATE POLICY "Admins can manage offers"
   TO authenticated
   USING (public.is_admin_user())
   WITH CHECK (public.is_admin_user());
+
+
+-- Profiles historically used either role or is_admin. RLS row ownership alone
+-- must never allow users to grant themselves administrative privileges.
+CREATE OR REPLACE FUNCTION public.prevent_profile_privilege_escalation()
+RETURNS trigger LANGUAGE plpgsql AS $$
+BEGIN
+  IF current_user NOT IN ('postgres', 'service_role', 'supabase_admin') THEN
+    IF TG_OP = 'INSERT' THEN
+      IF (to_jsonb(NEW)->>'role') = 'admin' OR (to_jsonb(NEW)->>'is_admin') = 'true' THEN
+        RAISE EXCEPTION 'Profile privilege assignment requires a trusted administrator';
+      END IF;
+    ELSIF (to_jsonb(NEW)->'role') IS DISTINCT FROM (to_jsonb(OLD)->'role')
+       OR (to_jsonb(NEW)->'is_admin') IS DISTINCT FROM (to_jsonb(OLD)->'is_admin') THEN
+      RAISE EXCEPTION 'Profile privilege changes require a trusted administrator';
+    END IF;
+  END IF;
+  RETURN NEW;
+END;
+$$;
+DROP TRIGGER IF EXISTS prevent_profile_privilege_escalation ON public.profiles;
+CREATE TRIGGER prevent_profile_privilege_escalation
+BEFORE INSERT OR UPDATE ON public.profiles
+FOR EACH ROW EXECUTE FUNCTION public.prevent_profile_privilege_escalation();

@@ -29,7 +29,7 @@ export default function TermsOfUse() {
 
                 {/* Giriş */}
                 <p>
-                    Bu Kullanım Şartları ("Şartlar"), <strong>Yerini Ayır</strong> platformu ("Site", "Hizmet") aracılığıyla sunulan tüm içerik ve hizmetlerden yararlanırken uymanız gereken koşulları düzenlemektedir.
+                    Bu Kullanım Şartları (&quot;Şartlar&quot;), <strong>Yerini Ayır</strong> platformu (&quot;Site&quot;, &quot;Hizmet&quot;) aracılığıyla sunulan tüm içerik ve hizmetlerden yararlanırken uymanız gereken koşulları düzenlemektedir.
                     Siteyi kullanmanız, bu Şartları okuduğunuzu, anladığınızı ve kabul ettiğinizi gösterir.
                 </p>
 
@@ -61,11 +61,11 @@ export default function TermsOfUse() {
                     <li>Üçüncü taraf (Booking.com vb.) sitelerdeki hatalı bilgiler.</li>
                     <li>Kullanıcının platforma teknik nedenlerle erişememesi.</li>
                 </ul>
-                <p>Platform "olduğu gibi" sunulur ve kusursuzluk garantisi vermez.</p>
+                <p>Platform &quot;olduğu gibi&quot; sunulur ve kusursuzluk garantisi vermez.</p>
 
                 <h3>5. Fikri Mülkiyet Hakları</h3>
                 <p>
-                    Platformdaki tüm içerikler (metinler, görseller, Yerini Ayır logosu, tasarım) Yerini Ayır'a aittir veya lisanslıdır.
+                    Platformdaki tüm içerikler (metinler, görseller, Yerini Ayır logosu, tasarım) Yerini Ayır&apos;a aittir veya lisanslıdır.
                     İzinsiz kopyalanması, çoğaltılması veya ticari amaçla kullanılması yasaktır.
                 </p>
 
