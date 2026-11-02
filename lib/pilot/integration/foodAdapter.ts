@@ -28,16 +28,28 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
  const illustrations=assignVenueIllustrations(data.venues);
  const distinctLocations: VisitorFoodDiscovery['locations'] = data.venues.length ? [
   {
-   id: data.region.id,
+   id: 'moda-kadikoy',
    level: 'semt',
-   name: data.region.name,
-   slug: data.region.slug,
-   path: [...data.region.path],
-   displayName: data.region.displayName,
+   name: 'Moda',
+   slug: 'moda',
+   path: ['istanbul', 'kadikoy', 'moda'],
+   displayName: 'Moda, Kadıköy, İstanbul',
    locative: "Moda'da",
    status: 'published',
    aliases: ['İstanbul', 'Kadıköy', 'Istanbul', 'Kadikoy', 'Moda'],
    scopeNote: 'Kadıköy · Moda (Yayında)'
+  },
+  {
+   id: 'yeldegirmeni-kadikoy',
+   level: 'semt',
+   name: 'Yeldeğirmeni',
+   slug: 'yeldegirmeni',
+   path: ['istanbul', 'kadikoy', 'yeldegirmeni'],
+   displayName: 'Yeldeğirmeni, Kadıköy, İstanbul',
+   locative: "Yeldeğirmeni'nde",
+   status: 'published',
+   aliases: ['Yeldegirmeni', 'Rasimpaşa', 'Rasimpasa', 'Karakolhane', 'İskele Sokak'],
+   scopeNote: 'Kadıköy · Yeldeğirmeni (Yayında)'
   },
   {
    id: 'kadikoy-merkez',
@@ -50,18 +62,6 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    status: 'coming_soon',
    aliases: ['Çarşı', 'Carsi', 'Rıhtım', 'Rihtim', 'Kadıköy Çarşı', 'Kadikoy Merkez'],
    scopeNote: 'Kadıköy · Çarşı (Araştırmada)'
-  },
-  {
-   id: 'yeldegirmeni',
-   level: 'semt',
-   name: 'Yeldeğirmeni',
-   slug: 'yeldegirmeni',
-   path: ['istanbul', 'kadikoy', 'yeldegirmeni'],
-   displayName: 'Yeldeğirmeni, Kadıköy, İstanbul',
-   locative: "Yeldeğirmeni'nde",
-   status: 'coming_soon',
-   aliases: ['Yeldegirmeni', 'Rasimpaşa', 'Rasimpasa', 'Karakolhane'],
-   scopeNote: 'Kadıköy · Yeldeğirmeni (Araştırmada)'
   },
   {
    id: 'caddebostan',
@@ -176,9 +176,11 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
 
    const catSlug=CATEGORY_SLUG_MAP[v.categoryId]||data.categorySlug;
    const catName=CATEGORY_NAME_MAP[v.categoryId]||'Gastronomi';
+   const regionName = data.region?.name || 'Moda';
+   const regionDisplayName = `${regionName}, Kadıköy`;
 
    return {
-    id:v.id,name:v.name,location:'Moda, Kadıköy',address:v.location,neighborhood:v.location,categoryName:catName,categorySlugs:[catSlug],
+    id:v.id,name:v.name,location:regionDisplayName,address:v.location,neighborhood:v.location,categoryName:catName,categorySlugs:[catSlug],
     tagline:description,
     imageUrl:illustrations.get(v.id)!,imageIsRepresentative:true,imageCategory:v.categoryId,
     ratings:resolvedRatings,

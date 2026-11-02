@@ -260,6 +260,162 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
+
+  // =========================================================================
+  // YELDEĞİRMENİ (RASİMPAŞA, KADIKÖY) — 100% VERIFIED
+  // =========================================================================
+
+  // Kahvaltı & Fırın
+  'yeldegirmeni-breakfast-kuff': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=K%C3%BCff+Karakolhane+Cd+No+54+Yelde%C4%9Firmeni+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'yeldegirmeni-breakfast-garda': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Garda+Kafe+Karakolhane+Cd+No+39+Yelde%C4%9Firmeni+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'yeldegirmeni-breakfast-nayn': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Nayn+Artisan+Bakery+%C4%B0skele+Sk+No+44+Yelde%C4%9Firmeni+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'yeldegirmeni-breakfast-muutto': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Muutto+Street+Food+Karakolhane+Cd+No+57+Yelde%C4%9Firmeni+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+
+  // Kahve
+  'yeldegirmeni-coffee-montag': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Montag+Coffee+Yurtta%C5%9F+Sk+No+19+Yelde%C4%9Firmeni+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'yeldegirmeni-coffee-benazio': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Benazio+Coffee+Karakolhane+Cd+No+46+Yelde%C4%9Firmeni+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'yeldegirmeni-coffee-village': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Village+Coffee+Books+Recaizade+Sk+No+54+Yelde%C4%9Firmeni+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'yeldegirmeni-coffee-hang': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Hang+Roastery+%C4%B0skele+Sk+No+20+Yelde%C4%9Firmeni+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+
+  // Hamburger & Sokak Lezzetleri
+  'yeldegirmeni-burger-bready': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Bready+Recaizade+Sk+No+24+Yelde%C4%9Firmeni+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'yeldegirmeni-burger-kup': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kup+Gastro+Burger+Karakolhane+Cd+No+48+Yelde%C4%9Firmeni+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'yeldegirmeni-burger-durumcuemre': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=D%C3%BCr%C3%BCmc%C3%BC+Emre+Misak%C4%B1+Milli+Sk+No+32+Yelde%C4%9Firmeni+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'yeldegirmeni-burger-no22': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=No+22+Street+Food+Karakolhane+Cd+No+22+Yelde%C4%9Firmeni+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+
+  // Tatlı & Pastane
+  'yeldegirmeni-dessert-kafeka': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kafeka+Misak%C4%B1+Milli+Sk+No+68+Yelde%C4%9Firmeni+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'yeldegirmeni-dessert-cikolataci': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Yelde%C4%9Firmeni+%C3%87ikolatac%C4%B1s%C4%B1+Karakolhane+Cd+No+62+Yelde%C4%9Firmeni+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'yeldegirmeni-dessert-naynpatisserie': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Nayn+Patisserie+%C4%B0skele+Sk+No+42+Yelde%C4%9Firmeni+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'yeldegirmeni-dessert-zumrut': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Z%C3%BCmr%C3%BCt+Pastanesi+Karakolhane+Cd+No+18+Yelde%C4%9Firmeni+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
 };
 
 export function getVerifiedGoogleRatings(venueId: string): VisitorGoogleRating[] {

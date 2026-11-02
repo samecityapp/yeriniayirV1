@@ -290,42 +290,314 @@ const MODA_NON_COFFEE_VENUES: VisitorVenueData[] = [
   },
 ];
 
-export function buildIntegrationDiscovery(cards:VisitorVenueData[],region='moda',category='kahve'):IntegrationDiscovery|null {
- // No geographic fallback: a URL never receives another region's cards.
- if(region!=='moda')return null;
- const coffeeVenues=cards.filter(c=>c.categoryId==='coffee');
- const allVenues=[...coffeeVenues, ...MODA_NON_COFFEE_VENUES];
+export const YELDEGIRMENI_CATEGORIES = [
+  { slug: 'kahvalti', id: 'breakfast', label: 'Kahvaltı & Fırın', isMustTry: false },
+  { slug: 'kahve', id: 'coffee', label: 'Kahve', isMustTry: false },
+  { slug: 'hamburger', id: 'burger', label: 'Sokak Lezzetleri & Burger', isMustTry: false },
+  { slug: 'tatli-pastane', id: 'dessert', label: 'Tatlı & Pastane', isMustTry: false },
+];
 
- return {schemaVersion:1,dataKind:'real-research',mode:'integration-preparation',productionPublished:false,
-  region:{id:'moda-kadikoy',slug:'moda',name:'Moda',displayName:'Moda, Kadıköy, İstanbul',path:['istanbul','kadikoy','moda']},
-  categories:MODA_CATEGORIES,categorySlug:category||'kahve',
-  venues:allVenues.map(v=>({id:v.id,name:v.name,location:v.location,categoryId:v.categoryId,description:v.description,
-   whatToOrder:[...v.whatToOrder],menuFrom:[...(v.menuFrom||[])],alsoTry:[...v.alsoTry],beforeYouGo:[...v.beforeYouGo],photo:v.photo?{url:v.photo.url}:null,ratings:copyVisitorGoogleRatings(v.ratings)})),rituals:[]};
+export const YELDEGIRMENI_VENUES: VisitorVenueData[] = [
+  // Kahvaltı & Fırın (100% Yeldeğirmeni)
+  {
+    id: 'yeldegirmeni-breakfast-kuff',
+    name: 'Küff Yeldeğirmeni',
+    location: 'Karakolhane Cd. No:54, Yeldeğirmeni',
+    categoryId: 'breakfast',
+    description: null,
+    whatToOrder: [],
+    menuFrom: [],
+    alsoTry: [],
+    beforeYouGo: [],
+    photo: null,
+    ratings: [],
+  },
+  {
+    id: 'yeldegirmeni-breakfast-garda',
+    name: 'Garda Kafe',
+    location: 'Karakolhane Cd. No:39, Yeldeğirmeni',
+    categoryId: 'breakfast',
+    description: null,
+    whatToOrder: [],
+    menuFrom: [],
+    alsoTry: [],
+    beforeYouGo: [],
+    photo: null,
+    ratings: [],
+  },
+  {
+    id: 'yeldegirmeni-breakfast-nayn',
+    name: 'Nayn Artisan Bakery',
+    location: 'İskele Sk. No:44, Yeldeğirmeni',
+    categoryId: 'breakfast',
+    description: null,
+    whatToOrder: [],
+    menuFrom: [],
+    alsoTry: [],
+    beforeYouGo: [],
+    photo: null,
+    ratings: [],
+  },
+  {
+    id: 'yeldegirmeni-breakfast-muutto',
+    name: 'Muutto Street Food & Bar',
+    location: 'Karakolhane Cd. No:57, Yeldeğirmeni',
+    categoryId: 'breakfast',
+    description: null,
+    whatToOrder: [],
+    menuFrom: [],
+    alsoTry: [],
+    beforeYouGo: [],
+    photo: null,
+    ratings: [],
+  },
+
+  // Kahve (100% Yeldeğirmeni)
+  {
+    id: 'yeldegirmeni-coffee-montag',
+    name: 'Montag Coffee Roasters',
+    location: 'Yurttaş Sk. No:19, Yeldeğirmeni',
+    categoryId: 'coffee',
+    description: null,
+    whatToOrder: [],
+    menuFrom: [],
+    alsoTry: [],
+    beforeYouGo: [],
+    photo: null,
+    ratings: [],
+  },
+  {
+    id: 'yeldegirmeni-coffee-benazio',
+    name: 'Benazio Coffee',
+    location: 'Karakolhane Cd. No:46, Yeldeğirmeni',
+    categoryId: 'coffee',
+    description: null,
+    whatToOrder: [],
+    menuFrom: [],
+    alsoTry: [],
+    beforeYouGo: [],
+    photo: null,
+    ratings: [],
+  },
+  {
+    id: 'yeldegirmeni-coffee-village',
+    name: 'Village Coffee & Books',
+    location: 'Recaizade Sk. No:54/A, Yeldeğirmeni',
+    categoryId: 'coffee',
+    description: null,
+    whatToOrder: [],
+    menuFrom: [],
+    alsoTry: [],
+    beforeYouGo: [],
+    photo: null,
+    ratings: [],
+  },
+  {
+    id: 'yeldegirmeni-coffee-hang',
+    name: 'Hang Roastery',
+    location: 'İskele Sk. No:20, Yeldeğirmeni',
+    categoryId: 'coffee',
+    description: null,
+    whatToOrder: [],
+    menuFrom: [],
+    alsoTry: [],
+    beforeYouGo: [],
+    photo: null,
+    ratings: [],
+  },
+
+  // Hamburger & Sokak Lezzetleri (100% Yeldeğirmeni)
+  {
+    id: 'yeldegirmeni-burger-bready',
+    name: 'Bready Yeldeğirmeni',
+    location: 'Recaizade Sk. No:24, Yeldeğirmeni',
+    categoryId: 'burger',
+    description: null,
+    whatToOrder: [],
+    menuFrom: [],
+    alsoTry: [],
+    beforeYouGo: [],
+    photo: null,
+    ratings: [],
+  },
+  {
+    id: 'yeldegirmeni-burger-kup',
+    name: 'Kup Gastro Burger',
+    location: 'Karakolhane Cd. No:48, Yeldeğirmeni',
+    categoryId: 'burger',
+    description: null,
+    whatToOrder: [],
+    menuFrom: [],
+    alsoTry: [],
+    beforeYouGo: [],
+    photo: null,
+    ratings: [],
+  },
+  {
+    id: 'yeldegirmeni-burger-durumcuemre',
+    name: 'Dürümcü Emre',
+    location: 'Misak-ı Milli Sk. No:32, Yeldeğirmeni',
+    categoryId: 'burger',
+    description: null,
+    whatToOrder: [],
+    menuFrom: [],
+    alsoTry: [],
+    beforeYouGo: [],
+    photo: null,
+    ratings: [],
+  },
+  {
+    id: 'yeldegirmeni-burger-no22',
+    name: 'No:22 Street Food',
+    location: 'Karakolhane Cd. No:22, Yeldeğirmeni',
+    categoryId: 'burger',
+    description: null,
+    whatToOrder: [],
+    menuFrom: [],
+    alsoTry: [],
+    beforeYouGo: [],
+    photo: null,
+    ratings: [],
+  },
+
+  // Tatlı & Pastane (100% Yeldeğirmeni)
+  {
+    id: 'yeldegirmeni-dessert-kafeka',
+    name: 'Kafeka Yeldeğirmeni',
+    location: 'Misak-ı Milli Sk. No:68, Yeldeğirmeni',
+    categoryId: 'dessert',
+    description: null,
+    whatToOrder: [],
+    menuFrom: [],
+    alsoTry: [],
+    beforeYouGo: [],
+    photo: null,
+    ratings: [],
+  },
+  {
+    id: 'yeldegirmeni-dessert-cikolataci',
+    name: 'Yeldeğirmeni Çikolatacısı',
+    location: 'Karakolhane Cd. No:62, Yeldeğirmeni',
+    categoryId: 'dessert',
+    description: null,
+    whatToOrder: [],
+    menuFrom: [],
+    alsoTry: [],
+    beforeYouGo: [],
+    photo: null,
+    ratings: [],
+  },
+  {
+    id: 'yeldegirmeni-dessert-naynpatisserie',
+    name: 'Nayn Pâtisserie',
+    location: 'İskele Sk. No:42, Yeldeğirmeni',
+    categoryId: 'dessert',
+    description: null,
+    whatToOrder: [],
+    menuFrom: [],
+    alsoTry: [],
+    beforeYouGo: [],
+    photo: null,
+    ratings: [],
+  },
+  {
+    id: 'yeldegirmeni-dessert-zumrut',
+    name: 'Zümrüt Pastanesi & Çay Evi',
+    location: 'Karakolhane Cd. No:18, Yeldeğirmeni',
+    categoryId: 'dessert',
+    description: null,
+    whatToOrder: [],
+    menuFrom: [],
+    alsoTry: [],
+    beforeYouGo: [],
+    photo: null,
+    ratings: [],
+  },
+];
+
+export const REGIONAL_CONFIGS: Record<string, {
+  region: { id: string; slug: string; name: string; displayName: string; path: string[] };
+  categories: { slug: string; id: string; label: string; isMustTry: boolean }[];
+  venues: VisitorVenueData[];
+}> = {
+  moda: {
+    region: { id: 'moda-kadikoy', slug: 'moda', name: 'Moda', displayName: 'Moda, Kadıköy, İstanbul', path: ['istanbul', 'kadikoy', 'moda'] },
+    categories: MODA_CATEGORIES,
+    venues: MODA_NON_COFFEE_VENUES,
+  },
+  yeldegirmeni: {
+    region: { id: 'yeldegirmeni-kadikoy', slug: 'yeldegirmeni', name: 'Yeldeğirmeni', displayName: 'Yeldeğirmeni, Kadıköy, İstanbul', path: ['istanbul', 'kadikoy', 'yeldegirmeni'] },
+    categories: YELDEGIRMENI_CATEGORIES,
+    venues: YELDEGIRMENI_VENUES,
+  },
+};
+
+export function buildIntegrationDiscovery(cards:VisitorVenueData[],region='moda',category='kahve'):IntegrationDiscovery|null {
+ const regConfig = REGIONAL_CONFIGS[region];
+ if(!regConfig)return null;
+
+ let allVenues = regConfig.venues;
+ if (region === 'moda') {
+  const coffeeVenues = cards.filter(c => c.categoryId === 'coffee');
+  const existingIds = new Set(coffeeVenues.map(c => c.id));
+  allVenues = [...coffeeVenues, ...regConfig.venues.filter(v => !existingIds.has(v.id))];
+ }
+
+ const targetCategory = category || regConfig.categories[0]?.slug || 'kahve';
+
+ return {
+  schemaVersion: 1,
+  dataKind: 'real-research',
+  mode: 'integration-preparation',
+  productionPublished: false,
+  region: regConfig.region,
+  categories: regConfig.categories,
+  categorySlug: targetCategory,
+  venues: allVenues.map(v => ({
+   id: v.id,
+   name: v.name,
+   location: v.location,
+   categoryId: v.categoryId,
+   description: v.description,
+   whatToOrder: [...v.whatToOrder],
+   menuFrom: [...(v.menuFrom || [])],
+   alsoTry: [...v.alsoTry],
+   beforeYouGo: [...v.beforeYouGo],
+   photo: v.photo ? { url: v.photo.url } : null,
+   ratings: copyVisitorGoogleRatings(v.ratings),
+  })),
+  rituals: [],
+ };
 }
+
 // Retain only our own visitor content; future licensed ratings bypass retained caching.
 const cachedVisitor=createVisitorCache<IntegrationDiscovery|null>(30_000,4,data=>!data?.venues.some(v=>v.ratings.length));
 export async function readIntegrationDiscovery(region='moda',category='kahve'){
- if(region!=='moda')return null;
+ const regConfig = REGIONAL_CONFIGS[region];
+ if(!regConfig)return null;
+ const targetCategory = category || regConfig.categories[0]?.slug || 'kahve';
+
  let data: IntegrationDiscovery | null = null;
  if(process.env.GASTRONOMY_DATA_SOURCE==='supabase'){
   try {
    const {readCloudPublication}=await import('../../cloud/publication');
-   data = await readCloudPublication(region+'/'+(category || 'kahve'));
+   data = await readCloudPublication(region+'/'+targetCategory);
   } catch {}
  }
  if(!data){
   const version=await visitorSourceVersion();
-  data = await cachedVisitor(`${region}/${category}/${version}`,async()=>{
-   const selection=await readVisitorVenueSelection('moda-kadikoy','coffee');
-   return buildIntegrationDiscovery(selection.cards,region,category);
+  data = await cachedVisitor(`${region}/${targetCategory}/${version}`,async()=>{
+   const selection=await readVisitorVenueSelection(regConfig.region.id,'coffee');
+   return buildIntegrationDiscovery(selection.cards,region,targetCategory);
   });
  }
  if(data){
   const existingIds = new Set(data.venues.map(v => v.id));
-  const missing = MODA_NON_COFFEE_VENUES.filter(v => !existingIds.has(v.id));
+  const missing = regConfig.venues.filter(v => !existingIds.has(v.id));
   return {
    ...data,
-   categories: MODA_CATEGORIES,
+   region: regConfig.region,
+   categories: regConfig.categories,
    venues: [...data.venues, ...missing]
   };
  }

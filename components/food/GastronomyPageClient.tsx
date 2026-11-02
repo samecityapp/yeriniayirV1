@@ -94,9 +94,9 @@ export function GastronomyPageClient({
 
       setSelectedCategorySlug(nextCategorySlug);
 
-      // URL senkronizasyonu
+      // URL senkronizasyonu ve sunucu tarafı bölge yüklemesi
       const newUrl = `/${lang}?region=${loc.slug}&category=${nextCategorySlug}`;
-      window.history.pushState(null,'',newUrl);
+      router.push(newUrl);
     },
     [lang, selectedCategorySlug, foodDiscoveryProvider, router]
   );

@@ -300,6 +300,178 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Deniz kenarı açık masalar için gün batımı saatine rezervasyon önerilir.',
       'Akşamları akustik canlı dinletiler olabilir.'
     ]
+  },
+
+  // =========================================================================
+  // YELDEĞİRMENİ (RASİMPAŞA, KADIKÖY)
+  // =========================================================================
+
+  // Kahvaltı & Fırın
+  'yeldegirmeni-breakfast-kuff': {
+    description: "Karakolhane Caddesi üzerinde tarihi Yeldeğirmeni dokusunda sahanda sıcaklar, taze pişiler ve doyurucu kahvaltı tabakları sunan dinamik mahalle buluşma noktası.",
+    whatToOrder: ['Döküm Tavada Menemen', 'Sıcak Pişi & Peynir'],
+    menuFrom: ['Küff Kahvaltı Tabağı', 'Otlu Omlet', 'Ev Yapımı Reçeller'],
+    alsoTry: ['Köz patlıcanlı kahvaltı salatası'],
+    beforeYouGo: [
+      'Hafta sonu sabah saatlerinde sıra oluşabilir.',
+      'Yeldeğirmeni mural sokaklarına yürüme mesafesindedir.'
+    ]
+  },
+  'yeldegirmeni-breakfast-garda': {
+    description: "Tarihi Haydarpaşa Garı demiryolu ruhunu yansıtan atmosferinde Ege tipi kahvaltı tabakları, ev yapımı reçeller ve sahanda yumurta çeşitleri sunuyor.",
+    whatToOrder: ['Garda Ege Kahvaltısı', 'Kavurmalı Sahanda Yumurta'],
+    menuFrom: ['Köy Peyniri Tabağı', 'Ev Yapımı Çilek Reçeli', 'Sıcak Çay Servisi'],
+    alsoTry: ['Zeytin ezmeli kızarmış ekmek'],
+    beforeYouGo: [
+      'İç mekan nostaljik tren ve demiryolu hatıralarıyla dekore edilmiştir.',
+      'Sakin sabah saatlerinde keyifli bir mahalle kahvaltısı sunar.'
+    ]
+  },
+  'yeldegirmeni-breakfast-nayn': {
+    description: "İskele Sokak'ta taş değirmen unlarıyla günlük ekşi mayalı artizan ekmekler, taze kruvasanlar ve hafif kahvaltı alternatifleri üreten butik fırın.",
+    whatToOrder: ['Bademli Kruvasan', 'Ekşi Mayalı Çırpılmış Yumurta'],
+    menuFrom: ['Kruvasan Sandviç', 'Köy Ekmeği Dilimleri', 'Granola Kasesi'],
+    alsoTry: ['Taze fırından çıkan zeytinli kekikli somun'],
+    beforeYouGo: [
+      'Kruvasanlar sabah saatlerinde taze çıkar; öğleden sonraya tükenme ihtimali yüksektir.',
+      'Sınırlı sayıda dış oturma masası bulunur.'
+    ]
+  },
+  'yeldegirmeni-breakfast-muutto': {
+    description: "Şef dokunuşlu çağdaş sokak lezzetleri ve ekşi mayalı lavaş dürümleriyle Yeldeğirmeni'nde yaratıcı kahvaltı ve öğle alternatifleri sunuyor.",
+    whatToOrder: ['Ekşi Mayalı Kahvaltı Dürümü', 'Tiftik Etli Çıtır Tabak'],
+    menuFrom: ['Şef Dürümü', 'Füme Kaburga', 'Yoğurtlu Soslar'],
+    alsoTry: ['Sumaklı ev yapımı patates cipsi'],
+    beforeYouGo: [
+      'Sokak lezzetleri konseptinde hızlı ve samimi servis sunar.',
+      'Öğle saatlerinde yoğunluk olabilir.'
+    ]
+  },
+
+  // Kahve
+  'yeldegirmeni-coffee-montag': {
+    description: "Yurttaş Sokak'ta kendi kavurduğu seçkin tek köken çekirdekleri V60 pour-over ve espresso tabanlı içeceklerle sunan çağdaş kahve kavurucusu.",
+    whatToOrder: ['Ethiopia Yirgacheffe V60', 'Flat White'],
+    menuFrom: ['Espresso', 'Cortado', 'Cold Brew', 'Filtre Kahve'],
+    alsoTry: ['Kendi kavurdukları perakende çekirdek seçkisi'],
+    beforeYouGo: [
+      'Sakin müzikler eşliğinde çalışma ve okuma için elverişlidir.',
+      'Filtre kahve demlemelerinde çekirdek profilleri sorulabilir.'
+    ]
+  },
+  'yeldegirmeni-coffee-benazio': {
+    description: "Karakolhane Caddesi üzerinde samimi oturma düzeni, dengeli espresso harmanları ve taze günlük tatlılarıyla bilinen Yeldeğirmeni klasiği.",
+    whatToOrder: ['Cortado', 'Soğuk Demleme (Cold Brew)'],
+    menuFrom: ['Americano', 'Caffe Latte', 'V60 Drip', 'Brownie'],
+    alsoTry: ['Filtre kahve yanında ev yapımı cevizli brownie'],
+    beforeYouGo: [
+      'Karakolhane Caddesi hareketliliğini izleyen cephe masaları popülerdir.',
+      'Günün her saatinde hızlı kahve molası için uygundur.'
+    ]
+  },
+  'yeldegirmeni-coffee-village': {
+    description: "Recaizade Sokak'ta kitap raflarıyla çevrili sessiz ortamında taze demlenmiş filtre kahve ve çay çeşitleri sunan kültür-kafe durağı.",
+    whatToOrder: ['Günün Filtre Kahvesi', 'Chai Tea Latte'],
+    menuFrom: ['Latte', 'Bitki Çayları', 'Cookie', 'Kek'],
+    alsoTry: ['Zencefilli ev yapımı kurabiye'],
+    beforeYouGo: [
+      'Uzun süreli okuma ve bilgisayarla çalışma için sakin bir alandır.',
+      'İçeride zengin bir kitaplık seçkisi mevcuttur.'
+    ]
+  },
+  'yeldegirmeni-coffee-hang': {
+    description: "İskele Sokak'ta mikro partiler halinde kavrulan nitelikli çekirdekleri taze öğütümle pour-over ve sütlü kahvelerle buluşturan butik roastery.",
+    whatToOrder: ['Honduras V60', 'Iced Americano'],
+    menuFrom: ['Espresso Tonic', 'Cappuccino', 'Single Origin Filtre'],
+    alsoTry: ['Mevsimlik soğuk kahve kombinasyonları'],
+    beforeYouGo: [
+      'Çekirdek profilleri hakkında baristalardan tadım bilgisi alınabilir.',
+      'Dış cephedeki ahşap taburelerde hızlı tüketim tercih edilir.'
+    ]
+  },
+
+  // Hamburger & Sokak Lezzetleri
+  'yeldegirmeni-burger-bready': {
+    description: "Recaizade Sokak'ta tiftiklenmiş dana kaburga, özel soslar ve yumuşak tereyağlı brioche ekmekleriyle hazırlanan gurme burgerler sunuyor.",
+    whatToOrder: ['Truffle Smash Burger', 'Tiftik Kaburga Brioche'],
+    menuFrom: ['Cheeseburger', 'Çıtır Tavuk Sandviç', 'Baharatlı Patates'],
+    alsoTry: ['Trüf mayonezli çıtır patates'],
+    beforeYouGo: [
+      'Mekan butik ölçeklidir; paket servis ve hızlı tüketim için de elverişlidir.',
+      'Siparişler taze ve sıcak hazırlanır.'
+    ]
+  },
+  'yeldegirmeni-burger-kup': {
+    description: "Karakolhane Caddesi'nde el yapımı kıyma köftesi, karamelize soğan ve taze malzemelerle hazırlanan doyurucu gastro burgerler sunuyor.",
+    whatToOrder: ['Kup Klasik Burger', 'Füme Etli Burger'],
+    menuFrom: ['Double Burger', 'Cheddarlı Patates', 'Ev Yapımı Soslar'],
+    alsoTry: ['Çıtır soğan halkaları eşliğinde özel acı sos'],
+    beforeYouGo: [
+      'Sipariş üzerine taze pişirildiği için yoğun saatlerde 10-15 dakika hazırlanma süresi olabilir.',
+      'Porsiyonlar doyurucu ölçektedir.'
+    ]
+  },
+  'yeldegirmeni-burger-durumcuemre': {
+    description: "Misak-ı Milli Sokak'ta mangal ateşinde zırh kıymasıyla hazırlanan kebaplar ve lavaş dürümleriyle mahallenin köklü esnaf lezzet noktası.",
+    whatToOrder: ['Zırh Kıyması Adana Dürüm', 'Közde Tavuk Şiş Dürüm'],
+    menuFrom: ['Urfa Dürüm', 'Çöp Şiş', 'Köz Biber & Domates', 'Açık Ayran'],
+    alsoTry: ['Közlenmiş sarımsak ve acılı ezme garnitürü'],
+    beforeYouGo: [
+      'Hızlı ve pratik bir esnaf sokak lezzeti deneyimidir.',
+      'Öğle saatlerinde mahalle esnafı tarafından yoğun ziyaret edilir.'
+    ]
+  },
+  'yeldegirmeni-burger-no22': {
+    description: "Karakolhane üzerinde sokak lezzetleri, çıtır sosisliler ve özel soslu atıştırmalık tabaklarıyla genç ve dinamik bir mola noktası.",
+    whatToOrder: ['No:22 Gurme Sosisli', 'Cheddarlı Çıtır Tavuk'],
+    menuFrom: ['Hot Dog', 'Patates Kovası', 'Soğuk İçecekler'],
+    alsoTry: ['Ballı hardallı çıtır tavuk parçaları'],
+    beforeYouGo: [
+      'Ayakta ve küçük dış masalarda hızlı tüketime uygundur.',
+      'Sokak lezzeti atıştırmalığı olarak tercih edilir.'
+    ]
+  },
+
+  // Tatlı & Pastane
+  'yeldegirmeni-dessert-kafeka': {
+    description: "Misak-ı Milli Sokak'ta akışkan kıvamlı San Sebastian cheesecake'i ve günlük ev yapımı tatlılarıyla Yeldeğirmeni'nin sevilen tatlı durağı.",
+    whatToOrder: ['San Sebastian Cheesecake', 'Fıstıklı Brownie'],
+    menuFrom: ['Lotus Cheesecake', 'Tiramisu', 'Magnolia', 'Filtre Kahve'],
+    alsoTry: ['Sıcak Belçika çikolatası sosu ilavesiyle cheesecake'],
+    beforeYouGo: [
+      'Akşamüstü saatlerinde taze çıkan dilimler hızla tükenebilir.',
+      'Kahve yanı tatlı molası için samimi bir iç mekânı vardır.'
+    ]
+  },
+  'yeldegirmeni-dessert-cikolataci': {
+    description: "Karakolhane üzerinde eritme sıcak çikolatalı meyve kupları, el yapımı trüfler ve çikolatalı kahve eşleşmeleri sunan butik dükkan.",
+    whatToOrder: ['Çikolatalı Çilek Kupası', 'Sıcak Eritme Çikolata'],
+    menuFrom: ['Trüf Çikolata', 'Çikolatalı Waffle Dilimi', 'Filtre Kahve'],
+    alsoTry: ['Portakallı bitter el yapımı tablet çikolata'],
+    beforeYouGo: [
+      'Paket kutularda hediye çikolata seçeneği mevcuttur.',
+      'Küçük ve butik bir işletmedir.'
+    ]
+  },
+  'yeldegirmeni-dessert-naynpatisserie': {
+    description: "İskele Sokak'ta Fransız pastacılık teknikleriyle hazırlanan çıtır eklerler, tartlar ve meyveli pötifurlar sunan artizan pastane köşesi.",
+    whatToOrder: ['Karamelli Paris-Brest', 'Meyveli Çıtır Tart'],
+    menuFrom: ['Vanilyalı Ekler', 'Limonlu Mereng Tart', 'Kruvasan'],
+    alsoTry: ['Taze vanilya çekirdekli pastacı kremasıyla hazırlanan ekler'],
+    beforeYouGo: [
+      'Günlük sınırlı porsiyonlarda taze üretilir.',
+      'Özel tatlılar erken saatlerde tükenebilir.'
+    ]
+  },
+  'yeldegirmeni-dessert-zumrut': {
+    description: "Karakolhane'nin en eski tatlıcılarından biri olarak geleneksel çıtır tulumba tatlısı, fırın sütlaç ve şerbetli klasik lezzetler sunuyor.",
+    whatToOrder: ['Çıtır Sıcak Tulumba', 'Fırın Sütlaç'],
+    menuFrom: ['Şekerpare', 'Kemalpaşa', 'Profiterol', 'Demleme Çay'],
+    alsoTry: ['Geleneksel demleme çay eşliğinde sıcak çıtır tulumba'],
+    beforeYouGo: [
+      'Nostaljik ve samimi bir mahalle tatlıcısı atmosferindedir.',
+      'Paket kutu satışı yaygındır.'
+    ]
   }
 };
 
