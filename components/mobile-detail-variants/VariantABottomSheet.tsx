@@ -24,6 +24,8 @@ interface VariantAParseProps {
 
 export function VariantABottomSheet({ restaurant, onClose, lang = 'tr' }: VariantAParseProps) {
   const modalRef=useModalFocus(true,onClose);
+  const mapsUrl = restaurant.ratings?.[0]?.attribution?.mapsUri ||
+    `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(getLocalizedText(restaurant.name, lang) + ' ' + (restaurant.address || restaurant.neighborhood || getLocalizedText(restaurant.location, lang)))}`;
 
   return (
     <div 
@@ -67,11 +69,17 @@ export function VariantABottomSheet({ restaurant, onClose, lang = 'tr' }: Varian
             <h2 id="venue-detail-title" className="text-xl sm:text-2xl font-black tracking-tight drop-shadow-xs">
               {getLocalizedText(restaurant.name, lang)}
             </h2>
-            <div className="flex items-center gap-1.5 text-xs text-white/90 mt-1">
-              <MapPin size={13} className="text-blue-400 flex-shrink-0" />
-              <span className="font-medium truncate">{restaurant.neighborhood || getLocalizedText(restaurant.location, lang)}</span>
-
-            </div>
+            <a
+              href={mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-xs text-white/95 hover:text-white mt-1 group/map transition-colors"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <MapPin size={13} className="text-blue-400 flex-shrink-0 group-hover/map:scale-110 transition-transform" />
+              <span className="font-medium truncate underline decoration-white/40">{restaurant.neighborhood || getLocalizedText(restaurant.location, lang)}</span>
+              <ExternalLink size={11} className="opacity-75" />
+            </a>
           </div>
         </div>
 
@@ -145,6 +153,19 @@ export function VariantABottomSheet({ restaurant, onClose, lang = 'tr' }: Varian
             </div>
           )}
 
+          {/* 5. GOOGLE HARİTALAR'DA AÇ BUTONU */}
+          <div className="pt-2">
+            <a
+              href={mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-2xl bg-blue-600 hover:bg-blue-700 active:scale-[0.98] text-white font-bold text-sm shadow-md shadow-blue-500/25 transition-all"
+            >
+              <MapPin size={16} />
+              <span>Google Haritalar&#39;da Konumu Gör</span>
+              <ExternalLink size={14} />
+            </a>
+          </div>
 
         </div>
       </div>

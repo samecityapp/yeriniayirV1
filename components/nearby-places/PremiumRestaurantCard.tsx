@@ -5,7 +5,7 @@ import {VenueImage} from '@/components/food/VenueImage';
 import type { VisitorFoodVenue } from '@/lib/food/types';
 import { GooglePlaceRating } from '@/components/food/GooglePlaceRating';
 import { getLocalizedText } from '@/lib/localization';
-import { MapPin, Star, Utensils, ChevronRight, Info } from 'lucide-react';
+import { MapPin, Star, Utensils, ChevronRight, Info, ExternalLink } from 'lucide-react';
 
 interface PremiumRestaurantCardProps {
   restaurant: VisitorFoodVenue;
@@ -21,6 +21,8 @@ export function PremiumRestaurantCard({
   priority = false,
 }: PremiumRestaurantCardProps) {
   const firstTip = restaurant.knowBeforeYouGo?.tips?.[0];
+  const mapsUrl = restaurant.ratings?.[0]?.attribution?.mapsUri ||
+    `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(getLocalizedText(restaurant.name, lang) + ' ' + (restaurant.address || restaurant.neighborhood || getLocalizedText(restaurant.location, lang)))}`;
 
   return (
     <article data-venue-id={restaurant.id}
@@ -51,10 +53,20 @@ export function PremiumRestaurantCard({
       <div className="p-4 sm:p-5 flex flex-col flex-1 justify-between gap-3">
         {/* ÜST BLOK: Konum, Başlık, Google Puanı ve Kısa Karakter Özeti */}
         <div>
-          {/* 2. KONUM (Mahalle / Semt) */}
+          {/* 2. KONUM (Mahalle / Semt - Tıklanınca Google Haritalar'da açılır) */}
           <div className="flex items-center gap-1 text-[11px] font-semibold text-slate-500 uppercase tracking-wider mb-1">
-            <MapPin size={12} className="text-blue-600 flex-shrink-0" />
-            <span className="truncate">{getLocalizedText(restaurant.location, lang)}</span>
+            <a
+              href={mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="inline-flex items-center gap-1 text-slate-500 hover:text-blue-600 transition-colors group/loc"
+              title="Google Haritalar'da Aç"
+            >
+              <MapPin size={12} className="text-blue-600 flex-shrink-0 group-hover/loc:scale-110 transition-transform" />
+              <span className="truncate underline decoration-slate-300 hover:decoration-blue-600">{getLocalizedText(restaurant.location, lang)}</span>
+              <ExternalLink size={10} className="text-slate-400 opacity-60 group-hover/loc:opacity-100" />
+            </a>
           </div>
 
           {/* 1. MEKAN ADI */}
