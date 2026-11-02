@@ -120,7 +120,7 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    scopeNote: 'Kadıköy · Acıbadem (Araştırmada)'
   },
   {
-   id: 'kosuyolu',
+   id: 'kosuyolu-kadikoy',
    level: 'semt',
    name: 'Koşuyolu',
    slug: 'kosuyolu',
@@ -182,8 +182,9 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    const alsoTry=curated?.alsoTry?.length?curated.alsoTry:v.alsoTry;
    const beforeYouGo=curated?.beforeYouGo?.length?curated.beforeYouGo:v.beforeYouGo;
 
-   const catSlug=CATEGORY_SLUG_MAP[v.categoryId]||data.categorySlug;
-   const catName=CATEGORY_NAME_MAP[v.categoryId]||'Gastronomi';
+   const matchedCategory = data.categories.find(c => c.id === v.categoryId);
+   const catSlug = matchedCategory?.slug || CATEGORY_SLUG_MAP[v.categoryId] || data.categorySlug;
+   const catName = matchedCategory?.label || CATEGORY_NAME_MAP[v.categoryId] || 'Gastronomi';
    const regionName = data.region?.name || 'Moda';
    const regionDisplayName = data.region?.displayName ? data.region.displayName.split(',').slice(0, 2).join(',') : `${regionName}, İstanbul`;
 

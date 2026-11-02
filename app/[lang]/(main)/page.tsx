@@ -16,7 +16,7 @@ export default async function GastronomyHomePage(
  const params = await props.params;
  if(!(await isLocalFoodPreview())){const {default:HotelHomePage}=await import('./_legacy/HotelHomePage');return <HotelHomePage params={params}/>;}
  const targetRegion = searchParams.region || 'moda';
- const targetCategory = searchParams.category || 'kahve';
+ const targetCategory = searchParams.category || '';
  const data=await readIntegrationDiscovery(targetRegion, targetCategory);
  if(!data)return <p>Rehber şu anda kullanılamıyor.</p>;
  return <GastronomyPageClient discovery={toFoodDiscovery(data)} initialLocationSlug={searchParams.region || data.region.slug} initialCategorySlug={searchParams.category || data.categorySlug} lang={params.lang==='en'?'en':'tr'}/>;
