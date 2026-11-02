@@ -12,6 +12,9 @@ const CATEGORY_SLUG_MAP: Record<string, string> = {
  breakfast: 'kahvalti',
  dessert: 'tatli-pastane',
  date: 'date-mekanlari',
+ lokanta: 'lokanta',
+ balik: 'balik-deniz-urunleri',
+ meyhane: 'meyhane',
 };
 
 const CATEGORY_NAME_MAP: Record<string, string> = {
@@ -21,6 +24,9 @@ const CATEGORY_NAME_MAP: Record<string, string> = {
  breakfast: 'Kahvaltı',
  dessert: 'Tatlı & Pastane',
  date: 'Date Mekanları',
+ lokanta: 'Tarihi Lokantalar & Çarşı',
+ balik: 'Balık & Deniz Ürünleri',
+ meyhane: 'Meyhane & Akşam',
 };
 
 /** Never accepts the admin card or uses the Antigravity prototype provider. */
@@ -57,11 +63,11 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    name: 'Kadıköy Merkez & Çarşı',
    slug: 'kadikoy-merkez',
    path: ['istanbul', 'kadikoy', 'merkez'],
-   displayName: 'Kadıköy Merkez & Çarşı, İstanbul',
+   displayName: 'Kadıköy Merkez & Tarihi Çarşı, İstanbul',
    locative: "Kadıköy Merkez'de",
-   status: 'coming_soon',
+   status: 'published',
    aliases: ['Çarşı', 'Carsi', 'Rıhtım', 'Rihtim', 'Kadıköy Çarşı', 'Kadikoy Merkez'],
-   scopeNote: 'Kadıköy · Çarşı (Araştırmada)'
+   scopeNote: 'Kadıköy · Çarşı (Yayında)'
   },
   {
    id: 'caddebostan',
@@ -163,7 +169,7 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
 
  return {
   locations: distinctLocations,
-  categories:data.categories.slice(0,7).map(c=>({slug:c.slug,label:c.label,title:c.label,isMustTry:c.isMustTry,emoji:c.id==='coffee'?'☕':c.id==='burger'?'🍔':c.id==='pizza'?'🍕':c.id==='breakfast'?'🍳':c.id==='dessert'?'🍰':c.id==='date'?'🍷':undefined})),
+  categories:data.categories.slice(0,7).map(c=>({slug:c.slug,label:c.label,title:c.label,isMustTry:c.isMustTry,emoji:c.id==='coffee'?'☕':c.id==='burger'?'🍔':c.id==='pizza'?'🍕':c.id==='breakfast'?'🍳':c.id==='dessert'?'🍰':c.id==='date'?'🍷':c.id==='lokanta'?'🍲':c.id==='balik'?'🐟':c.id==='meyhane'?'🥂':undefined})),
   venues:data.venues.map(v=>{
    const verified=getVerifiedGoogleRatings(v.id);
    const resolvedRatings=verified.length?verified:copyVisitorGoogleRatings(v.ratings);
@@ -177,7 +183,7 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    const catSlug=CATEGORY_SLUG_MAP[v.categoryId]||data.categorySlug;
    const catName=CATEGORY_NAME_MAP[v.categoryId]||'Gastronomi';
    const regionName = data.region?.name || 'Moda';
-   const regionDisplayName = `${regionName}, Kadıköy`;
+   const regionDisplayName = data.region?.displayName ? data.region.displayName.split(',').slice(0, 2).join(',') : `${regionName}, İstanbul`;
 
    return {
     id:v.id,name:v.name,location:regionDisplayName,address:v.location,neighborhood:v.location,categoryName:catName,categorySlugs:[catSlug],

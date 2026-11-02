@@ -472,6 +472,178 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Nostaljik ve samimi bir mahalle tatlıcısı atmosferindedir.',
       'Paket kutu satışı yaygındır.'
     ]
+  },
+
+  // =========================================================================
+  // KADIKÖY MERKEZ & TARİHİ ÇARŞI
+  // =========================================================================
+
+  // Tarihi Lokantalar & Çarşı
+  'kadikoymerkez-lokanta-ciya': {
+    description: "Anadolu'nun unutulmaya yüz tutmuş geleneksel tencere yemeklerini, yabani otlarını ve mevsimsel çorbalarını aslına sadık kalarak sunan gastronomi durağı.",
+    whatToOrder: ['Perde Pilavı', 'Şıhıl Mahşi'],
+    menuFrom: ['Kuru Patlıcan Dolması', 'Gavurdağı Salatası', 'Kelle Paça Çorbası'],
+    alsoTry: ['Mevsimsel yabani ot yemekleri ve Zahter salatası'],
+    beforeYouGo: [
+      'Hafta sonları öğle ve akşam saatlerinde yoğun ilgi görür.',
+      'Güneşli Bahçe Sokak üzerinde Çiya Kebap ile karşılıklı konumdadır.'
+    ]
+  },
+  'kadikoymerkez-lokanta-yanyali': {
+    description: "1919 yılından bu yana Tarihi Balıkçılar Çarşısı girişinde Osmanlı saray ve Türk mutfağı reçetelerini tencere yemekleriyle yaşatan asırlık lokanta.",
+    whatToOrder: ['Yanya Köftesi', 'Kuzu Elbasan Tava'],
+    menuFrom: ['Tas Kebabı', 'İncik Haşlama', 'Zeytinyağlı Enginar', 'Krem Karamel'],
+    alsoTry: ['Geleneksel usul kuzu etli ve patlıcanlı Yanya köftesi'],
+    beforeYouGo: [
+      '1919 yılından bu yana hizmet veren asırlık Osmanlı-Türk mutfağı temsilcisidir.',
+      'Tarihi Balıkçılar Çarşısı girişinde yer alır.'
+    ]
+  },
+  'kadikoymerkez-lokanta-borsam': {
+    description: "Güneşli Bahçe Sokak'ta odun ateşli taş fırında çıtır çıtır pişen ince hamurlu lahmacunları ve sıcak pideleriyle Kadıköy'ün değişmez lezzet klasiği.",
+    whatToOrder: ['Çıtır Taşfırın Lahmacun', 'Kaşarlı Pide'],
+    menuFrom: ['Kıymalı Pide', 'Kuşbaşılı Pide', 'Açık Köpüklü Ayran'],
+    alsoTry: ['Bol maydanoz, limon ve sumaklı taze soğan eşliğinde sıcak lahmacun'],
+    beforeYouGo: [
+      'Odun ateşinde pişen lahmacunlar hızlı ve sıcacık servis edilir.',
+      'Ayakta ya da taburelerde hızlı tüketim için çok popülerdir.'
+    ]
+  },
+  'kadikoymerkez-lokanta-ciyakebap': {
+    description: "Güneydoğu Anadolu'nun zırh kıymasıyla hazırlanan kebaplarını, mevsimsel ızgara çeşitlerini ve nar ekşili mezelerini sunan köklü kebap ustası.",
+    whatToOrder: ['Ali Nazik Kebabı', 'Fıstıklı Kebap'],
+    menuFrom: ['Urfa Kebap', 'Adana Kebap', 'Çöp Şiş', 'Fındık Lahmacun'],
+    alsoTry: ['Közlenmiş sarımsak ve patlıcan eşliğinde zırh kıyması kebap'],
+    beforeYouGo: [
+      'Çiya Sofrası’nın hemen çaprazında kebap ve ızgara odaklı şubesidir.',
+      'Güneydoğu Anadolu kebap kültürünün Kadıköy’deki en güçlü adreslerindendir.'
+    ]
+  },
+
+  // Balık & Deniz Ürünleri
+  'kadikoymerkez-balik-hamsipub': {
+    description: "Güneşli Bahçe Sokak boyunca uzanan hareketli sokak masalarında mevsim balıkları, çıtır hamsi tava ve taze deniz mezeleri sunan samimi balık pubı.",
+    whatToOrder: ['Tava Hamsi', 'Levrek Simit'],
+    menuFrom: ['Kalamar Tava', 'Karides Güveç', 'Mezgit Çıtır', 'Mevsim Salatası'],
+    alsoTry: ['Özel tarator soslu kalamar tava'],
+    beforeYouGo: [
+      'Kadıköy Çarşısı’nda samimi ve hareketli bir sokak masası deneyimi sunar.',
+      'Akşam saatlerinde erken yer bulmak avantaj sağlar.'
+    ]
+  },
+  'kadikoymerkez-balik-kadinimet': {
+    description: "Kadıköy Balıkçılar Çarşısı'nın kalbinde taze balık tezgahlarının yanı başında günlük deniz ürünleri ve geleneksel Ege mezeleri sunan balık lokantası.",
+    whatToOrder: ['Izgara Lüfer', 'Tereyağlı Karides'],
+    menuFrom: ['Deniz Levreği', 'Kalamar Izgara', 'Ahtapot Salatası', 'Balık Çorbası'],
+    alsoTry: ['Balık tezgahından taze seçilen günlük ızgara balık çeşitleri'],
+    beforeYouGo: [
+      'Balıkçılar Çarşısı tezgahlarının hemen yanında tarihi dokudadır.',
+      'Balığınızı tezgahtan seçip restoranda pişirtebilirsiniz.'
+    ]
+  },
+  'kadikoymerkez-balik-midyeciyasin': {
+    description: "Kadıköy Çarşı aksında taze temizlenmiş iç harcı, tane karabiberi ve limonla servis edilen sıcak tencere midyeleriyle ünlü sokak lezzeti durağı.",
+    whatToOrder: ['Sıcak Baharatlı Midye Dolma', 'Çıtır Midye Tava'],
+    menuFrom: ['Klasik Midye Dolma', 'Soslu Midye', 'Tarator Soslu Kova'],
+    alsoTry: ['Taze sıkılmış limonla sıcak tencereden yeni çıkan midye dolma'],
+    beforeYouGo: [
+      'Kadıköy Çarşı turunda hızlı ayaküstü atıştırmalık klasiğidir.',
+      'Midyeler günlük ve taze temizlenerek hazırlanır.'
+    ]
+  },
+  'kadikoymerkez-balik-denizati': {
+    description: "Muvakkithane Caddesi üzerinde vapur iskelelerine yakın konumu, kiremitte deniz mahsulleri ve geniş meze dolabıyla hizmet veren klasik deniz restoranı.",
+    whatToOrder: ['Kiremitte Deniz Mahsulleri', 'Kalamar Tava'],
+    menuFrom: ['Levrek Izgara', 'Karides Söğüş', 'Köpoğlu', 'Roka Salatası'],
+    alsoTry: ['Fesleğenli ve zeytinyağlı marine levrek'],
+    beforeYouGo: [
+      'Rıhtım ve Muvakkithane aksında köklü bir deniz ürünleri durağıdır.',
+      'Geniş ve rahat oturma alanlarına sahiptir.'
+    ]
+  },
+
+  // Tarihi Tatlıcılar
+  'kadikoymerkez-dessert-baylan': {
+    description: "1923'ten bu yana Cumhuriyet aydınlarının buluştuğu tarihi Muvakkithane Caddesi binasında Kup Griye ve nostaljik pastacılık mirasını yaşatan simge mekan.",
+    whatToOrder: ['Kup Griye (Coupe Jacques)', 'Trüf Pasta'],
+    menuFrom: ['Adisababa', 'Monşer', 'Milföy Pasta', 'Türk Kahvesi'],
+    alsoTry: ['Karamel soslu ve bademli klasik Kup Griye'],
+    beforeYouGo: [
+      '1923’ten bu yana edebiyat ve kültür insanlarının tarihi buluşma adresidir.',
+      'Nostaljik atmosferi ve vitrin çikolatalarıyla Kadıköy simgesidir.'
+    ]
+  },
+  'kadikoymerkez-dessert-cafererol': {
+    description: "1807 yılına uzanan köklü şekerci geleneği, rengarenk akide şekerleri, badem ezmeleri ve zarif tatlı vitrinleriyle Kadıköy Çarşı'nın yaşayan efsanesi.",
+    whatToOrder: ['Gül Yapraklı Lokum', 'Badem Ezmesi'],
+    menuFrom: ['Akide Şekeri', 'Kestane Şekeri', 'Dondurmalı İrmik', 'Çikolata Kaplı Portakal'],
+    alsoTry: ['Geleneksel tarçınlı ve bergamotlu akide şekerleri'],
+    beforeYouGo: [
+      '1807 yılına uzanan köklü geçmişi ve görkemli vitrin süslemeleriyle ünlüdür.',
+      'Özel günlerde ve bayramlarda uzun kuyruklar oluşabilir.'
+    ]
+  },
+  'kadikoymerkez-dessert-haciserif': {
+    description: "Muvakkithane Caddesi'nde sıcacık dökülen tereyağlı irmik helvasını Maraş dondurması eşliğinde sunan ve geleneksel lokumlar üreten tatlı durağı.",
+    whatToOrder: ['Dondurmalı İrmik Helvası', 'Tahinli Sıcak Helva'],
+    menuFrom: ['Antep Fıstıklı Lokum', 'Meyve Kurusu Helvalar', 'Çikolatalı Lokum'],
+    alsoTry: ['İçi Maraş dondurmalı sıcak fıstıklı irmik helvası'],
+    beforeYouGo: [
+      'Sıcak helva ve soğuk dondurma tezatı meşhurdur.',
+      'Ayaküstü paket veya küçük oturma masalarında tüketilebilir.'
+    ]
+  },
+  'kadikoymerkez-dessert-saray': {
+    description: "Rıhtım Caddesi üzerinde geleneksel manda sütüyle yapılan fırın sütlaç, gerçek tavukgöğsü kazandibi ve klasik Türk sütlü tatlıları sunan asırlık marka.",
+    whatToOrder: ['Tavukgöğsü Kazandibi', 'Fırın Sütlaç'],
+    menuFrom: ['Su Muhallebisi', 'Profiterol', 'Aşure', 'Keşkül'],
+    alsoTry: ['Gerçek manda sütü ve pirinç sübyesiyle hazırlanan fırın sütlaç'],
+    beforeYouGo: [
+      'Rıhtım meydanında Kadıköy vapur iskelelerine çok yakın konumdadır.',
+      'Geleneksel sütlü tatlıların yanı sıra su böreği de mevcuttur.'
+    ]
+  },
+
+  // Meyhane & Akşam
+  'kadikoymerkez-meyhane-viktorlevi': {
+    description: "1914 yılında kurulan, asırlık ahşap konağın yemyeşil saklı bahçesinde ve tarihi mahzeninde özel fıçı şarapları eşliğinde akşam yemekleri sunan efsanevi mekan.",
+    whatToOrder: ['Özel Mahzen Şarabı Seçkisi', 'Peynir Tabağı'],
+    menuFrom: ['Dana Antrikot', 'Sıcak Şarap (Kışın)', 'Kalamar Izgara', 'Bruschetta'],
+    alsoTry: ['Tarihi ahşap konak bahçesinde ev yapımı nar şarabı'],
+    beforeYouGo: [
+      '1914’te kurulan mekan, yemyeşil saklı avlusu ve tarihi mahzeniyle meşhurdur.',
+      'Hafta sonu akşamları için önceden rezervasyon şarttır.'
+    ]
+  },
+  'kadikoymerkez-meyhane-piraye': {
+    description: "Serasker Caddesi'nde taş plak kayıtları eşliğinde edebiyat atmosferi, taze Ege mezeleri ve sıcak deniz mahsulleri sunan nostaljik meyhane.",
+    whatToOrder: ['Fava & Kurutulmuş Domates', 'Girit Ezmesi'],
+    menuFrom: ['Levrek Marin', 'Sıcak Ot Kavurma', 'Köpoğlu', 'Kalamar Tava'],
+    alsoTry: ['Taş plak tınıları eşliğinde tereyağlı ılık ahtapot'],
+    beforeYouGo: [
+      'Taş plak müzikleri ve nostaljik iç avlusu edebiyatseverlerin uğrak noktasıdır.',
+      'Nazım Hikmet ve Piraye hatıralarıyla dekore edilmiştir.'
+    ]
+  },
+  'kadikoymerkez-meyhane-guneslibahce': {
+    description: "Kadıköy Balık Pazarı'nın en canlı sokağında açık hava masaları, taze meze çeşitleri ve ızgara balıklarla çarşının akşam ritmini yansıtan klasik meyhane.",
+    whatToOrder: ['Güveçte Tereyağlı Karides', 'Rum Pilakisi'],
+    menuFrom: ['Haydari', 'Atom', 'Pastırmalı Humus', 'Mezgit Tava'],
+    alsoTry: ['Fırınlanmış ılık tahinli helva ikramı'],
+    beforeYouGo: [
+      'Kadıköy Balık Pazarı’nın tam kalbinde açık sokak masalarına sahiptir.',
+      'Canlı çarşı atmosferini izleyerek keyifli bir akşam geçirilir.'
+    ]
+  },
+  'kadikoymerkez-meyhane-agapia': {
+    description: "Süreyya Operası karşısındaki tarihi konakta Ege ve Rum mutfağının geleneksel mezelerini, taze deniz mahsullerini ve sıcak bir meyhane atmosferini buluşturan özel adres.",
+    whatToOrder: ['Agapia Meze Tabağı', 'Fıstıklı Sıcak Humus'],
+    menuFrom: ['Girit Kabağı', 'Cevizli Muhammara', 'Ahtapot Izgara', 'Yaprak Ciğer'],
+    alsoTry: ['Zeytinyağlı taze enginar kalbi ve deniz börülcesi'],
+    beforeYouGo: [
+      'Süreyya Operası karşısındaki tarihi konakta samimi bir atmosfere sahiptir.',
+      'Hafta sonları canlı akustik melodiler eşlik edebilir; rezervasyon önerilir.'
+    ]
   }
 };
 

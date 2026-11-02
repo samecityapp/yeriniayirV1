@@ -4,7 +4,7 @@ export const CATEGORY_ILLUSTRATIONS:Record<IllustrationCategory,readonly string[
  coffee:['coffee-cup','coffee-pour-over','coffee-moka','coffee-cup-and-beans'],
  burger:['burger'],pizza:['pizza'],breakfast:['breakfast'],dessert:['dessert'],regional:['regional'],gastronomy:['gastronomy'],
 };
-const aliases:Record<string,IllustrationCategory>={coffee:'coffee',kahve:'coffee',burger:'burger',hamburger:'burger',pizza:'pizza',breakfast:'breakfast',kahvalti:'breakfast',dessert:'dessert',tatli:'dessert','tatli-pastane':'dessert',pastane:'dessert',regional:'regional',yoresel:'regional','yoresel-yemek':'regional','yoresel-lezzetler':'regional',date:'gastronomy','date-mekanlari':'gastronomy'};
+const aliases:Record<string,IllustrationCategory>={coffee:'coffee',kahve:'coffee',burger:'burger',hamburger:'burger',pizza:'pizza',breakfast:'breakfast',kahvalti:'breakfast',dessert:'dessert',tatli:'dessert','tatli-pastane':'dessert',pastane:'dessert',regional:'regional',yoresel:'regional','yoresel-yemek':'regional','yoresel-lezzetler':'regional',lokanta:'regional','tarihi-lokantalar':'regional',balik:'gastronomy','balik-deniz-urunleri':'gastronomy',meyhane:'gastronomy',date:'gastronomy','date-mekanlari':'gastronomy'};
 export const illustrationCategory=(category:string):IllustrationCategory=>aliases[category.toLocaleLowerCase('tr').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/ı/g,'i').trim().replace(/[\s/]+/g,'-')]||'gastronomy';
 const hash=(id:string)=>{let n=2166136261;for(let i=0;i<id.length;i++){n^=id.charCodeAt(i);n=Math.imul(n,16777619);}return n>>>0;};
 export function categoryIllustration(category:string,id=''){
