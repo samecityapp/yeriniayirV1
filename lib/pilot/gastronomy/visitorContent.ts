@@ -964,6 +964,175 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     menuFrom: ['Peynirli Poğaça', 'Zeytinli Açma', 'Çilekli Tart', 'Filtre Kahve'],
     alsoTry: ['Ispanaklı ve keçi peynirli sıcak fırın kiş'],
     beforeYouGo: ['Sabah saatlerinde taze çıkan unlu mamulleriyle hareketlidir.', 'Hızlı kahvaltı ve kahve molası için elverişlidir.']
+  },
+
+  // Region 6: Feneryolu (16 verified venues)
+  // Nitelikli Kahve & Kafe
+  'feneryolu-coffee-orlando': {
+    description: "Gazi Muhtar Paşa Sokağı'nda özenle seçilmiş single-origin çekirdekleri, dingin atmosferi ve güler yüzlü baristalarıyla semtin en yüksek puanlı kahve durağı.",
+    whatToOrder: ['Flat White', 'V60 Ethiopia Yirgacheffe'],
+    menuFrom: ['Cortado', 'Cold Brew', 'San Sebastian Cheesecake', 'Fıstıklı Kurabiye'],
+    alsoTry: ['Taze çekilmiş çekirdeklerle hazırlanan V60 pour-over filtre kahve'],
+    beforeYouGo: [
+      'Sessiz ve sakin ortamıyla kitap okumak veya bilgisayarla çalışmak için çok uygundur.',
+      'Feneryolu Marmaray istasyonuna kısa yürüme mesafesindedir.'
+    ]
+  },
+  'feneryolu-coffee-barneys': {
+    description: "Sokağın canlı köşesinde samimi kafe ortamı, zengin espresso bazlı kahveleri ve ev yapımı tatlılarıyla mahallenin sevilen buluşma noktası.",
+    whatToOrder: ['Iced Latte', 'Yaban Mersinli Tart'],
+    menuFrom: ['Cappuccino', 'Americano', 'Havuçlu Tarçınlı Kek', 'Kruvasan Sandviç'],
+    alsoTry: ['Günün taze fırınlanan ev yapımı meyveli tartı'],
+    beforeYouGo: [
+      'Dış masalarında oturup mahalle akışını izlemek oldukça keyiflidir.',
+      'Öğleden sonraları kahve molaları için hareketlenir.'
+    ]
+  },
+  'feneryolu-coffee-kaffabuna': {
+    description: "Kuyubaşı Sokak'ta kahve kökenlerine sadık kalarak kavrulan nitelikli çekirdekleri, butik iç mekanı ve samimi mahalle ruhuyla öne çıkıyor.",
+    whatToOrder: ['Aeropress Filtre Kahve', 'Lotus Cheesecake'],
+    menuFrom: ['Espresso Macchiato', 'Flat White', 'Brownie', 'Fıstıklı Cookie'],
+    alsoTry: ['Haftalık değişen mikro-lot Afrika ve Latin Amerika çekirdekleri'],
+    beforeYouGo: [
+      'Samimi ve kompakt bir mahalle kahvecisidir.',
+      'Kendi kavurdukları paket çekirdek kahveleri ev için satın alabilirsiniz.'
+    ]
+  },
+  'feneryolu-coffee-fenway': {
+    description: "Mustafa Mazhar Bey Sokağı'nda ferah bahçe alanı, kendi kavurduğu özel harmanları ve taze fırın tatlılarıyla bilinen geniş kahve noktası.",
+    whatToOrder: ['Cold Brew', 'Yaban Mersinli Cheesecake'],
+    menuFrom: ['Flat White', 'V60 Filtre Kahve', 'Çikolatalı Brownie', 'Kruvasan'],
+    alsoTry: ['Uzun demleme yöntemiyle hazırlanan yoğun aromalı cold brew'],
+    beforeYouGo: [
+      'Geniş oturma alanı ve priz imkanıyla uzaktan çalışanların gözdesidir.',
+      'Hafta sonu bahçesi oldukça canlıdır.'
+    ]
+  },
+
+  // Kahvaltı & Fırın
+  'feneryolu-kahvalti-kameriye': {
+    description: "Gazi Muhtar Paşa Korusu içindeki yemyeşil asırlık ağaçlar altında, zengin serpme kahvaltısı ve taş fırın sıcak hamur işleriyle doğayla iç içe bir vaha.",
+    whatToOrder: ['Kameriye Serpme Kahvaltı', 'Taş Fırın Kıymalı Pide'],
+    menuFrom: ['Menemen', 'Sahanda Sucuklu Yumurta', 'Sigara Böreği', 'Demlik Çay'],
+    alsoTry: ['Taş fırından yeni çıkmış sıcak puf ekmek ve peynir tabağı'],
+    beforeYouGo: [
+      'Geniş yeşil bahçesiyle özellikle aileler ve hafta sonu kahvaltıları için çok popülerdir.',
+      'Hafta sonu erken gitmek veya sıra beklemeyi göze almak önerilir.'
+    ]
+  },
+  'feneryolu-kahvalti-safranbolu': {
+    description: "1940'tan beri geleneksel fırıncılık mirasını sürdüren, taze çıtır simitleri, Boşnak börekleri ve ekşi mayalı taş fırın ekmekleriyle mahallenin köklü lezzet kalesi.",
+    whatToOrder: ['Çıtır Boşnak Böreği', 'Sıcak Sokak Simiti & Çay'],
+    menuFrom: ['Su Böreği', 'Tahinli Çörek', 'Ekşi Mayalı Ekmek', 'Peynirli Poğaça'],
+    alsoTry: ['Kıymalı ve patatesli ince çıtır yufkalı taze Boşnak böreği'],
+    beforeYouGo: [
+      'Sabah erken saatlerde fırından yeni çıkan sıcak börek ve simit kuyrukları oluşur.',
+      'Paket alıp sahilde veya evde kahvaltı yapmak için birebirdir.'
+    ]
+  },
+  'feneryolu-kahvalti-salkim': {
+    description: "Mustafa Mazhar Bey Caddesi'nde taze günlük kahvaltı tabakları, ev yapımı zeytinyağlı mezeleri ve anne eli değmiş sıcak lezzetleriyle huzurlu bir mahalle köşesi.",
+    whatToOrder: ['Salkım Kahvaltı Tabağı', 'Ev Yapımı Günlük Meze Tabağı'],
+    menuFrom: ['Otlu Peynirli Omlet', 'Anne Köftesi', 'Zeytinyağlı Yaprak Sarma', 'Ev Keki'],
+    alsoTry: ['Taze otlu krep ve ev yapımı reçeller eşliğinde sabah kahvaltısı'],
+    beforeYouGo: [
+      'Hafif, temiz ve sağlıklı ev yemekleri ve sakin kahvaltı arayanların favorisidir.',
+      'Taze günlük mezeleri paket olarak da alınabilir.'
+    ]
+  },
+  'feneryolu-kahvalti-ekmek-firini': {
+    description: "Feneryolu sokaklarında yıllardır taze sıcak taş fırın ekmekleri, odun ateşinde pişen gevrek simitleri ve klasik kahvaltılık unlu mamulleri sunan nostaljik fırın.",
+    whatToOrder: ['Odun Ateşinde Taş Fırın Simiti', 'Taze Kaşarlı Açma'],
+    menuFrom: ['Karaköy Poğaçası', 'Zeytinli Açma', 'Çavdar Ekmeği', 'Kepekli Ekmek'],
+    alsoTry: ['Sabah ilk parti fırından çıkan gevrek susamlı sıcak simit'],
+    beforeYouGo: [
+      'Geleneksel mahalle fırını konseptindedir, hızlı al-götür kahvaltı için çok pratiktir.',
+      'Marmaray yolunda sabah atıştırmalığı için ideal konumdadır.'
+    ]
+  },
+
+  // Tatlı & Pastane
+  'feneryolu-tatli-merveilleux': {
+    description: "Hamdibey Sokağı'nda Fransız pastacılık teknikleriyle hazırlanan zarif eklerler, tereyağlı kruvasanlar ve düşük şekerli imza çikolatalı tatlılar sunan butik lezzet noktası.",
+    whatToOrder: ['İmza Fransız Merveilleux', 'Paris-Brest Praliné'],
+    menuFrom: ['Tereyağlı Kruvasan', 'Çilekli Tart', 'Çikolatalı Ekler', 'Flat White'],
+    alsoTry: ['Karamelize fındık kremalı çıtır choux hamurlu Paris-Brest'],
+    beforeYouGo: [
+      'Tatlıların günlük üretimi sınırlı olduğundan popüler çeşitler öğleden sonra tükenebilir.',
+      'Şık ve sakin dekorasyonuyla keyifli bir tatlı molası sunar.'
+    ]
+  },
+  'feneryolu-tatli-sec-baklava': {
+    description: "Bağdat Caddesi Feneryolu kesiminde Gaziantep usulü birinci sınıf çıtır havuç dilimi, fıstıklı sarma ve taze şerbetli tatlılarıyla cadde klasiği.",
+    whatToOrder: ['Fıstıklı Havuç Dilimi Baklava', 'Maraş Dondurması'],
+    menuFrom: ['Fıstık Sarma', 'Şöbiyet', 'Kuru Baklava', 'Su Böreği'],
+    alsoTry: ['Sıcak servis edilen bol Antep fıstıklı çıtır havuç dilimi'],
+    beforeYouGo: [
+      'Bağdat Caddesi üzerinde kolay ulaşılabilir bir konumdadır.',
+      'Özel gün tatlı siparişleri ve paket hediye kutuları için sıkça tercih edilir.'
+    ]
+  },
+  'feneryolu-tatli-kuba': {
+    description: "Feneryolu Sokağı üzerinde taze meyveli pastaları, el yapımı kurabiyeleri, profiterolü ve sıcak çay eşliğinde nostaljik mahalle pastanesi sıcaklığı.",
+    whatToOrder: ['Çikolatalı Çilekli Rulo Pasta', 'Klasik Profiterol'],
+    menuFrom: ['Marlenka', 'Ekler', 'Tuzlu Kuru Pasta', 'Demlik Çay'],
+    alsoTry: ['Yoğun çikolata soslu taze kremalı profiterol tabağı'],
+    beforeYouGo: [
+      'Tren istasyonuna yakınlığıyla buluşma ve tatlı molası noktasıdır.',
+      'Doğum günü ve özel kutlama pastaları sipariş edilebilir.'
+    ]
+  },
+  'feneryolu-tatli-kerem': {
+    description: "Feneryolu'nun köklü mahalle pastanelerinden biri olarak taze tartoletleri, badem ezmeleri ve geleneksel tatlılarıyla mahalle kültürünü yaşatıyor.",
+    whatToOrder: ['Meyveli Tartolet', 'Çikolatalı Mozaik Pasta'],
+    menuFrom: ['Balkan Çöreği', 'Acıbadem Kurabiyesi', 'Trileçe', 'Limonata'],
+    alsoTry: ['Geleneksel tarife sadık kalınarak yapılan çıtır acıbadem kurabiyesi'],
+    beforeYouGo: [
+      'Yıllardır aynı sokakta hizmet veren samimi bir esnaf pastanesidir.',
+      'Çay yanı atıştırmalık kurabiyeleri çok sevilir.'
+    ]
+  },
+
+  // Makarna & Yerel Mutfak
+  'feneryolu-bistro-spello': {
+    description: "Gazi Muhtar Paşa Sokağı'nda günlük taze açılan el yapımı İtalyan makarnaları, trüflü sosları ve gurme smash burgerleriyle semtin en popüler yeni nesil mutfağı.",
+    whatToOrder: ['Trüf Mantarlı Taze Tagliatelle', 'Spello Smash Burger'],
+    menuFrom: ['Cacio e Pepe', 'Ravioli di Zucca', 'Çıtır Patates', 'Tiramisu'],
+    alsoTry: ['Gözlerinizin önünde hazırlanan el yapımı taze dolgulu ricotta ravioli'],
+    beforeYouGo: [
+      'Kompakt ve şık bir mekandır, akşam saatlerinde yoğun olabileceğinden erken gitmek önerilir.',
+      'Makarnalar günlük taze hamurdan açılmaktadır.'
+    ]
+  },
+  'feneryolu-bistro-lamora': {
+    description: "İnce ve kabarık kenarlı Napoli usulü taş fırın pizzaları, kaliteli mozzarella peyniri ve otantik İtalyan lezzetleriyle Feneryolu'nun pizza adresi.",
+    whatToOrder: ['Pizza Margherita con Bufala', 'Quattro Formaggi'],
+    menuFrom: ['Pizza Bresaola', 'Penne Arrabiata', 'Burrata Salata', 'Panna Cotta'],
+    alsoTry: ['İtalyan unundan 48 saat fermente hamurla pişen Bufala Margherita'],
+    beforeYouGo: [
+      'Feneryolu Marmaray istasyonunun hemen yakınındaki şirin terasında keyifle yemek yenebilir.',
+      'Gazi Muhtar Paşa hattının sakin atmosferine eşlik eder.'
+    ]
+  },
+  'feneryolu-bistro-nur-kebap': {
+    description: "Bağdat Caddesi üzerinde taş fırında çıtır pişen lahmacunları, zırh kıyması Adana kebapları ve dürümleriyle lezzet standardını yıllardır koruyan kebapçı.",
+    whatToOrder: ['Çıtır Fındık & Antep Lahmacun', 'Zırh Adana Kebap'],
+    menuFrom: ['Urfa Kebap', 'Çöp Şiş', 'Gavurdağı Salatası', 'Künefe'],
+    alsoTry: ['İncecik çıtır hamurlu ve bol malzemeli fırın lahmacun'],
+    beforeYouGo: [
+      'Cadde üzerinde hızlı, lezzetli ve doyurucu bir akşam ya da öğle yemeği için idealdir.',
+      'Öğle saatlerinde yoğun esnaf ve çevre sakinlerini ağırlar.'
+    ]
+  },
+  'feneryolu-bistro-nakkas': {
+    description: "Bağdat Caddesi ile Boztepe Sokağı kesişiminde zengin kebap çeşitleri, mezeleri ve geniş oturma alanıyla aile yemeklerinin köklü durağı.",
+    whatToOrder: ['Nakkaş Özel Karışık Kebap', 'Fıstıklı Kebap'],
+    menuFrom: ['Kuzu Şiş', 'Ali Nazik', 'Köz Patlıcan Salatası', 'Katmer'],
+    alsoTry: ['Közlenmiş patlıcan yatağında servis edilen sıcak tereyağlı Ali Nazik'],
+    beforeYouGo: [
+      'Geniş kapalı ve bahçe alanıyla kalabalık grup ve aile buluşmaları için çok müsaittir.',
+      'Hafta sonu akşamları için rezervasyon önerilir.'
+    ]
   }
 };
 

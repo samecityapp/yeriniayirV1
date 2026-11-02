@@ -122,6 +122,18 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    scopeNote: 'Kadıköy · Acıbadem (Yayında)'
   },
   {
+   id: 'feneryolu-kadikoy',
+   level: 'semt',
+   name: 'Feneryolu',
+   slug: 'feneryolu',
+   path: ['istanbul', 'kadikoy', 'feneryolu'],
+   displayName: 'Feneryolu, Kadıköy, İstanbul',
+   locative: "Feneryolu'nda",
+   status: 'published',
+   aliases: ['Feneryolu', 'Gazi Muhtar Paşa', 'Mustafa Mazhar Bey', 'Kuyubaşı'],
+   scopeNote: 'Kadıköy · Feneryolu (Yayında)'
+  },
+  {
    id: 'kosuyolu-kadikoy',
    level: 'semt',
    name: 'Koşuyolu',

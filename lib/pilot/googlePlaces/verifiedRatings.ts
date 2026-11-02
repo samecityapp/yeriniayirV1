@@ -884,6 +884,151 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
+  // Region 6: Feneryolu (16 verified venues)
+  'feneryolu-coffee-orlando': {
+    platform: 'google-maps',
+    value: 4.9,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Orlando+Coffee+Gazi+Muhtarpa%C5%9Fa+Sk+No+5+Feneryolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'feneryolu-coffee-barneys': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Barneys+Cafe+Gazi+Muhtarpa%C5%9Fa+Sk+No+12E+Feneryolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'feneryolu-coffee-kaffabuna': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kaffa+Buna+Kuyuba%C5%9F%C4%B1+Sk+No+12A+Feneryolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'feneryolu-coffee-fenway': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Fenway+Coffee+Roastery+Mustafa+Mazhar+Bey+Sk+No+53+Feneryolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'feneryolu-kahvalti-kameriye': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kameriye+Cafe+Gazi+Muhtar+Pa%C5%9Fa+Korusu+No+1+Feneryolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'feneryolu-kahvalti-safranbolu': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Tarihi+Safranbolu+F%C4%B1r%C4%B1n%C4%B1+Mustafa+Mazhar+Bey+Sk+No+77+Feneryolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'feneryolu-kahvalti-salkim': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Salk%C4%B1m+Meze+Cafe+Mustafa+Mazhar+Bey+Cd+No+81+Feneryolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'feneryolu-kahvalti-ekmek-firini': {
+    platform: 'google-maps',
+    value: 4.0,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Feneryolu+Ekmek+F%C4%B1r%C4%B1n%C4%B1+Mazhar+Osman+Sk+No+20A+Feneryolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'feneryolu-tatli-merveilleux': {
+    platform: 'google-maps',
+    value: 4.8,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Merveilleux+Patisserie+Hamdibey+Sk+No+16+Feneryolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'feneryolu-tatli-sec-baklava': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Se%C3%A7+Baklavalar%C4%B1+Ba%C4%9Fdat+Cd+No+146A+Feneryolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'feneryolu-tatli-kuba': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kuba+Pasta+Cafe+Feneryolu+Sk+No+7B+Feneryolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'feneryolu-tatli-kerem': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kerem+Pastanesi+Feneryolu+Sk+No+1+Feneryolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'feneryolu-bistro-spello': {
+    platform: 'google-maps',
+    value: 4.8,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Spello+Kitchen+Taze+Makarna+Gazi+Muhtarpa%C5%9Fa+Sk+No+12F+Feneryolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'feneryolu-bistro-lamora': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=La+Mora+Pizza+Pasta+Gazi+Muhtarpa%C5%9Fa+Sk+No+12C+Feneryolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'feneryolu-bistro-nur-kebap': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Nur+Kebap+Lahmacun+Ba%C4%9Fdat+Cd+No+51B+Feneryolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'feneryolu-bistro-nakkas': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Nakka%C5%9F+Kebap+Boztepe+Sk+No+2+Feneryolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
 };
 
 export function getVerifiedGoogleRatings(venueId: string): VisitorGoogleRating[] {
