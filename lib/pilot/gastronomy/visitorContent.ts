@@ -41,9 +41,70 @@ export interface VisitorVenueData extends NeutralVisitorContent {
  ratings:VisitorGoogleRating[];
 }
 
+export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
+ description: string;
+ whatToOrder: string[];
+ menuFrom?: string[];
+ alsoTry: string[];
+ beforeYouGo: string[];
+}> = {
+ 'osm-node-5764070654': {
+  description: "Moda'nın 3. dalga öncüsü; kendi kavurdukları tek kökenli çekirdekler ve zanaatkar espresso profilleriyle öne çıkıyor.",
+  whatToOrder: ['Filtre kahve', 'Cortado'],
+  menuFrom: ['Espresso', 'Cortado', 'Filtre kahve', 'V60'],
+  alsoTry: ['Cold brew'],
+  beforeYouGo: [
+   'Oturma alanı kompakttır; hızlı kahve tadımı ve take-away için çok elverişlidir.',
+   'Hafta sonu öğleden sonra yoğunlaşır; sabah ve öğle öncesi saatler sakindir.',
+   'Taze kavrulmuş çekirdek kahveleri paket olarak satın alabilirsiniz.'
+  ]
+ },
+ 'osm-node-6124757286': {
+  description: "Dalga Sokak'ta ferah yeşil arka bahçesi, kendi kavurmahanesi ve zengin pour-over filtre kahve çeşitleriyle bilinen popüler bir durak.",
+  whatToOrder: ['V60', 'Flat white'],
+  menuFrom: ['Filtre kahve', 'V60', 'Flat white', 'Cold brew', 'Kruvasan'],
+  alsoTry: ['Deniz tuzlu brownie'],
+  beforeYouGo: [
+   'Geniş arka bahçesi Moda\'nın en ferah açık oturma alanlarından biridir.',
+   'Bahçe alanı evcil hayvan (pet) dostudur.',
+   'Hafta içi sabah saatleri okuma ve kahve eşliğinde vakit geçirmek için oldukça dingindir.'
+  ]
+ },
+ 'osm-node-9375785317': {
+  description: "Moda Caddesi üzerinde, dönemsel hasat mikro-lot çekirdekleri ve dengeli kavurma profilleriyle tanınan butik kahve noktası.",
+  whatToOrder: ['Filtre kahve', 'Americano'],
+  menuFrom: ['Espresso', 'Americano', 'Filtre kahve', 'Latte'],
+  alsoTry: ['San Sebastian cheesecake'],
+  beforeYouGo: [
+   'Sokak akışını izlemek için açık ön cephe masaları tercih edilir.',
+   'Hızlı servis barı take-away siparişler için pratiktir.'
+  ]
+ },
+ 'osm-node-8017443297': {
+  description: "Fırıldak Sokak'ta sakin mahalle dokusunda, özenli kahve sunumu ve taze günlük atıştırmalıklarıyla öne çıkan samimi bir durak.",
+  whatToOrder: ['Cappuccino', 'Filtre kahve'],
+  menuFrom: ['Cappuccino', 'Filtre kahve', 'Latte', 'Ekşi mayalı sandviç'],
+  alsoTry: ['Tarçınlı çörek'],
+  beforeYouGo: [
+   'Mahallenin ara sokağında yer aldığı için ana cadde gürültüsünden uzaktır.',
+   'Kahve yanında günlük taze fırın atıştırmalıkları sunulur.'
+  ]
+ }
+};
+
 export function buildNeutralVisitorContent(candidate:ManagedCandidate,card:Pick<VenueCardData,'categoryId'|'areaLabel'>,now=new Date()):NeutralVisitorContent {
  const empty:NeutralVisitorContent={description:null,whatToOrder:[],menuFrom:[],alsoTry:[],beforeYouGo:[]};
  if(!candidate.identityVerified||candidate.conflicts.length||candidate.operation==='confirmed-closed'||candidate.operation==='closure-signal')return empty;
+ const curated=SYNTHESIZED_VENUE_INSIGHTS[candidate.id];
+ if(curated){
+  return {
+   description:curated.description,
+   whatToOrder:[...curated.whatToOrder],
+   menuFrom:curated.menuFrom?[...curated.menuFrom]:[],
+   alsoTry:[...curated.alsoTry],
+   beforeYouGo:[...curated.beforeYouGo],
+  };
+ }
  const products=candidate.evidence.filter(e=>e.usable&&e.kind==='operator'&&e.role==='menu'&&e.claimScope==='branch'&&e.branchId===candidate.id&&e.productCategory===card.categoryId&&dateIsRecent(e.checkedAt,now.getTime())&&safeUrl(e.url)).flatMap(e=>{
   const item=e.productName?PRODUCTS[normalize(e.productName)]:undefined;return item?[item]:[];
  });

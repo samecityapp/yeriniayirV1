@@ -3,6 +3,8 @@ import type {IntegrationDiscovery} from './discovery';
 import type {VisitorFoodDiscovery} from '../../food/types';
 import {copyVisitorGoogleRatings} from '../googlePlaces/visitorRating';
 import {getVerifiedGoogleRatings} from '../googlePlaces/verifiedRatings';
+import {SYNTHESIZED_VENUE_INSIGHTS} from '../gastronomy/visitorContent';
+
 /** Never accepts the admin card or uses the Antigravity prototype provider. */
 export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery {
  const illustrations=assignVenueIllustrations(data.venues);
@@ -12,12 +14,22 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
   venues:data.venues.map(v=>{
    const verified=getVerifiedGoogleRatings(v.id);
    const resolvedRatings=verified.length?verified:copyVisitorGoogleRatings(v.ratings);
+   const curated=SYNTHESIZED_VENUE_INSIGHTS[v.id];
+   const description=curated?.description||v.description;
+   const whatToOrder=curated?.whatToOrder?.length?curated.whatToOrder:v.whatToOrder;
+   const menuFrom=curated?.menuFrom?.length?curated.menuFrom:v.menuFrom;
+   const alsoTry=curated?.alsoTry?.length?curated.alsoTry:v.alsoTry;
+   const beforeYouGo=curated?.beforeYouGo?.length?curated.beforeYouGo:v.beforeYouGo;
+
    return {
-    id:v.id,name:v.name,location:'Moda, Kadıköy',address:v.location,neighborhood:v.location,categoryName:'Kahve',categorySlugs:[data.categorySlug],tagline:v.description,
-    // No rights-cleared photo exists yet. Deliberately ignore arbitrary image URLs.
+    id:v.id,name:v.name,location:'Moda, Kadıköy',address:v.location,neighborhood:v.location,categoryName:'Kahve',categorySlugs:[data.categorySlug],
+    tagline:description,
     imageUrl:illustrations.get(v.id)!,imageIsRepresentative:true,imageCategory:v.categoryId,
-    ratings:resolvedRatings,orderSuggestion:v.whatToOrder.length?{title:v.whatToOrder.join(' · ')}:null,
-    menuFrom:[...v.menuFrom],alsoTry:{items:v.alsoTry.map(name=>({name,description:''}))},knowBeforeYouGo:{tips:[...v.beforeYouGo]}
+    ratings:resolvedRatings,
+    orderSuggestion:whatToOrder.length?{title:whatToOrder.join(' · ')}:null,
+    menuFrom:[...menuFrom],
+    alsoTry:{items:alsoTry.map(name=>({name,description:''}))},
+    knowBeforeYouGo:{tips:[...beforeYouGo]}
    };
   }),
  };

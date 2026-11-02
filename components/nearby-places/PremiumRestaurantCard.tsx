@@ -5,7 +5,7 @@ import {VenueImage} from '@/components/food/VenueImage';
 import type { VisitorFoodVenue } from '@/lib/food/types';
 import { GooglePlaceRating } from '@/components/food/GooglePlaceRating';
 import { getLocalizedText } from '@/lib/localization';
-import { MapPin, Star, Utensils, ChevronRight } from 'lucide-react';
+import { MapPin, Star, Utensils, ChevronRight, Info } from 'lucide-react';
 
 interface PremiumRestaurantCardProps {
   restaurant: VisitorFoodVenue;
@@ -20,7 +20,7 @@ export function PremiumRestaurantCard({
   lang = 'tr',
   priority = false,
 }: PremiumRestaurantCardProps) {
-
+  const firstTip = restaurant.knowBeforeYouGo?.tips?.[0];
 
   return (
     <article data-venue-id={restaurant.id}
@@ -47,9 +47,9 @@ export function PremiumRestaurantCard({
         </div>
       </div>
 
-      {/* İÇERİK: YALNIZCA 4 BİLGİ */}
+      {/* İÇERİK BLOKLARI */}
       <div className="p-4 sm:p-5 flex flex-col flex-1 justify-between gap-3">
-        {/* ÜST BLOK: Konum, Başlık ve Google Puanı */}
+        {/* ÜST BLOK: Konum, Başlık, Google Puanı ve Kısa Karakter Özeti */}
         <div>
           {/* 2. KONUM (Mahalle / Semt) */}
           <div className="flex items-center gap-1 text-[11px] font-semibold text-slate-500 uppercase tracking-wider mb-1">
@@ -62,11 +62,18 @@ export function PremiumRestaurantCard({
             {getLocalizedText(restaurant.name, lang)}
           </h2>
 
-          {/* 3. GOOGLE MAPS PUANI (MOCKUP İLE BİREBİR: SADE PUAN ROZETİ) */}
+          {/* 3. GOOGLE MAPS PUANI */}
           <GooglePlaceRating ratings={restaurant.ratings} />
+
+          {/* 4. MEKANIN RUHU / KISA KARAKTER ÖZETİ */}
+          {restaurant.tagline && (
+            <p className="text-xs text-slate-600 font-medium leading-relaxed mt-2 line-clamp-2">
+              {getLocalizedText(restaurant.tagline, lang)}
+            </p>
+          )}
         </div>
 
-        {/* ALT BLOK: 4. NE SİPARİŞ ETMELİ? / MENÜDEN ÖNE ÇIKANLAR (Doğrulanmış Ürün Kutusu) */}
+        {/* ALT BLOK: NE SİPARİŞ ETMELİ? / MENÜDEN ÖNE ÇIKANLAR (Doğrulanmış Ürün Kutusu) */}
         {(restaurant.orderSuggestion?.title || (restaurant.menuFrom && restaurant.menuFrom.length > 0)) && (
           <div className="bg-blue-50/70 border border-blue-150 rounded-2xl p-3 sm:p-3.5 transition-colors group-hover:bg-blue-50 group-hover:border-blue-200">
             <div className="flex items-center gap-1.5 text-[10px] font-extrabold uppercase tracking-wider text-blue-800 mb-1">
@@ -76,6 +83,14 @@ export function PremiumRestaurantCard({
             <p className="text-xs sm:text-[13px] font-bold text-slate-900 leading-snug line-clamp-2">
               {restaurant.orderSuggestion?.title || restaurant.menuFrom.join(' · ')}
             </p>
+          </div>
+        )}
+
+        {/* DİPNOT: GİTMEDEN BİL / İPUCU */}
+        {firstTip && (
+          <div className="flex items-start gap-1.5 text-[11px] text-slate-500 bg-slate-50 rounded-xl px-2.5 py-1.5 border border-slate-100">
+            <Info size={12} className="text-blue-500 flex-shrink-0 mt-0.5" />
+            <span className="line-clamp-1 font-medium">{firstTip}</span>
           </div>
         )}
       </div>

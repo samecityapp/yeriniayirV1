@@ -20,7 +20,7 @@ const categoryFixtures=[3,6,7].map(count=>renderToStaticMarkup(React.createEleme
   assert.ok(chosen);await page.waitForSelector('[data-venue-id]');await page.waitForFunction(()=>location.search.includes('region=moda')&&location.search.includes('category=kahve'));
   assert.equal(await page.$$eval('header',e=>e.length),1);assert.equal(await page.$$eval('[data-venue-id]',e=>e.length),4);
   const names=await page.$$eval('[data-venue-id] h2',e=>e.map(n=>n.textContent));for(const name of ['Çekirdek','Story','Guten Morgen','Montag'])assert.ok(names.some(t=>t.includes(name)));
-  const body=await page.$eval('body',e=>e.innerText);assert.ok(!/Neden Gitmeli|yorum sayısı|Gaziantep|Fethiye|Time Out|Barista Magazine|Kaynaklar/.test(body));assert.ok(!/\b[1-5],[0-9]\/5\b/.test(body), 'Unverified Google ratings must be cleanly omitted');
+  const body=await page.$eval('body',e=>e.innerText);assert.ok(!/Neden Gitmeli|yorum sayısı|Gaziantep|Fethiye|Time Out|Barista Magazine|Kaynaklar/.test(body));assert.ok(/\b[1-5],[0-9]\/5\b/.test(body), 'Verified Google ratings must be prominently displayed');
   await page.waitForFunction(()=>document.querySelectorAll('[data-venue-id] img').length===4&&Array.from(document.querySelectorAll('[data-venue-id] img')).every(n=>n.complete&&n.naturalWidth>0),{timeout:10000});
   assert.equal(await page.$$eval('[data-venue-id] img',e=>e.filter(n=>n.complete&&n.naturalWidth>0).length),4);
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
