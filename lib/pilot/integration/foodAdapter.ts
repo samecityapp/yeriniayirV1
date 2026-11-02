@@ -15,6 +15,7 @@ const CATEGORY_SLUG_MAP: Record<string, string> = {
  lokanta: 'lokanta',
  balik: 'balik-deniz-urunleri',
  meyhane: 'meyhane',
+ bistro: 'aksam-bistro',
 };
 
 const CATEGORY_NAME_MAP: Record<string, string> = {
@@ -27,6 +28,7 @@ const CATEGORY_NAME_MAP: Record<string, string> = {
  lokanta: 'Tarihi Lokantalar & Çarşı',
  balik: 'Balık & Deniz Ürünleri',
  meyhane: 'Meyhane & Akşam',
+ bistro: 'Akşam Yemeği & Bistro',
 };
 
 /** Never accepts the admin card or uses the Antigravity prototype provider. */
@@ -125,9 +127,9 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    path: ['istanbul', 'kadikoy', 'kosuyolu'],
    displayName: 'Koşuyolu, Kadıköy, İstanbul',
    locative: "Koşuyolu'nda",
-   status: 'coming_soon',
+   status: 'published',
    aliases: ['Koşuyolu', 'Kosuyolu'],
-   scopeNote: 'Kadıköy · Koşuyolu (Araştırmada)'
+   scopeNote: 'Kadıköy · Koşuyolu (Yayında)'
   },
   {
    id: 'nisantasi',
@@ -169,7 +171,7 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
 
  return {
   locations: distinctLocations,
-  categories:data.categories.slice(0,7).map(c=>({slug:c.slug,label:c.label,title:c.label,isMustTry:c.isMustTry,emoji:c.id==='coffee'?'☕':c.id==='burger'?'🍔':c.id==='pizza'?'🍕':c.id==='breakfast'?'🍳':c.id==='dessert'?'🍰':c.id==='date'?'🍷':c.id==='lokanta'?'🍲':c.id==='balik'?'🐟':c.id==='meyhane'?'🥂':undefined})),
+  categories:data.categories.slice(0,7).map(c=>({slug:c.slug,label:c.label,title:c.label,isMustTry:c.isMustTry,emoji:c.id==='coffee'?'☕':c.id==='burger'?'🍔':c.id==='pizza'?'🍕':c.id==='breakfast'?'🍳':c.id==='dessert'?'🍰':c.id==='date'?'🍷':c.id==='lokanta'?'🍲':c.id==='balik'?'🐟':c.id==='meyhane'?'🥂':c.id==='bistro'?'🍸':undefined})),
   venues:data.venues.map(v=>{
    const verified=getVerifiedGoogleRatings(v.id);
    const resolvedRatings=verified.length?verified:copyVisitorGoogleRatings(v.ratings);

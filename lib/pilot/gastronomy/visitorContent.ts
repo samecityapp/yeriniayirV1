@@ -644,6 +644,178 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Süreyya Operası karşısındaki tarihi konakta samimi bir atmosfere sahiptir.',
       'Hafta sonları canlı akustik melodiler eşlik edebilir; rezervasyon önerilir.'
     ]
+  },
+
+  // =========================================================================
+  // KOŞUYOLU (KADIKÖY)
+  // =========================================================================
+
+  // Kahvaltı & Bahçe Brunch
+  'kosuyolu-breakfast-cevizagaci': {
+    description: "Muhittin Üstündağ Caddesi üzerinde devasa pasta vitrini, taze hamur işleri ve zengin serpme kahvaltısıyla Koşuyolu'nun simgeleşmiş buluşma noktası.",
+    whatToOrder: ['Serpme Köy Kahvaltısı', 'Fırından Sıcak Su Böreği'],
+    menuFrom: ['Menemen', 'Pişi Tabağı', 'Petek Bal & Kaymak', 'Simit Tabağı'],
+    alsoTry: ['Ev yapımı reçeller ve taze fıstıklı çikolata çeşitleri'],
+    beforeYouGo: [
+      'Hafta sonu sabah ve öğle saatlerinde oldukça kalabalık olabilir.',
+      'Geniş bahçe ve kapalı kat alanlarına sahiptir.'
+    ]
+  },
+  'kosuyolu-breakfast-kirpi': {
+    description: "Koşuyolu Parkı yanında yeşillikler içindeki gizli bahçesinde huzurlu serpme kahvaltı, sıcak pişiler ve zengin dünya mutfağı alternatifleri sunuyor.",
+    whatToOrder: ['Kirpi Kahvaltı Tabağı', 'Sıcak Pişi & Çemen'],
+    menuFrom: ['Kavurmalı Yumurta', 'Otlu Peynirli Omlet', 'Pankek Tabağı'],
+    alsoTry: ['Fırınlanmış patates dilimleri ve ev yapımı soslar'],
+    beforeYouGo: [
+      'Yeşillikler içindeki bahçesi hafta sonu aile kahvaltıları için çok tercih edilir.',
+      'Koşuyolu Parkı’nın hemen bitişiğindedir.'
+    ]
+  },
+  'kosuyolu-breakfast-radika': {
+    description: "Kalfa Çeşmesi Sokak'ta Cunda ve Ege kasabalarını anımsatan samimi bahçesinde Girit böreği, acuka ve ev reçelleriyle hazırlanan Ege kahvaltısı sunuyor.",
+    whatToOrder: ['Girit Böreği & Acuka', 'Ege Serpme Kahvaltısı'],
+    menuFrom: ['Biberli Lor', 'Bozcaada Domates Reçeli', 'Sahanda Çırpılmış Yumurta'],
+    alsoTry: ['Zeytinyağlı taze kekikli köy zeytinleri'],
+    beforeYouGo: [
+      'Pötikare masa örtüleriyle sakin bir bahçe atmosferi sunar.',
+      'Akşamları ise Ege meyhanesi konseptine dönüşür.'
+    ]
+  },
+  'kosuyolu-breakfast-flan': {
+    description: "Muhittin Üstündağ Caddesi'nde Fransız pastacılık teknikleriyle üretilen taze tereyağlı kruvasanlar, ekşi mayalı sandviçler ve nitelikli kahve sunan butik fırın.",
+    whatToOrder: ['Hindi Fümeli Kruvasan', 'Antep Fıstıklı Kruvasan'],
+    menuFrom: ['Ekşi Mayalı Tost', 'Çırpılmış Yumurtalı Brioche', 'Meyveli Tart', 'Filtre Kahve'],
+    alsoTry: ['Taze demlenmiş V60 filtre kahve eşliğinde sıcak bademli kruvasan'],
+    beforeYouGo: [
+      'Kruvasanlar günlük taze pişirilir; öğleden sonra erken tükenebilir.',
+      'Koşuyolu Parkı manzaralı ferah oturma masaları mevcuttur.'
+    ]
+  },
+
+  // Kahve & Çalışma Alanları
+  'kosuyolu-coffee-kaffeeschutz': {
+    description: "Koşuyolu Caddesi üzerinde Alman kahve geleneği ve kendi profillerinde kavurduğu taze çekirdeklerle hazırlanan nitelikli filtre kahveler sunan huzurlu mekan.",
+    whatToOrder: ['Single Origin V60', 'Flat White'],
+    menuFrom: ['Cortado', 'Cold Brew', 'Alman Pastası', 'Kruvasan Sandviç'],
+    alsoTry: ['Kendi kavurma atölyelerinden taze çekilmiş yöresel çekirdekler'],
+    beforeYouGo: [
+      'Sessiz ve sakin müzikleriyle bilgisayarla çalışmak ve kitap okumak için idealdir.',
+      'Geniş bir iç ve dış oturma alanı bulunur.'
+    ]
+  },
+  'kosuyolu-coffee-cremma': {
+    description: "Muhittin Üstündağ Caddesi'nde antik mimari detaylara sahip ferah salonunda nitelikli espresso içecekleri ve imza tatlılar sunan popüler buluşma noktası.",
+    whatToOrder: ['Cortado', 'Cremma İmzalı Cheesecake'],
+    menuFrom: ['Espresso Tonic', 'Iced Latte', 'San Sebastian', 'Brownie'],
+    alsoTry: ['Yumuşak içimli soğuk demleme Cold Brew'],
+    beforeYouGo: [
+      'Estetik iç mimarisi ve yüksek tavanıyla ferah bir çalışma ortamı sağlar.',
+      'Öğleden sonra saatlerinde hareketlilik artar.'
+    ]
+  },
+  'kosuyolu-coffee-blak': {
+    description: "Mehmet Akfan Sokak'ta minimalist tasarımı, özenli tek köken çekirdekleri ve samimi mahalle atmosferiyle kaliteli kahve deneyimi sunan butik kafe.",
+    whatToOrder: ['Ethiopia Pour-Over', 'Iced Americano'],
+    menuFrom: ['Cappuccino', 'Latte', 'Glutensiz Kurabiye', 'Filtre Kahve'],
+    alsoTry: ['Zencefilli ve tarçınlı ev yapımı fırın kurabiyesi'],
+    beforeYouGo: [
+      'Mahalle arasında sakin bir kahve molası için elverişlidir.',
+      'Dış cephedeki ahşap banklarda sokak dokusu hissedilir.'
+    ]
+  },
+  'kosuyolu-coffee-viyana': {
+    description: "Koşuyolu Caddesi üzerinde Viyana usulü kremalı kahveler, melange çeşitleri ve sıcak Belçika çikolatasıyla servis edilen San Sebastian cheesecake sunuyor.",
+    whatToOrder: ['Viyana Melange', 'San Sebastian Cheesecake'],
+    menuFrom: ['Einspänner', 'Sıcak Çikolatalı Tatlı', 'Filtre Kahve', 'Kruvasan'],
+    alsoTry: ['Akışkan sıcak çikolata sosuyla taze dilimlenmiş San Sebastian'],
+    beforeYouGo: [
+      'Tatlı ve kahve eşleşmesi için Koşuyolu’nun en bilinen duraklarındandır.',
+      'Akşam saatlerinde tatlı molası için sıra oluşabilir.'
+    ]
+  },
+
+  // Akşam Yemeği & Bistro
+  'kosuyolu-bistro-kaen': {
+    description: "Asmadalı Sokak'ta modern tasarımı, taze balık seçimleri ve yaratıcı roll çeşitleriyle Anadolu Yakası'nın en yüksek puanlı Japon ve sushi restoranı.",
+    whatToOrder: ['Kaen Special Roll', 'Crispy Maguro Tempura'],
+    menuFrom: ['Sashimi Tabağı', 'Dragon Roll', 'Edamame', 'Miso Çorbası'],
+    alsoTry: ['Trüf yağlı ve somonlu sıcak roll kombinasyonları'],
+    beforeYouGo: [
+      'Akşam yemekleri için rezervasyon yaptırılması önemle tavsiye edilir.',
+      'Nezih ve modern bir gastronomi akşamı sunar.'
+    ]
+  },
+  'kosuyolu-bistro-monkey': {
+    description: "Muhittin Üstündağ Caddesi'nde keyifli bahçesi, zengin içecek seçkisi, trüflü pizzaları ve çıtır atıştırmalıklarıyla semtin popüler gastro-pub durağı.",
+    whatToOrder: ['Monkey Gurme Şinitzel', 'Trüf Mantarlı Pizza'],
+    menuFrom: ['Çıtır Tavuk Sepeti', 'Craft İçecekler', 'Hamburger', 'Baharatlı Patates'],
+    alsoTry: ['Ev yapımı özel dip soslarla servis edilen çıtır atıştırmalıklar'],
+    beforeYouGo: [
+      'Arkadaş buluşmaları ve keyifli akşamüstü sohbetleri için çok uygundur.',
+      'Hafta sonu akşamları bahçe masaları hızla dolar.'
+    ]
+  },
+  'kosuyolu-bistro-birtat': {
+    description: "Kalfa Çeşmesi Sokak'ta 1956'dan gelen ocakbaşı mirasını zırh kıyması kebapları, sıcak mezeleri ve nostaljik meyhane kültürüyle yaşatan köklü işletme.",
+    whatToOrder: ['Zırh Kıyması Kebap', 'Közde Patlıcan Ezme'],
+    menuFrom: ['Gavurdağı Salatası', 'Kuzu Şiş', 'İçli Köfte', 'Çiğ Börek'],
+    alsoTry: ['Tandırda ağır ağır pişen sıcak kuzu incik'],
+    beforeYouGo: [
+      'Koşuyolu’nun en köklü akşam sofrası klasiklerinden biridir.',
+      'Özellikle kalabalık gruplar için önceden rezervasyon gerekir.'
+    ]
+  },
+  'kosuyolu-bistro-kipos': {
+    description: "Cenap Şahabettin Sokak'ta meyve ağaçlarıyla çevrili sakin bahçesinde Ayvalık ve Cunda mutfağının taze balıklarını ve deniz mezelerini sunan balık restoranı.",
+    whatToOrder: ['Tuzda Levrek', 'Cunda Usulü Sıcak Ahtapot'],
+    menuFrom: ['Girit Ezmesi', 'Kalamar Izgara', 'Karides Güveç', 'Deniz Börülcesi'],
+    alsoTry: ['Zeytinyağlı sıcak enginar kalbi ve deniz mahsullü börek'],
+    beforeYouGo: [
+      'Huzurlu ve romantik bir bahçe akşamı için elverişlidir.',
+      'Taze balık çeşitleri günlük tezgaha göre değişir.'
+    ]
+  },
+
+  // Pizza & İtalyan
+  'kosuyolu-pizza-rosario': {
+    description: "Kalfa Çeşmesi Sokak'ta İtalyan şef yönetiminde odun ateşli taş fırında pişen ince çıtır hamurlu Napoli pizzaları ve taze ev yapımı makarnalar sunuyor.",
+    whatToOrder: ['Pizza Margherita D.O.P.', 'Trüflü Dört Peynirli Pizza'],
+    menuFrom: ['Tagliatelle al Funghi', 'Carpaccio di Manzo', 'Tiramisu Klasik'],
+    alsoTry: ['İtalya usulü ev yapımı taze domates soslu gnocchi'],
+    beforeYouGo: [
+      'İstanbul’un en köklü ve otantik İtalyan restoranlarından biridir.',
+      'Hafta sonu akşamları için rezervasyon yapılması tavsiye edilir.'
+    ]
+  },
+  'kosuyolu-pizza-locale': {
+    description: "Muhittin Üstündağ Caddesi'nde hafif mayalanmış ince hamuru, taze füme kaburga ve zengin peynir çeşitleriyle hazırlanan lezzetli pizzalar sunuyor.",
+    whatToOrder: ['Füme Kaburgalı Pizza', 'Pizza Tartufo'],
+    menuFrom: ['Dört Peynirli Pizza', 'Nutellalı Tatlı Pizza', 'Akdeniz Salatası'],
+    alsoTry: ['Yemek sonrası fırından sıcak çıkan Nutellalı ve çilekli kapalı pizza'],
+    beforeYouGo: [
+      'Rahat ve modern bir ortamda hızlı ve kaliteli pizza deneyimi sunar.',
+      'Paket servis ve yerinde tüketim için çok popülerdir.'
+    ]
+  },
+  'kosuyolu-pizza-papajohns': {
+    description: "Koşuyolu Caddesi üzerinde taze günlük açılan hamuru, özel sarımsak sosu ve bol malzemeli kalın kenar Amerikan tarzı pizzalarıyla tanınan pizza durağı.",
+    whatToOrder: ['Super Papa', 'Special Garlic Soslu Çıtır Kenar'],
+    menuFrom: ['Pepperoni Pizza', 'Tavuklu Barbekü Pizza', 'Peynirli Ekmek'],
+    alsoTry: ['Orijinal tereyağlı ve sarımsaklı dip sos eşliğinde çıtır pizza kenarları'],
+    beforeYouGo: [
+      'Geç saatlere kadar açık ve hızlı servis imkanı sağlar.',
+      'Aileler ve gruplar için ekonomik menü seçenekleri bulunur.'
+    ]
+  },
+  'kosuyolu-pizza-pizzav': {
+    description: "Şeyh Galip Sokak'ta yirmiden fazla zengin pizza çeşidi, doyurucu porsiyonları ve sıcak aile ortamıyla Koşuyolu ve Acıbadem hattının sevilen pizzacısı.",
+    whatToOrder: ['Pizza V Special', 'Kavurmalı Taşfırın Pizza'],
+    menuFrom: ['Dört Mevsim Pizza', 'Calzone', 'Sezar Salata', 'Fırın Patates'],
+    alsoTry: ['Özel baharat karışımlı çıtır patates dilimleri'],
+    beforeYouGo: [
+      'Doyurucu porsiyonları ve samimi servisiyle mahallenin güvenilen pizzacısıdır.',
+      'Geniş masalarıyla çocuklu aileler için elverişlidir.'
+    ]
   }
 };
 

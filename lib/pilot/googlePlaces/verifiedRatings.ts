@@ -572,6 +572,162 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
+
+  // =========================================================================
+  // KOŞUYOLU (KADIKÖY) — 100% VERIFIED
+  // =========================================================================
+
+  // Kahvaltı & Bahçe Brunch
+  'kosuyolu-breakfast-cevizagaci': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Ceviz+A%C4%9Fac%C4%B1+Muhittin+%C3%9Cst%C3%BCnda%C4%9F+Cd+No+85+Ko%C5%9Fuyolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'kosuyolu-breakfast-kirpi': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kirpi+Ko%C5%9Fuyolu+Mehmet+Akfan+Sk+No+31+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'kosuyolu-breakfast-radika': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Radika+Ko%C5%9Fuyolu+Kalfa+%C3%87e%C5%9Fmesi+Sk+No+30+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'kosuyolu-breakfast-flan': {
+    platform: 'google-maps',
+    value: 4.0,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Flan+Bakery+Muhittin+%C3%9Cst%C3%BCnda%C4%9F+Cd+No+65+Ko%C5%9Fuyolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+
+  // Kahve & Çalışma Alanları
+  'kosuyolu-coffee-kaffeeschutz': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kaffee+Sch%C3%BCtz+Ko%C5%9Fuyolu+Cad+No+80+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'kosuyolu-coffee-cremma': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Cremma+Muhittin+%C3%9Cst%C3%BCnda%C4%9F+Cd+No+45+Ko%C5%9Fuyolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'kosuyolu-coffee-blak': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Blak+Coffee+Co+Mehmet+Akfan+Sk+No+53+Ko%C5%9Fuyolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'kosuyolu-coffee-viyana': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Viyana+Kahvesi+Ko%C5%9Fuyolu+Cad+No+10+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+
+  // Akşam Yemeği & Bistro
+  'kosuyolu-bistro-kaen': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kaen+Sushi+Asmadal%C4%B1+Sk+No+6+Ko%C5%9Fuyolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'kosuyolu-bistro-monkey': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Monkey+Business+Muhittin+%C3%9Cst%C3%BCnda%C4%9F+Cd+No+9+Ko%C5%9Fuyolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'kosuyolu-bistro-birtat': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Selimiye+Birtat+1956+Kalfa+%C3%87e%C5%9Fmesi+Sk+No+16+Ko%C5%9Fuyolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'kosuyolu-bistro-kipos': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kipos+Bal%C4%B1k+Cenap+%C5%9Eahabettin+Sk+No+128+Ko%C5%9Fuyolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+
+  // Pizza & İtalyan
+  'kosuyolu-pizza-rosario': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Trattoria+da+Rosario+Kalfa+%C3%87e%C5%9Fmesi+Sk+No+22+Ko%C5%9Fuyolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'kosuyolu-pizza-locale': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Pizza+Locale+Muhittin+%C3%9Cst%C3%BCnda%C4%9F+Cd+No+71+Ko%C5%9Fuyolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'kosuyolu-pizza-papajohns': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Papa+Johns+Ko%C5%9Fuyolu+Cad+No+114+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'kosuyolu-pizza-pizzav': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Pizza+V+%C5%9Eeyh+Galip+Sk+No+7+Ko%C5%9Fuyolu+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
 };
 
 export function getVerifiedGoogleRatings(venueId: string): VisitorGoogleRating[] {
