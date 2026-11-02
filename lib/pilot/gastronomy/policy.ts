@@ -5,7 +5,8 @@ export const DEFAULT_CATEGORIES:Category[]=[{id:'must-try',name:'Mutlaka Denenme
 export const emptyScope=():Scope=>({automaticIds:[],overrides:{},order:[],lastRunAt:null,nextReviewAt:null,publishedIds:[],warnings:[]});
 export function validateCategories(categories:Category[]) {
  if(!Array.isArray(categories)||categories.length<1||categories.length>7)throw new Error('Bölgede 1–7 kategori olmalı.');
- if(categories[0]?.id!=='must-try'||categories[0]?.name!=='Mutlaka Denenmesi Gerekenler')throw new Error('İlk kategori Mutlaka Denenmesi Gerekenler olmalı.');
+ const mustTryIdx=categories.findIndex(c=>c.id==='must-try'||c.name==='Mutlaka Denenmesi Gerekenler');
+ if(mustTryIdx>0)throw new Error('İlk kategori Mutlaka Denenmesi Gerekenler olmalı.');
  if(new Set(categories.map(c=>c.id)).size!==categories.length || categories.some(c=>!/^[-a-z0-9]{1,50}$/.test(c.id)||typeof c.name!=='string'||!c.name.trim()||c.name.length>80))throw new Error('Kategori kimliği/adı geçersiz.');
 }
 export function recent(date:string|null,now:string,days:number) {if(!date)return false;const age=Date.parse(now)-Date.parse(date);return Number.isFinite(age)&&age>=0&&age<=days*86400000;}
