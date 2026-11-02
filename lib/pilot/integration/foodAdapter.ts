@@ -26,8 +26,143 @@ const CATEGORY_NAME_MAP: Record<string, string> = {
 /** Never accepts the admin card or uses the Antigravity prototype provider. */
 export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery {
  const illustrations=assignVenueIllustrations(data.venues);
+ const distinctLocations: VisitorFoodDiscovery['locations'] = data.venues.length ? [
+  {
+   id: data.region.id,
+   level: 'semt',
+   name: data.region.name,
+   slug: data.region.slug,
+   path: [...data.region.path],
+   displayName: data.region.displayName,
+   locative: "Moda'da",
+   status: 'published',
+   aliases: ['İstanbul', 'Kadıköy', 'Istanbul', 'Kadikoy', 'Moda'],
+   scopeNote: 'Kadıköy · Moda (Yayında)'
+  },
+  {
+   id: 'kadikoy-merkez',
+   level: 'semt',
+   name: 'Kadıköy Merkez & Çarşı',
+   slug: 'kadikoy-merkez',
+   path: ['istanbul', 'kadikoy', 'merkez'],
+   displayName: 'Kadıköy Merkez & Çarşı, İstanbul',
+   locative: "Kadıköy Merkez'de",
+   status: 'coming_soon',
+   aliases: ['Çarşı', 'Carsi', 'Rıhtım', 'Rihtim', 'Kadıköy Çarşı', 'Kadikoy Merkez'],
+   scopeNote: 'Kadıköy · Çarşı (Araştırmada)'
+  },
+  {
+   id: 'yeldegirmeni',
+   level: 'semt',
+   name: 'Yeldeğirmeni',
+   slug: 'yeldegirmeni',
+   path: ['istanbul', 'kadikoy', 'yeldegirmeni'],
+   displayName: 'Yeldeğirmeni, Kadıköy, İstanbul',
+   locative: "Yeldeğirmeni'nde",
+   status: 'coming_soon',
+   aliases: ['Yeldegirmeni', 'Rasimpaşa', 'Rasimpasa', 'Karakolhane'],
+   scopeNote: 'Kadıköy · Yeldeğirmeni (Araştırmada)'
+  },
+  {
+   id: 'caddebostan',
+   level: 'semt',
+   name: 'Caddebostan',
+   slug: 'caddebostan',
+   path: ['istanbul', 'kadikoy', 'caddebostan'],
+   displayName: 'Caddebostan, Kadıköy, İstanbul',
+   locative: "Caddebostan'da",
+   status: 'coming_soon',
+   aliases: ['Caddebostan', 'Bağdat Caddesi', 'Bagdat Caddesi'],
+   scopeNote: 'Kadıköy · Caddebostan (Araştırmada)'
+  },
+  {
+   id: 'suadiye',
+   level: 'semt',
+   name: 'Suadiye',
+   slug: 'suadiye',
+   path: ['istanbul', 'kadikoy', 'suadiye'],
+   displayName: 'Suadiye, Kadıköy, İstanbul',
+   locative: "Suadiye'de",
+   status: 'coming_soon',
+   aliases: ['Suadiye', 'Plaj Yolu'],
+   scopeNote: 'Kadıköy · Suadiye (Araştırmada)'
+  },
+  {
+   id: 'goztepe',
+   level: 'semt',
+   name: 'Göztepe',
+   slug: 'goztepe',
+   path: ['istanbul', 'kadikoy', 'goztepe'],
+   displayName: 'Göztepe, Kadıköy, İstanbul',
+   locative: "Göztepe'de",
+   status: 'coming_soon',
+   aliases: ['Göztepe', 'Goztepe'],
+   scopeNote: 'Kadıköy · Göztepe (Araştırmada)'
+  },
+  {
+   id: 'acibadem',
+   level: 'semt',
+   name: 'Acıbadem',
+   slug: 'acibadem',
+   path: ['istanbul', 'kadikoy', 'acibadem'],
+   displayName: 'Acıbadem, Kadıköy, İstanbul',
+   locative: "Acıbadem'de",
+   status: 'coming_soon',
+   aliases: ['Acıbadem', 'Acibadem'],
+   scopeNote: 'Kadıköy · Acıbadem (Araştırmada)'
+  },
+  {
+   id: 'kosuyolu',
+   level: 'semt',
+   name: 'Koşuyolu',
+   slug: 'kosuyolu',
+   path: ['istanbul', 'kadikoy', 'kosuyolu'],
+   displayName: 'Koşuyolu, Kadıköy, İstanbul',
+   locative: "Koşuyolu'nda",
+   status: 'coming_soon',
+   aliases: ['Koşuyolu', 'Kosuyolu'],
+   scopeNote: 'Kadıköy · Koşuyolu (Araştırmada)'
+  },
+  {
+   id: 'nisantasi',
+   level: 'semt',
+   name: 'Nişantaşı',
+   slug: 'nisantasi',
+   path: ['istanbul', 'sisli', 'nisantasi'],
+   displayName: 'Nişantaşı, Şişli, İstanbul',
+   locative: "Nişantaşı'nda",
+   status: 'coming_soon',
+   aliases: ['Nişantaşı', 'Nisantasi', 'Teşvikiye', 'Abdi İpekçi'],
+   scopeNote: 'Şişli · Nişantaşı (Araştırmada)'
+  },
+  {
+   id: 'bebek',
+   level: 'semt',
+   name: 'Bebek',
+   slug: 'bebek',
+   path: ['istanbul', 'besiktas', 'bebek'],
+   displayName: 'Bebek, Beşiktaş, İstanbul',
+   locative: "Bebek'te",
+   status: 'coming_soon',
+   aliases: ['Bebek', 'Cevdet Paşa'],
+   scopeNote: 'Beşiktaş · Bebek (Araştırmada)'
+  },
+  {
+   id: 'yenikoy',
+   level: 'semt',
+   name: 'Yeniköy',
+   slug: 'yenikoy',
+   path: ['istanbul', 'sariyer', 'yenikoy'],
+   displayName: 'Yeniköy, Sarıyer, İstanbul',
+   locative: "Yeniköy'de",
+   status: 'coming_soon',
+   aliases: ['Yeniköy', 'Yenikoy', 'Köybaşı'],
+   scopeNote: 'Sarıyer · Yeniköy (Araştırmada)'
+  }
+ ] : [];
+
  return {
-  locations:data.venues.length?[{id:data.region.id,level:'semt',name:data.region.name,slug:data.region.slug,path:[...data.region.path],displayName:data.region.displayName,locative:"Moda'da",status:'published',aliases:['İstanbul','Kadıköy','Istanbul','Kadikoy'],scopeNote:'Kadıköy · Moda'}]:[],
+  locations: distinctLocations,
   categories:data.categories.slice(0,7).map(c=>({slug:c.slug,label:c.label,title:c.label,isMustTry:c.isMustTry,emoji:c.id==='coffee'?'☕':c.id==='burger'?'🍔':c.id==='pizza'?'🍕':c.id==='breakfast'?'🍳':c.id==='dessert'?'🍰':c.id==='date'?'🍷':undefined})),
   venues:data.venues.map(v=>{
    const verified=getVerifiedGoogleRatings(v.id);

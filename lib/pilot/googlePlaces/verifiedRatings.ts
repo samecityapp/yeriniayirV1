@@ -9,7 +9,7 @@ import type { VisitorGoogleRating } from './visitorRating';
  * - Unverified venues return empty ([]), cleanly hiding the badge without guessing.
  */
 const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
-  // --- KAHVE ---
+  // --- KAHVE (100% MODA) ---
   // Çekirdek (Place ID: ChIJZTpOQ2G4yhQRXy7M8aFB0Wc, Şair Latifi Sk. No:9A, Moda)
   'osm-node-5764070654': {
     platform: 'google-maps',
@@ -30,7 +30,7 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
-  // Montag Coffee Roasters (Place ID: ChIJYc4vsQa5yhQR3eJyqdAvyp0, Muvakkithane / Bademaltı, Moda)
+  // Montag Coffee Roasters (Place ID: ChIJYc4vsQa5yhQR3eJyqdAvyp0, Bademaltı Sk. No:19 / Moda Cd., Moda)
   'osm-node-9375785317': {
     platform: 'google-maps',
     value: 4.5,
@@ -51,18 +51,8 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
     },
   },
 
-  // --- HAMBURGER ---
-  // Basta! Street Food Bar (Sakız Gülü Sk. No:1, Caferağa, Kadıköy)
-  'kadikoy-burger-basta': {
-    platform: 'google-maps',
-    value: 4.6,
-    attribution: {
-      label: 'Google Maps',
-      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Basta+Street+Food+Bar+Cafera%C4%9Fa+Sak%C4%B1z+G%C3%BCl%C3%BC+Sk+No+1+Kad%C4%B1k%C3%B6y',
-      providers: [],
-    },
-  },
-  // Zapata Burger (Sakız Sk. No:1/C, Moda, Kadıköy)
+  // --- HAMBURGER (100% MODA) ---
+  // Zapata Burger (Sakız Sk. No:1/C, Moda)
   'kadikoy-burger-zapata': {
     platform: 'google-maps',
     value: 4.5,
@@ -72,7 +62,7 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
-  // 2Bites (Ağabey Sk. No:17/A, Moda, Kadıköy)
+  // 2Bites (Ağabey Sk. No:17/A, Moda)
   'osm-node-11013718913': {
     platform: 'google-maps',
     value: 4.4,
@@ -82,8 +72,28 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
+  // Mini Eatery (Moda Cd. No:55/C, Moda)
+  'moda-burger-minieatery': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Mini+Eatery+Moda+Caddesi+No+55C+Moda+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  // B.O.B Best of Burger (Kafein Sk. No:1/A, Moda)
+  'moda-burger-bob': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=BOB+Best+of+Burger+Kafein+Sk+No+1A+Moda+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
 
-  // --- PIZZA ---
+  // --- PIZZA (100% MODA) ---
   // Pizzeria Il Pellicano (Keresteci Aziz Sk. No:36/B, Moda)
   'osm-node-4831086823': {
     platform: 'google-maps',
@@ -104,28 +114,28 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
-  // Nappo Pizza (Damacı Sk. No:2, Caferağa, Kadıköy)
-  'kadikoy-pizza-nappo': {
+  // Paul's Pizza & Lasagna (Dr. İhsan Ünlüer Sk. No:19, Moda)
+  'moda-pizza-pauls': {
     platform: 'google-maps',
     value: 4.5,
     attribution: {
       label: 'Google Maps',
-      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Nappo+Pizza+Damac%C4%B1+Sk+No+2+Cafera%C4%9Fa+Kad%C4%B1k%C3%B6y',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Pauls+Pizza+Lasagna+Dr+Ihsan+Unluer+Sk+No+19+Moda+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  // Sliceguy (Moda Cd. No:150/A, Moda)
+  'moda-pizza-sliceguy': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Sliceguy+Moda+Caddesi+No+150A+Moda+Kad%C4%B1k%C3%B6y',
       providers: [],
     },
   },
 
-  // --- KAHVALTI ---
-  // Brekkie Croissant & Breakfast (Yoğurtçu Parkı Cd. No:24/1, Kadıköy)
-  'kadikoy-breakfast-brekkie': {
-    platform: 'google-maps',
-    value: 4.5,
-    attribution: {
-      label: 'Google Maps',
-      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Brekkie+Croissant+Breakfast+Yo%C4%9Furt%C3%A7u+Park%C4%B1+Cd+No+24+Kad%C4%B1k%C3%B6y',
-      providers: [],
-    },
-  },
+  // --- KAHVALTI (100% MODA) ---
   // Zapata Bakery (Şevki Bey Sk. No:31/A, Moda)
   'kadikoy-breakfast-zapata': {
     platform: 'google-maps',
@@ -136,28 +146,38 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
-  // Küff Yeldeğirmeni (Karakolhane Cd. No:54, Yeldeğirmeni, Kadıköy)
-  'kadikoy-breakfast-kuff': {
+  // 180° Coffee Bakery (Dr. Esat Işık Cd. No:36/A, Moda)
+  'moda-breakfast-180': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=180+Coffee+Bakery+Dr+Esat+Isik+Cd+No+36A+Moda+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  // Naan Bakeshop (Moda Cd. No:113, Moda)
+  'moda-breakfast-naan': {
     platform: 'google-maps',
     value: 4.4,
     attribution: {
       label: 'Google Maps',
-      mapsUri: 'https://www.google.com/maps/search/?api=1&query=K%C3%BCff+Karakolhane+Cd+No+54+Yelde%C4%9Firmeni+Kad%C4%B1k%C3%B6y',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Naan+Bakeshop+Moda+Caddesi+No+113+Moda+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  // Munchies Crepe & Pancake (Moda Cd. No:147/A, Moda)
+  'moda-breakfast-munchies': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Munchies+Crepe+Pancake+Moda+Caddesi+No+147A+Moda+Kad%C4%B1k%C3%B6y',
       providers: [],
     },
   },
 
-  // --- TATLI & PASTANE ---
-  // Baylan Pastanesi (Muvakkithane Cd. No:9/A, Kadıköy Çarşı)
-  'kadikoy-dessert-baylan': {
-    platform: 'google-maps',
-    value: 4.4,
-    attribution: {
-      label: 'Google Maps',
-      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Baylan+Pastanesi+Muvakkithane+Cd+No+9A+Kad%C4%B1k%C3%B6y',
-      providers: [],
-    },
-  },
+  // --- TATLI & PASTANE (100% MODA) ---
   // Asuman (Şair Nefi Sk. No:9/A, Moda)
   'kadikoy-dessert-asuman': {
     platform: 'google-maps',
@@ -178,8 +198,28 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
+  // Dondurmacı Ali Usta (Moda Cd. No:176/B, Moda)
+  'moda-dessert-aliusta': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Dondurmac%C4%B1+Ali+Usta+Moda+Caddesi+No+176B+Moda+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  // Dem Moda (Şair Nefi Sk. No:9/1, Moda)
+  'moda-dessert-dem': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Dem+Moda+%C5%9Eair+Nefi+Sk+No+9+Moda+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
 
-  // --- DATE MEKANLARI ---
+  // --- DATE MEKANLARI (100% MODA) ---
   // Aida - Vino e Cucina (Ressam Şeref Akdik Sk. No:10, Moda)
   'kadikoy-date-aida': {
     platform: 'google-maps',
@@ -190,23 +230,33 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
-  // Viktor Levi Şarap Evi (Damacı Sk. No:4, Caferağa, Kadıköy)
-  'kadikoy-date-viktorlevi': {
+  // Rita Moda (Şair Nefi Sk. No:14, Moda)
+  'moda-date-rita': {
     platform: 'google-maps',
     value: 4.4,
     attribution: {
       label: 'Google Maps',
-      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Viktor+Levi+%C5%9Earap+Evi+Damac%C4%B1+Sk+No+4+Kad%C4%B1k%C3%B6y',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Rita+Moda+%C5%9Eair+Nefi+Sk+No+14+Moda+Kad%C4%B1k%C3%B6y',
       providers: [],
     },
   },
-  // Basta Neo Bistro (Sakız Gülü Sk. No:1, Caferağa, Kadıköy)
-  'kadikoy-date-bastaneobistro': {
+  // Fauna (Küçük Moda Sk. No:26/A, Moda)
+  'moda-date-fauna': {
     platform: 'google-maps',
-    value: 4.6,
+    value: 4.7,
     attribution: {
       label: 'Google Maps',
-      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Basta+Neo+Bistro+Cafera%C4%9Fa+Sak%C4%B1z+G%C3%BCl%C3%BC+Sk+No+1+Kad%C4%B1k%C3%B6y',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Fauna+Kucuk+Moda+Sk+No+26A+Moda+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  // Moda Kayıkhane (Moda Cad. No:194, Moda Sahili)
+  'moda-date-kayikhane': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Moda+Kay%C4%B1khane+Moda+Cad+No+194+Moda+Sahili+Kad%C4%B1k%C3%B6y',
       providers: [],
     },
   },

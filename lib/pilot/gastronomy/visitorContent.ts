@@ -92,18 +92,7 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     ]
   },
 
-  // --- HAMBURGER ---
-  'kadikoy-burger-basta': {
-    description: "Şef dokunuşlu gurme sokak lezzetleri konseptinde, el yapımı yumuşak brioche ekmeği ve özel kuzu hamburgeriyle Kadıköy'ün öncü durağı.",
-    whatToOrder: ['Kuzu Burger', 'Dana Füme Dürüm'],
-    menuFrom: ['Kuzu Burger', 'Dana Burger', 'Humus', 'Sütlaç'],
-    alsoTry: ['Şef usulü fırınlanmış baharatlı patates'],
-    beforeYouGo: [
-      'Oturma düzeni sokak bistro tarzındadır; akşam pik saatlerde kısa sıra oluşabilir.',
-      'Take-away servisi oldukça hızlı ve pratiktir.',
-      'Menüdeki şef tatlısı fırın sütlaç yemeğin klasik tamamlayıcısıdır.'
-    ]
-  },
+  // --- HAMBURGER (100% MODA) ---
   'kadikoy-burger-zapata': {
     description: "Moda Sakız Sokak'ta uzun yıllardır kendi reçeteleriyle hazırladıkları dinlendirilmiş köfte, zengin ev yapımı soslar ve taze burger ekmekleriyle biliniyor.",
     whatToOrder: ['Zapata Burger', 'Trüflü Burger'],
@@ -124,8 +113,28 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Siparişler kasadan verilir, servis hızlı ve sıcaktır.'
     ]
   },
+  'moda-burger-minieatery': {
+    description: "Moda Caddesi üzerinde farklı reçeteleri küçük porsiyonlarda tatma olanağı sunan, zanaatkar mini gurme burger öncüsü.",
+    whatToOrder: ['Trüflü Mini Burger', 'Cheddarlı Smash Mini'],
+    menuFrom: ['Klasik Mini Burger', 'Trüflü Burger', 'Karamelize Soğanlı Burger', 'Baharatlı Patates'],
+    alsoTry: ['Ballı hardallı çıtır patates'],
+    beforeYouGo: [
+      'Mini boy burgerler sayesinde tek siparişte 2-3 farklı reçeteyi denemek mümkündür.',
+      'Moda Caddesi üzerinde hızlı ve pratik bir duraktır.'
+    ]
+  },
+  'moda-burger-bob': {
+    description: "Kafein Sokak'ta günlük taze brioche ekmekleri ve özel dinlendirilmiş et harçlarıyla hazırlanan kalın köfteli Moda burgercisi.",
+    whatToOrder: ['B.O.B Burger', 'Füme Kaburga Burger'],
+    menuFrom: ['Klasik Cheese Burger', 'B.O.B Burger', 'Kafein Burger', 'Çıtır Soğan Halkası'],
+    alsoTry: ['Çıtır kaburga patates'],
+    beforeYouGo: [
+      'Köfteler sipariş anında pişirilir; pişme derecesi tercihi iletilebilir.',
+      'Kompakt masaları mahalle sokak havasındadır.'
+    ]
+  },
 
-  // --- PIZZA ---
+  // --- PIZZA (100% MODA) ---
   'osm-node-4831086823': {
     description: "Keresteci Aziz Sokak'ta odun fırınında Napoli usulü yüksek kenarlı, uzun fermente hamurlu gerçek İtalyan pizzası pişiren samimi bir trattoria.",
     whatToOrder: ['Margherita Verace', 'Quattro Formaggi'],
@@ -146,28 +155,28 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Hem iç mekanda hem sokağa bakan masalarda servis yapılır.'
     ]
   },
-  'kadikoy-pizza-nappo': {
-    description: "Geleneksel Napoli hamur standartlarında, yüksek ısıda taş fırında pişen leopar desenli kenarları ve kaliteli peynir seçkisiyle tanınan pizza noktası.",
-    whatToOrder: ['Marinara', 'Pizza Bufala'],
-    menuFrom: ['Marinara', 'Margherita DOP', 'Melanzane', 'Tiramisu'],
-    alsoTry: ['Fındık kremalı Calzone'],
+  'moda-pizza-pauls': {
+    description: "Dr. İhsan Ünlüer Sokak'ta taş tabanlı odun fırınında pişen bol malzemeli ince hamur pizzaları ve fırın lazanyasıyla Moda'nın klasik trattoria durağı.",
+    whatToOrder: ["Paul's Özel Pizza", 'Fırın Lazanya'],
+    menuFrom: ['Margherita', "Paul's Special", 'Pepperoni', 'Bolonez Lazanya'],
+    alsoTry: ['Fırınlanmış sarımsaklı ekmek'],
     beforeYouGo: [
-      'Geniş ve aydınlık oturma alanıyla grup ve aile yemeklerine uygundur.',
-      'Hafta sonu akşamları yoğunlaşır; erken saatler daha sakindir.'
+      'Samimi bir mahalle trattoria atmosferine sahiptir.',
+      'Hafta sonu akşamları masalar hızla dolar.'
+    ]
+  },
+  'moda-pizza-sliceguy': {
+    description: "Moda Caddesi üzerinde New York usulü büyük dilim pizza konseptinde, çıtır ince taban ve zengin peynir harmanıyla çalışan butik dilim pizzacı.",
+    whatToOrder: ['Pepperoni Slice', 'Hot Honey Pizza'],
+    menuFrom: ['Classic Cheese Slice', 'Pepperoni Slice', 'Mushroom White Slice', 'Jalapeno Slice'],
+    alsoTry: ['Acı ballı baharatlı sos'],
+    beforeYouGo: [
+      'Dilim alıp yürürken veya Moda sahilinde tüketmek için pratiktir.',
+      'Sipariş edilen dilimler fırında 2 dakikada çıtırlaştırılarak sıcak servis edilir.'
     ]
   },
 
-  // --- KAHVALTI ---
-  'kadikoy-breakfast-brekkie': {
-    description: "Yoğurtçu Parkı karşısında Fransız usulü el yapımı kat kat tereyağlı kruvasanlar ve zengin tuzlu/tatlı kahvaltı tabaklarında uzmanlaşmış fırın-kafe.",
-    whatToOrder: ['Eggs Benedict Kruvasan', 'Salted Caramel Kruvasan'],
-    menuFrom: ['Scrambled Eggs Croissant', 'Avokadolu Kruvasan', 'Granola Kasesi'],
-    alsoTry: ['Taze demlenmiş V60 filtre kahve'],
-    beforeYouGo: [
-      'Hafta sonları sabah saatlerinden itibaren sıra oluşur; hafta içi erken saatler çok daha sakindir.',
-      'Kruvasanları paket olarak alıp Yoğurtçu Parkı veya sahil yürüyüşünde tüketmek popülerdir.'
-    ]
-  },
+  // --- KAHVALTI (100% MODA) ---
   'kadikoy-breakfast-zapata': {
     description: "Şevki Bey Sokak'ta taş değirmen unlarıyla mayalanan ekşi mayalı ekmekler, çılbır ve doyurucu sıcak kahvaltı tabaklarıyla öne çıkan butik kahvaltı mekanı.",
     whatToOrder: ['Ekşi Mayalı Çılbır', 'İspanyol Omleti'],
@@ -178,28 +187,38 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Ekşi mayalı artisan ekmekleri somun olarak da satın alabilirsiniz.'
     ]
   },
-  'kadikoy-breakfast-kuff': {
-    description: "Yeldeğirmeni'nin tarihi aksında, taze malzemeli sahanda sıcaklar, pişi ve doyurucu kahvaltı tepsileri sunan dinamik bir mahalle buluşma noktası.",
-    whatToOrder: ['Küff Kahvaltı Tabağı', 'Döküm Tavada Menemen'],
-    menuFrom: ['Menemen', 'Hellimli Sucuklu Tava', 'Pişi Tabağı', 'Filtre Kahve'],
-    alsoTry: ['Taze sıcak pişi'],
+  'moda-breakfast-180': {
+    description: "Dr. Esat Işık Caddesi'nde fırından yeni çıkmış ekşi mayalı simitler, poşe yumurtalı kaseler ve doyurucu kahvaltı alternatifleriyle bilinen popüler brunch noktası.",
+    whatToOrder: ['Poşe Yumurtalı Avokado Bowl', 'İngiliz Kahvaltı Tabağı'],
+    menuFrom: ['Menemen', 'Scrambled Eggs', 'Granola Kasesi', 'Ev Yapımı Kiş'],
+    alsoTry: ['Taze demlenmiş cold drip kahve'],
     beforeYouGo: [
-      'Yeldeğirmeni sanat atölyeleri ve mural sokaklarına yürüme mesafesindedir.',
-      'Kahvaltı servisi gün boyu devam eder.'
+      'Hafta sonu brunch saatlerinde (11:00-13:30) yoğunluk oluşabilir; 09:30-10:30 arası sakindir.',
+      'Dış mekan masaları cadde akışını izlemek için uygundur.'
+    ]
+  },
+  'moda-breakfast-naan': {
+    description: "Moda Caddesi'nde taş fırından çıkan artisan ekşi mayalı ekmekleri, zengin kahvaltı tepsileri ve fırın lezzetleriyle Moda'nın simge kahvaltı fırını.",
+    whatToOrder: ['Naan Kahvaltı Tabağı', 'Ekşi Mayalı Croque Monsieur'],
+    menuFrom: ['Çılbır', 'Menemen', 'Füme Etli Sandviç', 'Ekşi Mayalı Ekmek Sepeti'],
+    alsoTry: ['Taze fırın bademli kruvasan'],
+    beforeYouGo: [
+      'Yüksek tavanlı iç oturma alanı ferahtır.',
+      'Günlük ekşi mayalı ekmek çeşitleri tezgâhtan somun olarak satın alınabilir.'
+    ]
+  },
+  'moda-breakfast-munchies': {
+    description: "Moda Caddesi üzerinde sıcak mini pancake kuleleri, taze meyveler, el yapımı soslar ve tuzlu kahvaltı tabakları sunan tatlı-tuzlu kahvaltı durağı.",
+    whatToOrder: ['Karışık Kahvaltı Pancake Tabağı', 'Tuzlu Krep'],
+    menuFrom: ['Pancake Kulesi', 'Çikolatalı Krep', 'Sahanda Yumurta', 'Peynir Tabağı'],
+    alsoTry: ['Ev yapımı tuzlu karamel sos'],
+    beforeYouGo: [
+      'Porsiyonlar paylaşımlı tüketime uygundur.',
+      'Hafta sonu sabah saatlerinde sıra oluşabilir.'
     ]
   },
 
-  // --- TATLI & PASTANE ---
-  'kadikoy-dessert-baylan': {
-    description: "1923'ten bugüne Kadıköy Çarşı'da yaşayan Cumhuriyet dönemi pastane mirası; tarihi salon atmosferi ve zamansız imza kuplarıyla simge bir kültür durağı.",
-    whatToOrder: ['Kup Griye', 'Adisababa'],
-    menuFrom: ['Kup Griye', 'Rokoko', 'Profiterol', 'Petit Four'],
-    alsoTry: ['Geleneksel likörlü çikolata'],
-    beforeYouGo: [
-      'Üst kat salonu tarihi fotoğraflar ve edebiyatçıların buluşma köşeleriyle nostaljiktir.',
-      'Öğleden sonra 5 çayı saatlerinde hareketlenir.'
-    ]
-  },
+  // --- TATLI & PASTANE (100% MODA) ---
   'kadikoy-dessert-asuman': {
     description: "Şair Nefi Sokak'ta kaliteli Belçika çikolatası, taze çilek ve çıtır bisküvi katmanlarıyla hazırlanan modern kavanoz tatlılarının Kadıköy'deki öncüsü.",
     whatToOrder: ['Asuman (İmza Tatlı)', 'Ferhunde'],
@@ -220,8 +239,28 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Take-away kutularda alıp Moda sahilinde tüketmek yaygındır.'
     ]
   },
+  'moda-dessert-aliusta': {
+    description: "1969'dan bu yana Moda Caddesi'nin sonunda mevsim meyveleri ve saf sütle katkısız geleneksel dondurma üreten Moda'nın yaşayan simgesi.",
+    whatToOrder: ['Fıstıklı Dondurma', 'Sakızlı Dondurma'],
+    menuFrom: ['Fıstık', 'Sakız', 'Kestane', 'Karadut', 'Kavun', 'Çikolata'],
+    alsoTry: ['Karadutlu ve kestaneli dondurma ikilisi'],
+    beforeYouGo: [
+      'Yaz akşamlarında ve hafta sonları kuyruk oluşabilir; servis akıcıdır.',
+      'Dondurmayı külahla alıp Moda İskelesi boyunca yürümek klasik mahalle ritüelidir.'
+    ]
+  },
+  'moda-dessert-dem': {
+    description: "Şair Nefi Sokak'ta dünyanın farklı bölgelerinden 60'tan fazla çay çeşidi, taze fırın kekleri ve el yapımı tatlılarıyla bilinen butik çay evi ve pastane.",
+    whatToOrder: ['Earl Grey Poşe Armut', 'Beyaz Çay Seçkisi'],
+    menuFrom: ['Scone', 'San Sebastian Cheesecake', 'Matcha Kek', 'Çay Menüsü'],
+    alsoTry: ['Sıcak ev yapımı scone ve reçel'],
+    beforeYouGo: [
+      'Sakin arka bahçesi kitap okuma ve sohbet için uygundur.',
+      'Çaylar masada kum saati eşliğinde demlenir.'
+    ]
+  },
 
-  // --- DATE MEKANLARI ---
+  // --- DATE MEKANLARI (100% MODA) ---
   'kadikoy-date-aida': {
     description: "Ressam Şeref Akdik Sokak'taki üç katlı tarihi Moda konağında, canlı piyano ezgileri, loş aydınlatma ve otantik İtalyan mutfağıyla romantik akşam yemekleri sunuyor.",
     whatToOrder: ['Trüflü El Yapımı Tagliolini', 'Osso Buco'],
@@ -232,24 +271,34 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Sakin, loş ve müzikli atmosferi ikili buluşmalar ve kutlamalar için çok elverişlidir.'
     ]
   },
-  'kadikoy-date-viktorlevi': {
-    description: "Damacı Sokak'ta 1914'ten bu yana sarmaşıklarla bezeli gizli iç bahçesi, tarihi taş mahzeni ve geniş yerel kavıyla Kadıköy'ün en köklü akşam buluşma mekanlarından biri.",
-    whatToOrder: ['Viktor Levi Özel Rezerv', 'Peynir Tabağı'],
-    menuFrom: ['Peynir Tabağı', 'Bonfile Dilimleri', 'Izgara Somon', 'Sıcak Şarap'],
-    alsoTry: ['Kuru incirli cevizli sıcak fırın peynir'],
+  'moda-date-rita': {
+    description: "Şair Nefi Sokak'ta üç katlı restore edilmiş tarihi köşkte modern gastropub mutfağı, imza kokteylleri ve loş terasıyla Moda'nın gözde date mekanı.",
+    whatToOrder: ['Şef Kokteylleri', 'Izgara Ahtapot'],
+    menuFrom: ['Izgara Ahtapot', 'Trüflü Patates', 'Dana Yanak', 'İmza Kokteyl Menüsü'],
+    alsoTry: ["'Rita' imza kokteyli"],
     beforeYouGo: [
-      'Sarmaşıklı iç bahçe masaları romantik ambiyans için ilk tercih edilir.',
-      'Hafta sonu akşamları için rezervasyon önerilir.'
+      'Hafta sonu akşamları için rezervasyon önerilir.',
+      'Üst kat teras masaları sakin akşam buluşmaları için elverişlidir.'
     ]
   },
-  'kadikoy-date-bastaneobistro': {
-    description: "Sakız Gülü Sokak'ta rahat bistro atmosferinde şef dokunuşlu yaratıcı mevsimlik tabaklar ve eşleşmeli seçkiler sunan çağdaş bir akşam mekanı.",
-    whatToOrder: ['Şef Tadım Tabağı', 'Dana Kaburga'],
-    menuFrom: ['Dana Kaburga', 'Şef Mezesi', 'Karides Tartar', 'Mevsim Tatlısı'],
-    alsoTry: ['Özel fermantasyon içecek eşleşmeleri'],
+  'moda-date-fauna': {
+    description: "Küçük Moda Sokak'ta butik mutfağında günlük taze açılan zanaatkar el yapımı makarnaları ve rafine İtalyan tabaklarıyla gastronomi tutkunlarının tercihi.",
+    whatToOrder: ['Kuzu Gerdanlı Makarna', 'Enginarlı Risotto'],
+    menuFrom: ['Taze Makarnalar', 'Mevsim Çorbası', 'Dana Kaburga', 'Şef Tatlısı'],
+    alsoTry: ['Günlük mevsim sebzeli taze ravioli'],
     beforeYouGo: [
-      'Akşam saatlerinde loş aydınlatma ve müzik eşliğinde keyifli bir bistro ortamı oluşur.',
-      'Yemekler paylaşımlı tüketime uygun porsiyonlanır.'
+      'Masa sayısı sınırlıdır; mutlaka önceden rezervasyon yapılmalıdır.',
+      'Yemekler özenle hazırlandığı için acele etmeden, sakin bir akşam yemeği planlanmalıdır.'
+    ]
+  },
+  'moda-date-kayikhane': {
+    description: "Moda sahil şeridinde tarihi Moda İskelesi ve deniz manzarasına karşı gün batımı eşliğinde akşam yemeği sunan seçkin sahil buluşma noktası.",
+    whatToOrder: ['Deniz Mahsullü Risotto', 'Günün Taze Balığı'],
+    menuFrom: ['Izgara Levrek', 'Karides Güveç', 'Meze Seçkisi', 'Şarap Menüsü'],
+    alsoTry: ['Gün batımında kadeh eşliğinde soğuk mezeler'],
+    beforeYouGo: [
+      'Deniz kenarı açık masalar için gün batımı saatine rezervasyon önerilir.',
+      'Akşamları akustik canlı dinletiler olabilir.'
     ]
   }
 };
