@@ -237,14 +237,28 @@ export function buildIntegrationDiscovery(cards:VisitorVenueData[],region='moda'
 const cachedVisitor=createVisitorCache<IntegrationDiscovery|null>(30_000,4,data=>!data?.venues.some(v=>v.ratings.length));
 export async function readIntegrationDiscovery(region='moda',category='kahve'){
  if(region!=='moda')return null;
+ let data: IntegrationDiscovery | null = null;
  if(process.env.GASTRONOMY_DATA_SOURCE==='supabase'){
-  const {readCloudPublication}=await import('../../cloud/publication');
-  return readCloudPublication(region+'/'+category);
+  try {
+   const {readCloudPublication}=await import('../../cloud/publication');
+   data = await readCloudPublication(region+'/'+(category || 'kahve'));
+  } catch {}
  }
- const version=await visitorSourceVersion();
- return cachedVisitor(`${region}/${category}/${version}`,async()=>{
-  const selection=await readVisitorVenueSelection('moda-kadikoy','coffee');
-  const result=buildIntegrationDiscovery(selection.cards,region,category);
-  return result;
- });
+ if(!data){
+  const version=await visitorSourceVersion();
+  data = await cachedVisitor(`${region}/${category}/${version}`,async()=>{
+   const selection=await readVisitorVenueSelection('moda-kadikoy','coffee');
+   return buildIntegrationDiscovery(selection.cards,region,category);
+  });
+ }
+ if(data){
+  const existingIds = new Set(data.venues.map(v => v.id));
+  const missing = MODA_NON_COFFEE_VENUES.filter(v => !existingIds.has(v.id));
+  return {
+   ...data,
+   categories: MODA_CATEGORIES,
+   venues: [...data.venues, ...missing]
+  };
+ }
+ return null;
 }
