@@ -16,6 +16,7 @@ const CATEGORY_SLUG_MAP: Record<string, string> = {
  balik: 'balik-deniz-urunleri',
  meyhane: 'meyhane',
  bistro: 'aksam-bistro',
+ kebap: 'kebap-doner',
 };
 
 const CATEGORY_NAME_MAP: Record<string, string> = {
@@ -29,6 +30,7 @@ const CATEGORY_NAME_MAP: Record<string, string> = {
  balik: 'Balık & Deniz Ürünleri',
  meyhane: 'Meyhane & Akşam',
  bistro: 'Akşam Yemeği & Bistro',
+ kebap: 'Kebap, Döner & Ocakbaşı',
 };
 
 /** Never accepts the admin card or uses the Antigravity prototype provider. */
@@ -108,16 +110,16 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    scopeNote: 'Kadıköy · Göztepe (Araştırmada)'
   },
   {
-   id: 'acibadem',
+   id: 'acibadem-kadikoy',
    level: 'semt',
    name: 'Acıbadem',
    slug: 'acibadem',
    path: ['istanbul', 'kadikoy', 'acibadem'],
    displayName: 'Acıbadem, Kadıköy, İstanbul',
    locative: "Acıbadem'de",
-   status: 'coming_soon',
-   aliases: ['Acıbadem', 'Acibadem'],
-   scopeNote: 'Kadıköy · Acıbadem (Araştırmada)'
+   status: 'published',
+   aliases: ['Acıbadem', 'Acibadem', 'Çeçen Sokak', 'Akasya'],
+   scopeNote: 'Kadıköy · Acıbadem (Yayında)'
   },
   {
    id: 'kosuyolu-kadikoy',
@@ -171,7 +173,7 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
 
  return {
   locations: distinctLocations,
-  categories:data.categories.slice(0,7).map(c=>({slug:c.slug,label:c.label,title:c.label,isMustTry:c.isMustTry,emoji:c.id==='coffee'?'☕':c.id==='burger'?'🍔':c.id==='pizza'?'🍕':c.id==='breakfast'?'🍳':c.id==='dessert'?'🍰':c.id==='date'?'🍷':c.id==='lokanta'?'🍲':c.id==='balik'?'🐟':c.id==='meyhane'?'🥂':c.id==='bistro'?'🍸':undefined})),
+  categories:data.categories.slice(0,7).map(c=>({slug:c.slug,label:c.label,title:c.label,isMustTry:c.isMustTry,emoji:c.id==='coffee'?'☕':c.id==='burger'?'🍔':c.id==='pizza'?'🍕':c.id==='breakfast'?'🍳':c.id==='dessert'?'🍰':c.id==='date'?'🍷':c.id==='lokanta'?'🍲':c.id==='balik'?'🐟':c.id==='meyhane'?'🥂':c.id==='bistro'?'🍸':c.id==='kebap'?'🍢':undefined})),
   venues:data.venues.map(v=>{
    const verified=getVerifiedGoogleRatings(v.id);
    const resolvedRatings=verified.length?verified:copyVisitorGoogleRatings(v.ratings);

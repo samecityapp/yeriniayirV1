@@ -816,6 +816,154 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Doyurucu porsiyonları ve samimi servisiyle mahallenin güvenilen pizzacısıdır.',
       'Geniş masalarıyla çocuklu aileler için elverişlidir.'
     ]
+  },
+
+  // =========================================================================
+  // ACIBADEM (KADIKÖY & ÜSKÜDAR)
+  // =========================================================================
+
+  // Çikolata & Tatlı
+  'acibadem-dessert-asuman': {
+    description: "Çeçen Sokak'ta Belçika çikolatasıyla hazırlanan sıcak kupları, imza çilekli tatlıları ve şık butik atmosferiyle İstanbul'un en popüler çikolata durağı.",
+    whatToOrder: ['Asuman İmzalı Çikolata Kupası', 'Ferhunde'],
+    menuFrom: ['Oya', 'Mualla', 'Leman', 'Sıcak Çikolata', 'Espresso'],
+    alsoTry: ['Fıstıklı ve krokanlı el yapımı trüf tabletleri'],
+    beforeYouGo: [
+      'Öğleden sonra ve akşam saatlerinde yoğun ilgi görür.',
+      'Paket çikolata ve hediyelik kutular için de elverişlidir.'
+    ]
+  },
+  'acibadem-dessert-foodlab': {
+    description: "Betül Sokak'ta taze çilekli mereng pastası, San Sebastian cheesecake ve katmanlı lezzet kuplarıyla Acıbadem'in en yüksek puanlı tatlı atölyesi.",
+    whatToOrder: ['Çilekli Mereng Pasta', 'Bask Cheesecake'],
+    menuFrom: ['Yaban Mersinli Mereng', 'Belçika Çikolatalı Brownie', 'Filtre Kahve'],
+    alsoTry: ['Taze orman meyveli çıtır mereng kupası'],
+    beforeYouGo: [
+      'Pastalar günlük sınırlı porsiyonlarda taze hazırlanır.',
+      'Küçük ve samimi oturma alanına sahiptir.'
+    ]
+  },
+  'acibadem-dessert-veronika': {
+    description: "Acıbadem Caddesi'nde kat kat açılan çıtır tereyağlı kruvasanları, taze Belçika çikolatası ve tatlı dolgularıyla buluşturan artizan tatlı durağı.",
+    whatToOrder: ['Çikolata Dolgulu Kruvasan', 'Antep Fıstıklı Rolls'],
+    menuFrom: ['Kruvasan Sandviç', 'Karamelli Tart', 'Latte', 'Cortado'],
+    alsoTry: ['Sıcak espresso yanında taze fırından çıkan tereyağlı kruvasan'],
+    beforeYouGo: [
+      'Kruvasanlar sabah ve öğle saatlerinde taze pişirilir.',
+      'Cadde üzeri hareketli bir kahve-tatlı molası sunar.'
+    ]
+  },
+  'acibadem-dessert-kukis': {
+    description: "Acıbadem Caddesi'nin köklü buluşma noktası olarak tereyağlı kurabiyeleri, vitrin pastaları ve zengin unlu mamulleriyle semtin klasikleşmiş lezzet durağı.",
+    whatToOrder: ['Kukis Klasik Kurabiye Seçkisi', 'Çilekli Milföy Pasta'],
+    menuFrom: ['Profiterol', 'Acıbadem Kurabiyesi', 'Ekler', 'Demleme Çay'],
+    alsoTry: ['Fırından yeni çıkan sıcak acıbadem kurabiyesi'],
+    beforeYouGo: [
+      'Acıbadem metrosuna yürüme mesafesinde merkezi konumdadır.',
+      'Günün her saatinde canlı ve hareketlidir.'
+    ]
+  },
+
+  // Nitelikli Kahve & Kafe
+  'acibadem-coffee-bakku': {
+    description: "Muhtarbey Sokak'ta sakin atmosferi, özenli tek köken çekirdekleri ve yüksek çalışma konforuyla semt sakinlerinin gözde üçüncü nesil kahvecisi.",
+    whatToOrder: ['Ethiopia Yirgacheffe V60', 'Flat White'],
+    menuFrom: ['Cortado', 'Cold Brew', 'Ev Yapımı Havuçlu Kek', 'Cookie'],
+    alsoTry: ['Hafif kavrum aromatik pour-over filtre kahveler'],
+    beforeYouGo: [
+      'Laptopla çalışma ve sakin okuma için çok uygundur.',
+      'Huzurlu bir sokak cephesi masalarına sahiptir.'
+    ]
+  },
+  'acibadem-coffee-espressino': {
+    description: "Acıbadem Caddesi üzerinde İtalyan espresso reçeteleri, evcil hayvan dostu sıcak ortamı ve taze atıştırmalıklarıyla öne çıkan mahalle kafesi.",
+    whatToOrder: ['Espressino Klasik', 'Iced Americano'],
+    menuFrom: ['Caffe Latte', 'Cappuccino', 'Tost Çeşitleri', 'Cheesecake'],
+    alsoTry: ['Kakao ve süt köpüğü katmanlı özel Espressino'],
+    beforeYouGo: [
+      'Evcil hayvan dostu ve samimi bir işletmedir.',
+      'Cadde üzerinde keyifli dış masaları mevcuttur.'
+    ]
+  },
+  'acibadem-coffee-solvi': {
+    description: "Acıbadem Caddesi'nde İskandinav esintili minimalist iç mekanı, taze kavrum kahveleri ve ferah çalışma düzeniyle dikkat çeken çağdaş kahve dükkanı.",
+    whatToOrder: ['SØLVI Single Origin Drip', 'Cortado'],
+    menuFrom: ['Espresso Tonic', 'Chai Latte', 'Kruvasan', 'Granola'],
+    alsoTry: ['Mevsimlik soğuk demleme kahve harmanları'],
+    beforeYouGo: [
+      'Geniş ve aydınlık iç mekanıyla verimli çalışma imkanı sağlar.',
+      'Metro çıkışına oldukça yakın konumdadır.'
+    ]
+  },
+  'acibadem-coffee-feinka': {
+    description: "Eczacı Necip Akar Sokak'ta sakin bahçesi, nitelikli demlemeleri ve lezzetli taze tatlılarıyla samimi bir üçüncü dalga kahve sığınağı.",
+    whatToOrder: ['Guatemala Pour-Over', 'Flat White'],
+    menuFrom: ['Latte', 'Cold Drip', 'Limonlu Kek', 'Fıstıklı Brownie'],
+    alsoTry: ['Ev yapımı hafif ekşi limonlu kek eşliğinde filtre kahve'],
+    beforeYouGo: [
+      'Acıbadem Caddesi kalabalığından bir sokak içeride sakindir.',
+      'Günün her saatinde rahatça dinlenilebilir.'
+    ]
+  },
+
+  // Kebap & Döner
+  'acibadem-kebap-hacibasar': {
+    description: "Acıbadem Caddesi üzerinde puf lavaşları, zırh kıyması kebapları ve Antep fıstıklı sıcak baklavalarıyla Güneydoğu mutfağını yaşatan köklü restoran.",
+    whatToOrder: ['Zırh Kıyması Acıbadem Kebabı', 'Közde Patlıcanlı Kebap'],
+    menuFrom: ['Fındık Lahmacun', 'Çöp Şiş', 'Gavurdağı Salatası', 'Havuç Dilimi Baklava'],
+    alsoTry: ['Yemek sonrasında semaver çayı eşliğinde çıtır sıcak baklava'],
+    beforeYouGo: ['Geniş salonu ve vale hizmetiyle aile yemeklerine uygundur.', 'Lavaş ve mezeler masaya sıcacık ikram edilir.']
+  },
+  'acibadem-kebap-intiba': {
+    description: "Şehit Emin Çölen Sokak'ta marine edilmiş yaprak etten meşe odunu ateşinde pişen tescilli döneri ve taze pidesiyle ünlü döner ustası.",
+    whatToOrder: ['İntiba Yaprak Döner', 'Tereyağlı İskender'],
+    menuFrom: ['Döner Dürüm', 'Açık Ayran', 'Köz Biber & Domates', 'Fırın Sütlaç'],
+    alsoTry: ['İnce kıyım yaprak et döner yanında özel yayık ayran'],
+    beforeYouGo: ['Öğle saatlerinde yoğun servis trafiği yaşanır.', 'Hızlı, doyurucu ve yüksek standartlı bir et döner klasiğidir.']
+  },
+  'acibadem-kebap-canak': {
+    description: "Acıbadem Caddesi'nde Gaziantep mutfağının otantik tencere yemekleri, Ali Nazik kebabı ve çıtır taş fırın katmeriyle bilinen gastronomi adresi.",
+    whatToOrder: ['Ali Nazik Kebabı', 'Çıtır Antep Katmeri'],
+    menuFrom: ['Kuru Dolma', 'İçli Köfte', 'Küşleme', 'Lahmacun'],
+    alsoTry: ['Bol kaymaklı ve Antep fıstıklı sıcak fırın katmeri'],
+    beforeYouGo: ['Geleneksel Gaziantep tariflerini aslına uygun sunar.', 'Akşam yemekleri için rezervasyon önerilir.']
+  },
+  'acibadem-kebap-birbicer': {
+    description: "Acıbadem Caddesi üzerinde mangal ateşinde pişen taze kuzu ciğer şişleri, zırh kebabı ve zengin ezme mezeleriyle tanınan Adana usulü kebapçı.",
+    whatToOrder: ['Kuzu Ciğer Şiş', 'Zırh Adana Dürüm'],
+    menuFrom: ['Közde Tavuk Kanat', 'Ezme Salata', 'Sumaklı Soğan', 'Şalgam'],
+    alsoTry: ['Közlenmiş sarımsak ve sıcak lavaş eşliğinde kuzu ciğer'],
+    beforeYouGo: ['Samimi bir esnaf kebapçısı lezzetindedir.', 'Siparişler taze ve hızlı servis edilir.']
+  },
+
+  // Bistro & Ev Yemekleri
+  'acibadem-bistro-charla': {
+    description: "Acıbadem Caddesi'nde modern dekorasyonu, sağlıklı dünya mutfağı tabakları ve özenli kahvaltı sunumlarıyla semtin en şık kafe-restoranı.",
+    whatToOrder: ['Ağır Ateşte Osso Buco', 'Izgara Somon Kinoa Kasesi'],
+    menuFrom: ['Truffle Burger', 'Fettuccine Alfredo', 'Burrata Salata', 'İmza Tatlılar'],
+    alsoTry: ['Taze otlu kinoa yatağında fırınlanmış Norveç somonu'],
+    beforeYouGo: ['Şık akşam yemekleri ve hafta sonu brunchları için idealdir.', 'Rezervasyon yaptırılması tavsiye edilir.']
+  },
+  'acibadem-bistro-draft': {
+    description: "Acıbadem Caddesi üzerinde geniş terası, çıtır pub lezzetleri, gravyerli sosisleri ve rahat sosyalleşme ortamıyla bilinen popüler gastro-pub.",
+    whatToOrder: ['Gravyerli Sosis & Patates', 'Draft Gurme Burger'],
+    menuFrom: ['Çıtır Nachos', 'Buffalo Wings', 'Fish and Chips', 'Craft İçecekler'],
+    alsoTry: ['Ev yapımı hardallı sos eşliğinde ızgara sosis tabağı'],
+    beforeYouGo: ['Akşamüstü arkadaş buluşmaları ve maç yayınları için tercih edilir.', 'Açık teras alanı oldukça ferahtır.']
+  },
+  'acibadem-bistro-lagom': {
+    description: "Sarayardı Caddesi'nde günlük zeytinyağlılar, taze anne yemekleri ve hafif tatlılarıyla samimi ve huzurlu bir mahalle lokantası deneyimi sunuyor.",
+    whatToOrder: ['Zeytinyağlı Enginar', 'Fırın Güveçte Kuzu'],
+    menuFrom: ['Mercimek Çorbası', 'Kıymalı Ispanak', 'Ev Yapımı Yoğurt', 'Günün Keki'],
+    alsoTry: ['Taze mevsim sebzeleriyle günlük pişen zeytinyağlı tabağı'],
+    beforeYouGo: ['Ayrılık Çeşmesi metro durağına yürüme mesafesindedir.', 'Hafif ve ev tadında sağlıklı öğle yemekleri için çok sevilir.']
+  },
+  'acibadem-bistro-aum': {
+    description: "Acıbadem Caddesi'nde ekşi mayalı kahvaltılıklar, taze günlük fırın hamur işleri ve samimi kafe ortamıyla hizmet veren yerel lezzet köşesi.",
+    whatToOrder: ['Ekşi Mayalı Kahvaltı Tabağı', 'Fırın Kiş & Salata'],
+    menuFrom: ['Peynirli Poğaça', 'Zeytinli Açma', 'Çilekli Tart', 'Filtre Kahve'],
+    alsoTry: ['Ispanaklı ve keçi peynirli sıcak fırın kiş'],
+    beforeYouGo: ['Sabah saatlerinde taze çıkan unlu mamulleriyle hareketlidir.', 'Hızlı kahvaltı ve kahve molası için elverişlidir.']
   }
 };
 

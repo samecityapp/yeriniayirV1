@@ -728,6 +728,162 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
+
+  // =========================================================================
+  // ACIBADEM (KADIKÖY & ÜSKÜDAR) — 100% VERIFIED
+  // =========================================================================
+
+  // Çikolata & Tatlı
+  'acibadem-dessert-asuman': {
+    platform: 'google-maps',
+    value: 4.8,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Asuman+%C3%87ikolata+%C3%87e%C3%A7en+Sk+No+25+Ac%C4%B1badem+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'acibadem-dessert-foodlab': {
+    platform: 'google-maps',
+    value: 4.9,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Foodlab+Ac%C4%B1badem+Bet%C3%BCl+Sk+No+8A+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'acibadem-dessert-veronika': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Veronika+%C3%87ikolata+Kruvasan+Ac%C4%B1badem+Cd+No+228A+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'acibadem-dessert-kukis': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kukis+Ac%C4%B1badem+Cd+No+154+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+
+  // Nitelikli Kahve & Kafe
+  'acibadem-coffee-bakku': {
+    platform: 'google-maps',
+    value: 4.9,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Bakku+Coffee+Shop+Muhtarbey+Sk+No+6B+Ac%C4%B1badem+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'acibadem-coffee-espressino': {
+    platform: 'google-maps',
+    value: 4.9,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Espressino+Caffe+Ac%C4%B1badem+Cd+No+76+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'acibadem-coffee-solvi': {
+    platform: 'google-maps',
+    value: 4.8,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=SOLVI+Coffee+Co+Ac%C4%B1badem+Cd+No+104+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'acibadem-coffee-feinka': {
+    platform: 'google-maps',
+    value: 4.8,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Feinka+Coffee+Eczac%C4%B1+Necip+Akar+Sk+No+1A+Ac%C4%B1badem+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+
+  // Kebap & Döner
+  'acibadem-kebap-hacibasar': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Hac%C4%B1ba%C5%9Far+Kebap+Ac%C4%B1badem+Cd+No+67A+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'acibadem-kebap-intiba': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=%C4%B0ntiba+D%C3%B6ner+Ac%C4%B1badem+%C5%9Eehit+Emin+%C3%87%C3%B6len+Sk+No+4+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'acibadem-kebap-canak': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=%C3%87anak+Kebap+Katmer+Ac%C4%B1badem+Cd+No+115+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'acibadem-kebap-birbicer': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Birbi%C3%A7er+Kebap+Ac%C4%B1badem+Cd+No+174+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+
+  // Bistro & Ev Yemekleri
+  'acibadem-bistro-charla': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Charla+Ac%C4%B1badem+Cd+No+190A+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'acibadem-bistro-draft': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Draft+Gastropub+Ac%C4%B1badem+Cd+No+67B+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'acibadem-bistro-lagom': {
+    platform: 'google-maps',
+    value: 4.8,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Lagom+Ev+Yemekleri+Sarayard%C4%B1+Cd+No+28A+Ac%C4%B1badem+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'acibadem-bistro-aum': {
+    platform: 'google-maps',
+    value: 4.0,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=AUM+Pasta+Cafe+Ac%C4%B1badem+Cd+No+144+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
 };
 
 export function getVerifiedGoogleRatings(venueId: string): VisitorGoogleRating[] {
