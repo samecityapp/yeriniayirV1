@@ -1174,6 +1174,151 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
+  // Region 8: Suadiye (16 verified venues)
+  'suadiye-coffee-glann': {
+    platform: 'google-maps',
+    value: 4.9,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Glann+Coffee+Ay%C5%9Fe%C3%A7avu%C5%9F+Cd+No+36+Suadiye+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'suadiye-coffee-matters': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Matters+Suadiye+Pembe+G%C3%BCl+Sk+No+1+Suadiye+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'suadiye-coffee-voi': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Voi+Cadde+M%C3%BCcahit+Sk+No+5+Suadiye+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'suadiye-coffee-drip': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Drip+Coffeeist+Noter+Sk+No+17C+Suadiye+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'suadiye-brunch-bazlama': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=%C3%87e%C5%9Fme+Bazlama+Kahvalt%C4%B1+Noter+Sk+No+23+Suadiye+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'suadiye-brunch-lepain': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Le+Pain+Quotidien+Ba%C4%9Fdat+Cd+No+405+Suadiye+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'suadiye-brunch-grandma': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Grandma+Suadiye+Ba%C4%9Fdat+Cd+No+396+Suadiye+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'suadiye-brunch-beyazfirin': {
+    platform: 'google-maps',
+    value: 4.0,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Beyaz+F%C4%B1r%C4%B1n+Suadiye+Plaj+Yolu+Sk+No+18+Suadiye+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'suadiye-dessert-nazar': {
+    platform: 'google-maps',
+    value: 4.8,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Nazar+Profiterol+Kaz%C4%B1m+%C3%96zalp+Sk+No+12+Suadiye+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'suadiye-dessert-tatlimanna': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Tatl%C4%B1m+Anna+Profiterol+Suadiye+Cami+Sk+No+23+Suadiye+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'suadiye-dessert-godiva': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Godiva+Cafe+Ba%C4%9Fdat+Cd+No+408+Suadiye+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'suadiye-dessert-manolya': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Manolya+Pastanesi+Tonozlu+Sk+No+2+Suadiye+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'suadiye-bistro-townhouse': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=The+Townhouse+Plaj+Yolu+Sk+No+13+Suadiye+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'suadiye-bistro-brasserienoir': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Brasserie+Noir+Ba%C4%9Fdat+Cd+No+481+Suadiye+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'suadiye-bistro-kirpi': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kirpi+Suadiye+Ba%C4%9Fdat+Cd+No+425+Suadiye+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'suadiye-bistro-akali': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Akali+Suadiye+Ak%C4%B1n+Sk+No+5B+Suadiye+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
 };
 
 export function getVerifiedGoogleRatings(venueId: string): VisitorGoogleRating[] {

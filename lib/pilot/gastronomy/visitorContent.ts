@@ -1302,6 +1302,175 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'CKM\'deki tiyatro ve sinema gösterimleri sonrasında sohbet için popülerdir.',
       'Canlı spor karşılaşmaları yayınlanır.'
     ]
+  },
+
+  // Region 8: Suadiye (16 verified venues)
+  // Nitelikli Kahve & Kafe
+  'suadiye-coffee-glann': {
+    description: "Ayşeçavuş Caddesi'nde üçüncü nesil nitelikli çekirdekleri, dingin çalışma köşeleri ve özenli demleme teknikleriyle Suadiye'nin en yüksek puanlı kahvecisi.",
+    whatToOrder: ['Flat White', 'V60 Panama Geisha'],
+    menuFrom: ['Cortado', 'Cold Brew', 'Fıstıklı Brownie', 'Yaban Mersinli Muffin'],
+    alsoTry: ['Taze öğütülmüş tek köken çekirdeklerle hazırlanan V60 pour-over filtre kahve'],
+    beforeYouGo: [
+      'Sessiz ve konforlu ortamıyla çalışmak için idealdir.',
+      'Suadiye Marmaray durağına yürüme mesafesindedir.'
+    ]
+  },
+  'suadiye-coffee-matters': {
+    description: "Pembe Gül Sokak'ta şık mimarisi, taze kavrum espresso çeşitleri ve gurme kruvasanlarıyla caddenin sevilen buluşma noktası.",
+    whatToOrder: ['Iced Spanish Latte', 'Fıstıklı Kruvasan'],
+    menuFrom: ['Americano', 'Cappuccino', 'San Sebastian Cheesecake', 'Cookie'],
+    alsoTry: ['Karamelize fıstık kreması dolgulu çıtır fırın kruvasan'],
+    beforeYouGo: [
+      'Günün her saati enerjik ve hareketli bir kitleye sahiptir.',
+      'Açık hava oturma alanı cadde akışını izlemek için elverişlidir.'
+    ]
+  },
+  'suadiye-coffee-voi': {
+    description: "Mücahit Sokak'ta sağlıklı ve glutensiz alternatifler, organik matcha latte ve fit tariflerle modern yaşam tarzına uygun bir kahve deneyimi.",
+    whatToOrder: ['Iced Matcha Latte', 'Şekersiz Fit Brownie'],
+    menuFrom: ['Cold Drip', 'Flat White', 'Acai Bowl', 'Chia Puding'],
+    alsoTry: ['Yulaf sütü ve seremoniyel Japon matchasıyla hazırlanan buzlu Matcha Latte'],
+    beforeYouGo: [
+      'Fit beslenmeyi sevenler ve spor sonrası mola verenler için zengin alternatifler barındırır.',
+      'Geniş bahçe alanı oldukça ferahtır.'
+    ]
+  },
+  'suadiye-coffee-drip': {
+    description: "Noter Sokak'ta Türkiye'nin soğuk damıtma (cold drip) öncülerinden biri olarak saatler süren özel demlemeleri ve zengin aromalı çekirdekleri sunuyor.",
+    whatToOrder: ['Kyoto Style Cold Drip', 'Havuçlu Kek'],
+    menuFrom: ['Aeropress', 'Chemex', 'Flat White', 'Çikolatalı Mozaik'],
+    alsoTry: ['12 saatlik özel damıtma kulesinden süzülen yoğun aromalı Kyoto usulü Cold Drip'],
+    beforeYouGo: [
+      'Kahvenin lezzet profilini derinlemesine deneyimlemek isteyenlerin adresidir.',
+      'Baristalar çekirdek profilleri konusunda bilgilendiricidir.'
+    ]
+  },
+
+  // Kahvaltı, Fırın & Brunch
+  'suadiye-brunch-bazlama': {
+    description: "Noter Sokak'ta sınırsız Ege kahvaltısı, sıcacık anne bazlamaları, ev yapımı onlarca çeşit reçeli ve pişi servisiyle kahvaltı efsanesi.",
+    whatToOrder: ['Ege Serpme Kahvaltı', 'Sıcacık Bazlama & Pişi'],
+    menuFrom: ['Sahanda Yumurta', 'Menemen', 'İzmir Tulumu', 'Reçel Çeşitleri'],
+    alsoTry: ['Masaya aralıksız sıcak servis edilen tereyağlı çıtır pişiler ve cevizli incir reçeli'],
+    beforeYouGo: [
+      'Hafta sonları kapıda yoğunluk oluşabilir, erken saatlerde gitmek tavsiye edilir.',
+      'Sınırsız ikram konseptiyle oldukça doyurucudur.'
+    ]
+  },
+  'suadiye-brunch-lepain': {
+    description: "Bağdat Caddesi üzerinde ahşap ortak masaları, Belçika usulü ekşi mayalı ekmekleri, organik reçelleri ve zarif brunch tabakları.",
+    whatToOrder: ['Avokadolu Somonlu Tartine', 'Organik Ekmek Sepeti'],
+    menuFrom: ['Eggs Benedict', 'Granola Parfe', 'Belçika Waffle', 'Cafe au Lait'],
+    alsoTry: ['Geleneksel kaselerde servis edilen Cafe au Lait ve fındık ezmesi'],
+    beforeYouGo: [
+      'Sakin ve dingin bir kahvaltı atmosferi arayanlar için idealdir.',
+      'Organik fırın ekmekleri paket olarak satın alınabilir.'
+    ]
+  },
+  'suadiye-brunch-grandma': {
+    description: "Bağdat Caddesi'nde ekşi mayalı köy ekmekleri, taze fırın kişleri ve zengin unlu mamulleriyle samimi anne fırını konsepti.",
+    whatToOrder: ['Grandma Kahvaltı Tabağı', 'Ispanaklı Keçi Peynirli Kiş'],
+    menuFrom: ['Poşe Yumurtalı Ekmek Üstü', 'Zeytinli Ekmek', 'Çikolatalı Babka', 'Filtre Kahve'],
+    alsoTry: ['Yoğun çikolatalı ve cevizli taze fırınlanmış dilim Babka'],
+    beforeYouGo: [
+      'Cadde üzerinde geniş ve aydınlık bir oturma alanına sahiptir.',
+      'Sabah kahvaltısından akşamüstü kahvesine kadar günün her anı aktiftir.'
+    ]
+  },
+  'suadiye-brunch-beyazfirin': {
+    description: "Suadiye Park içinde 180 yılı aşkın lezzet geçmişi, puf börekleri, zengin kahvaltı sofraları ve fırın lezzetleriyle nesillerin tercihi.",
+    whatToOrder: ['Suadiye Serpme Kahvaltı', 'Çıtır Kıymalı Puf Böreği'],
+    menuFrom: ['Menemen', 'Simit Tabağı', 'Limonlu Mereng', 'Demlik Çay'],
+    alsoTry: ['Özel reçeteli çıtır puf böreği ve ezine peyniri eşliğinde çay saati'],
+    beforeYouGo: [
+      'Suadiye Park içerisindeki geniş bahçesi aileler için çok konforludur.',
+      'Günün her saati taze pastane mamulleri bulunur.'
+    ]
+  },
+
+  // Tatlı, Gelato & Pastane
+  'suadiye-dessert-nazar': {
+    description: "Şaşkınbakkal-Suadiye aksında yılların değişmeyen reçetesi, ipeksi bitter çikolata sosu ve çıtır şu hamuruyla profiterolün kült adresi.",
+    whatToOrder: ['Klasik Çikolata Soslu Profiterol', 'Taze Limonata'],
+    menuFrom: ['Ekler', 'Supangle', 'Kazandibi', 'Tavukgöğsü'],
+    alsoTry: ['Özel kıvamlı bitter çikolata sosuyla kaplanmış taze kremalı profiterol tabağı'],
+    beforeYouGo: [
+      'Nostaljik mahalle tatlıcısıdır, tatlılar günlük taze hazırlanır.',
+      'Paket porsiyon olarak alıp evde tüketmek için de çok tercih edilir.'
+    ]
+  },
+  'suadiye-dessert-tatlimanna': {
+    description: "Suadiye Cami Sokağı'nda Belçika çikolatasıyla hazırlanan gurme profiterolleri, dondurmalı kaseleri ve hafif tatlılarıyla butik durak.",
+    whatToOrder: ['Belçika Çikolatalı Anna Profiterol', 'Magnolia'],
+    menuFrom: ['Beyaz Çikolatalı Profiterol', 'San Sebastian', 'Çilekli Kup', 'Espresso'],
+    alsoTry: ['Sıcak akışkan sütlü ve bitter çikolata karışımıyla hazırlanan imza profiterol'],
+    beforeYouGo: [
+      'Sessiz bir ara sokakta sakin tatlı kaçamağı için elverişlidir.',
+      'Çikolata sosunun yoğunluğu ve kalitesi öne çıkar.'
+    ]
+  },
+  'suadiye-dessert-godiva': {
+    description: "Bağdat Caddesi üzerinde lüks Belçika çikolatası sanatı, taze çilekli çikolata kaseleri ve imza sıcak çikolata içecekleri.",
+    whatToOrder: ['Çikolatalı Taze Çilek Kasesi', 'Godiva Sıcak Çikolata'],
+    menuFrom: ['Trüf Pralinler', 'Çikolatalı Fondü', 'Çikolatalı Waffle', 'Americano'],
+    alsoTry: ['Eritilmiş sıcak Godiva çikolatasına batırılmış taze dağ çilekleri'],
+    beforeYouGo: [
+      'Özel hediye çikolata kutuları ve lüks tatlı molası için cadde klasiğidir.',
+      'İç ve dış oturma alanı oldukça şıktır.'
+    ]
+  },
+  'suadiye-dessert-manolya': {
+    description: "Yıllardır Suadiye sakinlerinin özel günlerini tatlandıran, taze çilekli pastaları, el yapımı çikolataları ve fırın sütlacıyla güvenilir mahalle pastanesi.",
+    whatToOrder: ['Çilekli Manolya Özel Yaş Pasta', 'Fırın Sütlaç'],
+    menuFrom: ['Profiterol', 'Badem Ezmesi', 'Pötifur', 'Tuzlu Kuru Pasta'],
+    alsoTry: ['Hafif pastacı kreması ve taze çileklerle hazırlanan günlük yaş pasta dilimi'],
+    beforeYouGo: [
+      'Kutlama pastası siparişlerinde mahallenin en köklü adreslerindendir.',
+      'Tuzlu atıştırmalık kurabiyeleri çay saatleri için çok sevilir.'
+    ]
+  },
+
+  // Bistro & Dünya Mutfağı
+  'suadiye-bistro-townhouse': {
+    description: "Plaj Yolu'nda zarif İngiliz pub mimarisi, zengin imza kokteylleri, kemik iliği soslu burgerleri ve üst düzey gastro-pub lezzetleriyle İstanbul'un gözdesi.",
+    whatToOrder: ['Townhouse Burger', 'Truffle Fries & İmza Kokteyl'],
+    menuFrom: ['Dana Yanak Pappardelle', 'Crispy Calamari', 'Fish and Chips', 'Sticky Toffee Pudding'],
+    alsoTry: ['Karamelize soğan ve özel peynir harmanlı fırınlanmış Townhouse burger'],
+    beforeYouGo: [
+      'Anadolu Yakası\'nın en popüler akşam mekanlarındandır.',
+      'Akşam yemekleri için günler öncesinden rezervasyon önerilir.'
+    ]
+  },
+  'suadiye-bistro-brasserienoir': {
+    description: "Bağdat Caddesi'nin prestijli noktasında şık Fransız brasserie estetiği, ördek konfit lezzeti, deniz mahsulleri ve seçkin şarap kavı.",
+    whatToOrder: ['Ördek Konfi', 'Porçini Mantarlı Risotto'],
+    menuFrom: ['Dana Bonfile', 'Somon Gravlax', 'Deniz Mahsullü Linguine', 'Creme Brulee'],
+    alsoTry: ['Portakal sosu eşliğinde ağır ateşte pişirilmiş taptaze ördek konfi'],
+    beforeYouGo: [
+      'Özel akşam yemekleri, romantik kutlamalar ve iş yemekleri için ilk sıralardadır.',
+      'Giyime özen gösterilen şık bir atmosferi vardır.'
+    ]
+  },
+  'suadiye-bistro-kirpi': {
+    description: "Bağdat Caddesi üzerinde ferah bahçesi, dünya mutfağından zengin menüsü, fajitaları ve rahat sosyalleşme ortamıyla cadde müdavimlerinin tercihi.",
+    whatToOrder: ['Cızırdayan Etli Fajita', 'Trüflü Parmesanlı Burger'],
+    menuFrom: ['Tavuklu Sezar Salata', 'Nachos', 'Quesadilla', 'Çikolatalı Sufle'],
+    alsoTry: ['Döküm tavada sıcak servis edilen guacamole ve ekşi kremalı etli fajita'],
+    beforeYouGo: [
+      'Kalabalık arkadaş grupları ve aile yemekleri için geniş oturma alanı sağlar.',
+      'Cadde üzerindeki konumuyla günün her saati canlıdır.'
+    ]
+  },
+  'suadiye-bistro-akali': {
+    description: "Akın Sokak'ta el yapımı ekmekleri, özel reçeteli sosları, patlıcan ezmeli ve trüflü gurme burgerleriyle burger tutkunlarının kült adresi.",
+    whatToOrder: ['Patlıcan Ezmeli Akali Burger', 'Trüflü Patates'],
+    menuFrom: ['Avokadolu Burger', 'Karamelize Soğanlı Burger', 'Jalapeno Poppers', 'Craft İçecekler'],
+    alsoTry: ['Köz patlıcan ezmesi ve çıtır dana bacon eşliğindeki imza Akali burger'],
+    beforeYouGo: [
+      'Butik ve enerjik bir burger mekanıdır, burgerinizin gramajını seçebilirsiniz.',
+      'Hızlı ve gurme bir sokak lezzeti deneyimi vadeder.'
+    ]
   }
 };
 

@@ -93,9 +93,9 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    path: ['istanbul', 'kadikoy', 'suadiye'],
    displayName: 'Suadiye, Kadıköy, İstanbul',
    locative: "Suadiye'de",
-   status: 'coming_soon',
-   aliases: ['Suadiye', 'Plaj Yolu'],
-   scopeNote: 'Kadıköy · Suadiye (Araştırmada)'
+   status: 'published',
+   aliases: ['Suadiye', 'Bağdat Caddesi', 'Plaj Yolu', 'Noter Sokak', 'Suadiye Park'],
+   scopeNote: 'Kadıköy · Suadiye (Yayında)'
   },
   {
    id: 'goztepe',
