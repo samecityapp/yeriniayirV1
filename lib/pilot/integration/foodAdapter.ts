@@ -266,6 +266,30 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    scopeNote: 'Beyoğlu · Galata (Yayında)'
   },
   {
+   id: 'cihangir',
+   level: 'semt',
+   name: 'Cihangir',
+   slug: 'cihangir',
+   path: ['istanbul', 'beyoglu', 'cihangir'],
+   displayName: 'Cihangir, Beyoğlu, İstanbul',
+   locative: "Cihangir'de",
+   status: 'published',
+   aliases: ['Cihangir', 'Sıraselviler', 'Akarsu Yokuşu', 'Firuzağa', 'Susam Sokak', 'Havyar Sokak', 'Anahtar Sokak'],
+   scopeNote: 'Beyoğlu · Cihangir (Yayında)'
+  },
+  {
+   id: 'cihangir-beyoglu',
+   level: 'semt',
+   name: 'Cihangir',
+   slug: 'cihangir',
+   path: ['istanbul', 'beyoglu', 'cihangir'],
+   displayName: 'Cihangir, Beyoğlu, İstanbul',
+   locative: "Cihangir'de",
+   status: 'published',
+   aliases: ['Cihangir', 'Sıraselviler', 'Akarsu Yokuşu', 'Firuzağa', 'Susam Sokak', 'Havyar Sokak', 'Anahtar Sokak'],
+   scopeNote: 'Beyoğlu · Cihangir (Yayında)'
+  },
+  {
    id: 'nisantasi',
    level: 'semt',
    name: 'Nişantaşı',

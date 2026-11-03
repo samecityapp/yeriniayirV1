@@ -2326,6 +2326,168 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Balkon kısmı oldukça kompakt olduğundan erken saatlerde gitmek yer bulmak adına önemlidir.',
       'Canlı ve samimi bir müzik eşliğinde keyifli bir akşam sohbeti ortamı sunar.'
     ]
+  },
+
+  // --- CİHANGİR ---
+  'cihangir-kahvalti-kahve6': {
+    description: "Anahtar Sokak'ta gizli yemyeşil avlusu, zengin serpme kahvaltısı, taze otlu omletleri ve sakin Cihangir sabahı atmosferiyle semtin en sevilen kahvaltı adresi.",
+    whatToOrder: ['Kahve 6 Serpme Kahvaltı', 'Otlu Peynirli Menemen'],
+    menuFrom: ['Köy Kahvaltısı', 'Kavurmalı Yumurta', 'Zeytin Ezmeli Tost', 'Ev Yapımı Reçeller', 'Demleme Çay'],
+    alsoTry: ['Gizli iç bahçede asma yaprakları altında sıcak simit ve taze demlenmiş çay eşliği'],
+    beforeYouGo: [
+      'Hafta sonu sabahları bahçede masa bulmak için erken gitmek önerilir.',
+      'Huzurlu, kedi dostu ve sakin bir avlu havası vardır.'
+    ]
+  },
+  'cihangir-kahvalti-journey': {
+    description: "Akarsu Yokuşu'nda ferah iki katlı ahşap mekanında, yerel üreticilerden temin edilen organik malzemelerle hazırlanan yaratıcı brunch seçenekleri ve ev yapımı ekşi mayalı lezzetler.",
+    whatToOrder: ['Avokadolu Poşe Yumurta', 'Ekşi Mayalı Fırın Tost'],
+    menuFrom: ['Granola Kasesi', 'Pankek Tabağı', 'Keçi Peynirli Salata', 'Taze Sıkma Portakal Suyu', 'Filtre Kahve'],
+    alsoTry: ['Fırından yeni çıkmış sıcak ekşi mayalı ekmek üzerine poşe yumurta ve taze yeşillikler'],
+    beforeYouGo: [
+      'Üst katı çalışmak veya kitap okumak için çok sakindir.',
+      'Geniş brunch menüsü gün boyu servis edilmektedir.'
+    ]
+  },
+  'cihangir-kahvalti-susam': {
+    description: "Susam Sokak'ın başında retro ahşap dekorasyonu, rahat koltukları, zengin kahvaltı tabakları ve akşamları loş bir bistroya dönüşen nostaljik mahalle klasiği.",
+    whatToOrder: ['Susam Klasik Kahvaltı', 'Füme Etli Avokadolu Omlet'],
+    menuFrom: ['Sahanda Yumurta', 'Sucuklu Hellimli Tost', 'Ev Yapımı Limonata', 'Türk Kahvesi', 'Demleme Çay'],
+    alsoTry: ['Susam Sokak manzaralı pencere önü masasında keyifli bir hafta sonu kahvaltısı'],
+    beforeYouGo: [
+      'Hem sabah kahvaltısı hem de akşamüstü sohbetleri için samimi bir buluşma yeridir.',
+      'Köpek ve kedi dostu mahalle havası hakimdir.'
+    ]
+  },
+  'cihangir-kahvalti-kaktus': {
+    description: "Cihangir Caddesi üzerinde yazarların, sanatçıların ve semt sakinlerinin buluştuğu, sahanda taze köy yumurtaları ve nostaljik Cihangir ruhuyla yaşayan efsanevi mahalle kafesi.",
+    whatToOrder: ['Kaktüs Köy Kahvaltısı', 'Sahanda Sucuklu Yumurta'],
+    menuFrom: ['Kaşarlı Tost', 'Menemen Çeşitleri', 'Taze Portakal Suyu', 'Filtre Kahve', 'Demleme Çay'],
+    alsoTry: ['Dışarıdaki kaldırım masalarında Cihangir akışını izlerken sahanda yumurta ve çay keyfi'],
+    beforeYouGo: [
+      'Kaldırım masaları günün her saati hareketlidir.',
+      'Yıllardır Cihangir entelektüel çevrelerinin en popüler uğrak noktasıdır.'
+    ]
+  },
+  'cihangir-kahve-kronotrop': {
+    description: "Firuzağa Meydanı'na çıkan Turnacıbaşı Caddesi'nde, Türkiye'de üçüncü nesil kahve dalgasının ilk öncülerinden biri olan ve mikrolot çekirdekleri ustalıkla kavuran özel kahve barı.",
+    whatToOrder: ['Single-Origin V60 Pour Over', 'Cortado'],
+    menuFrom: ['Espresso', 'Flat White', 'Cold Brew', 'Filtre Kahve', 'Muzlu Ekmek'],
+    alsoTry: ['Etiyopya veya Kolombiya tek kökenli çekirdeklerden taze hazırlanan V60 filtre kahve'],
+    beforeYouGo: [
+      'Kahve çekirdeklerini çekilmiş veya tane olarak paket halinde satın alabilirsiniz.',
+      'Ayaküstü espresso veya hızlı kahve molası için semtin en güvenilir adresidir.'
+    ]
+  },
+  'cihangir-kahve-norm': {
+    description: "Güneşli Sokak'ın sakin köşesinde, minimalist İskandinav tasarımı, özenle seçilmiş kahve çekirdekleri ve taze fırın ürünleriyle kahve tutkunlarının favorisi.",
+    whatToOrder: ['Flat White', 'Batch Brew Filtre Kahve'],
+    menuFrom: ['Espresso', 'Cappuccino', 'Soğuk Demleme Kahve', 'Kruvasan', 'Tarçınlı Çörek'],
+    alsoTry: ['Mükemmel mikro-köpükle hazırlanan kadifemsi flat white ve taze tereyağlı kruvasan'],
+    beforeYouGo: [
+      'Sessiz ve dingin bir çalışma ya da kitap okuma ortamı sunar.',
+      'Baristalar çekirdek profilleri konusunda oldukça bilgilendiricidir.'
+    ]
+  },
+  'cihangir-kahve-geyik': {
+    description: "Akarsu Yokuşu'nda gündüzleri kendi kavurdukları nitelikli kahveleri sunan, akşamları ise sokağa taşan canlı bir kokteyl bara dönüşen Cihangir'in en popüler sosyalleşme noktası.",
+    whatToOrder: ['Nitro Cold Brew', 'Double Espresso'],
+    menuFrom: ['Americano', 'Latte', 'V60 Demleme', 'Artisan Çerezler', 'İmza Kokteyller'],
+    alsoTry: ['Sıcak yaz günlerinde soğuk ve yoğun gövdeli taze çekilmiş nitro cold brew'],
+    beforeYouGo: [
+      'Özellikle 17:00 sonrasında kalabalıklaşır ve sokak boyunca sohbetler başlar.',
+      'Gündüz kahve içip çalışmak için içerideki ahşap masalar tercih edilebilir.'
+    ]
+  },
+  'cihangir-kahve-21': {
+    description: "Coşkun Sokak üzerinde sakin ve yeşil bir köşede, butik espressoları, samimi sokak masaları ve ev yapımı tatlılarıyla gerçek bir Cihangir mahalle kahvecisi.",
+    whatToOrder: ['Karamelli Latte', 'Filtre Kahve'],
+    menuFrom: ['Espresso', 'Cortado', 'Mocha', 'Havuçlu Kek', 'Limonlu Cheesecake'],
+    alsoTry: ['Sokak kenarındaki küçük masada taze filtre kahve eşliğinde kitap okumak'],
+    beforeYouGo: [
+      'Turistik kalabalıktan uzak, mahallelinin kendi arasında vakit geçirdiği sakin bir noktadır.',
+      'Güleryüzlü ve sıcak bir esnaf kahve deneyimi sunar.'
+    ]
+  },
+  'cihangir-bistro-demeti': {
+    description: "Şıraselviler Caddesi'nde tarihi binanın üst katında, eşsiz Boğaz ve Adalar manzarasına karşı klasik meyhane kültürünü incelikli mezelerle buluşturan köklü bir Cihangir klasiği.",
+    whatToOrder: ['Levrek Marin', 'Girit Ezmesi'],
+    menuFrom: ['Ahtapot Izgara', 'Tereyağlı Karides', 'Fava', 'Közde Patlıcan', 'Mevsim Balıkları'],
+    alsoTry: ['Güneş batarken terasta Boğaz manzarasına karşı ılık ahtapot ızgara ve taze mezeler'],
+    beforeYouGo: [
+      'Manzaralı balkon veya pencere kenarı masalar için günler öncesinden rezervasyon şarttır.',
+      'Gürültüden uzak, sakin ve sohbet odaklı bir meyhane atmosferi vardır.'
+    ]
+  },
+  'cihangir-bistro-jash': {
+    description: "Cihangir Caddesi üzerinde nostaljik bir İstanbul evinde, geleneksel Ermeni ve eski İstanbul lezzetlerini antika objeler ve piyano melodileri eşliğinde sunan benzersiz bir restoran.",
+    whatToOrder: ['Geleneksel Topik', 'Vişneli Yaprak Sarma'],
+    menuFrom: ['Lakerda', 'Ermeni Pilakisi', 'Dalak Dolması', 'Paçanga Böreği', 'Kuzu İncik'],
+    alsoTry: ['Özel baharat ve tahin dengesiyle ustalıkla hazırlanan ev yapımı topik'],
+    beforeYouGo: [
+      'Haftanın bazı akşamlarında canlı piyano veya akordeon dinletileri eşlik eder.',
+      'Tarihi bir İstanbul salonunda yemek yiyor hissi uyandıran çok özel bir ambiyansı vardır.'
+    ]
+  },
+  'cihangir-bistro-surbalik': {
+    description: "Defterdar Yokuşu'nda Boğaz'a tepeden bakan geniş terasında, taze günlük deniz ürünleri, profesyonel servis ve şık balık sofralarıyla Cihangir'in en prestijli deniz mahsulleri adresi.",
+    whatToOrder: ['Tuzda Levrek', 'Izgara Kalamar'],
+    menuFrom: ['Balık Çorbası', 'Kalamar Tava', 'Karides Güveç', 'Ahtapot Salata', 'Günlük Lüfer / Levrek'],
+    alsoTry: ['Alev eşliğinde masada kırılarak açılan tuzda pişmiş sulu deniz levreği'],
+    beforeYouGo: [
+      'Geniş Boğaz panoramasına sahip teras katı için rezervasyon yaptırmanız tavsiye edilir.',
+      'İş yemekleri ve özel kutlamalar için oldukça uygundur.'
+    ]
+  },
+  'cihangir-bistro-rosemarine': {
+    description: "Akarsu Yokuşu'nda saklı geniş yemyeşil bahçesinde, Akdeniz esintili gurme mutfağı, taze makarnaları ve zengin içecek menüsüyle günün her saati keyifli bir buluşma mekanı.",
+    whatToOrder: ['El Yapımı Trüflü Tagliatelle', 'Izgara Bonfile'],
+    menuFrom: ['Somon Izgara', 'Kinoa Salatası', 'Burger Çeşitleri', 'Tiramisu', 'Kokteyl Seçkisi'],
+    alsoTry: ['Ağaçların altındaki ferah avluda taze el açması trüflü tagliatelle'],
+    beforeYouGo: [
+      'Semtin en geniş ve ferah bahçelerinden birine sahiptir.',
+      'Akşam yemeklerinde romantik ışıklandırmasıyla samimi bir bistro ortamına bürünür.'
+    ]
+  },
+  'cihangir-tatli-savoy': {
+    description: "1950 yılından bu yana Sıraselviler Caddesi'nde hizmet veren, İstanbul'un en köklü ve zarif pastanelerinden biri olarak milföyleri, gofretleri ve pasta çeşitleriyle semtin simgesi.",
+    whatToOrder: ['Tarihi Savoy Milföy Pasta', 'El Yapımı Çikolatalı Gofret'],
+    menuFrom: ['Profiterol', 'Ekler Çeşitleri', 'Tuzlu Kurabiyeler', 'Badem Ezmesi', 'Çilekli Tart'],
+    alsoTry: ['Çıtır ince tereyağlı katları ve ipeksi pastacı kremasıyla ünlü taze Savoy milföyü'],
+    beforeYouGo: [
+      'Hediye paketleri ve özel günler için kutu çikolata & gofretleri çok meşhurdur.',
+      'Giriş katındaki pastane masalarında çay veya kahve eşliğinde tatlınızı yiyebilirsiniz.'
+    ]
+  },
+  'cihangir-tatli-cuppa': {
+    description: "Yeni Yuva Sokak'ta sakin atmosferi, sağlıklı atıştırmalıkları, taze pişirilen kekleri ve ev yapımı ekşi mayalı tatlılarıyla Cihangir'in en tatlı butik duraklarından biri.",
+    whatToOrder: ['Taze Havuçlu Tarçınlı Kek', 'Ev Yapımı Çikolatalı Brownie'],
+    menuFrom: ['Limonlu Cheesecake', 'Glutensiz Kurabiyeler', 'Taze Meyveli Tart', 'Limonata', 'Filtre Kahve'],
+    alsoTry: ['Cevizli ve taze zencefilli havuçlu kek yanına demli bir filtre kahve'],
+    beforeYouGo: [
+      'Kompakt ve huzurlu bir oturma alanına sahiptir.',
+      'Taze sıkma meyve suları ve detoks içecekleri de oldukça popülerdir.'
+    ]
+  },
+  'cihangir-tatli-faw': {
+    description: "Taktaki Yokuşu'nda artisan fırıncılık konseptiyle her sabah taze çıkan çıtır tereyağlı kruvasanları, dolgulu çörekleri ve zengin kahve menüsüyle semtin yeni gözdesi.",
+    whatToOrder: ['Bademli Kruvasan', 'Çikolatalı Babka'],
+    menuFrom: ['Sade Kruvasan', 'Fıstıklı Danimarka Çöreği', 'Limonlu Tart', 'Flat White', 'Cold Brew'],
+    alsoTry: ['Fransız tereyağıyla saatlerce katlanıp fırınlanan badem kremalı çıtır kruvasan'],
+    beforeYouGo: [
+      'Kruvasanlar günlük sınırlı sayıda fırından çıktığı için öğleden önce gitmek avantajlıdır.',
+      'Sıcak take-away kahve ve kruvasan ikilisi yürüyüş için idealdir.'
+    ]
+  },
+  'cihangir-tatli-misspizza': {
+    description: "Havyar Sokak'ta 2004 yılından bu yana odun ateşinde incecik İtalyan hamuruyla pişen gurme pizzaları ve otantik tiramisusuyla İstanbul'un en ikonik butik pizzacısı.",
+    whatToOrder: ['Pizza Margherita', 'Pizza Funghi & Tartufo'],
+    menuFrom: ['Pizza Pesto', 'Pizza Gorgonzola', 'Roka Salatası', 'Ev Yapımı Tiramisu', 'İtalyan Gazozu'],
+    alsoTry: ['Odun fırınından dumanı üstünde çıkan çıtır çıtır trüflü mantarlı pizza ve ardından taze tiramisu'],
+    beforeYouGo: [
+      'Mekan oldukça kompakt ve samimidir; akşam saatlerinde sıra oluşabilir.',
+      'Rezervasyon yaptırmak veya erken saatte gitmek tavsiye edilir.'
+    ]
   }
 };
 

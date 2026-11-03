@@ -2094,6 +2094,152 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
+
+  // --- CİHANGİR (100% CİHANGİR) ---
+  'cihangir-kahvalti-kahve6': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kahve+6+Anahtar+Sk+No+13A+Cihangir',
+      providers: [],
+    },
+  },
+  'cihangir-kahvalti-journey': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Journey+Akarsu+Yokusu+No+21A+Cihangir',
+      providers: [],
+    },
+  },
+  'cihangir-kahvalti-susam': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Susam+Cafe+Susam+Sk+No+11+Cihangir',
+      providers: [],
+    },
+  },
+  'cihangir-kahvalti-kaktus': {
+    platform: 'google-maps',
+    value: 4.8,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kaktus+Cihangir+Cihangir+Cad+No+16A',
+      providers: [],
+    },
+  },
+  'cihangir-kahve-kronotrop': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kronotrop+Turnacibasi+Cd+No+56+Cihangir',
+      providers: [],
+    },
+  },
+  'cihangir-kahve-norm': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Norm+Coffee+Gunesli+Sk+No+39A+Cihangir',
+      providers: [],
+    },
+  },
+  'cihangir-kahve-geyik': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Geyik+Coffee+Roastery+Akarsu+Yokusu+No+22+Cihangir',
+      providers: [],
+    },
+  },
+  'cihangir-kahve-21': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=21+Cihangir+Coskun+Sok+No+2+Cihangir',
+      providers: [],
+    },
+  },
+  'cihangir-bistro-demeti': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Demeti+Meyhane+Siraselviler+Cd+No+58+1+Cihangir',
+      providers: [],
+    },
+  },
+  'cihangir-bistro-jash': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Jash+Cihangir+Cihangir+Cad+No+9',
+      providers: [],
+    },
+  },
+  'cihangir-bistro-surbalik': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Sur+Balik+Cihangir+Defterdar+Yokusu+No+39',
+      providers: [],
+    },
+  },
+  'cihangir-bistro-rosemarine': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Rose+Marine+Cihangir+Akarsu+Yokusu+No+27',
+      providers: [],
+    },
+  },
+  'cihangir-tatli-savoy': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Savoy+Pastanesi+Siraselviler+Cd+No+91A+Cihangir',
+      providers: [],
+    },
+  },
+  'cihangir-tatli-cuppa': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Cuppa+Cihangir+Yeni+Yuva+Sk+No+22',
+      providers: [],
+    },
+  },
+  'cihangir-tatli-faw': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=FAW+Coffee+Bakery+Taktaki+Yokusu+No+14A+Cihangir',
+      providers: [],
+    },
+  },
+  'cihangir-tatli-misspizza': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Miss+Pizza+Havyar+Sokak+No+5+Cihangir',
+      providers: [],
+    },
+  },
 };
 
 export function getVerifiedGoogleRatings(venueId: string): VisitorGoogleRating[] {
