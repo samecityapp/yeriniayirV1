@@ -2240,6 +2240,152 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
+
+  // --- BEYOĞLU (100% BEYOĞLU & ASMALI MESCİT) ---
+  'beyoglu-meyhane-asmalicavit': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Asmali+Cavit+Asmali+Mescit+Cad+No+16D+Beyoglu',
+      providers: [],
+    },
+  },
+  'beyoglu-meyhane-yakup2': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Yakup+2+Asmalimescit+Sok+No+21B+Beyoglu',
+      providers: [],
+    },
+  },
+  'beyoglu-meyhane-refik': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Refik+Restaurant+Sofyali+Sok+No+6+8+Beyoglu',
+      providers: [],
+    },
+  },
+  'beyoglu-meyhane-galatameyhanesi': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Galata+Meyhanesi+Orhan+Adli+Apaydin+Sok+No+5+Beyoglu',
+      providers: [],
+    },
+  },
+  'beyoglu-lokanta-haciabdullah': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Haci+Abdullah+Lokantasi+Atif+Yilmaz+Cd+No+9A+Beyoglu',
+      providers: [],
+    },
+  },
+  'beyoglu-lokanta-helvetia': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Helvetia+Genel+Yazici+Sk+No+8+Asmali+Mescit',
+      providers: [],
+    },
+  },
+  'beyoglu-lokanta-kalkanoglu': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Tarihi+Kalkanoglu+Pilavcisi+Ayhan+Isik+Sk+No+16A+Beyoglu',
+      providers: [],
+    },
+  },
+  'beyoglu-lokanta-nizampide': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Nizam+Pide+Kalyoncu+Kullugu+Cd+No+13+Beyoglu',
+      providers: [],
+    },
+  },
+  'beyoglu-bistro-mikla': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Mikla+Restaurant+The+Marmara+Pera+Mesrutiyet+Cd+No+15',
+      providers: [],
+    },
+  },
+  'beyoglu-bistro-360istanbul': {
+    platform: 'google-maps',
+    value: 4.0,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=360+Istanbul+Istiklal+Cad+Misir+Apt+No+163+Kat+8',
+      providers: [],
+    },
+  },
+  'beyoglu-bistro-lebiderya': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Lebi+Derya+Kumbaraci+Yokusu+No+57+Kat+6+Beyoglu',
+      providers: [],
+    },
+  },
+  'beyoglu-bistro-litera': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Litera+Restaurant+Yeni+Carsi+Cad+No+32+Kat+6+Beyoglu',
+      providers: [],
+    },
+  },
+  'beyoglu-tatli-incipastanesi': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Inci+Pastanesi+Mis+Sk+No+18A+Beyoglu',
+      providers: [],
+    },
+  },
+  'beyoglu-tatli-mandabatmaz': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Mandabatmaz+Olivia+Gecidi+No+1A+Beyoglu',
+      providers: [],
+    },
+  },
+  'beyoglu-tatli-hacibekir': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Ali+Muhiddin+Haci+Bekir+Istiklal+Cad+No+83A+Beyoglu',
+      providers: [],
+    },
+  },
+  'beyoglu-tatli-beyoglucikolatacisi': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Meshur+Beyoglu+Cikolatacisi+Istiklal+Cad+No+69A+Beyoglu',
+      providers: [],
+    },
+  },
 };
 
 export function getVerifiedGoogleRatings(venueId: string): VisitorGoogleRating[] {

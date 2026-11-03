@@ -290,6 +290,30 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    scopeNote: 'Beyoğlu · Cihangir (Yayında)'
   },
   {
+   id: 'beyoglu',
+   level: 'ilce',
+   name: 'Beyoğlu',
+   slug: 'beyoglu',
+   path: ['istanbul', 'beyoglu'],
+   displayName: 'Beyoğlu, İstanbul',
+   locative: "Beyoğlu'nda",
+   status: 'published',
+   aliases: ['Beyoğlu', 'Beyoglu', 'İstiklal', 'İstiklal Caddesi', 'Asmalı Mescit', 'Asmalımescit', 'Meşrutiyet', 'Pera', 'Tünel'],
+   scopeNote: 'Beyoğlu · Asmalı Mescit & İstiklal (Yayında)'
+  },
+  {
+   id: 'beyoglu-merkez',
+   level: 'ilce',
+   name: 'Beyoğlu',
+   slug: 'beyoglu',
+   path: ['istanbul', 'beyoglu'],
+   displayName: 'Beyoğlu, İstanbul',
+   locative: "Beyoğlu'nda",
+   status: 'published',
+   aliases: ['Beyoğlu', 'Beyoglu', 'İstiklal', 'İstiklal Caddesi', 'Asmalı Mescit', 'Asmalımescit', 'Meşrutiyet', 'Pera', 'Tünel'],
+   scopeNote: 'Beyoğlu · Asmalı Mescit & İstiklal (Yayında)'
+  },
+  {
    id: 'nisantasi',
    level: 'semt',
    name: 'Nişantaşı',

@@ -2488,6 +2488,165 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Mekan oldukça kompakt ve samimidir; akşam saatlerinde sıra oluşabilir.',
       'Rezervasyon yaptırmak veya erken saatte gitmek tavsiye edilir.'
     ]
+  },
+
+  // --- BEYOĞLU ---
+  'beyoglu-meyhane-asmalicavit': {
+    description: "Asmalı Mescit Caddesi üzerinde Cavit Bey'in ustalığıyla yarım asırlık klasik meyhane geleneğini yaşatan, enfes mezeleri ve köftesiyle edebiyatçıların ve gurmelerin değişmez adresi.",
+    whatToOrder: ['Kıymalı Muska Böreği', 'Asmalı Cavit Köftesi'],
+    menuFrom: ['Lakerda', 'Patlıcan Salatası', 'Beyin Salatası', 'Fava', 'Kalamar Tava'],
+    alsoTry: ['Masaya sıcak sıcak gelen çıtır çıtır kıymalı muska böreği ve taze palamut lakerdası'],
+    beforeYouGo: [
+      'Meyhanenin klasik ahşap salonunda yer bulabilmek için önceden rezervasyon şarttır.',
+      'Sakin ve derin sohbetlerin yapıldığı geleneksel bir meyhane ortamı vardır.'
+    ]
+  },
+  'beyoglu-meyhane-yakup2': {
+    description: "Asmalımescit Sokak'ta şairlerin, yazarların ve gazetecilerin buluşma noktası olan Yakup 2, zengin meze tepsisi ve yılların değişmeyen samimiyetiyle Beyoğlu'nun yaşayan tarihi.",
+    whatToOrder: ['Yakup Meze Tepsisi', 'Sıcak Ot Kavurması'],
+    menuFrom: ['Cevizli Biber', 'Levrek Marin', 'Paçanga Böreği', 'Ahtapot Izgara', 'Kuzu Şiş'],
+    alsoTry: ['Masaya gelen geniş ahşap tepsiden seçilen zeytinyağlı mezeler ve közde ılık ot kavurma'],
+    beforeYouGo: [
+      'Hafta sonu akşamları çok hareketlidir; özellikle arka bahçe masaları popülerdir.',
+      'Beyoğlu kültür hayatının önemli tanıklarından biridir.'
+    ]
+  },
+  'beyoglu-meyhane-refik': {
+    description: "Sofyalı Sokak'ta 1954 yılından bu yana Refik Arslan'ın kurduğu gelenekle hizmet veren, Arnavut ciğeri ve klasik mezeleriyle Asmalı Mescit'in en eski ve saygın meyhanesi.",
+    whatToOrder: ['Arnavut Ciğeri', 'Közde Patlıcan Ezme'],
+    menuFrom: ['Tarama', 'Borani', 'Kalamar Tava', 'Yaprak Ciğer', 'Mevsim Balığı'],
+    alsoTry: ['Kırmızı soğan piyazı eşliğinde lokum kıvamında servis edilen taze Arnavut ciğeri'],
+    beforeYouGo: [
+      'Tarihi dokusu ve duvardaki eski Beyoğlu fotoğraflarıyla nostaljik bir atmosfer sunar.',
+      'Akşam yemeği için erken gitmek veya rezervasyon yaptırmak tavsiye edilir.'
+    ]
+  },
+  'beyoglu-meyhane-galatameyhanesi': {
+    description: "Orhan Adlı Apaydın Sokak'ta tarihi ahşap binasında, akordeon ve keman nağmeleri eşliğinde geleneksel Çilingir sofrasını en zarif şekilde yaşatan Asmalı Mescit efsanesi.",
+    whatToOrder: ['Rum Usulü Ahtapot Salata', 'Sıcak Güveçte Karides'],
+    menuFrom: ['Haydari', 'Girit Ezmesi', 'Şakşuka', 'Sigara Böreği', 'Izgara Çipura'],
+    alsoTry: ['Akordeon melodileri eşliğinde taze zeytinyağlı mezeler ve güveçte cızırdayan tereyağlı karides'],
+    beforeYouGo: [
+      'Canlı akustik fasıl ve eski İstanbul şarkıları masalar arasında icra edilir.',
+      'Özel kutlamalar ve nostaljik bir akşam için idealdir.'
+    ]
+  },
+  'beyoglu-lokanta-haciabdullah': {
+    description: "1888 yılında Sultan II. Abdülhamid'in fermanıyla kurulan, Atıf Yılmaz Caddesi'ndeki görkemli mekanında zeytinyağlıları, kompostoları ve hünkarbeğendisiyle Osmanlı mutfağının başyapıtı.",
+    whatToOrder: ['Hünkarbeğendi', 'Kuzu İncik'],
+    menuFrom: ['Elbasan Tava', 'Zeytinyağlı Enginar', 'Kuru Fasulye & Pilav', 'Karışık Meyve Kompostosu', 'Fırın Sütlaç'],
+    alsoTry: ['Ağır ateşte lokum gibi pişen kuzu eti ve köz patlıcan beğendisi ile taze vişne kompostosu'],
+    beforeYouGo: [
+      'Alkolsüz tarihi bir esnaf lokantasıdır; vitrindeki dev zeytinyağlı kavanozları mutlaka görülmelidir.',
+      'Öğle saatlerinde yoğun esnaf ve lezzet tutkunu akınına uğrar.'
+    ]
+  },
+  'beyoglu-lokanta-helvetia': {
+    description: "Asmalı Mescit'in Genel Yazıcı Sokağı'nda ev sıcaklığındaki samimi atmosferinde, her gün taze pişirilen zengin zeytinyağlı çeşitleri ve sebze yemekleriyle vejetaryenlerin ve mahallelinin gözdesi.",
+    whatToOrder: ['Karışık 5\'li Zeytinyağlı Tabağı', 'Fırında Mücver'],
+    menuFrom: ['Zeytinyağlı Pırasa', 'Mercimek Köftesi', 'Pazı Kavurma', 'Kereviz Salatası', 'Yoğurtlu Semizotu'],
+    alsoTry: ['Günün taze pişmiş sebze yemeklerinden oluşturulan rengarenk zeytinyağlı karma tabak'],
+    beforeYouGo: [
+      'Masalar kompakt ve samimidir; ev yemeği arayanlar için hızlı ve çok ekonomiktir.',
+      'Yemekler günlük çıktığından akşam saatlerinde popüler çeşitler tükenebilir.'
+    ]
+  },
+  'beyoglu-lokanta-kalkanoglu': {
+    description: "1856 yılında Trabzon'da başlayıp Ayhan Işık Sokak'ta devam eden, özel Trabzon tereyağı ve kemik suyuyla bakır kazanda demlenen pilavı ve yumuşacık kavurmasıyla tarihi lezzet durağı.",
+    whatToOrder: ['Kavurmalı Kuru Fasulyeli Pilav', 'Yayık Ayranı'],
+    menuFrom: ['Sade Tereyağlı Pilav', 'Kuru Fasulye', 'Kavurma', 'Ev Turşusu', 'Hoşaf'],
+    alsoTry: ['Tane tane dökülen tereyağlı pilavın üzerine bol kuru fasulye ve lif lif ayrılan kuzu kavurma'],
+    beforeYouGo: [
+      'Porsiyonlar oldukça doyurucudur; yanında buz gibi açık yayık ayranı tavsiye edilir.',
+      'Tarihi fotoğraflarla süslü nostaljik bir dükkandır.'
+    ]
+  },
+  'beyoglu-lokanta-nizampide': {
+    description: "Kalyoncu Kulluğu Caddesi'nde yarım asırlık Karadeniz pidesi ustalığı, çıtır tereyağlı kenarları ve fındıklı fırın sütlacıyla İstiklal Caddesi'nin en meşhur pide salonu.",
+    whatToOrder: ['Kıymalı Kaşarlı Karadeniz Pidesi', 'Giresun Fındıklı Fırın Sütlaç'],
+    menuFrom: ['Kavurmalı Yumurtalı Pide', 'Kuşbaşılı Pide', 'Trabzon Peynirli Pide', 'Günün Çorbası', 'Yayık Ayranı'],
+    alsoTry: ['Fırından yeni çıkmış sıcak kapalı kavurmalı pidenin ucunu kesip tereyağı batırma keyfi'],
+    beforeYouGo: [
+      'Günün her saati hızlı ve kesintisiz servis sunar.',
+      'Yemek sonrası üzeri bol fındıklı fırın sütlacı mutlaka denenmelidir.'
+    ]
+  },
+  'beyoglu-bistro-mikla': {
+    description: "The Marmara Pera'nın terasında Mehmet Gürs'ün Yeni Anadolu Mutfağı felsefesiyle Michelin yıldızına layık görülen, Haliç ve Boğaz panoramasına sahip dünya çapında bir gastronomi zirvesi.",
+    whatToOrder: ['Tadım Menüsü (Yeni Anadolu Mutfağı)', 'Balık Ekmek Yorumu'],
+    menuFrom: ['Mantar Mantı', 'Kuzu Gerdan', 'Lakerda İnovasyonu', 'Antep Fıstıklı Helva Yorumu', 'İmza Ege Kokteylleri'],
+    alsoTry: ['360 derece İstanbul silüetine karşı şefin yerel Anadolu malzemeleriyle hazırladığı imza tadım menüsü'],
+    beforeYouGo: ['Michelin yıldızlı üst segment bir restorandır; haftalar öncesinden rezervasyon gereklidir.', 'Şık giyim kuralı (smart casual) uygulanmaktadır.']
+  },
+  'beyoglu-bistro-360istanbul': {
+    description: "Tarihi Mısır Apartmanı'nın çatı katında tarihi Yarımada'dan Boğaz'a uzanan 360 derecelik panoraması, yaratıcı füzyon mutfağı ve seçkin bar kültürüyle Beyoğlu'nun simge çatısı.",
+    whatToOrder: ['Ördek Konfi', '360 İmza Kokteyl'],
+    menuFrom: ['Somon Tartar', 'Izgara Levrek', 'Dana Madalyon', 'Suşi Çeşitleri', 'Çikolatalı Sufle'],
+    alsoTry: ['Mısır Apartmanı terasında gün batımı ışıklarında şehrin panaromasına karşı imza kokteyller'],
+    beforeYouGo: [
+      'Hafta sonu akşamları kulüp ve canlı DJ performanslarına dönüşür.',
+      'Manzaralı masalar için önceden rezervasyon yapılması tavsiye edilir.'
+    ]
+  },
+  'beyoglu-bistro-lebiderya': {
+    description: "Kumbaracı Yokuşu'nun tepesinde tarihi binanın 6. katında, Boğaz ve Tarihi Yarımada'yı kucaklayan cam cephesi, modern Türk füzyon bistrosu ve romantik atmosferiyle unutulmaz bir deneyim.",
+    whatToOrder: ['Vişneli Dana Yanak', 'Fıstıklı Humus'],
+    menuFrom: ['Levrek Ceviche', 'Izgara Ahtapot', 'Trüflü Risotto', 'Peynir Tabağı', 'Karaköy Kokteylleri'],
+    alsoTry: ['Boğaz manzaralı terasta ağır ateşte pişmiş yumuşacık vişneli dana yanak'],
+    beforeYouGo: [
+      'Romantik akşam yemekleri ve özel buluşmalar için şehrin en popüler noktalarındandır.',
+      'Kumbaracı Yokuşu üzerinden asansörle çıkılmaktadır.'
+    ]
+  },
+  'beyoglu-bistro-litera': {
+    description: "Yeni Çarşı Caddesi'nde Goethe Enstitüsü binasının en üst katında, Tarihi Yarımada, Haliç ve Boğaz'ı aynı anda gören büyüleyici manzarası ve seçkin dünya mutfağıyla prestijli bir akşam mekanı.",
+    whatToOrder: ['Izgara Somon', 'Litera Özel Kokteyli'],
+    menuFrom: ['Dana Bonfile', 'Deniz Mahsüllü Fettuccine', 'Caprese Salata', 'Fırın Kuzu İncik', 'Cheesecake'],
+    alsoTry: ['Topkapı Sarayı ve Boğaz Köprüsü ışıkları eşliğinde akşamüstü şarabı ve peynir tabağı'],
+    beforeYouGo: [
+      'Huzurlu, kaliteli müzikli ve şık bir atmosfer arayanlar için çok elverişlidir.',
+      'Teras alanı özellikle yaz ve bahar aylarında yoğun ilgi görür.'
+    ]
+  },
+  'beyoglu-tatli-incipastanesi': {
+    description: "1944 yılında Luka Singos tarafından kurulan, özel çıtır şu hamuru ve akışkan bitter çikolata sosuyla Türkiye'ye profiterolü tanıtan Beyoğlu'nun efsanevi tatlı mabedi.",
+    whatToOrder: ['Meşhur İnci Profiterolü', 'Uludağ Tatlısı'],
+    menuFrom: ['Ekler', 'Milföy Pasta', 'Acıbadem Kurabiyesi', 'Limonata', 'Demleme Çay'],
+    alsoTry: ['Bol koyu çikolata sosuna batırılmış taze krema dolgulu klasik İnci profiterol tabağı'],
+    beforeYouGo: [
+      'Mis Sokak\'taki yerinde hızlı bir tatlı molası için idealdir.',
+      'Paket olarak alıp İstiklal yürüyüşünde tüketmek de çok yaygındır.'
+    ]
+  },
+  'beyoglu-tatli-mandabatmaz': {
+    description: "Olivia Geçidi'nde 1967'den beri Cemil Filik'in özel pişirme tekniğiyle hazırlanan, üzerinde 'manda batsa batmaz' denilen yoğun kadifemsi köpüğüyle İstanbul'un en meşhur Türk kahvecisi.",
+    whatToOrder: ['Geleneksel Mandabatmaz Türk Kahvesi', 'Damla Sakızlı Türk Kahvesi'],
+    menuFrom: ['Sade Kahve', 'Orta Şekerli Kahve', 'Şekerli Kahve', 'Su', 'Maden Suyu'],
+    alsoTry: ['Kaldırımdaki minik taburelere oturup bakır cezvede ağır ağır pişirilen bol köpüklü taze kahve'],
+    beforeYouGo: [
+      'Küçük bir pasaj girişinde taburelerde servis yapılır; salaş ve çok otantiktir.',
+      'Taze çekilmiş özel kahve paketlerini hediyelik olarak alabilirsiniz.'
+    ]
+  },
+  'beyoglu-tatli-hacibekir': {
+    description: "1777 yılında kurulan, İstiklal Caddesi'ndeki tarihi dükkanında fıstıklı lokumları, akide şekerleri ve badem ezmeleriyle saray mutfağından bugüne uzanan eşsiz tatlı mirası.",
+    whatToOrder: ['Güllü & Fıstıklı Lokum', 'Tarihi Tarçınlı Akide Şekeri'],
+    menuFrom: ['Narlı Lokum', 'Badem Ezmesi', 'Kestane Şekeri', 'Helva Çeşitleri', 'Gül Şerbeti'],
+    alsoTry: ['Geleneksel cam kavanozlardan doldurulan taze tarçınlı ve naneli akide şekerleri'],
+    beforeYouGo: [
+      'Tarihi mağaza aynı zamanda bir müze havasındadır; hediyelik lokum kutuları için en prestijli yerdir.',
+      'Üst katındaki kafede Türk kahvesi eşliğinde lokum tadımı yapabilirsiniz.'
+    ]
+  },
+  'beyoglu-tatli-beyoglucikolatacisi': {
+    description: "İstiklal Caddesi üzerinde nostaljik vitrininde koca kalıplar halinde sergilenen, bol Karadeniz fındıklı kırma çikolatasıyla İstiklal yürüyüşlerinin vazgeçilmez tatlı ritüeli.",
+    whatToOrder: ['Kırma Fındıklı Sütlü Çikolata', 'Bitter Fındıklı Tablet'],
+    menuFrom: ['Fıstıklı Çikolata', 'Portakallı Çikolata', 'Madlen Çikolata', 'Drajeler', 'Hediyelik Spesiyal Kutular'],
+    alsoTry: ['Özel parlak gümüş kağıda sarılmış taze fındık dolu kırma sütlü Beyoğlu çikolatası'],
+    beforeYouGo: [
+      'İstiklal Caddesi üzerinde gezerken çantada taşımak ve atıştırmak için harika bir klasiktir.',
+      'Kilo işi taze kırılıp paketlenir.'
+    ]
   }
 };
 
