@@ -1474,6 +1474,161 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
+
+  // ==========================================
+  // REGION 10: ÇENGELKÖY (Üsküdar)
+  // ==========================================
+  // Tarihi Çınaraltı Kahvaltısı & Boğaz Manzarası
+  'cengelkoy-kahvalti-cinaralti': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Tarihi+%C3%87%C4%B1naralt%C4%B1+Aile+%C3%87ay+Bah%C3%A7esi+%C3%87%C4%B1narl%C4%B1+Cami+Sk+No+4+%C3%87engelk%C3%B6y+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'cengelkoy-kahvalti-boon': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Boon+Cafe+Restaurant+Kara+Sk+No+5+%C3%87engelk%C3%B6y+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'cengelkoy-kahvalti-sutis': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Emirgan+S%C3%BCti%C5%9F+%C3%87engelk%C3%B6y+Kaptan%C4%B1+Derya+Seyit+Ali+Pa%C5%9Fa+Sk+No+16+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'cengelkoy-kahvalti-muzelik': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=M%C3%BCzelik+Cafe+Kerime+Hatun+Camii+Sk+No+9A+%C3%87engelk%C3%B6y+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+
+  // Tarihi Çengelköy Börekçisi & İkonik Tatlılar
+  'cengelkoy-borek-tarihiborekci': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Tarihi+%C3%87engelk%C3%B6y+B%C3%B6rek%C3%A7isi+%C3%87engelk%C3%B6y+Cd+No+41+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'cengelkoy-tatli-seval': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Seval+Pastanesi+%C3%87engelk%C3%B6y+Cd+No+9A+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'cengelkoy-tatli-cikolakahve': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=%C3%87ikolata+Kahve+%C4%B0stanbul+Derecik+Sk+No+8+%C3%87engelk%C3%B6y+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'cengelkoy-tatli-buandbu': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Bu+and+Bu+Dondurma+%C3%87engelk%C3%B6y+Cd+No+40C+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+
+  // Nitelikli Kahve & Kafe
+  'cengelkoy-kahve-gofi': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Gofi+House+Coffee+%C5%9Eenol+Sk+No+2+%C3%87engelk%C3%B6y+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'cengelkoy-kahve-pureblack': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Pure+Black+Coffee+Albay+H%C3%BCsamettin+Ert%C3%BCrk+Sk+No+2E+%C3%87engelk%C3%B6y+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'cengelkoy-kahve-espressolab': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Espressolab+%C3%87engelk%C3%B6y+%C4%B0skele+Kuleli+Cd+No+1+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'cengelkoy-kahve-thepawn': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=The+Pawn+Cafe+Albay+H%C3%BCsamettin+Ert%C3%BCrk+Sk+No+6+%C3%87engelk%C3%B6y+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+
+  // Boğaz Balıkçıları & Çengelköy Lezzetleri
+  'cengelkoy-balik-delmare': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Del+Mare+Restaurant+Kuleli+Cd+No+45-1+%C3%87engelk%C3%B6y+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'cengelkoy-balik-rigel': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Rigel+Restaurant+Kaptan%C4%B1+Derya+Seyit+Ali+Pa%C5%9Fa+Sk+No+11+%C3%87engelk%C3%B6y+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'cengelkoy-balik-salvatore': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Osteria+Salvatore+Kuleli+Cd+No+45-1+%C3%87engelk%C3%B6y+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'cengelkoy-balik-chacha': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Chacha+Bal%C4%B1k+Kuleli+Cd+No+47+%C3%87engelk%C3%B6y+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
 };
 
 export function getVerifiedGoogleRatings(venueId: string): VisitorGoogleRating[] {

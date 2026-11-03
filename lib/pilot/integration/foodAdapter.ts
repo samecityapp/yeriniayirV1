@@ -170,6 +170,30 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    scopeNote: 'Üsküdar · Kuzguncuk (Yayında)'
   },
   {
+   id: 'cengelkoy',
+   level: 'semt',
+   name: 'Çengelköy',
+   slug: 'cengelkoy',
+   path: ['istanbul', 'uskudar', 'cengelkoy'],
+   displayName: 'Çengelköy, Üsküdar, İstanbul',
+   locative: "Çengelköy'de",
+   status: 'published',
+   aliases: ['Çengelköy', 'Cengelkoy', 'Çınaraltı', 'Cinaralti', 'Kuleli Caddesi', 'Kuleli'],
+   scopeNote: 'Üsküdar · Çengelköy (Yayında)'
+  },
+  {
+   id: 'cengelkoy-uskudar',
+   level: 'semt',
+   name: 'Çengelköy',
+   slug: 'cengelkoy',
+   path: ['istanbul', 'uskudar', 'cengelkoy'],
+   displayName: 'Çengelköy, Üsküdar, İstanbul',
+   locative: "Çengelköy'de",
+   status: 'published',
+   aliases: ['Çengelköy', 'Cengelkoy', 'Çınaraltı', 'Cinaralti', 'Kuleli Caddesi', 'Kuleli'],
+   scopeNote: 'Üsküdar · Çengelköy (Yayında)'
+  },
+  {
    id: 'nisantasi',
    level: 'semt',
    name: 'Nişantaşı',

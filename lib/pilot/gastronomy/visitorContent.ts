@@ -1642,6 +1642,177 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Deniz kenarındaki cam kenarı masalar için günler öncesinden rezervasyon şarttır.',
       'Nostaljik, sade ve tarihi dokusu korunmuş gerçek bir Boğaz meyhanesidir.'
     ]
+  },
+
+  // ==========================================
+  // REGION 10: ÇENGELKÖY (Üsküdar)
+  // ==========================================
+  // Tarihi Çınaraltı Kahvaltısı & Boğaz Manzarası
+  'cengelkoy-kahvalti-cinaralti': {
+    description: "Asırlık ulu çınarın gölgesinde, Boğaz sularına sıfır konumu, dışarıdan börek getirme serbestliği ve demlik çay keyfiyle İstanbul'un en ikonik açık hava çay bahçesi.",
+    whatToOrder: ['Tarihi Çınaraltı Demlik Çay', 'Sahanda Kaşarlı Yumurta'],
+    menuFrom: ['Beyaz Peynirli Tost', 'Menemen', 'Simit & Kaşar', 'Türk Kahvesi'],
+    alsoTry: ['Yan fırından aldığınız sıcacık Çengelköy böreği eşliğinde demli çay keyfi'],
+    beforeYouGo: [
+      'Dışarıdan yiyecek getirmek serbesttir, içecekler bahçeden sipariş edilir.',
+      'Hafta sonları erken saatlerde gitmek deniz kenarı masalar için önemlidir.'
+    ]
+  },
+  'cengelkoy-kahvalti-boon': {
+    description: "Kara Sokak sahilinde panoramik Boğaz manzaralı terası, modern kafe estetiği ve zengin serpme kahvaltısıyla Çengelköy'ün en popüler buluşma noktalarından.",
+    whatToOrder: ['Boon Gurme Serpme Kahvaltı', 'Avokadolu Poşe Yumurta'],
+    menuFrom: ['Kruvasan Sandviç', 'Krep Çeşitleri', 'Pankek Kulesi', 'Filtre Kahve'],
+    alsoTry: ['Boğaz manzarasına karşı ev yapımı reçeller ve sıcacık pişilerle zengin serpme kahvaltı'],
+    beforeYouGo: [
+      'Üst kat teras manzarası gün batımında ve sabah kahvaltısında büyüleyicidir.',
+      'Hafta sonları sıra olabileceğinden erken saatler önerilir.'
+    ]
+  },
+  'cengelkoy-kahvalti-sutis': {
+    description: "Boğaz kıyısında manda sütünden kaymağı, kendi çiftliğinden peynirleri ve geleneksel Türk kahvaltı kültürüyle Sütiş kalitesinin Çengelköy yalısındaki adresi.",
+    whatToOrder: ['Manda Kaymağı & Bal', 'Sıcak Kıymalı Su Böreği'],
+    menuFrom: ['Menemen', 'Sucuklu Yumurta', 'Ezine Peyniri', 'Geleneksel Demleme Çay'],
+    alsoTry: ['Rize çayı eşliğinde fırından yeni çıkmış çıtır katmerli su böreği ve taze manda kaymağı'],
+    beforeYouGo: [
+      'Denize sıfır iskele masaları manzarayı doyasıya izleme fırsatı sunar.',
+      'Geniş aile kahvaltıları için oturma alanı ferahtır.'
+    ]
+  },
+  'cengelkoy-kahvalti-muzelik': {
+    description: "Kerime Hatun Camii Sokağı'nda antika eşyalar, plaklar ve nostaljik objelerle dekore edilmiş sıcacık bahçesinde ev yapımı samimi köy kahvaltısı.",
+    whatToOrder: ['Müzelik Bahçe Kahvaltısı', 'Anne Eli Ev Pişisi'],
+    menuFrom: ['Otlu Peynirli Omlet', 'Ev Yapımı Çilek Reçeli', 'Acuka', 'Köy Çayı'],
+    alsoTry: ['Tavada taze kızartılmış puf puf pişiler ve ev yapımı cevizli acuka'],
+    beforeYouGo: [
+      'Kendinizi bir zaman makinesinde hissettiren antika dekoru fotoğraf için çok özeldir.',
+      'Sakin ve huzurlu bir mahalle arası kahvaltısı sunar.'
+    ]
+  },
+
+  // Tarihi Çengelköy Börekçisi & İkonik Tatlılar
+  'cengelkoy-borek-tarihiborekci': {
+    description: "Çengelköy Caddesi'nde çıtır çıtır kıymalı, cevizli, peynirli ve patatesli börekleriyle Türkiye çapında üne kavuşan Çengelköy börek geleneğinin doğduğu merkez.",
+    whatToOrder: ['Cevizli Kıymalı Çengelköy Böreği', 'Peynirli Kol Böreği'],
+    menuFrom: ['Patatesli Börek', 'Ispanaklı Börek', 'Küt Böreği', 'Ayran & Çay'],
+    alsoTry: ['İçinde iri ceviz parçaları ve taze kıymayla fırından sıcak çıkan meşhur Çengelköy böreği'],
+    beforeYouGo: [
+      'Böreği buradan paket alıp Tarihi Çınaraltı Çay Bahçesi\'nde çayla tüketmek bir Çengelköy ritüelidir.',
+      'Sabahları taze tepsiler peş peşe çıkar.'
+    ]
+  },
+  'cengelkoy-tatli-seval': {
+    description: "Çengelköy Caddesi üzerinde yarım asrı aşkın süredir badem ezmesi, çilekli pastası ve geleneksel tatlılarıyla semtin hafızası niteliğindeki tarihi pastane.",
+    whatToOrder: ['Çengelköy Badem Ezmesi', 'Çilekli Rulo Pasta'],
+    menuFrom: ['Profiterol', 'Acıbadem Kurabiyesi', 'Tahinli Çörek', 'Tuzlu Kuru Pasta'],
+    alsoTry: ['Geleneksel taş havanlarda dövülerek hazırlanan katkısız taze Çengelköy badem ezmesi'],
+    beforeYouGo: [
+      'Nostaljik kutularında hediyelik badem ezmesi almak için semtin bir numaralı adresidir.',
+      'Yıllardır değişmeyen mahalle pastanesi sıcaklığını korur.'
+    ]
+  },
+  'cengelkoy-tatli-cikolakahve': {
+    description: "Derecik Sokağı'nda çikolata çeşmelerinden akan Belçika çikolatası, el yapımı trüfleri ve tarihi ahşap dükkan kokusuyla tatlı tutkunlarının kült durağı.",
+    whatToOrder: ['Eritme Sıcak Çikolata Kasesi', 'Fesleğenli Fıstıklı Trüf'],
+    menuFrom: ['Muzlu Çikolatalı Pasta', 'Karamelli Tablet', 'Türk Kahvesi', 'Kakao Şerbeti'],
+    alsoTry: ['Çilek ve muz dilimleri üzerine dökülen sıcak eritilmiş Belçika sütlü çikolatası'],
+    beforeYouGo: [
+      'Önündeki renkli banklarda kahve yudumlamak popülerdir.',
+      'Tatlı ve yoğun kakao kokusu kapıdan girmeden sokakta hissedilir.'
+    ]
+  },
+  'cengelkoy-tatli-buandbu': {
+    description: "Çengelköy Caddesi'nde taze meyvelerle günlük üretilen artisan İtalyan gelatoları, keçi sütlü dondurmaları ve çıtır külahlarıyla yaz kış kuyruk olan lezzet noktası.",
+    whatToOrder: ['Belçika Çikolatalı & Antep Fıstıklı Gelato', 'Karamelize İncirli Dondurma'],
+    menuFrom: ['Limonlu Sorbe', 'Manda Sütlü Sade', 'Böğürtlenli Sorbe', 'Espresso'],
+    alsoTry: ['Doğal şeker ve taze meyve püresiyle hazırlanan kıvamlı fıstıklı ve böğürtlenli sorbe'],
+    beforeYouGo: [
+      'Sahil yürüyüşü yaparken dondurma almak için mükemmel konumdadır.',
+      'Mevsimine göre taze meyveli çeşitler sürekli güncellenir.'
+    ]
+  },
+
+  // Nitelikli Kahve & Kafe
+  'cengelkoy-kahve-gofi': {
+    description: "Şenol Sokak'ta sakin bahçesi, zengin single-origin çekirdekleri, ev yapımı tartları ve modern çalışma ortamıyla Çengelköy'ün en sevilen yeni nesil kahvecisi.",
+    whatToOrder: ['V60 Hand Brew', 'Lotus Biscoff Cheesecake'],
+    menuFrom: ['Flat White', 'Cortado', 'Cold Brew', 'Havuçlu Tarçınlı Kek'],
+    alsoTry: ['Çiçeksi ve narenciye notalı taze kavrulmuş Etiyopya çekirdeğinden V60 demleme kahve'],
+    beforeYouGo: [
+      'Sessiz arka bahçesinde laptopla çalışmak veya kitap okumak için çok uygundur.',
+      'Güler yüzlü baristaları çekirdek seçiminde yardımcı olur.'
+    ]
+  },
+  'cengelkoy-kahve-pureblack': {
+    description: "Albay Hüsamettin Ertürk Sokağı'nda minimalist dekorasyonu, mikro-kavrum nitelikli kahveleri ve huzurlu köşesiyle kahve tutkunlarının gizli vahası.",
+    whatToOrder: ['Flat White', 'Specialty Iced Latte'],
+    menuFrom: ['Aeropress', 'Americano', 'Fıstıklı Brownie', 'Bademli Kurabiye'],
+    alsoTry: ['Kusursuz kadifemsi mikro köpükle hazırlanan yoğun gövdeli Flat White'],
+    beforeYouGo: [
+      'Çarşının kalabalığından izole, sakin bir kahve sohbeti için idealdir.',
+      'Çekirdek kahve satışı da mevcuttur.'
+    ]
+  },
+  'cengelkoy-kahve-espressolab': {
+    description: "Çengelköy İskelesi'nin yanı başında doğrudan Boğaz kıyısındaki geniş açık alanı, zengin pour-over barı ve kesintisiz vapur manzaralı kahve keyfi.",
+    whatToOrder: ['Cold Brew Reserve', 'Karamel Macchiato'],
+    menuFrom: ['Filtre Kahve', 'Kruvasan', 'Mocha', 'San Sebastian Cheesecake'],
+    alsoTry: ['Boğaz esintisi eşliğinde yudumlanan soğuk demlenmiş meyvemsi Cold Brew'],
+    beforeYouGo: [
+      'Doğrudan deniz kenarındaki açık masalarıyla Çengelköy iskelesini seyre dalar.',
+      'Hızlı kahve ve atıştırmalık molaları için elverişlidir.'
+    ]
+  },
+  'cengelkoy-kahve-thepawn': {
+    description: "Albay Hüsamettin Ertürk Sokağı'nda sıcak ahşap dekorasyonu, satranç konsepti, leziz tatlıları ve sakin sokak masalarıyla keyifli bir kafe deneyimi.",
+    whatToOrder: ['Kortado', 'Ev Yapımı San Sebastian Cheesecake'],
+    menuFrom: ['Latte', 'Chai Tea Latte', 'Çikolatalı Sufle', 'Bitki Çayları'],
+    alsoTry: ['İnce kavrum espresso bazı ve ipeksi süt dengesiyle servis edilen sıcak kortado'],
+    beforeYouGo: [
+      'Semt dokusunu izleyerek sakin bir mola vermek isteyenler için uygundur.',
+      'Masa oyunları ve sohbet için sıcaktır.'
+    ]
+  },
+
+  // Boğaz Balıkçıları & Çengelköy Lezzetleri
+  'cengelkoy-balik-delmare': {
+    description: "Kuleli Caddesi'nde 19. yüzyıldan kalma tarihi fil ambarında, lüks balık kültürü, taze deniz mahsulleri ve eşsiz Boğaz manzarasıyla fine dining deneyimi.",
+    whatToOrder: ['Tuzda Levrek', 'Ahtapot Izgara & Lakerda'],
+    menuFrom: ['Deniz Mahsullü Paella', 'Kalamar Tava', 'Levrek Marin', 'İncir Tatlısı'],
+    alsoTry: ['Ağır ateşte kömür ızgarasında yumuşacık pişirilmiş Ege ahtapot ızgara'],
+    beforeYouGo: [
+      'Avrupa yakasından özel tekne servisiyle ulaşım imkanı bulunur.',
+      'Özel kutlamalar ve şık akşam yemekleri için önceden rezervasyon gerekir.'
+    ]
+  },
+  'cengelkoy-balik-rigel': {
+    description: "Kaptanı Derya Seyit Ali Paşa Sokağı'nda denize sıfır masaları, zengin Akdeniz mezeleri ve taptaze mevsim balıklarıyla Çengelköy sahilinin gözdesi.",
+    whatToOrder: ['Fener Kavurma', 'Kaya Levrek Izgara'],
+    menuFrom: ['Avokadolu Karides', 'Girit Ezmesi', 'Kalamar Dolma', 'Fırın Helva'],
+    alsoTry: ['Toprak güveçte tereyağı, sarımsak ve taze otlarla fırınlanmış fener balığı kavurma'],
+    beforeYouGo: [
+      'Deniz kenarındaki balkon masaları özellikle gün batımında eşsizdir.',
+      'Rezervasyon yaptırılması tavsiye edilir.'
+    ]
+  },
+  'cengelkoy-balik-salvatore': {
+    description: "Tarihi Boğaz yapısında Napoli tarzı odun fırını pizzaları, el yapımı taze makarnaları ve modern Akdeniz kokteylleriyle semtin en şık İtalyan restoranı.",
+    whatToOrder: ['Trüflü Mantarlı Salvatore Pizza', 'Deniz Mahsullü Tagliolini'],
+    menuFrom: ['Burrata Salata', 'Carpaccio di Manzo', 'Tiramisu', 'Signature İçecekler'],
+    alsoTry: ['48 saat mayalanmış hafif hamuru ve taze trüf kremasıyla fırınlanmış imza Salvatore pizza'],
+    beforeYouGo: [
+      'Romantik akşam yemekleri ve özel buluşmalar için Çengelköy\'ün en popüler noktalarındandır.',
+      'Rezervasyonsuz yer bulmak zordur.'
+    ]
+  },
+  'cengelkoy-balik-chacha': {
+    description: "Kuleli Caddesi üzerinde samimi Boğaz manzaralı terası, taze tava mezgiti, çıtır hamsisi ve sıcak aile ortamıyla Çengelköy balıkçılık geleneği.",
+    whatToOrder: ['Çıtır Hamsi Tava', 'Izgara Lüfer & Balık Çorbası'],
+    menuFrom: ['Kalamar Tava', 'Roka Helva Salatası', 'Karides Güveç', 'Fırında Tahin Helvası'],
+    alsoTry: ['Mısır ununa bulanarak çıtır çıtır tavalanmış mevsim hamsisi ve roka salatası'],
+    beforeYouGo: [
+      'Gereksiz abartıdan uzak, kaliteli ve taze balık yemek isteyenler için idealdir.',
+      'Fiyat-performans dengesi oldukça başarılıdır.'
+    ]
   }
 };
 
