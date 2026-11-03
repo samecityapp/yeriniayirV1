@@ -1319,6 +1319,161 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
+
+  // ==========================================
+  // REGION 9: KUZGUNCUK (Üsküdar)
+  // ==========================================
+  // Bostan & Köy Kahvaltısı
+  'kuzguncuk-kahvalti-pita': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Pita+Kuzguncuk+%C4%B0cadiye+Cd+No+41A+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'kuzguncuk-kahvalti-saraninbahcesi': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Sara+Bah%C3%A7esi+%C4%B0cadiye+Cd+No+144+Kuzguncuk+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'kuzguncuk-kahvalti-botanica': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Botanik+Bah%C3%A7e+Kuzguncuk+%C4%B0cadiye+Cd+No+132+Kuzguncuk+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'kuzguncuk-kahvalti-cinaralti': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kuzguncuk+%C3%87%C4%B1naralt%C4%B1+Cafe+%C4%B0cadiye+Cd+No+2+Kuzguncuk+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+
+  // Fırın & Butik Tatlıcılar
+  'kuzguncuk-firin-tarihifirin': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Tarihi+Kuzguncuk+F%C4%B1r%C4%B1n%C4%B1+%C4%B0cadiye+Cd+No+24A+Kuzguncuk+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'kuzguncuk-firin-dilimpastanesi': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Dilim+Pastanesi+Pa%C5%9Faliman%C4%B1+Cd+No+126B+Kuzguncuk+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'kuzguncuk-firin-galette': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Galette+Kuzguncuk+%C4%B0cadiye+Cd+No+45B+Kuzguncuk+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'kuzguncuk-firin-cikolakahve': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kuzguncuk+%C3%87ikolata+Kahve+%C4%B0cadiye+Cd+No+45+Kuzguncuk+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+
+  // Nitelikli Kahve & Kitap
+  'kuzguncuk-kahve-nailkitabevi': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Nail+Kitabevi+Cafe+%C4%B0cadiye+Cd+No+32+Kuzguncuk+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'kuzguncuk-kahve-glow': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Glow+Coffee+%C3%9Cryanizade+Sk+No+1C+Kuzguncuk+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'kuzguncuk-kahve-kosinitza': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kosinitza+Coffee+%C4%B0cadiye+Cd+No+9+Kuzguncuk+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'kuzguncuk-kahve-neruda': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Neruda+Coffee+%C4%B0cadiye+Cd+No+28A+Kuzguncuk+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+
+  // Boğaz Balıkçıları & Kuzguncuk Lezzetleri
+  'kuzguncuk-lokanta-baymanti': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Bay+Mant%C4%B1+Cafe+%C4%B0cadiye+Cd+No+68A+Kuzguncuk+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'kuzguncuk-lokanta-balikcisi': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kuzguncuk+Bal%C4%B1k%C3%A7%C4%B1s%C4%B1+Perihan+Abla+Sk+No+3+Kuzguncuk+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'kuzguncuk-lokanta-metet': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Metet+K%C3%B6zde+D%C3%B6ner+%C4%B0cadiye+Cd+No+10+Kuzguncuk+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'kuzguncuk-lokanta-ismetbaba': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=%C4%B0smet+Baba+Restaurant+Kuzguncuk+%C3%87ar%C5%9F%C4%B1+Cd+No+1+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
 };
 
 export function getVerifiedGoogleRatings(venueId: string): VisitorGoogleRating[] {

@@ -146,6 +146,30 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    scopeNote: 'Kadıköy · Koşuyolu (Yayında)'
   },
   {
+   id: 'kuzguncuk',
+   level: 'semt',
+   name: 'Kuzguncuk',
+   slug: 'kuzguncuk',
+   path: ['istanbul', 'uskudar', 'kuzguncuk'],
+   displayName: 'Kuzguncuk, Üsküdar, İstanbul',
+   locative: "Kuzguncuk'ta",
+   status: 'published',
+   aliases: ['Kuzguncuk', 'İcadiye Caddesi', 'İcadiye', 'Perihan Abla', 'Bostan', 'Paşalimanı'],
+   scopeNote: 'Üsküdar · Kuzguncuk (Yayında)'
+  },
+  {
+   id: 'kuzguncuk-uskudar',
+   level: 'semt',
+   name: 'Kuzguncuk',
+   slug: 'kuzguncuk',
+   path: ['istanbul', 'uskudar', 'kuzguncuk'],
+   displayName: 'Kuzguncuk, Üsküdar, İstanbul',
+   locative: "Kuzguncuk'ta",
+   status: 'published',
+   aliases: ['Kuzguncuk', 'İcadiye Caddesi', 'İcadiye', 'Perihan Abla', 'Bostan', 'Paşalimanı'],
+   scopeNote: 'Üsküdar · Kuzguncuk (Yayında)'
+  },
+  {
    id: 'nisantasi',
    level: 'semt',
    name: 'Nişantaşı',
@@ -185,7 +209,7 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
 
  return {
   locations: distinctLocations,
-  categories:data.categories.slice(0,7).map(c=>({slug:c.slug,label:c.label,title:c.label,isMustTry:c.isMustTry,emoji:c.id==='coffee'?'☕':c.id==='burger'?'🍔':c.id==='pizza'?'🍕':c.id==='breakfast'?'🍳':c.id==='dessert'?'🍰':c.id==='date'?'🍷':c.id==='lokanta'?'🍲':c.id==='balik'?'🐟':c.id==='meyhane'?'🥂':c.id==='bistro'?'🍸':c.id==='kebap'?'🍢':undefined})),
+  categories:data.categories.slice(0,7).map(c=>({slug:c.slug,label:c.label,title:c.label,isMustTry:c.isMustTry,emoji:c.id==='coffee'||c.slug.includes('kahve')?'☕':c.id==='burger'||c.slug.includes('burger')?'🍔':c.id==='pizza'||c.slug.includes('pizza')?'🍕':c.id==='breakfast'||c.slug.includes('kahvalti')?'🍳':c.id==='dessert'||c.slug.includes('tatli')||c.slug.includes('firin')?'🍰':c.id==='date'?'🍷':c.id==='lokanta'||c.slug.includes('lokanta')?'🍲':c.id==='balik'||c.slug.includes('balik')?'🐟':c.id==='meyhane'?'🥂':c.id==='bistro'||c.slug.includes('bistro')?'🍸':c.id==='kebap'||c.slug.includes('kebap')?'🍢':'🍽️'})),
   venues:data.venues.map(v=>{
    const verified=getVerifiedGoogleRatings(v.id);
    const resolvedRatings=verified.length?verified:copyVisitorGoogleRatings(v.ratings);

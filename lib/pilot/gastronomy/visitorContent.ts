@@ -1471,6 +1471,177 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Butik ve enerjik bir burger mekanıdır, burgerinizin gramajını seçebilirsiniz.',
       'Hızlı ve gurme bir sokak lezzeti deneyimi vadeder.'
     ]
+  },
+
+  // ==========================================
+  // REGION 9: KUZGUNCUK (Üsküdar)
+  // ==========================================
+  // Bostan & Köy Kahvaltısı
+  'kuzguncuk-kahvalti-pita': {
+    description: "İcadiye Caddesi'nde fırından yeni çıkmış sıcak pitaları, ev yapımı reçelleri, Kars kaşarı ve otantik Kuzguncuk dokusuyla semtin en sevilen kahvaltı durağı.",
+    whatToOrder: ['Kavurmalı Yumurtalı Sıcak Pita', 'Kuzguncuk Serpme Kahvaltısı'],
+    menuFrom: ['Kars Kaşarlı Pita', 'Sebzeli Fırın Kiş', 'Ev Yapımı Vişne Reçeli', 'Taze Demleme Çay'],
+    alsoTry: ['Taş fırında kabaran ince hamurlu tulum peynirli ve cevizli sıcak pita'],
+    beforeYouGo: [
+      'Hafta sonu sabahları önünde kuyruk oluşabilir, erken saatlerde gitmek avantajlıdır.',
+      'Sıcak ve samimi bir mahalle kahvaltısı deneyimi sunar.'
+    ]
+  },
+  'kuzguncuk-kahvalti-saraninbahcesi': {
+    description: "İcadiye Caddesi'nin üst kısmında yeşillikler içindeki gizli bahçesi, çıtır pişileri ve odun sobası nostaljisiyle doğayla iç içe serpme kahvaltı keyfi.",
+    whatToOrder: ['Sıcak Anne Pişisi', 'Zengin Bahçe Serpme Kahvaltısı'],
+    menuFrom: ['Menemen', 'Muhlama', 'Köy Peynirleri Tabağı', 'Fırınlanmış Patates'],
+    alsoTry: ['Altın sarısı çıtır pişi eşliğinde servis edilen acuka ve böğürtlen reçeli'],
+    beforeYouGo: [
+      'Geniş bahçesi ve asma altı masalarıyla huzurlu bir vaha gibidir.',
+      'Geniş aile kahvaltıları ve kalabalık gruplar için uygundur.'
+    ]
+  },
+  'kuzguncuk-kahvalti-botanica': {
+    description: "İcadiye Caddesi'nde botanik bitkilerle çevrili ferah avlusu, sağlıklı kahvaltı kaseleri ve taze sıkma meyve sularıyla huzurlu bir bahçe kafesi.",
+    whatToOrder: ['Avokadolu Poşe Yumurtalı Ekmek', 'Botanik Granola Kasesi'],
+    menuFrom: ['Ekşi Mayalı Tost', 'Hellimli Izgara Salata', 'Detoks İçecekler', 'Filtre Kahve'],
+    alsoTry: ['Ekşi maya ekmek üzerine ezilmiş avokado, labne ve organik poşe yumurta'],
+    beforeYouGo: [
+      'Yeşillikler içinde sakin kahvaltı veya kitap okuma molası için idealdir.',
+      'Ferah kış bahçesi bölümü de mevcuttur.'
+    ]
+  },
+  'kuzguncuk-kahvalti-cinaralti': {
+    description: "İcadiye Caddesi'nin girişinde asırlık ulu çınarın gölgesinde, simit, peynir ve ince belli bardakta taze çayla geleneksel Boğaz kahvaltı klasiği.",
+    whatToOrder: ['Tarihi Çınaraltı Kahvaltı Tabağı', 'Kıymalı Kaşarlı Menemen'],
+    menuFrom: ['Kuzguncuk Simiti', 'Beyaz Peynir & Domates', 'Sahanda Sucuklu Yumurta', 'Demlik Çay'],
+    alsoTry: ['Fırından taze gelen sıcak simit eşliğinde eritme kaşarlı sahanda yumurta'],
+    beforeYouGo: [
+      'Semtin nabzını tutan nostaljik meydan kahvesi atmosferine sahiptir.',
+      'Boğaz vapurlarının sesini dinleyerek çay içmek için birebirdir.'
+    ]
+  },
+
+  // Fırın & Butik Tatlıcılar
+  'kuzguncuk-firin-tarihifirin': {
+    description: "1929 yılından beri İcadiye Caddesi'nde hizmet veren, tescilli Kuzguncuk mantarı kurabiyesi, siyez unlu ekmekleri ve unsuz fit lezzetleriyle yaşayan bir efsane.",
+    whatToOrder: ['Kuzguncuk Mantarı Kurabiyesi', 'Prenses Çikolatalı Kurabiye'],
+    menuFrom: ['Siyez Ekmeği', 'Cevizli Tarçınlı Çörek', 'Unsuz Bademli Kurabiye', 'Acıbadem Kurabiyesi'],
+    alsoTry: ['Acıbadem aromalı, üzeri fındıklı ve gevrek dokulu efsanevi Kuzguncuk mantarı'],
+    beforeYouGo: [
+      'Semte gelen herkesin eve paket kurabiye aldığı nostaljik bir duraktır.',
+      'Tarihi fırın tezgahı sabahın erken saatlerinde taptaze dolar.'
+    ]
+  },
+  'kuzguncuk-firin-dilimpastanesi': {
+    description: "Paşalimanı Caddesi sahilinde taze frambuazlı pastaları, çıtır milföyleri, profiterolü ve klasik mahalle pastanesi zarafetiyle onlarca yıllık güvenilir lezzet.",
+    whatToOrder: ['Çilekli Milföy Pasta', 'Çikolatalı Soslu Profiterol'],
+    menuFrom: ['Krokanlı Yaş Pasta', 'Tuzlu Kuru Pasta', 'Peynirli Su Böreği', 'Ekler Çeşitleri'],
+    alsoTry: ['İnce çıtır katlar arasına taze pastacı kremasıyla hazırlanan çilekli milföy'],
+    beforeYouGo: [
+      'Sahil yürüyüşü ve iskele molasında tatlı veya börek almak için uğranır.',
+      'Klasik Türk pastaneciliğinin Boğaz kıyısındaki samimi temsilcisidir.'
+    ]
+  },
+  'kuzguncuk-firin-galette': {
+    description: "İcadiye Caddesi üzerinde butik fırıncılık anlayışıyla hazırlanan tatlı-tuzlu tartları, ev yapımı kekleri ve zarif Fransız esintili unlu mamulleri.",
+    whatToOrder: ['Mevsim Meyveli Galette', 'Limonlu Merengli Tart'],
+    menuFrom: ['Fıstıklı Brownie', 'Karamelli Cheesecake', 'Zeytinli Biberiyeli Focaccia', 'Americano'],
+    alsoTry: ['Kıtır tereyağlı hamur içinde fırınlanmış taze şeftalili ve bademli sıcak galette'],
+    beforeYouGo: [
+      'Küçük ve şık vitriniyle dikkat çeker.',
+      'Kahve eşliğinde taze fırın tatlısı molası vermek için biçilmiş kaftandır.'
+    ]
+  },
+  'kuzguncuk-firin-cikolakahve': {
+    description: "İcadiye Caddesi'nde el yapımı artisan trüfleri, sıcak çikolatası ve nostaljik dükkan atmosferiyle Kuzguncuk sokaklarına mis gibi kakao kokusu yayan durak.",
+    whatToOrder: ['Sıcak Eritme Belçika Çikolatası', 'Narlı Fıstıklı El Yapımı Trüf'],
+    menuFrom: ['Karamelli Tablet Çikolata', 'Portakallı Çikolata', 'Türk Kahvesi', 'Mocha'],
+    alsoTry: ['Yoğun kakao kreması ve taze nar taneleriyle hazırlanan spesiyal artisan çikolata'],
+    beforeYouGo: [
+      'Hediyelik şık çikolata kutuları hazırlatmak için çok popülerdir.',
+      'İçerideki nostaljik ahşap detaylar fotoğraf tutkunlarını çeker.'
+    ]
+  },
+
+  // Nitelikli Kahve & Kitap
+  'kuzguncuk-kahve-nailkitabevi': {
+    description: "İcadiye Caddesi ile simgeleşen iki katlı tarihi ahşap binada, binlerce kitap arasında kahve yudumlanan, sanat ve edebiyat buluşma noktası.",
+    whatToOrder: ['V60 Filtre Kahve', 'Kortado & Havuçlu Tarçınlı Kek'],
+    menuFrom: ['Espresso', 'Latte', 'Bitki Çayları', 'San Sebastian Cheesecake'],
+    alsoTry: ['Cumbalı pencere kenarında kitap okurken yudumlanan taze demlenmiş V60 filtre kahve'],
+    beforeYouGo: [
+      'Üst katındaki cumba köşesi Kuzguncuk\'un en ikonik okuma ve çalışma köşesidir.',
+      'Sessiz ve saygılı bir edebiyat atmosferi hakimdir.'
+    ]
+  },
+  'kuzguncuk-kahve-glow': {
+    description: "Üryanizade Sokak'ta sakin konumu, modern İskandinav tasarımı, özenle kavrulmuş single-origin kahveleri ve ferah dış oturumuyla üçüncü nesil kahve vahası.",
+    whatToOrder: ['Flat White', 'Cold Brew Reserve'],
+    menuFrom: ['V60 Chemex', 'Iced Americano', 'Lotuslu Cheesecake', 'Fıstıklı Cookie'],
+    alsoTry: ['Meyvemsi notalara sahip taze kavrum Etiyopya çekirdeğinden hazırlanan Flat White'],
+    beforeYouGo: [
+      'Ana caddenin kalabalığından uzaklaşıp sakin çalışmak veya sohbet etmek için mükemmeldir.',
+      'Evcil hayvan dostu sıcak bir işletmedir.'
+    ]
+  },
+  'kuzguncuk-kahve-kosinitza': {
+    description: "İcadiye Caddesi'nin girişinde tarihi sokak dokusunu yansıtan masaları, taze çekirdek kahveleri ve samimi Kuzguncuk misafirperverliği.",
+    whatToOrder: ['Damla Sakızlı Türk Kahvesi', 'Karamel Macchiato'],
+    menuFrom: ['Double Espresso', 'Filtre Kahve', 'Mozaik Pasta', 'Brownie'],
+    alsoTry: ['Bakır cezvede köz ateşinde ağır ağır pişirilmiş damla sakızlı aromalı Türk kahvesi'],
+    beforeYouGo: [
+      'Sokağa bakan küçük taburelerinde semt sakinleriyle sohbet etmek olağandır.',
+      'Hızlı ve keyifli bir sokak kahvesi molası için idealdir.'
+    ]
+  },
+  'kuzguncuk-kahve-neruda': {
+    description: "İcadiye Caddesi üzerinde şair ruhlu dekorasyonu, zengin pour-over demleme seçenekleri ve samimi ortamıyla kahve tutkunlarının sığınağı.",
+    whatToOrder: ['Chemex Demleme Kahve', 'Yaban Mersinli Crumble'],
+    menuFrom: ['Latte', 'Aeropress Kahve', 'Vegan Sütlü Cappuccino', 'Tarçınlı Rulo'],
+    alsoTry: ['Taze öğütülmüş Guatemala çekirdeğiyle demlenen pürüzsüz gövdeli Chemex kahve'],
+    beforeYouGo: [
+      'Kültür ve sanat temalı sıcak bir mahalle kafesidir.',
+      'Vegan süt ve hafif tatlı alternatifleri sunulmaktadır.'
+    ]
+  },
+
+  // Boğaz Balıkçıları & Kuzguncuk Lezzetleri
+  'kuzguncuk-lokanta-baymanti': {
+    description: "İcadiye Caddesi'nde çıtır çıtır kızarmış Feraye mantısı, klasik Sinop ve Kayseri mantıları ve ev yapımı soslarıyla İstanbul'un en yüksek puanlı mantıcılarından.",
+    whatToOrder: ['Çıtır Feraye Mantısı', 'Tereyağlı Sinop Mantısı'],
+    menuFrom: ['Kayseri Mantısı', 'Çiğ Börek', 'Günün Çorbası', 'Zeytinyağlı Sarma'],
+    alsoTry: ['Üzeri yoğurt ve özel cevizli tereyağı sosuyla servis edilen çıtır kızarmış Feraye mantısı'],
+    beforeYouGo: [
+      'Mantı porsiyonları doyurucu ve lezzet kalitesi oldukça tutarlıdır.',
+      'Öğle ve akşam yemeklerinde yerel halkın ilk tercihlerindendir.'
+    ]
+  },
+  'kuzguncuk-lokanta-balikcisi': {
+    description: "Meşhur Perihan Abla Sokağı'nda tarihi ahşap konaklar arasında, taze mevsim balıkları, balık çorbası ve çıtır kalamarıyla Kuzguncuk balıkçılık geleneği.",
+    whatToOrder: ['Kuzguncuk Balık Çorbası', 'Izgara Lüfer & Çıtır Hamsi'],
+    menuFrom: ['Tava Mezgit', 'Kalamar Tava', 'Roka Domates Salatası', 'Fırında Sıcak Helva'],
+    alsoTry: ['Közlenmiş domates ve taze balık etiyle hazırlanan zengin taneli sıcak balık çorbası'],
+    beforeYouGo: [
+      'Perihan Abla dizisinin çekildiği tarihi sokağın tam kalbindedir.',
+      'Alkol servisi bulunmayan, samimi ve kaliteli bir aile balık lokantasıdır.'
+    ]
+  },
+  'kuzguncuk-lokanta-metet': {
+    description: "İcadiye Caddesi'nde meşe odunu közünde pişen Balıkesir kıvırcık kuzu ve dana eti döneri, tırnak pidesi ve özel tereyağıyla döner tutkunlarının vazgeçilmezi.",
+    whatToOrder: ['Közde Yaprak Döner Porsiyon', 'Tereyağlı İskender Döner'],
+    menuFrom: ['Döner Dürüm', 'Manda Yoğurdu', 'Günün Çorbası', 'Fırın Sütlaç'],
+    alsoTry: ['Odun ateşinde ağır ağır kızarmış, incecik yaprak kesim sulu közde döner'],
+    beforeYouGo: [
+      'İstanbul\'un en iyi odun ateşi dönercileri arasında gösterilir.',
+      'Öğle saatlerinde döner hızlı tükenebilir, saat 12:00-14:00 arası idealdir.'
+    ]
+  },
+  'kuzguncuk-lokanta-ismetbaba': {
+    description: "1951'den beri Kuzguncuk İskelesi yanında Boğaz'a sıfır konumu, Can Yücel anıları, özel böreği ve taze mezeleriyle Türk meyhane ve balıkçılık tarihinin anıt mekanı.",
+    whatToOrder: ['İsmet Baba Spesiyal Böreği', 'Boğaz Levrek Izgara'],
+    menuFrom: ['Lakerda', 'Közde Patlıcan Salatası', 'Ahtapot Salatası', 'Kalamar Izgara'],
+    alsoTry: ['İçerisinde balık ve patates püresi bulunan mekanın alametifarikası çıtır İsmet Baba böreği'],
+    beforeYouGo: [
+      'Deniz kenarındaki cam kenarı masalar için günler öncesinden rezervasyon şarttır.',
+      'Nostaljik, sade ve tarihi dokusu korunmuş gerçek bir Boğaz meyhanesidir.'
+    ]
   }
 };
 
