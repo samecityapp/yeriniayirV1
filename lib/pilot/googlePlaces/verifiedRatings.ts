@@ -2386,6 +2386,152 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
+
+  // --- TAKSİM (100% TAKSİM & GÜMÜŞSUYU) ---
+  'taksim-kebap-zubeyir': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Zubeyir+Ocakbasi+Bekar+Sk+No+28+Taksim',
+      providers: [],
+    },
+  },
+  'taksim-kebap-durumzade': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Durumzade+Kurabiye+Sk+No+26B+Taksim',
+      providers: [],
+    },
+  },
+  'taksim-kebap-kizilkayalar': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kizilkayalar+Taksim+Siraselviler+Cad+No+2C',
+      providers: [],
+    },
+  },
+  'taksim-kebap-bambi': {
+    platform: 'google-maps',
+    value: 3.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Bambi+Cafe+Taksim+Siraselviler+Cad+No+2J',
+      providers: [],
+    },
+  },
+  'taksim-tatli-hafizmustafa': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Hafiz+Mustafa+1864+Siraselviler+Cad+No+7B+Taksim',
+      providers: [],
+    },
+  },
+  'taksim-tatli-saray': {
+    platform: 'google-maps',
+    value: 4.0,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Saray+Muhallebicisi+Istiklal+Cad+No+107+Taksim',
+      providers: [],
+    },
+  },
+  'taksim-tatli-jadore': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Jadore+Chocolatier+Emir+Nevruz+Sk+No+5F+Taksim',
+      providers: [],
+    },
+  },
+  'taksim-tatli-mado': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Mado+Taksim+Siraselviler+Cad+No+33',
+      providers: [],
+    },
+  },
+  'taksim-bistro-divan': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Lokanta+by+Divan+Asker+Ocagi+Cd+No+1+Elmadag+Taksim',
+      providers: [],
+    },
+  },
+  'taksim-bistro-izaka': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Izaka+Terrace+CVK+Park+Bosphorus+Inonu+Cd+No+8+Gumussuyu',
+      providers: [],
+    },
+  },
+  'taksim-bistro-safran': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Safran+Restaurant+InterContinental+Asker+Ocagi+Cd+No+1+Taksim',
+      providers: [],
+    },
+  },
+  'taksim-bistro-topaz': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Topaz+Restaurant+Inonu+Cd+No+50+Gumussuyu+Taksim',
+      providers: [],
+    },
+  },
+  'taksim-cafe-arakafe': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Ara+Kafe+Tosbaga+Sk+No+2+Galatasaray+Taksim',
+      providers: [],
+    },
+  },
+  'taksim-cafe-limonlubahce': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Limonlu+Bahce+Yeni+Carsi+Cd+No+98+Taksim',
+      providers: [],
+    },
+  },
+  'taksim-cafe-49cukurcuma': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=49+Cukurcuma+Turnacibasi+Cd+No+49+Taksim',
+      providers: [],
+    },
+  },
+  'taksim-cafe-geziistanbul': {
+    platform: 'google-maps',
+    value: 3.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Gezi+Istanbul+Inonu+Cd+No+5+Taksim+Meydani',
+      providers: [],
+    },
+  },
 };
 
 export function getVerifiedGoogleRatings(venueId: string): VisitorGoogleRating[] {

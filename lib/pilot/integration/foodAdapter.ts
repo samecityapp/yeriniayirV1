@@ -314,6 +314,30 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    scopeNote: 'Beyoğlu · Asmalı Mescit & İstiklal (Yayında)'
   },
   {
+   id: 'taksim',
+   level: 'semt',
+   name: 'Taksim',
+   slug: 'taksim',
+   path: ['istanbul', 'beyoglu', 'taksim'],
+   displayName: 'Taksim, Beyoğlu, İstanbul',
+   locative: "Taksim'de",
+   status: 'published',
+   aliases: ['Taksim', 'Taksim Meydanı', 'Gümüşsuyu', 'Elmadağ', 'Talimhane', 'Gezi Parkı', 'İnönü Caddesi'],
+   scopeNote: 'Beyoğlu · Taksim & Gümüşsuyu (Yayında)'
+  },
+  {
+   id: 'taksim-beyoglu',
+   level: 'semt',
+   name: 'Taksim',
+   slug: 'taksim',
+   path: ['istanbul', 'beyoglu', 'taksim'],
+   displayName: 'Taksim, Beyoğlu, İstanbul',
+   locative: "Taksim'de",
+   status: 'published',
+   aliases: ['Taksim', 'Taksim Meydanı', 'Gümüşsuyu', 'Elmadağ', 'Talimhane', 'Gezi Parkı', 'İnönü Caddesi'],
+   scopeNote: 'Beyoğlu · Taksim & Gümüşsuyu (Yayında)'
+  },
+  {
    id: 'nisantasi',
    level: 'semt',
    name: 'Nişantaşı',

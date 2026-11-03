@@ -2647,6 +2647,168 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'İstiklal Caddesi üzerinde gezerken çantada taşımak ve atıştırmak için harika bir klasiktir.',
       'Kilo işi taze kırılıp paketlenir.'
     ]
+  },
+
+  // --- TAKSİM ---
+  'taksim-kebap-zubeyir': {
+    description: "Bekar Sokak'ta katlı tarihi binasında kor kömürlü dev ocakbaşının etrafında, sulu kuzu pirzolası ve zırh kıymasıyla İstanbul'un en saygın et mabetlerinden biri.",
+    whatToOrder: ['Kuzu Pirzola (Taraklık)', 'Zübeyir Zırh Kebabı'],
+    menuFrom: ['Közde Patlıcan', 'Gavurdağı Salatası', 'Çöp Şiş', 'Köz Sarımsak', 'Künefe'],
+    alsoTry: ['Ocakbaşı ustasının elinden çıkan nar gibi kızarmış sulu kuzu kaburga ve köz sarımsak'],
+    beforeYouGo: [
+      'Ocakbaşı tezgahında oturmak için günler öncesinden rezervasyon şarttır.',
+      'Etler kömür ateşinde gözünüzün önünde pişirilir.'
+    ]
+  },
+  'taksim-kebap-durumzade': {
+    description: "Kurabiye Sokak'ta odun ateşinde ısıtılan özel çıtır lavaşları, taze kıyılmış sumaklı maydanozu ve sulu kebaplarıyla Anthony Bourdain'in dünyaya tanıttığı efsanevi sokak dürümcüsü.",
+    whatToOrder: ['Adana Dürüm', 'Kuzu Çöp Şiş Dürüm'],
+    menuFrom: ['Urfa Dürüm', 'Tavuk Şiş Dürüm', 'Ayran', 'Şalgam Suyu', 'Közlenmiş Biber'],
+    alsoTry: ['Özel baharatlı sosla mangalda kızartılan çift lavaşlı çıtır Adana dürüm'],
+    beforeYouGo: [
+      'Küçük ve samimi bir sokak dükkanıdır; gece geç saatlere kadar açıktır.',
+      'Hızlı, doyurucu ve unutulmaz bir Taksim klasiğidir.'
+    ]
+  },
+  'taksim-kebap-kizilkayalar': {
+    description: "Sıraselviler Caddesi girişinde özel domatesli sarımsaklı buhar sosunda yumuşatılan ekmeği ve baharatlı köftesiyle Taksim gecelerinin simgesi haline gelen ıslak hamburgerin mucidi.",
+    whatToOrder: ['Orijinal Islak Hamburger', 'Kaşarlı Islak Hamburger'],
+    menuFrom: ['Döner Sandviç', 'Dilli Kaşarlı Tost', 'Ev Yapımı Limonata', 'Ayran', 'Portakal Suyu'],
+    alsoTry: ['Buhar tezgahından yeni çıkmış sıcacık soslu ıslak hamburger ve yanına soğuk ayran'],
+    beforeYouGo: [
+      'Taksim Meydanı metro çıkışının hemen karşısındadır.',
+      'Günün 24 saati hareketli, ayakta veya taburede hızlı tüketim konseptindedir.'
+    ]
+  },
+  'taksim-kebap-bambi': {
+    description: "Sıraselviler Caddesi üzerinde yıllardır Taksim'in nabzını tutan, dönerli dürümleri, kaşarlı tostları ve taze atom meyve kokteylleriyle bilinen köklü büfe durağı.",
+    whatToOrder: ['Et Döner Dürüm', 'Bambi Atom Meyve Suyu'],
+    menuFrom: ['Kaşarlı Dürüm Döner', 'Tavuk Döner', 'Kavurmalı Kaşarlı Tost', 'Limonata', 'Muzlu Süt'],
+    alsoTry: ['İncecik lavaşa sarılmış sıcak et dönerin ardından taze sıkılmış enerji dolu atom kokteyli'],
+    beforeYouGo: [
+      'Taksim Meydanı\'nda gece acıkanların ilk sığınağıdır.',
+      'Hızlı servis ve paket servis imkanı vardır.'
+    ]
+  },
+  'taksim-tatli-hafizmustafa': {
+    description: "Taksim Meydanı'na bakan görkemli şubesinde 1864'ten beri Antep fıstıklı baklavaları, taze trileçeleri ve sütlü tatlılarıyla dünyanın dört bir yanından gelenlerin gözde tatlı sarayı.",
+    whatToOrder: ['Hafız Mustafa Fıstıklı Baklava', 'Fıstıklı Trileçe'],
+    menuFrom: ['Künefe', 'Kazandibi', 'Fırın Sütlaç', 'Nar Şerbeti', 'Osmanlı Kahvesi'],
+    alsoTry: ['Çıtır çıtır taze tereyağlı fıstık sarma yanına dumanı üstünde geleneksel Türk kahvesi'],
+    beforeYouGo: [
+      'Taksim Meydanı manzaralı üst katında oturup tatlınızı afiyetle yiyebilirsiniz.',
+      'Özel hediyelik kutularda baklava ve lokum paketleme servisi mevcuttur.'
+    ]
+  },
+  'taksim-tatli-saray': {
+    description: "İstiklal Caddesi girişinde 1935 yılında kurulan Saray Muhallebicisi'nin ilk adresi; manda sütüyle pişirilen geleneksel kazandibisi, tavukgöğsü ve su böreğiyle yaşayan bir anıt.",
+    whatToOrder: ['Geleneksel Manda Sütlü Kazandibi', 'Gerçek Tavukgöğsü'],
+    menuFrom: ['Fırın Sütlaç', 'Keşkül', 'Profiterol', 'Kıymalı Su Böreği', 'Demleme Çay'],
+    alsoTry: ['Altı nar gibi kızarmış nefis yanık aromalı manda sütlü kazandibi'],
+    beforeYouGo: [
+      'Kahvaltıda taze çıtır su böreği ve sahanda yumurta da servis edilmektedir.',
+      'İstiklal Caddesi\'nin en nostaljik ve güvenilir lezzet duraklarındandır.'
+    ]
+  },
+  'taksim-tatli-jadore': {
+    description: "Emir Nevruz Sokak'ta dantelli perdeleri, Fransız şansonları ve yoğun sıcak eritilmiş çikolatasıyla dillere destan 'Oh la la Beatrice' tatlısının doğduğu romantik çikolata butiği.",
+    whatToOrder: ['Oh la la Beatrice', 'Sıcak Bitter Çikolata'],
+    menuFrom: ['Çikolatalı Sufle', 'Kestane Püreli Pasta', 'Krep Çeşitleri', 'Filtre Kahve', 'Kırmızı Orman Meyveli Çay'],
+    alsoTry: ['Pankek, taze çilek ve muzun üzerine bolca dökülen sıcak ev yapımı eritme Belçika çikolatası'],
+    beforeYouGo: [
+      'Kompakt ve minik bir kafedir; kapısında tatlı kuyrukları oluşabilir.',
+      'Romantik ve loş bir Avrupa pastanesi ambiyansına sahiptir.'
+    ]
+  },
+  'taksim-tatli-mado': {
+    description: "Sıraselviler Caddesi girişinde hakiki Maraş keçi sütü dondurmasını kesme bloklar halinde sunan, sıcak baklava ve künefeyle buluşturan Taksim'in köklü dondurma köşesi.",
+    whatToOrder: ['Kesme Maraş Dondurması', 'Dondurmalı Sıcak Fıstıklı Baklava'],
+    menuFrom: ['Künefe', 'Su Böreği', 'Profiterol', 'Salepli Sıcak İçecek', 'Filtre Kahve'],
+    alsoTry: ['Bıçakla kesilen yoğun kıvamlı sade Maraş dondurması ve sıcak şerbetli çıtır baklava'],
+    beforeYouGo: [
+      'Kış aylarında gerçek dağ salebiyle hazırlanan sıcak salep çok popülerdir.',
+      'Geniş oturma salonunda ferah bir mola verebilirsiniz.'
+    ]
+  },
+  'taksim-bistro-divan': {
+    description: "Divan İstanbul'un lobi katında Michelin Rehberi tavsiyeli menüsüyle Türk ve Akdeniz mutfağının inceliklerini kusursuz zarafetle sunan Elmadağ'ın gastronomi ikonu.",
+    whatToOrder: ['Ağır Ateşte Pişmiş Dana Kaburga', 'Divan Usulü Deniz Mahsulleri Çorbası'],
+    menuFrom: ['Kuzu Sırtı', 'Trüflü Risotto', 'Ege Otlu Börek', 'Divan Klasiği Rokoko', 'İmza Şarap Kavı'],
+    alsoTry: ['Yemek sonrasında Divan\'ın efsanevi tatlısı el yapımı çikolata soslu dondurmalı Rokoko'],
+    beforeYouGo: [
+      'Michelin tavsiyeli seçkin bir restorandır; rezervasyon yapılması önerilir.',
+      'Zarif iş yemekleri ve özel kutlamalar için ideal bir atmosfer sunar.'
+    ]
+  },
+  'taksim-bistro-izaka': {
+    description: "CVK Park Bosphorus Hotel'in devasa çatı terasında Tarihi Yarımada'dan Boğaz Köprüsü'ne uzanan eşsiz manzarası, Akdeniz ve Uzak Doğu füzyon lezzetleriyle lüks bir gastronomi deneyimi.",
+    whatToOrder: ['Izaka İmza Suşi Tabağı', 'Fırınlanmış Kuzu İncik'],
+    menuFrom: ['Deniz Levreği Izgara', 'Trüflü Carpaccio', 'Tapas Seçkisi', 'İmza Kokteyller', 'San Sebastian'],
+    alsoTry: ['Boğaz panoramasına karşı gün batımında usta şeflerin elinden çıkan taze suşi ve kokteyl eşliği'],
+    beforeYouGo: [
+      'Şehrin en geniş Boğaz manzaralı teraslarından birine sahiptir.',
+      'Akşam saatlerinde DJ performansları eşliğinde seçkin bir gece kulübü havasına bürünür.'
+    ]
+  },
+  'taksim-bistro-safran': {
+    description: "InterContinental Hotel'in çatı katında nefes kesen Boğaz manzarasına karşı canlı klasik Türk müziği eşliğinde Osmanlı saray mutfağının en nadide tariflerini sunan lüks restoran.",
+    whatToOrder: ['Saray Usulü Mutancana', 'Kuzu Karski'],
+    menuFrom: ['Zeytinyağlı Vişneli Yaprak Sarma', 'Kavun İçi Dolma', 'Perdeli Pilav', 'Gül Şerbeti', 'Baklava Tabağı'],
+    alsoTry: ['Kuru meyveler ve bademle zenginleştirilen Osmanlı saray ziyafetlerinin başrolü dana mutancana'],
+    beforeYouGo: [
+      'Pencere kenarı Boğaz manzaralı masalar için önceden rezervasyon yaptırılmalıdır.',
+      'Geleneksel fasıl melodileri eşliğinde otantik ve asil bir akşam yemeği ortamı sunar.'
+    ]
+  },
+  'taksim-bistro-topaz': {
+    description: "Gümüşsuyu'nda Boğaz sularına tepeden bakan cam cephesinde, Akdeniz ve modern Türk mutfağını gurme tabaklarla buluşturan, seçkin şarap kavıyla tanınan bir fine dining klasiği.",
+    whatToOrder: ['Tadım Menüsü (Modern Akdeniz)', 'Izgara Deniz Tarağı'],
+    menuFrom: ['Ahtapot Carpaccio', 'Dana Bonfile Madalyon', 'Trüflü Ev Makarnası', 'Peynir Seçkisi', 'Limonlu Tart'],
+    alsoTry: ['Boğaz Köprüsü ışıkları altında şefin mevsimsel malzemelerle hazırladığı gurme tadım menüsü'],
+    beforeYouGo: [
+      'İnönü Caddesi üzerinde yer alır; vale hizmeti sunulmaktadır.',
+      'Romantik yemekler ve iş yemekleri için semtin en prestijli adreslerindendir.'
+    ]
+  },
+  'taksim-cafe-arakafe': {
+    description: "Tosbağa Sokak'ta usta fotoğrafçı Ara Güler'in siyah-beyaz İstanbul kareleriyle bezeli, sakin avlusu, zengin makarna ve salata menüsüyle İstiklal'in en huzurlu kültür kafesi.",
+    whatToOrder: ['Kremalı Tavuklu Penne', 'Ara Kafe Ev Yapımı Limonata'],
+    menuFrom: ['Günün Kişi', 'Tulum Peynirli Salata', 'Köfte Tabağı', 'Filtre Kahve', 'Havuçlu Tarçınlı Kek'],
+    alsoTry: ['Ara Güler\'in tarihi İstanbul fotoğrafları altında sakin bir öğle yemeği ve taze limonata'],
+    beforeYouGo: [
+      'İstiklal Caddesi\'nin kalabalığından kaçıp nefes almak için ideal bir vahadır.',
+      'Duvarlardaki fotoğraf sergisi adeta mini bir müze niteliğindedir.'
+    ]
+  },
+  'taksim-cafe-limonlubahce': {
+    description: "Yeni Çarşı Caddesi'nde gizli bir geçitten inilen, limon ağaçları ve sarmaşıklarla çevrili yemyeşil saklı bahçesinde gurme atıştırmalıklar ve imza kokteyller sunan cennet köşesi.",
+    whatToOrder: ['Limonlu Bahçe Burger', 'Naneli Ev Yapımı Soğuk Çay'],
+    menuFrom: ['Keçi Peynirli Salata', 'Füme Somonlu Wrap', 'Makarna Çeşitleri', 'Brownie', 'İmza Kokteyller'],
+    alsoTry: ['Yaz sıcağında limon ağaçlarının gölgesinde buz gibi taze nane ve limonlu özel buzlu çay'],
+    beforeYouGo: [
+      'Mekana dar bir merdivenden inilerek girilir; dışarıdan tahmin edilemeyecek kadar geniş bir bahçesi vardır.',
+      'Gündüz sakin bir çalışma ortamı, akşam ise canlı bir bahçe barına dönüşür.'
+    ]
+  },
+  'taksim-cafe-49cukurcuma': {
+    description: "Turnacıbaşı Caddesi'nde tarihi tuğla duvarlı otantik mekanında, taş fırında pişen çıtır gurme pizzaları, yerel peynirleri ve zengin şarap seçkisiyle Çukurcuma'nın simgesi.",
+    whatToOrder: ['Pizza Bresaola & Roka', 'Pizza 49'],
+    menuFrom: ['Pizza Margherita', 'Dört Peynirli Pizza', 'Tulum Peynirli Roka Salatası', 'Tiramisu', 'Ev Şarabı'],
+    alsoTry: ['Taş fırından yeni çıkmış incecik çıtır hamurlu trüf aromalı mantarlı pizza'],
+    beforeYouGo: [
+      'Akşam saatlerinde çok popülerdir; masalar hızla dolabilir.',
+      'Antikacılar sokağında keyifli bir yürüyüş sonrası dinlenmek için birebirdir.'
+    ]
+  },
+  'taksim-cafe-geziistanbul': {
+    description: "Taksim Meydanı'na ve Gezi Parkı'na bakan konumuyla 1987'den bu yana Avusturya ve Fransız pastacılık ekolünü yaşatan, taze pastaları, kahvaltıları ve brasserie lezzetleriyle bir meydan klasiği.",
+    whatToOrder: ['Sacher Torte', 'Viyana Kahvesi'],
+    menuFrom: ['Kruvasan Kahvaltı Tabağı', 'Elmalı Strudel', 'Dana Şnitzel', 'Filtre Kahve', 'Limonata'],
+    alsoTry: ['Hakiki kayısı marmeladı ve yoğun çikolata kaplamalı Viyana klasiği Sacher Torte'],
+    beforeYouGo: [
+      'Geniş meydan manzaralı terasında oturup Taksim\'in ritmini izleyebilirsiniz.',
+      'El yapımı çikolata ve pasta paketleri çok rağbet görür.'
+    ]
   }
 };
 
