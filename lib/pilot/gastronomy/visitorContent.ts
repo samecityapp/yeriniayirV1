@@ -1984,6 +1984,177 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Grup buluşmaları, kutu oyunları ve keyifli sohbetler için geniş masalar mevcuttur.',
       'Doğancılar Parkı civarındadır, cadde üzerinden kolayca ulaşılır.'
     ]
+  },
+
+  // ==========================================
+  // REGION 12: KARAKÖY (Beyoğlu)
+  // ==========================================
+  // Tarihi Lokantalar & Özgün Lezzetler
+  'karakoy-lokanta-karakoylokantasi': {
+    description: "1900'lerin başında inşa edilmiş tarihi Liman Han'da çini karolarla kaplı ikonik salonu, öğlenleri zengin zeytinyağlı esnaf sofrası ve akşamları modern meyhane kimliğiyle Karaköy'ün simge mekanı.",
+    whatToOrder: ['Karaköy Hünkar Beğendi', 'Ahtapot Izgara'],
+    menuFrom: ['Enginar Kalbi', 'Zeytinyağlı Kereviz', 'Topik', 'Fava', 'Levrek Simit', 'Köz Patlıcan'],
+    alsoTry: ['Geleneksel usulde servis edilen manda kaymaklı sıcak irmik helvası'],
+    beforeYouGo: [
+      'Öğle servisinde esnaf lokantası konseptindedir; akşamları meyhaneye dönüşür ve günler öncesinden rezervasyon önerilir.',
+      'Karaköy vapur iskelesine ve Galataport\'a çok kısa yürüme mesafesindedir.'
+    ]
+  },
+  'karakoy-lokanta-mahkeme': {
+    description: "Tarihi Ceneviz Mahkemesi sokağında, restore edilmiş tarihi handa nostaljik avlusu, geleneksel Türk tencere yemekleri ve akşamları fasıllı meyhane sofrasıyla dikkat çeken mekan.",
+    whatToOrder: ['Kuzu Gerdan', 'Mahkeme Mezeleri Tabağı'],
+    menuFrom: ['Zeytinyağlı Enginar', 'Kuru Patlıcan Dolması', 'Yaprak Ciğer', 'Girit Ezmesi', 'Pirinç Pilavı'],
+    alsoTry: ['Odun ateşinde ağır ağır pişen kemikli kuzu tandır'],
+    beforeYouGo: [
+      'Perşembe Pazarı\'nın tarihi sokak dokusunu hissettiren özgün bir atmosfer sunar.',
+      'Akşam saatlerinde canlı Türk sanat müziği ve meze eşliğinde yoğun ilgi görür.'
+    ]
+  },
+  'karakoy-lokanta-corbaevi': {
+    description: "Mumhane Caddesi üzerinde günün her saati kaynayan 20'den fazla geleneksel çorba çeşidi, taze ekmekleri ve samimi ortamıyla İstanbul'un en meşhur çorbacısı.",
+    whatToOrder: ['Karaköy Kelle Paça', 'Beyran Çorbası'],
+    menuFrom: ['Mercimek Çorbası', 'Ezogelin', 'Yayla Çorbası', 'Tavuk Suyu', 'İşkembe', 'Ayran'],
+    alsoTry: ['Bol sarımsak ve sirkeli sos eşliğinde servis edilen sıcak kelle paça'],
+    beforeYouGo: [
+      '7 gün 24 saat kesintisiz hizmet verir; gece eğlencesi sonrası ve sabah erken saatlerde çok popülerdir.',
+      'Küçük ve hareketli bir esnaf dükkanıdır, oturma düzeni sıktır.'
+    ]
+  },
+  'karakoy-lokanta-namli': {
+    description: "Mumhane Caddesi'nde şarküteri reyonundan seçtiğiniz özel peynirler, füme etler, sıcak sahanda sucuklu yumurta ve zeytinyağlılarıyla gurme kahvaltı ve öğle yemeği klasiği.",
+    whatToOrder: ['Gurme Şarküteri Tabağı', 'Hellimli Sahanda Sucuk'],
+    menuFrom: ['Eski Kaşar', 'Pastırma', 'Menemen', 'Zeytinyağlı Dolma', 'Kavurmalı Yumurta', 'Taze Portakal Suyu'],
+    alsoTry: ['Reyondan seçtiğiniz füme et ve peynirlerle hazırlanan sıcak ızgara tost'],
+    beforeYouGo: [
+      'Kahvaltı malzemeleri açık tezgahtan tartılarak seçilir.',
+      'Hafta sonları öğle saatlerine kadar yoğun kuyruklar oluşabilir.'
+    ]
+  },
+
+  // 3. Nesil Nitelikli Kahve & Tasarım Kafeler
+  'karakoy-kahve-coffeesapiens': {
+    description: "Kılıç Ali Paşa Mescidi Sokak'ta mikro kavurma (micro-roastery) yöntemiyle dünyanın farklı çekirdeklerini işleyen, İstanbul 3. nesil kahve akımının öncülerinden butik espresso barı.",
+    whatToOrder: ['Evolution Blend Espresso', 'V60 Kenya Pour-over'],
+    menuFrom: ['Cortado', 'Flat White', 'Cold Brew', 'Filtre Kahve', 'Havuçlu Cevizli Kek'],
+    alsoTry: ['Kendi reçeteleri olan tatlı-asidik dengeli soğuk demleme (cold drip) kahve'],
+    beforeYouGo: [
+      'İç mekan oldukça kompakt ve samimidir; bar taburelerinde taze demlenen kahveleri izlemek keyiflidir.',
+      'Çekirdek kahve satışı ve demleme ekipmanı desteği mevcuttur.'
+    ]
+  },
+  'karakoy-kahve-mums': {
+    description: "Tarihi Fransız Geçidi'nin büyülü pasaj atmosferinde ev yapımı reçelleri, İsveç usulü tarçınlı çöreği (kanelbulle), ferah kahvaltıları ve özenli kahveleriyle huzurlu kafe.",
+    whatToOrder: ['Taze Fırından Kanelbulle', 'Mum\'s Eggs Benedict'],
+    menuFrom: ['Pancake Tabağı', 'Avokadolu Tost', 'Latte', 'Americano', 'Ekşi Mayalı Sandviç'],
+    alsoTry: ['Sıcak servis edilen tereyağlı ve bol tarçınlı İsveç çöreği kanelbulle'],
+    beforeYouGo: [
+      'Fransız Geçidi içindeki dış masalarda oturmak nostaljik pasaj havasını yaşatır.',
+      'Hafta sonu brunch için erken saatlerde gitmek masa bulmayı kolaylaştırır.'
+    ]
+  },
+  'karakoy-kahve-pim': {
+    description: "Yüksek tavanlı ferah tasarımı, rengarenk graffitili sokak köşesi, zengin dünya mutfağı ve lezzetli tatlılarıyla Karaköy'ün en popüler çalışma ve sosyalleşme kafelerinden.",
+    whatToOrder: ['Pim Gurme Burger', 'Orman Meyveli Tart'],
+    menuFrom: ['Falafel Kasesi', 'Tavuklu Sezar Salata', 'Filtre Kahve', 'Iced Latte', 'Cheesecake'],
+    alsoTry: ['Kendi fırınlarında hazırlanan çıtır tart hamurlu taze tatlılar'],
+    beforeYouGo: [
+      'Geniş iç oturma alanı laptop ile çalışanlar ve kalabalık arkadaş buluşmaları için oldukça elverişlidir.',
+      'Kemankeş mahallesinin en canlı sokak kesişimindedir.'
+    ]
+  },
+  'karakoy-kahve-karabatak': {
+    description: "Kara Ali Kaptan Sokak'ta sarmaşıklarla bezeli dış masaları, antika avusturya kahve dükkanı dekorasyonu ve Julius Meinl kahveleriyle Karaköy'ün kahve dönüşümünü başlatan simge mekan.",
+    whatToOrder: ['Viyana Usulü Melange Kahve', 'Karamelli Brownie'],
+    menuFrom: ['Espresso', 'Cappuccino', 'Taze Kruvasan', 'Mozaik Pasta', 'Bitki Çayları'],
+    alsoTry: ['Geleneksel porselen fincanda ve yanında minik su bardağıyla sunulan Melange kahve'],
+    beforeYouGo: [
+      'Sarmaşıklar altındaki sokak masalarında vakit geçirmek semtin en karakteristik deneyimlerindendir.',
+      'Nostaljik havasıyla fotoğraf meraklılarının sıkça uğradığı bir noktadır.'
+    ]
+  },
+
+  // Tarihi Baklavacılar & Artizan Çikolata
+  'karakoy-tatli-gulluoglu': {
+    description: "1843'ten bu yana Gaziantep usulü baklavacılık sanatını yaşatan Nadir Güllü'nün yönetiminde, 40 kat incecik yufkası ve saf sade yağıyla hazırlanan çıtır baklavalarıyla dünya çapında efsanevi tatlıcı.",
+    whatToOrder: ['Fıstıklı Nadir Dolama', 'Kare Baklava'],
+    menuFrom: ['Cevizli Baklava', 'Fıstıklı Şöbiyet', 'Bülbül Yuvası', 'Kaymaklı Baklava', 'Su Böreği', 'Demleme Çay'],
+    alsoTry: ['Çıtır çıtır ses çıkaran, taze fırından yeni çıkmış ılık fıstıklı kare baklava'],
+    beforeYouGo: [
+      'Tepsi siparişleri ve hediyelik vakumlu paketler için geniş reyon bulunur.',
+      'Kemankeş Caddesi üzerindeki yeni büyük binasında oturma ve çay alanı mevcuttur.'
+    ]
+  },
+  'karakoy-tatli-hane': {
+    description: "Kılıç Ali Paşa Mescidi Sokak'ta eritilmiş Belçika çikolatasıyla hazırlanan sıcak porsiyon tatlıları, taze meyveli waffle kaseleri ve artizan çikolata çeşitleriyle tatlı severlerin gözdesi.",
+    whatToOrder: ['Hane Spesiyal Çikolata Kasesi', 'Sıcak Çikolatalı Fondü'],
+    menuFrom: ['Çilekli Muzlu Waffle', 'Profiterol', 'Sıcak Belçika Çikolatası', 'Americano', 'Türk Kahvesi'],
+    alsoTry: ['Taze muz, çilek ve çıtır krep parçaları üzerine dökülen sıcak sütlü çikolata kasesi'],
+    beforeYouGo: [
+      'Öğleden sonra ve akşam saatlerinde kapıda kısa sıralar oluşabilir.',
+      'Çikolata oranı yoğun olduğu için kahve veya su ile dengelemek tavsiye edilir.'
+    ]
+  },
+  'karakoy-tatli-koskeroglu': {
+    description: "Kemeraltı Caddesi'nde Tophane sınırında Antep fıstıklı geleneksel şerbetli tatlıları, çıtır fıstık sarması ve sıcak katmeriyle yarım asrı aşkın süredir lezzet sunan köklü baklavacı.",
+    whatToOrder: ['Antep Fıstıklı Katmer', 'Fıstıklı Havuç Dilim'],
+    menuFrom: ['Fıstıklı Dürüm Baklava', 'Kuru Baklava', 'Cevizli Sarma', 'Dondurma', 'Türk Çayı'],
+    alsoTry: ['Hakiki kaymakla taş tabanlı fırında sıcacık pişirilip fıstıkla kaplanan Antep katmeri'],
+    beforeYouGo: [
+      'Tophane tramvay durağına çok yakındır, paket servis hizmeti hızlıdır.',
+      'Katmer sipariş üzerine taze açılıp sıcak servis edilir.'
+    ]
+  },
+  'karakoy-tatli-hafizmustafa': {
+    description: "Galataport kordonunda Boğaz ve Tarihi Yarımada siluetine karşı, saray tipi lokumları, narlı fıstıklı sütlü tatlıları ve şerbetleriyle İstanbul'un 160 yıllık lezzet mirasçısı.",
+    whatToOrder: ['Fıstıklı Saray Baklavası', 'Manda Kaymaklı İncir Tatlısı'],
+    menuFrom: ['Sütlü Nuriye', 'Trileçe', 'Lokum Çeşitleri', 'Geleneksel Osmanlı Şerbeti', 'Türk Kahvesi'],
+    alsoTry: ['Özel tasarım kutularda sunulan fıstıklı ve narlı çifte kavrulmuş lokumlar'],
+    beforeYouGo: [
+      'Galataport deniz kıyısında yürüyüş yaparken tatlı ve kahve molası vermek için idealdir.',
+      'Havaalanı ve yurt dışına hediyelik paketleme seçenekleri sunulur.'
+    ]
+  },
+
+  // Şef Restoranları, Modern Meyhane & Akşam
+  'karakoy-bistro-neolokal': {
+    description: "Tarihi Salt Galata binasında Şef Maksut Aşkar liderliğinde, Anadolu'nun unutulmaya yüz tutmuş geleneksel lezzetlerini çağdaş tekniklerle yorumlayan Michelin yıldızlı gastronomi durağı.",
+    whatToOrder: ['Neolokal Tadım Menüsü', 'Ördek Katmer'],
+    menuFrom: ['Siyez Bulgurlu Meze', 'Ahtapot & Tarhana', 'Kerevizli Humus', 'Geleneksel Kuzu Tandır', 'Özel Eşleşmeli İçecekler'],
+    alsoTry: ['Tarihi Yarımada ışıklarına bakan cam kenarında sunulan Anadolu mirası tadım menüsü'],
+    beforeYouGo: [
+      'Michelin yıldızlı bir fine-dining restoranıdır; haftalar öncesinden rezervasyon gereklidir.',
+      'Salt Galata\'nın anıtsal mimarisi ve kütüphanesi içinde yer alır.'
+    ]
+  },
+  'karakoy-bistro-murver': {
+    description: "Novotel Karaköy'ün terasında, açık odun ateşinde pişirme felsefesiyle yerel deniz ürünleri ve tütsülenmiş etleri Boğaz manzarasıyla birleştiren Michelin tavsiyeli restoran.",
+    whatToOrder: ['Közde Ahtapot', 'Odun Ateşinde Kuzu Kol'],
+    menuFrom: ['Tütsülenmiş Dana Kaburga', 'Kaya Levrek', 'Yanık Soğanlı Meze', 'Fırın Pancar', 'İmza Kokteyller'],
+    alsoTry: ['Açık ızgarada doğrudan odun alevinde pişirilen çıtır karamelize köz ahtapot'],
+    beforeYouGo: [
+      'Tarihi Yarımada ve Haliç panoramasına sahip teras için rezervasyon şarttır.',
+      'Açık mutfak düzeni sayesinde canlı pişirme tekniklerini izleyebilirsiniz.'
+    ]
+  },
+  'karakoy-bistro-mukellef': {
+    description: "The Haze Hotel terasında Şef Arda Türkmen imzasıyla modern mezeleri, sıcak ot kavurmaları ve Galata Kulesi manzaralı terasıyla Karaköy'ün en canlı akşam meyhanelerinden.",
+    whatToOrder: ['Vişneli Yaprak Sarma', 'Mükellef Sıcak Meze Tepsisi'],
+    menuFrom: ['Topik', 'Girit Ezme', 'Pastırmalı Humus', 'Çıtır Kalamar', 'Günün Izgara Balığı', 'Kavun & Peynir'],
+    alsoTry: ['Zeytinyağında sotelenmiş taze Ege otları ve fıstıklı sıcak mezeler'],
+    beforeYouGo: [
+      'Akşam saatlerinde DJ müzikleri ve hareketli meyhane ortamı öne çıkar.',
+      'Teras katında gün batımı manzaralı masalar için erken rezervasyon tavsiye edilir.'
+    ]
+  },
+  'karakoy-bistro-balikci': {
+    description: "Tarihi Grifin Han'ın terasında 100 yılı aşkın süredir Haliç ve Tarihi Yarımada manzarasına karşı, kağıtta levrek ve taze mevsim balıkları sunan tarihi balık lokantası.",
+    whatToOrder: ['Kağıtta Levrek', 'Balık Çorbası'],
+    menuFrom: ['Tuzda Balık', 'Tereyağlı Karides', 'Kalamar Tava', 'Roka Salatası', 'Fırında Helva'],
+    alsoTry: ['Özel baharat ve sebzelerle fırın kağıdında buğulama pişen sulu levrek fleto'],
+    beforeYouGo: [
+      'Tersane Caddesi üzerinde tarihi bir hanın üst katındadır; nostaljik atmosferi benzersizdir.',
+      'Alkol servisi bulunmayan klasik bir tarihi balık sofrası deneyimi sunar.'
+    ]
   }
 };
 

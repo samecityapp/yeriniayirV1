@@ -1784,6 +1784,161 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
+
+  // ==========================================
+  // REGION 12: KARAKÖY (Beyoğlu)
+  // ==========================================
+  // Tarihi Lokantalar & Özgün Lezzetler
+  'karakoy-lokanta-karakoylokantasi': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Karak%C3%B6y+Lokantas%C4%B1+Kemanke%C5%9F+Cd+No+57+Karak%C3%B6y',
+      providers: [],
+    },
+  },
+  'karakoy-lokanta-mahkeme': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Mahkeme+Lokantas%C4%B1+Galata+Mahkemesi+Sk+No+2-A+Karak%C3%B6y',
+      providers: [],
+    },
+  },
+  'karakoy-lokanta-corbaevi': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Karak%C3%B6y+%C3%87orba+Evi+Mumhane+Cd+No+35+Karak%C3%B6y',
+      providers: [],
+    },
+  },
+  'karakoy-lokanta-namli': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Naml%C4%B1+Gurme+Mumhane+Cd+No+6-A+Karak%C3%B6y',
+      providers: [],
+    },
+  },
+
+  // 3. Nesil Nitelikli Kahve & Tasarım Kafeler
+  'karakoy-kahve-coffeesapiens': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Coffee+Sapiens+K%C4%B1l%C4%B1%C3%A7+Ali+Pa%C5%9Fa+Mescidi+Sk+No+10-C+Karak%C3%B6y',
+      providers: [],
+    },
+  },
+  'karakoy-kahve-mums': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Mums+Cafe+Frans%C4%B1z+Ge%C3%A7idi+Sk+No+1-16+Karak%C3%B6y',
+      providers: [],
+    },
+  },
+  'karakoy-kahve-pim': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Pim+Karak%C3%B6y+K%C4%B1l%C4%B1%C3%A7+Ali+Pa%C5%9Fa+Mescidi+Sk+No+20+Karak%C3%B6y',
+      providers: [],
+    },
+  },
+  'karakoy-kahve-karabatak': {
+    platform: 'google-maps',
+    value: 3.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Karabatak+Karak%C3%B6y+Kara+Ali+Kaptan+Sk+No+7+Karak%C3%B6y',
+      providers: [],
+    },
+  },
+
+  // Tarihi Baklavacılar & Artizan Çikolata
+  'karakoy-tatli-gulluoglu': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Karak%C3%B6y+G%C3%BCll%C3%BCo%C4%9Flu+Kemanke%C5%9F+Cd+No+67+Karak%C3%B6y',
+      providers: [],
+    },
+  },
+  'karakoy-tatli-hane': {
+    platform: 'google-maps',
+    value: 4.8,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Hane+%C3%87ikolata+Kahve+K%C4%B1l%C4%B1%C3%A7+Ali+Pa%C5%9Fa+Mescidi+Sk+No+6-A+Karak%C3%B6y',
+      providers: [],
+    },
+  },
+  'karakoy-tatli-koskeroglu': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=K%C3%B6%C5%9Fkero%C4%9Flu+Baklava+Kemeralt%C4%B1+Cd+No+46-A+Karak%C3%B6y',
+      providers: [],
+    },
+  },
+  'karakoy-tatli-hafizmustafa': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Haf%C4%B1z+Mustafa+1864+Galataport+Meclis-i+Mebusan+Cd+No+8+Karak%C3%B6y',
+      providers: [],
+    },
+  },
+
+  // Şef Restoranları, Modern Meyhane & Akşam
+  'karakoy-bistro-neolokal': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Neolokal+Bankalar+Cd+No+11+SALT+Galata+Karak%C3%B6y',
+      providers: [],
+    },
+  },
+  'karakoy-bistro-murver': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=M%C3%BCrver+Restaurant+Kemanke%C5%9F+Cd+No+57-59+Karak%C3%B6y',
+      providers: [],
+    },
+  },
+  'karakoy-bistro-mukellef': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=M%C3%BCkellef+Karak%C3%B6y+Maliye+Cd+No+8-A+Karak%C3%B6y',
+      providers: [],
+    },
+  },
+  'karakoy-bistro-balikci': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Tarihi+Karak%C3%B6y+Bal%C4%B1k+%C3%87ar%C5%9F%C4%B1s%C4%B1+Tersane+Cd+Karde%C5%9Fim+Sk+No+45+Grifin+Han+Karak%C3%B6y',
+      providers: [],
+    },
+  },
 };
 
 export function getVerifiedGoogleRatings(venueId: string): VisitorGoogleRating[] {

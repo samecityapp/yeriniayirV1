@@ -218,6 +218,30 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    scopeNote: 'Üsküdar · Merkez & Sahil (Yayında)'
   },
   {
+   id: 'karakoy',
+   level: 'semt',
+   name: 'Karaköy',
+   slug: 'karakoy',
+   path: ['istanbul', 'beyoglu', 'karakoy'],
+   displayName: 'Karaköy, Beyoğlu, İstanbul',
+   locative: "Karaköy'de",
+   status: 'published',
+   aliases: ['Karaköy', 'Karakoy', 'Kemankeş', 'Kemankes', 'Mumhane', 'Galataport', 'Fransız Geçidi', 'Bankalar Caddesi', 'Perşembe Pazarı'],
+   scopeNote: 'Beyoğlu · Karaköy (Yayında)'
+  },
+  {
+   id: 'karakoy-beyoglu',
+   level: 'semt',
+   name: 'Karaköy',
+   slug: 'karakoy',
+   path: ['istanbul', 'beyoglu', 'karakoy'],
+   displayName: 'Karaköy, Beyoğlu, İstanbul',
+   locative: "Karaköy'de",
+   status: 'published',
+   aliases: ['Karaköy', 'Karakoy', 'Kemankeş', 'Kemankes', 'Mumhane', 'Galataport', 'Fransız Geçidi', 'Bankalar Caddesi', 'Perşembe Pazarı'],
+   scopeNote: 'Beyoğlu · Karaköy (Yayında)'
+  },
+  {
    id: 'nisantasi',
    level: 'semt',
    name: 'Nişantaşı',
