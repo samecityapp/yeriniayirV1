@@ -1629,6 +1629,161 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
+
+  // ==========================================
+  // REGION 11: ÜSKÜDAR MERKEZ
+  // ==========================================
+  // Tarihi Esnaf Lokantaları & Meşhur Köfteciler
+  'uskudar-lokanta-kanaat': {
+    platform: 'google-maps',
+    value: 3.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kanaat+Lokantas%C4%B1+Selman%C4%B1+Pak+Cd+No+9+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'uskudar-lokanta-filizler': {
+    platform: 'google-maps',
+    value: 4.0,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Filizler+K%C3%B6ftecisi+Harem+Sahil+Yolu+Cd+No+61+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'uskudar-lokanta-kofteci': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=%C3%9Csk%C3%BCdar+K%C3%B6ftecisi+Uncular+Cd+No+29-A+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'uskudar-lokanta-deryadeniz': {
+    platform: 'google-maps',
+    value: 3.9,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Derya+Deniz+Bal%C4%B1k+Lokantas%C4%B1+Atlas+Sk+No+8+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+
+  // Kız Kulesi & Boğaz Manzaralı Kahvaltı
+  'uskudar-kahvalti-katibim': {
+    platform: 'google-maps',
+    value: 4.0,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Katibim+Restaurant+Harem+Sahil+Yolu+Cd+No+53+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'uskudar-kahvalti-payedar': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Payedar+Kahve+Kur%C5%9Funlu+Medrese+Sk+No+2+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'uskudar-kahvalti-cappadocia': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Cappadocia+Coffee+Bakery+Uncular+Cd+No+14+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'uskudar-kahvalti-nuuva': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Nuuva+Coffee+Bakery+Uncular+Cd+No+22+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+
+  // Tarihi Tatlıcılar, Helva & Dondurma
+  'uskudar-tatli-hafizmustafa': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Haf%C4%B1z+Mustafa+1864+Atlas+%C3%87%C4%B1kmaz%C4%B1+No+42-46+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'uskudar-tatli-helvaciali': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Tarihi+Helvac%C4%B1+Ali+Selman%C4%B1+Pak+Cd+No+17-A+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'uskudar-tatli-haciserif': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Hac%C4%B1+%C5%9Eerif+Molla+E%C5%9Fref+Sk+No+7+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'uskudar-tatli-boluluhasanusta': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Bolulu+Hasan+Usta+Selman-%C4%B1+Pak+Cd+No+4-1+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+
+  // Kültür & Sanat Kafeleri / Nitelikli Kahve
+  'uskudar-kahve-nevmecan': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Nevmekan+Sahil+%C5%9Eemsi+Pa%C5%9Fa+Cd+No+2+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'uskudar-kahve-heeps': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Heeps+Coffee+%C4%B0mam+Nas%C4%B1r+Sk+No+8+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'uskudar-kahve-kadim': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kadim+Kahve+Hakimiyeti+Milliye+Cd+No+44+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
+  'uskudar-kahve-arvav': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Arvav+Mekan+Do%C4%9Fanc%C4%B1lar+Cd+No+48+%C3%9Csk%C3%BCdar',
+      providers: [],
+    },
+  },
 };
 
 export function getVerifiedGoogleRatings(venueId: string): VisitorGoogleRating[] {

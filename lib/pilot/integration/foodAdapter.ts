@@ -194,6 +194,30 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    scopeNote: 'Üsküdar · Çengelköy (Yayında)'
   },
   {
+   id: 'uskudar',
+   level: 'semt',
+   name: 'Üsküdar Merkez',
+   slug: 'uskudar',
+   path: ['istanbul', 'uskudar'],
+   displayName: 'Üsküdar Merkez, İstanbul',
+   locative: "Üsküdar'da",
+   status: 'published',
+   aliases: ['Üsküdar', 'Uskudar', 'Üsküdar Merkez', 'Salacak', 'Mimar Sinan', 'Mihrimah Sultan', 'Kız Kulesi', 'Selman-ı Pak', 'Uncular'],
+   scopeNote: 'Üsküdar · Merkez & Sahil (Yayında)'
+  },
+  {
+   id: 'uskudar-merkez',
+   level: 'semt',
+   name: 'Üsküdar Merkez',
+   slug: 'uskudar',
+   path: ['istanbul', 'uskudar'],
+   displayName: 'Üsküdar Merkez, İstanbul',
+   locative: "Üsküdar'da",
+   status: 'published',
+   aliases: ['Üsküdar', 'Uskudar', 'Üsküdar Merkez', 'Salacak', 'Mimar Sinan', 'Mihrimah Sultan', 'Kız Kulesi', 'Selman-ı Pak', 'Uncular'],
+   scopeNote: 'Üsküdar · Merkez & Sahil (Yayında)'
+  },
+  {
    id: 'nisantasi',
    level: 'semt',
    name: 'Nişantaşı',

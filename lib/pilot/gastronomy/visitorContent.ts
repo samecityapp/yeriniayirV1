@@ -1813,6 +1813,177 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Gereksiz abartıdan uzak, kaliteli ve taze balık yemek isteyenler için idealdir.',
       'Fiyat-performans dengesi oldukça başarılıdır.'
     ]
+  },
+
+  // ==========================================
+  // REGION 11: ÜSKÜDAR MERKEZ
+  // ==========================================
+  // Tarihi Esnaf Lokantaları & Meşhur Köfteciler
+  'uskudar-lokanta-kanaat': {
+    description: "1933'ten bu yana Selman-ı Pak Caddesi'nde hizmet veren, vitrinindeki onlarca çeşit zeytinyağlı, tencere yemeği ve geleneksel tatlılarıyla İstanbul'un en köklü esnaf lokantalarından biri.",
+    whatToOrder: ['Kuzu Elbasan Tava', 'Zeytinyağlı Enginar'],
+    menuFrom: ['Hünkar Beğendi', 'İçli Köfte', 'Zeytinyağlı Yaprak Sarma', 'Özbek Pilavı', 'Aşure', 'Kazandibi'],
+    alsoTry: ['Manda sütünden yapılan meşhur kaymaklı ekmek kadayıfı'],
+    beforeYouGo: [
+      'Yemekler açık büfe tezgahından görerek seçilir ve masaya servis edilir.',
+      'Öğle saatlerinde yoğunluk yüksektir; erken gitmek tüm çeşitleri bulmak adına avantaj sağlar.'
+    ]
+  },
+  'uskudar-lokanta-filizler': {
+    description: "Salacak sahil yolunda, doğrudan Kız Kulesi ve Tarihi Yarımada siluetine bakan geniş salonu ve terasıyla klasik ızgara köfte ve Boğaz manzarası sunan simge restoran.",
+    whatToOrder: ['Filizler Özel Izgara Köfte', 'Piyaz'],
+    menuFrom: ['Kaşarlı Köfte', 'Kuzu Şiş', 'Günün Çorbası', 'Gavurdağı Salatası', 'Fırın Sütlaç'],
+    alsoTry: ['Izgara köftenin yanında servis edilen acı sos ve taze köy ekmeği'],
+    beforeYouGo: [
+      'Özellikle gün batımı ve akşam saatlerinde Kız Kulesi manzaralı masalar hızla dolar.',
+      'Geniş aile grupları ve iş yemekleri için uygundur; otopark/vale hizmeti bulunur.'
+    ]
+  },
+  'uskudar-lokanta-kofteci': {
+    description: "Uncular Caddesi üzerinde samimi dükkanında, katkısız dana etiyle hazırlanan sulu ızgara köfteleri ve tereyağlı pilavıyla Üsküdarlıların vazgeçilmez yerel köftecisi.",
+    whatToOrder: ['Porsiyon Izgara Köfte', 'Zeytinyağlı Piyaz'],
+    menuFrom: ['Kaşarlı Köfte', 'Mercimek Çorbası', 'Tereyağlı Pirinç Pilavı', 'Kemalpaşa Tatlısı', 'Yayık Ayranı'],
+    alsoTry: ['Izgara biber ve domatesle servis edilen hafif baharatlı köfte tabağı'],
+    beforeYouGo: [
+      'Geleneksel ve samimi bir mahalle esnaf köftecisidir; servis hızlıdır.',
+      'Öğle saatlerinde dükkan içinde kısa süreli sıra oluşabilir.'
+    ]
+  },
+  'uskudar-lokanta-deryadeniz': {
+    description: "Üsküdar Tarihi Balıkçılar Çarşısı girişinde, günlük taze deniz ürünleri, çıtır hamsi tavası ve balık çorbasıyla tanınan köklü halk balık lokantası.",
+    whatToOrder: ['Mevsimsel Çıtır Hamsi Tava', 'Balık Çorbası'],
+    menuFrom: ['İstavrit Tava', 'Izgara Levrek', 'Mezgit Tava', 'Roka Salatası', 'Helva'],
+    alsoTry: ['Mevsimine göre sunulan palamut veya lüfer ızgara'],
+    beforeYouGo: [
+      'Balıkçılar Çarşısı atmosferinde hızlı, lezzetli ve uygun fiyatlı balık deneyimi sunar.',
+      'Alkol servisi bulunmayan geleneksel bir balık esnaf lokantasıdır.'
+    ]
+  },
+
+  // Kız Kulesi & Boğaz Manzaralı Kahvaltı
+  'uskudar-kahvalti-katibim': {
+    description: "Salacak kıyısında, Kız Kulesi'nin tam karşısında yer alan geniş bahçesi ve Boğaz manzaralı terasında zengin serpme kahvaltı ve Türk mutfağı sunan tarihi mekan.",
+    whatToOrder: ['Katibim Serpme Kahvaltı', 'Sahanda Sucuklu Yumurta'],
+    menuFrom: ['Menemen', 'Gözleme Çeşitleri', 'Peynir Tabağı', 'Demlik Çay', 'Mıhlama'],
+    alsoTry: ['Boğaz esintisi eşliğinde simit ve tulum peynirli kahvaltı tabağı'],
+    beforeYouGo: [
+      'Hafta sonu sabahları doğrudan sahil tarafındaki manzaralı masalar erken dolar.',
+      'Geniş açık ve kapalı alanlara sahiptir, toplu buluşmalar için elverişlidir.'
+    ]
+  },
+  'uskudar-kahvalti-payedar': {
+    description: "Sultantepe Kurşunlu Medrese Sokak'ta, tarihi Osmanlı ahşap konağı atmosferinde huzurlu iç avlusu, serpme kahvaltısı ve geleneksel Türk kahveleriyle öne çıkan mekan.",
+    whatToOrder: ['Payedar Avlu Kahvaltısı', 'Fırında Eritme Peynirli Ekmek'],
+    menuFrom: ['Menemen', 'Kavurmalı Yumurta', 'Sıcak Pişi Tabağı', 'Filtre Kahve', 'Kumda Türk Kahvesi'],
+    alsoTry: ['Geleneksel fincanlarda sunulan damla sakızlı Türk kahvesi'],
+    beforeYouGo: [
+      'Sakin ve tarihi sokak dokusu içerisinde dinlendirici bir kahvaltı ve kahve ortamı sunar.',
+      'Tarihi avlu masaları hafta sonları yoğun ilgi görür.'
+    ]
+  },
+  'uskudar-kahvalti-cappadocia': {
+    description: "Uncular Caddesi'nde modern kafe tasarımı, taze fırın ürünleri, kruvasan sandviçleri ve özenli kahvaltı tabaklarıyla gençlerin ve mahalle sakinlerinin uğrak noktası.",
+    whatToOrder: ['Füme Etli Kruvasan Sandviç', 'Karamelli Latte'],
+    menuFrom: ['Avokadolu Poşe Yumurta', 'Ekşi Mayalı Tost', 'Granola Kasesi', 'Americano', 'San Sebastian Cheesecake'],
+    alsoTry: ['Günlük fırından çıkan tereyağlı sade ve bademli kruvasanlar'],
+    beforeYouGo: [
+      'Kahvaltı ve çalışma için konforlu oturma düzeni ve priz imkanı bulunur.',
+      'Marmaray ve vapur iskelesine birkaç dakikalık yürüme mesafesindedir.'
+    ]
+  },
+  'uskudar-kahvalti-nuuva': {
+    description: "Uncular Caddesi üzerinde şık ve ferah iç mekanı, artizan ekşi maya ekmekleri, gurme kahvaltı kaseleri ve nitelikli kahveleriyle dikkat çeken üçüncü nesil fırın-kafe.",
+    whatToOrder: ['Nuuva Ekşi Mayalı Kahvaltı Tabağı', 'Flat White'],
+    menuFrom: ['Çırpılmış Yumurtalı Brioche', 'Füme Hindili Sandviç', 'Orman Meyveli Bowl', 'Filtre Kahve', 'Limonlu Tart'],
+    alsoTry: ['Kendi fırınlarında taş tabanlı fırında pişen taze ekşi mayalı köy ekmeği'],
+    beforeYouGo: [
+      'Hafif ve dengeli kahvaltı alternatifleri arayanlar için idealdir.',
+      'Kahve çekirdekleri haftalık taze kavrumlardan seçilir.'
+    ]
+  },
+
+  // Tarihi Tatlıcılar, Helva & Dondurma
+  'uskudar-tatli-hafizmustafa': {
+    description: "1864'ten beri geleneksel Türk tatlıcılığını yaşatan, vitrinindeki rengarenk lokumları, tepsiler dolusu tereyağlı baklavaları ve sütlü tatlılarıyla dünya çapında tanınan tarihi tatlıcı.",
+    whatToOrder: ['Fıstıklı Havuç Dilim Baklava', 'Trileçe'],
+    menuFrom: ['Fıstıklı Sarma Baklava', 'Kazandibi', 'Tavukgöğsü', 'Güllü Lokum', 'Geleneksel Türk Kahvesi'],
+    alsoTry: ['Hakiki manda kaymağı eşliğinde sunulan ılık fıstıklı baklava'],
+    beforeYouGo: [
+      'Üsküdar meydan ve vapur iskelesine çok yakındır; hediyelik lokum ve paketleme servisi çok gelişmiştir.',
+      'Turistik ve yerel yoğunluk sebebiyle günün her saati hareketlidir.'
+    ]
+  },
+  'uskudar-tatli-helvaciali': {
+    description: "1900 yılından günümüze gelen İnegöl geleneğiyle, sıcak irmik helvası üzerine maraş dondurması ve bol antep fıstığıyla sunulan porsiyon helva konseptinin öncüsü.",
+    whatToOrder: ['Dondurmalı İrmik Helvası', 'Cevizli İrmik Helvası'],
+    menuFrom: ['Fıstıklı İrmik Helvası', 'Tahinli Sıcak Helva', 'Kestane Şekeri', 'Osmanlı Şerbeti', 'Çay'],
+    alsoTry: ['Sıcak helva ile soğuk maraş dondurmasının yarattığı zıt lezzet dengesi'],
+    beforeYouGo: [
+      'Tatlılar tek kişilik kaselerde pratik ve hızlı şekilde servis edilir.',
+      'Ayaküstü veya kısa molalar için Selman-ı Pak Caddesi üzerindedir.'
+    ]
+  },
+  'uskudar-tatli-haciserif': {
+    description: "Denizli Babadağ kökenli asırlık şekerleme ve helva ustası Hacı Şerif'in, dondurmalı sıcak helvası, çikolatalı lokumları ve meyve tatlılarıyla bilinen Üsküdar şubesi.",
+    whatToOrder: ['Dondurmalı Sıcak İrmik Helvası', 'Çikolata Kaplı Lokum'],
+    menuFrom: ['Cevizli İncir Tatlısı', 'Tahin Helvası', 'Krokan Çeşitleri', 'Türk Kahvesi'],
+    alsoTry: ['Geleneksel yöntemle dövülmüş taze tahin helvası'],
+    beforeYouGo: [
+      'Tadım ikramları eşliğinde kutulu paket veya kasede sıcak servis tercih edilebilir.',
+      'Çarşı içinde alışveriş molası için ideal bir uğrak noktasıdır.'
+    ]
+  },
+  'uskudar-tatli-boluluhasanusta': {
+    description: "Geleneksel sütlü tatlı tariflerini modern hijyenle buluşturan, fırın sütlacı, kazandibisi ve tavukgöğsüyle Türkiye çapında güven kazanan tatlı durağının Üsküdar merkezi.",
+    whatToOrder: ['Fırın Sütlaç', 'Geleneksel Kazandibi'],
+    menuFrom: ['Tavukgöğsü', 'Profiterol', 'Keşkül', 'Maraş Usulü Dondurma', 'Demleme Çay'],
+    alsoTry: ['Üzeri nar gibi kızarmış, kıvamı yerinde soğuk fırın sütlaç'],
+    beforeYouGo: [
+      'Hafif sütlü tatlı sevenler için hızlı ve istikrarlı bir lezzet seçeneğidir.',
+      'Selman-ı Pak Caddesi üzerinde rahat oturma alanına sahiptir.'
+    ]
+  },
+
+  // Kültür & Sanat Kafeleri / Nitelikli Kahve
+  'uskudar-kahve-nevmecan': {
+    description: "Şemsipaşa sahilinde tarihi un fabrikasının dönüştürülmesiyle kurulan; kubbeli devasa kütüphanesi, sanat galerisi, bahçesi ve Boğaz manzarasıyla İstanbul'un en özel kültür mekanlarından.",
+    whatToOrder: ['Nevmekan Özel Filtre Kahve', 'Havuçlu Tarçınlı Kek'],
+    menuFrom: ['Latte', 'Türk Kahvesi', 'Cheesecake Çeşitleri', 'Simit & Kaşar', 'Bitki Çayları'],
+    alsoTry: ['Kütüphanenin sessiz çalışma kubbesinde kitap okurken yudumlanan sıcak çay'],
+    beforeYouGo: [
+      'Girişte ve kütüphane salonunda sessizlik kuralına özen gösterilir.',
+      'Öğrenciler ve araştırmacılar için popülerdir; hafta içi gündüz saatleri daha sakindir.'
+    ]
+  },
+  'uskudar-kahve-heeps': {
+    description: "Mimar Sinan Mahallesi'nde yer alan, minimal iskandinav iç mekanı, tek kökenli (single-origin) çekirdekleri ve titiz espresso demlemeleriyle Üsküdar'ın öne çıkan nitelikli kahvecisi.",
+    whatToOrder: ['V60 Ethiopia Pour-over', 'Cortado'],
+    menuFrom: ['Flat White', 'Cold Brew', 'Muzlu Ekmek (Banana Bread)', 'Limonlu Cookie', 'Matcha Latte'],
+    alsoTry: ['Baristanın o gün önerdiği natürel işlenmiş Afrika çekirdeğinden V60 demleme'],
+    beforeYouGo: [
+      'Marmaray istasyonuna 2 dakika yürüme mesafesinde sakin bir ara sokaktadır.',
+      'Laptop ile çalışma ve kaliteli kahve molası için elverişli bir ortam sunar.'
+    ]
+  },
+  'uskudar-kahve-kadim': {
+    description: "Hakimiyet-i Milliye Caddesi üzerinde, tarihi dokuyu yansıtan otantik iç mimarisi, sedirli oturma köşeleri ve zengin kahve menüsüyle Üsküdar'ın nostaljik buluşma noktası.",
+    whatToOrder: ['Kumda Geleneksel Türk Kahvesi', 'Kadim Spesiyal Pasta'],
+    menuFrom: ['Menengiç Kahvesi', 'Dibek Kahvesi', 'Filtre Kahve', 'Karaköy Poğaçası', 'Tiramisu'],
+    alsoTry: ['Özel bakır cezvede közde ağır ağır pişen bol köpüklü Türk kahvesi'],
+    beforeYouGo: [
+      'Tarihi ve mistik atmosferi sevenler için ferah ve sıcak bir ortam sunar.',
+      'Üsküdar meydanındaki camilere ve toplu taşımaya çok yakın mesafededir.'
+    ]
+  },
+  'uskudar-kahve-arvav': {
+    description: "Doğancılar Caddesi üzerinde, geniş oturma alanları, taze demlenmiş kahveleri, lezzetli tatlıları ve kutu oyunları koleksiyonuyla gençlerin buluştuğu enerjik sosyal kafe.",
+    whatToOrder: ['Iced Salted Caramel Latte', 'Lotuslu Cheesecake'],
+    menuFrom: ['Americano', 'Chai Tea Latte', 'Frambuazlı Brownie', 'Sıcak Çikolata', 'Filtre Kahve'],
+    alsoTry: ['Arkadaş grubuyla kutu oyunu oynarken tercih edilen buzlu espresso içecekleri'],
+    beforeYouGo: [
+      'Grup buluşmaları, kutu oyunları ve keyifli sohbetler için geniş masalar mevcuttur.',
+      'Doğancılar Parkı civarındadır, cadde üzerinden kolayca ulaşılır.'
+    ]
   }
 };
 
