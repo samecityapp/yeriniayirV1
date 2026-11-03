@@ -1939,6 +1939,161 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
+
+  // ==========================================
+  // REGION 13: GALATA (Beyoğlu)
+  // ==========================================
+  // Galata Kulesi & Nitelikli Kahve / Tasarım Kafe
+  'galata-kahve-federal': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Federal+Coffee+K%C3%BC%C3%A7%C3%BCk+Hendek+Cd+No+7+Galata',
+      providers: [],
+    },
+  },
+  'galata-kahve-mavra': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Mavra+Cafe+Design+Serdar-%C4%B1+Ekrem+Cd+No+31-A+Galata',
+      providers: [],
+    },
+  },
+  'galata-kahve-privato': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Cafe+Privato+T%C4%B1marc%C4%B1+Sk+No+3-B+Galata',
+      providers: [],
+    },
+  },
+  'galata-kahve-sirinfirin': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=%C5%9Eirin+F%C4%B1r%C4%B1n+Bakery+B%C3%BCy%C3%BCk+Hendek+Cd+No+16-A+Galata',
+      providers: [],
+    },
+  },
+
+  // Meşhur San Sebastian Cheesecake & Fırınlar
+  'galata-tatli-viyana': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Viyana+Kahvesi+B%C3%BCy%C3%BCk+Hendek+Cd+No+19-A+Galata',
+      providers: [],
+    },
+  },
+  'galata-tatli-hafizmustafa': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Haf%C4%B1z+Mustafa+1864+%C5%9Eahkap%C4%B1s%C4%B1+Sk+No+2-A+Galata',
+      providers: [],
+    },
+  },
+  'galata-tatli-freddo': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Freddo+Galata+B%C3%BCy%C3%BCk+Hendek+Cd+No+21+Galata',
+      providers: [],
+    },
+  },
+  'galata-tatli-vaacoffee': {
+    platform: 'google-maps',
+    value: 4.9,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=VAA+Coffee+Bakery+B%C3%BCy%C3%BCk+Hendek+Cd+No+27+Galata',
+      providers: [],
+    },
+  },
+
+  // Kule Çevresi Tarihi Teraslar & Akşam Sofrası
+  'galata-meyhane-guney': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=G%C3%BCney+Restaurant+1964+%C5%9Eahkap%C4%B1s%C4%B1+Sk+No+2-B+Galata',
+      providers: [],
+    },
+  },
+  'galata-meyhane-firuzende': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Firuzende+Galata+B%C3%BCy%C3%BCk+Hendek+Cd+No+5+Anemon+Teras+Galata',
+      providers: [],
+    },
+  },
+  'galata-meyhane-galatada24': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Galatada+24+Georges+Hotel+Serdar-%C4%B1+Ekrem+Cd+No+24+Galata',
+      providers: [],
+    },
+  },
+  'galata-meyhane-barnathan': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Barnathan+Roof+T%C4%B1marc%C4%B1+Sk+No+1+Galata',
+      providers: [],
+    },
+  },
+
+  // Şık Galata Bistroları & Dünya Mutfağı
+  'galata-bistro-ilcortile': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Il+Cortile+Ristorante+Galata+Kulesi+Sk+No+14+Galata',
+      providers: [],
+    },
+  },
+  'galata-bistro-dukkan': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=D%C3%BCkkan+Galata+Tatar+Beyi+Sk+No+15-B+Galata',
+      providers: [],
+    },
+  },
+  'galata-bistro-otantik': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Otantik+Galata+Camekan+Sk+No+4+Galata',
+      providers: [],
+    },
+  },
+  'galata-bistro-snog': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Snog+Roof+Bar+Galip+Dede+Cd+No+56+Kat+4+Galata',
+      providers: [],
+    },
+  },
 };
 
 export function getVerifiedGoogleRatings(venueId: string): VisitorGoogleRating[] {

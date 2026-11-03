@@ -2155,6 +2155,177 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Tersane Caddesi üzerinde tarihi bir hanın üst katındadır; nostaljik atmosferi benzersizdir.',
       'Alkol servisi bulunmayan klasik bir tarihi balık sofrası deneyimi sunar.'
     ]
+  },
+
+  // ==========================================
+  // REGION 13: GALATA (Beyoğlu)
+  // ==========================================
+  // Galata Kulesi & Nitelikli Kahve / Tasarım Kafe
+  'galata-kahve-federal': {
+    description: "Küçük Hendek Caddesi'nde Avustralya kahve kültürünü İstanbul'a getiren Sam Çeviköz imzalı, mikro kavrum özel harmanları ve Galata Kulesi'ne komşu sokak masalarıyla popüler espresso barı.",
+    whatToOrder: ['Federal Cold Drip', 'Flat White'],
+    menuFrom: ['Avokadolu Poşe Yumurta', 'Granola Bowl', 'Cortado', 'Banana Bread', 'San Sebastian'],
+    alsoTry: ['Saatlerce damla damla demlenen buzlu Federal Cold Drip kahvesi'],
+    beforeYouGo: [
+      'Galata Kulesi\'ne birkaç adım mesafededir; sokak masaları gün boyu hareketlidir.',
+      'Kendi kavurdukları taze çekirdek kahveleri paket olarak satın alabilirsiniz.'
+    ]
+  },
+  'galata-kahve-mavra': {
+    description: "Tarihi Doğan Apartmanı'nın tam karşısında tasarım atölyesiyle kafeyi birleştiren, nostaljik dekorasyonu, lezzetli ev yapımı tartları ve samimi mahalle dokusuyla Galata'nın ruhunu yaşatan mekan.",
+    whatToOrder: ['Mavra Filtre Kahve', 'Ev Yapımı Çilekli Tart'],
+    menuFrom: ['Latte', 'Türk Kahvesi', 'Kiş Çeşitleri', 'Brownie', 'Taze Sıkma Portakal'],
+    alsoTry: ['Doğan Apartmanı manzarasına karşı kahve eşliğinde çıtır tereyağlı sebzeli kiş'],
+    beforeYouGo: [
+      'Serdar-ı Ekrem Caddesi\'nin en güzel noktasında dinlenmek ve insanları izlemek için idealdir.',
+      'Akşam saatlerinde sakin ve keyifli bir bistro atmosferi sunar.'
+    ]
+  },
+  'galata-kahve-privato': {
+    description: "Tımarcı Sokak'ta Galata Kulesi silueti altında, Gürcistan ve Anadolu'nun yerel köylerinden toplanan şekersiz ev yapımı reçelleri ve zengin köy kahvaltısıyla ünlü nostaljik kafe.",
+    whatToOrder: ['Köy Kahvaltısı Serpme Tabağı', 'Fırında Sıcak Hellim'],
+    menuFrom: ['Ev Yapımı Reçeller', 'Menemen', 'Gözleme', 'Demlik Çay', 'Türk Kahvesi'],
+    alsoTry: ['Geleneksel usulde hazırlanan incir ve ceviz reçelli taze lor peyniri tabağı'],
+    beforeYouGo: [
+      'Geleneksel kahvaltı için özellikle sabah ve öğle saatlerinde erken gitmek tavsiye edilir.',
+      'Sakin ara sokakta huzurlu bir oturma ortamına sahiptir.'
+    ]
+  },
+  'galata-kahve-sirinfirin': {
+    description: "Büyük Hendek Caddesi'nde fırından yeni çıkmış tereyağlı kruvasanları, taze poğaçaları, cheesecake ve özenli kahveleriyle Galata sakinlerinin sabah kahvaltısı ve tatlı durağı.",
+    whatToOrder: ['Taze Çikolatalı Kruvasan', 'Karamelli Latte'],
+    menuFrom: ['Ekşi Mayalı Tost', 'Havuçlu Kek', 'Filtre Kahve', 'Americano', 'Çilekli Tart'],
+    alsoTry: ['Sabah erken saatte fırından sıcacık çıkan tereyağlı çıtır kruvasan'],
+    beforeYouGo: [
+      'Galata Kulesi meydanına çok yakındır, ayaküstü kahve ve hamur işi için pratiktir.',
+      'Dışarıdaki küçük masalarda cadde hareketliliğini seyredebilirsiniz.'
+    ]
+  },
+
+  // Meşhur San Sebastian Cheesecake & Fırınlar
+  'galata-tatli-viyana': {
+    description: "Büyük Hendek Caddesi'nde, Galata Kulesi manzarasına karşı eritilmiş sıcak Belçika çikolatası dökülerek servis edilen akışkan San Sebastian cheesecake akımının Türkiye'deki öncüsü.",
+    whatToOrder: ['Sıcak Belçika Çikolatalı San Sebastian', 'Viyana Melange'],
+    menuFrom: ['Klasik San Sebastian', 'Lotus Kremalı Cheesecake', 'Espresso', 'Iced Latte', 'Sıcak Çikolata'],
+    alsoTry: ['Karamelize yanık üst tabaka ile akışkan sıcak sütlü çikolatanın birleştiği meşhur San Sebastian'],
+    beforeYouGo: [
+      'Sosyal medyada dünyaca ünlü olduğu için günün her saati kapısında yoğun sıra olabilir.',
+      'Galata Kulesi\'nin hemen dibindeki masalarda fotoğraf çekmek çok popülerdir.'
+    ]
+  },
+  'galata-tatli-hafizmustafa': {
+    description: "Şahkapısı Sokak'ta tarihi Galata Kulesi girişinde, 1864'ten gelen saray tatlıcılığı geleneğiyle Antep fıstıklı baklavaları, taze lokumları ve sütlü tatlılarıyla yerli ve yabancı misafirlerin uğrağı.",
+    whatToOrder: ['Fıstıklı Şöbiyet', 'Trileçe'],
+    menuFrom: ['Havuç Dilim Baklava', 'Kazandibi', 'Fıstıklı Lokum', 'Osmanlı Çayı', 'Geleneksel Türk Kahvesi'],
+    alsoTry: ['Hakiki maraş dondurması eşliğinde sıcak fıstıklı şöbiyet tabağı'],
+    beforeYouGo: [
+      'Galata Kulesi meydanındadır; hediyelik lokum ve paketleme servisi çok hızlıdır.',
+      'Kule ziyareti öncesi veya sonrası geleneksel bir tatlı molası için elverişlidir.'
+    ]
+  },
+  'galata-tatli-freddo': {
+    description: "Büyük Hendek Caddesi üzerinde İtalyan tarzı taze kremalı dondurmaları, artizan cheesecake çeşitleri ve ferahlatıcı espresso içecekleriyle bilinen butik tatlıcı.",
+    whatToOrder: ['Freddo San Sebastian', 'İtalyan Dondurması (Gelato)'],
+    menuFrom: ['Profiterol Kasesi', 'Tiramisu', 'Iced Americano', 'Affogato', 'Çikolatalı Sufle'],
+    alsoTry: ['Sıcak espressonun vanilyalı İtalyan dondurması üzerine döküldüğü taze Affogato'],
+    beforeYouGo: [
+      'Kuleye çıkan cadde üzerinde hızlı ve lezzetli bir tatlı/dondurma alternatifi sunar.',
+      'Özellikle yaz aylarında serinletici soğuk kahve ve gelato kombinasyonları revaçtadır.'
+    ]
+  },
+  'galata-tatli-vaacoffee': {
+    description: "Galata Kulesi'ne komşu samimi ortamında, taze çekirdek kahveleri, yoğun kıvamlı çikolatalı San Sebastian dilimleri ve lezzetli tatlılarıyla 4.9 kullanıcı memnuniyetine sahip özel kafe.",
+    whatToOrder: ['VAA San Sebastian Cheesecake', 'Cortado'],
+    menuFrom: ['Filtre Kahve', 'Flat White', 'Brownie', 'Muzlu Ekmek', 'Limonlu Cheesecake'],
+    alsoTry: ['Özel eritilmiş bitter çikolata sosuyla zenginleştirilen kremsi San Sebastian dilimi'],
+    beforeYouGo: [
+      'Yüksek puanlı ve samimi bir butik kafedir; oturma kapasitesi sınırlıdır.',
+      'Kule manzarasına birkaç adım mesafede sakin bir kahve molası verir.'
+    ]
+  },
+
+  // Kule Çevresi Tarihi Teraslar & Akşam Sofrası
+  'galata-meyhane-guney': {
+    description: "1964 yılından bu yana Galata Kulesi meydanında kesintisiz hizmet veren, tarihi taş binasında zengin Türk ve dünya mutfağı, ızgara etleri ve kule manzaralı dış masalarıyla semtin en köklü restoranı.",
+    whatToOrder: ['Güney Özel Kuzu Pirzola', 'Kule Mezeleri Tabağı'],
+    menuFrom: ['Deniz Mahsullü Makarna', 'Gavurdağı Salatası', 'Fırın Güveç', 'Izgara Somon', 'Sıcak Sufle'],
+    alsoTry: ['Galata Kulesi\'nin heybetli gölgesinde akşam saatlerinde sunulan kuzu pirzola tabağı'],
+    beforeYouGo: [
+      'Galata Kulesi meydanının tam kalbindedir; kule manzaralı dış masalar hızla dolar.',
+      'Hem gündüz öğle yemeği hem de akşam romantik buluşmalar için uygundur.'
+    ]
+  },
+  'galata-meyhane-firuzende': {
+    description: "Anemon Galata Oteli'nin teras katında, Galata Kulesi'ne dokunacak kadar yakın panoramik Boğaz, Haliç ve Tarihi Yarımada manzarasıyla İstanbul'un en büyüleyici manzara restoranlarından.",
+    whatToOrder: ['Firuzende Izgara Dana Bonfile', 'Vişneli Meze Tabağı'],
+    menuFrom: ['Ahtapot Izgara', 'Kuzu İncik', 'Avokadolu Karides', 'Tiramisu', 'İmza Kokteyller'],
+    alsoTry: ['Kulenin gece aydınlatması eşliğinde servis edilen ağır ateşte fırınlanmış kuzu incik'],
+    beforeYouGo: [
+      'Kule manzaralı cam kenarı masalar için günler öncesinden rezervasyon şarttır.',
+      'Evlilik teklifleri ve özel kutlamalar için şehrin en popüler mekanları arasındadır.'
+    ]
+  },
+  'galata-meyhane-galatada24': {
+    description: "Serdar-ı Ekrem Caddesi'nde Georges Hotel'in terasında, Boğaz ve Adalar manzarasına karşı Ege ve Akdeniz mutfağının modern meze kültürünü şık bir atmosferde buluşturan teras restoran.",
+    whatToOrder: ['Galatada Meze Seçkisi', 'Kömür Ateşinde Levrek'],
+    menuFrom: ['Girit Ezmesi', 'Karides Saganaki', 'Ahtapot Carpaccio', 'Fırın Kuzu Kol', 'Özel Kokteyller'],
+    alsoTry: ['Teras manzarasında gün batımı eşliğinde sunulan Ege otlu ılık deniz mahsulleri tabağı'],
+    beforeYouGo: [
+      'Butik otel terası konseptinde zarif ve seçkin bir akşam yemeği ortamı sunar.',
+      'Özellikle bahar ve yaz aylarında açık hava terası için rezervasyon gereklidir.'
+    ]
+  },
+  'galata-meyhane-barnathan': {
+    description: "19. yüzyıldan kalma tarihi Barnathan Apartmanı'nın çatısında, Galata Kulesi'nin hemen yanı başında eşsiz kule ve Haliç manzarası eşliğinde kahvaltı, akşam yemeği ve kokteyller sunan teras mekan.",
+    whatToOrder: ['Barnathan Spesiyal Burger', 'Çıtır Karides'],
+    menuFrom: ['Meze Tabağı', 'Izgara Antrikot', 'Trüflü Patates', 'San Sebastian', 'İmza İçecekler'],
+    alsoTry: ['Kulenin kubbesini en yakından gören teras masasında gün batımı kokteyli'],
+    beforeYouGo: [
+      'Tarihi apartmanın restore edilmiş mimarisi ve avlusu da görülmeye değerdir.',
+      'Teras katında gün batımı ve akşam saatlerinde yoğunluk oluştuğundan rezervasyon önerilir.'
+    ]
+  },
+
+  // Şık Galata Bistroları & Dünya Mutfağı
+  'galata-bistro-ilcortile': {
+    description: "Ecole St. Pierre Hotel'in tarihi manastır ve yetimhane avlusunda, Napoli tarzı odun fırını pizzaları, el yapımı taze makarnaları ve dingin Akdeniz atmosferiyle saklı bir İtalyan vahası.",
+    whatToOrder: ['Margherita Verace Pizza', 'Trüflü Tagliolini'],
+    menuFrom: ['Burrata con Pomodorini', 'Carpaccio di Manzo', 'Risotto ai Funghi', 'Tiramisu Tradizionale'],
+    alsoTry: ['48 saat mayalanmış Napoli usulü hamurla odun fırınında pişen taze burrata peynirli pizza'],
+    beforeYouGo: [
+      'Tarihi avlu bahçesi şehrin gürültüsünden tamamen izole ve romantiktir.',
+      'Akşam servislerinde rezervasyon yaptırılması tavsiye edilir.'
+    ]
+  },
+  'galata-bistro-dukkan': {
+    description: "Tatar Beyi Sokak'ta taş duvarlı tarihi binasında taze günlük makarnaları, gurme sandviçleri, glütensiz seçenekleri ve samimi bistro ortamıyla Galata sakinlerinin favori lezzet noktası.",
+    whatToOrder: ['El Yapımı Pesto Soslu Fettuccine', 'Füme Etli Sıcak Sandviç'],
+    menuFrom: ['Günün Çorbası', 'Kinoa Salatası', 'Filtre Kahve', 'Limonlu Tart', 'Ev Yapımı Buzlu Çay'],
+    alsoTry: ['Günlük taze açılan makarnanın üzerine eklenen taze fesleğenli ve çam fıstıklı pesto sos'],
+    beforeYouGo: [
+      'Glütensiz ve sağlıklı beslenme alternatifleri açısından oldukça zengin bir menüye sahiptir.',
+      'Karaköy ve Şişhane arasındaki sakin ara sokaktadır, samimi oturma düzeni vardır.'
+    ]
+  },
+  'galata-bistro-otantik': {
+    description: "Camekan Sokak üzerinde taş binasında, geleneksel Türk mutfağının gözlemelerini, ev mantılarını ve Anadolu lezzetlerini otantik sunumlarla buluşturan samimi mahalle bistrosu.",
+    whatToOrder: ['Kayseri Usulü El Mantısı', 'Kıymalı Kaşarlı Gözleme'],
+    menuFrom: ['Mercimek Çorbası', 'Zeytinyağlı Sarma', 'Çoban Salatası', 'Demleme Çay', 'Yayık Ayranı'],
+    alsoTry: ['Sıcak sac üzerinde taze açılıp tereyağıyla yağlanan çıtır köy gözlemesi'],
+    beforeYouGo: [
+      'Galata Kulesi\'ne çıkan taş merdivenlerin hemen yanındadır.',
+      'Hızlı, doyurucu ve geleneksel bir öğle veya akşam yemeği için idealdir.'
+    ]
+  },
+  'galata-bistro-snog': {
+    description: "Galip Dede Caddesi'nde tarihi binanın en üst katında, Galata Kulesi'ne bakan samimi balkonu, kaliteli müzikleri, gurme kokteylleri ve atıştırmalıklarıyla Galata'nın gizli çatı barı.",
+    whatToOrder: ['Snog İmza Kokteyl', 'Tapas Atıştırmalık Tabağı'],
+    menuFrom: ['Mini Burgerler', 'Peynir Tabağı', 'Çıtır Tavuk Sepeti', 'Bira Çeşitleri', 'Şarap Seçkisi'],
+    alsoTry: ['Galata Kulesi ışıklarına bakan küçük balkonda gün batımında yudumlanan imza kokteyl'],
+    beforeYouGo: [
+      'Balkon kısmı oldukça kompakt olduğundan erken saatlerde gitmek yer bulmak adına önemlidir.',
+      'Canlı ve samimi bir müzik eşliğinde keyifli bir akşam sohbeti ortamı sunar.'
+    ]
   }
 };
 

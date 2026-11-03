@@ -242,6 +242,30 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    scopeNote: 'Beyoğlu · Karaköy (Yayında)'
   },
   {
+   id: 'galata',
+   level: 'semt',
+   name: 'Galata',
+   slug: 'galata',
+   path: ['istanbul', 'beyoglu', 'galata'],
+   displayName: 'Galata, Beyoğlu, İstanbul',
+   locative: "Galata'da",
+   status: 'published',
+   aliases: ['Galata', 'Kuledibi', 'Galata Kulesi', 'Serdar-ı Ekrem', 'Büyük Hendek', 'Küçük Hendek', 'Camekan Sokak'],
+   scopeNote: 'Beyoğlu · Galata (Yayında)'
+  },
+  {
+   id: 'galata-beyoglu',
+   level: 'semt',
+   name: 'Galata',
+   slug: 'galata',
+   path: ['istanbul', 'beyoglu', 'galata'],
+   displayName: 'Galata, Beyoğlu, İstanbul',
+   locative: "Galata'da",
+   status: 'published',
+   aliases: ['Galata', 'Kuledibi', 'Galata Kulesi', 'Serdar-ı Ekrem', 'Büyük Hendek', 'Küçük Hendek', 'Camekan Sokak'],
+   scopeNote: 'Beyoğlu · Galata (Yayında)'
+  },
+  {
    id: 'nisantasi',
    level: 'semt',
    name: 'Nişantaşı',
