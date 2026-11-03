@@ -81,9 +81,9 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    path: ['istanbul', 'kadikoy', 'caddebostan'],
    displayName: 'Caddebostan, Kadıköy, İstanbul',
    locative: "Caddebostan'da",
-   status: 'coming_soon',
-   aliases: ['Caddebostan', 'Bağdat Caddesi', 'Bagdat Caddesi'],
-   scopeNote: 'Kadıköy · Caddebostan (Araştırmada)'
+   status: 'published',
+   aliases: ['Caddebostan', 'Bağdat Caddesi', 'Bagdat Caddesi', 'İskele Sokak', 'Plaj Yolu', 'CKM'],
+   scopeNote: 'Kadıköy · Caddebostan (Yayında)'
   },
   {
    id: 'suadiye',

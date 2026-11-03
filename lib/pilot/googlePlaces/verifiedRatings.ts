@@ -1029,6 +1029,151 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
+  // Region 7: Caddebostan (16 verified venues)
+  'caddebostan-coffee-klar': {
+    platform: 'google-maps',
+    value: 4.8,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Klar+Coffee+Co+%C3%96merpa%C5%9Fa+Sk+No+5+Caddebostan+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'caddebostan-coffee-orbis': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Orbis+Coffee+Caddebostan+Plaj+Yolu+Sk+No+3+Caddebostan+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'caddebostan-coffee-nou': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Nou+Cafe+Kitchen+Plaj+Yolu+Sk+No+8B+Caddebostan+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'caddebostan-coffee-meetlab': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Meet+Lab+Coffee+Selin+Sk+No+6A+Caddebostan+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'caddebostan-brunch-cafecadde': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Cafe+Cadde+Ba%C4%9Fdat+Cd+No+349+Caddebostan+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'caddebostan-brunch-sourandsweet': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Sour+and+Sweet+Artisan+Bakery+Caddebostan+Plaj+Yolu+Sk+No+8A+Caddebostan+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'caddebostan-brunch-fiyonk': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Fiyonk+Bakery+Cafe+%C5%9Eim%C5%9Fek+Sk+No+4+Caddebostan+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'caddebostan-brunch-kasabim': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kasab%C4%B1m+D%C3%B6ner+Caddebostan+%C4%B0skele+Sk+No+10+Caddebostan+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'caddebostan-dessert-paseo': {
+    platform: 'google-maps',
+    value: 4.9,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Paseo+Gelato+Sorbet+%C3%96merpa%C5%9Fa+Sk+No+24B+Caddebostan+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'caddebostan-dessert-girandola': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Girandola+Dondurma+Caddebostan+%C4%B0skele+Sk+No+16+Caddebostan+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'caddebostan-dessert-divan': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Divan+Pastanesi+Ba%C4%9Fdat+Cd+No+333+Caddebostan+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'caddebostan-dessert-pelit': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Pelit+Pastanesi+Ba%C4%9Fdat+Cd+No+259B+Caddebostan+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'caddebostan-bistro-ilpadrino': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Il+Padrino+Ristorante+Caddebostan+%C4%B0skele+Sk+No+8C+Caddebostan+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'caddebostan-bistro-sakibalik': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Saki+Bal%C4%B1k+Restoran+Caddebostan+%C4%B0skele+Sk+No+17+Caddebostan+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'caddebostan-bistro-havelka': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Havelka+Caddebostan+%C4%B0skele+Sk+No+12+Caddebostan+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
+  'caddebostan-bistro-theirishpub': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=The+Irish+Pub+CKM+Haldun+Taner+Sk+No+11+Caddebostan+Kad%C4%B1k%C3%B6y',
+      providers: [],
+    },
+  },
 };
 
 export function getVerifiedGoogleRatings(venueId: string): VisitorGoogleRating[] {

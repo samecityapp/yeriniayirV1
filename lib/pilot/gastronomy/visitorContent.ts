@@ -1133,6 +1133,175 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Geniş kapalı ve bahçe alanıyla kalabalık grup ve aile buluşmaları için çok müsaittir.',
       'Hafta sonu akşamları için rezervasyon önerilir.'
     ]
+  },
+
+  // Region 7: Caddebostan (16 verified venues)
+  // Nitelikli Kahve & Kafe
+  'caddebostan-coffee-klar': {
+    description: "Ömerpaşa Sokağı'nda İskandinav sadeliği, özenle demlenen üçüncü nesil filtre kahveleri ve artizan tatlılarıyla kahve severlerin vazgeçilmez durağı.",
+    whatToOrder: ['Flat White', 'V60 Kenya Nyeri'],
+    menuFrom: ['Cortado', 'Cold Brew', 'San Sebastian Cheesecake', 'Çikolatalı Cookie'],
+    alsoTry: ['Narenciye ve çiçeksi notalara sahip V60 pour-over tek köken kahve'],
+    beforeYouGo: [
+      'Sessiz ve sakin çalışma ortamıyla laptop ile çalışanların tercihidir.',
+      'Caddebostan Kültür Merkezi\'ne birkaç adım mesafededir.'
+    ]
+  },
+  'caddebostan-coffee-orbis': {
+    description: "Plaj Yolu Sokağı üzerinde ferah açık oturma alanı, taze kavrulmuş çekirdekleri ve dinamik barista enerjisiyle gün boyu canlı bir kahve noktası.",
+    whatToOrder: ['Iced Americano', 'Muzlu Fındıklı Ekmek'],
+    menuFrom: ['Latte', 'Aeropress', 'Fıstıklı Kruvasan', 'Limonlu Kek'],
+    alsoTry: ['Günün taze fırınlanan sıcak muzlu cevizli ekmeği (banana bread)'],
+    beforeYouGo: [
+      'Caddebostan Sahili\'ne yürüyüşe çıkmadan önce kahve almak için mükemmel konumdadır.',
+      'Dış mekan masaları arkadaş sohbetleri için çok sevilir.'
+    ]
+  },
+  'caddebostan-coffee-nou': {
+    description: "Plaj Yolu'nda estetik tasarımı, dengeli espresso harmanları ve sağlıklı kahvaltı kurgularıyla genç ve dinamik bir Caddebostan klasiği.",
+    whatToOrder: ['Iced Vanilla Latte', 'Çilekli French Toast'],
+    menuFrom: ['Cappuccino', 'Cold Brew', 'Acai Bowl', 'Avokadolu Tartine'],
+    alsoTry: ['Brioche ekmeğine hazırlanan ev yapımı reçelli taze French Toast'],
+    beforeYouGo: [
+      'Hafta sonu öğle saatlerinde oturma alanı hareketlenir.',
+      'Hem kahve hem de hafif atıştırmalıklar için çok yönlü bir menüye sahiptir.'
+    ]
+  },
+  'caddebostan-coffee-meetlab': {
+    description: "Selin Sokak'ta laboratuvar hassasiyetiyle demlenen nitelikli kahveleri, modern minimal dekoru ve samimi mahalle dokusuyla öne çıkan üçüncü nesil kafe.",
+    whatToOrder: ['Cortado', 'Lotus Biscoff Cheesecake'],
+    menuFrom: ['Espresso Tonic', 'Flat White', 'Brownie', 'Fıstıklı Kurabiye'],
+    alsoTry: ['Ferahlatıcı espresso ve tonik suyunun buluştuğu buzlu Espresso Tonic'],
+    beforeYouGo: [
+      'İç mekandaki konforlu koltuklar kahve eşliğinde kitap okumak için idealdir.',
+      'Çekirdek kahve çeşitleri paket olarak satın alınabilir.'
+    ]
+  },
+
+  // Kahvaltı, Brunch & Fırın
+  'caddebostan-brunch-cafecadde': {
+    description: "1994'ten bu yana Bağdat Caddesi'nin simgesi haline gelen, yemyeşil kış bahçesi, zengin serpme kahvaltısı ve efsaneleşmiş buluşma atmosferi.",
+    whatToOrder: ['Cadde Klasik Kahvaltı Tabağı', 'Otlu Peynirli Omlet'],
+    menuFrom: ['Menemen', 'Eggs Benedict', 'Pankek Tabağı', 'Taze Sıkma Portakal Suyu'],
+    alsoTry: ['Brioche ekmeğinde füme somonlu ve poşe yumurtalı Eggs Benedict'],
+    beforeYouGo: [
+      'Bağdat Caddesi üzerinde yılların en köklü buluşma adresidir.',
+      'Hafta sonu geniş kış bahçesinde yer bulmak için rezervasyon önerilir.'
+    ]
+  },
+  'caddebostan-brunch-sourandsweet': {
+    description: "Plaj Yolu'nda uzun fermantasyonlu ekşi mayalı taş fırın ekmekleri, çıtır tereyağlı kruvasanları ve gurme ekmek üstü kahvaltı tabakları.",
+    whatToOrder: ['Ekşi Mayalı Avokadolu Poşe Yumurta', 'Bademli Kruvasan'],
+    menuFrom: ['Çırpılmış Yumurtalı Brioche', 'Granola Bowl', 'Ekşi Mayalı Baget', 'Filtre Kahve'],
+    alsoTry: ['Taze dilimlenmiş ekşi mayalı ekmek üzerine avokado ezmesi ve poşe köy yumurtası'],
+    beforeYouGo: [
+      'Ekşi mayalı ekmekler öğleden sonra tükenebilir, erken saatte taze almak faydalıdır.',
+      'Sahile inerken unlu mamul alışverişi için idealdir.'
+    ]
+  },
+  'caddebostan-brunch-fiyonk': {
+    description: "Şimşek Sokak'ta günlük taze pişen artizan börekleri, kruvasan sandviçleri ve renkli kahvaltı sofralarıyla mahallenin gizli fırın vahası.",
+    whatToOrder: ['Kruvasan Kahvaltı Sandviçi', 'Fiyonk Serpme Kahvaltı'],
+    menuFrom: ['Sahanda Göz Yumurta', 'Pişi Tabağı', 'Nutellalı Kruvasan', 'Demlik Çay'],
+    alsoTry: ['Taze mozzarella, kurutulmuş domates ve fesleğenli sıcak kruvasan sandviç'],
+    beforeYouGo: [
+      'Samimi bir butik fırın konseptindedir.',
+      'Caddeye paralel sakin sokakta huzurlu kahvaltı arayanlar için çok uygundur.'
+    ]
+  },
+  'caddebostan-brunch-kasabim': {
+    description: "İskele Sokak'ta sabah saatlerinden itibaren taze pişen sıcak puf pideleri, özel marinasyonlu yaprak döneri ve doyurucu esnaf lezzetleri.",
+    whatToOrder: ['Tırnak Pidede Yaprak Döner', 'Yayık Ayran'],
+    menuFrom: ['İskender', 'Döner Dürüm', 'Mercimek Çorbası', 'Fırın Sütlaç'],
+    alsoTry: ['Közlenmiş domates ve biber eşliğinde porsiyon yaprak döner'],
+    beforeYouGo: [
+      'Öğle ve akşam saatlerinde hızlı, lezzetli ve doyurucu bir alternatif sunar.',
+      'Barlar Sokağı girişinde merkezi bir konumdadır.'
+    ]
+  },
+
+  // Tatlı, Dondurma & Pastane
+  'caddebostan-dessert-paseo': {
+    description: "Ömerpaşa Sokağı'nda tamamen doğal taze meyveler, İtalyan teknikleri ve katkısız sütle hazırlanan Kadıköy'ün en beğenilen artizan gelato durağı.",
+    whatToOrder: ['Piedmont Fındıklı Gelato', 'Bodrum Mandalinası Sorbe'],
+    menuFrom: ['Madagaskar Vanilya', 'Antep Fıstığı', 'Bitter Çikolata', 'Mango Sorbe'],
+    alsoTry: ['Taze kavrulmuş İtalyan fındıklarından yapılan yoğun kıvamlı fındıklı dondurma'],
+    beforeYouGo: [
+      'Mevsim meyvelerine göre sorbe çeşitleri sürekli yenilenir.',
+      'Caddebostan sahil yürüyüşü öncesi külah dondurma almak için ilk tercihtir.'
+    ]
+  },
+  'caddebostan-dessert-girandola': {
+    description: "İskele Sokak'ta gerçek İtalyan reçeteleriyle katkısız günlük hazırlanan, kazandibili ve balkabaklı imza çeşitleriyle cadde müdavimlerinin klasiği.",
+    whatToOrder: ['Balkabaklı Dondurma', 'Yoğun Bitter Çikolata'],
+    menuFrom: ['Kazandibili Gelato', 'Tuzlu Karamel', 'Orman Meyveli Sorbe', 'Kahveli Gelato'],
+    alsoTry: ['Fırınlanmış balkabağı ve tarçın notalarıyla hazırlanan imza sonbahar dondurması'],
+    beforeYouGo: [
+      'Akşam saatlerinde sahile inenlerin uğrak noktası olduğu için hareketlidir.',
+      'Glutensiz ve vegan meyve sorbeleri mevcuttur.'
+    ]
+  },
+  'caddebostan-dessert-divan': {
+    description: "Bağdat Caddesi üzerinde 1956'dan gelen saray pastacılığı mirası, efsanevi rokoko pastası, el yapımı pralinleri ve şık pastane salonu.",
+    whatToOrder: ['Divan İmzası Rokoko Pastası', 'Pralin Çikolata'],
+    menuFrom: ['Profiterol', 'Çikolatalı Ekler', 'Macaron Çeşitleri', 'Filtre Kahve'],
+    alsoTry: ['Sıcak eritilmiş çikolata sosu eşliğinde servis edilen dondurmalı Rokoko pastası'],
+    beforeYouGo: [
+      'Özel kutlama pastaları ve prestijli hediye çikolatalar için ideal adrestir.',
+      'Bağdat Caddesi alışveriş molalarında çay-pasta keyfi için çok ferahtır.'
+    ]
+  },
+  'caddebostan-dessert-pelit': {
+    description: "1957'den bu yana değişmeyen reçeteleriyle enfes çikolatalı yaş pastaları, tereyağlı kuru pastaları ve klasik İstanbul tatlı geleneğini yaşatan köklü adres.",
+    whatToOrder: ['Çikolatalı Çilekli Yaş Pasta', 'El Yapımı Trüf Çikolata'],
+    menuFrom: ['Kestaneli Pasta', 'Madlen Çikolata', 'Tuzlu Kandil Simiti', 'Demlik Çay'],
+    alsoTry: ['Hakiki Belçika çikolatası ve taze çileklerle hazırlanan imza yaş pasta'],
+    beforeYouGo: [
+      'Göztepe Parkı ile Caddebostan aksı arasında kolay ulaşılır bir noktadadır.',
+      'Taze günlük pastaları vitrinde zengin çeşitlilik sunar.'
+    ]
+  },
+
+  // Bistro, İtalyan & Restoran
+  'caddebostan-bistro-ilpadrino': {
+    description: "1990'dan beri İtalyan Ticaret Odası ödüllü otantik taş fırın pizzaları, ev yapımı taze makarnaları ve sıcak Akdeniz atmosferiyle Caddebostan efsanesi.",
+    whatToOrder: ['Pizza İl Padrino', 'Tortellini ai Funghi Porcini'],
+    menuFrom: ['Carpaccio di Manzo', 'Lasagna Bolognese', 'Tiramisu Tradizionale', 'Chianti Şarap'],
+    alsoTry: ['Porçini mantarlı ve hafif krema soslu el açımı taze tortellini'],
+    beforeYouGo: [
+      'İstanbul\'un en köklü İtalyan restoranlarından biridir.',
+      'Akşam yemekleri için rezervasyon yapılması şiddetle önerilir.'
+    ]
+  },
+  'caddebostan-bistro-sakibalik': {
+    description: "İskele Sokak'ta günlük taze deniz balıkları, fesleğenli levrek marin mezesi ve deniz mahsulleri güveciyle samimi bir Ege balık lokantası.",
+    whatToOrder: ['Izgara Günlük Kaya Levreği', 'Fesleğenli Levrek Marin'],
+    menuFrom: ['Kalamar Tava', 'Tereyağlı Karides Güveç', 'Girit Ezmesi', 'Helva'],
+    alsoTry: ['Taze otlar ve zeytinyağı ile marine edilen çıtır kalamar tava'],
+    beforeYouGo: [
+      'İskele Sokağı\'nın keyifli akşam enerjisini yaşamak için açık masaları idealdir.',
+      'Hafta sonu akşamları mezeler erken saatte taze dizilir.'
+    ]
+  },
+  'caddebostan-bistro-havelka': {
+    description: "Yıllardır Caddebostan gençliğinin ve mahalle sakinlerinin buluştuğu, zengin burgerleri, çıtır atıştırmalık kovaları ve canlı bar atmosferiyle popüler mekan.",
+    whatToOrder: ['Havelka Gurme Burger', 'Çıtır Combo Sepeti'],
+    menuFrom: ['Buffalo Wings', 'Quesadilla', 'Mozzarella Sticks', 'Fıçı İçecekler'],
+    alsoTry: ['Cheddar peynirli ve karamelize soğanlı çift köfteli gurme burger'],
+    beforeYouGo: [
+      'Arkadaş grubuyla maç izlemek veya akşamüstü atıştırmalığı için çok uygundur.',
+      'Hafta sonu geceleri oldukça canlıdır.'
+    ]
+  },
+  'caddebostan-bistro-theirishpub': {
+    description: "Caddebostan Kültür Merkezi bünyesinde otantik pub ahşap dekorasyonu, zengin fıçı çeşitleri, fish & chips lezzeti ve kültür-sanat sonrası buluşma noktası.",
+    whatToOrder: ['Geleneksel Fish and Chips', 'Pub Nachos Supreme'],
+    menuFrom: ['Bangers and Mash', 'Baharatlı Patates', 'Dana Burger', 'Guinness & Craft İçecekler'],
+    alsoTry: ['Çıtır malt kaplamalı mezgit filetosu ve ev yapımı tartar soslu Fish & Chips'],
+    beforeYouGo: [
+      'CKM\'deki tiyatro ve sinema gösterimleri sonrasında sohbet için popülerdir.',
+      'Canlı spor karşılaşmaları yayınlanır.'
+    ]
   }
 };
 
