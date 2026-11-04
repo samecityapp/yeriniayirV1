@@ -408,6 +408,30 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    status: 'published',
    aliases: ['Yeniköy', 'Yenikoy', 'Köybaşı', 'Köybaşı Caddesi', 'Sait Halim Paşa'],
    scopeNote: 'Sarıyer · Yeniköy Sahil & Yalılar (Yayında)'
+  },
+  {
+   id: 'gokturk',
+   level: 'semt',
+   name: 'Göktürk',
+   slug: 'gokturk',
+   path: ['istanbul', 'eyupsultan', 'gokturk'],
+   displayName: 'Göktürk, Eyüpsultan, İstanbul',
+   locative: "Göktürk'te",
+   status: 'published',
+   aliases: ['Göktürk', 'Gokturk', 'Kemerburgaz', 'İstanbul Caddesi', 'Arcadium Life', 'Larus Palas'],
+   scopeNote: 'Eyüpsultan · Göktürk & Yaşam Vadisi (Yayında)'
+  },
+  {
+   id: 'gokturk-eyupsultan',
+   level: 'semt',
+   name: 'Göktürk',
+   slug: 'gokturk',
+   path: ['istanbul', 'eyupsultan', 'gokturk'],
+   displayName: 'Göktürk, Eyüpsultan, İstanbul',
+   locative: "Göktürk'te",
+   status: 'published',
+   aliases: ['Göktürk', 'Gokturk', 'Kemerburgaz', 'İstanbul Caddesi', 'Arcadium Life', 'Larus Palas'],
+   scopeNote: 'Eyüpsultan · Göktürk & Yaşam Vadisi (Yayında)'
   }
  ] : [];
 

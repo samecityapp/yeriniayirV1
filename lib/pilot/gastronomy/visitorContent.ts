@@ -3292,6 +3292,168 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Yaz aylarında rıhtım açık hava servisi verir; kışın tarihi salonlar kullanılır.',
       'Özel gün kutlamaları ve seçkin akşam yemekleri için önceden rezervasyon şarttır.'
     ]
+  },
+
+  // --- GÖKTÜRK ---
+  'gokturk-kahve-yasemin': {
+    description: "Arcadium Life Çarşısı'nda ev sıcaklığındaki zarif bahçesi, günlük taze pişen artisan tartları, quiche'leri ve özenli brunch sunumlarıyla Göktürk'ün en sevilen buluşma noktası.",
+    whatToOrder: ['Yasemin Özel Kahvaltı Tabağı', 'Fıstıklı Orman Meyveli Pasta'],
+    menuFrom: ['Pırasalı Keçi Peynirli Quiche', 'Avokadolu Çırpılmış Yumurta', 'Limonlu Merengli Tart', 'Filtre Kahve', 'Ev Yapımı Buzlu Çay'],
+    alsoTry: ['Günlük çıkan taze tereyağlı sıcak quiche ve yanında ince dilimlenmiş avokadolu poşe yumurta'],
+    beforeYouGo: [
+      'Hafta sonu kahvaltı ve brunch saatlerinde yoğun talep görür.',
+      'Açık hava bahçe alanı çocuklu aileler ve evcil hayvan sahipleri için çok konforludur.'
+    ]
+  },
+  'gokturk-kahve-boter': {
+    description: "Belediye Caddesi üzerinde minimalist İskandinav tasarımı, taze kavrulan mikro lot çekirdekleri ve dumanı üstünde tarçınlı çörekleriyle semtin öncü üçüncü dalga kahvecisi.",
+    whatToOrder: ['Boter Cinnamon Roll', 'Single Origin Flat White'],
+    menuFrom: ['Cortado', 'V60 Pour Over', 'Matcha Latte', 'Bademli Kruvasan', 'Cold Brew'],
+    alsoTry: ['Fırından sıcacık çıkan bol tarçınlı ve krem peynir soslu taze el yapımı cinnamon roll'],
+    beforeYouGo: [
+      'Kahve çekirdekleri haftalık olarak taze kavrulur; paket kahve alımı yapılabilir.',
+      'Sessiz ve konsantrasyona uygun çalışma alanına sahiptir.'
+    ]
+  },
+  'gokturk-kahve-minoa': {
+    description: "Larus Palas'ın altında binlerce seçkin sanat ve edebiyat kitabıyla çevrili büyüleyici atmosferinde, gurme kahve ve sağlıklı hafif yemekler sunan bağımsız kitap kafe.",
+    whatToOrder: ['Trüflü Mantarlı Tost', 'Minoa Filtre Kahve Harmanı'],
+    menuFrom: ['Granola Kasesi', 'Kinoa Salatası', 'Havuçlu Cevizli Kek', 'Cortado', 'Bitki Çayları'],
+    alsoTry: ['Geniş kütüphane rafları arasında taze demlenmiş aromatik pour-over kahve ve ev yapımı havuçlu kek'],
+    beforeYouGo: [
+      'Geniş kitap koleksiyonunu incelerken vakit geçirmek için ideal bir kültür vahasıdır.',
+      'Açık hava terası kahve molaları için oldukça ferahtır.'
+    ]
+  },
+  'gokturk-kahve-manifesto': {
+    description: "Arcadium Life içerisinde dünya kahve kuşağından özenle seçilen yeşil çekirdekleri yerinde profillendiren, tutkulu baristalarıyla semtin en popüler kahve duraklarından biri.",
+    whatToOrder: ['Cold Drip', 'Double Shot Americano'],
+    menuFrom: ['Latte', 'Espresso Tonic', 'Glutensiz Kurabiye', 'Çikolatalı Brownie', 'Chai Tea Latte'],
+    alsoTry: ['Buz üzerinde yavaş damıtmayla 12 saatte hazırlanan yoğun aromalı cold drip kahve'],
+    beforeYouGo: [
+      'Take-away alıp yakındaki yürüyüş parkurlarına gitmek için çok elverişlidir.',
+      'Hızlı ve güleryüzlü servis sunar.'
+    ]
+  },
+  'gokturk-bistro-enzo': {
+    description: "İstanbul Caddesi Arcadium Life'ta gerçek Napoli odun fırınında 450 derecede pişen çıtır kenarlı pizzaları ve taze el açması makarnalarıyla otantik bir İtalyan trattoria deneyimi.",
+    whatToOrder: ['Pizza Margherita Verace', 'Trüflü Mantarlı Tagliolini'],
+    menuFrom: ['Burrata Caprese', 'Lazanya Al Forno', 'Carpaccio di Manzo', 'Klasik Tiramisu', 'İtalyan Şarapları'],
+    alsoTry: ['San Marzano domates sosu ve manda mozzarellasıyla taş tabanda kabaran çıtır kenarlı napoli pizza'],
+    beforeYouGo: [
+      'Makarnalar günlük olarak mutfakta taze taze açılır.',
+      'Aile yemekleri ve romantik akşamlar için sakin ve sıcak bir ambiyansı vardır.'
+    ]
+  },
+  'gokturk-bistro-bite': {
+    description: "Larus Palas'ta yüksek tavanlı modern endüstriyel mimarisi, sulu gurme burgerleri ve zengin dünya mutfağı seçkisiyle Göktürk'ün en dinamik buluşma mekanı.",
+    whatToOrder: ['Bite Gurme Burger', 'Ağır Ateşte Pişmiş Dana Kaburga Tacos'],
+    menuFrom: ['Trüflü Parmesanlı Patates', 'Çıtır Tavuk Kanat', 'Füme Somonlu Salata', 'Churros', 'Craft Bira Seçkisi'],
+    alsoTry: ['Karamelize soğan, trüf mayonez ve erimiş cheddar peyniriyle hazırlanan sulu kuru dinlendirilmiş dana burger'],
+    beforeYouGo: [
+      'Hafta sonu akşamları genç ve enerjik bir kalabalık ağırlar.',
+      'Açık cadde terası keyifli bir sokak manzarasına sahiptir.'
+    ]
+  },
+  'gokturk-bistro-noir': {
+    description: "Arcadium Life'ta Fransız ve Akdeniz brasserie kültürünü yansıtan şık kadife koltukları, geniş şarap kavı ve usta şef dokunuşlu etleriyle semtin seçkin fine-dining bistro'su.",
+    whatToOrder: ['Ördek Konfi', 'Dana Bonfile Cafe de Paris'],
+    menuFrom: ['Fransız Soğan Çorbası', 'Keçi Peynirli Roka Salatası', 'Somon Izgara', 'Krem Karamel', 'İmza Kokteyller'],
+    alsoTry: ['Dışı çıtır içi lif lif ayrılan fırınlanmış ördek bacağı ve yanında kremamsı patates püresi'],
+    beforeYouGo: [
+      'Şık ve nezih akşam yemekleri için önceden rezervasyon yaptırılması önerilir.',
+      'Zengin bir kadeh şarap kavına sahiptir.'
+    ]
+  },
+  'gokturk-bistro-sushico': {
+    description: "Belediye Caddesi'nde Uzak Doğu mutfağının en taze sushi roll'larını, çıtır ördek ve sıcak wok spesiyallerini Göktürk sakinleriyle buluşturan kaliteli Asya durağı.",
+    whatToOrder: ['Philadelphia Roll', 'Çıtır Zencefilli Tavuk'],
+    menuFrom: ['Edamame', 'Dana Etli Noodle', 'Karidesli Dim Sum', 'Crispy Duck', 'Kızarmış Muz Tatlısı'],
+    alsoTry: ['Taze somon, avokado ve krem peynir dolgulu çıtır tempura kaplamalı özel roll seçkisi'],
+    beforeYouGo: [
+      'Hızlı paket servis ve ferah salon oturma alanı sunar.',
+      'Uzak Doğu lezzetleri arayanlar için Göktürk\'ün en istikrarlı adresidir.'
+    ]
+  },
+  'gokturk-kebap-kosebasi': {
+    description: "İstanbul Caddesi üzerinde geleneksel Adana kebap kültürünü modern sunumlar ve yüksek servis standardıyla birleştiren, Türkiye'nin uluslararası üne sahip kebap klasiği.",
+    whatToOrder: ['Zırh Kıyması Köşebaşı Kebap', 'Toros Salatası'],
+    menuFrom: ['Çöp Şiş', 'İçli Köfte', 'Gavurdağı Salatası', 'Fıstıklı Kebap', 'Ilık Fıstıklı Katmer'],
+    alsoTry: ['Erkek kuzu etinden zırhla kıyılan baharat dengesi kusursuz sulu Adana kebap ve nar ekşili Toros salatası'],
+    beforeYouGo: [
+      'Geniş ve konforlu salonu iş ve aile yemekleri için çok uygundur.',
+      'Hafta sonları rezervasyon yapılması tavsiye edilir.'
+    ]
+  },
+  'gokturk-kebap-gunaydin': {
+    description: "Arcadium Life Çarşısı'nda usta kasapların özel dinlendirilmiş etlerini kömür ızgarasında mükemmel pişirdiği, et severlerin güvenilir adresi.",
+    whatToOrder: ['Dana Lokum Bonfile', 'Günaydın Kasap Köfte'],
+    menuFrom: ['Kuzu Pirzola', 'Antrikot Izgara', 'Kaşarlı Köfte', 'Fırınlanmış Patates', 'Fıstıklı Havuç Dilim Baklava'],
+    alsoTry: ['Kuru dinlendirilmiş (dry-aged) kömür ateşinde mühürlenmiş yumuşacık dana lokum dilimleri'],
+    beforeYouGo: [
+      'Yan tarafındaki kasap reyonundan çiğ et alışverişi de yapılabilir.',
+      'Porsiyonlar doyurucu ve et kalitesi birinci sınıftır.'
+    ]
+  },
+  'gokturk-kebap-bedriusta': {
+    description: "Göktürk Caddesi'nde dumanı tüten dev ocakbaşı tezgahı, taş fırından cızırdayarak çıkan lahmacunları ve çıtır mezeleriyle samimi kebap şöleni.",
+    whatToOrder: ['Köz Patlıcanlı Kebap', 'Çıtır Antep Lahmacun'],
+    menuFrom: ['Kuzu Şiş', 'Alinazik Kebap', 'Çiğ Köfte', 'Közde Biber Domates', 'Künefe'],
+    alsoTry: ['Közlenmiş patlıcan yatağında servis edilen tereyağlı yoğurtlu sulu kuzu kıyma kebabı'],
+    beforeYouGo: [
+      'Ocakbaşı tezgahında oturup ustayı izleyerek yemek yemek ayrı bir keyiftir.',
+      'Hızlı ve samimi bir esnaf kebapçısı ruhunu korur.'
+    ]
+  },
+  'gokturk-kebap-sedatusta': {
+    description: "Çamlık Caddesi üzerinde salaş dükkanında kömür mangalında pişen efsane lavaş dürümleri, sıcak ikramları ve değişmeyen lezzetiyle Göktürk'ün en popüler dürümcüsü.",
+    whatToOrder: ['Özel Soslu Adana Dürüm', 'Kuzu Ciğer Şiş Dürüm'],
+    menuFrom: ['Urfa Dürüm', 'Tavuk Şiş Dürüm', 'Ezme Salata', 'Közlenmiş Sarımsak & Biber', 'Açık Köpüklü Ayran'],
+    alsoTry: ['Taze açılmış sıcak lavaşa sarılı kimyonlu ve sumaklı soğanlı sulu kuzu ciğer dürüm'],
+    beforeYouGo: [
+      'Hızlı bir öğle veya akşam yemeği için son derece pratiktir.',
+      'Fiyat-performans dengesi oldukça yüksektir.'
+    ]
+  },
+  'gokturk-tatli-pelit': {
+    description: "İstanbul Caddesi üzerinde onlarca yıllık pastacılık geleneği, çikolata ustalığı ve zengin pasta büfesiyle kutlamaların ve tatlı molalarının vazgeçilmez adresi.",
+    whatToOrder: ['Pelit Klasik Profiterol', 'Kestaneli Pasta'],
+    menuFrom: ['Millefeuille (Milföy)', 'Trüf Çikolata Kutusu', 'Krokanlı Pasta', 'El Yapımı Macaron', 'Demli Çay'],
+    alsoTry: ['Bol kakao aromalı yoğun ılık çikolata sosuyla kaplanmış taze kremalı profiterol topları'],
+    beforeYouGo: [
+      'Özel gün pastaları ve hediyelik çikolata seçiminde semtin bir numaralı tercihidir.',
+      'Geniş oturma salonunda çay saati çok popülerdir.'
+    ]
+  },
+  'gokturk-tatli-dondurmaci': {
+    description: "Belediye Caddesi'nde saf inek ve keçi sütüyle, katkı maddesiz taze meyvelerle hazırlanan artisan dondurmalarıyla yaz kış önünde kuyruk oluşan mahalle efsanesi.",
+    whatToOrder: ['Gerçek Karadutlu Dondurma', 'Hakiki Sakızlı Dondurma'],
+    menuFrom: ['Belçika Çikolatalı Dondurma', 'Kavunlu Sorbe', 'Bal Badem Dondurma', 'Antep Fıstıklı Külah', 'Limon Sorbe'],
+    alsoTry: ['Çeşme sakızı aromasıyla uzayan yoğun kıvamlı geleneksel sakızlı dondurma'],
+    beforeYouGo: [
+      'Dondurmalarda glikoz şurubu veya renklendirici kullanılmaz.',
+      'Özellikle yaz akşamlarında açık havada uzun yürüyüşlerin vazgeçilmez durağıdır.'
+    ]
+  },
+  'gokturk-tatli-divan': {
+    description: "Arcadium Life'ta Divan pastane mirasının efsanevi Rokoko tatlısı, el yapımı pralinleri ve enfes fırın ürünleriyle lüks tatlı zevkini temsil eden zarif dükkan.",
+    whatToOrder: ['Divan Rokoko', 'Pralin & Truffle Çikolata Seçkisi'],
+    menuFrom: ['Ekler Çeşitleri', 'Frambuazlı Cheesecake', 'Kruvasan', 'Filtre Kahve', 'Sıcak Çikolata'],
+    alsoTry: ['Karamelli beze ve dondurma katmanlarıyla servis edilen sıcak çikolata soslu klasik Divan Rokoko'],
+    beforeYouGo: [
+      'Hediye paketleri ve şık ambalajlı ikramlıklar için çok uygundur.',
+      'Zarif ve sessiz bir pastane kahve deneyimi sunar.'
+    ]
+  },
+  'gokturk-tatli-butterfly': {
+    description: "Larus Palas'ta saf kakao çekirdeklerinden üretilen bean-to-bar artisan çikolataları, sıcak çikolatalı sufleleri ve gurme çikolata kaplı lezzetleriyle tatlı tutkunlarının mabedi.",
+    whatToOrder: ['Taze Çikolatalı Sufle', 'Single Origin Madagaskar Çikolatası'],
+    menuFrom: ['Portakal Çubuklu Bitter Çikolata', 'Çikolatalı Sorbe', 'Tuzlu Karamelli Çikolata', 'Sıcak Bitter Çikolata', 'Espresso'],
+    alsoTry: ['Sipariş üzerine taze pişirilen fırından dumanı tüten akışkan çikolatalı sıcak sufle'],
+    beforeYouGo: [
+      'Türkiye\'nin en kaliteli butik çikolata üreticilerinden biridir.',
+      'Çikolata atölyesi standartlarında katkısız ve saf ürünler sunar.'
+    ]
   }
 };
 

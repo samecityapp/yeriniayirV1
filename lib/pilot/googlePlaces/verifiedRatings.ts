@@ -2970,6 +2970,152 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
+
+  // --- GÖKTÜRK (100% GÖKTÜRK) ---
+  'gokturk-kahve-yasemin': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Yasemin+ve+Ev+Sahipliginde+Istanbul+Cd+Arcadium+Life+No+30+Gokturk',
+      providers: [],
+    },
+  },
+  'gokturk-kahve-boter': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Boter+Coffee+Belediye+Cd+No+25+Gokturk',
+      providers: [],
+    },
+  },
+  'gokturk-kahve-minoa': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Minoa+Gokturk+Istanbul+Cd+Larus+Palas+No+2A+Gokturk',
+      providers: [],
+    },
+  },
+  'gokturk-kahve-manifesto': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Coffee+Manifesto+Istanbul+Cd+Arcadium+Life+No+26+Gokturk',
+      providers: [],
+    },
+  },
+  'gokturk-bistro-enzo': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Trattoria+Enzo+Istanbul+Cd+Arcadium+Life+No+26+Gokturk',
+      providers: [],
+    },
+  },
+  'gokturk-bistro-bite': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Bite+Gokturk+Istanbul+Cd+Larus+Palas+No+28+Gokturk',
+      providers: [],
+    },
+  },
+  'gokturk-bistro-noir': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Brasserie+Noir+Istanbul+Cd+Arcadium+Life+No+26+Gokturk',
+      providers: [],
+    },
+  },
+  'gokturk-bistro-sushico': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=SushiCo+Gokturk+Belediye+Cd+No+1+Gokturk',
+      providers: [],
+    },
+  },
+  'gokturk-kebap-kosebasi': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kosebasi+Gokturk+Istanbul+Cd+No+48+Gokturk',
+      providers: [],
+    },
+  },
+  'gokturk-kebap-gunaydin': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Gunaydin+Kasap+Steakhouse+Arcadium+Life+No+26+Gokturk',
+      providers: [],
+    },
+  },
+  'gokturk-kebap-bedriusta': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Bedri+Usta+Gokturk+Gokturk+Cd+No+15+Gokturk',
+      providers: [],
+    },
+  },
+  'gokturk-kebap-sedatusta': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Durumcu+Sedat+Usta+Camlik+Cd+No+6+Gokturk',
+      providers: [],
+    },
+  },
+  'gokturk-tatli-pelit': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Pelit+Pastanesi+Istanbul+Cd+No+38+Gokturk',
+      providers: [],
+    },
+  },
+  'gokturk-tatli-dondurmaci': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Gokturk+Dondurmacisi+Belediye+Cd+No+11+Gokturk',
+      providers: [],
+    },
+  },
+  'gokturk-tatli-divan': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Divan+Pastanesi+Arcadium+Life+No+26+Gokturk',
+      providers: [],
+    },
+  },
+  'gokturk-tatli-butterfly': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Butterfly+Chocolate+Istanbul+Cd+Larus+Palas+No+2+Gokturk',
+      providers: [],
+    },
+  },
 };
 
 export function getVerifiedGoogleRatings(venueId: string): VisitorGoogleRating[] {
