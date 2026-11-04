@@ -2532,6 +2532,152 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
+
+  // --- NİŞANTAŞI (100% NİŞANTAŞI & TEŞVİKİYE) ---
+  'nisantasi-kahve-petra': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Petra+Roasting+Co+Prof+Dr+Orhan+Ersek+Sk+No+18B+Topagaci',
+      providers: [],
+    },
+  },
+  'nisantasi-kahve-moc': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=MOC+Istanbul+Sakayik+Sk+No+4A+Tesvikiye',
+      providers: [],
+    },
+  },
+  'nisantasi-kahve-spada': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Spada+Coffee+Av+Sureyya+Agaoglu+Sk+No+13A+Tesvikiye',
+      providers: [],
+    },
+  },
+  'nisantasi-kahve-cupofjoy': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Cup+of+Joy+Sair+Nigar+Sk+No+58+Nisantasi',
+      providers: [],
+    },
+  },
+  'nisantasi-kahvalti-kruvasan': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kruvasan+Istanbul+Av+Sureyya+Agaoglu+Sk+No+10+Tesvikiye',
+      providers: [],
+    },
+  },
+  'nisantasi-kahvalti-grandma': {
+    platform: 'google-maps',
+    value: 4.0,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Grandma+Bakery+Cafe+Ahmet+Fetgari+Sk+No+38+Tesvikiye',
+      providers: [],
+    },
+  },
+  'nisantasi-kahvalti-delicatessen': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Delicatessen+Mim+Kemal+Oke+Cd+No+19+Nisantasi',
+      providers: [],
+    },
+  },
+  'nisantasi-kahvalti-breadbutter': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Bread+Butter+Mim+Kemal+Oke+Cd+No+1A+Nisantasi',
+      providers: [],
+    },
+  },
+  'nisantasi-bistro-juno': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Juno+Mim+Kemal+Oke+Cd+No+15+Nisantasi',
+      providers: [],
+    },
+  },
+  'nisantasi-bistro-spago': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Spago+The+St+Regis+Istanbul+Mim+Kemal+Oke+Cd+No+35',
+      providers: [],
+    },
+  },
+  'nisantasi-bistro-glens': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Glens+Istanbul+Abdi+Ipekci+Cd+No+12+Nisantasi',
+      providers: [],
+    },
+  },
+  'nisantasi-bistro-beymen': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Beymen+Brasserie+Abdi+Ipekci+Cd+No+23+Nisantasi',
+      providers: [],
+    },
+  },
+  'nisantasi-tatli-divan': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Divan+Pastanesi+Mim+Kemal+Oke+Cd+No+1+Nisantasi',
+      providers: [],
+    },
+  },
+  'nisantasi-tatli-vakko': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Vakko+LAtelier+Abdi+Ipekci+Cad+No+43+Nisantasi',
+      providers: [],
+    },
+  },
+  'nisantasi-tatli-tatbak': {
+    platform: 'google-maps',
+    value: 4.0,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Tatbak+Akkavak+Sk+No+38B+Nisantasi',
+      providers: [],
+    },
+  },
+  'nisantasi-tatli-pelit': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Pelit+Pastanesi+Rumeli+Cd+No+13+Nisantasi',
+      providers: [],
+    },
+  },
 };
 
 export function getVerifiedGoogleRatings(venueId: string): VisitorGoogleRating[] {

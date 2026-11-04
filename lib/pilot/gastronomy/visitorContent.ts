@@ -2809,6 +2809,168 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Geniş meydan manzaralı terasında oturup Taksim\'in ritmini izleyebilirsiniz.',
       'El yapımı çikolata ve pasta paketleri çok rağbet görür.'
     ]
+  },
+
+  // --- NİŞANTAŞI ---
+  'nisantasi-kahve-petra': {
+    description: "Topağacı'nın sakin köşesinde 1930'lar retro tasarımı, özenle kavrulmuş tek kökenli çekirdekleri ve zanaatkar espresso profilleriyle kahve tutkunlarının değişmez buluşma noktası.",
+    whatToOrder: ['Acme Espresso Blend', 'Batch Brew Filtre Kahve'],
+    menuFrom: ['Cortado', 'Flat White', 'Cold Brew', 'Avokadolu Tost', 'Tarçınlı Çörek'],
+    alsoTry: ['Tek kökenli mikro-lot çekirdekten taze demlenen çiçeksi ve meyvemsi filtre kahve'],
+    beforeYouGo: [
+      'Hafta sonu sabahları hareketlidir; taze çekirdek kahveleri paket olarak alabilirsiniz.',
+      'Kaldırımdaki minik masalarında Topağacı mahalle akışını izlemek çok keyiflidir.'
+    ]
+  },
+  'nisantasi-kahve-moc': {
+    description: "Şakayık Sokak'ta dev kahve kavurma makinesi, iki katlı endüstriyel mekanı ve Avustralya tarzı nitelikli kahve çeşitleriyle Nişantaşı'nın 3. dalga öncüsü.",
+    whatToOrder: ['Cold Drip (Soğuk Damlama)', 'Flat White'],
+    menuFrom: ['Espresso', 'Chili Mocca', 'V60 Pour Over', 'Kruvasan Sandviç', 'Havuçlu Kek'],
+    alsoTry: ['Özel kulelerde saatlerce damla damla demlenen yoğun aromalı buz gibi cold drip kahve'],
+    beforeYouGo: [
+      'Üst katı laptop ile çalışmak veya toplantı yapmak için çok elverişlidir.',
+      'Geniş oturma alanı günün her saati canlıdır.'
+    ]
+  },
+  'nisantasi-kahve-spada': {
+    description: "Avukat Süreyya Ağaoğlu Sokak'ta minimalist modern mimarisi, ödüllü çekirdek kavrumları ve sakin ortamıyla Teşvikiye'nin en rafine butik kahvecisi.",
+    whatToOrder: ['Spada İmza Flat White', 'Aeropress Filtre Kahve'],
+    menuFrom: ['Espresso', 'Cortado', 'Buzlu Latte', 'Muzlu Ekmek (Banana Bread)', 'Granola'],
+    alsoTry: ['İpeksi süt dokusuyla hazırlanan dengeli flat white ve taze ısıtılmış muzlu ekmek'],
+    beforeYouGo: [
+      'Sessiz, sakin ve kaliteli bir kahve molası arayanlar için idealdir.',
+      'Baristalar kahve tadım notaları konusunda oldukça bilgilidir.'
+    ]
+  },
+  'nisantasi-kahve-cupofjoy': {
+    description: "Şair Nigar Sokak'ta saklı ferah avlusu, organik çiğ (raw) tatlıları ve özel kavrulmuş kahveleriyle Nişantaşı'nın en neşeli kaçış noktası.",
+    whatToOrder: ['V60 Single Origin', 'Şekersiz Raw Brownie'],
+    menuFrom: ['Americano', 'Matcha Latte', 'Badem Sütlü Cappuccino', 'Chia Puding', 'Glutensiz Kurabiye'],
+    alsoTry: ['Bitkisel süt alternatifleriyle hazırlanan buzlu matcha latte ve ev yapımı raw brownie'],
+    beforeYouGo: [
+      'Açık hava avlusu bahar ve yaz aylarında çok popülerdir.',
+      'Sağlıklı, glutensiz ve vegan atıştırmalık seçenekleri çok zengindir.'
+    ]
+  },
+  'nisantasi-kahvalti-kruvasan': {
+    description: "Avukat Süreyya Ağaoğlu Sokak'ta her sabah fırından yayılan buram buram tereyağı kokusu, çıtır Fransız kruvasanları ve zengin şarküteri kahvaltı tabaklarıyla bir Teşvikiye fenomeni.",
+    whatToOrder: ['Çırpılmış Yumurtalı & Füme Kaburgalı Kruvasan', 'Kruvasan Benedict'],
+    menuFrom: ['Bademli Kruvasan', 'Nutellalı Çilekli Kruvasan', 'Ekşi Mayalı Tost', 'Taze Portakal Suyu', 'Filtre Kahve'],
+    alsoTry: ['Fırından yeni çıkmış sıcak tereyağlı kruvasan arasında poşe yumurta ve ev yapımı hollandez sos'],
+    beforeYouGo: [
+      'Hafta sonu sabahları uzun kuyruklar oluşabilir; erken saatte gitmek avantajlıdır.',
+      'Take-away olarak sıcak kruvasan paketletip Teşvikiye Parkı\'nda yemek çok yaygındır.'
+    ]
+  },
+  'nisantasi-kahvalti-grandma': {
+    description: "Ahmet Fetgari Sokak'ta anne eli değmiş hissi veren artisan ekşi mayalı ekmekleri, renkli taze salataları ve fırından çıkan sıcak hamur işleriyle huzurlu bir brunch mekanı.",
+    whatToOrder: ['Ekşi Mayalı Avokadolu Poşe Yumurta', 'Fırınlanmış Çıtır Kiş'],
+    menuFrom: ['Granola Kasesi', 'Pancake Tabağı', 'Otlu Peynirli Omlet', 'Ev Yapımı Limonata', 'Flat White'],
+    alsoTry: ['Kendi fırınlarında taş tabanda pişen ekşi mayalı ekmek üzerinde avokado püresi ve poşe yumurta'],
+    beforeYouGo: [
+      'Pazar brunchları için Teşvikiye\'nin en popüler adreslerinden biridir.',
+      'Tezgahtaki günlük zeytinyağlıları ve tartları mutlaka inceleyin.'
+    ]
+  },
+  'nisantasi-kahvalti-delicatessen': {
+    description: "Mim Kemal Öke Caddesi'nde zengin şarküteri dolabı, seçkin peynir kavı, taze ekşi mayalı sandviçleri ve gurme kahvaltı tabaklarıyla Nişantaşı elitlerinin klasik durağı.",
+    whatToOrder: ['Gurme Şarküteri & Peynir Kahvaltı Tabağı', 'Füme Somonlu Bagel'],
+    menuFrom: ['Trüflü Çırpılmış Yumurta', 'Granola', 'Fırın Tost', 'Taze Sıkma Meyve Suyu', 'Espresso'],
+    alsoTry: ['Yerli ve ithal artisan peynirlerle donatılmış zengin şarküteri kahvaltı tepsisi'],
+    beforeYouGo: [
+      'Girişindeki şarküteri bölümünden gurme ürünler satın alabilirsiniz.',
+      'Günün her saati şık ve sakin bir brasserie atmosferine sahiptir.'
+    ]
+  },
+  'nisantasi-kahvalti-breadbutter': {
+    description: "Mim Kemal Öke Caddesi'nde küçük, sevimli ve sıcak mekanında fırından taze çıkan ev kekleri, pancake\'leri ve tereyağlı çıtır ekmekleriyle samimi bir mahalle fırın-kafesi.",
+    whatToOrder: ['Akçaağaç Şuruplu Fluffy Pancake', 'Sahanda Sucuklu Köy Yumurtası'],
+    menuFrom: ['Avokadolu Tost', 'Ev Yapımı Reçeller', 'Kruvasan', 'Filtre Kahve', 'Demleme Çay'],
+    alsoTry: ['Kabarmış yumuşacık sıcak pancake katları üzerine taze orman meyveleri ve akçaağaç şurubu'],
+    beforeYouGo: [
+      'İç mekan oldukça butiktir; hafta sonu kahvaltı saatlerinde sıra beklenebilir.',
+      'Rahatlatıcı ev atmosferinde keyifli bir sabah başlangıcı sunar.'
+    ]
+  },
+  'nisantasi-bistro-juno': {
+    description: "Mim Kemal Öke Caddesi'nde samimi ahşap dekorasyonu, ince hamurlu çıtır pizzaları, taze el yapımı makarnaları ve zengin barıyla Nişantaşı'nın en sevilen mahalle bistrosu.",
+    whatToOrder: ['Trüflü Yaban Mantarlı Pizza', 'Dana Kaburga Ragu Fettuccine'],
+    menuFrom: ['Caprese Salata', 'Izgara Somon', 'Mini Burger Tabağı', 'Tiramisu', 'İmza Kokteyller'],
+    alsoTry: ['Odun fırını lezzetinde incecik hamurla hazırlanan taze mozzarella ve trüflü mantar pizza'],
+    beforeYouGo: [
+      'Akşamüstü aperitivo ve akşam yemekleri için semt sakinlerinin değişmez buluşma yeridir.',
+      'Rezervasyon yaptırmanız tavsiye edilir.'
+    ]
+  },
+  'nisantasi-bistro-spago': {
+    description: "The St. Regis Hotel'in çatı katında iki Michelin yıldızlı dünyaca ünlü şef Wolfgang Puck'ın imzasını taşıyan, Maçka Parkı ve Boğaz manzaralı ultra lüks fine dining restoranı.",
+    whatToOrder: ['Füme Somonlu İkonik Pizza', 'Ağır Ateşte Pişmiş Dana Yanak'],
+    menuFrom: ['Akdeniz Levrek Izgara', 'Kral Yengeç Salata', 'Trüflü Risotto', 'Çikolatalı Sufle', 'Özel Kokteyl Kavı'],
+    alsoTry: ['Şef Wolfgang Puck\'ın dünya çapında ünlü çıtır havyarlı ve füme somonlu imza pizzası'],
+    beforeYouGo: [
+      'Michelin Rehberi tavsiyeli seçkin bir restorandır; günler öncesinden rezervasyon şarttır.',
+      'Şık giyim kuralı (smart elegant) uygulanır; manzaralı teras barı gün batımında büyüleyicidir.'
+    ]
+  },
+  'nisantasi-bistro-glens': {
+    description: "Abdi İpekçi Caddesi üzerinde Glens Palas'ın görkemli atmosferinde, Akdeniz ve İtalyan mutfağını sofistike sunumlarla buluşturan Michelin seçkisi şık brasserie.",
+    whatToOrder: ['Glens İmza Bonfile', 'Deniz Mahsullü Risotto'],
+    menuFrom: ['Burrata Salatası', 'Fırınlanmış Kuzu Sırtı', 'Linguine Alle Vongole', 'Profiterol', 'Sommelier Şarap Seçkisi'],
+    alsoTry: ['Taze manda burratası eşliğinde fesleğenli domates carpaccio ve fırınlanmış taze bonfile'],
+    beforeYouGo: [
+      'Abdi İpekçi Caddesi\'nin lüks alışveriş temposunun kalbinde yer alır.',
+      'Akşam yemeklerinde canlı DJ ritimleri ve loş aydınlatmayla seçkin bir ambiyans kazanır.'
+    ]
+  },
+  'nisantasi-bistro-beymen': {
+    description: "Abdi İpekçi Caddesi üzerinde Beymen mağazasının ön cephesinde, cemiyet hayatının ve modaseverlerin yıllardır vazgeçemediği zarif Fransız brasserie klasiği.",
+    whatToOrder: ['Cafe de Paris Soslu Bonfile', 'Brasserie Usulü Dana Şnitzel'],
+    menuFrom: ['Fransız Soğan Çorbası', 'Kinoa & Somon Salata', 'Kulüp Sandviç', 'Krem Karamel', 'Seçkin Şampanya Menüsü'],
+    alsoTry: ['Bakır tavada özel sosuyla cızırdayan ince bonfile dilimleri ve yanında sınırsız kibrit patates'],
+    beforeYouGo: [
+      'Caddeye bakan açık hava masaları semtin en popüler "görmek ve görülmek" noktasıdır.',
+      'Öğle yemekleri ve akşamüstü kahveleri için daima hareketlidir.'
+    ]
+  },
+  'nisantasi-tatli-divan': {
+    description: "Mim Kemal Öke Caddesi köşesinde Türk pastacılığının zirvesi olarak Rokoko pastası, madlen çikolataları ve fıstıklı makaronlarıyla Nişantaşı'nın asil lezzet mabedi.",
+    whatToOrder: ['Divan İkonik Rokoko', 'El Yapımı Madlen Çikolata'],
+    menuFrom: ['Ekler', 'Badem Ezmesi', 'Çilekli Tart', 'Profiterol', 'Geleneksel Türk Kahvesi'],
+    alsoTry: ['Dondurulmuş beze katları ve yoğun sıcak eritilmiş çikolata sosuyla servis edilen meşhur Rokoko'],
+    beforeYouGo: [
+      'Özel kutlamalar, doğum günleri ve hediyelik çikolata için semtin en prestijli adresidir.',
+      'Şık kafesinde oturup tatlınızı servis alabilirsiniz.'
+    ]
+  },
+  'nisantasi-tatli-vakko': {
+    description: "Abdi İpekçi Caddesi'nde Fransız pastacılık zarafetini el yapımı çikolatalarla buluşturan, artisan kruvasanları ve kusursuz tatlı sunumlarıyla bir lüks yaşam simgesi.",
+    whatToOrder: ['Vakko Chocolate Spesiyal', 'Paris-Brest'],
+    menuFrom: ['Millefeuille (Milföy)', 'Fıstıklı Tart', 'Makaron Çeşitleri', 'Artisan Dondurma', 'İmza Çay Harmanları'],
+    alsoTry: ['İsviçre çikolatası uzmanlığıyla hazırlanan fındık kremalı ve çıtır pralinli Vakko spesiyal çikolatalar'],
+    beforeYouGo: [
+      'Görsel estetiği çok yüksek, zarif ve fotojenik bir salona sahiptir.',
+      'Özel gün hediyeleri için şık ambalajlı ürünler tercih edilir.'
+    ]
+  },
+  'nisantasi-tatli-tatbak': {
+    description: "Akkavak Sokak'ta 1960'tan beri Gaziantep mutfak mirasını yaşatan, çıtır altın sarısı fıstıklı baklavasıyla Michelin Bib Gourmand listesine giren yaşayan bir efsane.",
+    whatToOrder: ['Havuç Dilim Baklava (Kaymaklı)', 'Kare Fıstıklı Baklava'],
+    menuFrom: ['Fıstık Sarma', 'Şöbiyet', 'Çıtır Lahmacun', 'Köz Patlıcanlı Kebap', 'Açık Ayran'],
+    alsoTry: ['Fırından taze çıkmış çıtır ılık havuç dilim baklavanın arasına hakiki Maraş kaymağı koydurmak'],
+    beforeYouGo: [
+      'Gaziantep usulü orijinal taş fırın lezzetleri sunar; Vedat Milor\'un en yüksek not verdiği yerlerdendir.',
+      'Öğle saatlerinde hem çıtır lahmacun hem de baklava için kapısında sıra olabilir.'
+    ]
+  },
+  'nisantasi-tatli-pelit': {
+    description: "Rumeli Caddesi girişinde yarım asrı aşkın süredir çikolatalı pastaları, taze tartları ve kestane şekerleriyle nesiller boyu Nişantaşı ailelerinin tatlı tercihi.",
+    whatToOrder: ['Kestaneli Çikolatalı Pasta', 'Valonia Çikolata Seçkisi'],
+    menuFrom: ['Profiterol', 'Çilekli Ekler', 'Tuzlu Pastane Kurabiyesi', 'Fıstıklı Draje', 'Filtre Kahve'],
+    alsoTry: ['Hakiki Bursa kestaneleri ve zengin Belçika çikolatasıyla hazırlanan taze katlı pasta'],
+    beforeYouGo: [
+      'Geniş vitrininde günlük yüzlerce taze pasta çeşidi sergilenir.',
+      'Çay ve kahve eşliğinde nostaljik bir pastane molası için çok uygundur.'
+    ]
   }
 };
 

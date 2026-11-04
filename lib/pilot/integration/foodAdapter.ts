@@ -345,9 +345,21 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    path: ['istanbul', 'sisli', 'nisantasi'],
    displayName: 'Nişantaşı, Şişli, İstanbul',
    locative: "Nişantaşı'nda",
-   status: 'coming_soon',
-   aliases: ['Nişantaşı', 'Nisantasi', 'Teşvikiye', 'Abdi İpekçi'],
-   scopeNote: 'Şişli · Nişantaşı (Araştırmada)'
+   status: 'published',
+   aliases: ['Nişantaşı', 'Nisantasi', 'Teşvikiye', 'Abdi İpekçi', 'Mim Kemal Öke', 'Valikonağı', 'Topağacı', 'Maçka'],
+   scopeNote: 'Şişli · Nişantaşı & Teşvikiye (Yayında)'
+  },
+  {
+   id: 'nisantasi-sisli',
+   level: 'semt',
+   name: 'Nişantaşı',
+   slug: 'nisantasi',
+   path: ['istanbul', 'sisli', 'nisantasi'],
+   displayName: 'Nişantaşı, Şişli, İstanbul',
+   locative: "Nişantaşı'nda",
+   status: 'published',
+   aliases: ['Nişantaşı', 'Nisantasi', 'Teşvikiye', 'Abdi İpekçi', 'Mim Kemal Öke', 'Valikonağı', 'Topağacı', 'Maçka'],
+   scopeNote: 'Şişli · Nişantaşı & Teşvikiye (Yayında)'
   },
   {
    id: 'bebek',
