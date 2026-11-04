@@ -2971,6 +2971,165 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Geniş vitrininde günlük yüzlerce taze pasta çeşidi sergilenir.',
       'Çay ve kahve eşliğinde nostaljik bir pastane molası için çok uygundur.'
     ]
+  },
+
+  // --- BEBEK ---
+  'bebek-kahve-bebekkahve': {
+    description: "Bebek Parkı'nın yanı başında ulu çınar ağaçlarının gölgesinde, Boğaz dalgalarına sıfır tahta masaları ve demli çayıyla 1945'ten beri İstanbul'un en ikonik sahil kahvehanesi.",
+    whatToOrder: ['Közde Türk Kahvesi', 'Demleme Çay & Taze Simit'],
+    menuFrom: ['Beyaz Peynirli Kaşarlı Tost', 'Menemen', 'Sahanda Yumurta', 'Limonata', 'Ayran'],
+    alsoTry: ['Sabah erken saatte Boğaz martıları eşliğinde taze fırın simidi, beyaz peynir ve közde demli çay'],
+    beforeYouGo: [
+      'Deniz kenarındaki ön sıra masalar için sabah saatlerinde gitmek avantaj sağlar.',
+      'Salaş, otantik ve şehrin en prestijli buluşma noktalarından biridir.'
+    ]
+  },
+  'bebek-kahve-mangerie': {
+    description: "Cevdet Paşa Caddesi üzerinde tarihi binanın üçüncü katındaki saklı terasında, kesintisiz Boğaz manzarasına karşı yaratıcı ve zengin gurme kahvaltısıyla bir Bebek klasiği.",
+    whatToOrder: ['Mangerie Pancake', 'Füme Somonlu Yumurta'],
+    menuFrom: ['Avokadolu Poşe Yumurta', 'Bacon & Cheddar Omlet', 'Granola Kasesi', 'Filtre Kahve', 'Ev Yapımı Buzlu Çay'],
+    alsoTry: ['Boğaz esintili balkonda çıtır çıtır kabarmış tereyağlı pancake ve taze orman meyveleri'],
+    beforeYouGo: [
+      'Girişi bir apartman kapısındandır ve asansörle 3. kata çıkılır.',
+      'Hafta sonu brunch saatlerinde kapısında sıra olabilir; erken gitmek tavsiye edilir.'
+    ]
+  },
+  'bebek-kahve-lucca': {
+    description: "Cevdet Paşa Caddesi'nin kalbinde gündüzleri sofistike bir brasserie, akşamüstünden itibaren dünya standartlarında miksoloji kokteylleriyle İstanbul cemiyet hayatının küresel buluşma noktası.",
+    whatToOrder: ['Lucca Satsuma Kokteyli', 'Tavuk Ciğeri Parfe'],
+    menuFrom: ['Ördek Ragu Pappardelle', 'Trüflü Patates Kızartması', 'Mini Burger Seçkisi', 'Burrata', 'Şarap Kavı'],
+    alsoTry: ['Bodrum satsuma mandalinasıyla hazırlanan dünyaca ünlü Lucca Style Satsuma kokteyli'],
+    beforeYouGo: [
+      'Özellikle perşembe, cuma ve cumartesi akşamları rezervasyonsuz yer bulmak zordur.',
+      'Gündüzleri açık hava sokak masalarında keyifli bir kahve veya hafif öğle yemeği sunar.'
+    ]
+  },
+  'bebek-kahve-cupofjoy': {
+    description: "Yasemin Pasajı'nın sakin avlusunda Türkiye'nin ilk üçüncü dalga kahve öncüsü olarak açılan, taze kavrum single-origin çekirdekleri ve samimi baristalarıyla butik kahve mabedi.",
+    whatToOrder: ['Flat White', 'Single Origin V60 Pour Over'],
+    menuFrom: ['Cortado', 'Cold Brew', 'Glutensiz Brownie', 'Raw İncirli Bar', 'Matcha Latte'],
+    alsoTry: ['Kusursuz kadife süt köpüğüyle hazırlanan taze kavrum double shot flat white'],
+    beforeYouGo: [
+      'Cevdet Paşa Caddesi üzerindeki Yasemin Pasajı içerisindedir; cadde gürültüsünden izoledir.',
+      'Take-away alıp Bebek Sahili boyunca yürüyüşe çıkmak semtin en popüler ritüelidir.'
+    ]
+  },
+  'bebek-tatli-bademezmesi': {
+    description: "1904 yılında Mudanyalı Mehmet Halil Bey tarafından kurulan, asırlık mermer tezgahlarda katkısız saf badem ve pancar şekeriyle dövülen badem ezmesiyle dünyanın en seçkin tatlı miraslarından biri.",
+    whatToOrder: ['Tarihi Bebek Badem Ezmesi', 'Fıstık Ezmesi'],
+    menuFrom: ['Acıbadem Kurabiyesi', 'Çikolata Kaplı Badem Ezmesi', 'Ceviz Ezmesi', 'Hediyelik Ahşap Kutu Seçkisi'],
+    alsoTry: ['Ağızda eriyen taze dövülmüş ipeksi badem ezmesi ve duble fıstıklı yeşil ezme'],
+    beforeYouGo: [
+      'Tarihi küçük dükkan aynı aile tarafından 4 kuşaktır özenle işletilmektedir.',
+      'Şık hediyelik kutuları İstanbul\'un en prestijli ikramlıklarından biridir.'
+    ]
+  },
+  'bebek-tatli-minidondurma': {
+    description: "1968 yılından beri Cevdet Paşa Caddesi'nde sadece 4 metrekarelik küçücük dükkanında, gerçek meyve ve manda sütüyle yapılan sakızlı, karadutlu ve güllü dondurmalarıyla bir Boğaz efsanesi.",
+    whatToOrder: ['Karadutlu & Sakızlı Dondurma', 'Kestaneli & Bitter Çikolatalı Külah'],
+    menuFrom: ['Kavunlu Dondurma', 'Güllü Lokumlu Dondurma', 'Tahinli Dondurma', 'Limonlu Sorbe', 'Vişneli Dondurma'],
+    alsoTry: ['Ege karadutlarından yapılan koyu mor doğal dondurma ve Çeşme damla sakızlı yoğun sütlü külah'],
+    beforeYouGo: [
+      'Dükkan oldukça küçüktür; özellikle yaz akşamları sahil boyunca uzun kuyruklar oluşur.',
+      'Tamamen doğal meyvelerle günlük taze üretilir.'
+    ]
+  },
+  'bebek-tatli-abbaswaffle': {
+    description: "1983 yılında Bebek'te minik bir büfede başlayarak Türkiye'yi Belçika waffle hamuruyla tanıştıran, sıcak çıtır petek hamuru ve bol taze meyvesiyle gece tatlı krizlerinin başrolü.",
+    whatToOrder: ['Abbas Klasik Çikolatalı & Çilekli Waffle', 'Kestane Püreli Waffle'],
+    menuFrom: ['Muzlu Fındıklı Waffle', 'Kivi & Beyaz Çikolatalı Waffle', 'Dondurmalı Waffle', 'Taze Limonata'],
+    alsoTry: ['Demir döküm ızgaradan yeni çıkmış sıcacık çıtır waffle üzerine eritme çikolata, çilek ve Antep fıstığı'],
+    beforeYouGo: [
+      'Gece geç saatlere kadar açıktır; Bebek sahil yürüyüşlerinin vazgeçilmez tatlısıdır.',
+      'Malzemeleri tezgaha bakarak dilediğiniz gibi kişiselleştirebilirsiniz.'
+    ]
+  },
+  'bebek-tatli-baylan': {
+    description: "Cevdet Paşa Caddesi'nde Boğaz kıyısındaki modern üç katlı cam mekanında, 1923'ten bugüne uzanan Kup Griye, Adisababa ve Trüf pastalarıyla Türk pastacılık tarihinin en zarif temsilcisi.",
+    whatToOrder: ['Efsanevi Kup Griye', 'Adisababa'],
+    menuFrom: ['Monte Carlo Pastası', 'Trüf Kek', 'Karamelli Makaron', 'Geleneksel Türk Kahvesi', 'Demleme Çay'],
+    alsoTry: ['Karamel sosu, vanilyalı dondurma, krema şanti ve çıtır badem krokanla servis edilen meşhur Kup Griye'],
+    beforeYouGo: [
+      'Deniz sıfır teras katında oturup Boğaz gemi trafiğini izleyebilirsiniz.',
+      'Özel gün kutlamaları ve zarif ikramlar için ideal bir atmosfer sunar.'
+    ]
+  },
+  'bebek-balik-poseidon': {
+    description: "Cevdet Paşa Caddesi'nde deniz kıyısında dalgaların hemen üstündeki konumuyla, günlük taze Boğaz balıkları, zengin zeytinyağlı mezeleri ve seçkin şarap kavıyla romantik bir deniz mabedi.",
+    whatToOrder: ['Tuzda Levrek', 'Izgara Kalamar & Ahtapot'],
+    menuFrom: ['Balık Çorbası', 'Karides Güveç', 'Levrek Marin', 'Lakerda', 'Günün Boğaz Balığı'],
+    alsoTry: ['Alevler içinde masada kırılarak sunulan sulu deniz levreği ve çıtır ızgara ahtapot bacağı'],
+    beforeYouGo: [
+      'Suya sıfır masalar için mutlaka önceden rezervasyon yaptırılmalıdır.',
+      'Deniz üzerinde yemek yiyormuş hissi uyandıran büyüleyici bir konuma sahiptir.'
+    ]
+  },
+  'bebek-balik-chilai': {
+    description: "Cevdet Paşa Caddesi'nde Boğaz'a sıfır cam cephesi, lüks şık dekorasyonu, sushi barı ve Akdeniz deniz mahsulleriyle modern sahil gastronomi deneyimi.",
+    whatToOrder: ['Chilai İmza Sushi Tabağı', 'Fırınlanmış Deniz Levreği'],
+    menuFrom: ['Ahtapot Carpaccio', 'Trüflü Karides', 'Somon Izgara', 'İmza Kokteyller', 'Çikolatalı Sufle'],
+    alsoTry: ['Boğaz sularına bakan açık terasta taze sarılmış gurme sushi roll ve imza sahil kokteylleri'],
+    beforeYouGo: [
+      'Gündüz deniz manzaralı ferah bir bistro, akşam ise DJ müzikleriyle canlı bir mekana dönüşür.',
+      'Vale hizmeti mevcuttur.'
+    ]
+  },
+  'bebek-balik-bebekotel': {
+    description: "The Stay bünyesinde 1950'lerden bu yana Türk sinemasının ve cemiyet hayatının simgesi olan Bebek Oteli'nin terasında, Boğaz'ın en seçkin sahil manzarasına karşı servis edilen taze deniz lezzetleri.",
+    whatToOrder: ['Izgara Boğaz Lüferi', 'Deniz Mahsullü Risotto'],
+    menuFrom: ['Ahtapot Salatası', 'Istakozlu Makarna', 'Kalamar Tava', 'Somon Tartar', 'Koleksiyon Şarap Seçkisi'],
+    alsoTry: ['Boğaz akıntısına sıfır masalarda günlük avlanan çıtır derili sulu Boğaz balığı'],
+    beforeYouGo: [
+      'Şehrin en prestijli ve seçkin Boğaz teraslarından biridir; rezervasyon tavsiye edilir.',
+      'Teras barı gün batımı saatlerinde çok rağbet görür.'
+    ]
+  },
+  'bebek-balik-bebekbalikci': {
+    description: "1974'ten beri Bebek Koyu'nun kıyısında devlet adamlarını, dünya yıldızlarını ve gurmeleri ağırlayan, klasik usulde pişirilen günlük deniz balıklarıyla şehrin en köklü balık restoranı.",
+    whatToOrder: ['Kalkan Balığı Tava', 'Taze Boğaz Lakerdası'],
+    menuFrom: ['Balık Köftesi', 'Fava', 'Deniz Börülcesi', 'Izgara Çipura', 'Sıcak İncir Tatlısı'],
+    alsoTry: ['Bakır tavada nar gibi kızartılmış mısır unlu çıtır Boğaz kalkanı ve yanında taze roka salatası'],
+    beforeYouGo: [
+      'Geleneksel ve üst düzey servis kalitesine sahiptir.',
+      'Pencere kenarı deniz masaları için önceden rezervasyon önerilir.'
+    ]
+  },
+  'bebek-bistro-divan': {
+    description: "Cevdet Paşa Caddesi üzerinde Boğaz sularına nazır geniş açık hava terasında, Divan mutfak ekolünün Akdeniz ve dünya klasikleriyle harmanlandığı lüks sahil brasserie'si.",
+    whatToOrder: ['Ağır Ateşte Pişmiş Dana İncik', 'Divan Şnitzel'],
+    menuFrom: ['Deniz Mahsüllü Linguine', 'Izgara Somon', 'Sezar Salata', 'Divan Rokoko', 'Kokteyl Menüsü'],
+    alsoTry: ['Boğaz esintisinde taze el açması deniz mahsüllü linguine ve ardından klasik Divan Rokoko tatlısı'],
+    beforeYouGo: [
+      'Geniş deniz kıyısı terası özellikle hafta sonları iş ve aile yemekleri için çok popülerdir.',
+      'Servis kalitesi ve konforu üst düzeydedir.'
+    ]
+  },
+  'bebek-bistro-taps': {
+    description: "Cevdet Paşa Caddesi'nin Aşiyan yönündeki görkemli köşesinde, Boğaz manzaralı terası, zengin dünya mutfağı lezzetleri ve gurme burgerleriyle sahilin en popüler rahat gastronomi durağı.",
+    whatToOrder: ['Taps Özel Gurme Burger', 'Çıtır Tavuk Sepeti'],
+    menuFrom: ['Dana Bonfile Izgara', 'Taş Fırın Pizza Çeşitleri', 'Meksika Fajita', 'Nachos', 'Fıçı İçecek Seçkisi'],
+    alsoTry: ['Karamelize soğan ve cheddar soslu sulu gurme dana burger ve yanında baharatlı elma dilim patates'],
+    beforeYouGo: ['Arkadaş buluşmaları ve maç izleme saatlerinde canlı ve enerjik bir atmosfer sunar.', 'Üst kat terasından Boğaz manzarası oldukça geniştir.']
+  },
+  'bebek-bistro-kirinti': {
+    description: "Cevdet Paşa Caddesi üzerinde geniş porsiyonları, dinamik atmosferi, zengin dünya mutfağı menüsü ve wrap çeşitleriyle gençlerin ve ailelerin Bebek'teki neşeli adresi.",
+    whatToOrder: ['Kırıntı Fajita Tabağı', 'BBQ Soslu Dana Kaburga Burger'],
+    menuFrom: ['Tavuklu Sezar Salata', 'Quesadilla', 'Kremalı Mantarlı Makarna', 'Cheesecake', 'Milkshake'],
+    alsoTry: ['Dumanı üstünde cızırdayarak masaya gelen taze tortillalı et fajita tabağı'],
+    beforeYouGo: [
+      'Porsiyonlar oldukça cömert ve doyurucudur.',
+      'Bebek sahilinde hızlı, rahat ve keyifli bir öğle veya akşam yemeği için çok pratiktir.'
+    ]
+  },
+  'bebek-bistro-midpoint': {
+    description: "Cevdet Paşa Caddesi sahil hattında her damak tadına hitap eden geniş dünya menüsü, rahat oturma alanları ve Boğaz manzaralı masalarıyla günün her saati hareketli bir buluşma mekanı.",
+    whatToOrder: ['Cafe de Paris Soslu Tavuk', 'Midpoint Burger'],
+    menuFrom: ['Izgara Somon', 'Penne Arabbiata', 'Hellim Salata', 'Sıcak Çikolatalı Kek', 'Taze Limonata'],
+    alsoTry: ['Özel tereyağlı aromatik sosunda servis edilen ince dilim tavuk göğsü ve patates kızartması'],
+    beforeYouGo: [
+      'Günün her saati kesintisiz servis sunar.',
+      'Sahil yürüyüşü molasında ferah bir içecek veya yemek için daima yer bulunabilen geniş bir alana sahiptir.'
+    ]
   }
 };
 

@@ -369,9 +369,21 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    path: ['istanbul', 'besiktas', 'bebek'],
    displayName: 'Bebek, Beşiktaş, İstanbul',
    locative: "Bebek'te",
-   status: 'coming_soon',
-   aliases: ['Bebek', 'Cevdet Paşa'],
-   scopeNote: 'Beşiktaş · Bebek (Araştırmada)'
+   status: 'published',
+   aliases: ['Bebek', 'Cevdet Paşa', 'Bebek Parkı', 'Bebek Koyu'],
+   scopeNote: 'Beşiktaş · Bebek Sahil & Koyu (Yayında)'
+  },
+  {
+   id: 'bebek-besiktas',
+   level: 'semt',
+   name: 'Bebek',
+   slug: 'bebek',
+   path: ['istanbul', 'besiktas', 'bebek'],
+   displayName: 'Bebek, Beşiktaş, İstanbul',
+   locative: "Bebek'te",
+   status: 'published',
+   aliases: ['Bebek', 'Cevdet Paşa', 'Bebek Parkı', 'Bebek Koyu'],
+   scopeNote: 'Beşiktaş · Bebek Sahil & Koyu (Yayında)'
   },
   {
    id: 'yenikoy',

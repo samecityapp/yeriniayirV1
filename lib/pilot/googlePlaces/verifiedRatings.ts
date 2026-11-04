@@ -2678,6 +2678,152 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
+
+  // --- BEBEK (100% BEBEK) ---
+  'bebek-kahve-bebekkahve': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Bebek+Kahve+Cevdet+Pasa+Cd+No+18+Bebek',
+      providers: [],
+    },
+  },
+  'bebek-kahve-mangerie': {
+    platform: 'google-maps',
+    value: 3.8,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Mangerie+Bebek+Cevdet+Pasa+Cd+No+69+Kat+3',
+      providers: [],
+    },
+  },
+  'bebek-kahve-lucca': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Lucca+Bebek+Cevdet+Pasa+Cd+No+51',
+      providers: [],
+    },
+  },
+  'bebek-kahve-cupofjoy': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Cup+of+Joy+Cevdet+Pasa+Cd+Yasemin+Pasaji+No+53+5+Bebek',
+      providers: [],
+    },
+  },
+  'bebek-tatli-bademezmesi': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Meshur+Bebek+Badem+Ezmesi+Cevdet+Pasa+Cd+No+38+1+Bebek',
+      providers: [],
+    },
+  },
+  'bebek-tatli-minidondurma': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Mini+Dondurma+Cevdet+Pasa+Cd+No+38A+Bebek',
+      providers: [],
+    },
+  },
+  'bebek-tatli-abbaswaffle': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Abbas+Waffle+Cevdet+Pasa+Cd+No+48B+Bebek',
+      providers: [],
+    },
+  },
+  'bebek-tatli-baylan': {
+    platform: 'google-maps',
+    value: 3.8,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Baylan+Bebek+Cevdet+Pasa+Cd+No+52+54',
+      providers: [],
+    },
+  },
+  'bebek-balik-poseidon': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Poseidon+Restaurant+Cevdet+Pasa+Cd+No+58+Bebek',
+      providers: [],
+    },
+  },
+  'bebek-balik-chilai': {
+    platform: 'google-maps',
+    value: 4.0,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Chilai+Bebek+Cevdet+Pasa+Cd+No+60',
+      providers: [],
+    },
+  },
+  'bebek-balik-bebekotel': {
+    platform: 'google-maps',
+    value: 3.9,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Bebek+Otel+Restaurant+Cevdet+Pasa+Cd+No+34',
+      providers: [],
+    },
+  },
+  'bebek-balik-bebekbalikci': {
+    platform: 'google-maps',
+    value: 3.8,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Bebek+Balikci+Cevdet+Pasa+Cd+No+26A',
+      providers: [],
+    },
+  },
+  'bebek-bistro-divan': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Divan+Brasserie+Bebek+Cevdet+Pasa+Cd+No+28A',
+      providers: [],
+    },
+  },
+  'bebek-bistro-taps': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Taps+Bebek+Cevdet+Pasa+Cd+No+119',
+      providers: [],
+    },
+  },
+  'bebek-bistro-kirinti': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kirinti+Bebek+Cevdet+Pasa+Cd+No+35',
+      providers: [],
+    },
+  },
+  'bebek-bistro-midpoint': {
+    platform: 'google-maps',
+    value: 3.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Midpoint+Bebek+Cevdet+Pasa+Cd+No+35',
+      providers: [],
+    },
+  },
 };
 
 export function getVerifiedGoogleRatings(venueId: string): VisitorGoogleRating[] {
