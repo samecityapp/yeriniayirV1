@@ -4617,9 +4617,9 @@ export const KUSADASI_VENUES: VisitorVenueData[] = [
     ratings: [],
   },
   {
-    id: 'kusadasi-kahvalti-kruvasunday',
-    name: 'Kruvasunday Kuşadası',
-    location: 'Türkmen Mah. Atatürk Blv. No:116, Kuşadası',
+    id: 'kusadasi-kahvalti-koysofrasi',
+    name: 'Kirazlı Köy Sofrası',
+    location: 'Kirazlı Köyü Yolu No:3, Kirazlı, Kuşadası',
     categoryId: 'koy-kahvalti-kusadasi',
     description: null,
     whatToOrder: [],

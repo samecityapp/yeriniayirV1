@@ -338,18 +338,6 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    scopeNote: 'Beyoğlu · Taksim & Gümüşsuyu (Yayında)'
   },
   {
-   id: 'nisantasi',
-   level: 'semt',
-   name: 'Nişantaşı',
-   slug: 'nisantasi',
-   path: ['istanbul', 'sisli', 'nisantasi'],
-   displayName: 'Nişantaşı, Şişli, İstanbul',
-   locative: "Nişantaşı'nda",
-   status: 'published',
-   aliases: ['Nişantaşı', 'Nisantasi', 'Teşvikiye', 'Abdi İpekçi', 'Mim Kemal Öke', 'Valikonağı', 'Topağacı', 'Maçka'],
-   scopeNote: 'Şişli · Nişantaşı & Teşvikiye (Yayında)'
-  },
-  {
    id: 'nisantasi-sisli',
    level: 'semt',
    name: 'Nişantaşı',
@@ -360,18 +348,6 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    status: 'published',
    aliases: ['Nişantaşı', 'Nisantasi', 'Teşvikiye', 'Abdi İpekçi', 'Mim Kemal Öke', 'Valikonağı', 'Topağacı', 'Maçka'],
    scopeNote: 'Şişli · Nişantaşı & Teşvikiye (Yayında)'
-  },
-  {
-   id: 'bebek',
-   level: 'semt',
-   name: 'Bebek',
-   slug: 'bebek',
-   path: ['istanbul', 'besiktas', 'bebek'],
-   displayName: 'Bebek, Beşiktaş, İstanbul',
-   locative: "Bebek'te",
-   status: 'published',
-   aliases: ['Bebek', 'Cevdet Paşa', 'Bebek Parkı', 'Bebek Koyu'],
-   scopeNote: 'Beşiktaş · Bebek Sahil & Koyu (Yayında)'
   },
   {
    id: 'bebek-besiktas',
@@ -386,18 +362,6 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    scopeNote: 'Beşiktaş · Bebek Sahil & Koyu (Yayında)'
   },
   {
-   id: 'yenikoy',
-   level: 'semt',
-   name: 'Yeniköy',
-   slug: 'yenikoy',
-   path: ['istanbul', 'sariyer', 'yenikoy'],
-   displayName: 'Yeniköy, Sarıyer, İstanbul',
-   locative: "Yeniköy'de",
-   status: 'published',
-   aliases: ['Yeniköy', 'Yenikoy', 'Köybaşı', 'Köybaşı Caddesi', 'Sait Halim Paşa'],
-   scopeNote: 'Sarıyer · Yeniköy Sahil & Yalılar (Yayında)'
-  },
-  {
    id: 'yenikoy-sariyer',
    level: 'semt',
    name: 'Yeniköy',
@@ -410,18 +374,6 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    scopeNote: 'Sarıyer · Yeniköy Sahil & Yalılar (Yayında)'
   },
   {
-   id: 'gokturk',
-   level: 'semt',
-   name: 'Göktürk',
-   slug: 'gokturk',
-   path: ['istanbul', 'eyupsultan', 'gokturk'],
-   displayName: 'Göktürk, Eyüpsultan, İstanbul',
-   locative: "Göktürk'te",
-   status: 'published',
-   aliases: ['Göktürk', 'Gokturk', 'Kemerburgaz', 'İstanbul Caddesi', 'Arcadium Life', 'Larus Palas'],
-   scopeNote: 'Eyüpsultan · Göktürk & Yaşam Vadisi (Yayında)'
-  },
-  {
    id: 'gokturk-eyupsultan',
    level: 'semt',
    name: 'Göktürk',
@@ -432,18 +384,6 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    status: 'published',
    aliases: ['Göktürk', 'Gokturk', 'Kemerburgaz', 'İstanbul Caddesi', 'Arcadium Life', 'Larus Palas'],
    scopeNote: 'Eyüpsultan · Göktürk & Yaşam Vadisi (Yayında)'
-  },
-  {
-   id: 'kusadasi',
-   level: 'ilce',
-   name: 'Kuşadası',
-   slug: 'kusadasi',
-   path: ['aydin', 'kusadasi'],
-   displayName: 'Kuşadası, Aydın',
-   locative: "Kuşadası'nda",
-   status: 'published',
-   aliases: ['Kuşadası', 'Kusadasi', 'Aydın', 'Aydin', 'Marina', 'Güvercinada', 'Kadınlar Denizi', 'Setur Marina'],
-   scopeNote: 'Aydın · Kuşadası Sahil & Marina (Yayında)'
   },
   {
    id: 'kusadasi-aydin',

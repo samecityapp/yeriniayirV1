@@ -3137,12 +3137,12 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
-  'kusadasi-kahvalti-kruvasunday': {
+  'kusadasi-kahvalti-koysofrasi': {
     platform: 'google-maps',
-    value: 4.8,
+    value: 4.6,
     attribution: {
       label: 'Google Maps',
-      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kruvasunday+Ataturk+Blv+No+116+Kusadasi',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kirazli+Koy+Sofrasi+Kirazli+Koyu+Kusadasi',
       providers: [],
     },
   },
