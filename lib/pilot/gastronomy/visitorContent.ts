@@ -3130,6 +3130,168 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Günün her saati kesintisiz servis sunar.',
       'Sahil yürüyüşü molasında ferah bir içecek veya yemek için daima yer bulunabilen geniş bir alana sahiptir.'
     ]
+  },
+
+  // --- YENİKÖY ---
+  'yenikoy-kahve-yenikoykahvesi': {
+    description: "Yeniköy sırtlarında Kürkçü Faik Sokak'ta asırlık çınar ağaçlarının gölgesinde, Boğaz'ın panoramik sularına bakan tahta masaları ve nostaljik çay ocağıyla semtin simge adresi.",
+    whatToOrder: ['Közde Türk Kahvesi', 'Geleneksel Serpme Köy Kahvaltısı'],
+    menuFrom: ['Sahanda Sucuklu Yumurta', 'Menemen', 'Taze Kaşarlı Tost', 'Demleme Rize Çayı', 'Ev Yapımı Limonata'],
+    alsoTry: ['Boğaz esintisine karşı çınar gölgesinde bakır cezvede közde pişmiş köpüklü Türk kahvesi'],
+    beforeYouGo: [
+      'Yeniköy sahilinden merdivenlerle çıkılan dik ve sakin bir yokuş üzerindedir.',
+      'Hafta sonu sabahları ön sıra manzaralı masalar çok talep görür.'
+    ]
+  },
+  'yenikoy-kahve-sutisyalisi': {
+    description: "Köybaşı Caddesi üzerinde tarihi Abdullah Ağa Yalısı'nda, doğrudan Boğaz dalgalarına sıfır iskelesi ve meşhur manda sütlü geleneksel tatlarıyla eşsiz bir kahvaltı ve buluşma mekanı.",
+    whatToOrder: ['Manda Kaymağı & Bal', 'Sütiş Menemen'],
+    menuFrom: ['Su Böreği', 'Kıymalı Kol Böreği', 'Özel Çiftlik Peynirleri', 'Fırın Sütlaç', 'Kazandibi'],
+    alsoTry: ['Deniz kenarı masalarda çıtır sıcacık su böreği, taze manda kaymağı ve petek bal'],
+    beforeYouGo: [
+      'Tarihi yalı mimarisi ve deniz manzarası oldukça etkileyicidir.',
+      'Hafta sonu kahvaltı saatlerinde sıra oluşabilir.'
+    ]
+  },
+  'yenikoy-kahve-kup': {
+    description: "Köybaşı Caddesi üzerinde samimi avlusu ve üçüncü dalga kahvecilik uzmanlığıyla taze kavrulan nitelikli çekirdekleri Yeniköylülerle buluşturan modern butik kafe.",
+    whatToOrder: ['Cortado', 'Single Origin Filtre Kahve'],
+    menuFrom: ['Flat White', 'Cold Brew', 'Havuçlu Tarçınlı Kek', 'Bademli Kruvasan', 'Matcha Latte'],
+    alsoTry: ['Taze çekilmiş Etiyopya çekirdekleriyle demlenen meyvemsi gövdeli V60 pour over'],
+    beforeYouGo: [
+      'Yeniköy sahil yürüyüşü molasında kahve almak için mükemmel bir duraktır.',
+      'Sakin ve dinlendirici bir atmosfere sahiptir.'
+    ]
+  },
+  'yenikoy-kahve-sedir': {
+    description: "Köybaşı Caddesi sahil hattında denize nazır sedir oturma düzeni, sıcak semt sohbetleri ve zengin kahvaltı tabaklarıyla Yeniköy sahilinin en huzurlu dinlenme noktalarından biri.",
+    whatToOrder: ['Sedir Serpme Kahvaltı', 'Ev Yapımı Mantı'],
+    menuFrom: ['Sahanda Beyaz Peynirli Yumurta', 'Gözleme Çeşitleri', 'Tost', 'Demleme Çay', 'Salep'],
+    alsoTry: ['Boğaz sularına birkaç adım mesafede taze peynirli çıtır sac gözlemesi ve ince belli bardakta demli çay'],
+    beforeYouGo: [
+      'Geniş ve rahat sedir oturma alanları uzun sohbetler için idealdir.',
+      'Boğaz sahilinde salaş ve samimi bir atmosfer sunar.'
+    ]
+  },
+  'yenikoy-firin-borekci': {
+    description: "1895 yılından beri aynı tarihi taş fırında odun ateşiyle pişen çıtır çıtır Sarıyer ve kol börekleriyle İstanbul'un yaşayan en kıymetli fırın miraslarından biri.",
+    whatToOrder: ['Pudra Şekerli Küt Böreği', 'Kıymalı Kuş Üzümlü Kol Böreği'],
+    menuFrom: ['Peynirli Su Böreği', 'Ispanaklı Börek', 'Tahinli Çörek', 'Acıbadem Kurabiyesi', 'Demli Çay'],
+    alsoTry: ['Fırından yeni çıkmış sıcacık kıymalı börek ve üzerine pudra şekeri serpilmiş efsanevi çıtır küt böreği'],
+    beforeYouGo: [
+      'Sabah saatlerinde börekler fırından sıcacık çıkar; erken gitmek tavsiye edilir.',
+      'Take-away alıp hemen karşıdaki sahil banklarında deniz havasıyla yemek bir Yeniköy klasiğidir.'
+    ]
+  },
+  'yenikoy-firin-pan': {
+    description: "Köybaşı Caddesi'nde geleneksel ekşi maya tekniklerini Fransız fırıncılığıyla buluşturan, artisan kruvasanları ve nefis ekmekleriyle ünlü çağdaş mahalle fırını.",
+    whatToOrder: ['Bademli Çikolatalı Kruvasan', 'Ekşi Mayalı Zeytinli Ekmek'],
+    menuFrom: ['Kardemomlu Çörek', 'Tereyağlı Kruvasan', 'Limonlu Tart', 'Granola', 'Filtre Kahve'],
+    alsoTry: ['İçi yumuşacık badem kremasıyla doldurulmuş fırından yeni çıkmış kat kat tereyağlı çıtır kruvasan'],
+    beforeYouGo: [
+      'Kruvasan ve ekşi mayalı özel ekmekler öğleden sonra tükenebilir.',
+      'Semtin en popüler modern artisan fırınıdır.'
+    ]
+  },
+  'yenikoy-firin-mua': {
+    description: "İtalyan gelato ustalığını Türkiye'nin en kaliteli yerel mevsim meyveleri ve katkısız sütüyle birleştiren, Yeniköy sahilinin vazgeçilmez butik dondurmacısı.",
+    whatToOrder: ['Manda Sütlü Sade & Fıstıklı Gelato', 'Datça Bademli Dondurma'],
+    menuFrom: ['Bodrum Mandalinası Sorbe', 'Bitter Çikolatalı Gelato', 'Karadutlu Dondurma', 'İncirli Gelato', 'Kahveli Gelato'],
+    alsoTry: ['Kavrulan taze Antep fıstığının saf lezzetini sunan yoğun kıvamlı fıstıklı gelato'],
+    beforeYouGo: [
+      'Mevsimine göre lezzetler sürekli güncellenir; katkı maddesi veya yapay aroma içermez.',
+      'Sahil yürüyüşü yapanların önünde kuyruk oluşturduğu uğrak noktadır.'
+    ]
+  },
+  'yenikoy-firin-emekmanti': {
+    description: "1965'ten bu yana Köybaşı Caddesi'nde incecik el açması hamuru, bol yoğurdu ve cızırdayan biberli tereyağıyla İstanbul'un en meşhur mantı duraklarından biri.",
+    whatToOrder: ['Klasik Haşlama Emek Mantısı', 'Çıtır Kızarmış Mantı'],
+    menuFrom: ['Zeytinyağlı Yaprak Sarma', 'Çiğ Börek', 'Gözleme', 'Ev Baklavası', 'Ayran'],
+    alsoTry: ['Altın sarısı tereyağı ve sumak pul biber eşliğinde servis edilen tül inceliğindeki taze el açması mantı'],
+    beforeYouGo: [
+      'Porsiyonlar oldukça doyurucudur ve servis çok hızlıdır.',
+      'Mantı severlerin yıllardır vazgeçemediği köklü bir lezzet mabedidir.'
+    ]
+  },
+  'yenikoy-balik-takanik': {
+    description: "Köybaşı Caddesi üzerinde yılların deneyimiyle en taze mevsim balıklarını kurutmadan sulu sulu ızgara yapan, samimi ortamı ve dürüst lezzetleriyle Yeniköy'ün en sevilen balıkçısı.",
+    whatToOrder: ['Mevsimine Göre Izgara Lüfer', 'Çıtır Hamsi Tava'],
+    menuFrom: ['Kalamar Tava', 'Tereyağlı Karides Güveç', 'Balık Çorbası', 'Mısır Ekmeği', 'Tahin Helvası'],
+    alsoTry: ['Mısır ununa bulanarak kızgın tavada altın gibi kızartılmış çıtır çıtır Karadeniz hamsisi'],
+    beforeYouGo: [
+      'Salaş, samimi ve kaliteli balık arayanların ilk tercihidir.',
+      'Akşam saatlerinde oldukça hareketlidir; rezervasyon önerilir.'
+    ]
+  },
+  'yenikoy-balik-iskele': {
+    description: "Yeniköy vapur iskelesinin hemen bitişiğinde deniz kazıkları üzerine kurulu ahşap yapısıyla, Boğaz akıntısına sıfır masalarda klasik balık ve meze keyfi yaşatan tarihi sahil lokantası.",
+    whatToOrder: ['Kalkan Tava', 'Taze Boğaz Lakerdası'],
+    menuFrom: ['Deniz Börülcesi', 'Ahtapot Salatası', 'Izgara Levrek', 'Fava', 'Sıcak İncir Tatlısı'],
+    alsoTry: ['Tuz ve zeytinyağında dinlendirilmiş pamuk gibi taze Boğaz torik lakerdası ve yanında kırmızı soğan'],
+    beforeYouGo: [
+      'Deniz kenarındaki cam kenarı masalar için erken rezervasyon şarttır.',
+      'Geleneksel servis adabına sahip nezih bir Boğaz restoranıdır.'
+    ]
+  },
+  'yenikoy-balik-sandal': {
+    description: "Köybaşı Caddesi'nin şık sahil şeridinde günlük avlanan taze deniz balıkları, özenli Ege mezeleri ve sıcak deniz mahsulleriyle modern sahil balıkçılığı sunan seçkin adres.",
+    whatToOrder: ['Izgara Ahtapot Bacağı', 'Tuzda Levrek'],
+    menuFrom: ['Karides Söğüş', 'Levrek Marin', 'Kalamar Izgara', 'Roka Salatası', 'Fırında Helva'],
+    alsoTry: ['Köz kokulu dışı hafif çıtır içi yumuşacık servis edilen zeytinyağlı ızgara ahtapot'],
+    beforeYouGo: [
+      'Hem iş yemekleri hem de aile buluşmaları için çok uygundur.',
+      'Hafta sonu akşamları rezervasyonsuz yer bulmak zordur.'
+    ]
+  },
+  'yenikoy-balik-azur': {
+    description: "Boğaz'ın incisi Yeniköy kıyısında dünya denizlerinden ve yerel sulardan getirilen en taze kabukluları, sashimi ve crudo tabaklarını çağdaş sunumlarla harmanlayan Michelin tavsiyeli deniz gastronomi merkezi.",
+    whatToOrder: ['Azur Crudo & Sashimi Tabağı', 'Istakozlu Tagliolini'],
+    menuFrom: ['Kral Yengeç Bacağı', 'İstiridye Seçkisi', 'Trüflü Deniz Tarağı', 'Izgara Lagos', 'Özel Kav Seçkisi'],
+    alsoTry: ['Taze narenciye ve sızma zeytinyağı marinasyonuyla hazırlanan imza levrek crudo'],
+    beforeYouGo: [
+      'Gelişmiş deniz ürünleri mutfağı ve şık ambiyansı için mutlaka önceden rezervasyon yapılmalıdır.',
+      'Kıyafet kuralı smart-casual düzeyindedir.'
+    ]
+  },
+  'yenikoy-bistro-apartiman': {
+    description: "Şef Burçak Kazdal'ın yerel üreticilerden temin edilen mevsimlik malzemelerle hazırladığı yaratıcı tabakları, sıcak mahalle ruhu ve Michelin Bib Gourmand ödülüyle Yeniköy'ün en özel gastronomi durağı.",
+    whatToOrder: ['Mevsimlik Şef Tadım Tabağı', 'Ağır Pişmiş Dana Kaburga'],
+    menuFrom: ['El Yapımı Taze Makarna', 'Fırınlanmış Pancar & Keçi Peyniri', 'Günün Tartari', 'Doğal Şarap Seçkisi', 'Mevsim Tatlısı'],
+    alsoTry: ['Kendi fırınlarında pişen ekşi mayalı ekmek eşliğinde taze çiftlik otları ve mevsimlik mezeler'],
+    beforeYouGo: [
+      'Menü mevsimlere ve yerel hasada göre düzenli olarak değişir.',
+      'Samimi ve butik bir alana sahip olduğundan rezervasyon tavsiye edilir.'
+    ]
+  },
+  'yenikoy-bistro-fiko': {
+    description: "Köybaşı Caddesi üzerinde ünlü kebap ustası Fiko'nun özel marinasyonlu kanatları, zırh kıyması Adana kebabı ve şık modern dekorasyonuyla İstanbul'un en popüler gurme ocakbaşı adresi.",
+    whatToOrder: ['Fiko Özel Kanat', 'Zırh Kıyması Fiko Adana Kebap'],
+    menuFrom: ['Çöp Şiş', 'Küşleme', 'Fındık Lahmacun', 'Gavurdağı Salatası', 'Fıstıklı Katmer'],
+    alsoTry: ['Özel baharat sosuyla kömür ateşinde nar gibi kızaran efsanevi sulu Fiko Kanat'],
+    beforeYouGo: [
+      'Akşam saatlerinde çok popüler ve hareketlidir; rezervasyonsuz yer bulmak neredeyse imkansızdır.',
+      'Vale hizmeti mevcuttur.'
+    ]
+  },
+  'yenikoy-bistro-gazebo': {
+    description: "Köybaşı Caddesi üzerinde Boğaz sularının hemen kenarındaki geniş bahçesi ve şık terasında, Akdeniz ve dünya mutfağından seçkin lezzetlerle gün boyu kesintisiz keyif sunan sahil lounge'u.",
+    whatToOrder: ['Izgara Somon Teriyaki', 'Gazebo Gurme Burger'],
+    menuFrom: ['Burrata Salatası', 'Deniz Mahsüllü Risotto', 'Penne Arrabiata', 'Özel Kokteyl Menüsü', 'Cheesecake'],
+    alsoTry: ['Boğaz gün batımına karşı çıtır patates kızartması ve trüflü mayonezli gurme dana burger'],
+    beforeYouGo: [
+      'Geniş terasında deniz kenarı masalar gün batımında çok keyiflidir.',
+      'Rahat ve şık bir sahil ambiyansı sunar.'
+    ]
+  },
+  'yenikoy-bistro-saithalim': {
+    description: "19. yüzyıldan kalma görkemli Sait Halim Paşa Yalısı'nın rıhtımında, Boğaz sularına sıfır tarihi atmosferde Osmanlı ve Akdeniz lezzetlerini birleştiren prestijli açık hava restoranı.",
+    whatToOrder: ['Ağır Ateşte Kuzu İncik', 'Yalı Usulü Levrek'],
+    menuFrom: ['Enginarlı Ahtapot Salatası', 'Vişneli Yaprak Sarma', 'Trüflü Risotto', 'Yalı Çikolatalı Sufle', 'İmza Kokteyller'],
+    alsoTry: ['Tarihi yalı rıhtımında dalgaların sesine karşı ağır ateşte lokum gibi pişmiş safranlı kuzu incik'],
+    beforeYouGo: [
+      'Yaz aylarında rıhtım açık hava servisi verir; kışın tarihi salonlar kullanılır.',
+      'Özel gün kutlamaları ve seçkin akşam yemekleri için önceden rezervasyon şarttır.'
+    ]
   }
 };
 

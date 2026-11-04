@@ -393,9 +393,21 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    path: ['istanbul', 'sariyer', 'yenikoy'],
    displayName: 'Yeniköy, Sarıyer, İstanbul',
    locative: "Yeniköy'de",
-   status: 'coming_soon',
-   aliases: ['Yeniköy', 'Yenikoy', 'Köybaşı'],
-   scopeNote: 'Sarıyer · Yeniköy (Araştırmada)'
+   status: 'published',
+   aliases: ['Yeniköy', 'Yenikoy', 'Köybaşı', 'Köybaşı Caddesi', 'Sait Halim Paşa'],
+   scopeNote: 'Sarıyer · Yeniköy Sahil & Yalılar (Yayında)'
+  },
+  {
+   id: 'yenikoy-sariyer',
+   level: 'semt',
+   name: 'Yeniköy',
+   slug: 'yenikoy',
+   path: ['istanbul', 'sariyer', 'yenikoy'],
+   displayName: 'Yeniköy, Sarıyer, İstanbul',
+   locative: "Yeniköy'de",
+   status: 'published',
+   aliases: ['Yeniköy', 'Yenikoy', 'Köybaşı', 'Köybaşı Caddesi', 'Sait Halim Paşa'],
+   scopeNote: 'Sarıyer · Yeniköy Sahil & Yalılar (Yayında)'
   }
  ] : [];
 

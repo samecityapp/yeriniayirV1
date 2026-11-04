@@ -2824,6 +2824,152 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
+
+  // --- YENİKÖY (100% YENİKÖY) ---
+  'yenikoy-kahve-yenikoykahvesi': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Yenikoy+Kahvesi+Kurkcu+Faik+Sk+No+4+Yenikoy',
+      providers: [],
+    },
+  },
+  'yenikoy-kahve-sutisyalisi': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Sutis+Abdullah+Aga+Yalisi+Koybasi+Cd+No+68+Yenikoy',
+      providers: [],
+    },
+  },
+  'yenikoy-kahve-kup': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kup+Coffee+and+Tea+Koybasi+Cd+No+138B+Yenikoy',
+      providers: [],
+    },
+  },
+  'yenikoy-kahve-sedir': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Sedir+Cafe+Koybasi+Cd+No+80+Yenikoy',
+      providers: [],
+    },
+  },
+  'yenikoy-firin-borekci': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Tarihi+Yenikoy+Borekchisi+Koybasi+Cd+No+74+Yenikoy',
+      providers: [],
+    },
+  },
+  'yenikoy-firin-pan': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Pan+Bakery+Koybasi+Cd+No+165+Yenikoy',
+      providers: [],
+    },
+  },
+  'yenikoy-firin-mua': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Mua+Gelato+Koybasi+Cd+No+140A+Yenikoy',
+      providers: [],
+    },
+  },
+  'yenikoy-firin-emekmanti': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Emek+Manti+Evi+Koybasi+Cd+No+112+Yenikoy',
+      providers: [],
+    },
+  },
+  'yenikoy-balik-takanik': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Takanik+Balik+Koybasi+Cd+No+155+Yenikoy',
+      providers: [],
+    },
+  },
+  'yenikoy-balik-iskele': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Yenikoy+Iskele+Balikcisi+Koybasi+Cd+No+108+Yenikoy',
+      providers: [],
+    },
+  },
+  'yenikoy-balik-sandal': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Sandal+Balik+Koybasi+Cd+No+173+Yenikoy',
+      providers: [],
+    },
+  },
+  'yenikoy-balik-azur': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Azur+Yenikoy+Koybasi+Cd+No+71+Yenikoy',
+      providers: [],
+    },
+  },
+  'yenikoy-bistro-apartiman': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Apartiman+Yenikoy+Koybasi+Cd+No+153+Yenikoy',
+      providers: [],
+    },
+  },
+  'yenikoy-bistro-fiko': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Fiko+Ocakbasi+Koybasi+Cd+No+107+Yenikoy',
+      providers: [],
+    },
+  },
+  'yenikoy-bistro-gazebo': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Gazebo+Lounge+Koybasi+Cd+No+125A+Yenikoy',
+      providers: [],
+    },
+  },
+  'yenikoy-bistro-saithalim': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Sait+Halim+Pasa+Yalisi+Koybasi+Cd+No+83+Yenikoy',
+      providers: [],
+    },
+  },
 };
 
 export function getVerifiedGoogleRatings(venueId: string): VisitorGoogleRating[] {
