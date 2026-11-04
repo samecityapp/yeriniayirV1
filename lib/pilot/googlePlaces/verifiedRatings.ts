@@ -3298,6 +3298,238 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
+
+  // ==========================================
+  // GAZİANTEP RATINGS
+  // ==========================================
+
+  // Tarihi Gaziantep Baklavacıları
+  'antep-baklava-elmacipazari': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Tarihi+Elmaci+Pazari+Gulluoglu+Elmaci+Pazari+Gaziantep',
+      providers: [],
+    },
+  },
+  'antep-baklava-zekiinal': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Zeki+Inal+Ataturk+Blv+No+38B+Sehitkamil+Gaziantep',
+      providers: [],
+    },
+  },
+  'antep-baklava-kocak': {
+    platform: 'google-maps',
+    value: 4.8,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kocak+Baklava+Ali+Fuat+Cebesoy+Blv+Gaziantep',
+      providers: [],
+    },
+  },
+  'antep-baklava-imamcagdas': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Imam+Cagdas+Uzun+Carsi+No+49+Gaziantep',
+      providers: [],
+    },
+  },
+
+  // Küşleme, Ali Nazik & Ocakbaşı
+  'antep-kebap-halilusta': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kebapci+Halil+Usta+Tekel+Cad+Karsiyaka+Gaziantep',
+      providers: [],
+    },
+  },
+  'antep-kebap-mehmetusta': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kuslemeci+Mehmet+Usta+Kemal+Koker+Cad+Gaziantep',
+      providers: [],
+    },
+  },
+  'antep-kebap-omergullu': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kebapci+Omer+Gullu+Mithat+Enc+Cad+Gaziantep',
+      providers: [],
+    },
+  },
+  'antep-kebap-cigerdalga': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Cigerci+Ali+Haydar+Usta+Kunduracilar+Carsi+Gaziantep',
+      providers: [],
+    },
+  },
+
+  // Geleneksel Beyran & Sabah Paçası
+  'antep-beyran-metanet': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Metanet+Lokantasi+Kozluca+Cad+No+11+Gaziantep',
+      providers: [],
+    },
+  },
+  'antep-beyran-kelebek': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kelebek+Paca+Beyran+Salonu+Degirmicem+Gaziantep',
+      providers: [],
+    },
+  },
+  'antep-beyran-dukkan': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Dukkan+Beyran+Kebap+Muammer+Aksoy+Blv+Gaziantep',
+      providers: [],
+    },
+  },
+  'antep-beyran-sakipusta': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Pacaci+Sakip+Usta+Kemal+Koker+Cad+Gaziantep',
+      providers: [],
+    },
+  },
+
+  // Tarihi Taş Fırın Katmeri
+  'antep-katmer-zekeriya': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Katmerci+Zekeriya+Usta+Cukur+Mah+Korukcu+Sok+Gaziantep',
+      providers: [],
+    },
+  },
+  'antep-katmer-cuma': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Katmerci+Cuma+Usta+Zubeyde+Hanim+Blv+Gaziantep',
+      providers: [],
+    },
+  },
+  'antep-katmer-akintohumcu': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Akin+Tohumcu+Katmer+Suyabatmaz+Gaziantep',
+      providers: [],
+    },
+  },
+  'antep-katmer-kadirusta': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kadir+Usta+Katmer+Nail+Bilen+Cad+Gaziantep',
+      providers: [],
+    },
+  },
+
+  // Tescilli Antep Yemekleri & Yuvalama
+  'antep-mutfak-asina': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Asina+Gaziantep+Mutfagi+Muammer+Aksoy+Blv+Gaziantep',
+      providers: [],
+    },
+  },
+  'antep-mutfak-yesemek': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Yesemek+Gaziantep+Mutfagi+Gaziler+Cad+Gaziantep',
+      providers: [],
+    },
+  },
+  'antep-mutfak-hsvhn': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Hisvahan+Restoran+Kozluca+Mah+Gaziantep',
+      providers: [],
+    },
+  },
+  'antep-mutfak-msm': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Mutfak+Sanatlari+Merkezi+Kultur+Yolu+Gaziantep',
+      providers: [],
+    },
+  },
+
+  // Tarihi Kahvehaneler & Menengiç
+  'antep-kahve-tahmis': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Tarihi+Tahmis+Kahvesi+Sehitler+Cad+No+21+Gaziantep',
+      providers: [],
+    },
+  },
+  'antep-kahve-kirkayak': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kirkayak+Sanat+Kahvesi+Bey+Mah+Ataturk+Blv+Gaziantep',
+      providers: [],
+    },
+  },
+  'antep-kahve-tutunhani': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Tutun+Hani+Kahvesi+Eski+Saray+Cad+Gaziantep',
+      providers: [],
+    },
+  },
+  'antep-kahve-mevlevi': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Mevlevi+Kultur+Konagi+Kahvesi+Kozluca+Sk+Gaziantep',
+      providers: [],
+    },
+  },
   'kusadasi-balik-kazimusta': {
     platform: 'google-maps',
     value: 4.3,

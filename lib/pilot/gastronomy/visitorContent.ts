@@ -3661,6 +3661,261 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     beforeYouGo: [
       'Limanın ve balıkçı teknelerinin hemen yanında nostaljik ve samimi bir ortama sahiptir.',
       'Taze balık çeşitleri girişteki buzlu tezgahtan tartılarak seçilir.'
+    ]  },
+
+  // ==========================================
+  // GAZİANTEP - TARİHİ VE YEREL LEZZETLER
+  // ==========================================
+
+  // Tarihi Gaziantep Baklavacıları
+  'antep-baklava-elmacipazari': {
+    description: "1871 yılından bu yana Tarihi Elmacı Pazarı girişindeki tek dükkanında Güllü ailesinin ata mirasını yaşatan, saf Urfa sade yağı ve elle açılan kırk kat incecik yufkasıyla kuru baklavanın kentsel referans noktası.",
+    whatToOrder: ['Kuru Baklava (Özel Sade Yağlı)', 'Havuç Dilimi Baklava'],
+    menuFrom: ['Klasik Antep Baklavası', 'Özel Kare Baklava', 'Bülbülyuvası', 'Fıstık Ezmesi', 'Şöbiyet'],
+    alsoTry: ['Elmacı Pazarı girişindeki tarihi tezgahtan yeni dökülmüş ılık kuru baklava'],
+    beforeYouGo: [
+      '1871 yılından beri aynı tarihi çarşı dükkanında tek şube olarak hizmet verir.',
+      'Günün belirli saatlerinde sıcak tepsiler çıktığı için öğleden önce gitmek tavsiye edilir.'
+    ]
+  },
+  'antep-baklava-zekiinal': {
+    description: "Usta zanaatkarlığıyla şöbiyet ve kuru baklavada butik üretim standardını koruyan, günlük sınırlı tepsi çıkaran ve taze sahan kaymağını dengeli şerbetle buluşturan köklü tatlıhane.",
+    whatToOrder: ['Özel Kaymaklı Şöbiyet', 'Geleneksel Kuru Baklava'],
+    menuFrom: ['Cevizli Baklava', 'Kare Baklava', 'Fıstıklı Kurabiye', 'Özel Sade Yağlı Baklava'],
+    alsoTry: ['Hakiki sahan kaymağı ve taze çekilmiş boz fıstıkla sınırlı sayıda hazırlanan ılık şöbiyet'],
+    beforeYouGo: [
+      'Tepsiler sınırlı sayıda çıktığı için ürünler genellikle öğleden sonra erken saatlerde biter.',
+      'Kutulu paket alımları için sabah saatlerinde sipariş verilmesi önerilir.'
+    ]
+  },
+  'antep-baklava-kocak': {
+    description: "Coşkun ve Ali Koçak ustaların çıtırlık, altın sarısı pişirme derecesi ve yüksek kalite boz fıstık seçimiyle Gaziantep'te modern baklavacılığın kalite çıtasını temsil eden merkezi.",
+    whatToOrder: ['Özel Kare Baklava', 'Fıstık Sarması (Dolama)'],
+    menuFrom: ['Kuru Baklava', 'Havuç Dilim Baklava', 'Şöbiyet', 'Bülbülyuvası', 'Midye Baklava'],
+    alsoTry: ['Yoğun birinci sınıf boz Antep fıstığıyla sarılan incecik fıstık sarması'],
+    beforeYouGo: [
+      'Şehitkamil Ali Fuat Cebesoy Bulvarı üzerindeki ana merkez binasında salon servisi mevcuttur.',
+      'Havalimanı ve şehirlerarası yolculuklar için şoklanmış özel yol paketleri sunulur.'
+    ]
+  },
+  'antep-baklava-imamcagdas': {
+    description: "1887 yılından beri Gaziantep Kalesi eteklerindeki tarihi çarşıda hizmet veren, taş fırında meşe odununda pişen havuç dilimi ve kuru baklavasıyla kentin en köklü gastronomi kurumlarından biri.",
+    whatToOrder: ['Havuç Dilimi Baklava', 'Kare Fıstıklı Baklava'],
+    menuFrom: ['Klasik Baklava', 'Fıstık Ezmesi', 'Özel Şöbiyet', 'Ali Nazik Kebabı', 'Kuşbaşı Kebap'],
+    alsoTry: ['Özel fırından yeni çıkmış sıcak havuç dilimi baklava'],
+    beforeYouGo: [
+      '1887 yılından beri Tarihi Uzun Çarşı\'daki tek orijinal adresinde hizmet verir; başka şubesi yoktur.',
+      'Öğle saatlerinde yoğun kuyruklar oluşabileceğinden erken saatler tercih edilmelidir.'
+    ]
+  },
+
+  // Küşleme, Ali Nazik & Ocakbaşı
+  'antep-kebap-halilusta': {
+    description: "Karşıyaka Mahallesi'nde kömür ateşinde marine kuzu küşleme ve zırhta çekilen fıstıklı simit kebabıyla Gaziantep ocakbaşı kültürünün öncü ustalarından biri.",
+    whatToOrder: ['Kuzu Küşleme', 'Simit Kebabı'],
+    menuFrom: ['Karışık Kebap', 'Kuşbaşı Kebap', 'Özel Kaşık Salatası', 'Közlenmiş Sarımsak', 'Ayran'],
+    alsoTry: ['Közde pişirilmiş bol sumaklı ve nar ekşili özel Halil Usta kaşık salatası eşliğinde marine kuzu küşleme'],
+    beforeYouGo: [
+      'Zeugma Müzesi eski binası yakınındaki tarihi salaş dükkanda öğle saatlerinde yoğun talep görür.',
+      'Etler günlük taze hazırlandığı için ikindi saatlerinde servisi sonlanabilir.'
+    ]
+  },
+  'antep-kebap-mehmetusta': {
+    description: "Kuzu sırt etinden elde edilen taze küşleme konusunda uzmanlaşmış, yumuşak dokulu etleri ve taze lavaş ikramlarıyla bilinen köklü esnaf lokantası.",
+    whatToOrder: ['Marine Kuzu Küşleme', 'Acılı Zırh Kıyma Kebabı'],
+    menuFrom: ['Sade Küşleme', 'Kuşbaşı Şiş', 'Közlenmiş Biber & Domates', 'Ezme Salata', 'Köpüklü Yayık Ayranı'],
+    alsoTry: ['Kuzunun en yumuşak sırt etinden hazırlanan lokum kıvamında sade küşleme'],
+    beforeYouGo: [
+      'Şehir merkezinde merkezi konuma ve geniş oturma alanına sahiptir.',
+      'Öğle ve akşam yemeklerinde servis hızlıdır.'
+    ]
+  },
+  'antep-kebap-omergullu': {
+    description: "Değirmiçem'de zırh kıyması, mevsim kebapları ve kuzu küşlemede dengeli pişirme tekniğiyle yerel halkın tercih ettiği güvenilir ocakbaşı adresi.",
+    whatToOrder: ['Patlıcan Kebabı', 'Küşleme & Kuşbaşı'],
+    menuFrom: ['Ali Nazik Kebabı', 'Fıstıklı Kebap', 'Mevsimsel Sarımsak Kebabı', 'Gavurdağı Salatası', 'Közde Biber'],
+    alsoTry: ['Közlenmiş patlıcan dilimleri arasına zırhta çekilmiş kuzu kıymasıyla hazırlanan patlıcan kebabı'],
+    beforeYouGo: [
+      'Mevsimine göre ilkbaharda taze sarımsak kebabı ve yeni dünya kebabı sunulur.',
+      'Aileler ve gruplar için ferah bir iç mekana sahiptir.'
+    ]
+  },
+  'antep-kebap-cigerdalga': {
+    description: "Tarihi çarşı içinde sabahın erken saatlerinde kömür mangalında pişen kuzu ciğer şişleri, taze kimyon ve yeşilliklerle Antep'in sabah ciğeri ritüelini yaşatan esnaf durağı.",
+    whatToOrder: ['Közde Şiş Ciğer Dürüm', 'Közlenmiş Taze Biber'],
+    menuFrom: ['Kuzu Ciğer Şiş', 'Kavurma Dürüm', 'Sumaklı Soğan Salatası', 'Açık Ayran'],
+    alsoTry: ['Sabah erken saatte kömür mangalında pişen ince kuzu ciğeri, kimyon ve taze nane eşliğinde açık ekmek dürüm'],
+    beforeYouGo: [
+      'Gaziantep\'in tarihi sabah ciğeri geleneği için sabah 05:30 - 08:30 arası gitmek tavsiye edilir.',
+      'Salaş ve otantik bir çarşı dükkanıdır.'
+    ]
+  },
+
+  // Geleneksel Beyran & Sabah Paçası
+  'antep-beyran-metanet': {
+    description: "Kozluca Caddesi'nde on saat kısık ateşte pişen kuzu gerdan eti, et suyu, pirinç ve dövme sarımsağın alevli ocakta buluştuğu Antep beyran geleneğinin kentsel simgesi.",
+    whatToOrder: ['Geleneksel Antep Beyranı', 'Beyinli Ayak Paça'],
+    menuFrom: ['Kelle Paça', 'Et Haşlama', 'Lavaş Ekmeği', 'Taze Sarımsak Ezmesi', 'Közde Biber'],
+    alsoTry: ['Bakır sahanda yüksek ateşte dumanı tüten sarımsaklı ve acılı orijinal beyran'],
+    beforeYouGo: [
+      'Sabah 05:00\'ten itibaren açık olup kahvaltıda beyran içmek için kentin ana buluşma noktasıdır.',
+      'Öğle saatlerinden sonra beyran servisi bitebilir.'
+    ]
+  },
+  'antep-beyran-kelebek': {
+    description: "Değirmiçem'de 24 saat boyunca kısık ateşte kaynayan kemik suyu, terbiyeli kelle paça ve taze beyran servisiyle yerel halkın değişmeyen çorba durağı.",
+    whatToOrder: ['Kelle Paça Çorbası', 'Özel Acılı Beyran'],
+    menuFrom: ['Ayak Paça', 'Beyin Çorbası', 'Karışık Paça', 'Tırnak Pide', 'Sarımsaklı Sos'],
+    alsoTry: ['Kıvamlı ilikli kemik suyu ve taze sarımsak sirke sosuyla servis edilen kelle paça'],
+    beforeYouGo: [
+      '24 saat kesintisiz hizmet verir; gece geç saatlerde ve sabah erken vakitlerde çok aktiftir.',
+      'Geniş oturma düzeni ve otopark kolaylığı bulunur.'
+    ]
+  },
+  'antep-beyran-dukkan': {
+    description: "İncilipınar'da ferah ve modern salonunda gün boyu taze et suyuyla hazırlanan alevli sahan beyranı ve paça çeşitleri sunan güvenilir mekan.",
+    whatToOrder: ['Dükkan İlikli Beyran', 'Gözleme Paça'],
+    menuFrom: ['Beyran Çorbası', 'Kelle Paça', 'Küşleme Şiş', 'Söğürme Kebap', 'Açık Ayran'],
+    alsoTry: ['Alevli bakır sahanda hazırlanan bol etli ve dengeli sarımsaklı beyran'],
+    beforeYouGo: [
+      'Günün her saati beyran servisi bulunur.',
+      'Modern ve konforlu bir salon ortamına sahiptir.'
+    ]
+  },
+  'antep-beyran-sakipusta': {
+    description: "Alleben bölgesinde yarım asırlık çorba ustalığıyla geleneksel kelle paça ve sahan beyranını katkısız kemik suları ve taze sarımsakla sunan köklü lokanta.",
+    whatToOrder: ['Geleneksel Maraş & Antep Usulü Kelle Paça', 'Sahan Beyran'],
+    menuFrom: ['Ayak Paça', 'Beyin Salatası', 'Çürük Çorbası', 'Fırın Pidesi', 'Sarımsak Sosu'],
+    alsoTry: ['Közde pişirilmiş kuzu kellenin etleriyle hazırlanan yoğun sarımsaklı paça'],
+    beforeYouGo: [
+      'Özellikle sabah saatlerinde ve kış aylarında yerel halkın ilk tercihleri arasındadır.',
+      'Porsiyonlar oldukça doyurucudur.'
+    ]
+  },
+
+  // Tarihi Taş Fırın Katmeri
+  'antep-katmer-zekeriya': {
+    description: "Çukur Mahallesi'ndeki tarihi dükkanında havada savrularak zar inceliğinde açılan hamurun taş fırında sahan kaymağı ve taze fıstıkla pişirildiği asırlık katmer zanaatı.",
+    whatToOrder: ['Geleneksel Taş Fırın Katmeri', 'Taze Süt'],
+    menuFrom: ['Klasik Kare Katmer', 'Simit Katmer', 'Gözleme Katmer', 'Çay', 'Ilık Süt'],
+    alsoTry: ['Taş fırından nar gibi kızarmış dumanı tüten, sahan kaymağı ve bol boz fıstıklı çıtır katmer'],
+    beforeYouGo: [
+      'Dört kuşaktır aynı tarihi dükkanda zanaatkar katmer açılır.',
+      'Geleneksel Antep sabah kahvaltısı ritüeli için sabah 06:30 - 11:00 arası gitmek önerilir.'
+    ]
+  },
+  'antep-katmer-cuma': {
+    description: "Sarıgüllük'te incecik açılan katmer hamurunu taze süt kaymağı ve yoğun fıstıkla harmanlayıp taş fırında çıtır çıtır servis eden bilinen katmerci.",
+    whatToOrder: ['Simit Katmer', 'Klasik Antep Katmeri'],
+    menuFrom: ['Fıstıklı Katmer', 'Kaymaklı Kare Katmer', 'Fırınlanmış Sıcak Katmer', 'Taze Çay'],
+    alsoTry: ['İçi yoğun kaymak ve fıstıkla doldurulan simit formundaki özel çıtır katmer'],
+    beforeYouGo: [
+      'Günün her saatinde taze katmer pişirilir.',
+      'Şehitkamil bölgesinde geniş bahçeli ferah bir mekana sahiptir.'
+    ]
+  },
+  'antep-katmer-akintohumcu': {
+    description: "Suyabatmaz Mahallesi'nde sipariş anında göz önünde açılan incecik hamuru ve hafif şerbet dengesiyle çarşı esnafının ve ziyaretçilerin uğrak noktası.",
+    whatToOrder: ['Tohumcu Taş Fırın Katmeri', 'Fıstıklı Rulo Katmer'],
+    menuFrom: ['Kare Katmer', 'Sahan Kaymaklı Katmer', 'Demleme Çay', 'Taze Günlük Süt'],
+    alsoTry: ['Hamuru tül gibi ince açılmış, şekeri hafif tutulmuş sıcak fırın katmeri'],
+    beforeYouGo: [
+      'Tarihi çarşı bölgesine çok yakın mesafededir.',
+      'Sipariş üzerine göz önünde taze açılıp fırına verilir.'
+    ]
+  },
+  'antep-katmer-kadirusta': {
+    description: "İncilipınar'da modern salonunda kaliteli sade yağ, yerel süt kaymağı ve yeni mahsul boz fıstıkla taze fırın katmeri sunan popüler adres.",
+    whatToOrder: ['Özel Kare Katmer', 'Fıstık Dolgulu Katmer'],
+    menuFrom: ['Simit Katmer', 'Kaymaklı Katmer', 'Sıcak Süt', 'Demleme Çay'],
+    alsoTry: ['Taş tabanlı fırında üzeri altın sarısı kızarmış katmer dilimleri'],
+    beforeYouGo: [
+      'Geniş oturma alanına sahip modern bir tatlı salonudur.',
+      'Paket servis ve kutulu fırınlama seçenekleri mevcuttur.'
+    ]
+  },
+
+  // Tescilli Antep Yemekleri & Yuvalama
+  'antep-mutfak-asina': {
+    description: "İncilipınar'da Antep ev mutfağının tescilli yemekleri olan yuvalama, ekşili köfte ve mevsimlik tencere yemeklerini geleneksel reçetelerle sunan köklü restoran.",
+    whatToOrder: ['Geleneksel Bayram Yuvalaması', 'Ekşili Ufak Köfte'],
+    menuFrom: ['Şiveydiz (Mevsimlik)', 'Ali Nazik', 'Kuru Patlıcan Dolması', 'Yoğurtlu Bakla', 'Antep Peynirli İrmik Helvası'],
+    alsoTry: ['Nohut, minik yuvalama köfteleri ve süzme yoğurdun naneli tereyağıyla buluştuğu tescilli yuvalama çorbası'],
+    beforeYouGo: [
+      'Gaziantep ev ve saray mutfağının tencere yemeklerini tatmak için kentin en doğru adreslerinden biridir.',
+      'Mevsimine göre şiveydiz (ilkbahar) mutlaka sorulmalıdır.'
+    ]
+  },
+  'antep-mutfak-yesemek': {
+    description: "Tarihi çarşı içinde geleneksel kuru patlıcan dolmaları, firik pilavı, haşlama içli köfte ve ev yemekleriyle esnaf ve gurmelerin değişmez tencere durağı.",
+    whatToOrder: ['Kuru Patlıcan & Biber Dolması', 'İçli Köfte (Haşlama)'],
+    menuFrom: ['Yuvalama', 'Ali Nazik Kebabı', 'Firrik Pilavı', 'Mumbar Dolması', 'Zeytinyağlı Kuru Dolma'],
+    alsoTry: ['Köz kokulu isli firik buğdayıyla pişirilen nohutlu firik pilavı ve yanında sumaklı kuru dolma'],
+    beforeYouGo: [
+      'Tarihi Gaziler Caddesi üzerinde çarşı gezisi esnasında öğle yemeği için çok uygundur.',
+      'Zengin zeytinyağlı ve sıcak tencere yemeği büfesi bulunur.'
+    ]
+  },
+  'antep-mutfak-hsvhn': {
+    description: "Gaziantep Kalesi eteğindeki 16. yüzyıl kervansarayında Antep mutfağının tescilli lezzetlerini tarihi taş avlu ve zarif sunumlarla buluşturan mekan.",
+    whatToOrder: ['Vişneli Kebap (Mevsimlik)', 'Özel Yuvalama Kasesi'],
+    menuFrom: ['Söğürme', 'Firik Pilavlı Kuzu İncik', 'Muhammara', 'Humus', 'Havuç Dilim Baklava'],
+    alsoTry: ['Tarihi hanın taş tonozlu avlusunda nar ekşili ve vişneli et yemekleri'],
+    beforeYouGo: [
+      '16. yüzyıldan kalma restore edilmiş tarihi Hışva Hanı içinde yer alır.',
+      'Akşam yemekleri için önceden rezervasyon yaptırılması önerilir.'
+    ]
+  },
+  'antep-mutfak-msm': {
+    description: "Gaziantep'in UNESCO tescilli mutfak kültürünü korumak ve yaşatmak amacıyla kurulan, mevsimlik yerel sebze ve tencere yemeklerini aslına sadık reçetelerle sunan akademi restoranı.",
+    whatToOrder: ['Şiveydiz', 'Simit Aşı'],
+    menuFrom: ['Yuvalama', 'Alinazik', 'Ayva Kebabı (Kışlık)', 'Firik Pilavı', 'Astarlı Sütlaç'],
+    alsoTry: ['Unutulmaya yüz tutmuş tarihi Antep reçeteleri ve mevsimlik meyveli tencere yemekleri'],
+    beforeYouGo: [
+      'Gaziantep Büyükşehir Belediyesi bünyesinde gastronomi mirasını koruma amacıyla kurulmuştur.',
+      'Geniş park alanı ve modern mimariye sahiptir.'
+    ]
+  },
+
+  // Tarihi Kahvehaneler & Menengiç
+  'antep-kahve-tahmis': {
+    description: "1635 yılından bu yana otantik ahşap mimarisi, vitraylı pencereleri ve dumanı tüten sütlü menengiç kahvesiyle Gaziantep'in yaşayan en önemli kültür ve kahve mirası.",
+    whatToOrder: ['Sütlü Menengiç Kahvesi', 'Zahter Çayı'],
+    menuFrom: ['Geleneksel Türk Kahvesi', 'Dibek Kahvesi', 'Kavrulmuş Karpuz Çekirdeği', 'Antep Fıstıklı Lokum'],
+    alsoTry: ['Yabani Antep fıstığı meyvesinden dövülen kafeinsiz menengiç kahvesi ve yanında ikram edilen kavrulmuş karpuz çekirdeği'],
+    beforeYouGo: [
+      '1635 yılında kurulan mekan Türkiye\'nin günümüze ulaşan en eski kahvehanelerindendir.',
+      'Tarihi ahşap asma katında canlı fasıl ve yerel ezgiler eşlik edebilir.'
+    ]
+  },
+  'antep-kahve-kirkayak': {
+    description: "Tarihi Bey Mahallesi'nin taş konak dokusu içinde sanat galerisi, kitaplık ve sakin avlusunda közde kahve ve yerel bitki çayları sunan kültürel buluşma noktası.",
+    whatToOrder: ['Közde Türk Kahvesi', 'Özel Zahter Karışımı'],
+    menuFrom: ['Menengiç Kahvesi', 'Soğuk Demleme Kahve', 'Kekikli Dağ Çayı', 'Ev Yapımı Kurabiye'],
+    alsoTry: ['Tarihi Bey Mahallesi avlusunda közde yavaş pişen bol köpüklü Türk kahvesi'],
+    beforeYouGo: [
+      'Tarihi taş konakların yer aldığı Bey Mahallesi\'nde kültür ve sanat etkinliklerine ev sahipliği yapar.',
+      'Huzurlu ve sakin bir avlu ortamına sahiptir.'
+    ]
+  },
+  'antep-kahve-tutunhani': {
+    description: "Tarihi Tütün Hanı'nın kesme taş avlusunda ve altındaki serin mağara mekanında fincanda pişen menengiç kahvesiyle otantik çarşı atmosferini yaşatan tarihi han.",
+    whatToOrder: ['Fincanda Pişen Menengiç Kahvesi', 'Dağ Zahteri'],
+    menuFrom: ['Türk Kahvesi', 'Kervansaray Kahvesi', 'Demlik Çay', 'Kavrulmuş Çerez'],
+    alsoTry: ['Tarihi hanın yeraltı su mağarası serinliğinde içilen koyu kıvamlı menengiç'],
+    beforeYouGo: [
+      'Hanın altında yer alan doğal serin tarihi kuyu ve mağara alanı ziyaret edilebilir.',
+      'Çarşı yürüyüşü sonrası dinlenmek için idealdir.'
+    ]
+  },
+  'antep-kahve-mevlevi': {
+    description: "Tarihi Mevlevihane yerleşkesinde asırlık dut ve asma ağaçları altında közde pişen menengiç kahvesi ve şerbetlerle nostaljik Antep kahve kültürünü yaşatan huzurlu avlu.",
+    whatToOrder: ['Közde Menengiç Kahvesi', 'Ihlamurlu Zahter'],
+    menuFrom: ['Osmanlı Kahvesi', 'Dibek Kahvesi', 'Karanfilli Türk Kahvesi', 'Ev Şerbeti'],
+    alsoTry: ['Asırlık avluda pirinç cezvede mangal kömüründe pişen taze menengiç kahvesi'],
+    beforeYouGo: [
+      'Mevlevihane müzesi ile iç içe, mistik ve dinlendirici bir atmosferi vardır.',
+      'Gölge asma altı masaları öğleden sonra çok ferahtır.'
     ]
   }
 };
