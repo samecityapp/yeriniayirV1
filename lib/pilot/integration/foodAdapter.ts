@@ -432,6 +432,30 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    status: 'published',
    aliases: ['Göktürk', 'Gokturk', 'Kemerburgaz', 'İstanbul Caddesi', 'Arcadium Life', 'Larus Palas'],
    scopeNote: 'Eyüpsultan · Göktürk & Yaşam Vadisi (Yayında)'
+  },
+  {
+   id: 'kusadasi',
+   level: 'ilce',
+   name: 'Kuşadası',
+   slug: 'kusadasi',
+   path: ['aydin', 'kusadasi'],
+   displayName: 'Kuşadası, Aydın',
+   locative: "Kuşadası'nda",
+   status: 'published',
+   aliases: ['Kuşadası', 'Kusadasi', 'Aydın', 'Aydin', 'Marina', 'Güvercinada', 'Kadınlar Denizi', 'Setur Marina'],
+   scopeNote: 'Aydın · Kuşadası Sahil & Marina (Yayında)'
+  },
+  {
+   id: 'kusadasi-aydin',
+   level: 'ilce',
+   name: 'Kuşadası',
+   slug: 'kusadasi',
+   path: ['aydin', 'kusadasi'],
+   displayName: 'Kuşadası, Aydın',
+   locative: "Kuşadası'nda",
+   status: 'published',
+   aliases: ['Kuşadası', 'Kusadasi', 'Aydın', 'Aydin', 'Marina', 'Güvercinada', 'Kadınlar Denizi', 'Setur Marina'],
+   scopeNote: 'Aydın · Kuşadası Sahil & Marina (Yayında)'
   }
  ] : [];
 

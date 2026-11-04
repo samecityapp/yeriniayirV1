@@ -3454,6 +3454,168 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Türkiye\'nin en kaliteli butik çikolata üreticilerinden biridir.',
       'Çikolata atölyesi standartlarında katkısız ve saf ürünler sunar.'
     ]
+  },
+
+  // --- KUŞADASI ---
+  'kusadasi-balik-mezgit': {
+    description: "Setur Marina'nın tam karşısında Atatürk Bulvarı üzerinde, Ege Denizi'nin günlük taze balıkları, zengin soğuk mezeleri ve kızarmış dondurmasıyla Kuşadası'nın en köklü deniz mahsulleri adresi.",
+    whatToOrder: ['Kızarmış Dondurma', 'Tereyağlı Karides Güveç'],
+    menuFrom: ['Kalamar Tava', 'Deniz Börülcesi', 'Girit Ezmesi', 'Izgara Çipura', 'Ahtapot Salatası'],
+    alsoTry: ['Dışı çıtır sıcak mısır gevreği kaplı içi buz gibi enfes kızarmış dondurma'],
+    beforeYouGo: [
+      'Marina manzaralı ön masa ve teras için akşam saatlerinde rezervasyon önerilir.',
+      'Yıllardır değişmeyen servis kalitesi ve aile işletmesi sıcaklığına sahiptir.'
+    ]
+  },
+  'kusadasi-balik-bottarga': {
+    description: "Şef Cengiz Taner'in mutfağında günlük avlanan deniz mahsullerini mevsimlik Ege otları ve modern dokunuşlarla harmanlayan, menüsüz ve tahta panodan seçilen Gault & Millau ödüllü butik gastronomi durağı.",
+    whatToOrder: ['Mürekkep Soslu Bebek Kalamar', 'Bottarga Füme Balık Tabağı'],
+    menuFrom: ['Deniz Mahsullü Risotto', 'İstiridye', 'Şevketi Bostanlı Levrek', 'Izgara Lagos', 'Doğal Şarap Kavı'],
+    alsoTry: ['Denizden o sabah çıkan taze deniz mahsulleriyle hazırlanan şefin günlük özel tadım mezesi'],
+    beforeYouGo: [
+      'Günlük av durumuna göre menü her gün el yazısıyla güncellenir.',
+      'Az sayıda masası olduğundan mutlaka önceden rezervasyon yapılmalıdır.'
+    ]
+  },
+  'kusadasi-balik-sef': {
+    description: "2004 yılından bu yana Şef Ahmet Öz önderliğinde Setur Marina'nın üst terasından liman ve gün batımı manzarasına hakim konumuyla, taze Ege balıkları ve sıcak ot mezeleri sunan prestijli restoran.",
+    whatToOrder: ['Çıtır Bamya Kızartması Mezesi', 'Tuzda Levrek'],
+    menuFrom: ['Ahtapot Izgara', 'Kalamar Dolma', 'Fava', 'Hardallı Levrek Marin', 'Sıcak Helva'],
+    alsoTry: ['Ege kıyılarında nadir bulunan taze bamya kızartması mezesi ve fırından yeni çıkmış sıcak helva'],
+    beforeYouGo: [
+      'Kuşadası gün batımını izlemek için terastaki ön sıra masalar idealdir.',
+      'Özellikle yaz sezonunda akşamları oldukça yoğundur.'
+    ]
+  },
+  'kusadasi-balik-kazimusta': {
+    description: "Balıkçılar Meydanı'nda limanın hemen kıyısında yarım asrı aşkın süredir Kuşadası'na yanaşan gemilerin, kaptanların ve gurmelerin uğrak noktası olan şehrin en tarihi balık lokantası.",
+    whatToOrder: ['Izgara Boğaz / Ege Barbunu', 'Taze Ege Lakerdası'],
+    menuFrom: ['Kalamar Izgara', 'Karides Söğüş', 'Balık Çorbası', 'Kaya Koruğu', 'Tahin Helvası'],
+    alsoTry: ['Köz kömüründe nar gibi kızartılmış sulu yerli kaya barbunları ve taze roka salatası'],
+    beforeYouGo: [
+      'Limanın ve balıkçı teknelerinin hemen yanında nostaljik ve samimi bir ortama sahiptir.',
+      'Taze balık çeşitleri girişteki buzlu tezgahtan tartılarak seçilir.'
+    ]
+  },
+  'kusadasi-kahve-marvista': {
+    description: "Atatürk Bulvarı üzerinde kesintisiz Ege Denizi ve Güvercinada manzarasına karşı, zengin serpme Türk kahvaltısı ve gün boyu ferahlatıcı içecekleriyle Kuşadası sahilinin en popüler buluşma noktası.",
+    whatToOrder: ['Marvista Serpme Ege Kahvaltısı', 'Sahanda Sucuklu & Kaşarlı Yumurta'],
+    menuFrom: ['Ev Yapımı İncir Reçeli', 'Menemen', 'Taze Pişi', 'Izgara Hellim', 'Demlik Çay'],
+    alsoTry: ['Deniz kıyısında çıtır çıtır sıcak pişiler, Ege zeytinleri ve taze Aydın inciri reçeli'],
+    beforeYouGo: [
+      'Sabah kahvaltısı saatlerinde deniz kenarı masalar hızla dolar.',
+      'Geniş açık terası çocuklu aileler ve kalabalık gruplar için uygundur.'
+    ]
+  },
+  'kusadasi-kahve-court': {
+    description: "Setur Kuşadası Marina içerisinde nitelikli üçüncü dalga kahvecilik anlayışıyla taze kavrulan single origin çekirdekleri, modern tasarımı ve sakin marina atmosferiyle buluşturan öncü kafe.",
+    whatToOrder: ['Flat White', 'Single Origin V60 Pour Over'],
+    menuFrom: ['Cortado', 'Cold Brew', 'Havuçlu Tarçınlı Kek', 'Limonlu Cheesecake', 'Matcha Latte'],
+    alsoTry: ['Taze kavrulmuş Afrika ve Latin Amerika çekirdekleriyle hazırlanan aromatik V60 filtre kahve'],
+    beforeYouGo: [
+      'Marina içinde yatları izleyerek kitap okumak ve çalışmak için ideal sakinliktedir.',
+      'Paket çekirdek kahve satışı mevcuttur.'
+    ]
+  },
+  'kusadasi-kahve-kruvasunday': {
+    description: "Atatürk Bulvarı'nda her sabah fırından yayılan mis gibi tereyağı kokusu, el açması taze artisan kruvasanları ve zengin brunch menüsüyle Kuşadası'nın en yenilikçi butik fırın kafesi.",
+    whatToOrder: ['Antep Fıstıklı Kruvasan', 'Füme Etli Çırpılmış Yumurtalı Kruvasan Sandviç'],
+    menuFrom: ['Bademli Kruvasan', 'Orman Meyveli Tart', 'Pain au Chocolat', 'Iced Americano', 'Ev Yapımı Limonata'],
+    alsoTry: ['İçi yoğun el yapımı fıstık kremasıyla doldurulmuş çıtır kat kat tereyağlı kruvasan'],
+    beforeYouGo: [
+      'Kruvasanlar günlük taze pişirilir ve öğleden sonra tükenebilir; sabah erken gitmek önerilir.',
+      'Şık ve aydınlık bir iç tasarıma sahiptir.'
+    ]
+  },
+  'kusadasi-kahve-degirmen': {
+    description: "Davutlar yolu üzerinde asırlık zeytin ağaçları, gölet ve taş su değirmeni arasında kurulan, tamamen kendi çiftliğinin organik ürünleriyle hazırlanan geleneksel serpme köy kahvaltısı mabedi.",
+    whatToOrder: ['Organik Çiftlik Köy Kahvaltısı', 'Köy Fırınından Sıcak Bazlama'],
+    menuFrom: ['Çiftlik Manda Kaymağı & Çam Balı', 'Köy Yumurtası', 'Zeytinyağlı Çökelek', 'Gözleme', 'Közde Türk Kahvesi'],
+    alsoTry: ['Taş fırından çıkan dumanı üstünde sıcacık köy bazlaması üzerine sürülen organik tereyağı ve karadut reçeli'],
+    beforeYouGo: [
+      'Doğa içinde geniş yürüyüş yolları, hayvan çiftliği ve zeytinyağı müzesi barındırır.',
+      'Hafta sonu kahvaltıları için çocuklu ailelerin bir numaralı kaçış rotasıdır.'
+    ]
+  },
+  'kusadasi-lokanta-kofteciahmet': {
+    description: "Kuşadası merkezinde yılların tecrübesiyle hazırlanan katkısız dana kıyması ızgara köfteleri, kıvamında pişmiş piyazı ve acı sosuyla esnaf ve yerlilerin vazgeçemediği efsane köfte durağı.",
+    whatToOrder: ['Ahmet Usta Izgara Köfte Porsiyon', 'Özel Soslu Tahinli Piyaz'],
+    menuFrom: ['Kaşarlı Köfte', 'Kuzu Çöp Şiş', 'Kelle Paça Çorbası', 'Közde Biber Domates', 'Kemalpaşa Tatlısı'],
+    alsoTry: ['Izgara mangal ateşinde cızırdayarak pişen sulu köftelerin yanında bol sumaklı ve tahinli Ege piyazı'],
+    beforeYouGo: [
+      'Öğle saatlerinde yoğun esnaf trafiği yaşanır; hızlı ve pratik bir servisi vardır.',
+      'Fiyat-performans ve lezzet tutarlılığı açısından bölgenin en güvenilir adresidir.'
+    ]
+  },
+  'kusadasi-lokanta-bulbul': {
+    description: "Kaleiçi'ne komşu tarihi çarşı caddesinde odun fırınında pişen çıtır Konya usulü etli ekmekleri, yaprak döneri ve saç kavurmasıyla yarım asırlık lezzet geleneğini sürdüren köklü restoran.",
+    whatToOrder: ['Bıçak Arası Etli Ekmek', 'Odun Ateşinde Yaprak Döner'],
+    menuFrom: ['Mevlana Pide', 'Saç Kavurma', 'Kuşbaşılı Kaşarlı Pide', 'Mercimek Çorbası', 'Fırın Sütlaç'],
+    alsoTry: ['Taş fırından metreyle çıkan çıtır kenarlı incecik hamurlu bıçak arası etli ekmek'],
+    beforeYouGo: [
+      'Geniş oturma alanı ve ferah salonuyla kalabalık aile yemeklerine çok uygundur.',
+      'Porsiyonlar oldukça cömert ve doyurucudur.'
+    ]
+  },
+  'kusadasi-lokanta-tranche': {
+    description: "Setur Marina AVM içerisinde marinaya demirleyen lüks teknelerin hemen yanı başında, özel dinlendirilmiş dry-aged etleri ve şık sunumlarıyla Kuşadası'nın en prestijli steakhouse'u.",
+    whatToOrder: ['Dry-Aged Dallas Steak', 'Tranche Lokum Bonfile'],
+    menuFrom: ['Kuzu Kafes', 'Tranche Gurme Burger', 'Füme Etli Salata', 'Trüflü Patates', 'Özel Şarap Menüsü'],
+    alsoTry: ['Himalaya tuzu üzerinde 28 gün dinlendirilmiş kömür ızgarasında mühürlenen sulu ribeye steak'],
+    beforeYouGo: [
+      'Marina manzaralı akşam yemekleri için önceden rezervasyon yapılması önerilir.',
+      'Smart-casual atmosferi ve profesyonel et servisiyle öne çıkar.'
+    ]
+  },
+  'kusadasi-lokanta-planetyucca': {
+    description: "Kaleiçi Sağlık Caddesi üzerinde canlı müzikleri, neşeli atmosferi ve zengin dünya mutfağı seçkisiyle Kuşadası'nda akşam eğlencesi ile lezzeti birleştiren simge işletme.",
+    whatToOrder: ['Meksika Usulü Fajita Tabağı', 'Geleneksel Kuzu Güveç'],
+    menuFrom: ['Dana Bonfile', 'Tavuk Şiş', 'Taş Fırın Pizza', 'İmza Kokteyller', 'Baklava Tabağı'],
+    alsoTry: ['Dumanı tüten demir döküm tavada servis edilen taze tortillalı et fajita tabağı'],
+    beforeYouGo: [
+      'Akşamları canlı müzik ve sahne performansları ile oldukça hareketlidir.',
+      'Kaleiçi çarşısında eğlenceli ve dinamik bir akşam yemeği arayanlar için idealdir.'
+    ]
+  },
+  'kusadasi-tatli-korbo': {
+    description: "Camikebir Mahallesi Hanım Camii yanında nesillerdir katkısız keçi sütü, salep ve gerçek mevsim meyveleriyle dövülerek hazırlanan efsanevi Kuşadası dondurmacısı.",
+    whatToOrder: ['Hakiki Damla Sakızlı Dondurma', 'Kuşadası Karadutlu Dondurma'],
+    menuFrom: ['Kavunlu Sorbe', 'Bal Bademli Dondurma', 'Kakaolu Dondurma', 'Kışın Geleneksel Boza', 'Limonlu Sorbe'],
+    alsoTry: ['Ege kıyılarının taze karadutlarından yapılan yoğun meyveli ferahlatıcı karadut dondurması'],
+    beforeYouGo: [
+      'Tarihi küçük bir dükkandır; yaz aylarında önünde kuyruk oluşur.',
+      'Kış aylarında meşhur geleneksel sıcak bozasıyla da hizmet verir.'
+    ]
+  },
+  'kusadasi-tatli-miogelato': {
+    description: "Turgut Özal Bulvarı Priva Çarşısı'nda İtalyan gelato reçetelerini yerel Ege meyveleriyle buluşturan, kadifemsi dokusu ve yoğun lezzetleriyle modern artisan dondurma durağı.",
+    whatToOrder: ['Tuzlu Karamelli Gelato', 'Sicilya Fıstıklı Dondurma'],
+    menuFrom: ['Belçika Çikolatası', 'Mango & Çarkıfelek Sorbe', 'Vişneli Gelato', 'Külah Waffle', 'Espresso Affogato'],
+    alsoTry: ['Sıcak double shot espresso shot\'ı taze vanilyalı artisan gelato üzerine dökülerek servis edilen affogato'],
+    beforeYouGo: [
+      'Katkı maddesi veya yapay aroma kullanılmaz; her gün taze üretilir.',
+      'Akşam yürüyüşü molalarında külah dondurma almak için mükemmeldir.'
+    ]
+  },
+  'kusadasi-tatli-balkaymak': {
+    description: "Kuşadası sahil hattında taze süt kaymağı ve organik balla hazırlanan efsane dondurmaları, çıtır kornetleri ve samimi sahil esnafı havasıyla yaz günlerinin serinletici adresi.",
+    whatToOrder: ['Balkaymak İncirli Dondurma', 'Fıstıklı Bal Kaymak Dondurma'],
+    menuFrom: ['Çilekli Dondurma', 'Sade Manda Sütlü Dondurma', 'Limon Sorbe', 'Cevizli Dondurma', 'Muzlu Dondurma'],
+    alsoTry: ['Aydın dağlarının kuru incirleri ve saf süt kaymağının birleştiği nefis incirli balkaymak dondurma'],
+    beforeYouGo: [
+      'Sahil yürüyüş yolu üzerinde kolay ulaşılabilir bir noktadadır.',
+      'Porsiyonları cömerttir ve dondurma çeşitliliği zengindir.'
+    ]
+  },
+  'kusadasi-tatli-kahveadasi': {
+    description: "Atatürk Bulvarı üzerinde deniz manzarasına bakan geniş salonu, çikolata şelalesi, el yapımı taze pastaları ve zengin kahve menüsüyle Kuşadası'nın vazgeçilmez tatlı buluşma mekanı.",
+    whatToOrder: ['Çikolatalı Çilekli Waffle', 'Kahve Adası İmza Pastası'],
+    menuFrom: ['Sıcak Sufle', 'San Sebastian Cheesecake', 'Profiterol', 'Mozaik Pasta', 'Filtre Kahve'],
+    alsoTry: ['Taze meyveler ve eritilmiş Belçika çikolatasıyla sıcacık servis edilen çıtır hamurlu waffle'],
+    beforeYouGo: [
+      'Deniz manzaralı açık terası akşamüstü kahve ve tatlı molaları için çok keyiflidir.',
+      'Gece geç saatlere kadar tatlı servisi devam eder.'
+    ]
   }
 };
 

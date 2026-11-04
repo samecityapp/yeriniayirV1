@@ -3116,6 +3116,152 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
+
+  // --- KUŞADASI (AYDIN) ---
+  'kusadasi-balik-mezgit': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Mezgit+Restaurant+Ataturk+Blv+No+104+Kusadasi',
+      providers: [],
+    },
+  },
+  'kusadasi-balik-bottarga': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Bottarga+Restaurant+Turkmen+Mah+Kusadasi',
+      providers: [],
+    },
+  },
+  'kusadasi-balik-sef': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Sef+Balik+Restaurant+Ataturk+Blv+No+74+Kusadasi',
+      providers: [],
+    },
+  },
+  'kusadasi-balik-kazimusta': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kazim+Usta+Restaurant+Balikcilar+Meydani+Kusadasi',
+      providers: [],
+    },
+  },
+  'kusadasi-kahve-marvista': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Marvista+Restaurant+Cafe+Ataturk+Blv+No+44+Kusadasi',
+      providers: [],
+    },
+  },
+  'kusadasi-kahve-court': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Court+Coffee+Company+Setur+Marina+Kusadasi',
+      providers: [],
+    },
+  },
+  'kusadasi-kahve-kruvasunday': {
+    platform: 'google-maps',
+    value: 4.8,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kruvasunday+Ataturk+Blv+No+116+Kusadasi',
+      providers: [],
+    },
+  },
+  'kusadasi-kahve-degirmen': {
+    platform: 'google-maps',
+    value: 4.0,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Degirmen+Ciftligi+Davutlar+Yolu+Kusadasi',
+      providers: [],
+    },
+  },
+  'kusadasi-lokanta-kofteciahmet': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kofteci+Ahmet+Usta+Inonu+Blv+Kusadasi',
+      providers: [],
+    },
+  },
+  'kusadasi-lokanta-bulbul': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Bulbul+Restaurant+Kahramanlar+Cd+No+35+Kusadasi',
+      providers: [],
+    },
+  },
+  'kusadasi-lokanta-tranche': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Tranche+Steak+House+Setur+Marina+Kusadasi',
+      providers: [],
+    },
+  },
+  'kusadasi-lokanta-planetyucca': {
+    platform: 'google-maps',
+    value: 4.1,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Planet+Yucca+Restaurant+Saglik+Cd+No+65+Kusadasi',
+      providers: [],
+    },
+  },
+  'kusadasi-tatli-korbo': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Korbo+Dondurma+Hanim+Camii+Yani+No+6+Kusadasi',
+      providers: [],
+    },
+  },
+  'kusadasi-tatli-miogelato': {
+    platform: 'google-maps',
+    value: 4.8,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Mio+Gelato+Priva+Carsi+Kusadasi',
+      providers: [],
+    },
+  },
+  'kusadasi-tatli-balkaymak': {
+    platform: 'google-maps',
+    value: 4.2,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Balkaymak+Dondurma+Guzelcamli+Sahil+Kusadasi',
+      providers: [],
+    },
+  },
+  'kusadasi-tatli-kahveadasi': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kahve+Adasi+Ataturk+Blv+No+82+Kusadasi',
+      providers: [],
+    },
+  },
 };
 
 export function getVerifiedGoogleRatings(venueId: string): VisitorGoogleRating[] {
