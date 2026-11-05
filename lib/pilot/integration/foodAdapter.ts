@@ -297,9 +297,9 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    path: ['gaziantep'],
    displayName: 'Gaziantep',
    locative: "Gaziantep'te",
-   status: 'published',
+   status: 'coming_soon',
    aliases: ['Gaziantep', 'Antep', 'Şahinbey', 'Şehitkamil', 'Kalealtı', 'Elmacı Pazarı', 'Bakırcılar Çarşısı'],
-   scopeNote: 'Gaziantep · Şahinbey & Şehitkamil (Yayında)'
+   scopeNote: 'Gaziantep · Pilot Onay Bekliyor'
   }
  ] : [];
 
@@ -318,12 +318,16 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
 
    const matchedCategory = data.categories.find(c => c.id === v.categoryId);
    const catSlug = matchedCategory?.slug || CATEGORY_SLUG_MAP[v.categoryId] || data.categorySlug;
+   const secondarySlugs = (v.secondaryCategoryIds || [])
+    .map(id => data.categories.find(c => c.id === id)?.slug || CATEGORY_SLUG_MAP[id])
+    .filter((s): s is string => Boolean(s));
+   const categorySlugs = Array.from(new Set([catSlug, ...secondarySlugs]));
    const catName = matchedCategory?.label || CATEGORY_NAME_MAP[v.categoryId] || 'Gastronomi';
    const regionName = data.region?.name || 'Moda';
    const regionDisplayName = data.region?.displayName ? data.region.displayName.split(',').slice(0, 2).join(',') : `${regionName}, İstanbul`;
 
    return {
-    id:v.id,name:v.name,location:regionDisplayName,address:v.location,neighborhood:v.location,categoryName:catName,categorySlugs:[catSlug],
+    id:v.id,name:v.name,location:regionDisplayName,address:v.location,neighborhood:v.location,categoryName:catName,categorySlugs,
     tagline:description,
     imageUrl:illustrations.get(v.id)!,imageIsRepresentative:true,imageCategory:v.categoryId,
     ratings:resolvedRatings,

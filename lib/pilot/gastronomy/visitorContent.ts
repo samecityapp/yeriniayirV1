@@ -35,6 +35,7 @@ export interface NeutralVisitorContent {
 }
 export interface VisitorVenueData extends NeutralVisitorContent {
  id:string;name:string;location:string;categoryId:string;
+ secondaryCategoryIds?:string[];
  photo:{url:string}|null;
  // Official ratings require the separate Places identity/attribution path.
  // Bare numbers from a research card are never sufficient provenance.
@@ -3468,14 +3469,25 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Gölge çardaklar ve doğal bahçe alanı çok ferahtır.'
     ]
   },
-  'kusadasi-kahvalti-sultankonak': {
-    description: "Kirazlı Köyü'nde aslına uygun restore edilmiş tarihi taş konakta, yerel bahçe mahsulleri, odun ekmeği ve ev yapımı reçellerle hazırlanan sakin bir Ege kahvaltısı.",
-    whatToOrder: ['Kirazlı Taş Konak Serpme Kahvaltısı', 'Fırınlanmış Keçi Peynirli Köy Böreği'],
-    menuFrom: ['Köy Tereyağı & Çam Balı', 'Bahçe Domatesi & Salatalık', 'Köy Yumurtalı Menemen', 'Cevizli İncir Reçeli', 'Közde Türk Kahvesi'],
-    alsoTry: ['Taş fırından yeni çıkmış sıcak köy ekmeği üzerine sürülen taze köy kaymağı ve cevizli incir reçeli'],
+  // --- KUŞADASI (V2 DOĞRULANMIŞ SEÇKİ) ---
+  'kusadasi-kahvalti-degirmen': {
+    description: "Davutlar Yolu Caferli kavşağında Oleatrium Zeytinyağı Müzesi kompleksi içinde, kendi sertifikalı çiftlik üretimi süt ürünleri, zeytinyağları ve odun fırını ekmekleriyle hizmet veren çiftlik restoranı.",
+    whatToOrder: ['Çiftlik Serpme Kahvaltısı', 'Odun Fırınında Otlu Köy Böreği'],
+    menuFrom: ['Ekşi Mayalı Tam Buğday Köy Ekmeği', 'Çiftlik Keçi & Koyun Peynirleri', 'Ev Yapımı Reçeller', 'Köy Yumurtalı Menemen', 'Demleme Çay'],
+    alsoTry: ['Kendi üretimleri soğuk sıkım zeytinyağı ve odun fırınından sıcak çıkan köy ekmeği'],
     beforeYouGo: [
-      'Kirazlı Köyü merkezinde huzurlu ve otantik bir atmosfere sahiptir.',
-      'Hafta sonu serpme kahvaltı için önceden rezervasyon yaptırılması önerilir.'
+      'Gölet çevresi ve çiftlik alanı geniştir; hafta sonu kahvaltısı için rezervasyon önerilir.',
+      'Serpme kahvaltı fiyatları bölge ortalamasının üzerindedir.'
+    ]
+  },
+  'kusadasi-balik-charides-marina': {
+    description: "Setur Kuşadası Marina AVM içerisinde yat limanı ve gün batımı manzarasına karşı Ege mezeleri, deniz mahsullü ara sıcaklar ve günlük taze balıklar sunan deniz ürünleri restoranı.",
+    whatToOrder: ['Ahtapot Tandır', 'Kadayıflı Karides'],
+    menuFrom: ['Hardallı Avokado Karides', 'Deniz Börülcesi', 'Girit Ezme', 'Balık Kokoreç', 'Günlük Deniz Levreği & Sinarit'],
+    alsoTry: ['Köz patlıcanlı beğendi yatağında pişirilen ahtapot ve soğuk Ege mezeleri'],
+    beforeYouGo: [
+      'Setur Marina AVM içindeki şubedir; Gazibeğendi Bulvarı şubesiyle karıştırılmamalıdır.',
+      'Gün batımı saatlerinde ön sıra marina masaları için önceden rezervasyon yapılması önerilir.'
     ]
   },
   'kusadasi-kahvalti-koysofrasi': {

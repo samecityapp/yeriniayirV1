@@ -3530,9 +3530,27 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
+  'kusadasi-kahvalti-degirmen': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=De%C4%9Firmen+Restoran+%C3%87iftlik+Caferli+Davutlar+Yolu+Ku%C5%9Fadas%C4%B1',
+      providers: [],
+    },
+  },
+  'kusadasi-balik-charides-marina': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Charides+Sea+Food+Marina+Setur+Marina+AVM+Ku%C5%9Fadas%C4%B1',
+      providers: [],
+    },
+  },
   'kusadasi-balik-kazimusta': {
     platform: 'google-maps',
-    value: 4.3,
+    value: 4.4,
     attribution: {
       label: 'Google Maps',
       mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kazim+Usta+Restaurant+Balikcilar+Meydani+Kusadasi',
@@ -3540,6 +3558,13 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
     },
   },
 };
+
+export function getRatingVerificationStatus(venueId: string): 'VERIFIED' | 'NEEDS_RESEARCH' {
+  const match = VERIFIED_MAP[venueId];
+  if (!match) return 'NEEDS_RESEARCH';
+  if (venueId === 'osm-node-8017443297') return 'NEEDS_RESEARCH';
+  return match.attribution.mapsUri.includes('maps.google.com/?cid=') ? 'VERIFIED' : 'NEEDS_RESEARCH';
+}
 
 export function getVerifiedGoogleRatings(venueId: string): VisitorGoogleRating[] {
   const match = VERIFIED_MAP[venueId];
