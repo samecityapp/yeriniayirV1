@@ -4,7 +4,7 @@ const normalize=(text:string)=>text.toLocaleLowerCase('tr').normalize('NFD').rep
 export function createRealFoodProvider(data:VisitorFoodDiscovery){
  return {
   searchLocations:(query:string)=>data.locations.filter(l=>normalize([l.name,l.displayName,...(l.aliases||[])].join(' ')).includes(normalize(query.trim()))),
-  getReadyRegions:()=>data.locations,
+  getReadyRegions:()=>data.locations.filter(l=>l.status==='published'),
   getLocationBySlug:(slug:string):FoodLocation|undefined=>data.locations.find(l=>l.slug===slug),
   getRegionCategories:(id:string)=>data.locations.some(l=>l.id===id)?data.categories:[],
   getCategoryResult:(id:string,slug:string)=>{

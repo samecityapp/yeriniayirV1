@@ -797,14 +797,14 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Paket servis ve yerinde tüketim için çok popülerdir.'
     ]
   },
-  'kosuyolu-pizza-papajohns': {
-    description: "Koşuyolu Caddesi üzerinde taze günlük açılan hamuru, özel sarımsak sosu ve bol malzemeli kalın kenar Amerikan tarzı pizzalarıyla tanınan pizza durağı.",
-    whatToOrder: ['Super Papa', 'Special Garlic Soslu Çıtır Kenar'],
-    menuFrom: ['Pepperoni Pizza', 'Tavuklu Barbekü Pizza', 'Peynirli Ekmek'],
-    alsoTry: ['Orijinal tereyağlı ve sarımsaklı dip sos eşliğinde çıtır pizza kenarları'],
+  'kosuyolu-pizza-nellos': {
+    description: "Koşuyolu'nda müstakil bahçeli mekanında İtalyan unlarıyla hazırlanan ince hamurlu taş fırın pizzaları ve ev yapımı taze makarnalarıyla bilinen İtalyan restoranı.",
+    whatToOrder: ['Pizza Burrata & Prosciutto', 'Ev Yapımı Trüflü Tagliatelle'],
+    menuFrom: ['Pizza Margherita', 'Pizza Diavola', 'Lazanya', 'Tiramisu', 'Roka & Parmesan Salatası'],
+    alsoTry: ['Taş fırından sıcak çıkan ince kenarlı çıtır İtalyan pizzaları'],
     beforeYouGo: [
-      'Geç saatlere kadar açık ve hızlı servis imkanı sağlar.',
-      'Aileler ve gruplar için ekonomik menü seçenekleri bulunur.'
+      'Ağaçlıklı bahçe alanı akşam yemekleri için sakin bir ortam sunar.',
+      'Hafta sonu akşam saatleri için rezervasyon yapılması önerilir.'
     ]
   },
   'kosuyolu-pizza-pizzav': {
@@ -1209,14 +1209,14 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Caddeye paralel sakin sokakta huzurlu kahvaltı arayanlar için çok uygundur.'
     ]
   },
-  'caddebostan-brunch-kasabim': {
-    description: "İskele Sokak'ta sabah saatlerinden itibaren taze pişen sıcak puf pideleri, özel marinasyonlu yaprak döneri ve doyurucu esnaf lezzetleri.",
-    whatToOrder: ['Tırnak Pidede Yaprak Döner', 'Yayık Ayran'],
-    menuFrom: ['İskender', 'Döner Dürüm', 'Mercimek Çorbası', 'Fırın Sütlaç'],
-    alsoTry: ['Közlenmiş domates ve biber eşliğinde porsiyon yaprak döner'],
+  'caddebostan-brunch-brekkie': {
+    description: "Bağdat Caddesi Caddebostan hattında günlük taze pişen tereyağlı kruvasanları, kruvasan sandviçleri ve zengin kahvaltı tabaklarıyla öne çıkan fırın ve brunch durağı.",
+    whatToOrder: ['Çırpılmış Yumurtalı & Avokadolu Kruvasan Sandviç', 'Bademli Kruvasan'],
+    menuFrom: ['Füme Somonlu Kruvasan', 'Poşe Yumurtalı Brunch Tabağı', 'Pain au Chocolat', 'Flat White', 'Taze Portakal Suyu'],
+    alsoTry: ['Sabah fırından sıcak çıkan kat kat tereyağlı tatlı ve tuzlu kruvasan çeşitleri'],
     beforeYouGo: [
-      'Öğle ve akşam saatlerinde hızlı, lezzetli ve doyurucu bir alternatif sunar.',
-      'Barlar Sokağı girişinde merkezi bir konumdadır.'
+      'Hafta sonu sabah ve brunch saatlerinde yoğunluk oluşabilir.',
+      'Cadde yürüyüşü öncesi kahvaltı ve nitelikli kahve molası için uygundur.'
     ]
   },
 
@@ -1327,7 +1327,7 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     ]
   },
   'suadiye-coffee-voi': {
-    description: "Mücahit Sokak'ta sağlıklı ve glutensiz alternatifler, organik matcha latte ve fit tariflerle modern yaşam tarzına uygun bir kahve deneyimi.",
+    description: "Mücahit Sokak'ta sağlıklı ve glutensiz alternatifler, matcha latte ve fit tariflerle modern yaşam tarzına uygun bir kahve deneyimi.",
     whatToOrder: ['Iced Matcha Latte', 'Şekersiz Fit Brownie'],
     menuFrom: ['Cold Drip', 'Flat White', 'Acai Bowl', 'Chia Puding'],
     alsoTry: ['Yulaf sütü ve seremoniyel Japon matchasıyla hazırlanan buzlu Matcha Latte'],
@@ -1359,13 +1359,13 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     ]
   },
   'suadiye-brunch-lepain': {
-    description: "Bağdat Caddesi üzerinde ahşap ortak masaları, Belçika usulü ekşi mayalı ekmekleri, organik reçelleri ve zarif brunch tabakları.",
-    whatToOrder: ['Avokadolu Somonlu Tartine', 'Organik Ekmek Sepeti'],
+    description: "Bağdat Caddesi üzerinde ahşap ortak masaları, Belçika usulü ekşi mayalı ekmekleri, ev yapımı reçelleri ve zarif brunch tabakları.",
+    whatToOrder: ['Avokadolu Somonlu Tartine', 'Ekşi Mayalı Ekmek Sepeti'],
     menuFrom: ['Eggs Benedict', 'Granola Parfe', 'Belçika Waffle', 'Cafe au Lait'],
     alsoTry: ['Geleneksel kaselerde servis edilen Cafe au Lait ve fındık ezmesi'],
     beforeYouGo: [
       'Sakin ve dingin bir kahvaltı atmosferi arayanlar için idealdir.',
-      'Organik fırın ekmekleri paket olarak satın alınabilir.'
+      'Ekşi mayalı fırın ekmekleri paket olarak satın alınabilir.'
     ]
   },
   'suadiye-brunch-grandma': {
@@ -1501,7 +1501,7 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     description: "İcadiye Caddesi'nde botanik bitkilerle çevrili ferah avlusu, sağlıklı kahvaltı kaseleri ve taze sıkma meyve sularıyla huzurlu bir bahçe kafesi.",
     whatToOrder: ['Avokadolu Poşe Yumurtalı Ekmek', 'Botanik Granola Kasesi'],
     menuFrom: ['Ekşi Mayalı Tost', 'Hellimli Izgara Salata', 'Detoks İçecekler', 'Filtre Kahve'],
-    alsoTry: ['Ekşi maya ekmek üzerine ezilmiş avokado, labne ve organik poşe yumurta'],
+    alsoTry: ['Ekşi maya ekmek üzerine ezilmiş avokado, labne ve poşe yumurta'],
     beforeYouGo: [
       'Yeşillikler içinde sakin kahvaltı veya kitap okuma molası için idealdir.',
       'Ferah kış bahçesi bölümü de mevcuttur.'
@@ -1746,7 +1746,7 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     description: "Albay Hüsamettin Ertürk Sokağı'nda minimalist dekorasyonu, mikro-kavrum nitelikli kahveleri ve huzurlu köşesiyle kahve tutkunlarının gizli vahası.",
     whatToOrder: ['Flat White', 'Specialty Iced Latte'],
     menuFrom: ['Aeropress', 'Americano', 'Fıstıklı Brownie', 'Bademli Kurabiye'],
-    alsoTry: ['Kusursuz kadifemsi mikro köpükle hazırlanan yoğun gövdeli Flat White'],
+    alsoTry: ['Dengeli kadifemsi mikro köpükle hazırlanan yoğun gövdeli Flat White'],
     beforeYouGo: [
       'Çarşının kalabalığından izole, sakin bir kahve sohbeti için idealdir.',
       'Çekirdek kahve satışı da mevcuttur.'
@@ -2052,14 +2052,14 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Hafta sonu brunch için erken saatlerde gitmek masa bulmayı kolaylaştırır.'
     ]
   },
-  'karakoy-kahve-pim': {
-    description: "Yüksek tavanlı ferah tasarımı, rengarenk graffitili sokak köşesi, zengin dünya mutfağı ve lezzetli tatlılarıyla Karaköy'ün en popüler çalışma ve sosyalleşme kafelerinden.",
-    whatToOrder: ['Pim Gurme Burger', 'Orman Meyveli Tart'],
-    menuFrom: ['Falafel Kasesi', 'Tavuklu Sezar Salata', 'Filtre Kahve', 'Iced Latte', 'Cheesecake'],
-    alsoTry: ['Kendi fırınlarında hazırlanan çıtır tart hamurlu taze tatlılar'],
+  'karakoy-kahve-brewcoffeworks': {
+    description: "Hoca Tahsin Sokak'ta tarihi taş bina dokusu içinde nitelikli espresso bazlı içecekleri, üçüncü nesil demleme kahveleri ve ev yapımı tatlılarıyla hizmet veren butik kahve dükkanı.",
+    whatToOrder: ['Cortado', 'V60 Nitelikli Filtre Kahve'],
+    menuFrom: ['Flat White', 'Cold Brew', 'Taze Kruvasan', 'San Sebastian Cheesecake', 'Havuçlu Kek'],
+    alsoTry: ['Özenle kavrulmuş çekirdeklerle demlenen filtre kahve ve günlük pastane ürünleri'],
     beforeYouGo: [
-      'Geniş iç oturma alanı laptop ile çalışanlar ve kalabalık arkadaş buluşmaları için oldukça elverişlidir.',
-      'Kemankeş mahallesinin en canlı sokak kesişimindedir.'
+      'Karaköy ara sokaklarında sakin bir kahve ve çalışma molası için uygundur.',
+      'Paket çekirdek kahve satışı mevcuttur.'
     ]
   },
   'karakoy-kahve-karabatak': {
@@ -2262,7 +2262,7 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     alsoTry: ['Kulenin gece aydınlatması eşliğinde servis edilen ağır ateşte fırınlanmış kuzu incik'],
     beforeYouGo: [
       'Kule manzaralı cam kenarı masalar için günler öncesinden rezervasyon şarttır.',
-      'Evlilik teklifleri ve özel kutlamalar için şehrin en popüler mekanları arasındadır.'
+      'Evlilik teklifleri ve özel kutlamalar için sık tercih edilen mekanlar arasındadır.'
     ]
   },
   'galata-meyhane-galatada24': {
@@ -2340,7 +2340,7 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     ]
   },
   'cihangir-kahvalti-journey': {
-    description: "Akarsu Yokuşu'nda ferah iki katlı ahşap mekanında, yerel üreticilerden temin edilen organik malzemelerle hazırlanan yaratıcı brunch seçenekleri ve ev yapımı ekşi mayalı lezzetler.",
+    description: "Akarsu Yokuşu'nda ferah iki katlı ahşap mekanında, yerel üreticilerden temin edilen taze malzemelerle hazırlanan yaratıcı brunch seçenekleri ve ev yapımı ekşi mayalı lezzetler.",
     whatToOrder: ['Avokadolu Poşe Yumurta', 'Ekşi Mayalı Fırın Tost'],
     menuFrom: ['Granola Kasesi', 'Pankek Tabağı', 'Keçi Peynirli Salata', 'Taze Sıkma Portakal Suyu', 'Filtre Kahve'],
     alsoTry: ['Fırından yeni çıkmış sıcak ekşi mayalı ekmek üzerine poşe yumurta ve taze yeşillikler'],
@@ -2479,14 +2479,14 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Sıcak take-away kahve ve kruvasan ikilisi yürüyüş için idealdir.'
     ]
   },
-  'cihangir-tatli-misspizza': {
-    description: "Havyar Sokak'ta 2004 yılından bu yana odun ateşinde incecik İtalyan hamuruyla pişen gurme pizzaları ve otantik tiramisusuyla İstanbul'un en ikonik butik pizzacısı.",
-    whatToOrder: ['Pizza Margherita', 'Pizza Funghi & Tartufo'],
-    menuFrom: ['Pizza Pesto', 'Pizza Gorgonzola', 'Roka Salatası', 'Ev Yapımı Tiramisu', 'İtalyan Gazozu'],
-    alsoTry: ['Odun fırınından dumanı üstünde çıkan çıtır çıtır trüflü mantarlı pizza ve ardından taze tiramisu'],
+  'cihangir-tatli-laurel': {
+    description: "Akarsu Yokuşu'nda Fransız pastacılık teknikleriyle günlük hazırlanan choux, ekler, tart ve kruvasan çeşitleriyle tanınan butik Cihangir pastanesi.",
+    whatToOrder: ['Paris-Brest', 'Limonlu Mereng Tart'],
+    menuFrom: ['Çikolatalı Ekler', 'Mille-Feuille (Milföy Pasta)', 'Bademli Kruvasan', 'Filtre Kahve', 'Matcha Latte'],
+    alsoTry: ['Fındık pralin kremalı Paris-Brest ve taze meyveli Fransız tartları'],
     beforeYouGo: [
-      'Mekan oldukça kompakt ve samimidir; akşam saatlerinde sıra oluşabilir.',
-      'Rezervasyon yaptırmak veya erken saatte gitmek tavsiye edilir.'
+      'Tatlılar günlük butik üretim olduğu için akşam saatlerinde bazı çeşitler tükenebilir.',
+      'Kahve eşliğinde sakin bir tatlı molası için samimi bir oturma alanı sunar.'
     ]
   },
 
@@ -2572,7 +2572,7 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     ]
   },
   'beyoglu-bistro-mikla': {
-    description: "The Marmara Pera'nın terasında Mehmet Gürs'ün Yeni Anadolu Mutfağı felsefesiyle Michelin yıldızına layık görülen, Haliç ve Boğaz panoramasına sahip dünya çapında bir gastronomi zirvesi.",
+    description: "The Marmara Pera'nın terasında Mehmet Gürs'ün Yeni Anadolu Mutfağı felsefesiyle Michelin yıldızına layık görülen, Haliç ve Boğaz panoramasına sahip öne çıkan bir çağdaş Anadolu mutfağı restoranı.",
     whatToOrder: ['Tadım Menüsü (Yeni Anadolu Mutfağı)', 'Balık Ekmek Yorumu'],
     menuFrom: ['Mantar Mantı', 'Kuzu Gerdan', 'Lakerda İnovasyonu', 'Antep Fıstıklı Helva Yorumu', 'İmza Ege Kokteylleri'],
     alsoTry: ['360 derece İstanbul silüetine karşı şefin yerel Anadolu malzemeleriyle hazırladığı imza tadım menüsü'],
@@ -2594,7 +2594,7 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     menuFrom: ['Levrek Ceviche', 'Izgara Ahtapot', 'Trüflü Risotto', 'Peynir Tabağı', 'Karaköy Kokteylleri'],
     alsoTry: ['Boğaz manzaralı terasta ağır ateşte pişmiş yumuşacık vişneli dana yanak'],
     beforeYouGo: [
-      'Romantik akşam yemekleri ve özel buluşmalar için şehrin en popüler noktalarındandır.',
+      'Romantik akşam yemekleri ve özel buluşmalar için sık tercih edilen noktalarındandır.',
       'Kumbaracı Yokuşu üzerinden asansörle çıkılmaktadır.'
     ]
   },
@@ -2680,14 +2680,14 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Günün 24 saati hareketli, ayakta veya taburede hızlı tüketim konseptindedir.'
     ]
   },
-  'taksim-kebap-bambi': {
-    description: "Sıraselviler Caddesi üzerinde yıllardır Taksim'in nabzını tutan, dönerli dürümleri, kaşarlı tostları ve taze atom meyve kokteylleriyle bilinen köklü büfe durağı.",
-    whatToOrder: ['Et Döner Dürüm', 'Bambi Atom Meyve Suyu'],
-    menuFrom: ['Kaşarlı Dürüm Döner', 'Tavuk Döner', 'Kavurmalı Kaşarlı Tost', 'Limonata', 'Muzlu Süt'],
-    alsoTry: ['İncecik lavaşa sarılmış sıcak et dönerin ardından taze sıkılmış enerji dolu atom kokteyli'],
+  'taksim-kebap-ficcin': {
+    description: "Kallavi Sokak'ta 1996'dan bu yana Çerkes ve Anadolu mutfağının geleneksel hamur işleri, ızgara etleri ve günlük zeytinyağlılarını sunan köklü Beyoğlu-Taksim lokantası.",
+    whatToOrder: ['Fıccın (Çerkes Kıymalı Böreği)', 'Çerkes Mantısı (Gılnış / Haluj)'],
+    menuFrom: ['Çerkes Tavuğu', 'Kuzu Şiş & Köfte', 'Zeytinyağlı Yaprak Sarma', 'Ev Baklavası', 'Reyhan Şerbeti'],
+    alsoTry: ['Fırında kızarmış kıymalı Fıccın böreği ve sarımsaklı yoğurtlu el açması mantı'],
     beforeYouGo: [
-      'Taksim Meydanı\'nda gece acıkanların ilk sığınağıdır.',
-      'Hızlı servis ve paket servis imkanı vardır.'
+      'Kallavi Sokak boyunca karşılıklı birkaç salon ve açık sokak masalarıyla hizmet verir.',
+      'Öğle ve akşam saatlerinde geleneksel ev ve et yemekleri için yoğun tercih edilir.'
     ]
   },
   'taksim-tatli-hafizmustafa': {
@@ -2731,7 +2731,7 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     ]
   },
   'taksim-bistro-divan': {
-    description: "Divan İstanbul'un lobi katında Michelin Rehberi tavsiyeli menüsüyle Türk ve Akdeniz mutfağının inceliklerini kusursuz zarafetle sunan Elmadağ'ın gastronomi ikonu.",
+    description: "Divan İstanbul'un lobi katında Michelin Rehberi tavsiyeli menüsüyle Türk ve Akdeniz mutfağının inceliklerini özenli sunumla sunan Elmadağ'ın gastronomi ikonu.",
     whatToOrder: ['Ağır Ateşte Pişmiş Dana Kaburga', 'Divan Usulü Deniz Mahsulleri Çorbası'],
     menuFrom: ['Kuzu Sırtı', 'Trüflü Risotto', 'Ege Otlu Börek', 'Divan Klasiği Rokoko', 'İmza Şarap Kavı'],
     alsoTry: ['Yemek sonrasında Divan\'ın tescilli tatlısı el yapımı çikolata soslu dondurmalı Rokoko'],
@@ -2746,7 +2746,7 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     menuFrom: ['Deniz Levreği Izgara', 'Trüflü Carpaccio', 'Tapas Seçkisi', 'İmza Kokteyller', 'San Sebastian'],
     alsoTry: ['Boğaz panoramasına karşı gün batımında usta şeflerin elinden çıkan taze suşi ve kokteyl eşliği'],
     beforeYouGo: [
-      'Şehrin en geniş Boğaz manzaralı teraslarından birine sahiptir.',
+      'Geniş bir Boğaz manzaralı terasa sahiptir.',
       'Akşam saatlerinde DJ performansları eşliğinde seçkin bir gece kulübü havasına bürünür.'
     ]
   },
@@ -2800,14 +2800,14 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Antikacılar sokağında keyifli bir yürüyüş sonrası dinlenmek için birebirdir.'
     ]
   },
-  'taksim-cafe-geziistanbul': {
-    description: "Taksim Meydanı'na ve Gezi Parkı'na bakan konumuyla 1987'den bu yana Avusturya ve Fransız pastacılık ekolünü yaşatan, taze pastaları, kahvaltıları ve brasserie lezzetleriyle bir meydan klasiği.",
-    whatToOrder: ['Sacher Torte', 'Viyana Kahvesi'],
-    menuFrom: ['Kruvasan Kahvaltı Tabağı', 'Elmalı Strudel', 'Dana Şnitzel', 'Filtre Kahve', 'Limonata'],
-    alsoTry: ['Hakiki kayısı marmeladı ve yoğun çikolata kaplamalı Viyana klasiği Sacher Torte'],
+  'taksim-cafe-ravouna': {
+    description: "İstiklal Caddesi üzerindeki tarihi 1906 Art Nouveau apartmanında kendi kavurduğu nitelikli kahveleri, dünya mutfağı tabakları ve Boğaz manzaralı terasıyla hizmet veren kafe ve bistro.",
+    whatToOrder: ['V60 Nitelikli Demleme Kahve', 'Ev Yapımı Tiramisu'],
+    menuFrom: ['Kruvasan Kahvaltı Tabağı', 'Dana Bonfile Salata', 'El Yapımı Makarna', 'Espresso', 'İmza Kokteyller'],
+    alsoTry: ['Tarihi Art Nouveau atmosferde taze kavrum filtre kahve ve el yapımı tatlılar'],
     beforeYouGo: [
-      'Geniş meydan manzaralı terasında oturup Taksim\'in ritmini izleyebilirsiniz.',
-      'El yapımı çikolata ve pasta paketleri çok rağbet görür.'
+      'Giriş katı kahve ve tatlı molası, üst teras katı ise uzun yemekler için uygundur.',
+      'Galatasaray Lisesi\'ne yürüme mesafesinde merkezi konumdadır.'
     ]
   },
 
@@ -2843,7 +2843,7 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     ]
   },
   'nisantasi-kahve-cupofjoy': {
-    description: "Şair Nigar Sokak'ta saklı ferah avlusu, organik çiğ (raw) tatlıları ve özel kavrulmuş kahveleriyle Nişantaşı'nın en neşeli kaçış noktası.",
+    description: "Şair Nigar Sokak'ta saklı ferah avlusu, çiğ (raw) tatlıları ve özel kavrulmuş kahveleriyle Nişantaşı'nın en neşeli kaçış noktası.",
     whatToOrder: ['V60 Single Origin', 'Şekersiz Raw Brownie'],
     menuFrom: ['Americano', 'Matcha Latte', 'Badem Sütlü Cappuccino', 'Chia Puding', 'Glutensiz Kurabiye'],
     alsoTry: ['Bitkisel süt alternatifleriyle hazırlanan buzlu matcha latte ve ev yapımı raw brownie'],
@@ -2933,7 +2933,7 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     ]
   },
   'nisantasi-tatli-divan': {
-    description: "Mim Kemal Öke Caddesi köşesinde Türk pastacılığının zirvesi olarak Rokoko pastası, madlen çikolataları ve fıstıklı makaronlarıyla Nişantaşı'nın asil lezzet mabedi.",
+    description: "Mim Kemal Öke Caddesi köşesinde Rokoko pastası, madlen çikolataları ve fıstıklı makaronlarıyla Nişantaşı'nın köklü pastane ve çikolata durağı.",
     whatToOrder: ['Divan İkonik Rokoko', 'El Yapımı Madlen Çikolata'],
     menuFrom: ['Ekler', 'Badem Ezmesi', 'Çilekli Tart', 'Profiterol', 'Geleneksel Türk Kahvesi'],
     alsoTry: ['Dondurulmuş beze katları ve yoğun sıcak eritilmiş çikolata sosuyla servis edilen meşhur Rokoko'],
@@ -2943,7 +2943,7 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     ]
   },
   'nisantasi-tatli-vakko': {
-    description: "Abdi İpekçi Caddesi'nde Fransız pastacılık zarafetini el yapımı çikolatalarla buluşturan, artisan kruvasanları ve kusursuz tatlı sunumlarıyla bir lüks yaşam simgesi.",
+    description: "Abdi İpekçi Caddesi'nde Fransız pastacılık zarafetini el yapımı çikolatalarla buluşturan, artisan kruvasanları ve özenli tatlı sunumlarıyla bir lüks yaşam simgesi.",
     whatToOrder: ['Vakko Chocolate Spesiyal', 'Paris-Brest'],
     menuFrom: ['Millefeuille (Milföy)', 'Fıstıklı Tart', 'Makaron Çeşitleri', 'Artisan Dondurma', 'İmza Çay Harmanları'],
     alsoTry: ['İsviçre çikolatası uzmanlığıyla hazırlanan fındık kremalı ve çıtır pralinli Vakko spesiyal çikolatalar'],
@@ -2981,7 +2981,7 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     alsoTry: ['Sabah erken saatte Boğaz martıları eşliğinde taze fırın simidi, beyaz peynir ve közde demli çay'],
     beforeYouGo: [
       'Deniz kenarındaki ön sıra masalar için sabah saatlerinde gitmek avantaj sağlar.',
-      'Salaş, otantik ve şehrin en prestijli buluşma noktalarından biridir.'
+      'Salaş, otantik ve semtin bilinen buluşma noktalarından biridir.'
     ]
   },
   'bebek-kahve-mangerie': {
@@ -2995,20 +2995,20 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     ]
   },
   'bebek-kahve-lucca': {
-    description: "Cevdet Paşa Caddesi'nin kalbinde gündüzleri sofistike bir brasserie, akşamüstünden itibaren dünya standartlarında miksoloji kokteylleriyle İstanbul cemiyet hayatının küresel buluşma noktası.",
-    whatToOrder: ['Lucca Satsuma Kokteyli', 'Tavuk Ciğeri Parfe'],
-    menuFrom: ['Ördek Ragu Pappardelle', 'Trüflü Patates Kızartması', 'Mini Burger Seçkisi', 'Burrata', 'Şarap Kavı'],
-    alsoTry: ['Bodrum satsuma mandalinasıyla hazırlanan dünyaca ünlü Lucca Style Satsuma kokteyli'],
+    description: "Cevdet Paşa Caddesi'nin merkezinde sabah ve öğle saatlerinde özenli kahvaltı ve brasserie tabakları, akşamüstünden itibaren ise miksoloji kokteylleri sunan popüler Bebek durağı.",
+    whatToOrder: ['Avokadolu Poşe Yumurta & Ekşi Mayalı Ekmek', 'Lucca Kahvaltı Tabağı'],
+    menuFrom: ['Eggs Benedict', 'Granola & Orman Meyveli Kase', 'Flat White', 'Taze Detoks Suları', 'Lucca Satsuma Kokteyli'],
+    alsoTry: ['Sabah saatlerinde cadde masalarında servis edilen poşe yumurtalı brunch tabakları ve nitelikli kahve'],
     beforeYouGo: [
-      'Özellikle perşembe, cuma ve cumartesi akşamları rezervasyonsuz yer bulmak zordur.',
-      'Gündüzleri açık hava sokak masalarında keyifli bir kahve veya hafif öğle yemeği sunar.'
+      'Hafta sonu brunch ve akşam saatlerinde rezervasyonsuz yer bulmak güçleşebilir.',
+      'Gündüzleri açık hava sokak masalarında kahvaltı, kahve ve öğle yemeği servisi sunar.'
     ]
   },
   'bebek-kahve-cupofjoy': {
-    description: "Yasemin Pasajı'nın sakin avlusunda Türkiye'nin ilk üçüncü dalga kahve öncüsü olarak açılan, taze kavrum single-origin çekirdekleri ve samimi baristalarıyla butik kahve mabedi.",
+    description: "Yasemin Pasajı'nın sakin avlusunda Türkiye'nin ilk üçüncü dalga kahve öncüsü olarak açılan, taze kavrum single-origin çekirdekleri ve samimi baristalarıyla butik kahve durağı.",
     whatToOrder: ['Flat White', 'Single Origin V60 Pour Over'],
     menuFrom: ['Cortado', 'Cold Brew', 'Glutensiz Brownie', 'Raw İncirli Bar', 'Matcha Latte'],
-    alsoTry: ['Kusursuz kadife süt köpüğüyle hazırlanan taze kavrum double shot flat white'],
+    alsoTry: ['Dengeli kadife süt köpüğüyle hazırlanan taze kavrum double shot flat white'],
     beforeYouGo: [
       'Cevdet Paşa Caddesi üzerindeki Yasemin Pasajı içerisindedir; cadde gürültüsünden izoledir.',
       'Take-away alıp Bebek Sahili boyunca yürüyüşe çıkmak semtin en popüler ritüelidir.'
@@ -3055,7 +3055,7 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     ]
   },
   'bebek-balik-poseidon': {
-    description: "Cevdet Paşa Caddesi'nde deniz kıyısında dalgaların hemen üstündeki konumuyla, günlük taze Boğaz balıkları, zengin zeytinyağlı mezeleri ve seçkin şarap kavıyla romantik bir deniz mabedi.",
+    description: "Cevdet Paşa Caddesi'nde deniz kıyısında dalgaların hemen üstündeki konumuyla, günlük taze Boğaz balıkları, zengin zeytinyağlı mezeleri ve seçkin şarap kavıyla Boğaz kıyısında köklü bir deniz mahsulleri restoranı.",
     whatToOrder: ['Tuzda Levrek', 'Izgara Kalamar & Ahtapot'],
     menuFrom: ['Balık Çorbası', 'Karides Güveç', 'Levrek Marin', 'Lakerda', 'Günün Boğaz Balığı'],
     alsoTry: ['Alevler içinde masada kırılarak sunulan sulu deniz levreği ve çıtır ızgara ahtapot bacağı'],
@@ -3080,12 +3080,12 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     menuFrom: ['Ahtapot Salatası', 'Istakozlu Makarna', 'Kalamar Tava', 'Somon Tartar', 'Koleksiyon Şarap Seçkisi'],
     alsoTry: ['Boğaz akıntısına sıfır masalarda günlük avlanan çıtır derili sulu Boğaz balığı'],
     beforeYouGo: [
-      'Şehrin en prestijli ve seçkin Boğaz teraslarından biridir; rezervasyon tavsiye edilir.',
+      'Boğaz kıyısının öne çıkan teraslarından biridir; rezervasyon tavsiye edilir.',
       'Teras barı gün batımı saatlerinde çok rağbet görür.'
     ]
   },
   'bebek-balik-bebekbalikci': {
-    description: "1974'ten beri Bebek Koyu'nun kıyısında devlet adamlarını, dünya yıldızlarını ve gurmeleri ağırlayan, klasik usulde pişirilen günlük deniz balıklarıyla şehrin en köklü balık restoranı.",
+    description: "1974'ten beri Bebek Koyu'nun kıyısında devlet adamlarını, dünya yıldızlarını ve gurmeleri ağırlayan, klasik usulde pişirilen günlük deniz balıklarıyla Bebek sahilinin köklü balık restoranlarından biri.",
     whatToOrder: ['Kalkan Balığı Tava', 'Taze Boğaz Lakerdası'],
     menuFrom: ['Balık Köftesi', 'Fava', 'Deniz Börülcesi', 'Izgara Çipura', 'Sıcak İncir Tatlısı'],
     alsoTry: ['Bakır tavada nar gibi kızartılmış mısır unlu çıtır Boğaz kalkanı ve yanında taze roka salatası'],
@@ -3121,14 +3121,14 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Bebek sahilinde hızlı, rahat ve keyifli bir öğle veya akşam yemeği için çok pratiktir.'
     ]
   },
-  'bebek-bistro-midpoint': {
-    description: "Cevdet Paşa Caddesi sahil hattında her damak tadına hitap eden geniş dünya menüsü, rahat oturma alanları ve Boğaz manzaralı masalarıyla günün her saati hareketli bir buluşma mekanı.",
-    whatToOrder: ['Cafe de Paris Soslu Tavuk', 'Midpoint Burger'],
-    menuFrom: ['Izgara Somon', 'Penne Arabbiata', 'Hellim Salata', 'Sıcak Çikolatalı Kek', 'Taze Limonata'],
-    alsoTry: ['Özel tereyağlı aromatik sosunda servis edilen ince dilim tavuk göğsü ve patates kızartması'],
+  'bebek-bistro-backyard': {
+    description: "Bebeköy sırtlarında tarihi taş binaların ortasındaki geniş çim bahçesinde, Boğaz manzarasına karşı mevsimsel bistro tabakları, odun fırını lezzetleri ve kokteyller sunan bahçe restoranı.",
+    whatToOrder: ['Ağır Ateşte Pişmiş Dana Kaburga', 'Trüflü & Burrata Peynirli İnce Pizza'],
+    menuFrom: ['Izgara Somon', 'Keçi Peynirli Bahçe Salatası', 'Ev Yapımı Makarna', 'Şarküteri & Peynir Tabağı', 'İmza Bahçe Kokteylleri'],
+    alsoTry: ['Ağaçlar altındaki çim bahçede gün batımı saatlerinde paylaşımlık taş fırın lezzetleri'],
     beforeYouGo: [
-      'Günün her saati kesintisiz servis sunar.',
-      'Sahil yürüyüşü molasında ferah bir içecek veya yemek için daima yer bulunabilen geniş bir alana sahiptir.'
+      'Açık hava bahçe masaları için özellikle hafta sonları önceden rezervasyon önerilir.',
+      'Şehir gürültüsünden uzak, doğa içinde sakin bir öğle veya akşam yemeği ortamı sunar.'
     ]
   },
 
@@ -3210,7 +3210,7 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     alsoTry: ['Altın sarısı tereyağı ve sumak pul biber eşliğinde servis edilen tül inceliğindeki taze el açması mantı'],
     beforeYouGo: [
       'Porsiyonlar oldukça doyurucudur ve servis çok hızlıdır.',
-      'Mantı severlerin yıllardır vazgeçemediği köklü bir lezzet mabedidir.'
+      'Mantı severlerin yıllardır vazgeçemediği köklü bir lezzet durağıdır.'
     ]
   },
   'yenikoy-balik-takanik': {
@@ -3379,7 +3379,7 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     description: "İstanbul Caddesi üzerinde geleneksel Adana kebap kültürünü modern sunumlar ve yüksek servis standardıyla birleştiren, Türkiye'nin uluslararası üne sahip kebap klasiği.",
     whatToOrder: ['Zırh Kıyması Köşebaşı Kebap', 'Toros Salatası'],
     menuFrom: ['Çöp Şiş', 'İçli Köfte', 'Gavurdağı Salatası', 'Fıstıklı Kebap', 'Ilık Fıstıklı Katmer'],
-    alsoTry: ['Erkek kuzu etinden zırhla kıyılan baharat dengesi kusursuz sulu Adana kebap ve nar ekşili Toros salatası'],
+    alsoTry: ['Erkek kuzu etinden zırhla kıyılan baharat dengeli sulu Adana kebap ve nar ekşili Toros salatası'],
     beforeYouGo: [
       'Geniş ve konforlu salonu iş ve aile yemekleri için çok uygundur.',
       'Hafta sonları rezervasyon yapılması tavsiye edilir.'
@@ -3446,7 +3446,7 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     ]
   },
   'gokturk-tatli-butterfly': {
-    description: "Larus Palas'ta saf kakao çekirdeklerinden üretilen bean-to-bar artisan çikolataları, sıcak çikolatalı sufleleri ve gurme çikolata kaplı lezzetleriyle tatlı tutkunlarının mabedi.",
+    description: "Larus Palas'ta saf kakao çekirdeklerinden üretilen bean-to-bar artisan çikolataları, sıcak çikolatalı sufleleri ve gurme çikolata kaplı lezzetleriyle çikolata ve tatlı tutkunlarının uğrak noktası.",
     whatToOrder: ['Taze Çikolatalı Sufle', 'Single Origin Madagaskar Çikolatası'],
     menuFrom: ['Portakal Çubuklu Bitter Çikolata', 'Çikolatalı Sorbe', 'Tuzlu Karamelli Çikolata', 'Sıcak Bitter Çikolata', 'Espresso'],
     alsoTry: ['Sipariş üzerine taze pişirilen fırından dumanı tüten akışkan çikolatalı sıcak sufle'],
@@ -3469,8 +3469,8 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     ]
   },
   'kusadasi-kahvalti-sultankonak': {
-    description: "Kirazlı Köyü'nde aslına uygun restore edilmiş tarihi taş konakta, köy bahçelerinden toplanan köy bahçelerinden toplanan yerel mahsuller, odun ekmeği ve ev yapımı reçellerle hazırlanan sakin bir Ege kahvaltısı.",
-    whatToOrder: ['Kirazlı Organik Taş Konak Kahvaltısı', 'Fırınlanmış Keçi Peynirli Köy Böreği'],
+    description: "Kirazlı Köyü'nde aslına uygun restore edilmiş tarihi taş konakta, yerel bahçe mahsulleri, odun ekmeği ve ev yapımı reçellerle hazırlanan sakin bir Ege kahvaltısı.",
+    whatToOrder: ['Kirazlı Taş Konak Serpme Kahvaltısı', 'Fırınlanmış Keçi Peynirli Köy Böreği'],
     menuFrom: ['Köy Tereyağı & Çam Balı', 'Bahçe Domatesi & Salatalık', 'Köy Yumurtalı Menemen', 'Cevizli İncir Reçeli', 'Közde Türk Kahvesi'],
     alsoTry: ['Taş fırından yeni çıkmış sıcak köy ekmeği üzerine sürülen taze köy kaymağı ve cevizli incir reçeli'],
     beforeYouGo: [
@@ -3540,7 +3540,7 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
 
   // Date, Gün Batımı & Fine Dining
   'kusadasi-date-giorooftop': {
-    description: "DoubleTree by Hilton terasında Kuşadası Körfezi ve marinayı 360 derece kucaklayan panoramik manzarası, yaratıcı miksoloji kokteylleri ve dünya mutfağıyla şehrin en prestijli rooftop date adresi.",
+    description: "DoubleTree by Hilton terasında Kuşadası Körfezi ve marinayı 360 derece kucaklayan panoramik manzarası, yaratıcı miksoloji kokteylleri ve dünya mutfağıyla Kuşadası sahilinin öne çıkan teras restoranlarından biri.",
     whatToOrder: ['Izgara Somon Glaze', 'Gio İmza Körfez Kokteyli'],
     menuFrom: ['Dana Bonfile Madalyon', 'Sushi Roll Seçkisi', 'Trüflü Risotto', 'Çikolatalı Lav Kek', 'Seçkin Şarap Kavı'],
     alsoTry: ['Güneş körfezin ardında batarken marina ışıklarına karşı yudumlanan satsuma aromalı imza gün batımı kokteyli'],
@@ -3605,7 +3605,7 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     description: "Türkmen Mahallesi'nde mikro kavrum teknikleri, tutkulu barista ekibi ve endüstriyel sıcak atmosferiyle gerçek kahve tutkunlarının Kuşadası'ndaki buluşma mekanı.",
     whatToOrder: ['Double Shot Cortado', 'Cold Brew Nitro'],
     menuFrom: ['Flat White', 'Americano', 'Muzlu Ekmek (Banana Bread)', 'Glutensiz Kurabiye', 'Filter Blend'],
-    alsoTry: ['Kadife süt köpüğü ve yoğun espresso dengesi kusursuz hazırlanan taze double shot cortado'],
+    alsoTry: ['Kadife süt köpüğü ve yoğun espresso dengesiyle hazırlanan taze double shot cortado'],
     beforeYouGo: [
       'Kahve çekirdekleri haftalık olarak kavrulur; baristalardan çekirdek tavsiyesi alabilirsiniz.',
       'Sessiz ve samimi bir kahve molası sunar.'
@@ -3624,17 +3624,17 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
 
   // Ege Balıkçıları & Sahil Deniz Mahsulleri
   'kusadasi-balik-mezgit': {
-    description: "Setur Marina'nın tam karşısında Atatürk Bulvarı üzerinde, Ege Denizi'nin günlük taze balıkları, zengin soğuk mezeleri ve kızarmış dondurmasıyla Kuşadası'nın en köklü deniz mahsulleri adresi.",
-    whatToOrder: ['Kızarmış Dondurma', 'Tereyağlı Karides Güveç'],
-    menuFrom: ['Kalamar Tava', 'Deniz Börülcesi', 'Girit Ezmesi', 'Izgara Çipura', 'Ahtapot Salatası'],
-    alsoTry: ['Dışı çıtır sıcak mısır gevreği kaplı içi buz gibi enfes kızarmış dondurma'],
+    description: "Setur Marina'nın tam karşısında Atatürk Bulvarı üzerinde, Ege Denizi'nin günlük taze balıkları, zengin soğuk mezeleri ve kızarmış dondurmasıyla Kuşadası'nın köklü deniz mahsulleri adresi.",
+    whatToOrder: ['Tereyağlı Karides Güveç', 'Izgara Deniz Levreği'],
+    menuFrom: ['Kalamar Tava', 'Deniz Börülcesi', 'Girit Ezmesi', 'Izgara Çipura', 'Kızarmış Dondurma'],
+    alsoTry: ['Balık sonrasında dışı çıtır mısır gevreği kaplı sıcak servis edilen kızarmış dondurma'],
     beforeYouGo: [
       'Marina manzaralı ön masa ve teras için akşam saatlerinde rezervasyon önerilir.',
       'Yıllardır değişmeyen servis kalitesi ve aile işletmesi sıcaklığına sahiptir.'
     ]
   },
   'kusadasi-balik-kumsal': {
-    description: "Yavansu sahilinde doğrudan kumsalın üzerine kurulu masalarında, ayaklarınız deniz meltemindeyken servis edilen taze günlük balıkları ve Ege mezeleriyle şehrin en huzurlu sahil balıkçısı.",
+    description: "Yavansu sahilinde doğrudan kumsalın üzerine kurulu masalarında, ayaklarınız deniz meltemindeyken servis edilen taze günlük balıkları ve Ege mezeleriyle Yavansu sahilinin sevilen balık restoranlarından biri.",
     whatToOrder: ['Kumsalda Izgara Levrek', 'Taze Ege Kalamar Tava'],
     menuFrom: ['Karides Söğüş', 'Fava', 'Kaya Koruğu', 'Deniz Mahsüllü Salata', 'Fırında Sıcak Helva'],
     alsoTry: ['Dalga sesleri eşliğinde kumsalda servis edilen çıtır derili sulu ızgara deniz levreği'],
@@ -3654,7 +3654,7 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
     ]
   },
   'kusadasi-balik-kazimusta': {
-    description: "Balıkçılar Meydanı'nda limanın hemen kıyısında yarım asrı aşkın süredir Kuşadası'na yanaşan gemilerin, kaptanların ve gurmelerin uğrak noktası olan şehrin en tarihi balık lokantası.",
+    description: "Balıkçılar Meydanı'nda limanın hemen kıyısında yarım asrı aşkın süredir Kuşadası'na yanaşan gemilerin, kaptanların ve gurmelerin uğrak noktası olan liman çevresinin köklü balık lokantalarından biri.",
     whatToOrder: ['Izgara Ege Barbunu', 'Taze Ege Lakerdası'],
     menuFrom: ['Kalamar Izgara', 'Karides Söğüş', 'Balık Çorbası', 'Kaya Koruğu', 'Tahin Helvası'],
     alsoTry: ['Köz kömüründe nar gibi kızartılmış sulu yerli kaya barbunları ve taze roka salatası'],

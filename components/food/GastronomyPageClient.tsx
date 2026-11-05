@@ -78,10 +78,16 @@ export function GastronomyPageClient({
   // Konum seçimi değiştiğinde
   const handleSelectLocation = useCallback(
     (loc: FoodLocation) => {
-      setSelectedLocation(loc);
       try {
         localStorage.setItem(FOOD_DISCOVERY.storage.lastRegionKey, loc.slug);
       } catch {}
+
+      if (selectedLocation && loc.id !== selectedLocation.id) {
+        router.push(`/${lang}?region=${loc.slug}`);
+        return;
+      }
+
+      setSelectedLocation(loc);
 
       // Yeni bölgenin kategorilerini al
       const newCats = foodDiscoveryProvider.getRegionCategories(loc.id);
@@ -98,7 +104,7 @@ export function GastronomyPageClient({
       const newUrl = `/${lang}?region=${loc.slug}&category=${nextCategorySlug}`;
       router.push(newUrl);
     },
-    [lang, selectedCategorySlug, foodDiscoveryProvider, router]
+    [lang, selectedLocation, selectedCategorySlug, foodDiscoveryProvider, router]
   );
 
   // Kategori seçimi değiştiğinde

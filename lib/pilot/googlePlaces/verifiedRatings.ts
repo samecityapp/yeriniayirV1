@@ -710,12 +710,12 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
-  'kosuyolu-pizza-papajohns': {
+  'kosuyolu-pizza-nellos': {
     platform: 'google-maps',
-    value: 4.1,
+    value: 4.5,
     attribution: {
       label: 'Google Maps',
-      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Papa+Johns+Ko%C5%9Fuyolu+Cad+No+114+Kad%C4%B1k%C3%B6y',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Nellos+Italian+Restaurant+Ko%C5%9Fuyolu+Kad%C4%B1k%C3%B6y',
       providers: [],
     },
   },
@@ -1093,12 +1093,12 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
-  'caddebostan-brunch-kasabim': {
+  'caddebostan-brunch-brekkie': {
     platform: 'google-maps',
     value: 4.5,
     attribution: {
       label: 'Google Maps',
-      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kasab%C4%B1m+D%C3%B6ner+Caddebostan+%C4%B0skele+Sk+No+10+Caddebostan+Kad%C4%B1k%C3%B6y',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Brekkie+Breakfast+Club+Caddebostan+Kad%C4%B1k%C3%B6y',
       providers: [],
     },
   },
@@ -1845,12 +1845,12 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
-  'karakoy-kahve-pim': {
+  'karakoy-kahve-brewcoffeworks': {
     platform: 'google-maps',
-    value: 4.2,
+    value: 4.5,
     attribution: {
       label: 'Google Maps',
-      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Pim+Karak%C3%B6y+K%C4%B1l%C4%B1%C3%A7+Ali+Pa%C5%9Fa+Mescidi+Sk+No+20+Karak%C3%B6y',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Brew+Coffeeworks+Karak%C3%B6y+Hoca+Tahsin+Sk+No+21',
       providers: [],
     },
   },
@@ -2231,12 +2231,12 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
-  'cihangir-tatli-misspizza': {
+  'cihangir-tatli-laurel': {
     platform: 'google-maps',
-    value: 4.3,
+    value: 4.6,
     attribution: {
       label: 'Google Maps',
-      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Miss+Pizza+Havyar+Sokak+No+5+Cihangir',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Laurel+Istanbul+Patisserie+Akarsu+Yoku%C5%9Fu+Cihangir',
       providers: [],
     },
   },
@@ -2415,12 +2415,12 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
-  'taksim-kebap-bambi': {
+  'taksim-kebap-ficcin': {
     platform: 'google-maps',
-    value: 3.7,
+    value: 4.4,
     attribution: {
       label: 'Google Maps',
-      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Bambi+Cafe+Taksim+Siraselviler+Cad+No+2J',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=F%C4%B1cc%C4%B1n+Restoran+Kallavi+Sk+No+13+Beyo%C4%9Flu',
       providers: [],
     },
   },
@@ -2523,12 +2523,12 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
-  'taksim-cafe-geziistanbul': {
+  'taksim-cafe-ravouna': {
     platform: 'google-maps',
-    value: 3.5,
+    value: 4.5,
     attribution: {
       label: 'Google Maps',
-      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Gezi+Istanbul+Inonu+Cd+No+5+Taksim+Meydani',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Ravouna+1906+Pera+Istiklal+Cad+No+201+Beyoglu',
       providers: [],
     },
   },
@@ -2815,12 +2815,12 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
-  'bebek-bistro-midpoint': {
+  'bebek-bistro-backyard': {
     platform: 'google-maps',
-    value: 3.6,
+    value: 4.4,
     attribution: {
       label: 'Google Maps',
-      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Midpoint+Bebek+Cevdet+Pasa+Cd+No+35',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Backyard+Bebek%C3%B6y+Sokak+No+4+Bebek',
       providers: [],
     },
   },

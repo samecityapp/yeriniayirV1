@@ -98,18 +98,6 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    scopeNote: 'Kadıköy · Suadiye (Yayında)'
   },
   {
-   id: 'goztepe',
-   level: 'semt',
-   name: 'Göztepe',
-   slug: 'goztepe',
-   path: ['istanbul', 'kadikoy', 'goztepe'],
-   displayName: 'Göztepe, Kadıköy, İstanbul',
-   locative: "Göztepe'de",
-   status: 'coming_soon',
-   aliases: ['Göztepe', 'Goztepe'],
-   scopeNote: 'Kadıköy · Göztepe (Araştırmada)'
-  },
-  {
    id: 'acibadem-kadikoy',
    level: 'semt',
    name: 'Acıbadem',
@@ -146,18 +134,6 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    scopeNote: 'Kadıköy · Koşuyolu (Yayında)'
   },
   {
-   id: 'kuzguncuk',
-   level: 'semt',
-   name: 'Kuzguncuk',
-   slug: 'kuzguncuk',
-   path: ['istanbul', 'uskudar', 'kuzguncuk'],
-   displayName: 'Kuzguncuk, Üsküdar, İstanbul',
-   locative: "Kuzguncuk'ta",
-   status: 'published',
-   aliases: ['Kuzguncuk', 'İcadiye Caddesi', 'İcadiye', 'Perihan Abla', 'Bostan', 'Paşalimanı'],
-   scopeNote: 'Üsküdar · Kuzguncuk (Yayında)'
-  },
-  {
    id: 'kuzguncuk-uskudar',
    level: 'semt',
    name: 'Kuzguncuk',
@@ -168,18 +144,6 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    status: 'published',
    aliases: ['Kuzguncuk', 'İcadiye Caddesi', 'İcadiye', 'Perihan Abla', 'Bostan', 'Paşalimanı'],
    scopeNote: 'Üsküdar · Kuzguncuk (Yayında)'
-  },
-  {
-   id: 'cengelkoy',
-   level: 'semt',
-   name: 'Çengelköy',
-   slug: 'cengelkoy',
-   path: ['istanbul', 'uskudar', 'cengelkoy'],
-   displayName: 'Çengelköy, Üsküdar, İstanbul',
-   locative: "Çengelköy'de",
-   status: 'published',
-   aliases: ['Çengelköy', 'Cengelkoy', 'Çınaraltı', 'Cinaralti', 'Kuleli Caddesi', 'Kuleli'],
-   scopeNote: 'Üsküdar · Çengelköy (Yayında)'
   },
   {
    id: 'cengelkoy-uskudar',
@@ -206,30 +170,6 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    scopeNote: 'Üsküdar · Merkez & Sahil (Yayında)'
   },
   {
-   id: 'uskudar-merkez',
-   level: 'semt',
-   name: 'Üsküdar Merkez',
-   slug: 'uskudar',
-   path: ['istanbul', 'uskudar'],
-   displayName: 'Üsküdar Merkez, İstanbul',
-   locative: "Üsküdar'da",
-   status: 'published',
-   aliases: ['Üsküdar', 'Uskudar', 'Üsküdar Merkez', 'Salacak', 'Mimar Sinan', 'Mihrimah Sultan', 'Kız Kulesi', 'Selman-ı Pak', 'Uncular'],
-   scopeNote: 'Üsküdar · Merkez & Sahil (Yayında)'
-  },
-  {
-   id: 'karakoy',
-   level: 'semt',
-   name: 'Karaköy',
-   slug: 'karakoy',
-   path: ['istanbul', 'beyoglu', 'karakoy'],
-   displayName: 'Karaköy, Beyoğlu, İstanbul',
-   locative: "Karaköy'de",
-   status: 'published',
-   aliases: ['Karaköy', 'Karakoy', 'Kemankeş', 'Kemankes', 'Mumhane', 'Galataport', 'Fransız Geçidi', 'Bankalar Caddesi', 'Perşembe Pazarı'],
-   scopeNote: 'Beyoğlu · Karaköy (Yayında)'
-  },
-  {
    id: 'karakoy-beyoglu',
    level: 'semt',
    name: 'Karaköy',
@@ -240,18 +180,6 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    status: 'published',
    aliases: ['Karaköy', 'Karakoy', 'Kemankeş', 'Kemankes', 'Mumhane', 'Galataport', 'Fransız Geçidi', 'Bankalar Caddesi', 'Perşembe Pazarı'],
    scopeNote: 'Beyoğlu · Karaköy (Yayında)'
-  },
-  {
-   id: 'galata',
-   level: 'semt',
-   name: 'Galata',
-   slug: 'galata',
-   path: ['istanbul', 'beyoglu', 'galata'],
-   displayName: 'Galata, Beyoğlu, İstanbul',
-   locative: "Galata'da",
-   status: 'published',
-   aliases: ['Galata', 'Kuledibi', 'Galata Kulesi', 'Serdar-ı Ekrem', 'Büyük Hendek', 'Küçük Hendek', 'Camekan Sokak'],
-   scopeNote: 'Beyoğlu · Galata (Yayında)'
   },
   {
    id: 'galata-beyoglu',
@@ -266,18 +194,6 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    scopeNote: 'Beyoğlu · Galata (Yayında)'
   },
   {
-   id: 'cihangir',
-   level: 'semt',
-   name: 'Cihangir',
-   slug: 'cihangir',
-   path: ['istanbul', 'beyoglu', 'cihangir'],
-   displayName: 'Cihangir, Beyoğlu, İstanbul',
-   locative: "Cihangir'de",
-   status: 'published',
-   aliases: ['Cihangir', 'Sıraselviler', 'Akarsu Yokuşu', 'Firuzağa', 'Susam Sokak', 'Havyar Sokak', 'Anahtar Sokak'],
-   scopeNote: 'Beyoğlu · Cihangir (Yayında)'
-  },
-  {
    id: 'cihangir-beyoglu',
    level: 'semt',
    name: 'Cihangir',
@@ -290,18 +206,6 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    scopeNote: 'Beyoğlu · Cihangir (Yayında)'
   },
   {
-   id: 'beyoglu',
-   level: 'ilce',
-   name: 'Beyoğlu',
-   slug: 'beyoglu',
-   path: ['istanbul', 'beyoglu'],
-   displayName: 'Beyoğlu, İstanbul',
-   locative: "Beyoğlu'nda",
-   status: 'published',
-   aliases: ['Beyoğlu', 'Beyoglu', 'İstiklal', 'İstiklal Caddesi', 'Asmalı Mescit', 'Asmalımescit', 'Meşrutiyet', 'Pera', 'Tünel'],
-   scopeNote: 'Beyoğlu · Asmalı Mescit & İstiklal (Yayında)'
-  },
-  {
    id: 'beyoglu-merkez',
    level: 'ilce',
    name: 'Beyoğlu',
@@ -312,18 +216,6 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    status: 'published',
    aliases: ['Beyoğlu', 'Beyoglu', 'İstiklal', 'İstiklal Caddesi', 'Asmalı Mescit', 'Asmalımescit', 'Meşrutiyet', 'Pera', 'Tünel'],
    scopeNote: 'Beyoğlu · Asmalı Mescit & İstiklal (Yayında)'
-  },
-  {
-   id: 'taksim',
-   level: 'semt',
-   name: 'Taksim',
-   slug: 'taksim',
-   path: ['istanbul', 'beyoglu', 'taksim'],
-   displayName: 'Taksim, Beyoğlu, İstanbul',
-   locative: "Taksim'de",
-   status: 'published',
-   aliases: ['Taksim', 'Taksim Meydanı', 'Gümüşsuyu', 'Elmadağ', 'Talimhane', 'Gezi Parkı', 'İnönü Caddesi'],
-   scopeNote: 'Beyoğlu · Taksim & Gümüşsuyu (Yayında)'
   },
   {
    id: 'taksim-beyoglu',
