@@ -4524,27 +4524,12 @@ export const KUSADASI_CATEGORIES = [
 ];
 
 export const KUSADASI_VENUES: VisitorVenueData[] = [
-  // Ege Balıkçıları & Deniz Mahsulleri (4 Doğrulanmış Uzman İşletme; İlk 2 Mekan Aynı Zamanda Date/Akşam Kategorisinde)
-  {
-    id: 'kusadasi-date-bottarga',
-    name: 'Bottarga Restaurant',
-    location: 'Hacıfeyzullah Mah. Güvercinada Cad. No:35, Yat Limanı Karşısı, Kuşadası',
-    categoryId: 'ege-balik-kusadasi',
-    secondaryCategoryIds: ['date-gunbatimi-kusadasi'],
-    description: null,
-    whatToOrder: [],
-    menuFrom: [],
-    alsoTry: [],
-    beforeYouGo: [],
-    photo: null,
-    ratings: [],
-  },
+  // Ege Balıkçıları & Deniz Mahsulleri (4 Doğrulanmış Uzman İşletme — Diğer Kategorilerle Tekrar Etmez)
   {
     id: 'kusadasi-balik-charides-marina',
     name: 'Charides Sea Food Marina',
     location: 'Türkmen Mahallesi, Atatürk Bulvarı, Setur Marina AVM No:29/6C, Kuşadası',
     categoryId: 'ege-balik-kusadasi',
-    secondaryCategoryIds: ['date-gunbatimi-kusadasi'],
     description: null,
     whatToOrder: [],
     menuFrom: [],
@@ -4579,8 +4564,34 @@ export const KUSADASI_VENUES: VisitorVenueData[] = [
     photo: null,
     ratings: [],
   },
+  {
+    id: 'kusadasi-balik-sef',
+    name: 'Şef Balık Restaurant',
+    location: 'Türkmen Mah. Atatürk Blv. No:74, Setur Marina Karşısı, Kuşadası',
+    categoryId: 'ege-balik-kusadasi',
+    description: null,
+    whatToOrder: [],
+    menuFrom: [],
+    alsoTry: [],
+    beforeYouGo: [],
+    photo: null,
+    ratings: [],
+  },
 
-  // Date, Gün Batımı & Akşam Yemeği (Bottarga ve Charides Marina ile birlikte 4 Doğrulanmış Mekan)
+  // Date, Gün Batımı & Akşam Yemeği (3 Doğrulanmış Mekan — Balık Kategorisiyle Tekrar Etmez)
+  {
+    id: 'kusadasi-date-bottarga',
+    name: 'Bottarga Restaurant',
+    location: 'Hacıfeyzullah Mah. Güvercinada Cad. No:35, Yat Limanı Karşısı, Kuşadası',
+    categoryId: 'date-gunbatimi-kusadasi',
+    description: null,
+    whatToOrder: [],
+    menuFrom: [],
+    alsoTry: [],
+    beforeYouGo: [],
+    photo: null,
+    ratings: [],
+  },
   {
     id: 'kusadasi-date-seckinsakli',
     name: 'Seçkin Saklı Bahçe',
@@ -4608,7 +4619,20 @@ export const KUSADASI_VENUES: VisitorVenueData[] = [
     ratings: [],
   },
 
-  // Köy Kahvaltısı & Çiftlik Sofrası (Otel ve Kafe Dolgusu Yok — Yalnızca 2 Gerçek Köy/Çiftlik Uzmanı)
+  // Köy Kahvaltısı & Çiftlik Sofrası (3 Gerçek Köy/Çiftlik/Bahçe Kahvaltıcısı — Çardak 6, Değirmen Çiftliği, Kirazlı Köy Sofrası)
+  {
+    id: 'kusadasi-kahvalti-cardak6',
+    name: 'Çardak 6',
+    location: 'Davutlar Yolu 3. Km, Kuşadası',
+    categoryId: 'koy-kahvalti-kusadasi',
+    description: null,
+    whatToOrder: [],
+    menuFrom: [],
+    alsoTry: [],
+    beforeYouGo: [],
+    photo: null,
+    ratings: [],
+  },
   {
     id: 'kusadasi-kahvalti-degirmen',
     name: 'Değirmen Çiftliği & Restoran',

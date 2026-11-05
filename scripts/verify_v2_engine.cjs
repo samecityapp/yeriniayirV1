@@ -62,18 +62,26 @@ const { createRealFoodProvider } = mod.exports;
   const kahve = provider.getCategoryResult('kusadasi-aydin', 'nitelikli-kahve-kusadasi');
 
   assert.equal(balik.coreVenues.length, 4);
-  assert.ok(balik.coreVenues.some((v) => v.id === 'kusadasi-balik-charides-marina'));
-  assert.ok(balik.coreVenues.some((v) => v.id === 'kusadasi-date-bottarga'));
+  assert.deepEqual(
+    balik.coreVenues.map((v) => v.id),
+    ['kusadasi-balik-charides-marina', 'kusadasi-balik-mezgit', 'kusadasi-balik-kazimusta', 'kusadasi-balik-sef']
+  );
 
-  assert.equal(date.coreVenues.length, 4);
-  assert.ok(date.coreVenues.some((v) => v.id === 'kusadasi-balik-charides-marina'));
-  assert.ok(date.coreVenues.some((v) => v.id === 'kusadasi-date-bottarga'));
+  assert.equal(date.coreVenues.length, 3);
+  assert.deepEqual(
+    date.coreVenues.map((v) => v.id),
+    ['kusadasi-date-bottarga', 'kusadasi-date-seckinsakli', 'kusadasi-date-tranche']
+  );
 
-  // Dynamic count: 2 genuine venues each instead of padding to 4 with hotels/chains!
-  assert.equal(kahvalti.coreVenues.length, 2);
+  // Zero overlap between Fish and Date tabs!
+  const balikIds = new Set(balik.coreVenues.map((v) => v.id));
+  assert.ok(date.coreVenues.every((v) => !balikIds.has(v.id)), 'No duplicate venues across Kuşadası categories');
+
+  // Dynamic count: 3 genuine village/farm/garden breakfast venues including Çardak 6
+  assert.equal(kahvalti.coreVenues.length, 3);
   assert.deepEqual(
     kahvalti.coreVenues.map((v) => v.id),
-    ['kusadasi-kahvalti-degirmen', 'kusadasi-kahvalti-koysofrasi']
+    ['kusadasi-kahvalti-cardak6', 'kusadasi-kahvalti-degirmen', 'kusadasi-kahvalti-koysofrasi']
   );
 
   assert.equal(pizza.coreVenues.length, 2);
