@@ -25,7 +25,7 @@ export function BlogAuthor({ author }: BlogAuthorProps) {
                         </span>
                     </div>
                     <p className="text-[11px] text-zinc-500 leading-relaxed line-clamp-2 italic">
-                        "{author.bio}"
+                        &quot;{author.bio}&quot;
                     </p>
                 </div>
             </div>

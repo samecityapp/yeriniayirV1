@@ -23,7 +23,7 @@ const eventSchema = z.object({
     hotel_id: z.string().uuid(),
     event_type: z.enum(['view', 'click', 'booking_click', 'contact_click']),
     device_type: z.string().optional(),
-    metadata: z.record(z.any()).optional(),
+    metadata: z.record(z.string(), z.any()).optional(),
 });
 
 export async function POST(request: Request) {

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     description: 'Seçkin oteller için özel işbirliği fırsatları.',
 };
 
-export default function HotelOfferPage({ params }: { params: { lang: string } }) {
+export default async function HotelOfferPage({ params }: { params: Promise<{ lang: string }> }) {
     return (
         <main className="bg-white text-gray-900 font-sans selection:bg-rose-100 selection:text-rose-900 pb-20">
 
@@ -61,7 +61,7 @@ export default function HotelOfferPage({ params }: { params: { lang: string } })
 
                             <div className="space-y-4">
                                 <div className="p-4 rounded-xl bg-gray-50 border border-gray-100 text-gray-400">
-                                    <p className="line-through decoration-gray-300">"Diğer otel sitelerinde binlerce otel arasında hak ettiğiniz değeri göremiyorsunuz."</p>
+                                    <p className="line-through decoration-gray-300">&quot;Diğer otel sitelerinde binlerce otel arasında hak ettiğiniz değeri göremiyorsunuz.&quot;</p>
                                 </div>
 
                                 <div className="flex items-start gap-3">
@@ -212,7 +212,7 @@ export default function HotelOfferPage({ params }: { params: { lang: string } })
                                 </div>
                                 <div>
                                     <span className="block text-gray-900 font-bold text-lg">Liste Önerileri</span>
-                                    <span className="block text-gray-500 text-sm font-medium">Sosyal medyada "En İyiler" listelerinde yer alma</span>
+                                    <span className="block text-gray-500 text-sm font-medium">Sosyal medyada &quot;En İyiler&quot; listelerinde yer alma</span>
                                 </div>
                             </div>
                         </div>

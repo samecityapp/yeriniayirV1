@@ -1,10 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    serverActions: true,
+  webpack(config, {isServer}) {
+    if (!isServer && process.env.PERFORMANCE_ANALYZE === '1') {
+      config.plugins.push({apply(compiler) {compiler.hooks.done.tap('LocalPerformanceStats', stats => {
+        require('fs').writeFileSync('work/premium-performance/client-stats.json', JSON.stringify(stats.toJson({all:false,chunks:true,chunkModules:true,modules:true})));
+      });}});
+    }
+    return config;
   },
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: false,
   },
   images: {
     remotePatterns: [
@@ -45,9 +50,13 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   reactStrictMode: true,
-  swcMinify: true,
   async headers() {
     return [
+      {source:'/fonts/Inter-TR-EN-04308d9ab394.woff2',headers:[{key:'Cache-Control',value:'public, max-age=31536000, immutable'}]},
+      {
+        source: '/images/gastronomy/:path*',
+        headers: [{key: 'Cache-Control', value: 'public, max-age=86400, stale-while-revalidate=604800'}],
+      },
       {
         source: '/:path*',
         headers: [

@@ -1,0 +1,19 @@
+{
+ "schemaVersion":1,
+ "minimumRunsPerStateAndDevice":3,
+ "mobileWidths":[375,390,430],
+ "mobilePerformanceMin":90,
+ "mobilePerformanceTarget":95,
+ "desktopPerformanceMin":95,
+ "accessibilityMin":95,
+ "bestPracticesMin":95,
+ "indexableProductionSeoMin":100,
+ "maxLcpMs":2500,
+ "maxInpMs":200,
+ "maxCls":0.1,
+ "previewNoindexMustRemain":true,
+ "detailModes":["timespan","snapshot"],
+ "loadConcurrency":[50,100,300],
+ "fieldInpRequiredAfterPublication":true,
+ "productionLoadTestsAllowed":false
+}

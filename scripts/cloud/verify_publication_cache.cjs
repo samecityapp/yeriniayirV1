@@ -1,0 +1,11 @@
+require('./loader.cjs');const assert=require('assert/strict'),fs=require('fs');
+Object.assign(process.env,{GASTRONOMY_SUPABASE_URL:'https://isolated-test.supabase.co',GASTRONOMY_SUPABASE_REF:'isolated-test',GASTRONOMY_SUPABASE_ANON_KEY:'synthetic-publishable-key',GASTRONOMY_CLOUD_ENV:'staging'});
+const doc=JSON.parse(fs.readFileSync('work/cloud-admin/import.private.json')).document;
+const {readCloudPublication,invalidateCloudPublication}=require('../../lib/cloud/publication.ts');let requests=0;const originalNow=Date.now;let time=originalNow();Date.now=()=>time;
+let value={scope:'moda/kahve',revision:1,validUntil:new Date(time+30_000).toISOString(),document:doc};
+global.fetch=async(url,options)=>{requests++;assert.equal(url,'https://isolated-test.supabase.co/rest/v1/rpc/ya_read_publication');assert.equal(options.next.revalidate,60);await new Promise(r=>setTimeout(r,10));return new Response(JSON.stringify(value),{status:200});};
+(async()=>{const results=await Promise.all(Array.from({length:100},()=>readCloudPublication()));assert.equal(requests,1);assert.equal(results[0].venues.length,4);results[0].venues[0].name='tampered';assert.notEqual(results[1].venues[0].name,'tampered');console.log('PASS 100 concurrent readers deduplicate one simulated request; values isolated');
+time+=31_000;assert.equal(await readCloudPublication(),null);assert.equal(requests,1);console.log('PASS expiration rechecked on cache hit; no stale recommendation');
+value.validUntil=new Date(time+30_000).toISOString();value.revision=2;invalidateCloudPublication();assert.ok(await readCloudPublication());assert.equal(requests,2);console.log('PASS publication invalidation immediately reloads this process');
+value.document={...doc,sources:['private-source']};invalidateCloudPublication();await assert.rejects(readCloudPublication());console.log('PASS private-field response rejected; no file fallback');
+console.log('4/4 offline publication cache groups passed; not a real cloud query measurement');})().catch(e=>{console.error(e.message);process.exitCode=1}).finally(()=>Date.now=originalNow);

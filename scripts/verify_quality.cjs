@@ -1,0 +1,36 @@
+require('./research-ts-loader.cjs');
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const ledger=require('../lib/pilot/quality/evidence-ledger.json');
+const {buildQualityReport,validateLedger,sourceAge,independentFamilies}=require('../lib/pilot/quality/report.ts');
+const {readLatestResearch}=require('../lib/pilot/research/store.ts');
+let passed=0;
+async function check(label,fn){await fn();passed++;console.log('PASS '+label);}
+const clone=v=>JSON.parse(JSON.stringify(v));
+(async()=>{
+ const discovery=await readLatestResearch(),original=JSON.stringify(discovery),report=buildQualityReport(discovery,ledger);
+ await check('all 91 real coffee signals are triaged without elimination',()=>{const ids=new Set(report.triage.map(c=>c.id));for(const c of discovery.candidates.filter(c=>c.category==='coffee-signal'))assert.ok(ids.has(c.id));assert.equal(report.stats.coffeeSignals,91);});
+ await check('20 source dossiers and 10 comparison candidates are distinct',()=>{assert.equal(report.dossiers.length,20);assert.equal(report.stats.comparison,10);assert.equal(new Set(report.dossiers.map(d=>d.id)).size,20);});
+ await check('required brands are present with no winners or scores',()=>{for(const name of ['Montag','Story','Çekirdek','Guten Morgen','Coffee Manifesto'])assert.ok(report.dossiers.some(d=>d.name.includes(name)));assert.ok(report.dossiers.every(d=>!('score' in d)&&!('rank' in d)));});
+ await check('specialty filter blind spots are recovered from actual discovery',()=>{assert.equal(report.stats.additionalCandidates,4);assert.ok(report.dossiers.some(d=>d.name.includes('Guten Morgen')));});
+ await check('all deep targets refer to exact discovered source identities',()=>{for(const d of report.dossiers)assert.ok(discovery.candidates.some(c=>c.id===d.id));});
+ await check('unsupported claims fail closed',()=>{const altered=clone(ledger);altered.targets[0].claims[0].sourceIds=['missing'];assert.throws(()=>validateLedger(altered),/Unsupported claim/);});
+ await check('blocked and link-only sources cannot support claims',()=>{const altered=clone(ledger);altered.targets[0].claims[0].sourceIds=['urban-forum'];assert.throws(()=>validateLedger(altered),/Blocked or link-only/);});
+ await check('all claims have branch scope and provenance references',()=>{for(const d of report.dossiers)for(const c of d.claims){assert.ok(['branch','brand','unresolved'].includes(c.scope));assert.ok(c.sourceIds.length);assert.ok(c.sourceIds.every(id=>report.sources.some(s=>s.id===id)));}});
+ await check('source access is not used as publication or experience date',()=>{assert.equal(report.sources.find(s=>s.id==='cornucopia').publishedAt,null);assert.ok(report.sources.every(s=>s.experienceDate===null));assert.equal(sourceAge(report.sources.find(s=>s.id==='time-cekirdek'),ledger.researchedAt),'historical');});
+ await check('future date does not become fresh evidence',()=>assert.equal(sourceAge({...ledger.sources[0],publishedAt:'2035-01-01'},ledger.researchedAt),'future-invalid'));
+ await check('interview and supplier commercial ties excluded from independent quality',()=>{assert.equal(independentFamilies(report.sources.filter(s=>['story-interview','doz-design'].includes(s.id))).length,0);});
+ await check('sponsored and affiliate content excluded from independent counts',()=>{assert.equal(independentFamilies(report.sources.filter(s=>['hodl-sponsored','way-coffee'].includes(s.id))).length,0);});
+ await check('syndicated/OSM derived copies do not count as independent families',()=>assert.equal(independentFamilies(report.sources.filter(s=>s.kind==='map-derived')).length,0));
+ await check('same publication family is counted once across articles',()=>assert.equal(independentFamilies(report.sources.filter(s=>s.publisher==='Time Out İstanbul')).length,1));
+ await check('absence of corroboration never confirms closure',()=>{const altered=clone(discovery);altered.candidates.forEach(c=>c.operation='closure-signal');const result=buildQualityReport(altered,ledger);assert.equal(result.stats.confirmedClosed,0);assert.ok(result.dossiers.every(d=>d.state!=='confirmed-closed'));});
+ await check('unsupported candidates remain in extra research',()=>{assert.equal(report.dossiers.find(d=>d.name==='Vapaus coffee').state,'needs-research');assert.ok(report.dossiers.find(d=>d.name==='Vapaus coffee').gaps.length);});
+ await check('food and coffee specialties coexist without rejection',()=>{const d=report.dossiers.find(d=>d.name.includes('Guten Morgen'));assert.ok(d.claims.some(c=>c.field==='drink'));assert.ok(d.claims.some(c=>c.field==='also'));assert.notEqual(d.state,'confirmed-closed');});
+ await check('Manifesto old branch conflict cannot silently move coordinates',()=>{const d=report.dossiers.find(d=>d.name.includes('Coffee Manifesto'));assert.equal(d.candidate.address,'Güneşli Bahçe Sokak 40');assert.ok(d.conflicts.some(t=>t.includes('22/B')));});
+ await check('missing target in later discovery is not fabricated',()=>{const altered=clone(discovery);altered.candidates=altered.candidates.filter(c=>c.id!==ledger.targets[0].id);assert.throws(()=>buildQualityReport(altered,ledger),/absent from discovery/);});
+ await check('discovery data remains unchanged after quality compilation',()=>assert.equal(JSON.stringify(discovery),original));
+ await check('report builder never calls network or model API',()=>{const saved=global.fetch;global.fetch=()=>{throw new Error('Network forbidden');};try{buildQualityReport(discovery,ledger);}finally{global.fetch=saved;}});
+ await check('no legacy pilot dossier import or production DB dependency',()=>{const code=fs.readFileSync('lib/pilot/quality/report.ts','utf8');assert.ok(!/modaKadikoyCoffeePilot|supabase|openai|gemini/.test(code));});
+ await check('source unsafe URL and duplicate identity rejected',()=>{let altered=clone(ledger);altered.sources[0].url='javascript:alert(1)';assert.throws(()=>validateLedger(altered),/Unsafe source/);altered=clone(ledger);altered.sources.push(altered.sources[0]);assert.throws(()=>validateLedger(altered),/Duplicate source/);});
+ console.log(`\n${passed}/${passed} stage 2 checks passed. Real saved discovery; no outbound network, paid API or database access.`);
+})().catch(error=>{console.error(error);process.exitCode=1;});

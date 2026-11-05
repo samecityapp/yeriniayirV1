@@ -1,11 +1,10 @@
 import React from 'react';
 import { UtensilsCrossed } from 'lucide-react';
-import { Montserrat } from 'next/font/google';
+import localFont from 'next/font/local';
 
 // Fontu bileşen seviyesinde yükle (Veya layout'tan al)
-const montserrat = Montserrat({
-    subsets: ['latin'],
-    weight: ['600', '700'],
+const montserrat = localFont({
+    src: '../../public/fonts/Montserrat-Variable.ttf',
     display: 'swap',
 });
 

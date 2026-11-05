@@ -1,0 +1,6 @@
+require('./research-ts-loader.cjs');const assert=require('node:assert/strict'),{branchMismatchReason}=require('../lib/pilot/googlePlaces/client.ts');
+const v={id:'fixture',name:'Story • Test branch',address:'Dalga 22',coordinates:{lat:40.985,lng:29.025}};
+const p={id:'ChIJ_fixture_branch_12345',displayName:{text:'Story Coffee Moda'},formattedAddress:'Kadıköy İstanbul',location:{latitude:40.985,longitude:29.025},businessStatus:'OPERATIONAL',types:['coffee_shop'],addressComponents:[{longText:'Dalga Sokak',types:['route']},{longText:'No:22',types:['street_number']}]};
+assert.equal(branchMismatchReason(v,p),null);console.log('PASS No:22 and 22 identify the same door; brand qualifiers do not change the physical branch');
+assert.equal(branchMismatchReason({...v,address:'Dalga 22/A'},p),'door-or-unit');console.log('PASS missing unit remains unresolved when the app knows a specific unit');
+assert.equal(branchMismatchReason(v,{...p,addressComponents:[p.addressComponents[0],{longText:'No:23',types:['street_number']}]}),'door-or-unit');assert.equal(branchMismatchReason(v,{...p,displayName:{text:'Storyteller Coffee'}}),'name');console.log('PASS other door and similar-but-different business names remain rejected');

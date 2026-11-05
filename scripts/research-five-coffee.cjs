@@ -1,0 +1,2 @@
+require('dotenv').config({path:'.env.local',quiet:true});require('./research-ts-loader.cjs');
+require('../lib/pilot/research/focused/runner.ts').runFocusedResearch().then(report=>console.log(JSON.stringify({runId:report.id,stats:report.stats,dossiers:report.dossiers.map(d=>({name:d.name,fileReady:d.fileReady,identity:d.identity,operation:d.operation,claims:d.claims.length})),sources:report.sources.map(s=>({id:s.id,status:s.status,facts:s.facts.length,error:s.error,cacheHit:s.cacheHit}))},null,2))).catch(e=>{console.error(e.message);process.exitCode=1;});

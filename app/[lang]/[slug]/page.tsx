@@ -9,7 +9,8 @@ import { Header } from '@/components/Header';
 export const dynamicParams = true;
 export const revalidate = 3600; // 1 Hour Cache
 
-export default async function DynamicOfferPage({ params }: { params: { slug: string; lang: string } }) {
+export default async function DynamicOfferPage(props: { params: Promise<{ slug: string; lang: string }> }) {
+    const params = await props.params;
     const { slug, lang } = params;
 
     const offer = await offers.getBySlug(slug);

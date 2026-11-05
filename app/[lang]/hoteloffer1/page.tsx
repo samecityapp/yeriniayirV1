@@ -143,7 +143,7 @@ export default function PartnerPage() {
                             </li>
                             <li className="flex items-start gap-3">
                                 <Check className="text-yellow-500 flex-shrink-0 mt-1" size={20} />
-                                <span className="text-zinc-200">Sosyal medyada periyodik "Öneri Listeleri" paylaşımları</span>
+                                <span className="text-zinc-200">Sosyal medyada periyodik &quot;Öneri Listeleri&quot; paylaşımları</span>
                             </li>
                         </ul>
 

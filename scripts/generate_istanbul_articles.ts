@@ -1,3 +1,4 @@
+if (!process.env.GEMINI_API_KEY) throw new Error('GEMINI_API_KEY is required; no request sent.');
 import { GoogleGenAI } from '@google/genai';
 import { createClient } from '@supabase/supabase-js';
 import dotenv from 'dotenv';
@@ -10,7 +11,7 @@ const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
 const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
 const supabase = createClient(supabaseUrl, supabaseKey);
 
-const geminiKey = process.env.GEMINI_API_KEY || 'AIzaSyCVEAM5S-_4kUEp9Cetof5CEn-rSXOfRC4';
+const geminiKey = process.env.GEMINI_API_KEY;
 const ai = new GoogleGenAI({ apiKey: geminiKey });
 
 const titles = [
