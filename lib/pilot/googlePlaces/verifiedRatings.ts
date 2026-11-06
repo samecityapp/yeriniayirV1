@@ -3557,6 +3557,432 @@ const VERIFIED_MAP: Record<string, VisitorGoogleRating> = {
       providers: [],
     },
   },
+
+  // ==========================================
+  // ANTALYA BÖLGE 1: KALEİÇİ, KEMERALTI & MERKEZ (AKSU DAHİL)
+  // ==========================================
+  'antalya-kofte-piyazciahmet': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Piyazc%C4%B1+Ahmet+Tah%C4%B1lpazar%C4%B1+Mah+Muratpa%C5%9Fa+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-kofte-aksusimsek': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Me%C5%9Fhur+Aksu+K%C3%B6ftecisi+%C5%9Eim%C5%9Fek+K%C3%B6fte+Piyaz+Aksu+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-kofte-piyazcisami': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Piyazc%C4%B1+Sami+Elmal%C4%B1+Mah+Muratpa%C5%9Fa+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-kofte-piyazcimustafa': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Tarihi+Piyazc%C4%B1+Mustafa+K%C4%B1z%C4%B1lsaray+Muratpa%C5%9Fa+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-doner-ipek': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=%C4%B0pek+D%C3%B6ner+Muratpa%C5%9Fa+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-doner-komas': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Koma%C5%9F+D%C3%B6ner+Etiler+Mah+Muratpa%C5%9Fa+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-doner-topcukebap': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Tarihi+Top%C3%A7u+Kebap+%C5%9Earampol+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-pide-aksupide': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Aksu+Pide+Salonu+Aksu+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-kebap-parlak': {
+    platform: 'google-maps',
+    value: 4.3,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Parlak+Restaurant+Elmal%C4%B1+Mah+Muratpa%C5%9Fa+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-pide-kumlucamerkez': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Merkez+Pide+ve+Kebap+Salonu+Kumluca+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-date-seraser': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Seraser+Fine+Dining+Restaurant+Kalei%C3%A7i+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-date-arma': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Arma+Restaurant+Kalei%C3%A7i+Yat+Liman%C4%B1+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-date-vanilla': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Vanilla+Lounge+Hesap%C3%A7%C4%B1+Sok+Kalei%C3%A7i+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-pizza-ilvicino': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Il+Vicino+Pizzeria+Kalei%C3%A7i+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-pizza-casasur': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Casa+Sur+Antalya+Kalei%C3%A7i',
+      providers: [],
+    },
+  },
+  'antalya-borek-tevfik': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=B%C3%B6rek%C3%A7i+Tevfik+Sinan+Mah+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-tatli-akdenizdondurma': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Akdeniz+Dondurma+H%C4%B1d%C4%B1rl%C4%B1k+Kulesi+Kalei%C3%A7i+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-kahve-suddmerkez': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=The+Sudd+Coffee+Kalei%C3%A7i+Antalya',
+      providers: [],
+    },
+  },
+
+  // ==========================================
+  // ANTALYA BÖLGE 2: LARA, ŞİRİNYALI & GÜZELOBA
+  // ==========================================
+  'antalya-kebap-sultanyar': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Sultanyar+Kebap+%C5%9Eirinyal%C4%B1+Lara+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-kebap-sirali': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=S%C4%B1ral%C4%B1+Kebap+Lara+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-kebap-kazan': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kazan+Kebap+%C5%9Eirinyal%C4%B1+Lara+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-burger-b12': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=B12+Steak+Burger+%C5%9Eirinyal%C4%B1+Lara+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-burger-routelara': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Route+Burger+House+Lara+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-pizza-schiller': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Schiller+G%C3%BCzeloba+Lara+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-pizza-rokka': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Rokka+Pizza+%C5%9Eirinyal%C4%B1+Lara+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-pizza-littleitaly': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Little+Italy+Lara+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-date-asmani': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Asmani+Restaurant+Lara+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-balik-larabalik': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Lara+Bal%C4%B1k+Evi+Fener+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-date-kalina': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kalina+Restaurant+Eski+Lara+Yolu+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-kahve-suddlara': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=The+Sudd+Coffee+Lara+%C5%9Eirinyal%C4%B1+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-pastane-zarif': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Zarif+Patisserie+Lara+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-kahve-pablito': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Pablito+Bakery+Coffee+Lara+Antalya',
+      providers: [],
+    },
+  },
+
+  // ==========================================
+  // ANTALYA BÖLGE 3: KONYAALTI & MELTEM
+  // ==========================================
+  'antalya-ozel-7mehmet': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=7+Mehmet+Restaurant+Meltem+Konyaalt%C4%B1+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-balik-ulucinar': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Ulu%C3%A7%C4%B1nar+Bal%C4%B1k+Konyaalt%C4%B1+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-date-bellavita': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Bella+Vita+Ristorante+Konyaalt%C4%B1+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-pastane-pouchkine': {
+    platform: 'google-maps',
+    value: 4.8,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Pouchkine+Konyaalt%C4%B1+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-kahve-kava': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Kava+Coffee+Roasters+Konyaalt%C4%B1+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-kahve-suddkonyaalti': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=The+Sudd+Coffee+Konyaalt%C4%B1+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-pide-camlik': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=%C3%87aml%C4%B1k+Restoran+Pide+Kebap+G%C3%BCrsu+Konyaalt%C4%B1+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-pide-kumlucabati': {
+    platform: 'google-maps',
+    value: 4.7,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Merkez+Pide+ve+Kebap+Salonu+Kumluca+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-kebap-agam': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=A%C4%9Fam+Gaziantep+Kebap+Konyaalt%C4%B1+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-kebap-canak': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=%C3%87anak+Kebap+Katmer+Konyaalt%C4%B1+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-burger-routekonyaalti': {
+    platform: 'google-maps',
+    value: 4.6,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Route+Burger+House+Konyaalt%C4%B1+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-burger-bigman': {
+    platform: 'google-maps',
+    value: 4.4,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=Big+Man+Konyaalt%C4%B1+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-kahvalti-cakirlar': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=%C3%87ak%C4%B1rlar+K%C3%B6y+Kahvalt%C4%B1s%C4%B1+G%C3%B6zleme+Konyaalt%C4%B1+Antalya',
+      providers: [],
+    },
+  },
+  'antalya-kahvalti-pinarbasi': {
+    platform: 'google-maps',
+    value: 4.5,
+    attribution: {
+      label: 'Google Maps',
+      mapsUri: 'https://www.google.com/maps/search/?api=1&query=%C3%87ak%C4%B1rlar+Kahvalt%C4%B1+Bah%C3%A7esi+Konyaalt%C4%B1+Antalya',
+      providers: [],
+    },
+  },
 };
 
 export function getRatingVerificationStatus(venueId: string): 'VERIFIED' | 'NEEDS_RESEARCH' {

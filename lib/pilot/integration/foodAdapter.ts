@@ -290,6 +290,42 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    scopeNote: 'Aydın · Kuşadası Sahil & Marina (Yayında)'
   },
   {
+   id: 'antalya-kaleici',
+   level: 'semt',
+   name: 'Antalya Kaleiçi & Merkez',
+   slug: 'antalya-kaleici',
+   path: ['antalya', 'kaleici-merkez'],
+   displayName: 'Kaleiçi, Kemeraltı & Merkez, Antalya',
+   locative: "Antalya Kaleiçi & Merkez'de",
+   status: 'published',
+   aliases: ['Antalya', 'Kaleiçi', 'Kaleici', 'Kemeraltı', 'Kemeralti', 'Muratpaşa', 'Şarampol', 'Kapalıyol', 'Aksu', 'Piyazcı Ahmet', 'İpek Döner', 'Komaş Döner', 'Aksu Köftecisi', 'Aksu Pide'],
+   scopeNote: 'Antalya · Kaleiçi, Kemeraltı, Çarşı Merkez & Aksu (Yayında)'
+  },
+  {
+   id: 'antalya-lara',
+   level: 'semt',
+   name: 'Antalya Lara & Güzeloba',
+   slug: 'antalya-lara',
+   path: ['antalya', 'lara'],
+   displayName: 'Lara, Şirinyalı & Güzeloba, Antalya',
+   locative: "Antalya Lara & Güzeloba'da",
+   status: 'published',
+   aliases: ['Antalya', 'Lara', 'Şirinyalı', 'Sirinyali', 'Güzeloba', 'Guzeloba', 'Eski Lara', 'Falezler', 'Fener', 'Sultanyar', 'B12', 'Schiller', 'Route Burger'],
+   scopeNote: 'Antalya · Lara, Şirinyalı, Falezler & Güzeloba (Yayında)'
+  },
+  {
+   id: 'antalya-konyaalti',
+   level: 'ilce',
+   name: 'Antalya Konyaaltı',
+   slug: 'antalya-konyaalti',
+   path: ['antalya', 'konyaalti'],
+   displayName: 'Konyaaltı & Meltem, Antalya',
+   locative: "Antalya Konyaaltı'nda",
+   status: 'published',
+   aliases: ['Antalya', 'Konyaaltı', 'Konyaalti', 'Meltem', 'Gürsu', 'Gursu', 'Arapsuyu', 'Çamlık', 'Çakırlar', 'Kumluca', '7 Mehmet', 'Pouchkine', 'Ağam', 'Çamlık Pide'],
+   scopeNote: 'Antalya · Konyaaltı, Meltem, Çamlık & Batı Rotası (Yayında)'
+  },
+  {
    id: 'gaziantep',
    level: 'il',
    name: 'Gaziantep',
@@ -305,7 +341,7 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
 
  return {
   locations: distinctLocations,
-  categories:data.categories.slice(0,7).map(c=>({slug:c.slug,label:c.label,title:c.label,isMustTry:c.isMustTry,emoji:c.id==='coffee'||c.slug.includes('kahve')?'☕':c.id==='burger'||c.slug.includes('burger')?'🍔':c.id==='pizza'||c.slug.includes('pizza')?'🍕':c.id==='breakfast'||c.slug.includes('kahvalti')?'🍳':c.slug.includes('baklava')?'🍯':c.slug.includes('katmer')?'🥞':c.slug.includes('beyran')?'🥣':c.slug.includes('kusleme')||c.slug.includes('kebap')?'🍢':c.slug.includes('mutfak')?'🍲':c.id==='dessert'||c.slug.includes('tatli')||c.slug.includes('firin')?'🍰':c.id==='date'?'🍷':c.id==='lokanta'||c.slug.includes('lokanta')?'🍲':c.id==='balik'||c.slug.includes('balik')?'🐟':c.id==='meyhane'?'🥂':c.id==='bistro'||c.slug.includes('bistro')?'🍸':c.id==='kebap'||c.slug.includes('kebap')?'🍢':'🍽️'})),
+  categories:data.categories.slice(0,7).map(c=>({slug:c.slug,label:c.label,title:c.label,isMustTry:c.isMustTry,emoji:c.slug.includes('kruvasan')?'🥐':c.id==='coffee'||c.slug.includes('kahve')?'☕':c.id==='burger'||c.slug.includes('burger')?'🍔':c.id==='pizza'||c.slug.includes('pizza')?'🍕':c.id==='breakfast'||c.slug.includes('kahvalti')?'🍳':c.slug.includes('kofte')||c.slug.includes('piyaz')?'🧆':c.slug.includes('doner')?'🥙':c.slug.includes('pide')?'🫓':c.slug.includes('ozel-gun')?'✨':c.slug.includes('baklava')?'🍯':c.slug.includes('katmer')?'🥞':c.slug.includes('beyran')?'🥣':c.slug.includes('kusleme')||c.slug.includes('kebap')?'🍢':c.slug.includes('mutfak')?'🍲':c.id==='dessert'||c.slug.includes('tatli')||c.slug.includes('firin')?'🍰':c.id==='date'?'🍷':c.id==='lokanta'||c.slug.includes('lokanta')?'🍲':c.id==='balik'||c.slug.includes('balik')?'🐟':c.id==='meyhane'?'🥂':c.id==='bistro'||c.slug.includes('bistro')?'🍸':c.id==='kebap'||c.slug.includes('kebap')?'🍢':'🍽️'})),
   venues:data.venues.map(v=>{
    const verified=getVerifiedGoogleRatings(v.id);
    const resolvedRatings=verified.length?verified:copyVisitorGoogleRatings(v.ratings);

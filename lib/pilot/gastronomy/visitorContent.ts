@@ -3929,6 +3929,478 @@ export const SYNTHESIZED_VENUE_INSIGHTS: Record<string, {
       'Mevlevihane müzesi ile iç içe, mistik ve dinlendirici bir atmosferi vardır.',
       'Gölge asma altı masaları öğleden sonra çok ferahtır.'
     ]
+  },
+
+  // ==========================================
+  // ANTALYA BÖLGE 1: KALEİÇİ, KEMERALTI & MERKEZ (AKSU DAHİL)
+  // ==========================================
+  'antalya-kofte-piyazciahmet': {
+    description: "Şarampol ve Tahılpazarı çarşı aksında, küçük yerli Çandır fasulyesi, bol Bozkır tahini, sarımsak, limon ve haşlanmış yumurtayla hazırlanan coğrafi işaretli Antalya piyazının ve sulu şiş köftenin şehir merkezindeki simge esnaf durağı.",
+    whatToOrder: ['Tahinli Antalya Piyazı', 'Odun Kömüründe Antalya Şiş Köfte'],
+    menuFrom: ['Kuzu Şiş', 'Tahinli Kabak Tatlısı', 'Yayık Ayranı', 'Közlenmiş Biber & Domates', 'Tırnak Pide'],
+    alsoTry: ['İpeksi tahin sosuyla harmanlanan ılık Çandır fasulyesi piyazı ve üzerine bol cevizli tahinli kabak tatlısı'],
+    beforeYouGo: [
+      'Çarşı merkezinde yerel halkın öğle saatlerinde yoğun ilgi gösterdiği köklü bir esnaf lokantasıdır.',
+      'Akşam erken saatlerde piyaz ve köfte tükenebildiği için öğle veya ikindi servisinde gidilmesi önerilir.'
+    ]
+  },
+  'antalya-kofte-aksusimsek': {
+    description: "Antalya havalimanı ve doğu çıkışındaki Aksu hattında, nesillerdir şiş köfte ve bol tahinli-yumurtalı Antalya piyazı denince yerel halkın özel olarak yolunu düşürdüğü köklü Aksu lezzet klasiği.",
+    whatToOrder: ['Meşhur Aksu Şiş Köfte', 'Bol Tahinli & Yumurtalı Antalya Piyazı'],
+    menuFrom: ['Kuzu Çöp Şiş', 'Çifte Kavrulmuş Tahinli Kabak Tatlısı', 'Köpüklü Yayık Ayranı', 'Köz Domates & Acı Biber'],
+    alsoTry: ['Kömür ateşinde sulu kalacak şekilde pişirilen şiş köfteyi sıcak tırnak pide ve bol tahinli piyazla birlikte tatmak'],
+    beforeYouGo: [
+      'Antalya merkezden veya havalimanı dönüşünde uğramak için çok pratik bir konumdadır.',
+      'Yemek sonunda üzerine tahin ve dövülmüş ceviz gezdirilen çıtır kabak tatlısı mutlaka denenmelidir.'
+    ]
+  },
+  'antalya-kofte-piyazcisami': {
+    description: "1933 yılından bu yana Kemeraltı Elmalı Mahallesi'nde üç kuşaktır aynı ustalıkla küçük taneli fasulyeden tahinli-taratorlu Antalya piyazı ve şiş köfte hazırlayan tarihi merkez lokantası.",
+    whatToOrder: ['1933 Usulü Tahinli Piyaz', 'Izgara Şiş Köfte'],
+    menuFrom: ['Kuzu Şiş', 'Tahinli Cevizli Kabak Tatlısı', 'Açık Ayran', 'Şalgam Suyu'],
+    alsoTry: ['Sarımsak, sirke, limon ve taş değirmen tahiniyle kıvamlanan tarihi piyaz sosu'],
+    beforeYouGo: [
+      'Kaleiçi ve Saat Kulesi yürüyüş mesafesinde, Kemeraltı ara sokağındadır.',
+      'Geleneksel esnaf lokantası düzeninde hızlı ve samimi servis sunar.'
+    ]
+  },
+  'antalya-kofte-piyazcimustafa': {
+    description: "Muratpaşa Kızılsaray'da on yıllardır esnafın ve müdavimlerin değişmez öğle durağı olan, yumuşacık haşlanmış fasulyesi, dengeli tahin sosu ve kömürde şiş köftesiyle öne çıkan köklü adres.",
+    whatToOrder: ['Antalya Usulü Tahinli Piyaz', 'Karışık Köfte & Şiş'],
+    menuFrom: ['Şiş Köfte', 'Cevizli Tahinli Kabak Tatlısı', 'Biber Turşusu', 'Yayık Ayranı'],
+    alsoTry: ['Sıcak tırnak pidesini tabağın dibinde kalan tahinli-limonlu piyaz sosuna banmak'],
+    beforeYouGo: [
+      'Öğle servisinde memur ve çarşı esnafı yoğunluğu yaşanır.',
+      'Merkezi konumuyla Kapalıyol ve Kaleiçi gezisi öncesi uğramaya çok uygundur.'
+    ]
+  },
+  'antalya-doner-ipek': {
+    description: "Antalya merkezde yaprak döner tutkunlarının yıllardır referans kabul ettiği, sinirsiz dana-kuzu eti terbiyesi, incecik kesimi ve sıcak lavaş/pide sunumuyla gidenin memnun ayrıldığı köklü döner ustası.",
+    whatToOrder: ['Porsiyon Yaprak Et Döner', 'Sıcak Lavaşta Dürüm Döner'],
+    menuFrom: ['Pilav Üstü Yaprak Döner', 'Tereyağlı İskender', 'Köpüklü Ayran', 'Közlenmiş Biber & Domates'],
+    alsoTry: ['Kıyma karıştırılmadan hazırlanan saf yaprak döneri sade porsiyon olarak lavaş ve soğan söğüşle tatmak'],
+    beforeYouGo: [
+      'Öğle saatlerinde döner tezgahı önünde yoğunluk oluşur; öğleden sonra geç saatlere kalmadan gitmek avantajlıdır.',
+      'Etin kendi suyunu koruyan ince ustalık kesimiyle öne çıkar.'
+    ]
+  },
+  'antalya-doner-komas': {
+    description: "Etiler Mahallesi Evliya Çelebi Caddesi'nde Antalya'nın yerel halkı arasında gerçek yaprak dönerin zirve adreslerinden biri olarak bilinen, öğleden sonra döneri biten nitelikli döner lokantası.",
+    whatToOrder: ['Sade Yaprak Et Döner Porsiyon', 'Gobit / Lavaş Arası Yaprak Döner'],
+    menuFrom: ['Pilav Üstü Döner', 'Kemik Suyu Çorba', 'Ev Yapımı Yayık Ayranı', 'Turşu & Karamelize Soğan'],
+    alsoTry: ['Odun ve kömür ateşinde ağır ağır kızaran yaprak dönerin çıtır kenar yaprakları'],
+    beforeYouGo: [
+      'Günlük takılan döner genellikle 15:30 - 16:00 civarında tükendiği için öğle servisinde gidilmesi şarttır.',
+      'Şehir merkezinde iş dünyası ve yerel müdavimlerin öncelikli tercihidir.'
+    ]
+  },
+  'antalya-doner-topcukebap': {
+    description: "1885 yılından beri Şarampol Caddesi'nde hizmet veren, odun ateşinde pişen döneri, şiş köftesi ve tandırıyla Antalya'nın gastronomi tarihindeki köklü esnaf kurumlarından biri.",
+    whatToOrder: ['Tarihi Topçu Döneri', 'İskender Kebap'],
+    menuFrom: ['Antalya Şiş Köfte', 'Tahinli Piyaz', 'Kuzu Tandır', 'Kaymaklı Ekmek Kadayıfı'],
+    alsoTry: ['Yarım asrı aşan gelenekle hazırlanan tereyağlı Topçu döneri ve üzerine tahinli kabak tatlısı'],
+    beforeYouGo: [
+      'Nostaljik Şarampol tramvay yolu üzerinde, tarihi çarşı atmosferindedir.',
+      'Ailece rahat oturulabilen geniş ve klasik bir salon düzenine sahiptir.'
+    ]
+  },
+  'antalya-pide-aksupide': {
+    description: "Aksu merkezde taş fırında meşe odunu ateşinde pişen, incecik çıtır hamuru, kaliteli tereyağı ve bol iç harcıyla Antalya'da pide kültürünün zirve temsilcilerinden biri olan yerel fırın lokantası.",
+    whatToOrder: ['Kuşbaşılı Kaşarlı Odun Ateşi Pide', 'Kıymalı Çıtır Aksu Pidesi'],
+    menuFrom: ['Karışık Aksu Pidesi', 'Peynirli Yumurtalı Pide', 'Tahinli Cevizli Tatlı Pide', 'Yayık Ayranı'],
+    alsoTry: ['Yemek üstüne taş fırından sıcak çıkan bol tahinli ve cevizli tatlı pide'],
+    beforeYouGo: [
+      'Odun fırını başında sipariş üzerine taze açılıp pişirildiği için sıcak servis edilir.',
+      'Aksu Antik Kenti (Perge) ve havalimanı güzergahında yerel halkın müdavimi olduğu adrestir.'
+    ]
+  },
+  'antalya-kebap-parlak': {
+    description: "1954'ten bu yana Kemeraltı'nda kömür ateşinde ağır ağır pişen kuzu çevirmesi, tandırı ve güveç lezzetleriyle Antalya merkezinin köklü et ve geleneksel mutfak klasiği.",
+    whatToOrder: ['Odun Kömüründe Kuzu Çevirme / Tandır', 'Parlak Özel Karışık Izgara'],
+    menuFrom: ['Kuzu Kaburga', 'Piliç Çevirme', 'Zeytinyağlı Meze Tepsisi', 'Tahinli Kabak Tatlısı'],
+    alsoTry: ['Kemikten kendiliğinden ayrılan lokum kıvamında kuzu tandır ve iç pilav'],
+    beforeYouGo: [
+      'Kaleiçi\'ne çok yakın konumuyla hem öğle hem akşam yemekleri için klasik bir duraktır.',
+      'Kuzu çevirme ve tandır için öğle veya erken akşam saatleri idealdir.'
+    ]
+  },
+  'antalya-pide-kumlucamerkez': {
+    description: "Antalya genelinde pide denince yerel gurmelerin zirveye koyduğu Kumluca Merkez Pide & Kebap; şehir merkezine yaklaşık 90 km mesafede (Kemer-Olympos-Kaş yolu üzerinde) olmasına rağmen sırf odun ateşindeki pidesi için gidilen efsanevi durak.",
+    whatToOrder: ['Kumluca Usulü Kuşbaşılı Kaşarlı Pide', 'Kıymalı Odun Ateşi Pide'],
+    menuFrom: ['Karışık Kumluca Pidesi', 'Adana & Kuzu Şiş', 'Tereyağlı Peynirli Pide', 'Köpüklü Yayık Ayranı'],
+    alsoTry: ['Odun ateşinde kenarları çıtırlaşmış, yayla tereyağıyla lezzetlendirilmiş sıcak kuşbaşılı pide'],
+    beforeYouGo: [
+      'ÖNEMLİ KONUM NOTU: Antalya şehir merkezinde değil, merkeze ~90 km batıdaki Kumluca ilçesindedir; Kemer, Olympos, Adrasan veya Kaş rotasına çıkanların mutlaka durması gereken zirve pidecidir.',
+      'Yoğun saatlerde fırın sırası olabildiği için yola çıkmadan önce saat planlaması yapılması önerilir.'
+    ]
+  },
+  'antalya-date-seraser': {
+    description: "Kaleiçi'nde 300 yıllık tarihi bir konağın begonvillerle çevrili büyülü avlusunda, şef dokunuşlu Akdeniz ve dünya mutfağı tabakları sunan özel gün ve romantik akşam yemeği adresi.",
+    whatToOrder: ['Ağır Ateşte Pişmiş Kuzu İncik', 'Deniz Mahsullü Ev Yapımı Risotto'],
+    menuFrom: ['Dana Bonfile Madalyon', 'Ördek Konfi', 'Burrata & İncir Salatası', 'Seçkin Şarap Kavı', 'Çikolatalı Sufle'],
+    alsoTry: ['Tarihi taş avluda mum ışığı ve piyano ezgileri eşliğinde şefin imza tadım tabakları'],
+    beforeYouGo: [
+      'Kaleiçi\'nin özel yıldönümü ve romantik akşam yemeği mekanları arasında öne çıkar; rezervasyon şarttır.',
+      'Akşam saatlerinde avlu aydınlatması çok etkileyici bir atmosfer sunar.'
+    ]
+  },
+  'antalya-date-arma': {
+    description: "Tarihi Kaleiçi Yat Limanı'nın ucunda, denizin ve surların birleştiği noktada panoramik Akdeniz ve Beydağları manzarasına karşı taze deniz mahsulleri sunan ikonik özel gün restoranı.",
+    whatToOrder: ['Tuzda Deniz Levreği', 'Izgara Akdeniz Ahtapotu'],
+    menuFrom: ['Karides Güveç', 'Kalamar Tava', 'Ege Otları & Deniz Börülcesi', 'Deniz Mahsullü Linguine', 'Sıcak Helva'],
+    alsoTry: ['Gün batımında yat limanı ve falez manzarasına karşı ılık ahtapot ızgara ve soğuk mezeler'],
+    beforeYouGo: [
+      'Deniz kenarındaki ön sıra masalar için birkaç gün önceden rezervasyon yaptırılmalıdır.',
+      'Özel misafir ağırlamak ve gün batımı yemeği için etkileyici bir manzaraya sahiptir.'
+    ]
+  },
+  'antalya-date-vanilla': {
+    description: "Kaleiçi Hesapçı Sokak'ta Üçkapılar'a yakın tarihi taş binada, modern Akdeniz bistrosu menüsü, taş fırın lezzetleri ve ferah bahçesiyle öne çıkan zarif restoran.",
+    whatToOrder: ['Fırınlanmış Ördek Göğsü', 'Dana Bonfile & Trüflü Püre'],
+    menuFrom: ['Somon Izgara', 'El Yapımı Ravioli', 'Keçi Peynirli Salata', 'Pavlova Tatlısı', 'İmza Kokteyller'],
+    alsoTry: ['Yemek sonunda taze orman meyveleriyle hazırlanan çıtır merengli Pavlova'],
+    beforeYouGo: [
+      'Hem şık bir akşam yemeği hem de Kaleiçi gezisi sırasında sakin bir mola için uygundur.',
+      'Hafta sonu akşamları için önceden masa ayırtılması tavsiye edilir.'
+    ]
+  },
+  'antalya-pizza-ilvicino': {
+    description: "Kaleiçi'nin tarihi taş sokaklarında, gerçek İtalyan unu ve uzun soğuk fermantasyon hamurla taş fırında pişen ince çıtır pizzalarıyla hem yerel halkın hem gezginlerin favori pizzacısı.",
+    whatToOrder: ['Pizza Burrata & Prosciutto Crudo', 'Pizza Diavola'],
+    menuFrom: ['Pizza Margherita', 'Quattro Formaggi (Dört Peynirli)', 'Focaccia Biberiyeli', 'Ev Yapımı Tiramisu', 'Aperol Spritz'],
+    alsoTry: ['Taş fırından sıcak çıkan fesleğenli ve taze manda burrata peynirli imza pizza'],
+    beforeYouGo: [
+      'Kaleiçi\'nin samimi taş sokağında açık hava masalarında servis verir; akşamları oldukça canlıdır.',
+      'Hamurlar günlük sınırlı açıldığı için yoğun akşam saatlerinde sıra beklenebilir.'
+    ]
+  },
+  'antalya-pizza-casasur': {
+    description: "Kaleiçi Kandiller Çıkmazı'nda narenciye ağaçlarıyla dolu saklı bir bahçede, odun fırını lezzetleri, özenli kokteylleri ve bohem Akdeniz atmosferiyle öne çıkan butik mutfak.",
+    whatToOrder: ['Odun Fırınında Trüflü Mantarlı Pizza', 'Akdeniz Otlu Izgara Levrek'],
+    menuFrom: ['El Yapımı Makarna', 'Paylaşımlık Tapas Tabağı', 'Burrata Salata', 'San Sebastian', 'Bahçe Kokteylleri'],
+    alsoTry: ['Portakal ve limon ağaçları altındaki sakin bahçede akşamüstü kokteyli ve taş fırın pizza'],
+    beforeYouGo: [
+      'Kaleiçi\'nin kalabalık sokaklarından izole, huzurlu bir avlu ortamı sunar.',
+      'Romantik buluşmalar ve sakin akşam yemekleri için rezervasyon önerilir.'
+    ]
+  },
+  'antalya-borek-tevfik': {
+    description: "1925 yılından bu yana çarşı merkezde Üçkapılar yakınında, çıtır çıtır el açması Antalya serpme böreğini kıymalı ve peynirli olarak üzerine pudra şekeri seçeneğiyle sunan asırlık lezzet mirası.",
+    whatToOrder: ['Antalya Usulü Kıymalı Serpme Börek', 'Peynirli Çıtır Serpme Börek'],
+    menuFrom: ['Pudra Şekerli Peynirli Börek', 'Kıymalı Karaköy Böreği', 'Demleme Çay', 'Ev Yapımı Limonata'],
+    alsoTry: ['İncecik zar gibi açılıp tereyağıyla kızaran peynirli serpme böreği Antalya geleneğiyle pudra şekerli denemek'],
+    beforeYouGo: [
+      'Sabah erken saatlerde açılır ve öğleye doğru börekler tamamen tükenir; sabah kahvaltısı için erken gidilmelidir.',
+      'Ustaların hamuru havada savurarak (serperek) açma gösterisi izlenmeye değerdir.'
+    ]
+  },
+  'antalya-tatli-akdenizdondurma': {
+    description: "Kaleiçi Hıdırlık Kulesi karşısında, Korkuteli keçi sütü ve gerçek sahlepten üretilen meşhur Antalya yanıksı dondurması ile tahinli-cevizli kabak tatlısını bir arada sunan klasik tatlı durağı.",
+    whatToOrder: ['Keçi Sütlü Meşhur Yanıksı Dondurma', 'Yanıksı Dondurmalı Tahinli Kabak Tatlısı'],
+    menuFrom: ['Sade Keçi Sütlü Dondurma', 'Bademli & Fıstıklı Dondurma', 'Künefe', 'Türk Kahvesi'],
+    alsoTry: ['Bol tahin ve cevizli Antalya kabak tatlısının yanına bir top isli/yanıksı keçi sütü dondurması'],
+    beforeYouGo: [
+      'Yanıksı dondurma, keçi sütünün kazan dibinde hafif tutuşturulmasıyla oluşan kendine has isli aromasıyla Antalya\'ya özgüdür.',
+      'Hıdırlık Kulesi ve Karaalioğlu Parkı gün batımı yürüyüşünde uğramak için idealdir.'
+    ]
+  },
+  'antalya-kahve-suddmerkez': {
+    description: "Kaleiçi Hesapçı Sokak'ta tarihi dokuyla modern üçüncü nesil kahve kavurmacılığını buluşturan, nitelikli espresso ve demleme kahveleriyle öne çıkan uzman kahve durağı.",
+    whatToOrder: ['V60 Single Origin Demleme', 'Cortado'],
+    menuFrom: ['Flat White', 'Cold Brew', 'Buzlu Latte', 'Tereyağlı Kruvasan', 'San Sebastian Cheesecake'],
+    alsoTry: ['Kendi kavurdukları taze çekirdeklerden demlenen soğuk demleme (Cold Brew) kahve'],
+    beforeYouGo: [
+      'Kaleiçi gezisi sırasında nitelikli kahve ve kısa çalışma molası için güvenilir bir adrestir.',
+      'Çekirdek kahve satışı da mevcuttur.'
+    ]
+  },
+
+  // ==========================================
+  // ANTALYA BÖLGE 2: LARA, ŞİRİNYALI & GÜZELOBA
+  // ==========================================
+  'antalya-kebap-sultanyar': {
+    description: "Lara Şirinyalı'da çıtır çıtır Antep lahmacunu, zırh kıyması kebapları, içli köftesi ve yemek öncesi masayı donatan zengin ikramlarıyla Antalya'da lahmacun ve kebap denince akla gelen öncü adres.",
+    whatToOrder: ['Sultanyar Çıtır Antep Lahmacun', 'Ali Nazik & Zırh Adana Kebap'],
+    menuFrom: ['Kuzu Küşleme', 'Haşlama & Kızartma İçli Köfte', 'Gavurdağı Salatası', 'Fıstıklı Künefe & Havuç Dilim Baklava'],
+    alsoTry: ['Sıcak taş fırından çıkan bol cevizli ve nar ekşili çıtır lahmacun yanına köpüklü açık ayran'],
+    beforeYouGo: [
+      'Lara Caddesi üzerinde yerel halkın ailece ve misafirleriyle en çok tercih ettiği kebap restoranlarının başında gelir.',
+      'Akşam yemeklerinde ve hafta sonlarında oldukça yoğun olduğu için rezervasyon önerilir.'
+    ]
+  },
+  'antalya-kebap-sirali': {
+    description: "Lara Barınaklar Bulvarı'nda geleneksel ocakbaşı ve kebap kültürünü modern sunumlarla birleştiren, özel şiş sunumları ve taş fırın lahmacunlarıyla popüler et restoranı.",
+    whatToOrder: ['Sıralı Özel Kebap Seçkisi', 'Fındık Lahmacun & İçli Köfte'],
+    menuFrom: ['Vali Kebabı', 'Kuzu Şiş', 'Yağlama', 'Humus & Babagannuş', 'Fıstıklı Katmer'],
+    alsoTry: ['Közlenmiş sarımsak ve arpacık soğanla terbiyelenmiş yumuşak kuzu şiş'],
+    beforeYouGo: [
+      'Geniş bahçesi ve şık salonuyla kalabalık grup yemekleri için elverişlidir.',
+      'Akşam servisi için önceden rezervasyon yaptırılması tavsiye edilir.'
+    ]
+  },
+  'antalya-kebap-kazan': {
+    description: "Şirinyalı Tekelioğlu Caddesi'nde taş fırın lahmacunu, odun ateşinde pişen kebapları ve istikrarlı malzeme kalitesiyle mahalle sakinlerinin müdavimi olduğu kebap durağı.",
+    whatToOrder: ['Taş Fırın Cevizli Lahmacun', 'Zırh Kıyması Adana Kebap'],
+    menuFrom: ['Kuzu Çöp Şiş', 'Patlıcanlı Kebap', 'Ezme & Mevsim Salata', 'Açık Yayık Ayranı'],
+    alsoTry: ['Bol yeşillik ve közlenmiş biber eşliğinde iki adet sıcak taş fırın lahmacun'],
+    beforeYouGo: [
+      'Hızlı servisi ve doyurucu porsiyonlarıyla öğle ve akşam saatlerinde yoğun ilgi görür.',
+      'Şirinyalı merkezde kolay ulaşılabilir konumdadır.'
+    ]
+  },
+  'antalya-burger-b12': {
+    description: "Lara Şirinyalı İsmet Gökşen Caddesi'nde dinlendirilmiş (dry-aged) kaliteli etlerden çekilen sulu burger köftesi, karamelize soğan dengesi ve ev yapımı brioche ekmeğiyle Antalya'nın zirve burger ve steak adreslerinden biri.",
+    whatToOrder: ['B12 İmza Steak Burger', 'Trüflü & Cheddarlı Gurme Burger'],
+    menuFrom: ['Füme Kaburgalı Burger', 'Lokum Bonfile', 'Baharatlı Ev Patatesi', 'Soğan Halkası', 'El Yapımı Soslar'],
+    alsoTry: ['Mühürlenerek içi sulu bırakılan kalın burger köftesi ve yanında trüflü-parmesanlı patates kızartması'],
+    beforeYouGo: [
+      'Etlerin pişme derecesi sipariş sırasında isteğinize göre özenle ayarlanır.',
+      'Lara bölgesinde gerçek et odaklı hamburger arayanların ilk duraklarındandır.'
+    ]
+  },
+  'antalya-burger-routelara': {
+    description: "Antalya'nın yerel gurme burger markası Route Burger House'un Lara Şirinyalı şubesi; günlük çekilen katkısız dana kaburga köftesi, yumuşacık tereyağlı ekmeği ve özgün soslarıyla yüksek memnuniyet sunan adres.",
+    whatToOrder: ['Route Burger (Karamelize Soğan & Füme Et)', 'Mushroom Swiss Burger'],
+    menuFrom: ['Double Cheeseburger', 'BBQ Bacon Burger', 'Cajun Baharatlı Patates', 'Çıtır Tavuk Parçaları', 'Ev Yapımı Limonata'],
+    alsoTry: ['Karamelize soğan, cheddar peyniri ve özel Route sosla bütünleşen sulu imza burger'],
+    beforeYouGo: [
+      'Hem Lara hem Konyaaltı şubesiyle Antalya\'da butik hamburger kültürünün öncüsüdür.',
+      'Akşam saatlerinde gençlerin ve burger tutkunlarının uğrak noktasıdır.'
+    ]
+  },
+  'antalya-pizza-schiller': {
+    description: "Güzeloba Rauf Denktaş Caddesi'nde taş fırında pişen incecik çıtır İtalyan pizzaları, özenli şarküteri-peynir malzemeleri ve nitelikli kahve/bistro atmosferiyle Lara-Güzeloba hattının öne çıkan pizza adresi.",
+    whatToOrder: ['Schiller Özel Taş Fırın Pizza', 'Burrata & Bresaola Pizza'],
+    menuFrom: ['Dört Peynirli (Quattro Formaggi) Pizza', 'Trüf Mantarlı Pizza', 'El Yapımı Makarnalar', 'Tiramisu', 'Nitelikli Kahve Seçkisi'],
+    alsoTry: ['İnce ve kenarları kabarcıklı çıtır hamur üzerine taze mozzarella ve İtalyan şarküteri dokunuşlu taş fırın pizza'],
+    beforeYouGo: [
+      'Güzeloba ve Lara sakinlerinin hem akşam yemeği hem de keyifli kahve-tatlı buluşmaları için favori mekanıdır.',
+      'Hafta sonu akşam saatlerinde bahçe ve teras masaları oldukça hareketlidir.'
+    ]
+  },
+  'antalya-pizza-rokka': {
+    description: "Şirinyalı Eski Lara Yolu yakınında ekşi mayalı uzun fermantasyon pizza hamuru, taze fesleğenli domates sosu ve samimi mahalle bistrosu ortamıyla beğenilen butik pizzacı.",
+    whatToOrder: ['Diavola Taş Fırın Pizza', 'Keçi Peynirli & İncirli Pizza'],
+    menuFrom: ['Margherita', 'Füme Kaburgalı Pizza', 'Roka & Parmesan Salatası', 'Panna Cotta', 'Ev Şarabı'],
+    alsoTry: ['Odun ateşinde kenarları çıtırlaşmış ekşi mayalı sıcak pizza ve taze roka salatası'],
+    beforeYouGo: [
+      'Eski Lara Yolu yürüyüşü öncesi veya sonrasında samimi bir akşam yemeği için idealdir.',
+      'Hamurlar günlük sınırlı üretilir.'
+    ]
+  },
+  'antalya-pizza-littleitaly': {
+    description: "Lara Barınaklar Bulvarı'nda klasik İtalyan trattoria sıcaklığında ince hamurlu pizzalar, el açması taze makarnalar ve bruschetta çeşitleri sunan sevilen İtalyan mutfağı.",
+    whatToOrder: ['Pizza Quattro Stagioni', 'Ev Yapımı Deniz Mahsullü Fettuccine'],
+    menuFrom: ['Pizza Pepperoni', 'Sarımsaklı Zeytinyağlı Focaccia', 'Lazanya', 'Klasik Tiramisu'],
+    alsoTry: ['Başlangıçta fırından sıcak çıkan sarımsaklı-biberiyeli focaccia ekmeği'],
+    beforeYouGo: [
+      'Aile yemekleri ve rahat İtalyan mutfağı sevenler için konforlu bir ortama sahiptir.',
+      'Lara merkezde ulaşımı oldukça rahattır.'
+    ]
+  },
+  'antalya-date-asmani': {
+    description: "Lara Fener'de Akdeniz'i, falezleri ve Beydağları'nı 10. kattan panoramik olarak kucaklayan terasında, seçkin dünya mutfağı, odun fırını etleri ve kokteylleriyle özel günlerin prestijli adresi.",
+    whatToOrder: ['Ağır Ateşte Pişmiş Dana Kaburga', 'Izgara Deniz Levreği & Akdeniz Otları'],
+    menuFrom: ['Suşi & Sashimi Seçkisi', 'Trüflü Bonfile Carpaccio', 'Deniz Mahsullü Risotto', 'Sommelier Şarap Kavı', 'İmza Tatlılar'],
+    alsoTry: ['Gün batımında Beydağları silüetine karşı terasta imza kokteyller ve paylaşımlık başlangıçlar'],
+    beforeYouGo: [
+      'Özel gün kutlamaları, yıldönümleri ve önemli misafir ağırlamaları için rezervasyon şarttır.',
+      'Şık giyim özeni (smart casual) beklenen üst segment bir teras restoranıdır.'
+    ]
+  },
+  'antalya-balik-larabalik': {
+    description: "Eski Lara Yolu Fener falezleri üzerinde, Akdeniz'in günlük taze balıklarını, zengin soğuk-sıcak deniz mezelerini ve falez esintisini bir araya getiren Antalya'nın köklü balık restoranı.",
+    whatToOrder: ['Izgara Akdeniz Lagos /Grida', 'Güveçte Tereyağlı Karides & Kalamar'],
+    menuFrom: ['Fener Kavurma', 'Girit Ezmesi & Deniz Börülcesi', 'Levrek Marin', 'Balık Çorbası', 'Fırında Sıcak Helva'],
+    alsoTry: ['Falez manzarasına karşı Antalya sularının simgesi beyaz etli grida/lagos ızgara ve tahinli sıcak helva'],
+    beforeYouGo: [
+      'Deniz tarafındaki falez manzaralı masalar için önceden rezervasyon yaptırılması önerilir.',
+      'Balık vitrininden günlük taze avları görerek seçebilirsiniz.'
+    ]
+  },
+  'antalya-date-kalina': {
+    description: "Lara falezlerinin hemen kıyısında, dalga sesleri ve panoramik deniz manzarası eşliğinde hem şık akşam yemekleri hem de özel gün buluşmaları için tercih edilen zarif falez restoranı.",
+    whatToOrder: ['Fırınlanmış Somon & Kuşkonmaz', 'Bonfile Madalyon'],
+    menuFrom: ['Izgara Ahtapot', 'Burrata Salatası', 'Trüflü Tagliatelle', 'Çikolatalı Fondan', 'Kokteyl Menüsü'],
+    alsoTry: ['Falezlerin üzerindeki açık terasta gün batımı saatinde deniz manzaralı akşam yemeği'],
+    beforeYouGo: [
+      'Akşamüstü gün batımı saatlerinde manzarası çok etkileyicidir.',
+      'Vale ve otopark imkanı mevcuttur.'
+    ]
+  },
+  'antalya-kahve-suddlara': {
+    description: "Antalya'nın öncü nitelikli kahve kavurmacısı The Sudd Coffee'nin Şirinyalı şubesi; kendi kavurdukları single-origin çekirdekler, uzman barista demlemeleri ve taze tatlılarıyla Lara'nın kahve merkezi.",
+    whatToOrder: ['Single-Origin V60 Pour Over', 'Flat White'],
+    menuFrom: ['Cortado', 'Soğuk Demleme (Cold Brew)', 'Espresso Tonic', 'Tereyağlı Kruvasan', 'Bask Cheesecake'],
+    alsoTry: ['Etiyopya veya Kolombiya mikrolot çekirdeklerden taze demlenen V60 filtre kahve'],
+    beforeYouGo: [
+      'Lara Şirinyalı\'da nitelikli kahve içmek ve açık havada sohbet etmek için çok popülerdir.',
+      'Evde demleme için taze kavrulmuş paket çekirdek alabilirsiniz.'
+    ]
+  },
+  'antalya-pastane-zarif': {
+    description: "Lara Fener'de Fransız pastacılık teknikleriyle hazırlanan kat kat çıtır kruvasanları, ekler çeşitleri, taze meyveli tartları ve kahve eşlikçileriyle öne çıkan butik pastane-kafe.",
+    whatToOrder: ['Badem Kremalı Kruvasan', 'Antep Fıstıklı Paris-Brest'],
+    menuFrom: ['Çilekli & Pastacı Kremalı Kruvasan', 'Limonlu Mereng Tart', 'Sade Fransız Kruvasanı', 'Cappuccino', 'Buzlu Americano'],
+    alsoTry: ['Sabah fırından yeni çıkmış çıtır kruvasan ve ipeksi süt köpüklü latte'],
+    beforeYouGo: [
+      'Kruvasan ve özel Fransız tatlıları günlük sınırlı sayıda üretilir.',
+      'Hafta sonu sabah kahvaltısı ve öğleden sonra tatlı-kahve molası için çok keyiflidir.'
+    ]
+  },
+  'antalya-kahve-pablito': {
+    description: "Şirinyalı'nın sakin sokağında ekşi mayalı fırın ürünleri, kruvasan sandviçleri ve özenli espresso bazlı kahveleriyle yerel mahallelinin müdavimi olduğu sıcak fırın-kafe.",
+    whatToOrder: ['Füme Hindi & Cheddarlı Kruvasan Sandviç', 'Iced Spanish Latte'],
+    menuFrom: ['Tarçınlı Çörek (Cinnamon Roll)', 'Avokadolu Ekşi Maya Tost', 'Filtre Kahve', 'Matcha Latte', 'Brownie'],
+    alsoTry: ['Taze fırınlanmış sıcak tarçınlı çörek ve soğuk demleme kahve'],
+    beforeYouGo: [
+      'Sakin sokak masaları çalışmak veya arkadaşlarla buluşmak için oldukça rahattır.',
+      'Evcil hayvan dostu samimi bir mahalle ortamı sunar.'
+    ]
+  },
+
+  // ==========================================
+  // ANTALYA BÖLGE 3: KONYAALTI & MELTEM
+  // ==========================================
+  'antalya-ozel-7mehmet': {
+    description: "1937'den bu yana üç kuşaktır Antalya gastronomisinin zirve simgesi olan 7 Mehmet; Atatürk Kültür Parkı içindeki ferah tepesinde, Konyaaltı ve Beydağları panoramasına karşı 650'yi aşkın geleneksel Akdeniz ve Anadolu reçetesiyle özel günlerin ve özel misafirlerin vazgeçilmez adresi.",
+    whatToOrder: ['Bademli & Kuşüzümlü İç Pilavlı Kuzu Tandır', 'Bergamot Reçelli & Bol Tahinli Kabak Tatlısı'],
+    menuFrom: ['Oğlak Tandır', 'Hibeş & Babagannuş', 'Kabak Çiçeği Dolması', 'Deniz Mahsulleri & Lagos', 'Yanıksı Dondurmalı İrmik Helvası'],
+    alsoTry: ['Masaya gelişiyle imzaleşen iç pilavlı kuzu tandır, Antalya usulü tahinli hibeş ve finalde çift kavrulmuş tahinli-cevizli kabak tatlısı'],
+    beforeYouGo: [
+      'Özel günler, kutlamalar ve şehir dışından gelen değerli misafirleri ağırlamak için Antalya\'daki birincil referans noktasıdır.',
+      'Özellikle akşam yemeği ve hafta sonu için mutlaka önceden rezervasyon yaptırılmalıdır; meze dolabını bizzat görerek seçim yapabilirsiniz.'
+    ]
+  },
+  'antalya-balik-ulucinar': {
+    description: "Konyaaltı sahil bandında Akdeniz'in taze mevsim balıklarını, özenli zeytinyağlı mezelerini ve deniz ürünlerini şık ve huzurlu bir atmosferde sunan sevilen deniz mahsulleri restoranı.",
+    whatToOrder: ['Akdeniz Grida / Levrek Izgara', 'Tereyağlı Karides Güveç'],
+    menuFrom: ['Ahtapot Izgara', 'Kalamar Tava', 'Deniz Börülcesi & Atom', 'Lakerda', 'Fırın Helva'],
+    alsoTry: ['Konyaaltı esintisinde ılık ahtapot ızgara ve günlük Ege-Akdeniz ot mezeleri'],
+    beforeYouGo: [
+      'Konyaaltı Sahili yürüyüş aksında, akşam yemekleri için ferah bir bahçe ve salona sahiptir.',
+      'Hafta sonu akşamları için rezervasyon önerilir.'
+    ]
+  },
+  'antalya-date-bellavita': {
+    description: "Konyaaltı Gürsu'da şık ambiyansı, odun fırını İtalyan lezzetleri, el yapımı makarnaları ve zengin şarap seçkisiyle akşam yemekleri ve romantik buluşmalar için öne çıkan restoran.",
+    whatToOrder: ['Dana Bonfile Tagliata', 'Trüf Soslu Ev Yapımı Ravioli'],
+    menuFrom: ['Burrata & Domates Carpaccio', 'Taş Fırın Pizza', 'Deniz Mahsullü Risotto', 'Tiramisu', 'Şarap Seçkisi'],
+    alsoTry: ['İnce dilimlenmiş ızgara dana bonfile (Tagliata) üzerinde roka ve yaprak parmesan'],
+    beforeYouGo: [
+      'Konyaaltı bölgesinde sakin ve özenli bir akşam yemeği arayanlar için idealdir.',
+      'Akşam saatleri için masa ayırtılması tavsiye edilir.'
+    ]
+  },
+  'antalya-pastane-pouchkine': {
+    description: "Konyaaltı'nın parlayan yeni nesil kafe-pastanesi Pouchkine; gerçek Fransız tereyağıyla kat kat açılan çıtır kruvasanları, zarif Fransız pastacılık ürünleri (viennoiserie & patisserie) ve nitelikli kahveleriyle kısa sürede semtin zirve buluşma noktası haline gelen mekan.",
+    whatToOrder: ['Fransız Tereyağlı & Bademli Kruvasan', 'Fıstık Kremalı & Orman Meyveli Özel Kruvasan'],
+    menuFrom: ['Sade Çıtır Kruvasan', 'Pain au Chocolat', 'İmza Fransız Tart & Ekler Seçkisi', 'Kruvasan Kahvaltı Tabağı', 'Flat White & V60'],
+    alsoTry: ['Fırından sıcak çıkan dışı pul pul çıtır, içi petek dokulu kruvasan çeşitleri ve yanında özenle demlenmiş filtre kahve'],
+    beforeYouGo: [
+      'Konyaaltı\'nda kruvasan ve Fransız pastane ürünleri konusunda yerel müdavimlerin favori yeni adresidir.',
+      'En popüler kruvasan ve tatlı çeşitlerini taze yakalamak için sabah veya öğle saatlerinde gidilmesi önerilir.'
+    ]
+  },
+  'antalya-kahve-kava': {
+    description: "Konyaaltı Arapsuyu'nda kendi kavurduğu nitelikli kahve çekirdekleri, ferah çalışma/sohbet alanı ve uzman baristalarıyla Konyaaltı kahve kültürünün sevilen kavurmacısı.",
+    whatToOrder: ['V60 Single Origin Demleme', 'Iced Flat White'],
+    menuFrom: ['Espresso', 'Cortado', 'Cold Brew', 'Muzlu Ekmek', 'Yulaflı Kurabiye'],
+    alsoTry: ['Meyvemsi aromaları öne çıkan tek kökenli çekirdeklerle demlenen V60 filtre kahve'],
+    beforeYouGo: [
+      'Bilgisayarla çalışmak veya sakin bir kahve molası vermek için Konyaaltı\'ndaki en rahat mekanlardandır.',
+      'Ev için taze kavrum kahve çekirdeği satın alabilirsiniz.'
+    ]
+  },
+  'antalya-kahve-suddkonyaalti': {
+    description: "Konyaaltı Gürsu Atatürk Bulvarı üzerinde, nitelikli üçüncü dalga kahve kavrumlarını ferah bahçe atmosferiyle buluşturan popüler kahve durağı.",
+    whatToOrder: ['Chemex / V60 Demleme', 'Cappuccino'],
+    menuFrom: ['Americano', 'Cold Drip', 'Buzlu Latte', 'San Sebastian Cheesecake', 'Kruvasan'],
+    alsoTry: ['Sıcak Antalya günlerinde buz gibi soğuk demleme (Cold Drip) kahve'],
+    beforeYouGo: [
+      'Gürsu ve sahil hattına yürüme mesafesinde, gün boyu canlı bir atmosfere sahiptir.',
+      'Sabah saatlerinde oldukça sakin ve keyiflidir.'
+    ]
+  },
+  'antalya-pide-camlik': {
+    description: "Konyaaltı Gürsu Çamlık Caddesi'nde çam ağaçları altında, taş fırında odun ateşinde pişirdiği incecik çıtır pideleriyle Antalya'nın pide konusunda zirve kabul edilen köklü mekanlarından biri.",
+    whatToOrder: ['Çamlık Özel Kuşbaşılı Kaşarlı Pide', 'Odun Ateşinde Kıymalı Çıtır Pide'],
+    menuFrom: ['Karışık Pide', 'Peynirli Yumurtalı Pide', 'Kuzu Şiş & Köfte', 'Cevizli Tahinli Tatlı Pide', 'Yayık Ayranı'],
+    alsoTry: ['Odun ateşinde incecik açılmış çıtır kıymalı pide ve finalde fırından sıcak çıkan tahinli-cevizli pide'],
+    beforeYouGo: [
+      'Konyaaltı sakinlerinin yıllardır değişmeyen ailece pide adresidir; açık ve kapalı ferah oturma alanı vardır.',
+      'Hafta sonu öğle ve akşam saatlerinde oldukça yoğun olduğu için erken gitmek avantajlıdır.'
+    ]
+  },
+  'antalya-pide-kumlucabati': {
+    description: "Antalya'da pide denince mutlak zirve olarak gösterilen Kumluca Merkez Pide & Kebap; Konyaaltı batı çıkışından Kemer-Olympos-Kaş yoluna devam ederken (~85 km) odun ateşindeki efsanevi pidesi için özel olarak mola verilen lezzet durağı.",
+    whatToOrder: ['Kumluca Usulü Kuşbaşılı Kaşarlı Odun Pidesi', 'Tereyağlı Kıymalı Pide'],
+    menuFrom: ['Karışık Kumluca Pidesi', 'Peynirli Pide', 'Odun Ateşinde Kebap', 'Buz Gibi Yayık Ayranı'],
+    alsoTry: ['Meşe odunu ateşinde pişen, incecik çıtır hamurlu ve bol malzemeli sıcak Kumluca pidesi'],
+    beforeYouGo: [
+      'ÖNEMLİ KONUM NOTU: Konyaaltı merkezde değil, batı Antalya rotasında Kumluca ilçesindedir (~85 km); Kemer, Çıralı, Olympos, Adrasan veya Kaş yönüne gidenlerin mutlaka uğradığı zirve pidecidir.',
+      'Porsiyonları doyurucu, malzeme kalitesi yıllardır hiç bozulmayan gerçek bir yerel klasiktir.'
+    ]
+  },
+  'antalya-kebap-agam': {
+    description: "Konyaaltı Gürsu Atatürk Bulvarı'nda taş fırından çıkan çıtır Gaziantep lahmacunu, zırh kebapları ve bakır sahan ikramlarıyla Konyaaltı'nda lahmacun ve Antep mutfağının başrol oyuncusu.",
+    whatToOrder: ['Ağam Çıtır Gaziantep Lahmacunu', 'Ali Nazik & Kuzu Küşleme'],
+    menuFrom: ['Zırh Adana Kebap', 'Patlıcanlı Kebap', 'Yuvalama & Beyran', 'İçli Köfte', 'Antep Fıstıklı Katmer'],
+    alsoTry: ['Sıcak taş fırından çıkan sarımsaklı-maydanozlu çıtır Antep lahmacunu ve üstüne sıcak fıstıklı katmer'],
+    beforeYouGo: [
+      'Konyaaltı\'nda gerçek taş fırın lahmacun ve Gaziantep kebapları için yerel halkın en güvendiği adreslerin başında gelir.',
+      'Geniş bahçesiyle aile ve grup yemekleri için çok uygundur.'
+    ]
+  },
+  'antalya-kebap-canak': {
+    description: "Konyaaltı Atatürk Bulvarı üzerinde yöresel Gaziantep yemekleri, odun ateşinde kebapları, lahmacunu ve taş fırın katmeriyle istikrarlı lezzet sunan köklü restoran.",
+    whatToOrder: ['Taş Fırın Lahmacun', 'Haşlama İçli Köfte & Küşleme'],
+    menuFrom: ['Beyran Çorbası', 'Kuru Patlıcan Dolması', 'Adana Kebap', 'Gavurdağı Salatası', 'Kaymaklı Katmer'],
+    alsoTry: ['Yemek öncesi sıcak servis edilen haşlama içli köfte ve kuru patlıcan dolması'],
+    beforeYouGo: [
+      'Öğle ve akşam saatlerinde zengin sulu yemek ve kebap menüsüyle hizmet verir.',
+      'Otopark imkanı ve ferah bahçe alanı mevcuttur.'
+    ]
+  },
+  'antalya-burger-routekonyaalti': {
+    description: "Konyaaltı Arapsuyu Atatürk Bulvarı'nda, günlük çekilen taze dana kaburga köftesi, ev yapımı tereyağlı brioche ekmeği ve imza soslarıyla Antalya'da gurme hamburgerin öncü adresi.",
+    whatToOrder: ['Route İmza Burger', 'Truffle & Mushroom Burger'],
+    menuFrom: ['Smokehouse BBQ Burger', 'Double Cheeseburger', 'Cajun Patates Kızartması', 'Soğan Halkası', 'Özel Sos Seçkisi'],
+    alsoTry: ['Karamelize soğan, füme et ve cheddar peyniriyle hazırlanan sulu Route Burger'],
+    beforeYouGo: [
+      'Konyaaltı\'nda zincir fast-food yerine gerçek el yapımı gurme burger arayanların birincil tercihidir.',
+      'Sipariş üzerine taze mühürlendiği için sıcak ve sulu servis edilir.'
+    ]
+  },
+  'antalya-burger-bigman': {
+    description: "Konyaaltı Akdeniz Bulvarı'nda deniz manzarasına karşı hem zengin mutfağı hem de doyurucu gurme burger ve ızgara tabaklarıyla günün her saati canlı sahil bistrosu.",
+    whatToOrder: ['Big Man Gurme Burger', 'Meksika Soslu Bonfile Dilimleri'],
+    menuFrom: ['Cheeseburger', 'Çıtır Tavuk Burger', 'Quesadilla', 'Elma Dilim Patates', 'Taze Meyveli Kokteyller'],
+    alsoTry: ['Konyaaltı sahil esintisinde açık terasta gurme burger ve soğuk içecek keyfi'],
+    beforeYouGo: [
+      'Denizin hemen karşısında geniş bir açık oturma alanına sahiptir.',
+      'Hem gündüz plaj sonrası hem akşam yürüyüşünde uğramak için çok rahattır.'
+    ]
+  },
+  'antalya-kahvalti-cakirlar': {
+    description: "Konyaaltı'nın Toroslar'a yaslanan yemyeşil Çakırlar bölgesinde, portakal ve zeytin ağaçları altında sacda pişen taze gözlemeleri ve serpme köy kahvaltısıyla Antalya'nın hafta sonu kahvaltı klasiği.",
+    whatToOrder: ['Serpme Çakırlar Köy Kahvaltısı', 'Sacda Keçi Peynirli & Otlu Gözleme'],
+    menuFrom: ['Kıymalı & Patatesli Sac Gözlemesi', 'Bazlama & Köy Tereyağı', 'Turunç ve Bergamot Reçeli', 'Sahanda Köy Yumurtası', 'Semaverde Çay'],
+    alsoTry: ['Odun ateşindeki sacdan sıcak çıkan çıtır gözleme ve Antalya\'ya özgü turunç/patlıcan reçelleri'],
+    beforeYouGo: [
+      'Çakırlar, Konyaaltı sahilinden araçla 12-15 dakika içeridedir; pazar günleri kurulan yerel üretici pazarı da gezilebilir.',
+      'Hafta sonu sabahları yoğun olduğu için 10:30\'dan önce gitmek oldukça rahat ettirir.'
+    ]
+  },
+  'antalya-kahvalti-pinarbasi': {
+    description: "Çakırlar yolu üzerinde asırlık çınar ağaçları ve doğal su sesi eşliğinde, sıcak bazlama, pişi, yerel peynirler ve sac börekleriyle ferah bir doğa kahvaltısı sunan bahçe.",
+    whatToOrder: ['Çınaraltı Serpme Kahvaltı', 'Sıcak Pişi & Tulum Peyniri'],
+    menuFrom: ['Sacda Karışık Gözleme', 'Sucuklu Yumurta', 'Ev Yapımı Reçel Çeşitleri', 'Sıcak Bazlama', 'Demlik Çay'],
+    alsoTry: ['Sıcak balon pişiyi köy kaymağı ve turunç reçeliyle tatmak'],
+    beforeYouGo: [
+      'Ağaçların gölgesindeki serin bahçesi yaz sıcaklarında bile ferah bir kahvaltı imkanı sunar.',
+      'Çocuklu aileler ve kalabalık gruplar için geniş otopark ve bahçe alanı vardır.'
+    ]
   }
 };
 
