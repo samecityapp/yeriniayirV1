@@ -14,15 +14,15 @@ export default async function PublicLayout(
     } = props;
 
     const lang = (params?.lang as 'tr' | 'en') || 'tr';
-    if(await isLocalFoodPreview())return <div className="min-h-[100dvh]">{children}</div>;
+    const preview = await isLocalFoodPreview();
     const [{PublicLayoutWrapper},{Footer},dict]=await Promise.all([import('@/components/PublicLayoutWrapper'),import('@/components/Footer'),getDictionary(lang)]);
 
     return (
         <PublicLayoutWrapper
-            preview={(await isLocalFoodPreview())}
+            preview={preview}
             lang={lang}
             dict={dict}
-            footer={<Footer lang={lang} localPreview={(await isLocalFoodPreview())} />}
+            footer={<Footer lang={lang} localPreview={preview} />}
         >
             {children}
         </PublicLayoutWrapper>

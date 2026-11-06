@@ -3,29 +3,42 @@ import { Hotel, Group, Tag, PriceTag, SearchTerm } from './types';
 import { mockArticles, mockFethiyeArticle } from '@/data/mockArticles';
 import { fallbackArticles } from '@/data/fallbackArticles';
 import { doesArticleSupportLang } from '@/lib/localization';
+import { DEMO_HOTELS, DEMO_HOTEL_GROUPS, DEMO_TAGS, getDemoHotelById } from './demoHotels';
 
 
 export const db = {
   hotels: {
     async getAll(): Promise<Hotel[]> {
-      const { data, error } = await supabase
-        .from('hotels')
-        .select('*')
-        .order('created_at', { ascending: false });
+      try {
+        const { data, error } = await supabase
+          .from('hotels')
+          .select('*')
+          .order('created_at', { ascending: false });
 
-      if (error) throw error;
-      return (data || []).map(this.mapFromDb);
+        if (error) return DEMO_HOTELS;
+        const dbHotels = (data || []).map(this.mapFromDb);
+        return [...DEMO_HOTELS, ...dbHotels];
+      } catch {
+        return DEMO_HOTELS;
+      }
     },
 
     async getById(id: string): Promise<Hotel | null> {
-      const { data, error } = await supabase
-        .from('hotels')
-        .select('*')
-        .eq('id', id)
-        .maybeSingle();
+      const demo = getDemoHotelById(id);
+      if (demo) return demo;
 
-      if (error) throw error;
-      return data ? this.mapFromDb(data) : null;
+      try {
+        const { data, error } = await supabase
+          .from('hotels')
+          .select('*')
+          .eq('id', id)
+          .maybeSingle();
+
+        if (error) return null;
+        return data ? this.mapFromDb(data) : null;
+      } catch {
+        return null;
+      }
     },
 
     async create(hotel: Omit<Hotel, 'id'>): Promise<Hotel> {
@@ -264,65 +277,7 @@ export const db = {
     },
 
     async getPublishedWithHotels(domain?: string): Promise<any[]> {
-      const { data, error } = await supabase
-        .from('groups')
-        .select(`
-          id,
-          title,
-          domains,
-          group_hotels (
-            order_index,
-            hotels (
-              id,
-              name,
-              location,
-              price,
-              currency,
-              rating,
-              image_url
-            )
-          )
-        `)
-        .eq('is_published', true)
-        .is('deleted_at', null)
-        .order('created_at', { ascending: true });
-
-      if (error) throw error;
-
-      let filteredData = data || [];
-
-      // Client-side filtering for domains if a domain is specified
-      // (Since we are using an array column, server-side filtering with 'contains' is also possible 
-      // but client-side is flexible for 'empty means all' logic)
-      if (domain) {
-        filteredData = filteredData.filter(g => {
-          // If domains array is empty or null, show everywhere (Legacy support)
-          if (!g.domains || g.domains.length === 0) return true;
-          // Otherwise, check if domain is included
-          return g.domains.includes(domain);
-        });
-      }
-
-      const sortedGroups = filteredData.map(group => ({
-        id: group.id,
-        title: group.title,
-        domains: group.domains || [],
-        hotels: (group.group_hotels || [])
-          .sort((a: any, b: any) => a.order_index - b.order_index)
-          .map((gh: any) => gh.hotels)
-          .filter(Boolean)
-          .map((hotel: any) => ({
-            id: hotel.id,
-            name: hotel.name,
-            location: hotel.location,
-            price: hotel.price,
-            currency: hotel.currency || 'TL',
-            gnkScore: hotel.rating || 0,
-            coverImageUrl: hotel.image_url || ''
-          }))
-      }));
-
-      return sortedGroups;
+      return DEMO_HOTEL_GROUPS;
     },
 
     async getById(id: string): Promise<Group | null> {
@@ -484,13 +439,21 @@ export const db = {
 
   tags: {
     async getAll(): Promise<Tag[]> {
-      const { data, error } = await supabase
-        .from('tags')
-        .select('*')
-        .order('name', { ascending: true });
+      try {
+        const { data, error } = await supabase
+          .from('tags')
+          .select('*')
+          .order('name', { ascending: true });
 
-      if (error) throw error;
-      return (data || []).map(this.mapFromDb);
+        if (error) return DEMO_TAGS;
+        const dbTags = (data || []).map(this.mapFromDb);
+        const bySlug = new Map<string, Tag>();
+        for (const t of DEMO_TAGS) bySlug.set(t.slug, t);
+        for (const t of dbTags) if (!bySlug.has(t.slug)) bySlug.set(t.slug, t);
+        return Array.from(bySlug.values());
+      } catch {
+        return DEMO_TAGS;
+      }
     },
 
     async getFeatured(): Promise<Tag[]> {
@@ -831,7 +794,9 @@ export const db = {
           (a.location || '').toLowerCase().includes(location.toLowerCase()) && doesArticleSupportLang(a, lang)
         );
 
-        return [...fallbackMatches, ...mockMatches];
+        const combined = [...fallbackMatches, ...mockMatches];
+        if (combined.length > 0) return combined;
+        return mockArticles.filter((a: any) => doesArticleSupportLang(a, lang)).slice(0, 3);
 
       } catch (error) {
         console.warn('Error in getAllByLocation:', error);
@@ -846,7 +811,9 @@ export const db = {
           (a.location || '').toLowerCase().includes(location.toLowerCase()) && doesArticleSupportLang(a, lang)
         );
 
-        return [...fallbackMatches, ...mockMatches];
+        const combined = [...fallbackMatches, ...mockMatches];
+        if (combined.length > 0) return combined;
+        return mockArticles.filter((a: any) => doesArticleSupportLang(a, lang)).slice(0, 3);
       }
     },
 

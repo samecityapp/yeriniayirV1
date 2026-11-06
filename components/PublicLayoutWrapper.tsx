@@ -21,20 +21,11 @@ export function PublicLayoutWrapper({
   lang,
   dict,
 }: PublicLayoutWrapperProps) {
-  const pathname = usePathname();
-
-  // Ana sayfa veya dil kök sayfası ise gastronomi görünümü geçerlidir
-  const isGastronomyHome = preview && (
-    pathname === `/${lang}` ||
-    pathname === `/${lang}/` ||
-    pathname === '/' ||
-    pathname === '');
-
   return (
     <>
-      {!isGastronomyHome && <Header lang={lang} />}
+      <Header lang={lang} />
       <div className="min-h-[100dvh]">{children}</div>
-      {!isGastronomyHome && footer}
+      {footer}
       {!preview && <CookieBanner dict={dict} />}
     </>
   );

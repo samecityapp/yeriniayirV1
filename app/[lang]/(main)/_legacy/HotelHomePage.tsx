@@ -56,8 +56,8 @@ async function HotelGroups({ lang, domain }: { lang: 'tr' | 'en', domain?: strin
               </div>
             </div>
 
-            {/* Desktop: Grid görünümü */}
-            <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            {/* Desktop: 3 Sütunlu Grid görünümü (Her kategoride 3 otel) */}
+            <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {group.hotels.map((hotel: Hotel, hotelIndex: number) => (
                 <HotelCard key={hotel.id} hotel={hotel} lang={lang} priority={groupIndex === 0 && hotelIndex === 0} />
               ))}
@@ -99,8 +99,8 @@ function HomePageSkeleton() {
           </div>
 
           {/* Desktop: Grid skeleton */}
-          <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {[1, 2, 3, 4].map((idx) => (
+          <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[1, 2, 3].map((idx) => (
               <HotelCardSkeleton key={idx} />
             ))}
           </div>
@@ -136,7 +136,13 @@ export async function generateMetadata({ params }: { params: { lang: string } })
 
 
 
-export default async function HomePage({ params }: { params: { lang: string } }) {
+export default async function HomePage({
+  params,
+  gastronomySection,
+}: {
+  params: { lang: string };
+  gastronomySection?: React.ReactNode;
+}) {
   const lang = params.lang as 'tr' | 'en' || 'tr';
   const dict = await getDictionary(lang);
   const organizationSchema = generateOrganizationSchema();
@@ -162,7 +168,7 @@ export default async function HomePage({ params }: { params: { lang: string } })
     <>
       <JsonLd data={organizationSchema} />
 
-      <main className="container mx-auto px-4 pt-2 pb-8">
+      <main className="container mx-auto px-4 pt-2 pb-12">
         <div className="text-center mt-2 mb-6">
           <h1 className="text-xl min-[375px]:text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight whitespace-nowrap">
             {dict.home.hero_title}
@@ -173,9 +179,63 @@ export default async function HomePage({ params }: { params: { lang: string } })
           </Suspense>
         </div>
 
-        <Suspense fallback={<HomePageSkeleton />}>
-          <HotelGroups lang={lang} domain={currentDomain} />
-        </Suspense>
+        {/* ÖNEMLİ FEATURE VURGUSU: KAFE & RESTORAN KEŞİF SİSTEMİ ÜST BANNER */}
+        {gastronomySection && (
+          <div className="mb-10 bg-gradient-to-r from-[#FF385C]/10 via-white to-[#FF385C]/5 border-2 border-[#FF385C]/30 rounded-2xl p-5 sm:p-6 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div className="space-y-1.5">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FF385C] text-white text-xs font-extrabold uppercase tracking-wider">
+                <span>🍽️ YENİ ÖZELLİK · GASTRONOMİ KEŞİF SİSTEMİ</span>
+              </div>
+              <h2 className="text-lg sm:text-2xl font-extrabold text-gray-900 tracking-tight">
+                {lang === 'tr'
+                  ? 'Yerini Ayır Kafe & Restoran Keşif Rehberi Yayında!'
+                  : 'Yerini Ayır Cafe & Restaurant Discovery Guide is Live!'}
+              </h2>
+              <p className="text-xs sm:text-sm text-gray-600 max-w-2xl leading-relaxed">
+                {lang === 'tr'
+                  ? 'Sıradan zincirleri eleyen, her semtin gerçek uzman kahvecilerini, kahvaltıcılarını, balıkçılarını ve date mekanlarını seçen interaktif rehberimizi hemen aşağıda deneyimleyin.'
+                  : 'Explore our interactive guide selecting authentic local cafes, breakfast spots, seafood restaurants, and date venues.'}
+              </p>
+            </div>
+            <a
+              href="#gastronomi-rehberi"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#FF385C] hover:bg-red-600 text-white font-bold text-sm shadow-md hover:shadow-lg transition-all whitespace-nowrap flex-shrink-0"
+            >
+              <span>{lang === 'tr' ? 'Kafe & Restoranları Keşfet' : 'Explore Cafes & Restaurants'}</span>
+              <span>↓</span>
+            </a>
+          </div>
+        )}
+
+        {/* 4 OTEL KATEGORİSİ (HER KATEGORİDE 3 OTEL = 12 OTEL) */}
+        <div id="oteller" className="scroll-mt-24">
+          <Suspense fallback={<HomePageSkeleton />}>
+            <HotelGroups lang={lang} domain={currentDomain} />
+          </Suspense>
+        </div>
+
+        {/* AYRI BAŞLIKLI ANA SAYFA KAFE & RESTORAN KEŞİF REHBERİ BÖLÜMÜ */}
+        {gastronomySection && (
+          <section id="gastronomi-rehberi" className="mt-16 sm:mt-24 pt-10 sm:pt-14 border-t-2 border-gray-200 scroll-mt-20">
+            <div className="mb-8 text-center max-w-3xl mx-auto">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-50 border border-[#FF385C]/30 text-[#FF385C] text-xs font-extrabold uppercase tracking-wider mb-3">
+                <span>✨ ÖNE ÇIKAN ÖZELLİK · YERİNİ AYIR GASTRONOMİ MOTORU V2</span>
+              </div>
+              <h2 className="text-2xl sm:text-4xl font-black text-gray-900 tracking-tight">
+                {lang === 'tr'
+                  ? 'Kafe & Restoran Keşif Rehberi — Nereye Gidilir, Ne Yenir?'
+                  : 'Cafe & Restaurant Discovery Guide — Where to Go & What to Eat'}
+              </h2>
+              <p className="text-sm sm:text-base text-gray-600 mt-3 leading-relaxed">
+                {lang === 'tr'
+                  ? 'Konum seçin! Moda’dan Kuşadası’na, Beşiktaş’tan Karaköy ve Nişantaşı’na kadar 22 bölgede gerçek misafir memnuniyeti ve gastronomi uzmanlığıyla seçilmiş en iyi mekanları keşfedin.'
+                  : 'Select a location to discover top-rated local cafes, breakfast spots, seafood restaurants, and date venues across 22 curated regions.'}
+              </p>
+            </div>
+
+            {gastronomySection}
+          </section>
+        )}
       </main>
     </>
   );

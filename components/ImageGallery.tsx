@@ -117,8 +117,8 @@ export function ImageGallery({
       </div>
 
       {/* Desktop Gallery */}
-      <div className="flex gap-2 mb-0 md:flex hidden">
-        <div className="relative w-[380px] h-[550px] bg-gray-100 rounded-2xl overflow-hidden cursor-pointer group flex-shrink-0">
+      <div className="hidden md:grid md:grid-cols-3 gap-3 mb-0 h-[520px]">
+        <div className={`${totalImages === 3 ? 'col-span-2' : 'col-span-1'} relative h-full bg-gray-100 rounded-2xl overflow-hidden cursor-pointer group`}>
           {videoUrl ? (
             <div className="relative w-full h-full" onClick={() => setIsVideoOpen(true)}>
               {videoThumbnailUrl ? (
@@ -126,7 +126,7 @@ export function ImageGallery({
                   src={videoThumbnailUrl}
                   alt={`${altPrefix} video`}
                   fill
-                  sizes="380px"
+                  sizes="(max-width: 1200px) 66vw, 800px"
                   className="object-cover"
                   priority={priority}
                 />
@@ -135,7 +135,7 @@ export function ImageGallery({
                   src={displayImages[0]}
                   alt={altPrefix}
                   fill
-                  sizes="380px"
+                  sizes="(max-width: 1200px) 66vw, 800px"
                   className="object-cover"
                   priority={priority}
                 />
@@ -152,7 +152,7 @@ export function ImageGallery({
                 src={displayImages[0]}
                 alt={altPrefix}
                 fill
-                sizes="380px"
+                sizes="(max-width: 1200px) 66vw, 800px"
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 priority={priority}
               />
@@ -160,17 +160,17 @@ export function ImageGallery({
           ) : null}
         </div>
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-3 h-full">
           {displayImages[1] && (
             <div
-              className="relative w-[260px] h-[268px] bg-gray-100 rounded-2xl overflow-hidden cursor-pointer group"
+              className="relative flex-1 bg-gray-100 rounded-2xl overflow-hidden cursor-pointer group"
               onClick={() => setSelectedImageIndex(1)}
             >
               <Image
                 src={displayImages[1]}
                 alt={`${altPrefix} - 2`}
                 fill
-                sizes="260px"
+                sizes="400px"
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
@@ -178,14 +178,14 @@ export function ImageGallery({
 
           {displayImages[2] && (
             <div
-              className="relative w-[260px] h-[268px] bg-gray-100 rounded-2xl overflow-hidden cursor-pointer group"
+              className="relative flex-1 bg-gray-100 rounded-2xl overflow-hidden cursor-pointer group"
               onClick={() => setSelectedImageIndex(2)}
             >
               <Image
                 src={displayImages[2]}
                 alt={`${altPrefix} - 3`}
                 fill
-                sizes="260px"
+                sizes="400px"
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
               {totalImages > 4 && (
@@ -202,14 +202,14 @@ export function ImageGallery({
 
         {displayImages[3] && (
           <div
-            className="relative w-[380px] h-[550px] bg-gray-100 rounded-2xl overflow-hidden cursor-pointer group flex-shrink-0"
+            className="relative h-full bg-gray-100 rounded-2xl overflow-hidden cursor-pointer group"
             onClick={() => setSelectedImageIndex(3)}
           >
             <Image
               src={displayImages[3]}
               alt="Resim 4"
               fill
-              sizes="380px"
+              sizes="400px"
               className="object-cover group-hover:scale-105 transition-transform duration-500"
             />
           </div>
