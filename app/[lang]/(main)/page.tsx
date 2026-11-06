@@ -20,20 +20,34 @@ export async function generateMetadata(props:{params: Promise<{lang:string}>}):P
 }
 
 export default async function UnifiedHomePage(
- props:{params: Promise<{lang:string}>;searchParams: Promise<{region?:string;category?:string}>}
+ props:{params: Promise<{lang:string}>;searchParams: Promise<{region?:string;category?:string;view?:string}>}
 ) {
  const searchParams = await props.searchParams;
  const params = await props.params;
- const targetRegion = searchParams.region || 'kusadasi';
+ const targetRegion = searchParams.region || 'moda';
  const targetCategory = searchParams.category || '';
  const data = await readIntegrationDiscovery(targetRegion, targetCategory);
  const lang = params.lang === 'en' ? 'en' : 'tr';
 
+ // Eğer kullanıcı doğrudan gastronomi görünümünü açtıysa (?view=gastronomi) veya bir bölge seçtiyse (?region=...)
+ // sayfanın aşağısında değil, doğrudan tam ekran orijinal Gastronomi deneyimi olarak açılır!
+ if ((searchParams.view === 'gastronomi' || Boolean(searchParams.region)) && data) {
+  return (
+   <GastronomyPageClient
+    discovery={toFoodDiscovery(data)}
+    initialLocationSlug={searchParams.region}
+    initialCategorySlug={searchParams.category}
+    lang={lang}
+    embedded={false}
+   />
+  );
+ }
+
  const gastronomySection = data ? (
   <GastronomyPageClient
    discovery={toFoodDiscovery(data)}
-   initialLocationSlug={searchParams.region || data.region.slug}
-   initialCategorySlug={searchParams.category || data.categorySlug}
+   initialLocationSlug={searchParams.region}
+   initialCategorySlug={searchParams.category}
    lang={lang}
    embedded={true}
   />

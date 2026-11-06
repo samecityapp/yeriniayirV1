@@ -20,7 +20,7 @@ export function GastronomyHeader({
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 transition-all select-none">
       <div className="max-w-2xl mx-auto px-4 py-2.5 sm:py-3 flex items-center justify-between gap-3">
         {/* LOGO */}
-        <Link href={`/${lang}`} className="flex items-center gap-1.5 focus:outline-hidden">
+        <Link href={`/${lang}?view=gastronomi`} className="flex items-center gap-1.5 focus:outline-hidden">
           <span className="text-lg sm:text-xl font-black tracking-tight text-slate-950 flex items-center">
             YERİNİ<span className="text-blue-600 ml-0.5">AYIR</span>
           </span>

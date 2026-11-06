@@ -85,7 +85,7 @@ export function GastronomyPageClient({
       } catch {}
 
       if (selectedLocation && loc.id !== selectedLocation.id) {
-        router.push(`/${lang}?region=${loc.slug}`, { scroll: false });
+        router.push(`/${lang}?region=${loc.slug}`);
         return;
       }
 
@@ -104,7 +104,7 @@ export function GastronomyPageClient({
 
       // URL senkronizasyonu ve sunucu tarafı bölge yüklemesi
       const newUrl = `/${lang}?region=${loc.slug}&category=${nextCategorySlug}`;
-      router.push(newUrl, { scroll: false });
+      router.push(newUrl);
     },
     [lang, selectedLocation, selectedCategorySlug, foodDiscoveryProvider, router]
   );
@@ -139,7 +139,7 @@ export function GastronomyPageClient({
   }, [foodDiscoveryProvider]);
 
   return (
-    <div className={embedded ? "bg-[#fafbfc] rounded-3xl border-2 border-red-100 shadow-lg overflow-hidden text-slate-900 flex flex-col font-sans antialiased" : "min-h-screen bg-[#fafbfc] text-slate-900 flex flex-col font-sans antialiased"}>
+    <div className={embedded ? "w-full bg-[#fafbfc] text-slate-900 flex flex-col font-sans antialiased" : "min-h-screen bg-[#fafbfc] text-slate-900 flex flex-col font-sans antialiased"}>
       {/* 1. ORTAK HEADER */}
       <GastronomyHeader
         currentLocation={selectedLocation}
@@ -147,37 +147,8 @@ export function GastronomyPageClient({
         lang={lang}
       />
 
-      {/* HIZLI BÖLGE GEÇİŞ BARI (GÖMÜLÜ GÖRÜNÜMDE HER ZAMAN GÖRÜNÜR) */}
-      {embedded && readyRegions.length > 0 && (
-        <div className="bg-white border-b border-slate-200/80 px-4 py-3">
-          <div className="max-w-4xl mx-auto flex items-center gap-2 overflow-x-auto scrollbar-hide">
-            <span className="text-[11px] font-extrabold uppercase tracking-wider text-[#FF385C] flex-shrink-0 mr-1">
-              Hızlı Bölge Seç:
-            </span>
-            {readyRegions.map((region) => {
-              const isSelected = selectedLocation?.id === region.id || selectedLocation?.slug === region.slug;
-              return (
-                <button
-                  key={region.id}
-                  type="button"
-                  onClick={() => handleSelectLocation(region)}
-                  className={`inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold transition-all flex-shrink-0 ${
-                    isSelected
-                      ? 'bg-[#FF385C] text-white shadow-sm'
-                      : 'bg-slate-50 hover:bg-red-50 text-slate-700 hover:text-[#FF385C] border border-slate-200/90'
-                  }`}
-                >
-                  <MapPin size={12} className={isSelected ? 'text-white' : 'text-[#FF385C]'} />
-                  <span>{region.name}</span>
-                </button>
-              );
-            })}
-          </div>
-        </div>
-      )}
-
-      {/* ANA İÇERİK */}
-      <main className={embedded ? "flex-1 max-w-4xl w-full mx-auto px-4 py-5 sm:py-8" : "flex-1 max-w-2xl w-full mx-auto px-4 py-3 sm:py-6"}>
+      {/* ANA İÇERİK — ORİJİNAL TAM GENİŞLİK / MAX-W-2XL DÜZENİ */}
+      <main className="flex-1 max-w-2xl w-full mx-auto px-4 py-3 sm:py-6">
         {/* =================================================================== */}
         {/* 1. DURUM: KONUM HENÜZ SEÇİLMEDİ (YENİ MODERN HERO & KONUM SEÇİMİ)   */}
         {/* =================================================================== */}
@@ -349,10 +320,10 @@ export function GastronomyPageClient({
               </div>
             )}
 
-            {/* 3. MEKAN KARTLARI LİSTESİ */}
+            {/* 3. MEKAN KARTLARI LİSTESİ (ORİJİNAL TAM BOY KART DÜZENİ) */}
             {categoryResult && categoryResult.coreVenues.length > 0 ? (
               <div className="space-y-6 sm:space-y-7">
-                <div className={embedded ? "grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6" : "grid grid-cols-1 gap-5 sm:gap-6"}>
+                <div className="grid grid-cols-1 gap-5 sm:gap-6">
                   {categoryResult.coreVenues.map((venue,index) => (
                     <PremiumRestaurantCard
                       key={venue.id}

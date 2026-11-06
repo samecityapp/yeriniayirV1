@@ -198,11 +198,11 @@ export default async function HomePage({
               </p>
             </div>
             <a
-              href="#gastronomi-rehberi"
+              href={`/${lang}?view=gastronomi`}
               className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#FF385C] hover:bg-red-600 text-white font-bold text-sm shadow-md hover:shadow-lg transition-all whitespace-nowrap flex-shrink-0"
             >
               <span>{lang === 'tr' ? 'Kafe & Restoranları Keşfet' : 'Explore Cafes & Restaurants'}</span>
-              <span>↓</span>
+              <span>→</span>
             </a>
           </div>
         )}
@@ -214,10 +214,10 @@ export default async function HomePage({
           </Suspense>
         </div>
 
-        {/* AYRI BAŞLIKLI ANA SAYFA KAFE & RESTORAN KEŞİF REHBERİ BÖLÜMÜ */}
+        {/* AYRI BAŞLIKLI ANA SAYFA KAFE & RESTORAN KEŞİF REHBERİ BÖLÜMÜ (ORİJİNAL TAM BOY GÖRÜNÜM) */}
         {gastronomySection && (
-          <section id="gastronomi-rehberi" className="mt-16 sm:mt-24 pt-10 sm:pt-14 border-t-2 border-gray-200 scroll-mt-20">
-            <div className="mb-8 text-center max-w-3xl mx-auto">
+          <section id="gastronomi-rehberi" className="mt-16 sm:mt-24 pt-10 sm:pt-14 border-t-2 border-gray-200 scroll-mt-16 -mx-4 sm:mx-0">
+            <div className="mb-6 text-center max-w-3xl mx-auto px-4">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-50 border border-[#FF385C]/30 text-[#FF385C] text-xs font-extrabold uppercase tracking-wider mb-3">
                 <span>✨ ÖNE ÇIKAN ÖZELLİK · YERİNİ AYIR GASTRONOMİ MOTORU V2</span>
               </div>
@@ -226,11 +226,6 @@ export default async function HomePage({
                   ? 'Kafe & Restoran Keşif Rehberi — Nereye Gidilir, Ne Yenir?'
                   : 'Cafe & Restaurant Discovery Guide — Where to Go & What to Eat'}
               </h2>
-              <p className="text-sm sm:text-base text-gray-600 mt-3 leading-relaxed">
-                {lang === 'tr'
-                  ? 'Konum seçin! Moda’dan Kuşadası’na, Beşiktaş’tan Karaköy ve Nişantaşı’na kadar 22 bölgede gerçek misafir memnuniyeti ve gastronomi uzmanlığıyla seçilmiş en iyi mekanları keşfedin.'
-                  : 'Select a location to discover top-rated local cafes, breakfast spots, seafood restaurants, and date venues across 22 curated regions.'}
-              </p>
             </div>
 
             {gastronomySection}
