@@ -19,6 +19,60 @@ export const MODA_CATEGORIES = [
 ];
 
 const MODA_NON_COFFEE_VENUES: VisitorVenueData[] = [
+  // Kahve (100% Moda)
+  {
+    id: 'osm-node-5764070654',
+    name: 'Çekirdek',
+    location: 'Caferağa Mah. Şair Latifi Sk. No:9A, Moda, Kadıköy',
+    categoryId: 'coffee',
+    description: null,
+    whatToOrder: [],
+    menuFrom: [],
+    alsoTry: [],
+    beforeYouGo: [],
+    photo: null,
+    ratings: [],
+  },
+  {
+    id: 'osm-node-6124757286',
+    name: 'Story Coffee Roasters',
+    location: 'Caferağa Mah. Dalga Sk. No:22, Moda, Kadıköy',
+    categoryId: 'coffee',
+    description: null,
+    whatToOrder: [],
+    menuFrom: [],
+    alsoTry: [],
+    beforeYouGo: [],
+    photo: null,
+    ratings: [],
+  },
+  {
+    id: 'osm-node-9375785317',
+    name: 'Montag Coffee Roasters',
+    location: 'Caferağa Mah. Moda Cd. No:121, Moda, Kadıköy',
+    categoryId: 'coffee',
+    description: null,
+    whatToOrder: [],
+    menuFrom: [],
+    alsoTry: [],
+    beforeYouGo: [],
+    photo: null,
+    ratings: [],
+  },
+  {
+    id: 'osm-node-8017443297',
+    name: 'Guten Morgen',
+    location: 'Caferağa Mah. Fırıldak Sk. No:19/B, Moda, Kadıköy',
+    categoryId: 'coffee',
+    description: null,
+    whatToOrder: [],
+    menuFrom: [],
+    alsoTry: [],
+    beforeYouGo: [],
+    photo: null,
+    ratings: [],
+  },
+
   // Hamburger (100% Moda)
   {
     id: 'kadikoy-burger-zapata',
