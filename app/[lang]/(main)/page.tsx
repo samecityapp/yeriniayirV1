@@ -29,8 +29,8 @@ export default async function UnifiedHomePage(
  const data = await readIntegrationDiscovery(targetRegion, targetCategory);
  const lang = params.lang === 'en' ? 'en' : 'tr';
 
- // Eğer kullanıcı doğrudan gastronomi görünümünü açtıysa (?view=gastronomi) veya bir bölge seçtiyse (?region=...)
- // sayfanın aşağısında değil, doğrudan tam ekran orijinal Gastronomi deneyimi olarak açılır!
+ // Eğer kullanıcı Gastronomi sekmesini açtıysa (?view=gastronomi) veya bir bölge seçtiyse (?region=...)
+ // doğrudan tam ekran orijinal Gastronomi sekmesi açılır!
  if ((searchParams.view === 'gastronomi' || Boolean(searchParams.region)) && data) {
   return (
    <GastronomyPageClient
@@ -43,15 +43,5 @@ export default async function UnifiedHomePage(
   );
  }
 
- const gastronomySection = data ? (
-  <GastronomyPageClient
-   discovery={toFoodDiscovery(data)}
-   initialLocationSlug={searchParams.region}
-   initialCategorySlug={searchParams.category}
-   lang={lang}
-   embedded={true}
-  />
- ) : null;
-
- return <HotelHomePage params={params} gastronomySection={gastronomySection} />;
+ return <HotelHomePage params={params} />;
 }

@@ -168,8 +168,31 @@ export default async function HomePage({
     <>
       <JsonLd data={organizationSchema} />
 
-      <main className="container mx-auto px-4 pt-2 pb-12">
-        <div className="text-center mt-2 mb-6">
+      <main className="container mx-auto px-4 pt-3 pb-12">
+        {/* KOMPAKT SEKME (TAB) GEÇİŞİ: OTELLER / GASTRONOMİ KEŞFİ */}
+        <div className="flex justify-center mb-5">
+          <div className="inline-flex items-center p-1 rounded-full bg-gray-100 border border-gray-200/80 shadow-xs">
+            <a
+              href={`/${lang}`}
+              className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white text-gray-900 font-bold text-xs sm:text-sm shadow-xs border border-gray-200/60 transition-all"
+            >
+              <span>🏨</span>
+              <span>{lang === 'tr' ? 'Oteller' : 'Hotels'}</span>
+            </a>
+            <a
+              href={`/${lang}?view=gastronomi`}
+              className="inline-flex items-center gap-2 px-5 py-2 rounded-full text-gray-600 hover:text-[#FF385C] font-bold text-xs sm:text-sm transition-all"
+            >
+              <span>🍽️</span>
+              <span>{lang === 'tr' ? 'Gastronomi Keşfi' : 'Gastronomy Discovery'}</span>
+              <span className="px-1.5 py-0.5 text-[10px] font-extrabold uppercase rounded-full bg-[#FF385C]/10 text-[#FF385C]">
+                {lang === 'tr' ? 'Yeni' : 'New'}
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div className="text-center mt-1 mb-6">
           <h1 className="text-xl min-[375px]:text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight whitespace-nowrap">
             {dict.home.hero_title}
           </h1>
@@ -179,58 +202,12 @@ export default async function HomePage({
           </Suspense>
         </div>
 
-        {/* ÖNEMLİ FEATURE VURGUSU: KAFE & RESTORAN KEŞİF SİSTEMİ ÜST BANNER */}
-        {gastronomySection && (
-          <div className="mb-10 bg-gradient-to-r from-[#FF385C]/10 via-white to-[#FF385C]/5 border-2 border-[#FF385C]/30 rounded-2xl p-5 sm:p-6 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-            <div className="space-y-1.5">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FF385C] text-white text-xs font-extrabold uppercase tracking-wider">
-                <span>🍽️ YENİ ÖZELLİK · GASTRONOMİ KEŞİF SİSTEMİ</span>
-              </div>
-              <h2 className="text-lg sm:text-2xl font-extrabold text-gray-900 tracking-tight">
-                {lang === 'tr'
-                  ? 'Yerini Ayır Kafe & Restoran Keşif Rehberi Yayında!'
-                  : 'Yerini Ayır Cafe & Restaurant Discovery Guide is Live!'}
-              </h2>
-              <p className="text-xs sm:text-sm text-gray-600 max-w-2xl leading-relaxed">
-                {lang === 'tr'
-                  ? 'Sıradan zincirleri eleyen, her semtin gerçek uzman kahvecilerini, kahvaltıcılarını, balıkçılarını ve date mekanlarını seçen interaktif rehberimizi hemen aşağıda deneyimleyin.'
-                  : 'Explore our interactive guide selecting authentic local cafes, breakfast spots, seafood restaurants, and date venues.'}
-              </p>
-            </div>
-            <a
-              href={`/${lang}?view=gastronomi`}
-              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#FF385C] hover:bg-red-600 text-white font-bold text-sm shadow-md hover:shadow-lg transition-all whitespace-nowrap flex-shrink-0"
-            >
-              <span>{lang === 'tr' ? 'Kafe & Restoranları Keşfet' : 'Explore Cafes & Restaurants'}</span>
-              <span>→</span>
-            </a>
-          </div>
-        )}
-
         {/* 4 OTEL KATEGORİSİ (HER KATEGORİDE 3 OTEL = 12 OTEL) */}
         <div id="oteller" className="scroll-mt-24">
           <Suspense fallback={<HomePageSkeleton />}>
             <HotelGroups lang={lang} domain={currentDomain} />
           </Suspense>
         </div>
-
-        {/* AYRI BAŞLIKLI ANA SAYFA KAFE & RESTORAN KEŞİF REHBERİ BÖLÜMÜ (ORİJİNAL TAM BOY GÖRÜNÜM) */}
-        {gastronomySection && (
-          <section id="gastronomi-rehberi" className="mt-16 sm:mt-24 pt-10 sm:pt-14 border-t-2 border-gray-200 scroll-mt-16 -mx-4 sm:mx-0">
-            <div className="mb-6 text-center max-w-3xl mx-auto px-4">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-50 border border-[#FF385C]/30 text-[#FF385C] text-xs font-extrabold uppercase tracking-wider mb-3">
-                <span>✨ ÖNE ÇIKAN ÖZELLİK · YERİNİ AYIR GASTRONOMİ MOTORU V2</span>
-              </div>
-              <h2 className="text-2xl sm:text-4xl font-black text-gray-900 tracking-tight">
-                {lang === 'tr'
-                  ? 'Kafe & Restoran Keşif Rehberi — Nereye Gidilir, Ne Yenir?'
-                  : 'Cafe & Restaurant Discovery Guide — Where to Go & What to Eat'}
-              </h2>
-            </div>
-
-            {gastronomySection}
-          </section>
-        )}
       </main>
     </>
   );

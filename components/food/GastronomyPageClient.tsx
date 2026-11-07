@@ -148,7 +148,26 @@ export function GastronomyPageClient({
       />
 
       {/* ANA İÇERİK — ORİJİNAL TAM GENİŞLİK / MAX-W-2XL DÜZENİ */}
-      <main className="flex-1 max-w-2xl w-full mx-auto px-4 py-3 sm:py-6">
+      <main className="flex-1 max-w-2xl w-full mx-auto px-4 py-3 sm:py-5">
+        {/* KOMPAKT SEKME (TAB) GEÇİŞİ: OTELLER / GASTRONOMİ KEŞFİ */}
+        <div className="flex justify-center mb-4">
+          <div className="inline-flex items-center p-1 rounded-full bg-slate-200/70 border border-slate-200/90 shadow-2xs">
+            <a
+              href={`/${lang}`}
+              className="inline-flex items-center gap-2 px-5 py-2 rounded-full text-slate-600 hover:text-slate-900 font-bold text-xs sm:text-sm transition-all"
+            >
+              <span>🏨</span>
+              <span>{lang === 'tr' ? 'Oteller' : 'Hotels'}</span>
+            </a>
+            <a
+              href={`/${lang}?view=gastronomi`}
+              className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white text-slate-950 font-bold text-xs sm:text-sm shadow-xs border border-slate-200/70 transition-all"
+            >
+              <span>🍽️</span>
+              <span>{lang === 'tr' ? 'Gastronomi Keşfi' : 'Gastronomy Discovery'}</span>
+            </a>
+          </div>
+        </div>
         {/* =================================================================== */}
         {/* 1. DURUM: KONUM HENÜZ SEÇİLMEDİ (YENİ MODERN HERO & KONUM SEÇİMİ)   */}
         {/* =================================================================== */}
