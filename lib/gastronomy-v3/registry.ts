@@ -8,6 +8,7 @@ import gaziantepSnapshotJson from './regions/gaziantep-merkez.json';
 import antalyaKaleiciSnapshotJson from './regions/antalya-kaleici.json';
 import antalyaLaraSnapshotJson from './regions/antalya-lara.json';
 import antalyaKonyaaltiSnapshotJson from './regions/antalya-konyaalti.json';
+import muglaUlaAkyakaSnapshotJson from './regions/mugla-ula-akyaka.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -21,6 +22,7 @@ const GAZIANTEP_SNAPSHOT = gaziantepSnapshotJson as V3VerifiedRegionSnapshot;
 const ANTALYA_KALEICI_SNAPSHOT = antalyaKaleiciSnapshotJson as V3VerifiedRegionSnapshot;
 const ANTALYA_LARA_SNAPSHOT = antalyaLaraSnapshotJson as V3VerifiedRegionSnapshot;
 const ANTALYA_KONYAALTI_SNAPSHOT = antalyaKonyaaltiSnapshotJson as V3VerifiedRegionSnapshot;
+const AKYAKA_SNAPSHOT = muglaUlaAkyakaSnapshotJson as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -33,6 +35,7 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   ANTALYA_KALEICI_SNAPSHOT,
   ANTALYA_LARA_SNAPSHOT,
   ANTALYA_KONYAALTI_SNAPSHOT,
+  AKYAKA_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -76,6 +79,11 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   cakirlar: ANTALYA_KONYAALTI_SNAPSHOT,
   gursu: ANTALYA_KONYAALTI_SNAPSHOT,
   'konyaalti-antalya': ANTALYA_KONYAALTI_SNAPSHOT,
+  akyaka: AKYAKA_SNAPSHOT,
+  'akyaka-ula-mugla': AKYAKA_SNAPSHOT,
+  'mugla-ula-akyaka': AKYAKA_SNAPSHOT,
+  gokova: AKYAKA_SNAPSHOT,
+  akcapinar: AKYAKA_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {
@@ -242,21 +250,6 @@ export const V3_LOCATIONS: FoodLocation[] = [
     status: 'coming_soon',
     aliases: ['Nişantaşı', 'Nisantasi', 'Şişli', 'Teşvikiye'],
     scopeNote: 'İstanbul · Şişli · Nişantaşı (V3 Doğrulama Sırasında)',
-  },
-  {
-    id: 'akyaka-ula-mugla',
-    level: 'semt',
-    city: 'Muğla',
-    district: 'Ula',
-    neighborhood: 'Akyaka',
-    name: 'Akyaka',
-    slug: 'akyaka',
-    path: ['mugla', 'ula', 'akyaka'],
-    displayName: 'Akyaka, Ula, Muğla',
-    locative: "Akyaka'da",
-    status: 'coming_soon',
-    aliases: ['Akyaka', 'Ula', 'Muğla', 'West Cafe'],
-    scopeNote: 'Muğla · Ula · Akyaka (V3 Doğrulama Sırasında)',
   },
   {
     id: 'yalikavak-bodrum-mugla',

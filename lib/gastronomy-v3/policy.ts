@@ -537,7 +537,11 @@ export function selectDynamicRegionVenues(
 ): V3VerifiedRegionSnapshot {
   const acceptedSorted = evaluatedList
     .filter((item) => item.accepted && item.score >= 65)
-    .sort((a, b) => b.score - a.score);
+    .sort(
+      (a, b) =>
+        (b.seed.pinnedFirst ? 1 : 0) - (a.seed.pinnedFirst ? 1 : 0) ||
+        b.score - a.score
+    );
 
   const usedPlaceIds = new Set<string>();
   const selectedByCategory = new Map<string, V3PublicVenue[]>();
@@ -577,6 +581,9 @@ export function selectDynamicRegionVenues(
         item.matchedNeighborhood ||
         regionDef.officialQuarter,
       categoryId: item.seed.categoryId,
+      ...(item.seed.secondaryCategoryIds?.length
+        ? { secondaryCategoryIds: item.seed.secondaryCategoryIds }
+        : {}),
       rating: item.rating as number,
       mapsUri: item.mapsUri,
       ...(item.coordinates ? { coordinates: item.coordinates } : {}),

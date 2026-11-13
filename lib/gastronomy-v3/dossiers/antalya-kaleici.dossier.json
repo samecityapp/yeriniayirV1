@@ -2,8 +2,8 @@
   "schemaVersion": "3.4",
   "regionKey": "antalya-kaleici",
   "displayName": "Kaleiçi & Merkez, Antalya",
-  "verifiedAt": "2026-11-13T20:48:55.488Z",
-  "selectedCount": 37,
+  "verifiedAt": "2026-11-13T21:18:01.108Z",
+  "selectedCount": 38,
   "rejectedControls": [
     {
       "id": "ctrl-kaleici-arma-closed",
@@ -17,6 +17,83 @@
     }
   ],
   "venues": [
+    {
+      "id": "kaleici-belforno",
+      "categoryId": "pizza",
+      "resolvedName": "Belforno Restaurant",
+      "branchName": "Barbaros Neighborhood, Hesapçı Street No: 25, 07100 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJNy44ULGRwxQRqqKDC9dm3gM",
+      "coordinates": {
+        "lat": 36.883963,
+        "lng": 30.7070636
+      },
+      "rating": 4.8,
+      "userRatingCount": 555,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://belforno.belmondosuites.com/",
+      "mapsUri": "https://maps.google.com/?cid=278773300740727466",
+      "recommendedPrimary": [
+        "Margherita Pizza",
+        "Melanzane (Patlıcanlı) Pizza",
+        "Diavola & Burrata Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Tiramisu & İmza Avlu Kokteylleri",
+          "note": "Odun fırını pizzaların ardından gelen İtalyan tiramisusu ile avlu barının kokteyl ve şarap seçkisi akşam buluşmalarını tamamlıyor.",
+          "proof": "belforno.belmondosuites.com menüsü ve Kaleiçi akşam rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Belmondo Suites taş avlusunda yarı açık odun fırını mutfağı ve romantik bahçe masaları",
+        "crowdAndNoise": "Akşam yemeği saatlerinde çiftler ve küçük arkadaş gruplarıyla dingin ama dolu tempo",
+        "disadvantage": "Kaleiçi ve ithal İtalyan malzeme çizgisi nedeniyle üst fiyat segmentindedir; akşam bahçe masaları için önceden rezervasyon önerilir.",
+        "transit": "Kaleiçi Hesapçı Sokak üzerinde, Üçkapılar (Hadrian Kapısı) ve Hıdırlık yürüyüş aksında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Belforno Restaurant Resmi Sitesi",
+          "url": "https://belforno.belmondosuites.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Odun fırını pizza, taze makarna, kokteyl ve bahçe konsepti"
+        },
+        {
+          "title": "TripAdvisor Antalya — Belforno Restaurant",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kaleiçi odun fırını pizza ve akşam yemeği sıralaması"
+        },
+        {
+          "title": "Antalya Gurme & Ziyaretçi Notları — Belforno",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Avlu atmosferi, ince Napoliten hamur ve kokteyl uyumu"
+        }
+      ],
+      "pros": [
+        "Tarihi taş avluda romantik akşam atmosferi",
+        "Odun ateşinde dengeli Napoliten pizza hamuru"
+      ],
+      "cons": [
+        "Üst segment fiyatlandırma",
+        "Kaleiçi yaya bölgesi nedeniyle araçla kapıya yanaşılamaması"
+      ],
+      "uncertainties": [
+        "Mevsimlik özel pizza ve makarna reçeteleri dönemsel değişebiliyor."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
     {
       "id": "kaleici-fin-del-mundo",
       "categoryId": "pizza",

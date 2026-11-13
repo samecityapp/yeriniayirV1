@@ -43,6 +43,8 @@ export interface V3CandidateSeed {
   placeId?: string;
   searchQuery?: string;
   categoryId: string;
+  secondaryCategoryIds?: string[];
+  pinnedFirst?: boolean;
   displayNameOverride?: string;
   expectedBrandWord?: string;
   localSignals: string[];
@@ -182,6 +184,7 @@ export interface V3PublicVenue {
   address: string;
   neighborhood: string;
   categoryId: string;
+  secondaryCategoryIds?: string[];
   rating: number;
   mapsUri: string;
   coordinates?: { lat: number; lng: number };

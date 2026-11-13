@@ -17,6 +17,7 @@ const PUBLISHED_REGION_KEYS = [
   'antalya-kaleici',
   'antalya-lara',
   'antalya-konyaalti',
+  'mugla-ula-akyaka',
 ];
 const NEARBY_POOL_KEY = 'istanbul-kadikoy-nearby-pool';
 const DEFAULT_REGION_ORDER = [...PUBLISHED_REGION_KEYS, NEARBY_POOL_KEY];

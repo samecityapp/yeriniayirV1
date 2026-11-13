@@ -1,0 +1,1978 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "mugla-ula-akyaka",
+  "displayName": "Akyaka, Muğla",
+  "verifiedAt": "2026-11-13T21:18:02.150Z",
+  "selectedCount": 27,
+  "rejectedControls": [
+    {
+      "id": "ctrl-akyaka-leos-closed",
+      "resolvedName": "Leo's Pizza Akyaka",
+      "reason": "not_operational:CLOSED_TEMPORARILY"
+    },
+    {
+      "id": "ctrl-akyaka-lightroom-closed",
+      "resolvedName": "Lightroom Coffee & Kitchen Akyaka",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-akyaka-melekabla-closed",
+      "resolvedName": "Melek Abla Ev Yemekleri ( Akyaka Ev Yemekleri Restoran Lokanta Paket Servis Kahvaltı çorbacı )",
+      "reason": "not_operational:CLOSED_TEMPORARILY"
+    },
+    {
+      "id": "ctrl-akyaka-starbucks-chain",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-akyaka-dominos-chain",
+      "resolvedName": "Muğla Akyaka Domino's Pizza",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-akyaka-ayseana-low",
+      "resolvedName": "Ayşe Ana'nın Yeri",
+      "reason": "below_quality_threshold:★3(893)"
+    },
+    {
+      "id": "ctrl-akyaka-mentese-outside",
+      "resolvedName": "Sultan Abla'nın yeri",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Akyaka/Alparslan/Akçapınar/Gökova, adres: Kıran, 48100 Menteşe/Muğla, Türkiye)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "akyaka-pizza-fellas",
+      "categoryId": "pizza",
+      "resolvedName": "Pizza Fellas Akyaka",
+      "branchName": "Akyaka, Liman Sk. no:2, 48650 Ula/Muğla, Türkiye",
+      "placeId": "ChIJyzPLnsGfvxQRJLFzlOmQaOQ",
+      "coordinates": {
+        "lat": 37.051451199999995,
+        "lng": 28.324858499999998
+      },
+      "rating": 4.5,
+      "userRatingCount": 990,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16458564171117867300",
+      "recommendedPrimary": [
+        "Patlıcanlı Gurme Pizza",
+        "Kavurmalı Pizza",
+        "Margherita Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Karadutlu Limonata & Cheeseburger",
+          "note": "Pizzaların yanında özellikle yaz akşamlarında tercih edilen ferah karadutlu limonata ve ızgara cheeseburger öne çıkıyor.",
+          "proof": "Akyaka Liman Sokak menü notları ve ziyaretçi geri bildirimleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Liman Sokak üzerinde dış mekan sokak masaları ve hızlı al-götür tezgahı",
+        "crowdAndNoise": "Yaz akşamları ve plaj dönüşü saatlerinde yüksek sirkülasyon",
+        "disadvantage": "Liman Sokak aksında yaz akşamları bar taburesi ve dış masalar hızlı doluyor; kalabalık saatlerde servis süresi uzayabiliyor.",
+        "transit": "Akyaka sahil ve Azmakboyu yürüyüş hattının hemen arkasındaki Liman Sokak üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoran Rehberleri — Pizza Fellas Akyaka",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Akyaka merkezde ince hamur ve dilim pizza öne çıkarımı"
+        },
+        {
+          "title": "Yerel Ziyaretçi Notları — Pizza Fellas",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Patlıcanlı pizza, karadutlu limonata ve gece atıştırmalığı notları"
+        }
+      ],
+      "pros": [
+        "Merkezi yürüme hattında hızlı dilim ve bütün pizza servisi",
+        "Karadutlu limonata eşliği"
+      ],
+      "cons": [
+        "Yoğun yaz akşamlarında dış masa bekleme süresi"
+      ],
+      "uncertainties": [
+        "Kış sezonunda gün ve saat bazlı çalışma düzeni daralabiliyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-borfis-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Börfi's Burger",
+      "branchName": "Akyaka, Karanfil Sk. No:8/A, 48640 Ula/Muğla, Türkiye",
+      "placeId": "ChIJWeA79Nx1vxQRw1vBz6U1bTs",
+      "coordinates": {
+        "lat": 37.051802099999996,
+        "lng": 28.326629399999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 256,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "https://www.borfis.com/",
+      "mapsUri": "https://maps.google.com/?cid=4282137806970641347",
+      "recommendedPrimary": [
+        "Mütebbel Burger",
+        "Akyaka Burger",
+        "L.A. Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kapiçyo Peynirli Patates & Kızarmış Hellim Tabağı",
+          "note": "Burgerlerin yanında eritilmiş kapiçyo peyniriyle gelen patates kızartması ve çıtır hellim dilimleri sık tercih ediliyor.",
+          "proof": "borfis.com resmi menüsü ve yerel gastronomi notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Karanfil Sokak yaya aksında sokak önü masaları ve kompakt iç mekan",
+        "crowdAndNoise": "Akşam yemeği saatlerinde çiftler ve küçük arkadaş gruplarıyla yoğun",
+        "disadvantage": "Kompakt sokak düzeninde akşam saatlerinde sipariş hazırlık süresi uzayabiliyor; otopark imkanı sokak dışında kalıyor.",
+        "transit": "Akyaka merkez Karanfil Sokak üzerinde yürüyüş mesafesinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Börfi's Burger Resmi Sitesi",
+          "url": "https://www.borfis.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Mütebbel Burger, Akyaka Burger ve Gökova susamlı ekmek reçetesi"
+        },
+        {
+          "title": "Muğla Gastronomi Seçkisi — Akyaka",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yöresel malzeme uyumlu gurme burger önerisi"
+        },
+        {
+          "title": "Ekşi Sözlük & Harita Notları — Börfi's Burger",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kapiçyo peyniri ve tahinli sos dengesi beğenisi"
+        }
+      ],
+      "pros": [
+        "Yöresel Gökova dokunuşlu özgün burger reçeteleri",
+        "Dengeli sos ve et pişirimi"
+      ],
+      "cons": [
+        "Yoğun akşam saatlerinde masa ve sipariş bekleme"
+      ],
+      "uncertainties": [
+        "Sezona göre özel sos ve yan ürün seçenekleri yenilenebiliyor."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-sems-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Sems Burger",
+      "branchName": "Akyaka, Nergiz Sk. 3/1, 48650 Ula/Muğla, Türkiye",
+      "placeId": "ChIJ5SN2GoKfvxQR8jePufAsbBQ",
+      "coordinates": {
+        "lat": 37.0517557,
+        "lng": 28.325303599999998
+      },
+      "rating": 4.3,
+      "userRatingCount": 594,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1471600590660253682",
+      "recommendedPrimary": [
+        "Sems Cheeseburger",
+        "Karamelize Soğanlı Burger",
+        "Double Smash Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Baharatlı Çıtır Patates & Atıştırmalık Sepeti",
+          "note": "Burger siparişlerine eşlik eden baharatlı patates kızartması ve ev yapımı dip soslar akşam menüsünü tamamlıyor.",
+          "proof": "Akyaka yerel rehberleri ve harita ziyaretçi notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük iç salon ve Nergiz Sokak kenarında sınırlı sayıda dış masa",
+        "crowdAndNoise": "Sörf sonrası ve akşam saatlerinde yerel müdavim yoğunluğu",
+        "disadvantage": "Küçük dükkan yapısında yoğun yaz saatlerinde masa bulmak zorlaşabiliyor.",
+        "transit": "Nergiz Sokak üzerinde, Atatürk Caddesi ve merkez meydana yakın."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoran Rehberleri — Sems Burger Akyaka",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Akyaka merkezde günlük ev yapımı burger adresi"
+        },
+        {
+          "title": "Akyaka Ziyaretçi Notları — Sems Burger",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Et kalitesi ve karamelize soğanlı burger tercihleri"
+        }
+      ],
+      "pros": [
+        "Pratik ve doğrudan burger menüsü",
+        "Yüksek et lezzeti dengesi"
+      ],
+      "cons": [
+        "Kısıtlı oturma alanı"
+      ],
+      "uncertainties": [
+        "Akşam geç saatlerde günlük köfte stoğuna göre kapanış saati öne çekilebiliyor."
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-huysuz",
+      "categoryId": "kahve",
+      "resolvedName": "Huysuz",
+      "branchName": "Akyaka, Karanfil Sk. No:30/1, 48650 Ula/Muğla, Türkiye",
+      "placeId": "ChIJw_Fs1sl3vxQRJPFwe6I1MA4",
+      "coordinates": {
+        "lat": 37.052093299999996,
+        "lng": 28.3277973
+      },
+      "rating": 4.8,
+      "userRatingCount": 264,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1022376087385076004",
+      "recommendedPrimary": [
+        "Meyveli Tart & Günlük Pasta",
+        "Iced Latte",
+        "Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Kurabiye & Soğuk Bitki Çayları",
+          "note": "Günlük vitrinden seçilen tereyağlı kurabiyeler ve ferah bitki çayı demlemeleri akşamüstü molaları için tercih ediliyor.",
+          "proof": "myakyaka.com işletme tanıtımı ve yerel harita notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Karanfil Sokak kenarında samimi sokak masaları ve al-götür vitrin servisi",
+        "crowdAndNoise": "Öğleden sonra ve akşam tatlı saatlerinde keyifli sokak temposu",
+        "disadvantage": "İç alanı küçük olduğundan akşam tatlı saatlerinde sınırlı sokak masalarında yer beklemek gerekebiliyor.",
+        "transit": "Karanfil Sokak üzerinde, Akyaka merkez yürüme bölgesinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "MyAkyaka Rehberi — Huysuz",
+          "url": "https://www.myakyaka.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Karanfil Sokak ev yapımı tatlı ve kahve noktası tanıtımı"
+        },
+        {
+          "title": "Yerel Ziyaretçi Notları — Huysuz Akyaka",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Günlük pasta tazeliği ve sakin kahve molası beğenisi"
+        }
+      ],
+      "pros": [
+        "Günlük değişen taze ev yapımı tatlı vitrini",
+        "Sakin sokak konumu"
+      ],
+      "cons": [
+        "Sınırlı masa kapasitesi"
+      ],
+      "uncertainties": [
+        "Günlük tatlı çeşitleri sabah üretimine göre değişiyor ve akşam erken tükenebiliyor."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-idyma-pastane",
+      "categoryId": "kahve",
+      "resolvedName": "Idyma Unlu Mamülleri & Kafeterya",
+      "branchName": "Akyaka, Atatürk Cd. 14/1, 48650 Ula/Muğla, Türkiye",
+      "placeId": "ChIJ29rG74-fvxQRQ2-k1tmnBmE",
+      "coordinates": {
+        "lat": 37.0585793,
+        "lng": 28.327464799999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 165,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.idymaunlumamulleri.com/",
+      "mapsUri": "https://maps.google.com/?cid=6991460025590116163",
+      "recommendedPrimary": [
+        "Muğla Kurabiyesi",
+        "Çikolatalı Ekler",
+        "İzmir Bombası & Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Milas Böreği & Boyoz Kahvaltı Tabağı",
+          "note": "Sabah saatlerinde fırından çıkan çıtır Milas böreği ve boyoz çeşitleri tatlıların yanında güçlü bir sabah alternatifi sunuyor.",
+          "proof": "idymaunlumamulleri.com resmi kataloğu ve yerel rehberler"
+        }
+      ],
+      "suitability": {
+        "seating": "Ana cadde üzerinde gölgeli açık hava masaları ve kapalı pastane bölümü",
+        "crowdAndNoise": "Sabah erken fırın çıkışında ve akşamüstü mahalle sakinleriyle hareketli",
+        "disadvantage": "Ana cadde üzerindeki konumu nedeniyle sabah ve akşamüstü fırın çıkışında tezgah önünde yoğunluk oluşabiliyor.",
+        "transit": "Atatürk Caddesi üzerinde Akyaka giriş-merkez hattında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "İdyma Unlu Mamülleri Resmi Sitesi",
+          "url": "https://www.idymaunlumamulleri.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Muğla kurabiyesi, ekler, börek ve pastane ürün yelpazesi"
+        },
+        {
+          "title": "Restoran Rehberleri — İdyma Kafeterya",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Akyaka kahvaltı ve taze pastane ürünleri seçkisi"
+        },
+        {
+          "title": "Yerel Ziyaretçi Notları — İdyma",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Günlük kurabiye, poğaça ve tatlı tazeliği vurgusu"
+        }
+      ],
+      "pros": [
+        "Yöresel Muğla kurabiyesi ve taze günlük pastane çeşitleri",
+        "Ulaşılabilir merkez cadde konumu"
+      ],
+      "cons": [
+        "Cadde trafiğine yakın dış masalar",
+        "Yoğun saatlerde tezgah sırası"
+      ],
+      "uncertainties": [
+        "Bazı yöresel hamur işleri yalnızca sabah saatlerinde çıkıyor."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-cafe-biyer",
+      "categoryId": "kahve",
+      "resolvedName": "Cafe Bi'yer",
+      "branchName": "Akyaka, Karanfil Sk. No:18 D:1, 48650 Ula/Muğla, Türkiye",
+      "placeId": "ChIJIbnJZcGfvxQRx4L22rQDFg0",
+      "coordinates": {
+        "lat": 37.0518928,
+        "lng": 28.3270438
+      },
+      "rating": 4.6,
+      "userRatingCount": 139,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=942945247283282631",
+      "recommendedPrimary": [
+        "Türk Kahvesi",
+        "Iced Americano",
+        "Cappuccino & Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Soslu Begonvil Makarnası & Kavurmalı Tost",
+          "note": "Kahve molası dışında hafif öğle veya akşam atıştırmalığı olarak mekana özgü begonvil makarnası ve kavurmalı tost sık sipariş ediliyor.",
+          "proof": "Cafe Bi'yer Akyaka menüsü ve ziyaretçi notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Begonvil sarkan huzurlu bahçe köşesi ve küçük iç mekan masaları",
+        "crowdAndNoise": "Gün boyu sakin kahve sohbeti ve kitap molaları",
+        "disadvantage": "Karanfil Sokak yaya yoğunluğunda akşamüstü saatlerinde bahçe masaları çabuk doluyor.",
+        "transit": "Karanfil Sokak no:18 adresinde, Akyaka merkez yürüyüş aksında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoran Rehberleri — Cafe Bi'yer Akyaka",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Karanfil Sokak bahçe kafe ve kahve menüsü"
+        },
+        {
+          "title": "Yerel Ziyaretçi Notları — Cafe Bi'yer",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sıcak misafirperverlik, begonvil bahçe ve makarna beğenisi"
+        }
+      ],
+      "pros": [
+        "Samimi ve sakin bahçe dokusu",
+        "Kahve yanında ev yapımı atıştırmalık seçeneği"
+      ],
+      "cons": [
+        "Kısıtlı bahçe masa kapasitesi"
+      ],
+      "uncertainties": [
+        "Özel ev yemekleri ve günlük makarna sosları dönemsel güncellenebiliyor."
+      ],
+      "selectionScore": 99,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-aloha-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Aloha Coffee & Bar",
+      "branchName": "Akyaka, Karanfil Sk. no : 11, 48650 Ula/Muğla, Türkiye",
+      "placeId": "ChIJD9PYvd2fvxQRznuK6AcGTNM",
+      "coordinates": {
+        "lat": 37.0519861,
+        "lng": 28.3265803
+      },
+      "rating": 4.6,
+      "userRatingCount": 83,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.qruno.net/alohaakyaka",
+      "mapsUri": "https://maps.google.com/?cid=15225551071268731854",
+      "recommendedPrimary": [
+        "Flat White",
+        "Iced Matcha Latte",
+        "V60 Demleme"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Avokado Brioche & Golden Brioche Tabağı",
+          "note": "Kahve eşlikçisi olarak taze brioche ekmeği üzerine hazırlanan avokadolu ve yumurtalı tabaklar sabah ve öğle saatlerinde tercih ediliyor.",
+          "proof": "Aloha Coffee & Bar Akyaka menü ve görsel kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Karanfil Sokak yaya aksında modern ahşap bar tezgahı ve dış mekan masaları",
+        "crowdAndNoise": "Sabah sörf öncesi ve öğleden sonra genç gezgin yoğunluğu",
+        "disadvantage": "Kompakt masa düzeni kalabalık gruplarla uzun oturum için dar kalabiliyor.",
+        "transit": "Karanfil Sokak no:11 üzerinde, plaja birkaç dakikalık yürüyüşte."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Akyaka Kahve Rehberi — Aloha Coffee & Bar",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Nitelikli kahve ve modern kahvaltı eşlikleri"
+        },
+        {
+          "title": "Gezgin & Sörfçü Notları — Aloha Akyaka",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Matcha latte, espresso dengesi ve brioche beğenisi"
+        }
+      ],
+      "pros": [
+        "Tutarlı espresso ve soğuk kahve demlemeleri",
+        "Sörf sonrası hafif tabak uyumu"
+      ],
+      "cons": [
+        "Büyük gruplar için dar oturma alanı"
+      ],
+      "uncertainties": [
+        "Yaz sezonu dışında menü ve çalışma saatleri kısalabiliyor."
+      ],
+      "selectionScore": 98,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-mosso",
+      "categoryId": "date",
+      "resolvedName": "Mosso Akyaka",
+      "branchName": "Akyaka, Sanat Sk. No: 6/1, 48650 Ula/Muğla, Türkiye",
+      "placeId": "ChIJFT7aSKmfvxQRLOMvVXu3e3s",
+      "coordinates": {
+        "lat": 37.051490799999996,
+        "lng": 28.3239359
+      },
+      "rating": 4.5,
+      "userRatingCount": 1573,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.mossoakyaka.com/",
+      "mapsUri": "https://maps.google.com/?cid=8897907229138608940",
+      "recommendedPrimary": [
+        "Deniz Mahsullü Linguine",
+        "Izgara Bonfile Dilimleri",
+        "İmza Gün Batımı Kokteylleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sabah Sahil Kahvaltı Tabağı & Paylaşımlık Tapas",
+          "note": "Akşam bistro ve kokteyl servisi dışında gündüz saatlerinde sahil esintili kahvaltı ve paylaşımlık başlangıçlar sunuluyor.",
+          "proof": "mossoakyaka.com menüsü ve Akyaka seyahat rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sahil yürüyüş aksına açılan şık bahçe terası ve geniş kapalı bistro salonu",
+        "crowdAndNoise": "Gün batımından itibaren çiftler ve şık akşam gruplarıyla canlı tempo",
+        "disadvantage": "Yaz akşamlarında sahil önü masaları için rezervasyonsuz yer bulmak güçleşebiliyor ve fiyat çizgisi belde ortalamasının üzerindedir.",
+        "transit": "Sanat Sokak No:6/1 adresinde, Akyaka halk plajının hemen bitişiğinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Mosso Akyaka Resmi Sitesi",
+          "url": "http://www.mossoakyaka.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Sahil bistro menüsü, akşam kokteylleri ve mekan konsepti"
+        },
+        {
+          "title": "Oggusto & Seyahat Rehberleri — Akyaka",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Akyaka plaj hattı akşam yemeği ve kokteyl önerisi"
+        },
+        {
+          "title": "TripAdvisor Akyaka — Mosso",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ambiyans, kokteyl ve akşam mutfağı deneyimleri"
+        }
+      ],
+      "pros": [
+        "Plaja komşu estetik bahçe ambiyansı",
+        "Dengeli kokteyl barı ve akşam bistro mutfağı"
+      ],
+      "cons": [
+        "Yüksek fiyat seviyesi",
+        "Yoğun yaz akşamlarında rezervasyon gerekliliği"
+      ],
+      "uncertainties": [
+        "Yoğun hafta sonu akşamlarında müzik ve ortam hareketliliği artabiliyor."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-bylimos",
+      "categoryId": "date",
+      "resolvedName": "byLimos",
+      "branchName": "Akyaka, Karanfil Sk., 48650 Ula/Muğla, Türkiye",
+      "placeId": "ChIJ98xBvwmfvxQRIt6cSa0TODE",
+      "coordinates": {
+        "lat": 37.051960699999995,
+        "lng": 28.3274163
+      },
+      "rating": 4.6,
+      "userRatingCount": 294,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3546606341539552802",
+      "recommendedPrimary": [
+        "Girit Kabağı Mezesi",
+        "Pastırmalı Sıcak Humus",
+        "Deniz Börülcesi & Atom"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Cevizli Peynirli Roka Salatası & Günlük Zeytinyağlılar",
+          "note": "Başlangıç mezelerinin yanında mevsim otlarıyla hazırlanan salatalar ve günlük zeytinyağlılar akşam sofrasını dengeliyor.",
+          "proof": "byLimos Akyaka menü ve meyhane seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaç altı sakin bahçe masaları ve özenli butik meyhane düzeni",
+        "crowdAndNoise": "Çiftler ve sakin sohbet odaklı akşam sofralarıyla dingin tempo",
+        "disadvantage": "Masa sayısı sınırlı olduğundan hafta sonu akşamlarında önceden yer ayırtmak gerekiyor.",
+        "transit": "Karanfil Sokak üzerinde, Akyaka merkez yürüme bölgesinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Muğla Gastronomi Rehberi — byLimos Akyaka",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Akyaka butik meyhane ve meze seçkisi"
+        },
+        {
+          "title": "Akyaka Ziyaretçi Notları — byLimos",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Girit kabağı, sıcak humus ve bahçe sakinliği beğenisi"
+        }
+      ],
+      "pros": [
+        "Gürültüden uzak samimi bahçe ortamı",
+        "Taze ve özenli günlük meze seçkisi"
+      ],
+      "cons": [
+        "Küçük kapasite nedeniyle yer ayırtma ihtiyacı"
+      ],
+      "uncertainties": [
+        "Meze dolabındaki günlük çeşitler sezon ve pazar tedarikine göre değişiyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-feron",
+      "categoryId": "date",
+      "resolvedName": "Feron Akyaka",
+      "branchName": "Akyaka, Sanat Sk. No:1 D:1, 48600 Ula/Muğla, Türkiye",
+      "placeId": "ChIJu0wKKmefvxQRlCTvHz_vbuE",
+      "coordinates": {
+        "lat": 37.0513863,
+        "lng": 28.3240795
+      },
+      "rating": 4.5,
+      "userRatingCount": 1316,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://feronakyaka.com/",
+      "mapsUri": "https://maps.google.com/?cid=16244183960369702036",
+      "recommendedPrimary": [
+        "Izgara Et & Bistro Tabakları",
+        "Akdeniz Salataları",
+        "İmza Kokteyl Seçkisi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Çikolatalı Sufle & Tatlı Eşlikçileri",
+          "note": "Akşam yemeği ve bar servisinin ardından sufle ile mevsim tatlıları sıkça sipariş ediliyor.",
+          "proof": "feronakyaka.com menü ve etkinlik bilgileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sanat Sokak sahil aksına açılan bahçe masaları ve sahne-bar düzeni",
+        "crowdAndNoise": "Akşam yemeği sonrası müzik ve sosyal buluşma arayanlarla canlı ortam",
+        "disadvantage": "Canlı müzik ve DJ akşamlarında ses seviyesi sakin sohbet arayanlar için yüksek kalabiliyor; kış sezonunda çalışma takvimi değişebiliyor.",
+        "transit": "Sanat Sokak No:1 konumunda, sahil yolunun giriş kesiminde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Feron Akyaka Resmi Sitesi",
+          "url": "http://feronakyaka.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Sanat Sokak bistro mutfağı, kokteyl ve akşam etkinlikleri"
+        },
+        {
+          "title": "Bubilet & Mekan Rehberleri — Feron Akyaka",
+          "url": "https://www.bubilet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Akyaka Sanat Sokak akşam sahne ve bistro adresi"
+        },
+        {
+          "title": "Restoran Rehberleri — Feron Akyaka",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bistro tabakları, kokteyller ve sezonluk çalışma notları"
+        }
+      ],
+      "pros": [
+        "Yemek ve gece kokteyl buluşmasını tek noktada birleştirmesi",
+        "Merkezi sahil girişi konumu"
+      ],
+      "cons": [
+        "Etkinlik akşamlarında yüksek ses seviyesi",
+        "Sezonsal çalışma takvimi değişimleri"
+      ],
+      "uncertainties": [
+        "Sezon dışı dönemlerde haftalık açılış günleri etkinlik programına göre ayarlanıyor."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-rahat-meyhane",
+      "categoryId": "date",
+      "resolvedName": "Rahat Meyhane",
+      "branchName": "Akyaka, Karanfil Sk. 25/2, 48650 Ula/Muğla, Türkiye",
+      "placeId": "ChIJgSc_QXSfvxQRiw15H5e0DOM",
+      "coordinates": {
+        "lat": 37.052086599999996,
+        "lng": 28.3277923
+      },
+      "rating": 4.3,
+      "userRatingCount": 193,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.rahatmeyhane.com/",
+      "mapsUri": "https://maps.google.com/?cid=16360650107491257739",
+      "recommendedPrimary": [
+        "Köz Patlıcanlı Mütebbel",
+        "Zeytinyağlı Çanak Enginar",
+        "Çökertme Kebabı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Beğendi Yatağında Kokoreç & Tereyağlı İstiridye Mantarı",
+          "note": "Klasik meze seçkisinin yanında beğendi yatağında sıcak kokoreç ve tereyağlı istiridye mantarı akşamın öne çıkan ara sıcaklarıdır.",
+          "proof": "rahatmeyhane.com resmi menüsü ve yerel meze rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Karanfil Sokak üzerinde ağaç altı bahçe masaları ve samimi meyhane düzeni",
+        "crowdAndNoise": "Akşam sofralarında müdavim gruplar ve çiftlerle sıcak tempo",
+        "disadvantage": "Akşam yoğunluğunda masa yerleşimi birbirine yakın hissedilebiliyor; hafta sonları için önceden masa ayırtmak gerekiyor.",
+        "transit": "Karanfil Sokak 25/2 adresinde, merkez yürüyüş aksında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Rahat Meyhane Resmi Sitesi",
+          "url": "https://www.rahatmeyhane.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Ege ot mezeleri, çanak enginar, çökertme ve ara sıcak menüsü"
+        },
+        {
+          "title": "Muğla Lezzet Durakları — Rahat Meyhane",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Akyaka merkez meyhane ve sıcak ara sıcak seçkisi"
+        },
+        {
+          "title": "Ziyaretçi Notları — Rahat Meyhane",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Meze tazeliği ve beğendili kokoreç beğenisi"
+        }
+      ],
+      "pros": [
+        "Yöresel ve özenli meze-ara sıcak dengesi",
+        "Samimi sokak meyhanesi dokusu"
+      ],
+      "cons": [
+        "Yoğun akşam saatlerinde sıkışık masa aralığı"
+      ],
+      "uncertainties": [
+        "Mevsimsel ot ve enginar mezeleri tedarike göre günlük belirleniyor."
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-no22-riders-inn",
+      "categoryId": "date",
+      "resolvedName": "No22 Riders'Inn",
+      "branchName": "Akyaka, Sefa Sk. No:22, 48650 Ula/Muğla, Türkiye",
+      "placeId": "ChIJ-ZZMUMGfvxQR7X92C2NQNZY",
+      "coordinates": {
+        "lat": 37.051534499999995,
+        "lng": 28.3278276
+      },
+      "rating": 4.2,
+      "userRatingCount": 714,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.no22ridersinn.com/",
+      "mapsUri": "https://maps.google.com/?cid=10823645665779154925",
+      "recommendedPrimary": [
+        "İmza Bahçe Kokteylleri",
+        "Özel Soslu Burger",
+        "Kinoa & Avokado Salatası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sörf Sonrası Kase (Bowl) & Ev Yapımı Tatlılar",
+          "note": "Gün içinde sörf dönüşü hafif besleyici kaseler ve akşamüstü bar yanında tatlı alternatifleri öne çıkıyor.",
+          "proof": "no22ridersinn.com ve Akyaka seyahat rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaçlarla çevrili geniş açık hava bahçe oturumu, bar çevresi ve lounge köşeleri",
+        "crowdAndNoise": "Sörfçüler, gezginler ve akşam kokteyl kalabalığıyla enerjik atmosfer",
+        "disadvantage": "Etkinlik akşamlarında bar çevresi oldukça kalabalık ve hareketli olduğundan sakin baş başa akşam yemeği arayanlara hitap etmeyebilir.",
+        "transit": "Sefa Sokak No:22 adresinde, Akyaka merkezden kısa yürüyüşle ulaşılıyor."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "No22 Riders'Inn Resmi Sitesi",
+          "url": "http://www.no22ridersinn.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Bahçe restoran-bar konsepti, kokteyller ve bistro menüsü"
+        },
+        {
+          "title": "Setur & Wanderlog — Akyaka Seçkisi",
+          "url": "https://www.setur.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Akyaka sosyal buluşma noktası ve bahçe bar önerisi"
+        },
+        {
+          "title": "Gezgin & Sörfçü Notları — No22 Riders'Inn",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bahçe atmosferi, DJ akşamları ve burger-salata beğenisi"
+        }
+      ],
+      "pros": [
+        "Akyaka ruhunu yansıtan ağaçlıklı bahçe ambiyansı",
+        "Güçlü kokteyl ve akşam sosyalleşme ortamı"
+      ],
+      "cons": [
+        "Yoğun etkinlik akşamlarında kalabalık ve hareketli düzen"
+      ],
+      "uncertainties": [
+        "Sezona göre mutfak saatleri ve DJ programı haftalık değişebiliyor."
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-gokova-borek",
+      "categoryId": "kahvalti",
+      "resolvedName": "Gökova Börek & Kahvaltı Evi",
+      "branchName": "Gökova, 48660 Ula/Muğla, Türkiye",
+      "placeId": "ChIJ7WqULVWfvxQR7tz3pxYtAA8",
+      "coordinates": {
+        "lat": 37.047855,
+        "lng": 28.367019
+      },
+      "rating": 4.9,
+      "userRatingCount": 535,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1080913485899488494",
+      "recommendedPrimary": [
+        "El Açması Kıymalı & Peynirli Börek",
+        "Kavurmalı Sahanda Yumurta",
+        "Serpme Köy Kahvaltısı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Sıkma Portakal-Havuç Suyu & Sıcak Menemen",
+          "note": "El açması böreklerin yanında taze sıkılmış narenciye suları ve tereyağlı menemen sabah sofralarının temel eşlikçisidir.",
+          "proof": "Gökova Börek & Kahvaltı Evi menü ve ziyaretçi notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Gökova yol hattında ferah bahçe çardağı ve kapalı kahvaltı salonu",
+        "crowdAndNoise": "Sabah erken yola çıkanlar ve hafta sonu aile kahvaltılarıyla hareketli",
+        "disadvantage": "Gökova mahallesi tarafında yer aldığından Akyaka merkezden kısa araç veya bisiklet sürüşü gerektirir; hafta sonu sabahları yoğunluk yaşanır.",
+        "transit": "Gökova Kavşağı ve Akyaka-Marmaris giriş hattı üzerinde, araçla kolay ulaşımda."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Muğla Kahvaltı Rehberleri — Gökova Börek",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Gökova hattı el açması börek ve köy kahvaltısı seçkisi"
+        },
+        {
+          "title": "Yerel Ziyaretçi Notları — Gökova Börek",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Börek hamuru inceliği, kavurmalı yumurta ve temiz mutfak beğenisi"
+        }
+      ],
+      "pros": [
+        "Günlük taze açılan çıtır börek ve köy kahvaltısı",
+        "Hızlı ve güler yüzlü sabah servisi"
+      ],
+      "cons": [
+        "Akyaka merkez dışında kısa araç ulaşımı gerektirmesi"
+      ],
+      "uncertainties": [
+        "Sabah erken çıkan bazı börek tepsileri öğlene kalmadan tükenebiliyor."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-west-cafe",
+      "categoryId": "kahvalti",
+      "resolvedName": "West Cafe Bistro",
+      "branchName": "Akyaka, İnişdibi Cd. No:56, 48650 Ula/Muğla, Türkiye",
+      "placeId": "ChIJjRtlHtKfvxQRIewK90azZYY",
+      "coordinates": {
+        "lat": 37.054746699999995,
+        "lng": 28.3404817
+      },
+      "rating": 4.4,
+      "userRatingCount": 2290,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.westcafegocek.com/",
+      "mapsUri": "https://maps.google.com/?cid=9684343691103890465",
+      "recommendedPrimary": [
+        "Azmak Kıyısı Serpme Kahvaltı",
+        "Sahanda Sucuklu Yumurta",
+        "Pişi & Yöresel Peynir Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Burgerler, Makarnalar & Kahve Yanı Kekler",
+          "note": "Sabah kahvaltısı dışında gün boyunca su kenarında el yapımı burger, makarna ve kahve-kek molası için de tercih ediliyor.",
+          "proof": "Akyaka Azmak rehberleri ve West Cafe menü notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kadın Azmağı üstü ahşap iskele masaları ve gölgeli bahçe bölümü",
+        "crowdAndNoise": "Sabah kahvaltı saatlerinde yüksek talep ve fotoğraf çeken ziyaretçilerle yoğun",
+        "disadvantage": "Azmak kenarındaki ön sıra iskele masaları hafta sonu sabahlarında hızla dolduğu için kısa bekleme yaşanabiliyor.",
+        "transit": "İnişdibi Caddesi No:56 üzerinde, Azmak yürüyüş rotası boyunca."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Hürriyet Seyahat & Oggusto — Akyaka Kahvaltı",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kadın Azmağı kıyısında sabah kahvaltısı ve doğa konumu"
+        },
+        {
+          "title": "TripAdvisor Akyaka — West Cafe Bistro",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Su sıfır iskele ortamı, serpme kahvaltı ve bistro seçenekleri"
+        }
+      ],
+      "pros": [
+        "Berrak Azmak suyu üstünde doğayla iç içe sabah ortamı",
+        "Kahvaltı ve gün boyu bistro çeşitliliği"
+      ],
+      "cons": [
+        "Hafta sonu ön sıra iskele masalarında bekleme ihtimali"
+      ],
+      "uncertainties": [
+        "Su üstü ön masalar yoğun günlerde doluluk nedeniyle sırayla verilebiliyor."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-bi-yudum",
+      "categoryId": "kahvalti",
+      "resolvedName": "Bi Yudum Akyaka",
+      "branchName": "Akyaka, İnişdibi Cd. No:131, 48640 Ula/Muğla, Türkiye",
+      "placeId": "ChIJ5-P5GsufvxQRurZNYKT-UGg",
+      "coordinates": {
+        "lat": 37.0535545,
+        "lng": 28.3507719
+      },
+      "rating": 4.9,
+      "userRatingCount": 106,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": null,
+        "reservable": true
+      },
+      "websiteUri": "https://biyudumakyaka.com/",
+      "mapsUri": "https://maps.google.com/?cid=7516787760025155258",
+      "recommendedPrimary": [
+        "Doğal Bahçe Kahvaltısı",
+        "Ekşi Mayalı Ekmek Üstü Kahvaltılıklar",
+        "Taze Otlu Omlet"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zeytinyağlı Akşamüstü Mezeleri & Ev Yapımı Tatlılar",
+          "note": "Kahvaltı sonrası öğleden akşama uzanan saatlerde taze zeytinyağlı mezeler ve ev yapımı tatlı çeşitleri de sunuluyor.",
+          "proof": "biyudumakyaka.com resmi sitesi ve yerel rehberler"
+        }
+      ],
+      "suitability": {
+        "seating": "İnişdibi doğa hattında gölgeli huzurlu bahçe masaları ve restoran oturumu",
+        "crowdAndNoise": "Sakin kahvaltı ve doğayla baş başa sabah temposu",
+        "disadvantage": "Akyaka merkez çarşıdan İnişdibi yönüne ilerlediği için araçsız ziyaretçilere yaklaşık on beş dakikalık yürüyüş mesafesindedir.",
+        "transit": "İnişdibi Caddesi No:131 üzerinde, Azmak hattının doğu devamında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Bi Yudum Akyaka Resmi Sitesi",
+          "url": "https://biyudumakyaka.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Kahvaltı, meze ve gün boyu mutfak menüsü"
+        },
+        {
+          "title": "Restoran Rehberleri — Bi Yudum Akyaka",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İnişdibi hattında kahvaltı ve bahçe restoranı öne çıkarımı"
+        },
+        {
+          "title": "Yerel Ziyaretçi Notları — Bi Yudum Akyaka",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sakin bahçe ortamı ve kahvaltı ürün tazeliği"
+        }
+      ],
+      "pros": [
+        "Azmak kalabalığından uzak sakin bahçe düzeni",
+        "Taze ve özenli kahvaltı ürünleri"
+      ],
+      "cons": [
+        "Merkez yaya çarşısına kıyasla biraz daha dış aksta kalması"
+      ],
+      "uncertainties": [
+        "Sezon içi ve sezon dışı servis saatleri değişiklik gösterebiliyor."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-idyma-akcapinar",
+      "categoryId": "kahvalti",
+      "resolvedName": "Idyma Restaurant Akçapınar",
+      "branchName": "idyma restaurant, Akçapınar, Kumeevleri 201/3, 48640 Ula/Muğla, Türkiye",
+      "placeId": "ChIJ3akLr9yfvxQRbjJPjGHUMms",
+      "coordinates": {
+        "lat": 37.0259819,
+        "lng": 28.360224799999997
+      },
+      "rating": 4.5,
+      "userRatingCount": 472,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7724469826324738670",
+      "recommendedPrimary": [
+        "Akçapınar Köy Kahvaltısı",
+        "Sahanda Köy Yumurtası",
+        "Sıcak Pişi & Çökelek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Nehir Kıyısı Fettuccine Makarna & Sağlıklı Kaseler",
+          "note": "Sabah kahvaltısının ardından kano dönüşü saatlerinde makarna çeşitleri, sandviçler ve taze kaseler mutfaktan çıkmaya devam ediyor.",
+          "proof": "Akçapınar menü kayıtları ve kano rota rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Akçapınar Azmağı kenarında çim ve ağaç altı geniş açık bahçe masaları",
+        "crowdAndNoise": "Sabah kano turları öncesi ve hafta sonu doğa kahvaltıcılarıyla canlı ama ferah",
+        "disadvantage": "Akyaka merkezden Akçapınar yönüne kısa araç veya bisiklet ulaşımı gerektirir; yaz öğle saatlerinde kano gruplarıyla hareketlenir.",
+        "transit": "Akçapınar Kumeevleri 201/3 adresinde, Aşıklar Yolu ve Akçapınar Azmağı yanında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemeksepeti & Menü Katalog — İdyma Akçapınar",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kahvaltı, makarna, tost ve bowl menü detayları"
+        },
+        {
+          "title": "Akçapınar Ziyaretçi Notları — Idyma Restaurant",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Akçapınar Azmağı kenarı sakin bahçe ve köy kahvaltısı beğenisi"
+        }
+      ],
+      "pros": [
+        "Kalabalık Kadın Azmağı yerine sakin Akçapınar deresi kıyısında kahvaltı",
+        "Geniş yeşil alan"
+      ],
+      "cons": [
+        "Akyaka merkezden araç veya bisiklet gerektirmesi"
+      ],
+      "uncertainties": [
+        "Kano gruplarının varış saatlerinde mutfak temposu geçici olarak yoğunlaşabiliyor."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-nehir-restaurant",
+      "categoryId": "balik",
+      "resolvedName": "Nehir Restaurant",
+      "branchName": "Akyaka, İdima Sok No: 7/1, 48650 Ula/Muğla, Türkiye",
+      "placeId": "ChIJgX2c9EKfvxQR_F2A8SmUgEE",
+      "coordinates": {
+        "lat": 37.0537786,
+        "lng": 28.329913599999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 212,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "https://nehirrestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=4719935317350571516",
+      "recommendedPrimary": [
+        "Günlük Izgara Deniz Balığı",
+        "Ege Otları Kavurması",
+        "Tereyağlı Karides"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sabah Azmak Kahvaltısı & Fırın Helva",
+          "note": "Akşam balık sofralarının dışında sabah saatlerinde su kenarında serpme kahvaltı ve balık sonrası sıcak fırın helva öne çıkıyor.",
+          "proof": "akyakanehirhotel.com.tr resmi bilgileri ve balık restoran rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kadın Azmağı üstünde su sıfır iskele masaları ve bahçe bölümü",
+        "crowdAndNoise": "Kalabalık ana iskele sırasına göre daha dingin akşam temposu",
+        "disadvantage": "Butik iskele kapasitesi sınırlı olduğundan akşam gün batımı saatlerinde önceden rezervasyon önerilir.",
+        "transit": "İdima Sokak No:7/1 adresinde, Kadın Azmağı kıyısında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Akyaka Nehir Restaurant Resmi Sitesi",
+          "url": "https://www.akyakanehirhotel.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Su sıfır Azmak restoranı, günlük balık ve ot mezeleri"
+        },
+        {
+          "title": "Restoranım & Balık Rehberleri — Nehir Restaurant",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kadın Azmağı taze balık ve mezeler önerisi"
+        },
+        {
+          "title": "TripAdvisor Akyaka — Nehir Restaurant",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sakin iskele konumu ve taze ot mezeleri memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Azmak kalabalığından daha sakin su kenarı oturumu",
+        "Taze günlük balık ve Ege otları"
+      ],
+      "cons": [
+        "Sınırlı ön iskele masa sayısı"
+      ],
+      "uncertainties": [
+        "Günlük av durumuna göre tezgah balığı çeşitleri her akşam değişiyor."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-olta-balik",
+      "categoryId": "balik",
+      "resolvedName": "Olta Balık Restaurant",
+      "branchName": "Akyaka, İnişdibi Cd. No:46, 48650 Ula/Muğla, Türkiye",
+      "placeId": "ChIJi_qLONCfvxQR8T6j_iMP5dk",
+      "coordinates": {
+        "lat": 37.0560113,
+        "lng": 28.3359658
+      },
+      "rating": 4.4,
+      "userRatingCount": 2249,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://akyakaoltarestoran.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=15700972323167485681",
+      "recommendedPrimary": [
+        "Çıtır Levrek",
+        "Ahtapot & Karides Tandır",
+        "Izgara Lagos"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Dondurmalı Sıcak İrmik Helvası & Azmak Kahvaltısı",
+          "note": "Balık yemeği sonunda dondurmalı sıcak irmik helvası ve sabahları Azmak kenarı kahvaltı servisi öne çıkan tamamlayıcılardır.",
+          "proof": "akyakaoltarestoran.com.tr menüsü ve Muğla sahil rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kadın Azmağı üzerine uzanan geniş ahşap platformlar ve kapalı salon",
+        "crowdAndNoise": "Akşam yemeklerinde aileler ve tatil gruplarıyla yüksek doluluk",
+        "disadvantage": "Deniz mahsulü ve taze balık fiyat seviyesi yüksektir; yaz akşamları iskele kenarı masaları yoğun talep görür.",
+        "transit": "İnişdibi Caddesi No:46 adresinde, Azmak restoranlar sırasının merkezinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Olta Balık Restaurant Resmi Sitesi",
+          "url": "http://akyakaoltarestoran.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Çıtır levrek, ahtapot-karides tandır ve meze çeşitleri"
+        },
+        {
+          "title": "Ege Sahil Rehberleri — Olta Balık Akyaka",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Akyaka Kadın Azmağı balık ve meze seçkisi"
+        },
+        {
+          "title": "TripAdvisor — Olta Balık Akyaka",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Meze çeşitliliği, porsiyon kalitesi ve servis hızı notları"
+        }
+      ],
+      "pros": [
+        "Zengin ve taze deniz ürünleri ara sıcakları",
+        "Geniş iskele alanı"
+      ],
+      "cons": [
+        "Yüksek fiyat seviyesi",
+        "Yoğun sezonda rezervasyon ihtiyacı"
+      ],
+      "uncertainties": [
+        "Lagos ve diğer büyük balıkların porsiyon fiyatı günlük kilo hesabıyla belirleniyor."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-orfoz",
+      "categoryId": "balik",
+      "resolvedName": "Akyaka Orfoz Restaurant",
+      "branchName": "Akyaka, Sarıoğlu Sk. No:48, 48650 Ula/Muğla, Türkiye",
+      "placeId": "ChIJtyIdrOp2vxQRAogaZA_uFlE",
+      "coordinates": {
+        "lat": 37.0560736,
+        "lng": 28.3355652
+      },
+      "rating": 4.3,
+      "userRatingCount": 5331,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5843119316431177730",
+      "recommendedPrimary": [
+        "Girit Ezmesi & Isırgan Otu Salatası",
+        "Mevsiminde Girida / Lagos",
+        "Tereyağlı Ahtapot"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Azmak Üstü Serpme Köy Kahvaltısı & Çıtır Kalamar",
+          "note": "Ana balık servisi dışında sabahları nehir üstünde kahvaltı ve akşam başlangıçlarında çıtır kalamar yoğun tercih görüyor.",
+          "proof": "Akyaka Orfoz menü ve Ege gastronomi rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kadın Azmağı üstünde tarihi ahşap platform masaları ve iç salon oturumu",
+        "crowdAndNoise": "Sezon boyunca en yüksek ziyaretçi ilgisi gören Akyaka su kenarı restoranı",
+        "disadvantage": "Yoğun turistik ilgi nedeniyle yaz sezonunda kalabalık ve gürültülü olabiliyor; su kenarı ön sıra masalar için önceden planlama gerekir.",
+        "transit": "Sarıoğlu Sokak No:48 adresinde, Kadın Azmağı köprüsüne yürüyüş mesafesinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Muğla Kültür & Gezi Rehberi — Akyaka Orfoz",
+          "url": "https://www.setur.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kadın Azmağı klasikleşmiş balık ve meze adresi"
+        },
+        {
+          "title": "TripAdvisor & Foursquare — Orfoz Akyaka",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Girit ezmesi, ısırgan salatası ve su üstü deneyimi"
+        }
+      ],
+      "pros": [
+        "Berrak Azmak manzarası eşliğinde köklü balık sofrası",
+        "Özgün yöresel ot mezeleri"
+      ],
+      "cons": [
+        "Yoğun turistik kalabalık ve gürültü ihtimali"
+      ],
+      "uncertainties": [
+        "Sezon yoğunluğunda su kenarı masa tercihi için erken saat veya rezervasyon gerekiyor."
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-kordon",
+      "categoryId": "balik",
+      "resolvedName": "Kordon Restaurant",
+      "branchName": "Akyaka, Azmakboyu Sk. No:2, 48650 Ula/Muğla, Türkiye",
+      "placeId": "ChIJczb3LjV0vxQRora7I7BOpgo",
+      "coordinates": {
+        "lat": 37.0521653,
+        "lng": 28.3285645
+      },
+      "rating": 4.2,
+      "userRatingCount": 3276,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=767387304933963426",
+      "recommendedPrimary": [
+        "Izgara Çipura & Levrek",
+        "Kalamar Tava",
+        "Zeytinyağlı Meze Seçkisi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Izgara Et Seçenekleri & Mevsim Meyveleri",
+          "note": "Balık yemeyen misafirler için menüde ızgara et tabakları ve yemek sonunda taze meyve ikramı da yer alıyor.",
+          "proof": "eatbu.com ve Wanderlog Akyaka menü özetleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Azmakboyu nehir kenarı teras masaları ve kapalı restoran salonu",
+        "crowdAndNoise": "Yürüyüş yolu üzerinde akşam yemeklerinde sürekli doluluk",
+        "disadvantage": "Azmakboyu yaya girişinde yer aldığından akşam saatlerinde yürüyüş kalabalığının hemen yanında kalır.",
+        "transit": "Azmakboyu Sokak No:2 adresinde, Akyaka merkez köprü ve çarşı girişinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Wanderlog Akyaka — Kordon Restaurant",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Azmakboyu nehir kıyısı balık ve meze önerisi"
+        },
+        {
+          "title": "TripAdvisor Akyaka — Kordon Restaurant",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze çipura-levrek, kalamar tava ve nehir kenarı oturum"
+        }
+      ],
+      "pros": [
+        "Merkezi Azmakboyu girişinde kolay erişim",
+        "Balık ve et seçeneklerini bir arada sunması"
+      ],
+      "cons": [
+        "Yürüyüş hattı kalabalığına yakın oturum"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamlarında su kıyısı masa doluluğu hızlı artıyor."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-halilin-yeri",
+      "categoryId": "balik",
+      "resolvedName": "Halil'in Yeri",
+      "branchName": "Akyaka, İnişdibi Cd. No:48, 48650 Ula/Muğla, Türkiye",
+      "placeId": "ChIJtyIdrOp2vxQR1hriGm749Ks",
+      "coordinates": {
+        "lat": 37.055887899999995,
+        "lng": 28.336945099999998
+      },
+      "rating": 4,
+      "userRatingCount": 2951,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://qrsis.com/halilinyeri",
+      "mapsUri": "https://maps.google.com/?cid=12390801626584193750",
+      "recommendedPrimary": [
+        "Tereyağlı Kiremitte Alabalık",
+        "Avokadolu Karides",
+        "Kabak Çiçeği Dolması & Levrek Marin"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Azmak Üstü Köy Kahvaltısı & Yöresel Ot Kavurmaları",
+          "note": "Mekanın imza balıkları dışında sabah nehir kahvaltısı ve şevketibostan gibi Ege ot kavurmaları da köklü menünün parçasıdır.",
+          "proof": "Akyaka yerel tarihçeleri ve ulusal gezi yazıları"
+        }
+      ],
+      "suitability": {
+        "seating": "Nehir üstüne kurulu geniş ahşap platform masaları ve bahçe bölümü",
+        "crowdAndNoise": "Yüksek turistik ve yerli ziyaretçi hacmiyle gün boyu hareketli",
+        "disadvantage": "Çok yüksek ziyaretçi sirkülasyonu nedeniyle yoğun yaz günlerinde servis temposu hızlanıp standartlaşabiliyor.",
+        "transit": "İnişdibi Caddesi No:48 adresinde, Kadın Azmağı restoranlar sırasının merkezinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Hürriyet & Milliyet Gezi — Azmak Klasikleri",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Halil'in Yeri'nin Kadın Azmağı'ndaki tarihi öncülüğü ve imza lezzetleri"
+        },
+        {
+          "title": "Ekşi Sözlük & TripAdvisor — Halil'in Yeri Akyaka",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Avokadolu karides, kabak çiçeği dolması ve servis yoğunluğu notları"
+        }
+      ],
+      "pros": [
+        "Kadın Azmağı geleneğinin en köklü adresi",
+        "Kabak çiçeği dolması ve alabalık-karides klasikleri"
+      ],
+      "cons": [
+        "Yoğun sezonda servis standartlaşması ve kalabalık hissi"
+      ],
+      "uncertainties": [
+        "Yoğun yaz öğle ve akşam saatlerinde servis süresi dalgalanabiliyor."
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-pazarola",
+      "categoryId": "denemelisin",
+      "resolvedName": "Pazarola Yöresel Mutfak",
+      "branchName": "Kapalı pazar alanı, Akyaka, Atatürk Cd. no:5, 48650 Ula/Muğla, Türkiye",
+      "placeId": "ChIJkRSGU8ufvxQRezBrkcAQ8LA",
+      "coordinates": {
+        "lat": 37.0554759,
+        "lng": 28.322480600000002
+      },
+      "rating": 4.9,
+      "userRatingCount": 403,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12749708964345360507",
+      "recommendedPrimary": [
+        "Peruhi & El Açması Mantı",
+        "Otlu-Peynirli Gözleme",
+        "Zeytinyağlı Yaprak Sarma"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Izgara Ev Köftesi & Özel Pazarola Kahvesi",
+          "note": "Hamur işleri ve zeytinyağlıların yanında günlük ızgara ev köftesi ile yemek üstü özel Pazarola kahvesi müdavimlerin tercihleri arasında.",
+          "proof": "Akyaka yerel rehberleri ve harita ziyaretçi notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kapalı Pazar Alanı önünde sade esnaf masaları ve al-götür paket servisi",
+        "crowdAndNoise": "Özellikle Çarşamba pazar günleri ve öğle saatlerinde yüksek yerel ilgi",
+        "disadvantage": "Pazar alanı içindeki sade esnaf düzeni lüks restoran ambiyansı arayanlara hitap etmez; öğle sonrası bazı ev yemekleri erken tükenebilir.",
+        "transit": "Atatürk Caddesi No:5, Akyaka Kapalı Pazar Alanı bünyesinde merkez yürüyüşte."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Muğla Yöresel Mutfağı — Pazarola Akyaka",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kapalı Pazar içinde ev yapımı peruhi ve zeytinyağlı durağı"
+        },
+        {
+          "title": "Yerel Ziyaretçi Notları — Pazarola Yöresel Mutfak",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Aile sıcaklığı, gözleme ve el açması mantı memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Gerçek ev mutfağı tadında yöresel hamur işleri ve zeytinyağlılar",
+        "Ulaşılabilir fiyat dengesi"
+      ],
+      "cons": [
+        "Sade pazar alanı atmosferi ve gün sonu yemek tükenmesi"
+      ],
+      "uncertainties": [
+        "Günlük çıkan tencere ve zeytinyağlı yemek çeşitleri sabah pazarına göre değişiyor."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-akcapinar-tostcusu",
+      "categoryId": "denemelisin",
+      "resolvedName": "Meşhur Akçapınar Tostçusu",
+      "branchName": "Akçapınar, 48640 Ula/Muğla, Türkiye",
+      "placeId": "ChIJhUqbkVqevxQR-I4ilSiSxgM",
+      "coordinates": {
+        "lat": 37.0272759,
+        "lng": 28.358871900000004
+      },
+      "rating": 3.8,
+      "userRatingCount": 10774,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=272065530500910840",
+      "recommendedPrimary": [
+        "Özel Domates Soslu Karışık Akçapınar Tostu",
+        "Kavurmalı Kaşarlı Tost",
+        "Bol Köpüklü Yayık Ayranı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tereyağlı Tatlı Tost & Demleme Çay",
+          "note": "Tuzlu tost ritüelinin ardından ballı-kaymaklı veya çikolatalı sıcak tatlı tost ve taze çay sıkça sipariş edilir.",
+          "proof": "Akçapınar Tostçusu menüsü ve Ege yol rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Yol kenarı çardak altı hızlı büfe masaları ve al-götür servis bankosu",
+        "crowdAndNoise": "Yaz hafta sonları ve bayram dönemlerinde kasa önünde yoğun yolcu trafiği",
+        "disadvantage": "Yaz aylarında ve hafta sonları kasa önünde uzun bekleme kuyrukları oluşur; hızlı büfe düzeni uzun oturuma uygun değildir.",
+        "transit": "Akçapınar girişinde, okaliptüslü Eski Marmaris Yolu (Aşıklar Yolu) sonunda."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Hürriyet Seyahat — Ege Yolüstü Durakları",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Akçapınar Tostçusu'nun domates soslu tost ve ayran ritüeli"
+        },
+        {
+          "title": "Ekşi Sözlük & TripAdvisor — Akçapınar Tostçusu",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Domates soslu sucuklu tost beğenisi ve yoğunluk/kuyruk eleştirileri"
+        }
+      ],
+      "pros": [
+        "Gökova yolunun on yıllardır süren ikonik sokak lezzeti ritüeli",
+        "İmza domates sosu ve köpüklü ayran"
+      ],
+      "cons": [
+        "Yoğun sezon sıraları ve acele büfe temposu"
+      ],
+      "uncertainties": [
+        "Yoğun tatil günlerinde kasa ve masa bekleme süresi uzayabiliyor."
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-sandal-balik-ekmek",
+      "categoryId": "denemelisin",
+      "resolvedName": "Sandal Balık Ekmek",
+      "branchName": "Akyaka, Nergiz Sk. No: 3/1, 48650 Ula/Muğla, Türkiye",
+      "placeId": "ChIJR8ihIoOfvxQRRK6laYgMmUU",
+      "coordinates": {
+        "lat": 37.051853099999995,
+        "lng": 28.3250662
+      },
+      "rating": 4.1,
+      "userRatingCount": 2148,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.sandalbalikakyaka.com/",
+      "mapsUri": "https://maps.google.com/?cid=5015053440081309252",
+      "recommendedPrimary": [
+        "Mezgit Balık Ekmek",
+        "Izgara Sardalya Ekmek",
+        "Uskumru Ekmek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çıtır Kalamar Tava & Midye Eşlikçileri",
+          "note": "Klasik ekmek arası balıkların yanında küçük porsiyon çıtır kalamar tava ve taze midye sokak masalarının gözde eşlikçileridir.",
+          "proof": "Akyaka merkez sokak lezzetleri ve Sandal Balık Ekmek notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Nergiz Sokak üzerinde hızlı sokak masaları ve al-götür pencere servisi",
+        "crowdAndNoise": "Akşamüstü plaj ve tekne dönüşlerinde sürekli sıra ve sirkülasyon",
+        "disadvantage": "Hızlı sokak servisi odaklı küçük masalara sahiptir; akşamüstü plaj çıkışında yoğunluk yaşanır.",
+        "transit": "Nergiz Sokak No:3/1 adresinde, Akyaka merkez meydan ve sahil arasında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Ege Sokak Lezzetleri — Sandal Balık Ekmek",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Akyaka merkezde bütçe dostu mezgit ve sardalya balık ekmek durağı"
+        },
+        {
+          "title": "TripAdvisor & Foursquare — Sandal Balık Ekmek",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze mezgit ekmek ve hızlı akşamüstü atıştırmalık beğenisi"
+        }
+      ],
+      "pros": [
+        "Azmak restoranlarına kıyasla bütçe dostu pratik deniz lezzeti",
+        "Sürekli sıcak ve taze kızartma-ızgara sirkülasyonu"
+      ],
+      "cons": [
+        "Uzun oturuma uygun olmayan dar sokak masaları"
+      ],
+      "uncertainties": [
+        "Sezon içi hava ve tedarik koşullarına göre günlük balık çeşitliliği değişebiliyor."
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-konak-dondurma",
+      "categoryId": "denemelisin",
+      "resolvedName": "Akyaka Konak Dondurma",
+      "branchName": "Akyaka, Azmakboyu Sk. No:6, 48650 Ula/Muğla, Türkiye",
+      "placeId": "ChIJiSOZ6HufvxQRd4L4sHnOW9w",
+      "coordinates": {
+        "lat": 37.05236,
+        "lng": 28.3284982
+      },
+      "rating": 4.6,
+      "userRatingCount": 494,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": false,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.elmalikonakdondurma.com/",
+      "mapsUri": "https://maps.google.com/?cid=15878511933280256631",
+      "recommendedPrimary": [
+        "Keçi Sütlü Yanıksı Dondurma",
+        "Porçiko (Portakal & Çikolatalı)",
+        "Bitter Çikolata & Karadut"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Meyveli Sorbe Çeşitleri & El Yapımı Külah",
+          "note": "Süt bazlı klasik çeşitlerin yanında taze meyveli sorbeler ve çıtır el yapımı külah seçeneği akşam yürüyüşçülerinin favorisidir.",
+          "proof": "Akyaka Azmakboyu yerel dondurma notları ve ziyaretçi listeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Azmakboyu yürüyüş hattında külah ve kapta al-götür tezgah servisi; oturma alanı yok",
+        "crowdAndNoise": "Akşam yemeği sonrası Azmakboyu kalabalığıyla tezgah önünde kuyruk",
+        "disadvantage": "Yalnızca al-götür tezgah servisi verir ve oturma alanı yoktur; yaz akşamlarında vitrin önünde kısa sıra oluşur.",
+        "transit": "Azmakboyu Sokak No:6 adresinde, balık restoranları çıkışındaki yürüyüş aksında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Akyaka Rehberleri — Konak Dondurma",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Azmakboyu keçi sütlü ve meyveli el yapımı dondurma seçkisi"
+        },
+        {
+          "title": "TripAdvisor Akyaka — Akyaka Konak Dondurma",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Porçiko ve keçi sütlü dondurma kıvamı beğenisi"
+        }
+      ],
+      "pros": [
+        "Doğal keçi sütlü kıvam ve özgün meyve-çikolata çeşitleri",
+        "Azmak sonrası ideal yürüyüş durağı"
+      ],
+      "cons": [
+        "Oturma alanının bulunmaması",
+        "Akşam yürüyüş saatlerinde kısa sıra"
+      ],
+      "uncertainties": [
+        "Sezon dışında dondurma çeşit sayısı azaltılabiliyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-keyifhane",
+      "categoryId": "denemelisin",
+      "resolvedName": "KeyifHane Akyaka",
+      "branchName": "Akyaka, İncir Sk. No:6, 48650 Ula/Muğla, Türkiye",
+      "placeId": "ChIJFV4ghOCfvxQRFjt7uXddOdE",
+      "coordinates": {
+        "lat": 37.051555799999996,
+        "lng": 28.324562699999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 336,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15076183996393798422",
+      "recommendedPrimary": [
+        "Günlük Ege Meze Tabağı",
+        "Izgara Kasap Köfte",
+        "Ara Sıcak Deniz Ürünleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Atıştırmalıklar & Soğuk Bahçe İçecekleri",
+          "note": "Meze ve köfte tabaklarının yanında fırından çıkan sıcak atıştırmalıklar ve soğuk içecek eşlikleri akşam sofrasını tamamlar.",
+          "proof": "qrdos.tr KeyifHane menüsü ve harita rehber notları"
+        }
+      ],
+      "suitability": {
+        "seating": "İncir Sokak yaya aksında bahçe masaları ve samimi iç alan oturumu",
+        "crowdAndNoise": "Merkez çarşı içinde akşam yemeği saatlerinde dengeli yerel-tatilci kitlesi",
+        "disadvantage": "Çarşı içi konumu nedeniyle yaz akşamlarında sokak hareketliliği masalara yakın hissedilir.",
+        "transit": "İncir Sokak No:6 adresinde, Akyaka merkez plaj-çarşı bağlantısında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "QR Menü & Restoran Kayıtları — KeyifHane Akyaka",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İncir Sokak meze, köfte ve sıcak akşam yemekleri"
+        },
+        {
+          "title": "Yerel Ziyaretçi Notları — KeyifHane",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yemek lezzeti, samimi hizmet ve çarşı içi bahçe ortamı"
+        }
+      ],
+      "pros": [
+        "Azmak dışındaki merkez sokaklarda samimi akşam yemeği alternatifi",
+        "Dengeli meze ve ızgara menüsü"
+      ],
+      "cons": [
+        "Merkezi çarşı sokak hareketliliğine açıklık"
+      ],
+      "uncertainties": [
+        "Sezon içi yoğunlukta menüde atıştırmalık ve ana yemek ağırlığı değişebiliyor."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "akyaka-kite-beach",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kite Beach Akyaka",
+      "branchName": "Akçapınar, 48640 Ula/Muğla, Türkiye",
+      "placeId": "ChIJQ3L-KUifvxQRj3q_t0B0dOM",
+      "coordinates": {
+        "lat": 37.037666699999996,
+        "lng": 28.329560999999998
+      },
+      "rating": 4,
+      "userRatingCount": 391,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16389852765217585807",
+      "recommendedPrimary": [
+        "Plaj Burger & Sandviçler",
+        "Soğuk İçecek & Kokteyl Eşlikleri",
+        "Sörf Arası Atıştırmalık Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Meyve Kasesi & Gün Batımı Sahil İçecekleri",
+          "note": "Sörf seansları arasında ferah meyve kaseleri ve gün batımında soğuk sahil içecekleri sık tercih ediliyor.",
+          "proof": "Akçapınar Kite Beach ziyaretçi ve sörf rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kum plaj üzerinde gölgelikli şezlong, puf ve açık hava plaj barı oturumu",
+        "crowdAndNoise": "Öğleden sonra termal rüzgar saatlerinde sörfçüler ve izleyici ziyaretçilerle çok canlı",
+        "disadvantage": "Rüzgarlı plaj ortamı ve kumsal düzeni yemek odaklı sakin restoran deneyimi arayanlara göre değildir; yazın araç park alanı daralır.",
+        "transit": "Akçapınar Kite Beach sahil yolundan araçla veya Gökova bisiklet rotasıyla ulaşılıyor."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Türkiye Sörf & Gezi Rehberleri — Akyaka Kite Beach",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Akçapınar uçurtma sörfü sahili ve plaj sosyal ortamı"
+        },
+        {
+          "title": "TripAdvisor & Gezgin Notları — Kite Beach Akyaka",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Rüzgar ve sörf izleme ritüeli ile basit plaj büfe beklentisi"
+        }
+      ],
+      "pros": [
+        "Türkiye’nin en özel kitesurf sahilini sıfırdan izleme deneyimi",
+        "Özgür plaj atmosferi"
+      ],
+      "cons": [
+        "Şiddetli öğleden sonra rüzgarı ve kum ortamı",
+        "Yüksek gurme restoran beklentisine uygun olmaması"
+      ],
+      "uncertainties": [
+        "Rüzgar takvimine bağlı olarak Ekim-Mayıs arası sezon dışı dönemde sakinleşiyor."
+      ],
+      "selectionScore": 74,
+      "selectedForSnapshot": true
+    }
+  ]
+}

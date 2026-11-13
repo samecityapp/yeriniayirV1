@@ -82,6 +82,12 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     headline: 'Konyaaltı, Antalya',
     vibe: 'Atatürk Kültür Parkı ve sahil şeridinden Gürsu, Liman ve Çakırlar’a uzanan özel gün klasikleri, kruvasan-pastane durakları ve odun ateşi pideler',
   },
+  'akyaka-ula-mugla': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Akyaka, Muğla',
+    vibe: 'Kadın Azmağı kıyısındaki su üstü balıkçılardan Akyaka sokaklarına, Akçapınar tost ritüeline ve Gökova kahvaltı duraklarına uzanan seçki',
+  },
 };
 
 function formatLocationCategoryHeading(locative: string, categoryTitle?: string): string {
@@ -270,7 +276,7 @@ export function GastronomyPageClient({
                       Konum Seç
                     </div>
                     <div className="text-xs text-slate-500 font-medium truncate mt-0.5">
-                      Antalya · Gaziantep · Kuşadası · Kadıköy · Moda · Yeldeğirmeni · Caddebostan · Suadiye
+                      Akyaka · Antalya · Gaziantep · Kuşadası · Kadıköy · Moda · Yeldeğirmeni · Caddebostan · Suadiye
                     </div>
                   </div>
                 </div>

@@ -71,6 +71,7 @@ const REGION_KEYS = [
   'antalya-kaleici',
   'antalya-lara',
   'antalya-konyaalti',
+  'mugla-ula-akyaka',
 ];
 
 const CANONICAL_SLUGS = [
@@ -93,7 +94,7 @@ const snapshots = REGION_KEYS.map((key) => {
 test('all published snapshots follow schema v3, canonical order, dynamic caps (1..5 standard/coastal/heritage, 1..10 denemelisin)', () => {
   for (const { key, data } of snapshots) {
     assert.equal(data.schemaVersion, 3, key);
-    const isCoastal = key === 'aydin-kusadasi';
+    const isCoastal = key === 'aydin-kusadasi' || key === 'mugla-ula-akyaka';
     const isHeritage = key === 'gaziantep-merkez';
     const isAntalya = key.startsWith('antalya-');
     assert.ok(
@@ -191,7 +192,7 @@ test('Caddebostan dynamically prunes breakfast ("Yoksa Onerme") when no qualifyi
   assert.equal(caddebostan.categories.some((c) => c.slug === 'kahvalti'), false);
 });
 
-test('all 10 published regions have zero overlapping placeIds, valid ratings, and canonical CID links', () => {
+test('all 11 published regions have zero overlapping placeIds, valid ratings, and canonical CID links', () => {
   const globalPlaceIds = new Set();
   for (const { key, data } of snapshots) {
     const expectedDistricts =
@@ -211,12 +212,17 @@ test('all 10 published regions have zero overlapping placeIds, valid ratings, an
       assert.ok(
         typeof venue.rating === 'number' &&
           venue.rating >=
-            (key === 'aydin-kusadasi' || key === 'gaziantep-merkez' || key.startsWith('antalya-') ? 3.8 : 4.0) &&
+            (key === 'aydin-kusadasi' ||
+            key === 'mugla-ula-akyaka' ||
+            key === 'gaziantep-merkez' ||
+            key.startsWith('antalya-')
+              ? 3.8
+              : 4.0) &&
           venue.rating <= 5.0
       );
     }
   }
-  assert.ok(globalPlaceIds.size >= 230, `Expected >=230 unique published venues, got ${globalPlaceIds.size}`);
+  assert.ok(globalPlaceIds.size >= 260, `Expected >=260 unique published venues, got ${globalPlaceIds.size}`);
 });
 
 test('every published region limits nearbyVenues to <= 1 per category within <= 400m of its border (Moda has 6)', () => {
@@ -329,6 +335,19 @@ test('policy gates reject closed, chain, out-of-neighborhood, and degraded candi
   const lMap = new Map(laraAudit.decisions.map((d) => [d.id, d]));
   assert.equal(lMap.get('ctrl-lara-sudd-closed').accepted, false);
   assert.ok(lMap.get('ctrl-lara-sudd-closed').reason.includes('CLOSED_PERMANENTLY'));
+
+  const akyakaAudit = JSON.parse(
+    fs.readFileSync(path.join(ROOT, 'work/gastronomy-v3/mugla-ula-akyaka.audit.json'), 'utf8')
+  );
+  const aMap = new Map(akyakaAudit.decisions.map((d) => [d.id, d]));
+  assert.equal(aMap.get('ctrl-akyaka-leos-closed').accepted, false);
+  assert.ok(aMap.get('ctrl-akyaka-leos-closed').reason.includes('CLOSED_TEMPORARILY'));
+  assert.equal(aMap.get('ctrl-akyaka-lightroom-closed').accepted, false);
+  assert.ok(aMap.get('ctrl-akyaka-lightroom-closed').reason.includes('CLOSED_PERMANENTLY'));
+  assert.equal(aMap.get('ctrl-akyaka-starbucks-chain').accepted, false);
+  assert.equal(aMap.get('ctrl-akyaka-starbucks-chain').reason, 'chain_or_franchise');
+  assert.equal(aMap.get('ctrl-akyaka-mentese-outside').accepted, false);
+  assert.ok(aMap.get('ctrl-akyaka-mentese-outside').reason.includes('outside_strict_neighborhood'));
 });
 
 test('V3.2 rules, secondaryItems, suitability, zero Çekirdekhane, complete dossiers & visitor isolation', () => {
@@ -391,7 +410,7 @@ test('runtime discovery, foodAdapter, and realProvider expose all 5 Kadikoy regi
   const provider = providerMod.createRealFoodProvider(food);
 
   const ready = provider.getReadyRegions();
-  assert.equal(ready.length, 10);
+  assert.equal(ready.length, 11);
   assert.deepEqual(
     ready.map((r) => r.slug),
     [
@@ -405,6 +424,7 @@ test('runtime discovery, foodAdapter, and realProvider expose all 5 Kadikoy regi
       'antalya-kaleici',
       'antalya-lara',
       'antalya-konyaalti',
+      'akyaka',
     ]
   );
 
@@ -412,7 +432,7 @@ test('runtime discovery, foodAdapter, and realProvider expose all 5 Kadikoy regi
     assert.ok(loc.city && loc.district && loc.neighborhood, `Missing hierarchy for ${loc.id}`);
   }
 
-  // Legacy kadikoy-carsi slug, Kusadasi sub-areas, & Gaziantep districts resolve cleanly
+  // Legacy kadikoy-carsi slug, Kusadasi sub-areas, Gaziantep districts & Akyaka sub-areas resolve cleanly
   assert.equal(provider.getLocationBySlug('kadikoy-carsi')?.slug, 'kadikoy');
   assert.equal(provider.getLocationBySlug('guzelcamli')?.slug, 'kusadasi');
   assert.equal(provider.getLocationBySlug('davutlar')?.slug, 'kusadasi');
@@ -422,13 +442,15 @@ test('runtime discovery, foodAdapter, and realProvider expose all 5 Kadikoy regi
   assert.equal(provider.getLocationBySlug('antalya')?.slug, 'antalya-kaleici');
   assert.equal(provider.getLocationBySlug('lara')?.slug, 'antalya-lara');
   assert.equal(provider.getLocationBySlug('konyaalti')?.slug, 'antalya-konyaalti');
+  assert.equal(provider.getLocationBySlug('gokova')?.slug, 'akyaka');
+  assert.equal(provider.getLocationBySlug('akcapinar')?.slug, 'akyaka');
 
   // Unpublished regions cannot resolve
-  assert.equal(provider.getLocationBySlug('akyaka'), undefined);
+  assert.equal(provider.getLocationBySlug('yalikavak'), undefined);
   assert.equal(provider.getLocationBySlug('bitez'), undefined);
   assert.equal(provider.getLocationBySlug('kosuyolu'), undefined);
 
-  // Verify all 10 published regions resolve cleanly through readIntegrationDiscovery
+  // Verify all 11 published regions resolve cleanly through readIntegrationDiscovery
   for (const slug of [
     'moda',
     'kadikoy',
@@ -440,6 +462,7 @@ test('runtime discovery, foodAdapter, and realProvider expose all 5 Kadikoy regi
     'antalya-kaleici',
     'antalya-lara',
     'antalya-konyaalti',
+    'akyaka',
   ]) {
     const disc = await discoveryMod.readIntegrationDiscovery(slug, '');
     assert.ok(disc, `Missing discovery for ${slug}`);
@@ -511,6 +534,46 @@ test('runtime discovery, foodAdapter, and realProvider expose all 5 Kadikoy regi
         assert.ok(names.some((n) => n.includes(expected)), `antalya-kaleici missing ${expected}`);
       }
       assert.equal(names.some((n) => n.includes('Arma Restaurant')), false, 'Closed Arma must be excluded');
+      const kaleiciPizza = p.getCategoryResult(disc.region.id, 'pizza');
+      const kaleiciDate = p.getCategoryResult(disc.region.id, 'date-mekanlari');
+      assert.ok(
+        kaleiciPizza?.coreVenues[0]?.name.includes('Belforno'),
+        `Kaleici pizza #1 must be Belforno, got ${kaleiciPizza?.coreVenues[0]?.name}`
+      );
+      assert.ok(
+        kaleiciDate?.coreVenues[0]?.name.includes('Belforno'),
+        `Kaleici date-mekanlari #1 must be Belforno, got ${kaleiciDate?.coreVenues[0]?.name}`
+      );
+    }
+    if (slug === 'akyaka') {
+      assert.equal(p.getLocationBySlug('akyaka')?.locative, "Akyaka'da");
+      assert.equal(disc.region.displayName, 'Akyaka, Muğla');
+      const akyakaCats = p.getRegionCategories(disc.region.id);
+      assert.equal(akyakaCats.length, 7, 'Akyaka must expose 7 coastal categories');
+      assert.ok(
+        akyakaCats.some((c) => c.slug === 'balik-deniz-urunleri'),
+        'Akyaka missing balik-deniz-urunleri category'
+      );
+      const names = f.venues.map((v) => v.name);
+      for (const expected of [
+        'Pizza Fellas',
+        "Börfi's Burger",
+        "Halil'in Yeri",
+        'Akyaka Orfoz',
+        'Olta Balık',
+        'West Cafe Bistro',
+        'Gökova Börek',
+        'Mosso Akyaka',
+        "No22 Riders'Inn",
+        'Meşhur Akçapınar Tostçusu',
+        'Sandal Balık Ekmek',
+        'Pazarola Yöresel Mutfak',
+      ]) {
+        assert.ok(names.some((n) => n.includes(expected)), `Akyaka missing ${expected}`);
+      }
+      for (const forbidden of ["Leo's Pizza", 'Lightroom', 'Starbucks', "Domino's"]) {
+        assert.equal(names.some((n) => n.includes(forbidden)), false, `Akyaka must exclude ${forbidden}`);
+      }
     }
     if (slug === 'antalya-lara') {
       assert.equal(p.getLocationBySlug('antalya-lara')?.locative, "Lara'da");

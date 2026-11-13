@@ -4,6 +4,8 @@ export interface CompactSeedInput {
   id: string;
   placeId: string;
   cat: string;
+  secondaryCategoryIds?: string[];
+  pinnedFirst?: boolean;
   name?: string;
   brand?: string;
   area: string;
@@ -41,6 +43,8 @@ export function compactSeed(input: CompactSeedInput): V3CandidateSeed {
     id: input.id,
     placeId: input.placeId,
     categoryId: input.cat,
+    ...(input.secondaryCategoryIds?.length ? { secondaryCategoryIds: input.secondaryCategoryIds } : {}),
+    ...(input.pinnedFirst ? { pinnedFirst: true } : {}),
     ...(input.name ? { displayNameOverride: input.name } : {}),
     ...(input.brand ? { expectedBrandWord: input.brand } : {}),
     ...(f.iconic ? { iconicSettingOrVibeProtected: true } : {}),
