@@ -124,21 +124,23 @@ export function VariantABottomSheet({ restaurant, onClose, lang = 'tr' }: Varian
                     <span className="text-xs font-black text-slate-900 block mb-0.5">
                       {item.name}
                     </span>
-                    <p className="text-[11px] text-slate-600 leading-relaxed">
-                      {item.description}
-                    </p>
+                    {item.description && (
+                      <p className="text-[11px] text-slate-600 leading-relaxed">
+                        {item.description}
+                      </p>
+                    )}
                   </div>
                 ))}
               </div>
             </div>
           )}
 
-          {/* 4. GİTMEDEN BİL (Kesinleşmiş pratik bilgiler) */}
+          {/* 4. UYGUNLUK & GİTMEDEN BİL (Kesinleşmiş pratik bilgiler) */}
           {restaurant.knowBeforeYouGo?.tips && restaurant.knowBeforeYouGo.tips.length > 0 && (
             <div className="pt-1">
               <div className="text-[11px] font-extrabold uppercase tracking-wider text-slate-500 mb-2 flex items-center gap-1.5">
                 <Info size={14} className="text-blue-600" />
-                <span>Gitmeden Bil</span>
+                <span>Uygunluk & Gitmeden Bil</span>
               </div>
               <div className="space-y-1.5">
                 {restaurant.knowBeforeYouGo.tips.map((tip, idx) => (

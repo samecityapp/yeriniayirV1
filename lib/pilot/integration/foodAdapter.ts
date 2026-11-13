@@ -86,7 +86,7 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
     ratings:resolvedRatings,
     orderSuggestion:whatToOrder.length?{title:whatToOrder.join(' · ')}:null,
     menuFrom:[...menuFrom],
-    alsoTry:{items:alsoTry.map(name=>({name,description:''}))},
+    alsoTry:{items:alsoTry.map(raw=>{const idx=raw.indexOf(' — ');return idx>=0?{name:raw.slice(0,idx).trim(),description:raw.slice(idx+3).trim()}:{name:raw,description:''};})},
     knowBeforeYouGo:{tips:[...beforeYouGo]}
    };
   }),

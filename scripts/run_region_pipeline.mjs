@@ -24,6 +24,12 @@ const FIELD_MASK = [
   'primaryType',
   'types',
   'googleMapsUri',
+  'priceLevel',
+  'websiteUri',
+  'dineIn',
+  'takeout',
+  'outdoorSeating',
+  'reservable',
   'location',
   'addressComponents',
 ].join(',');
@@ -285,12 +291,61 @@ async function runSingleRegion(regionKey, apiKey, policy, globalUsedPlaceIds) {
   const publicPath = path.join(publicDir, `${regionKey}.json`);
   fs.writeFileSync(publicPath, JSON.stringify(snapshot, null, 2) + '\n', 'utf8');
 
+  // Kalıcı seçim gerekçesi dosyası (araştırma kanıtları, kaynaklar, artı/eksi/belirsizlikler)
+  const selectedPlaceIds = new Set(snapshot.venues.map((v) => v.placeId));
+  const dossierDir = path.join(ROOT, 'lib', 'gastronomy-v3', 'dossiers');
+  fs.mkdirSync(dossierDir, { recursive: true });
+  const dossierPath = path.join(dossierDir, `${regionKey}.dossier.json`);
+  const dossierData = {
+    schemaVersion: '3.2',
+    regionKey,
+    displayName: regionDef.displayName,
+    verifiedAt: snapshot.verifiedAt,
+    selectedCount: snapshot.venues.length,
+    rejectedControls: evaluated
+      .filter((e) => !e.accepted)
+      .map((e) => ({ id: e.seed.id, resolvedName: e.resolvedName, reason: e.reason })),
+    venues: evaluated
+      .filter((e) => e.accepted)
+      .map((e) => ({
+        id: e.seed.id,
+        categoryId: e.seed.categoryId,
+        resolvedName: e.resolvedName,
+        branchName: e.formattedAddress,
+        placeId: e.placeId,
+        coordinates: e.coordinates || null,
+        rating: e.rating,
+        userRatingCount: e.userRatingCount,
+        priceLevel: e.priceLevel || null,
+        serviceFlags: {
+          dineIn: e.dineIn ?? null,
+          takeout: e.takeout ?? null,
+          outdoorSeating: e.outdoorSeating ?? null,
+          reservable: e.reservable ?? null,
+        },
+        websiteUri: e.websiteUri || null,
+        mapsUri: e.mapsUri,
+        recommendedPrimary: e.seed.whatToOrder,
+        recommendedSecondary: e.seed.secondaryItems || [],
+        suitability: e.seed.suitability || null,
+        verifiedAt: e.seed.dossier?.verifiedAt || snapshot.verifiedAt.slice(0, 10),
+        sources: e.seed.dossier?.sources || [],
+        pros: e.seed.dossier?.pros || [],
+        cons: e.seed.dossier?.cons || [],
+        uncertainties: e.seed.dossier?.uncertainties || [],
+        selectionScore: e.score,
+        selectedForSnapshot: selectedPlaceIds.has(e.placeId),
+      })),
+  };
+  fs.writeFileSync(dossierPath, JSON.stringify(dossierData, null, 2) + '\n', 'utf8');
+
   console.log(`\n✓ ${snapshot.categories.length} aktif kategori, ${snapshot.venues.length} doğrulanmış mekan yazıldı:`);
   for (const cat of snapshot.categories) {
     const count = snapshot.venues.filter((v) => v.categoryId === cat.id).length;
     console.log(`   • ${cat.emoji} ${cat.label}: ${count} mekan`);
   }
   console.log(`✓ Snapshot: lib/gastronomy-v3/regions/${regionKey}.json`);
+  console.log(`✓ Dossier: lib/gastronomy-v3/dossiers/${regionKey}.dossier.json`);
   console.log(`✓ Audit log: work/gastronomy-v3/${regionKey}.audit.json`);
 }
 

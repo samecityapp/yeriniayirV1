@@ -39,6 +39,14 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'burger yiyelim',
   'ekrem coşkun',
   'ekrem coskun',
+  'bafetto',
+  'pizza locale',
+  'viyana kahvesi',
+  'çeşme bazlama',
+  'cesme bazlama',
+  'beyaz fırın',
+  'beyaz firin',
+  'nappo',
 ];
 
 export const FOOD_PLACE_TYPES = new Set<string>([
@@ -82,6 +90,69 @@ export const FOOD_PLACE_TYPES = new Set<string>([
 
 export const FORBIDDEN_VISITOR_COPY_REGEX =
   /en iyi|rakipsiz|kusursuz|mükemmel|muhteşem|tartışmasız|1 numara|yorum|Michelin|Gault|Time Out|Barista Magazine|Kaynaklar|Neden Gitmeli/i;
+
+export const FIRST_PERSON_TASTING_REGEX =
+  /\b(tattım|tattık|denedim|denedik|gittim|gittik|bayıldım|bayıldık|benim favorim|bizim favorimiz|kendim deneyimledim)\b/i;
+
+export const UNVERIFIED_PRICE_OR_CLOCK_REGEX =
+  /(\b\d+\s*(tl|₺|try|lira)\b|\b([01]?\d|2[0-3]):[0-5]\d\b)/i;
+
+export function matchesExpectedBrandWord(name: string, expectedBrandWord?: string): boolean {
+  if (!expectedBrandWord || !expectedBrandWord.trim()) return true;
+  const clean = (s: string) =>
+    normalizeTr(s)
+      .replace(/[^a-z0-9çğıöşü]+/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  const normName = clean(name);
+  const normExpected = clean(expectedBrandWord);
+  if (!normExpected) return true;
+  const nameTokens = normName.split(' ');
+  const expectedTokens = normExpected.split(' ');
+  for (let i = 0; i <= nameTokens.length - expectedTokens.length; i++) {
+    let allMatch = true;
+    for (let j = 0; j < expectedTokens.length; j++) {
+      if (nameTokens[i + j] !== expectedTokens[j]) {
+        allMatch = false;
+        break;
+      }
+    }
+    if (allMatch) return true;
+  }
+  return false;
+}
+
+export function formatVerifiedPriceTier(priceLevel?: string | null): string | null {
+  switch (priceLevel) {
+    case 'PRICE_LEVEL_INEXPENSIVE':
+      return 'Bütçe seviyesi (Google): Ekonomik';
+    case 'PRICE_LEVEL_MODERATE':
+      return 'Bütçe seviyesi (Google): Orta';
+    case 'PRICE_LEVEL_EXPENSIVE':
+      return 'Bütçe seviyesi (Google): Üst-orta';
+    case 'PRICE_LEVEL_VERY_EXPENSIVE':
+      return 'Bütçe seviyesi (Google): Yüksek';
+    default:
+      return null;
+  }
+}
+
+export function buildStructuredBeforeYouGo(item: V3EvaluationResult): string[] {
+  const s = item.seed.suitability;
+  if (!s) {
+    return item.seed.beforeYouGo.slice(0, 4);
+  }
+  const tips: string[] = [
+    `Oturma & Servis: ${s.seating}${s.crowdAndNoise ? ` · ${s.crowdAndNoise}` : ''}`,
+    `Dezavantaj: ${s.disadvantage}`,
+    `Ulaşım: ${s.transit}`,
+  ];
+  const priceTier = formatVerifiedPriceTier(item.priceLevel);
+  if (priceTier) {
+    tips.push(priceTier);
+  }
+  return tips;
+}
 
 export function normalizeTr(text: string): string {
   return text
@@ -191,6 +262,17 @@ export function evaluateAndScoreCandidate(
   const businessStatus = apiPlace.businessStatus || null;
   const formattedAddress = apiPlace.formattedAddress || '';
   const mapsUri = cleanMapsUri(apiPlace.googleMapsUri);
+  const priceLevel = apiPlace.priceLevel || null;
+  const websiteUri = apiPlace.websiteUri || null;
+  const dineIn = typeof apiPlace.dineIn === 'boolean' ? apiPlace.dineIn : null;
+  const takeout = typeof apiPlace.takeout === 'boolean' ? apiPlace.takeout : null;
+  const outdoorSeating =
+    typeof apiPlace.outdoorSeating === 'boolean' ? apiPlace.outdoorSeating : null;
+  const reservable = typeof apiPlace.reservable === 'boolean' ? apiPlace.reservable : null;
+  const coordinates =
+    apiPlace.location?.latitude != null && apiPlace.location?.longitude != null
+      ? { lat: apiPlace.location.latitude, lng: apiPlace.location.longitude }
+      : null;
 
   const reject = (reason: string): V3EvaluationResult => ({
     seed,
@@ -205,6 +287,13 @@ export function evaluateAndScoreCandidate(
     formattedAddress,
     mapsUri,
     matchedNeighborhood: '',
+    priceLevel,
+    websiteUri,
+    dineIn,
+    takeout,
+    outdoorSeating,
+    reservable,
+    coordinates,
   });
 
   // Kapı 1: Operasyonel durum
@@ -233,38 +322,103 @@ export function evaluateAndScoreCandidate(
     return reject(`recent_quality_degradation:${seed.degradationReason || 'flagged'}`);
   }
 
-  // Kapı 6: Minimum kalite eşiği (şef/miras koruması dahil)
+  // Kapı 5B: Marka sürekliliği ve isim değişimi kontrolü
+  if (!matchesExpectedBrandWord(rawName, seed.expectedBrandWord)) {
+    return reject(`brand_discontinuity:expected_${seed.expectedBrandWord}_got_${rawName}`);
+  }
+
+  // Kapı 6: Minimum kalite eşiği (yerel müdavim / şef / miras koruması dahil)
   if (rating === null || userRatingCount === null) {
     return reject('missing_rating_metrics');
   }
-  if (seed.chefOrHeritageProtected) {
-    if (rating < 4.2 || userRatingCount < 200) {
-      return reject(`below_quality_threshold:★${rating}(${userRatingCount})`);
+
+  const sources = seed.dossier?.sources || [];
+  const independentProofSources = sources.filter(
+    (s) => s.kind === 'editorial' || s.kind === 'community' || s.kind === 'award'
+  );
+
+  if (seed.chefOrHeritageProtected || seed.communityInsiderProtected) {
+    if (rating < 4.2 || userRatingCount < 200 || independentProofSources.length < 2) {
+      return reject(
+        `below_quality_threshold:★${rating}(${userRatingCount})_proofs_${independentProofSources.length}`
+      );
     }
   } else if (rating < 4.4 || userRatingCount < 35) {
     return reject(`below_quality_threshold:★${rating}(${userRatingCount})`);
   }
 
   // Kapı 7: Aşırı ticarileşmiş turist hacmi filtresi
-  if (userRatingCount > 5000 && rating < 4.5 && !seed.chefOrHeritageProtected) {
+  if (
+    userRatingCount > 5000 &&
+    rating < 4.5 &&
+    !seed.chefOrHeritageProtected &&
+    !seed.communityInsiderProtected
+  ) {
     return reject(`over_commercialized_tourist_volume:★${rating}(${userRatingCount})`);
   }
 
-  // Bileşik Yerel Cevher Skoru (0..100)
-  const baseRatingScore = Math.min(45, Math.max(0, (rating - 3.8) * 45));
-  const communityScore = Math.min(25, seed.localSignals.length * 8);
+  // Kapı 8: Çoklu kaynak uzlaşısı, şişirilmiş puan koruması ve seçim gerekçesi tamlığı
+  if (userRatingCount < 150 && rating >= 4.8 && independentProofSources.length === 0) {
+    return reject('suspected_rating_inflation_no_community_proof');
+  }
+  if (sources.length < 2) {
+    return reject('insufficient_independent_sources');
+  }
+  const secondaryItems = seed.secondaryItems || [];
+  if (!seed.whatToOrder.length || !secondaryItems.length) {
+    return reject('missing_primary_or_secondary_items');
+  }
+  const primarySet = new Set(seed.whatToOrder.map((w) => normalizeTr(w)));
+  for (const sec of secondaryItems) {
+    if (!sec.name.trim() || !sec.note.trim() || !sec.proof.trim()) {
+      return reject('incomplete_secondary_item_proof');
+    }
+    if (primarySet.has(normalizeTr(sec.name))) {
+      return reject(`duplicate_primary_and_secondary_item:${sec.name}`);
+    }
+  }
+  if (
+    !seed.suitability?.seating ||
+    !seed.suitability?.disadvantage ||
+    !seed.suitability?.transit ||
+    !seed.dossier?.cons?.length ||
+    !seed.dossier?.uncertainties?.length
+  ) {
+    return reject('incomplete_selection_dossier');
+  }
+  if (
+    dineIn === false &&
+    !/(al[- ]?götür|paket|ayakta|oturma alanı yok)/i.test(seed.suitability.seating)
+  ) {
+    return reject('seating_mismatch_no_dine_in');
+  }
+
+  // Bileşik Yerel Cevher Skoru (0..100) — çoklu kaynak + müdavim + uzmanlık + ikincil ürün dengeli
+  const baseRatingScore = Math.min(36, Math.max(0, (rating - 3.6) * 30));
+  const evidenceScore = Math.min(28, sources.length * 8 + independentProofSources.length * 5);
+  const communitySignalScore = Math.min(12, seed.localSignals.length * 4);
   const hiddenGemBonus =
-    userRatingCount >= 35 && userRatingCount <= 600 && rating >= 4.5
-      ? 14
-      : userRatingCount <= 1200 && rating >= 4.6
-      ? 8
+    userRatingCount >= 35 && userRatingCount <= 700 && rating >= 4.5
+      ? 12
+      : userRatingCount <= 1500 && rating >= 4.5
+      ? 7
+      : userRatingCount <= 1200 && rating >= 4.4
+      ? 5
       : 0;
-  const signatureClarity = seed.whatToOrder.length > 0 ? 10 : 0;
-  const heritageBonus = seed.chefOrHeritageProtected ? 18 : 0;
+  const completenessBonus =
+    (seed.whatToOrder.length > 0 ? 5 : 0) + (secondaryItems.length > 0 ? 5 : 0);
+  const heritageBonus = seed.chefOrHeritageProtected || seed.communityInsiderProtected ? 10 : 0;
 
   const totalScore = Math.min(
     100,
-    Math.round(baseRatingScore + communityScore + hiddenGemBonus + signatureClarity + heritageBonus)
+    Math.round(
+      baseRatingScore +
+        evidenceScore +
+        communitySignalScore +
+        hiddenGemBonus +
+        completenessBonus +
+        heritageBonus
+    )
   );
 
   return {
@@ -280,6 +434,13 @@ export function evaluateAndScoreCandidate(
     formattedAddress,
     mapsUri,
     matchedNeighborhood: geo.matchedNeighborhood,
+    priceLevel,
+    websiteUri,
+    dineIn,
+    takeout,
+    outdoorSeating,
+    reservable,
+    coordinates,
   };
 }
 
@@ -296,6 +457,12 @@ export function validateVisitorCopy(venue: V3PublicVenue): string[] {
   for (const text of fields) {
     if (FORBIDDEN_VISITOR_COPY_REGEX.test(text)) {
       issues.push(`Forbidden visitor copy token in "${text}"`);
+    }
+    if (FIRST_PERSON_TASTING_REGEX.test(text)) {
+      issues.push(`First-person tasting claim in "${text}"`);
+    }
+    if (UNVERIFIED_PRICE_OR_CLOCK_REGEX.test(text)) {
+      issues.push(`Unverified price or clock string in "${text}"`);
     }
   }
   if (!venue.mapsUri.startsWith('https://maps.google.com/?cid=')) {
@@ -326,6 +493,11 @@ export function selectDynamicRegionVenues(
     if (!bucket || bucket.length >= 4) continue;
 
     usedPlaceIds.add(item.placeId);
+    const formattedAlsoTry =
+      item.seed.secondaryItems && item.seed.secondaryItems.length > 0
+        ? item.seed.secondaryItems.map((sec) => `${sec.name} — ${sec.note}`)
+        : item.seed.alsoTry;
+
     bucket.push({
       id: item.seed.id,
       placeId: item.placeId,
@@ -338,8 +510,8 @@ export function selectDynamicRegionVenues(
       description: item.seed.description,
       whatToOrder: item.seed.whatToOrder.slice(0, 3),
       menuFrom: item.seed.menuFrom,
-      alsoTry: item.seed.alsoTry,
-      beforeYouGo: item.seed.beforeYouGo.slice(0, 2),
+      alsoTry: formattedAlsoTry,
+      beforeYouGo: buildStructuredBeforeYouGo(item),
     });
   }
 

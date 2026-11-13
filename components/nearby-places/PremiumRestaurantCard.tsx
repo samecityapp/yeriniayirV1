@@ -5,7 +5,7 @@ import {VenueImage} from '@/components/food/VenueImage';
 import type { VisitorFoodVenue } from '@/lib/food/types';
 import { GooglePlaceRating } from '@/components/food/GooglePlaceRating';
 import { getLocalizedText } from '@/lib/localization';
-import { MapPin, Star, Utensils, ChevronRight, Info, ExternalLink } from 'lucide-react';
+import { MapPin, Star, Utensils, ChevronRight, Info, ExternalLink, Sparkles } from 'lucide-react';
 
 interface PremiumRestaurantCardProps {
   restaurant: VisitorFoodVenue;
@@ -21,6 +21,7 @@ export function PremiumRestaurantCard({
   priority = false,
 }: PremiumRestaurantCardProps) {
   const firstTip = restaurant.knowBeforeYouGo?.tips?.[0];
+  const firstAlsoTry = restaurant.alsoTry?.items?.[0];
   const mapsUrl = restaurant.ratings?.[0]?.attribution?.mapsUri ||
     `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(getLocalizedText(restaurant.name, lang) + ' ' + (restaurant.address || restaurant.neighborhood || getLocalizedText(restaurant.location, lang)))}`;
 
@@ -95,6 +96,12 @@ export function PremiumRestaurantCard({
             <p className="text-xs sm:text-[13px] font-bold text-slate-900 leading-snug line-clamp-2">
               {restaurant.orderSuggestion?.title || restaurant.menuFrom.join(' · ')}
             </p>
+            {firstAlsoTry && (
+              <div className="mt-1.5 pt-1.5 border-t border-blue-100/80 flex items-center gap-1.5 text-[11px] text-slate-700 font-semibold">
+                <Sparkles size={11} className="text-blue-600 flex-shrink-0" />
+                <span className="truncate">Ayrıca dene: {firstAlsoTry.name}</span>
+              </div>
+            )}
           </div>
         )}
 

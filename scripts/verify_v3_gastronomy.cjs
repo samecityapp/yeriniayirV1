@@ -157,6 +157,61 @@ test('policy gates reject closed, chain, out-of-neighborhood, and degraded candi
 
   assert.equal(byId.get('ctrl-ali-usta').accepted, false);
   assert.equal(byId.get('ctrl-asuman').accepted, false);
+
+  assert.equal(byId.get('ctrl-cekirdekhane').accepted, false);
+  assert.ok(byId.get('ctrl-cekirdekhane').reason.includes('brand_discontinuity'));
+
+  assert.equal(byId.get('ctrl-bafetto-chain').accepted, false);
+  assert.equal(byId.get('ctrl-bafetto-chain').reason, 'chain_or_franchise');
+});
+
+test('V3.2 rules, secondaryItems, suitability, zero Çekirdekhane, complete dossiers & visitor isolation', () => {
+  const rulesPath = path.join(ROOT, 'lib', 'gastronomy-v3', 'RULES.md');
+  assert.ok(fs.existsSync(rulesPath), 'RULES.md must exist');
+  assert.ok(fs.readFileSync(rulesPath, 'utf8').length > 500, 'RULES.md must be populated');
+
+  const firstPersonRe = /\b(tattım|tattık|denedim|denedik|gittim|gittik|bayıldım|bayıldık|benim favorim|bizim favorimiz|kendim deneyimledim)\b/i;
+  const unverifiedPriceClockRe = /(\b\d+\s*(tl|₺|try|lira)\b|\b([01]?\d|2[0-3]):[0-5]\d\b)/i;
+
+  for (const key of REGION_KEYS) {
+    const snap = JSON.parse(fs.readFileSync(path.join(ROOT, 'lib', 'gastronomy-v3', 'regions', `${key}.json`), 'utf8'));
+    for (const v of snap.venues) {
+      assert.ok(!/çekirdekhane|cekirdekhane|^çekirdek$/i.test(v.name), `Forbidden Cekirdek/Cekirdekhane in ${key}: ${v.name}`);
+      assert.ok(Array.isArray(v.alsoTry) && v.alsoTry.length >= 1, `Missing alsoTry in ${key}/${v.id}`);
+      assert.ok(v.alsoTry.every((item) => item.includes(' — ')), `Expected ' — ' format in alsoTry for ${key}/${v.id}`);
+      assert.ok(Array.isArray(v.beforeYouGo) && v.beforeYouGo.length >= 3, `Expected >=3 beforeYouGo tips in ${key}/${v.id}`);
+
+      const texts = [v.name, v.description, ...v.whatToOrder, ...v.menuFrom, ...v.alsoTry, ...v.beforeYouGo];
+      for (const txt of texts) {
+        assert.ok(!firstPersonRe.test(txt), `First-person claim in ${key}/${v.id}: ${txt}`);
+        assert.ok(!unverifiedPriceClockRe.test(txt), `Unverified TL/clock in ${key}/${v.id}: ${txt}`);
+      }
+    }
+
+    const dossierPath = path.join(ROOT, 'lib', 'gastronomy-v3', 'dossiers', `${key}.dossier.json`);
+    assert.ok(fs.existsSync(dossierPath), `Missing dossier for ${key}`);
+    const dossier = JSON.parse(fs.readFileSync(dossierPath, 'utf8'));
+    assert.equal(dossier.selectedCount, snap.venues.length);
+    for (const dv of dossier.venues) {
+      assert.ok(Array.isArray(dv.sources) && dv.sources.length >= 2, `Expected >=2 sources in dossier ${key}/${dv.id}`);
+      assert.ok(Array.isArray(dv.pros) && dv.pros.length >= 1, `Expected pros in dossier ${key}/${dv.id}`);
+      assert.ok(Array.isArray(dv.cons) && dv.cons.length >= 1, `Expected cons in dossier ${key}/${dv.id}`);
+      assert.ok(Array.isArray(dv.uncertainties) && dv.uncertainties.length >= 1, `Expected uncertainties in dossier ${key}/${dv.id}`);
+    }
+  }
+
+  // Ensure visitor runtime & UI files never import dossiers/
+  const runtimeCheckFiles = [
+    path.join(ROOT, 'lib', 'gastronomy-v3', 'registry.ts'),
+    path.join(ROOT, 'lib', 'pilot', 'integration', 'discovery.ts'),
+    path.join(ROOT, 'lib', 'pilot', 'integration', 'foodAdapter.ts'),
+    path.join(ROOT, 'components', 'nearby-places', 'PremiumRestaurantCard.tsx'),
+    path.join(ROOT, 'components', 'mobile-detail-variants', 'VariantABottomSheet.tsx'),
+  ];
+  for (const file of runtimeCheckFiles) {
+    const content = fs.readFileSync(file, 'utf8');
+    assert.ok(!content.includes('dossiers/'), `Forbidden dossiers import/ref in ${file}`);
+  }
 });
 
 test('runtime discovery, foodAdapter, and realProvider expose all 5 Kadikoy regions as published with Il>Ilce>Semt', async () => {

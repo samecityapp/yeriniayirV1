@@ -7,20 +7,56 @@ export interface V3CategoryDef {
   isMustTry?: boolean;
 }
 
+export type V3EvidenceKind = 'operator' | 'editorial' | 'community' | 'award' | 'maps';
+
+export interface V3EvidenceSource {
+  title: string;
+  url: string;
+  date: string;
+  kind: V3EvidenceKind;
+  note?: string;
+}
+
+export interface V3SecondaryItemSeed {
+  name: string;
+  note: string;
+  proof: string;
+}
+
+export interface V3SuitabilitySeed {
+  seating: string;
+  crowdAndNoise: string;
+  disadvantage: string;
+  transit: string;
+}
+
+export interface V3SelectionDossierSeed {
+  verifiedAt: string;
+  sources: V3EvidenceSource[];
+  pros: string[];
+  cons: string[];
+  uncertainties: string[];
+}
+
 export interface V3CandidateSeed {
   id: string;
   placeId?: string;
   searchQuery?: string;
   categoryId: string;
   displayNameOverride?: string;
+  expectedBrandWord?: string;
   localSignals: string[];
   chefOrHeritageProtected?: boolean;
+  communityInsiderProtected?: boolean;
   degradationFlag?: boolean;
   degradationReason?: string;
   description: string;
   whatToOrder: string[];
   menuFrom: string[];
   alsoTry: string[];
+  secondaryItems?: V3SecondaryItemSeed[];
+  suitability?: V3SuitabilitySeed;
+  dossier?: V3SelectionDossierSeed;
   beforeYouGo: string[];
 }
 
@@ -55,6 +91,12 @@ export interface V3GooglePlacePayload {
   primaryType?: string;
   types?: string[];
   googleMapsUri?: string;
+  priceLevel?: string;
+  websiteUri?: string;
+  dineIn?: boolean;
+  takeout?: boolean;
+  outdoorSeating?: boolean;
+  reservable?: boolean;
   location?: { latitude?: number; longitude?: number };
   addressComponents?: Array<{
     longText?: string;
@@ -76,6 +118,53 @@ export interface V3EvaluationResult {
   formattedAddress: string;
   mapsUri: string;
   matchedNeighborhood: string;
+  priceLevel?: string | null;
+  websiteUri?: string | null;
+  dineIn?: boolean | null;
+  takeout?: boolean | null;
+  outdoorSeating?: boolean | null;
+  reservable?: boolean | null;
+  coordinates?: { lat: number; lng: number } | null;
+}
+
+export interface V3VenueDossierRecord {
+  id: string;
+  categoryId: string;
+  resolvedName: string;
+  branchName: string;
+  placeId: string;
+  coordinates: { lat: number; lng: number } | null;
+  rating: number | null;
+  userRatingCount: number | null;
+  priceLevel: string | null;
+  serviceFlags: {
+    dineIn: boolean | null;
+    takeout: boolean | null;
+    outdoorSeating: boolean | null;
+    reservable: boolean | null;
+  };
+  websiteUri: string | null;
+  mapsUri: string;
+  recommendedPrimary: string[];
+  recommendedSecondary: V3SecondaryItemSeed[];
+  suitability: V3SuitabilitySeed | null;
+  verifiedAt: string;
+  sources: V3EvidenceSource[];
+  pros: string[];
+  cons: string[];
+  uncertainties: string[];
+  selectionScore: number;
+  selectedForSnapshot: boolean;
+}
+
+export interface V3RegionDossierFile {
+  schemaVersion: string;
+  regionKey: string;
+  displayName: string;
+  verifiedAt: string;
+  selectedCount: number;
+  rejectedControls: Array<{ id: string; resolvedName: string; reason: string }>;
+  venues: V3VenueDossierRecord[];
 }
 
 /**
