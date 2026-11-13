@@ -728,7 +728,7 @@ export const ISTANBUL_KADIKOY_YELDEGIRMENI_DEF: V3RegionDefinition = {
       suitability: {
         seating: 'İç salon bar ve masa düzeni, akşam saatlerinde rezervasyon önerilir',
         crowdAndNoise: 'Kokteyl saati hareketli ama müzik seviyesi sohbete izin veren bistro',
-        disadvantage: 'Google Places üzerinde fiyat seviyesi bilgisi belirtilmemiş; küçük gruplar için daha uygun.',
+        disadvantage: 'Kompakt salon yapısı nedeniyle kalabalık gruplardan çok ikili veya küçük grup buluşmalarına uygundur.',
         transit: 'Yeldeğirmeni Karakolhane Caddesi paralel sokaklarından yürüme mesafesinde.',
       },
       beforeYouGo: [],

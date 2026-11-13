@@ -101,10 +101,12 @@ export const FOOD_PLACE_TYPES = new Set<string>([
   'oyster_bar_restaurant',
   'deli',
   'soup_restaurant',
+  'tea_house',
+  'chicken_restaurant',
 ]);
 
 export const FORBIDDEN_VISITOR_COPY_REGEX =
-  /en iyi|rakipsiz|kusursuz|mükemmel|muhteşem|tartışmasız|1 numara|yorum|Michelin|Gault|Time Out|Barista Magazine|Kaynaklar|Neden Gitmeli/i;
+  /en iyi|rakipsiz|kusursuz|mükemmel|muhteşem|tartışmasız|1 numara|yorum|Michelin|Gault|Time Out|Barista Magazine|Kaynaklar|Neden Gitmeli|API fiyat|Google fiyat|Google Places/i;
 
 export const FIRST_PERSON_TASTING_REGEX =
   /\b(tattım|tattık|denedim|denedik|gittim|gittik|bayıldım|bayıldık|benim favorim|bizim favorimiz|kendim deneyimledim)\b/i;

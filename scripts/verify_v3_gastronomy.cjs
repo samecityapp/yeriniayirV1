@@ -169,11 +169,26 @@ test('V3.3 dynamic denemelisin, Moda 5-slot iconic coffee & factual view accurac
   );
 
   const countDenemelisin = (snap) => snap.venues.filter((v) => v.categoryId === 'denemelisin').length;
-  assert.equal(countDenemelisin(moda), 8, 'Moda denemelisin should have 8 authentic venues');
-  assert.equal(countDenemelisin(carsi), 8, 'Kadikoy denemelisin should have 8 heritage venues (incl. Ozcan Tursu)');
+  assert.equal(countDenemelisin(moda), 10, 'Moda denemelisin should have 10 authentic venues');
+  assert.equal(countDenemelisin(carsi), 10, 'Kadikoy denemelisin should have 10 heritage venues');
   assert.equal(countDenemelisin(yeldegirmeni), 4, 'Yeldegirmeni denemelisin must not be artificially padded to 10');
   assert.equal(countDenemelisin(caddebostan), 4, 'Caddebostan denemelisin must not be artificially padded to 10');
   assert.equal(countDenemelisin(suadiye), 4, 'Suadiye denemelisin must not be artificially padded to 10');
+
+  assert.ok(
+    moda.venues.every((v) => typeof v.neighborhood === 'string' && v.neighborhood.includes(',')),
+    'Every Moda venue must expose a street/micro-area sub-location label'
+  );
+  const imece = moda.venues.find((v) => v.id === 'moda-imece');
+  assert.equal(imece?.name, 'İmece Moda Mutfak', 'moda-imece must use clean capitalized display name');
+  assert.ok(
+    moda.venues.some((v) => v.categoryId === 'denemelisin' && v.name.includes('Reks Kokoreç')),
+    'Moda denemelisin must include Reks Kokoreç'
+  );
+  assert.ok(
+    moda.venues.some((v) => v.categoryId === 'denemelisin' && v.name.includes('Moda Aile Çay Bahçesi')),
+    'Moda denemelisin must include Moda Aile Çay Bahçesi'
+  );
 
   assert.equal(carsi.region.slug, 'kadikoy');
   assert.equal(carsi.region.neighborhood, 'Kadıköy');
@@ -184,6 +199,28 @@ test('V3.3 dynamic denemelisin, Moda 5-slot iconic coffee & factual view accurac
   assert.ok(kadikoyCoffee.some((v) => v.name.includes("Fazıl Bey")), 'Kadikoy kahve must include Fazil Bey');
   const brekkie = carsi.venues.find((v) => v.id === 'carsi-brekkie');
   assert.equal(brekkie?.neighborhood, 'Yoğurtçu Parkı, Kadıköy', 'Brekkie must show Yogurtcu Parki sub-area');
+  assert.ok(
+    carsi.venues.some((v) => v.categoryId === 'hamburger' && v.name.includes('Salt Fried Chicken Kadıköy')),
+    'Kadikoy hamburger must include Salt Fried Chicken Kadıköy'
+  );
+  assert.ok(
+    carsi.venues.some((v) => v.id === 'carsi-atm-burger' && v.name === 'ATM Burger'),
+    'carsi-atm-burger must use clean ATM Burger display name'
+  );
+  const kadikoyDate = carsi.venues.filter((v) => v.categoryId === 'date');
+  assert.equal(kadikoyDate.length, 5, 'Kadikoy date should have 5 venues with iconic Gunesin Sofrasi slot');
+  assert.ok(
+    kadikoyDate.some((v) => v.name.includes('Güneşin Sofrası Meyhane')),
+    'Kadikoy date must include Güneşin Sofrası Meyhane'
+  );
+  assert.ok(
+    carsi.venues.some((v) => v.categoryId === 'denemelisin' && v.name === 'Kadı Nimet Balıkçılık'),
+    'Kadikoy denemelisin must include Kadı Nimet Balıkçılık'
+  );
+  assert.ok(
+    carsi.venues.some((v) => v.categoryId === 'denemelisin' && v.name === 'Sayla Mantı'),
+    'Kadikoy denemelisin must include Sayla Mantı'
+  );
 });
 
 test('Caddebostan dynamically prunes breakfast ("Yoksa Onerme") when no qualifying venue passes gates', () => {
@@ -210,15 +247,7 @@ test('all 11 published regions have zero overlapping placeIds, valid ratings, an
       );
       assert.ok(venue.mapsUri.startsWith('https://maps.google.com/?cid='), `Invalid CID URI: ${venue.mapsUri}`);
       assert.ok(
-        typeof venue.rating === 'number' &&
-          venue.rating >=
-            (key === 'aydin-kusadasi' ||
-            key === 'mugla-ula-akyaka' ||
-            key === 'gaziantep-merkez' ||
-            key.startsWith('antalya-')
-              ? 3.8
-              : 4.0) &&
-          venue.rating <= 5.0
+        typeof venue.rating === 'number' && venue.rating >= 3.8 && venue.rating <= 5.0
       );
     }
   }
@@ -278,7 +307,7 @@ test('snapshots never leak review counts, source URLs, forbidden terms, or API k
     const raw = JSON.stringify(data);
     assert.ok(!/userRatingCount|reviewCount|googleReviewCount|sourcePageUrl/.test(raw), `Leak in ${key}`);
     assert.ok(
-      !/en iyi|rakipsiz|kusursuz|mükemmel|muhteşem|tartışmasız|1 numara|yorum|Michelin|Gault|Time Out|Barista Magazine|Kaynaklar|Neden Gitmeli/i.test(
+      !/en iyi|rakipsiz|kusursuz|mükemmel|muhteşem|tartışmasız|1 numara|yorum|Michelin|Gault|Time Out|Barista Magazine|Kaynaklar|Neden Gitmeli|API fiyat|Google fiyat|Google Places/i.test(
         raw
       ),
       `Forbidden copy in ${key}`
@@ -319,6 +348,17 @@ test('policy gates reject closed, chain, out-of-neighborhood, and degraded candi
 
   assert.equal(byId.get('ctrl-bafetto-chain').accepted, false);
   assert.equal(byId.get('ctrl-bafetto-chain').reason, 'chain_or_franchise');
+
+  const carsiAudit = JSON.parse(
+    fs.readFileSync(path.join(ROOT, 'work/gastronomy-v3/istanbul-kadikoy-carsi.audit.json'), 'utf8')
+  );
+  const cMap = new Map(carsiAudit.decisions.map((d) => [d.id, d]));
+  assert.equal(cMap.get('ctrl-carsi-starbucks').accepted, false);
+  assert.equal(cMap.get('ctrl-carsi-starbucks').reason, 'chain_or_franchise');
+  assert.equal(cMap.get('ctrl-carsi-beppe-closed').accepted, false);
+  assert.ok(cMap.get('ctrl-carsi-beppe-closed').reason.includes('CLOSED_PERMANENTLY'));
+  assert.equal(cMap.get('ctrl-carsi-moda-outside').accepted, false);
+  assert.ok(cMap.get('ctrl-carsi-moda-outside').reason.includes('outside_strict_neighborhood'));
 
   const konyaaltiAudit = JSON.parse(
     fs.readFileSync(path.join(ROOT, 'work/gastronomy-v3/antalya-konyaalti.audit.json'), 'utf8')

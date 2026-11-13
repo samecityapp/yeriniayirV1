@@ -736,7 +736,7 @@ export const ISTANBUL_KADIKOY_CADDEBOSTAN_DEF: V3RegionDefinition = {
       suitability: {
         seating: 'Bar oturması, iç salon ve sokak önü masalarıyla tam oturmalı gastro-bar',
         crowdAndNoise: 'Akşamları sıcak, sohbete uygun bar enerjisi',
-        disadvantage: 'Google Places fiyat seviyesi verisi mevcut değil; geç saatte kalabalık artıyor.',
+        disadvantage: 'Akşam geç saatlerde bar çevresinde kalabalık ve ses seviyesi artıyor; hafta sonu rezervasyon önerilir.',
         transit: 'Bağdat Caddesi’nden Plaj Yolu yönüne inen sokaklarda.',
       },
       beforeYouGo: [],
@@ -858,7 +858,7 @@ export const ISTANBUL_KADIKOY_CADDEBOSTAN_DEF: V3RegionDefinition = {
       suitability: {
         seating: 'Sınırlı kapı önü oturma; ağırlıklı al-götür sahil yürüyüşü dondurması',
         crowdAndNoise: 'Akşamları sahil dönüşü uzun dondurma kuyrukları olağan',
-        disadvantage: 'Yaz akşamları sıra uzun; geniş oturma alanı yok ve API fiyat seviyesi belirtilmemiş.',
+        disadvantage: 'Yaz akşamları dondurma kuyruğu uzayabiliyor; geniş oturma alanı bulunmadığından al-götür ağırlıklıdır.',
         transit: 'Caddebostan İskele Sokak ve Sahil Parkı’na birkaç adım uzaklıkta.',
       },
       beforeYouGo: [],

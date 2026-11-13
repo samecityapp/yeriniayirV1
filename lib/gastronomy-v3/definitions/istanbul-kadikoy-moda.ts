@@ -27,6 +27,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJQadKLUy5yhQR_hUDT42VD9o',
       categoryId: 'pizza',
       expectedBrandWord: 'gg pizza',
+      neighborhoodLabelOverride: 'Şair Nefi Sk. · Moda, Kadıköy',
       localSignals: ['uzun-fermantasyon', 'napoli-hamuru', 'mahalle-pizzacisi'],
       description:
         'Caferağa ara sokaklarında uzun soğuk fermantasyonlu ekşi maya hamuruyla odun fırınından Napoli pizzaları çıkaran butik pizzacı.',
@@ -87,6 +88,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJp-PlZlS5yhQRBU1RnwkGrNQ',
       categoryId: 'pizza',
       expectedBrandWord: 'artisan craft',
+      neighborhoodLabelOverride: 'Ağabey Sk. · Moda, Kadıköy',
       localSignals: ['eksi-maya', 'odun-firini', 'zengin-malzeme'],
       description:
         'Caferağa sokaklarında yüksek hidratasyonlu ekşi maya hamuru ve günlük soslarla pizza hazırlayan zanaatkar mutfak.',
@@ -135,6 +137,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJWxJD5gK5yhQRY52E-ssLYaM',
       categoryId: 'pizza',
       expectedBrandWord: 'il sud',
+      neighborhoodLabelOverride: 'Sarraf Ali Sk. · Moda, Kadıköy',
       localSignals: ['guney-italya-mutfagi', 'sarap-eslesmesi', 'sefli-italyan'],
       description:
         'Güney İtalya mutfak geleneğini ince hamurlu taş fırın pizzaları ve el yapımı taze makarnalarla Caferağa’da sunan restoran.',
@@ -185,6 +188,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJ9x0Mbsi5yhQRIRwJ_4xHSJI',
       categoryId: 'hamburger',
       expectedBrandWord: '2bites',
+      neighborhoodLabelOverride: 'Dalga Sk. · Moda, Kadıköy',
       localSignals: ['smash-burger', 'yumusak-patates-ekmegi', 'mahalle-burgercisi'],
       description:
         'Karamelize kenarlı smash köfteleri ve tereyağlı yumuşak ekmeğiyle Moda’nın en istikrarlı butik burger duraklarından biri.',
@@ -238,6 +242,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJsfnAHAK5yhQRqnAQLwcb3es',
       categoryId: 'hamburger',
       expectedBrandWord: 'soho smash',
+      neighborhoodLabelOverride: 'Moda Bostanı Sk. · Moda, Kadıköy',
       localSignals: ['smash-burger', 'brioche-ekmek', 'cadde-duragi'],
       description:
         'Mühürlenmiş ince smash köfte ve özel ekşi-tatlı burger sosuyla Caferağa’nın yüksek tempolu burger noktası.',
@@ -286,6 +291,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJjxKr-2a4yhQRqKeyb_cLKx8',
       categoryId: 'hamburger',
       expectedBrandWord: 'zapata',
+      neighborhoodLabelOverride: 'Sakız Sk. · Moda, Kadıköy',
       communityInsiderProtected: true,
       localSignals: ['yerel-kult', 'el-yapimi-köfte', 'mekan-klasigi'],
       description:
@@ -347,6 +353,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJaayBysO5yhQRNAaOi9OK3m8',
       categoryId: 'hamburger',
       expectedBrandWord: 'red bunny',
+      neighborhoodLabelOverride: 'Ferit Tek Sk. · Moda, Kadıköy',
       localSignals: ['butik-burger', 'ozel-soslar', 'gizli-cevher'],
       description:
         'Özel ev yapımı sosları, tereyağlı ekmekleri ve düzenli porsiyon standardıyla Caferağa’da yükselen bağımsız burgerci.',
@@ -397,6 +404,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJYc4vsQa5yhQR3eJyqdAvyp0',
       categoryId: 'kahve',
       expectedBrandWord: 'montag',
+      neighborhoodLabelOverride: 'Bademaltı Sk. · Moda, Kadıköy',
       localSignals: ['kendi-kavrumu', 'ucuncu-dalga', 'nitelikli-kahve'],
       description:
         'İstanbul’un öncü nitelikli kahve kavurucularından Montag’ın Moda’daki sade, çekirdek ve demleme odaklı espresso barı.',
@@ -414,7 +422,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
         seating: 'Sınırlı iç tezgah ve kaldırım tabureleri; hızlı kahve ve gel-al çok yaygın',
         crowdAndNoise: 'Sabah ve öğleden sonra mahalle kahvesi trafiği yüksek',
         disadvantage: 'Uzun saatler bilgisayarla çalışma veya geniş grup oturması için masalar yetersiz.',
-        transit: 'Muvakkithane ve Dr. Esat Işık Caddesi aksında Moda’nın merkezinde.',
+        transit: 'Bademaltı Sokak üzerinde, Moda Caddesi ve Mühürdar aksına birkaç adım mesafede.',
       },
       beforeYouGo: [],
       dossier: {
@@ -445,6 +453,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJ3UWl1rm5yhQRwfkxvKW3KzM',
       categoryId: 'kahve',
       expectedBrandWord: 'kont',
+      neighborhoodLabelOverride: 'Moda Mektebi Sk. · Moda, Kadıköy',
       localSignals: ['butik-kahveci', 'tatli-eslikci', 'mahalle-mudavimi'],
       description:
         'Ferit Tek Sokak’ta özenli espresso bazlı içecekleri ve ev yapımı tatlılarıyla mahallelinin müdavimi olduğu butik kahve dükkanı.',
@@ -498,6 +507,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJSczjKgC5yhQR4UGV1RI-zlY',
       categoryId: 'kahve',
       expectedBrandWord: 'vermilion',
+      neighborhoodLabelOverride: 'Rızapaşa Sk. · Moda, Kadıköy',
       localSignals: ['ozel-kavrum', 'sakin-sokak', 'ucuncu-dalga'],
       description:
         'Dr. Esat Işık Caddesi çevresinde seçilmiş micro-lot çekirdekleri temiz demleme profilleriyle sunan bağımsız kahve barı.',
@@ -547,6 +557,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       categoryId: 'kahve',
       displayNameOverride: 'Story Coffee Moda',
       expectedBrandWord: 'story',
+      neighborhoodLabelOverride: 'Dalga Sk. · Moda, Kadıköy',
       communityInsiderProtected: true,
       localSignals: ['ilk-nesil-moda-kahvecisi', 'kendi-kavrumu', 'yerel-klasik'],
       description:
@@ -603,6 +614,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJ1QbFIWG4yhQRZre_Qwdk7po',
       categoryId: 'kahve',
       expectedBrandWord: 'walter',
+      neighborhoodLabelOverride: 'Bademaltı Sk. · Moda, Kadıköy',
       iconicSettingOrVibeProtected: true,
       localSignals: ['ikonik-kavurmahane', 'endustriyel-tasarim', 'nitelikli-mudavim-kitlesi'],
       description:
@@ -659,6 +671,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJeUSQLCK5yhQRoe5CRUjON48',
       categoryId: 'kahve',
       expectedBrandWord: 'rawsters',
+      neighborhoodLabelOverride: 'Şifa Sk. (Falez Hattı) · Moda, Kadıköy',
       iconicSettingOrVibeProtected: true,
       localSignals: ['deniz-manzarali-kosk', 'sifa-falez-terasi', 'kendi-kavurmahanesi'],
       description:
@@ -717,6 +730,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJGcHl12C4yhQRnKlUgJydtvI',
       categoryId: 'date',
       expectedBrandWord: 'aida',
+      neighborhoodLabelOverride: 'Şeref Akdik Sk. · Moda, Kadıköy',
       chefOrHeritageProtected: true,
       localSignals: ['vino-e-cucina', 'el-yapimi-makarna', 'romantik-konak'],
       description:
@@ -773,6 +787,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJzS82MkK5yhQRvwd1j-D67QY',
       categoryId: 'date',
       expectedBrandWord: 'wayana',
+      neighborhoodLabelOverride: 'Ferit Tek Sk. · Moda, Kadıköy',
       localSignals: ['yerli-uzum-saraplari', 'tapas-paylasim', 'samimi-date'],
       description:
         'Anadolu’nun yerel üzümlerinden seçilmiş kadeh şarapları paylaşım tabakları ve mezelerle buluşturan samimi şarap barı.',
@@ -821,6 +836,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJQ4yDdIe5yhQRGJyjkHuGcFY',
       categoryId: 'date',
       expectedBrandWord: 'irregular',
+      neighborhoodLabelOverride: 'Ağabey Sk. · Moda, Kadıköy',
       localSignals: ['imza-kokteyl', 'bistro-tabaklari', 'gece-bulusmasi'],
       description:
         'Dengeli imza kokteylleri, paylaşımlı bistro tabakları ve sakin aydınlatmasıyla Moda’da modern buluşma noktası.',
@@ -869,6 +885,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJORIK5Ga4yhQRje_7bAPvF68',
       categoryId: 'date',
       expectedBrandWord: 'viktor levi',
+      neighborhoodLabelOverride: 'Damga Sk. · Moda, Kadıköy',
       chefOrHeritageProtected: true,
       localSignals: ['tarihi-bahce', 'köklü-sarap-evi', 'moda-klasigi'],
       description:
@@ -927,6 +944,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJi6pABLe5yhQROCNIbKj8Gv0',
       categoryId: 'kahvalti',
       expectedBrandWord: 'guten morgen',
+      neighborhoodLabelOverride: 'Fırıldak Sk. · Moda, Kadıköy',
       localSignals: ['eksi-maya-firin', 'kavurma-kahve', 'mahalle-kahvaltisi'],
       description:
         'Kendi ekşi maya ekmeği ve kavurduğu kahvesiyle sade, abartısız ve malzeme kalitesi yüksek sabah sofraları kuran mahalle mekanı.',
@@ -975,6 +993,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJ7wWL32a4yhQRnajy8YXbnHM',
       categoryId: 'kahvalti',
       expectedBrandWord: 'rafine',
+      neighborhoodLabelOverride: 'Nene Hatun Sk. · Moda, Kadıköy',
       localSignals: ['brunch-klasigi', 'bahce-masalari', 'zengin-kahvalti'],
       description:
         'Geniş kahvaltı ve brunch seçeneklerini özenli sunumla birleştiren Moda’nın köklü sabah buluşma adresi.',
@@ -992,7 +1011,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
         seating: 'Geniş oturma alanı, arka/dış bölüm ve hafta içi rezervasyon imkanı',
         crowdAndNoise: 'Hafta sonu aile ve arkadaş gruplarıyla oldukça hareketli',
         disadvantage: 'Pazar sabahı yoğunluğunda servis süresi uzayabiliyor.',
-        transit: 'Moda Şair Nefi Sokak üzerinde kolay yaya erişimi.',
+        transit: 'Nene Hatun Sokak üzerinde, Moda Caddesi ve tramvay hattına kısa yürüyüş mesafesinde.',
       },
       beforeYouGo: [],
       dossier: {
@@ -1023,6 +1042,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJFSX830C5yhQRiTfFGZGqQ28',
       categoryId: 'kahvalti',
       expectedBrandWord: 'happy croissants',
+      neighborhoodLabelOverride: 'Bademaltı Sk. · Moda, Kadıköy',
       localSignals: ['katmanli-kruvasan', 'fransiz-tereyagi', 'butik-firin'],
       description:
         'Gerçek tereyağıyla katmanlandırılmış kruvasan ve tuzlu-tatlı sandviçleriyle Caferağa’da Fransız usulü sabah durağı.',
@@ -1070,7 +1090,9 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       id: 'moda-pisi-mutfak',
       placeId: 'ChIJqymjiJm5yhQR6IBw34pGg4c',
       categoryId: 'kahvalti',
+      displayNameOverride: 'Pişi Mutfak Moda',
       expectedBrandWord: 'pisi mutfak',
+      neighborhoodLabelOverride: 'Ağabey Sk. · Moda, Kadıköy',
       localSignals: ['sicak-pisi', 'geleneksel-kahvalti', 'yoresel-recel'],
       description:
         'Yağ çekmeyen hafif pişileri ve özenli Anadolu kahvaltılıklarıyla geleneksel Türk kahvaltısını Moda sokaklarına taşıyan mutfak.',
@@ -1121,6 +1143,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJHaR2P2a4yhQR39F-oqWuBqM',
       categoryId: 'denemelisin',
       expectedBrandWord: 'basta',
+      neighborhoodLabelOverride: 'Sakız Sk. · Moda, Kadıköy',
       chefOrHeritageProtected: true,
       localSignals: ['sef-sokak-lezzeti', 'kuzu-durum', 'kadikoy-ikonu'],
       description:
@@ -1182,6 +1205,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJ-eZunpO5yhQRpWJolK417Lk',
       categoryId: 'denemelisin',
       expectedBrandWord: 'muutto',
+      neighborhoodLabelOverride: 'Cemal Süreya Sk. · Moda, Kadıköy',
       localSignals: ['anadolu-tapas', 'antakya-esintisi', 'sef-mutfagi'],
       description:
         'Anadolu’nun yerel pişirme tekniklerini modern sokak yemekleri ve meze tabaklarıyla Moda’da buluşturan şef mutfağı.',
@@ -1229,7 +1253,9 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       id: 'moda-imece',
       placeId: 'ChIJ3y-8u8i5yhQRzK0on3l8884',
       categoryId: 'denemelisin',
+      displayNameOverride: 'İmece Moda Mutfak',
       expectedBrandWord: 'imece',
+      neighborhoodLabelOverride: 'Şair Latifi Sk. · Moda, Kadıköy',
       localSignals: ['gunluk-ev-yemekleri', 'mahalle-lokantasi', 'zeytinyaglilar'],
       description:
         'Caferağa sokaklarında günlük taze malzemelerle anne eli değmiş ev yemekleri ve zeytinyağlılar pişiren samimi mahalle mutfağı.',
@@ -1278,6 +1304,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJo_dZAba5yhQRKMawm6H-aYY',
       categoryId: 'denemelisin',
       expectedBrandWord: 'moda da nata',
+      neighborhoodLabelOverride: 'İhsan Ünlüer Sk. · Moda, Kadıköy',
       localSignals: ['pastel-de-nata', 'sicak-pastry', 'ikili-ikon'],
       description:
         'Portekiz’in ünlü tarçınlı muhallebi tartı Pastel de Nata’yı gün boyu fırından sıcak çıkararak Moda’nın imza sokak tatlısına dönüştüren butik.',
@@ -1326,6 +1353,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJy4qCa_W5yhQRd6uR_Z9XzxE',
       categoryId: 'denemelisin',
       expectedBrandWord: 'fahri konsolos',
+      neighborhoodLabelOverride: 'Dr. Esat Işık Cd. · Moda, Kadıköy',
       localSignals: ['anadolu-botanikleri', 'craft-kokteyl', 'moda-gece-ikonu'],
       description:
         'Dr. Esat Işık Caddesi’nde sumak, tahin, kekik ve mevsimsel Anadolu meyveleriyle özgün reçeteli imza kokteyller hazırlayan mahalle barı.',
@@ -1374,6 +1402,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJob5Z4oq4yhQRmR_OzydNf_E',
       categoryId: 'denemelisin',
       expectedBrandWord: 'moda iskelesi',
+      neighborhoodLabelOverride: 'Moda İskelesi · Moda, Kadıköy',
       iconicSettingOrVibeProtected: true,
       localSignals: ['tarihi-1917-iskele', 'deniz-ustu-terasi', 'vapur-iskelesi-kutuphane'],
       description:
@@ -1430,6 +1459,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJ5zHtQmG4yhQRj2cflusmMwA',
       categoryId: 'denemelisin',
       expectedBrandWord: 'moda cikolatacisi',
+      neighborhoodLabelOverride: 'Şair Nefi Sk. · Moda, Kadıköy',
       chefOrHeritageProtected: true,
       localSignals: ['artizan-pralin', 'belcika-cikolatasi', 'sair-nefi-ikonu'],
       description:
@@ -1479,6 +1509,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       placeId: 'ChIJrzNYTGG4yhQR_nRA0viRZLU',
       categoryId: 'denemelisin',
       expectedBrandWord: 'yasar usta',
+      neighborhoodLabelOverride: 'Bahariye–Moda Girişi · Moda, Kadıköy',
       chefOrHeritageProtected: true,
       localSignals: ['gercek-meyve-sorbe', '1970-moda-mirasi', 'katkisiz-dondurma'],
       description:
@@ -1528,6 +1559,106 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
         pros: ['Katkısız yüksek meyve oranlı sorbeler', 'Mevsime göre değişen taze çeşitler'],
         cons: ['Oturmalı kafe düzeni bulunmuyor', 'Yaz akşamları kısa sıra olabilir'],
         uncertainties: ['Meyve çeşitleri hasat dönemine bağlı olarak her hafta değişir.'],
+      },
+    },
+    {
+      id: 'moda-reks-kokorec',
+      placeId: 'ChIJ24k17Wa4yhQRFXFS6s5Nw6k',
+      categoryId: 'denemelisin',
+      expectedBrandWord: 'reks kokorec',
+      localRitualProtected: true,
+      neighborhoodLabelOverride: 'Kadife Sk. (Rexx Köşesi) · Moda, Kadıköy',
+      localSignals: ['gece-sokak-ritueli', 'rexx-kosesi', 'kuzu-kokorec'],
+      description:
+        'Eski Rexx Sineması köşesinde kırk yıla yaklaşan geçmişiyle ince kıyım veya iri doğranmış kuzu şiş kokoreç ve midye dolma sunan köklü sokak ritüeli.',
+      whatToOrder: ['İri Kıyım Çeyrek/Yarım Kuzu Kokoreç', 'Atom Kokoreç', 'Midye Dolma'],
+      menuFrom: ['Şampiyon Usulü Ekmek Arası', 'Acı Biber Turşusu Eşlikçisi'],
+      alsoTry: [],
+      secondaryItems: [
+        {
+          name: 'Limonlu Taze Midye Dolma & Acı Turşu Suyu',
+          note: 'Kokoreç beklerken tezgahta ayaküstü söylenen klasik eşlikçi ikili.',
+          proof: 'Harbiyiyorum ve Ekşi Sözlük Reks Kokoreç müdavim başlıkları',
+        },
+      ],
+      suitability: {
+        seating: 'Tezgah önü yüksek tabureler, dar iç/dış masalar ve hızlı al-götür servis',
+        crowdAndNoise: 'Akşam ve gece saatlerinde Kadife Sokak girişinde yoğun sokak temposu',
+        disadvantage: 'Oturma alanı dar ve hızlı devirlidir; hafta sonu akşam saatlerinde ocak önünde sıra oluşabiliyor.',
+        transit: 'Kadife Sokak No:1 üzerinde, Bahariye ve Moda yürüyüş aksının kesişim noktasında.',
+      },
+      beforeYouGo: [],
+      dossier: {
+        verifiedAt: '2026-11-14',
+        sources: [
+          {
+            title: 'Harbiyiyorum — Reks Kokoreç Kadıköy',
+            url: 'https://harbiyiyorum.com/',
+            date: '2026-09-12',
+            kind: 'editorial',
+            note: 'Kadife Sokak girişinde Moda gece hayatının kırk yıllık klasik kokoreççisi',
+          },
+          {
+            title: 'Ekşi Sözlük — Reks Kokoreç',
+            url: 'https://eksisozluk.com/',
+            date: '2026-10-08',
+            kind: 'community',
+            note: 'İri kıyım atom kokoreci ve midye dolmasıyla semtin vazgeçilmez gece ritüeli',
+          },
+        ],
+        pros: ['Yıllardır değişmeyen kuzu kokoreç pişirimi', 'Moda–Bahariye geçişinde merkezi sokak ritüeli'],
+        cons: ['Dar dükkan ve tezgah önü kalabalığı'],
+        uncertainties: ['Gece geç saatlerde atom kokoreç stoğu yoğunluğa göre erken tükenebiliyor.'],
+      },
+    },
+    {
+      id: 'moda-aile-cay-bahcesi',
+      placeId: 'ChIJl932EfW4yhQRqdRV-bq6iHs',
+      categoryId: 'denemelisin',
+      expectedBrandWord: 'moda aile cay bahcesi',
+      localRitualProtected: true,
+      neighborhoodLabelOverride: 'Moda Burnu (Falez Parkı) · Moda, Kadıköy',
+      localSignals: ['moda-burnu-falez', 'acik-hava-ritueli', 'adalar-manzarasi'],
+      description:
+        'Moda Burnu falezlerinin üzerinde Kalamış Koyu, Adalar ve Tarihi Yarımada panoramasına karşı ince belli bardakta taze çay içilen semtin en köklü açık hava ritüeli.',
+      whatToOrder: ['İnce Belli Bardakta Demleme Çay', 'Kaşarlı veya Karışık Büfe Tostu', 'Türk Kahvesi'],
+      menuFrom: ['Limonata', 'Dondurma & Kurabiye Eşlikçileri'],
+      alsoTry: [],
+      secondaryItems: [
+        {
+          name: 'Çift Kaşarlı Büfe Tostu & Limonata',
+          note: 'Sabah yürüyüşü veya gün batımı çayının yanında kasadan fişle alınan klasik çay bahçesi eşlikçisi.',
+          proof: 'Kadıköy sahil rehberleri ve Ekşi Sözlük Moda Aile Çay Bahçesi paylaşımları',
+        },
+      ],
+      suitability: {
+        seating: 'Ağaç altı geniş falez terasında açık hava çay bahçesi masaları (self-servis fiş sistemi)',
+        crowdAndNoise: 'Gün batımı ve hafta sonları her yaştan mahalleliyle çok kalabalık ve canlı',
+        disadvantage: 'Masaya tam garson servisi yerine kasadan fiş alıp çay ocağından alma düzeni vardır; hafta sonu deniz kenarı masalarda yer bulmak zordur.',
+        transit: 'Moda İskelesi üstündeki sahil parkı falez hattında, Moda Tramvayı son durağına birkaç adım mesafede.',
+      },
+      beforeYouGo: [],
+      dossier: {
+        verifiedAt: '2026-11-14',
+        sources: [
+          {
+            title: 'The Magger — Moda Sahil ve Çay Bahçeleri',
+            url: 'https://www.themagger.com/',
+            date: '2026-08-20',
+            kind: 'editorial',
+            note: 'Adalar ve gün batımı manzarasıyla Moda kültürünün ikonik kamusal çay bahçesi',
+          },
+          {
+            title: 'Ekşi Sözlük — Moda Aile Çay Bahçesi',
+            url: 'https://eksisozluk.com/',
+            date: '2026-10-11',
+            kind: 'community',
+            note: 'Falez manzarası, taze çayı ve klasik tost ritüeliyle semt sakinlerinin buluşma noktası',
+          },
+        ],
+        pros: ['Moda Burnu falezlerinden kesintisiz Marmara ve Adalar manzarası', 'Erişilebilir klasik mahalle çay bahçesi kültürü'],
+        cons: ['Self-servis fiş sırası ve hafta sonu masa bulma zorluğu'],
+        uncertainties: ['Yağışlı havalarda açık alan masalarının tamamı kullanılmayabiliyor.'],
       },
     },
 

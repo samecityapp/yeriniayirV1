@@ -1014,7 +1014,7 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       suitability: {
         seating: 'Klasik pastane masaları yanında yoğun paket/kutu satış düzeni',
         crowdAndNoise: 'Gün boyu kutu yaptırmaya gelen semt sakinleriyle sakin pastane akışı',
-        disadvantage: 'Google Places fiyat seviyesi verisi mevcut değil; klasik vitrin hızla tükenebiliyor.',
+        disadvantage: 'Akşamüstü saatlerinde profiterol ve ekler vitrini hızla tükenebiliyor; iç oturma alanı sınırlıdır.',
         transit: 'Suadiye Bağdat Caddesi çevresinde kolay yaya erişimi.',
       },
       beforeYouGo: [],
@@ -1062,7 +1062,7 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       suitability: {
         seating: 'Sadece al-götür (oturma alanı yok)',
         crowdAndNoise: 'Akşamları sahil yürüyüşçüleriyle kapı önünde düzenli sıra',
-        disadvantage: 'Oturma alanı bulunmuyor ve Google Places fiyat seviyesi belirtilmemiş.',
+        disadvantage: 'İçeride veya kapı önünde masa düzeni bulunmuyor; sahil yürüyüşünde al-götür tüketim odaklıdır.',
         transit: 'Suadiye Plaj Yolu ve Sahil Parkı’na birkaç adımlık yürüyüş mesafesinde.',
       },
       beforeYouGo: [],
