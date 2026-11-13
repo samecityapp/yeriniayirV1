@@ -39,6 +39,7 @@ export interface V3RegionDefinition {
   characterSubtitle: string;
   center: { lat: number; lng: number };
   bbox: { minLat: number; maxLat: number; minLng: number; maxLng: number };
+  excludeBbox?: { minLat: number; maxLat: number; minLng: number; maxLng: number };
   allowedNeighborhoodTokens: string[];
   categories: V3CategoryDef[];
   candidates: V3CandidateSeed[];
@@ -102,7 +103,7 @@ export interface V3VerifiedRegionSnapshot {
   verifiedAt: string;
   region: Omit<
     V3RegionDefinition,
-    'candidates' | 'bbox' | 'allowedNeighborhoodTokens' | 'categories'
+    'candidates' | 'bbox' | 'excludeBbox' | 'allowedNeighborhoodTokens' | 'categories'
   >;
   categories: V3CategoryDef[];
   venues: V3PublicVenue[];

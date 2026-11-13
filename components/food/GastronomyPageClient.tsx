@@ -22,7 +22,36 @@ import { PremiumRestaurantCard } from '@/components/nearby-places/PremiumRestaur
 import { VariantABottomSheet } from '@/components/mobile-detail-variants/VariantABottomSheet';
 
 const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:string;vibe:string}> = {
- 'moda-kadikoy': {image:'/images/gastronomy/coffee-pour-over.svg',badge:'Doğrulanmış Seçki',headline:'Moda, Kadıköy',vibe:'Nitelikli kahve, ekşi maya fırınlar, şef sokak lezzetleri ve mahalle mutfağı'},
+  'moda-kadikoy': {
+    image: '/images/gastronomy/coffee-pour-over.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Moda, Kadıköy',
+    vibe: 'Nitelikli kahve, ekşi maya fırınlar, odun fırını pizzacılar ve mahalle mutfağı',
+  },
+  'carsi-osmanaga-kadikoy': {
+    image: '/images/gastronomy/regional.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Kadıköy Çarşı',
+    vibe: 'Asırlık çarşı klasikleri, odun fırını pizzacılar, avlu kahvecileri ve akşam sofraları',
+  },
+  'yeldegirmeni-kadikoy': {
+    image: '/images/gastronomy/pizza.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Yeldeğirmeni, Kadıköy',
+    vibe: 'Tarihi apartman sokaklarında Napoli pizzacıları, kurukahveci ve esnaf lokantaları',
+  },
+  'caddebostan-kadikoy': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Caddebostan, Kadıköy',
+    vibe: 'Sahil yürüyüş hattında artizan gelato, şef bistroları ve butik burger durakları',
+  },
+  'suadiye-kadikoy': {
+    image: '/images/gastronomy/breakfast.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Suadiye, Kadıköy',
+    vibe: 'Şaşkınbakkal’dan Suadiye’ye akşam brasserie’leri, Napoli pizzaları ve profiterol klasikleri',
+  },
 };
 
 interface GastronomyPageClientProps {
@@ -84,7 +113,7 @@ export function GastronomyPageClient({
         localStorage.setItem(FOOD_DISCOVERY.storage.lastRegionKey, loc.slug);
       } catch {}
 
-      if (selectedLocation && loc.id !== selectedLocation.id) {
+      if (!selectedLocation || loc.id !== selectedLocation.id) {
         router.push(`/${lang}?region=${loc.slug}`);
         return;
       }
@@ -201,7 +230,7 @@ export function GastronomyPageClient({
                       Konum Seç
                     </div>
                     <div className="text-xs text-slate-500 font-medium truncate mt-0.5">
-                      İstanbul · Kadıköy · Moda
+                      İstanbul · Kadıköy · 5 Doğrulanmış Semt
                     </div>
                   </div>
                 </div>
@@ -392,7 +421,7 @@ export function GastronomyPageClient({
               <span className="font-normal text-slate-500">Gastronomi Keşif Platformu</span>
             </div>
             <div>
-              Moda kahve rehberi
+              {selectedLocation ? `${selectedLocation.displayName} Rehberi` : 'Doğrulanmış Yerel Gastronomi Rehberi'}
             </div>
           </div>
         </footer>

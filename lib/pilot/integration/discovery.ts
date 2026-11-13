@@ -7,7 +7,7 @@ import {getPublishedV3Snapshot} from '../../gastronomy-v3/registry';
 export interface IntegrationDiscovery {
  schemaVersion:1;dataKind:'real-research';mode:'integration-preparation';productionPublished:false;
  region:{id:string;slug:string;name:string;displayName:string;path:string[];characterSubtitle?:string;scopeNote?:string};
- categories:{slug:string;id:string;label:string;isMustTry:boolean;emoji?:string}[];
+ categories:{slug:string;id:string;label:string;title?:string;isMustTry:boolean;emoji?:string}[];
  categorySlug:string;venues:VisitorVenueData[];rituals:[];
 }
 export const MODA_CATEGORIES = [
@@ -6079,6 +6079,7 @@ export async function readIntegrationDiscovery(region='moda',category='kahve'){
    slug: c.slug,
    id: c.id,
    label: c.label,
+   title: c.title || c.label,
    isMustTry: Boolean(c.isMustTry),
    emoji: c.emoji,
   })),

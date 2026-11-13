@@ -31,16 +31,19 @@ export default async function UnifiedHomePage(
 
  // Eğer kullanıcı Gastronomi sekmesini açtıysa (?view=gastronomi) veya bir bölge seçtiyse (?region=...)
  // doğrudan tam ekran orijinal Gastronomi sekmesi açılır!
- if ((searchParams.view === 'gastronomi' || Boolean(searchParams.region)) && data) {
-  return (
-   <GastronomyPageClient
-    discovery={toFoodDiscovery(data)}
-    initialLocationSlug={searchParams.region}
-    initialCategorySlug={searchParams.category}
-    lang={lang}
-    embedded={false}
-   />
-  );
+ if (searchParams.view === 'gastronomi' || Boolean(searchParams.region)) {
+  const resolvedData = data || (await readIntegrationDiscovery('moda', ''));
+  if (resolvedData) {
+   return (
+    <GastronomyPageClient
+     discovery={toFoodDiscovery(resolvedData)}
+     initialLocationSlug={searchParams.region}
+     initialCategorySlug={searchParams.category}
+     lang={lang}
+     embedded={false}
+    />
+   );
+  }
  }
 
  return <HotelHomePage params={params} />;

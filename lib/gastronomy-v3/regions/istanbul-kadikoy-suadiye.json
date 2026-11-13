@@ -1,0 +1,534 @@
+{
+  "schemaVersion": 3,
+  "verifiedAt": "2026-11-13T14:54:16.920Z",
+  "region": {
+    "id": "suadiye-kadikoy",
+    "slug": "suadiye",
+    "city": "İstanbul",
+    "district": "Kadıköy",
+    "neighborhood": "Suadiye",
+    "officialQuarter": "Suadiye",
+    "displayName": "Suadiye, Kadıköy, İstanbul",
+    "locative": "Suadiye'de",
+    "path": [
+      "istanbul",
+      "kadikoy",
+      "suadiye"
+    ],
+    "aliases": [
+      "Suadiye",
+      "Şaşkınbakkal",
+      "Saskinbakkal",
+      "Bağdat Caddesi",
+      "Kadıköy"
+    ],
+    "scopeNote": "Suadiye · Doğrulanmış Yerel Seçki",
+    "characterSubtitle": "Şaşkınbakkal’dan Suadiye sahiline uzanan hatta şef restoranları, taş fırın pizzacılar ve köklü profiterol geleneği",
+    "center": {
+      "lat": 40.961,
+      "lng": 29.0815
+    }
+  },
+  "categories": [
+    {
+      "id": "pizza",
+      "slug": "pizza",
+      "label": "Pizza",
+      "title": "Pizza",
+      "emoji": "🍕",
+      "isMustTry": false
+    },
+    {
+      "id": "hamburger",
+      "slug": "hamburger",
+      "label": "Hamburger",
+      "title": "Hamburger",
+      "emoji": "🍔",
+      "isMustTry": false
+    },
+    {
+      "id": "kahve",
+      "slug": "kahve",
+      "label": "Kahve",
+      "title": "Kahve",
+      "emoji": "☕",
+      "isMustTry": false
+    },
+    {
+      "id": "date",
+      "slug": "date-mekanlari",
+      "label": "Date",
+      "title": "Date Mekanları",
+      "emoji": "🍷",
+      "isMustTry": false
+    },
+    {
+      "id": "kahvalti",
+      "slug": "kahvalti",
+      "label": "Kahvaltı",
+      "title": "Kahvaltı",
+      "emoji": "🍳",
+      "isMustTry": false
+    },
+    {
+      "id": "denemelisin",
+      "slug": "denemelisin",
+      "label": "Denemelisin",
+      "title": "Bölgeye Özgü Denemelisin",
+      "emoji": "⭐",
+      "isMustTry": false
+    }
+  ],
+  "venues": [
+    {
+      "id": "sua-valerino",
+      "placeId": "ChIJWXCUas3HyhQRLFG19V7fRN8",
+      "name": "Valerino Napoli Pizza",
+      "address": "Suadiye, Ayşeçavuş Cd no:48/b, 34740 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Suadiye",
+      "categoryId": "pizza",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=16088229367816474924",
+      "description": "Suadiye’de yüksek ısılı fırından ince orta ve kabarık kenarlı otantik Napoli pizzaları çıkaran butik pizzacı.",
+      "whatToOrder": [
+        "Margherita Verace",
+        "Diavola Napoli",
+        "Burrata & Fesleğen Pizza"
+      ],
+      "menuFrom": [
+        "Marinara",
+        "Prosciutto Crudo",
+        "Tiramisu"
+      ],
+      "alsoTry": [
+        "Sarımsaklı Zeytinyağı"
+      ],
+      "beforeYouGo": [
+        "Akşam saatlerinde fırından yeni çıkmış pizzaları salonda taze tüketmek fark yaratır."
+      ]
+    },
+    {
+      "id": "sua-new-yorker",
+      "placeId": "ChIJiyrATgvHyhQRZWakHT8_pRU",
+      "name": "The New Yorker Pizza Cadde",
+      "address": "Suadiye, Çolak İsmail Sk. No: 15/D, 34740 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Suadiye",
+      "categoryId": "pizza",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=1559722386266547813",
+      "description": "Suadiye’de ince, geniş dilimli ve altı çıtır New York usulü pizzalarıyla bilinen özgün pizza durağı.",
+      "whatToOrder": [
+        "Classic Pepperoni NY",
+        "Dört Peynirli Beyaz Pizza",
+        "Margherita"
+      ],
+      "menuFrom": [
+        "Mantarlı & Trüflü",
+        "Acı Ballı Pepperoni"
+      ],
+      "alsoTry": [
+        "Ranch veya Sarımsaklı Dip"
+      ],
+      "beforeYouGo": [
+        "Büyük dilimler ve yarım-yarım pizza seçimi iki kişilik paylaşım için oldukça uygundur."
+      ]
+    },
+    {
+      "id": "sua-pizzall",
+      "placeId": "ChIJp4C127_HyhQRcmh0f4Gla2o",
+      "name": "Pizz’All Suadiye",
+      "address": "Suadiye, Ayşeçavuş Cd No:15/E, 34740 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Suadiye",
+      "categoryId": "pizza",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=7668404766136100978",
+      "description": "Suadiye ara sokaklarında uzun mayalı hamur ve bol İtalyan peynirleriyle günlük pizza pişiren sakin mahalle pizzacısı.",
+      "whatToOrder": [
+        "Füme Kaburgalı Pizza",
+        "Margherita",
+        "Roast Beef & Roka Pizza"
+      ],
+      "menuFrom": [
+        "Funghi",
+        "Quattro Formaggi"
+      ],
+      "alsoTry": [
+        "Ev Yapımı Acı Yağ"
+      ],
+      "beforeYouGo": [
+        "Sakin akşam yemeği veya eve sıcak sipariş için semt içi hızlı servis sunar."
+      ]
+    },
+    {
+      "id": "sua-smash-up",
+      "placeId": "ChIJHeqAiEfHyhQRu4whefCFQ1w",
+      "name": "Smash Up Burger And More Suadiye",
+      "address": "Suadiye, Ülkü Sk. No: 2B, 34000 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Suadiye",
+      "categoryId": "hamburger",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=6648304742799871163",
+      "description": "Suadiye’de sıcak döküm tavada basılan çıtır kenarlı smash köfteleri ve taze patatesleriyle odaklanmış modern burger noktası.",
+      "whatToOrder": [
+        "Smash Up Double",
+        "Trüflü Smash",
+        "Peynirli Patates"
+      ],
+      "menuFrom": [
+        "Classic Cheeseburger",
+        "Acılı Jalapeno Smash"
+      ],
+      "alsoTry": [
+        "Ev Yapımı Turşu"
+      ],
+      "beforeYouGo": [
+        "Kompakt yapısıyla hızlı ve sıcak burger molası için uygundur."
+      ]
+    },
+    {
+      "id": "sua-3monkeys",
+      "placeId": "ChIJF7UlovbHyhQRWvk4mey9W3I",
+      "name": "3 Monkey’s Burger",
+      "address": "monkey Burger, Suadiye, Hamiyet Yüceses Sk. Petek apartmanı D:21/c 3, 34740 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Suadiye",
+      "categoryId": "hamburger",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=8240388767085033818",
+      "description": "Şaşkınbakkal-Suadiye hattında dengeli köfte-ekmek oranı, ev sosları ve karamelize soğanıyla semtin öne çıkan burgercisi.",
+      "whatToOrder": [
+        "3 Monkey’s Signature Burger",
+        "Double Smash Cheddar",
+        "Çıtır Patates"
+      ],
+      "menuFrom": [
+        "Truffle Burger",
+        "BBQ Kaburga Burger"
+      ],
+      "alsoTry": [
+        "Çıtır Soğan Halkası"
+      ],
+      "beforeYouGo": [
+        "Özellikle hafta sonu akşamları kalabalık olabildiği için erken akşam saatleri daha rahattır."
+      ]
+    },
+    {
+      "id": "sua-house-of-b",
+      "placeId": "ChIJlfKMKL3HyhQRGzxSxI6_WlA",
+      "name": "House of B Suadiye",
+      "address": "Suadiye, Bağdat Cad. 435/A, 34740 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Suadiye",
+      "categoryId": "hamburger",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=5790150890838178843",
+      "description": "Bağdat Caddesi Suadiye durağında özel karamelize soğanı, kalın köftesi ve klasik soslarıyla yıllardır tercih edilen burgerci.",
+      "whatToOrder": [
+        "HOB Classic Burger",
+        "Bacon & Mushroom Burger",
+        "İnce Kesim Patates"
+      ],
+      "menuFrom": [
+        "Blue Cheese Burger",
+        "Sloppy Joe"
+      ],
+      "alsoTry": [
+        "Vanilya Milkshake"
+      ],
+      "beforeYouGo": [
+        "Akşam saatlerinde masa bekleme olasılığına karşı erken gitmek yararlıdır."
+      ]
+    },
+    {
+      "id": "sua-bon",
+      "placeId": "ChIJvfALitTHyhQRtLNSG6kzd9s",
+      "name": "Bon Suadiye",
+      "address": "Suadiye, Akın Sk. No:8 D:1A, 34740 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Suadiye",
+      "categoryId": "hamburger",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=15814165417935680436",
+      "description": "Günlük çekim dana eti, tereyağlı yumuşak ekmekler ve ev yapımı patates kızartması sunan Suadiye burger durağı.",
+      "whatToOrder": [
+        "Bon Özel Burger",
+        "Cheeseburger",
+        "Baharatlı Patates"
+      ],
+      "menuFrom": [
+        "Mantarlı Burger",
+        "Çıtır Tavuk Burger"
+      ],
+      "alsoTry": [
+        "Sarımsaklı Mayonez"
+      ],
+      "beforeYouGo": [
+        "Sahil tarafına yakın konumuyla yürüyüş öncesi ya da sonrası uğranabilir."
+      ]
+    },
+    {
+      "id": "sua-golden-horse",
+      "placeId": "ChIJX3GtzX3HyhQRpZwjksSra_o",
+      "name": "Golden Horse Suadiye",
+      "address": "Suadiye, Ayşeçavuş Cd No:31, 34740 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Suadiye",
+      "categoryId": "kahve",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=18044705192743771301",
+      "description": "Cadde gürültüsünden bir sokak içeride nitelikli espresso, demleme kahve ve taze atıştırmalıklar sunan butik kahve durağı.",
+      "whatToOrder": [
+        "Flat White",
+        "Filtre Kahve",
+        "Bademli Kruvasan"
+      ],
+      "menuFrom": [
+        "Cortado",
+        "Americano",
+        "Cheesecake"
+      ],
+      "alsoTry": [
+        "Espresso Tonik"
+      ],
+      "beforeYouGo": [
+        "Sakin sohbet ve bilgisayar başında kısa çalışma için rahat oturum sağlar."
+      ]
+    },
+    {
+      "id": "sua-risto",
+      "placeId": "ChIJAQHeBUrHyhQR5TI9WUlbQog",
+      "name": "Risto Coffee suadiye",
+      "address": "Suadiye, Ayşeçavuş Cd No:17, 34740 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Suadiye",
+      "categoryId": "kahve",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=9818510508209025765",
+      "description": "Suadiye sokakları arasında taze çekirdek demlemeleri, dengeli espresso bazlı içecekleri ve sakin ortamıyla sevilen mahalle kahvecisi.",
+      "whatToOrder": [
+        "V60 Filtre Kahve",
+        "Cortado",
+        "Günlük Kek veya Kurabiye"
+      ],
+      "menuFrom": [
+        "Flat White",
+        "Iced Americano",
+        "Cold Brew"
+      ],
+      "alsoTry": [
+        "Matcha Latte"
+      ],
+      "beforeYouGo": [
+        "Sabah erken saatlerde kahve ve sakin sokak havası için oldukça elverişlidir."
+      ]
+    },
+    {
+      "id": "sua-loba",
+      "placeId": "ChIJvZSntErHyhQR12RBKUJ0Jhg",
+      "name": "Loba Coffee & Bakery Suadiye",
+      "address": "Suadiye, Kazım Özalp Sk. Uludağ apt No:40A, 34744, 34744 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Suadiye",
+      "categoryId": "kahve",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=1740206133534090455",
+      "description": "Şaşkınbakkal-Suadiye geçişinde taze fırın ürünleri ve kruvasan eşliğinde nitelikli kahve hazırlayan mahalle mekanı.",
+      "whatToOrder": [
+        "Tereyağlı Kruvasan & Latte",
+        "Filtre Kahve",
+        "Fırın Sandviç"
+      ],
+      "menuFrom": [
+        "Cortado",
+        "Pain au Chocolat",
+        "Granola"
+      ],
+      "alsoTry": [
+        "Soğuk Demleme"
+      ],
+      "beforeYouGo": [
+        "Sabah fırından yeni çıkan ürünlerle kahve eşleşmesi yapmak için sabah saatleri idealdir."
+      ]
+    },
+    {
+      "id": "sua-machi",
+      "placeId": "ChIJVfGzawHHyhQR277tWW2KFPE",
+      "name": "MACHI",
+      "address": "Suadiye, Müzeyyen Sk. No:2, 34740 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Suadiye",
+      "categoryId": "date",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=17371661864939667163",
+      "description": "Japon ve Peru mutfaklarını (Nikkei) buluşturan paylaşımlı tabakları, taze sashimi seçkisi ve imza kokteylleriyle şık akşam restoranı.",
+      "whatToOrder": [
+        "Tiradito ve Ceviche",
+        "Özel Sushi Roll Seçkisi",
+        "Robata Izgara Tabaklar"
+      ],
+      "menuFrom": [
+        "Tataki",
+        "Gyoza",
+        "Matcha Tatlısı"
+      ],
+      "alsoTry": [
+        "Yuzu Bazlı Kokteyller"
+      ],
+      "beforeYouGo": [
+        "Akşam ve hafta sonu servisi için günler öncesinden rezervasyon yaptırmak gerekir."
+      ]
+    },
+    {
+      "id": "sua-townhouse",
+      "placeId": "ChIJmwXY2G7HyhQRPHQkdZ3PjWU",
+      "name": "The Townhouse",
+      "address": "Suadiye, Plaj Yolu Sk. No13, 34740 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Suadiye",
+      "categoryId": "date",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=7317733244729062460",
+      "description": "Plaj Yolu köşesinde loş ve zarif salonu, taş fırın yemekleri ve kokteyl barıyla Suadiye’nin öne çıkan akşam buluşma noktası.",
+      "whatToOrder": [
+        "Odun Fırınından Paylaşımlı Tabaklar",
+        "Izgara Bonfile",
+        "Bar Kokteylleri"
+      ],
+      "menuFrom": [
+        "Taze Makarna",
+        "Trüflü Patates",
+        "Tiramisu"
+      ],
+      "alsoTry": [
+        "Başlangıç Tartine"
+      ],
+      "beforeYouGo": [
+        "Bar veya bahçe masaları için akşam saatleri öncesi rezervasyon önerilir."
+      ]
+    },
+    {
+      "id": "sua-strada",
+      "placeId": "ChIJVxbHjk3HyhQRJ--Ayf_IR6A",
+      "name": "Strada",
+      "address": "Suadiye, Bağdat Cad. No:459, 34740 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Suadiye",
+      "categoryId": "date",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=11549420770337812263",
+      "description": "Bağdat Caddesi Suadiye merkezinde taş fırın lezzetleri, sushi barı ve dünya mutfağıyla akşam yemeklerinin köklü brasserie adresi.",
+      "whatToOrder": [
+        "Odun Fırını Tabaklar",
+        "Dana Bonfile veya Somon",
+        "İmza Tatlılar"
+      ],
+      "menuFrom": [
+        "Strada Salata",
+        "Sushi Çeşitleri"
+      ],
+      "alsoTry": [
+        "Kokteyl Menüsü"
+      ],
+      "beforeYouGo": [
+        "Cuma ve cumartesi akşamları kalabalık olduğundan rezervasyon yaptırmak rahat ettirir."
+      ]
+    },
+    {
+      "id": "sua-cesme-bazlama",
+      "placeId": "ChIJWbt6HVzHyhQR2_DwbbWCoLk",
+      "name": "Çeşme Bazlama Kahvaltı Bağdat Caddesi Şaşkınbakkal",
+      "address": "Suadiye, Noter Sk. no:23, 34740 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Suadiye",
+      "categoryId": "kahvalti",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=13375834609035571419",
+      "description": "Şaşkınbakkal-Suadiye hattındaki geniş bahçeli köşkte sıcak bazlama, ev yapımı Ege reçelleri ve sınırsız çay eşliğinde serpme kahvaltı.",
+      "whatToOrder": [
+        "Sıcak Tereyağlı Bazlama",
+        "Ev Yapımı Reçel & Kaymak",
+        "Çemen ve Otlu Peynirler"
+      ],
+      "menuFrom": [
+        "Sahanda Yumurta",
+        "Menemen",
+        "Pişi"
+      ],
+      "alsoTry": [
+        "Limonlu İncir Reçeli"
+      ],
+      "beforeYouGo": [
+        "Özellikle hafta sonları çok talep gördüğü için sabah erken saatlerde gitmek bekleme süresini azaltır."
+      ]
+    },
+    {
+      "id": "sua-nazar",
+      "placeId": "ChIJ8eIgzr_HyhQR_UP5Up7bKX8",
+      "name": "Nazar Pastanesi Suadiye",
+      "address": "Suadiye, Suadiye Camii Sk. 28/A, 34740 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Suadiye",
+      "categoryId": "denemelisin",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=9163096389905368061",
+      "description": "Suadiye’nin yıllardır değişmeyen tatlı durağı olarak günlük şu hamuru ve yoğun bitter çikolata sosuyla hazırlanan profiterolüyle ünlüdür.",
+      "whatToOrder": [
+        "Klasik Profiterol",
+        "Taze Ekler Çeşitleri",
+        "Çikolatalı Pasta"
+      ],
+      "menuFrom": [
+        "Sütlaç",
+        "Supangle",
+        "Kurabiye Çeşitleri"
+      ],
+      "alsoTry": [
+        "Fıstıklı Ekler"
+      ],
+      "beforeYouGo": [
+        "Akşam yemeği sonrası paket profiterol almak semtin klasik alışkanlıklarındandır."
+      ]
+    },
+    {
+      "id": "sua-milkne",
+      "placeId": "ChIJPTMUBNPHyhQRZnykZprjCv4",
+      "name": "Milkne by Sade Dondurma",
+      "address": "Suadiye, Ayşeçavuş Cd No:20 C, 34740 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Suadiye",
+      "categoryId": "denemelisin",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=18305693887687326822",
+      "description": "Jersey ineklerinin tam yağlı sütü ve gerçek meyve püreleriyle katkısız, düşük şekerli artizan dondurma üreten Suadiye dondurmacısı.",
+      "whatToOrder": [
+        "Fior di Latte (Sade Jersey Sütlü)",
+        "Antep Fıstığı",
+        "Mevsim Meyveli Sorbe"
+      ],
+      "menuFrom": [
+        "Kavrulmuş Fındık",
+        "Bitter Çikolata"
+      ],
+      "alsoTry": [
+        "Dondurma & Espresso Affogato"
+      ],
+      "beforeYouGo": [
+        "Günlük değişen mevsim aromaları için tezgah başından küçük tatma isteyebilirsiniz."
+      ]
+    },
+    {
+      "id": "sua-envai",
+      "placeId": "ChIJ_4ZvTE_HyhQRztyDCfBIgiU",
+      "name": "Enva-i Sokak Lezzetleri",
+      "address": "Suadiye, Kazım Özalp Sk. No:23/C, 34740 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Suadiye",
+      "categoryId": "denemelisin",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=2702802922164706510",
+      "description": "Şaşkınbakkal-Suadiye geçişinde temiz tezgahı, süt kuzu kokoreci ve çeşitlendirilmiş sokak sandviçleriyle gece boyu tercih edilen lezzet noktası.",
+      "whatToOrder": [
+        "İri Kıyım Kuzu Kokoreç",
+        "Midye Dolma",
+        "Özel Soslu Sokak Sandviçi"
+      ],
+      "menuFrom": [
+        "Uykuluk",
+        "Tantuni Çeşitleri"
+      ],
+      "alsoTry": [
+        "Açık Ayran"
+      ],
+      "beforeYouGo": [
+        "Akşam ve gece yürüyüşleri sonrasında hızlı ve sıcak sokak lezzeti için uğranabilir."
+      ]
+    }
+  ]
+}

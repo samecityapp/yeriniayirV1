@@ -6,10 +6,10 @@ const ts = require('typescript');
 const ROOT = process.cwd();
 let passed = 0;
 
+const tests = [];
+
 function test(label, fn) {
-  fn();
-  passed++;
-  console.log('PASS ' + label);
+  tests.push({ label, fn });
 }
 
 function loadTsModule(relPath) {
@@ -60,38 +60,78 @@ function loadTsModule(relPath) {
   return loadRec(absPath);
 }
 
-const snapshotPath = path.join(ROOT, 'lib/gastronomy-v3/regions/istanbul-kadikoy-moda.json');
-const snapshot = JSON.parse(fs.readFileSync(snapshotPath, 'utf8'));
+const REGION_KEYS = [
+  'istanbul-kadikoy-moda',
+  'istanbul-kadikoy-carsi',
+  'istanbul-kadikoy-yeldegirmeni',
+  'istanbul-kadikoy-caddebostan',
+  'istanbul-kadikoy-suadiye',
+];
 
-test('snapshot schema v3 has 5 dynamic categories and 1..4 venues per category', () => {
-  assert.equal(snapshot.schemaVersion, 3);
-  assert.equal(snapshot.categories.length, 5);
-  assert.ok(snapshot.venues.length >= 15 && snapshot.venues.length <= 20);
-  for (const cat of snapshot.categories) {
-    const count = snapshot.venues.filter((v) => v.categoryId === cat.id).length;
-    assert.ok(count >= 1 && count <= 4, `${cat.slug} count=${count}`);
+const CANONICAL_SLUGS = ['pizza', 'hamburger', 'kahve', 'date-mekanlari', 'kahvalti', 'denemelisin'];
+
+const snapshots = REGION_KEYS.map((key) => {
+  const p = path.join(ROOT, `lib/gastronomy-v3/regions/${key}.json`);
+  return { key, data: JSON.parse(fs.readFileSync(p, 'utf8')) };
+});
+
+test('all 5 Kadikoy snapshots follow schema v3, canonical 6-category order, and 1..4 venues per category', () => {
+  for (const { key, data } of snapshots) {
+    assert.equal(data.schemaVersion, 3, key);
+    assert.ok(data.categories.length >= 5 && data.categories.length <= 6, `${key} cats=${data.categories.length}`);
+
+    // Verify canonical ordering of active categories
+    const slugs = data.categories.map((c) => c.slug);
+    let lastIdx = -1;
+    for (const s of slugs) {
+      const idx = CANONICAL_SLUGS.indexOf(s);
+      assert.ok(idx !== -1, `Unexpected category slug ${s} in ${key}`);
+      assert.ok(idx > lastIdx, `Out-of-order canonical category ${s} in ${key}: ${slugs.join(',')}`);
+      lastIdx = idx;
+    }
+
+    for (const cat of data.categories) {
+      const count = data.venues.filter((v) => v.categoryId === cat.id).length;
+      assert.ok(count >= 1 && count <= 4, `${key}/${cat.slug} count=${count}`);
+    }
   }
 });
 
-test('all venues are strictly inside Caferaga (Moda) with canonical Google Maps CID links', () => {
-  const seenPlaceIds = new Set();
-  for (const venue of snapshot.venues) {
-    assert.ok(!seenPlaceIds.has(venue.placeId), `Duplicate placeId ${venue.placeId}`);
-    seenPlaceIds.add(venue.placeId);
-    assert.ok(venue.address.includes('Caferağa'), `Outside Caferağa: ${venue.name} -> ${venue.address}`);
-    assert.ok(venue.mapsUri.startsWith('https://maps.google.com/?cid='), `Invalid CID URI: ${venue.mapsUri}`);
-    assert.ok(typeof venue.rating === 'number' && venue.rating >= 4.2 && venue.rating <= 5.0);
+test('Caddebostan dynamically prunes breakfast ("Yoksa Onerme") when no qualifying venue passes gates', () => {
+  const caddebostan = snapshots.find((s) => s.key === 'istanbul-kadikoy-caddebostan').data;
+  assert.equal(caddebostan.categories.length, 5);
+  assert.equal(caddebostan.categories.some((c) => c.slug === 'kahvalti'), false);
+});
+
+test('all 5 Kadikoy regions have zero overlapping placeIds, valid ratings, and canonical CID links', () => {
+  const globalPlaceIds = new Set();
+  for (const { key, data } of snapshots) {
+    for (const venue of data.venues) {
+      assert.ok(!globalPlaceIds.has(venue.placeId), `Cross-region or duplicate placeId ${venue.placeId} (${venue.name} in ${key})`);
+      globalPlaceIds.add(venue.placeId);
+      assert.ok(venue.address.includes('Kadıköy'), `Outside Kadıköy: ${venue.name} -> ${venue.address}`);
+      assert.ok(venue.mapsUri.startsWith('https://maps.google.com/?cid='), `Invalid CID URI: ${venue.mapsUri}`);
+      assert.ok(typeof venue.rating === 'number' && venue.rating >= 4.2 && venue.rating <= 5.0);
+    }
+  }
+  assert.ok(globalPlaceIds.size >= 80, `Expected >=80 unique Kadikoy venues, got ${globalPlaceIds.size}`);
+});
+
+test('snapshots never leak review counts, source URLs, forbidden terms, or API keys', () => {
+  for (const { key, data } of snapshots) {
+    const raw = JSON.stringify(data);
+    assert.ok(!/userRatingCount|reviewCount|googleReviewCount|sourcePageUrl/.test(raw), `Leak in ${key}`);
+    assert.ok(
+      !/en iyi|rakipsiz|kusursuz|mükemmel|muhteşem|tartışmasız|1 numara|yorum|Michelin|Gault|Time Out|Barista Magazine|Kaynaklar|Neden Gitmeli/i.test(
+        raw
+      ),
+      `Forbidden copy in ${key}`
+    );
+    assert.ok(!/AIza[0-9A-Za-z_-]{20,}/.test(raw), `API key leak in ${key}`);
   }
 });
 
-test('snapshot never leaks review counts, source URLs, or forbidden superlative/review terms', () => {
-  const raw = JSON.stringify(snapshot);
-  assert.ok(!/userRatingCount|reviewCount|googleReviewCount|sourcePageUrl/.test(raw));
-  assert.ok(!/en iyi|rakipsiz|kusursuz|mükemmel|muhteşem|tartışmasız|1 numara|yorum|Michelin|Gault|Time Out|Barista Magazine|Kaynaklar|Neden Gitmeli/i.test(raw));
-  assert.ok(!/AIza[0-9A-Za-z_-]{20,}/.test(raw));
-});
-
-test('policy gates reject closed, chain, out-of-neighborhood, and degraded candidates', () => {
+test('policy gates reject closed, chain, out-of-neighborhood, and degraded candidates in Moda audit log', () => {
   const auditPath = path.join(ROOT, 'work/gastronomy-v3/istanbul-kadikoy-moda.audit.json');
   assert.ok(fs.existsSync(auditPath));
   const audit = JSON.parse(fs.readFileSync(auditPath, 'utf8'));
@@ -119,60 +159,22 @@ test('policy gates reject closed, chain, out-of-neighborhood, and degraded candi
   assert.equal(byId.get('ctrl-asuman').accepted, false);
 });
 
-test('runtime discovery adapter and realProvider expose only V3 Moda as published with Il>Ilce>Semt metadata', () => {
+test('runtime discovery, foodAdapter, and realProvider expose all 5 Kadikoy regions as published with Il>Ilce>Semt', async () => {
   const discoveryMod = loadTsModule('lib/pilot/integration/discovery.ts');
   const adapterMod = loadTsModule('lib/pilot/integration/foodAdapter.ts');
   const providerMod = loadTsModule('lib/food/realProvider.ts');
 
-  const integration = {
-    schemaVersion: 1,
-    dataKind: 'real-research',
-    mode: 'integration-preparation',
-    productionPublished: false,
-    region: {
-      id: snapshot.region.id,
-      slug: snapshot.region.slug,
-      name: snapshot.region.neighborhood,
-      displayName: snapshot.region.displayName,
-      path: snapshot.region.path,
-    },
-    categories: snapshot.categories.map((c) => ({
-      slug: c.slug,
-      id: c.id,
-      label: c.label,
-      isMustTry: Boolean(c.isMustTry),
-      emoji: c.emoji,
-    })),
-    categorySlug: 'kahve',
-    venues: snapshot.venues.map((v) => ({
-      id: v.id,
-      name: v.name,
-      location: v.address,
-      categoryId: v.categoryId,
-      description: v.description,
-      whatToOrder: v.whatToOrder,
-      menuFrom: v.menuFrom,
-      alsoTry: v.alsoTry,
-      beforeYouGo: v.beforeYouGo,
-      photo: null,
-      ratings: [
-        {
-          platform: 'google-maps',
-          value: v.rating,
-          attribution: { label: 'Google Maps', mapsUri: v.mapsUri, providers: [] },
-        },
-      ],
-    })),
-    rituals: [],
-  };
-
-  assert.ok(discoveryMod.readIntegrationDiscovery);
-  const food = adapterMod.toFoodDiscovery(integration);
+  const modaDiscovery = await discoveryMod.readIntegrationDiscovery('moda', '');
+  assert.ok(modaDiscovery);
+  const food = adapterMod.toFoodDiscovery(modaDiscovery);
   const provider = providerMod.createRealFoodProvider(food);
 
   const ready = provider.getReadyRegions();
-  assert.equal(ready.length, 1);
-  assert.equal(ready[0].id, 'moda-kadikoy');
+  assert.equal(ready.length, 5);
+  assert.deepEqual(
+    ready.map((r) => r.slug),
+    ['moda', 'kadikoy-carsi', 'yeldegirmeni', 'caddebostan', 'suadiye']
+  );
 
   for (const loc of food.locations) {
     assert.ok(loc.city && loc.district && loc.neighborhood, `Missing hierarchy for ${loc.id}`);
@@ -181,12 +183,30 @@ test('runtime discovery adapter and realProvider expose only V3 Moda as publishe
   // Unpublished regions cannot resolve
   assert.equal(provider.getLocationBySlug('gaziantep'), undefined);
   assert.equal(provider.getLocationBySlug('antalya-lara'), undefined);
+  assert.equal(provider.getLocationBySlug('kosuyolu'), undefined);
 
-  // Dynamic category pruning works
-  assert.equal(provider.getRegionCategories('moda-kadikoy').length, 5);
-  assert.equal(provider.getCategoryResult('moda-kadikoy', 'balik-deniz-urunleri'), undefined);
-  assert.equal(provider.getCategoryResult('moda-kadikoy', 'kahve').coreVenues.length, 3);
-  assert.equal(provider.getCategoryResult('moda-kadikoy', 'kahve').coreVenues[0].ratings[0].attribution.mapsUri.startsWith('https://maps.google.com/?cid='), true);
+  // Verify all 5 published regions resolve cleanly through readIntegrationDiscovery
+  for (const slug of ['moda', 'kadikoy-carsi', 'yeldegirmeni', 'caddebostan', 'suadiye']) {
+    const disc = await discoveryMod.readIntegrationDiscovery(slug, '');
+    assert.ok(disc, `Missing discovery for ${slug}`);
+    const f = adapterMod.toFoodDiscovery(disc);
+    const p = providerMod.createRealFoodProvider(f);
+    const cats = p.getRegionCategories(disc.region.id);
+    assert.ok(cats.length >= 5, `${slug} cats=${cats.length}`);
+    const firstResult = p.getCategoryResult(disc.region.id, cats[0].slug);
+    assert.ok(firstResult && firstResult.coreVenues.length >= 1, `${slug} first category empty`);
+    assert.ok(firstResult.coreVenues[0].ratings[0].attribution.mapsUri.startsWith('https://maps.google.com/?cid='));
+  }
 });
 
-console.log(`${passed}/${passed} V3 gastronomy checks passed.`);
+(async () => {
+  for (const t of tests) {
+    await t.fn();
+    passed++;
+    console.log('PASS ' + t.label);
+  }
+  console.log(`${passed}/${passed} V3 gastronomy checks passed.`);
+})().catch((err) => {
+  console.error(err);
+  process.exit(1);
+});

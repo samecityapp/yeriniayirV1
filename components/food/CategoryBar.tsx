@@ -14,6 +14,7 @@ const CATEGORY_FALLBACK_EMOJIS: Record<string, string> = {
   'pizza': '🍕',
   'tatli-pastane': '🍰',
   'date-mekanlari': '🍷',
+  'denemelisin': '⭐',
   'mutlaka-denenmesi-gerekenler': '⭐',
   'kebap': '🥩',
   'beyran': '🍲',
@@ -37,7 +38,7 @@ export function CategoryBar({
     <div className="select-none">
       {/* 3 SÜTUNLU KUSURSUZ KATEGORİ IZGARASI */}
       <div data-testid="category-grid" className="grid grid-cols-3 gap-2 sm:gap-2.5">
-        {[...categories].sort((a,b)=>Number(!!b.isMustTry)-Number(!!a.isMustTry)).slice(0,7).map((cat) => {
+        {[...categories].sort((a,b)=>Number(!!b.isMustTry)-Number(!!a.isMustTry)).slice(0,9).map((cat) => {
           const isActive = cat.slug === activeCategorySlug;
           const emoji = cat.emoji || CATEGORY_FALLBACK_EMOJIS[cat.slug] || '🍽️';
 

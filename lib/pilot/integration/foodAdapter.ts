@@ -8,15 +8,19 @@ import {V3_LOCATIONS} from '../../gastronomy-v3/registry';
 
 const CATEGORY_SLUG_MAP: Record<string, string> = {
  coffee: 'kahve',
+ kahve: 'kahve',
  bakery_breakfast: 'firin-kahvalti',
  street_local: 'sokak-mahalle',
  chef_dinner: 'sef-aksam',
  dessert_gelato: 'tatli-gelato',
  burger: 'hamburger',
+ hamburger: 'hamburger',
  pizza: 'pizza',
  breakfast: 'kahvalti',
+ kahvalti: 'kahvalti',
  dessert: 'tatli-pastane',
  date: 'date-mekanlari',
+ denemelisin: 'denemelisin',
  lokanta: 'lokanta',
  balik: 'balik-deniz-urunleri',
  meyhane: 'meyhane',
@@ -26,15 +30,19 @@ const CATEGORY_SLUG_MAP: Record<string, string> = {
 
 const CATEGORY_NAME_MAP: Record<string, string> = {
  coffee: 'Kahve',
+ kahve: 'Kahve',
  bakery_breakfast: 'Fırın & Sabah',
  street_local: 'Sokak & Mahalle',
  chef_dinner: 'Şef & Akşam',
  dessert_gelato: 'Tatlı & Gelato',
  burger: 'Hamburger',
+ hamburger: 'Hamburger',
  pizza: 'Pizza',
  breakfast: 'Kahvaltı',
+ kahvalti: 'Kahvaltı',
  dessert: 'Tatlı & Pastane',
  date: 'Date Mekanları',
+ denemelisin: 'Denemelisin',
  lokanta: 'Tarihi Lokantalar & Çarşı',
  balik: 'Balık & Deniz Ürünleri',
  meyhane: 'Meyhane & Akşam',
@@ -49,7 +57,7 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
 
  return {
   locations: distinctLocations,
-  categories:data.categories.slice(0,7).map(c=>({slug:c.slug,label:c.label,title:c.label,isMustTry:c.isMustTry,emoji:c.emoji || (c.slug.includes('kruvasan')?'🥐':c.id==='coffee'||c.slug.includes('kahve')?'☕':c.id==='burger'||c.slug.includes('burger')?'🍔':c.id==='pizza'||c.slug.includes('pizza')?'🍕':c.id==='breakfast'||c.slug.includes('kahvalti')?'🍳':c.id==='kofte'||c.slug.includes('piyaz')?'🧆':c.id==='doner'?'🥙':c.id==='pide'?'🫓':c.id==='ozel-gun'?'✨':c.id==='baklava'?'🍯':c.id==='katmer'?'🥞':c.id==='beyran'?'🥣':c.id==='kusleme'||c.slug.includes('kebap')?'🍢':c.id==='mutfak'?'🍲':c.id==='dessert'||c.slug.includes('tatli')||c.slug.includes('firin')?'🍰':c.id==='date'?'🍷':c.id==='lokanta'||c.slug.includes('lokanta')?'🍲':c.id==='balik'||c.slug.includes('balik')?'🐟':c.id==='meyhane'?'🥂':c.id==='bistro'||c.slug.includes('bistro')?'🍸':c.id==='kebap'||c.slug.includes('kebap')?'🍢':'🍽️')})),
+  categories:data.categories.slice(0,9).map(c=>({slug:c.slug,label:c.label,title:c.title||c.label,isMustTry:c.isMustTry,emoji:c.emoji || (c.slug.includes('kruvasan')?'🥐':c.id==='coffee'||c.slug.includes('kahve')?'☕':c.id==='burger'||c.slug.includes('burger')?'🍔':c.id==='pizza'||c.slug.includes('pizza')?'🍕':c.id==='breakfast'||c.slug.includes('kahvalti')?'🍳':c.id==='kofte'||c.slug.includes('piyaz')?'🧆':c.id==='doner'?'🥙':c.id==='pide'?'🫓':c.id==='ozel-gun'?'✨':c.id==='baklava'?'🍯':c.id==='katmer'?'🥞':c.id==='beyran'?'🥣':c.id==='kusleme'||c.slug.includes('kebap')?'🍢':c.id==='mutfak'?'🍲':c.id==='dessert'||c.slug.includes('tatli')||c.slug.includes('firin')?'🍰':c.id==='date'?'🍷':c.id==='denemelisin'?'⭐':c.id==='lokanta'||c.slug.includes('lokanta')?'🍲':c.id==='balik'||c.slug.includes('balik')?'🐟':c.id==='meyhane'?'🥂':c.id==='bistro'||c.slug.includes('bistro')?'🍸':c.id==='kebap'||c.slug.includes('kebap')?'🍢':'🍽️')})),
   venues:data.venues.map(v=>{
    const inlineRatings=copyVisitorGoogleRatings(v.ratings);
    const verified=getVerifiedGoogleRatings(v.id);

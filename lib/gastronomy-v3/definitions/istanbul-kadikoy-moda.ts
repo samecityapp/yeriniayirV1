@@ -1,3 +1,4 @@
+import { buildRegionCategories } from '../categories';
 import type { V3RegionDefinition } from '../types';
 
 export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
@@ -13,79 +14,105 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
   aliases: ['İstanbul', 'Kadıköy', 'Istanbul', 'Kadikoy', 'Moda', 'Caferağa', 'Caferaga'],
   scopeNote: 'Caferağa · Doğrulanmış Yerel Seçki',
   characterSubtitle:
-    'Nitelikli kahve kavurmahaneleri, ekşi maya fırınlar, şef sokak lezzetleri ve köklü mahalle mutfağı',
+    'Nitelikli kahve kavurmahaneleri, ekşi maya fırınlar, odun fırını pizzacılar ve mahalle mutfağı',
   center: { lat: 40.9845, lng: 29.0258 },
-  bbox: { minLat: 40.977, maxLat: 40.989, minLng: 29.02, maxLng: 29.033 },
+  bbox: { minLat: 40.977, maxLat: 40.988, minLng: 29.02, maxLng: 29.0295 },
   allowedNeighborhoodTokens: ['Caferağa'],
-  categories: [
-    {
-      id: 'coffee',
-      slug: 'kahve',
-      label: 'Kahve',
-      title: 'Nitelikli Kahve & Kavurmahaneler',
-      emoji: '☕',
-    },
-    {
-      id: 'bakery_breakfast',
-      slug: 'firin-kahvalti',
-      label: 'Fırın & Sabah',
-      title: 'Ekşi Maya Fırın, Sandviç & Sabah',
-      emoji: '🥐',
-    },
-    {
-      id: 'street_local',
-      slug: 'sokak-mahalle',
-      label: 'Sokak & Mahalle',
-      title: 'Şef Sokak Lezzetleri & Mahalle Mutfağı',
-      emoji: '🥙',
-    },
-    {
-      id: 'chef_dinner',
-      slug: 'sef-aksam',
-      label: 'Şef & Akşam',
-      title: 'Şef Masası, İtalyan & Akşam',
-      emoji: '🍷',
-    },
-    {
-      id: 'dessert_gelato',
-      slug: 'tatli-gelato',
-      label: 'Tatlı & Gelato',
-      title: 'Artizan Tatlı, Gelato & Pastane',
-      emoji: '🍰',
-    },
-  ],
+  categories: buildRegionCategories(),
   candidates: [
+    // --- PİZZA (Caferağa / Moda) ---
+    {
+      id: 'moda-gg-pizza',
+      placeId: 'ChIJQadKLUy5yhQR_hUDT42VD9o',
+      categoryId: 'pizza',
+      localSignals: ['uzun-fermantasyon', 'napoli-hamuru', 'mahalle-pizzacisi'],
+      description:
+        'Caferağa sokaklarında uzun soğuk fermantasyonlu ekşi maya hamuruyla odun fırınından Napoli pizzaları çıkaran butik pizzacı.',
+      whatToOrder: ['Margherita Napoli', 'Füme Etli ve Trüflü Pizza', 'Burrata Pizza'],
+      menuFrom: ['Marinara', 'Diavola', 'Tiramisu'],
+      alsoTry: ['Sarımsaklı Zeytinyağı Dokunuşu'],
+      beforeYouGo: ['Hamur günlük mayalandığı için hafta sonu akşam saatlerinde erken gitmek avantajlıdır.'],
+    },
+    {
+      id: 'moda-bafetto',
+      placeId: 'ChIJMZiycZa5yhQRD1ZSxNvS5Vk',
+      categoryId: 'pizza',
+      localSignals: ['ince-citir-hamur', 'tas-firin-pizza', 'mahalle-pizzacisi'],
+      description:
+        'Moda Caddesi üzerinde ince ve çıtır hamurlu taş fırın pizzalarıyla mahallelinin tercih ettiği butik pizzacı.',
+      whatToOrder: ['İnce Hamur Taş Fırın Pizza', 'Burrata ve Taze Fesleğenli Pizza'],
+      menuFrom: ['Margherita', 'Füme Kaburgalı Pizza', 'Mantılı Peynirli Pizza'],
+      alsoTry: ['Sarımsaklı Zeytinyağı'],
+      beforeYouGo: ['Pizzalar siparişle tek tek fırınlandığı için hafta içi akşamları daha sakin bir deneyim sunar.'],
+    },
+    {
+      id: 'moda-del-capo',
+      placeId: 'ChIJyXKl0nC5yhQR3uHNftjQCec',
+      categoryId: 'pizza',
+      localSignals: ['butik-italyan', 'tas-firin', 'mahalle-mudavimi'],
+      description:
+        'Moda içinde kabarık kenarlı taş fırın pizzaları ve dengeli İtalyan peynir seçkisiyle bilinen mahalle pizzacısı.',
+      whatToOrder: ['Bufala Mozzarellalı Pizza', 'Dana Kaburgalı Pizza'],
+      menuFrom: ['Margherita', 'Quattro Formaggi'],
+      alsoTry: ['Fesleğen Soslu Başlangıç'],
+      beforeYouGo: ['Masa kapasitesi sınırlı olduğundan akşam saatlerinde kısa bekleme olabilir.'],
+    },
+
+    // --- HAMBURGER (Caferağa / Moda) ---
+    {
+      id: 'moda-red-bunny',
+      placeId: 'ChIJaayBysO5yhQRNAaOi9OK3m8',
+      categoryId: 'hamburger',
+      localSignals: ['brioche-ekmek', 'smash-burger', 'ev-yapimi-sos'],
+      description:
+        'Moda ara sokağında günlük pişen brioche ekmekler ve karamelize kenarlı smash köfteler hazırlayan burgerci.',
+      whatToOrder: ['Double Smash Burger', 'Trüflü Mantar Burger', 'Çıtır Patates'],
+      menuFrom: ['Klasik Cheeseburger', 'Tavuk Burger'],
+      alsoTry: ['Ev Yapımı Trüf Sos'],
+      beforeYouGo: ['Siparişler taze basılarak hazırlandığından yoğun akşam saatlerinde paket/oturma sırası hızlı ilerler.'],
+    },
+    {
+      id: 'moda-herz',
+      placeId: 'ChIJ04Yzlce5yhQRcbTwKn3HFp0',
+      categoryId: 'hamburger',
+      localSignals: ['sokak-burgeri', 'citir-tavuk', 'gizli-cevher'],
+      description:
+        'Butik sokak burgerleri, taze sosları ve çıtır tavuk alternatifleriyle Moda sahil hattına yakın konumlanan mutfak.',
+      whatToOrder: ['Klasik Sokak Burger', 'Çıtır Tavuk Burger', 'Baharatlı Patates'],
+      menuFrom: ['Cheeseburger', 'Ev Yapımı Turşulu Burger'],
+      alsoTry: ['Özel Sos Tabağı'],
+      beforeYouGo: ['Sahil yürüyüşü öncesi hızlı ve sıcak sokak burgeri molası için elverişlidir.'],
+    },
+    {
+      id: 'moda-2bites',
+      placeId: 'ChIJ9x0Mbsi5yhQRIRwJ_4xHSJI',
+      categoryId: 'hamburger',
+      localSignals: ['smoked-brisket', 'odakli-4-cesit-menu', 'hizli-sirkulasyon'],
+      description:
+        'Dalga Sokak’taki kompakt pencere önü dükkanında tütsülenmiş brisket ve smash burger çeşitlerine odaklanan sokak noktası.',
+      whatToOrder: ['Smoked Brisket Burger', 'Klasik Smash Burger', 'Çıtır Tavuk Burger'],
+      menuFrom: ['Trüflü Smash Burger', 'Taze Patates Kızartması'],
+      alsoTry: ['Ev Yapımı Soslar'],
+      beforeYouGo: ['Dükkan içi kompakt olduğundan hafta sonu akşamları hızlı sirkülasyonlu sıra beklenir.'],
+    },
+
     // --- KAHVE (Caferağa / Moda) ---
     {
       id: 'moda-cekirdekhane',
       placeId: 'ChIJZTpOQ2G4yhQRXy7M8aFB0Wc',
-      categoryId: 'coffee',
+      categoryId: 'kahve',
       localSignals: ['reddit:specialty-coffee', 'mahalle-mudavimi', 'taze-kavrum'],
       description:
         'Şair Latifi Sokak üzerinde taze kavrum çekirdekler, filtre demlemeler ve ev yapımı tatlılar hazırlayan mahalle kahvecisi.',
       whatToOrder: ['Taze Kavrum Filtre Kahve', 'Cheesecake', 'Ev Yapımı Brownie'],
       menuFrom: ['V60 Demleme', 'Cortado', 'Havuçlu Kek'],
       alsoTry: ['Espresso Tonik'],
-      beforeYouGo: ['Sokak üstü samimi oturma düzenine sahip ve evcil hayvan dostu.'],
-    },
-    {
-      id: 'moda-montag',
-      placeId: 'ChIJYc4vsQa5yhQR3eJyqdAvyp0',
-      categoryId: 'coffee',
-      localSignals: ['reddit:moda-roaster', 'filtre-demleme-referansi', 'tek-kokenli-cekirdek'],
-      description:
-        'Bademaltı Sokak’ta kendi kavurduğu tek kökenli çekirdekleri espresso ve demleme barında işleyen nitelikli kahve noktası.',
-      whatToOrder: ['Japanese Iced Filter', 'Tek Kökenli V60', 'Cortado'],
-      menuFrom: ['Flat White', 'Filtre Kahve', 'Soğuk Demleme'],
-      alsoTry: ['Espresso'],
-      beforeYouGo: [
-        'Çekirdek seçkisi mevsime göre değişir; baristadan meyvemsi veya gövdeli profil önerisi isteyebilirsiniz.',
-      ],
+      beforeYouGo: ['Sokak üstü samimi oturma düzenine sahip ve evcil hayvan dostudur.'],
     },
     {
       id: 'moda-kont',
       placeId: 'ChIJ3UWl1rm5yhQRwfkxvKW3KzM',
-      categoryId: 'coffee',
+      categoryId: 'kahve',
       localSignals: ['arka-bahce-kacisi', 'sakin-calisma-noktasi', 'matcha-ve-kahve'],
       description:
         'Moda Mektebi Sokak’ta gürültüden uzak, yeşillikli iç bahçesiyle bilinen sakin kahve ve matcha noktası.',
@@ -96,12 +123,93 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
         'Kalabalık caddelerden uzaklaşıp bahçede sakin vakit geçirmek için sabah ve öğleden sonra saatleri uygundur.',
       ],
     },
+    {
+      id: 'moda-montag',
+      placeId: 'ChIJYc4vsQa5yhQR3eJyqdAvyp0',
+      categoryId: 'kahve',
+      localSignals: ['reddit:moda-roaster', 'filtre-demleme-referansi', 'tek-kokenli-cekirdek'],
+      description:
+        'Bademaltı Sokak’ta kendi kavurduğu tek kökenli çekirdekleri espresso ve demleme barında işleyen nitelikli kahve noktası.',
+      whatToOrder: ['Japanese Iced Filter', 'Tek Kökenli V60', 'Cortado'],
+      menuFrom: ['Flat White', 'Filtre Kahve', 'Soğuk Demleme'],
+      alsoTry: ['Espresso'],
+      beforeYouGo: [
+        'Çekirdek seçkisi mevsime göre değişir; baristadan meyvemsi veya gövdeli profil önerisi isteyebilirsiniz.',
+      ],
+    },
 
-    // --- FIRIN & SABAH (Caferağa / Moda) ---
+    // --- DATE MEKANLARI (Caferağa / Moda) ---
+    {
+      id: 'moda-irregular',
+      placeId: 'ChIJQ4yDdIe5yhQRGJyjkHuGcFY',
+      categoryId: 'date',
+      localSignals: ['acik-mutfak-sef-masasi', 'haftalik-degisen-menu', 'bilenlerin-gittigi'],
+      description:
+        'Ağabey Sokak’ta açık mutfak tezgahı etrafında her hafta değişen kısa ve mevsimsel tabaklar sunan şef lokantası.',
+      whatToOrder: ['Haftalık Değişen Şefin Ara Sıcakları', 'Mevsimsel Ana Tabak'],
+      menuFrom: ['Taze Makarna', 'Deniz Mahsullü Ara Sıcak'],
+      alsoTry: ['Günün Tatlısı'],
+      beforeYouGo: ['Masa sayısı az ve menü haftalık yenilendiği için akşam servisi öncesi rezervasyon önerilir.'],
+    },
+    {
+      id: 'moda-aida',
+      placeId: 'ChIJGcHl12C4yhQRnKlUgJydtvI',
+      categoryId: 'date',
+      displayNameOverride: 'Aida Vino e Cucina',
+      localSignals: ['tarihi-moda-evi', 'el-acmasi-makarna', 'aksam-sofrasi-klasigi'],
+      chefOrHeritageProtected: true,
+      description:
+        'Ressam Şeref Akdik Sokak’taki tarihi Moda evinde el açması makarnalar ve İtalyan mutfağı sunan akşam restoranı.',
+      whatToOrder: ['El Yapımı Taze Makarna', 'Dana Yanak veya Risotto', 'Tiramisu'],
+      menuFrom: ['Burrata Başlangıç', 'Ragu Soslu Pappardelle'],
+      alsoTry: ['İtalyan Şarap Eşleşmesi'],
+      beforeYouGo: ['Özel akşam yemekleri ve hafta sonu servisi için önceden rezervasyon yaptırmak gerekir.'],
+    },
+    {
+      id: 'moda-il-sud',
+      placeId: 'ChIJWxJD5gK5yhQRY52E-ssLYaM',
+      categoryId: 'date',
+      localSignals: ['sakin-ara-sokak', 'nezih-aksam-yemegi', 'taze-makarna'],
+      description:
+        'Sarraf Ali Sokak’ta sakin atmosferi, ev yapımı İtalyan tabakları ve tatlılarıyla bilinen zarif mahalle restoranı.',
+      whatToOrder: ['Taze İtalyan Makarnaları', 'Odun Fırını Pizza', 'Tiramisu'],
+      menuFrom: ['Tagliatelle', 'Deniz Ürünlü Risotto'],
+      alsoTry: ['Panna Cotta'],
+      beforeYouGo: ['Gürültüsüz akşam yemeği ve kutlamalar için sakin ara sokak konumuyla öne çıkar.'],
+    },
+    {
+      id: 'moda-viktor-levi',
+      placeId: 'ChIJORIK5Ga4yhQRje_7bAPvF68',
+      categoryId: 'date',
+      displayNameOverride: 'Viktor Levi Şarap Evi',
+      localSignals: ['tarihi-ic-bahce', 'sarap-evi', 'moda-klasigi'],
+      chefOrHeritageProtected: true,
+      description:
+        'Moda’da ağaçlarla çevrili tarihi iç bahçesinde şarap eşlikli akşam tabakları sunan köklü şarap evi.',
+      whatToOrder: ['Peynir ve Şarküteri Tabağı', 'Şarap Eşleşmeli Ana Yemekler'],
+      menuFrom: ['Izgara Bonfile', 'Odun Ateşi Ara Sıcaklar'],
+      alsoTry: ['Meyve Şarabı Tadımı'],
+      beforeYouGo: ['Bahçe masaları akşam saatlerinde rağbet gördüğü için önceden yer ayırtmak faydalıdır.'],
+    },
+
+    // --- KAHVALTI (Caferağa / Moda) ---
+    {
+      id: 'moda-seraphine',
+      placeId: 'ChIJlVjRptm5yhQRJcUVhzR_kPM',
+      categoryId: 'kahvalti',
+      displayNameOverride: 'Seraphine Bakery Moda',
+      localSignals: ['glutensiz-eksi-maya', 'italyan-ekmegi', 'gizli-cevher'],
+      description:
+        'Dr. Esat Işık Caddesi üzerinde tamamı ekşi mayalı ve glütensiz zanaatkâr ekmekler üreten mahalle fırını.',
+      whatToOrder: ['Glütensiz Ekşi Maya Somun', 'İtalyan Usulü Fırın Ekmeği'],
+      menuFrom: ['Karabuğdaylı Ekşi Maya', 'Fırın Galeta', 'Badem Unlu Kurabiye'],
+      alsoTry: ['Zeytinli Baget'],
+      beforeYouGo: ['Paket ekmek ve sabah fırın çeşitleri için erken saatlerde gitmek daha avantajlıdır.'],
+    },
     {
       id: 'moda-guten-morgen',
       placeId: 'ChIJi6pABLe5yhQROCNIbKj8Gv0',
-      categoryId: 'bakery_breakfast',
+      categoryId: 'kahvalti',
       localSignals: ['ara-sokak-mudavimi', 'eksi-maya-tartine', 'ev-yapimi-icecek'],
       description:
         'Fırıldak Sokak’ta ekşi mayalı açık sandviçleri, kahvaltı tabakları ve ev yapımı içecekleriyle öne çıkan mahalle mekanı.',
@@ -113,67 +221,49 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
     {
       id: 'moda-fasit-daire',
       placeId: 'ChIJrzoDF5e5yhQRvTWMaKf2HGo',
-      categoryId: 'bakery_breakfast',
+      categoryId: 'kahvalti',
       displayNameOverride: 'Fasit Daire Moda',
       localSignals: ['butik-mahalle-firini', 'kucuk-parti-uretim', 'gizli-cevher'],
       description:
-        'Yusuf Kamilpaşa Sokak’ta küçük parti ekşi mayalı ekmekler ve fırın tatlıları çıkaran butik mahalle fırını.',
+        'Yusuf Kamilpaşa Sokak’ta küçük parti ekşi mayalı ekmekler, kahvaltılık eşlikçiler ve fırın tatlıları çıkaran butik fırın.',
       whatToOrder: ['Kurutulmuş Domatesli Kekikli Ekşi Maya', 'Biskotti', 'Fırın Brownie'],
       menuFrom: ['Klasik Ekşi Maya Somun', 'Zeytinli Ekmek', 'Bademli Kurabiye'],
       alsoTry: ['Fırın Granola'],
-      beforeYouGo: [
-        'Günlük sınırlı üretim yapıldığı için taze somunları öğleden önce yakalamak avantajlıdır.',
-      ],
+      beforeYouGo: ['Günlük sınırlı üretim yapıldığı için taze somunları öğleden önce yakalamak avantajlıdır.'],
     },
     {
-      id: 'moda-focamia',
-      placeId: 'ChIJPZhLk2W5yhQR7Lu16tIBrRM',
-      categoryId: 'bakery_breakfast',
-      localSignals: ['gunluk-focaccia', 'taze-sarkuteri-eslesmesi', 'gizli-cevher'],
+      id: 'moda-pisi-mutfak',
+      placeId: 'ChIJqymjiJm5yhQR6IBw34pGg4c',
+      categoryId: 'kahvalti',
+      displayNameOverride: 'Pişi Mutfak Moda',
+      localSignals: ['sicak-pisi', 'serpme-tabak', 'sabah-klasigi'],
       description:
-        'Cem Sokak’ta günlük pişen İtalyan focaccia ekmeği arasına taze şarküteri ve peynir dolgularıyla sandviç hazırlayan dükkan.',
-      whatToOrder: ['Tre Focaccia Sandviç', 'Quattro Focaccia Sandviç'],
-      menuFrom: ['Pesto ve Mozzarellalı Focaccia', 'Biberiyeli Sade Focaccia'],
-      alsoTry: ['Soğuk İtalyan İçecekleri'],
-      beforeYouGo: [
-        'Sandviçler sipariş üzerine taze focaccia ile hazırlandığından öğle saatlerinde kısa bekleme olabilir.',
-      ],
-    },
-    {
-      id: 'moda-seraphine',
-      placeId: 'ChIJlVjRptm5yhQRJcUVhzR_kPM',
-      categoryId: 'bakery_breakfast',
-      displayNameOverride: 'Seraphine Bakery Moda',
-      localSignals: ['glutensiz-eksi-maya', 'italyan-ekmegi', 'gizli-cevher'],
-      description:
-        'Dr. Esat Işık Caddesi üzerinde tamamı ekşi mayalı ve glütensiz zanaatkâr ekmekler üreten mahalle fırını.',
-      whatToOrder: ['Glütensiz Ekşi Maya Somun', 'İtalyan Usulü Fırın Ekmeği'],
-      menuFrom: ['Karabuğdaylı Ekşi Maya', 'Fırın Galeta', 'Badem Unlu Kurabiye'],
-      alsoTry: ['Zeytinli Baget'],
-      beforeYouGo: ['Paket ekmek alışverişi için erken saatlerde çeşitlilik daha geniştir.'],
+        'Moda ara sokağında sıcak pişi çeşitleri, yöresel peynir tabakları ve sahanda yumurta seçenekleriyle kurulan kahvaltı sofrası.',
+      whatToOrder: ['Karışık Pişi Kahvaltı Tabağı', 'Lor Peynirli Reçel Tabağı', 'Menemen'],
+      menuFrom: ['Yumurtalı Ekmek', 'Çılbır', 'Demleme Çay'],
+      alsoTry: ['Ev Yapımı Acuka'],
+      beforeYouGo: ['Cumartesi ve pazar sabahları kalabalık olduğundan 10:30 öncesi gitmek rahat ettirir.'],
     },
 
-    // --- SOKAK & MAHALLE MUTFAĞI (Caferağa / Moda) ---
+    // --- DENEMELİSİN / BÖLGEYE ÖZGÜ (Caferağa / Moda) ---
     {
       id: 'moda-basta',
       placeId: 'ChIJHaR2P2a4yhQR39F-oqWuBqM',
-      categoryId: 'street_local',
+      categoryId: 'denemelisin',
       displayNameOverride: 'Basta! Street Food Bar',
-      localSignals: ['gault-millau-mutfak', 'vedat-milor-referansi', 'agir-ates-kuzu', 'eksi-sozluk-klasigi'],
+      localSignals: ['gault-mutfak', 'vedat-milor-referansi', 'agir-ates-kuzu', 'eksi-sozluk-klasigi'],
       chefOrHeritageProtected: true,
       description:
         'Sakız Sokak’ta ağır ateşte pişmiş etleri ince lavaş dürümler ve rafine sokak tabaklarına dönüştüren şef tezgahı.',
       whatToOrder: ['Ağır Ateşte Kuzu Dürüm', 'Kuzu Burger', 'Humus'],
       menuFrom: ['Dana Kaburga Dürüm', 'Fırın Sütlaç', 'Turşu Tabak'],
       alsoTry: ['Fırın Sütlaç'],
-      beforeYouGo: [
-        'Oturma alanı kompakt olduğundan akşam yoğunluğunda kapı önünde kısa sıra oluşabilir.',
-      ],
+      beforeYouGo: ['Oturma alanı kompakt olduğundan akşam yoğunluğunda kapı önünde kısa sıra oluşabilir.'],
     },
     {
       id: 'moda-muutto',
       placeId: 'ChIJ-eZunpO5yhQRpWJolK417Lk',
-      categoryId: 'street_local',
+      categoryId: 'denemelisin',
       localSignals: ['anadolu-sokak-mutfagi', 'sef-meze-tapas', 'mudavim-ovgusu'],
       description:
         'Cemal Süreya Sokak’ta geleneksel Anadolu reçetelerini modern sokak mutfağı ve sıcak mezelerle birleştiren şef mutfağı.',
@@ -183,23 +273,9 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       beforeYouGo: ['Hem hızlı dürüm molası hem de paylaşımlı meze masası için uygundur.'],
     },
     {
-      id: 'moda-2bites',
-      placeId: 'ChIJ9x0Mbsi5yhQRIRwJ_4xHSJI',
-      categoryId: 'street_local',
-      localSignals: ['smoked-brisket', 'odakli-4-cesit-menu', 'hizli-sirkulasyon'],
-      description:
-        'Dalga Sokak’taki kompakt pencere önü dükkanında tütsülenmiş et ve smash burger çeşitlerine odaklanan sokak noktası.',
-      whatToOrder: ['Smoked Brisket Burger', 'Klasik Smash Burger', 'Çıtır Tavuk Burger'],
-      menuFrom: ['Trüflü Smash Burger', 'Taze Patates Kızartması'],
-      alsoTry: ['Ev Yapımı Soslar'],
-      beforeYouGo: [
-        'Dükkan içi çok küçük olduğundan hafta sonu akşamları hızlı sirkülasyonlu sıra beklenir.',
-      ],
-    },
-    {
       id: 'moda-imece',
       placeId: 'ChIJ3y-8u8i5yhQRzK0on3l8884',
-      categoryId: 'street_local',
+      categoryId: 'denemelisin',
       displayNameOverride: 'İmece Moda Mutfak',
       localSignals: ['gunluk-tencere-yemegi', 'mahalle-esnafi', 'katkisiz-ev-mutfagi', 'gizli-cevher'],
       description:
@@ -207,70 +283,12 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
       whatToOrder: ['Günlük Zeytinyağlı Tabağı', 'Ev Yapımı Ana Yemek', 'Günün Çorbası'],
       menuFrom: ['Zeytinyağlı Enginar', 'Köfte & Püre', 'Mercimek Çorbası'],
       alsoTry: ['Ev Yapımı Komposto'],
-      beforeYouGo: [
-        'Menü her gün taze pişen tencere yemeklerine göre değişir; öğle servisinde çeşit daha boldur.',
-      ],
+      beforeYouGo: ['Menü her gün taze pişen tencere yemeklerine göre değişir; öğle servisinde çeşit daha boldur.'],
     },
-
-    // --- ŞEF & AKŞAM (Caferağa / Moda) ---
-    {
-      id: 'moda-irregular',
-      placeId: 'ChIJQ4yDdIe5yhQRGJyjkHuGcFY',
-      categoryId: 'chef_dinner',
-      localSignals: ['acik-mutfak-sef-masasi', 'haftalik-degisen-menu', 'bilenlerin-gittigi'],
-      description:
-        'Ağabey Sokak’ta açık mutfak tezgahı etrafında her hafta değişen kısa ve mevsimsel tabaklar sunan şef lokantası.',
-      whatToOrder: ['Haftalık Değişen Şefin Ara Sıcakları', 'Mevsimsel Ana Tabak'],
-      menuFrom: ['Taze Makarna', 'Deniz Mahsullü Ara Sıcak'],
-      alsoTry: ['Günün Tatlısı'],
-      beforeYouGo: [
-        'Masa sayısı az ve menü haftalık yenilendiği için akşam servisi öncesi rezervasyon önerilir.',
-      ],
-    },
-    {
-      id: 'moda-aida',
-      placeId: 'ChIJGcHl12C4yhQRnKlUgJydtvI',
-      categoryId: 'chef_dinner',
-      displayNameOverride: 'Aida Vino e Cucina',
-      localSignals: ['tarihi-moda-evi', 'el-acmasi-makarna', 'aksam-sofrasi-klasiği'],
-      chefOrHeritageProtected: true,
-      description:
-        'Ressam Şeref Akdik Sokak’taki tarihi Moda evinde el açması makarnalar ve İtalyan mutfağı sunan akşam restoranı.',
-      whatToOrder: ['El Yapımı Taze Makarna', 'Dana Yanak veya Risotto', 'Tiramisu'],
-      menuFrom: ['Burrata Başlangıç', 'Ragu Soslu Pappardelle'],
-      alsoTry: ['İtalyan Şarap Eşleşmesi'],
-      beforeYouGo: ['Özel akşam yemekleri ve hafta sonu servisi için önceden rezervasyon yaptırmak gerekir.'],
-    },
-    {
-      id: 'moda-bafetto',
-      placeId: 'ChIJMZiycZa5yhQRD1ZSxNvS5Vk',
-      categoryId: 'chef_dinner',
-      localSignals: ['ince-citir-hamur', 'tas-firin-pizza', 'mahalle-pizzacisi'],
-      description:
-        'Moda Caddesi üzerinde ince ve çıtır hamurlu taş fırın pizzalarıyla mahallelinin tercih ettiği butik pizzacı.',
-      whatToOrder: ['İnce Hamur Taş Fırın Pizza', 'Burrata ve Taze Fesleğenli Pizza'],
-      menuFrom: ['Margherita', 'Füme Kaburgalı Pizza', 'Mantılı Peynirli Pizza'],
-      alsoTry: ['Sarımsaklı Zeytinyağı Dokunuşu'],
-      beforeYouGo: ['Pizzalar siparişle tek tek fırınlandığı için hafta içi akşamları daha sakin bir deneyim sunar.'],
-    },
-    {
-      id: 'moda-il-sud',
-      placeId: 'ChIJWxJD5gK5yhQRY52E-ssLYaM',
-      categoryId: 'chef_dinner',
-      localSignals: ['sakin-ara-sokak', 'nezih-aksam-yemegi', 'taze-makarna'],
-      description:
-        'Sarraf Ali Sokak’ta sakin atmosferi, ev yapımı İtalyan tabakları ve tatlılarıyla bilinen zarif mahalle restoranı.',
-      whatToOrder: ['Taze İtalyan Makarnaları', 'Odun Fırını Pizza', 'Tiramisu'],
-      menuFrom: ['Tagliatelle', 'Deniz Ürünlü Risotto'],
-      alsoTry: ['Panna Cotta'],
-      beforeYouGo: ['Gürültüsüz akşam yemeği ve kutlamalar için sakin ara sokak konumuyla öne çıkar.'],
-    },
-
-    // --- TATLI & GELATO (Caferağa / Moda) ---
     {
       id: 'moda-da-nata',
       placeId: 'ChIJo_dZAba5yhQRKMawm6H-aYY',
-      categoryId: 'dessert_gelato',
+      categoryId: 'denemelisin',
       localSignals: ['firindan-sicak-nata', 'portekiz-tatlisi', 'uzmanlasmis-tek-urun'],
       description:
         'Dr. İhsan Ünlüer Sokak’ta gün boyu fırından sıcak çıkan Portekiz usulü Pastel de Nata üreten butik tatlıcı.',
@@ -281,37 +299,12 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
         'Tarçın serperek fırından yeni çıkmış ılık haliyle ayaküstü veya sokak masalarında tüketmek idealdir.',
       ],
     },
-    {
-      id: 'moda-lu-gelato',
-      placeId: 'ChIJyUVf14y5yhQRKFYtVaP_aOU',
-      categoryId: 'dessert_gelato',
-      localSignals: ['artizan-gelato', 'mevsim-meyveli-sorbe', 'gizli-cevher'],
-      description:
-        'Moda Caddesi’nde mevsim meyveleri ve yoğun kuruyemiş püreleriyle İtalyan usulü artizan gelato hazırlayan dondurmacı.',
-      whatToOrder: ['Antep Fıstıklı Gelato', 'Mevsim Meyveli Sorbe'],
-      menuFrom: ['Bitter Çikolata Gelato', 'Kavrulmuş Fındık'],
-      alsoTry: ['Karamelli Bisküvi'],
-      beforeYouGo: ['Seçim yapmadan önce tezgah görevlisinden farklı aromaları tatmak için kaşık isteyebilirsiniz.'],
-    },
-    {
-      id: 'moda-pasifik',
-      placeId: 'ChIJJcEUHGe4yhQR53L-4turU10',
-      categoryId: 'dessert_gelato',
-      localSignals: ['1966-mahalle-mirasi', 'krokanli-pasta', 'klasik-pastane'],
-      chefOrHeritageProtected: true,
-      description:
-        '1966’dan bu yana Moda Caddesi’nde klasik pastane geleneğini, krokanlı pastalarını ve tuzlularını sürdüren köklü mahalle pastanesi.',
-      whatToOrder: ['Krokanlı Pasta', 'Klasik Ekler', 'Günlük Tuzlu Kurabiyeler'],
-      menuFrom: ['Alman Pastası', 'Paskalya Çöreği', 'Profiterol'],
-      alsoTry: ['Çikolatalı Truffle'],
-      beforeYouGo: ['Klasik Moda pastane kültürünü deneyimlemek ve paket pasta almak için gün boyu uğranabilir.'],
-    },
 
     // --- NEGATİF KONTROL ADAYLARI (Canlı API Elemesini Kanıtlar) ---
     {
       id: 'ctrl-fornello',
       placeId: 'ChIJm38uvWe4yhQRua6qqHi9qgA',
-      categoryId: 'chef_dinner',
+      categoryId: 'pizza',
       localSignals: [],
       description: 'Kontrol adayı.',
       whatToOrder: [],
@@ -322,7 +315,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
     {
       id: 'ctrl-mini-eatery',
       placeId: 'ChIJuaAO4Ga4yhQRkSyccoM9IgQ',
-      categoryId: 'street_local',
+      categoryId: 'hamburger',
       localSignals: [],
       description: 'Kontrol adayı.',
       whatToOrder: [],
@@ -333,7 +326,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
     {
       id: 'ctrl-naan-bakeshop',
       placeId: 'ChIJafZN0WC4yhQROzIsuTJ6RIY',
-      categoryId: 'bakery_breakfast',
+      categoryId: 'kahvalti',
       localSignals: [],
       description: 'Kontrol adayı.',
       whatToOrder: [],
@@ -344,7 +337,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
     {
       id: 'ctrl-il-pellicano',
       searchQuery: 'Pizzeria Il Pellicano Kadıköy',
-      categoryId: 'chef_dinner',
+      categoryId: 'pizza',
       localSignals: [],
       description: 'Kontrol adayı.',
       whatToOrder: [],
@@ -355,7 +348,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
     {
       id: 'ctrl-coffy-moda',
       searchQuery: 'Coffy Moda Kadıköy',
-      categoryId: 'coffee',
+      categoryId: 'kahve',
       localSignals: [],
       description: 'Kontrol adayı.',
       whatToOrder: [],
@@ -366,7 +359,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
     {
       id: 'ctrl-ali-usta',
       searchQuery: 'Meşhur Dondurmacı Ali Usta Moda Kadıköy',
-      categoryId: 'dessert_gelato',
+      categoryId: 'denemelisin',
       localSignals: [],
       description: 'Kontrol adayı.',
       whatToOrder: [],
@@ -377,7 +370,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
     {
       id: 'ctrl-sliceguy',
       searchQuery: 'Sliceguy Pizza Moda Kadıköy',
-      categoryId: 'chef_dinner',
+      categoryId: 'pizza',
       localSignals: ['populer-dilim-pizza'],
       degradationFlag: true,
       degradationReason: 'Son dönem porsiyon küçülmesi ve hızlı şubeleşme şikayetleri',
@@ -390,7 +383,7 @@ export const ISTANBUL_KADIKOY_MODA_DEF: V3RegionDefinition = {
     {
       id: 'ctrl-asuman',
       placeId: 'ChIJX5XeCGG4yhQRH7cWWfY90-Q',
-      categoryId: 'dessert_gelato',
+      categoryId: 'denemelisin',
       localSignals: [],
       description: 'Kontrol adayı.',
       whatToOrder: [],

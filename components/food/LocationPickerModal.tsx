@@ -114,7 +114,7 @@ export function LocationPickerModal({
           onClose();
         } else {
           setGpsMessage(
-            'Konumunuza yakın aktif bir rehber henüz bulunmuyor. Şu an doğrulanmış Moda (Kadıköy) rehberi yayındadır; diğer bölgeler sırayla ekleniyor.'
+            "Konumunuza yakın aktif bir rehber henüz bulunmuyor. Şu an Kadıköy'ün 5 semti (Moda, Kadıköy Çarşı, Yeldeğirmeni, Caddebostan, Suadiye) yayındadır."
           );
         }
       },

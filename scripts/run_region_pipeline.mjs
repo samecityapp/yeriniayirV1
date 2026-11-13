@@ -6,6 +6,14 @@ const require = createRequire(import.meta.url);
 const ts = require('typescript');
 
 const ROOT = process.cwd();
+const DEFAULT_REGION_ORDER = [
+  'istanbul-kadikoy-moda',
+  'istanbul-kadikoy-carsi',
+  'istanbul-kadikoy-yeldegirmeni',
+  'istanbul-kadikoy-caddebostan',
+  'istanbul-kadikoy-suadiye',
+];
+
 const FIELD_MASK = [
   'id',
   'displayName',
@@ -141,38 +149,45 @@ async function fetchPlaceByQuery(textQuery, regionDef, apiKey) {
   return first;
 }
 
-function parseRegionArg() {
+function parseRegionsArg() {
   const args = process.argv.slice(2);
+  if (args.includes('--all')) {
+    const defsDir = path.join(ROOT, 'lib', 'gastronomy-v3', 'definitions');
+    const files = fs
+      .readdirSync(defsDir)
+      .filter((f) => f.endsWith('.ts'))
+      .map((f) => f.replace(/\.ts$/, ''));
+    const ordered = DEFAULT_REGION_ORDER.filter((k) => files.includes(k));
+    const extras = files.filter((k) => !ordered.includes(k)).sort();
+    return [...ordered, ...extras];
+  }
   const idx = args.indexOf('--region');
-  if (idx !== -1 && args[idx + 1]) return args[idx + 1];
-  const eq = args.find((a) => a.startsWith('--region='));
-  if (eq) return eq.split('=')[1];
-  return 'istanbul-kadikoy-moda';
+  let raw = '';
+  if (idx !== -1 && args[idx + 1]) {
+    raw = args[idx + 1];
+  } else {
+    const eq = args.find((a) => a.startsWith('--region='));
+    if (eq) raw = eq.split('=')[1];
+  }
+  if (!raw) return ['istanbul-kadikoy-moda'];
+  return raw
+    .split(',')
+    .map((s) => s.trim())
+    .filter(Boolean);
 }
 
-async function main() {
-  loadEnvLocal();
-  const apiKey = process.env.GOOGLE_PLACES_API_KEY;
-  if (!apiKey) {
-    console.error('ERROR: GOOGLE_PLACES_API_KEY is missing in .env.local or environment.');
-    process.exit(1);
-  }
-
-  const regionKey = parseRegionArg();
+async function runSingleRegion(regionKey, apiKey, policy, globalUsedPlaceIds) {
   const defRel = `lib/gastronomy-v3/definitions/${regionKey}.ts`;
   if (!fs.existsSync(path.join(ROOT, defRel))) {
-    console.error(`ERROR: Definition not found: ${defRel}`);
-    process.exit(1);
+    throw new Error(`Definition not found: ${defRel}`);
   }
 
-  const policy = loadTsModule('lib/gastronomy-v3/policy.ts');
   const defModule = loadTsModule(defRel);
   const regionDef = Object.values(defModule).find(
     (v) => v && typeof v === 'object' && Array.isArray(v.candidates) && Array.isArray(v.categories)
   );
   if (!regionDef) {
-    console.error(`ERROR: Could not locate V3RegionDefinition export in ${defRel}`);
-    process.exit(1);
+    throw new Error(`Could not locate V3RegionDefinition export in ${defRel}`);
   }
 
   console.log(`\n=== V3 Gastronomi Pipeline: ${regionDef.displayName} (${regionKey}) ===`);
@@ -187,7 +202,16 @@ async function main() {
         const apiPlace = seed.placeId
           ? await fetchPlaceById(seed.placeId, apiKey)
           : await fetchPlaceByQuery(seed.searchQuery, regionDef, apiKey);
-        return policy.evaluateAndScoreCandidate(apiPlace, seed, regionDef);
+        const res = policy.evaluateAndScoreCandidate(apiPlace, seed, regionDef);
+        if (res.accepted && globalUsedPlaceIds.has(res.placeId)) {
+          return {
+            ...res,
+            accepted: false,
+            score: 0,
+            reason: `cross_region_duplicate:${res.placeId}`,
+          };
+        }
+        return res;
       })
     );
     evaluated.push(...batchResults);
@@ -201,6 +225,9 @@ async function main() {
   }
 
   const snapshot = policy.selectDynamicRegionVenues(regionDef, evaluated);
+  for (const venue of snapshot.venues) {
+    globalUsedPlaceIds.add(venue.placeId);
+  }
 
   // Ziyaretçi metni ve link güvenlik kontrolü
   const copyErrors = [];
@@ -211,8 +238,7 @@ async function main() {
     }
   }
   if (copyErrors.length > 0) {
-    console.error('ERROR: Visitor copy validation failed:', JSON.stringify(copyErrors, null, 2));
-    process.exit(1);
+    throw new Error(`Visitor copy validation failed:\n${JSON.stringify(copyErrors, null, 2)}`);
   }
 
   // Denetim raporu (gitignored work/ altında kalır)
@@ -265,7 +291,25 @@ async function main() {
     console.log(`   • ${cat.emoji} ${cat.label}: ${count} mekan`);
   }
   console.log(`✓ Snapshot: lib/gastronomy-v3/regions/${regionKey}.json`);
-  console.log(`✓ Audit log: work/gastronomy-v3/${regionKey}.audit.json\n`);
+  console.log(`✓ Audit log: work/gastronomy-v3/${regionKey}.audit.json`);
+}
+
+async function main() {
+  loadEnvLocal();
+  const apiKey = process.env.GOOGLE_PLACES_API_KEY;
+  if (!apiKey) {
+    console.error('ERROR: GOOGLE_PLACES_API_KEY is missing in .env.local or environment.');
+    process.exit(1);
+  }
+
+  const regionKeys = parseRegionsArg();
+  const policy = loadTsModule('lib/gastronomy-v3/policy.ts');
+  const globalUsedPlaceIds = new Set();
+
+  for (const regionKey of regionKeys) {
+    await runSingleRegion(regionKey, apiKey, policy, globalUsedPlaceIds);
+  }
+  console.log(`\n=== Tamamlandı: ${regionKeys.length} bölge, toplam ${globalUsedPlaceIds.size} benzersiz doğrulanmış mekan ===\n`);
 }
 
 main().catch((err) => {

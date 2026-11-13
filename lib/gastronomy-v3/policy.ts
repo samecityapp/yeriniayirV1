@@ -35,6 +35,10 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'baydöner',
   'hd iskender',
   'tavuk dünyası',
+  'sushico',
+  'burger yiyelim',
+  'ekrem coşkun',
+  'ekrem coskun',
 ];
 
 export const FOOD_PLACE_TYPES = new Set<string>([
@@ -58,6 +62,22 @@ export const FOOD_PLACE_TYPES = new Set<string>([
   'bar_and_grill',
   'meal_takeaway',
   'food',
+  'turkish_restaurant',
+  'middle_eastern_restaurant',
+  'sushi_restaurant',
+  'japanese_restaurant',
+  'vegan_restaurant',
+  'vegetarian_restaurant',
+  'dumpling_restaurant',
+  'dessert_restaurant',
+  'dessert_shop',
+  'candy_store',
+  'confectionery',
+  'bistro',
+  'gastropub',
+  'cocktail_bar',
+  'bar',
+  'kebab_shop',
 ]);
 
 export const FORBIDDEN_VISITOR_COPY_REGEX =
@@ -142,6 +162,17 @@ export function matchesStrictNeighborhood(
       matchedNeighborhood: matchedToken,
       detail: `Bbox dışında (${lat.toFixed(5)}, ${lng.toFixed(5)})`,
     };
+  }
+
+  if (regionDef.excludeBbox) {
+    const ex = regionDef.excludeBbox;
+    if (lat >= ex.minLat && lat <= ex.maxLat && lng >= ex.minLng && lng <= ex.maxLng) {
+      return {
+        matches: false,
+        matchedNeighborhood: matchedToken,
+        detail: `ExcludeBbox içinde (${lat.toFixed(5)}, ${lng.toFixed(5)})`,
+      };
+    }
   }
 
   return { matches: true, matchedNeighborhood: matchedToken, detail: 'ok' };

@@ -1,13 +1,57 @@
 import modaSnapshotJson from './regions/istanbul-kadikoy-moda.json';
+import carsiSnapshotJson from './regions/istanbul-kadikoy-carsi.json';
+import yeldegirmeniSnapshotJson from './regions/istanbul-kadikoy-yeldegirmeni.json';
+import caddebostanSnapshotJson from './regions/istanbul-kadikoy-caddebostan.json';
+import suadiyeSnapshotJson from './regions/istanbul-kadikoy-suadiye.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
 const MODA_SNAPSHOT = modaSnapshotJson as V3VerifiedRegionSnapshot;
+const CARSI_SNAPSHOT = carsiSnapshotJson as V3VerifiedRegionSnapshot;
+const YELDEGIRMENI_SNAPSHOT = yeldegirmeniSnapshotJson as V3VerifiedRegionSnapshot;
+const CADDEBOSTAN_SNAPSHOT = caddebostanSnapshotJson as V3VerifiedRegionSnapshot;
+const SUADIYE_SNAPSHOT = suadiyeSnapshotJson as V3VerifiedRegionSnapshot;
+
+export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
+  MODA_SNAPSHOT,
+  CARSI_SNAPSHOT,
+  YELDEGIRMENI_SNAPSHOT,
+  CADDEBOSTAN_SNAPSHOT,
+  SUADIYE_SNAPSHOT,
+];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
   moda: MODA_SNAPSHOT,
   'moda-kadikoy': MODA_SNAPSHOT,
+  'kadikoy-carsi': CARSI_SNAPSHOT,
+  'carsi-osmanaga-kadikoy': CARSI_SNAPSHOT,
+  yeldegirmeni: YELDEGIRMENI_SNAPSHOT,
+  'yeldegirmeni-kadikoy': YELDEGIRMENI_SNAPSHOT,
+  caddebostan: CADDEBOSTAN_SNAPSHOT,
+  'caddebostan-kadikoy': CADDEBOSTAN_SNAPSHOT,
+  suadiye: SUADIYE_SNAPSHOT,
+  'suadiye-kadikoy': SUADIYE_SNAPSHOT,
 };
+
+function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {
+  return {
+    id: snap.region.id,
+    level: 'semt',
+    city: snap.region.city,
+    district: snap.region.district,
+    neighborhood: snap.region.neighborhood,
+    name: snap.region.neighborhood,
+    slug: snap.region.slug,
+    path: snap.region.path,
+    displayName: snap.region.displayName,
+    locative: snap.region.locative,
+    status: 'published',
+    aliases: snap.region.aliases,
+    center: snap.region.center,
+    scopeNote: snap.region.scopeNote,
+    characterSubtitle: snap.region.characterSubtitle,
+  };
+}
 
 /**
  * Sıkı "İl > İlçe > Semt" lokalizasyon ağacı.
@@ -15,86 +59,10 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
  * Yalnızca V3 canlı Google Places pipeline'ından geçmiş bölgeler 'published' olur.
  */
 export const V3_LOCATIONS: FoodLocation[] = [
-  // YAYINDA (V3 %100 Canlı API Doğrulamalı)
-  {
-    id: MODA_SNAPSHOT.region.id,
-    level: 'semt',
-    city: MODA_SNAPSHOT.region.city,
-    district: MODA_SNAPSHOT.region.district,
-    neighborhood: MODA_SNAPSHOT.region.neighborhood,
-    name: MODA_SNAPSHOT.region.neighborhood,
-    slug: MODA_SNAPSHOT.region.slug,
-    path: MODA_SNAPSHOT.region.path,
-    displayName: MODA_SNAPSHOT.region.displayName,
-    locative: MODA_SNAPSHOT.region.locative,
-    status: 'published',
-    aliases: MODA_SNAPSHOT.region.aliases,
-    center: MODA_SNAPSHOT.region.center,
-    scopeNote: MODA_SNAPSHOT.region.scopeNote,
-    characterSubtitle: MODA_SNAPSHOT.region.characterSubtitle,
-  },
+  // YAYINDA (V3 %100 Canlı API Doğrulamalı — Kadıköy 5 Semt)
+  ...V3_ALL_PUBLISHED_SNAPSHOTS.map(toPublishedLocation),
 
   // SIRADAKİ DOĞRULAMA KUYRUĞU (İl > İlçe > Semt ayrıştırılmış)
-  {
-    id: 'yeldegirmeni-kadikoy',
-    level: 'semt',
-    city: 'İstanbul',
-    district: 'Kadıköy',
-    neighborhood: 'Yeldeğirmeni',
-    name: 'Yeldeğirmeni',
-    slug: 'yeldegirmeni',
-    path: ['istanbul', 'kadikoy', 'yeldegirmeni'],
-    displayName: 'Yeldeğirmeni, Kadıköy, İstanbul',
-    locative: "Yeldeğirmeni'nde",
-    status: 'coming_soon',
-    aliases: ['Yeldegirmeni', 'Rasimpaşa', 'Rasimpasa', 'Kadıköy'],
-    scopeNote: 'İstanbul · Kadıköy · Yeldeğirmeni (V3 Doğrulama Sırasında)',
-  },
-  {
-    id: 'carsi-osmanaga-kadikoy',
-    level: 'semt',
-    city: 'İstanbul',
-    district: 'Kadıköy',
-    neighborhood: 'Osmanağa & Çarşı',
-    name: 'Kadıköy Çarşı',
-    slug: 'kadikoy-carsi',
-    path: ['istanbul', 'kadikoy', 'carsi'],
-    displayName: 'Kadıköy Çarşı (Osmanağa), Kadıköy, İstanbul',
-    locative: "Kadıköy Çarşı'da",
-    status: 'coming_soon',
-    aliases: ['Osmanağa', 'Osmanaga', 'Kadıköy Çarşı', 'Çarşı'],
-    scopeNote: 'İstanbul · Kadıköy · Osmanağa & Çarşı (V3 Doğrulama Sırasında)',
-  },
-  {
-    id: 'caddebostan-kadikoy',
-    level: 'semt',
-    city: 'İstanbul',
-    district: 'Kadıköy',
-    neighborhood: 'Caddebostan',
-    name: 'Caddebostan',
-    slug: 'caddebostan',
-    path: ['istanbul', 'kadikoy', 'caddebostan'],
-    displayName: 'Caddebostan, Kadıköy, İstanbul',
-    locative: "Caddebostan'da",
-    status: 'coming_soon',
-    aliases: ['Caddebostan', 'Kadıköy'],
-    scopeNote: 'İstanbul · Kadıköy · Caddebostan (V3 Doğrulama Sırasında)',
-  },
-  {
-    id: 'suadiye-kadikoy',
-    level: 'semt',
-    city: 'İstanbul',
-    district: 'Kadıköy',
-    neighborhood: 'Suadiye',
-    name: 'Suadiye',
-    slug: 'suadiye',
-    path: ['istanbul', 'kadikoy', 'suadiye'],
-    displayName: 'Suadiye, Kadıköy, İstanbul',
-    locative: "Suadiye'de",
-    status: 'coming_soon',
-    aliases: ['Suadiye', 'Kadıköy'],
-    scopeNote: 'İstanbul · Kadıköy · Suadiye (V3 Doğrulama Sırasında)',
-  },
   {
     id: 'kosuyolu-kadikoy',
     level: 'semt',
