@@ -60,6 +60,73 @@ export const COASTAL_SEAFOOD_CATEGORY: V3CategoryDef = {
   isMustTry: false,
 };
 
+export const GAZIANTEP_HERITAGE_CATEGORIES: V3CategoryDef[] = [
+  {
+    id: 'kebap',
+    slug: 'kebap',
+    label: 'Kebap & Küşleme',
+    title: 'Küşleme, Simit Kebabı & Ocakbaşı',
+    emoji: '🥩',
+    isMustTry: false,
+  },
+  {
+    id: 'beyran',
+    slug: 'beyran',
+    label: 'Beyran & Paça',
+    title: 'Geleneksel Sabah Beyranı & Kelle Paça',
+    emoji: '🍲',
+    isMustTry: false,
+  },
+  {
+    id: 'baklava',
+    slug: 'baklava',
+    label: 'Baklava & Şöbiyet',
+    title: 'Taş Fırın Antep Baklavası & Şöbiyet',
+    emoji: '🥮',
+    isMustTry: false,
+  },
+  {
+    id: 'katmer',
+    slug: 'katmer',
+    label: 'Katmer',
+    title: 'Sabah Taş Fırın Katmeri',
+    emoji: '🥞',
+    isMustTry: false,
+  },
+  {
+    id: 'yoresel',
+    slug: 'antep-mutfagi',
+    label: 'Antep Mutfağı',
+    title: 'Yuvalama, Ev Yemekleri & Tarihi Konaklar',
+    emoji: '🏛️',
+    isMustTry: false,
+  },
+  {
+    id: 'kahvalti',
+    slug: 'kahvalti',
+    label: 'Kahvaltı',
+    title: 'Yöresel Gaziantep Kahvaltısı',
+    emoji: '🍳',
+    isMustTry: false,
+  },
+  {
+    id: 'kahve',
+    slug: 'kahve',
+    label: 'Kahve & Menengiç',
+    title: 'Tarihi Kahvehaneler, Menengiç & Nitelikli Kahve',
+    emoji: '☕',
+    isMustTry: false,
+  },
+  {
+    id: 'denemelisin',
+    slug: 'denemelisin',
+    label: 'Denemelisin',
+    title: "Gaziantep'te Mutlaka Denemelisin",
+    emoji: '⭐',
+    isMustTry: false,
+  },
+];
+
 export function buildRegionCategories(opts?: {
   mode?: 'standard' | 'culinary_heritage';
   customCategories?: V3CategoryDef[];

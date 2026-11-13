@@ -67,6 +67,7 @@ const REGION_KEYS = [
   'istanbul-kadikoy-caddebostan',
   'istanbul-kadikoy-suadiye',
   'aydin-kusadasi',
+  'gaziantep-merkez',
 ];
 
 const CANONICAL_SLUGS = [
@@ -84,23 +85,40 @@ const snapshots = REGION_KEYS.map((key) => {
   return { key, data: JSON.parse(fs.readFileSync(p, 'utf8')) };
 });
 
-test('all published snapshots follow schema v3, canonical order, dynamic caps (1..5 standard/coastal, 1..10 denemelisin)', () => {
+test('all published snapshots follow schema v3, canonical order, dynamic caps (1..5 standard/coastal/heritage, 1..10 denemelisin)', () => {
   for (const { key, data } of snapshots) {
     assert.equal(data.schemaVersion, 3, key);
     const isCoastal = key === 'aydin-kusadasi';
+    const isHeritage = key === 'gaziantep-merkez';
     assert.ok(
-      isCoastal ? data.categories.length === 7 : data.categories.length >= 5 && data.categories.length <= 6,
+      isHeritage
+        ? data.categories.length === 8
+        : isCoastal
+        ? data.categories.length === 7
+        : data.categories.length >= 5 && data.categories.length <= 6,
       `${key} cats=${data.categories.length}`
     );
 
-    // Verify canonical ordering of active categories
     const slugs = data.categories.map((c) => c.slug);
-    let lastIdx = -1;
-    for (const s of slugs) {
-      const idx = CANONICAL_SLUGS.indexOf(s);
-      assert.ok(idx !== -1, `Unexpected category slug ${s} in ${key}`);
-      assert.ok(idx > lastIdx, `Out-of-order canonical category ${s} in ${key}: ${slugs.join(',')}`);
-      lastIdx = idx;
+    if (isHeritage) {
+      assert.ok(
+        !slugs.includes('pizza') && !slugs.includes('hamburger'),
+        `${key} must never expose pizza or hamburger categories`
+      );
+      assert.deepEqual(
+        slugs,
+        ['kebap', 'beyran', 'baklava', 'katmer', 'antep-mutfagi', 'kahvalti', 'kahve', 'denemelisin'],
+        `Unexpected heritage categories in ${key}`
+      );
+    } else {
+      // Verify canonical ordering of active categories
+      let lastIdx = -1;
+      for (const s of slugs) {
+        const idx = CANONICAL_SLUGS.indexOf(s);
+        assert.ok(idx !== -1, `Unexpected category slug ${s} in ${key}`);
+        assert.ok(idx > lastIdx, `Out-of-order canonical category ${s} in ${key}: ${slugs.join(',')}`);
+        lastIdx = idx;
+      }
     }
 
     for (const cat of data.categories) {
@@ -159,25 +177,26 @@ test('Caddebostan dynamically prunes breakfast ("Yoksa Onerme") when no qualifyi
   assert.equal(caddebostan.categories.some((c) => c.slug === 'kahvalti'), false);
 });
 
-test('all 6 published regions have zero overlapping placeIds, valid ratings, and canonical CID links', () => {
+test('all 7 published regions have zero overlapping placeIds, valid ratings, and canonical CID links', () => {
   const globalPlaceIds = new Set();
   for (const { key, data } of snapshots) {
+    const expectedDistricts = data.region.district.split('&').map((s) => s.trim());
     for (const venue of data.venues) {
       assert.ok(!globalPlaceIds.has(venue.placeId), `Cross-region or duplicate placeId ${venue.placeId} (${venue.name} in ${key})`);
       globalPlaceIds.add(venue.placeId);
       assert.ok(
-        venue.address.includes(data.region.district) && venue.address.includes(data.region.city),
+        expectedDistricts.some((d) => venue.address.includes(d)) && venue.address.includes(data.region.city),
         `Outside ${data.region.district}/${data.region.city}: ${venue.name} -> ${venue.address}`
       );
       assert.ok(venue.mapsUri.startsWith('https://maps.google.com/?cid='), `Invalid CID URI: ${venue.mapsUri}`);
       assert.ok(
         typeof venue.rating === 'number' &&
-          venue.rating >= (key === 'aydin-kusadasi' ? 3.8 : 4.0) &&
+          venue.rating >= (key === 'aydin-kusadasi' || key === 'gaziantep-merkez' ? 3.8 : 4.0) &&
           venue.rating <= 5.0
       );
     }
   }
-  assert.ok(globalPlaceIds.size >= 115, `Expected >=115 unique published venues, got ${globalPlaceIds.size}`);
+  assert.ok(globalPlaceIds.size >= 150, `Expected >=150 unique published venues, got ${globalPlaceIds.size}`);
 });
 
 test('every published region limits nearbyVenues to <= 1 per category within <= 400m of its border (Moda has 6)', () => {
@@ -336,29 +355,31 @@ test('runtime discovery, foodAdapter, and realProvider expose all 5 Kadikoy regi
   const provider = providerMod.createRealFoodProvider(food);
 
   const ready = provider.getReadyRegions();
-  assert.equal(ready.length, 6);
+  assert.equal(ready.length, 7);
   assert.deepEqual(
     ready.map((r) => r.slug),
-    ['moda', 'kadikoy', 'yeldegirmeni', 'caddebostan', 'suadiye', 'kusadasi']
+    ['moda', 'kadikoy', 'yeldegirmeni', 'caddebostan', 'suadiye', 'kusadasi', 'gaziantep']
   );
 
   for (const loc of food.locations) {
     assert.ok(loc.city && loc.district && loc.neighborhood, `Missing hierarchy for ${loc.id}`);
   }
 
-  // Legacy kadikoy-carsi slug & Kusadasi sub-area slugs resolve cleanly
+  // Legacy kadikoy-carsi slug, Kusadasi sub-areas, & Gaziantep districts resolve cleanly
   assert.equal(provider.getLocationBySlug('kadikoy-carsi')?.slug, 'kadikoy');
   assert.equal(provider.getLocationBySlug('guzelcamli')?.slug, 'kusadasi');
   assert.equal(provider.getLocationBySlug('davutlar')?.slug, 'kusadasi');
   assert.equal(provider.getLocationBySlug('merkez-kusadasi-aydin')?.slug, 'kusadasi');
+  assert.equal(provider.getLocationBySlug('sahinbey')?.slug, 'gaziantep');
+  assert.equal(provider.getLocationBySlug('sehitkamil')?.slug, 'gaziantep');
 
   // Unpublished regions cannot resolve
-  assert.equal(provider.getLocationBySlug('gaziantep'), undefined);
+  assert.equal(provider.getLocationBySlug('akyaka'), undefined);
   assert.equal(provider.getLocationBySlug('antalya-lara'), undefined);
   assert.equal(provider.getLocationBySlug('kosuyolu'), undefined);
 
-  // Verify all 6 published regions resolve cleanly through readIntegrationDiscovery
-  for (const slug of ['moda', 'kadikoy', 'yeldegirmeni', 'caddebostan', 'suadiye', 'kusadasi']) {
+  // Verify all 7 published regions resolve cleanly through readIntegrationDiscovery
+  for (const slug of ['moda', 'kadikoy', 'yeldegirmeni', 'caddebostan', 'suadiye', 'kusadasi', 'gaziantep']) {
     const disc = await discoveryMod.readIntegrationDiscovery(slug, '');
     assert.ok(disc, `Missing discovery for ${slug}`);
     const f = adapterMod.toFoodDiscovery(disc);
@@ -385,6 +406,31 @@ test('runtime discovery, foodAdapter, and realProvider expose all 5 Kadikoy regi
         kusadasiCats.some((c) => c.slug === 'balik-deniz-urunleri'),
         'Kusadasi missing balik-deniz-urunleri category'
       );
+    }
+    if (slug === 'gaziantep') {
+      assert.equal(p.getLocationBySlug('gaziantep')?.locative, "Gaziantep'te");
+      assert.equal(disc.region.displayName, 'Gaziantep');
+      const antepCats = p.getRegionCategories(disc.region.id);
+      assert.equal(antepCats.length, 8, 'Gaziantep must expose 8 culinary heritage categories');
+      assert.equal(antepCats.some((c) => c.slug === 'pizza'), false, 'Gaziantep must not expose pizza');
+      assert.equal(antepCats.some((c) => c.slug === 'hamburger'), false, 'Gaziantep must not expose hamburger');
+      const names = f.venues.map((v) => v.name);
+      for (const expected of [
+        'Kebapçı Halil Usta',
+        'Zeki İnal',
+        'Metanet Lokantası',
+        'Katmerci Zekeriya Usta',
+        'Hışvahan',
+        'Tahmis Kahvesi',
+        'Dürümcü Recep Usta',
+        'Meşhur Nohutçu Metin Usta',
+        'Orkide Pastanesi',
+      ]) {
+        assert.ok(names.some((n) => n.includes(expected)), `Gaziantep missing ${expected}`);
+      }
+      for (const forbidden of ['Aşina', 'Papirüs', 'Sahan', 'Starbucks', 'Espressolab']) {
+        assert.equal(names.some((n) => n.includes(forbidden)), false, `Gaziantep must exclude ${forbidden}`);
+      }
     }
     const cats = p.getRegionCategories(disc.region.id);
     assert.ok(cats.length >= 5, `${slug} cats=${cats.length}`);

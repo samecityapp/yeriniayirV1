@@ -4,6 +4,7 @@ import yeldegirmeniSnapshotJson from './regions/istanbul-kadikoy-yeldegirmeni.js
 import caddebostanSnapshotJson from './regions/istanbul-kadikoy-caddebostan.json';
 import suadiyeSnapshotJson from './regions/istanbul-kadikoy-suadiye.json';
 import kusadasiSnapshotJson from './regions/aydin-kusadasi.json';
+import gaziantepSnapshotJson from './regions/gaziantep-merkez.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -13,6 +14,7 @@ const YELDEGIRMENI_SNAPSHOT = yeldegirmeniSnapshotJson as V3VerifiedRegionSnapsh
 const CADDEBOSTAN_SNAPSHOT = caddebostanSnapshotJson as V3VerifiedRegionSnapshot;
 const SUADIYE_SNAPSHOT = suadiyeSnapshotJson as V3VerifiedRegionSnapshot;
 const KUSADASI_SNAPSHOT = kusadasiSnapshotJson as V3VerifiedRegionSnapshot;
+const GAZIANTEP_SNAPSHOT = gaziantepSnapshotJson as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -21,6 +23,7 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   CADDEBOSTAN_SNAPSHOT,
   SUADIYE_SNAPSHOT,
   KUSADASI_SNAPSHOT,
+  GAZIANTEP_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -41,6 +44,11 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'merkez-kusadasi-aydin': KUSADASI_SNAPSHOT,
   guzelcamli: KUSADASI_SNAPSHOT,
   davutlar: KUSADASI_SNAPSHOT,
+  gaziantep: GAZIANTEP_SNAPSHOT,
+  'gaziantep-merkez': GAZIANTEP_SNAPSHOT,
+  sahinbey: GAZIANTEP_SNAPSHOT,
+  sehitkamil: GAZIANTEP_SNAPSHOT,
+  'kalealti-sahinbey-gaziantep': GAZIANTEP_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {
@@ -312,21 +320,6 @@ export const V3_LOCATIONS: FoodLocation[] = [
     status: 'coming_soon',
     aliases: ['Bitez', 'Bodrum', 'Muğla'],
     scopeNote: 'Muğla · Bodrum · Bitez (V3 Doğrulama Sırasında)',
-  },
-  {
-    id: 'kalealti-sahinbey-gaziantep',
-    level: 'semt',
-    city: 'Gaziantep',
-    district: 'Şahinbey',
-    neighborhood: 'Kalealtı',
-    name: 'Kalealtı',
-    slug: 'gaziantep',
-    path: ['gaziantep', 'sahinbey', 'kalealti'],
-    displayName: 'Kalealtı, Şahinbey, Gaziantep',
-    locative: "Gaziantep'te",
-    status: 'coming_soon',
-    aliases: ['Gaziantep', 'Antep', 'Şahinbey', 'Kalealtı'],
-    scopeNote: 'Gaziantep · Şahinbey · Kalealtı (V3 Doğrulama Sırasında)',
   },
 ];
 

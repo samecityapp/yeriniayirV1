@@ -68,6 +68,7 @@ export interface V3RegionDefinition {
   slug: string;
   city: string;
   district: string;
+  allowedDistricts?: string[];
   neighborhood: string;
   officialQuarter: string;
   displayName: string;
@@ -207,7 +208,7 @@ export interface V3VerifiedRegionSnapshot {
   verifiedAt: string;
   region: Omit<
     V3RegionDefinition,
-    'candidates' | 'bbox' | 'excludeBbox' | 'allowedNeighborhoodTokens' | 'categories'
+    'candidates' | 'bbox' | 'excludeBbox' | 'allowedNeighborhoodTokens' | 'allowedDistricts' | 'categories'
   > & {
     boundary?: V3RegionBoundary;
   };

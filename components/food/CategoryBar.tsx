@@ -20,6 +20,7 @@ const CATEGORY_FALLBACK_EMOJIS: Record<string, string> = {
   'beyran': '🍲',
   'baklava': '🥮',
   'katmer': '🥞',
+  'antep-mutfagi': '🏛️',
   'deniz-urunleri': '🐟',
   'balik-deniz-urunleri': '🐟',
 };

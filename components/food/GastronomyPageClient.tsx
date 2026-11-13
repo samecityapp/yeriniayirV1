@@ -58,6 +58,12 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     headline: 'Kuşadası · Merkez, Davutlar & Güzelçamlı',
     vibe: 'Merkez, Çarşı ve Setur Marina’dan Kirazlı, Caferli, Yaylaköy, Davutlar ve Güzelçamlı sahiline uzanan seçki',
   },
+  'gaziantep-merkez': {
+    image: '/images/gastronomy/regional.svg',
+    badge: 'Yöresel Miras Seçkisi',
+    headline: 'Gaziantep · Şahinbey & Şehitkamil',
+    vibe: 'Kalealtı ve tarihi hanlardan Gazimuhtar ve İbrahimli’ye küşleme, beyran, taş fırın baklava, katmer ve sokak ritüelleri',
+  },
 };
 
 interface GastronomyPageClientProps {

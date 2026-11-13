@@ -99,6 +99,8 @@ export const FOOD_PLACE_TYPES = new Set<string>([
   'fine_dining_restaurant',
   'american_restaurant',
   'oyster_bar_restaurant',
+  'deli',
+  'soup_restaurant',
 ]);
 
 export const FORBIDDEN_VISITOR_COPY_REGEX =
@@ -215,12 +217,19 @@ export function matchesStrictNeighborhood(
     };
   }
 
-  const districtNorm = normalizeTr(regionDef.district);
-  if (!haystack.some((h) => h.includes(districtNorm))) {
+  const expectedDistricts =
+    regionDef.allowedDistricts && regionDef.allowedDistricts.length > 0
+      ? regionDef.allowedDistricts
+      : [regionDef.district];
+  const matchedDistrict = expectedDistricts.some((d) => {
+    const dNorm = normalizeTr(d);
+    return haystack.some((h) => h.includes(dNorm));
+  });
+  if (!matchedDistrict) {
     return {
       matches: false,
       matchedNeighborhood: matchedToken,
-      detail: `İlçe uyuşmazlığı (beklenen: ${regionDef.district})`,
+      detail: `İlçe uyuşmazlığı (beklenen: ${expectedDistricts.join('/')})`,
     };
   }
 

@@ -26,6 +26,10 @@ const CATEGORY_SLUG_MAP: Record<string, string> = {
  meyhane: 'meyhane',
  bistro: 'aksam-bistro',
  kebap: 'kebap-doner',
+ beyran: 'beyran',
+ baklava: 'baklava',
+ katmer: 'katmer',
+ yoresel: 'antep-mutfagi',
 };
 
 const CATEGORY_NAME_MAP: Record<string, string> = {
@@ -48,6 +52,10 @@ const CATEGORY_NAME_MAP: Record<string, string> = {
  meyhane: 'Meyhane & Akşam',
  bistro: 'Akşam Yemeği & Bistro',
  kebap: 'Kebap, Döner & Ocakbaşı',
+ beyran: 'Beyran & Paça',
+ baklava: 'Baklava & Şöbiyet',
+ katmer: 'Katmer',
+ yoresel: 'Antep Mutfağı',
 };
 
 /** Never accepts the admin card or uses the Antigravity prototype provider. */
