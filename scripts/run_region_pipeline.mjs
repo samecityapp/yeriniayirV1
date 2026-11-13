@@ -15,6 +15,32 @@ const PUBLISHED_REGION_KEYS = [
 ];
 const NEARBY_POOL_KEY = 'istanbul-kadikoy-nearby-pool';
 const DEFAULT_REGION_ORDER = [...PUBLISHED_REGION_KEYS, NEARBY_POOL_KEY];
+const PLACES_CACHE_PATH = path.join(ROOT, 'work', 'gastronomy-v3', 'places-cache.json');
+
+function loadPlacesCache() {
+  if (!fs.existsSync(PLACES_CACHE_PATH)) {
+    return { schemaVersion: 1, updatedAt: new Date().toISOString(), byPlaceId: {}, byQuery: {} };
+  }
+  try {
+    const parsed = JSON.parse(fs.readFileSync(PLACES_CACHE_PATH, 'utf8'));
+    return {
+      schemaVersion: 1,
+      updatedAt: parsed.updatedAt || new Date().toISOString(),
+      byPlaceId: parsed.byPlaceId && typeof parsed.byPlaceId === 'object' ? parsed.byPlaceId : {},
+      byQuery: parsed.byQuery && typeof parsed.byQuery === 'object' ? parsed.byQuery : {},
+    };
+  } catch {
+    return { schemaVersion: 1, updatedAt: new Date().toISOString(), byPlaceId: {}, byQuery: {} };
+  }
+}
+
+function savePlacesCache(cache) {
+  cache.updatedAt = new Date().toISOString();
+  fs.mkdirSync(path.dirname(PLACES_CACHE_PATH), { recursive: true });
+  const tmpPath = `${PLACES_CACHE_PATH}.tmp`;
+  fs.writeFileSync(tmpPath, JSON.stringify(cache, null, 2) + '\n', 'utf8');
+  fs.renameSync(tmpPath, PLACES_CACHE_PATH);
+}
 
 const FIELD_MASK = [
   'id',
@@ -104,7 +130,11 @@ function loadTsModule(relPath) {
   return loadRec(absPath);
 }
 
-async function fetchPlaceById(placeId, apiKey) {
+async function fetchPlaceById(placeId, apiKey, cache, stats, forceRefresh) {
+  if (!forceRefresh && cache.byPlaceId[placeId]?.payload) {
+    stats.cacheHits += 1;
+    return cache.byPlaceId[placeId].payload;
+  }
   const url = `https://places.googleapis.com/v1/places/${encodeURIComponent(placeId)}?languageCode=tr`;
   const res = await fetch(url, {
     method: 'GET',
@@ -117,10 +147,18 @@ async function fetchPlaceById(placeId, apiKey) {
     const errText = await res.text();
     throw new Error(`Google Places GET ${placeId} failed (${res.status}): ${errText}`);
   }
-  return res.json();
+  const payload = await res.json();
+  stats.networkFetches += 1;
+  cache.byPlaceId[placeId] = { fetchedAt: new Date().toISOString(), payload };
+  return payload;
 }
 
-async function fetchPlaceByQuery(textQuery, regionDef, apiKey) {
+async function fetchPlaceByQuery(textQuery, regionDef, apiKey, cache, stats, forceRefresh) {
+  const queryKey = `${regionDef.id}::${textQuery}`;
+  if (!forceRefresh && cache.byQuery[queryKey]?.payload) {
+    stats.cacheHits += 1;
+    return cache.byQuery[queryKey].payload;
+  }
   const res = await fetch('https://places.googleapis.com/v1/places:searchText', {
     method: 'POST',
     headers: {
@@ -154,6 +192,12 @@ async function fetchPlaceByQuery(textQuery, regionDef, apiKey) {
   if (!first) {
     throw new Error(`Google Places searchText "${textQuery}" returned 0 results`);
   }
+  stats.networkFetches += 1;
+  const fetchedAt = new Date().toISOString();
+  cache.byQuery[queryKey] = { fetchedAt, payload: first };
+  if (first.id) {
+    cache.byPlaceId[first.id] = { fetchedAt, payload: first };
+  }
   return first;
 }
 
@@ -184,7 +228,7 @@ function parseRegionsArg() {
     .filter(Boolean);
 }
 
-async function runSingleRegion(regionKey, apiKey, policy, globalUsedPlaceIds) {
+async function runSingleRegion(regionKey, apiKey, policy, globalUsedPlaceIds, cache, forceRefresh) {
   const defRel = `lib/gastronomy-v3/definitions/${regionKey}.ts`;
   if (!fs.existsSync(path.join(ROOT, defRel))) {
     throw new Error(`Definition not found: ${defRel}`);
@@ -201,6 +245,7 @@ async function runSingleRegion(regionKey, apiKey, policy, globalUsedPlaceIds) {
   console.log(`\n=== V3 Gastronomi Pipeline: ${regionDef.displayName} (${regionKey}) ===`);
   console.log(`Toplam aday havuzu: ${regionDef.candidates.length}`);
 
+  const stats = { cacheHits: 0, networkFetches: 0 };
   const evaluated = [];
   const CONCURRENCY = 8;
   for (let i = 0; i < regionDef.candidates.length; i += CONCURRENCY) {
@@ -208,8 +253,8 @@ async function runSingleRegion(regionKey, apiKey, policy, globalUsedPlaceIds) {
     const batchResults = await Promise.all(
       batch.map(async (seed) => {
         const apiPlace = seed.placeId
-          ? await fetchPlaceById(seed.placeId, apiKey)
-          : await fetchPlaceByQuery(seed.searchQuery, regionDef, apiKey);
+          ? await fetchPlaceById(seed.placeId, apiKey, cache, stats, forceRefresh)
+          : await fetchPlaceByQuery(seed.searchQuery, regionDef, apiKey, cache, stats, forceRefresh);
         const res = policy.evaluateAndScoreCandidate(apiPlace, seed, regionDef);
         if (res.accepted && globalUsedPlaceIds.has(res.placeId)) {
           return {
@@ -224,6 +269,10 @@ async function runSingleRegion(regionKey, apiKey, policy, globalUsedPlaceIds) {
     );
     evaluated.push(...batchResults);
   }
+  savePlacesCache(cache);
+  console.log(
+    `✓ Hafıza (Cache): ${stats.cacheHits} önbellekten okundu, ${stats.networkFetches} yeni API sorgusu yapıldı`
+  );
 
   for (const res of evaluated) {
     const badge = res.accepted ? `PASS [skor:${res.score}]` : `DROP [${res.reason}]`;
@@ -299,7 +348,7 @@ async function runSingleRegion(regionKey, apiKey, policy, globalUsedPlaceIds) {
   fs.mkdirSync(dossierDir, { recursive: true });
   const dossierPath = path.join(dossierDir, `${regionKey}.dossier.json`);
   const dossierData = {
-    schemaVersion: '3.3',
+    schemaVersion: '3.4',
     regionKey,
     displayName: regionDef.displayName,
     verifiedAt: snapshot.verifiedAt,
@@ -359,40 +408,72 @@ async function main() {
     process.exit(1);
   }
 
+  const forceRefresh = process.argv.slice(2).includes('--refresh');
+  const cache = loadPlacesCache();
   const regionKeys = parseRegionsArg();
   const policy = loadTsModule('lib/gastronomy-v3/policy.ts');
   const globalUsedPlaceIds = new Set();
 
   for (const regionKey of regionKeys) {
-    await runSingleRegion(regionKey, apiKey, policy, globalUsedPlaceIds);
+    await runSingleRegion(regionKey, apiKey, policy, globalUsedPlaceIds, cache, forceRefresh);
   }
 
-  // Aşama 2: Yayınlanmış 5 semtin "Yakındaki Diğer Öneriler" havuzunu hesapla ve göm
+  // Aşama 2: Yayınlanmış 5 semtin "Çok Yakındaki Diğer Öneri" (<= 400m, en fazla 1) havuzunu hesapla
   const regionsDir = path.join(ROOT, 'lib', 'gastronomy-v3', 'regions');
+  const dossiersDir = path.join(ROOT, 'lib', 'gastronomy-v3', 'dossiers');
   const poolPath = path.join(regionsDir, `${NEARBY_POOL_KEY}.json`);
   const nearbyPoolSnap = fs.existsSync(poolPath)
     ? JSON.parse(fs.readFileSync(poolPath, 'utf8'))
     : null;
+
+  const scoreByPlaceId = new Map();
+  for (const key of DEFAULT_REGION_ORDER) {
+    const dPath = path.join(dossiersDir, `${key}.dossier.json`);
+    if (!fs.existsSync(dPath)) continue;
+    const dData = JSON.parse(fs.readFileSync(dPath, 'utf8'));
+    for (const v of dData.venues || []) {
+      if (v.placeId && typeof v.selectionScore === 'number') {
+        scoreByPlaceId.set(v.placeId, v.selectionScore);
+      }
+    }
+  }
+
   const publishedSnaps = PUBLISHED_REGION_KEYS.map((key) => ({
     key,
     path: path.join(regionsDir, `${key}.json`),
   }))
     .filter((entry) => fs.existsSync(entry.path))
-    .map((entry) => ({
-      key: entry.key,
-      path: entry.path,
-      snapshot: JSON.parse(fs.readFileSync(entry.path, 'utf8')),
-    }));
+    .map((entry) => {
+      const snapshot = JSON.parse(fs.readFileSync(entry.path, 'utf8'));
+      if (!snapshot.region.boundary) {
+        const defRel = `lib/gastronomy-v3/definitions/${entry.key}.ts`;
+        if (fs.existsSync(path.join(ROOT, defRel))) {
+          const defMod = loadTsModule(defRel);
+          const def = Object.values(defMod).find(
+            (v) => v && typeof v === 'object' && v.bbox
+          );
+          if (def) {
+            snapshot.region.boundary = {
+              bbox: def.bbox,
+              ...(def.excludeBbox ? { excludeBbox: def.excludeBbox } : {}),
+            };
+          }
+        }
+      }
+      return { key: entry.key, path: entry.path, snapshot };
+    });
 
   if (publishedSnaps.length > 0) {
-    console.log('\n=== Aşama 2: Yakındaki Diğer Öneriler Hesaplanıyor ===');
+    console.log('\n=== Aşama 2: Çok Yakındaki Tekil Öneriler (<= 400m, maks. 1) Hesaplanıyor ===');
     const allSnapsOnly = publishedSnaps.map((p) => p.snapshot);
     for (const entry of publishedSnaps) {
       const nearbyVenues = policy.computeRegionNearbyVenues(
         entry.snapshot,
         allSnapsOnly,
         nearbyPoolSnap,
-        4
+        1,
+        400,
+        scoreByPlaceId
       );
       for (const nv of nearbyVenues) {
         const issues = policy.validateVisitorCopy(nv);

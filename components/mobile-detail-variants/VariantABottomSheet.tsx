@@ -65,7 +65,11 @@ export function VariantABottomSheet({ restaurant, onClose, lang = 'tr' }: Varian
             {restaurant.scope === 'nearby' && restaurant.nearbyAreaLabel && (
               <span className="px-2.5 py-1 rounded-full text-[11px] font-extrabold bg-slate-900/85 text-amber-200 shadow-xs backdrop-blur-xs border border-white/15">
                 Yakın Konum · {restaurant.nearbyAreaLabel}
-                {typeof restaurant.distanceKm === 'number' ? ` · ${restaurant.distanceKm.toFixed(1)} km` : ''}
+                {typeof restaurant.distanceMeters === 'number'
+                  ? ` · Sınıra ${restaurant.distanceMeters} m`
+                  : typeof restaurant.distanceKm === 'number'
+                  ? ` · ${restaurant.distanceKm.toFixed(1)} km`
+                  : ''}
               </span>
             )}
           </div>

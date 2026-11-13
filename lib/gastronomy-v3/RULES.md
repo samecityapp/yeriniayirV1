@@ -1,4 +1,4 @@
-# Gastronomi V3.3 Seçim Algoritması ve Kategori Kuralları (`RULES.md`)
+# Gastronomi V3.4 Seçim Algoritması ve Kategori Kuralları (`RULES.md`)
 
 Bu doküman `lib/gastronomy-v3` motorunun kalıcı anayasasıdır. Tüm şehir, ilçe ve semt güncellemelerinde istisnasız uygulanır.
 
@@ -8,7 +8,10 @@ Bu doküman `lib/gastronomy-v3` motorunun kalıcı anayasasıdır. Tüm şehir, 
 - Her bölge sıkı coğrafi sınır (`bbox`, gerekirse `excludeBbox` ve `allowedNeighborhoodTokens`) ile tanımlanır.
 - Komşu semt veya ilçe taşmaları (ör. Erenköy mekanlarının Caddebostan'a, Osmanağa mekanlarının Moda'ya dahil edilmesi) kabul edilmez.
 - Google Places canlı koordinatı ve adres bileşenleri semt sınırını doğrulamıyorsa aday otomatik reddedilir.
-- **Her Konum ve Her Kategori İçin "Yakındaki Diğer Öneriler" (`nearbyVenues`):** Seçili semtin kendi sınırları (`coreVenues`) %100 saf tutulurken, hemen altında komşu semt ve mahallelerdeki (ör. Moda seçiliyken Feneryolu, Fenerbahçe/Kalamış, Kadıköy Çarşı, Yeldeğirmeni) en yakın doğrulanmış alternatifler mahalle adı ve kuş uçuşu mesafe (`km`) etiketiyle ayrı bir **"Yakındaki Diğer Öneriler"** bölümünde gösterilir.
+- **Her Konum ve Her Kategori İçin Çok Yakın Tekil Öneri (`nearbyVenues`):** Seçili semtin kendi sınırları (`coreVenues`) %100 saf tutulurken, hemen altında komşu sınırdaki doğrulanmış alternatif gösterilir.
+  - **Sınırdan Mesafe Ölçümü:** Mesafe semtin merkezinden değil, doğrudan **seçili semtin coğrafi sınırından (`bbox \ excludeBbox`)** metre cinsinden ölçülür.
+  - **Maksimum 400 Metre Kuralı:** Yalnızca semt sınırının hemen dışında **en fazla `400 metre` (`<= 400 m`)** mesafedeki doğrulanmış adaylar değerlendirilir; `1 km` ve üzeri uzaklıktaki mekanlar kesinlikle önerilmez.
+  - **Kategori Başına En Fazla 1 Öneri (`0` veya `1`):** Her kategoride en fazla `1` yakın öneri gösterilir (2 bile olamaz). `400 metre` sınırında uygun doğrulanmış mekan yoksa o kategori için yakın öneri gösterilmez (`0`, dolgu yasak).
 
 ## 2. Standart 6 Kategori + Konuma Özgü İstisnalar
 - Şehir içi ve kıyı/turistik bölgelerde (`profile: 'standard_urban_or_coastal'`) kanonik kategori sırası sabittir:
@@ -35,6 +38,7 @@ Bu doküman `lib/gastronomy-v3` motorunun kalıcı anayasasıdır. Tüm şehir, 
   - `chefOrHeritageProtected` işaretli tarihi/dünya çapında tescilli yerel kurumlarda (ör. Çiya Sofrası, Yanyalı Fehmi Lokantası, Halil Lahmacun) en az `200` değerlendirme ve `2+` bağımsız kaynakla `4.0+` puan kabul edilir.
   - `communityInsiderProtected` işaretli yerel müdavim mekanlarında en az `200` değerlendirme ve `2+` bağımsız kaynakla `4.2+` puan kabul edilir.
 - **Sahte/şişirilmiş puan koruması:** Değerlendirme sayısı `150` altında olup `4.8+` puana sahip mekanlarda bağımsız `editorial`, `community` veya `award` kanıtı bulunmuyorsa `suspected_rating_inflation_no_community_proof` ile reddedilir.
+- **Bayesçi güven & hacim istikrarı dengesi:** Ham Google puanı tek başına kullanılmaz; düşük değerlendirme sayılarındaki oynaklığı dengelemek için Bayesçi güven düzeltmesi (`m=80, C=4.40`) uygulanır ve `700+` / `1500+` değerlendirmede `4.5+` istikrarını koruyan köklü mekanlara sürdürülebilir hacim puanı verilir.
 
 ## 5. Ana Uzmanlık + Kanıtlı İkincil Ürün (`secondaryItems` -> `alsoTry`)
 - Her mekanda birincil imza ürünlerinin (`whatToOrder`) dışında kalan, kaynaklarda açıkça öne çıkan en az 1 ikincil ürün ("Ayrıca Bunları da Dene", ör. kahvecinin sandviçi, burgercinin taco/milkshake'i, pizzacının tiramisusu, dönercinin fırın sütlacı) doğrulanmış olmalıdır.
@@ -54,3 +58,7 @@ Bu doküman `lib/gastronomy-v3` motorunun kalıcı anayasasıdır. Tüm şehir, 
 
 ## 8. Nesnel Anlatım Üslubu
 - Tüm ziyaretçi metinlerinde AI araştırmasını bizzat gidip tatmış gibi sunan birinci şahıs anlatımı ("tattım", "denedim", "gittim", "bayıldık") ve doğrulanamayan süperlatif sıfatlar ("en iyi", "kusursuz", "rakipsiz", "mükemmel", "muhteşem", "1 numara") yasaktır.
+
+## 9. Hafıza / Önbellek Kuralı ve Adım Adım Bölge Kalibrasyonu
+- Doğrulanan her mekanın canlı Google Places yanıtı `work/gastronomy-v3/places-cache.json` altında önbelleğe alınır; aynı mekan için gereksiz tekrar sorgu yapılmaz (yalnızca `--refresh` ile tazelenir).
+- Algoritma kalibrasyonu tüm bölgelere aynı anda yayılmadan önce referans bölge (`Moda`) üzerinde doğrulanır.

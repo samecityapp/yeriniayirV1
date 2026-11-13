@@ -150,27 +150,51 @@ test('all 5 Kadikoy regions have zero overlapping placeIds, valid ratings, and c
   assert.ok(globalPlaceIds.size >= 85, `Expected >=85 unique Kadikoy venues, got ${globalPlaceIds.size}`);
 });
 
-test('every published region and active category has verified nearbyVenues without core overlap (incl. Feneryolu)', () => {
+test('every published region limits nearbyVenues to <= 1 per category within <= 400m of its border (Moda has 6)', () => {
+  const cachePath = path.join(ROOT, 'work', 'gastronomy-v3', 'places-cache.json');
+  assert.ok(fs.existsSync(cachePath), 'places-cache.json must exist after pipeline run');
+  const cache = JSON.parse(fs.readFileSync(cachePath, 'utf8'));
+  assert.ok(Object.keys(cache.byPlaceId || {}).length >= 28, 'places-cache.json should persist verified Moda places');
+
   for (const { key, data } of snapshots) {
-    assert.ok(Array.isArray(data.nearbyVenues) && data.nearbyVenues.length > 0, `Missing nearbyVenues in ${key}`);
+    assert.ok(Array.isArray(data.nearbyVenues), `Missing nearbyVenues array in ${key}`);
     const coreIds = new Set(data.venues.map((v) => v.placeId));
 
     for (const cat of data.categories) {
       const catNearby = data.nearbyVenues.filter((n) => n.categoryId === cat.id);
-      assert.ok(catNearby.length >= 2, `Expected >=2 nearby venues in ${key}/${cat.slug}, got ${catNearby.length}`);
+      assert.ok(
+        catNearby.length <= 1,
+        `Expected at most 1 nearby venue in ${key}/${cat.slug}, got ${catNearby.length}`
+      );
       for (const nv of catNearby) {
         assert.ok(!coreIds.has(nv.placeId), `Nearby venue overlaps core placeId in ${key}/${cat.slug}: ${nv.name}`);
-        assert.ok(typeof nv.distanceKm === 'number' && nv.distanceKm > 0, `Invalid distanceKm on ${nv.name}`);
+        assert.ok(
+          typeof nv.distanceMeters === 'number' && nv.distanceMeters > 0 && nv.distanceMeters <= 400,
+          `Nearby venue exceeds 400m border cap (${nv.distanceMeters}m) in ${key}/${cat.slug}: ${nv.name}`
+        );
+        assert.ok(
+          typeof nv.distanceKm === 'number' && nv.distanceKm > 0 && nv.distanceKm <= 0.4,
+          `Invalid distanceKm (${nv.distanceKm}) on ${nv.name}`
+        );
         assert.ok(typeof nv.nearbyAreaLabel === 'string' && nv.nearbyAreaLabel.length > 0, `Missing nearbyAreaLabel on ${nv.name}`);
       }
     }
   }
 
   const moda = snapshots.find((s) => s.key === 'istanbul-kadikoy-moda').data;
-  const modaBreakfastNearby = moda.nearbyVenues.filter((n) => n.categoryId === 'kahvalti');
-  assert.ok(
-    modaBreakfastNearby.some((n) => n.nearbyAreaLabel.includes('Feneryolu')),
-    `Expected Feneryolu breakfast suggestion in Moda nearbyVenues, got: ${modaBreakfastNearby.map((n) => n.nearbyAreaLabel).join(', ')}`
+  assert.equal(moda.nearbyVenues.length, 6, `Expected 6 single nearby venues across Moda categories, got ${moda.nearbyVenues.length}`);
+
+  const yeldegirmeni = snapshots.find((s) => s.key === 'istanbul-kadikoy-yeldegirmeni').data;
+  assert.equal(
+    yeldegirmeni.nearbyVenues.filter((n) => n.categoryId === 'kahvalti').length,
+    0,
+    'Yeldegirmeni kahvalti has no <=400m neighbor and must remain 0 (no distant padding)'
+  );
+  const suadiye = snapshots.find((s) => s.key === 'istanbul-kadikoy-suadiye').data;
+  assert.equal(
+    suadiye.nearbyVenues.filter((n) => n.categoryId === 'pizza').length,
+    0,
+    'Suadiye pizza has no <=400m neighbor and must remain 0 (no distant padding)'
   );
 });
 
@@ -307,7 +331,18 @@ test('runtime discovery, foodAdapter, and realProvider expose all 5 Kadikoy regi
     assert.ok(cats.length >= 5, `${slug} cats=${cats.length}`);
     const firstResult = p.getCategoryResult(disc.region.id, cats[0].slug);
     assert.ok(firstResult && firstResult.coreVenues.length >= 1, `${slug} first category empty`);
-    assert.ok(firstResult.nearbyVenues.length >= 2, `${slug} first category missing nearbyVenues`);
+    assert.ok(
+      firstResult.nearbyVenues.length <= 1,
+      `${slug} first category exceeded single nearbyVenue cap: ${firstResult.nearbyVenues.length}`
+    );
+    if (slug === 'moda') {
+      assert.equal(firstResult.nearbyVenues.length, 1, 'Moda first category must have 1 ultra-close nearby venue');
+      assert.ok(
+        typeof firstResult.nearbyVenues[0].distanceMeters === 'number' &&
+          firstResult.nearbyVenues[0].distanceMeters <= 400,
+        'Moda nearby venue must be <= 400m from border'
+      );
+    }
     assert.ok(firstResult.coreVenues[0].ratings[0].attribution.mapsUri.startsWith('https://maps.google.com/?cid='));
   }
 });

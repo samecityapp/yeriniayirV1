@@ -190,9 +190,15 @@ export interface V3PublicVenue {
   beforeYouGo: string[];
 }
 
+export interface V3RegionBoundary {
+  bbox: { minLat: number; maxLat: number; minLng: number; maxLng: number };
+  excludeBbox?: { minLat: number; maxLat: number; minLng: number; maxLng: number };
+}
+
 export interface V3NearbyPublicVenue extends V3PublicVenue {
   nearbyAreaLabel: string;
   distanceKm: number;
+  distanceMeters: number;
 }
 
 export interface V3VerifiedRegionSnapshot {
@@ -201,7 +207,9 @@ export interface V3VerifiedRegionSnapshot {
   region: Omit<
     V3RegionDefinition,
     'candidates' | 'bbox' | 'excludeBbox' | 'allowedNeighborhoodTokens' | 'categories'
-  >;
+  > & {
+    boundary?: V3RegionBoundary;
+  };
   categories: V3CategoryDef[];
   venues: V3PublicVenue[];
   nearbyVenues?: V3NearbyPublicVenue[];

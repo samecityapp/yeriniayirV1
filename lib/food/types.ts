@@ -66,6 +66,7 @@ export interface FoodVenue extends PremiumRestaurantDetail {
   scope: VenueScope;
   /** nearby ise hangi komşu bölgeden geldiği */
   nearbyAreaLabel?: string;
+  distanceMeters?: number;
 }
 
 /** "Buranın Ritüelleri" - Standart yemek kategorilerinden bağımsız yerel deneyim */
@@ -121,6 +122,7 @@ export interface VisitorFoodVenue {
   scope?: 'core' | 'nearby';
   nearbyAreaLabel?: string;
   distanceKm?: number;
+  distanceMeters?: number;
   tagline:string|null; imageUrl:string; imageIsRepresentative:boolean; imageCategory:string; imageAttribution?:{label:string;url?:string}[];
   ratings:import('@/lib/pilot/googlePlaces/visitorRating').VisitorGoogleRating[];
   orderSuggestion:{title:string}|null; menuFrom:string[];

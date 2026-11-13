@@ -59,7 +59,11 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
  const regionDisplayName = data.region?.displayName ? data.region.displayName.split(',').slice(0, 2).join(',') : `${regionName}, İstanbul`;
 
  const mapVenue = (
-  v: IntegrationDiscovery['venues'][number] & { nearbyAreaLabel?: string; distanceKm?: number },
+  v: IntegrationDiscovery['venues'][number] & {
+   nearbyAreaLabel?: string;
+   distanceKm?: number;
+   distanceMeters?: number;
+  },
   scope: 'core' | 'nearby'
  ) => {
   const inlineRatings=copyVisitorGoogleRatings(v.ratings);
@@ -80,9 +84,15 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
   const categorySlugs = Array.from(new Set([catSlug, ...secondarySlugs]));
   const catName = matchedCategory?.label || CATEGORY_NAME_MAP[v.categoryId] || 'Gastronomi';
 
+  const distanceSuffix =
+   typeof v.distanceMeters === 'number'
+    ? ` · Sınıra ${v.distanceMeters} m`
+    : typeof v.distanceKm === 'number'
+    ? ` · ${v.distanceKm.toFixed(1)} km`
+    : '';
   const locationLabel =
    scope === 'nearby' && v.nearbyAreaLabel
-    ? `${v.nearbyAreaLabel}${typeof v.distanceKm === 'number' ? ` · ${v.distanceKm.toFixed(1)} km` : ''}`
+    ? `${v.nearbyAreaLabel}${distanceSuffix}`
     : regionDisplayName;
 
   return {
@@ -90,6 +100,9 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    scope,
    ...(scope === 'nearby' && v.nearbyAreaLabel ? { nearbyAreaLabel: v.nearbyAreaLabel } : {}),
    ...(scope === 'nearby' && typeof v.distanceKm === 'number' ? { distanceKm: v.distanceKm } : {}),
+   ...(scope === 'nearby' && typeof v.distanceMeters === 'number'
+    ? { distanceMeters: v.distanceMeters }
+    : {}),
    tagline:description,
    imageUrl:illustrations.get(v.id)!,imageIsRepresentative:true,imageCategory:v.categoryId,
    ratings:resolvedRatings,

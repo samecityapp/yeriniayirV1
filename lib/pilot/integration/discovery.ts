@@ -9,7 +9,7 @@ export interface IntegrationDiscovery {
  region:{id:string;slug:string;name:string;displayName:string;path:string[];characterSubtitle?:string;scopeNote?:string};
  categories:{slug:string;id:string;label:string;title?:string;isMustTry:boolean;emoji?:string}[];
  categorySlug:string;venues:VisitorVenueData[];
- nearbyVenues?: Array<VisitorVenueData & { nearbyAreaLabel: string; distanceKm: number }>;
+ nearbyVenues?: Array<VisitorVenueData & { nearbyAreaLabel: string; distanceKm: number; distanceMeters?: number }>;
  rituals:[];
 }
 export const MODA_CATEGORIES = [
@@ -6115,6 +6115,7 @@ export async function readIntegrationDiscovery(region='moda',category='kahve'){
    location: v.address,
    nearbyAreaLabel: v.nearbyAreaLabel,
    distanceKm: v.distanceKm,
+   ...(typeof v.distanceMeters === 'number' ? { distanceMeters: v.distanceMeters } : {}),
    categoryId: v.categoryId,
    description: v.description,
    whatToOrder: [...v.whatToOrder],

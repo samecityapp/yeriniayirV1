@@ -392,17 +392,17 @@ export function GastronomyPageClient({
                     <div className="space-y-1">
                       <div className="inline-flex items-center gap-1.5 text-[11px] font-extrabold uppercase tracking-wider text-blue-700">
                         <MapPin size={12} className="text-blue-600" />
-                        <span>KOMŞU SEMTLER · YAKIN MESAFE SEÇKİSİ</span>
+                        <span>KOMŞU SINIR · EN FAZLA 400 METRE</span>
                       </div>
                       <h2
                         id="nearby-suggestions-heading"
                         className="text-lg sm:text-xl font-black text-slate-950 tracking-tight"
                       >
-                        Yakındaki Diğer Öneriler
+                        Çok Yakındaki Diğer Öneri
                       </h2>
                       <p className="text-xs sm:text-sm text-slate-500 font-medium leading-relaxed">
-                        {selectedLocation.name} sınırının hemen dışında, yakın komşu semtlerdeki doğrulanmış{' '}
-                        {categoryResult.category.label.toLocaleLowerCase('tr')} durakları (konum ve mesafesiyle)
+                        {selectedLocation.name} sınırının hemen dışında, yürüme mesafesindeki (maks. 400 m) tek komşu{' '}
+                        {categoryResult.category.label.toLocaleLowerCase('tr')} önerisi
                       </p>
                     </div>
 

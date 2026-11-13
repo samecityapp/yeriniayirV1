@@ -4,6 +4,7 @@ import type {
   V3GooglePlacePayload,
   V3NearbyPublicVenue,
   V3PublicVenue,
+  V3RegionBoundary,
   V3RegionDefinition,
   V3VerifiedRegionSnapshot,
 } from './types';
@@ -407,17 +408,20 @@ export function evaluateAndScoreCandidate(
     return reject('seating_mismatch_no_dine_in');
   }
 
-  // Bileşik Yerel Cevher Skoru (0..100) — çoklu kaynak + müdavim + uzmanlık + ikincil ürün dengeli
-  const baseRatingScore = Math.min(36, Math.max(0, (rating - 3.6) * 30));
+  // Bileşik Yerel Cevher Skoru (0..100) — Bayesçi güven + çoklu kaynak + hacim istikrarı dengeli
+  const bayesianRating = (userRatingCount * rating + 80 * 4.4) / (userRatingCount + 80);
+  const baseRatingScore = Math.min(36, Math.max(0, (bayesianRating - 3.6) * 30));
   const evidenceScore = Math.min(28, sources.length * 8 + independentProofSources.length * 5);
   const communitySignalScore = Math.min(12, seed.localSignals.length * 4);
-  const hiddenGemBonus =
+  const volumeBalanceBonus =
     userRatingCount >= 35 && userRatingCount <= 700 && rating >= 4.5
-      ? 12
-      : userRatingCount <= 1500 && rating >= 4.5
-      ? 7
+      ? 11
+      : userRatingCount > 700 && rating >= 4.5
+      ? 8
       : userRatingCount <= 1200 && rating >= 4.4
       ? 5
+      : userRatingCount > 1200 && rating >= 4.4
+      ? 4
       : 0;
   const completenessBonus =
     (seed.whatToOrder.length > 0 ? 5 : 0) + (secondaryItems.length > 0 ? 5 : 0);
@@ -433,7 +437,7 @@ export function evaluateAndScoreCandidate(
       baseRatingScore +
         evidenceScore +
         communitySignalScore +
-        hiddenGemBonus +
+        volumeBalanceBonus +
         completenessBonus +
         heritageBonus
     )
@@ -573,6 +577,10 @@ export function selectDynamicRegionVenues(
       scopeNote: regionDef.scopeNote,
       characterSubtitle: regionDef.characterSubtitle,
       center: regionDef.center,
+      boundary: {
+        bbox: regionDef.bbox,
+        ...(regionDef.excludeBbox ? { excludeBbox: regionDef.excludeBbox } : {}),
+      },
     },
     categories: activeCategories,
     venues,
@@ -595,19 +603,92 @@ export function haversineKm(
   return 2 * R * Math.atan2(Math.sqrt(h), Math.sqrt(1 - h));
 }
 
+export function haversineMeters(
+  a: { lat: number; lng: number },
+  b: { lat: number; lng: number }
+): number {
+  return haversineKm(a, b) * 1000;
+}
+
+function decomposeBoundaryRects(
+  boundary: V3RegionBoundary
+): Array<{ minLat: number; maxLat: number; minLng: number; maxLng: number }> {
+  const { bbox, excludeBbox: ex } = boundary;
+  if (!ex) return [bbox];
+  const rects: Array<{ minLat: number; maxLat: number; minLng: number; maxLng: number }> = [];
+  if (ex.minLat > bbox.minLat) {
+    rects.push({
+      minLat: bbox.minLat,
+      maxLat: Math.min(bbox.maxLat, ex.minLat),
+      minLng: bbox.minLng,
+      maxLng: bbox.maxLng,
+    });
+  }
+  if (ex.maxLat < bbox.maxLat) {
+    rects.push({
+      minLat: Math.max(bbox.minLat, ex.maxLat),
+      maxLat: bbox.maxLat,
+      minLng: bbox.minLng,
+      maxLng: bbox.maxLng,
+    });
+  }
+  const midMinLat = Math.max(bbox.minLat, ex.minLat);
+  const midMaxLat = Math.min(bbox.maxLat, ex.maxLat);
+  if (midMaxLat > midMinLat) {
+    if (ex.minLng > bbox.minLng) {
+      rects.push({
+        minLat: midMinLat,
+        maxLat: midMaxLat,
+        minLng: bbox.minLng,
+        maxLng: Math.min(bbox.maxLng, ex.minLng),
+      });
+    }
+    if (ex.maxLng < bbox.maxLng) {
+      rects.push({
+        minLat: midMinLat,
+        maxLat: midMaxLat,
+        minLng: Math.max(bbox.minLng, ex.maxLng),
+        maxLng: bbox.maxLng,
+      });
+    }
+  }
+  return rects.length > 0 ? rects : [bbox];
+}
+
+export function distanceToRegionBorderMeters(
+  pt: { lat: number; lng: number },
+  boundary?: V3RegionBoundary,
+  fallbackCenter?: { lat: number; lng: number }
+): number {
+  if (!boundary) {
+    return fallbackCenter ? haversineMeters(fallbackCenter, pt) : Infinity;
+  }
+  const rects = decomposeBoundaryRects(boundary);
+  let best = Infinity;
+  for (const r of rects) {
+    const clampedLat = Math.max(r.minLat, Math.min(r.maxLat, pt.lat));
+    const clampedLng = Math.max(r.minLng, Math.min(r.maxLng, pt.lng));
+    const d = haversineMeters(pt, { lat: clampedLat, lng: clampedLng });
+    if (d < best) best = d;
+  }
+  return best;
+}
+
 export function computeRegionNearbyVenues(
   targetSnapshot: V3VerifiedRegionSnapshot,
   peerSnapshots: readonly V3VerifiedRegionSnapshot[],
   nearbyPoolSnapshot?: V3VerifiedRegionSnapshot | null,
-  maxPerCategory = 4
+  maxPerCategory = 1,
+  maxBorderMeters = 400,
+  scoreByPlaceId?: ReadonlyMap<string, number>
 ): V3NearbyPublicVenue[] {
   const targetPlaceIds = new Set(targetSnapshot.venues.map((v) => v.placeId));
   const seenPoolPlaceIds = new Set<string>();
+  const cappedPerCategory = Math.min(1, maxPerCategory);
 
   type PoolCandidate = {
     venue: V3PublicVenue;
     areaLabel: string;
-    isMicroArea: boolean;
   };
   const pool: PoolCandidate[] = [];
 
@@ -617,20 +698,21 @@ export function computeRegionNearbyVenues(
     pool.push({
       venue: v,
       areaLabel: v.neighborhood,
-      isMicroArea: true,
     });
   }
 
   for (const peer of peerSnapshots) {
     if (peer.region.id === targetSnapshot.region.id) continue;
-    const areaLabel = `${peer.region.neighborhood}, ${peer.region.district}`;
     for (const v of peer.venues) {
       if (targetPlaceIds.has(v.placeId) || seenPoolPlaceIds.has(v.placeId)) continue;
       seenPoolPlaceIds.add(v.placeId);
+      const areaLabel =
+        v.neighborhood && normalizeTr(v.neighborhood) !== normalizeTr(peer.region.neighborhood)
+          ? `${peer.region.neighborhood} (${v.neighborhood})`
+          : `${peer.region.neighborhood}, ${peer.region.district}`;
       pool.push({
         venue: v,
         areaLabel,
-        isMicroArea: false,
       });
     }
   }
@@ -638,52 +720,34 @@ export function computeRegionNearbyVenues(
   const nearbyResults: V3NearbyPublicVenue[] = [];
 
   for (const cat of targetSnapshot.categories) {
-    const withDistance = pool
+    if (cappedPerCategory <= 0) continue;
+
+    const candidates = pool
       .filter((entry) => entry.venue.categoryId === cat.id && entry.venue.coordinates != null)
       .map((entry) => {
-        const rawDist = haversineKm(targetSnapshot.region.center, entry.venue.coordinates!);
-        const distanceKm = Math.max(0.4, Math.round(rawDist * 10) / 10);
-        const rankScore =
-          entry.venue.rating * 15 - distanceKm * 3.2 + (entry.isMicroArea ? 5.5 : 0);
-        return { ...entry, distanceKm, rankScore };
-      });
+        const rawMeters = distanceToRegionBorderMeters(
+          entry.venue.coordinates!,
+          targetSnapshot.region.boundary,
+          targetSnapshot.region.center
+        );
+        const distanceMeters = Math.min(
+          maxBorderMeters,
+          Math.max(40, Math.round(rawMeters / 10) * 10)
+        );
+        const distanceKm = Math.round((distanceMeters / 1000) * 100) / 100;
+        const baseQuality = scoreByPlaceId?.get(entry.venue.placeId) ?? entry.venue.rating * 18;
+        const rankScore = baseQuality - rawMeters / 50;
+        return { ...entry, rawMeters, distanceMeters, distanceKm, rankScore };
+      })
+      .filter((c) => c.rawMeters <= maxBorderMeters)
+      .sort((a, b) => b.rankScore - a.rankScore || a.rawMeters - b.rawMeters);
 
-    let candidates = withDistance.filter((c) => c.distanceKm <= 5.5);
-    if (candidates.length < 3) {
-      candidates = withDistance.filter((c) => c.distanceKm <= 8.0);
-    }
-    candidates.sort((a, b) => b.rankScore - a.rankScore);
-
-    const picked: typeof candidates = [];
-    const usedPlaceIds = new Set<string>();
-    const usedAreas = new Set<string>();
-
-    // 1. Geçiş: Mahalle çeşitliliği için her farklı areaLabel'dan en fazla 1 mekan
-    for (const c of candidates) {
-      if (picked.length >= maxPerCategory) break;
-      if (usedPlaceIds.has(c.venue.placeId) || usedAreas.has(c.areaLabel)) continue;
-      usedPlaceIds.add(c.venue.placeId);
-      usedAreas.add(c.areaLabel);
-      picked.push(c);
-    }
-
-    // 2. Geçiş: Eksik kalırsa aynı areaLabel'dan ek mekanlara izin ver
-    if (picked.length < maxPerCategory) {
-      for (const c of candidates) {
-        if (picked.length >= maxPerCategory) break;
-        if (usedPlaceIds.has(c.venue.placeId)) continue;
-        usedPlaceIds.add(c.venue.placeId);
-        picked.push(c);
-      }
-    }
-
-    picked.sort((a, b) => a.distanceKm - b.distanceKm || b.venue.rating - a.venue.rating);
-
-    for (const item of picked) {
+    for (const item of candidates.slice(0, cappedPerCategory)) {
       nearbyResults.push({
         ...item.venue,
         nearbyAreaLabel: item.areaLabel,
         distanceKm: item.distanceKm,
+        distanceMeters: item.distanceMeters,
       });
     }
   }

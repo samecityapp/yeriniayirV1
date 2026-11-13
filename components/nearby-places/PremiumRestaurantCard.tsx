@@ -49,7 +49,11 @@ export function PremiumRestaurantCard({
             <MapPin size={10} className="text-amber-300 flex-shrink-0" />
             <span>
               Yakın Öneri · {restaurant.nearbyAreaLabel.split(',')[0]}
-              {typeof restaurant.distanceKm === 'number' ? ` (${restaurant.distanceKm.toFixed(1)} km)` : ''}
+              {typeof restaurant.distanceMeters === 'number'
+                ? ` (${restaurant.distanceMeters} m)`
+                : typeof restaurant.distanceKm === 'number'
+                ? ` (${restaurant.distanceKm.toFixed(1)} km)`
+                : ''}
             </span>
           </div>
         )}
