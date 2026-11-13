@@ -12,6 +12,7 @@ const PUBLISHED_REGION_KEYS = [
   'istanbul-kadikoy-yeldegirmeni',
   'istanbul-kadikoy-caddebostan',
   'istanbul-kadikoy-suadiye',
+  'aydin-kusadasi',
 ];
 const NEARBY_POOL_KEY = 'istanbul-kadikoy-nearby-pool';
 const DEFAULT_REGION_ORDER = [...PUBLISHED_REGION_KEYS, NEARBY_POOL_KEY];
@@ -153,6 +154,16 @@ async function fetchPlaceById(placeId, apiKey, cache, stats, forceRefresh) {
   return payload;
 }
 
+function computeBiasRadiusMeters(regionDef) {
+  const b = regionDef?.bbox;
+  if (!b) return 3000;
+  const latMidRad = (((b.minLat + b.maxLat) / 2) * Math.PI) / 180;
+  const dLatMeters = (b.maxLat - b.minLat) * 111320;
+  const dLngMeters = (b.maxLng - b.minLng) * 111320 * Math.cos(latMidRad);
+  const halfDiag = Math.sqrt(dLatMeters * dLatMeters + dLngMeters * dLngMeters) / 2;
+  return Math.min(50000, Math.max(3000, Math.round(halfDiag)));
+}
+
 async function fetchPlaceByQuery(textQuery, regionDef, apiKey, cache, stats, forceRefresh) {
   const queryKey = `${regionDef.id}::${textQuery}`;
   if (!forceRefresh && cache.byQuery[queryKey]?.payload) {
@@ -178,7 +189,7 @@ async function fetchPlaceByQuery(textQuery, regionDef, apiKey, cache, stats, for
             latitude: regionDef.center.lat,
             longitude: regionDef.center.lng,
           },
-          radius: 3000,
+          radius: computeBiasRadiusMeters(regionDef),
         },
       },
     }),
@@ -492,7 +503,11 @@ async function main() {
         }
       }
       const updated = { ...entry.snapshot, nearbyVenues };
-      fs.writeFileSync(entry.path, JSON.stringify(updated, null, 2) + '\n', 'utf8');
+      const nextJson = JSON.stringify(updated, null, 2) + '\n';
+      const prevJson = fs.existsSync(entry.path) ? fs.readFileSync(entry.path, 'utf8') : '';
+      if (nextJson !== prevJson) {
+        fs.writeFileSync(entry.path, nextJson, 'utf8');
+      }
       const perCat = entry.snapshot.categories
         .map((c) => `${c.slug}:${nearbyVenues.filter((n) => n.categoryId === c.id).length}`)
         .join(', ');

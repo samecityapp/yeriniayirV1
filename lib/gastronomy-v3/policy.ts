@@ -49,6 +49,10 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'beyaz fırın',
   'beyaz firin',
   'nappo',
+  'house of b',
+  'kontrbus',
+  'pasaport pizza',
+  'terra pizza',
 ];
 
 export const FOOD_PLACE_TYPES = new Set<string>([
@@ -88,6 +92,13 @@ export const FOOD_PLACE_TYPES = new Set<string>([
   'cocktail_bar',
   'bar',
   'kebab_shop',
+  'cafeteria',
+  'coffee_roastery',
+  'family_restaurant',
+  'mediterranean_restaurant',
+  'fine_dining_restaurant',
+  'american_restaurant',
+  'oyster_bar_restaurant',
 ]);
 
 export const FORBIDDEN_VISITOR_COPY_REGEX =

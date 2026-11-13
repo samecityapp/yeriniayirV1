@@ -66,6 +66,7 @@ const REGION_KEYS = [
   'istanbul-kadikoy-yeldegirmeni',
   'istanbul-kadikoy-caddebostan',
   'istanbul-kadikoy-suadiye',
+  'aydin-kusadasi',
 ];
 
 const CANONICAL_SLUGS = ['pizza', 'hamburger', 'kahve', 'date-mekanlari', 'kahvalti', 'denemelisin'];
@@ -146,18 +147,21 @@ test('Caddebostan dynamically prunes breakfast ("Yoksa Onerme") when no qualifyi
   assert.equal(caddebostan.categories.some((c) => c.slug === 'kahvalti'), false);
 });
 
-test('all 5 Kadikoy regions have zero overlapping placeIds, valid ratings, and canonical CID links', () => {
+test('all 6 published regions have zero overlapping placeIds, valid ratings, and canonical CID links', () => {
   const globalPlaceIds = new Set();
   for (const { key, data } of snapshots) {
     for (const venue of data.venues) {
       assert.ok(!globalPlaceIds.has(venue.placeId), `Cross-region or duplicate placeId ${venue.placeId} (${venue.name} in ${key})`);
       globalPlaceIds.add(venue.placeId);
-      assert.ok(venue.address.includes('Kadıköy'), `Outside Kadıköy: ${venue.name} -> ${venue.address}`);
+      assert.ok(
+        venue.address.includes(data.region.district) && venue.address.includes(data.region.city),
+        `Outside ${data.region.district}/${data.region.city}: ${venue.name} -> ${venue.address}`
+      );
       assert.ok(venue.mapsUri.startsWith('https://maps.google.com/?cid='), `Invalid CID URI: ${venue.mapsUri}`);
       assert.ok(typeof venue.rating === 'number' && venue.rating >= 4.0 && venue.rating <= 5.0);
     }
   }
-  assert.ok(globalPlaceIds.size >= 85, `Expected >=85 unique Kadikoy venues, got ${globalPlaceIds.size}`);
+  assert.ok(globalPlaceIds.size >= 115, `Expected >=115 unique published venues, got ${globalPlaceIds.size}`);
 });
 
 test('every published region limits nearbyVenues to <= 1 per category within <= 400m of its border (Moda has 6)', () => {
@@ -316,26 +320,29 @@ test('runtime discovery, foodAdapter, and realProvider expose all 5 Kadikoy regi
   const provider = providerMod.createRealFoodProvider(food);
 
   const ready = provider.getReadyRegions();
-  assert.equal(ready.length, 5);
+  assert.equal(ready.length, 6);
   assert.deepEqual(
     ready.map((r) => r.slug),
-    ['moda', 'kadikoy', 'yeldegirmeni', 'caddebostan', 'suadiye']
+    ['moda', 'kadikoy', 'yeldegirmeni', 'caddebostan', 'suadiye', 'kusadasi']
   );
 
   for (const loc of food.locations) {
     assert.ok(loc.city && loc.district && loc.neighborhood, `Missing hierarchy for ${loc.id}`);
   }
 
-  // Legacy kadikoy-carsi slug resolves to Kadikoy
+  // Legacy kadikoy-carsi slug & Kusadasi sub-area slugs resolve cleanly
   assert.equal(provider.getLocationBySlug('kadikoy-carsi')?.slug, 'kadikoy');
+  assert.equal(provider.getLocationBySlug('guzelcamli')?.slug, 'kusadasi');
+  assert.equal(provider.getLocationBySlug('davutlar')?.slug, 'kusadasi');
+  assert.equal(provider.getLocationBySlug('merkez-kusadasi-aydin')?.slug, 'kusadasi');
 
   // Unpublished regions cannot resolve
   assert.equal(provider.getLocationBySlug('gaziantep'), undefined);
   assert.equal(provider.getLocationBySlug('antalya-lara'), undefined);
   assert.equal(provider.getLocationBySlug('kosuyolu'), undefined);
 
-  // Verify all 5 published regions resolve cleanly through readIntegrationDiscovery
-  for (const slug of ['moda', 'kadikoy', 'yeldegirmeni', 'caddebostan', 'suadiye']) {
+  // Verify all 6 published regions resolve cleanly through readIntegrationDiscovery
+  for (const slug of ['moda', 'kadikoy', 'yeldegirmeni', 'caddebostan', 'suadiye', 'kusadasi']) {
     const disc = await discoveryMod.readIntegrationDiscovery(slug, '');
     assert.ok(disc, `Missing discovery for ${slug}`);
     const f = adapterMod.toFoodDiscovery(disc);
@@ -343,6 +350,14 @@ test('runtime discovery, foodAdapter, and realProvider expose all 5 Kadikoy regi
     if (slug === 'kadikoy') {
       const brekkieCard = f.venues.find((v) => v.id === 'carsi-brekkie');
       assert.equal(brekkieCard?.location, 'Yoğurtçu Parkı, Kadıköy');
+    }
+    if (slug === 'kusadasi') {
+      assert.equal(p.getLocationBySlug('kusadasi')?.locative, "Kuşadası'nda");
+      assert.equal(disc.region.displayName, 'Kuşadası, Aydın');
+      const locations = f.venues.map((v) => v.location);
+      assert.ok(locations.some((loc) => loc.includes('Merkez, Kuşadası')), 'Kusadasi missing Merkez location');
+      assert.ok(locations.some((loc) => loc.includes('Davutlar')), 'Kusadasi missing Davutlar location');
+      assert.ok(locations.some((loc) => loc.includes('Güzelçamlı')), 'Kusadasi missing Guzelcamli location');
     }
     const cats = p.getRegionCategories(disc.region.id);
     assert.ok(cats.length >= 5, `${slug} cats=${cats.length}`);

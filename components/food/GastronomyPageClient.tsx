@@ -52,6 +52,12 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     headline: 'Suadiye, Kadıköy',
     vibe: 'Şaşkınbakkal’dan Suadiye’ye akşam brasserie’leri, Napoli pizzaları ve profiterol klasikleri',
   },
+  'kusadasi-aydin': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Kuşadası · Merkez, Davutlar & Güzelçamlı',
+    vibe: 'Setur Marina ve Kaleiçi’nden Kirazlı, Caferli, Davutlar ve Güzelçamlı sahiline uzanan seçki',
+  },
 };
 
 interface GastronomyPageClientProps {
@@ -230,7 +236,7 @@ export function GastronomyPageClient({
                       Konum Seç
                     </div>
                     <div className="text-xs text-slate-500 font-medium truncate mt-0.5">
-                      İstanbul · Kadıköy · Moda · Yeldeğirmeni · Caddebostan · Suadiye
+                      Kuşadası · Kadıköy · Moda · Yeldeğirmeni · Caddebostan · Suadiye
                     </div>
                   </div>
                 </div>

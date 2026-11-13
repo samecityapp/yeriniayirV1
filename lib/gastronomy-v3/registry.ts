@@ -3,6 +3,7 @@ import carsiSnapshotJson from './regions/istanbul-kadikoy-carsi.json';
 import yeldegirmeniSnapshotJson from './regions/istanbul-kadikoy-yeldegirmeni.json';
 import caddebostanSnapshotJson from './regions/istanbul-kadikoy-caddebostan.json';
 import suadiyeSnapshotJson from './regions/istanbul-kadikoy-suadiye.json';
+import kusadasiSnapshotJson from './regions/aydin-kusadasi.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -11,6 +12,7 @@ const CARSI_SNAPSHOT = carsiSnapshotJson as V3VerifiedRegionSnapshot;
 const YELDEGIRMENI_SNAPSHOT = yeldegirmeniSnapshotJson as V3VerifiedRegionSnapshot;
 const CADDEBOSTAN_SNAPSHOT = caddebostanSnapshotJson as V3VerifiedRegionSnapshot;
 const SUADIYE_SNAPSHOT = suadiyeSnapshotJson as V3VerifiedRegionSnapshot;
+const KUSADASI_SNAPSHOT = kusadasiSnapshotJson as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -18,6 +20,7 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   YELDEGIRMENI_SNAPSHOT,
   CADDEBOSTAN_SNAPSHOT,
   SUADIYE_SNAPSHOT,
+  KUSADASI_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -33,6 +36,11 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'caddebostan-kadikoy': CADDEBOSTAN_SNAPSHOT,
   suadiye: SUADIYE_SNAPSHOT,
   'suadiye-kadikoy': SUADIYE_SNAPSHOT,
+  kusadasi: KUSADASI_SNAPSHOT,
+  'kusadasi-aydin': KUSADASI_SNAPSHOT,
+  'merkez-kusadasi-aydin': KUSADASI_SNAPSHOT,
+  guzelcamli: KUSADASI_SNAPSHOT,
+  davutlar: KUSADASI_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {
@@ -259,21 +267,6 @@ export const V3_LOCATIONS: FoodLocation[] = [
     status: 'coming_soon',
     aliases: ['Konyaaltı', 'Konyaalti', 'Gürsu', 'Antalya'],
     scopeNote: 'Antalya · Konyaaltı · Gürsu & Sahil (V3 Doğrulama Sırasında)',
-  },
-  {
-    id: 'merkez-kusadasi-aydin',
-    level: 'semt',
-    city: 'Aydın',
-    district: 'Kuşadası',
-    neighborhood: 'Merkez & Kaleiçi',
-    name: 'Merkez & Kaleiçi',
-    slug: 'kusadasi',
-    path: ['aydin', 'kusadasi', 'merkez'],
-    displayName: 'Merkez & Kaleiçi, Kuşadası, Aydın',
-    locative: "Kuşadası'nda",
-    status: 'coming_soon',
-    aliases: ['Kuşadası', 'Kusadasi', 'Aydın', 'Çardak 6'],
-    scopeNote: 'Aydın · Kuşadası · Merkez & Kaleiçi (V3 Doğrulama Sırasında)',
   },
   {
     id: 'akyaka-ula-mugla',
