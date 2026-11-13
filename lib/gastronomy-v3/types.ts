@@ -48,6 +48,7 @@ export interface V3CandidateSeed {
   localSignals: string[];
   chefOrHeritageProtected?: boolean;
   communityInsiderProtected?: boolean;
+  localRitualProtected?: boolean;
   iconicSettingOrVibeProtected?: boolean;
   neighborhoodLabelOverride?: string;
   degradationFlag?: boolean;

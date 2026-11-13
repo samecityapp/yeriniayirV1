@@ -1,4 +1,4 @@
-# Gastronomi V3.4 Seçim Algoritması ve Kategori Kuralları (`RULES.md`)
+# Gastronomi V3.5 Seçim Algoritması ve Kategori Kuralları (`RULES.md`)
 
 Bu doküman `lib/gastronomy-v3` motorunun kalıcı anayasasıdır. Tüm şehir, ilçe ve semt güncellemelerinde istisnasız uygulanır.
 
@@ -21,6 +21,7 @@ Bu doküman `lib/gastronomy-v3` motorunun kalıcı anayasasıdır. Tüm şehir, 
   4. `date-mekanlari` — Date
   5. `kahvalti` — Kahvaltı
   6. `denemelisin` — O Bölgeye Özgü Şeyler Denemelisin
+- Ege sahil ve yazlık kıyı bölgelerinde (`coastalSeafood: true`, ör. Kuşadası) standart 6 kategoriye ek olarak **`7. balik-deniz-urunleri — 🐟 Balıkçılar`** kategorisi açılır; böylece gerçek sahil balıkçıları hem ayrı sekmede keşfedilir hem `Date` ve `Denemelisin` sekmelerini boğmaz.
 - Gaziantep gibi doğrudan yerel mutfak kimliğiyle anılan özel konumlarda (`profile: 'culinary_heritage'`) standart pizza/hamburger şablonu zorlanmaz; bölgenin en köklü yöresel yemek kategorileri kullanılır.
 - Afyonkarahisar (lokum vb.) gibi konuma özgü belirgin bir imza ürün başlığı varsa `extraCategories` ile eklenir.
 
@@ -36,8 +37,9 @@ Bu doküman `lib/gastronomy-v3` motorunun kalıcı anayasasıdır. Tüm şehir, 
 - **Yerel müdavim / şef / miras / ikonik konum koruması:**
   - `iconicSettingOrVibeProtected` işaretli, en az `200` değerlendirmeye ve `2+` bağımsız editoryal/topluluk/ödül kaynağına sahip semt simgesi mekanlarda `4.1+` puan kabul edilir.
   - `chefOrHeritageProtected` işaretli tarihi/dünya çapında tescilli yerel kurumlarda (ör. Çiya Sofrası, Yanyalı Fehmi Lokantası, Halil Lahmacun) en az `200` değerlendirme ve `2+` bağımsız kaynakla `4.0+` puan kabul edilir.
+  - `localRitualProtected` işaretli yerel halk ritüeli / bütçe dostu müdavim duraklarında (ör. Çardak 6, Tuki Çarşaflı, Ada Söğüşçüsü, Bülbül Restaurant) hızlı sokak/hafta sonu servisi veya kurye yorumları nedeniyle puan `3.8–4.3` bandında kalsa bile en az `300` değerlendirme ve `2+` bağımsız editoryal/topluluk kanıtıyla koruma altına alınır (`ritualCirculationBonus` uygulanır).
   - `communityInsiderProtected` işaretli yerel müdavim mekanlarında en az `200` değerlendirme ve `2+` bağımsız kaynakla `4.2+` puan kabul edilir.
-- **Sahte/şişirilmiş puan koruması:** Değerlendirme sayısı `150` altında olup `4.8+` puana sahip mekanlarda bağımsız `editorial`, `community` veya `award` kanıtı bulunmuyorsa `suspected_rating_inflation_no_community_proof` ile reddedilir.
+- **Sahte/şişirilmiş puan koruması:** Değerlendirme sayısı `150` altında olup `4.8+` puana sahip mekanlarda en az `2` bağımsız `editorial`, `community` veya `award` kanıtı bulunmuyorsa `suspected_rating_inflation_no_community_proof` ile reddedilir.
 - **Bayesçi güven & hacim istikrarı dengesi:** Ham Google puanı tek başına kullanılmaz; düşük değerlendirme sayılarındaki oynaklığı dengelemek için Bayesçi güven düzeltmesi (`m=80, C=4.40`) uygulanır ve `700+` / `1500+` değerlendirmede `4.5+` istikrarını koruyan köklü mekanlara sürdürülebilir hacim puanı verilir.
 
 ## 5. Ana Uzmanlık + Kanıtlı İkincil Ürün (`secondaryItems` -> `alsoTry`)

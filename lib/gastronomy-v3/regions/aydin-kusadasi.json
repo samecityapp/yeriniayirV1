@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "verifiedAt": "2026-11-13T18:13:46.337Z",
+  "verifiedAt": "2026-11-13T18:52:25.787Z",
   "region": {
     "id": "kusadasi-aydin",
     "slug": "kusadasi",
@@ -27,10 +27,11 @@
       "Kaleiçi",
       "Kirazlı",
       "Caferli",
+      "Yaylaköy",
       "Soğucak"
     ],
     "scopeNote": "Merkez, Davutlar & Güzelçamlı · Doğrulanmış Yerel Seçki",
-    "characterSubtitle": "Merkez, Setur Marina ve Kadınlar Denizi’nden Davutlar ile Güzelçamlı Milli Park hattına uzanan doğrulanmış duraklar",
+    "characterSubtitle": "Merkez ve Çarşı’dan Kirazlı, Caferli, Yaylaköy, Davutlar ve Güzelçamlı sahiline yerel ritüeller, köy kahvaltıları ve Ege balıkçıları",
     "center": {
       "lat": 37.8595,
       "lng": 27.2605
@@ -91,6 +92,14 @@
       "label": "Denemelisin",
       "title": "Bölgeye Özgü Denemelisin",
       "emoji": "⭐",
+      "isMustTry": false
+    },
+    {
+      "id": "balik",
+      "slug": "balik-deniz-urunleri",
+      "label": "Balıkçılar",
+      "title": "Balıkçılar & Deniz Ürünleri",
+      "emoji": "🐟",
       "isMustTry": false
     }
   ],
@@ -195,6 +204,39 @@
       ]
     },
     {
+      "id": "kusadasi-osteria-mio",
+      "placeId": "ChIJ_wwOwuGpvhQRO49mTeaxbdw",
+      "name": "Osteria Mio",
+      "address": "Türkmen, Hüseyin Reis Sk. no:11/2, 09400 Kuşadası/Aydın, Türkiye",
+      "neighborhood": "Türkmen · Merkez, Kuşadası",
+      "categoryId": "pizza",
+      "rating": 4.2,
+      "mapsUri": "https://maps.google.com/?cid=15883547063504768827",
+      "coordinates": {
+        "lat": 37.8711243,
+        "lng": 27.266053399999997
+      },
+      "description": "Türkmen Mahallesi Hüseyin Reis Sokak'ta ekşi mayalı hamurdan çıkan İtalyan pizzaları ve ev yapımı taze makarnalarıyla yerel müdavimlerin tercih ettiği trattoria.",
+      "whatToOrder": [
+        "Ekşi Mayalı Napoliten Pizza Çeşitleri",
+        "Margherita & Dört Peynirli Pizza",
+        "Füme Etli & Roka Parmesanlı Pizza"
+      ],
+      "menuFrom": [
+        "Pepperoni Pizza",
+        "Bresaola Pizza"
+      ],
+      "alsoTry": [
+        "Spaghetti Carbonara & Taze Bruschetta — İnce hamurlu pizzaların yanında klasik İtalyan usulü hazırlanan makarnalar ve başlangıç bruschetta tabağı öne çıkıyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: İç salon ve sakin ara sokak dış masaları · Akşamları müdavim ağırlıklı samimi trattoria atmosferi",
+        "Dezavantaj: Popülerlikten ziyade hız odaklı yoğun akşamlarda servis ve hamur tutarlılığı konusunda beklentiyi yüksek tutanları zaman zaman zorlayabiliyor.",
+        "Ulaşım: Türkmen Mahallesi Hüseyin Reis Sokak No:11/2 üzerinde Merkez ara sokaklarında.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
       "id": "kusadasi-boss-burger",
       "placeId": "ChIJzZU8l_ipvhQRCJiemwbbaMM",
       "name": "Boss Burger Kuşadası",
@@ -228,39 +270,6 @@
       ]
     },
     {
-      "id": "kusadasi-mavi-burger",
-      "placeId": "ChIJrQKfFQClvhQRFzdInjasuCQ",
-      "name": "Mavi Burger",
-      "address": "Soğucak, Kuşadası Davutlar Yolu No:6/D, 09400 Kuşadası/Aydın, Türkiye",
-      "neighborhood": "Soğucak · Davutlar Yolu, Kuşadası",
-      "categoryId": "hamburger",
-      "rating": 4.7,
-      "mapsUri": "https://maps.google.com/?cid=2646054131663910679",
-      "coordinates": {
-        "lat": 37.7790811,
-        "lng": 27.273107999999997
-      },
-      "description": "Kuşadası–Davutlar yolu üzerindeki Soğucak geçişinde döküm tavada kenarları karamelize çıtır smash burgerler ve ev yapımı soslar çıkaran lokal durak.",
-      "whatToOrder": [
-        "Double Smash Cheeseburger",
-        "Karamelize Soğanlı Smash Burger",
-        "Özel Soslu Mavi Burger"
-      ],
-      "menuFrom": [
-        "Klasik Smash Burger",
-        "Acılı Smash Burger"
-      ],
-      "alsoTry": [
-        "Çıtır Soğan Halkası & Baharatlı Patates Sepeti — Yol üstü molalarda smash burgerlerin yanına sıcak kızaran çıtır soğan halkası ve baharatlı patates tercih ediliyor."
-      ],
-      "beforeYouGo": [
-        "Oturma & Servis: İç ve dış açık masa düzeni · Yazlık bölge geçişinde rahat ve samimi burgerci ortamı",
-        "Dezavantaj: İlçe merkezine kıyasla Davutlar–Soğucak yolu üzerinde olduğu için araç veya dolmuşla ulaşım gerekiyor.",
-        "Ulaşım: Soğucak Mahallesi Kuşadası–Davutlar Yolu üzerinde Merkez–Davutlar minibüs hattıyla erişilebilir.",
-        "Bütçe seviyesi (Google): Orta"
-      ]
-    },
-    {
       "id": "kusadasi-byron-burger",
       "placeId": "ChIJ5bi_3OKpvhQRTEXRxAtr9WE",
       "name": "Byron Burger",
@@ -290,39 +299,6 @@
         "Oturma & Servis: İç ve dış masa servisi, rezervasyon ve paket imkanı · Akşamları burger ve sosis severlerin yoğunlaştığı rahat ortam",
         "Dezavantaj: Sipariş üzerine pişen yüksek gramajlı köfteler nedeniyle yoğun saatlerde hazırlık süresi uzayabiliyor.",
         "Ulaşım: Cumhuriyet Mahallesi Zeki Aydınlı Sokak üzerinde Merkez ana caddelere yürüme mesafesinde.",
-        "Bütçe seviyesi (Google): Orta"
-      ]
-    },
-    {
-      "id": "kusadasi-sokak-burger",
-      "placeId": "ChIJE69Dg8qpvhQRUTdHt9FpWnY",
-      "name": "Sokak Burger",
-      "address": "Camikebir, 09400 Kuşadası/Aydın, Türkiye",
-      "neighborhood": "Camikebir · Merkez, Kuşadası",
-      "categoryId": "hamburger",
-      "rating": 4.4,
-      "mapsUri": "https://maps.google.com/?cid=8528245193823434577",
-      "coordinates": {
-        "lat": 37.861897299999995,
-        "lng": 27.258669299999998
-      },
-      "description": "Camikebir çarşı hattında ağır ateşte pişirilmiş tiftik dana eti, isli kuru et ve avokado soslu burger kombinasyonlarıyla bilinen sokak lezzeti noktası.",
-      "whatToOrder": [
-        "Sokak Burger (İsli Kuru Etli)",
-        "Tiftik Dana Burger",
-        "Chef Mantarlı Burger"
-      ],
-      "menuFrom": [
-        "Cheeseburger",
-        "Kibrit Patatesli Burger"
-      ],
-      "alsoTry": [
-        "Taco & Peynir Çubuklu Mix Box Atıştırmalık Sepeti — Paylaşımlı masalarda taco, mozzarella çubukları ve soğan halkasından oluşan kutu seçkisi öne çıkıyor."
-      ],
-      "beforeYouGo": [
-        "Oturma & Servis: İç oturma düzeni ve paket servis imkanı · Çarşı içinde hareketli sokak lezzeti temposu",
-        "Dezavantaj: Avokado ve kibrit patates gibi ek malzemeler klasik yalın burger arayanlara göre daha yoğun soslu gelebilir.",
-        "Ulaşım: Camikebir Mahallesi merkez çarşı yürüyüş alanı içinde.",
         "Bütçe seviyesi (Google): Orta"
       ]
     },
@@ -526,39 +502,6 @@
       ]
     },
     {
-      "id": "kusadasi-kiyi-balik",
-      "placeId": "ChIJ9WUMaRehvhQREwdM3gJ7GQ0",
-      "name": "Kıyı Balık Restaurant",
-      "address": "Güzelçamlı, Milli Park Cd. No:228, 09400 Kuşadası/Aydın, Türkiye",
-      "neighborhood": "Güzelçamlı Sahil, Kuşadası",
-      "categoryId": "date",
-      "rating": 4.3,
-      "mapsUri": "https://maps.google.com/?cid=943920849160505107",
-      "coordinates": {
-        "lat": 37.712288699999995,
-        "lng": 27.2145597
-      },
-      "description": "Dilek Yarımadası Milli Parkı girişine komşu Güzelçamlı kıyısında, dalga sesleri eşliğinde sızma zeytinyağlı Ege mezeleri ve taze deniz balıkları servis eden denize sıfır sahil restoranı.",
-      "whatToOrder": [
-        "Sızma Zeytinyağlı Enginar & Lakerda",
-        "Günlük Izgara Ege Balığı",
-        "Jumbo Karides & Kalamar"
-      ],
-      "menuFrom": [
-        "Deniz Börülcesi",
-        "Patlıcan Salatası"
-      ],
-      "alsoTry": [
-        "Midye Dolma & Yemek Sonu Geleneksel Tatlılar — Ana balık servisi öncesinde soğuk tezgah midye dolması ve kapanışta sunulan meyve-tatlı tabakları öne çıkıyor."
-      ],
-      "beforeYouGo": [
-        "Oturma & Servis: Denize sıfır açık sahil masaları, iç mekan ve rezervasyonlu servis · Yaz akşamlarında sahil kalabalığı ve dalga sesi eşliği",
-        "Dezavantaj: Turistik sahil hattı ve yüksek bütçe bandı nedeniyle hesap ortalamanın üzerinde çıkabiliyor.",
-        "Ulaşım: Güzelçamlı Milli Park Caddesi No:228 üzerinde Milli Park girişine yakın sahil ucunda.",
-        "Bütçe seviyesi (Google): Yüksek"
-      ]
-    },
-    {
       "id": "kusadasi-seckin-sakli-bahce",
       "placeId": "ChIJRcFxyW-pvhQRDL2It8z0aAM",
       "name": "Seçkin Saklı Bahçe",
@@ -624,35 +567,68 @@
       ]
     },
     {
-      "id": "kusadasi-limon-agaci-guzelcamli",
-      "placeId": "ChIJi24T6nuhvhQR9VOQKGfsOwE",
-      "name": "Limon Ağacı Güzelçamlı",
-      "address": "Güzelçamlı mahallesi özertürk caddesi G-34, Güzelçamlı, 09400 Kuşadası/Aydın, Türkiye",
-      "neighborhood": "Güzelçamlı, Kuşadası",
+      "id": "kusadasi-tas-ev-brunch",
+      "placeId": "ChIJkxRg4ZylvhQRwHc7u9GBqEM",
+      "name": "Taş Ev Brunch",
+      "address": "Yaylaköy, 5252 Sokak, 09400 Kuşadası/Aydın, Türkiye",
+      "neighborhood": "Yaylaköy, Kuşadası",
       "categoryId": "kahvalti",
-      "rating": 4.8,
-      "mapsUri": "https://maps.google.com/?cid=88924545470190581",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=4875289334417946560",
       "coordinates": {
-        "lat": 37.715457199999996,
-        "lng": 27.222229199999997
+        "lat": 37.7751757,
+        "lng": 27.3253776
       },
-      "description": "Dilek Yarımadası Milli Parkı güzergahındaki Güzelçamlı Özertürk Caddesi'nde limon ağaçlarıyla çevrili huzurlu bahçesinde ev reçelli serpme kahvaltı hazırlayan aile işletmesi.",
+      "description": "Yaylaköy kırsalında kışın soba sıcaklığında iç salonda, yazın geniş taş avlu bahçesinde ev yapımı incir ve kabak reçelleri, sıcak bazlama ve kavurmalı yumurta sunan köy kahvaltıcısı.",
       "whatToOrder": [
-        "Limon Bahçesinde Serpme Kahvaltı",
-        "Ev Yapımı Reçeller & Sıcak Pişi",
-        "Sahanda Yumurta"
+        "Taş Bahçe Serpme Kahvaltısı",
+        "Kavurmalı Yumurta & Menemen",
+        "Sıcak Bazlama & Sac Gözleme"
       ],
       "menuFrom": [
-        "Menemen",
-        "Peynir Tabağı"
+        "Sucuklu Yumurta",
+        "Yöresel Peynir Tabağı"
       ],
       "alsoTry": [
-        "El Açması Ev Mantısı & Ayvalık Tostu — Kahvaltı saatleri dışında aile mutfağından çıkan ev yapımı mantı ve sıcak tost çeşitleri müdavimlerce tercih ediliyor."
+        "Ev Yapımı İncir ve Kabak Reçelleri & Sıcak Demleme Çay — Yaylaköy mahsullerinden hazırlanan az şekerli ev yapımı incir-kabak reçelleri ve sürekli tazelenen demleme çay eşlik ediyor."
       ],
       "beforeYouGo": [
-        "Oturma & Servis: Limon ağaçları altı bahçe masaları ve rezervasyonlu aile ortamı · Milli Park kalabalığından uzak sakin ve gölgeli bahçe",
-        "Dezavantaj: Aile işletmesi düzeninde küçük ölçekli çalıştığı için kalabalık hafta sonu gruplarında servis yavaşlayabiliyor.",
-        "Ulaşım: Güzelçamlı Mahallesi Özertürk Caddesi üzerinde Milli Park girişi öncesinde.",
+        "Oturma & Servis: Tarihi taş avlu, gölgeli bahçe masaları ve kışın sobalı iç salon · Şehir kalabalığından uzak sakin ve yeşil Yaylaköy köy ortamı",
+        "Dezavantaj: Yaylaköy kırsalında bulunduğu için Kuşadası Merkez’den özel araçla çıkılması gerekiyor; yaz hafta sonları doluluk yüksek.",
+        "Ulaşım: Yaylaköy Mahallesi 5252 Sokak üzerinde Kirazlı–Yaylaköy rotasında.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "kusadasi-cardak-6",
+      "placeId": "ChIJs0F8fUikvhQRvNC9dKu_X08",
+      "name": "Çardak 6",
+      "address": "Yolu, Caferli, Yol Ayrımı 3. Km, 09200 Kuşadası/Aydın, Türkiye",
+      "neighborhood": "Caferli · Davutlar Yolu, Kuşadası",
+      "categoryId": "kahvalti",
+      "rating": 4.2,
+      "mapsUri": "https://maps.google.com/?cid=5719500794902728892",
+      "coordinates": {
+        "lat": 37.7551057,
+        "lng": 27.293343999999998
+      },
+      "description": "Caferli–Davutlar yolu ayrımında yerli halkın ve müdavimlerin sabah kahvaltısından öğle ev yemeklerine kadar tercih ettiği, sıcak bazlama, pişi ve zeytinyağlı Ege tabaklarıyla öne çıkan köy mutfağı.",
+      "whatToOrder": [
+        "Sıcak Bazlama & Taze Pişi",
+        "El Açması Sac Gözleme",
+        "Serpme Ege Köy Kahvaltısı"
+      ],
+      "menuFrom": [
+        "Otlu Köy Böreği",
+        "Köy Yumurtalı Menemen"
+      ],
+      "alsoTry": [
+        "Zeytinyağlı Kabak Çiçeği Dolması & Günlük Ev Yemekleri — Kahvaltının ötesinde öğle saatlerinde tezgaha çıkan zeytinyağlı kabak çiçeği dolması, karışık Ege kızartması ve sulu ev yemekleri müdavimlerce özellikle tercih ediliyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Geniş kır çardakları, ağaç altı bahçe masaları ve açık oturma düzeni · Sabah ve öğle saatlerinde yerlilerin ve hafta sonu ailelerinin doldurduğu samimi köy ortamı",
+        "Dezavantaj: Hafta sonu sabah yoğunluğunda garson sayısı nedeniyle servis temposu yavaşlayabiliyor; merkezden özel araç veya Davutlar dolmuşu gerekiyor.",
+        "Ulaşım: Caferli Köyü Davutlar Yol Ayrımı 3. Km üzerinde Merkez–Davutlar dolmuş güzergahında.",
         "Bütçe seviyesi (Google): Orta"
       ]
     },
@@ -686,39 +662,6 @@
         "Oturma & Servis: Ağaç altı geniş açık bahçe masaları ve iç salon · Hafta sonu sabahları ailelerin yoğunlaştığı ferah köy ortamı",
         "Dezavantaj: Kirazlı Köyü yolunda olduğu için sahil merkezinden özel araç veya köy minibüsü gerektiriyor.",
         "Ulaşım: Kuşadası–Kirazlı Köyü yolu üzerinde merkezden yaklaşık yirmi dakikalık sürüş mesafesinde.",
-        "Bütçe seviyesi (Google): Orta"
-      ]
-    },
-    {
-      "id": "kusadasi-kruvasunday",
-      "placeId": "ChIJ8Tb0EFGpvhQR02KCXl_AyvY",
-      "name": "Kruvasunday Kuşadası",
-      "address": "Türkmen, ATATÜRK Kapı No:0 132/B D:1, 09400 Kuşadası/Aydın, Türkiye",
-      "neighborhood": "Atatürk Bulvarı · Merkez, Kuşadası",
-      "categoryId": "kahvalti",
-      "rating": 4.4,
-      "mapsUri": "https://maps.google.com/?cid=17783237594465854163",
-      "coordinates": {
-        "lat": 37.8712239,
-        "lng": 27.264696999999998
-      },
-      "description": "Kuşadası Merkez Atatürk Bulvarı üzerinde günlük katmanlı tereyağlı kruvasanlar, tuzlu kruvasan sandviçler ve modern sabah kahvaltı tabakları sunan fırın-kafe.",
-      "whatToOrder": [
-        "Tuzlu Peynirli & Füme Etli Kruvasan Tabağı",
-        "Antep Fıstıklı & Bademli Kruvasan",
-        "Kruvasan Kahvaltı Tabağı"
-      ],
-      "menuFrom": [
-        "Sade Tereyağlı Kruvasan",
-        "Çikolatalı Kruvasan"
-      ],
-      "alsoTry": [
-        "Nitelikli Latte & Butik Vitrin Pastaları — Sabah kruvasan kahvaltısının yanında espresso bazlı kahveler ve günlük hazırlanan soğuk vitrin tatlıları öne çıkıyor."
-      ],
-      "beforeYouGo": [
-        "Oturma & Servis: İç pastane-kafe alanı ve sahil bulvarına yakın masalar · Modern fırın-kahveci havasında sabah ve öğle hareketliliği",
-        "Dezavantaj: Klasik Ege serpme köy kahvaltısı yerine Avrupa usulü kruvasan ve pastane kahvaltısına odaklanıyor; popüler dolgulu çeşitler erken tükenebiliyor.",
-        "Ulaşım: Türkmen Mahallesi Atatürk Bulvarı üzerinde Setur Marina’ya kısa yürüyüş mesafesinde.",
         "Bütçe seviyesi (Google): Orta"
       ]
     },
@@ -833,18 +776,18 @@
         "lat": 37.8594547,
         "lng": 27.2647057
       },
-      "description": "Cumhuriyet Mahallesi 50. Yıl Caddesi'nde ilçe esnafının ve yerlilerin öğle durağı olan, günlük taze zeytinyağlı Ege sebzeleri ve sulu tencere yemekleri çıkaran esnaf lokantası.",
+      "description": "Cumhuriyet Mahallesi 50. Yıl Caddesi'nde ilçe esnafının ve yerlilerin öğle durağı olan; zeytinyağlı Ege ot kavurmaları, kabak çiçeği dolması ve günlük tencere yemekleri çıkaran esnaf lokantası.",
       "whatToOrder": [
-        "Zeytinyağlı Ege Sebze & Ot Yemekleri",
-        "Günlük Etli Tencere Yemekleri",
+        "Zeytinyağlı Ege Ot Kavurmaları & Enginar",
+        "Kabak Çiçeği Dolması & Sarma",
         "Fırın Kuzu & Tas Kebabı"
       ],
       "menuFrom": [
         "Kuru Fasulye & Pilav",
-        "Zeytinyağlı Enginar"
+        "Günlük Sulu Tencere Yemekleri"
       ],
       "alsoTry": [
-        "Günlük Sıcak Esnaf Çorbaları & Geleneksel Sütlü Tatlılar — Öğle tepsisinden seçilen tencere yemekleri öncesinde günlük çorbalar ve yemek sonu ev usulü komposto/sütlü tatlılar tercih ediliyor."
+        "Ev Usulü Tarhana Çorbası & Geleneksel Sütlü Tatlılar — Öğle tepsisinden seçilen zeytinyağlı ve tencere yemekleri öncesinde sıcak çorbalar, yemek sonunda komposto ve sütlü tatlılar tercih ediliyor."
       ],
       "beforeYouGo": [
         "Oturma & Servis: İç salon, cadde kenarı masalar ve hızlı öğle servisi · Öğle saatlerinde yerel esnafın yoğunlaştığı samimi lokanta temposu",
@@ -854,35 +797,135 @@
       ]
     },
     {
-      "id": "kusadasi-rumeli-tatlicisi",
-      "placeId": "ChIJz3O9fgCpvhQRmm5nIAnuvEE",
-      "name": "Rumeli Tatlıcısı",
-      "address": "Türkmen, Gülistan Sk. no:10/A, 09400 Kuşadası/Aydın, Türkiye",
-      "neighborhood": "Türkmen · Merkez, Kuşadası",
+      "id": "kusadasi-beyaz-saray-pide",
+      "placeId": "ChIJ6X6mVMKovhQRvRh9Cu5-mr8",
+      "name": "Beyaz Saray Pide",
+      "address": "Güzelçamlı, Adnan Menderes Cd. 13/A, 09430 Kuşadası/Aydın, Türkiye",
+      "neighborhood": "Güzelçamlı, Kuşadası",
       "categoryId": "denemelisin",
       "rating": 4.7,
-      "mapsUri": "https://maps.google.com/?cid=4736922631052684954",
+      "mapsUri": "https://maps.google.com/?cid=13806487168500963517",
       "coordinates": {
-        "lat": 37.8608524,
-        "lng": 27.2624106
+        "lat": 37.7134411,
+        "lng": 27.2258375
       },
-      "description": "Merkez Gülistan Sokak'ta günlük sıcak şerbetlenen çıtır Balkan tulumbası, bol kaymaklı Hayrabolu tatlısı ve katkısız sütlü dondurmalarıyla bilinen geleneksel tatlıcı.",
+      "description": "Güzelçamlı Adnan Menderes Caddesi'nde ince hamurlu Nazilli Gülü ve Bozdoğan peynirli çeşitlerinin yanında çıtır tahinli pidesiyle öne çıkan Aydın pide fırını.",
       "whatToOrder": [
-        "Çıtır Balkan Tulumba Tatlısı",
-        "Kaymaklı Hayrabolu Tatlısı",
-        "Erzurum Kadayıf Dolması"
+        "Tahinli Pide",
+        "Nazilli Gülü Pide",
+        "Bozdoğan Peynirli & Kıymalı Pide"
       ],
       "menuFrom": [
-        "Sütlü Tatlılar",
-        "Katkısız Dondurma"
+        "Kavurmalı Kaşarlı Pide",
+        "Kuşbaşılı Pide"
       ],
       "alsoTry": [
-        "El Açması Sıcak Boşnak Böreği — Şerbetli Balkan tatlılarının yanında tuzlu seçenek olarak günlük pişirilen çıtır el açması Boşnak böreği öne çıkıyor."
+        "Güveçte Köz Soğan-Domates İkramı & Lahmacun — Aydın pide geleneğine uygun olarak pide öncesi masaya gelen sıcak güveçte köz soğan-domates eşliği ve ince çıtır lahmacun öne çıkıyor."
       ],
       "beforeYouGo": [
-        "Oturma & Servis: İç tatlı tezgahı, birkaç masa ve ağırlıklı paket servis · Merkez ara sokakta hızlı tatlı ve börek alışverişi temposu",
-        "Dezavantaj: Küçük mahalle dükkanı olduğu için kalabalık gruplarla uzun oturuma değil, sıcak taze tatlı ve paket almaya daha uygun.",
-        "Ulaşım: Türkmen Mahallesi Gülistan Sokak No:10/A üzerinde Merkez çarşıya yürüyüş mesafesinde."
+        "Oturma & Servis: Aileye uygun geniş salon, dış oturma düzeni ve paket servis · Öğle ve akşam saatlerinde Güzelçamlı yerlilerinin toplandığı canlı fırın salonu",
+        "Dezavantaj: Yaz sezonu akşamlarında Milli Park dönüşü yoğunluk yaşandığından siparişler birkaç dakika bekletebiliyor.",
+        "Ulaşım: Güzelçamlı Mahallesi Adnan Menderes Caddesi No:13/A üzerinde belde merkezinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "kusadasi-tuki-carsafli",
+      "placeId": "ChIJ_fF5Ii6pvhQRGH_v7JBIjWY",
+      "name": "Tuki Çarşaflı",
+      "address": "Camikebir Mahallesi Kemal Arıkan Caddesi No: 4/A Kemal Arıkan Caddesi No:11/A, Camikebir, Kemal Arıkan Sk. 11/A, 09400 Kuşadası/Aydın, Türkiye",
+      "neighborhood": "Camikebir · Merkez, Kuşadası",
+      "categoryId": "denemelisin",
+      "rating": 4.3,
+      "mapsUri": "https://maps.google.com/?cid=7389642350872461080",
+      "coordinates": {
+        "lat": 37.8616005,
+        "lng": 27.2594204
+      },
+      "description": "1989'dan bu yana Camikebir çarşı hattında Kuşadalıların simge sokak ritüeli haline gelen, eritilmiş kaşar peyniri çarşafına sarılarak hazırlanan patentli Çarşaflı sandviçiyle bilinen ikonik büfe.",
+      "whatToOrder": [
+        "Orijinal Çarşaflı Sandviç (Patentli Kaşar Sarmalı)",
+        "Özel Soslu Tuki Köfte Sandviç",
+        "Klasik Tuki Hamburger & Sosisli"
+      ],
+      "menuFrom": [
+        "Tavuklu Çarşaflı",
+        "Karışık Sandviç"
+      ],
+      "alsoTry": [
+        "Çıtır Patates Kızartması & Sıcak Sandviç Çeşitleri — Eritilmiş kaşar sarmalı Çarşaflı’nın yanında el yapımı acılı-tatlı soslarla sunulan köfte ve tavuk sandviçleri sık tercih ediliyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: İç oturma alanı, sokak önü masaları ve paket servis · Gün boyu ve gece geç saatlere dek yoğun merkez büfe sirkülasyonu",
+        "Dezavantaj: Erimiş kaşar dokusu soğuduğunda sertleştiği için paket sipariş yerine tezgahtan çıkar çıkmaz sıcak tüketilmesi gerekiyor; yoğun saatlerde sıra oluşabiliyor.",
+        "Ulaşım: Camikebir Mahallesi Kemal Arıkan Sokak No:11/A üzerinde merkez çarşı yürüyüş aksında.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "kusadasi-sosyete-kokorec",
+      "placeId": "ChIJzds6mi6pvhQRRKyn04quod4",
+      "name": "Sosyete Kokoreç",
+      "address": "Cumhuriyet, Adnan Menderes Blv. No:13/A, 09400 Kuşadası/Aydın, Türkiye",
+      "neighborhood": "Cumhuriyet · Merkez, Kuşadası",
+      "categoryId": "denemelisin",
+      "rating": 4.2,
+      "mapsUri": "https://maps.google.com/?cid=16042295258950118468",
+      "coordinates": {
+        "lat": 37.8577216,
+        "lng": 27.26231
+      },
+      "description": "Cumhuriyet Mahallesi Adnan Menderes Bulvarı'nda odun közünde pişen kuzu kokoreci, el yoğurması köftesi ve geç saatlere kadar süren yerel müdavim trafiğiyle bilinen Kuşadası klasiği.",
+      "whatToOrder": [
+        "Odun Közünde Kuzu Kokoreç",
+        "Özel Soslu Sosyete Köfte",
+        "Tavuk & Et Sac Kavurma"
+      ],
+      "menuFrom": [
+        "İzmir Usulü Kokoreç",
+        "Midye Tava"
+      ],
+      "alsoTry": [
+        "Fırın Sütlaç & Kemiksiz İzmir Uykuluk Çeşitleri — Izgara kokoreç ve köfte servisi sonrasında yerel müdavimlerin talep ettiği fırın sütlaç ve özel uykuluk öne çıkıyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: İç salon, cadde kenarı açık masalar ve paket servis · Akşam ve gece saatlerinde hareketli sokak ızgarası atmosferi",
+        "Dezavantaj: Gece yoğunluğunda masa sirkülasyonu hızlı; kokoreç ve köfte siparişi pik saatlerde kısa bekleme süresi yaratabiliyor.",
+        "Ulaşım: Cumhuriyet Mahallesi Adnan Menderes Bulvarı No:13/A üzerinde Merkez’de.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "kusadasi-bulbul-restaurant",
+      "placeId": "ChIJzeTJDimpvhQRCIDASZpsG5E",
+      "name": "Bülbül Restaurant",
+      "address": "Alacamescit, Kahramanlar Cd., 09400 Kuşadası/Aydın, Türkiye",
+      "neighborhood": "Alacamescit · Merkez, Kuşadası",
+      "categoryId": "denemelisin",
+      "rating": 4.1,
+      "mapsUri": "https://maps.google.com/?cid=10456070369788854280",
+      "coordinates": {
+        "lat": 37.854227,
+        "lng": 27.2597643
+      },
+      "description": "Alacamescit Kahramanlar Caddesi'nde odun ateşinde pişen yaprak et döneri, Konya usulü ince pideleri ve günlük çorbalarıyla yıllardır Kuşadası Merkez esnafının tercih ettiği köklü adres.",
+      "whatToOrder": [
+        "Odun Ateşinde Yaprak Et Döner",
+        "Konya Usulü İnce Pide & Bıçak Arası",
+        "Sac Kavurma"
+      ],
+      "menuFrom": [
+        "Döner İskender",
+        "Etli Ekmek"
+      ],
+      "alsoTry": [
+        "Geleneksel Esnaf Çorbaları & Fırın Sütlaç — Sabah-öğle kuşağında sıcak kelle paça/mercimek çorbaları, yemek sonrasında ise karamelize yüzlü fırın sütlaç tercih ediliyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Geniş çok katlı iç salon, cadde masaları ve hızlı servis · Öğle ve akşam saatlerinde sürekli yüksek hacimli esnaf ve aile kalabalığı",
+        "Dezavantaj: Yüksek sirkülasyon saatlerinde klasik lokanta temposu gürültülü olabiliyor; pik saatlerde servis hızlı ama sade bir düzenle işliyor.",
+        "Ulaşım: Alacamescit Mahallesi Kahramanlar Caddesi üzerinde Merkez çarşıda.",
+        "Bütçe seviyesi (Google): Orta"
       ]
     },
     {
@@ -919,38 +962,6 @@
       ]
     },
     {
-      "id": "kusadasi-kazim-usta",
-      "placeId": "ChIJW4N1-tipvhQRY8OngX3gugs",
-      "name": "Kazım Usta Restaurant",
-      "address": "Camikebir, Mahmut Esat Bozkurt Caddesi No:14/A, 09400 Kuşadası/Aydın, Türkiye",
-      "neighborhood": "Liman Karşısı · Camikebir, Kuşadası",
-      "categoryId": "denemelisin",
-      "rating": 4.3,
-      "mapsUri": "https://maps.google.com/?cid=845234709736178531",
-      "coordinates": {
-        "lat": 37.861301999999995,
-        "lng": 27.2556659
-      },
-      "description": "1950'den bu yana Kuşadası İskelesi yakınında hizmet veren, ilçenin balıkçılık ve Ege ot mutfağı hafızasını taşıyan simge sahil lokantası.",
-      "whatToOrder": [
-        "Yöresel Ege Ot Kavurması",
-        "Tuzda Deniz Balığı & Günlük Izgara Balık",
-        "Karides Tava & Kalamar"
-      ],
-      "menuFrom": [
-        "Levrek & Çipura",
-        "Zeytinyağlı Mezeler"
-      ],
-      "alsoTry": [
-        "Sahil Karşısı Serpme Ege Kahvaltısı — Akşam balık sofrası kimliğinin yanında sabah saatlerinde sıcak pişi ve yöresel peynirlerle kurulan sahil kahvaltısı da biliniyor."
-      ],
-      "beforeYouGo": [
-        "Oturma & Servis: İç salon, açık sahil önü masaları ve rezervasyonlu servis · İskele karşısı turistik ve yerli misafirlerin buluştuğu canlı balıkçı",
-        "Dezavantaj: İskele karşısı yüksek bilinirlik ve yaz akşamları yoğunluğu nedeniyle hesap turistik düzeyde çıkabiliyor.",
-        "Ulaşım: Camikebir Mahallesi Mahmut Esat Bozkurt Caddesi No:14/A üzerinde Kuşadası İskelesi’ne birkaç adım."
-      ]
-    },
-    {
       "id": "kusadasi-efem-yagmur-pide",
       "placeId": "ChIJAykdfHKkvhQR4pgsU9Qu-0E",
       "name": "Efem Yağmur Pide Salonu",
@@ -984,12 +995,143 @@
       ]
     },
     {
+      "id": "kusadasi-ada-soguscusu",
+      "placeId": "ChIJNat-IDGpvhQRDftV0r3nZNo",
+      "name": "Ada Söğüşçüsü",
+      "address": "Türkmen, 50. Yıl Cd. No:47B, 09400 Kuşadası/Aydın, Türkiye",
+      "neighborhood": "Türkmen · Merkez, Kuşadası",
+      "categoryId": "denemelisin",
+      "rating": 3.8,
+      "mapsUri": "https://maps.google.com/?cid=15736957800403041037",
+      "coordinates": {
+        "lat": 37.8597611,
+        "lng": 27.2644093
+      },
+      "description": "Türkmen 50. Yıl Caddesi'nde İzmir usulü taze doğranan dil, yanak ve beyin söğüşüyle özellikle yerlilerin ve gece müdavimlerinin uğrak sokak tezgahı.",
+      "whatToOrder": [
+        "İzmir Usulü Kelle Söğüş (Dil, Yanak, Beyin)",
+        "Tandır Kuzu Kokoreç",
+        "Atom Kokoreç"
+      ],
+      "menuFrom": [
+        "Sade Söğüş Lavaş",
+        "Kuzu Kokoreç Ekmek"
+      ],
+      "alsoTry": [
+        "Gece Çorbaları & Baharatlı Tandır Izgara Çeşitleri — Tezgahta hazırlanan soğuk söğüş ve kokorecin yanında gece servisinde sıcak işkembe-kelle paça çorbası ve ızgara seçenekleri sunuluyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Sade dükkan içi masaları, dış tezgah önü ve paket servis · Gece saatlerinde yükselen hareketli sokak sakatat tezgahı temposu",
+        "Dezavantaj: Gece kurye teslimatlarında sıcaklık ve porsiyon dalgalanması şikayetleri olabildiği için tezgahta taze doğranmış olarak yerinde yemek daha sağlıklı.",
+        "Ulaşım: Türkmen Mahallesi 50. Yıl Caddesi No:47B üzerinde Merkez’de.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "kusadasi-bottarga",
+      "placeId": "ChIJS6Z8kOqpvhQRsC1vHQwDOlg",
+      "name": "Bottarga Restaurant",
+      "address": "Sekerbank Yani, Türkmen, Atatürk Blv., 09400 Kuşadası/Aydın, Türkiye",
+      "neighborhood": "Türkmen · Merkez, Kuşadası",
+      "categoryId": "balik",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=6357397174555192752",
+      "coordinates": {
+        "lat": 37.8658163,
+        "lng": 27.2634229
+      },
+      "description": "Atatürk Bulvarı üzerinde Şef Cengiz Taner’in sabit basılı menü yerine günün taze deniz avına göre şekillenen mavi yengeç, deniz tarağı ve bottargalı el yapımı makarnalar hazırladığı şef balık restoranı.",
+      "whatToOrder": [
+        "Mavi Yengeç & Deniz Tarağı",
+        "Bottarga Spagetti & Karidesli Ravioli",
+        "Günlük Çiğ Balık Ceviche & Fener Kavurma"
+      ],
+      "menuFrom": [
+        "Mevsim Deniz Balıkları",
+        "Karides Tartar"
+      ],
+      "alsoTry": [
+        "Geleneksel Girit Mezeleri & Mevsimlik Ahtapot Tabakları — Yaratıcı sıcak deniz ürünleri yanında şef mutfağından günlük çıkan mevsim otları ve deniz mahsullü soğuk mezeler sunuluyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Butik iç salon, cadde önü şık masalar ve rezervasyonlu servis · Akşam yemeğine odaklı sakin ve seçkin gastronomi ortamı",
+        "Dezavantaj: Sabit yazılı liste yerine günün avına göre çalışması ve üst düzey şef mutfağı nedeniyle Kuşadası ortalamasının oldukça üzerinde fiyat seviyesine sahip; önceden rezervasyon önerilir.",
+        "Ulaşım: Türkmen Mahallesi Atatürk Bulvarı üzerinde Setur Marina ve Merkez sahil yürüyüş aksında.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "kusadasi-kiyi-balik",
+      "placeId": "ChIJ9WUMaRehvhQREwdM3gJ7GQ0",
+      "name": "Kıyı Balık Restaurant",
+      "address": "Güzelçamlı, Milli Park Cd. No:228, 09400 Kuşadası/Aydın, Türkiye",
+      "neighborhood": "Güzelçamlı Sahil, Kuşadası",
+      "categoryId": "balik",
+      "rating": 4.3,
+      "mapsUri": "https://maps.google.com/?cid=943920849160505107",
+      "coordinates": {
+        "lat": 37.712288699999995,
+        "lng": 27.2145597
+      },
+      "description": "Dilek Yarımadası Milli Parkı girişine komşu Güzelçamlı kıyısında, dalga sesleri eşliğinde sızma zeytinyağlı Ege mezeleri ve taze deniz balıkları servis eden denize sıfır sahil restoranı.",
+      "whatToOrder": [
+        "Sızma Zeytinyağlı Enginar & Lakerda",
+        "Günlük Izgara Ege Balığı",
+        "Jumbo Karides & Kalamar"
+      ],
+      "menuFrom": [
+        "Deniz Börülcesi",
+        "Patlıcan Salatası"
+      ],
+      "alsoTry": [
+        "Midye Dolma & Yemek Sonu Geleneksel Tatlılar — Ana balık servisi öncesinde soğuk tezgah midye dolması ve kapanışta sunulan meyve-tatlı tabakları öne çıkıyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Denize sıfır açık sahil masaları, iç mekan ve rezervasyonlu servis · Yaz akşamlarında sahil kalabalığı ve dalga sesi eşliği",
+        "Dezavantaj: Turistik sahil hattı ve yüksek bütçe bandı nedeniyle hesap ortalamanın üzerinde çıkabiliyor.",
+        "Ulaşım: Güzelçamlı Milli Park Caddesi No:228 üzerinde Milli Park girişine yakın sahil ucunda.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "kusadasi-kazim-usta",
+      "placeId": "ChIJW4N1-tipvhQRY8OngX3gugs",
+      "name": "Kazım Usta Restaurant",
+      "address": "Camikebir, Mahmut Esat Bozkurt Caddesi No:14/A, 09400 Kuşadası/Aydın, Türkiye",
+      "neighborhood": "Liman Karşısı · Camikebir, Kuşadası",
+      "categoryId": "balik",
+      "rating": 4.3,
+      "mapsUri": "https://maps.google.com/?cid=845234709736178531",
+      "coordinates": {
+        "lat": 37.861301999999995,
+        "lng": 27.2556659
+      },
+      "description": "1950'den bu yana Kuşadası İskelesi yakınında hizmet veren, ilçenin balıkçılık ve Ege ot mutfağı hafızasını taşıyan simge sahil lokantası.",
+      "whatToOrder": [
+        "Yöresel Ege Ot Kavurması",
+        "Tuzda Deniz Balığı & Günlük Izgara Balık",
+        "Karides Tava & Kalamar"
+      ],
+      "menuFrom": [
+        "Levrek & Çipura",
+        "Zeytinyağlı Mezeler"
+      ],
+      "alsoTry": [
+        "Sahil Karşısı Serpme Ege Kahvaltısı — Akşam balık sofrası kimliğinin yanında sabah saatlerinde sıcak pişi ve yöresel peynirlerle kurulan sahil kahvaltısı da biliniyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: İç salon, açık sahil önü masaları ve rezervasyonlu servis · İskele karşısı turistik ve yerli misafirlerin buluştuğu canlı balıkçı",
+        "Dezavantaj: İskele karşısı yüksek bilinirlik ve yaz akşamları yoğunluğu nedeniyle hesap turistik düzeyde çıkabiliyor.",
+        "Ulaşım: Camikebir Mahallesi Mahmut Esat Bozkurt Caddesi No:14/A üzerinde Kuşadası İskelesi’ne birkaç adım."
+      ]
+    },
+    {
       "id": "kusadasi-mezgit",
       "placeId": "ChIJfRZmeDWpvhQRXc76sX6FZlc",
       "name": "Mezgit Restaurant",
       "address": "Türkmen, Turgut Özal Blv. 346. Sokak No:5A, 09400 Kuşadası/Aydın, Türkiye",
       "neighborhood": "Türkmen · Merkez, Kuşadası",
-      "categoryId": "denemelisin",
+      "categoryId": "balik",
       "rating": 4.5,
       "mapsUri": "https://maps.google.com/?cid=6297867908122594909",
       "coordinates": {
@@ -1022,7 +1164,7 @@
       "name": "Fish Fish Balıkçı",
       "address": "Güzelçamlı, Plaj Cd No:12 A, 09430 Kuşadası/Aydın, Türkiye",
       "neighborhood": "Güzelçamlı Sahil, Kuşadası",
-      "categoryId": "denemelisin",
+      "categoryId": "balik",
       "rating": 4.4,
       "mapsUri": "https://maps.google.com/?cid=14486915989843040921",
       "coordinates": {
@@ -1046,39 +1188,6 @@
         "Oturma & Servis: Plaj kenarı açık masalar, iç alan ve rezervasyon imkanı · Gün batımı saatlerinde plaj yürüyüş yolunun neşeli sahil temposu",
         "Dezavantaj: Yaz akşamlarında sahil yürüyüş kalabalığı sebebiyle ön sıra deniz masaları hızla doluyor.",
         "Ulaşım: Güzelçamlı Mahallesi Plaj Caddesi No:12/A üzerinde deniz kenarında.",
-        "Bütçe seviyesi (Google): Orta"
-      ]
-    },
-    {
-      "id": "kusadasi-degirmen-ciftlik",
-      "placeId": "ChIJp6-hCzSpvhQRkSUcbBCanjY",
-      "name": "Değirmen Çiftlik",
-      "address": "Caferli Mahallesi Atatürk Caddesi 128, Caferli, Kuşadası Davutlar Yolu 4. Km, 09400 Kuşadası/Aydın, Türkiye",
-      "neighborhood": "Caferli · Davutlar Yolu, Kuşadası",
-      "categoryId": "denemelisin",
-      "rating": 4,
-      "mapsUri": "https://maps.google.com/?cid=3935752519692330385",
-      "coordinates": {
-        "lat": 37.75902320000001,
-        "lng": 27.2898179
-      },
-      "description": "Kuşadası–Davutlar yolu 4. kilometrede kendi organik tarım alanları, zeytinlikleri ve bağlarıyla tarladan sofraya mutfak anlayışını sürdüren köklü çiftlik restoranı.",
-      "whatToOrder": [
-        "Odun Ateşinde Kuzu Tandır & Dana İncik",
-        "Yatık Döner",
-        "Zeytinyağlı Ege Otları Kavurması"
-      ],
-      "menuFrom": [
-        "Kiremitte Köy Tavuğu",
-        "Fırınlanmış Mevsim Sebzeleri"
-      ],
-      "alsoTry": [
-        "Organik Çiftlik Serpme Kahvaltısı & Ev Yapımı Kahvaltılık Soslar — Gündüz saatlerinde çiftlik mahsulleri, doğal peynirler ve gölet kenarı doğa atmosferiyle sunulan kahvaltı sofrası öne çıkıyor."
-      ],
-      "beforeYouGo": [
-        "Oturma & Servis: Gölet kenarı geniş açık doğa bahçesi, taş bina iç salon ve rezervasyonlu servis · Ailelerin, çocukların ve doğa yürüyüşçülerinin tercih ettiği ferah eko-çiftlik",
-        "Dezavantaj: Yüksek bilinirlik nedeniyle özellikle yaz ve tatil dönemlerinde fiyat-performans açısından eleştiriler alabiliyor; merkeze araçla ulaşılıyor.",
-        "Ulaşım: Caferli Mahallesi Kuşadası–Davutlar Yolu 4. Km üzerinde özel araç veya Davutlar dolmuş hattıyla ulaşılabilir.",
         "Bütçe seviyesi (Google): Orta"
       ]
     }

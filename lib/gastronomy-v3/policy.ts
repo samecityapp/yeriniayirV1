@@ -362,6 +362,12 @@ export function evaluateAndScoreCandidate(
         `below_quality_threshold:★${rating}(${userRatingCount})_proofs_${independentProofSources.length}`
       );
     }
+  } else if (seed.localRitualProtected) {
+    if (rating < 3.8 || userRatingCount < 300 || independentProofSources.length < 2) {
+      return reject(
+        `below_quality_threshold:★${rating}(${userRatingCount})_proofs_${independentProofSources.length}`
+      );
+    }
   } else if (seed.communityInsiderProtected) {
     if (rating < 4.2 || userRatingCount < 200 || independentProofSources.length < 2) {
       return reject(
@@ -378,13 +384,14 @@ export function evaluateAndScoreCandidate(
     rating < 4.5 &&
     !seed.chefOrHeritageProtected &&
     !seed.communityInsiderProtected &&
+    !seed.localRitualProtected &&
     !seed.iconicSettingOrVibeProtected
   ) {
     return reject(`over_commercialized_tourist_volume:★${rating}(${userRatingCount})`);
   }
 
   // Kapı 8: Çoklu kaynak uzlaşısı, şişirilmiş puan koruması ve seçim gerekçesi tamlığı
-  if (userRatingCount < 150 && rating >= 4.8 && independentProofSources.length === 0) {
+  if (userRatingCount < 150 && rating >= 4.8 && independentProofSources.length < 2) {
     return reject('suspected_rating_inflation_no_community_proof');
   }
   if (sources.length < 2) {
@@ -436,9 +443,15 @@ export function evaluateAndScoreCandidate(
       : 0;
   const completenessBonus =
     (seed.whatToOrder.length > 0 ? 5 : 0) + (secondaryItems.length > 0 ? 5 : 0);
+  const ritualCirculationBonus =
+    seed.localRitualProtected && userRatingCount >= 1000
+      ? 6
+      : seed.localRitualProtected && userRatingCount >= 400
+      ? 4
+      : 0;
   const heritageBonus = seed.iconicSettingOrVibeProtected
     ? 15
-    : seed.chefOrHeritageProtected || seed.communityInsiderProtected
+    : seed.chefOrHeritageProtected || seed.communityInsiderProtected || seed.localRitualProtected
     ? 12
     : 0;
 
@@ -450,6 +463,7 @@ export function evaluateAndScoreCandidate(
         communitySignalScore +
         volumeBalanceBonus +
         completenessBonus +
+        ritualCirculationBonus +
         heritageBonus
     )
   );

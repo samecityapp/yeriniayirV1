@@ -21,6 +21,7 @@ const CATEGORY_FALLBACK_EMOJIS: Record<string, string> = {
   'baklava': '🥮',
   'katmer': '🥞',
   'deniz-urunleri': '🐟',
+  'balik-deniz-urunleri': '🐟',
 };
 
 interface CategoryBarProps {

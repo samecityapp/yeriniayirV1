@@ -56,7 +56,7 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     image: '/images/gastronomy/gastronomy.svg',
     badge: 'Doğrulanmış Seçki',
     headline: 'Kuşadası · Merkez, Davutlar & Güzelçamlı',
-    vibe: 'Setur Marina ve Kaleiçi’nden Kirazlı, Caferli, Davutlar ve Güzelçamlı sahiline uzanan seçki',
+    vibe: 'Merkez, Çarşı ve Setur Marina’dan Kirazlı, Caferli, Yaylaköy, Davutlar ve Güzelçamlı sahiline uzanan seçki',
   },
 };
 

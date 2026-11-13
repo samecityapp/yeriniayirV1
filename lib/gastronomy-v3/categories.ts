@@ -51,13 +51,27 @@ export const STANDARD_TOURIST_CATEGORIES: V3CategoryDef[] = [
   },
 ];
 
+export const COASTAL_SEAFOOD_CATEGORY: V3CategoryDef = {
+  id: 'balik',
+  slug: 'balik-deniz-urunleri',
+  label: 'Balıkçılar',
+  title: 'Balıkçılar & Deniz Ürünleri',
+  emoji: '🐟',
+  isMustTry: false,
+};
+
 export function buildRegionCategories(opts?: {
   mode?: 'standard' | 'culinary_heritage';
   customCategories?: V3CategoryDef[];
   extraCategories?: V3CategoryDef[];
+  coastalSeafood?: boolean;
 }): V3CategoryDef[] {
   if (opts?.mode === 'culinary_heritage') {
     return opts.customCategories ? [...opts.customCategories] : [];
   }
-  return [...STANDARD_TOURIST_CATEGORIES, ...(opts?.extraCategories || [])];
+  return [
+    ...STANDARD_TOURIST_CATEGORIES,
+    ...(opts?.coastalSeafood ? [COASTAL_SEAFOOD_CATEGORY] : []),
+    ...(opts?.extraCategories || []),
+  ];
 }

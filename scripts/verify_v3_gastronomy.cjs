@@ -69,17 +69,29 @@ const REGION_KEYS = [
   'aydin-kusadasi',
 ];
 
-const CANONICAL_SLUGS = ['pizza', 'hamburger', 'kahve', 'date-mekanlari', 'kahvalti', 'denemelisin'];
+const CANONICAL_SLUGS = [
+  'pizza',
+  'hamburger',
+  'kahve',
+  'date-mekanlari',
+  'kahvalti',
+  'denemelisin',
+  'balik-deniz-urunleri',
+];
 
 const snapshots = REGION_KEYS.map((key) => {
   const p = path.join(ROOT, `lib/gastronomy-v3/regions/${key}.json`);
   return { key, data: JSON.parse(fs.readFileSync(p, 'utf8')) };
 });
 
-test('all 5 Kadikoy snapshots follow schema v3, canonical 6-category order, dynamic caps (1..5 standard, 1..10 denemelisin)', () => {
+test('all published snapshots follow schema v3, canonical order, dynamic caps (1..5 standard/coastal, 1..10 denemelisin)', () => {
   for (const { key, data } of snapshots) {
     assert.equal(data.schemaVersion, 3, key);
-    assert.ok(data.categories.length >= 5 && data.categories.length <= 6, `${key} cats=${data.categories.length}`);
+    const isCoastal = key === 'aydin-kusadasi';
+    assert.ok(
+      isCoastal ? data.categories.length === 7 : data.categories.length >= 5 && data.categories.length <= 6,
+      `${key} cats=${data.categories.length}`
+    );
 
     // Verify canonical ordering of active categories
     const slugs = data.categories.map((c) => c.slug);
@@ -158,7 +170,11 @@ test('all 6 published regions have zero overlapping placeIds, valid ratings, and
         `Outside ${data.region.district}/${data.region.city}: ${venue.name} -> ${venue.address}`
       );
       assert.ok(venue.mapsUri.startsWith('https://maps.google.com/?cid='), `Invalid CID URI: ${venue.mapsUri}`);
-      assert.ok(typeof venue.rating === 'number' && venue.rating >= 4.0 && venue.rating <= 5.0);
+      assert.ok(
+        typeof venue.rating === 'number' &&
+          venue.rating >= (key === 'aydin-kusadasi' ? 3.8 : 4.0) &&
+          venue.rating <= 5.0
+      );
     }
   }
   assert.ok(globalPlaceIds.size >= 115, `Expected >=115 unique published venues, got ${globalPlaceIds.size}`);
@@ -358,6 +374,17 @@ test('runtime discovery, foodAdapter, and realProvider expose all 5 Kadikoy regi
       assert.ok(locations.some((loc) => loc.includes('Merkez, Kuşadası')), 'Kusadasi missing Merkez location');
       assert.ok(locations.some((loc) => loc.includes('Davutlar')), 'Kusadasi missing Davutlar location');
       assert.ok(locations.some((loc) => loc.includes('Güzelçamlı')), 'Kusadasi missing Guzelcamli location');
+      const names = f.venues.map((v) => v.name);
+      assert.ok(names.some((n) => n.includes('Çardak 6')), 'Kusadasi missing Cardak 6');
+      assert.ok(names.some((n) => n.includes('Tuki Çarşaflı')), 'Kusadasi missing Tuki Carsafli');
+      assert.ok(names.some((n) => n.includes('Ada Söğüşçüsü')), 'Kusadasi missing Ada Soguscusu');
+      assert.ok(names.some((n) => n.includes('Bottarga Restaurant')), 'Kusadasi missing Bottarga Restaurant');
+      const kusadasiCats = p.getRegionCategories(disc.region.id);
+      assert.equal(kusadasiCats.length, 7, 'Kusadasi must expose 7 categories incl. coastal seafood');
+      assert.ok(
+        kusadasiCats.some((c) => c.slug === 'balik-deniz-urunleri'),
+        'Kusadasi missing balik-deniz-urunleri category'
+      );
     }
     const cats = p.getRegionCategories(disc.region.id);
     assert.ok(cats.length >= 5, `${slug} cats=${cats.length}`);
