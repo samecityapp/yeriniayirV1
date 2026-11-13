@@ -22,7 +22,7 @@ import { PremiumRestaurantCard } from '@/components/nearby-places/PremiumRestaur
 import { VariantABottomSheet } from '@/components/mobile-detail-variants/VariantABottomSheet';
 
 const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:string;vibe:string}> = {
- 'moda-kadikoy': {image:'/images/gastronomy/coffee-pour-over.svg',badge:'Temsili görsel',headline:'Moda, Kadıköy',vibe:'Kahve mekanları'},
+ 'moda-kadikoy': {image:'/images/gastronomy/coffee-pour-over.svg',badge:'Doğrulanmış Seçki',headline:'Moda, Kadıköy',vibe:'Nitelikli kahve, ekşi maya fırınlar, şef sokak lezzetleri ve mahalle mutfağı'},
 };
 
 interface GastronomyPageClientProps {

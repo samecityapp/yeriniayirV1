@@ -4,9 +4,14 @@ import type {VisitorFoodDiscovery} from '../../food/types';
 import {copyVisitorGoogleRatings} from '../googlePlaces/visitorRating';
 import {getVerifiedGoogleRatings} from '../googlePlaces/verifiedRatings';
 import {SYNTHESIZED_VENUE_INSIGHTS} from '../gastronomy/visitorContent';
+import {V3_LOCATIONS} from '../../gastronomy-v3/registry';
 
 const CATEGORY_SLUG_MAP: Record<string, string> = {
  coffee: 'kahve',
+ bakery_breakfast: 'firin-kahvalti',
+ street_local: 'sokak-mahalle',
+ chef_dinner: 'sef-aksam',
+ dessert_gelato: 'tatli-gelato',
  burger: 'hamburger',
  pizza: 'pizza',
  breakfast: 'kahvalti',
@@ -21,6 +26,10 @@ const CATEGORY_SLUG_MAP: Record<string, string> = {
 
 const CATEGORY_NAME_MAP: Record<string, string> = {
  coffee: 'Kahve',
+ bakery_breakfast: 'Fırın & Sabah',
+ street_local: 'Sokak & Mahalle',
+ chef_dinner: 'Şef & Akşam',
+ dessert_gelato: 'Tatlı & Gelato',
  burger: 'Hamburger',
  pizza: 'Pizza',
  breakfast: 'Kahvaltı',
@@ -36,321 +45,21 @@ const CATEGORY_NAME_MAP: Record<string, string> = {
 /** Never accepts the admin card or uses the Antigravity prototype provider. */
 export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery {
  const illustrations=assignVenueIllustrations(data.venues);
- const distinctLocations: VisitorFoodDiscovery['locations'] = data.venues.length ? [
-  {
-   id: 'moda-kadikoy',
-   level: 'semt',
-   name: 'Moda',
-   slug: 'moda',
-   path: ['istanbul', 'kadikoy', 'moda'],
-   displayName: 'Moda, Kadıköy, İstanbul',
-   locative: "Moda'da",
-   status: 'published',
-   aliases: ['İstanbul', 'Kadıköy', 'Istanbul', 'Kadikoy', 'Moda'],
-   scopeNote: 'Kadıköy · Moda (Yayında)'
-  },
-  {
-   id: 'yeldegirmeni-kadikoy',
-   level: 'semt',
-   name: 'Yeldeğirmeni',
-   slug: 'yeldegirmeni',
-   path: ['istanbul', 'kadikoy', 'yeldegirmeni'],
-   displayName: 'Yeldeğirmeni, Kadıköy, İstanbul',
-   locative: "Yeldeğirmeni'nde",
-   status: 'published',
-   aliases: ['Yeldegirmeni', 'Rasimpaşa', 'Rasimpasa', 'Karakolhane', 'İskele Sokak'],
-   scopeNote: 'Kadıköy · Yeldeğirmeni (Yayında)'
-  },
-  {
-   id: 'kadikoy-merkez',
-   level: 'semt',
-   name: 'Kadıköy Merkez & Çarşı',
-   slug: 'kadikoy-merkez',
-   path: ['istanbul', 'kadikoy', 'merkez'],
-   displayName: 'Kadıköy Merkez & Tarihi Çarşı, İstanbul',
-   locative: "Kadıköy Merkez'de",
-   status: 'published',
-   aliases: ['Çarşı', 'Carsi', 'Rıhtım', 'Rihtim', 'Kadıköy Çarşı', 'Kadikoy Merkez'],
-   scopeNote: 'Kadıköy · Çarşı (Yayında)'
-  },
-  {
-   id: 'caddebostan',
-   level: 'semt',
-   name: 'Caddebostan',
-   slug: 'caddebostan',
-   path: ['istanbul', 'kadikoy', 'caddebostan'],
-   displayName: 'Caddebostan, Kadıköy, İstanbul',
-   locative: "Caddebostan'da",
-   status: 'published',
-   aliases: ['Caddebostan', 'Bağdat Caddesi', 'Bagdat Caddesi', 'İskele Sokak', 'Plaj Yolu', 'CKM'],
-   scopeNote: 'Kadıköy · Caddebostan (Yayında)'
-  },
-  {
-   id: 'suadiye',
-   level: 'semt',
-   name: 'Suadiye',
-   slug: 'suadiye',
-   path: ['istanbul', 'kadikoy', 'suadiye'],
-   displayName: 'Suadiye, Kadıköy, İstanbul',
-   locative: "Suadiye'de",
-   status: 'published',
-   aliases: ['Suadiye', 'Bağdat Caddesi', 'Plaj Yolu', 'Noter Sokak', 'Suadiye Park'],
-   scopeNote: 'Kadıköy · Suadiye (Yayında)'
-  },
-  {
-   id: 'acibadem-kadikoy',
-   level: 'semt',
-   name: 'Acıbadem',
-   slug: 'acibadem',
-   path: ['istanbul', 'kadikoy', 'acibadem'],
-   displayName: 'Acıbadem, Kadıköy, İstanbul',
-   locative: "Acıbadem'de",
-   status: 'published',
-   aliases: ['Acıbadem', 'Acibadem', 'Çeçen Sokak', 'Akasya'],
-   scopeNote: 'Kadıköy · Acıbadem (Yayında)'
-  },
-  {
-   id: 'feneryolu-kadikoy',
-   level: 'semt',
-   name: 'Feneryolu',
-   slug: 'feneryolu',
-   path: ['istanbul', 'kadikoy', 'feneryolu'],
-   displayName: 'Feneryolu, Kadıköy, İstanbul',
-   locative: "Feneryolu'nda",
-   status: 'published',
-   aliases: ['Feneryolu', 'Gazi Muhtar Paşa', 'Mustafa Mazhar Bey', 'Kuyubaşı'],
-   scopeNote: 'Kadıköy · Feneryolu (Yayında)'
-  },
-  {
-   id: 'kosuyolu-kadikoy',
-   level: 'semt',
-   name: 'Koşuyolu',
-   slug: 'kosuyolu',
-   path: ['istanbul', 'kadikoy', 'kosuyolu'],
-   displayName: 'Koşuyolu, Kadıköy, İstanbul',
-   locative: "Koşuyolu'nda",
-   status: 'published',
-   aliases: ['Koşuyolu', 'Kosuyolu'],
-   scopeNote: 'Kadıköy · Koşuyolu (Yayında)'
-  },
-  {
-   id: 'kuzguncuk-uskudar',
-   level: 'semt',
-   name: 'Kuzguncuk',
-   slug: 'kuzguncuk',
-   path: ['istanbul', 'uskudar', 'kuzguncuk'],
-   displayName: 'Kuzguncuk, Üsküdar, İstanbul',
-   locative: "Kuzguncuk'ta",
-   status: 'published',
-   aliases: ['Kuzguncuk', 'İcadiye Caddesi', 'İcadiye', 'Perihan Abla', 'Bostan', 'Paşalimanı'],
-   scopeNote: 'Üsküdar · Kuzguncuk (Yayında)'
-  },
-  {
-   id: 'cengelkoy-uskudar',
-   level: 'semt',
-   name: 'Çengelköy',
-   slug: 'cengelkoy',
-   path: ['istanbul', 'uskudar', 'cengelkoy'],
-   displayName: 'Çengelköy, Üsküdar, İstanbul',
-   locative: "Çengelköy'de",
-   status: 'published',
-   aliases: ['Çengelköy', 'Cengelkoy', 'Çınaraltı', 'Cinaralti', 'Kuleli Caddesi', 'Kuleli'],
-   scopeNote: 'Üsküdar · Çengelköy (Yayında)'
-  },
-  {
-   id: 'uskudar',
-   level: 'semt',
-   name: 'Üsküdar Merkez',
-   slug: 'uskudar',
-   path: ['istanbul', 'uskudar'],
-   displayName: 'Üsküdar Merkez, İstanbul',
-   locative: "Üsküdar'da",
-   status: 'published',
-   aliases: ['Üsküdar', 'Uskudar', 'Üsküdar Merkez', 'Salacak', 'Mimar Sinan', 'Mihrimah Sultan', 'Kız Kulesi', 'Selman-ı Pak', 'Uncular'],
-   scopeNote: 'Üsküdar · Merkez & Sahil (Yayında)'
-  },
-  {
-   id: 'karakoy-beyoglu',
-   level: 'semt',
-   name: 'Karaköy',
-   slug: 'karakoy',
-   path: ['istanbul', 'beyoglu', 'karakoy'],
-   displayName: 'Karaköy, Beyoğlu, İstanbul',
-   locative: "Karaköy'de",
-   status: 'published',
-   aliases: ['Karaköy', 'Karakoy', 'Kemankeş', 'Kemankes', 'Mumhane', 'Galataport', 'Fransız Geçidi', 'Bankalar Caddesi', 'Perşembe Pazarı'],
-   scopeNote: 'Beyoğlu · Karaköy (Yayında)'
-  },
-  {
-   id: 'galata-beyoglu',
-   level: 'semt',
-   name: 'Galata',
-   slug: 'galata',
-   path: ['istanbul', 'beyoglu', 'galata'],
-   displayName: 'Galata, Beyoğlu, İstanbul',
-   locative: "Galata'da",
-   status: 'published',
-   aliases: ['Galata', 'Kuledibi', 'Galata Kulesi', 'Serdar-ı Ekrem', 'Büyük Hendek', 'Küçük Hendek', 'Camekan Sokak'],
-   scopeNote: 'Beyoğlu · Galata (Yayında)'
-  },
-  {
-   id: 'cihangir-beyoglu',
-   level: 'semt',
-   name: 'Cihangir',
-   slug: 'cihangir',
-   path: ['istanbul', 'beyoglu', 'cihangir'],
-   displayName: 'Cihangir, Beyoğlu, İstanbul',
-   locative: "Cihangir'de",
-   status: 'published',
-   aliases: ['Cihangir', 'Sıraselviler', 'Akarsu Yokuşu', 'Firuzağa', 'Susam Sokak', 'Havyar Sokak', 'Anahtar Sokak'],
-   scopeNote: 'Beyoğlu · Cihangir (Yayında)'
-  },
-  {
-   id: 'beyoglu-merkez',
-   level: 'ilce',
-   name: 'Beyoğlu',
-   slug: 'beyoglu',
-   path: ['istanbul', 'beyoglu'],
-   displayName: 'Beyoğlu, İstanbul',
-   locative: "Beyoğlu'nda",
-   status: 'published',
-   aliases: ['Beyoğlu', 'Beyoglu', 'İstiklal', 'İstiklal Caddesi', 'Asmalı Mescit', 'Asmalımescit', 'Meşrutiyet', 'Pera', 'Tünel'],
-   scopeNote: 'Beyoğlu · Asmalı Mescit & İstiklal (Yayında)'
-  },
-  {
-   id: 'taksim-beyoglu',
-   level: 'semt',
-   name: 'Taksim',
-   slug: 'taksim',
-   path: ['istanbul', 'beyoglu', 'taksim'],
-   displayName: 'Taksim, Beyoğlu, İstanbul',
-   locative: "Taksim'de",
-   status: 'published',
-   aliases: ['Taksim', 'Taksim Meydanı', 'Gümüşsuyu', 'Elmadağ', 'Talimhane', 'Gezi Parkı', 'İnönü Caddesi'],
-   scopeNote: 'Beyoğlu · Taksim & Gümüşsuyu (Yayında)'
-  },
-  {
-   id: 'nisantasi-sisli',
-   level: 'semt',
-   name: 'Nişantaşı',
-   slug: 'nisantasi',
-   path: ['istanbul', 'sisli', 'nisantasi'],
-   displayName: 'Nişantaşı, Şişli, İstanbul',
-   locative: "Nişantaşı'nda",
-   status: 'published',
-   aliases: ['Nişantaşı', 'Nisantasi', 'Teşvikiye', 'Abdi İpekçi', 'Mim Kemal Öke', 'Valikonağı', 'Topağacı', 'Maçka'],
-   scopeNote: 'Şişli · Nişantaşı & Teşvikiye (Yayında)'
-  },
-  {
-   id: 'bebek-besiktas',
-   level: 'semt',
-   name: 'Bebek',
-   slug: 'bebek',
-   path: ['istanbul', 'besiktas', 'bebek'],
-   displayName: 'Bebek, Beşiktaş, İstanbul',
-   locative: "Bebek'te",
-   status: 'published',
-   aliases: ['Bebek', 'Cevdet Paşa', 'Bebek Parkı', 'Bebek Koyu'],
-   scopeNote: 'Beşiktaş · Bebek Sahil & Koyu (Yayında)'
-  },
-  {
-   id: 'yenikoy-sariyer',
-   level: 'semt',
-   name: 'Yeniköy',
-   slug: 'yenikoy',
-   path: ['istanbul', 'sariyer', 'yenikoy'],
-   displayName: 'Yeniköy, Sarıyer, İstanbul',
-   locative: "Yeniköy'de",
-   status: 'published',
-   aliases: ['Yeniköy', 'Yenikoy', 'Köybaşı', 'Köybaşı Caddesi', 'Sait Halim Paşa'],
-   scopeNote: 'Sarıyer · Yeniköy Sahil & Yalılar (Yayında)'
-  },
-  {
-   id: 'gokturk-eyupsultan',
-   level: 'semt',
-   name: 'Göktürk',
-   slug: 'gokturk',
-   path: ['istanbul', 'eyupsultan', 'gokturk'],
-   displayName: 'Göktürk, Eyüpsultan, İstanbul',
-   locative: "Göktürk'te",
-   status: 'published',
-   aliases: ['Göktürk', 'Gokturk', 'Kemerburgaz', 'İstanbul Caddesi', 'Arcadium Life', 'Larus Palas'],
-   scopeNote: 'Eyüpsultan · Göktürk & Yaşam Vadisi (Yayında)'
-  },
-  {
-   id: 'kusadasi-aydin',
-   level: 'ilce',
-   name: 'Kuşadası',
-   slug: 'kusadasi',
-   path: ['aydin', 'kusadasi'],
-   displayName: 'Kuşadası, Aydın',
-   locative: "Kuşadası'nda",
-   status: 'published',
-   aliases: ['Kuşadası', 'Kusadasi', 'Aydın', 'Aydin', 'Marina', 'Güvercinada', 'Kadınlar Denizi', 'Setur Marina'],
-   scopeNote: 'Aydın · Kuşadası Sahil & Marina (Yayında)'
-  },
-  {
-   id: 'antalya-kaleici',
-   level: 'semt',
-   name: 'Antalya Kaleiçi & Merkez',
-   slug: 'antalya-kaleici',
-   path: ['antalya', 'kaleici-merkez'],
-   displayName: 'Kaleiçi, Kemeraltı & Merkez, Antalya',
-   locative: "Antalya Kaleiçi & Merkez'de",
-   status: 'published',
-   aliases: ['Antalya', 'Kaleiçi', 'Kaleici', 'Kemeraltı', 'Kemeralti', 'Muratpaşa', 'Şarampol', 'Kapalıyol', 'Aksu', 'Piyazcı Ahmet', 'İpek Döner', 'Komaş Döner', 'Aksu Köftecisi', 'Aksu Pide'],
-   scopeNote: 'Antalya · Kaleiçi, Kemeraltı, Çarşı Merkez & Aksu (Yayında)'
-  },
-  {
-   id: 'antalya-lara',
-   level: 'semt',
-   name: 'Antalya Lara & Güzeloba',
-   slug: 'antalya-lara',
-   path: ['antalya', 'lara'],
-   displayName: 'Lara, Şirinyalı & Güzeloba, Antalya',
-   locative: "Antalya Lara & Güzeloba'da",
-   status: 'published',
-   aliases: ['Antalya', 'Lara', 'Şirinyalı', 'Sirinyali', 'Güzeloba', 'Guzeloba', 'Eski Lara', 'Falezler', 'Fener', 'Sultanyar', 'B12', 'Schiller', 'Route Burger'],
-   scopeNote: 'Antalya · Lara, Şirinyalı, Falezler & Güzeloba (Yayında)'
-  },
-  {
-   id: 'antalya-konyaalti',
-   level: 'ilce',
-   name: 'Antalya Konyaaltı',
-   slug: 'antalya-konyaalti',
-   path: ['antalya', 'konyaalti'],
-   displayName: 'Konyaaltı & Meltem, Antalya',
-   locative: "Antalya Konyaaltı'nda",
-   status: 'published',
-   aliases: ['Antalya', 'Konyaaltı', 'Konyaalti', 'Meltem', 'Gürsu', 'Gursu', 'Arapsuyu', 'Çamlık', 'Çakırlar', 'Kumluca', '7 Mehmet', 'Pouchkine', 'Ağam', 'Çamlık Pide'],
-   scopeNote: 'Antalya · Konyaaltı, Meltem, Çamlık & Batı Rotası (Yayında)'
-  },
-  {
-   id: 'gaziantep',
-   level: 'il',
-   name: 'Gaziantep',
-   slug: 'gaziantep',
-   path: ['gaziantep'],
-   displayName: 'Gaziantep',
-   locative: "Gaziantep'te",
-   status: 'coming_soon',
-   aliases: ['Gaziantep', 'Antep', 'Şahinbey', 'Şehitkamil', 'Kalealtı', 'Elmacı Pazarı', 'Bakırcılar Çarşısı'],
-   scopeNote: 'Gaziantep · Pilot Onay Bekliyor'
-  }
- ] : [];
+ const distinctLocations: VisitorFoodDiscovery['locations'] = data.venues.length ? V3_LOCATIONS : [];
 
  return {
   locations: distinctLocations,
-  categories:data.categories.slice(0,7).map(c=>({slug:c.slug,label:c.label,title:c.label,isMustTry:c.isMustTry,emoji:c.slug.includes('kruvasan')?'🥐':c.id==='coffee'||c.slug.includes('kahve')?'☕':c.id==='burger'||c.slug.includes('burger')?'🍔':c.id==='pizza'||c.slug.includes('pizza')?'🍕':c.id==='breakfast'||c.slug.includes('kahvalti')?'🍳':c.slug.includes('kofte')||c.slug.includes('piyaz')?'🧆':c.slug.includes('doner')?'🥙':c.slug.includes('pide')?'🫓':c.slug.includes('ozel-gun')?'✨':c.slug.includes('baklava')?'🍯':c.slug.includes('katmer')?'🥞':c.slug.includes('beyran')?'🥣':c.slug.includes('kusleme')||c.slug.includes('kebap')?'🍢':c.slug.includes('mutfak')?'🍲':c.id==='dessert'||c.slug.includes('tatli')||c.slug.includes('firin')?'🍰':c.id==='date'?'🍷':c.id==='lokanta'||c.slug.includes('lokanta')?'🍲':c.id==='balik'||c.slug.includes('balik')?'🐟':c.id==='meyhane'?'🥂':c.id==='bistro'||c.slug.includes('bistro')?'🍸':c.id==='kebap'||c.slug.includes('kebap')?'🍢':'🍽️'})),
+  categories:data.categories.slice(0,7).map(c=>({slug:c.slug,label:c.label,title:c.label,isMustTry:c.isMustTry,emoji:c.emoji || (c.slug.includes('kruvasan')?'🥐':c.id==='coffee'||c.slug.includes('kahve')?'☕':c.id==='burger'||c.slug.includes('burger')?'🍔':c.id==='pizza'||c.slug.includes('pizza')?'🍕':c.id==='breakfast'||c.slug.includes('kahvalti')?'🍳':c.id==='kofte'||c.slug.includes('piyaz')?'🧆':c.id==='doner'?'🥙':c.id==='pide'?'🫓':c.id==='ozel-gun'?'✨':c.id==='baklava'?'🍯':c.id==='katmer'?'🥞':c.id==='beyran'?'🥣':c.id==='kusleme'||c.slug.includes('kebap')?'🍢':c.id==='mutfak'?'🍲':c.id==='dessert'||c.slug.includes('tatli')||c.slug.includes('firin')?'🍰':c.id==='date'?'🍷':c.id==='lokanta'||c.slug.includes('lokanta')?'🍲':c.id==='balik'||c.slug.includes('balik')?'🐟':c.id==='meyhane'?'🥂':c.id==='bistro'||c.slug.includes('bistro')?'🍸':c.id==='kebap'||c.slug.includes('kebap')?'🍢':'🍽️')})),
   venues:data.venues.map(v=>{
+   const inlineRatings=copyVisitorGoogleRatings(v.ratings);
    const verified=getVerifiedGoogleRatings(v.id);
-   const resolvedRatings=verified.length?verified:copyVisitorGoogleRatings(v.ratings);
+   const resolvedRatings=inlineRatings.length?inlineRatings:verified;
    const curated=SYNTHESIZED_VENUE_INSIGHTS[v.id];
-   const description=curated?.description||v.description;
-   const whatToOrder=curated?.whatToOrder?.length?curated.whatToOrder:v.whatToOrder;
-   const menuFrom=curated?.menuFrom?.length?curated.menuFrom:v.menuFrom;
-   const alsoTry=curated?.alsoTry?.length?curated.alsoTry:v.alsoTry;
-   const beforeYouGo=curated?.beforeYouGo?.length?curated.beforeYouGo:v.beforeYouGo;
+   const description=v.description||curated?.description||null;
+   const whatToOrder=v.whatToOrder.length?v.whatToOrder:(curated?.whatToOrder||[]);
+   const menuFrom=v.menuFrom?.length?v.menuFrom:(curated?.menuFrom||[]);
+   const alsoTry=v.alsoTry.length?v.alsoTry:(curated?.alsoTry||[]);
+   const beforeYouGo=v.beforeYouGo.length?v.beforeYouGo:(curated?.beforeYouGo||[]);
 
    const matchedCategory = data.categories.find(c => c.id === v.categoryId);
    const catSlug = matchedCategory?.slug || CATEGORY_SLUG_MAP[v.categoryId] || data.categorySlug;

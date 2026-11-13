@@ -30,6 +30,9 @@ export interface FoodLocation {
   parentId?: string;
   /** Arama sonucunda gösterilen tam ad: 'Moda, Kadıköy, İstanbul' */
   displayName: string;
+  city?: string;
+  district?: string;
+  neighborhood?: string;
   /** Başlıklarda kullanılan Türkçe bulunma hâli: "Moda'da", "Gaziantep'te" */
   locative: string;
   /** Arama eş anlamlıları (aksansız yazımlar dahil) */

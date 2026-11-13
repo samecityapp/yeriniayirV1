@@ -5,6 +5,10 @@ import { FoodCategory } from '@/lib/food/types';
 
 const CATEGORY_FALLBACK_EMOJIS: Record<string, string> = {
   'kahve': '☕',
+  'firin-kahvalti': '🥐',
+  'sokak-mahalle': '🥙',
+  'sef-aksam': '🍷',
+  'tatli-gelato': '🍰',
   'kahvalti': '🍳',
   'hamburger': '🍔',
   'pizza': '🍕',

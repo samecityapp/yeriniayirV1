@@ -60,6 +60,24 @@ export function LocationPickerModal({
     return foodDiscoveryProvider.getReadyRegions();
   }, [foodDiscoveryProvider]);
 
+  const comingSoonRegions = useMemo(() => {
+    return foodDiscoveryProvider.searchLocations('').filter((l) => l.status === 'coming_soon');
+  }, [foodDiscoveryProvider]);
+
+  const groupedReadyRegions = useMemo(() => {
+    const groups = new Map<string, FoodLocation[]>();
+    for (const loc of readyRegions) {
+      const groupKey =
+        loc.city && loc.district
+          ? `${loc.city.toLocaleUpperCase('tr')} · ${loc.district.toLocaleUpperCase('tr')}`
+          : 'DOĞRULANMIŞ BÖLGELER';
+      const arr = groups.get(groupKey) || [];
+      arr.push(loc);
+      groups.set(groupKey, arr);
+    }
+    return Array.from(groups.entries());
+  }, [readyRegions]);
+
   // GPS ile Konumumu Kullan
   const handleUseCurrentLocation = () => {
     if (!navigator.geolocation) {
@@ -96,7 +114,7 @@ export function LocationPickerModal({
           onClose();
         } else {
           setGpsMessage(
-            'Konumunuza yakın aktif bir rehber henüz bulunmuyor. Şu an yalnız Moda kahve rehberi hazırdır.'
+            'Konumunuza yakın aktif bir rehber henüz bulunmuyor. Şu an doğrulanmış Moda (Kadıköy) rehberi yayındadır; diğer bölgeler sırayla ekleniyor.'
           );
         }
       },
@@ -262,59 +280,94 @@ export function LocationPickerModal({
               )}
             </div>
           ) : (
-            /* Varsayılan: Hazır Bölgeler */
-            <div>
-              <div className="text-[10px] font-black uppercase tracking-wider text-slate-400 mb-2">
-                Hazır Olan Gastronomi Bölgeleri
-              </div>
-              <div className="space-y-2">
-                {readyRegions.map((loc) => {
-                  const isSelected = loc.id === currentLocationId;
-                  return (
-                    <button
-                      key={loc.id}
-                      onClick={() => {
-                        onSelectLocation(loc);
-                        onClose();
-                      }}
-                      className={`w-full flex items-center justify-between p-3.5 rounded-2xl text-left border transition active:scale-99 ${
-                        isSelected
-                          ? 'bg-blue-600 text-white border-blue-600 shadow-md shadow-blue-600/20'
-                          : 'bg-white hover:bg-slate-50 text-slate-900 border-slate-200 shadow-2xs'
-                      }`}
-                    >
-                      <div className="flex items-center gap-3">
-                        <div className={`w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 ${
-                          isSelected ? 'bg-white/20 text-white' : 'bg-blue-50 text-blue-600'
-                        }`}>
-                          <MapPin size={17} />
-                        </div>
-                        <div>
-                          {/* TAG'LER KALDIRILDI: TEMİZ METİN */}
-                          <div className={`text-sm font-black leading-tight ${isSelected ? 'text-white' : 'text-slate-950'}`}>
-                            {loc.displayName}
-                          </div>
-                          <div className={`text-[11px] mt-0.5 font-medium ${isSelected ? 'text-blue-100' : 'text-slate-500'}`}>
-                            {loc.characterSubtitle || loc.scopeNote || 'Gastronomi rehberi'}
-                          </div>
-                        </div>
+            /* Varsayılan: İl · İlçe · Semt Hiyerarşisiyle Hazır Bölgeler */
+            <div className="space-y-5">
+              <div>
+                <div className="text-[10px] font-black uppercase tracking-wider text-slate-400 mb-2.5">
+                  Yayındaki Doğrulanmış Bölgeler (İl · İlçe · Semt)
+                </div>
+                <div className="space-y-3">
+                  {groupedReadyRegions.map(([groupLabel, locs]) => (
+                    <div key={groupLabel} className="space-y-2">
+                      <div className="text-[11px] font-extrabold tracking-wide text-blue-700 px-1">
+                        {groupLabel}
                       </div>
+                      {locs.map((loc) => {
+                        const isSelected = loc.id === currentLocationId;
+                        return (
+                          <button
+                            key={loc.id}
+                            onClick={() => {
+                              onSelectLocation(loc);
+                              onClose();
+                            }}
+                            className={`w-full flex items-center justify-between p-3.5 rounded-2xl text-left border transition active:scale-99 ${
+                              isSelected
+                                ? 'bg-blue-600 text-white border-blue-600 shadow-md shadow-blue-600/20'
+                                : 'bg-white hover:bg-slate-50 text-slate-900 border-slate-200 shadow-2xs'
+                            }`}
+                          >
+                            <div className="flex items-center gap-3">
+                              <div className={`w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 ${
+                                isSelected ? 'bg-white/20 text-white' : 'bg-blue-50 text-blue-600'
+                              }`}>
+                                <MapPin size={17} />
+                              </div>
+                              <div>
+                                <div className={`text-sm font-black leading-tight ${isSelected ? 'text-white' : 'text-slate-950'}`}>
+                                  {loc.displayName}
+                                </div>
+                                <div className={`text-[11px] mt-0.5 font-medium ${isSelected ? 'text-blue-100' : 'text-slate-500'}`}>
+                                  {loc.characterSubtitle || loc.scopeNote || 'Gastronomi rehberi'}
+                                </div>
+                              </div>
+                            </div>
 
-                      <div className="flex items-center gap-2 flex-shrink-0">
-                        {isSelected ? (
-                          <div className="w-6 h-6 rounded-full bg-white text-blue-600 flex items-center justify-center">
-                            <Check size={14} />
-                          </div>
-                        ) : (
-                          <span className="text-xs font-bold text-blue-600 flex items-center gap-0.5">
-                            Seç <ArrowRight size={13} />
-                          </span>
-                        )}
-                      </div>
-                    </button>
-                  );
-                })}
+                            <div className="flex items-center gap-2 flex-shrink-0">
+                              {isSelected ? (
+                                <div className="w-6 h-6 rounded-full bg-white text-blue-600 flex items-center justify-center">
+                                  <Check size={14} />
+                                </div>
+                              ) : (
+                                <span className="text-xs font-bold text-blue-600 flex items-center gap-0.5">
+                                  Seç <ArrowRight size={13} />
+                                </span>
+                              )}
+                            </div>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  ))}
+                </div>
               </div>
+
+              {comingSoonRegions.length > 0 && (
+                <div>
+                  <div className="text-[10px] font-black uppercase tracking-wider text-slate-400 mb-2">
+                    Sıradaki Bölgeler (İl · İlçe · Semt)
+                  </div>
+                  <div className="space-y-1.5">
+                    {comingSoonRegions.map((loc) => (
+                      <div
+                        key={loc.id}
+                        className="w-full flex items-center justify-between px-3 py-2.5 rounded-xl bg-slate-50/70 border border-slate-100 text-slate-500"
+                      >
+                        <div className="min-w-0 pr-2">
+                          <div className="text-xs font-bold text-slate-700 truncate">
+                            {loc.city && loc.district && loc.neighborhood
+                              ? `${loc.city} · ${loc.district} · ${loc.neighborhood}`
+                              : loc.displayName}
+                          </div>
+                        </div>
+                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-200/80 text-slate-600 flex-shrink-0">
+                          Yakında
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           )}
         </div>

@@ -2,11 +2,12 @@ import {createVisitorCache,visitorSourceVersion} from './visitorCache';
 import {readVisitorVenueSelection} from '../gastronomy/selectionReader';
 import type {VisitorVenueData} from '../gastronomy/visitorContent';
 import {copyVisitorGoogleRatings} from '../googlePlaces/visitorRating';
+import {getPublishedV3Snapshot} from '../../gastronomy-v3/registry';
 
 export interface IntegrationDiscovery {
  schemaVersion:1;dataKind:'real-research';mode:'integration-preparation';productionPublished:false;
- region:{id:string;slug:string;name:string;displayName:string;path:string[]};
- categories:{slug:string;id:string;label:string;isMustTry:boolean}[];
+ region:{id:string;slug:string;name:string;displayName:string;path:string[];characterSubtitle?:string;scopeNote?:string};
+ categories:{slug:string;id:string;label:string;isMustTry:boolean;emoji?:string}[];
  categorySlug:string;venues:VisitorVenueData[];rituals:[];
 }
 export const MODA_CATEGORIES = [
@@ -6054,33 +6055,59 @@ export function buildIntegrationDiscovery(cards:VisitorVenueData[],region='moda'
 // Retain only our own visitor content; future licensed ratings bypass retained caching.
 const cachedVisitor=createVisitorCache<IntegrationDiscovery|null>(30_000,4,data=>!data?.venues.some(v=>v.ratings.length));
 export async function readIntegrationDiscovery(region='moda',category='kahve'){
- const regConfig = REGIONAL_CONFIGS[region];
- if(!regConfig)return null;
- const targetCategory = category || regConfig.categories[0]?.slug || 'kahve';
+ const v3Snapshot = getPublishedV3Snapshot(region);
+ if (!v3Snapshot) return null;
 
- let data: IntegrationDiscovery | null = null;
- if(process.env.GASTRONOMY_DATA_SOURCE==='supabase'){
-  try {
-   const {readCloudPublication}=await import('../../cloud/publication');
-   data = await readCloudPublication(region+'/'+targetCategory);
-  } catch {}
- }
- if(!data){
-  const version=await visitorSourceVersion();
-  data = await cachedVisitor(`${region}/${targetCategory}/${version}`,async()=>{
-   const selection=await readVisitorVenueSelection(regConfig.region.id,'coffee');
-   return buildIntegrationDiscovery(selection.cards,region,targetCategory);
-  });
- }
- if(data){
-  const existingIds = new Set(data.venues.map(v => v.id));
-  const missing = regConfig.venues.filter(v => !existingIds.has(v.id));
-  return {
-   ...data,
-   region: regConfig.region,
-   categories: regConfig.categories,
-   venues: [...data.venues, ...missing]
-  };
- }
- return null;
+ const targetCategory = category || v3Snapshot.categories[0]?.slug || 'kahve';
+ const reg = v3Snapshot.region;
+
+ return {
+  schemaVersion: 1 as const,
+  dataKind: 'real-research' as const,
+  mode: 'integration-preparation' as const,
+  productionPublished: false as const,
+  region: {
+   id: reg.id,
+   slug: reg.slug,
+   name: reg.neighborhood || reg.slug,
+   displayName: reg.displayName,
+   path: reg.path,
+   characterSubtitle: reg.characterSubtitle,
+   scopeNote: reg.scopeNote,
+  },
+  categories: v3Snapshot.categories.map(c => ({
+   slug: c.slug,
+   id: c.id,
+   label: c.label,
+   isMustTry: Boolean(c.isMustTry),
+   emoji: c.emoji,
+  })),
+  categorySlug: targetCategory,
+  venues: v3Snapshot.venues.map(v => ({
+   id: v.id,
+   name: v.name,
+   location: v.address,
+   categoryId: v.categoryId,
+   description: v.description,
+   whatToOrder: [...v.whatToOrder],
+   menuFrom: [...v.menuFrom],
+   alsoTry: [...v.alsoTry],
+   beforeYouGo: [...v.beforeYouGo],
+   photo: null,
+   ratings: copyVisitorGoogleRatings([
+    {
+     platform: 'google-maps',
+     value: v.rating,
+     attribution: {
+      label: 'Google Maps',
+      mapsUri: v.mapsUri,
+      providers: [],
+     },
+    },
+   ]),
+  })),
+  rituals: [] as [],
+ };
 }
+
+export { cachedVisitor };

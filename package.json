@@ -9,6 +9,7 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "seed": "tsx lib/seed-all-jsonb.ts",
+    "gastronomy:sync": "node scripts/run_region_pipeline.mjs",
     "staging:check": "node scripts/verify_staging_config.cjs",
     "perf:check": "node scripts/check_premium_performance.cjs",
     "perf:lighthouse": "node scripts/run_premium_lighthouse.mjs after"
