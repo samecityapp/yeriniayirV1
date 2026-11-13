@@ -45,7 +45,7 @@ export const STANDARD_TOURIST_CATEGORIES: V3CategoryDef[] = [
     id: 'denemelisin',
     slug: 'denemelisin',
     label: 'Denemelisin',
-    title: 'Bölgeye Özgü Denemelisin',
+    title: 'Mutlaka Denemelisin',
     emoji: '⭐',
     isMustTry: false,
   },
@@ -59,6 +59,26 @@ export const COASTAL_SEAFOOD_CATEGORY: V3CategoryDef = {
   emoji: '🐟',
   isMustTry: false,
 };
+
+export const ANTALYA_KOFTE_PIYAZ_CATEGORY: V3CategoryDef = {
+  id: 'kofte-piyaz',
+  slug: 'kofte-piyaz',
+  label: 'Köfte & Piyaz',
+  title: 'Şiş Köfte & Tahinli Piyaz',
+  emoji: '🧆',
+  isMustTry: false,
+};
+
+export function buildAntalyaFireCategory(label: string, title: string): V3CategoryDef {
+  return {
+    id: 'ates-firin',
+    slug: 'kebap-pide-doner',
+    label,
+    title,
+    emoji: '🥙',
+    isMustTry: false,
+  };
+}
 
 export const GAZIANTEP_HERITAGE_CATEGORIES: V3CategoryDef[] = [
   {
@@ -81,7 +101,7 @@ export const GAZIANTEP_HERITAGE_CATEGORIES: V3CategoryDef[] = [
     id: 'baklava',
     slug: 'baklava',
     label: 'Baklava & Şöbiyet',
-    title: 'Taş Fırın Antep Baklavası & Şöbiyet',
+    title: 'Taş Fırın Baklava & Şöbiyet',
     emoji: '🥮',
     isMustTry: false,
   },
@@ -105,7 +125,7 @@ export const GAZIANTEP_HERITAGE_CATEGORIES: V3CategoryDef[] = [
     id: 'kahvalti',
     slug: 'kahvalti',
     label: 'Kahvaltı',
-    title: 'Yöresel Gaziantep Kahvaltısı',
+    title: 'Yöresel Kahvaltı Sofraları',
     emoji: '🍳',
     isMustTry: false,
   },
@@ -121,7 +141,7 @@ export const GAZIANTEP_HERITAGE_CATEGORIES: V3CategoryDef[] = [
     id: 'denemelisin',
     slug: 'denemelisin',
     label: 'Denemelisin',
-    title: "Gaziantep'te Mutlaka Denemelisin",
+    title: 'Mutlaka Denemelisin',
     emoji: '⭐',
     isMustTry: false,
   },

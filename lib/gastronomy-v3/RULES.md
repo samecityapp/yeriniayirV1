@@ -38,7 +38,7 @@ Bu doküman `lib/gastronomy-v3` motorunun kalıcı anayasasıdır. Tüm şehir, 
   - `iconicSettingOrVibeProtected` işaretli, en az `200` değerlendirmeye ve `2+` bağımsız editoryal/topluluk/ödül kaynağına sahip semt simgesi mekanlarda `4.1+` puan kabul edilir.
   - `chefOrHeritageProtected` işaretli tarihi/dünya çapında tescilli yerel kurumlarda (ör. Çiya Sofrası, Yanyalı Fehmi Lokantası, Halil Lahmacun) en az `200` değerlendirme ve `2+` bağımsız kaynakla `4.0+` puan kabul edilir.
   - `localRitualProtected` işaretli yerel halk ritüeli / bütçe dostu müdavim duraklarında (ör. Çardak 6, Tuki Çarşaflı, Ada Söğüşçüsü, Bülbül Restaurant) hızlı sokak/hafta sonu servisi veya kurye yorumları nedeniyle puan `3.8–4.3` bandında kalsa bile en az `300` değerlendirme ve `2+` bağımsız editoryal/topluluk kanıtıyla koruma altına alınır (`ritualCirculationBonus` uygulanır).
-  - `communityInsiderProtected` işaretli yerel müdavim mekanlarında en az `200` değerlendirme ve `2+` bağımsız kaynakla `4.2+` puan kabul edilir.
+  - `communityInsiderProtected` işaretli yerel müdavim mekanlarında en az `60` değerlendirme ve `2+` bağımsız kaynakla `4.2+` puan kabul edilir.
 - **Sahte/şişirilmiş puan koruması:** Değerlendirme sayısı `150` altında olup `4.8+` puana sahip mekanlarda en az `2` bağımsız `editorial`, `community` veya `award` kanıtı bulunmuyorsa `suspected_rating_inflation_no_community_proof` ile reddedilir.
 - **Bayesçi güven & hacim istikrarı dengesi:** Ham Google puanı tek başına kullanılmaz; düşük değerlendirme sayılarındaki oynaklığı dengelemek için Bayesçi güven düzeltmesi (`m=80, C=4.40`) uygulanır ve `700+` / `1500+` değerlendirmede `4.5+` istikrarını koruyan köklü mekanlara sürdürülebilir hacim puanı verilir.
 

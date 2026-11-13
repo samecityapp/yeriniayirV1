@@ -1,0 +1,2639 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "antalya-kaleici",
+  "displayName": "Kaleiçi & Merkez, Antalya",
+  "verifiedAt": "2026-11-13T20:48:55.488Z",
+  "selectedCount": 37,
+  "rejectedControls": [
+    {
+      "id": "ctrl-kaleici-arma-closed",
+      "resolvedName": "Arma Restaurant",
+      "reason": "not_operational:CLOSED_TEMPORARILY"
+    },
+    {
+      "id": "ctrl-kaleici-espressolab",
+      "resolvedName": "Espressolab Antalya Kaleiçi",
+      "reason": "chain_or_franchise"
+    }
+  ],
+  "venues": [
+    {
+      "id": "kaleici-fin-del-mundo",
+      "categoryId": "pizza",
+      "resolvedName": "Fin Del Mundo Pizzeria",
+      "branchName": "Paket servisi vardır, LELİKO SUITES BAHÇESİ /FiKAYE CAFE ARKASI, Sinan, 1251. Sk. :24/A, 07030 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJG72ylaCRwxQRnBLrSQ7Q8M4",
+      "coordinates": {
+        "lat": 36.8875928,
+        "lng": 30.709142600000003
+      },
+      "rating": 4.9,
+      "userRatingCount": 1121,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.findelmundopizzeria.com/",
+      "mapsUri": "https://maps.google.com/?cid=14911647126011974300",
+      "recommendedPrimary": [
+        "Füme Etli & Mozzarellalı Pizza",
+        "Margherita Pizza",
+        "Prosciutto & Roka Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Arjantin Empanada & Ev Yapımı Tiramisu",
+          "note": "Odun fırınından çıkan çıtır empanada çeşitleri ve kahveli tiramisu pizza dışındaki başlıca eşlikçiler.",
+          "proof": "findelmundopizzeria.com menüsü ve yerel Antalya gastronomi notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sessiz avlu bahçesi ve sınırlı sayıda iç mekan masası",
+        "crowdAndNoise": "Akşam yemeği saatlerinde avlu masaları hızla doluyor",
+        "disadvantage": "Bahçe girişi ara sokak içinde kaldığından ilk kez gidenler için tabelayı fark etmek biraz dikkat ister; yoğun akşamda servis süresi uzayabilir.",
+        "transit": "Işıklar Caddesi paralelinde 1251. Sokak içinde tramvay ve yürüme aksına yakın."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Fin Del Mundo Resmi Sitesi",
+          "url": "https://www.findelmundopizzeria.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Odun fırını pizza ve empanada menüsü"
+        },
+        {
+          "title": "TripAdvisor Antalya Pizzacıları",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Antalya merkezde ekşi maya pizza ve bahçe ortamı"
+        }
+      ],
+      "pros": [
+        "Sakin avlu ambiyansı",
+        "Ekşi mayalı ince hamur ve empanada seçeneği"
+      ],
+      "cons": [
+        "Sınırlı masa kapasitesi"
+      ],
+      "uncertainties": [
+        "Haftalık özel pizza çeşitleri sezona göre değişebiliyor."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-pizza-v",
+      "categoryId": "pizza",
+      "resolvedName": "Pizza V Kaleiçi",
+      "branchName": "Tuzcular, Paşa Cami Sk. No:18/A, 07100 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJOZt_SBSRwxQRkrI7LS1ih2U",
+      "coordinates": {
+        "lat": 36.8857916,
+        "lng": 30.706392200000003
+      },
+      "rating": 4.7,
+      "userRatingCount": 1600,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://v.pizza/",
+      "mapsUri": "https://maps.google.com/?cid=7315924065858597522",
+      "recommendedPrimary": [
+        "Bufala Margherita",
+        "Diavola Pizza",
+        "Trüf Mantarlı Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Pesto Soslu Burrata & Sarımsaklı Fırın Ekmek",
+          "note": "Pizza öncesi paylaşımlık soğuk başlangıç olarak burrata tabağı ve taş fırından taze çıkan sarımsaklı ekmek öne çıkıyor.",
+          "proof": "v.pizza menü kataloğu ve Kaleiçi yeme-içme rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş sokak üzerinde açık hava masaları ve kompakt iç salon",
+        "crowdAndNoise": "Yaz akşamları Kaleiçi ziyaretçileriyle canlı tempo",
+        "disadvantage": "Kaleiçi araç trafiğine kapalı olduğundan akşamları kapı önünde kısa bekleme yaşanabiliyor ve araçla doğrudan kapıya yanaşılamıyor.",
+        "transit": "Hadrian Kapısı ve Tuzcular Paşa Cami Sokak yürüyüş aksında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Pizza V Kaleiçi Resmi Sitesi",
+          "url": "https://v.pizza/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Uzun fermantasyon hamur ve odun/taş fırın pizza menüsü"
+        },
+        {
+          "title": "Restoran Rehberleri — Kaleiçi",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kaleiçi İtalyan pizza seçkisi"
+        }
+      ],
+      "pros": [
+        "Hafif ve kabuk dengesi tutarlı hamur",
+        "Merkezi Kaleiçi konumu"
+      ],
+      "cons": [
+        "Kaleiçi dar sokak park kısıtı"
+      ],
+      "uncertainties": [
+        "Yoğun sezonda erken masa doldurma ihtimali yüksek."
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-francos-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "Franco's Pizza Kaleiçi",
+      "branchName": "Kılınçarslan, Hesapçı Sk. No:56, 07100 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJ6SQRp7SRwxQRfM1U1caRgus",
+      "coordinates": {
+        "lat": 36.882038699999995,
+        "lng": 30.705042100000004
+      },
+      "rating": 4.5,
+      "userRatingCount": 1434,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.francospizza.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=16970286629054107004",
+      "recommendedPrimary": [
+        "Franco's İmza Pizza",
+        "Pepperoni Pizza",
+        "Quattro Formaggi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Calzone & Taze Fesleğenli Domates Çorbası",
+          "note": "Klasik açık pizzaların dışında katlı fırın calzone çeşitleri ve hafif başlangıçlar dikkat çekiyor.",
+          "proof": "francospizza.com.tr resmi menüsü ve TripAdvisor Antalya"
+        }
+      ],
+      "suitability": {
+        "seating": "İki katlı tarihi doku içinde salon ve sokak önü masaları",
+        "crowdAndNoise": "Hem öğle hem akşam saatlerinde istikrarlı doluluk",
+        "disadvantage": "Turistik Hesapçı Sokak üzerinde bulunduğundan hafta sonu akşamları gürültülü ve kalabalık olabiliyor.",
+        "transit": "Kaleiçi Hesapçı Sokak orta kesiminde tramvay durağına kısa yürüyüşte."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Franco's Pizza Resmi Sitesi",
+          "url": "http://www.francospizza.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Kaleiçi şube ve taş fırın menüsü"
+        },
+        {
+          "title": "TripAdvisor Antalya",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kaleiçi pizzacıları sıralaması"
+        }
+      ],
+      "pros": [
+        "Merkezi yürüme aksında pratik servis",
+        "Çıtır kenarlı dengeli malzeme"
+      ],
+      "cons": [
+        "Turistik sokak kalabalığı"
+      ],
+      "uncertainties": [
+        "Akşam geç saatlerde masalar hızlı doluyor."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-il-vicino",
+      "categoryId": "pizza",
+      "resolvedName": "Il Vicino Pizzeria",
+      "branchName": "Tuzcular, Paşa Cami Sk. No:8, 07100 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJIb2gu-bNmRQRnW7JzxXK63g",
+      "coordinates": {
+        "lat": 36.8861488,
+        "lng": 30.7060904
+      },
+      "rating": 4.1,
+      "userRatingCount": 1359,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.ilvicinopizzeria.com/",
+      "mapsUri": "https://maps.google.com/?cid=8713280099107565213",
+      "recommendedPrimary": [
+        "Prosciutto Crudo Pizza",
+        "Margherita Verace",
+        "Funghi & Trüf Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Yapımı Fırın Lazanya & Klasik Panna Cotta",
+          "note": "Taş fırından çıkan katmanlı ev lazanyası ve meyve soslu İtalyan panna cottası akşam masalarında pizza kadar tercih ediliyor.",
+          "proof": "ilvicinopizzeria.com menüsü ve Antalya şehir rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Turunç ağaçlı huzurlu avlu bahçesi ve taş konak içi",
+        "crowdAndNoise": "Akşamları şık çiftler ve turist gruplarıyla yoğun",
+        "disadvantage": "Fiyat seviyesi Kaleiçi ortalamasının oldukça üzerindedir ve bahçe masaları için önceden rezervasyon gerekir.",
+        "transit": "Hadrian Kapısı içinden Paşa Cami Sokak üzerinde yaya ulaşımıyla."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Il Vicino Pizzeria Resmi Sitesi",
+          "url": "http://www.ilvicinopizzeria.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Odun fırını pizza, ev lazanyası ve bahçe düzeni"
+        },
+        {
+          "title": "Hürriyet Seyahat — Kaleiçi Lezzetleri",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihi Kaleiçi bahçe atmosferi önerisi"
+        },
+        {
+          "title": "TripAdvisor & Ekşi Sözlük — Il Vicino",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Odun fırını pizza, makarna ve avlu beğenisi"
+        }
+      ],
+      "pros": [
+        "Tarihi konak bahçesinde sakin atmosfer",
+        "Odun fırını pişirme standardı"
+      ],
+      "cons": [
+        "Yüksek fiyat seviyesi",
+        "Akşam yoğunluğunda yavaş servis bildirimleri"
+      ],
+      "uncertainties": [
+        "Menü fiyatları dönemsel olarak güncellenebiliyor."
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-route-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Route Burger House",
+      "branchName": "Kılınçarslan, Hıdırlık Sk. No:23, 07100 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJdSBngAWQwxQRH_pOySZisB8",
+      "coordinates": {
+        "lat": 36.8826816,
+        "lng": 30.704000599999993
+      },
+      "rating": 4.6,
+      "userRatingCount": 999,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.routeburger.com/",
+      "mapsUri": "https://maps.google.com/?cid=2283432929802517023",
+      "recommendedPrimary": [
+        "Butter Smash Burger",
+        "Sweet Onion Burger",
+        "Red Pesto Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Cheddar Soslu Baharatlı Patates & Çıtır Soğan Halkası",
+          "note": "Burgerlerin yanında eritilmiş cheddar soslu patates kızartması ve kalın kesim soğan halkaları yoğun ilgi görüyor.",
+          "proof": "routeburger.com menü kartı ve yerel burger önerileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi sokak dokusuna bakan bahçe masaları ve iç salon",
+        "crowdAndNoise": "Öğle sonrası ve akşamları genç müdavim yoğunluğu",
+        "disadvantage": "Kaleiçi içinde araç park imkanı yoktur; yoğun akşam saatlerinde sipariş hazırlık süresi uzayabilir.",
+        "transit": "Hıdırlık Kulesi ve Karaalioğlu Parkı girişine yürüme mesafesinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Route Burger Resmi Sitesi",
+          "url": "http://www.routeburger.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Burger çeşitleri, gramaj seçenekleri ve Kaleiçi şubesi"
+        },
+        {
+          "title": "Antalya Gurme Rehberleri — Burger",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kaleiçi gurme burger tavsiyesi"
+        }
+      ],
+      "pros": [
+        "Taze günlük ekmek ve özgün sos reçeteleri",
+        "Kıyı parkına yakın keyifli konum"
+      ],
+      "cons": [
+        "Kaleiçi dar sokaklarında araç erişimi zor"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamları açık bahçe masaları çabuk doluyor."
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-manjoo-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Manjoo Burger",
+      "branchName": "Haşimişcan, Arık Cd. No: 2A, 07100 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJIc23twCQwxQRoIPyy4AU9f0",
+      "coordinates": {
+        "lat": 36.885380399999995,
+        "lng": 30.710752799999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 3351,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://manjooburger.dijital.menu/",
+      "mapsUri": "https://maps.google.com/?cid=18299555204299916192",
+      "recommendedPrimary": [
+        "Manjoo Special Burger",
+        "Smoked BBQ Burger",
+        "Double Cheeseburger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Trüf Mayonezli Kızartma & Çıtır Tavuk Tenders",
+          "note": "Ana burgerlerin yanında taze kızaran çıtır tavuk parçaları ve özel trüflü patates tabağı sık tercih ediliyor.",
+          "proof": "manjooburger.dijital.menu ve Antalya üniversiteli/yerel topluluklar"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç salon ve cadde kenarı dış masalar",
+        "crowdAndNoise": "Akşam yemeklerinde çevre mahalle müdavimleriyle dolu",
+        "disadvantage": "Cadde üzeri sınırlı park yeri sebebiyle akşamları araç bırakmak güçleşebiliyor.",
+        "transit": "Işıklar tramvay hattına birkaç dakikalık yürüyüşte."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Manjoo Burger Dijital Menü",
+          "url": "https://manjooburger.dijital.menu/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Güncel burger ve yan ürün listesi"
+        },
+        {
+          "title": "Ekşi Sözlük — Antalya Burger",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Merkezde sulu köftesiyle öne çıkan burgerci notları"
+        }
+      ],
+      "pros": [
+        "Yüksek memnuniyet istikrarı",
+        "Tramvaya yakın merkezi nokta"
+      ],
+      "cons": [
+        "Akşam park yeri sıkıntısı"
+      ],
+      "uncertainties": [
+        "Yoğun saatlerde paket servis kaynaklı mutfak beklemesi olabiliyor."
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-skull-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Skull Kaleiçi",
+      "branchName": "Kılınçarslan, Hesapçı Sk. No:70, 07100 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJKeo-LESRwxQRhlOC6y4XBFA",
+      "coordinates": {
+        "lat": 36.881327399999996,
+        "lng": 30.704097700000002
+      },
+      "rating": 4.6,
+      "userRatingCount": 1067,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.skullstreetfood.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=5765758913228198790",
+      "recommendedPrimary": [
+        "Skull Smash Burger",
+        "Truffle Mushroom Burger",
+        "Crispy Chicken Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yüklü Baharatlı Patates & Ev Yapımı Limonata/Soğuk İçecek",
+          "note": "Kıyma ve sosla zenginleştirilen patates kaseleri tek başına paylaşım tabağı olarak seçiliyor.",
+          "proof": "skullstreetfood.com.tr resmi menüsü ve Kaleiçi rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt iç tezgah ve sokak üstü tabure/masalar",
+        "crowdAndNoise": "Akşam saatlerinde genç ziyaretçilerle hareketli",
+        "disadvantage": "Oturma alanı dar olduğundan kalabalık gruplar için uygun değildir; müzik seviyesi akşamları yüksek olabilir.",
+        "transit": "Hıdırlık Kulesi çevresinde Hesapçı Sokak güney ucunda."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Skull Street Food Resmi Sitesi",
+          "url": "https://www.skullstreetfood.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Smash burger ve sokak mutfağı menüsü"
+        },
+        {
+          "title": "TripAdvisor Antalya — Burger",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kaleiçi sokak burgeri değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Döküm ızgara lezzet profili",
+        "Samimi sokak mutfağı temposu"
+      ],
+      "cons": [
+        "Küçük oturma alanı ve yüksek ses düzeyi"
+      ],
+      "uncertainties": [
+        "Hava durumuna göre dış sokak oturumu kısıtlanabiliyor."
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-mahalle-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Mahalle Burger - Kaleiçi",
+      "branchName": "Kılınçarslan, Yenikapı Sokak No: 28, 07100 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJPfum0w-RwxQR0Pae7KLgIlw",
+      "coordinates": {
+        "lat": 36.8825978,
+        "lng": 30.706778099999998
+      },
+      "rating": 4.5,
+      "userRatingCount": 286,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://mahalleburger.com/",
+      "mapsUri": "https://maps.google.com/?cid=6639115791056697040",
+      "recommendedPrimary": [
+        "Mahalle Klasik Burger",
+        "Füme Etli Burger",
+        "Karamelize Soğanlı Smash"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kajun Baharatlı Patates & Mozzarella Çubukları",
+          "note": "Burger menüsünün yanında kızarmış mozzarella çubukları ve kajunlu patates sepeti sıklıkla sipariş ediliyor.",
+          "proof": "mahalleburger.com resmi menü kataloğu"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi sokak üzerinde bahçe masaları ve küçük iç alan",
+        "crowdAndNoise": "Hafta içi dengeli, hafta sonları yoğun tempo",
+        "disadvantage": "Açık hava masaları ağırlıklı olduğu için serin veya yağışlı havalarda iç salon hızlı doluyor.",
+        "transit": "Kılınçarslan Mahallesi Yenikapı Sokak yürüyüş hattında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Mahalle Burger Resmi Sitesi",
+          "url": "https://mahalleburger.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Antalya yerel şube ve burger reçeteleri"
+        },
+        {
+          "title": "Antalya Restoran Rehberleri",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yenikapı Sokak burger önerisi"
+        }
+      ],
+      "pros": [
+        "Brioche ekmek ve köfte uyumu",
+        "Merkezi Kaleiçi konumu"
+      ],
+      "cons": [
+        "Kapalı oturma alanı sınırlı"
+      ],
+      "uncertainties": [
+        "Özel sos stokları gün sonuna doğru azalabiliyor."
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-brevio-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Brevio Coffee",
+      "branchName": "Selçuk, Aydoğdu Sk. No:12, 07100 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJe10t0n2RwxQRcgmapvdf1wY",
+      "coordinates": {
+        "lat": 36.88545,
+        "lng": 30.704069999999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 233,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "https://brevio.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=492968201477032306",
+      "recommendedPrimary": [
+        "Flat White",
+        "V60 Filtre Demleme",
+        "Cortado"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bademli Kruvasan & San Sebastian Cheesecake",
+          "note": "Kahve barının yanında günlük vitrinden sunulan kıvamlı San Sebastian ve bademli kruvasan tercih ediliyor.",
+          "proof": "brevio.com.tr ve Antalya kahve haritası paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Zarif iç oturma köşesi ve taş sokakta açık hava masaları",
+        "crowdAndNoise": "Sabah ve öğleden sonra sakin çalışma/okuma ortamı",
+        "disadvantage": "Taş sokak üzerinde oturma kapasitesi sınırlı olduğundan kalabalık arkadaş grupları için masa bulmak zorlaşabiliyor.",
+        "transit": "Selçuk Mahallesi Kaleiçi yat limanı inişine yakın."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Brevio Coffee Resmi Sitesi",
+          "url": "https://brevio.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Kavrum ve demleme barı tanıtımı"
+        },
+        {
+          "title": "Antalya Nitelikli Kahve Rehberi",
+          "url": "https://coffeemap.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kaleiçi üçüncü nesil kahve durakları"
+        }
+      ],
+      "pros": [
+        "Taze demleme ve çekirdek tutarlılığı",
+        "Gürültüden uzak ara sokak"
+      ],
+      "cons": [
+        "Sınırlı masa kapasitesi"
+      ],
+      "uncertainties": [
+        "Bazı tek kökenli çekirdekler hasat dönemine göre yenileniyor."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-beaver-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "The Beaver Coffee Shop Kaleiçi",
+      "branchName": "Tuzcular, Paşa Cami Sk. no:17, 07010 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJ3ZdDHTWRwxQREWsxNO_agbg",
+      "coordinates": {
+        "lat": 36.8849673,
+        "lng": 30.706253300000004
+      },
+      "rating": 4.6,
+      "userRatingCount": 458,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "https://thebeaver.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=13295148295882107665",
+      "recommendedPrimary": [
+        "Iced Latte",
+        "Espresso Tonic",
+        "V60 Çekirdek Seçkisi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Havuçlu Tarçınlı Kek & Yulaf Ezmeli Kurabiye",
+          "note": "Espresso içeceklerin yanında ev usulü tarçınlı havuç kek ve günlük pişirilen yulaflı kurabiyeler öne çıkıyor.",
+          "proof": "thebeaver.com.tr ve yerel kafe incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük avlu önü masaları ve ahşap detaylı iç bar",
+        "crowdAndNoise": "Gün boyu gezginler ve yerellerin karışık uğrak noktası",
+        "disadvantage": "Merkezi turist rotası üzerinde yer aldığı için öğle saatlerinde avluda ses düzeyi artabiliyor.",
+        "transit": "Kaleiçi merkezdeki Paşa Cami Sokak yürüyüş aksında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "The Beaver Resmi Sitesi",
+          "url": "https://thebeaver.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Espresso barı ve tatlı eşlikçileri"
+        },
+        {
+          "title": "Antalya Kahve Topluluğu",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kaleiçi nitelikli kahve notları"
+        }
+      ],
+      "pros": [
+        "İstikrarlı espresso kalitesi",
+        "Rahat kısa mola konumu"
+      ],
+      "cons": [
+        "Kalabalık saatlerde dış masalar hızla doluyor"
+      ],
+      "uncertainties": [
+        "Sezonluk soğuk içecek menüsü mevsime göre değişiyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-the-sudd",
+      "categoryId": "kahve",
+      "resolvedName": "The Sudd Coffee Kaleiçi",
+      "branchName": "Kılınçarslan, Hamam Sk. No:27, 07100 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJ-4Bg77GRwxQRyBlvUo5xk2I",
+      "coordinates": {
+        "lat": 36.882034999999995,
+        "lng": 30.7076417
+      },
+      "rating": 4.3,
+      "userRatingCount": 1089,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": "http://www.thesudd.com/",
+      "mapsUri": "https://maps.google.com/?cid=7103145893375711688",
+      "recommendedPrimary": [
+        "Chemex / V60 Demleme",
+        "Cortado",
+        "Soğuk Demleme (Cold Brew)"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Soğuk Sandviç Çeşitleri & Ev Yapımı Brownie",
+          "note": "Demleme kahvelerin yanında tok tutan soğuk sandviçler ve yoğun kakaolu brownie dilimleri sunuluyor.",
+          "proof": "thesudd.com menüsü ve Antalya üçüncü nesil kahve arşivi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi taş yapı içinde üst/alt salon ve bahçe köşesi",
+        "crowdAndNoise": "Sabah sakin, akşamüstü yerli kahve müdavimleriyle canlı",
+        "disadvantage": "İç mekan merdivenleri diktir ve akşamüstü bahçe gölgeli masalarda yer bulmak zorlaşabilir.",
+        "transit": "Kılınçarslan Mahallesi Hamam Sokak üzerinde Hıdırlık yönünde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "The Sudd Coffee Roasters",
+          "url": "http://www.thesudd.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Kavurma profili ve Kaleiçi amiral dükkanı"
+        },
+        {
+          "title": "Antalya Nitelikli Kahve Haritası",
+          "url": "https://coffeemap.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kaleiçi üçüncü nesil kavurmahane önerisi"
+        },
+        {
+          "title": "Ekşi Sözlük — Antalya Kahvecileri",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Şehrin ilk nitelikli kahvecilerinden biri olarak müdavim görüşleri"
+        }
+      ],
+      "pros": [
+        "Kendi kavurduğu taze çekirdekler",
+        "Köklü baristalık geleneği"
+      ],
+      "cons": [
+        "Tarihi yapıda dik basamaklı iç düzen"
+      ],
+      "uncertainties": [
+        "Farklı tek kökenli çekirdekler hafta bazlı değişebiliyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-kaizen-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Kaizen Specialty Coffee",
+      "branchName": "Kızıltoprak, 924. Sk. KARACA PLAZA NO: 3 A, 07300 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJ0WM-c5yFwxQRQ_K3A0R9pZQ",
+      "coordinates": {
+        "lat": 36.8878738,
+        "lng": 30.733393999999993
+      },
+      "rating": 4.7,
+      "userRatingCount": 133,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10711105019844227651",
+      "recommendedPrimary": [
+        "Single Origin Filtre",
+        "Cortado",
+        "Iced Spanish Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Limonlu Kek & Fıstıklı Tart",
+          "note": "Filtre kahvelere eşlik eden günlük limonlu kek dilimleri ve fıstıklı butik tartlar düzenli müdavimlerin tercihi.",
+          "proof": "Antalya özel kahve haritası ve ziyaretçi notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Bilgisayar ve kitapla rahat oturulabilen ferah iç masa düzeni",
+        "crowdAndNoise": "Gün içi yerel öğrenciler ve uzaktan çalışanlarla sakin",
+        "disadvantage": "Merkez çarşı bölgesinden yürüyüşle biraz içeride kaldığı için toplu taşıma veya araç gerektirebilir.",
+        "transit": "Kızıltoprak Mahallesi 924. Sokak Karaca Plaza altında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Antalya Kahve Rehberi — Kaizen",
+          "url": "https://coffeemap.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Turistik aks dışındaki yerel nitelikli kahve durakları"
+        },
+        {
+          "title": "Foursquare / Topluluk Notları",
+          "url": "https://foursquare.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sessiz ortam ve barista ilgisi paylaşımları"
+        }
+      ],
+      "pros": [
+        "Sakin çalışma atmosferi",
+        "Turistik kalabalıktan uzak yerel profil"
+      ],
+      "cons": [
+        "Kaleiçi yürüyüş aksına mesafeli konum"
+      ],
+      "uncertainties": [
+        "Tatlı vitrini günlük üretim adedine göre öğleden sonra azalabiliyor."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-seraser-fine-dining",
+      "categoryId": "date",
+      "resolvedName": "Seraser Fine Dining Restaurant",
+      "branchName": "Selçuk, Paşa Cami Sk. No:14, 07100 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJw_laGgSQwxQRVnoVbarZ-KI",
+      "coordinates": {
+        "lat": 36.885912999999995,
+        "lng": 30.706222000000004
+      },
+      "rating": 4.3,
+      "userRatingCount": 1017,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.seraserrestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=11743375354366360150",
+      "recommendedPrimary": [
+        "Slow Cooked Kuzu İncik",
+        "Trüflü Bonfile",
+        "Deniz Mahsullü Risotto"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Geniş Şarap Kavı Eşleşmeleri & Sıcak Çikolatalı Sufle",
+          "note": "Ana yemek sonrası taze pişen sıcak çikolatalı sufle ve sommelier seçkisi yerli-yabancı şarap kavı öne çıkıyor.",
+          "proof": "seraserrestaurant.com resmi menüsü ve Gault & Millau / ulusal rehberler"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi taş konak salonları ve süslü havuz başı avlu masaları",
+        "crowdAndNoise": "Özel kutlama akşamlarında sakin, seçkin ve yüksek doluluklu",
+        "disadvantage": "Antalya genelindeki yüksek fiyat segmentindedir; özellikle avlu masaları için birkaç gün önceden rezervasyon gerekir.",
+        "transit": "Kaleiçi Paşa Cami Sokak üzerinde yat limanına kısa yürüyüşte."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Seraser Fine Dining Resmi Sitesi",
+          "url": "http://www.seraserrestaurant.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Tarihi konak hikayesi ve akşam tadım menüsü"
+        },
+        {
+          "title": "Türkiye Gastronomi Rehberleri",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Antalya özel gün ve fine dining klasiği"
+        },
+        {
+          "title": "TripAdvisor & Ekşi Sözlük — Seraser",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "300 yıllık avlu atmosferi ve kutlama servisi"
+        }
+      ],
+      "pros": [
+        "Tarihi avlu atmosferi ve servis disiplini",
+        "Özenli mutfak sunumu"
+      ],
+      "cons": [
+        "Üst fiyat bandı ve zorunlu rezervasyon ihtiyacı"
+      ],
+      "uncertainties": [
+        "Sezonluk tadım menüsü dönemsel güncelleniyor."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-sauvignon",
+      "categoryId": "date",
+      "resolvedName": "Sauvignon Restaurant",
+      "branchName": "Kılınçarslan, Hesapçı Sk. No:72, 07100 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJuR-6aJmRwxQRKcB8sn4mjyw",
+      "coordinates": {
+        "lat": 36.8813895,
+        "lng": 30.7039086
+      },
+      "rating": 4.8,
+      "userRatingCount": 3418,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://sauvignonrestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=3210827384940707881",
+      "recommendedPrimary": [
+        "Tereyağlı Izgara Jumbo Karides",
+        "Mantar Soslu Dana Bonfile",
+        "Levrek Fileto"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yerli & Yabancı Şarap Seçkisi & Karamelize İncir Tatlısı",
+          "note": "Tatlı kapanışında cevizli karamelize incir ve seçili şarap eşleşmeleri akşam deneyimini tamamlıyor.",
+          "proof": "sauvignonrestaurant.com resmi menüsü ve akşam yemeği rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Romantik bahçe masaları ve özenli kapalı taş salon",
+        "crowdAndNoise": "Çiftler ve kutlama masalarıyla nezih akşam yoğunluğu",
+        "disadvantage": "Kaleiçi iç kesimde yer aldığından araç erişimi sınırlıdır ve üst fiyat bandında konumlanır.",
+        "transit": "Hesapçı Sokak güney bölümünde Hıdırlık Kulesi yakınında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Sauvignon Restaurant Resmi Sitesi",
+          "url": "https://sauvignonrestaurant.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Deniz ürünleri, bonfile ve şarap listesi"
+        },
+        {
+          "title": "TripAdvisor Antalya Fine Dining",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Romantik bahçe ortamı ve servis değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Sakin ışıklandırmalı bahçe atmosferi",
+        "Özenli servis standardı"
+      ],
+      "cons": [
+        "Yüksek fiyat seviyesi ve park yeri zorluğu"
+      ],
+      "uncertainties": [
+        "Hafta sonu bahçe masaları rezervasyonsuz bulunmayabilir."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-vanilla-restaurant",
+      "categoryId": "date",
+      "resolvedName": "Vanilla Restaurant",
+      "branchName": "Barbaros, Hesapçı Sk. No:33, 07100 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJc-lafAaQwxQRQxM1IYclhqk",
+      "coordinates": {
+        "lat": 36.883462,
+        "lng": 30.706632499999998
+      },
+      "rating": 4.5,
+      "userRatingCount": 1300,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.vanillaantalya.com/",
+      "mapsUri": "https://maps.google.com/?cid=12215492301596988227",
+      "recommendedPrimary": [
+        "Fırınlanmış Kuzu İncik",
+        "Deniz Levreği",
+        "Odun Fırını Karides Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Pavlova Tatlısı & İmza Kokteyller",
+          "note": "Mevsim meyveli çıtır pavlova tatlısı ve bar bölümünden çıkan kokteyller akşam buluşmalarının öne çıkan eşlikçileri.",
+          "proof": "vanillaantalya.com menü ve Antalya gastronomi yazıları"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş duvarlı şık iç salon ve ferah açık avlu",
+        "crowdAndNoise": "Akşamları düzenli rezervasyonlu müşteri profili",
+        "disadvantage": "Popüler akşam saatlerinde rezervasyonsuz masa bulmak güçtür ve grup gürültüsü zaman zaman yükselebilir.",
+        "transit": "Hesapçı Sokak No:33 üzerinde Kesik Minare yakınında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Vanilla Antalya Resmi Sitesi",
+          "url": "http://www.vanillaantalya.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Füzyon Akdeniz menüsü ve kokteyl barı"
+        },
+        {
+          "title": "Lonely Planet / Antalya Şehir Rehberi",
+          "url": "https://www.lonelyplanet.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kaleiçi köklü bistro önerisi"
+        }
+      ],
+      "pros": [
+        "Tarihi doku içinde ferah atmosfer",
+        "Tutarlı mutfak kalitesi"
+      ],
+      "cons": [
+        "Yoğun sezon akşamlarında rezervasyon gerekliliği"
+      ],
+      "uncertainties": [
+        "Bazı taze ürün yemekleri günlük stokla sınırlı olabilir."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-ayar-meyhanesi",
+      "categoryId": "date",
+      "resolvedName": "Ayar Meyhanesi",
+      "branchName": "Kılınçarslan, Hesapçı Sk. No:59, 07100 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJLSZg2AWQwxQRgRcNb0RklHg",
+      "coordinates": {
+        "lat": 36.8818516,
+        "lng": 30.7050165
+      },
+      "rating": 4.7,
+      "userRatingCount": 5953,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.ayarmeyhanesi.com/",
+      "mapsUri": "https://maps.google.com/?cid=8688679826188212097",
+      "recommendedPrimary": [
+        "Girit Ezmesi & Deniz Börülcesi",
+        "Tereyağlı Karides Güveç",
+        "Izgara Lagos Şiş"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Paçanga Böreği & Sıcak Tahinli Fırın Helva",
+          "note": "Soğuk mezelerin ardından gelen çıtır paçanga böreği ve kapanıştaki sıcak tahinli fırın helva kalıcı müdavim detayı.",
+          "proof": "ayarmeyhanesi.com resmi sitesi ve yerel meyhane değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Avlu ve ahşap iç salon masaları",
+        "crowdAndNoise": "Akşamları sohbet ortamı canlı ve enerjik",
+        "disadvantage": "Çok popüler olduğundan hafta sonları önceden yer ayırtmak gerekir ve üst-orta bütçe seviyesindedir.",
+        "transit": "Hesapçı Sokak üzerinde Hıdırlık Kulesi yakını."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Ayar Meyhanesi Resmi Sitesi",
+          "url": "http://www.ayarmeyhanesi.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Meze tepsisi, ara sıcaklar ve balık çeşitleri"
+        },
+        {
+          "title": "Milliyet / Ege-Akdeniz Meyhaneleri",
+          "url": "https://www.milliyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kaleiçi meze kalitesiyle tanınan meyhane"
+        }
+      ],
+      "pros": [
+        "Taze günlük meze çeşitliliği",
+        "Samimi servis düzeni"
+      ],
+      "cons": [
+        "Hafta sonları yoğun ve kalabalık atmosfer"
+      ],
+      "uncertainties": [
+        "Deniz ürünü çeşitliliği günlük av durumuna bağlıdır."
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-kahvalti-noktasi",
+      "categoryId": "kahvalti",
+      "resolvedName": "Kahvaltı Noktası",
+      "branchName": "Kızılsaray, 68. Sk. ILGIN APT B BLOK NO: 6 C, 07040 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJTWJ7DNaRwxQRbTG-d8-LlVY",
+      "coordinates": {
+        "lat": 36.890481099999995,
+        "lng": 30.6960928
+      },
+      "rating": 4.8,
+      "userRatingCount": 2580,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6239046581975134573",
+      "recommendedPrimary": [
+        "Serpme Köy Kahvaltısı",
+        "Sucuklu Sahanda Yumurta",
+        "Sıcak Pişi & Çörek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Cevizli Turunç / Kabak Reçeli & Ev Yapımı Menemen",
+          "note": "Kahvaltı sofrasında Antalya yöresine özgü turunç/kabak reçeli ve taze domatesli menemen öne çıkan tamamlayıcılar.",
+          "proof": "Yerel Antalya kahvaltı listeleri ve müdavim notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık iç salon ve sokak önü masalar",
+        "crowdAndNoise": "Hafta sonu sabahları ailelerle ve mahalle sakinleriyle yoğun",
+        "disadvantage": "Cumartesi-Pazar sabahları kapıda kısa sıra oluşabiliyor ve sokak park yeri sınırlı.",
+        "transit": "Güllük ve Yener Ulusoy Bulvarı arkasındaki Kızılsaray 68. Sokak üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Antalya Kahvaltı Rehberleri",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Merkez Kızılsaray bölgesi serpme kahvaltı değerlendirmeleri"
+        },
+        {
+          "title": "Yerel Şehir Forumları — Kahvaltı",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Turunç reçeli ve sıcak pişi önerisi"
+        }
+      ],
+      "pros": [
+        "Doyurucu porsiyon ve sıcak ev ürünleri",
+        "Turistik fiyat şişirmesinden uzak"
+      ],
+      "cons": [
+        "Hafta sonu sabah sırası ve park kısıtı"
+      ],
+      "uncertainties": [
+        "Kalabalık günlerde sıcak pişi servisi birkaç dakika gecikebiliyor."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-kahvaltici-omer-usta",
+      "categoryId": "kahvalti",
+      "resolvedName": "Kahvaltıcı Ömer Usta",
+      "branchName": "Kızılsaray, Güllük Cd. Toprak Pasajı, 07010 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJEcyd1veRwxQRpXi5dCV5fXM",
+      "coordinates": {
+        "lat": 36.8897689,
+        "lng": 30.695639399999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 1112,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/kahvalticiomerusta",
+      "mapsUri": "https://maps.google.com/?cid=8321940888229607589",
+      "recommendedPrimary": [
+        "Serpme Kahvaltı Tabağı",
+        "Kaymak & Çam Balı",
+        "Kaşarlı Tost / Gözleme"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kavurmalı Sahanda Yumurta & Porselen Demlik Çay",
+          "note": "Klasik soğuk kahvaltılıkların yanında cızırdayan kavurmalı yumurta ve masaya demlikte gelen çay esnaf klasiği.",
+          "proof": "instagram.com/kahvalticiomerusta ve Antalya esnaf rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Pasaj içi ve sokak kenarı hızlı servis masaları",
+        "crowdAndNoise": "Sabah saatlerinde esnaf ve yerlilerle hızlı devirli",
+        "disadvantage": "Geleneksel esnaf pasajı içinde bulunduğu için modern kafe dekoru veya uzun bilgisayar oturumu sunmaz.",
+        "transit": "Güllük Caddesi Toprak Pasajı içinde Cumhuriyet Meydanı yürüyüş hattında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Kahvaltıcı Ömer Usta Instagram",
+          "url": "https://www.instagram.com/kahvalticiomerusta",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Günlük bazlama, kaymak ve sıcak kahvaltı paylaşımları"
+        },
+        {
+          "title": "Antalya Esnaf Rehberi",
+          "url": "https://www.antalyacityguide.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Güllük çevresi köklü sabah kahvaltısı durağı"
+        }
+      ],
+      "pros": [
+        "Hızlı, sıcak ve samimi esnaf servisi",
+        "Merkezi ulaşım"
+      ],
+      "cons": [
+        "Mütevazı pasaj ortamı ve sınırlı oturma konforu"
+      ],
+      "uncertainties": [
+        "Hafta içi erken saatlerde bazlama stoğu hızla tükenebiliyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-potikare",
+      "categoryId": "kahvalti",
+      "resolvedName": "Pötikare Kahvaltı Cafe",
+      "branchName": "Tahılpazarı, 404. Sk. Ahmet Bedesteni İş Hanı No:5/F, 07040 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJ_8Vc-xORwxQRvUUcVAXN4CY",
+      "coordinates": {
+        "lat": 36.8891355,
+        "lng": 30.705864400000003
+      },
+      "rating": 4.8,
+      "userRatingCount": 169,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2801464390994118077",
+      "recommendedPrimary": [
+        "Ekonomik Kahvaltı Tabağı",
+        "Otlu Peynirli Gözleme",
+        "Sahanda Menemen"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Taze Nane Limonata & Patatesli Gözleme",
+          "note": "Kahvaltı tabağını tamamlayan incecik açılmış sac gözlemesi ve taze sıkım ev yapımı limonata çok tercih ediliyor.",
+          "proof": "Yerel çarşı rehberleri ve Antalya ziyaretçi değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi iş hanı pasajı içinde samimi masalar",
+        "crowdAndNoise": "Sabahları çarşı esnafı ve yakın mahallelerden yerliler",
+        "disadvantage": "İş hanı içinde yer aldığından hafta içi öğle saatlerinde çevredeki esnaf trafiği nedeniyle servis hızı yavaşlayabilir.",
+        "transit": "Kazım Özalp (Şarampol) Caddesi ara sokağı Ahmet Bedesteni içinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Antalya Çarşı Rehberleri",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tahılpazarı samimi kahvaltı önerisi"
+        },
+        {
+          "title": "Foursquare — Pötikare",
+          "url": "https://foursquare.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ev usulü reçel ve gözleme notları"
+        }
+      ],
+      "pros": [
+        "Bütçe dostu temiz kahvaltı",
+        "Çarşı içinde gölgeli sakin pasaj"
+      ],
+      "cons": [
+        "Küçük dükkan hacmi"
+      ],
+      "uncertainties": [
+        "Pazar günleri çalışma düzeni mevsime göre değişebiliyor."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-varuna-gezgin",
+      "categoryId": "kahvalti",
+      "resolvedName": "Varuna Gezgin Cafe Kaleiçi",
+      "branchName": "Kılınçarslan, Hamam Sk. 2/1, 07100 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJczsFxHCRwxQRSlZ6Hpt-XKg",
+      "coordinates": {
+        "lat": 36.8829249,
+        "lng": 30.707338
+      },
+      "rating": 4.4,
+      "userRatingCount": 3683,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://varunagezgin.com/",
+      "mapsUri": "https://maps.google.com/?cid=12131710700925638218",
+      "recommendedPrimary": [
+        "Varuna Serpme / Tabak Kahvaltı",
+        "Avokadolu Poşe Yumurta",
+        "Peynirli Omlet"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Meksika Usulü Quesadilla & Taze Demleme Filtre Kahve",
+          "note": "Öğlene sarkan kahvaltılarda doyurucu quesadilla tabakları ve taze demleme filtre kahve sıklıkla sipariş ediliyor.",
+          "proof": "varunagezgin.com menüsü ve Kaleiçi seyahat yazıları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş tarihi konak bahçesi ve tematik çok katlı iç odalar",
+        "crowdAndNoise": "Sabah geç saatlerden geceye dek hareketli ve enerjik",
+        "disadvantage": "Akşamları da popüler bir mekan olduğundan kahvaltıda zaman zaman masa beklemesi ve ortamda yüksek ses yaşanabiliyor.",
+        "transit": "Hamam Sokak üzerinde Hadrian Kapısı ve Işıklar arkasında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Varuna Gezgin Resmi Sitesi",
+          "url": "https://varunagezgin.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Kahvaltı tabakları, omletler ve gün boyu menü"
+        },
+        {
+          "title": "Antalya Gezi Rehberleri",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kaleiçi bahçe konsepti ve kahvaltı alternatifi"
+        }
+      ],
+      "pros": [
+        "Ferah bahçe oturumu",
+        "Geniş gün boyu kahvaltı ve içecek seçeneği"
+      ],
+      "cons": [
+        "Yoğun saatlerde yavaşlayan servis ve gürültü"
+      ],
+      "uncertainties": [
+        "Hafta sonu bahçe masaları için erken varmak faydalı."
+      ],
+      "selectionScore": 71,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-balikci-meyhanesi",
+      "categoryId": "balik",
+      "resolvedName": "Balıkçı Meyhanesi Kaleiçi",
+      "branchName": "Kılınçarslan, Hıdırlık Sk. No:17, 07100 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJ7VqtlgWQwxQRy-M6r1hhj2Y",
+      "coordinates": {
+        "lat": 36.882824899999996,
+        "lng": 30.7045811
+      },
+      "rating": 4.8,
+      "userRatingCount": 5980,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7390232547063161803",
+      "recommendedPrimary": [
+        "Izgara Lagos / Kaya Levreği",
+        "Tereyağlı Karides Güveç",
+        "Kalamar Izgara"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Deniz Börülcesi & Sıcak Tahinli Helva",
+          "note": "Balık öncesi taze deniz börülcesi ve yemek sonu gelen sıcak tahinli fırın helva klasik sofrayı tamamlıyor.",
+          "proof": "Kaleiçi deniz ürünleri rehberleri ve ziyaretçi notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sokak üzeri ahşap masalar ve taş kemerli iç salon",
+        "crowdAndNoise": "Akşam yemeği saatlerinde düzenli rezervasyon yoğunluğu",
+        "disadvantage": "Kaleiçi araç yasağı nedeniyle yürüyerek ulaşım gerekir ve taze büyük balıklarda porsiyon hesabı yukarı çıkabilir.",
+        "transit": "Karaalioğlu Parkı Hıdırlık Kulesi arkası 17. Sokak üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "TripAdvisor — Kaleiçi Balık Restoranları",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Günlük deniz ürünleri ve meze istikrarı"
+        },
+        {
+          "title": "Antalya Yeme-İçme Topluluğu",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kaleiçi içinde tutarlı taze balık durağı"
+        }
+      ],
+      "pros": [
+        "Taze balık sirkülasyonu",
+        "Turistik tuzaklardan ayrılan lezzet istikrarı"
+      ],
+      "cons": [
+        "Rezervasyonsuz akşam masa bulmak güçleşebiliyor"
+      ],
+      "uncertainties": [
+        "Mevsim balığı seçenekleri av yasağı ve hava koşullarına bağlı."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-sonsuz-balik",
+      "categoryId": "balik",
+      "resolvedName": "Sonsuz Balık Evi",
+      "branchName": "Sinan, 1255. Sk. Birlik İş Hanı 9F D:9G, 07100 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJv-GlphCRwxQRWujN83dz8LM",
+      "coordinates": {
+        "lat": 36.886289399999995,
+        "lng": 30.7090197
+      },
+      "rating": 4.8,
+      "userRatingCount": 400,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12965990286228318298",
+      "recommendedPrimary": [
+        "Izgara Deniz Levreği",
+        "Mevsim Sardalya / Hamsi Tava",
+        "Çipura Izgara"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kalamar Tava & Bol Yeşillikli Roka Salatası",
+          "note": "Ana balıkların yanında çıtır kalamar tava ve limonlu taze roka salatası pratik akşam yemeği sunuyor.",
+          "proof": "Antalya merkez esnaf balıkçıları listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı iç salon ve pasaj önü sade masalar",
+        "crowdAndNoise": "Öğle ve akşam erken saatlerde çevre sakinleriyle canlı",
+        "disadvantage": "Manzara veya meyhane konseptinden ziyade doğrudan taze balık yemeye odaklı mütevazı bir dükkan düzeni vardır.",
+        "transit": "Işıklar ve Doğu Garajı arasında Sinan Mahallesi 1255. Sokak içinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Antalya Yerel Balıkçılar Rehberi",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yüksek puanlı sade mahalle balıkçısı"
+        },
+        {
+          "title": "Antalya Topluluk Tavsiyeleri",
+          "url": "https://foursquare.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Temiz yağda kızaran taze tava balığı notları"
+        }
+      ],
+      "pros": [
+        "Makul bütçeyle günlük taze balık",
+        "Yüksek sirkülasyon"
+      ],
+      "cons": [
+        "Şık akşam restoranı ambiyansı arayanlar için fazla sade"
+      ],
+      "uncertainties": [
+        "Öğle ve akşam geç saatlerde sevilen balık türleri tükenebiliyor."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-citir-balik",
+      "categoryId": "balik",
+      "resolvedName": "Çıtır Balık",
+      "branchName": "Kılınçarslan, Atatürk Cd. No:79, 07100 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJldHMPQaQwxQRRK4oewLS-Tk",
+      "coordinates": {
+        "lat": 36.8818287,
+        "lng": 30.707916199999996
+      },
+      "rating": 4.4,
+      "userRatingCount": 7031,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4177601037460876868",
+      "recommendedPrimary": [
+        "Uskumru / Levrek Balık Ekmek",
+        "Karışık Tava Tabağı",
+        "İstavrit Tava"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kalamar / Midye Tava & Şalgam / Turşu Suyu",
+          "note": "Balık ekmeğin yanında sıcak kalamar/midye tava ve acılı şalgam veya turşu suyu klasik ikiliyi oluşturuyor.",
+          "proof": "Antalya kent rehberleri ve yerel sokak yemekleri arşivi"
+        }
+      ],
+      "suitability": {
+        "seating": "İki katlı hızlı servis salonu ve cadde önü masalar",
+        "crowdAndNoise": "Gün boyu yüksek devirli hızlı sirkülasyon",
+        "disadvantage": "Ana cadde üzerinde yoğun saatlerde gürültülü ve kalabalık olabilir; uzun keyifli masa sohbeti yerine hızlı yeme-kalkma düzenidir.",
+        "transit": "Işıklar ile Üçkapılar arasındaki Atatürk Caddesi tramvay güzergahında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Antalya Sokak Lezzetleri Rehberi",
+          "url": "https://www.antalyacityguide.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Merkezde pratik balık ekmek ve tava balık klasiği"
+        },
+        {
+          "title": "Ekşi Sözlük — Çıtır Balık",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yüksek sirkülasyonlu hızlı balık ekmek önerisi"
+        }
+      ],
+      "pros": [
+        "Çok hızlı servis ve sürekli taze kızartma sirkülasyonu",
+        "Tramvay üzerinde merkezi yer"
+      ],
+      "cons": [
+        "Kalabalık saatlerde gürültülü salon ve kısa oturum düzeni"
+      ],
+      "uncertainties": [
+        "Öğle ve akşam pik saatlerinde kısa kasa sırası oluşabiliyor."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-piyazci-ahmet",
+      "categoryId": "kofte-piyaz",
+      "resolvedName": "Piyazcı Ahmet",
+      "branchName": "Altındağ, 166. Sk. 29/A, 07050 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJZSm0tB6QwxQR4Cv8ba3L-Z4",
+      "coordinates": {
+        "lat": 36.889742999999996,
+        "lng": 30.693731
+      },
+      "rating": 4.2,
+      "userRatingCount": 3089,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": false,
+        "reservable": true
+      },
+      "websiteUri": "http://www.piyazciahmet.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=11455411072928590816",
+      "recommendedPrimary": [
+        "Tahinli Antalya Piyazı",
+        "Izgara / Şiş Köfte",
+        "Karışık Porsiyon Köfte Piyaz"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli Cevizli Fırın Kabak Tatlısı & Açık Ayran",
+          "note": "Köfte-piyaz sonrası Antalya usulü bol tahinli ve dövülmüş cevizli fırın kabak tatlısı her masada paylaşılan kapanış.",
+          "proof": "piyazciahmet.com.tr resmi sitesi ve 100 Tarihi Lokanta arşivi"
+        }
+      ],
+      "suitability": {
+        "seating": "Temiz, yüksek devirli esnaf lokantası salonu ve sokak önü",
+        "crowdAndNoise": "Özellikle öğle saatlerinde yoğun esnaf ve yerli kalabalığı",
+        "disadvantage": "Öğle vakti kapıda birkaç dakikalık masa beklemesi olabiliyor; akşam servisi erken saatlerde tamamlanabiliyor.",
+        "transit": "Güllük ve 100. Yıl kesişimi yakını Altındağ 166. Sokak içinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Piyazcı Ahmet Resmi Sitesi",
+          "url": "http://www.piyazciahmet.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Çandır fasulyesi, tahin-sirke oranı ve kabak tatlısı"
+        },
+        {
+          "title": "Antalya Lezzet Durakları",
+          "url": "https://www.antalyacityguide.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Antalya usulü piyaz ve köfte seçkisi"
+        },
+        {
+          "title": "Gurme Atlas — Piyazcı Ahmet",
+          "url": "https://gurmanatlas.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kaburga/pençeta kıymasından köfte ve tahin dengesi notu"
+        }
+      ],
+      "pros": [
+        "Tutarlı tahin-sarımsak-sirke dengesi",
+        "Klasik Antalya esnaf disiplini"
+      ],
+      "cons": [
+        "Öğle vakti bekleme sırası ve kısıtlı sokak park alanı"
+      ],
+      "uncertainties": [
+        "Hafta sonu erken gitmeyenler için kabak tatlısı akşamüstü tükenebiliyor."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-aksu-simsek-kofte",
+      "categoryId": "kofte-piyaz",
+      "resolvedName": "Meşhur Aksu Şimşek Köfte Piyaz",
+      "branchName": "Merkez, Serikten Antalyaya giderken Köprü altında sağda antalyadan gelirken Solda, Barbaros, Serik Cad üzeri No 185/A, 07010 Aksu/Antalya, Türkiye",
+      "placeId": "ChIJa6zxrQqBwxQROAA1Iw8wrxg",
+      "coordinates": {
+        "lat": 36.9478803,
+        "lng": 30.849051000000003
+      },
+      "rating": 4.3,
+      "userRatingCount": 9728,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1778693219407953976",
+      "recommendedPrimary": [
+        "Antalya Şiş Köfte",
+        "Yumurtalı Tahinli Piyaz",
+        "Cızbız Izgara Köfte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli Cevizli Kabak Tatlısı & Köpüklü Yayık Ayran",
+          "note": "Şiş köfte ve piyazın ardından bakır/cam bardakta açık yayık ayran ve üzerine tahin gezdirilmiş kabak tatlısı klasik kapanış.",
+          "proof": "Aksu yerel yemek rehberleri ve Antalya D400 lezzet durakları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş karayolu üstü esnaf salonu ve açık bahçe alanı",
+        "crowdAndNoise": "Öğle saatleri ve hafta sonları yoğun aile/yolcu kalabalığı",
+        "disadvantage": "Şehir merkezine karayolu mesafesindedir (Aksu D400 aksı); pik saatlerde servis hızlı olsa da salonda gürültü düzeyi artar.",
+        "transit": "Antalya-Alanya (Serik) D400 karayolu üzeri Aksu köprü altında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Antalya D400 Gurme Rotası",
+          "url": "https://www.antalyacityguide.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Aksu köfte-piyaz geleneğinin başat adresi"
+        },
+        {
+          "title": "Ekşi Sözlük — Şimşek Köfte Aksu",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Merkez dışı müdavim köfte-piyaz ve yayık ayran ritüeli"
+        }
+      ],
+      "pros": [
+        "Şiş köfte köz aroması ve hızlı servis",
+        "Geniş oturma alanı ve park rahatlığı"
+      ],
+      "cons": [
+        "Merkezden araçla 15-20 dakikalık Aksu yolu gerektirir"
+      ],
+      "uncertainties": [
+        "Hafta sonu öğle grubuna denk gelince masa sirkülasyonu kalabalıklaşır."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-piyazci-sami",
+      "categoryId": "kofte-piyaz",
+      "resolvedName": "Piyazcı Sami",
+      "branchName": "Elmalı, 25. Sk. No:1, 07040 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJ_9qWYAOQwxQRMjdR4USPxV4",
+      "coordinates": {
+        "lat": 36.887586999999996,
+        "lng": 30.7019869
+      },
+      "rating": 4.4,
+      "userRatingCount": 1012,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": "https://www.tripadvisor.com.tr/Restaurant_Review-g297962-d6726257-Reviews-PiyazcI_Sami-Antalya_Turkish_Mediterranean_Coast.html",
+      "mapsUri": "https://maps.google.com/?cid=6829021935977969458",
+      "recommendedPrimary": [
+        "Elma Sirkeli Tahinli Piyaz",
+        "Odun Izgara Köfte",
+        "Piyaz & Köfte İkilisi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli Cevizli Fırın Kabak Tatlısı & Ev Şırası",
+          "note": "Kendi sularında karamelize edilen kabak tatlısı üstüne gezdirilen sıcak tahin ve ceviz kapanışın değişmez parçası.",
+          "proof": "100 Tarihi Lokanta arşivi ve Türkiye Turizm Ansiklopedisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Eski Kemeraltı dükkan düzeninde iç masalar",
+        "crowdAndNoise": "Öğle saatlerinde eski Antalya müdavimleriyle dolu",
+        "disadvantage": "Kemeraltı dar çarşı sokağında küçük bir dükkandır; akşam erken saatlerde servis bitebilir.",
+        "transit": "Cumhuriyet Meydanı Hükümet Konağı arkasındaki Elmalı 25. Sokak üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "100 Tarihi Lokanta — Piyazcı Sami",
+          "url": "https://100tarihilokanta.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1933 kuruluş hikayesi ve elma sirkesi detayı"
+        },
+        {
+          "title": "Türkiye Turizm Ansiklopedisi",
+          "url": "https://turkiyeturizmansiklopedisi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Antalya piyazının coğrafi işaret mirası"
+        }
+      ],
+      "pros": [
+        "90 yılı aşan aile reçetesi",
+        "Yumuşak içimli ev yapımı elma sirkesi"
+      ],
+      "cons": [
+        "Küçük oturma alanı ve erken kapanış saati"
+      ],
+      "uncertainties": [
+        "Öğleden sonra köfte stoğu azalabiliyor."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-topcu-kebap",
+      "categoryId": "kofte-piyaz",
+      "resolvedName": "Tarihi Topçu Kebap",
+      "branchName": "Elmalı, Kazım Özalp Cd. No:21, 07035 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJq6qqqtqEwxQRVikFThT2iJQ",
+      "coordinates": {
+        "lat": 36.8879673,
+        "lng": 30.7053151
+      },
+      "rating": 4.2,
+      "userRatingCount": 2999,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.topcukebap.com/",
+      "mapsUri": "https://maps.google.com/?cid=10703075081514723670",
+      "recommendedPrimary": [
+        "Şiş Köfte & Tahinli Piyaz",
+        "Klasik Topçu Et Döner",
+        "Porsiyon Topçu Kebap"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kaymaklı Ekmek Kadayıfı & Fırın Sütlaç",
+          "note": "Yemek sonrası vitrinden kesilen şerbetli ekmek kadayıfı ve kızarmış fırın sütlaç uzun yıllardır değişmeyen tatlı eşlikçileri.",
+          "proof": "topcukebap.com resmi tarihçesi ve Antalya kent belleği arşivi"
+        }
+      ],
+      "suitability": {
+        "seating": "İki katlı tarihi esnaf salonu ve yüksek kapasiteli masalar",
+        "crowdAndNoise": "Günün her saati çarşı ziyaretçileri ve yerlilerle canlı",
+        "disadvantage": "Şarampol yaya caddesi kalabalığından dolayı hızlı devirli klasik lokanta atmosferine sahiptir.",
+        "transit": "Kazım Özalp Caddesi (Kapalıyol) üzerinde tramvay ve Cumhuriyet Meydanı yakını."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Tarihi Topçu Kebap Resmi Sitesi",
+          "url": "http://www.topcukebap.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1885 aile tarihçesi, şiş köfte ve tatlılar"
+        },
+        {
+          "title": "Antalya Tarihi Mekanlar Rehberi",
+          "url": "https://www.antalyacityguide.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Antalya Cumhuriyet dönemi gastronomi mirası"
+        },
+        {
+          "title": "Ekşi Sözlük — Tarihi Topçu Kebap",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Antalya usulü şiş köfte, tahinli piyaz ve döner klasiği"
+        }
+      ],
+      "pros": [
+        "Asırlık mutfak sürekliliği",
+        "Köfte-piyaz ve et döneri aynı masada sunabilme"
+      ],
+      "cons": [
+        "Yüksek sirkülasyonlu kalabalık cadde salonu"
+      ],
+      "uncertainties": [
+        "Pazar öğle saatlerinde masa boşalması biraz zaman alabilir."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-ipek-doner",
+      "categoryId": "ates-firin",
+      "resolvedName": "İpek Döner",
+      "branchName": "Varlık, 179. Sk. Emik Apt. 24 A, 07050 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJxT_h9iKQwxQR36UIicGKwBo",
+      "coordinates": {
+        "lat": 36.8889768,
+        "lng": 30.6872033
+      },
+      "rating": 4.5,
+      "userRatingCount": 1046,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.tikla.com.tr/ipek-doner.html",
+      "mapsUri": "https://maps.google.com/?cid=1927693204346938847",
+      "recommendedPrimary": [
+        "Gobit Ekmek Arası Yaprak Et Döner",
+        "Pilav Üstü Yaprak Et Döner",
+        "Porsiyon Et Döner"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Söğüş Yeşillik Tabağı & Köpüklü Ayran",
+          "note": "Dönerin yanında masaya gelen doğranmış salatalık, domates, turp ve taze yeşillikler ile açık ayran lezzet dengesini koruyor.",
+          "proof": "Antalya yerel yemek listeleri ve müşteri geri bildirimleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Klasik esnaf dönerci salonu ve sokak önü masalar",
+        "crowdAndNoise": "Öğle servisinde memur, esnaf ve müdavimlerle yoğun",
+        "disadvantage": "Öğle vaktinde masa bulmak zorlaşabiliyor; günlük et döner stoğu bittiğinde akşamüstüne kalmadan kepenk indirebiliyor.",
+        "transit": "Güllük Eğitim ve Araştırma Hastanesi arkası Varlık 179. Sokak üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Antalya Esnaf Dönercileri Rehberi",
+          "url": "https://www.antalyacityguide.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Katkısız yaprak döner yapan merkez duraklar"
+        },
+        {
+          "title": "Ekşi Sözlük — İpek Döner Antalya",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Gobit ekmek ve erken tükenen et döner bilgisi"
+        }
+      ],
+      "pros": [
+        "Et lif dokusu net hissedilen gerçek yaprak döner",
+        "Temiz esnaf servisi"
+      ],
+      "cons": [
+        "Öğleden sonra tükenebilen et stoğu ve kısıtlı sokak parkı"
+      ],
+      "uncertainties": [
+        "Yoğun günlerde döner tezgahı planlanandan erken kapanabiliyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-komas-doner",
+      "categoryId": "ates-firin",
+      "resolvedName": "Komaş Döner Nazım Usta",
+      "branchName": "Zerdalilik, Burhanettin Onat Cd. 92 c, 07100 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJn7cvAqaawxQRzQVb71RDIiw",
+      "coordinates": {
+        "lat": 36.8780998,
+        "lng": 30.7172709
+      },
+      "rating": 4.7,
+      "userRatingCount": 406,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3180178318949025229",
+      "recommendedPrimary": [
+        "İnce Lavaş Yaprak Et Döner",
+        "Pilav Üstü Et Döner",
+        "Porsiyon Sade Et Döner"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Mercimek / Ezogelin Çorbası & Açık Ayran",
+          "note": "Döner öncesi sıcak servis edilen günlük çorbalar ve taze lavaş uyumu mahalle esnafının başlıca tercihi.",
+          "proof": "Antalya yerel yemek rehberleri ve Zerdalilik mahalle notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt esnaf salonu ve cadde kenarı birkaç masa",
+        "crowdAndNoise": "Öğle saatlerinde yüksek yerel müdavim trafiği",
+        "disadvantage": "Küçük esnaf dükkanı olduğu için öğle pikinde masa beklemek gerekebilir ve döner bittiğinde servis erken kapanır.",
+        "transit": "Zerdalilik Burhanettin Onat Caddesi No:92C durağında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Antalya Yerel Lezzet Rehberi — Komaş",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Nazım Usta yaprak döner ve taze lavaş notu"
+        },
+        {
+          "title": "Antalya Esnaf Forumları",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Az yağlı sulu yaprak döner ve öğlen tükenme detayı"
+        }
+      ],
+      "pros": [
+        "Özel ince lavaş kalitesi",
+        "Dinlendirilmiş sade yaprak et"
+      ],
+      "cons": [
+        "Küçük salon ve ikindiye doğru biten döner"
+      ],
+      "uncertainties": [
+        "Hafta sonu erken öğle saatleri daha güvenli."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-aksu-pide",
+      "categoryId": "ates-firin",
+      "resolvedName": "Aksu Pide Salonu",
+      "branchName": "Barbaros, 3003 sokak no:3/1, 07112 Aksu/Antalya, Türkiye",
+      "placeId": "ChIJHT7DKAuBwxQRNIeQ4rswg1A",
+      "coordinates": {
+        "lat": 36.948109699999996,
+        "lng": 30.848277900000003
+      },
+      "rating": 4.2,
+      "userRatingCount": 69,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://menuburada.com/aksu-etli-pide-salonu-macun-antalya/",
+      "mapsUri": "https://maps.google.com/?cid=5801534328501471028",
+      "recommendedPrimary": [
+        "Kuşbaşılı Kaşarlı Pide",
+        "Etli Kıymalı Aksu Pidesi",
+        "Karışık Odun Ateşi Pide"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taş Fırın Lahmacun & Bakır Yayık Ayran",
+          "note": "Ana pidelerin yanında çıtır kenarlı taş fırın lahmacun ve soğuk yayık ayran yerel müdavimlerce sıkça isteniyor.",
+          "proof": "Aksu yerel esnaf kayıtları ve Batı/Doğu Antalya pide rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sade aile/esnaf pide salonu oturma düzeni",
+        "crowdAndNoise": "Öğle saatleri ve hafta sonları Aksu esnafıyla canlı",
+        "disadvantage": "Şehir merkezine karayolu mesafesindedir (~18 km Aksu aksı); tüm pideler siparişe göre fırına sürüldüğünden yoğunlukta kısa bekleme olur.",
+        "transit": "Aksu merkez Barbaros Mahallesi 3003. Sokak içinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Aksu Pide Salonu Dijital Menü",
+          "url": "https://menuburada.com/aksu-etli-pide-salonu-macun-antalya/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Odun fırını kıymalı, kuşbaşılı ve karışık pide listesi"
+        },
+        {
+          "title": "Antalya Yöresel Pide Rehberi",
+          "url": "https://www.antalyacityguide.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Aksu taş fırın etli pide geleneği"
+        },
+        {
+          "title": "Yerel Yol Üstü Lezzet Notları",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Aksu pidesi ve Batı Antalya rotası karşılaştırmaları"
+        }
+      ],
+      "pros": [
+        "İnce çıtır kenarlı kara fırın hamuru",
+        "Gösterişsiz ve dengeli iç harç"
+      ],
+      "cons": [
+        "Merkez dışı Aksu ulaşımı gerektirmesi"
+      ],
+      "uncertainties": [
+        "Batı Antalya (Kemer-Olympos) yönüne ~90 km uzanan Kumluca Merkez Pide & Kebap gibi bu durak da ayrı ilçe rotası gerektirir."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-agam-gaziantep-kebap",
+      "categoryId": "ates-firin",
+      "resolvedName": "Ağam Gaziantep Kebap",
+      "branchName": "Altınova Sinan, Kaşlılar Sk. no:2, 07170 Kepez/Antalya, Türkiye",
+      "placeId": "ChIJ1YsPWACFwxQR6a3kp-q6z6U",
+      "coordinates": {
+        "lat": 36.9250806,
+        "lng": 30.7748945
+      },
+      "rating": 4.5,
+      "userRatingCount": 131,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/agam_kebap/",
+      "mapsUri": "https://maps.google.com/?cid=11947973853439110633",
+      "recommendedPrimary": [
+        "Antep Usulü Sarımsaklı Lahmacun",
+        "Zırh Adana / Urfa Kebap",
+        "Kuzu Ciğer Şiş"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Antep Ezme, Çiğ Köfte İkramı & Sıcak Künefe",
+          "note": "Kebap öncesi gelen acılı Antep ezmesi ile çiğ köfte ikramı ve kapanıştaki sıcak peynirli künefe öne çıkıyor.",
+          "proof": "instagram.com/agam_kebap paylaşımları ve Antalya ocakbaşı rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Rahat aile masaları ve ocakbaşı kokusundan korunan ferah salon",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde yerel işletme çalışanları ile aileler",
+        "disadvantage": "Altınova bulvarı çevresinde kaldığından sahil aksından araçla ulaşım gerektirir.",
+        "transit": "Altınova Sinan Mahallesi Kaşlılar Sokak (Mall of Antalya havalimanı aksı yakını)."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Gaziantepli Ağam Kebap Instagram",
+          "url": "https://www.instagram.com/agam_kebap/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Zırh lahmacun, ciğer şiş ve günlük ocakbaşı"
+        },
+        {
+          "title": "Antalya Ocakbaşı Tavsiyeleri",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Güneydoğu mutfağı lahmacun ve ciğer değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Zırh kıymalı hakiki Antep lahmacun dengesi",
+        "Cömert salata ve ezme ikramı"
+      ],
+      "cons": [
+        "Yürüyüş aksı dışında havalimanı yol aksında yer alması"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamları taze ciğer stoğu erken bitebiliyor."
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-borekci-tevfik",
+      "categoryId": "denemelisin",
+      "resolvedName": "Börekçi Tevfik",
+      "branchName": "Sinan Mah Peker Cad, Sinan, 1255. Sk. Ay İşhanı, 07050 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJwd3IxACQwxQRCORJLGCzwMw",
+      "coordinates": {
+        "lat": 36.886015799999996,
+        "lng": 30.7098606
+      },
+      "rating": 3.9,
+      "userRatingCount": 1753,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14753989604907017224",
+      "recommendedPrimary": [
+        "Pudra Şekerli Peynirli Serpme Börek",
+        "Kıymalı Serpme Börek",
+        "Yumurtalı Serpme Börek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Demleme Rize Çayı & Sıcak Şekerli Çıtır Hamur Kenarı",
+          "note": "Peynirli serpme börek üzerine istenirse serpilen pudra şekeri ve taze demlenen ince belli çay geleneği tamamlıyor.",
+          "proof": "borekcitefikdede.com resmi sitesi ve coğrafi işaret kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı iş hanı altı eski Antalya börek salonu",
+        "crowdAndNoise": "Sabah açılıştan öğleye kadar yüksek sirkülasyon",
+        "disadvantage": "Haftanın bazı günleri (Pazartesi-Salı) kapalı olabiliyor ve günlük açılan hamur öğleye kalmadan tükeniyor; sabah geç kalınırsa masa beklemek gerekir.",
+        "transit": "Sinan Mahallesi Peker Caddesi Ay İş Hanı altında Cumhuriyet Meydanı yakını."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Börekçi Tevfik Dede Resmi Sitesi",
+          "url": "https://borekcitefikdede.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "El açması serpme börek menüsü ve kapalı gün bilgisi"
+        },
+        {
+          "title": "Antalya Gastronomi Mirası",
+          "url": "https://www.antalyacityguide.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Antalya usulü pudra şekerli serpme börek klasiği"
+        },
+        {
+          "title": "Ekşi Sözlük — Börekçi Tevfik",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sabah erken saat uyarısı ve çıtır hamur değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Sipariş anında havada açılan incecik el açması börek",
+        "Özgün Antalya sabah geleneği"
+      ],
+      "cons": [
+        "Hafta başı kapalı günler",
+        "Öğlene kalmadan tükenen günlük hamur"
+      ],
+      "uncertainties": [
+        "Hafta içi kapanış saatleri hamur stoğuna bağlı değişebiliyor."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-parlak-restaurant",
+      "categoryId": "denemelisin",
+      "resolvedName": "Parlak Restaurant",
+      "branchName": "Elmalı, 1. Sk. Zincirli Han İçi, 07040 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJfZR3wgOQwxQRQf7Da1EiP4s",
+      "coordinates": {
+        "lat": 36.8877294,
+        "lng": 30.705329600000002
+      },
+      "rating": 4.3,
+      "userRatingCount": 1980,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.parlakrestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=10033776227900456513",
+      "recommendedPrimary": [
+        "Odun Ateşinde Piliç Çevirme",
+        "Kuzu Tandır & İç Pilav",
+        "Tahinli Salata"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli Kabak Tatlısı & Naneli Cacık",
+          "note": "Ana yemek eşlikçisi soğuk naneli cacık ve kapanıştaki tahinli Antalya kabak tatlısı yıllardır korunan menü uyumu.",
+          "proof": "parlakrestaurant.com ve Antalya yerel tarih arşivi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi Zincirli Han avlu dokusu içinde geniş aile masaları",
+        "crowdAndNoise": "Öğle iş yemekleri ve akşamları köklü yerli müdavimlerle dolu",
+        "disadvantage": "Geleneksel esnaf-restoran servisi yoğun akşam saatlerinde kalabalık olabiliyor; eski şehir merkezinde park alanı sınırlı.",
+        "transit": "Elmalı Mahallesi Cumhuriyet Caddesi Zincirli Han içinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Parlak Restaurant Resmi Sitesi",
+          "url": "http://www.parlakrestaurant.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1954 kuruluş tarihi ve odun ateşinde piliç/kuzu çevirme"
+        },
+        {
+          "title": "Milliyet — Antalya Eski Lokantalar",
+          "url": "https://www.milliyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Antalya şehir merkezinin tarihi lezzet kurumu"
+        },
+        {
+          "title": "Ekşi Sözlük & TripAdvisor — Parlak Restaurant",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Zincirli Han avlusunda kömür ateşi çevirme geleneği"
+        }
+      ],
+      "pros": [
+        "70 yıllık ocak çevirme ustalığı",
+        "Tarihi çarşı hanı atmosferi"
+      ],
+      "cons": [
+        "Kalabalık saatlerde yüksek ses ve park yeri kısıtı"
+      ],
+      "uncertainties": [
+        "Kuzu tandır porsiyonları akşam geç saatlere kalmayabiliyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-milklac-isiklar",
+      "categoryId": "denemelisin",
+      "resolvedName": "Milklaç Işıklar",
+      "branchName": "Barbaros mah Atatürk cad Ali Oğuz Konuk İş Merkezi 30/A, Barbaros, 07100 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJDb17TWmRwxQR50rq1JkCaf8",
+      "coordinates": {
+        "lat": 36.8858916,
+        "lng": 30.708339499999997
+      },
+      "rating": 4.8,
+      "userRatingCount": 6164,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "http://www.milklac.com/",
+      "mapsUri": "https://maps.google.com/?cid=18404244211951618791",
+      "recommendedPrimary": [
+        "Çifte Tahinli Cevizli Kabak Tatlısı",
+        "Antalya Usulü Fırın Sütlaç",
+        "Dondurmalı Sütlaç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fındıklı Fırın Sütlaç & Sade Kesme Dondurma",
+          "note": "Karamelize yüzeyi yanık fırın sütlaç ile keçi sütlü kesme dondurma tatlı vitrininin öne çıkan ikilisi.",
+          "proof": "milklac.com resmi sitesi ve yerel tatlı rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Cadde üzeri ferah iç ve dış tatlı salonu masaları",
+        "crowdAndNoise": "Akşam yemeği sonrası saatlerde aileler ve gençlerle yoğun",
+        "disadvantage": "Ana cadde üzerinde akşam yürüyüş trafiği nedeniyle vitrin önünde kısa bekleme yaşanabiliyor.",
+        "transit": "Işıklar Caddesi başlangıcında Hadrian Kapısı (Üçkapılar) karşısında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Milklaç Resmi Sitesi",
+          "url": "http://www.milklac.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Sütlü tatlılar ve kabak tatlısı çeşitleri"
+        },
+        {
+          "title": "Antalya Tatlı Durakları",
+          "url": "https://www.antalyacityguide.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Merkezde tahinli kabak ve fırın sütlaç önerisi"
+        }
+      ],
+      "pros": [
+        "Taze günlük üretim ve merkezi konum",
+        "Akşam geç saatlere kadar kolay erişim"
+      ],
+      "cons": [
+        "Akşamüstü ve gece pikinde yoğun kalabalık"
+      ],
+      "uncertainties": [
+        "Hafta sonu kabak tatlısı porsiyonları hızlı tükenebiliyor."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-dilara-yasar-dondurma",
+      "categoryId": "denemelisin",
+      "resolvedName": "Dilâra Yaşar Tatlı & Yanıksı Dondurma",
+      "branchName": "Tahılpazarı Mahallesi İsmetpaşa Caddesi 458. Sokak Sırrı Nalbant İş Hanı No:1, Tahılpazarı, 07000 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJTy5lPAKQwxQR-GArYSeWfpA",
+      "coordinates": {
+        "lat": 36.8898228,
+        "lng": 30.705337699999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 171,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.dilarayasar.com/",
+      "mapsUri": "https://maps.google.com/?cid=10411924484405289208",
+      "recommendedPrimary": [
+        "Antalya Yanıksı Sade Dondurma",
+        "Tahinli & Cevizli Yanıksı Dondurma",
+        "Bademli Dondurma"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sütlü Tatlılar & Fırınlanmış Tatlı Çeşitleri",
+          "note": "Yanıksı dondurma eşliğinde sunulan sade sütlü ve şerbetli klasik tatlılar bölgenin yerlilerince tercih ediliyor.",
+          "proof": "dilarayasar.com resmi sitesi ve Antalya yöresel tatlı yazıları"
+        }
+      ],
+      "suitability": {
+        "seating": "Çarşı içinde ekonomik bütçeli sade salon masaları",
+        "crowdAndNoise": "Yaz aylarında öğleden geceye sürekli yürüyüş üstü talep",
+        "disadvantage": "Tahılpazarı yoğun yaya aksında yer aldığından kapı önünde araba duraklaması güçtür.",
+        "transit": "İsmetpaşa Caddesi 458. Sokak Sırrı Nalbant İş Hanı köşesinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Dilâra Yaşar Resmi Sitesi",
+          "url": "http://www.dilarayasar.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Yanıksı keçi sütü dondurma ve tatlı çeşitleri"
+        },
+        {
+          "title": "Antalya Yöresel Tatlar Rehberi",
+          "url": "https://www.antalyacityguide.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Antalya yanıksı dondurma kültürü"
+        }
+      ],
+      "pros": [
+        "Belirgin yanık keçi sütü aroması",
+        "Ekonomik fiyat seviyesi"
+      ],
+      "cons": [
+        "Park imkanı olmayan dar çarşı sokağı"
+      ],
+      "uncertainties": [
+        "Kış aylarında bazı meyveli dondurma çeşitleri üretilmeyebiliyor."
+      ],
+      "selectionScore": 82,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-pacaci-semsi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Paçacı Şemsi",
+      "branchName": "Tahılpazarı, Şht. Binbaşı Cengiz Toytunç Cd., 07040 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJqdH1ogGQwxQRiUHUPh5Pj3g",
+      "coordinates": {
+        "lat": 36.888765299999996,
+        "lng": 30.7076473
+      },
+      "rating": 4.1,
+      "userRatingCount": 7563,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.pacacisemsi.com/",
+      "mapsUri": "https://maps.google.com/?cid=8687249197542687113",
+      "recommendedPrimary": [
+        "Sade / Terbiyeli Kelle Paça",
+        "Sarımsaklı Ayak Paça",
+        "Damardan Tuzlama"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli Cevizli Antalya Kabak Tatlısı & Fırın Sütlaç",
+          "note": "Sarımsaklı çorbanın ardından masaya gelen koyu tahinli kabak tatlısı gece çorbası geleneğinin vazgeçilmez parçası.",
+          "proof": "pacacisemsi.com resmi menüsü ve Antalya gece lezzetleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Yüksek devirli geniş esnaf çorbacısı salonu",
+        "crowdAndNoise": "Özellikle geç akşam ve gece saatlerinde hareketli",
+        "disadvantage": "Geleneksel yoğun tempolu bir esnaf çorbacısı olduğu için salonda sarımsak/kemik suyu kokusu ve yüksek kalabalık sirkülasyonu bulunur.",
+        "transit": "Tahılpazarı Mahallesi Şehit Binbaşı Cengiz Toytunç Caddesi üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Paçacı Şemsi Resmi Sitesi",
+          "url": "https://www.pacacisemsi.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1976 kuruluşu, kelle paça çeşitleri ve merkez şube bilgisi"
+        },
+        {
+          "title": "Antalya Gece Lezzetleri Rehberi",
+          "url": "https://www.antalyacityguide.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Köklü çorba ve tatlı geleneği"
+        },
+        {
+          "title": "Ekşi Sözlük — Paçacı Şemsi",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Antalya gece ve sabah çorba ritüeli"
+        }
+      ],
+      "pros": [
+        "Kesintisiz taze çorba sirkülasyonu",
+        "Güçlü kemik suyu kıvamı"
+      ],
+      "cons": [
+        "Yoğun sarımsak/sakatat kokusu ve gürültülü salon"
+      ],
+      "uncertainties": [
+        "Gece pik saatlerinde kısa sıra oluşabiliyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kaleici-rokka-falafel",
+      "categoryId": "denemelisin",
+      "resolvedName": "Rokka Pizza Falafel",
+      "branchName": "Haşimişcan, Recep Peker Cd., 07100 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJibvgKgeQwxQRhKpvqyuPH5o",
+      "coordinates": {
+        "lat": 36.885245,
+        "lng": 30.709380799999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 3944,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://instagram.com/rokkapizzafalafel?igshid=NTc4MTIwNjQ2YQ==",
+      "mapsUri": "https://maps.google.com/?cid=11105752623841520260",
+      "recommendedPrimary": [
+        "Tahin Soslu Falafel Dürüm",
+        "Taze Humus & Falafel Tabağı",
+        "Köz Patlıcanlı Dürüm"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırınlanmış Nohut Humusu & Taze Naneli Ev Limonata",
+          "note": "Falafel dışında ekstra tahinli humus kaseleri ve ev yapımı naneli limonata mahalle müdavimlerince sıkça alınıyor.",
+          "proof": "Antalya yerel kafe-bistro listeleri ve öğrenci toplulukları"
+        }
+      ],
+      "suitability": {
+        "seating": "Işıklar ara sokak köşesinde kompakt dükkan ve kaldırım masaları",
+        "crowdAndNoise": "Öğle ve akşam erken saatlerinde genç kalabalık",
+        "disadvantage": "Dükkan oldukça küçük olduğu için yağışlı günlerde kapalı alan yetersiz kalabiliyor.",
+        "transit": "Recep Peker Caddesi üzerinde Haşimişcan tarafında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Rokka Pizza Falafel Instagram",
+          "url": "https://instagram.com/rokkapizzafalafel",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Günlük nohut falafel, humus ve fırın menüsü"
+        },
+        {
+          "title": "TripAdvisor Antalya — Hızlı Lezzet",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Işıklar çevresi falafel ve hafif öğün önerisi"
+        }
+      ],
+      "pros": [
+        "Taze yağda kızaran çıtır falafel dengesi",
+        "Merkezde hızlı ve pratik öğün"
+      ],
+      "cons": [
+        "Dar kapalı mekan kapasitesi"
+      ],
+      "uncertainties": [
+        "Akşam geç saatlerde falafel stoğu hızlı eriyebiliyor."
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    }
+  ]
+}

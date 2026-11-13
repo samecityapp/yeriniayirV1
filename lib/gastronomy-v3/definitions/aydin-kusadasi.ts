@@ -29,7 +29,7 @@ export const AYDIN_KUSADASI_DEF: V3RegionDefinition = {
   ],
   scopeNote: 'Merkez, Davutlar & Güzelçamlı · Doğrulanmış Yerel Seçki',
   characterSubtitle:
-    'Merkez ve Çarşı’dan Kirazlı, Caferli, Yaylaköy, Davutlar ve Güzelçamlı sahiline yerel ritüeller, köy kahvaltıları ve Ege balıkçıları',
+    'Merkez çarşı ve Setur Marina’dan Kirazlı, Caferli, Davutlar ve Güzelçamlı sahiline uzanan yerel ritüeller, köy kahvaltıları ve Ege balıkçıları.',
   center: { lat: 37.8595, lng: 27.2605 },
   bbox: { minLat: 37.705, maxLat: 37.885, minLng: 27.205, maxLng: 27.368 },
   allowedNeighborhoodTokens: [

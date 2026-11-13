@@ -378,7 +378,7 @@ export function evaluateAndScoreCandidate(
       );
     }
   } else if (seed.communityInsiderProtected) {
-    if (rating < 4.2 || userRatingCount < 200 || independentProofSources.length < 2) {
+    if (rating < 4.2 || userRatingCount < 60 || independentProofSources.length < 2) {
       return reject(
         `below_quality_threshold:★${rating}(${userRatingCount})_proofs_${independentProofSources.length}`
       );

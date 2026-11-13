@@ -62,9 +62,37 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     image: '/images/gastronomy/regional.svg',
     badge: 'Yöresel Miras Seçkisi',
     headline: 'Gaziantep · Şahinbey & Şehitkamil',
-    vibe: 'Kalealtı ve tarihi hanlardan Gazimuhtar ve İbrahimli’ye küşleme, beyran, taş fırın baklava, katmer ve sokak ritüelleri',
+    vibe: 'Tarihi hanlar ve Kalealtı çarşılarından Gazimuhtar ile İbrahimli’ye uzanan küşleme, sabah beyranı, taş fırın baklava ve katmer durakları',
+  },
+  'kaleici-muratpasa-antalya': {
+    image: '/images/gastronomy/regional.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Kaleiçi & Merkez, Antalya',
+    vibe: 'Tarihi Kaleiçi, eski çarşı ve Işıklar hattından Aksu rotasına uzanan tahinli piyaz, şiş köfte, yaprak döner ve akşam sofraları',
+  },
+  'lara-muratpasa-antalya': {
+    image: '/images/gastronomy/pizza.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Lara, Antalya',
+    vibe: 'Şirinyalı, Fener ve Güzeloba hattında falez restoranları, odun fırını pizzacılar, gurme burgerciler ve taş fırın lahmacun durakları',
+  },
+  'konyaalti-antalya': {
+    image: '/images/gastronomy/coffee-pour-over.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Konyaaltı, Antalya',
+    vibe: 'Atatürk Kültür Parkı ve sahil şeridinden Gürsu, Liman ve Çakırlar’a uzanan özel gün klasikleri, kruvasan-pastane durakları ve odun ateşi pideler',
   },
 };
+
+function formatLocationCategoryHeading(locative: string, categoryTitle?: string): string {
+  const cleanLocative = locative.trim();
+  const cleanTitle = (categoryTitle || 'Mekanlar').trim();
+  if (cleanTitle.toLocaleLowerCase('tr').startsWith(cleanLocative.toLocaleLowerCase('tr'))) {
+    const remainder = cleanTitle.slice(cleanLocative.length).trim();
+    return remainder ? `${cleanLocative} ${remainder}` : cleanLocative;
+  }
+  return `${cleanLocative} ${cleanTitle}`;
+}
 
 interface GastronomyPageClientProps {
   discovery: VisitorFoodDiscovery;
@@ -242,7 +270,7 @@ export function GastronomyPageClient({
                       Konum Seç
                     </div>
                     <div className="text-xs text-slate-500 font-medium truncate mt-0.5">
-                      Kuşadası · Kadıköy · Moda · Yeldeğirmeni · Caddebostan · Suadiye
+                      Antalya · Gaziantep · Kuşadası · Kadıköy · Moda · Yeldeğirmeni · Caddebostan · Suadiye
                     </div>
                   </div>
                 </div>
@@ -360,7 +388,7 @@ export function GastronomyPageClient({
             <div className="pt-1 pb-4 sm:pb-5">
               <h1 className="text-2xl sm:text-3xl font-black text-slate-950 tracking-tight flex items-center gap-2 sm:gap-2.5 leading-tight">
                 <span className="text-2xl sm:text-3xl leading-none">{categoryResult?.category.emoji || '🍽️'}</span>
-                <span>{selectedLocation.locative} {categoryResult?.category.title || 'Mekanlar'}</span>
+                <span>{formatLocationCategoryHeading(selectedLocation.locative, categoryResult?.category.title)}</span>
               </h1>
               {selectedLocation.characterSubtitle && (
                 <p className="text-xs sm:text-sm text-slate-500 font-medium mt-1.5 leading-relaxed">

@@ -14,6 +14,9 @@ const PUBLISHED_REGION_KEYS = [
   'istanbul-kadikoy-suadiye',
   'aydin-kusadasi',
   'gaziantep-merkez',
+  'antalya-kaleici',
+  'antalya-lara',
+  'antalya-konyaalti',
 ];
 const NEARBY_POOL_KEY = 'istanbul-kadikoy-nearby-pool';
 const DEFAULT_REGION_ORDER = [...PUBLISHED_REGION_KEYS, NEARBY_POOL_KEY];

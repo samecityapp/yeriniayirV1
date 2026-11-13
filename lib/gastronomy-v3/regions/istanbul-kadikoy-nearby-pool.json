@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "verifiedAt": "2026-11-13T16:37:40.169Z",
+  "verifiedAt": "2026-11-13T20:48:55.566Z",
   "region": {
     "id": "kadikoy-nearby-pool",
     "slug": "kadikoy-nearby-pool",
@@ -21,6 +21,14 @@
     "center": {
       "lat": 40.98,
       "lng": 29.05
+    },
+    "boundary": {
+      "bbox": {
+        "minLat": 40.955,
+        "maxLat": 41.015,
+        "minLng": 29.02,
+        "maxLng": 29.095
+      }
     }
   },
   "categories": [
@@ -68,7 +76,7 @@
       "id": "denemelisin",
       "slug": "denemelisin",
       "label": "Denemelisin",
-      "title": "Bölgeye Özgü Denemelisin",
+      "title": "Mutlaka Denemelisin",
       "emoji": "⭐",
       "isMustTry": false
     }
@@ -279,40 +287,6 @@
       ]
     },
     {
-      "id": "nearby-elloi-kalamis",
-      "placeId": "ChIJfZNbCPe5yhQRUFTmXhVmRbg",
-      "name": "Elloi Kalamış",
-      "address": "Fenerbahçe, Itri Dede Sok. No: 9/A, 34726 Kadıköy/İstanbul, Türkiye",
-      "neighborhood": "Fenerbahçe (Kalamış), Kadıköy",
-      "categoryId": "kahve",
-      "rating": 4.8,
-      "mapsUri": "https://maps.google.com/?cid=13278131318344275024",
-      "coordinates": {
-        "lat": 40.9823094,
-        "lng": 29.039811600000004
-      },
-      "description": "Itri Dede Sokak’ta sade bar tasarımı, dengeli espresso reçeteleri ve mahalle müdavimliğiyle yüksek puan toplayan butik Kalamış kahvecisi.",
-      "whatToOrder": [
-        "Cortado",
-        "Iced Latte",
-        "V60 Filtre Kahve"
-      ],
-      "menuFrom": [
-        "Flat White",
-        "Americano",
-        "Cold Brew"
-      ],
-      "alsoTry": [
-        "Günlük Fırın Kurabiye & Banana Bread — Sabah kahvesi yanında hızlı atıştırmalık olarak öne çıkan taze fırın dilimleri."
-      ],
-      "beforeYouGo": [
-        "Oturma & Servis: Kompakt sokak içi oturma ve al-götür servis düzeni · Komşu yürüyüş rotasında sakin ve hızlı kahve molası atmosferi",
-        "Dezavantaj: Küçük alan nedeniyle uzun süre oturmak yerine al-götür veya kısa mola için tasarlanmıştır.",
-        "Ulaşım: Kurbağalıdere ve Kalamış’ın girişindeki Itri Dede Sokak’ta Moda’dan yürüyüş mesafesinde.",
-        "Bütçe seviyesi (Google): Ekonomik"
-      ]
-    },
-    {
       "id": "nearby-nokta-kalamis",
       "placeId": "ChIJ6WY6-nu4yhQRGC6ZyTiwMUQ",
       "name": "Nokta Kalamış",
@@ -344,6 +318,40 @@
         "Dezavantaj: Kaldırım masaları hafta sonları hızlı dolduğu için yer beklemek gerekebilir.",
         "Ulaşım: Itri Dede Sokak’ta Yoğurtçu Parkı ve Kalamış Parkı arasındaki yürüyüş ekseninde.",
         "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "nearby-elloi-kalamis",
+      "placeId": "ChIJfZNbCPe5yhQRUFTmXhVmRbg",
+      "name": "Elloi Kalamış",
+      "address": "Fenerbahçe, Itri Dede Sok. No: 9/A, 34726 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Fenerbahçe (Kalamış), Kadıköy",
+      "categoryId": "kahve",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=13278131318344275024",
+      "coordinates": {
+        "lat": 40.9823094,
+        "lng": 29.039811600000004
+      },
+      "description": "Itri Dede Sokak’ta sade bar tasarımı, dengeli espresso reçeteleri ve mahalle müdavimliğiyle yüksek puan toplayan butik Kalamış kahvecisi.",
+      "whatToOrder": [
+        "Cortado",
+        "Iced Latte",
+        "V60 Filtre Kahve"
+      ],
+      "menuFrom": [
+        "Flat White",
+        "Americano",
+        "Cold Brew"
+      ],
+      "alsoTry": [
+        "Günlük Fırın Kurabiye & Banana Bread — Sabah kahvesi yanında hızlı atıştırmalık olarak öne çıkan taze fırın dilimleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Kompakt sokak içi oturma ve al-götür servis düzeni · Komşu yürüyüş rotasında sakin ve hızlı kahve molası atmosferi",
+        "Dezavantaj: Küçük alan nedeniyle uzun süre oturmak yerine al-götür veya kısa mola için tasarlanmıştır.",
+        "Ulaşım: Kurbağalıdere ve Kalamış’ın girişindeki Itri Dede Sokak’ta Moda’dan yürüyüş mesafesinde.",
+        "Bütçe seviyesi (Google): Ekonomik"
       ]
     },
     {
@@ -449,40 +457,6 @@
       ]
     },
     {
-      "id": "nearby-ouzo-kalamis",
-      "placeId": "ChIJuz2FIn64yhQRBGsCpJJCUUI",
-      "name": "Ouzo Roof Restaurant",
-      "address": "Fenerbahçe, Fener Kalamış Cd. No:38, 34726 Kadıköy/İstanbul, Türkiye",
-      "neighborhood": "Fenerbahçe (Kalamış), Kadıköy",
-      "categoryId": "date",
-      "rating": 4.2,
-      "mapsUri": "https://maps.google.com/?cid=4778673877201087236",
-      "coordinates": {
-        "lat": 40.9772484,
-        "lng": 29.0412912
-      },
-      "description": "Fener Kalamış’ta doğrudan Kalamış Marina ve Marmara denizine hakim çatı terasında Ege-Yunan mezeleri ve deniz ürünleri sunan özel gün akşam restoranı.",
-      "whatToOrder": [
-        "Girit Ezmesi & Deniz Börülcesi",
-        "Saganaki Peynir",
-        "Izgara Kalamar veya Günlük Balık"
-      ],
-      "menuFrom": [
-        "Soğuk Deniz Mahsulü Mezeleri",
-        "Lakerda",
-        "Yunan Salatası"
-      ],
-      "alsoTry": [
-        "Izgara Ahtapot & Sakızlı Muhallebi — Manzaralı akşam masasının en çok paylaşılan sıcak ara sıcağı ve geleneksel tatlı kapanışı."
-      ],
-      "beforeYouGo": [
-        "Oturma & Servis: Panoramik deniz ve marina manzaralı çatı terası (önceden rezervasyon gerekir) · Şık akşam yemeği ve özel gün kutlamalarına uygun dingin çatı atmosferi",
-        "Dezavantaj: Yüksek fiyat seviyesinde otel çatı restoranıdır; günlük hızlı yemek için uygun değildir.",
-        "Ulaşım: Fener Kalamış Caddesi üzerindeki Kalamış Marina karşısında kolay ulaşım.",
-        "Bütçe seviyesi (Google): Yüksek"
-      ]
-    },
-    {
       "id": "nearby-olio-erenkoy",
       "placeId": "ChIJHTKsja_HyhQRT8v3LvhLpBs",
       "name": "Olio Brasserie",
@@ -514,6 +488,40 @@
         "Dezavantaj: Hafta sonu akşamları kalabalık olabiliyor; cadde üzeri park yeri sınırlı.",
         "Ulaşım: Şemsettin Günaltay Caddesi üzerinde Erenköy ve Suadiye arasında kolay erişim.",
         "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "nearby-ouzo-kalamis",
+      "placeId": "ChIJuz2FIn64yhQRBGsCpJJCUUI",
+      "name": "Ouzo Roof Restaurant",
+      "address": "Fenerbahçe, Fener Kalamış Cd. No:38, 34726 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Fenerbahçe (Kalamış), Kadıköy",
+      "categoryId": "date",
+      "rating": 4.2,
+      "mapsUri": "https://maps.google.com/?cid=4778673877201087236",
+      "coordinates": {
+        "lat": 40.9772484,
+        "lng": 29.0412912
+      },
+      "description": "Fener Kalamış’ta doğrudan Kalamış Marina ve Marmara denizine hakim çatı terasında Ege-Yunan mezeleri ve deniz ürünleri sunan özel gün akşam restoranı.",
+      "whatToOrder": [
+        "Girit Ezmesi & Deniz Börülcesi",
+        "Saganaki Peynir",
+        "Izgara Kalamar veya Günlük Balık"
+      ],
+      "menuFrom": [
+        "Soğuk Deniz Mahsulü Mezeleri",
+        "Lakerda",
+        "Yunan Salatası"
+      ],
+      "alsoTry": [
+        "Izgara Ahtapot & Sakızlı Muhallebi — Manzaralı akşam masasının en çok paylaşılan sıcak ara sıcağı ve geleneksel tatlı kapanışı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Panoramik deniz ve marina manzaralı çatı terası (önceden rezervasyon gerekir) · Şık akşam yemeği ve özel gün kutlamalarına uygun dingin çatı atmosferi",
+        "Dezavantaj: Yüksek fiyat seviyesinde otel çatı restoranıdır; günlük hızlı yemek için uygun değildir.",
+        "Ulaşım: Fener Kalamış Caddesi üzerindeki Kalamış Marina karşısında kolay ulaşım.",
+        "Bütçe seviyesi (Google): Yüksek"
       ]
     },
     {
@@ -686,6 +694,40 @@
       ]
     },
     {
+      "id": "nearby-ororo-erenkoy",
+      "placeId": "ChIJHdqci87HyhQRSoUWP0acmeE",
+      "name": "orōro Japanese Eatery | Erenköy",
+      "address": "Caddebostan, Yener Sk. No: 5/B, 34728 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Erenköy, Kadıköy",
+      "categoryId": "denemelisin",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=16256196155490600266",
+      "coordinates": {
+        "lat": 40.9638663,
+        "lng": 29.0711164
+      },
+      "description": "Caddebostan-Erenköy sınırında saatlerce kaynatılan et suyu bazlı ramenleri, özel soslu donburi kaseleri ve taze suşileriyle Kadıköy’ün öncü Japon lokantası.",
+      "whatToOrder": [
+        "Tonkotsu veya Shoyu Ramen",
+        "Ororo Signature Sushi Roll",
+        "Katsu Donburi"
+      ],
+      "menuFrom": [
+        "Miso Ramen",
+        "Edamame",
+        "Green Tea / Sake"
+      ],
+      "alsoTry": [
+        "Buharda/Tavada Gyoza Mantısı & Matcha Tatlısı — Ramen öncesi paylaşılan çıtır altlı gyoza ve yemek sonrası hafif matcha tatlısı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Tezgah ve samimi salon oturması; gel-al paket servis mevcut · Akşamları özellikle ramen sever genç ve yetişkin kitlesiyle dolu",
+        "Dezavantaj: Küçük butik salonunda akşam saatlerinde kapıda kısa bekleme sırası oluşabiliyor.",
+        "Ulaşım: Erenköy Marmaray ve Caddebostan kültür aksı yakınındaki Yener Sokak’ta.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
       "id": "nearby-todori-fenerbahce",
       "placeId": "ChIJQ-1YXZC4yhQRGLljXaFBQpY",
       "name": "Todori Fenerbahçe",
@@ -750,40 +792,6 @@
         "Oturma & Servis: Pastane içi masa oturması yanında ağırlıklı hızlı paket/hediyelik kutu servisi · Özellikle hafta sonu tatlı kutusu alan müdavimlerle hareketli",
         "Dezavantaj: Eski tip klasik pastane atmosferidir; modern üçüncü dalga kafe konforu arayanlara hitap etmeyebilir.",
         "Ulaşım: Kantarcı Rıza Sokak’ta Bağdat Caddesi ve Erenköy-Caddebostan sahili arasında."
-      ]
-    },
-    {
-      "id": "nearby-ororo-erenkoy",
-      "placeId": "ChIJHdqci87HyhQRSoUWP0acmeE",
-      "name": "orōro Japanese Eatery | Erenköy",
-      "address": "Caddebostan, Yener Sk. No: 5/B, 34728 Kadıköy/İstanbul, Türkiye",
-      "neighborhood": "Erenköy, Kadıköy",
-      "categoryId": "denemelisin",
-      "rating": 4.7,
-      "mapsUri": "https://maps.google.com/?cid=16256196155490600266",
-      "coordinates": {
-        "lat": 40.9638663,
-        "lng": 29.0711164
-      },
-      "description": "Caddebostan-Erenköy sınırında saatlerce kaynatılan et suyu bazlı ramenleri, özel soslu donburi kaseleri ve taze suşileriyle Kadıköy’ün öncü Japon lokantası.",
-      "whatToOrder": [
-        "Tonkotsu veya Shoyu Ramen",
-        "Ororo Signature Sushi Roll",
-        "Katsu Donburi"
-      ],
-      "menuFrom": [
-        "Miso Ramen",
-        "Edamame",
-        "Green Tea / Sake"
-      ],
-      "alsoTry": [
-        "Buharda/Tavada Gyoza Mantısı & Matcha Tatlısı — Ramen öncesi paylaşılan çıtır altlı gyoza ve yemek sonrası hafif matcha tatlısı."
-      ],
-      "beforeYouGo": [
-        "Oturma & Servis: Tezgah ve samimi salon oturması; gel-al paket servis mevcut · Akşamları özellikle ramen sever genç ve yetişkin kitlesiyle dolu",
-        "Dezavantaj: Küçük butik salonunda akşam saatlerinde kapıda kısa bekleme sırası oluşabiliyor.",
-        "Ulaşım: Erenköy Marmaray ve Caddebostan kültür aksı yakınındaki Yener Sokak’ta.",
-        "Bütçe seviyesi (Google): Orta"
       ]
     }
   ]

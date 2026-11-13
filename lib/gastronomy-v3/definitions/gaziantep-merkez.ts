@@ -30,7 +30,7 @@ export const GAZIANTEP_MERKEZ_DEF: V3RegionDefinition = {
   ],
   scopeNote: 'Şahinbey & Şehitkamil · Doğrulanmış Yöresel Seçki',
   characterSubtitle:
-    'Kalealtı, Uzun Çarşı, Elmacı Pazarı ve tarihi hanlardan Alleben, Gazimuhtar ve İbrahimli hattına küşleme, beyran, taş fırın baklava, katmer ve sokak ritüelleri',
+    'Tarihi hanlar ve Kalealtı çarşılarından Gazimuhtar ile İbrahimli’ye uzanan küşleme, sabah beyranı, taş fırın baklava ve katmer durakları.',
   center: { lat: 37.0635, lng: 37.3825 },
   bbox: { minLat: 37.01, maxLat: 37.092, minLng: 37.315, maxLng: 37.4 },
   allowedNeighborhoodTokens: [

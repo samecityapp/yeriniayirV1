@@ -68,6 +68,9 @@ const REGION_KEYS = [
   'istanbul-kadikoy-suadiye',
   'aydin-kusadasi',
   'gaziantep-merkez',
+  'antalya-kaleici',
+  'antalya-lara',
+  'antalya-konyaalti',
 ];
 
 const CANONICAL_SLUGS = [
@@ -78,6 +81,8 @@ const CANONICAL_SLUGS = [
   'kahvalti',
   'denemelisin',
   'balik-deniz-urunleri',
+  'kofte-piyaz',
+  'kebap-pide-doner',
 ];
 
 const snapshots = REGION_KEYS.map((key) => {
@@ -90,9 +95,12 @@ test('all published snapshots follow schema v3, canonical order, dynamic caps (1
     assert.equal(data.schemaVersion, 3, key);
     const isCoastal = key === 'aydin-kusadasi';
     const isHeritage = key === 'gaziantep-merkez';
+    const isAntalya = key.startsWith('antalya-');
     assert.ok(
       isHeritage
         ? data.categories.length === 8
+        : isAntalya
+        ? data.categories.length >= 8 && data.categories.length <= 9
         : isCoastal
         ? data.categories.length === 7
         : data.categories.length >= 5 && data.categories.length <= 6,
@@ -122,6 +130,12 @@ test('all published snapshots follow schema v3, canonical order, dynamic caps (1
     }
 
     for (const cat of data.categories) {
+      const lowerTitle = cat.title.toLocaleLowerCase('tr-TR');
+      assert.ok(
+        !lowerTitle.includes(data.region.locative.toLocaleLowerCase('tr-TR')) &&
+          !lowerTitle.includes(data.region.city.toLocaleLowerCase('tr-TR')),
+        `Category title must not repeat region locative/city (${data.region.locative} ${cat.title}) in ${key}`
+      );
       const count = data.venues.filter((v) => v.categoryId === cat.id).length;
       const maxAllowed = cat.id === 'denemelisin' ? 10 : 5;
       assert.ok(count >= 1 && count <= maxAllowed, `${key}/${cat.slug} count=${count}`);
@@ -177,10 +191,15 @@ test('Caddebostan dynamically prunes breakfast ("Yoksa Onerme") when no qualifyi
   assert.equal(caddebostan.categories.some((c) => c.slug === 'kahvalti'), false);
 });
 
-test('all 7 published regions have zero overlapping placeIds, valid ratings, and canonical CID links', () => {
+test('all 10 published regions have zero overlapping placeIds, valid ratings, and canonical CID links', () => {
   const globalPlaceIds = new Set();
   for (const { key, data } of snapshots) {
-    const expectedDistricts = data.region.district.split('&').map((s) => s.trim());
+    const expectedDistricts =
+      key === 'antalya-kaleici'
+        ? ['Muratpaşa', 'Aksu', 'Kepez']
+        : key === 'antalya-konyaalti'
+        ? ['Konyaaltı', 'Muratpaşa']
+        : data.region.district.split('&').map((s) => s.trim());
     for (const venue of data.venues) {
       assert.ok(!globalPlaceIds.has(venue.placeId), `Cross-region or duplicate placeId ${venue.placeId} (${venue.name} in ${key})`);
       globalPlaceIds.add(venue.placeId);
@@ -191,12 +210,13 @@ test('all 7 published regions have zero overlapping placeIds, valid ratings, and
       assert.ok(venue.mapsUri.startsWith('https://maps.google.com/?cid='), `Invalid CID URI: ${venue.mapsUri}`);
       assert.ok(
         typeof venue.rating === 'number' &&
-          venue.rating >= (key === 'aydin-kusadasi' || key === 'gaziantep-merkez' ? 3.8 : 4.0) &&
+          venue.rating >=
+            (key === 'aydin-kusadasi' || key === 'gaziantep-merkez' || key.startsWith('antalya-') ? 3.8 : 4.0) &&
           venue.rating <= 5.0
       );
     }
   }
-  assert.ok(globalPlaceIds.size >= 150, `Expected >=150 unique published venues, got ${globalPlaceIds.size}`);
+  assert.ok(globalPlaceIds.size >= 230, `Expected >=230 unique published venues, got ${globalPlaceIds.size}`);
 });
 
 test('every published region limits nearbyVenues to <= 1 per category within <= 400m of its border (Moda has 6)', () => {
@@ -293,6 +313,22 @@ test('policy gates reject closed, chain, out-of-neighborhood, and degraded candi
 
   assert.equal(byId.get('ctrl-bafetto-chain').accepted, false);
   assert.equal(byId.get('ctrl-bafetto-chain').reason, 'chain_or_franchise');
+
+  const konyaaltiAudit = JSON.parse(
+    fs.readFileSync(path.join(ROOT, 'work/gastronomy-v3/antalya-konyaalti.audit.json'), 'utf8')
+  );
+  const kMap = new Map(konyaaltiAudit.decisions.map((d) => [d.id, d]));
+  assert.equal(kMap.get('ctrl-konyaalti-routeburger-closed').accepted, false);
+  assert.ok(kMap.get('ctrl-konyaalti-routeburger-closed').reason.includes('CLOSED_PERMANENTLY'));
+  assert.equal(kMap.get('ctrl-konyaalti-kumluca-distant').accepted, false);
+  assert.ok(kMap.get('ctrl-konyaalti-kumluca-distant').reason.includes('outside_strict_neighborhood'));
+
+  const laraAudit = JSON.parse(
+    fs.readFileSync(path.join(ROOT, 'work/gastronomy-v3/antalya-lara.audit.json'), 'utf8')
+  );
+  const lMap = new Map(laraAudit.decisions.map((d) => [d.id, d]));
+  assert.equal(lMap.get('ctrl-lara-sudd-closed').accepted, false);
+  assert.ok(lMap.get('ctrl-lara-sudd-closed').reason.includes('CLOSED_PERMANENTLY'));
 });
 
 test('V3.2 rules, secondaryItems, suitability, zero Çekirdekhane, complete dossiers & visitor isolation', () => {
@@ -355,10 +391,21 @@ test('runtime discovery, foodAdapter, and realProvider expose all 5 Kadikoy regi
   const provider = providerMod.createRealFoodProvider(food);
 
   const ready = provider.getReadyRegions();
-  assert.equal(ready.length, 7);
+  assert.equal(ready.length, 10);
   assert.deepEqual(
     ready.map((r) => r.slug),
-    ['moda', 'kadikoy', 'yeldegirmeni', 'caddebostan', 'suadiye', 'kusadasi', 'gaziantep']
+    [
+      'moda',
+      'kadikoy',
+      'yeldegirmeni',
+      'caddebostan',
+      'suadiye',
+      'kusadasi',
+      'gaziantep',
+      'antalya-kaleici',
+      'antalya-lara',
+      'antalya-konyaalti',
+    ]
   );
 
   for (const loc of food.locations) {
@@ -372,14 +419,28 @@ test('runtime discovery, foodAdapter, and realProvider expose all 5 Kadikoy regi
   assert.equal(provider.getLocationBySlug('merkez-kusadasi-aydin')?.slug, 'kusadasi');
   assert.equal(provider.getLocationBySlug('sahinbey')?.slug, 'gaziantep');
   assert.equal(provider.getLocationBySlug('sehitkamil')?.slug, 'gaziantep');
+  assert.equal(provider.getLocationBySlug('antalya')?.slug, 'antalya-kaleici');
+  assert.equal(provider.getLocationBySlug('lara')?.slug, 'antalya-lara');
+  assert.equal(provider.getLocationBySlug('konyaalti')?.slug, 'antalya-konyaalti');
 
   // Unpublished regions cannot resolve
   assert.equal(provider.getLocationBySlug('akyaka'), undefined);
-  assert.equal(provider.getLocationBySlug('antalya-lara'), undefined);
+  assert.equal(provider.getLocationBySlug('bitez'), undefined);
   assert.equal(provider.getLocationBySlug('kosuyolu'), undefined);
 
-  // Verify all 7 published regions resolve cleanly through readIntegrationDiscovery
-  for (const slug of ['moda', 'kadikoy', 'yeldegirmeni', 'caddebostan', 'suadiye', 'kusadasi', 'gaziantep']) {
+  // Verify all 10 published regions resolve cleanly through readIntegrationDiscovery
+  for (const slug of [
+    'moda',
+    'kadikoy',
+    'yeldegirmeni',
+    'caddebostan',
+    'suadiye',
+    'kusadasi',
+    'gaziantep',
+    'antalya-kaleici',
+    'antalya-lara',
+    'antalya-konyaalti',
+  ]) {
     const disc = await discoveryMod.readIntegrationDiscovery(slug, '');
     assert.ok(disc, `Missing discovery for ${slug}`);
     const f = adapterMod.toFoodDiscovery(disc);
@@ -431,6 +492,50 @@ test('runtime discovery, foodAdapter, and realProvider expose all 5 Kadikoy regi
       for (const forbidden of ['Aşina', 'Papirüs', 'Sahan', 'Starbucks', 'Espressolab']) {
         assert.equal(names.some((n) => n.includes(forbidden)), false, `Gaziantep must exclude ${forbidden}`);
       }
+    }
+    if (slug === 'antalya-kaleici') {
+      assert.equal(p.getLocationBySlug('antalya-kaleici')?.locative, "Kaleiçi ve Merkez'de");
+      const cats = p.getRegionCategories(disc.region.id);
+      assert.equal(cats.length, 9, 'Antalya Kaleici must expose 9 categories');
+      const names = f.venues.map((v) => v.name);
+      for (const expected of [
+        'Route Burger House',
+        'Piyazcı Ahmet',
+        'Meşhur Aksu Şimşek Köfte Piyaz',
+        'İpek Döner',
+        'Komaş Döner Nazım Usta',
+        'Aksu Pide Salonu',
+        'Ağam Gaziantep Kebap',
+        'Börekçi Tevfik',
+      ]) {
+        assert.ok(names.some((n) => n.includes(expected)), `antalya-kaleici missing ${expected}`);
+      }
+      assert.equal(names.some((n) => n.includes('Arma Restaurant')), false, 'Closed Arma must be excluded');
+    }
+    if (slug === 'antalya-lara') {
+      assert.equal(p.getLocationBySlug('antalya-lara')?.locative, "Lara'da");
+      const cats = p.getRegionCategories(disc.region.id);
+      assert.equal(cats.length, 8, 'Antalya Lara must expose 8 categories');
+      const names = f.venues.map((v) => v.name);
+      for (const expected of [
+        'Schiller Kaffee Güzeloba',
+        'Route Burger House',
+        'B12 Steak & Kasap',
+        'Sultanyar Kebap',
+      ]) {
+        assert.ok(names.some((n) => n.includes(expected)), `antalya-lara missing ${expected}`);
+      }
+      assert.equal(names.some((n) => n.includes('The Sudd')), false, 'Closed Lara Sudd must be excluded');
+    }
+    if (slug === 'antalya-konyaalti') {
+      assert.equal(p.getLocationBySlug('antalya-konyaalti')?.locative, "Konyaaltı'nda");
+      const cats = p.getRegionCategories(disc.region.id);
+      assert.equal(cats.length, 8, 'Antalya Konyaalti must expose 8 categories');
+      const names = f.venues.map((v) => v.name);
+      for (const expected of ['7 Mehmet Restaurant', 'Cafe Pouchkine Antalya', 'Çamlık Pide Kebap']) {
+        assert.ok(names.some((n) => n.includes(expected)), `antalya-konyaalti missing ${expected}`);
+      }
+      assert.equal(names.some((n) => n.includes('Merkez Pide & Kebap')), false, 'Distant Kumluca pide must be excluded');
     }
     const cats = p.getRegionCategories(disc.region.id);
     assert.ok(cats.length >= 5, `${slug} cats=${cats.length}`);

@@ -5,6 +5,9 @@ import caddebostanSnapshotJson from './regions/istanbul-kadikoy-caddebostan.json
 import suadiyeSnapshotJson from './regions/istanbul-kadikoy-suadiye.json';
 import kusadasiSnapshotJson from './regions/aydin-kusadasi.json';
 import gaziantepSnapshotJson from './regions/gaziantep-merkez.json';
+import antalyaKaleiciSnapshotJson from './regions/antalya-kaleici.json';
+import antalyaLaraSnapshotJson from './regions/antalya-lara.json';
+import antalyaKonyaaltiSnapshotJson from './regions/antalya-konyaalti.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -15,6 +18,9 @@ const CADDEBOSTAN_SNAPSHOT = caddebostanSnapshotJson as V3VerifiedRegionSnapshot
 const SUADIYE_SNAPSHOT = suadiyeSnapshotJson as V3VerifiedRegionSnapshot;
 const KUSADASI_SNAPSHOT = kusadasiSnapshotJson as V3VerifiedRegionSnapshot;
 const GAZIANTEP_SNAPSHOT = gaziantepSnapshotJson as V3VerifiedRegionSnapshot;
+const ANTALYA_KALEICI_SNAPSHOT = antalyaKaleiciSnapshotJson as V3VerifiedRegionSnapshot;
+const ANTALYA_LARA_SNAPSHOT = antalyaLaraSnapshotJson as V3VerifiedRegionSnapshot;
+const ANTALYA_KONYAALTI_SNAPSHOT = antalyaKonyaaltiSnapshotJson as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -24,6 +30,9 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   SUADIYE_SNAPSHOT,
   KUSADASI_SNAPSHOT,
   GAZIANTEP_SNAPSHOT,
+  ANTALYA_KALEICI_SNAPSHOT,
+  ANTALYA_LARA_SNAPSHOT,
+  ANTALYA_KONYAALTI_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -49,6 +58,24 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   sahinbey: GAZIANTEP_SNAPSHOT,
   sehitkamil: GAZIANTEP_SNAPSHOT,
   'kalealti-sahinbey-gaziantep': GAZIANTEP_SNAPSHOT,
+  antalya: ANTALYA_KALEICI_SNAPSHOT,
+  'antalya-merkez': ANTALYA_KALEICI_SNAPSHOT,
+  'antalya-kaleici': ANTALYA_KALEICI_SNAPSHOT,
+  kaleici: ANTALYA_KALEICI_SNAPSHOT,
+  muratpasa: ANTALYA_KALEICI_SNAPSHOT,
+  aksu: ANTALYA_KALEICI_SNAPSHOT,
+  'kaleici-muratpasa-antalya': ANTALYA_KALEICI_SNAPSHOT,
+  'antalya-lara': ANTALYA_LARA_SNAPSHOT,
+  lara: ANTALYA_LARA_SNAPSHOT,
+  sirinyali: ANTALYA_LARA_SNAPSHOT,
+  'antalya-sirinyali': ANTALYA_LARA_SNAPSHOT,
+  guzeloba: ANTALYA_LARA_SNAPSHOT,
+  'lara-muratpasa-antalya': ANTALYA_LARA_SNAPSHOT,
+  'antalya-konyaalti': ANTALYA_KONYAALTI_SNAPSHOT,
+  konyaalti: ANTALYA_KONYAALTI_SNAPSHOT,
+  cakirlar: ANTALYA_KONYAALTI_SNAPSHOT,
+  gursu: ANTALYA_KONYAALTI_SNAPSHOT,
+  'konyaalti-antalya': ANTALYA_KONYAALTI_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {
@@ -215,66 +242,6 @@ export const V3_LOCATIONS: FoodLocation[] = [
     status: 'coming_soon',
     aliases: ['Nişantaşı', 'Nisantasi', 'Şişli', 'Teşvikiye'],
     scopeNote: 'İstanbul · Şişli · Nişantaşı (V3 Doğrulama Sırasında)',
-  },
-  {
-    id: 'kaleici-muratpasa-antalya',
-    level: 'semt',
-    city: 'Antalya',
-    district: 'Muratpaşa',
-    neighborhood: 'Kaleiçi',
-    name: 'Kaleiçi',
-    slug: 'antalya-kaleici',
-    path: ['antalya', 'muratpasa', 'kaleici'],
-    displayName: 'Kaleiçi, Muratpaşa, Antalya',
-    locative: "Kaleiçi'nde",
-    status: 'coming_soon',
-    aliases: ['Kaleiçi', 'Kaleici', 'Muratpaşa', 'Antalya'],
-    scopeNote: 'Antalya · Muratpaşa · Kaleiçi (V3 Doğrulama Sırasında)',
-  },
-  {
-    id: 'lara-muratpasa-antalya',
-    level: 'semt',
-    city: 'Antalya',
-    district: 'Muratpaşa',
-    neighborhood: 'Lara',
-    name: 'Lara',
-    slug: 'antalya-lara',
-    path: ['antalya', 'muratpasa', 'lara'],
-    displayName: 'Lara, Muratpaşa, Antalya',
-    locative: "Lara'da",
-    status: 'coming_soon',
-    aliases: ['Lara', 'Muratpaşa', 'Antalya'],
-    scopeNote: 'Antalya · Muratpaşa · Lara (V3 Doğrulama Sırasında)',
-  },
-  {
-    id: 'sirinyali-muratpasa-antalya',
-    level: 'semt',
-    city: 'Antalya',
-    district: 'Muratpaşa',
-    neighborhood: 'Şirinyalı',
-    name: 'Şirinyalı',
-    slug: 'antalya-sirinyali',
-    path: ['antalya', 'muratpasa', 'sirinyali'],
-    displayName: 'Şirinyalı, Muratpaşa, Antalya',
-    locative: "Şirinyalı'nda",
-    status: 'coming_soon',
-    aliases: ['Şirinyalı', 'Sirinyali', 'Muratpaşa', 'Antalya'],
-    scopeNote: 'Antalya · Muratpaşa · Şirinyalı (V3 Doğrulama Sırasında)',
-  },
-  {
-    id: 'gursu-konyaalti-antalya',
-    level: 'semt',
-    city: 'Antalya',
-    district: 'Konyaaltı',
-    neighborhood: 'Gürsu & Sahil',
-    name: 'Gürsu & Sahil',
-    slug: 'antalya-konyaalti',
-    path: ['antalya', 'konyaalti', 'gursu'],
-    displayName: 'Gürsu & Sahil, Konyaaltı, Antalya',
-    locative: "Konyaaltı'nda",
-    status: 'coming_soon',
-    aliases: ['Konyaaltı', 'Konyaalti', 'Gürsu', 'Antalya'],
-    scopeNote: 'Antalya · Konyaaltı · Gürsu & Sahil (V3 Doğrulama Sırasında)',
   },
   {
     id: 'akyaka-ula-mugla',

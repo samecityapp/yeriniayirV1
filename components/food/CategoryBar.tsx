@@ -23,6 +23,8 @@ const CATEGORY_FALLBACK_EMOJIS: Record<string, string> = {
   'antep-mutfagi': '🏛️',
   'deniz-urunleri': '🐟',
   'balik-deniz-urunleri': '🐟',
+  'kofte-piyaz': '🧆',
+  'kebap-pide-doner': '🥙',
 };
 
 interface CategoryBarProps {

@@ -1,10 +1,16 @@
 {
-  "schemaVersion": "3.3",
+  "schemaVersion": "3.4",
   "regionKey": "istanbul-kadikoy-suadiye",
   "displayName": "Suadiye, Kadıköy, İstanbul",
-  "verifiedAt": "2026-11-13T16:37:39.727Z",
-  "selectedCount": 24,
-  "rejectedControls": [],
+  "verifiedAt": "2026-11-13T20:48:55.388Z",
+  "selectedCount": 23,
+  "rejectedControls": [
+    {
+      "id": "sua-house-of-b",
+      "resolvedName": "House of B Suadiye",
+      "reason": "chain_or_franchise"
+    }
+  ],
   "venues": [
     {
       "id": "sua-valerino",
@@ -72,7 +78,7 @@
       "uncertainties": [
         "Akşam geç saatlerde hamur stoğu erken bitebilir."
       ],
-      "selectionScore": 96,
+      "selectionScore": 94,
       "selectedForSnapshot": true
     },
     {
@@ -210,7 +216,7 @@
       "uncertainties": [
         "Sıcak dilim çeşitleri tezgah sirkülasyonuna göre değişir."
       ],
-      "selectionScore": 91,
+      "selectionScore": 89,
       "selectedForSnapshot": true
     },
     {
@@ -279,7 +285,7 @@
       "uncertainties": [
         "Günlük burrata stoğu akşam saatlerinde tükenebilir."
       ],
-      "selectionScore": 90,
+      "selectionScore": 88,
       "selectedForSnapshot": true
     },
     {
@@ -293,7 +299,7 @@
         "lng": 29.0754543
       },
       "rating": 4.7,
-      "userRatingCount": 4797,
+      "userRatingCount": 4804,
       "priceLevel": "PRICE_LEVEL_MODERATE",
       "serviceFlags": {
         "dineIn": true,
@@ -347,7 +353,7 @@
       "uncertainties": [
         "Sadece Suadiye merkez şubesi bu seçkiye dahildir."
       ],
-      "selectionScore": 81,
+      "selectionScore": 89,
       "selectedForSnapshot": true
     },
     {
@@ -415,7 +421,7 @@
       "uncertainties": [
         "Özel sos stokları akşam geç saatlerde azalabiliyor."
       ],
-      "selectionScore": 82,
+      "selectionScore": 83,
       "selectedForSnapshot": true
     },
     {
@@ -483,75 +489,7 @@
       "uncertainties": [
         "Aylık sınırlı üretim sosları değişebilir."
       ],
-      "selectionScore": 85,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "sua-house-of-b",
-      "categoryId": "hamburger",
-      "resolvedName": "House of B Suadiye",
-      "branchName": "Suadiye, Bağdat Cad. 435/A, 34740 Kadıköy/İstanbul, Türkiye",
-      "placeId": "ChIJlfKMKL3HyhQRGzxSxI6_WlA",
-      "coordinates": {
-        "lat": 40.9601626,
-        "lng": 29.082103699999998
-      },
-      "rating": 4.6,
-      "userRatingCount": 7482,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": true,
-        "outdoorSeating": true,
-        "reservable": true
-      },
-      "websiteUri": "http://www.houseofbturkey.com/",
-      "mapsUri": "https://maps.google.com/?cid=5790150890838178843",
-      "recommendedPrimary": [
-        "B-Burger (Signature)",
-        "Blue Cheese & Karamelize Soğan Burger"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Biberiyeli İnce Çıtır Patates & Ev Yapımı Soğuk Limonata",
-          "note": "Kendi özel soslarıyla sunulan imzalı çıtır patates ve şekersiz dengeli limonata.",
-          "proof": "houseofbturkey.com menüsü ve Time Out İstanbul arşivi"
-        }
-      ],
-      "suitability": {
-        "seating": "Geniş oturmalı iç salon ve sokak önü masaları",
-        "crowdAndNoise": "Her yaşa uygun hareketli ama düzenli restoran ortamı",
-        "disadvantage": "Çok bilinen bir merkez olduğu için hafta sonu akşam saatlerinde bekleme listesi oluşabiliyor.",
-        "transit": "Suadiye Ayşe Çavuş ve Bağdat Caddesi arasında yürüme mesafesinde."
-      },
-      "verifiedAt": "2026-11-13",
-      "sources": [
-        {
-          "title": "House of B Resmi Sitesi",
-          "url": "https://houseofbturkey.com/",
-          "date": "2026-11-13",
-          "kind": "operator",
-          "note": "Suadiye şubesi, burger menüsü ve özel soslar"
-        },
-        {
-          "title": "Time Out İstanbul — Anadolu Yakası Burger Klasikleri",
-          "url": "https://www.timeout.com/istanbul",
-          "date": "2026-08-12",
-          "kind": "editorial",
-          "note": "7400+ oyla uzun yıllardır istikrarını koruyan Suadiye kurumu"
-        }
-      ],
-      "pros": [
-        "Yıllardır süren standart (7400+ onay)",
-        "Geniş aile ve grup kapasitesi"
-      ],
-      "cons": [
-        "Hafta sonu sıra bekleme ihtimali"
-      ],
-      "uncertainties": [
-        "Sadece Suadiye lokasyonu bu rehbere dahildir."
-      ],
-      "selectionScore": 73,
+      "selectionScore": 83,
       "selectedForSnapshot": true
     },
     {
@@ -620,7 +558,7 @@
       "uncertainties": [
         "Vitrindeki günlük kek ve sandviç stokları değişebiliyor."
       ],
-      "selectionScore": 85,
+      "selectionScore": 82,
       "selectedForSnapshot": true
     },
     {
@@ -689,7 +627,7 @@
       "uncertainties": [
         "Özel soğuk demlemeler yaz-kış değişebiliyor."
       ],
-      "selectionScore": 96,
+      "selectionScore": 95,
       "selectedForSnapshot": true
     },
     {
@@ -703,7 +641,7 @@
         "lng": 29.0856777
       },
       "rating": 4.8,
-      "userRatingCount": 157,
+      "userRatingCount": 158,
       "priceLevel": "PRICE_LEVEL_MODERATE",
       "serviceFlags": {
         "dineIn": true,
@@ -758,7 +696,7 @@
       "uncertainties": [
         "Misafir tek köken çekirdekler dönemsel güncellenir."
       ],
-      "selectionScore": 91,
+      "selectionScore": 86,
       "selectedForSnapshot": true
     },
     {
@@ -772,7 +710,7 @@
         "lng": 29.074570599999998
       },
       "rating": 4.5,
-      "userRatingCount": 243,
+      "userRatingCount": 245,
       "priceLevel": "PRICE_LEVEL_MODERATE",
       "serviceFlags": {
         "dineIn": true,
@@ -827,7 +765,7 @@
       "uncertainties": [
         "Özel tatlı dolguları mevsime göre değişir."
       ],
-      "selectionScore": 82,
+      "selectionScore": 80,
       "selectedForSnapshot": true
     },
     {
@@ -841,7 +779,7 @@
         "lng": 29.0849381
       },
       "rating": 4.8,
-      "userRatingCount": 1666,
+      "userRatingCount": 1667,
       "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
       "serviceFlags": {
         "dineIn": true,
@@ -897,7 +835,7 @@
       "uncertainties": [
         "Özel mevsim balıkları günlük tedarike bağlıdır."
       ],
-      "selectionScore": 79,
+      "selectionScore": 86,
       "selectedForSnapshot": true
     },
     {
@@ -967,7 +905,7 @@
       "uncertainties": [
         "Bahçe masaları için akşam rezervasyonu önerilir."
       ],
-      "selectionScore": 76,
+      "selectionScore": 84,
       "selectedForSnapshot": true
     },
     {
@@ -1036,7 +974,7 @@
       "uncertainties": [
         "Rezervasyon durumu hafta içi ve hafta sonu değişebiliyor."
       ],
-      "selectionScore": 72,
+      "selectionScore": 76,
       "selectedForSnapshot": true
     },
     {
@@ -1050,7 +988,7 @@
         "lng": 29.084958900000004
       },
       "rating": 4.7,
-      "userRatingCount": 11397,
+      "userRatingCount": 11406,
       "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
       "serviceFlags": {
         "dineIn": true,
@@ -1105,7 +1043,7 @@
       "uncertainties": [
         "Sadece Bağdat Caddesi Suadiye lokasyonu listelenmiştir."
       ],
-      "selectionScore": 76,
+      "selectionScore": 84,
       "selectedForSnapshot": true
     },
     {
@@ -1174,7 +1112,7 @@
       "uncertainties": [
         "Sadece Suadiye şubesi bu rehbere dahildir."
       ],
-      "selectionScore": 87,
+      "selectionScore": 85,
       "selectedForSnapshot": true
     },
     {
@@ -1242,7 +1180,7 @@
       "uncertainties": [
         "Vitrindeki hamur işi çeşitleri mevsime göre güncellenir."
       ],
-      "selectionScore": 93,
+      "selectionScore": 90,
       "selectedForSnapshot": true
     },
     {
@@ -1310,7 +1248,7 @@
       "uncertainties": [
         "Özel hafta sonu tabakları dönemsel güncellenir."
       ],
-      "selectionScore": 82,
+      "selectionScore": 81,
       "selectedForSnapshot": true
     },
     {
@@ -1378,7 +1316,7 @@
       "uncertainties": [
         "Sadece Suadiye şubesi bu seçkide yer alır."
       ],
-      "selectionScore": 72,
+      "selectionScore": 76,
       "selectedForSnapshot": true
     },
     {
@@ -1518,7 +1456,7 @@
       "uncertainties": [
         "Bazı mevsimlik aromalar sadece yaz aylarında vitrine çıkar."
       ],
-      "selectionScore": 93,
+      "selectionScore": 90,
       "selectedForSnapshot": true
     },
     {
@@ -1587,7 +1525,7 @@
       "uncertainties": [
         "Sadece Suadiye şubesi bu rehbere dahildir."
       ],
-      "selectionScore": 82,
+      "selectionScore": 83,
       "selectedForSnapshot": true
     },
     {
