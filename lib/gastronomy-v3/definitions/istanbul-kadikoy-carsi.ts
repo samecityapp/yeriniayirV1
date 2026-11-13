@@ -3,33 +3,34 @@ import type { V3RegionDefinition } from '../types';
 
 export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
   id: 'carsi-osmanaga-kadikoy',
-  slug: 'kadikoy-carsi',
+  slug: 'kadikoy',
   city: 'İstanbul',
   district: 'Kadıköy',
-  neighborhood: 'Kadıköy Çarşı',
-  officialQuarter: 'Osmanağa & Tarihi Çarşı',
-  displayName: 'Kadıköy Çarşı, Kadıköy, İstanbul',
-  locative: "Kadıköy Çarşı'da",
-  path: ['istanbul', 'kadikoy', 'carsi'],
-  aliases: ['Kadıköy Çarşı', 'Osmanağa', 'Osmanaga', 'Tarihi Çarşı', 'Bahariye', 'Kadıköy'],
-  scopeNote: 'Tarihi Çarşı & Osmanağa · Doğrulanmış Yerel Seçki',
+  neighborhood: 'Kadıköy',
+  officialQuarter: 'Osmanağa, Bahariye, Tarihi Çarşı & Yoğurtçu',
+  displayName: 'Kadıköy, İstanbul',
+  locative: "Kadıköy'de",
+  path: ['istanbul', 'kadikoy'],
+  aliases: ['Kadıköy', 'Kadikoy', 'Osmanağa', 'Osmanaga', 'Bahariye', 'Tarihi Çarşı', 'Yoğurtçu', 'Altıyol'],
+  scopeNote: 'Bahariye, Osmanağa, Tarihi Çarşı & Yoğurtçu · Doğrulanmış Yerel Seçki',
   characterSubtitle:
-    'Asırlık çarşı klasikleri, odun fırını pizzacılar, ara sokak kahve bahçeleri ve akşam sofraları',
+    'Tarihi çarşı klasiklerinden Bahariye ara sokaklarına, Osmanağa ve Yoğurtçu Parkı hattına uzanan seçkin duraklar',
   center: { lat: 40.9898, lng: 29.0268 },
   bbox: { minLat: 40.984, maxLat: 40.9935, minLng: 29.0225, maxLng: 29.0345 },
   excludeBbox: { minLat: 40.977, maxLat: 40.988, minLng: 29.02, maxLng: 29.0295 },
   allowedNeighborhoodTokens: ['Osmanağa', 'Caferağa'],
   categories: buildRegionCategories(),
   candidates: [
-    // --- PİZZA (Osmanağa & Caferağa Kuzey — 4 mekan) ---
+    // --- PİZZA (Bahariye · Osmanağa · Yoğurtçu — 4 mekan) ---
     {
       id: 'carsi-il-pellicano',
       placeId: 'ChIJf4xTk2O4yhQRT1INy_MQg-8',
       categoryId: 'pizza',
       expectedBrandWord: 'pellicano',
+      neighborhoodLabelOverride: 'Bahariye · Osmanağa, Kadıköy',
       localSignals: ['italyan-sef', 'napoli-hamuru', 'carsi-klasigi'],
       description:
-        'İtalyan şef dokunuşuyla taş fırından taze burrata, mozzarella ve geleneksel Napoli soslu pizzalar çıkaran çarşı klasiği.',
+        'İtalyan şef dokunuşuyla taş fırından taze burrata, mozzarella ve geleneksel Napoli soslu pizzalar çıkaran köklü Kadıköy pizzacısı.',
       whatToOrder: ['Burrata & Roka Pizza', 'Margherita Verace', 'Diavola'],
       menuFrom: ['Marinara', 'Prosciutto Cotto', 'Parma Jambonlu'],
       alsoTry: [],
@@ -44,7 +45,7 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
         seating: 'İç salon, dar dış sokak masaları ve gel-al imkanı',
         crowdAndNoise: 'Akşamları neşeli İtalyan trattoria uğultusu',
         disadvantage: 'Küçük salon akşamları çok hızlı dolduğu için kapıda sıra beklenebiliyor.',
-        transit: 'Kadıköy Çarşı içinde Bahariye-Altıyol aksının hemen altında.',
+        transit: 'Bahariye-Altıyol aksının hemen altındaki Kalfaoğlu Sokak üzerinde.',
       },
       beforeYouGo: [],
       dossier: {
@@ -75,6 +76,7 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       placeId: 'ChIJocjBsIi5yhQRb-VtoI2vkSg',
       categoryId: 'pizza',
       expectedBrandWord: 'dieci',
+      neighborhoodLabelOverride: 'Yoğurtçu Parkı, Kadıköy',
       localSignals: ['eksi-maya-napoli', 'yogurtcu-parki', 'odun-firini'],
       description:
         'Osmanağa Yoğurtçu Parkı hattında kabarık kenarlı ekşi maya Napoli pizzaları ve seçkin başlangıçlarıyla dikkat çeken restoran.',
@@ -123,6 +125,7 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       placeId: 'ChIJVatNg9i5yhQRHdOLhvDvZp4',
       categoryId: 'pizza',
       expectedBrandWord: 'cotti cotti',
+      neighborhoodLabelOverride: 'Altıyol · Osmanağa, Kadıköy',
       localSignals: ['fermente-hamur', 'tas-firin', 'mahalle-pizzacisi'],
       description:
         'Osmanağa aksında hafif ve kabarık kenarlı fermente hamurla klasik ve yaratıcı İtalyan pizzaları çıkaran butik pizzacı.',
@@ -171,6 +174,7 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       placeId: 'ChIJCVOKt2G5yhQRR-ooW_uxI_I',
       categoryId: 'pizza',
       expectedBrandWord: 'pizz italia',
+      neighborhoodLabelOverride: 'Osmanağa, Kadıköy',
       localSignals: ['citir-taban', 'italyan-sos', 'sokak-pizzacisi'],
       description:
         'Osmanağa’da çıtır tabanlı dengeli soslu pizzaları ve taze malzemeleriyle yerel halkın sık uğradığı samimi pizzacı.',
@@ -221,6 +225,7 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       placeId: 'ChIJdbn155a5yhQR98a8fTWW2lM',
       categoryId: 'hamburger',
       expectedBrandWord: 'musqa',
+      neighborhoodLabelOverride: 'Bahariye · Serasker, Kadıköy',
       localSignals: ['smash-burger', 'ozel-ekmek', 'osmanaga-cevheri'],
       description:
         'Osmanağa’da el yapımı patates ekmeği ve yüksek ısılı ızgarada mühürlenen sulu köfteleriyle bilinen butik burger dükkanı.',
@@ -269,9 +274,10 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       placeId: 'ChIJ4RaAAQC5yhQRYF4-hQbPbNI',
       categoryId: 'hamburger',
       expectedBrandWord: 'neva',
+      neighborhoodLabelOverride: 'Osmanağa, Kadıköy',
       localSignals: ['butik-burger', 'taze-kofte', 'mahalle-kesfi'],
       description:
-        'Günlük çekilmiş dana köftesi ve sade reçetesiyle Çarşı-Osmanağa bölgesinde yüksek memnuniyet yakalayan bağımsız burger noktası.',
+        'Günlük çekilmiş dana köftesi ve sade reçetesiyle Altıyol-Osmanağa ara sokaklarında yüksek memnuniyet yakalayan bağımsız burger noktası.',
       whatToOrder: ['Neva Klasik Burger', 'Füme Kaburga & Cheddar Burger'],
       menuFrom: ['Double Smash', 'Barbekü Burger'],
       alsoTry: [],
@@ -317,9 +323,10 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       placeId: 'ChIJm9zVJna5yhQRLU66IOwhxTo',
       categoryId: 'hamburger',
       expectedBrandWord: 'atm burger',
+      neighborhoodLabelOverride: 'Bahariye · Nailbey, Kadıköy',
       localSignals: ['smash-burger', 'nailbey-sokak', 'karamelize-ekmek'],
       description:
-        'Nailbey Sokak üzerinde tereyağlı tost ekmeği ve yüksek ısılı ızgara smash burgerleriyle gece geç saatlere kadar sevilen çarşı durağı.',
+        'Nailbey Sokak üzerinde tereyağlı tost ekmeği ve yüksek ısılı ızgara smash burgerleriyle gece geç saatlere kadar sevilen Kadıköy durağı.',
       whatToOrder: ['ATM Smash Cheeseburger', 'Double Oklahoma Onion Burger'],
       menuFrom: ['Crispy Chicken Burger', 'Sriracha Mayo Burger'],
       alsoTry: [],
@@ -332,9 +339,9 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       ],
       suitability: {
         seating: 'Dar dükkan önü ve yüksek bar masaları, hızlı al-götür ağırlıklı',
-        crowdAndNoise: 'Çarşı gecelerinde sokak enerjisi yüksek canlı atmosfer',
+        crowdAndNoise: 'Sokak masalarında akşamları hareketli ve yüksek tempolu atmosfer',
         disadvantage: 'Oturma alanı kısıtlı olduğundan genellikle sokak masalarında veya ayakta tüketiliyor.',
-        transit: 'Kadıköy Çarşı Nailbey Sokak içinde rıhtıma birkaç dakikalık yürüyüş.',
+        transit: 'Bahariye ile Muvakkıthane arasındaki Nailbey Sokak içinde rıhtıma birkaç dakikalık yürüyüş.',
       },
       beforeYouGo: [],
       dossier: {
@@ -367,6 +374,7 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       placeId: 'ChIJgZpYc2a4yhQR3fgwGJH-ouo',
       categoryId: 'kahve',
       expectedBrandWord: 'malavita',
+      neighborhoodLabelOverride: 'Bahariye, Kadıköy',
       localSignals: ['ucuncu-dalga', 'sanatci-sokagi', 'butik-kahveci'],
       description:
         'Bahariye ara sokaklarında nitelikli espresso reçeteleri ve sakin avlu havasıyla yıllardır değişmeyen mahalle kahvecisi.',
@@ -415,6 +423,7 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       placeId: 'ChIJG18tu2-5yhQRcP6TAIV7xco',
       categoryId: 'kahve',
       expectedBrandWord: 'archa',
+      neighborhoodLabelOverride: 'Altıyol · Osmanağa, Kadıköy',
       localSignals: ['gizli-bahce', 'artisan-bakery', 'kahve-ve-ekmek'],
       description:
         'Osmanağa içinde kendi ekşi maya fırınıyla arkadaki gizli bahçesini birleştiren, hamur işi gücü yüksek kahve durağı.',
@@ -463,6 +472,7 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       placeId: 'ChIJKUABnUq5yhQRb1lm_K07A6M',
       categoryId: 'kahve',
       expectedBrandWord: 'gua',
+      neighborhoodLabelOverride: 'Halitağa · Osmanağa, Kadıköy',
       localSignals: ['nitelikli-kahve', 'sakin-calisma', 'modern-kafe'],
       description:
         'Bahariye-Osmanağa sınırında düzenli kavrum seçkisi ve ferah masa düzeniyle mahallelinin sakin kahve durağı.',
@@ -511,9 +521,10 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       placeId: 'ChIJp6XDyGi4yhQRRp1j3bCeli4',
       categoryId: 'kahve',
       expectedBrandWord: 'unique',
+      neighborhoodLabelOverride: 'Osmanağa, Kadıköy',
       localSignals: ['arka-sokak', 'sakin-bahce', 'mudavim-duragi'],
       description:
-        'Çarşının kalabalık caddelerinden birkaç adım içeride sakin bahçesiyle soluklanma imkanı sunan köklü üçüncü dalga kahveci.',
+        'Bahariye ve Serasker Caddesi kalabalığından birkaç adım içeride sakin bahçesiyle soluklanma imkanı sunan köklü üçüncü dalga kahveci.',
       whatToOrder: ['Flat White', 'Filtre Kahve', 'Iced Americano'],
       menuFrom: ['Espresso', 'Latte', 'Matcha'],
       alsoTry: [],
@@ -549,18 +560,76 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
             note: 'Çarşı içinde soluklanmak için güvenilir adres',
           },
         ],
-        pros: ['Kalabalık çarşıya rağmen sakin soluklanma noktası', 'Oturmuş müdavim kültürü'],
+        pros: ['Kalabalığa rağmen sakin soluklanma noktası', 'Oturmuş müdavim kültürü'],
         cons: ['Dekorasyonu sade, lüks konsept beklentisine uygun değil'],
         uncertainties: ['Hafta sonu bahçe masası için erken saat tercih edilmeli.'],
       },
     },
+    {
+      id: 'carsi-fazil-bey',
+      placeId: 'ChIJKzgu22e4yhQRVxWicf0uBSU',
+      categoryId: 'kahve',
+      expectedBrandWord: 'fazil bey',
+      iconicSettingOrVibeProtected: true,
+      neighborhoodLabelOverride: 'Tarihi Çarşı, Kadıköy',
+      localSignals: ['1923-tarihi-kahveci', 'tas-degirmen', 'damla-sakizli'],
+      description:
+        '1923’ten bu yana Tarihi Kadıköy Çarşısı’nı taze kavrulmuş kahve kokusuyla saran, taş değirmende çekilmiş geleneksel ve damla sakızlı Türk kahvesi kurumu.',
+      whatToOrder: ['Damla Sakızlı Türk Kahvesi', 'Geleneksel Bol Köpüklü Türk Kahvesi', 'Kakuleli Türk Kahvesi'],
+      menuFrom: ['Taze Çekilmiş Paket Türk Kahvesi', 'Sade veya Orta Kavrum Seçenekleri'],
+      alsoTry: [],
+      secondaryItems: [
+        {
+          name: 'Çifte Kavrulmuş Lokum Eşlikçisi & Taze Çekilmiş Ev Kahvesi Paketi',
+          note: 'Kahve fincanının yanında gelen geleneksel lokum ikramı ve tezgah önünden eve alınan sıcak çekim paketler.',
+          proof: 'fazilbey.com ürün seçkisi ve İstanbul tarihi kahveciler arşivi',
+        },
+      ],
+      suitability: {
+        seating: 'Çarşı sokağına dizili nostaljik dış masalar, iç salon ve taze kahve al-götür tezgahı',
+        crowdAndNoise: 'Gün boyu çarşı uğultusu ve kavrulmuş kahve kokusuyla canlı tarihi sokak atmosferi',
+        disadvantage: 'Hafta sonu öğleden sonraları sokak masaları tamamen dolduğu için sıra beklemek gerekebiliyor.',
+        transit: 'Tarihi Çarşı Serasker Caddesi girişinde Kadıköy İskele’den birkaç dakikalık yürüyüş mesafesinde.',
+      },
+      beforeYouGo: [],
+      dossier: {
+        verifiedAt: '2026-11-13',
+        sources: [
+          {
+            title: 'Fazıl Bey’in Türk Kahvesi Resmi Sitesi',
+            url: 'https://www.fazilbey.com/',
+            date: '2026-11-13',
+            kind: 'operator',
+            note: '1923’ten bu yana tarihi Kadıköy şubesi ve taş değirmen kavrumu',
+          },
+          {
+            title: 'İstanbul Yüz Yıllık Markalar Derneği Arşivi',
+            url: 'https://yuzyillikmarkalar.org/',
+            date: '2026-06-15',
+            kind: 'award',
+            note: 'Tarihi Kadıköy Çarşısı’nın asırlık Türk kahvesi kurumu',
+          },
+          {
+            title: 'Ekşi Sözlük — Fazıl Bey’in Türk Kahvesi',
+            url: 'https://eksisozluk.com/',
+            date: '2026-09-18',
+            kind: 'community',
+            note: 'Damla sakızlı kahvesi ve sokaktaki kavrum kokusuyla klasik buluşma noktası',
+          },
+        ],
+        pros: ['1923’ten beri aynı çarşıda yaşayan kahve mirası', 'Damla sakızlı ve kakuleli özel kavrumlar'],
+        cons: ['Yoğun sirkülasyon nedeniyle masalar hızlı doluyor ve kalabalık saatlerde sıra oluşuyor'],
+        uncertainties: ['Sadece Tarihi Çarşı Serasker Caddesi ana dükkanı bu rehberdedir.'],
+      },
+    },
 
-    // --- DATE MEKANLARI (Osmanağa & Çarşı — 4 şarap evi, bistro ve modern meyhane) ---
+    // --- DATE MEKANLARI (Tarihi Çarşı, Bahariye & Osmanağa — 4 şarap evi, bistro ve modern meyhane) ---
     {
       id: 'carsi-ala-meyhane',
       placeId: 'ChIJQfS802e4yhQR_noYRaE-Y94',
       categoryId: 'date',
       expectedBrandWord: 'ala',
+      neighborhoodLabelOverride: 'Tarihi Çarşı, Kadıköy',
       localSignals: ['modern-meyhane', 'meze-sanati', 'carsi-aksami'],
       description:
         'Tarihi Kadıköy Çarşısı içinde yaratıcı meze tabakları ve sakin aydınlatmasıyla akşam buluşmalarına uygun modern meyhane.',
@@ -609,9 +678,10 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       placeId: 'ChIJGcSvGma4yhQRW3_U3ovY5Pw',
       categoryId: 'date',
       expectedBrandWord: 'oda',
+      neighborhoodLabelOverride: 'Bahariye · Osmanağa, Kadıköy',
       localSignals: ['samimi-bistro', 'sarap-ve-yemek', 'gizli-adres'],
       description:
-        'Ev konforunu şık akşam yemeği servisiyle birleştiren, sınırlı masalı ve sıcak mutfaklı Kadıköy Çarşı gizli bistrolarından.',
+        'Ev konforunu şık akşam yemeği servisiyle birleştiren, sınırlı masalı ve sıcak mutfaklı Bahariye-Osmanağa gizli bistrolarından.',
       whatToOrder: ['Bonfile veya Somon Izgara', 'El Yapımı Makarna', 'Zeytinyağlı Başlangıçlar'],
       menuFrom: ['Mevsim Salata', 'Şarap Eşleşmeleri'],
       alsoTry: [],
@@ -626,7 +696,7 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
         seating: 'Az masalı oturmalı samimi salon ve rezervasyon imkanı',
         crowdAndNoise: 'Gürültüden uzak, baş başa sohbet etmeye uygun sakin atmosfer',
         disadvantage: 'Masa sayısı çok az olduğu için son dakika yer bulmak güç.',
-        transit: 'Bahariye ve Çarşı geçişindeki ara sokakta yürüyerek erişilebilir.',
+        transit: 'Bahariye ve Osmanağa geçişindeki Osmancık Sokak üzerinde yürüyerek erişilebilir.',
       },
       beforeYouGo: [],
       dossier: {
@@ -657,6 +727,7 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       placeId: 'ChIJwRwx42a4yhQR8nbkPOlaeG0',
       categoryId: 'date',
       expectedBrandWord: 'bordo',
+      neighborhoodLabelOverride: 'Osmanağa, Kadıköy',
       localSignals: ['butik-sarap-evi', 'peynir-tabagi', 'uygun-sarap'],
       description:
         'Osmanağa’da kadeh ve şişe seçenekleriyle yerli şarapları sıcak paylaşımlı tabaklarla sunan mütevazı ama samimi şarap evi.',
@@ -705,6 +776,7 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       placeId: 'ChIJLyFAWAm5yhQRFjCQR5ZMDxs',
       categoryId: 'date',
       expectedBrandWord: 'porta rossa',
+      neighborhoodLabelOverride: 'Bahariye, Kadıköy',
       localSignals: ['sarap-ve-tapas', 'bahariye-bulusmasi', 'sicak-dekorasyon'],
       description:
         'Bahariye ara sokaklarında taş duvar dokusu, geniş şarap kavı ve Akdeniz mutfağından tabaklarla öne çıkan buluşma noktası.',
@@ -756,6 +828,7 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       categoryId: 'kahvalti',
       expectedBrandWord: 'brekkie',
       communityInsiderProtected: true,
+      neighborhoodLabelOverride: 'Yoğurtçu Parkı, Kadıköy',
       localSignals: ['kruvasan-kahvalti', 'yillarin-klasiği', 'bahariye-mudavimi'],
       description:
         'Kadıköy’de kruvasanlı kahvaltı tabağı akımını başlatan, tereyağlı sıcak kruvasanları ve yumurtalı soslu seçenekleriyle ikonik sabah durağı.',
@@ -773,7 +846,7 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
         seating: 'Geniş iç salon ve sokak önü masaları; hafta sonu yüksek sirkülasyon',
         crowdAndNoise: 'Sabahları sürekli canlı, hafta sonları kapıda bekleme sırası olağan',
         disadvantage: 'Hafta sonu sabahları çok yoğun ve kapıda bekleme sırası oluşuyor.',
-        transit: 'Osmanağa Yoğurtçu Parkı başlangıcında Kadıköy Merkez’den yürünerek erişilir.',
+        transit: 'Yoğurtçu Parkı Caddesi üzerinde Kadıköy Merkez ve Bahariye’den yürüyerek erişilir.',
       },
       beforeYouGo: [],
       dossier: {
@@ -804,6 +877,7 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       placeId: 'ChIJo14we3W5yhQRIY5EZ-6H4nc',
       categoryId: 'kahvalti',
       expectedBrandWord: 'lil bake',
+      neighborhoodLabelOverride: 'Hasırcıbaşı · Osmanağa, Kadıköy',
       localSignals: ['eksi-maya-brioche', 'kahvalti-tostu', 'gizli-bahce'],
       description:
         'Ev yapımı ekşi maya ve yumuşak brioche ekmekleriyle dolu dolu sandviçler ve sabah kaseleri hazırlayan sıcak köşe fırını.',
@@ -852,6 +926,7 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       placeId: 'ChIJG3A7ZNa5yhQRd00wF0kzMrI',
       categoryId: 'kahvalti',
       expectedBrandWord: 'pikta',
+      neighborhoodLabelOverride: 'Hasırcıbaşı · Osmanağa, Kadıköy',
       localSignals: ['zengin-firin', 'mahalle-kahvaltisi', 'sicak-ekmek'],
       description:
         'Günlük taş tabanlı fırından çıkan ekşi maya ekmekler ve doyurucu kahvaltı tabaklarıyla Osmanağa’nın güvenilir sabah mekanı.',
@@ -900,9 +975,10 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       placeId: 'ChIJx4Ds0k-5yhQRVcI16m2AA_c',
       categoryId: 'kahvalti',
       expectedBrandWord: 'morn',
+      neighborhoodLabelOverride: 'Yoğurtçu Parkı, Kadıköy',
       localSignals: ['modern-brunch', 'bagel-ve-yumurta', 'ferah-mekan'],
       description:
-        'Ev yapımı bagel ve ekşi maya bazlı modern brunch tabaklarını dengeli kahve menüsüyle buluşturan popüler Osmanağa kahvaltıcısı.',
+        'Yoğurtçu Parkı hattında ev yapımı bagel ve ekşi maya bazlı modern brunch tabaklarını dengeli kahve menüsüyle buluşturan popüler kahvaltıcı.',
       whatToOrder: ['Somonlu veya Baconlı Bagel', 'Brioche Ekmekte Çırpılmış Yumurta'],
       menuFrom: ['Shakshuka', 'Yulaf Kasesi', 'Pancake'],
       alsoTry: [],
@@ -917,7 +993,7 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
         seating: 'Ferah oturmalı iç salon ve dış masalar',
         crowdAndNoise: 'Genç ve dinamik brunch atmosferi, orta düzey gürültü',
         disadvantage: 'Hafta sonu brunch saatlerinde masa bekleme listesi oluşabiliyor.',
-        transit: 'Bahariye Caddesi paralelindeki sokakta, tramvaya çok yakın.',
+        transit: 'Yoğurtçu Parkı Caddesi üzerinde, sahil ve Bahariye aksına yürüyüş mesafesinde.',
       },
       beforeYouGo: [],
       dossier: {
@@ -951,6 +1027,7 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       categoryId: 'denemelisin',
       expectedBrandWord: 'cafer erol',
       chefOrHeritageProtected: true,
+      neighborhoodLabelOverride: 'Tarihi Çarşı, Kadıköy',
       localSignals: ['asirlik-sekerci', 'tarihi-miras', 'carsi-ikonu'],
       description:
         'Kökleri iki yüz yıla dayanan tarihi çarşı markası olarak renkli akide şekerleri, badem ezmeleri ve lokumlarıyla İstanbul geleneğinin canlı müzesi.',
@@ -1007,6 +1084,7 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       categoryId: 'denemelisin',
       expectedBrandWord: 'tatar salim',
       chefOrHeritageProtected: true,
+      neighborhoodLabelOverride: 'Tarihi Çarşı, Kadıköy',
       localSignals: ['yaprak-doner', 'ustalik-doneri', 'kadikoy-imzasi'],
       description:
         'Geleneksel marinasyon ve ince yaprak kesimiyle İstanbul’un önde gelen esnaf dönercilerinden biri.',
@@ -1063,6 +1141,7 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       categoryId: 'denemelisin',
       expectedBrandWord: 'baylan',
       chefOrHeritageProtected: true,
+      neighborhoodLabelOverride: 'Tarihi Çarşı, Kadıköy',
       localSignals: ['kup-griye', 'tarihi-pastane', 'istanbul-klasiği'],
       description:
         'Asırlık pastane kültürünü Kadıköy Çarşısı’nda yaşatan, İstanbul tatlı hafızasının simgesi Kup Griye’nin yaratıcısı.',
@@ -1119,6 +1198,7 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       categoryId: 'denemelisin',
       expectedBrandWord: 'ekspres inegol',
       chefOrHeritageProtected: true,
+      neighborhoodLabelOverride: 'Tarihi Çarşı, Kadıköy',
       localSignals: ['tarihi-kofteci', 'piyaz', 'esnaf-klasiği'],
       description:
         'Tarihi Kadıköy Çarşısı içinde onlarca yıldır aynı ızgara ustalığıyla İnegöl köftesi ve tahinli piyaz sunan esnaf kurumu.',
@@ -1175,6 +1255,7 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       categoryId: 'denemelisin',
       expectedBrandWord: 'ciya',
       chefOrHeritageProtected: true,
+      neighborhoodLabelOverride: 'Tarihi Çarşı, Kadıköy',
       localSignals: ['musa-dagdeviren', 'anadolu-mutfak-muzesi', 'guneslibahce-kurumu'],
       description:
         'Şef Musa Dağdeviren’in Güneşlibahçe Sokak’ta unutulmaya yüz tutmuş Anadolu ve Mezopotamya yöresel tencere yemeklerini, ekşili kebaplarını ve ot kavurmalarını yaşattığı mutfak kurumu.',
@@ -1231,6 +1312,7 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       categoryId: 'denemelisin',
       expectedBrandWord: 'yanyali fehmi',
       chefOrHeritageProtected: true,
+      neighborhoodLabelOverride: 'Tarihi Çarşı, Kadıköy',
       localSignals: ['1919-tarihi-esnaf', 'yanya-koftesi', 'carsi-mirasi'],
       description:
         '1919’dan bu yana Kadıköy Çarşı’nın kalbinde patlıcan dilimlerine sarılı meşhur Yanya köftesi, elbasan tava ve klasik Rumeli-Osmanlı tencere yemekleri sunan asırlık esnaf lokantası.',
@@ -1287,6 +1369,7 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       categoryId: 'denemelisin',
       expectedBrandWord: 'halil lahmacun',
       chefOrHeritageProtected: true,
+      neighborhoodLabelOverride: 'Tarihi Çarşı, Kadıköy',
       localSignals: ['tas-firin-lahmacun', 'carsi-klasigi', 'citir-hamur'],
       description:
         'Güneşlibahçe Sokak’ta incecik çıtır hamuru, zırh dokulu dengeli iç harcı ve taş fırından çıktığı gibi sıcak servis edilen lahmacunuyla Kadıköy Çarşı’nın yarım asırlık klasiği.',
@@ -1335,6 +1418,63 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
         pros: ['Taş fırından ince ve çıtır hamur dengesi', 'Hızlı ve erişilebilir çarşı öğünü'],
         cons: ['Dar esnaf dükkanı nedeniyle kalabalık saatlerde sıra olabiliyor'],
         uncertainties: ['Sadece klasik çeşitlere odaklı dar menü sunulmaktadır.'],
+      },
+    },
+    {
+      id: 'carsi-ozcan-tursu',
+      placeId: 'ChIJZcIndGe4yhQRgkLoH9C8ktw',
+      categoryId: 'denemelisin',
+      expectedBrandWord: 'ozcan tursu',
+      chefOrHeritageProtected: true,
+      neighborhoodLabelOverride: 'Tarihi Çarşı, Kadıköy',
+      localSignals: ['1935-tarihi-tursu', 'guneslibahce-klasigi', 'bardakta-tursu-suyu'],
+      description:
+        '1935’ten beri Güneşlibahçe Sokak’ta geleneksel kurulum lahana, salatalık ve onlarca çeşit mevsim turşusunu bardakta soğuk turşu suyuyla sunan tarihi çarşı esnafı.',
+      whatToOrder: ['Bardakta Karışık Turşu & Turşu Suyu', 'Kütür Lahana Turşusu', 'Çubuk Salatalık Turşusu'],
+      menuFrom: ['Kavanoz Ev Turşuları', 'Acılı veya Klasik Turşu Suyu', 'Kelek & Bamya Turşusu'],
+      alsoTry: [],
+      secondaryItems: [
+        {
+          name: 'Erik, Çağla ve Bamya Gibi Özel Mevsim Turşuları',
+          note: 'Klasik lahana-salatalık dışında eve kavanozla alınan nadir geleneksel kurulum çeşitleri.',
+          proof: 'ozcantursu.com.tr ürün listesi ve Kadıköy tarihi esnaf rehberleri',
+        },
+      ],
+      suitability: {
+        seating: 'Tarihi tezgah önünde ayakta bardak servisi ve eve kavanoz al-götür düzeni',
+        crowdAndNoise: 'Çarşı yürüyüşü ortasında hızlı uğranan neşeli ve hareketli esnaf durağı',
+        disadvantage: 'Oturma düzeni bulunmuyor; ayaküstü tüketim ve paket alışveriş odaklı çalışıyor.',
+        transit: 'Tarihi Çarşı Güneşlibahçe Sokak üzerinde Balık Pazarı ve İskele aksında.',
+      },
+      beforeYouGo: [],
+      dossier: {
+        verifiedAt: '2026-11-13',
+        sources: [
+          {
+            title: 'Meşhur Özcan Turşu Resmi Sitesi',
+            url: 'https://www.ozcantursu.com.tr/',
+            date: '2026-11-13',
+            kind: 'operator',
+            note: '1935 kuruluşlu geleneksel turşu çeşitleri ve Güneşlibahçe Sokak dükkanı',
+          },
+          {
+            title: 'Harbiyiyorum — Tarihi Kadıköy Çarşısı Lezzetleri',
+            url: 'https://harbiyiyorum.com/',
+            date: '2026-08-25',
+            kind: 'editorial',
+            note: 'Çarşı yürüyüşünde ferahlatıcı turşu suyu ve lahana turşusu durağı',
+          },
+          {
+            title: 'Ekşi Sözlük — Özcan Turşucu Kadıköy',
+            url: 'https://eksisozluk.com/',
+            date: '2026-09-20',
+            kind: 'community',
+            note: 'Kavanoz mevsim turşuları ve acılı suyuyla kuşaklar arası çarşı klasiği',
+          },
+        ],
+        pros: ['1935’ten süregelen geleneksel kurulum turşu çeşitliliği', 'Bardakta hızlı çarşı molası ve kavanoz eve alışveriş'],
+        cons: ['Oturma alanı bulunmuyor', 'Fiyat bilgisi Google API üzerinde yer almıyor'],
+        uncertainties: ['Çağla ve erik gibi özel turşular yalnızca mevsime göre vitrinde bulunur.'],
       },
     },
   ],

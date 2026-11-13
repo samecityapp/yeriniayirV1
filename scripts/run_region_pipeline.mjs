@@ -431,9 +431,17 @@ async function main() {
     const dPath = path.join(dossiersDir, `${key}.dossier.json`);
     if (!fs.existsSync(dPath)) continue;
     const dData = JSON.parse(fs.readFileSync(dPath, 'utf8'));
+    const isV34 = String(dData.schemaVersion || '') === '3.4';
     for (const v of dData.venues || []) {
       if (v.placeId && typeof v.selectionScore === 'number') {
-        scoreByPlaceId.set(v.placeId, v.selectionScore);
+        if (isV34 || typeof v.rating !== 'number' || typeof v.userRatingCount !== 'number') {
+          scoreByPlaceId.set(v.placeId, v.selectionScore);
+        } else {
+          const bayesianRating = (v.userRatingCount * v.rating + 80 * 4.4) / (v.userRatingCount + 80);
+          const adjBase = Math.min(36, Math.max(0, (bayesianRating - 3.6) * 30));
+          const oldBase = Math.min(36, Math.max(0, (v.rating - 3.6) * 30));
+          scoreByPlaceId.set(v.placeId, Math.round(v.selectionScore - oldBase + adjBase));
+        }
       }
     }
   }

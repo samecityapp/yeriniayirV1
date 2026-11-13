@@ -23,6 +23,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
   moda: MODA_SNAPSHOT,
   'moda-kadikoy': MODA_SNAPSHOT,
+  kadikoy: CARSI_SNAPSHOT,
+  'kadikoy-merkez': CARSI_SNAPSHOT,
   'kadikoy-carsi': CARSI_SNAPSHOT,
   'carsi-osmanaga-kadikoy': CARSI_SNAPSHOT,
   yeldegirmeni: YELDEGIRMENI_SNAPSHOT,

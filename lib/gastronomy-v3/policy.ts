@@ -706,9 +706,15 @@ export function computeRegionNearbyVenues(
     for (const v of peer.venues) {
       if (targetPlaceIds.has(v.placeId) || seenPoolPlaceIds.has(v.placeId)) continue;
       seenPoolPlaceIds.add(v.placeId);
+      const sameRegionAndDistrict =
+        normalizeTr(peer.region.neighborhood) === normalizeTr(peer.region.district);
       const areaLabel =
-        v.neighborhood && normalizeTr(v.neighborhood) !== normalizeTr(peer.region.neighborhood)
+        v.neighborhood && v.neighborhood.includes(',')
+          ? v.neighborhood
+          : v.neighborhood && normalizeTr(v.neighborhood) !== normalizeTr(peer.region.neighborhood)
           ? `${peer.region.neighborhood} (${v.neighborhood})`
+          : sameRegionAndDistrict
+          ? `${peer.region.neighborhood}, ${peer.region.city}`
           : `${peer.region.neighborhood}, ${peer.region.district}`;
       pool.push({
         venue: v,

@@ -31,8 +31,8 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
   'carsi-osmanaga-kadikoy': {
     image: '/images/gastronomy/regional.svg',
     badge: 'Doğrulanmış Seçki',
-    headline: 'Kadıköy Çarşı',
-    vibe: 'Asırlık çarşı klasikleri, odun fırını pizzacılar, avlu kahvecileri ve akşam sofraları',
+    headline: 'Kadıköy, İstanbul',
+    vibe: 'Tarihi Çarşı, Bahariye, Osmanağa ve Yoğurtçu Parkı hattında köklü klasikler ve seçkin duraklar',
   },
   'yeldegirmeni-kadikoy': {
     image: '/images/gastronomy/pizza.svg',
@@ -230,7 +230,7 @@ export function GastronomyPageClient({
                       Konum Seç
                     </div>
                     <div className="text-xs text-slate-500 font-medium truncate mt-0.5">
-                      İstanbul · Kadıköy · 5 Doğrulanmış Semt
+                      İstanbul · Kadıköy · Moda · Yeldeğirmeni · Caddebostan · Suadiye
                     </div>
                   </div>
                 </div>

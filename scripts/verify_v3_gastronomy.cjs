@@ -124,10 +124,20 @@ test('V3.3 dynamic denemelisin, Moda 5-slot iconic coffee & factual view accurac
 
   const countDenemelisin = (snap) => snap.venues.filter((v) => v.categoryId === 'denemelisin').length;
   assert.equal(countDenemelisin(moda), 8, 'Moda denemelisin should have 8 authentic venues');
-  assert.equal(countDenemelisin(carsi), 7, 'Carsi denemelisin should have 7 heritage venues');
+  assert.equal(countDenemelisin(carsi), 8, 'Kadikoy denemelisin should have 8 heritage venues (incl. Ozcan Tursu)');
   assert.equal(countDenemelisin(yeldegirmeni), 4, 'Yeldegirmeni denemelisin must not be artificially padded to 10');
   assert.equal(countDenemelisin(caddebostan), 4, 'Caddebostan denemelisin must not be artificially padded to 10');
   assert.equal(countDenemelisin(suadiye), 4, 'Suadiye denemelisin must not be artificially padded to 10');
+
+  assert.equal(carsi.region.slug, 'kadikoy');
+  assert.equal(carsi.region.neighborhood, 'Kadıköy');
+  assert.equal(carsi.region.locative, "Kadıköy'de");
+  assert.equal(carsi.region.displayName, 'Kadıköy, İstanbul');
+  const kadikoyCoffee = carsi.venues.filter((v) => v.categoryId === 'kahve');
+  assert.equal(kadikoyCoffee.length, 5, 'Kadikoy kahve should have 5 venues (incl. Fazil Bey)');
+  assert.ok(kadikoyCoffee.some((v) => v.name.includes("Fazıl Bey")), 'Kadikoy kahve must include Fazil Bey');
+  const brekkie = carsi.venues.find((v) => v.id === 'carsi-brekkie');
+  assert.equal(brekkie?.neighborhood, 'Yoğurtçu Parkı, Kadıköy', 'Brekkie must show Yogurtcu Parki sub-area');
 });
 
 test('Caddebostan dynamically prunes breakfast ("Yoksa Onerme") when no qualifying venue passes gates', () => {
@@ -309,12 +319,15 @@ test('runtime discovery, foodAdapter, and realProvider expose all 5 Kadikoy regi
   assert.equal(ready.length, 5);
   assert.deepEqual(
     ready.map((r) => r.slug),
-    ['moda', 'kadikoy-carsi', 'yeldegirmeni', 'caddebostan', 'suadiye']
+    ['moda', 'kadikoy', 'yeldegirmeni', 'caddebostan', 'suadiye']
   );
 
   for (const loc of food.locations) {
     assert.ok(loc.city && loc.district && loc.neighborhood, `Missing hierarchy for ${loc.id}`);
   }
+
+  // Legacy kadikoy-carsi slug resolves to Kadikoy
+  assert.equal(provider.getLocationBySlug('kadikoy-carsi')?.slug, 'kadikoy');
 
   // Unpublished regions cannot resolve
   assert.equal(provider.getLocationBySlug('gaziantep'), undefined);
@@ -322,11 +335,15 @@ test('runtime discovery, foodAdapter, and realProvider expose all 5 Kadikoy regi
   assert.equal(provider.getLocationBySlug('kosuyolu'), undefined);
 
   // Verify all 5 published regions resolve cleanly through readIntegrationDiscovery
-  for (const slug of ['moda', 'kadikoy-carsi', 'yeldegirmeni', 'caddebostan', 'suadiye']) {
+  for (const slug of ['moda', 'kadikoy', 'yeldegirmeni', 'caddebostan', 'suadiye']) {
     const disc = await discoveryMod.readIntegrationDiscovery(slug, '');
     assert.ok(disc, `Missing discovery for ${slug}`);
     const f = adapterMod.toFoodDiscovery(disc);
     const p = providerMod.createRealFoodProvider(f);
+    if (slug === 'kadikoy') {
+      const brekkieCard = f.venues.find((v) => v.id === 'carsi-brekkie');
+      assert.equal(brekkieCard?.location, 'Yoğurtçu Parkı, Kadıköy');
+    }
     const cats = p.getRegionCategories(disc.region.id);
     assert.ok(cats.length >= 5, `${slug} cats=${cats.length}`);
     const firstResult = p.getCategoryResult(disc.region.id, cats[0].slug);

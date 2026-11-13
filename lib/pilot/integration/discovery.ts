@@ -8,7 +8,7 @@ export interface IntegrationDiscovery {
  schemaVersion:1;dataKind:'real-research';mode:'integration-preparation';productionPublished:false;
  region:{id:string;slug:string;name:string;displayName:string;path:string[];characterSubtitle?:string;scopeNote?:string};
  categories:{slug:string;id:string;label:string;title?:string;isMustTry:boolean;emoji?:string}[];
- categorySlug:string;venues:VisitorVenueData[];
+ categorySlug:string;venues:Array<VisitorVenueData & { subAreaLabel?: string }>;
  nearbyVenues?: Array<VisitorVenueData & { nearbyAreaLabel: string; distanceKm: number; distanceMeters?: number }>;
  rituals:[];
 }
@@ -6090,6 +6090,7 @@ export async function readIntegrationDiscovery(region='moda',category='kahve'){
    id: v.id,
    name: v.name,
    location: v.address,
+   ...(v.neighborhood ? { subAreaLabel: v.neighborhood } : {}),
    categoryId: v.categoryId,
    description: v.description,
    whatToOrder: [...v.whatToOrder],

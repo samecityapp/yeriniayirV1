@@ -60,6 +60,7 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
 
  const mapVenue = (
   v: IntegrationDiscovery['venues'][number] & {
+   subAreaLabel?: string;
    nearbyAreaLabel?: string;
    distanceKm?: number;
    distanceMeters?: number;
@@ -90,10 +91,12 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
     : typeof v.distanceKm === 'number'
     ? ` · ${v.distanceKm.toFixed(1)} km`
     : '';
+  const coreLocationLabel =
+   v.subAreaLabel && v.subAreaLabel.includes(',') ? v.subAreaLabel : regionDisplayName;
   const locationLabel =
    scope === 'nearby' && v.nearbyAreaLabel
     ? `${v.nearbyAreaLabel}${distanceSuffix}`
-    : regionDisplayName;
+    : coreLocationLabel;
 
   return {
    id:v.id,name:v.name,location:locationLabel,address:v.location,neighborhood:v.location,categoryName:catName,categorySlugs,
