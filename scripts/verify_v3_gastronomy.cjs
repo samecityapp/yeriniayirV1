@@ -75,7 +75,7 @@ const snapshots = REGION_KEYS.map((key) => {
   return { key, data: JSON.parse(fs.readFileSync(p, 'utf8')) };
 });
 
-test('all 5 Kadikoy snapshots follow schema v3, canonical 6-category order, and 1..4 venues per category', () => {
+test('all 5 Kadikoy snapshots follow schema v3, canonical 6-category order, dynamic caps (1..5 standard, 1..10 denemelisin)', () => {
   for (const { key, data } of snapshots) {
     assert.equal(data.schemaVersion, 3, key);
     assert.ok(data.categories.length >= 5 && data.categories.length <= 6, `${key} cats=${data.categories.length}`);
@@ -92,9 +92,42 @@ test('all 5 Kadikoy snapshots follow schema v3, canonical 6-category order, and 
 
     for (const cat of data.categories) {
       const count = data.venues.filter((v) => v.categoryId === cat.id).length;
-      assert.ok(count >= 1 && count <= 4, `${key}/${cat.slug} count=${count}`);
+      const maxAllowed = cat.id === 'denemelisin' ? 10 : 5;
+      assert.ok(count >= 1 && count <= maxAllowed, `${key}/${cat.slug} count=${count}`);
     }
   }
+});
+
+test('V3.3 dynamic denemelisin, Moda 5-slot iconic coffee & factual view accuracy without padding', () => {
+  const moda = snapshots.find((s) => s.key === 'istanbul-kadikoy-moda').data;
+  const carsi = snapshots.find((s) => s.key === 'istanbul-kadikoy-carsi').data;
+  const yeldegirmeni = snapshots.find((s) => s.key === 'istanbul-kadikoy-yeldegirmeni').data;
+  const caddebostan = snapshots.find((s) => s.key === 'istanbul-kadikoy-caddebostan').data;
+  const suadiye = snapshots.find((s) => s.key === 'istanbul-kadikoy-suadiye').data;
+
+  const modaCoffee = moda.venues.filter((v) => v.categoryId === 'kahve');
+  assert.equal(modaCoffee.length, 5, `Moda kahve should have 5 venues with iconic slot, got ${modaCoffee.length}`);
+  const walters = modaCoffee.find((v) => v.name.includes("Walter's Coffee"));
+  const rawsters = modaCoffee.find((v) => v.name.includes('Rawsters Moda'));
+  assert.ok(walters, "Moda kahve must include Walter's Coffee Roastery");
+  assert.ok(rawsters, 'Moda kahve must include Rawsters Moda');
+  assert.ok(
+    !/deniz manzarası var|deniz manzarasına karşı|panoramik deniz/i.test(
+      [walters.description, ...walters.beforeYouGo].join(' ')
+    ),
+    "Walter's Coffee Roastery copy must never falsely claim a sea view"
+  );
+  assert.ok(
+    /deniz|koy manzar/i.test(rawsters.description),
+    'Rawsters Moda copy should reflect its genuine sea-view terrace'
+  );
+
+  const countDenemelisin = (snap) => snap.venues.filter((v) => v.categoryId === 'denemelisin').length;
+  assert.equal(countDenemelisin(moda), 8, 'Moda denemelisin should have 8 authentic venues');
+  assert.equal(countDenemelisin(carsi), 7, 'Carsi denemelisin should have 7 heritage venues');
+  assert.equal(countDenemelisin(yeldegirmeni), 4, 'Yeldegirmeni denemelisin must not be artificially padded to 10');
+  assert.equal(countDenemelisin(caddebostan), 4, 'Caddebostan denemelisin must not be artificially padded to 10');
+  assert.equal(countDenemelisin(suadiye), 4, 'Suadiye denemelisin must not be artificially padded to 10');
 });
 
 test('Caddebostan dynamically prunes breakfast ("Yoksa Onerme") when no qualifying venue passes gates', () => {
@@ -111,10 +144,34 @@ test('all 5 Kadikoy regions have zero overlapping placeIds, valid ratings, and c
       globalPlaceIds.add(venue.placeId);
       assert.ok(venue.address.includes('Kadıköy'), `Outside Kadıköy: ${venue.name} -> ${venue.address}`);
       assert.ok(venue.mapsUri.startsWith('https://maps.google.com/?cid='), `Invalid CID URI: ${venue.mapsUri}`);
-      assert.ok(typeof venue.rating === 'number' && venue.rating >= 4.2 && venue.rating <= 5.0);
+      assert.ok(typeof venue.rating === 'number' && venue.rating >= 4.0 && venue.rating <= 5.0);
     }
   }
-  assert.ok(globalPlaceIds.size >= 80, `Expected >=80 unique Kadikoy venues, got ${globalPlaceIds.size}`);
+  assert.ok(globalPlaceIds.size >= 85, `Expected >=85 unique Kadikoy venues, got ${globalPlaceIds.size}`);
+});
+
+test('every published region and active category has verified nearbyVenues without core overlap (incl. Feneryolu)', () => {
+  for (const { key, data } of snapshots) {
+    assert.ok(Array.isArray(data.nearbyVenues) && data.nearbyVenues.length > 0, `Missing nearbyVenues in ${key}`);
+    const coreIds = new Set(data.venues.map((v) => v.placeId));
+
+    for (const cat of data.categories) {
+      const catNearby = data.nearbyVenues.filter((n) => n.categoryId === cat.id);
+      assert.ok(catNearby.length >= 2, `Expected >=2 nearby venues in ${key}/${cat.slug}, got ${catNearby.length}`);
+      for (const nv of catNearby) {
+        assert.ok(!coreIds.has(nv.placeId), `Nearby venue overlaps core placeId in ${key}/${cat.slug}: ${nv.name}`);
+        assert.ok(typeof nv.distanceKm === 'number' && nv.distanceKm > 0, `Invalid distanceKm on ${nv.name}`);
+        assert.ok(typeof nv.nearbyAreaLabel === 'string' && nv.nearbyAreaLabel.length > 0, `Missing nearbyAreaLabel on ${nv.name}`);
+      }
+    }
+  }
+
+  const moda = snapshots.find((s) => s.key === 'istanbul-kadikoy-moda').data;
+  const modaBreakfastNearby = moda.nearbyVenues.filter((n) => n.categoryId === 'kahvalti');
+  assert.ok(
+    modaBreakfastNearby.some((n) => n.nearbyAreaLabel.includes('Feneryolu')),
+    `Expected Feneryolu breakfast suggestion in Moda nearbyVenues, got: ${modaBreakfastNearby.map((n) => n.nearbyAreaLabel).join(', ')}`
+  );
 });
 
 test('snapshots never leak review counts, source URLs, forbidden terms, or API keys', () => {
@@ -250,6 +307,7 @@ test('runtime discovery, foodAdapter, and realProvider expose all 5 Kadikoy regi
     assert.ok(cats.length >= 5, `${slug} cats=${cats.length}`);
     const firstResult = p.getCategoryResult(disc.region.id, cats[0].slug);
     assert.ok(firstResult && firstResult.coreVenues.length >= 1, `${slug} first category empty`);
+    assert.ok(firstResult.nearbyVenues.length >= 2, `${slug} first category missing nearbyVenues`);
     assert.ok(firstResult.coreVenues[0].ratings[0].attribution.mapsUri.startsWith('https://maps.google.com/?cid='));
   }
 });

@@ -2,6 +2,7 @@ import type {
   V3CandidateSeed,
   V3EvaluationResult,
   V3GooglePlacePayload,
+  V3NearbyPublicVenue,
   V3PublicVenue,
   V3RegionDefinition,
   V3VerifiedRegionSnapshot,
@@ -337,7 +338,19 @@ export function evaluateAndScoreCandidate(
     (s) => s.kind === 'editorial' || s.kind === 'community' || s.kind === 'award'
   );
 
-  if (seed.chefOrHeritageProtected || seed.communityInsiderProtected) {
+  if (seed.iconicSettingOrVibeProtected) {
+    if (rating < 4.1 || userRatingCount < 200 || independentProofSources.length < 2) {
+      return reject(
+        `below_quality_threshold:★${rating}(${userRatingCount})_proofs_${independentProofSources.length}`
+      );
+    }
+  } else if (seed.chefOrHeritageProtected) {
+    if (rating < 4.0 || userRatingCount < 200 || independentProofSources.length < 2) {
+      return reject(
+        `below_quality_threshold:★${rating}(${userRatingCount})_proofs_${independentProofSources.length}`
+      );
+    }
+  } else if (seed.communityInsiderProtected) {
     if (rating < 4.2 || userRatingCount < 200 || independentProofSources.length < 2) {
       return reject(
         `below_quality_threshold:★${rating}(${userRatingCount})_proofs_${independentProofSources.length}`
@@ -352,7 +365,8 @@ export function evaluateAndScoreCandidate(
     userRatingCount > 5000 &&
     rating < 4.5 &&
     !seed.chefOrHeritageProtected &&
-    !seed.communityInsiderProtected
+    !seed.communityInsiderProtected &&
+    !seed.iconicSettingOrVibeProtected
   ) {
     return reject(`over_commercialized_tourist_volume:★${rating}(${userRatingCount})`);
   }
@@ -407,7 +421,11 @@ export function evaluateAndScoreCandidate(
       : 0;
   const completenessBonus =
     (seed.whatToOrder.length > 0 ? 5 : 0) + (secondaryItems.length > 0 ? 5 : 0);
-  const heritageBonus = seed.chefOrHeritageProtected || seed.communityInsiderProtected ? 10 : 0;
+  const heritageBonus = seed.iconicSettingOrVibeProtected
+    ? 15
+    : seed.chefOrHeritageProtected || seed.communityInsiderProtected
+    ? 12
+    : 0;
 
   const totalScore = Math.min(
     100,
@@ -444,11 +462,14 @@ export function evaluateAndScoreCandidate(
   };
 }
 
-export function validateVisitorCopy(venue: V3PublicVenue): string[] {
+export function validateVisitorCopy(
+  venue: V3PublicVenue & { nearbyAreaLabel?: string }
+): string[] {
   const issues: string[] = [];
   const fields = [
     venue.name,
     venue.description,
+    ...(venue.nearbyAreaLabel ? [venue.nearbyAreaLabel] : []),
     ...venue.whatToOrder,
     ...venue.menuFrom,
     ...venue.alsoTry,
@@ -482,15 +503,25 @@ export function selectDynamicRegionVenues(
 
   const usedPlaceIds = new Set<string>();
   const selectedByCategory = new Map<string, V3PublicVenue[]>();
+  const categoryMaxCap = new Map<string, number>();
 
   for (const cat of regionDef.categories) {
     selectedByCategory.set(cat.id, []);
+    if (regionDef.id === 'kadikoy-nearby-pool' || cat.id === 'denemelisin') {
+      categoryMaxCap.set(cat.id, 10);
+    } else {
+      const hasIconicVibe = acceptedSorted.some(
+        (item) => item.seed.categoryId === cat.id && item.seed.iconicSettingOrVibeProtected === true
+      );
+      categoryMaxCap.set(cat.id, hasIconicVibe ? 5 : 4);
+    }
   }
 
   for (const item of acceptedSorted) {
     if (usedPlaceIds.has(item.placeId)) continue;
     const bucket = selectedByCategory.get(item.seed.categoryId);
-    if (!bucket || bucket.length >= 4) continue;
+    const cap = categoryMaxCap.get(item.seed.categoryId) ?? 4;
+    if (!bucket || bucket.length >= cap) continue;
 
     usedPlaceIds.add(item.placeId);
     const formattedAlsoTry =
@@ -503,10 +534,14 @@ export function selectDynamicRegionVenues(
       placeId: item.placeId,
       name: item.resolvedName,
       address: item.formattedAddress,
-      neighborhood: item.matchedNeighborhood || regionDef.officialQuarter,
+      neighborhood:
+        item.seed.neighborhoodLabelOverride ||
+        item.matchedNeighborhood ||
+        regionDef.officialQuarter,
       categoryId: item.seed.categoryId,
       rating: item.rating as number,
       mapsUri: item.mapsUri,
+      ...(item.coordinates ? { coordinates: item.coordinates } : {}),
       description: item.seed.description,
       whatToOrder: item.seed.whatToOrder.slice(0, 3),
       menuFrom: item.seed.menuFrom,
@@ -542,4 +577,116 @@ export function selectDynamicRegionVenues(
     categories: activeCategories,
     venues,
   };
+}
+
+export function haversineKm(
+  a: { lat: number; lng: number },
+  b: { lat: number; lng: number }
+): number {
+  const R = 6371;
+  const toRad = (deg: number) => (deg * Math.PI) / 180;
+  const dLat = toRad(b.lat - a.lat);
+  const dLng = toRad(b.lng - a.lng);
+  const lat1 = toRad(a.lat);
+  const lat2 = toRad(b.lat);
+  const sinDLat = Math.sin(dLat / 2);
+  const sinDLng = Math.sin(dLng / 2);
+  const h = sinDLat * sinDLat + Math.cos(lat1) * Math.cos(lat2) * sinDLng * sinDLng;
+  return 2 * R * Math.atan2(Math.sqrt(h), Math.sqrt(1 - h));
+}
+
+export function computeRegionNearbyVenues(
+  targetSnapshot: V3VerifiedRegionSnapshot,
+  peerSnapshots: readonly V3VerifiedRegionSnapshot[],
+  nearbyPoolSnapshot?: V3VerifiedRegionSnapshot | null,
+  maxPerCategory = 4
+): V3NearbyPublicVenue[] {
+  const targetPlaceIds = new Set(targetSnapshot.venues.map((v) => v.placeId));
+  const seenPoolPlaceIds = new Set<string>();
+
+  type PoolCandidate = {
+    venue: V3PublicVenue;
+    areaLabel: string;
+    isMicroArea: boolean;
+  };
+  const pool: PoolCandidate[] = [];
+
+  for (const v of nearbyPoolSnapshot?.venues || []) {
+    if (targetPlaceIds.has(v.placeId) || seenPoolPlaceIds.has(v.placeId)) continue;
+    seenPoolPlaceIds.add(v.placeId);
+    pool.push({
+      venue: v,
+      areaLabel: v.neighborhood,
+      isMicroArea: true,
+    });
+  }
+
+  for (const peer of peerSnapshots) {
+    if (peer.region.id === targetSnapshot.region.id) continue;
+    const areaLabel = `${peer.region.neighborhood}, ${peer.region.district}`;
+    for (const v of peer.venues) {
+      if (targetPlaceIds.has(v.placeId) || seenPoolPlaceIds.has(v.placeId)) continue;
+      seenPoolPlaceIds.add(v.placeId);
+      pool.push({
+        venue: v,
+        areaLabel,
+        isMicroArea: false,
+      });
+    }
+  }
+
+  const nearbyResults: V3NearbyPublicVenue[] = [];
+
+  for (const cat of targetSnapshot.categories) {
+    const withDistance = pool
+      .filter((entry) => entry.venue.categoryId === cat.id && entry.venue.coordinates != null)
+      .map((entry) => {
+        const rawDist = haversineKm(targetSnapshot.region.center, entry.venue.coordinates!);
+        const distanceKm = Math.max(0.4, Math.round(rawDist * 10) / 10);
+        const rankScore =
+          entry.venue.rating * 15 - distanceKm * 3.2 + (entry.isMicroArea ? 5.5 : 0);
+        return { ...entry, distanceKm, rankScore };
+      });
+
+    let candidates = withDistance.filter((c) => c.distanceKm <= 5.5);
+    if (candidates.length < 3) {
+      candidates = withDistance.filter((c) => c.distanceKm <= 8.0);
+    }
+    candidates.sort((a, b) => b.rankScore - a.rankScore);
+
+    const picked: typeof candidates = [];
+    const usedPlaceIds = new Set<string>();
+    const usedAreas = new Set<string>();
+
+    // 1. Geçiş: Mahalle çeşitliliği için her farklı areaLabel'dan en fazla 1 mekan
+    for (const c of candidates) {
+      if (picked.length >= maxPerCategory) break;
+      if (usedPlaceIds.has(c.venue.placeId) || usedAreas.has(c.areaLabel)) continue;
+      usedPlaceIds.add(c.venue.placeId);
+      usedAreas.add(c.areaLabel);
+      picked.push(c);
+    }
+
+    // 2. Geçiş: Eksik kalırsa aynı areaLabel'dan ek mekanlara izin ver
+    if (picked.length < maxPerCategory) {
+      for (const c of candidates) {
+        if (picked.length >= maxPerCategory) break;
+        if (usedPlaceIds.has(c.venue.placeId)) continue;
+        usedPlaceIds.add(c.venue.placeId);
+        picked.push(c);
+      }
+    }
+
+    picked.sort((a, b) => a.distanceKm - b.distanceKm || b.venue.rating - a.venue.rating);
+
+    for (const item of picked) {
+      nearbyResults.push({
+        ...item.venue,
+        nearbyAreaLabel: item.areaLabel,
+        distanceKm: item.distanceKm,
+      });
+    }
+  }
+
+  return nearbyResults;
 }

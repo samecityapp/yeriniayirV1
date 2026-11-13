@@ -6,13 +6,15 @@ const require = createRequire(import.meta.url);
 const ts = require('typescript');
 
 const ROOT = process.cwd();
-const DEFAULT_REGION_ORDER = [
+const PUBLISHED_REGION_KEYS = [
   'istanbul-kadikoy-moda',
   'istanbul-kadikoy-carsi',
   'istanbul-kadikoy-yeldegirmeni',
   'istanbul-kadikoy-caddebostan',
   'istanbul-kadikoy-suadiye',
 ];
+const NEARBY_POOL_KEY = 'istanbul-kadikoy-nearby-pool';
+const DEFAULT_REGION_ORDER = [...PUBLISHED_REGION_KEYS, NEARBY_POOL_KEY];
 
 const FIELD_MASK = [
   'id',
@@ -297,7 +299,7 @@ async function runSingleRegion(regionKey, apiKey, policy, globalUsedPlaceIds) {
   fs.mkdirSync(dossierDir, { recursive: true });
   const dossierPath = path.join(dossierDir, `${regionKey}.dossier.json`);
   const dossierData = {
-    schemaVersion: '3.2',
+    schemaVersion: '3.3',
     regionKey,
     displayName: regionDef.displayName,
     verifiedAt: snapshot.verifiedAt,
@@ -364,6 +366,51 @@ async function main() {
   for (const regionKey of regionKeys) {
     await runSingleRegion(regionKey, apiKey, policy, globalUsedPlaceIds);
   }
+
+  // Aşama 2: Yayınlanmış 5 semtin "Yakındaki Diğer Öneriler" havuzunu hesapla ve göm
+  const regionsDir = path.join(ROOT, 'lib', 'gastronomy-v3', 'regions');
+  const poolPath = path.join(regionsDir, `${NEARBY_POOL_KEY}.json`);
+  const nearbyPoolSnap = fs.existsSync(poolPath)
+    ? JSON.parse(fs.readFileSync(poolPath, 'utf8'))
+    : null;
+  const publishedSnaps = PUBLISHED_REGION_KEYS.map((key) => ({
+    key,
+    path: path.join(regionsDir, `${key}.json`),
+  }))
+    .filter((entry) => fs.existsSync(entry.path))
+    .map((entry) => ({
+      key: entry.key,
+      path: entry.path,
+      snapshot: JSON.parse(fs.readFileSync(entry.path, 'utf8')),
+    }));
+
+  if (publishedSnaps.length > 0) {
+    console.log('\n=== Aşama 2: Yakındaki Diğer Öneriler Hesaplanıyor ===');
+    const allSnapsOnly = publishedSnaps.map((p) => p.snapshot);
+    for (const entry of publishedSnaps) {
+      const nearbyVenues = policy.computeRegionNearbyVenues(
+        entry.snapshot,
+        allSnapsOnly,
+        nearbyPoolSnap,
+        4
+      );
+      for (const nv of nearbyVenues) {
+        const issues = policy.validateVisitorCopy(nv);
+        if (issues.length > 0) {
+          throw new Error(
+            `Nearby visitor copy validation failed (${entry.key}/${nv.id}):\n${issues.join('\n')}`
+          );
+        }
+      }
+      const updated = { ...entry.snapshot, nearbyVenues };
+      fs.writeFileSync(entry.path, JSON.stringify(updated, null, 2) + '\n', 'utf8');
+      const perCat = entry.snapshot.categories
+        .map((c) => `${c.slug}:${nearbyVenues.filter((n) => n.categoryId === c.id).length}`)
+        .join(', ');
+      console.log(` ✓ ${entry.key}: ${nearbyVenues.length} yakın öneri (${perCat})`);
+    }
+  }
+
   console.log(`\n=== Tamamlandı: ${regionKeys.length} bölge, toplam ${globalUsedPlaceIds.size} benzersiz doğrulanmış mekan ===\n`);
 }
 

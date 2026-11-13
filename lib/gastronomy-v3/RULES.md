@@ -1,13 +1,14 @@
-# Gastronomi V3.2 Seçim Algoritması ve Kategori Kuralları (`RULES.md`)
+# Gastronomi V3.3 Seçim Algoritması ve Kategori Kuralları (`RULES.md`)
 
 Bu doküman `lib/gastronomy-v3` motorunun kalıcı anayasasıdır. Tüm şehir, ilçe ve semt güncellemelerinde istisnasız uygulanır.
 
 ---
 
-## 1. Kesin Lokalizasyon (`İl > İlçe > Semt`)
+## 1. Kesin Lokalizasyon (`İl > İlçe > Semt`) & Yakındaki Diğer Öneriler
 - Her bölge sıkı coğrafi sınır (`bbox`, gerekirse `excludeBbox` ve `allowedNeighborhoodTokens`) ile tanımlanır.
 - Komşu semt veya ilçe taşmaları (ör. Erenköy mekanlarının Caddebostan'a, Osmanağa mekanlarının Moda'ya dahil edilmesi) kabul edilmez.
 - Google Places canlı koordinatı ve adres bileşenleri semt sınırını doğrulamıyorsa aday otomatik reddedilir.
+- **Her Konum ve Her Kategori İçin "Yakındaki Diğer Öneriler" (`nearbyVenues`):** Seçili semtin kendi sınırları (`coreVenues`) %100 saf tutulurken, hemen altında komşu semt ve mahallelerdeki (ör. Moda seçiliyken Feneryolu, Fenerbahçe/Kalamış, Kadıköy Çarşı, Yeldeğirmeni) en yakın doğrulanmış alternatifler mahalle adı ve kuş uçuşu mesafe (`km`) etiketiyle ayrı bir **"Yakındaki Diğer Öneriler"** bölümünde gösterilir.
 
 ## 2. Standart 6 Kategori + Konuma Özgü İstisnalar
 - Şehir içi ve kıyı/turistik bölgelerde (`profile: 'standard_urban_or_coastal'`) kanonik kategori sırası sabittir:
@@ -20,17 +21,20 @@ Bu doküman `lib/gastronomy-v3` motorunun kalıcı anayasasıdır. Tüm şehir, 
 - Gaziantep gibi doğrudan yerel mutfak kimliğiyle anılan özel konumlarda (`profile: 'culinary_heritage'`) standart pizza/hamburger şablonu zorlanmaz; bölgenin en köklü yöresel yemek kategorileri kullanılır.
 - Afyonkarahisar (lokum vb.) gibi konuma özgü belirgin bir imza ürün başlığı varsa `extraCategories` ile eklenir.
 
-## 3. Kategori Başına 4 Seçkin Mekan (Dolgu Yasak)
-- Her kategoride hedef sayı `maxPerCategory = 4` mekandır.
-- Sayıyı 4'e tamamlamak için zincir işletme, vasat alternatif veya düşük kaliteli dolgu mekan eklenmez.
-- Bölgede standartları karşılayan gerçekten güçlü mekan yoksa sayı 1-3 arasında kalabilir; hiç nitelikli aday yoksa kategori dinamik olarak gizlenir (ör. Caddebostan Kahvaltı).
+## 3. Kategori Başına Mekan Sayısı, İkonik 5. Slot & Dinamik `denemelisin` (`1..10`, Dolgu Yasak)
+- Standart kategorilerde (`pizza`, `hamburger`, `kahve`, `date-mekanlari`, `kahvalti`) temel tavan `maxPerCategory = 4` mekandır; sayıyı 4'e tamamlamak için zincir işletme, vasat alternatif veya düşük kaliteli dolgu mekan eklenmez (`1..4`, nitelikli aday yoksa kategori dinamik olarak gizlenir, ör. Caddebostan Kahvaltı).
+- **İkonik Konum / Manzara / Atmosfer 5. Slot Koruması (`iconicSettingOrVibeProtected`):** Deniz manzarası, tarihi köşk/iskele konumu veya benzersiz semt atmosferi/müdavim kitlesiyle o semtin kimliğini temsil eden ama sirkülasyon nedeniyle Google puanı `4.1–4.3` bandında kalan mekanlar (`>= 200` değerlendirme ve `>= 2` bağımsız kaynak şartıyla) elenmez; standart kategoride 5. kontenjanı açarak (`max = 5`) listeye girer. Konum/manzara bilgisi %100 gerçek olmak zorundadır (ör. Şifa Sk. deniz manzaralı tarihi köşk `Rawsters Moda` ile Bademaltı Sk. ikonik iç mekan kavurmahane `Walter's Coffee Roastery` ayrımı gerçeğe birebir sadık yazılır).
+- **`denemelisin` ("O Bölgeye Özgü Şeyler Denemelisin") `1..10` Dinamik Tavan:** Semtin gerçek özgün deneyim sayısına göre `1` ile `10` arasında dinamik sayıda mekan alır. Özel yer 2 taneyse 2, 4 taneyse 4, 7-8 taneyse 7-8, 10 taneyse 10 çıkar; sayıyı 10'a tamamlamak için asla sıradan/dolgu mekan eklenmez.
 
 ## 4. Çoklu Kaynak Uzlaşısı, Marka Sürekliliği & Anti-Manipülasyon
 - **Tek başına Google puanıyla seçim yasaktır:** Her mekan için işletme menüsü/sitesi (`operator`), editoryal gastronomi yayınları (`editorial`), yerel topluluk forumları/müdavim paylaşımları (`community`) veya gastronomi ödülleri (`award`) arasından **en az 2 bağımsız kanıt** zorunludur.
 - **Zincir bloğu:** `CHAIN_BLOCKLIST` kapsamındaki endüstriyel/yaygın zincirler her koşulda reddedilir.
 - **Marka sürekliliği (`expectedBrandWord`):** İsim değiştirmiş, el değiştirmiş veya eski kimliğini kaybetmiş işletmeler (ör. eski *Çekirdek* yerine açılan *Çekirdekhane*) `brand_discontinuity` ile reddedilir.
-- **Yerel müdavim / şef / miras koruması:** `communityInsiderProtected` veya `chefOrHeritageProtected` işaretli, en az `200` yoruma sahip ve en az `2` bağımsız editoryal/topluluk/ödül kaynağıyla doğrulanan köklü veya kült mekanlarda `4.2+` Google puanı kabul edilir.
-- **Sahte/şişirilmiş puan koruması:** Yorum sayısı `150` altında olup `4.8+` puana sahip mekanlarda bağımsız `editorial`, `community` veya `award` kanıtı bulunmuyorsa `suspected_rating_inflation_no_community_proof` ile reddedilir.
+- **Yerel müdavim / şef / miras / ikonik konum koruması:**
+  - `iconicSettingOrVibeProtected` işaretli, en az `200` değerlendirmeye ve `2+` bağımsız editoryal/topluluk/ödül kaynağına sahip semt simgesi mekanlarda `4.1+` puan kabul edilir.
+  - `chefOrHeritageProtected` işaretli tarihi/dünya çapında tescilli yerel kurumlarda (ör. Çiya Sofrası, Yanyalı Fehmi Lokantası, Halil Lahmacun) en az `200` değerlendirme ve `2+` bağımsız kaynakla `4.0+` puan kabul edilir.
+  - `communityInsiderProtected` işaretli yerel müdavim mekanlarında en az `200` değerlendirme ve `2+` bağımsız kaynakla `4.2+` puan kabul edilir.
+- **Sahte/şişirilmiş puan koruması:** Değerlendirme sayısı `150` altında olup `4.8+` puana sahip mekanlarda bağımsız `editorial`, `community` veya `award` kanıtı bulunmuyorsa `suspected_rating_inflation_no_community_proof` ile reddedilir.
 
 ## 5. Ana Uzmanlık + Kanıtlı İkincil Ürün (`secondaryItems` -> `alsoTry`)
 - Her mekanda birincil imza ürünlerinin (`whatToOrder`) dışında kalan, kaynaklarda açıkça öne çıkan en az 1 ikincil ürün ("Ayrıca Bunları da Dene", ör. kahvecinin sandviçi, burgercinin taco/milkshake'i, pizzacının tiramisusu, dönercinin fırın sütlacı) doğrulanmış olmalıdır.

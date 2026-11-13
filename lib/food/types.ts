@@ -118,6 +118,9 @@ export interface FoodDiscoveryProvider {
 export interface VisitorFoodVenue {
   id:string; name:string; location:string; address:string; neighborhood:string;
   categoryName:string; categorySlugs:string[];
+  scope?: 'core' | 'nearby';
+  nearbyAreaLabel?: string;
+  distanceKm?: number;
   tagline:string|null; imageUrl:string; imageIsRepresentative:boolean; imageCategory:string; imageAttribution?:{label:string;url?:string}[];
   ratings:import('@/lib/pilot/googlePlaces/visitorRating').VisitorGoogleRating[];
   orderSuggestion:{title:string}|null; menuFrom:string[];
@@ -126,4 +129,5 @@ export interface VisitorFoodVenue {
 }
 export interface VisitorFoodDiscovery {
   locations:FoodLocation[]; categories:FoodCategory[]; venues:VisitorFoodVenue[];
+  nearbyVenues?: VisitorFoodVenue[];
 }

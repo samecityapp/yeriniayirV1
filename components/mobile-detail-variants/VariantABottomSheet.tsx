@@ -58,10 +58,16 @@ export function VariantABottomSheet({ restaurant, onClose, lang = 'tr' }: Varian
           </button>
 
           {/* Kategori Etiketi */}
-          <div className="absolute top-4 left-4 z-10">
+          <div className="absolute top-4 left-4 z-10 flex flex-wrap items-center gap-1.5 pr-12">
             <span className="px-3 py-1 rounded-full text-xs font-bold bg-white/95 text-slate-900 shadow-xs backdrop-blur-xs">
               {restaurant.categoryName}
             </span>
+            {restaurant.scope === 'nearby' && restaurant.nearbyAreaLabel && (
+              <span className="px-2.5 py-1 rounded-full text-[11px] font-extrabold bg-slate-900/85 text-amber-200 shadow-xs backdrop-blur-xs border border-white/15">
+                Yakın Konum · {restaurant.nearbyAreaLabel}
+                {typeof restaurant.distanceKm === 'number' ? ` · ${restaurant.distanceKm.toFixed(1)} km` : ''}
+              </span>
+            )}
           </div>
 
           {/* Mekan Adı, Konum ve Harita */}
@@ -77,7 +83,11 @@ export function VariantABottomSheet({ restaurant, onClose, lang = 'tr' }: Varian
               onClick={(e) => e.stopPropagation()}
             >
               <MapPin size={13} className="text-blue-400 flex-shrink-0 group-hover/map:scale-110 transition-transform" />
-              <span className="font-medium truncate underline decoration-white/40">{restaurant.neighborhood || getLocalizedText(restaurant.location, lang)}</span>
+              <span className="font-medium truncate underline decoration-white/40">
+                {restaurant.scope === 'nearby'
+                  ? `${getLocalizedText(restaurant.location, lang)}${restaurant.address ? ` — ${restaurant.address}` : ''}`
+                  : restaurant.neighborhood || getLocalizedText(restaurant.location, lang)}
+              </span>
               <ExternalLink size={11} className="opacity-75" />
             </a>
           </div>

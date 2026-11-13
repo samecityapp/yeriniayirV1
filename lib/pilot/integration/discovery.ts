@@ -8,7 +8,9 @@ export interface IntegrationDiscovery {
  schemaVersion:1;dataKind:'real-research';mode:'integration-preparation';productionPublished:false;
  region:{id:string;slug:string;name:string;displayName:string;path:string[];characterSubtitle?:string;scopeNote?:string};
  categories:{slug:string;id:string;label:string;title?:string;isMustTry:boolean;emoji?:string}[];
- categorySlug:string;venues:VisitorVenueData[];rituals:[];
+ categorySlug:string;venues:VisitorVenueData[];
+ nearbyVenues?: Array<VisitorVenueData & { nearbyAreaLabel: string; distanceKm: number }>;
+ rituals:[];
 }
 export const MODA_CATEGORIES = [
   { slug: 'kahve', id: 'coffee', label: 'Kahve', isMustTry: false },
@@ -6088,6 +6090,31 @@ export async function readIntegrationDiscovery(region='moda',category='kahve'){
    id: v.id,
    name: v.name,
    location: v.address,
+   categoryId: v.categoryId,
+   description: v.description,
+   whatToOrder: [...v.whatToOrder],
+   menuFrom: [...v.menuFrom],
+   alsoTry: [...v.alsoTry],
+   beforeYouGo: [...v.beforeYouGo],
+   photo: null,
+   ratings: copyVisitorGoogleRatings([
+    {
+     platform: 'google-maps',
+     value: v.rating,
+     attribution: {
+      label: 'Google Maps',
+      mapsUri: v.mapsUri,
+      providers: [],
+     },
+    },
+   ]),
+  })),
+  nearbyVenues: (v3Snapshot.nearbyVenues || []).map(v => ({
+   id: v.id,
+   name: v.name,
+   location: v.address,
+   nearbyAreaLabel: v.nearbyAreaLabel,
+   distanceKm: v.distanceKm,
    categoryId: v.categoryId,
    description: v.description,
    whatToOrder: [...v.whatToOrder],

@@ -383,6 +383,43 @@ export function GastronomyPageClient({
                   ))}
                 </div>
 
+                {categoryResult.nearbyVenues && categoryResult.nearbyVenues.length > 0 && (
+                  <section
+                    aria-labelledby="nearby-suggestions-heading"
+                    className="pt-6 sm:pt-8 border-t border-slate-200/80 space-y-4"
+                    style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 640px' }}
+                  >
+                    <div className="space-y-1">
+                      <div className="inline-flex items-center gap-1.5 text-[11px] font-extrabold uppercase tracking-wider text-blue-700">
+                        <MapPin size={12} className="text-blue-600" />
+                        <span>KOMŞU SEMTLER · YAKIN MESAFE SEÇKİSİ</span>
+                      </div>
+                      <h2
+                        id="nearby-suggestions-heading"
+                        className="text-lg sm:text-xl font-black text-slate-950 tracking-tight"
+                      >
+                        Yakındaki Diğer Öneriler
+                      </h2>
+                      <p className="text-xs sm:text-sm text-slate-500 font-medium leading-relaxed">
+                        {selectedLocation.name} sınırının hemen dışında, yakın komşu semtlerdeki doğrulanmış{' '}
+                        {categoryResult.category.label.toLocaleLowerCase('tr')} durakları (konum ve mesafesiyle)
+                      </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 gap-5 sm:gap-6">
+                      {categoryResult.nearbyVenues.map((venue) => (
+                        <PremiumRestaurantCard
+                          key={`nearby-${venue.id}`}
+                          restaurant={venue}
+                          priority={false}
+                          onViewDetails={() => setActiveVenueForModal(venue)}
+                          lang={lang}
+                        />
+                      ))}
+                    </div>
+                  </section>
+                )}
+
               </div>
             ) : (
               <div className="py-12 text-center text-slate-500 text-xs font-medium bg-white rounded-2xl border border-dashed border-slate-200">

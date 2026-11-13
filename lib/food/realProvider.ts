@@ -9,7 +9,7 @@ export function createRealFoodProvider(data:VisitorFoodDiscovery){
   getRegionCategories:(id:string)=>data.locations.some(l=>l.id===id)?data.categories.filter(c=>data.venues.some(v=>v.categorySlugs.includes(c.slug))):[],
   getCategoryResult:(id:string,slug:string)=>{
    const location=data.locations.find(l=>l.id===id),category=data.categories.find(c=>c.slug===slug);
-   return location&&category?{location,category,coreVenues:data.venues.filter(v=>v.categorySlugs.includes(slug)),nearbyVenues:[],isDemo:false}:undefined;
+   return location&&category?{location,category,coreVenues:data.venues.filter(v=>v.categorySlugs.includes(slug)),nearbyVenues:(data.nearbyVenues||[]).filter(v=>v.categorySlugs.includes(slug)),isDemo:false}:undefined;
   },
  };
 }

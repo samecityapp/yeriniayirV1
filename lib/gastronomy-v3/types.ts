@@ -48,6 +48,8 @@ export interface V3CandidateSeed {
   localSignals: string[];
   chefOrHeritageProtected?: boolean;
   communityInsiderProtected?: boolean;
+  iconicSettingOrVibeProtected?: boolean;
+  neighborhoodLabelOverride?: string;
   degradationFlag?: boolean;
   degradationReason?: string;
   description: string;
@@ -180,11 +182,17 @@ export interface V3PublicVenue {
   categoryId: string;
   rating: number;
   mapsUri: string;
+  coordinates?: { lat: number; lng: number };
   description: string;
   whatToOrder: string[];
   menuFrom: string[];
   alsoTry: string[];
   beforeYouGo: string[];
+}
+
+export interface V3NearbyPublicVenue extends V3PublicVenue {
+  nearbyAreaLabel: string;
+  distanceKm: number;
 }
 
 export interface V3VerifiedRegionSnapshot {
@@ -196,4 +204,5 @@ export interface V3VerifiedRegionSnapshot {
   >;
   categories: V3CategoryDef[];
   venues: V3PublicVenue[];
+  nearbyVenues?: V3NearbyPublicVenue[];
 }

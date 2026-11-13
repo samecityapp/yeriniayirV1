@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "3.2",
+  "schemaVersion": "3.3",
   "regionKey": "istanbul-kadikoy-carsi",
   "displayName": "Kadıköy Çarşı, Kadıköy, İstanbul",
-  "verifiedAt": "2026-11-13T15:59:17.712Z",
-  "selectedCount": 23,
+  "verifiedAt": "2026-11-13T16:37:38.187Z",
+  "selectedCount": 26,
   "rejectedControls": [],
   "venues": [
     {
@@ -1108,7 +1108,7 @@
       "uncertainties": [
         "Sadece Osmanağa Yoğurtçu Parkı şubesi bu rehbere dahildir."
       ],
-      "selectionScore": 79,
+      "selectionScore": 81,
       "selectedForSnapshot": true
     },
     {
@@ -1389,7 +1389,7 @@
       "uncertainties": [
         "Özel mevsim meyve reçelleri ve çikolata koleksiyonları dönemseldir."
       ],
-      "selectionScore": 87,
+      "selectionScore": 89,
       "selectedForSnapshot": true
     },
     {
@@ -1466,7 +1466,7 @@
       "uncertainties": [
         "Sadece bu tarihi çarşı şubesi için doğrulama yapılmıştır."
       ],
-      "selectionScore": 78,
+      "selectionScore": 80,
       "selectedForSnapshot": true
     },
     {
@@ -1543,7 +1543,7 @@
       "uncertainties": [
         "Sadece orijinal Kadıköy Muvakkithane şubesi listelenmiştir."
       ],
-      "selectionScore": 78,
+      "selectionScore": 80,
       "selectedForSnapshot": true
     },
     {
@@ -1618,7 +1618,235 @@
       "uncertainties": [
         "Kalabalık öğle saatlerinde masa paylaşımı gerekebilir."
       ],
-      "selectionScore": 84,
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "carsi-ciya-sofrasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Çiya Sofrası",
+      "branchName": "Caferağa, Güneşlibahçe Sok. no 34710, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJhToLome4yhQRE1EMuLSuqlg",
+      "coordinates": {
+        "lat": 40.989253999999995,
+        "lng": 29.024190399999995
+      },
+      "rating": 4,
+      "userRatingCount": 14163,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.ciya.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=6389111112583631123",
+      "recommendedPrimary": [
+        "Günlük Yöresel Tencere Yemekleri",
+        "Nar Ekşili veya Erikli Kebabı",
+        "Kuzu İncikli Analı Kızlı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Cevizli Kireçte Kabak Tatlısı & Demirhindi Şerbeti",
+          "note": "Yemek sonrası Çiya tatlı tezgahından sunulan geleneksel Antakya usulü çıtır reçel tatlıları ve Osmanlı şerbetleri.",
+          "proof": "ciya.com.tr menü arşivi ve gastronomi belgeselleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Güneşlibahçe Sokak üzerinde iç salon, üst kat ve dış sokak masaları; gel-al mevcut",
+        "crowdAndNoise": "Yerli müdavimler ve yabancı gastronomi meraklılarıyla gün boyu yoğun",
+        "disadvantage": "Öğle ve hafta sonu saatlerinde masa bulmak ve tencere tezgahı önünde sıra beklemek gerekebilir.",
+        "transit": "Kadıköy Balık Pazarı içinde Güneşlibahçe Sokak’ta Vapur İskelesi’ne birkaç dakika uzaklıkta."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Çiya Sofrası Resmi Sitesi",
+          "url": "https://www.ciya.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Anadolu ve Mezopotamya yemek arşivi, kireçte kabak ve mevsimsel tencere menüsü"
+        },
+        {
+          "title": "Michelin Rehberi / Netflix Chef’s Table Arşivi",
+          "url": "https://guide.michelin.com/",
+          "date": "2026-09-10",
+          "kind": "award",
+          "note": "Şef Musa Dağdeviren’in Anadolu mutfak mirası üzerine uluslararası tescili"
+        },
+        {
+          "title": "Harbiyiyorum — Çiya Sofrası Kadıköy",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-08-22",
+          "kind": "editorial",
+          "note": "Başka yerde kolay bulunmayan yöresel ev yemekleri ve tatlı tezgahı"
+        }
+      ],
+      "pros": [
+        "Eşsiz Anadolu yemek antolojisi",
+        "Her gün değişen taze tencere çeşitleri ve reçel tatlıları"
+      ],
+      "cons": [
+        "Turistik yoğunluk ve dar sokak masaları"
+      ],
+      "uncertainties": [
+        "Yöresel tencere yemekleri günlük mevsime göre değiştiği için sabit değildir."
+      ],
+      "selectionScore": 74,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "carsi-yanyali-fehmi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Yanyalı Fehmi Lokantası",
+      "branchName": "Osmanağa, Yağlıkçı İsmail Sok. No:1, 34714 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJgeqzQgbHyhQRKNemA3B4KoU",
+      "coordinates": {
+        "lat": 40.9907688,
+        "lng": 29.025567400000003
+      },
+      "rating": 4,
+      "userRatingCount": 2950,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.yanyalifehmi.com/",
+      "mapsUri": "https://maps.google.com/?cid=9595614378559199016",
+      "recommendedPrimary": [
+        "Yanya Köftesi (Patlıcana Sarılı)",
+        "Elbasan Tava",
+        "Hünkar Beğendi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Sütlaç & Kaymaklı Kemalpaşa Tatlısı",
+          "note": "Esnaf yemeğinin ardından tezgah vitrininden seçilen klasik sütlü ve şerbetli ev tatlıları.",
+          "proof": "yanyalifehmi.com menüsü ve İstanbul asırlık mekan rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "İki katlı tarihi esnaf lokantası salonu ve hızlı öğle-akşam servis düzeni",
+        "crowdAndNoise": "Öğle yemek saatlerinde bölge esnafı ve müdavimlerle dolu klasik lokanta ortamı",
+        "disadvantage": "Tarihi popülerlik nedeniyle porsiyonlar özellikle akşam saatlerine doğru bazı çeşitlerde erken bitebiliyor.",
+        "transit": "Yağlıkçı İsmail Sokak’ta İskele ve Altıyol yürüyüş ekseninin tam ortasında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yanyalı Fehmi Lokantası Resmi Sitesi",
+          "url": "https://yanyalifehmi.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1919 kuruluş tarihçesi, Yanya köftesi ve günlük tencere yemekleri"
+        },
+        {
+          "title": "İstanbul Yüz Yıllık Markalar Derneği Arşivi",
+          "url": "https://yuzyillikmarkalar.org/",
+          "date": "2026-06-12",
+          "kind": "award",
+          "note": "Kadıköy Çarşısı’nın asırlık tescilli esnaf lokantası"
+        },
+        {
+          "title": "Ekşi Sözlük — Yanyalı Fehmi Lokantası",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-09-15",
+          "kind": "community",
+          "note": "Yanya köftesi, zeytinyağlıları ve fırın sütlacı ile öne çıkıyor"
+        }
+      ],
+      "pros": [
+        "1919’dan süregelen köklü tencere mutfağı",
+        "Kadıköy Çarşı içinde merkezi ve otantik lokanta"
+      ],
+      "cons": [
+        "Akşama doğru bazı tencere çeşitleri tükenebiliyor"
+      ],
+      "uncertainties": [
+        "Günlük sıcak yemek ve zeytinyağlı tezgahı mevsime göre değişiklik gösterir."
+      ],
+      "selectionScore": 74,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "carsi-halil-lahmacun",
+      "categoryId": "denemelisin",
+      "resolvedName": "Halil Lahmacun",
+      "branchName": "Caferağa, Güneşlibahçe Sok. No:26, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJ1eAEvGe4yhQRXF1jGd_AmPs",
+      "coordinates": {
+        "lat": 40.9896406,
+        "lng": 29.024508599999997
+      },
+      "rating": 4.1,
+      "userRatingCount": 3213,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18129452364416114012",
+      "recommendedPrimary": [
+        "Acılı Taş Fırın Lahmacun",
+        "Acısız Lahmacun",
+        "Kuşbaşılı Pide"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taş Fırın Kaşarlı Pide & Bol Köpüklü Açık Ayran",
+          "note": "Lahmacunun ardından paylaşılan sıcak kaşarlı pide ve bakır bardakta taze köpüklü ayran.",
+          "proof": "Harbiyiyorum Kadıköy rehberi ve yerel çarşı müdavim paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Hızlı masa sirkülasyonlu dar esnaf salonu ve ayakta/gel-al servisi",
+        "crowdAndNoise": "Öğleden akşama kesintisiz hareketli çarşı temposu",
+        "disadvantage": "Küçük dükkanda masa devir hızı yüksektir; uzun süreli sakin yemek oturması için uygun değildir.",
+        "transit": "Balık Pazarı Güneşlibahçe Sokak içinde rıhtıma birkaç dakikalık yürüme mesafesinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Harbiyiyorum — Kadıköy Halil Lahmacun",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-08-30",
+          "kind": "editorial",
+          "note": "Kadıköy Balık Pazarı içinde yıllardır çizgisini koruyan klasik taş fırın"
+        },
+        {
+          "title": "Ekşi Sözlük — Halil Lahmacun",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-08",
+          "kind": "community",
+          "note": "İnce hamuru, açık ayranı ve çıtır lahmacunuyla çarşı efsanesi"
+        },
+        {
+          "title": "Oggusto — İstanbul Lahmacun Durakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-07-19",
+          "kind": "editorial",
+          "note": "Anadolu Yakası’nın en köklü esnaf lahmacuncuları arasında gösteriliyor"
+        }
+      ],
+      "pros": [
+        "Taş fırından ince ve çıtır hamur dengesi",
+        "Hızlı ve erişilebilir çarşı öğünü"
+      ],
+      "cons": [
+        "Dar esnaf dükkanı nedeniyle kalabalık saatlerde sıra olabiliyor"
+      ],
+      "uncertainties": [
+        "Sadece klasik çeşitlere odaklı dar menü sunulmaktadır."
+      ],
+      "selectionScore": 77,
       "selectedForSnapshot": true
     }
   ]

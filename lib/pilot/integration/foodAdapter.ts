@@ -52,43 +52,58 @@ const CATEGORY_NAME_MAP: Record<string, string> = {
 
 /** Never accepts the admin card or uses the Antigravity prototype provider. */
 export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery {
- const illustrations=assignVenueIllustrations(data.venues);
+ const allInputs = [...data.venues, ...(data.nearbyVenues || [])];
+ const illustrations=assignVenueIllustrations(allInputs);
  const distinctLocations: VisitorFoodDiscovery['locations'] = data.venues.length ? V3_LOCATIONS : [];
+ const regionName = data.region?.name || 'Moda';
+ const regionDisplayName = data.region?.displayName ? data.region.displayName.split(',').slice(0, 2).join(',') : `${regionName}, İstanbul`;
+
+ const mapVenue = (
+  v: IntegrationDiscovery['venues'][number] & { nearbyAreaLabel?: string; distanceKm?: number },
+  scope: 'core' | 'nearby'
+ ) => {
+  const inlineRatings=copyVisitorGoogleRatings(v.ratings);
+  const verified=getVerifiedGoogleRatings(v.id);
+  const resolvedRatings=inlineRatings.length?inlineRatings:verified;
+  const curated=SYNTHESIZED_VENUE_INSIGHTS[v.id];
+  const description=v.description||curated?.description||null;
+  const whatToOrder=v.whatToOrder.length?v.whatToOrder:(curated?.whatToOrder||[]);
+  const menuFrom=v.menuFrom?.length?v.menuFrom:(curated?.menuFrom||[]);
+  const alsoTry=v.alsoTry.length?v.alsoTry:(curated?.alsoTry||[]);
+  const beforeYouGo=v.beforeYouGo.length?v.beforeYouGo:(curated?.beforeYouGo||[]);
+
+  const matchedCategory = data.categories.find(c => c.id === v.categoryId);
+  const catSlug = matchedCategory?.slug || CATEGORY_SLUG_MAP[v.categoryId] || data.categorySlug;
+  const secondarySlugs = (v.secondaryCategoryIds || [])
+   .map(id => data.categories.find(c => c.id === id)?.slug || CATEGORY_SLUG_MAP[id])
+   .filter((s): s is string => Boolean(s));
+  const categorySlugs = Array.from(new Set([catSlug, ...secondarySlugs]));
+  const catName = matchedCategory?.label || CATEGORY_NAME_MAP[v.categoryId] || 'Gastronomi';
+
+  const locationLabel =
+   scope === 'nearby' && v.nearbyAreaLabel
+    ? `${v.nearbyAreaLabel}${typeof v.distanceKm === 'number' ? ` · ${v.distanceKm.toFixed(1)} km` : ''}`
+    : regionDisplayName;
+
+  return {
+   id:v.id,name:v.name,location:locationLabel,address:v.location,neighborhood:v.location,categoryName:catName,categorySlugs,
+   scope,
+   ...(scope === 'nearby' && v.nearbyAreaLabel ? { nearbyAreaLabel: v.nearbyAreaLabel } : {}),
+   ...(scope === 'nearby' && typeof v.distanceKm === 'number' ? { distanceKm: v.distanceKm } : {}),
+   tagline:description,
+   imageUrl:illustrations.get(v.id)!,imageIsRepresentative:true,imageCategory:v.categoryId,
+   ratings:resolvedRatings,
+   orderSuggestion:whatToOrder.length?{title:whatToOrder.join(' · ')}:null,
+   menuFrom:[...menuFrom],
+   alsoTry:{items:alsoTry.map(raw=>{const idx=raw.indexOf(' — ');return idx>=0?{name:raw.slice(0,idx).trim(),description:raw.slice(idx+3).trim()}:{name:raw,description:''};})},
+   knowBeforeYouGo:{tips:[...beforeYouGo]}
+  };
+ };
 
  return {
   locations: distinctLocations,
   categories:data.categories.slice(0,9).map(c=>({slug:c.slug,label:c.label,title:c.title||c.label,isMustTry:c.isMustTry,emoji:c.emoji || (c.slug.includes('kruvasan')?'🥐':c.id==='coffee'||c.slug.includes('kahve')?'☕':c.id==='burger'||c.slug.includes('burger')?'🍔':c.id==='pizza'||c.slug.includes('pizza')?'🍕':c.id==='breakfast'||c.slug.includes('kahvalti')?'🍳':c.id==='kofte'||c.slug.includes('piyaz')?'🧆':c.id==='doner'?'🥙':c.id==='pide'?'🫓':c.id==='ozel-gun'?'✨':c.id==='baklava'?'🍯':c.id==='katmer'?'🥞':c.id==='beyran'?'🥣':c.id==='kusleme'||c.slug.includes('kebap')?'🍢':c.id==='mutfak'?'🍲':c.id==='dessert'||c.slug.includes('tatli')||c.slug.includes('firin')?'🍰':c.id==='date'?'🍷':c.id==='denemelisin'?'⭐':c.id==='lokanta'||c.slug.includes('lokanta')?'🍲':c.id==='balik'||c.slug.includes('balik')?'🐟':c.id==='meyhane'?'🥂':c.id==='bistro'||c.slug.includes('bistro')?'🍸':c.id==='kebap'||c.slug.includes('kebap')?'🍢':'🍽️')})),
-  venues:data.venues.map(v=>{
-   const inlineRatings=copyVisitorGoogleRatings(v.ratings);
-   const verified=getVerifiedGoogleRatings(v.id);
-   const resolvedRatings=inlineRatings.length?inlineRatings:verified;
-   const curated=SYNTHESIZED_VENUE_INSIGHTS[v.id];
-   const description=v.description||curated?.description||null;
-   const whatToOrder=v.whatToOrder.length?v.whatToOrder:(curated?.whatToOrder||[]);
-   const menuFrom=v.menuFrom?.length?v.menuFrom:(curated?.menuFrom||[]);
-   const alsoTry=v.alsoTry.length?v.alsoTry:(curated?.alsoTry||[]);
-   const beforeYouGo=v.beforeYouGo.length?v.beforeYouGo:(curated?.beforeYouGo||[]);
-
-   const matchedCategory = data.categories.find(c => c.id === v.categoryId);
-   const catSlug = matchedCategory?.slug || CATEGORY_SLUG_MAP[v.categoryId] || data.categorySlug;
-   const secondarySlugs = (v.secondaryCategoryIds || [])
-    .map(id => data.categories.find(c => c.id === id)?.slug || CATEGORY_SLUG_MAP[id])
-    .filter((s): s is string => Boolean(s));
-   const categorySlugs = Array.from(new Set([catSlug, ...secondarySlugs]));
-   const catName = matchedCategory?.label || CATEGORY_NAME_MAP[v.categoryId] || 'Gastronomi';
-   const regionName = data.region?.name || 'Moda';
-   const regionDisplayName = data.region?.displayName ? data.region.displayName.split(',').slice(0, 2).join(',') : `${regionName}, İstanbul`;
-
-   return {
-    id:v.id,name:v.name,location:regionDisplayName,address:v.location,neighborhood:v.location,categoryName:catName,categorySlugs,
-    tagline:description,
-    imageUrl:illustrations.get(v.id)!,imageIsRepresentative:true,imageCategory:v.categoryId,
-    ratings:resolvedRatings,
-    orderSuggestion:whatToOrder.length?{title:whatToOrder.join(' · ')}:null,
-    menuFrom:[...menuFrom],
-    alsoTry:{items:alsoTry.map(raw=>{const idx=raw.indexOf(' — ');return idx>=0?{name:raw.slice(0,idx).trim(),description:raw.slice(idx+3).trim()}:{name:raw,description:''};})},
-    knowBeforeYouGo:{tips:[...beforeYouGo]}
-   };
-  }),
+  venues:data.venues.map(v => mapVenue(v, 'core')),
+  nearbyVenues:(data.nearbyVenues || []).map(v => mapVenue(v, 'nearby')),
  };
 }

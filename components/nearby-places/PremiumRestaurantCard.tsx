@@ -44,6 +44,16 @@ export function PremiumRestaurantCard({
         <VenueImage visual={{url:restaurant.imageUrl,kind:restaurant.imageIsRepresentative?'illustration':'rights-cleared-photo',category:restaurant.imageCategory,venueId:restaurant.id,attribution:restaurant.imageAttribution}} priority={priority} className="group-hover:scale-105 transition-transform duration-500 ease-out" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent opacity-60" />
 
+        {restaurant.scope === 'nearby' && restaurant.nearbyAreaLabel && (
+          <div className="absolute top-3.5 left-3.5 px-2.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-md text-white text-[10px] font-extrabold tracking-wide flex items-center gap-1 shadow-xs border border-white/15">
+            <MapPin size={10} className="text-amber-300 flex-shrink-0" />
+            <span>
+              Yakın Öneri · {restaurant.nearbyAreaLabel.split(',')[0]}
+              {typeof restaurant.distanceKm === 'number' ? ` (${restaurant.distanceKm.toFixed(1)} km)` : ''}
+            </span>
+          </div>
+        )}
+
         {/* Mobil dokunma ipucu */}
         <div className="absolute top-3.5 right-3.5 w-8 h-8 rounded-full bg-white/90 backdrop-blur-md text-slate-800 flex items-center justify-center shadow-xs opacity-90 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-200">
           <ChevronRight size={16} />
