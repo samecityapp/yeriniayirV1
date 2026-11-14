@@ -126,6 +126,17 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'burgerlab',
   'the co. coffee',
   'the co coffee',
+  'akali',
+  'federal galata',
+  'federal coffee',
+  'ot cafe',
+  'ot kafe',
+  'pizza krema',
+  'sun brothers',
+  'fres burger',
+  'napoli gourmet',
+  'sliceguy',
+  'betro burger',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([
@@ -196,6 +207,7 @@ export const FOOD_PLACE_TYPES = new Set<string>([
   'eastern_european_restaurant',
   'bagel_shop',
   'french_restaurant',
+  'western_restaurant',
 ]);
 
 export const FORBIDDEN_VISITOR_COPY_REGEX =

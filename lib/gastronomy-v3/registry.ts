@@ -13,6 +13,8 @@ import cengelkoySnapshotJson from './regions/istanbul-uskudar-cengelkoy.json';
 import karakoySnapshotJson from './regions/istanbul-beyoglu-karakoy.json';
 import cihangirSnapshotJson from './regions/istanbul-beyoglu-cihangir.json';
 import nisantasiSnapshotJson from './regions/istanbul-sisli-nisantasi.json';
+import galataSnapshotJson from './regions/istanbul-beyoglu-galata.json';
+import besiktasCarsiSnapshotJson from './regions/istanbul-besiktas-carsi.json';
 import kusadasiSnapshotJson from './regions/aydin-kusadasi.json';
 import gaziantepSnapshotJson from './regions/gaziantep-merkez.json';
 import antalyaKaleiciSnapshotJson from './regions/antalya-kaleici.json';
@@ -37,6 +39,8 @@ const CENGELKOY_SNAPSHOT = cengelkoySnapshotJson as V3VerifiedRegionSnapshot;
 const KARAKOY_SNAPSHOT = karakoySnapshotJson as V3VerifiedRegionSnapshot;
 const CIHANGIR_SNAPSHOT = cihangirSnapshotJson as V3VerifiedRegionSnapshot;
 const NISANTASI_SNAPSHOT = nisantasiSnapshotJson as V3VerifiedRegionSnapshot;
+const GALATA_SNAPSHOT = galataSnapshotJson as V3VerifiedRegionSnapshot;
+const BESIKTAS_CARSI_SNAPSHOT = besiktasCarsiSnapshotJson as V3VerifiedRegionSnapshot;
 const KUSADASI_SNAPSHOT = kusadasiSnapshotJson as V3VerifiedRegionSnapshot;
 const GAZIANTEP_SNAPSHOT = gaziantepSnapshotJson as V3VerifiedRegionSnapshot;
 const ANTALYA_KALEICI_SNAPSHOT = antalyaKaleiciSnapshotJson as V3VerifiedRegionSnapshot;
@@ -60,6 +64,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   KARAKOY_SNAPSHOT,
   CIHANGIR_SNAPSHOT,
   NISANTASI_SNAPSHOT,
+  GALATA_SNAPSHOT,
+  BESIKTAS_CARSI_SNAPSHOT,
   KUSADASI_SNAPSHOT,
   GAZIANTEP_SNAPSHOT,
   ANTALYA_KALEICI_SNAPSHOT,
@@ -132,6 +138,24 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   tesvikiye: NISANTASI_SNAPSHOT,
   topagaci: NISANTASI_SNAPSHOT,
   macka: NISANTASI_SNAPSHOT,
+  galata: GALATA_SNAPSHOT,
+  'galata-beyoglu': GALATA_SNAPSHOT,
+  'istanbul-beyoglu-galata': GALATA_SNAPSHOT,
+  kuledibi: GALATA_SNAPSHOT,
+  bereketzade: GALATA_SNAPSHOT,
+  sahkulu: GALATA_SNAPSHOT,
+  'serdar-i-ekrem': GALATA_SNAPSHOT,
+  'besiktas-carsi': BESIKTAS_CARSI_SNAPSHOT,
+  'carsi-besiktas': BESIKTAS_CARSI_SNAPSHOT,
+  'istanbul-besiktas-carsi': BESIKTAS_CARSI_SNAPSHOT,
+  besiktas: BESIKTAS_CARSI_SNAPSHOT,
+  koyici: BESIKTAS_CARSI_SNAPSHOT,
+  akaretler: BESIKTAS_CARSI_SNAPSHOT,
+  sinanpasa: BESIKTAS_CARSI_SNAPSHOT,
+  visnezade: BESIKTAS_CARSI_SNAPSHOT,
+  turkali: BESIKTAS_CARSI_SNAPSHOT,
+  cihannuma: BESIKTAS_CARSI_SNAPSHOT,
+  abbasaga: BESIKTAS_CARSI_SNAPSHOT,
   kusadasi: KUSADASI_SNAPSHOT,
   'kusadasi-aydin': KUSADASI_SNAPSHOT,
   'merkez-kusadasi-aydin': KUSADASI_SNAPSHOT,
@@ -197,21 +221,6 @@ export const V3_LOCATIONS: FoodLocation[] = [
   ...V3_ALL_PUBLISHED_SNAPSHOTS.map(toPublishedLocation),
 
   // SIRADAKİ DOĞRULAMA KUYRUĞU (İl > İlçe > Semt ayrıştırılmış)
-  {
-    id: 'galata-beyoglu',
-    level: 'semt',
-    city: 'İstanbul',
-    district: 'Beyoğlu',
-    neighborhood: 'Galata',
-    name: 'Galata',
-    slug: 'galata',
-    path: ['istanbul', 'beyoglu', 'galata'],
-    displayName: 'Galata, Beyoğlu, İstanbul',
-    locative: "Galata'da",
-    status: 'coming_soon',
-    aliases: ['Galata', 'Beyoğlu'],
-    scopeNote: 'İstanbul · Beyoğlu · Galata (V3 Doğrulama Sırasında)',
-  },
   {
     id: 'asmalimescit-beyoglu',
     level: 'semt',
