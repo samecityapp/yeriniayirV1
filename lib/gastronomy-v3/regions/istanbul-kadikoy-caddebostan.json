@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "verifiedAt": "2026-11-14T14:16:37.802Z",
+  "verifiedAt": "2026-11-14T15:23:45.218Z",
   "region": {
     "id": "caddebostan-kadikoy",
     "slug": "caddebostan",
@@ -810,19 +810,22 @@
   ],
   "nearbyVenues": [
     {
-      "id": "nearby-via-pizzeria-fenerbahce",
+      "id": "fk-via-pizzeria",
       "placeId": "ChIJ00YGBg_HyhQRtXoA3bfsIFA",
       "name": "Via Pizzeria",
       "address": "Fenerbahçe, Hacı Mehmet Efendi Sk. :6/b, 34726 Kadıköy/İstanbul, Türkiye",
-      "neighborhood": "Selamiçeşme (Fenerbahçe), Kadıköy",
+      "neighborhood": "Hacı Mehmet Efendi Sk., Fenerbahçe",
       "categoryId": "pizza",
+      "secondaryCategoryIds": [
+        "date"
+      ],
       "rating": 4.9,
       "mapsUri": "https://maps.google.com/?cid=5773874996719942325",
       "coordinates": {
         "lat": 40.975141,
         "lng": 29.049825000000002
       },
-      "description": "Bağdat Caddesi güneyindeki Hacı Mehmet Efendi Sokak’ta incecik çıtır-yumuşak dengeli hamurlu İtalyan pizzaları, el yapımı fettuccine tabakları ve sıcak ikramlarıyla sevilen Fenerbahçe pizzacısı.",
+      "description": "Hacı Mehmet Efendi Sokak’ta çıtır-yumuşak dengeli ince İtalyan pizza hamuru, el yapımı taze fettuccine tabakları ve sıcak servisiyle öne çıkan butik Fenerbahçe pizzacısı.",
       "whatToOrder": [
         "Entrecote Pizza",
         "Klasik Margherita",
@@ -834,88 +837,134 @@
         "Espresso"
       ],
       "alsoTry": [
-        "Taze Fettuccine & Ev Yapımı Tiramisu — Pizza dışında akşam masalarında iki kişilik paylaşım için sıkça tercih edilen İtalyan makarna ve tiramisu kapanışı."
+        "İki Kişilik Taze Fettuccine & Ev Yapımı Tiramisu — Pizza dışında akşam masalarında paylaşım için sıkça tercih edilen el yapımı makarna ve mascarpone tatlısı kapanışı."
       ],
       "beforeYouGo": [
-        "Oturma & Servis: Sıcak iç salon, dış sokak masaları ve rezervasyon imkanı · Akşamları Selamiçeşme–Feneryolu komşularıyla keyifli akşam atmosferi",
-        "Dezavantaj: Akşam yemek saatlerinde sokak içi masalar hızla dolduğu için gitmeden rezervasyon sormak faydalı.",
-        "Ulaşım: Feneryolu sınırının hemen güneyinde Fenerbahçe Hacı Mehmet Efendi Sokak No:6/B’de.",
+        "Oturma & Servis: Samimi iç salon, sokak önü masaları ve rezervasyon imkanı · Akşamları sakin mahalle müdavimleri ve çiftlerle keyifli İtalyan lokantası temposu",
+        "Dezavantaj: Akşam yemek saatlerinde sokak içi masalar hızla dolduğu için gitmeden rezervasyon sormak faydalıdır; domates sosu yoğun Napoli stiline göre daha hafif profillidir.",
+        "Ulaşım: Fenerbahçe Hacı Mehmet Efendi Sokak No:6/B üzerinde Selamiçeşme ve Feneryolu yürüyüş sınırında.",
         "Bütçe seviyesi (Google): Orta"
       ],
-      "nearbyAreaLabel": "Selamiçeşme (Fenerbahçe), Kadıköy",
+      "nearbyAreaLabel": "Hacı Mehmet Efendi Sk., Fenerbahçe",
       "distanceKm": 0.13,
       "distanceMeters": 130
     },
     {
-      "id": "sua-3monkeys",
-      "placeId": "ChIJF7UlovbHyhQRWvk4mey9W3I",
-      "name": "3 Monkey's Burger",
-      "address": "monkey Burger, Suadiye, Hamiyet Yüceses Sk. Petek apartmanı D:21/c 3, 34740 Kadıköy/İstanbul, Türkiye",
-      "neighborhood": "Şaşkınbakkal (Hamiyet Yüceses Sk.) · Suadiye, Kadıköy",
+      "id": "fk-seri-street-food",
+      "placeId": "ChIJ2WgsAwC5yhQRXrnmps8n97o",
+      "name": "Seri Street Food",
+      "address": "Fenerbahçe, Dr. Faruk Ayanoğlu Cd. 24a, 34726 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Dr. Faruk Ayanoğlu Cd., Fenerbahçe",
       "categoryId": "hamburger",
+      "secondaryCategoryIds": [
+        "denemelisin"
+      ],
       "rating": 4.7,
-      "mapsUri": "https://maps.google.com/?cid=8240388767085033818",
+      "mapsUri": "https://maps.google.com/?cid=13472280583113980254",
       "coordinates": {
-        "lat": 40.9614049,
-        "lng": 29.0754543
+        "lat": 40.9741281,
+        "lng": 29.045526699999996
       },
-      "description": "Bağdat Caddesi ve Suadiye burger kültürünün en yüksek hacimli klasiklerinden biri olarak sulu köftesi ve trüf soslarıyla tanınan durak.",
+      "description": "Dr. Faruk Ayanoğlu Caddesi’nde açık mutfak tezgahında fıstıklı ve Mihaliç kelle peynirli gurme burgerlerin yanı sıra tiftik etli sandviç ve ızgara uykuluk hazırlayan özgün sokak lezzeti durağı.",
       "whatToOrder": [
-        "Three Monkeys Signature Burger",
-        "Truffle & Mushroom Burger"
+        "Fıstıklı Burger",
+        "Kelle Peynirli Burger",
+        "Tiftik Etli Sandviç"
       ],
       "menuFrom": [
-        "Lokum Burger",
-        "Smoked Cheese Burger"
+        "Ev Yapımı Turşu",
+        "Baharatlı Patates Kızartması",
+        "Soğuk İçecekler"
       ],
       "alsoTry": [
-        "Parmesanlı Trüflü Patates & Lotus Cheesecake Kavanozu — Burgerlerin yanında paylaşılan signature patates ve tatlı menüsü yıldızı."
+        "Izgara Uykuluk & Sokak İşi Sakatat Ekmek Arası — Klasik burger dükkanlarından farklı olarak müdavimlerin özellikle akşam saatlerinde tercih ettiği özenli sakatat tabakları."
       ],
       "beforeYouGo": [
-        "Oturma & Servis: Geniş iç/dış oturmalı salon ve yüksek paket kapasitesi · Gün boyu hareketli, hafta sonu genç gruplarla oldukça canlı",
-        "Dezavantaj: Yoğun saatlerde kapı önü sırası ve yüksek masa devir temposu olabiliyor.",
-        "Ulaşım: Suadiye Bağdat Caddesi’nden Plaj Yolu ve sahile inen aksta.",
+        "Oturma & Servis: Açık mutfak karşısında kompakt iç ve kaldırım masaları ile gel-al servis · Öğleden akşama Fenerbahçe sakinleri ve sokak yemeği meraklılarıyla hareketli akış",
+        "Dezavantaj: Karı-koca işletilen açık mutfaklı butik bir sokak lezzeti durağı olduğu için oturma alanı dardır ve yoğun saatlerde sipariş beklemesi oluşabilir.",
+        "Ulaşım: Dr. Faruk Ayanoğlu Caddesi No:24A üzerinde Dalyan ve Fenerbahçe Parkı yürüyüş hattında.",
         "Bütçe seviyesi (Google): Orta"
       ],
-      "nearbyAreaLabel": "Şaşkınbakkal (Hamiyet Yüceses Sk.) · Suadiye, Kadıköy",
-      "distanceKm": 0.04,
-      "distanceMeters": 40
+      "nearbyAreaLabel": "Dr. Faruk Ayanoğlu Cd., Fenerbahçe",
+      "distanceKm": 0.38,
+      "distanceMeters": 380
     },
     {
-      "id": "sua-loba",
-      "placeId": "ChIJvZSntErHyhQR12RBKUJ0Jhg",
-      "name": "Loba Coffee & Bakery Suadiye",
-      "address": "Suadiye, Kazım Özalp Sk. Uludağ apt No:40A, 34744, 34744 Kadıköy/İstanbul, Türkiye",
-      "neighborhood": "Şaşkınbakkal (Kazım Özalp Sk.) · Suadiye, Kadıköy",
+      "id": "fk-doppio-fika",
+      "placeId": "ChIJrcKYZL_HyhQRrqc3QfaoOYI",
+      "name": "Doppio Fika Point",
+      "address": "Fenerbahçe Mahallesi, Lalezar Sokak, Dilek Apartmanı, Fenerbahçe, No:7, Dükkan:1, 34726 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Lalezar Sk., Fenerbahçe (Dalyan)",
       "categoryId": "kahve",
-      "rating": 4.5,
-      "mapsUri": "https://maps.google.com/?cid=1740206133534090455",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=9383717074212726702",
       "coordinates": {
-        "lat": 40.961071,
-        "lng": 29.074570599999998
+        "lat": 40.9742385,
+        "lng": 29.047328
       },
-      "description": "Kahve barını taze kruvasan ve ekşi maya pastane ürünleriyle birleştiren sıcak Suadiye buluşma noktası.",
+      "description": "Dalyan sahiline komşu Lalezar Sokak’ta İskandinav fika kültürünü nitelikli kahve demlemeleri, İsveç usulü kladdkaka keki ve el yapımı kurabiyelerle buluşturan sıcak mahalle kahvecisi.",
       "whatToOrder": [
-        "Flat White",
-        "Iced Americano",
-        "Matcha Latte"
+        "Filtre Kahve & Espresso Bazlı Kahveler",
+        "El Yapımı Kurabiye",
+        "Kladdkaka İskandinav Keki"
       ],
       "menuFrom": [
-        "Filtre Kahve",
-        "Cortado"
+        "Iced Latte",
+        "Kahvaltı Tabakları",
+        "Bitki Çayları"
       ],
       "alsoTry": [
-        "Bademli Kruvasan & Limonlu Tart — Taze hamur işleriyle kahveyi tek seferde buluşturan günlük pastane ürünleri."
+        "Dalyan Sahil Yürüyüşü İçin Gel-Al Kahve & Ev Tatlıları — Sahil bandına çıkmadan önce alınan taze demleme kahve ve günlük ev yapımı tatlı eşleşmesi."
       ],
       "beforeYouGo": [
-        "Oturma & Servis: Oturmalı aydınlık mekan ve hızlı fırın gel-al imkanı · Sabah yürüyüşü sonrası kahve-kruvasan alanlarla canlı",
-        "Dezavantaj: Sabah saatlerinde fırın ürünleri hızla tükendiği için öğleden sonra çeşit azalıyor.",
-        "Ulaşım: Suadiye merkez ve sahil yolu arasındaki ara sokaklarda.",
+        "Oturma & Servis: Kompakt iç oturum, ağaçlıklı sokak masaları ve al-götür kahve servisi · Dalyan yürüyüşçüleri ve komşu apartman sakinleriyle samimi, hayvan dostu mahalle havası",
+        "Dezavantaj: İç oturma kapasitesi sınırlıdır ve tarçınlı çörek gibi bazı fırın ürünlerinde gün sonuna doğru kuruma görülebilir.",
+        "Ulaşım: Fenerbahçe Dalyan Lalezar Sokak No:7 D:1 üzerinde sahil yürüyüş yoluna birkaç adım mesafede.",
         "Bütçe seviyesi (Google): Orta"
       ],
-      "nearbyAreaLabel": "Şaşkınbakkal (Kazım Özalp Sk.) · Suadiye, Kadıköy",
-      "distanceKm": 0.04,
-      "distanceMeters": 40
+      "nearbyAreaLabel": "Lalezar Sk., Fenerbahçe (Dalyan)",
+      "distanceKm": 0.23,
+      "distanceMeters": 230
+    },
+    {
+      "id": "fk-son-lokanta",
+      "placeId": "ChIJBX5b_5O5yhQRPprgMw4xTx0",
+      "name": "Son Lokanta",
+      "address": "Fenerbahçe, Dr. Faruk Ayanoğlu Cd. No: 21 D:1A, 34726 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Dr. Faruk Ayanoğlu Cd., Fenerbahçe",
+      "categoryId": "date",
+      "secondaryCategoryIds": [
+        "denemelisin"
+      ],
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=2111960687329712702",
+      "coordinates": {
+        "lat": 40.973919699999996,
+        "lng": 29.046129099999995
+      },
+      "description": "Dr. Faruk Ayanoğlu Caddesi’nde geleneksel lokanta ve meze kültürünü modern şef teknikleri, özenli sakatat uyarlamaları ve deniz ürünlü ara sıcaklarla buluşturan rafine akşam lokantası.",
+      "whatToOrder": [
+        "Şef İmzalı Sakatat Tabakları",
+        "Yaratıcı Mevsim Mezeleri",
+        "Deniz Ürünlü Ara Sıcaklar"
+      ],
+      "menuFrom": [
+        "İlikli Kemik",
+        "Şarap ve Rakı Seçkisi",
+        "Günün Tatlısı"
+      ],
+      "alsoTry": [
+        "Chimichurri Soslu Sakatat Seçkisi & Deniz Mahsulleri — Masada paylaşım odaklı kurgulanan modern meze ve sıcak sakatat-deniz ürünü eşleşmeleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Özenli masa düzenine sahip şık iç salon ve bahçe oturumu (rezervasyon şart) · Gastronomi meraklıları ve özel akşam yemeği arayan çiftlerle dingin ve seçkin atmosfer",
+        "Dezavantaj: Üst fiyat seviyesindedir ve sakatat ile modern şef mezesi ağırlıklı menüsü klasik kebap arayanlara hitap etmeyebilir; akşam rezervasyonu şarttır.",
+        "Ulaşım: Dr. Faruk Ayanoğlu Caddesi No:21 D:1A üzerinde Fenerbahçe Parkı ve Dalyan aksında.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ],
+      "nearbyAreaLabel": "Dr. Faruk Ayanoğlu Cd., Fenerbahçe",
+      "distanceKm": 0.32,
+      "distanceMeters": 320
     },
     {
       "id": "sua-dokuz-ondokuz",

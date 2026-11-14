@@ -1,0 +1,2158 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "istanbul-kadikoy-fenerbahce-kalamis",
+  "displayName": "Fenerbahçe & Kalamış, Kadıköy, İstanbul",
+  "verifiedAt": "2026-11-14T15:23:45.175Z",
+  "selectedCount": 29,
+  "rejectedControls": [
+    {
+      "id": "ctrl-fk-cundali-closed",
+      "resolvedName": "Kalamış Cundalı Ayvalık Balıkçısı",
+      "reason": "not_operational:CLOSED_TEMPORARILY"
+    },
+    {
+      "id": "ctrl-fk-midpoint-chain",
+      "resolvedName": "Midpoint Fenerbahçe",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-fk-happymoons-chain",
+      "resolvedName": "Happy Moon's Fenerbahçe",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-fk-dominos-chain",
+      "resolvedName": "Domino's Pizza Fenerbahçe",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-fk-kronotrop-chain",
+      "resolvedName": "Kronotrop Kalamış Eatery",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-fk-develi-chain",
+      "resolvedName": "Develi 1912 Kalamış",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-fk-5masa-chain",
+      "resolvedName": "5masa Kalamış",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-fk-simpleco-chain",
+      "resolvedName": "Simple Co Fenerbahçe",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-fk-gorgulu-kahve-purity",
+      "resolvedName": "Görgülü Pastaneleri Kızıltoprak",
+      "reason": "kahve_category_not_coffee_specialist:pastry_shop"
+    },
+    {
+      "id": "ctrl-fk-ouzo-below-44",
+      "resolvedName": "Ouzo Roof Restaurant",
+      "reason": "below_quality_threshold:★4.2(980)"
+    },
+    {
+      "id": "ctrl-fk-paysage-below-44",
+      "resolvedName": "Kalamış Paysage Restaurant",
+      "reason": "below_quality_threshold:★3.9(1628)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "fk-via-pizzeria",
+      "categoryId": "pizza",
+      "resolvedName": "Via Pizzeria",
+      "branchName": "Fenerbahçe, Hacı Mehmet Efendi Sk. :6/b, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJ00YGBg_HyhQRtXoA3bfsIFA",
+      "coordinates": {
+        "lat": 40.975141,
+        "lng": 29.049825000000002
+      },
+      "rating": 4.9,
+      "userRatingCount": 490,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5773874996719942325",
+      "recommendedPrimary": [
+        "Entrecote Pizza",
+        "Klasik Margherita",
+        "Antipasto Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İki Kişilik Taze Fettuccine & Ev Yapımı Tiramisu",
+          "note": "Pizza dışında akşam masalarında paylaşım için sıkça tercih edilen el yapımı makarna ve mascarpone tatlısı kapanışı.",
+          "proof": "Fenerbahçe yerel gastronomi değerlendirmeleri ve İtalyan mutfak notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Samimi iç salon, sokak önü masaları ve rezervasyon imkanı",
+        "crowdAndNoise": "Akşamları sakin mahalle müdavimleri ve çiftlerle keyifli İtalyan lokantası temposu",
+        "disadvantage": "Akşam yemek saatlerinde sokak içi masalar hızla dolduğu için gitmeden rezervasyon sormak faydalıdır; domates sosu yoğun Napoli stiline göre daha hafif profillidir.",
+        "transit": "Fenerbahçe Hacı Mehmet Efendi Sokak No:6/B üzerinde Selamiçeşme ve Feneryolu yürüyüş sınırında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Selamiçeşme İtalyan Restoranları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Hacı Mehmet Efendi Sokak’ta ince hamurlu İtalyan pizzaları ve fettuccine servisiyle öne çıkan adres"
+        },
+        {
+          "title": "Müdavim — Via Pizzeria Fenerbahçe",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur dengesi, sıcak ekibi ve tiramisu kalitesiyle yüksek memnuniyet topluyor"
+        }
+      ],
+      "pros": [
+        "İnce İtalyan pizza hamuru ve el yapımı taze fettuccine",
+        "Samimi sokak içi konum ve sıcak servis"
+      ],
+      "cons": [
+        "Akşam yemek saatlerinde rezervasyonsuz masa bulmak zorlaşabiliyor"
+      ],
+      "uncertainties": [
+        "Sezonsal şarküteri ve özel sos çeşitleri dönemsel güncellenebilir."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-spenta-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "Spenta Pizza Restaurant & Cocktail Bar",
+      "branchName": "Fenerbahçe, Itri Dede Sok. No: 2 D:1A, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJO3wS3GC5yhQRxO_FjxinoC4",
+      "coordinates": {
+        "lat": 40.982306699999995,
+        "lng": 29.040333999999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 431,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3359869045951557572",
+      "recommendedPrimary": [
+        "Prosciutto Crudo Pizza",
+        "Enginarlı Burrata",
+        "Klasik Margherita"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Tiramisu & Bahçe Kokteylleri",
+          "note": "İnce hamurlu pizzaların ardından bahçe masalarında en çok eşleştirilen imza kokteyl ve tatlı ikilisi.",
+          "proof": "Kalamış akşam mekanları seçkileri ve menü notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaçlıklı geniş bahçe masaları, şık iç salon ve bar oturumu",
+        "crowdAndNoise": "Akşam saatlerinde çiftler ve küçük arkadaş gruplarıyla canlı ama sohbete uygun atmosfer",
+        "disadvantage": "Itri Dede Sokak çevresinde araç park yeri kısıtlıdır; hafta sonu akşamları bahçe masaları için rezervasyon önerilir.",
+        "transit": "Kalamış girişindeki Itri Dede Sokak No:2 D:1A üzerinde Yoğurtçu ve Kalamış Parkı yürüyüş aksında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Kalamış Bahçeli Akşam Mekanları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taş fırın pizzaları ve bahçe kokteylleriyle Kalamış Itri Dede Sokak’ta öne çıkıyor"
+        },
+        {
+          "title": "Ekşi Sözlük — Spenta Kalamış",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bahçe ortamı, burrata başlangıçları ve pizza hamuruyla övülüyor"
+        }
+      ],
+      "pros": [
+        "Ağaçlıklı Kalamış bahçesi ve kokteyl bar uyumu",
+        "Dengeli taş fırın pizza ve başlangıçlar"
+      ],
+      "cons": [
+        "Sokak çevresinde araç parkı kısıtlı, hafta sonu rezervasyon gerekli"
+      ],
+      "uncertainties": [
+        "Sezonsal kokteyl menüsü dönemsel yenilenebilir."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-sailors-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "Sailors Pizza Kalamış",
+      "branchName": "Fenerbahçe, Fuatpaşa Cd NO:36/A, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJZWJBYze5yhQRmWAXYI7U9Fw",
+      "coordinates": {
+        "lat": 40.9721689,
+        "lng": 29.046696499999996
+      },
+      "rating": 4.7,
+      "userRatingCount": 144,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6698212253769359513",
+      "recommendedPrimary": [
+        "Füme Kaburgalı Pizza",
+        "Burrata & Pesto Pizza",
+        "Klasik Margherita"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sarımsaklı Fırın Ekmeği & Rokalı Parmesan Salata",
+          "note": "Pizza fırından çıkana kadar masada paylaşılan sıcak zeytinyağlı ekmek ve taze yeşillik tabağı.",
+          "proof": "Kalamış yeme-içme notları ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt mahalle salonu, sınırlı dış masa ve paket servis düzeni",
+        "crowdAndNoise": "Fenerbahçe ve Kalamış sakinlerinin uğradığı sakin ve samimi akşam temposu",
+        "disadvantage": "Kentsel dönüşüm sonrası taşındığı yeni dükkanı kompakt ölçektedir ve yoğun saatlerde hamur pişirme süresi uzayabilir.",
+        "transit": "Fenerbahçe Fuatpaşa Caddesi No:36/A üzerinde Fener Kalamış ve Bağdat Caddesi ara aksında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Fenerbahçe Pizza Durakları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kalamış bölgesinde yüksek puanlı mahalle pizzacısı"
+        },
+        {
+          "title": "Müdavim — Sailors Pizza Kalamış",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Malzeme kalitesi ve sıcak mahalle servisiyle övülüyor"
+        }
+      ],
+      "pros": [
+        "Kaliteli malzemeli ince çıtır hamur",
+        "Samimi mahalle işletmesi yaklaşımı"
+      ],
+      "cons": [
+        "Kompakt yeni dükkan kapasitesi nedeniyle yoğun saatlerde bekleme olabiliyor"
+      ],
+      "uncertainties": [
+        "Günlük hamur stoğu yoğun akşamlarda erken tükenebilir."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-seri-street-food",
+      "categoryId": "hamburger",
+      "resolvedName": "Seri Street Food",
+      "branchName": "Fenerbahçe, Dr. Faruk Ayanoğlu Cd. 24a, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJ2WgsAwC5yhQRXrnmps8n97o",
+      "coordinates": {
+        "lat": 40.9741281,
+        "lng": 29.045526699999996
+      },
+      "rating": 4.7,
+      "userRatingCount": 1870,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/seristreetfood",
+      "mapsUri": "https://maps.google.com/?cid=13472280583113980254",
+      "recommendedPrimary": [
+        "Fıstıklı Burger",
+        "Kelle Peynirli Burger",
+        "Tiftik Etli Sandviç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Izgara Uykuluk & Sokak İşi Sakatat Ekmek Arası",
+          "note": "Klasik burger dükkanlarından farklı olarak müdavimlerin özellikle akşam saatlerinde tercih ettiği özenli sakatat tabakları.",
+          "proof": "Instagram (@seristreetfood) menü paylaşımları ve Kadıköy sokak lezzeti rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Açık mutfak karşısında kompakt iç ve kaldırım masaları ile gel-al servis",
+        "crowdAndNoise": "Öğleden akşama Fenerbahçe sakinleri ve sokak yemeği meraklılarıyla hareketli akış",
+        "disadvantage": "Karı-koca işletilen açık mutfaklı butik bir sokak lezzeti durağı olduğu için oturma alanı dardır ve yoğun saatlerde sipariş beklemesi oluşabilir.",
+        "transit": "Dr. Faruk Ayanoğlu Caddesi No:24A üzerinde Dalyan ve Fenerbahçe Parkı yürüyüş hattında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Seri Street Food Resmi Instagram Sayfası",
+          "url": "https://www.instagram.com/seristreetfood",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Fıstıklı burger, tiftik etli sandviç ve sokak işi uykuluk menüsü"
+        },
+        {
+          "title": "Harbiyiyorum — Fenerbahçe Sokak Lezzetleri",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Açık mutfağı, imza burgerleri ve uykuluk servisiyle Kadıköy yakasının özgün sokak durağı"
+        },
+        {
+          "title": "Ekşi Sözlük — Seri Street Food",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Et kalitesi ve yaratıcı burger-sakatat çeşitleriyle yüksek beğeni topluyor"
+        }
+      ],
+      "pros": [
+        "Özgün fıstıklı/kelle peynirli burgerler ve ızgara uykuluk",
+        "Açık mutfakta taze ve özenli hazırlık"
+      ],
+      "cons": [
+        "Sınırlı oturma alanı ve yoğun saatlerde sipariş beklemesi"
+      ],
+      "uncertainties": [
+        "Sakatat ve günlük sandviç çeşitleri stoğa bağlı olarak erken tükenebilir."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-buffe-kalamis",
+      "categoryId": "hamburger",
+      "resolvedName": "Büffe Kalamış",
+      "branchName": "Fenerbahçe, Fener Kalamış Cd. 92-94/A, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJ6aKwQIG4yhQRT44eXXeqztk",
+      "coordinates": {
+        "lat": 40.9733835,
+        "lng": 29.0412077
+      },
+      "rating": 4.7,
+      "userRatingCount": 178,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15694669181072870991",
+      "recommendedPrimary": [
+        "Double Smash Burger",
+        "Büffe Classic Cheeseburger",
+        "Fümeli Çıtır Ayvalık Tostu"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Gurme Sosisli & Ev Yapımı Limonata",
+          "note": "Burger dışında sahil yürüyüşü dönüşünde hızlıca tercih edilen karamelize soğanlı sosisli ve taze limonata ikilisi.",
+          "proof": "Kalamış gurme sokak lezzeti seçkileri ve mekan menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Yüksek tezgah oturumu, kaldırım masaları ve hızlı al-götür servisi",
+        "crowdAndNoise": "Kalamış Parkı yürüyüşçüleri ve semt gençleriyle gün boyu dinamik tempo",
+        "disadvantage": "Uzun akşam oturmasından ziyade hızlı ve nitelikli burger-tost molasına göre düzenlenmiş kompakt büfe ölçeğindedir.",
+        "transit": "Fener Kalamış Caddesi No:92-94/A üzerinde Kalamış Parkı ve Marina aksında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "The Magger — Kalamış Gurme Durakları",
+          "url": "https://www.themagger.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Gurme smash burger ve tost ikilisini modern mahalle büfesi konseptiyle sunuyor"
+        },
+        {
+          "title": "Ekşi Sözlük — Büffe Kalamış",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sulu köftesi, özel sosları ve fümeli tostuyla yüksek puanlı Kalamış durağı"
+        }
+      ],
+      "pros": [
+        "Sulu double smash burger ve gurme tost seçenekleri",
+        "Kalamış Parkı yürüyüşüne çok yakın cadde konumu"
+      ],
+      "cons": [
+        "Kompakt büfe düzeni nedeniyle geniş grup oturumu yok"
+      ],
+      "uncertainties": [
+        "Gece geç saatlerde bazı özel ekmek çeşitleri tükenebilir."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-elloi-kalamis",
+      "categoryId": "kahve",
+      "resolvedName": "Elloi Kalamış",
+      "branchName": "Fenerbahçe, Itri Dede Sok. No: 9/A, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJfZNbCPe5yhQRUFTmXhVmRbg",
+      "coordinates": {
+        "lat": 40.9823094,
+        "lng": 29.039811600000004
+      },
+      "rating": 4.8,
+      "userRatingCount": 159,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.elloikalamis.com/",
+      "mapsUri": "https://maps.google.com/?cid=13278131318344275024",
+      "recommendedPrimary": [
+        "Cortado",
+        "Iced Latte",
+        "V60 Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Portakallı Günlük Kek & Banana Bread",
+          "note": "Sabah ve öğleden sonra filtre kahve eşliğinde en çok tercih edilen taze fırın dilimleri.",
+          "proof": "elloikalamis.com ve Kalamış kahve seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sakin iç çalışma masaları, küçük sokak önü oturumu ve gel-al bar düzeni",
+        "crowdAndNoise": "Bilgisayarıyla çalışanlar ve kitap okuyan mahalle müdavimleriyle oldukça dingin ortam",
+        "disadvantage": "Kütüphane sessizliğindeki minik iç alanı çalışma odaklı müdavimlerle çabuk dolduğundan yoğun saatlerde masa bulmak zorlaşabilir.",
+        "transit": "Kalamış Itri Dede Sokak No:9/A üzerinde Kurbağalıdere ve Kalamış Parkı yakınında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Elloi Kalamış Resmi Sitesi",
+          "url": "http://www.elloikalamis.com/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Kalamış Itri Dede Sokak üçüncü dalga kahve barı ve menüsü"
+        },
+        {
+          "title": "ExploreKadikoy — Kalamış Kahvecileri",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sakin çalışma ortamı ve dengeli espresso reçeteleriyle öne çıkan kahve durağı"
+        },
+        {
+          "title": "Müdavim — Elloi Kalamış",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahve kalitesi ve sessiz atmosferiyle Kalamış müdavimlerinin favori noktalarından"
+        }
+      ],
+      "pros": [
+        "Süt-espresso dengesi başarılı cortado ve filtre kahve",
+        "Sessiz, odaklanmaya uygun mahalle ortamı"
+      ],
+      "cons": [
+        "Küçük iç mekan çalışma saatlerinde hızlı doluyor"
+      ],
+      "uncertainties": [
+        "Günlük kek ve tek köken çekirdek seçkisi haftalık değişebilir."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-klar-roastery",
+      "categoryId": "kahve",
+      "resolvedName": "Klar Coffee Roastery",
+      "branchName": "Fenerbahçe, Itri Dede Sok. No:14/A, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJGTQDXGu5yhQRk-FaMd1nerc",
+      "coordinates": {
+        "lat": 40.982417399999996,
+        "lng": 29.039928900000003
+      },
+      "rating": 4.8,
+      "userRatingCount": 119,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.klarcoffee.com/",
+      "mapsUri": "https://maps.google.com/?cid=13220993855812985235",
+      "recommendedPrimary": [
+        "V60 Tek Köken Demleme",
+        "Flat White",
+        "Cortado"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İri Dilim Cheesecake & Paket Kavrum Çekirdekler",
+          "note": "Demleme kahve yanında paylaşımlık tatlı dilimleri ve evde demleme için taze kavrum çekirdek paketleri.",
+          "proof": "klarcoffee.com ve İstanbul nitelikli kavurmahane rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kavurmahane barı etrafında sade iç-dış masalar ve çekirdek satış rafı",
+        "crowdAndNoise": "Nitelikli çekirdek meraklıları ve sakin sokak molası arayanlarla huzurlu akış",
+        "disadvantage": "Ara sokaktaki kavurmahane-kafe düzeni kalabalık grup buluşmalarından çok sakin kahve molasına uygundur; tatlı porsiyonları tek kişi için büyük gelebilir.",
+        "transit": "Itri Dede Sokak No:14/A üzerinde Kalamış Marina ve Yoğurtçu yürüyüş hattında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Klar Coffee Roastery Resmi Sitesi",
+          "url": "http://www.klarcoffee.com/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Kendi kavurduğu tek köken çekirdekler ve Kalamış kavurmahane şubesi"
+        },
+        {
+          "title": "Oggusto — İstanbul Nitelikli Kavurmahaneler",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Berrak V60 demlemeleri ve kavurma profiliyle öne çıkan uzman kavurucu"
+        },
+        {
+          "title": "Ekşi Sözlük — Klar Coffee Roastery",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze kavrum çekirdek kalitesi ve tatlı eşleşmeleriyle övülüyor"
+        }
+      ],
+      "pros": [
+        "Kendi kavurduğu tek köken çekirdek seçkisi",
+        "Yüksek V60 ve espresso tutarlılığı"
+      ],
+      "cons": [
+        "Ara sokakta kompakt kapasite, kalabalık gruplara uygun değil"
+      ],
+      "uncertainties": [
+        "Hasat sezonuna göre çekirdek orijinleri düzenli yenilenir."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-doppio-fika",
+      "categoryId": "kahve",
+      "resolvedName": "Doppio Fika Point",
+      "branchName": "Fenerbahçe Mahallesi, Lalezar Sokak, Dilek Apartmanı, Fenerbahçe, No:7, Dükkan:1, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJrcKYZL_HyhQRrqc3QfaoOYI",
+      "coordinates": {
+        "lat": 40.9742385,
+        "lng": 29.047328
+      },
+      "rating": 4.7,
+      "userRatingCount": 325,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "https://www.doppiofikapoint.com/",
+      "mapsUri": "https://maps.google.com/?cid=9383717074212726702",
+      "recommendedPrimary": [
+        "Filtre Kahve & Espresso Bazlı Kahveler",
+        "El Yapımı Kurabiye",
+        "Kladdkaka İskandinav Keki"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Dalyan Sahil Yürüyüşü İçin Gel-Al Kahve & Ev Tatlıları",
+          "note": "Sahil bandına çıkmadan önce alınan taze demleme kahve ve günlük ev yapımı tatlı eşleşmesi.",
+          "proof": "doppiofikapoint.com ve Dalyan mahalle rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt iç oturum, ağaçlıklı sokak masaları ve al-götür kahve servisi",
+        "crowdAndNoise": "Dalyan yürüyüşçüleri ve komşu apartman sakinleriyle samimi, hayvan dostu mahalle havası",
+        "disadvantage": "İç oturma kapasitesi sınırlıdır ve tarçınlı çörek gibi bazı fırın ürünlerinde gün sonuna doğru kuruma görülebilir.",
+        "transit": "Fenerbahçe Dalyan Lalezar Sokak No:7 D:1 üzerinde sahil yürüyüş yoluna birkaç adım mesafede."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Doppio Fika Point Resmi Sitesi",
+          "url": "https://www.doppiofikapoint.com/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Dalyan’da İskandinav fika konseptli kahve ve el yapımı tatlılar"
+        },
+        {
+          "title": "The Magger — Kadıköy Sahil Hattı Kahvecileri",
+          "url": "https://www.themagger.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kladdkaka keki, kurabiyeleri ve Dalyan sokak atmosferiyle dikkat çekiyor"
+        },
+        {
+          "title": "Müdavim — Doppio Fika Point",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Dalyan yürüyüşü öncesi kahve molası için sık tercih ediliyor"
+        }
+      ],
+      "pros": [
+        "Dalyan sahil bandına birkaç adım mesafede sakin sokak oturumu",
+        "Özgün İsveç kladdkaka keki ve el yapımı kurabiyeler"
+      ],
+      "cons": [
+        "Küçük iç mekan ve gün sonuna doğru azalan fırın tazeliği"
+      ],
+      "uncertainties": [
+        "Hafta sonları günlük kurabiye çeşitleri öğleden sonra tükenebiliyor."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-peggy-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Peggy Coffee & Eatery",
+      "branchName": "Kale Apt, Fenerbahçe, Fuatpaşa Cd No:18, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJv9IJXjC5yhQR5_GXOHYOjOA",
+      "coordinates": {
+        "lat": 40.9731388,
+        "lng": 29.044714499999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 130,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.peggycoffee.co/",
+      "mapsUri": "https://maps.google.com/?cid=16180323462153761255",
+      "recommendedPrimary": [
+        "Nitelikli Espresso & Latte",
+        "Chocolate Chip Cookie",
+        "Beyaz Çikolatalı Matcha Cookie"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İstiridye Mantarlı Kahvaltı Tabağı & Breakfast Bowl",
+          "note": "Sabah saatlerinde kahve yanında hafif ve doyurucu tabak arayanların tercih ettiği taze kahvaltı seçenekleri.",
+          "proof": "peggycoffee.co ve Fenerbahçe kafe notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık küçük iç mekan, kaldırım önü masaları ve paket servis",
+        "crowdAndNoise": "Sabah kahvesi ve öğleden sonra kurabiye molası veren semt sakinleriyle sakin tempo",
+        "disadvantage": "Küçük mahalle kafesi ölçeğinde olduğu için popüler kurabiyeleri öğleden sonra erken saatte tükenebilir.",
+        "transit": "Fenerbahçe Fuatpaşa Caddesi No:18 üzerinde Fener Kalamış Caddesi bağlantı aksında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Peggy Coffee & Eatery Resmi Sitesi",
+          "url": "https://www.peggycoffee.co/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Fenerbahçe Fuatpaşa’da nitelikli kahve, kurabiye ve sabah kasesi menüsü"
+        },
+        {
+          "title": "ExploreKadikoy — Fenerbahçe Mahalle Kafeleri",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taze kurabiyeleri ve sabah kaseleriyle sevilen yeni nesil mahalle kahvecisi"
+        },
+        {
+          "title": "Müdavim — Peggy Coffee & Eatery",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Matcha kurabiyesi ve yumuşak espresso içimiyle övgü alıyor"
+        }
+      ],
+      "pros": [
+        "Taze günlük kurabiye ve hafif kahvaltı kasesi uyumu",
+        "Sakin mahalle caddesi atmosferi"
+      ],
+      "cons": [
+        "Küçük oturma alanı ve popüler kurabiyelerin erken bitmesi"
+      ],
+      "uncertainties": [
+        "Sezonsal kahve ve fırın çeşitleri günlük hazırlanır."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-parvus-kalamis",
+      "categoryId": "date",
+      "resolvedName": "Parvus Kalamış",
+      "branchName": "Zühtüpaşa, Rüştiye Sk. No:4/A, 34724 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJ7zxInYu5yhQRvSUut92CQbk",
+      "coordinates": {
+        "lat": 40.9831983,
+        "lng": 29.039631599999996
+      },
+      "rating": 4.8,
+      "userRatingCount": 265,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "http://parvus.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=13349094659275498941",
+      "recommendedPrimary": [
+        "Deniz Mahsullü veya Ispanaklı Risotto",
+        "Kuzu Karski",
+        "Keçi Peynirli Salata"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mevsimsel Sakatat Tabakları & Çikolatalı Mus",
+          "note": "Klasik bistro menüsünü zenginleştiren şef işi sakatat dokunuşları ve yemek sonu yoğun çikolatalı tatlı kapanışı.",
+          "proof": "parvus.com.tr menüsü ve Anadolu Yakası bistro seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tam masa servisli loş iç salon ve sakin sokak-bahçe masaları (rezervasyon önerilir)",
+        "crowdAndNoise": "Çiftler ve sakin akşam sohbeti arayan yetişkin kitleyle gürültüden uzak zarif ortam",
+        "disadvantage": "Üst bütçe segmentindedir ve küçük kapasiteli salonunda akşam saatleri için önceden rezervasyon yaptırmak gerekir.",
+        "transit": "Kalamış girişindeki Rüştiye Sokak No:4/A üzerinde Itri Dede Sokak komşuluğunda."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Parvus Kalamış Resmi Sitesi",
+          "url": "http://parvus.com.tr/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Kalamış şef bistro menüsü, şarap kavı ve rezervasyon bilgileri"
+        },
+        {
+          "title": "Oggusto — Anadolu Yakası Romantik Akşam Mekanları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Butik menüsü, şarap kavı ve sakin mahalle atmosferiyle özel akşamlar için öne çıkıyor"
+        },
+        {
+          "title": "Ekşi Sözlük — Parvus Kalamış",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Risotto, kuzu karski ve gürültüden uzak servisiyle yüksek memnuniyet alıyor"
+        }
+      ],
+      "pros": [
+        "Özenli şef tabakları ve sakin, romantik akşam ambiyansı",
+        "Kalamış Rüştiye Sokak’ta kalabalıktan uzak konum"
+      ],
+      "cons": [
+        "Üst fiyat seviyesi ve küçük salon kapasitesi nedeniyle rezervasyon şart"
+      ],
+      "uncertainties": [
+        "Mevsimsel malzeme tedarikine göre tabaklar sık güncellenir."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-son-lokanta",
+      "categoryId": "date",
+      "resolvedName": "Son Lokanta",
+      "branchName": "Fenerbahçe, Dr. Faruk Ayanoğlu Cd. No: 21 D:1A, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJBX5b_5O5yhQRPprgMw4xTx0",
+      "coordinates": {
+        "lat": 40.973919699999996,
+        "lng": 29.046129099999995
+      },
+      "rating": 4.8,
+      "userRatingCount": 97,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": true
+      },
+      "websiteUri": "https://sonlokanta.com/",
+      "mapsUri": "https://maps.google.com/?cid=2111960687329712702",
+      "recommendedPrimary": [
+        "Şef İmzalı Sakatat Tabakları",
+        "Yaratıcı Mevsim Mezeleri",
+        "Deniz Ürünlü Ara Sıcaklar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Chimichurri Soslu Sakatat Seçkisi & Deniz Mahsulleri",
+          "note": "Masada paylaşım odaklı kurgulanan modern meze ve sıcak sakatat-deniz ürünü eşleşmeleri.",
+          "proof": "sonlokanta.com ve İstanbul modern lokanta değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Özenli masa düzenine sahip şık iç salon ve bahçe oturumu (rezervasyon şart)",
+        "crowdAndNoise": "Gastronomi meraklıları ve özel akşam yemeği arayan çiftlerle dingin ve seçkin atmosfer",
+        "disadvantage": "Üst fiyat seviyesindedir ve sakatat ile modern şef mezesi ağırlıklı menüsü klasik kebap arayanlara hitap etmeyebilir; akşam rezervasyonu şarttır.",
+        "transit": "Dr. Faruk Ayanoğlu Caddesi No:21 D:1A üzerinde Fenerbahçe Parkı ve Dalyan aksında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Son Lokanta Resmi Sitesi",
+          "url": "https://sonlokanta.com/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Fenerbahçe modern şef lokantası menüsü ve rezervasyon detayları"
+        },
+        {
+          "title": "Oggusto — İstanbul Yeni Nesil Şef Lokantaları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Geleneksel meze ve sakatat mutfağını modern dokunuşlarla buluşturan seçkin adres"
+        },
+        {
+          "title": "Ekşi Sözlük — Son Lokanta Fenerbahçe",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yaratıcı mezeleri, deniz mahsulleri ve servis standardıyla öne çıkıyor"
+        }
+      ],
+      "pros": [
+        "Yaratıcı modern şef mezeleri ve yüksek mutfak işçiliği",
+        "Özel akşam buluşmalarına uygun şık atmosfer"
+      ],
+      "cons": [
+        "Üst bütçe bandı ve önceden rezervasyon zorunluluğu"
+      ],
+      "uncertainties": [
+        "Günlük taze meze ve sakatat menüsü mevsime göre değişebilir."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-duende-kalamis",
+      "categoryId": "date",
+      "resolvedName": "Duende Kalamış",
+      "branchName": "Fenerbahçe, Itri Dede Sok. No:17, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJd_vZf_m5yhQRwJ2HBAyyK94",
+      "coordinates": {
+        "lat": 40.982397,
+        "lng": 29.0395492
+      },
+      "rating": 4.7,
+      "userRatingCount": 130,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://duendekalamis.com/",
+      "mapsUri": "https://maps.google.com/?cid=16009085065103908288",
+      "recommendedPrimary": [
+        "İmza Kokteyller",
+        "Frambuazlı Tiramisu",
+        "Paylaşımlık Bistro Tabakları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Alt Kat Sanat Galerisi Atmosferi & Gündüz Ege Rüyası Tabağı",
+          "note": "Akşam kokteyl buluşmalarının yanı sıra gündüz saatlerinde hafif tabakları ve sergi alanıyla farklılaşan kurgu.",
+          "proof": "duendekalamis.com ve Kalamış kültür-gastronomi notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Butik iç bistro masaları, sokak önü oturumu ve alt kat sergi alanı",
+        "crowdAndNoise": "Sanat, müzik ve sakin akşam kokteyli arayan çiftler ile mahalle sakinleri",
+        "disadvantage": "Butik ölçekli olduğu için temalı müzik veya atölye gecelerinde rezervasyonsuz masa bulmak güçleşir.",
+        "transit": "Kalamış Itri Dede Sokak No:17 üzerinde Marina ve Kurbağalıdere yürüyüş hattında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Duende Kalamış Resmi Sitesi",
+          "url": "https://duendekalamis.com/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Kalamış kokteyl-bistro menüsü ve alt kat galeri etkinlikleri"
+        },
+        {
+          "title": "The Magger — Kalamış Kültür ve Kokteyl Mekanları",
+          "url": "https://www.themagger.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sanat galerisi ile kokteyl-bistro konseptini birleştiren sıcak buluşma noktası"
+        },
+        {
+          "title": "Müdavim — Duende Kalamış",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Dengeli kokteylleri ve frambuazlı tiramisusuyla yüksek puan alıyor"
+        }
+      ],
+      "pros": [
+        "Sanat galerisi ve butik kokteyl barının sıcak uyumu",
+        "Özgün imza kokteyller ve günlük tatlılar"
+      ],
+      "cons": [
+        "Küçük kapasite nedeniyle etkinlik akşamları yer bulmak zor"
+      ],
+      "uncertainties": [
+        "Sergi ve canlı müzik takvimi haftalık değişir."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-il-boccalino",
+      "categoryId": "date",
+      "resolvedName": "il Boccalino 34",
+      "branchName": "Fenerbahçe, Operatör Cemil Topuzlu Cd. No:35, 34726, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJs5OiAny4yhQRjVqaOzMALV4",
+      "coordinates": {
+        "lat": 40.971954499999995,
+        "lng": 29.0522197
+      },
+      "rating": 4.5,
+      "userRatingCount": 951,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://instagram.com/ilboccalino34?igshid=MzMyNGUyNmU2YQ==",
+      "mapsUri": "https://maps.google.com/?cid=6786080433560509069",
+      "recommendedPrimary": [
+        "Limon Soslu Peynir Dolgulu Makarna",
+        "Fırın Melanzana Başlangıç",
+        "El Yapımı Taze Makarnalar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kişiselleştirilebilir Makarna Hamuru & Sos Eşleşmesi",
+          "note": "Misafirlerin taze makarna kesimini ve sos profilini damak tadına göre eşleştirebildiği butik İtalyan mutfağı yapısı.",
+          "proof": "Fenerbahçe İtalyan restoranları seçkileri ve müdavim notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Zarif iç salon ve cadde üstü bahçe masaları; akşam rezervasyon imkanı",
+        "crowdAndNoise": "Romantik akşam yemeği ve sakin aile buluşmalarına uygun klasik İtalyan restoranı havası",
+        "disadvantage": "Menü bilinçli olarak sınırlı ve öz tutulmuştur; Operatör Cemil Topuzlu Caddesi üzerinde akşamları özel araçla park yeri bulmak zaman alabilir.",
+        "transit": "Operatör Cemil Topuzlu Caddesi No:35 üzerinde Dalyan ve Çiftehavuzlar sınırına yakın."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — İstanbul El Yapımı Makarna Mekanları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Beyaz örtülü trattoria atmosferi ve taze İtalyan makarnalarıyla tanınan Fenerbahçe adresi"
+        },
+        {
+          "title": "Ekşi Sözlük — il Boccalino 34",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Limon soslu dolgulu makarnası, fırın melanzana ve sakin servisiyle beğeniliyor"
+        }
+      ],
+      "pros": [
+        "El yapımı taze İtalyan makarnaları ve klasik trattoria sıcaklığı",
+        "Şarap eşleşmeli sakin akşam ortamı"
+      ],
+      "cons": [
+        "Öz tutulan menü kapsamı ve cadde üzerinde park zorluğu"
+      ],
+      "uncertainties": [
+        "Özel sos ve taze makarna çeşitleri haftalık mutfak akışına göre değişebilir."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-nokta-kalamis",
+      "categoryId": "kahvalti",
+      "resolvedName": "Nokta Kalamış",
+      "branchName": "Fenerbahçe, Itri Dede Sok. No:22, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJ6WY6-nu4yhQRGC6ZyTiwMUQ",
+      "coordinates": {
+        "lat": 40.982539599999996,
+        "lng": 29.039578100000004
+      },
+      "rating": 4.8,
+      "userRatingCount": 211,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": false
+      },
+      "websiteUri": "http://www.noktakalamis.com/",
+      "mapsUri": "https://maps.google.com/?cid=4913902426384838168",
+      "recommendedPrimary": [
+        "Atalık Buğday Ekşi Mayalı Kahvaltı Tabağı",
+        "Ekşi Mayalı Simit & Poğaça",
+        "Ekşi Maya Ekmekli Sandviçler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Atalık Buğday Somun Ekmekleri & Üçüncü Dalga Kahve",
+          "note": "Kahvaltı sonrasında eve paket alınan taze ekşi maya somunlar ve nitelikli demleme kahve çeşitleri.",
+          "proof": "noktakalamis.com ve Kadıköy ekşi maya fırın rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık köşe iç mekan, kaldırım masaları ve fırın gel-al tezgahı",
+        "crowdAndNoise": "Sabah erken saatlerden itibaren mahalle sakinleri ve yürüyüşçülerle canlı sabah akışı",
+        "disadvantage": "Hafta sonu sabahlarında kaldırım masaları çabuk dolar ve günlük ekşi maya fırın çeşitleri öğleye doğru azalabilir.",
+        "transit": "Kalamış Itri Dede Sokak No:22 üzerinde Kalamış Parkı yürüyüş hattında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Nokta Kalamış Resmi Sitesi",
+          "url": "http://www.noktakalamis.com/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Atalık buğday ekşi mayalı ekmek, fırın kahvaltısı ve kahve menüsü"
+        },
+        {
+          "title": "The Magger — Kalamış Kahve ve Fırın Durakları",
+          "url": "https://www.themagger.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Atalık unlardan ekşi maya fırın ürünleri ve köşe kafe atmosferiyle öne çıkıyor"
+        },
+        {
+          "title": "Müdavim — Nokta Kalamış",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yüksek kahve ve hamur işi kalitesiyle Kalamış sabahlarının sevilen adresi"
+        }
+      ],
+      "pros": [
+        "Atalık buğday ekşi mayalı fırın ürünleri ve kahvaltı tabakları",
+        "Nitelikli kahve eşleşmesi ve köşe kaldırım oturumu"
+      ],
+      "cons": [
+        "Hafta sonu sabahları dış masalarda yoğunluk"
+      ],
+      "uncertainties": [
+        "Günlük çıkan ekşi maya somun çeşitleri fırın programına göre değişir."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-morney-kalamis",
+      "categoryId": "kahvalti",
+      "resolvedName": "Morney Eatery & Drink",
+      "branchName": "Zühtüpaşa, Itri Dede Sok., 34724 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJNds4Qg-5yhQRPSe1SH8m9Mc",
+      "coordinates": {
+        "lat": 40.982957899999995,
+        "lng": 29.0385225
+      },
+      "rating": 4.9,
+      "userRatingCount": 87,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/morney.brunchandcoffee?igsh=MWRqMnIzcDQ3bWRwNw==",
+      "mapsUri": "https://maps.google.com/?cid=14408183435987593021",
+      "recommendedPrimary": [
+        "Dana Jambonlu Tost",
+        "Çılbır Tabağı",
+        "Morney Sanayi Tost"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Öğle Saatlerinde Vişne Soslu Tavuk & Ev Yapımı Ayran",
+          "note": "Sabah tost ve yumurta servisinin ardından öğle saatlerinde çıkan özgün sıcak tabak ve köpüklü ev ayranı.",
+          "proof": "Kalamış yerel lezzet paylaşımları ve müdavim değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt sokak içi masa düzeni ve hızlı gel-al servisi",
+        "crowdAndNoise": "Sabah kahvaltısı ve öğle molasında sakin mahalle kitlesi",
+        "disadvantage": "Küçük mahalle dükkanı kapasitesindedir ve gurme tost fiyatları standart büfelere kıyasla üst aralıktadır.",
+        "transit": "Kalamış girişindeki Itri Dede Sokak aksında Rüştiye ve Fener Kalamış bağlantısında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Kalamış Kahvaltı ve Tost Durakları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Gurme tostları, çılbır tabağı ve ev yapımı ayranıyla öne çıkan butik dükkan"
+        },
+        {
+          "title": "Müdavim — Morney Eatery & Drink",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Özenli malzeme kalitesi ve sıcak mahalle servisiyle 4.9 ortalamasını koruyor"
+        }
+      ],
+      "pros": [
+        "Bol malzemeli gurme tostlar ve özenli çılbır tabakları",
+        "Yüksek hijyen ve servis memnuniyeti"
+      ],
+      "cons": [
+        "Kompakt dükkan kapasitesi ve standart üstü tost fiyatlandırması"
+      ],
+      "uncertainties": [
+        "Öğle sıcak tabakları günlük değişim gösterebilir."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-elane-fenerbahce",
+      "categoryId": "kahvalti",
+      "resolvedName": "E’Lane Coffee Shop & Bakery",
+      "branchName": "Fenerbahçe, Demet Sk 2b, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJd8x9VSi5yhQRdSuJ8jXmp0E",
+      "coordinates": {
+        "lat": 40.971055899999996,
+        "lng": 29.042878299999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 89,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4731003052952726389",
+      "recommendedPrimary": [
+        "Taze Tereyağlı Kruvasan",
+        "Günlük Fırın Tatlıları",
+        "Sabah Kahvaltı Eşlikçileri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Dalyan Sokaklarında Kruvasan & Sabah Kahvesi Molası",
+          "note": "Sahil yürüyüşü öncesi ağır serpme yerine hafif fırın kahvaltısı arayanlara hitap eden taze kruvasan-kahve ikilisi.",
+          "proof": "Fenerbahçe Dalyan fırın-kafe notları ve yerel topluluk değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sakin ara sokak önü masaları, minik iç oturum ve fırın paket servisi",
+        "crowdAndNoise": "Dalyan sakinlerinin sabah yürüyüşünde uğradığı sessiz ve huzurlu mahalle ortamı",
+        "disadvantage": "Sakin ara sokaktaki minik mekan yapısı geniş kalabalık sofralardan ziyade iki-üç kişilik kruvasan ve kahve kahvaltısına uygundur.",
+        "transit": "Fenerbahçe Dalyan Demet Sokak No:2B üzerinde Dr. Faruk Ayanoğlu ve sahil aksı yakınında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Dalyan Sabah ve Fırın Durakları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tereyağlı kruvasanları ve sakin ara sokak atmosferiyle sevilen fırın-kafe"
+        },
+        {
+          "title": "Müdavim — E’Lane Coffee Shop & Bakery",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çıtır katmanlı kruvasanları ve güler yüzlü servisiyle mahalle müdavimliği oluşturmuş"
+        }
+      ],
+      "pros": [
+        "Taze tereyağlı kruvasan ve fırın tatlıları",
+        "Kalabalıktan uzak huzurlu Dalyan ara sokağı"
+      ],
+      "cons": [
+        "Küçük oturma kapasitesi nedeniyle kalabalık gruplara uygun değil"
+      ],
+      "uncertainties": [
+        "Sabah çıkan kruvasan ve tatlı çeşitleri öğleden sonra sınırlanabilir."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-kalamissia",
+      "categoryId": "kahvalti",
+      "resolvedName": "Kalamissia Kafe",
+      "branchName": "Fenerbahçe, Fener Kalamış Cd. No:59 D:1a, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJpcDh-cu5yhQRLxg4KmQt9YA",
+      "coordinates": {
+        "lat": 40.9745024,
+        "lng": 29.0425303
+      },
+      "rating": 4.5,
+      "userRatingCount": 506,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "http://www.kalamissia.com/",
+      "mapsUri": "https://maps.google.com/?cid=9292383314377185327",
+      "recommendedPrimary": [
+        "Fırında Kabak Mücveri",
+        "Patlıcanlı Kiş",
+        "Ev Reçelli Kahvaltı Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Öğle Servisinde Somonlu Salata & Ev Yapımı Kekler",
+          "note": "Kahvaltı saatleri sonrasında hafif öğle yemeği ve çay saati için günlük hazırlanan salata ve kek seçkisi.",
+          "proof": "kalamissia.com ve Kalamış kahvaltı rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Camlı cadde önü verandası ve aydınlık iç salon masaları",
+        "crowdAndNoise": "Hafta sonu aile ve arkadaş buluşmalarıyla canlı ama sohbete elverişli brunch temposu",
+        "disadvantage": "Porsiyonlar butik ölçülüdür ve Pazar brunch saatlerinde cadde üstü masalarda yoğunluk yaşanır.",
+        "transit": "Fener Kalamış Caddesi No:59 D:1A üzerinde Kalamış Marina karşısı yürüyüş hattında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Kalamissia Kafe Resmi Sitesi",
+          "url": "http://www.kalamissia.com/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Fener Kalamış Caddesi ev yapımı kahvaltı, kiş ve pasta menüsü"
+        },
+        {
+          "title": "ExploreKadikoy — Kalamış Kahvaltı Rehberi",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ev yapımı reçelleri, mücveri ve patlıcanlı kiş tabaklarıyla klasikleşen Kalamış kafe"
+        },
+        {
+          "title": "Müdavim — Kalamissia Kafe",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Temiz sunumu, taze reçelleri ve sabit kalan mutfak kalitesiyle beğeniliyor"
+        }
+      ],
+      "pros": [
+        "Ev yapımı reçeller, mücver ve tuzlu kiş seçenekleri",
+        "Kalamış sahil hattında uzun yıllardır değişmeyen istikrar"
+      ],
+      "cons": [
+        "Pazar brunch saatlerinde cadde üstü masalarda yoğunluk ve butik porsiyonlar"
+      ],
+      "uncertainties": [
+        "Günlük ev tatlıları mevsime göre değişebilmektedir."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-affan-ocakbasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Affan Ocakbaşı",
+      "branchName": "Fenerbahçe, Dr. Faruk Ayanoğlu Cd. No: 1/D, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJL6qZCYnHyhQRTpZXe4TxoUI",
+      "coordinates": {
+        "lat": 40.976617,
+        "lng": 29.047890199999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 2032,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4801384229060974158",
+      "recommendedPrimary": [
+        "Yağlı Kara & Şaşlık",
+        "Çıtır Fındık Lahmacun",
+        "Fıstıklı Antakya Humusu & Abagannuş"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Antakya Mutfağı Mezeleri & Sıcak Künefe",
+          "note": "Klasik ocakbaşı çizgisini Hatay mutfağının zengin başlangıçları ve sıcak künefe kapanışıyla tamamlayan masa düzeni.",
+          "proof": "Anadolu Yakası ocakbaşı seçkileri ve müdavim değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Keyifli bahçe bölümü, ocakbaşı çevresi ve üst kat salon masaları (rezervasyon önerilir)",
+        "crowdAndNoise": "Akşamları dost masaları ve ocakbaşı müdavimleriyle canlı, sıcak atmosfer",
+        "disadvantage": "Üst kat salonu bahçe bölümüne göre daha basık hissedilebilir; akşam için bahçe tarafına önceden rezervasyon yaptırmak gerekir.",
+        "transit": "Dr. Faruk Ayanoğlu Caddesi No:1/D üzerinde Fener Kalamış kesişimine yakın."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Harbiyiyorum — Anadolu Yakası Antakya Ocakbaşı Durakları",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Antakya mezeleri, yağlı kara ve şaşlık kebabıyla Fenerbahçe’nin sevilen ocakbaşısı"
+        },
+        {
+          "title": "Ekşi Sözlük — Affan Ocakbaşı Fenerbahçe",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bahçe atmosferi, sıcak mezeleri ve et pişirimiyle yüksek puan alıyor"
+        }
+      ],
+      "pros": [
+        "Zengin Antakya mezeleri ve sulu yağlı kara-şaşlık",
+        "Keyifli bahçe masaları ve özenli servis"
+      ],
+      "cons": [
+        "Üst kat salonunun görece basık olması ve akşam bahçe rezervasyonu ihtiyacı"
+      ],
+      "uncertainties": [
+        "Hafta sonları yoğun saatlerde ara sıcak servisi uzayabilir."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-damak-kofte-kebap",
+      "categoryId": "denemelisin",
+      "resolvedName": "Damak Köfte & Kebap",
+      "branchName": "Taç Apartmanı, Fenerbahçe, Itri Dede Sok. No: 2 D:A, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJYzPsSEe5yhQRoTV_RXQvMq0",
+      "coordinates": {
+        "lat": 40.9822603,
+        "lng": 29.0405347
+      },
+      "rating": 4.9,
+      "userRatingCount": 230,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12480089693825742241",
+      "recommendedPrimary": [
+        "Satır Kıyması İmza Köfte",
+        "Antep Usulü Alinazik",
+        "Kuru Patlıcan Dolması"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Yoğurt İkramı & Antep İşi Kuru Dolma",
+          "note": "Izgara etlerin yanında sunulan koyu kıvamlı ev yoğurdu ve özenli Antep dolması.",
+          "proof": "Kalamış esnaf lezzetleri notları ve mahalle müdavim paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Az masalı sade esnaf lokantası düzeni ve paket servis",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde mahalle sakinleri ve müdavimlerle sakin, samimi ortam",
+        "disadvantage": "Çok küçük ve mütevazı bir esnaf lokantası olduğu için kalabalık grup oturumlarına uygun değildir.",
+        "transit": "Kalamış Itri Dede Sokak No:2 D:A üzerinde Kızıltoprak-Kalamış giriş aksında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Kalamış Gizli Esnaf Durakları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Itri Dede Sokak’ta satır kıyması köfte ve Antep lezzetleri sunan aile işletmesi"
+        },
+        {
+          "title": "Müdavim — Damak Köfte & Kebap",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yüksek hijyen, lezzetli alinazik ve samimi esnaf sıcaklığıyla 4.9 ortalamasında"
+        }
+      ],
+      "pros": [
+        "Zırh-satır kıymasından ızgara köfte ve Antep yemekleri",
+        "Ekonomik ve samimi tek şube esnaf işletmesi"
+      ],
+      "cons": [
+        "Küçük dükkan ölçeği nedeniyle kalabalık gruplara uygun değil"
+      ],
+      "uncertainties": [
+        "Kuru patlıcan dolması günlük hazırlık miktarına göre akşam saatlerinde bitebilir."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-payyar-ocakbasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Payyar Ocakbaşı",
+      "branchName": "Fenerbahçe, Fener Kalamış Cd. No: 79/A, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJA0FOTzy5yhQRcWoH5wdp0AI",
+      "coordinates": {
+        "lat": 40.9710375,
+        "lng": 29.039192699999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 593,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=202777465893382769",
+      "recommendedPrimary": [
+        "Payyar Çıtır Lahmacun",
+        "Kuzu Çöp Şiş & Adana Kebap",
+        "Şef Dokunuşlu Soğuk Mezeler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yarım Porsiyon Seçilebilen Ocakbaşı Mezeleri",
+          "note": "İki kişilik masalarda israf olmadan daha fazla meze çeşidi tatmaya imkan tanıyan esnek başlangıç servisi.",
+          "proof": "Fenerbahçe akşam mekanları seçkileri ve topluluk değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ferah iç salon, açık hava bölümü ve rezervasyonlu akşam servisi",
+        "crowdAndNoise": "Akşam yemeği ve kutlama masalarıyla özenli ve enerjik ortam",
+        "disadvantage": "Üst bütçe segmentindedir ve hafta sonu akşamları rezervasyonsuz masa bulmak güçtür.",
+        "transit": "Fener Kalamış Caddesi No:79/A üzerinde Kalamış Parkı karşısı aksında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Yeni Nesil Ocakbaşı Seçkisi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Modern ambiyans, yarım porsiyon meze esnekliği ve lahmacunuyla öne çıkan Fener Kalamış mekanı"
+        },
+        {
+          "title": "Ekşi Sözlük — Payyar Ocakbaşı",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çöp şiş, lahmacun ve meze kalitesiyle beğeni topluyor"
+        }
+      ],
+      "pros": [
+        "Şık modern ocakbaşı salonu ve yarım porsiyon meze seçeneği",
+        "Dengeli et pişirimi ve çıtır lahmacun"
+      ],
+      "cons": [
+        "Üst fiyat segmenti ve hafta sonu rezervasyon ihtiyacı"
+      ],
+      "uncertainties": [
+        "Sezonsal meze çeşitleri menüde dönemsel değişebilir."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-min-mutfak",
+      "categoryId": "denemelisin",
+      "resolvedName": "Min Mutfak",
+      "branchName": "Fenerbahçe, Hacı Mehmet Efendi Sk. İş Bankası Vakıf Blokları No:24 D:4a, 34000 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJoxeYla65yhQRHgLKC3R4cXw",
+      "coordinates": {
+        "lat": 40.9734653,
+        "lng": 29.048040600000004
+      },
+      "rating": 4.6,
+      "userRatingCount": 181,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8967080772880695838",
+      "recommendedPrimary": [
+        "Kabak Çiçekli El Yapımı Makarna",
+        "Fırın Lazanya",
+        "Açık Mutfak Günlük Tabakları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bahçede Cappuccino & Ev Yapımı Tatlı Kapanışı",
+          "note": "Öğle ve akşam yemeklerinin ardından sakin sokak bahçesinde kahveyle alınan günlük tatlılar.",
+          "proof": "Fenerbahçe mahalle mutfakları seçkisi ve yerel paylaşımlar"
+        }
+      ],
+      "suitability": {
+        "seating": "Açık mutfak önü küçük salon ve sakin bahçe/kaldırım masaları",
+        "crowdAndNoise": "Öğle ve erken akşam saatlerinde semt sakinleriyle huzurlu, ev sıcaklığında ortam",
+        "disadvantage": "Açık mutfaklı küçük bir mahalle lokantası olduğu için masa sayısı azdır ve taze hazırlık nedeniyle yoğun saatlerde kısa bekleme olabilir.",
+        "transit": "Fenerbahçe Hacı Mehmet Efendi Sokak No:24 D:4A üzerinde Bağdat Caddesi ve sahil arasındaki sokak dokusunda."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Fenerbahçe Butik Mahalle Mutfakları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Açık mutfak şeffaflığı ve ev yapımı makarnalarıyla tanınan sıcak sokak lokantası"
+        },
+        {
+          "title": "Müdavim — Min Mutfak",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kabak çiçekli makarna, lazanya ve bahçe kahvesiyle yüksek puan topluyor"
+        }
+      ],
+      "pros": [
+        "Açık mutfakta günlük taze makarna ve ev yemekleri",
+        "Sakin sokak bahçesi ve samimi servis"
+      ],
+      "cons": [
+        "Küçük dükkan nedeniyle masa sayısı az"
+      ],
+      "uncertainties": [
+        "Mevsimlik günlük tabaklar haftalık malzeme tedarikine göre değişir."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-inkase",
+      "categoryId": "denemelisin",
+      "resolvedName": "İnkase",
+      "branchName": "Fenerbahçe, Dr. Faruk Ayanoğlu Cd. no:31, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJT06dg1W5yhQRTjcm6eju6rw",
+      "coordinates": {
+        "lat": 40.9724383,
+        "lng": 29.0448195
+      },
+      "rating": 4.5,
+      "userRatingCount": 630,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.inkase.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=13612955507792164686",
+      "recommendedPrimary": [
+        "Jamaika Usulü Tavuklu Kase",
+        "Somon veya Enginarlı Levrek Kase",
+        "Pancar Mücver Kase"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zencefilli Havuç Çorbası & Az Şekerli Fesleğenli Limonata",
+          "note": "Kaselerin yanında mevsimine göre tercih edilen sıcak sebze çorbası ve ferahlatıcı ev yapımı içecekler.",
+          "proof": "inkase.com.tr menüsü ve Kadıköy sağlıklı beslenme rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ferah iç-dış masalar ve hızlı paket servis düzeni",
+        "crowdAndNoise": "Dalyan sahilinde spor yapanlar ve hafif öğle-akşam öğünü arayanlarla canlı akış",
+        "disadvantage": "Sağlıklı kase mutfağı konseptinde olduğundan klasik ağır akşam yemeği arayanlara hitap etmez; öğle saatlerinde yoğunlaşır.",
+        "transit": "Dr. Faruk Ayanoğlu Caddesi No:31 üzerinde Dalyan sahil bandına çok yakın."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "İnkase Resmi Sitesi",
+          "url": "http://www.inkase.com.tr/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Fenerbahçe Dalyan kase menüsü ve temiz içerik yaklaşımı"
+        },
+        {
+          "title": "The Magger — İstanbul Sağlıklı Kase Durakları",
+          "url": "https://www.themagger.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tahıl-protein dengeli kaseleri ve ev yapımı soslarıyla Dalyan’da öne çıkıyor"
+        },
+        {
+          "title": "Ekşi Sözlük — İnkase Fenerbahçe",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Doyurucu porsiyonları, taze somon ve tavuk kaseleriyle beğeniliyor"
+        }
+      ],
+      "pros": [
+        "Dengeli protein-sebze kaseleri ve temiz sos reçeteleri",
+        "Dalyan sahil yürüyüşü sonrası pratik öğle-akşam adresi"
+      ],
+      "cons": [
+        "Öğle saatlerinde artan yoğunluk; sadece kase mutfağı konsepti"
+      ],
+      "uncertainties": [
+        "Mevsimsel çorba ve tatlı çeşitleri dönemsel güncellenir."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-cagdas-ev-yemekleri",
+      "categoryId": "denemelisin",
+      "resolvedName": "Çağdaş Ev Yemekleri",
+      "branchName": "Fenerbahçe mh.Bağdat cd, Fenerbahçe, Rüştiye Sk. no:3/B, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJv0rC4Hu4yhQRpSOowSOirSw",
+      "coordinates": {
+        "lat": 40.983125400000006,
+        "lng": 29.0398385
+      },
+      "rating": 4.6,
+      "userRatingCount": 75,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.cagdasevyemek.com/",
+      "mapsUri": "https://maps.google.com/?cid=3219407583096349605",
+      "recommendedPrimary": [
+        "Fırın Tavuk & Tereyağlı Pilav",
+        "Zeytinyağlı Biber Dolması",
+        "Günlük Nohut ve Ciğer Tava"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ekonomik Esnaf İşi Sulu Tencere Yemekleri",
+          "note": "Kalamış’ın yüksek bütçeli restoranları arasında ev usulü günlük sıcak yemek arayanlar için sade alternatif.",
+          "proof": "Kalamış mahalle esnafı notları ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Sade esnaf lokantası iç-dış masaları ve hızlı tezgah servisi",
+        "crowdAndNoise": "Öğle saatlerinde semt sakinleri ve çevre çalışanlarıyla düzenli, sakin akış",
+        "disadvantage": "Gösterişten uzak sade esnaf lokantası düzenindedir ve sevilen tencere çeşitleri öğleden sonra erken bitebilir.",
+        "transit": "Kalamış Rüştiye Sokak No:3/B üzerinde Itri Dede Sokak komşuluğunda."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Kalamış Öğle Esnaf Durakları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kalamış’ta günlük tencere yemekleri ve ekonomik fiyatlarıyla bilinen ev yemekçisi"
+        },
+        {
+          "title": "Müdavim — Çağdaş Ev Yemekleri",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Temiz tencere yemekleri, pilavı ve zeytinyağlılarıyla düzenli müdavim kitlesine sahip"
+        }
+      ],
+      "pros": [
+        "Günlük taze zeytinyağlılar ve ev usulü tencere yemekleri",
+        "Kalamış çevresine göre ekonomik esnaf fiyatı"
+      ],
+      "cons": [
+        "Sade esnaf lokantası düzeni ve erken biten popüler çeşitler"
+      ],
+      "uncertainties": [
+        "Günlük çıkan ana yemek listesi her gün yenilenir."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-buontalenti",
+      "categoryId": "denemelisin",
+      "resolvedName": "Buontalenti Fenerbahçe",
+      "branchName": "Fenerbahçe, Dr. Faruk Ayanoğlu Cd. No:34 D:36C, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJYw2c4ae5yhQR2qoJEVfy25c",
+      "coordinates": {
+        "lat": 40.9730414,
+        "lng": 29.0447786
+      },
+      "rating": 4.7,
+      "userRatingCount": 85,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10942606175388674778",
+      "recommendedPrimary": [
+        "Mevsim Meyveli Artizan Sorbe",
+        "Katkısız İtalyan Gelato",
+        "Bitter Çikolata & Fıstıklı Gelato"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Dalyan Sahil Yürüyüşü İçin Taze Meyve Sorbeleri",
+          "note": "Süt ürünü içermeyen ferahlatıcı meyve sorbeleriyle sahil yürüyüşünde sevilen tatlı molası.",
+          "proof": "Kadıköy artizan dondurma seçkileri ve mahalle değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tezgah önü al-götür servisi ve çok sınırlı sokak önü oturumu",
+        "crowdAndNoise": "Özellikle güneşli günlerde ve akşam yürüyüşlerinde sahil kalabalığıyla hareketli",
+        "disadvantage": "Küçük gel-al dükkanı olduğundan oturma alanı çok sınırlıdır ve top porsiyonuna göre fiyatları semt ortalamasının üzerindedir.",
+        "transit": "Dr. Faruk Ayanoğlu Caddesi No:34 D:36C üzerinde Dalyan sahil yürüyüş hattında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — İstanbul Artizan Gelato Dükkanları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Katkısız İtalyan gelato ve meyve sorbeleriyle Dalyan yürüyüşünde tercih ediliyor"
+        },
+        {
+          "title": "Müdavim — Buontalenti Fenerbahçe",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Doğal malzeme aroması ve yoğun kıvamıyla yüksek beğeni topluyor"
+        }
+      ],
+      "pros": [
+        "Katkısız, yoğun aromalı artizan gelato ve taze sorbe çeşitleri",
+        "Dalyan sahil bandı yürüyüşüne çok uygun konum"
+      ],
+      "cons": [
+        "Oturma alanı neredeyse yok ve porsiyon başına fiyat yüksek"
+      ],
+      "uncertainties": [
+        "Mevsim meyvelerine göre sorbe çeşitleri haftalık değişir."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-largando",
+      "categoryId": "balik",
+      "resolvedName": "Largando",
+      "branchName": "Fenerbahçe, Dr. Faruk Ayanoğlu Cd. No:14, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJIbn8AgDHyhQRmh_0UAxUplw",
+      "coordinates": {
+        "lat": 40.975523700000004,
+        "lng": 29.046673699999996
+      },
+      "rating": 4.9,
+      "userRatingCount": 560,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6676115909497855898",
+      "recommendedPrimary": [
+        "Sıcak Ege Ot Tabağı",
+        "Izgara Ahtapot & Kalamar Dolma",
+        "Vongole & Karides"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Diri Pişirim Ege Otları & Deniz Mahsullü Ara Sıcaklar",
+          "note": "Klasik ağır kızartmalar yerine malzemenin kendi lezzetini koruyan hafif Ege otları ve kabuklu deniz ürünleri.",
+          "proof": "Anadolu Yakası balık restoranları seçkileri ve müdavim değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Zarif beyaz örtülü iç salon ve bahçe masaları (akşam rezervasyon önerilir)",
+        "crowdAndNoise": "Deniz mahsulü müdavimleri ve şık akşam masalarıyla sakin, özenli atmosfer",
+        "disadvantage": "Üst fiyat segmentindedir ve akşam servisinde masalar hızla dolduğu için önceden rezervasyon yaptırmak gerekir.",
+        "transit": "Dr. Faruk Ayanoğlu Caddesi No:14 üzerinde Fenerbahçe Parkı ve Dalyan yürüyüş aksında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Anadolu Yakası Seçkin Balık Restoranları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ege otları, kabuklu deniz ürünleri ve rafine servisiyle Fenerbahçe’nin öne çıkan balıkçısı"
+        },
+        {
+          "title": "Ekşi Sözlük — Largando Fenerbahçe",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ahtapot, kalamar dolma ve ot tabaklarıyla 4.9 yıldız tutarlılığını koruyor"
+        }
+      ],
+      "pros": [
+        "Özenli pişirilmiş deniz mahsulleri ve sıcak Ege otları",
+        "Zarif atmosfer ve güçlü şarap/rakı servisi"
+      ],
+      "cons": [
+        "Üst fiyat segmenti ve akşamları rezervasyon zorunluluğu"
+      ],
+      "uncertainties": [
+        "Vongole ve özel kabuklu ürünleri günlük hal gelişine göre değişir."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-patrica",
+      "categoryId": "balik",
+      "resolvedName": "Patriça",
+      "branchName": "Fenerbahçe, Münir Nurettin Selçuk Cd. No:34, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJaecWRQS5yhQRNfR6yGElZ7E",
+      "coordinates": {
+        "lat": 40.9761376,
+        "lng": 29.0412985
+      },
+      "rating": 4.7,
+      "userRatingCount": 717,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12783227169219998773",
+      "recommendedPrimary": [
+        "Ayvalık & Cunda Usulü Deniz Mezeleri",
+        "Sıcak Deniz Mahsulleri",
+        "Günün Mevsim Balığı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yarım Porsiyon Seçilebilen Ege-Ayvalık Meze Sofrası",
+          "note": "Masada farklı Cunda ve Kuzey Ege mezelerini denemeye olanak veren esnek porsiyon kurgusu.",
+          "proof": "Kalamış Marina restoran seçkileri ve yerel gastronomi değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Marina atmosferinde ferah salon ve açık hava masaları (rezervasyon önerilir)",
+        "crowdAndNoise": "Özel akşam yemekleri ve deniz kenarı meze sofralarıyla seçkin, dingin ortam",
+        "disadvantage": "Üst bütçe seviyesindedir, girişi dar bir koridordan sağlanır ve bazı soğuk mezelerde tuz dengesi mevsime göre değişkenlik gösterebilir.",
+        "transit": "Münir Nurettin Selçuk Caddesi No:34 üzerinde Kalamış Marina sahil hattında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Kalamış Marina Restoran Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ayvalık-Cunda esintili mezeleri ve yarım porsiyon seçeneğiyle öne çıkan sahil balıkçısı"
+        },
+        {
+          "title": "Ekşi Sözlük — Patriça Kalamış",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ege mezeleri, ferah marina kıyısı ortamı ve özenli servisiyle beğeniliyor"
+        }
+      ],
+      "pros": [
+        "Yarım porsiyon seçilebilen Ayvalık-Cunda mezeleri",
+        "Kalamış Marina sahilinde şık masa düzeni"
+      ],
+      "cons": [
+        "Üst bütçe bandı ve dar giriş koridoru"
+      ],
+      "uncertainties": [
+        "Mevsim balık çeşitleri günlük hale göre belirlenir."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-capa-milos-balik",
+      "categoryId": "balik",
+      "resolvedName": "Çapa Milos Balık",
+      "branchName": "Fenerbahçe, Dr. Faruk Ayanoğlu Cd. No:1, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJxbxHP4DHyhQRC11XyTNk1Mc",
+      "coordinates": {
+        "lat": 40.9763064,
+        "lng": 29.0477883
+      },
+      "rating": 4.5,
+      "userRatingCount": 232,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14399244082194373899",
+      "recommendedPrimary": [
+        "Tereyağlı Jumbo Karides",
+        "Fava & Atom",
+        "Günlük Izgara Mevsim Balığı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Humus & Mahalle İşi Balık Mezeleri",
+          "note": "Marina restoranlarına kıyasla daha sıcak ve samimi mahalle sofrası kurgusunda sunulan ara sıcaklar.",
+          "proof": "Fenerbahçe yerel balıkçı değerlendirmeleri ve müdavim notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Samimi iç salon ve sokak kenarı açık oturma düzeni",
+        "crowdAndNoise": "Fenerbahçe sakinleri ve müdavim dost masalarıyla rahat, gösterişten uzak akşam havası",
+        "disadvantage": "Müdavim ağırlıklı samimi bir mahalle balıkçısı olduğu için balık çeşitliliği büyük marina restoranlarına kıyasla daha öz tutulur.",
+        "transit": "Dr. Faruk Ayanoğlu Caddesi No:1 üzerinde Fener Kalamış kavşağı yakınında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Fenerbahçe Mahalle Balıkçıları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Samimi atmosferi, tereyağlı karidesi ve taze mezeleriyle müdavim balıkçısı"
+        },
+        {
+          "title": "Müdavim — Çapa Milos Balık",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sıcak humusu ve mahalle balıkçısı yaklaşımıyla düzenli beğeni topluyor"
+        }
+      ],
+      "pros": [
+        "Samimi mahalle balıkçısı sıcaklığı",
+        "Taze meze dolabı ve başarılı ara sıcaklar"
+      ],
+      "cons": [
+        "Büyük marina mekanlarına göre daha öz balık çeşitliliği"
+      ],
+      "uncertainties": [
+        "Sezonsal balık çeşitleri günlük tedarike bağlıdır."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-saca-marin",
+      "categoryId": "balik",
+      "resolvedName": "Saca Marin",
+      "branchName": "Fenerbahçe, Münir Nurettin Selçuk Cd. No:42, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJw--7RXy4yhQRLx25d5jivcQ",
+      "coordinates": {
+        "lat": 40.977909,
+        "lng": 29.040845799999996
+      },
+      "rating": 4.4,
+      "userRatingCount": 1063,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://sacamarin.com/",
+      "mapsUri": "https://maps.google.com/?cid=14176736346503716143",
+      "recommendedPrimary": [
+        "Karamelize Soğanlı Sıcak Fava",
+        "Gemici Salatası",
+        "Taze Mevsim Balıkları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kalamış Marina Karşısında Kutlama Masası & Sıcak Fava",
+          "note": "Geniş masa düzeni sayesinde aile yemekleri ve kutlamalarda öne çıkan sıcak başlangıç ve balık servisi.",
+          "proof": "sacamarin.com ve Kalamış sahil restoranları rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç salon, marina karşısı teras-bahçe masaları ve vale/rezervasyon imkanı",
+        "crowdAndNoise": "Aile kutlamaları ve kalabalık akşam sofralarıyla hareketli sahil restoranı atmosferi",
+        "disadvantage": "Kalamış Marina karşısındaki konumu nedeniyle üst fiyat segmentindedir ve hafta sonu akşamları yoğunlaşır.",
+        "transit": "Münir Nurettin Selçuk Caddesi No:42 üzerinde Kalamış Marina sahil bandında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Saca Marin Resmi Sitesi",
+          "url": "http://sacamarin.com/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Kalamış Marina sahil balık restoranı menü ve masa bilgileri"
+        },
+        {
+          "title": "Harbiyiyorum — Kalamış Sahil Balık Restoranları",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Karamelize soğanlı sıcak fava ve geniş aile sofralarıyla öne çıkan köklü adres"
+        },
+        {
+          "title": "Ekşi Sözlük — Saca Marin Kalamış",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kalabalık kutlamalar ve meze çeşitliliği için tercih ediliyor"
+        }
+      ],
+      "pros": [
+        "Karamelize soğanlı sıcak fava ve gemici salatası",
+        "Kalabalık grup ve aile yemeklerine uygun geniş alan"
+      ],
+      "cons": [
+        "Marina konumu nedeniyle üst fiyat seviyesi ve hafta sonu yoğunluğu"
+      ],
+      "uncertainties": [
+        "Hafta sonu grupları için fiks/grup menü koşulları değişebilir."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fk-todori",
+      "categoryId": "balik",
+      "resolvedName": "Todori Fenerbahçe",
+      "branchName": "Fenerbahçe, Fener Kalamış Cd. No:46, 34726 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJQ-1YXZC4yhQRGLljXaFBQpY",
+      "coordinates": {
+        "lat": 40.9767162,
+        "lng": 29.0420794
+      },
+      "rating": 4.3,
+      "userRatingCount": 1765,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.fenerbahcetodori.com/",
+      "mapsUri": "https://maps.google.com/?cid=10827288615464450328",
+      "recommendedPrimary": [
+        "Todori Topik",
+        "Levrek Marin",
+        "Izgara Kalamar & Mevsim Balığı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarihi Kalamış Köşkü Bahçesi & Fırında Sıcak Helva",
+          "note": "Asırlık köşk bahçesinde meze ve balık sofrasının klasikleşmiş fırın helva kapanışı.",
+          "proof": "fenerbahcetodori.com ve İstanbul tarihi meyhaneler seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi köşk salonu ve ağaçlıklı geniş bahçe masaları (rezervasyon önerilir)",
+        "crowdAndNoise": "Klasik Kalamış meyhane kültürünü seven müdavim ve misafir gruplarıyla canlı akşam ortamı",
+        "disadvantage": "Üst fiyat seviyesindedir ve tarihi köşk bahçesi çok sevildiği halde yoğun akşamlarda bazı mezelerin lezzet tutarlılığı dalgalanabilir.",
+        "transit": "Fener Kalamış Caddesi No:46 üzerinde Kalamış Marina ve Fenerbahçe aksında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Todori Fenerbahçe Resmi Sitesi",
+          "url": "http://www.fenerbahcetodori.com/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Tarihi Kalamış köşkü, topik, Girit ve Rum meze çeşitleri"
+        },
+        {
+          "title": "Harbiyiyorum — İstanbul Tarihi Meyhaneleri",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Anadolu Yakası’nın köklü Kalamış meyhane geleneğini sürdüren mekan"
+        },
+        {
+          "title": "Ekşi Sözlük — Todori Fenerbahçe",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Topik, köşk bahçesi ve nostaljik atmosferiyle klasikleşmiş adres"
+        }
+      ],
+      "pros": [
+        "Tarihi Kalamış köşkü bahçesi ve köklü meyhane kültürü",
+        "İmza topik ve levrek marin mezeleri"
+      ],
+      "cons": [
+        "Üst fiyat segmenti ve yoğun akşamlarda değişkenlik gösterebilen meze tutarlılığı"
+      ],
+      "uncertainties": [
+        "Sezon balık çeşitleri günlük hal gelişine göre değişir."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    }
+  ]
+}

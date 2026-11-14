@@ -97,6 +97,18 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'mr.dumpling',
   'mr dumpling',
   'pizzalazza',
+  'simple co',
+  'flân',
+  'flan eatery',
+  '5masa',
+  'develi',
+  'bedri usta',
+  'günaydın kebap',
+  'gunaydin kebap',
+  'divan brasserie',
+  'divan pastanesi',
+  'perran ocakbaşı',
+  'perran ocakbasi',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([

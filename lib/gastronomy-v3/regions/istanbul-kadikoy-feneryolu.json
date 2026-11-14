@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "verifiedAt": "2026-11-14T14:16:37.737Z",
+  "verifiedAt": "2026-11-14T15:23:43.843Z",
   "region": {
     "id": "feneryolu-kadikoy",
     "slug": "feneryolu",
@@ -657,19 +657,22 @@
   ],
   "nearbyVenues": [
     {
-      "id": "nearby-via-pizzeria-fenerbahce",
+      "id": "fk-via-pizzeria",
       "placeId": "ChIJ00YGBg_HyhQRtXoA3bfsIFA",
       "name": "Via Pizzeria",
       "address": "Fenerbahçe, Hacı Mehmet Efendi Sk. :6/b, 34726 Kadıköy/İstanbul, Türkiye",
-      "neighborhood": "Selamiçeşme (Fenerbahçe), Kadıköy",
+      "neighborhood": "Hacı Mehmet Efendi Sk., Fenerbahçe",
       "categoryId": "pizza",
+      "secondaryCategoryIds": [
+        "date"
+      ],
       "rating": 4.9,
       "mapsUri": "https://maps.google.com/?cid=5773874996719942325",
       "coordinates": {
         "lat": 40.975141,
         "lng": 29.049825000000002
       },
-      "description": "Bağdat Caddesi güneyindeki Hacı Mehmet Efendi Sokak’ta incecik çıtır-yumuşak dengeli hamurlu İtalyan pizzaları, el yapımı fettuccine tabakları ve sıcak ikramlarıyla sevilen Fenerbahçe pizzacısı.",
+      "description": "Hacı Mehmet Efendi Sokak’ta çıtır-yumuşak dengeli ince İtalyan pizza hamuru, el yapımı taze fettuccine tabakları ve sıcak servisiyle öne çıkan butik Fenerbahçe pizzacısı.",
       "whatToOrder": [
         "Entrecote Pizza",
         "Klasik Margherita",
@@ -681,163 +684,169 @@
         "Espresso"
       ],
       "alsoTry": [
-        "Taze Fettuccine & Ev Yapımı Tiramisu — Pizza dışında akşam masalarında iki kişilik paylaşım için sıkça tercih edilen İtalyan makarna ve tiramisu kapanışı."
+        "İki Kişilik Taze Fettuccine & Ev Yapımı Tiramisu — Pizza dışında akşam masalarında paylaşım için sıkça tercih edilen el yapımı makarna ve mascarpone tatlısı kapanışı."
       ],
       "beforeYouGo": [
-        "Oturma & Servis: Sıcak iç salon, dış sokak masaları ve rezervasyon imkanı · Akşamları Selamiçeşme–Feneryolu komşularıyla keyifli akşam atmosferi",
-        "Dezavantaj: Akşam yemek saatlerinde sokak içi masalar hızla dolduğu için gitmeden rezervasyon sormak faydalı.",
-        "Ulaşım: Feneryolu sınırının hemen güneyinde Fenerbahçe Hacı Mehmet Efendi Sokak No:6/B’de.",
+        "Oturma & Servis: Samimi iç salon, sokak önü masaları ve rezervasyon imkanı · Akşamları sakin mahalle müdavimleri ve çiftlerle keyifli İtalyan lokantası temposu",
+        "Dezavantaj: Akşam yemek saatlerinde sokak içi masalar hızla dolduğu için gitmeden rezervasyon sormak faydalıdır; domates sosu yoğun Napoli stiline göre daha hafif profillidir.",
+        "Ulaşım: Fenerbahçe Hacı Mehmet Efendi Sokak No:6/B üzerinde Selamiçeşme ve Feneryolu yürüyüş sınırında.",
         "Bütçe seviyesi (Google): Orta"
       ],
-      "nearbyAreaLabel": "Selamiçeşme (Fenerbahçe), Kadıköy",
+      "nearbyAreaLabel": "Hacı Mehmet Efendi Sk., Fenerbahçe",
       "distanceKm": 0.15,
       "distanceMeters": 150
     },
     {
-      "id": "nearby-buffe-kalamis",
-      "placeId": "ChIJ6aKwQIG4yhQRT44eXXeqztk",
-      "name": "Büffe KALAMIŞ",
-      "address": "Fenerbahçe, Fener Kalamış Cd. 92-94/A, 34726 Kadıköy/İstanbul, Türkiye",
-      "neighborhood": "Fenerbahçe (Kalamış), Kadıköy",
+      "id": "fk-seri-street-food",
+      "placeId": "ChIJ2WgsAwC5yhQRXrnmps8n97o",
+      "name": "Seri Street Food",
+      "address": "Fenerbahçe, Dr. Faruk Ayanoğlu Cd. 24a, 34726 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Dr. Faruk Ayanoğlu Cd., Fenerbahçe",
       "categoryId": "hamburger",
+      "secondaryCategoryIds": [
+        "denemelisin"
+      ],
       "rating": 4.7,
-      "mapsUri": "https://maps.google.com/?cid=15694669181072870991",
+      "mapsUri": "https://maps.google.com/?cid=13472280583113980254",
       "coordinates": {
-        "lat": 40.9733835,
-        "lng": 29.0412077
+        "lat": 40.9741281,
+        "lng": 29.045526699999996
       },
-      "description": "Fener Kalamış Caddesi üzerinde gurme burgerleri, artizan sosislileri ve ev yapımı turşularıyla bilinen modern sokak lezzetleri büfesi.",
+      "description": "Dr. Faruk Ayanoğlu Caddesi’nde açık mutfak tezgahında fıstıklı ve Mihaliç kelle peynirli gurme burgerlerin yanı sıra tiftik etli sandviç ve ızgara uykuluk hazırlayan özgün sokak lezzeti durağı.",
       "whatToOrder": [
-        "Double Smash Burger",
-        "Büffe Classic Cheeseburger",
-        "Trüflü Burger"
+        "Fıstıklı Burger",
+        "Kelle Peynirli Burger",
+        "Tiftik Etli Sandviç"
       ],
       "menuFrom": [
-        "Gouda & Karamelize Soğanlı Burger",
         "Ev Yapımı Turşu",
+        "Baharatlı Patates Kızartması",
         "Soğuk İçecekler"
       ],
       "alsoTry": [
-        "Karamelize Soğanlı Gurme Sosisli & Trüflü Patates — Burger dışında mekanın diğer imza sokak lezzeti ve patates eşlikçisi."
+        "Izgara Uykuluk & Sokak İşi Sakatat Ekmek Arası — Klasik burger dükkanlarından farklı olarak müdavimlerin özellikle akşam saatlerinde tercih ettiği özenli sakatat tabakları."
       ],
       "beforeYouGo": [
-        "Oturma & Servis: Hızlı masa servisi, yüksek tezgah oturması ve al-götür düzeni · Kalamış yürüyüşü sonrası genç kalabalıkla enerjik ortam",
-        "Dezavantaj: Uzun akşam oturmasından ziyade hızlı ve kaliteli burger-sosisli molasına uygundur.",
-        "Ulaşım: Fener Kalamış Caddesi üzerinde Kalamış Parkı yürüyüş hattında.",
+        "Oturma & Servis: Açık mutfak karşısında kompakt iç ve kaldırım masaları ile gel-al servis · Öğleden akşama Fenerbahçe sakinleri ve sokak yemeği meraklılarıyla hareketli akış",
+        "Dezavantaj: Karı-koca işletilen açık mutfaklı butik bir sokak lezzeti durağı olduğu için oturma alanı dardır ve yoğun saatlerde sipariş beklemesi oluşabilir.",
+        "Ulaşım: Dr. Faruk Ayanoğlu Caddesi No:24A üzerinde Dalyan ve Fenerbahçe Parkı yürüyüş hattında.",
         "Bütçe seviyesi (Google): Orta"
       ],
-      "nearbyAreaLabel": "Fenerbahçe (Kalamış), Kadıköy",
-      "distanceKm": 0.35,
-      "distanceMeters": 350
+      "nearbyAreaLabel": "Dr. Faruk Ayanoğlu Cd., Fenerbahçe",
+      "distanceKm": 0.26,
+      "distanceMeters": 260
     },
     {
-      "id": "nearby-nokta-kalamis",
+      "id": "fk-elloi-kalamis",
+      "placeId": "ChIJfZNbCPe5yhQRUFTmXhVmRbg",
+      "name": "Elloi Kalamış",
+      "address": "Fenerbahçe, Itri Dede Sok. No: 9/A, 34726 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Itri Dede Sk., Kalamış",
+      "categoryId": "kahve",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=13278131318344275024",
+      "coordinates": {
+        "lat": 40.9823094,
+        "lng": 29.039811600000004
+      },
+      "description": "Itri Dede Sokak’ta sakin kütüphane atmosferi, dengeli espresso reçeteleri ve günlük ev yapımı kekleriyle çalışma ve kahve molası için sevilen butik üçüncü dalga kahveci.",
+      "whatToOrder": [
+        "Cortado",
+        "Iced Latte",
+        "V60 Filtre Kahve"
+      ],
+      "menuFrom": [
+        "Flat White",
+        "Americano",
+        "Cold Brew"
+      ],
+      "alsoTry": [
+        "Portakallı Günlük Kek & Banana Bread — Sabah ve öğleden sonra filtre kahve eşliğinde en çok tercih edilen taze fırın dilimleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Sakin iç çalışma masaları, küçük sokak önü oturumu ve gel-al bar düzeni · Bilgisayarıyla çalışanlar ve kitap okuyan mahalle müdavimleriyle oldukça dingin ortam",
+        "Dezavantaj: Kütüphane sessizliğindeki minik iç alanı çalışma odaklı müdavimlerle çabuk dolduğundan yoğun saatlerde masa bulmak zorlaşabilir.",
+        "Ulaşım: Kalamış Itri Dede Sokak No:9/A üzerinde Kurbağalıdere ve Kalamış Parkı yakınında.",
+        "Bütçe seviyesi (Google): Ekonomik"
+      ],
+      "nearbyAreaLabel": "Itri Dede Sk., Kalamış",
+      "distanceKm": 0.06,
+      "distanceMeters": 60
+    },
+    {
+      "id": "fk-nokta-kalamis",
       "placeId": "ChIJ6WY6-nu4yhQRGC6ZyTiwMUQ",
       "name": "Nokta Kalamış",
       "address": "Fenerbahçe, Itri Dede Sok. No:22, 34726 Kadıköy/İstanbul, Türkiye",
-      "neighborhood": "Fenerbahçe (Kalamış), Kadıköy",
-      "categoryId": "kahve",
+      "neighborhood": "Itri Dede Sk., Kalamış",
+      "categoryId": "kahvalti",
+      "secondaryCategoryIds": [
+        "kahve"
+      ],
       "rating": 4.8,
       "mapsUri": "https://maps.google.com/?cid=4913902426384838168",
       "coordinates": {
         "lat": 40.982539599999996,
         "lng": 29.039578100000004
       },
-      "description": "Itri Dede Sokak’ta ferah köşe oturumu, özenli pour-over demlemeleri ve ev yapımı tatlılarıyla sevilen Kalamış üçüncü dalga kahvecisi.",
+      "description": "Itri Dede Sokak’ta atalık buğday unlarıyla yoğrulan ekşi mayalı ekmekleri, simit ve poğaçaları, kahvaltı tabakları ve nitelikli kahveleriyle Kalamış sabahlarının vazgeçilmez fırın-kafesi.",
       "whatToOrder": [
-        "Flat White",
-        "Filtre Kahve",
-        "Iced Spanish Latte"
+        "Atalık Buğday Ekşi Mayalı Kahvaltı Tabağı",
+        "Ekşi Mayalı Simit & Poğaça",
+        "Ekşi Maya Ekmekli Sandviçler"
       ],
       "menuFrom": [
-        "Cortado",
-        "Matcha Latte",
-        "V60"
+        "Mahlepli Tuzlu Kurabiye",
+        "Filtre Kahve",
+        "Günlük Tart ve Kekler"
       ],
       "alsoTry": [
-        "Soğuk Demleme & Ev Yapımı Tart / Kek — Öğleden sonra kahve yanında paylaşılan günlük pasta dilimleri."
+        "Atalık Buğday Somun Ekmekleri & Üçüncü Dalga Kahve — Kahvaltı sonrasında eve paket alınan taze ekşi maya somunlar ve nitelikli demleme kahve çeşitleri."
       ],
       "beforeYouGo": [
-        "Oturma & Servis: İç masalar, köşe kaldırım oturması ve gel-al imkanı · Öğle ve hafta sonu canlı mahalle buluşma noktası",
-        "Dezavantaj: Kaldırım masaları hafta sonları hızlı dolduğu için yer beklemek gerekebilir.",
-        "Ulaşım: Itri Dede Sokak’ta Yoğurtçu Parkı ve Kalamış Parkı arasındaki yürüyüş ekseninde.",
+        "Oturma & Servis: Aydınlık köşe iç mekan, kaldırım masaları ve fırın gel-al tezgahı · Sabah erken saatlerden itibaren mahalle sakinleri ve yürüyüşçülerle canlı sabah akışı",
+        "Dezavantaj: Hafta sonu sabahlarında kaldırım masaları çabuk dolar ve günlük ekşi maya fırın çeşitleri öğleye doğru azalabilir.",
+        "Ulaşım: Kalamış Itri Dede Sokak No:22 üzerinde Kalamış Parkı yürüyüş hattında.",
         "Bütçe seviyesi (Google): Orta"
       ],
-      "nearbyAreaLabel": "Fenerbahçe (Kalamış), Kadıköy",
+      "nearbyAreaLabel": "Itri Dede Sk., Kalamış",
       "distanceKm": 0.08,
       "distanceMeters": 80
     },
     {
-      "id": "nearby-kalamissia-fenerbahce",
-      "placeId": "ChIJpcDh-cu5yhQRLxg4KmQt9YA",
-      "name": "KALAMİSSİA KAFE",
-      "address": "Fenerbahçe, Fener Kalamış Cd. No:59 D:1a, 34726 Kadıköy/İstanbul, Türkiye",
-      "neighborhood": "Fenerbahçe (Kalamış), Kadıköy",
-      "categoryId": "kahvalti",
-      "rating": 4.5,
-      "mapsUri": "https://maps.google.com/?cid=9292383314377185327",
-      "coordinates": {
-        "lat": 40.9745024,
-        "lng": 29.0425303
-      },
-      "description": "Fener Kalamış Caddesi üzerinde ev yapımı reçelleri, sıcak börekleri ve özenli serpme/tabak kahvaltısıyla hafta sonu buluşmalarının sevilen adresi.",
-      "whatToOrder": [
-        "Kalamissia Serpme Kahvaltı",
-        "Avokadolu Çılbır",
-        "Su Böreği / Pişi Tabağı"
-      ],
-      "menuFrom": [
-        "Omlet Çeşitleri",
-        "Granola Kase",
-        "Espresso & Bitki Çayları"
-      ],
-      "alsoTry": [
-        "Ev Yapımı Limonata & Cevizli Havuçlu Kek — Kahvaltı sonrasında Kalamış yürüyüşü öncesi tercih edilen taze pasta ve içecek ikilisi."
-      ],
-      "beforeYouGo": [
-        "Oturma & Servis: Yol kenarı camlı veranda ve konforlu iç salon masaları · Kalamış temposunda canlı ama sohbete elverişli brunch ortamı",
-        "Dezavantaj: Pazar brunch saatlerinde önceden masa sormak gerekebiliyor.",
-        "Ulaşım: Kalamış Marina ve Kurbağalıdere aksından kısa yürüyüşle Fener Kalamış Caddesi’nde.",
-        "Bütçe seviyesi (Google): Orta"
-      ],
-      "nearbyAreaLabel": "Fenerbahçe (Kalamış), Kadıköy",
-      "distanceKm": 0.22,
-      "distanceMeters": 220
-    },
-    {
-      "id": "nearby-todori-fenerbahce",
-      "placeId": "ChIJQ-1YXZC4yhQRGLljXaFBQpY",
-      "name": "Todori Fenerbahçe",
-      "address": "Fenerbahçe, Fener Kalamış Cd. No:46, 34726 Kadıköy/İstanbul, Türkiye",
-      "neighborhood": "Fenerbahçe (Kalamış), Kadıköy",
+      "id": "fk-affan-ocakbasi",
+      "placeId": "ChIJL6qZCYnHyhQRTpZXe4TxoUI",
+      "name": "Affan Ocakbaşı",
+      "address": "Fenerbahçe, Dr. Faruk Ayanoğlu Cd. No: 1/D, 34726 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Dr. Faruk Ayanoğlu Cd., Fenerbahçe",
       "categoryId": "denemelisin",
-      "rating": 4.3,
-      "mapsUri": "https://maps.google.com/?cid=10827288615464450328",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=4801384229060974158",
       "coordinates": {
-        "lat": 40.9767162,
-        "lng": 29.0420794
+        "lat": 40.976617,
+        "lng": 29.047890199999998
       },
-      "description": "Fenerbahçe Kalamış’ta asırlık köşk atmosferi içinde Girit ve Rum mutfağı esintili taze mezeleri, lakerda ve sıcak ara yemekleriyle bilinen köklü meyhane.",
+      "description": "Dr. Faruk Ayanoğlu Caddesi’nde fıstıklı Antakya humusu, abagannuş ve çıtır fındık lahmacunla açılan sofralarını sulu yağlı kara ve şaşlık kebaplarıyla taçlandıran yüksek memnuniyetli ocakbaşı.",
       "whatToOrder": [
-        "Todori Topik",
-        "Girit Ezmesi & Sıcak Lakerda",
-        "Ahtapot Izgara"
+        "Yağlı Kara & Şaşlık",
+        "Çıtır Fındık Lahmacun",
+        "Fıstıklı Antakya Humusu & Abagannuş"
       ],
       "menuFrom": [
-        "Arnavut Ciğeri",
-        "Fava",
-        "Yaprak Ciğer & Mevsim Balıkları"
+        "Kağıt Kebabı",
+        "Kıymalı Çiğ Köfte",
+        "Közlenmiş Mezeler"
       ],
       "alsoTry": [
-        "Fırınlanmış Tahinli Sıcak Helva — Meze ve rakı sofrasının sonunda masa paylaşımına sunulan klasik sıcak helva kapanışı."
+        "Antakya Mutfağı Mezeleri & Sıcak Künefe — Klasik ocakbaşı çizgisini Hatay mutfağının zengin başlangıçları ve sıcak künefe kapanışıyla tamamlayan masa düzeni."
       ],
       "beforeYouGo": [
-        "Oturma & Servis: Tarihi köşk salonu ve arka bahçe masa düzeni (akşam rezervasyon önerilir) · Klasik meyhane sohbetine uygun sıcak ve samimi akşam ortamı",
-        "Dezavantaj: Üst fiyat seviyesindedir ve hafta sonları rezervasyonsuz masa bulmak güçtür.",
-        "Ulaşım: Fener Kalamış Caddesi üzerinde Moda ve Caddebostan arasındaki yürüyüş/ulaşım aksında.",
+        "Oturma & Servis: Keyifli bahçe bölümü, ocakbaşı çevresi ve üst kat salon masaları (rezervasyon önerilir) · Akşamları dost masaları ve ocakbaşı müdavimleriyle canlı, sıcak atmosfer",
+        "Dezavantaj: Üst kat salonu bahçe bölümüne göre daha basık hissedilebilir; akşam için bahçe tarafına önceden rezervasyon yaptırmak gerekir.",
+        "Ulaşım: Dr. Faruk Ayanoğlu Caddesi No:1/D üzerinde Fener Kalamış kesişimine yakın.",
         "Bütçe seviyesi (Google): Yüksek"
       ],
-      "nearbyAreaLabel": "Fenerbahçe (Kalamış), Kadıköy",
+      "nearbyAreaLabel": "Dr. Faruk Ayanoğlu Cd., Fenerbahçe",
       "distanceKm": 0.04,
       "distanceMeters": 40
     }

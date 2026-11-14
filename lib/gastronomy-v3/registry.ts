@@ -2,6 +2,7 @@ import modaSnapshotJson from './regions/istanbul-kadikoy-moda.json';
 import carsiSnapshotJson from './regions/istanbul-kadikoy-carsi.json';
 import yeldegirmeniSnapshotJson from './regions/istanbul-kadikoy-yeldegirmeni.json';
 import feneryoluSnapshotJson from './regions/istanbul-kadikoy-feneryolu.json';
+import fenerbahceKalamisSnapshotJson from './regions/istanbul-kadikoy-fenerbahce-kalamis.json';
 import caddebostanSnapshotJson from './regions/istanbul-kadikoy-caddebostan.json';
 import suadiyeSnapshotJson from './regions/istanbul-kadikoy-suadiye.json';
 import bostanciSnapshotJson from './regions/istanbul-kadikoy-bostanci.json';
@@ -22,6 +23,7 @@ const MODA_SNAPSHOT = modaSnapshotJson as V3VerifiedRegionSnapshot;
 const CARSI_SNAPSHOT = carsiSnapshotJson as V3VerifiedRegionSnapshot;
 const YELDEGIRMENI_SNAPSHOT = yeldegirmeniSnapshotJson as V3VerifiedRegionSnapshot;
 const FENERYOLU_SNAPSHOT = feneryoluSnapshotJson as V3VerifiedRegionSnapshot;
+const FENERBAHCE_KALAMIS_SNAPSHOT = fenerbahceKalamisSnapshotJson as V3VerifiedRegionSnapshot;
 const CADDEBOSTAN_SNAPSHOT = caddebostanSnapshotJson as V3VerifiedRegionSnapshot;
 const SUADIYE_SNAPSHOT = suadiyeSnapshotJson as V3VerifiedRegionSnapshot;
 const BOSTANCI_SNAPSHOT = bostanciSnapshotJson as V3VerifiedRegionSnapshot;
@@ -41,6 +43,7 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   CARSI_SNAPSHOT,
   YELDEGIRMENI_SNAPSHOT,
   FENERYOLU_SNAPSHOT,
+  FENERBAHCE_KALAMIS_SNAPSHOT,
   CADDEBOSTAN_SNAPSHOT,
   SUADIYE_SNAPSHOT,
   BOSTANCI_SNAPSHOT,
@@ -69,6 +72,13 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'feneryolu-kadikoy': FENERYOLU_SNAPSHOT,
   'istanbul-kadikoy-feneryolu': FENERYOLU_SNAPSHOT,
   kuyubasi: FENERYOLU_SNAPSHOT,
+  'fenerbahce-kalamis': FENERBAHCE_KALAMIS_SNAPSHOT,
+  'fenerbahce-kalamis-kadikoy': FENERBAHCE_KALAMIS_SNAPSHOT,
+  'istanbul-kadikoy-fenerbahce-kalamis': FENERBAHCE_KALAMIS_SNAPSHOT,
+  fenerbahce: FENERBAHCE_KALAMIS_SNAPSHOT,
+  kalamis: FENERBAHCE_KALAMIS_SNAPSHOT,
+  dalyan: FENERBAHCE_KALAMIS_SNAPSHOT,
+  'fenerbahce-burnu': FENERBAHCE_KALAMIS_SNAPSHOT,
   caddebostan: CADDEBOSTAN_SNAPSHOT,
   'caddebostan-kadikoy': CADDEBOSTAN_SNAPSHOT,
   suadiye: SUADIYE_SNAPSHOT,

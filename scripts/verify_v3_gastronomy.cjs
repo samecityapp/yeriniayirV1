@@ -65,6 +65,7 @@ const REGION_KEYS = [
   'istanbul-kadikoy-carsi',
   'istanbul-kadikoy-yeldegirmeni',
   'istanbul-kadikoy-feneryolu',
+  'istanbul-kadikoy-fenerbahce-kalamis',
   'istanbul-kadikoy-caddebostan',
   'istanbul-kadikoy-suadiye',
   'istanbul-kadikoy-bostanci',
@@ -103,6 +104,7 @@ test('all published snapshots follow schema v3, canonical order, dynamic caps (1
     const isCoastal =
       key === 'aydin-kusadasi' ||
       key === 'mugla-ula-akyaka' ||
+      key === 'istanbul-kadikoy-fenerbahce-kalamis' ||
       key === 'istanbul-kadikoy-bostanci' ||
       key === 'istanbul-uskudar-cengelkoy';
     const isHeritage = key === 'gaziantep-merkez';
@@ -289,7 +291,7 @@ test('Feneryolu dynamically prunes date venues ("Yoksa Onerme") when no qualifyi
   assert.equal(feneryolu.categories.some((c) => c.slug === 'date-mekanlari'), false);
 });
 
-test('all 17 published regions have zero overlapping placeIds, valid ratings, and canonical CID links', () => {
+test('all 18 published regions have zero overlapping placeIds, valid ratings, and canonical CID links', () => {
   const globalPlaceIds = new Set();
   for (const { key, data } of snapshots) {
     const expectedDistricts =
@@ -313,7 +315,7 @@ test('all 17 published regions have zero overlapping placeIds, valid ratings, an
       );
     }
   }
-  assert.ok(globalPlaceIds.size >= 430, `Expected >=430 unique published venues, got ${globalPlaceIds.size}`);
+  assert.ok(globalPlaceIds.size >= 450, `Expected >=450 unique published venues, got ${globalPlaceIds.size}`);
 });
 
 test('every published region limits nearbyVenues to <= 1 per category within <= 400m of its border (Moda has 6)', () => {
@@ -561,6 +563,31 @@ test('policy gates reject closed, chain, out-of-neighborhood, and degraded candi
   assert.equal(fMap.get('ctrl-fen-lamora-below-44').accepted, false);
   assert.ok(fMap.get('ctrl-fen-lamora-below-44').reason.includes('below_quality_threshold'));
 
+  const fkAudit = JSON.parse(
+    fs.readFileSync(path.join(ROOT, 'work/gastronomy-v3/istanbul-kadikoy-fenerbahce-kalamis.audit.json'), 'utf8')
+  );
+  const fkMap = new Map(fkAudit.decisions.map((d) => [d.id, d]));
+  assert.equal(fkMap.get('ctrl-fk-cundali-closed').accepted, false);
+  assert.ok(fkMap.get('ctrl-fk-cundali-closed').reason.includes('CLOSED_TEMPORARILY'));
+  for (const chainId of [
+    'ctrl-fk-midpoint-chain',
+    'ctrl-fk-happymoons-chain',
+    'ctrl-fk-dominos-chain',
+    'ctrl-fk-kronotrop-chain',
+    'ctrl-fk-develi-chain',
+    'ctrl-fk-5masa-chain',
+    'ctrl-fk-simpleco-chain',
+  ]) {
+    assert.equal(fkMap.get(chainId).accepted, false);
+    assert.equal(fkMap.get(chainId).reason, 'chain_or_franchise');
+  }
+  assert.equal(fkMap.get('ctrl-fk-gorgulu-kahve-purity').accepted, false);
+  assert.ok(fkMap.get('ctrl-fk-gorgulu-kahve-purity').reason.includes('kahve_category_not_coffee_specialist'));
+  assert.equal(fkMap.get('ctrl-fk-ouzo-below-44').accepted, false);
+  assert.ok(fkMap.get('ctrl-fk-ouzo-below-44').reason.includes('below_quality_threshold'));
+  assert.equal(fkMap.get('ctrl-fk-paysage-below-44').accepted, false);
+  assert.ok(fkMap.get('ctrl-fk-paysage-below-44').reason.includes('below_quality_threshold'));
+
   const kuzAudit = JSON.parse(
     fs.readFileSync(path.join(ROOT, 'work/gastronomy-v3/istanbul-uskudar-kuzguncuk.audit.json'), 'utf8')
   );
@@ -654,7 +681,7 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
   const provider = providerMod.createRealFoodProvider(food);
 
   const ready = provider.getReadyRegions();
-  assert.equal(ready.length, 17);
+  assert.equal(ready.length, 18);
   assert.deepEqual(
     ready.map((r) => r.slug),
     [
@@ -662,6 +689,7 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
       'kadikoy',
       'yeldegirmeni',
       'feneryolu',
+      'fenerbahce-kalamis',
       'caddebostan',
       'suadiye',
       'bostanci',
@@ -686,6 +714,9 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
   assert.equal(provider.getLocationBySlug('kadikoy-carsi')?.slug, 'kadikoy');
   assert.equal(provider.getLocationBySlug('feneryolu-kadikoy')?.slug, 'feneryolu');
   assert.equal(provider.getLocationBySlug('kuyubasi')?.slug, 'feneryolu');
+  assert.equal(provider.getLocationBySlug('fenerbahce')?.slug, 'fenerbahce-kalamis');
+  assert.equal(provider.getLocationBySlug('kalamis')?.slug, 'fenerbahce-kalamis');
+  assert.equal(provider.getLocationBySlug('dalyan')?.slug, 'fenerbahce-kalamis');
   assert.equal(provider.getLocationBySlug('catalcesme')?.slug, 'bostanci');
   assert.equal(provider.getLocationBySlug('kosuyolu')?.slug, 'kosuyolu-acibadem');
   assert.equal(provider.getLocationBySlug('acibadem')?.slug, 'kosuyolu-acibadem');
@@ -709,12 +740,13 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
   assert.equal(provider.getLocationBySlug('bitez'), undefined);
   assert.equal(provider.getLocationBySlug('beylerbeyi'), undefined);
 
-  // Verify all 17 published regions resolve cleanly through readIntegrationDiscovery
+  // Verify all 18 published regions resolve cleanly through readIntegrationDiscovery
   for (const slug of [
     'moda',
     'kadikoy',
     'yeldegirmeni',
     'feneryolu',
+    'fenerbahce-kalamis',
     'caddebostan',
     'suadiye',
     'bostanci',
@@ -967,6 +999,66 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
         assert.equal(names.some((n) => n.includes(forbidden)), false, `feneryolu must exclude ${forbidden}`);
       }
     }
+    if (slug === 'fenerbahce-kalamis') {
+      assert.equal(p.getLocationBySlug('fenerbahce-kalamis')?.locative, "Fenerbahçe ve Kalamış'ta");
+      assert.equal(disc.region.displayName, 'Fenerbahçe & Kalamış, Kadıköy, İstanbul');
+      const fkCats = p.getRegionCategories(disc.region.id);
+      assert.equal(fkCats.length, 7, 'fenerbahce-kalamis must expose 7 coastal categories');
+      assert.ok(
+        fkCats.some((c) => c.slug === 'balik-deniz-urunleri'),
+        'fenerbahce-kalamis missing balik-deniz-urunleri category'
+      );
+      assert.equal(f.venues.length, 29, 'fenerbahce-kalamis must expose 29 verified venues');
+      const names = f.venues.map((v) => v.name);
+      for (const expected of [
+        'Via Pizzeria',
+        'Spenta Pizza',
+        'Sailors Pizza Kalamış',
+        'Seri Street Food',
+        'Büffe Kalamış',
+        'Elloi Kalamış',
+        'Klar Coffee Roastery',
+        'Doppio Fika Point',
+        'Peggy Coffee',
+        'Parvus Kalamış',
+        'Son Lokanta',
+        'Duende Kalamış',
+        'il Boccalino 34',
+        'Nokta Kalamış',
+        'Morney Eatery',
+        'Kalamissia Kafe',
+        'Affan Ocakbaşı',
+        'Damak Köfte',
+        'Payyar Ocakbaşı',
+        'Largando',
+        'Patriça',
+        'Çapa Milos Balık',
+        'Saca Marin',
+        'Todori Fenerbahçe',
+      ]) {
+        assert.ok(names.some((n) => n.includes(expected)), `fenerbahce-kalamis missing ${expected}`);
+      }
+      for (const forbidden of [
+        'Midpoint',
+        'Happy Moon',
+        "Domino's",
+        'Kronotrop',
+        'Develi',
+        '5masa',
+        'Simple Co',
+        'Flân',
+        'Perran Ocakbaşı',
+        'Ouzo Roof',
+        'Kalamış Paysage',
+        'Görgülü',
+      ]) {
+        assert.equal(
+          names.some((n) => n.includes(forbidden)),
+          false,
+          `fenerbahce-kalamis must exclude ${forbidden}`
+        );
+      }
+    }
     if (slug === 'uskudar') {
       assert.equal(p.getLocationBySlug('uskudar')?.locative, "Üsküdar'da");
       const cats = p.getRegionCategories(disc.region.id);
@@ -1108,9 +1200,9 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
   }
 });
 
-test('V3.6 strict chain blocklist, coffee purity, and >=4.4 quality floor across all 17 snapshots', () => {
+test('V3.6 strict chain blocklist, coffee purity, and >=4.4 quality floor across all 18 snapshots', () => {
   const bannedRe =
-    /pizza v|kaffee schütz|kaffee schutz|adile sultan|hane çikolata|çanak kebap|brand burger|butcher's burger|vakko|filizler köftecisi|çengelköy börekçisi|kirpi|intiba döner|la veria|döner bank|doner bank|burger evim|nazar profiterol|pizzalazza/i;
+    /pizza v|kaffee schütz|kaffee schutz|adile sultan|hane çikolata|çanak kebap|brand burger|butcher's burger|vakko|filizler köftecisi|çengelköy börekçisi|kirpi|intiba döner|la veria|döner bank|doner bank|burger evim|nazar profiterol|pizzalazza|simple co|5masa|develi|bedri usta|divan brasserie|perran ocakbaşı/i;
   const nonCoffeeRe = /çikolata|cikolata|pastanesi|unlu mamülleri|börek|borek|baklava/i;
 
   for (const { key, data } of snapshots) {

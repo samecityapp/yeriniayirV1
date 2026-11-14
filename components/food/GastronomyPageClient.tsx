@@ -46,6 +46,12 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     headline: 'Feneryolu, Kadıköy',
     vibe: 'Hatboyu, Kuyubaşı ve Bağdat Caddesi arasındaki sokaklarda Napoli pizzası, butik kahve ve mahalle mutfakları',
   },
+  'fenerbahce-kalamis-kadikoy': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Fenerbahçe & Kalamış, Kadıköy',
+    vibe: 'Kalamış Marina ve Dalyan sahil balıkçılarından Fener Kalamış ile Faruk Ayanoğlu sokaklarındaki şef lokantaları, ocakbaşıları, atalık buğday fırınları ve butik kahvecilerine uzanan seçki',
+  },
   'caddebostan-kadikoy': {
     image: '/images/gastronomy/gastronomy.svg',
     badge: 'Doğrulanmış Seçki',
