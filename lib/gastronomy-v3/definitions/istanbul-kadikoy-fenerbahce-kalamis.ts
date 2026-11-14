@@ -27,7 +27,7 @@ export const ISTANBUL_KADIKOY_FENERBAHCE_KALAMIS_DEF: V3RegionDefinition = {
   ],
   scopeNote: 'İstanbul · Kadıköy · Fenerbahçe & Kalamış (Doğrulanmış Sahil ve Semt Seçkisi)',
   characterSubtitle:
-    'Kalamış Marina ve Dalyan sahil balıkçılarından Fener Kalamış, Faruk Ayanoğlu ve Itri Dede sokaklarındaki şef lokantaları, ocakbaşıları, atalık buğday fırınları ve nitelikli kahvecilerine uzanan seçki.',
+    'Kalamış Marina ve Dalyan sahil balıkçılarından Fener Kalamış, Faruk Ayanoğlu, Rüştiye ve Itri Dede sokaklarındaki şef lokantaları, tereyağlı-ekşi mayalı fırın kafeleri, ocakbaşıları ve nitelikli kahvecilerine uzanan seçki.',
   center: { lat: 40.9752, lng: 29.0435 },
   bbox: { minLat: 40.9665, maxLat: 40.9836, minLng: 29.0315, maxLng: 29.0535 },
   allowedNeighborhoodTokens: ['Fenerbahçe', 'Zühtüpaşa'],
@@ -139,7 +139,6 @@ export const ISTANBUL_KADIKOY_FENERBAHCE_KALAMIS_DEF: V3RegionDefinition = {
       id: 'fk-seri-street-food',
       placeId: 'ChIJ2WgsAwC5yhQRXrnmps8n97o',
       cat: 'hamburger',
-      secondaryCategoryIds: ['denemelisin'],
       pinnedFirst: true,
       flags: { ritual: true },
       name: 'Seri Street Food',
@@ -204,12 +203,51 @@ export const ISTANBUL_KADIKOY_FENERBAHCE_KALAMIS_DEF: V3RegionDefinition = {
       verifiedAt: '2026-11-14',
     }),
 
-    // --- KAHVE (4 mekan — tümü verified coffee_shop) ---
+    // --- KAHVE (5 mekan — Boter Kalamış userRef + iconic ile 5. slot aktif ve 1. sırada) ---
+    compactSeed({
+      id: 'fk-boter-kalamis',
+      placeId: 'ChIJs1GCPxC5yhQR_Kglfl0RhH0',
+      cat: 'kahve',
+      secondaryCategoryIds: ['kahvalti', 'denemelisin'],
+      pinnedFirst: true,
+      flags: { userRef: true, iconic: true },
+      name: 'Boter Kalamış',
+      brand: 'boter',
+      area: 'Rüştiye Sk., Kalamış',
+      signals: ['tereyagli-firin-kafe', 'menemen-tartine', 'tahinli-blondie'],
+      desc:
+        'Kalamış Rüştiye Sokak’ta adını Felemenkçe tereyağından alan temiz içerikli fırın tezgahı, ekşi mayalı ve brioche tabanlı tartin kahvaltıları, rafine şekersiz tatlıları ve ev yapımı soslu kahve barıyla semt müdavimlerinin buluşma noktası.',
+      order: [
+        'Menemen Tartine & Brioche Üstü Anne Sosisi',
+        'Bozkır Tahinli Blondie & Hindistan Cevizi Dolgulu Tart',
+        'Ev Yapımı Soslu Nitelikli Kahveler & Siyez Unlu Poğaça',
+      ],
+      menu: ['Şaşkın Waffle', 'Sucuklu Humuslu Tost & Ispanaklı Kiş', 'Glutensiz & Rafine Şekersiz Tatlılar'],
+      sec: [
+        [
+          'Ekşi Mayalı Sabah Kaseleri & Tohum Kıtırlı Vegan Atıştırmalıklar',
+          'Tereyağlı fırın ürünlerinin yanında mevsim sebzeli sağlıklı kaseler, karabuğday gofretleri ve vegan granola toplarıyla gün boyu temiz içerikli alternatifler.',
+          'boter.com.tr menüsü ve Kalamış fırın-kafe seçkileri',
+        ],
+      ],
+      seat: 'Ahşap detaylı sıcak iç salon, evcil hayvan dostu sokak önü masaları ve dizüstü bilgisayarla çalışmaya uygun düzen',
+      crowd: 'Kalamış müdavimleri, uzaktan çalışanlar ve sakin sabah-öğleden sonra buluşmalarıyla samimi mahalle temposu',
+      dis: 'Bilenlerin uğradığı popüler bir mahalle fırın-kafesi olduğu için hafta sonu kahvaltı saatlerinde dış masalarda yoğunluk oluşur ve günlük çıkan tart-poğaça çeşitleri öğleden sonra erken azalabilir.',
+      transit: 'Kalamış Rüştiye Sokak No:30A üzerinde Kalamış Parkı ve Kurbağalıdere yürüyüş aksında.',
+      sources: [
+        ['Boter İstanbul Resmi Sitesi', 'http://www.boter.com.tr/', 'operator', 'Kalamış Rüştiye Sokak tereyağlı fırın ürünleri, tartin kahvaltılar ve ev yapımı soslu kahve barı'],
+        ['The Magger — Kalamış Kahvaltı ve Fırın Kafeleri', 'https://www.themagger.com/', 'editorial', 'Menemen tartine, bozkır tahinli blondie ve temiz içerikli fırın tezgahıyla öne çıkan Kalamış adresi'],
+        ['Gazete Oksijen — Anadolu Yakası Mahalle Fırın ve Kafeleri', 'https://gazeteoksijen.com/', 'community', 'Kalamış sakinlerinin müdavimi olduğu samimi Rüştiye Sokak fırın-kafesi'],
+      ],
+      pros: ['Tereyağlı ve temiz içerikli günlük fırın ürünleri ile özgün tartin kahvaltılar', 'Hazır şurup kullanmayan ev yapımı soslu kahve barı ve sıcak mahalle ortamı'],
+      cons: ['Hafta sonu sabah yoğunluğu ve öğleden sonra erken tükenen popüler fırın çeşitleri'],
+      unc: ['Mevsimsel tart, kiş ve günlük fırın tezgahı çeşitleri güne göre değişebilir.'],
+      verifiedAt: '2026-11-14',
+    }),
     compactSeed({
       id: 'fk-elloi-kalamis',
       placeId: 'ChIJfZNbCPe5yhQRUFTmXhVmRbg',
       cat: 'kahve',
-      pinnedFirst: true,
       name: 'Elloi Kalamış',
       brand: 'elloi',
       area: 'Itri Dede Sk., Kalamış',

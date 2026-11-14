@@ -568,6 +568,7 @@ test('policy gates reject closed, chain, out-of-neighborhood, and degraded candi
     fs.readFileSync(path.join(ROOT, 'work/gastronomy-v3/istanbul-kadikoy-fenerbahce-kalamis.audit.json'), 'utf8')
   );
   const fkMap = new Map(fkAudit.decisions.map((d) => [d.id, d]));
+  assert.equal(fkMap.get('fk-boter-kalamis').accepted, true);
   assert.equal(fkMap.get('ctrl-fk-cundali-closed').accepted, false);
   assert.ok(fkMap.get('ctrl-fk-cundali-closed').reason.includes('CLOSED_TEMPORARILY'));
   for (const chainId of [
@@ -1009,9 +1010,10 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
         fkCats.some((c) => c.slug === 'balik-deniz-urunleri'),
         'fenerbahce-kalamis missing balik-deniz-urunleri category'
       );
-      assert.equal(f.venues.length, 29, 'fenerbahce-kalamis must expose 29 verified venues');
+      assert.equal(f.venues.length, 30, 'fenerbahce-kalamis must expose 30 verified venues');
       const names = f.venues.map((v) => v.name);
       for (const expected of [
+        'Boter Kalamış',
         'Via Pizzeria',
         'Spenta Pizza',
         'Sailors Pizza Kalamış',
@@ -1039,6 +1041,21 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
       ]) {
         assert.ok(names.some((n) => n.includes(expected)), `fenerbahce-kalamis missing ${expected}`);
       }
+      assert.equal(
+        p.getCategoryResult(disc.region.id, 'kahve').coreVenues[0].name,
+        'Boter Kalamış',
+        'Boter Kalamış must rank #1 in kahve'
+      );
+      assert.equal(
+        p.getCategoryResult(disc.region.id, 'kahvalti').coreVenues[0].name,
+        'Boter Kalamış',
+        'Boter Kalamış must rank #1 in kahvalti'
+      );
+      assert.equal(
+        p.getCategoryResult(disc.region.id, 'denemelisin').coreVenues[0].name,
+        'Boter Kalamış',
+        'Boter Kalamış must rank #1 in denemelisin'
+      );
       for (const forbidden of [
         'Midpoint',
         'Happy Moon',
