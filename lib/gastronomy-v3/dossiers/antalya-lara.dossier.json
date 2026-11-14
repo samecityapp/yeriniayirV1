@@ -1,0 +1,1953 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "antalya-lara",
+  "displayName": "Lara, Antalya",
+  "verifiedAt": "2026-11-14T10:59:02.600Z",
+  "selectedCount": 27,
+  "rejectedControls": [
+    {
+      "id": "lara-pikan-firin",
+      "resolvedName": "Pikan Fırın (Şirinyalı)",
+      "reason": "below_quality_threshold:★4.3(611)_proofs_2"
+    },
+    {
+      "id": "lara-balik-genclik",
+      "resolvedName": "Lara Balık",
+      "reason": "below_quality_threshold:★4.2(3250)_proofs_2"
+    },
+    {
+      "id": "ctrl-lara-sudd-closed",
+      "resolvedName": "The Sudd Coffee Lara",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-lara-b12burger-closed",
+      "resolvedName": "B12 BURGER",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-lara-pasaport-chain",
+      "resolvedName": "Pasaport Pizza Lara / Şirinyalı",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-lara-kahvedunyasi-chain",
+      "resolvedName": "Kahve Dünyası - Antalya Lara",
+      "reason": "chain_or_franchise"
+    }
+  ],
+  "venues": [
+    {
+      "id": "lara-schiller-guzeloba",
+      "categoryId": "pizza",
+      "resolvedName": "Schiller Kaffee Güzeloba & Franco's Pizza",
+      "branchName": "Güzeloba, Çağlayangil Cad 47/A, 07230 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJbXxfkE6bwxQR_gUWwjnDi8o",
+      "coordinates": {
+        "lat": 36.8619899,
+        "lng": 30.7888172
+      },
+      "rating": 4.3,
+      "userRatingCount": 2611,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.schiller.store/",
+      "mapsUri": "https://maps.google.com/?cid=14594973670260999678",
+      "recommendedPrimary": [
+        "Franco's İmza Pizza",
+        "Antalya Pizza",
+        "Diavolo & Quattro Formaggi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Nitelikli Schiller Espresso / Filtre Kahve & Tiramisu",
+          "note": "Odun fırını pizzaların yanında özel kavrum Schiller espresso içecekleri ve klasik İtalyan tiramisusu dikkat çekiyor.",
+          "proof": "schiller.store resmi sitesi ve francospizza.com.tr Güzeloba şube menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç salon ve cadde kenarı bahçe masaları",
+        "crowdAndNoise": "Akşamları ve hafta sonları Güzeloba sakinleriyle canlı",
+        "disadvantage": "Eski Lara falez hattına göre daha doğudaki Güzeloba merkezinde yer alır; akşam yemeklerinde dış bahçe masaları hızla dolar.",
+        "transit": "Güzeloba Çağlayangil Caddesi 47/A üzerinde havalimanı aksına paralel."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Schiller & Franco’s Resmi Sitesi",
+          "url": "http://www.schiller.store/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Güzeloba odun fırını pizza ve kavrum kahve konsepti"
+        },
+        {
+          "title": "Antalya Yeme-İçme Rehberleri",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Güzeloba bölgesi önde gelen pizzacı seçkisi"
+        },
+        {
+          "title": "Yerel Lara Topluluk Notları",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İnce hamurlu Franco’s pizzaları ve Güzeloba müdavimliği"
+        }
+      ],
+      "pros": [
+        "İnce çıtır odun fırını pizza hamuru",
+        "Tek çatı altında kahve-tatlı devamı"
+      ],
+      "cons": [
+        "Şirinyalı merkezden araçla kısa ulaşım gerektirmesi"
+      ],
+      "uncertainties": [
+        "Hafta sonu paket servis yoğunluğu masa servisini hafif yavaşlatabiliyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-piccolo-neapolitan",
+      "categoryId": "pizza",
+      "resolvedName": "Piccolo Neapolitan Pizza",
+      "branchName": "Şirinyalı, Lara Cd. No:177 B, 07200, 07160 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJlcrFtbibwxQR5iE2n4LIBK8",
+      "coordinates": {
+        "lat": 36.8554421,
+        "lng": 30.744810899999994
+      },
+      "rating": 4.8,
+      "userRatingCount": 495,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/piccoloopizza/",
+      "mapsUri": "https://maps.google.com/?cid=12611425319886660070",
+      "recommendedPrimary": [
+        "Margherita Verace",
+        "Diavola Napoletana",
+        "Trüf & Mantarlı Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Burrata Salatası & Çikolatalı Fırın Calzone",
+          "note": "Pizza öncesi peynirli roka-burrata salatası ve tatlı niyetine fırından çıkan fındık kremalı calzone sık seçiliyor.",
+          "proof": "instagram.com/piccoloopizza ve Antalya Napoli pizza değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt şık iç mekan ve cadde önü küçük oturma alanı",
+        "crowdAndNoise": "Akşam yemeği saatlerinde yüksek Napoli pizza talebi",
+        "disadvantage": "Küçük oturma kapasitesine sahip olduğu için özellikle hafta sonları yer bulmak adına önceden plan yapmak gerekir.",
+        "transit": "Eski Lara Yolu Şirinyalı Lara Caddesi No:177B üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Piccolo Pizza Instagram",
+          "url": "https://www.instagram.com/piccoloopizza/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Napoli tarzı soğuk fermantasyon hamur ve fırın paylaşımları"
+        },
+        {
+          "title": "Antalya İtalyan Mutfakları",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yüksek puanlı Lara Napoli pizzacısı"
+        }
+      ],
+      "pros": [
+        "Hafif ve kabarık Napoli hamuru",
+        "Özenli ithal peynir kullanımı"
+      ],
+      "cons": [
+        "Sınırlı masa kapasitesi"
+      ],
+      "uncertainties": [
+        "Akşam geç saatlerde hamur stoğu tükenebiliyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-pizza-napoli",
+      "categoryId": "pizza",
+      "resolvedName": "Pizza Napoli",
+      "branchName": "Şirinyalı, Lara Cd. No: 97/B, 07160 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJSaPgg5OawxQRhMZcM6wQLR4",
+      "coordinates": {
+        "lat": 36.8592047,
+        "lng": 30.731741200000002
+      },
+      "rating": 4.5,
+      "userRatingCount": 806,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2174412526871955076",
+      "recommendedPrimary": [
+        "Dört Peynirli Pizza",
+        "Füme Etli Roka Pizza",
+        "Klasik Margherita"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Fettuccine Alfredo & Sarımsaklı Fırın Ekmek",
+          "note": "Pizza çeşitlerinin yanında sıcak tabakta gelen kremalı fettuccine alfredo ve sarımsaklı sıcak ekmek yaygın tercihlerden.",
+          "proof": "Antalya Eski Lara pizzacıları rehberi ve ziyaretçi değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaç altı bahçe önü ve samimi kapalı restoran bölümü",
+        "crowdAndNoise": "Akşamları aileler ve çevre sakinleriyle istikrarlı doluluk",
+        "disadvantage": "Cadde üzeri akşamlarda park yeri bulmak zaman zaman güçleşebiliyor.",
+        "transit": "Şirinyalı Lara Caddesi No:97B üzerinde yürüyüş hattında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "TripAdvisor — Pizza Napoli Antalya",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Lara hattında köklü İtalyan pizza ve makarna adresi"
+        },
+        {
+          "title": "Antalya Yeme-İçme Topluluğu",
+          "url": "https://foursquare.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Uzun yıllardır kalitesini koruyan mahalle pizzacısı notu"
+        }
+      ],
+      "pros": [
+        "Oturmuş aile müdavim kalitesi",
+        "Doyurucu porsiyonlar"
+      ],
+      "cons": [
+        "Cadde boyu akşam park yeri sıkıntısı"
+      ],
+      "uncertainties": [
+        "Hafta sonları aile masaları için kısa bekleme olabilir."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-route-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Route Burger House",
+      "branchName": "Şirinyalı Lara Caddesi, Şirinyalı, 1511. Sk., 07160 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJtyEwy-6awxQRcHE1_BwtkyA",
+      "coordinates": {
+        "lat": 36.8564657,
+        "lng": 30.742576399999994
+      },
+      "rating": 4.4,
+      "userRatingCount": 812,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.routeburgerhouse.com/",
+      "mapsUri": "https://maps.google.com/?cid=2347269433303855472",
+      "recommendedPrimary": [
+        "Butter Smash Burger",
+        "Sweet Onion Burger",
+        "Red Pesto Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Cheddar Soslu Baharatlı Patates & Çıtır Soğan Halkası",
+          "note": "Sıcak patates üstüne dökülen erimiş cheddar sosu ve çıtır kaplamalı soğan halkaları masaların değişmez eşlikçisi.",
+          "proof": "routeburgerhouse.com Lara şube menüsü ve gurme rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Rahat sokak önü masaları ve modern kapalı salon",
+        "crowdAndNoise": "Öğle sonrası ve akşam yemeklerinde yoğun",
+        "disadvantage": "Yoğun akşam saatlerinde özellikle açık masalar hızlı dolduğundan sıcak servis için kısa bekleme olabiliyor.",
+        "transit": "Eski Lara Yolu Şirinyalı Mahallesi 1511. Sokak üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Route Burger House Resmi Sitesi",
+          "url": "http://www.routeburgerhouse.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Lara Şirinyalı şubesi ve gramajlı burger seçenekleri"
+        },
+        {
+          "title": "Antalya Mekan Rehberi",
+          "url": "https://www.mekan.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Şirinyalı gurme burger önerisi"
+        }
+      ],
+      "pros": [
+        "Zengin sos uyumu ve taze günlük ekmek",
+        "Üç farklı köfte gramajı seçeneği"
+      ],
+      "cons": [
+        "Akşam saatlerinde yoğun paket ve masa trafiği"
+      ],
+      "uncertainties": [
+        "Hafta sonu geç saatlerde dış bahçe masaları kalabalıklaşabiliyor."
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-b12-steak-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "B12 Steak & Kasap",
+      "branchName": "Irmak Apartmanı, Çağlayan, Fener Cd. No:52/A, 07160 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJdSO3jeWawxQR6mXV7nfxPGw",
+      "coordinates": {
+        "lat": 36.8562814,
+        "lng": 30.763479699999994
+      },
+      "rating": 4.5,
+      "userRatingCount": 952,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.b12steak.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=7799374152109221354",
+      "recommendedPrimary": [
+        "Bonfile Dilimli B12 Burger",
+        "Klasik Kasap Köfte Burger",
+        "Mexican Jalapeno Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Dry-Aged Lokum Bonfile & Füme Et Şarküteri Tabağı",
+          "note": "Burger dışında mekanın asıl kasap uzmanlığı olan kuru dinlendirilmiş bonfile ve carpaccio başlangıçları yüksek beğeni topluyor.",
+          "proof": "b12steak.com.tr resmi menüsü ve Lara gastronomi seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Özenli şık steakhouse salonu ve cadde önü teras",
+        "crowdAndNoise": "Akşamları et sever çiftler ve ailelerle istikrarlı doluluk",
+        "disadvantage": "Steakhouse et kalitesi nedeniyle standart sokak burgercilerine göre üst fiyat bandındadır.",
+        "transit": "Çağlayan Mahallesi Fener Caddesi No:52A üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "B12 Steak & Kasap Resmi Sitesi",
+          "url": "https://www.b12steak.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Dry-aged steak ve bonfile dilimli B12 Burger menüsü"
+        },
+        {
+          "title": "Antalya Et & Burger Rehberi",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kasap kökenli nitelikli et ve burger adresi"
+        }
+      ],
+      "pros": [
+        "Kuru dinlendirilmiş yüksek kalite et altyapısı",
+        "Bonfile dilimli özgün burger"
+      ],
+      "cons": [
+        "Üst-orta fiyat segmenti"
+      ],
+      "uncertainties": [
+        "Akşam yemeğinde steak masaları için rezervasyon öneriliyor."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-tezgah-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Tezgah Burger Lara",
+      "branchName": "Şirinyalı, Ersoy Sitesi No:177/A, 07160 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJ9waxk4qbwxQRz8GfG4wk7vw",
+      "coordinates": {
+        "lat": 36.855457099999995,
+        "lng": 30.7447782
+      },
+      "rating": 4.7,
+      "userRatingCount": 3709,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "http://www.tezgahburger.com/",
+      "mapsUri": "https://maps.google.com/?cid=18225544926192452047",
+      "recommendedPrimary": [
+        "Tezgah Klasik Burger",
+        "Truffle Bacon/Füme Etli Burger",
+        "Cheddar Smash"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Trüf Soslu Kızartma & Ev Yapımı Şeftali/Limon Soğuk Çay",
+          "note": "Burgerlerin yanında bol soslu patates kaseleri ve evde demlenen soğuk çay çeşitleri çok tercih ediliyor.",
+          "proof": "tezgahburger.com resmi menüsü ve yerel öğrenci/müdavim notları"
+        }
+      ],
+      "suitability": {
+        "seating": "İki katlı modern burger bar ve cadde önü masalar",
+        "crowdAndNoise": "Günün büyük bölümünde yüksek talep",
+        "disadvantage": "Çok popüler olduğu için hafta sonu akşamlarında kapı önünde kısa masa beklemesi yaşanabiliyor.",
+        "transit": "Şirinyalı Eski Lara Caddesi Ersoy Sitesi No:177A üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Tezgah Burger Resmi Sitesi",
+          "url": "http://www.tezgahburger.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Eski Lara şubesi ve günlük ekmek üretimi"
+        },
+        {
+          "title": "Ekşi Sözlük — Tezgah Burger",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Uzun süreli yüksek puan istikrarı ve patates beğenisi"
+        }
+      ],
+      "pros": [
+        "Yüksek müşteri hacminde sürdürülen köfte standardı",
+        "Taze yumuşak ekmek"
+      ],
+      "cons": [
+        "Pik akşam saatlerinde bekleme süresi"
+      ],
+      "uncertainties": [
+        "Cadde üzerinde park etmek akşamları güçleşebiliyor."
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-road-smash",
+      "categoryId": "hamburger",
+      "resolvedName": "Road Smash Burgers",
+      "branchName": "Çağlayan, 2008. Sk. 20/A, 07230 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJHxPMlFWbwxQRSsKlmIZtrKo",
+      "coordinates": {
+        "lat": 36.8497203,
+        "lng": 30.7666091
+      },
+      "rating": 4.8,
+      "userRatingCount": 672,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12298325107296027210",
+      "recommendedPrimary": [
+        "Double Classic Smash",
+        "Oklahoma Onion Smash",
+        "Truffle Smash"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Baharatlı İnce Kesim Patates & Özel Burger Soslu Sepet",
+          "note": "Duble smash burger yanında ince çıtır patates kızartması ve sarımsaklı-hardallı imza soslar tamamlayıcı.",
+          "proof": "Antalya smash burger listeleri ve Çağlayan mahalle paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt butik salon ve sokak kenarı açık masalar",
+        "crowdAndNoise": "Akşamları paket ve masa siparişleriyle hızlı tempolu",
+        "disadvantage": "Oturma kapasitesi küçük olduğu için kalabalık arkadaş gruplarına pek uygun değildir.",
+        "transit": "Çağlayan Mahallesi 2008. Sokak No:20A içinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Antalya Gurme Rehberleri — Smash",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çağlayan bölgesinde öne çıkan smash burger durağı"
+        },
+        {
+          "title": "Yerel Sosyal Topluluklar",
+          "url": "https://foursquare.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çıtır kenarlı Oklahoma usulü smash değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Çıtır mühürleme ve sulu iç doku",
+        "Hızlı hazırlık süresi"
+      ],
+      "cons": [
+        "Dar iç mekan oturumu"
+      ],
+      "uncertainties": [
+        "Yoğun akşam saatlerinde sokak önü masaları hemen doluyor."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-mef-space",
+      "categoryId": "kahve",
+      "resolvedName": "MEF Space Café",
+      "branchName": "Fener, 1996. Sk. 5A, 07160 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJO7iNAs2bwxQR0EwfvMcOs78",
+      "coordinates": {
+        "lat": 36.848480200000004,
+        "lng": 30.758957499999994
+      },
+      "rating": 4.8,
+      "userRatingCount": 969,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13813400733092891856",
+      "recommendedPrimary": [
+        "Iced Ceremonial Matcha Latte",
+        "Flat White",
+        "V60 Tek Kökenli"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Matcha Cookie & Fırın Tatlı Vitrini",
+          "note": "Kahve ve matcha çeşitlerinin yanında vitrindeki taze pişmiş yumuşak kurabiyeler ile hafif kahvaltı tabakları öne çıkıyor.",
+          "proof": "Antalya modern kafe rehberleri ve Fener mahalle paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ferah yüksek tavanlı modern salon ve açık hava bahçe masaları",
+        "crowdAndNoise": "Sabah geç saatlerden akşamüstüne gençler ve çalışanlarla canlı",
+        "disadvantage": "Hafta sonları popülerliği nedeniyle masa bulmak ve sipariş sırası beklemek gerekebiliyor.",
+        "transit": "Fener Mahallesi 1996. Sokak No:5A üzerinde TerraCity-falez arasında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Antalya Nitelikli Kafe Rehberi",
+          "url": "https://coffeemap.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Fener bölgesinde kahve ve matcha uzmanlığı"
+        },
+        {
+          "title": "Yerel Müdavim Notları — MEF Space",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Geniş atmosfer ve tatlı vitrini değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Hem matcha hem kahve kalitesinde tutarlılık",
+        "Ferah tasarım ve rahat oturum"
+      ],
+      "cons": [
+        "Hafta sonu öğleden sonra yoğun kalabalık"
+      ],
+      "uncertainties": [
+        "Bazı özel tatlı çeşitleri gün ortasında bitebiliyor."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-nobler-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Nobler Coffee Shop",
+      "branchName": "Fener, Tekelioğlu Cd. 67/A, 07160 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJ_S6o7wKbwxQRlxyXq-vdhjc",
+      "coordinates": {
+        "lat": 36.8518478,
+        "lng": 30.7606581
+      },
+      "rating": 4.8,
+      "userRatingCount": 303,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.noblercoffee.com/",
+      "mapsUri": "https://maps.google.com/?cid=4001129323231124631",
+      "recommendedPrimary": [
+        "Tek Kökenli V60",
+        "Espresso & Flat White",
+        "Soğuk Demleme (Cold Brew)"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Harman Yaprak Çay Demlemeleri & Ev Kurabiyesi",
+          "note": "Kahve dışında özenle demlenen mevsimsel yaprak bitki çayları ve yanında verilen taze kurabiyeler ayrıştırıcı.",
+          "proof": "noblercoffee.com resmi kataloğu ve kahve tutkunları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sakin kahve barı önünde iç salon ve cadde kenarı masalar",
+        "crowdAndNoise": "Gün boyu sakin ve sohbet dostu tempo",
+        "disadvantage": "Ana cadde üzerinde araç trafiği sesine yakın dış masalar bulunur.",
+        "transit": "Fener Tekelioğlu Caddesi No:67A TerraCity kavşağı güneyinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Nobler Coffee Resmi Sitesi",
+          "url": "https://www.noblercoffee.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Çay ve kahve kavrum çeşitleri"
+        },
+        {
+          "title": "Antalya Kahve Haritası",
+          "url": "https://coffeemap.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Lara Fener bölgesi demleme noktası"
+        }
+      ],
+      "pros": [
+        "Hem nitelikli kahve hem nadir yaprak çay seçkisi",
+        "Barista rehberliği"
+      ],
+      "cons": [
+        "Cadde kenarı oturumda trafik gürültüsü"
+      ],
+      "uncertainties": [
+        "Çekirdek kavrum serileri dönemsel olarak güncellenebiliyor."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-sade-patisserie",
+      "categoryId": "denemelisin",
+      "resolvedName": "Sade Patisserie Yeşilbahçe",
+      "branchName": "Yeşilbahçe, Çınarlı Cd. 47/A, 07160 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJtY92PBabwxQRc9AOqGgE_Dk",
+      "coordinates": {
+        "lat": 36.8695962,
+        "lng": 30.733188799999997
+      },
+      "rating": 4.4,
+      "userRatingCount": 824,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://sadepatisserie.com/",
+      "mapsUri": "https://maps.google.com/?cid=4178219401835630707",
+      "recommendedPrimary": [
+        "Flat White",
+        "Filtre Kahve",
+        "Cortado"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Çilekli Fransız Tart & Bademli Kruvasan",
+          "note": "Mekanın asıl imza vitrinini oluşturan mevsim meyveli ince tartlar ve kat kat bademli kruvasan yoğun talep görüyor.",
+          "proof": "sadepatisserie.com resmi sitesi ve Antalya gastronomi notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Butik pasta vitrini önünde kısa oturma ve paket/al-götür ağırlıklı düzen",
+        "crowdAndNoise": "Sabah geç saatler ve öğleden sonra çay-kahve saatinde hareketli",
+        "disadvantage": "Oturma kapasitesi görece sınırlı ve tatlı fiyatları butik artizan bandındadır.",
+        "transit": "Yeşilbahçe Mahallesi Çınarlı Caddesi 47A üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Sade Patisserie Resmi Sitesi",
+          "url": "http://sadepatisserie.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Fransız pastacılık vitrini ve Yeşilbahçe dükkanı"
+        },
+        {
+          "title": "Antalya Şehir Rehberleri",
+          "url": "https://www.antalyacityguide.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yeşilbahçe pasta ve kahve klasiği"
+        }
+      ],
+      "pros": [
+        "Katkısız tereyağlı Fransız pasta ve kruvasan standardı",
+        "Şık tatlı vitrini"
+      ],
+      "cons": [
+        "Sınırlı masa kapasitesi ve üst-orta tatlı fiyatları"
+      ],
+      "uncertainties": [
+        "Öğleden sonra en çok sevilen tart çeşitleri tükenebiliyor."
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-peramis-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Peramis Coffee Shop",
+      "branchName": "Güzeloba, Lara Cd. Merve Apt No: 194, 07230 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJY3WaU-GdwxQRXWqytPKc-0w",
+      "coordinates": {
+        "lat": 36.8506524,
+        "lng": 30.8056126
+      },
+      "rating": 4.7,
+      "userRatingCount": 199,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5547199932264507997",
+      "recommendedPrimary": [
+        "Iced Latte",
+        "Americano",
+        "Flat White"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Taze Kruvasan & Ev Yapımı Kurabiye",
+          "note": "Sabah ve öğleden sonra kahvelerinin yanında taze ısıtılmış kruvasan ve parça çikolatalı kurabiyeler tercih ediliyor.",
+          "proof": "Güzeloba yerel kafe paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Hızlı kahve molası ve al-götür ağırlıklı kompakt bar düzeni",
+        "crowdAndNoise": "Sabah işe gidiş ve akşamüstü yürüyüş saatlerinde canlı",
+        "disadvantage": "Al-götür ve hızlı mola odaklı küçük bir dükkan olduğu için uzun süreli bilgisayar çalışmasına elverişli değildir.",
+        "transit": "Güzeloba Lara Caddesi Merve Apartmanı No:194 altında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Antalya Kahve Rehberi — Güzeloba",
+          "url": "https://coffeemap.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Güzeloba yerel espresso durağı"
+        },
+        {
+          "title": "Foursquare — Peramis Coffee",
+          "url": "https://foursquare.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Güler yüzlü baristalık ve espresso kıvamı"
+        }
+      ],
+      "pros": [
+        "Dengeli espresso reçeteleri",
+        "Güzeloba ana aksında kolay ulaşım"
+      ],
+      "cons": [
+        "Çok küçük iç oturma alanı"
+      ],
+      "uncertainties": [
+        "Atıştırmalık vitrini günlük üretim adedine göre değişebiliyor."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-asmani-restaurant",
+      "categoryId": "date",
+      "resolvedName": "Asmani Restaurant",
+      "branchName": "10, Akra Hotel, Şirinyalı, Lara Cd. No:24, 07100 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJV4HBO6KawxQRBd42AK8EpQI",
+      "coordinates": {
+        "lat": 36.864424,
+        "lng": 30.7259464
+      },
+      "rating": 4.1,
+      "userRatingCount": 1216,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.asmanirestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=190563708902497797",
+      "recommendedPrimary": [
+        "Fırınlanmış Dana Yanak",
+        "Izgara Lagos & Deniz Tarağı",
+        "Kuzu Sırtı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İmza Teras Kokteylleri & Artisanal Peynir-Başlangıç Tabakları",
+          "note": "Gün batımında bar bölümünden çıkan imza kokteyller ve şefin deniz mahsullü soğuk başlangıçları geceye damga vuruyor.",
+          "proof": "asmanirestaurant.com menüsü ve ulusal fine dining değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Panoramik camlı ana salon ve açık falez manzaralı çatı terası",
+        "crowdAndNoise": "Gün batımı ve akşam yemeğinde şık kutlama atmosferi",
+        "disadvantage": "Antalya üst fiyat segmentindedir ve pencere/teras kenarı manzaralı masalar için günler öncesinden rezervasyon şarttır.",
+        "transit": "Şirinyalı Lara Caddesi No:24 Akra Hotel 10. katında vale ve park imkanı ile."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Asmani Restaurant Resmi Sitesi",
+          "url": "https://www.asmanirestaurant.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Çatı teras manzarası ve sezonluk akşam menüsü"
+        },
+        {
+          "title": "Hürriyet Lezzet — Antalya Özel Akşam",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Antalya falez manzaralı özel akşam restoranı"
+        },
+        {
+          "title": "TripAdvisor & Ekşi Sözlük — Asmani",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "10. kat falez manzarası ve kutlama servisi"
+        }
+      ],
+      "pros": [
+        "Şehirdeki en geniş körfez ve dağ panoramalarından biri",
+        "Profesyonel servis disiplini"
+      ],
+      "cons": [
+        "Yüksek hesap tutarı ve zorunlu rezervasyon"
+      ],
+      "uncertainties": [
+        "Açık teras hava koşullarına göre sadece camlı salona çekilebiliyor."
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-bella-vita",
+      "categoryId": "date",
+      "resolvedName": "Bella Vita Restaurant",
+      "branchName": "Çağlayan, Lara Cd. 315/1, 07230 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJOahJBRmbwxQRDqAOybfqx94",
+      "coordinates": {
+        "lat": 36.849097199999996,
+        "lng": 30.774047200000002
+      },
+      "rating": 4.6,
+      "userRatingCount": 1811,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.bellavitalara.com/",
+      "mapsUri": "https://maps.google.com/?cid=16053057471858515982",
+      "recommendedPrimary": [
+        "Porçini Mantarlı Risotto",
+        "El Yapımı Tagliatelle",
+        "Ossobuco / Bonfile"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Klasik Ev Yapımı Tiramisu & Burrata Başlangıç Tabağı",
+          "note": "Soğuk başlangıçta domates-pesolu burrata ile akşam kapanışında hazırlanan klasik tiramisu çok tercih ediliyor.",
+          "proof": "bellavitalara.com menüsü ve TripAdvisor Antalya"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş yeşil bahçe ve sıcak aydınlatmalı iç salon",
+        "crowdAndNoise": "Akşamları çiftler ve müdavim gruplarla nezih hareketlilik",
+        "disadvantage": "Popüler hafta sonu akşamlarında rezervasyonsuz masa bulmak güçleşiyor; fiyat bandı ortalamanın üzerindedir.",
+        "transit": "Çağlayan Mahallesi Lara Caddesi 315/1 üzerinde Fener kavşağı doğusunda."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Bella Vita Lara Resmi Sitesi",
+          "url": "https://www.bellavitalara.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "İtalyan makarna, risotto ve ana yemek menüsü"
+        },
+        {
+          "title": "TripAdvisor Antalya İtalyan Restoranları",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Lara hattında yüksek puanlı akşam yemeği mekanı"
+        }
+      ],
+      "pros": [
+        "Taze el yapımı makarna ve risotto tutarlılığı",
+        "Keyifli bahçe atmosferi"
+      ],
+      "cons": [
+        "Hafta sonu kalabalığı ve üst-orta fiyat seviyesi"
+      ],
+      "uncertainties": [
+        "Bazı özel şef tabakları günlük porsiyonla sınırlı kalabiliyor."
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-zaruri-meyhane",
+      "categoryId": "date",
+      "resolvedName": "Zaruri",
+      "branchName": "Çağlayan, 2055. Sk. 29/A, 07230 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJcwjunhebwxQRrmfPxMxf2r4",
+      "coordinates": {
+        "lat": 36.850907,
+        "lng": 30.770666000000002
+      },
+      "rating": 4.5,
+      "userRatingCount": 401,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://instagram.com/zarurimeyhane?igshid=NjIwNzIyMDk2Mg==",
+      "mapsUri": "https://maps.google.com/?cid=13752409745209124782",
+      "recommendedPrimary": [
+        "Vişneli Yaprak Sarma",
+        "Sıcak Humus & Pastırma",
+        "Izgara Kokoreç / Dana Yanak"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırınlanmış Tahinli Sufle / Helva & Yerel Meze Seçkisi",
+          "note": "Ana tabaklar dışında şefin günlük değişen soğuk meze üçlemeleri ve sıcak tahinli tatlısı akşam sofrasını tamamlıyor.",
+          "proof": "instagram.com/zarurimeyhane ve Antalya gastronomi toplulukları"
+        }
+      ],
+      "suitability": {
+        "seating": "Şık ahşap masalı kapalı salon ve ön teras bölümü",
+        "crowdAndNoise": "Akşam saatlerinde ağırlıklı rezervasyonlu masalar",
+        "disadvantage": "Üst fiyat bandındadır ve masa kapasitesi sınırlı olduğu için rezervasyon yapmadan gitmek risklidir.",
+        "transit": "Çağlayan Mahallesi 2055. Sokak 29A Barınaklar Bulvarı yakınında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Zaruri Meyhane Instagram",
+          "url": "https://instagram.com/zarurimeyhane",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Modern meze çeşitleri ve akşam atmosferi"
+        },
+        {
+          "title": "Antalya Güncel Gastronomi Rehberi",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çağlayan yeni nesil meze değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Klişelerden uzak özgün meze reçeteleri",
+        "Sohbete uygun ses seviyesi"
+      ],
+      "cons": [
+        "Yüksek fiyat seviyesi ve küçük salon"
+      ],
+      "uncertainties": [
+        "Meze tabakları mevsime göre haftalık yenilenebiliyor."
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-bottega",
+      "categoryId": "date",
+      "resolvedName": "Bottega",
+      "branchName": "Şirinyalı, Lara Cd. No:78, 07160 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJgwXRIACbwxQREsB_8EW9OkU",
+      "coordinates": {
+        "lat": 36.8555531,
+        "lng": 30.7438531
+      },
+      "rating": 4.4,
+      "userRatingCount": 2044,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4988507645351542802",
+      "recommendedPrimary": [
+        "Bottega Peynir & Şarküteri Tahtası",
+        "Truffle Pasta",
+        "Dana Carpaccio"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Butik Şarap Eşleşmeleri & Ev Yapımı İtalyan Makarna",
+          "note": "Şarap kavından seçilen şişelerle eşleşen el yapımı makarna çeşitleri ve sıcak antipasti tabakları öne çıkıyor.",
+          "proof": "Antalya akşam rehberleri ve Eski Lara bistro değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Büyük şarap mahzeni dekorlu iç mekan ve ferah cadde önü masalar",
+        "crowdAndNoise": "Akşamları çiftler ve sakin sohbet gruplarıyla canlı",
+        "disadvantage": "Şirinyalı merkez trafiğinde akşam vale veya park yeri zaman alabiliyor.",
+        "transit": "Şirinyalı Eski Lara Caddesi No:78 üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "TripAdvisor — Bottega Lara",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Şarap kavı, şarküteri tahtası ve bistro servisi"
+        },
+        {
+          "title": "Antalya Yeme-İçme Topluluğu",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Şirinyalı hattında şarap ve peynir tabağı önerisi"
+        }
+      ],
+      "pros": [
+        "Zengin şarap seçkisi ve peynir eşleşmeleri",
+        "Yetişkin akşam atmosferi"
+      ],
+      "cons": [
+        "Eski Lara aksında akşam park sıkışıklığı"
+      ],
+      "uncertainties": [
+        "Mahzendeki bazı butik şarap stokları değişebiliyor."
+      ],
+      "selectionScore": 76,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-bahcelara-ciftlik",
+      "categoryId": "kahvalti",
+      "resolvedName": "Bahçelara Kahvaltı Çiftliği",
+      "branchName": "Fener, 1907. Sk. No:58, 07100 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJmeWNujabwxQRXUKiu-YlWs0",
+      "coordinates": {
+        "lat": 36.8604797,
+        "lng": 30.752714499999996
+      },
+      "rating": 4.4,
+      "userRatingCount": 290,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14797181198599864925",
+      "recommendedPrimary": [
+        "Serpme Çiftlik Kahvaltısı",
+        "Sucuklu Sahanda Yumurta",
+        "Peynirli Köy Gözlemesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Ev Yapımı Pişi & Semaver Çay",
+          "note": "Masaya taze pişen sıcak pişiler ve ev yapımı turunç-çilek reçelleri özellikle aile masalarında beğeniliyor.",
+          "proof": "Antalya bahçe kahvaltıları rehberi ve ziyaretçi paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Gölgeli açık bahçe çardakları ve aileler için geniş masalar",
+        "crowdAndNoise": "Hafta sonları aile gruplarıyla kalabalık",
+        "disadvantage": "Hafta sonu sabahları rezervasyonsuz gitmek masa beklemeye neden olabilir; sıcak havada açık alan tercih edilmezse kapalı alan sınırlıdır.",
+        "transit": "Fener Mahallesi 1907. Sokak No:58 TerraCity doğu paralelinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "TripAdvisor — Bahçelara",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Şehir içinde bahçeli köy kahvaltısı deneyimi"
+        },
+        {
+          "title": "Yerel Aile Forumları",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çocuklu aileler için ferah bahçe düzeni notu"
+        }
+      ],
+      "pros": [
+        "Merkezi Lara içinde yemyeşil bahçe atmosferi",
+        "Zengin yöresel kahvaltı içeriği"
+      ],
+      "cons": [
+        "Hafta sonu kahvaltı pikinde yavaşlayabilen servis"
+      ],
+      "uncertainties": [
+        "Kış ve yağmurlu günlerde kapalı oturum kapasitesi daralıyor."
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-denizyuzu-falez",
+      "categoryId": "kahvalti",
+      "resolvedName": "Denizyüzü Kafe",
+      "branchName": "Fener, Lara Cd. No:339, 07160 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJ91Ez--ibwxQRFdcL4FiFLNc",
+      "coordinates": {
+        "lat": 36.8465171,
+        "lng": 30.759654500000003
+      },
+      "rating": 4.3,
+      "userRatingCount": 3877,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15504914233892263701",
+      "recommendedPrimary": [
+        "Falez Kahvaltı Tabağı",
+        "Taze Kaşarlı Gözleme",
+        "Sahanda Menemen"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Demleme Çay & Ev Yapımı Portakal Suyu",
+          "note": "Falez rüzgarı eşliğinde alınan kahvaltıda Antalya narenciyesinden taze sıkılan portakal suyu ve sıcak çay eşlikçi.",
+          "proof": "Antalya falez yürüyüş hattı rehberleri ve yerel paylaşımlar"
+        }
+      ],
+      "suitability": {
+        "seating": "Deniz üstü falez terası masaları ve camlı iç bölüm",
+        "crowdAndNoise": "Sabah yürüyüşü sonrası ve hafta sonu yüksek kalabalık",
+        "disadvantage": "Konumu çok popüler olduğu için manzaralı en ön sıra masalarda yer bulmak ve kalabalık saatlerde sipariş beklemek gerekebiliyor.",
+        "transit": "Fener Mahallesi Lara Caddesi No:339 falez yürüyüş parkı kıyısında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Antalya Falez Mekanları Rehberi",
+          "url": "https://www.antalyacityguide.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Deniz manzaralı sabah kahvaltısı ve yürüyüş molası"
+        },
+        {
+          "title": "Ekşi Sözlük — Denizyüzü Kafe",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Falez ucundaki konumu nedeniyle tercih edilen kahvaltı noktası"
+        }
+      ],
+      "pros": [
+        "Doğrudan falez ucunda açık deniz manzarası",
+        "Sabah yürüyüş parkına entegre konum"
+      ],
+      "cons": [
+        "Manzaralı masa rekabeti ve hafta sonu servis yoğunluğu"
+      ],
+      "uncertainties": [
+        "Rüzgarlı kış günlerinde teras kapatılabiliyor."
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-kalamar-balik",
+      "categoryId": "balik",
+      "resolvedName": "Kalamar Balık",
+      "branchName": "Çağlayan, Lara Cd. No: 323/1, 07160 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJwZsyghWbwxQRi8SYAQRahP4",
+      "coordinates": {
+        "lat": 36.849948499999996,
+        "lng": 30.776312100000002
+      },
+      "rating": 4.7,
+      "userRatingCount": 2218,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://kalamarbalik.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=18339882555812660363",
+      "recommendedPrimary": [
+        "Kalamar Izgara / Tava",
+        "Tereyağlı Karides Güveç",
+        "Izgara Lagos / Kaya Levreği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Deniz Mahsullü Güveç & Tahinli Fırın Helva",
+          "note": "Ara sıcakta gelen soslu deniz mahsullü güveç ve yemek sonu sunulan sıcak tahinli fırın helva müdavimlerin gözdesi.",
+          "proof": "kalamarbalik.com.tr resmi menüsü ve Antalya balık restoranları rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç salon ve falez aksına yakın ferah masa düzeni",
+        "crowdAndNoise": "Akşamları aileler ve özel kutlama sofralarıyla kalabalık",
+        "disadvantage": "Fiyat seviyesi üst segmenttedir ve kalabalık hafta sonu akşamlarında rezervasyon gerekir.",
+        "transit": "Çağlayan Mahallesi Lara Caddesi No:323/1 üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Kalamar Balık Resmi Sitesi",
+          "url": "https://kalamarbalik.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Kalamar, ahtapot ve günlük Akdeniz balığı seçkisi"
+        },
+        {
+          "title": "TripAdvisor Antalya Deniz Ürünleri",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Lara bölgesinde ara sıcak istikrarıyla öne çıkan balıkçı"
+        }
+      ],
+      "pros": [
+        "Kalamar pişirme kıvamında yüksek istikrar",
+        "Taze meze dolabı"
+      ],
+      "cons": [
+        "Üst fiyat segmenti ve rezervasyon gerekliliği"
+      ],
+      "uncertainties": [
+        "Mevsim balıkları av durumuna göre günlük olarak fiyatlanıyor."
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-goz-balik",
+      "categoryId": "balik",
+      "resolvedName": "Göz Balık Antalya",
+      "branchName": "Şirinyalı, Lara Cd. no:113/A, 07230 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJs2_4jIubwxQRO-05NR5fJe8",
+      "coordinates": {
+        "lat": 36.8579824,
+        "lng": 30.7349942
+      },
+      "rating": 4.6,
+      "userRatingCount": 713,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": null,
+        "reservable": true
+      },
+      "websiteUri": "https://www.gozbalik.com/",
+      "mapsUri": "https://maps.google.com/?cid=17232284132549717307",
+      "recommendedPrimary": [
+        "Kömürde Ahtapot Izgara",
+        "Taze Karides Güveç",
+        "Kaya Levreği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yeşil Elmalı Roka Salatası & Fener Balığı Kavurma",
+          "note": "Soğuk mezeler içinde ekşi yeşil elmalı roka salatası ve tereyağlı fener kavurma balık öncesi çok beğeniliyor.",
+          "proof": "gozbalik.com resmi sitesi ve yerel balıkçı değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Şık ahşap dokulu iç salon ve bahçe masaları",
+        "crowdAndNoise": "Akşamları düzenli yerli müdavimler",
+        "disadvantage": "Yüksek fiyat bandındadır ve hafta sonu akşamlarında masa bulmak adına rezervasyon gerekir.",
+        "transit": "Şirinyalı Lara Caddesi No:113A üzerinde Eski Lara yürüyüş hattında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Göz Balık Resmi Sitesi",
+          "url": "https://www.gozbalik.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Deniz ürünleri tezgahı ve ara sıcak menüsü"
+        },
+        {
+          "title": "Antalya Balık Rehberleri",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Meze ve ara sıcak kalitesiyle öne çıkan Şirinyalı balıkçısı"
+        }
+      ],
+      "pros": [
+        "Taze meze dolabı ve ara sıcak çeşitliliği",
+        "Tutarlı pişirme disiplini"
+      ],
+      "cons": [
+        "Yüksek hesap bandı"
+      ],
+      "uncertainties": [
+        "Özel deniz mahsulleri gün bazlı stokla sınırlı olabilir."
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-sanda-balik",
+      "categoryId": "balik",
+      "resolvedName": "Sanda Lara Balık",
+      "branchName": "Çağlayan, Barınaklar Blv. No:12, 07230 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJh2fzUwCbwxQR-UTCEmejrDs",
+      "coordinates": {
+        "lat": 36.851524999999995,
+        "lng": 30.7631755
+      },
+      "rating": 4.8,
+      "userRatingCount": 292,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.sandalara.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=4299991407323661561",
+      "recommendedPrimary": [
+        "Mevsim Balıkları Izgara / Tava",
+        "Özel Balık Çorbası",
+        "Kalamar Izgara"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Balık Çorbası & Fırınlanmış Helva",
+          "note": "Soğuk akşamlarda başlangıç olarak sunulan kıvamlı balık çorbası ve sade meze tabakları yerellerin tercih nedeni.",
+          "proof": "sandalara.com.tr resmi menüsü ve Barınaklar mahalle paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sakin aile masaları ve ferah kapalı salon",
+        "crowdAndNoise": "Özellikle akşamları bölge sakinleriyle dengeli doluluk",
+        "disadvantage": "Deniz kenarında değil Barınaklar Caddesi üzerindedir; falez manzarası arayanlar yerine lezzet-bütçe dengesine odaklıdır.",
+        "transit": "Çağlayan Barınaklar Bulvarı No:12 üzerinde kolay cadde parkı ile."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Sanda Lara Balık Resmi Sitesi",
+          "url": "http://www.sandalara.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Balık çorbası ve günlük mevsim balığı menüsü"
+        },
+        {
+          "title": "Antalya Yerel Rehberleri",
+          "url": "https://foursquare.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Manzara farkı olmadan yüksek balık tazeliği sunan mekan"
+        }
+      ],
+      "pros": [
+        "Orta fiyat seviyesinde temiz ve taze balık",
+        "Barınaklar üstünde rahat park"
+      ],
+      "cons": [
+        "Deniz manzarası bulunmaması"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamları aile grupları nedeniyle yoğunlaşabiliyor."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-sultanyar-kebap",
+      "categoryId": "ates-firin",
+      "resolvedName": "Sultanyar Kebap",
+      "branchName": "Yeşilbahçe, Metin Kasapoğlu Cd. Küçükkaya Sitesi No: 30/A, 07160 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJXVY1-aKawxQR5OEYVMZ2B5w",
+      "coordinates": {
+        "lat": 36.8699411,
+        "lng": 30.719877
+      },
+      "rating": 4.4,
+      "userRatingCount": 5913,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.sultanyar.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=11243085588940251620",
+      "recommendedPrimary": [
+        "Taş Fırın İnce Lahmacun",
+        "Adana / Urfa Kebap",
+        "Kuzu Şiş & Ali Nazik"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Haşlama İçli Köfte, Kuşbaşılı Pide & Sıcak Künefe",
+          "note": "Lahmacun öncesi sunulan içli köfte ve çiğ köfte ikramıyla kebap sonrası sıcak künefe müdavim düzeninin parçası.",
+          "proof": "sultanyar.com.tr resmi menüsü ve yerel Antalya gastronomi yazıları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş çok katlı aile restoranı ve cadde önü açık masalar",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde yüksek hacimli sürekli sirkülasyon",
+        "disadvantage": "Çok kalabalık bir kebap salonu olduğu için akşamları gürültü seviyesi yükselebilir ve paket servis yoğunluğunda masa servisi bekletebilir.",
+        "transit": "Yeşilbahçe Metin Kasapoğlu Caddesi No:30A (Dedeman/Laura hattı başlangıcı)."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Sultanyar Kebap Resmi Sitesi",
+          "url": "http://www.sultanyar.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Lahmacun, fındık lahmacun, Ali Nazik ve Adana kebap menüsü"
+        },
+        {
+          "title": "Antalya Lahmacun & Kebap Rehberi",
+          "url": "https://www.antalyacityguide.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Antalya genelinde lahmacun referanslarından biri"
+        },
+        {
+          "title": "Ekşi Sözlük — Sultanyar",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çıtır ince lahmacun ve kebap istikrarı paylaşımları"
+        }
+      ],
+      "pros": [
+        "Yıllardır değişmeyen ince çıtır lahmacun kıvamı",
+        "Geniş ve aile dostu kapasite"
+      ],
+      "cons": [
+        "Yüksek kalabalık gürültüsü ve yoğun paket servis temposu"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşam yemeğinde masa beklemek gerekebiliyor."
+      ],
+      "selectionScore": 96,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-sirali-kebap",
+      "categoryId": "ates-firin",
+      "resolvedName": "Sıralı Kebap",
+      "branchName": "Lara Caddesi No:419,Çağlayan Mahallesi, 07230 Muratpaşa/Antalya, Çağlayan, 07230 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJQyGQ1RWbwxQROwVPnUgSuBU",
+      "coordinates": {
+        "lat": 36.84961,
+        "lng": 30.775411
+      },
+      "rating": 4.4,
+      "userRatingCount": 12275,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://siralikebap.com/",
+      "mapsUri": "https://maps.google.com/?cid=1565020973597394235",
+      "recommendedPrimary": [
+        "Zırh Adana Kebap",
+        "Sıralı Şaşlık & Yağlıkara",
+        "Fıstıklı Kebap"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Haşlama İçli Köfte & Antep Usulü Katmer",
+          "note": "Kebap öncesi gelen sıcak içli köfte ve kapanışta fırından sıcak servis edilen fıstıklı katmer oldukça popüler.",
+          "proof": "siralikebap.com resmi menüsü ve gastronomi yayınları"
+        }
+      ],
+      "suitability": {
+        "seating": "Büyük bahçeli modern ocakbaşı ve çocuk oyun alanı olan aile salonu",
+        "crowdAndNoise": "Akşamları turistler ve kalabalık kutlama gruplarıyla yoğun",
+        "disadvantage": "Yüksek fiyat bandında konumlanır ve büyük salon yapısı nedeniyle sakin atmosfer arayanlara fazla hareketli gelebilir.",
+        "transit": "Çağlayan Mahallesi Lara Caddesi No:419 üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Sıralı Kebap Resmi Sitesi",
+          "url": "http://siralikebap.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Şaşlık, yağlıkara ve modern ocakbaşı menüsü"
+        },
+        {
+          "title": "Hürriyet Seyahat — Antalya Ocakbaşı",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Et çeşitliliği ve sunum standardı"
+        },
+        {
+          "title": "Antalya City Guide & TripAdvisor — Sıralı",
+          "url": "https://www.antalyacityguide.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Eski Lara hattı gurme kebap değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Et seçkisi zenginliği (şaşlık, yağlıkara, küşleme)",
+        "Geniş aile salonu"
+      ],
+      "cons": [
+        "Üst fiyat seviyesi ve yüksek akşam kalabalığı"
+      ],
+      "uncertainties": [
+        "Özel akşam masaları için rezervasyon yaptırmak faydalı."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-242-et-izgara",
+      "categoryId": "ates-firin",
+      "resolvedName": "242 Et & Izgara",
+      "branchName": "Yeşilbahçe, 1470. Sk. no:20, 07230 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJu90BOCWbwxQR0UajhqpFpE0",
+      "coordinates": {
+        "lat": 36.8663938,
+        "lng": 30.724898999999997
+      },
+      "rating": 4.8,
+      "userRatingCount": 1136,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.242etizgara.com/",
+      "mapsUri": "https://maps.google.com/?cid=5594673235806602961",
+      "recommendedPrimary": [
+        "Dinlendirilmiş Kuzu Pirzola",
+        "Kuzu Şiş & Kaburga",
+        "Izgara Adana Kebap"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırınlanmış Tahinli Kabak Tatlısı & Yayık Ayran",
+          "note": "Et yemeklerinin yanında közlenmiş biber-domates, soğan salatası ve tatlı kapanışı için Antalya kabak tatlısı öne çıkıyor.",
+          "proof": "242etizgara.com resmi menüsü ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Düzenli ahşap iç salon ve dış bahçe oturumu",
+        "crowdAndNoise": "Akşamları çevre mahallelerden düzenli et severler",
+        "disadvantage": "Ara sokakta bulunduğu için akşam saatlerinde dış masalar erken doluyor ve park yeri sokak arasına kalıyor.",
+        "transit": "Yeşilbahçe Mahallesi 1470. Sokak No:20 Metin Kasapoğlu yakını."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "242 Et & Izgara Resmi Sitesi",
+          "url": "https://www.242etizgara.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Et dinlendirme ve kuzu ızgara menüsü"
+        },
+        {
+          "title": "Antalya Restoran Rehberleri",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yeşilbahçe bölgesinde yüksek et memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Et pişirme kıvamı ve yumuşaklık tutarlılığı",
+        "İlgili servis"
+      ],
+      "cons": [
+        "Ara sokak park kısıtı"
+      ],
+      "uncertainties": [
+        "Akşam geç saatlerde kuzu pirzola stoğu tükenebiliyor."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-gilig-sirinyali",
+      "categoryId": "denemelisin",
+      "resolvedName": "Giliğ Dondurma Şirinyalı",
+      "branchName": "Villa Mercan, Kemerağzı, Lara Cd. No:167, 07230 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJBdNGDiubwxQRkqJBfgMbAVw",
+      "coordinates": {
+        "lat": 36.856104099999996,
+        "lng": 30.7433558
+      },
+      "rating": 4.8,
+      "userRatingCount": 355,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6629609828283163282",
+      "recommendedPrimary": [
+        "Yanıksı Keçi Sütü Dondurma",
+        "Kavrulmuş Bademli Dondurma",
+        "Tahinli Dondurma"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli Cevizli Dondurma Kasesi & Kışın Sıcak Sahlep",
+          "note": "Külah dışı porsiyonlarda tahinli-cevizli dondurma kupası ve kış mevsiminde tarçınlı sıcak sahlep talep görüyor.",
+          "proof": "Antalya yerel dondurmacılar rehberi ve Şirinyalı mahalle notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Al-götür külah/kap servisi ve yürüyüş üstü kısa mola düzeni",
+        "crowdAndNoise": "Akşam yemeği sonrası Eski Lara yürüyüşçüleriyle sıra oluşabiliyor",
+        "disadvantage": "Oturma alanı kısıtlı olduğundan genellikle yürüyüş esnasında al-götür şeklinde tüketilir.",
+        "transit": "Eski Lara Caddesi Şirinyalı-Kemerağzı hattında No:167 üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Antalya Dondurma Kültürü",
+          "url": "https://www.antalyacityguide.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Antalya yerel yanıksı keçi sütü dondurması markaları"
+        },
+        {
+          "title": "Ekşi Sözlük — Giliğ Dondurma",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Doğal keçi sütü aroması ve şeker dengesi övgüleri"
+        }
+      ],
+      "pros": [
+        "Ağır aroma içermeyen doğal yanıksı keçi tadı",
+        "Akşam geç saatlere açık tezgah"
+      ],
+      "cons": [
+        "Uzun süreli masa oturumu bulunmaması"
+      ],
+      "uncertainties": [
+        "Özel meyveli çeşitler sezona göre tezgaha çıkıyor."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-akdeniz-dondurma",
+      "categoryId": "denemelisin",
+      "resolvedName": "Akdeniz Dondurma Lara Şubesi",
+      "branchName": "Muratpaşa, 1528. Sk. No:50, 07160 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJ0V5dU-uawxQRVStPV8ih6Nk",
+      "coordinates": {
+        "lat": 36.8588029,
+        "lng": 30.734862399999997
+      },
+      "rating": 4.3,
+      "userRatingCount": 1302,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.akdenizdondurma.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=15701977982657571669",
+      "recommendedPrimary": [
+        "Korkuteli Usulü Yanıksı Dondurma",
+        "Sade Keçi Sütü Dondurma",
+        "Karamelli / Tahinli"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Künefe Üstü Yanıksı Dondurma & Şam Tatlısı",
+          "note": "Dondurmanın yanında sunulan sıcak şerbetli künefe veya şam tatlısı ile yanıksı keçi dondurması ikilisi Antalyalıların uzun yıllardır bildiği ritüel.",
+          "proof": "akdenizdondurma.com.tr resmi tarihçesi ve Antalya kent rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Al-götür ve hızlı servis ağırlıklı dondurma tezgahı ile birkaç sokak masası",
+        "crowdAndNoise": "Yaz akşamlarında yerli ailelerle kalabalık kuyruk",
+        "disadvantage": "Klasik dondurmacı tezgah düzeni olduğu için yoğun saatlerde kısa bekleme ve kalabalık kaldırım durumu yaşanabilir.",
+        "transit": "Şirinyalı-Muratpaşa 1528. Sokak No:50 (Eski Lara iç aksı)."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Akdeniz Dondurma Resmi Sitesi",
+          "url": "http://www.akdenizdondurma.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1968 kuruluşu ve yanık keçi sütü üretimi"
+        },
+        {
+          "title": "TripAdvisor — Akdeniz Dondurma Antalya",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Antalya yerel yanıksı dondurma durağı"
+        },
+        {
+          "title": "Ekşi Sözlük — Akdeniz Dondurma",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Şehrin en eski yanıksı dondurma duraklarından biri"
+        }
+      ],
+      "pros": [
+        "Yarım asrı aşan yanıksı keçi dondurma reçetesi",
+        "Oturmuş yerel müdavimlik"
+      ],
+      "cons": [
+        "Yaz akşamlarında tezgah önü kuyruğu"
+      ],
+      "uncertainties": [
+        "Yanık aroması ilk kez deneyenler için alışılmış sütlü dondurmadan farklıdır."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-zamora-pastanesi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Zamora",
+      "branchName": "Fener Aras Sitesi Tekelioğlu Caddesi, Fener, 1963. Sk. No:56/A, 07160 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJY4fz38OawxQRwlbjxIr2u1Y",
+      "coordinates": {
+        "lat": 36.8530215,
+        "lng": 30.7506353
+      },
+      "rating": 4.3,
+      "userRatingCount": 828,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.zamora.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=6249859983775848130",
+      "recommendedPrimary": [
+        "Talaş & Su Böreği",
+        "Dereotlu / Mahlepli Tuzlu Kurabiye",
+        "Klasik Çilekli Pasta"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kremalı Ekler & Bademli Kuru Pasta Seçkisi",
+          "note": "Sabah böreklerinin yanında kutu kutu alınan taze kuru pastalar ve hafif kremalı ekler vitrinin en çok satılanları.",
+          "proof": "zamora.com.tr resmi sitesi ve Antalya şehir belleği yazıları"
+        }
+      ],
+      "suitability": {
+        "seating": "Klasik pastane salonu masaları ve paket tezgahı",
+        "crowdAndNoise": "Sabah kahvaltısı ve akşamüstü misafirlik alışverişinde hareketli",
+        "disadvantage": "Geleneksel pastane konsepti nedeniyle sıcak kahvaltı servisi sınırlıdır ve özel günlerde tatlı sırası uzayabilir.",
+        "transit": "Fener Aras Sitesi Tekelioğlu Caddesi No:56A TerraCity karşısı aksında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Zamora Resmi Sitesi",
+          "url": "http://www.zamora.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1940 kuruluşu, yanıksı dondurma, börek ve klasik pasta geleneği"
+        },
+        {
+          "title": "Antalya Eski İşletmeler Rehberi",
+          "url": "https://www.antalyacityguide.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Antalya pastacılık kültürünün köklü temsilcilerinden"
+        },
+        {
+          "title": "Ekşi Sözlük — Zamora",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yanıksı dondurma ve pastane mirası paylaşımları"
+        }
+      ],
+      "pros": [
+        "Yıllardır korunan hamur ve kurabiye standartları",
+        "Hızlı sabah böreği durağı"
+      ],
+      "cons": [
+        "Yoğun bayram/hafta sonu paket sırası"
+      ],
+      "uncertainties": [
+        "Taze tepsi böreği öğleden önce hızla azalabiliyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lara-pacaci-semsi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Paçacı Şemsi Lara",
+      "branchName": "Çağlayan, Fener Cd. No:10, 07160 Muratpaşa/Antalya, Türkiye",
+      "placeId": "ChIJddkR2OSbwxQR1BGLchIA9lY",
+      "coordinates": {
+        "lat": 36.849793,
+        "lng": 30.762017999999998
+      },
+      "rating": 4.3,
+      "userRatingCount": 1484,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://pacacisemsi.com/",
+      "mapsUri": "https://maps.google.com/?cid=6266196010763751892",
+      "recommendedPrimary": [
+        "Terbiyeli Kelle Paça",
+        "Sarımsaklı Ayak Paça",
+        "Kuzudan Tuzlama & İşkembe"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bol Tahinli Cevizli Kabak Tatlısı & Porsiyon İçli Köfte",
+          "note": "Çorbanın yanında ince bulgurlu sıcak içli köfte ve üzerine yoğun tahin dökülen Antalya kabak tatlısı her zaman bulunuyor.",
+          "proof": "pacacisemsi.com Lara şube menüsü ve yerel gece rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ferah büyük esnaf lokantası salonu ve cadde önü oturumu",
+        "crowdAndNoise": "Öğle yemekleri ve gece geç saatlerde yüksek hareketlilik",
+        "disadvantage": "Yoğun sarımsaklı-sirkeli paça kokusu ve yüksek kalabalık devri sakin bir restoran atmosferinden uzaktır.",
+        "transit": "Çağlayan Mahallesi Fener Caddesi No:10 üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Paçacı Şemsi Resmi Sitesi",
+          "url": "https://pacacisemsi.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1976 kuruluşu, Lara şubesi kelle paça ve kabak tatlısı menüsü"
+        },
+        {
+          "title": "Antalya Gece Açık Mekanlar",
+          "url": "https://www.antalyacityguide.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Lara hattı gece çorbası ve tatlı klasiği"
+        },
+        {
+          "title": "Ekşi Sözlük — Paçacı Şemsi",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Gece ve sabah kelle paça/işkembe klasiği"
+        }
+      ],
+      "pros": [
+        "Taze çorba sirkülasyonu ve geniş masa alanı",
+        "Merkezi Lara ulaşımı"
+      ],
+      "cons": [
+        "Yoğun sakatat/sarımsak kokusu ve yüksek ses seviyesi"
+      ],
+      "uncertainties": [
+        "Gece geç saatlerde boş masa için birkaç dakika beklemek gerekebilir."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    }
+  ]
+}

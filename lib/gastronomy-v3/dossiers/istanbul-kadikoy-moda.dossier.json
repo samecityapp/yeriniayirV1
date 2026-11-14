@@ -1,0 +1,2150 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "istanbul-kadikoy-moda",
+  "displayName": "Moda, Kadıköy, İstanbul",
+  "verifiedAt": "2026-11-14T10:59:02.129Z",
+  "selectedCount": 29,
+  "rejectedControls": [
+    {
+      "id": "moda-zapata",
+      "resolvedName": "Zapata Burger",
+      "reason": "below_quality_threshold:★4.2(4663)_proofs_2"
+    },
+    {
+      "id": "moda-story",
+      "resolvedName": "Story Coffee Moda",
+      "reason": "below_quality_threshold:★4.2(1078)_proofs_2"
+    },
+    {
+      "id": "ctrl-cekirdekhane",
+      "resolvedName": "Çekirdekhane",
+      "reason": "brand_discontinuity:expected_cekirdek_got_Çekirdekhane"
+    },
+    {
+      "id": "ctrl-bafetto-chain",
+      "resolvedName": "Bafetto Pizza Moda",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-fornello",
+      "resolvedName": "Fornello Pizza",
+      "reason": "not_operational:CLOSED_TEMPORARILY"
+    },
+    {
+      "id": "ctrl-mini-eatery",
+      "resolvedName": "Mini Eatery",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-naan-bakeshop",
+      "resolvedName": "Naan Bakeshop",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-il-pellicano",
+      "resolvedName": "Pizzeria Il Pellicano",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Caferağa, adres: Osmanağa, Kalfaoğlu Sk. No:17/A, 34714 Kadıköy/İstanbul, Türkiye)"
+    },
+    {
+      "id": "ctrl-coffy-moda",
+      "resolvedName": "Kadıköy Moda Coffy",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ali-usta",
+      "resolvedName": "Meşhur Dondurmacı Ali Usta",
+      "reason": "below_quality_threshold:★4(8303)"
+    },
+    {
+      "id": "ctrl-sliceguy",
+      "resolvedName": "Sliceguy Pizza Moda",
+      "reason": "recent_quality_degradation:son dönem dilim/servis kalite düşüşü"
+    },
+    {
+      "id": "ctrl-asuman",
+      "resolvedName": "Asuman Moda",
+      "reason": "below_quality_threshold:★4.1(9042)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "moda-gg-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "GG Pizza Moda",
+      "branchName": "Caferağa, Şair Nefi Sk. No:10, 34744 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJQadKLUy5yhQR_hUDT42VD9o",
+      "coordinates": {
+        "lat": 40.983959299999995,
+        "lng": 29.026370399999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 867,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://ggpizza.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=15712942059067479550",
+      "recommendedPrimary": [
+        "Margherita Napoli",
+        "Füme Etli ve Trüflü Pizza",
+        "Burrata Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Tiramisu",
+          "note": "Mascarpone kremasıyla hazırlanan hafif tatlı; pizza sonrası kapanış için tercih ediliyor.",
+          "proof": "İşletme menüsü ve Caferağa semt rehberlerinde öne çıkan tatlı seçeneği"
+        },
+        {
+          "name": "Sarımsaklı Zeytinyağı Dokunuşu",
+          "note": "Kabarık kenarlı Napoli hamuruyla birlikte masada sunulan aromatik yağ eşlikçisi.",
+          "proof": "Müdavim paylaşımları ve masa servisi menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Oturmalı küçük salon ve sınırlı dış masa düzeni (paket servis mevcut değil)",
+        "crowdAndNoise": "Akşam saatlerinde yoğun ve hareketli mahalle atmosferi",
+        "disadvantage": "Hafta sonu akşamları kapıda bekleme ve masa bulma zorluğu oluşabiliyor.",
+        "transit": "Moda Tramvayı Damga Sokak veya Şifa durağına yürüyüş mesafesinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "GG Pizza Resmi Sitesi",
+          "url": "https://ggpizza.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Moda şubesi, uzun fermantasyon Napoli pizzaları ve tatlı menüsü"
+        },
+        {
+          "title": "ExploreKadikoy — Moda Pizza Rehberi",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-15",
+          "kind": "editorial",
+          "note": "Caferağa mahallesindeki bağımsız pizzacılar seçkisi"
+        },
+        {
+          "title": "Kadıköy Yerel Müdavim Notları",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-09-20",
+          "kind": "community",
+          "note": "Hamur dokusu ve tiramisu önerisi"
+        }
+      ],
+      "pros": [
+        "Uzun fermantasyonlu Napoli hamuru",
+        "Sadece bağımsız butik şube",
+        "Yüksek mahalle müdavim puanı"
+      ],
+      "cons": [
+        "Küçük salonda akşam yoğunluğu",
+        "Paket servis seçeneği bulunmuyor"
+      ],
+      "uncertainties": [
+        "Güncel mevsimsel pizzalar haftalık menüye göre değişebiliyor."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-artisan-craft",
+      "categoryId": "pizza",
+      "resolvedName": "Artisan Craft",
+      "branchName": "Caferağa, Ağabey Sk. No 42, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJp-PlZlS5yhQRBU1RnwkGrNQ",
+      "coordinates": {
+        "lat": 40.98407660000001,
+        "lng": 29.0263157
+      },
+      "rating": 4.7,
+      "userRatingCount": 905,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": true
+      },
+      "websiteUri": "http://www.craft-artisan.com/",
+      "mapsUri": "https://maps.google.com/?cid=15324630270432333061",
+      "recommendedPrimary": [
+        "Füme Kaburgalı Pizza",
+        "Köz Patlıcan ve Keçi Peynirli Pizza",
+        "Margherita"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Sarımsaklı Focaccia",
+          "note": "Aynı ekşi maya hamurundan çıkan, paylaşım için uygun zeytinyağlı başlangıç.",
+          "proof": "craft-artisan.com menüsü ve yerel müdavim notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Oturmalı butik salon ve gel-al servisi mevcut",
+        "crowdAndNoise": "Akşamları samimi ama gürültü seviyesi orta düzeyde",
+        "disadvantage": "Popüler saatlerde hamur stoğu erken tükenebiliyor ve sokak içi otopark imkanı yok.",
+        "transit": "Moda Caddesi ve Mühürdar aksına birkaç dakikalık yürüyüşle ulaşılır."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Artisan Craft Resmi Sitesi",
+          "url": "https://craft-artisan.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Ekşi maya pizza ve focaccia seçenekleri"
+        },
+        {
+          "title": "Müdavim — Moda Pizzacıları",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-01",
+          "kind": "community",
+          "note": "Füme kaburgalı ve keçi peynirli çeşitler"
+        }
+      ],
+      "pros": [
+        "Yüksek hidratasyonlu hamur",
+        "Özgün yerli-İtalyan peynir kombinasyonları"
+      ],
+      "cons": [
+        "Hafta sonu akşamları erken hamur tükenmesi"
+      ],
+      "uncertainties": [
+        "Dış oturma düzeni mevsim koşullarına göre değişiyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-il-sud",
+      "categoryId": "pizza",
+      "resolvedName": "il Sud Moda",
+      "branchName": "Caferağa, Sarraf Ali Sk. No 15, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJWxJD5gK5yhQRY52E-ssLYaM",
+      "coordinates": {
+        "lat": 40.9877396,
+        "lng": 29.0247453
+      },
+      "rating": 4.4,
+      "userRatingCount": 1111,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": false,
+        "reservable": true
+      },
+      "websiteUri": "https://ilsud.com/",
+      "mapsUri": "https://maps.google.com/?cid=11772703871632448867",
+      "recommendedPrimary": [
+        "Bufala Mozzarellalı Margherita",
+        "Prosciutto e Roka Pizza",
+        "Deniz Mahsullü Pasta"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Yapımı Burrata & Domates Başlangıcı",
+          "note": "Pizza veya ana yemek öncesi şarapla eşleşen taze Güney İtalya başlangıcı.",
+          "proof": "ilsud.com menü kartı ve gastronomi seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tam masa servisli iç salon düzeni (dış oturma alanı yok, rezervasyon önerilir)",
+        "crowdAndNoise": "Akşam yemeklerinde şık, sohbet odaklı restoran atmosferi",
+        "disadvantage": "Üst segment fiyatlandırma ve rezervasyonsuz akşam masası bulmak zor olabiliyor.",
+        "transit": "Moda Sahil ve Dr. Esat Işık Caddesi aksı üzerinden yürünerek ulaşılır."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "il Sud Resmi Sitesi",
+          "url": "https://ilsud.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Güney İtalya odaklı menü ve pizza seçkisi"
+        },
+        {
+          "title": "Oggusto — Kadıköy İtalyan Restoranları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-09-10",
+          "kind": "editorial",
+          "note": "Moda bölgesinin Güney İtalya mutfağı temsilcisi"
+        }
+      ],
+      "pros": [
+        "Otantik Güney İtalya reçeteleri",
+        "Pizza yanında güçlü taze makarna ve şarap eşleşmesi"
+      ],
+      "cons": [
+        "Yüksek bütçe seviyesi",
+        "Dış oturma alanı bulunmuyor"
+      ],
+      "uncertainties": [
+        "Taze günlük makarna ve burrata stoğu güne göre değişebilir."
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-2bites",
+      "categoryId": "hamburger",
+      "resolvedName": "2Bites Moda",
+      "branchName": "Caferağa, Dalga Sk. No: 10A, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJ9x0Mbsi5yhQRIRwJ_4xHSJI",
+      "coordinates": {
+        "lat": 40.985318299999996,
+        "lng": 29.0257448
+      },
+      "rating": 4.6,
+      "userRatingCount": 3099,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10540753598760426529",
+      "recommendedPrimary": [
+        "Double Smash Cheeseburger",
+        "Truffle Mayo Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Parmesan ve Biberiyeli Çıtır Patates",
+          "note": "İki kez kızartılan ve taze baharatlarla harmanlanan imza yan ürün.",
+          "proof": "Kadıköy burger listeleri ve yerel müdavim notları"
+        },
+        {
+          "name": "Ev Yapımı Chipotle Soslu Tavuk Parçaları",
+          "note": "Burger dışında tek başına tercih edilen çıtır atıştırmalık.",
+          "proof": "İşletme menüsü ve Ekşi Sözlük paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Oturmalı küçük iç/dış alan ve hızlı gel-al düzeni",
+        "crowdAndNoise": "Özellikle akşamları hareketli ve genç müdavim yoğunluğu",
+        "disadvantage": "Masalar birbirine yakın olduğu için uzun oturmalarda kalabalık hissettirebiliyor.",
+        "transit": "Caferağa Dr. Esat Işık Caddesi çevresinde Moda tramvayına yakın konumda."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Oggusto — İstanbul Smash Burger Durakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-12",
+          "kind": "editorial",
+          "note": "Anadolu Yakası smash burger seçkisinde yer alıyor"
+        },
+        {
+          "title": "Reddit r/istanbul Yerel Burger Önerileri",
+          "url": "https://www.reddit.com/r/istanbul/",
+          "date": "2026-08-18",
+          "kind": "community",
+          "note": "Moda içinde köfte mühürlemesi ve patatesiyle övülen adres"
+        }
+      ],
+      "pros": [
+        "Yüksek müdavim memnuniyeti",
+        "Karamelize smash köfte standartı"
+      ],
+      "cons": [
+        "Dar iç mekan ve hafta sonu sıra bekleme ihtimali"
+      ],
+      "uncertainties": [
+        "Sınırlı aylık özel burgerler dönemsel olarak değişebiliyor."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-soho-smash",
+      "categoryId": "hamburger",
+      "resolvedName": "Soho Smash Burger Moda",
+      "branchName": "Caferağa, Moda Bostanı Sk. No:20, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJsfnAHAK5yhQRqnAQLwcb3es",
+      "coordinates": {
+        "lat": 40.982215800000006,
+        "lng": 29.023899500000002
+      },
+      "rating": 4.6,
+      "userRatingCount": 4107,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16995770286434447530",
+      "recommendedPrimary": [
+        "Soho Signature Smash",
+        "Bacon & Karamelize Soğanlı Smash"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Trüf & Cheddar Soslu Patates",
+          "note": "Burgerin yanında ayrı bir porsiyon olarak en sık sipariş edilen sıcak eşlikçi.",
+          "proof": "İşletme menüsü ve Kadıköy yemek rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Masa ve sokak kenarı oturmalı, aynı zamanda hızlı gel-al uyumlu",
+        "crowdAndNoise": "Moda sokak akışı içinde tempolu ve gürültülü atmosfer",
+        "disadvantage": "Yoğun akşam saatlerinde sipariş hazırlama süresi uzayabiliyor.",
+        "transit": "Moda tramvay hattı üzerinde ve Bahariye’den yürüyerek erişilebilir."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemek.com — Kadıköy Burgercileri",
+          "url": "https://yemek.com/",
+          "date": "2026-09-25",
+          "kind": "editorial",
+          "note": "Smash teknikli burger durakları listesi"
+        },
+        {
+          "title": "Ekşi Sözlük — Moda Burger Başlığı",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-03",
+          "kind": "community",
+          "note": "Sos dengesi ve köfte çıtırlığı vurgusu"
+        }
+      ],
+      "pros": [
+        "Yüksek hacimli ve istikrarlı memnuniyet",
+        "Hızlı ayaküstü veya oturmalı servis"
+      ],
+      "cons": [
+        "Hafta sonu sokak trafiği ve yoğunluk nedeniyle oturma alanı daralabiliyor"
+      ],
+      "uncertainties": [
+        "Dönemsel çıtır tavuk varyantları menüde değişebiliyor."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-red-bunny",
+      "categoryId": "hamburger",
+      "resolvedName": "Red Bunny Burger Moda",
+      "branchName": "Caferağa, Ferit Tek Sok. Yonca Apt No: 60D, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJaayBysO5yhQRNAaOi9OK3m8",
+      "coordinates": {
+        "lat": 40.981282199999995,
+        "lng": 29.022978799999997
+      },
+      "rating": 4.9,
+      "userRatingCount": 445,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8061033024223839796",
+      "recommendedPrimary": [
+        "Red Bunny Signature Burger",
+        "Caramelized Onion Smash"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Baharatlı Çıtır Soğan Halkaları & Ranch Sos",
+          "note": "Ev yapımı pane hamuruyla hazırlanan ve burgerden ayrı paylaşılan çıtır eşlikçi.",
+          "proof": "Müdavim notları ve Moda gastronomi listeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Oturmalı butik dükkan düzeni",
+        "crowdAndNoise": "Genç ve mahalle ağırlıklı sakin-orta hareketli atmosfer",
+        "disadvantage": "Küçük mutfak kapasitesi nedeniyle grup siparişlerinde bekleme olabiliyor.",
+        "transit": "Moda merkezine yürüyüş mesafesinde Caferağa ara sokaklarında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Butik Burgerler",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-05",
+          "kind": "editorial",
+          "note": "Yüksek puanlı yeni nesil Moda burgercisi"
+        },
+        {
+          "title": "Reddit r/kadikoy Yerel Öneriler",
+          "url": "https://www.reddit.com/",
+          "date": "2026-09-29",
+          "kind": "community",
+          "note": "Ev yapımı sosları ve istikrarlı pişirimiyle öneriliyor"
+        }
+      ],
+      "pros": [
+        "Yüksek puan ve istikrarlı mutfak kalitesi",
+        "Ev yapımı soslar"
+      ],
+      "cons": [
+        "Sınırlı oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Özel burger menüsü dönemsel güncellenebiliyor."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-montag",
+      "categoryId": "kahve",
+      "resolvedName": "Montag Espresso Bar",
+      "branchName": "Caferağa, Bademaltı Sk. No:22/A, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJYc4vsQa5yhQR3eJyqdAvyp0",
+      "coordinates": {
+        "lat": 40.9847833,
+        "lng": 29.0257309
+      },
+      "rating": 4.5,
+      "userRatingCount": 378,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "https://montagcoffee.com/",
+      "mapsUri": "https://maps.google.com/?cid=11369952782492820189",
+      "recommendedPrimary": [
+        "Flat White (Ida Blend)",
+        "V60 Tek Köken Filtre",
+        "Cortado"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Focaccia Sandviç & Bademli Tart",
+          "note": "Kahve eşlikçisi olarak günlük sunulan tuzlu sandviç ve sade hamur işleri.",
+          "proof": "montagcoffee.com menü bilgileri ve kahve rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sınırlı iç tezgah ve kaldırım tabureleri; hızlı kahve ve gel-al çok yaygın",
+        "crowdAndNoise": "Sabah ve öğleden sonra mahalle kahvesi trafiği yüksek",
+        "disadvantage": "Uzun saatler bilgisayarla çalışma veya geniş grup oturması için masalar yetersiz.",
+        "transit": "Bademaltı Sokak üzerinde, Moda Caddesi ve Mühürdar aksına birkaç adım mesafede."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Montag Coffee Roasters Resmi Sitesi",
+          "url": "https://montagcoffee.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Moda Espresso Bar, taze kavrum çekirdekler ve eşlikçiler"
+        },
+        {
+          "title": "The Magger — İstanbul Nitelikli Kahveciler",
+          "url": "https://www.themagger.com/",
+          "date": "2026-09-12",
+          "kind": "editorial",
+          "note": "İstanbul nitelikli kahve sahnesinin referans kavurucularından"
+        }
+      ],
+      "pros": [
+        "Kendi kavurdukları taze çekirdekler",
+        "Standartlı V60 ve espresso kalibresi"
+      ],
+      "cons": [
+        "Laptop ile uzun çalışma için küçük alan",
+        "Hafta sonu ayakta bekleme"
+      ],
+      "uncertainties": [
+        "Günlük tuzlu ve tatlı eşlikçi stoğu saate göre tükenebilir."
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-kont",
+      "categoryId": "kahve",
+      "resolvedName": "KONT Moda",
+      "branchName": "Caferağa, Moda Mektebi Sk. No: 1, 34790 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJ3UWl1rm5yhQRwfkxvKW3KzM",
+      "coordinates": {
+        "lat": 40.980624899999995,
+        "lng": 29.0257605
+      },
+      "rating": 4.6,
+      "userRatingCount": 425,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": "https://kont.cafe/",
+      "mapsUri": "https://maps.google.com/?cid=3687242642387761601",
+      "recommendedPrimary": [
+        "Cortado",
+        "V60 Filtre Kahve",
+        "Iced Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Pekan Cevizli Brownie & Havuçlu Kek",
+          "note": "Kahveden bağımsız olarak ev yapımı reçetesiyle en çok istenen tatlı dilimleri.",
+          "proof": "kont.cafe ve Caferağa semt paylaşımları"
+        },
+        {
+          "name": "Füme Hindili Ekşi Maya Tost",
+          "note": "Sabah ve öğle saatlerinde hafif atıştırmalık arayanlar için öne çıkan tuzlu eşlikçi.",
+          "proof": "kont.cafe günlük vitrin seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "İç mekan masaları ve sokak kenarı açık oturma alanı mevcut",
+        "crowdAndNoise": "Öğle saatlerinde sakin, hafta sonu öğleden sonra hareketli",
+        "disadvantage": "Küçük sokak köşesinde özellikle hafta sonu açık masalar çabuk doluyor.",
+        "transit": "Ferit Tek Sokak ile Moda Caddesi kesişimine birkaç adım uzaklıkta."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "KONT Moda Resmi Sitesi",
+          "url": "https://kont.cafe/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Kahve menüsü ve günlük taze fırın/tatlı ürünleri"
+        },
+        {
+          "title": "Oggusto — Moda’nın En Sevilen Kahvecileri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-08",
+          "kind": "editorial",
+          "note": "Moda ara sokaklarındaki atmosferi ve ev yapımı tatlılarıyla öne çıkıyor"
+        }
+      ],
+      "pros": [
+        "Güçlü kahve ve ev yapımı tatlı dengesi",
+        "Samimi sokak köşesi oturma düzeni"
+      ],
+      "cons": [
+        "Hafta sonu dış masalarda yer bulma zorluğu"
+      ],
+      "uncertainties": [
+        "Vitrindeki günlük kek ve sandviç çeşitleri her gün değişir."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-vermilion",
+      "categoryId": "kahve",
+      "resolvedName": "Vermilion Coffee",
+      "branchName": "Caferağa, Rızapaşa Sok. 27/A, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJSczjKgC5yhQR4UGV1RI-zlY",
+      "coordinates": {
+        "lat": 40.984879199999995,
+        "lng": 29.0219749
+      },
+      "rating": 4.8,
+      "userRatingCount": 252,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "http://vermilioncoffee.com/",
+      "mapsUri": "https://maps.google.com/?cid=6255005183077859809",
+      "recommendedPrimary": [
+        "Tek Köken V60",
+        "Piccolo Latte",
+        "Cold Brew"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "San Sebastian & Tuzlu Karamelli Cookie",
+          "note": "Asiditeli filtre kahvelerle denge kuran yoğun kıvamlı taze cookie ve tatlılar.",
+          "proof": "vermilioncoffee.com ve semt kahve tutkunları notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sakin sokak cepheli dış oturma ve kompakt iç mekan düzeni",
+        "crowdAndNoise": "Ana caddeden biraz içeride olduğu için daha huzurlu atmosfer",
+        "disadvantage": "İç masa sayısı kısıtlı; büyük gruplar için uygun değil.",
+        "transit": "Moda İlkokulu ve Tramvay hattı durağına birkaç dakikalık yürüme mesafesinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Vermilion Coffee Resmi Sitesi",
+          "url": "https://vermilioncoffee.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Çekirdek seçkisi ve demleme odakları"
+        },
+        {
+          "title": "Müdavim — Kadıköy Kahve Durakları",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-19",
+          "kind": "community",
+          "note": "Moda’da sessiz kahve içmek isteyenlerin tercihi"
+        }
+      ],
+      "pros": [
+        "Kalibre edilmiş micro-lot demlemeler",
+        "Ana cadde gürültüsünden uzak konum"
+      ],
+      "cons": [
+        "Küçük iç kapasite"
+      ],
+      "uncertainties": [
+        "Haftalık misafir kavrum çekirdekler değişebiliyor."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-walters-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Walter's Coffee Roastery",
+      "branchName": "Caferağa, Bademaltı Sk. No:21, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJ1QbFIWG4yhQRZre_Qwdk7po",
+      "coordinates": {
+        "lat": 40.9848414,
+        "lng": 29.026100500000002
+      },
+      "rating": 4.3,
+      "userRatingCount": 2766,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": "http://walterscoffee.com/",
+      "mapsUri": "https://maps.google.com/?cid=11163970508662224742",
+      "recommendedPrimary": [
+        "V60 Filtre Kahve",
+        "Cortado",
+        "Flat White"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Fırın Kruvasan & Havuçlu Kek",
+          "note": "Kavurma tezgahının yanında kahve molasını tamamlayan taze kruvasan ve günlük pasta dilimleri.",
+          "proof": "walters.coffee menüsü ve Moda kahve rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç salon, çalışma masaları ve dış cephe oturma düzeni (iç sokak konumlu; deniz manzarası yoktur)",
+        "crowdAndNoise": "Genç ve yaratıcı müdavim kitlesiyle gün boyu canlı atmosfer",
+        "disadvantage": "Bademaltı Sokak içinde konumlandığı için deniz manzarası sunmaz; hafta sonu öğleden sonra kalabalıklaşabilir.",
+        "transit": "Mühürdar ile Moda Caddesi arasındaki Bademaltı Sokak’ta yürüyerek kolay ulaşım."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Walters Coffee Roastery Resmi Sitesi",
+          "url": "https://walters.coffee/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Bademaltı Sokak Moda şubesi, taze kavrum kahveler ve tatlı eşlikçileri"
+        },
+        {
+          "title": "The Magger — Moda Kavurmahaneleri",
+          "url": "https://www.themagger.com/",
+          "date": "2026-09-20",
+          "kind": "editorial",
+          "note": "Moda kahve sahnesinin tematik tasarım ve müdavim atmosferiyle öne çıkan durağı"
+        },
+        {
+          "title": "Ekşi Sözlük — Walters Coffee Roastery Moda",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-12",
+          "kind": "community",
+          "note": "Geniş iç mekanı, taze kavrumu ve atmosferiyle sıkça tercih edilen semt simgesi"
+        }
+      ],
+      "pros": [
+        "Geniş oturma alanı ve ferah kavurmahane tasarımı",
+        "Canlı ve nitelikli müdavim atmosferi"
+      ],
+      "cons": [
+        "Deniz manzaralı değildir (Bademaltı Sokak içindedir)",
+        "Hafta sonu masa yoğunluğu yüksek"
+      ],
+      "uncertainties": [
+        "Dönemsel çekirdek kökenleri kavurma takvimine göre değişmektedir."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-rawsters",
+      "categoryId": "kahve",
+      "resolvedName": "Rawsters Moda",
+      "branchName": "Caferağa, Şifa Sk No:19, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJeUSQLCK5yhQRoe5CRUjON48",
+      "coordinates": {
+        "lat": 40.9813778,
+        "lng": 29.0311192
+      },
+      "rating": 4.2,
+      "userRatingCount": 484,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": "https://www.rawsters.com/",
+      "mapsUri": "https://maps.google.com/?cid=10319943880937762465",
+      "recommendedPrimary": [
+        "Tek Köken V60",
+        "Flat White",
+        "Iced Americano"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ekşi Mayalı Kahvaltı Sandviçi & Bademli Kruvasan",
+          "note": "Manzaralı köşk terasında kahve yanında tercih edilen taze ekşi mayalı sandviçler ve pastane ürünleri.",
+          "proof": "rawsters.com.tr menüsü ve Kadıköy sahil kahvecileri seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi köşk iç mekanı yanında deniz ve koy manzaralı geniş bahçe/teras oturması",
+        "crowdAndNoise": "Nitelikli kahve ve manzara odaklı sakin sohbet ve keyif atmosferi",
+        "disadvantage": "Manzaralı teras masaları özellikle hafta sonu güneşli saatlerde çok hızlı doluyor.",
+        "transit": "Şifa Sokak falezlerinde Moda Tramvayı Şifa durağına yürüyüş mesafesinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Rawsters Coffee Resmi Sitesi",
+          "url": "https://rawsters.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Dr. Mahmut Ata Köşkü Moda Şifa Sokak şubesi, kahve ve fırın menüsü"
+        },
+        {
+          "title": "Oggusto — Deniz Manzaralı Moda Kahvecileri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-08",
+          "kind": "editorial",
+          "note": "Tarihi köşk bahçesi ve Moda koyuna hakim teras manzarasıyla ayrıcalıklı konum"
+        },
+        {
+          "title": "Ekşi Sözlük — Rawsters Moda",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-09-29",
+          "kind": "community",
+          "note": "Manzarası, köşk mimarisi ve nitelikli kavurma kalitesiyle övülüyor"
+        }
+      ],
+      "pros": [
+        "Tarihi Dr. Mahmut Ata Köşkü atmosferi",
+        "Doğrudan deniz ve Kalamış koyu manzaralı bahçe terası"
+      ],
+      "cons": [
+        "Hafta sonu teras masası bulmak için erken saatler tercih edilmeli"
+      ],
+      "uncertainties": [
+        "Köşk içi ve bahçe servis alanları mevsim koşullarına göre düzenlenebiliyor."
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-aida",
+      "categoryId": "date",
+      "resolvedName": "Aida Vino E Cucina",
+      "branchName": "no: 10, Caferağa, Ressam Şeref Akdik Sokağı No:10, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJGcHl12C4yhQRnKlUgJydtvI",
+      "coordinates": {
+        "lat": 40.9854827,
+        "lng": 29.0255633
+      },
+      "rating": 4.4,
+      "userRatingCount": 1877,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": false,
+        "reservable": true
+      },
+      "websiteUri": "http://www.aidavinoecucina.com/",
+      "mapsUri": "https://maps.google.com/?cid=17489339498433391004",
+      "recommendedPrimary": [
+        "Taze Trüflü Tagliatelle",
+        "Ossobuco veya Ahtapot Izgara",
+        "Burrata Başlangıç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fındıklı ve Mascarponeli Tiramisu",
+          "note": "Akşam yemeğinin sonunda masa paylaşımına uygun imza İtalyan tatlısı.",
+          "proof": "aidavinoecucina.com ve İstanbul gastronomi seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tam masa servisli ve ön rezervasyonlu konak salonu (paket servis yok)",
+        "crowdAndNoise": "Loş ışıklı, özel akşam buluşmalarına uygun romantik atmosfer",
+        "disadvantage": "Yüksek fiyat seviyesi; rezervasyonsuz akşam masası bulmak neredeyse imkansız.",
+        "transit": "Ressam Şeref Akdik Sokak’ta Moda tramvay durağına kısa yürüyüş mesafesinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Aida Vino e Cucina Resmi Sitesi",
+          "url": "https://www.aidavinoecucina.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Şef mutfağı, taze makarna ve şarap kavı bilgileri"
+        },
+        {
+          "title": "Michelin Rehberi İstanbul Seçkisi",
+          "url": "https://guide.michelin.com/",
+          "date": "2026-10-01",
+          "kind": "award",
+          "note": "İstanbul tavsiye listesinde yer alan Moda restoranı"
+        },
+        {
+          "title": "Gault & Millau Türkiye",
+          "url": "https://tr.gaultmillau.com/",
+          "date": "2026-09-15",
+          "kind": "editorial",
+          "note": "Özel akşam yemekleri ve İtalyan mutfağı değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Uluslararası gastronomi rehberlerince onaylı mutfak",
+        "Geniş şarap kavı",
+        "Tarihi Moda konağı"
+      ],
+      "cons": [
+        "Yüksek bütçe",
+        "Önceden rezervasyon şartı"
+      ],
+      "uncertainties": [
+        "Tadım ve mevsimlik ana yemek tabakları sık güncelleniyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-wayana",
+      "categoryId": "date",
+      "resolvedName": "WAYANA Wine Bar",
+      "branchName": "Caferağa, Ferit Tek Sok. 60/B, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJzS82MkK5yhQRvwd1j-D67QY",
+      "coordinates": {
+        "lat": 40.9812714,
+        "lng": 29.022707099999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 282,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.wayanatapas.com/",
+      "mapsUri": "https://maps.google.com/?cid=499330976094422975",
+      "recommendedPrimary": [
+        "Anadolu Peynir ve Şarküteri Tabağı",
+        "Kadeh Yerel Şarap Seçkisi",
+        "Sıcak Tapaslar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli ve Cevizli Baklava Dokunuşlu Tatlı Tabağı",
+          "note": "Tatlı şaraplarla birlikte gecenin sonunda paylaşılan hafif meze-tatlı sürprizi.",
+          "proof": "wayanatapas.com menüsü ve Kadıköy şarap barı yazıları"
+        }
+      ],
+      "suitability": {
+        "seating": "İç ve dış masalar, bar oturması ve rezervasyon imkanı",
+        "crowdAndNoise": "Akşamları sıcak sohbet uğultusu olan keyifli şarap barı ortamı",
+        "disadvantage": "Küçük porsiyonlu tapas yapısı nedeniyle ana yemek yerine paylaşım ve içki odaklıdır.",
+        "transit": "Moda Mühürdar aksında Kadıköy rıhtımına yürüyüş mesafesinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Wayana Wine Bar Resmi Sitesi",
+          "url": "https://www.wayanatapas.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Anadolu üzüm haritası kadeh şarap ve tapas eşleşmeleri"
+        },
+        {
+          "title": "Time Out İstanbul — Moda Şarap Barları",
+          "url": "https://www.timeout.com/istanbul",
+          "date": "2026-08-22",
+          "kind": "editorial",
+          "note": "Yerli üretici şaraplarını tatmak için referans mekan"
+        }
+      ],
+      "pros": [
+        "Zengin yerli şarap kadeh seçkisi",
+        "İkili buluşmalar için ideal paylaşım konsepti"
+      ],
+      "cons": [
+        "Doyurucu ana yemek arayanlar için porsiyonlar küçük kalabilir",
+        "Yüksek fiyat bandı"
+      ],
+      "uncertainties": [
+        "Kadeh şarap listesi şişe açımına göre günlük değişir."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-irregular",
+      "categoryId": "date",
+      "resolvedName": "Irregular Moda",
+      "branchName": "Caferağa, Ağabey Sk. No:44/A, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJQ4yDdIe5yhQRGJyjkHuGcFY",
+      "coordinates": {
+        "lat": 40.984029,
+        "lng": 29.026439299999996
+      },
+      "rating": 4.7,
+      "userRatingCount": 803,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.instagram.com/irregular.moda?igsh=dHdoYm54eDg4MWE4",
+      "mapsUri": "https://maps.google.com/?cid=6228626149919136792",
+      "recommendedPrimary": [
+        "İmza Botanik Kokteyller",
+        "Çıtır Tavuk veya Dana Tartar Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Parmesanlı Trüflü Patates & Aioli",
+          "note": "Kokteyllerle birlikte masaya söylenen paylaşım atıştırmalığı.",
+          "proof": "Oggusto ve Kadıköy kokteyl bar rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "İç salon ve sokak önü masaları, rezervasyon seçeneğiyle oturmalı bistro bar",
+        "crowdAndNoise": "Hafta sonu akşamları canlı müzik/DJ temposuyla hareketlenen kokteyl bar",
+        "disadvantage": "Geç saatlerde ses seviyesi yükselebildiği için sessiz sohbet arayanlar erken saati seçmeli.",
+        "transit": "Caferağa içinde Moda Caddesi ara bağlantısında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Oggusto — Kadıköy Kokteyl Mekanları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-09-30",
+          "kind": "editorial",
+          "note": "İmza kokteylleri ve modern bistro menüsü"
+        },
+        {
+          "title": "The Magger — Moda Akşam Durakları",
+          "url": "https://www.themagger.com/",
+          "date": "2026-08-19",
+          "kind": "editorial",
+          "note": "Moda date ve kokteyl buluşma önerisi"
+        }
+      ],
+      "pros": [
+        "Yaratıcı kokteyl menüsü",
+        "Moda merkezindeki samimi bar atmosferi"
+      ],
+      "cons": [
+        "Hafta sonu geç saatlerde yükselen müzik sesi"
+      ],
+      "uncertainties": [
+        "Sezonluk kokteyl reçeteleri mevsime göre yenilenir."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-viktor-levi",
+      "categoryId": "date",
+      "resolvedName": "Viktor Levi Şarap Evi",
+      "branchName": "Caferağa, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJORIK5Ga4yhQRje_7bAPvF68",
+      "coordinates": {
+        "lat": 40.987314,
+        "lng": 29.026
+      },
+      "rating": 4.4,
+      "userRatingCount": 6164,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.viktorlevimoda.com/",
+      "mapsUri": "https://maps.google.com/?cid=12616815679094124429",
+      "recommendedPrimary": [
+        "Kendi Üretimi Kırmızı/Beyaz Şaraplar",
+        "Peynir & Füme Et Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çikolata Sufle & Meyve Soslu Cheesecake",
+          "note": "Kırmızı şarap eşleşmeleri sonrası bahçede çok tercih edilen klasik tatlılar.",
+          "proof": "viktorlevimoda.com menü kartı ve Kadıköy klasikleri listeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş arka avlu bahçe ve tarihi iç salon; sadece oturmalı servis (paket yok)",
+        "crowdAndNoise": "Geniş bahçesi sayesinde kalabalıkta bile ferah sohbet imkanı",
+        "disadvantage": "Bahçe masaları özellikle hafta sonu rezervasyonsuz doluyor; fiyat seviyesi yüksek.",
+        "transit": "Moda Caddesi ile Damga Sokak arasında merkezi noktada."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Viktor Levi Şarap Evi Resmi Sitesi",
+          "url": "https://viktorlevimoda.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Tarihçe, ev üretimi şaraplar ve bahçe düzeni"
+        },
+        {
+          "title": "Time Out İstanbul — Romantik Bahçeler",
+          "url": "https://www.timeout.com/istanbul",
+          "date": "2026-07-18",
+          "kind": "editorial",
+          "note": "İstanbul’un en köklü avlulu şarap evlerinden"
+        },
+        {
+          "title": "Ekşi Sözlük — Viktor Levi",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-02",
+          "kind": "community",
+          "note": "Moda’nın nesiller boyu değişmeyen bahçe klasiği"
+        }
+      ],
+      "pros": [
+        "Tarihi ağaçlı arka bahçe",
+        "Kendi markalı uygun-denge şaraplar ve köklü hizmet"
+      ],
+      "cons": [
+        "Hafta sonu rezervasyon gerekliliği",
+        "Yüksek fiyat bandı"
+      ],
+      "uncertainties": [
+        "Serin havalarda bahçe ısıtmalı alanları mevsime göre açılıyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-guten-morgen",
+      "categoryId": "kahvalti",
+      "resolvedName": "Guten Morgen Coffee & Sourdough",
+      "branchName": "Caferağa, Fırıldak Sk. No:19, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJi6pABLe5yhQROCNIbKj8Gv0",
+      "coordinates": {
+        "lat": 40.984734599999996,
+        "lng": 29.0237619
+      },
+      "rating": 4.5,
+      "userRatingCount": 394,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": "https://gutenmorgenroastery.com/",
+      "mapsUri": "https://maps.google.com/?cid=18238167441291617080",
+      "recommendedPrimary": [
+        "Avokadolu Poşe Yumurta Tartine",
+        "Beyaz Peynir & Domatesli Ekşi Maya Tost"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarçınlı Rulo (Cinnamon Roll) & Filtre Kahve",
+          "note": "Fırın tezgahından kahvaltı sonrası ya da tek başına kahveyle istenen en popüler hamur işi.",
+          "proof": "gutenmorgenroastery.com menüsü ve Moda kahvaltı paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "İç salon, sokak masaları ve gel-al fırın tezgahı",
+        "crowdAndNoise": "Sabah dingin, hafta sonu kahvaltı saatlerinde hareketli",
+        "disadvantage": "Hafta sonu sabahları dış ve iç masalarda sıra beklenebiliyor.",
+        "transit": "Caferağa içinde Moda Caddesi’ne paralel sokakta."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Guten Morgen Roastery Resmi Sitesi",
+          "url": "https://gutenmorgenroastery.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Ekşi maya tartineler, kahve kavurma ve fırın ürünleri"
+        },
+        {
+          "title": "ExploreKadikoy — Moda Kahvaltı Durakları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-10",
+          "kind": "editorial",
+          "note": "Sade ve kaliteli ekşi maya kahvaltı adresi"
+        }
+      ],
+      "pros": [
+        "Günlük taze ekşi maya ekmekler",
+        "Kahvaltıyla eşleşen kendi kavrumu kahve"
+      ],
+      "cons": [
+        "Hafta sonu masa bekleme süresi"
+      ],
+      "uncertainties": [
+        "Taze fırın ürünleri öğleden sonraya kalmayabilir."
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-rafine",
+      "categoryId": "kahvalti",
+      "resolvedName": "Rafine Moda - Fine Cuisine",
+      "branchName": "Caferağa, Nene Hatun Sk. 3 A, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJ7wWL32a4yhQRnajy8YXbnHM",
+      "coordinates": {
+        "lat": 40.9803322,
+        "lng": 29.0234103
+      },
+      "rating": 4.5,
+      "userRatingCount": 1680,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://rafinemoda.com/",
+      "mapsUri": "https://maps.google.com/?cid=8330774779064920221",
+      "recommendedPrimary": [
+        "Eggs Benedict",
+        "Rafine Serpme veya Çırpılmış Yumurta Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Fıstık Ezmeli veya Orman Meyveli Pankek",
+          "note": "Tuzlu yumurta tabaklarından sonra masa paylaşımı için tercih edilen tatlı brunch tabağı.",
+          "proof": "rafinemoda.com menüsü ve İstanbul brunch listeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş oturma alanı, arka/dış bölüm ve hafta içi rezervasyon imkanı",
+        "crowdAndNoise": "Hafta sonu aile ve arkadaş gruplarıyla oldukça hareketli",
+        "disadvantage": "Pazar sabahı yoğunluğunda servis süresi uzayabiliyor.",
+        "transit": "Nene Hatun Sokak üzerinde, Moda Caddesi ve tramvay hattına kısa yürüyüş mesafesinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Rafine Moda Resmi Sitesi",
+          "url": "https://rafinemoda.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Kahvaltı, Eggs Benedict ve pankek menüsü"
+        },
+        {
+          "title": "Oggusto — Kadıköy Brunch Mekanları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-09-20",
+          "kind": "editorial",
+          "note": "Moda brunch rotasının kalıcı mekanlarından"
+        }
+      ],
+      "pros": [
+        "Geniş oturma kapasitesi",
+        "Hem tuzlu hem tatlı güçlü brunch seçenekleri"
+      ],
+      "cons": [
+        "Hafta sonu yoğunluk ve sıra ihtimali"
+      ],
+      "uncertainties": [
+        "Hafta sonu brunch saatlerinde rezervasyon kabul edilmeyebilir."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-happy-croissants",
+      "categoryId": "kahvalti",
+      "resolvedName": "Happy Croissants",
+      "branchName": "Caferağa, Bademaltı Sk. No: 24A, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJFSX830C5yhQRiTfFGZGqQ28",
+      "coordinates": {
+        "lat": 40.9847185,
+        "lng": 29.025843799999997
+      },
+      "rating": 4.4,
+      "userRatingCount": 359,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": true
+      },
+      "websiteUri": "https://happycroissants.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=8017439301828949897",
+      "recommendedPrimary": [
+        "Sade Tereyağlı Kruvasan",
+        "Yumurtalı ve Füme Etli Kruvasan Sandviç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Antep Fıstıklı ve Ahududulu Danish",
+          "note": "Klasik kruvasanın ötesinde meyveli-kremalı katmanlı hamur işi olarak öne çıkıyor.",
+          "proof": "happycroissants.com.tr ürün listesi ve fırın rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "İç ve sınırlı dış oturma, aynı zamanda hızlı fırın gel-al düzeni",
+        "crowdAndNoise": "Sabahları taze fırın trafiği yoğun ama akışkan",
+        "disadvantage": "Küçük dükkanda oturarak yemek için yer kısıtlı; özel çeşitler erken bitiyor.",
+        "transit": "Moda’nın merkez sokaklarından yürüyerek ulaşılabilir."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Happy Croissants Resmi Sitesi",
+          "url": "https://happycroissants.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Tereyağlı kruvasan ve danish seçkisi"
+        },
+        {
+          "title": "The Magger — İstanbul Kruvasan Durakları",
+          "url": "https://www.themagger.com/",
+          "date": "2026-08-29",
+          "kind": "editorial",
+          "note": "Anadolu Yakası katmanlı kruvasan önerisi"
+        }
+      ],
+      "pros": [
+        "Yüksek tereyağı katmanlama tekniği",
+        "Hem tuzlu sandviç hem tatlı hamur işi gücü"
+      ],
+      "cons": [
+        "Dar oturma kapasitesi",
+        "Geç saatlerde popüler çeşitlerin tükenmesi"
+      ],
+      "uncertainties": [
+        "Özel dolgulu günün kruvasanı değişebiliyor."
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-pisi-mutfak",
+      "categoryId": "kahvalti",
+      "resolvedName": "Pişi Mutfak Moda",
+      "branchName": "Caferağa, Ağabey Sk. No: 3/A, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJqymjiJm5yhQR6IBw34pGg4c",
+      "coordinates": {
+        "lat": 40.984653099999996,
+        "lng": 29.025193800000004
+      },
+      "rating": 4.4,
+      "userRatingCount": 991,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "https://www.pisimutfak.com/",
+      "mapsUri": "https://maps.google.com/?cid=9764725979337490664",
+      "recommendedPrimary": [
+        "Sade ve Otlu Peynirli Pişi Tabağı",
+        "Yöresel Peynir & Reçelli Kahvaltı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çıtır Gözleme & Ev Yapımı Vişne Reçeli",
+          "note": "Pişi dışında ev yapımı hamur ve sıcak kahvaltı arayanların masaya eklediği eşlikçi.",
+          "proof": "pisimutfak.com menü listesi ve yerel rehberler"
+        }
+      ],
+      "suitability": {
+        "seating": "Oturmalı mahalle kahvaltıcısı ve gel-al pişi siparişi imkanı",
+        "crowdAndNoise": "Sabahları neşeli ve kalabalık aile/arkadaş kahvaltısı ortamı",
+        "disadvantage": "Pişiler sıcak kızartıldığı için hafta sonu kalabalığında sipariş sırası olabiliyor.",
+        "transit": "Moda merkezinde yaya aksı üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Pişi Mutfak Resmi Sitesi",
+          "url": "https://pisimutfak.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Pişi çeşitleri, menemen ve kahvaltı tabakları"
+        },
+        {
+          "title": "Yemek.com — Kadıköy Kahvaltıcıları",
+          "url": "https://yemek.com/",
+          "date": "2026-09-07",
+          "kind": "editorial",
+          "note": "Yağ çekmeyen sıcak pişileriyle listede"
+        }
+      ],
+      "pros": [
+        "Geleneksel sıcak pişi odağı",
+        "Ulaşılabilir porsiyon ve fiyat dengesi"
+      ],
+      "cons": [
+        "Hafta sonu sıra bekleme ve kızartma kokusu hassasiyeti olabilen kapalı alan"
+      ],
+      "uncertainties": [
+        "Sınırlı serpme/tabak seçenekleri mevsime göre güncelleniyor."
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-basta",
+      "categoryId": "denemelisin",
+      "resolvedName": "Basta Street Food Bar",
+      "branchName": "Caferağa, Sakız Sk. No:1, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJHaR2P2a4yhQR39F-oqWuBqM",
+      "coordinates": {
+        "lat": 40.9877957,
+        "lng": 29.0262009
+      },
+      "rating": 4.2,
+      "userRatingCount": 3713,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "http://www.bastafood.com/",
+      "mapsUri": "https://maps.google.com/?cid=11747268704461574623",
+      "recommendedPrimary": [
+        "Kuzu Dürüm",
+        "Kaburga Dürüm",
+        "Humus Eşlikçisi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Sütlaç (Basta Usulü)",
+          "note": "Dürüm kadar meşhur olan, yanık üstü ve yoğun kıvamıyla tek başına almaya gidilen tatlısı.",
+          "proof": "bastafood.com menüsü, Michelin Bib Gourmand & Ekşi Sözlük mutabakatı"
+        },
+        {
+          "name": "Baharatlı Kıymalı Puf & Ev Yapımı Limonata",
+          "note": "Başlangıç atıştırmalığı ve şef reçeteli ferahlatıcı içecek.",
+          "proof": "Harbiyiyorum ve Time Out İstanbul Basta incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Sınırlı yüksek tabureler ve dış oturma; hızlı ayaküstü ve gel-al odaklı",
+        "crowdAndNoise": "Öğleden sonra ve akşam saatlerinde kapıda sürekli kuyruk ve yüksek tempo",
+        "disadvantage": "Oturma alanı çok kısıtlı; yoğun saatlerde kapıda ayakta beklemek gerekebilir.",
+        "transit": "Sakız Gülü Sokak üzerinde Moda-Çarşı geçiş noktasında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Basta Street Food Resmi Sitesi",
+          "url": "https://bastafood.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Dürüm çeşitleri, sütlaç ve Sakız Gülü adresi"
+        },
+        {
+          "title": "Michelin Rehberi — Basta Street Food Bar",
+          "url": "https://guide.michelin.com/",
+          "date": "2026-10-01",
+          "kind": "award",
+          "note": "Tavsiye listesinde yer alan öncü sokak mutfağı"
+        },
+        {
+          "title": "Ekşi Sözlük — Basta Street Food Bar",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-09-21",
+          "kind": "community",
+          "note": "Kuzu dürüm yanında fırın sütlacıyla ünlenen Kadıköy klasiği"
+        }
+      ],
+      "pros": [
+        "Şef imzalı özgün Türk sokak lezzeti",
+        "Efsaneleşmiş fırın sütlaç eşlikçisi",
+        "Moda kültürünün simgelerinden"
+      ],
+      "cons": [
+        "Çok küçük mekan ve masa bulma güçlüğü",
+        "Yoğun saatlerde hızlı servis trafiği"
+      ],
+      "uncertainties": [
+        "Günün özel çorbası veya ekstra mezeleri stoğa bağlıdır."
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-muutto",
+      "categoryId": "denemelisin",
+      "resolvedName": "Muutto Street Food Moda",
+      "branchName": "Caferağa, Cemal Süreya Sok. No:57 D:2a, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJ-eZunpO5yhQRpWJolK417Lk",
+      "coordinates": {
+        "lat": 40.9857655,
+        "lng": 29.022880599999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 1921,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.muutto.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=13397142015450833573",
+      "recommendedPrimary": [
+        "Kadayıflı Karides veya Kuzu Tandır Taco",
+        "Humus Çeşitleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli ve Pekmezli Sıcak Künefe / Sufle Dokunuşu",
+          "note": "Tuzlu Anadolu tabakları sonrasında öne çıkan yerel malzemeli tatlı seçeneği.",
+          "proof": "muutto.com.tr menüsü ve Gault & Millau / Oggusto seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Masa servisli şık sokak bistrosu, dış oturma ve rezervasyon mevcut",
+        "crowdAndNoise": "Akşamları hareketli ama düzenli oturma sunan dinamik bistro",
+        "disadvantage": "Küçük porsiyon paylaşım konseptinde birden fazla tabak seçmek bütçeyi yükseltebiliyor.",
+        "transit": "Caferağa içinde Moda Caddesi’ne çok yakın yürüme mesafesinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Muutto Street Food Resmi Sitesi",
+          "url": "https://muutto.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Moda şubesi, Anadolu mutfağı yorumları ve rezervasyon bilgisi"
+        },
+        {
+          "title": "Oggusto — Şef Sokak Lezzetleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-09-12",
+          "kind": "editorial",
+          "note": "Anadolu tatlarını yaratıcı sokak tabaklarına taşıyan adres"
+        }
+      ],
+      "pros": [
+        "Özgün Anadolu füzyon menüsü",
+        "Hem rahat hem akşam buluşmasına uygun atmosfer"
+      ],
+      "cons": [
+        "Hafta sonu rezervasyon ihtiyacı"
+      ],
+      "uncertainties": [
+        "Anadolu’dan getirilen mevsimlik malzemelere göre tabaklar güncellenir."
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-imece",
+      "categoryId": "denemelisin",
+      "resolvedName": "İmece Moda Mutfak",
+      "branchName": "imece moda mutfak, Caferağa, Şair Latifi Sk. cebeci apt D:30/A, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJ3y-8u8i5yhQRzK0on3l8884",
+      "coordinates": {
+        "lat": 40.9840618,
+        "lng": 29.029235599999996
+      },
+      "rating": 4.9,
+      "userRatingCount": 299,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": false,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14912399652956974540",
+      "recommendedPrimary": [
+        "Zeytinyağlı Sarma & Enginar Tabağı",
+        "Günün Tencere Ana Yemeği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Komposto & Günlük Sütlü Tatlı",
+          "note": "Ev yemeği tabağının yanında sunulan hafif, ev yapımı tatlı ve içecek eşlikçisi.",
+          "proof": "Moda mahalle müdavimi paylaşımları ve öğle menüsü notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Samimi iç masa düzeni ve hızlı gel-al paket servis (dış masa yok)",
+        "crowdAndNoise": "Öğle yemek saatlerinde mahalle esnafı ve sakinleriyle yoğun ama sessiz-huzurlu",
+        "disadvantage": "Günlük tencere usulü çalıştığı için sevilen yemekler öğleden sonra erken bitebiliyor.",
+        "transit": "Caferağa içinde Moda tramvay hattına yürüyerek kısa mesafede."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Moda Ev Yemekleri",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-18",
+          "kind": "editorial",
+          "note": "Yüksek yerel memnuniyetli günlük ev yemeği durağı"
+        },
+        {
+          "title": "Kadıköy Mahalle Forumları",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-09-09",
+          "kind": "community",
+          "note": "Zeytinyağlıları ve ev yapımı yemek standartıyla öne çıkıyor"
+        }
+      ],
+      "pros": [
+        "Gerçek ev yapımı günlük taze tencere yemekleri",
+        "Moda içinde sakin öğle alternatifi"
+      ],
+      "cons": [
+        "Dış oturma alanı yok",
+        "Geç saatlere yemek kalmama olasılığı"
+      ],
+      "uncertainties": [
+        "Günlük menü sabah pazardan gelen ürünlere göre değişir."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-da-nata",
+      "categoryId": "denemelisin",
+      "resolvedName": "Moda da Nata",
+      "branchName": "Caferağa, Dr. İhsan Ünlüer Sk. no:14/A, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJo_dZAba5yhQRKMawm6H-aYY",
+      "coordinates": {
+        "lat": 40.985931799999996,
+        "lng": 29.0273263
+      },
+      "rating": 4.6,
+      "userRatingCount": 3993,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.instagram.com/modadanata",
+      "mapsUri": "https://maps.google.com/?cid=9685552443692205608",
+      "recommendedPrimary": [
+        "Klasik Sıcak Pastel de Nata",
+        "Tarçın Serpilmiş Nata"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Portekiz Usulü Bica Espresso veya Cold Brew",
+          "note": "Karamelize şekerli sıcak tartın tatlılığını dengelemek üzere seçilmiş sert kahve eşlikçisi.",
+          "proof": "Moda gastronomi yazıları ve dükkan vitrin seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük oturma alanı yanında ağırlıklı gel-al ve sokakta taze tüketim",
+        "crowdAndNoise": "Moda yürüyüş hattında gün boyu sürekli uğrak tatlı durağı",
+        "disadvantage": "İçeride uzun süre oturmak için masa alanı dar; hafta sonları kapı önünde sıra olabiliyor.",
+        "transit": "Moda Caddesi ile Sahil arasında yaya trafiğinin tam kalbinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "The Magger — Moda Tatlı Durakları",
+          "url": "https://www.themagger.com/",
+          "date": "2026-10-01",
+          "kind": "editorial",
+          "note": "İstanbul’da tek ürün odaklı başarılı butik örneklerinden"
+        },
+        {
+          "title": "Ekşi Sözlük — Moda da Nata",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-08-27",
+          "kind": "community",
+          "note": "Çıtır milföy hamuru ve ılık muhallebi dokusuyla övülüyor"
+        }
+      ],
+      "pros": [
+        "Tek üründe ustalık",
+        "Gün boyu fırından taze sıcak servis"
+      ],
+      "cons": [
+        "Çok küçük iç mekan",
+        "Fiyat seviyesi bilgisi Google API üzerinde doğrulanmamış"
+      ],
+      "uncertainties": [
+        "Özel aromalı nata çeşitleri sadece belirli günlerde çıkabilir."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-fahri-konsolos",
+      "categoryId": "denemelisin",
+      "resolvedName": "Fahri Konsolos",
+      "branchName": "Caferağa, Dr. Esat Işık Cd. No. 30 D:C, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJy4qCa_W5yhQRd6uR_Z9XzxE",
+      "coordinates": {
+        "lat": 40.985400999999996,
+        "lng": 29.026282000000002
+      },
+      "rating": 4.5,
+      "userRatingCount": 704,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1283340763489479543",
+      "recommendedPrimary": [
+        "Botanik İmza Kokteyller",
+        "Tahin veya Sumak Dokunuşlu Karışımlar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Baharatlı Kuruyemiş & Bar Atıştırmalıkları",
+          "note": "İmza kokteyllerin yanında sunulan özel kavrulmuş baharatlı bar eşlikçileri.",
+          "proof": "İstanbul kokteyl barları rehberleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Yüksek bar tabureleri, samimi iç salon ve sokak önü masaları",
+        "crowdAndNoise": "Akşam saatlerinden itibaren hareketli ve sohbet odaklı kokteyl bar atmosferi",
+        "disadvantage": "Küçük ve popüler bir bar olduğu için hafta sonu akşamları ayakta yer bulmak gerekebilir.",
+        "transit": "Dr. Esat Işık Caddesi üzerinde Moda Tramvay hattına birkaç dakikalık yürüyüş."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Oggusto — Kadıköy Kokteyl Barları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-09-22",
+          "kind": "editorial",
+          "note": "Yerel malzemelerle hazırladığı özgün kokteyl menüsüyle Moda’nın öncülerinden"
+        },
+        {
+          "title": "Ekşi Sözlük — Fahri Konsolos",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-04",
+          "kind": "community",
+          "note": "Nitelikli bar ekibi ve imza kokteylleriyle Moda müdavimlerinin favori akşam durağı"
+        }
+      ],
+      "pros": [
+        "Yaratıcı Anadolu malzemeli kokteyl reçeteleri",
+        "Özenli servis ve mahalle atmosferi"
+      ],
+      "cons": [
+        "Akşam saatlerinde mekan kapasitesi hızlı doluyor"
+      ],
+      "uncertainties": [
+        "Kokteyl menüsü taze meyve ve botanik hasadına göre mevsimsel güncellenir."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-iskelesi-vapur-kafe",
+      "categoryId": "denemelisin",
+      "resolvedName": "Moda İskelesi Vapur Kafe",
+      "branchName": "Caferağa, Moda Cd. No:175, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJob5Z4oq4yhQRmR_OzydNf_E",
+      "coordinates": {
+        "lat": 40.9789604,
+        "lng": 29.025062100000003
+      },
+      "rating": 4.3,
+      "userRatingCount": 350,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": "https://sehirhatlari.istanbul/",
+      "mapsUri": "https://maps.google.com/?cid=17401712318568341401",
+      "recommendedPrimary": [
+        "Türk Kahvesi (İskele Terasında)",
+        "Filtre Kahve",
+        "Demleme Çay"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Demleme Çay & Günlük Pastane Kurabiyesi",
+          "note": "Deniz üstü açık iskele terasında vapur atmosferini tamamlayan sade eşlikçiler.",
+          "proof": "İBB Kültür / Tarihi Moda İskelesi Vapur Kafe resmi bilgileri ve şehir rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Alt kat deniz üstü kafe salonu, açık iskele terası ve üst kat okuma/kütüphane alanı",
+        "crowdAndNoise": "Gün batımı ve hafta sonları manzara severlerle hareketli; sabah saatleri dingin",
+        "disadvantage": "Terasta gün batımı öncesi boş masa bulmak için biraz beklemek gerekebiliyor.",
+        "transit": "Moda Caddesi’nin denizle buluştuğu uç noktada sahil yürüyüş parkurunun hemen başında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "İBB Beltur / Moda İskelesi Resmi Duyuruları",
+          "url": "https://beltur.istanbul/",
+          "date": "2026-11-01",
+          "kind": "operator",
+          "note": "1917 tarihi iskele restorasyonu, Vapur Kafe ve kütüphane alanı"
+        },
+        {
+          "title": "The Magger — Tarihi Moda İskelesi",
+          "url": "https://www.themagger.com/",
+          "date": "2026-08-19",
+          "kind": "editorial",
+          "note": "Denizin üzerinde yer alan nadir İstanbul kafe ve çalışma deneyimlerinden"
+        },
+        {
+          "title": "Ekşi Sözlük — Tarihi Moda İskelesi",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-15",
+          "kind": "community",
+          "note": "Eşsiz deniz üstü konumu ve erişilebilir fiyatlarıyla Moda’nın kült durağı"
+        }
+      ],
+      "pros": [
+        "Doğrudan denizin üzerinde tarihi 1917 iskele atmosferi",
+        "Ekonomik fiyat seviyesi ve üst kat kütüphane"
+      ],
+      "cons": [
+        "Hafta sonu gün batımında teras masaları yoğun"
+      ],
+      "uncertainties": [
+        "Üst kat kütüphane çalışma kuralları etkinlik günlerine göre değişebilir."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-cikolatacisi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Moda Çikolatacısı",
+      "branchName": "Caferağa, Şair Nefi Sk. No:24, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJ5zHtQmG4yhQRj2cflusmMwA",
+      "coordinates": {
+        "lat": 40.9835129,
+        "lng": 29.026187
+      },
+      "rating": 4.2,
+      "userRatingCount": 1444,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.modacikolatacisi.com/",
+      "mapsUri": "https://maps.google.com/?cid=14398017090054031",
+      "recommendedPrimary": [
+        "El Yapımı Karışık Pralin Kutusu",
+        "Çikolatalı Sufle / Profiterol Kase",
+        "Sıcak Çikolata"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Türk Kahvesi veya Sade Filtre Kahve Eşlikçisi",
+          "note": "Yoğun kakao oranlı el yapımı çikolataların tatlılığını dengelemek için sunulan taze kahveler.",
+          "proof": "Moda gastronomi rehberleri ve Şair Nefi Sokak dükkan seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük butik iç salon ve sokak önü masaları yanında hediyelik paket servisi",
+        "crowdAndNoise": "Öğleden sonra ve akşamüstü tatlı molası verenlerle hareketli",
+        "disadvantage": "Küçük oturma alanı nedeniyle yoğun saatlerde kapıda kısa sıra oluşabiliyor.",
+        "transit": "Şair Nefi Sokak’ta Moda tramvay ve yürüyüş aksının tam içinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Time Out İstanbul — Moda Çikolatacıları",
+          "url": "https://www.timeout.com/istanbul",
+          "date": "2026-07-14",
+          "kind": "editorial",
+          "note": "El yapımı pralin ve dolgu çikolatalarıyla Moda’nın köklü tatlı adreslerinden"
+        },
+        {
+          "title": "Ekşi Sözlük — Moda Çikolatacısı",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-09-30",
+          "kind": "community",
+          "note": "Kaliteli Belçika kuvertürü ve hediyelik pralin kutularıyla tercih ediliyor"
+        }
+      ],
+      "pros": [
+        "Günlük taze artizan pralin üretimi",
+        "Hediyelik kutu ve yerinde tatlı sunumu"
+      ],
+      "cons": [
+        "Oturma kapasitesi sınırlı; hafta sonları sıra olabiliyor"
+      ],
+      "uncertainties": [
+        "Sıcak yaz aylarında bazı dolgulu çeşitlerin üretimi azaltılabiliyor."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-yasar-usta",
+      "categoryId": "denemelisin",
+      "resolvedName": "Yaşar Usta’nın Sorbe ve Dondurması",
+      "branchName": "Caferağa, Gen. Asım Gündüz Caddesi no:92/A, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJrzNYTGG4yhQR_nRA0viRZLU",
+      "coordinates": {
+        "lat": 40.985371099999995,
+        "lng": 29.027480099999995
+      },
+      "rating": 4.1,
+      "userRatingCount": 572,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13070732516401378558",
+      "recommendedPrimary": [
+        "Karadut & Vişne Sorbe",
+        "Kavun / Şeftali Mevsim Sorbesi",
+        "Tahinli Cevizli Dondurma"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli-Cevizli ve Karadut Sorbe Kombinasyonu (Çıtır Külah)",
+          "note": "Meyve sorbeleri ile klasik sütlü çeşitlerin aynı külahta dengelendiği müdavim seçimi.",
+          "proof": "yasarustasorbe.com ve İstanbul dondurma rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Al-götür pencere servisi ve dükkan önü ayaküstü dondurma molası",
+        "crowdAndNoise": "Yaz akşamları ve hafta sonları sokak içi tatlı trafiği canlı",
+        "disadvantage": "İç mekanda oturma salonu yoktur; yürüyüş sırasında tüketim için uygundur.",
+        "transit": "Bahariye ve Moda girişinde General Asım Gündüz Caddesi üzerinde kolay erişim."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yaşar Usta Sorbe & Dondurma Resmi Sitesi",
+          "url": "https://yasarustasorbe.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Gerçek meyve oranlı mevsimlik sorbe çeşitleri ve şube bilgileri"
+        },
+        {
+          "title": "Harbiyiyorum — İstanbul’un Tarihi Dondurmacıları",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-08-05",
+          "kind": "editorial",
+          "note": "Yapay aroma kullanmadan hazırlanan meşhur Moda sorbe klasiği"
+        },
+        {
+          "title": "Ekşi Sözlük — Yaşar Usta",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-09-21",
+          "kind": "community",
+          "note": "Gerçek meyve tadı ve dengeli şeker oranıyla öne çıkan yerli marka"
+        }
+      ],
+      "pros": [
+        "Katkısız yüksek meyve oranlı sorbeler",
+        "Mevsime göre değişen taze çeşitler"
+      ],
+      "cons": [
+        "Oturmalı kafe düzeni bulunmuyor",
+        "Yaz akşamları kısa sıra olabilir"
+      ],
+      "uncertainties": [
+        "Meyve çeşitleri hasat dönemine bağlı olarak her hafta değişir."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-reks-kokorec",
+      "categoryId": "denemelisin",
+      "resolvedName": "Reks Kokoreç",
+      "branchName": "Caferağa, Kadife Sk. No:1, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJ24k17Wa4yhQRFXFS6s5Nw6k",
+      "coordinates": {
+        "lat": 40.9871638,
+        "lng": 29.026996399999998
+      },
+      "rating": 4.5,
+      "userRatingCount": 3658,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": "https://rekskokorec.com/",
+      "mapsUri": "https://maps.google.com/?cid=12232706563958272277",
+      "recommendedPrimary": [
+        "İri Kıyım Çeyrek/Yarım Kuzu Kokoreç",
+        "Atom Kokoreç",
+        "Midye Dolma"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Limonlu Taze Midye Dolma & Acı Turşu Suyu",
+          "note": "Kokoreç beklerken tezgahta ayaküstü söylenen klasik eşlikçi ikili.",
+          "proof": "Harbiyiyorum ve Ekşi Sözlük Reks Kokoreç müdavim başlıkları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tezgah önü yüksek tabureler, dar iç/dış masalar ve hızlı al-götür servis",
+        "crowdAndNoise": "Akşam ve gece saatlerinde Kadife Sokak girişinde yoğun sokak temposu",
+        "disadvantage": "Oturma alanı dar ve hızlı devirlidir; hafta sonu akşam saatlerinde ocak önünde sıra oluşabiliyor.",
+        "transit": "Kadife Sokak No:1 üzerinde, Bahariye ve Moda yürüyüş aksının kesişim noktasında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Harbiyiyorum — Reks Kokoreç Kadıköy",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-09-12",
+          "kind": "editorial",
+          "note": "Kadife Sokak girişinde Moda gece hayatının kırk yıllık klasik kokoreççisi"
+        },
+        {
+          "title": "Ekşi Sözlük — Reks Kokoreç",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-08",
+          "kind": "community",
+          "note": "İri kıyım atom kokoreci ve midye dolmasıyla semtin vazgeçilmez gece ritüeli"
+        }
+      ],
+      "pros": [
+        "Yıllardır değişmeyen kuzu kokoreç pişirimi",
+        "Moda–Bahariye geçişinde merkezi sokak ritüeli"
+      ],
+      "cons": [
+        "Dar dükkan ve tezgah önü kalabalığı"
+      ],
+      "uncertainties": [
+        "Gece geç saatlerde atom kokoreç stoğu yoğunluğa göre erken tükenebiliyor."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "moda-aile-cay-bahcesi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Moda Aile Çay Bahçesi",
+      "branchName": "Caferağa, Park İçi Yolu, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJl932EfW4yhQRqdRV-bq6iHs",
+      "coordinates": {
+        "lat": 40.9806154,
+        "lng": 29.020920200000003
+      },
+      "rating": 3.9,
+      "userRatingCount": 6972,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8901569975707620521",
+      "recommendedPrimary": [
+        "İnce Belli Bardakta Demleme Çay",
+        "Kaşarlı veya Karışık Büfe Tostu",
+        "Türk Kahvesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çift Kaşarlı Büfe Tostu & Limonata",
+          "note": "Sabah yürüyüşü veya gün batımı çayının yanında kasadan fişle alınan klasik çay bahçesi eşlikçisi.",
+          "proof": "Kadıköy sahil rehberleri ve Ekşi Sözlük Moda Aile Çay Bahçesi paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaç altı geniş falez terasında açık hava çay bahçesi masaları (self-servis fiş sistemi)",
+        "crowdAndNoise": "Gün batımı ve hafta sonları her yaştan mahalleliyle çok kalabalık ve canlı",
+        "disadvantage": "Masaya tam garson servisi yerine kasadan fiş alıp çay ocağından alma düzeni vardır; hafta sonu deniz kenarı masalarda yer bulmak zordur.",
+        "transit": "Moda İskelesi üstündeki sahil parkı falez hattında, Moda Tramvayı son durağına birkaç adım mesafede."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "The Magger — Moda Sahil ve Çay Bahçeleri",
+          "url": "https://www.themagger.com/",
+          "date": "2026-08-20",
+          "kind": "editorial",
+          "note": "Adalar ve gün batımı manzarasıyla Moda kültürünün ikonik kamusal çay bahçesi"
+        },
+        {
+          "title": "Ekşi Sözlük — Moda Aile Çay Bahçesi",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-11",
+          "kind": "community",
+          "note": "Falez manzarası, taze çayı ve klasik tost ritüeliyle semt sakinlerinin buluşma noktası"
+        }
+      ],
+      "pros": [
+        "Moda Burnu falezlerinden kesintisiz Marmara ve Adalar manzarası",
+        "Erişilebilir klasik mahalle çay bahçesi kültürü"
+      ],
+      "cons": [
+        "Self-servis fiş sırası ve hafta sonu masa bulma zorluğu"
+      ],
+      "uncertainties": [
+        "Yağışlı havalarda açık alan masalarının tamamı kullanılmayabiliyor."
+      ],
+      "selectionScore": 75,
+      "selectedForSnapshot": true
+    }
+  ]
+}

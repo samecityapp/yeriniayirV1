@@ -18,8 +18,8 @@ export function Header({ lang: propLang, variant = 'default' }: { lang?: string;
 
   // Basic dictionary for Header
   const navLabels = {
-    tr: { hotels: 'Oteller', guide: 'Rehber', about: 'Hakkımızda', backToSite: 'Siteye Gitmek İçin Tıklayın' },
-    en: { hotels: 'Hotels', guide: 'Guide', about: 'About Us', backToSite: 'Click to Visit Site' },
+    tr: { hotels: 'Oteller', gastronomy: 'Kafe & Restoran Rehberi', guide: 'Rehber', about: 'Hakkımızda', backToSite: 'Siteye Gitmek İçin Tıklayın' },
+    en: { hotels: 'Hotels', gastronomy: 'Cafe & Restaurant Guide', guide: 'Guide', about: 'About Us', backToSite: 'Click to Visit Site' },
   }[lang];
 
 
@@ -35,7 +35,11 @@ export function Header({ lang: propLang, variant = 'default' }: { lang?: string;
           {/* Desktop Menu */}
           {variant === 'default' ? (
             <div className="hidden md:flex items-center space-x-8">
-              <Link href={`/${lang}/search`} className="text-gray-600 hover:text-primary transition font-medium">{navLabels.hotels}</Link>
+              <Link href={`/${lang}#oteller`} className="text-gray-600 hover:text-primary transition font-medium">{navLabels.hotels}</Link>
+              <Link href={`/${lang}?view=gastronomi`} className="text-[#FF385C] hover:text-red-700 transition font-bold flex items-center gap-1.5">
+                <span className="inline-block w-2 h-2 rounded-full bg-[#FF385C] animate-pulse" />
+                {navLabels.gastronomy}
+              </Link>
               <Link href={`/${lang}/${lang === 'en' ? 'guide' : 'rehber'}`} className="text-gray-600 hover:text-primary transition font-medium">{navLabels.guide}</Link>
               <Link href={`/${lang}/hakkimizda`} className="text-gray-600 hover:text-primary transition font-medium">{navLabels.about}</Link>
 
@@ -89,11 +93,19 @@ export function Header({ lang: propLang, variant = 'default' }: { lang?: string;
         {(isMenuOpen && variant === 'default') && (
           <div className="md:hidden mt-4 pb-4 space-y-4 flex flex-col border-t pt-4 bg-white">
             <Link
-              href={`/${lang}/search`}
+              href={`/${lang}#oteller`}
               className="text-gray-600 hover:text-primary transition font-medium py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               {navLabels.hotels}
+            </Link>
+            <Link
+              href={`/${lang}?view=gastronomi`}
+              className="text-[#FF385C] font-bold py-2 flex items-center gap-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <span className="inline-block w-2 h-2 rounded-full bg-[#FF385C]" />
+              {navLabels.gastronomy}
             </Link>
             <Link
               href={`/${lang}/${lang === 'en' ? 'guide' : 'rehber'}`}

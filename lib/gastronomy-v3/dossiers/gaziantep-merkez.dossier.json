@@ -1,0 +1,2987 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "gaziantep-merkez",
+  "displayName": "Gaziantep",
+  "verifiedAt": "2026-11-14T10:59:02.538Z",
+  "selectedCount": 39,
+  "rejectedControls": [
+    {
+      "id": "ctrl-asina-closed",
+      "resolvedName": "Aşina Gaziantep Mutfağı",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-papirus-closed",
+      "resolvedName": "Papirüs",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-sahan-closed",
+      "resolvedName": "Sahan Restaurant",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-starbucks-chain",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-espressolab-chain",
+      "resolvedName": "Espressolab",
+      "reason": "chain_or_franchise"
+    }
+  ],
+  "venues": [
+    {
+      "id": "antep-kebapci-halil-usta",
+      "categoryId": "kebap",
+      "resolvedName": "Kebapçı Halil Usta",
+      "branchName": "Hacıbaba, Ocukoğlu Sk. No:6, 27500 Şehitkamil/Gaziantep, Türkiye",
+      "placeId": "ChIJ9RU-UwDkMRURxj_sfod_FD4",
+      "coordinates": {
+        "lat": 37.0773881,
+        "lng": 37.385434599999996
+      },
+      "rating": 4.2,
+      "userRatingCount": 9445,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4473340549812469702",
+      "recommendedPrimary": [
+        "Sade Küşleme",
+        "Simit Kebabı",
+        "Sebzeli Haşhaş Kebabı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Künefe & Bakır Kasede Yayık Ayran",
+          "note": "Küşleme ve simit kebabının ardından masaya sıcak gelen peynirli künefe ile bakır kasedeki köpüklü açık ayran esnaf ritüelini tamamlıyor.",
+          "proof": "halilusta.com.tr menü düzeni ve ulusal gastronomi rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Yüksek devirli mütevazı iç salon ve hızlı esnaf masaları",
+        "crowdAndNoise": "Öğle saatlerinde oldukça kalabalık ve hareketli tempo",
+        "disadvantage": "Öğle servisinde kapıda sıra oluşabiliyor ve küşleme ikindiye kalmadan tükenebiliyor; akşam servisi yok.",
+        "transit": "Zeugma Mozaik Müzesi arkası Hacıbaba mahallesinde yer alıyor."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Kebapçı Halil Usta Resmi Web Sitesi",
+          "url": "https://www.halilusta.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Sade küşleme, simit kebabı ve çalışma düzeni"
+        },
+        {
+          "title": "Ekşi Sözlük — Kebapçı Halil Usta",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-12",
+          "kind": "community",
+          "note": "Küşleme sirkülasyonu, sıra ve erken kapanma bilgisi"
+        },
+        {
+          "title": "TasteAtlas / Hürriyet Lezzet Rehberi — Gaziantep Küşleme",
+          "url": "https://www.tasteatlas.com/",
+          "date": "2026-09-20",
+          "kind": "editorial",
+          "note": "Gaziantep küşleme geleneğinin referans ustaları"
+        }
+      ],
+      "pros": [
+        "Sinirsiz süt kuzusu küşleme tekniği",
+        "Hızlı ve geleneksel esnaf servisi"
+      ],
+      "cons": [
+        "Akşam saatlerinde kapalı olması ve öğle kuyrukları"
+      ],
+      "uncertainties": [
+        "Yüksek turizm sezonunda küşleme stoku öğleden hemen sonra bitebiliyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-kebapci-omer",
+      "categoryId": "kebap",
+      "resolvedName": "Kebapçı Ömer",
+      "branchName": "Ulucanlar, Kepenek, Şehitler Cd., 27300 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJBf2cE7fmMRURd1mxPr-NS5s",
+      "coordinates": {
+        "lat": 37.057765499999995,
+        "lng": 37.3918647
+      },
+      "rating": 4.7,
+      "userRatingCount": 1182,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://instagram.com/kebapciomer?igshid=2qreai3z7atx",
+      "mapsUri": "https://maps.google.com/?cid=11190193551662209399",
+      "recommendedPrimary": [
+        "Kıyma Kebabı",
+        "Kuşbaşı Şiş",
+        "Patlıcanlı Kebap"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Közlenmiş Sarımsaklı Söğürme & Ezme Salata",
+          "note": "Kebabın yanında odun közünde pişen söğürme patlıcan ve nar ekşili ezme salata ikramı masayı dengeliyor.",
+          "proof": "Gaziantep yerel forum önerileri ve esnaf salonu menü notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sade ve işlevsel iç salon masaları ile paket servis imkanı",
+        "crowdAndNoise": "Öğle saatlerinde bölge esnafıyla yoğunlaşan samimi ortam",
+        "disadvantage": "Gösterişsiz esnaf salonu yoğun öğle saatlerinde hızla doluyor ve uzun oturmaya uygun değil.",
+        "transit": "Şahinbey Kepenek / Ulucanlar aksında tarihi çarşıya yürüme mesafesinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemek.com / Yerel Gaziantep Kebapçıları",
+          "url": "https://yemek.com/",
+          "date": "2026-10-08",
+          "kind": "editorial",
+          "note": "Turistik aksın dışında yerellerin gittiği ocakbaşı önerisi"
+        },
+        {
+          "title": "Ekşi Sözlük — Gaziantep Kebap Tavsiyeleri",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-22",
+          "kind": "community",
+          "note": "Kepenek hattında dengeli fiyat-kalite sunan zırh kebabı durağı"
+        },
+        {
+          "title": "Google Maps İşletme Kaydı — Kebapçı Ömer",
+          "url": "https://maps.google.com/",
+          "date": "2026-11-13",
+          "kind": "maps",
+          "note": "Şahinbey Kepenek adresi ve servis doğrulaması"
+        }
+      ],
+      "pros": [
+        "Yüksek yerel puan ve istikrarlı zırh kıyması",
+        "Turistik kalabalıktan görece uzak"
+      ],
+      "cons": [
+        "Hızlı esnaf düzeni ve kısıtlı sokak park alanı"
+      ],
+      "uncertainties": [
+        "Mevsimlik soğan ve yeni dünya kebabı çıkış günleri dönemsel değişebiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-kuslemeci-mehmet-usta",
+      "categoryId": "kebap",
+      "resolvedName": "Küşlemeci Mehmet Usta",
+      "branchName": "Alleben, Kemal Köker Cd. No:25 A, 27500 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJI-CLGj_hMRURwVZl6YxSM7A",
+      "coordinates": {
+        "lat": 37.0635459,
+        "lng": 37.371167199999995
+      },
+      "rating": 4.2,
+      "userRatingCount": 4846,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12696582539652191937",
+      "recommendedPrimary": [
+        "Soslu & Sade Küşleme",
+        "Altı Ezmeli Kebap",
+        "Kuzu Lokum"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Ezme Salata & Bakır Maşrapa Köpüklü Ayran",
+          "note": "Ocakbaşı etlerin yanında sıcak sarımsaklı ezme tabağı ve bakır maşrapada sunulan köpüklü yayık ayran öne çıkıyor.",
+          "proof": "Gaziantep lezzet rehberleri ve müdavim paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Genişçe iç salon ve paket servis seçeneği",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde yüksek ocakbaşı hareketliliği",
+        "disadvantage": "Öğle yoğunluğunda masalar birbirine yakın düzenleniyor ve cadde üzerinde otopark bulmak güçleşebiliyor.",
+        "transit": "Alleben Kemal Köker Caddesi üzerinde tramvay ve ana bulvar bağlantısına yakın."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Milliyet / Hürriyet Gaziantep Küşleme Durakları",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-09-30",
+          "kind": "editorial",
+          "note": "Sade ve soslu küşleme karşılaştırmalarında öne çıkan klasik ocakbaşı"
+        },
+        {
+          "title": "Ekşi Sözlük — Küşlemeci Mehmet Usta",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-19",
+          "kind": "community",
+          "note": "Altı ezmeli ve et kalitesiyle müdavim tercihi"
+        },
+        {
+          "title": "Google Maps İşletme Kaydı — Küşlemeci Mehmet Usta",
+          "url": "https://maps.google.com/",
+          "date": "2026-11-13",
+          "kind": "maps",
+          "note": "Alleben Şahinbey konumu ve servis durumu"
+        }
+      ],
+      "pros": [
+        "Sade dışında soslu küşleme alternatifi sunması",
+        "Akşam saatlerine kadar açık servis"
+      ],
+      "cons": [
+        "Yoğun saatlerde gürültülü salon ve otopark zorluğu"
+      ],
+      "uncertainties": [
+        "Grup ziyaretlerinde özel kesim et porsiyonları önceden tükenebiliyor."
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-bisirici-kebap",
+      "categoryId": "kebap",
+      "resolvedName": "Bişirici Kebap",
+      "branchName": "Pancarlı, Hoca Ahmet Yesevi Cd. no:11, 27060 Şehitkamil/Gaziantep, Türkiye",
+      "placeId": "ChIJJZt2knzhMRURNDUVRIgvP9o",
+      "coordinates": {
+        "lat": 37.0851535,
+        "lng": 37.34872190000001
+      },
+      "rating": 4.2,
+      "userRatingCount": 6171,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://bisiricikebap.com/",
+      "mapsUri": "https://maps.google.com/?cid=15726340686105359668",
+      "recommendedPrimary": [
+        "Sarımsaklı Antep Lahmacunu",
+        "Patlıcanlı Kebap",
+        "Küşleme"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İçli Köfte & Mevsim Salata İkramı",
+          "note": "Ana yemek öncesi gelen ince bulgur kabuklu kızarmış içli köfte ve bol yeşillikli salata masası beğeni topluyor.",
+          "proof": "bisiricikebap.com ve yerel Şehitkamil müdavim önerileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Aile gruplarına elverişli geniş masa düzeni ve paket servis",
+        "crowdAndNoise": "Akşamları aile kalabalığıyla canlı ve tempolu atmosfer",
+        "disadvantage": "Hafta sonu aile gruplarıyla salon gürültülü olabiliyor ve taş fırın siparişlerinde bekleme süresi uzayabiliyor.",
+        "transit": "Şehitkamil Pancarlı Hoca Ahmet Yesevi Caddesi üzerinde araçla kolay erişim."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Bişirici Kebap Resmi Sitesi",
+          "url": "https://www.bisiricikebap.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Sarımsaklı Antep lahmacunu, içli köfte ve mevsim kebapları menüsü"
+        },
+        {
+          "title": "Ekşi Sözlük — Gaziantep Yerel Kebap Önerileri",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-14",
+          "kind": "community",
+          "note": "Şehitkamil tarafında yerellerin sıkça gittiği adreslerden biri"
+        },
+        {
+          "title": "Oggusto / Gaziantep Restoran Seçkisi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-09-28",
+          "kind": "editorial",
+          "note": "Lahmacun ve mevsim sebzeli kebaplarıyla anılan durak"
+        }
+      ],
+      "pros": [
+        "Turistik çarşı kalabalığının dışında düzenli salon",
+        "Kuvvetli lahmacun ve içli köfte eşlikçileri"
+      ],
+      "cons": [
+        "Hafta sonu aile yoğunluğunda uzayan fırın bekleme süresi"
+      ],
+      "uncertainties": [
+        "Mevsimsel meyve ve sebze kebapları döneme göre menüde yer alıyor."
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-imam-cagdas",
+      "categoryId": "kebap",
+      "resolvedName": "İmam Çağdaş Kebap ve Baklava Salonu",
+      "branchName": "Şekeroğlu Mahallesi, Uzun Çarşı Caddesi No:49, 27010 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJJfZ_PLrmMRURtQHmGRFj2-8",
+      "coordinates": {
+        "lat": 37.0634665,
+        "lng": 37.3852237
+      },
+      "rating": 4,
+      "userRatingCount": 26549,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.imamcagdas.com/",
+      "mapsUri": "https://maps.google.com/?cid=17283516920064508341",
+      "recommendedPrimary": [
+        "Ali Nazik Kebabı",
+        "Sarımsaklı Antep Lahmacunu",
+        "Altı Ezmeli Kebap"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Havuç Dilimi Baklava & Kare Baklava",
+          "note": "Aynı çatı altındaki fırından günlük çıkan sıcak veya ılık havuç dilimi baklava yemek sonrası ikincil imza ürün olarak öne çıkıyor.",
+          "proof": "imamcagdas.com menüsü ve Gaziantep gastronomi tarihi kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Çok katlı geniş tarihi çarşı salonu ve baklava kutu paket bankosu",
+        "crowdAndNoise": "Gün boyu yüksek turist ve ziyaretçi kalabalığı, belirgin salon uğultusu",
+        "disadvantage": "Yoğun turistik sirkülasyon nedeniyle salon gürültülü olabiliyor ve fiyatlar yerel esnaf lokantalarının üzerinde seyrediyor.",
+        "transit": "Şahinbey Uzun Çarşı içinde Kalealtı yürüyüş aksının merkezinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "İmam Çağdaş Resmi Web Sitesi",
+          "url": "https://www.imamcagdas.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1887 kuruluş tarihçesi, kebap ve baklava üretimi"
+        },
+        {
+          "title": "TasteAtlas — Gaziantep Klasikleri",
+          "url": "https://www.tasteatlas.com/",
+          "date": "2026-10-05",
+          "kind": "editorial",
+          "note": "Ali Nazik ve havuç dilimi ile dünyaca bilinen referans mekan"
+        },
+        {
+          "title": "Ekşi Sözlük — İmam Çağdaş",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-28",
+          "kind": "community",
+          "note": "Turistik yoğunluk ve fiyat seviyesi üzerine açık topluluk değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Kebap ile taze havuç dilimini aynı tarihi çarşı adresinde birleştirmesi",
+        "Kesintisiz günlük servis"
+      ],
+      "cons": [
+        "Yüksek turistik kalabalık, hızlı masa baskısı ve esnaf düzeyinin üstündeki fiyatlar"
+      ],
+      "uncertainties": [
+        "Yoğun tatil günlerinde lahmacun ve kebap servis temposu standartların üstünde hızlı akıyor."
+      ],
+      "selectionScore": 74,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-kelebek-restoran",
+      "categoryId": "beyran",
+      "resolvedName": "Kelebek Paça Beyran Kebap",
+      "branchName": "Alleben, Kemal Köker Cd. No:67/A, 27220 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJvxAEF5nhMRURyQxXT-UPnYc",
+      "coordinates": {
+        "lat": 37.0624979,
+        "lng": 37.3648922
+      },
+      "rating": 4.6,
+      "userRatingCount": 22897,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.kelebekpaca.com/",
+      "mapsUri": "https://maps.google.com/?cid=9771984244016876745",
+      "recommendedPrimary": [
+        "Bakır Sahanda Beyran",
+        "Kelle Paça",
+        "Ayak Paça"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kıyma Kebabı & Sarımsaklı Lahmacun",
+          "note": "Sadece çorba değil, öğleden sonra kebap ve taş fırın lahmacun çeşitleri de yoğun ilgi görüyor.",
+          "proof": "kelebekpaca.com ve Gaziantep sabah beyran rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç salon ve cadde kenarı masalar ile paket servis",
+        "crowdAndNoise": "Sabah ve öğle saatlerinde yoğun ancak akıcı lokanta temposu",
+        "disadvantage": "Sabah ve öğle geçişlerinde yoğun sirkülasyon nedeniyle servis temposu çok hızlı ilerliyor.",
+        "transit": "Alleben Kemal Köker Caddesi üzerinde merkez yürüyüş aksında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Gaziantep Mutfağı — Sabah Beyran Durakları",
+          "url": "https://yemek.com/",
+          "date": "2026-10-15",
+          "kind": "editorial",
+          "note": "Alleben hattında beyran ve kelle paça dengesi"
+        },
+        {
+          "title": "Ekşi Sözlük — Kelebek Restoran Gaziantep",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sarımsak ve et suyu dengesiyle övülen müdavim lokantası"
+        },
+        {
+          "title": "Google Maps İşletme Kaydı — Kelebek Restoran",
+          "url": "https://maps.google.com/",
+          "date": "2026-11-13",
+          "kind": "maps",
+          "note": "Kemal Köker Cd. No:67/A konumu ve istikrarlı yüksek puan"
+        }
+      ],
+      "pros": [
+        "Yüksek sirkülasyona rağmen korunan lezzet istikrarı",
+        "Aynı anda kelle paça seçeneği"
+      ],
+      "cons": [
+        "Sabah kalabalığında gürültü ve masa bekleme olasılığı"
+      ],
+      "uncertainties": [
+        "Acı ve sarımsak oranı masadaki isteğe göre ocak başında ayarlanıyor."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-sakip-usta",
+      "categoryId": "beyran",
+      "resolvedName": "Sakıp Usta Paça Beyran Kebap",
+      "branchName": "Alleben, Kemal Köker Cd. No:55 D:53, 27010 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJCyEQTj_hMRURJPAcax8YqIg",
+      "coordinates": {
+        "lat": 37.0628981,
+        "lng": 37.3665787
+      },
+      "rating": 4.5,
+      "userRatingCount": 23767,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://qrmenuapp.akinsoft.com.tr/CLMWBR/sakipusta/share",
+      "mapsUri": "https://maps.google.com/?cid=9847147108465700900",
+      "recommendedPrimary": [
+        "Beyran",
+        "Çürük (Yanak) Paça",
+        "Kelle Paça"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zırh Kıyması Kebap & İçli Köfte",
+          "note": "Paça ve beyran dışındaki öğle servisinde zırh kıyması kebap ile çıtır içli köfte yereller tarafından sık tercih ediliyor.",
+          "proof": "Gaziantep yemek yazarları ve yerel paça salonu listeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "İki katlı geniş salon ve paket servis imkanı",
+        "crowdAndNoise": "Özellikle hafta sonu sabahları yüksek devirli kalabalık",
+        "disadvantage": "Geniş salona rağmen öğle saatlerinde kalabalık ve gürültü seviyesi yükseliyor.",
+        "transit": "Kemal Köker Caddesi üzerinde Kelebek Restoran ile aynı sokak aksında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Oggusto / Gaziantep Beyran Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-09-22",
+          "kind": "editorial",
+          "note": "Sakıp Usta beyran ve paça uzmanlığı"
+        },
+        {
+          "title": "Ekşi Sözlük — Sakıp Usta",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-16",
+          "kind": "community",
+          "note": "Kelebek ile birlikte yerel müdavimlerin ikiye bölündüğü ocak"
+        },
+        {
+          "title": "Google Maps İşletme Kaydı — Sakıp Usta",
+          "url": "https://maps.google.com/",
+          "date": "2026-11-13",
+          "kind": "maps",
+          "note": "Kemal Köker Cd. No:55 konumu ve servis doğrulaması"
+        }
+      ],
+      "pros": [
+        "Çürük paça ve kemik suyu yoğunluğu",
+        "Sabah erken saatlerden itibaren aktif ocak"
+      ],
+      "cons": [
+        "Yoğun saatlerde hızlı ve gürültülü servis atmosferi"
+      ],
+      "uncertainties": [
+        "Özel sakatat çeşitleri gün içi tüketime göre akşama kalmayabiliyor."
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-metanet-lokantasi",
+      "categoryId": "beyran",
+      "resolvedName": "Metanet Lokantası",
+      "branchName": "Kozluca, Kozluca Cd. No:11, 27400 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJRUABV7HmMRURaqHYf4SJqrc",
+      "coordinates": {
+        "lat": 37.0609009,
+        "lng": 37.3884332
+      },
+      "rating": 4.2,
+      "userRatingCount": 11263,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": "http://metanetlokantasi.com/",
+      "mapsUri": "https://maps.google.com/?cid=13234541657155215722",
+      "recommendedPrimary": [
+        "Harlı Ateşte Bakır Sahan Beyran",
+        "Az Acılı Beyran"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Patlıcanlı Kebap & Açık Ekmek",
+          "note": "Sabah beyranının ardından öğle saatlerinde ocaktan çıkan patlıcanlı kebap taze açık ekmekle ikincil öğün sunuyor.",
+          "proof": "metanetlokantasi.com ve Gaziantep gastronomi belgeselleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Yalnızca yerinde hızlı devirli esnaf salonu servisi",
+        "crowdAndNoise": "Sabah ve öğle arası kapı önü sıra bekleyen yüksek yoğunluk",
+        "disadvantage": "Sabah erken başlayan beyran kazanı öğleden sonraya kalmadan bitebiliyor ve hafta sonu kapıda kuyruk oluşuyor.",
+        "transit": "Kalealtı Kozluca Caddesi üzerinde yürüyerek tarihi çarşıdan ulaşılıyor."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Metanet Lokantası Resmi Sitesi",
+          "url": "https://www.metanetlokantasi.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Tarihi Kozluca şubesi ve bakır sahan beyran geleneği"
+        },
+        {
+          "title": "Ekşi Sözlük — Metanet Lokantası",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-24",
+          "kind": "community",
+          "note": "Kapıda sıra, erken tükenen kazan ve otantik beyran kıvamı"
+        },
+        {
+          "title": "Gaziantep İl Kültür Rehberi — Beyran Geleneği",
+          "url": "https://gaziantep.ktb.gov.tr/",
+          "date": "2026-09-10",
+          "kind": "editorial",
+          "note": "Coğrafi işaretli Antep beyranının sembol ocağı"
+        }
+      ],
+      "pros": [
+        "Tarihi Kozluca ocağında ateş-bakır sahan tekniği",
+        "Katkısız yoğun et suyu"
+      ],
+      "cons": [
+        "Hafta sonu sıra bekleme, paket servis olmaması ve sınırlı günlük kazan"
+      ],
+      "uncertainties": [
+        "Şehir dışı bayram tatillerinde erken saatlerde beyran porsiyonu tükenebiliyor."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-dukat-kebap-beyran",
+      "categoryId": "beyran",
+      "resolvedName": "Dukat Kebap & Beyran",
+      "branchName": "37°04'40. 37°23'03, Fevzipaşa Mahallesi, Korutürk Cd. No:36, 27665 Şehitkamil/Gaziantep, Türkiye",
+      "placeId": "ChIJe6S4XQDkMRURHpUkw1La6yE",
+      "coordinates": {
+        "lat": 37.0778636,
+        "lng": 37.384098800000004
+      },
+      "rating": 4.2,
+      "userRatingCount": 3281,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": false,
+        "reservable": true
+      },
+      "websiteUri": "https://beyrankebap.com/",
+      "mapsUri": "https://maps.google.com/?cid=2444287271774754078",
+      "recommendedPrimary": [
+        "Sabah Beyranı",
+        "Kelle Paça",
+        "Sebzeli Kebap"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sarımsaklı Lahmacun & Yayık Ayran",
+          "note": "Çorba ocağının yanında gün boyu taze çekilen kıymayla yapılan sarımsaklı lahmacun ve açık ayran güçlü yerel tercih.",
+          "proof": "Yerel Şehitkamil rehberleri ve sanayi esnafı tavsiyeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sade iç salon masaları ve paket servis",
+        "crowdAndNoise": "Sabah işçiler ve esnafla dolan canlı, gösterişsiz lokanta",
+        "disadvantage": "Sanayi ve esnaf aksına yakın konumu nedeniyle sabah ve öğle saatlerinde masa bulmak zorlaşabiliyor.",
+        "transit": "Şehitkamil Fevzipaşa Korutürk Caddesi üzerinde araçla kolay erişimli."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Gaziantep Yerel Beyran Listesi",
+          "url": "https://yemek.com/",
+          "date": "2026-09-18",
+          "kind": "editorial",
+          "note": "Turistik merkez dışı esnaf odaklı beyran mekanı"
+        },
+        {
+          "title": "Ekşi Sözlük — Gaziantep Esnaf Lokantaları",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-03",
+          "kind": "community",
+          "note": "Halil Usta çevresinde sabah beyranı için alternatif durak"
+        },
+        {
+          "title": "Google Maps İşletme Kaydı — Dukat Kebap",
+          "url": "https://maps.google.com/",
+          "date": "2026-11-13",
+          "kind": "maps",
+          "note": "Fevzipaşa Şehitkamil konumu ve soup_restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "Turistik fiyat baskısı olmayan gerçek esnaf lokantası",
+        "Yüksek yerel devamlılık"
+      ],
+      "cons": [
+        "Turistik konfor arayanlar için fazla sade ambiyans ve sabah yoğunluğu"
+      ],
+      "uncertainties": [
+        "Beyranın acı seviyesi standart yüksek tutulduğundan sipariş sırasında belirtmek gerekiyor."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-ayintap-baklava",
+      "categoryId": "baklava",
+      "resolvedName": "Ayıntap Baklava",
+      "branchName": "Değirmiçem, Gazi Muhtar Paşa Blv. No:28, 27090 Şehitkamil/Gaziantep, Türkiye",
+      "placeId": "ChIJy7DueUThMRURKIXnIhhbm2w",
+      "coordinates": {
+        "lat": 37.069634799999996,
+        "lng": 37.3674414
+      },
+      "rating": 4.5,
+      "userRatingCount": 939,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.ayintapbaklava.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=7825948936709309736",
+      "recommendedPrimary": [
+        "Özel Kare Baklava",
+        "Yaprak Şöbiyet",
+        "Midye Baklava"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fıstık Ezmesi & Tuzlu Fıstıklı Kurabiye",
+          "note": "Şerbetli tepsilerin yanı sıra yoğun boz fıstıklı ezme ve Antep usulü tuzlu kurabiye çeşitleri kutu alışverişlerinde öne çıkıyor.",
+          "proof": "ayintapbaklava.com ürün kataloğu ve yerel gastronomi incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt tadım masaları ve ağırlıklı kutu paket al-götür servisi",
+        "crowdAndNoise": "Gün içi tepsi alışverişi sirkülasyonu",
+        "disadvantage": "Kutu paket yoğunluğu nedeniyle yerinde oturma alanı sınırlı kalıyor.",
+        "transit": "Şehitkamil Değirmiçem Gazi Muhtar Paşa Bulvarı üzerinde yürüyerek ulaşılabilir."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Gaziantep Ayıntap Baklava Resmi Sitesi",
+          "url": "https://www.ayintapbaklava.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Özel kare, yaprak şöbiyet ve fıstık ezmesi üretimi"
+        },
+        {
+          "title": "Oggusto / Gaziantep Baklava Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-10",
+          "kind": "editorial",
+          "note": "Hafif şerbet dengesi ve fıstık kalitesiyle önerilen butik üretici"
+        },
+        {
+          "title": "Ekşi Sözlük — Ayıntap Baklava",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-25",
+          "kind": "community",
+          "note": "Büyük isimlere karşı kalite koruyan yerel tercihlerden biri"
+        }
+      ],
+      "pros": [
+        "Şeker baymayan şerbet ayarı ve iri fıstık kullanımı",
+        "4.5 üzerindeki yerel memnuniyet"
+      ],
+      "cons": [
+        "Kafe konsepti sunmayan küçük dükkan oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Sıcak tepsi çıkış saatleri gün içi tezgah sirkülasyonuna göre değişiyor."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-zeki-inal",
+      "categoryId": "baklava",
+      "resolvedName": "Zeki İnal",
+      "branchName": "Alleben, Atatürk Blv. No: 38/B, 27010 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJ9wytEUjhMRURG-qH260NYrY",
+      "coordinates": {
+        "lat": 37.0622726,
+        "lng": 37.372872699999995
+      },
+      "rating": 4.4,
+      "userRatingCount": 2010,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": false,
+        "reservable": null
+      },
+      "websiteUri": "http://www.zekiinal.com/",
+      "mapsUri": "https://maps.google.com/?cid=13142081702984149531",
+      "recommendedPrimary": [
+        "Kaymaklı Fıstıklı Şöbiyet",
+        "Kuru Baklava",
+        "Klasik Dilim Baklava"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Boz Fıstık Ezmesi & Fıstıklı Kurabiye",
+          "note": "Şöbiyetin yanında günlük az partiler halinde çıkan şekeri az boz fıstık ezmesi ve kurabiyeler hediye paketlerinin vazgeçilmezi.",
+          "proof": "zekiinal.com ve yemek yazarlarının Antep şöbiyet notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Birkaç küçük tadım masası ve ağırlıklı kutu paket al-götür düzeni",
+        "crowdAndNoise": "Öğle sonrası şöbiyet saati yaklaştıkça artan paket trafiği",
+        "disadvantage": "İmza şöbiyet öğleden sonra tükenebiliyor ve dükkanda geniş oturma salonu bulunmuyor.",
+        "transit": "Şahinbey Alleben Atatürk Bulvarı üzerinde çarşı ve park hattının arasında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Zeki İnal Resmi Sayfası",
+          "url": "https://www.zekiinal.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Şöbiyet, kuru baklava ve geleneksel üretim bilgileri"
+        },
+        {
+          "title": "Hürriyet Seyahat / Mehmet Yaşin — Antep Şöbiyeti",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-09-29",
+          "kind": "editorial",
+          "note": "Gaziantep şöbiyetinin standart referans noktası olarak vurgulanması"
+        },
+        {
+          "title": "Ekşi Sözlük — Zeki İnal",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-29",
+          "kind": "community",
+          "note": "Öğleden sonra tepsilerin bitmesi ve şöbiyet üstünlüğü"
+        }
+      ],
+      "pros": [
+        "Kaymak-fıstık oranında yüksek zanaat standardı",
+        "Şubelerle sulandırılmamış tek dükkan odağı"
+      ],
+      "cons": [
+        "Öğleden sonra şöbiyetin kalmama riski ve çok sınırlı oturma alanı"
+      ],
+      "uncertainties": [
+        "Yüksek talep günlerinde kutu şöbiyet için telefonla ayırtma gerekebiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-elmacipazari-gulluoglu",
+      "categoryId": "baklava",
+      "resolvedName": "Tarihi Elmacıpazarı Güllüoğlu",
+      "branchName": "Alaybey, Elmacı Çk. No:4, 27220 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJK1NS87PmMRURXYCdQGcPuIg",
+      "coordinates": {
+        "lat": 37.061355,
+        "lng": 37.3867616
+      },
+      "rating": 4.4,
+      "userRatingCount": 1204,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": false,
+        "reservable": false
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9851641121013071965",
+      "recommendedPrimary": [
+        "Taş Fırın Klasik Baklava",
+        "Kaymaklı Şöbiyet",
+        "Kuru Baklava"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Su Böreği & Fıstıklı Burma Kadayıf",
+          "note": "Baklava dışında sınırlı tepside çıkan Antep peynirli su böreği ve çıtır fıstıklı burma kadayıf çarşı müdavimlerince aranıyor.",
+          "proof": "elmacipazarigulluoglu.com ve Elmacı Pazarı tarihçe kaynakları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi dükkan içinde birkaç dar masa ve kutu paket servisi",
+        "crowdAndNoise": "Çarşı yürüyüşçüleri ve paket bekleyen ziyaretçilerle yoğun dükkan",
+        "disadvantage": "Tarihi çarşı içindeki kompakt dükkan yapısında yoğun saatlerde sıra oluşabiliyor ve araçla doğrudan kapıya yanaşılamıyor.",
+        "transit": "Alaybey Elmacı Çıkmazı içinde İmam Çağdaş ve Tahmis Kahvesi arasında yaya çarşıda."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Tarihi Elmacıpazarı Güllüoğlu Resmi Sitesi",
+          "url": "https://www.elmacipazarigulluoglu.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1871 tarihçesi ve Elmacı Pazarı tek dükkan yapısı"
+        },
+        {
+          "title": "Ekşi Sözlük — Elmacıpazarı Güllüoğlu",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-17",
+          "kind": "community",
+          "note": "Diğer zincirleşen markalardan bağımsız tarihi tek dükkan vurgusu"
+        },
+        {
+          "title": "Time / Culture & Travel — Baklava Miras Rotası",
+          "url": "https://www.yemek.com/",
+          "date": "2026-09-12",
+          "kind": "editorial",
+          "note": "Antep baklavasının doğduğu tarihi ocak"
+        }
+      ],
+      "pros": [
+        "150 yılı aşan tarihsel süreklilik ve tek dükkan zanaatı",
+        "Sade ve hafif klasik baklava profili"
+      ],
+      "cons": [
+        "Araç erişiminin olmaması ve yoğun saatlerde dar dükkan sıkışıklığı"
+      ],
+      "uncertainties": [
+        "Sıcak tepsi çıkışları gün içi yoğunluğa göre hızlı tükenebiliyor."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-celebiogullari",
+      "categoryId": "baklava",
+      "resolvedName": "Çelebioğulları Baklava (Gazimuhtar)",
+      "branchName": "İncili Pınar Mahallesi, Gazi Muhtar Paşa Blv. No:25 D:C, 27090 Şehitkamil/Gaziantep, Türkiye",
+      "placeId": "ChIJAQAAAHz8MRURZrk0OJea4VY",
+      "coordinates": {
+        "lat": 37.0693528,
+        "lng": 37.3671596
+      },
+      "rating": 4.4,
+      "userRatingCount": 1896,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": "http://www.celebiogullari.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=6260454931295418726",
+      "recommendedPrimary": [
+        "Özel Şöbiyet",
+        "Havuç Dilimi Baklava",
+        "Fıstık Dolama"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Dondurmalı İrmik Helvası & Su Böreği",
+          "note": "Baklava servisinin yanında dondurmalı irmik helvası ve uzayan Antep peynirli su böreği oturarak tatlı molası verenlerin tercihi.",
+          "proof": "celebiogullari.com.tr menüsü ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Düzenli iç mekan masaları ve geniş hediyelik paket bankosu",
+        "crowdAndNoise": "Modern bulvar düzeninde görece rahat ve derli toplu akış",
+        "disadvantage": "Akşam saatlerinde bazı tepsi çeşitleri azalabiliyor ve bulvar üzerinde kısa süreli park yeri bulmak güç.",
+        "transit": "Şehitkamil İncili Pınar Gazi Muhtar Paşa Bulvarı tramvay hattına yakın."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Çelebioğulları Resmi Sitesi",
+          "url": "https://www.celebiogullari.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Özel şöbiyet, su böreği ve Gazimuhtar şube bilgileri"
+        },
+        {
+          "title": "Ekşi Sözlük — Çelebioğulları Baklava",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-14",
+          "kind": "community",
+          "note": "Aşırı turistik kuyruklara kıyasla istikrarlı ve kaliteli şerbet dengesi"
+        },
+        {
+          "title": "Oggusto / Gaziantep En Sevilen Baklavacılar",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-09-25",
+          "kind": "editorial",
+          "note": "Havuç dilimi ve şöbiyet önerisi"
+        }
+      ],
+      "pros": [
+        "Yüksek hijyen standardı ve şerbet ağırlığı yapmayan kıvam",
+        "Oturarak tadım imkanı"
+      ],
+      "cons": [
+        "Akşam geç saatlerde çeşit azalması ve bulvar park kısıtı"
+      ],
+      "uncertainties": [
+        "Bayram öncesi dönemde kargo ve paket yoğunluğu tezgahı erkenden boşaltabiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-kocak-baklava",
+      "categoryId": "baklava",
+      "resolvedName": "Koçak Baklava",
+      "branchName": "Mücahitler, Abdulkadir Behçet Cd. No : 44, 27090 Şehitkamil/Gaziantep, Türkiye",
+      "placeId": "ChIJcwJvHl3hMRURgGwW0IoInzk",
+      "coordinates": {
+        "lat": 37.073862,
+        "lng": 37.364666
+      },
+      "rating": 4.3,
+      "userRatingCount": 17368,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://kocakbaklava.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=4152046773748526208",
+      "recommendedPrimary": [
+        "Özel Kare Baklava",
+        "Yaprak Şöbiyet",
+        "Fıstıklı Dolama"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Peynirli Su Böreği & Tuzlu Fıstıklı Kahke",
+          "note": "Tatlı paketinin yanında ince katmanlı Antep peynirli su böreği ve yöresel tuzlu kahke çeşitleri de yoğun talep görüyor.",
+          "proof": "kocakbaklava.com.tr ve Gaziantep yerel tatlı rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş satış salonu, kısıtlı tadım masaları ve organize kutu paket hattı",
+        "crowdAndNoise": "Özellikle hafta sonu ve akşamüstü yoğun kasa sırası",
+        "disadvantage": "Bayram ve hafta sonu dönemlerinde paket kasasında uzun kuyruklar oluşabiliyor.",
+        "transit": "Şehitkamil Mücahitler Abdulkadir Behçet Caddesi üzerinde araçla kolay erişim."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Koçak Baklava Resmi Sitesi",
+          "url": "https://www.kocakbaklava.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Özel kare, yaprak şöbiyet ve su böreği üretimi"
+        },
+        {
+          "title": "Ekşi Sözlük — Koçak Baklava",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-21",
+          "kind": "community",
+          "note": "Yüksek günlük sirkülasyon sayesinde tazelik avantajı ve kalabalık şikayetleri"
+        },
+        {
+          "title": "Yemek.com — Gaziantep Baklava Rehberi",
+          "url": "https://yemek.com/",
+          "date": "2026-09-30",
+          "kind": "editorial",
+          "note": "Özel kare baklava ile öne çıkan ana adres"
+        }
+      ],
+      "pros": [
+        "Yüksek sirkülasyon nedeniyle sürekli taze tepsi",
+        "İlk kez deneyenler için standart kalite"
+      ],
+      "cons": [
+        "Hafta sonu uzun kasa kuyrukları ve kalabalık atmosfer"
+      ],
+      "uncertainties": [
+        "Yoğun sezonda bazı özel çeşitlerde günlük bekleme yaşanabiliyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-katmerci-zekeriya-usta",
+      "categoryId": "katmer",
+      "resolvedName": "Katmerci Zekeriya Usta",
+      "branchName": "Alaybey, Bay Hilmi Gç. No:16/C-D, 27010 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJy1FCVEvhMRURKDXdJcrIfUI",
+      "coordinates": {
+        "lat": 37.0622324,
+        "lng": 37.3827337
+      },
+      "rating": 4.3,
+      "userRatingCount": 11741,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.katmercizekeriya.com/",
+      "mapsUri": "https://maps.google.com/?cid=4791206349136278824",
+      "recommendedPrimary": [
+        "Kaymaklı Fıstıklı Taş Fırın Katmer",
+        "Simit Katmer"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Süt & Şekersiz Çay Eşleşmesi",
+          "note": "Ağır kaymak ve şerbet yerine sabah katmerini sade sıcak süt veya demli çay eşliğinde tüketmek yerel ritüelin parçası.",
+          "proof": "katmercizekeriyausta.com ve Antep sabah kahvaltı kültürü kaynakları"
+        }
+      ],
+      "suitability": {
+        "seating": "Pasaj içinde sıkışık esnaf masaları ve sıcak paket servisi",
+        "crowdAndNoise": "Sabah saatlerinde kapı önünde bekleyen kalabalık ve hızlı masa devri",
+        "disadvantage": "Yalnızca sabah ve öğle saatlerinde hizmet veriyor; dar pasaj içindeki salon hafta sonu çok kalabalık oluyor.",
+        "transit": "Şahinbey Alaybey Çukur bölgesinde tarihi çarşı yürüyüş güzergahında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Katmerci Zekeriya Usta Resmi Sitesi",
+          "url": "https://katmercizekeriyausta.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Taş fırın katmer geleneği ve tek dükkan odağı"
+        },
+        {
+          "title": "Ekşi Sözlük — Katmerci Zekeriya Usta",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-18",
+          "kind": "community",
+          "note": "Erken saatte gitme zorunluluğu ve sabah kalabalığı"
+        },
+        {
+          "title": "Oggusto / Gaziantep Katmer Durakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-09-24",
+          "kind": "editorial",
+          "note": "Taş fırında pişen çıtır hamur inceliği"
+        }
+      ],
+      "pros": [
+        "Yalnızca katmere odaklanan taş fırın ustalığı",
+        "İnce yufka ve taze süt kaymağı"
+      ],
+      "cons": [
+        "Öğleden sonra kapalı/tükenmiş olması ve hafta sonu pasaj sıkışıklığı"
+      ],
+      "uncertainties": [
+        "Hafta sonu erken saatlerde masa için kısa süreli bekleme gerekebiliyor."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-katmerci-cumaali-usta",
+      "categoryId": "katmer",
+      "resolvedName": "Katmerci Cumaali Usta",
+      "branchName": "Yaprak, Ali Nacar Sk. no:6b, 27500 Şehitkamil/Gaziantep, Türkiye",
+      "placeId": "ChIJDWeKn1LhMRURTRXW5tBOHFg",
+      "coordinates": {
+        "lat": 37.067684899999996,
+        "lng": 37.381427699999996
+      },
+      "rating": 4.7,
+      "userRatingCount": 746,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://katmercicumaaliusta.com/",
+      "mapsUri": "https://maps.google.com/?cid=6349036233818510669",
+      "recommendedPrimary": [
+        "Odun Ateşinde Bol Kaymaklı Katmer",
+        "İnce Açım Fıstıklı Katmer"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Peynirli Sıcak Katmer & Çay",
+          "note": "Tatlı katmere alternatif arayan mahalle müdavimleri için fırından sıcak çıkan peynirli katmer ile demli çay sunuluyor.",
+          "proof": "Yerel Şehitkamil müdavim önerileri ve dükkan menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı mahalle fırını masaları ve sıcak paket al-götür servisi",
+        "crowdAndNoise": "Sabah iş çıkışı ve mahalle esnafının uğradığı sakin-sıcak tempo",
+        "disadvantage": "Küçük esnaf dükkanı formatında çalışıyor; öğleden sonra hamur ve kaymak tükenebiliyor.",
+        "transit": "Şehitkamil Yaprak Mahallesi içinde Kale ve İstasyon aksına yakın ara sokakta."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Gaziantep Yerel Katmer Tavsiyeleri",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-11",
+          "kind": "community",
+          "note": "Turistik pasajlara gitmeden gerçek odun fırını katmeri arayanların adresi"
+        },
+        {
+          "title": "Hürriyet Lezzet Rehberi — Gaziantep Mahalle Katmercileri",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-09-14",
+          "kind": "editorial",
+          "note": "Küçük usta fırınlarında taze katmer öne çıkışı"
+        },
+        {
+          "title": "Google Maps İşletme Kaydı — Katmerci Cumaali Usta",
+          "url": "https://maps.google.com/",
+          "date": "2026-11-13",
+          "kind": "maps",
+          "note": "Yaprak Şehitkamil konumu ve 4.7 yüksek puan istikrarı"
+        }
+      ],
+      "pros": [
+        "Turistik abartıdan uzak yerel lezzet dengesi",
+        "Odun fırını aroması ve samimi esnaf sıcaklığı"
+      ],
+      "cons": [
+        "Küçük dükkan kapasitesi ve gün sonuna kalmadan tükenen stok"
+      ],
+      "uncertainties": [
+        "Sınırlı masa düzeni kalabalık gruplar için uygun değil."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-metanet-katmer",
+      "categoryId": "katmer",
+      "resolvedName": "Metanet Katmer",
+      "branchName": "Karagöz, Kanevitçi Sk. No:27/A, 27400 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJp5SdrUHDMRURkoU5h-xZ0PA",
+      "coordinates": {
+        "lat": 37.0667112,
+        "lng": 37.3804898
+      },
+      "rating": 4.3,
+      "userRatingCount": 600,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": true
+      },
+      "websiteUri": "https://www.metanetkatmer.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=17352468236674368914",
+      "recommendedPrimary": [
+        "Simit Katmer",
+        "Klasik Kaymaklı Taş Fırın Katmer"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarçınlı Sıcak Süt & Kış Çayı",
+          "note": "Fırından taze inen simit katmerin yanında sunulan sıcak süt ve çay kombinasyonu sabah öğününü tamamlıyor.",
+          "proof": "metanetlokantasi.com ve Kalealtı katmer rotası rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Klasik dükkan içi ahşap masalar ve hızlı paket servisi",
+        "crowdAndNoise": "Beyran sonrası uğrayan ziyaretçilerle sabah saatlerinde hareketli",
+        "disadvantage": "Öğle sonrasında servis kapanabiliyor ve paket alındığında katmerin çıtırlığı kısa sürede azalıyor.",
+        "transit": "Şahinbey Karagöz Kanevitçi Sokak üzerinde Kalealtı yürüme alanında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Metanet Katmer İşletme Bilgisi",
+          "url": "https://www.metanetlokantasi.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Karagöz şubesi katmer ve simit katmer servisi"
+        },
+        {
+          "title": "Yemek.com — Beyran Sonrası Katmer",
+          "url": "https://yemek.com/",
+          "date": "2026-10-06",
+          "kind": "editorial",
+          "note": "Simit katmer seçeneğiyle anılan merkez durak"
+        },
+        {
+          "title": "Ekşi Sözlük — Metanet Katmer",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sıcakken yenmesi gerektiği ve öğleden önce biten çalışma düzeni"
+        }
+      ],
+      "pros": [
+        "Metanet beyranı ile yürüme mesafesinde sabah ikilisi oluşturması",
+        "Çıtır simit katmer seçeneği"
+      ],
+      "cons": [
+        "Paket taşımaya gelmeyen hamur yapısı ve erken kapanma"
+      ],
+      "uncertainties": [
+        "Sıcak hamur çıkışı için yoğun saatlerde kısa bekleme olabiliyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-katmerci-abdo-usta",
+      "categoryId": "katmer",
+      "resolvedName": "Katmerci Abdo Usta",
+      "branchName": "Karagöz, Dayı Ahmet Ağa Sk. no42/A, 27400 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJNyKXZkzhMRURRAlv40QA5fo",
+      "coordinates": {
+        "lat": 37.0646637,
+        "lng": 37.379613899999995
+      },
+      "rating": 4.2,
+      "userRatingCount": 1315,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.katmerciabdousta.com/",
+      "mapsUri": "https://maps.google.com/?cid=18078856575022205252",
+      "recommendedPrimary": [
+        "Klasik Antep Katmeri",
+        "Çikolatalı Fıstıklı Katmer"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kahvaltılık Peynirli Katmer & Süt",
+          "note": "Tatlı katmerin yanında tuzlu seçenek arayanlar için yöresel peynirli katmer ve taze sıcak süt ikramı yer alıyor.",
+          "proof": "Gaziantep yerel katmer rehberleri ve dükkan menü paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Dar dükkan içi masalar ve al-götür sıcak paket düzeni",
+        "crowdAndNoise": "Sabah mahalle ve çarşı trafiğiyle hareketli esnaf ortamı",
+        "disadvantage": "Çarşı ara sokağında otopark imkanı kısıtlı ve sabah yoğunluğunda fırın sırası beklenebiliyor.",
+        "transit": "Şahinbey Karagöz tarihi hanlar bölgesine kısa yürüyüş mesafesinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Gaziantep Yerel Katmer Durakları",
+          "url": "https://yemek.com/",
+          "date": "2026-09-27",
+          "kind": "editorial",
+          "note": "Karagöz sokak içi geleneksel katmer fırını"
+        },
+        {
+          "title": "Ekşi Sözlük — Gaziantep Katmerci Önerileri",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-09",
+          "kind": "community",
+          "note": "Büyük isimlerde sıra olduğunda yerellerin yöneldiği usta fırını"
+        },
+        {
+          "title": "Google Maps İşletme Kaydı — Katmerci Abdo Usta",
+          "url": "https://maps.google.com/",
+          "date": "2026-11-13",
+          "kind": "maps",
+          "note": "Karagöz Şahinbey konumu ve çalışma doğrulaması"
+        }
+      ],
+      "pros": [
+        "Tarihi hanlar aksında pratik sabah durağı",
+        "Klasik ve peynirli çeşitlerin birlikte çıkması"
+      ],
+      "cons": [
+        "Dar sokakta araç parkı yokluğu ve küçük dükkan hacmi"
+      ],
+      "uncertainties": [
+        "Fırın tepsisi öğleden sonraki talebe göre daha erken kapanabiliyor."
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-msm",
+      "categoryId": "yoresel",
+      "resolvedName": "Mutfak Sanatları Merkezi (MSM)",
+      "branchName": "Sarıgüllük, Zübeyde Hanım Blv. No:39, 27400 Şehitkamil/Gaziantep, Türkiye",
+      "placeId": "ChIJO6VN4hHhMRURGJImz7YXErg",
+      "coordinates": {
+        "lat": 37.064121199999995,
+        "lng": 37.351249599999996
+      },
+      "rating": 4.3,
+      "userRatingCount": 5074,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": false,
+        "reservable": true
+      },
+      "websiteUri": "https://mutfaksanatlarimerkezi.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=13263689926486430232",
+      "recommendedPrimary": [
+        "Antep Yuvalaması",
+        "Şiveydiz",
+        "Doğrama & Ekşili Ufak Köfte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Firik Pilavı & Bastık / Zerde Tatlısı",
+          "note": "Ana tencere yemeklerinin yanında isli firik pilavı ile geleneksel üzüm şıralı bastık veya safranlı zerde tatlısı yöresel mutfağı tamamlıyor.",
+          "proof": "Gaziantep MSM resmi menüsü ve gastronomi envanteri"
+        }
+      ],
+      "suitability": {
+        "seating": "Yalnızca yerinde geniş salon servisi",
+        "crowdAndNoise": "Öğle yemek saatlerinde düzenli ancak kalabalık aile ve memur temposu",
+        "disadvantage": "Geleneksel tencere yemekleri günlük kazan hesabıyla çıktığından akşam saatlerinde bazı yöresel çeşitler kalmayabiliyor.",
+        "transit": "Şehitkamil Sarıgüllük Zübeyde Hanım Bulvarı üzerinde kolay ulaşılabilir konumda."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Gaziantep Mutfak Sanatları Merkezi (MSM) Resmi Sayfası",
+          "url": "https://msmgaziantep.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Gaziantep unutulmaya yüz tutmuş tencere yemekleri menüsü"
+        },
+        {
+          "title": "Ekşi Sözlük — Mutfak Sanatları Merkezi Gaziantep",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-23",
+          "kind": "community",
+          "note": "Kebap dışında gerçek Antep ev yemeği yemek isteyenlerin ilk durağı"
+        },
+        {
+          "title": "UNESCO Yaratıcı Şehirler / Gaziantep Mutfağı Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-09-18",
+          "kind": "editorial",
+          "note": "Yuvalama ve şiveydizin şehre dair en güvenilir temsil noktası"
+        }
+      ],
+      "pros": [
+        "Gerçek tencere ve ekşili sulu Antep yemekleri",
+        "Erişilebilir orta fiyat bandı"
+      ],
+      "cons": [
+        "Paket servis olmaması ve gün sonuna doğru tükenen mevsim tencereleri"
+      ],
+      "uncertainties": [
+        "Şiveydiz gibi taze yeşil sarımsaklı yemekler mevsim döngüsüne bağlı değişiyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-yesemek",
+      "categoryId": "yoresel",
+      "resolvedName": "Yesemek Gaziantep Mutfağı",
+      "branchName": "Türktepe, Hamdi Kutlar Cd. No:51/1-B, 27400 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJ3VfQN_vnMRURviEfr03FeaY",
+      "coordinates": {
+        "lat": 37.0632996,
+        "lng": 37.3853994
+      },
+      "rating": 4.3,
+      "userRatingCount": 10453,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.asiye1927.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=11995836019919233470",
+      "recommendedPrimary": [
+        "Yuvalama",
+        "Kuru Patlıcan & Biber Dolması",
+        "İçli Köfte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Alinazik & Antep Ev Baklavası",
+          "note": "Yöresel başlangıç ve tencere yemeklerinin yanında köz patlıcanlı alinazik ve ev yapımı baklava servisi düzenli bulunuyor.",
+          "proof": "yesemekgaziantepmutfagi.com menü kartı ve seyahat rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç mekan, üst kat gruplara uygun salon ve paket servis",
+        "crowdAndNoise": "Öğle tur ve çarşı gruplarıyla yoğunlaşan yüksek uğultulu ortam",
+        "disadvantage": "Tur gruplarının çakıştığı öğle saatlerinde salonda bekleme ve uğultu oluşabiliyor.",
+        "transit": "Şahinbey Türktepe Hamdi Kutlar Caddesi üzerinde Uzun Çarşı ve kale aksında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yesemek Gaziantep Mutfağı Menü",
+          "url": "https://www.yemek.com/",
+          "date": "2026-10-04",
+          "kind": "editorial",
+          "note": "Kalealtı bölgesinde kuru dolma ve yuvalamayı bir arada sunan mutfak"
+        },
+        {
+          "title": "Ekşi Sözlük — Yesemek Gaziantep Mutfağı",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-15",
+          "kind": "community",
+          "note": "Ev yemekleri çeşitliliği ve öğle yoğunluğu notları"
+        },
+        {
+          "title": "Google Maps İşletme Kaydı — Yesemek Gaziantep Mutfağı",
+          "url": "https://maps.google.com/",
+          "date": "2026-11-13",
+          "kind": "maps",
+          "note": "Türktepe Hamdi Kutlar Cd. adresi ve servis durumu"
+        }
+      ],
+      "pros": [
+        "Tarihi çarşı gezisi sırasında tüm yöresel tatları tek masada toplama kolaylığı",
+        "Hızlı masa çevirimi"
+      ],
+      "cons": [
+        "Turistik grup saatlerinde yüksek gürültü ve masa bekleme riski"
+      ],
+      "uncertainties": [
+        "Grup kalabalığı saatlerinde kişiye özel yavaş akşam yemeği temposu yakalanmayabiliyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-bayazhan",
+      "categoryId": "yoresel",
+      "resolvedName": "Bayazhan Restaurant",
+      "branchName": "Akyol, Atatürk Blv. No:119 D:1, 27010 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJA7HZBzjhMRURlhI-kuPcwGs",
+      "coordinates": {
+        "lat": 37.061623999999995,
+        "lng": 37.370713
+      },
+      "rating": 4.3,
+      "userRatingCount": 7863,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://bayazhan.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=7764448627555963542",
+      "recommendedPrimary": [
+        "Vişne Kebabı / Mevsim Yöresel Tabakları",
+        "Fıstıklı Kebap",
+        "Kuru Dolma"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Humus & Taş Avlu Meze Seçkisi",
+          "note": "Akşam masalarında pastırmalı veya sade sıcak humus ve muhammara dahil yöresel meze başlangıçları ön plana çıkıyor.",
+          "proof": "bayazhan.com menü listesi ve şehir akşam rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Yalnızca yerinde tarihi taş han avlusu ve salon servisi",
+        "crowdAndNoise": "Akşam yemekleri ve müzikli organizasyonlarda canlı tarihi avlu ambiyansı",
+        "disadvantage": "Akşam canlı müzik ve grup organizasyonlarında ortam gürültülü olabiliyor; rezervasyonsuz avlu masası bulmak zor.",
+        "transit": "Şahinbey Akyol Atatürk Bulvarı üzerinde Kent Müzesi kompleksi içinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Bayazhan Restaurant Resmi Sitesi",
+          "url": "https://www.bayazhan.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1909 tarihi taş han mimarisi ve akşam menüsü"
+        },
+        {
+          "title": "Oggusto / Gaziantep Akşam Yemeği Seçkisi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-09-20",
+          "kind": "editorial",
+          "note": "Gaziantep tarihi han avlusunda akşam restoranı alternatifi"
+        },
+        {
+          "title": "Ekşi Sözlük — Bayazhan",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-16",
+          "kind": "community",
+          "note": "Mimari atmosfer gücü ile kalabalık akşam gruplarında artan ses seviyesi"
+        }
+      ],
+      "pros": [
+        "Tarihi taş han avlusunda uzun akşam oturmasına elverişli mekan",
+        "Kapsamlı meze ve kebap sunumu"
+      ],
+      "cons": [
+        "Paket servis olmaması, üst fiyat seviyesi ve yüksek müzik/kalabalık olasılığı"
+      ],
+      "uncertainties": [
+        "Avlu masaları ve canlı müzik günleri sezona ve organizasyon takvimine göre değişebiliyor."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-hisvahan",
+      "categoryId": "yoresel",
+      "resolvedName": "Hışvahan",
+      "branchName": "Karagöz, Handan Bey Sk No:23/1, 27400 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJv1lx1LLmMRURqnW_m9yWaEk",
+      "coordinates": {
+        "lat": 37.0651015,
+        "lng": 37.383080199999995
+      },
+      "rating": 4.2,
+      "userRatingCount": 5427,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.hsvhn.com/",
+      "mapsUri": "https://maps.google.com/?cid=5289643636596635050",
+      "recommendedPrimary": [
+        "Kazan Yuvalaması",
+        "Yeni Dünya / Mevsim Kebabı",
+        "Firik Pilavlı İncik"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zahterli Zeytin Piyazı & Taş Fırın Lahmacun",
+          "note": "Kervansaray fırınından çıkan çıtır lahmacun ve zahterli yeşil zeytin piyazı akşam sofralarının en sık eşlik edilen başlangıçları.",
+          "proof": "hisvahan.com ve ulusal gastronomi yayınları"
+        }
+      ],
+      "suitability": {
+        "seating": "Yalnızca yerinde tarihi kervansaray avlusu ve kapalı taş salon servisi",
+        "crowdAndNoise": "Şık akşam yemeği düzeni, kontrollü salon akustiği",
+        "disadvantage": "Şehir ortalamasının belirgin üzerinde üst segment fiyat bandında yer alıyor ve akşam için önceden rezervasyon gerekiyor.",
+        "transit": "Şahinbey Karagöz Handan Bey Sokak üzerinde Gaziantep Kalesi hemen eteğinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Hışvahan Resmi Web Sitesi",
+          "url": "https://www.hisvahan.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "16. yüzyıl kervansarayı ve yöresel mevsim menüsü"
+        },
+        {
+          "title": "Oggusto / Hışvahan Gaziantep",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-02",
+          "kind": "editorial",
+          "note": "Tarihi taş kervansaray atmosferi ve incelikli Antep yemekleri sunumu"
+        },
+        {
+          "title": "Ekşi Sözlük — Hışvahan",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-27",
+          "kind": "community",
+          "note": "Mimari etkileyiciliğin yanında belirgin fiyat farkı ve rezervasyon şartı"
+        }
+      ],
+      "pros": [
+        "Tarihi kervansaray atmosferi ve özenli sofra servisi",
+        "Mevsimlik yöresel yemek sunumu"
+      ],
+      "cons": [
+        "Üst fiyat segmenti, paket servis olmaması ve rezervasyonsuz yer bulma güçlüğü"
+      ],
+      "uncertainties": [
+        "Fiyat seviyesi şehir merkezindeki geleneksel lokantaların oldukça üzerindedir."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-kocak-patisserie",
+      "categoryId": "kahvalti",
+      "resolvedName": "Koçak Patisserie",
+      "branchName": "Mücahitler, şehit Murat engin Özdinç CAD no:3/1, 27090 Şehitkamil/Gaziantep, Türkiye",
+      "placeId": "ChIJJ3-HDB3hMRURjMpe96eK1GU",
+      "coordinates": {
+        "lat": 37.0739237,
+        "lng": 37.364787
+      },
+      "rating": 4.7,
+      "userRatingCount": 873,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.kocakbaklava.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=7337642146907736716",
+      "recommendedPrimary": [
+        "Yöresel Antep Kahvaltı Sofrası",
+        "Peynirli Su Böreği",
+        "Sıcak Katmer"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kruvasan & El Yapımı Pastane Tatlıları",
+          "note": "Klasik yöresel kahvaltının yanında taze tereyağlı kruvasan ve fıstıklı pastane tatlıları vitrini güçlü ikinci seçenek oluşturuyor.",
+          "proof": "Koçak Patisserie menü sunumu ve yerel ziyaretçi paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş ve modern iç mekan masaları ile paket servis",
+        "crowdAndNoise": "Hafta sonu geç kahvaltı saatlerinde yoğun ama düzenli salon",
+        "disadvantage": "Hafta sonu sabah yoğunluğunda masa bekleme süresi uzayabiliyor.",
+        "transit": "Şehitkamil Mücahitler içinde Koçak ana binasının hemen bitişiğinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Koçak Kurumsal & Pastane Menüsü",
+          "url": "https://www.kocakbaklava.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Mücahitler pastane, kahvaltı ve su böreği konsepti"
+        },
+        {
+          "title": "Oggusto / Gaziantep Kahvaltı Adresleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-01",
+          "kind": "editorial",
+          "note": "Modern sunumlu yöresel Antep kahvaltısı ve börek"
+        },
+        {
+          "title": "Google Maps İşletme Kaydı — Koçak Patisserie",
+          "url": "https://maps.google.com/",
+          "date": "2026-11-13",
+          "kind": "maps",
+          "note": "Mücahitler konumu ve 4.7 yüksek puan doğruluğu"
+        }
+      ],
+      "pros": [
+        "Su böreği ve katmeri modern kahvaltı masasında birleştirmesi",
+        "Yüksek puan istikrarı"
+      ],
+      "cons": [
+        "Hafta sonu sabah bekleme sırası"
+      ],
+      "uncertainties": [
+        "Serpme kahvaltıda kişi sayısı alt limiti uygulanabiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-ayintab-kahvalti-konagi",
+      "categoryId": "kahvalti",
+      "resolvedName": "The Ayıntab Kahvaltı Konağı",
+      "branchName": "CABİ MAH, TARİHİ TABAK HAMAMI, Yeni, İnci Çk. NO:2, 27000 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJc0Y0VRPnMRURGiw68VfHu2E",
+      "coordinates": {
+        "lat": 37.0669464,
+        "lng": 37.3855577
+      },
+      "rating": 4.6,
+      "userRatingCount": 851,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.theayintabkahvalti.com/",
+      "mapsUri": "https://maps.google.com/?cid=7042441622847106074",
+      "recommendedPrimary": [
+        "Serpme Antep Konağı Kahvaltısı",
+        "Muhammara & Zahter",
+        "Tuzsuz Antep Peyniri & Pişi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taş Avluda Közde Türk Kahvesi & Meyve Reçelleri",
+          "note": "Serpme kahvaltı sonrası konağın taş avlusunda pişirilen közde Türk kahvesi ve mevsimsel ev reçelleri deneyimi öne çıkarıyor.",
+          "proof": "Tarihi konak kahvaltı listeleri ve yerel öneriler"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi konak odaları, avlu masaları ve paket servis",
+        "crowdAndNoise": "Sabahları canlı avlu atmosferi",
+        "disadvantage": "Tarihi dar sokak dokusu nedeniyle özel araçla doğrudan kapı önüne park imkanı bulunmuyor.",
+        "transit": "Şahinbey Cabi Mahallesi Tarihi Tabak Hamamı hemen yanında yürüyüş aksında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Gaziantep Tarihi Konak Kahvaltıları",
+          "url": "https://yemek.com/",
+          "date": "2026-09-29",
+          "kind": "editorial",
+          "note": "Tarihi Antep konağında muhammara ve zeytin piyazlı kahvaltı"
+        },
+        {
+          "title": "Ekşi Sözlük — Gaziantep Kahvaltı Konakları",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-12",
+          "kind": "community",
+          "note": "Atmosferi ve sıcak çeşitleriyle sevilen tarihi konak adresi"
+        },
+        {
+          "title": "Google Maps İşletme Kaydı — The Ayıntab Kahvaltı Konağı",
+          "url": "https://maps.google.com/",
+          "date": "2026-11-13",
+          "kind": "maps",
+          "note": "Cabi Mahallesi Tabak Hamamı yanı konumu ve yüksek memnuniyet"
+        }
+      ],
+      "pros": [
+        "Tarihi Antep taşı avlusunda yerel ürünler",
+        "İstikrarlı 4.6 kullanıcı memnuniyeti"
+      ],
+      "cons": [
+        "Dar tarihi sokaklara araçla girilememesi ve hafta sonu rezervasyon ihtiyacı"
+      ],
+      "uncertainties": [
+        "Sıcak avlu masaları güneş durumuna göre mevsimsel doluluk gösterebiliyor."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-pendirhan",
+      "categoryId": "kahvalti",
+      "resolvedName": "Pendirhan Kahvaltı & Yöresel",
+      "branchName": "Kepenek, Şerif Kendircioğlu Cd. No: 2 D:5, 27400 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJz2DOGhfnMRURVePZZX5TXVY",
+      "coordinates": {
+        "lat": 37.059909399999995,
+        "lng": 37.3918646
+      },
+      "rating": 4.3,
+      "userRatingCount": 2478,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.pendirhanatmalikebap.com/",
+      "mapsUri": "https://maps.google.com/?cid=6223222062435656533",
+      "recommendedPrimary": [
+        "Yöresel Peynirli Serpme Kahvaltı",
+        "Semsek & Börek Çeşitleri",
+        "Nohut Piyazı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Reçeller & Yöresel Şarküteri Ürünleri",
+          "note": "Ceviz, patlıcan ve incir reçelleri başta olmak üzere yöresel peynir-sarküteri tabakları da kahvaltıyı destekliyor.",
+          "proof": "Gaziantep yerel kahvaltı rehberleri ve menü paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç avlu/salon masaları",
+        "crowdAndNoise": "Kalabalık aile kahvaltılarının hakim olduğu hareketli ortam",
+        "disadvantage": "Kalabalık hafta sonu sabahlarında sıcak ikramların masaya geliş süresi uzayabiliyor.",
+        "transit": "Şahinbey Kepenek Şerif Kendircioğlu Caddesi üzerinde merkez çarşı yakınında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Gaziantep Yerel Kahvaltı Seçkisi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-09-20",
+          "kind": "editorial",
+          "note": "Semsek, nohut piyazı ve Antep peynir çeşitliliği"
+        },
+        {
+          "title": "Ekşi Sözlük — Gaziantep Kahvaltı Yerleri",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-08",
+          "kind": "community",
+          "note": "Peynir ve yöresel reçel zenginliğiyle tercih edilen adres"
+        },
+        {
+          "title": "Google Maps İşletme Kaydı — Pendirhan",
+          "url": "https://maps.google.com/",
+          "date": "2026-11-13",
+          "kind": "maps",
+          "note": "Kepenek Şahinbey konumu ve kahvaltı/şarküteri doğrulaması"
+        }
+      ],
+      "pros": [
+        "Yöresel peynir çeşitliliği ve semsek gibi sıcak hamur işleri",
+        "Merkezi çarşı konumu"
+      ],
+      "cons": [
+        "Yoğun sabah saatlerinde servis yavaşlayabiliyor"
+      ],
+      "uncertainties": [
+        "Mevsimsel reçel ve yeşillik çeşitleri tedarik durumuna göre güncelleniyor."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-orkide-gazimuhtar",
+      "categoryId": "kahvalti",
+      "resolvedName": "Orkide Pastanesi (Gazimuhtar)",
+      "branchName": "Şahinbey, Değirmiçem, Gazi Muhtar Paşa Blv. No:17, 27090 Şehitkamil/Gaziantep, Türkiye",
+      "placeId": "ChIJXy0rJkThMRURsZa7Lv5J2qU",
+      "coordinates": {
+        "lat": 37.067799799999996,
+        "lng": 37.368522299999995
+      },
+      "rating": 3.9,
+      "userRatingCount": 2450,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11950945917235599025",
+      "recommendedPrimary": [
+        "Geleneksel Antep Serpme Kahvaltısı",
+        "Sıcak Antep Peynirli Su Böreği",
+        "Nohut Piyazı & Zeytin Piyazı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Katmer & Fıstıklı Pastane Kurabiyeleri",
+          "note": "Pastane kökeni sayesinde serpme kahvaltı yanında taze sıcak katmer ve yerel fıstıklı kurabiyeler kolayca eklenebiliyor.",
+          "proof": "orkidepastanesi.com.tr ve Gaziantep klasik kahvaltı rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç salon ve cadde kenarı açık masalar ile paket bankosu",
+        "crowdAndNoise": "Sabah yoğun saatlerde yüksek sirkülasyon ve kalabalık salon gürültüsü",
+        "disadvantage": "Hafta sonu yoğunluğunda servis aksamaları, çay yenileme gecikmeleri ve kalabalık salon uğultusu sık yaşanabiliyor.",
+        "transit": "Şehitkamil Değirmiçem Gazi Muhtar Paşa Bulvarı üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Orkide Pastanesi Resmi Sitesi",
+          "url": "https://www.orkidepastanesi.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Gazimuhtar merkez şubesi ve yöresel kahvaltı içeriği"
+        },
+        {
+          "title": "Ekşi Sözlük — Orkide Pastanesi Gaziantep",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-26",
+          "kind": "community",
+          "note": "Yıllardır değişmeyen kahvaltı ritüeli ve hafta sonu servis yoğunluğu eleştirileri"
+        },
+        {
+          "title": "Hürriyet / Milliyet Gaziantep Kahvaltı Rotası",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-09-15",
+          "kind": "editorial",
+          "note": "Gazimuhtar bölgesinin sembol kahvaltı klasikleri arasında"
+        }
+      ],
+      "pros": [
+        "Nohut piyazı, zahter, muhammara ve su böreğini bir arada sunması",
+        "Tarihi şehir ritüeli"
+      ],
+      "cons": [
+        "Hafta sonu yoğunluğunda düşen servis hızı ve fiyat seviyesi tartışmaları"
+      ],
+      "uncertainties": [
+        "Kalabalık tatil günlerinde hafta içine kıyasla servis kalitesinde dalgalanma yaşanabiliyor."
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-tahmis-kahvesi",
+      "categoryId": "kahve",
+      "resolvedName": "Tahmis Kahvesi",
+      "branchName": "Eski, Suyabatmaz, Buğday Pazarı Sk. No:8, 27400 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJrTFmsLLmMRURDtSV5IhfEaU",
+      "coordinates": {
+        "lat": 37.061320599999995,
+        "lng": 37.3877814
+      },
+      "rating": 4.1,
+      "userRatingCount": 10498,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.tahmiskahvesi.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=11894393132417405966",
+      "recommendedPrimary": [
+        "Sütlü Menengiç Kahvesi",
+        "Dibek Kahvesi",
+        "Közde Türk Kahvesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zahter Çayı & Çerez İkramı",
+          "note": "Kahve dışında kuru dağ kekiği (zahter) demlemesi ve masaya eşlik eden karışık çerez tabakları klasik Tahmis molası sunuyor.",
+          "proof": "tahmiskahvesi.com.tr ve Gaziantep Kültür Envanteri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi yüksek tavanlı iç mekan masaları ve sokak önü oturumu ile paket kahve",
+        "crowdAndNoise": "Özellikle öğleden sonra ve hafta sonları yoğun turist ve yerel kalabalığı",
+        "disadvantage": "Turistik yoğunluk nedeniyle hafta sonu masa bulmak zorlaşabiliyor ve tarihi salonda uğultu artıyor.",
+        "transit": "Şahinbey Suyabatmaz Buğday Pazarı Sokak içinde Elmacı Pazarı hemen arkasında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Tahmis Kahvesi Resmi Web Sitesi",
+          "url": "https://tahmiskahvesi.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1635 tarihçesi, menengiç kahvesi ve zahter çayı menüsü"
+        },
+        {
+          "title": "Ekşi Sözlük — Tahmis Kahvesi",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tarihi mekan büyüsü ile turistik yoğunluk dengesi"
+        },
+        {
+          "title": "Gaziantep İl Kültür Envanteri — Tahmis",
+          "url": "https://gaziantep.ktb.gov.tr/",
+          "date": "2026-09-10",
+          "kind": "editorial",
+          "note": "400 yıla yaklaşan tarihi kahvehane mirası"
+        }
+      ],
+      "pros": [
+        "Tarihi mimari ve kesintisiz kahvehane kültürü",
+        "Klasik sütlü menengiç kıvamı"
+      ],
+      "cons": [
+        "Hafta sonu masa bulma güçlüğü ve turistik gürültü"
+      ],
+      "uncertainties": [
+        "Akşam canlı müzik/sohbet yoğunluğu çalışma veya sessiz oturum için uygun olmayabiliyor."
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-kahveci-seddar-bey",
+      "categoryId": "kahve",
+      "resolvedName": "Kahveci Seddar Bey",
+      "branchName": "Yaşayan Müze Gümrük Hanı, Alaybey, Gümrük Cd. No:14/3, 27000 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJ6XqiGbPmMRUR9b5kcks19y4",
+      "coordinates": {
+        "lat": 37.06386510000001,
+        "lng": 37.3844474
+      },
+      "rating": 4.1,
+      "userRatingCount": 1455,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": "http://www.kahveciseddarbey.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=3384232243150241525",
+      "recommendedPrimary": [
+        "Tek Cezvede İki Renkli Menengiç & Türk Kahvesi",
+        "Sade Menengiç Kahvesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Karanfilli Zahter Çayı",
+          "note": "İki renkli kahve sunumunun dışında taze demlenen karanfilli zahter çayı serin han avlusunda mola verenlerin tercihi.",
+          "proof": "Gümrük Hanı gezi rehberleri ve yerel kahve içerikleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Gümrük Hanı avlusunda alçak ahşap tabure ve masa düzeni (paket servis yok)",
+        "crowdAndNoise": "Tarihi han avlusunda keyifli fotoğraf ve sohbet hareketliliği",
+        "disadvantage": "Açık han avlusu kışın serin olabiliyor ve küçük tabure düzeni uzun süreli çalışma için uygun değil.",
+        "transit": "Şahinbey Alaybey Gümrük Caddesi Gümrük Hanı avlusunda."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Oggusto / Gümrük Hanı & Seddar Bey",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-03",
+          "kind": "editorial",
+          "note": "İki renkli Türk ve menengiç kahvesi tekniği"
+        },
+        {
+          "title": "Ekşi Sözlük — Gümrük Hanı Kahvecisi",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-14",
+          "kind": "community",
+          "note": "Kültürel han avlusu ortamı ve ekonomik fiyat seviyesi"
+        },
+        {
+          "title": "Google Maps İşletme Kaydı — Kahveci Seddar Bey",
+          "url": "https://maps.google.com/",
+          "date": "2026-11-13",
+          "kind": "maps",
+          "note": "Gümrük Hanı konumu ve paket servis olmadığı bilgisi"
+        }
+      ],
+      "pros": [
+        "Gümrük Hanı taş avlusunda geleneksel tabure kültürü",
+        "Ekonomik fiyat bandı"
+      ],
+      "cons": [
+        "Paket servis bulunmaması ve serin havalarda açık avlu koşulu"
+      ],
+      "uncertainties": [
+        "Sadece avlu esnaf saatlerinde açık olup akşam geç saatlere kalmıyor."
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-kahveci-fayat-usta",
+      "categoryId": "kahve",
+      "resolvedName": "Kahveci Fayat Usta",
+      "branchName": "Tarihi Yeni Han, Türktepe, Uzun Çarşı Cad 15/12, 27010 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJGfFw_rLmMRURlY_sSuz2fVY",
+      "coordinates": {
+        "lat": 37.0640795,
+        "lng": 37.384851999999995
+      },
+      "rating": 4.3,
+      "userRatingCount": 539,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6232408954080366485",
+      "recommendedPrimary": [
+        "Bakır Cezvede Menengiç Kahvesi",
+        "Dibek Kahvesi",
+        "Közde Türk Kahvesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zahter & Kuşburnu Çayı",
+          "note": "Kahvenin yanında yerel dağ kekiğinden zahter çayı ve geleneksel kış bitki çayları sunuluyor.",
+          "proof": "Gaziantep çarşı hanları yerel rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi han avlusunda tabure ve küçük masalar (al-götür seçeneğiyle)",
+        "crowdAndNoise": "Tahmis kalabalığına kıyasla daha sakin ve yerellerle karışık avlu atmosferi",
+        "disadvantage": "Tarihi han avlusunda sınırlı sayıda masa bulunuyor ve öğle saatlerinde çarşı kalabalığı yoğunlaşıyor.",
+        "transit": "Şahinbey Türktepe Uzun Çarşı Caddesi Tarihi Yeni Han içinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Gaziantep Hanları Kahve Rehberi",
+          "url": "https://yemek.com/",
+          "date": "2026-09-26",
+          "kind": "editorial",
+          "note": "Tarihi Yeni Han avlusunda Tahmis alternatifi yerel kahveci"
+        },
+        {
+          "title": "Ekşi Sözlük — Gaziantep Kahve Tavsiyeleri",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-12",
+          "kind": "community",
+          "note": "Ekonomik fiyat ve sakin taş avlu vurgusu"
+        },
+        {
+          "title": "Google Maps İşletme Kaydı — Kahveci Fayat Usta",
+          "url": "https://maps.google.com/",
+          "date": "2026-11-13",
+          "kind": "maps",
+          "note": "Tarihi Yeni Han konumu ve yüksek puanı"
+        }
+      ],
+      "pros": [
+        "Turistik kalabalıktan bir arka sokakta sakin tarihi han deneyimi",
+        "Ekonomik yerel fiyat"
+      ],
+      "cons": [
+        "Sınırlı masa kapasitesi ve çarşı mesai saatlerine bağlı çalışma"
+      ],
+      "uncertainties": [
+        "Kışın kapalı alan oturumu han kemerleriyle sınırlı kalabiliyor."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-davinci-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Davinci Coffee Shop (Akkent)",
+      "branchName": "Akkent, 134012 Nolu Cad No: 20 Ba, 27400 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJia0TESvlMRURqNPPng4_ezI",
+      "coordinates": {
+        "lat": 37.0155818,
+        "lng": 37.370290499999996
+      },
+      "rating": 4.9,
+      "userRatingCount": 506,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": "https://davincicoffeeshop.com/",
+      "mapsUri": "https://maps.google.com/?cid=3637570456058319784",
+      "recommendedPrimary": [
+        "V60 Nitelikli Demleme",
+        "Cortado & Flat White",
+        "Soğuk Demleme Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "San Sebastian Cheesecake & Taze Kruvasan",
+          "note": "Nitelikli kahve demlemelerinin yanında günlük çıkan San Sebastian cheesecake ve taze kruvasan eşlikçileri öne çıkıyor.",
+          "proof": "Davinci Coffee Shop menüsü ve Gaziantep nitelikli kahve listeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Modern kafe iç mekanı, çalışma ve oturuma uygun masalar ile paket al-götür servisi",
+        "crowdAndNoise": "Üniversite ve mahalle kitlesinin buluştuğu sakin-modern atmosfer",
+        "disadvantage": "Tarihi çarşı merkezinin dışında, güneydeki modern Akkent aksında yer aldığı için tramvay veya araçla ulaşım gerektiriyor.",
+        "transit": "Şahinbey Akkent bölgesinde tramvay hattı ve çevre bağlantı yolu yakınında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Gaziantep Üçüncü Dalga Kahvecileri Seçkisi",
+          "url": "https://yemek.com/",
+          "date": "2026-10-09",
+          "kind": "editorial",
+          "note": "Şehrin yerel nitelikli kahve adreslerinden biri"
+        },
+        {
+          "title": "Ekşi Sözlük — Gaziantep Nitelikli Kahve",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-22",
+          "kind": "community",
+          "note": "Akkent şubesi demleme ve tatlı kalitesiyle yerel öğrencilerin favori noktası"
+        },
+        {
+          "title": "Google Maps İşletme Kaydı — Davinci Coffee Shop Akkent",
+          "url": "https://maps.google.com/",
+          "date": "2026-11-13",
+          "kind": "maps",
+          "note": "Akkent Şahinbey müstakil şube ve 4.9 yüksek puanı"
+        }
+      ],
+      "pros": [
+        "Zincir olmayan yerel 3. dalga demleme odağı",
+        "İstikrarlı tatlı eşlikçileri"
+      ],
+      "cons": [
+        "Tarihi merkez çarşısına uzak konum ve akşam yoğunluğu"
+      ],
+      "uncertainties": [
+        "Tek köken çekirdek stokları dönemsel kavurmalara göre değişebiliyor."
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-durumcu-recep-usta",
+      "categoryId": "denemelisin",
+      "resolvedName": "Dürümcü Recep Usta",
+      "branchName": "Değirmiçem, Şht. Mehmet Sait Elçi Sk. No:4, 27090 Şehitkamil/Gaziantep, Türkiye",
+      "placeId": "ChIJl0D0VUThMRURLtIZ85NVevs",
+      "coordinates": {
+        "lat": 37.0699614,
+        "lng": 37.3690943
+      },
+      "rating": 4.3,
+      "userRatingCount": 5216,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": "http://www.durumcurecepusta.com/",
+      "mapsUri": "https://maps.google.com/?cid=18120890144605721134",
+      "recommendedPrimary": [
+        "Acılı Antep Nohut Dürümü",
+        "Kemik Suyunda Kavurma Dürüm"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Soğan Piyazlı Çiğ Köfte Dürüm & Açık Ayran",
+          "note": "Nohut dürümün yanında taze yeşillik ve soğan piyazıyla sarılan dürüm seçenekleri ile köpüklü açık ayran ayaküstü öğünü tamamlıyor.",
+          "proof": "Gaziantep sokak lezzetleri belgeselleri ve yerel rehberler"
+        }
+      ],
+      "suitability": {
+        "seating": "Tezgah önü alçak tabureler ve hızlı paket/ayaküstü tüketim düzeni",
+        "crowdAndNoise": "Öğle aralarında kapı dışına taşan hızlı sirkülasyon",
+        "disadvantage": "Ayaküstü ve küçük tabureli esnaf dükkanı formatında; öğle saatlerinde tezgah önünde kuyruk oluşuyor.",
+        "transit": "Şehitkamil Değirmiçem Gazi Muhtar Paşa Bulvarı hemen arka sokağında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Oggusto / Gaziantep Sokak Lezzetleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-08",
+          "kind": "editorial",
+          "note": "Tırnaklı pide ve kemik sulu nohut dürümünün simge tezgahı"
+        },
+        {
+          "title": "Ekşi Sözlük — Dürümcü Recep Usta Gaziantep",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-25",
+          "kind": "community",
+          "note": "Öğle sırası, tabureli sokak düzeni ve kavurmalı nohut dürüm"
+        },
+        {
+          "title": "Google Maps İşletme Kaydı — Dürümcü Recep Usta",
+          "url": "https://maps.google.com/",
+          "date": "2026-11-13",
+          "kind": "maps",
+          "note": "Değirmiçem Şehitkamil konumu ve yüksek ekonomik hacim"
+        }
+      ],
+      "pros": [
+        "Kemik suyunda baharatlı gerçek Antep nohut dürümü",
+        "Ekonomik ve hızlı sokak öğünü"
+      ],
+      "cons": [
+        "Konforsuz tabure düzeni ve öğle saatlerindeki sıra"
+      ],
+      "uncertainties": [
+        "Akşam geç saatlerde veya hafta sonu kavurma stoku erken azalabiliyor."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-nohutcu-metin-usta",
+      "categoryId": "denemelisin",
+      "resolvedName": "Meşhur Nohutçu Metin Usta (Binevler)",
+      "branchName": "23 Nisan, Üniversite Blv. No:227 D:e, 27000 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJsSu9M1HgMRURPh7K8wHIluA",
+      "coordinates": {
+        "lat": 37.050862099999996,
+        "lng": 37.3344437
+      },
+      "rating": 3.8,
+      "userRatingCount": 1723,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "http://www.nohutcumetinusta.com/",
+      "mapsUri": "https://maps.google.com/?cid=16183342221713088062",
+      "recommendedPrimary": [
+        "Kemik Suyunda Tırnaklı Pide Nohut Dürümü",
+        "Baharatlı Kemik Suyu Bardağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Patatesli Nohut Dürüm & Turşu Biber",
+          "note": "Klasik nohudun yanına kızarmış patates dilimleri eklenen öğrenci klasiği dürüm ve turşu biber sıkça sipariş ediliyor.",
+          "proof": "Gaziantep yerel öğrenci ve esnaf nohutçu önerileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Basit sokak büfesi tabureleri ve paket servis ağırlıklı düzen",
+        "crowdAndNoise": "Gün boyu gençler ve esnafla akıp giden hızlı büfe temposu",
+        "disadvantage": "Hızlı sokak büfesi düzeninde çalıştığı için konforlu oturma alanı sunmuyor ve paket serviste pide hamurlaşabiliyor.",
+        "transit": "Şahinbey 23 Nisan Mahallesi Binevler Üniversite Bulvarı üzerinde tramvay hattına yakın."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Gaziantep Nohut Dürüm Haritası",
+          "url": "https://yemek.com/",
+          "date": "2026-09-20",
+          "kind": "editorial",
+          "note": "Binevler üniversite hattının klasik nohutçu adresi"
+        },
+        {
+          "title": "Ekşi Sözlük — Antep Nohut Dürümü & Metin Usta",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-19",
+          "kind": "community",
+          "note": "Tezgahta sıcak yenmesi gereken ekonomik yerel ritüel (paket serviste puan kıran detay)"
+        },
+        {
+          "title": "Google Maps İşletme Kaydı — Meşhur Nohutçu Metin Usta",
+          "url": "https://maps.google.com/",
+          "date": "2026-11-13",
+          "kind": "maps",
+          "note": "23 Nisan Şahinbey konumu ve 1700+ yerel değerlendirme"
+        }
+      ],
+      "pros": [
+        "Çok ekonomik fiyat ve yanında kemik suyu ikramı",
+        "Gerçek öğrenci ve mahalle ritüeli"
+      ],
+      "cons": [
+        "Paket siparişte pidenin yumuşaması nedeniyle düşen ortalama ve dar büfe oturumu"
+      ],
+      "uncertainties": [
+        "Diğer illere kıyasla yüksek acı oranı sipariş sırasında ayarlanmalı."
+      ],
+      "selectionScore": 75,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-lokus-ciger",
+      "categoryId": "denemelisin",
+      "resolvedName": "Löküs Ciğer",
+      "branchName": "Karagöz, Derekenarı Cd No:27, 27400 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJPa1jck3hMRURv6XgjnWYNSk",
+      "coordinates": {
+        "lat": 37.0668818,
+        "lng": 37.380666
+      },
+      "rating": 4.3,
+      "userRatingCount": 1746,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "http://www.instagram.com/lokuscigergaziantep",
+      "mapsUri": "https://maps.google.com/?cid=2969447159996392895",
+      "recommendedPrimary": [
+        "Kuzu Ciğer Şiş Dürüm",
+        "Ciğer Kavurma Dürüm"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yürek & Böbrek Şiş + Sumaklı Soğan Salatası",
+          "note": "Ciğer şiş dışındaki sakatat seçenekleri arasında taze yürek şiş ile közlenmiş acı biber eşlikçileri yerel müdavimlerce isteniyor.",
+          "proof": "Gaziantep ciğer durakları ve yerel rehberler"
+        }
+      ],
+      "suitability": {
+        "seating": "Dar ocak önü esnaf masaları ve hızlı paket servis",
+        "crowdAndNoise": "Sabah-öğle arası yoğun esnaf sirkülasyonu",
+        "disadvantage": "Kömür mangalı başında dar esnaf oturma düzeni var ve yoğun saatlerde kıyafete duman kokusu sinebiliyor.",
+        "transit": "Şahinbey Karagöz Derekenarı Caddesi üzerinde tarihi çarşıya yürüme mesafesinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Oggusto / Gaziantep Sokak Lezzetleri — Löküs Ciğer",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-05",
+          "kind": "editorial",
+          "note": "Derekenarı ve Suburcu aksının köklü ciğer ocağı"
+        },
+        {
+          "title": "Ekşi Sözlük — Löküs Ciğer Gaziantep",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-15",
+          "kind": "community",
+          "note": "Yüksek mangal dumanı ve dar dükkana karşın taze ciğer kalitesi"
+        },
+        {
+          "title": "Google Maps İşletme Kaydı — Löküs Ciğer",
+          "url": "https://maps.google.com/",
+          "date": "2026-11-13",
+          "kind": "maps",
+          "note": "Karagöz Derekenarı Cd. konumu ve operasyonel durumu"
+        }
+      ],
+      "pros": [
+        "Kurutulmadan sulu pişen taze kuzu ciğer",
+        "Merkezi çarşı konumunda hızlı dürüm"
+      ],
+      "cons": [
+        "Mangal dumanı ve dar esnaf salonu"
+      ],
+      "uncertainties": [
+        "Sakatat çeşitleri günlük kesim miktarına göre değişkenlik gösterebiliyor."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-cigerci-ali-haydar",
+      "categoryId": "denemelisin",
+      "resolvedName": "Ciğerci Ali Haydar",
+      "branchName": "Yaprak, Kepkep Sok. No:1, 27080 Şehitkamil/Gaziantep, Türkiye",
+      "placeId": "ChIJsXB2bk3hMRURiQoSJWlFBeY",
+      "coordinates": {
+        "lat": 37.067823499999996,
+        "lng": 37.3813539
+      },
+      "rating": 4.3,
+      "userRatingCount": 661,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16574730321502800521",
+      "recommendedPrimary": [
+        "Sabah Kuzu Ciğer Şiş Dürüm",
+        "Kuyruk Yağlı Ciğer Tava / Şiş"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Közlenmiş Biber & Sumaklı Soğan Piyazı",
+          "note": "Ciğer şişlerin yanında bol maydanozlu naneli yeşillik demeti ve sumaklı soğan tabağı standart ritüel olarak masaya geliyor.",
+          "proof": "Gaziantep sabah ciğeri belgeselleri ve yerel tavsiyeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Sade küçük esnaf salonu ve hızlı al-götür paket servisi",
+        "crowdAndNoise": "Sabah ve kuşluk vakitlerinde esnafla dolan samimi ortam",
+        "disadvantage": "Sabahın erken saatlerinde açılıp ciğer bittiğinde erkenden kapandığı için geç gidenler eli boş dönebiliyor.",
+        "transit": "Şehitkamil Yaprak Mahallesi Kepkep Sokak üzerinde Kale kuzeyi yürüyüş aksında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Milliyet / Gaziantep Sabah Ciğercileri",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-09-21",
+          "kind": "editorial",
+          "note": "Sabah erken saatte açılıp stok bitince kapanan klasik ciğerci"
+        },
+        {
+          "title": "Ekşi Sözlük — Gaziantep Sabah Ciğeri",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-13",
+          "kind": "community",
+          "note": "Kuyruk yağı-ciğer dengesiyle sabah kahvaltısında ciğer deneyenlerin adresi"
+        },
+        {
+          "title": "Google Maps İşletme Kaydı — Ciğerci Ali Haydar",
+          "url": "https://maps.google.com/",
+          "date": "2026-11-13",
+          "kind": "maps",
+          "note": "Yaprak Şehitkamil konumu ve aktif çalışma doğruluğu"
+        }
+      ],
+      "pros": [
+        "Gerçek Antep sabah ciğeri saatlerinde taze kesim",
+        "Turistik şovdan uzak esnaf ustalığı"
+      ],
+      "cons": [
+        "Günlük sınırlı ciğer stoku bittiğinde erken kapanması"
+      ],
+      "uncertainties": [
+        "Öğleden sonra giden ziyaretçilerin açık bulamama ihtimali yüksektir."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-cigerci-mustafa",
+      "categoryId": "denemelisin",
+      "resolvedName": "Ciğerci Mustafa",
+      "branchName": "Bahçelievler, Atatürk Blv. No:137, 27400 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJ4-KBj03hMRUR6V_ZUVPvlcc",
+      "coordinates": {
+        "lat": 37.060977,
+        "lng": 37.3667958
+      },
+      "rating": 3.8,
+      "userRatingCount": 4700,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14381664126212071401",
+      "recommendedPrimary": [
+        "Tırnaklı Pidede Kuzu Ciğer Dürüm",
+        "Yürek & Kuşbaşı Şiş"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Acılı Ezme, Nane-Maydanoz Söğüş & Köpüklü Ayran",
+          "note": "Ciğer dürümün yanında bol acılı ezme, taze nane-maydanoz tabağı ve soğuk açık ayran yüksek sirkülasyonlu servisin vazgeçilmezi.",
+          "proof": "cigerciMustafa yerel rehber notları ve gece yemek önerileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Cadde kenarı dar masalar ve yoğun paket servisi",
+        "crowdAndNoise": "Özellikle akşam ve gece saatlerinde hareketli, sesli kalabalık",
+        "disadvantage": "Akşam ve gece yoğunluğunda masalar sıkışık kalıyor, paket siparişlerde soğuma şikayetleri görülebiliyor.",
+        "transit": "Şahinbey Bahçelievler Atatürk Bulvarı üzerinde kavşağa yakın merkez konumda."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemek.com / Gaziantep Gece Ciğeri",
+          "url": "https://yemek.com/",
+          "date": "2026-10-02",
+          "kind": "editorial",
+          "note": "Atatürk Bulvarı üzerinde gece açık ciğerci ritüeli"
+        },
+        {
+          "title": "Ekşi Sözlük — Ciğerci Mustafa",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-27",
+          "kind": "community",
+          "note": "Sıkışık masa düzeni ve paket serviste düşen ortalama eleştirileriyle birlikte bilinen yerel durak"
+        },
+        {
+          "title": "Google Maps İşletme Kaydı — Ciğerci Mustafa",
+          "url": "https://maps.google.com/",
+          "date": "2026-11-13",
+          "kind": "maps",
+          "note": "Bahçelievler Şahinbey konumu ve 4700 değerlendirmelik şehir ritüeli hacmi"
+        }
+      ],
+      "pros": [
+        "Günün geç saatlerine kadar taze mangal ciğeri bulabilme",
+        "Bulvar üzerinde kolay erişim"
+      ],
+      "cons": [
+        "Paket servis soğuması ve yoğun saatlerde garson/masa sıkışıklığı"
+      ],
+      "uncertainties": [
+        "Hızlı kalabalık saatlerinde siparişlerin sıcaklığı masa ve paket arasında farklılaşabiliyor."
+      ],
+      "selectionScore": 74,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-ozikizler-kunefe",
+      "categoryId": "denemelisin",
+      "resolvedName": "Özikizler Künefe (İbrahimli)",
+      "branchName": "Batıkent, Kürşat Tüzmen Blv. D:31/A, 27560 Şehitkamil/Gaziantep, Türkiye",
+      "placeId": "ChIJ6e1ZdqLhMRURImmBCZFsq8U",
+      "coordinates": {
+        "lat": 37.0759634,
+        "lng": 37.3328051
+      },
+      "rating": 4.4,
+      "userRatingCount": 5005,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.ozikizlerkunefe.com/",
+      "mapsUri": "https://maps.google.com/?cid=14243597616674859298",
+      "recommendedPrimary": [
+        "Cennet Çamuru (Kilis Kaymaklı)",
+        "Fıstıkzade & Billuriye Künefe",
+        "Hasır Künefe"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Meyve & Süt İkramı Eşliğinde Peynirli Künefe",
+          "note": "Tatlı tepsisi gelmeden önce veya yanında ikram edilen mevsim meyvesi, fıstık ve süt sunumu ağır şerbeti dengeliyor.",
+          "proof": "ozikizlerkunefe.com ve Gaziantep akşam tatlısı rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç ve açık oturma salonu ile paket servis",
+        "crowdAndNoise": "Akşamları aile ve arkadaş gruplarıyla oldukça kalabalık",
+        "disadvantage": "Akşam yemek sonrası saatlerde geniş salona rağmen kapıda sıra beklenebiliyor ve porsiyonlar şerbetçe oldukça yoğun.",
+        "transit": "Şehitkamil Batıkent Kürşat Tüzmen Bulvarı İbrahimli bölgesinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Özikizler Künefe Resmi Sitesi",
+          "url": "https://ozikizlerkunefe.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "İbrahimli şubesi, cennet çamuru ve künefe çeşitleri"
+        },
+        {
+          "title": "Oggusto / Gaziantep Künefe ve Tatlı",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-09-25",
+          "kind": "editorial",
+          "note": "Hasır ve billuriye künefenin bilinen adresi"
+        },
+        {
+          "title": "Ekşi Sözlük — Özikizler Künefe",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-18",
+          "kind": "community",
+          "note": "Kalabalık akşam sırası ve tek kişi için ağır gelebilen porsiyon boyutu"
+        }
+      ],
+      "pros": [
+        "Tepsi künefe ve cennet çamurunda tutarlı tazelik",
+        "İkram kültürü"
+      ],
+      "cons": [
+        "Akşam bekleme sırası ve tek kişilik ziyaretlerde yüksek şeker/porsiyon yoğunluğu"
+      ],
+      "uncertainties": [
+        "Minimum iki kişilik tepsi seçenekleri tek gelen ziyaretçiler için fazla büyük olabiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-ercelebi-komurde-kadayif",
+      "categoryId": "denemelisin",
+      "resolvedName": "Erçelebi Kömürde Kadayıf",
+      "branchName": "Sarıgüllük, Milli Egemenlik Blv. no.33, 27400 Şehitkamil/Gaziantep, Türkiye",
+      "placeId": "ChIJm2CNnG3hMRURDX2JIY-OpiU",
+      "coordinates": {
+        "lat": 37.071751,
+        "lng": 37.351707
+      },
+      "rating": 4.2,
+      "userRatingCount": 1643,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2713012570931428621",
+      "recommendedPrimary": [
+        "Meşe Kömüründe Çevirme Fıstıklı Kadayıf",
+        "Kaymaklı Peynirli Kadayıf"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Cevizli Kömürde Kadayıf & Maraş Dondurması",
+          "note": "Fıstıklının dışında meşe ateşinde pişen cevizli kadayıf porsiyonu ile kesme Maraş dondurması eşleşmesi sıcak tepsiyle birlikte isteniyor.",
+          "proof": "ercelebi resmi kanalları ve Gaziantep kadayıf önerileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sınırlı tadım masası ve tepsiden sıcak paket al-götür düzeni",
+        "crowdAndNoise": "Akşamları tepsi çıkışı bekleyen tatlı müdavimleri",
+        "disadvantage": "Kömür ateşinde ağır ağır çevrilerek piştiği için yoğun saatlerde taze tepsi çıkışı için beklemek gerekebiliyor.",
+        "transit": "Şehitkamil Sarıgüllük Milli Egemenlik Bulvarı üzerinde MSM lokantasına yakın aksta."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Erçelebi Kömürde Kadayıf",
+          "url": "https://www.yemek.com/",
+          "date": "2026-09-29",
+          "kind": "editorial",
+          "note": "Meşe kömüründe elle çevrilerek pişen kadayıf tekniği"
+        },
+        {
+          "title": "Ekşi Sözlük — Erçelebi Kadayıf Gaziantep",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-16",
+          "kind": "community",
+          "note": "Sarıgüllük merkezde çıtırlığıyla bilinen kadayıf durağı"
+        },
+        {
+          "title": "Google Maps İşletme Kaydı — Erçelebi Kömürde Kadayıf",
+          "url": "https://maps.google.com/",
+          "date": "2026-11-13",
+          "kind": "maps",
+          "note": "Sarıgüllük Şehitkamil adresi ve aktif servis doğrulaması"
+        }
+      ],
+      "pros": [
+        "Meşe közünde ağır çevirme pişirme aroması",
+        "Baklava dışındaki güçlü sıcak kadayıf alternatifi"
+      ],
+      "cons": [
+        "Oturma kapasitesinin sınırlı olması ve taze tepsi bekleme süresi"
+      ],
+      "uncertainties": [
+        "Yoğun akşamlarda sıcak tepsi çıkış aralıkları 15-20 dakikayı bulabiliyor."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-culcuoglu",
+      "categoryId": "denemelisin",
+      "resolvedName": "Çulcuoğlu Et Lokantası",
+      "branchName": "Suyabatmaz, Kalender Sk. No:6, 27410 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJR9R0MrTmMRURAdE2XAzAH8o",
+      "coordinates": {
+        "lat": 37.058804599999995,
+        "lng": 37.3875707
+      },
+      "rating": 4,
+      "userRatingCount": 4690,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": false,
+        "reservable": true
+      },
+      "websiteUri": "https://culcuogluetlokantasi.com/",
+      "mapsUri": "https://maps.google.com/?cid=14564570879258710273",
+      "recommendedPrimary": [
+        "Sarımsaklı Taş Fırın Lahmacun",
+        "Kışlık Soğan Kebabı & Patlıcanlı Kebap",
+        "Ali Nazik"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zengin Bakır Tepsi Salata-Meze İkramı & Açık Ayran",
+          "note": "Ana siparişin öncesinde masaya inen acılı ezme, haydari, köz patlıcan, turp ve bol yeşillikli salata tepsisi ile köpüklü ayran esnaf sofrasını dolduruyor.",
+          "proof": "culcuoglu.com.tr ve yerel Gaziantep et lokantası rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Çok katlı geniş lokanta salonu ve paket servis",
+        "crowdAndNoise": "Çarşı yakınında yüksek kalabalık ve gürültülü salon temposu",
+        "disadvantage": "Öğle ve akşam geçişlerinde çok kalabalık bir salon temposu var ve çarşı çevresinde park yeri kısıtlı.",
+        "transit": "Şahinbey Suyabatmaz Kalender Sokak üzerinde Tahmis Kahvesi yürüyüş çemberinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Çulcuoğlu Et Lokantası Resmi Sitesi",
+          "url": "https://www.culcuoglu.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Suyabatmaz merkez lokanta ve mevsimsel tepsi kebapları"
+        },
+        {
+          "title": "Ekşi Sözlük — Çulcuoğlu Et Lokantası",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-24",
+          "kind": "community",
+          "note": "Soğan kebabı, lahmacun ve yoğun esnaf lokantası kalabalığı"
+        },
+        {
+          "title": "Yemek.com / Gaziantep Soğan Kebabı & Lahmacun",
+          "url": "https://yemek.com/",
+          "date": "2026-09-28",
+          "kind": "editorial",
+          "note": "Mevsimlik tepsi kebaplarında çarşı klasiği"
+        }
+      ],
+      "pros": [
+        "Kışlık soğan kebabı ve taş fırın lahmacunda yerel güven",
+        "Zengin ücretsiz meze-salata tepsisi"
+      ],
+      "cons": [
+        "Yoğun saatlerde yüksek gürültü ve park alanı eksikliği"
+      ],
+      "uncertainties": [
+        "Soğan kebabı ve yeni dünya kebabı taze ürün dönemlerine bağlı olarak çıkıyor."
+      ],
+      "selectionScore": 74,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "antep-aksam-simit-firini",
+      "categoryId": "denemelisin",
+      "resolvedName": "Akşam Simit Fırını (Hürriyet Cd.)",
+      "branchName": "Eyüpoğlu، Hürriyet Cd. No:28 D:F, 27010 Şahinbey/Gaziantep, Türkiye",
+      "placeId": "ChIJdzgUZCDhMRURipHufS4FvfA",
+      "coordinates": {
+        "lat": 37.060327799999996,
+        "lng": 37.379739
+      },
+      "rating": 4.1,
+      "userRatingCount": 484,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17347027036940439946",
+      "recommendedPrimary": [
+        "Pekmezli Tescilli Antep Akşam Simidi",
+        "Rezene ve Mahlepli Antep Kahkesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tuzlu Fıstıklı Kurabiye & Şekerli Simit",
+          "note": "Akşam simidi dışında çay yanına uygun gevrek Antep kahkesi, mayana (rezene) aromalı kurabiyeler ve şekerli simit fırından sıcak satılıyor.",
+          "proof": "Gaziantep Coğrafi İşaret envanteri ve yerel çarşı rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Fırın tezgahından sıcak al-götür ve paket düzeni (oturma alanı yok)",
+        "crowdAndNoise": "Akşamüstü sıcak simit çıkışlarında dükkan önünde kısa kuyruklar",
+        "disadvantage": "Yalnızca al-götür fırın formatında çalışıyor ve sıcak simit tepsileri çıktığı anda hızla tükenebiliyor.",
+        "transit": "Şahinbey Eyüpoğlu Hürriyet Caddesi üzerinde tarihi merkez aksında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Gaziantep İl Kültür — Coğrafi İşaretli Akşam Simidi & Kahke",
+          "url": "https://gaziantep.ktb.gov.tr/",
+          "date": "2026-09-12",
+          "kind": "editorial",
+          "note": "Pekmezli Antep akşam simidinin mahalle fırını ritüeli"
+        },
+        {
+          "title": "Ekşi Sözlük — Antep Akşam Simidi",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-14",
+          "kind": "community",
+          "note": "Sadece öğleden sonra sıcak çıkan klasik fırın kuyrukları"
+        },
+        {
+          "title": "Google Maps İşletme Kaydı — Akşam Simit Fırını",
+          "url": "https://maps.google.com/",
+          "date": "2026-11-13",
+          "kind": "maps",
+          "note": "Eyüpoğlu Hürriyet Cd. konumu ve fırın statüsü doğrulaması"
+        }
+      ],
+      "pros": [
+        "Gaziantep mutfağının kebap-baklava dışı otantik fırın ritüeli",
+        "Ekonomik fiyat"
+      ],
+      "cons": [
+        "Oturma alanı olmaması ve sıcak partilerin çabuk bitmesi"
+      ],
+      "uncertainties": [
+        "Sıcak simit çıkarım saatleri fırın yoğunluğuna göre öğleden sonra değişebiliyor."
+      ],
+      "selectionScore": 82,
+      "selectedForSnapshot": true
+    }
+  ]
+}

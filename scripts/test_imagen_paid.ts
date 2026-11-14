@@ -1,9 +1,10 @@
+if (!process.env.GEMINI_API_KEY) throw new Error('GEMINI_API_KEY is required; no request sent.');
 import fs from 'fs';
 import path from 'path';
 
 async function testFetch() {
     console.log("Starting test fetch...");
-    const apiKey = 'AIzaSyCVEAM5S-_4kUEp9Cetof5CEn-rSXOfRC4';
+    const apiKey = process.env.GEMINI_API_KEY;
     const url = `https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict?key=${apiKey}`;
 
     try {

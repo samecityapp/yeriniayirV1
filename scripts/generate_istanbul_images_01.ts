@@ -1,3 +1,4 @@
+if (!process.env.GEMINI_API_KEY) throw new Error('GEMINI_API_KEY is required; no request sent.');
 import { createClient } from '@supabase/supabase-js';
 import dotenv from 'dotenv';
 import path from 'path';
@@ -8,7 +9,7 @@ const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
 const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
 const supabase = createClient(supabaseUrl, supabaseKey);
 
-const API_KEY = process.env.GEMINI_API_KEY || 'AIzaSyCVEAM5S-_4kUEp9Cetof5CEn-rSXOfRC4';
+const API_KEY = process.env.GEMINI_API_KEY;
 const URL = `https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict?key=${API_KEY}`;
 
 async function generateImage(prompt: string, filename: string): Promise<string> {

@@ -1,0 +1,2 @@
+require('dotenv').config({path:'.env.local',quiet:true});require('./research-ts-loader.cjs');
+require('../lib/pilot/googlePlaces/run.ts').runSelectedGoogleRatings(false).then(r=>console.log(JSON.stringify({status:r.status,keyConfigured:r.keyConfigured,approvalPresent:r.approvalPresent,requestsUsed:r.requestsUsed,results:r.results.map(x=>({venueId:x.venueId,status:x.status,ratingAvailable:x.rating!==null})),storedGoogleContent:r.storedGoogleContent},null,2))).catch(()=>{console.error('Places setup check failed; details hidden');process.exitCode=1;});

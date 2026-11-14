@@ -1,0 +1,50 @@
+-- Emergency temporary write hold. NOT applied to production.
+-- Leaves existing read policies and policies themselves intact.
+-- Blocks INSERT/UPDATE/DELETE for anon and authenticated; service-role bypass is unaffected.
+-- Client-side admin edits, uploads and public analytics inserts pause until rollback or a reviewed admin policy.
+BEGIN;
+SET LOCAL lock_timeout = '3s';
+SET LOCAL statement_timeout = '15s';
+CREATE POLICY "ya_v1_hold_insert" ON "public"."analytics_events" AS RESTRICTIVE FOR INSERT TO anon, authenticated WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_update" ON "public"."analytics_events" AS RESTRICTIVE FOR UPDATE TO anon, authenticated USING (false) WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_delete" ON "public"."analytics_events" AS RESTRICTIVE FOR DELETE TO anon, authenticated USING (false);
+CREATE POLICY "ya_v1_hold_insert" ON "public"."article_media" AS RESTRICTIVE FOR INSERT TO anon, authenticated WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_update" ON "public"."article_media" AS RESTRICTIVE FOR UPDATE TO anon, authenticated USING (false) WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_delete" ON "public"."article_media" AS RESTRICTIVE FOR DELETE TO anon, authenticated USING (false);
+CREATE POLICY "ya_v1_hold_insert" ON "public"."articles" AS RESTRICTIVE FOR INSERT TO anon, authenticated WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_update" ON "public"."articles" AS RESTRICTIVE FOR UPDATE TO anon, authenticated USING (false) WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_delete" ON "public"."articles" AS RESTRICTIVE FOR DELETE TO anon, authenticated USING (false);
+CREATE POLICY "ya_v1_hold_insert" ON "public"."group_hotels" AS RESTRICTIVE FOR INSERT TO anon, authenticated WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_update" ON "public"."group_hotels" AS RESTRICTIVE FOR UPDATE TO anon, authenticated USING (false) WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_delete" ON "public"."group_hotels" AS RESTRICTIVE FOR DELETE TO anon, authenticated USING (false);
+CREATE POLICY "ya_v1_hold_insert" ON "public"."groups" AS RESTRICTIVE FOR INSERT TO anon, authenticated WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_update" ON "public"."groups" AS RESTRICTIVE FOR UPDATE TO anon, authenticated USING (false) WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_delete" ON "public"."groups" AS RESTRICTIVE FOR DELETE TO anon, authenticated USING (false);
+CREATE POLICY "ya_v1_hold_insert" ON "public"."hotels" AS RESTRICTIVE FOR INSERT TO anon, authenticated WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_update" ON "public"."hotels" AS RESTRICTIVE FOR UPDATE TO anon, authenticated USING (false) WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_delete" ON "public"."hotels" AS RESTRICTIVE FOR DELETE TO anon, authenticated USING (false);
+CREATE POLICY "ya_v1_hold_insert" ON "public"."offers" AS RESTRICTIVE FOR INSERT TO anon, authenticated WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_update" ON "public"."offers" AS RESTRICTIVE FOR UPDATE TO anon, authenticated USING (false) WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_delete" ON "public"."offers" AS RESTRICTIVE FOR DELETE TO anon, authenticated USING (false);
+CREATE POLICY "ya_v1_hold_insert" ON "public"."price_tags" AS RESTRICTIVE FOR INSERT TO anon, authenticated WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_update" ON "public"."price_tags" AS RESTRICTIVE FOR UPDATE TO anon, authenticated USING (false) WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_delete" ON "public"."price_tags" AS RESTRICTIVE FOR DELETE TO anon, authenticated USING (false);
+CREATE POLICY "ya_v1_hold_insert" ON "public"."restaurant_categories" AS RESTRICTIVE FOR INSERT TO anon, authenticated WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_update" ON "public"."restaurant_categories" AS RESTRICTIVE FOR UPDATE TO anon, authenticated USING (false) WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_delete" ON "public"."restaurant_categories" AS RESTRICTIVE FOR DELETE TO anon, authenticated USING (false);
+CREATE POLICY "ya_v1_hold_insert" ON "public"."restaurant_notes" AS RESTRICTIVE FOR INSERT TO anon, authenticated WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_update" ON "public"."restaurant_notes" AS RESTRICTIVE FOR UPDATE TO anon, authenticated USING (false) WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_delete" ON "public"."restaurant_notes" AS RESTRICTIVE FOR DELETE TO anon, authenticated USING (false);
+CREATE POLICY "ya_v1_hold_insert" ON "public"."restaurants" AS RESTRICTIVE FOR INSERT TO anon, authenticated WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_update" ON "public"."restaurants" AS RESTRICTIVE FOR UPDATE TO anon, authenticated USING (false) WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_delete" ON "public"."restaurants" AS RESTRICTIVE FOR DELETE TO anon, authenticated USING (false);
+CREATE POLICY "ya_v1_hold_insert" ON "public"."search_terms" AS RESTRICTIVE FOR INSERT TO anon, authenticated WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_update" ON "public"."search_terms" AS RESTRICTIVE FOR UPDATE TO anon, authenticated USING (false) WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_delete" ON "public"."search_terms" AS RESTRICTIVE FOR DELETE TO anon, authenticated USING (false);
+CREATE POLICY "ya_v1_hold_insert" ON "public"."tags" AS RESTRICTIVE FOR INSERT TO anon, authenticated WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_update" ON "public"."tags" AS RESTRICTIVE FOR UPDATE TO anon, authenticated USING (false) WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_delete" ON "public"."tags" AS RESTRICTIVE FOR DELETE TO anon, authenticated USING (false);
+CREATE POLICY "ya_v1_hold_insert" ON "storage"."objects" AS RESTRICTIVE FOR INSERT TO anon, authenticated WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_update" ON "storage"."objects" AS RESTRICTIVE FOR UPDATE TO anon, authenticated USING (false) WITH CHECK (false);
+CREATE POLICY "ya_v1_hold_delete" ON "storage"."objects" AS RESTRICTIVE FOR DELETE TO anon, authenticated USING (false);
+COMMIT;

@@ -1,5 +1,6 @@
-import type { Metadata } from 'next';
-import { Inter, Quicksand } from 'next/font/google';
+import {isLocalFoodPreview} from '@/lib/food/localPreview';
+import type { Metadata, Viewport } from 'next';
+import { Inter } from 'next/font/google';
 import './globals.css';
 import { Providers } from '@/components/Providers';
 
@@ -7,23 +8,22 @@ const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter',
-  preload: true,
+  preload: false,
 });
 
 // 13: export const metadata: Metadata = {
 // ...
 // 70: };
 
-export const viewport = {
+export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
   viewportFit: "cover",
   themeColor: "#10b981",
 };
 
-export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
+export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const params = await props.params;
   const lang = params.lang as 'tr' | 'en' || 'tr';
   const siteName = lang === 'en' ? 'WorldandHotels' : 'Yerini Ayır';
 
@@ -85,19 +85,20 @@ import Script from 'next/script';
 
 import { generateOrganizationSchema, generateWebSiteSchema } from '@/lib/schema-generator';
 
-const quicksand = Quicksand({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-quicksand',
-});
 
-export default function RootLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-  params: { lang: string };
-}) {
+export default async function RootLayout(
+  props: {
+    children: React.ReactNode;
+    params: Promise<{ lang: string }>;
+  }
+) {
+  const params = await props.params;
+
+  const {
+    children
+  } = props;
+
+  const localPreview = (await isLocalFoodPreview());
   const orgSchema = generateOrganizationSchema();
   const websiteSchema = generateWebSiteSchema();
 
@@ -107,17 +108,18 @@ export default function RootLayout({
   const gaId = params.lang === 'en' ? 'G-E2Z6W3YXSM' : 'G-593PL85N6Q';
 
   return (
-    <html lang={params.lang} className={`${inter.variable} ${quicksand.variable}`} style={{ backgroundColor: '#ffffff' }}>
-      <head>
+    <html lang={params.lang} className={localPreview?'gastronomy-font':inter.variable} style={{ backgroundColor: '#ffffff' }}>
+      <head>{localPreview&&<link rel="preload" href="/fonts/Inter-TR-EN-04308d9ab394.woff2" as="font" type="font/woff2" crossOrigin="anonymous"/>}{!localPreview && <>
         <link rel="preconnect" href="https://jerkkxwgddujigsbeqwo.supabase.co" />
         <link rel="preconnect" href="https://images.pexels.com" />
         <link rel="dns-prefetch" href="https://jerkkxwgddujigsbeqwo.supabase.co" />
         <link rel="dns-prefetch" href="https://images.pexels.com" />
-      </head>
+      </>}</head>
       <body className="font-sans" style={{ backgroundColor: '#ffffff' }}>
-        <Providers>
+        <Providers disableTracking={localPreview}>
           {children}
         </Providers>
+        {!localPreview && <>
         <Script id="microsoft-clarity" strategy="lazyOnload">
           {`
             (function(c,l,a,r,i,t,y){
@@ -140,6 +142,7 @@ export default function RootLayout({
             gtag('config', '${gaId}');
           `}
         </Script>
+        </>}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}

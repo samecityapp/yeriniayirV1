@@ -10,6 +10,7 @@ import { sapancaPlaces } from '@/data/sapancaPlaces';
 import { bodrumPlaces } from '@/data/bodrumPlaces';
 import { antalyaPlaces } from '@/data/antalyaPlaces';
 import { kapadokyaPlaces } from '@/data/kapadokyaPlaces';
+import { fethiyePlaces } from '@/data/fethiyePlaces';
 import { getLocalizedText } from '@/lib/localization';
 
 const RestaurantDetailsModal = dynamic(() =>
@@ -88,8 +89,15 @@ export function NearbyPlacesTab({ location, coordinates, lang = 'tr' }: NearbyPl
         return;
       }
 
-      if (location.toLowerCase().includes('fethiye') || location.toLowerCase().includes('ölüdeniz')) {
-        setCategories([]);
+      if (location.toLowerCase().includes('fethiye') || location.toLowerCase().includes('ölüdeniz') || location.toLowerCase().includes('göcek') || location.toLowerCase().includes('kayaköy')) {
+        const normalizedCategories = fethiyePlaces.map(cat => ({
+          ...cat,
+          restaurants: cat.places || cat.restaurants || []
+        }));
+        setCategories(normalizedCategories);
+        if (normalizedCategories.length > 0) {
+          setActiveCategory(getLocalizedText(normalizedCategories[0].title, lang));
+        }
         setLoading(false);
         return;
       }
@@ -166,9 +174,9 @@ export function NearbyPlacesTab({ location, coordinates, lang = 'tr' }: NearbyPl
         onSelectCategory={setActiveCategory}
       />
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-        {activePlaces.map(place => (
+        {activePlaces.map((place, idx) => (
           <RestaurantCard
-            key={place.id}
+            key={place.id || idx}
             restaurant={place}
             lang={lang}
             onViewDetails={() => setSelectedRestaurant(place)}

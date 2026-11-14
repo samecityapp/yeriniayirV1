@@ -1,0 +1,18 @@
+const fs=require('node:fs'),assert=require('node:assert/strict'),puppeteer=require('puppeteer');
+const origin='http://127.0.0.1:3330';
+(async()=>{const browser=await puppeteer.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--no-sandbox']});
+try{const page=await browser.newPage();await page.setViewport({width:390,height:844,isMobile:true,hasTouch:true});const cdp=await page.createCDPSession();await cdp.send('Network.enable');
+const requests=new Map(),finished=[],blocked=[];let phase='home-cold';
+cdp.on('Network.requestWillBeSent',e=>requests.set(e.requestId,{phase,url:e.request.url,type:e.type}));
+cdp.on('Network.loadingFinished',e=>{const r=requests.get(e.requestId);if(r&&r.url.startsWith(origin))finished.push({phase:r.phase,path:new URL(r.url).pathname,type:r.type,wireBytes:e.encodedDataLength});});
+await page.setRequestInterception(true);page.on('request',r=>{let u=new URL(r.url());if(u.origin!==origin&&!['data:','blob:'].includes(u.protocol)){blocked.push({phase,host:u.hostname,kind:/supabase/.test(u.hostname)?'supabase':/googleapis|places/.test(u.hostname)?'google':'other'});r.abort();}else r.continue();});
+const timings=[];let t=performance.now();await page.goto(origin+'/tr',{waitUntil:'networkidle0'});timings.push({phase,elapsedMs:Math.round(performance.now()-t),navigation:await page.evaluate(()=>{const n=performance.getEntriesByType('navigation')[0];return {ttfbMs:Math.round(n.responseStart-n.startTime),domContentLoadedMs:Math.round(n.domContentLoadedEventEnd-n.startTime)};})});
+phase='select-moda';t=performance.now();await page.click('header button');await page.waitForSelector('[role="dialog"] input');await page.type('[role="dialog"] input','Moda');
+for(const b of await page.$$('[role="dialog"] button'))if((await b.evaluate(e=>e.textContent)).includes('Moda, Kadıköy, İstanbul')){await b.click();break;}
+await page.waitForSelector('[data-venue-id]');await page.waitForNetworkIdle({idleTime:500,timeout:10000});assert.equal(await page.$$eval('[data-venue-id]',x=>x.length),4);timings.push({phase,elapsedMs:Math.round(performance.now()-t)});
+phase='detail-open';t=performance.now();await page.click('[data-venue-id="osm-node-6124757286"]');await page.waitForSelector('[role="dialog"]');const uiReadyMs=Math.round(performance.now()-t);await page.waitForNetworkIdle({idleTime:500,timeout:10000});timings.push({phase,uiReadyMs,elapsedMs:Math.round(performance.now()-t)});await page.keyboard.press('Escape');
+phase='list-warm-reload';t=performance.now();await page.goto(origin+'/tr?region=moda&category=kahve',{waitUntil:'networkidle0'});timings.push({phase,elapsedMs:Math.round(performance.now()-t)});
+const phases=timings.map(t=>({...t,resourceEvents:finished.filter(x=>x.phase===t.phase).length,networkTransfers:finished.filter(x=>x.phase===t.phase&&x.wireBytes>0).length,wireBytes:finished.filter(x=>x.phase===t.phase).reduce((s,x)=>s+x.wireBytes,0)}));
+const result={origin,width:390,phases,requests:finished,blockedExternal:blocked,supabaseRequests:blocked.filter(x=>x.kind==='supabase').length,googleRequests:blocked.filter(x=>x.kind==='google').length,notes:['Actual Next.js page/browser resources; elapsed includes intentional 500ms network-idle waits','Browser wire bytes include app resources/headers and are not Supabase egress']};
+fs.writeFileSync('work/free-capacity/browser.json',JSON.stringify(result,null,2));console.log(JSON.stringify({phases,supabaseRequests:result.supabaseRequests,googleRequests:result.googleRequests,blocked:blocked.length}));
+}finally{await browser.close();}})().catch(e=>{console.error(e.message);process.exitCode=1});

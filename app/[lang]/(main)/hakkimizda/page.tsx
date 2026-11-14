@@ -2,7 +2,13 @@ import React from 'react';
 import { Instagram } from 'lucide-react';
 import { getDictionary } from '@/lib/dictionary';
 
-export default async function AboutPage({ params: { lang } }: { params: { lang: 'tr' | 'en' } }) {
+export default async function AboutPage(props: { params: Promise<{ lang: 'tr' | 'en' }> }) {
+  const params = await props.params;
+
+  const {
+    lang
+  } = params;
+
   const dict = await getDictionary(lang);
 
   return (

@@ -1,0 +1,1018 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "istanbul-uskudar-kuzguncuk",
+  "displayName": "Kuzguncuk, Üsküdar, İstanbul",
+  "verifiedAt": "2026-11-14T10:59:02.440Z",
+  "selectedCount": 14,
+  "rejectedControls": [
+    {
+      "id": "ctrl-kuz-balikcisi-closed",
+      "resolvedName": "Kuzguncuk Balıkçısı",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-kuz-pulat-closed",
+      "resolvedName": "Pulat Çiftliği",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-kuz-foco-closed",
+      "resolvedName": "Fo&Co Kuzguncuk - Focaccia & Cookie",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-kuz-beylerbeyi-outside",
+      "resolvedName": "Via Balık Restaurant",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Kuzguncuk/İcadiye, adres: Beylerbeyi, İskele Cd. 13/A, 34674 Üsküdar/İstanbul, Türkiye)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "kuz-mahalle",
+      "categoryId": "pizza",
+      "resolvedName": "Mahalle Kuzguncuk",
+      "branchName": "Kuzguncuk, Tufan Sk. 6a, 34674 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJ1UeqJFm5yhQRAatCoQK410w",
+      "coordinates": {
+        "lat": 41.0353462,
+        "lng": 29.0305802
+      },
+      "rating": 4.8,
+      "userRatingCount": 409,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.mahallekuzguncuk.com/",
+      "mapsUri": "https://maps.google.com/?cid=5537096588310260481",
+      "recommendedPrimary": [
+        "Margherita",
+        "Füme Etli / Kavurmalı Pizza",
+        "Burrata Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Tiramisu & Focaccia Başlangıç",
+          "note": "Pizza sonrası paylaşılan hafif mascarpone tatlısı ve sıcak zeytinyağlı ekmek.",
+          "proof": "Kuzguncuk yerel gastronomi paylaşımları ve müdavim notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak butik salon ve sokak önü küçük ahşap masalar",
+        "crowdAndNoise": "Semt sakinleri ve hafta sonu Kuzguncuk gezginleriyle samimi ortam",
+        "disadvantage": "Küçük sokak içinde sınırlı masa kapasitesine sahip olduğu için hafta sonları yer beklemek gerekebilir.",
+        "transit": "Kuzguncuk Tufan Sokak 6A’da İcadiye Caddesi ile bostan girişine 2 dakikalık yürüyüş."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Kuzguncuk Pizza ve Bistro Durakları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tufan Sokak’ta hamur dokusu ve samimi servisiyle öne çıkan yerel pizzeria"
+        },
+        {
+          "title": "Müdavim — Mahalle Kuzguncuk",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "4.8 puan ortalamasıyla Kuzguncuk’un en yüksek beğenili pizzacısı"
+        }
+      ],
+      "pros": [
+        "Yüksek ziyaretçi memnuniyeti ve ince hamur tutarlılığı",
+        "İcadiye’ye paralel sakin sokak"
+      ],
+      "cons": [
+        "Küçük oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Yoğun akşamlarda hamur stoğu sınırlı kalabilir."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kuz-cafe2",
+      "categoryId": "pizza",
+      "resolvedName": "Cafe 2 Pizza & Burger",
+      "branchName": "No:2/2A, İcadiye Caddesi Tenekeci Musa Sokak Kuzguncuk Mahallesi, Kuzguncuk, Tenekeci Musa Sk. No: 2, 34674 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJDYi3sum3yhQRH_hR69x4O7c",
+      "coordinates": {
+        "lat": 41.0336287,
+        "lng": 29.0313628
+      },
+      "rating": 4.4,
+      "userRatingCount": 615,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13203279622802896927",
+      "recommendedPrimary": [
+        "İlya (Kabaklı & Keçi Peynirli Pizza)",
+        "Kıymalı / Mantarlı İnce Pizza",
+        "Pesto Soslu Tavuk"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Cafe 2 Burger & Zeytinyağlı Çıtır Ekmekler",
+          "note": "Kültleşen İlya pizzasının yanında sıkça sipariş edilen doyurucu burger ve başlangıç tabakları.",
+          "proof": "Ekşi Sözlük ve İstanbul bağımsız kafe rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi ahşap dokulu iki katlı iç salon ve sokak önü masaları",
+        "crowdAndNoise": "Öğrenciler, mahalle sakinleri ve semt müdavimleriyle her dönem canlı",
+        "disadvantage": "Geleneksel İtalyan Napoli hamuru yerine özel çok ince kıtır hamur sunar; yoğun hafta sonu saatlerinde servis yavaşlayabilir.",
+        "transit": "Kuzguncuk Bostanı yanındaki Tenekeci Musa Sokak No:2’de İcadiye Caddesi’nin hemen üzerinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Kuzguncuk’un Değişmeyen Klasikleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kabaklı ve keçi peynirli İlya pizzasıyla semtin yıllardır korunan adresi"
+        },
+        {
+          "title": "Ekşi Sözlük — Cafe 2 Kuzguncuk",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İncecik İlya pizzası ve eski Kuzguncuk atmosferiyle biliniyor"
+        }
+      ],
+      "pros": [
+        "Başka yerde benzeri az bulunan imza İlya pizzası",
+        "Kuzguncuk Bostanı yanında merkezi köşe"
+      ],
+      "cons": [
+        "Yoğun hafta sonu temposunda servis hızında düşüş"
+      ],
+      "uncertainties": [
+        "Üst kat oturumu yoğunluğa göre açılmaktadır."
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kuz-jobu",
+      "categoryId": "hamburger",
+      "resolvedName": "Jobu Smash Burgers",
+      "branchName": "Kuzguncuk, İcadiye Cd. No:39, 34674 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJb5iL48-3yhQRFQeN9ADVf34",
+      "coordinates": {
+        "lat": 41.0352789,
+        "lng": 29.030388300000002
+      },
+      "rating": 4.8,
+      "userRatingCount": 568,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9115238370900772629",
+      "recommendedPrimary": [
+        "Jobu Double Smash",
+        "Truffle Mushroom Smash",
+        "Klasik Cheeseburger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Trüflü Parmazanlı Patates & Soğuk Shake",
+          "note": "Smash burger porsiyonuna eşlik eden çıtır patates ve soğuk içecek ikilisi.",
+          "proof": "Kuzguncuk güncel gastronomi değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük modern dükkan içi tezgah masaları ve al-götür servis",
+        "crowdAndNoise": "Genç ziyaretçiler ve mahalle müdavimleriyle hızlı tempolu",
+        "disadvantage": "İcadiye Caddesi üzerindeki küçük dükkan hacmi nedeniyle oturma yeri kısıtlıdır; kalabalık gruplara uygun değildir.",
+        "transit": "İcadiye Caddesi No:39’da tarihi Kuzguncuk Fırını ve Nail Kitabevi’nin birkaç adım ilerisinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Harbiyiyorum — Anadolu Yakası Smash Burger Durakları",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kuzguncuk İcadiye üzerinde döküm plaka smash tekniğiyle 4.8 puan yakalayan adres"
+        },
+        {
+          "title": "Müdavim — Jobu Smash Burgers Kuzguncuk",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Köfte karamelizasyonu ve hızlı sıcak servisiyle tercih ediliyor"
+        }
+      ],
+      "pros": [
+        "Yüksek puanlı özgün smash köfte tekniği",
+        "İcadiye Caddesi üzerinde kolay ulaşım"
+      ],
+      "cons": [
+        "Küçük oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Yoğun öğle-akşam arası dükkan içi yer bulmak zorlaşabilir."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kuz-nail-kitabevi",
+      "categoryId": "kahve",
+      "resolvedName": "Nail Kitabevi & Cafe",
+      "branchName": "Kuzguncuk, İcadiye Cd. No:32, 34674 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJhWHB3em3yhQRYQHllNQCKP8",
+      "coordinates": {
+        "lat": 41.0353728,
+        "lng": 29.030095000000003
+      },
+      "rating": 4.5,
+      "userRatingCount": 1027,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18385948590794408289",
+      "recommendedPrimary": [
+        "Filtre Kahve",
+        "Türk Kahvesi",
+        "Sıcak Çikolata / Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Limonlu / Havuçlu Kek & Fırın Kurabiyeleri",
+          "note": "Üst katta kitap karıştırırken kahvenin yanında en çok istenen sade pastane eşlikçileri.",
+          "proof": "Kuzguncuk kültür-sanat rehberleri ve yerel topluluk paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Alt kat kitabevi rafları, üst kat nostaljik ahşap masa salonu (bilgisayarla uzun çalışma yerine kitap/sohbet odaklı)",
+        "crowdAndNoise": "Hafta sonları fotoğraf ve okuma-kahve için gelen ziyaretçilerle yoğun",
+        "disadvantage": "Hafta sonları üst kat oturma alanı hızla doluyor ve turistik ziyaretçi yoğunluğu sakin okuma atmosferini azaltabiliyor.",
+        "transit": "İcadiye Caddesi No:32 köşesinde Kuzguncuk merkez yürüyüş aksında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — İstanbul’un Kitabevi Kafeleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İki katlı tarihi ahşap binada kitabevi ile kahve kültürünü birleştiren Kuzguncuk simgesi"
+        },
+        {
+          "title": "Ekşi Sözlük — Nail Kitabevi Kuzguncuk",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Özenli kitap seçkisi övülürken hafta sonu yoğunluğu not düşülüyor"
+        }
+      ],
+      "pros": [
+        "Özgün iki katlı tarihi ahşap bina ve zengin kitap seçkisi",
+        "Kuzguncuk ruhunu en iyi yansıtan duraklardan"
+      ],
+      "cons": [
+        "Hafta sonları üst kat masalarında yer bulma güçlüğü"
+      ],
+      "uncertainties": [
+        "Yoğun saatlerde bilgisayarla çalışma kuralları uygulanabilir."
+      ],
+      "selectionScore": 98,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kuz-glow-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Glow Coffee",
+      "branchName": "Kuzguncuk, Üryanizade Sk. No:1/C, 34674 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJ--IlRYa3yhQRUo-KNIMGDFg",
+      "coordinates": {
+        "lat": 41.0366566,
+        "lng": 29.0301834
+      },
+      "rating": 4.5,
+      "userRatingCount": 374,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6344453135650164562",
+      "recommendedPrimary": [
+        "Flat White",
+        "V60 Pour-Over",
+        "Iced Americano"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "San Sebastian / Cookie & Soğuk Demleme",
+          "note": "Sokak gezisi arasında kahveye eşlik eden günlük tatlı seçenekleri.",
+          "proof": "Kuzguncuk yerel kafe haritası ve müdavim notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt iç bar düzeni ve cumbalı sokak kenarı masaları",
+        "crowdAndNoise": "Yürüyüş rotası üzerindeki fotoğraf ve kahve severlerle sakin tempolu",
+        "disadvantage": "Küçük metrekare nedeniyle kış aylarında içeride oturma kapasitesi sınırlıdır.",
+        "transit": "Üsküdar-Beylerbeyi sahil yolundan Üryanizade Sokak No:1/C’ye 1 dakikalık yürüyüş."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "The Magger — Kuzguncuk Kahvecileri",
+          "url": "https://www.themagger.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Üryanizade Sokağı başındaki tarihi atmosferde üçüncü dalga kahve sunan dükkan"
+        },
+        {
+          "title": "Müdavim — Glow Coffee Kuzguncuk",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Espresso kalitesi ve güler yüzlü baristasıyla yüksek beğeni topluyor"
+        }
+      ],
+      "pros": [
+        "Tarihi Üryanizade Sokağı girişindeki fotoğrafik konum",
+        "Kaliteli kahve çekirdeği ve hızlı gel-al"
+      ],
+      "cons": [
+        "Küçük iç mekan kapasitesi"
+      ],
+      "uncertainties": [
+        "Tatlı çeşitleri günlük tedarikle sınırlıdır."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kuz-kosinitza",
+      "categoryId": "kahve",
+      "resolvedName": "Kosinitza Coffee",
+      "branchName": "Kuzguncuk, İcadiye Cd. No:9 D:c, 34674 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJSRcvL0q3yhQR6eGFSGQe144",
+      "coordinates": {
+        "lat": 41.036266999999995,
+        "lng": 29.0296316
+      },
+      "rating": 4.5,
+      "userRatingCount": 164,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10292728889440854505",
+      "recommendedPrimary": [
+        "Cortado",
+        "Flat White",
+        "Iced Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Tart & Limonlu Kek",
+          "note": "Sabah veya akşamüstü kahvesinin yanında sunulan taze ev yapımı dilimler.",
+          "proof": "Kuzguncuk kahve paylaşımları ve yerel topluluk değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak mahalle kafesi masaları ve cadde kenarı oturması",
+        "crowdAndNoise": "Sakin semt müdavimleriyle dengeli ve gürültüsüz ortam",
+        "disadvantage": "Küçük işletme olduğundan kalabalık gruplara uygun geniş masa düzeni yoktur.",
+        "transit": "İcadiye Caddesi No:9C’de Kuzguncuk vapur iskelesi tarafındaki girişte."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Kuzguncuk Kahve Rotası",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Semtin eski adına atıf yapan butik üçüncü nesil kahve durağı"
+        },
+        {
+          "title": "Müdavim — Kosinitza Coffee",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sakinliği ve dengeli kahve içimiyle kalabalıktan kaçanların adresi"
+        }
+      ],
+      "pros": [
+        "Tarihi İcadiye aksında görece sakin oturma",
+        "Özenli kahve reçeteleri"
+      ],
+      "cons": [
+        "Sınırlı iç masa sayısı"
+      ],
+      "uncertainties": [
+        "Dönemsel soğuk içecek menüsü mevsime göre değişebilir."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kuz-ismet-baba",
+      "categoryId": "date",
+      "resolvedName": "İsmet Baba Restaurant",
+      "branchName": "Kuzguncuk, Kuzguncuk Çarşı Cd No:1, 34674 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJ35jxdbS3yhQRiHxI_ulOkbg",
+      "coordinates": {
+        "lat": 41.0366571,
+        "lng": 29.029497299999996
+      },
+      "rating": 4.1,
+      "userRatingCount": 2852,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": false,
+        "reservable": true
+      },
+      "websiteUri": "http://www.ismetbaba.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=13299497941502295176",
+      "recommendedPrimary": [
+        "Sıcak Patatesli & Peynirli Üçgen Börek",
+        "Barbunya Pilaki & Lakerda",
+        "Izgara Mevsim Balığı (Lüfer/Palamut)"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli Fırın Helva & İsmet Baba Böreği",
+          "note": "Mekanın balık ve mezeler kadar ün salmış sıcak patatesli-peynirli ara sıcak böreği ve tatlı kapanışı.",
+          "proof": "ismetbaba.com tarihi arşivi ve İstanbul klasik meyhane rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Doğrudan deniz üstünde pencere kenarlı tarihi ahşap meyhane salonu (rezervasyon şart)",
+        "crowdAndNoise": "Yılların müdavimleri, yazarlar ve özel akşam yemeği arayan misafirlerle dolu",
+        "disadvantage": "Deniz kenarı masalar için günler öncesinden rezervasyon gerekir; üst-orta hesap seviyesi ve yoğun saatlerde gürültülü salon atmosferi söz konusudur.",
+        "transit": "Kuzguncuk Çarşı Caddesi No:1’de vapur iskelesinin hemen bitişiğinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "İsmet Baba Resmi Sitesi",
+          "url": "https://ismetbaba.com/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "1951 kuruluş mirası, deniz üstü salon ve klasik meze-balık menüsü"
+        },
+        {
+          "title": "Oggusto — İstanbul’un 70 Yıllık Balık Meyhaneleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kuzguncuk’ta deniz üzerindeki konumuyla İstanbul gastronomi tarihinin temel taşlarından"
+        },
+        {
+          "title": "Ekşi Sözlük — İsmet Baba Kuzguncuk",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Üçgen böreği, pilakisi ve pencere masası için rezervasyon zorunluluğu sıkça vurgulanıyor"
+        }
+      ],
+      "pros": [
+        "1951’den beri bozulmayan su üstü Boğaz balıkçısı mirası",
+        "Meşhur sıcak börek ve klasik mezeler"
+      ],
+      "cons": [
+        "Rezervasyonsuz pencere masası bulma güçlüğü ve yüksek bütçe seviyesi"
+      ],
+      "uncertainties": [
+        "Mevsim balıklarının çeşitliliği günlük hal tedarikine göre değişir."
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kuz-pastafarian",
+      "categoryId": "date",
+      "resolvedName": "Pastafarian",
+      "branchName": "Kuzguncuk, Perihan Abla Sk. No:1-3, 34674 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJJT_JHp-3yhQROvJbgNdQor4",
+      "coordinates": {
+        "lat": 41.0359668,
+        "lng": 29.029949499999997
+      },
+      "rating": 4.4,
+      "userRatingCount": 792,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "https://pastafariankuzguncuk.com/",
+      "mapsUri": "https://maps.google.com/?cid=13736630699935134266",
+      "recommendedPrimary": [
+        "Cacio e Pepe / Trüflü Tagliatelle",
+        "Ravioli Çeşitleri",
+        "Taze Lazanya"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Klasik Tiramisu & Panna Cotta",
+          "note": "Taze makarna akşamının sonunda mutlaka masaya söylenen hafif İtalyan tatlıları.",
+          "proof": "Kuzguncuk restoran rehberleri ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Samimi bistro masaları ve sokak önü akşam oturması",
+        "crowdAndNoise": "Çiftler ve İtalyan mutfağı seven genç kitleyle akşamları canlı",
+        "disadvantage": "Küçük sokak içi mekan olduğundan özellikle hafta sonu akşamlarında sıra veya masa bekleme durumu yaşanabiliyor.",
+        "transit": "Kuzguncuk Perihan Abla Sokak No:1-3’te İcadiye Caddesi’nin hemen kesişiminde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — İstanbul’daki El Yapımı Makarnacılar",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Perihan Abla Sokağı’nda günlük taze İtalyan makarnalarıyla tanınan mekan"
+        },
+        {
+          "title": "Müdavim — Pastafarian Kuzguncuk",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Makarna hamuru dokusu, sos uyumu ve tiramisusuyla övülüyor"
+        }
+      ],
+      "pros": [
+        "Günlük taze hamurdan hazırlanan özgün makarna çeşitleri",
+        "Perihan Abla Sokağı atmosferi"
+      ],
+      "cons": [
+        "Küçük iç mekan ve hafta sonu masa yoğunluğu"
+      ],
+      "uncertainties": [
+        "Bazı özel dolgulu ravioli çeşitleri akşam servisinde erken tükenebilir."
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kuz-saranin-bahcesi",
+      "categoryId": "kahvalti",
+      "resolvedName": "Sara'nın Bahçesi",
+      "branchName": "İcadiye Mahallesi, Kuzguncuk, İcadiye Cd. No: 144, 34674 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJjUpndPW3yhQR_W0HM6a6YJw",
+      "coordinates": {
+        "lat": 41.0304157,
+        "lng": 29.034862
+      },
+      "rating": 4.4,
+      "userRatingCount": 2088,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.saraninbahcesi.com/",
+      "mapsUri": "https://maps.google.com/?cid=11268211490664443389",
+      "recommendedPrimary": [
+        "Bahçe Serpme Kahvaltı",
+        "Sıcak Ev Pişisi & Sucuk",
+        "Kavurmalı / Peynirli Sahanda Yumurta"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kuzine Üstünde Kızarmış Ekmek & Ev Yapımı Reçel Çeşitleri",
+          "note": "Özellikle kış aylarında mekanın simgesi haline gelen kuzine sobası sıcaklığındaki kahvaltı deneyimi.",
+          "proof": "Kuzguncuk kahvaltı yazıları ve müdavim paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Arka bahçe masaları ve soba ısıtmalı nostaljik ev salonu",
+        "crowdAndNoise": "Hafta sonu sabahları şehrin her yakasından gelen misafirlerle dolu",
+        "disadvantage": "İcadiye Caddesi’nin en üst noktasında kalır; hafta sonu kahvaltısı için erken gidilmezse bahçede sıra beklenebilir.",
+        "transit": "İcadiye Caddesi No:144’te Nakkaştepe çıkışına yakın üst sokakta."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Kuzguncuk Kahvaltı Mekanları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Arka bahçesi ve kışın kuzine sobasıyla mahalle kahvaltısı geleneğini yaşatan adres"
+        },
+        {
+          "title": "Ekşi Sözlük — Saranın Bahçesi Kuzguncuk",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Samimi aile ortamı ve sıcak pişi çeşitleriyle övülüyor"
+        }
+      ],
+      "pros": [
+        "Dört mevsim farklı atmosfer sunan bahçe ve kuzine sobası",
+        "Doğal ev yapımı reçeller ve sıcak pişi"
+      ],
+      "cons": [
+        "Yokuşun üst tarafında kalması ve hafta sonu doluluk"
+      ],
+      "uncertainties": [
+        "Hafta sonu yoğunluğunda serpme dışı tek tabak seçenekleri kısıtlanabilir."
+      ],
+      "selectionScore": 76,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kuz-name-cafe",
+      "categoryId": "kahvalti",
+      "resolvedName": "Name Kuzguncuk Cafe",
+      "branchName": "Kuzguncuk, 34674 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJpTa2zh63yhQRwRytTCqzsXQ",
+      "coordinates": {
+        "lat": 41.0354877,
+        "lng": 29.030442
+      },
+      "rating": 4.4,
+      "userRatingCount": 4663,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8408698973533838529",
+      "recommendedPrimary": [
+        "Name Serpme Kahvaltı",
+        "Çıtır Pişi & Patates Kızartması",
+        "Kıymalı / Peynirli Gözleme"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ballı Kaymaklı Pancak / Pişi Tabağı",
+          "note": "Serpme dışında kahve yanında paylaşılan tatlı sıcak kahvaltı eşlikçisi.",
+          "proof": "Kuzguncuk yerel kafe listeleri ve ziyaretçi notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi sokak dokusuna bakan masa düzeni ve avlu bölümü",
+        "crowdAndNoise": "Özellikle cumartesi-pazar sabahları oldukça yoğun",
+        "disadvantage": "Yüksek ziyaretçi sirkülasyonu nedeniyle hafta sonu brunch saatlerinde kalabalık ve servis beklemesi yaşanabiliyor.",
+        "transit": "Kuzguncuk İcadiye merkezinde yürüyüş aksının tam içinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Kuzguncuk Hafta Sonu Kahvaltıları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Zengin kahvaltı çeşitliliği ve merkezi konumuyla semtin popüler sabah duraklarından"
+        },
+        {
+          "title": "Müdavim — Name Kuzguncuk",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Dört binden fazla değerlendirmeye karşın yüksek memnuniyet ortalamasını koruyor"
+        }
+      ],
+      "pros": [
+        "Geniş kahvaltı çeşitliliği ve sıcak hamur işleri",
+        "İcadiye merkezde kolay erişim"
+      ],
+      "cons": [
+        "Hafta sonu yüksek yoğunluk ve gürültü"
+      ],
+      "uncertainties": [
+        "Hafta sonu sabahları masa bekleme süresi oluşabilir."
+      ],
+      "selectionScore": 76,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kuz-tarihi-firin",
+      "categoryId": "denemelisin",
+      "resolvedName": "Tarihi Kuzguncuk Fırını",
+      "branchName": "Kuzguncuk, İcadiye Cd. no:24/a, 34674 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJE3AMqpm3yhQRhpLSkDuGiZs",
+      "coordinates": {
+        "lat": 41.0356634,
+        "lng": 29.029891000000003
+      },
+      "rating": 4.6,
+      "userRatingCount": 7106,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.tarihikuzguncukfirini.com/",
+      "mapsUri": "https://maps.google.com/?cid=11207636738079101574",
+      "recommendedPrimary": [
+        "Mantar Kurabiye & Prenses Tatlısı",
+        "Tarihi Acıbadem Kurabiyesi",
+        "Tahinli Çörek / Cevizli Ay Çöreği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kıymalı / Peynirli Su Böreği & Susamlı Çubuk",
+          "note": "Tatlı kurabiyeler dışında sabah ve öğle saatlerinde sıcak çıkan klasik fırın çeşitleri.",
+          "proof": "Kuzguncuk gastronomi arşivleri ve tarihî İstanbul fırınları yayınları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağırlıklı tezgah al-götür fırın ve yan cephede birkaç küçük oturma alanı",
+        "crowdAndNoise": "Özellikle hafta sonları İcadiye Caddesi’ne taşan paket kuyruğu",
+        "disadvantage": "Hafta sonları tezgah önünde kuyruk beklemesi olur ve içeride uzun oturmalı geniş bir kafe düzeni yerine klasik fırın alışverişi öne çıkar.",
+        "transit": "İcadiye Caddesi No:24/A adresinde Nail Kitabevi’nin karşısında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Hürriyet Seyahat — İstanbul’un 100 Yıllık Tarihi Fırınları",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mantar kurabiye ve acıbadem geleneğini 1929’dan beri sürdüren Kuzguncuk klasiği"
+        },
+        {
+          "title": "Oggusto — Kuzguncuk’ta Ne Yenir?",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Prenses tatlısı, mantar kurabiyesi ve tahinli çöreğiyle semtin imza fırını"
+        },
+        {
+          "title": "Ekşi Sözlük — Tarihi Kuzguncuk Fırını",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kurabiye tazeliği övülürken hafta sonu sırası sıkça belirtiliyor"
+        }
+      ],
+      "pros": [
+        "Yüzyıla yaklaşan geleneksel fırın reçeteleri",
+        "Kendine özgü mantar kurabiye ve prenses tatlısı"
+      ],
+      "cons": [
+        "Hafta sonu uzun tezgah sırası ve sınırlı oturma düzeni"
+      ],
+      "uncertainties": [
+        "Günün ilerleyen saatlerinde popüler kurabiye kutuları tükenebilir."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kuz-metet-doner",
+      "categoryId": "denemelisin",
+      "resolvedName": "Metet Közde Döner",
+      "branchName": "Kuzguncuk, İcadiye Cd. No:10, 34674 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJFVib3Om3yhQR-b4TZvqyliI",
+      "coordinates": {
+        "lat": 41.036054199999995,
+        "lng": 29.029544100000003
+      },
+      "rating": 4.3,
+      "userRatingCount": 6846,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://metetdoner.com/",
+      "mapsUri": "https://maps.google.com/?cid=2492376232320286457",
+      "recommendedPrimary": [
+        "Porsiyon Közde Yaprak Döner",
+        "İnce Lavaş Dürüm Döner",
+        "İskender & Pilav Üstü"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bakır Kasede Açık Ayran & Kaymaklı Kadayıf / Baklava",
+          "note": "Döner ziyafetini dengeleyen bol köpüklü açık ayran ve hafif tatlı kapanışı.",
+          "proof": "metetkozdener.com ve İstanbul döner rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "İki katlı geleneksel restoran salonu ve İcadiye sokak masaları",
+        "crowdAndNoise": "Öğle ile akşamüstü arası kapıda masa bekleyenlerle yoğun",
+        "disadvantage": "Günün geç saatlerinde dönerin bitme ihtimali yüksektir; porsiyon fiyatları standart mahalle dönercilerinin üzerindedir ve hafta sonu sıra beklenir.",
+        "transit": "İcadiye Caddesi No:10’da Kuzguncuk girişine 2 dakikalık yürüme mesafesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — İstanbul’un En İyi Odun & Közde Dönercileri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Meşe közünde ağır pişen yaprak et döneriyle Kuzguncuk’un sembol lezzetlerinden"
+        },
+        {
+          "title": "Harbiyiyorum — Metet Közde Döner",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kuzguncuk’ta köz ateşinin aromasıyla ayrışan döner ustası"
+        },
+        {
+          "title": "Ekşi Sözlük — Metet Közde Döner",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Döner lezzeti ve iskenderi beğenilirken yüksek fiyatlar ve kapı sırası vurgulanıyor"
+        }
+      ],
+      "pros": [
+        "Meşe közünde pişen katkısız yaprak et döner aroması",
+        "İnce taze lavaş ve köpüklü açık ayran"
+      ],
+      "cons": [
+        "Yüksek döner porsiyon fiyatı ve kapıda bekleme sırası"
+      ],
+      "uncertainties": [
+        "Özel et ve mumbar çeşitleri günün erken saatlerinde tükenebilir."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kuz-ekmek-teknesi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Ekmek Teknesi",
+      "branchName": "Kuzguncuk, İcadiye Cd. No:17, 34674 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJ0Q4Y3um3yhQRRTEOcXiodk0",
+      "coordinates": {
+        "lat": 41.035871,
+        "lng": 29.029942000000002
+      },
+      "rating": 4.4,
+      "userRatingCount": 1338,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "https://kuzguncukekmekteknesi.com/",
+      "mapsUri": "https://maps.google.com/?cid=5581834023418605893",
+      "recommendedPrimary": [
+        "Günün Tencere Yemeği & Pilav",
+        "Ev Yapımı Mantı",
+        "Izgara Köfte & Piyaz"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Sütlaç & Osmanlı Şerbeti / Ayran",
+          "note": "Nostaljik mekanda yemek sonrası tercih edilen geleneksel sütlü tatlı ve içecek.",
+          "proof": "Kuzguncuk kültür turizmi rehberleri ve değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi film/dizi atmosferini koruyan ahşap dükkan ve küçük cadde masaları",
+        "crowdAndNoise": "Özellikle hafta sonları dizinin anısını görmek isteyen ziyaretçilerle yoğun",
+        "disadvantage": "Tarihi ve turistik bilinirliği nedeniyle küçük dükkanda hafta sonu yoğunluğu ve standart esnaf lokantasına göre biraz daha turistik kalabalık yaşanabiliyor.",
+        "transit": "İcadiye Caddesi No:17’de Tarihi Kuzguncuk Fırını’nın karşısında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Hürriyet Seyahat — Kuzguncuk Dizi Durakları ve Lokantaları",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Efsanevi Ekmek Teknesi dizisinin çekildiği tarihi ahşap dükkanda hizmet veren lokanta"
+        },
+        {
+          "title": "Müdavim — Ekmek Teknesi Kuzguncuk",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Nostaljik atmosferi ve temiz ev yemekleriyle yüksek değerlendirme alıyor"
+        }
+      ],
+      "pros": [
+        "Semtin kültürel hafızasının merkezindeki gerçek tarihi dükkan",
+        "Temiz tencere ve ev yemekleri"
+      ],
+      "cons": [
+        "Küçük kapasite ve hafta sonu turistik kalabalığı"
+      ],
+      "uncertainties": [
+        "Günlük çıkan sulu yemekler öğleden sonra değişebilir."
+      ],
+      "selectionScore": 76,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kuz-bay-manti",
+      "categoryId": "denemelisin",
+      "resolvedName": "Bay Mantı & Cafe",
+      "branchName": "No:68 / A, Kuzguncuk, İcadiye Cd. No:68, 34674 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJNQPHs-m3yhQRdNqKyztW6IE",
+      "coordinates": {
+        "lat": 41.03392230000001,
+        "lng": 29.0311755
+      },
+      "rating": 4.6,
+      "userRatingCount": 536,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.baymanti.com/",
+      "mapsUri": "https://maps.google.com/?cid=9360826640307509876",
+      "recommendedPrimary": [
+        "El Açması Haşlama Mantı",
+        "Karışık Çıtır & Klasik Mantı",
+        "Kıymalı Çiğ Börek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zeytinyağlı Sarma & Vişneli / Cevizli Ev Tatlısı",
+          "note": "Mantı tabağı öncesinde sarma ve sonrasında ev yapımı hafif tatlı eşlikçisi.",
+          "proof": "Kuzguncuk semt değerlendirmeleri ve müdavim paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık iç salon, küçük arka bölüm ve İcadiye ön masaları",
+        "crowdAndNoise": "Öğle ve akşam erken saatlerinde sakin aile yemekleri için tercih edilir",
+        "disadvantage": "Garsonlu restoran konforundan ziyade sade, samimi bir mantı evi düzenindedir.",
+        "transit": "İcadiye Caddesi No:68’de bostanın biraz yukarısında yürüyüş hattında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Kuzguncuk Geleneksel Lezzetleri",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Hamur inceliği ve çiğ börek tazeliğiyle bilinen samimi mahalle mantıcısı"
+        },
+        {
+          "title": "Müdavim — Bay Mantı Kuzguncuk",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Porsiyon kalitesi ve yüksek değerlendirme oranıyla öne çıkıyor"
+        }
+      ],
+      "pros": [
+        "El yapımı gerçek mantı ve yağ çekmeyen çiğ börek",
+        "Güvenilir aile işletmesi özeni"
+      ],
+      "cons": [
+        "Küçük oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Zeytinyağlı yaprak sarma günlük stokla sınırlıdır."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    }
+  ]
+}

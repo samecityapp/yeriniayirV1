@@ -6,9 +6,9 @@ import { Article } from '@/lib/types';
 import { BrandLogo } from './ui/BrandLogo';
 import { getDictionary } from '@/lib/dictionary';
 
-export async function Footer({ lang = 'tr' }: { lang?: 'tr' | 'en' }) {
+export async function Footer({ lang = 'tr', localPreview = false }: { lang?: 'tr' | 'en'; localPreview?:boolean }) {
   const currentYear = 2026;
-  const latestArticles = await db.articles.getLatest(3, lang);
+  const latestArticles = localPreview ? [] : await db.articles.getLatest(3, lang);
   const dict = await getDictionary(lang);
 
   return (

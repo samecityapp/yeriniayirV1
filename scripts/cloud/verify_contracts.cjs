@@ -1,0 +1,12 @@
+require('./loader.cjs');const assert=require('assert/strict'),fs=require('fs');const {publicationDocument,publicationEnvelope,publicationChange}=require('../../lib/cloud/contracts.ts');const {cloudConfig}=require('../../lib/cloud/config.ts');const doc=JSON.parse(fs.readFileSync('work/cloud-admin/import.private.json')).document;let checks=0;function pass(label,test){assert.ok(test,label);checks++;console.log('PASS '+label);}
+pass('real four-branch visitor document accepted',publicationDocument.safeParse(doc).success);
+for(const key of ['sources','research','userRatingCount','password'])pass('private visitor field rejected: '+key,!publicationDocument.safeParse({...doc,[key]:[]}).success);
+const modified=structuredClone(doc);modified.venues[0].ratings=[{platform:'google-maps',value:4.8}];pass('raw Google rating cannot enter persistent publication',!publicationDocument.safeParse(modified).success);
+const duplicate=structuredClone(doc);duplicate.venues.push(duplicate.venues[0]);pass('duplicate branch rejected',!publicationDocument.safeParse(duplicate).success);
+pass('PostgreSQL timestamp offsets accepted',publicationEnvelope.safeParse({revision:1,scope:'moda/kahve',validUntil:'2026-11-01T12:00:00+00:00',document:doc}).success);
+pass('arbitrary claim changes not accepted',!publicationChange.safeParse({scope:'moda/kahve',expectedRevision:1,order:[],reason:'Safe change',quality:'excellent'}).success);
+for(const k of ['GASTRONOMY_SUPABASE_URL','GASTRONOMY_SUPABASE_ANON_KEY','GASTRONOMY_SUPABASE_REF','GASTRONOMY_CLOUD_ENV'])delete process.env[k];
+let rejected=false;try{cloudConfig();}catch{rejected=true;}pass('missing cloud configuration fails closed',rejected);
+Object.assign(process.env,{GASTRONOMY_SUPABASE_URL:'https://jerkkxwgddujigsbeqwo.supabase.co',GASTRONOMY_SUPABASE_REF:'jerkkxwgddujigsbeqwo',GASTRONOMY_SUPABASE_ANON_KEY:'synthetic-key',GASTRONOMY_CLOUD_ENV:'staging'});rejected=false;try{cloudConfig();}catch{rejected=true;}pass('production project explicitly blocked even if mislabeled staging',rejected);
+const bundle=JSON.parse(fs.readFileSync('work/cloud-admin/import.private.json'));pass('no obvious secret-key fields or key-shaped values in research archive',!/(?:AIza[0-9A-Za-z_-]{30,}|tvly-[0-9A-Za-z-]{15,}|"(?:service_role_key|password|access_token|refresh_token|api_key)"\s*:)/i.test(JSON.stringify(bundle.archive)));
+console.log(`${checks}/${checks} contract checks passed; no network`);

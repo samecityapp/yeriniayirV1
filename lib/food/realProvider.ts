@@ -1,0 +1,15 @@
+import type {FoodLocation, VisitorFoodDiscovery} from './types';
+const normalize=(text:string)=>text.toLocaleLowerCase('tr').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/ı/g,'i');
+/** In-memory UI queries only. Input has already passed the server visitor allowlist. */
+export function createRealFoodProvider(data:VisitorFoodDiscovery){
+ return {
+  searchLocations:(query:string)=>data.locations.filter(l=>normalize([l.name,l.displayName,...(l.aliases||[])].join(' ')).includes(normalize(query.trim()))),
+  getReadyRegions:()=>data.locations.filter(l=>l.status==='published'),
+  getLocationBySlug:(slug:string):FoodLocation|undefined=>data.locations.find(l=>l.status==='published'&&(l.slug===slug||l.id===slug||(slug==='kadikoy-carsi'&&l.slug==='kadikoy')||((slug==='catalcesme'||slug==='bostanci-kadikoy')&&l.slug==='bostanci')||((slug==='kosuyolu'||slug==='acibadem'||slug==='kosuyolu-kadikoy'||slug==='validebag')&&l.slug==='kosuyolu-acibadem')||((slug==='merkez-uskudar'||slug==='uskudar-merkez'||slug==='salacak'||slug==='selimiye')&&l.slug==='uskudar')||((slug==='kuzguncuk-uskudar'||slug==='icadiye')&&l.slug==='kuzguncuk')||((slug==='cengelkoy-uskudar'||slug==='cinaralti'||slug==='kuleli')&&l.slug==='cengelkoy')||((slug==='merkez-kusadasi-aydin'||slug==='guzelcamli'||slug==='davutlar'||slug==='kusadasi-aydin')&&l.slug==='kusadasi')||((slug==='gaziantep-merkez'||slug==='sahinbey'||slug==='sehitkamil'||slug==='kalealti-sahinbey-gaziantep')&&l.slug==='gaziantep')||((slug==='antalya'||slug==='antalya-merkez'||slug==='kaleici'||slug==='muratpasa'||slug==='aksu')&&l.slug==='antalya-kaleici')||((slug==='lara'||slug==='sirinyali'||slug==='antalya-sirinyali'||slug==='guzeloba')&&l.slug==='antalya-lara')||((slug==='konyaalti'||slug==='cakirlar'||slug==='gursu')&&l.slug==='antalya-konyaalti')||((slug==='akyaka-ula-mugla'||slug==='mugla-ula-akyaka'||slug==='gokova'||slug==='akcapinar')&&l.slug==='akyaka'))),
+  getRegionCategories:(id:string)=>data.locations.some(l=>l.id===id)?data.categories.filter(c=>data.venues.some(v=>v.categorySlugs.includes(c.slug))):[],
+  getCategoryResult:(id:string,slug:string)=>{
+   const location=data.locations.find(l=>l.id===id),category=data.categories.find(c=>c.slug===slug);
+   return location&&category?{location,category,coreVenues:data.venues.filter(v=>v.categorySlugs.includes(slug)),nearbyVenues:(data.nearbyVenues||[]).filter(v=>v.categorySlugs.includes(slug)),isDemo:false}:undefined;
+  },
+ };
+}
