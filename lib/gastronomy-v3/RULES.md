@@ -52,7 +52,7 @@ Bu doküman `lib/gastronomy-v3` motorunun kalıcı anayasasıdır. Tüm şehir, 
 
 ## 6. Kullanıcı Uygunluğu, Dürüst Dezavantaj & Sıfır Halüsinasyon
 - Her mekanın pratik seçim kartında (`suitability` -> `beforeYouGo`) şu 4 alan net sunulur:
-  1. Oturma ve servis düzeni (`seating` — canlı Google Places `dineIn`/`takeout` verisiyle çelişemez),
+  1. Oturma ve servis düzeni (`seating` — doğrulanmış mekan düzeniyle çelişemez),
   2. Gerçekçi dezavantaj / yoğunluk / sıra / gürültü notu (`disadvantage`),
   3. Ulaşım ve yürüyüş ekseni (`transit`),
   4. Doğrulanmış bütçe seviyesi (`priceLevel` yalnızca Google Places API'de mevcutsa gösterilir; yoksa varsayım yapılmaz).
@@ -65,6 +65,10 @@ Bu doküman `lib/gastronomy-v3` motorunun kalıcı anayasasıdır. Tüm şehir, 
 ## 8. Nesnel Anlatım Üslubu
 - Tüm ziyaretçi metinlerinde AI araştırmasını bizzat gidip tatmış gibi sunan birinci şahıs anlatımı ("tattım", "denedim", "gittim", "bayıldık") ve doğrulanamayan süperlatif sıfatlar ("en iyi", "kusursuz", "rakipsiz", "mükemmel", "muhteşem", "1 numara") yasaktır.
 
-## 9. Hafıza / Önbellek Kuralı ve Adım Adım Bölge Kalibrasyonu
-- Doğrulanan her mekanın canlı Google Places yanıtı `work/gastronomy-v3/places-cache.json` altında önbelleğe alınır; aynı mekan için gereksiz tekrar sorgu yapılmaz (yalnızca `--refresh` ile tazelenir).
+## 9. Hafıza / Önbellek Kuralı, Maliyet Koruması ve Adım Adım Bölge Kalibrasyonu
+- Doğrulanan her mekanın canlı Google Places yanıtı `work/gastronomy-v3/places-cache.json` altında önbelleğe alınır; aynı mekan için gereksiz tekrar sorgu yapılmaz.
+- **Enterprise-Only Field Mask Zorunluluğu**: `scripts/run_region_pipeline.mjs` ve `scripts/discover_region_places.mjs` yalnızca `Enterprise` SKU alanlarını ister (`dineIn`, `takeout`, `outdoorSeating`, `reservable`, `reviews`, `editorialSummary`, `currentOpeningHours` gibi `Enterprise + Atmosphere` alanları yasaktır). Bu sayede ayda **1.000 Place Details** ve **1.000 Text Search** ücretsiz kotası korunur.
+- **Ortak Önbellekli Keşif Akışı**: Bölge keşfi ad-hoc tek kullanımlık scriptlerle değil, yalnızca `node scripts/discover_region_places.mjs` üzerinden yapılır. `searchText` (`pageSize: 20`) çıktısındaki tüm mekanlar otomatik `places-cache.json` (`byPlaceId`) içine yazılır ve bölge tanımlarına (`definitions/*.ts`) doğrudan `placeId` ile eklenir; böylece pipeline çalıştırıldığında **0 ek canlı sorgu** tüketilir.
+- **Web-First Yorum Araştırması**: Öne çıkan sipariş ve gerçekçi dezavantaj araştırması öncelikle ücretsiz web araması / editöryal kaynaklarla yapılır; Google Places `--reviews` yalnızca web'de hiç kanıtı bulunmayan en fazla 5 sınırda mekan için kullanılır.
+- **Kota Sigortası (`QUOTA_GUARD`)**: `run_region_pipeline.mjs` varsayılan olarak koşu başına en fazla 60 (`discover_region_places.mjs` 25) canlı istek kabul eder ve toplu `--all --refresh` çalıştırmasını `--confirm-paid-refresh` olmadan engeller.
 - Algoritma kalibrasyonu tüm bölgelere aynı anda yayılmadan önce referans bölge (`Moda`) üzerinde doğrulanır.

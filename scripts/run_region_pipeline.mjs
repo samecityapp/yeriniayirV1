@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { createRequire } from 'node:module';
+import { pathToFileURL } from 'node:url';
 
 const require = createRequire(import.meta.url);
 const ts = require('typescript');
@@ -28,11 +29,85 @@ const PUBLISHED_REGION_KEYS = [
 ];
 const NEARBY_POOL_KEY = 'istanbul-kadikoy-nearby-pool';
 const DEFAULT_REGION_ORDER = [...PUBLISHED_REGION_KEYS, NEARBY_POOL_KEY];
-const PLACES_CACHE_PATH = path.join(ROOT, 'work', 'gastronomy-v3', 'places-cache.json');
+export const PLACES_CACHE_PATH = path.join(ROOT, 'work', 'gastronomy-v3', 'places-cache.json');
 
-function loadPlacesCache() {
+export const FREE_MONTHLY_CAPS = {
+  detailsEnterprise: 1000,
+  searchEnterprise: 1000,
+  detailsAtmosphere: 1000,
+};
+
+export function getMonthKey(date = new Date()) {
+  return date.toISOString().slice(0, 7);
+}
+
+export function getMonthUsage(cache, monthKey = getMonthKey()) {
+  if (!cache.monthlyUsage || typeof cache.monthlyUsage !== 'object') {
+    cache.monthlyUsage = {};
+  }
+  const raw = cache.monthlyUsage[monthKey];
+  if (!raw || typeof raw !== 'object') {
+    cache.monthlyUsage[monthKey] = {
+      detailsEnterprise: 0,
+      searchEnterprise: 0,
+      detailsAtmosphere: 0,
+    };
+  } else {
+    cache.monthlyUsage[monthKey] = {
+      detailsEnterprise: Number(raw.detailsEnterprise) || 0,
+      searchEnterprise: Number(raw.searchEnterprise) || 0,
+      detailsAtmosphere: Number(raw.detailsAtmosphere) || 0,
+    };
+  }
+  return cache.monthlyUsage[monthKey];
+}
+
+export function recordSkuUsage(cache, sku, delta = 1, monthKey = getMonthKey()) {
+  const bucket = getMonthUsage(cache, monthKey);
+  bucket[sku] = (Number(bucket[sku]) || 0) + delta;
+  return bucket[sku];
+}
+
+export function parseNumericFlag(argv, flagName, fallback) {
+  const prefix = `--${flagName}=`;
+  const eqArg = argv.find((a) => a.startsWith(prefix));
+  let raw = eqArg ? eqArg.slice(prefix.length) : null;
+  if (raw === null) {
+    const idx = argv.indexOf(`--${flagName}`);
+    if (idx !== -1 && argv[idx + 1] !== undefined) {
+      raw = argv[idx + 1];
+    }
+  }
+  if (raw === null) return fallback;
+  const parsed = Number(raw);
+  if (!Number.isFinite(parsed) || parsed < 0) {
+    throw new Error(`Invalid --${flagName} value: "${raw}". Expected a non-negative integer.`);
+  }
+  return Math.floor(parsed);
+}
+
+export function reserveFetchSlot(budget, label) {
+  if (!budget) return;
+  const used = budget.reservedFetches || 0;
+  if (used >= budget.maxFetches) {
+    throw new Error(
+      `QUOTA_GUARD: Maksimum canlı API sorgu sınırı (${budget.maxFetches}) aşıldı (${label}). Önbelleği kullanın veya bilinçli olarak --max-fetches=<N> ile artırın.`
+    );
+  }
+  budget.reservedFetches = used + 1;
+}
+
+export function loadPlacesCache() {
+  const createEmpty = () => ({
+    schemaVersion: 1,
+    updatedAt: new Date().toISOString(),
+    byPlaceId: {},
+    byQuery: {},
+    reviewsByPlaceId: {},
+    monthlyUsage: {},
+  });
   if (!fs.existsSync(PLACES_CACHE_PATH)) {
-    return { schemaVersion: 1, updatedAt: new Date().toISOString(), byPlaceId: {}, byQuery: {} };
+    return createEmpty();
   }
   try {
     const parsed = JSON.parse(fs.readFileSync(PLACES_CACHE_PATH, 'utf8'));
@@ -41,13 +116,16 @@ function loadPlacesCache() {
       updatedAt: parsed.updatedAt || new Date().toISOString(),
       byPlaceId: parsed.byPlaceId && typeof parsed.byPlaceId === 'object' ? parsed.byPlaceId : {},
       byQuery: parsed.byQuery && typeof parsed.byQuery === 'object' ? parsed.byQuery : {},
+      reviewsByPlaceId:
+        parsed.reviewsByPlaceId && typeof parsed.reviewsByPlaceId === 'object' ? parsed.reviewsByPlaceId : {},
+      monthlyUsage: parsed.monthlyUsage && typeof parsed.monthlyUsage === 'object' ? parsed.monthlyUsage : {},
     };
   } catch {
-    return { schemaVersion: 1, updatedAt: new Date().toISOString(), byPlaceId: {}, byQuery: {} };
+    return createEmpty();
   }
 }
 
-function savePlacesCache(cache) {
+export function savePlacesCache(cache) {
   cache.updatedAt = new Date().toISOString();
   fs.mkdirSync(path.dirname(PLACES_CACHE_PATH), { recursive: true });
   const tmpPath = `${PLACES_CACHE_PATH}.tmp`;
@@ -55,7 +133,10 @@ function savePlacesCache(cache) {
   fs.renameSync(tmpPath, PLACES_CACHE_PATH);
 }
 
-const FIELD_MASK = [
+// Strict Enterprise SKU mask — intentionally excludes Enterprise+Atmosphere fields
+// (dineIn, takeout, outdoorSeating, reservable, reviews, editorialSummary, currentOpeningHours)
+// so both Place Details and Text Search stay on the lower Enterprise SKU tier.
+export const ENTERPRISE_FIELD_MASK = [
   'id',
   'displayName',
   'formattedAddress',
@@ -67,15 +148,11 @@ const FIELD_MASK = [
   'googleMapsUri',
   'priceLevel',
   'websiteUri',
-  'dineIn',
-  'takeout',
-  'outdoorSeating',
-  'reservable',
   'location',
   'addressComponents',
 ].join(',');
 
-function loadEnvLocal() {
+export function loadEnvLocal() {
   const envPath = path.join(ROOT, '.env.local');
   if (!fs.existsSync(envPath)) return;
   const raw = fs.readFileSync(envPath, 'utf8');
@@ -143,17 +220,22 @@ function loadTsModule(relPath) {
   return loadRec(absPath);
 }
 
-async function fetchPlaceById(placeId, apiKey, cache, stats, forceRefresh) {
+async function fetchPlaceById(placeId, apiKey, cache, stats, forceRefresh, globalStats) {
   if (!forceRefresh && cache.byPlaceId[placeId]?.payload) {
     stats.cacheHits += 1;
+    if (globalStats) globalStats.cacheHits += 1;
     return cache.byPlaceId[placeId].payload;
   }
+  if (!apiKey) {
+    throw new Error('GOOGLE_PLACES_API_KEY is missing in .env.local or environment.');
+  }
+  reserveFetchSlot(globalStats, `GET ${placeId}`);
   const url = `https://places.googleapis.com/v1/places/${encodeURIComponent(placeId)}?languageCode=tr`;
   const res = await fetch(url, {
     method: 'GET',
     headers: {
       'X-Goog-Api-Key': apiKey,
-      'X-Goog-FieldMask': FIELD_MASK,
+      'X-Goog-FieldMask': ENTERPRISE_FIELD_MASK,
     },
   });
   if (!res.ok) {
@@ -162,6 +244,8 @@ async function fetchPlaceById(placeId, apiKey, cache, stats, forceRefresh) {
   }
   const payload = await res.json();
   stats.networkFetches += 1;
+  if (globalStats) globalStats.networkFetches += 1;
+  recordSkuUsage(cache, 'detailsEnterprise', 1);
   cache.byPlaceId[placeId] = { fetchedAt: new Date().toISOString(), payload };
   return payload;
 }
@@ -176,25 +260,31 @@ function computeBiasRadiusMeters(regionDef) {
   return Math.min(50000, Math.max(3000, Math.round(halfDiag)));
 }
 
-async function fetchPlaceByQuery(textQuery, regionDef, apiKey, cache, stats, forceRefresh) {
+async function fetchPlaceByQuery(textQuery, regionDef, apiKey, cache, stats, forceRefresh, globalStats) {
   const queryKey = `${regionDef.id}::${textQuery}`;
   if (!forceRefresh && cache.byQuery[queryKey]?.payload) {
     stats.cacheHits += 1;
+    if (globalStats) globalStats.cacheHits += 1;
     return cache.byQuery[queryKey].payload;
   }
+  if (!apiKey) {
+    throw new Error('GOOGLE_PLACES_API_KEY is missing in .env.local or environment.');
+  }
+  reserveFetchSlot(globalStats, `searchText "${textQuery}"`);
   const res = await fetch('https://places.googleapis.com/v1/places:searchText', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
       'X-Goog-Api-Key': apiKey,
-      'X-Goog-FieldMask': FIELD_MASK.split(',')
+      'X-Goog-FieldMask': ENTERPRISE_FIELD_MASK.split(',')
         .map((f) => `places.${f}`)
         .join(','),
     },
     body: JSON.stringify({
       textQuery,
       languageCode: 'tr',
-      maxResultCount: 1,
+      regionCode: 'TR',
+      pageSize: 5,
       locationBias: {
         circle: {
           center: {
@@ -211,15 +301,20 @@ async function fetchPlaceByQuery(textQuery, regionDef, apiKey, cache, stats, for
     throw new Error(`Google Places searchText "${textQuery}" failed (${res.status}): ${errText}`);
   }
   const data = await res.json();
-  const first = data.places?.[0];
+  const places = Array.isArray(data.places) ? data.places : [];
+  const first = places[0];
   if (!first) {
     throw new Error(`Google Places searchText "${textQuery}" returned 0 results`);
   }
   stats.networkFetches += 1;
+  if (globalStats) globalStats.networkFetches += 1;
+  recordSkuUsage(cache, 'searchEnterprise', 1);
   const fetchedAt = new Date().toISOString();
   cache.byQuery[queryKey] = { fetchedAt, payload: first };
-  if (first.id) {
-    cache.byPlaceId[first.id] = { fetchedAt, payload: first };
+  for (const place of places) {
+    if (place?.id && (place === first || !cache.byPlaceId[place.id])) {
+      cache.byPlaceId[place.id] = { fetchedAt, payload: place };
+    }
   }
   return first;
 }
@@ -251,7 +346,7 @@ function parseRegionsArg() {
     .filter(Boolean);
 }
 
-async function runSingleRegion(regionKey, apiKey, policy, globalUsedPlaceIds, cache, forceRefresh) {
+async function runSingleRegion(regionKey, apiKey, policy, globalUsedPlaceIds, cache, forceRefresh, globalStats) {
   const defRel = `lib/gastronomy-v3/definitions/${regionKey}.ts`;
   if (!fs.existsSync(path.join(ROOT, defRel))) {
     throw new Error(`Definition not found: ${defRel}`);
@@ -276,8 +371,8 @@ async function runSingleRegion(regionKey, apiKey, policy, globalUsedPlaceIds, ca
     const batchResults = await Promise.all(
       batch.map(async (seed) => {
         const apiPlace = seed.placeId
-          ? await fetchPlaceById(seed.placeId, apiKey, cache, stats, forceRefresh)
-          : await fetchPlaceByQuery(seed.searchQuery, regionDef, apiKey, cache, stats, forceRefresh);
+          ? await fetchPlaceById(seed.placeId, apiKey, cache, stats, forceRefresh, globalStats)
+          : await fetchPlaceByQuery(seed.searchQuery, regionDef, apiKey, cache, stats, forceRefresh, globalStats);
         const res = policy.evaluateAndScoreCandidate(apiPlace, seed, regionDef);
         if (res.accepted && globalUsedPlaceIds.has(res.placeId)) {
           return {
@@ -292,7 +387,10 @@ async function runSingleRegion(regionKey, apiKey, policy, globalUsedPlaceIds, ca
     );
     evaluated.push(...batchResults);
   }
-  savePlacesCache(cache);
+  if (stats.networkFetches > 0) {
+    savePlacesCache(cache);
+    if (globalStats) globalStats.savedNetworkFetches = globalStats.networkFetches;
+  }
   console.log(
     `✓ Hafıza (Cache): ${stats.cacheHits} önbellekten okundu, ${stats.networkFetches} yeni API sorgusu yapıldı`
   );
@@ -424,21 +522,40 @@ async function runSingleRegion(regionKey, apiKey, policy, globalUsedPlaceIds, ca
 }
 
 async function main() {
-  loadEnvLocal();
-  const apiKey = process.env.GOOGLE_PLACES_API_KEY;
-  if (!apiKey) {
-    console.error('ERROR: GOOGLE_PLACES_API_KEY is missing in .env.local or environment.');
-    process.exit(1);
+  const args = process.argv.slice(2);
+  const isAll = args.includes('--all');
+  const forceRefresh = args.includes('--refresh');
+  const confirmPaidRefresh = args.includes('--confirm-paid-refresh');
+  if (isAll && forceRefresh && !confirmPaidRefresh) {
+    throw new Error(
+      'QUOTA_GUARD: `--all --refresh` tüm 18+ bölgede yüzlerce ücretli Places API isteği tetikler; devam etmek için `--confirm-paid-refresh` bayrağını ekleyin veya tekil `--region=<key> --refresh` kullanın.'
+    );
   }
 
-  const forceRefresh = process.argv.slice(2).includes('--refresh');
+  const maxFetches = parseNumericFlag(args, 'max-fetches', 60);
+  loadEnvLocal();
+  const apiKey = process.env.GOOGLE_PLACES_API_KEY || '';
+
   const cache = loadPlacesCache();
   const regionKeys = parseRegionsArg();
   const policy = loadTsModule('lib/gastronomy-v3/policy.ts');
   const globalUsedPlaceIds = new Set();
+  const globalStats = {
+    cacheHits: 0,
+    networkFetches: 0,
+    savedNetworkFetches: 0,
+    reservedFetches: 0,
+    maxFetches,
+  };
 
-  for (const regionKey of regionKeys) {
-    await runSingleRegion(regionKey, apiKey, policy, globalUsedPlaceIds, cache, forceRefresh);
+  try {
+    for (const regionKey of regionKeys) {
+      await runSingleRegion(regionKey, apiKey, policy, globalUsedPlaceIds, cache, forceRefresh, globalStats);
+    }
+  } finally {
+    if (globalStats.networkFetches > globalStats.savedNetworkFetches) {
+      savePlacesCache(cache);
+    }
   }
 
   // Aşama 2: Yayınlanmış 5 semtin "Çok Yakındaki Diğer Öneri" (<= 400m, en fazla 1) havuzunu hesapla
@@ -527,10 +644,17 @@ async function main() {
     }
   }
 
+  const monthKey = getMonthKey();
+  const usage = getMonthUsage(cache, monthKey);
+  console.log(
+    `✓ Aylık API kotası (${monthKey}): Place Details Enterprise ${usage.detailsEnterprise}/${FREE_MONTHLY_CAPS.detailsEnterprise} | Text Search Enterprise ${usage.searchEnterprise}/${FREE_MONTHLY_CAPS.searchEnterprise} | Bu koşu: ${globalStats.networkFetches} yeni istek, ${globalStats.cacheHits} önbellek`
+  );
   console.log(`\n=== Tamamlandı: ${regionKeys.length} bölge, toplam ${globalUsedPlaceIds.size} benzersiz doğrulanmış mekan ===\n`);
 }
 
-main().catch((err) => {
-  console.error('PIPELINE FAILED:', err.message);
-  process.exit(1);
-});
+if (process.argv[1] && import.meta.url === pathToFileURL(fs.realpathSync(process.argv[1])).href) {
+  main().catch((err) => {
+    console.error('PIPELINE FAILED:', err.message);
+    process.exit(1);
+  });
+}

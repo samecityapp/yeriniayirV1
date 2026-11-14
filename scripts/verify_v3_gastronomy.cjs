@@ -1,4 +1,5 @@
 const assert = require('node:assert/strict');
+const { spawnSync } = require('node:child_process');
 const fs = require('node:fs');
 const path = require('node:path');
 const ts = require('typescript');
@@ -1213,6 +1214,77 @@ test('V3.6 strict chain blocklist, coffee purity, and >=4.4 quality floor across
       }
     }
   }
+});
+
+test('V3.7 cost guardrails: pipeline strips Atmosphere SKU fields, blocks bulk --all --refresh, and ships shared discovery cache CLI', () => {
+  const pipelineSrc = fs.readFileSync(path.join(ROOT, 'scripts/run_region_pipeline.mjs'), 'utf8');
+  const maskMatch = pipelineSrc.match(/export const ENTERPRISE_FIELD_MASK\s*=\s*\[([\s\S]*?)\]\.join\(/);
+  assert.ok(maskMatch, 'V3.7 run_region_pipeline.mjs must define ENTERPRISE_FIELD_MASK');
+  const fieldNames = [...maskMatch[1].matchAll(/'([a-zA-Z0-9_]+)'/g)].map((m) => m[1]);
+
+  const forbiddenAtmosphereFields = [
+    'dineIn',
+    'takeout',
+    'outdoorSeating',
+    'reservable',
+    'reviews',
+    'editorialSummary',
+    'currentOpeningHours',
+    'regularOpeningHours',
+  ];
+  for (const forbidden of forbiddenAtmosphereFields) {
+    assert.ok(
+      !fieldNames.includes(forbidden),
+      `V3.7 cost leak: ENTERPRISE_FIELD_MASK must not include Atmosphere field "${forbidden}"`
+    );
+  }
+
+  const requiredEnterpriseFields = [
+    'id',
+    'displayName',
+    'formattedAddress',
+    'rating',
+    'userRatingCount',
+    'businessStatus',
+    'primaryType',
+    'types',
+    'googleMapsUri',
+    'priceLevel',
+    'websiteUri',
+    'location',
+    'addressComponents',
+  ];
+  for (const required of requiredEnterpriseFields) {
+    assert.ok(
+      fieldNames.includes(required),
+      `V3.7 ENTERPRISE_FIELD_MASK missing required field "${required}"`
+    );
+  }
+
+  const discoverPath = path.join(ROOT, 'scripts/discover_region_places.mjs');
+  assert.ok(fs.existsSync(discoverPath), 'V3.7 scripts/discover_region_places.mjs must exist');
+  const discoverSrc = fs.readFileSync(discoverPath, 'utf8');
+  assert.ok(discoverSrc.includes('pageSize: 20'), 'V3.7 discover CLI must batch searchText with pageSize: 20');
+  assert.ok(discoverSrc.includes('MAX_REVIEW_IDS_PER_RUN = 5'), 'V3.7 discover CLI must cap --reviews at 5 IDs');
+
+  const statsRes = spawnSync(process.execPath, [discoverPath, '--stats'], {
+    cwd: ROOT,
+    encoding: 'utf8',
+  });
+  assert.equal(statsRes.status, 0, `discover --stats failed: ${statsRes.stderr}`);
+  assert.ok(statsRes.stdout.includes('byPlaceId:'), 'discover --stats must report byPlaceId count');
+  assert.ok(statsRes.stdout.includes('monthlyUsage'), 'discover --stats must report monthlyUsage caps');
+
+  const guardRes = spawnSync(
+    process.execPath,
+    [path.join(ROOT, 'scripts/run_region_pipeline.mjs'), '--all', '--refresh'],
+    { cwd: ROOT, encoding: 'utf8' }
+  );
+  assert.notEqual(guardRes.status, 0, 'V3.7 pipeline --all --refresh must be blocked without --confirm-paid-refresh');
+  assert.ok(
+    `${guardRes.stdout}\n${guardRes.stderr}`.includes('QUOTA_GUARD'),
+    `Expected QUOTA_GUARD error on --all --refresh, got: ${guardRes.stderr}`
+  );
 });
 
 (async () => {
