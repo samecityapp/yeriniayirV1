@@ -727,6 +727,30 @@ test('V3.2 rules, secondaryItems, suitability, zero Çekirdekhane, complete doss
   assert.ok(fs.existsSync(rulesPath), 'RULES.md must exist');
   assert.ok(fs.readFileSync(rulesPath, 'utf8').length > 500, 'RULES.md must be populated');
 
+  const agentsPath = path.join(ROOT, 'AGENTS.md');
+  assert.ok(fs.existsSync(agentsPath), 'AGENTS.md must exist');
+  const agentsSrc = fs.readFileSync(agentsPath, 'utf8');
+  const agentsBytes = Buffer.byteLength(agentsSrc, 'utf8');
+  assert.ok(agentsBytes > 2000 && agentsBytes < 24000, `AGENTS.md byte size out of bounds: ${agentsBytes}`);
+  assert.ok(!agentsSrc.trimStart().startsWith('---'), 'AGENTS.md must not contain YAML frontmatter');
+
+  const skillPath = path.join(ROOT, '.agents', 'skills', 'yeriniayir-gastronomy-v3', 'SKILL.md');
+  const refPath = path.join(
+    ROOT,
+    '.agents',
+    'skills',
+    'yeriniayir-gastronomy-v3',
+    'references',
+    'architecture-and-checklist.md'
+  );
+  assert.ok(fs.existsSync(skillPath), 'SKILL.md must exist');
+  assert.ok(fs.existsSync(refPath), 'architecture-and-checklist.md must exist');
+  const skillSrc = fs.readFileSync(skillPath, 'utf8');
+  assert.ok(
+    skillSrc.startsWith('---\nname: yeriniayir-gastronomy-v3\n'),
+    'SKILL.md must begin with valid yeriniayir-gastronomy-v3 frontmatter'
+  );
+
   const firstPersonRe = /\b(tattım|tattık|denedim|denedik|gittim|gittik|bayıldım|bayıldık|benim favorim|bizim favorimiz|kendim deneyimledim)\b/i;
   const unverifiedPriceClockRe = /(\b\d+\s*(tl|₺|try|lira)\b|\b([01]?\d|2[0-3]):[0-5]\d\b)/i;
 

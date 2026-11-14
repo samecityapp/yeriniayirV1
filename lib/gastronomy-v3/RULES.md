@@ -1,6 +1,6 @@
-# Gastronomi V3.6 Seçim Algoritması ve Kategori Kuralları (`RULES.md`)
+# Gastronomi V3.7 Seçim Algoritması ve Kategori Kuralları (`RULES.md`)
 
-Bu doküman `lib/gastronomy-v3` motorunun kalıcı anayasasıdır. Tüm şehir, ilçe ve semt güncellemelerinde istisnasız uygulanır.
+Bu doküman `lib/gastronomy-v3` motorunun kalıcı anayasasıdır (`AGENTS.md` ve `.agents/skills/yeriniayir-gastronomy-v3/SKILL.md` ile tam uyumludur). Tüm şehir, ilçe ve semt güncellemelerinde istisnasız uygulanır.
 
 ---
 
@@ -8,6 +8,7 @@ Bu doküman `lib/gastronomy-v3` motorunun kalıcı anayasasıdır. Tüm şehir, 
 - Her bölge sıkı coğrafi sınır (`bbox`, gerekirse `excludeBbox` ve `allowedNeighborhoodTokens`) ile tanımlanır.
 - Komşu semt veya ilçe taşmaları (ör. Erenköy mekanlarının Caddebostan'a, Osmanağa mekanlarının Moda'ya dahil edilmesi) kabul edilmez.
 - Google Places canlı koordinatı ve adres bileşenleri semt sınırını doğrulamıyorsa aday otomatik reddedilir.
+- **Kart Konumu (`area` / `neighborhoodLabelOverride`) Formatı:** Her mekanın kartta görünen konumu yalnız **`<Sokak veya Mikro-Mevki>, <Semt>`** biçiminde yazılır (ör. `Kemankeş Cd., Karaköy`, `Topağacı, Nişantaşı`).
 - **Her Konum ve Her Kategori İçin Çok Yakın Tekil Öneri (`nearbyVenues`):** Seçili semtin kendi sınırları (`coreVenues`) %100 saf tutulurken, hemen altında komşu sınırdaki doğrulanmış alternatif gösterilir.
   - **Sınırdan Mesafe Ölçümü:** Mesafe semtin merkezinden değil, doğrudan **seçili semtin coğrafi sınırından (`bbox \ excludeBbox`)** metre cinsinden ölçülür.
   - **Maksimum 400 Metre Kuralı:** Yalnızca semt sınırının hemen dışında **en fazla `400 metre` (`<= 400 m`)** mesafedeki doğrulanmış adaylar değerlendirilir; `1 km` ve üzeri uzaklıktaki mekanlar kesinlikle önerilmez.
@@ -27,6 +28,7 @@ Bu doküman `lib/gastronomy-v3` motorunun kalıcı anayasasıdır. Tüm şehir, 
 
 ## 3. Kategori Başına Mekan Sayısı, İkonik 5. Slot & Dinamik `denemelisin` (`1..10`, Dolgu Yasak)
 - Standart kategorilerde (`pizza`, `hamburger`, `kahve`, `date-mekanlari`, `kahvalti`) temel tavan `maxPerCategory = 4` mekandır; sayıyı 4'e tamamlamak için zincir işletme, vasat alternatif veya düşük kaliteli dolgu mekan eklenmez (`1..4`, nitelikli aday yoksa kategori dinamik olarak gizlenir, ör. Caddebostan Kahvaltı).
+- **`secondaryCategoryIds` Sıralama Kuralı:** `lib/food/realProvider.ts` dizideki kanonik kategori sırasını koruduğu için üst kategoride (`pizza` vb.) yer alıp `secondaryCategoryIds: ['date']` etiketi taşıyan mekan ikincil sekmede birincil mekanların önünde sıralanır; bu nedenle ikincil etiket yalnız o sekmenin vitrinine yakışan mekanlara verilir.
 - **İkonik Konum / Manzara / Atmosfer 5. Slot Koruması (`iconicSettingOrVibeProtected`):** Deniz manzarası, tarihi köşk/iskele konumu veya benzersiz semt atmosferi/müdavim kitlesiyle o semtin kimliğini temsil eden ama sirkülasyon nedeniyle Google puanı `4.1–4.3` bandında kalan mekanlar (`>= 200` değerlendirme ve `>= 2` bağımsız kaynak şartıyla) elenmez; standart kategoride 5. kontenjanı açarak (`max = 5`) listeye girer. Konum/manzara bilgisi %100 gerçek olmak zorundadır (ör. Şifa Sk. deniz manzaralı tarihi köşk `Rawsters Moda` ile Bademaltı Sk. ikonik iç mekan kavurmahane `Walter's Coffee Roastery` ayrımı gerçeğe birebir sadık yazılır).
 - **`denemelisin` ("O Bölgeye Özgü Şeyler Denemelisin") `1..10` Dinamik Tavan:** Semtin gerçek özgün deneyim sayısına göre `1` ile `10` arasında dinamik sayıda mekan alır. Özel yer 2 taneyse 2, 4 taneyse 4, 7-8 taneyse 7-8, 10 taneyse 10 çıkar; sayıyı 10'a tamamlamak için asla sıradan/dolgu mekan eklenmez.
 
@@ -42,7 +44,7 @@ Bu doküman `lib/gastronomy-v3` motorunun kalıcı anayasasıdır. Tüm şehir, 
   - `chefOrHeritageProtected` işaretli tarihi/dünya çapında tescilli yerel kurumlarda (ör. Çiya Sofrası, Yanyalı Fehmi Lokantası, Halil Lahmacun) en az `200` değerlendirme ve `2+` bağımsız kaynakla `4.0+` puan kabul edilir.
   - `localRitualProtected` işaretli yerel halk ritüeli / bütçe dostu müdavim duraklarında (ör. Çardak 6, Tuki Çarşaflı, Ada Söğüşçüsü, Bülbül Restaurant) hızlı sokak/hafta sonu servisi veya kurye yorumları nedeniyle puan `3.8–4.3` bandında kalsa bile en az `300` değerlendirme ve `2+` bağımsız editoryal/topluluk kanıtıyla koruma altına alınır (`ritualCirculationBonus` uygulanır).
   - `communityInsiderProtected` işaretli yerel müdavim mekanlarında da en az `60` değerlendirme ve `2+` bağımsız kaynakla **`4.4+`** puan zorunludur (asla `4.4` altına inilmez).
-  - `userReferenceProtected` işaretli, kullanıcının doğrudan isim vererek referans gösterdiği mekanlarda `2+` bağımsız kaynakla `3.8+` puan kabul edilir.
+  - `userReferenceProtected` işaretli, kullanıcının doğrudan isim vererek referans gösterdiği mekanlarda `2+` bağımsız kaynakla `3.8+` puan kabul edilir (en üstte istenen mekanlar `pinnedFirst: true` ile kategorinin ilk sırasına sabitlenir, ör. *Boter Kalamış*).
 - **Sahte/şişirilmiş puan koruması:** Değerlendirme sayısı `150` altında olup `4.8+` puana sahip mekanlarda en az `2` bağımsız `editorial`, `community` veya `award` kanıtı bulunmuyorsa `suspected_rating_inflation_no_community_proof` ile reddedilir.
 - **Bayesçi güven & hacim istikrarı dengesi:** Ham Google puanı tek başına kullanılmaz; düşük değerlendirme sayılarındaki oynaklığı dengelemek için Bayesçi güven düzeltmesi (`m=80, C=4.40`) uygulanır ve `700+` / `1500+` değerlendirmede `4.5+` istikrarını koruyan köklü mekanlara sürdürülebilir hacim puanı verilir.
 
@@ -64,6 +66,7 @@ Bu doküman `lib/gastronomy-v3` motorunun kalıcı anayasasıdır. Tüm şehir, 
 
 ## 8. Nesnel Anlatım Üslubu
 - Tüm ziyaretçi metinlerinde AI araştırmasını bizzat gidip tatmış gibi sunan birinci şahıs anlatımı ("tattım", "denedim", "gittim", "bayıldık") ve doğrulanamayan süperlatif sıfatlar ("en iyi", "kusursuz", "rakipsiz", "mükemmel", "muhteşem", "1 numara") yasaktır.
+- **Alt-dize (`FORBIDDEN_VISITOR_COPY_REGEX`) Tuzağı:** Ziyaretçi metin denetimi `/en iyi|rakipsiz|kusursuz|mükemmel|muhteşem|tartışmasız|1 numara|yorum/i` desenini kelime sınırı olmadan uygular; bu nedenle `mükemmelleştirme`, `yorumlayan`, `yorumu` gibi alt-dize içeren kelimeler dahi ziyaretçi alanlarında (`name`, `desc`, `area`, `order`, `menu`, `sec`, `suitability`) kullanılamaz.
 
 ## 9. Hafıza / Önbellek Kuralı, Maliyet Koruması ve Adım Adım Bölge Kalibrasyonu
 - Doğrulanan her mekanın canlı Google Places yanıtı `work/gastronomy-v3/places-cache.json` altında önbelleğe alınır; aynı mekan için gereksiz tekrar sorgu yapılmaz.
