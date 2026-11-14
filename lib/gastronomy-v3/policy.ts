@@ -86,6 +86,17 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'subway',
   'juan valdez',
   'kronotrop',
+  'la veria',
+  'nevada coffee',
+  'döner bank',
+  'doner bank',
+  'burger evim',
+  'nazar profiterol',
+  'safranbolu fırını',
+  'safranbolu firini',
+  'mr.dumpling',
+  'mr dumpling',
+  'pizzalazza',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([

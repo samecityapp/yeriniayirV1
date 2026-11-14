@@ -3,7 +3,7 @@ import type { V3RegionDefinition } from '../types';
 
 /**
  * Kadıköy'ün tekil tam rehber olarak açılmamış komşu mahallelerindeki
- * (Feneryolu, Fenerbahçe/Kalamış, Zühtüpaşa, Erenköy)
+ * (Fenerbahçe/Kalamış, Zühtüpaşa, Erenköy)
  * canlı Google Places doğrulamalı mekan havuzu.
  *
  * NOT: Yalnızca yayınlanmış semtlerin "Yakındaki Diğer Öneriler" bölümünü besler;
@@ -15,7 +15,7 @@ export const ISTANBUL_KADIKOY_NEARBY_POOL_DEF: V3RegionDefinition = {
   city: 'İstanbul',
   district: 'Kadıköy',
   neighborhood: 'Komşu Semtler',
-  officialQuarter: 'Feneryolu, Fenerbahçe, Zühtüpaşa & Erenköy',
+  officialQuarter: 'Fenerbahçe, Zühtüpaşa & Erenköy',
   displayName: 'Kadıköy Komşu Mahalleler Havuzu',
   locative: "Kadıköy'de",
   path: ['istanbul', 'kadikoy', 'nearby-pool'],
@@ -25,7 +25,6 @@ export const ISTANBUL_KADIKOY_NEARBY_POOL_DEF: V3RegionDefinition = {
   center: { lat: 40.98, lng: 29.05 },
   bbox: { minLat: 40.955, maxLat: 41.015, minLng: 29.02, maxLng: 29.095 },
   allowedNeighborhoodTokens: [
-    'Feneryolu',
     'Fenerbahçe',
     'Zühtüpaşa',
     'Erenköy',
@@ -34,155 +33,7 @@ export const ISTANBUL_KADIKOY_NEARBY_POOL_DEF: V3RegionDefinition = {
   ],
   categories: buildRegionCategories(),
   candidates: [
-    // --- KAHVALTI (Feneryolu, Fenerbahçe/Kalamış, Erenköy — 5 mekan) ---
-    {
-      id: 'nearby-alaturka-feneryolu',
-      placeId: 'ChIJL7N3z8THyhQRTIhnTe-96NM',
-      categoryId: 'kahvalti',
-      expectedBrandWord: 'alaturka',
-      neighborhoodLabelOverride: 'Feneryolu, Kadıköy',
-      localSignals: ['feneryolu-firin', 'eksi-maya', 'kahvalti-tabaklari'],
-      description:
-        'Feneryolu sokaklarında taze ekşi maya ekmekleri, yumurtalı sabah tabakları ve el yapımı pastane ürünleriyle sevilen mahalle fırın-kahvaltıcısı.',
-      whatToOrder: ['Avokadolu Poşe Yumurta Tabağı', 'Ekşi Mayalı Kahvaltı Tabağı', 'Menemen'],
-      menuFrom: ['Kruvasan Çeşitleri', 'Taze Meyve Suları', 'Filtre Kahve'],
-      alsoTry: [],
-      secondaryItems: [
-        {
-          name: 'Bademli Kruvasan & Demleme Filtre Kahve',
-          note: 'Sıcak kahvaltının yanında vitrinden seçilen çıtır bademli kruvasan ve taze demleme kahve.',
-          proof: 'Feneryolu semt paylaşımları ve kahvaltı menüsü',
-        },
-      ],
-      suitability: {
-        seating: 'Oturmalı aydınlık iç salon ve sokak önü bahçe masaları',
-        crowdAndNoise: 'Sabahları sakin mahalle kahvaltısı, hafta sonu hareketli',
-        disadvantage: 'Hafta sonu kahvaltı saatlerinde Feneryolu iç sokaklarında masa bulmak zorlaşabiliyor.',
-        transit: 'Feneryolu Marmaray ve Bağdat Caddesi’ne birkaç dakikalık yürüme mesafesinde.',
-      },
-      beforeYouGo: [],
-      dossier: {
-        verifiedAt: '2026-11-13',
-        sources: [
-          {
-            title: 'ExploreKadikoy — Feneryolu Kahvaltı Mekanları',
-            url: 'https://www.explorekadikoy.com/',
-            date: '2026-10-12',
-            kind: 'editorial',
-            note: 'Feneryolu’nun ekşi maya ekmek ve sabah kahvaltısı odağındaki butik adresi',
-          },
-          {
-            title: 'Müdavim — Alaturka İstanbul Feneryolu',
-            url: 'https://mudavim.net/',
-            date: '2026-09-25',
-            kind: 'community',
-            note: 'Sıcak kahvaltı tabakları ve fırın ürünleriyle öne çıkıyor',
-          },
-        ],
-        pros: ['Feneryolu’nda sessiz sokak içi konum', 'Güçlü ekşi maya fırın ve kahvaltı uyumu'],
-        cons: ['Hafta sonu sabah masaları çabuk doluyor'],
-        uncertainties: ['Fırın vitrin çeşitleri günün saatine göre değişmektedir.'],
-      },
-    },
-    {
-      id: 'nearby-merveilleux-feneryolu',
-      placeId: 'ChIJf__1X4C5yhQRg8ai7jobopo',
-      categoryId: 'kahvalti',
-      expectedBrandWord: 'merveilleux',
-      neighborhoodLabelOverride: 'Feneryolu, Kadıköy',
-      localSignals: ['fransiz-pastanesi', 'kruvasan', 'feneryolu-brunch'],
-      description:
-        'Feneryolu’nda Fransız usulü tereyağlı kruvasanlar, tuzlu kişler ve özenli sabah tabaklarıyla öne çıkan zarif pastane ve kahvaltı durağı.',
-      whatToOrder: ['Tereyağlı Kruvasan & Reçel Seti', 'Füme Somonlu Kruvasan Sandviç', 'Ispanaklı Kiş'],
-      menuFrom: ['Brioche Tost', 'Çırpılmış Yumurta Tabakları', 'Latte'],
-      alsoTry: [],
-      secondaryItems: [
-        {
-          name: 'Beze Tabanlı Merveilleux Pastası',
-          note: 'Kahvaltı veya kahve sonrasında hafif dokusuyla öne çıkan imza Fransız tatlısı.',
-          proof: 'İşletme vitrin seçkisi ve Anadolu Yakası pastane rehberleri',
-        },
-      ],
-      suitability: {
-        seating: 'Şık iç salon, dış sokak masaları ve paket pastane servisi',
-        crowdAndNoise: 'Sakin ve özenli mahalle pastanesi temposu',
-        disadvantage:
-          'Klasik geniş serpme kahvaltı yerine pastane-brunch tabakları ve porsiyon kruvasan formatında hizmet veriyor.',
-        transit: 'Feneryolu Tren/Marmaray durağına kısa yürüme mesafesinde Hamdibey Sokak’ta.',
-      },
-      beforeYouGo: [],
-      dossier: {
-        verifiedAt: '2026-11-13',
-        sources: [
-          {
-            title: 'Oggusto — Anadolu Yakası Fransız Pastaneleri',
-            url: 'https://www.oggusto.com/',
-            date: '2026-09-18',
-            kind: 'editorial',
-            note: 'Feneryolu’nda kruvasan ve adını aldığı Merveilleux tatlısıyla tanınıyor',
-          },
-          {
-            title: 'Ekşi Sözlük — Merveilleux Patisserie',
-            url: 'https://eksisozluk.com/',
-            date: '2026-10-03',
-            kind: 'community',
-            note: 'Tereyağlı hamur işleri ve sakin Feneryolu konumuyla beğeniliyor',
-          },
-        ],
-        pros: ['Otantik Fransız pastane tekniği', 'Hem kahvaltılık kiş/kruvasan hem imza pasta'],
-        cons: ['Klasik serpme kahvaltı yerine pastane-brunch formatında'],
-        uncertainties: ['Özel aromalı Merveilleux çeşitleri günlük stokla sınırlıdır.'],
-      },
-    },
-    {
-      id: 'nearby-kameriye-feneryolu',
-      placeId: 'ChIJfSitRYbHyhQRbqfN1fTRR_w',
-      categoryId: 'kahvalti',
-      expectedBrandWord: 'kameriye',
-      neighborhoodLabelOverride: 'Feneryolu, Kadıköy',
-      localSignals: ['bahceli-kahvalti', 'feneryolu-yesillik', 'menemen'],
-      description:
-        'Feneryolu’nda ağaçların gölgesindeki huzurlu bahçesiyle klasik Türk kahvaltısı, sıcak menemen ve mahalle sohbeti sunan köklü çay bahçesi-kafe.',
-      whatToOrder: ['Köy Kahvaltısı Tabağı', 'Kaşarlı veya Sucuklu Menemen', 'Sıcak Pişi'],
-      menuFrom: ['Sahanda Yumurta', 'Bazlama Tost', 'Türk Kahvesi'],
-      alsoTry: [],
-      secondaryItems: [
-        {
-          name: 'Demleme Çay & Taze Gözleme veya Tost',
-          note: 'Öğlene doğru bahçe masalarında çay eşliğinde en çok istenen geleneksel eşlikçiler.',
-          proof: 'Feneryolu mahalle rehberleri ve yerel müdavim notları',
-        },
-      ],
-      suitability: {
-        seating: 'Geniş gölgelikli bahçe oturma düzeni ve kapalı alan',
-        crowdAndNoise: 'Ağaçlıklı bahçesiyle şehrin gürültüsünden uzak dingin ortam',
-        disadvantage: 'Hafta sonu güneşli sabahlarda bahçedeki büyük masalar erken doluyor.',
-        transit: 'Feneryolu Mazhar Osman Sokak’ta Bağdat Caddesi ve istasyon arasında.',
-      },
-      beforeYouGo: [],
-      dossier: {
-        verifiedAt: '2026-11-13',
-        sources: [
-          {
-            title: 'ExploreKadikoy — Feneryolu Bahçeli Mekanlar',
-            url: 'https://www.explorekadikoy.com/',
-            date: '2026-08-29',
-            kind: 'editorial',
-            note: 'Feneryolu’nun ağaçlar altındaki klasik mahalle bahçesi kahvaltısı',
-          },
-          {
-            title: 'Kadıköy Yerel Müdavim Notları',
-            url: 'https://eksisozluk.com/',
-            date: '2026-09-14',
-            kind: 'community',
-            note: 'Sakin atmosferi, çayı ve klasik kahvaltısıyla uzun yıllardır tercih ediliyor',
-          },
-        ],
-        pros: ['Ferah ve gölgelikli bahçe alanı', 'Geleneksel kahvaltı ve ulaşılabilir semt ortamı'],
-        cons: ['Hafta sonları yoğunluk yaşanabilir'],
-        uncertainties: ['Serin havalarda dış bahçe oturması sınırlanabilir.'],
-      },
-    },
+    // --- KAHVALTI (Fenerbahçe/Kalamış, Erenköy — 2 mekan) ---
     {
       id: 'nearby-kalamissia-fenerbahce',
       placeId: 'ChIJpcDh-cu5yhQRLxg4KmQt9YA',
@@ -431,7 +282,56 @@ export const ISTANBUL_KADIKOY_NEARBY_POOL_DEF: V3RegionDefinition = {
       },
     },
 
-    // --- PİZZA (Erenköy, Fenerbahçe/Kalamış — 2 mekan) ---
+    // --- PİZZA (Erenköy, Fenerbahçe/Kalamış — 3 mekan) ---
+    {
+      id: 'nearby-via-pizzeria-fenerbahce',
+      placeId: 'ChIJ00YGBg_HyhQRtXoA3bfsIFA',
+      categoryId: 'pizza',
+      expectedBrandWord: 'via',
+      neighborhoodLabelOverride: 'Selamiçeşme (Fenerbahçe), Kadıköy',
+      localSignals: ['selamicesme-italyanca', 'ince-hamur-pizza', 'fenerbahce-sokak'],
+      description:
+        'Bağdat Caddesi güneyindeki Hacı Mehmet Efendi Sokak’ta incecik çıtır-yumuşak dengeli hamurlu İtalyan pizzaları, el yapımı fettuccine tabakları ve sıcak ikramlarıyla sevilen Fenerbahçe pizzacısı.',
+      whatToOrder: ['Entrecote Pizza', 'Klasik Margherita', 'Antipasto Tabağı'],
+      menuFrom: ['Fettuccine di Carne', 'Dört Peynirli Pizza', 'Espresso'],
+      alsoTry: [],
+      secondaryItems: [
+        {
+          name: 'Taze Fettuccine & Ev Yapımı Tiramisu',
+          note: 'Pizza dışında akşam masalarında iki kişilik paylaşım için sıkça tercih edilen İtalyan makarna ve tiramisu kapanışı.',
+          proof: 'Selamiçeşme yerel gastronomi değerlendirmeleri ve İtalyan mutfak notları',
+        },
+      ],
+      suitability: {
+        seating: 'Sıcak iç salon, dış sokak masaları ve rezervasyon imkanı',
+        crowdAndNoise: 'Akşamları Selamiçeşme–Feneryolu komşularıyla keyifli akşam atmosferi',
+        disadvantage: 'Akşam yemek saatlerinde sokak içi masalar hızla dolduğu için gitmeden rezervasyon sormak faydalı.',
+        transit: 'Feneryolu sınırının hemen güneyinde Fenerbahçe Hacı Mehmet Efendi Sokak No:6/B’de.',
+      },
+      beforeYouGo: [],
+      dossier: {
+        verifiedAt: '2026-11-14',
+        sources: [
+          {
+            title: 'ExploreKadikoy — Selamiçeşme İtalyan Restoranları',
+            url: 'https://www.explorekadikoy.com/',
+            date: '2026-10-16',
+            kind: 'editorial',
+            note: 'Hacı Mehmet Efendi Sokak’ta ince hamurlu İtalyan pizzaları ve fettuccine servisiyle öne çıkan adres',
+          },
+          {
+            title: 'Müdavim — Via Pizzeria Fenerbahçe',
+            url: 'https://mudavim.net/',
+            date: '2026-10-01',
+            kind: 'community',
+            note: 'Hamur dengesi, sıcak ekibi ve tiramisu kalitesiyle 4.9 puan ortalamasında',
+          },
+        ],
+        pros: ['Feneryolu sınırına yürüyüş mesafesinde ince İtalyan hamuru', 'Hem pizza hem iki kişilik taze makarna seçeneği'],
+        cons: ['Hafta sonu akşamları rezervasyon gereksinimi'],
+        uncertainties: ['Özel şarküteri ve sos çeşitleri dönemsel güncellenebilir.'],
+      },
+    },
     {
       id: 'nearby-fornio-erenkoy',
       placeId: 'ChIJCSOOW2O3yhQRBVcmXRHykKQ',
@@ -531,56 +431,7 @@ export const ISTANBUL_KADIKOY_NEARBY_POOL_DEF: V3RegionDefinition = {
       },
     },
 
-    // --- HAMBURGER (Feneryolu, Fenerbahçe/Kalamış — 2 mekan) ---
-    {
-      id: 'nearby-rustie-feneryolu',
-      placeId: 'ChIJdeMof5fHyhQRZArulMEN36w',
-      categoryId: 'hamburger',
-      expectedBrandWord: 'rustie',
-      neighborhoodLabelOverride: 'Feneryolu, Kadıköy',
-      localSignals: ['feneryolu-burger', 'brioche-ekmek', 'butik-mutfak'],
-      description:
-        'Feneryolu ara sokaklarında ev yapımı yumuşak brioche ekmeği, karamelize köftesi ve özgün sıcak sandviçleriyle dikkat çeken butik burger mutfağı.',
-      whatToOrder: ['Rustie Smash Burger', 'Tiftik Kaburgalı Burger', 'Çıtır Tavuk Burger'],
-      menuFrom: ['Klasik Cheeseburger', 'Trüflü Mantarlı Burger', 'Ev Yapımı Soslar'],
-      alsoTry: [],
-      secondaryItems: [
-        {
-          name: 'Baharatlı Patates & Özel Soslu Tavuk Parçaları',
-          note: 'Burgerin yanında paylaşım için en çok tercih edilen çıtır eşlikçiler.',
-          proof: 'Feneryolu yerel gastronomi paylaşımları ve mekan menüsü',
-        },
-      ],
-      suitability: {
-        seating: 'Modern mahalle salonu ve sokak masaları',
-        crowdAndNoise: 'Öğle ve akşam saatlerinde Feneryolu müdavimleriyle canlı',
-        disadvantage: 'Küçük sokak dükkanı olduğu için akşam yemek saatlerinde yer beklemek gerekebilir.',
-        transit: 'Feneryolu Gazi Muhtarpaşa Sokak’ta istasyon ve Bağdat Caddesi arasında.',
-      },
-      beforeYouGo: [],
-      dossier: {
-        verifiedAt: '2026-11-13',
-        sources: [
-          {
-            title: 'ExploreKadikoy — Feneryolu Butik Mekanlar',
-            url: 'https://www.explorekadikoy.com/',
-            date: '2026-10-08',
-            kind: 'editorial',
-            note: 'Feneryolu’nun yükselen butik burger ve sıcak sandviç noktası',
-          },
-          {
-            title: 'Müdavim — Rustie Eatery',
-            url: 'https://mudavim.net/',
-            date: '2026-09-22',
-            kind: 'community',
-            note: 'Taze ekmeği ve yüksek et kalitesiyle beğeniliyor',
-          },
-        ],
-        pros: ['Moda ve Caddebostan ortasında kolay Feneryolu konumu', 'Güçlü brioche ekmek ve köfte uyumu'],
-        cons: ['Sınırlı masa kapasitesi'],
-        uncertainties: ['Özel burger reçeteleri dönemsel değişebilir.'],
-      },
-    },
+    // --- HAMBURGER (Fenerbahçe/Kalamış — 1 mekan) ---
     {
       id: 'nearby-buffe-kalamis',
       placeId: 'ChIJ6aKwQIG4yhQRT44eXXeqztk',

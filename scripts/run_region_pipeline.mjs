@@ -10,6 +10,7 @@ const PUBLISHED_REGION_KEYS = [
   'istanbul-kadikoy-moda',
   'istanbul-kadikoy-carsi',
   'istanbul-kadikoy-yeldegirmeni',
+  'istanbul-kadikoy-feneryolu',
   'istanbul-kadikoy-caddebostan',
   'istanbul-kadikoy-suadiye',
   'istanbul-kadikoy-bostanci',

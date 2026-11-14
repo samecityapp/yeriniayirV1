@@ -40,6 +40,12 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     headline: 'Yeldeğirmeni, Kadıköy',
     vibe: 'Tarihi apartman sokaklarında Napoli pizzacıları, kurukahveci ve esnaf lokantaları',
   },
+  'feneryolu-kadikoy': {
+    image: '/images/gastronomy/pizza.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Feneryolu, Kadıköy',
+    vibe: 'Hatboyu, Kuyubaşı ve Bağdat Caddesi arasındaki sokaklarda Napoli pizzası, butik kahve ve mahalle mutfakları',
+  },
   'caddebostan-kadikoy': {
     image: '/images/gastronomy/gastronomy.svg',
     badge: 'Doğrulanmış Seçki',
@@ -104,7 +110,7 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     image: '/images/gastronomy/gastronomy.svg',
     badge: 'Doğrulanmış Seçki',
     headline: 'Üsküdar, İstanbul',
-    vibe: '1933 mirası esnaf lokantalarından Salacak sahiline, Selimiye fırınlarından Mimar Sinan çarşısının nitelikli kahvecilerine uzanan seçki',
+    vibe: '1933 mirası esnaf lokantalarından Salacak ve Çamlıca balıkçılarına, Mimar Sinan çarşısı ve Bağlarbaşı kahvecilerinden Doğancılar ile Murat Reis ocakbaşılarına uzanan seçki',
   },
   'kuzguncuk-uskudar': {
     image: '/images/gastronomy/gastronomy.svg',

@@ -1,13 +1,13 @@
 {
   "schemaVersion": 3,
-  "verifiedAt": "2026-11-14T10:59:02.676Z",
+  "verifiedAt": "2026-11-14T14:16:39.157Z",
   "region": {
     "id": "kadikoy-nearby-pool",
     "slug": "kadikoy-nearby-pool",
     "city": "İstanbul",
     "district": "Kadıköy",
     "neighborhood": "Komşu Semtler",
-    "officialQuarter": "Feneryolu, Fenerbahçe, Zühtüpaşa & Erenköy",
+    "officialQuarter": "Fenerbahçe, Zühtüpaşa & Erenköy",
     "displayName": "Kadıköy Komşu Mahalleler Havuzu",
     "locative": "Kadıköy'de",
     "path": [
@@ -82,6 +82,40 @@
     }
   ],
   "venues": [
+    {
+      "id": "nearby-via-pizzeria-fenerbahce",
+      "placeId": "ChIJ00YGBg_HyhQRtXoA3bfsIFA",
+      "name": "Via Pizzeria",
+      "address": "Fenerbahçe, Hacı Mehmet Efendi Sk. :6/b, 34726 Kadıköy/İstanbul, Türkiye",
+      "neighborhood": "Selamiçeşme (Fenerbahçe), Kadıköy",
+      "categoryId": "pizza",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=5773874996719942325",
+      "coordinates": {
+        "lat": 40.975141,
+        "lng": 29.049825000000002
+      },
+      "description": "Bağdat Caddesi güneyindeki Hacı Mehmet Efendi Sokak’ta incecik çıtır-yumuşak dengeli hamurlu İtalyan pizzaları, el yapımı fettuccine tabakları ve sıcak ikramlarıyla sevilen Fenerbahçe pizzacısı.",
+      "whatToOrder": [
+        "Entrecote Pizza",
+        "Klasik Margherita",
+        "Antipasto Tabağı"
+      ],
+      "menuFrom": [
+        "Fettuccine di Carne",
+        "Dört Peynirli Pizza",
+        "Espresso"
+      ],
+      "alsoTry": [
+        "Taze Fettuccine & Ev Yapımı Tiramisu — Pizza dışında akşam masalarında iki kişilik paylaşım için sıkça tercih edilen İtalyan makarna ve tiramisu kapanışı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Sıcak iç salon, dış sokak masaları ve rezervasyon imkanı · Akşamları Selamiçeşme–Feneryolu komşularıyla keyifli akşam atmosferi",
+        "Dezavantaj: Akşam yemek saatlerinde sokak içi masalar hızla dolduğu için gitmeden rezervasyon sormak faydalı.",
+        "Ulaşım: Feneryolu sınırının hemen güneyinde Fenerbahçe Hacı Mehmet Efendi Sokak No:6/B’de.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
     {
       "id": "nearby-fornio-erenkoy",
       "placeId": "ChIJCSOOW2O3yhQRBVcmXRHykKQ",
@@ -181,40 +215,6 @@
         "Oturma & Servis: Hızlı masa servisi, yüksek tezgah oturması ve al-götür düzeni · Kalamış yürüyüşü sonrası genç kalabalıkla enerjik ortam",
         "Dezavantaj: Uzun akşam oturmasından ziyade hızlı ve kaliteli burger-sosisli molasına uygundur.",
         "Ulaşım: Fener Kalamış Caddesi üzerinde Kalamış Parkı yürüyüş hattında.",
-        "Bütçe seviyesi (Google): Orta"
-      ]
-    },
-    {
-      "id": "nearby-rustie-feneryolu",
-      "placeId": "ChIJdeMof5fHyhQRZArulMEN36w",
-      "name": "Rustie Eatery",
-      "address": "Feneryolu, Gazi Muhtarpaşa Sok. No:15 İç Kapı No:20, 34724 Kadıköy/İstanbul, Türkiye",
-      "neighborhood": "Feneryolu, Kadıköy",
-      "categoryId": "hamburger",
-      "rating": 4.6,
-      "mapsUri": "https://maps.google.com/?cid=12456690219408558692",
-      "coordinates": {
-        "lat": 40.9829066,
-        "lng": 29.052865599999997
-      },
-      "description": "Feneryolu ara sokaklarında ev yapımı yumuşak brioche ekmeği, karamelize köftesi ve özgün sıcak sandviçleriyle dikkat çeken butik burger mutfağı.",
-      "whatToOrder": [
-        "Rustie Smash Burger",
-        "Tiftik Kaburgalı Burger",
-        "Çıtır Tavuk Burger"
-      ],
-      "menuFrom": [
-        "Klasik Cheeseburger",
-        "Trüflü Mantarlı Burger",
-        "Ev Yapımı Soslar"
-      ],
-      "alsoTry": [
-        "Baharatlı Patates & Özel Soslu Tavuk Parçaları — Burgerin yanında paylaşım için en çok tercih edilen çıtır eşlikçiler."
-      ],
-      "beforeYouGo": [
-        "Oturma & Servis: Modern mahalle salonu ve sokak masaları · Öğle ve akşam saatlerinde Feneryolu müdavimleriyle canlı",
-        "Dezavantaj: Küçük sokak dükkanı olduğu için akşam yemek saatlerinde yer beklemek gerekebilir.",
-        "Ulaşım: Feneryolu Gazi Muhtarpaşa Sokak’ta istasyon ve Bağdat Caddesi arasında.",
         "Bütçe seviyesi (Google): Orta"
       ]
     },
@@ -423,73 +423,6 @@
       ]
     },
     {
-      "id": "nearby-alaturka-feneryolu",
-      "placeId": "ChIJL7N3z8THyhQRTIhnTe-96NM",
-      "name": "Alaturka İstanbul",
-      "address": "Feneryolu, Mustafa Mazharbey Sok. No:53, 34718 Kadıköy/İstanbul, Türkiye",
-      "neighborhood": "Feneryolu, Kadıköy",
-      "categoryId": "kahvalti",
-      "rating": 4.7,
-      "mapsUri": "https://maps.google.com/?cid=15269663372093130828",
-      "coordinates": {
-        "lat": 40.98074,
-        "lng": 29.053801999999994
-      },
-      "description": "Feneryolu sokaklarında taze ekşi maya ekmekleri, yumurtalı sabah tabakları ve el yapımı pastane ürünleriyle sevilen mahalle fırın-kahvaltıcısı.",
-      "whatToOrder": [
-        "Avokadolu Poşe Yumurta Tabağı",
-        "Ekşi Mayalı Kahvaltı Tabağı",
-        "Menemen"
-      ],
-      "menuFrom": [
-        "Kruvasan Çeşitleri",
-        "Taze Meyve Suları",
-        "Filtre Kahve"
-      ],
-      "alsoTry": [
-        "Bademli Kruvasan & Demleme Filtre Kahve — Sıcak kahvaltının yanında vitrinden seçilen çıtır bademli kruvasan ve taze demleme kahve."
-      ],
-      "beforeYouGo": [
-        "Oturma & Servis: Oturmalı aydınlık iç salon ve sokak önü bahçe masaları · Sabahları sakin mahalle kahvaltısı, hafta sonu hareketli",
-        "Dezavantaj: Hafta sonu kahvaltı saatlerinde Feneryolu iç sokaklarında masa bulmak zorlaşabiliyor.",
-        "Ulaşım: Feneryolu Marmaray ve Bağdat Caddesi’ne birkaç dakikalık yürüme mesafesinde.",
-        "Bütçe seviyesi (Google): Orta"
-      ]
-    },
-    {
-      "id": "nearby-merveilleux-feneryolu",
-      "placeId": "ChIJf__1X4C5yhQRg8ai7jobopo",
-      "name": "Merveilleux Patisserie",
-      "address": "Feneryolu, Hamdibey Sok. 16/2 A, 34724 Kadıköy/İstanbul, Türkiye",
-      "neighborhood": "Feneryolu, Kadıköy",
-      "categoryId": "kahvalti",
-      "rating": 4.6,
-      "mapsUri": "https://maps.google.com/?cid=11142498367993726595",
-      "coordinates": {
-        "lat": 40.9862974,
-        "lng": 29.045536300000002
-      },
-      "description": "Feneryolu’nda Fransız usulü tereyağlı kruvasanlar, tuzlu kişler ve özenli sabah tabaklarıyla öne çıkan zarif pastane ve kahvaltı durağı.",
-      "whatToOrder": [
-        "Tereyağlı Kruvasan & Reçel Seti",
-        "Füme Somonlu Kruvasan Sandviç",
-        "Ispanaklı Kiş"
-      ],
-      "menuFrom": [
-        "Brioche Tost",
-        "Çırpılmış Yumurta Tabakları",
-        "Latte"
-      ],
-      "alsoTry": [
-        "Beze Tabanlı Merveilleux Pastası — Kahvaltı veya kahve sonrasında hafif dokusuyla öne çıkan imza Fransız tatlısı."
-      ],
-      "beforeYouGo": [
-        "Oturma & Servis: Şık iç salon, dış sokak masaları ve paket pastane servisi · Sakin ve özenli mahalle pastanesi temposu",
-        "Dezavantaj: Klasik geniş serpme kahvaltı yerine pastane-brunch tabakları ve porsiyon kruvasan formatında hizmet veriyor.",
-        "Ulaşım: Feneryolu Tren/Marmaray durağına kısa yürüme mesafesinde Hamdibey Sokak’ta."
-      ]
-    },
-    {
       "id": "nearby-kalamissia-fenerbahce",
       "placeId": "ChIJpcDh-cu5yhQRLxg4KmQt9YA",
       "name": "KALAMİSSİA KAFE",
@@ -520,40 +453,6 @@
         "Oturma & Servis: Yol kenarı camlı veranda ve konforlu iç salon masaları · Kalamış temposunda canlı ama sohbete elverişli brunch ortamı",
         "Dezavantaj: Pazar brunch saatlerinde önceden masa sormak gerekebiliyor.",
         "Ulaşım: Kalamış Marina ve Kurbağalıdere aksından kısa yürüyüşle Fener Kalamış Caddesi’nde.",
-        "Bütçe seviyesi (Google): Orta"
-      ]
-    },
-    {
-      "id": "nearby-kameriye-feneryolu",
-      "placeId": "ChIJfSitRYbHyhQRbqfN1fTRR_w",
-      "name": "Kameriye Kafe Çay Bahçesi",
-      "address": "Feneryolu, Mazhar Osman Sk. No:15A D:1, 34724 Kadıköy/İstanbul, Türkiye",
-      "neighborhood": "Feneryolu, Kadıköy",
-      "categoryId": "kahvalti",
-      "rating": 4.5,
-      "mapsUri": "https://maps.google.com/?cid=18178729270393546606",
-      "coordinates": {
-        "lat": 40.9820932,
-        "lng": 29.050259099999998
-      },
-      "description": "Feneryolu’nda ağaçların gölgesindeki huzurlu bahçesiyle klasik Türk kahvaltısı, sıcak menemen ve mahalle sohbeti sunan köklü çay bahçesi-kafe.",
-      "whatToOrder": [
-        "Köy Kahvaltısı Tabağı",
-        "Kaşarlı veya Sucuklu Menemen",
-        "Sıcak Pişi"
-      ],
-      "menuFrom": [
-        "Sahanda Yumurta",
-        "Bazlama Tost",
-        "Türk Kahvesi"
-      ],
-      "alsoTry": [
-        "Demleme Çay & Taze Gözleme veya Tost — Öğlene doğru bahçe masalarında çay eşliğinde en çok istenen geleneksel eşlikçiler."
-      ],
-      "beforeYouGo": [
-        "Oturma & Servis: Geniş gölgelikli bahçe oturma düzeni ve kapalı alan · Ağaçlıklı bahçesiyle şehrin gürültüsünden uzak dingin ortam",
-        "Dezavantaj: Hafta sonu güneşli sabahlarda bahçedeki büyük masalar erken doluyor.",
-        "Ulaşım: Feneryolu Mazhar Osman Sokak’ta Bağdat Caddesi ve istasyon arasında.",
         "Bütçe seviyesi (Google): Orta"
       ]
     },

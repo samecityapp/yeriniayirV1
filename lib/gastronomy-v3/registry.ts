@@ -1,6 +1,7 @@
 import modaSnapshotJson from './regions/istanbul-kadikoy-moda.json';
 import carsiSnapshotJson from './regions/istanbul-kadikoy-carsi.json';
 import yeldegirmeniSnapshotJson from './regions/istanbul-kadikoy-yeldegirmeni.json';
+import feneryoluSnapshotJson from './regions/istanbul-kadikoy-feneryolu.json';
 import caddebostanSnapshotJson from './regions/istanbul-kadikoy-caddebostan.json';
 import suadiyeSnapshotJson from './regions/istanbul-kadikoy-suadiye.json';
 import bostanciSnapshotJson from './regions/istanbul-kadikoy-bostanci.json';
@@ -20,6 +21,7 @@ import type { V3VerifiedRegionSnapshot } from './types';
 const MODA_SNAPSHOT = modaSnapshotJson as V3VerifiedRegionSnapshot;
 const CARSI_SNAPSHOT = carsiSnapshotJson as V3VerifiedRegionSnapshot;
 const YELDEGIRMENI_SNAPSHOT = yeldegirmeniSnapshotJson as V3VerifiedRegionSnapshot;
+const FENERYOLU_SNAPSHOT = feneryoluSnapshotJson as V3VerifiedRegionSnapshot;
 const CADDEBOSTAN_SNAPSHOT = caddebostanSnapshotJson as V3VerifiedRegionSnapshot;
 const SUADIYE_SNAPSHOT = suadiyeSnapshotJson as V3VerifiedRegionSnapshot;
 const BOSTANCI_SNAPSHOT = bostanciSnapshotJson as V3VerifiedRegionSnapshot;
@@ -38,6 +40,7 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
   CARSI_SNAPSHOT,
   YELDEGIRMENI_SNAPSHOT,
+  FENERYOLU_SNAPSHOT,
   CADDEBOSTAN_SNAPSHOT,
   SUADIYE_SNAPSHOT,
   BOSTANCI_SNAPSHOT,
@@ -62,6 +65,10 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'carsi-osmanaga-kadikoy': CARSI_SNAPSHOT,
   yeldegirmeni: YELDEGIRMENI_SNAPSHOT,
   'yeldegirmeni-kadikoy': YELDEGIRMENI_SNAPSHOT,
+  feneryolu: FENERYOLU_SNAPSHOT,
+  'feneryolu-kadikoy': FENERYOLU_SNAPSHOT,
+  'istanbul-kadikoy-feneryolu': FENERYOLU_SNAPSHOT,
+  kuyubasi: FENERYOLU_SNAPSHOT,
   caddebostan: CADDEBOSTAN_SNAPSHOT,
   'caddebostan-kadikoy': CADDEBOSTAN_SNAPSHOT,
   suadiye: SUADIYE_SNAPSHOT,
