@@ -52,6 +52,12 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     headline: 'Suadiye, Kadıköy',
     vibe: 'Şaşkınbakkal’dan Suadiye’ye akşam brasserie’leri, Napoli pizzaları ve profiterol klasikleri',
   },
+  'bostanci-kadikoy': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Bostancı, Kadıköy',
+    vibe: 'İskele ve Koy Yolu’ndaki köklü balıkçılardan Çatalçeşme bistrolarına, Vukela esnaf lokantalarından gece kokoreç ritüellerine uzanan seçki',
+  },
   'kusadasi-aydin': {
     image: '/images/gastronomy/gastronomy.svg',
     badge: 'Doğrulanmış Seçki',
@@ -276,7 +282,7 @@ export function GastronomyPageClient({
                       Konum Seç
                     </div>
                     <div className="text-xs text-slate-500 font-medium truncate mt-0.5">
-                      Akyaka · Antalya · Gaziantep · Kuşadası · Kadıköy · Moda · Yeldeğirmeni · Caddebostan · Suadiye
+                      Akyaka · Antalya · Gaziantep · Kuşadası · Kadıköy · Moda · Yeldeğirmeni · Caddebostan · Suadiye · Bostancı
                     </div>
                   </div>
                 </div>

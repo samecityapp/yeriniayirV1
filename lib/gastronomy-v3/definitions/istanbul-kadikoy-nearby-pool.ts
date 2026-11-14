@@ -108,7 +108,8 @@ export const ISTANBUL_KADIKOY_NEARBY_POOL_DEF: V3RegionDefinition = {
       suitability: {
         seating: 'Şık iç salon, dış sokak masaları ve paket pastane servisi',
         crowdAndNoise: 'Sakin ve özenli mahalle pastanesi temposu',
-        disadvantage: 'Fiyat seviyesi API üzerinde yer almıyor; porsiyonlar hızlı kahvaltı ve pastane formatındadır.',
+        disadvantage:
+          'Klasik geniş serpme kahvaltı yerine pastane-brunch tabakları ve porsiyon kruvasan formatında hizmet veriyor.',
         transit: 'Feneryolu Tren/Marmaray durağına kısa yürüme mesafesinde Hamdibey Sokak’ta.',
       },
       beforeYouGo: [],

@@ -2,8 +2,8 @@
   "schemaVersion": "3.4",
   "regionKey": "istanbul-kadikoy-caddebostan",
   "displayName": "Caddebostan, Kadıköy, İstanbul",
-  "verifiedAt": "2026-11-13T22:45:59.741Z",
-  "selectedCount": 19,
+  "verifiedAt": "2026-11-14T08:57:44.897Z",
+  "selectedCount": 24,
   "rejectedControls": [
     {
       "id": "ctrl-cadde-laktea",
@@ -14,6 +14,11 @@
       "id": "ctrl-cadde-sour-sweet",
       "resolvedName": "Sour & Sweet Wine Bar",
       "reason": "below_quality_threshold:★4.2(1630)"
+    },
+    {
+      "id": "ctrl-cadde-nappo-closed",
+      "resolvedName": "Nappo Cadde",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
     }
   ],
   "venues": [
@@ -1065,9 +1070,78 @@
       "selectedForSnapshot": true
     },
     {
+      "id": "cadde-uzun-masa",
+      "categoryId": "date",
+      "resolvedName": "Uzun Masa",
+      "branchName": "Caddebostan, Yener Sk. Deniz Apartmanı No:5/A, 34728 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJe2URK6jHyhQRsUZzUy7ylag",
+      "coordinates": {
+        "lat": 40.963797899999996,
+        "lng": 29.071316
+      },
+      "rating": 4.7,
+      "userRatingCount": 748,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": null,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12147881850684262065",
+      "recommendedPrimary": [
+        "Günlük Soğuk Meze Seçkisi",
+        "Yaprak Ciğer",
+        "Deniz Mahsullü Ara Sıcaklar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İzmir Tulumlu & Otlu Salata",
+          "note": "Meze ve ara sıcak dengesini tamamlayan taze yeşillikli paylaşım tabağı.",
+          "proof": "Müdavim Caddebostan meyhane notları ve ExploreKadikoy seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaçlıklı bahçe masaları ve sıcak iç salon düzeni",
+        "crowdAndNoise": "Akşamları canlı ama sohbeti boğmayan meyhane temposu",
+        "disadvantage": "Hafta sonu akşamları bahçe masaları önceden rezervasyonsuz hızlı doluyor.",
+        "transit": "Caddebostan Sahil Yener Sokak üzerinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Caddebostan Akşam Masaları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-18",
+          "kind": "editorial",
+          "note": "Yener Sokak bahçesinde günlük meze ve ara sıcak dengesiyle öne çıkıyor"
+        },
+        {
+          "title": "Ekşi Sözlük — Uzun Masa Caddebostan",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-09-29",
+          "kind": "community",
+          "note": "Güler yüzlü servisi ve taze mezeleriyle mahalle buluşmalarında sık tercih ediliyor"
+        }
+      ],
+      "pros": [
+        "Yüksek müdavim memnuniyeti (★4.7 · 740+)",
+        "Ferah bahçe oturması"
+      ],
+      "cons": [
+        "Hafta sonu rezervasyon gereksinimi"
+      ],
+      "uncertainties": [
+        "Mevsimlik otlu mezeler günlük mutfak çıkışına göre değişiyor."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
       "id": "cadde-fistik",
       "categoryId": "denemelisin",
-      "resolvedName": "Fıştık Cadde | dessert - pistachio - coffee",
+      "resolvedName": "Fıştık Cadde",
       "branchName": "Caddebostan, Bilim Sk. No: 18A, 34728 Kadıköy/İstanbul, Türkiye",
       "placeId": "ChIJM_Oq3LbHyhQRClcniktbjfo",
       "coordinates": {
@@ -1137,7 +1211,7 @@
     {
       "id": "cadde-cremeria-milano",
       "categoryId": "denemelisin",
-      "resolvedName": "Cremeria Milano│Caddebostan",
+      "resolvedName": "Cremeria Milano Caddebostan",
       "branchName": "Caddebostan, Caddebostan Plajyolu Sok. No:3 A, 34728 Kadıköy/İstanbul, Türkiye",
       "placeId": "ChIJAxjDNbrHyhQRY_udoV2EZvY",
       "coordinates": {
@@ -1240,7 +1314,7 @@
       "suitability": {
         "seating": "Küçük dış oturma ve sahile taşınabilir gel-al servisi",
         "crowdAndNoise": "Akşamları dondurma sırası ama hızlı akan tezgah",
-        "disadvantage": "Popüler çeşitler gün sonuna doğru tükenebiliyor; fiyat verisi API üzerinde yok.",
+        "disadvantage": "Popüler meyve sorbeleri ve günlük tepsiler akşam saatlerine doğru tükenebiliyor; iç oturma alanı oldukça sınırlı.",
         "transit": "Bağdat Caddesi ile sahil yolu arasında Caddebostan merkezinde."
       },
       "verifiedAt": "2026-11-13",
@@ -1341,6 +1415,281 @@
         "Sınırlı et stoğu yoğun hafta sonu gecelerinde tükenebilir."
       ],
       "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cadde-j-burger",
+      "categoryId": "denemelisin",
+      "resolvedName": "J Burger",
+      "branchName": "Caddebostan, Operatör Cemil Topuzlu Cd. No:36/A, 34728 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJNR33ZXnHyhQRIYxbdMFqFQw",
+      "coordinates": {
+        "lat": 40.9716297,
+        "lng": 29.0518415
+      },
+      "rating": 3.8,
+      "userRatingCount": 4281,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": "http://www.jburger.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=870719482079448097",
+      "recommendedPrimary": [
+        "J-10 Klasik Burger",
+        "Çift Köfteli J-Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çıtır İnce Patates Kızartması & Ev Yapımı Acı Sos",
+          "note": "Klasik burger menüsünü tamamlayan nostaljik kesim ince patates eşlikçisi.",
+          "proof": "Harbiyiyorum arşivi ve 4200+ ziyaretçi değerlendirmesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Sade iç dükkan masaları ve cadde önü hızlı oturma düzeni",
+        "crowdAndNoise": "Nostaljik hızlı büfe temposu; öğle ve akşamüstü yoğunluğu",
+        "disadvantage": "Porsiyonları klasik büfe boyutundadır; kalın gurme burger bekleyenlere küçük gelebilir ve porsiyon-fiyat dengesi sık eleştirilir.",
+        "transit": "Operatör Cemil Topuzlu Caddesi üzerinde sahil parkına birkaç dakikalık yürüme mesafesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Harbiyiyorum — Cemil Topuzlu Klasikleri",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-10-08",
+          "kind": "editorial",
+          "note": "1976’dan beri Caddebostan hafızasında yer tutan nostaljik büfe burgeri"
+        },
+        {
+          "title": "Ekşi Sözlük — J Burger Caddebostan",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-09-30",
+          "kind": "community",
+          "note": "Küçük porsiyon tartışmalarına karşın ıslak-klasik soslu burger müdavimleri için ritüel durak"
+        }
+      ],
+      "pros": [
+        "Köklü semt hafızası (4200+ değerlendirme)",
+        "Kendine has hafif büfe ekmeği ve sos dengesi"
+      ],
+      "cons": [
+        "Küçük porsiyon boyutu",
+        "Üst segment gurme burger fiyatlarıyla kıyaslanması"
+      ],
+      "uncertainties": [
+        "Sadece Cemil Topuzlu Caddesi Caddebostan şubesi kapsamdadır."
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cadde-salt-fried-chicken",
+      "categoryId": "denemelisin",
+      "resolvedName": "Salt Fried Chicken Cadde",
+      "branchName": "Caddebostan, Ogün Sk. no:3/A, 34710 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJBXFYzqLHyhQRAkOtaJsGY8U",
+      "coordinates": {
+        "lat": 40.966978,
+        "lng": 29.0667045
+      },
+      "rating": 4.4,
+      "userRatingCount": 3246,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "http://www.saltfriedchicken.com/",
+      "mapsUri": "https://maps.google.com/?cid=14223219312712041218",
+      "recommendedPrimary": [
+        "Classic Fried Chicken Burger",
+        "Hot Tenders Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Baharatlı Tenders & Ballı Hardallı Sos",
+          "note": "Burger dışında tek porsiyonluk atıştırmalık olarak en sık tercih edilen çıtır tavuk seçkisi.",
+          "proof": "ExploreKadikoy ve 3200+ Caddebostan ziyaretçi paylaşımı"
+        }
+      ],
+      "suitability": {
+        "seating": "Sokak önü yüksek masalar ve sınırlı iç tezgah; hızlı servis formatı",
+        "crowdAndNoise": "Akşam ve hafta sonu genç kalabalıkla hareketli sokak temposu",
+        "disadvantage": "Akşam saatlerinde sipariş hazırlık süresi ve dışarıda masa bekleme uzayabiliyor.",
+        "transit": "Caddebostan İskele ve Ogün Sokak kavşağında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Caddebostan Sokak Lezzetleri",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-14",
+          "kind": "editorial",
+          "note": "Ogün Sokak’ta çıtır tavuk ve baharat kademeleriyle öne çıkıyor"
+        },
+        {
+          "title": "Müdavim — Salt Fried Chicken Caddebostan",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-02",
+          "kind": "community",
+          "note": "3200 üzeri yüksek hacimle Kadıköy çıtır tavuk rotasında üst sırada"
+        }
+      ],
+      "pros": [
+        "Güçlü hacim ve istikrar (★4.4 · 3240+)",
+        "Dengeli çıtırlık ve sos çeşitliliği"
+      ],
+      "cons": [
+        "Hafta sonu sıra ve kısıtlı oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Acı seviyesi yüksek çeşitler damak hassasiyetine göre değişebilir."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cadde-cilingir-sofrasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Çilingir Sofrası Cadde",
+      "branchName": "Beyaz Akasya Sokak No:1/D İstanbul, Caddebostan, 34000 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJNcax0QTHyhQRQD_XKiBFyeM",
+      "coordinates": {
+        "lat": 40.9675888,
+        "lng": 29.066129000000004
+      },
+      "rating": 4.7,
+      "userRatingCount": 1225,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16413726321388502848",
+      "recommendedPrimary": [
+        "Günlük Meze Tepsisi",
+        "Edirne Usulü Yaprak Ciğer",
+        "Köz Patlıcan Söğürme"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Izgara Kokoreç veya Kalamar Tava",
+          "note": "Meze başlangıcından sonra masaya paylaşımlı gelen sıcak ara tabaklar.",
+          "proof": "ExploreKadikoy meyhane rehberi ve 1200+ müdavim paylaşımı"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak iç salon ve ara sokak kaldırım masaları; tam oturmalı meyhane düzeni",
+        "crowdAndNoise": "Akşamları samimi, sohbete elverişli mahalle meyhanesi atmosferi",
+        "disadvantage": "Beyaz Akasya Sokak’ta akşam saatleri park bulmak zor; hafta sonu rezervasyon gerekiyor.",
+        "transit": "Caddebostan Kültür Merkezi ve Bağdat Caddesi’ne kısa yürüme mesafesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Caddebostan Meyhane Seçkisi",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-16",
+          "kind": "editorial",
+          "note": "1200+ ziyaretçi oyuyla 4.7 seviyesini koruyan meze kalitesi"
+        },
+        {
+          "title": "Ekşi Sözlük — Çilingir Sofrası Cadde",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-09-22",
+          "kind": "community",
+          "note": "Yüksek gürültüden uzak, sohbet ve meze odaklı klasik düzeniyle beğeniliyor"
+        }
+      ],
+      "pros": [
+        "★4.7 · 1220+ doğrulanmış memnuniyet",
+        "Geleneksel meze-ara sıcak dengesi"
+      ],
+      "cons": [
+        "Hafta sonu ön rezervasyon gereksinimi"
+      ],
+      "uncertainties": [
+        "Bazı deniz ürünü mezeleri günlük temine bağlıdır."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cadde-stoa-ocakbasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Stoa Cadde Ocakbaşı",
+      "branchName": "Caddebostan, Ömerpaşa Sok. No:9/B, 34728 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJDdlS8KTHyhQRvP_HY4xL58M",
+      "coordinates": {
+        "lat": 40.969835599999996,
+        "lng": 29.066160500000002
+      },
+      "rating": 4.9,
+      "userRatingCount": 847,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://stoaturkey.com/",
+      "mapsUri": "https://maps.google.com/?cid=14116334623357665212",
+      "recommendedPrimary": [
+        "Zırh Kıyma Adana Kebap",
+        "Yağlı Kara & Çöp Şiş",
+        "Közde Gavurdağı & Humus"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taş Fırından Sıcak Lavaş & Muhammara",
+          "note": "Kebap öncesi masayı açan köz aromalı sıcak başlangıç ikilisi.",
+          "proof": "Oggusto Anadolu Yakası ocakbaşı seçkisi ve 840+ yerel değerlendirme"
+        }
+      ],
+      "suitability": {
+        "seating": "Ocak başı tezgah çevresi, şık iç salon ve bahçe masaları",
+        "crowdAndNoise": "Akşamları özenli ve düzenli ocakbaşı temposu",
+        "disadvantage": "Üst-orta bütçe bandında yer alıyor; hafta sonu akşamları erken rezervasyon şart.",
+        "transit": "Caddebostan Ömerpaşa Sokak ile Bağdat Caddesi arasında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Anadolu Yakası Modern Ocakbaşıları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-11",
+          "kind": "editorial",
+          "note": "Ömerpaşa Sokak’ta et kalitesi ve meze sunumuyla öne çıkıyor"
+        },
+        {
+          "title": "Müdavim — Stoa Cadde Ocakbaşı",
+          "url": "https://mudavim.net/",
+          "date": "2026-09-27",
+          "kind": "community",
+          "note": "★4.9 · 840+ değerlendirmeyle semtin en yüksek puanlı ocakbaşı adresi"
+        }
+      ],
+      "pros": [
+        "Yüksek et standardı ve hijyenik havalandırma",
+        "Modern meze eşleşmeleri"
+      ],
+      "cons": [
+        "Klasik esnaf ocakbaşına göre yüksek bütçe seviyesi"
+      ],
+      "uncertainties": [
+        "Özel kesim et seçenekleri günlük stoğa göre değişebiliyor."
+      ],
+      "selectionScore": 100,
       "selectedForSnapshot": true
     }
   ]

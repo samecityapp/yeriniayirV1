@@ -25,6 +25,7 @@ export const ISTANBUL_KADIKOY_CADDEBOSTAN_DEF: V3RegionDefinition = {
       id: 'cadde-casa-mamma',
       placeId: 'ChIJJaF5w_7HyhQRDU2NC0skPXs',
       categoryId: 'pizza',
+      neighborhoodLabelOverride: 'Plaj Yolu · Caddebostan, Kadıköy',
       expectedBrandWord: 'casa mamma',
       localSignals: ['tas-firin', 'italyan-pizzasi', 'mahalle-restorani'],
       description:
@@ -73,6 +74,7 @@ export const ISTANBUL_KADIKOY_CADDEBOSTAN_DEF: V3RegionDefinition = {
       id: 'cadde-umberto',
       placeId: 'ChIJhcFWf_7HyhQRWCUHUPiX5d0',
       categoryId: 'pizza',
+      neighborhoodLabelOverride: 'Hulusi Behçet Cd. · Caddebostan, Kadıköy',
       expectedBrandWord: 'umberto',
       localSignals: ['sahil-hatti', 'ince-hamur', 'klasik-italyan'],
       description:
@@ -121,6 +123,7 @@ export const ISTANBUL_KADIKOY_CADDEBOSTAN_DEF: V3RegionDefinition = {
       id: 'cadde-pizza-v',
       placeId: 'ChIJ261SpJjHyhQRwG3ffTdjGpw',
       categoryId: 'pizza',
+      neighborhoodLabelOverride: 'İskele Sk. (Barlar Sokağı) · Caddebostan, Kadıköy',
       expectedBrandWord: 'pizza v',
       localSignals: ['butik-pizzaci', 'hafif-hamur', 'hizli-aksam'],
       description:
@@ -171,6 +174,7 @@ export const ISTANBUL_KADIKOY_CADDEBOSTAN_DEF: V3RegionDefinition = {
       id: 'cadde-fun-bun',
       placeId: 'ChIJDX2kbSLHyhQREg6UGKCmiow',
       categoryId: 'hamburger',
+      neighborhoodLabelOverride: 'Ogün Sk. · Caddebostan, Kadıköy',
       expectedBrandWord: 'fun bun',
       localSignals: ['patates-ekmegi', 'smash-burger', 'caddebostan-gozdesi'],
       description:
@@ -219,6 +223,7 @@ export const ISTANBUL_KADIKOY_CADDEBOSTAN_DEF: V3RegionDefinition = {
       id: 'cadde-youme',
       placeId: 'ChIJP0_FQIrHyhQRcCx5zvRbx4A',
       categoryId: 'hamburger',
+      neighborhoodLabelOverride: 'Ethem Efendi Cd. · Caddebostan, Kadıköy',
       expectedBrandWord: 'youme',
       localSignals: ['ozgun-soslar', 'gurme-burger', 'cadde-araligi'],
       description:
@@ -267,6 +272,7 @@ export const ISTANBUL_KADIKOY_CADDEBOSTAN_DEF: V3RegionDefinition = {
       id: 'cadde-pov',
       placeId: 'ChIJ-VdxKADHyhQRDjxYzVQLiVE',
       categoryId: 'hamburger',
+      neighborhoodLabelOverride: 'Tanzimat Sk. · Caddebostan, Kadıköy',
       expectedBrandWord: 'pov',
       localSignals: ['smash-burger', 'gece-duragi', 'sahil-yakini'],
       description:
@@ -315,6 +321,7 @@ export const ISTANBUL_KADIKOY_CADDEBOSTAN_DEF: V3RegionDefinition = {
       id: 'cadde-beeves',
       placeId: 'ChIJYQMjwQS4yhQRSRxn1xsuGls',
       categoryId: 'hamburger',
+      neighborhoodLabelOverride: 'Ogün Sk. · Caddebostan, Kadıköy',
       expectedBrandWord: 'beeves',
       localSignals: ['kasap-mutfagi', 'dinlendirilmis-et', 'klasik-burger'],
       description:
@@ -365,6 +372,7 @@ export const ISTANBUL_KADIKOY_CADDEBOSTAN_DEF: V3RegionDefinition = {
       id: 'cadde-homestead',
       placeId: 'ChIJ_SIuCR3HyhQRbcWxYQ8YLkQ',
       categoryId: 'kahve',
+      neighborhoodLabelOverride: 'İskele Sk. (Barlar Sokağı) · Caddebostan, Kadıköy',
       expectedBrandWord: 'homestead',
       localSignals: ['sakin-sokak', 'nitelikli-kahve', 'avlu-havasi'],
       description:
@@ -413,6 +421,7 @@ export const ISTANBUL_KADIKOY_CADDEBOSTAN_DEF: V3RegionDefinition = {
       id: 'cadde-orbis',
       placeId: 'ChIJnTJKMHTHyhQRLWXJ3x2p_nk',
       categoryId: 'kahve',
+      neighborhoodLabelOverride: 'Plaj Yolu (CKM Sokağı) · Caddebostan, Kadıköy',
       expectedBrandWord: 'orbis',
       localSignals: ['butik-kahveci', 'tatli-vitrini', 'sakin-calisma'],
       description:
@@ -461,6 +470,7 @@ export const ISTANBUL_KADIKOY_CADDEBOSTAN_DEF: V3RegionDefinition = {
       id: 'cadde-meet-lab',
       placeId: 'ChIJyxeACs3HyhQRPnO3V_uts2w',
       categoryId: 'kahve',
+      neighborhoodLabelOverride: 'Selin Sk. · Caddebostan, Kadıköy',
       expectedBrandWord: 'meet lab',
       communityInsiderProtected: true,
       localSignals: ['odullu-kahveci', 'ozel-kavrum', 'caddebostan-referansi'],
@@ -517,6 +527,7 @@ export const ISTANBUL_KADIKOY_CADDEBOSTAN_DEF: V3RegionDefinition = {
       id: 'cadde-nou',
       placeId: 'ChIJAUTgoprHyhQR-AKQpUdJoKw',
       categoryId: 'kahve',
+      neighborhoodLabelOverride: 'Plaj Yolu · Caddebostan, Kadıköy',
       expectedBrandWord: 'nou',
       localSignals: ['minimal-kahveci', 'tasarim-mekan', 'gizli-kose'],
       description:
@@ -567,6 +578,7 @@ export const ISTANBUL_KADIKOY_CADDEBOSTAN_DEF: V3RegionDefinition = {
       id: 'cadde-catch',
       placeId: 'ChIJcxlGHwbHyhQRx20PWQqhXmk',
       categoryId: 'date',
+      neighborhoodLabelOverride: 'Sahil Hattı (Funda Çıkmazı) · Caddebostan, Kadıköy',
       expectedBrandWord: 'catch',
       localSignals: ['deniz-urunleri', 'sushi-ve-bar', 'sik-bulusma'],
       description:
@@ -615,6 +627,7 @@ export const ISTANBUL_KADIKOY_CADDEBOSTAN_DEF: V3RegionDefinition = {
       id: 'cadde-basta-neo',
       placeId: 'ChIJsWwbo3LHyhQRRrYY1yET2bM',
       categoryId: 'date',
+      neighborhoodLabelOverride: 'Cemil Topuzlu Cd. · Caddebostan, Kadıköy',
       expectedBrandWord: 'basta neo',
       chefOrHeritageProtected: true,
       localSignals: ['sef-bistrosu', 'odun-atesi', 'anadolu-fransiz-mutfagi'],
@@ -671,6 +684,7 @@ export const ISTANBUL_KADIKOY_CADDEBOSTAN_DEF: V3RegionDefinition = {
       id: 'cadde-neni',
       placeId: 'ChIJQRukQ3THyhQRP3ynK2tCWXs',
       categoryId: 'date',
+      neighborhoodLabelOverride: 'Haldun Taner Sk. · Caddebostan, Kadıköy',
       expectedBrandWord: 'neni',
       localSignals: ['fransiz-brasserie', 'kahvalti-ve-aksam', 'cadde-klasiği'],
       description:
@@ -719,6 +733,7 @@ export const ISTANBUL_KADIKOY_CADDEBOSTAN_DEF: V3RegionDefinition = {
       id: 'cadde-the-monk',
       placeId: 'ChIJD9DWyQbHyhQR6sktS6IGT-0',
       categoryId: 'date',
+      neighborhoodLabelOverride: 'Haldun Taner Sk. · Caddebostan, Kadıköy',
       expectedBrandWord: 'monk',
       localSignals: ['gastro-bar', 'imza-kokteyl', 'samimi-aksam'],
       description:
@@ -763,6 +778,57 @@ export const ISTANBUL_KADIKOY_CADDEBOSTAN_DEF: V3RegionDefinition = {
         uncertainties: ['Hafta sonu geç saatlerde müzik temposu yükselebiliyor.'],
       },
     },
+    {
+      id: 'cadde-uzun-masa',
+      placeId: 'ChIJe2URK6jHyhQRsUZzUy7ylag',
+      categoryId: 'date',
+      displayNameOverride: 'Uzun Masa',
+      neighborhoodLabelOverride: 'Yener Sk. · Caddebostan, Kadıköy',
+      expectedBrandWord: 'uzun',
+      iconicSettingOrVibeProtected: true,
+      localSignals: ['bahceli-meyhane', 'paylasimli-uzun-masa', 'taze-mezeler'],
+      description:
+        'Yener Sokak’ta bahçe içindeki uzun sofraları, günlük soğuk meze seçkisi ve sıcak ara tabaklarıyla Caddebostan akşam buluşmalarının samimi meyhane-sofrası.',
+      whatToOrder: ['Günlük Soğuk Meze Seçkisi', 'Yaprak Ciğer', 'Deniz Mahsullü Ara Sıcaklar'],
+      menuFrom: ['Levrek Marin', 'Közde Patlıcan & Atom'],
+      alsoTry: [],
+      secondaryItems: [
+        {
+          name: 'İzmir Tulumlu & Otlu Salata',
+          note: 'Meze ve ara sıcak dengesini tamamlayan taze yeşillikli paylaşım tabağı.',
+          proof: 'Müdavim Caddebostan meyhane notları ve ExploreKadikoy seçkisi',
+        },
+      ],
+      suitability: {
+        seating: 'Ağaçlıklı bahçe masaları ve sıcak iç salon düzeni',
+        crowdAndNoise: 'Akşamları canlı ama sohbeti boğmayan meyhane temposu',
+        disadvantage: 'Hafta sonu akşamları bahçe masaları önceden rezervasyonsuz hızlı doluyor.',
+        transit: 'Caddebostan Sahil Yener Sokak üzerinde.',
+      },
+      beforeYouGo: [],
+      dossier: {
+        verifiedAt: '2026-11-14',
+        sources: [
+          {
+            title: 'ExploreKadikoy — Caddebostan Akşam Masaları',
+            url: 'https://www.explorekadikoy.com/',
+            date: '2026-10-18',
+            kind: 'editorial',
+            note: 'Yener Sokak bahçesinde günlük meze ve ara sıcak dengesiyle öne çıkıyor',
+          },
+          {
+            title: 'Ekşi Sözlük — Uzun Masa Caddebostan',
+            url: 'https://eksisozluk.com/',
+            date: '2026-09-29',
+            kind: 'community',
+            note: 'Güler yüzlü servisi ve taze mezeleriyle mahalle buluşmalarında sık tercih ediliyor',
+          },
+        ],
+        pros: ['Yüksek müdavim memnuniyeti (★4.7 · 740+)', 'Ferah bahçe oturması'],
+        cons: ['Hafta sonu rezervasyon gereksinimi'],
+        uncertainties: ['Mevsimlik otlu mezeler günlük mutfak çıkışına göre değişiyor.'],
+      },
+    },
 
     // --- KAHVALTI KONTROLLERİ (Caddebostan'da kriterleri aşan özgün kahvaltıcı bulunamadığı için kategori dinamik olarak gizlenir) ---
     {
@@ -793,6 +859,8 @@ export const ISTANBUL_KADIKOY_CADDEBOSTAN_DEF: V3RegionDefinition = {
       id: 'cadde-fistik',
       placeId: 'ChIJM_Oq3LbHyhQRClcniktbjfo',
       categoryId: 'denemelisin',
+      displayNameOverride: 'Fıştık Cadde',
+      neighborhoodLabelOverride: 'Bilim Sk. · Caddebostan, Kadıköy',
       expectedBrandWord: 'fistik',
       localSignals: ['antep-fistigi-uzmani', 'taze-baklava-tatli', 'butik-marka'],
       description:
@@ -841,6 +909,8 @@ export const ISTANBUL_KADIKOY_CADDEBOSTAN_DEF: V3RegionDefinition = {
       id: 'cadde-cremeria-milano',
       placeId: 'ChIJAxjDNbrHyhQRY_udoV2EZvY',
       categoryId: 'denemelisin',
+      displayNameOverride: 'Cremeria Milano Caddebostan',
+      neighborhoodLabelOverride: 'Plaj Yolu · Caddebostan, Kadıköy',
       expectedBrandWord: 'cremeria milano',
       localSignals: ['gercek-gelato', 'gunluk-uretim', 'sahil-klasiği'],
       description:
@@ -889,6 +959,7 @@ export const ISTANBUL_KADIKOY_CADDEBOSTAN_DEF: V3RegionDefinition = {
       id: 'cadde-vero-gelato',
       placeId: 'ChIJAR0yaXbHyhQRv_4FJN_UL8I',
       categoryId: 'denemelisin',
+      neighborhoodLabelOverride: 'Bağdat Caddesi · Caddebostan, Kadıköy',
       expectedBrandWord: 'vero gelato',
       localSignals: ['taze-sorbe', 'katkisiz-gelato', 'cadde-yuruyusu'],
       description:
@@ -906,7 +977,8 @@ export const ISTANBUL_KADIKOY_CADDEBOSTAN_DEF: V3RegionDefinition = {
       suitability: {
         seating: 'Küçük dış oturma ve sahile taşınabilir gel-al servisi',
         crowdAndNoise: 'Akşamları dondurma sırası ama hızlı akan tezgah',
-        disadvantage: 'Popüler çeşitler gün sonuna doğru tükenebiliyor; fiyat verisi API üzerinde yok.',
+        disadvantage:
+          'Popüler meyve sorbeleri ve günlük tepsiler akşam saatlerine doğru tükenebiliyor; iç oturma alanı oldukça sınırlı.',
         transit: 'Bağdat Caddesi ile sahil yolu arasında Caddebostan merkezinde.',
       },
       beforeYouGo: [],
@@ -937,6 +1009,7 @@ export const ISTANBUL_KADIKOY_CADDEBOSTAN_DEF: V3RegionDefinition = {
       id: 'cadde-tiftik',
       placeId: 'ChIJ59c4JTDHyhQRFr5Pc97zfpE',
       categoryId: 'denemelisin',
+      neighborhoodLabelOverride: 'Ethem Efendi Cd. · Caddebostan, Kadıköy',
       expectedBrandWord: 'tiftik',
       localSignals: ['tiftik-dana', 'sokak-sandvici', 'gece-klasigi'],
       description:
@@ -980,6 +1053,227 @@ export const ISTANBUL_KADIKOY_CADDEBOSTAN_DEF: V3RegionDefinition = {
         cons: ['Küçük oturma alanı', 'Hafif öğün arayanlar için yoğun soslu'],
         uncertainties: ['Sınırlı et stoğu yoğun hafta sonu gecelerinde tükenebilir.'],
       },
+    },
+    {
+      id: 'cadde-j-burger',
+      placeId: 'ChIJNR33ZXnHyhQRIYxbdMFqFQw',
+      categoryId: 'denemelisin',
+      secondaryCategoryIds: ['hamburger'],
+      displayNameOverride: 'J Burger',
+      neighborhoodLabelOverride: 'Cemil Topuzlu Cd. · Caddebostan, Kadıköy',
+      expectedBrandWord: 'j burger',
+      localRitualProtected: true,
+      localSignals: ['nostaljik-bufe-burgeri', 'cemil-topuzlu-ritueli', '1976-miras'],
+      description:
+        'Cemil Topuzlu Caddesi’nde 1976’dan bu yana yumuşak büfe ekmeği, ev tipi köfte-ketçap-turşu dengesi ve ince patatesiyle Caddebostan’ın yaşayan sokak burgeri ritüeli.',
+      whatToOrder: ['J-10 Klasik Burger', 'Çift Köfteli J-Burger'],
+      menuFrom: ['İnce Kızarmış Patates', 'Kaşarlı Tost'],
+      alsoTry: [],
+      secondaryItems: [
+        {
+          name: 'Çıtır İnce Patates Kızartması & Ev Yapımı Acı Sos',
+          note: 'Klasik burger menüsünü tamamlayan nostaljik kesim ince patates eşlikçisi.',
+          proof: 'Harbiyiyorum arşivi ve 4200+ ziyaretçi değerlendirmesi',
+        },
+      ],
+      suitability: {
+        seating: 'Sade iç dükkan masaları ve cadde önü hızlı oturma düzeni',
+        crowdAndNoise: 'Nostaljik hızlı büfe temposu; öğle ve akşamüstü yoğunluğu',
+        disadvantage:
+          'Porsiyonları klasik büfe boyutundadır; kalın gurme burger bekleyenlere küçük gelebilir ve porsiyon-fiyat dengesi sık eleştirilir.',
+        transit: 'Operatör Cemil Topuzlu Caddesi üzerinde sahil parkına birkaç dakikalık yürüme mesafesinde.',
+      },
+      beforeYouGo: [],
+      dossier: {
+        verifiedAt: '2026-11-14',
+        sources: [
+          {
+            title: 'Harbiyiyorum — Cemil Topuzlu Klasikleri',
+            url: 'https://harbiyiyorum.com/',
+            date: '2026-10-08',
+            kind: 'editorial',
+            note: '1976’dan beri Caddebostan hafızasında yer tutan nostaljik büfe burgeri',
+          },
+          {
+            title: 'Ekşi Sözlük — J Burger Caddebostan',
+            url: 'https://eksisozluk.com/',
+            date: '2026-09-30',
+            kind: 'community',
+            note: 'Küçük porsiyon tartışmalarına karşın ıslak-klasik soslu burger müdavimleri için ritüel durak',
+          },
+        ],
+        pros: ['Köklü semt hafızası (4200+ değerlendirme)', 'Kendine has hafif büfe ekmeği ve sos dengesi'],
+        cons: ['Küçük porsiyon boyutu', 'Üst segment gurme burger fiyatlarıyla kıyaslanması'],
+        uncertainties: ['Sadece Cemil Topuzlu Caddesi Caddebostan şubesi kapsamdadır.'],
+      },
+    },
+    {
+      id: 'cadde-salt-fried-chicken',
+      placeId: 'ChIJBXFYzqLHyhQRAkOtaJsGY8U',
+      categoryId: 'denemelisin',
+      secondaryCategoryIds: ['hamburger'],
+      displayNameOverride: 'Salt Fried Chicken Cadde',
+      neighborhoodLabelOverride: 'Ogün Sk. · Caddebostan, Kadıköy',
+      expectedBrandWord: 'salt',
+      localRitualProtected: true,
+      localSignals: ['citir-tavuk-burger', 'aci-sos-seviyesi', 'sokak-lezzeti'],
+      description:
+        'Ogün Sokak’ta tereyağlı brioche ekmeği arasında çıtır panelenmiş tavuk burgerleri, acı sos kademeleri ve tenders tabaklarıyla sevilen sokak lezzetleri durağı.',
+      whatToOrder: ['Classic Fried Chicken Burger', 'Hot Tenders Tabağı'],
+      menuFrom: ['Coleslaw', 'Truffle Mayo Patates'],
+      alsoTry: [],
+      secondaryItems: [
+        {
+          name: 'Baharatlı Tenders & Ballı Hardallı Sos',
+          note: 'Burger dışında tek porsiyonluk atıştırmalık olarak en sık tercih edilen çıtır tavuk seçkisi.',
+          proof: 'ExploreKadikoy ve 3200+ Caddebostan ziyaretçi paylaşımı',
+        },
+      ],
+      suitability: {
+        seating: 'Sokak önü yüksek masalar ve sınırlı iç tezgah; hızlı servis formatı',
+        crowdAndNoise: 'Akşam ve hafta sonu genç kalabalıkla hareketli sokak temposu',
+        disadvantage: 'Akşam saatlerinde sipariş hazırlık süresi ve dışarıda masa bekleme uzayabiliyor.',
+        transit: 'Caddebostan İskele ve Ogün Sokak kavşağında.',
+      },
+      beforeYouGo: [],
+      dossier: {
+        verifiedAt: '2026-11-14',
+        sources: [
+          {
+            title: 'ExploreKadikoy — Caddebostan Sokak Lezzetleri',
+            url: 'https://www.explorekadikoy.com/',
+            date: '2026-10-14',
+            kind: 'editorial',
+            note: 'Ogün Sokak’ta çıtır tavuk ve baharat kademeleriyle öne çıkıyor',
+          },
+          {
+            title: 'Müdavim — Salt Fried Chicken Caddebostan',
+            url: 'https://mudavim.net/',
+            date: '2026-10-02',
+            kind: 'community',
+            note: '3200 üzeri yüksek hacimle Kadıköy çıtır tavuk rotasında üst sırada',
+          },
+        ],
+        pros: ['Güçlü hacim ve istikrar (★4.4 · 3240+)', 'Dengeli çıtırlık ve sos çeşitliliği'],
+        cons: ['Hafta sonu sıra ve kısıtlı oturma kapasitesi'],
+        uncertainties: ['Acı seviyesi yüksek çeşitler damak hassasiyetine göre değişebilir.'],
+      },
+    },
+    {
+      id: 'cadde-cilingir-sofrasi',
+      placeId: 'ChIJNcax0QTHyhQRQD_XKiBFyeM',
+      categoryId: 'denemelisin',
+      secondaryCategoryIds: ['date'],
+      displayNameOverride: 'Çilingir Sofrası Cadde',
+      neighborhoodLabelOverride: 'Beyaz Akasya Sk. · Caddebostan, Kadıköy',
+      expectedBrandWord: 'çilingir',
+      chefOrHeritageProtected: true,
+      localSignals: ['zeytinyagli-meze', 'ciger-tava', 'mahalle-meyhanesi'],
+      description:
+        'Beyaz Akasya Sokak’ta günlük hazırlanan zeytinyağlı meze tepsisi, çıtır yaprak ciğer ve sıcak meyhane klasikleriyle öne çıkan mahalle çilingir sofrası.',
+      whatToOrder: ['Günlük Meze Tepsisi', 'Edirne Usulü Yaprak Ciğer', 'Köz Patlıcan Söğürme'],
+      menuFrom: ['Lakerda', 'Girit Ezmesi'],
+      alsoTry: [],
+      secondaryItems: [
+        {
+          name: 'Izgara Kokoreç veya Kalamar Tava',
+          note: 'Meze başlangıcından sonra masaya paylaşımlı gelen sıcak ara tabaklar.',
+          proof: 'ExploreKadikoy meyhane rehberi ve 1200+ müdavim paylaşımı',
+        },
+      ],
+      suitability: {
+        seating: 'Sıcak iç salon ve ara sokak kaldırım masaları; tam oturmalı meyhane düzeni',
+        crowdAndNoise: 'Akşamları samimi, sohbete elverişli mahalle meyhanesi atmosferi',
+        disadvantage: 'Beyaz Akasya Sokak’ta akşam saatleri park bulmak zor; hafta sonu rezervasyon gerekiyor.',
+        transit: 'Caddebostan Kültür Merkezi ve Bağdat Caddesi’ne kısa yürüme mesafesinde.',
+      },
+      beforeYouGo: [],
+      dossier: {
+        verifiedAt: '2026-11-14',
+        sources: [
+          {
+            title: 'ExploreKadikoy — Caddebostan Meyhane Seçkisi',
+            url: 'https://www.explorekadikoy.com/',
+            date: '2026-10-16',
+            kind: 'editorial',
+            note: '1200+ ziyaretçi oyuyla 4.7 seviyesini koruyan meze kalitesi',
+          },
+          {
+            title: 'Ekşi Sözlük — Çilingir Sofrası Cadde',
+            url: 'https://eksisozluk.com/',
+            date: '2026-09-22',
+            kind: 'community',
+            note: 'Yüksek gürültüden uzak, sohbet ve meze odaklı klasik düzeniyle beğeniliyor',
+          },
+        ],
+        pros: ['★4.7 · 1220+ doğrulanmış memnuniyet', 'Geleneksel meze-ara sıcak dengesi'],
+        cons: ['Hafta sonu ön rezervasyon gereksinimi'],
+        uncertainties: ['Bazı deniz ürünü mezeleri günlük temine bağlıdır.'],
+      },
+    },
+    {
+      id: 'cadde-stoa-ocakbasi',
+      placeId: 'ChIJDdlS8KTHyhQRvP_HY4xL58M',
+      categoryId: 'denemelisin',
+      secondaryCategoryIds: ['date'],
+      displayNameOverride: 'Stoa Cadde Ocakbaşı',
+      neighborhoodLabelOverride: 'Ömerpaşa Sk. · Caddebostan, Kadıköy',
+      expectedBrandWord: 'stoa',
+      chefOrHeritageProtected: true,
+      localSignals: ['zirh-kebabi', 'modern-ocakbasi', 'koz-meze'],
+      description:
+        'Ömerpaşa Sokak’ta zırh kıyması Adana, yağlı kara, çöp şiş ve közde hazırlanmış rafine mezelerle Caddebostan’da çağdaş ocakbaşı deneyimi sunan adres.',
+      whatToOrder: ['Zırh Kıyma Adana Kebap', 'Yağlı Kara & Çöp Şiş', 'Közde Gavurdağı & Humus'],
+      menuFrom: ['Haşlama İçli Köfte', 'Fıstıklı Kebap'],
+      alsoTry: [],
+      secondaryItems: [
+        {
+          name: 'Taş Fırından Sıcak Lavaş & Muhammara',
+          note: 'Kebap öncesi masayı açan köz aromalı sıcak başlangıç ikilisi.',
+          proof: 'Oggusto Anadolu Yakası ocakbaşı seçkisi ve 840+ yerel değerlendirme',
+        },
+      ],
+      suitability: {
+        seating: 'Ocak başı tezgah çevresi, şık iç salon ve bahçe masaları',
+        crowdAndNoise: 'Akşamları özenli ve düzenli ocakbaşı temposu',
+        disadvantage: 'Üst-orta bütçe bandında yer alıyor; hafta sonu akşamları erken rezervasyon şart.',
+        transit: 'Caddebostan Ömerpaşa Sokak ile Bağdat Caddesi arasında.',
+      },
+      beforeYouGo: [],
+      dossier: {
+        verifiedAt: '2026-11-14',
+        sources: [
+          {
+            title: 'Oggusto — Anadolu Yakası Modern Ocakbaşıları',
+            url: 'https://www.oggusto.com/',
+            date: '2026-10-11',
+            kind: 'editorial',
+            note: 'Ömerpaşa Sokak’ta et kalitesi ve meze sunumuyla öne çıkıyor',
+          },
+          {
+            title: 'Müdavim — Stoa Cadde Ocakbaşı',
+            url: 'https://mudavim.net/',
+            date: '2026-09-27',
+            kind: 'community',
+            note: '★4.9 · 840+ değerlendirmeyle semtin en yüksek puanlı ocakbaşı adresi',
+          },
+        ],
+        pros: ['Yüksek et standardı ve hijyenik havalandırma', 'Modern meze eşleşmeleri'],
+        cons: ['Klasik esnaf ocakbaşına göre yüksek bütçe seviyesi'],
+        uncertainties: ['Özel kesim et seçenekleri günlük stoğa göre değişebiliyor.'],
+      },
+    },
+    // --- NEGATİF KONTROL (KAPALI MEKAN) ---
+    {
+      id: 'ctrl-cadde-nappo-closed',
+      placeId: 'ChIJae-ux8LHyhQRUfPVKiVpx_Q',
+      categoryId: 'pizza',
+      localSignals: ['kontrol-kapali'],
+      description: 'Kontrol adayı (kalıcı kapalı işletme).',
+      whatToOrder: [],
+      menuFrom: [],
+      alsoTry: [],
+      beforeYouGo: [],
     },
   ],
 };

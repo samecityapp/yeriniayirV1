@@ -3,6 +3,7 @@ import carsiSnapshotJson from './regions/istanbul-kadikoy-carsi.json';
 import yeldegirmeniSnapshotJson from './regions/istanbul-kadikoy-yeldegirmeni.json';
 import caddebostanSnapshotJson from './regions/istanbul-kadikoy-caddebostan.json';
 import suadiyeSnapshotJson from './regions/istanbul-kadikoy-suadiye.json';
+import bostanciSnapshotJson from './regions/istanbul-kadikoy-bostanci.json';
 import kusadasiSnapshotJson from './regions/aydin-kusadasi.json';
 import gaziantepSnapshotJson from './regions/gaziantep-merkez.json';
 import antalyaKaleiciSnapshotJson from './regions/antalya-kaleici.json';
@@ -17,6 +18,7 @@ const CARSI_SNAPSHOT = carsiSnapshotJson as V3VerifiedRegionSnapshot;
 const YELDEGIRMENI_SNAPSHOT = yeldegirmeniSnapshotJson as V3VerifiedRegionSnapshot;
 const CADDEBOSTAN_SNAPSHOT = caddebostanSnapshotJson as V3VerifiedRegionSnapshot;
 const SUADIYE_SNAPSHOT = suadiyeSnapshotJson as V3VerifiedRegionSnapshot;
+const BOSTANCI_SNAPSHOT = bostanciSnapshotJson as V3VerifiedRegionSnapshot;
 const KUSADASI_SNAPSHOT = kusadasiSnapshotJson as V3VerifiedRegionSnapshot;
 const GAZIANTEP_SNAPSHOT = gaziantepSnapshotJson as V3VerifiedRegionSnapshot;
 const ANTALYA_KALEICI_SNAPSHOT = antalyaKaleiciSnapshotJson as V3VerifiedRegionSnapshot;
@@ -30,6 +32,7 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   YELDEGIRMENI_SNAPSHOT,
   CADDEBOSTAN_SNAPSHOT,
   SUADIYE_SNAPSHOT,
+  BOSTANCI_SNAPSHOT,
   KUSADASI_SNAPSHOT,
   GAZIANTEP_SNAPSHOT,
   ANTALYA_KALEICI_SNAPSHOT,
@@ -51,6 +54,9 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'caddebostan-kadikoy': CADDEBOSTAN_SNAPSHOT,
   suadiye: SUADIYE_SNAPSHOT,
   'suadiye-kadikoy': SUADIYE_SNAPSHOT,
+  bostanci: BOSTANCI_SNAPSHOT,
+  'bostanci-kadikoy': BOSTANCI_SNAPSHOT,
+  catalcesme: BOSTANCI_SNAPSHOT,
   kusadasi: KUSADASI_SNAPSHOT,
   'kusadasi-aydin': KUSADASI_SNAPSHOT,
   'merkez-kusadasi-aydin': KUSADASI_SNAPSHOT,
@@ -112,7 +118,7 @@ function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {
  * Yalnızca V3 canlı Google Places pipeline'ından geçmiş bölgeler 'published' olur.
  */
 export const V3_LOCATIONS: FoodLocation[] = [
-  // YAYINDA (V3 %100 Canlı API Doğrulamalı — Kadıköy 5 Semt)
+  // YAYINDA (V3 %100 Canlı API Doğrulamalı — Kadıköy 6 Semt + Anadolu & Ege Seçkileri)
   ...V3_ALL_PUBLISHED_SNAPSHOTS.map(toPublishedLocation),
 
   // SIRADAKİ DOĞRULAMA KUYRUĞU (İl > İlçe > Semt ayrıştırılmış)

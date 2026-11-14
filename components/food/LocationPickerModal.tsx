@@ -114,7 +114,7 @@ export function LocationPickerModal({
           onClose();
         } else {
           setGpsMessage(
-            "Konumunuza yakın aktif bir rehber henüz bulunmuyor. Şu an Akyaka, Antalya, Gaziantep, Kuşadası, Kadıköy, Moda, Yeldeğirmeni, Caddebostan ve Suadiye rehberleri yayındadır."
+            "Konumunuza yakın aktif bir rehber henüz bulunmuyor. Şu an Akyaka, Antalya, Gaziantep, Kuşadası, Kadıköy, Moda, Yeldeğirmeni, Caddebostan, Suadiye ve Bostancı rehberleri yayındadır."
           );
         }
       },

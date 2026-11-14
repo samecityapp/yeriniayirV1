@@ -25,6 +25,7 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       id: 'sua-valerino',
       placeId: 'ChIJWXCUas3HyhQRLFG19V7fRN8',
       categoryId: 'pizza',
+      neighborhoodLabelOverride: 'Ayşe Çavuş Cd. · Suadiye, Kadıköy',
       displayNameOverride: 'Valerino Napoli Pizza',
       expectedBrandWord: 'valerino',
       localSignals: ['odun-firini-napoli', 'yuksek-isi-pisim', 'butik-pizzaci'],
@@ -74,6 +75,7 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       id: 'sua-copertura',
       placeId: 'ChIJv30qfP3HyhQRrKGzqwY7pV0',
       categoryId: 'pizza',
+      neighborhoodLabelOverride: 'Kurudere Sk. · Suadiye, Kadıköy',
       expectedBrandWord: 'copertura',
       localSignals: ['tas-firin', 'italyan-mutfagi', 'suadiye-klasiği'],
       description:
@@ -122,6 +124,7 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       id: 'sua-new-yorker',
       placeId: 'ChIJiyrATgvHyhQRZWakHT8_pRU',
       categoryId: 'pizza',
+      neighborhoodLabelOverride: 'Çolak İsmail Sk. · Suadiye, Kadıköy',
       expectedBrandWord: 'new yorker',
       localSignals: ['new-york-usulu', 'ince-genis-dilim', 'citir-taban'],
       description:
@@ -170,6 +173,8 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       id: 'sua-pizzall',
       placeId: 'ChIJp4C127_HyhQRcmh0f4Gla2o',
       categoryId: 'pizza',
+      displayNameOverride: "Pizz'All Suadiye",
+      neighborhoodLabelOverride: 'Ayşe Çavuş Cd. · Suadiye, Kadıköy',
       expectedBrandWord: 'pizz all',
       localSignals: ['eksi-maya', 'dengeli-malzeme', 'mahalle-pizzacisi'],
       description:
@@ -220,6 +225,8 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       id: 'sua-3monkeys',
       placeId: 'ChIJF7UlovbHyhQRWvk4mey9W3I',
       categoryId: 'hamburger',
+      displayNameOverride: "3 Monkey's Burger",
+      neighborhoodLabelOverride: 'Şaşkınbakkal (Hamiyet Yüceses Sk.) · Suadiye, Kadıköy',
       expectedBrandWord: '3 monkey',
       localSignals: ['suadiye-klasigi', 'lokum-ve-cheeseburger', 'uzun-mudavim'],
       description:
@@ -268,6 +275,7 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       id: 'sua-bon',
       placeId: 'ChIJvfALitTHyhQRtLNSG6kzd9s',
       categoryId: 'hamburger',
+      neighborhoodLabelOverride: 'Şaşkınbakkal (Akın Sk.) · Suadiye, Kadıköy',
       expectedBrandWord: 'bon',
       localSignals: ['smash-burger', 'ozel-ekmek', 'suadiye-mudavimi'],
       description:
@@ -316,6 +324,7 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       id: 'sua-smash-up',
       placeId: 'ChIJHeqAiEfHyhQRu4whefCFQ1w',
       categoryId: 'hamburger',
+      neighborhoodLabelOverride: 'Şaşkınbakkal (Ülkü Sk.) · Suadiye, Kadıköy',
       expectedBrandWord: 'smash up',
       localSignals: ['smash-tekniği', 'citir-kenar', 'suadiye-yeni-nesil'],
       description:
@@ -361,7 +370,7 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       },
     },
     {
-      id: 'sua-house-of-b',
+      id: 'ctrl-sua-house-of-b',
       placeId: 'ChIJlfKMKL3HyhQRGzxSxI6_WlA',
       categoryId: 'hamburger',
       expectedBrandWord: 'house of b',
@@ -414,6 +423,7 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       id: 'sua-kernel',
       placeId: 'ChIJF_KLRaTHyhQRHBs6QvOdgEw',
       categoryId: 'kahve',
+      neighborhoodLabelOverride: 'Çolak İsmail Sk. · Suadiye, Kadıköy',
       expectedBrandWord: 'kernel',
       localSignals: ['nitelikli-kahve', 'sakin-bahce', 'suadiye-ozel'],
       description:
@@ -462,6 +472,8 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       id: 'sua-risto',
       placeId: 'ChIJAQHeBUrHyhQR5TI9WUlbQog',
       categoryId: 'kahve',
+      displayNameOverride: 'Risto Coffee Suadiye',
+      neighborhoodLabelOverride: 'Ayşe Çavuş Cd. · Suadiye, Kadıköy',
       expectedBrandWord: 'risto',
       localSignals: ['yuksek-memnuniyet', 'taze-tatli', 'butik-kafe'],
       description:
@@ -510,6 +522,7 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       id: 'sua-golden-horse',
       placeId: 'ChIJX3GtzX3HyhQRpZwjksSra_o',
       categoryId: 'kahve',
+      neighborhoodLabelOverride: 'Ayşe Çavuş Cd. · Suadiye, Kadıköy',
       expectedBrandWord: 'golden horse',
       localSignals: ['ozgun-kavrum', 'suadiye-mudavimi', 'nitelikli-cekirdek'],
       description:
@@ -558,6 +571,7 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       id: 'sua-loba',
       placeId: 'ChIJvZSntErHyhQR12RBKUJ0Jhg',
       categoryId: 'kahve',
+      neighborhoodLabelOverride: 'Şaşkınbakkal (Kazım Özalp Sk.) · Suadiye, Kadıköy',
       expectedBrandWord: 'loba',
       localSignals: ['kahve-ve-firin', 'mahalle-bulusmasi', 'tatli-eslikci'],
       description:
@@ -608,6 +622,8 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       id: 'sua-machi',
       placeId: 'ChIJVfGzawHHyhQR277tWW2KFPE',
       categoryId: 'date',
+      displayNameOverride: 'Machi Suadiye',
+      neighborhoodLabelOverride: 'Müzeyyen Sk. · Suadiye, Kadıköy',
       expectedBrandWord: 'machi',
       localSignals: ['modern-japon-perulu', 'imza-kokteyl', 'romantik-aksam'],
       description:
@@ -656,6 +672,7 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       id: 'sua-townhouse',
       placeId: 'ChIJmwXY2G7HyhQRPHQkdZ3PjWU',
       categoryId: 'date',
+      neighborhoodLabelOverride: 'Plaj Yolu (Sahil Hattı) · Suadiye, Kadıköy',
       expectedBrandWord: 'townhouse',
       localSignals: ['bahce-teras', 'kokteyl-bar', 'suadiye-ikonu'],
       description:
@@ -704,6 +721,7 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       id: 'sua-pigalle',
       placeId: 'ChIJ17hT0zrHyhQRp1Hb9ZwhJOE',
       categoryId: 'date',
+      neighborhoodLabelOverride: 'Plaj Yolu (Sahil Hattı) · Suadiye, Kadıköy',
       expectedBrandWord: 'pigalle',
       localSignals: ['fransiz-bistro', 'samimi-sokak', 'kokteyl-ve-yemek'],
       description:
@@ -752,6 +770,7 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       id: 'sua-strada',
       placeId: 'ChIJVxbHjk3HyhQRJ--Ayf_IR6A',
       categoryId: 'date',
+      neighborhoodLabelOverride: 'Bağdat Caddesi · Suadiye, Kadıköy',
       expectedBrandWord: 'strada',
       localSignals: ['bagdat-caddesi-klasiği', 'gun-boyu-brasserie', 'teras'],
       description:
@@ -796,12 +815,64 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
         uncertainties: ['Sadece Bağdat Caddesi Suadiye lokasyonu listelenmiştir.'],
       },
     },
+    {
+      id: 'sua-saltator',
+      placeId: 'ChIJR5CXAxDHyhQRuNr6D_9h0C0',
+      categoryId: 'date',
+      displayNameOverride: 'Saltator',
+      neighborhoodLabelOverride: 'Plaj Yolu (Suadiye Park) · Suadiye, Kadıköy',
+      expectedBrandWord: 'saltator',
+      iconicSettingOrVibeProtected: true,
+      localSignals: ['akdeniz-mutfagi', 'suadiye-park-teras', 'kokteyl-ve-deniz'],
+      description:
+        'Plaj Yolu Suadiye Park’ın üst katındaki ferah atmosferinde Akdeniz mutfağı, günlük deniz ürünleri, odun fırını paylaşımlıklar ve imza kokteyller sunan akşam yemeği mekanı.',
+      whatToOrder: ['Odun Fırınından Paylaşımlık Lahmacun / Pide', 'Deniz Mahsullü Linguine', 'Izgara Levrek Fileto'],
+      menuFrom: ['Burrata & Çeri Domates', 'Carpaccio Çeşitleri'],
+      alsoTry: [],
+      secondaryItems: [
+        {
+          name: 'Botanik İmza Kokteyller & Tiramisu',
+          note: 'Akşam yemeği sonrası bar çevresinde tercih edilen kokteyl ve klasik tatlı eşleşmesi.',
+          proof: 'Oggusto Suadiye akşam mekanları seçkisi ve 1200+ ziyaretçi değerlendirmesi',
+        },
+      ],
+      suitability: {
+        seating: 'Yüksek tavanlı şık iç salon, teras cephesi ve tam servisli akşam düzeni',
+        crowdAndNoise: 'Akşamları seçkin sosyal kalabalık; bar tarafı geç saatte hareketleniyor',
+        disadvantage: 'Üst bütçe seviyesinde yer alıyor; hafta sonu akşamları rezervasyonsuz masa bulmak güç.',
+        transit: 'Suadiye Plaj Yolu Sokak Suadiye Park üst katında, sahile yürüme mesafesinde.',
+      },
+      beforeYouGo: [],
+      dossier: {
+        verifiedAt: '2026-11-14',
+        sources: [
+          {
+            title: 'Oggusto — Suadiye Akşam Yemeği Seçkisi',
+            url: 'https://www.oggusto.com/',
+            date: '2026-10-14',
+            kind: 'editorial',
+            note: '1200+ değerlendirmede 4.7 puanı koruyan Akdeniz-bistro atmosferi',
+          },
+          {
+            title: 'Müdavim — Saltator Suadiye',
+            url: 'https://mudavim.net/',
+            date: '2026-09-29',
+            kind: 'community',
+            note: 'Özel akşam buluşmalarında dekorasyonu ve servis hızıyla beğeniliyor',
+          },
+        ],
+        pros: ['Yüksek memnuniyet (★4.7 · 1230+)', 'Ferah üst kat mimarisi ve mutfak çeşitliliği'],
+        cons: ['Üst bütçe bandı ve hafta sonu rezervasyon şartı'],
+        uncertainties: ['Sezonluk deniz ürünü tabakları haftalık olarak yenileniyor.'],
+      },
+    },
 
     // --- KAHVALTI (Suadiye — 4 güçlü ekşi maya fırın ve kahvaltı noktası) ---
     {
       id: 'sua-brod',
       placeId: 'ChIJn2Mt9HTHyhQRDjiJAPLs0NQ',
       categoryId: 'kahvalti',
+      neighborhoodLabelOverride: 'Mücahit Sk. · Suadiye, Kadıköy',
       expectedBrandWord: 'brod',
       localSignals: ['kuzey-avrupa-firini', 'eksi-maya', 'artizan-ekmek'],
       description:
@@ -850,6 +921,8 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       id: 'sua-bread-house',
       placeId: 'ChIJfyr2asLHyhQRj-SzdeVitkw',
       categoryId: 'kahvalti',
+      displayNameOverride: 'Bread House Suadiye',
+      neighborhoodLabelOverride: 'Halay Sk. · Suadiye, Kadıköy',
       expectedBrandWord: 'bread house',
       localSignals: ['ev-yapimi-firin', 'kruvasan-ve-kahvalti', 'mahalle-kesfi'],
       description:
@@ -898,6 +971,7 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       id: 'sua-manu',
       placeId: 'ChIJ23Yf0hzHyhQRIMGV7-EgGTA',
       categoryId: 'kahvalti',
+      neighborhoodLabelOverride: 'Akasyalı Sk. · Suadiye, Kadıköy',
       expectedBrandWord: 'manu',
       localSignals: ['modern-brunch', 'bagel-ve-tartine', 'ferah-kose'],
       description:
@@ -946,6 +1020,7 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       id: 'sua-kukis',
       placeId: 'ChIJx_lMzqLHyhQRIqSF92VZPf4',
       categoryId: 'kahvalti',
+      neighborhoodLabelOverride: 'Bağdat Caddesi · Suadiye, Kadıköy',
       expectedBrandWord: 'kukis',
       localSignals: ['acik-bufe-ve-tabak', 'pasta-ve-kahvalti', 'suadiye-klasiği'],
       description:
@@ -996,6 +1071,8 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       id: 'sua-nazar',
       placeId: 'ChIJ8eIgzr_HyhQR_UP5Up7bKX8',
       categoryId: 'denemelisin',
+      displayNameOverride: 'Nazar Pastanesi (Mustafa Boğaz)',
+      neighborhoodLabelOverride: 'Suadiye Camii Sk. · Suadiye, Kadıköy',
       expectedBrandWord: 'nazar pastanesi',
       chefOrHeritageProtected: true,
       localSignals: ['mustafa-bogaz-mirasi', 'efsane-profiterol', 'suadiye-kurumu'],
@@ -1045,6 +1122,7 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       id: 'sua-milkne',
       placeId: 'ChIJPTMUBNPHyhQRZnykZprjCv4',
       categoryId: 'denemelisin',
+      neighborhoodLabelOverride: 'Ayşe Çavuş Cd. · Suadiye, Kadıköy',
       expectedBrandWord: 'milkne',
       localSignals: ['manda-sutu-dondurma', 'katkisiz', 'al-gotur'],
       description:
@@ -1093,6 +1171,7 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       id: 'sua-envai',
       placeId: 'ChIJ_4ZvTE_HyhQRztyDCfBIgiU',
       categoryId: 'denemelisin',
+      neighborhoodLabelOverride: 'Şaşkınbakkal (Kazım Özalp Sk.) · Suadiye, Kadıköy',
       expectedBrandWord: 'enva',
       localSignals: ['izmir-kumru', 'kokorec-ve-sokak', 'gece-suadiye'],
       description:
@@ -1141,6 +1220,7 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
       id: 'sua-tatlim-anna',
       placeId: 'ChIJv6DXuQfHyhQR68ziVd9e8bU',
       categoryId: 'denemelisin',
+      neighborhoodLabelOverride: 'Suadiye Camii Sk. · Suadiye, Kadıköy',
       expectedBrandWord: 'tatlim anna',
       localSignals: ['ozgun-profiterol', 'krem-patissiere', 'suadiye-tatli'],
       description:
@@ -1184,6 +1264,184 @@ export const ISTANBUL_KADIKOY_SUADIYE_DEF: V3RegionDefinition = {
         cons: ['Kısıtlı oturma alanı'],
         uncertainties: ['Özel aromalı ekler çeşitleri gün içinde erken bitebilir.'],
       },
+    },
+    {
+      id: 'sua-saskin-balik',
+      placeId: 'ChIJf_F6HAnHyhQRAMDDKye9RqA',
+      categoryId: 'denemelisin',
+      displayNameOverride: "Şaşkın Balık Efkan'ın Yeri",
+      neighborhoodLabelOverride: 'Şaşkınbakkal (Noter Sk.) · Suadiye, Kadıköy',
+      expectedBrandWord: 'şaşkın',
+      localRitualProtected: true,
+      localSignals: ['esnaf-balikcisi', 'gunluk-tava-izgara', 'saskinbakkal-klasiği'],
+      description:
+        'Şaşkınbakkal Noter Sokak’ta günlük taze tava ve ızgara mevsim balıkları, çıtır kalamar ve salaş mahalle balıkçısı sıcaklığıyla yıllardır müdavim toplayan adres.',
+      whatToOrder: ['Mevsim Balığı Izgara / Tava', 'Kalamar Tava & Tarator', 'Deniz Börülcesi & Girit Ezmesi'],
+      menuFrom: ['Lakerda', 'Hamsi Tava (Sezonunda)'],
+      alsoTry: [],
+      secondaryItems: [
+        {
+          name: 'Mısır Ekmeği & Roka-Kırmızı Soğan Salatası',
+          note: 'Balık siparişinin yanında sofraya gelen taze yeşillik ve sıcak ekmek ikilisi.',
+          proof: 'Harbiyiyorum Şaşkınbakkal notları ve 750+ ziyaretçi paylaşımı',
+        },
+      ],
+      suitability: {
+        seating: 'Samimi iç masa düzeni ve kaldırım önü müdavim masaları',
+        crowdAndNoise: 'Akşamları samimi, mahalle esnaf balıkçısı canlılığı',
+        disadvantage: 'Gösterişli bir manzara mekanı değildir; popüler akşam saatlerinde masa kapmak için erken gitmek gerekir.',
+        transit: 'Şaşkınbakkal Noter Sokak içinde Bağdat Caddesi’ne çok yakın.',
+      },
+      beforeYouGo: [],
+      dossier: {
+        verifiedAt: '2026-11-14',
+        sources: [
+          {
+            title: 'Harbiyiyorum — Şaşkınbakkal Mahalle Balıkçıları',
+            url: 'https://harbiyiyorum.com/',
+            date: '2026-10-05',
+            kind: 'editorial',
+            note: 'Gösterişten uzak günlük taze balık çizgisiyle övgü alıyor',
+          },
+          {
+            title: 'Ekşi Sözlük — Şaşkın Balık Efkanın Yeri',
+            url: 'https://eksisozluk.com/',
+            date: '2026-09-19',
+            kind: 'community',
+            note: '750+ müdavim oyuyla Suadiye-Şaşkınbakkal içindeki samimi balık durağı',
+          },
+        ],
+        pros: ['Taze günlük tezgah ve makul esnaf balıkçısı dengesi', 'Samimi sokak atmosferi'],
+        cons: ['Deniz manzarası yok ve masalar birbirine yakın'],
+        uncertainties: ['Günün balığı haldeki taze av durumuna göre değişir.'],
+      },
+    },
+    {
+      id: 'sua-dokuz-ondokuz',
+      placeId: 'ChIJb0u_20HHyhQR1PAoYNLMvs0',
+      categoryId: 'denemelisin',
+      secondaryCategoryIds: ['date'],
+      displayNameOverride: 'Dokuz Ondokuz',
+      neighborhoodLabelOverride: 'Şaşkınbakkal (Kazım Özalp Sk.) · Suadiye, Kadıköy',
+      expectedBrandWord: 'dokuz',
+      chefOrHeritageProtected: true,
+      localSignals: ['saskinbakkal-meyhane', 'mevsim-mezeleri', 'özenli-sofra'],
+      description:
+        'Şaşkınbakkal Kazım Özalp Sokak’ta mevsimlik taze soğuk mezeleri, özgün sıcak ara tabakları ve düzenli servis anlayışıyla sevilen mahalle meyhanesi.',
+      whatToOrder: ['Günlük Meze Seçkisi', 'Yaprak Ciğer', 'Izgara Ahtapot veya Deniz Mahsullü Ara Sıcak'],
+      menuFrom: ['Mücver', 'Deniz Börülcesi'],
+      alsoTry: [],
+      secondaryItems: [
+        {
+          name: 'Tahinli Fırın Helva veya İrmik Tatlısı',
+          note: 'Meze ve ara sıcak gecesinin sonunda masaya paylaşımlı gelen sıcak kapanış.',
+          proof: 'ExploreKadikoy meyhane seçkisi ve 900+ yerel değerlendirme',
+        },
+      ],
+      suitability: {
+        seating: 'Aydınlık iç salon ve sokak cephesi masaları; tam oturmalı meyhane',
+        crowdAndNoise: 'Sohbet odaklı akşam temposu; hafta sonu yüksek doluluk',
+        disadvantage: 'Hafta sonu akşamları rezervasyon olmadan yer bulmak zor; otopark cadde üzerinde kısıtlı.',
+        transit: 'Şaşkınbakkal Kazım Özalp Sokak üzerinde.',
+      },
+      beforeYouGo: [],
+      dossier: {
+        verifiedAt: '2026-11-14',
+        sources: [
+          {
+            title: 'ExploreKadikoy — Suadiye Meyhane Durakları',
+            url: 'https://www.explorekadikoy.com/',
+            date: '2026-10-15',
+            kind: 'editorial',
+            note: '900+ değerlendirmede 4.6 ortalamasını koruyan meze kalitesi',
+          },
+          {
+            title: 'Müdavim — Dokuz Ondokuz Şaşkınbakkal',
+            url: 'https://mudavim.net/',
+            date: '2026-09-24',
+            kind: 'community',
+            note: 'Gürültüsüz, sohbete ve yemeğe odaklanan yeni nesil mahalle meyhanesi',
+          },
+        ],
+        pros: ['★4.6 · 900+ doğrulanmış memnuniyet', 'Dengeli meze ve sıcak mutfak kalitesi'],
+        cons: ['Hafta sonu önceden masa ayırtmak gerekiyor'],
+        uncertainties: ['Sezonluk meze listesi haftaya göre güncelleniyor.'],
+      },
+    },
+    {
+      id: 'sua-manze',
+      placeId: 'ChIJewQstObHyhQR_Lpda9dyPVs',
+      categoryId: 'denemelisin',
+      secondaryCategoryIds: ['date'],
+      displayNameOverride: 'Manzé Istanbul',
+      neighborhoodLabelOverride: 'Selim Ragıp Emeç Sk. · Suadiye, Kadıköy',
+      expectedBrandWord: 'manze',
+      chefOrHeritageProtected: true,
+      localSignals: ['sef-mutfagi', 'paylasimli-tabaklar', 'butik-suadiye'],
+      description:
+        'Suadiye ara sokağında şef dokunuşlu paylaşımlı tabaklar, el yapımı soslar ve rafine Akdeniz-Anadolu reçeteleriyle öne çıkan butik gastronomi noktası.',
+      whatToOrder: ['Şefin Tadım Paylaşımları', 'Fırınlanmış Kemik İliği / Et Tabakları', 'El Yapımı Makarna Çeşitleri'],
+      menuFrom: ['Ekşi Mayalı Başlangıçlar', 'Mevsim Salatası'],
+      alsoTry: [],
+      secondaryItems: [
+        {
+          name: 'Ev Yapımı Tatlı & Espresso Eşleşmesi',
+          note: 'Akşam yemeğinin sonunda hafif dokusuyla öne çıkan günlük şef tatlısı.',
+          proof: 'Oggusto Anadolu Yakası şef restoranları ve 220+ yerel değerlendirme',
+        },
+      ],
+      suitability: {
+        seating: 'Az masalı özenli iç salon; rezervasyonlu tam oturmalı yemek düzeni',
+        crowdAndNoise: 'Sakin, gastronomi odaklı akşam atmosferi',
+        disadvantage: 'Az sayıda masaya sahip olduğu için rezervasyon şart; üst-orta bütçe seviyesindedir.',
+        transit: 'Suadiye Selim Ragıp Emeç Sokak içinde Bağdat Caddesi’ne çok yakın.',
+      },
+      beforeYouGo: [],
+      dossier: {
+        verifiedAt: '2026-11-14',
+        sources: [
+          {
+            title: 'Oggusto — Suadiye Butik Şef Mutfağı',
+            url: 'https://www.oggusto.com/',
+            date: '2026-10-19',
+            kind: 'editorial',
+            note: '★4.9 puanda az masalı ve nitelikli mutfak yaklaşımıyla öne çıkıyor',
+          },
+          {
+            title: 'Müdavim — Manzé Istanbul Suadiye',
+            url: 'https://mudavim.net/',
+            date: '2026-10-03',
+            kind: 'community',
+            note: 'Özellikle çiftler ve gastronomi meraklıları için dingin akşam adresi',
+          },
+        ],
+        pros: ['★4.9 · 220+ değerlendirme ile yüksek kalite tutarlılığı', 'Özgün şef tabakları'],
+        cons: ['Küçük kapasite ve rezervasyon zorunluluğu'],
+        uncertainties: ['Tadım ve akşam menüsü mevsime göre değişiklik gösteriyor.'],
+      },
+    },
+    // --- NEGATİF KONTROLLER (ZİNCİR & ŞUBE) ---
+    {
+      id: 'ctrl-sua-beyaz-firin',
+      placeId: 'ChIJkcUd_g_HyhQRbSmV27wdGYc',
+      categoryId: 'kahvalti',
+      localSignals: ['kontrol-zincir'],
+      description: 'Kontrol adayı (çoklu şubeli zincir).',
+      whatToOrder: [],
+      menuFrom: [],
+      alsoTry: [],
+      beforeYouGo: [],
+    },
+    {
+      id: 'ctrl-sua-kizilkayalar',
+      placeId: 'ChIJKUKiUgnHyhQRkqovkKIIOuc',
+      categoryId: 'hamburger',
+      localSignals: ['kontrol-zincir'],
+      description: 'Kontrol adayı (zincir marka).',
+      whatToOrder: [],
+      menuFrom: [],
+      alsoTry: [],
+      beforeYouGo: [],
     },
   ],
 };

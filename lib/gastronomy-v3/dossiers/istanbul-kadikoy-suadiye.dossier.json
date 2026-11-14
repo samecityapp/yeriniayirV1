@@ -2,12 +2,22 @@
   "schemaVersion": "3.4",
   "regionKey": "istanbul-kadikoy-suadiye",
   "displayName": "Suadiye, Kadıköy, İstanbul",
-  "verifiedAt": "2026-11-13T22:45:59.793Z",
-  "selectedCount": 23,
+  "verifiedAt": "2026-11-14T08:57:44.931Z",
+  "selectedCount": 27,
   "rejectedControls": [
     {
-      "id": "sua-house-of-b",
+      "id": "ctrl-sua-house-of-b",
       "resolvedName": "House of B Suadiye",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-sua-beyaz-firin",
+      "resolvedName": "Beyaz Fırın Suadiye",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-sua-kizilkayalar",
+      "resolvedName": "Kızılkayalar Şaşkınbakkal",
       "reason": "chain_or_franchise"
     }
   ],
@@ -222,7 +232,7 @@
     {
       "id": "sua-pizzall",
       "categoryId": "pizza",
-      "resolvedName": "PİZZ’ALL",
+      "resolvedName": "Pizz'All Suadiye",
       "branchName": "Suadiye, Ayşeçavuş Cd No:15/E, 34740 Kadıköy/İstanbul, Türkiye",
       "placeId": "ChIJp4C127_HyhQRcmh0f4Gla2o",
       "coordinates": {
@@ -291,7 +301,7 @@
     {
       "id": "sua-3monkeys",
       "categoryId": "hamburger",
-      "resolvedName": "3 MONKEY’S BURGER",
+      "resolvedName": "3 Monkey's Burger",
       "branchName": "monkey Burger, Suadiye, Hamiyet Yüceses Sk. Petek apartmanı D:21/c 3, 34740 Kadıköy/İstanbul, Türkiye",
       "placeId": "ChIJF7UlovbHyhQRWvk4mey9W3I",
       "coordinates": {
@@ -564,7 +574,7 @@
     {
       "id": "sua-risto",
       "categoryId": "kahve",
-      "resolvedName": "Risto Coffee suadiye",
+      "resolvedName": "Risto Coffee Suadiye",
       "branchName": "Suadiye, Ayşeçavuş Cd No:17, 34740 Kadıköy/İstanbul, Türkiye",
       "placeId": "ChIJAQHeBUrHyhQR5TI9WUlbQog",
       "coordinates": {
@@ -771,7 +781,7 @@
     {
       "id": "sua-machi",
       "categoryId": "date",
-      "resolvedName": "MACHI",
+      "resolvedName": "Machi Suadiye",
       "branchName": "Suadiye, Müzeyyen Sk. No:2, 34740 Kadıköy/İstanbul, Türkiye",
       "placeId": "ChIJVfGzawHHyhQR277tWW2KFPE",
       "coordinates": {
@@ -1047,6 +1057,75 @@
       "selectedForSnapshot": true
     },
     {
+      "id": "sua-saltator",
+      "categoryId": "date",
+      "resolvedName": "Saltator",
+      "branchName": "Plaj Yolu Sokak Suadiye Park A Blok No:18 Kat:3, 34740, Suadiye, 34740 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJR5CXAxDHyhQRuNr6D_9h0C0",
+      "coordinates": {
+        "lat": 40.956895100000004,
+        "lng": 29.0801473
+      },
+      "rating": 4.7,
+      "userRatingCount": 1230,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://saltatorbalik.com/",
+      "mapsUri": "https://maps.google.com/?cid=3301246274975226552",
+      "recommendedPrimary": [
+        "Odun Fırınından Paylaşımlık Lahmacun / Pide",
+        "Deniz Mahsullü Linguine",
+        "Izgara Levrek Fileto"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Botanik İmza Kokteyller & Tiramisu",
+          "note": "Akşam yemeği sonrası bar çevresinde tercih edilen kokteyl ve klasik tatlı eşleşmesi.",
+          "proof": "Oggusto Suadiye akşam mekanları seçkisi ve 1200+ ziyaretçi değerlendirmesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Yüksek tavanlı şık iç salon, teras cephesi ve tam servisli akşam düzeni",
+        "crowdAndNoise": "Akşamları seçkin sosyal kalabalık; bar tarafı geç saatte hareketleniyor",
+        "disadvantage": "Üst bütçe seviyesinde yer alıyor; hafta sonu akşamları rezervasyonsuz masa bulmak güç.",
+        "transit": "Suadiye Plaj Yolu Sokak Suadiye Park üst katında, sahile yürüme mesafesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Suadiye Akşam Yemeği Seçkisi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-14",
+          "kind": "editorial",
+          "note": "1200+ değerlendirmede 4.7 puanı koruyan Akdeniz-bistro atmosferi"
+        },
+        {
+          "title": "Müdavim — Saltator Suadiye",
+          "url": "https://mudavim.net/",
+          "date": "2026-09-29",
+          "kind": "community",
+          "note": "Özel akşam buluşmalarında dekorasyonu ve servis hızıyla beğeniliyor"
+        }
+      ],
+      "pros": [
+        "Yüksek memnuniyet (★4.7 · 1230+)",
+        "Ferah üst kat mimarisi ve mutfak çeşitliliği"
+      ],
+      "cons": [
+        "Üst bütçe bandı ve hafta sonu rezervasyon şartı"
+      ],
+      "uncertainties": [
+        "Sezonluk deniz ürünü tabakları haftalık olarak yenileniyor."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
       "id": "sua-brod",
       "categoryId": "kahvalti",
       "resolvedName": "Bröd Suadiye",
@@ -1118,7 +1197,7 @@
     {
       "id": "sua-bread-house",
       "categoryId": "kahvalti",
-      "resolvedName": "BREAD HOUSE home baked",
+      "resolvedName": "Bread House Suadiye",
       "branchName": "Suadiye, Halay Sk. No:13, 34740 Kadıköy/İstanbul, Türkiye",
       "placeId": "ChIJfyr2asLHyhQRj-SzdeVitkw",
       "coordinates": {
@@ -1322,7 +1401,7 @@
     {
       "id": "sua-nazar",
       "categoryId": "denemelisin",
-      "resolvedName": "Nazar Pastanesi- Suadiye Mustafa Boğaz",
+      "resolvedName": "Nazar Pastanesi (Mustafa Boğaz)",
       "branchName": "Suadiye, Suadiye Camii Sk. 28/A, 34740 Kadıköy/İstanbul, Türkiye",
       "placeId": "ChIJ8eIgzr_HyhQR_UP5Up7bKX8",
       "coordinates": {
@@ -1594,6 +1673,213 @@
         "Özel aromalı ekler çeşitleri gün içinde erken bitebilir."
       ],
       "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "sua-saskin-balik",
+      "categoryId": "denemelisin",
+      "resolvedName": "Şaşkın Balık Efkan'ın Yeri",
+      "branchName": "Suadiye, Noter Sk. No:8, 34740 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJf_F6HAnHyhQRAMDDKye9RqA",
+      "coordinates": {
+        "lat": 40.963770499999995,
+        "lng": 29.076911799999998
+      },
+      "rating": 4.4,
+      "userRatingCount": 752,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11549126270373838848",
+      "recommendedPrimary": [
+        "Mevsim Balığı Izgara / Tava",
+        "Kalamar Tava & Tarator",
+        "Deniz Börülcesi & Girit Ezmesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mısır Ekmeği & Roka-Kırmızı Soğan Salatası",
+          "note": "Balık siparişinin yanında sofraya gelen taze yeşillik ve sıcak ekmek ikilisi.",
+          "proof": "Harbiyiyorum Şaşkınbakkal notları ve 750+ ziyaretçi paylaşımı"
+        }
+      ],
+      "suitability": {
+        "seating": "Samimi iç masa düzeni ve kaldırım önü müdavim masaları",
+        "crowdAndNoise": "Akşamları samimi, mahalle esnaf balıkçısı canlılığı",
+        "disadvantage": "Gösterişli bir manzara mekanı değildir; popüler akşam saatlerinde masa kapmak için erken gitmek gerekir.",
+        "transit": "Şaşkınbakkal Noter Sokak içinde Bağdat Caddesi’ne çok yakın."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Harbiyiyorum — Şaşkınbakkal Mahalle Balıkçıları",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-10-05",
+          "kind": "editorial",
+          "note": "Gösterişten uzak günlük taze balık çizgisiyle övgü alıyor"
+        },
+        {
+          "title": "Ekşi Sözlük — Şaşkın Balık Efkanın Yeri",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-09-19",
+          "kind": "community",
+          "note": "750+ müdavim oyuyla Suadiye-Şaşkınbakkal içindeki samimi balık durağı"
+        }
+      ],
+      "pros": [
+        "Taze günlük tezgah ve makul esnaf balıkçısı dengesi",
+        "Samimi sokak atmosferi"
+      ],
+      "cons": [
+        "Deniz manzarası yok ve masalar birbirine yakın"
+      ],
+      "uncertainties": [
+        "Günün balığı haldeki taze av durumuna göre değişir."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "sua-dokuz-ondokuz",
+      "categoryId": "denemelisin",
+      "resolvedName": "Dokuz Ondokuz",
+      "branchName": "Suadiye, Kazım Özalp Sk. No:16-18A, 34740 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJb0u_20HHyhQR1PAoYNLMvs0",
+      "coordinates": {
+        "lat": 40.963409999999996,
+        "lng": 29.077140099999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 900,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.dokuzondokuz.com/",
+      "mapsUri": "https://maps.google.com/?cid=14825512227278745812",
+      "recommendedPrimary": [
+        "Günlük Meze Seçkisi",
+        "Yaprak Ciğer",
+        "Izgara Ahtapot veya Deniz Mahsullü Ara Sıcak"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli Fırın Helva veya İrmik Tatlısı",
+          "note": "Meze ve ara sıcak gecesinin sonunda masaya paylaşımlı gelen sıcak kapanış.",
+          "proof": "ExploreKadikoy meyhane seçkisi ve 900+ yerel değerlendirme"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık iç salon ve sokak cephesi masaları; tam oturmalı meyhane",
+        "crowdAndNoise": "Sohbet odaklı akşam temposu; hafta sonu yüksek doluluk",
+        "disadvantage": "Hafta sonu akşamları rezervasyon olmadan yer bulmak zor; otopark cadde üzerinde kısıtlı.",
+        "transit": "Şaşkınbakkal Kazım Özalp Sokak üzerinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Suadiye Meyhane Durakları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-15",
+          "kind": "editorial",
+          "note": "900+ değerlendirmede 4.6 ortalamasını koruyan meze kalitesi"
+        },
+        {
+          "title": "Müdavim — Dokuz Ondokuz Şaşkınbakkal",
+          "url": "https://mudavim.net/",
+          "date": "2026-09-24",
+          "kind": "community",
+          "note": "Gürültüsüz, sohbete ve yemeğe odaklanan yeni nesil mahalle meyhanesi"
+        }
+      ],
+      "pros": [
+        "★4.6 · 900+ doğrulanmış memnuniyet",
+        "Dengeli meze ve sıcak mutfak kalitesi"
+      ],
+      "cons": [
+        "Hafta sonu önceden masa ayırtmak gerekiyor"
+      ],
+      "uncertainties": [
+        "Sezonluk meze listesi haftaya göre güncelleniyor."
+      ],
+      "selectionScore": 98,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "sua-manze",
+      "categoryId": "denemelisin",
+      "resolvedName": "Manzé Istanbul",
+      "branchName": "Suadiye, Selim Ragıp Emeç Sk. No:6 D:A, 34740 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJewQstObHyhQR_Lpda9dyPVs",
+      "coordinates": {
+        "lat": 40.95912200000001,
+        "lng": 29.080762000000004
+      },
+      "rating": 4.9,
+      "userRatingCount": 226,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "https://manzeistanbul.com/",
+      "mapsUri": "https://maps.google.com/?cid=6574537300575632124",
+      "recommendedPrimary": [
+        "Şefin Tadım Paylaşımları",
+        "Fırınlanmış Kemik İliği / Et Tabakları",
+        "El Yapımı Makarna Çeşitleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Tatlı & Espresso Eşleşmesi",
+          "note": "Akşam yemeğinin sonunda hafif dokusuyla öne çıkan günlük şef tatlısı.",
+          "proof": "Oggusto Anadolu Yakası şef restoranları ve 220+ yerel değerlendirme"
+        }
+      ],
+      "suitability": {
+        "seating": "Az masalı özenli iç salon; rezervasyonlu tam oturmalı yemek düzeni",
+        "crowdAndNoise": "Sakin, gastronomi odaklı akşam atmosferi",
+        "disadvantage": "Az sayıda masaya sahip olduğu için rezervasyon şart; üst-orta bütçe seviyesindedir.",
+        "transit": "Suadiye Selim Ragıp Emeç Sokak içinde Bağdat Caddesi’ne çok yakın."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Suadiye Butik Şef Mutfağı",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-19",
+          "kind": "editorial",
+          "note": "★4.9 puanda az masalı ve nitelikli mutfak yaklaşımıyla öne çıkıyor"
+        },
+        {
+          "title": "Müdavim — Manzé Istanbul Suadiye",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-03",
+          "kind": "community",
+          "note": "Özellikle çiftler ve gastronomi meraklıları için dingin akşam adresi"
+        }
+      ],
+      "pros": [
+        "★4.9 · 220+ değerlendirme ile yüksek kalite tutarlılığı",
+        "Özgün şef tabakları"
+      ],
+      "cons": [
+        "Küçük kapasite ve rezervasyon zorunluluğu"
+      ],
+      "uncertainties": [
+        "Tadım ve akşam menüsü mevsime göre değişiklik gösteriyor."
+      ],
+      "selectionScore": 100,
       "selectedForSnapshot": true
     }
   ]

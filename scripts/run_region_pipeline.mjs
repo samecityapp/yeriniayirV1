@@ -12,6 +12,7 @@ const PUBLISHED_REGION_KEYS = [
   'istanbul-kadikoy-yeldegirmeni',
   'istanbul-kadikoy-caddebostan',
   'istanbul-kadikoy-suadiye',
+  'istanbul-kadikoy-bostanci',
   'aydin-kusadasi',
   'gaziantep-merkez',
   'antalya-kaleici',
