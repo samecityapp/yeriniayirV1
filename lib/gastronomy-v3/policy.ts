@@ -112,6 +112,20 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'coffee manifesto',
   'balta burger',
   'beylerbeyi profiterol',
+  'saltbae',
+  'the house cafe',
+  'faruk güllüoğlu',
+  'faruk gulluoglu',
+  'hafız mustafa',
+  'hafiz mustafa',
+  'cro & cups',
+  'cro and cups',
+  'white burger',
+  'biber burger',
+  'perlo',
+  'burgerlab',
+  'the co. coffee',
+  'the co coffee',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([
@@ -179,6 +193,9 @@ export const FOOD_PLACE_TYPES = new Set<string>([
   'buffet_restaurant',
   'european_restaurant',
   'pub',
+  'eastern_european_restaurant',
+  'bagel_shop',
+  'french_restaurant',
 ]);
 
 export const FORBIDDEN_VISITOR_COPY_REGEX =

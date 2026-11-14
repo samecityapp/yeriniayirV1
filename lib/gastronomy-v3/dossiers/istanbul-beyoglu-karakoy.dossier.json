@@ -1,0 +1,2195 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "istanbul-beyoglu-karakoy",
+  "displayName": "Karaköy, Beyoğlu, İstanbul",
+  "verifiedAt": "2026-11-14T17:44:36.331Z",
+  "selectedCount": 31,
+  "rejectedControls": [
+    {
+      "id": "ctrl-kar-espressolab-chain",
+      "resolvedName": "Espressolab Karaköy",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-kar-kronotrop-chain",
+      "resolvedName": "Kronotrop Karaköy",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-kar-faruk-gulluoglu-chain",
+      "resolvedName": "Faruk Güllüoğlu Karaköy",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-kar-perlos-chain",
+      "resolvedName": "Perlo's Burger&More Karaköy (Est. 2021)",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-kar-burgerlab-chain",
+      "resolvedName": "BURGERLAB KARAKÖY",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-kar-factory-kahve-purity",
+      "resolvedName": "Factory Karaköy",
+      "reason": "kahve_category_not_coffee_specialist:chocolate_shop"
+    },
+    {
+      "id": "ctrl-kar-karabatak-below-44",
+      "resolvedName": "Karabatak Karaköy",
+      "reason": "below_quality_threshold:★3.6(2784)"
+    },
+    {
+      "id": "ctrl-kar-akin-balik-below-44",
+      "resolvedName": "Akın Balık Karaköy",
+      "reason": "below_quality_threshold:★3.8(4698)"
+    },
+    {
+      "id": "ctrl-kar-namli-below-44",
+      "resolvedName": "Namlı Gurme",
+      "reason": "below_quality_threshold:★4.1(6570)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "kar-crust-co",
+      "categoryId": "pizza",
+      "resolvedName": "Crust & Co",
+      "branchName": "Kemankeş Karamustafa Paşa, Karantina Sk. No: 3A, 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJZUQjJmi5yhQRGB_prpeA7OQ",
+      "coordinates": {
+        "lat": 41.022825999999995,
+        "lng": 28.976141
+      },
+      "rating": 4.9,
+      "userRatingCount": 736,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://crustcopizzeria.com/",
+      "mapsUri": "https://maps.google.com/?cid=16495700924114214680",
+      "recommendedPrimary": [
+        "Margherita Bufala",
+        "Diavola",
+        "Burrata Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Akdeniz Salatası & Ev Yapımı Tiramisu",
+          "note": "Odun fırınından çıkan pizzaların öncesi ve sonrası için taze yeşillikli salata ve günlük hazırlanan tiramisu eşlikçisi.",
+          "proof": "Karaköy yerel gastronomi seçkileri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Samimi iç salon, bar önü ve sokak içi masa düzeni",
+        "crowdAndNoise": "Akşamları pizza severler ve mahalle müdavimleriyle canlı ama sıcak sokak atmosferi",
+        "disadvantage": "Küçük sokak içi salonda akşam yemek saatlerinde kısa bekleme yaşanabiliyor.",
+        "transit": "Kemankeş Karantina Sokak No:3A üzerinde Mumhane ve Rıhtım hattının hemen arka sokağında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Karaköy Artizan Pizzacılar",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Odun fırını tekniği ve hafif hamur dokusuyla Karaköy’de öne çıkan adres"
+        },
+        {
+          "title": "Beyoğlu Gastronomi Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur kabarıklığı ve malzeme tazeliğiyle yüksek memnuniyet alıyor"
+        }
+      ],
+      "pros": [
+        "Odun ateşinde pişen hafif artizan pizza hamuru",
+        "Sakin Karantina Sokak konumu ve özenli malzeme"
+      ],
+      "cons": [
+        "Akşam yoğunluğunda küçük salonda masa bulmak için erken gitmek gerekebiliyor"
+      ],
+      "uncertainties": [
+        "Mevsimsel özel malzemeli pizza çeşitleri haftalık tedarike göre değişebilir."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-faros",
+      "categoryId": "pizza",
+      "resolvedName": "Faros Karaköy",
+      "branchName": "Kemankeş Karamustafa Paşa, Fransız Gç Sokağı İş Merkezi No:53 D:8, 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJdeMOpGO5yhQRgeZYUNomHts",
+      "coordinates": {
+        "lat": 41.0243971,
+        "lng": 28.979667
+      },
+      "rating": 4.8,
+      "userRatingCount": 3791,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.faroskarakoy.com/",
+      "mapsUri": "https://maps.google.com/?cid=15789100062700267137",
+      "recommendedPrimary": [
+        "Burrata & Pesto Pizza",
+        "Quattro Formaggi",
+        "Taze Tagliatelle"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bruschetta Tabağı & Panna Cotta",
+          "note": "Pasaj masalarında paylaşım için tercih edilen başlangıç tabağı ve hafif İtalyan sütlü tatlısı kapanışı.",
+          "proof": "Karaköy İtalyan mutfağı rehberleri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi pasaj içi kapalı alan ve Kemankeş tarafı oturma masaları",
+        "crowdAndNoise": "Gün boyu hareketli, akşamları çiftler ve gruplarla keyifli pasaj temposu",
+        "disadvantage": "Fransız Geçidi çevresi hafta sonları kalabalık olduğundan servis temposu yoğunlaşabiliyor.",
+        "transit": "Kemankeş Fransız Geçidi Sokağı İş Merkezi üzerinde Karaköy vapur iskelesine yürüme mesafesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Time Out İstikamet Notları — Fransız Geçidi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihi pasaj dokusu içinde taş fırın pizzaları ve taze makarnalarıyla tanınan durak"
+        },
+        {
+          "title": "Karaköy Müdavim Değerlendirmeleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Pasaj atmosferi ve pizzaların hamur dengesiyle yüksek beğeni topluyor"
+        }
+      ],
+      "pros": [
+        "Tarihi Fransız Geçidi içinde atmosferik konum",
+        "Pizza ve taze makarna çeşitliliğinde istikrarlı mutfak"
+      ],
+      "cons": [
+        "Hafta sonu akşamlarında pasaj masaları hızla dolabiliyor"
+      ],
+      "uncertainties": [
+        "Pasaj dışı oturma düzeni mevsim ve hava şartlarına göre değişebilir."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-hr-italy",
+      "categoryId": "pizza",
+      "resolvedName": "HR Italy Karaköy",
+      "branchName": "Kemankeş Karamustafa Paşa, Kölemen Sk. No:12, 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJTaVDwkS3yhQRC3SNv_aOreQ",
+      "coordinates": {
+        "lat": 41.0231437,
+        "lng": 28.976743199999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 2973,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://hr-italy.com/",
+      "mapsUri": "https://maps.google.com/?cid=16477983802045330443",
+      "recommendedPrimary": [
+        "Trüflü Mantarlı Pizza",
+        "Klasik Margherita",
+        "Fettuccine Alfredo"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sarımsaklı Focaccia & Fırın Tiramisu",
+          "note": "Sıcak zeytinyağlı focaccia başlangıcı ve masada porsiyonlanan klasik kahveli tiramisu.",
+          "proof": "Beyoğlu sokak lezzetleri değerlendirmeleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Ara sokak içi sıcak salon ve sokağa taşan küçük masalar",
+        "crowdAndNoise": "Akşamları samimi, genç ve turist karmaşıklığından uzak durmaya çalışan düzenli masa ritmi",
+        "disadvantage": "Kölemen Sokak dar olduğundan kalabalık gruplar için önceden masa durumu sormak gerekebilir.",
+        "transit": "Kemankeş Kölemen Sokak No:12 üzerinde Mumhane ile Rıhtım Caddesi arasında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreBeyoğlu — Karaköy İtalyan Mutfakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kölemen Sokak’ta ince hamurlu pizza ve taze makarna servisiyle öne çıkıyor"
+        },
+        {
+          "title": "Yerel Konuk Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Porsiyon dengesi ve trüflü çeşitleriyle binlerce konuktan yüksek puan alıyor"
+        }
+      ],
+      "pros": [
+        "İnce çıtır hamur dengesi ve sıcak servis ilgisi",
+        "Pizza yanında taze fettuccine alternatifi"
+      ],
+      "cons": [
+        "Kölemen Sokak üzerindeki alan sınırlı olduğu için yoğun akşamlarda bekletme olabiliyor"
+      ],
+      "uncertainties": [
+        "Trüf ve özel şarküteri içerikleri dönemsel tedarike göre güncellenebilir."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-galatta-1950",
+      "categoryId": "pizza",
+      "resolvedName": "Galatta Karaköy 1950",
+      "branchName": "Kemankeş Karamustafa Paşa, Mumhane Cd. No: 9/B, 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJYZFXlFy5yhQROGaBX07dgtY",
+      "coordinates": {
+        "lat": 41.0232746,
+        "lng": 28.9771328
+      },
+      "rating": 4.5,
+      "userRatingCount": 1240,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://galatta1950.com/",
+      "mapsUri": "https://maps.google.com/?cid=15457160199768467000",
+      "recommendedPrimary": [
+        "Füme Kaburgalı Pizza",
+        "Margherita",
+        "Pepperoni Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Rokalı Parmesan Salatası & Tiramisu",
+          "note": "Füme etli pizzaların yanında tazelik katan rokalı salata ve tatlı kapanış alternatifi.",
+          "proof": "Mumhane gastronomi notları ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Genişçe iç salon ve Mumhane Caddesi cepheli dış masalar",
+        "crowdAndNoise": "Mumhane yürüyüş aksının enerjisini yansıtan dinamik akşam temposu",
+        "disadvantage": "Mumhane Caddesi üzerindeki dış masalar yoğun saatlerde cadde hareketliliğinden etkilenebilir.",
+        "transit": "Kemankeş Mumhane Caddesi No:9/B üzerinde Karaköy rıhtıma birkaç adım uzaklıkta."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Karaköy Akşam Rotaları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mumhane Caddesi üzerinde taş fırın pizzalarıyla bilinen merkezi adres"
+        },
+        {
+          "title": "Semt Pizzacı Rehberi",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Füme kaburgalı pizza hamuru ve merkezi konumuyla tercih ediliyor"
+        }
+      ],
+      "pros": [
+        "Mumhane hattında kolay erişilebilir taş fırın pizzacı",
+        "Füme et ve peynir dengesi güçlü klasik çeşitler"
+      ],
+      "cons": [
+        "Hafta sonu cadde önü oturumunda sokak gürültüsü artabiliyor"
+      ],
+      "uncertainties": [
+        "Yoğun geç akşam saatlerinde bazı şarküteri malzemeleri tükenebiliyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-chuck-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Chuck Burger",
+      "branchName": "Kemankeş Karamustafa Paşa, Mumhane Cd. No:38, 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJ32HtQ5W5yhQR8YEqfrz2d50",
+      "coordinates": {
+        "lat": 41.025490999999995,
+        "lng": 28.980059999999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 2924,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11346809075614253553",
+      "recommendedPrimary": [
+        "Double Chuck Smash",
+        "Truffle Cheeseburger",
+        "Baharatlı Kızarmış Patates"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Karamelize Soğanlı Dip Sos & Çıtır Tavuk Parçaları",
+          "note": "Smash burger menüsünün yanında paylaşımlık olarak tercih edilen sos ve çıtır tavuk eşlikçisi.",
+          "proof": "Beyoğlu burger seçkileri ve menü detayları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt iç oturma düzeni, bar tabureleri ve hızlı gel-al servisi",
+        "crowdAndNoise": "Öğle ve akşam geç saatlere dek sürekli sirkülasyonlu genç sokak lezzeti temposu",
+        "disadvantage": "Salon kapasitesi kısıtlı olduğu için kalabalık arkadaş gruplarının masa bulması zorlaşabiliyor.",
+        "transit": "Kemankeş Mumhane Caddesi No:38 üzerinde Tophane tramvay durağına yürüyüş mesafesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Avrupa Yakası Smash Burgerler",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Döküm plakada karamelize edilen ince smash köftesiyle Mumhane’de öne çıkıyor"
+        },
+        {
+          "title": "Karaköy Burger Müdavimleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Binlerce misafirin değerlendirmesiyle yüksek istikrar koruyor"
+        }
+      ],
+      "pros": [
+        "Döküm plakada karamelize edilmiş çıtır kenarlı köfte",
+        "Hızlı servis ve dengeli trüf-peynir sosu"
+      ],
+      "cons": [
+        "Küçük dükkan içi yoğun akşam saatlerinde çabuk dolabiliyor"
+      ],
+      "uncertainties": [
+        "Geç saatlerde günlük brioche ekmek stoğuna göre kapanış saati esneyebiliyor."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-instaburger",
+      "categoryId": "hamburger",
+      "resolvedName": "Instaburger Karaköy",
+      "branchName": "Müeyyetzade, Necatibey Cd. No:57, 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJScdC3D65yhQRmixdTyWlqXI",
+      "coordinates": {
+        "lat": 41.024603299999995,
+        "lng": 28.9776742
+      },
+      "rating": 4.6,
+      "userRatingCount": 184,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8262316571051764890",
+      "recommendedPrimary": [
+        "Smoky Cheeseburger",
+        "Klasik Smash Burger",
+        "Kajun Baharatlı Patates"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Soğan Halkası & Ev Yapımı Burger Sosu",
+          "note": "Sipariş üzerine sıcak çıkan çıtır soğan halkası ve et tadını bastırmayan özel dip sos.",
+          "proof": "Karaköy yerel esnaf notları ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük cadde dükkanı, birkaç masa ve hızlı paket servisi",
+        "crowdAndNoise": "Öğle arası çalışanlar ve akşam yemeğinde sakin bir burger arayanlar için rahat tempo",
+        "disadvantage": "Ana cadde üzerinde araç park imkanı bulunmuyor; mekan içi oldukça mütevazı.",
+        "transit": "Müeyyetzade Necatibey Caddesi No:57 üzerinde Kemeraltı ve Karaköy tramvay duraklarına yakın."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Beyoğlu Sokak Burgerleri Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Necatibey hattında sade ve et odaklı butik burger reçeteleri sunan durak"
+        },
+        {
+          "title": "Karaköy Müdavim Notları",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Etin sulu pişirimi ve sos dengesiyle olumlu geri bildirim alıyor"
+        }
+      ],
+      "pros": [
+        "Et lezzetini öne çıkaran sade ve hafif burger yapısı",
+        "Hızlı hazırlık ve makul bekleme süresi"
+      ],
+      "cons": [
+        "İç oturma alanı küçük olduğundan uzun oturumlar yerine hızlı yemek için daha uygun"
+      ],
+      "uncertainties": [
+        "Özel patates sosları yoğun öğle-akşam arası dönemsel değişebilir."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-coffee-sapiens",
+      "categoryId": "kahve",
+      "resolvedName": "Coffee Sapiens",
+      "branchName": "Kemankeş Karamustafa Paşa, Kılıç Ali Paşa Mescidi Sk. No:10 D:C, 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJfbm5Aty5yhQRMsgCz1-HqH4",
+      "coordinates": {
+        "lat": 41.0259025,
+        "lng": 28.9811386
+      },
+      "rating": 4.5,
+      "userRatingCount": 573,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://coffeesapiens.com/",
+      "mapsUri": "https://maps.google.com/?cid=9126693490431019058",
+      "recommendedPrimary": [
+        "V60 Tek Köken Demleme",
+        "Flat White",
+        "Cold Brew"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bademli Kruvasan & Kavrulmuş Çekirdek Seçkisi",
+          "note": "Sabah kahvelerinin yanında taze servis edilen pastane eşlikçisi ve ev demlemeleri için perakende çekirdek paketleri.",
+          "proof": "İstanbul nitelikli kahve kavurmacıları rehberleri ve dükkan menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Kavurma makinesi manzaralı iç bar ve taş sokak kenarı tabureleri",
+        "crowdAndNoise": "Gündüz kahve meraklıları ve kavrum kokusunu seven müdavimlerle enerjik sokak ortamı",
+        "disadvantage": "İç oturma alanı dar ve çoğu konuk sokak kenarında kısa kahve molası verdiği için uzun çalışma düzenine uygun değil.",
+        "transit": "Kemankeş Kılıç Ali Paşa Mescidi Sokak No:10/C üzerinde Tophane durağına yürüyüşle beş dakika."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — İstanbul En Nitelikli Kavurmacılar",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Karaköy’de dükkan içi kavrum ve tek köken demleme kültürünün öncü duraklarından"
+        },
+        {
+          "title": "Kahve Topluluğu Seçkisi",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çekirdek tazeliği ve espresso kalibrasyonuyla istikrarlı beğeni topluyor"
+        }
+      ],
+      "pros": [
+        "Dükkânda taze kavrulan nitelikli tek köken çekirdekler",
+        "Dengeli V60 demlemeler ve ikonik Karaköy sokak dokusu"
+      ],
+      "cons": [
+        "Oturma kapasitesi dar, hafta sonu sokak önü oldukça hareketli olabiliyor"
+      ],
+      "uncertainties": [
+        "Mevsimsel tek köken çekirdek hasatları dönemsel yenilenir."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-hub962",
+      "categoryId": "kahve",
+      "resolvedName": "HUB962 Coffee Karaköy",
+      "branchName": "Müeyyetzade, Kemeraltı Cd. No:11 D:J, 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJk16iUoO5yhQRYJJyhChxky8",
+      "coordinates": {
+        "lat": 41.0253571,
+        "lng": 28.977248799999995
+      },
+      "rating": 4.9,
+      "userRatingCount": 862,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.hub962.com/",
+      "mapsUri": "https://maps.google.com/?cid=3428208160193811040",
+      "recommendedPrimary": [
+        "Cortado",
+        "Filtre Kahve",
+        "Iced Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "San Sebastian Cheesecake & Limonlu Kek",
+          "note": "Kahve eşliğinde sunulan günlük tatlı vitrini; özellikle kremamsı cheesecake ve narenciye aromalı kek öne çıkıyor.",
+          "proof": "Karaköy üçüncü dalga kafe notları ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Sakin, aydınlık tasarım salonu ve rahat çalışma uyumlu masalar",
+        "crowdAndNoise": "Gündüz odaklanmış çalışanlar ve tasarım dokulu sakin bir kahve molası arayanlarla dengeli",
+        "disadvantage": "Kemeraltı Caddesi tramvay hattı üzerinde yer aldığı için giriş kapısı önünde araç durağı bulunmuyor.",
+        "transit": "Müeyyetzade Kemeraltı Caddesi No:11J üzerinde Karaköy ve Tophane tramvay duraklarının ortasında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Karaköy Çalışma & Kahve Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tasarım konseptini yüksek kahve standardıyla birleştiren Kemeraltı durağı"
+        },
+        {
+          "title": "Semt Kahve Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sakin ortamı ve dengeli süt köpüğü işçiliğiyle çok yüksek puan alıyor"
+        }
+      ],
+      "pros": [
+        "Estetik ve ferah iç mekan düzeni",
+        "Bilgisayar eşliğinde rahat kahve molası imkanı"
+      ],
+      "cons": [
+        "Hafta sonu öğleden sonra sakin masa bulmak zorlaşabiliyor"
+      ],
+      "uncertainties": [
+        "Sanat ve tasarım sergilerine göre iç oturma yerleşimi dönemsel değişebilir."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-coe-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Coe Coffee",
+      "branchName": "Kemankeş Karamustafa Paşa, Yuva Sk. NO: 2 A, 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJu2T2Zbq5yhQRKcOVx4UW__0",
+      "coordinates": {
+        "lat": 41.025421699999995,
+        "lng": 28.980669899999995
+      },
+      "rating": 4.9,
+      "userRatingCount": 347,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18302372174491927337",
+      "recommendedPrimary": [
+        "Chemex Demleme",
+        "Espresso Macchiato",
+        "Cold Brew"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mozzarella Pesto Bagel & Fransız Ekler",
+          "note": "Gündüz kahve yanında sık tercih edilen taze peynirli bagel ve günlük ekler çeşitleri.",
+          "proof": "Karaköy yeni nesil kahve durakları ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık köşe salonu ve sokak içi keyifli dış oturma alanı",
+        "crowdAndNoise": "Hafta içi sakin ve düzenli, hafta sonları sokak kültürünü seven kahve kitlesiyle hareketli",
+        "disadvantage": "Yuva Sokak dar olduğundan hafta sonu öğle saatlerinde dış masalar hızla dolabiliyor.",
+        "transit": "Kemankeş Yuva Sokak No:2A üzerinde Mumhane’den Galataport yönüne yürürken köşe başında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Karaköy Nitelikli Kahve Haritası",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Chemex ve V60 demleme çeşitliliğiyle Yuva Sokak’ta ayrışan yeni nesil durak"
+        },
+        {
+          "title": "Yerel Müdavim Değerlendirmeleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Barista ilgisi ve kahve tazeliğiyle çok yüksek memnuniyet yakalıyor"
+        }
+      ],
+      "pros": [
+        "Geniş el demlemesi ve soğuk kahve seçenekleri",
+        "Sıcak sokak köşesi oturumu ve taze tuzlu eşlikçiler"
+      ],
+      "cons": [
+        "Küçük sokak köşesi kalabalık gruplara uygun değil"
+      ],
+      "uncertainties": [
+        "Tatlı vitrini günlük üretim hacmine göre değişebilir."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-espoir",
+      "categoryId": "kahve",
+      "resolvedName": "Espoir Karaköy",
+      "branchName": "Kemankeş Karamustafa Paşa, Ali Paşa Değirmeni Sk. No:12, 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJHVQ4fg65yhQR8rkH-jq3Y7A",
+      "coordinates": {
+        "lat": 41.025472199999996,
+        "lng": 28.979425799999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 209,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/espoir_karakoy?igsh=d3RpNDdtamIzbjUx&utm_source=qr",
+      "mapsUri": "https://maps.google.com/?cid=12710204037300468210",
+      "recommendedPrimary": [
+        "Flat White",
+        "V60 Demleme",
+        "Cappuccino"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Havuçlu Kek & Yulaflı Kurabiye",
+          "note": "Filtre kahve ve sütlü espresso içeceklerine eşlik eden hafif baharatlı ev yapımı fırın ürünleri.",
+          "proof": "Kemankeş sokak kafeleri rehberi ve işletme kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Minimal iç alan ve sakin sokak önü masaları",
+        "crowdAndNoise": "Kalabalık Mumhane aksından kaçıp sohbet eşliğinde kahve içmek isteyenlere uygun",
+        "disadvantage": "Sınırlı masa sayısı nedeniyle uzun toplantı grupları için uygun değildir.",
+        "transit": "Kemankeş Ali Paşa Değirmeni Sokak No:12 üzerinde Kemeraltı ile Mumhane arasında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreBeyoğlu — Sakin Karaköy Kafeleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kalabalık ana akslardan bir sokak içeride nitelikli espresso sunan dükkan"
+        },
+        {
+          "title": "Karaköy Kahve Müdavimleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahve kalibrasyonu ve samimi servisiyle istikrarlı puan koruyor"
+        }
+      ],
+      "pros": [
+        "Ana caddelerin gürültüsünden uzak sakin konum",
+        "Dengeli espresso ve taze demleme profili"
+      ],
+      "cons": [
+        "Oturma alanı kısıtlı olduğundan yoğun saatlerde yer beklemek gerekebilir"
+      ],
+      "uncertainties": [
+        "Haftalık tatlı eşlikçisi menüsü günün pişirimine göre değişebilir."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-kava-roasting",
+      "categoryId": "kahve",
+      "resolvedName": "Kava Coffee Roasting",
+      "branchName": "Hacımimi, Necatibey Cd. No:63/A, 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJP4TdoN25yhQRB0qJxhKO__Q",
+      "coordinates": {
+        "lat": 41.024816799999996,
+        "lng": 28.9778581
+      },
+      "rating": 4.4,
+      "userRatingCount": 664,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://kavacoffeeroasting.com/",
+      "mapsUri": "https://maps.google.com/?cid=17653985275607075335",
+      "recommendedPrimary": [
+        "Kava Espresso Blend",
+        "V60 Pour Over",
+        "Cortado"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Muzlu Kek & Çikolatalı Cookie",
+          "note": "Gün boyu kahve molasına eşlik eden taze muzlu kek ve fırın kurabiye çeşitleri.",
+          "proof": "Necatibey kahve kavurmacıları rehberi ve menü notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Genişçe iç mekan, çalışma masaları ve cadde önü tabureleri",
+        "crowdAndNoise": "Sabah işe gidenler ve öğleden sonra demleme kahve arayan müdavimlerle dengeli",
+        "disadvantage": "Necatibey Caddesi önünden geçen trafik nedeniyle dış mekan yerine iç salon daha sessizdir.",
+        "transit": "Hacımimi Necatibey Caddesi No:63/A üzerinde Kemankeş ve Karaköy merkezine birkaç dakikalık yürüyüşte."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Karaköy Kavurmacıları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Necatibey üzerinde uzun yıllardır kendi harmanlarını kavuran üçüncü dalga kafe"
+        },
+        {
+          "title": "İstanbul Üçüncü Dalga Haritası",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İstikrarlı kavrum kalitesiyle yüzlerce konuğun düzenli durağı"
+        }
+      ],
+      "pros": [
+        "Taze kavrulmuş espresso ve filtre seçenekleri",
+        "İç mekanda rahat çalışma ve oturum imkanı"
+      ],
+      "cons": [
+        "Cadde cephesi açık havada biraz gürültülü olabiliyor"
+      ],
+      "uncertainties": [
+        "Dönemsel tek köken kavrum stokları mevsime bağlı olarak değişir."
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-murver",
+      "categoryId": "date",
+      "resolvedName": "Mürver",
+      "branchName": "Kemankeş Karamustafa Paşa, Kemankeş Cd. No:57-59, 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJqb2RQ9y5yhQRjiF403kTipg",
+      "coordinates": {
+        "lat": 41.024767,
+        "lng": 28.9800579
+      },
+      "rating": 4.4,
+      "userRatingCount": 2750,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.murverrestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=10991619254510952846",
+      "recommendedPrimary": [
+        "Külde Ahtapot",
+        "Trakya Kıvırcık Kuzu",
+        "Ördek Topik"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yanık Sütlaç & Tütsülü İmza Kokteyller",
+          "note": "Açık ateş mutfağının karakterini sürdüren karamelize tatlı kapanışı ve bar ekibinin mevsimsel imza kokteylleri.",
+          "proof": "Karaköy şef mutfakları seçkileri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Teras ve panaromik Boğaz manzaralı şık akşam salonu (rezervasyon şart)",
+        "crowdAndNoise": "Özel akşam yemekleri, kutlamalar ve romantik buluşmalar için özenli, rafine atmosfer",
+        "disadvantage": "Günler öncesinden rezervasyon gerektirebiliyor ve üst-segment bir akşam bütçesi gerektirir.",
+        "transit": "Kemankeş Caddesi No:57-59 teras katında Karaköy tramvay ve vapur iskelesinin karşısında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — İstanbul Açık Ateş Şef Restoranları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Canlı ateş ve yerel Anadolu mahsullerini Boğaz terasında sunan önde gelen şef mutfağı"
+        },
+        {
+          "title": "Karaköy Akşam Yemeği Seçkisi",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Manzara, servis ritmi ve odun ateşinde deniz-et yemekleriyle öne çıkıyor"
+        }
+      ],
+      "pros": [
+        "Panoramik Tarihi Yarımada manzaralı teras",
+        "Açık odun ateşi ve Anadolu mahsullerine dayalı yaratıcı menü"
+      ],
+      "cons": [
+        "Rezervasyon olmadan masa bulmak çok zor ve fiyat segmenti yüksek"
+      ],
+      "uncertainties": [
+        "Mevsimsel tadım tabakları yılın hasat takvimine göre yenilenir."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-neolokal",
+      "categoryId": "date",
+      "resolvedName": "Neolokal",
+      "branchName": "Mahı, Arap Cami, Bankalar Cd. No:11, 34420, 34421 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJGbaw0-e5yhQRXCPUhlJLb8w",
+      "coordinates": {
+        "lat": 41.0238362,
+        "lng": 28.9734027
+      },
+      "rating": 4.3,
+      "userRatingCount": 1371,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://neolokal.com/",
+      "mapsUri": "https://maps.google.com/?cid=14731075723973632860",
+      "recommendedPrimary": [
+        "Anadolu Tadım Menüsü",
+        "Humus & Pastırma",
+        "Kuzu İncik & Keşkek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Anadolu Bağları Şarap Eşleşmesi & Katmer Tatlısı",
+          "note": "Yöresel bağlardan seçilen şarap eşleşmeleri ve geleneksel katmer-kaymak ikilisinin çağdaş sunumu.",
+          "proof": "Bankalar Caddesi Salt Galata gastronomi seçkileri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi taş mimarili şık ana yemek salonu (rezervasyon zorunlu)",
+        "crowdAndNoise": "Sakin, odaklı ve yüksek servis standardında gastronomik akşam deneyimi",
+        "disadvantage": "Haftalar öncesinden rezervasyon gerektirir ve yalnızca planlı tadım akşamları için uygundur.",
+        "transit": "Arap Cami Bankalar Caddesi No:11 Salt Galata bünyesinde Karaköy Bankalar durağı yanında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Türkiye Anadolu Mutfağı Öncüleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Anadolu yerel mahsullerini ve kültürel mirası çağdaş tadım formuna taşıyan Salt Galata restoranı"
+        },
+        {
+          "title": "İstanbul Gastronomi Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Anlatısı, servis disiplini ve tarihi atmosferiyle simgesel akşam noktası"
+        }
+      ],
+      "pros": [
+        "Tarihi Salt Galata mimarisi içinde rafine tadım kurgusu",
+        "Anadolu bağları ve yerel üretici odaklı derin mutfak"
+      ],
+      "cons": [
+        "Uzun tadım servisi nedeniyle spontane akşam yemekleri için uygun değil"
+      ],
+      "uncertainties": [
+        "Tadım menüsü sezonluk yerel ürün bulunurluğuna göre dönemsel güncellenir."
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-la-terrasse",
+      "categoryId": "date",
+      "resolvedName": "La Terrasse Karaköy",
+      "branchName": "Kemankeş Karamustafapaşa Mah. Galata Şarap İskelesi Sok:6, Kemankeş Karamustafa Paşa, Vakıf Han No: 10/1, 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJZWGjbm-5yhQRKu6_40At8XY",
+      "coordinates": {
+        "lat": 41.0234953,
+        "lng": 28.978489900000003
+      },
+      "rating": 4.8,
+      "userRatingCount": 2638,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://laterrassekarakoy.com/",
+      "mapsUri": "https://maps.google.com/?cid=8570681322584927786",
+      "recommendedPrimary": [
+        "Izgara Deniz Levreği",
+        "Dana Bonfile",
+        "Burrata & Domates Salatası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Deniz Mahsullü Linguine & Sıcak Çikolatalı Sufle",
+          "note": "Manzaraya karşı paylaşılan ana yemeklerin yanında taze deniz mahsullü makarna ve sıcak sufle kapanışı.",
+          "proof": "Karaköy teras mekanları rehberi ve menü detayları"
+        }
+      ],
+      "suitability": {
+        "seating": "Yüksek tavanlı manzaralı teras ve akşam yemeği masa düzeni (rezervasyon önerilir)",
+        "crowdAndNoise": "Gün batımından geceye romantik çiftler ve şık akşam masalarıyla canlı teras atmosferi",
+        "disadvantage": "Gün batımı saatlerinde teras kenarı masalar rezervasyonla erkenden dolabiliyor.",
+        "transit": "Kemankeş Galata Şarap İskelesi Sokak Vakıf Han teras katında Karaköy Rıhtım’a birkaç adım."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Karaköy Gün Batımı & Akşam Mekanları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Vakıf Han tepesinden Boğaz ve Tarihi Yarımada panoraması sunan şık teras restoranı"
+        },
+        {
+          "title": "Beyoğlu Akşam Buluşma Notları",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Manzara, ambiyans ve servis nezaketiyle binlerce konuktan yüksek puan alıyor"
+        }
+      ],
+      "pros": [
+        "Eşsiz Tarihi Yarımada ve Boğaz manzaralı tarihi han terası",
+        "Akşam randevuları için sıcak aydınlatmalı zarif ortam"
+      ],
+      "cons": [
+        "Ön sıra manzara masaları için birkaç gün önceden rezervasyon şart"
+      ],
+      "uncertainties": [
+        "Açık teras bölümü hava koşullarına göre kapalı camlı alana alınabilir."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-pasta-nino",
+      "categoryId": "date",
+      "resolvedName": "Pasta Nino",
+      "branchName": "Kemankeş Karamustafa Paşa, Mumhane Cd. No:52, 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJd7W0Gqa5yhQRuzD-iD4dKHk",
+      "coordinates": {
+        "lat": 41.025827,
+        "lng": 28.980531
+      },
+      "rating": 4.6,
+      "userRatingCount": 535,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8730260032081244347",
+      "recommendedPrimary": [
+        "Cacio e Pepe",
+        "Trüflü Tagliolini",
+        "Ragu Pappardelle"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Burrata Başlangıç & Ev Yapımı Tiramisu",
+          "note": "Taze makarna öncesi paylaşılan sade burrata tabağı ve mascarpone kremalı tiramisu kapanışı.",
+          "proof": "Karaköy taze makarna durakları ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük, sıcak bistro salonu ve loş akşam aydınlatmalı masalar",
+        "crowdAndNoise": "Resmiyetten uzak, kaliteli yemek ve sohbet odaklı çiftlerin tercih ettiği ritim",
+        "disadvantage": "Küçük bistro düzeni nedeniyle akşam saatlerinde kısa bekleme sırası oluşabiliyor.",
+        "transit": "Kemankeş Mumhane Caddesi No:52 üzerinde Tophane ve Karaköy yürüyüş aksının tam ortasında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — İstanbul En Nitelikli Taze Makarnacılar",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mumhane’de el yapımı taze hamurlu makarnalarıyla ayrışan samimi İtalyan bistrosu"
+        },
+        {
+          "title": "Beyoğlu Makarna Severler Notları",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Makarna kıvamı ve trüflü-peynirli sos dengesiyle yüksek övgü alıyor"
+        }
+      ],
+      "pros": [
+        "Günlük taze hazırlanan el yapımı makarna çeşitleri",
+        "Sıcak, resmiyetten uzak akşam buluşması havası"
+      ],
+      "cons": [
+        "Masa kapasitesi sınırlı olduğundan akşam zirve saatlerinde beklemek gerekebilir"
+      ],
+      "uncertainties": [
+        "Günlük özel makarna kesimleri ve soslar haftalık değişebilir."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-mukellef",
+      "categoryId": "date",
+      "resolvedName": "Mükellef Karaköy",
+      "branchName": "Kemankeş Karamustafa Paşa, Maliye Cd. 8/A, 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJjV_uZ925yhQRU7ptx3HK-Qo",
+      "coordinates": {
+        "lat": 41.023627,
+        "lng": 28.977031499999995
+      },
+      "rating": 4.4,
+      "userRatingCount": 4911,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.mukellefkarakoy.com/",
+      "mapsUri": "https://maps.google.com/?cid=790885799606205011",
+      "recommendedPrimary": [
+        "Vişneli Yaprak Sarma",
+        "Izgara Yaprak Ciğer",
+        "Girit Ezmesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli Kabak Tatlısı & Kavun-Beyaz Peynir Kapanışı",
+          "note": "Rakı-meze sofrasının başında paylaşılan klasik beyaz peynir-kavun ile sonunda gelen cevizli tahinli kabak.",
+          "proof": "Karaköy çağdaş meyhane rehberleri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi Yarımada silüetine bakan yüksek tavanlı teras salonu (rezervasyon önerilir)",
+        "crowdAndNoise": "Uzun akşam sofraları, sohbet ve keyifli meyhane atmosferi",
+        "disadvantage": "Menüde sakatat ve geleneksel meze oranı yüksek; tamamen sade et arayanlar için seçenekler daha sınırlı.",
+        "transit": "Kemankeş Maliye Caddesi No:8/A teras katında Karaköy meydanına iki dakikalık yürüyüşte."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Karaköy Çağdaş Meyhaneler",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihi Yarımada manzarasıyla modern meyhane ve özenli sakatat-meze mutfağını birleştiren adres"
+        },
+        {
+          "title": "İstanbul Sofra Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Manzara, mezelerin tazeliği ve servis hızıyla yıllardır yüksek ilgi görüyor"
+        }
+      ],
+      "pros": [
+        "Şehir silüetine bakan güçlü akşam terası",
+        "Özenli sakatat ve yöresel meze repertuvarı"
+      ],
+      "cons": [
+        "Hafta sonu akşamları rezervasyonsuz masa bulmak güç ve gürültü düzeyi yükselebiliyor"
+      ],
+      "uncertainties": [
+        "Mevsimsel otlar ve balıkçı mezeleri günlük tedarike göre farklılık gösterebilir."
+      ],
+      "selectionScore": 76,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-a-la-lune",
+      "categoryId": "kahvalti",
+      "resolvedName": "Â La Lune Patisserie",
+      "branchName": "Kemankeş Karamustafa Paşa, Mumhane Cd. No:7A İç Kapı No:1, 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJC09Z9DC5yhQRnKPMN8dQ-a8",
+      "coordinates": {
+        "lat": 41.0231867,
+        "lng": 28.9769937
+      },
+      "rating": 4.8,
+      "userRatingCount": 1164,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.alalune.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=12680255042403214236",
+      "recommendedPrimary": [
+        "Bademli Kruvasan",
+        "Avokadolu Poşe Yumurtalı Kruvasan",
+        "Pain au Chocolat"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fıstıklı Paris-Brest & Sabah Filtre Kahvesi",
+          "note": "Kruvasan dışı pastane vitrininden öne çıkan choux hamurlu Paris-Brest tatlısı ve taze demleme sabah kahvesi.",
+          "proof": "Karaköy kahvaltı-kruvasan rehberleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Pastane vitrinli küçük iç salon ve Mumhane sokak masaları",
+        "crowdAndNoise": "Sabah saatlerinde kruvasan ve taze kahvaltı için gelen mahalle müdavimleriyle keyifli",
+        "disadvantage": "Hafta sonu sabah geç saatlerde popüler kruvasan çeşitleri tükenebiliyor ve masa sırası oluşabiliyor.",
+        "transit": "Kemankeş Mumhane Caddesi No:7A üzerinde Karaköy Rıhtım durağına birkaç dakikalık yürüyüşle."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — İstanbul Fransız Kruvasan Durakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tereyağı katmanları ve poşe yumurtalı kahvaltı seçenekleriyle Karaköy’de öne çıkan fırın-kafe"
+        },
+        {
+          "title": "Karaköy Sabah Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bademli kruvasan ve tatlı-tuzlu dengesiyle yüksek puan ortalamasını koruyor"
+        }
+      ],
+      "pros": [
+        "Katmanlı, çıtır Fransız hamur işi işçiliği",
+        "Hem tatlı hem tuzlu poşe yumurtalı sabah seçenekleri"
+      ],
+      "cons": [
+        "Hafta sonları dükkan içi hızlı dolduğundan erken saatlerde gitmek daha avantajlı"
+      ],
+      "uncertainties": [
+        "Sezonsal meyveli ve fıstıklı özel pastane ürünleri gün içi stokla sınırlıdır."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-coffeen-bakery",
+      "categoryId": "kahvalti",
+      "resolvedName": "Coffee’n Bakery",
+      "branchName": "Kemankeş Karamustafa Paşa, Mumhane Cd. No:5/B, 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJXzQxaeC5yhQR3pnVzfXyQfA",
+      "coordinates": {
+        "lat": 41.0231101,
+        "lng": 28.9769743
+      },
+      "rating": 4.8,
+      "userRatingCount": 977,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/cooffee.n/",
+      "mapsUri": "https://maps.google.com/?cid=17312385580123134430",
+      "recommendedPrimary": [
+        "Füme Hindili Kruvasan Sandviç",
+        "Tereyağlı Klasik Kruvasan",
+        "Çırpılmış Yumurtalı Tost"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarçınlı Çörek & Cappuccino",
+          "note": "Tuzlu kahvaltı sandviçinin ardından paylaşılan sıcak tarçınlı çörek ve dengeli süt köpüklü cappuccino.",
+          "proof": "Mumhane sabah lezzetleri seçkileri ve işletme kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Vitrin önü tezgahlar ve Mumhane Caddesi üzerinde masalar",
+        "crowdAndNoise": "Sabah enerjik ama hızlı sirkülasyonlu, hafta sonu kahvaltı turlarına uygun tempo",
+        "disadvantage": "Serpme köy kahvaltısı yerine fırın-kruvasan ve tek kişilik sıcak tost tabakları sunar.",
+        "transit": "Kemankeş Mumhane Caddesi No:5/B üzerinde Â La Lune ile yan yana merkezi konumda."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Karaköy Kahvaltı & Fırın Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taze kruvasan sandviçleri ve ekşi mayalı tostlarıyla Mumhane’de sabah buluşma adresi"
+        },
+        {
+          "title": "Beyoğlu Kahve & Fırın Notları",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tuzlu kruvasan sandviçleri ve hızlı sabah servisiyle yüksek beğeni alıyor"
+        }
+      ],
+      "pros": [
+        "Taze günlük fırın ürünleri ve doyurucu tuzlu sandviçler",
+        "Merkezi Mumhane konumunda pratik ve yüksek puanlı servis"
+      ],
+      "cons": [
+        "Geniş serpme masa düzeni arayanlar için konsepti uygun değil"
+      ],
+      "uncertainties": [
+        "Günlük fırın çeşitleri saat ilerledikçe farklılık gösterebilir."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-moka-croissant",
+      "categoryId": "kahvalti",
+      "resolvedName": "Moka Coffee & Croissant",
+      "branchName": "Müeyyetzade, Necatibey Cd. No:21, 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJY4JMwUu5yhQR1ij5MJnle8c",
+      "coordinates": {
+        "lat": 41.0233293,
+        "lng": 28.9761064
+      },
+      "rating": 4.9,
+      "userRatingCount": 102,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14374335081797462230",
+      "recommendedPrimary": [
+        "Peynirli & Otlu Kruvasan",
+        "Antep Fıstıklı Kruvasan",
+        "Granola Kasesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çilekli Kruvasan & Flat White",
+          "note": "Mevsim meyvesi ve pastacı kremasıyla doldurulan tatlı kruvasan ile sabah espressosu ikilisi.",
+          "proof": "Necatibey kafe değerlendirmeleri ve işletme vitrin kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Butik dükkan içi masa düzeni ve cadde kenarı birkaç sandalye",
+        "crowdAndNoise": "Sıcak, güler yüzlü ve görece daha sakin mahalle sabahı hissi",
+        "disadvantage": "Sınırlı masa kapasitesi sebebiyle hafta sonu büyük gruplar için uygun değildir.",
+        "transit": "Müeyyetzade Necatibey Caddesi No:21 üzerinde Perşembe Pazarı ve Karaköy tünel girişine yakın."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Karaköy Butik Fırın Kafeler",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "El yapımı dolgulu kruvasanları ve hafif sabah kaseleriyle Necatibey’de ayrışan durak"
+        },
+        {
+          "title": "Beyoğlu Müdavim Değerlendirmeleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kruvasan tazeliği ve samimi ev sahipliğiyle neredeyse tam puan alıyor"
+        }
+      ],
+      "pros": [
+        "Hem tatlı hem tuzlu taze kruvasan çeşitliliği",
+        "Mumhane kalabalığından daha sakin sabah atmosferi"
+      ],
+      "cons": [
+        "Mekan küçük olduğundan yoğun saatlerde boş masa denk gelmeyebilir"
+      ],
+      "uncertainties": [
+        "Dolgulu kruvasan çeşitleri günlük parti sayısına bağlı olarak tükenebilir."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-istanbul-baking",
+      "categoryId": "kahvalti",
+      "resolvedName": "Istanbul Baking Company",
+      "branchName": "Kemankeş Karamustafa Paşa, Mumhane Cd. No:26, 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJjy_2Ouq5yhQRx1l8ePY0N80",
+      "coordinates": {
+        "lat": 41.024463399999995,
+        "lng": 28.978923199999997
+      },
+      "rating": 4.4,
+      "userRatingCount": 332,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14787346134682327495",
+      "recommendedPrimary": [
+        "Ekşi Mayalı Avokado Tost",
+        "Poşe Yumurtalı Brioche",
+        "Cinnamon Roll"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kırmızı Meyveli Tart & Demleme Kahve",
+          "note": "Sabah tostlarının ardından tatlı kapanış isteyenler için günlük meyveli tart ve taze filtre kahve.",
+          "proof": "Mumhane sabah fırınları notları ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık iç oturum ve Mumhane Caddesi üzerinde keyifli masa alanı",
+        "crowdAndNoise": "Sabah kahvaltısı ve brunch temposunda dengeli Karaköy müdavim kitlesi",
+        "disadvantage": "Hafta sonu brunch saatlerinde gürültü ve servis bekleme süresi hafif yükselebiliyor.",
+        "transit": "Kemankeş Mumhane Caddesi No:26 üzerinde Mumhane’nin orta bölümünde kolay ulaşılır konumda."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreBeyoğlu — Karaköy Kahvaltı Durakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ekşi mayalı ekmek ve brioche tabanlı kahvaltı tabaklarıyla Mumhane’de bilinen fırın"
+        },
+        {
+          "title": "Karaköy Sabah Seçkisi",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ekmek üstü poşe yumurta ve cinnamon roll çeşitleriyle tercih ediliyor"
+        }
+      ],
+      "pros": [
+        "Ekşi mayalı zanaat ekmek tabanlı kahvaltı seçenekleri",
+        "İç ve dış mekanda dengeli oturum"
+      ],
+      "cons": [
+        "Hafta sonu öğlene doğru sıcak tabak servisi biraz yavaşlayabiliyor"
+      ],
+      "uncertainties": [
+        "Pastane vitrini ve ekşi maya somun çeşitleri gün içi çıkış saatine göre değişir."
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-gulluoglu",
+      "categoryId": "denemelisin",
+      "resolvedName": "Karaköy Güllüoğlu - Nadir Güllü",
+      "branchName": "Kemankeş Karamustafa Paşa, Kemankeş Cd. No:67, 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJ9XlKFOi5yhQR2Bo2XTkPPvA",
+      "coordinates": {
+        "lat": 41.024885999999995,
+        "lng": 28.9809764
+      },
+      "rating": 4.4,
+      "userRatingCount": 29469,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.karakoygulluoglu.com/",
+      "mapsUri": "https://maps.google.com/?cid=17311290756710144728",
+      "recommendedPrimary": [
+        "Fıstıklı Kuru Baklava",
+        "Kaymaklı Şöbiyet",
+        "Fıstıklı Dürüm"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tuzlu Su Böreği & Nadir Özel Midye Baklava",
+          "note": "Tatlı tabağı öncesi fırından sıcak çıkan peynirli su böreği ve ince açılmış midye baklava eşleşmesi.",
+          "proof": "İstanbul tarihi lezzet durakları ve işletme kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş tarihi salon, tezgah önü ayakta tadım ve paket bölümü",
+        "crowdAndNoise": "Sabah ilk tepsiden geceye dek hem İstanbullular hem gezginlerle yüksek tempolu kalabalık",
+        "disadvantage": "Özellikle hafta sonları ve özel günlerde kasa-servis kuyruğu oluşabiliyor.",
+        "transit": "Kemankeş Caddesi No:67 Katlı Otopark altında Tophane ve Karaköy duraklarına yürüyüş mesafesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — İstanbul Tarihi Tatlı Durakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tek merkez üretim ilkesini bozmadan Gaziantep baklava ustalığını Karaköy’de yaşatan kurum"
+        },
+        {
+          "title": "İstanbul Gastronomi Hafızası",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "On binlerce konuk arasında fıstıklı kuru baklava ve su böreğiyle semtin ana durağı"
+        }
+      ],
+      "pros": [
+        "Tek noktada taze tepsi üretimi ve yüksek malzeme kalitesi",
+        "Sıcak su böreği ile baklavayı aynı yerde tatma imkanı"
+      ],
+      "cons": [
+        "Yoğun ziyaretçi hacmi nedeniyle salon zaman zaman kalabalık ve gürültülü"
+      ],
+      "uncertainties": [
+        "Bayram dönemlerinde tepsi ve paket servis bekleme süreleri uzar."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-karakoy-lokantasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Karaköy Lokantası",
+      "branchName": "Kemankeş Mahallesi, Kemankeş Cd. No:57, 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJr6PRGd25yhQR2VYidbg9zyQ",
+      "coordinates": {
+        "lat": 41.024749799999995,
+        "lng": 28.9801935
+      },
+      "rating": 4.3,
+      "userRatingCount": 3186,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.karakoylokantasi.com/",
+      "mapsUri": "https://maps.google.com/?cid=2652406567992973017",
+      "recommendedPrimary": [
+        "Hünkar Beğendi",
+        "Vişneli Yaprak Sarma",
+        "Kuzu İncik"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Enginar Kalbi & Ayva Tatlısı",
+          "note": "Öğle-akşam arası vitrinde öne çıkan zeytinyağlı enginar kalbi ve kaymakla sunulan fırınlanmış ayva tatlısı.",
+          "proof": "Karaköy gastronomi seçkileri ve işletme menü arşivi"
+        }
+      ],
+      "suitability": {
+        "seating": "Yüksek tavanlı tarihi çinili salon (öğle esnaf düzeni, akşam rezervasyon şart)",
+        "crowdAndNoise": "Öğlen hızlı esnaf yemekleri, akşamları uzun sohbetli meyhane-lokanta atmosferi",
+        "disadvantage": "Akşam masaları için günler öncesinden rezervasyon gerekir ve akşam servisi öğlene göre daha yüksek segmenttedir.",
+        "transit": "Kemankeş Caddesi No:57 üzerinde Karaköy Rıhtım ile Mumhane girişine birkaç adım."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Tarihi İstanbul Lokantaları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Gündüz esnaf lokantası ve akşam meyhane kültürünü turkuaz çinili salonda buluşturan semt simgesi"
+        },
+        {
+          "title": "Beyoğlu Sofra Rehberi",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hünkar beğendisi, zeytinyağlıları ve klasik İstanbul mezeleriyle uzun yıllardır standart belirliyor"
+        }
+      ],
+      "pros": [
+        "Gündüz geleneksel tencere mutfağı, akşam klasik İstanbul mezeleri",
+        "Yüksek tavanlı özgün turkuaz çini mimarisi"
+      ],
+      "cons": [
+        "Akşamları rezervasyonsuz masa bulmak neredeyse imkansız ve popülerlik nedeniyle mesai temposu yoğun"
+      ],
+      "uncertainties": [
+        "Günlük öğle tencere yemekleri saat ilerledikçe tükenebilir."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-mahkeme-lokantasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Mahkeme Lokantası",
+      "branchName": "Arap Cami, Perşembe Pazarı Cd. No:14, 34421 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJF95Jn-i5yhQRKIl7v5Kz-uc",
+      "coordinates": {
+        "lat": 41.023742,
+        "lng": 28.972019999999997
+      },
+      "rating": 4.5,
+      "userRatingCount": 2477,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.mahkemelokantasi.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=16715870409798158632",
+      "recommendedPrimary": [
+        "Beşamel Soslu Levrek Sarma",
+        "Tekmilli Fava",
+        "Izgara Ahtapot"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Pastırmalı Humus & Zeytinyağlı Enginar",
+          "note": "Soğuk ve sıcak meze geçişinde öne çıkan sıcak pastırmalı humus ile hafif zeytinyağlı enginar tabağı.",
+          "proof": "Perşembe Pazarı yerel rehberleri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi taş kemerli iç salon ve sakin Perşembe Pazarı sokak masaları",
+        "crowdAndNoise": "Gündüz bölge esnafı ve meraklılar, akşamları nitelikli meyhane sohbeti arayan masalar",
+        "disadvantage": "Perşembe Pazarı hırdavatçılar bölgesi akşamları tenha olduğu için toplu taşıma çıkışıyla yürüyüş planlamak gerekir.",
+        "transit": "Arap Cami Perşembe Pazarı Caddesi No:14 üzerinde Bankalar Caddesi ve Galata Köprüsü arasında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Karaköy Han İçi Lokantalar",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihi han atmosferinde gündüz lokantası ve akşam meze sofrası kültürünü birleştiren özgün durak"
+        },
+        {
+          "title": "İstanbul Yerel Lezzet Notları",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Beşamel soslu levrek sarma, fava ve güler yüzlü ev sahipliğiyle yüksek puan alıyor"
+        }
+      ],
+      "pros": [
+        "Tarihi taş yapı içinde özgün iki zamanlı lokanta konsepti",
+        "Deniz mahsullü sıcaklar ve taze zeytinyağlılar"
+      ],
+      "cons": [
+        "Akşamları bulunduğu sokak çok sakinleştiği için araçla veya rıhtım aksından yürüyerek gelmek daha rahattır"
+      ],
+      "uncertainties": [
+        "Mevsim balığına bağlı sıcak deniz ürünü tabakları günlük değişebilir."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-nato-lokantasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Nato Lokantası 1952 - Karaköy",
+      "branchName": "Kemankeş Karamustafa Paşa Mahallesi Necatibey Caddesi, Kemankeş Karamustafa Paşa, Karanlık Fırın Sk. No:4, 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJG4UBCt25yhQRNFB8OD8TCj4",
+      "coordinates": {
+        "lat": 41.0245396,
+        "lng": 28.977929900000003
+      },
+      "rating": 4.7,
+      "userRatingCount": 754,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.natolokantasi.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=4470406742370177076",
+      "recommendedPrimary": [
+        "Kuzu Haşlama",
+        "İslim Kebabı",
+        "Kuru Fasulye & Tereyağlı Pilav"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mercimek Çorbası & Fırın Sütlaç",
+          "note": "Esnaf lokantası öğle ritüelinin klasik açılış çorbası ve üzeri kızarmış taş fırın sütlaç kapanışı.",
+          "proof": "Tarihi İstanbul esnaf lokantaları rehberi ve vitrin kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sade, temiz klasik esnaf lokantası salonu ve hızlı öğle servisi",
+        "crowdAndNoise": "Öğle saatlerinde bölge esnafı ve müdavimlerle dolu, yüksek sirkülasyonlu samimi ritim",
+        "disadvantage": "Öğle sonrası saatlerde en popüler tencere yemekleri erken bitebiliyor ve akşam yemeği odaklı değildir.",
+        "transit": "Kemankeş Karanlık Fırın Sokak No:4 üzerinde Necatibey ve Mumhane bağlantısında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "İstanbul Tarihi Esnaf Lokantaları Seçkisi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1952’den bu yana geleneksel sulu yemek ve haşlama tekniğini koruyan köklü Karaköy lokantası"
+        },
+        {
+          "title": "Karaköy Esnaf & Müdavim Rehberi",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Etlerin yumuşaklığı, çorbaları ve temiz mutfağıyla kuşaklar boyu seviliyor"
+        }
+      ],
+      "pros": [
+        "Yarım asrı aşan köklü esnaf lokantası standardı",
+        "Hafif ve tertemiz terbiyeli sulu yemekler"
+      ],
+      "cons": [
+        "Geç öğleden sonra tencere yemeklerinde çeşit azalabiliyor"
+      ],
+      "uncertainties": [
+        "Haftanın farklı günlerine özgü tencere spesiyalleri günlük değişir."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-eyyup-usta",
+      "categoryId": "denemelisin",
+      "resolvedName": "Meşhur Balıkçı Eyyup Usta",
+      "branchName": "Kemankeş Karamustafa Paşa, Ağaç Tulumba Sk. No:4/D Z. kat, 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJrXb_uPS5yhQR4n7CY3Dj4ts",
+      "coordinates": {
+        "lat": 41.0231115,
+        "lng": 28.976449499999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 5752,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15844476510892359394",
+      "recommendedPrimary": [
+        "Közde Balık Dürüm",
+        "Izgara Balık Ekmek",
+        "Acılı Şalgam"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Turşu Suyu & Soğanlı Roka Salatası",
+          "note": "Baharatlı köz balık dürümün lezzetini dengeleyen geleneksel turşu suyu ve taze limonlu roka eşlikçisi.",
+          "proof": "Karaköy sokak lezzetleri rotaları ve esnaf kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sokak içi pratik tabureler ve hızlı ayakta/gel-al tezgah düzeni",
+        "crowdAndNoise": "Günün her saati kısa ama tempolu sokak dürüm kuyruğu ve sıcak usta sohbeti",
+        "disadvantage": "Rahat uzun oturma düzeni yoktur; sokakta taburede veya yürürken yemeye uygun sokak lezzetidir.",
+        "transit": "Kemankeş Ağaç Tulumba Sokak No:4/D üzerinde Kemeraltı ve Galata Köprüsü Karaköy çıkışının hemen içinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Karaköy Sokak Lezzetleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Karaköy arka sokaklarında baharatlı kılçıksız balık dürüm ritüelini yaşatan meşhur usta"
+        },
+        {
+          "title": "İstanbul Sokak Yemekleri Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Binlerce misafirden taze ızgara ve sos dengesiyle yüksek övgü topluyor"
+        }
+      ],
+      "pros": [
+        "Taze baharatlı kılçıksız uskumru ve ince çıtır lavaş uyumu",
+        "Hızlı, ulaşılabilir ve otantik Karaköy sokak deneyimi"
+      ],
+      "cons": [
+        "Konforlu kapalı salon veya geniş masa düzeni bekleyenlere göre değil"
+      ],
+      "uncertainties": [
+        "Yoğun öğleden sonra ve akşam saatlerinde kısa bekleme kuyruğu oluşabilir."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-anatolia-forno",
+      "categoryId": "denemelisin",
+      "resolvedName": "Anatolia Forno Karaköy Pide & Lahmacun",
+      "branchName": "Müeyyetzade, Kemeraltı Cd. No:5 C, 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJXf4uvPm5yhQRk5jBDOlgcDQ",
+      "coordinates": {
+        "lat": 41.0244166,
+        "lng": 28.976035699999997
+      },
+      "rating": 4.9,
+      "userRatingCount": 3002,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.anatoliaforno.com/",
+      "mapsUri": "https://maps.google.com/?cid=3778626641421506707",
+      "recommendedPrimary": [
+        "Taş Fırın Lahmacun",
+        "Kavurmalı Kaşarlı Pide",
+        "Kuşbaşılı Pide"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Közlenmiş Patlıcanlı Meze & Köpüklü Ayran",
+          "note": "Fırından sıcak çıkan pide ve lahmacun öncesi paylaşılan köz meze ile serin ayran eşleşmesi.",
+          "proof": "Karaköy pide-lahmacun değerlendirmeleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "İki katlı düzenli restoran salonu ve cadde önü masaları",
+        "crowdAndNoise": "Günün her saati taş fırın sıcaklığı etrafında kalabalık ve hareketli yemek ritmi",
+        "disadvantage": "Öğle ve akşam pik saatlerinde taş fırın yoğunluğundan servis süresi biraz uzayabiliyor.",
+        "transit": "Müeyyetzade Kemeraltı Caddesi No:5C üzerinde Karaköy tramvay ve Tünel girişine iki dakika."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreBeyoğlu — Karaköy Odun Fırını Durakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kemeraltı üzerinde ince hamurlu çıtır lahmacun ve pide çeşitleriyle yüksek memnuniyet sağlayan adres"
+        },
+        {
+          "title": "İstanbul Pide Severler Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çıtır hamur kalitesi ve et-peynir oranıyla binlerce konuktan tam not alıyor"
+        }
+      ],
+      "pros": [
+        "İnce çıtır hamurlu taş fırın lahmacun ve pide ustalığı",
+        "Kemeraltı aksında ferah iki katlı oturum"
+      ],
+      "cons": [
+        "Yoğun yemek saatlerinde kapıda kısa bekleme sırası olabiliyor"
+      ],
+      "uncertainties": [
+        "Özel kapalı pide çeşitleri öğle-akşam fırın temposuna göre sırayla çıkar."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-gedikli-kofte",
+      "categoryId": "denemelisin",
+      "resolvedName": "Gedikli Köfte-Grill",
+      "branchName": "11, Karaköy, Kemankeş Karamustafa Paşa, Maliye Cd., 34425 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJcUfsat25yhQRMqIVuWZHbNc",
+      "coordinates": {
+        "lat": 41.0236685,
+        "lng": 28.977485799999997
+      },
+      "rating": 4.6,
+      "userRatingCount": 1505,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15522860522156696114",
+      "recommendedPrimary": [
+        "Izgara Kasap Köfte",
+        "Tahinli Fasulye Piyazı",
+        "Kaşarlı Köfte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Izgara Sucuk & İrmik Helvası",
+          "note": "Köfte yanına eklenen sıcak sucuk porsiyonu ve hafif tatlı kapanışı arayanlar için ılık irmik helvası.",
+          "proof": "Maliye Caddesi esnaf lokantası notları ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "İç salon ve dar Karaköy ara sokağına bakan samimi masalar",
+        "crowdAndNoise": "Özellikle öğle saatlerinde esnaf ve çalışanlarla hareketli, pratik yemek düzeni",
+        "disadvantage": "Öğle arasında yoğunluk zirve yaptığı için sakin akşam yemeği yerine öğle/akşamüstü molasına daha uygundur.",
+        "transit": "Kemankeş Maliye Caddesi No:11 üzerinde Mumhane ve Karaköy merkez sokaklarının kesişiminde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Karaköy Esnaf Lezzetleri Haritası",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Maliye Caddesi’nde sade ızgara köfte ve piyaz geleneğini sürdüren semt durağı"
+        },
+        {
+          "title": "Beyoğlu Köfte Müdavimleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Köfte sululuğu, piyaz sosu ve hızlı servisiyle yüksek puan koruyor"
+        }
+      ],
+      "pros": [
+        "Katkısız günlük yoğrum ızgara köfte ve taze piyaz",
+        "Hızlı servis ve dürüst porsiyonlar"
+      ],
+      "cons": [
+        "Öğle vakti kısa sırada kalmamak için erken ya da öğle sonrası gitmek daha rahat"
+      ],
+      "uncertainties": [
+        "Tatlı çeşitliliği günlük tezgah üretimine göre değişebilir."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-yelkenci",
+      "categoryId": "balik",
+      "resolvedName": "Yelkenci Karaköy",
+      "branchName": "Arap Cami, Fermeneciler Cd. no:27 Karaköy, 34421 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJv4-DP_y5yhQRFoYORcdGBa4",
+      "coordinates": {
+        "lat": 41.0222729,
+        "lng": 28.972609199999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 2835,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://yelkencirestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=12539506559154030102",
+      "recommendedPrimary": [
+        "Mevsim Balığı Izgara",
+        "Levrek Marin",
+        "Tereyağlı Karides Güveç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kalamar Tava & Tahinli Sıcak Helva",
+          "note": "Rakı-balık masalarının vazgeçilmezi çıtır kalamar tava ara sıcağı ve fırından sıcak helva kapanışı.",
+          "proof": "Karaköy deniz ürünleri rehberleri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç salon ve akşam balık sofralarına uygun rahat masa düzeni",
+        "crowdAndNoise": "Akşamları aileler ve arkadaş gruplarıyla keyifli, tempolu balık restoranı atmosferi",
+        "disadvantage": "Akşam saatlerinde özellikle gruplar için önceden masa ayırtmak önerilir.",
+        "transit": "Arap Cami Fermeneciler Caddesi No:27 üzerinde Karaköy Galata Köprüsü ayağına iki dakikalık yürüyüşte."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Karaköy Balık Restoranları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Fermeneciler hattında taze günlük deniz balığı ve soğuk deniz mezeleriyle öne çıkan durak"
+        },
+        {
+          "title": "İstanbul Balık Severler Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Balık tazeliği, ara sıcaklar ve güler yüzlü servisiyle yüksek memnuniyet alıyor"
+        }
+      ],
+      "pros": [
+        "Günlük taze tezgah balıkları ve özenli levrek marin",
+        "Dengeli sıcak deniz ürünü başlangıçları"
+      ],
+      "cons": [
+        "Fermeneciler Caddesi üzerinde otopark sıkıntısı olabiliyor"
+      ],
+      "uncertainties": [
+        "Mevsim balığı tezgahı av yasakları ve günlük deniz koşullarına göre şekillenir."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-liman-karakoy",
+      "categoryId": "balik",
+      "resolvedName": "Liman Karaköy",
+      "branchName": "Arap Cami, Fermeneciler Cd. 23/a, 34440 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJo4QjoNO5yhQROkpiAmK4XCg",
+      "coordinates": {
+        "lat": 41.022241099999995,
+        "lng": 28.972419000000002
+      },
+      "rating": 4.6,
+      "userRatingCount": 2284,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://limankarakoy.com/",
+      "mapsUri": "https://maps.google.com/?cid=2908402190460799546",
+      "recommendedPrimary": [
+        "Izgara Ahtapot",
+        "Deniz Mahsulleri Çorbası",
+        "Kalkan veya Levrek Izgara"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Girit Ezmesi & Fırında Sıcak Helva",
+          "note": "Sofrayı açan zeytinyağlı Girit ezmesi ile balık sonrasında paylaşılan fırınlanmış helva tatlısı.",
+          "proof": "Beyoğlu balık lokantaları notları ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Konforlu masa düzeni, ferah iç salon ve grup dostu servis kurgusu",
+        "crowdAndNoise": "İş yemekleri ve sakin aile-arkadaş buluşmaları için derli toplu balık sofrası temposu",
+        "disadvantage": "Gündelik hızlı balık-ekmek duraklarına kıyasla daha oturaklı restoran servisi ve bütçe düzeyine sahiptir.",
+        "transit": "Arap Cami Fermeneciler Caddesi No:23/A üzerinde Galata Köprüsü ve Karaköy İskelesi yan aksında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Karaköy Deniz Mutfağı Seçkisi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Klasik Liman lokanta kültürünü deniz mahsulleri ve ızgara balık odağıyla sürdüren restoran"
+        },
+        {
+          "title": "İstanbul Akşam Sofrası Notları",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Servis düzeni, ahtapot pişirimi ve ferah salonuyla binlerce konuktan yüksek puan topluyor"
+        }
+      ],
+      "pros": [
+        "Oturaklı servis disiplini ve temiz balık mutfağı",
+        "Deniz mahsulleri çorbası ve özenli mezeler"
+      ],
+      "cons": [
+        "Hızlı ayaküstü balık arayanlar yerine uzun akşam yemeği düşünenlere uygun"
+      ],
+      "uncertainties": [
+        "Kalkan ve mevsim balığı mevcudiyeti haftalık av durumuna bağlıdır."
+      ],
+      "selectionScore": 98,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-kiyi-balik",
+      "categoryId": "balik",
+      "resolvedName": "Kıyı Balık Karaköy",
+      "branchName": "Arap Cami, 34421 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJ7fzChdu5yhQRCJMn4gyMmr8",
+      "coordinates": {
+        "lat": 41.022269,
+        "lng": 28.972926100000002
+      },
+      "rating": 4.8,
+      "userRatingCount": 488,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13806501594619417352",
+      "recommendedPrimary": [
+        "Çipura Izgara",
+        "Uskumru Marin",
+        "Kalamar Izgara"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Deniz Börülcesi & Mevsim Yeşillikli Roka Salatası",
+          "note": "Izgara balıkların yanında masaya tazelik katan zeytinyağlı deniz börülcesi ve bol limonlu roka salatası.",
+          "proof": "Karaköy balıkçılar bölgesi rehberleri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sade, samimi balık lokantası masaları ve sıcak esnaf atmosferi",
+        "crowdAndNoise": "Turistik karmaşadan uzaklaşıp taze balık yemek isteyen müdavimlerle dolu",
+        "disadvantage": "Gösterişli manzara terası yerine doğrudan balık tezgahı ve mutfak tazeliğine odaklanır.",
+        "transit": "Arap Cami Fermeneciler balıkçılar aksında Galata Köprüsü Karaköy ayağına bir dakikalık yürümede."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Karaköy Balıkçılar Çarşısı Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Fermeneciler sokak dokusu içinde taze günlük balık pişiren yüksek puanlı mahalle balıkçısı"
+        },
+        {
+          "title": "Beyoğlu Balık Müdavimleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Balığın tazeliği ve makul servis yaklaşımıyla sürekli yüksek puan alıyor"
+        }
+      ],
+      "pros": [
+        "Günlük taze deniz balığı odağı",
+        "Gereksiz abartıdan uzak samimi balıkçı mutfağı"
+      ],
+      "cons": [
+        "Şık akşam manzarası arayanlar yerine doğrudan lezzet odaklı misafirlere hitap eder"
+      ],
+      "uncertainties": [
+        "Mevsimsel hamsi, palamut ve lüfer seçenekleri av sezonuna göre değişir."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kar-sokak-karakoy",
+      "categoryId": "balik",
+      "resolvedName": "Sokak Karaköy Restaurant & Bar",
+      "branchName": "Kemankeş Karamustafa Paşa, Çelebi Sk. No:3, 34421 Beyoğlu/İstanbul, Türkiye",
+      "placeId": "ChIJY4lyzbe5yhQRQ9kLPSL19Kc",
+      "coordinates": {
+        "lat": 41.02377,
+        "lng": 28.977356399999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 220,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://sokakkarakoy.com/",
+      "mapsUri": "https://maps.google.com/?cid=12102567626053245251",
+      "recommendedPrimary": [
+        "Izgara Deniz Levreği",
+        "Tereyağlı Jumbo Karides",
+        "Ege Otları Meze Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Paçanga Böreği & Meyveli Tatlı Tabağı",
+          "note": "Deniz mahsullerine eşlik eden sıcak ara başlangıçlar ve akşam sonunda hafif meyve-tatlı kapanışı.",
+          "proof": "Karaköy ara sokak gastronomi notları ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Çelebi Sokak içi açık masa düzeni ve samimi iç bar alanı",
+        "crowdAndNoise": "Arkadaş gruplarının akşam saatlerinde sosyalleşip uzun masa kurduğu hareketli ortam",
+        "disadvantage": "Akşamları sokak enerjisi yüksek olduğu için sessiz bir akşam yemeği arayanlara hareketli gelebilir.",
+        "transit": "Kemankeş Çelebi Sokak No:3 üzerinde Mumhane ile Rıhtım aksı arasındaki dar sokakta."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreBeyoğlu — Karaköy Meze & Balık Sokakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çelebi Sokak’ta sokak masası kültürünü deniz ürünleri ve meze seçkisiyle sunan mekan"
+        },
+        {
+          "title": "Karaköy Akşam Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Güler yüzlü servis, ara sıcaklar ve sokak atmosferiyle yüksek puan koruyor"
+        }
+      ],
+      "pros": [
+        "Karaköy sokak masası atmosferinde taze deniz ürünleri",
+        "Paylaşımlı ara sıcak ve Ege otlu meze çeşitleri"
+      ],
+      "cons": [
+        "Hafta sonu akşamlarında sokak sesi yoğunlaşabiliyor"
+      ],
+      "uncertainties": [
+        "Günlük meze ve balık seçenekleri mevsime göre güncellenir."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    }
+  ]
+}

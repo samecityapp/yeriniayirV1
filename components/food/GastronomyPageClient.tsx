@@ -130,6 +130,24 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     headline: 'Çengelköy, Üsküdar',
     vibe: 'Asırlık Tarihi Çınaraltı ve börek ritüelinden Kuleli kıyısındaki taş yalı balıkçılarına ve çarşı sokak lezzetlerine uzanan Boğaz seçkisi',
   },
+  'karakoy-beyoglu': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Karaköy, Beyoğlu',
+    vibe: 'Tarihi fıstıklı baklava ve esnaf lokantası klasiklerinden Kemankeş üçüncü dalga kahvecilerine, odun ateşi şef sofralarına ve Boğaz balıkçılarına uzanan semt seçkisi',
+  },
+  'cihangir-beyoglu': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Cihangir, Beyoğlu',
+    vibe: 'Sıraselviler ve Akarsu Yokuşu’nun köklü pastane ve esnaf lezzetlerinden Çukurcuma bistro duraklarına ve samimi mahalle kahvecilerine uzanan seçki',
+  },
+  'nisantasi-sisli': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Nişantaşı, Şişli',
+    vibe: 'Teşvikiye’nin beş denizli şef mutfağından Topağacı fırın ve üçüncü dalga kahvecilerine, Abdi İpekçi bistro duraklarına ve köklü ocakbaşılarına uzanan seçki',
+  },
 };
 
 function formatLocationCategoryHeading(locative: string, categoryTitle?: string): string {
@@ -318,7 +336,7 @@ export function GastronomyPageClient({
                       Konum Seç
                     </div>
                     <div className="text-xs text-slate-500 font-medium truncate mt-0.5">
-                      Üsküdar · Kuzguncuk · Çengelköy · Koşuyolu & Acıbadem · Kadıköy · Moda · Caddebostan · Suadiye · Bostancı · Antalya · Gaziantep · Kuşadası · Akyaka
+                      Karaköy · Cihangir · Nişantaşı · Üsküdar · Kuzguncuk · Çengelköy · Koşuyolu & Acıbadem · Kadıköy · Moda · Caddebostan · Suadiye · Bostancı · Antalya · Gaziantep · Kuşadası · Akyaka
                     </div>
                   </div>
                 </div>

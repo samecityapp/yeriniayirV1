@@ -10,6 +10,9 @@ import kosuyoluAcibademSnapshotJson from './regions/istanbul-kadikoy-kosuyolu-ac
 import uskudarMerkezSnapshotJson from './regions/istanbul-uskudar-merkez.json';
 import kuzguncukSnapshotJson from './regions/istanbul-uskudar-kuzguncuk.json';
 import cengelkoySnapshotJson from './regions/istanbul-uskudar-cengelkoy.json';
+import karakoySnapshotJson from './regions/istanbul-beyoglu-karakoy.json';
+import cihangirSnapshotJson from './regions/istanbul-beyoglu-cihangir.json';
+import nisantasiSnapshotJson from './regions/istanbul-sisli-nisantasi.json';
 import kusadasiSnapshotJson from './regions/aydin-kusadasi.json';
 import gaziantepSnapshotJson from './regions/gaziantep-merkez.json';
 import antalyaKaleiciSnapshotJson from './regions/antalya-kaleici.json';
@@ -31,6 +34,9 @@ const KOSUYOLU_ACIBADEM_SNAPSHOT = kosuyoluAcibademSnapshotJson as V3VerifiedReg
 const USKUDAR_MERKEZ_SNAPSHOT = uskudarMerkezSnapshotJson as V3VerifiedRegionSnapshot;
 const KUZGUNCUK_SNAPSHOT = kuzguncukSnapshotJson as V3VerifiedRegionSnapshot;
 const CENGELKOY_SNAPSHOT = cengelkoySnapshotJson as V3VerifiedRegionSnapshot;
+const KARAKOY_SNAPSHOT = karakoySnapshotJson as V3VerifiedRegionSnapshot;
+const CIHANGIR_SNAPSHOT = cihangirSnapshotJson as V3VerifiedRegionSnapshot;
+const NISANTASI_SNAPSHOT = nisantasiSnapshotJson as V3VerifiedRegionSnapshot;
 const KUSADASI_SNAPSHOT = kusadasiSnapshotJson as V3VerifiedRegionSnapshot;
 const GAZIANTEP_SNAPSHOT = gaziantepSnapshotJson as V3VerifiedRegionSnapshot;
 const ANTALYA_KALEICI_SNAPSHOT = antalyaKaleiciSnapshotJson as V3VerifiedRegionSnapshot;
@@ -51,6 +57,9 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   USKUDAR_MERKEZ_SNAPSHOT,
   KUZGUNCUK_SNAPSHOT,
   CENGELKOY_SNAPSHOT,
+  KARAKOY_SNAPSHOT,
+  CIHANGIR_SNAPSHOT,
+  NISANTASI_SNAPSHOT,
   KUSADASI_SNAPSHOT,
   GAZIANTEP_SNAPSHOT,
   ANTALYA_KALEICI_SNAPSHOT,
@@ -106,6 +115,23 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'istanbul-uskudar-cengelkoy': CENGELKOY_SNAPSHOT,
   cinaralti: CENGELKOY_SNAPSHOT,
   kuleli: CENGELKOY_SNAPSHOT,
+  karakoy: KARAKOY_SNAPSHOT,
+  'karakoy-beyoglu': KARAKOY_SNAPSHOT,
+  'istanbul-beyoglu-karakoy': KARAKOY_SNAPSHOT,
+  kemankes: KARAKOY_SNAPSHOT,
+  tophane: KARAKOY_SNAPSHOT,
+  galataport: KARAKOY_SNAPSHOT,
+  cihangir: CIHANGIR_SNAPSHOT,
+  'cihangir-beyoglu': CIHANGIR_SNAPSHOT,
+  'istanbul-beyoglu-cihangir': CIHANGIR_SNAPSHOT,
+  firuzaga: CIHANGIR_SNAPSHOT,
+  cukurcuma: CIHANGIR_SNAPSHOT,
+  nisantasi: NISANTASI_SNAPSHOT,
+  'nisantasi-sisli': NISANTASI_SNAPSHOT,
+  'istanbul-sisli-nisantasi': NISANTASI_SNAPSHOT,
+  tesvikiye: NISANTASI_SNAPSHOT,
+  topagaci: NISANTASI_SNAPSHOT,
+  macka: NISANTASI_SNAPSHOT,
   kusadasi: KUSADASI_SNAPSHOT,
   'kusadasi-aydin': KUSADASI_SNAPSHOT,
   'merkez-kusadasi-aydin': KUSADASI_SNAPSHOT,
@@ -172,21 +198,6 @@ export const V3_LOCATIONS: FoodLocation[] = [
 
   // SIRADAKİ DOĞRULAMA KUYRUĞU (İl > İlçe > Semt ayrıştırılmış)
   {
-    id: 'karakoy-beyoglu',
-    level: 'semt',
-    city: 'İstanbul',
-    district: 'Beyoğlu',
-    neighborhood: 'Karaköy',
-    name: 'Karaköy',
-    slug: 'karakoy',
-    path: ['istanbul', 'beyoglu', 'karakoy'],
-    displayName: 'Karaköy, Beyoğlu, İstanbul',
-    locative: "Karaköy'de",
-    status: 'coming_soon',
-    aliases: ['Karaköy', 'Karakoy', 'Beyoğlu'],
-    scopeNote: 'İstanbul · Beyoğlu · Karaköy (V3 Doğrulama Sırasında)',
-  },
-  {
     id: 'galata-beyoglu',
     level: 'semt',
     city: 'İstanbul',
@@ -200,21 +211,6 @@ export const V3_LOCATIONS: FoodLocation[] = [
     status: 'coming_soon',
     aliases: ['Galata', 'Beyoğlu'],
     scopeNote: 'İstanbul · Beyoğlu · Galata (V3 Doğrulama Sırasında)',
-  },
-  {
-    id: 'cihangir-beyoglu',
-    level: 'semt',
-    city: 'İstanbul',
-    district: 'Beyoğlu',
-    neighborhood: 'Cihangir',
-    name: 'Cihangir',
-    slug: 'cihangir',
-    path: ['istanbul', 'beyoglu', 'cihangir'],
-    displayName: 'Cihangir, Beyoğlu, İstanbul',
-    locative: "Cihangir'de",
-    status: 'coming_soon',
-    aliases: ['Cihangir', 'Beyoğlu'],
-    scopeNote: 'İstanbul · Beyoğlu · Cihangir (V3 Doğrulama Sırasında)',
   },
   {
     id: 'asmalimescit-beyoglu',
@@ -245,21 +241,6 @@ export const V3_LOCATIONS: FoodLocation[] = [
     status: 'coming_soon',
     aliases: ['Bebek', 'Beşiktaş'],
     scopeNote: 'İstanbul · Beşiktaş · Bebek (V3 Doğrulama Sırasında)',
-  },
-  {
-    id: 'nisantasi-sisli',
-    level: 'semt',
-    city: 'İstanbul',
-    district: 'Şişli',
-    neighborhood: 'Nişantaşı',
-    name: 'Nişantaşı',
-    slug: 'nisantasi',
-    path: ['istanbul', 'sisli', 'nisantasi'],
-    displayName: 'Nişantaşı, Şişli, İstanbul',
-    locative: "Nişantaşı'nda",
-    status: 'coming_soon',
-    aliases: ['Nişantaşı', 'Nisantasi', 'Şişli', 'Teşvikiye'],
-    scopeNote: 'İstanbul · Şişli · Nişantaşı (V3 Doğrulama Sırasında)',
   },
   {
     id: 'yalikavak-bodrum-mugla',
