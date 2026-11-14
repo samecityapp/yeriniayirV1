@@ -2,9 +2,19 @@
   "schemaVersion": "3.4",
   "regionKey": "istanbul-kadikoy-moda",
   "displayName": "Moda, Kadıköy, İstanbul",
-  "verifiedAt": "2026-11-13T22:45:59.120Z",
-  "selectedCount": 30,
+  "verifiedAt": "2026-11-14T10:59:02.129Z",
+  "selectedCount": 29,
   "rejectedControls": [
+    {
+      "id": "moda-zapata",
+      "resolvedName": "Zapata Burger",
+      "reason": "below_quality_threshold:★4.2(4663)_proofs_2"
+    },
+    {
+      "id": "moda-story",
+      "resolvedName": "Story Coffee Moda",
+      "reason": "below_quality_threshold:★4.2(1078)_proofs_2"
+    },
     {
       "id": "ctrl-cekirdekhane",
       "resolvedName": "Çekirdekhane",
@@ -421,88 +431,6 @@
       "selectedForSnapshot": true
     },
     {
-      "id": "moda-zapata",
-      "categoryId": "hamburger",
-      "resolvedName": "Zapata Burger",
-      "branchName": "Caferağa, Sakız Sk. No:1 D:C, 34710 Kadıköy/İstanbul, Türkiye",
-      "placeId": "ChIJjxKr-2a4yhQRqKeyb_cLKx8",
-      "coordinates": {
-        "lat": 40.9879056,
-        "lng": 29.0262578
-      },
-      "rating": 4.2,
-      "userRatingCount": 4663,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": true,
-        "outdoorSeating": true,
-        "reservable": false
-      },
-      "websiteUri": "https://zapataburger.com/",
-      "mapsUri": "https://maps.google.com/?cid=2245901996533131176",
-      "recommendedPrimary": [
-        "Classic Zapata Burger",
-        "Füme Kaburgalı Burger",
-        "Jalapeno Cheddar Burger"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Pulled Pork veya Kaburgalı Taco",
-          "note": "Burger menüsü kadar güçlü olan Meksika esintili atıştırmalık seçeneği.",
-          "proof": "zapataburger.com resmi menüsü ve Time Out İstanbul arşivi"
-        },
-        {
-          "name": "Ev Yapımı Oreo veya Karamel Milkshake",
-          "note": "Yıllardır burgerlerin yanında istenen yoğun kıvamlı klasik içecek.",
-          "proof": "Ekşi Sözlük ve Harbiyiyorum Zapata incelemeleri"
-        }
-      ],
-      "suitability": {
-        "seating": "Hem iç salon hem dış sokak masaları bulunan tam oturmalı düzen",
-        "crowdAndNoise": "Akşamları samimi, rock/pub esintili orta yüksek sesli ortam",
-        "disadvantage": "Büyük gruplar için masalar dar; akşam yemeği saatlerinde beklemek gerekebilir.",
-        "transit": "Caferağa Dr. İhsan Ünlüer Sokak üzerinde Kadıköy çarşı ile Moda arasında."
-      },
-      "verifiedAt": "2026-11-13",
-      "sources": [
-        {
-          "title": "Zapata Burger Resmi Sitesi",
-          "url": "https://zapataburger.com/",
-          "date": "2026-11-13",
-          "kind": "operator",
-          "note": "El yapımı burgerler, taco ve milkshake menüsü"
-        },
-        {
-          "title": "Harbiyiyorum — Moda Burger Rehberi",
-          "url": "https://harbiyiyorum.com/",
-          "date": "2026-07-12",
-          "kind": "editorial",
-          "note": "Kadıköy butik burger kültürünün öncü duraklarından biri"
-        },
-        {
-          "title": "Ekşi Sözlük — Zapata Burger",
-          "url": "https://eksisozluk.com/",
-          "date": "2026-09-14",
-          "kind": "community",
-          "note": "Yıllardır bozmayan kalın köfte ve taco tavsiyesi"
-        }
-      ],
-      "pros": [
-        "Köklü mahalle müdavim kitlesi",
-        "Burger dışında güçlü taco ve milkshake alternatifleri"
-      ],
-      "cons": [
-        "Akşamları kalabalık ve kısıtlı sokak alanı",
-        "Smash yerine kalın köfte sevenlere uygun"
-      ],
-      "uncertainties": [
-        "İki şube karışıklığına karşı mutlaka Caferağa Moda adresini seçmek gerekir."
-      ],
-      "selectionScore": 80,
-      "selectedForSnapshot": true
-    },
-    {
       "id": "moda-red-bunny",
       "categoryId": "hamburger",
       "resolvedName": "Red Bunny Burger Moda",
@@ -782,82 +710,6 @@
       ],
       "selectionScore": 87,
       "selectedForSnapshot": true
-    },
-    {
-      "id": "moda-story",
-      "categoryId": "kahve",
-      "resolvedName": "Story Coffee Moda",
-      "branchName": "Caferağa, Dalga Sk. No:22, 34710 Kadıköy/İstanbul, Türkiye",
-      "placeId": "ChIJQce432C4yhQRKlx16syzfGs",
-      "coordinates": {
-        "lat": 40.98498800000001,
-        "lng": 29.025508099999996
-      },
-      "rating": 4.2,
-      "userRatingCount": 1078,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": true,
-        "outdoorSeating": true,
-        "reservable": false
-      },
-      "websiteUri": "https://storyroasters.com/",
-      "mapsUri": "https://maps.google.com/?cid=7745263151858670634",
-      "recommendedPrimary": [
-        "Espresso Tonic",
-        "Flat White",
-        "Filtre Kahve (Story Roast)"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Ev Yapımı Granola Kasesi & Taze Kruvasan",
-          "note": "Sabah kahvesinin yanında sık tercih edilen doyurucu fırın ve kahvaltı tabakları.",
-          "proof": "storyroasters.com ve Vogue/Time Out İstanbul Moda kahve rehberleri"
-        }
-      ],
-      "suitability": {
-        "seating": "Geniş ahşap masa düzeni, dış oturma ve gel-al imkanı mevcut",
-        "crowdAndNoise": "Sabah çalışma temposu ve öğleden sonra sohbet kalabalığı yüksek",
-        "disadvantage": "Bilgisayarla oturan kalabalık nedeniyle masa devir hızı bazen yavaş kalabiliyor.",
-        "transit": "Dalga Sokak üzerinde Moda Caddesi’ne paralel konumda yürüyerek kolay ulaşım."
-      },
-      "verifiedAt": "2026-11-13",
-      "sources": [
-        {
-          "title": "Story Coffee Roasters Resmi Sitesi",
-          "url": "https://storyroasters.com/",
-          "date": "2026-11-13",
-          "kind": "operator",
-          "note": "Moda Dalga Sokak şubesi ve kahve kavurma geçmişi"
-        },
-        {
-          "title": "Vogue Türkiye — Kadıköy Kahve Durakları",
-          "url": "https://vogue.com.tr/",
-          "date": "2026-06-15",
-          "kind": "editorial",
-          "note": "Moda’da nitelikli kahve kültürünü başlatan öncü mekanlardan biri"
-        },
-        {
-          "title": "Ekşi Sözlük — Story Coffee",
-          "url": "https://eksisozluk.com/",
-          "date": "2026-09-18",
-          "kind": "community",
-          "note": "Müdavim kitlesi ve kahvaltı/kruvasan eşlikçileriyle biliniyor"
-        }
-      ],
-      "pros": [
-        "Moda’da köklü bağımsız kavurmacı",
-        "Kahve yanında oturmalı güçlü fırın/kahvaltı seçkisi"
-      ],
-      "cons": [
-        "Çalışan yoğunluğu nedeniyle masa bulma zorluğu yaşanabiliyor"
-      ],
-      "uncertainties": [
-        "Google kaydı \"Story Kahve & Yemek\" olarak geçse de asıl kimliği Story Coffee’dir."
-      ],
-      "selectionScore": 80,
-      "selectedForSnapshot": false
     },
     {
       "id": "moda-walters-coffee",

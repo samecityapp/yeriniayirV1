@@ -2,9 +2,19 @@
   "schemaVersion": "3.4",
   "regionKey": "aydin-kusadasi",
   "displayName": "Kuşadası, Aydın",
-  "verifiedAt": "2026-11-13T20:48:55.418Z",
-  "selectedCount": 33,
+  "verifiedAt": "2026-11-14T10:59:02.503Z",
+  "selectedCount": 31,
   "rejectedControls": [
+    {
+      "id": "kusadasi-osteria-mio",
+      "resolvedName": "Osteria Mio",
+      "reason": "below_quality_threshold:★4.2(844)_proofs_3"
+    },
+    {
+      "id": "kusadasi-efem-yagmur-pide",
+      "resolvedName": "Efem Yağmur Pide Salonu",
+      "reason": "below_quality_threshold:★4.2(912)_proofs_2"
+    },
     {
       "id": "ctrl-bayraktepe-closed",
       "resolvedName": "Bayraktepe Kahvaltıevi",
@@ -242,82 +252,6 @@
         "Sokak önü masaları mevsim koşullarına göre değişebiliyor."
       ],
       "selectionScore": 92,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "kusadasi-osteria-mio",
-      "categoryId": "pizza",
-      "resolvedName": "Osteria Mio",
-      "branchName": "Türkmen, Hüseyin Reis Sk. no:11/2, 09400 Kuşadası/Aydın, Türkiye",
-      "placeId": "ChIJ_wwOwuGpvhQRO49mTeaxbdw",
-      "coordinates": {
-        "lat": 37.8711243,
-        "lng": 27.266053399999997
-      },
-      "rating": 4.2,
-      "userRatingCount": 844,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": true,
-        "outdoorSeating": true,
-        "reservable": true
-      },
-      "websiteUri": null,
-      "mapsUri": "https://maps.google.com/?cid=15883547063504768827",
-      "recommendedPrimary": [
-        "Ekşi Mayalı Napoliten Pizza Çeşitleri",
-        "Margherita & Dört Peynirli Pizza",
-        "Füme Etli & Roka Parmesanlı Pizza"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Spaghetti Carbonara & Taze Bruschetta",
-          "note": "İnce hamurlu pizzaların yanında klasik İtalyan usulü hazırlanan makarnalar ve başlangıç bruschetta tabağı öne çıkıyor.",
-          "proof": "Restaurant Guru ve Wanderboat Kuşadası İtalyan mutfağı değerlendirmeleri"
-        }
-      ],
-      "suitability": {
-        "seating": "İç salon ve sakin ara sokak dış masaları",
-        "crowdAndNoise": "Akşamları müdavim ağırlıklı samimi trattoria atmosferi",
-        "disadvantage": "Popülerlikten ziyade hız odaklı yoğun akşamlarda servis ve hamur tutarlılığı konusunda beklentiyi yüksek tutanları zaman zaman zorlayabiliyor.",
-        "transit": "Türkmen Mahallesi Hüseyin Reis Sokak No:11/2 üzerinde Merkez ara sokaklarında."
-      },
-      "verifiedAt": "2026-11-13",
-      "sources": [
-        {
-          "title": "Restaurant Guru — Osteria Mio Kuşadası",
-          "url": "https://restaurantguru.com/",
-          "date": "2026-10-14",
-          "kind": "editorial",
-          "note": "Ekşi mayalı pizzalar ve spaghetti carbonara incelemesi"
-        },
-        {
-          "title": "Wanderboat — Osteria Mio Türkmen",
-          "url": "https://wanderboat.ai/",
-          "date": "2026-09-25",
-          "kind": "editorial",
-          "note": "Kuşadası Merkez sakin İtalyan trattoria ve pizza önerisi"
-        },
-        {
-          "title": "Klika — Osteria Mio Kuşadası Menü & Topluluk",
-          "url": "https://klika.app/",
-          "date": "2026-10-20",
-          "kind": "community",
-          "note": "Bruschetta, dört peynirli pizza ve makarna müdavim notları"
-        }
-      ],
-      "pros": [
-        "Ekşi mayalı hamur ve gerçek trattoria mutfağı",
-        "Turistik kalabalıktan uzak ara sokak konumu"
-      ],
-      "cons": [
-        "Yoğun servis akşamlarında masa bekleyişi veya tempo dalgalanması"
-      ],
-      "uncertainties": [
-        "Güncel mevsimlik pizza ve taze makarna çeşitleri günlük tezgaha göre değişebiliyor."
-      ],
-      "selectionScore": 81,
       "selectedForSnapshot": true
     },
     {
@@ -1857,82 +1791,6 @@
         "Google veri alanında fiyat seviyesi boş dönüyor; siparişte güncel kilo/porsiyon fiyatı sorulmalı."
       ],
       "selectionScore": 81,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "kusadasi-efem-yagmur-pide",
-      "categoryId": "denemelisin",
-      "resolvedName": "Efem Yağmur Pide Salonu",
-      "branchName": "Davutlar, Atatürk Cd., 09430 Kuşadası/Aydın, Türkiye",
-      "placeId": "ChIJAykdfHKkvhQR4pgsU9Qu-0E",
-      "coordinates": {
-        "lat": 37.734206,
-        "lng": 27.294383
-      },
-      "rating": 4.2,
-      "userRatingCount": 912,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": true,
-        "outdoorSeating": true,
-        "reservable": true
-      },
-      "websiteUri": null,
-      "mapsUri": "https://maps.google.com/?cid=4754445321083066594",
-      "recommendedPrimary": [
-        "Odun Ateşinde Kavurmalı Kaşarlı Pide",
-        "Nazilli Gülü & Bozdoğan Pidesi",
-        "Kıymalı & Kuşbaşılı Pide"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Ballı Cevizli Tahinli Pide & Kiremitte Köfte",
-          "note": "Pide hamuruyla fırınlanan ballı-cevizli tahinli tatlı pide ve sıcak kiremitte kaşarlı köfte öne çıkan diğer uzmanlıklar.",
-          "proof": "yagmurpide.com.tr menüsü ve Davutlar yerel önerileri"
-        }
-      ],
-      "suitability": {
-        "seating": "Geniş iç salon, bahçe masaları ve rezervasyon/paket servis",
-        "crowdAndNoise": "Davutlar merkezinde ailelerin ve yerlilerin yoğunlaştığı pide salonu",
-        "disadvantage": "Yaz sezonu hafta sonu akşamlarında aile grupları nedeniyle servis temposu yoğunlaşıyor.",
-        "transit": "Davutlar Mahallesi Atatürk Caddesi üzerinde belde meydanına yürüyüş mesafesinde."
-      },
-      "verifiedAt": "2026-11-13",
-      "sources": [
-        {
-          "title": "Yağmur Pide Resmi Menüsü",
-          "url": "https://yagmurpide.com.tr/",
-          "date": "2026-11-13",
-          "kind": "operator",
-          "note": "Nazilli Gülü, Bozdoğan pidesi, tahinli pide ve kiremitte köfte"
-        },
-        {
-          "title": "Restoranım — Efem Yağmur Pide Davutlar",
-          "url": "https://restoranim.net/",
-          "date": "2026-10-06",
-          "kind": "editorial",
-          "note": "Odun ateşinde ince pide ve kelle paça çorba seçkisi"
-        },
-        {
-          "title": "Yemeksepeti — Efem Yağmur Pide Salonu",
-          "url": "https://www.yemeksepeti.com/",
-          "date": "2026-10-28",
-          "kind": "community",
-          "note": "Davutlar yerel halkının en sık sipariş verdiği pide adresi"
-        }
-      ],
-      "pros": [
-        "Davutlar merkezde açık ve aktif taş fırın pide ustası",
-        "Nazilli Gülü ve tahinli tatlı pide"
-      ],
-      "cons": [
-        "Aile kalabalığında servis bekleme süresi"
-      ],
-      "uncertainties": [
-        "Sahil şubesi geçici kapalı göründüğünden Davutlar Atatürk Caddesi merkez şube doğrulanmıştır."
-      ],
-      "selectionScore": 80,
       "selectedForSnapshot": true
     },
     {

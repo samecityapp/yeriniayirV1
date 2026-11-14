@@ -1004,7 +1004,7 @@ export const ANTALYA_KALEICI_DEF: V3RegionDefinition = {
       cat: 'ates-firin',
       name: 'Aksu Pide Salonu',
       brand: 'aksu',
-      flags: { insider: true },
+      flags: { insider: true, userRef: true },
       area: 'Barbaros · Aksu, Antalya',
       signals: ['odun-atesi-etli-pide', 'ince-citir-hamur', 'referans-pideci'],
       desc: "Aksu merkezinde odun ateşindeki kara fırında el açması incecik hamurla pişirdiği kıymalı, kuşbaşılı ve kaşarlı etli pideleriyle Batı Antalya yolundaki Kumluca geleneğini Aksu aksında yaşatan referans pide salonu.",

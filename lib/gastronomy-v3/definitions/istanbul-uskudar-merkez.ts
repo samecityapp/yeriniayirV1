@@ -47,7 +47,7 @@ export const ISTANBUL_USKUDAR_MERKEZ_DEF: V3RegionDefinition = {
   ],
   categories: buildRegionCategories(),
   candidates: [
-    // --- PİZZA (3 mekan) ---
+    // --- PİZZA (2 mekan) ---
     compactSeed({
       id: 'usk-bobby-baccalieri',
       placeId: 'ChIJxbAz3t-3yhQRFEBqYU9sARM',
@@ -113,41 +113,8 @@ export const ISTANBUL_USKUDAR_MERKEZ_DEF: V3RegionDefinition = {
       unc: ['Akşam paket yoğunluğunda hazırlık süresi uzayabiliyor.'],
       verifiedAt: '2026-11-14',
     }),
-    compactSeed({
-      id: 'usk-pizza-amore',
-      placeId: 'ChIJade7Vk-3yhQRbjaYpP6gJtE',
-      cat: 'pizza',
-      name: 'Pizza Amore Üsküdar',
-      brand: 'amore',
-      flags: { insider: true },
-      area: 'Mimar Sinan Çarşısı, Üsküdar',
-      signals: ['carsi-klasiği', 'calzone', 'ogrenci-mudavimi'],
-      desc:
-        'Mimar Sinan Çarşısı pasajının içinde yıllardır taze hazırlanan calzone, kavurmalı ve ince hamur pizzalarıyla çarşı esnafı ve gençlerin sevdiği yerel durak.',
-      order: ['Kıymalı / Kavurmalı Calzone', 'Margarita', 'Karışık Amore Pizza'],
-      menu: ['Sebzeli Pizza', 'Ton Balıklı Pizza', 'Fırın Makarna'],
-      sec: [
-        [
-          'Fırın Makarna & Çikolatalı Sufle',
-          'Pizza yanında çarşı içi uygun bütçeli klasik eşlikçi ve sıcak tatlı seçeneği.',
-          'Üsküdar Çarşısı öğrenci ve esnaf paylaşımları',
-        ],
-      ],
-      seat: 'Pasaj içi ve sokak seviyesinde hızlı masa oturumu',
-      crowd: 'Öğle ve akşamüstü saatlerinde çarşı yoğunluğu ile canlı',
-      dis: 'Geleneksel şık Napoli bistrosu yerine pasaj içi sade ve hızlı servisli çarşı pizzacısı atmosferi sunar.',
-      transit: 'Üsküdar İskele ve Marmaray istasyonunun hemen arkasındaki Mimar Sinan Çarşısı’nda.',
-      sources: [
-        ['Ekşi Sözlük — Pizza Amore Üsküdar', 'https://eksisozluk.com/', 'community', 'Yıllardır çarşı içinde calzone ve pizzasıyla tercih edilen köklü yerel adres'],
-        ['ExploreKadikoy / Üsküdar Yeme-İçme Notları', 'https://www.explorekadikoy.com/', 'editorial', 'Pasaj içindeki samimi çarşı pizzacısı klasiği'],
-      ],
-      pros: ['Üsküdar Çarşı merkezinde hızlı erişim', 'Ekonomik bütçe seviyesi ve calzone çeşitleri'],
-      cons: ['Pasaj içi gürültü ve sade dekorasyon'],
-      unc: ['Öğle arası yoğunluğunda kısa bekleme olabiliyor.'],
-      verifiedAt: '2026-11-14',
-    }),
 
-    // --- HAMBURGER (3 mekan) ---
+    // --- HAMBURGER (2 mekan) ---
     compactSeed({
       id: 'usk-rikka-burger',
       placeId: 'ChIJIzgcFgS3yhQRp3JWmE18ox8',
@@ -213,41 +180,8 @@ export const ISTANBUL_USKUDAR_MERKEZ_DEF: V3RegionDefinition = {
       unc: ['Bazı özel hamburger ekmekleri akşam saatlerinde tükenebilir.'],
       verifiedAt: '2026-11-14',
     }),
-    compactSeed({
-      id: 'usk-butchers-burger',
-      placeId: 'ChIJG0ltFrGlyhQRiByhvzJnEcU',
-      cat: 'hamburger',
-      name: "Butcher's Burger Üsküdar",
-      brand: 'butcher',
-      flags: { insider: true },
-      area: 'Atlas Çk., Mimar Sinan',
-      signals: ['carsi-burger', 'kasap-koftesi', 'merkezi-konum'],
-      desc:
-        'Üsküdar Çarşısı’ndaki Atlas Çıkmazı içinde kasap köftesi lezzetinde kalın veya double hamburgerleri uygun bütçe aralığıyla sunan çarşı durağı.',
-      order: ["Butcher's Double Burger", 'Cheddarlı Klasik Burger', 'Füme Kaburgalı Burger'],
-      menu: ['Mantarlı Swiss Burger', 'Patates Kızartması', 'Soğuk İçecekler'],
-      sec: [
-        [
-          'Sarımsaklı Soslu Patates & Çıtır Tavuk Şeritleri',
-          'Burger menüsüyle birlikte hızlı paylaşım için tercih edilen çıtır eşlikçi.',
-          'Üsküdar Çarşısı öğrenci ve semt müdavim notları',
-        ],
-      ],
-      seat: 'İki katlı sade salon ve dar pasaj önü oturma alanı',
-      crowd: 'Öğle-akşam arası genç kalabalık ve çarşı ziyaretçileriyle hareketli',
-      dis: 'Küçük pasaj çıkmazında olduğu için havalandırma ve yoğun saatlerde masa sığışıklığı hissedilebiliyor.',
-      transit: 'Üsküdar Marmaray çıkışının hemen arkasındaki Atlas Çıkmazı’nda.',
-      sources: [
-        ['Ekşi Sözlük — Butchers Burger Üsküdar', 'https://eksisozluk.com/', 'community', 'Çarşı içinde doyurucu köftesi ve ulaşılabilir fiyatıyla tercih ediliyor'],
-        ['ExploreKadikoy — Üsküdar Çarşı Durakları', 'https://www.explorekadikoy.com/', 'editorial', 'Mimar Sinan Çarşısı’nın bilinen hızlı burger noktalarından'],
-      ],
-      pros: ['Vapur ve Marmaray’a 2 dakikalık merkezi konum', 'Ekonomik/orta fiyat seviyesi'],
-      cons: ['Dar sokak içi ve yoğun saatlerde havalandırma kısıtı'],
-      unc: ['Yoğun hafta sonu öğle saatlerinde masa beklemek gerekebilir.'],
-      verifiedAt: '2026-11-14',
-    }),
 
-    // --- KAHVE (5 mekan — Nevmekan Sahil ikonik 5. kontenjanı açar) ---
+    // --- KAHVE (3 mekan) ---
     compactSeed({
       id: 'usk-olinna',
       placeId: 'ChIJk6I-NS-3yhQRMXpF_lqu8xU',
@@ -345,115 +279,15 @@ export const ISTANBUL_USKUDAR_MERKEZ_DEF: V3RegionDefinition = {
       unc: ['Hafta sonu bahçe masaları öğleden sonra kalabalıklaşabilir.'],
       verifiedAt: '2026-11-14',
     }),
-    compactSeed({
-      id: 'usk-riff-coffee',
-      placeId: 'ChIJq1JTxcq3yhQRse2ql0OBwtA',
-      cat: 'kahve',
-      name: 'Riff Specialty Coffee',
-      brand: 'riff',
-      flags: { insider: true },
-      area: 'Uncular Cd., Aziz Mahmut Hüdayi',
-      signals: ['uncular-caddesi', 'nitelikli-kahve', 'soguk-demleme'],
-      desc:
-        'Uncular Caddesi üzerinde nitelikli espresso harmanları, soğuk demlemeleri ve akşamüstü tatlı molalarıyla mahalle müdavimlerinin tercihi olan üçüncü nesil kahve dükkanı.',
-      order: ['Flat White', 'Iced Spanish Latte', 'V60 Filtre'],
-      menu: ['Cold Brew', 'Cortado', 'Matcha'],
-      sec: [
-        [
-          'Tiramisu & Havuçlu Tarçınlı Kek',
-          'Uncular yürüyüşü molasında kahve yanına alınan günlük tatlı çeşitleri.',
-          'Üsküdar kahve haritası ve yerel müdavim notları',
-        ],
-      ],
-      seat: 'İki katlı modern bar oturması ve kaldırım masaları',
-      crowd: 'Öğrenci ve genç profesyonellerle dinamik atmosfer',
-      dis: 'Uncular Caddesi trafiği ve kalabalığı nedeniyle cadde önü masaları gürültülü olabiliyor.',
-      transit: 'Üsküdar Marmaray çıkışından Uncular Caddesi No:33 üzerinde 3 dakikalık yürüyüş.',
-      sources: [
-        ['ExploreKadikoy — Üsküdar Uncular Kahve Hattı', 'https://www.explorekadikoy.com/', 'editorial', 'Uncular aksında nitelikli çekirdek ve soğuk kahve sunan modern bar'],
-        ['Müdavim — Riff Specialty Coffee', 'https://mudavim.net/', 'community', 'Sütlü espresso içecekleri ve merkeze yakınlığıyla öne çıkıyor'],
-      ],
-      pros: ['Üsküdar merkeze çok yakın merkezi konum', 'Çeşitli soğuk ve sıcak nitelikli içecekler'],
-      cons: ['Yoğun saatlerde oturma alanı darlığı ve cadde gürültüsü'],
-      unc: ['Bazı dönemlerde menüdeki tatlılar dış tedarikçiden günlük değişebilir.'],
-      verifiedAt: '2026-11-14',
-    }),
-    compactSeed({
-      id: 'usk-nevmekan-sahil',
-      placeId: 'ChIJ_3qsuKW3yhQRXLgwaHBivq0',
-      cat: 'kahve',
-      name: 'Nevmekan Sahil',
-      brand: 'nevmekan',
-      flags: { iconic: true },
-      area: 'Şemsipaşa Sahili, Üsküdar',
-      signals: ['bogaz-kiyisi', 'kutuphane-kafe', 'simge-mimari'],
-      desc:
-        'Üsküdar Şemsipaşa sahilinde kubbeli cam kütüphane mimarisi, sergi alanı ve doğrudan Boğaz havasıyla İstanbul’un en ikonik kültür-kafe komplekslerinden biri.',
-      order: ['Türk Kahvesi & Lokum', 'Filtre Kahve', 'Demleme Çay'],
-      menu: ['Sıcak Çikolata', 'Limonata', 'Pasta Çeşitleri'],
-      sec: [
-        [
-          'Fırın Tatlıları & Kahvaltı/Tost Seçenekleri',
-          'Kütüphane veya sergi gezisi sonrasında dinlenirken tercih edilen hafif yiyecek ve pasta eşlikçileri.',
-          'nevmekan.com resmi sayfası ve İstanbul kent rehberleri',
-        ],
-      ],
-      seat: 'Görkemli kubbeli kütüphane içi oturma alanı, geniş salon ve Boğaz terası',
-      crowd: 'Ders çalışan üniversiteliler, kitap okuyanlar ve hafta sonu ziyaretçileriyle her daim kalabalık',
-      dis: 'Hafta sonları kütüphane ve kafe masaları için kapıda uzun sıra oluşabiliyor; kahvesi butik üçüncü nesil kavurmacılar düzeyinde uzmanlaşmış değildir.',
-      transit: 'Üsküdar Vapur İskelesi ve Şemsipaşa sahil yürüyüş bandı üzerinde.',
-      sources: [
-        ['Nevmekan Resmi Sitesi', 'https://www.nevmekan.com/', 'operator', 'Şemsipaşa sahil şubesi, kütüphane ve sergi kompleksi'],
-        ['Oggusto — İstanbul’un Kütüphane Kafeleri', 'https://www.oggusto.com/', 'editorial', 'Kubbeli mimarisi ve sahil konumuyla şehrin en bilinen kültür-kahve durağı'],
-        ['Ekşi Sözlük — Nevmekan Sahil', 'https://eksisozluk.com/', 'community', 'Mimarisi ve uygun fiyatları beğenilirken kalabalık sırası eleştiriliyor'],
-      ],
-      pros: ['Etkileyici kubbeli kütüphane mimarisi ve sahil konumu', 'Ulaşılabilir bütçe seviyesi'],
-      cons: ['Hafta sonu uzun giriş/masa sırası ve klasik seviye kahve çekirdeği'],
-      unc: ['Sergi takvimine göre bazı bölümlerde etkinlik kalabalığı artabilir.'],
-      verifiedAt: '2026-11-14',
-    }),
 
-    // --- DATE MEKANLARI (4 mekan) ---
-    compactSeed({
-      id: 'usk-salacak-restaurant',
-      placeId: 'ChIJ2wMJhAi5yhQRnDwsv2zhwY0',
-      cat: 'date',
-      name: 'Salacak Restaurant',
-      brand: 'salacak',
-      flags: { iconic: true },
-      pinnedFirst: true,
-      area: 'Salacak Sahili, Üsküdar',
-      signals: ['kiz-kulesi-manzarasi', 'gun-batimi', 'sahil-restorani'],
-      desc:
-        'Salacak sahil bandında Kız Kulesi ve Tarihi Yarımada’nın gün batımı silüetine doğrudan bakan terasıyla özel akşam yemeklerinin manzaralı Üsküdar durağı.',
-      order: ['Izgara Deniz Levreği', 'Dana Madalyon', 'Karides Güveç'],
-      menu: ['Soğuk Mezeler', 'Kalamar Tava', 'Ana Yemek Izgaralar'],
-      sec: [
-        [
-          'Sıcak Tahin Helvası & Türk Kahvesi',
-          'Boğaz ve Kız Kulesi manzarasına karşı yemeği kapatan geleneksel sıcak tatlı sunumu.',
-          'Salacak sahil mekanları rehberleri ve menü seçkisi',
-        ],
-      ],
-      seat: 'Kız Kulesi manzaralı ön teras ve camlı iç salon (akşamları rezervasyon şart)',
-      crowd: 'Özellikle gün batımı ve akşam yemeklerinde çiftler ve yerli/yabancı ziyaretçilerle dolu',
-      dis: 'Turistik sahil konumundan kaynaklı yüksek fiyat algısı ve pencere/teras kenarı için günler öncesinden rezervasyon gerekliliği vardır.',
-      transit: 'Salacak Harem Sahil Yolu üzerinde Üsküdar İskele’den yürüyüş mesafesinde.',
-      sources: [
-        ['Oggusto — Kız Kulesi Manzaralı Restoranlar', 'https://www.oggusto.com/', 'editorial', 'Salacak kıyısında gün batımı ve Kız Kulesi açısına hakim akşam mekanı'],
-        ['Ekşi Sözlük — Salacak Sahil Restoranları', 'https://eksisozluk.com/', 'community', 'Manzara konumu öne çıkarken akşam yoğunluğu ve rezervasyon zorunluluğu vurgulanıyor'],
-      ],
-      pros: ['Doğrudan Kız Kulesi ve Tarihi Yarımada panoraması', 'Sahil yürüyüşü sonrası akşam buluşması'],
-      cons: ['Turistik yoğunluk ve pencere kenarı masa bulma güçlüğü'],
-      unc: ['Hava koşullarına göre açık teras cam bölmeye dönüşür.'],
-      verifiedAt: '2026-11-14',
-    }),
+    // --- DATE MEKANLARI (2 mekan) ---
     compactSeed({
       id: 'usk-nevmekan-selimiye',
       placeId: 'ChIJz7ew9wS5yhQR4nXB1bcU9ls',
       cat: 'date',
       name: 'Nevmekan Selimiye',
       brand: 'nevmekan',
+      pinnedFirst: true,
       area: 'Şerif Kuyusu Sk., Selimiye',
       signals: ['tarihi-hamam-mimarisi', 'sakin-avlu', 'aksam-yemegi'],
       desc:
@@ -479,40 +313,6 @@ export const ISTANBUL_USKUDAR_MERKEZ_DEF: V3RegionDefinition = {
       pros: ['Restore edilmiş özgün tarihi hamam mimarisi', 'Sakin avlu atmosferi ve makul bütçe'],
       cons: ['Ana merkeze göre Selimiye içinde yürüme/yokuş gereksinimi'],
       unc: ['Sergi veya sohbet etkinliklerinde avlu bölümü kalabalıklaşabilir.'],
-      verifiedAt: '2026-11-14',
-    }),
-    compactSeed({
-      id: 'usk-nevmekan-baglarbasi',
-      placeId: 'ChIJTQgmd_C3yhQRhETWHTvKB_Q',
-      cat: 'date',
-      name: 'Nevmekan Bağlarbaşı',
-      brand: 'nevmekan',
-      flags: { iconic: true },
-      area: 'Gazi Cd., Bağlarbaşı',
-      signals: ['tarihi-tramvay-hangari', 'yuksek-tavan', 'kutuphane-restoran'],
-      desc:
-        'Eski İETT tramvay deposundan dönüştürülmüş yüksek tavanlı endüstriyel-tarihi hangarda kitaplık, piyano tınıları ve şık akşam yemeklerini birleştiren simge Üsküdar mekanı.',
-      order: ['Izgara Köfte & Püre', 'Mantarlı Tavuk veya Makarna', 'Salata Kaseleri'],
-      menu: ['Günün Çorbası', 'Tost & Sandviçler', 'Sıcak İçecekler'],
-      sec: [
-        [
-          'Demleme Çay & Sütlü/Meyveli Pasta Dilimleri',
-          'Yemek sonrası kütüphane rafları arasında sohbete eşlik eden tatlı molası.',
-          'nevmekan.com Bağlarbaşı sayfası ve kültür-sanat rehberleri',
-        ],
-      ],
-      seat: 'Yüksek tavanlı hangar salonu, üst galeri ve geniş bahçe oturması',
-      crowd: 'Hafta içi öğrenciler, akşamları çiftler ve ailelerle dengeli atmosfer',
-      dis: 'Girişte ve masa düzeninde yüksek sirkülasyon olduğundan hafta sonu öğleden sonraları sakin köşe bulmak zorlaşabiliyor.',
-      transit: 'Bağlarbaşı Metro istasyonuna 2 dakikalık yürüme mesafesinde Gazi Caddesi üzerinde.',
-      sources: [
-        ['Nevmekan Resmi Sitesi — Bağlarbaşı', 'https://www.nevmekan.com/', 'operator', 'Eski tramvay hangarı mimarisi, kütüphane ve mutfak servisi'],
-        ['Oggusto — Anadolu Yakası Kültür Mekanları', 'https://www.oggusto.com/', 'editorial', 'Tarihi İETT hangarının kültür-gastronomi merkezine dönüşüm örneği'],
-        ['Ekşi Sözlük — Nevmekan Bağlarbaşı', 'https://eksisozluk.com/', 'community', 'Yüksek tavanlı endüstriyel-tarihi salonuyla Üsküdar’ın en bilinen buluşma noktalarından'],
-      ],
-      pros: ['Özgün tarihi tramvay deposu mimarisi', 'Metro çıkışına çok yakın kolay erişim'],
-      cons: ['Popüler saatlerde masa bulmak için sıra beklenmesi'],
-      unc: ['Etkinlik ve konser akşamlarında oturma düzeni değişebilir.'],
       verifiedAt: '2026-11-14',
     }),
     compactSeed({
@@ -548,7 +348,7 @@ export const ISTANBUL_USKUDAR_MERKEZ_DEF: V3RegionDefinition = {
       verifiedAt: '2026-11-14',
     }),
 
-    // --- KAHVALTI (4 mekan) ---
+    // --- KAHVALTI (2 mekan) ---
     compactSeed({
       id: 'usk-ira-artisan',
       placeId: 'ChIJyzccTOO3yhQRNoUYB4hzUkA',
@@ -583,39 +383,6 @@ export const ISTANBUL_USKUDAR_MERKEZ_DEF: V3RegionDefinition = {
       verifiedAt: '2026-11-14',
     }),
     compactSeed({
-      id: 'usk-a-la-lune',
-      placeId: 'ChIJQRocFK63yhQRjRk3Debu_ck',
-      cat: 'kahvalti',
-      name: 'Â La Lune Patisserie',
-      brand: 'lune',
-      flags: { insider: true },
-      area: 'İmam Nasır Sk., Mimar Sinan',
-      signals: ['fransiz-patisserie', 'kis-kahvalti', 'carsi-sokagi'],
-      desc:
-        'Mimar Sinan’ın sakin İmam Nasır Sokağı’nda Fransız pastacılık teknikleriyle hazırlanan tuzlu kişler, dolgulu kruvasanlar ve sabah kahvaltı tabaklarıyla tanınan butik mekan.',
-      order: ['Tuzlu Kiş & Yeşillik Tabağı', 'Peynirli / Somonlu Kruvasan', 'Sabah Kahvaltı Tabağı'],
-      menu: ['Bademli Kruvasan', 'San Sebastian', 'Özel Çay & Kahveler'],
-      sec: [
-        [
-          'Frambuazlı Tartolet & Choux Pastalar',
-          'Kahvaltı sonunu Fransız vitrin tatlılarıyla süslemek isteyenlerin ilk tercihi.',
-          'Üsküdar yerel pastane seçkileri ve müdavim paylaşımları',
-        ],
-      ],
-      seat: 'Estetik iç mekan masaları ve dar sokak önü oturumu',
-      crowd: 'Hafta sonu sabahları ve öğleden sonra çay-tatlı saatinde kalabalık',
-      dis: 'Çok küçük sokakta bulunduğundan hafta sonları dar oturma düzeni ve yoğun masa trafiği oluşabiliyor.',
-      transit: 'Üsküdar Mimar Sinan İmam Nasır Sokak No:13’te Uncular Caddesi’ne paralel konumda.',
-      sources: [
-        ['ExploreKadikoy — Üsküdar Pastane ve Kahvaltı Durakları', 'https://www.explorekadikoy.com/', 'editorial', 'Mimar Sinan içinde Fransız kruvasan ve kiş mutfağıyla ayrışıyor'],
-        ['Ekşi Sözlük — A La Lune Patisserie Üsküdar', 'https://eksisozluk.com/', 'community', 'Tatlıların tazeliği ve sabah kiş tabakları beğeniliyor'],
-      ],
-      pros: ['Hem tuzlu kahvaltılık kiş/kruvasan hem nitelikli Fransız pastacılık', 'Merkezi çarşıya yakın ama sakin sokak konumu'],
-      cons: ['Küçük oturma salonunda yoğun saatlerde gürültü ve masa bekleyişi'],
-      unc: ['Vitrindeki özel tatlı çeşitleri gün içinde değişebiliyor.'],
-      verifiedAt: '2026-11-14',
-    }),
-    compactSeed({
       id: 'usk-fournos',
       placeId: 'ChIJvxqh_ifJyhQR_Ljcxcr5Ggc',
       cat: 'kahvalti',
@@ -647,41 +414,8 @@ export const ISTANBUL_USKUDAR_MERKEZ_DEF: V3RegionDefinition = {
       unc: ['Görece az değerlendirmeli butik fırın olduğu için günlük stok saatine göre çeşitler erken tükenebilir.'],
       verifiedAt: '2026-11-14',
     }),
-    compactSeed({
-      id: 'usk-katibim',
-      placeId: 'ChIJ-eXz7Yi3yhQRC3ES5dv-exE',
-      cat: 'kahvalti',
-      name: 'Katibim',
-      brand: 'katibim',
-      flags: { ritual: true },
-      area: 'Şemsipaşa Sahili, Üsküdar',
-      signals: ['bogaz-kahvaltisi', 'kiz-kulesi-karsisi', 'serpme-sofra'],
-      desc:
-        'Şemsipaşa kıyısında doğrudan Kız Kulesi ve Boğaz manzarasına bakan geniş terasında yıllardır kalabalık aile ve arkadaş sofralarına serpme kahvaltı sunan Üsküdar klasiği.',
-      order: ['Boğaz Manzaralı Serpme Kahvaltı', 'Kavurmalı / Sucuklu Sahanda Yumurta', 'Sıcak Pişi & Sigara Böreği'],
-      menu: ['Menemen', 'Kuymak / Mıhlama', 'Semaver Çay'],
-      sec: [
-        [
-          'Semaver Çay & Katmer / Künefe',
-          'Kahvaltıyı Boğaz rüzgarına karşı uzun çay sohbetiyle sürdürenlerin tatlı ve içecek seçkisi.',
-          'İstanbul Boğaz kahvaltı rehberleri ve yerel değerlendirmeler',
-        ],
-      ],
-      seat: 'Çok geniş sahil terası ve camlı çok katlı iç salon',
-      crowd: 'Hafta sonu sabahları yüksek doluluklu, enerjik aile kahvaltısı kalabalığı',
-      dis: 'Turistik ve çok kalabalık sirkülasyon nedeniyle hafta sonları masa sırası, yavaşlayabilen servis temposu ve sahil fiyat seviyesi yaşanmaktadır.',
-      transit: 'Üsküdar İskele ve Marmaray’dan Salacak yönüne 4 dakikalık sahil yürüyüşünde.',
-      sources: [
-        ['Hürriyet Seyahat — Boğaz Kıyısı Kahvaltı Durakları', 'https://www.hurriyet.com.tr/', 'editorial', 'Üsküdar Şemsipaşa sahilinde Kız Kulesi açılı klasik serpme kahvaltı mekanı'],
-        ['Ekşi Sözlük — Katibim Üsküdar', 'https://eksisozluk.com/', 'community', 'Konumu ve manzarası övülürken hafta sonu yoğunluk ve servis yavaşlığı eleştiriliyor'],
-      ],
-      pros: ['Doğrudan Boğaz ve Kız Kulesi manzaralı geniş kahvaltı terası', 'Kalabalık gruplar için büyük kapasite'],
-      cons: ['Hafta sonları yoğun gürültü ve servis hızında düşüş'],
-      unc: ['Deniz kenarı ön sıra masalar için erken gidilmesi gerekir.'],
-      verifiedAt: '2026-11-14',
-    }),
 
-    // --- MUTLAKA DENEMELİSİN (7 mekan) ---
+    // --- MUTLAKA DENEMELİSİN (5 mekan) ---
     compactSeed({
       id: 'usk-kanaat-lokantasi',
       placeId: 'ChIJeZicrI63yhQRy6SwuJ6_aHI',
@@ -718,40 +452,6 @@ export const ISTANBUL_USKUDAR_MERKEZ_DEF: V3RegionDefinition = {
       verifiedAt: '2026-11-14',
     }),
     compactSeed({
-      id: 'usk-filizler-koftecisi',
-      placeId: 'ChIJE2mkRcHdyhQR8jf2acr6w1M',
-      cat: 'denemelisin',
-      name: 'Filizler Köftecisi',
-      brand: 'filizler',
-      flags: { heritage: true, ritual: true },
-      area: 'Salacak Sahili, Üsküdar',
-      signals: ['salacak-kofte', 'kiz-kulesi-kiyisi', 'piyaz-ritueli'],
-      desc:
-        'Salacak sahilinde doğrudan Kız Kulesi karşısındaki konumuyla ünlenen; ızgara kasap köftesi, kaşarlı köfte, tahinli/klasik piyaz ve sıcak irmik helvası sunan Üsküdar sahil klasiği.',
-      order: ['Izgara Kasap Köfte', 'Kaşarlı Köfte', 'Fasulye Piyazı'],
-      menu: ['Süzme Mercimek Çorbası', 'Köz Biber & Domates', 'Ayran'],
-      sec: [
-        [
-          'Dondurmalı Sıcak İrmik Helvası',
-          'Köfte-piyaz ritüelini tamamlayan yılların değişmeyen klasik sıcak tatlı kapanışı.',
-          'filizlerkoftecisi.com ve Salacak müdavim paylaşımları',
-        ],
-      ],
-      seat: 'Kız Kulesi manzaralı çok katlı salon ve açık teras (üst katlar köfte+piyaz yemek içindir)',
-      crowd: 'Hafta sonları yoğun yerli turist ve İstanbullu ziyaretçi kalabalığı',
-      dis: 'Yüksek popülerlik nedeniyle hafta sonu öğleden sonra kapıda sıra bekleme ve yüksek tempolu kalabalık servis yaşanmaktadır.',
-      transit: 'Üsküdar İskele’den Salacak sahili yürüyüş yolunda Harem yönüne 5 dakika.',
-      sources: [
-        ['Filizler Köftecisi Resmi Sitesi', 'https://www.filizlerkoftecisi.com/', 'operator', 'Salacak şubesi, ızgara köfte çeşitleri ve irmik helvası menüsü'],
-        ['Oggusto — Kız Kulesi Manzaralı Lezzetler', 'https://www.oggusto.com/', 'editorial', 'Boğaz kıyısında klasik köfte ve piyaz geleneğini yaşatan semt kurumu'],
-        ['Ekşi Sözlük — Filizler Köftecisi Salacak', 'https://eksisozluk.com/', 'community', 'Manzara-fiyat dengesi övülürken hafta sonu aşırı kalabalık ve bekleme sırası belirtiliyor'],
-      ],
-      pros: ['Kız Kulesi karşısında eşsiz sahil manzarası ile köfte-piyaz yemeye imkan tanıması', 'Tutarlı köfte ve irmik helvası'],
-      cons: ['Hafta sonları kapıda bekleme sırası ve yoğun gürültü'],
-      unc: ['Üst kat teras masaları hafta sonları hızlı dolmaktadır.'],
-      verifiedAt: '2026-11-14',
-    }),
-    compactSeed({
       id: 'usk-lokanta-imren',
       placeId: 'ChIJATzw5fa3yhQR0ufFTxyKiRM',
       cat: 'denemelisin',
@@ -781,39 +481,6 @@ export const ISTANBUL_USKUDAR_MERKEZ_DEF: V3RegionDefinition = {
       pros: ['Turistik merkezin uzağında gerçek esnaf lokantası fiyat ve kalitesi', 'Yüksek hijyen ve özen'],
       cons: ['Çeşitlerin öğleden sonra hızla azalması'],
       unc: ['Günlük menü sabah hazırlığına göre değişir.'],
-      verifiedAt: '2026-11-14',
-    }),
-    compactSeed({
-      id: 'usk-oz-bolu',
-      placeId: 'ChIJmXZfV4m3yhQRyL3L-gpNkAc',
-      cat: 'denemelisin',
-      name: 'Öz Bolu Lokantası',
-      brand: 'oz bolu',
-      flags: { ritual: true },
-      area: 'Atlas Sk., Mimar Sinan',
-      signals: ['bolu-ascilik', 'carsi-esnaf-lokantasi', 'kuzu-incik'],
-      desc:
-        'Üsküdar Çarşısı içinde yarım asrı aşan Bolulu aşçılık geleneğini sürdüren, fırın kuzu incik, tas kebabı ve tereyağlı pilavıyla çarşı çalışanlarının öğle adresi.',
-      order: ['Fırın Kuzu İncik', 'Tas Kebabı & Pirinç Pilavı', 'Kelle Paça / Mercimek Çorba'],
-      menu: ['İzmir Köfte', 'Kuru Fasulye', 'Zeytinyağlılar'],
-      sec: [
-        [
-          'Fırın Sütlaç & Kemalpaşa Tatlısı',
-          'Çarşı öğle yemeğinin ardından hızlı bir kaşıkla tamamlanan klasik sütlü ve şerbetli tatlılar.',
-          'Üsküdar Çarşısı yerel kültür yazıları ve müdavim notları',
-        ],
-      ],
-      seat: 'İki katlı klasik çarşı esnaf lokantası salonu',
-      crowd: 'Öğle saatlerinde çarşı esnafı ve Üsküdar müdavimleriyle dolu',
-      dis: 'Geleneksel hızlı esnaf lokantası temposundadır; dar masa aralıkları ve çarşı yoğunluğu nedeniyle uzun sakin oturuma uygun değildir.',
-      transit: 'Üsküdar Marmaray ve Çarşı çıkışından Atlas Sokak No:11’de yürüyerek 2 dakika.',
-      sources: [
-        ['Harbiyiyorum — Üsküdar Çarşısı Esnaf Lokantaları', 'https://harbiyiyorum.com/', 'editorial', 'Bolulu ustaların eliyle çarşı içinde köklü tencere yemeği geleneği'],
-        ['Ekşi Sözlük — Öz Bolu Lokantası Üsküdar', 'https://eksisozluk.com/', 'community', 'Fırın yemekleri ve kuzu inciğiyle çarşının köklü müdavim lokantası'],
-      ],
-      pros: ['Üsküdar Çarşı merkezinde hızlı ve doyurucu tencere mutfağı', 'Kanaat kalabalığına karşı pratik çarşı alternatifi'],
-      cons: ['Öğle saatlerinde sıkışık masa düzeni'],
-      unc: ['Bazı sakatat ve özel et yemekleri öğleden sonra bitebilir.'],
       verifiedAt: '2026-11-14',
     }),
     compactSeed({
@@ -918,5 +585,8 @@ export const ISTANBUL_USKUDAR_MERKEZ_DEF: V3RegionDefinition = {
     negControl('ctrl-usk-hunburger-closed', 'ChIJ3W203kK5yhQRpVPDygQNCwE', 'hamburger', 'Hunburger Üsküdar şubesi kalıcı olarak kapandı (CLOSED_PERMANENTLY).'),
     negControl('ctrl-usk-starbucks', 'ChIJQe1XRVi3yhQRy0isBiOTc3c', 'kahve', 'Küresel zincir Starbucks Üsküdar şubesi elendi.', { brand: 'starbucks' }),
     negControl('ctrl-usk-coffy', 'ChIJf6qlMHG3yhQRiHAa5QLmQug', 'kahve', 'Endüstriyel zincir Üsküdar Coffy şubesi elendi.', { brand: 'coffy' }),
+    negControl('ctrl-usk-pizza-amore-chain', 'ChIJade7Vk-3yhQRbjaYpP6gJtE', 'pizza', 'Şubeli ticari konsept Pizza Amore Üsküdar elendi.', { brand: 'pizza amore' }),
+    negControl('ctrl-usk-butchers-chain', 'ChIJG0ltFrGlyhQRiByhvzJnEcU', 'hamburger', "Çok şubeli zincir Butcher's Burger Üsküdar elendi.", { brand: 'butchers burger' }),
+    negControl('ctrl-usk-filizler-chain', 'ChIJE2mkRcHdyhQR8jf2acr6w1M', 'denemelisin', 'Ticari şubeleşmiş Filizler Köftecisi zincir eşiğinden elendi.', { brand: 'filizler koftecisi' }),
   ],
 };

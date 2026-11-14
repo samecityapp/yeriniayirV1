@@ -206,7 +206,7 @@ export const MUGLA_ULA_AKYAKA_DEF: V3RegionDefinition = {
     compactSeed({
       id: 'akyaka-idyma-pastane',
       placeId: 'ChIJ29rG74-fvxQRQ2-k1tmnBmE',
-      cat: 'kahve',
+      cat: 'denemelisin',
       brand: 'idyma',
       area: 'Atatürk Caddesi · Akyaka, Ula',
       signals: ['mugla-kurabiyesi', 'taze-firin', 'mahalle-pastanesi'],

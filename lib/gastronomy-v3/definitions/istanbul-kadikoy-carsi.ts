@@ -928,7 +928,7 @@ export const ISTANBUL_KADIKOY_CARSI_DEF: V3RegionDefinition = {
       placeId: 'ChIJ9ZAvL8W5yhQRakChEdJ8lKw',
       categoryId: 'kahvalti',
       expectedBrandWord: 'brekkie',
-      communityInsiderProtected: true,
+      localRitualProtected: true,
       neighborhoodLabelOverride: 'Yoğurtçu Parkı, Kadıköy',
       localSignals: ['kruvasan-kahvalti', 'yillarin-klasiği', 'bahariye-mudavimi'],
       description:

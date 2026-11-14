@@ -2,9 +2,29 @@
   "schemaVersion": "3.4",
   "regionKey": "mugla-ula-akyaka",
   "displayName": "Akyaka, Muğla",
-  "verifiedAt": "2026-11-13T21:18:02.150Z",
-  "selectedCount": 27,
+  "verifiedAt": "2026-11-14T10:59:02.655Z",
+  "selectedCount": 23,
   "rejectedControls": [
+    {
+      "id": "akyaka-sems-burger",
+      "resolvedName": "Sems Burger",
+      "reason": "below_quality_threshold:★4.3(594)_proofs_2"
+    },
+    {
+      "id": "akyaka-huysuz",
+      "resolvedName": "Huysuz",
+      "reason": "kahve_category_not_coffee_specialist:pastry_shop"
+    },
+    {
+      "id": "akyaka-rahat-meyhane",
+      "resolvedName": "Rahat Meyhane",
+      "reason": "below_quality_threshold:★4.3(193)_proofs_2"
+    },
+    {
+      "id": "akyaka-kordon",
+      "resolvedName": "Kordon Restaurant",
+      "reason": "below_quality_threshold:★4.2(3276)_proofs_2"
+    },
     {
       "id": "ctrl-akyaka-leos-closed",
       "resolvedName": "Leo's Pizza Akyaka",
@@ -188,146 +208,8 @@
       "selectedForSnapshot": true
     },
     {
-      "id": "akyaka-sems-burger",
-      "categoryId": "hamburger",
-      "resolvedName": "Sems Burger",
-      "branchName": "Akyaka, Nergiz Sk. 3/1, 48650 Ula/Muğla, Türkiye",
-      "placeId": "ChIJ5SN2GoKfvxQR8jePufAsbBQ",
-      "coordinates": {
-        "lat": 37.0517557,
-        "lng": 28.325303599999998
-      },
-      "rating": 4.3,
-      "userRatingCount": 594,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": true,
-        "outdoorSeating": true,
-        "reservable": null
-      },
-      "websiteUri": null,
-      "mapsUri": "https://maps.google.com/?cid=1471600590660253682",
-      "recommendedPrimary": [
-        "Sems Cheeseburger",
-        "Karamelize Soğanlı Burger",
-        "Double Smash Burger"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Baharatlı Çıtır Patates & Atıştırmalık Sepeti",
-          "note": "Burger siparişlerine eşlik eden baharatlı patates kızartması ve ev yapımı dip soslar akşam menüsünü tamamlıyor.",
-          "proof": "Akyaka yerel rehberleri ve harita ziyaretçi notları"
-        }
-      ],
-      "suitability": {
-        "seating": "Küçük iç salon ve Nergiz Sokak kenarında sınırlı sayıda dış masa",
-        "crowdAndNoise": "Sörf sonrası ve akşam saatlerinde yerel müdavim yoğunluğu",
-        "disadvantage": "Küçük dükkan yapısında yoğun yaz saatlerinde masa bulmak zorlaşabiliyor.",
-        "transit": "Nergiz Sokak üzerinde, Atatürk Caddesi ve merkez meydana yakın."
-      },
-      "verifiedAt": "2026-11-13",
-      "sources": [
-        {
-          "title": "Restoran Rehberleri — Sems Burger Akyaka",
-          "url": "https://restaurantguru.com/",
-          "date": "2026-10-20",
-          "kind": "editorial",
-          "note": "Akyaka merkezde günlük ev yapımı burger adresi"
-        },
-        {
-          "title": "Akyaka Ziyaretçi Notları — Sems Burger",
-          "url": "https://www.tripadvisor.com.tr/",
-          "date": "2026-10-20",
-          "kind": "community",
-          "note": "Et kalitesi ve karamelize soğanlı burger tercihleri"
-        }
-      ],
-      "pros": [
-        "Pratik ve doğrudan burger menüsü",
-        "Yüksek et lezzeti dengesi"
-      ],
-      "cons": [
-        "Kısıtlı oturma alanı"
-      ],
-      "uncertainties": [
-        "Akşam geç saatlerde günlük köfte stoğuna göre kapanış saati öne çekilebiliyor."
-      ],
-      "selectionScore": 81,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "akyaka-huysuz",
-      "categoryId": "kahve",
-      "resolvedName": "Huysuz",
-      "branchName": "Akyaka, Karanfil Sk. No:30/1, 48650 Ula/Muğla, Türkiye",
-      "placeId": "ChIJw_Fs1sl3vxQRJPFwe6I1MA4",
-      "coordinates": {
-        "lat": 37.052093299999996,
-        "lng": 28.3277973
-      },
-      "rating": 4.8,
-      "userRatingCount": 264,
-      "priceLevel": null,
-      "serviceFlags": {
-        "dineIn": null,
-        "takeout": true,
-        "outdoorSeating": null,
-        "reservable": null
-      },
-      "websiteUri": null,
-      "mapsUri": "https://maps.google.com/?cid=1022376087385076004",
-      "recommendedPrimary": [
-        "Meyveli Tart & Günlük Pasta",
-        "Iced Latte",
-        "Filtre Kahve"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Ev Yapımı Kurabiye & Soğuk Bitki Çayları",
-          "note": "Günlük vitrinden seçilen tereyağlı kurabiyeler ve ferah bitki çayı demlemeleri akşamüstü molaları için tercih ediliyor.",
-          "proof": "myakyaka.com işletme tanıtımı ve yerel harita notları"
-        }
-      ],
-      "suitability": {
-        "seating": "Karanfil Sokak kenarında samimi sokak masaları ve al-götür vitrin servisi",
-        "crowdAndNoise": "Öğleden sonra ve akşam tatlı saatlerinde keyifli sokak temposu",
-        "disadvantage": "İç alanı küçük olduğundan akşam tatlı saatlerinde sınırlı sokak masalarında yer beklemek gerekebiliyor.",
-        "transit": "Karanfil Sokak üzerinde, Akyaka merkez yürüme bölgesinde."
-      },
-      "verifiedAt": "2026-11-13",
-      "sources": [
-        {
-          "title": "MyAkyaka Rehberi — Huysuz",
-          "url": "https://www.myakyaka.com/",
-          "date": "2026-10-20",
-          "kind": "editorial",
-          "note": "Karanfil Sokak ev yapımı tatlı ve kahve noktası tanıtımı"
-        },
-        {
-          "title": "Yerel Ziyaretçi Notları — Huysuz Akyaka",
-          "url": "https://yandex.com.tr/",
-          "date": "2026-10-20",
-          "kind": "community",
-          "note": "Günlük pasta tazeliği ve sakin kahve molası beğenisi"
-        }
-      ],
-      "pros": [
-        "Günlük değişen taze ev yapımı tatlı vitrini",
-        "Sakin sokak konumu"
-      ],
-      "cons": [
-        "Sınırlı masa kapasitesi"
-      ],
-      "uncertainties": [
-        "Günlük tatlı çeşitleri sabah üretimine göre değişiyor ve akşam erken tükenebiliyor."
-      ],
-      "selectionScore": 92,
-      "selectedForSnapshot": true
-    },
-    {
       "id": "akyaka-idyma-pastane",
-      "categoryId": "kahve",
+      "categoryId": "denemelisin",
       "resolvedName": "Idyma Unlu Mamülleri & Kafeterya",
       "branchName": "Akyaka, Atatürk Cd. 14/1, 48650 Ula/Muğla, Türkiye",
       "placeId": "ChIJ29rG74-fvxQRQ2-k1tmnBmE",
@@ -761,82 +643,6 @@
         "Sezon dışı dönemlerde haftalık açılış günleri etkinlik programına göre ayarlanıyor."
       ],
       "selectionScore": 85,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "akyaka-rahat-meyhane",
-      "categoryId": "date",
-      "resolvedName": "Rahat Meyhane",
-      "branchName": "Akyaka, Karanfil Sk. 25/2, 48650 Ula/Muğla, Türkiye",
-      "placeId": "ChIJgSc_QXSfvxQRiw15H5e0DOM",
-      "coordinates": {
-        "lat": 37.052086599999996,
-        "lng": 28.3277923
-      },
-      "rating": 4.3,
-      "userRatingCount": 193,
-      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": false,
-        "outdoorSeating": true,
-        "reservable": true
-      },
-      "websiteUri": "https://www.rahatmeyhane.com/",
-      "mapsUri": "https://maps.google.com/?cid=16360650107491257739",
-      "recommendedPrimary": [
-        "Köz Patlıcanlı Mütebbel",
-        "Zeytinyağlı Çanak Enginar",
-        "Çökertme Kebabı"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Beğendi Yatağında Kokoreç & Tereyağlı İstiridye Mantarı",
-          "note": "Klasik meze seçkisinin yanında beğendi yatağında sıcak kokoreç ve tereyağlı istiridye mantarı akşamın öne çıkan ara sıcaklarıdır.",
-          "proof": "rahatmeyhane.com resmi menüsü ve yerel meze rehberleri"
-        }
-      ],
-      "suitability": {
-        "seating": "Karanfil Sokak üzerinde ağaç altı bahçe masaları ve samimi meyhane düzeni",
-        "crowdAndNoise": "Akşam sofralarında müdavim gruplar ve çiftlerle sıcak tempo",
-        "disadvantage": "Akşam yoğunluğunda masa yerleşimi birbirine yakın hissedilebiliyor; hafta sonları için önceden masa ayırtmak gerekiyor.",
-        "transit": "Karanfil Sokak 25/2 adresinde, merkez yürüyüş aksında."
-      },
-      "verifiedAt": "2026-11-13",
-      "sources": [
-        {
-          "title": "Rahat Meyhane Resmi Sitesi",
-          "url": "https://www.rahatmeyhane.com/",
-          "date": "2026-11-13",
-          "kind": "operator",
-          "note": "Ege ot mezeleri, çanak enginar, çökertme ve ara sıcak menüsü"
-        },
-        {
-          "title": "Muğla Lezzet Durakları — Rahat Meyhane",
-          "url": "https://restaurantguru.com/",
-          "date": "2026-10-20",
-          "kind": "editorial",
-          "note": "Akyaka merkez meyhane ve sıcak ara sıcak seçkisi"
-        },
-        {
-          "title": "Ziyaretçi Notları — Rahat Meyhane",
-          "url": "https://www.tripadvisor.com.tr/",
-          "date": "2026-10-20",
-          "kind": "community",
-          "note": "Meze tazeliği ve beğendili kokoreç beğenisi"
-        }
-      ],
-      "pros": [
-        "Yöresel ve özenli meze-ara sıcak dengesi",
-        "Samimi sokak meyhanesi dokusu"
-      ],
-      "cons": [
-        "Yoğun akşam saatlerinde sıkışık masa aralığı"
-      ],
-      "uncertainties": [
-        "Mevsimsel ot ve enginar mezeleri tedarike göre günlük belirleniyor."
-      ],
-      "selectionScore": 84,
       "selectedForSnapshot": true
     },
     {
@@ -1418,75 +1224,6 @@
         "Sezon yoğunluğunda su kenarı masa tercihi için erken saat veya rezervasyon gerekiyor."
       ],
       "selectionScore": 84,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "akyaka-kordon",
-      "categoryId": "balik",
-      "resolvedName": "Kordon Restaurant",
-      "branchName": "Akyaka, Azmakboyu Sk. No:2, 48650 Ula/Muğla, Türkiye",
-      "placeId": "ChIJczb3LjV0vxQRora7I7BOpgo",
-      "coordinates": {
-        "lat": 37.0521653,
-        "lng": 28.3285645
-      },
-      "rating": 4.2,
-      "userRatingCount": 3276,
-      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": null,
-        "outdoorSeating": true,
-        "reservable": true
-      },
-      "websiteUri": null,
-      "mapsUri": "https://maps.google.com/?cid=767387304933963426",
-      "recommendedPrimary": [
-        "Izgara Çipura & Levrek",
-        "Kalamar Tava",
-        "Zeytinyağlı Meze Seçkisi"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Izgara Et Seçenekleri & Mevsim Meyveleri",
-          "note": "Balık yemeyen misafirler için menüde ızgara et tabakları ve yemek sonunda taze meyve ikramı da yer alıyor.",
-          "proof": "eatbu.com ve Wanderlog Akyaka menü özetleri"
-        }
-      ],
-      "suitability": {
-        "seating": "Azmakboyu nehir kenarı teras masaları ve kapalı restoran salonu",
-        "crowdAndNoise": "Yürüyüş yolu üzerinde akşam yemeklerinde sürekli doluluk",
-        "disadvantage": "Azmakboyu yaya girişinde yer aldığından akşam saatlerinde yürüyüş kalabalığının hemen yanında kalır.",
-        "transit": "Azmakboyu Sokak No:2 adresinde, Akyaka merkez köprü ve çarşı girişinde."
-      },
-      "verifiedAt": "2026-11-13",
-      "sources": [
-        {
-          "title": "Wanderlog Akyaka — Kordon Restaurant",
-          "url": "https://wanderlog.com/",
-          "date": "2026-10-20",
-          "kind": "editorial",
-          "note": "Azmakboyu nehir kıyısı balık ve meze önerisi"
-        },
-        {
-          "title": "TripAdvisor Akyaka — Kordon Restaurant",
-          "url": "https://www.tripadvisor.com.tr/",
-          "date": "2026-10-20",
-          "kind": "community",
-          "note": "Taze çipura-levrek, kalamar tava ve nehir kenarı oturum"
-        }
-      ],
-      "pros": [
-        "Merkezi Azmakboyu girişinde kolay erişim",
-        "Balık ve et seçeneklerini bir arada sunması"
-      ],
-      "cons": [
-        "Yürüyüş hattı kalabalığına yakın oturum"
-      ],
-      "uncertainties": [
-        "Hafta sonu akşamlarında su kıyısı masa doluluğu hızlı artıyor."
-      ],
-      "selectionScore": 78,
       "selectedForSnapshot": true
     },
     {

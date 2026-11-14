@@ -1,4 +1,4 @@
-# Gastronomi V3.5 Seçim Algoritması ve Kategori Kuralları (`RULES.md`)
+# Gastronomi V3.6 Seçim Algoritması ve Kategori Kuralları (`RULES.md`)
 
 Bu doküman `lib/gastronomy-v3` motorunun kalıcı anayasasıdır. Tüm şehir, ilçe ve semt güncellemelerinde istisnasız uygulanır.
 
@@ -32,15 +32,17 @@ Bu doküman `lib/gastronomy-v3` motorunun kalıcı anayasasıdır. Tüm şehir, 
 
 ## 4. Çoklu Kaynak Uzlaşısı, Marka Sürekliliği & Anti-Manipülasyon
 - **Tek başına Google puanıyla seçim yasaktır:** Her mekan için işletme menüsü/sitesi (`operator`), editoryal gastronomi yayınları (`editorial`), yerel topluluk forumları/müdavim paylaşımları (`community`) veya gastronomi ödülleri (`award`) arasından **en az 2 bağımsız kanıt** zorunludur.
-- **Zincir bloğu:** `CHAIN_BLOCKLIST` kapsamındaki endüstriyel/yaygın zincirler her koşulda reddedilir (`Emirgan Sütiş`, `Doyuyo`, `Coffy`, `Starbucks` vb. dahil).
+- **Zincir, paket servis ve hazır yemek şubesi bloğu:** `CHAIN_BLOCKLIST` kapsamındaki endüstriyel, yaygın, paket servis veya hazır tepsi yemeği zincirleri (`Pizza V`, `Kaffee Schütz`, `Adile Sultan Ev Yemekleri`, `Brand Burger`, `Kirpi`, `İntiba Döner`, `Vakko`, `Emirgan Sütiş`, `Doyuyo`, `Coffy`, `Starbucks` vb.) hiçbir koşulda sisteme giremez.
+- **Kahve kategorisi saflık kuralı (`Kapı 3B`):** Çikolatacı (`chocolate_shop`), tatlıcı (`dessert_shop`, `dessert_restaurant`), dondurmacı (`ice_cream_shop`), şekerlemeci (`candy_store`, `confectionery`) ve pastane/unlu mamuller (`pastry_shop`, `bakery`) asla `Kahve` kategorisinde önerilmez (`Hane Çikolata & Kahve`, `Çikolata Kahve İstanbul` vb. reddedilir).
 - **Hibrit kitabevi-kafe doğrulaması:** Google Places ana türü `book_store` görünse bile resmi işletme adında `Cafe/Kafe/Kahve` geçen köklü mekanlar (ör. *Nail Kitabevi & Cafe*) yeme-içme mekanı olarak değerlendirilir.
 - **Marka sürekliliği (`expectedBrandWord`):** İsim değiştirmiş, el değiştirmiş veya eski kimliğini kaybetmiş işletmeler (ör. eski *Çekirdek* yerine açılan *Çekirdekhane*) `brand_discontinuity` ile reddedilir.
-- **Yerel müdavim / şef / miras / ikonik konum koruması:**
+- **Sıkı `4.4` Puan Alt Sınırı & Sıfır Dolgu Kuralı:** İlla 3–4 mekan önermek zorunlu değildir (`1` veya `2` gerçek kaliteli mekan dolguya tercih edilir). Bir mekan şehrin/semtin tarihsel veya ikonik ritüeli (`Kanaat Lokantası 1933`, `İsmet Baba 1951`, `Tarihi Çınaraltı`, `Ceviz Ağacı`) ya da açık kullanıcı referansı (`userReferenceProtected`) olmadıkça `4.4` puan altına kesinlikle düşülmez; `communityInsiderProtected` bayrağı `4.4` altındaki sıradan mekanları kurtaramaz:
   - `iconicSettingOrVibeProtected` işaretli, en az `200` değerlendirmeye ve `2+` bağımsız editoryal/topluluk/ödül kaynağına sahip semt simgesi mekanlarda `4.1+` puan kabul edilir.
   - Hem `chefOrHeritageProtected` hem `localRitualProtected` işaretli yarım asrı aşan yüksek sirkülasyonlu amiral yerel kurumlarda (ör. 1933 *Kanaat Lokantası*), en az `2.000` değerlendirme ve `2+` bağımsız kaynakla ve ödeme/fiyat/kalabalık dezavantajlarının açıkça yazılması şartıyla `3.7+` puan kabul edilir.
   - `chefOrHeritageProtected` işaretli tarihi/dünya çapında tescilli yerel kurumlarda (ör. Çiya Sofrası, Yanyalı Fehmi Lokantası, Halil Lahmacun) en az `200` değerlendirme ve `2+` bağımsız kaynakla `4.0+` puan kabul edilir.
   - `localRitualProtected` işaretli yerel halk ritüeli / bütçe dostu müdavim duraklarında (ör. Çardak 6, Tuki Çarşaflı, Ada Söğüşçüsü, Bülbül Restaurant) hızlı sokak/hafta sonu servisi veya kurye yorumları nedeniyle puan `3.8–4.3` bandında kalsa bile en az `300` değerlendirme ve `2+` bağımsız editoryal/topluluk kanıtıyla koruma altına alınır (`ritualCirculationBonus` uygulanır).
-  - `communityInsiderProtected` işaretli yerel müdavim mekanlarında en az `60` değerlendirme ve `2+` bağımsız kaynakla `4.2+` puan kabul edilir.
+  - `communityInsiderProtected` işaretli yerel müdavim mekanlarında da en az `60` değerlendirme ve `2+` bağımsız kaynakla **`4.4+`** puan zorunludur (asla `4.4` altına inilmez).
+  - `userReferenceProtected` işaretli, kullanıcının doğrudan isim vererek referans gösterdiği mekanlarda `2+` bağımsız kaynakla `3.8+` puan kabul edilir.
 - **Sahte/şişirilmiş puan koruması:** Değerlendirme sayısı `150` altında olup `4.8+` puana sahip mekanlarda en az `2` bağımsız `editorial`, `community` veya `award` kanıtı bulunmuyorsa `suspected_rating_inflation_no_community_proof` ile reddedilir.
 - **Bayesçi güven & hacim istikrarı dengesi:** Ham Google puanı tek başına kullanılmaz; düşük değerlendirme sayılarındaki oynaklığı dengelemek için Bayesçi güven düzeltmesi (`m=80, C=4.40`) uygulanır ve `700+` / `1500+` değerlendirmede `4.5+` istikrarını koruyan köklü mekanlara sürdürülebilir hacim puanı verilir.
 

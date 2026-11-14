@@ -2,9 +2,19 @@
   "schemaVersion": "3.4",
   "regionKey": "antalya-lara",
   "displayName": "Lara, Antalya",
-  "verifiedAt": "2026-11-13T20:48:55.521Z",
-  "selectedCount": 29,
+  "verifiedAt": "2026-11-14T10:59:02.600Z",
+  "selectedCount": 27,
   "rejectedControls": [
+    {
+      "id": "lara-pikan-firin",
+      "resolvedName": "Pikan Fırın (Şirinyalı)",
+      "reason": "below_quality_threshold:★4.3(611)_proofs_2"
+    },
+    {
+      "id": "lara-balik-genclik",
+      "resolvedName": "Lara Balık",
+      "reason": "below_quality_threshold:★4.2(3250)_proofs_2"
+    },
     {
       "id": "ctrl-lara-sudd-closed",
       "resolvedName": "The Sudd Coffee Lara",
@@ -657,7 +667,7 @@
     },
     {
       "id": "lara-sade-patisserie",
-      "categoryId": "kahve",
+      "categoryId": "denemelisin",
       "resolvedName": "Sade Patisserie Yeşilbahçe",
       "branchName": "Yeşilbahçe, Çınarlı Cd. 47/A, 07160 Muratpaşa/Antalya, Türkiye",
       "placeId": "ChIJtY92PBabwxQRc9AOqGgE_Dk",
@@ -1077,82 +1087,6 @@
       "selectedForSnapshot": true
     },
     {
-      "id": "lara-pikan-firin",
-      "categoryId": "kahvalti",
-      "resolvedName": "Pikan Fırın (Şirinyalı)",
-      "branchName": "Şirinyalı, Lara Cd. 100/2, 07160 Muratpaşa/Antalya, Türkiye",
-      "placeId": "ChIJHdTojeWawxQRz8gymAgsO3g",
-      "coordinates": {
-        "lat": 36.8536396,
-        "lng": 30.7469806
-      },
-      "rating": 4.3,
-      "userRatingCount": 611,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": true,
-        "outdoorSeating": null,
-        "reservable": null
-      },
-      "websiteUri": "https://www.pikan.co/",
-      "mapsUri": "https://maps.google.com/?cid=8663566723602106575",
-      "recommendedPrimary": [
-        "Avokadolu Poşe Yumurta Tartine",
-        "Tereyağlı Sade / Bademli Kruvasan",
-        "Pikan Brunch Tabağı"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Tarçınlı Çörek (Cinnamon Roll) & Taze Demleme Filtre Kahve",
-          "note": "Fırından yeni çıkan yumuşak tarçınlı çörekler ve espresso barından çıkan kahveler sabah kahvaltısının vazgeçilmez tamamlayıcısı.",
-          "proof": "pikan.co resmi sitesi ve Antalya artisan fırın rehberleri"
-        }
-      ],
-      "suitability": {
-        "seating": "Fırın tezgahı kokusu eşliğinde iç salon ve teras masaları",
-        "crowdAndNoise": "Hafta sonu sabahları yüksek müdavim ve aile yoğunluğu",
-        "disadvantage": "Cumartesi ve Pazar sabahları masa beklemek gerekebiliyor; sevilen fırın ürünleri öğlene doğru tükenebiliyor.",
-        "transit": "Şirinyalı Lara Caddesi No:100/2 üzerinde yürüme aksında."
-      },
-      "verifiedAt": "2026-11-13",
-      "sources": [
-        {
-          "title": "Pikan Fırın Resmi Sitesi",
-          "url": "https://www.pikan.co/",
-          "date": "2026-11-13",
-          "kind": "operator",
-          "note": "Ekşi maya ekmek üretimi, kruvasan ve brunch tabakları"
-        },
-        {
-          "title": "Antalya Kahvaltı & Brunch Rehberi",
-          "url": "https://www.antalyacityguide.com/",
-          "date": "2026-10-20",
-          "kind": "editorial",
-          "note": "Lara Şirinyalı bölgesi modern fırın kahvaltısı"
-        },
-        {
-          "title": "Ekşi Sözlük — Pikan Fırın",
-          "url": "https://eksisozluk.com/",
-          "date": "2026-10-20",
-          "kind": "community",
-          "note": "Ekşi maya ekmek ve kruvasan kalitesi övgüleri"
-        }
-      ],
-      "pros": [
-        "Artizan ekşi maya ekmek ve hamur kalitesi",
-        "Özenli brunch reçeteleri"
-      ],
-      "cons": [
-        "Hafta sonu sabah yoğunluğu ve sınırlı tezgah stoğu"
-      ],
-      "uncertainties": [
-        "Saat 13 sonrası kruvasan ve çörek seçimi daralabiliyor."
-      ],
-      "selectionScore": 83,
-      "selectedForSnapshot": true
-    },
-    {
       "id": "lara-bahcelara-ciftlik",
       "categoryId": "kahvalti",
       "resolvedName": "Bahçelara Kahvaltı Çiftliği",
@@ -1357,82 +1291,6 @@
         "Mevsim balıkları av durumuna göre günlük olarak fiyatlanıyor."
       ],
       "selectionScore": 84,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "lara-balik-genclik",
-      "categoryId": "balik",
-      "resolvedName": "Lara Balık",
-      "branchName": "Gençlik, Tevfik Işık Cd. No:8, 07100 Muratpaşa/Antalya, Türkiye",
-      "placeId": "ChIJJ7xCiRybwxQRowX3dp6NgCY",
-      "coordinates": {
-        "lat": 36.8733554,
-        "lng": 30.714919300000002
-      },
-      "rating": 4.2,
-      "userRatingCount": 3250,
-      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": null,
-        "outdoorSeating": true,
-        "reservable": true
-      },
-      "websiteUri": "http://www.larabalik.com/",
-      "mapsUri": "https://maps.google.com/?cid=2774373082200475043",
-      "recommendedPrimary": [
-        "Tuzda Mevsim Balığı",
-        "Lagos Şiş",
-        "Izgara Kaya Barbunu"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Tuzda Balık Sunumu & Sıcak Tahinli Fırın Helva",
-          "note": "Masada kırılan tuzda balık ritüeli ve kapanıştaki cevizli sıcak helva özel davet sofralarının değişmezi.",
-          "proof": "larabalik.com resmi sitesi ve ulusal gastronomi rehberleri"
-        }
-      ],
-      "suitability": {
-        "seating": "Panoramik camlı falez terası ve özenli davet salonu",
-        "crowdAndNoise": "İş yemekleri ve kutlama masalarıyla düzenli kalabalık",
-        "disadvantage": "Antalya genelindeki üst fiyat bandında konumlanır; manzaralı falez masaları için önceden rezervasyon gerekir.",
-        "transit": "Gençlik Mahallesi Tevfik Işık Caddesi No:8 falez başlangıcında."
-      },
-      "verifiedAt": "2026-11-13",
-      "sources": [
-        {
-          "title": "Lara Balık Resmi Sitesi",
-          "url": "http://www.larabalik.com/",
-          "date": "2026-11-13",
-          "kind": "operator",
-          "note": "Tuzda balık, kaya balıkları ve falez terası"
-        },
-        {
-          "title": "Hürriyet — Antalya Balık Klasikleri",
-          "url": "https://www.hurriyet.com.tr/",
-          "date": "2026-10-20",
-          "kind": "editorial",
-          "note": "Şehrin köklü balık restoranı geleneği"
-        },
-        {
-          "title": "TripAdvisor — Lara Balık Gençlik",
-          "url": "https://www.tripadvisor.com.tr/",
-          "date": "2026-10-20",
-          "kind": "community",
-          "note": "Meze çeşitliliği ve falez teras deneyimi"
-        }
-      ],
-      "pros": [
-        "Geniş falez manzarası ve yerleşik servis kültürü",
-        "Tuzda balık ustalığı"
-      ],
-      "cons": [
-        "Yüksek fiyat seviyesi ve büyük masa sirkülasyonu"
-      ],
-      "uncertainties": [
-        "Tuzda balık için önceden porsiyon bilgisi almak yararlıdır."
-      ],
-      "selectionScore": 80,
       "selectedForSnapshot": true
     },
     {

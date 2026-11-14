@@ -2,9 +2,14 @@
   "schemaVersion": "3.4",
   "regionKey": "istanbul-kadikoy-bostanci",
   "displayName": "Bostancı, Kadıköy, İstanbul",
-  "verifiedAt": "2026-11-14T08:57:46.325Z",
-  "selectedCount": 29,
+  "verifiedAt": "2026-11-14T10:59:02.284Z",
+  "selectedCount": 28,
   "rejectedControls": [
+    {
+      "id": "bos-pizza-v",
+      "resolvedName": "Pizza V Bostancı",
+      "reason": "chain_or_franchise"
+    },
     {
       "id": "ctrl-bostanci-starbucks",
       "resolvedName": "Starbucks",
@@ -94,75 +99,6 @@
         "Sezonluk makarna ve özel pizza çeşitleri günlük hamur stoğuna bağlıdır."
       ],
       "selectionScore": 91,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "bos-pizza-v",
-      "categoryId": "pizza",
-      "resolvedName": "Pizza V Bostancı",
-      "branchName": "Bostancı, Papatya Sk. No:1/A, 34744 Kadıköy/İstanbul, Türkiye",
-      "placeId": "ChIJMcA1JVrHyhQRtNB5ynE8Q6I",
-      "coordinates": {
-        "lat": 40.96241620000001,
-        "lng": 29.105408999999998
-      },
-      "rating": 4.5,
-      "userRatingCount": 190,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": true,
-        "outdoorSeating": true,
-        "reservable": null
-      },
-      "websiteUri": "https://v.pizza/",
-      "mapsUri": "https://maps.google.com/?cid=11692255517009891508",
-      "recommendedPrimary": [
-        "Dört Peynirli Quattro Formaggi",
-        "Füme Etli & Rokalı Pizza",
-        "Klasik Margherita"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Biberiye & Acı Zeytinyağlı Çıtır Pizza Kenarı",
-          "note": "Sıcak çıkan taş fırın hamuruyla birlikte tercih edilen aromatik eşlikçi sos.",
-          "proof": "Müdavim Bostancı yemek notları ve yerel sipariş seçkisi"
-        }
-      ],
-      "suitability": {
-        "seating": "Sınırlı iç oturma ve hızlı paket/gel-al servisi",
-        "crowdAndNoise": "Akşamüstü ve hafta sonu hızlı sipariş temposu",
-        "disadvantage": "Geniş bir restoran salonu arayan gruplar için oturma alanı oldukça kısıtlı.",
-        "transit": "Bostancı Papatya Sokak üzerinde Minibüs Caddesi ve Bostancı Metro durağına yakın."
-      },
-      "verifiedAt": "2026-11-14",
-      "sources": [
-        {
-          "title": "Müdavim — Bostancı Pizza Durakları",
-          "url": "https://mudavim.net/",
-          "date": "2026-10-02",
-          "kind": "community",
-          "note": "Caddebostan’daki ilk şubesinden bildiğimiz ince hamur çizgisini Bostancı’ya taşıyor"
-        },
-        {
-          "title": "ExploreKadikoy — Üst Bostancı Mahalle Mekanları",
-          "url": "https://www.explorekadikoy.com/",
-          "date": "2026-09-21",
-          "kind": "editorial",
-          "note": "Zincir pizzacılara karşı taze hamur ve günlük sos kullanan yerel seçenek"
-        }
-      ],
-      "pros": [
-        "Taze günlük hamur",
-        "Hızlı ve sıcak servis"
-      ],
-      "cons": [
-        "Küçük oturma kapasitesi"
-      ],
-      "uncertainties": [
-        "Bölgesel paket servis yoğunluğunda akşam teslimat süresi uzayabilir."
-      ],
-      "selectionScore": 85,
       "selectedForSnapshot": true
     },
     {

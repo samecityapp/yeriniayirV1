@@ -15,6 +15,7 @@ export interface CompactSeedInput {
     heritage?: boolean;
     insider?: boolean;
     ritual?: boolean;
+    userRef?: boolean;
   };
   desc: string;
   order: [string, ...string[]];
@@ -51,6 +52,7 @@ export function compactSeed(input: CompactSeedInput): V3CandidateSeed {
     ...(f.heritage ? { chefOrHeritageProtected: true } : {}),
     ...(f.insider ? { communityInsiderProtected: true } : {}),
     ...(f.ritual ? { localRitualProtected: true } : {}),
+    ...(f.userRef ? { userReferenceProtected: true } : {}),
     neighborhoodLabelOverride: input.area,
     localSignals: input.signals,
     description: input.desc,

@@ -247,7 +247,7 @@ export const ANTALYA_KONYAALTI_DEF: V3RegionDefinition = {
       placeId: 'ChIJWcz8zfSTwxQR_mZUJW9s2gw',
       cat: 'kahve',
       brand: 'pouchkine',
-      flags: { insider: true },
+      flags: { insider: true, userRef: true },
       area: 'Liman · Konyaaltı, Antalya',
       signals: ['referans-pouchkine', 'tereyagli-kruvasan', 'fransiz-pastane'],
       desc: "Liman Akdeniz Bulvarı'nda yüksek tavanlı şık dekorasyonu, vitrinden taze çıkan kat kat tereyağlı tatlı ve tuzlu kruvasanlarıyla Konyaaltı'nın öne çıkan yeni kafe-pastane durağı.",
@@ -276,7 +276,7 @@ export const ANTALYA_KONYAALTI_DEF: V3RegionDefinition = {
     compactSeed({
       id: 'konyaalti-vilanel-bakery',
       placeId: 'ChIJoQ4VmBCRwxQRLP7hf7-6ZJs',
-      cat: 'kahve',
+      cat: 'kahvalti',
       brand: 'vilanel',
       area: 'Altınkum · Konyaaltı, Antalya',
       signals: ['fransiz-patisserie', 'eksi-maya-ekmek', 'barista-kahve'],

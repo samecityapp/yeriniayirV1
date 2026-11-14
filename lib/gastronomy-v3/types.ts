@@ -52,6 +52,7 @@ export interface V3CandidateSeed {
   communityInsiderProtected?: boolean;
   localRitualProtected?: boolean;
   iconicSettingOrVibeProtected?: boolean;
+  userReferenceProtected?: boolean;
   neighborhoodLabelOverride?: string;
   degradationFlag?: boolean;
   degradationReason?: string;

@@ -306,7 +306,7 @@ test('all 16 published regions have zero overlapping placeIds, valid ratings, an
       );
     }
   }
-  assert.ok(globalPlaceIds.size >= 420, `Expected >=420 unique published venues, got ${globalPlaceIds.size}`);
+  assert.ok(globalPlaceIds.size >= 405, `Expected >=405 unique published venues, got ${globalPlaceIds.size}`);
 });
 
 test('every published region limits nearbyVenues to <= 1 per category within <= 400m of its border (Moda has 6)', () => {
@@ -487,6 +487,22 @@ test('policy gates reject closed, chain, out-of-neighborhood, and degraded candi
   assert.equal(kaMap.get('ctrl-ka-kontrbus-chain').reason, 'chain_or_franchise');
   assert.equal(kaMap.get('ctrl-ka-beyazfirin-chain').accepted, false);
   assert.equal(kaMap.get('ctrl-ka-beyazfirin-chain').reason, 'chain_or_franchise');
+  assert.equal(kaMap.get('ctrl-ka-pizzav-chain').accepted, false);
+  assert.equal(kaMap.get('ctrl-ka-pizzav-chain').reason, 'chain_or_franchise');
+  assert.equal(kaMap.get('ctrl-ka-kaffee-schutz-chain').accepted, false);
+  assert.equal(kaMap.get('ctrl-ka-kaffee-schutz-chain').reason, 'chain_or_franchise');
+  assert.equal(kaMap.get('ctrl-ka-hane-cikolata').accepted, false);
+  assert.ok(kaMap.get('ctrl-ka-hane-cikolata').reason.includes('kahve_category_not_coffee_specialist'));
+  assert.equal(kaMap.get('ctrl-ka-adile-sultan-chain').accepted, false);
+  assert.equal(kaMap.get('ctrl-ka-adile-sultan-chain').reason, 'chain_or_franchise');
+  assert.equal(kaMap.get('ctrl-ka-canak-below-threshold').accepted, false);
+  assert.ok(kaMap.get('ctrl-ka-canak-below-threshold').reason.includes('below_quality_threshold'));
+  assert.equal(kaMap.get('ctrl-ka-brand-burger-chain').accepted, false);
+  assert.equal(kaMap.get('ctrl-ka-brand-burger-chain').reason, 'chain_or_franchise');
+  assert.equal(kaMap.get('ctrl-ka-kirpi-chain').accepted, false);
+  assert.equal(kaMap.get('ctrl-ka-kirpi-chain').reason, 'chain_or_franchise');
+  assert.equal(kaMap.get('ctrl-ka-intiba-chain').accepted, false);
+  assert.equal(kaMap.get('ctrl-ka-intiba-chain').reason, 'chain_or_franchise');
 
   const uskAudit = JSON.parse(
     fs.readFileSync(path.join(ROOT, 'work/gastronomy-v3/istanbul-uskudar-merkez.audit.json'), 'utf8')
@@ -500,6 +516,12 @@ test('policy gates reject closed, chain, out-of-neighborhood, and degraded candi
   assert.equal(uMap.get('ctrl-usk-starbucks').reason, 'chain_or_franchise');
   assert.equal(uMap.get('ctrl-usk-coffy').accepted, false);
   assert.equal(uMap.get('ctrl-usk-coffy').reason, 'chain_or_franchise');
+  assert.equal(uMap.get('ctrl-usk-pizza-amore-chain').accepted, false);
+  assert.equal(uMap.get('ctrl-usk-pizza-amore-chain').reason, 'chain_or_franchise');
+  assert.equal(uMap.get('ctrl-usk-butchers-chain').accepted, false);
+  assert.equal(uMap.get('ctrl-usk-butchers-chain').reason, 'chain_or_franchise');
+  assert.equal(uMap.get('ctrl-usk-filizler-chain').accepted, false);
+  assert.equal(uMap.get('ctrl-usk-filizler-chain').reason, 'chain_or_franchise');
 
   const kuzAudit = JSON.parse(
     fs.readFileSync(path.join(ROOT, 'work/gastronomy-v3/istanbul-uskudar-kuzguncuk.audit.json'), 'utf8')
@@ -526,6 +548,12 @@ test('policy gates reject closed, chain, out-of-neighborhood, and degraded candi
   assert.equal(cgMap.get('ctrl-ceng-starbucks').reason, 'chain_or_franchise');
   assert.equal(cgMap.get('ctrl-ceng-beylerbeyi-outside').accepted, false);
   assert.ok(cgMap.get('ctrl-ceng-beylerbeyi-outside').reason.includes('outside_strict_neighborhood'));
+  assert.equal(cgMap.get('ctrl-ceng-cikolata-kahve').accepted, false);
+  assert.ok(cgMap.get('ctrl-ceng-cikolata-kahve').reason.includes('kahve_category_not_coffee_specialist'));
+  assert.equal(cgMap.get('ctrl-ceng-vakko-chain').accepted, false);
+  assert.equal(cgMap.get('ctrl-ceng-vakko-chain').reason, 'chain_or_franchise');
+  assert.equal(cgMap.get('ctrl-ceng-borekcisi-chain').accepted, false);
+  assert.equal(cgMap.get('ctrl-ceng-borekcisi-chain').reason, 'chain_or_franchise');
 });
 
 test('V3.2 rules, secondaryItems, suitability, zero Çekirdekhane, complete dossiers & visitor isolation', () => {
@@ -694,7 +722,7 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
       ]) {
         assert.ok(names.some((n) => n.includes(expected)), `Bostanci missing ${expected}`);
       }
-      for (const forbidden of ['Starbucks', "Domino's", 'Hacıbaşar', 'Cro & Cups']) {
+      for (const forbidden of ['Starbucks', "Domino's", 'Hacıbaşar', 'Cro & Cups', 'Pizza V']) {
         assert.equal(names.some((n) => n.includes(forbidden)), false, `Bostanci must exclude ${forbidden}`);
       }
     }
@@ -832,16 +860,32 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
       assert.equal(cats.length, 6, 'kosuyolu-acibadem must expose 6 categories');
       const names = f.venues.map((v) => v.name);
       for (const expected of [
-        'Ceviz Ağacı Koşuyolu',
-        'Tarihi Kuzguncuk Fırını Acıbadem',
-        'Çanak Kebap',
-        'Acıbadem İntiba Döner',
-        'Null Coffee Roasters',
         'Speranza Pizzeria',
+        'Wake N Bake',
+        'Feinka Coffee',
+        'SØLVI',
+        'Monstera Coffee',
+        'Zeytinli Mutfak',
+        'Affan Ocakbaşı',
+        'Adana Park Ocakbaşı',
+        'Tarihi Kuzguncuk Fırını Acıbadem',
+        'Ceviz Ağacı Koşuyolu',
       ]) {
         assert.ok(names.some((n) => n.includes(expected)), `kosuyolu-acibadem missing ${expected}`);
       }
-      for (const forbidden of ['Viyana Kahvesi', 'Beyaz Fırın']) {
+      for (const forbidden of [
+        'Viyana Kahvesi',
+        'Beyaz Fırın',
+        'Pizza V',
+        'Kaffee Schütz',
+        'Hane Çikolata',
+        'Adile Sultan',
+        'Çanak Kebap',
+        'BRAND BURGER',
+        'Brand Burger',
+        'Kirpi',
+        'İntiba',
+      ]) {
         assert.equal(names.some((n) => n.includes(forbidden)), false, `kosuyolu-acibadem must exclude ${forbidden}`);
       }
     }
@@ -851,16 +895,30 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
       assert.equal(cats.length, 6, 'uskudar must expose 6 categories');
       const names = f.venues.map((v) => v.name);
       for (const expected of [
-        'Kanaat Lokantası',
-        'Filizler Köftecisi',
-        'Katibim',
-        'Nevmekan Sahil',
         'Bobby Baccalieri',
+        'Pizza Rita',
+        'Rikka Burger',
         'Olinna Coffee',
+        'Nevmekan Selimiye',
+        'Fournos Artisan Bakery',
+        'Kanaat Lokantası',
+        'Lokanta İmren',
+        'Vanilla Sütlü Tatlı',
+        'Gözlemeye',
       ]) {
         assert.ok(names.some((n) => n.includes(expected)), `uskudar missing ${expected}`);
       }
-      for (const forbidden of ['Starbucks', 'Mim Kahve']) {
+      for (const forbidden of [
+        'Starbucks',
+        'Mim Kahve',
+        'Pizza Amore',
+        "Butcher's Burger",
+        'Filizler Köftecisi',
+        'Katibim',
+        'Nevmekan Sahil',
+        'Riff Specialty',
+        'Öz Bolu',
+      ]) {
         assert.equal(names.some((n) => n.includes(forbidden)), false, `uskudar must exclude ${forbidden}`);
       }
     }
@@ -870,16 +928,27 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
       assert.equal(cats.length, 6, 'kuzguncuk must expose 6 categories');
       const names = f.venues.map((v) => v.name);
       for (const expected of [
+        'Mahalle Kuzguncuk',
+        'Jobu Smash Burgers',
+        'Nail Kitabevi & Cafe',
+        'Glow Coffee',
         'İsmet Baba Restaurant',
         'Tarihi Kuzguncuk Fırını',
         'Metet Közde Döner',
-        'Nail Kitabevi & Cafe',
         'Ekmek Teknesi',
-        'Pita Kuzguncuk',
+        'Bay Mantı',
       ]) {
         assert.ok(names.some((n) => n.includes(expected)), `kuzguncuk missing ${expected}`);
       }
-      for (const forbidden of ['Via Balık', 'Pulat Çiftliği']) {
+      for (const forbidden of [
+        'Via Balık',
+        'Pulat Çiftliği',
+        'Pita Kuzguncuk',
+        'Kuzguncuk Çınaraltı',
+        'Dilim Pastanesi',
+        'Seyret Nakkaştepe',
+        'Ira Bakery Exclusive',
+      ]) {
         assert.equal(names.some((n) => n.includes(forbidden)), false, `kuzguncuk must exclude ${forbidden}`);
       }
     }
@@ -893,16 +962,34 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
       );
       const names = f.venues.map((v) => v.name);
       for (const expected of [
-        'Çengelköy Tarihi Çınaraltı',
-        'Çengelköy Börekçisi',
-        'Del Mare',
-        'Şen Balık Lokantası',
-        'Kael Burger',
         "Pap's Pizzeria",
+        'Dopio Pizza',
+        'Kael Burger',
+        'Crust HQ',
+        'Newtown Specialty Coffee',
+        'Znâ Matcha',
+        'Birds Çengelköy',
+        'Çengelköy Tarihi Çınaraltı',
+        'Paşa Kokoreç',
+        "L'aube Patisserie",
+        'Del Mare',
+        'Rigel Restaurant',
       ]) {
         assert.ok(names.some((n) => n.includes(expected)), `cengelkoy missing ${expected}`);
       }
-      for (const forbidden of ['Emirgan Sütiş', 'Espressolab', 'Villa Bosphorus']) {
+      for (const forbidden of [
+        'Emirgan Sütiş',
+        'Espressolab',
+        'Villa Bosphorus',
+        'Çengelköy Börekçisi',
+        'Vakko',
+        'Çikolata Kahve',
+        'Şen Balık',
+        'Chacha Balık',
+        'Boon Cafe',
+        'Münire',
+        "Barto's",
+      ]) {
         assert.equal(names.some((n) => n.includes(forbidden)), false, `cengelkoy must exclude ${forbidden}`);
       }
     }
@@ -923,6 +1010,21 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
       );
     }
     assert.ok(firstResult.coreVenues[0].ratings[0].attribution.mapsUri.startsWith('https://maps.google.com/?cid='));
+  }
+});
+
+test('V3.6 strict chain blocklist, coffee purity, and >=4.4 quality floor across all 16 snapshots', () => {
+  const bannedRe =
+    /pizza v|kaffee schütz|kaffee schutz|adile sultan|hane çikolata|çanak kebap|brand burger|butcher's burger|vakko|filizler köftecisi|çengelköy börekçisi|kirpi|intiba döner/i;
+  const nonCoffeeRe = /çikolata|cikolata|pastanesi|unlu mamülleri|börek|borek|baklava/i;
+
+  for (const { key, data } of snapshots) {
+    for (const v of data.venues) {
+      assert.ok(!bannedRe.test(v.name), `V3.6 banned chain/mediocre venue leaked in ${key}: ${v.name}`);
+      if (v.categoryId === 'kahve') {
+        assert.ok(!nonCoffeeRe.test(v.name), `V3.6 non-coffee specialist leaked into kahve in ${key}: ${v.name}`);
+      }
+    }
   }
 });
 

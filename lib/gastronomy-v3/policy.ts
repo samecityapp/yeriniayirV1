@@ -60,7 +60,46 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'emirgan sütiş',
   'emirgan sutis',
   'doyuyo',
+  'pizza v',
+  'kaffee schütz',
+  'kaffee schutz',
+  'kaffe schutz',
+  'adile sultan',
+  'brand burger',
+  "butcher's burger",
+  'butchers burger',
+  'kirpi',
+  'intiba döner',
+  'intiba doner',
+  'pizza amore',
+  'vakko',
+  'filizler köftecisi',
+  'filizler koftecisi',
+  'çengelköy börekçisi',
+  'cengelkoy borekcisi',
+  'balkan lokantası',
+  'balkan lokantasi',
+  'pidem',
+  'pideby',
+  "arby's",
+  'arbys',
+  'subway',
+  'juan valdez',
+  'kronotrop',
 ];
+
+export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([
+  'chocolate_shop',
+  'dessert_shop',
+  'dessert_restaurant',
+  'ice_cream_shop',
+  'candy_store',
+  'confectionery',
+  'pastry_shop',
+  'bakery',
+]);
+
+const NON_COFFEE_NAME_REGEX = /\b(cikolata|chocolat|unlu mamul|unlu mamulleri|tatlicisi|pastanesi)\b/;
 
 export const FOOD_PLACE_TYPES = new Set<string>([
   'cafe',
@@ -188,6 +227,9 @@ export function normalizeTr(text: string): string {
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .replace(/ı/g, 'i')
+    .replace(/ø/g, 'o')
+    .replace(/æ/g, 'ae')
+    .replace(/ß/g, 'ss')
     .trim();
 }
 
@@ -357,6 +399,23 @@ export function evaluateAndScoreCandidate(
     return reject(`invalid_place_type:${apiPlace.primaryType || 'none'}`);
   }
 
+  // Kapı 3B: Kahve kategorisi saflık kontrolü (çikolatacı / tatlıcı / pastane elenir)
+  const isCoffeeCategory =
+    seed.categoryId === 'kahve' || (seed.secondaryCategoryIds || []).includes('kahve');
+  if (isCoffeeCategory) {
+    const isNonCoffeeType =
+      Boolean(apiPlace.primaryType) &&
+      NON_COFFEE_SPECIALIST_PRIMARY_TYPES.has(apiPlace.primaryType as string);
+    const hasNonCoffeeName =
+      NON_COFFEE_NAME_REGEX.test(normalizeTr(rawName)) ||
+      NON_COFFEE_NAME_REGEX.test(normalizeTr(resolvedName));
+    if (isNonCoffeeType || hasNonCoffeeName) {
+      return reject(
+        `kahve_category_not_coffee_specialist:${isNonCoffeeType ? apiPlace.primaryType : 'name'}`
+      );
+    }
+  }
+
   // Kapı 4: Sıkı mahalle & ilçe & il sınırı
   const geo = matchesStrictNeighborhood(apiPlace, regionDef);
   if (!geo.matches) {
@@ -389,6 +448,12 @@ export function evaluateAndScoreCandidate(
         `below_quality_threshold:★${rating}(${userRatingCount})_proofs_${independentProofSources.length}`
       );
     }
+  } else if (seed.userReferenceProtected) {
+    if (rating < 3.8 || independentProofSources.length < 2) {
+      return reject(
+        `below_quality_threshold:★${rating}(${userRatingCount})_proofs_${independentProofSources.length}`
+      );
+    }
   } else if (seed.chefOrHeritageProtected && seed.localRitualProtected && userRatingCount >= 2000) {
     if (rating < 3.7 || independentProofSources.length < 2) {
       return reject(
@@ -408,7 +473,7 @@ export function evaluateAndScoreCandidate(
       );
     }
   } else if (seed.communityInsiderProtected) {
-    if (rating < 4.2 || userRatingCount < 60 || independentProofSources.length < 2) {
+    if (rating < 4.4 || userRatingCount < 60 || independentProofSources.length < 2) {
       return reject(
         `below_quality_threshold:★${rating}(${userRatingCount})_proofs_${independentProofSources.length}`
       );
@@ -424,7 +489,8 @@ export function evaluateAndScoreCandidate(
     !seed.chefOrHeritageProtected &&
     !seed.communityInsiderProtected &&
     !seed.localRitualProtected &&
-    !seed.iconicSettingOrVibeProtected
+    !seed.iconicSettingOrVibeProtected &&
+    !seed.userReferenceProtected
   ) {
     return reject(`over_commercialized_tourist_volume:★${rating}(${userRatingCount})`);
   }
@@ -490,7 +556,10 @@ export function evaluateAndScoreCandidate(
       : 0;
   const heritageBonus = seed.iconicSettingOrVibeProtected
     ? 15
-    : seed.chefOrHeritageProtected || seed.communityInsiderProtected || seed.localRitualProtected
+    : seed.chefOrHeritageProtected ||
+      seed.communityInsiderProtected ||
+      seed.localRitualProtected ||
+      seed.userReferenceProtected
     ? 12
     : 0;
 

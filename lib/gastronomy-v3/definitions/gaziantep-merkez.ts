@@ -251,7 +251,7 @@ export const GAZIANTEP_MERKEZ_DEF: V3RegionDefinition = {
       displayNameOverride: 'Bişirici Kebap',
       categoryId: 'kebap',
       expectedBrandWord: 'bişirici',
-      communityInsiderProtected: true,
+      chefOrHeritageProtected: true,
       neighborhoodLabelOverride: 'Pancarlı · Şehitkamil, Gaziantep',
       localSignals: ['yerel-aile-tercihi', 'sarimsakli-lahmacun', 'tas-firin'],
       description:
@@ -549,7 +549,7 @@ export const GAZIANTEP_MERKEZ_DEF: V3RegionDefinition = {
       displayNameOverride: 'Dukat Kebap & Beyran',
       categoryId: 'beyran',
       expectedBrandWord: 'dukat',
-      communityInsiderProtected: true,
+      localRitualProtected: true,
       neighborhoodLabelOverride: 'Fevzipaşa · Şehitkamil, Gaziantep',
       localSignals: ['sehitkamil-sabah-beyrani', 'esnaf-tercihi', 'paca-ocagi'],
       description:
@@ -1085,7 +1085,7 @@ export const GAZIANTEP_MERKEZ_DEF: V3RegionDefinition = {
       displayNameOverride: 'Katmerci Abdo Usta',
       categoryId: 'katmer',
       expectedBrandWord: 'abdo',
-      communityInsiderProtected: true,
+      chefOrHeritageProtected: true,
       neighborhoodLabelOverride: 'Karagöz · Şahinbey, Gaziantep',
       localSignals: ['dayi-ahmet-aga-sk', 'esnaf-sabah-katmeri', 'cesitli-dolgu'],
       description:
@@ -1500,7 +1500,7 @@ export const GAZIANTEP_MERKEZ_DEF: V3RegionDefinition = {
       displayNameOverride: 'Pendirhan Kahvaltı & Yöresel',
       categoryId: 'kahvalti',
       expectedBrandWord: 'pendirhan',
-      communityInsiderProtected: true,
+      localRitualProtected: true,
       neighborhoodLabelOverride: 'Kepenek · Şahinbey, Gaziantep',
       localSignals: ['nohut-piyazi', 'semsek-borek', 'yoresel-peynir-cesitleri'],
       description:
@@ -1739,7 +1739,7 @@ export const GAZIANTEP_MERKEZ_DEF: V3RegionDefinition = {
       displayNameOverride: 'Kahveci Fayat Usta',
       categoryId: 'kahve',
       expectedBrandWord: 'fayat',
-      communityInsiderProtected: true,
+      localRitualProtected: true,
       neighborhoodLabelOverride: 'Tarihi Yeni Han · Şahinbey, Gaziantep',
       localSignals: ['tarihi-yeni-han', 'bakir-cezve', 'ekonomik-kahve'],
       description:

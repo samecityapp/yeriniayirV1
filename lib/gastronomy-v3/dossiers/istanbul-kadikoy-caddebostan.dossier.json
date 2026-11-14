@@ -2,9 +2,19 @@
   "schemaVersion": "3.4",
   "regionKey": "istanbul-kadikoy-caddebostan",
   "displayName": "Caddebostan, Kadıköy, İstanbul",
-  "verifiedAt": "2026-11-14T08:57:44.897Z",
-  "selectedCount": 24,
+  "verifiedAt": "2026-11-14T10:59:02.227Z",
+  "selectedCount": 22,
   "rejectedControls": [
+    {
+      "id": "cadde-pizza-v",
+      "resolvedName": "Pizza V Caddebostan",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "cadde-meet-lab",
+      "resolvedName": "Meet Lab Coffee",
+      "reason": "below_quality_threshold:★4.3(672)_proofs_2"
+    },
     {
       "id": "ctrl-cadde-laktea",
       "resolvedName": "Laktea Breakfast Milk & More",
@@ -159,74 +169,6 @@
         "Hafta sonu akşamları için önceden masa ayırtmak önerilir."
       ],
       "selectionScore": 78,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "cadde-pizza-v",
-      "categoryId": "pizza",
-      "resolvedName": "Pizza V Caddebostan",
-      "branchName": "Caddebostan, Caddebostan İskele Sk. No:17/B, 34728 Kadıköy/İstanbul, Türkiye",
-      "placeId": "ChIJ261SpJjHyhQRwG3ffTdjGpw",
-      "coordinates": {
-        "lat": 40.9648161,
-        "lng": 29.066182599999998
-      },
-      "rating": 4.4,
-      "userRatingCount": 185,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": true,
-        "outdoorSeating": null,
-        "reservable": null
-      },
-      "websiteUri": "https://v.pizza/",
-      "mapsUri": "https://maps.google.com/?cid=11248412109297380800",
-      "recommendedPrimary": [
-        "Burrata & Fesleğenli Pizza",
-        "Füme Kaburgalı Pizza"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Trüflü Parmak Patates & Ev Yapımı Ranch Sos",
-          "note": "Pizza dışında paylaşım için en sık tercih edilen sıcak atıştırmalık.",
-          "proof": "v.pizza menü bilgileri ve Caddebostan yerel notları"
-        }
-      ],
-      "suitability": {
-        "seating": "Oturmalı küçük dükkan ve yoğun gel-al/paket servisi",
-        "crowdAndNoise": "Hızlı tempolu mahalle pizzacısı atmosferi",
-        "disadvantage": "Küçük salonda masa sayısı kısıtlı; hafta sonu daha çok sahile/eve paket alınıyor.",
-        "transit": "Caddebostan Bağdat Caddesi’nden sahile inen ara sokaklarda."
-      },
-      "verifiedAt": "2026-11-13",
-      "sources": [
-        {
-          "title": "Pizza V Resmi Sitesi",
-          "url": "https://v.pizza/",
-          "date": "2026-11-13",
-          "kind": "operator",
-          "note": "Caddebostan şubesi, hamur reçetesi ve yan ürünler"
-        },
-        {
-          "title": "Müdavim — Caddebostan Pizza Seçenekleri",
-          "url": "https://mudavim.net/",
-          "date": "2026-09-30",
-          "kind": "community",
-          "note": "Sahilde yemeye uygun pratik paket ve fermente hamur"
-        }
-      ],
-      "pros": [
-        "Orta bütçe dengesi",
-        "Sahile yakın hızlı gel-al konumu"
-      ],
-      "cons": [
-        "Küçük iç oturma alanı"
-      ],
-      "uncertainties": [
-        "Sınırlı masa kapasitesi büyük gruplara uygun değildir."
-      ],
-      "selectionScore": 72,
       "selectedForSnapshot": true
     },
     {
@@ -637,82 +579,6 @@
         "Vitrindeki günlük tatlı çeşitleri değişebilir."
       ],
       "selectionScore": 88,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "cadde-meet-lab",
-      "categoryId": "kahve",
-      "resolvedName": "Meet Lab Coffee",
-      "branchName": "Caddebostan, Selin Sk. No:6A/13, 34000 Kadıköy/İstanbul, Türkiye",
-      "placeId": "ChIJyxeACs3HyhQRPnO3V_uts2w",
-      "coordinates": {
-        "lat": 40.965998,
-        "lng": 29.068271799999994
-      },
-      "rating": 4.3,
-      "userRatingCount": 672,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": true,
-        "outdoorSeating": true,
-        "reservable": false
-      },
-      "websiteUri": "http://www.meetlabcoffee.com/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=7489772905975557306",
-      "mapsUri": "https://maps.google.com/?cid=7832795471947461438",
-      "recommendedPrimary": [
-        "Competition Lot V60",
-        "Flat White",
-        "Signature Espresso"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Fındıklı Pralinli Kruvasan & Füme Hindi Sandviç",
-          "note": "Nitelikli kahve tadımının yanında sunulan zanaatkar bakery eşlikçileri.",
-          "proof": "meetlabcoffee.com ve uluslararası nitelikli kahve seçkileri"
-        }
-      ],
-      "suitability": {
-        "seating": "Modern tasarım iç bar, geniş masa ve bahçe oturma alanı",
-        "crowdAndNoise": "Sosyal ve enerjik kahve kulübü atmosferi, hafta sonları çok hareketli",
-        "disadvantage": "Yoğun popülerlik nedeniyle hafta sonu gürültülü ve kalabalık olabiliyor.",
-        "transit": "Caddebostan Plaj Yolu Sokak üzerinde Bağdat Caddesi’nden sahile inerken."
-      },
-      "verifiedAt": "2026-11-13",
-      "sources": [
-        {
-          "title": "Meet Lab Coffee Resmi Sitesi",
-          "url": "https://meetlabcoffee.com/",
-          "date": "2026-11-13",
-          "kind": "operator",
-          "note": "Özel kavrum çekirdekler, yarışma lotları ve Caddebostan merkezi"
-        },
-        {
-          "title": "Time Out İstanbul — Dünyanın En İyi Kahvecileri Listesi",
-          "url": "https://www.timeout.com/istanbul",
-          "date": "2026-08-15",
-          "kind": "award",
-          "note": "Dünyanın ilk 100 nitelikli kahve dükkanı seçkisinde anılan Türk markası"
-        },
-        {
-          "title": "Ekşi Sözlük — Meet Lab Coffee",
-          "url": "https://eksisozluk.com/",
-          "date": "2026-10-03",
-          "kind": "community",
-          "note": "Caddebostan sahil yolunun en yüksek enerjili nitelikli kahve barı"
-        }
-      ],
-      "pros": [
-        "Uluslararası ödüle sahip kahve kalibresi",
-        "Zengin özel lot çekirdek seçkisi"
-      ],
-      "cons": [
-        "Hafta sonu yüksek kalabalık ve gürültü seviyesi"
-      ],
-      "uncertainties": [
-        "Özel micro-lot demleme fiyatları standart menüden farklı olabilir."
-      ],
-      "selectionScore": 83,
       "selectedForSnapshot": true
     },
     {

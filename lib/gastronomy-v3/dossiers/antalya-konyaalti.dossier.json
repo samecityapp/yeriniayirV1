@@ -2,9 +2,14 @@
   "schemaVersion": "3.4",
   "regionKey": "antalya-konyaalti",
   "displayName": "Konyaaltı, Antalya",
-  "verifiedAt": "2026-11-13T20:48:55.546Z",
-  "selectedCount": 30,
+  "verifiedAt": "2026-11-14T10:59:02.629Z",
+  "selectedCount": 28,
   "rejectedControls": [
+    {
+      "id": "konyaalti-basoglu-balik",
+      "resolvedName": "Başoğlu Balık & Restaurant",
+      "reason": "below_quality_threshold:★4.3(2580)_proofs_2"
+    },
     {
       "id": "ctrl-konyaalti-routeburger-closed",
       "resolvedName": "route burger konyaaltı",
@@ -514,7 +519,7 @@
     },
     {
       "id": "konyaalti-vilanel-bakery",
-      "categoryId": "kahve",
+      "categoryId": "kahvalti",
       "resolvedName": "Vilanel Bakery",
       "branchName": "turkish apt, Altınkum, 414. Sk. no:5/a, 07070 Konyaaltı/Antalya, Türkiye",
       "placeId": "ChIJoQ4VmBCRwxQRLP7hf7-6ZJs",
@@ -1276,7 +1281,7 @@
         "Pazar kurulan Çakırlar pazarı nedeniyle çevrede trafik artabiliyor."
       ],
       "selectionScore": 77,
-      "selectedForSnapshot": true
+      "selectedForSnapshot": false
     },
     {
       "id": "konyaalti-cakirlar-sedir",
@@ -1490,75 +1495,6 @@
         "Akşam geç saatlerde belirli küçük balık türleri bitebiliyor."
       ],
       "selectionScore": 92,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "konyaalti-basoglu-balik",
-      "categoryId": "balik",
-      "resolvedName": "Başoğlu Balık & Restaurant",
-      "branchName": "Altınkum, Atatürk Blv. 126/A, 07070 Konyaaltı/Antalya, Türkiye",
-      "placeId": "ChIJR2-lky2QwxQRy5_PS4P2z18",
-      "coordinates": {
-        "lat": 36.8668753,
-        "lng": 30.6358108
-      },
-      "rating": 4.3,
-      "userRatingCount": 2580,
-      "priceLevel": null,
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": true,
-        "outdoorSeating": true,
-        "reservable": true
-      },
-      "websiteUri": null,
-      "mapsUri": "https://maps.google.com/?cid=6904007797555306443",
-      "recommendedPrimary": [
-        "Izgara Kaya Levreği",
-        "Tereyağlı Karides Söğüş / Güveç",
-        "Kalamar Dolma / Izgara"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Tereyağlı Sıcak Karides & Fırın Helva / Mevsim Meyvesi",
-          "note": "Yemek ortasında sıcak gelen sarımsaklı tereyağlı karides ve kapanıştaki meyve/helva ikramı eski Konyaaltı müdavimlerinin alışkanlığı.",
-          "proof": "Antalya yerel restoran rehberleri ve Altınkum mahalle notları"
-        }
-      ],
-      "suitability": {
-        "seating": "Geniş çok masalı geleneksel balık lokantası ve ön teras",
-        "crowdAndNoise": "Akşamları çevre mahallenin müdavim aileleriyle canlı",
-        "disadvantage": "Yeni nesil şef mezeleri yerine klasik geleneksel meyhane/balıkçı çizgisindedir ve hafta sonu kalabalık olabilir.",
-        "transit": "Altınkum Atatürk Bulvarı No:126A üzerinde yürüyüş şeridine bir blok içeride."
-      },
-      "verifiedAt": "2026-11-13",
-      "sources": [
-        {
-          "title": "TripAdvisor — Başoğlu Balık",
-          "url": "https://www.tripadvisor.com.tr/",
-          "date": "2026-10-20",
-          "kind": "editorial",
-          "note": "Konyaaltı bölgesinin köklü balık restoranı"
-        },
-        {
-          "title": "Antalya Topluluk Notları",
-          "url": "https://foursquare.com/",
-          "date": "2026-10-20",
-          "kind": "community",
-          "note": "Eski müdavim kitlesi ve klasik balık porsiyonları"
-        }
-      ],
-      "pros": [
-        "Yıllara dayanan balıkçı esnaf tecrübesi",
-        "Geniş aile masası düzeni"
-      ],
-      "cons": [
-        "Klasik mekan dekorasyonu ve hafta sonu gürültüsü"
-      ],
-      "uncertainties": [
-        "Büyük porsiyon balıklarda sipariş öncesi tartı/fiyat teyidi almak yararlıdır."
-      ],
-      "selectionScore": 81,
       "selectedForSnapshot": true
     },
     {

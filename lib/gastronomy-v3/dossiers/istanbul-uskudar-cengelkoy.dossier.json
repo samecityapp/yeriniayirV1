@@ -2,8 +2,8 @@
   "schemaVersion": "3.4",
   "regionKey": "istanbul-uskudar-cengelkoy",
   "displayName": "Çengelköy, Üsküdar, İstanbul",
-  "verifiedAt": "2026-11-14T09:52:39.174Z",
-  "selectedCount": 26,
+  "verifiedAt": "2026-11-14T10:59:02.463Z",
+  "selectedCount": 15,
   "rejectedControls": [
     {
       "id": "ctrl-ceng-espressolab",
@@ -24,6 +24,21 @@
       "id": "ctrl-ceng-beylerbeyi-outside",
       "resolvedName": "Villa Bosphorus",
       "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Çengelköy, adres: Beylerbeyi, Beylerbeyi İskele Cd. 18 A D:18 A, 34676 Üsküdar/İstanbul, Türkiye)"
+    },
+    {
+      "id": "ctrl-ceng-cikolata-kahve",
+      "resolvedName": "Çikolata Kahve İstanbul",
+      "reason": "kahve_category_not_coffee_specialist:name"
+    },
+    {
+      "id": "ctrl-ceng-vakko-chain",
+      "resolvedName": "Vakko Le Specialità",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ceng-borekcisi-chain",
+      "resolvedName": "Çengelköy Börekçisi Çengelköy Şubesi",
+      "reason": "chain_or_franchise"
     }
   ],
   "venues": [
@@ -304,75 +319,6 @@
       "selectedForSnapshot": true
     },
     {
-      "id": "ceng-bartos",
-      "categoryId": "hamburger",
-      "resolvedName": "Barto's Burger Place",
-      "branchName": "Çengelköy, Çengelköy Cd. No:33/C, 34680 Üsküdar/İstanbul, Türkiye",
-      "placeId": "ChIJ_7tZAu7JyhQRfJPpdfZtNWk",
-      "coordinates": {
-        "lat": 41.049867899999995,
-        "lng": 29.054241
-      },
-      "rating": 4,
-      "userRatingCount": 3198,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": true,
-        "outdoorSeating": true,
-        "reservable": false
-      },
-      "websiteUri": "https://bartosburgerplace.com/",
-      "mapsUri": "https://maps.google.com/?cid=7581086453055722364",
-      "recommendedPrimary": [
-        "Barto's Special Burger",
-        "Mantarlı İsviçre Peynirli Burger",
-        "Barbekü Cheeseburger"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Çıtır Soğan Halkası & Sıcak Çikolatalı Sufle / Milkshake",
-          "note": "Ana burger menüsünün ardından genç kalabalığın en çok tercih ettiği ek atıştırmalıklar.",
-          "proof": "bartosburger.com ve Çengelköy yerel halk paylaşımları"
-        }
-      ],
-      "suitability": {
-        "seating": "Cadde seviyesinde hızlı salon ve paket servis düzeni",
-        "crowdAndNoise": "Hafta içi öğleden sonra ve akşamları oldukça hareketli",
-        "disadvantage": "Çok yüksek sirkülasyonlu cadde şubesi olduğu için yoğun saatlerde masa/servis hızı dalgalanmaları, ürünün erken saatlerde tükenmesi ve fiyat tartışmaları görülebiliyor.",
-        "transit": "Çengelköy Caddesi No:33/C üzerinde tarihi Çınaraltı ve çarşı durağına 2 dakika."
-      },
-      "verifiedAt": "2026-11-14",
-      "sources": [
-        {
-          "title": "Gurman Atlas — Barto’s Burger Place İncelemesi",
-          "url": "https://gurmanatlas.com/",
-          "date": "2026-10-20",
-          "kind": "editorial",
-          "note": "Gerdan-döş karışımı et çekimi, ev yapımı patates ekmeği ve özgün sos reçeteleriyle Çengelköy çıkışı craft burger durağı"
-        },
-        {
-          "title": "Ekşi Sözlük — Bartos Burger Çengelköy",
-          "url": "https://eksisozluk.com/",
-          "date": "2026-10-20",
-          "kind": "community",
-          "note": "Yıllardır Çengelköy çarşısının uğrak burger durağı olmakla birlikte kalabalık saatlerde yoğunluk not ediliyor"
-        }
-      ],
-      "pros": [
-        "Çengelköy merkezde yıllardır bilinen ulaşılabilir burger klasiği",
-        "Geniş çeşit yelpazesi"
-      ],
-      "cons": [
-        "Yoğun saatlerde kalite/hız dalgalanması ve cadde içi dar oturma alanı"
-      ],
-      "uncertainties": [
-        "Yeni jenerasyon smash burgerlere kıyasla klasik etli burger formundadır."
-      ],
-      "selectionScore": 78,
-      "selectedForSnapshot": true
-    },
-    {
       "id": "ceng-newtown",
       "categoryId": "kahve",
       "resolvedName": "Newtown Specialty Coffee Roasters",
@@ -580,75 +526,6 @@
       "selectedForSnapshot": true
     },
     {
-      "id": "ceng-cikolata-kahve",
-      "categoryId": "kahve",
-      "resolvedName": "Çikolata Kahve İstanbul",
-      "branchName": "Çengelköy, Albay Hüsamettin Ertürk Sk. No:8, 34680 Üsküdar/İstanbul, Türkiye",
-      "placeId": "ChIJwTP8cNPJyhQRolVDBeWHiMg",
-      "coordinates": {
-        "lat": 41.0499461,
-        "lng": 29.0532589
-      },
-      "rating": 4.3,
-      "userRatingCount": 2862,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": null,
-        "outdoorSeating": true,
-        "reservable": null
-      },
-      "websiteUri": null,
-      "mapsUri": "https://maps.google.com/?cid=14449948822123795874",
-      "recommendedPrimary": [
-        "Yoğun Sıcak Çikolata & Türk Kahvesi",
-        "Çilekli Çikolata Kasesi",
-        "Profiterol / Sufle"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Beyaz ve Bitter Çikolatalı Meyve Fondü / Özel Kase",
-          "note": "Özellikle akşamüstü ve akşam buluşmalarında paylaşılan imza çikolata sunumu.",
-          "proof": "İstanbul çikolata-kahve rehberleri ve ekşi sözlük notları"
-        }
-      ],
-      "suitability": {
-        "seating": "Tarihi sokak içinde taş avlulu bahçe ve sıcak iç salon",
-        "crowdAndNoise": "Özellikle hafta sonu öğleden sonra oldukça yoğun",
-        "disadvantage": "Yoğun talep nedeniyle hafta sonu kapıda sıra bekleme ve küçük masalarda gürültülü atmosfer sıkça görülmektedir.",
-        "transit": "Çengelköy Albay Hüsamettin Ertürk Sokak No:8’de Tarihi Çınaraltı’na 2 dakikalık yürüyüş."
-      },
-      "verifiedAt": "2026-11-14",
-      "sources": [
-        {
-          "title": "Oggusto — İstanbul’un En İyi Çikolata Dükkanları",
-          "url": "https://www.oggusto.com/",
-          "date": "2026-10-20",
-          "kind": "editorial",
-          "note": "Çengelköy ara sokağında çikolata barı ve sıcak kahve ritüelini birleştiren köklü mekan"
-        },
-        {
-          "title": "Ekşi Sözlük — Çikolata Kahve Çengelköy",
-          "url": "https://eksisozluk.com/",
-          "date": "2026-10-20",
-          "kind": "community",
-          "note": "Çikolatalı kaseleri beğenilirken hafta sonu masa bulma zorluğu not düşülüyor"
-        }
-      ],
-      "pros": [
-        "Samimi Çengelköy avlu dokusu",
-        "Yoğun akışkan Belçika çikolatası sunumları"
-      ],
-      "cons": [
-        "Hafta sonu sıra bekleme ve dar masa düzeni"
-      ],
-      "uncertainties": [
-        "Akşam geç saatlerde bazı özel tatlı kaseleri bitebiliyor."
-      ],
-      "selectionScore": 81,
-      "selectedForSnapshot": true
-    },
-    {
       "id": "ceng-birds",
       "categoryId": "date",
       "resolvedName": "Birds Çengelköy",
@@ -715,151 +592,6 @@
         "Yeni keşfedilen butik bir mekan olduğundan menü sık güncellenebiliyor."
       ],
       "selectionScore": 91,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "ceng-osteria-salvatore",
-      "categoryId": "date",
-      "resolvedName": "Osteria Salvatore",
-      "branchName": "Çengelköy, Kuleli Cd. No:45/1, 34680 Üsküdar/İstanbul, Türkiye",
-      "placeId": "ChIJdRbxYjrJyhQRsqDTdYR9NkM",
-      "coordinates": {
-        "lat": 41.054384,
-        "lng": 29.052032999999998
-      },
-      "rating": 4.2,
-      "userRatingCount": 681,
-      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": null,
-        "outdoorSeating": true,
-        "reservable": true
-      },
-      "websiteUri": "https://www.osteriasalvatore.com/",
-      "mapsUri": "https://maps.google.com/?cid=4843196457149505714",
-      "recommendedPrimary": [
-        "Trüflü / Deniz Mahsullü Risotto",
-        "El Yapımı Tagliatelle & Ravioli",
-        "Odun Fırını Pizza"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Masada Hazırlanan Tiramisu & Panna Cotta",
-          "note": "Boğaz kıyısında İtalyan yemeğinin kapanışında en çok tercih edilen klasik tatlılar.",
-          "proof": "osteriasalvatore.com ve İstanbul Boğaz restoranları seçkisi"
-        }
-      ],
-      "suitability": {
-        "seating": "Boğaz’a bakan rıhtım masaları ve tarihi taş duvarlı şık iç salon",
-        "crowdAndNoise": "Özel akşam buluşmaları ve kutlamalar için tercih edilen zarif misafir profili",
-        "disadvantage": "Boğaz kıyısı fiyat seviyesindedir ve özellikle yaz akşamları rıhtım masaları günler öncesinden rezervasyonla dolar.",
-        "transit": "Çengelköy Kuleli Caddesi No:45/1’de Kuleli sahil hattında (Del Mare kompleksinin yanında)."
-      },
-      "verifiedAt": "2026-11-14",
-      "sources": [
-        {
-          "title": "Oggusto — Boğaz Kıyısında İtalyan Restoranları",
-          "url": "https://www.oggusto.com/",
-          "date": "2026-10-20",
-          "kind": "editorial",
-          "note": "Kuleli’de tarihi taş bina dokusunda Boğaz manzaralı geleneksel İtalyan osteria"
-        },
-        {
-          "title": "Ekşi Sözlük — Osteria Salvatore Çengelköy",
-          "url": "https://eksisozluk.com/",
-          "date": "2026-10-20",
-          "kind": "community",
-          "note": "Manzara ve taze makarnaları beğenilirken üst bütçe seviyesi belirtiliyor"
-        }
-      ],
-      "pros": [
-        "Doğrudan Boğaz kıyısında tarihi taş yapı atmosferi",
-        "Otantik el yapımı makarna ve risotto çeşitleri"
-      ],
-      "cons": [
-        "Yüksek bütçe seviyesi ve hafta sonu rezervasyon zorunluluğu"
-      ],
-      "uncertainties": [
-        "Rüzgarlı havalarda dış rıhtım oturumu kapanabiliyor."
-      ],
-      "selectionScore": 79,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "ceng-vakko-lespecialita",
-      "categoryId": "date",
-      "resolvedName": "Vakko Le Specialità",
-      "branchName": "Çengelköy, Kuleli Cd. No:43, 34684 Üsküdar/İstanbul, Türkiye",
-      "placeId": "ChIJO_NhEVPJyhQRhkwBUP2v-VQ",
-      "coordinates": {
-        "lat": 41.0540296,
-        "lng": 29.0518239
-      },
-      "rating": 4.2,
-      "userRatingCount": 316,
-      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": false,
-        "outdoorSeating": true,
-        "reservable": true
-      },
-      "websiteUri": null,
-      "mapsUri": "https://maps.google.com/?cid=6123118670890749062",
-      "recommendedPrimary": [
-        "Taze Trüflü Makarna / Risotto",
-        "Artizan İnce Pizza Çeşitleri",
-        "Deniz Mahsullü Başlangıçlar"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Vakko Patisserie Tatlıları & Madlen Eşlikli Espresso",
-          "note": "Akşam yemeği ya da şık bir akşamüstü buluşması sonunda mutlaka denenmesi gereken imza pastacılık ürünleri.",
-          "proof": "vakkolatelier.com / lespecialita menüsü ve İstanbul gastronomi yayınları"
-        }
-      ],
-      "suitability": {
-        "seating": "Boğaz manzaralı rıhtım terası ve yüksek tasarım salonu (rezervasyon gerekir)",
-        "crowdAndNoise": "Özel gün kutlamaları ve seçkin buluşmalar için dingin lüks ortam",
-        "disadvantage": "Üst segment bütçe seviyesindedir; hızlı günlük yemek yerine özel akşam ya da şık buluşmalar için uygundur.",
-        "transit": "Çengelköy Kuleli Caddesi No:43’te sahil yürüyüş yolunda."
-      },
-      "verifiedAt": "2026-11-14",
-      "sources": [
-        {
-          "title": "Vakko L’Atelier / Le Specialità Resmi Sitesi",
-          "url": "https://www.vakkolatelier.com/",
-          "date": "2026-11-14",
-          "kind": "operator",
-          "note": "Çengelköy Kuleli sahil terası ve İtalyan gastronomi seçkisi"
-        },
-        {
-          "title": "Oggusto — Boğaz’ın En Şık Buluşma Adresleri",
-          "url": "https://www.oggusto.com/",
-          "date": "2026-10-20",
-          "kind": "editorial",
-          "note": "Kuleli kıyısında Boğaz atmosferi ve özel pastacılık dokunuşlarıyla öne çıkıyor"
-        },
-        {
-          "title": "Ekşi Sözlük — Vakko Çengelköy",
-          "url": "https://eksisozluk.com/",
-          "date": "2026-10-20",
-          "kind": "community",
-          "note": "Manzara ve ambiyansı övülürken çok yüksek fiyat seviyesi vurgulanıyor"
-        }
-      ],
-      "pros": [
-        "Etkileyici Boğaz’a sıfır rıhtım terası ve şık servis",
-        "Yüksek kaliteli tatlı ve İtalyan mutfağı"
-      ],
-      "cons": [
-        "Yüksek fiyat seviyesi ve sahil yolu trafiği"
-      ],
-      "uncertainties": [
-        "Deniz kenarı teras masaları özel günlerde erkenden rezerve edilir."
-      ],
-      "selectionScore": 84,
       "selectedForSnapshot": true
     },
     {
@@ -1001,144 +733,6 @@
       "selectedForSnapshot": true
     },
     {
-      "id": "ceng-boon",
-      "categoryId": "kahvalti",
-      "resolvedName": "Boon Cafe & Restaurant",
-      "branchName": "Çengelköy, Kara Sk. 1A D:B, 34680 Üsküdar/İstanbul, Türkiye",
-      "placeId": "ChIJ1_PgnNPJyhQRNp09kAXJ9ec",
-      "coordinates": {
-        "lat": 41.0505706,
-        "lng": 29.052636600000003
-      },
-      "rating": 4.3,
-      "userRatingCount": 5714,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": null,
-        "outdoorSeating": true,
-        "reservable": true
-      },
-      "websiteUri": "http://booncaferestaurant.com/",
-      "mapsUri": "https://maps.google.com/?cid=16714486617787440438",
-      "recommendedPrimary": [
-        "Boğaz Manzaralı Serpme Kahvaltı",
-        "Kavurmalı Yumurta & Pişi",
-        "Kuymak"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Dondurmalı Sıcak İrmik Helvası / San Sebastian & Türk Kahvesi",
-          "note": "Boğaz dalgalarını izleyerek kahvaltı sonrasında tatlı-kahve keyfi yapanların seçimi.",
-          "proof": "booncafe.com ve İstanbul Boğaz kahvaltı rehberleri"
-        }
-      ],
-      "suitability": {
-        "seating": "Doğrudan deniz kıyısında açık rıhtım terası ve camlı salon",
-        "crowdAndNoise": "Beş binin üzerinde değerlendirmeye sahip çok yoğun hafta sonu kahvaltı noktası",
-        "disadvantage": "Hafta sonları sahil kenarı masalar için sıra beklemek gerekebiliyor; turistik yoğunluk ve üst-orta hesap seviyesi sıkça belirtilen noktalardır.",
-        "transit": "Çengelköy Vapur İskelesi ve Kara Sokak 1A sahil çıkışının hemen bitişiğinde."
-      },
-      "verifiedAt": "2026-11-14",
-      "sources": [
-        {
-          "title": "Oggusto — Boğaz’a Sıfır Kahvaltı Mekanları",
-          "url": "https://www.oggusto.com/",
-          "date": "2026-10-20",
-          "kind": "editorial",
-          "note": "Çengelköy iskelesi yanında köprü ve deniz manzaralı terasıyla bilinen mekan"
-        },
-        {
-          "title": "Ekşi Sözlük — Boon Cafe Çengelköy",
-          "url": "https://eksisozluk.com/",
-          "date": "2026-10-20",
-          "kind": "community",
-          "note": "Denize sıfır konumu beğenilirken kalabalık saatlerde servis hızı ve fiyatlar eleştiriliyor"
-        }
-      ],
-      "pros": [
-        "Doğrudan Boğaz’a sıfır köprü manzaralı teras",
-        "Vapur iskelesinin hemen yanında kolay ulaşım"
-      ],
-      "cons": [
-        "Hafta sonu uzun sıra, kalabalık gürültüsü ve yüksek fiyat algısı"
-      ],
-      "uncertainties": [
-        "Deniz kenarı masalarda kalış süreleri kalabalık günlerde sınırlanabilir."
-      ],
-      "selectionScore": 84,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "ceng-munire",
-      "categoryId": "kahvalti",
-      "resolvedName": "Münire Çengelköy",
-      "branchName": "Çengelköy, Çengelköy Hamam Arkası Sk. 15/A, 34680 Üsküdar/İstanbul, Türkiye",
-      "placeId": "ChIJEVC2mkXJyhQRK-bYyclOjT0",
-      "coordinates": {
-        "lat": 41.0508503,
-        "lng": 29.054281
-      },
-      "rating": 4.3,
-      "userRatingCount": 322,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": false,
-        "outdoorSeating": true,
-        "reservable": true
-      },
-      "websiteUri": null,
-      "mapsUri": "https://maps.google.com/?cid=4435287836611634731",
-      "recommendedPrimary": [
-        "Münire Kahvaltı Tabağı / Serpme",
-        "Ev Yapımı Reçel & Kaymak",
-        "Sucuklu / Otlu Omlet"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Nostaljik Şerbet / Limonata & Günlük Ev Keki",
-          "note": "Kahvaltı sonrası sakin arka sokakta çay-sohbeti uzatan ev yapımı tatlı eşlikçisi.",
-          "proof": "Çengelköy ara sokak lezzet notları ve müdavim paylaşımları"
-        }
-      ],
-      "suitability": {
-        "seating": "Tarihi sokak atmosferinde arka/ön masa düzeni",
-        "crowdAndNoise": "Sahil kalabalığından kaçıp sakin kahvaltı arayan misafirlerle dengeli",
-        "disadvantage": "Büyük sahil terasları gibi Boğaz manzarası yoktur; odak mahalle içi sakinlik ve ev mutfağıdır.",
-        "transit": "Çengelköy Hamam Arkası Sokak No:15/A’da tarihi hamam yapısının hemen arkasında."
-      },
-      "verifiedAt": "2026-11-14",
-      "sources": [
-        {
-          "title": "The Magger — Çengelköy’ün Sakin Ara Sokak Mekanları",
-          "url": "https://www.themagger.com/",
-          "date": "2026-10-20",
-          "kind": "editorial",
-          "note": "Hamam Arkası Sokak’ta sahil gürültüsünden uzak özenli kahvaltı adresi"
-        },
-        {
-          "title": "Müdavim — Münire Çengelköy",
-          "url": "https://mudavim.net/",
-          "date": "2026-10-20",
-          "kind": "community",
-          "note": "Sunum temizliği ve ev yapımı ürünleriyle yüksek beğeni alıyor"
-        }
-      ],
-      "pros": [
-        "Turistik rıhtım karmaşasından uzak huzurlu sokak konumu",
-        "Özenli ev usulü reçel ve peynir sunumu"
-      ],
-      "cons": [
-        "Deniz manzarası bulunmaması"
-      ],
-      "uncertainties": [
-        "Hafta sonları sınırlı sayıdaki masalar hızlı dolabilir."
-      ],
-      "selectionScore": 82,
-      "selectedForSnapshot": true
-    },
-    {
       "id": "ceng-tarihi-cinaralti",
       "categoryId": "denemelisin",
       "resolvedName": "Çengelköy Tarihi Çınaraltı",
@@ -1167,7 +761,7 @@
       "recommendedSecondary": [
         {
           "name": "Kömürde Türk Kahvesi & Dışarıdan Getirilen Sıcak Börek Geleneği",
-          "note": "Mekanın kendi tost/kahvaltısı dışında komşu Çengelköy Börekçisi’nden böreğini alıp burada çayla paylaşmak asıl yerel ritüeldir.",
+          "note": "Mekanın kendi tost/kahvaltısı dışında çevredeki tarihi Çengelköy fırın ve börekçilerinden sıcak böreğini alıp burada çayla paylaşmak asıl yerel ritüeldir.",
           "proof": "İstanbul Kent Rehberleri ve Çengelköy Tarihi Çınaraltı arşivi"
         }
       ],
@@ -1205,75 +799,6 @@
         "Deniz önü masalar sabah erken saatlerden itibaren dolmaktadır."
       ],
       "selectionScore": 87,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "ceng-borekcisi",
-      "categoryId": "denemelisin",
-      "resolvedName": "Çengelköy Börekçisi",
-      "branchName": "Çengelköy, Çengelköy Cd. No:41 D:41, 34680 Üsküdar/İstanbul, Türkiye",
-      "placeId": "ChIJvf4KA9PJyhQR10g8vJvzZc4",
-      "coordinates": {
-        "lat": 41.0494038,
-        "lng": 29.0545894
-      },
-      "rating": 4,
-      "userRatingCount": 1439,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": true,
-        "outdoorSeating": null,
-        "reservable": null
-      },
-      "websiteUri": "https://cengelkoyborekcisi.com.tr/",
-      "mapsUri": "https://maps.google.com/?cid=14872561194664478935",
-      "recommendedPrimary": [
-        "Cevizli Kıymalı Kol Böreği",
-        "Peynirli Su Böreği",
-        "Ispanaklı & Patatesli Börek"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Pudra Şekerli Küt/Kürt Böreği & Açma",
-          "note": "Kıymalı ve peynirli çeşitler dışında kahvaltı paketi için alınan sıcak klasik fırın böreği.",
-          "proof": "İstanbul yerel börek rehberleri ve Çınaraltı geleneği paylaşımları"
-        }
-      ],
-      "suitability": {
-        "seating": "Küçük içi masa bölümü, cadde kenarı ve ağırlıklı sıcak paket tezgahı (Çınaraltı’na götürmek için ideal)",
-        "crowdAndNoise": "Sabah ve hafta sonları fırın tepsisinden sıcak almak isteyenlerle kuyruk",
-        "disadvantage": "Dükkan içi oturum dardır; kalabalıkta yağ oranı zaman zaman eleştirilebildiğinden en taze anı olan sıcak tepsi çıkışını yakalamak önemlidir.",
-        "transit": "Çengelköy Caddesi No:41 üzerinde Tarihi Çınaraltı’na 2 dakikalık yürüyüş mesafesinde."
-      },
-      "verifiedAt": "2026-11-14",
-      "sources": [
-        {
-          "title": "Harbiyiyorum — İstanbul’un En İyi Mahalle Börekçileri",
-          "url": "https://harbiyiyorum.com/",
-          "date": "2026-10-20",
-          "kind": "editorial",
-          "note": "Çınaraltı çayına eşlik eden Çengelköy kol böreği ve su böreği klasiği"
-        },
-        {
-          "title": "Ekşi Sözlük — Çengelköy Börekçisi",
-          "url": "https://eksisozluk.com/",
-          "date": "2026-10-20",
-          "kind": "community",
-          "note": "Cevizli kıymalı böreği öne çıkarken yoğun saatlerde bekleyen hamurlara karşı taze tepsi uyarısı yapılıyor"
-        }
-      ],
-      "pros": [
-        "İkonik Çınaraltı çay bahçesi ritüelinin sıcak börek adresi",
-        "Yöresel dokunuşlu cevizli kıymalı börek"
-      ],
-      "cons": [
-        "Küçük oturma alanı ve sabah kalabalığı"
-      ],
-      "uncertainties": [
-        "Fırından çıkış saatine göre börek çıtırlığı değişebiliyor."
-      ],
-      "selectionScore": 79,
       "selectedForSnapshot": true
     },
     {
@@ -1343,144 +868,6 @@
         "Uykuluk ve özel sakatatlar geç saatlere kalmadan bitebiliyor."
       ],
       "selectionScore": 83,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "ceng-kokoreccisi",
-      "categoryId": "denemelisin",
-      "resolvedName": "Çengelköy Kokoreççisi",
-      "branchName": "Çengelköy, Çengelköy Cd. 15/C, 34672 Çengelköy - Üsküdar/Üsküdar/İstanbul, Türkiye",
-      "placeId": "ChIJwWwUaSe4yhQRQhoiH0CH21M",
-      "coordinates": {
-        "lat": 41.0505552,
-        "lng": 29.0532066
-      },
-      "rating": 4,
-      "userRatingCount": 2276,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": true,
-        "outdoorSeating": true,
-        "reservable": false
-      },
-      "websiteUri": null,
-      "mapsUri": "https://maps.google.com/?cid=6042572034517637698",
-      "recommendedPrimary": [
-        "Yarım Ekmek Kuzu Kokoreç (Domatessiz/İsteğe Göre)",
-        "Halka Kokoreç",
-        "Midye Dolma"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Limonlu Midye Dolma & Acı Turşu Biber Eşlikçisi",
-          "note": "Kokoreç tezgahı önünde beklerken ayaküstü açılan sıcak/soğuk midye dolma ritüeli.",
-          "proof": "Çengelköy sokak yemeği arşivi ve yerel topluluk notları"
-        }
-      ],
-      "suitability": {
-        "seating": "Küçük tezgah salonu, dış ayakta/tabure masalar ve al-götür servisi",
-        "crowdAndNoise": "Çarşı çıkışı öğrenciler, sahil yürüyüşçüleri ve gece ziyaretçileriyle dolu",
-        "disadvantage": "Geleneksel sokak tezgahı temposu, yüksek fiyat tartışmaları ve gece geç saatlerdeki kalabalık sebebiyle yavaşlayabilen sipariş akışı mevcuttur.",
-        "transit": "Çengelköy Caddesi No:15/C’de Tarihi Çınaraltı girişinin hemen karşısında."
-      },
-      "verifiedAt": "2026-11-14",
-      "sources": [
-        {
-          "title": "Oggusto — İstanbul’un Eski Sokak Kokoreççileri",
-          "url": "https://www.oggusto.com/",
-          "date": "2026-10-20",
-          "kind": "editorial",
-          "note": "Çengelköy merkezindeki köklü köz kokoreç ve midye dolma klasiği"
-        },
-        {
-          "title": "Ekşi Sözlük — Çengelköy Kokoreççisi",
-          "url": "https://eksisozluk.com/",
-          "date": "2026-10-20",
-          "kind": "community",
-          "note": "Çarşı girişinin ikonik kokoreç durağı olmakla birlikte fiyat artışı ve sıra eleştirileri alıyor"
-        }
-      ],
-      "pros": [
-        "Çengelköy Çarşısı girişinde yıllanmış geleneksel köz kokoreç",
-        "Gece geç saatlere kadar erişilebilir sokak lezzeti"
-      ],
-      "cons": [
-        "Küçük alan, fiyat seviyesi ve hızlı servis dalgalanmaları"
-      ],
-      "uncertainties": [
-        "Gece kalabalığında oturacak tabure bulmak zor olabilir."
-      ],
-      "selectionScore": 78,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "ceng-seval-pastanesi",
-      "categoryId": "denemelisin",
-      "resolvedName": "Seval Pastanesi",
-      "branchName": "Çengelköy, Çengelköy Cd. No: 9/a, 34680 Üsküdar/İstanbul, Türkiye",
-      "placeId": "ChIJQRZVmtPJyhQRHF5OUGJxuoo",
-      "coordinates": {
-        "lat": 41.050818,
-        "lng": 29.052759
-      },
-      "rating": 4.2,
-      "userRatingCount": 425,
-      "priceLevel": null,
-      "serviceFlags": {
-        "dineIn": null,
-        "takeout": true,
-        "outdoorSeating": null,
-        "reservable": null
-      },
-      "websiteUri": null,
-      "mapsUri": "https://maps.google.com/?cid=9996426989970284060",
-      "recommendedPrimary": [
-        "Taze Çikolatalı Ekler",
-        "Tuzlu Çörek Otlu Kuru Pasta",
-        "Kaşık Dondurma (Yazın)"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Paskalya Çöreği & Yazlık Vişne/Kaymak Dondurması",
-          "note": "Nostaljik pastane vitrininin özellikle hafta sonu ve yaz akşamları hızla tükenen klasikleri.",
-          "proof": "Çengelköy yerel tarih ve eski semt pastaneleri yazıları"
-        }
-      ],
-      "suitability": {
-        "seating": "Küçük klasik vitrin önü pastane masaları ve ağırlıklı paket alışverişi",
-        "crowdAndNoise": "Sabah poğaça alan semt sakinleri ve akşam dondurma/tatlı alan aileler",
-        "disadvantage": "Geleneksel eski mahalle pastanesi görünümündedir; modern kafe-brunch konsepti ve geniş oturma alanı arayanlara hitap etmez.",
-        "transit": "Çengelköy Caddesi No:9/A’da iskele meydanından çarşı içine yürürken."
-      },
-      "verifiedAt": "2026-11-14",
-      "sources": [
-        {
-          "title": "Hürriyet Seyahat — Eski İstanbul Semt Pastaneleri",
-          "url": "https://www.hurriyet.com.tr/",
-          "date": "2026-10-20",
-          "kind": "editorial",
-          "note": "Çengelköy çarşısının nostaljik kuru pasta, ekler ve dondurma mirası"
-        },
-        {
-          "title": "Ekşi Sözlük — Seval Pastanesi Çengelköy",
-          "url": "https://eksisozluk.com/",
-          "date": "2026-10-20",
-          "kind": "community",
-          "note": "Çengelköy’de yıllardır kalitesini koruyan eski usul pastane"
-        }
-      ],
-      "pros": [
-        "Mahalle dokusunu koruyan klasik pastane geleneği",
-        "Taze ekler ve yazlık dondurma"
-      ],
-      "cons": [
-        "Küçük oturma kapasitesi ve eski tip vitrin düzeni"
-      ],
-      "uncertainties": [
-        "Hafta sonları taze çıkan çörek ve börekler öğleden önce bitebilir."
-      ],
-      "selectionScore": 79,
       "selectedForSnapshot": true
     },
     {
@@ -1695,144 +1082,6 @@
         "Balkon/teras oturma düzeni mevsim ve rüzgar durumuna göre uyarlanır."
       ],
       "selectionScore": 77,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "ceng-chacha-balik",
-      "categoryId": "balik",
-      "resolvedName": "Chacha Balık",
-      "branchName": "Çengelköy, Kuleli Cd. no:47, 34684 Üsküdar/İstanbul, Türkiye",
-      "placeId": "ChIJMZy0aC_JyhQR0lcxvLVhinU",
-      "coordinates": {
-        "lat": 41.0548964,
-        "lng": 29.0520867
-      },
-      "rating": 4.2,
-      "userRatingCount": 1186,
-      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": null,
-        "outdoorSeating": true,
-        "reservable": true
-      },
-      "websiteUri": "http://www.chachabalik.com.tr/",
-      "mapsUri": "https://maps.google.com/?cid=8469689482397964242",
-      "recommendedPrimary": [
-        "Mısır Ekmeğinde Hamsi / Mezgit Tava",
-        "Izgara Lüfer / Çipura",
-        "Tereyağlı Karides Güveç"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Fırın Mısır Ekmeği & Fındıklı Laz Böreği / Helva",
-          "note": "Karadeniz mutfağı dokunuşlu mezelerle başlayan sofranın imza sıcak tatlı kapanışı.",
-          "proof": "chachabalik.com ve Çengelköy sahil müdavim notları"
-        }
-      ],
-      "suitability": {
-        "seating": "Denize sıfır açık iskele alanı ve modern camlı salon",
-        "crowdAndNoise": "Hafta sonları canlı müzik ve kalabalık arkadaş gruplarıyla enerjik ortam",
-        "disadvantage": "Grup masaları ve canlı müzik akşamlarında ses düzeyi yükselebildiğinden sessiz bir akşam isteyenler yerine canlı sofra sevenlere hitap eder.",
-        "transit": "Çengelköy Kuleli Caddesi No:47’de Del Mare bitişiğinde."
-      },
-      "verifiedAt": "2026-11-14",
-      "sources": [
-        {
-          "title": "Oggusto — Anadolu Yakası Denize Sıfır Balıkçılar",
-          "url": "https://www.oggusto.com/",
-          "date": "2026-10-20",
-          "kind": "editorial",
-          "note": "Karadeniz esintili meze ve taze balığı Kuleli kıyısına taşıyan sahil restoranı"
-        },
-        {
-          "title": "Ekşi Sözlük — Chacha Balık Çengelköy",
-          "url": "https://eksisozluk.com/",
-          "date": "2026-10-20",
-          "kind": "community",
-          "note": "Manzara ve mısır ekmeği övülürken kalabalık gruplarda akustik yoğunluk belirtiliyor"
-        }
-      ],
-      "pros": [
-        "Boğaz’a sıfır rıhtım konumu ve sıcak Karadeniz mezeleri",
-        "Kalabalık arkadaş buluşmalarına uygun teras"
-      ],
-      "cons": [
-        "Hafta sonu yüksek ses seviyesi ve Boğaz kıyı bütçesi"
-      ],
-      "uncertainties": [
-        "Hafta sonu akşamları için ön rezervasyon gereklidir."
-      ],
-      "selectionScore": 81,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "ceng-sen-balik",
-      "categoryId": "balik",
-      "resolvedName": "Şen Balık Lokantası",
-      "branchName": "Derecik Sok No:2, Çengelköy Mahallesi Üsküdar Çengelköy, Çengelköy, 34680 Üsküdar/İstanbul, Türkiye",
-      "placeId": "ChIJR8yoDNPJyhQRTb3mx5mzVpk",
-      "coordinates": {
-        "lat": 41.0501089,
-        "lng": 29.0532507
-      },
-      "rating": 4.2,
-      "userRatingCount": 511,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": null,
-        "outdoorSeating": true,
-        "reservable": true
-      },
-      "websiteUri": null,
-      "mapsUri": "https://maps.google.com/?cid=11049216208865246541",
-      "recommendedPrimary": [
-        "Tavada Hamsi / Mezgit (Mevsiminde)",
-        "Izgara Çipura veya Palamut",
-        "Sıcak Balık Çorbası"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Fırında Sıcak Tahin Helvası & Balık Çorbası Başlangıcı",
-          "note": "Bütçe dostu esnaf balıkçısı öğününü başlatan taze balık çorbası ve klasik sıcak helva kapanışı.",
-          "proof": "Çengelköy yerel esnaf lokantası değerlendirmeleri ve müdavim notları"
-        }
-      ],
-      "suitability": {
-        "seating": "Sade küçük lokanta masaları ve hızlı sokak önü oturması (alkolsüz esnaf balıkçısı)",
-        "crowdAndNoise": "Semt sakinleri, aileler ve günlük taze balık yemek isteyen müdavimlerle dolu",
-        "disadvantage": "Deniz manzarası ve lüks yalı servisi yoktur; alkolsüz, sade bir mahalle balık lokantası düzeninde çalışır.",
-        "transit": "Çengelköy Çarşısı içinde Tarihi Çınaraltı’na paralel Derecik Sokak No:2’de."
-      },
-      "verifiedAt": "2026-11-14",
-      "sources": [
-        {
-          "title": "Harbiyiyorum — İstanbul’un Gizli Esnaf Balıkçıları",
-          "url": "https://harbiyiyorum.com/",
-          "date": "2026-10-20",
-          "kind": "editorial",
-          "note": "Kuleli lüksünün hemen yanında ulaşılabilir bütçeyle taze günlük balık sunan çarşı lokantası"
-        },
-        {
-          "title": "Ekşi Sözlük — Şen Balık Çengelköy",
-          "url": "https://eksisozluk.com/",
-          "date": "2026-10-20",
-          "kind": "community",
-          "note": "Balık çorbası, taze kızartmaları ve esnaf dürüstlüğüyle semtin gözdesi"
-        }
-      ],
-      "pros": [
-        "Yalı balıkçılarına kıyasla çok daha ekonomik ve günlük taze hal balığı",
-        "Samimi çarşı esnaf lokantası"
-      ],
-      "cons": [
-        "Deniz manzarası bulunmaması ve küçük masa aralıkları"
-      ],
-      "uncertainties": [
-        "Günlük tava ve ızgara çeşitleri av sezonuna göre değişir."
-      ],
-      "selectionScore": 79,
       "selectedForSnapshot": true
     }
   ]

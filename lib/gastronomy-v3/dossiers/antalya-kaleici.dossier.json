@@ -2,9 +2,19 @@
   "schemaVersion": "3.4",
   "regionKey": "antalya-kaleici",
   "displayName": "Kaleiçi & Merkez, Antalya",
-  "verifiedAt": "2026-11-13T21:18:01.108Z",
-  "selectedCount": 38,
+  "verifiedAt": "2026-11-14T10:59:02.573Z",
+  "selectedCount": 36,
   "rejectedControls": [
+    {
+      "id": "kaleici-pizza-v",
+      "resolvedName": "Pizza V Kaleiçi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "kaleici-the-sudd",
+      "resolvedName": "The Sudd Coffee Kaleiçi",
+      "reason": "below_quality_threshold:★4.3(1089)_proofs_2"
+    },
     {
       "id": "ctrl-kaleici-arma-closed",
       "resolvedName": "Arma Restaurant",
@@ -161,75 +171,6 @@
         "Haftalık özel pizza çeşitleri sezona göre değişebiliyor."
       ],
       "selectionScore": 87,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "kaleici-pizza-v",
-      "categoryId": "pizza",
-      "resolvedName": "Pizza V Kaleiçi",
-      "branchName": "Tuzcular, Paşa Cami Sk. No:18/A, 07100 Muratpaşa/Antalya, Türkiye",
-      "placeId": "ChIJOZt_SBSRwxQRkrI7LS1ih2U",
-      "coordinates": {
-        "lat": 36.8857916,
-        "lng": 30.706392200000003
-      },
-      "rating": 4.7,
-      "userRatingCount": 1600,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": true,
-        "outdoorSeating": true,
-        "reservable": true
-      },
-      "websiteUri": "https://v.pizza/",
-      "mapsUri": "https://maps.google.com/?cid=7315924065858597522",
-      "recommendedPrimary": [
-        "Bufala Margherita",
-        "Diavola Pizza",
-        "Trüf Mantarlı Pizza"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Pesto Soslu Burrata & Sarımsaklı Fırın Ekmek",
-          "note": "Pizza öncesi paylaşımlık soğuk başlangıç olarak burrata tabağı ve taş fırından taze çıkan sarımsaklı ekmek öne çıkıyor.",
-          "proof": "v.pizza menü kataloğu ve Kaleiçi yeme-içme rehberleri"
-        }
-      ],
-      "suitability": {
-        "seating": "Taş sokak üzerinde açık hava masaları ve kompakt iç salon",
-        "crowdAndNoise": "Yaz akşamları Kaleiçi ziyaretçileriyle canlı tempo",
-        "disadvantage": "Kaleiçi araç trafiğine kapalı olduğundan akşamları kapı önünde kısa bekleme yaşanabiliyor ve araçla doğrudan kapıya yanaşılamıyor.",
-        "transit": "Hadrian Kapısı ve Tuzcular Paşa Cami Sokak yürüyüş aksında."
-      },
-      "verifiedAt": "2026-11-13",
-      "sources": [
-        {
-          "title": "Pizza V Kaleiçi Resmi Sitesi",
-          "url": "https://v.pizza/",
-          "date": "2026-11-13",
-          "kind": "operator",
-          "note": "Uzun fermantasyon hamur ve odun/taş fırın pizza menüsü"
-        },
-        {
-          "title": "Restoran Rehberleri — Kaleiçi",
-          "url": "https://restaurantguru.com/",
-          "date": "2026-10-20",
-          "kind": "editorial",
-          "note": "Kaleiçi İtalyan pizza seçkisi"
-        }
-      ],
-      "pros": [
-        "Hafif ve kabuk dengesi tutarlı hamur",
-        "Merkezi Kaleiçi konumu"
-      ],
-      "cons": [
-        "Kaleiçi dar sokak park kısıtı"
-      ],
-      "uncertainties": [
-        "Yoğun sezonda erken masa doldurma ihtimali yüksek."
-      ],
-      "selectionScore": 84,
       "selectedForSnapshot": true
     },
     {
@@ -788,82 +729,6 @@
       ],
       "uncertainties": [
         "Sezonluk soğuk içecek menüsü mevsime göre değişiyor."
-      ],
-      "selectionScore": 83,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "kaleici-the-sudd",
-      "categoryId": "kahve",
-      "resolvedName": "The Sudd Coffee Kaleiçi",
-      "branchName": "Kılınçarslan, Hamam Sk. No:27, 07100 Muratpaşa/Antalya, Türkiye",
-      "placeId": "ChIJ-4Bg77GRwxQRyBlvUo5xk2I",
-      "coordinates": {
-        "lat": 36.882034999999995,
-        "lng": 30.7076417
-      },
-      "rating": 4.3,
-      "userRatingCount": 1089,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": true,
-        "outdoorSeating": true,
-        "reservable": false
-      },
-      "websiteUri": "http://www.thesudd.com/",
-      "mapsUri": "https://maps.google.com/?cid=7103145893375711688",
-      "recommendedPrimary": [
-        "Chemex / V60 Demleme",
-        "Cortado",
-        "Soğuk Demleme (Cold Brew)"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Soğuk Sandviç Çeşitleri & Ev Yapımı Brownie",
-          "note": "Demleme kahvelerin yanında tok tutan soğuk sandviçler ve yoğun kakaolu brownie dilimleri sunuluyor.",
-          "proof": "thesudd.com menüsü ve Antalya üçüncü nesil kahve arşivi"
-        }
-      ],
-      "suitability": {
-        "seating": "Tarihi taş yapı içinde üst/alt salon ve bahçe köşesi",
-        "crowdAndNoise": "Sabah sakin, akşamüstü yerli kahve müdavimleriyle canlı",
-        "disadvantage": "İç mekan merdivenleri diktir ve akşamüstü bahçe gölgeli masalarda yer bulmak zorlaşabilir.",
-        "transit": "Kılınçarslan Mahallesi Hamam Sokak üzerinde Hıdırlık yönünde."
-      },
-      "verifiedAt": "2026-11-13",
-      "sources": [
-        {
-          "title": "The Sudd Coffee Roasters",
-          "url": "http://www.thesudd.com/",
-          "date": "2026-11-13",
-          "kind": "operator",
-          "note": "Kavurma profili ve Kaleiçi amiral dükkanı"
-        },
-        {
-          "title": "Antalya Nitelikli Kahve Haritası",
-          "url": "https://coffeemap.tr/",
-          "date": "2026-10-20",
-          "kind": "editorial",
-          "note": "Kaleiçi üçüncü nesil kavurmahane önerisi"
-        },
-        {
-          "title": "Ekşi Sözlük — Antalya Kahvecileri",
-          "url": "https://eksisozluk.com/",
-          "date": "2026-10-20",
-          "kind": "community",
-          "note": "Şehrin ilk nitelikli kahvecilerinden biri olarak müdavim görüşleri"
-        }
-      ],
-      "pros": [
-        "Kendi kavurduğu taze çekirdekler",
-        "Köklü baristalık geleneği"
-      ],
-      "cons": [
-        "Tarihi yapıda dik basamaklı iç düzen"
-      ],
-      "uncertainties": [
-        "Farklı tek kökenli çekirdekler hafta bazlı değişebiliyor."
       ],
       "selectionScore": 83,
       "selectedForSnapshot": true

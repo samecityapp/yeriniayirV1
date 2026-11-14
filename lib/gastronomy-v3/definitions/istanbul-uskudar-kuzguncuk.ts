@@ -131,7 +131,7 @@ export const ISTANBUL_USKUDAR_KUZGUNCUK_DEF: V3RegionDefinition = {
       verifiedAt: '2026-11-14',
     }),
 
-    // --- KAHVE (4 mekan) ---
+    // --- KAHVE (3 mekan) ---
     compactSeed({
       id: 'kuz-nail-kitabevi',
       placeId: 'ChIJhWHB3em3yhQRYQHllNQCKP8',
@@ -230,41 +230,8 @@ export const ISTANBUL_USKUDAR_KUZGUNCUK_DEF: V3RegionDefinition = {
       unc: ['Dönemsel soğuk içecek menüsü mevsime göre değişebilir.'],
       verifiedAt: '2026-11-14',
     }),
-    compactSeed({
-      id: 'kuz-cinaralti',
-      placeId: 'ChIJY0hRa8K3yhQRVGuwTAT2dz8',
-      cat: 'kahve',
-      name: 'Kuzguncuk Çınaraltı Cafe',
-      brand: 'cinaralti',
-      flags: { iconic: true },
-      area: 'Çarşı Cd. Sahili, Kuzguncuk',
-      signals: ['iskele-yanı', 'bogaz-kiyisi', 'turk-kahvesi-ritueli'],
-      desc:
-        'Kuzguncuk İskelesi ve balıkçı teknelerinin hemen yanında, yaşlı çınar gölgesinde Boğaz’a karşı demli çay ve köz/köpüklü Türk kahvesi içilen semtin klasik sahil durağı.',
-      order: ['Köpüklü Türk Kahvesi', 'İnce Belli Bardak Çay', 'Kaşarlı / Sucuklu Bazlama Tost'],
-      menu: ['Limonata', 'Menemen', 'Soğuk İçecekler'],
-      sec: [
-        [
-          'Çıtır Tost Çeşitleri & Demli Çay',
-          'Sabah sahil yürüyüşünde ya da akşamüstü Boğaz havasında kahve/çaya eşlik eden sade çay bahçesi klasikleri.',
-          'Kuzguncuk sahil kültürü yazıları ve yerel değerlendirmeler',
-        ],
-      ],
-      seat: 'Açık Boğaz kenarı çay bahçesi ve kapalı camlı bölme',
-      crowd: 'Mahalle sakinleri, vapur bekleyenler ve semt gezginleriyle gün boyu canlı',
-      dis: 'Özel kavrum üçüncü dalga espresso barı değil klasik Türk çay bahçesi çizgisindedir; rüzgarlı havalarda açık oturum serin olabilir.',
-      transit: 'Kuzguncuk Vapur İskelesi ve Çarşı Caddesi No:3/A kıyısında.',
-      sources: [
-        ['Hürriyet Seyahat — Boğaz’ın Tarihi Çınaraltı Çay Bahçeleri', 'https://www.hurriyet.com.tr/', 'editorial', 'Kuzguncuk iskelesi yanında çınar gölgesinde çay ve Türk kahvesi klasiği'],
-        ['Ekşi Sözlük — Kuzguncuk Çınaraltı', 'https://eksisozluk.com/', 'community', 'Manzara ve mahalle atmosferiyle semt ritüellerinin başında geliyor'],
-      ],
-      pros: ['Doğrudan Boğaz kıyısı ve çınar gölgesi atmosferi', 'Ulaşılabilir klasik çay bahçesi fiyatları'],
-      cons: ['Üçüncü dalga kahve barı olmaması ve yoğun saatlerde yer beklenmesi'],
-      unc: ['Deniz kenarı ön masalar hava durumuna göre erken dolar.'],
-      verifiedAt: '2026-11-14',
-    }),
 
-    // --- DATE MEKANLARI (3 mekan — İsmet Baba denemelisin sekmesinde de cross-list edilir) ---
+    // --- DATE MEKANLARI (2 mekan — İsmet Baba denemelisin sekmesinde de cross-list edilir) ---
     compactSeed({
       id: 'kuz-ismet-baba',
       placeId: 'ChIJ35jxdbS3yhQRiHxI_ulOkbg',
@@ -333,41 +300,8 @@ export const ISTANBUL_USKUDAR_KUZGUNCUK_DEF: V3RegionDefinition = {
       unc: ['Bazı özel dolgulu ravioli çeşitleri akşam servisinde erken tükenebilir.'],
       verifiedAt: '2026-11-14',
     }),
-    compactSeed({
-      id: 'kuz-seyret-nakkastepe',
-      placeId: 'ChIJO3hq1Oe3yhQR_L7tK4OGlfw',
-      cat: 'date',
-      name: 'Seyret Nakkaştepe',
-      brand: 'seyret',
-      flags: { insider: true },
-      area: 'Nakkaştepe, Kuzguncuk',
-      signals: ['bogaz-koprusu-manzarasi', 'koru-sirasi', 'aksam-terasi'],
-      desc:
-        'Kuzguncuk’un Nakkaştepe sırtlarında koru yeşilliğinin içinden Boğaz Köprüsü ve şehir silüetine hakim terasıyla özel akşam yemekleri sunan manzaralı restoran.',
-      order: ['Izgara Bonfile & Kuşkonmaz', 'Deniz Levreği / Somon', 'Zeytinyağlı Başlangıçlar'],
-      menu: ['Serpme Kahvaltı (Gündüz)', 'Fırın Makarna Çeşitleri', 'Çorbalar'],
-      sec: [
-        [
-          'Fırınlanmış Kabak / Künefe & Çay-Kahve',
-          'Köprü ışıklarına karşı akşam yemeğini kapatan geleneksel tatlı ve sıcak içecek ikramı.',
-          'Nakkaştepe mekan değerlendirmeleri ve belediye tesis rehberleri',
-        ],
-      ],
-      seat: 'Panoramik Boğaz manzaralı teras ve camlı yüksek salon',
-      crowd: 'Özel akşam kutlamaları ve hafta sonu kalabalık aile yemekleri için yoğun',
-      dis: 'Sırt noktada olduğu için sahilden dik yokuş/araç gerektirir ve hafta sonları çok kalabalıklaşabilir.',
-      transit: 'Kuzguncuk Nakkaştepe Mandıra Sokak No:2’de Millet Bahçesi girişinde.',
-      sources: [
-        ['Hürriyet Seyahat — Boğaz Köprüsü Manzaralı Tepeler', 'https://www.hurriyet.com.tr/', 'editorial', 'Nakkaştepe korusu içinden doğrudan Boğaz açısına sahip teras restoranı'],
-        ['Ekşi Sözlük — Nakkaştepe Sosyal Tesis / Seyret', 'https://eksisozluk.com/', 'community', 'Manzara açısı beğenilirken hafta sonu yoğunluğu ve yokuş erişimi hatırlatılıyor'],
-      ],
-      pros: ['Yüksekten Boğaz Köprüsü ve Koru manzarası', 'Geniş teras kapasitesi'],
-      cons: ['Yürüyüş yerine araç/otobüs gerektiren yokuş konumu ve hafta sonu kalabalığı'],
-      unc: ['Terastaki ön masa sırası saat ve rezervasyona göre değişmektedir.'],
-      verifiedAt: '2026-11-14',
-    }),
 
-    // --- KAHVALTI (4 mekan) ---
+    // --- KAHVALTI (2 mekan) ---
     compactSeed({
       id: 'kuz-saranin-bahcesi',
       placeId: 'ChIJjUpndPW3yhQR_W0HM6a6YJw',
@@ -433,74 +367,8 @@ export const ISTANBUL_USKUDAR_KUZGUNCUK_DEF: V3RegionDefinition = {
       unc: ['Hafta sonu sabahları masa bekleme süresi oluşabilir.'],
       verifiedAt: '2026-11-14',
     }),
-    compactSeed({
-      id: 'kuz-pita',
-      placeId: 'ChIJ7Yk42-m3yhQRtf9yAZUWLZ8',
-      cat: 'kahvalti',
-      name: 'Pita Kuzguncuk',
-      brand: 'pita',
-      flags: { insider: true },
-      area: 'İcadiye Cd., Kuzguncuk',
-      signals: ['bosnak-boregi', 'cinar-golgesi', 'sokak-masasi'],
-      desc:
-        'İcadiye Caddesi’ndeki yaşlı ağaçların altında yer alan kaldırım masalarında çıtır Boşnak böreği, sade kahvaltı tabakları ve sıcak sohbetiyle semtin yıllanmış mahalle kahvaltıcısı.',
-      order: ['Boşnak Böreği (Ispanaklı / Kıymalı)', 'Pita Kahvaltı Tabağı', 'Menemen'],
-      menu: ['Poğaça & Simit Eşlikçileri', 'Sahanda Yumurta', 'Türk Çayı'],
-      sec: [
-        [
-          'Ev Yapımı Kurabiye & Kek Dilimleri',
-          'Kahvaltı sonrası çay ve kahve eşliğinde mahalle kaldırımında keyfini çıkaranların tatlı tercihi.',
-          'Kuzguncuk semt kültür yazıları ve yerel müdavim notları',
-        ],
-      ],
-      seat: 'Cadde kenarı kaldırım masaları ve samimi küçük iç mekan',
-      crowd: 'Yürüyüş yapan semt sakinleri ve fotoğraf severlerle canlı',
-      dis: 'Yaya ve araç geçişine açık kaldırım cephesinde oturduğunuz için sakin bir avlu sessizliği sunmaz.',
-      transit: 'İcadiye Caddesi No:41/A adresinde Nail Kitabevi çaprazında.',
-      sources: [
-        ['The Magger — Kuzguncuk’ta Bir Gün', 'https://www.themagger.com/', 'editorial', 'İcadiye kaldırım masalarında Boşnak böreği ve mahalle kahvaltısının samimi adresi'],
-        ['Ekşi Sözlük — Pita Kuzguncuk', 'https://eksisozluk.com/', 'community', 'Yıllardır değişmeyen sıcak mahalle atmosferi ve böreğiyle biliniyor'],
-      ],
-      pros: ['Otantik Kuzguncuk sokak kahvaltısı deneyimi', 'Taze Boşnak böreği çeşitleri'],
-      cons: ['Cadde kenarı masa darlığı ve gel-geç kalabalığı'],
-      unc: ['İstenen börek çeşidi öğleye doğru tükenebiliyor.'],
-      verifiedAt: '2026-11-14',
-    }),
-    compactSeed({
-      id: 'kuz-ira-exclusive',
-      placeId: 'ChIJB_ne3wm3yhQRED9oC0Y1szc',
-      cat: 'kahvalti',
-      name: 'Ira Bakery Exclusive Kuzguncuk',
-      brand: 'ira',
-      flags: { insider: true },
-      area: 'Tahtalı Bostan Sk., Kuzguncuk',
-      signals: ['artizan-kruvasan', 'bostan-cevresi', 'eksi-maya'],
-      desc:
-        'Kuzguncuk’un Paşalimanı ve Tahtalı Bostan köşesinde katmanlı Fransız kruvasanları, ekşi maya tostları ve tartine tabaklarıyla klasik serpme yerine modern fırın kahvaltısı adresi.',
-      order: ['Tereyağlı / Bademli Kruvasan', 'Avokadolu Ekşi Maya Tartine', 'Poşe Yumurta Tabakları'],
-      menu: ['Peynirli Sandviçler', 'Filtre Kahve', 'Cortado'],
-      sec: [
-        [
-          'Fıstıklı Kruvasan & San Sebastian Cheesecake',
-          'Pastane vitrininin kahvaltı dışında çay-kahve saatlerinde en hızlı tükenen tatlı ürünleri.',
-          'irabakery.com ve Anadolu Yakası fırın rehberleri',
-        ],
-      ],
-      seat: 'Modern iç mekan, sokak masaları ve gel-al servisi',
-      crowd: 'Sabahları kaliteli kahve-kruvasan arayan ziyaretçilerle hareketli',
-      dis: 'Serpme kahvaltı konsepti yoktur; fiyatları mahalle börekçilerine göre artizan fırın bandındadır.',
-      transit: 'Paşalimanı Caddesi ve Tahtalı Bostan Sokak kesişiminde Kuzguncuk sahil yürüyüş yolunda.',
-      sources: [
-        ['Oggusto — İstanbul Kruvasan Rotası', 'https://www.oggusto.com/', 'editorial', 'Kuzguncuk sahil girişinde artizan kruvasan ve kahvaltı tartine tabakları'],
-        ['Ekşi Sözlük — Ira Bakery Kuzguncuk', 'https://eksisozluk.com/', 'community', 'Tereyağlı kruvasan katmanları övülürken üst fiyat seviyesi not ediliyor'],
-      ],
-      pros: ['Yüksek tereyağ kalitesinde artizan kruvasan', 'Sahil ve İcadiye arasında kolay erişim'],
-      cons: ['Üst bütçe bandı ve serpme kahvaltı sunmaması'],
-      unc: ['Dolgulu özel kruvasanlar hafta sonu öğleden önce bitebiliyor.'],
-      verifiedAt: '2026-11-14',
-    }),
 
-    // --- MUTLAKA DENEMELİSİN (5 mekan + İsmet Baba secondary) ---
+    // --- MUTLAKA DENEMELİSİN (4 mekan + İsmet Baba secondary) ---
     compactSeed({
       id: 'kuz-tarihi-firin',
       placeId: 'ChIJE3AMqpm3yhQRhpLSkDuGiZs',
@@ -632,39 +500,6 @@ export const ISTANBUL_USKUDAR_KUZGUNCUK_DEF: V3RegionDefinition = {
       pros: ['El yapımı gerçek mantı ve yağ çekmeyen çiğ börek', 'Güvenilir aile işletmesi özeni'],
       cons: ['Küçük oturma kapasitesi'],
       unc: ['Zeytinyağlı yaprak sarma günlük stokla sınırlıdır.'],
-      verifiedAt: '2026-11-14',
-    }),
-    compactSeed({
-      id: 'kuz-dilim-pastanesi',
-      placeId: 'ChIJZzA8D8K3yhQRQxmZmZ_HhOQ',
-      cat: 'denemelisin',
-      name: 'Dilim Pastanesi',
-      brand: 'dilim',
-      flags: { insider: true },
-      area: 'Paşalimanı Cd., Kuzguncuk',
-      signals: ['mahalle-pastanesi', 'gunluk-ekler', 'dogal-dondurma'],
-      desc:
-        'Paşalimanı sahil hattında gösterişsiz mahalle ruhunu koruyan; günlük çikolatalı ekleri, meyveli pastaları, poğaçaları ve yazın ev yapımı dondurmasıyla Kuzguncukluların müdavim pastanesi.',
-      order: ['Taze Çikolatalı Ekler', 'Mevsim Meyveli Turta / Pasta', 'Poğaça & Ay Çöreği'],
-      menu: ['Sade / Fıstıklı Dondurma (Yazın)', 'Kuru Pasta Çeşitleri', 'Çay & Türk Kahvesi'],
-      sec: [
-        [
-          'Yazlık Külahta Ev Yapımı Dondurma',
-          'Kuzguncuk sahil yürüyüşünde sıcak günlerde vitrinden en çok alınan geleneksel dondurma.',
-          'Kuzguncuk yerel halk değerlendirmeleri',
-        ],
-      ],
-      seat: 'Klasik küçük mahalle pastanesi masaları ve hızlı paket vitrini',
-      crowd: 'Çevre sakinleri ve sabah fırın alışverişi yapanlarla samimi',
-      dis: 'Tarihi İcadiye fırınları kadar gösterişli değil, tamamen sade yerel mahalle pastanesi çizgisindedir.',
-      transit: 'Kuzguncuk İskele ve Paşalimanı Caddesi No:126 üzerinde sahil yürüyüş yolunda.',
-      sources: [
-        ['Ekşi Sözlük — Kuzguncuk Yerel Pastane ve Dondurmacıları', 'https://eksisozluk.com/', 'community', 'Paşalimanı hattında yıllardır mahallelinin taze ekler ve dondurma adresi'],
-        ['ExploreKadikoy — Üsküdar Sahil Yürüyüş Rotası', 'https://www.explorekadikoy.com/', 'editorial', 'Turistik kalabalıktan uzak samimi mahalle pastanesi'],
-      ],
-      pros: ['Mahalle esnafı samimiyeti ve uygun bütçe', 'Taze ekler ve yazlık ev dondurması'],
-      cons: ['Sade dekorasyon ve küçük oturma alanı'],
-      unc: ['Dondurma çeşitleri yaz sezonuna göre açılır.'],
       verifiedAt: '2026-11-14',
     }),
 

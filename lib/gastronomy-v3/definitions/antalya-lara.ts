@@ -57,7 +57,7 @@ export const ANTALYA_LARA_DEF: V3RegionDefinition = {
       placeId: 'ChIJbXxfkE6bwxQR_gUWwjnDi8o',
       cat: 'pizza',
       brand: 'schiller',
-      flags: { insider: true },
+      flags: { insider: true, userRef: true },
       area: 'Güzeloba · Lara, Antalya',
       signals: ['referans-pizzaci', 'odun-atesi-franco', 'kahve-eslesmesi'],
       desc: "Güzeloba Çağlayangil Caddesi'nde odun ateşinde ince çıtır hamurlu Franco's İtalyan pizzalarıyla nitelikli Schiller kahve barını bir araya getiren referans Lara durağı.",
@@ -323,7 +323,7 @@ export const ANTALYA_LARA_DEF: V3RegionDefinition = {
     compactSeed({
       id: 'lara-sade-patisserie',
       placeId: 'ChIJtY92PBabwxQRc9AOqGgE_Dk',
-      cat: 'kahve',
+      cat: 'denemelisin',
       brand: 'sade',
       area: 'Yeşilbahçe · Lara, Antalya',
       signals: ['fransiz-pastacilik', 'butik-tart-ekler', 'espresso-eslesmesi'],
