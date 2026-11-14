@@ -114,7 +114,7 @@ export function LocationPickerModal({
           onClose();
         } else {
           setGpsMessage(
-            "Konumunuza yakın aktif bir rehber henüz bulunmuyor. Şu an Akyaka, Antalya, Gaziantep, Kuşadası, Kadıköy, Moda, Yeldeğirmeni, Caddebostan, Suadiye ve Bostancı rehberleri yayındadır."
+            "Konumunuza yakın aktif bir rehber henüz bulunmuyor. Şu an Üsküdar, Kuzguncuk, Çengelköy, Koşuyolu & Acıbadem, Kadıköy, Moda, Yeldeğirmeni, Caddebostan, Suadiye, Bostancı, Antalya, Gaziantep, Kuşadası ve Akyaka rehberleri yayındadır."
           );
         }
       },
@@ -174,7 +174,7 @@ export function LocationPickerModal({
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="İl, ilçe veya semt ara (Akyaka, Antalya, Gaziantep, Kuşadası, Kadıköy, Moda)"
+              placeholder="İl, ilçe veya semt ara (Üsküdar, Kuzguncuk, Çengelköy, Koşuyolu, Kadıköy, Antalya, Gaziantep)"
               className="w-full pl-10 pr-9 py-2.5 bg-slate-50 hover:bg-slate-100/70 focus:bg-white border border-slate-200 focus:border-blue-600 rounded-xl text-sm font-semibold text-slate-900 placeholder:text-slate-400 focus:outline-hidden focus:ring-2 focus:ring-blue-600/20 transition"
             />
             {query && (

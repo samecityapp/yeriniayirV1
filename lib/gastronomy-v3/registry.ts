@@ -4,6 +4,10 @@ import yeldegirmeniSnapshotJson from './regions/istanbul-kadikoy-yeldegirmeni.js
 import caddebostanSnapshotJson from './regions/istanbul-kadikoy-caddebostan.json';
 import suadiyeSnapshotJson from './regions/istanbul-kadikoy-suadiye.json';
 import bostanciSnapshotJson from './regions/istanbul-kadikoy-bostanci.json';
+import kosuyoluAcibademSnapshotJson from './regions/istanbul-kadikoy-kosuyolu-acibadem.json';
+import uskudarMerkezSnapshotJson from './regions/istanbul-uskudar-merkez.json';
+import kuzguncukSnapshotJson from './regions/istanbul-uskudar-kuzguncuk.json';
+import cengelkoySnapshotJson from './regions/istanbul-uskudar-cengelkoy.json';
 import kusadasiSnapshotJson from './regions/aydin-kusadasi.json';
 import gaziantepSnapshotJson from './regions/gaziantep-merkez.json';
 import antalyaKaleiciSnapshotJson from './regions/antalya-kaleici.json';
@@ -19,6 +23,10 @@ const YELDEGIRMENI_SNAPSHOT = yeldegirmeniSnapshotJson as V3VerifiedRegionSnapsh
 const CADDEBOSTAN_SNAPSHOT = caddebostanSnapshotJson as V3VerifiedRegionSnapshot;
 const SUADIYE_SNAPSHOT = suadiyeSnapshotJson as V3VerifiedRegionSnapshot;
 const BOSTANCI_SNAPSHOT = bostanciSnapshotJson as V3VerifiedRegionSnapshot;
+const KOSUYOLU_ACIBADEM_SNAPSHOT = kosuyoluAcibademSnapshotJson as V3VerifiedRegionSnapshot;
+const USKUDAR_MERKEZ_SNAPSHOT = uskudarMerkezSnapshotJson as V3VerifiedRegionSnapshot;
+const KUZGUNCUK_SNAPSHOT = kuzguncukSnapshotJson as V3VerifiedRegionSnapshot;
+const CENGELKOY_SNAPSHOT = cengelkoySnapshotJson as V3VerifiedRegionSnapshot;
 const KUSADASI_SNAPSHOT = kusadasiSnapshotJson as V3VerifiedRegionSnapshot;
 const GAZIANTEP_SNAPSHOT = gaziantepSnapshotJson as V3VerifiedRegionSnapshot;
 const ANTALYA_KALEICI_SNAPSHOT = antalyaKaleiciSnapshotJson as V3VerifiedRegionSnapshot;
@@ -33,6 +41,10 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   CADDEBOSTAN_SNAPSHOT,
   SUADIYE_SNAPSHOT,
   BOSTANCI_SNAPSHOT,
+  KOSUYOLU_ACIBADEM_SNAPSHOT,
+  USKUDAR_MERKEZ_SNAPSHOT,
+  KUZGUNCUK_SNAPSHOT,
+  CENGELKOY_SNAPSHOT,
   KUSADASI_SNAPSHOT,
   GAZIANTEP_SNAPSHOT,
   ANTALYA_KALEICI_SNAPSHOT,
@@ -57,6 +69,26 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   bostanci: BOSTANCI_SNAPSHOT,
   'bostanci-kadikoy': BOSTANCI_SNAPSHOT,
   catalcesme: BOSTANCI_SNAPSHOT,
+  'kosuyolu-acibadem': KOSUYOLU_ACIBADEM_SNAPSHOT,
+  kosuyolu: KOSUYOLU_ACIBADEM_SNAPSHOT,
+  acibadem: KOSUYOLU_ACIBADEM_SNAPSHOT,
+  'kosuyolu-kadikoy': KOSUYOLU_ACIBADEM_SNAPSHOT,
+  validebag: KOSUYOLU_ACIBADEM_SNAPSHOT,
+  uskudar: USKUDAR_MERKEZ_SNAPSHOT,
+  'merkez-uskudar': USKUDAR_MERKEZ_SNAPSHOT,
+  'uskudar-merkez': USKUDAR_MERKEZ_SNAPSHOT,
+  'istanbul-uskudar-merkez': USKUDAR_MERKEZ_SNAPSHOT,
+  salacak: USKUDAR_MERKEZ_SNAPSHOT,
+  selimiye: USKUDAR_MERKEZ_SNAPSHOT,
+  kuzguncuk: KUZGUNCUK_SNAPSHOT,
+  'kuzguncuk-uskudar': KUZGUNCUK_SNAPSHOT,
+  'istanbul-uskudar-kuzguncuk': KUZGUNCUK_SNAPSHOT,
+  icadiye: KUZGUNCUK_SNAPSHOT,
+  cengelkoy: CENGELKOY_SNAPSHOT,
+  'cengelkoy-uskudar': CENGELKOY_SNAPSHOT,
+  'istanbul-uskudar-cengelkoy': CENGELKOY_SNAPSHOT,
+  cinaralti: CENGELKOY_SNAPSHOT,
+  kuleli: CENGELKOY_SNAPSHOT,
   kusadasi: KUSADASI_SNAPSHOT,
   'kusadasi-aydin': KUSADASI_SNAPSHOT,
   'merkez-kusadasi-aydin': KUSADASI_SNAPSHOT,
@@ -123,21 +155,6 @@ export const V3_LOCATIONS: FoodLocation[] = [
 
   // SIRADAKİ DOĞRULAMA KUYRUĞU (İl > İlçe > Semt ayrıştırılmış)
   {
-    id: 'kosuyolu-kadikoy',
-    level: 'semt',
-    city: 'İstanbul',
-    district: 'Kadıköy',
-    neighborhood: 'Koşuyolu',
-    name: 'Koşuyolu',
-    slug: 'kosuyolu',
-    path: ['istanbul', 'kadikoy', 'kosuyolu'],
-    displayName: 'Koşuyolu, Kadıköy, İstanbul',
-    locative: "Koşuyolu'nda",
-    status: 'coming_soon',
-    aliases: ['Koşuyolu', 'Kosuyolu', 'Kadıköy'],
-    scopeNote: 'İstanbul · Kadıköy · Koşuyolu (V3 Doğrulama Sırasında)',
-  },
-  {
     id: 'karakoy-beyoglu',
     level: 'semt',
     city: 'İstanbul',
@@ -196,36 +213,6 @@ export const V3_LOCATIONS: FoodLocation[] = [
     status: 'coming_soon',
     aliases: ['Asmalımescit', 'Asmalimescit', 'Beyoğlu'],
     scopeNote: 'İstanbul · Beyoğlu · Asmalımescit (V3 Doğrulama Sırasında)',
-  },
-  {
-    id: 'kuzguncuk-uskudar',
-    level: 'semt',
-    city: 'İstanbul',
-    district: 'Üsküdar',
-    neighborhood: 'Kuzguncuk',
-    name: 'Kuzguncuk',
-    slug: 'kuzguncuk',
-    path: ['istanbul', 'uskudar', 'kuzguncuk'],
-    displayName: 'Kuzguncuk, Üsküdar, İstanbul',
-    locative: "Kuzguncuk'ta",
-    status: 'coming_soon',
-    aliases: ['Kuzguncuk', 'Üsküdar'],
-    scopeNote: 'İstanbul · Üsküdar · Kuzguncuk (V3 Doğrulama Sırasında)',
-  },
-  {
-    id: 'cengelkoy-uskudar',
-    level: 'semt',
-    city: 'İstanbul',
-    district: 'Üsküdar',
-    neighborhood: 'Çengelköy',
-    name: 'Çengelköy',
-    slug: 'cengelkoy',
-    path: ['istanbul', 'uskudar', 'cengelkoy'],
-    displayName: 'Çengelköy, Üsküdar, İstanbul',
-    locative: "Çengelköy'de",
-    status: 'coming_soon',
-    aliases: ['Çengelköy', 'Cengelkoy', 'Üsküdar'],
-    scopeNote: 'İstanbul · Üsküdar · Çengelköy (V3 Doğrulama Sırasında)',
   },
   {
     id: 'bebek-besiktas',

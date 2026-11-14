@@ -1,0 +1,1867 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "istanbul-kadikoy-kosuyolu-acibadem",
+  "displayName": "Koşuyolu & Acıbadem, İstanbul",
+  "verifiedAt": "2026-11-14T09:52:39.086Z",
+  "selectedCount": 26,
+  "rejectedControls": [
+    {
+      "id": "ctrl-ka-flan-closed",
+      "resolvedName": "Flân Bakery Koşuyolu",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-ka-viyana-chain",
+      "resolvedName": "Viyana Kahvesi Koşuyolu",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ka-kontrbus-chain",
+      "resolvedName": "Kontrbus Coffee Co. Koşuyolu",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ka-beyazfirin-chain",
+      "resolvedName": "Beyaz Fırın",
+      "reason": "chain_or_franchise"
+    }
+  ],
+  "venues": [
+    {
+      "id": "ka-speranza",
+      "categoryId": "pizza",
+      "resolvedName": "Speranza Pizzeria",
+      "branchName": "Acıbadem, Umut Sk. 3B, 34718 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJ-yAkVV25yhQRYYVeptmSvB8",
+      "coordinates": {
+        "lat": 40.9997097,
+        "lng": 29.036057999999997
+      },
+      "rating": 4.8,
+      "userRatingCount": 53,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2286864174294140257",
+      "recommendedPrimary": [
+        "Margherita",
+        "Burrata & Fesleğenli Pizza",
+        "Trüflü Mantarlı Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Focaccia Başlangıç & Ev Yapımı Tiramisu",
+          "note": "Ana pizza öncesi sıcak paylaşılan zeytinyağlı ekmek ve yemek sonu kahveli tatlı alternatifi.",
+          "proof": "Acıbadem sokak lezzetleri ve yerel gastronomi paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük butik iç salon ve sınırlı kaldırım masaları",
+        "crowdAndNoise": "Akşamları sakin semt müşterisiyle dolan samimi ortam",
+        "disadvantage": "Oturma kapasitesi çok sınırlı olduğu için akşam saatlerinde masa beklemek gerekebilir.",
+        "transit": "Acıbadem Umut Sokak’ta Acıbadem Metro ve Sarayardı eksenine yürüme mesafesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Acıbadem Pizza Durakları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Acıbadem arka sokaklarında ekşi maya Napoli hamuru sunan butik işletme"
+        },
+        {
+          "title": "Müdavim — Speranza Pizzeria",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur hafifliği ve taze malzeme dengesiyle mahalle içinde öne çıkıyor"
+        }
+      ],
+      "pros": [
+        "Uzun mayalı hafif hamur dokusu",
+        "Acıbadem’in sakin ara sokak konumu"
+      ],
+      "cons": [
+        "Küçük dükkan nedeniyle masa sayısı az"
+      ],
+      "uncertainties": [
+        "Yoğun akşamlarda günlük hamur stoğu erken tükenebiliyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-pizzav",
+      "categoryId": "pizza",
+      "resolvedName": "Pizza V Koşuyolu",
+      "branchName": "Elysium Elit, Acıbadem, Şeyh Galip Sk. A No:2B, 34718 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJe56lspy5yhQRcNDTZiAACCU",
+      "coordinates": {
+        "lat": 41.006017799999995,
+        "lng": 29.037816399999993
+      },
+      "rating": 4.5,
+      "userRatingCount": 218,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": false
+      },
+      "websiteUri": "https://linktr.ee/pizzav",
+      "mapsUri": "https://maps.google.com/?cid=2668382918381129840",
+      "recommendedPrimary": [
+        "Bresaola & Roka Pizza",
+        "Füme Kaburgalı Pizza",
+        "Margherita"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çikolata Kremalı Tatlı Calzone",
+          "note": "Yemek sonunda paylaşım için tercih edilen sıcak fırın tatlısı.",
+          "proof": "pizzav.com.tr menüsü ve semt değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Konforlu iç salon ve açık teras/bahçe masaları",
+        "crowdAndNoise": "Ailelere ve arkadaş gruplarına uygun düzenli restoran atmosferi",
+        "disadvantage": "Çarşı ve ana caddelere göre site-sokak yerleşimi içinde kaldığından yokuş yürüyüşü gerektirir.",
+        "transit": "Acıbadem Metro ve Koşuyolu Şeyh Galip Sokak aksında kısa yürüyüş mesafesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Pizza V Resmi Sitesi",
+          "url": "https://pizzav.com.tr/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Koşuyolu-Acıbadem şubesi ve artizan pizza menüsü"
+        },
+        {
+          "title": "Müdavim — Pizza V Koşuyolu",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İnce çıtır kenarı ve kaliteli İtalyan şarküteri seçkisiyle beğeniliyor"
+        },
+        {
+          "title": "ExploreKadikoy — Koşuyolu Yeme-İçme",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Acıbadem-Koşuyolu sınırındaki oturmalı pizza durağı"
+        }
+      ],
+      "pros": [
+        "Geniş oturma düzeni",
+        "Tuzlu pizzalar yanında tatlı calzone seçeneği"
+      ],
+      "cons": [
+        "Ana toplu taşıma duraklarından kısa yokuş çıkışı"
+      ],
+      "uncertainties": [
+        "Hafta sonları aile grupları nedeniyle servis süresi uzayabilir."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-rosario",
+      "categoryId": "pizza",
+      "resolvedName": "Rosario",
+      "branchName": "Koşuyolu mah. Kalfaçeşme Sk. No:22, Koşuyolu, 34718 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJk5f4XQG4yhQR5mAfaIclBak",
+      "coordinates": {
+        "lat": 41.010835799999995,
+        "lng": 29.0404183
+      },
+      "rating": 4.3,
+      "userRatingCount": 1410,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.rosariorestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=12179182030791074022",
+      "recommendedPrimary": [
+        "Odun Fırını Diavola Pizza",
+        "Burrata & Domates Soslu Pizza",
+        "Quattro Formaggi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Yapımı Taze Makarnalar & Klasik Tiramisu",
+          "note": "Pizza dışında akşam buluşmalarında sıkça seçilen ev yapımı fettuccine çeşitleri ve tiramisu.",
+          "proof": "rosario.com.tr menüsü ve Koşuyolu müdavim paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Müstakil köşk içi salon ve yeşil ön bahçe oturma düzeni",
+        "crowdAndNoise": "Akşamları çiftler ve gruplarla hareketli mahalle trattoria havası",
+        "disadvantage": "Hafta sonu akşamları bahçede rezervasyonsuz yer bulmak zor olabiliyor ve dar sokakta park yeri kısıtlı.",
+        "transit": "Koşuyolu Kalfaçeşme Sokak’ta Ayrılık Çeşmesi Metro durağına yürüme mesafesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Anadolu Yakası İtalyan Restoranları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Koşuyolu köşk bahçesinde odun fırını pizza ve taze makarna geleneği"
+        },
+        {
+          "title": "Ekşi Sözlük — Rosario Koşuyolu",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur kıvamı, makarnaları ve bahçe atmosferiyle semt klasiği"
+        }
+      ],
+      "pros": [
+        "Müstakil Koşuyolu bahçesi",
+        "Hem odun fırını pizza hem akşam yemeğine uygun makarna menüsü"
+      ],
+      "cons": [
+        "Hafta sonu rezervasyon ihtiyacı ve sokak içi otopark sıkıntısı"
+      ],
+      "uncertainties": [
+        "Bahçe kullanımı yağışlı havalarda tente ile sınırlanabilir."
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-brand-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Brand Burger",
+      "branchName": "Brand Burger, Acıbadem, Sarayardı Cd. No:45, 34718 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJSfJYrRW5yhQRVLie-1lrDXg",
+      "coordinates": {
+        "lat": 40.9953254,
+        "lng": 29.038370200000003
+      },
+      "rating": 4.6,
+      "userRatingCount": 1191,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "https://siparis.brandburger.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=8650688493466335316",
+      "recommendedPrimary": [
+        "Brand Special Burger",
+        "Füme Etli Cheeseburger",
+        "Trüflü Mantarlı Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Baharatlı İnce Patates & Soğan Halkası",
+          "note": "Burger yanında sıcak ve çıtır paylaşımlık olarak öne çıkan yan lezzetler.",
+          "proof": "Acıbadem burger değerlendirmeleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Rahat iç salon ve cadde önü küçük masalar",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde yüksek paket ve masa sirkülasyonu",
+        "disadvantage": "Akşam yemek saatlerinde kurye yoğunluğu nedeniyle masa siparişlerinin hazırlanması biraz uzayabiliyor.",
+        "transit": "Acıbadem Sarayardı Caddesi üzerinde Tepe Nautilus ve Ayrılık Çeşmesi hattına yakın."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Harbiyiyorum — Acıbadem Burger Rehberi",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sarayardı Caddesi’nde et lezzeti ve köfte sululuğuyla öne çıkan yerel marka"
+        },
+        {
+          "title": "Müdavim — Brand Burger Acıbadem",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yüksek puan istikrarını koruyan Acıbadem burgercisi"
+        }
+      ],
+      "pros": [
+        "Yüksek müdavim memnuniyeti",
+        "Günlük taze çekim köfte ve brioche uyumu"
+      ],
+      "cons": [
+        "Yoğun paket servis saatlerinde bekleme süresi"
+      ],
+      "uncertainties": [
+        "Dönemsel özel sos seçenekleri değişiklik gösterebilir."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-chunky",
+      "categoryId": "hamburger",
+      "resolvedName": "Chunky Smash Burger",
+      "branchName": "Koşuyolu, Muhittin Üstündağ Cd. NO:65 D:1, 34718 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJB_3gvf25yhQRVUOXiqv8UPs",
+      "coordinates": {
+        "lat": 41.0093198,
+        "lng": 29.040113800000004
+      },
+      "rating": 4.5,
+      "userRatingCount": 246,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18109251915351540565",
+      "recommendedPrimary": [
+        "Chunky Double Smash",
+        "Trüflü Smash Burger",
+        "Acılı Jalapeno Smash"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Cheddar Soslu Patates & Milkshake",
+          "note": "Smash burger menüsünü tamamlayan çıtır patates kızartması ve soğuk milkshake çeşitleri.",
+          "proof": "Koşuyolu sokak lezzetleri seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük iç salon, cadde kenarı masalar ve al-götür düzeni",
+        "crowdAndNoise": "Akşamları hareketli genç semt atmosferi",
+        "disadvantage": "Küçük dükkan kapasitesi ve Muhittin Üstündağ Caddesi’ndeki park yeri darlığı nedeniyle uzun oturuma elverişli değil.",
+        "transit": "Koşuyolu Muhittin Üstündağ Caddesi’nde Ayrılık Çeşmesi Metro’ya yürüyüş mesafesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Harbiyiyorum — Anadolu Yakası Smash Burgercileri",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Dantel kenarlı smash köfte tekniğiyle Koşuyolu’nun bilinen adresi"
+        },
+        {
+          "title": "Müdavim — Chunky Smash Burger",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ekmek-köfte oranı ve sos dengesiyle tercih ediliyor"
+        }
+      ],
+      "pros": [
+        "Gerçek döküm plaka smash tekniği",
+        "Koşuyolu merkezinde kolay yürüme erişimi"
+      ],
+      "cons": [
+        "Küçük oturma alanı"
+      ],
+      "uncertainties": [
+        "Akşam saatlerinde popüler soslar erken tükenebiliyor."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-hangry21",
+      "categoryId": "hamburger",
+      "resolvedName": "Hangry21 Chicken Burger",
+      "branchName": "Acıbadem, Acıbadem Cd. no:129/1, 34674 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJpc-4LdPHyhQRCllm_ef414Q",
+      "coordinates": {
+        "lat": 41.0072299,
+        "lng": 29.048148299999998
+      },
+      "rating": 4.5,
+      "userRatingCount": 467,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": "https://www.instagram.com/hangry.21/",
+      "mapsUri": "https://maps.google.com/?cid=9572393208271755530",
+      "recommendedPrimary": [
+        "Acılı Nashville Chicken Burger",
+        "Honey Mustard Çıtır Tavuk",
+        "Klasik Buttermilk Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çıtır Tenders & Coleslaw",
+          "note": "Burger dışında tek porsiyon veya paylaşımlık tercih edilen kızarmış tavuk şeritleri.",
+          "proof": "Acıbadem Caddesi mekan menüsü ve müdavim notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Modern sokak dükkanı düzeninde masa ve paket servis",
+        "crowdAndNoise": "Özellikle akşamüstü ve geceye kadar genç kitleyle canlı",
+        "disadvantage": "Tamamen tavuk burger odaklıdır; klasik kırmızı et hamburger arayanlara uygun alternatif sunmaz.",
+        "transit": "Acıbadem Caddesi’nin Dörtyol-Üsküdar aksı üzerinde otobüs ve minibüs hattında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Anadolu Yakası Tavuk Burgercileri",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Acıbadem’de çıtır buttermilk tavuk burger konseptiyle öne çıkan mekan"
+        },
+        {
+          "title": "Müdavim — Hangry21 Acıbadem",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Dışı çıtır içi sulu tavuk dokusu ve baharat dengesiyle beğeniliyor"
+        }
+      ],
+      "pros": [
+        "Çıtır tavuk marinasyon kalitesi",
+        "Kırmızı et dışında güçlü gurme burger alternatifi"
+      ],
+      "cons": [
+        "Klasik dana köfte seçenekleri bulunmuyor"
+      ],
+      "uncertainties": [
+        "Acı seviyesi seçilen sosa göre yüksek olabiliyor."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-burgerist",
+      "categoryId": "hamburger",
+      "resolvedName": "Burgerist Acıbadem",
+      "branchName": "Acıbadem, Umut Sk. No:1, 34718 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJfV-B7R25yhQRrXI3xJlXS0g",
+      "coordinates": {
+        "lat": 40.99948010000001,
+        "lng": 29.036176800000003
+      },
+      "rating": 4.9,
+      "userRatingCount": 141,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.burgerist.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=5209353711917691565",
+      "recommendedPrimary": [
+        "Burgerist Special",
+        "Karamelize Soğanlı Cheeseburger",
+        "Double Smash"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çıtır Soğan Halkası & Sarımsaklı Dip Sos",
+          "note": "Burger menüsünün yanında taze kızartılarak sunulan sıcak yan atıştırmalık.",
+          "proof": "Acıbadem yerel gastronomi paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sınırlı iç masa ve hızlı sokak önü servisi",
+        "crowdAndNoise": "Çevre sakinleri ve öğrencilerle samimi semt temposu",
+        "disadvantage": "Küçük metrekareli butik bir işletme olduğu için büyük gruplarla aynı anda oturmak zordur.",
+        "transit": "Acıbadem Umut Sokak’ta metro durağına yürüyerek kolay erişilebilir."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Acıbadem Lezzet Rotası",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Küçük ama köfte ve ekmek tazeliğiyle öne çıkan butik adres"
+        },
+        {
+          "title": "Müdavim — Burgerist Acıbadem",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Fiyat-kalite dengesi ve sıcak servisiyle mahalle müdavimlerinin favorilerinden"
+        }
+      ],
+      "pros": [
+        "Taze günlük ekmek ve köfte uyumu",
+        "Sakin sokak konumu"
+      ],
+      "cons": [
+        "Grup oturumu için küçük kapasite"
+      ],
+      "uncertainties": [
+        "Yeni ve görece az değerlendirmeli bir butik işletme olduğu için uzun vadeli hacim istikrarı izlenmektedir."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-null-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Null Coffee Roasters",
+      "branchName": "Acıbadem, Ata Sk. No:10/B, 34718 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJAft9Qw24yhQRiUotTZWZB60",
+      "coordinates": {
+        "lat": 40.9979824,
+        "lng": 29.035276699999997
+      },
+      "rating": 4.2,
+      "userRatingCount": 366,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.null.coffee/",
+      "mapsUri": "https://maps.google.com/?cid=12468102959922498185",
+      "recommendedPrimary": [
+        "Tek Kökenli V60 Pour-Over",
+        "Flat White",
+        "Batch Brew Filtre"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Paket Çekirdek & Ev Demleme Ekipmanları",
+          "note": "Mekanda tadılan Afrika ve Latin Amerika lotlarını taze öğütülmüş veya çekirdek olarak eve alma imkanı.",
+          "proof": "null.coffee resmi kataloğu ve kahve topluluğu değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sade tadım barı ve sokak önü kompakt oturma düzeni",
+        "crowdAndNoise": "Kahve meraklıları ve çekirdek almaya gelen müdavimlerle dingin ortam",
+        "disadvantage": "Uzun süre dizüstü bilgisayarla çalışma veya geniş pasta menüsü arayanlar için tasarlanmamıştır; odak doğrudan kahve kalitesidir.",
+        "transit": "Acıbadem Ata Sokak’ta metro ve İbrahimağa eksenine birkaç dakikalık yürüme mesafesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Null Coffee Roasters Resmi Sitesi",
+          "url": "https://null.coffee/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Acıbadem kavurmahanesi, lot seçkisi ve demleme rehberi"
+        },
+        {
+          "title": "Oggusto — İstanbul Nitelikli Kahve Kavurmahaneleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Üçüncü dalga kahve kültürünün köklü temsilcilerinden"
+        },
+        {
+          "title": "Ekşi Sözlük — Null Coffee",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Açık kavrum profilleri ve filtre kahve tutarlılığıyla biliniyor"
+        }
+      ],
+      "pros": [
+        "Türkiye’nin öncü özel nitelikli kavurmahanelerinden",
+        "Her hasatta özenle seçilmiş tek kökenli çekirdekler"
+      ],
+      "cons": [
+        "Geniş oturma salonu ve yiyecek çeşitliliği sınırlı"
+      ],
+      "uncertainties": [
+        "Dönemsel mikro lot çekirdekler stokla sınırlıdır."
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-kaffee-schutz",
+      "categoryId": "kahve",
+      "resolvedName": "Kaffee Schütz Koşuyolu",
+      "branchName": "Koşuyolu, Koşuyolu Cd. No:80, 34718 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJU3wLFQS5yhQR_iyf05lUicE",
+      "coordinates": {
+        "lat": 41.009439,
+        "lng": 29.036824
+      },
+      "rating": 4.6,
+      "userRatingCount": 292,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": "https://www.schutz.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=13945770740786605310",
+      "recommendedPrimary": [
+        "Flat White",
+        "Iced Latte",
+        "Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kruvasan Sandviç & San Sebastian Cheesecake",
+          "note": "Bahçe masalarında kahve eşliğinde en sık tercih edilen taze fırın tatlısı ve sandviçler.",
+          "proof": "Koşuyolu semt rehberleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç salon ve yeşil Koşuyolu bahçe oturma alanı",
+        "crowdAndNoise": "Hafta içi bilgisayarlı çalışanlar ve hafta sonu semt sakinleriyle dengeli atmosfer",
+        "disadvantage": "Bahçe masaları güzel havalarda çabuk doluyor; ana çarşı aksına göre yokuş çıkışı gerektirir.",
+        "transit": "Koşuyolu Caddesi No:80 adresinde Ayrılık Çeşmesi Metro durağına yaklaşık 10 dakikalık yürüyüş."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Koşuyolu Kahve Rehberi",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Koşuyolu’nun geniş bahçeli nitelikli kahve ve tatlı durağı"
+        },
+        {
+          "title": "Ekşi Sözlük — Kaffee Schütz",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bahçe atmosferi, masa düzeni ve kahve kalitesiyle öne çıkıyor"
+        }
+      ],
+      "pros": [
+        "Ağaçlıklı ferah Koşuyolu bahçesi",
+        "Rahat oturma ve çalışma masaları"
+      ],
+      "cons": [
+        "Güzel havalarda bahçede yer bulmak güçleşebiliyor"
+      ],
+      "uncertainties": [
+        "Günlük tatlı vitrini günün saatine göre güncellenir."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-hane-cikolata",
+      "categoryId": "kahve",
+      "resolvedName": "Hane Çikolata & Kahve",
+      "branchName": "Acıbadem, Acıbadem Cd. No:119 D:C, 34660 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJE--hPDPHyhQR8bHeOjJ8bqw",
+      "coordinates": {
+        "lat": 41.0066757,
+        "lng": 29.046941000000004
+      },
+      "rating": 4.5,
+      "userRatingCount": 479,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://hanecikolatavekahve.com/subeler/",
+      "mapsUri": "https://maps.google.com/?cid=12425004977139659249",
+      "recommendedPrimary": [
+        "Bitter Sıcak Çikolata",
+        "Cortado",
+        "Americano"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Yapımı Pralin & Meyveli Çikolata Tabakları",
+          "note": "Kahve siparişlerinin yanında hediyelik veya masada paylaşım için alınan taze artizan çikolatalar.",
+          "proof": "Acıbadem semt rehberleri ve vitrin seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Şık butik iç salon ve cadde üstü sınırlı masa düzeni",
+        "crowdAndNoise": "Akşamüstü ve hafta sonu tatlı-kahve molası veren çiftlerle yoğun",
+        "disadvantage": "Ana odak çikolata ve tatlı eşleşmeleri olduğundan sessiz çalışma kafesi atmosferi sunmaz.",
+        "transit": "Acıbadem Caddesi No:119 üzerinde Dörtyol durağına çok yakın konumda."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Acıbadem Tatlı ve Kahve Mekanları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Artizan çikolata yapımı ile kahve servisini birleştiren semt noktası"
+        },
+        {
+          "title": "Müdavim — Hane Çikolata & Kahve",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çikolata tazeliği ve güleryüzlü sunumuyla beğeniliyor"
+        }
+      ],
+      "pros": [
+        "Günlük taze artizan çikolata çeşitliliği",
+        "Kahve ve çikolata uyumu"
+      ],
+      "cons": [
+        "Küçük oturma alanı ve cadde trafiği"
+      ],
+      "uncertainties": [
+        "Özel hediyelik kutular akşam saatlerinde tükenebilir."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-no159-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "No:159 Coffee",
+      "branchName": "Acıbadem, Acıbadem Cd. No:159/D, 34660 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJ45iU2cLJyhQR7bmKM4wOwDM",
+      "coordinates": {
+        "lat": 41.011664599999996,
+        "lng": 29.052555500000004
+      },
+      "rating": 4.3,
+      "userRatingCount": 230,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3728996486785710573",
+      "recommendedPrimary": [
+        "Flat White",
+        "Iced Americano",
+        "V60 Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Havlu/Banana Bread & Fırın Kurabiyeleri",
+          "note": "Sabah ve öğleden sonra kahvesine eşlik eden az şekerli günlük fırın dilimleri.",
+          "proof": "Acıbadem kahve durakları yerel notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt iç oturma düzeni, kaldırım tabureleri ve gel-al servisi",
+        "crowdAndNoise": "Semtin yerel sakinleriyle sakin mahalle temposu",
+        "disadvantage": "Büyük gruplar için masa imkanı dar; kaldırım cephesi cadde trafiğine yakındır.",
+        "transit": "Acıbadem Caddesi No:159 üzerinde Çamlıca-Üsküdar yönü duraklarına yürüme mesafesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Müdavim — No:159 Coffee Acıbadem",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Üst Acıbadem hattında taze espresso ve sıcak mahalle iletişimiyle biliniyor"
+        },
+        {
+          "title": "ExploreKadikoy — Acıbadem Kahve Rotası",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Zincir kalabalığından kaçan butik kahve durağı"
+        }
+      ],
+      "pros": [
+        "Zincir dışı temiz üçüncü nesil kahve barı",
+        "Hızlı gel-al erişimi"
+      ],
+      "cons": [
+        "Sınırlı iç oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Sezonsal tatlı çeşitleri günlük fırın üretimine göre değişir."
+      ],
+      "selectionScore": 82,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-kaen-sushi",
+      "categoryId": "date",
+      "resolvedName": "Kaen Sushi",
+      "branchName": "Koşuyolu, Asmadalı Sk. No:6, 34718 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJ06soIi-5yhQR45Km4HcjJ2Q",
+      "coordinates": {
+        "lat": 41.0076289,
+        "lng": 29.038113799999998
+      },
+      "rating": 4.5,
+      "userRatingCount": 3507,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://kaensushi.com/",
+      "mapsUri": "https://maps.google.com/?cid=7216775925661602531",
+      "recommendedPrimary": [
+        "Kaen Signature Roll",
+        "Somon Sashimi & Nigiri",
+        "Tempura Karides"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Gyoza Mantı & Kızarmış Muz / Matcha Tatlısı",
+          "note": "Suşi tabakları öncesinde paylaşılan sıcak başlangıç ve hafif Uzak Doğu tatlı kapanışı.",
+          "proof": "kaensushi.com menüsü ve İstanbul Asya mutfağı seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tam masa servisli loş iç salon ve bahçe bölümü (akşamları rezervasyon gerekir)",
+        "crowdAndNoise": "Hafta içi ve hafta sonu akşamları hareketli ve şık yemek ortamı",
+        "disadvantage": "Üst-orta bütçe seviyesindedir; hafta sonları rezervasyonsuz yer bulmak zordur ve sokak içinde vale/trafik yoğunlaşabilir.",
+        "transit": "Koşuyolu Asmadalı Sokak’ta Koşuyolu Parkı ve ana caddeye birkaç adımlık mesafede."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Kaen Sushi Resmi Sitesi",
+          "url": "https://kaensushi.com/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Koşuyolu merkez şubesi ve imza roll seçkisi"
+        },
+        {
+          "title": "Oggusto — İstanbul’daki Suşi Restoranları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Anadolu Yakası’nda taze malzeme standartıyla öne çıkan Uzak Doğu restoranı"
+        },
+        {
+          "title": "Ekşi Sözlük — Kaen Sushi Koşuyolu",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Özel roll çeşitleri ve kalabalık akşam temposuyla klasikleşmiş adres"
+        }
+      ],
+      "pros": [
+        "Tutarlı balık tazeliği ve yaratıcı roll menüsü",
+        "Koşuyolu’nun atmosferli sokak içi konumu"
+      ],
+      "cons": [
+        "Üst-orta fiyat seviyesi ve rezervasyon zorunluluğu"
+      ],
+      "uncertainties": [
+        "Akşam servisinde masa kalış süreleri yoğun günlerde sınırlanabilir."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-charla",
+      "categoryId": "date",
+      "resolvedName": "Charla Acıbadem",
+      "branchName": "Acıbadem, Acıbadem Cd. No:190, 34660 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJp-dFRCvHyhQR60_FhToammQ",
+      "coordinates": {
+        "lat": 41.0103576,
+        "lng": 29.051924
+      },
+      "rating": 4.7,
+      "userRatingCount": 318,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.charla.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=7249135388860960747",
+      "recommendedPrimary": [
+        "Ağır Ateş Dana Yanak",
+        "Odun Ateşi Karides & Başlangıçlar",
+        "Ev Yapımı Makarna"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Tatlıları & İmza Kokteyller",
+          "note": "Akşam buluşmasını uzatan paylaşımlı tatlı ve içecek eşleşmeleri.",
+          "proof": "Acıbadem gastronomi paylaşımları ve mekan vitrini"
+        }
+      ],
+      "suitability": {
+        "seating": "Tasarım odaklı iç salon ve cadde üstü veranda masaları",
+        "crowdAndNoise": "Çiftler ve sakin sohbet arayan yetişkin misafirlerle şık tempo",
+        "disadvantage": "Hafta sonu akşamlarında rezervasyon gerektirir; üst Acıbadem hattında araç parkı sınırlıdır.",
+        "transit": "Acıbadem Caddesi No:190’da Çamlıca kavşağı ve metro bağlantısına yakın."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Acıbadem Yeni Nesil Bistro Durakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Paylaşımlı modern mutfak tabakları ve sıcak atmosferiyle öne çıkıyor"
+        },
+        {
+          "title": "Müdavim — Charla Acıbadem",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Özenli servisi ve tabak sunumlarıyla yüksek puan alıyor"
+        }
+      ],
+      "pros": [
+        "Sakin ve şık bistro tasarımı",
+        "Özenli pişirme teknikleri ve servis kalitesi"
+      ],
+      "cons": [
+        "Hafta sonu akşamları yer bulmak için ön rezervasyon şart"
+      ],
+      "uncertainties": [
+        "Menü dönemsel mevsim ürünlerine göre yenilenir."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-nou94",
+      "categoryId": "date",
+      "resolvedName": "Nou94 Koşuyolu",
+      "branchName": "Koşuyolu, Koşuyolu Cd. No:94, 34718 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJHWW1FwC5yhQRiLBRvLiYWNA",
+      "coordinates": {
+        "lat": 41.009066,
+        "lng": 29.036550899999998
+      },
+      "rating": 4.4,
+      "userRatingCount": 332,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.nou94kosuyolu.com/",
+      "mapsUri": "https://maps.google.com/?cid=15012917277040423048",
+      "recommendedPrimary": [
+        "Dana Bonfile & Püre",
+        "Somon Tataki veya Deniz Ürünleri",
+        "El Yapımı Ravioli"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Çikolatalı Sufle / Tiramisu & Kokteyl",
+          "note": "Yemek sonrası bahçede geçirilen akşam saatlerini tamamlayan tatlı ve bar eşleşmesi.",
+          "proof": "nou94.com ve Koşuyolu semt değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaçlıklı ön ve arka bahçe masaları ile kapalı köşk salonu",
+        "crowdAndNoise": "Özel akşam buluşmaları ve kutlamalar için tercih edilen özenli ortam",
+        "disadvantage": "Bölgedeki esnaf duraklarına kıyasla bütçe seviyesi yüksektir; bahçe masaları akşamları hızla dolmaktadır.",
+        "transit": "Koşuyolu Caddesi No:94 üzerinde Koşuyolu Parkı’na yakın yürüyüş hattında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Koşuyolu Akşam Mekanları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Köşk bahçesinde dünya mutfağı ve akşam servisi sunan adres"
+        },
+        {
+          "title": "Müdavim — Nou94 Koşuyolu",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bahçe atmosferi ve sunum kalitesiyle övülüyor"
+        }
+      ],
+      "pros": [
+        "Ferah ve romantik köşk bahçesi",
+        "Sabah-akşam geniş servis yelpazesi"
+      ],
+      "cons": [
+        "Üst-orta fiyat bandı"
+      ],
+      "uncertainties": [
+        "Akşam saatlerinde müzik sesi canlılaşabilir."
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-radika",
+      "categoryId": "date",
+      "resolvedName": "Koşuyolu Radika Restaurant",
+      "branchName": "Koşuyolu, Kalfa Çeşmesi Sk. No:30, 34718 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJw94ppRG4yhQRLyou4kSn_l8",
+      "coordinates": {
+        "lat": 41.0104011,
+        "lng": 29.040869799999996
+      },
+      "rating": 4,
+      "userRatingCount": 1081,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://q-r.ltd/a8920",
+      "mapsUri": "https://maps.google.com/?cid=6917149991981951535",
+      "recommendedPrimary": [
+        "Radika Salatası & Girit Ezmesi",
+        "Ahtapot Izgara",
+        "Yaprak Ciğer veya Mevsim Balığı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırınlanmış Tahinli Helva veya Sakızlı Muhallebi",
+          "note": "Meze ve balık sofrasının ardından masada paylaşılan geleneksel tatlı kapanışı.",
+          "proof": "radika.com.tr menüsü ve İstanbul meyhane rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaçlıklı avlu bahçe ve sıcak ahşap dekorlu iç salon (akşam rezervasyon önerilir)",
+        "crowdAndNoise": "Uzun sohbetli klasik Ege sofrası seven yetişkin müdavimler",
+        "disadvantage": "Kalabalık akşamlarda yüksek masa yoğunluğu ve üst-orta hesap seviyesi oluşabiliyor.",
+        "transit": "Koşuyolu Kalfa Çeşmesi Sokak No:30’da Ayrılık Çeşmesi hattından yürüyüşle erişilebilir."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "The Magger — İstanbul Ege Meyhaneleri",
+          "url": "https://www.themagger.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Koşuyolu’nun Ege otları ve taze deniz mezeleriyle tanınan yerleşik kurumu"
+        },
+        {
+          "title": "Ekşi Sözlük — Koşuyolu Radika",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Meze tazeliği ve bahçeli sakin yapısıyla uzun yıllardır beğeniliyor"
+        }
+      ],
+      "pros": [
+        "Gerçek Ege otları ve mevsiminde deniz ürünleri",
+        "Huzurlu Koşuyolu bahçe dokusu"
+      ],
+      "cons": [
+        "Üst-orta meyhane bütçesi ve yoğun akşamlarda gürültü"
+      ],
+      "uncertainties": [
+        "Balık ve ot çeşitleri günlük pazar tedarikine göre değişir."
+      ],
+      "selectionScore": 73,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-ceviz-agaci",
+      "categoryId": "kahvalti",
+      "resolvedName": "Ceviz Ağacı Koşuyolu",
+      "branchName": "Koşuyolu, Muhittin Üstündağ Cd. No:85, 34718 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJvWLxABC4yhQR18HEIfLcjjc",
+      "coordinates": {
+        "lat": 41.0100207,
+        "lng": 29.041107799999995
+      },
+      "rating": 4.1,
+      "userRatingCount": 15046,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://cevizagaci.com/",
+      "mapsUri": "https://maps.google.com/?cid=4003380051285688791",
+      "recommendedPrimary": [
+        "Koşuyolu Kahvaltı Tabağı",
+        "Sucuklu / Kavurmalı Yumurta",
+        "Fıstıklı Çilekli Pasta"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fıstıklı Milföy & Çilekli Özel Pasta Dilimleri",
+          "note": "Kahvaltı veya çay saatinde doğrudan pastane vitrininden seçilen imza tatlılar.",
+          "proof": "cevizagaci.com ve Koşuyolu müdavim paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Çok katlı geniş salon, bahçe terası ve paket pastane bölümü",
+        "crowdAndNoise": "Hafta sonları İstanbul’un dört bir yanından gelen ziyaretçilerle oldukça kalabalık",
+        "disadvantage": "Hafta sonu sabahları kapıda bekleme sırası ve yoğun gürültülü salon temposu yaşanabilir; sakin mahalle kahvaltısı arayanları yorabilir.",
+        "transit": "Koşuyolu Muhittin Üstündağ Caddesi No:85’te park ve cadde kavşağında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Ceviz Ağacı Resmi Sitesi",
+          "url": "https://www.cevizagaci.com/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Koşuyolu merkez şubesi, kahvaltı menüsü ve pastane vitrini"
+        },
+        {
+          "title": "Oggusto — Koşuyolu Kahvaltı Durakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Semtin simgeleşmiş kahvaltı ve pastane kurumu"
+        },
+        {
+          "title": "Ekşi Sözlük — Ceviz Ağacı Koşuyolu",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Pastalarının tazeliği övülürken hafta sonu aşırı kalabalığı sıkça eleştiriliyor"
+        }
+      ],
+      "pros": [
+        "Koşuyolu’nun en tanınan semt klasiği",
+        "Taze pasta ve börek vitriniyle kahvaltıyı birleştirmesi"
+      ],
+      "cons": [
+        "Hafta sonları yoğun gürültü ve kapıda masa sırası"
+      ],
+      "uncertainties": [
+        "Açık büfe veya tabak servis formatı hafta içi/sonu göre farklılık gösterebilir."
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-kuzguncuk-firini-acibadem",
+      "categoryId": "kahvalti",
+      "resolvedName": "Tarihi Kuzguncuk Fırını Acıbadem",
+      "branchName": "Acıbadem, Acıbadem Cd. No:137, 34000 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJYc0bZgDHyhQRz4HUndXFj1o",
+      "coordinates": {
+        "lat": 41.009301699999995,
+        "lng": 29.0505286
+      },
+      "rating": 4.8,
+      "userRatingCount": 691,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6525651906349793743",
+      "recommendedPrimary": [
+        "Fırın Serpme veya Tabak Kahvaltı",
+        "Su Böreği & Açma",
+        "Poşe Yumurtalı Tost"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mantar Kurabiye & Prenses Tatlısı",
+          "note": "Kahvaltı çıkışında mutlaka paket yaptırılan köklü fırının imza pastane klasikleri.",
+          "proof": "Acıbadem Caddesi mekan menüsü ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç kafe salonu, cadde masaları ve fırın vitrin bölümü",
+        "crowdAndNoise": "Sabah fırın alışverişi yapan semt sakinleri ve kahvaltı gruplarıyla canlı",
+        "disadvantage": "Hafta sonu sabahları cadde üzerindeki masalar hızla dolduğu için servis temposu yoğunlaşabiliyor.",
+        "transit": "Acıbadem Caddesi No:137 üzerinde üst Acıbadem-Üsküdar aksında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Acıbadem Kahvaltı ve Fırın Durakları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Acıbadem Caddesi üzerinde fırın geleneğiyle öne çıkan yüksek puanlı kahvaltıcı"
+        },
+        {
+          "title": "Müdavim — Tarihi Kuzguncuk Fırını Acıbadem",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahvaltı çeşitleri ve kurabiye tazeliğiyle övgü topluyor"
+        }
+      ],
+      "pros": [
+        "Yüksek müşteri memnuniyeti",
+        "Kahvaltı ve taze pastane kurabiyelerinin aynı çatı altında olması"
+      ],
+      "cons": [
+        "Hafta sonu cadde içi park ve yoğunluk"
+      ],
+      "uncertainties": [
+        "Bazı klasik kurabiye çeşitleri öğleden sonra tükenebilir."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-kirpi",
+      "categoryId": "kahvalti",
+      "resolvedName": "Kirpi Koşuyolu",
+      "branchName": "Koşuyolu, Mehmet Akfan Sokağı No:31, 34718 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJczu2twW4yhQRPKX15lxloYs",
+      "coordinates": {
+        "lat": 41.0089809,
+        "lng": 29.0405192
+      },
+      "rating": 4.2,
+      "userRatingCount": 4147,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.kirpicafe.com/",
+      "mapsUri": "https://maps.google.com/?cid=10061434492208653628",
+      "recommendedPrimary": [
+        "Kirpi Kahvaltı Tabağı",
+        "Sucuklu Menemen",
+        "Sıcak Pişi & Peynir Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kirpi Burger veya Fırın Sütlaç / San Sebastian",
+          "note": "Kahvaltı dışındaki öğle-akşam saatlerinde mutfağın diğer popüler seçimleri.",
+          "proof": "kirpi.com.tr ve Koşuyolu rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş tenteli bahçe, kış bahçesi ve iki katlı iç salon",
+        "crowdAndNoise": "Aileler ve kalabalık arkadaş gruplarıyla her gün hareketli ortam",
+        "disadvantage": "Çok popüler saatlerde servis beklentisinin uzaması ve yüksek masa yoğunluğu sık paylaşılan bir eksidir.",
+        "transit": "Koşuyolu Mehmet Akfan Sokak No:31’de Koşuyolu Parkı paralelinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Kirpi Resmi Sitesi",
+          "url": "https://www.kirpi.com.tr/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Koşuyolu şubesi kahvaltı ve gün boyu yemek menüsü"
+        },
+        {
+          "title": "Oggusto — Koşuyolu Bahçeli Mekanlar",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Müstakil köşk bahçesiyle kahvaltı ve hafta sonu buluşmalarının bilinen adresi"
+        },
+        {
+          "title": "Ekşi Sözlük — Kirpi Koşuyolu",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bahçe ferahlığı beğenilirken yoğun saatlerde servis hızı zaman zaman eleştiriliyor"
+        }
+      ],
+      "pros": [
+        "Dört mevsim kullanılabilen geniş bahçe",
+        "Kalabalık gruplara uygun kapasite"
+      ],
+      "cons": [
+        "Yoğun saatlerde yavaşlayabilen servis ve yüksek fiyat algısı"
+      ],
+      "uncertainties": [
+        "Kahvaltı servis saati hafta içi ve sonu esneyebilir."
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-gorgulu",
+      "categoryId": "kahvalti",
+      "resolvedName": "Görgülü Pastane ve Restaurant",
+      "branchName": "Acıbadem, Acıbadem Cd. No:94, 34718 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJkX2acQi4yhQRN5Aj4rAV-N0",
+      "coordinates": {
+        "lat": 40.999237,
+        "lng": 29.03874
+      },
+      "rating": 4.1,
+      "userRatingCount": 1528,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.gorgulupasta.com/",
+      "mapsUri": "https://maps.google.com/?cid=15994557926058725431",
+      "recommendedPrimary": [
+        "Kıymalı & Peynirli Su Böreği",
+        "Klasik Kahvaltı Tabağı",
+        "Dereotlu Poğaça & Açma"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Klasik Kuru Pasta & Meyveli Turta / Ekler",
+          "note": "Acıbadem’de misafirliğe giderken alınan nostaljik pastane kutu çeşitleri.",
+          "proof": "Acıbadem yerel kültür arşivleri ve müdavim paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç salon, bahçe bölümü ve ayrı pastane vitrini",
+        "crowdAndNoise": "Sabahları semt sakinleri ve ailelerle samimi, nostaljik atmosfer",
+        "disadvantage": "Modern brunch/kruvasan kafeleri yerine klasik geleneksel pastane servis düzeni ve nostaljik çizgisiyle hizmet verir.",
+        "transit": "Acıbadem Caddesi No:94’te Tepe Nautilus ve Acıbadem köprüsü arasında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Harbiyiyorum — İstanbul’un Eski Mahalle Pastaneleri",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Acıbadem’de nesillerdir su böreği ve klasik kahvaltı sunan köklü işletme"
+        },
+        {
+          "title": "Ekşi Sözlük — Görgülü Pastanesi Acıbadem",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Börekleri ve klasik tatlılarıyla mahalle hafızasında yer etmiş adres"
+        }
+      ],
+      "pros": [
+        "Yarım asra yaklaşan mahalle pastanesi geleneği",
+        "Sabah sıcak su böreği ve ulaşılabilir klasik kahvaltı"
+      ],
+      "cons": [
+        "Üçüncü nesil kahve/modern brunch çizgisi arayanlara hitap etmeyebilir"
+      ],
+      "uncertainties": [
+        "Restoran mutfağı ile pastane tezgahı yoğun saatlerde farklı tempolarda işler."
+      ],
+      "selectionScore": 75,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-canak-kebap",
+      "categoryId": "denemelisin",
+      "resolvedName": "Çanak Kebap ve Katmer",
+      "branchName": "Acıbadem, Acıbadem Cd. No:115, 36660 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJITlXjwe4yhQR8swQp9FdQ1g",
+      "coordinates": {
+        "lat": 41.005471199999995,
+        "lng": 29.045551600000003
+      },
+      "rating": 4.1,
+      "userRatingCount": 3767,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6360030253809716466",
+      "recommendedPrimary": [
+        "Fıstıklı Çanak Kebap",
+        "Alinazik & Küşleme",
+        "Antep Usulü Yuvalama"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taş Fırın Çıtır Katmer",
+          "note": "Yemeğin sonunda kaymak ve Antep fıstığıyla sıcak servis edilen, mekana adını veren imza tatlı.",
+          "proof": "canakkebap.com menüsü ve İstanbul gastronomi rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Büyük aile sofralarına elverişli iki katlı klasik restoran salonu",
+        "crowdAndNoise": "Öğle iş yemekleri ve akşam aile buluşmalarında yüksek doluluk",
+        "disadvantage": "Standart ocakbaşıların üzerinde üst-orta fiyat seviyesindedir; hafta sonları yoğun gürültü ve park sıkıntısı yaşanabilir.",
+        "transit": "Acıbadem Caddesi No:115’te Dörtyol kavşağının hemen altında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Çanak Kebap Resmi Sitesi",
+          "url": "https://www.canakkebap.com/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Acıbadem merkez şubesi, Antep yemekleri ve katmer seçkisi"
+        },
+        {
+          "title": "Oggusto — İstanbul’da Gaziantep Mutfağı",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Acıbadem’de yuvalama ve katmer geleneğini sürdüren referans restoran"
+        },
+        {
+          "title": "Ekşi Sözlük — Çanak Kebap Acıbadem",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Katmer ve fıstıklı kebap lezzetine karşın yüksek fiyat seviyesi sıkça belirtiliyor"
+        }
+      ],
+      "pros": [
+        "Gaziantep reçetelerine sadık mutfak ve katmer ustası",
+        "Kuru dolma ve yuvalama gibi zahmetli ev yemekleri"
+      ],
+      "cons": [
+        "Üst-orta fiyat bandı ve yoğun akşam kalabalığı"
+      ],
+      "uncertainties": [
+        "Kış ve yaz aylarında yöresel tencere yemeği çeşitleri değişebilir."
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-kardesim-kebap",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kardeşim Kebap",
+      "branchName": "Koşuyolu, Koşuyolu Cd. No:63, 34718 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJ4Uv2-QS4yhQRTrb89_SqPYs",
+      "coordinates": {
+        "lat": 41.0089591,
+        "lng": 29.036907399999993
+      },
+      "rating": 4.4,
+      "userRatingCount": 2987,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10033363513960609358",
+      "recommendedPrimary": [
+        "Çıtır Lahmacun",
+        "Zırh Adana Kebap",
+        "Kuzu Çöp Şiş"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Künefe & Sütlaç",
+          "note": "Kebap sonrası sıcak şerbetli künefe veya hafif sütlü tatlı kapanışı.",
+          "proof": "Koşuyolu yerel değerlendirmeleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Esnaf lokantası-ocakbaşı karışımı sıcak iç salon ve cadde kenarı bahçe masaları",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde bölge esnafı ve semt sakinleriyle dolu",
+        "disadvantage": "Modern şık restoran dekorundan ziyade sade, hızlı ve gürültülü olabilen klasik kebapçı düzenindedir.",
+        "transit": "Koşuyolu Caddesi No:63’te mahalle merkezinde yürüyüşle kolay ulaşılabilir."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Harbiyiyorum — Koşuyolu Klasikleri",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Koşuyolu’nun yıllardır çizgisini bozmayan mahalle kebap ve lahmacun durağı"
+        },
+        {
+          "title": "Ekşi Sözlük — Kardeşim Kebap Koşuyolu",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Lahmacun ve zırh kebabının istikrarlı lezzetiyle yüksek değerlendirme alıyor"
+        }
+      ],
+      "pros": [
+        "İnce ve dengeli lahmacun hamuru",
+        "Gösterişten uzak istikrarlı mahalle ocakbaşısı"
+      ],
+      "cons": [
+        "Akşam saatlerinde yoğun paket ve masa trafiği"
+      ],
+      "uncertainties": [
+        "Bazı sakatat çeşitleri günün geç saatlerinde kalmayabiliyor."
+      ],
+      "selectionScore": 76,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-intiba-doner",
+      "categoryId": "denemelisin",
+      "resolvedName": "Acıbadem İntiba Döner",
+      "branchName": "Acıbadem, Şht. Emin Çölen Sokağı No:2, 34718 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJuU3lR4K5yhQRfnhxbSNbcLg",
+      "coordinates": {
+        "lat": 41.0028152,
+        "lng": 29.0434004
+      },
+      "rating": 4.3,
+      "userRatingCount": 1537,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.intiba.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=13290222708088469630",
+      "recommendedPrimary": [
+        "Porsiyon Yaprak Et Döner",
+        "Tombik Ekmek Arası Döner",
+        "Tereyağlı İskender"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Sütlaç & Açık Yayık Ayranı",
+          "note": "Döner porsiyonuyla neredeyse standart hale gelen bol köpüklü ayran ve sütlaç kapanışı.",
+          "proof": "Acıbadem yeme-içme notları ve intibadoner.com menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Hızlı döner salonu düzeni ve cadde üstü açık oturma masaları",
+        "crowdAndNoise": "Öğle paydosunda ve hafta sonları kapı önünde bekleyen kalabalık",
+        "disadvantage": "Yüksek sirkülasyon nedeniyle akşamüzeri geç saatlere kalındığında döner tükenmiş olabiliyor ve hızlı masada uzun oturmaya uygun değildir.",
+        "transit": "Acıbadem Şehit Emin Çölen Sokak No:2’de Türk Telekom/Dörtyol bölgesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — İstanbul’un Öne Çıkan Dönercileri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Acıbadem’de günlük takılan yaprak et döneriyle bilinen yerel adres"
+        },
+        {
+          "title": "Ekşi Sözlük — Acıbadem İntiba Döner",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Etin yağ dengesi ve hızlı servisiyle öğle ritüeli"
+        }
+      ],
+      "pros": [
+        "Katkısız yaprak et döner lezzeti",
+        "Hızlı servis ve taze pide ekmeği"
+      ],
+      "cons": [
+        "Dönerin erken saatte tükenebilmesi ve kalabalık saatlerde sıra bekleme"
+      ],
+      "uncertainties": [
+        "Haftanın yoğun günlerinde kapanış öncesi stok bitebilir."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-birbicer",
+      "categoryId": "denemelisin",
+      "resolvedName": "Birbiçer Kebap Acıbadem",
+      "branchName": "Acıbadem, Acıbadem Cd. No:174 D:1, 34660 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJlZMLymfHyhQRKHczSgzUJ0s",
+      "coordinates": {
+        "lat": 41.009121,
+        "lng": 29.050867999999998
+      },
+      "rating": 4.1,
+      "userRatingCount": 1292,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": true
+      },
+      "websiteUri": "https://www.yemeksepeti.com/restaurant/uyz7/birbicer-kebap",
+      "mapsUri": "https://maps.google.com/?cid=5415530226185893672",
+      "recommendedPrimary": [
+        "Şiş Ciğer (Kuyruk Yağlı)",
+        "Adana Zırh Kıyma Kebap",
+        "Kuşbaşı Çöp Şiş"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taş Kadayıf / İrmik Helvası & Şalgam",
+          "note": "Adana kebap-ciğer ritüelini dengeleyen acılı-acısız şalgam ve geleneksel sıcak tatlı kapanışı.",
+          "proof": "Adana ocakbaşı kültürü yayınları ve semt değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Samimi iç salon, kaldırım masaları ve yoğun paket düzeni",
+        "crowdAndNoise": "Adana usulü ciğer ve şalgam arayan müdavimlerle dolu masa trafiği",
+        "disadvantage": "Açık ocakbaşı pişirimi nedeniyle yoğun saatlerde hafif kebap kokusu ve dar cadde masa düzeni söz konusudur.",
+        "transit": "Acıbadem Caddesi No:174’te Üsküdar-Acıbadem bağlantı noktasında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Harbiyiyorum — İstanbul’daki Adana Ciğercileri",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Adana Birbiçer geleneğini kuyruk yağlı ciğer ve tablacı salatasıyla İstanbul’da sürdüren şube"
+        },
+        {
+          "title": "Ekşi Sözlük — Birbiçer Acıbadem",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ciğer şiş ve ezmeleriyle bölgedeki klasiklerden ayrışıyor"
+        }
+      ],
+      "pros": [
+        "Otantik Adana ciğeri ve taze tablacı salatası ikramları",
+        "Erken saatlerden itibaren sıcak ocakbaşı"
+      ],
+      "cons": [
+        "Küçük oturma salonunda yoğun duman/koku ihtimali"
+      ],
+      "uncertainties": [
+        "Hafta sonları ciğer stoğu akşam saatlerinde hızla azalabilir."
+      ],
+      "selectionScore": 82,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-kosuyolu-manti",
+      "categoryId": "denemelisin",
+      "resolvedName": "Koşuyolu Mantı",
+      "branchName": "Koşuyolu, Mehmet Akfan Sokağı No:81/A, 34718 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJbxB9lgW4yhQR7buD2voA1aw",
+      "coordinates": {
+        "lat": 41.0063363,
+        "lng": 29.0380331
+      },
+      "rating": 4.4,
+      "userRatingCount": 572,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://kosuyolumanti.com/",
+      "mapsUri": "https://maps.google.com/?cid=12453861421970865133",
+      "recommendedPrimary": [
+        "Klasik Haşlama Mantı",
+        "Çıtır Mantı (Yoğurt & Soslu)",
+        "Kıymalı Çiğ Börek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zeytinyağlı Yaprak Sarma & Ev Baklavası",
+          "note": "Mantı tabağı öncesi açlık yatıştıran sarma ve yemek sonu küçük porsiyon ev tatlısı.",
+          "proof": "Koşuyolu yerel gastronomi paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük bahçe masaları ve sade ev salonu atmosferi",
+        "crowdAndNoise": "Öğle yemeğinde mahalle sakinleri ve çevreden gelen müdavimlerle canlı",
+        "disadvantage": "Porsiyon ve çeşit sayısı mantı-hamur işi odaklıdır; büyük restoran beklentisi olanlara fazla sade gelebilir.",
+        "transit": "Koşuyolu Mehmet Akfan Sokak No:81/A adresinde yürüyüş hattında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Koşuyolu Ev Mantıcıları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "El açması hamuru ve çıtır mantı seçenekleriyle sevilen mahalle mutfağı"
+        },
+        {
+          "title": "Müdavim — Koşuyolu Mantı",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur inceliği ve çiğ börek yağsızlığıyla beğeniliyor"
+        }
+      ],
+      "pros": [
+        "Günlük taze açılan hamur ve iç malzeme",
+        "Samimi küçük işletme özeni"
+      ],
+      "cons": [
+        "Sınırlı masa sayısı"
+      ],
+      "uncertainties": [
+        "Zeytinyağlılar günlük üretime göre erken bitebilir."
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-adile-sultan",
+      "categoryId": "denemelisin",
+      "resolvedName": "Adile Sultan Ev Yemekleri",
+      "branchName": "Acıbadem, Gayretli Sokağı No:20 D:A, 34718 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJo-eauhe5yhQRxbgeA8sN_MY",
+      "coordinates": {
+        "lat": 41.000986399999995,
+        "lng": 29.052168299999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 292,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://siparis.adilesultanevyemekleri.com/",
+      "mapsUri": "https://maps.google.com/?cid=14338350479222683845",
+      "recommendedPrimary": [
+        "Günün Zeytinyağlı Tabağı",
+        "Kadınbudu Köfte veya Hünkarbeğendi",
+        "Mercimek / Ezogelin Çorba"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Kabak Tatlısı & Ev Yapımı Yoğurt / Komposto",
+          "note": "Ev yemeği tabağını en doğal şekilde tamamlayan hafif tatlı ve ev içeceği.",
+          "proof": "Acıbadem mahalle rehberleri ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Temiz, aydınlık aile lokantası masaları ve paket servisi",
+        "crowdAndNoise": "Öğle saatlerinde bölge çalışanları ve semt sakinleriyle dolu",
+        "disadvantage": "Yalnızca günlük taze çıkan tezgah çeşitleriyle servis verir; akşam geç saatte giderseniz pek çok tencere yemeği tükenmiş olur.",
+        "transit": "Acıbadem Gayretli Sokak’ta hastane ve metro aksına kısa yürüyüş mesafesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Acıbadem Ev Yemekleri",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Zeytinyağlı sebze çeşitleri ve temiz mutfağıyla bilinen yerel lokanta"
+        },
+        {
+          "title": "Müdavim — Adile Sultan Ev Yemekleri",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ev yapımı tadındaki yemekleriyle 4.6 puan istikrarını koruyor"
+        }
+      ],
+      "pros": [
+        "Ağır yağ kullanmayan gerçek ev yemeği çizgisi",
+        "Yüksek hijyen ve güleryüzlü aile işletmesi"
+      ],
+      "cons": [
+        "Popüler çeşitlerin öğleden sonra erken bitmesi"
+      ],
+      "uncertainties": [
+        "Haftanın yemek listesi her gün sabah güncellenir."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ka-firin-anatolia",
+      "categoryId": "denemelisin",
+      "resolvedName": "Fırın Anatolia Acıbadem",
+      "branchName": "Acıbadem, Acıbadem Cd. No:173, 34660 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJY9GtHQfIyhQR3HLEPbN_oBY",
+      "coordinates": {
+        "lat": 41.0129254,
+        "lng": 29.053775899999994
+      },
+      "rating": 4.4,
+      "userRatingCount": 376,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": false,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.firinanatolia.com/",
+      "mapsUri": "https://maps.google.com/?cid=1630443472920277724",
+      "recommendedPrimary": [
+        "Siyez & Karakılçık Ekşi Maya Ekmek",
+        "Tereyağlı Sade / Çikolatalı Kruvasan",
+        "Focaccia"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Cardamom Bun & Limonlu Kek Dilimi",
+          "note": "Sabah kahvesiyle paket alınan veya yürüyüşte yenen aromatik İsveç usulü çörekler.",
+          "proof": "Acıbadem Caddesi fırın seçkileri ve müdavim paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Al-götür ve paket odaklı ekşi maya fırın tezgahı (oturma alanı bulunmaz)",
+        "crowdAndNoise": "Sabah ve öğleden önce taze fırın çıkışı bekleyen müdavimler",
+        "disadvantage": "Oturmalı kafe servisi sunmadığı için yalnızca tezgahtan al-götür ekmek ve hamur işi alışverişi yapılabilir.",
+        "transit": "Acıbadem Caddesi No:173’te Birbiçer’in çaprazında yürüyüş hattında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — İstanbul Artizan Ekşi Maya Fırınları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Atalık unlarla üretim yapan Acıbadem artizan fırın noktası"
+        },
+        {
+          "title": "Müdavim — Fırın Anatolia Acıbadem",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kruvasan katmanları ve ekmek kabuğu kalitesiyle beğeniliyor"
+        }
+      ],
+      "pros": [
+        "Katkısız atalık buğdaylı ekşi maya ekmekler",
+        "Yüksek hamur tekniğine sahip kruvasan çeşitleri"
+      ],
+      "cons": [
+        "Masa oturumu bulunmayan salt al-götür fırın düzeni"
+      ],
+      "uncertainties": [
+        "Ekmek çeşitleri günün pişirim saatlerine göre tezgaha çıkar."
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    }
+  ]
+}

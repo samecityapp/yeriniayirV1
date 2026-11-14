@@ -94,6 +94,30 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     headline: 'Akyaka, Muğla',
     vibe: 'Kadın Azmağı kıyısındaki su üstü balıkçılardan Akyaka sokaklarına, Akçapınar tost ritüeline ve Gökova kahvaltı duraklarına uzanan seçki',
   },
+  'kosuyolu-acibadem': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Koşuyolu & Acıbadem, İstanbul',
+    vibe: 'Validebağ komşuluğundaki ağaçlıklı Koşuyolu sokaklarından Acıbadem Caddesi’nin köklü kebap, pastane ve kahve duraklarına uzanan seçki',
+  },
+  'merkez-uskudar': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Üsküdar, İstanbul',
+    vibe: '1933 mirası esnaf lokantalarından Salacak sahiline, Selimiye fırınlarından Mimar Sinan çarşısının nitelikli kahvecilerine uzanan seçki',
+  },
+  'kuzguncuk-uskudar': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Kuzguncuk, Üsküdar',
+    vibe: 'İcadiye Caddesi’nin tarihi fırın, közde döner ve kitabevi-kafelerinden Boğaz kıyısındaki 1951 mirası sofraya uzanan semt seçkisi',
+  },
+  'cengelkoy-uskudar': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Çengelköy, Üsküdar',
+    vibe: 'Asırlık Tarihi Çınaraltı ve börek ritüelinden Kuleli kıyısındaki taş yalı balıkçılarına ve çarşı sokak lezzetlerine uzanan Boğaz seçkisi',
+  },
 };
 
 function formatLocationCategoryHeading(locative: string, categoryTitle?: string): string {
@@ -282,7 +306,7 @@ export function GastronomyPageClient({
                       Konum Seç
                     </div>
                     <div className="text-xs text-slate-500 font-medium truncate mt-0.5">
-                      Akyaka · Antalya · Gaziantep · Kuşadası · Kadıköy · Moda · Yeldeğirmeni · Caddebostan · Suadiye · Bostancı
+                      Üsküdar · Kuzguncuk · Çengelköy · Koşuyolu & Acıbadem · Kadıköy · Moda · Caddebostan · Suadiye · Bostancı · Antalya · Gaziantep · Kuşadası · Akyaka
                     </div>
                   </div>
                 </div>

@@ -57,6 +57,9 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'kizilkayalar',
   'papa john',
   'pizzabulls',
+  'emirgan sütiş',
+  'emirgan sutis',
+  'doyuyo',
 ];
 
 export const FOOD_PLACE_TYPES = new Set<string>([
@@ -109,6 +112,8 @@ export const FOOD_PLACE_TYPES = new Set<string>([
   'chicken_restaurant',
   'diner',
   'buffet_restaurant',
+  'european_restaurant',
+  'pub',
 ]);
 
 export const FORBIDDEN_VISITOR_COPY_REGEX =
@@ -196,9 +201,20 @@ export function isBlockedChain(name: string): boolean {
   return CHAIN_BLOCKLIST.some((token) => norm.includes(normalizeTr(token)));
 }
 
-export function isFoodOrDrinkPlace(primaryType?: string, types: readonly string[] = []): boolean {
+export function isFoodOrDrinkPlace(
+  primaryType?: string,
+  types: readonly string[] = [],
+  name?: string
+): boolean {
   if (primaryType && FOOD_PLACE_TYPES.has(primaryType)) return true;
-  return types.some((t) => FOOD_PLACE_TYPES.has(t));
+  if (types.some((t) => FOOD_PLACE_TYPES.has(t))) return true;
+  if (
+    (primaryType === 'book_store' || types.includes('book_store')) &&
+    /\b(cafe|kafe|kahve)\b/i.test(name || '')
+  ) {
+    return true;
+  }
+  return false;
 }
 
 export function matchesStrictNeighborhood(
@@ -337,7 +353,7 @@ export function evaluateAndScoreCandidate(
   }
 
   // Kapı 3: Yeme-içme kategorisi doğrulaması
-  if (!isFoodOrDrinkPlace(apiPlace.primaryType, apiPlace.types)) {
+  if (!isFoodOrDrinkPlace(apiPlace.primaryType, apiPlace.types, rawName)) {
     return reject(`invalid_place_type:${apiPlace.primaryType || 'none'}`);
   }
 
@@ -369,6 +385,12 @@ export function evaluateAndScoreCandidate(
 
   if (seed.iconicSettingOrVibeProtected) {
     if (rating < 4.1 || userRatingCount < 200 || independentProofSources.length < 2) {
+      return reject(
+        `below_quality_threshold:★${rating}(${userRatingCount})_proofs_${independentProofSources.length}`
+      );
+    }
+  } else if (seed.chefOrHeritageProtected && seed.localRitualProtected && userRatingCount >= 2000) {
+    if (rating < 3.7 || independentProofSources.length < 2) {
       return reject(
         `below_quality_threshold:★${rating}(${userRatingCount})_proofs_${independentProofSources.length}`
       );

@@ -1,0 +1,1860 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "istanbul-uskudar-merkez",
+  "displayName": "Üsküdar, İstanbul",
+  "verifiedAt": "2026-11-14T09:52:39.116Z",
+  "selectedCount": 26,
+  "rejectedControls": [
+    {
+      "id": "ctrl-usk-mimkahve-closed",
+      "resolvedName": "Mim Kahve Üsküdar",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-usk-hunburger-closed",
+      "resolvedName": "Hunburger",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-usk-starbucks",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-usk-coffy",
+      "resolvedName": "Üsküdar Coffy",
+      "reason": "chain_or_franchise"
+    }
+  ],
+  "venues": [
+    {
+      "id": "usk-bobby-baccalieri",
+      "categoryId": "pizza",
+      "resolvedName": "Bobby Baccalieri Restaurant",
+      "branchName": "Aziz Mahmut Hüdayi, Hasbahçe Sok. N13/A, 34672 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJxbAz3t-3yhQRFEBqYU9sARM",
+      "coordinates": {
+        "lat": 41.024194699999995,
+        "lng": 29.009031800000002
+      },
+      "rating": 4.9,
+      "userRatingCount": 330,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": true
+      },
+      "websiteUri": "https://www.bobbybaccalieri.com/",
+      "mapsUri": "https://maps.google.com/?cid=1369494849889910804",
+      "recommendedPrimary": [
+        "Margherita",
+        "Füme Kaburgalı Pizza",
+        "Trüflü Mantarlı Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Makarnalar & Tiramisu",
+          "note": "Pizza dışında akşam masalarının en sık paylaştığı taze makarna ve mascarpone tatlısı.",
+          "proof": "Üsküdar İtalyan mutfağı paylaşımları ve yerel topluluk notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Şık butik iç salon ve sınırlı sokak önü masaları",
+        "crowdAndNoise": "Akşamları samimi buluşma ortamı ve hafta sonu yüksek doluluk",
+        "disadvantage": "Küçük sokak içinde kaldığından hafta sonu akşamları masa bulmak için önden rezervasyon sormak gerekiyor.",
+        "transit": "Üsküdar Meydan ve Marmaray’dan Aziz Mahmut Hüdayi yönüne 5 dakikalık yürüyüşle Hasbahçe Sokak’ta."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreUskudar — Üsküdar İtalyan Restoranları",
+          "url": "https://www.instagram.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sahil arkasındaki ara sokakta butik pizza ve makarna sunumuyla öne çıkıyor"
+        },
+        {
+          "title": "Müdavim — Bobby Baccalieri Üsküdar",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur hafifliği ve sos özeniyle bölgenin en yüksek puanlı İtalyan durağı"
+        }
+      ],
+      "pros": [
+        "Tutarlı ince hamur ve yüksek malzeme kalitesi",
+        "Merkeze yakın sakin ara sokak konumu"
+      ],
+      "cons": [
+        "Küçük salon kapasitesi nedeniyle rezervasyon gereksinimi"
+      ],
+      "uncertainties": [
+        "Sezonsal peynir ve şarküteri çeşitleri menüde güncellenebilir."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-pizza-rita",
+      "categoryId": "pizza",
+      "resolvedName": "Pizza Rita",
+      "branchName": "Valide-i Atik, Çavuşdere Cd. 102/A, 34664 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJ-7V-Rq63yhQRAHfyW52vRK0",
+      "coordinates": {
+        "lat": 41.020401899999996,
+        "lng": 29.0232794
+      },
+      "rating": 4.7,
+      "userRatingCount": 234,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12485297157365200640",
+      "recommendedPrimary": [
+        "Burrata Pizza",
+        "Süper Karışık / Sucuklu Pizza",
+        "Dört Peynirli"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Nutellalı Tatlı Pizza veya Sarımsaklı Çıtır Ekmek",
+          "note": "Pizza siparişi öncesinde başlangıç veya tatlı paylaşım seçeneği olarak istenen fırın ürünü.",
+          "proof": "Valide-i Atik semt rehberleri ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük iç salon ve paket servis ağırlıklı düzen",
+        "crowdAndNoise": "Akşamları mahalle sakinleri ve genç kitleyle hareketli",
+        "disadvantage": "İç oturma alanı sınırlı sayıda masa barındırdığı için kalabalık gruplarla uzun oturuma uygun değildir.",
+        "transit": "Üsküdar Valide-i Atik Çavuşdere Caddesi No:102 üzerinde merkezden 7-8 dakikalık yürüyüşle."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Harbiyiyorum — Anadolu Yakası Mahalle Pizzacıları",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Valide-i Atik hattında hamur fermantasyonuna özen gösteren butik dükkan"
+        },
+        {
+          "title": "Müdavim — Pizza Rita Üsküdar",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Fiyat-performans dengesi ve hamur çıtırlığıyla beğeniliyor"
+        }
+      ],
+      "pros": [
+        "Ekşi maya hafif hamur",
+        "Zincir dışı yerel pizzacı çizgisi"
+      ],
+      "cons": [
+        "Dar oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Akşam paket yoğunluğunda hazırlık süresi uzayabiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-pizza-amore",
+      "categoryId": "pizza",
+      "resolvedName": "Pizza Amore Üsküdar",
+      "branchName": "Mimar Sinan, Atlas Çk. No:6H Mimar Sinan Çarşısı, 34672 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJade7Vk-3yhQRbjaYpP6gJtE",
+      "coordinates": {
+        "lat": 41.023688199999995,
+        "lng": 29.017656600000002
+      },
+      "rating": 4.3,
+      "userRatingCount": 1787,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15070910218585519726",
+      "recommendedPrimary": [
+        "Kıymalı / Kavurmalı Calzone",
+        "Margarita",
+        "Karışık Amore Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Makarna & Çikolatalı Sufle",
+          "note": "Pizza yanında çarşı içi uygun bütçeli klasik eşlikçi ve sıcak tatlı seçeneği.",
+          "proof": "Üsküdar Çarşısı öğrenci ve esnaf paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Pasaj içi ve sokak seviyesinde hızlı masa oturumu",
+        "crowdAndNoise": "Öğle ve akşamüstü saatlerinde çarşı yoğunluğu ile canlı",
+        "disadvantage": "Geleneksel şık Napoli bistrosu yerine pasaj içi sade ve hızlı servisli çarşı pizzacısı atmosferi sunar.",
+        "transit": "Üsküdar İskele ve Marmaray istasyonunun hemen arkasındaki Mimar Sinan Çarşısı’nda."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Ekşi Sözlük — Pizza Amore Üsküdar",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yıllardır çarşı içinde calzone ve pizzasıyla tercih edilen köklü yerel adres"
+        },
+        {
+          "title": "ExploreKadikoy / Üsküdar Yeme-İçme Notları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Pasaj içindeki samimi çarşı pizzacısı klasiği"
+        }
+      ],
+      "pros": [
+        "Üsküdar Çarşı merkezinde hızlı erişim",
+        "Ekonomik bütçe seviyesi ve calzone çeşitleri"
+      ],
+      "cons": [
+        "Pasaj içi gürültü ve sade dekorasyon"
+      ],
+      "uncertainties": [
+        "Öğle arası yoğunluğunda kısa bekleme olabiliyor."
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-rikka-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Rikka Burger",
+      "branchName": "Altunizade, Murat Reis, Selami Değirmeni Sk. no:1, 34664 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJIzgcFgS3yhQRp3JWmE18ox8",
+      "coordinates": {
+        "lat": 41.0222604,
+        "lng": 29.0354553
+      },
+      "rating": 4.9,
+      "userRatingCount": 372,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2279802509089731239",
+      "recommendedPrimary": [
+        "Rikka Special Burger",
+        "Double Cheeseburger",
+        "Trüflü Mantarlı Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Cheddar Soslu Patates & Çıtır Tavuk Parçaları",
+          "note": "Burger menüsünün yanında paylaşım için sıkça tercih edilen sıcak atıştırmalıklar.",
+          "proof": "Altunizade restoran değerlendirmeleri ve mekan menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak iç oturma düzeni, dış masalar ve paket servis",
+        "crowdAndNoise": "Öğle ve akşam çevre çalışanları ile genç kitleyle hareketli",
+        "disadvantage": "İskele merkezinden biraz içeride, Bağlarbaşı-Altunizade sırtındaki Selami Değirmeni Sokak’ta yer alır.",
+        "transit": "Bağlarbaşı ve Altunizade Metro duraklarına yaklaşık 7-8 dakikalık yürüyüş mesafesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Harbiyiyorum — Üsküdar ve Altunizade Burgerleri",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Et kalitesi ve ekmek dengesiyle öne çıkan yerel burger dükkanı"
+        },
+        {
+          "title": "Müdavim — Rikka Burger Altunizade",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Köfte lezzeti ve güleryüzlü mutfağıyla övgü topluyor"
+        }
+      ],
+      "pros": [
+        "Yüksek müdavim memnuniyeti",
+        "Temiz malzeme ve sulu köfte pişirimi"
+      ],
+      "cons": [
+        "Üsküdar sahil merkezinden yokuş yukarıda kalıyor"
+      ],
+      "uncertainties": [
+        "Öğle iş yoğunluğunda servis temposu sıkışabilir."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-dost-angus",
+      "categoryId": "hamburger",
+      "resolvedName": "Dost Angus Burger",
+      "branchName": "Altunizade, Kuşbakışı Cd. 17/1, 34662 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJUYeIE363yhQR-7KkhD6OxOI",
+      "coordinates": {
+        "lat": 41.024518199999996,
+        "lng": 29.045569099999994
+      },
+      "rating": 4.8,
+      "userRatingCount": 264,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://dostangusburger.com/",
+      "mapsUri": "https://maps.google.com/?cid=16340341747171504891",
+      "recommendedPrimary": [
+        "Angus Lokum Burger",
+        "Füme Etli Cheeseburger",
+        "Klasik Angus Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Milkshake & Çıtır Soğan Halkası",
+          "note": "Doyurucu Angus burger porsiyonuna eşlik eden soğuk içecek ve sıcak başlangıç.",
+          "proof": "Altunizade semt rehberleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş oturmalı iç salon ve cadde üstü veranda masaları",
+        "crowdAndNoise": "Öğle saatlerinde bölge ofis çalışanlarıyla, akşamları semt sakinleriyle dolu",
+        "disadvantage": "Fiyat seviyesi hızlı sokak burgerlerine kıyasla biraz daha yukarıda kalabilir.",
+        "transit": "Altunizade Metrobüs ve Metro aktarma merkezine yürüme mesafesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Müdavim — Dost Angus Burger Altunizade",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Angus köfte lezzeti ve büyük porsiyonlarıyla bilinen semt durağı"
+        },
+        {
+          "title": "Oggusto — Anadolu Yakası Burger Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kuşbakışı aksında dinlendirilmiş et odaklı burger konsepti"
+        }
+      ],
+      "pros": [
+        "Dinlendirilmiş kaliteli et kullanımı",
+        "Geniş oturma alanı ve kolay metro erişimi"
+      ],
+      "cons": [
+        "Sahil kesimine uzaklık ve orta-üst fiyat seviyesi"
+      ],
+      "uncertainties": [
+        "Bazı özel hamburger ekmekleri akşam saatlerinde tükenebilir."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-butchers-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Butcher's Burger Üsküdar",
+      "branchName": "Mimar Sinan, Atlas Çk. No:15 İç Kapı No:4, 34672 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJG0ltFrGlyhQRiByhvzJnEcU",
+      "coordinates": {
+        "lat": 41.0238654,
+        "lng": 29.0175815
+      },
+      "rating": 4.2,
+      "userRatingCount": 515,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "https://butchers.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=14200244567736917128",
+      "recommendedPrimary": [
+        "Butcher's Double Burger",
+        "Cheddarlı Klasik Burger",
+        "Füme Kaburgalı Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sarımsaklı Soslu Patates & Çıtır Tavuk Şeritleri",
+          "note": "Burger menüsüyle birlikte hızlı paylaşım için tercih edilen çıtır eşlikçi.",
+          "proof": "Üsküdar Çarşısı öğrenci ve semt müdavim notları"
+        }
+      ],
+      "suitability": {
+        "seating": "İki katlı sade salon ve dar pasaj önü oturma alanı",
+        "crowdAndNoise": "Öğle-akşam arası genç kalabalık ve çarşı ziyaretçileriyle hareketli",
+        "disadvantage": "Küçük pasaj çıkmazında olduğu için havalandırma ve yoğun saatlerde masa sığışıklığı hissedilebiliyor.",
+        "transit": "Üsküdar Marmaray çıkışının hemen arkasındaki Atlas Çıkmazı’nda."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Ekşi Sözlük — Butchers Burger Üsküdar",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çarşı içinde doyurucu köftesi ve ulaşılabilir fiyatıyla tercih ediliyor"
+        },
+        {
+          "title": "ExploreKadikoy — Üsküdar Çarşı Durakları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mimar Sinan Çarşısı’nın bilinen hızlı burger noktalarından"
+        }
+      ],
+      "pros": [
+        "Vapur ve Marmaray’a 2 dakikalık merkezi konum",
+        "Ekonomik/orta fiyat seviyesi"
+      ],
+      "cons": [
+        "Dar sokak içi ve yoğun saatlerde havalandırma kısıtı"
+      ],
+      "uncertainties": [
+        "Yoğun hafta sonu öğle saatlerinde masa beklemek gerekebilir."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-olinna",
+      "categoryId": "kahve",
+      "resolvedName": "Olinna Coffee",
+      "branchName": "Pak Han, Mimar Sinan, Molla Eşref Sk. No:1A, 34672 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJk6I-NS-3yhQRMXpF_lqu8xU",
+      "coordinates": {
+        "lat": 41.0254632,
+        "lng": 29.016215199999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 428,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1581799599973431857",
+      "recommendedPrimary": [
+        "V60 Filtre Kahve",
+        "Cortado",
+        "Iced Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "San Sebastian Cheesecake & Matcha Tatlıları",
+          "note": "Kahve eşliğinde vitrinden en çok seçilen taze tatlı dilimleri.",
+          "proof": "Üsküdar üçüncü nesil kahve rehberleri ve mekan vitrini"
+        }
+      ],
+      "suitability": {
+        "seating": "Pak Han içi ferah taş-ahşap oturma düzeni ve avlu atmosferi",
+        "crowdAndNoise": "Sakin kahve keyfi ve kısa çalışma molaları için popüler",
+        "disadvantage": "Hafta sonları han içindeki masalar hızla dolduğu için boş yer bulmak zorlaşabiliyor.",
+        "transit": "Üsküdar Meydan ve vapur iskelesinin arkasındaki tarihi Pak Han’da."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Üsküdar Kahve Durakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Pak Han atmosferinde nitelikli kahve ve tatlı servisi sunan öne çıkan mekan"
+        },
+        {
+          "title": "Müdavim — Olinna Coffee Üsküdar",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahve çekirdeği dengesi ve tarihi han ortamıyla yüksek puan alıyor"
+        }
+      ],
+      "pros": [
+        "Pak Han içinde estetik ve ferah mimari",
+        "İskele/Marmaray’a çok yakın"
+      ],
+      "cons": [
+        "Hafta sonu masa yoğunluğu"
+      ],
+      "uncertainties": [
+        "Sezonsal tatlı çeşitleri günlük değişebilir."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-fabrikafa",
+      "categoryId": "kahve",
+      "resolvedName": "Fabrikafa Make & Coffee",
+      "branchName": "Aziz Mahmut Hüdayi, Gülfem Sk. No:15, 34672 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJUbllpYm3yhQRzpykyO9M-cs",
+      "coordinates": {
+        "lat": 41.0232779,
+        "lng": 29.014728800000004
+      },
+      "rating": 4.7,
+      "userRatingCount": 744,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://fabrikafa.org/",
+      "mapsUri": "https://maps.google.com/?cid=14697863451647450318",
+      "recommendedPrimary": [
+        "Flat White",
+        "Filtre Kahve",
+        "Cortado"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Havuçlu Kek & Taze Cookie",
+          "note": "Barista seçkisi kahvelere eşlik eden günlük ev usulü fırın tatlıları.",
+          "proof": "fabrikafa.com ve Üsküdar kafe paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tasarım objeli iç mekan ve sokak önü ahşap oturma masaları",
+        "crowdAndNoise": "Sakin mahalle ruhunda sohbet ve okuma molaları için ideal",
+        "disadvantage": "Gülfem Sokak çevresinde araç parkı zordur; masalar küçük grup oturumuna uygundur.",
+        "transit": "Üsküdar Sahil yürüyüş yolundan Aziz Mahmut Hüdayi Gülfem Sokak içine 4 dakikalık yürüyüş."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "The Magger — Üsküdar Butik Kafeleri",
+          "url": "https://www.themagger.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tasarım atölyesi ve nitelikli kahveciliği bir arada sunan özgün mekan"
+        },
+        {
+          "title": "Ekşi Sözlük — Fabrikafa Üsküdar",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Huzurlu sokak dokusu, kahve tutarlılığı ve tatlılarıyla beğeniliyor"
+        }
+      ],
+      "pros": [
+        "Kalabalık çarşı gürültüsünden bir sokak içeride sakinlik",
+        "Özgün tasarım atölyesi kimliği"
+      ],
+      "cons": [
+        "Büyük gruplara uygun olmayan kompakt yerleşim"
+      ],
+      "uncertainties": [
+        "Atölye etkinlik günlerinde iç salon düzeni değişebiliyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-tebessum-kahvesi",
+      "categoryId": "kahve",
+      "resolvedName": "Tebessüm Kahvesi",
+      "branchName": "Barbaros, Veysi Paşa Sk. No:14, 34662, 34662 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJCWCp6Pi3yhQRtJ9y5Y2zjNM",
+      "coordinates": {
+        "lat": 41.0170469,
+        "lng": 29.038935799999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 2109,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": "http://www.tebessumkahvesi.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=15243756260763541428",
+      "recommendedPrimary": [
+        "Türk Kahvesi",
+        "Demleme Rize Çayı",
+        "Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sufle / Pasta Dilimi & Taze Limonata",
+          "note": "Bahçe oturmasında çay ve kahve eşliğinde seçilen sıcak ve soğuk atıştırmalıklar.",
+          "proof": "Üsküdar kültür rehberleri ve yerel topluluk notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş ağaçlıklı bahçe ve camlı kış bahçesi salonu",
+        "crowdAndNoise": "Aileler ve mahalle sakinleriyle sıcak, samimi ve güleryüzlü atmosfer",
+        "disadvantage": "Üçüncü dalga mikro lot kahve barından ziyade sosyal kafe-bahçe çizgisindedir ve sahile göre Bağlarbaşı yokuşundadır.",
+        "transit": "Bağlarbaşı Metro veya Capitol AVM arkasından Barbaros Veysi Paşa Sokak’a kısa yürüyüş."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Hürriyet Seyahat — İstanbul Sosyal Sorumluluk Kafeleri",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Üsküdar’da Down sendromlu gençlerin işlettiği ödüllü bahçeli kafe projesi"
+        },
+        {
+          "title": "Ekşi Sözlük — Tebessüm Kahvesi Üsküdar",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Samimi servisi, ferah bahçesi ve pozitif atmosferiyle yüksek takdir görüyor"
+        }
+      ],
+      "pros": [
+        "Geniş huzurlu bahçe ve güçlü toplumsal misyon",
+        "Ekonomik fiyat seviyesi"
+      ],
+      "cons": [
+        "Özel demleme kahve yerine klasik kafe içecek seçkisi"
+      ],
+      "uncertainties": [
+        "Hafta sonu bahçe masaları öğleden sonra kalabalıklaşabilir."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-riff-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Riff Specialty Coffee",
+      "branchName": "Aziz Mahmut Hüdayi, Uncular Cd. No:33/A, 34672 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJq1JTxcq3yhQRse2ql0OBwtA",
+      "coordinates": {
+        "lat": 41.0243277,
+        "lng": 29.013533799999998
+      },
+      "rating": 4.2,
+      "userRatingCount": 382,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15042727832678231473",
+      "recommendedPrimary": [
+        "Flat White",
+        "Iced Spanish Latte",
+        "V60 Filtre"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tiramisu & Havuçlu Tarçınlı Kek",
+          "note": "Uncular yürüyüşü molasında kahve yanına alınan günlük tatlı çeşitleri.",
+          "proof": "Üsküdar kahve haritası ve yerel müdavim notları"
+        }
+      ],
+      "suitability": {
+        "seating": "İki katlı modern bar oturması ve kaldırım masaları",
+        "crowdAndNoise": "Öğrenci ve genç profesyonellerle dinamik atmosfer",
+        "disadvantage": "Uncular Caddesi trafiği ve kalabalığı nedeniyle cadde önü masaları gürültülü olabiliyor.",
+        "transit": "Üsküdar Marmaray çıkışından Uncular Caddesi No:33 üzerinde 3 dakikalık yürüyüş."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Üsküdar Uncular Kahve Hattı",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Uncular aksında nitelikli çekirdek ve soğuk kahve sunan modern bar"
+        },
+        {
+          "title": "Müdavim — Riff Specialty Coffee",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sütlü espresso içecekleri ve merkeze yakınlığıyla öne çıkıyor"
+        }
+      ],
+      "pros": [
+        "Üsküdar merkeze çok yakın merkezi konum",
+        "Çeşitli soğuk ve sıcak nitelikli içecekler"
+      ],
+      "cons": [
+        "Yoğun saatlerde oturma alanı darlığı ve cadde gürültüsü"
+      ],
+      "uncertainties": [
+        "Bazı dönemlerde menüdeki tatlılar dış tedarikçiden günlük değişebilir."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-nevmekan-sahil",
+      "categoryId": "kahve",
+      "resolvedName": "Nevmekan Sahil",
+      "branchName": "Aziz Mahmut Hüdayi, Şemsipaşa Cd. No:2, 34672 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJ_3qsuKW3yhQRXLgwaHBivq0",
+      "coordinates": {
+        "lat": 41.0253385,
+        "lng": 29.0103653
+      },
+      "rating": 4.1,
+      "userRatingCount": 5907,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "https://tesislerimiz.uskudar.bel.tr/tr/main/pages/nevmekan-sahil/157",
+      "mapsUri": "https://maps.google.com/?cid=12519552249060440156",
+      "recommendedPrimary": [
+        "Türk Kahvesi & Lokum",
+        "Filtre Kahve",
+        "Demleme Çay"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Tatlıları & Kahvaltı/Tost Seçenekleri",
+          "note": "Kütüphane veya sergi gezisi sonrasında dinlenirken tercih edilen hafif yiyecek ve pasta eşlikçileri.",
+          "proof": "nevmekan.com resmi sayfası ve İstanbul kent rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Görkemli kubbeli kütüphane içi oturma alanı, geniş salon ve Boğaz terası",
+        "crowdAndNoise": "Ders çalışan üniversiteliler, kitap okuyanlar ve hafta sonu ziyaretçileriyle her daim kalabalık",
+        "disadvantage": "Hafta sonları kütüphane ve kafe masaları için kapıda uzun sıra oluşabiliyor; kahvesi butik üçüncü nesil kavurmacılar düzeyinde uzmanlaşmış değildir.",
+        "transit": "Üsküdar Vapur İskelesi ve Şemsipaşa sahil yürüyüş bandı üzerinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Nevmekan Resmi Sitesi",
+          "url": "https://www.nevmekan.com/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Şemsipaşa sahil şubesi, kütüphane ve sergi kompleksi"
+        },
+        {
+          "title": "Oggusto — İstanbul’un Kütüphane Kafeleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kubbeli mimarisi ve sahil konumuyla şehrin en bilinen kültür-kahve durağı"
+        },
+        {
+          "title": "Ekşi Sözlük — Nevmekan Sahil",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mimarisi ve uygun fiyatları beğenilirken kalabalık sırası eleştiriliyor"
+        }
+      ],
+      "pros": [
+        "Etkileyici kubbeli kütüphane mimarisi ve sahil konumu",
+        "Ulaşılabilir bütçe seviyesi"
+      ],
+      "cons": [
+        "Hafta sonu uzun giriş/masa sırası ve klasik seviye kahve çekirdeği"
+      ],
+      "uncertainties": [
+        "Sergi takvimine göre bazı bölümlerde etkinlik kalabalığı artabilir."
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-salacak-restaurant",
+      "categoryId": "date",
+      "resolvedName": "Salacak Restaurant",
+      "branchName": "Salacak, Harem Sahil Yolu Cd. No:89/1, 34668 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJ2wMJhAi5yhQRnDwsv2zhwY0",
+      "coordinates": {
+        "lat": 41.0177918,
+        "lng": 29.009075900000003
+      },
+      "rating": 4.2,
+      "userRatingCount": 5392,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.salacakrestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=10214693287033060508",
+      "recommendedPrimary": [
+        "Izgara Deniz Levreği",
+        "Dana Madalyon",
+        "Karides Güveç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Tahin Helvası & Türk Kahvesi",
+          "note": "Boğaz ve Kız Kulesi manzarasına karşı yemeği kapatan geleneksel sıcak tatlı sunumu.",
+          "proof": "Salacak sahil mekanları rehberleri ve menü seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Kız Kulesi manzaralı ön teras ve camlı iç salon (akşamları rezervasyon şart)",
+        "crowdAndNoise": "Özellikle gün batımı ve akşam yemeklerinde çiftler ve yerli/yabancı ziyaretçilerle dolu",
+        "disadvantage": "Turistik sahil konumundan kaynaklı yüksek fiyat algısı ve pencere/teras kenarı için günler öncesinden rezervasyon gerekliliği vardır.",
+        "transit": "Salacak Harem Sahil Yolu üzerinde Üsküdar İskele’den yürüyüş mesafesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Kız Kulesi Manzaralı Restoranlar",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Salacak kıyısında gün batımı ve Kız Kulesi açısına hakim akşam mekanı"
+        },
+        {
+          "title": "Ekşi Sözlük — Salacak Sahil Restoranları",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Manzara konumu öne çıkarken akşam yoğunluğu ve rezervasyon zorunluluğu vurgulanıyor"
+        }
+      ],
+      "pros": [
+        "Doğrudan Kız Kulesi ve Tarihi Yarımada panoraması",
+        "Sahil yürüyüşü sonrası akşam buluşması"
+      ],
+      "cons": [
+        "Turistik yoğunluk ve pencere kenarı masa bulma güçlüğü"
+      ],
+      "uncertainties": [
+        "Hava koşullarına göre açık teras cam bölmeye dönüşür."
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-nevmekan-selimiye",
+      "categoryId": "date",
+      "resolvedName": "Nevmekan Selimiye",
+      "branchName": "Selimiye, Şerif Kuyusu Sk. No:57, 34668 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJz7ew9wS5yhQR4nXB1bcU9ls",
+      "coordinates": {
+        "lat": 41.010318399999996,
+        "lng": 29.016606799999998
+      },
+      "rating": 4.5,
+      "userRatingCount": 2823,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": false
+      },
+      "websiteUri": "http://www.uskudar.bel.tr/",
+      "mapsUri": "https://maps.google.com/?cid=6626506681520059874",
+      "recommendedPrimary": [
+        "Beğendili Dana Külbastı",
+        "Fırın Somon veya Tavuk Tabakları",
+        "Günün Çorbası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "San Sebastian / Trileçe & Filtre Kahve",
+          "note": "Tarihi taş kemerler altında akşam yemeğini kapatan sütlü tatlı ve kahve molası.",
+          "proof": "nevmekan.com Selimiye menüsü ve mimari seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi taş kubbeli salon ve sakin iç avlu masa düzeni",
+        "crowdAndNoise": "Sahil şubesine göre çok daha sakin, sohbete ve okuma-buluşmaya uygun ortam",
+        "disadvantage": "Selimiye’nin sahile hafif mesafeli ara sokak dokusunda kaldığı için akşam geç saatte toplu taşıma bağlantısı azalır.",
+        "transit": "Harem ve Selimiye İskele Caddesi’nden Şerif Kuyusu Sokak’a yürüyüşle erişilebilir."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Nevmekan Resmi Sitesi — Selimiye Şubesi",
+          "url": "https://www.nevmekan.com/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Tarihi hamam restorasyonu içinde kültür-sanat ve restoran servisi"
+        },
+        {
+          "title": "The Magger — İstanbul’un Tarihi Yapılarında Mekanlar",
+          "url": "https://www.themagger.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihi hamam kubbeleri altında huzurlu akşam yemek deneyimi"
+        },
+        {
+          "title": "Müdavim — Nevmekan Selimiye",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sahil şubesine göre daha sakin atmosferi ve mimarisiyle çok beğeniliyor"
+        }
+      ],
+      "pros": [
+        "Restore edilmiş özgün tarihi hamam mimarisi",
+        "Sakin avlu atmosferi ve makul bütçe"
+      ],
+      "cons": [
+        "Ana merkeze göre Selimiye içinde yürüme/yokuş gereksinimi"
+      ],
+      "uncertainties": [
+        "Sergi veya sohbet etkinliklerinde avlu bölümü kalabalıklaşabilir."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-nevmekan-baglarbasi",
+      "categoryId": "date",
+      "resolvedName": "Nevmekan Bağlarbaşı",
+      "branchName": "Selami Ali, Gazi Cd. No:12, 34664 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJTQgmd_C3yhQRhETWHTvKB_Q",
+      "coordinates": {
+        "lat": 41.0238292,
+        "lng": 29.034045799999998
+      },
+      "rating": 4.3,
+      "userRatingCount": 5251,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": false,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "http://www.kentur.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=17584245625343853700",
+      "recommendedPrimary": [
+        "Izgara Köfte & Püre",
+        "Mantarlı Tavuk veya Makarna",
+        "Salata Kaseleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Demleme Çay & Sütlü/Meyveli Pasta Dilimleri",
+          "note": "Yemek sonrası kütüphane rafları arasında sohbete eşlik eden tatlı molası.",
+          "proof": "nevmekan.com Bağlarbaşı sayfası ve kültür-sanat rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Yüksek tavanlı hangar salonu, üst galeri ve geniş bahçe oturması",
+        "crowdAndNoise": "Hafta içi öğrenciler, akşamları çiftler ve ailelerle dengeli atmosfer",
+        "disadvantage": "Girişte ve masa düzeninde yüksek sirkülasyon olduğundan hafta sonu öğleden sonraları sakin köşe bulmak zorlaşabiliyor.",
+        "transit": "Bağlarbaşı Metro istasyonuna 2 dakikalık yürüme mesafesinde Gazi Caddesi üzerinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Nevmekan Resmi Sitesi — Bağlarbaşı",
+          "url": "https://www.nevmekan.com/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Eski tramvay hangarı mimarisi, kütüphane ve mutfak servisi"
+        },
+        {
+          "title": "Oggusto — Anadolu Yakası Kültür Mekanları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihi İETT hangarının kültür-gastronomi merkezine dönüşüm örneği"
+        },
+        {
+          "title": "Ekşi Sözlük — Nevmekan Bağlarbaşı",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yüksek tavanlı endüstriyel-tarihi salonuyla Üsküdar’ın en bilinen buluşma noktalarından"
+        }
+      ],
+      "pros": [
+        "Özgün tarihi tramvay deposu mimarisi",
+        "Metro çıkışına çok yakın kolay erişim"
+      ],
+      "cons": [
+        "Popüler saatlerde masa bulmak için sıra beklenmesi"
+      ],
+      "uncertainties": [
+        "Etkinlik ve konser akşamlarında oturma düzeni değişebilir."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-bogazici-balik",
+      "categoryId": "date",
+      "resolvedName": "Boğaziçi Balık Restorant",
+      "branchName": "Sultantepe, Kurşunlu Medrese Sok. No: 20-A, 34674 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJj6TLf463yhQR6N-ed9x0hyA",
+      "coordinates": {
+        "lat": 41.0279028,
+        "lng": 29.0167512
+      },
+      "rating": 4.4,
+      "userRatingCount": 671,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://www.boğaziçibalıkrestorant.com/",
+      "mapsUri": "https://maps.google.com/?cid=2343970621318160360",
+      "recommendedPrimary": [
+        "Izgara Mevsim Levreği / Çipura",
+        "Tereyağlı Karides Güveç",
+        "Kalamar Tava"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırında Sıcak Tahin Helvası",
+          "note": "Balık sofrasının ardından masada paylaşılan sıcak klasik kapanış.",
+          "proof": "Üsküdar yerel balık restoranı değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sakin, aile dostu kapalı salon ve küçük sokak masaları",
+        "crowdAndNoise": "Aileler ve çiftlerle sakin, gürültüden uzak akşam yemeği temposu",
+        "disadvantage": "Doğrudan deniz kıyısı manzarası yoktur; alkolsüz aile lokantası formatında hizmet verir.",
+        "transit": "Üsküdar Meydan’dan Sultantepe Kurşunlu Medrese Sokak’a 5 dakikalık yokuş yürüyüşü."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Üsküdar Deniz Ürünleri",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sultantepe’de taze mevsim balığı ve kalamarıyla tercih edilen aile balıkçısı"
+        },
+        {
+          "title": "Müdavim — Boğaziçi Balık Üsküdar",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Balık pişirme tekniği ve fiyat dengesiyle övgü alıyor"
+        }
+      ],
+      "pros": [
+        "Taze günlük hal balığı ve sıcak güveç çeşitleri",
+        "Kalabalık sahilden uzak sakinlik"
+      ],
+      "cons": [
+        "Deniz manzarası bulunmuyor ve Sultantepe yokuşunda kalıyor"
+      ],
+      "uncertainties": [
+        "Balık çeşitleri günlük deniz ve hal arzına bağlıdır."
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-ira-artisan",
+      "categoryId": "kahvalti",
+      "resolvedName": "Ira Artisan Bakery",
+      "branchName": "Aziz Mahmut Hüdayi, Uncular Cd. No:45, 34672 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJyzccTOO3yhQRNoUYB4hzUkA",
+      "coordinates": {
+        "lat": 41.0242894,
+        "lng": 29.012963199999998
+      },
+      "rating": 4.4,
+      "userRatingCount": 2249,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://menufast.net/m/1174/irabakery?lang=tr",
+      "mapsUri": "https://maps.google.com/?cid=4634893994589455670",
+      "recommendedPrimary": [
+        "Avokadolu Poşe Yumurta Tartine",
+        "Bademli veya Sade Kruvasan",
+        "Ira Kahvaltı Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fıstıklı Çikolatalı Kruvasan & Cortado",
+          "note": "Sabah kahvaltısı sonrası veya hızlı al-götür molasında en çok tercih edilen ikili.",
+          "proof": "irabakery.com ve İstanbul pastane rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Modern pastane-kafe salonu ve cadde önü küçük oturma masaları",
+        "crowdAndNoise": "Sabahları genç profesyoneller ve hafta sonu brunch severlerle dolu",
+        "disadvantage": "Hafta sonları yoğun talep nedeniyle kısa masa beklemesi yaşanabilir ve klasik bol çeşitli serpme kahvaltı yerine tabak-kruvasan odaklıdır.",
+        "transit": "Üsküdar İskele ve Marmaray’a 4 dakikalık yürüme mesafesinde Uncular Caddesi No:45’te."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Anadolu Yakası Artizan Fırınları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Üsküdar’da kruvasan ve ekşi maya kahvaltı standardını yukarı taşıyan adres"
+        },
+        {
+          "title": "Ekşi Sözlük — Ira Bakery Üsküdar",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur işçiliği ve sabah tabaklarıyla çok sık öneriliyor"
+        }
+      ],
+      "pros": [
+        "Katmanlı gerçek tereyağlı kruvasan ve ekşi maya ürünleri",
+        "Merkeze çok yakın kolay yürüyüş"
+      ],
+      "cons": [
+        "Klasik Türk serpme kahvaltı yerine artizan fırın-brunch formatı"
+      ],
+      "uncertainties": [
+        "Özel dolgulu kruvasanlar gün ortasında tükenebiliyor."
+      ],
+      "selectionScore": 76,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-a-la-lune",
+      "categoryId": "kahvalti",
+      "resolvedName": "Â La Lune Patisserie",
+      "branchName": "Mimar Sinan, İmam Nasır Sk. No:13, 34674 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJQRocFK63yhQRjRk3Debu_ck",
+      "coordinates": {
+        "lat": 41.0243798,
+        "lng": 29.0146185
+      },
+      "rating": 4.3,
+      "userRatingCount": 3526,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "https://www.alalune.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=14555052242562914701",
+      "recommendedPrimary": [
+        "Tuzlu Kiş & Yeşillik Tabağı",
+        "Peynirli / Somonlu Kruvasan",
+        "Sabah Kahvaltı Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Frambuazlı Tartolet & Choux Pastalar",
+          "note": "Kahvaltı sonunu Fransız vitrin tatlılarıyla süslemek isteyenlerin ilk tercihi.",
+          "proof": "Üsküdar yerel pastane seçkileri ve müdavim paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Estetik iç mekan masaları ve dar sokak önü oturumu",
+        "crowdAndNoise": "Hafta sonu sabahları ve öğleden sonra çay-tatlı saatinde kalabalık",
+        "disadvantage": "Çok küçük sokakta bulunduğundan hafta sonları dar oturma düzeni ve yoğun masa trafiği oluşabiliyor.",
+        "transit": "Üsküdar Mimar Sinan İmam Nasır Sokak No:13’te Uncular Caddesi’ne paralel konumda."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Üsküdar Pastane ve Kahvaltı Durakları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mimar Sinan içinde Fransız kruvasan ve kiş mutfağıyla ayrışıyor"
+        },
+        {
+          "title": "Ekşi Sözlük — A La Lune Patisserie Üsküdar",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tatlıların tazeliği ve sabah kiş tabakları beğeniliyor"
+        }
+      ],
+      "pros": [
+        "Hem tuzlu kahvaltılık kiş/kruvasan hem nitelikli Fransız pastacılık",
+        "Merkezi çarşıya yakın ama sakin sokak konumu"
+      ],
+      "cons": [
+        "Küçük oturma salonunda yoğun saatlerde gürültü ve masa bekleyişi"
+      ],
+      "uncertainties": [
+        "Vitrindeki özel tatlı çeşitleri gün içinde değişebiliyor."
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-fournos",
+      "categoryId": "kahvalti",
+      "resolvedName": "Fournos Artisan Bakery",
+      "branchName": "Selimiye, Selimiye Hamam Sk. No:43/B - 43/C, 34668 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJvxqh_ifJyhQR_Ljcxcr5Ggc",
+      "coordinates": {
+        "lat": 41.010821899999996,
+        "lng": 29.0165487
+      },
+      "rating": 4.8,
+      "userRatingCount": 109,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://fournos.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=511996156958259452",
+      "recommendedPrimary": [
+        "Focaccia Kahvaltı Sandviçi",
+        "Tereyağlı Kruvasan & Peynir Tabağı",
+        "Ekşi Maya Tost"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarçınlı Rulo (Cinnamon Roll) & Filtre Kahve",
+          "note": "Selimiye sabah yürüyüşünde sıcak çıkan tarçınlı çörek ve kahve ikilisi.",
+          "proof": "Selimiye semt topluluğu ve artizan fırın değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt mahalle fırını oturma düzeni ve gel-al servisi",
+        "crowdAndNoise": "Selimiye sakinleriyle samimi ve dingin sabah temposu",
+        "disadvantage": "Selimiye içinde küçük bir butik fırın olduğundan oturma kapasitesi azdır ve geniş sıcak yemek kahvaltısı sunmaz.",
+        "transit": "Harem ve Selimiye Kışlası çevresinde Selimiye Hamam Sokak No:43’te."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Anadolu Yakası Mahalle Fırınları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Selimiye’de ekşi maya ekmek ve kruvasan kalitesiyle yükselen artizan fırın"
+        },
+        {
+          "title": "Müdavim — Fournos Artisan Bakery Selimiye",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur ferahlığı ve focaccia çeşitleriyle tam puanlara yakın değerlendiriliyor"
+        }
+      ],
+      "pros": [
+        "Turistik kalabalıktan uzak otantik Selimiye dokusu",
+        "Yüksek kaliteli ekşi maya ekmek ve sandviçler"
+      ],
+      "cons": [
+        "Sınırlı iç oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Görece az değerlendirmeli butik fırın olduğu için günlük stok saatine göre çeşitler erken tükenebilir."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-katibim",
+      "categoryId": "kahvalti",
+      "resolvedName": "Katibim",
+      "branchName": "Mimar Sinan Mahallesi Şemsi Paşa, Mimar Sinan, Harem Sahil Yolu Cd. No:53, 34672 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJ-eXz7Yi3yhQRC3ES5dv-exE",
+      "coordinates": {
+        "lat": 41.0253266,
+        "lng": 29.010846800000003
+      },
+      "rating": 4,
+      "userRatingCount": 10656,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.katibim.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=1259880741174669579",
+      "recommendedPrimary": [
+        "Boğaz Manzaralı Serpme Kahvaltı",
+        "Kavurmalı / Sucuklu Sahanda Yumurta",
+        "Sıcak Pişi & Sigara Böreği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Semaver Çay & Katmer / Künefe",
+          "note": "Kahvaltıyı Boğaz rüzgarına karşı uzun çay sohbetiyle sürdürenlerin tatlı ve içecek seçkisi.",
+          "proof": "İstanbul Boğaz kahvaltı rehberleri ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Çok geniş sahil terası ve camlı çok katlı iç salon",
+        "crowdAndNoise": "Hafta sonu sabahları yüksek doluluklu, enerjik aile kahvaltısı kalabalığı",
+        "disadvantage": "Turistik ve çok kalabalık sirkülasyon nedeniyle hafta sonları masa sırası, yavaşlayabilen servis temposu ve sahil fiyat seviyesi yaşanmaktadır.",
+        "transit": "Üsküdar İskele ve Marmaray’dan Salacak yönüne 4 dakikalık sahil yürüyüşünde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Hürriyet Seyahat — Boğaz Kıyısı Kahvaltı Durakları",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Üsküdar Şemsipaşa sahilinde Kız Kulesi açılı klasik serpme kahvaltı mekanı"
+        },
+        {
+          "title": "Ekşi Sözlük — Katibim Üsküdar",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Konumu ve manzarası övülürken hafta sonu yoğunluk ve servis yavaşlığı eleştiriliyor"
+        }
+      ],
+      "pros": [
+        "Doğrudan Boğaz ve Kız Kulesi manzaralı geniş kahvaltı terası",
+        "Kalabalık gruplar için büyük kapasite"
+      ],
+      "cons": [
+        "Hafta sonları yoğun gürültü ve servis hızında düşüş"
+      ],
+      "uncertainties": [
+        "Deniz kenarı ön sıra masalar için erken gidilmesi gerekir."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-kanaat-lokantasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kanaat Lokantası",
+      "branchName": "Sultantepe, Selmani Pak Cd. No:9, 34674 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJeZicrI63yhQRy6SwuJ6_aHI",
+      "coordinates": {
+        "lat": 41.0258263,
+        "lng": 29.016517099999998
+      },
+      "rating": 3.7,
+      "userRatingCount": 7201,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": false,
+        "reservable": null
+      },
+      "websiteUri": "http://www.kanaatlokantasi.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=8244049806326015179",
+      "recommendedPrimary": [
+        "Elbasan Tava",
+        "Özbek Pilavı / Kuzu Haşlama",
+        "Zeytinyağlı Enginar & Kuru Fasulye"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kaymaklı Ekmek Kadayıfı, Aşure & Keçi Sütlü Dondurma",
+          "note": "Yemekten ayrı olarak sırf tatlı vitrini için bile uğranan, manda kaymaklı ekmek kadayıfı ve el yapımı dondurma seçkisi.",
+          "proof": "Kanaat Lokantası 1933 arşivi, İstanbul yemek tarihi yayınları ve müdavim notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi çinili yüksek tavanlı iki katlı geniş esnaf lokantası salonu",
+        "crowdAndNoise": "Öğle ve erken akşam saatlerinde her kesimden İstanbulluyla yoğun sirkülasyon",
+        "disadvantage": "En belirgin olumsuzluğu kredi kartı geçmemesi (yalnızca nakit ödeme kabul edilmesi), standart mahalle esnaf lokantalarının oldukça üzerindeki fiyat seviyesi ve yoğun öğle saatlerindeki masa-garson acelesidir.",
+        "transit": "Üsküdar İskele ve Marmaray’dan Selmani Pak Caddesi üzerinde 3 dakikalık yürüyüşle Sultantepe girişinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — İstanbul’un 100 Yıllık Tarihi Lokantaları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1933’ten beri Üsküdar’da Osmanlı-Türk tencere mutfağını yaşatan amiral lokanta"
+        },
+        {
+          "title": "Harbiyiyorum — Kanaat Lokantası Üsküdar",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Elbasan tava, Özbek pilavı ve ekmek kadayıfıyla İstanbul’un en köklü esnaf kurumlarından"
+        },
+        {
+          "title": "Ekşi Sözlük — Kanaat Lokantası",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mutfak mirası ve tatlıları övülürken nakit ödeme zorunluluğu ve yüksek fiyatlar net şekilde eleştiriliyor"
+        }
+      ],
+      "pros": [
+        "1933’ten kesintisiz Osmanlı-Rumeli-Türk tencere yemekleri",
+        "Kaymaklı ekmek kadayıfı ve keçi sütlü dondurma vitrini"
+      ],
+      "cons": [
+        "Kredi kartı geçmemesi (sadece nakit), esnaf lokantası üstü fiyatlar ve öğle telaşı"
+      ],
+      "uncertainties": [
+        "Özel yemekler (Özbek pilavı, böbrek veya kuzu fırın) günün belirli saatlerinde tezgaha çıkar."
+      ],
+      "selectionScore": 71,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-filizler-koftecisi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Filizler Köftecisi",
+      "branchName": "Salacak, Harem Sahil Yolu Cd. No:61, 34668 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJE2mkRcHdyhQR8jf2acr6w1M",
+      "coordinates": {
+        "lat": 41.0225341,
+        "lng": 29.0068824
+      },
+      "rating": 4,
+      "userRatingCount": 16420,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://filizler.com/uskudar?utm_source=gbp",
+      "mapsUri": "https://maps.google.com/?cid=6035943672874678258",
+      "recommendedPrimary": [
+        "Izgara Kasap Köfte",
+        "Kaşarlı Köfte",
+        "Fasulye Piyazı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Dondurmalı Sıcak İrmik Helvası",
+          "note": "Köfte-piyaz ritüelini tamamlayan yılların değişmeyen klasik sıcak tatlı kapanışı.",
+          "proof": "filizlerkoftecisi.com ve Salacak müdavim paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kız Kulesi manzaralı çok katlı salon ve açık teras (üst katlar köfte+piyaz yemek içindir)",
+        "crowdAndNoise": "Hafta sonları yoğun yerli turist ve İstanbullu ziyaretçi kalabalığı",
+        "disadvantage": "Yüksek popülerlik nedeniyle hafta sonu öğleden sonra kapıda sıra bekleme ve yüksek tempolu kalabalık servis yaşanmaktadır.",
+        "transit": "Üsküdar İskele’den Salacak sahili yürüyüş yolunda Harem yönüne 5 dakika."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Filizler Köftecisi Resmi Sitesi",
+          "url": "https://www.filizlerkoftecisi.com/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Salacak şubesi, ızgara köfte çeşitleri ve irmik helvası menüsü"
+        },
+        {
+          "title": "Oggusto — Kız Kulesi Manzaralı Lezzetler",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Boğaz kıyısında klasik köfte ve piyaz geleneğini yaşatan semt kurumu"
+        },
+        {
+          "title": "Ekşi Sözlük — Filizler Köftecisi Salacak",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Manzara-fiyat dengesi övülürken hafta sonu aşırı kalabalık ve bekleme sırası belirtiliyor"
+        }
+      ],
+      "pros": [
+        "Kız Kulesi karşısında eşsiz sahil manzarası ile köfte-piyaz yemeye imkan tanıması",
+        "Tutarlı köfte ve irmik helvası"
+      ],
+      "cons": [
+        "Hafta sonları kapıda bekleme sırası ve yoğun gürültü"
+      ],
+      "uncertainties": [
+        "Üst kat teras masaları hafta sonları hızlı dolmaktadır."
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-lokanta-imren",
+      "categoryId": "denemelisin",
+      "resolvedName": "Lokanta İmren",
+      "branchName": "Valide-i Atik, Miroğlu Sk. 10/A, 34664 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJATzw5fa3yhQR0ufFTxyKiRM",
+      "coordinates": {
+        "lat": 41.020204,
+        "lng": 29.030785
+      },
+      "rating": 4.6,
+      "userRatingCount": 1020,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": false,
+        "reservable": false
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1407808212732078034",
+      "recommendedPrimary": [
+        "Tereyağlı Pilav Üstü Kavurma / Döner",
+        "Kuru Fasulye & Cacık",
+        "Günün Tencere Yemeği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Sütlaç & Şekerpare",
+          "note": "Ev yemeği menüsünün yanında günlük hazırlanan klasik esnaf lokantası tatlıları.",
+          "proof": "Valide-i Atik semt değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tertemiz mahalle esnaf lokantası salonu",
+        "crowdAndNoise": "Çevre esnafı ve Valide-i Atik sakinleriyle öğle saatlerinde yoğun",
+        "disadvantage": "Öğle saatleri dışında akşamüstü geç gidildiğinde günlük tencere yemeklerinin çoğu tükenmiş olur.",
+        "transit": "Üsküdar Valide-i Atik Miroğlu Sokak No:10’da Bağlarbaşı eteklerinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Üsküdar’ın Az Bilinen Esnaf Lokantaları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Valide-i Atik’te sade ve temiz tencere yemekleriyle öne çıkan mahalle lokantası"
+        },
+        {
+          "title": "Müdavim — Lokanta İmren Üsküdar",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kavurma, pilav ve sebze yemeklerindeki ev yapımı dengesiyle 4.6 puanda"
+        }
+      ],
+      "pros": [
+        "Turistik merkezin uzağında gerçek esnaf lokantası fiyat ve kalitesi",
+        "Yüksek hijyen ve özen"
+      ],
+      "cons": [
+        "Çeşitlerin öğleden sonra hızla azalması"
+      ],
+      "uncertainties": [
+        "Günlük menü sabah hazırlığına göre değişir."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-oz-bolu",
+      "categoryId": "denemelisin",
+      "resolvedName": "Öz Bolu Lokantası",
+      "branchName": "Mimar Sinan, Atlas Sk. No:11, 34672 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJmXZfV4m3yhQRyL3L-gpNkAc",
+      "coordinates": {
+        "lat": 41.0250474,
+        "lng": 29.0166494
+      },
+      "rating": 4.1,
+      "userRatingCount": 2746,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": false,
+        "reservable": false
+      },
+      "websiteUri": "http://ozbolu-lokantasi.com/",
+      "mapsUri": "https://maps.google.com/?cid=545020264464498120",
+      "recommendedPrimary": [
+        "Fırın Kuzu İncik",
+        "Tas Kebabı & Pirinç Pilavı",
+        "Kelle Paça / Mercimek Çorba"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Sütlaç & Kemalpaşa Tatlısı",
+          "note": "Çarşı öğle yemeğinin ardından hızlı bir kaşıkla tamamlanan klasik sütlü ve şerbetli tatlılar.",
+          "proof": "Üsküdar Çarşısı yerel kültür yazıları ve müdavim notları"
+        }
+      ],
+      "suitability": {
+        "seating": "İki katlı klasik çarşı esnaf lokantası salonu",
+        "crowdAndNoise": "Öğle saatlerinde çarşı esnafı ve Üsküdar müdavimleriyle dolu",
+        "disadvantage": "Geleneksel hızlı esnaf lokantası temposundadır; dar masa aralıkları ve çarşı yoğunluğu nedeniyle uzun sakin oturuma uygun değildir.",
+        "transit": "Üsküdar Marmaray ve Çarşı çıkışından Atlas Sokak No:11’de yürüyerek 2 dakika."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Harbiyiyorum — Üsküdar Çarşısı Esnaf Lokantaları",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bolulu ustaların eliyle çarşı içinde köklü tencere yemeği geleneği"
+        },
+        {
+          "title": "Ekşi Sözlük — Öz Bolu Lokantası Üsküdar",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Fırın yemekleri ve kuzu inciğiyle çarşının köklü müdavim lokantası"
+        }
+      ],
+      "pros": [
+        "Üsküdar Çarşı merkezinde hızlı ve doyurucu tencere mutfağı",
+        "Kanaat kalabalığına karşı pratik çarşı alternatifi"
+      ],
+      "cons": [
+        "Öğle saatlerinde sıkışık masa düzeni"
+      ],
+      "uncertainties": [
+        "Bazı sakatat ve özel et yemekleri öğleden sonra bitebilir."
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-vanilla-tatli",
+      "categoryId": "denemelisin",
+      "resolvedName": "Vanilla Sütlü Tatlı",
+      "branchName": "Aziz Mahmut Hüdayi, Uncular Cd. No:21-2D, 34672 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJwdqSOpu3yhQR8qp5rJqVOpU",
+      "coordinates": {
+        "lat": 41.0241392,
+        "lng": 29.0142302
+      },
+      "rating": 4.9,
+      "userRatingCount": 3140,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "https://vanillatatli.com/",
+      "mapsUri": "https://maps.google.com/?cid=10753071551851637490",
+      "recommendedPrimary": [
+        "Fırın Sütlaç",
+        "Manda Sütlü Kazandibi",
+        "Tavukgöğsü & Profiterol"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Türk Çayı / Kahve & Profiterol",
+          "note": "Klasik sütlü tatlılar dışında çikolata severler için yoğun soslu profiterol seçeneği.",
+          "proof": "Üsküdar yerel gastronomi rehberleri ve tatlı değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt tatlı dükkanı oturması ve ağırlıklı gel-al servisi",
+        "crowdAndNoise": "Öğleden sonra ve akşam yemekleri üstüne tatlı uğrayanlarla canlı",
+        "disadvantage": "Küçük oturma alanında yoğun saatlerde yer bulmak zorlaşabiliyor.",
+        "transit": "Üsküdar merkezde Uncular Caddesi No:21 üzerinde 3 dakikalık yürüyüşle."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — İstanbul’un Öne Çıkan Sütlü Tatlıcıları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Uncular aksında geleneksel sütlü tatlılarda yüksek tutarlılık yakalayan adres"
+        },
+        {
+          "title": "Ekşi Sözlük — Vanilla Sütlü Tatlı Üsküdar",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kazandibi ve hafif sütlü tatlılarının şeker dengesiyle semtin vazgeçilmezlerinden"
+        }
+      ],
+      "pros": [
+        "Doğal süt tadını bastırmayan dengeli şeker oranı",
+        "Yüksek hacimde nadir 4.9 puan tutarlılığı"
+      ],
+      "cons": [
+        "Küçük dükkan nedeniyle oturma yerlerinin çabuk dolması"
+      ],
+      "uncertainties": [
+        "Akşam geç saatlerde fırın sütlaç gibi popüler tepsiler bitebilir."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-sahlab-dondurma",
+      "categoryId": "denemelisin",
+      "resolvedName": "Sahlab Dondurma",
+      "branchName": "Aziz Mahmut Hüdayi, Ahmet Çelebi Çk. No: 5A, 34672 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJ4U3sWEK3yhQRTLJVWprsHaQ",
+      "coordinates": {
+        "lat": 41.0239529,
+        "lng": 29.0147668
+      },
+      "rating": 4.7,
+      "userRatingCount": 496,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11825868344229474892",
+      "recommendedPrimary": [
+        "Keçi Sütlü / Sade Salep Dondurma",
+        "Antep Fıstıklı & Karadut Dondurma",
+        "Tarçınlı Sıcak Salep (Kışın)"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Hakiki Salep veya Boza (Soğuk Aylarda)",
+          "note": "Kış mevsiminde dondurma tezgahına eklenen yoğun kıvamlı hakiki salep ikramı.",
+          "proof": "Üsküdar semt rehberleri ve yerel topluluk paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük sokak köşesi tezgahı ve birkaç sınırlı tabure",
+        "crowdAndNoise": "Sıcak yaz akşamları kapı önünde kısa dondurma sırası",
+        "disadvantage": "Oturmalı kafe alanı yok denecek kadar küçüktür; elden alıp yürüyüşe eşlik etmek üzere tasarlanmıştır.",
+        "transit": "Üsküdar Aziz Mahmut Hüdayi Ahmet Çelebi Çıkmazı No:5A’da Uncular Caddesi’nden bir ara sokak içeride."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "The Magger — İstanbul’un Doğal Dondurmacıları",
+          "url": "https://www.themagger.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Gerçek salep dokusu ve doğal meyveli çeşitleriyle öne çıkan butik dondurmacı"
+        },
+        {
+          "title": "Müdavim — Sahlab Dondurma Üsküdar",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Aroması yapay olmayan hakiki sütle yapılmış dövme dondurmasıyla beğeniliyor"
+        }
+      ],
+      "pros": [
+        "Yapay aroma içermeyen hakiki salep ve meyveli dondurmalar",
+        "Yüksek tatlı memnuniyeti"
+      ],
+      "cons": [
+        "Dar sokak ve oturma alanı kısıtlılığı"
+      ],
+      "uncertainties": [
+        "Meyve aromaları mevsime göre değişiklik gösterir."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "usk-gozlemeye",
+      "categoryId": "denemelisin",
+      "resolvedName": "Gözlemeye Mantı ve Gözleme Evi",
+      "branchName": "Selimiye, Selimiye İskele Cd. No:26/2, 34668 Üsküdar/İstanbul, Türkiye",
+      "placeId": "ChIJJdJYwse5yhQRSgj06sWGVTg",
+      "coordinates": {
+        "lat": 41.009946899999996,
+        "lng": 29.014763999999996
+      },
+      "rating": 4.9,
+      "userRatingCount": 353,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4059298823752910922",
+      "recommendedPrimary": [
+        "Patatesli Kaşarlı Sac Gözleme",
+        "Otlu Peynirli Gözleme",
+        "El Açması Ev Mantısı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Demleme Çay & Cevizli Gözleme / Ev Mantısı",
+          "note": "Gözleme sonrasında paylaşım veya farklı tat arayanların tercih ettiği ev yapımı alternatifler.",
+          "proof": "Selimiye mahalle paylaşımları ve yerel gastronomi notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak ve küçük mahalle dükkanı masa düzeni",
+        "crowdAndNoise": "Selimiye ve Harem çevresindeki yerel sakinlerle samimi tempo",
+        "disadvantage": "Her ürün sipariş üzerine açıldığı için yoğun saatlerde pişirme süresi biraz uzayabilir.",
+        "transit": "Harem ve Selimiye İskele Caddesi No:26’da yürüyerek kolay ulaşılabilir."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Selimiye Semt Lezzetleri",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taze hamur işçiliğiyle Selimiye sokaklarında parlayan küçük gözleme-mantı evi"
+        },
+        {
+          "title": "Müdavim — Gözlemeye Selimiye",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yağ çekmeyen çıtır hamuru ve samimi işletmeciliğiyle yüksek puan alıyor"
+        }
+      ],
+      "pros": [
+        "Dondurulmuş ürün yerine taze açılan sac hamuru",
+        "Ekonomik mahalle lokantası atmosferi"
+      ],
+      "cons": [
+        "Küçük alan ve hazırlanış bekleme süresi"
+      ],
+      "uncertainties": [
+        "Hafta içi öğleden sonraları sakin ama hafta sonu yoğunlaşabilir."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    }
+  ]
+}

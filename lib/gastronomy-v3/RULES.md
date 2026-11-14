@@ -32,10 +32,12 @@ Bu doküman `lib/gastronomy-v3` motorunun kalıcı anayasasıdır. Tüm şehir, 
 
 ## 4. Çoklu Kaynak Uzlaşısı, Marka Sürekliliği & Anti-Manipülasyon
 - **Tek başına Google puanıyla seçim yasaktır:** Her mekan için işletme menüsü/sitesi (`operator`), editoryal gastronomi yayınları (`editorial`), yerel topluluk forumları/müdavim paylaşımları (`community`) veya gastronomi ödülleri (`award`) arasından **en az 2 bağımsız kanıt** zorunludur.
-- **Zincir bloğu:** `CHAIN_BLOCKLIST` kapsamındaki endüstriyel/yaygın zincirler her koşulda reddedilir.
+- **Zincir bloğu:** `CHAIN_BLOCKLIST` kapsamındaki endüstriyel/yaygın zincirler her koşulda reddedilir (`Emirgan Sütiş`, `Doyuyo`, `Coffy`, `Starbucks` vb. dahil).
+- **Hibrit kitabevi-kafe doğrulaması:** Google Places ana türü `book_store` görünse bile resmi işletme adında `Cafe/Kafe/Kahve` geçen köklü mekanlar (ör. *Nail Kitabevi & Cafe*) yeme-içme mekanı olarak değerlendirilir.
 - **Marka sürekliliği (`expectedBrandWord`):** İsim değiştirmiş, el değiştirmiş veya eski kimliğini kaybetmiş işletmeler (ör. eski *Çekirdek* yerine açılan *Çekirdekhane*) `brand_discontinuity` ile reddedilir.
 - **Yerel müdavim / şef / miras / ikonik konum koruması:**
   - `iconicSettingOrVibeProtected` işaretli, en az `200` değerlendirmeye ve `2+` bağımsız editoryal/topluluk/ödül kaynağına sahip semt simgesi mekanlarda `4.1+` puan kabul edilir.
+  - Hem `chefOrHeritageProtected` hem `localRitualProtected` işaretli yarım asrı aşan yüksek sirkülasyonlu amiral yerel kurumlarda (ör. 1933 *Kanaat Lokantası*), en az `2.000` değerlendirme ve `2+` bağımsız kaynakla ve ödeme/fiyat/kalabalık dezavantajlarının açıkça yazılması şartıyla `3.7+` puan kabul edilir.
   - `chefOrHeritageProtected` işaretli tarihi/dünya çapında tescilli yerel kurumlarda (ör. Çiya Sofrası, Yanyalı Fehmi Lokantası, Halil Lahmacun) en az `200` değerlendirme ve `2+` bağımsız kaynakla `4.0+` puan kabul edilir.
   - `localRitualProtected` işaretli yerel halk ritüeli / bütçe dostu müdavim duraklarında (ör. Çardak 6, Tuki Çarşaflı, Ada Söğüşçüsü, Bülbül Restaurant) hızlı sokak/hafta sonu servisi veya kurye yorumları nedeniyle puan `3.8–4.3` bandında kalsa bile en az `300` değerlendirme ve `2+` bağımsız editoryal/topluluk kanıtıyla koruma altına alınır (`ritualCirculationBonus` uygulanır).
   - `communityInsiderProtected` işaretli yerel müdavim mekanlarında en az `60` değerlendirme ve `2+` bağımsız kaynakla `4.2+` puan kabul edilir.

@@ -3,7 +3,7 @@ import type { V3RegionDefinition } from '../types';
 
 /**
  * Kadıköy'ün tekil tam rehber olarak açılmamış komşu mahallelerindeki
- * (Feneryolu, Fenerbahçe/Kalamış, Zühtüpaşa, Koşuyolu, Acıbadem, Erenköy)
+ * (Feneryolu, Fenerbahçe/Kalamış, Zühtüpaşa, Erenköy)
  * canlı Google Places doğrulamalı mekan havuzu.
  *
  * NOT: Yalnızca yayınlanmış semtlerin "Yakındaki Diğer Öneriler" bölümünü besler;
@@ -15,7 +15,7 @@ export const ISTANBUL_KADIKOY_NEARBY_POOL_DEF: V3RegionDefinition = {
   city: 'İstanbul',
   district: 'Kadıköy',
   neighborhood: 'Komşu Semtler',
-  officialQuarter: 'Kadıköy Komşu Mahalleler',
+  officialQuarter: 'Feneryolu, Fenerbahçe, Zühtüpaşa & Erenköy',
   displayName: 'Kadıköy Komşu Mahalleler Havuzu',
   locative: "Kadıköy'de",
   path: ['istanbul', 'kadikoy', 'nearby-pool'],
@@ -28,8 +28,6 @@ export const ISTANBUL_KADIKOY_NEARBY_POOL_DEF: V3RegionDefinition = {
     'Feneryolu',
     'Fenerbahçe',
     'Zühtüpaşa',
-    'Koşuyolu',
-    'Acıbadem',
     'Erenköy',
     'Merdivenköy',
     'Caddebostan',
@@ -284,7 +282,7 @@ export const ISTANBUL_KADIKOY_NEARBY_POOL_DEF: V3RegionDefinition = {
       },
     },
 
-    // --- KAHVE (Fenerbahçe/Kalamış, Koşuyolu — 4 mekan) ---
+    // --- KAHVE (Fenerbahçe/Kalamış — 3 mekan) ---
     {
       id: 'nearby-elloi-kalamis',
       placeId: 'ChIJfZNbCPe5yhQRUFTmXhVmRbg',
@@ -432,57 +430,8 @@ export const ISTANBUL_KADIKOY_NEARBY_POOL_DEF: V3RegionDefinition = {
         uncertainties: ['Çekirdek stoğu taze kavrum dönemine göre haftalık değişebilir.'],
       },
     },
-    {
-      id: 'nearby-kaffee-schutz-kosuyolu',
-      placeId: 'ChIJU3wLFQS5yhQR_iyf05lUicE',
-      categoryId: 'kahve',
-      expectedBrandWord: 'kaffee schutz',
-      neighborhoodLabelOverride: 'Koşuyolu, Kadıköy',
-      localSignals: ['kosuyolu-bahcesi', 'almanya-ekolu-kahve', 'kruvasan'],
-      description:
-        'Koşuyolu Caddesi üzerinde ağaçlıklı bahçesi, Alman kahve kavurma geleneğinden gelen dengeli espressosu ve taze pastane ürünleriyle sevilen kafe.',
-      whatToOrder: ['Flat White', 'Iced Latte', 'Filtre Kahve'],
-      menuFrom: ['Cortado', 'Matcha', 'Sıcak Çikolata'],
-      alsoTry: [],
-      secondaryItems: [
-        {
-          name: 'Kruvasan Sandviç & San Sebastian Cheesecake',
-          note: 'Bahçede kahve keyfine eşlik eden taze kruvasan sandviçler ve fırın tatlıları.',
-          proof: 'Koşuyolu semt rehberleri ve işletme menüsü',
-        },
-      ],
-      suitability: {
-        seating: 'Geniş iç salon ve yeşil Koşuyolu bahçe oturması',
-        crowdAndNoise: 'Koşuyolu’nun dingin villa sokağı havasında rahat çalışma ve sohbet ortamı',
-        disadvantage: 'Çarşı ve Moda merkezine göre yokuş çıkışı gerektirir.',
-        transit: 'Koşuyolu Caddesi üzerinde Ayrılık Çeşmesi Metro/Marmaray’a yaklaşık 10 dakikalık yürüyüş.',
-      },
-      beforeYouGo: [],
-      dossier: {
-        verifiedAt: '2026-11-13',
-        sources: [
-          {
-            title: 'ExploreKadikoy — Koşuyolu Kahve Rehberi',
-            url: 'https://www.explorekadikoy.com/',
-            date: '2026-09-28',
-            kind: 'editorial',
-            note: 'Koşuyolu’nun geniş bahçeli nitelikli kahve ve tatlı durağı',
-          },
-          {
-            title: 'Ekşi Sözlük — Kaffee Schütz',
-            url: 'https://eksisozluk.com/',
-            date: '2026-10-02',
-            kind: 'community',
-            note: 'Bahçe atmosferi, çalışma dostu masaları ve kahve kalitesiyle öne çıkıyor',
-          },
-        ],
-        pros: ['Koşuyolu içinde ferah bahçe oturması', 'Çalışma ve sohbet için rahat masa düzeni'],
-        cons: ['Moda veya Sahil aksına göre yokuş yukarıda kalıyor'],
-        uncertainties: ['Tatlı vitrini günlük üretime göre çeşitlenir.'],
-      },
-    },
 
-    // --- PİZZA (Erenköy, Fenerbahçe/Kalamış, Koşuyolu — 3 mekan) ---
+    // --- PİZZA (Erenköy, Fenerbahçe/Kalamış — 2 mekan) ---
     {
       id: 'nearby-fornio-erenkoy',
       placeId: 'ChIJCSOOW2O3yhQRBVcmXRHykKQ',
@@ -581,57 +530,8 @@ export const ISTANBUL_KADIKOY_NEARBY_POOL_DEF: V3RegionDefinition = {
         uncertainties: ['Özel pizza hamuru stoğu yoğun akşamlarda erken tükenebilir.'],
       },
     },
-    {
-      id: 'nearby-pizzav-kosuyolu',
-      placeId: 'ChIJe56lspy5yhQRcNDTZiAACCU',
-      categoryId: 'pizza',
-      expectedBrandWord: 'pizza v',
-      neighborhoodLabelOverride: 'Koşuyolu / Acıbadem, Kadıköy',
-      localSignals: ['kosuyolu-pizza', 'ince-hamur', 'artizan-malzeme'],
-      description:
-        'Acıbadem-Koşuyolu hattında ince açılan çıtır hamuru ve taze İtalyan şarküteri malzemeleriyle tanınan sevilen semt pizzacısı.',
-      whatToOrder: ['Bresaola & Roka Pizza', 'Trüflü Mantarlı Pizza', 'Margherita'],
-      menuFrom: ['Funghi', 'Pepperoni', 'Dört Peynirli'],
-      alsoTry: [],
-      secondaryItems: [
-        {
-          name: 'Çikolata Kremalı Tatlı Calzone / Pizza',
-          note: 'Yemeğin sonunda paylaşım için tercih edilen sıcak fırın tatlısı.',
-          proof: 'pizzav.com.tr menüsü ve yerel değerlendirmeler',
-        },
-      ],
-      suitability: {
-        seating: 'Konforlu iç salon ve açık teras/bahçe oturması',
-        crowdAndNoise: 'Ailelere ve akşam buluşmalarına uygun düzenli restoran atmosferi',
-        disadvantage: 'Yeldeğirmeni ve Çarşı’ya göre site-cadde yerleşimi içinde yer alır.',
-        transit: 'Acıbadem Metro ve Koşuyolu yürüyüş eksenine birkaç dakikalık mesafede.',
-      },
-      beforeYouGo: [],
-      dossier: {
-        verifiedAt: '2026-11-13',
-        sources: [
-          {
-            title: 'Pizza V Resmi Sitesi',
-            url: 'https://pizzav.com.tr/',
-            date: '2026-11-13',
-            kind: 'operator',
-            note: 'Koşuyolu-Acıbadem şubesi ve artizan pizza menüsü',
-          },
-          {
-            title: 'Müdavim — Koşuyolu Pizzacıları',
-            url: 'https://mudavim.net/',
-            date: '2026-09-12',
-            kind: 'community',
-            note: 'İnce hamur ve zengin üst malzeme dengesi',
-          },
-        ],
-        pros: ['Geniş oturma alanı ve konforlu servis', 'Tatlı calzone seçeneği'],
-        cons: ['Toplu taşıma ana aktarmasından kısa yürüyüş gerektirir'],
-        uncertainties: ['Şube bazlı dönemsel menüler farklılık gösterebilir.'],
-      },
-    },
 
-    // --- HAMBURGER (Feneryolu, Fenerbahçe/Kalamış, Koşuyolu — 3 mekan) ---
+    // --- HAMBURGER (Feneryolu, Fenerbahçe/Kalamış — 2 mekan) ---
     {
       id: 'nearby-rustie-feneryolu',
       placeId: 'ChIJdeMof5fHyhQRZArulMEN36w',
@@ -728,55 +628,6 @@ export const ISTANBUL_KADIKOY_NEARBY_POOL_DEF: V3RegionDefinition = {
         pros: ['Hem gurme burger hem özel sosisli seçeneği', 'Kalamış’ta merkezi cadde konumu'],
         cons: ['Kompakt büfe düzeni nedeniyle oturma alanı dar'],
         uncertainties: ['Akşam geç saatlerde bazı özel ekmekler tükenebiliyor.'],
-      },
-    },
-    {
-      id: 'nearby-chunky-kosuyolu',
-      placeId: 'ChIJB_3gvf25yhQRVUOXiqv8UPs',
-      categoryId: 'hamburger',
-      expectedBrandWord: 'chunky',
-      neighborhoodLabelOverride: 'Koşuyolu, Kadıköy',
-      localSignals: ['kosuyolu-smash', 'citir-kenar', 'ev-yapimi-sos'],
-      description:
-        'Koşuyolu Muhittin Üstündağ Caddesi’nde çıtır dantel kenarlı smash köftesi, erimiş cheddar peyniri ve taze soslarıyla bilinen popüler burgerci.',
-      whatToOrder: ['Chunky Double Smash', 'Trüflü Smash Burger', 'Acılı Jalapeno Smash'],
-      menuFrom: ['Single Cheeseburger', 'Patates Kızartması', 'Sos Seçenekleri'],
-      alsoTry: [],
-      secondaryItems: [
-        {
-          name: 'Cheddar Soslu Patates & Ev Yapımı Milkshake',
-          note: 'Smash burger porsiyonuna eşlik eden çıtır patates ve soğuk içecek ikilisi.',
-          proof: 'Koşuyolu burger seçkileri ve müdavim notları',
-        },
-      ],
-      suitability: {
-        seating: 'Modern oturma salonu, dış masalar ve paket servis',
-        crowdAndNoise: 'Akşamları hareketli genç mahalle atmosferi',
-        disadvantage: 'Koşuyolu caddesi üzerinde araç parkı zor ve akşam servisi yoğun.',
-        transit: 'Ayrılık Çeşmesi ve Acıbadem metro duraklarına yürüyüş mesafesinde Koşuyolu içinde.',
-      },
-      beforeYouGo: [],
-      dossier: {
-        verifiedAt: '2026-11-13',
-        sources: [
-          {
-            title: 'Harbiyiyorum — Anadolu Yakası Smash Burgercileri',
-            url: 'https://harbiyiyorum.com/',
-            date: '2026-09-05',
-            kind: 'editorial',
-            note: 'Koşuyolu’nun dantel kenarlı smash köfte tekniğiyle tanınan butik burgercisi',
-          },
-          {
-            title: 'Müdavim — Chunky Smash Burger',
-            url: 'https://mudavim.net/',
-            date: '2026-10-01',
-            kind: 'community',
-            note: 'Ekmek-köfte oranı ve sos kalitesiyle tutarlı bulunuyor',
-          },
-        ],
-        pros: ['Çıtır smash burger tekniği', 'Yeldeğirmeni ve Çarşı’ya yakın Koşuyolu aksında'],
-        cons: ['Akşam saatlerinde sipariş hazırlık süresi uzayabiliyor'],
-        uncertainties: ['Mevsimsel sos çeşitleri değişebiliyor.'],
       },
     },
 

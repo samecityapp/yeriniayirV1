@@ -1,0 +1,741 @@
+{
+  "schemaVersion": 3,
+  "verifiedAt": "2026-11-14T09:52:39.149Z",
+  "region": {
+    "id": "kuzguncuk-uskudar",
+    "slug": "kuzguncuk",
+    "city": "İstanbul",
+    "district": "Üsküdar",
+    "neighborhood": "Kuzguncuk",
+    "officialQuarter": "Kuzguncuk & İcadiye",
+    "displayName": "Kuzguncuk, Üsküdar, İstanbul",
+    "locative": "Kuzguncuk'ta",
+    "path": [
+      "istanbul",
+      "uskudar",
+      "kuzguncuk"
+    ],
+    "aliases": [
+      "Kuzguncuk",
+      "İcadiye",
+      "Icadiye",
+      "Perihan Abla",
+      "Kuzguncuk Bostanı",
+      "Paşalimanı",
+      "Üsküdar"
+    ],
+    "scopeNote": "Kuzguncuk & İcadiye · Doğrulanmış Boğaz Semti Seçkisi",
+    "characterSubtitle": "İcadiye Caddesi’nin tarihi fırın, közde döner ve kitabevi-kafelerinden Perihan Abla Sokağı’na ve Boğaz kıyısındaki 1951 mirası balık sofrasına uzanan seçki.",
+    "center": {
+      "lat": 41.0355,
+      "lng": 29.0303
+    },
+    "boundary": {
+      "bbox": {
+        "minLat": 41.03,
+        "maxLat": 41.0385,
+        "minLng": 29.0275,
+        "maxLng": 29.0365
+      }
+    }
+  },
+  "categories": [
+    {
+      "id": "pizza",
+      "slug": "pizza",
+      "label": "Pizza",
+      "title": "Pizza",
+      "emoji": "🍕",
+      "isMustTry": false
+    },
+    {
+      "id": "hamburger",
+      "slug": "hamburger",
+      "label": "Hamburger",
+      "title": "Hamburger",
+      "emoji": "🍔",
+      "isMustTry": false
+    },
+    {
+      "id": "kahve",
+      "slug": "kahve",
+      "label": "Kahve",
+      "title": "Kahve",
+      "emoji": "☕",
+      "isMustTry": false
+    },
+    {
+      "id": "date",
+      "slug": "date-mekanlari",
+      "label": "Date",
+      "title": "Date Mekanları",
+      "emoji": "🍷",
+      "isMustTry": false
+    },
+    {
+      "id": "kahvalti",
+      "slug": "kahvalti",
+      "label": "Kahvaltı",
+      "title": "Kahvaltı",
+      "emoji": "🍳",
+      "isMustTry": false
+    },
+    {
+      "id": "denemelisin",
+      "slug": "denemelisin",
+      "label": "Denemelisin",
+      "title": "Mutlaka Denemelisin",
+      "emoji": "⭐",
+      "isMustTry": false
+    }
+  ],
+  "venues": [
+    {
+      "id": "kuz-mahalle",
+      "placeId": "ChIJ1UeqJFm5yhQRAatCoQK410w",
+      "name": "Mahalle Kuzguncuk",
+      "address": "Kuzguncuk, Tufan Sk. 6a, 34674 Üsküdar/İstanbul, Türkiye",
+      "neighborhood": "Tufan Sk., Kuzguncuk",
+      "categoryId": "pizza",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=5537096588310260481",
+      "coordinates": {
+        "lat": 41.0353462,
+        "lng": 29.0305802
+      },
+      "description": "İcadiye Caddesi’nin hemen paraleli Tufan Sokak’ta uzun fermantasyonlu ince hamurlu pizzaları ve taze paylaşımlıklarıyla Kuzguncuk’un yüksek puanlı mahalle pizzacısı.",
+      "whatToOrder": [
+        "Margherita",
+        "Füme Etli / Kavurmalı Pizza",
+        "Burrata Pizza"
+      ],
+      "menuFrom": [
+        "Dört Peynirli Pizza",
+        "Vejetaryen Pizza",
+        "Mevsim Salata"
+      ],
+      "alsoTry": [
+        "Ev Yapımı Tiramisu & Focaccia Başlangıç — Pizza sonrası paylaşılan hafif mascarpone tatlısı ve sıcak zeytinyağlı ekmek."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Sıcak butik salon ve sokak önü küçük ahşap masalar · Semt sakinleri ve hafta sonu Kuzguncuk gezginleriyle samimi ortam",
+        "Dezavantaj: Küçük sokak içinde sınırlı masa kapasitesine sahip olduğu için hafta sonları yer beklemek gerekebilir.",
+        "Ulaşım: Kuzguncuk Tufan Sokak 6A’da İcadiye Caddesi ile bostan girişine 2 dakikalık yürüyüş.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "kuz-cafe2",
+      "placeId": "ChIJDYi3sum3yhQRH_hR69x4O7c",
+      "name": "Cafe 2 Pizza & Burger",
+      "address": "No:2/2A, İcadiye Caddesi Tenekeci Musa Sokak Kuzguncuk Mahallesi, Kuzguncuk, Tenekeci Musa Sk. No: 2, 34674 Üsküdar/İstanbul, Türkiye",
+      "neighborhood": "Tenekeci Musa Sk., Kuzguncuk",
+      "categoryId": "pizza",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=13203279622802896927",
+      "coordinates": {
+        "lat": 41.0336287,
+        "lng": 29.0313628
+      },
+      "description": "Kuzguncuk Bostanı’nın yanında on yıllardır incecik çıtır hamurlu keçi peynirli-kabaklı İlya pizzasıyla semtin kültleşmiş buluşma köşesi.",
+      "whatToOrder": [
+        "İlya (Kabaklı & Keçi Peynirli Pizza)",
+        "Kıymalı / Mantarlı İnce Pizza",
+        "Pesto Soslu Tavuk"
+      ],
+      "menuFrom": [
+        "Klasik Burger",
+        "Sarımsaklı Ekmek",
+        "Ev Yapımı Limonata"
+      ],
+      "alsoTry": [
+        "Cafe 2 Burger & Zeytinyağlı Çıtır Ekmekler — Kültleşen İlya pizzasının yanında sıkça sipariş edilen doyurucu burger ve başlangıç tabakları."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Tarihi ahşap dokulu iki katlı iç salon ve sokak önü masaları · Öğrenciler, mahalle sakinleri ve semt müdavimleriyle her dönem canlı",
+        "Dezavantaj: Geleneksel İtalyan Napoli hamuru yerine özel çok ince kıtır hamur sunar; yoğun hafta sonu saatlerinde servis yavaşlayabilir.",
+        "Ulaşım: Kuzguncuk Bostanı yanındaki Tenekeci Musa Sokak No:2’de İcadiye Caddesi’nin hemen üzerinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "kuz-jobu",
+      "placeId": "ChIJb5iL48-3yhQRFQeN9ADVf34",
+      "name": "Jobu Smash Burgers",
+      "address": "Kuzguncuk, İcadiye Cd. No:39, 34674 Üsküdar/İstanbul, Türkiye",
+      "neighborhood": "İcadiye Cd., Kuzguncuk",
+      "categoryId": "hamburger",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=9115238370900772629",
+      "coordinates": {
+        "lat": 41.0352789,
+        "lng": 29.030388300000002
+      },
+      "description": "İcadiye Caddesi üzerinde karamelize dantel kenarlı smash köftesi, yumuşak patatesli ekmeği ve trüflü soslarıyla Kuzguncuk’un öne çıkan tekil butik burger durağı.",
+      "whatToOrder": [
+        "Jobu Double Smash",
+        "Truffle Mushroom Smash",
+        "Klasik Cheeseburger"
+      ],
+      "menuFrom": [
+        "Chicken Burger",
+        "Baharatlı Patates",
+        "Ev Yapımı Soslar"
+      ],
+      "alsoTry": [
+        "Trüflü Parmazanlı Patates & Soğuk Shake — Smash burger porsiyonuna eşlik eden çıtır patates ve soğuk içecek ikilisi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Küçük modern dükkan içi tezgah masaları ve al-götür servis · Genç ziyaretçiler ve mahalle müdavimleriyle hızlı tempolu",
+        "Dezavantaj: İcadiye Caddesi üzerindeki küçük dükkan hacmi nedeniyle oturma yeri kısıtlıdır; kalabalık gruplara uygun değildir.",
+        "Ulaşım: İcadiye Caddesi No:39’da tarihi Kuzguncuk Fırını ve Nail Kitabevi’nin birkaç adım ilerisinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "kuz-nail-kitabevi",
+      "placeId": "ChIJhWHB3em3yhQRYQHllNQCKP8",
+      "name": "Nail Kitabevi & Cafe",
+      "address": "Kuzguncuk, İcadiye Cd. No:32, 34674 Üsküdar/İstanbul, Türkiye",
+      "neighborhood": "İcadiye Cd., Kuzguncuk",
+      "categoryId": "kahve",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=18385948590794408289",
+      "coordinates": {
+        "lat": 41.0353728,
+        "lng": 29.030095000000003
+      },
+      "description": "Alt katında nitelikli kitap seçkisi, üst katında ahşap pencere kenarlı okuma ve kahve salonuyla Kuzguncuk İcadiye Caddesi’nin sembolleşmiş kültür-kahve noktası.",
+      "whatToOrder": [
+        "Filtre Kahve",
+        "Türk Kahvesi",
+        "Sıcak Çikolata / Latte"
+      ],
+      "menuFrom": [
+        "Espresso Çeşitleri",
+        "Bitki Çayları",
+        "Günlük Kek & Kurabiye"
+      ],
+      "alsoTry": [
+        "Limonlu / Havuçlu Kek & Fırın Kurabiyeleri — Üst katta kitap karıştırırken kahvenin yanında en çok istenen sade pastane eşlikçileri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Alt kat kitabevi rafları, üst kat nostaljik ahşap masa salonu (bilgisayarla uzun çalışma yerine kitap/sohbet odaklı) · Hafta sonları fotoğraf ve okuma-kahve için gelen ziyaretçilerle yoğun",
+        "Dezavantaj: Hafta sonları üst kat oturma alanı hızla doluyor ve turistik ziyaretçi yoğunluğu sakin okuma atmosferini azaltabiliyor.",
+        "Ulaşım: İcadiye Caddesi No:32 köşesinde Kuzguncuk merkez yürüyüş aksında."
+      ]
+    },
+    {
+      "id": "kuz-glow-coffee",
+      "placeId": "ChIJ--IlRYa3yhQRUo-KNIMGDFg",
+      "name": "Glow Coffee",
+      "address": "Kuzguncuk, Üryanizade Sk. No:1/C, 34674 Üsküdar/İstanbul, Türkiye",
+      "neighborhood": "Üryanizade Sk., Kuzguncuk",
+      "categoryId": "kahve",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=6344453135650164562",
+      "coordinates": {
+        "lat": 41.0366566,
+        "lng": 29.0301834
+      },
+      "description": "Kuzguncuk’un ikonik renkli ahşap evleriyle ünlü Üryanizade Sokağı girişinde sade barı, dengeli espressosu ve taze tatlılarıyla öne çıkan üçüncü nesil kahveci.",
+      "whatToOrder": [
+        "Flat White",
+        "V60 Pour-Over",
+        "Iced Americano"
+      ],
+      "menuFrom": [
+        "Cortado",
+        "Matcha Latte",
+        "Cold Brew"
+      ],
+      "alsoTry": [
+        "San Sebastian / Cookie & Soğuk Demleme — Sokak gezisi arasında kahveye eşlik eden günlük tatlı seçenekleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Kompakt iç bar düzeni ve cumbalı sokak kenarı masaları · Yürüyüş rotası üzerindeki fotoğraf ve kahve severlerle sakin tempolu",
+        "Dezavantaj: Küçük metrekare nedeniyle kış aylarında içeride oturma kapasitesi sınırlıdır.",
+        "Ulaşım: Üsküdar-Beylerbeyi sahil yolundan Üryanizade Sokak No:1/C’ye 1 dakikalık yürüyüş.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "kuz-kosinitza",
+      "placeId": "ChIJSRcvL0q3yhQR6eGFSGQe144",
+      "name": "Kosinitza Coffee",
+      "address": "Kuzguncuk, İcadiye Cd. No:9 D:c, 34674 Üsküdar/İstanbul, Türkiye",
+      "neighborhood": "İcadiye Cd., Kuzguncuk",
+      "categoryId": "kahve",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=10292728889440854505",
+      "coordinates": {
+        "lat": 41.036266999999995,
+        "lng": 29.0296316
+      },
+      "description": "Adını Kuzguncuk’un eski isminden alan; İcadiye Caddesi’nin girişine yakın noktada kaliteli sütlü kahveleri ve ev yapımı tatlılarıyla dikkat çeken samimi mahalle kafesi.",
+      "whatToOrder": [
+        "Cortado",
+        "Flat White",
+        "Iced Latte"
+      ],
+      "menuFrom": [
+        "Filtre Kahve",
+        "Espresso Tonic",
+        "Bitki Çayları"
+      ],
+      "alsoTry": [
+        "Ev Yapımı Tart & Limonlu Kek — Sabah veya akşamüstü kahvesinin yanında sunulan taze ev yapımı dilimler."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Sıcak mahalle kafesi masaları ve cadde kenarı oturması · Sakin semt müdavimleriyle dengeli ve gürültüsüz ortam",
+        "Dezavantaj: Küçük işletme olduğundan kalabalık gruplara uygun geniş masa düzeni yoktur.",
+        "Ulaşım: İcadiye Caddesi No:9C’de Kuzguncuk vapur iskelesi tarafındaki girişte.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "kuz-cinaralti",
+      "placeId": "ChIJY0hRa8K3yhQRVGuwTAT2dz8",
+      "name": "Kuzguncuk Çınaraltı Cafe",
+      "address": "Kuzguncuk, Kuzguncuk Çarşı Cd 3/A, 34672 Üsküdar/İstanbul, Türkiye",
+      "neighborhood": "Çarşı Cd. Sahili, Kuzguncuk",
+      "categoryId": "kahve",
+      "rating": 4.2,
+      "mapsUri": "https://maps.google.com/?cid=4573394444944960340",
+      "coordinates": {
+        "lat": 41.036612399999996,
+        "lng": 29.0295107
+      },
+      "description": "Kuzguncuk İskelesi ve balıkçı teknelerinin hemen yanında, yaşlı çınar gölgesinde Boğaz’a karşı demli çay ve köz/köpüklü Türk kahvesi içilen semtin klasik sahil durağı.",
+      "whatToOrder": [
+        "Köpüklü Türk Kahvesi",
+        "İnce Belli Bardak Çay",
+        "Kaşarlı / Sucuklu Bazlama Tost"
+      ],
+      "menuFrom": [
+        "Limonata",
+        "Menemen",
+        "Soğuk İçecekler"
+      ],
+      "alsoTry": [
+        "Çıtır Tost Çeşitleri & Demli Çay — Sabah sahil yürüyüşünde ya da akşamüstü Boğaz havasında kahve/çaya eşlik eden sade çay bahçesi klasikleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Açık Boğaz kenarı çay bahçesi ve kapalı camlı bölme · Mahalle sakinleri, vapur bekleyenler ve semt gezginleriyle gün boyu canlı",
+        "Dezavantaj: Özel kavrum üçüncü dalga espresso barı değil klasik Türk çay bahçesi çizgisindedir; rüzgarlı havalarda açık oturum serin olabilir.",
+        "Ulaşım: Kuzguncuk Vapur İskelesi ve Çarşı Caddesi No:3/A kıyısında.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "kuz-ismet-baba",
+      "placeId": "ChIJ35jxdbS3yhQRiHxI_ulOkbg",
+      "name": "İsmet Baba Restaurant",
+      "address": "Kuzguncuk, Kuzguncuk Çarşı Cd No:1, 34674 Üsküdar/İstanbul, Türkiye",
+      "neighborhood": "Çarşı Cd. Sahili, Kuzguncuk",
+      "categoryId": "date",
+      "secondaryCategoryIds": [
+        "denemelisin"
+      ],
+      "rating": 4.1,
+      "mapsUri": "https://maps.google.com/?cid=13299497941502295176",
+      "coordinates": {
+        "lat": 41.0366571,
+        "lng": 29.029497299999996
+      },
+      "description": "1951 yılından beri Kuzguncuk Vapur İskelesi yanında doğrudan Boğaz sularının üstündeki ahşap salonda hizmet veren, İstanbul’un en köklü deniz kenarı balık tavernalarından.",
+      "whatToOrder": [
+        "Sıcak Patatesli & Peynirli Üçgen Börek",
+        "Barbunya Pilaki & Lakerda",
+        "Izgara Mevsim Balığı (Lüfer/Palamut)"
+      ],
+      "menuFrom": [
+        "Kalamar Tava",
+        "Tarama & Fava",
+        "Sütlü Levrek Marin"
+      ],
+      "alsoTry": [
+        "Tahinli Fırın Helva & İsmet Baba Böreği — Mekanın balık ve mezeler kadar ün salmış sıcak patatesli-peynirli ara sıcak böreği ve tatlı kapanışı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Doğrudan deniz üstünde pencere kenarlı tarihi ahşap meyhane salonu (rezervasyon şart) · Yılların müdavimleri, yazarlar ve özel akşam yemeği arayan misafirlerle dolu",
+        "Dezavantaj: Deniz kenarı masalar için günler öncesinden rezervasyon gerekir; üst-orta hesap seviyesi ve yoğun saatlerde gürültülü salon atmosferi söz konusudur.",
+        "Ulaşım: Kuzguncuk Çarşı Caddesi No:1’de vapur iskelesinin hemen bitişiğinde.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "kuz-seyret-nakkastepe",
+      "placeId": "ChIJO3hq1Oe3yhQR_L7tK4OGlfw",
+      "name": "Seyret Nakkaştepe",
+      "address": "Nakkaştepe, Kuzguncuk, Mandıra Sk. No:2, 34674 Üsküdar/İstanbul, Türkiye",
+      "neighborhood": "Nakkaştepe, Kuzguncuk",
+      "categoryId": "date",
+      "rating": 4.3,
+      "mapsUri": "https://maps.google.com/?cid=18200601367023566588",
+      "coordinates": {
+        "lat": 41.0325778,
+        "lng": 29.034734399999998
+      },
+      "description": "Kuzguncuk’un Nakkaştepe sırtlarında koru yeşilliğinin içinden Boğaz Köprüsü ve şehir silüetine hakim terasıyla özel akşam yemekleri sunan manzaralı restoran.",
+      "whatToOrder": [
+        "Izgara Bonfile & Kuşkonmaz",
+        "Deniz Levreği / Somon",
+        "Zeytinyağlı Başlangıçlar"
+      ],
+      "menuFrom": [
+        "Serpme Kahvaltı (Gündüz)",
+        "Fırın Makarna Çeşitleri",
+        "Çorbalar"
+      ],
+      "alsoTry": [
+        "Fırınlanmış Kabak / Künefe & Çay-Kahve — Köprü ışıklarına karşı akşam yemeğini kapatan geleneksel tatlı ve sıcak içecek ikramı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Panoramik Boğaz manzaralı teras ve camlı yüksek salon · Özel akşam kutlamaları ve hafta sonu kalabalık aile yemekleri için yoğun",
+        "Dezavantaj: Sırt noktada olduğu için sahilden dik yokuş/araç gerektirir ve hafta sonları çok kalabalıklaşabilir.",
+        "Ulaşım: Kuzguncuk Nakkaştepe Mandıra Sokak No:2’de Millet Bahçesi girişinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "kuz-pastafarian",
+      "placeId": "ChIJJT_JHp-3yhQROvJbgNdQor4",
+      "name": "Pastafarian",
+      "address": "Kuzguncuk, Perihan Abla Sk. No:1-3, 34674 Üsküdar/İstanbul, Türkiye",
+      "neighborhood": "Perihan Abla Sk., Kuzguncuk",
+      "categoryId": "date",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=13736630699935134266",
+      "coordinates": {
+        "lat": 41.0359668,
+        "lng": 29.029949499999997
+      },
+      "description": "Renkli cumbalı evleriyle bilinen Perihan Abla Sokağı köşesinde her gün taze çekilen el yapımı İtalyan makarnaları ve sıcak akşam atmosferiyle öne çıkan butik trattoria.",
+      "whatToOrder": [
+        "Cacio e Pepe / Trüflü Tagliatelle",
+        "Ravioli Çeşitleri",
+        "Taze Lazanya"
+      ],
+      "menuFrom": [
+        "Pappardelle Ragu",
+        "Burrata Başlangıç",
+        "Mevsim Salatası"
+      ],
+      "alsoTry": [
+        "Klasik Tiramisu & Panna Cotta — Taze makarna akşamının sonunda mutlaka masaya söylenen hafif İtalyan tatlıları."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Samimi bistro masaları ve sokak önü akşam oturması · Çiftler ve İtalyan mutfağı seven genç kitleyle akşamları canlı",
+        "Dezavantaj: Küçük sokak içi mekan olduğundan özellikle hafta sonu akşamlarında sıra veya masa bekleme durumu yaşanabiliyor.",
+        "Ulaşım: Kuzguncuk Perihan Abla Sokak No:1-3’te İcadiye Caddesi’nin hemen kesişiminde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "kuz-saranin-bahcesi",
+      "placeId": "ChIJjUpndPW3yhQR_W0HM6a6YJw",
+      "name": "Sara'nın Bahçesi",
+      "address": "İcadiye Mahallesi, Kuzguncuk, İcadiye Cd. No: 144, 34674 Üsküdar/İstanbul, Türkiye",
+      "neighborhood": "İcadiye Cd., Kuzguncuk",
+      "categoryId": "kahvalti",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=11268211490664443389",
+      "coordinates": {
+        "lat": 41.0304157,
+        "lng": 29.034862
+      },
+      "description": "İcadiye Caddesi’nin üst bölümünde yazın yeşillikler içindeki arka bahçesi, kışın yanan kuzine sobası ve sıcak pişisiyle Kuzguncuk’un en samimi serpme kahvaltı adresi.",
+      "whatToOrder": [
+        "Bahçe Serpme Kahvaltı",
+        "Sıcak Ev Pişisi & Sucuk",
+        "Kavurmalı / Peynirli Sahanda Yumurta"
+      ],
+      "menuFrom": [
+        "Menemen",
+        "Ev Yapımı Reçeller",
+        "Demleme Çay"
+      ],
+      "alsoTry": [
+        "Kuzine Üstünde Kızarmış Ekmek & Ev Yapımı Reçel Çeşitleri — Özellikle kış aylarında mekanın simgesi haline gelen kuzine sobası sıcaklığındaki kahvaltı deneyimi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Arka bahçe masaları ve soba ısıtmalı nostaljik ev salonu · Hafta sonu sabahları şehrin her yakasından gelen misafirlerle dolu",
+        "Dezavantaj: İcadiye Caddesi’nin en üst noktasında kalır; hafta sonu kahvaltısı için erken gidilmezse bahçede sıra beklenebilir.",
+        "Ulaşım: İcadiye Caddesi No:144’te Nakkaştepe çıkışına yakın üst sokakta.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "kuz-pita",
+      "placeId": "ChIJ7Yk42-m3yhQRtf9yAZUWLZ8",
+      "name": "Pita Kuzguncuk",
+      "address": "Kuzguncuk, İcadiye Cd. 41/A, 34674 Üsküdar/İstanbul, Türkiye",
+      "neighborhood": "İcadiye Cd., Kuzguncuk",
+      "categoryId": "kahvalti",
+      "rating": 4.3,
+      "mapsUri": "https://maps.google.com/?cid=11469848655212773301",
+      "coordinates": {
+        "lat": 41.035236,
+        "lng": 29.030425599999994
+      },
+      "description": "İcadiye Caddesi’ndeki yaşlı ağaçların altında yer alan kaldırım masalarında çıtır Boşnak böreği, sade kahvaltı tabakları ve sıcak sohbetiyle semtin yıllanmış mahalle kahvaltıcısı.",
+      "whatToOrder": [
+        "Boşnak Böreği (Ispanaklı / Kıymalı)",
+        "Pita Kahvaltı Tabağı",
+        "Menemen"
+      ],
+      "menuFrom": [
+        "Poğaça & Simit Eşlikçileri",
+        "Sahanda Yumurta",
+        "Türk Çayı"
+      ],
+      "alsoTry": [
+        "Ev Yapımı Kurabiye & Kek Dilimleri — Kahvaltı sonrası çay ve kahve eşliğinde mahalle kaldırımında keyfini çıkaranların tatlı tercihi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Cadde kenarı kaldırım masaları ve samimi küçük iç mekan · Yürüyüş yapan semt sakinleri ve fotoğraf severlerle canlı",
+        "Dezavantaj: Yaya ve araç geçişine açık kaldırım cephesinde oturduğunuz için sakin bir avlu sessizliği sunmaz.",
+        "Ulaşım: İcadiye Caddesi No:41/A adresinde Nail Kitabevi çaprazında.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "kuz-ira-exclusive",
+      "placeId": "ChIJB_ne3wm3yhQRED9oC0Y1szc",
+      "name": "Ira Bakery Exclusive Kuzguncuk",
+      "address": "Kuzguncuk Mahallesi, Paşalimanı Caddesi, Kuzguncuk, Tahtalı Bostan Sk. No:116/1, 34674 Üsküdar/İstanbul, Türkiye",
+      "neighborhood": "Tahtalı Bostan Sk., Kuzguncuk",
+      "categoryId": "kahvalti",
+      "rating": 4.3,
+      "mapsUri": "https://maps.google.com/?cid=4013610267872608016",
+      "coordinates": {
+        "lat": 41.035947799999995,
+        "lng": 29.028661200000002
+      },
+      "description": "Kuzguncuk’un Paşalimanı ve Tahtalı Bostan köşesinde katmanlı Fransız kruvasanları, ekşi maya tostları ve tartine tabaklarıyla klasik serpme yerine modern fırın kahvaltısı adresi.",
+      "whatToOrder": [
+        "Tereyağlı / Bademli Kruvasan",
+        "Avokadolu Ekşi Maya Tartine",
+        "Poşe Yumurta Tabakları"
+      ],
+      "menuFrom": [
+        "Peynirli Sandviçler",
+        "Filtre Kahve",
+        "Cortado"
+      ],
+      "alsoTry": [
+        "Fıstıklı Kruvasan & San Sebastian Cheesecake — Pastane vitrininin kahvaltı dışında çay-kahve saatlerinde en hızlı tükenen tatlı ürünleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Modern iç mekan, sokak masaları ve gel-al servisi · Sabahları kaliteli kahve-kruvasan arayan ziyaretçilerle hareketli",
+        "Dezavantaj: Serpme kahvaltı konsepti yoktur; fiyatları mahalle börekçilerine göre artizan fırın bandındadır.",
+        "Ulaşım: Paşalimanı Caddesi ve Tahtalı Bostan Sokak kesişiminde Kuzguncuk sahil yürüyüş yolunda."
+      ]
+    },
+    {
+      "id": "kuz-name-cafe",
+      "placeId": "ChIJpTa2zh63yhQRwRytTCqzsXQ",
+      "name": "Name Kuzguncuk Cafe",
+      "address": "Kuzguncuk, 34674 Üsküdar/İstanbul, Türkiye",
+      "neighborhood": "İcadiye Cd., Kuzguncuk",
+      "categoryId": "kahvalti",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=8408698973533838529",
+      "coordinates": {
+        "lat": 41.0354877,
+        "lng": 29.030442
+      },
+      "description": "Kuzguncuk merkezde cumbalı tarihi doku arasında özenli serpme kahvaltısı, sıcak hamur işleri ve zengin tabak sunumuyla yüksek ziyaretçi hacmine rağmen istikrarını koruyan kahvaltıcı.",
+      "whatToOrder": [
+        "Name Serpme Kahvaltı",
+        "Çıtır Pişi & Patates Kızartması",
+        "Kıymalı / Peynirli Gözleme"
+      ],
+      "menuFrom": [
+        "Menemen",
+        "Sahanda Sucuk",
+        "Taze Limonata"
+      ],
+      "alsoTry": [
+        "Ballı Kaymaklı Pancak / Pişi Tabağı — Serpme dışında kahve yanında paylaşılan tatlı sıcak kahvaltı eşlikçisi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Tarihi sokak dokusuna bakan masa düzeni ve avlu bölümü · Özellikle cumartesi-pazar sabahları oldukça yoğun",
+        "Dezavantaj: Yüksek ziyaretçi sirkülasyonu nedeniyle hafta sonu brunch saatlerinde kalabalık ve servis beklemesi yaşanabiliyor.",
+        "Ulaşım: Kuzguncuk İcadiye merkezinde yürüyüş aksının tam içinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "kuz-tarihi-firin",
+      "placeId": "ChIJE3AMqpm3yhQRhpLSkDuGiZs",
+      "name": "Tarihi Kuzguncuk Fırını",
+      "address": "Kuzguncuk, İcadiye Cd. no:24/a, 34674 Üsküdar/İstanbul, Türkiye",
+      "neighborhood": "İcadiye Cd., Kuzguncuk",
+      "categoryId": "denemelisin",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=11207636738079101574",
+      "coordinates": {
+        "lat": 41.0356634,
+        "lng": 29.029891000000003
+      },
+      "description": "1929’a uzanan geçmişiyle Kuzguncuk’un yaşayan hafızası; mantar kurabiyesi, Prenses tatlısı, acıbadem kurabiyesi ve tahinli çöreğiyle semte gelen herkesin uğradığı tarihi fırın.",
+      "whatToOrder": [
+        "Mantar Kurabiye & Prenses Tatlısı",
+        "Tarihi Acıbadem Kurabiyesi",
+        "Tahinli Çörek / Cevizli Ay Çöreği"
+      ],
+      "menuFrom": [
+        "Ekşi Maya Köy Ekmeği",
+        "Kuru Pasta Çeşitleri",
+        "Poğaça & Börek"
+      ],
+      "alsoTry": [
+        "Kıymalı / Peynirli Su Böreği & Susamlı Çubuk — Tatlı kurabiyeler dışında sabah ve öğle saatlerinde sıcak çıkan klasik fırın çeşitleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Ağırlıklı tezgah al-götür fırın ve yan cephede birkaç küçük oturma alanı · Özellikle hafta sonları İcadiye Caddesi’ne taşan paket kuyruğu",
+        "Dezavantaj: Hafta sonları tezgah önünde kuyruk beklemesi olur ve içeride uzun oturmalı geniş bir kafe düzeni yerine klasik fırın alışverişi öne çıkar.",
+        "Ulaşım: İcadiye Caddesi No:24/A adresinde Nail Kitabevi’nin karşısında.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "kuz-metet-doner",
+      "placeId": "ChIJFVib3Om3yhQR-b4TZvqyliI",
+      "name": "Metet Közde Döner",
+      "address": "Kuzguncuk, İcadiye Cd. No:10, 34674 Üsküdar/İstanbul, Türkiye",
+      "neighborhood": "İcadiye Cd., Kuzguncuk",
+      "categoryId": "denemelisin",
+      "rating": 4.3,
+      "mapsUri": "https://maps.google.com/?cid=2492376232320286457",
+      "coordinates": {
+        "lat": 41.036054199999995,
+        "lng": 29.029544100000003
+      },
+      "description": "Meşe kömürü ateşinin karşısında dikey değil köz yataklı özel ocağında pişen ince yaprak et döneri, taze lavaşı ve belirli günlerde çıkan mumbarıyla Anadolu Yakası’nın kült döner durağı.",
+      "whatToOrder": [
+        "Porsiyon Közde Yaprak Döner",
+        "İnce Lavaş Dürüm Döner",
+        "İskender & Pilav Üstü"
+      ],
+      "menuFrom": [
+        "Süzme Mercimek Çorba",
+        "Çiğ Köfte / Mumbar (Belirli Günlerde)",
+        "Ev Yapımı Ayran"
+      ],
+      "alsoTry": [
+        "Bakır Kasede Açık Ayran & Kaymaklı Kadayıf / Baklava — Döner ziyafetini dengeleyen bol köpüklü açık ayran ve hafif tatlı kapanışı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: İki katlı geleneksel restoran salonu ve İcadiye sokak masaları · Öğle ile akşamüstü arası kapıda masa bekleyenlerle yoğun",
+        "Dezavantaj: Günün geç saatlerinde dönerin bitme ihtimali yüksektir; porsiyon fiyatları standart mahalle dönercilerinin üzerindedir ve hafta sonu sıra beklenir.",
+        "Ulaşım: İcadiye Caddesi No:10’da Kuzguncuk girişine 2 dakikalık yürüme mesafesinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "kuz-bay-manti",
+      "placeId": "ChIJNQPHs-m3yhQRdNqKyztW6IE",
+      "name": "Bay Mantı & Cafe",
+      "address": "No:68 / A, Kuzguncuk, İcadiye Cd. No:68, 34674 Üsküdar/İstanbul, Türkiye",
+      "neighborhood": "İcadiye Cd., Kuzguncuk",
+      "categoryId": "denemelisin",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=9360826640307509876",
+      "coordinates": {
+        "lat": 41.03392230000001,
+        "lng": 29.0311755
+      },
+      "description": "İcadiye Caddesi’nin orta kesiminde ince el açması Kayseri mantısı, çıtır mantı, etli çiğ börek ve zeytinyağlı yaprak sarmasıyla yıllardır yüksek beğenisini koruyan aile işletmesi.",
+      "whatToOrder": [
+        "El Açması Haşlama Mantı",
+        "Karışık Çıtır & Klasik Mantı",
+        "Kıymalı Çiğ Börek"
+      ],
+      "menuFrom": [
+        "Zeytinyağlı Yaprak Sarma",
+        "İçli Köfte",
+        "Ev Yapımı Limonata"
+      ],
+      "alsoTry": [
+        "Zeytinyağlı Sarma & Vişneli / Cevizli Ev Tatlısı — Mantı tabağı öncesinde sarma ve sonrasında ev yapımı hafif tatlı eşlikçisi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Aydınlık iç salon, küçük arka bölüm ve İcadiye ön masaları · Öğle ve akşam erken saatlerinde sakin aile yemekleri için tercih edilir",
+        "Dezavantaj: Garsonlu restoran konforundan ziyade sade, samimi bir mantı evi düzenindedir.",
+        "Ulaşım: İcadiye Caddesi No:68’de bostanın biraz yukarısında yürüyüş hattında.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "kuz-dilim-pastanesi",
+      "placeId": "ChIJZzA8D8K3yhQRQxmZmZ_HhOQ",
+      "name": "Dilim Pastanesi",
+      "address": "Kuzguncuk Mahallesi Paşa Limanı Caddesi No:126 No:126, Kuzguncuk, D:B, 34674 Üsküdar/İstanbul, Türkiye",
+      "neighborhood": "Paşalimanı Cd., Kuzguncuk",
+      "categoryId": "denemelisin",
+      "rating": 4.3,
+      "mapsUri": "https://maps.google.com/?cid=16466505625864051011",
+      "coordinates": {
+        "lat": 41.0362498,
+        "lng": 29.0292486
+      },
+      "description": "Paşalimanı sahil hattında gösterişsiz mahalle ruhunu koruyan; günlük çikolatalı ekleri, meyveli pastaları, poğaçaları ve yazın ev yapımı dondurmasıyla Kuzguncukluların müdavim pastanesi.",
+      "whatToOrder": [
+        "Taze Çikolatalı Ekler",
+        "Mevsim Meyveli Turta / Pasta",
+        "Poğaça & Ay Çöreği"
+      ],
+      "menuFrom": [
+        "Sade / Fıstıklı Dondurma (Yazın)",
+        "Kuru Pasta Çeşitleri",
+        "Çay & Türk Kahvesi"
+      ],
+      "alsoTry": [
+        "Yazlık Külahta Ev Yapımı Dondurma — Kuzguncuk sahil yürüyüşünde sıcak günlerde vitrinden en çok alınan geleneksel dondurma."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Klasik küçük mahalle pastanesi masaları ve hızlı paket vitrini · Çevre sakinleri ve sabah fırın alışverişi yapanlarla samimi",
+        "Dezavantaj: Tarihi İcadiye fırınları kadar gösterişli değil, tamamen sade yerel mahalle pastanesi çizgisindedir.",
+        "Ulaşım: Kuzguncuk İskele ve Paşalimanı Caddesi No:126 üzerinde sahil yürüyüş yolunda."
+      ]
+    },
+    {
+      "id": "kuz-ekmek-teknesi",
+      "placeId": "ChIJ0Q4Y3um3yhQRRTEOcXiodk0",
+      "name": "Ekmek Teknesi",
+      "address": "Kuzguncuk, İcadiye Cd. No:17, 34674 Üsküdar/İstanbul, Türkiye",
+      "neighborhood": "İcadiye Cd., Kuzguncuk",
+      "categoryId": "denemelisin",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=5581834023418605893",
+      "coordinates": {
+        "lat": 41.035871,
+        "lng": 29.029942000000002
+      },
+      "description": "Türk televizyon tarihinin sevilen mahalle dizisine adını veren tarihi ahşap dükkanda, günlük ev yemekleri, mantı ve ızgara köfte sunan nostaljik Kuzguncuk lokantası.",
+      "whatToOrder": [
+        "Günün Tencere Yemeği & Pilav",
+        "Ev Yapımı Mantı",
+        "Izgara Köfte & Piyaz"
+      ],
+      "menuFrom": [
+        "Zeytinyağlı Yaprak Sarma",
+        "Mercimek Çorba",
+        "Sütlaç"
+      ],
+      "alsoTry": [
+        "Fırın Sütlaç & Osmanlı Şerbeti / Ayran — Nostaljik mekanda yemek sonrası tercih edilen geleneksel sütlü tatlı ve içecek."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Tarihi film/dizi atmosferini koruyan ahşap dükkan ve küçük cadde masaları · Özellikle hafta sonları dizinin anısını görmek isteyen ziyaretçilerle yoğun",
+        "Dezavantaj: Tarihi ve turistik bilinirliği nedeniyle küçük dükkanda hafta sonu yoğunluğu ve standart esnaf lokantasına göre biraz daha turistik kalabalık yaşanabiliyor.",
+        "Ulaşım: İcadiye Caddesi No:17’de Tarihi Kuzguncuk Fırını’nın karşısında.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    }
+  ],
+  "nearbyVenues": []
+}
