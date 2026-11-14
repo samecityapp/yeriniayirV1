@@ -184,7 +184,11 @@ test('V3.3 dynamic denemelisin, Moda 5-slot iconic coffee & factual view accurac
   const countDenemelisin = (snap) => snap.venues.filter((v) => v.categoryId === 'denemelisin').length;
   assert.equal(countDenemelisin(moda), 10, 'Moda denemelisin should have 10 authentic venues');
   assert.equal(countDenemelisin(carsi), 10, 'Kadikoy denemelisin should have 10 heritage venues');
-  assert.equal(countDenemelisin(yeldegirmeni), 4, 'Yeldegirmeni denemelisin must not be artificially padded to 10');
+  assert.equal(countDenemelisin(yeldegirmeni), 7, 'Yeldegirmeni denemelisin should have 7 authentic venues');
+  assert.ok(
+    yeldegirmeni.venues.every((v) => typeof v.neighborhood === 'string' && v.neighborhood.includes(',')),
+    'Every Yeldegirmeni venue must expose a street/micro-area sub-location label'
+  );
   assert.equal(countDenemelisin(caddebostan), 8, 'Caddebostan denemelisin should have 8 authentic venues');
   assert.equal(countDenemelisin(suadiye), 7, 'Suadiye denemelisin should have 7 authentic venues');
 
@@ -590,6 +594,24 @@ test('policy gates reject closed, chain, out-of-neighborhood, and degraded candi
   assert.equal(fkMap.get('ctrl-fk-paysage-below-44').accepted, false);
   assert.ok(fkMap.get('ctrl-fk-paysage-below-44').reason.includes('below_quality_threshold'));
 
+  const yelAudit = JSON.parse(
+    fs.readFileSync(path.join(ROOT, 'work/gastronomy-v3/istanbul-kadikoy-yeldegirmeni.audit.json'), 'utf8')
+  );
+  const yelMap = new Map(yelAudit.decisions.map((d) => [d.id, d]));
+  for (const chainId of [
+    'ctrl-yel-adile-sultan-chain',
+    'ctrl-yel-coffee-manifesto-chain',
+    'ctrl-yel-balta-chain',
+    'ctrl-yel-beylerbeyi-chain',
+  ]) {
+    assert.equal(yelMap.get(chainId).accepted, false);
+    assert.equal(yelMap.get(chainId).reason, 'chain_or_franchise');
+  }
+  assert.equal(yelMap.get('ctrl-yel-kuff-below-44').accepted, false);
+  assert.ok(yelMap.get('ctrl-yel-kuff-below-44').reason.includes('below_quality_threshold'));
+  assert.equal(yelMap.get('ctrl-yel-carbo-below-44').accepted, false);
+  assert.ok(yelMap.get('ctrl-yel-carbo-below-44').reason.includes('below_quality_threshold'));
+
   const kuzAudit = JSON.parse(
     fs.readFileSync(path.join(ROOT, 'work/gastronomy-v3/istanbul-uskudar-kuzguncuk.audit.json'), 'utf8')
   );
@@ -770,6 +792,93 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
     if (slug === 'kadikoy') {
       const brekkieCard = f.venues.find((v) => v.id === 'carsi-brekkie');
       assert.equal(brekkieCard?.location, 'Yoğurtçu Parkı, Kadıköy');
+    }
+    if (slug === 'yeldegirmeni') {
+      assert.equal(p.getLocationBySlug('yeldegirmeni')?.locative, "Yeldeğirmeni'nde");
+      assert.equal(p.getLocationBySlug('yeldegirmeni-kadikoy')?.slug, 'yeldegirmeni');
+      assert.ok(
+        p.searchLocations('rasimpasa').some((l) => l.slug === 'yeldegirmeni'),
+        'searchLocations("rasimpasa") must match yeldegirmeni'
+      );
+      assert.equal(p.getRegionCategories(disc.region.id).length, 6, 'yeldegirmeni must expose 6 categories');
+      assert.equal(f.venues.length, 28, 'yeldegirmeni must expose 28 verified venues');
+      assert.ok(
+        f.venues.every((v) => typeof v.location === 'string' && v.location.includes(', Yeldeğirmeni')),
+        'Every Yeldegirmeni card location must use street + , Yeldeğirmeni label'
+      );
+      assert.equal(
+        p.getCategoryResult(disc.region.id, 'pizza').coreVenues[0].name,
+        'Salepepe Tokyo Style Pizza',
+        'Yeldegirmeni pizza #1 must be Salepepe Tokyo Style Pizza'
+      );
+      assert.equal(
+        p.getCategoryResult(disc.region.id, 'hamburger').coreVenues[0].name,
+        'Bamb’s Smash Burger',
+        'Yeldegirmeni hamburger #1 must be Bamb’s Smash Burger'
+      );
+      assert.equal(
+        p.getCategoryResult(disc.region.id, 'kahve').coreVenues[0].name,
+        'Yeldeğirmeni Kurukahvecisi',
+        'Yeldegirmeni kahve #1 must be Yeldeğirmeni Kurukahvecisi'
+      );
+      assert.equal(
+        p.getCategoryResult(disc.region.id, 'date-mekanlari').coreVenues[0].name,
+        'La Pasta Mamma',
+        'Yeldegirmeni date #1 must be La Pasta Mamma'
+      );
+      assert.equal(
+        p.getCategoryResult(disc.region.id, 'kahvalti').coreVenues[0].name,
+        'Flake Breakfast & More',
+        'Yeldegirmeni kahvalti #1 must be Flake Breakfast & More'
+      );
+      assert.equal(
+        p.getCategoryResult(disc.region.id, 'denemelisin').coreVenues[0].name,
+        'A.Ç.T. Dürüm & Meze',
+        'Yeldegirmeni denemelisin #1 must be A.Ç.T. Dürüm & Meze'
+      );
+      const names = f.venues.map((v) => v.name);
+      for (const expected of [
+        'Salepepe',
+        'Lento Napoli',
+        'Porto Napoli',
+        'Triger',
+        'Bamb’s',
+        '3 Burger',
+        'Calzone Burger',
+        'Yeldeğirmeni Kurukahvecisi',
+        'Albero Della Vita',
+        'Yell Coffee',
+        'Village Coffee',
+        'Story Coffee',
+        'La Pasta Mamma',
+        'Borden',
+        'Javel',
+        'Chapel Pub',
+        'Flake',
+        'Rucio Breakfast',
+        'Müjgan',
+        'Bop!',
+        'Mill Bakery',
+        'A.Ç.T.',
+        'Paitan Ramen',
+        'Hoş Sefa',
+        'Müdavim Lokantası',
+        'Leylak Kitchen',
+        'Katibe Hanım',
+        'Kadıköy Lahmacun',
+      ]) {
+        assert.ok(names.some((n) => n.includes(expected)), `yeldegirmeni missing ${expected}`);
+      }
+      for (const forbidden of [
+        'Coffee Manifesto',
+        'Balta Burger',
+        'Adile Sultan',
+        'Beylerbeyi Profiterol',
+        'Küff',
+        'Carbo Smash',
+      ]) {
+        assert.equal(names.some((n) => n.includes(forbidden)), false, `yeldegirmeni must exclude ${forbidden}`);
+      }
     }
     if (slug === 'bostanci') {
       assert.equal(p.getLocationBySlug('bostanci')?.locative, "Bostancı'da");
@@ -1220,7 +1329,7 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
 
 test('V3.6 strict chain blocklist, coffee purity, and >=4.4 quality floor across all 18 snapshots', () => {
   const bannedRe =
-    /pizza v|kaffee schütz|kaffee schutz|adile sultan|hane çikolata|çanak kebap|brand burger|butcher's burger|vakko|filizler köftecisi|çengelköy börekçisi|kirpi|intiba döner|la veria|döner bank|doner bank|burger evim|nazar profiterol|pizzalazza|simple co|5masa|develi|bedri usta|divan brasserie|perran ocakbaşı/i;
+    /pizza v|kaffee schütz|kaffee schutz|adile sultan|hane çikolata|çanak kebap|brand burger|butcher's burger|vakko|filizler köftecisi|çengelköy börekçisi|kirpi|intiba döner|la veria|döner bank|doner bank|burger evim|nazar profiterol|pizzalazza|simple co|5masa|develi|bedri usta|divan brasserie|perran ocakbaşı|coffee manifesto|balta burger|beylerbeyi profiterol/i;
   const nonCoffeeRe = /çikolata|cikolata|pastanesi|unlu mamülleri|börek|borek|baklava/i;
 
   for (const { key, data } of snapshots) {

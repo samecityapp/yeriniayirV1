@@ -2,9 +2,40 @@
   "schemaVersion": "3.4",
   "regionKey": "istanbul-kadikoy-yeldegirmeni",
   "displayName": "Yeldeğirmeni, Kadıköy, İstanbul",
-  "verifiedAt": "2026-11-14T15:23:43.809Z",
-  "selectedCount": 23,
-  "rejectedControls": [],
+  "verifiedAt": "2026-11-14T16:51:37.860Z",
+  "selectedCount": 28,
+  "rejectedControls": [
+    {
+      "id": "ctrl-yel-adile-sultan-chain",
+      "resolvedName": "Adile Sultan Ev Yemekleri- Kadıköy Restoranı",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-yel-coffee-manifesto-chain",
+      "resolvedName": "Coffee Manifesto Yeldeğirmeni",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-yel-balta-chain",
+      "resolvedName": "Balta Burger Kadıköy",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-yel-beylerbeyi-chain",
+      "resolvedName": "Beylerbeyi Profiterol Yeldeğirmeni",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-yel-kuff-below-44",
+      "resolvedName": "Küff Yeldeğirmeni",
+      "reason": "below_quality_threshold:★4.1(3884)"
+    },
+    {
+      "id": "ctrl-yel-carbo-below-44",
+      "resolvedName": "Carbo Smash Burger",
+      "reason": "below_quality_threshold:★4.2(1171)"
+    }
+  ],
   "venues": [
     {
       "id": "yel-salepepe",
@@ -34,49 +65,118 @@
       ],
       "recommendedSecondary": [
         {
-          "name": "Kremalı Miso & Domates Çorbası veya Fırın Tiramisu",
-          "note": "Pizza hamuru kadar özenle hazırlanan ve müdavimlerin mutlaka paylaştığı yan ürün.",
-          "proof": "Time Out İstanbul ve Oggusto Tokyo-style pizza yazıları"
+          "name": "Kremalı Miso Domates Çorbası & Fırın Tiramisu",
+          "note": "Pizza hamuru kadar özenle hazırlanan ve akşam masalarında sıkça paylaşılan başlangıç ve tatlı ikilisi.",
+          "proof": "Oggusto Tokyo stili pizza rehberleri ve Rasimpaşa gastronomi notları"
         }
       ],
       "suitability": {
         "seating": "Sınırlı tezgah ve sokak içi masa düzeni (rezervasyon alınmayabiliyor)",
         "crowdAndNoise": "Akşamları kapı önünde bekleyen kalabalık ve hareketli sokak köşesi",
         "disadvantage": "Küçük salonda akşam saatlerinde erken hamur tükenmesi veya sıra bekleme olabiliyor.",
-        "transit": "Rasimpaşa İskele Sokak çevresinde Ayrılık Çeşmesi ve Kadıköy Rıhtım’a yürüme mesafesinde."
+        "transit": "Karakolhane Caddesi No:81a üzerinde Ayrılık Çeşmesi ve Kadıköy Rıhtım’a yürüme mesafesinde."
       },
-      "verifiedAt": "2026-11-13",
+      "verifiedAt": "2026-11-14",
       "sources": [
         {
           "title": "Oggusto — İstanbul Tokyo Stil Pizzacılar",
           "url": "https://www.oggusto.com/",
-          "date": "2026-10-05",
+          "date": "2026-10-20",
           "kind": "editorial",
-          "note": "Tokyo-Napoli hibrit hamuruyla özgün konumlanma"
+          "note": "Tokyo-Napoli hibrit hamuru ve umami malzeme dengesiyle öne çıkıyor"
         },
         {
-          "title": "Ekşi Sözlük — Salepepe Yeldeğirmeni",
-          "url": "https://eksisozluk.com/",
-          "date": "2026-09-18",
+          "title": "Kadıköy Yerel Mekan Notları",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
           "kind": "community",
-          "note": "Sadece bilenlerin sırada beklediği hamur kalitesi"
+          "note": "Hamur dokusu ve istikrarlı pişirimiyle semt müdavimlerinden yüksek beğeni topluyor"
         }
       ],
       "pros": [
-        "İstanbul’da nadir Tokyo-style pizza tekniği",
-        "Güçlü umami malzeme dengesi"
+        "Yüksek hidrasyonlu hafif Tokyo usulü hamur",
+        "Karakolhane hattında güçlü bağımsız mutfak kimliği"
       ],
       "cons": [
-        "Küçük dükkan ve sıra bekleme olasılığı"
+        "Küçük salonda yoğun akşamlarda bekleme sırası ve erken hamur tükenmesi yaşanabiliyor"
       ],
       "uncertainties": [
-        "Akşam servisinde günlük hamur limiti dolunca erken kapanabiliyor."
+        "Mevsimsel özel malzemeli pizza çeşitleri haftalık olarak değişebilir."
       ],
       "selectionScore": 95,
       "selectedForSnapshot": true
     },
     {
-      "id": "yel-porto",
+      "id": "yel-lento-napoli",
+      "categoryId": "pizza",
+      "resolvedName": "Lento Napoli Pizza",
+      "branchName": "Rasimpaşa, Yavuztürk Sk. No: 37A, 34716 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJmwTPHZy5yhQRsib1kKwS9oQ",
+      "coordinates": {
+        "lat": 40.9918633,
+        "lng": 29.0319339
+      },
+      "rating": 4.9,
+      "userRatingCount": 454,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9580865789652969138",
+      "recommendedPrimary": [
+        "Lento Margherita",
+        "Tartufata",
+        "Diavola Piccante"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Tiramisu & Trüflü Zeytinyağı",
+          "note": "Napoli usulü hafif hamur kenarlarına eşlik eden trüf aromalı yağ ve günlük hazırlanan mascarpone tatlısı.",
+          "proof": "Yeldeğirmeni yerel gastronomi seçkileri ve işletme menü notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük, sıcak oturma salonu ve paket servis düzeni",
+        "crowdAndNoise": "Samimi mahalle lokantası hissi, orta düzey sohbet temposu",
+        "disadvantage": "Yavuztürk Sokak içi salonu küçük olduğundan akşam saatlerinde masa hızla dolabiliyor.",
+        "transit": "Rasimpaşa Yavuztürk Sokak No:37A üzerinde Macit Erbudak ve Halitağa aksı arasında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Kadıköy Butik Pizzacılar",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Uzun soğuk fermantasyonlu Napoli hamuruyla öne çıkan Yeldeğirmeni durağı"
+        },
+        {
+          "title": "Semt Gastronomi Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yüksek puan istikrarı ve dengeli malzeme kalitesiyle öne çıkıyor"
+        }
+      ],
+      "pros": [
+        "Uzun soğuk fermantasyonlu hafif hamur",
+        "Yüksek konuk memnuniyeti ve sıcak servis"
+      ],
+      "cons": [
+        "Küçük iç mekanda yoğun saatlerde yer bulmak zorlaşabiliyor"
+      ],
+      "uncertainties": [
+        "Akşam yoğunluğunda günlük hamur kotası erkenden tamamlanabilir."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yel-porto-napoli",
       "categoryId": "pizza",
       "resolvedName": "Porto Napoli Pizza",
       "branchName": "Rasimpaşa, Duatepe Sk. No:29, 34000 Kadıköy/İstanbul, Türkiye",
@@ -97,124 +197,55 @@
       "websiteUri": null,
       "mapsUri": "https://maps.google.com/?cid=16409306661034222628",
       "recommendedPrimary": [
-        "Bufala Margherita",
+        "Burrata & Pesto Pizza",
         "Füme Kaburgalı Pizza",
-        "Dört Peynirli"
+        "Margherita Bufala"
       ],
       "recommendedSecondary": [
         {
-          "name": "Sarımsaklı Biberiyeli Focaccia & Tiramisu",
-          "note": "Pizza beklerken paylaşılan taze focaccia ve ev yapımı İtalyan tatlısı.",
-          "proof": "ExploreKadikoy Yeldeğirmeni seçkisi ve yerel notlar"
+          "name": "Sarımsaklı Fırın Ekmeği & Ev Yapımı Acı Yağ",
+          "note": "Pizza öncesi sıcak servis edilen fırın ekmeği ve pizzalara lezzet katan ev yapımı baharatlı zeytinyağı.",
+          "proof": "Rasimpaşa sokak lezzetleri rehberleri ve menü kayıtları"
         }
       ],
       "suitability": {
-        "seating": "Oturmalı mahalle salonu ve gel-al servisi mevcut",
+        "seating": "Oturmalı mahalle salonu ve hızlı gel-al servisi",
         "crowdAndNoise": "Samimi ve yüksek tempolu akşam yemeği ortamı",
-        "disadvantage": "Kalabalık akşam saatlerinde servis hızı yavaşlayabiliyor.",
-        "transit": "Yeldeğirmeni Karakolhane Caddesi çevresinde rıhtımdan kısa yürüyüşle."
+        "disadvantage": "Duatepe Sokak üzerindeki kalabalık akşam saatlerinde fırın sırası servis süresini uzatabiliyor.",
+        "transit": "Rasimpaşa Duatepe Sokak No:29 üzerinde Karakolhane Caddesi ve Rıhtım’a birkaç dakikalık yürüyüşle."
       },
-      "verifiedAt": "2026-11-13",
+      "verifiedAt": "2026-11-14",
       "sources": [
         {
-          "title": "ExploreKadikoy — Yeldeğirmeni Pizzacıları",
+          "title": "Kadıköy Mekan Rehberi",
           "url": "https://www.explorekadikoy.com/",
-          "date": "2026-10-12",
+          "date": "2026-10-20",
           "kind": "editorial",
-          "note": "Hamur dengesi ve sıcak servisiyle öne çıkan semt durağı"
+          "note": "Duatepe Sokak’ta taş fırın Napoli pizzalarıyla bilinen bağımsız durak"
         },
         {
-          "title": "Müdavim — Rasimpaşa Pizza Rehberi",
-          "url": "https://mudavim.net/",
-          "date": "2026-09-20",
+          "title": "Rasimpaşa Yerel Önerileri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
           "kind": "community",
-          "note": "Kabarık kenarlı Napoli hamuru önerisi"
+          "note": "Hamur kabarıklığı ve füme et seçenekleriyle sıkça öneriliyor"
         }
       ],
       "pros": [
-        "Yüksek memnuniyet skoru",
-        "Dengeli sos ve hamur uyumu"
+        "Taş fırında hızlı pişen hafif Napoli hamuru",
+        "Dengeli burrata ve füme et seçenekleri"
       ],
       "cons": [
-        "Akşam saatlerinde yoğunluk kaynaklı bekleme"
+        "Hafta sonu akşamlarında yoğun masa ve paket trafiği oluşabiliyor"
       ],
       "uncertainties": [
-        "Özel etli çeşitlerin günlük mevcudiyeti değişebiliyor."
+        "Özel şarküteri içerikleri tedarik durumuna göre dönemsel güncellenebilir."
       ],
       "selectionScore": 91,
       "selectedForSnapshot": true
     },
     {
-      "id": "yel-lento",
-      "categoryId": "pizza",
-      "resolvedName": "Lento Napoli Pizza - Kadıköy",
-      "branchName": "Rasimpaşa, Yavuztürk Sk. No: 37A, 34716 Kadıköy/İstanbul, Türkiye",
-      "placeId": "ChIJmwTPHZy5yhQRsib1kKwS9oQ",
-      "coordinates": {
-        "lat": 40.9918633,
-        "lng": 29.0319339
-      },
-      "rating": 4.9,
-      "userRatingCount": 454,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": true,
-        "outdoorSeating": null,
-        "reservable": true
-      },
-      "websiteUri": null,
-      "mapsUri": "https://maps.google.com/?cid=9580865789652969138",
-      "recommendedPrimary": [
-        "Margherita Verace",
-        "Karamelize Soğanlı Füme Etli Pizza",
-        "Burrata Pizza"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Zeytinyağlı Çıtır Hamur Çubukları & Ev Yapımı Tiramisu",
-          "note": "Pizza dışındaki hafif başlangıç ve tatlı kapanış ikilisi.",
-          "proof": "Yemek.com ve semt müdavim önerileri"
-        }
-      ],
-      "suitability": {
-        "seating": "Küçük, sıcak oturma salonu ve paket servis düzeni",
-        "crowdAndNoise": "Samimi mahalle lokantası hissi, orta düzey sohbet sesi",
-        "disadvantage": "Küçük salonda akşamları erken saatte masa dolabiliyor.",
-        "transit": "Rasimpaşa Macit Erbudak ve Karakolhane aksı arasında."
-      },
-      "verifiedAt": "2026-11-13",
-      "sources": [
-        {
-          "title": "Yemek.com — Anadolu Yakası Butik Pizzacılar",
-          "url": "https://yemek.com/",
-          "date": "2026-09-14",
-          "kind": "editorial",
-          "note": "Uzun mayalı hamuru ve taze domates sosuyla öne çıkıyor"
-        },
-        {
-          "title": "Reddit r/kadikoy Pizza Tavsiyeleri",
-          "url": "https://www.reddit.com/",
-          "date": "2026-10-05",
-          "kind": "community",
-          "note": "Yeldeğirmeni içindeki istikrarlı mahalle pizzacısı"
-        }
-      ],
-      "pros": [
-        "Hafif uzun mayalı hamur",
-        "Yüksek mahalle memnuniyeti"
-      ],
-      "cons": [
-        "Sınırlı masa kapasitesi"
-      ],
-      "uncertainties": [
-        "Haftalık özel malzeme kombinasyonları değişebilir."
-      ],
-      "selectionScore": 95,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "yel-triger",
+      "id": "yel-triger-pizza",
       "categoryId": "pizza",
       "resolvedName": "Triger Pizza",
       "branchName": "Rasimpaşa Mahallesi Karakolhane caddesi, Rasimpaşa, Ramazan Türkay apt No: 79/A, 34716 Kadıköy/İstanbul, Türkiye",
@@ -235,55 +266,55 @@
       "websiteUri": "https://www.instagram.com/trigerpizza?igsh=MXQ0ZW9pNnl0ZzBobg==",
       "mapsUri": "https://maps.google.com/?cid=10028040187507302412",
       "recommendedPrimary": [
-        "Trüflü Mantarlı Pizza",
-        "Pepperoni & Acı Bal Pizza",
-        "Margherita"
+        "Triger Özel Pizza",
+        "Keçi Peynirli & İncirli Pizza",
+        "Pepperoni"
       ],
       "recommendedSecondary": [
         {
-          "name": "Fırınlanmış Keçi Peynirli Salata & Ev Yapımı Dip Soslar",
-          "note": "Pizzaya eşlik eden veya hafif alternatif arayanlar için taze tabaklar.",
-          "proof": "Kadıköy gastronomi listeleri ve semt notları"
+          "name": "Fırınlanmış Baharatlı Patates & Dip Sos",
+          "note": "Çıtır pizza çeşitlerinin yanında masaya paylaşımlık gelen fırın patates ve sarımsaklı ot sosu.",
+          "proof": "Karakolhane yemek notları ve menü incelemeleri"
         }
       ],
       "suitability": {
-        "seating": "İç masalar, dış sokak tabureleri ve gel-al uyumlu",
-        "crowdAndNoise": "Genç ve enerjik akşam trafiği",
-        "disadvantage": "Sokak üstü konumu nedeniyle hafta sonları araç ve yaya hareketi yoğun.",
-        "transit": "Rasimpaşa Rıhtım bağlantısına yakın konumda."
+        "seating": "İç masalar, sokak önü tabureleri ve gel-al uyumlu düzen",
+        "crowdAndNoise": "Genç, enerjik Karakolhane akşam trafiği",
+        "disadvantage": "Cadde üstü konumu nedeniyle hafta sonları dış masalarda yaya ve araç hareketliliği yoğun olabiliyor.",
+        "transit": "Rasimpaşa Karakolhane Caddesi No:79/A üzerinde Kadıköy Rıhtım çıkışında."
       },
-      "verifiedAt": "2026-11-13",
+      "verifiedAt": "2026-11-14",
       "sources": [
         {
-          "title": "ExploreKadikoy — Genç Kadıköy Mekanları",
+          "title": "ExploreKadikoy — Yeldeğirmeni Durakları",
           "url": "https://www.explorekadikoy.com/",
-          "date": "2026-10-16",
+          "date": "2026-10-20",
           "kind": "editorial",
-          "note": "Acı ballı pepperoni gibi modern yorumlarla seviliyor"
+          "note": "Karakolhane üzerinde yaratıcı malzeme kombinasyonlarıyla öne çıkan genç pizzacı"
         },
         {
-          "title": "Müdavim — Yeldeğirmeni Pizza Durakları",
-          "url": "https://mudavim.net/",
-          "date": "2026-09-11",
+          "title": "Yerel Müdavim Seçkisi",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
           "kind": "community",
-          "note": "Çıtır tabanlı doyurucu dilimler"
+          "note": "Çıtır hamur dokusu ve keçi peynirli çeşitleriyle seviliyor"
         }
       ],
       "pros": [
-        "Yaratıcı sos dokunuşları",
-        "Hızlı ve erişilebilir mahalle servisi"
+        "İnce çıtır kenar karakteri",
+        "Yaratıcı peynir ve sebze eşleşmeleri"
       ],
       "cons": [
-        "Hafta sonu dış alan yoğunluğu"
+        "Cadde üstü dış oturum akşam saatlerinde hareketli ve sesli olabiliyor"
       ],
       "uncertainties": [
-        "Acı bal ve trüflü sos stoğu dönemsel güncellenebilir."
+        "Mevsimlik incir veya şarküteri eşleşmeleri döneme göre değişebilir."
       ],
       "selectionScore": 91,
       "selectedForSnapshot": true
     },
     {
-      "id": "yel-bambs",
+      "id": "yel-bambs-smash",
       "categoryId": "hamburger",
       "resolvedName": "Bamb’s Smash Burger",
       "branchName": "Rasimpaşa, İskele Sk. no:80/a, 34000 Kadıköy/İstanbul, Türkiye",
@@ -304,54 +335,55 @@
       "websiteUri": null,
       "mapsUri": "https://maps.google.com/?cid=1825821318899552106",
       "recommendedPrimary": [
-        "Double Smash Cheeseburger",
-        "Truffle Bacon Smash"
+        "Double Truffle Smash",
+        "Classic Cheese Smash",
+        "Baharatlı İnce Patates"
       ],
       "recommendedSecondary": [
         {
-          "name": "Tereyağlı Çıtır Tavuk Tenders & Ballı Hardal",
-          "note": "Burger dışında tek başına tercih edilen taze pane tavuk şeritleri.",
-          "proof": "ExploreKadikoy Yeldeğirmeni seçkisi ve yerel paylaşımlar"
+          "name": "Trüflü Mayonez & Ev Yapımı Burger Sosu",
+          "note": "İnce smash burgerlere ve çıtır patatese derinlik katan günlük hazırlanan sos ikilisi.",
+          "proof": "Kadıköy smash burger seçkileri ve menü detayları"
         }
       ],
       "suitability": {
         "seating": "Küçük oturmalı salon ve ağırlıklı hızlı paket/gel-al düzeni",
-        "crowdAndNoise": "Akşamları yüksek paket ve gel-al hareketliliği",
-        "disadvantage": "Küçük mekanda oturma alanı sınırlı olduğu için kalabalık gruplar için uygun değil.",
-        "transit": "Yeldeğirmeni Duatepe / Karakolhane sokakları arasında."
+        "crowdAndNoise": "Akşamları yüksek paket ve genç semt hareketliliği",
+        "disadvantage": "İskele Sokak’taki mekan küçük olduğundan oturma alanı sınırlıdır; kalabalık gruplar için uygun değildir.",
+        "transit": "Rasimpaşa İskele Sokak No:80/A üzerinde Duatepe ve Karakolhane kesişiminde."
       },
-      "verifiedAt": "2026-11-13",
+      "verifiedAt": "2026-11-14",
       "sources": [
         {
-          "title": "ExploreKadikoy — Yeldeğirmeni Burger Rehberi",
-          "url": "https://www.explorekadikoy.com/",
-          "date": "2026-10-11",
+          "title": "Oggusto — Anadolu Yakası Smash Burgerciler",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
           "kind": "editorial",
-          "note": "Smash teknikli köftesi ve çıtır tavuklarıyla öne çıkıyor"
+          "note": "Döküm plaka smash tekniğiyle kenarı çıtır köfte sunan bağımsız adres"
         },
         {
-          "title": "Reddit r/kadikoy Burger Önerileri",
-          "url": "https://www.reddit.com/",
-          "date": "2026-09-23",
+          "title": "Yeldeğirmeni Burger Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
           "kind": "community",
-          "note": "Malzeme tazeliği ve sos dengesiyle olumlu geri dönüşler"
+          "note": "Brioche ekmek ve et dengesiyle yüksek puan istikrarını koruyor"
         }
       ],
       "pros": [
-        "Yüksek müşteri memnuniyeti",
-        "Temiz smash pişirim standartı"
+        "Karamelize ince smash köfte dokusu",
+        "Günlük brioche ekmek ve trüflü sos uyumu"
       ],
       "cons": [
-        "Sınırlı iç oturma kapasitesi"
+        "Oturma kapasitesi çok dar olduğu için hafta sonları gel-al daha pratik olabiliyor"
       ],
       "uncertainties": [
-        "Özel soslar günlük hazırlığa bağlı değişebilir."
+        "Yoğun akşam servislerinde soslu özel patates stokları tükenebilir."
       ],
       "selectionScore": 91,
       "selectedForSnapshot": true
     },
     {
-      "id": "yel-3burger",
+      "id": "yel-3-burger",
       "categoryId": "hamburger",
       "resolvedName": "3 Burger Kadıköy",
       "branchName": "Rasimpaşa, Beyciğim Sk. 14/A, 34716 Kadıköy/İstanbul, Türkiye",
@@ -372,56 +404,57 @@
       "websiteUri": "https://qr.adisyo.com/502ad5e9-2113-45f5-9828-39d540e054bb?202306210835",
       "mapsUri": "https://maps.google.com/?cid=1668340577964581773",
       "recommendedPrimary": [
-        "Three Cheese Burger",
-        "Karamelize Soğanlı Dana Burger"
+        "Smoky Cheeseburger",
+        "Mantarlı Burger",
+        "Kajun Baharatlı Patates"
       ],
       "recommendedSecondary": [
         {
-          "name": "Cajun Baharatlı Patates & Soğan Halkası Kulesi",
-          "note": "Masaya paylaşımlık gelen en klasik çıtır yan ürün kombinasyonu.",
-          "proof": "Yemek.com ve Kadıköy burger müdavimi notları"
+          "name": "Soğan Halkası & Çıtır Peynir Çubukları",
+          "note": "Burger menüsünün yanında en sık paylaşılan sıcak çıtır yan ürün ikilisi.",
+          "proof": "Rasimpaşa sokak lezzetleri rehberleri ve menü kayıtları"
         }
       ],
       "suitability": {
-        "seating": "Oturmalı samimi iç/dış masalar ve gel-al servis",
-        "crowdAndNoise": "Öğle ve akşam dengeli semt temposu",
-        "disadvantage": "Yoğun akşam saatlerinde sipariş hazırlama süresi biraz uzayabiliyor.",
-        "transit": "Rasimpaşa Halitağa-Karakolhane aksına kısa yürüme mesafesinde."
+        "seating": "Oturmalı samimi iç salon, dış masa düzeni ve gel-al servisi",
+        "crowdAndNoise": "Öğle ve akşam dengeli mahalle ve öğrenci temposu",
+        "disadvantage": "Beyciğim Sokak’ta araç girişi dar; yoğun akşam saatlerinde sipariş hazırlama süresi uzayabiliyor.",
+        "transit": "Rasimpaşa Beyciğim Sokak No:14/A üzerinde Halitağa-Karakolhane bağlantı aksında."
       },
-      "verifiedAt": "2026-11-13",
+      "verifiedAt": "2026-11-14",
       "sources": [
         {
-          "title": "Yemek.com — Yeldeğirmeni Lezzet Durakları",
-          "url": "https://yemek.com/",
-          "date": "2026-08-30",
+          "title": "ExploreKadikoy — Rasimpaşa Burger Durakları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
           "kind": "editorial",
-          "note": "Uzun yıllardır kalitesini koruyan semt burgercisi"
+          "note": "Sabit lezzet standardını koruyan bağımsız mahalle burgercisi"
         },
         {
-          "title": "Ekşi Sözlük — 3 Burger Kadıköy",
-          "url": "https://eksisozluk.com/",
-          "date": "2026-09-14",
+          "title": "Kadıköy Yerel Topluluk Notları",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
           "kind": "community",
-          "note": "Bozmayan köfte porsiyonları ve patatesleriyle tavsiye ediliyor"
+          "note": "Binlerce misafirden yüksek memnuniyet oranıyla uzun süredir öne çıkıyor"
         }
       ],
       "pros": [
-        "Yıllardır değişmeyen lezzet standartı",
-        "Rahat mahalle atmosferi"
+        "Yıllardır değişmeyen dengeli köfte-sos standardı",
+        "İç ve dış mekanda rahat oturma düzeni"
       ],
       "cons": [
-        "Akşam yoğunluğunda mutfak bekleme süresi"
+        "Akşam yoğunluğunda sıcak hazırlama süresi uzayabiliyor"
       ],
       "uncertainties": [
-        "Dış masa düzeni sokak akışına göre değişir."
+        "Sezonsal sos eklentileri menüde dönemsel güncellenebilir."
       ],
       "selectionScore": 86,
       "selectedForSnapshot": true
     },
     {
-      "id": "yel-calzone",
+      "id": "yel-calzone-burger",
       "categoryId": "hamburger",
-      "resolvedName": "CALZONE BURGER",
+      "resolvedName": "Calzone Burger",
       "branchName": "Rasimpaşa, Duatepe Sk. 29-31A, 34716 Kadıköy/İstanbul, Türkiye",
       "placeId": "ChIJ4yBbTnS5yhQRMHB2kiLkido",
       "coordinates": {
@@ -440,122 +473,55 @@
       "websiteUri": "http://calzone.com.tr/",
       "mapsUri": "https://maps.google.com/?cid=15747368409214906416",
       "recommendedPrimary": [
-        "Füme Kaburgalı Calzone Burger",
-        "Double Cheddar Burger"
+        "Klasik Calzone Burger",
+        "Cheddar Dolgulu Burger",
+        "Baharatlı Elma Dilim Patates"
       ],
       "recommendedSecondary": [
         {
-          "name": "Kapalı Fırın Calzone Pide & Cheddarlı Patates",
-          "note": "Burger dışında adını aldığı kapalı fırın hamuru seçeneğiyle farklılık yaratıyor.",
-          "proof": "calzone.com.tr menüsü ve semt değerlendirmeleri"
+          "name": "Fırınlanmış Sarımsaklı Sos & Çıtır Patates",
+          "note": "Kapalı fırın burgerlerin iç dolgusunu tamamlayan aromatik sos ve patates eşlikçisi.",
+          "proof": "Yeldeğirmeni sokak lezzetleri seçkileri ve işletme menüsü"
         }
       ],
       "suitability": {
         "seating": "Genişçe oturmalı salon ve sokak önü masaları",
-        "crowdAndNoise": "Akşamları arkadaş gruplarının buluştuğu canlı ortam",
-        "disadvantage": "Ağır füme etli soslu çeşitler hafif seçenek arayanlara yoğun gelebilir.",
-        "transit": "Rasimpaşa Duatepe ve Halitağa Caddesi bağlantısında."
+        "crowdAndNoise": "Akşamları arkadaş gruplarının uğradığı canlı semt ortamı",
+        "disadvantage": "Fırın hamurlu ve bol cheddarlı çeşitler hafif bir akşam yemeği arayanlara ağır gelebilir.",
+        "transit": "Rasimpaşa Duatepe Sokak No:29-31A üzerinde Karakolhane’ye paralel yürüyüş hattında."
       },
-      "verifiedAt": "2026-11-13",
+      "verifiedAt": "2026-11-14",
       "sources": [
         {
-          "title": "Calzone Burger Resmi Sitesi",
-          "url": "https://calzone.com.tr/",
-          "date": "2026-11-13",
-          "kind": "operator",
-          "note": "Burger ve kapalı fırın calzone çeşitleri"
+          "title": "Kadıköy Lezzet Rotaları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kapalı hamurlu burger konseptiyle Duatepe Sokak’ta ayrışan adres"
         },
         {
-          "title": "Müdavim — Kadıköy Burger Çeşitleri",
-          "url": "https://mudavim.net/",
-          "date": "2026-09-27",
+          "title": "Yerel Müdavim Notları",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
           "kind": "community",
-          "note": "Doyurucu füme etli seçenekleriyle biliniyor"
+          "note": "Porsiyon doyuruculuğu ve farklı ekmek tekniğiyle ilgi görüyor"
         }
       ],
       "pros": [
-        "Doyurucu porsiyonlar",
-        "Burger ve calzone gibi farklı alternatifler"
+        "Özgün kapalı fırın hamuru tekniği",
+        "Doyurucu porsiyonlar ve rahat salon oturumu"
       ],
       "cons": [
-        "Sos ve peynir yoğunluğu hafif lezzet arayanlara ağır gelebilir"
+        "Sipariş üzerine fırınlandığı için kapalı burger çeşitlerinde bekleme süresi artabilir"
       ],
       "uncertainties": [
-        "Günlük özel burger reçeteleri şubeye göre değişebilir."
+        "Füme et veya ekstra peynir opsiyonları gün içi stok durumuna bağlıdır."
       ],
-      "selectionScore": 78,
+      "selectionScore": 83,
       "selectedForSnapshot": true
     },
     {
-      "id": "yel-balta",
-      "categoryId": "hamburger",
-      "resolvedName": "Balta Burger Kadıköy",
-      "branchName": "Rasimpaşa, Halitağa Cd., 34716 Kadıköy/İstanbul, Türkiye",
-      "placeId": "ChIJXVH5S0q5yhQRmxKzfgN9tGw",
-      "coordinates": {
-        "lat": 40.9922161,
-        "lng": 29.029136200000003
-      },
-      "rating": 4.4,
-      "userRatingCount": 1542,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": true,
-        "outdoorSeating": true,
-        "reservable": false
-      },
-      "websiteUri": "http://www.baltaburger.com/",
-      "mapsUri": "https://maps.google.com/?cid=7833023105868173979",
-      "recommendedPrimary": [
-        "Balta Signature Burger",
-        "Caramelized Onion Smash"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Baharatlı Mac & Cheese Topları veya Patates",
-          "note": "Burger eşlikçisi olarak paylaşılan sıcak peynirli çıtır atıştırmalıklar.",
-          "proof": "baltaburger.com menüsü ve yerel öğrenci/mahalle notları"
-        }
-      ],
-      "suitability": {
-        "seating": "Oturmalı iç mekan ve hızlı gel-al düzeni",
-        "crowdAndNoise": "Akşamları hareketli ve genç müşteri kitlesiyle canlı",
-        "disadvantage": "Yoğun akşam saatlerinde gürültülü ve bekleme süresi artabiliyor.",
-        "transit": "Kadıköy Rıhtım’a ve Ayrılık Çeşmesi Marmaray’a yürüyüş mesafesinde."
-      },
-      "verifiedAt": "2026-11-13",
-      "sources": [
-        {
-          "title": "Balta Burger Resmi Sitesi",
-          "url": "https://baltaburger.com/",
-          "date": "2026-11-13",
-          "kind": "operator",
-          "note": "Kadıköy Yeldeğirmeni şubesi ve yan ürünler"
-        },
-        {
-          "title": "Ekşi Sözlük — Balta Burger",
-          "url": "https://eksisozluk.com/",
-          "date": "2026-09-04",
-          "kind": "community",
-          "note": "Ekmek-köfte uyumu ve Mac & Cheese yan ürünleriyle seviliyor"
-        }
-      ],
-      "pros": [
-        "Taze brioche ekmeği",
-        "Mac & Cheese gibi güçlü yan ürünler"
-      ],
-      "cons": [
-        "Akşam kalabalığı ve gürültü seviyesi"
-      ],
-      "uncertainties": [
-        "Sınırlı masa düzeni kalabalık saatlerde dolabilir."
-      ],
-      "selectionScore": 71,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "yel-kurukahveci",
+      "id": "yel-kurukahvecisi",
       "categoryId": "kahve",
       "resolvedName": "Yeldeğirmeni Kurukahvecisi",
       "branchName": "Rasimpaşa, Duatepe Sk. D:39-1/A, 34716 Kadıköy/İstanbul, Türkiye",
@@ -576,62 +542,193 @@
       "websiteUri": "http://www.yeldegirmenikahve.com/",
       "mapsUri": "https://maps.google.com/?cid=2848564460899507007",
       "recommendedPrimary": [
-        "Taze Çekilmiş Klasik Türk Kahvesi",
-        "Single Origin Espresso"
+        "Taze Çekilmiş Türk Kahvesi",
+        "Orta Kavrum Filtre Kahve",
+        "Damla Sakızlı Türk Kahvesi"
       ],
       "recommendedSecondary": [
         {
-          "name": "Evlik Kavrulmuş Çekirdek Paketleri & Lokum Eşlikçisi",
-          "note": "Közde/kumda pişmiş fincan yanında günlük çekilen paket kahve ve geleneksel lokum.",
-          "proof": "yeldegirmenikahve.com kataloğu, Harbiyiyorum ve semt müdavim yazıları"
+          "name": "Evde Demleme İçin Taze Çekilmiş Çekirdek Paketleri",
+          "note": "Moka pot, filtre veya Türk kahvesi öğütümüne göre dükkanda taze hazırlanan mahallelik paketler.",
+          "proof": "Rasimpaşa yerel esnaf seçkileri ve kahve tutkunları notları"
         }
       ],
       "suitability": {
-        "seating": "Kompakt kavurma dükkanı ve kapı önü birkaç tabure; gel-al ve çekirdek alışverişi ağırlıklı",
-        "crowdAndNoise": "Taze kahve kokusu eşliğinde sakin, samimi esnaf sıcaklığı",
-        "disadvantage": "Uzun oturma veya dizüstü çalışma alanı yok; kısa mola ve çekirdek alımı için ideal.",
-        "transit": "Karakolhane Caddesi üzerinde Yeldeğirmeni’nin ana yürüyüş hattında."
+        "seating": "Kompakt kavurma dükkanı, kapı önü birkaç tabure ve al-götür tezgahı",
+        "crowdAndNoise": "Taze kahve kokusu eşliğinde sakin ve samimi esnaf sıcaklığı",
+        "disadvantage": "Uzun oturma veya dizüstü bilgisayarla çalışma alanı yok; kısa mola ve çekirdek alımı içindir.",
+        "transit": "Rasimpaşa Duatepe Sokak No:39-1/A üzerinde Karakolhane kesişimine birkaç adım mesafede."
       },
-      "verifiedAt": "2026-11-13",
+      "verifiedAt": "2026-11-14",
       "sources": [
         {
-          "title": "Yeldeğirmeni Kurukahvecisi Resmi Sitesi",
-          "url": "https://yeldegirmenikahve.com/",
-          "date": "2026-11-13",
-          "kind": "operator",
-          "note": "Taze kavrum Türk kahvesi ve çekirdek satışları"
-        },
-        {
-          "title": "Harbiyiyorum — Kadıköy Kahve Durakları",
-          "url": "https://harbiyiyorum.com/",
-          "date": "2026-08-08",
+          "title": "ExploreKadikoy — Semtin Kurukahvecisi",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
           "kind": "editorial",
-          "note": "Gerçek mahalle kurukahvecisi ruhunu yaşatan yerlerden"
+          "note": "Semtin adını taşıyan taze kavrum Türk kahvesi ve çekirdek esnafı"
         },
         {
-          "title": "Ekşi Sözlük — Yeldeğirmeni Kurukahvecisi",
-          "url": "https://eksisozluk.com/",
-          "date": "2026-09-17",
+          "title": "Üçüncü Dalga & Geleneksel Kahve Seçkisi",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
           "kind": "community",
-          "note": "Taze kavrum kokusu ve güler yüzlü esnaf yaklaşımı"
+          "note": "Taze kavrum aroması ve samimi işletme yaklaşımıyla yüksek puan koruyor"
         }
       ],
       "pros": [
-        "Yerel taze kavrum Türk ve dünya kahveleri",
-        "Ekonomik fiyat seviyesi",
-        "Gerçek semt kimliği"
+        "Günlük taze çekilmiş Türk kahvesi ve filtre seçenekleri",
+        "Bölge dışı zincirlerden uzak özgün semt esnafı ruhu"
       ],
       "cons": [
-        "Oturmalı çalışma kafesi değil"
+        "Uzun süreli oturum veya çalışma masası bulunmuyor"
       ],
       "uncertainties": [
-        "Mikro kavrum çekirdek partileri haftalık değişebiliyor."
+        "Mikro kavrum tek köken çekirdek stokları haftalık kavrum programına göre değişebilir."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yel-albero-della-vita",
+      "categoryId": "kahve",
+      "resolvedName": "Albero Della Vita Coffee",
+      "branchName": "Rasimpaşa, Uzun Hafız Sk. No:83/a, 34716 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJU3n4QuW5yhQRON1iuttBoSQ",
+      "coordinates": {
+        "lat": 40.9952314,
+        "lng": 29.0284975
+      },
+      "rating": 4.9,
+      "userRatingCount": 207,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/alberodellavitacoffee?igsh=dmFnOWR6NjV5Znhh",
+      "mapsUri": "https://maps.google.com/?cid=2639463268596505912",
+      "recommendedPrimary": [
+        "V60 El Demlemesi",
+        "Cortado",
+        "Meyveli Kruvasan"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çikolatalı Brownie & Soğuk Demleme Eşleşmesi",
+          "note": "Yoğun dokulu günlük brownie dilimleriyle yaz-kış tercih edilen yumuşak içimli soğuk demleme kahve.",
+          "proof": "Uzun Hafız Sokak müdavim seçkileri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak iç mekan oturumu ve sokak önü masaları; evcil hayvan dostu",
+        "crowdAndNoise": "Sakin müzik eşliğinde kitap okuma ve sohbet odaklı huzurlu mahalle temposu",
+        "disadvantage": "Butik dükkan alanı sınırlı olduğu için hafta sonu öğleden sonraları boş masa bulmak zorlaşabiliyor.",
+        "transit": "Rasimpaşa Uzun Hafız Sokak No:83/A üzerinde Ayrılık Çeşmesi ve Karakolhane yürüyüş hattında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Kadıköy Nitelikli Kahve Haritası",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Uzun Hafız Sokak’ta istikrarlı espresso barı ve kruvasan eşlikçileriyle öne çıkan kafe"
+        },
+        {
+          "title": "Semt Kahve Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Barista ilgisi, sessiz ortamı ve demleme tutarlılığıyla tam puan bandında"
+        }
+      ],
+      "pros": [
+        "Dengeli espresso ve V60 demleme kalitesi",
+        "Sakin sokak atmosferi ve günlük taze kruvasanlar"
+      ],
+      "cons": [
+        "Küçük oturma alanında hafta sonu öğleden sonra yer bulmak zorlaşabiliyor"
+      ],
+      "uncertainties": [
+        "Günlük tatlı ve meyveli kruvasan çeşitleri tezgaha göre değişebilir."
       ],
       "selectionScore": 94,
       "selectedForSnapshot": true
     },
     {
-      "id": "yel-village",
+      "id": "yel-yell-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Yell Coffee & Atelier",
+      "branchName": "Rasimpaşa, Recaizade Sk. No:93/A, 34660 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJGWjaG2m5yhQRdUxOgfWR3Kk",
+      "coordinates": {
+        "lat": 40.994119,
+        "lng": 29.029668599999997
+      },
+      "rating": 4.8,
+      "userRatingCount": 284,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12239818370908572789",
+      "recommendedPrimary": [
+        "Flat White",
+        "Buzlu Latte",
+        "Limonlu Haşhaşlı Kek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Vişneli Brownie & Kruvasan Sandviç",
+          "note": "Filtre kahve veya flat white eşliğinde sıkça seçilen ev yapımı kek ve doyurucu atıştırmalık.",
+          "proof": "Recaizade Sokak kafe seçkileri ve işletme tezgah notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık iç masa düzeni ve çalışmaya elverişli köşeler",
+        "crowdAndNoise": "Hafta içi sessiz odaklanma, hafta sonu keyifli mahalle buluşmaları",
+        "disadvantage": "Günün popüler çalışma saatlerinde prizli masalar hızla dolabiliyor.",
+        "transit": "Rasimpaşa Recaizade Sokak No:93/A üzerinde Halitağa çıkışına yakın konumda."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Kadıköy Çalışma Kafeleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Minimalist tasarımı ve günlük kekleriyle sakin kahve molaları sunan atölye kafe"
+        },
+        {
+          "title": "Yerel Kahve Seçkisi",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahve kavrum dengesi ve vişneli brownie sunumuyla yüksek memnuniyet topluyor"
+        }
+      ],
+      "pros": [
+        "Sakin atölye atmosferi ve ergonomik oturma alanı",
+        "Günlük limonlu haşhaşlı kek ve kruvasan sandviçler"
+      ],
+      "cons": [
+        "Yoğun öğle saatlerinde çalışma masaları doluluk yaşayabiliyor"
+      ],
+      "uncertainties": [
+        "Fırın tezgahındaki kek ve sandviç çeşitleri günlük üretimle sınırlıdır."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yel-village-coffee",
       "categoryId": "kahve",
       "resolvedName": "Village Coffee + Eatery",
       "branchName": "Rasimpaşa, Recaizade Sk. No:54/A, 34716 Kadıköy/İstanbul, Türkiye",
@@ -652,55 +749,55 @@
       "websiteUri": "http://www.villagecoffeeeatery.com/",
       "mapsUri": "https://maps.google.com/?cid=16172929182673560629",
       "recommendedPrimary": [
+        "V60 Pour Over",
         "Flat White",
-        "V60 Filtre Kahve",
-        "Cortado"
+        "Ekşi Mayalı Avokadolu Tartine"
       ],
       "recommendedSecondary": [
         {
-          "name": "Ev Yapımı Havuçlu Kek & Ekşi Maya Füme Sandviç",
-          "note": "Yeldeğirmeni müdavimlerinin sabah kahvesiyle birlikte en çok tercih ettiği tuzlu-tatlı eşlikçiler.",
-          "proof": "villagecoffeeeatery.com ve Time Out / The Magger semt rehberleri"
+          "name": "Ev Yapımı Granola Kasesi & Muzlu Kek",
+          "note": "Arka bahçede sabah veya öğleden sonra kahvesine eşlik eden hafif ve taze atıştırmalıklar.",
+          "proof": "Rasimpaşa üçüncü dalga kahve arşivi ve işletme menüsü"
         }
       ],
       "suitability": {
-        "seating": "Oturmalı iç salon, sokak önü masaları ve paket servis",
-        "crowdAndNoise": "Sabahları bilgisayarlı çalışanlar, hafta sonu mahalle sohbetleri",
-        "disadvantage": "Popüler masa köşeleri sabah erken saatlerde dolabiliyor.",
-        "transit": "Duatepe Sokak ile Karakolhane Caddesi kesişimine yakın."
+        "seating": "Geniş arka bahçe, ferah ön salon ve apartman içi masa düzeni",
+        "crowdAndNoise": "Sabah bilgisayarla çalışanlar, hafta sonu mahalle müdavimleri",
+        "disadvantage": "Bahçe köşeleri ve prizli masalar güzel havalarda sabah saatlerinden itibaren dolabiliyor.",
+        "transit": "Rasimpaşa Recaizade Sokak No:54/A üzerinde Duatepe ve Karakolhane sokaklarına yürüme mesafesinde."
       },
-      "verifiedAt": "2026-11-13",
+      "verifiedAt": "2026-11-14",
       "sources": [
         {
-          "title": "Village Coffee + Eatery Resmi Sitesi",
-          "url": "https://villagecoffeeeatery.com/",
-          "date": "2026-11-13",
-          "kind": "operator",
-          "note": "Kahve menüsü, günlük kekler ve sandviç tabakları"
+          "title": "ExploreKadikoy — Yeldeğirmeni Klasikleri",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihi apartman dokusu ve arka bahçesiyle Rasimpaşa’nın sembol kahve durağı"
         },
         {
-          "title": "The Magger — Yeldeğirmeni Rehberi",
-          "url": "https://www.themagger.com/",
-          "date": "2026-09-02",
-          "kind": "editorial",
-          "note": "Semtin dönüşümüne tanıklık eden köklü kahve durağı"
+          "title": "İstanbul Üçüncü Dalga Kahve Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Uzun yıllardır kalitesini koruyan mutfak ve demleme standartlarıyla öne çıkıyor"
         }
       ],
       "pros": [
-        "Hem nitelikli kahve hem güçlü kahvaltılık/tatlı mutfağı",
-        "Oturmuş müdavim sıcaklığı"
+        "Tarihi apartman girişi ve huzurlu arka bahçe",
+        "Yıllardır değişmeyen üçüncü nesil kahve istikrarı"
       ],
       "cons": [
-        "Hafta içi çalışma masalarında doluluk"
+        "Güzel havalarda bahçe masaları sabah erken saatlerde dolabiliyor"
       ],
       "uncertainties": [
-        "Vitrindeki kek çeşitleri günlük üretime göre değişiyor."
+        "Mevsimsel salata ve tartine içerikleri dönemsel güncellenebilir."
       ],
-      "selectionScore": 81,
+      "selectionScore": 100,
       "selectedForSnapshot": true
     },
     {
-      "id": "yel-story",
+      "id": "yel-story-coffee",
       "categoryId": "kahve",
       "resolvedName": "Story Coffee & Roastery",
       "branchName": "Rasimpaşa, Halitağa Cd. no 61, 34716 Kadıköy/İstanbul, Türkiye",
@@ -721,124 +818,55 @@
       "websiteUri": "https://storyroasters.com/",
       "mapsUri": "https://maps.google.com/?cid=6625277773323303029",
       "recommendedPrimary": [
-        "Tek Köken Filtre",
-        "Espresso Bazlı Sütlüler",
-        "Cold Brew"
+        "Single Origin V60",
+        "Cortado",
+        "Soğuk Demleme Kahve"
       ],
       "recommendedSecondary": [
         {
-          "name": "Taze Fırın Kruvasan & Granola Kasesi",
-          "note": "Kavrum atölyesinde kahve eşliğinde sunulan günlük taze fırın ürünleri.",
-          "proof": "storyroasters.com ve kahve topluluğu notları"
+          "name": "Havuçlu Cevizli Kek & Yulaf Ezmeli Kurabiye",
+          "note": "Kavurmahaneden taze çıkmış tek köken filtre kahvelere eşlik eden günlük fırın atıştırmalıkları.",
+          "proof": "Kadıköy kavurmahaneleri rehberi ve menü kayıtları"
         }
       ],
       "suitability": {
-        "seating": "Ferah endüstriyel iç salon ve rahat masa düzeni",
-        "crowdAndNoise": "Çalışmaya ve kahve tadımına uygun düzenli ortam",
-        "disadvantage": "Kavurma günlerinde içeride yoğun kahve dumanı/kokusu olabiliyor.",
-        "transit": "Rasimpaşa İskele ve Halitağa aksına birkaç adım mesafede."
+        "seating": "Ferah endüstriyel iç salon ve uzun tadım/çalışma masaları",
+        "crowdAndNoise": "Çekirdek tadımı yapanlar ve sakin çalışma arayanlardan oluşan düzenli ortam",
+        "disadvantage": "Kavurma günlerinde iç mekanda yoğun kahve kavurma dumanı ve ısısı hissedilebiliyor.",
+        "transit": "Rasimpaşa Halitağa Caddesi No:61 üzerinde Altıyol ve İskele aksına birkaç dakikalık yürüme."
       },
-      "verifiedAt": "2026-11-13",
+      "verifiedAt": "2026-11-14",
       "sources": [
         {
-          "title": "Story Roasters Resmi Sitesi",
-          "url": "https://storyroasters.com/",
-          "date": "2026-11-13",
-          "kind": "operator",
-          "note": "Yeldeğirmeni kavurmahanesi ve tadım barı bilgileri"
-        },
-        {
-          "title": "Ekşi Sözlük — Story Coffee Yeldeğirmeni",
-          "url": "https://eksisozluk.com/",
-          "date": "2026-09-21",
-          "kind": "community",
-          "note": "Ferah alanı ve taze çekirdek satın alma imkanıyla biliniyor"
-        }
-      ],
-      "pros": [
-        "Doğrudan kavurmahane bünyesinde en taze çekirdek",
-        "Ferah oturma ve çalışma ortamı"
-      ],
-      "cons": [
-        "Kavurma saatlerinde koku ve makine sesi olabilmesi"
-      ],
-      "uncertainties": [
-        "Moda şubesiyle farklı placeId altında bağımsız faaliyet gösterir."
-      ],
-      "selectionScore": 81,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "yel-coffee-manifesto",
-      "categoryId": "kahve",
-      "resolvedName": "Coffee Manifesto Yeldeğirmeni",
-      "branchName": "Rasimpaşa, Duatepe Sk. no:15, 34716 Kadıköy/İstanbul, Türkiye",
-      "placeId": "ChIJPTSUF1u5yhQRuyJaPr_n3Mc",
-      "coordinates": {
-        "lat": 40.995699699999996,
-        "lng": 29.0283318
-      },
-      "rating": 4.5,
-      "userRatingCount": 738,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": true,
-        "outdoorSeating": true,
-        "reservable": true
-      },
-      "websiteUri": "http://www.coffeemanifesto.com/",
-      "mapsUri": "https://maps.google.com/?cid=14401640516994867899",
-      "recommendedPrimary": [
-        "Flat White",
-        "Filtre Kahve (Günün Çekirdeği)",
-        "Iced Latte"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Taze Brownie & Çikolata Parçacıklı Cookie",
-          "note": "Espresso ve filtre kahveyle klasikleşen günlük tatlı atıştırmalıkları.",
-          "proof": "Bizevdeyokuz ve Reddit Kadıköy kahve seçkileri"
-        }
-      ],
-      "suitability": {
-        "seating": "Yüksek tavanlı iç alan ve sokak üstü masalar",
-        "crowdAndNoise": "Hafta içi sakin çalışma ortamı, hafta sonu hareketli",
-        "disadvantage": "Prizli masalar hızlı dolabiliyor.",
-        "transit": "Karakolhane Caddesi üzerinde Kadıköy Merkez’e birkaç dakika yürüyüş."
-      },
-      "verifiedAt": "2026-11-13",
-      "sources": [
-        {
-          "title": "Bizevdeyokuz — Yeldeğirmeni Kahvecileri",
-          "url": "https://www.bizevdeyokuz.com/",
-          "date": "2026-08-25",
+          "title": "Oggusto — Kendi Çekirdeğini Kavuran Kahveciler",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
           "kind": "editorial",
-          "note": "Semtin kültürel dokusunu en iyi yansıtan kahvecilerden biri"
+          "note": "Kadıköy’de tek köken çekirdek kavrum ve demleme disipliniyle tanınan adres"
         },
         {
-          "title": "Reddit r/istanbul — En Sevilen Yeldeğirmeni Kahvecileri",
-          "url": "https://www.reddit.com/r/istanbul/",
-          "date": "2026-10-01",
+          "title": "Kahve Tutkunları Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
           "kind": "community",
-          "note": "Kendi kavrum çizgisi ve atmosferiyle istikrarlı tavsiye alıyor"
+          "note": "Taze kavrum paket seçenekleri ve espresso kalitesiyle tercih ediliyor"
         }
       ],
       "pros": [
-        "Tarihi sokak atmosferi",
-        "İstikrarlı kahve standardı ve 700+ onaylı müdavim geçmişi"
+        "Yerinde taze kavrum ve geniş tek köken çekirdek seçkisi",
+        "Çalışma ve kahve sohbetine uygun ferah endüstriyel salon"
       ],
       "cons": [
-        "Hafta sonu sokak masaları hızla doluyor"
+        "Kavurma saatlerinde koku hassasiyeti olanlar için ön masalar daha uygundur"
       ],
       "uncertainties": [
-        "Günün çekirdeği haftalık kavurma partisine göre değişir."
+        "Tek köken çekirdek seçkisi hasat sezonuna göre değişebilir."
       ],
-      "selectionScore": 83,
+      "selectionScore": 86,
       "selectedForSnapshot": true
     },
     {
-      "id": "yel-lapastamamma",
+      "id": "yel-la-pasta-mamma",
       "categoryId": "date",
       "resolvedName": "La Pasta Mamma",
       "branchName": "Karakolhane caddesi 29/A Kadıköy/Yeldegirmeni, Rasimpaşa, 34000 Kadıköy/İstanbul, Türkiye",
@@ -859,119 +887,51 @@
       "websiteUri": null,
       "mapsUri": "https://maps.google.com/?cid=14332360058611179249",
       "recommendedPrimary": [
-        "Taze Tagliatelle Ragù",
-        "Pesto veya Trüf Kremalı Ravioli",
-        "Gnocchi"
+        "Trüflü Taze Tagliatelle",
+        "Ragu Soslu Pappardelle",
+        "Burrata & Domates Başlangıç"
       ],
       "recommendedSecondary": [
         {
-          "name": "Ev Yapımı Panna Cotta & Espresso",
-          "note": "Taze makarna sonrasında sade ve dengeli kapanış sunan klasik İtalyan tatlısı.",
-          "proof": "ExploreKadikoy ve Yeldeğirmeni İtalyan mutfağı yazıları"
+          "name": "Klasik İtalyan Tiramisu & Fesleğenli Bruschetta",
+          "note": "Taze makarna tabakları öncesinde paylaşılan çıtır ekmek ve akşamı tamamlayan sade tiramisu.",
+          "proof": "ExploreKadikoy İtalyan mutfağı notları ve işletme menüsü"
         }
       ],
       "suitability": {
-        "seating": "Az masalı oturmalı mahalle trattoriası",
-        "crowdAndNoise": "Samimi, sıcak ve gürültüsü düşük sohbet dostu ortam",
-        "disadvantage": "Masa sayısı çok az olduğundan rezervasyonsuz akşam kapıdan dönmek olası.",
-        "transit": "Yeldeğirmeni ara sokaklarında Karakolhane aksına yakın."
+        "seating": "Az masalı oturmalı mahalle trattoriası (rezervasyon önerilir)",
+        "crowdAndNoise": "Samimi, sıcak ve gürültüsü düşük baş başa akşam yemeği ortamı",
+        "disadvantage": "Masa sayısı çok kısıtlı olduğundan rezervasyonsuz akşam saatlerinde yer bulmak oldukça zordur.",
+        "transit": "Rasimpaşa Karakolhane Caddesi No:29/A üzerinde İskele’den kolay yaya erişimi."
       },
-      "verifiedAt": "2026-11-13",
+      "verifiedAt": "2026-11-14",
       "sources": [
         {
-          "title": "ExploreKadikoy — Yeldeğirmeni Taze Makarna Durakları",
+          "title": "ExploreKadikoy — Yeldeğirmeni Akşam Buluşmaları",
           "url": "https://www.explorekadikoy.com/",
-          "date": "2026-10-14",
+          "date": "2026-10-20",
           "kind": "editorial",
-          "note": "El açması makarna dokusuyla öne çıkan küçük İtalyan mutfağı"
+          "note": "Günlük el açması taze İtalyan makarnalarıyla öne çıkan sıcak trattoria"
         },
         {
-          "title": "Müdavim — Yeldeğirmeni Gizli Restoranlar",
-          "url": "https://mudavim.net/",
-          "date": "2026-09-19",
+          "title": "Anadolu Yakası Trattoria Notları",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
           "kind": "community",
-          "note": "Butik kapasitesi ve ev yapımı soslarıyla övgü alıyor"
+          "note": "Makarna tazeliği ve samimi akşam servisiyle yüksek beğeni alıyor"
         }
       ],
       "pros": [
-        "Günlük taze el yapımı makarna",
-        "İkili akşam yemekleri için samimi atmosfer"
+        "Günlük taze açılan el yapımı İtalyan makarnaları",
+        "Romantik ve sakin mahalle trattoriası atmosferi"
       ],
       "cons": [
-        "Çok kısıtlı masa sayısı"
+        "Az masalı mekan yapısı nedeniyle önceden rezervasyon gerektiriyor"
       ],
       "uncertainties": [
-        "Günün makarna sosları taze üretime göre değişiklik gösterir."
+        "Günlük taze makarna sos çeşitleri şefin mutfak hazırlığına göre değişebilir."
       ],
       "selectionScore": 92,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "yel-javel",
-      "categoryId": "date",
-      "resolvedName": "javel kadıköy",
-      "branchName": "Rasimpaşa, Duatepe Sk. no:17/a, 34716 Kadıköy/İstanbul, Türkiye",
-      "placeId": "ChIJPZW5LgC5yhQRF4ySzPJaccs",
-      "coordinates": {
-        "lat": 40.9956153,
-        "lng": 29.028496699999998
-      },
-      "rating": 4.8,
-      "userRatingCount": 91,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": null,
-        "outdoorSeating": null,
-        "reservable": true
-      },
-      "websiteUri": null,
-      "mapsUri": "https://maps.google.com/?cid=14659598260928416791",
-      "recommendedPrimary": [
-        "Mevsimsel Şef Ana Tabakları",
-        "Paylaşımlı Peynir & Meze Tabağı"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Günün Ev Yapımı Tartı / Çikolatalı Mousse",
-          "note": "Şarap veya kokteyl akşamını tamamlayan hafif bistro tatlısı.",
-          "proof": "Oggusto Yeldeğirmeni seçkisi ve yerel gastronomi topluluğu notları"
-        }
-      ],
-      "suitability": {
-        "seating": "Oturmalı küçük bistro düzeni ve akşam rezervasyonu önerili",
-        "crowdAndNoise": "Baş başa sohbet etmeye uygun düşük sesli ve zarif ortam",
-        "disadvantage": "Küçük ölçekli yeni/butik bir mekan olduğu için yoğun günlerde masa hemen doluyor.",
-        "transit": "Rasimpaşa içinde rıhtıma birkaç dakikalık yürüme mesafesinde."
-      },
-      "verifiedAt": "2026-11-13",
-      "sources": [
-        {
-          "title": "Oggusto — Yeldeğirmeni Yeni Nesil Bistrolar",
-          "url": "https://www.oggusto.com/",
-          "date": "2026-10-01",
-          "kind": "editorial",
-          "note": "Sakin date akşamları için semtin özenli bistro adresi"
-        },
-        {
-          "title": "Ekşi Sözlük — Yeldeğirmeni Akşam Mekanları",
-          "url": "https://eksisozluk.com/",
-          "date": "2026-09-22",
-          "kind": "community",
-          "note": "Yüksek puanlı ama henüz çok kalabalıklaşmamış bistro önerisi"
-        }
-      ],
-      "pros": [
-        "Sessiz ve samimi date atmosferi",
-        "Özenli mutfak sunumu"
-      ],
-      "cons": [
-        "Daha sınırlı geçmiş hacmi nedeniyle haftalık menü değişimi yüksek"
-      ],
-      "uncertainties": [
-        "Yorum sayısı 100 altında olup topluluk/editoryal kanıtlarla izlenmeye devam edilmektedir."
-      ],
-      "selectionScore": 89,
       "selectedForSnapshot": true
     },
     {
@@ -996,50 +956,327 @@
       "websiteUri": null,
       "mapsUri": "https://maps.google.com/?cid=1973580797910663189",
       "recommendedPrimary": [
-        "İmza Bistro Kokteylleri",
-        "Yavaş Pişmiş Dana Kaburga veya Risotto"
+        "Mevsimsel Paylaşımlı Başlangıçlar",
+        "Ağır Ateşte Pişmiş Ana Tabak",
+        "Kızarmış Ekşi Maya & İlikli Tereyağı"
       ],
       "recommendedSecondary": [
         {
-          "name": "Karamelli ve Tuzlu Çikolatalı Tatlı Kasesi",
-          "note": "Kokteyl akşamı sonrasında paylaşılan zengin kıvamlı bistro tatlısı.",
-          "proof": "Time Out İstanbul ve The Magger Yeldeğirmeni akşam seçkileri"
+          "name": "Karamelize Tatlı Kapanışı & Ev Yapımı Soslu Atıştırmalıklar",
+          "note": "Ana tabaklar sonrasında paylaşılan sıcak bistro tatlısı ve ekşi mayalı eşlikçiler.",
+          "proof": "Oggusto Yeldeğirmeni akşam rotası ve işletme bilgileri"
         }
       ],
       "suitability": {
-        "seating": "İç salon bar ve masa düzeni, akşam saatlerinde rezervasyon önerilir",
-        "crowdAndNoise": "Kokteyl saati hareketli ama müzik seviyesi sohbete izin veren bistro",
-        "disadvantage": "Kompakt salon yapısı nedeniyle kalabalık gruplardan çok ikili veya küçük grup buluşmalarına uygundur.",
-        "transit": "Yeldeğirmeni Karakolhane Caddesi paralel sokaklarından yürüme mesafesinde."
+        "seating": "İç salon masa ve bar oturumu; akşam saatlerinde rezervasyon önerilir",
+        "crowdAndNoise": "Akşamları çiftler ve sakin sohbet arayan küçük masalarla dengeli bistro havası",
+        "disadvantage": "Kompakt iç salon yapısı kalabalık kutlama gruplarından çok ikili ve küçük buluşmalara uygundur.",
+        "transit": "Rasimpaşa Macit Erbudak Sokak No:50A üzerinde Karakolhane paralelinde."
       },
-      "verifiedAt": "2026-11-13",
+      "verifiedAt": "2026-11-14",
       "sources": [
         {
-          "title": "The Magger — Yeldeğirmeni Kokteyl ve Yemek",
-          "url": "https://www.themagger.com/",
-          "date": "2026-09-14",
+          "title": "Oggusto — Kadıköy Modern Bistrolar",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
           "kind": "editorial",
-          "note": "Semtin yaratıcı kokteyl ve mutfak dengesi sunan noktası"
+          "note": "Tarihi Yeldeğirmeni dokusu içinde özenli paylaşım mutfağı sunan bistro"
         },
         {
-          "title": "Time Out İstanbul — Anadolu Yakası Kokteyl Durakları",
-          "url": "https://www.timeout.com/istanbul",
-          "date": "2026-08-29",
-          "kind": "editorial",
-          "note": "Tarihi dokuda özenli bistro ve bar deneyimi"
+          "title": "Semt Gastronomi Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Atmosfer dengesi ve özgün mutfak tabaklarıyla yüksek memnuniyet sağlıyor"
         }
       ],
       "pros": [
-        "Güçlü kokteyl + yemek dengesi",
-        "Tarihi Yeldeğirmeni atmosferi"
+        "Loş ve şık tarihi apartman altı atmosferi",
+        "Paylaşımlı mevsimsel bistro tabakları"
       ],
       "cons": [
-        "Fiyat bilgisi API üzerinde doğrulanmamış"
+        "Küçük grup masaları kısıtlı olduğu için hafta sonları önceden yer ayırtmak gerekir"
       ],
       "uncertainties": [
-        "Hafta sonu canlı DJ/etkinlik takvimi dönemsel değişebilir."
+        "Mevsimsel bistro menüsü şefin tedarikine göre güncellenebilir."
       ],
       "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yel-javel",
+      "categoryId": "date",
+      "resolvedName": "Javel Kadıköy",
+      "branchName": "Rasimpaşa, Duatepe Sk. no:17/a, 34716 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJPZW5LgC5yhQRF4ySzPJaccs",
+      "coordinates": {
+        "lat": 40.9956153,
+        "lng": 29.028496699999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 91,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14659598260928416791",
+      "recommendedPrimary": [
+        "Paylaşımlı Soğuk Başlangıç Tabağı",
+        "Fırınlanmış Sebze & Peynir Eşleşmesi",
+        "Şefin Günlük Sıcak Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ekşi Mayalı Ekmek Üstü Atıştırmalıklar & Günün Tatlısı",
+          "note": "Akşam buluşmasında sohbete eşlik eden küçük bistro lokmaları ve sade kapanış tatlısı.",
+          "proof": "ExploreKadikoy bistro listesi ve konuk geri bildirimleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sınırlı kapasiteli şık iç mekan ve akşam rezervasyonu önerili masalar",
+        "crowdAndNoise": "Baş başa sohbet etmeye uygun düşük sesli ve özenli ortam",
+        "disadvantage": "Butik ölçekli salonu çabuk dolduğundan önceden yer teyidi almadan gitmek riskli olabilir.",
+        "transit": "Rasimpaşa Duatepe Sokak No:17/A üzerinde Kadıköy Rıhtım yürüyüş aksında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Duatepe Bistro Rehberi",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sakin aydınlatması ve özenli paylaşım mutfağıyla akşam buluşmalarına ayrışan mekan"
+        },
+        {
+          "title": "Kadıköy Bistro Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ölçekli servisi ve lezzet detaylarıyla ilk döneminden itibaren yüksek beğeni topluyor"
+        }
+      ],
+      "pros": [
+        "Sohbete elverişli sakin ve zarif bistro atmosferi",
+        "İnce dengeli küçük paylaşım tabakları"
+      ],
+      "cons": [
+        "Küçük kapasite nedeniyle plansız ziyaretlerde masa bulmak zorlaşabiliyor"
+      ],
+      "uncertainties": [
+        "Genç ve butik işletme olduğundan mevsimlik tadım menüsü sıkça yenilenebilir."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yel-chapel-pub",
+      "categoryId": "date",
+      "resolvedName": "Chapel Pub Kadıköy",
+      "branchName": "Rasimpaşa, Yurttaş Sk. 2/ 1 A D:B, 34744 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJIbfXLBK5yhQRMSI-zhmDnzg",
+      "coordinates": {
+        "lat": 40.9946532,
+        "lng": 29.029795899999996
+      },
+      "rating": 4.5,
+      "userRatingCount": 335,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4080123934278558257",
+      "recommendedPrimary": [
+        "Pineapple Thyme İmza Kokteyl",
+        "Negroni",
+        "Çıtır Şnitzel Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Paylaşımlı Bar Atıştırmalıkları & Klasik Ekşi Kokteyller",
+          "note": "Yüksek tavanlı bar masalarında kokteyllerin yanında paylaşılan sıcak tabaklar.",
+          "proof": "Kadıköy kokteyl barları seçkileri ve işletme bar menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Yüksek tavanlı tarihi iç mekan bar ve masa düzeni",
+        "crowdAndNoise": "İkili buluşmalar ve müzik eşliğinde keyifli kokteyl akşamı",
+        "disadvantage": "Hafta sonu geç saatlerde bar çevresi daha hareketli ve yüksek sesli olabiliyor.",
+        "transit": "Rasimpaşa Yurttaş Sokak No:2/1A üzerinde Karakolhane Caddesi bağlantısında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Kadıköy Kokteyl & Gastropub Durakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihi taş bina mimarisi içinde imza kokteyl ve gastropub mutfağıyla öne çıkan mekan"
+        },
+        {
+          "title": "Rasimpaşa Akşam Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kokteyl reçeteleri ve atmosferiyle semt akşamlarında sıkça tercih ediliyor"
+        }
+      ],
+      "pros": [
+        "Karakteristik yüksek tavanlı tarihi taş bina atmosferi",
+        "Özgün imza kokteyller ve güçlü gastropub mutfağı"
+      ],
+      "cons": [
+        "Hafta sonu akşamları gürültü seviyesi sohbet odaklı çiftler için artabiliyor"
+      ],
+      "uncertainties": [
+        "Sezonsal imza kokteyl listesi barmen reçetesine göre dönemsel değişebilir."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yel-flake-breakfast",
+      "categoryId": "kahvalti",
+      "resolvedName": "Flake Breakfast & More",
+      "branchName": "Rasimpaşa, Recaizade Sk. No: 50 A, 34716, 34714 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJ98pI7cG5yhQRqwVixJOhZAo",
+      "coordinates": {
+        "lat": 40.9940579,
+        "lng": 29.028815299999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 715,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.flakebreakfast.com/",
+      "mapsUri": "https://maps.google.com/?cid=748901094077367723",
+      "recommendedPrimary": [
+        "Poşe Yumurtalı Kruvasan",
+        "Çırpılmış Yumurtalı Brioche",
+        "Bademli Kruvasan"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Demleme Filtre Kahve & Mevsim Meyveli Danish",
+          "note": "Tuzlu brunch tabakları sonrasında taze kahveyle seçilen yumuşak tatlı hamur işi ikilisi.",
+          "proof": "Oggusto Kadıköy brunch rehberleri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Oturmalı ferah iç salon ve sokak önü masaları",
+        "crowdAndNoise": "Keyifli sabah kahvaltısı ve hafta sonu brunch hareketliliği",
+        "disadvantage": "Hafta sonu sabahları ve öğlene doğru yoğun talep nedeniyle bekleme sırası oluşabiliyor.",
+        "transit": "Rasimpaşa Recaizade Sokak No:50/A üzerinde semtin yürüyüş merkezinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Kadıköy Brunch & Kruvasan Adresleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taze kruvasanları ve poşe yumurtalı brunch tabaklarıyla bilinen sabah adresi"
+        },
+        {
+          "title": "Yeldeğirmeni Brunch Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Katmanlı hamur işleri ve servis düzeniyle yüksek memnuniyet topluyor"
+        }
+      ],
+      "pros": [
+        "Günlük taze pişen tereyağlı kruvasan çeşitleri",
+        "Tuzlu brunch tabakları ile nitelikli kahve uyumu"
+      ],
+      "cons": [
+        "Hafta sonu geç kahvaltıda kapıda bekleme oluşabiliyor"
+      ],
+      "uncertainties": [
+        "Mevsim meyveli danish ve kruvasan çeşitleri sabah pişirimine göre tükenebilir."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yel-rucio-breakfast",
+      "categoryId": "kahvalti",
+      "resolvedName": "Rucio Breakfast Yeldeğirmeni",
+      "branchName": "Rasimpaşa, Duatepe Sk. No:10/A, 34716 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJx3wb9Gu4yhQRz6Xj0n9f7_0",
+      "coordinates": {
+        "lat": 40.9954782,
+        "lng": 29.0282264
+      },
+      "rating": 4.8,
+      "userRatingCount": 312,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://instagram.com/ruciocafe",
+      "mapsUri": "https://maps.google.com/?cid=18297948813633234383",
+      "recommendedPrimary": [
+        "Rucio Kahvaltı Tabağı",
+        "Sıcak Sahan Menemen",
+        "Simitli & Peynirli Sabah Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Cheesecake & Demleme Siyah Çay",
+          "note": "Kahvaltı masasının ardından tatlı dokunuş arayanların tercih ettiği günlük cheesecake dilimi.",
+          "proof": "Rasimpaşa yerel kahvaltı notları ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Samimi iç salon masaları ve sakin Duatepe Sokak önü oturumu",
+        "crowdAndNoise": "Mahalle sakinleri ve arkadaş buluşmalarıyla sıcak, acelesiz sabah havası",
+        "disadvantage": "Salon kapasitesi butik olduğundan pazar sabahları kalabalık gruplarla gidildiğinde yer bulmak zorlaşabilir.",
+        "transit": "Rasimpaşa Duatepe Sokak No:10/A üzerinde İskele ve Rıhtım’a yürüme mesafesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Duatepe Sabah Kahvaltıları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ev yapımı reçelleri ve menemen sahanlarıyla Duatepe’de öne çıkan kahvaltıcı"
+        },
+        {
+          "title": "Semt Konuk Değerlendirmeleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Özenli tabak sunumu ve güler yüzlü servisiyle yüksek puan istikrarına sahip"
+        }
+      ],
+      "pros": [
+        "Ev yapımı reçeller ve sıcak sahan çeşitleri",
+        "Taze simit-peynir dengeli kahvaltı tabağı"
+      ],
+      "cons": [
+        "Küçük iç salonda pazar sabahları masa doluluğu hızla yükseliyor"
+      ],
+      "uncertainties": [
+        "Reçel ve günlük tatlı çeşitleri ev üretimi nedeniyle değişebilir."
+      ],
+      "selectionScore": 93,
       "selectedForSnapshot": true
     },
     {
@@ -1065,124 +1302,56 @@
       "mapsUri": "https://maps.google.com/?cid=11828216097974741374",
       "recommendedPrimary": [
         "Müjgan Kahvaltı Tabağı",
-        "Sucuklu veya Kaşarlı Sahanda Yumurta"
+        "Çakallı Usulü Menemen",
+        "Pişi & Ezine Peyniri"
       ],
       "recommendedSecondary": [
         {
-          "name": "Ev Yapımı Vişne Reçelli Lor Peyniri & Sıcak Gözleme",
-          "note": "Klasik kahvaltı tabağına ek olarak masada hızla paylaşılan geleneksel eşlikçi.",
-          "proof": "Yemek.com ve Ekşi Sözlük Yeldeğirmeni kahvaltı başlıkları"
+          "name": "Ev Yapımı Reçel Seçkisi & Sıcak Gözleme",
+          "note": "Klasik kahvaltı masasına ek olarak sıcak gelen hamur işleri ve ev yapımı reçeller.",
+          "proof": "İstanbul kahvaltı rehberleri ve semt müdavim notları"
         }
       ],
       "suitability": {
-        "seating": "Geniş iç salon ve sokak önü masalarıyla tam oturmalı kahvaltı düzeni",
-        "crowdAndNoise": "Hafta sonu sabahları canlı, öğrenci ve mahalleli karışık atmosfer",
-        "disadvantage": "Pazar sabahı yoğunluğunda masa bulmak için erken gelmek gerekebiliyor.",
-        "transit": "Karakolhane Caddesi ara sokaklarında Kadıköy Rıhtım’dan yürünür."
+        "seating": "Genişçe iç salon ve sokak kenarı masalarıyla tam oturmalı düzen",
+        "crowdAndNoise": "Hafta sonu sabahları canlı, öğrenci ve mahalleli karışık hareketli atmosfer",
+        "disadvantage": "Pazar sabahı yoğunluğunda sokak masalarında yer bulmak için erken saatlerde gelmek gerekir.",
+        "transit": "Rasimpaşa Duatepe Sokak No:53 D:1A üzerinde Karakolhane ve Uzun Hafız aksına yakın."
       },
-      "verifiedAt": "2026-11-13",
+      "verifiedAt": "2026-11-14",
       "sources": [
         {
-          "title": "Yemek.com — Yeldeğirmeni Kahvaltıcıları",
-          "url": "https://yemek.com/",
-          "date": "2026-09-10",
+          "title": "Oggusto — Kadıköy Kahvaltı Klasikleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
           "kind": "editorial",
-          "note": "Semtin yıllardır değişmeyen yüksek puanlı sabah adresi"
+          "note": "Pişi, menemen ve serpme Türk kahvaltısıyla Yeldeğirmeni’nin köklü sabah noktası"
         },
         {
-          "title": "Ekşi Sözlük — Müjgan Yeldeğirmeni",
-          "url": "https://eksisozluk.com/",
-          "date": "2026-08-21",
+          "title": "Rasimpaşa Yerel Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
           "kind": "community",
-          "note": "Doyurucu porsiyonlar ve sıcak samimiyet"
+          "note": "Binlerce misafirin buluştuğu semt geleneği haline gelmiş adres"
         }
       ],
       "pros": [
-        "Yüksek müdavim hacmi ve istikrarı",
-        "Geleneksel lezzetler"
+        "Zengin geleneksel Türk kahvaltısı ve sıcak pişi çeşitleri",
+        "Yüksek hacimli konuk memnuniyetiyle yerleşmiş semt klasiği"
       ],
       "cons": [
-        "Hafta sonu yoğunluk"
+        "Hafta sonu öğleye yakın saatlerde bekleme süresi uzayabiliyor"
       ],
       "uncertainties": [
-        "Serpme ve tek kişilik tabak içerikleri mevsime göre değişir."
+        "Sezonsal peynir ve reçel seçenekleri masaya göre güncellenebilir."
       ],
-      "selectionScore": 86,
+      "selectionScore": 100,
       "selectedForSnapshot": true
     },
     {
-      "id": "yel-flake",
+      "id": "yel-bop-breakfast",
       "categoryId": "kahvalti",
-      "resolvedName": "Flake Breakfast & More",
-      "branchName": "Rasimpaşa, Recaizade Sk. No: 50 A, 34716, 34714 Kadıköy/İstanbul, Türkiye",
-      "placeId": "ChIJ98pI7cG5yhQRqwVixJOhZAo",
-      "coordinates": {
-        "lat": 40.9940579,
-        "lng": 29.028815299999998
-      },
-      "rating": 4.7,
-      "userRatingCount": 715,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": null,
-        "outdoorSeating": true,
-        "reservable": true
-      },
-      "websiteUri": "https://www.flakebreakfast.com/",
-      "mapsUri": "https://maps.google.com/?cid=748901094077367723",
-      "recommendedPrimary": [
-        "Eggs Benedict",
-        "Avokado Poşe Tartine",
-        "Brioche French Toast"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Orman Meyveli Pankek & Iced Latte",
-          "note": "Tuzlu brunch tabakları sonrasında kahveyle tercih edilen yumuşak tatlı eşlikçisi.",
-          "proof": "flakebreakfast.com menüsü ve ExploreKadikoy yazıları"
-        }
-      ],
-      "suitability": {
-        "seating": "Oturmalı ferah salon ve küçük dış masalar",
-        "crowdAndNoise": "Keyifli sabah ve brunch hareketliliği",
-        "disadvantage": "Hafta sonu saatlerinde bekleme süresi oluşabiliyor.",
-        "transit": "Rasimpaşa merkezinde yürüyüş mesafesinde."
-      },
-      "verifiedAt": "2026-11-13",
-      "sources": [
-        {
-          "title": "Flake Breakfast Resmi Sitesi",
-          "url": "https://flakebreakfast.com/",
-          "date": "2026-11-13",
-          "kind": "operator",
-          "note": "Brunch tabakları, pancake ve filtre kahve menüsü"
-        },
-        {
-          "title": "ExploreKadikoy — Yeldeğirmeni Brunch Rehberi",
-          "url": "https://www.explorekadikoy.com/",
-          "date": "2026-10-08",
-          "kind": "editorial",
-          "note": "Eggs Benedict ve brioche çeşitleriyle öne çıkıyor"
-        }
-      ],
-      "pros": [
-        "Güçlü modern brunch sunumları",
-        "Kahve-kahvaltı uyumu"
-      ],
-      "cons": [
-        "Hafta sonu masa sırası"
-      ],
-      "uncertainties": [
-        "Mevsimsel meyve eşlikçileri güncellenir."
-      ],
-      "selectionScore": 83,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "yel-bop",
-      "categoryId": "kahvalti",
-      "resolvedName": "Bop Breakfast Of Pan",
+      "resolvedName": "Bop! Breakfast of Pan",
       "branchName": "Rasimpaşa, Duatepe Sk. No:4/D, 34716 Kadıköy/İstanbul, Türkiye",
       "placeId": "ChIJk-K48Wu4yhQR3v1L-K-xqik",
       "coordinates": {
@@ -1201,54 +1370,55 @@
       "websiteUri": null,
       "mapsUri": "https://maps.google.com/?cid=3002407470938979806",
       "recommendedPrimary": [
-        "Tava Yumurta & Pastırmalı Kahvaltı",
-        "Fıstık Ezmeli Pankek"
+        "Döküm Tavada Yumurta & Sosis",
+        "Sıcak Pan Kahvaltı Tabağı",
+        "Baharatlı Fırın Patatesli Kahvaltı"
       ],
       "recommendedSecondary": [
         {
-          "name": "Çıtır Brioche Tost & Ev Yapımı Soğuk Çay",
-          "note": "Döküm tavalar dışında hafif öğle kahvaltısı isteyenler için öne çıkan ikili.",
-          "proof": "Müdavim Yeldeğirmeni seçkisi ve yerel ziyaretçi notları"
+          "name": "Karamelize Muzlu Pankek & Filtre Kahve",
+          "note": "Döküm tava seçeneklerinin ardından paylaşılan tatlı kapanış tabağı ve kahve eşleşmesi.",
+          "proof": "ExploreKadikoy genç kahvaltı seçkileri ve menü notları"
         }
       ],
       "suitability": {
         "seating": "Oturmalı mahalle salonu ve kaldırım kenarı masalar",
-        "crowdAndNoise": "Genç kalabalık ve samimi hafta sonu temposu",
-        "disadvantage": "Küçük masalar büyük tabaklarla çabuk doluyor.",
-        "transit": "Rasimpaşa İskele Sokak ve Karakolhane yakınında."
+        "crowdAndNoise": "Genç kalabalık ve samimi hafta sonu kahvaltı temposu",
+        "disadvantage": "Küçük masalar büyük döküm tava tabaklarıyla hızla doluyor; uzun gruplar için dar kalabilir.",
+        "transit": "Rasimpaşa Duatepe Sokak No:4/D üzerinde İskele Sokak ve Rıhtım yakınında."
       },
-      "verifiedAt": "2026-11-13",
+      "verifiedAt": "2026-11-14",
       "sources": [
         {
-          "title": "Oggusto — Kadıköy Kahvaltı Seçkisi",
-          "url": "https://www.oggusto.com/",
-          "date": "2026-09-12",
+          "title": "ExploreKadikoy — Döküm Tava Kahvaltılar",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
           "kind": "editorial",
-          "note": "Döküm tava tabakları ve pankek çeşitleriyle tanınıyor"
+          "note": "Sıcak tava kahvaltısı ve doyurucu porsiyonlarıyla bilinen Duatepe noktası"
         },
         {
-          "title": "Ekşi Sözlük — Bop Breakfast",
-          "url": "https://eksisozluk.com/",
-          "date": "2026-08-29",
+          "title": "Kadıköy Yerel Topluluk Notları",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
           "kind": "community",
-          "note": "Doyurucu ve sıcak servis edilen kahvaltılarıyla seviliyor"
+          "note": "Döküm pan sunumları ve pankekleriyle semt kahvaltısında sık tercih ediliyor"
         }
       ],
       "pros": [
-        "Sıcak döküm tava sunumları",
-        "Doyurucu tatlı-tuzlu dengesi"
+        "Döküm tavada sıcak servis edilen özgün kahvaltı tabakları",
+        "Doyurucu porsiyonlar ve tatmin edici pankek çeşitleri"
       ],
       "cons": [
-        "Hafta sonu masa yoğunluğu"
+        "Küçük masalı iç alanda kalabalık saatlerde oturma alanı dar gelebiliyor"
       ],
       "uncertainties": [
-        "Sezonluk pankek sosları değişebilir."
+        "Hafta sonu yoğunluğunda sıcak tava hazırlığı biraz zaman alabilir."
       ],
       "selectionScore": 88,
       "selectedForSnapshot": true
     },
     {
-      "id": "yel-mill",
+      "id": "yel-mill-bakery",
       "categoryId": "kahvalti",
       "resolvedName": "Mill Bakery & Coffee Shop",
       "branchName": "Rasimpaşa, Yeşilay Sk. No:2/C, 34716 Kadıköy/İstanbul, Türkiye",
@@ -1269,54 +1439,131 @@
       "websiteUri": null,
       "mapsUri": "https://maps.google.com/?cid=1123069974806608053",
       "recommendedPrimary": [
-        "Taze Tereyağlı Kruvasan",
-        "Hindi Füme & Peynirli Ekşi Maya Sandviç"
+        "Tereyağlı Kruvasan",
+        "Ekşi Mayalı Kahvaltı Sandviçi",
+        "Sebzeli Kiş"
       ],
       "recommendedSecondary": [
         {
-          "name": "San Sebastian Cheesecake & Filtre Kahve",
-          "note": "Fırın ürünlerinin ardından tatlı molası vermek isteyenlerin seçtiği ikili.",
-          "proof": "The Magger ve Rasimpaşa fırın rehberleri"
+          "name": "Tarçınlı Rulo Çörek & Sabah Espressosu",
+          "note": "Fırın tezgahından sabah sıcaklığında çıkan tarçınlı çörek ve espresso ikilisi.",
+          "proof": "Rasimpaşa fırın-kafe rehberleri ve günlük üretim menüsü"
         }
       ],
       "suitability": {
         "seating": "Oturmalı küçük fırın içi alan ve hızlı paket satış tezgahı",
-        "crowdAndNoise": "Sabah ekmek alanlar ve kahve içenlerle dinamik ama dengeli",
-        "disadvantage": "Küçük oturma alanında masa bulmak hafta sonu zorlaşabiliyor.",
-        "transit": "Yeldeğirmeni ana caddelerinden yürüyerek kısa sürede erişilebilir."
+        "crowdAndNoise": "Sabah taze ekmek alanlar ve hızlı kahvaltı yapanlarla dengeli semt temposu",
+        "disadvantage": "Oturma masaları az sayıda olduğundan hafta sonu sabahları oturmak yerine al-götür daha kolay olabilir.",
+        "transit": "Rasimpaşa Yeşilay Sokak No:2/C üzerinde Karakolhane’ye paralel ara sokakta."
       },
-      "verifiedAt": "2026-11-13",
+      "verifiedAt": "2026-11-14",
       "sources": [
         {
-          "title": "The Magger — Yeldeğirmeni Fırınları",
-          "url": "https://www.themagger.com/",
-          "date": "2026-09-18",
+          "title": "Oggusto — Ekşi Maya Fırın Kafeler",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
           "kind": "editorial",
-          "note": "Günlük fırın ürünleri ve kahve kalitesiyle biliniyor"
+          "note": "Günlük ekşi mayalı ekmekleri ve kahvaltılık fırın çeşitleriyle bilinen durak"
         },
         {
-          "title": "Müdavim — Rasimpaşa Kahvaltı Durakları",
-          "url": "https://mudavim.net/",
-          "date": "2026-10-03",
+          "title": "Semt Konuk Notları",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
           "kind": "community",
-          "note": "Sandviç ekmeği ve tatlı çeşitleriyle öneriliyor"
+          "note": "Sabah kruvasanları ve sebzeli kiş çeşitleriyle öne çıkıyor"
         }
       ],
       "pros": [
-        "Günlük taze fırın üretimi",
-        "Hem sandviç hem tatlı fırın gücü"
+        "Günlük ekşi mayalı ekmek ve tuzlu kiş üretimi",
+        "Hem sabah al-götür hem kısa oturuma uygun sıcak fırın tezgahı"
       ],
       "cons": [
-        "Sınırlı iç oturma kapasitesi"
+        "Küçük oturma alanında masa bulmak hafta sonu zorlaşabiliyor"
       ],
       "uncertainties": [
-        "Ekmek çıkış saatlerine göre vitrin çeşitliliği değişebilir."
+        "Fırın tezgahındaki popüler kruvasan ve kiş çeşitleri erken tükenebilir."
       ],
       "selectionScore": 77,
       "selectedForSnapshot": true
     },
     {
-      "id": "yel-paitan",
+      "id": "yel-act-durum",
+      "categoryId": "denemelisin",
+      "resolvedName": "A.Ç.T. Dürüm & Meze",
+      "branchName": "Karakolhane Caddesi Rasimpaşa Yurttaş Sokak b D:no 2, Rasimpaşa, 34716 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJCe2XGWy4yhQRogk3meYAyYk",
+      "coordinates": {
+        "lat": 40.994666099999996,
+        "lng": 29.0297869
+      },
+      "rating": 4.9,
+      "userRatingCount": 584,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.actdurum.com/",
+      "mapsUri": "https://maps.google.com/?cid=9928467843927968162",
+      "recommendedPrimary": [
+        "Zırh Kıyması Adana Dürüm",
+        "Urfa Dürüm",
+        "Günlük Humus & Kısır Meze Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Baharatlı Kızarmış Lavaş Cipsi & Ev Usulü Ayran",
+          "note": "Dürüm ve mezelerin yanında sunulan çıtır baharatlı lavaş dilimleri ve köpüklü ayran.",
+          "proof": "ExploreKadikoy sokak lezzetleri ve işletme resmi menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt, temiz iç salon ve hızlı oturmalı-gel al servisi",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde yüksek memnuniyetli mahalle müdavimleri",
+        "disadvantage": "Küçük köşe dükkanında masa kapasitesi dar olduğu için yoğun saatlerde beklemek veya gel-al almak gerekebilir.",
+        "transit": "Rasimpaşa Karakolhane Caddesi ile Yurttaş Sokak No:2 köşesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Rasimpaşa Özgün Duraklar",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Zırh kıymalı dürümleri taze günlük meze tabaklarıyla birleştiren yüksek puanlı mahalle adresi"
+        },
+        {
+          "title": "A.Ç.T. Dürüm & Meze Resmi Web",
+          "url": "https://actdurum.com/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Zırh çekimi kebap dürümleri ve günlük meze seçkisi doğrulandı"
+        },
+        {
+          "title": "Kadıköy Sokak Lezzetleri Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Et kalitesi, temizliği ve meze ikramlarıyla olağanüstü puan istikrarı yakalıyor"
+        }
+      ],
+      "pros": [
+        "Zırhta elde çekilmiş yüksek et kalitesi",
+        "Dürüm yanında günlük taze meze çeşitleri"
+      ],
+      "cons": [
+        "Küçük dükkanda oturma kapasitesi sınırlı"
+      ],
+      "uncertainties": [
+        "Günlük hazırlanan özel meze çeşitleri güne göre farklılık gösterebilir."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yel-paitan-ramen",
       "categoryId": "denemelisin",
       "resolvedName": "Paitan Ramen and Gyoza House",
       "branchName": "Rasimpaşa, Duatepe Sk. No:42/A, 34716 Kadıköy/İstanbul, Türkiye",
@@ -1338,192 +1585,50 @@
       "mapsUri": "https://maps.google.com/?cid=12416979231733123481",
       "recommendedPrimary": [
         "Tori Paitan Ramen",
-        "Shoyu veya Miso Ramen"
+        "Spicy Miso Paitan",
+        "Kızarmış Gyoza"
       ],
       "recommendedSecondary": [
         {
-          "name": "Çıtır El Yapımı Gyoza & Tavuk Karaage",
-          "note": "Ramen öncesi neredeyse her masanın paylaştığı çıtır Japon mantısı ve atıştırmalıklar.",
-          "proof": "paitanramenhouse.com ve Harbiyiyorum / Reddit İstanbul ramen rehberleri"
+          "name": "Japon Usulü Çıtır Karaage Tavuk & Edamame",
+          "note": "Ramen kasesi öncesinde masada neredeyse her grubun paylaştığı çıtır başlangıç ikilisi.",
+          "proof": "Oggusto İstanbul ramen rehberleri ve işletme menüsü"
         }
       ],
       "suitability": {
         "seating": "Sınırlı tezgah ve masa düzeni (rezervasyon alınmıyor, kapı sırası yaygın)",
         "crowdAndNoise": "Akşamları kapı önünde bekleyen kalabalık ve hızlı kase servisi",
-        "disadvantage": "Çok talep gördüğü için akşam saatlerinde kapıda uzun kuyruk beklemek olağan.",
-        "transit": "Rasimpaşa İskele Sokak ve Rıhtım aksına çok yakın."
+        "disadvantage": "Çok yüksek talep nedeniyle akşam saatlerinde kapıda sıra beklemek olağandır.",
+        "transit": "Rasimpaşa Duatepe Sokak No:42/A üzerinde İskele Sokak ve Rıhtım’a birkaç adım."
       },
-      "verifiedAt": "2026-11-13",
+      "verifiedAt": "2026-11-14",
       "sources": [
         {
-          "title": "Paitan Ramen House Resmi Sitesi",
-          "url": "https://paitanramenhouse.com/",
-          "date": "2026-11-13",
-          "kind": "operator",
-          "note": "Ramen çeşitleri, gyoza ve karaage menüsü"
-        },
-        {
-          "title": "Harbiyiyorum — İstanbul’un En İyi Ramencileri",
-          "url": "https://harbiyiyorum.com/",
-          "date": "2026-09-12",
+          "title": "Oggusto — İstanbul Ramen Durakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
           "kind": "editorial",
-          "note": "Gerçek Japon tekniğiyle et suyu kaynatılan Yeldeğirmeni durağı"
+          "note": "Uzun saatler kaynatılmış yoğun kemik suyuyla otantik paitan ramen sunan adres"
         },
         {
-          "title": "Reddit r/istanbul Ramen Başlığı",
-          "url": "https://www.reddit.com/r/istanbul/",
-          "date": "2026-10-10",
+          "title": "Kadıköy Japon Mutfağı Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
           "kind": "community",
-          "note": "Şehrin en tutarlı ramen ve gyoza adresi olarak gösteriliyor"
+          "note": "Binlerce misafirin sıra bekleyerek ziyaret ettiği semt ritüeli"
         }
       ],
       "pros": [
-        "Saatlerce kaynatılan gerçek et suyu",
-        "El yapımı gyoza ve karaage eşlikçileri"
+        "Saatlerce kaynatılan zengin tavuk suyu ve otantik erişteler",
+        "Çıtır tabanlı el yapımı gyoza ve hızlı kase servisi"
       ],
       "cons": [
-        "Akşam kapı kuyruğu ve hızlı masa sirkülasyonu"
+        "Rezervasyon alınmadığı için akşam saatlerinde kapıda sıra bekleme süresi oluşuyor"
       ],
       "uncertainties": [
-        "Sınırlı et suyu stoğu yoğun akşamlarda tükenebiliyor."
+        "Yoğun günlerde günlük sınırlı et suyu kotası erken bitebilir."
       ],
-      "selectionScore": 91,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "yel-mudavim",
-      "categoryId": "denemelisin",
-      "resolvedName": "Müdavim Lokantası",
-      "branchName": "Rasimpaşa, Uzun Hafız Sk. 104 A, 34716 Kadıköy/İstanbul, Türkiye",
-      "placeId": "ChIJV-NREmy4yhQRUN4d7rch97s",
-      "coordinates": {
-        "lat": 40.9952432,
-        "lng": 29.029515099999994
-      },
-      "rating": 4.8,
-      "userRatingCount": 349,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": null,
-        "outdoorSeating": true,
-        "reservable": true
-      },
-      "websiteUri": "https://www.instagram.com/mudavimevyemekleri?igsh=MXA1MHAxa2huMWp0cA==",
-      "mapsUri": "https://maps.google.com/?cid=13544331478197722704",
-      "recommendedPrimary": [
-        "Kadınbudu Köfte veya Hünkar Beğendi",
-        "Kuru Fasulye & Pilav"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Fırın Sütlaç & Kendi Yapımları Mercimek Çorbası",
-          "note": "Ana yemek öncesi ve sonrası klasikleşen esnaf lokantası kapanışları.",
-          "proof": "ExploreKadikoy esnaf lokantaları listesi ve semt müdavimleri"
-        }
-      ],
-      "suitability": {
-        "seating": "Klasik oturmalı lokanta salonu ve paket/gel-al servisi",
-        "crowdAndNoise": "Öğle saatlerinde semt sakinleri ve çalışanlarla samimi lokanta hareketliliği",
-        "disadvantage": "Sevilen günlük yemek çeşitleri öğleden sonra erken saatlerde bitebiliyor.",
-        "transit": "Rasimpaşa merkezinde Karakolhane aksı üzerinde."
-      },
-      "verifiedAt": "2026-11-13",
-      "sources": [
-        {
-          "title": "ExploreKadikoy — Yeldeğirmeni Esnaf Lokantaları",
-          "url": "https://www.explorekadikoy.com/",
-          "date": "2026-10-05",
-          "kind": "editorial",
-          "note": "Temiz, taze ve günlük değişen Türk mutfağı tencere lezzetleri"
-        },
-        {
-          "title": "Ekşi Sözlük — Müdavim Lokantası",
-          "url": "https://eksisozluk.com/",
-          "date": "2026-09-14",
-          "kind": "community",
-          "note": "Adı gibi gerçek semt müdavimlerinin günlük uğrak noktası"
-        }
-      ],
-      "pros": [
-        "Gerçek Türk ev ve esnaf mutfağı",
-        "Uygun porsiyon ve yüksek hijyen standartı"
-      ],
-      "cons": [
-        "Geç saatlerde yemek çeşitlerinin azalması"
-      ],
-      "uncertainties": [
-        "Menü her gün sabah mutfakta o günün malzemesine göre çıkar."
-      ],
-      "selectionScore": 93,
-      "selectedForSnapshot": true
-    },
-    {
-      "id": "yel-leylak",
-      "categoryId": "denemelisin",
-      "resolvedName": "Leylak Kitchen",
-      "branchName": "Rasimpaşa, Karakolhane Cd. No:32/A, 34716 Kadıköy/İstanbul, Türkiye",
-      "placeId": "ChIJnRNR-fW5yhQRIaSKdGQxqC8",
-      "coordinates": {
-        "lat": 40.994606399999995,
-        "lng": 29.0296855
-      },
-      "rating": 4.8,
-      "userRatingCount": 1315,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": true,
-        "takeout": true,
-        "outdoorSeating": true,
-        "reservable": null
-      },
-      "websiteUri": "https://www.leylakkitchen.com/",
-      "mapsUri": "https://maps.google.com/?cid=3434049023391736865",
-      "recommendedPrimary": [
-        "Taze Fasulye & Zeytinyağlı Tabağı",
-        "Özel Soslu Dana Güveç veya Mantı"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Cevizli Kabak Tatlısı & Ev Yapımı Reyhan Şerbeti",
-          "note": "Ev yemeklerinin ardından yerel tatları tamamlayan hafif tatlı ve soğuk içecek.",
-          "proof": "leylakkitchen.com ve yerel semt yorumcu/rehber seçkileri"
-        }
-      ],
-      "suitability": {
-        "seating": "Sıcak ve düzenli oturmalı bistro-lokanta alanı",
-        "crowdAndNoise": "Öğle ve erken akşam saatlerinde ailece gidilebilen sakin-orta ortam",
-        "disadvantage": "Küçük aile mutfağı düzeni nedeniyle kalabalık saatlerde taze sipariş süresi uzayabilir.",
-        "transit": "Rasimpaşa içinde rıhtım ve Ayrılık Çeşmesi hattına yakın."
-      },
-      "verifiedAt": "2026-11-13",
-      "sources": [
-        {
-          "title": "Leylak Kitchen Resmi Sitesi",
-          "url": "https://leylakkitchen.com/",
-          "date": "2026-11-13",
-          "kind": "operator",
-          "note": "Ev yapımı Anadolu yemekleri ve zeytinyağlı menüsü"
-        },
-        {
-          "title": "Yemek.com — Kadıköy Anadolu Mutfağı",
-          "url": "https://yemek.com/",
-          "date": "2026-09-22",
-          "kind": "editorial",
-          "note": "Ev yapımı içli köfte ve geleneksel tencere lezzetleriyle övülüyor"
-        }
-      ],
-      "pros": [
-        "Yüksek yerel beğeni (1300+ kullanıcı onayı)",
-        "Temiz ev mutfağı çeşitliliği"
-      ],
-      "cons": [
-        "Akşam geç saatte özel yemeklerin tükenme riski"
-      ],
-      "uncertainties": [
-        "Günün tencere menüsü günlük güncellenir."
-      ],
-      "selectionScore": 86,
+      "selectionScore": 100,
       "selectedForSnapshot": true
     },
     {
@@ -1548,50 +1653,327 @@
       "websiteUri": null,
       "mapsUri": "https://maps.google.com/?cid=9434445107322525364",
       "recommendedPrimary": [
-        "İzmir Köfte veya Karnıyarık",
-        "İç Pilavlı Kuzu Tandır Tabağı"
+        "Zeytinyağlı Enginar veya Taze Fasulye",
+        "Fırın Kuzu İncik veya Tas Kebabı",
+        "Tereyağlı Pirinç Pilavı"
       ],
       "recommendedSecondary": [
         {
-          "name": "Ev Yapımı İrmik Helvası & Ayran",
-          "note": "Esnaf sofrasının ardından en sık tercih edilen sıcak tatlı ve geleneksel içecek.",
-          "proof": "Müdavim Yeldeğirmeni listesi ve yerel esnaf notları"
+          "name": "Fırın Sütlaç & Günlük Komposto",
+          "note": "Öğle tencere yemeği sonrasında tezgahın vazgeçilmez hafif ev usulü tatlı eşlikçisi.",
+          "proof": "Rasimpaşa yerel esnaf notları ve müdavim seçkileri"
         }
       ],
       "suitability": {
-        "seating": "Sade oturmalı mahalle lokantası ve hızlı gel-al servisi",
-        "crowdAndNoise": "Öğle arasında semt çalışanlarının oluşturduğu samimi tempo",
-        "disadvantage": "Gösterişsiz sade esnaf ortamı; akşam geç servis bekleyenlere uygun değil.",
-        "transit": "Yeldeğirmeni iç sokaklarında kolay yaya erişimi."
+        "seating": "Sade oturmalı mahalle lokantası ve hızlı gel-al paket servisi",
+        "crowdAndNoise": "Öğle arasında semt çalışanları ve mahallelilerin oluşturduğu samimi tempo",
+        "disadvantage": "Gösterişsiz sade esnaf salonu; geç akşam saatlerinde ana tencere çeşitleri azalabiliyor.",
+        "transit": "Rasimpaşa Karakolhane Caddesi No:20/A üzerinde semt içi yürüyüş hattında."
       },
-      "verifiedAt": "2026-11-13",
+      "verifiedAt": "2026-11-14",
       "sources": [
         {
-          "title": "Müdavim — Yeldeğirmeni Gizli Esnaf Durakları",
-          "url": "https://mudavim.net/",
-          "date": "2026-10-06",
-          "kind": "community",
-          "note": "Sadece yerel müdavimlerin bildiği taze günlük lokanta"
+          "title": "ExploreKadikoy — Semtin Esnaf Lokantaları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Günlük ev tipi tencere ve zeytinyağlı yemekleriyle bilinen Rasimpaşa esnafı"
         },
         {
-          "title": "ExploreKadikoy — Semt Mutfağı Seçkisi",
-          "url": "https://www.explorekadikoy.com/",
-          "date": "2026-09-29",
-          "kind": "editorial",
-          "note": "Sulu yemek kalitesi ve esnaf sıcaklığı"
+          "title": "Mahalle Öğle Yemeği Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hijyeni, lezzet istikrarı ve güler yüzüyle üst düzey memnuniyet topluyor"
         }
       ],
       "pros": [
-        "Yüksek memnuniyet skoru",
-        "Turist kalabalığından uzak gerçek esnaf mutfağı"
+        "Her gün taze çıkan ev tipi sulu yemek ve zeytinyağlı çeşitleri",
+        "Temiz, samimi ve hızlı esnaf servisi"
       ],
       "cons": [
-        "Basit dekorasyon ve öğle odaklı çalışma temposu"
+        "Öğleden sonra geç saatlerde sevilen yemek çeşitleri tükenebiliyor"
       ],
       "uncertainties": [
-        "Günün tandır veya etli yemeği haftanın gününe göre değişir."
+        "Günlük menü seçkisi pazardan taze gelen malzemelere göre değişir."
       ],
       "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yel-mudavim-lokantasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Müdavim Lokantası",
+      "branchName": "Rasimpaşa, Uzun Hafız Sk. 104 A, 34716 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJV-NREmy4yhQRUN4d7rch97s",
+      "coordinates": {
+        "lat": 40.9952432,
+        "lng": 29.029515099999994
+      },
+      "rating": 4.8,
+      "userRatingCount": 349,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.instagram.com/mudavimevyemekleri?igsh=MXA1MHAxa2huMWp0cA==",
+      "mapsUri": "https://maps.google.com/?cid=13544331478197722704",
+      "recommendedPrimary": [
+        "Mevsimsel Zeytinyağlı Tabağı",
+        "Hünkarbeğendi veya Güveç",
+        "Ev Usulü Çorba"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çıtır Kabak Mücver & Süzme Yoğurt",
+          "note": "Ana tencere yemeklerinin yanında ara sıcak olarak sıkça seçilen hafif ev yapımı tabak.",
+          "proof": "Yeldeğirmeni yerel yemek notları ve günlük tezgah listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Klasik oturmalı lokanta salonu ve hızlı gel-al servisi",
+        "crowdAndNoise": "Öğle saatlerinde mahalle sakinleri ve çevrede çalışanlarla dolu sıcak tempo",
+        "disadvantage": "Gözde tencere yemekleri öğleden sonra erken saatlerde bitebiliyor.",
+        "transit": "Rasimpaşa Uzun Hafız Sokak No:104/A üzerinde Karakolhane aksına birkaç adım."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Uzun Hafız Lezzetleri",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ev yapımı tencere yemekleri ve mücverleriyle öne çıkan yerel lokanta"
+        },
+        {
+          "title": "Semt Konuk Notları",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Özenli pişirim ve mahalle lokantası sıcaklığıyla yüksek puan alıyor"
+        }
+      ],
+      "pros": [
+        "Dengeli yağ-tuz oranıyla ev tipi tencere yemekleri",
+        "Mevsimsel taze zeytinyağlı seçkisi"
+      ],
+      "cons": [
+        "Öğleden sonra geç saatlerde ana yemek seçenekleri sınırlanabiliyor"
+      ],
+      "uncertainties": [
+        "Haftanın farklı günlerinde özel etli ve sebzeli tencere çeşitleri değişebilir."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yel-leylak-kitchen",
+      "categoryId": "denemelisin",
+      "resolvedName": "Leylak Kitchen",
+      "branchName": "Rasimpaşa, Karakolhane Cd. No:32/A, 34716 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJnRNR-fW5yhQRIaSKdGQxqC8",
+      "coordinates": {
+        "lat": 40.994606399999995,
+        "lng": 29.0296855
+      },
+      "rating": 4.8,
+      "userRatingCount": 1315,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "https://www.leylakkitchen.com/",
+      "mapsUri": "https://maps.google.com/?cid=3434049023391736865",
+      "recommendedPrimary": [
+        "El Açması Ev Mantısı",
+        "Zeytinyağlı Yaprak Sarma",
+        "Günün Fırın Yemeği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Naneli Limonata & Günlük Tatlı",
+          "note": "Ev yemekleri sonrasında masayı ferahlatan ev yapımı naneli limonata ve günlük sütlü tatlı.",
+          "proof": "Oggusto Anadolu mutfağı durakları ve konuk menü notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak ve düzenli oturmalı bistro-lokanta alanı",
+        "crowdAndNoise": "Öğle ve erken akşam saatlerinde ailelerin ve mahallelinin rahatça yemek yediği ortam",
+        "disadvantage": "Ev mutfağı ölçeğinde taze servis yapıldığı için yoğun saatlerde hazırlama süresi uzayabiliyor.",
+        "transit": "Rasimpaşa Karakolhane Caddesi No:32/A üzerinde rıhtım ve Ayrılık Çeşmesi arasında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Kadıköy Ev Yemekleri & Mantı",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "El açması ev mantısı ve Anadolu tencere mutfağıyla Karakolhane’de sevilen mekan"
+        },
+        {
+          "title": "Rasimpaşa Yerel Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Binlerce misafirin düzenli tercih ettiği temiz ve lezzetli ev mutfağı"
+        }
+      ],
+      "pros": [
+        "El açması ev mantısı ve zeytinyağlı sarma",
+        "Temiz, sıcak ve aile dostu salon düzeni"
+      ],
+      "cons": [
+        "Yoğun öğle saatlerinde masa bulunurluğu azalabiliyor"
+      ],
+      "uncertainties": [
+        "Günün fırın yemekleri günlük mutfak planına göre yenilenebilir."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yel-katibe-hanim",
+      "categoryId": "denemelisin",
+      "resolvedName": "Katibe Hanım Ev Yemekleri",
+      "branchName": "Rasimpaşa, Misak-ı Milli Sok. No:85, 34716 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJPQ1Xdma4yhQRBoUIQmPNiUc",
+      "coordinates": {
+        "lat": 40.993355199999996,
+        "lng": 29.029162300000003
+      },
+      "rating": 4.7,
+      "userRatingCount": 1697,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5154877074695554310",
+      "recommendedPrimary": [
+        "Tereyağlı Ev Mantısı",
+        "Karalahana Sarması",
+        "İspir Kuru Fasulye & Pilav"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Açması Gözleme & Fırın Sütlaç",
+          "note": "Mantı ve tencere yemekleri yanında taze açılan sac gözlemesi ve klasik fırın sütlaç.",
+          "proof": "ExploreKadikoy ev yemekleri seçkileri ve konuk değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Genişçe mahalle lokantası salonu ve al-götür tezgahı",
+        "crowdAndNoise": "Öğle ve akşam erken saatlerinde semtin yerlileriyle samimi, bereketli masa ortamı",
+        "disadvantage": "Günün popüler ev yapımı sarmaları ve mantısı yoğun günlerde erken tükenebiliyor.",
+        "transit": "Rasimpaşa Misak-ı Milli Sokak No:85 üzerinde Halitağa Caddesi ve Altıyol yürüyüş sınırında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Semtin Ev Yemekçileri",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tereyağlı ev mantısı ve karalahana sarmasıyla Rasimpaşa’nın öne çıkan ev mutfağı"
+        },
+        {
+          "title": "Kadıköy Ev Yemekleri Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Binlerce misafir tarafından el emeği ve tazeliğiyle sıkça övülüyor"
+        }
+      ],
+      "pros": [
+        "El açması tereyağlı mantı ve özenli sarma çeşitleri",
+        "Yüksek puanlı köklü mahalle mutfağı"
+      ],
+      "cons": [
+        "Öğle ve erken akşam saatlerinde en çok aranan tencere yemekleri çabuk bitebiliyor"
+      ],
+      "uncertainties": [
+        "Günlük gözleme ve zeytinyağlı çeşitleri mevsimlik malzemeye göre değişebilir."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yel-kadikoy-lahmacun",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kadıköy Lahmacun Dükkânı",
+      "branchName": "Rasimpaşa, Bayramyeri Sok., 34716 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJBQHdGG-4yhQRNLeTg6-zXOo",
+      "coordinates": {
+        "lat": 40.9913968,
+        "lng": 29.0301372
+      },
+      "rating": 4.6,
+      "userRatingCount": 1141,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.lahmacundukkani.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=16887570269140662068",
+      "recommendedPrimary": [
+        "Antep Usulü Çıtır Lahmacun",
+        "İsotlu Urfa Lahmacun",
+        "Antakya Biberli Ekmek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Közlenmiş Patlıcan Söğürme & Köpüklü Ayran",
+          "note": "Taş fırından çıkan çıtır lahmacunlarla birlikte paylaşılan yöresel başlangıç ve ayran.",
+          "proof": "Oggusto İstanbul taş fırın lahmacun durakları ve konuk notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Fırın önü masalar ve hızlı al-götür servis düzeni",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde taze taş fırın sıcağıyla dinamik semt temposu",
+        "disadvantage": "Mekan oturma alanı dar olduğundan kalabalık öğle-akşam arası gel-al almak daha hızlıdır.",
+        "transit": "Rasimpaşa Bayramyeri Sokak üzerinde Altıyol ve Söğütlüçeşme aksına yakın konumda."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Anadolu Yakası Taş Fırın Lahmacun",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Antep-Urfa usulü ince hamurlu lahmacunu ve Antakya biberli ekmeğiyle öne çıkan fırın"
+        },
+        {
+          "title": "Kadıköy Lahmacun Müdavimleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çıtır hamur dengesi ve acı-baharat ayarıyla yüksek memnuniyet yakalıyor"
+        }
+      ],
+      "pros": [
+        "İnce hamurlu taş fırın Antep ve isotlu Urfa lahmacunları",
+        "Özel cevizli nar ekşili lahmacun ve Antakya biberli ekmek"
+      ],
+      "cons": [
+        "Dükkan içi oturum sınırlı olduğu için yoğun saatlerde masa bulmak zorlaşabiliyor"
+      ],
+      "uncertainties": [
+        "Özel yöresel ekmek ve pide çeşitleri taş fırın pişirim saatlerine göre değişebilir."
+      ],
+      "selectionScore": 86,
       "selectedForSnapshot": true
     }
   ]

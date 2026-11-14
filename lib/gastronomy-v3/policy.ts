@@ -109,6 +109,9 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'divan pastanesi',
   'perran ocakbaşı',
   'perran ocakbasi',
+  'coffee manifesto',
+  'balta burger',
+  'beylerbeyi profiterol',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([
