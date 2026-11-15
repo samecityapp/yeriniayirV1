@@ -440,23 +440,30 @@ export const ISTANBUL_SARIYER_YENIKOY_DEF: V3RegionDefinition = {
       id: 'yen-apartiman',
       placeId: 'ChIJB8yBhGHKyhQRIEJP93-z-Ks',
       cat: 'date',
+      secondaryCategoryIds: ['kahvalti'],
       name: 'Apartıman Yeniköy',
       brand: 'apartıman',
       area: 'Köybaşı Cd., Yeniköy',
-      signals: ['bahceli-bistro', 'somine-sicakligi', 'kokorec-arpa-sehriye'],
+      signals: ['bahceli-bistro', 'alakart-kahvalti', 'somine-sicakligi', 'kokorec-arpa-sehriye'],
       desc:
-        'Bir aile apartmanının giriş katı ve yeşil arka bahçesinden dönüştürülen, mevsimsel Anadolu ürünlerini bistro tekniğiyle pişiren uzun akşamların adresi.',
+        'Bir aile apartmanının giriş katı ve yeşil arka bahçesinden dönüştürülen; gündüzleri alakart kahvaltı tabaklarıyla, akşamları ise mevsimsel Anadolu bistro mutfağıyla öne çıkan semt adresi.',
       order: [
         'Kokoreç Suyunda Pişen Kuzu Etli Arpa Şehriye',
         'Pekmezli Patlıcan',
         'Ahududu ile Kürlenmiş Somon Gravlax',
       ],
       menu: [
+        'Saray Yumurtası & Alakart Kahvaltı Tabakları',
         'Butik Şarap & İmza Kokteyl Seçkisi',
         'Odun Ateşinde Mevsim Sebzeleri',
         'Apartıman Tatlısı',
       ],
       sec: [
+        [
+          'Saray Yumurtası, Cunda Loru & Pişi',
+          'Serpme kalıbına girmeden tek tek seçilen sabah-öğle kahvaltı tabakları ve günlük ev yapımı ekmekler.',
+          'Yemek.com ve Gurme Rehber',
+        ],
         [
           'Apartıman Tatlısı & İmza Kokteyller',
           'Şömineli iç salon veya yemyeşil bahçede akşam yemeğini tamamlayan tatlı ve bar eşleşmeleri.',
@@ -491,6 +498,12 @@ export const ISTANBUL_SARIYER_YENIKOY_DEF: V3RegionDefinition = {
           'https://www.themagger.com',
           'editorial',
           'Kokoreç suyunda arpa şehriye, pekmezli patlıcan ve arka bahçe atmosferi doğrulandı.',
+        ],
+        [
+          'Yemek.com & Gurme Rehber — Apartıman Yeniköy Kahvaltı',
+          'https://yemek.com',
+          'editorial',
+          'Serpme yerine alakart kurgulanan kahvaltı sofrası, Saray Yumurtası, Cunda loru ve ev yapımı ekmekler doğrulandı.',
         ],
       ],
       pros: [

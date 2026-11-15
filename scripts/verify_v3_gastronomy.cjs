@@ -2590,7 +2590,11 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
       );
       assert.equal(p.getCategoryResult(disc.region.id, 'kahve').coreVenues[0].name, 'Grea Coffee Nations');
       assert.equal(p.getCategoryResult(disc.region.id, 'date-mekanlari').coreVenues[0].name, 'Araka');
-      assert.equal(p.getCategoryResult(disc.region.id, 'kahvalti').coreVenues[0].name, 'Bramble Cafe Yeniköy');
+      assert.equal(p.getCategoryResult(disc.region.id, 'kahvalti').coreVenues[0].name, 'Apartıman Yeniköy');
+      assert.equal(p.getCategoryResult(disc.region.id, 'kahvalti').coreVenues.length, 4);
+      assert.ok(
+        p.getCategoryResult(disc.region.id, 'kahvalti').coreVenues.some((v) => v.name === 'Bramble Cafe Yeniköy')
+      );
       assert.equal(
         p.getCategoryResult(disc.region.id, 'denemelisin').coreVenues[0].name,
         'Evimiz Osmanlı Mutfağı'
