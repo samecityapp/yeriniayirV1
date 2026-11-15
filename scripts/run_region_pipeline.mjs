@@ -25,6 +25,8 @@ const PUBLISHED_REGION_KEYS = [
   'istanbul-sisli-nisantasi',
   'istanbul-beyoglu-galata',
   'istanbul-besiktas-carsi',
+  'istanbul-besiktas-akaretler',
+  'istanbul-besiktas-bebek',
   'aydin-kusadasi',
   'gaziantep-merkez',
   'antalya-kaleici',

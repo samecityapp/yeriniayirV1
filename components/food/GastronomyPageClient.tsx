@@ -158,7 +158,19 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     image: '/images/gastronomy/gastronomy.svg',
     badge: 'Doğrulanmış Seçki',
     headline: 'Beşiktaş Çarşı, Beşiktaş',
-    vibe: 'Köyiçi’nin odun ateşi döner ustası, Kahvaltıcılar Sokağı ve Balık Pazarı sofralarından Akaretler ve Türkali’nin artizan pizzacılarına, kavurmacılarına ve yeni nesil meyhanelerine uzanan seçki',
+    vibe: 'Köyiçi’nin odun ateşi döner ustası, Kahvaltıcılar Sokağı ve Balık Pazarı sofralarından Sinanpaşa ve Türkali’nin artizan pizzacılarına, mantıcılarına ve yeni nesil meyhanelerine uzanan seçki',
+  },
+  'akaretler-besiktas': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Akaretler, Beşiktaş',
+    vibe: 'Vişnezade Sıraevler aksından Süleyman Seba ve Şair Nedim yokuşuna uzanan et kavurma ve mantı durakları, nitelikli kavurmacılar, smash burgerciler, kokteyl barlar ve butik meyhaneler',
+  },
+  'bebek-besiktas': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Bebek, Beşiktaş',
+    vibe: '1904 badem ezmesi ve sahil dondurma ritüelinden 1952 kıyı balıkçısına, Manolya Sokak gurme burger ve matcha barlarından Küçük Bebek ekşi maya fırınlarına Boğaz kıyısı seçkisi',
   },
 };
 
@@ -348,7 +360,7 @@ export function GastronomyPageClient({
                       Konum Seç
                     </div>
                     <div className="text-xs text-slate-500 font-medium truncate mt-0.5">
-                      Galata · Beşiktaş Çarşı · Karaköy · Cihangir · Nişantaşı · Üsküdar · Kuzguncuk · Çengelköy · Koşuyolu & Acıbadem · Kadıköy · Moda · Caddebostan · Suadiye · Bostancı · Antalya · Gaziantep · Kuşadası · Akyaka
+                      Akaretler · Bebek · Galata · Beşiktaş Çarşı · Karaköy · Cihangir · Nişantaşı · Üsküdar · Kuzguncuk · Çengelköy · Koşuyolu & Acıbadem · Kadıköy · Moda · Caddebostan · Suadiye · Bostancı · Antalya · Gaziantep · Kuşadası · Akyaka
                     </div>
                   </div>
                 </div>

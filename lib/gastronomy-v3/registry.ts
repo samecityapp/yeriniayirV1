@@ -15,6 +15,8 @@ import cihangirSnapshotJson from './regions/istanbul-beyoglu-cihangir.json';
 import nisantasiSnapshotJson from './regions/istanbul-sisli-nisantasi.json';
 import galataSnapshotJson from './regions/istanbul-beyoglu-galata.json';
 import besiktasCarsiSnapshotJson from './regions/istanbul-besiktas-carsi.json';
+import akaretlerSnapshotJson from './regions/istanbul-besiktas-akaretler.json';
+import bebekSnapshotJson from './regions/istanbul-besiktas-bebek.json';
 import kusadasiSnapshotJson from './regions/aydin-kusadasi.json';
 import gaziantepSnapshotJson from './regions/gaziantep-merkez.json';
 import antalyaKaleiciSnapshotJson from './regions/antalya-kaleici.json';
@@ -41,6 +43,8 @@ const CIHANGIR_SNAPSHOT = cihangirSnapshotJson as V3VerifiedRegionSnapshot;
 const NISANTASI_SNAPSHOT = nisantasiSnapshotJson as V3VerifiedRegionSnapshot;
 const GALATA_SNAPSHOT = galataSnapshotJson as V3VerifiedRegionSnapshot;
 const BESIKTAS_CARSI_SNAPSHOT = besiktasCarsiSnapshotJson as V3VerifiedRegionSnapshot;
+const AKARETLER_SNAPSHOT = akaretlerSnapshotJson as V3VerifiedRegionSnapshot;
+const BEBEK_SNAPSHOT = bebekSnapshotJson as V3VerifiedRegionSnapshot;
 const KUSADASI_SNAPSHOT = kusadasiSnapshotJson as V3VerifiedRegionSnapshot;
 const GAZIANTEP_SNAPSHOT = gaziantepSnapshotJson as V3VerifiedRegionSnapshot;
 const ANTALYA_KALEICI_SNAPSHOT = antalyaKaleiciSnapshotJson as V3VerifiedRegionSnapshot;
@@ -66,6 +70,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   NISANTASI_SNAPSHOT,
   GALATA_SNAPSHOT,
   BESIKTAS_CARSI_SNAPSHOT,
+  AKARETLER_SNAPSHOT,
+  BEBEK_SNAPSHOT,
   KUSADASI_SNAPSHOT,
   GAZIANTEP_SNAPSHOT,
   ANTALYA_KALEICI_SNAPSHOT,
@@ -150,12 +156,22 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'istanbul-besiktas-carsi': BESIKTAS_CARSI_SNAPSHOT,
   besiktas: BESIKTAS_CARSI_SNAPSHOT,
   koyici: BESIKTAS_CARSI_SNAPSHOT,
-  akaretler: BESIKTAS_CARSI_SNAPSHOT,
   sinanpasa: BESIKTAS_CARSI_SNAPSHOT,
-  visnezade: BESIKTAS_CARSI_SNAPSHOT,
   turkali: BESIKTAS_CARSI_SNAPSHOT,
   cihannuma: BESIKTAS_CARSI_SNAPSHOT,
   abbasaga: BESIKTAS_CARSI_SNAPSHOT,
+  akaretler: AKARETLER_SNAPSHOT,
+  'akaretler-besiktas': AKARETLER_SNAPSHOT,
+  'istanbul-besiktas-akaretler': AKARETLER_SNAPSHOT,
+  visnezade: AKARETLER_SNAPSHOT,
+  'suleyman-seba': AKARETLER_SNAPSHOT,
+  siraevler: AKARETLER_SNAPSHOT,
+  bebek: BEBEK_SNAPSHOT,
+  'bebek-besiktas': BEBEK_SNAPSHOT,
+  'istanbul-besiktas-bebek': BEBEK_SNAPSHOT,
+  'kucuk-bebek': BEBEK_SNAPSHOT,
+  'cevdet-pasa': BEBEK_SNAPSHOT,
+  insirah: BEBEK_SNAPSHOT,
   kusadasi: KUSADASI_SNAPSHOT,
   'kusadasi-aydin': KUSADASI_SNAPSHOT,
   'merkez-kusadasi-aydin': KUSADASI_SNAPSHOT,
@@ -235,21 +251,6 @@ export const V3_LOCATIONS: FoodLocation[] = [
     status: 'coming_soon',
     aliases: ['Asmalımescit', 'Asmalimescit', 'Beyoğlu'],
     scopeNote: 'İstanbul · Beyoğlu · Asmalımescit (V3 Doğrulama Sırasında)',
-  },
-  {
-    id: 'bebek-besiktas',
-    level: 'semt',
-    city: 'İstanbul',
-    district: 'Beşiktaş',
-    neighborhood: 'Bebek',
-    name: 'Bebek',
-    slug: 'bebek',
-    path: ['istanbul', 'besiktas', 'bebek'],
-    displayName: 'Bebek, Beşiktaş, İstanbul',
-    locative: "Bebek'te",
-    status: 'coming_soon',
-    aliases: ['Bebek', 'Beşiktaş'],
-    scopeNote: 'İstanbul · Beşiktaş · Bebek (V3 Doğrulama Sırasında)',
   },
   {
     id: 'yalikavak-bodrum-mugla',

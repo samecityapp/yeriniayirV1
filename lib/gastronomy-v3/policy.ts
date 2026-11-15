@@ -137,6 +137,9 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'napoli gourmet',
   'sliceguy',
   'betro burger',
+  'the hunger',
+  'upper crust',
+  'selamlique',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([
