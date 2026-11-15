@@ -19,6 +19,8 @@ import akaretlerSnapshotJson from './regions/istanbul-besiktas-akaretler.json';
 import bebekSnapshotJson from './regions/istanbul-besiktas-bebek.json';
 import etilerSnapshotJson from './regions/istanbul-besiktas-etiler.json';
 import ortakoySnapshotJson from './regions/istanbul-besiktas-ortakoy.json';
+import cukurcumaSnapshotJson from './regions/istanbul-beyoglu-cukurcuma.json';
+import balatSnapshotJson from './regions/istanbul-fatih-balat.json';
 import kusadasiSnapshotJson from './regions/aydin-kusadasi.json';
 import gaziantepSnapshotJson from './regions/gaziantep-merkez.json';
 import antalyaKaleiciSnapshotJson from './regions/antalya-kaleici.json';
@@ -49,6 +51,8 @@ const AKARETLER_SNAPSHOT = akaretlerSnapshotJson as V3VerifiedRegionSnapshot;
 const BEBEK_SNAPSHOT = bebekSnapshotJson as V3VerifiedRegionSnapshot;
 const ETILER_SNAPSHOT = etilerSnapshotJson as V3VerifiedRegionSnapshot;
 const ORTAKOY_SNAPSHOT = ortakoySnapshotJson as V3VerifiedRegionSnapshot;
+const CUKURCUMA_SNAPSHOT = cukurcumaSnapshotJson as V3VerifiedRegionSnapshot;
+const BALAT_SNAPSHOT = balatSnapshotJson as V3VerifiedRegionSnapshot;
 const KUSADASI_SNAPSHOT = kusadasiSnapshotJson as V3VerifiedRegionSnapshot;
 const GAZIANTEP_SNAPSHOT = gaziantepSnapshotJson as V3VerifiedRegionSnapshot;
 const ANTALYA_KALEICI_SNAPSHOT = antalyaKaleiciSnapshotJson as V3VerifiedRegionSnapshot;
@@ -78,6 +82,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   BEBEK_SNAPSHOT,
   ETILER_SNAPSHOT,
   ORTAKOY_SNAPSHOT,
+  CUKURCUMA_SNAPSHOT,
+  BALAT_SNAPSHOT,
   KUSADASI_SNAPSHOT,
   GAZIANTEP_SNAPSHOT,
   ANTALYA_KALEICI_SNAPSHOT,
@@ -143,7 +149,6 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'cihangir-beyoglu': CIHANGIR_SNAPSHOT,
   'istanbul-beyoglu-cihangir': CIHANGIR_SNAPSHOT,
   firuzaga: CIHANGIR_SNAPSHOT,
-  cukurcuma: CIHANGIR_SNAPSHOT,
   nisantasi: NISANTASI_SNAPSHOT,
   'nisantasi-sisli': NISANTASI_SNAPSHOT,
   'istanbul-sisli-nisantasi': NISANTASI_SNAPSHOT,
@@ -194,6 +199,19 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'eski-bahce': ORTAKOY_SNAPSHOT,
   'muallim-naci': ORTAKOY_SNAPSHOT,
   feriye: ORTAKOY_SNAPSHOT,
+  cukurcuma: CUKURCUMA_SNAPSHOT,
+  'cukurcuma-beyoglu': CUKURCUMA_SNAPSHOT,
+  'istanbul-beyoglu-cukurcuma': CUKURCUMA_SNAPSHOT,
+  'faik-pasa': CUKURCUMA_SNAPSHOT,
+  turnacibasi: CUKURCUMA_SNAPSHOT,
+  'cezayir-sokagi': CUKURCUMA_SNAPSHOT,
+  balat: BALAT_SNAPSHOT,
+  'balat-fatih': BALAT_SNAPSHOT,
+  'istanbul-fatih-balat': BALAT_SNAPSHOT,
+  fener: BALAT_SNAPSHOT,
+  ayvansaray: BALAT_SNAPSHOT,
+  vodina: BALAT_SNAPSHOT,
+  'cifit-carsisi': BALAT_SNAPSHOT,
   kusadasi: KUSADASI_SNAPSHOT,
   'kusadasi-aydin': KUSADASI_SNAPSHOT,
   'merkez-kusadasi-aydin': KUSADASI_SNAPSHOT,

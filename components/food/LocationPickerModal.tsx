@@ -114,7 +114,7 @@ export function LocationPickerModal({
           onClose();
         } else {
           setGpsMessage(
-            "Konumunuza yakın aktif bir rehber henüz bulunmuyor. Şu an Etiler, Ortaköy, Akaretler, Bebek, Galata, Beşiktaş Çarşı, Karaköy, Cihangir, Nişantaşı, Üsküdar, Kuzguncuk, Çengelköy, Koşuyolu & Acıbadem, Kadıköy, Moda, Yeldeğirmeni, Feneryolu, Fenerbahçe & Kalamış, Caddebostan, Suadiye, Bostancı, Antalya, Gaziantep, Kuşadası ve Akyaka rehberleri yayındadır."
+            "Konumunuza yakın aktif bir rehber henüz bulunmuyor. Şu an Balat, Çukurcuma, Etiler, Ortaköy, Akaretler, Bebek, Galata, Beşiktaş Çarşı, Karaköy, Cihangir, Nişantaşı, Üsküdar, Kuzguncuk, Çengelköy, Koşuyolu & Acıbadem, Kadıköy, Moda, Yeldeğirmeni, Feneryolu, Fenerbahçe & Kalamış, Caddebostan, Suadiye, Bostancı, Antalya, Gaziantep, Kuşadası ve Akyaka rehberleri yayındadır."
           );
         }
       },

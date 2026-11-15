@@ -148,6 +148,11 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'grandma',
   'nusr-et',
   'nusret',
+  'david people',
+  'paper roasting',
+  'asırlık tencere',
+  'asirlik tencere',
+  'tarihi tencere',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([
@@ -161,7 +166,7 @@ export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([
   'bakery',
 ]);
 
-const NON_COFFEE_NAME_REGEX = /\b(cikolata|chocolat|unlu mamul|unlu mamulleri|tatlicisi|pastanesi)\b/;
+const NON_COFFEE_NAME_REGEX = /\b(cikolata|chocolat|chocolate|unlu mamul|unlu mamulleri|tatlicisi|pastanesi)\b/;
 
 export const FOOD_PLACE_TYPES = new Set<string>([
   'cafe',

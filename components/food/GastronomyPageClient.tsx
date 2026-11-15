@@ -140,7 +140,7 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     image: '/images/gastronomy/gastronomy.svg',
     badge: 'Doğrulanmış Seçki',
     headline: 'Cihangir, Beyoğlu',
-    vibe: 'Sıraselviler ve Akarsu Yokuşu’nun köklü pastane ve esnaf lezzetlerinden Çukurcuma bistro duraklarına ve samimi mahalle kahvecilerine uzanan seçki',
+    vibe: 'Sıraselviler ve Akarsu Yokuşu’nun köklü pastane ve esnaf lezzetlerinden Defterdar Yokuşu ve Susam Sokak bistro durakları ile samimi mahalle kahvecilerine uzanan seçki',
   },
   'nisantasi-sisli': {
     image: '/images/gastronomy/gastronomy.svg',
@@ -183,6 +183,18 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     badge: 'Doğrulanmış Seçki',
     headline: 'Ortaköy, Beşiktaş',
     vibe: 'Feriye rıhtımı ve Cemil Topuzlu Parkı’nın köklü Boğaz sofralarından Eski Bahçe Sokak taş fırın pizzacılarına, üç kuşaklık Konya fırın kebabından sahil kumpir ritüeline uzanan seçki',
+  },
+  'cukurcuma-beyoglu': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Çukurcuma, Beyoğlu',
+    vibe: 'Faik Paşa ve Turnacıbaşı antikacı yokuşlarında ekşi mayalı taş fırın pizzacılar, bağımsız kahve kavurmacıları, avlu içi şarap evleri ve mevsimsel Anadolu lokantaları',
+  },
+  'balat-fatih': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Balat, Fatih',
+    vibe: 'Çıfıt Çarşısı’nın 1879 akide şekercisi ve 1890 mirası meyhanesinden Vodina ile Fener yokuşlarının üçüncü dalga kavurmahanelerine, taze makarna ve Haliç sofralarına uzanan seçki',
   },
 };
 
@@ -372,7 +384,7 @@ export function GastronomyPageClient({
                       Konum Seç
                     </div>
                     <div className="text-xs text-slate-500 font-medium truncate mt-0.5">
-                      Etiler · Ortaköy · Akaretler · Bebek · Galata · Beşiktaş Çarşı · Karaköy · Cihangir · Nişantaşı · Üsküdar · Kuzguncuk · Çengelköy · Koşuyolu & Acıbadem · Kadıköy · Moda · Caddebostan · Suadiye · Bostancı · Antalya · Gaziantep · Kuşadası · Akyaka
+                      Balat · Çukurcuma · Etiler · Ortaköy · Akaretler · Bebek · Galata · Beşiktaş Çarşı · Karaköy · Cihangir · Nişantaşı · Üsküdar · Kuzguncuk · Çengelköy · Koşuyolu & Acıbadem · Kadıköy · Moda · Caddebostan · Suadiye · Bostancı · Antalya · Gaziantep · Kuşadası · Akyaka
                     </div>
                   </div>
                 </div>

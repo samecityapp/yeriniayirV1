@@ -2,8 +2,8 @@
   "schemaVersion": "3.4",
   "regionKey": "istanbul-beyoglu-cihangir",
   "displayName": "Cihangir, Beyoğlu, İstanbul",
-  "verifiedAt": "2026-11-14T17:44:36.371Z",
-  "selectedCount": 25,
+  "verifiedAt": "2026-11-15T13:41:33.218Z",
+  "selectedCount": 23,
   "rejectedControls": [
     {
       "id": "ctrl-cih-espressolab-chain",
@@ -26,9 +26,9 @@
       "reason": "kahve_category_not_coffee_specialist:pastry_shop"
     },
     {
-      "id": "ctrl-cih-cuma-below-44",
-      "resolvedName": "Cuma",
-      "reason": "below_quality_threshold:★4.1(1382)"
+      "id": "ctrl-cih-kumbasar-below-44",
+      "resolvedName": "Kumbasar Artisan Bakery",
+      "reason": "below_quality_threshold:★4.3(219)"
     },
     {
       "id": "ctrl-cih-jash-below-44",
@@ -39,83 +39,19 @@
       "id": "ctrl-cih-smashsquare-outside",
       "resolvedName": "Smash Square Burger",
       "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Cihangir/Firuzağa/Kılıçali Paşa/Kılıçalipaşa/Pürtelaş Hasan Efendi/Kuloğlu, adres: Şehit Muhtar Mahallesi Zambak Sokak No:10, Taksim, İstanbul, Turkey, 34000, Şehit Muhtar, 34435 Taksim/İstanbul, Türkiye)"
+    },
+    {
+      "id": "ctrl-cih-49-cukurcuma-outside",
+      "resolvedName": "49 Çukurcuma",
+      "reason": "outside_strict_neighborhood:Bbox dışında (41.03338, 28.98137)"
     }
   ],
   "venues": [
     {
-      "id": "cih-un-cihangir",
-      "categoryId": "pizza",
-      "resolvedName": "UN Cihangir",
-      "branchName": "Firuzağa, Çukur Cuma Cd. No:34/1A, 34421 Beyoğlu/İstanbul, Türkiye",
-      "placeId": "ChIJEYpA9Z-3yhQRHKRQaxR2vsE",
-      "coordinates": {
-        "lat": 41.0311865,
-        "lng": 28.980171799999994
-      },
-      "rating": 4.9,
-      "userRatingCount": 264,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
-      "serviceFlags": {
-        "dineIn": null,
-        "takeout": null,
-        "outdoorSeating": null,
-        "reservable": null
-      },
-      "websiteUri": "https://www.uncihangir.com/",
-      "mapsUri": "https://maps.google.com/?cid=13960725724966986780",
-      "recommendedPrimary": [
-        "Un Special Tiftik Kaburgalı Pizza",
-        "Armut & Gorgonzola Pizza",
-        "Burrata Pizza"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Tarator Soslu Çıtır Kabak & Ev Yapımı Tiramisu",
-          "note": "Pizza öncesi paylaşılan tarator soslu çıtır kabak başlangıcı ve yemek sonrası klasik tiramisu eşlikçisi.",
-          "proof": "Çukurcuma yeme-içme rehberleri ve işletme menüsü"
-        }
-      ],
-      "suitability": {
-        "seating": "Aydınlık sokak cepheli masa düzeni ve samimi iç oturum",
-        "crowdAndNoise": "Akşamları semt sakinleri ve tasarım-sanat çevresiyle canlı ama sohbete uygun ortam",
-        "disadvantage": "Akşam yemek saatlerinde popüler çeşitler için masalar çabuk dolabiliyor.",
-        "transit": "Firuzağa Çukurcuma Caddesi No:34/1A üzerinde Firuzağa Camii ve Galatasaray aksının arasında."
-      },
-      "verifiedAt": "2026-11-14",
-      "sources": [
-        {
-          "title": "Oggusto — Beyoğlu Ekşi Maya Pizzacıları",
-          "url": "https://www.oggusto.com/",
-          "date": "2026-10-20",
-          "kind": "editorial",
-          "note": "Ekşi mayalı hamuru ve tiftik kaburgalı-armutlu imza çeşitleriyle Çukurcuma’da öne çıkıyor"
-        },
-        {
-          "title": "Cihangir Yerel Topluluk Notları",
-          "url": "https://maps.google.com/",
-          "date": "2026-10-20",
-          "kind": "community",
-          "note": "Hamur hafifliği ve tatlı-tuzlu peynir eşleşmeleriyle yüksek beğeni topluyor"
-        }
-      ],
-      "pros": [
-        "Ekşi mayalı sindirimi hafif hamur tekniği",
-        "Özgün tiftik kaburga ve armut-gorgonzola kombinasyonları"
-      ],
-      "cons": [
-        "Çukurcuma sokak içi park yeri sınırlı olduğu için yürüyerek gitmek daha pratik"
-      ],
-      "uncertainties": [
-        "Günlük ekşi maya hamur stokuna göre geç saatlerde çeşit azalabiliyor."
-      ],
-      "selectionScore": 95,
-      "selectedForSnapshot": true
-    },
-    {
       "id": "cih-pizza-bianca",
       "categoryId": "pizza",
       "resolvedName": "Pizza Bianca Italiano",
-      "branchName": "Cihangir, Alçakdam Ykş. Sok. No: 7, 34433 Beyoğlu/İstanbul, Türkiye",
+      "branchName": "Cihangir, Alçakdam Ykş. Sok. No: 7, 34433 Beyoğlu/İstanbul",
       "placeId": "ChIJPUcJmuq3yhQRX9vsngmEGmU",
       "coordinates": {
         "lat": 41.0326029,
@@ -184,7 +120,7 @@
       "id": "cih-mirabella",
       "categoryId": "pizza",
       "resolvedName": "Mirabella Pizza",
-      "branchName": "Kılıçali Paşa, Münir Özkul Sok. No:9, 34433 Beyoğlu/İstanbul, Türkiye",
+      "branchName": "Kılıçali Paşa, Münir Özkul Sok. No:9, 34433 Beyoğlu/İstanbul",
       "placeId": "ChIJT5X-iiy3yhQR8i9_8Dufq78",
       "coordinates": {
         "lat": 41.030448799999995,
@@ -250,79 +186,10 @@
       "selectedForSnapshot": true
     },
     {
-      "id": "cih-49-cukurcuma",
-      "categoryId": "pizza",
-      "resolvedName": "49 Çukurcuma",
-      "branchName": "Kuloğlu, Turnacıbaşı Cd. No:49, 34433 Beyoğlu/İstanbul, Türkiye",
-      "placeId": "ChIJ-UM2F2S3yhQR4aeeAOr8L4s",
-      "coordinates": {
-        "lat": 41.0333842,
-        "lng": 28.981369299999997
-      },
-      "rating": 4.4,
-      "userRatingCount": 1279,
-      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
-      "serviceFlags": {
-        "dineIn": null,
-        "takeout": null,
-        "outdoorSeating": null,
-        "reservable": null
-      },
-      "websiteUri": "https://www.tripadvisor.com.tr/Restaurant_Review-g293974-d2420666-Reviews-49_Cukurcuma-Istanbul.html",
-      "mapsUri": "https://maps.google.com/?cid=10029512977140328417",
-      "recommendedPrimary": [
-        "49 Özel Pizza",
-        "Keçi Peynirli & Karamelize Soğanlı Pizza",
-        "Bresaola Pizza"
-      ],
-      "recommendedSecondary": [
-        {
-          "name": "Şarküteri-Peynir Tabağı & Sıcak Sufle",
-          "note": "Şarap eşliğinde paylaşılan yerli-ithal peynir tabağı ve fırından sıcak çıkan çikolatalı sufle.",
-          "proof": "Çukurcuma akşam durakları seçkileri ve işletme menüsü"
-        }
-      ],
-      "suitability": {
-        "seating": "Yüksek taş duvarlı sıcak iç salon ve caddenin enerjisini gören ön masalar",
-        "crowdAndNoise": "Akşam yemeğinde romantik masalar ve şarap-pizza eşleşmesi seven gruplarla dengeli",
-        "disadvantage": "Akşam saatlerinde loş ambiyansı ve bar atmosferi nedeniyle erken rezervasyon sormak faydalıdır.",
-        "transit": "Kuloğlu Turnacıbaşı Caddesi No:49 üzerinde Firuzağa Meydanı ile Galatasaray Lisesi aksında."
-      },
-      "verifiedAt": "2026-11-14",
-      "sources": [
-        {
-          "title": "Oggusto — Çukurcuma Klasik Mekanları",
-          "url": "https://www.oggusto.com/",
-          "date": "2026-10-20",
-          "kind": "editorial",
-          "note": "İnce çıtır taş fırın pizzaları ve sıcak şarap barı havasıyla Çukurcuma’nın köklü adresi"
-        },
-        {
-          "title": "Beyoğlu Akşam Müdavimleri",
-          "url": "https://maps.google.com/",
-          "date": "2026-10-20",
-          "kind": "community",
-          "note": "Keçi peynirli karamelize soğanlı pizzası ve atmosferiyle uzun süredir seviliyor"
-        }
-      ],
-      "pros": [
-        "Taş fırında ince çıtır hamur geleneği",
-        "Pizza ve kadeh şarap eşleşmesine uygun sıcak akşam ortamı"
-      ],
-      "cons": [
-        "Hafta sonu akşamlarında içerisi loş ve sesli olabiliyor"
-      ],
-      "uncertainties": [
-        "Sezonsal şarküteri ve sebze çeşitleri döneme göre değişebilir."
-      ],
-      "selectionScore": 76,
-      "selectedForSnapshot": true
-    },
-    {
       "id": "cih-bad-burger",
       "categoryId": "hamburger",
       "resolvedName": "B.A.D Burger Basic And Delicious",
-      "branchName": "Cihangir, Bakraç Sk. No:15/A, 34433 Beyoğlu/İstanbul, Türkiye",
+      "branchName": "Cihangir, Bakraç Sk. No:15/A, 34433 Beyoğlu/İstanbul",
       "placeId": "ChIJg5RhsGC3yhQR2S-EG5xAvxQ",
       "coordinates": {
         "lat": 41.03151,
@@ -391,7 +258,7 @@
       "id": "cih-ground-coffee",
       "categoryId": "kahve",
       "resolvedName": "Ground Coffee Company Cihangir",
-      "branchName": "Firuzağa, Defterdar Yokuşu Sok. Cihan Ap No:53/A, 34433 Beyoğlu/İstanbul, Türkiye",
+      "branchName": "Firuzağa, Defterdar Yokuşu Sok. Cihan Ap No:53/A, 34433 Beyoğlu/İstanbul",
       "placeId": "ChIJlRj9bMS3yhQRjFDFO4Ia24k",
       "coordinates": {
         "lat": 41.0310546,
@@ -457,72 +324,79 @@
       "selectedForSnapshot": true
     },
     {
-      "id": "cih-gramaj-roastery",
+      "id": "cih-mundo-novo",
       "categoryId": "kahve",
-      "resolvedName": "Gramaj Coffee Roastery",
-      "branchName": "Kuloğlu mahallesi, Cihangir, Turnacıbaşı Cd. No:44/A, 34433 Beyoğlu/İstanbul, Türkiye",
-      "placeId": "ChIJ0f1F1Nq3yhQRGjo-lodmECU",
+      "resolvedName": "Mundo Novo Cafe Cihangir",
+      "branchName": "Kuloğlu, Ağa Hamamı Sk. No:1, 34421 Beyoğlu/İstanbul",
+      "placeId": "ChIJ3WE1zyS3yhQRlBpZ_hrURBI",
       "coordinates": {
-        "lat": 41.033254,
-        "lng": 28.981618499999996
+        "lat": 41.031678,
+        "lng": 28.982013
       },
-      "rating": 4.7,
-      "userRatingCount": 984,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "rating": 4.6,
+      "userRatingCount": 415,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
       "serviceFlags": {
         "dineIn": null,
         "takeout": null,
         "outdoorSeating": null,
         "reservable": null
       },
-      "websiteUri": "http://gramajcoffee.com/",
-      "mapsUri": "https://maps.google.com/?cid=2670747311557982746",
+      "websiteUri": "https://www.mundonovocafe.com/",
+      "mapsUri": "https://maps.google.com/?cid=1316410203500518036",
       "recommendedPrimary": [
-        "Chemex Demleme",
-        "Cortado",
-        "Cold Brew"
+        "Flat White",
+        "V60 Filtre Demleme",
+        "Cortado"
       ],
       "recommendedSecondary": [
         {
-          "name": "Limonlu Haşhaşlı Kek & Yulaflı Cookie",
-          "note": "Filtre kahvenin meyvemsi notalarına yakışan taze limonlu kek ve hafif yulaflı fırın kurabiyesi.",
-          "proof": "Çukurcuma kahve kavurmacıları rehberi ve dükkan menüsü"
+          "name": "Glütensiz Bademli Kek & Şekersiz Hurmalı Top",
+          "note": "Kahve yanında tercih edilen rafine şekersiz ve glütensiz günlük fırın eşlikçileri.",
+          "proof": "Beyoğlu nitelikli kafe rehberleri ve işletme menüsü"
         }
       ],
       "suitability": {
-        "seating": "Sakin, minimalist iç oturma alanı ve cadde önü küçük tezgahlar",
-        "crowdAndNoise": "Nitelikli çekirdek ve sessiz kahve deneyimi arayan müdavimler için ideal tempo",
-        "disadvantage": "Yoğun sokak eğlencesi yerine kahvenin kendisine odaklanan mütevazı bir oturum düzeni vardır.",
-        "transit": "Kuloğlu Turnacıbaşı Caddesi No:44/A üzerinde Çukurcuma antikacılar sokağı girişinde."
+        "seating": "Yüksek tavanlı aydınlık iç salon ve Ağa Hamamı Sokak cepheli masalar",
+        "crowdAndNoise": "Gün boyu kitap okuyanlar ve mahalle sakinleriyle dengeli, huzurlu tempo",
+        "disadvantage": "Öğleden sonra yoğun saatlerde prizli çalışma masaları hızla dolabiliyor.",
+        "transit": "Kuloğlu-Firuzağa sınırı Ağa Hamamı Sokak No:1 üzerinde Sıraselviler Caddesi girişine birkaç adım mesafede."
       },
-      "verifiedAt": "2026-11-14",
+      "verifiedAt": "2026-11-15",
       "sources": [
         {
-          "title": "Beyoğlu Kahve Kavurmacıları Rehberi",
+          "title": "Google Maps — Mundo Novo Cafe Cihangir",
+          "url": "https://maps.google.com/?cid=1316410203500518036",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Ağa Hamamı Sk. No:1 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Oggusto — Beyoğlu Üçüncü Dalga Kahve Noktaları",
           "url": "https://www.oggusto.com/",
           "date": "2026-10-20",
           "kind": "editorial",
-          "note": "Kendi kavurduğu tek köken çekirdeklerle Turnacıbaşı’nda saf nitelikli kahve sunan durak"
+          "note": "Ağa Hamamı Sokak girişinde nitelikli kahve ve glütensiz tatlılarıyla öne çıkan mahalle kafesi"
         },
         {
-          "title": "Cihangir & Çukurcuma Kahve Notları",
+          "title": "Cihangir Kahve Müdavimleri",
           "url": "https://maps.google.com/",
           "date": "2026-10-20",
           "kind": "community",
-          "note": "Taze kavrum aroma profili ve özenli demlemeleriyle yüksek puan alıyor"
+          "note": "Dengeli espresso kalibrasyonu ve sakin oturma düzeniyle yüksek memnuniyet koruyor"
         }
       ],
       "pros": [
-        "Bağımsız taze kavrum çekirdek seçenekleri",
-        "Gürültüden uzak, kahve odaklı iç atmosfer"
+        "İstikrarlı espresso ve filtre demleme standardı",
+        "Glütensiz ve rafine şekersiz taze tatlı alternatifleri"
       ],
       "cons": [
-        "Geniş yemek menüsü arayanlar için yalnızca kahve ve hafif tatlılar sunar"
+        "Hafta sonu öğleden sonra masa bulmak için biraz beklemek gerekebilir"
       ],
       "uncertainties": [
-        "Perakende çekirdek stokları haftalık kavrum programına göre değişir."
+        "Günlük tatlı tezgahı küçük parti üretime göre değişebilir."
       ],
-      "selectionScore": 88,
+      "selectionScore": 90,
       "selectedForSnapshot": true
     },
     {
@@ -598,14 +472,14 @@
       "id": "cih-faw-coffee",
       "categoryId": "kahve",
       "resolvedName": "Faw Coffee & Bites",
-      "branchName": "Firuzağa, Taktaki Ykş. No:7A, 34425 Beyoğlu/İstanbul, Türkiye",
+      "branchName": "Firuzağa, Taktaki Ykş. No:7A, 34425 Beyoğlu/İstanbul",
       "placeId": "ChIJmRdfT-e3yhQRu8Pdi5Molj4",
       "coordinates": {
         "lat": 41.0315477,
         "lng": 28.981698800000004
       },
       "rating": 4.6,
-      "userRatingCount": 504,
+      "userRatingCount": 506,
       "priceLevel": "PRICE_LEVEL_MODERATE",
       "serviceFlags": {
         "dineIn": null,
@@ -802,17 +676,17 @@
       "selectedForSnapshot": true
     },
     {
-      "id": "cih-vasalisa",
+      "id": "cih-cafe-firuz",
       "categoryId": "date",
-      "resolvedName": "Vasalisa Cihangir",
-      "branchName": "Firuzağa, Çukur Cuma Cami Sk. No:4/A, 34425 Beyoğlu/İstanbul, Türkiye",
-      "placeId": "ChIJr8gJeB63yhQRmUE03HitksY",
+      "resolvedName": "Cafe Firuz",
+      "branchName": "Cihangir, Firuzağa Mahallesi, Cihangir, Defterdar Yokuşu Sok. No:55, 34425 Beyoğlu/İstanbul",
+      "placeId": "ChIJHVZ8G2K3yhQRc06XhkdEP14",
       "coordinates": {
-        "lat": 41.03179970000001,
-        "lng": 28.9811164
+        "lat": 41.031054,
+        "lng": 28.9823501
       },
       "rating": 4.5,
-      "userRatingCount": 651,
+      "userRatingCount": 2401,
       "priceLevel": "PRICE_LEVEL_MODERATE",
       "serviceFlags": {
         "dineIn": null,
@@ -820,54 +694,61 @@
         "outdoorSeating": null,
         "reservable": null
       },
-      "websiteUri": null,
-      "mapsUri": "https://maps.google.com/?cid=14308689700711580057",
+      "websiteUri": "http://cafefiruz.com/",
+      "mapsUri": "https://maps.google.com/?cid=6791221837089427059",
       "recommendedPrimary": [
-        "Ağır Ateşte Dana Yanak",
-        "Deniz Mahsullü Linguine",
-        "Burrata & İncir Salatası"
+        "Kremalı Mantarlı Tavuk",
+        "Ev Usulü Köfte Tabağı",
+        "Fesleğenli Penne"
       ],
       "recommendedSecondary": [
         {
-          "name": "Kadeh Şarap Eşleşmesi & Crème Brûlée",
-          "note": "Ana yemekle uyumlu yerli-ithal şarap seçkisi ve karamelize kabuklu klasik crème brûlée tatlısı.",
-          "proof": "Çukurcuma bistro seçkileri ve işletme menüsü"
+          "name": "Çıtır Başlangıç Sepeti & Sıcak Elmalı Turta",
+          "note": "Akşamüstü buluşmalarında paylaşılan sıcak atıştırmalıklar ve tarçınlı elmalı turta.",
+          "proof": "Cihangir semt rehberleri ve işletme menüsü"
         }
       ],
       "suitability": {
-        "seating": "Samimi iç bistro masaları ve sakin Çukurcuma sokak oturumu",
-        "crowdAndNoise": "Huzurlu, şık ama kasıntıdan uzak mahalle bistrosu atmosferi",
-        "disadvantage": "Mekan kapasitesi dar olduğundan hafta sonu akşam yemeğinde önceden yer ayırtmak gerekebiliyor.",
-        "transit": "Firuzağa Çukurcuma Cami Sokak No:4/A üzerinde Çukurcuma antikacılar hattının tam kalbinde."
+        "seating": "Firuzağa Camii cepheli geniş dış teras ve sıcak ahşap detaylı iç salon",
+        "crowdAndNoise": "Sanat-sinema çevresi, semt müdavimleri ve çiftlerle gün batımından geceye canlı mahalle ritmi",
+        "disadvantage": "Firuzağa kavşağındaki dış teras masaları akşam saatlerinde hareketli ve sesli olabiliyor.",
+        "transit": "Firuzağa Defterdar Yokuşu No:55 üzerinde Firuzağa Camii’nin tam karşısında."
       },
-      "verifiedAt": "2026-11-14",
+      "verifiedAt": "2026-11-15",
       "sources": [
         {
-          "title": "ExploreBeyoğlu — Romantik Çukurcuma Bistroları",
+          "title": "Google Maps — Cafe Firuz",
+          "url": "https://maps.google.com/?cid=6791221837089427059",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Defterdar Yokuşu No:55 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Oggusto — Cihangir Meydan ve Bistro Klasikleri",
           "url": "https://www.oggusto.com/",
           "date": "2026-10-20",
           "kind": "editorial",
-          "note": "Çukurcuma sokak dokusunda ağır pişmiş et ve makarna tabakları sunan samimi bistro"
+          "note": "Firuzağa Meydanı dokusuyla özdeşleşen, uzun akşam buluşmalarının simge Cihangir adresi"
         },
         {
-          "title": "Cihangir Akşam Müdavimleri",
+          "title": "Beyoğlu Semt Hafızası",
           "url": "https://maps.google.com/",
           "date": "2026-10-20",
           "kind": "community",
-          "note": "Tabak lezzeti, sakin müziği ve servis özeniyle yüksek övgü topluyor"
+          "note": "Ağaç altı terası ve değişmeyen mahalle sıcaklığıyla binlerce konuk tarafından tercih ediliyor"
         }
       ],
       "pros": [
-        "Sakin Çukurcuma sokak içi konum ve romantik akşam aydınlatması",
-        "Özenli dana yanak ve deniz mahsullü taze makarna tabakları"
+        "Firuzağa Camii karşısında ikonik ağaç altı teras konumu",
+        "Rahat, kasıntısız akşam yemeği ve uzun sohbet ortamı"
       ],
       "cons": [
-        "Küçük salonda büyük kalabalık gruplar için uygun masa sayısı sınırlı"
+        "Popüler akşam saatlerinde ön sıra teras masaları çabuk doluyor"
       ],
       "uncertainties": [
-        "Sezonsal meyve-peynir eşleşmeleri mevsime göre güncellenebilir."
+        "Günlük zeytinyağlı ve tatlı seçenekleri mevsime göre değişebilir."
       ],
-      "selectionScore": 86,
+      "selectionScore": 100,
       "selectedForSnapshot": true
     },
     {
@@ -1012,14 +893,14 @@
       "id": "cih-sa-va",
       "categoryId": "kahvalti",
       "resolvedName": "Sa Va Anatolian Breakfast House",
-      "branchName": "Cihangir, Bakraç Sk. No: 34 A D:B, 34433 Beyoğlu/İstanbul, Türkiye",
+      "branchName": "Cihangir, Bakraç Sk. No: 34 A D:B, 34433 Beyoğlu/İstanbul",
       "placeId": "ChIJvcixS1a3yhQRJej2JnuKZkw",
       "coordinates": {
         "lat": 41.0321595,
         "lng": 28.9835649
       },
       "rating": 4.8,
-      "userRatingCount": 10541,
+      "userRatingCount": 10543,
       "priceLevel": "PRICE_LEVEL_EXPENSIVE",
       "serviceFlags": {
         "dineIn": null,
@@ -1081,14 +962,14 @@
       "id": "cih-dogaciyiz",
       "categoryId": "kahvalti",
       "resolvedName": "Doğacıyız Gourmet",
-      "branchName": "Kılıçali Paşa, Akarsu Ykş. Sok. No: 41A, 34433 Beyoğlu/İstanbul, Türkiye",
+      "branchName": "Kılıçali Paşa, Akarsu Ykş. Sok. No: 41A, 34433 Beyoğlu/İstanbul",
       "placeId": "ChIJKZSVqNi5yhQRbI1R-dGHJfc",
       "coordinates": {
         "lat": 41.030769299999996,
         "lng": 28.982975999999997
       },
       "rating": 4.7,
-      "userRatingCount": 4211,
+      "userRatingCount": 4212,
       "priceLevel": "PRICE_LEVEL_MODERATE",
       "serviceFlags": {
         "dineIn": null,
@@ -1150,14 +1031,14 @@
       "id": "cih-van-kahvalti",
       "categoryId": "kahvalti",
       "resolvedName": "Van Kahvaltı Evi",
-      "branchName": "Kılıçali Paşa, Defterdar Yokuşu Sok. 52/A, 34425 Beyoğlu/İstanbul, Türkiye",
+      "branchName": "Kılıçali Paşa, Defterdar Yokuşu Sok. 52/A, 34425 Beyoğlu/İstanbul",
       "placeId": "ChIJLbyNBGK3yhQRVoRMamyQtCs",
       "coordinates": {
         "lat": 41.030510199999995,
         "lng": 28.9824282
       },
       "rating": 4.6,
-      "userRatingCount": 6256,
+      "userRatingCount": 6260,
       "priceLevel": "PRICE_LEVEL_MODERATE",
       "serviceFlags": {
         "dineIn": null,
@@ -1219,14 +1100,14 @@
       "id": "cih-kahve6",
       "categoryId": "kahvalti",
       "resolvedName": "Kahve6",
-      "branchName": "KILIÇALİ PAŞA MAH. AKARSU CAD, Cihangir, Anahtar Sk. NO:13/A, 34433 Beyoğlu/İstanbul, Türkiye",
+      "branchName": "KILIÇALİ PAŞA MAH. AKARSU CAD, Cihangir, Anahtar Sk. NO:13/A, 34433 Beyoğlu/İstanbul",
       "placeId": "ChIJ34iAQMq3yhQRRoNxu3Qg0Gs",
       "coordinates": {
         "lat": 41.0303611,
         "lng": 28.983062699999998
       },
       "rating": 4.6,
-      "userRatingCount": 1667,
+      "userRatingCount": 1668,
       "priceLevel": "PRICE_LEVEL_MODERATE",
       "serviceFlags": {
         "dineIn": null,
@@ -1495,7 +1376,7 @@
       "id": "cih-tarihi-simit",
       "categoryId": "denemelisin",
       "resolvedName": "Cihangir Tarihi Simit Fırını",
-      "branchName": "Firuzağa, Türkgücü Cd. 59/A, 34425 Beyoğlu/İstanbul, Türkiye",
+      "branchName": "Firuzağa, Türkgücü Cd. 59/A, 34425 Beyoğlu/İstanbul",
       "placeId": "ChIJjUiFr12xyhQRsaAlFd-P6SY",
       "coordinates": {
         "lat": 41.031368900000004,
