@@ -140,6 +140,14 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'the hunger',
   'upper crust',
   'selamlique',
+  'mikel coffee',
+  '8one burger',
+  'bodrum mantı',
+  'bodrum manti',
+  'casita',
+  'grandma',
+  'nusr-et',
+  'nusret',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([
@@ -211,6 +219,7 @@ export const FOOD_PLACE_TYPES = new Set<string>([
   'bagel_shop',
   'french_restaurant',
   'western_restaurant',
+  'barbecue_restaurant',
 ]);
 
 export const FORBIDDEN_VISITOR_COPY_REGEX =

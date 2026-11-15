@@ -172,6 +172,18 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     headline: 'Bebek, Beşiktaş',
     vibe: '1904 badem ezmesi ve sahil dondurma ritüelinden 1952 kıyı balıkçısına, Manolya Sokak gurme burger ve matcha barlarından Küçük Bebek ekşi maya fırınlarına Boğaz kıyısı seçkisi',
   },
+  'etiler-besiktas': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Etiler, Beşiktaş',
+    vibe: '1980’lerden kalan Tatar mantısı ve 1996 İtalyan klasiğinden Dilhayat Sokak şef mutfağına, Akatlar kavurmahaneleri ve butik ocakbaşılardan Alkent kokteyl barlarına uzanan seçki',
+  },
+  'ortakoy-besiktas': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Ortaköy, Beşiktaş',
+    vibe: 'Feriye rıhtımı ve Cemil Topuzlu Parkı’nın köklü Boğaz sofralarından Eski Bahçe Sokak taş fırın pizzacılarına, üç kuşaklık Konya fırın kebabından sahil kumpir ritüeline uzanan seçki',
+  },
 };
 
 function formatLocationCategoryHeading(locative: string, categoryTitle?: string): string {
@@ -360,7 +372,7 @@ export function GastronomyPageClient({
                       Konum Seç
                     </div>
                     <div className="text-xs text-slate-500 font-medium truncate mt-0.5">
-                      Akaretler · Bebek · Galata · Beşiktaş Çarşı · Karaköy · Cihangir · Nişantaşı · Üsküdar · Kuzguncuk · Çengelköy · Koşuyolu & Acıbadem · Kadıköy · Moda · Caddebostan · Suadiye · Bostancı · Antalya · Gaziantep · Kuşadası · Akyaka
+                      Etiler · Ortaköy · Akaretler · Bebek · Galata · Beşiktaş Çarşı · Karaköy · Cihangir · Nişantaşı · Üsküdar · Kuzguncuk · Çengelköy · Koşuyolu & Acıbadem · Kadıköy · Moda · Caddebostan · Suadiye · Bostancı · Antalya · Gaziantep · Kuşadası · Akyaka
                     </div>
                   </div>
                 </div>

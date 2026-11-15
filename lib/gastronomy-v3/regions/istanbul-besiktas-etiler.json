@@ -1,0 +1,926 @@
+{
+  "schemaVersion": 3,
+  "verifiedAt": "2026-11-15T12:53:51.635Z",
+  "region": {
+    "id": "etiler-besiktas",
+    "slug": "etiler",
+    "city": "İstanbul",
+    "district": "Beşiktaş",
+    "neighborhood": "Etiler",
+    "officialQuarter": "Etiler & Akat",
+    "displayName": "Etiler, Beşiktaş, İstanbul",
+    "locative": "Etiler'de",
+    "path": [
+      "istanbul",
+      "besiktas",
+      "etiler"
+    ],
+    "aliases": [
+      "Etiler",
+      "Nispetiye",
+      "Nisbetiye",
+      "Akatlar",
+      "Akat",
+      "Tepecik Yolu",
+      "Alkent",
+      "Dilhayat",
+      "Ulus Etiler"
+    ],
+    "scopeNote": "İstanbul · Beşiktaş · Etiler (Nispetiye Cd., Akatlar / Zeytinoğlu Cd., Tepecik Yolu / Alkent ve Ahmet Adnan Saygun Aksı Doğrulanmış Seçkisi)",
+    "characterSubtitle": "1980’lerden kalan Tatar mantısı ve 1996 İtalyan klasiğinden Dilhayat Sokak şef mutfağına, Akatlar kavurmahaneleri ve butik ocakbaşılardan Alkent kokteyl barlarına uzanan seçki.",
+    "center": {
+      "lat": 41.0802,
+      "lng": 29.0298
+    },
+    "boundary": {
+      "bbox": {
+        "minLat": 41.07,
+        "maxLat": 41.09,
+        "minLng": 29.0185,
+        "maxLng": 29.0395
+      }
+    }
+  },
+  "categories": [
+    {
+      "id": "pizza",
+      "slug": "pizza",
+      "label": "Pizza",
+      "title": "Pizza",
+      "emoji": "🍕",
+      "isMustTry": false
+    },
+    {
+      "id": "hamburger",
+      "slug": "hamburger",
+      "label": "Hamburger",
+      "title": "Hamburger",
+      "emoji": "🍔",
+      "isMustTry": false
+    },
+    {
+      "id": "kahve",
+      "slug": "kahve",
+      "label": "Kahve",
+      "title": "Kahve",
+      "emoji": "☕",
+      "isMustTry": false
+    },
+    {
+      "id": "date",
+      "slug": "date-mekanlari",
+      "label": "Date",
+      "title": "Date Mekanları",
+      "emoji": "🍷",
+      "isMustTry": false
+    },
+    {
+      "id": "kahvalti",
+      "slug": "kahvalti",
+      "label": "Kahvaltı",
+      "title": "Kahvaltı",
+      "emoji": "🍳",
+      "isMustTry": false
+    },
+    {
+      "id": "denemelisin",
+      "slug": "denemelisin",
+      "label": "Denemelisin",
+      "title": "Mutlaka Denemelisin",
+      "emoji": "⭐",
+      "isMustTry": false
+    }
+  ],
+  "venues": [
+    {
+      "id": "eti-pizza-wood-fire",
+      "placeId": "ChIJhZD5j423yhQRV6fQ7xx1pE4",
+      "name": "Pizza Wood Fire",
+      "address": "Etiler, Nisbetiye Cd No:37/C, 34335 Beşiktaş/İstanbul",
+      "neighborhood": "Nispetiye Cd., Etiler",
+      "categoryId": "pizza",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=5666782998281889623",
+      "coordinates": {
+        "lat": 41.0778958,
+        "lng": 29.0258487
+      },
+      "description": "Nispetiye Caddesi aksında odun ateşinde pişen ince hamurlu klasik ve füme kaburgalı pizzalarıyla Etiler’de doğrudan pizzaya odaklanan adres.",
+      "whatToOrder": [
+        "Odun Ateşinde Margherita Pizza",
+        "Dört Peynirli İnce Hamur Pizza",
+        "Füme Kaburgalı Odun Ateşi Pizza"
+      ],
+      "menuFrom": [
+        "Pepperoni Pizza",
+        "Mantarlı & Karamelize Soğanlı Pizza",
+        "Sarımsaklı Fırın Ekmeği"
+      ],
+      "alsoTry": [
+        "Roka & Permesanlı Akdeniz Salatası — Odun fırını pizzaların yanına hafif denge kuran taze yeşillik tabağı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Nispetiye Caddesi üzerinde kompakt iç salon ve cadde önü küçük masalar · Öğle ve akşam saatlerinde bölge çalışanları ve semt sakinleriyle dengeli akış",
+        "Dezavantaj: Yoğun akşam saatlerinde paket sipariş trafiği nedeniyle fırın çıkış süresi uzayabiliyor.",
+        "Ulaşım: Nispetiye Caddesi No:37/C üzerinde, Etiler metro çıkışına kısa yürüyüş mesafesinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "eti-da-lupo",
+      "placeId": "ChIJhx5Jj_S7yhQRByGctrP7ssU",
+      "name": "Da Lupo Trattoria",
+      "address": "Akat Mah. Tepecik Sk. Alkent İş Merkezi F4 Blok 13/2, Akat, 34335 Beşiktaş/İstanbul",
+      "neighborhood": "Tepecik Yolu / Alkent, Etiler",
+      "categoryId": "pizza",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=14245725320607703303",
+      "coordinates": {
+        "lat": 41.0861801,
+        "lng": 29.032554100000002
+      },
+      "description": "Şef Fabio Foltran yönetimindeki Alkent trattoria’sında İtalyan unundan odun fırını pizzaları ve el yapımı taze makarnalar aynı mutfaktan çıkar.",
+      "whatToOrder": [
+        "Bresaola & Rokalı Odun Fırını Pizza",
+        "Pizza Di Manzo (Marine Bonfileli)",
+        "Trüflü Ev Yapımı Gnocchi"
+      ],
+      "menuFrom": [
+        "Diavola Pizza",
+        "Tagliatelle Bolognese",
+        "Burrata Başlangıç"
+      ],
+      "alsoTry": [
+        "Melanzane alla Parmigiana & Klasik Tiramisu — Taş fırın patlıcan başlangıcı ve ev yapımı İtalyan tatlı kapanışı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Alkent sitesi içi sakin teras masaları ve klasik İtalyan trattoria salonu · Alkent ve Akatlar sakinleri, aile akşam yemekleri ve İtalyan mutfağı müdavimleri",
+        "Dezavantaj: Üst-orta fiyat bandı ve site içi konumu nedeniyle hafta sonu akşamları rezervasyon gerektiriyor.",
+        "Ulaşım: Tepecik Yolu üzerindeki Alkent İş Merkezi F4 Blok içinde kolay yaya erişimiyle.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "eti-catch-n-eat",
+      "placeId": "ChIJcwl4jV23yhQR250jimKM3_M",
+      "name": "Catch-N'-Eat",
+      "address": "Akat mahallesi zeytinoğlu caddesi, Akat, Hazal Sk. No:1-C, 34335 Beşiktaş/İstanbul",
+      "neighborhood": "Hazal Sk. / Akatlar, Etiler",
+      "categoryId": "hamburger",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=17572918625875238363",
+      "coordinates": {
+        "lat": 41.0811921,
+        "lng": 29.026501
+      },
+      "description": "Akatlar ara sokağında %25 yağ oranlı dana döş etiyle hazırladığı dantel kenarlı Oklahoma soğanlı smash burgerleriyle kısa sürede mahalle odağına dönüşen bağımsız burger dükkanı.",
+      "whatToOrder": [
+        "Oklahoma Soğanlı Smash Burger",
+        "Trüf Mayonezli Cheeseburger",
+        "Double Brisket Smash Burger"
+      ],
+      "menuFrom": [
+        "Classic Cheeseburger",
+        "Jalapeño Smash Burger",
+        "Ev Yapımı Burger Sosları"
+      ],
+      "alsoTry": [
+        "Kaşık Patates Kızartması & Özel Dip Soslar — Kıtır kenarlı %25 yağlı brisket smash köftelerle eşleşen imza kaşık kesim patates."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Hazal Sokak girişinde az sayıda masa ve hızlı servis odaklı iç tezgah · Özellikle akşam saatlerinde Akatlar ve Etiler civarından smash burger için gelen müdavimler",
+        "Dezavantaj: Çok sınırlı oturma kapasitesi bulunduğundan yoğun saatlerde masa bulmak zorlaşabiliyor.",
+        "Ulaşım: Zeytinoğlu Caddesi’nden Hazal Sokak içine girer girmez No:1-C’de.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "eti-ciftlik-kasap",
+      "placeId": "ChIJ0f-BiRS2yhQROs8ZeA3nfmg",
+      "name": "Çiftlik Kasap Burger",
+      "address": "Akat, Selçuklar Sk. No:17 D:B, 34340 Beşiktaş/İstanbul",
+      "neighborhood": "Selçuklar Sk. / Akatlar, Etiler",
+      "categoryId": "hamburger",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=7529709672045596474",
+      "coordinates": {
+        "lat": 41.0778724,
+        "lng": 29.025444
+      },
+      "description": "Akatlar’da kasap kökenli et seçimiyle kalın sulu burger köfteleri ve füme etli alternatifler sunan sakin mahalle burgercisi.",
+      "whatToOrder": [
+        "Çiftlik Burger (Dana Füme & Karamelize Soğan)",
+        "Lokum Burger",
+        "Klasik Kasap Cheeseburger"
+      ],
+      "menuFrom": [
+        "Mantar Soslu Kasap Burger",
+        "Izgara Kasap Köfte",
+        "Baharatlı Patates Kızartması"
+      ],
+      "alsoTry": [
+        "Kasap Sucuk Burger & Ev İşi Baharatlı Patates — Açık besi dana etinden kendi kasap tezgahında çekilen alternatif."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Selçuklar Sokak üzerinde sade iç salon ve kaldırım kenarı birkaç masa · Akatlar mahalle sakinleri ve öğle yemeğinde kalın kasap köftesi arayanlar",
+        "Dezavantaj: Gündüz-akşam temposu daha sakin aktığı için geç gece kulüp çıkışı burger duraklarından ayrılır.",
+        "Ulaşım: Akatlar Selçuklar Sokak No:17/B üzerinde, spor kompleksi ve Zeytinoğlu hattına yakın."
+      ]
+    },
+    {
+      "id": "eti-abrakadabra",
+      "placeId": "ChIJmYYIS4K3yhQRiUBNpaYlC9Y",
+      "name": "Abrakadabra Burger Ulus",
+      "address": "Nisbetiye, Müderris Salih Rüştü Sk. 2E, 34340 Beşiktaş/İstanbul",
+      "neighborhood": "Müderris Salih Rüştü Sk. / Ulus, Etiler",
+      "categoryId": "hamburger",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=15423462746528497801",
+      "coordinates": {
+        "lat": 41.072766200000004,
+        "lng": 29.0280407
+      },
+      "description": "Ahmet Adnan Saygun Caddesi paralelindeki ara sokakta çıtır kenarlı smash burgerleri, acılı bal dokunuşlu seçenekleri ve taze churros tatlısıyla öne çıkan butik burgerci.",
+      "whatToOrder": [
+        "Smash Me Honey Burger",
+        "Magic Cheeseburger",
+        "Chick On Fire Çıtır Tavuk Burger"
+      ],
+      "menuFrom": [
+        "Double Smash Burger",
+        "Truffle Mushroom Burger",
+        "Kajun Baharatlı Patates"
+      ],
+      "alsoTry": [
+        "Tarçınlı Sıcak Churros — Burger sonrası tatlı kapanış olarak öne çıkan çıtır İspanyol hamuru."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Sokak cephesinde ferah açık alan ve düzenli iç oturma düzeni · Ulus ve Nisbetiye çevresindeki genç profesyoneller ve akşam burger grupları",
+        "Dezavantaj: Akşam paket servis talebi yoğunlaştığında masa siparişlerinin bekleme süresi artabiliyor.",
+        "Ulaşım: Ahmet Adnan Saygun Caddesi kavşağından Müderris Salih Rüştü Bey Sokak No:2E’ye yürüyerek.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "eti-lali-coffee",
+      "placeId": "ChIJDxNuKFe3yhQRtGfWoGWpXQc",
+      "name": "Lali Coffee",
+      "address": "Demirhisar apartmanı LALİ Coffee, Akat, Zeytinoğlu Cd. No:19, 34335 Beşiktaş/İstanbul",
+      "neighborhood": "Zeytinoğlu Cd. / Akatlar, Etiler",
+      "categoryId": "kahve",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=530766585054783412",
+      "coordinates": {
+        "lat": 41.0797688,
+        "lng": 29.027223700000004
+      },
+      "description": "Zeytinoğlu Caddesi üzerindeki mahalle kahvecisi; tutarlı espresso kalibrasyonu, temiz filtre kahveleri ve müdavim ilişkisiyle Etiler’de zincirler dışındaki öncelikli kahve noktası.",
+      "whatToOrder": [
+        "Nitelikli Filtre Kahve",
+        "Flat White",
+        "Cortado"
+      ],
+      "menuFrom": [
+        "Iced Latte",
+        "Americano",
+        "Cappuccino"
+      ],
+      "alsoTry": [
+        "Ev Yapımı Cheesecake & Günlük Kurabiye — Zeytinoğlu Caddesi’ndeki mahalle kahvecisinde küçük partiler halinde pişen ev işi eşlikçiler."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Ağaçlıklı apartman altı iç oturma düzeni ve ön cephede küçük kahve masaları · Sabah yürüyüşçüleri, Akatlar sakinleri ve bilgisayarla sessizce çalışan tekil konuklar",
+        "Dezavantaj: Büyük grupları ağırlamaktan çok 1-2 kişilik dingin kahve molalarına uygun kapasitede.",
+        "Ulaşım: Zeytinoğlu Caddesi No:19 altında, Akatlar apartman dokusunun merkezinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "eti-molecule-house",
+      "placeId": "ChIJWc4ueC63yhQRl4hrMqUZYmE",
+      "name": "Molecule House",
+      "address": "Akat Mahallesi, Akat, Etiler, Açelya Sk No:39, 34335 Beşiktaş/İstanbul",
+      "neighborhood": "Açelya Sk. / Akatlar, Etiler",
+      "categoryId": "kahve",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=7017199366702860439",
+      "coordinates": {
+        "lat": 41.088301,
+        "lng": 29.023804
+      },
+      "description": "Kendi çekirdeklerini kavuran ve el yapımı seramik fincanlarda V60/Chemex demlemeler sunan, kahve odaklı tasarım evi.",
+      "whatToOrder": [
+        "Single-Origin V60 Demleme",
+        "Chemex El Demlemesi",
+        "Cappuccino"
+      ],
+      "menuFrom": [
+        "Cold Brew",
+        "Flat White",
+        "Espresso Tonic"
+      ],
+      "alsoTry": [
+        "Beyaz Çikolata Dolgulu Sufle Brownie & Sebzeli Kiş — Kavurmahanenin nitelikli çekirdeklerine eşlik eden fırın ürünleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Açelya Sokak içinde tasarım seramiklerle çevrili aydınlık kafe salonu · Kavrum profiline dikkat eden kahve meraklıları ve tasarım/çalışma odaklı konuklar",
+        "Dezavantaj: Ara sokak konumu nedeniyle ana caddeden yürürken kısa bir yokuş çıkış gerektiriyor.",
+        "Ulaşım: Akatlar Açelya Sokak No:39 üzerinde, Zeytinoğlu hattının bir üst sokağında."
+      ]
+    },
+    {
+      "id": "eti-roastico",
+      "placeId": "ChIJAQAw20G2yhQR35KpOBCXyEQ",
+      "name": "Roastico Coffee & Cocktail Bar",
+      "address": "Kerem Apartmanı, Nisbetiye, Aytar Cd. 27/C, 34000 Beşiktaş/İstanbul",
+      "neighborhood": "Aytar Cd. / Nisbetiye, Etiler",
+      "categoryId": "kahve",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=4956377485847139039",
+      "coordinates": {
+        "lat": 41.0754686,
+        "lng": 29.0191882
+      },
+      "description": "Aytar Caddesi başında kendi harmanı Wake Me Up ve yöresel çekirdekleriyle nitelikli sabah kahvesi, akşamüstünden itibaren ise kokteyl barı atmosferi sunan bağımsız durak.",
+      "whatToOrder": [
+        "Wake Me Up Blend Espresso",
+        "Yöresel Çekirdek Filtre Kahve",
+        "Iced Americano"
+      ],
+      "menuFrom": [
+        "Cortado",
+        "V60 Demleme",
+        "Buzlu Flat White"
+      ],
+      "alsoTry": [
+        "Fırın Mac & Cheese & Sıcak Atıştırmalıklar — Gün içi kahve molasından akşamüstü buluşmalarına geçişte paylaşılan mutfak tabağı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Köşe cepheli ferah iç bar alanı ve Aytar Caddesi boyunca açık kaldırım masaları · Gündüz kahve ve dizüstü bilgisayarla çalışanlar, akşamüstü kokteyle geçen semt gençleri",
+        "Dezavantaj: Akşam saatlerine yaklaştıkça bar temposunun artması sessiz okuma için uygunluğu azaltabiliyor.",
+        "Ulaşım: Nisbetiye Mahallesi Aytar Caddesi No:27/C’de, metro ve otobüs duraklarına birkaç dakika.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "eti-arkestra",
+      "placeId": "ChIJW1D7CIu3yhQRDmAZbPUrjjw",
+      "name": "Arkestra",
+      "address": "Etiler, Dilhayat Sk. No:28, 34337 Beşiktaş/İstanbul",
+      "neighborhood": "Dilhayat Sk., Etiler",
+      "categoryId": "date",
+      "rating": 4.3,
+      "mapsUri": "https://maps.google.com/?cid=4363473422049173518",
+      "coordinates": {
+        "lat": 41.0783673,
+        "lng": 29.031574499999998
+      },
+      "description": "Şef Cenk Debensason’un 1960’lardan kalma iki katlı Etiler villasında kurguladığı modern İstanbul mutfağı; alt katta paylaşım ve tadım tabakları, üst kattaki plak dinleme salonunda ise imza kokteyllerle akşam buluşmalarına odaklanır.",
+      "whatToOrder": [
+        "Arkestra Katsu Sando (Shokupan Ekmeğinde)",
+        "Kuru Dinlendirilmiş Kaya Levreği & Yer Elması",
+        "Steak au Poivre"
+      ],
+      "menuFrom": [
+        "Yuzu Kosho Soslu Hamachi",
+        "Mevsimsel Tadım Tabakları",
+        "Şefin Tatlı Kapanışı"
+      ],
+      "alsoTry": [
+        "Tuna Sashimi & Listening Room İmza Kokteylleri — 1960’lar villasının üst katındaki plak dinleme salonuyla bütünleşen çiğ balık başlangıcı ve miksoloji seçkisi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: İki katlı yenilenmiş modern villa içinde loş yemek salonu, bahçe ve üst kat listening room barı · Özel akşam yemekleri, uluslararası gastronomi takipçileri ve şık kokteyl randevuları",
+        "Dezavantaj: Üst segment fine-dining fiyatlaması yüksektir; yemek salonu için haftalar öncesinden rezervasyon gerekebilir ve 4.3 puanın temel kaynağı da fiyat/erişim beklentisidir.",
+        "Ulaşım: Etiler Dilhayat Sokak No:28 üzerinde, Nispetiye ve Levent aksına araç/yaya erişimli.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "eti-sipster",
+      "placeId": "ChIJK0E4tA23yhQRRtZFd3rKiyM",
+      "name": "Sipster Etiler",
+      "address": "Akat, Tepecik Yolu Alkent İş Merkezi Sitesi F-2 Blok No: 13/28 İç Kapı No: 1, 34337 Beşiktaş/İstanbul",
+      "neighborhood": "Tepecik Yolu / Alkent, Etiler",
+      "categoryId": "date",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=2561363440426145350",
+      "coordinates": {
+        "lat": 41.0865258,
+        "lng": 29.0321173
+      },
+      "description": "Alaçatı kökenli Ege neo-bistro çizgisini Alkent’in sakin teraslarına taşıyan; enginarlı humus, tarama ve aromatik kokteyl eşleşmeleriyle sıcak date buluşmalarına uygun adres.",
+      "whatToOrder": [
+        "Enginarlı Humus & Tarama Köpüğü",
+        "Fırında Enginar Pate & Özel Pizetta",
+        "Lokum Bonfile"
+      ],
+      "menuFrom": [
+        "Ege Otlu Paylaşım Tabakları",
+        "Deniz Mahsullü Makarna",
+        "Şarap Eşleşmeli Peynir Tabağı"
+      ],
+      "alsoTry": [
+        "Itırlı Lor Tatlısı & İmza Kokteyller — Alaçatı kökenli neo-bistro mutfağının aromatik tatlı ve kadeh eşleşmesi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Alkent sitesi içinde şık bistro masaları ve ağaçlıklı dış oturma alanı · İkili akşam buluşmaları, şarap-bistro sofraları ve Akatlar müdavimleri",
+        "Dezavantaj: Paylaşımlık porsiyonlar küçük ölçekli geldiği için kalabalık akşamlarda birden fazla tabak seçimi bütçeyi yükseltebiliyor.",
+        "Ulaşım: Tepecik Yolu Alkent İş Merkezi F-2 Blok No:13/28 içinde.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "eti-bardy",
+      "placeId": "ChIJKQoToo-3yhQR92h-y4kZEbE",
+      "name": "Bardy.",
+      "address": "Etiler, Tepecik Yolu 13/21, 34337 Beşiktaş/İstanbul",
+      "neighborhood": "Tepecik Yolu / Alkent, Etiler",
+      "categoryId": "date",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=12759007298932599031",
+      "coordinates": {
+        "lat": 41.0863346,
+        "lng": 29.032732199999998
+      },
+      "description": "Alkent’te her mevsim numaralandırılmış reçetelerle yenilenen imza kokteyl menüsü, loş bar atmosferi ve burrata-smash burger gibi nitelikli eşlikçileriyle mahalle kokteyl barı.",
+      "whatToOrder": [
+        "Mevsimsel Numaralı İmza Kokteyller",
+        "Çilekli Burrata Salatası",
+        "Bardy Smash Burger"
+      ],
+      "menuFrom": [
+        "Klasik Negroni & Ekşi Kokteyller",
+        "Paylaşımlık Bar Tabakları",
+        "Mini Tatlı Kapanışı"
+      ],
+      "alsoTry": [
+        "Trüflü Patates Kızartması & Taze Guacamole — Alkent mahalle barında kokteyl masalarının en sık paylaştığı eşlikçi tabaklar."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Yüksek bar tabureleri, sıcak aydınlatmalı iç salon ve Alkent teras masaları · Kokteyl sonrası sohbete devam etmek isteyen çiftler ve Alkent-Etiler bar müdavimleri",
+        "Dezavantaj: Cuma ve cumartesi geceleri masa kapasitesi hızla dolduğundan bar çevresi hareketlenebiliyor.",
+        "Ulaşım: Tepecik Yolu No:13/21 Alkent sitesi içinde yürüyüş mesafesinde.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "eti-paper-moon",
+      "placeId": "ChIJ1wbFRo-5yhQRxTUCK8IumGc",
+      "name": "Paper Moon",
+      "address": "Etiler, Ahmet Adnan Saygun Cd., 34340 Beşiktaş/İstanbul",
+      "neighborhood": "Ahmet Adnan Saygun Cd., Etiler",
+      "categoryId": "date",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=7464767793846695365",
+      "coordinates": {
+        "lat": 41.0761867,
+        "lng": 29.027180200000004
+      },
+      "description": "1996’dan beri Etiler’de İstanbul’un klasik Kuzey İtalya ve Milano sofrası standardını temsil eden; siyah trüflü tagliolini ve cotoletta alla Milanese ile köklü akşam yemeği kurumu.",
+      "whatToOrder": [
+        "Tagliolini al Tartufo Nero",
+        "Pappardelle Paper Moon",
+        "Cotoletta alla Milanese"
+      ],
+      "menuFrom": [
+        "Risotto ai Funghi Porcini",
+        "Odun Fırını İnce İtalyan Pizzası",
+        "Tiramisu"
+      ],
+      "alsoTry": [
+        "Vitello Tonnato & Carpaccio di Manzo — 1996’dan beri çizgisini koruyan Milano usulü ince dilim başlangıç ikilisi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Yüksek tavanlı klasik Milanese salonu, beyaz örtülü masalar ve zarif bar köşesi · İş yemekleri, yıldönümü buluşmaları ve 1996’dan beri değişmeyen İstanbul müdavimleri",
+        "Dezavantaj: Giyim ve masa adabı daha resmîdir; akşam yemeğinde rezervasyonsuz masa bulmak güçtür.",
+        "Ulaşım: Ahmet Adnan Saygun Caddesi Akmerkez residence girişi aksında vale ve taksi erişimiyle.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "eti-minval",
+      "placeId": "ChIJvw5ltzC3yhQRSPgjJgZipi0",
+      "name": "Minval",
+      "address": "Zeytinoğlu Caddesi, Akat, Yaren Sk. No:6 D:12, 34335 Beşiktaş/İstanbul",
+      "neighborhood": "Yaren Sk. / Akatlar, Etiler",
+      "categoryId": "kahvalti",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=3289424356389943368",
+      "coordinates": {
+        "lat": 41.082239,
+        "lng": 29.0265277
+      },
+      "description": "Akatlar’da kendi ekşi mayalı ekmeklerinin üzerinde Antakya peynirli tabaklar, kuşkonmazlı omlet ve tereyağlı French toast sunan, pastane tezgahıyla sabahları canlanan sıcak mahalle kahvaltıcısı.",
+      "whatToOrder": [
+        "Kuşkonmazlı Omlet",
+        "Antakya Peynirli Ekşi Mayalı Ekmek Üstü",
+        "Tereyağlı French Toast"
+      ],
+      "menuFrom": [
+        "Çırpılmış Yumurta & Avokado Tost",
+        "Taze Kruvasan Sandviç",
+        "Sabah Filtre Kahvesi"
+      ],
+      "alsoTry": [
+        "Karpatka & Paris-Brest Tatlısı — Sabah kahvaltısı sonrasında vitrinden günlük çıkan zanaatkâr pastacılık klasikleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Yaren Sokak üzerinde sade iç salon ve sabah güneşi alan kaldırım kenarı masalar · Hafta sonu kahvaltısı için gelen Akatlar sakinleri ve zanaatkâr tatlı meraklıları",
+        "Dezavantaj: Serpme kahvaltı yerine tabak ve ekmek üstü kahvaltı sunar; hafta sonu geç saatlerde masa beklemek gerekebilir.",
+        "Ulaşım: Zeytinoğlu Caddesi’nden Yaren Sokak içine birkaç adımlık yürüyüşle No:6/12’de.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "eti-askana-manti",
+      "placeId": "ChIJ983H0Di2yhQRy20WLUAJlrE",
+      "name": "Aşkana Mantı Ulus",
+      "address": "Ahmet Adnan Saygun Cd Metehan Sk. Türkel Apt. No:1/1 Etiler. 2, Ulus, 34337 Beşiktaş/İstanbul",
+      "neighborhood": "Ahmet Adnan Saygun Cd. / Ulus, Etiler",
+      "categoryId": "denemelisin",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=12796425562458844619",
+      "coordinates": {
+        "lat": 41.0706712,
+        "lng": 29.027989
+      },
+      "description": "1980’lerden beri İstanbul’un Tatar mantısı geleneğini yaşatan köklü aile işletmesi; incecik el açması hamuru, tereyağlı yoğurt dengesi ve taze çi böreğiyle semt klasiği.",
+      "whatToOrder": [
+        "Tereyağlı Klasik Tatar Mantısı",
+        "Kıtır Fırın/Kızartma Mantı",
+        "Geleneksel Kıymalı Çi Börek"
+      ],
+      "menuFrom": [
+        "Kepekli Mantı",
+        "Mercimek Çorbası",
+        "Ev Yapımı Ayran"
+      ],
+      "alsoTry": [
+        "Etli Yaprak Sarma & Manda Kaymaklı Yoğurt Tatlısı — 1980’lerden beri süren Tatar mutfağı sofrasını tamamlayan yan tabak ve hafif tatlı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Metehan Sokak köşesinde düzenli iki katlı klasik mantı salonu ve bahçe bölümü · Öğle ve akşam her yaştan mantı müdavimleri, aileler ve semt eskileri",
+        "Dezavantaj: Küçük porsiyonlu ve sade ev tipi bir salon olduğu için kalabalık saatlerde servis hızı artabiliyor.",
+        "Ulaşım: Ahmet Adnan Saygun Caddesi Metehan Sokak No:1/1 köşesinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "eti-by-ulus",
+      "placeId": "ChIJl1XDEW-3yhQRRd7ALXcEWuo",
+      "name": "By Ulus Steakhouse",
+      "address": "Kültür, Ahmet Adnan Saygun Cd. No:23/A, 34340 Beşiktaş/İstanbul",
+      "neighborhood": "Ahmet Adnan Saygun Cd., Etiler",
+      "categoryId": "denemelisin",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=16886814662694329925",
+      "coordinates": {
+        "lat": 41.0723962,
+        "lng": 29.029007200000002
+      },
+      "description": "Etiler-Ulus hattındaki şov odaklı et zincirlerinden ayrılıp doğrudan etin dinlendirilmesine ve pişirme dengesine odaklanan, kuru dinlendirilmiş antrikot ve şaşlık sunan et restoranı.",
+      "whatToOrder": [
+        "Dry-Aged Dana Antrikot",
+        "Dana Şaşlık",
+        "Lokum Bonfile"
+      ],
+      "menuFrom": [
+        "Kuzu Kafes",
+        "Kasap Köfte",
+        "Tulum Peynirli Bahçe Salatası"
+      ],
+      "alsoTry": [
+        "Atom Kokoreç & Kremalı Ispanak Püresi — Kuru dinlendirilmiş etlerin öncesinde ve yanında öne çıkan sıcak eşlikçiler."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Ahmet Adnan Saygun Caddesi üzerinde rahat oturumlu et salonu ve vale imkanı · Show odaklı kalabalıktan kaçınıp düzgün et yemek isteyen akşam grupları",
+        "Dezavantaj: Cadde trafiğinin yoğun olduğu aksta yer aldığından yaya gelişinden çok araç/taksi ile tercih edilir.",
+        "Ulaşım: Kültür Mahallesi Ahmet Adnan Saygun Caddesi No:23/A üzerinde.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "eti-citra",
+      "placeId": "ChIJNWmFdfG3yhQRHV7qMK1Sp-8",
+      "name": "Citra",
+      "address": "Akat, Yaren Sk. evrim apt, 34726 Beşiktaş/İstanbul",
+      "neighborhood": "Yaren Sk. / Akatlar, Etiler",
+      "categoryId": "denemelisin",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=17268862199978941981",
+      "coordinates": {
+        "lat": 41.0820157,
+        "lng": 29.026264999999995
+      },
+      "description": "3 Kafadar imzalı yerli kraft fıçı çeşitlerini Kore usulü kanatlar ve Boşnak sucuklu pizzalarla eşleştiren, Akatlar’ın sevilen mahalle gastropub’ı.",
+      "whatToOrder": [
+        "Yerli Kraft Fıçı Seçkisi & Boşnak Sucuklu Pizza",
+        "Kore Usulü Acılı Tavuk Kanatları",
+        "Citra Gastropub Burger"
+      ],
+      "menuFrom": [
+        "Sosis Tabağı",
+        "Nachos",
+        "Çıtır Atıştırmalık Sepeti"
+      ],
+      "alsoTry": [
+        "Trüflü Parmesanlı Patates Kızartması — Kraft tadım bardaklarının yanına en sık paylaşılan sıcak bar tabağı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Yüksek pub masaları ve Yaren Sokak boyunca açık ferah teras oturumu · Yerli kraft bira severler, iş çıkışı grupları ve maç/sohbet akşamı kalabalıkları",
+        "Dezavantaj: Akşamları pub ses seviyesi doğal olarak yükseldiği için sakin bir baş başa akşam yemeği arayanlara uygun değil.",
+        "Ulaşım: Akatlar Yaren Sokak Evrim Apt. altında, Zeytinoğlu’ndan içeri dönerek.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "eti-minikebapci",
+      "placeId": "ChIJ4bXNQN23yhQRIR6R9p10z_I",
+      "name": "MiniKebapçı",
+      "address": "Akat, Selçuklar Sk. 15A, 34335 Beşiktaş/İstanbul",
+      "neighborhood": "Selçuklar Sk. / Akatlar, Etiler",
+      "categoryId": "denemelisin",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=17496331299153059361",
+      "coordinates": {
+        "lat": 41.0780481,
+        "lng": 29.025938699999998
+      },
+      "description": "Akatlar ara sokağında klasik ocakbaşı kalabalığından uzak, caz ve blues müzikleri eşliğinde yağlı kara, küşleme ve fıstıklı kebap sunan butik yeni nesil kebapçı.",
+      "whatToOrder": [
+        "Izgara Yağlı Kara",
+        "Kuzu Küşleme Şiş",
+        "Antep Fıstıklı Kebap"
+      ],
+      "menuFrom": [
+        "Zırh Kıyması Adana Kebap",
+        "Çöp Şiş",
+        "Közlenmiş Soğan & Sarımsak"
+      ],
+      "alsoTry": [
+        "Kuzu Ciğer Şiş Dürüm & Köz Mezeler — Caz-blues tınılı butik ocakbaşının dürüme sarılı sakatat ve köz başlangıç eşleşmesi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Selçuklar Sokak içinde az masalı sıcak butik ocakbaşı salonu ve küçük dış alan · Samimi akşam sofrası kurmak isteyen küçük gruplar ve Akatlar sakinleri",
+        "Dezavantaj: Butik ölçeği nedeniyle akşam saatlerinde yer kalmayabiliyor; klasik gürültülü taverna ocakbaşı atmosferi arayanlara daha sakin gelebilir.",
+        "Ulaşım: Akatlar Selçuklar Sokak No:15A üzerinde yürüyüş mesafesinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "eti-saye-ocakbasi",
+      "placeId": "ChIJIWksUwC3yhQRYhJMEFctvfY",
+      "name": "Saye Ocakbaşı",
+      "address": "Akat, Zeytinoğlu Cd. No:73, 34335 Beşiktaş/İstanbul",
+      "neighborhood": "Zeytinoğlu Cd. / Akatlar, Etiler",
+      "categoryId": "denemelisin",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=17779416755887411810",
+      "coordinates": {
+        "lat": 41.086688699999996,
+        "lng": 29.0264132
+      },
+      "description": "Akatlar Zeytinoğlu Caddesi üzerinde meze ve kömür ateşi dengesini özenle kuran; pastırmalı sıcak humusu, Ali Nazik kebabı ve çıtır fındık lahmacunuyla tam donanımlı bir modern ocakbaşı.",
+      "whatToOrder": [
+        "Kömür Ateşinde Yağlı Kara",
+        "Ali Nazik Kebap",
+        "Taş Fırın Fındık Lahmacun"
+      ],
+      "menuFrom": [
+        "Acılı Zırh Kebabı",
+        "Kuzu Şiş",
+        "Gavurdağı Salatası"
+      ],
+      "alsoTry": [
+        "Pastırmalı Sıcak Humus & Geleneksel Soğuk Mezeler — Zeytinoğlu Caddesi ocakbaşı sofralarının imza sıcak başlangıcı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Ocakbaşı etrafı bar düzeni ve Zeytinoğlu cepheli şık akşam masaları · Rakı-kebap veya uzun meze-ocakbaşı akşamı planlayan arkadaş grupları",
+        "Dezavantaj: Akşam hafta sonu rezervasyonsuz masa bulmak zorlaşıyor.",
+        "Ulaşım: Akatlar Zeytinoğlu Caddesi No:73 üzerinde, otobüs duraklarına yakın."
+      ]
+    },
+    {
+      "id": "eti-miyabi",
+      "placeId": "ChIJAQAAADy2yhQRey312vTl75A",
+      "name": "Miyabi Sushi & Japanese Grill Bar",
+      "address": "Zeytinoğlu Cad, Akat, Yaren Sk. No:6 D:14-15, 34335 Beşiktaş/İstanbul",
+      "neighborhood": "Yaren Sk. / Akatlar, Etiler",
+      "categoryId": "denemelisin",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=10443818900703751547",
+      "coordinates": {
+        "lat": 41.08217,
+        "lng": 29.0263359
+      },
+      "description": "Akatlar Yaren Sokak’ta uzun yıllardır çizgisini koruyan bağımsız Japon mutfağı; yalnızca sushi roll değil, canlı teppanyaki ve sıcak Japon ızgara barıyla öne çıkar.",
+      "whatToOrder": [
+        "Şefin Özel Sushi Roll Seçkisi",
+        "Teppanyaki Dana Bonfile",
+        "Sashimi & Nigiri Tabağı"
+      ],
+      "menuFrom": [
+        "Miso Çorbası",
+        "Edamame",
+        "Somon Teriyaki"
+      ],
+      "alsoTry": [
+        "Karides Tempura & Japon Usulü Wok Noodle — Sushi rulolarının yanında sıcak teppan ve wok mutfağından çıkan klasikler."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Teppanyaki ocak başı tezgahı, iç Japon barı ve sessiz bahçe terası · Uzak Doğu mutfağı müdavimleri, akşam yemeği grupları ve aileler",
+        "Dezavantaj: Teppanyaki masaları için önceden rezervasyon gerekir ve fiyat seviyesi üst-orta bandındadır.",
+        "Ulaşım: Akatlar Yaren Sokak No:6/14-15 üzerinde, Zeytinoğlu Caddesi paralelinde.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "eti-ikonium",
+      "placeId": "ChIJ1exgRhG2yhQRjXZ9NFwFQeI",
+      "name": "İkonium Etiler Etli Ekmek & Tandır",
+      "address": "Nispetiye Mahallesi, Aytar Caddesi Dilek Apartmanı, Nisbetiye, No:28, Levent, 34340 Beşiktaş/İstanbul",
+      "neighborhood": "Aytar Cd. / Nisbetiye, Etiler",
+      "categoryId": "denemelisin",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=16303318019633673869",
+      "coordinates": {
+        "lat": 41.075379399999996,
+        "lng": 29.0194705
+      },
+      "description": "Aytar Caddesi üzerinde Konya usulü ince uzun taş fırın etli ekmek, bıçakarası pide ve ağır ateşte kuzu tandır geleneğini öğle-akşam sürdüren yöresel durak.",
+      "whatToOrder": [
+        "Klasik Konya Etli Ekmeği",
+        "Bıçakarası Kaşarlı Pide",
+        "Ağır Ateşte Kuzu Tandır"
+      ],
+      "menuFrom": [
+        "Recai Böreği (Küflü Peynirli)",
+        "Tereyağlı İskender",
+        "Sac Arası Tatlısı"
+      ],
+      "alsoTry": [
+        "Mevlana Pidesi & Geleneksel Bamya Çorbası — Konya taş fırın ve tandır geleneğini tamamlayan yöresel başlangıçlar."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Aytar Caddesi üzerinde geniş masalı geleneksel fırın-lokanta salonu · Öğle yemeğinde bölge çalışanları ve akşamüstü Konya pidesi arayan aileler",
+        "Dezavantaj: Geleneksel esnaf lokantası temposunda ilerlediği için dekorasyondan çok mutfağa odaklanır.",
+        "Ulaşım: Nisbetiye Mahallesi Aytar Caddesi No:28 önünde, Levent-Nispetiye sınır hattında.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    }
+  ],
+  "nearbyVenues": [
+    {
+      "id": "beb-bread-burger",
+      "placeId": "ChIJd1-IdH63yhQR4Tj2n9L75n0",
+      "name": "Bread & Burger",
+      "address": "Bebek, Manolya Sk. 12/A, 34342 Beşiktaş/İstanbul",
+      "neighborhood": "Manolya Sk., Bebek",
+      "categoryId": "hamburger",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=9072215381429860577",
+      "coordinates": {
+        "lat": 41.077383999999995,
+        "lng": 29.042576999999998
+      },
+      "description": "Manolya Sokak’ta günlük hazırlanan ekşi mayalı artizan ekmekleri, %100 süt danası satır kıyma köfteleri ve el yapımı soslarıyla Bebek’te burger odağını tutan adres.",
+      "whatToOrder": [
+        "Trüf Burger",
+        "Klasik Bread & Burger",
+        "Boşnak Burger"
+      ],
+      "menuFrom": [
+        "Mexican Burger",
+        "Fit Burger (Marul Arası)",
+        "Ev Yapımı Patates Kızartması"
+      ],
+      "alsoTry": [
+        "Buffalo Tavuk Kanatları & Mac and Cheese Topları — Burger yanına çıtır atıştırmalık paylaşmak isteyen masaların sık tercih ettiği başlangıç ikilisi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Manolya Sokak içinde iç oturum ve kaldırım kenarı masalar · Akşam ve hafta sonu öğle saatlerinde Bebek sakinleri ve burger odaklı gruplarla hareketli",
+        "Dezavantaj: Manolya Sokak trafiği ve dar masa yerleşimi yoğun saatlerde biraz sıkışık hissettirebiliyor.",
+        "Ulaşım: Cevdet Paşa Caddesi’nden Manolya Sokak içine birkaç adımlık yürüyüşle.",
+        "Bütçe seviyesi (Google): Orta"
+      ],
+      "nearbyAreaLabel": "Manolya Sk., Bebek",
+      "distanceKm": 0.26,
+      "distanceMeters": 260
+    },
+    {
+      "id": "beb-poco-coffee",
+      "placeId": "ChIJi21dSs63yhQRO32vhkmH0XA",
+      "name": "POCO Coffee & Matcha Bar",
+      "address": "Bebek, Manolya Sk. No:8 D:B, 34342 Beşiktaş/İstanbul",
+      "neighborhood": "Manolya Sk., Bebek",
+      "categoryId": "kahve",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=8129427552242466107",
+      "coordinates": {
+        "lat": 41.077387,
+        "lng": 29.04272
+      },
+      "description": "Bebek’te nitelikli kahveyi seremonial ve platinum grade matcha barıyla buluşturan öncü durak; yulaf sütlü matcha ve çilekli soğuk matcha lattelerinin yanında sade espresso bazlılar da sunuyor.",
+      "whatToOrder": [
+        "Iced Strawberry Matcha Latte",
+        "Seremonial Yulaf Sütlü Matcha",
+        "Flat White & Espresso Bazlı Kahveler"
+      ],
+      "menuFrom": [
+        "Sıcak Matcha Latte",
+        "Filtre Kahve",
+        "Americano"
+      ],
+      "alsoTry": [
+        "Matcha Aromalı Kurabiyeler & Hafif Barlar — İçecek odaklı menüye eşlik eden küçük matcha kurabiyeleri ve rafine tatlı barları öne çıkıyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Manolya Sokak üzerinde minimal iç tezgâh ve kaldırım kenarı bank/tabureler · Sabah yürüyüşü sonrası kahve-matcha alanlar ve semt gençleriyle dinamik akış",
+        "Dezavantaj: Uzun masa başında çalışmaktan çok hızlı kahve/matcha molası ve kısa sohbet için tasarlanmış kompakt bir alan.",
+        "Ulaşım: Manolya Sokak No:8B üzerinde, Cevdet Paşa sahil hattına paralel ilk sokakta.",
+        "Bütçe seviyesi (Google): Orta"
+      ],
+      "nearbyAreaLabel": "Manolya Sk., Bebek",
+      "distanceKm": 0.27,
+      "distanceMeters": 270
+    },
+    {
+      "id": "beb-sekizdeyiz",
+      "placeId": "ChIJVwbvCwC3yhQROKwjxAiF-UU",
+      "name": "Sekizdeyiz Bebek",
+      "address": "Bebek, İnşirah Sokağı No:7, 34342 Beşiktaş/İstanbul",
+      "neighborhood": "İnşirah Sk., Bebek",
+      "categoryId": "date",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=5042207530514885688",
+      "coordinates": {
+        "lat": 41.0764657,
+        "lng": 29.042524699999998
+      },
+      "description": "İnşirah Sokağı’nda Cunda ezmesi, pastırmalı humus ve zeytinyağlı enginar gibi meze tabaklarını zırh Adana-kuzu şiş ızgaraları ve özgün kokteyllerle birleştiren şık akşam buluşma adresi.",
+      "whatToOrder": [
+        "Cunda Ezmesi, Pastırmalı Humus & Zeytinyağlı Enginar",
+        "Zırh Kıyması Adana & Kuzu Şiş",
+        "İmza Kokteyller"
+      ],
+      "menuFrom": [
+        "Gavurdağı & Bebek Salatası",
+        "Lahmacun & Pide Çeşitleri",
+        "Şarap Seçkisi"
+      ],
+      "alsoTry": [
+        "Yanık Yedikule Salatası & Çilekli Semizotu — Klasik ocakbaşı menülerinden farklılaşan taze ve yaratıcı salata seçenekleri özellikle kokteyl eşlikçisi olarak tercih ediliyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: İnşirah Sokağı’nda özenli masalar, bar köşesi ve akşam yemeğine uygun sıcak aydınlatma · Bebek akşam yemeği buluşmaları, çiftler ve kutlama masalarıyla nezih atmosfer",
+        "Dezavantaj: Bebek’in en yüksek bütçeli akşam yemek kategorisinde yer alır ve hafta sonu için rezervasyon gerektirir.",
+        "Ulaşım: Cevdet Paşa’dan Bebek Parkı güney ucundaki İnşirah Sokağı No:7’ye kısa adımlarla.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ],
+      "nearbyAreaLabel": "İnşirah Sk., Bebek",
+      "distanceKm": 0.25,
+      "distanceMeters": 250
+    },
+    {
+      "id": "beb-yirmibir-kebap",
+      "placeId": "ChIJ52I0-Cm3yhQRoDPGFcUE_VM",
+      "name": "Yirmibir Kebap Bebek",
+      "address": "Bebek, Manolya Sk. no:1, 34342 Beşiktaş/İstanbul",
+      "neighborhood": "Manolya Sk., Bebek",
+      "categoryId": "denemelisin",
+      "secondaryCategoryIds": [
+        "date"
+      ],
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=6051998718776193952",
+      "coordinates": {
+        "lat": 41.077187099999996,
+        "lng": 29.043059099999994
+      },
+      "description": "Tarihî pasaj ocakbaşı ruhunu bohem bir dokunuşla Manolya Sokak’a taşıyan; zırh Adana, Diyarbakır usulü ciğer şiş ve taze zeytinyağlı/yoğurtlu mezeleriyle Bebek’in sürpriz kebap durağı.",
+      "whatToOrder": [
+        "Zırh Adana & Urfa Kebap",
+        "Diyarbakır Usulü Ciğer Şiş & Çöp Şiş",
+        "Atom, Humus & Ev Yapımı Ocakbaşı Mezeleri"
+      ],
+      "menuFrom": [
+        "Kuzu Şiş",
+        "Haydari & Acılı Ezme",
+        "Közlenmiş Sebze Eşlikçileri"
+      ],
+      "alsoTry": [
+        "Kuzu Şiş & Yoğurtlu Soğuk Başlangıçlar — Ana ızgara öncesi masayı donatan günlük haydari, humus ve atom ikilisi akşam buluşmalarına uyum sağlıyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Manolya Sokak’ta loş ışıklı, samimi bohem meyhane-ocakbaşı masaları · Bebek içi klasik balık/kafe çizgisi dışında samimi rakı-kebap akşamı arayan gruplar",
+        "Dezavantaj: Ocakbaşı ölçeği kompakt olduğundan hafta sonu akşamlarında rezervasyonsuz yer bulmak zor ve bütçesi semt ortalamasına paralel yüksek.",
+        "Ulaşım: Cevdet Paşa’dan Manolya Sokak No:1 içine döner dönmez.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ],
+      "nearbyAreaLabel": "Manolya Sk., Bebek",
+      "distanceKm": 0.3,
+      "distanceMeters": 300
+    }
+  ]
+}

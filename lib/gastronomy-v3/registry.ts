@@ -17,6 +17,8 @@ import galataSnapshotJson from './regions/istanbul-beyoglu-galata.json';
 import besiktasCarsiSnapshotJson from './regions/istanbul-besiktas-carsi.json';
 import akaretlerSnapshotJson from './regions/istanbul-besiktas-akaretler.json';
 import bebekSnapshotJson from './regions/istanbul-besiktas-bebek.json';
+import etilerSnapshotJson from './regions/istanbul-besiktas-etiler.json';
+import ortakoySnapshotJson from './regions/istanbul-besiktas-ortakoy.json';
 import kusadasiSnapshotJson from './regions/aydin-kusadasi.json';
 import gaziantepSnapshotJson from './regions/gaziantep-merkez.json';
 import antalyaKaleiciSnapshotJson from './regions/antalya-kaleici.json';
@@ -45,6 +47,8 @@ const GALATA_SNAPSHOT = galataSnapshotJson as V3VerifiedRegionSnapshot;
 const BESIKTAS_CARSI_SNAPSHOT = besiktasCarsiSnapshotJson as V3VerifiedRegionSnapshot;
 const AKARETLER_SNAPSHOT = akaretlerSnapshotJson as V3VerifiedRegionSnapshot;
 const BEBEK_SNAPSHOT = bebekSnapshotJson as V3VerifiedRegionSnapshot;
+const ETILER_SNAPSHOT = etilerSnapshotJson as V3VerifiedRegionSnapshot;
+const ORTAKOY_SNAPSHOT = ortakoySnapshotJson as V3VerifiedRegionSnapshot;
 const KUSADASI_SNAPSHOT = kusadasiSnapshotJson as V3VerifiedRegionSnapshot;
 const GAZIANTEP_SNAPSHOT = gaziantepSnapshotJson as V3VerifiedRegionSnapshot;
 const ANTALYA_KALEICI_SNAPSHOT = antalyaKaleiciSnapshotJson as V3VerifiedRegionSnapshot;
@@ -72,6 +76,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   BESIKTAS_CARSI_SNAPSHOT,
   AKARETLER_SNAPSHOT,
   BEBEK_SNAPSHOT,
+  ETILER_SNAPSHOT,
+  ORTAKOY_SNAPSHOT,
   KUSADASI_SNAPSHOT,
   GAZIANTEP_SNAPSHOT,
   ANTALYA_KALEICI_SNAPSHOT,
@@ -172,6 +178,22 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'kucuk-bebek': BEBEK_SNAPSHOT,
   'cevdet-pasa': BEBEK_SNAPSHOT,
   insirah: BEBEK_SNAPSHOT,
+  etiler: ETILER_SNAPSHOT,
+  'etiler-besiktas': ETILER_SNAPSHOT,
+  'istanbul-besiktas-etiler': ETILER_SNAPSHOT,
+  nispetiye: ETILER_SNAPSHOT,
+  nisbetiye: ETILER_SNAPSHOT,
+  akatlar: ETILER_SNAPSHOT,
+  akat: ETILER_SNAPSHOT,
+  alkent: ETILER_SNAPSHOT,
+  ortakoy: ORTAKOY_SNAPSHOT,
+  'ortakoy-besiktas': ORTAKOY_SNAPSHOT,
+  'istanbul-besiktas-ortakoy': ORTAKOY_SNAPSHOT,
+  mecidiye: ORTAKOY_SNAPSHOT,
+  dereboyu: ORTAKOY_SNAPSHOT,
+  'eski-bahce': ORTAKOY_SNAPSHOT,
+  'muallim-naci': ORTAKOY_SNAPSHOT,
+  feriye: ORTAKOY_SNAPSHOT,
   kusadasi: KUSADASI_SNAPSHOT,
   'kusadasi-aydin': KUSADASI_SNAPSHOT,
   'merkez-kusadasi-aydin': KUSADASI_SNAPSHOT,

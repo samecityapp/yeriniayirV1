@@ -1,0 +1,954 @@
+{
+  "schemaVersion": 3,
+  "verifiedAt": "2026-11-15T12:53:51.675Z",
+  "region": {
+    "id": "ortakoy-besiktas",
+    "slug": "ortakoy",
+    "city": "İstanbul",
+    "district": "Beşiktaş",
+    "neighborhood": "Ortaköy",
+    "officialQuarter": "Ortaköy & Mecidiye",
+    "displayName": "Ortaköy, Beşiktaş, İstanbul",
+    "locative": "Ortaköy'de",
+    "path": [
+      "istanbul",
+      "besiktas",
+      "ortakoy"
+    ],
+    "aliases": [
+      "Ortaköy",
+      "Ortakoy",
+      "Mecidiye",
+      "Dereboyu",
+      "Eski Bahçe",
+      "Eski Bahce",
+      "Muallim Naci",
+      "Ortaköy Meydanı",
+      "Feriye"
+    ],
+    "scopeNote": "İstanbul · Beşiktaş · Ortaköy (Eski Bahçe Sk., Mecidiye Çarşısı, Dereboyu Cd., Muallim Naci ve Feriye Rıhtımı Doğrulanmış Seçkisi)",
+    "characterSubtitle": "Feriye rıhtımı ve Cemil Topuzlu Parkı’nın köklü Boğaz sofralarından Eski Bahçe Sokak taş fırın pizzacılarına, üç kuşaklık Konya fırın kebabından sahil kumpir ritüeline uzanan seçki.",
+    "center": {
+      "lat": 41.0492,
+      "lng": 29.0258
+    },
+    "boundary": {
+      "bbox": {
+        "minLat": 41.0465,
+        "maxLat": 41.056,
+        "minLng": 29.0215,
+        "maxLng": 29.0345
+      }
+    }
+  },
+  "categories": [
+    {
+      "id": "pizza",
+      "slug": "pizza",
+      "label": "Pizza",
+      "title": "Pizza",
+      "emoji": "🍕",
+      "isMustTry": false
+    },
+    {
+      "id": "hamburger",
+      "slug": "hamburger",
+      "label": "Hamburger",
+      "title": "Hamburger",
+      "emoji": "🍔",
+      "isMustTry": false
+    },
+    {
+      "id": "kahve",
+      "slug": "kahve",
+      "label": "Kahve",
+      "title": "Kahve",
+      "emoji": "☕",
+      "isMustTry": false
+    },
+    {
+      "id": "date",
+      "slug": "date-mekanlari",
+      "label": "Date",
+      "title": "Date Mekanları",
+      "emoji": "🍷",
+      "isMustTry": false
+    },
+    {
+      "id": "kahvalti",
+      "slug": "kahvalti",
+      "label": "Kahvaltı",
+      "title": "Kahvaltı",
+      "emoji": "🍳",
+      "isMustTry": false
+    },
+    {
+      "id": "denemelisin",
+      "slug": "denemelisin",
+      "label": "Denemelisin",
+      "title": "Mutlaka Denemelisin",
+      "emoji": "⭐",
+      "isMustTry": false
+    },
+    {
+      "id": "balik",
+      "slug": "balik-deniz-urunleri",
+      "label": "Balıkçılar",
+      "title": "Balıkçılar & Deniz Ürünleri",
+      "emoji": "🐟",
+      "isMustTry": false
+    }
+  ],
+  "venues": [
+    {
+      "id": "ort-pizano",
+      "placeId": "ChIJwbjnFR_IyhQRCax51KqFcCo",
+      "name": "Pizano Pizzeria",
+      "address": "Mecidiye, Eski Bahçe Sk. 17/A, 34347 Beşiktaş/İstanbul",
+      "neighborhood": "Eski Bahçe Sk., Ortaköy",
+      "categoryId": "pizza",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=3058091115740245001",
+      "coordinates": {
+        "lat": 41.0494972,
+        "lng": 29.025084600000003
+      },
+      "description": "Eski Bahçe Sokak’ta İtalyan usulü ince hamurlu taş fırın pizzaları, üzeri hamur kaplı Fagotto’su ve yüksek kalite tutarlılığıyla Ortaköy’ün yerleşik pizza adresi.",
+      "whatToOrder": [
+        "Pizza Pizano (Bonfile & Köz Kırmızı Biber)",
+        "Pizza Fagotto (Üzeri Hamur Kapalı)",
+        "Üç Mantarlı & Trüf Yağlı Pizza"
+      ],
+      "menuFrom": [
+        "Bresaola & Rokalı İnce Hamur Pizza",
+        "Quattro Formaggi",
+        "Sarımsaklı Zeytinyağlı Fırın Ekmeği"
+      ],
+      "alsoTry": [
+        "Ev Yapımı Tiramisu & Rokalı Parmesan Salatası — Taş fırından çıkan çıtır ince hamur pizzaların ardından tercih edilen İtalyan kapanışı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Eski Bahçe Sokak içinde sıcak tuğla dokulu salon ve dış sokak masaları · Meydan kalabalığından bir arka sokağa çekilen pizzaseverler ve akşam çiftleri",
+        "Dezavantaj: Popüler akşam saatlerinde dar sokak içi masalar erken dolabiliyor.",
+        "Ulaşım: Ortaköy Camii ve meydanından Eski Bahçe Sokak No:17/A’ya kısa yürüyüşle.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "ort-del-ponte",
+      "placeId": "ChIJP5TCYGq3yhQREef2vG1QL6E",
+      "name": "Del Ponte Pizzeria",
+      "address": "Mecidiye, Büyükşekerci Sk. No:44/a, 34347 Beşiktaş/İstanbul",
+      "neighborhood": "Büyükşekerci Sk. / Mecidiye, Ortaköy",
+      "categoryId": "pizza",
+      "rating": 5,
+      "mapsUri": "https://maps.google.com/?cid=11614590396263753489",
+      "coordinates": {
+        "lat": 41.0500651,
+        "lng": 29.024810300000002
+      },
+      "description": "Mecidiye arka sokaklarında 33 cm San Marzano domates soslu Napoli hamuruyla acı biber reçelli Diavola’dan Kars gravyerli dört peynirliye uzanan butik pizzacı.",
+      "whatToOrder": [
+        "Diavola Napoli Pizza (Acı Biber Reçelli)",
+        "Portofino Pesto Soslu Pizza",
+        "Quattro Formaggi Napoli (Kars Gravyerli)"
+      ],
+      "menuFrom": [
+        "San Marzano Soslu Margherita",
+        "Burrata & Rokalı Pizza",
+        "Fırın Sarımsaklı Ekmek"
+      ],
+      "alsoTry": [
+        "Dilim Tiramisu & Spoonful Tatlısı — 33 cm San Marzano soslu Napoli pizzalarının ardından günlük çıkan tatlı ikilisi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Büyükşekerci Sokak köşesinde kompakt butik salon ve sokak önü birkaç masa · Napoli tarzı kabarık kenarlı pizza arayan semt sakinleri ve genç gruplar",
+        "Dezavantaj: Küçük bir dükkân hacmine sahip olduğundan kalabalık gruplara sınırlı yer sunuyor.",
+        "Ulaşım: Dereboyu Caddesi’nden Büyükşekerci Sokak No:44/A’ya yürüyerek.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "ort-4-kitchen",
+      "placeId": "ChIJkT7zS9y3yhQR9iYaj9INsDg",
+      "name": "4 / Kitchen Ortaköy",
+      "address": "Mecidiye, Eski Bahçe Sk. no:19, 34347 Beşiktaş/İstanbul",
+      "neighborhood": "Eski Bahçe Sk., Ortaköy",
+      "categoryId": "pizza",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=4084780060020188918",
+      "coordinates": {
+        "lat": 41.049545,
+        "lng": 29.025067999999997
+      },
+      "description": "Eski Bahçe Sokak içinde ince hamur taş fırın margherita’sını taze Fettuccine Alfredo ve Penne Arrabbiata ile eşleyen samimi mahalle İtalyan mutfağı.",
+      "whatToOrder": [
+        "İnce Hamur Taş Fırın Margherita",
+        "Fettuccine Alfredo",
+        "Penne Arrabbiata"
+      ],
+      "menuFrom": [
+        "Dört Peynirli Pizza",
+        "Pesto Soslu Taze Makarna",
+        "Bruschetta Tabağı"
+      ],
+      "alsoTry": [
+        "Kinoa & Izgara Tavuklu Kase Salata — Eski Bahçe Sokak’ta pizza ve makarna dışında hafif öğün arayanların tercihi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Eski Bahçe Sokak içinde aydınlık sade salon ve küçük kaldırım masaları · Bölge üniversite öğrencileri, arkadaş ikilileri ve rahat akşam yemeği arayanlar",
+        "Dezavantaj: Mutfak tek seferde makarna, salata ve pizza çıkardığı için pik saatlerde fırın sırası bekletebiliyor.",
+        "Ulaşım: Eski Bahçe Sokak No:19 üzerinde, Pizano’nun hemen yakınında.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "ort-sizzle",
+      "placeId": "ChIJgQWOxK23yhQRret6dbZOG20",
+      "name": "Sizzle Street Food",
+      "address": "Mecidiye, Büyükşekerci Sk. no:39/A, 34100 Beşiktaş/İstanbul",
+      "neighborhood": "Büyükşekerci Sk. / Mecidiye, Ortaköy",
+      "categoryId": "hamburger",
+      "rating": 5,
+      "mapsUri": "https://maps.google.com/?cid=7861964120067337133",
+      "coordinates": {
+        "lat": 41.0491752,
+        "lng": 29.024763999999998
+      },
+      "description": "İki şefin Mecidiye arka sokağında kurduğu, trüf mayonezli ve eski kaşar-acı biber reçelli smash burgerleriyle olduğu kadar yedi ayrı ev yapımı sosuyla da dikkat çeken sokak mutfağı.",
+      "whatToOrder": [
+        "Trüf Mayonezli Smash Burger",
+        "Old Breakfast Burger (Eski Kaşar & Acı Biber Reçeli)",
+        "Big Sizzle Burger"
+      ],
+      "menuFrom": [
+        "Classic Cheeseburger",
+        "Jalapeño Smash Burger",
+        "Çıtır Soğan Halkaları"
+      ],
+      "alsoTry": [
+        "Trüflü Parmesanlı Patates & Yedi Ev Yapımı Sos — İki şefin kurduğu dükkanda smash köftelerin yanında kendi üretimleri olan soslarla sunulan patates."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Büyükşekerci Sokak içinde yüksek bar tabureleri ve sokak cephesinde kompakt masalar · Smash burger ve el yapımı sos meraklıları, akşam paket ve ayaküstü ziyaretçileri",
+        "Dezavantaj: Küçük bir sokak mutfağı düzeninde çalıştığından uzun oturumlu geniş grup masası sunmaz.",
+        "Ulaşım: Mecidiye Büyükşekerci Sokak No:39/A üzerinde, Dereboyu paralelinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "ort-per-noi",
+      "placeId": "ChIJc-y3SYC3yhQRkMWmNUUk6qY",
+      "name": "Per Noi Coffee Co.",
+      "address": "Mecidiye, Eski Bahçe Sk. No:11/B, 34347 Beşiktaş/İstanbul",
+      "neighborhood": "Eski Bahçe Sk., Ortaköy",
+      "categoryId": "kahve",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=12027465634517796240",
+      "coordinates": {
+        "lat": 41.049417999999996,
+        "lng": 29.025090900000002
+      },
+      "description": "Eski Bahçe Sokak’ta Tahini Latte gibi özgün sıcak-soğuk reçetelerin yanında temiz cortado ve filtre kahvesiyle turist kalabalığının bir arka sokağında nefes aldıran nitelikli kahveci.",
+      "whatToOrder": [
+        "Tahini Latte",
+        "Cortado",
+        "Nitelikli Filtre Kahve"
+      ],
+      "menuFrom": [
+        "Flat White",
+        "Iced Americano",
+        "V60 El Demlemesi"
+      ],
+      "alsoTry": [
+        "Ev Yapımı Tiramisu & Taze Profiterol — Eski Bahçe Sokak’taki üçüncü dalga kahve molasına eşlik eden günlük tatlılar."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Eski Bahçe Sokak içinde minimal oturma tezgahı ve dış sokak tabureleri · Üçüncü dalga kahve arayan semt sakinleri ve Eski Bahçe gezginleri",
+        "Dezavantaj: Sokak içi dar oturma düzeni laptop başında uzun saatler çalışmaya pek uygun değildir.",
+        "Ulaşım: Eski Bahçe Sokak No:11/B’de, Ortaköy meydanından birkaç dakika içeride.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "ort-ora-coffee",
+      "placeId": "ChIJNWJ-sda3yhQRVlt9j4I95RA",
+      "name": "Ora Coffee Ortaköy",
+      "address": "Mecidiye, Eski Bahçe Sk. No:7/A No:7, 34347 Beşiktaş/İstanbul",
+      "neighborhood": "Eski Bahçe Sk., Ortaköy",
+      "categoryId": "kahve",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=1217446905235987286",
+      "coordinates": {
+        "lat": 41.049239400000005,
+        "lng": 29.025143
+      },
+      "description": "Eski Bahçe Sokak başında el demlemesi V60’dan mor tatlı patatesli Ube Latte’ye uzanan seçkisi ve minimalist üst kat salonuyla Ortaköy’ün genç nitelikli kahve durağı.",
+      "whatToOrder": [
+        "V60 El Demlemesi",
+        "Ube Latte",
+        "Flat White"
+      ],
+      "menuFrom": [
+        "Cold Brew",
+        "Cortado",
+        "Iced Spanish Latte"
+      ],
+      "alsoTry": [
+        "San Sebastian Cheesecake & Tereyağlı Kruvasan — Minimalist üst kat salonunda demleme kahvelerle birlikte sunulan fırın eşlikçileri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Alt kat espresso barı ve dizüstü çalışmaya uygun sakin üst kat oturma alanı · Bilgisayarla çalışan öğrenciler, yaratıcı ekipler ve özel kahve deneyen genç ziyaretçiler",
+        "Dezavantaj: Üst kattaki çalışma masaları hafta içi öğleden sonraları erken doluyor.",
+        "Ulaşım: Eski Bahçe Sokak No:7/A adresinde, meydan girişine yürüme mesafesinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "ort-koyu-kahve",
+      "placeId": "ChIJ351iqF-3yhQRGpKMq0GU3ZA",
+      "name": "Ortaköy Koyu Kahve",
+      "address": "Mecidiye Mahallesi, Ortaköy, Aktar Sk. No: 2 A-B, 34347 Beşiktaş/İstanbul",
+      "neighborhood": "Aktar Sk. / Çarşı, Ortaköy",
+      "categoryId": "kahve",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=10438662521086579226",
+      "coordinates": {
+        "lat": 41.0489927,
+        "lng": 29.0251143
+      },
+      "description": "Ortaköy iç çarşısındaki Aktar Sokak köşesinde köz dokulu Türk kahvesini espresso bazlı soğuk içeceklerle buluşturan sıcak mahalle kahvecisi.",
+      "whatToOrder": [
+        "Köz Dokulu Geleneksel Türk Kahvesi",
+        "Buzlu Latte",
+        "Americano"
+      ],
+      "menuFrom": [
+        "Damla Sakızlı Türk Kahvesi",
+        "Filtre Kahve",
+        "Cappuccino"
+      ],
+      "alsoTry": [
+        "Demlikte Rooibos Bitki Çayı & Sıcak Çarşı Tostu — Ortaköy çarşı köşesinde kahve dışında soluklanmak isteyenlerin tercih ettiği eşlikçiler."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Aktar Sokak üzerinde mütevazı iç masa alanı ve sakin köşe sokak sandalyeleri · Çarşı esnafı, mahalle sakinleri ve iskele kalabalığından kaçan kahve severler",
+        "Dezavantaj: Geleneksel kahveci-kafe çizgisinde olduğundan geniş tatlı veya yemek mutfağı yoktur.",
+        "Ulaşım: Ortaköy Aktar Sokak No:2/A-B üzerinde, Büyük Mecidiye Camii çarşı girişinin içinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "ort-lokanta-feriye",
+      "placeId": "ChIJlziuOLi3yhQRc3rECEj67Ns",
+      "name": "Lokanta Feriye",
+      "address": "Yıldız, Çırağan Cd. No:44, 34347 Beşiktaş/İstanbul",
+      "neighborhood": "Çırağan Cd. / Feriye Sarayı, Ortaköy",
+      "categoryId": "date",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=15847316376101616243",
+      "coordinates": {
+        "lat": 41.0471157,
+        "lng": 29.024334999999997
+      },
+      "description": "19. yüzyıl Osmanlı Feriye Sarayı yerleşkesinin Boğaz rıhtımında Şef Birkan Erköylü mutfağıyla Anadolu-İstanbul tariflerini çağdaş bir dille sunan, semtin tarihî ve manzara açısından başat akşam yemeği kurumu.",
+      "whatToOrder": [
+        "Beğendili Dana Yanak",
+        "Ağır Ateşte Kuzu İncik",
+        "Mevsimsel Boğaz Balığı"
+      ],
+      "menuFrom": [
+        "Zeytinyağlı Enginar & Deniz Börülcesi",
+        "Tahinli Sufle / Kabak Tatlısı",
+        "Yerel Bağlardan Kadeh Eşleşmeleri"
+      ],
+      "alsoTry": [
+        "Etli Pazı Sarma & Isırganlı Lor Böreği — 19. yüzyıl Feriye rıhtımında Boğaz kıyısına karşı paylaşılan çağdaş İstanbul ara sıcakları."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Tarihî taş saray cepheli Boğaz rıhtım terası, yüksek tavanlı şık ana salon ve bahçe · Özel akşam kutlamaları, yabancı konuk ağırlamaları ve Ortaköy Camii siluetine karşı randevular",
+        "Dezavantaj: Tarihî kıyı kompleksi ve yüksek ziyaretçi sirkülasyonu nedeniyle zaman zaman servis hızı ve lüks segment hesap seviyesi hakkında eleştiriler görülebiliyor; rıhtım masaları önceden ayırtılmalıdır.",
+        "Ulaşım: Çırağan Caddesi No:44’te, Ortaköy meydanı ile Kabataş-Ortaköy otobüs durağının hemen yanında.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "ort-sefarad-meyhane",
+      "placeId": "ChIJocsFcMy3yhQRJQn3lHPFTbM",
+      "name": "Sefarad Meyhane",
+      "address": "Mecidiye, Muvakkit Sk. No:33, 34347 Beşiktaş/İstanbul",
+      "neighborhood": "Muvakkit Sk. / Mecidiye, Ortaköy",
+      "categoryId": "date",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=12920200006206949669",
+      "coordinates": {
+        "lat": 41.0492809,
+        "lng": 29.0259176
+      },
+      "description": "Muvakkit Sokak’taki ahşap dokulu sıcak salonunda torik lakerda, pazı dolması ve yaprak ciğer gibi geleneksel meyhane mezelerini kalabalıktan uzak sohbet atmosferinde sunan durak.",
+      "whatToOrder": [
+        "Torik Lakerda & Zeytinyağlı Enginar",
+        "Arnavut Usulü Yaprak Ciğer",
+        "Sıcak Pazı Dolması"
+      ],
+      "menuFrom": [
+        "Girit Ezmesi",
+        "Izgara Köfte / Mevsim Balığı",
+        "Fırın Helva"
+      ],
+      "alsoTry": [
+        "Fava, Atom & Paçanga Böreği — Ortaköy arka sokaklarındaki ahşap dokulu geleneksel meyhane sofrasının meze ve ara sıcak üçlüsü."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Ahşap masalı geleneksel iki katlı mahalle meyhanesi ve sakin sokak kenarı · Uzun rakı-meze sohbeti arayan ikililer ve köklü İstanbul meyhanesi müdavimleri",
+        "Dezavantaj: Geleneksel meyhane düzeninde akşamları masa arası mesafe yakın olabiliyor ve rezervasyon gerekiyor.",
+        "Ulaşım: Mecidiye Muvakkit Sokak No:33 üzerinde, Dereboyu’ndan bir arka sokakta.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "ort-visorante",
+      "placeId": "ChIJjw3nVNS3yhQRkJr5yE1ffaY",
+      "name": "Visorante Kitchen & Bar Ortaköy",
+      "address": "Ortaköy, Dereboyu Cd. No:10, 34347 Beşiktaş/İstanbul",
+      "neighborhood": "Dereboyu Cd., Ortaköy",
+      "categoryId": "date",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=11996849770073791120",
+      "coordinates": {
+        "lat": 41.049301,
+        "lng": 29.026231000000003
+      },
+      "description": "Dereboyu girişinde Ortaköy sırtlarından Boğaz Köprüsü’nü gören terası, kuzu ragù’lu el yapımı makarnaları ve patlıcanlı burrata sunumlarıyla şık akşam buluşma adresi.",
+      "whatToOrder": [
+        "Kuzu Ragù Soslu Reginette",
+        "Füme Patlıcanlı Ev Yapımı Ravioli",
+        "Patlıcan Caponata Eşliğinde Burrata"
+      ],
+      "menuFrom": [
+        "Deniz Mahsullü Risotto",
+        "Izgara Bonfile",
+        "Tiramisu"
+      ],
+      "alsoTry": [
+        "Carpaccio di Manzo & Taş Fırın İtalyan Pizzası — Köprü manzaralı terasta akşam buluşmalarına eşlik eden İtalyan başlangıçları."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Boğaz ve köprü manzaralı üst teras masaları ile şık kapalı bar-restoran alanı · Yıldönümü akşamları, manzaralı akşam yemeği arayan çiftler ve konuk ağırlayanlar",
+        "Dezavantaj: Yoğun turistik talep nedeniyle fiyat bandı yukarıdadır ve teras ön masalar hızlı tükenir.",
+        "Ulaşım: Ortaköy Dereboyu Caddesi No:10 üzerinde, sahil ana caddesinin hemen başında.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "ort-casa-firin",
+      "placeId": "ChIJOUYYxRG3yhQRV1hgosD_Pjc",
+      "name": "Casa Fırın Ortaköy",
+      "address": "Mecidiye, Kaymakçı Sk., 34347 Near, Mecidiye, 34347 Beşiktaş/İstanbul",
+      "neighborhood": "Kaymakçı Sk. / Mecidiye, Ortaköy",
+      "categoryId": "kahvalti",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=3980900323465123927",
+      "coordinates": {
+        "lat": 41.0481372,
+        "lng": 29.025772999999997
+      },
+      "description": "Kaymakçı Sokak’ta sıcacık taş fırınından çıkan labneli zahterli pideleri, muhammaralı ekmekleri ve taş fırın menemeniyle Ortaköy kahvaltı standartlarını yukarı çeken fırın-kafe.",
+      "whatToOrder": [
+        "Labneli & Zahterli Taş Fırın Pide",
+        "Muhammaralı Fırın Pidesi",
+        "Sıcak Taş Fırın Menemeni"
+      ],
+      "menuFrom": [
+        "Hellimli & Zeytinli Fırın Ekmeği",
+        "Sahanda Yumurta",
+        "Demleme Siyah Çay"
+      ],
+      "alsoTry": [
+        "Kıymalı Sıcak Humus & Tarçınlı Fırın Kurabiyesi — Sabah taş fırınından çıkan Levanten dokunuşlu paylaşım tabağı ve kurabiyeler."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Taş fırın sıcaklığını hissettiren samimi iç alan ve Kaymakçı Sokak masaları · Sabah kahvaltısı için taze pide-ekmek arayan Ortaköy sakinleri ve çiftler",
+        "Dezavantaj: Hafta sonları geç kahvaltı saatlerinde taş fırın başında küçük masa bekleme sırası oluşabiliyor.",
+        "Ulaşım: Mecidiye Kaymakçı Sokak içinde, Dereboyu’na paralel ara sokakta.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "ort-way-bakery",
+      "placeId": "ChIJIUR7HwC3yhQRZG_V-f-NhPM",
+      "name": "WAY Coffee & Bakery",
+      "address": "Mecidiye, Ortaköy Değirmen Sk No:3, 34347 Beşiktaş/İstanbul",
+      "neighborhood": "Ortaköy Değirmen Sk., Ortaköy",
+      "categoryId": "kahvalti",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=17547306178689986404",
+      "coordinates": {
+        "lat": 41.0479066,
+        "lng": 29.026007999999997
+      },
+      "description": "Ortaköy Değirmen Sokak’ta katmanlı tereyağlı kruvasanları, çikolata dolgulu fırın hamur işleri ve taze kahve eşleşmesiyle hafif ve hızlı bir Avrupa tarzı kahvaltı adresi.",
+      "whatToOrder": [
+        "Çikolata Dolgulu Taze Kruvasan",
+        "Tereyağlı Sade Kruvasan",
+        "Kruvasan Sandviç & Sabah Kahvesi"
+      ],
+      "menuFrom": [
+        "Bademli Kruvasan",
+        "Ekşi Mayalı Tost",
+        "Flat White"
+      ],
+      "alsoTry": [
+        "Günlük Meyveli Tart & Espresso Bazlı Kahveler — Sahil yürüyüşü öncesi Değirmen Sokak’ta fırın vitrininden günlük çıkan tatlı eşlikçiler."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Değirmen Sokak cephesinde temiz vitrinli küçük iç salon ve kaldırım kenarı masalar · Sabah yürüyüşü öncesi taze kruvasan-kahve ikilisi arayan mahalleliler",
+        "Dezavantaj: Geleneksel serpme veya sıcak tava yumurta ağırlıklı değil; fırın pastane kahvaltısı sunar.",
+        "Ulaşım: Mecidiye Ortaköy Değirmen Sokak No:3 üzerinde, meydana birkaç dakika uzaklıkta.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "ort-caynik",
+      "placeId": "ChIJBwBwvsm3yhQRpl7-58QzZvQ",
+      "name": "Çaynik Breakfast Cafe",
+      "address": "Mecidiye, Gözlükçü Sk. No: 19A, 34347 Beşiktaş/İstanbul",
+      "neighborhood": "Gözlükçü Sk. / Mecidiye, Ortaköy",
+      "categoryId": "kahvalti",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=17610820313677717158",
+      "coordinates": {
+        "lat": 41.049861899999996,
+        "lng": 29.024446599999997
+      },
+      "description": "Adını demlikten alan özel harman yaprak çay seçkisini (Pu-Erh, Emerald Mint) sıcak muhlama, kavurmalı kruvasan ve zengin kahvaltı sofrasıyla buluşturan samimi mahalle kahvaltıcısı.",
+      "whatToOrder": [
+        "İki Kişilik Zengin Serpme Kahvaltı",
+        "Karadeniz Usulü Sıcak Muhlama",
+        "Kavurmalı & Kaşarlı Kruvasan"
+      ],
+      "menuFrom": [
+        "Pişi & Ev Reçelleri",
+        "Menemen",
+        "Avokadolu Poşe Yumurta"
+      ],
+      "alsoTry": [
+        "Özel Harman Yaprak Çaylar (Pu-Erh & Emerald Mint) — Demlik sunumuyla kahvaltı masasının merkezinde yer alan dünya çayları seçkisi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Gözlükçü Sokak üzerinde iki katlı sıcak dekore edilmiş kahvaltı salonu · Özel çay demlikleri eşliğinde uzun hafta sonu kahvaltısı yapan çiftler ve arkadaş grupları",
+        "Dezavantaj: Gözlükçü Sokak içindeki konumu araçla kapıya kadar yaklaşmaya uygun değildir; yürüyüş önerilir.",
+        "Ulaşım: Mecidiye Gözlükçü Sokak No:19A üzerinde, çarşı arkasındaki sakin sokakta.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "ort-ortakoy-cafe-kahvalti",
+      "placeId": "ChIJzzvzmMm3yhQRogiSbL90D_4",
+      "name": "Ortaköy Cafe Kahvaltı",
+      "address": "Mecidiye, Eski Bahçe Sk. No:31 D:33, 34347 Beşiktaş/İstanbul",
+      "neighborhood": "Eski Bahçe Sk., Ortaköy",
+      "categoryId": "kahvalti",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=18306979375793440930",
+      "coordinates": {
+        "lat": 41.0498214,
+        "lng": 29.0250388
+      },
+      "description": "Eski Bahçe Sokak’ta yıllardır bir aile işletmesi sıcaklığında serpme kahvaltı, sıcacık pişi, kuymak ve el açması gözleme sunan, semtin bilinen geleneksel kahvaltı sofrası.",
+      "whatToOrder": [
+        "Sıcak Pişili Serpme Kahvaltı",
+        "Kavurmalı Sahanda Yumurta",
+        "Kuymak & Örgü Peynir Tabağı"
+      ],
+      "menuFrom": [
+        "Sucuklu Yumurta",
+        "Bal-Kaymak Tabağı",
+        "Sınırsız Demleme Çay"
+      ],
+      "alsoTry": [
+        "Otlu Peynirli Gözleme & Ev Yapımı Reçeller — Eski Bahçe Sokak’taki aile işletmesinde sabah sofrasını tamamlayan el açması hamur işleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Eski Bahçe Sokak içi ev sıcaklığında salaş iç salon ve küçük sokak önü masalar · Klasik Türk usulü doyurucu mahalle kahvaltısı arayan semt sakinleri ve gezginler",
+        "Dezavantaj: Modern tasarım kafe havası yerine geleneksel mahalle kahvaltıcısı sadeliği sunar.",
+        "Ulaşım: Mecidiye Eski Bahçe Sokak No:31-33 üzerinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "ort-manticisi",
+      "placeId": "ChIJt4Qe_C63yhQR7J-2T2GDX-Q",
+      "name": "Ortaköy Mantıcısı",
+      "address": "Mecidiye, Eski Bahçe Sk. 2F, 34347 Beşiktaş/İstanbul",
+      "neighborhood": "Eski Bahçe Sk., Ortaköy",
+      "categoryId": "denemelisin",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=16456016017407516652",
+      "coordinates": {
+        "lat": 41.0490856,
+        "lng": 29.025303899999997
+      },
+      "description": "İskele arkası Eski Bahçe Sokak girişinde ince el açması klasik mantı, çıtır mantı ve karışık tabaklarıyla yüksek konuk memnuniyeti koruyan köklü mahalle mantıcısı.",
+      "whatToOrder": [
+        "Geleneksel El Açması Ev Mantısı",
+        "Çıtır Mantı",
+        "Karışık Mantı Tabağı"
+      ],
+      "menuFrom": [
+        "Sarımsaklı Yoğurtlu Klasik Mantı",
+        "Günün Çorbası",
+        "Ev Yapımı Limonata"
+      ],
+      "alsoTry": [
+        "İnce Açılmış Çiğ Börek & Zeytinyağlı Yaprak Sarma — İskele yakınındaki mantı sofralarının sık tercih edilen hamur işi ve zeytinyağlı eşlikçisi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Eski Bahçe Sokak başında kompakt iki katlı temiz salon ve küçük kaldırım masaları · Öğle ve akşam saatlerinde ev mantısı arayan yerel sakinler ve öğrenciler",
+        "Dezavantaj: Küçük dükkân ölçeği nedeniyle öğle tatili saatlerinde masalar çabuk dolar.",
+        "Ulaşım: Ortaköy meydanından Eski Bahçe Sokak içine girerken 2F kapısında.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "ort-koftecisi",
+      "placeId": "ChIJCyLvRgC3yhQRb8NLQGf7D6A",
+      "name": "Ortaköy Köftecisi",
+      "address": "Mecidiye, Eski Bahçe Sk. No:34, 34347 Beşiktaş/İstanbul",
+      "neighborhood": "Eski Bahçe Sk., Ortaköy",
+      "categoryId": "denemelisin",
+      "rating": 5,
+      "mapsUri": "https://maps.google.com/?cid=11533713591598039919",
+      "coordinates": {
+        "lat": 41.0498956,
+        "lng": 29.0251889
+      },
+      "description": "Eski Bahçe Sokak içinde porsiyon ızgara köfte, kaşarlı köfte ve fıstıklı hellimli sucuk çeşitlerini klasik piyaz ve Hayrabolu tatlısıyla tamamlayan temiz esnaf köftecisi.",
+      "whatToOrder": [
+        "Izgara Ortaköy Köfte Porsiyon",
+        "Kaşarlı Izgara Köfte",
+        "Fıstıklı Hellimli Sucuk Izgara"
+      ],
+      "menuFrom": [
+        "Ekmek Arası Izgara Köfte",
+        "Mercimek Çorbası",
+        "Acı Sos & Köz Biber"
+      ],
+      "alsoTry": [
+        "Tahinli Fasulye Piyazı, İçli Köfte & Hayrabolu Tatlısı — Esnaf köftecisi geleneğini tamamlayan piyaz ve peynirli şerbetli tatlı kapanışı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Eski Bahçe Sokak boyunca sade, temiz masalı esnaf dükkânı düzeni · Esnaf, mahalle çalışanları ve hızlı ama özenli köfte-piyaz öğünü arayanlar",
+        "Dezavantaj: Geleneksel öğle-akşam köftecisi düzeni sadedir; şık restoran ambiyansı sunmaz.",
+        "Ulaşım: Mecidiye Eski Bahçe Sokak No:34 üzerinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "ort-durumcu-eniste",
+      "placeId": "ChIJ-aaUoma3yhQRAx2guTToZmA",
+      "name": "Dürümcü Enişte",
+      "address": "Dereboyu Caddesi, Mecidiye, Teyyareci Fevzi Sk., 34347 Beşiktaş/İstanbul",
+      "neighborhood": "Teyyareci Fevzi Sk. / Dereboyu, Ortaköy",
+      "categoryId": "denemelisin",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=6946494788415790339",
+      "coordinates": {
+        "lat": 41.048807000000004,
+        "lng": 29.026345900000003
+      },
+      "description": "Dereboyu’ndan Teyyareci Fevzi Sokak’a saptığınızda taze zırh kıyması Adana dürümü, kuzu ciğer şişi ve dürüm öncesi masaya gelen sıcak meze ikramlarıyla sevilen semt ocağı.",
+      "whatToOrder": [
+        "Zırh Kıyması Adana Dürüm",
+        "Kuzu Ciğer Şiş Dürüm",
+        "Çöp Şiş Dürüm"
+      ],
+      "menuFrom": [
+        "Urfa Dürüm",
+        "Tavuk Şiş Dürüm",
+        "Açık Ayran"
+      ],
+      "alsoTry": [
+        "Acılı Ezme-Humus Başlangıcı & Sıcak Fıstıklı Katmer — Dürüm öncesi masaya gelen meze ikilisi ve Antep usulü tatlı kapanışı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Dereboyu ara sokağında samimi ocak önü masalar ve iç salon · Hızlı ama nitelikli akşam dürümü arayan bölge gençleri, çalışanlar ve gece müdavimleri",
+        "Dezavantaj: Geleneksel dürümcü konsepti olduğu için uzun soluklu ağır akşam yemeği ambiyansı arayanlara sade gelir.",
+        "Ulaşım: Dereboyu Caddesi’nden Teyyareci Fevzi Sokak girişinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "ort-tasfirin",
+      "placeId": "ChIJxw2HfWi3yhQRTsk1QcKUuxk",
+      "name": "Taşfırın Ortaköy",
+      "address": "Mecidiye, Vatman Sk. No:10/A, 34434 Beşiktaş/İstanbul",
+      "neighborhood": "Vatman Sk. / Mecidiye, Ortaköy",
+      "categoryId": "denemelisin",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=1854239233631701326",
+      "coordinates": {
+        "lat": 41.049465399999995,
+        "lng": 29.025479699999998
+      },
+      "description": "Ortaköy iç sokaklarındaki Vatman Sokak’ta odun ateşinde çıtır lahmacunları ve kuşbaşılı kaşarlı pideleriyle mahallenin kendi günlük taş fırın ihtiyacını sırtlayan adres.",
+      "whatToOrder": [
+        "Odun Ateşinde Taş Fırın Lahmacun",
+        "Kuşbaşılı Kaşarlı Taş Fırın Pide",
+        "Karışık Pide"
+      ],
+      "menuFrom": [
+        "Kavurmalı Kaşarlı Pide",
+        "Kıymalı Pide",
+        "Fırın Sütlaç"
+      ],
+      "alsoTry": [
+        "Sıcak Mercimek Çorbası & Bol Köpüklü Ayran — Meydan kalabalığının bir arka sokağındaki mahalle taş fırınında pide öncesi klasik başlangıç."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Taş fırın ocağını gören sıcak iç salon ve ara sokak masaları · Ortaköy meydanından uzak gerçek pide-lahmacun isteyen mahalle sakinleri",
+        "Dezavantaj: Geleneksel mahalle fırını atmosferinde olduğu için masa oturumu hızlı dönüşlüdür.",
+        "Ulaşım: Mecidiye Vatman Sokak No:10/A içinde, çarşı arkası sokaklarda.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "ort-kebapci-memet",
+      "placeId": "ChIJv2nHJ5S3yhQR6DRTXOuxPb4",
+      "name": "Kebapçı Memet",
+      "address": "Ortaköy, Dereboyu Cd. No:149 A, 34347 Beşiktaş/İstanbul",
+      "neighborhood": "Dereboyu Cd., Ortaköy",
+      "categoryId": "denemelisin",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=13708308465210045672",
+      "coordinates": {
+        "lat": 41.052648399999995,
+        "lng": 29.0235606
+      },
+      "description": "Dereboyu Caddesi üzerinde Şanlıurfa Birecik geleneğinden gelen haşhaşlı kebabıyla, patlıcan kebabı ve ince hamur lahmacunlarıyla Ortaköy’ün iç mahallesine seslenen köklü kebapçı.",
+      "whatToOrder": [
+        "Birecik Haşhaşlı Kebap",
+        "Patlıcanlı Kebap",
+        "Özel Taş Fırın Lahmacun"
+      ],
+      "menuFrom": [
+        "Zırh Adana Kebap",
+        "Kuzu Küşleme",
+        "Bostana Salatası"
+      ],
+      "alsoTry": [
+        "Kuzu Ciğer Şiş & Kızarmış İçli Köfte — Dereboyu hattındaki Birecik ocağının öne çıkan sakatat ve sıcak başlangıç ikilisi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Dereboyu Caddesi üzerinde iki katlı düzenli aile kebapçısı salonu · Birecik mutfağı seven Ortaköy ve Ulus sakinleri, hafta sonu aile sofraları",
+        "Dezavantaj: Dereboyu Caddesi akşam trafiği nedeniyle kapı önü park imkânı sınırlıdır.",
+        "Ulaşım: Ortaköy Dereboyu Caddesi No:149/A üzerinde, vadinin orta aksında.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "ort-anadolu-kumpir",
+      "placeId": "ChIJb1rN4ci3yhQRlEiqt4osAuQ",
+      "name": "Anadolu Kumpir",
+      "address": "Mecidiye, Mecidiye Köprüsü Sk., 34347 Beşiktaş/İstanbul",
+      "neighborhood": "Mecidiye Köprüsü Sk., Ortaköy",
+      "categoryId": "denemelisin",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=16429743364899489940",
+      "coordinates": {
+        "lat": 41.0481444,
+        "lng": 29.0268256
+      },
+      "description": "Ortaköy denince akla gelen kumpirciler sokağındaki onlarca büfe arasında bol tereyağı-kaşar karışımı, temiz garnitür tezgâhı ve istikrarlı müşteri memnuniyetiyle öne çıkan kumpir durağı.",
+      "whatToOrder": [
+        "Bol Garnitürlü Geleneksel Ortaköy Kumpiri",
+        "Tereyağlı & Kaşarlı Sade Fırın Kumpir",
+        "Köz Biberli & Zeytin Ezmeli Kumpir"
+      ],
+      "menuFrom": [
+        "Sosisli & Mısırlı Kumpir",
+        "Kısır & Mor Lahanalı Kumpir",
+        "Ayran / Şalgam"
+      ],
+      "alsoTry": [
+        "Rus Salatası, Haydari & Acuka Mezeli Kumpir Seçkisi — İri fırın patatesini isteğe göre kişiselleştiren günlük taze garnitür tezgahı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Ortaköy Kumpirciler Sokağı’nda al-götür pencere servisi (oturma alanı yok); sahil meydanında ayaküstü tüketim · Meydana gelen ziyaretçiler, akşam yürüyüşçüleri ve sokağın temiz kumpircisini arayan İstanbullular",
+        "Dezavantaj: Oturmalı bir restoran değildir; kumpiri alıp sahil banklarında yemek gerekir ve hafta sonu meydan kalabalığı yoğundur.",
+        "Ulaşım: Ortaköy Camii meydanına açılan Mecidiye Köprüsü Sokak içindeki kumpirciler sırasında.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "ort-ferdi-usta",
+      "placeId": "ChIJtbNqAsm3yhQR51BW0xcWEsw",
+      "name": "Konyalı Ferdi Usta Ortaköy",
+      "address": "Mecidiye, Muallim Naci Cd. No:25/A, 34347 Beşiktaş/İstanbul",
+      "neighborhood": "Muallim Naci Cd., Ortaköy",
+      "categoryId": "denemelisin",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=14704840024903799015",
+      "coordinates": {
+        "lat": 41.0485778,
+        "lng": 29.026103100000004
+      },
+      "description": "Konya’nın üç kuşaklık taş fırın ve bakır tencere geleneğini Ortaköy Muallim Naci Caddesi’ne taşıyan; ağır pişen Konya fırın kebabı, bıçakarası etli ekmek ve bamya çorbasıyla tanınan adres.",
+      "whatToOrder": [
+        "Konya Fırın Kebabı",
+        "Bıçakarası Etli Ekmek",
+        "Geleneksel Bamya Çorbası"
+      ],
+      "menuFrom": [
+        "Klasik Konya Etli Ekmeği",
+        "Tirit Kebabı",
+        "Yayık Ayranı"
+      ],
+      "alsoTry": [
+        "Mevlana Pidesi & Sac Arası Tatlısı — Muallim Naci Caddesi’ndeki üç kuşaklık Konya mutfağının taş fırın ve şerbetli tatlı klasikleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Muallim Naci Caddesi cephesinde iki katlı geniş aile salonu ve düzenli servis · Konya mutfağı müdavimleri, hafta sonu aile sofraları ve yüksek puanlı yerel buluşmalar",
+        "Dezavantaj: Çok yüksek günlük talep nedeniyle öğle ve akşam piklerinde kapıda bekleme olabiliyor.",
+        "Ulaşım: Ortaköy meydanından Kuruçeşme yönüne yürürken Muallim Naci Caddesi No:25/A’da."
+      ]
+    },
+    {
+      "id": "ort-kumrucu-adnan",
+      "placeId": "ChIJNUo4laK3yhQRY6TuIir2bPg",
+      "name": "Kumrucu Adnan'ın Yeri",
+      "address": "Mecidiye mahallesi, Ortaköy, Dereboyu Cd. no:23, 34347 Beşiktaş/İstanbul",
+      "neighborhood": "Dereboyu Cd., Ortaköy",
+      "categoryId": "denemelisin",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=17900953279726003299",
+      "coordinates": {
+        "lat": 41.049087199999995,
+        "lng": 29.0262317
+      },
+      "description": "Dereboyu Caddesi girişinde Sayas peynirli klasik İzmir kumrusu ve sıcak Ayvalık tostlarıyla özellikle akşam ve geç saatlerde pratik, sıcak sokak sandviçi arayanların uğradığı klasik büfe.",
+      "whatToOrder": [
+        "Sayas Peynirli İzmir Kumru Sandviç",
+        "Çift Kaşarlı & Sucuklu Sıcak Kumru",
+        "Ayvalık Tostu"
+      ],
+      "menuFrom": [
+        "Karışık Sandviç",
+        "Sosisli Sandviç",
+        "Taze Sıkma Meyve Suları"
+      ],
+      "alsoTry": [
+        "Yumurtalı Kumru & Parmak Patates Kızartması — Dereboyu Caddesi’nde geç saatlere uzanan sıcak büfe eşlikçileri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Dereboyu kenarında küçük büfe masaları ve hızlı kaldırım önü tabureleri · Gece dönüşü sıcak kumru isteyen gençler, sürücüler ve mahalle esnafı",
+        "Dezavantaj: Geleneksel sokak büfesi formatında olduğundan konforlu uzun oturum sunmaz.",
+        "Ulaşım: Dereboyu Caddesi No:23 üzerinde, sahil yolundan içeri girerken hemen solda.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "ort-park-fora",
+      "placeId": "ChIJqRtKcs23yhQRX4NAbI-GZ7Q",
+      "name": "Park Fora",
+      "address": "Ortaköy, Muallim Naci Cd. 54/A, 34347 Beşiktaş/İstanbul",
+      "neighborhood": "Muallim Naci Cd. / Cemil Topuzlu Parkı, Ortaköy",
+      "categoryId": "balik",
+      "rating": 4.1,
+      "mapsUri": "https://maps.google.com/?cid=12999506799982838623",
+      "coordinates": {
+        "lat": 41.054022499999995,
+        "lng": 29.0340054
+      },
+      "description": "1996’dan beri Ortaköy Cemil Topuzlu Parkı içinde Boğaz suyuna sıfır konumlanan; mevsiminde kalkan ve tuzda balığı kadar torik lakerdası, balık pastırması ve deniz mahsullü paella’sıyla semtin köklü balık kurumu.",
+      "whatToOrder": [
+        "Mevsimsel Tuzda veya Izgara Boğaz Balığı",
+        "Torik Lakerda & Balık Pastırması",
+        "Izgara Ahtapot & Taze Kalamar Tava"
+      ],
+      "menuFrom": [
+        "Deniz Mahsullü Linguine",
+        "Asma Yaprağında Sardalya",
+        "Günün Zeytinyağlı Mezeleri"
+      ],
+      "alsoTry": [
+        "Deniz Mahsullü Paella & Sıcak Fırın Helva — 1996’dan beri Cemil Topuzlu Parkı kıyısında korunan imza deniz mahsulü tabağı ve klasik helva kapanışı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Cemil Topuzlu Parkı yeşilliğinin önünde camlı Boğaz salonu ve deniz kenarı teras masaları · Köklü Boğaz balıkçısı deneyimi arayan aileler, iş davetleri ve yabancı misafirler",
+        "Dezavantaj: Lüks kıyı balıkçısı fiyatlaması yüksektir; yoğun dönemlerde servis hızında aksaklık ve yüksek hesap eleştirileri puanı 4.1 bandında tutmaktadır.",
+        "Ulaşım: Ortaköy’den Kuruçeşme’ye uzanan Muallim Naci Caddesi 54/A içinde Cemil Topuzlu Parkı girişinde.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "ort-istakozi",
+      "placeId": "ChIJFUbZDW63yhQROZEaMQixWbE",
+      "name": "İstakozi",
+      "address": "Mecidiye, Kaymakçı Sk. no:7, 34347 Beşiktaş/İstanbul",
+      "neighborhood": "Kaymakçı Sk. / Mecidiye, Ortaköy",
+      "categoryId": "balik",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=12779440066382172473",
+      "coordinates": {
+        "lat": 41.0482673,
+        "lng": 29.0258908
+      },
+      "description": "Ortaköy’ün iç sokağında klasik meze-rakı balıkçısından ayrılarak doğrudan fırında tereyağlı ıstakoz, baharatlı tencere karides-yengeç buğulama ve taze istiridye barına odaklanan kabuklu deniz ürünleri mutfağı.",
+      "whatToOrder": [
+        "Fırında Tereyağlı Istakoz",
+        "Tencerede Baharatlı Karides & Yengeç Buğulama",
+        "Dinamit Karides"
+      ],
+      "menuFrom": [
+        "Kral Yengeç Bacağı",
+        "Sarımsaklı Tereyağlı Midye",
+        "Deniz Mahsullü Makarna"
+      ],
+      "alsoTry": [
+        "Taze İstiridye & Karidesli Avokado Salatası — Ortaköy ara sokağındaki kabuklu deniz ürünleri barının soğuk ve ferah eşlikçileri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Kaymakçı Sokak içinde kabuklu akvaryumu eşliğinde şık modern deniz ürünleri salonu · Istakoz, yengeç ve taze istiridye arayan genç çiftler ve özel lezzet deneyimi isteyenler",
+        "Dezavantaj: İthal kabuklu deniz ürünleri segmentinde çalıştığı için fiyat bandı standart mahalle balıkçılarının üzerindedir.",
+        "Ulaşım: Mecidiye Kaymakçı Sokak No:7 adresinde, Dereboyu’na bir paralel sokakta.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "ort-dalyan-balik",
+      "placeId": "ChIJ_0Zer8m3yhQRQvs2sOreI_g",
+      "name": "Dalyan Balık Izgara",
+      "address": "Ortaköy, Tabağın Bahçesi Sk. 1 A, 34672 Beşiktaş/Üsküdar/İstanbul",
+      "neighborhood": "Tabağın Bahçesi Sk., Ortaköy",
+      "categoryId": "balik",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=17880380045151107906",
+      "coordinates": {
+        "lat": 41.0492371,
+        "lng": 29.0250725
+      },
+      "description": "Ortaköy arka sokaklarında yüksek fiyatlı lüks sahil restoranlarının alternatifini arayanlar için mevsiminde taze ızgara levrek, hamsi tava ve ekmek arası balık sunan mütevazı mahalle balıkçısı.",
+      "whatToOrder": [
+        "Mevsimsel Izgara Levrek & Çipura",
+        "Tava Hamsi & İstavrit",
+        "Ekmek Arası Izgara Uskumru"
+      ],
+      "menuFrom": [
+        "Izgara Somon",
+        "Kalamar Tava",
+        "Roka-Soğan Balık Salatası"
+      ],
+      "alsoTry": [
+        "Tereyağlı Karides Güveç & Günlük Balık Çorbası — Ortaköy ara sokağındaki samimi mahalle balıkçısının sıcak başlangıç ikilisi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Tabağın Bahçesi Sokak üzerinde sıcak esnaf balıkçısı düzeninde birkaç masa ve tezgah · Sade ve taze günlük mevsim balığı yemek isteyen Ortaköy mahalle sakinleri",
+        "Dezavantaj: Boğaz manzaralı büyük salon yerine mütevazı ara sokak balıkçısı konseptindedir.",
+        "Ulaşım: Ortaköy Tabağın Bahçesi Sokak No:1/A içinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    }
+  ],
+  "nearbyVenues": []
+}
