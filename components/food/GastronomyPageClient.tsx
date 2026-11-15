@@ -208,6 +208,18 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     headline: 'Göktürk, Eyüpsultan',
     vibe: 'İstanbul Caddesi, Arcadium ve Larus Palas hattındaki ekşi maya pizzacılardan smash burger dükkanlarına, üçüncü dalga kahvecilere ve odun ateşi ocakbaşlarına uzanan seçki',
   },
+  'asmalimescit-beyoglu': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Asmalımescit & Pera, Beyoğlu',
+    vibe: 'Tünel ile Galatasaray arasındaki köklü meyhanelerden şef mutfaklarına, şarap barlarından cezve kahvesi duraklarına uzanan seçki',
+  },
+  'taksim-beyoglu': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Taksim & İstiklal, Beyoğlu',
+    vibe: 'Balık Pazarı ve Nevizade sokaklarından Gümüşsuyu teraslarına, Talimhane kahve barlarından tarihî lokantalara uzanan seçki',
+  },
 };
 
 function formatLocationCategoryHeading(locative: string, categoryTitle?: string): string {
@@ -396,7 +408,7 @@ export function GastronomyPageClient({
                       Konum Seç
                     </div>
                     <div className="text-xs text-slate-500 font-medium truncate mt-0.5">
-                      Yeniköy · Göktürk · Balat · Çukurcuma · Etiler · Ortaköy · Akaretler · Bebek · Galata · Beşiktaş Çarşı · Karaköy · Cihangir · Nişantaşı · Üsküdar · Kuzguncuk · Çengelköy · Koşuyolu & Acıbadem · Kadıköy · Moda · Caddebostan · Suadiye · Bostancı · Antalya · Gaziantep · Kuşadası · Akyaka
+                      Taksim & İstiklal · Asmalımescit & Pera · Yeniköy · Göktürk · Balat · Çukurcuma · Etiler · Ortaköy · Akaretler · Bebek · Galata · Beşiktaş Çarşı · Karaköy · Cihangir · Nişantaşı · Üsküdar · Kuzguncuk · Çengelköy · Koşuyolu & Acıbadem · Kadıköy · Moda · Caddebostan · Suadiye · Bostancı · Antalya · Gaziantep · Kuşadası · Akyaka
                     </div>
                   </div>
                 </div>

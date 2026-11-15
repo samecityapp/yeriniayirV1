@@ -23,6 +23,8 @@ import cukurcumaSnapshotJson from './regions/istanbul-beyoglu-cukurcuma.json';
 import balatSnapshotJson from './regions/istanbul-fatih-balat.json';
 import yenikoySnapshotJson from './regions/istanbul-sariyer-yenikoy.json';
 import gokturkSnapshotJson from './regions/istanbul-eyupsultan-gokturk.json';
+import asmalimescitSnapshotJson from './regions/istanbul-beyoglu-asmalimescit.json';
+import taksimSnapshotJson from './regions/istanbul-beyoglu-taksim.json';
 import kusadasiSnapshotJson from './regions/aydin-kusadasi.json';
 import gaziantepSnapshotJson from './regions/gaziantep-merkez.json';
 import antalyaKaleiciSnapshotJson from './regions/antalya-kaleici.json';
@@ -57,6 +59,8 @@ const CUKURCUMA_SNAPSHOT = cukurcumaSnapshotJson as V3VerifiedRegionSnapshot;
 const BALAT_SNAPSHOT = balatSnapshotJson as V3VerifiedRegionSnapshot;
 const YENIKOY_SNAPSHOT = yenikoySnapshotJson as V3VerifiedRegionSnapshot;
 const GOKTURK_SNAPSHOT = gokturkSnapshotJson as V3VerifiedRegionSnapshot;
+const ASMALIMESCIT_SNAPSHOT = asmalimescitSnapshotJson as V3VerifiedRegionSnapshot;
+const TAKSIM_SNAPSHOT = taksimSnapshotJson as V3VerifiedRegionSnapshot;
 const KUSADASI_SNAPSHOT = kusadasiSnapshotJson as V3VerifiedRegionSnapshot;
 const GAZIANTEP_SNAPSHOT = gaziantepSnapshotJson as V3VerifiedRegionSnapshot;
 const ANTALYA_KALEICI_SNAPSHOT = antalyaKaleiciSnapshotJson as V3VerifiedRegionSnapshot;
@@ -90,6 +94,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   BALAT_SNAPSHOT,
   YENIKOY_SNAPSHOT,
   GOKTURK_SNAPSHOT,
+  ASMALIMESCIT_SNAPSHOT,
+  TAKSIM_SNAPSHOT,
   KUSADASI_SNAPSHOT,
   GAZIANTEP_SNAPSHOT,
   ANTALYA_KALEICI_SNAPSHOT,
@@ -229,6 +235,26 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'gokturk-merkez': GOKTURK_SNAPSHOT,
   'arcadium-gokturk': GOKTURK_SNAPSHOT,
   'larus-palas': GOKTURK_SNAPSHOT,
+  asmalimescit: ASMALIMESCIT_SNAPSHOT,
+  'asmalimescit-beyoglu': ASMALIMESCIT_SNAPSHOT,
+  'istanbul-beyoglu-asmalimescit': ASMALIMESCIT_SNAPSHOT,
+  beyoglu: ASMALIMESCIT_SNAPSHOT,
+  pera: ASMALIMESCIT_SNAPSHOT,
+  tunel: ASMALIMESCIT_SNAPSHOT,
+  mesrutiyet: ASMALIMESCIT_SNAPSHOT,
+  odakule: ASMALIMESCIT_SNAPSHOT,
+  tepebasi: ASMALIMESCIT_SNAPSHOT,
+  taksim: TAKSIM_SNAPSHOT,
+  'taksim-beyoglu': TAKSIM_SNAPSHOT,
+  'istanbul-beyoglu-taksim': TAKSIM_SNAPSHOT,
+  istiklal: TAKSIM_SNAPSHOT,
+  'istiklal-caddesi': TAKSIM_SNAPSHOT,
+  'taksim-meydani': TAKSIM_SNAPSHOT,
+  'cicek-pasaji': TAKSIM_SNAPSHOT,
+  nevizade: TAKSIM_SNAPSHOT,
+  'mis-sokagi': TAKSIM_SNAPSHOT,
+  talimhane: TAKSIM_SNAPSHOT,
+  gumussuyu: TAKSIM_SNAPSHOT,
   kusadasi: KUSADASI_SNAPSHOT,
   'kusadasi-aydin': KUSADASI_SNAPSHOT,
   'merkez-kusadasi-aydin': KUSADASI_SNAPSHOT,
@@ -294,21 +320,6 @@ export const V3_LOCATIONS: FoodLocation[] = [
   ...V3_ALL_PUBLISHED_SNAPSHOTS.map(toPublishedLocation),
 
   // SIRADAKİ DOĞRULAMA KUYRUĞU (İl > İlçe > Semt ayrıştırılmış)
-  {
-    id: 'asmalimescit-beyoglu',
-    level: 'semt',
-    city: 'İstanbul',
-    district: 'Beyoğlu',
-    neighborhood: 'Asmalımescit',
-    name: 'Asmalımescit',
-    slug: 'asmalimescit',
-    path: ['istanbul', 'beyoglu', 'asmalimescit'],
-    displayName: 'Asmalımescit, Beyoğlu, İstanbul',
-    locative: "Asmalımescit'te",
-    status: 'coming_soon',
-    aliases: ['Asmalımescit', 'Asmalimescit', 'Beyoğlu'],
-    scopeNote: 'İstanbul · Beyoğlu · Asmalımescit (V3 Doğrulama Sırasında)',
-  },
   {
     id: 'yalikavak-bodrum-mugla',
     level: 'semt',

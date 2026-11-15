@@ -186,6 +186,21 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'zsa zsa zsu',
   'blackjack pizza',
   'eleos',
+  'moc pera',
+  'ministry of coffee',
+  'noir pit',
+  'miss pizza',
+  "cecconi's",
+  'yesen burger',
+  'bambi cafe',
+  'saray muhallebicisi',
+  'bravo coffee roastery',
+  'twins coffee roasters',
+  "hero's pizza",
+  'mono burger',
+  'pera döner',
+  'pera doner',
+  'simit sarayi',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([
