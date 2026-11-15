@@ -2,8 +2,8 @@
   "schemaVersion": "3.4",
   "regionKey": "istanbul-beyoglu-taksim",
   "displayName": "Taksim & İstiklal, Beyoğlu, İstanbul",
-  "verifiedAt": "2026-11-15T15:04:40.531Z",
-  "selectedCount": 27,
+  "verifiedAt": "2026-11-15T15:50:01.939Z",
+  "selectedCount": 28,
   "rejectedControls": [
     {
       "id": "neg-taksim-changa",
@@ -58,7 +58,7 @@
     {
       "id": "neg-taksim-ancre-cihangir",
       "resolvedName": "ancre.istanbul specialty coffee",
-      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Şehit Muhtar/Katip Mustafa Çelebi/Kuloğlu/Hüseyinağa/Kocatepe/Gümüşsuyu/Ömer Avni/Kamer Hatun/Bülbül/Çukur/Sururi Mehmet Efendi/Taksim, adres: Cihangir, Kazancı Yokuşu Sok. 34A, 34433 Beyoğlu/İstanbul)"
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Şehit Muhtar/Katip Mustafa Çelebi/Kuloğlu/Hüseyinağa/Kocatepe/Gümüşsuyu/Ömer Avni/Kamer Hatun/Bülbül/Çukur/Sururi Mehmet Efendi/Taksim/Dudu Odaları, adres: Cihangir, Kazancı Yokuşu Sok. 34A, 34433 Beyoğlu/İstanbul)"
     },
     {
       "id": "neg-taksim-nevet-exclude",
@@ -68,7 +68,7 @@
     {
       "id": "neg-taksim-pilavci-asmalimescit",
       "resolvedName": "İSTİKLAL PİLAVCISI Halil Usta",
-      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Şehit Muhtar/Katip Mustafa Çelebi/Kuloğlu/Hüseyinağa/Kocatepe/Gümüşsuyu/Ömer Avni/Kamer Hatun/Bülbül/Çukur/Sururi Mehmet Efendi/Taksim, adres: Asmalı Mescit, Meşrutiyet Cd. No:5, 34000 Beyoğlu/İstanbul)"
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Şehit Muhtar/Katip Mustafa Çelebi/Kuloğlu/Hüseyinağa/Kocatepe/Gümüşsuyu/Ömer Avni/Kamer Hatun/Bülbül/Çukur/Sururi Mehmet Efendi/Taksim/Dudu Odaları, adres: Asmalı Mescit, Meşrutiyet Cd. No:5, 34000 Beyoğlu/İstanbul)"
     },
     {
       "id": "neg-taksim-esmer-cafe",
@@ -1168,6 +1168,89 @@
       "selectedForSnapshot": true
     },
     {
+      "id": "taksim-pano-wine-house",
+      "categoryId": "date",
+      "resolvedName": "Pano Wine House",
+      "branchName": "Hüseyinağa, Hamalbaşı Cd. No:12, 34435 Beyoğlu/İstanbul",
+      "placeId": "ChIJCwfwhsS3yhQRHfGHKdvO2vo",
+      "coordinates": {
+        "lat": 41.034424200000004,
+        "lng": 28.9764435
+      },
+      "rating": 4.2,
+      "userRatingCount": 922,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://panosarapevi.com/",
+      "mapsUri": "https://maps.google.com/?cid=18075987495094841629",
+      "recommendedPrimary": [
+        "Yerli Butik Şarap Kavı Eşleşmesi",
+        "Peynir & Şarküteri Tabağı",
+        "Kırmızı Şarap Soslu Dana"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Sangria & Mahzen Fıçı Şarabı",
+          "note": "Tarihî şaraphanenin imza fıçı seçkileri ve kadehte denemelik yerli üzüm çeşitleri.",
+          "proof": "panosarapevi.com ve İstanbul kültür-gastronomi rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî taş ve ahşap dokulu giriş katı ile alt kattaki loş mahzen masaları",
+        "crowdAndNoise": "Yüz yılı aşkın bir Pera mahzeninde şarap ve peynir eşliğinde sohbet etmek isteyenler",
+        "disadvantage": "Tarihî mahzen yapısı yer yer rutubetli ve loş olabilir; ayrıca bazı ziyaretçiler yüksek kalabalık saatlerinde servis temposunu ağır bulabilmektedir.",
+        "transit": "Hüseyinağa Hamalbaşı Caddesi No:12’de Balık Pazarı ile Galatasaray Lisesi aksı arasında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Pano Wine House",
+          "url": "https://maps.google.com/?cid=18075987495094841629",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Hüseyinağa Hamalbaşı Cd. No:12 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Pano Şarap Evi Resmi Sitesi",
+          "url": "https://panosarapevi.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "1898 kuruluş hikayesi ve güncel şarap-yemek menüsü doğrulandı."
+        },
+        {
+          "title": "The Quirky Cork — Tarihi Pera Şarap Evleri",
+          "url": "https://thequirkycork.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İstanbul’un 1898’den kalan en eski şaraphanesi ve yerli üzüm seçkisiyle detaylandırılıyor."
+        },
+        {
+          "title": "İstanbul.net.tr — Pano Şarap Evi",
+          "url": "https://istanbul.net.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Hamalbaşı Caddesi üzerindeki tarihî binası ve mahzen atmosferiyle kent hafızasında yer alıyor."
+        }
+      ],
+      "pros": [
+        "1898’den günümüze ayakta kalan eşsiz Pera şarap evi mirası",
+        "Geniş yerli şarap kavı ve mahzen dokusu"
+      ],
+      "cons": [
+        "Eski bina akustiğinde kalabalık saatlerde uğultu oluşması ve zaman zaman yavaşlayan servis"
+      ],
+      "uncertainties": [
+        "Kav stoğundaki butik şişe vintajları dönemsel olarak yenilenir."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
       "id": "taksim-tarihi-van-kahvalti-1978",
       "categoryId": "kahvalti",
       "resolvedName": "Tarihi Van Kahvaltı Evi 1978",
@@ -1872,79 +1955,86 @@
       "selectedForSnapshot": true
     },
     {
-      "id": "taksim-antakya-mutfagi",
+      "id": "taksim-tunc-balik",
       "categoryId": "denemelisin",
-      "resolvedName": "Antakya Mutfağı",
-      "branchName": "Katip Mustafa Çelebi, Küçük Parmakkapı Sk. No:9 D:4, 34433 Beyoğlu/İstanbul",
-      "placeId": "ChIJm_STCGS3yhQRix2nk9AuUSA",
+      "resolvedName": "Tunç Balık Beyoğlu",
+      "branchName": "Hüseyinağa, Dudu Odaları Sk. No:13, 34435 Beyoğlu/İstanbul",
+      "placeId": "ChIJqSwQiWC3yhQRBxW3RM4rsYE",
       "coordinates": {
-        "lat": 41.035092399999996,
-        "lng": 28.982750700000004
+        "lat": 41.0343636,
+        "lng": 28.977127399999997
       },
       "rating": 4.5,
-      "userRatingCount": 4269,
-      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "userRatingCount": 815,
+      "priceLevel": null,
       "serviceFlags": {
         "dineIn": null,
         "takeout": null,
         "outdoorSeating": null,
         "reservable": null
       },
-      "websiteUri": "https://antakyamutfagi.com/",
-      "mapsUri": "https://maps.google.com/?cid=2328693955692535179",
+      "websiteUri": "https://instagram.com/tuncbalik?igshid=MzRlODBiNWFlZA==",
+      "mapsUri": "https://maps.google.com/?cid=9345298866686596359",
       "recommendedPrimary": [
-        "Antakya Tepsi Kebabı",
-        "Zahter Salatası & Humus",
-        "Aşur & Tuzlu Yoğurtlu Yemekler"
+        "Torik Lakerda",
+        "Somon Füme & Somon Pastırma Sandviç",
+        "Çiroz & Ev Yapımı Tarama"
       ],
       "recommendedSecondary": [
         {
-          "name": "Hatay Künefesi & Kabak Tatlısı",
-          "note": "Kireçte bekletilmiş çıtır Antakya kabak tatlısı ve taze peynirli sıcak künefe.",
-          "proof": "antakyamutfagi.com ve şehir gastronomi rehberleri"
+          "name": "Karides & Füme Balık Meze Çeşitleri",
+          "note": "Soğuk vitrinde ağırlıkla porsiyonluk sunulan ahtapot carpaccio, karides salatası ve havyar çeşitleri.",
+          "proof": "Harbiyiyorum ve Aposto Balık Pazarı arşivi"
         }
       ],
       "suitability": {
-        "seating": "Apartman dairesinden dönüştürülmüş samimi ev sofrası hissiyatlı dördüncü kat salonu",
-        "crowdAndNoise": "İstiklal’in kalabalığını bir apartman kapısının arkasında bırakıp gerçek ev yemeği arayan meraklılar",
-        "disadvantage": "Sokak cephesinde dikkat çekici bir tabelası olmadığı için apartman girişini ve dördüncü katı bulmak ilk kez gidenler için biraz dikkat ister.",
-        "transit": "Katip Mustafa Çelebi Küçük Parmakkapı Sokak No:9 D:4’te İstiklal Caddesi’nden birkaç adım içeride."
+        "seating": "Al-götür ve ayaküstü paket satış tezgâhı; dükkânda oturmalı masa servisi bulunmaz",
+        "crowdAndNoise": "Çiçek Pasajı yanından Balık Pazarı’na girip lakerda, meze veya ayaküstü füme sandviç almak isteyen İstanbullular",
+        "disadvantage": "Oturma düzeni olmadığı için tüm lezzetler al-götür paket veya kapı önünde ayaküstü tadım şeklindedir.",
+        "transit": "Çiçek Pasajı’nın yan çıkışından girilen Balık Pazarı içi, Dudu Odaları Sokak No:13."
       },
       "verifiedAt": "2026-11-15",
       "sources": [
         {
-          "title": "Google Maps — Antakya Mutfağı",
-          "url": "https://maps.google.com/?cid=2328693955692535179",
+          "title": "Google Maps — Tunç Balık Beyoğlu",
+          "url": "https://maps.google.com/?cid=9345298866686596359",
           "date": "2026-10-20",
           "kind": "maps",
-          "note": "Katip Mustafa Çelebi Küçük Parmakkapı Sk. No:9 D:4 konumu ve operational durumu doğrulandı."
+          "note": "Hüseyinağa Dudu Odaları Sk. No:13 konumu ve operational durumu doğrulandı."
         },
         {
-          "title": "Antakya Mutfağı Resmi Sitesi",
-          "url": "https://antakyamutfagi.com/",
+          "title": "Tunç Balık Resmi Hesap (@tuncbalik)",
+          "url": "https://instagram.com/tuncbalik",
           "date": "2026-11-15",
           "kind": "operator",
-          "note": "Apartman katındaki geleneksel Hatay ev yemekleri ve yöresel ürün menüsü doğrulandı."
+          "note": "1959 kuruluşlu Balık Pazarı dükkânı ve meze/sandviç çeşitleri doğrulandı."
         },
         {
-          "title": "Gusto Picks & Dünyanın Bahçeleri — Gizli Hatay Mutfağı",
-          "url": "https://gustopicks.com/",
+          "title": "Harbiyiyorum & Aposto — Tunç Balık Beyoğlu",
+          "url": "https://harbiyiyorum.com/",
           "date": "2026-10-20",
           "kind": "editorial",
-          "note": "Tabelasız dördüncü kat konumu ve tuzlu yoğurt-tepsi kebabı gibi ev yapımı lezzetleriyle öneriliyor."
+          "note": "Torik lakerda, çiroz, somon füme-pastırma ve ayaküstü balık sandviçleri belgelenmiştir."
+        },
+        {
+          "title": "Oggusto & GrabLocals — Balık Pazarı Rotası",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1959’dan beri süren lakerda ve şarküteri ustalığıyla Beyoğlu Balık Pazarı klasikleri arasında yer alıyor."
         }
       ],
       "pros": [
-        "İstiklal ortasında apartman içinde saklı otantik Hatay ev yemekleri",
-        "Zahter, sürk ve tuzlu yoğurt gibi yöreye özgü malzemeler"
+        "1959’dan beri değişmeyen el işçiliğiyle torik lakerda ve füme balıklar",
+        "Hızlı al-götür ve ayaküstü füme sandviç seçeneği"
       ],
       "cons": [
-        "Dar apartman merdiveni ve yemek saatlerinde küçük salonun çabuk dolması"
+        "Küçük dükkân içi yalnızca tezgâh ve al-götür servisine uygun"
       ],
       "uncertainties": [
-        "Bazı yöresel tencere yemekleri günlük menüye göre değişebiliyor."
+        "Torik lakerda ve akya füme gibi ürünlerin mevcudiyeti mevsimsel av dönemine göre değişebilir."
       ],
-      "selectionScore": 85,
+      "selectionScore": 97,
       "selectedForSnapshot": true
     },
     {
@@ -2031,17 +2121,17 @@
       "selectedForSnapshot": true
     },
     {
-      "id": "taksim-pano-wine-house",
+      "id": "taksim-resat-balik",
       "categoryId": "denemelisin",
-      "resolvedName": "Pano Wine House",
-      "branchName": "Hüseyinağa, Hamalbaşı Cd. No:12, 34435 Beyoğlu/İstanbul",
-      "placeId": "ChIJCwfwhsS3yhQRHfGHKdvO2vo",
+      "resolvedName": "Reşat Balık Market",
+      "branchName": "Hüseyinağa, Sahne Sk. 8/B, 34433 Beyoğlu/İstanbul",
+      "placeId": "ChIJD2j1cti5yhQRqyMhf8gA4wY",
       "coordinates": {
-        "lat": 41.034424200000004,
-        "lng": 28.9764435
+        "lat": 41.034531099999995,
+        "lng": 28.9774241
       },
-      "rating": 4.2,
-      "userRatingCount": 922,
+      "rating": 4.5,
+      "userRatingCount": 823,
       "priceLevel": null,
       "serviceFlags": {
         "dineIn": null,
@@ -2049,68 +2139,68 @@
         "outdoorSeating": null,
         "reservable": null
       },
-      "websiteUri": "https://panosarapevi.com/",
-      "mapsUri": "https://maps.google.com/?cid=18075987495094841629",
+      "websiteUri": "http://www.resatbalik.com/",
+      "mapsUri": "https://maps.google.com/?cid=496241245067223979",
       "recommendedPrimary": [
-        "Yerli Butik Şarap Kavı Eşleşmesi",
-        "Peynir & Şarküteri Tabağı",
-        "Kırmızı Şarap Soslu Dana"
+        "Torik & Palamut Lakerda",
+        "Somon & Palamut Füme",
+        "Ev Yapımı Tarama & Çiroz"
       ],
       "recommendedSecondary": [
         {
-          "name": "Ev Yapımı Sangria & Mahzen Fıçı Şarabı",
-          "note": "Tarihî şaraphanenin imza fıçı seçkileri ve kadehte denemelik yerli üzüm çeşitleri.",
-          "proof": "panosarapevi.com ve İstanbul kültür-gastronomi rehberleri"
+          "name": "Salata & Salamura Deniz Mezeleri",
+          "note": "Soğuk vitrinde paketlenen uskumru çiroz, ahtapot ve balık pastırması çeşitleri.",
+          "proof": "resatbalik.com ve Oggusto Balık Pazarı rehberi"
         }
       ],
       "suitability": {
-        "seating": "Tarihî taş ve ahşap dokulu giriş katı ile alt kattaki loş mahzen masaları",
-        "crowdAndNoise": "Yüz yılı aşkın bir Pera mahzeninde şarap ve peynir eşliğinde sohbet etmek isteyenler",
-        "disadvantage": "Tarihî mahzen yapısı yer yer rutubetli ve loş olabilir; ayrıca bazı ziyaretçiler yüksek kalabalık saatlerinde servis temposunu ağır bulabilmektedir.",
-        "transit": "Hüseyinağa Hamalbaşı Caddesi No:12’de Balık Pazarı ile Galatasaray Lisesi aksı arasında."
+        "seating": "Al-götür paket satış ve tezgâh düzeni; dükkân içinde oturmalı masa servisi bulunmaz",
+        "crowdAndNoise": "Balık Pazarı’nda günlük taze balık veya eve lakerda-meze almak isteyen semt sakinleri ve gurme alışverişçiler",
+        "disadvantage": "Restoran değil tarihî bir balık marketi ve şarküteri tezgâhıdır; oturmalı masa servisi yerine paket ve al-götür alışverişe uygundur.",
+        "transit": "Çiçek Pasajı çıkışından Balık Pazarı çarşısına girildiğinde Sahne Sokak No:8/B köşesinde."
       },
       "verifiedAt": "2026-11-15",
       "sources": [
         {
-          "title": "Google Maps — Pano Wine House",
-          "url": "https://maps.google.com/?cid=18075987495094841629",
+          "title": "Google Maps — Reşat Balık Market",
+          "url": "https://maps.google.com/?cid=496241245067223979",
           "date": "2026-10-20",
           "kind": "maps",
-          "note": "Hüseyinağa Hamalbaşı Cd. No:12 konumu ve operational durumu doğrulandı."
+          "note": "Hüseyinağa Sahne Sk. No:8/B konumu ve operational durumu doğrulandı."
         },
         {
-          "title": "Pano Şarap Evi Resmi Sitesi",
-          "url": "https://panosarapevi.com/",
+          "title": "Reşat Balık Resmi Sitesi",
+          "url": "http://www.resatbalik.com/",
           "date": "2026-11-15",
           "kind": "operator",
-          "note": "1898 kuruluş hikayesi ve güncel şarap-yemek menüsü doğrulandı."
+          "note": "1941 kuruluş geçmişi, torik-palamut lakerda ve soğuk meze kataloğu doğrulandı."
         },
         {
-          "title": "The Quirky Cork — Tarihi Pera Şarap Evleri",
-          "url": "https://thequirkycork.com/",
+          "title": "Hürriyet & Oggusto — İstanbul Lakerda Durakları",
+          "url": "https://www.hurriyet.com.tr/",
           "date": "2026-10-20",
           "kind": "editorial",
-          "note": "İstanbul’un 1898’den kalan en eski şaraphanesi ve yerli üzüm seçkisiyle detaylandırılıyor."
+          "note": "Palamut ve torik lakerdalarıyla Beyoğlu Balık Pazarı’nın en köklü adreslerinden biri olarak anılıyor."
         },
         {
-          "title": "İstanbul.net.tr — Pano Şarap Evi",
-          "url": "https://istanbul.net.tr/",
+          "title": "Trendlis — Reşat Balık Market Beyoğlu",
+          "url": "https://www.trendlis.com/",
           "date": "2026-10-20",
           "kind": "editorial",
-          "note": "Hamalbaşı Caddesi üzerindeki tarihî binası ve mahzen atmosferiyle kent hafızasında yer alıyor."
+          "note": "1941’den günümüze uzanan aile tezgâhı ve günlük deniz ürünleri seçkisi detaylandırılıyor."
         }
       ],
       "pros": [
-        "1898’den günümüze ayakta kalan eşsiz Pera şarap evi mirası",
-        "Geniş yerli şarap kavı ve mahzen dokusu"
+        "1941’den bugüne Balık Pazarı içinde süren torik ve palamut lakerdası ustalığı",
+        "Tunç Balık ile birlikte çarşının tarihî deniz ürünü şarküteri mirası"
       ],
       "cons": [
-        "Eski bina akustiğinde kalabalık saatlerde uğultu oluşması ve zaman zaman yavaşlayan servis"
+        "Yalnızca paket ve al-götür satış yapması nedeniyle yerinde masa servisi sunmaması"
       ],
       "uncertainties": [
-        "Kav stoğundaki butik şişe vintajları dönemsel olarak yenilenir."
+        "Lakerda ve taze balık çeşitleri mevsime ve günlük hal gelişine göre değişir."
       ],
-      "selectionScore": 80,
+      "selectionScore": 97,
       "selectedForSnapshot": true
     },
     {

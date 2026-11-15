@@ -1057,7 +1057,7 @@ test('Asmalimescit-Pera and Taksim-Istiklal audit logs reject closed, chains, no
   if (nodeFs.existsSync(takAuditPath)) {
     const takAudit = JSON.parse(nodeFs.readFileSync(takAuditPath, 'utf8'));
     const takMap = new Map(takAudit.decisions.map((d) => [d.id, d]));
-    assert.equal(takAudit.acceptedCount, 27);
+    assert.equal(takAudit.acceptedCount, 28);
     assert.equal(takMap.get('neg-taksim-changa').accepted, false);
     assert.ok(takMap.get('neg-taksim-changa').reason.includes('not_operational'));
     for (const chainId of [
@@ -2742,7 +2742,7 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
       );
       const cats = p.getRegionCategories(disc.region.id);
       assert.equal(cats.length, 6, 'taksim must expose 6 categories');
-      assert.equal(f.venues.length, 27, 'taksim must expose 27 verified venues');
+      assert.equal(f.venues.length, 28, 'taksim must expose 28 verified venues');
       assert.ok(
         f.venues.every(
           (v) =>
@@ -2767,6 +2767,8 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
         'Tarihi Van Kahvaltı Evi 1978',
         'Lades Menemen',
         'Hacı Abdullah Lokantası',
+        'Tunç Balık Beyoğlu',
+        'Reşat Balık Market',
         'Zübeyir Ocakbaşı',
         'İnci Pastanesi',
       ]) {
