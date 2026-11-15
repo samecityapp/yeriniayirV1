@@ -92,7 +92,7 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     image: '/images/gastronomy/pizza.svg',
     badge: 'Doğrulanmış Seçki',
     headline: 'Lara, Antalya',
-    vibe: 'Şirinyalı, Fener ve Güzeloba hattında falez restoranları, odun fırını pizzacılar, gurme burgerciler ve taş fırın lahmacun durakları',
+    vibe: 'Eski Lara falezlerinden Şirinyalı, Yeşilbahçe, Fener, Çağlayan ve Güzeloba sokaklarına uzanan odun fırını pizzalar, yerel burgerler, nitelikli kahve ve deniz ürünleri',
   },
   'konyaalti-antalya': {
     image: '/images/gastronomy/coffee-pour-over.svg',
