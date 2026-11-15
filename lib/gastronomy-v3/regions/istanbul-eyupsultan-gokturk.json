@@ -1,0 +1,942 @@
+{
+  "schemaVersion": 3,
+  "verifiedAt": "2026-11-15T14:20:24.322Z",
+  "region": {
+    "id": "gokturk-eyupsultan",
+    "slug": "gokturk",
+    "city": "İstanbul",
+    "district": "Eyüpsultan",
+    "neighborhood": "Göktürk",
+    "officialQuarter": "Göktürk Merkez",
+    "displayName": "Göktürk, Eyüpsultan, İstanbul",
+    "locative": "Göktürk'te",
+    "path": [
+      "istanbul",
+      "eyupsultan",
+      "gokturk"
+    ],
+    "aliases": [
+      "Göktürk",
+      "Gokturk",
+      "Göktürk Merkez",
+      "Arcadium",
+      "Larus Palas",
+      "Kemer Country",
+      "Eyüpsultan"
+    ],
+    "scopeNote": "Göktürk Merkez Mahallesi sınırları içinde İstanbul Cd., Belediye Cd., Nazlı/Telekom/Çamlık sk., Arcadium ve Larus Palas aksını kapsar; Mithatpaşa ve Kemerburgaz Kent Ormanı hariçtir.",
+    "characterSubtitle": "Butik İtalyan fırınları, smash burgerciler, nitelikli üçüncü dalga kafeler ve çağdaş Anadolu lokantalarının bir arada kümelendiği Göktürk Merkez seçkisi.",
+    "center": {
+      "lat": 41.179,
+      "lng": 28.8865
+    },
+    "boundary": {
+      "bbox": {
+        "minLat": 41.175,
+        "maxLat": 41.1885,
+        "minLng": 28.8768,
+        "maxLng": 28.895
+      }
+    }
+  },
+  "categories": [
+    {
+      "id": "pizza",
+      "slug": "pizza",
+      "label": "Pizza",
+      "title": "Pizza",
+      "emoji": "🍕",
+      "isMustTry": false
+    },
+    {
+      "id": "hamburger",
+      "slug": "hamburger",
+      "label": "Hamburger",
+      "title": "Hamburger",
+      "emoji": "🍔",
+      "isMustTry": false
+    },
+    {
+      "id": "kahve",
+      "slug": "kahve",
+      "label": "Kahve",
+      "title": "Kahve",
+      "emoji": "☕",
+      "isMustTry": false
+    },
+    {
+      "id": "date",
+      "slug": "date-mekanlari",
+      "label": "Date",
+      "title": "Date Mekanları",
+      "emoji": "🍷",
+      "isMustTry": false
+    },
+    {
+      "id": "kahvalti",
+      "slug": "kahvalti",
+      "label": "Kahvaltı",
+      "title": "Kahvaltı",
+      "emoji": "🍳",
+      "isMustTry": false
+    },
+    {
+      "id": "denemelisin",
+      "slug": "denemelisin",
+      "label": "Denemelisin",
+      "title": "Mutlaka Denemelisin",
+      "emoji": "⭐",
+      "isMustTry": false
+    }
+  ],
+  "venues": [
+    {
+      "id": "gok-pizza-alto",
+      "placeId": "ChIJe8AAHi6zyhQR2hDZoSuSsS8",
+      "name": "Pizza Alto",
+      "address": "Göktürk Mah. İstanbul Cad, Neo Stüdyo Sitesi, Göktürk Merkez, Nazlı Sk. No: 3 Dükkan 3-B, 34077 Eyüpsultan/İstanbul",
+      "neighborhood": "Nazlı Sk., Göktürk",
+      "categoryId": "pizza",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=3436688706757005530",
+      "coordinates": {
+        "lat": 41.178427,
+        "lng": 28.886355
+      },
+      "description": "Nazlı Sokak’ta İtalyan 00 unu ve yetmiş iki saat fermantasyon tekniğiyle açılan hamurunu Valoriani odun fırınında pişiren tek şubeli Napolitan pizzacı.",
+      "whatToOrder": [
+        "Margherita Pizza",
+        "Diavola Pizza",
+        "Alto Pepperoni"
+      ],
+      "menuFrom": [
+        "Funghi Pizza",
+        "Salame Napoletano",
+        "Dört Peynirli Pizza"
+      ],
+      "alsoTry": [
+        "Taze Burrata & Kadeh İtalyan Şarabı — Odun fırını çıkışlı pizzaların yanına eklenen taze İtalyan peyniri ve akşam eşlikçisi şarap seçenekleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Neo Stüdyo Sitesi altı şık iç salon ve Nazlı Sokak önü dış masalar · Napolitan hamur tekniğine önem veren çiftler ve mahalle müdavimleri",
+        "Dezavantaj: İnce taban-kabarık kenarlı Napolitan stil klasik Amerikan hamuru arayanlara hafif gelebilir.",
+        "Ulaşım: Göktürk Merkez Nazlı Sokak Neo Stüdyo Sitesi No:3 Dükkan 3-B adresinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "gok-five-meals",
+      "placeId": "ChIJTQt67jKzyhQR9xwFpwTXp8M",
+      "name": "Five Meals",
+      "address": "Göktürk Mahallesi, Hayat Sokağı 15/B, 34077 Eyüpsultan/İstanbul",
+      "neighborhood": "Hayat Sk., Göktürk",
+      "categoryId": "pizza",
+      "rating": 5,
+      "mapsUri": "https://maps.google.com/?cid=14098473573488598263",
+      "coordinates": {
+        "lat": 41.1827593,
+        "lng": 28.8860353
+      },
+      "description": "Hayat Sokak’ta tek şubeli butik İtalyan mutfağı olarak ince ve hafif hamurlu pizzalarının yanında ev usulü taze makarnalarıyla öne çıkan mahalle restoranı.",
+      "whatToOrder": [
+        "İnce Hamur Margherita Pizza",
+        "Penne Arrabbiata",
+        "Taze Makarna Çeşitleri"
+      ],
+      "menuFrom": [
+        "Classic Burger",
+        "Fırın Başlangıçlar",
+        "İtalyan Pizza Seçkisi"
+      ],
+      "alsoTry": [
+        "Classic Burger & Başlangıç Tabakları — Pizza ve makarna dışında menüde sevilen sade burger alternatifi ve paylaşımlık sıcaklar."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Samimi iç salon düzeni ve Hayat Sokak tarafında sakin masa yerleşimi · Göktürk Merkez sakinleri ve akşam yemeğinde dingin İtalyan sofrası arayan küçük gruplar",
+        "Dezavantaj: Arka sokakta yer aldığı ve masa sayısı sınırlı olduğu için hafta sonu akşamları yer bulmak zorlaşabiliyor.",
+        "Ulaşım: Göktürk Mahallesi Hayat Sokağı No:15/B üzerinde Göktürk Metro durağına kısa yürüyüş mesafesinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "gok-pizza-red-hot",
+      "placeId": "ChIJYRq2MbmzyhQRsVTcPQtMWWk",
+      "name": "Pizza Red Hot",
+      "address": "Palms Recidence, Göktürk Merkez, Cumhuriyet Cd. No:2 D:F, 34077 Eyüpsultan/İstanbul",
+      "neighborhood": "Cumhuriyet Cd., Göktürk",
+      "categoryId": "pizza",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=7591182258075882673",
+      "coordinates": {
+        "lat": 41.176972899999996,
+        "lng": 28.8910169
+      },
+      "description": "Cumhuriyet Caddesi’nde doyurucu malzeme dengesiyle hazırlanan kaburgalı, roast beefli ve dört peynirli pizzalarıyla bilinen yerel Göktürk pizzacısı.",
+      "whatToOrder": [
+        "Kaburgalı Pizza",
+        "Roast Beef Pizza",
+        "Quattro Formaggi Pizza"
+      ],
+      "menuFrom": [
+        "Red Hot Pizza",
+        "Karışık Özel Pizza",
+        "Klasik Margherita"
+      ],
+      "alsoTry": [
+        "Red Hot Özel Soslu Dilimler — Markaya adını veren hafif acılı dokunuşla dengelenen fırın pizzaları ve yan sos eşlikleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Pratik iç oturma bölümü ve ağırlıklı hızlı servis düzeni · Akşamları evine sıcak pizza götüren bölge sakinleri ve hızlı öğün arayanlar",
+        "Dezavantaj: Uzun akşam yemeği veya şarap eşlikli masa servisinden çok hızlı yeme ve paket servis ritmine göre kurgulanmış.",
+        "Ulaşım: Göktürk Merkez Cumhuriyet Caddesi No:2 D:F (Palms Residence altı) konumunda.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "gok-nobaria",
+      "placeId": "ChIJh9SC0-yyyhQR_Jzmaw3jpYQ",
+      "name": "Nobaria",
+      "address": "Göktürk Merkez, Belediye Cd. No:25, 34077 Eyüpsultan/İstanbul",
+      "neighborhood": "Belediye Cd., Göktürk",
+      "categoryId": "pizza",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=9558295430948101372",
+      "coordinates": {
+        "lat": 41.180496399999996,
+        "lng": 28.883173700000004
+      },
+      "description": "Belediye Caddesi’ndeki geniş terası ve pop-art detaylarıyla öne çıkan, burrata ve tiftik etli özgün pizzalarıyla yüksek müdavim hacmine ulaşmış mekan.",
+      "whatToOrder": [
+        "Burrata Pizza",
+        "Tiftik Etli Pizza",
+        "Trüflü Funghi Pizza"
+      ],
+      "menuFrom": [
+        "Quattro Formaggi",
+        "Dolgulu Taze Makarnalar",
+        "Salata Seçenekleri"
+      ],
+      "alsoTry": [
+        "Kahve Eşlikçileri & Tatlı Atıştırmalıklar — Pizza servisi dışında terasta gün boyu tercih edilen kahve ve günlük tatlı tabakları."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Geniş sokak terası ve modern dekorasyonlu ferah iç salon · Arkadaş grupları, çocuklu aileler ve Belediye Caddesi boyunca buluşan semt sakinleri",
+        "Dezavantaj: Geniş kitleye hitap eden kalabalık bir bistro olduğu için hafta sonları gürültü seviyesi yükselebiliyor.",
+        "Ulaşım: Göktürk Merkez Belediye Caddesi No:25 üzerinde merkezi yaya hattında.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "gok-pascal-smash",
+      "placeId": "ChIJ2QF7ljuzyhQR2X3MGKDGPEw",
+      "name": "Pascal Smash Burger",
+      "address": "Göktürk Merkez, İstanbul Cd. Arcadium Çarşı No:D1/101, 34077 Eyüpsultan/İstanbul",
+      "neighborhood": "İstanbul Cd. · Arcadium, Göktürk",
+      "categoryId": "hamburger",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=5493484036398284249",
+      "coordinates": {
+        "lat": 41.177704299999995,
+        "lng": 28.8869716
+      },
+      "description": "Arcadium Çarşı’da tek şubesiyle yüksek ısıda kenarları çıtırlaştırılmış Oklahoma tarzı smash burgerleri, brioche ekmekleri ve kaşık patatesleriyle öne çıkan burgerci.",
+      "whatToOrder": [
+        "Pascal Burger",
+        "Truff Burger",
+        "Classic Cheeseburger"
+      ],
+      "menuFrom": [
+        "Smash Burger Menü",
+        "American Burger",
+        "Tavuk Tenders"
+      ],
+      "alsoTry": [
+        "Kaşık Patates & Mozzarella Sticks — Smash köftelerin yanına eşlik eden çıtır kaşık patates ve uzayan mozzarella çubukları."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Açık mutfak çevresinde modern tezgah ve Arcadium içi pratik masalar · Öğle arasından gece yarısına kadar smash burger tutkunları ve gençler",
+        "Dezavantaj: Açık mutfak nedeniyle yoğun sipariş saatlerinde ızgara kokusu ve kalabalık hissedilebiliyor.",
+        "Ulaşım: Göktürk Merkez İstanbul Caddesi Arcadium Çarşı No:D1/101 girişinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "gok-bonni",
+      "placeId": "ChIJy6NrED-zyhQRgTHn3hmkoq4",
+      "name": "Bonni",
+      "address": "Göktürk Merkez, Nazlı Sk. Country Life sitesi B blok No 1, 34000 Eyüpsultan/İstanbul",
+      "neighborhood": "Nazlı Sk., Göktürk",
+      "categoryId": "hamburger",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=12583800739847418241",
+      "coordinates": {
+        "lat": 41.1780669,
+        "lng": 28.8848495
+      },
+      "description": "İlk dükkanını Göktürk Nazlı Sokak’ta açan, pofuduk brioche ekmekleri, kalın sulu dana köfteleri ve ince dokunuşlu imza soslarıyla yüksek beğeni toplayan burgerci.",
+      "whatToOrder": [
+        "X Burger",
+        "Y Burger",
+        "S/Bonni Burger"
+      ],
+      "menuFrom": [
+        "Klasik Burger",
+        "Double Prime Burger",
+        "Trüf Parmesanlı Patates"
+      ],
+      "alsoTry": [
+        "Trüf Parmesanalı Patates Kızartması — Kalın burgerin yanında en çok sipariş edilen trüf yağı ve parmesan rendeli patates."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Country Life B Blok önünde sokak masaları ve şık kompakt iç alan · Gurme burger arayan mahalle sakinleri ve hafta sonu akşam kalabalığı",
+        "Dezavantaj: İnce smash yerine kalın ve sulu gurme köfte sevdiği için porsiyonlar hızlı acıktıran hafif atıştırmalık değildir; masa sayısı azdır.",
+        "Ulaşım: Göktürk Merkez Nazlı Sokak Country Life Sitesi B Blok No:1 altında.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "gok-martins",
+      "placeId": "ChIJ4UrATICzyhQRyYiOJIC3ua4",
+      "name": "Martins",
+      "address": "Göktürk Merkez, Belediye Cd. No:20 C, 34077 Eyüpsultan/İstanbul",
+      "neighborhood": "Belediye Cd., Göktürk",
+      "categoryId": "hamburger",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=12590295994287950025",
+      "coordinates": {
+        "lat": 41.179356399999996,
+        "lng": 28.886874900000002
+      },
+      "description": "Belediye Caddesi’nde tek şubesiyle yumuşak brioche ekmek arası karamelize soğanlı burgerleri, çıtır soğanlı Crunch çeşidi ve özel sosislisiyle sevilen yerel burgerci.",
+      "whatToOrder": [
+        "Original Burger",
+        "Crunch Burger",
+        "Martins Dog"
+      ],
+      "menuFrom": [
+        "Classic Burger",
+        "Hot Burger",
+        "Parmesanlı Patates"
+      ],
+      "alsoTry": [
+        "Baharatlı & Parmesanlı Patates — Kıtır soğanlı ve trüf soslu burgerlerin yanına eşlik eden özel baharat harmanlı patates."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Samimi dükkan içi tezgah masaları ve cadde önü tabureler · Belediye Caddesi yürüyüşçüleri, bölge gençleri ve metro çevresinden gelenler",
+        "Dezavantaj: Küçük ölçekli bir burgerci olduğu için geniş grup oturumlarına değil iki-üç kişilik hızlı buluşmalara uygundur.",
+        "Ulaşım: Göktürk Merkez Belediye Caddesi No:20/C üzerinde Göktürk Metro durağına yürüyerek üç dakika.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "gok-loke-and-sip",
+      "placeId": "ChIJZ2vNz8WzyhQRwejf0_1L4g0",
+      "name": "Løke & Sip",
+      "address": "Göktürk Merkez, Kirazlı Yolu Sk. No: 14 B, 34077 Eyüpsultan/İstanbul",
+      "neighborhood": "Kirazlı Yolu Sk., Göktürk",
+      "categoryId": "kahve",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=1000445620783147201",
+      "coordinates": {
+        "lat": 41.1807325,
+        "lng": 28.877683499999996
+      },
+      "description": "Kirazlı Yolu Sokak’ta İskandinav minimalizmini doğal ahşapla buluşturan, yumuşak içimli espresso bazlı kahveleri, matchası ve sakin okuma köşesiyle öne çıkan kafe.",
+      "whatToOrder": [
+        "Flat White",
+        "Iced Latte",
+        "Taze Filtre Kahve"
+      ],
+      "menuFrom": [
+        "Ceremonial Matcha",
+        "Americano",
+        "Cortado"
+      ],
+      "alsoTry": [
+        "Ev Yapımı Kurabiye & San Sebastian Cheesecake — Kahve servisinin yanında taze çıkan sade kurabiyeler ve kremamsı cheesecake dilimleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Doğal ahşap masalı ferah İskandinav iç mekan ve sakin sokak önü oturumu · Kitap okuyanlar, dizüstü bilgisayarıyla sessiz çalışanlar ve iki kişilik sakin kahve sohbetleri",
+        "Dezavantaj: Göktürk ana çarşısının biraz batısında yer aldığından Arcadium yürüyüş aksına göre hafif kenarda kalır.",
+        "Ulaşım: Göktürk Merkez Kirazlı Yolu Sokak No:14/B üzerinde İstanbul Caddesi batı ucuna yakın.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "gok-zeny-matcha",
+      "placeId": "ChIJ-6x-4bSzyhQRS33vKhDG16w",
+      "name": "Zeny Matcha & More",
+      "address": "GÖKTÜRK MERKEZ MAH. NAZLI SK. COUNTRY LIFE B-BLOK NO: 1 B, İÇ KAPI, Göktürk Merkez, NO: 1, 34077 Eyüpsultan/İstanbul",
+      "neighborhood": "Nazlı Sk. · Country Life, Göktürk",
+      "categoryId": "kahve",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=12454641067258510667",
+      "coordinates": {
+        "lat": 41.178120299999996,
+        "lng": 28.884985199999996
+      },
+      "description": "Nazlı Sokak Country Life’ta Japonya’dan getirilen yüksek sınıf ceremonial matchalarla hazırlanan özel reçeteleri ve espresso bazlı kahveleri buluşturan butik bar.",
+      "whatToOrder": [
+        "Yaban Mersinli Hindistan Cevizli Matcha",
+        "Klasik Matcha Latte",
+        "Flat White"
+      ],
+      "menuFrom": [
+        "Muzlu Kolajenli Matcha",
+        "Iced Latte",
+        "Americano"
+      ],
+      "alsoTry": [
+        "Matchalı Kurabiye & Mevsimsel Püreli Tarifler — Japon matcha tozuyla pişirilen kurabiyeler ve taze meyve püreli soğuk içecekler."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Minimalist tezgah alanı ve Country Life avlu-sokak önü masaları · Matcha kültürüne meraklı gençler, spor sonrası sağlıklı içecek arayanlar ve kahve severler",
+        "Dezavantaj: Klasik üçüncü dalga çekirdek kavurmacısı arayanlara menü matcha ağırlıklı gelebilir.",
+        "Ulaşım: Göktürk Merkez Nazlı Sokak Country Life B-Blok No:1/B girişinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "gok-picculina-coffee",
+      "placeId": "ChIJwyMG62izyhQRfLfQF3v2tis",
+      "name": "Picculina Coffee House",
+      "address": "Göktürk Merkez, İstanbul Cd. No:16, 34077 Eyüpsultan/İstanbul",
+      "neighborhood": "İstanbul Cd., Göktürk",
+      "categoryId": "kahve",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=3149975997933205372",
+      "coordinates": {
+        "lat": 41.1766167,
+        "lng": 28.8889189
+      },
+      "description": "İstanbul Caddesi’nde camla çevrili aydınlık kış bahçesi, evcil hayvan dostu düzeni ve sabahın ilk saatlerinden itibaren sunduğu özenli espresso kavrumlarıyla bilinen kahve evi.",
+      "whatToOrder": [
+        "Flat White",
+        "Filtre Kahve",
+        "Cortado"
+      ],
+      "menuFrom": [
+        "Latte",
+        "Türk Kahvesi",
+        "Zengin Çay Seçkisi"
+      ],
+      "alsoTry": [
+        "Tahinli Cheesecake & Ev Yapımı Kurabiyeler — Kahve eşlikçisi olarak müdavimlerin öne çıkardığı tahinli cheesecake ve günlük kurabiyeler."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Camlı kış bahçesi, sıcak iç köşe ve küçük dış teras masaları · Sabah köpeğini gezdiren semt sakinleri ve düzenli kahve müdavimleri",
+        "Dezavantaj: Büyük zincir kafelerdeki gibi geniş çalışma masası yerine butik oturma grupları bulunur.",
+        "Ulaşım: Göktürk Merkez İstanbul Caddesi No:16 üzerinde Neo Vista çevresinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "gok-early-bird-coffee",
+      "placeId": "ChIJwWKZxgmzyhQR-qVw2NRdoXU",
+      "name": "Early Bird Coffee Bar",
+      "address": "Larus Palas, Göktürk Merkez, Kayın Sk. No:2 D:2M, 34077 Eyüpsultan/İstanbul",
+      "neighborhood": "Kayın Sk. · Larus Palas, Göktürk",
+      "categoryId": "kahve",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=8476159142433695226",
+      "coordinates": {
+        "lat": 41.1792695,
+        "lng": 28.884756399999997
+      },
+      "description": "Larus Palas Kayın Sokak’ta günlük nitelikli kahve rutinine odaklanan, temiz espresso ekstraksiyonu ve yalın bar kurgusuyla öne çıkan kahve durağı.",
+      "whatToOrder": [
+        "Flat White",
+        "V60 Filtre Demleme",
+        "Iced Americano"
+      ],
+      "menuFrom": [
+        "Cortado",
+        "Cappuccino",
+        "Cold Brew"
+      ],
+      "alsoTry": [
+        "Günlük Fırın Kruvasan & Atıştırmalıklar — Sabah kahvesinin yanına eklenen sade kruvasan ve hafif kurabiye seçenekleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Larus Palas pasajı içi bar önü masaları ve sakin sokak cephesi oturumu · Sabah yürüyüşü çıkışı kahvesini alan semt sakinleri ve yakın ofis çalışanları",
+        "Dezavantaj: Büyük yemek menüsü veya uzun kahvaltı servisi yerine doğrudan kahve barı deneyimine odaklanır.",
+        "Ulaşım: Göktürk Merkez 2. Kayın Sokak Larus Palas No:2 D:2M adresinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "gok-lokanta-gokturk",
+      "placeId": "ChIJK2Rf1PqzyhQRMazwWZCBfgs",
+      "name": "Lokanta Göktürk",
+      "address": "Göktürk Merkez, İstanbul Cd. No:16 D:E, 34077 Eyüpsultan/İstanbul",
+      "neighborhood": "İstanbul Cd., Göktürk",
+      "categoryId": "date",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=828241838466968625",
+      "coordinates": {
+        "lat": 41.1767338,
+        "lng": 28.8886638
+      },
+      "description": "Şef Muhsin Ertürk liderliğinde yerel üretici ürünleriyle çağdaş Anadolu tabakları hazırlayan, açık mutfağı ve özenli kavıyla Göktürk’ün en rafine akşam yemeği adresi.",
+      "whatToOrder": [
+        "Zencefil Marine Karides",
+        "Yosuna Sarılı Midye Dolma",
+        "Mevsimsel Anadolu Ana Yemekleri"
+      ],
+      "menuFrom": [
+        "Humus Seçkisi",
+        "Şef Tadım Tabakları",
+        "Özel Kav Şarap Eşleşmeleri"
+      ],
+      "alsoTry": [
+        "Chef’s Table & Kav Seçkisi — Açık mutfak çevresinde mevsimsel değişen şef sunumları ve Anadolu bağlarından seçilmiş şarap listesi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Açık mutfak odaklı şık iç mekan, bar çevresi ve özenli akşam masaları · Özel akşam kutlamaları yapan çiftler ve İstanbul merkezden gelen gastronomi meraklıları",
+        "Dezavantaj: Gündelik hızlı akşam yemeğinden ziyade yüksek bütçeli ve önceden rezervasyon gerektiren planlı akşamlar içindir.",
+        "Ulaşım: Göktürk Merkez İstanbul Caddesi No:16 D:E adresinde merkezi yürüyüş aksında.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "gok-genji-gokturk",
+      "placeId": "ChIJExhnZsOzyhQRC1yBSADIZSY",
+      "name": "Genji Restaurant Göktürk",
+      "address": "Göktürk Merkez, İstanbul Cd. Bina No: 58 İç Kapı No: 117, 34077 Eyüpsultan/İstanbul",
+      "neighborhood": "İstanbul Cd., Göktürk",
+      "categoryId": "date",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=2766837449631030283",
+      "coordinates": {
+        "lat": 41.187129999999996,
+        "lng": 28.8775734
+      },
+      "description": "Şef Melih Berkay Gündüz imzasıyla yüz onu aşkın Asya ve Japon mutfağı lezzetini imza kokteyller ve yüksek enerjili akşam ambiyansıyla buluşturan date adresi.",
+      "whatToOrder": [
+        "Şef Özel Sushi Seçkisi",
+        "Taze Sashimi Tabağı",
+        "İmza Kokteyller"
+      ],
+      "menuFrom": [
+        "Special Roll Çeşitleri",
+        "Sıcak Asya Başlangıçları",
+        "Teppanyaki & Izgara"
+      ],
+      "alsoTry": [
+        "Bar & İmza Kokteyl Eşleşmeleri — Uzak Doğu lezzetleriyle uyumlu hazırlanan özel bar kokteylleri ve akşam müzik kurgusu."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Yaklaşık yüz kişilik şık iç salon, sushi bar ve loş akşam aydınlatması · Hafta sonu müzik ve kokteyl eşliğinde şık akşam yemeği planlayan çiftler",
+        "Dezavantaj: Akşam müzik ritmi yükseldiği için çok sessiz bir baş başa sohbet arayanlara temposu yüksek gelebilir; üst segment fiyatlıdır.",
+        "Ulaşım: Göktürk Merkez İstanbul Caddesi Bina No:58 İç Kapı No:117 üzerinde batı hattında.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "gok-vincotto",
+      "placeId": "ChIJ9dSCkuq6yhQR7mVvseRDIps",
+      "name": "Vincotto",
+      "address": "Göktürk Merkez, İstanbul Cd. No:14C, 34077 Eyüpsultan/İstanbul",
+      "neighborhood": "İstanbul Cd., Göktürk",
+      "categoryId": "date",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=11178571874595464686",
+      "coordinates": {
+        "lat": 41.176613200000006,
+        "lng": 28.8888218
+      },
+      "description": "İstanbul Caddesi’nde uzun yıllardır klasik İtalyan trattoria geleneğini yaşatan, loş şık iç salonu, geniş bahçe terası ve mantarlı risottosuyla öne çıkan köklü adres.",
+      "whatToOrder": [
+        "Mantarlı Risotto",
+        "El Yapımı Taze Makarna",
+        "Regina & Bianco Pizza"
+      ],
+      "menuFrom": [
+        "Lazanya",
+        "İnce Hamur Fırın Pizza",
+        "Şarap Seçkisi"
+      ],
+      "alsoTry": [
+        "Ev Yapımı Tiramisu — Klasik İtalyan akşam yemeğini tamamlayan kahve dengeli geleneksel tiramisu."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Rahat ve loş iç salon ile geniş bahçe-teras masaları · Yıllardır semtte yaşayan çiftler, aile kutlamaları ve klasik İtalyan mutfağı sevenler",
+        "Dezavantaj: Hafta sonu akşamları bahçe ve iç salon çok yoğun olduğundan rezervasyonsuz masa bulmak zor ve servis temposu yavaşlayabiliyor.",
+        "Ulaşım: Göktürk Merkez İstanbul Caddesi No:14/C üzerinde Filli Park ve Göktürk Metro yürüyüş mesafesinde."
+      ]
+    },
+    {
+      "id": "gok-la-mensa",
+      "placeId": "ChIJqXDBLEWzyhQRdTYslrdXaBw",
+      "name": "La Mensa Restaurant",
+      "address": "Göktürk Merkez, İstanbul Cd. Arcadium Life 2 No:26 T, 34077 Eyüpsultan/İstanbul",
+      "neighborhood": "İstanbul Cd. · Arcadium Life, Göktürk",
+      "categoryId": "date",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=2046982476650002037",
+      "coordinates": {
+        "lat": 41.177222,
+        "lng": 28.886364300000004
+      },
+      "description": "Arcadium Life 2’de zeytin ağaçlı bahçesi, sarmaşıklı tavan detayları, manda sütünden taze burratası ve fırın lazanyasıyla romantik İtalyan akşamlarına yakışan restoran.",
+      "whatToOrder": [
+        "Maydanoz Pestolu Burrata",
+        "Fırın Lazanya",
+        "Dana Carpaccio"
+      ],
+      "menuFrom": [
+        "Deniz Ürünlü Taze Makarna",
+        "Di Vitello Pizza",
+        "Arancini"
+      ],
+      "alsoTry": [
+        "Şef Kokteylleri & Izgara Kalamar — Zeytin ağaçlı bahçede akşam başlangıcı olarak paylaşılan antipasti tabakları ve bar kokteylleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Zeytin ağaçlarıyla çevrili örtülü bahçe terası ve kare örtülü şık iç salon · Sakin romantik akşam yemeği arayan çiftler ve zarif buluşmalar",
+        "Dezavantaj: Site içi çarşı aksında konumlandığından bahçe keyfi için önceden dış masa ayırtmak gerekiyor.",
+        "Ulaşım: Göktürk Merkez İstanbul Caddesi Arcadium Life 2 No:26/T içinde."
+      ]
+    },
+    {
+      "id": "gok-maykonun-mutfagi",
+      "placeId": "ChIJ_ZcFSe-yyhQRl2SeNz_GqZo",
+      "name": "Mayko'nun Mutfağı",
+      "address": "Göktürk Merkez, Çamlık Cd. No:21/A, 34077 Eyüpsultan/İstanbul",
+      "neighborhood": "Çamlık Cd., Göktürk",
+      "categoryId": "kahvalti",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=11144656727723369623",
+      "coordinates": {
+        "lat": 41.179289,
+        "lng": 28.893387999999998
+      },
+      "description": "Çamlık Caddesi’nde ev yapımı pişi, otlu omlet, kaşarlı menemen ve Boşnak böreğiyle semt sakinlerinin geleneksel kahvaltı buluşmaları için tercih ettiği samimi mahalle mutfağı.",
+      "whatToOrder": [
+        "Pişili Kahvaltı Tabağı",
+        "Boşnak Böreği",
+        "Otlu Peynirli Omlet"
+      ],
+      "menuFrom": [
+        "Kaşarlı Menemen",
+        "Kıymalı Yumurta",
+        "Ev Yapımı Reçel & Acuka"
+      ],
+      "alsoTry": [
+        "Türk & Balkan Ev Yemekleri — Öğleye doğru kahvaltının ardından günlük çıkan anne usulü tencere ve Balkan hamur işleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Ev sıcaklığında sade iç salon ve Çamlık Caddesi kenarı samimi masalar · Sabah kahvaltısına gelen mahalle sakinleri, aileler ve yerel kadın buluşmaları",
+        "Dezavantaj: Gösterişli otel brunch düzeninden ziyade samimi ev lokantası rahatlığında hizmet verir; yerler çabuk dolar.",
+        "Ulaşım: Göktürk Merkez Çamlık Caddesi No:21/A üzerinde metro istasyonunun doğu tarafında.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "gok-may-coffee-eatery",
+      "placeId": "ChIJc9w-9wazyhQRZRXPG3NXdQ4",
+      "name": "MAY Coffee Eatery",
+      "address": "Göktürk Merkez Mah. İstanbul Caddesi, Göktürk Merkez, Begonya Sokağı Gökmahal Sitesi No:29/8, 34077 Eyüpsultan/İstanbul",
+      "neighborhood": "Begonya Sk. · Gökmahal, Göktürk",
+      "categoryId": "kahvalti",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=1041835040705549669",
+      "coordinates": {
+        "lat": 41.178031,
+        "lng": 28.8865169
+      },
+      "description": "Gökmahal Begonya Sokak’ta sade modern iç tasarımıyla zengin brunch tabakları, istiridye mantarlı tuzlu kruvasanlar ve nitelikli kahveyi bir araya getiren eatery.",
+      "whatToOrder": [
+        "İstiridye Mantarlı Kruvasan",
+        "Brunch Tabakları",
+        "Kahvaltı & Salata Kaseleri"
+      ],
+      "menuFrom": [
+        "Sosisli Kruvasan",
+        "Matcha & Filtre Kahve",
+        "San Sebastian Cheesecake"
+      ],
+      "alsoTry": [
+        "May Smash Burger & Öğle Kaseleri — Brunch saatlerinden öğleye sarkan buluşmalarda tercih edilen burger ve doyurucu kaseler."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Ferah masa düzeni, çalışmaya uygun iç alan ve sakin site avlusu cephesi · Geç kahvaltı ve brunch yapan çiftler ile gündüz bilgisayarla çalışanlar",
+        "Dezavantaj: Göreli yeni ve küçük ölçekli bir eatery olduğu için hafta sonu kalabalığında servis süresi uzayabiliyor.",
+        "Ulaşım: Göktürk Merkez Begonya Sokak Gökmahal Sitesi No:29/8 adresinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "gok-alp-coffee-bakery",
+      "placeId": "ChIJB-PpAVyzyhQR_hrHXFlZVlE",
+      "name": "Alp Coffee & Bakery",
+      "address": "Göktürk Merkez, Telekom Sk. Arcadium İş Merkezi No:1, 34077 Eyüpsultan/İstanbul",
+      "neighborhood": "Telekom Sk. · Arcadium, Göktürk",
+      "categoryId": "kahvalti",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=5860970205412793086",
+      "coordinates": {
+        "lat": 41.177402799999996,
+        "lng": 28.886729900000002
+      },
+      "description": "Arcadium Telekom Sokak’ta ödüllü Fransız fırın-kafe mimarisi içinde taze kruvasanlar, ekşi mayalı ekmekler ve dengeli Alp Kahvaltı Kasesi sunan sabah durağı.",
+      "whatToOrder": [
+        "Alp Kahvaltı Kasesi",
+        "Tereyağlı Kruvasan Çeşitleri",
+        "Granola & Chia Puding"
+      ],
+      "menuFrom": [
+        "New York Roll Kruvasan",
+        "Ekşi Mayalı Ekmekler",
+        "Nitelikli Espresso"
+      ],
+      "alsoTry": [
+        "Glutensiz & Şekersiz Fırın Tatlıları — Balkabaklı cheesecake roll ve vişneli brownienin yanı sıra vegan ve rafine şekersiz seçenekler."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Lacivert-ahşap detaylı iki katlı butik iç mekan ve Telekom Sokak önü masalar · Sabah nitelikli kahvaltı tabağı ve taze kruvasan arayan semt sakinleri",
+        "Dezavantaj: Giriş kat oturumu kompakt olduğundan hafta sonu sabahları büyük gruplara dar gelebiliyor.",
+        "Ulaşım: Göktürk Merkez Telekom Sokak Arcadium İş Merkezi No:1 üzerinde merkezi konumda.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "gok-arcadium-kebapci",
+      "placeId": "ChIJB1zF8zazyhQRnjanJEkIoLc",
+      "name": "Arcadium Kebapçı",
+      "address": "Göktürk Merkez, Telekom Sk. No:1 D:F, 34077 Eyüpsultan/İstanbul yakınında, Göktürk Merkez, 34077 Eyüpsultan/İstanbul",
+      "neighborhood": "Telekom Sk. · Arcadium, Göktürk",
+      "categoryId": "denemelisin",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=13231584815455090334",
+      "coordinates": {
+        "lat": 41.1773284,
+        "lng": 28.886915
+      },
+      "description": "Göktürk’ün en yüksek hacimli köklü Anadolu kebapçısı olarak açık mutfağında hazırlanan Adana kebapları, taş fırın lahmacunu ve fıstıklı avokadolu Girit ezmesi gibi özgün mezeleriyle ayrışıyor.",
+      "whatToOrder": [
+        "Adana Kebap",
+        "Fıstıklı Avokadolu Girit Ezmesi",
+        "Taş Fırın Lahmacun"
+      ],
+      "menuFrom": [
+        "Kuzu Şiş & Ciğer",
+        "Siirt Kutelk & İçli Köfte",
+        "Vişneli Bostana"
+      ],
+      "alsoTry": [
+        "Kış Lahmacunu & Sıcak Humus — Başlangıç meze dolabından çıkan sıcak humus, muhammara, cercerez ve ince hamurlu fındık lahmacun."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Açık mutfak ve ocakbaşı bölümü, geniş modern salon ve VIP aile odaları · Aile akşamları, iş yemekleri ve Göktürk’ün klasik kebap durağını tercih eden büyük gruplar",
+        "Dezavantaj: Üst segment fiyatlandırmaya sahiptir ve hafta sonu akşamlarında kalabalık masa rezervasyonu gerektirir.",
+        "Ulaşım: Göktürk Merkez Telekom Sokak Arcadium Çarşı No:1/D:F adresinde.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "gok-kulup-ocakbasi",
+      "placeId": "ChIJwUIUqq-zyhQRkdWDUBP_a5U",
+      "name": "Kulüp Ocakbaşı",
+      "address": "Göktürk Merkez, Belediye Cd. No:13 D:12, 34077 Eyüpsultan/İstanbul",
+      "neighborhood": "Belediye Cd., Göktürk",
+      "categoryId": "denemelisin",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=10766979792579581329",
+      "coordinates": {
+        "lat": 41.1786636,
+        "lng": 28.8869096
+      },
+      "description": "Üç kadın girişimcinin farklı şehir mutfaklarından ilhamla Belediye Caddesi’nde kurduğu; köz etleri, tapas tarzı mevsimsel mezeleri, peynir tabakları ve süt helvasıyla ayrışan modern ocakbaşı.",
+      "whatToOrder": [
+        "Özel Marine Kebap Çeşitleri",
+        "Mevsimsel Meze & Tapas Seçkisi",
+        "Fırın Süt Helvası"
+      ],
+      "menuFrom": [
+        "Lahmacun & Pide Çeşitleri",
+        "Köz Ara Sıcaklar",
+        "Şarap & Bar Eşlikçileri"
+      ],
+      "alsoTry": [
+        "Peynir Tabakları & Fırın Süt Helvası — Klasik ocakbaşından farklı olarak akşam barıyla birleşen peynir eşlikleri ve kapanışta çok övülen süt helvası."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Nezih ocakbaşı barı, samimi iç masalar ve şık akşam ışıklandırması · Modern meyhane atmosferi arayan arkadaş grupları ve akşam çiftleri",
+        "Dezavantaj: Üst segment meze-ocakbaşı fiyatlandırmasına sahiptir ve cuma-cumartesi akşamları önceden yer ayırtmak gerekir.",
+        "Ulaşım: Göktürk Merkez Belediye Caddesi No:13 D:12 adresinde çarşı merkezinde.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "gok-huseyin-usta",
+      "placeId": "ChIJ9YTuxcCzyhQRDVab9qwc-ws",
+      "name": "Göktürk Hüseyin Usta",
+      "address": "Göktürk Merkez Mahallesi İstanbul Cad. Tan Sok, Göktürk Merkez, İnci Blok Kemer Corner Sit No:1/C, 34077 Eyüpsultan/İstanbul",
+      "neighborhood": "İstanbul Cd. · Tan Sk., Göktürk",
+      "categoryId": "denemelisin",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=863315282768909837",
+      "coordinates": {
+        "lat": 41.1793197,
+        "lng": 28.883060599999997
+      },
+      "description": "Tan Sokak Kemer Corner altında Antep sarımsaklı ve Urfa soğanlı lahmacunu, zırh kıyma kebapları ve beyran çorbasıyla mahallenin samimi esnaf-ocakbaşı durağı.",
+      "whatToOrder": [
+        "Antep Lahmacun",
+        "Urfa & Adana Kebap",
+        "Beyran Çorbası"
+      ],
+      "menuFrom": [
+        "Ali Nazik & Fıstıklı Kebap",
+        "Sarma Beyti",
+        "Kuşbaşılı Pide"
+      ],
+      "alsoTry": [
+        "Künefe & Kadayıf — Kebap sonrası sıcak fırından çıkan şerbetli Gaziantep tatlıları."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Kemer Corner altında sade, hızlı ve samimi iç-dış masa düzeni · Öğle esnafı, şipşak lahmacun yemek isteyen mahalle sakinleri ve aile paketleri",
+        "Dezavantaj: Gösterişli akşam restoranı konsepti yerine hızlı ve samimi esnaf lokantası-kebapçı rahatlığı sunar.",
+        "Ulaşım: Göktürk Merkez İstanbul Caddesi Tan Sokak Kemer Corner Sitesi İnci Blok No:1/C adresinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "gok-saritas-ocakbasi",
+      "placeId": "ChIJRTZSCgCzyhQRI41JwfqrDR4",
+      "name": "Sarıtaş Ocakbaşı",
+      "address": "Göktürk Merkez, İstanbul Cd. Arcadium Life Çarşı No: 26/v D:2 D:2, 34060 Eyüpsultan/İstanbul",
+      "neighborhood": "İstanbul Cd. · Arcadium Life, Göktürk",
+      "categoryId": "denemelisin",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=2165576089308073251",
+      "coordinates": {
+        "lat": 41.177332299999996,
+        "lng": 28.886642199999997
+      },
+      "description": "Arcadium Life Çarşı içinde Murat Sarıtaş yönetiminde zırh kıyması kebaplar, kuzu karski, küşleme ve pastırmalı sıcak humus gibi klasik ocakbaşı eşlikçileriyle öne çıkan mekan.",
+      "whatToOrder": [
+        "Kuzu Zırh Kebabı",
+        "Kuzu Karski & Küşleme",
+        "Pastırmalı Sıcak Humus"
+      ],
+      "menuFrom": [
+        "Patlıcanlı Kebap",
+        "Dana Lokum & Antrikot",
+        "Girit Ezme & Atom"
+      ],
+      "alsoTry": [
+        "Girit Ezme, Atom & Köpoğlu Mezeleri — Köz ateşinden gelen etlerin öncesinde masa açılışını yapan taze meze seçkisi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Ocakbaşı tezgahına bakan masalar ve çarşı içi şık oturma alanı · Kaliteli et ve geleneksel meze uyumu arayan müdavimler ile iş yemekleri",
+        "Dezavantaj: Üst segment fiyat düzeyindedir ve Arcadium Life içi masa yoğunluğu hafta sonları artar.",
+        "Ulaşım: Göktürk Merkez İstanbul Caddesi Arcadium Life Çarşı No:26/V D:2 adresinde.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "gok-sedat-bufe",
+      "placeId": "ChIJVQm4cWSzyhQR3vMoG6XByVA",
+      "name": "Sedat Göktürk Büfe",
+      "address": "Göktürk Merkez, Çamlık Cd. No:23, 34000 Eyüpsultan/İstanbul",
+      "neighborhood": "Çamlık Cd., Göktürk",
+      "categoryId": "denemelisin",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=5821396908222510046",
+      "coordinates": {
+        "lat": 41.179373999999996,
+        "lng": 28.893366
+      },
+      "description": "Çamlık Caddesi’nde gece geç saatlere dek açık kalan; Ayvalık tostu, kumru, Goralı sandviç ve yarım ekmek arası köftesiyle semtin vazgeçilmez sokak lezzetleri büfesi.",
+      "whatToOrder": [
+        "Ayvalık Tostu",
+        "Goralı Sandviç",
+        "Kumru Sandviç"
+      ],
+      "menuFrom": [
+        "Yarım Ekmek Arası Köfte",
+        "Cheeseburger",
+        "Tavuk Pilav"
+      ],
+      "alsoTry": [
+        "Klasik Büfe Burgerleri & Gece Tostları — Geç akşam atıştırmalıklarında öne çıkan klasik ıslak-kuru büfe burgeri ve double seçenekler."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Tipik büfe önü yüksek tabureler ve ayakta hızlı servis düzeni · Geç saatte acıkan semt sakinleri, öğrenciler ve ayaküstü hızlı tost arayanlar",
+        "Dezavantaj: Büfe düzeni gereği geniş oturma salonu bulunmaz; ayakta veya hızlı paket servis odaklıdır.",
+        "Ulaşım: Göktürk Merkez Çamlık Caddesi No:23 üzerinde metro durağına yürüyüş mesafesinde."
+      ]
+    },
+    {
+      "id": "gok-iksir-kebap",
+      "placeId": "ChIJ6--vMIuzyhQRPXv4rxiI9jA",
+      "name": "İksir Kebap",
+      "address": "Göktürk Merkez, Reyhani Sok No:1/1, 34077 Eyüpsultan/İstanbul",
+      "neighborhood": "Reyhani Sk., Göktürk",
+      "categoryId": "denemelisin",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=3528156997704252221",
+      "coordinates": {
+        "lat": 41.1780659,
+        "lng": 28.889482400000002
+      },
+      "description": "Reyhani Sokak’ta uzun yıllardır gerçek Adana ocakbaşı kültürünü koruyan, yağlıkara, kuzu küşleme, fırın beyti ve kendi özgün sunumu Sushi Kebap ile tanınan köklü kebapçı.",
+      "whatToOrder": [
+        "Adana Kebap",
+        "Yağlıkara",
+        "Sushi Kebap"
+      ],
+      "menuFrom": [
+        "Kuzu Küşleme & Pirzola",
+        "Fırın Beyti",
+        "İnce Lahmacun"
+      ],
+      "alsoTry": [
+        "Tablacı Salatası & Közde Soğan-Sarımsak — Adana sofrasının olmazsa olmazı nar ekşili tablacı salatası, içli köfte ve közlenmiş başlangıçlar."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Klasik ocakbaşı oturma düzeni ve Reyhani Sokak kenarı ferah masa alanı · Yıllardır lezzet çizgisini bilen düzenli aileler ve Adana kebap müdavimleri",
+        "Dezavantaj: Geleneksel ocakbaşı ritminde çalıştığı için yeni nesil şef meyhanesi gösterişi yerine doğrudan et ve mangal lezzetine odaklanır.",
+        "Ulaşım: Göktürk Merkez Reyhani Sokak No:1/1 üzerinde Göktürk Caddesi’ne bir dakika.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "gok-cheese-please",
+      "placeId": "ChIJk5NwZ12zyhQRqzOQDDtphs8",
+      "name": "Cheese Please Göktürk",
+      "address": "Göktürk merkez mah. 2, Göktürk Merkez, Kartal Sk. No:1/a, 34077 Eyüpsultan/İstanbul",
+      "neighborhood": "2. Kartal Sk., Göktürk",
+      "categoryId": "denemelisin",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=14953755315065074603",
+      "coordinates": {
+        "lat": 41.176919999999996,
+        "lng": 28.8878941
+      },
+      "description": "İkinci Kartal Sokak’taki açık mutfağında el açması taze makarnaları göz önünde devasa parmesan tekerleği içinde çevirerek servis eden özgün İtalyan lezzet atölyesi.",
+      "whatToOrder": [
+        "Teker Peynirde Fettuccine Alfredo",
+        "Quattro Formaggi Pizza",
+        "El Açması Makarna"
+      ],
+      "menuFrom": [
+        "Karidesli Pizza",
+        "Diavolo Pizza",
+        "Taze Şarküteri Tabakları"
+      ],
+      "alsoTry": [
+        "Beyaz Çikolatalı Brownie & Peynir Kutuları — Yemek sonrası sevilen beyaz çikolatalı brownie ile eve götürülebilen özel peynir-şarküteri kutuları."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Taze makarna tezgahını gören açık mutfaklı samimi salon · Çocuklu aileler, peynir-makarna tutkunları ve öğle/akşam hızlı gurme tabak arayanlar",
+        "Dezavantaj: Yoğun peynir kremalı makarnalar porsiyon olarak ağır gelebilir; küçük salon hafta sonları gürültülü olabiliyor.",
+        "Ulaşım: Göktürk Merkez 2. Kartal Sokak No:1/A üzerinde İstanbul Caddesi’nin hemen paralelinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    }
+  ],
+  "nearbyVenues": []
+}

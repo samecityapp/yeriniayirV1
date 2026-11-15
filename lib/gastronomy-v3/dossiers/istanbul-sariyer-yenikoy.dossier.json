@@ -1,0 +1,1544 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "istanbul-sariyer-yenikoy",
+  "displayName": "Yeniköy, Sarıyer, İstanbul",
+  "verifiedAt": "2026-11-15T14:20:24.277Z",
+  "selectedCount": 18,
+  "rejectedControls": [
+    {
+      "id": "ctrl-yen-vagabondos-closed",
+      "resolvedName": "Vagabondo's Pizzeria",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-yen-marcel-closed",
+      "resolvedName": "Marcel Patisserie",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-yen-juanvaldez-chain",
+      "resolvedName": "Juan Valdez Yeniköy",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-yen-kronotrop-chain",
+      "resolvedName": "Kronotrop Yeniköy",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-yen-caffenero-chain",
+      "resolvedName": "Caffe Nero Yeniköy",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-yen-whiteburger-chain",
+      "resolvedName": "White Burger By Serhat Doğramacı Yeniköy",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-yen-hopdaddy-chain",
+      "resolvedName": "HOPDADDY BURGER",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-yen-fiko-chain",
+      "resolvedName": "Fiko Yeniköy",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-yen-voi-chain",
+      "resolvedName": "VOI Yeniköy",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-yen-ioki-chain",
+      "resolvedName": "İoki Nau Yeniköy",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-yen-girandola-purity",
+      "resolvedName": "Girandola Gelato, Yeniköy",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-yen-emekmanti-below44",
+      "resolvedName": "Emek Mantı Evi / Yeniköy",
+      "reason": "below_quality_threshold:★3.5(1505)"
+    },
+    {
+      "id": "ctrl-yen-gazebo-below44",
+      "resolvedName": "Gazebo",
+      "reason": "below_quality_threshold:★4(1517)"
+    },
+    {
+      "id": "ctrl-yen-flamor-tarabya",
+      "resolvedName": "Flamor Yeniköy",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Yeniköy/Köybaşı/Kalender, adres: Tarabya, Atadan Sk. 22/A, 34457 Sarıyer/İstanbul)"
+    },
+    {
+      "id": "ctrl-yen-haga-istinye",
+      "resolvedName": "Haga Smash Burger",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Yeniköy/Köybaşı/Kalender, adres: İstinye, Dereboyu Sk. no:22/A, 34460 Sarıyer/İstanbul)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "yen-grea-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Grea Coffee Nations",
+      "branchName": "Yeniköy, Dirhem Sk, Yeniköy Merkez, Cami Pasajı No: 2, 34464 Sarıyer/İstanbul",
+      "placeId": "ChIJlR5ekATLyhQRN28im3kr3ZY",
+      "coordinates": {
+        "lat": 41.1217881,
+        "lng": 29.069567899999996
+      },
+      "rating": 4.6,
+      "userRatingCount": 195,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.greacoffee.com/",
+      "mapsUri": "https://maps.google.com/?cid=10870892876836007735",
+      "recommendedPrimary": [
+        "Pour Over / V60 Single Origin",
+        "Cortado",
+        "Purple Churchill (Blue Butterfly Çayı)"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Badem ve Antep Fıstık Unlu Pasta & Glutensiz Cookie",
+          "note": "Rafine şekersiz karabuğdaylı ve tahinli-ballı kurabiyelerle filtre kahve yanına günlük hazırlanan tatlılar.",
+          "proof": "greacoffee.com menüsü ve HangiMekan"
+        }
+      ],
+      "suitability": {
+        "seating": "Cami Pasajı içindeki taş zeminli iç atölye ve ağaçlı arka bahçe masaları; al-götür seçeneği de bulunur",
+        "crowdAndNoise": "Köybaşı kalabalığından pasaj içine çekilen nitelikli kahve müdavimleri ve bisikletçiler",
+        "disadvantage": "Pasaj içinde yer aldığı için ilk kez gelenler tabelayı kaçırabiliyor; bahçe masaları güneşli günlerde erken doluyor.",
+        "transit": "Köybaşı Caddesi Yeniköy Merkez Camii yanındaki Dirhem Sokak pasaj girişinden birkaç adımda."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Grea Coffee Nations",
+          "url": "https://maps.google.com/?cid=10870892876836007735",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Dirhem Sk. Cami Pasajı No:2 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Grea Coffee Nations Resmi Sitesi",
+          "url": "http://www.greacoffee.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Tekil Yeniköy kavurma atölyesi, single-origin çekirdek seçkisi, Purple Churchill ve unlu mamul menüsü doğrulandı."
+        },
+        {
+          "title": "Hoodtip — Grea Coffee Nations",
+          "url": "https://hoodtip.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Cami Pasajı arkasındaki saklı avlu ve yerinde kavurma profili doğrulandı."
+        },
+        {
+          "title": "HangiMekan — Grea Coffee Nations",
+          "url": "https://www.hangimekan.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Terrazzo zeminli avlu atmosferi ve soğuk demleme seçenekleri doğrulandı."
+        }
+      ],
+      "pros": [
+        "Kendi çekirdeklerini yerinde kavuran gerçek coffee_roastery kimliği",
+        "Pasaj arkasında ana cadde gürültüsünden yalıtılmış avlu ve gluten hassasiyeti dostu eşlikçiler"
+      ],
+      "cons": [
+        "Ana cadde cephesi olmadığı için ilk ziyarette giriş pasajı gözden kaçabiliyor"
+      ],
+      "uncertainties": [
+        "Mevsimsel çekirdek stokları haftalık kavurma programına göre değişebiliyor."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yen-yeni-bikoy",
+      "categoryId": "kahve",
+      "resolvedName": "yeni bi'köy",
+      "branchName": "Yeniköy, Yasemen Sk. no:8, 34464 Sarıyer/İstanbul",
+      "placeId": "ChIJZ1pK0TjLyhQRRRdY2jXQ3k4",
+      "coordinates": {
+        "lat": 41.1230778,
+        "lng": 29.0698173
+      },
+      "rating": 4.6,
+      "userRatingCount": 258,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5683208709503194949",
+      "recommendedPrimary": [
+        "Filtre Kahve & Cortado",
+        "Türk Kahvesi",
+        "Limonlu Cheesecake"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Limonlu Cheesecake & Hindi Fümeli Kruvasan",
+          "note": "Kahve eşliğinde taze dilim cheesecake veya hafif öğle atıştırmalığı olarak kruvasan sandviç öne çıkıyor.",
+          "proof": "Gurme Rehber ve Yemeksepeti menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Ev sıcaklığında iç salon ve yokuş üstünde kısmi Boğaz havası alan sakin arka bahçe",
+        "crowdAndNoise": "Bilgisayar ekranı olmadan sohbet etmek ve kitap okumak isteyen semt sakinleri",
+        "disadvantage": "Pazartesi günleri kapalı; menü politikası gereği dizüstü bilgisayarla uzun çalışma veya online toplantıya uygun değil.",
+        "transit": "Köybaşı Caddesi’nden Yasemen Sokak yokuşuna kısa yürüyüşle ulaşılır."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — yeni bi’köy",
+          "url": "https://maps.google.com/?cid=5683208709503194949",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yasemen Sk. No:8 Yeniköy konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Gurme Rehber — Yeni Bi’Köy",
+          "url": "https://gurmerehber.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Home-office yasağı, sakin bahçe düzeni, Pazartesi kapalı günü ve Türk kahvesi/cheesecake seçkisi doğrulandı."
+        },
+        {
+          "title": "The Magger — Yeni Bi’Köy",
+          "url": "https://www.themagger.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Semtin arka sokaklarında Ege kasabası atmosferi sunan kahve durağı olarak doğrulandı."
+        },
+        {
+          "title": "Yemeksepeti — yeni bi’köy Menü",
+          "url": "https://www.yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kruvasan sandviçler, kahve çeşitleri ve sıcak çikolata menüsü doğrulandı."
+        }
+      ],
+      "pros": [
+        "Zincirleşmeden sakinliğini korumak için çalışma/toplantı sınırı koyan özgün mahalle kafesi",
+        "Bahçe oturumu ve günlük taze tatlı uyumu"
+      ],
+      "cons": [
+        "Yokuş üzerinde yer alması ve Pazartesi kapalı olması planlama gerektiriyor"
+      ],
+      "uncertainties": [
+        "Tatlı çeşitliliği gün sonuna doğru tükenebiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yen-wolk-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Wolk Coffee",
+      "branchName": "Yeniköy, Köybaşı Cd. No:164, 34464 Sarıyer/İstanbul",
+      "placeId": "ChIJURuu9mrLyhQRdPAuYnNQOL0",
+      "coordinates": {
+        "lat": 41.117272299999996,
+        "lng": 29.0637615
+      },
+      "rating": 4.5,
+      "userRatingCount": 217,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.wolkcoffee.com/",
+      "mapsUri": "https://maps.google.com/?cid=13634736328362881140",
+      "recommendedPrimary": [
+        "Flat White & Cortado",
+        "Tuzlu Karamelli Yer Fıstıklı Tart",
+        "Gelibolu Sandviç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tuzlu Karamelli Yer Fıstıklı Tart & Bask Cheesecake",
+          "note": "Sütlü kahvelerin yanında yoğun dokulu el yapımı tart ve cheesecake dilimleri öne çıkıyor.",
+          "proof": "wolkcoffee.com ve ziyaretçi değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Köybaşı Caddesi üzerinde kompakt iç oturma düzeni, kaldırım kenarı birkaç masa ve al-götür tezgahı",
+        "crowdAndNoise": "Sabah sahil yürüyüşçüleri ve kahve-tatlı molası veren genç müdavimler",
+        "disadvantage": "İç mekan oturma kapasitesi sınırlı ve tatlı-kahve fiyat bandı ortalama mahalle kafelerinin üzerinde seyrediyor.",
+        "transit": "Köybaşı Caddesi No:164 üzerinde İETT Köybaşı durağına yürüme mesafesinde."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Wolk Coffee",
+          "url": "https://maps.google.com/?cid=13634736328362881140",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Köybaşı Cd. No:164 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Wolk Coffee Resmi Sitesi",
+          "url": "http://www.wolkcoffee.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Türkiye’deki tekil Yeniköy şubesi, kahve barı ve imza tart/sandviç menüsü doğrulandı."
+        },
+        {
+          "title": "Restaurant Guru — Wolk Coffee",
+          "url": "https://restaurantguru.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahve kalitesi ve el yapımı tatlı eşleşmesi puanlaması doğrulandı."
+        },
+        {
+          "title": "Migros Yemek — Wolk Coffee",
+          "url": "https://www.migros.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Aktif espresso, filtre kahve ve tatlı ürün kataloğu doğrulandı."
+        }
+      ],
+      "pros": [
+        "İstanbul’da yalnızca Yeniköy’de tek şube olarak hizmet veren istikrarlı specialty kahve barı",
+        "Sadece kahve değil güçlü tart ve doyurucu sandviç desteği"
+      ],
+      "cons": [
+        "Küçük oturma alanı yoğun saatlerde yalnız al-götür seçeneğini bırakabiliyor"
+      ],
+      "uncertainties": [
+        "Günlük sandviç ve pasta çeşitleri öğleden sonra erken bitebiliyor."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yen-sedona-concept",
+      "categoryId": "kahve",
+      "resolvedName": "Sedona Concept Bisiklet Cafe",
+      "branchName": "Yeniköy, Köybaşı Cd. No:136, 34464 Sarıyer/İstanbul",
+      "placeId": "ChIJSxLt02HKyhQRIDfIgAav67c",
+      "coordinates": {
+        "lat": 41.118228699999996,
+        "lng": 29.066168999999995
+      },
+      "rating": 4.4,
+      "userRatingCount": 529,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://sedonaconcept.com/",
+      "mapsUri": "https://maps.google.com/?cid=13252878770933085984",
+      "recommendedPrimary": [
+        "Pour Over & Double Espresso",
+        "Dana Kaburga & Cheddar Ekşi Maya Sandviç",
+        "Karabuğday & Siyez Tuzlu Atıştırmalıklar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Dana Kaburgalı Ekşi Maya Sandviç & Siyez Tuzlular",
+          "note": "Sabah Boğaz sürüşü sonrası kahveyle eşleşen doyurucu sıcak ve soğuk sandviçler.",
+          "proof": "sedonaconcept.com ve TheMagger seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Yüksek tavanlı endüstriyel mağaza-kafe içi, bisiklet park alanı ve cadde önü oturum",
+        "crowdAndNoise": "Sabah erken saatlerde İstanbul Boğaz hattında pedallayan sporcular ve aktif mahalle sakinleri",
+        "disadvantage": "Hafta sonu sabahları bisiklet gruplarının aynı anda duraklamasıyla kısa süreli yoğunluk ve gürültü oluşuyor.",
+        "transit": "Köybaşı Caddesi No:136 üzerinde sahil bisiklet yolunun hemen karşısında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Sedona Concept Bisiklet Cafe",
+          "url": "https://maps.google.com/?cid=13252878770933085984",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Köybaşı Cd. No:136 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Sedona Concept Resmi Sitesi",
+          "url": "http://sedonaconcept.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Aslı Bisiklet bünyesindeki tekil konsept kafe, Grea kavrumu ve sağlıklı sandviç menüsü doğrulandı."
+        },
+        {
+          "title": "The Magger — Sedona Concept",
+          "url": "https://www.themagger.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İstanbul’daki bisiklet-kafe kültürünün Yeniköy temsilcisi olarak doğrulandı."
+        },
+        {
+          "title": "HangiMekan — Sedona Concept",
+          "url": "https://www.hangimekan.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Nitelikli kahve ve ekşi mayalı sandviç seçenekleri doğrulandı."
+        }
+      ],
+      "pros": [
+        "Bisiklet park ve bakım altyapısını nitelikli kahve barıyla bütünleştiren benzersiz konsept",
+        "Kendi grubuna ait taze Grea kavrumu çekirdek tedariki"
+      ],
+      "cons": [
+        "Hafta sonu sabah sürüş saatlerinde tezgah önü hızla kalabalıklaşabiliyor"
+      ],
+      "uncertainties": [
+        "Etkinlik ve grup buluşması günlerinde oturma düzeni kısmen mağaza etkinliğine ayrılabiliyor."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yen-araka",
+      "categoryId": "date",
+      "resolvedName": "Araka",
+      "branchName": "Yeniköy, Kapalı Bakkal Sk. No:8, 34464 Sarıyer/İstanbul",
+      "placeId": "ChIJ8yRKQxPLyhQRQx-2zdPdWa0",
+      "coordinates": {
+        "lat": 41.117117799999995,
+        "lng": 29.063109299999997
+      },
+      "rating": 4.2,
+      "userRatingCount": 349,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://araka.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=12491258943247884099",
+      "recommendedPrimary": [
+        "Ayvalı Kereviz Carpaccio",
+        "Salatalıklı Çipura Ceviche",
+        "Siyah Sarımsaklı Dana Kaburga"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bademli İncir Tatlısı & Yerli Doğal Şarap Seçkisi",
+          "note": "Ot ve asidite odaklı tabakları dengeleyen mevsim meyveli kapanış ve küçük üretici şişeleri.",
+          "proof": "araka.com.tr ve OGGUSTO incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Kapalı Bakkal Sokak’ta iki katlı ahşap köy evi salonu ve ağaçlar altındaki samimi arka teras",
+        "crowdAndNoise": "Özel akşam kutlaması yapan çiftler ve gastronomi meraklısı küçük masalar",
+        "disadvantage": "Porsiyonlar paylaşım boyutunda küçüktür, şarap dahil toplam hesap yüksek bandadır ve ağır et/klasik kebap arayanlara asidik bitki profili uymayabilir.",
+        "transit": "Köybaşı Caddesi’nden Kapalı Bakkal Sokak No:8’e yürüyerek ulaşılır; önceden rezervasyon gerekir."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Araka",
+          "url": "https://maps.google.com/?cid=12491258943247884099",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kapalı Bakkal Sk. No:8 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Araka Resmi Sitesi",
+          "url": "https://araka.com.tr/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Şef Zeynep Pınar Taşdemir liderliğindeki tekil şef restoranı ve mevsimsel ot/sebze felsefesi doğrulandı."
+        },
+        {
+          "title": "Michelin Guide — Araka",
+          "url": "https://guide.michelin.com",
+          "date": "2026-10-20",
+          "kind": "award",
+          "note": "1 Michelin Yıldızı tescili ile uluslararası gastronomi otoritesi doğrulandı."
+        },
+        {
+          "title": "Gault & Millau Türkiye — Araka",
+          "url": "https://gault-millau.com.tr",
+          "date": "2026-10-20",
+          "kind": "award",
+          "note": "Yüksek şef mutfağı derecelendirmesi ve yerel üretici odağı doğrulandı."
+        },
+        {
+          "title": "OGGUSTO — Araka Yeniköy",
+          "url": "https://www.oggusto.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ayvalı kereviz carpaccio, siyah sarımsaklı kaburga ve bademli incir tatlısı doğrulandı."
+        }
+      ],
+      "pros": [
+        "Michelin 1 Yıldız ve Gault & Millau dereceli, tamamen kendine has mevsimsel ot/sebze kimliği",
+        "Ana cadde gürültüsünden kopuk, ağaçlı teras atmosferi"
+      ],
+      "cons": [
+        "Paylaşımlı küçük tabaklara kıyasla yüksek fiyat algısı ve sınırlı şarap listesi",
+        "Ekşi/asidik ve otsu tat profili geleneksel damak tadına uzak kalabiliyor"
+      ],
+      "uncertainties": [
+        "Menü hasada göre sık değiştiği için imza tabakların varlığı mevsime bağlıdır."
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yen-lokanta-limu",
+      "categoryId": "date",
+      "resolvedName": "Lokanta Limu",
+      "branchName": "Yeniköy, Köybaşı Cd. No:158 D:B, 34464 Sarıyer/İstanbul",
+      "placeId": "ChIJK3ahJj3LyhQRS7tqPMkVGdo",
+      "coordinates": {
+        "lat": 41.1175521,
+        "lng": 29.0640924
+      },
+      "rating": 4.7,
+      "userRatingCount": 354,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.lokantalimu.com/",
+      "mapsUri": "https://maps.google.com/?cid=15715616328732293963",
+      "recommendedPrimary": [
+        "Beş Dakikalık Kum Saati Yaprak Ciğer",
+        "Ekşi Maya Köpoğlu & Kargı Tulumlu Domates Salatası",
+        "Acem Kebabı / Acem Pilavı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yoğurt Dondurmalı Çıtır Kabak & Acem Pilavı",
+          "note": "Mezeler sonrası ana yemek ve tatlı kapanışında klasik meyhane çizgisinin dışına çıkan imzalar.",
+          "proof": "lokantalimu.com ve OGGUSTO"
+        }
+      ],
+      "suitability": {
+        "seating": "Köybaşı Caddesi üzerinde özenli loş aydınlatmalı küçük lokanta salonu ve kapı önü masaları",
+        "crowdAndNoise": "Uzun sohbetli akşam yemeği arayan çiftler ve rafine meze-rakı eşleşmesi seven gruplar",
+        "disadvantage": "Mekan hacmi kompakt olduğu için erken akşam saatlerinde rezervasyonsuz yer bulmak güç; yemek hızı kalabalık akşamlarda yavaşlayabiliyor.",
+        "transit": "Köybaşı Caddesi No:158/B adresinde Yeniköy merkez otobüs duraklarına birkaç adım mesafede."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Lokanta Limu",
+          "url": "https://maps.google.com/?cid=15715616328732293963",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Köybaşı Cd. No:158/B konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Lokanta Limu Resmi Sitesi",
+          "url": "https://www.lokantalimu.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Kurucu ortaklar ve çağdaş meyhane menü yapısı doğrulandı."
+        },
+        {
+          "title": "Michelin Guide — Lokanta Limu",
+          "url": "https://guide.michelin.com",
+          "date": "2026-10-20",
+          "kind": "award",
+          "note": "İstanbul rehber seçkisi ve rafine meyhane mutfağı tescili doğrulandı."
+        },
+        {
+          "title": "Time Out İstanbul & OGGUSTO",
+          "url": "https://www.oggusto.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kum saatli yaprak ciğer, ekşi maya köpoğlu, çakır lakerda ve Acem pilavı doğrulandı."
+        }
+      ],
+      "pros": [
+        "Fars ve Anadolu mutfağını klasik meyhane formatında ince işçilikle buluşturan özgün reçeteler",
+        "Hem yüksek puanlı hem de Michelin rehber seçkisinde yer alan güçlü yemek tutarlılığı"
+      ],
+      "cons": [
+        "Küçük salon nedeniyle akşam masaları sıkışık hissedilebiliyor ve rezervasyon şart"
+      ],
+      "uncertainties": [
+        "Bazı özel mezeler günlük mutfak hazırlığına göre tükenebiliyor."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yen-apartiman",
+      "categoryId": "date",
+      "resolvedName": "Apartıman Yeniköy",
+      "branchName": "Yeniköy, Köybaşı Cd. No:153, 34464 Sarıyer/İstanbul",
+      "placeId": "ChIJB8yBhGHKyhQRIEJP93-z-Ks",
+      "coordinates": {
+        "lat": 41.117016,
+        "lng": 29.0639915
+      },
+      "rating": 4.4,
+      "userRatingCount": 866,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://reservation.google.apartimanyenikoy.com/",
+      "mapsUri": "https://maps.google.com/?cid=12391851736901304864",
+      "recommendedPrimary": [
+        "Kokoreç Suyunda Pişen Kuzu Etli Arpa Şehriye",
+        "Pekmezli Patlıcan",
+        "Ahududu ile Kürlenmiş Somon Gravlax"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Apartıman Tatlısı & İmza Kokteyller",
+          "note": "Şömineli iç salon veya yemyeşil bahçede akşam yemeğini tamamlayan tatlı ve bar eşleşmeleri.",
+          "proof": "TheMagger ve Gurme Rehber"
+        }
+      ],
+      "suitability": {
+        "seating": "Şömineli sıcak apartman salonu ve ağaçlar içindeki arka bahçe terası",
+        "crowdAndNoise": "İlk buluşma veya özel kutlama için şık ama kasıntısız bistro arayan çiftler",
+        "disadvantage": "Bahçe masaları yoğun sezon akşamlarında günler öncesinden doluyor; fiyat seviyesi lüks bistro skalasında.",
+        "transit": "Köybaşı Caddesi No:153 üzerinde sahile paralel ana aks üzerinde konumlanır."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Apartıman Yeniköy",
+          "url": "https://maps.google.com/?cid=12391851736901304864",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Köybaşı Cd. No:153 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Apartıman Yeniköy Rezervasyon",
+          "url": "http://reservation.google.apartimanyenikoy.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Resmi rezervasyon ve tekil Yeniköy işletme kaydı doğrulandı."
+        },
+        {
+          "title": "Michelin Guide — Apartıman Yeniköy",
+          "url": "https://guide.michelin.com",
+          "date": "2026-10-20",
+          "kind": "award",
+          "note": "Bib Gourmand / seçki varlığı ve mevsimsel Anadolu bistro çizgisi doğrulandı."
+        },
+        {
+          "title": "The Magger & Time Out İstanbul",
+          "url": "https://www.themagger.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kokoreç suyunda arpa şehriye, pekmezli patlıcan ve arka bahçe atmosferi doğrulandı."
+        }
+      ],
+      "pros": [
+        "Hem kışın şömineli iç mekanda hem yazın arka bahçede dengeli akşam ambiyansı",
+        "Uzun yıllardır semt karakterini koruyan özgün menü"
+      ],
+      "cons": [
+        "Popüler hafta sonu akşamlarında erken rezervasyon olmadan yer bulmak zor"
+      ],
+      "uncertainties": [
+        "Mevsim değişimlerinde ana yemek ve tatlı kalemleri yenilenebiliyor."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yen-bramble-cafe",
+      "categoryId": "kahvalti",
+      "resolvedName": "Bramble Cafe Yeniköy",
+      "branchName": "Yeniköy mahallesi Köybaşı Cd, Yeniköy, Valide Çeşme Sk. Merkez Camii Pasajı No:1 İç Kapı No:1, 34464 Sarıyer/İstanbul",
+      "placeId": "ChIJOyEfKSzLyhQRbD3stthRIhs",
+      "coordinates": {
+        "lat": 41.1218211,
+        "lng": 29.069542300000002
+      },
+      "rating": 4.6,
+      "userRatingCount": 498,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1955215179455937900",
+      "recommendedPrimary": [
+        "Scrambled Avocado (Balkan Sos & Ev Yapımı Reçel)",
+        "Bademli Kruvasan (Almond Croissant)",
+        "Heavy Gun 2.0 Kahvaltı Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Almond Croissant & Pain au Chocolat",
+          "note": "Kahvaltı tabaklarının yanında veya sonrasında kahveyle tercih edilen çıtır katmanlı kruvasanlar.",
+          "proof": "Yemek.com ve Gurme Rehber"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük park yanındaki açık hava/kaldırım masaları ve dar cam cepheli iç oturma alanı; evcil hayvan dostu",
+        "crowdAndNoise": "Hafta sonu sabahı sakin arka cephe brunch’ı yapmak isteyen çiftler ve mahalle sakinleri",
+        "disadvantage": "İç mekan dar olduğu için hafta sonu sabahları masa bekleme süresi oluşuyor; porsiyonlara kıyasla fiyat bandı yüksek algılanabiliyor.",
+        "transit": "Köybaşı Caddesi Yeniköy Merkez Camii yanındaki Valide Çeşme Sokak pasaj girişinde."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Bramble Cafe Yeniköy",
+          "url": "https://maps.google.com/?cid=1955215179455937900",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Valide Çeşme Sk. Merkez Camii Pasajı No:1 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Yemek.com — Yeniköy Kahvaltı Seçkisi",
+          "url": "https://yemek.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kruvasan katman kalitesi ve sabah kahvaltı tabakları doğrulandı."
+        },
+        {
+          "title": "Gurme Rehber — Bramble Cafe Yeniköy",
+          "url": "https://gurmerehber.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Scrambled Avocado, Heavy Gun 2.0, Almond Croissant ve dış park masaları doğrulandı."
+        }
+      ],
+      "pros": [
+        "Yumurta tabakları ile fırın kruvasanlarını aynı nitelikte sunan tekil Yeniköy brunch mutfağı",
+        "Evcil hayvan dostu dış oturma avantajı"
+      ],
+      "cons": [
+        "Hafta sonu iç ve dış masalar küçük kapasite yüzünden hızlıca doluyor"
+      ],
+      "uncertainties": [
+        "Kruvasan çeşitleri yoğun sabah servisinde öğlene kalmadan bitebiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yen-emek-cafe",
+      "categoryId": "kahvalti",
+      "resolvedName": "Emek Cafe",
+      "branchName": "Yeniköy, Köybaşı Cd. No:57, 34464 Sarıyer/İstanbul",
+      "placeId": "ChIJu5trZvPKyhQRlSRz3HwbxPs",
+      "coordinates": {
+        "lat": 41.122336,
+        "lng": 29.0707878
+      },
+      "rating": 4.2,
+      "userRatingCount": 2464,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18141655422043628693",
+      "recommendedPrimary": [
+        "Klasik Yeniköy Menemeni",
+        "Sabah Gül Böreği (Erken Tükenen)",
+        "Bal-Kaymak, Ezine Peyniri & Kızarmış Ekmek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Gül Böreği & Kızarmış Ekmek Üstü Tereyağı-Bal-Kaymak",
+          "note": "Menemenin yanında masaya gelen çıtır gül böreği ve klasik Türk kahvaltısı eşlikçileri.",
+          "proof": "Hürriyet ve TheMagger Yeniköy rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Doğrudan Boğaz suyuna sıfır dar açık rıhtım masaları ve tenteli sahil bölümü",
+        "crowdAndNoise": "Sabah yürüyüşçüleri, nostaljik semt müdavimleri ve hafta sonu Boğaz kahvaltısı arayan ziyaretçiler",
+        "disadvantage": "Hafta sonu kapıda kuyruk oluyor, masalar birbirine yakın ve yoğun saatlerde servis aceleci/sert hissedilebiliyor; fiyatlar sade kahvehane görünümünün hayli üzerinde.",
+        "transit": "Köybaşı Caddesi No:57 üzerinde Yeniköy Vapur İskelesi’ne birkaç dakikalık yürüyüşle."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Emek Cafe",
+          "url": "https://maps.google.com/?cid=18141655422043628693",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Köybaşı Cd. No:57 sahil konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Hürriyet — Yeniköy Emek Cafe",
+          "url": "https://www.hurriyet.com.tr",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1965’ten beri süren Boğaz kıyısı kahvaltı geleneği ve menemen/gül böreği reçetesi doğrulandı."
+        },
+        {
+          "title": "The Magger — Emek Cafe",
+          "url": "https://www.themagger.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Soğansız klasik menemen, sabah gül böreği ve hafta sonu kalabalık uyarısı doğrulandı."
+        },
+        {
+          "title": "Gurme Rehber — Emek Cafe",
+          "url": "https://gurmerehber.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Suya sıfır oturum ve yüksek fiyat/servis yoğunluğu dengesi doğrulandı."
+        }
+      ],
+      "pros": [
+        "1965’ten bugüne kesintisiz süren, İstanbul Boğaz kıyısının sembol kahvaltı ritüeli",
+        "Kıvamı oturtulmuş geleneksel domates bazlı menemen ve taze gül böreği"
+      ],
+      "cons": [
+        "Hafta sonu sıra bekleme, sıkışık masa düzeni ve aceleci servis dili",
+        "Görünüme kıyasla yüksek hesap tutarı şikayetleri"
+      ],
+      "uncertainties": [
+        "Gül böreği sabah saatlerinde tükendiğinde gün ortasında bulunamayabiliyor."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yen-kanti",
+      "categoryId": "kahvalti",
+      "resolvedName": "Kanti - All Day Eatery",
+      "branchName": "Yeniköy, Köybaşı Cd. No: 78, 34464 Sarıyer/İstanbul",
+      "placeId": "ChIJ-5qipx_LyhQRyvl_FPTWlLY",
+      "coordinates": {
+        "lat": 41.1215227,
+        "lng": 29.0698685
+      },
+      "rating": 4.5,
+      "userRatingCount": 296,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.kantikitchen.com/",
+      "mapsUri": "https://maps.google.com/?cid=13156376755260357066",
+      "recommendedPrimary": [
+        "Truffle Scrambled Eggs on Brioche",
+        "Truffle Béchamel Croque Madame",
+        "Poşe Yumurtalı Avokado Toast"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Half-Baked Cookie & Korean Chicken Sando",
+          "note": "Gün boyu açık mutfakta kahvaltı sonrası öğlene geçiş yapanlar için öne çıkan tatlı ve sandviç.",
+          "proof": "kantikitchen.com ve ALEM seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Sade, aydınlık bistro salonu ve caddeye bakan masa düzeni (rezervasyonsuz walk-in sistem)",
+        "crowdAndNoise": "Geç kahvaltı ve hafta içi/hafta sonu modern brunch arayan semt gençleri ve aileler",
+        "disadvantage": "Rezervasyon kabul etmediği için hafta sonu geç sabah saatlerinde kapıda bekleme oluşuyor; masalar birbirine yakın.",
+        "transit": "Köybaşı Caddesi No:78 üzerinde Tarihi Yeniköy Börekçisi’nin hemen yanında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Kanti - All Day Eatery",
+          "url": "https://maps.google.com/?cid=13156376755260357066",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Köybaşı Cd. No:78 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Kanti Kitchen Resmi Sitesi",
+          "url": "https://www.kantikitchen.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Tekil Yeniköy şubesi, gün boyu kahvaltı ve walk-in hizmet modeli doğrulandı."
+        },
+        {
+          "title": "The Magger — Kanti Yeniköy",
+          "url": "https://www.themagger.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Truffle Scrambled Brioche, Croque Madame ve Half-Baked Cookie imzaları doğrulandı."
+        },
+        {
+          "title": "ALEM — Kanti Yeniköy",
+          "url": "https://www.alem.com.tr",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Modern mahalle lokantası ve all-day eatery kimliği doğrulandı."
+        }
+      ],
+      "pros": [
+        "Geç saatte dahi taze yumurta ve brioche tabakları çıkarabilen gerçek all-day brunch mutfağı",
+        "Sadece sabahla sınırlı kalmayan dengeli öğle sandviç/makarna devamlılığı"
+      ],
+      "cons": [
+        "Rezervasyon alınmaması popüler saatlerde bekleme süresi yaratıyor"
+      ],
+      "uncertainties": [
+        "Half-Baked Cookie pişirim süreleri siparişe göre kısa bekleme gerektirebiliyor."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yen-evimiz-osmanli",
+      "categoryId": "denemelisin",
+      "resolvedName": "Evimiz Osmanlı Mutfağı",
+      "branchName": "Yeniköy, Salihağa Sk. No:25, 34464 Sarıyer/İstanbul",
+      "placeId": "ChIJa9oyqXTKyhQRSfNEjIBKfr4",
+      "coordinates": {
+        "lat": 41.1178449,
+        "lng": 29.0610415
+      },
+      "rating": 4.7,
+      "userRatingCount": 444,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13726490630241448777",
+      "recommendedPrimary": [
+        "Hünkar Beğendi",
+        "Kuzu Tandır",
+        "Zeytinyağlı Yaprak Sarma & Kıtır Mantı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sarı Burma & Peynirli Su Böreği",
+          "note": "Sulu ve ağır tencere yemeklerinin yanında ev yapımı hamur işi ve şerbetli kapanış seçeneği.",
+          "proof": "Mekanlar.com ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Salihağa Sokak içinde sakin aile bahçesi ve geleneksel dokulu kapalı salon",
+        "crowdAndNoise": "Kalabalık sahil lokantalarından uzakta ağır pişen sulu yemek arayan aileler ve semt müdavimleri",
+        "disadvantage": "Geleneksel tencere yemekleri günlük miktarda çıktığı için akşam geç saatlerde bazı çeşitler bitebiliyor; hafta içi öğlen hızlı tüketime yönelebiliyor.",
+        "transit": "Köybaşı Caddesi’nden Salihağa Sokak No:25’e birkaç dakikalık yürüyüşle ulaşılır."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Evimiz Osmanlı Mutfağı",
+          "url": "https://maps.google.com/?cid=13726490630241448777",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Salihağa Sk. No:25 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Mekanlar.com — Evimiz Osmanlı Mutfağı",
+          "url": "https://www.mekanlar.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bahçeli aile işletmesi ortamı, Hünkar Beğendi, kuzu tandır ve ev baklavası doğrulandı."
+        },
+        {
+          "title": "Vegan İstanbul & Menü Rehberi",
+          "url": "https://www.veganistanbul.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Zeytinyağlı seçkisi, yaprak sarma ve bitkisel tencere seçenekleri doğrulandı."
+        }
+      ],
+      "pros": [
+        "Yeniköy’de lüks şef lokantaları ve kafeler arasında gerçek ev yemeği ve Osmanlı mutfağı boşluğunu dolduran tekil adres",
+        "Bahçeli sakin arka sokak konumu ve dengeli puan istikrarı"
+      ],
+      "cons": [
+        "Günün tencere menüsü erken saatlerde tükendiğinde seçim daralabiliyor"
+      ],
+      "uncertainties": [
+        "Testi kebabı gibi uzun hazırlıklı yemekler önceden sorulmalı."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yen-rafine00",
+      "categoryId": "denemelisin",
+      "resolvedName": "Rafine00",
+      "branchName": "Yeniköy, Kapalı Bakkal Sk. No:5/A, 34464 Sarıyer/İstanbul",
+      "placeId": "ChIJs3PUWwDLyhQRsuLWIixiZrw",
+      "coordinates": {
+        "lat": 41.117204799999996,
+        "lng": 29.062866300000003
+      },
+      "rating": 5,
+      "userRatingCount": 81,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13575646068457530034",
+      "recommendedPrimary": [
+        "Fesleğen Pestolu Antep Fıstıklı Radiatori",
+        "Taze Keçi Peynirli Arrabbiata Radiatori",
+        "Bolonez Soslu Taze Spagetti"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Dilim Tiramisu",
+          "note": "Günlük taze makarna tabağının ardından tek porsiyonluk İtalyan tatlı kapanışı olarak öne çıkıyor.",
+          "proof": "Yemeksepeti ve yerel platform geri bildirimleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük butik dükkan içi birkaç masa ve ağırlıklı al-götür / hızlı öğle-erken akşam servisi",
+        "crowdAndNoise": "Öğle ve erken akşam saatlerinde taze İtalyan makarnası arayan semt çalışanları ve sakinleri",
+        "disadvantage": "Çok sınırlı oturma kapasitesi var, Pazartesi kapalı ve akşam geç servis vermeden erken saatte kapanıyor.",
+        "transit": "Köybaşı Caddesi’nden Kapalı Bakkal Sokak No:5/A’ya kısa yürüyüşle."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Rafine00",
+          "url": "https://maps.google.com/?cid=13575646068457530034",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kapalı Bakkal Sk. No:5/A konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Yemeksepeti — Rafine00 Menü",
+          "url": "https://www.yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Antep fıstıklı pesto radiatori, keçi peynirli arrabbiata, füme kaburgalı casarecce ve tiramisu doğrulandı."
+        },
+        {
+          "title": "Fırsat Bu Fırsat — Rafine00 Yeniköy",
+          "url": "https://www.firsatbufirsat.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Günlük el yapımı taze makarna üretimi ve semt içi servis doğrulandı."
+        },
+        {
+          "title": "Ürün Sepetim — Rafine00 Rehber",
+          "url": "https://urunsepetim.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kapalı Bakkal Sokak dükkan detayı ve taze sos reçeteleri doğrulandı."
+        }
+      ],
+      "pros": [
+        "Günlük taze hamur kesen tekil mahalle makarna atölyesi",
+        "Fıstıklı pesto ve keçi peynirli arrabbiata gibi net imza reçeteler"
+      ],
+      "cons": [
+        "Erken kapanış ve Pazartesi tatili akşam yemeği planını kısıtlıyor",
+        "Oturma yeri çok dar olduğundan ağırlıklı paket veya hızlı yemek formatına uygun"
+      ],
+      "uncertainties": [
+        "Hacmi henüz görece yeni olduğundan sos stokları gün içinde değişebiliyor."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yen-yeni-damla-pastanesi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Yeni Damla Pastanesi",
+      "branchName": "Yeniköy, Köybaşı Cd. No:74/A, 34464 Sarıyer/İstanbul",
+      "placeId": "ChIJl9yzXvPKyhQR_uXhcSaknPY",
+      "coordinates": {
+        "lat": 41.1219976,
+        "lng": 29.070206400000004
+      },
+      "rating": 4.6,
+      "userRatingCount": 529,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17770258714723476990",
+      "recommendedPrimary": [
+        "Yalı Çapkını Tatlısı",
+        "Damla Special (Tahinli Yufkalı Kurabiye)",
+        "Mini Ekler Çeşitleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Peynirli Su Böreği & Mini Ekler",
+          "note": "Sabah fırınından çıkan börek çeşitleri ve kutuluk taze eklerler mahallenin günlük uğrak ürünleri.",
+          "proof": "Milliyet ve Nerede Ne Var kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağırlıklı tezgah önü al-götür ve paket pastane düzeni; vitrin önünde çok sınırlı oturma alanı",
+        "crowdAndNoise": "Misafirliğe kutu tatlı/börek götüren Yeniköy sakinleri ve sabah ekmek müdavimleri",
+        "disadvantage": "Büyük bir kafe oturma alanı sunmaz; öğleden sonra özel kurabiye ve su böreği tepsileri tükenebiliyor.",
+        "transit": "Köybaşı Caddesi No:74/A üzerinde Kanti’nin birkaç kapı yanında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Yeni Damla Pastanesi",
+          "url": "https://maps.google.com/?cid=17770258714723476990",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Köybaşı Cd. No:74/A konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Milliyet — Yeniköy Durakları",
+          "url": "https://www.milliyet.com.tr",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1973’ten bu yana süren mahalle pastanesi geçmişi ve imza tatlıları doğrulandı."
+        },
+        {
+          "title": "Nerede Ne Var / VenuesReyon — Yeni Damla Pastanesi",
+          "url": "https://www.nerdenerede.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yalı Çapkını tatlısı, Damla Special tahinli kurabiye, ekler ve su böreği beğenileri doğrulandı."
+        }
+      ],
+      "pros": [
+        "1973’ten beri aynı mahalle dokusunu sürdüren tek şubeli esnaf pastanesi",
+        "Başka yerde bulunmayan Yalı Çapkını ve tahinli yufka kurabiye reçeteleri"
+      ],
+      "cons": [
+        "Uzun süre oturup kahve içilecek kafe düzeninden ziyade vitrin/paket pastane formatında"
+      ],
+      "uncertainties": [
+        "Ekşi mayalı ve siyez ekmeklerin çıkış saatleri günlük fırın döngüsüne göre değişiyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yen-tarihi-yenikoy-borekcisi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Tarihi Yeniköy Börekçisi",
+      "branchName": "Yeniköy, Köybaşı Cd. No:80, 34464 Sarıyer/İstanbul",
+      "placeId": "ChIJM9etsfTKyhQR59MXNcDEmVU",
+      "coordinates": {
+        "lat": 41.1212679,
+        "lng": 29.0696673
+      },
+      "rating": 4.2,
+      "userRatingCount": 460,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.tarihiyenikoyborekcisi.com/",
+      "mapsUri": "https://maps.google.com/?cid=6168177494464123879",
+      "recommendedPrimary": [
+        "Kuş Üzümlü & Çam Fıstıklı Kıymalı Kol Böreği",
+        "Peynirli Su Böreği",
+        "Paskalya Çöreği & Peksimet"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Paskalya Çöreği & Taş Fırın Peksimeti",
+          "note": "Sabah böreklerinin yanında eski İstanbul fırın geleneğini sürdüren mahlepli çörek ve kıtır peksimet.",
+          "proof": "tarihiyenikoyborekcisi.com ve TheMagger"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi ahşap dükkan içinde al-götür tezgah ağırlıklı düzen ve birkaç küçük masa",
+        "crowdAndNoise": "Sabah erken sıcak kol böreği alan semt sakinleri ve tarihi İstanbul fırını meraklıları",
+        "disadvantage": "Geleneksel bir kafe oturumuna değil hızlı tezgah/paket satışına odaklıdır; kıymalı börek yağlı dokusuyla ağır gelebiliyor ve erken saatlerde bitebiliyor.",
+        "transit": "Köybaşı Caddesi No:80 adresinde Yeniköy Merkez Camii’ne birkaç adım uzaklıkta."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Tarihi Yeniköy Börekçisi",
+          "url": "https://maps.google.com/?cid=6168177494464123879",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Köybaşı Cd. No:80 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Tarihi Yeniköy Börekçisi Resmi Sitesi",
+          "url": "http://www.tarihiyenikoyborekcisi.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "1817 kökeni, Kayıkçı ailesi mirası, odun fırını ve peksimet/Paskalya çöreği menüsü doğrulandı."
+        },
+        {
+          "title": "The Magger — Tarihi Yeniköy Börekçisi",
+          "url": "https://www.themagger.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kuş üzümlü dolmalık fıstıklı kıymalı kol böreği ve tarihi taş fırın geçmişi doğrulandı."
+        },
+        {
+          "title": "Cornucopia & Kültür Envanteri",
+          "url": "https://kulturenvanteri.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yeniköy’ün tescilli tarihi Rum fırın mirası olarak belgelenmiştir."
+        }
+      ],
+      "pros": [
+        "İki asrı aşan geçmişiyle Yeniköy’ün yaşayan en eski gastronomi mirası",
+        "Kuş üzümlü fıstıklı iç harç ve taş odun fırını karakteri"
+      ],
+      "cons": [
+        "Oturma alanı oldukça kısıtlı, ağırlıklı al-götür fırın deneyimi",
+        "Gün ortasına kalındığında sıcak börek tepsileri bitebiliyor"
+      ],
+      "uncertainties": [
+        "Fırından taze çıkış saatlerine denk gelmeyen dilimler bekledikçe yağ hissiyatı artabiliyor."
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yen-sandal-balik",
+      "categoryId": "balik",
+      "resolvedName": "Sandal Balık",
+      "branchName": "Yeniköy, Köybaşı Cd. No:178, 34464 Sarıyer/İstanbul",
+      "placeId": "ChIJm0TB2mPKyhQRAaevmtjGvc4",
+      "coordinates": {
+        "lat": 41.1163889,
+        "lng": 29.062777800000003
+      },
+      "rating": 4.5,
+      "userRatingCount": 1375,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.yenikoysandalbalik.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=14897281776021907201",
+      "recommendedPrimary": [
+        "Balık Simidi",
+        "Balık Mantısı",
+        "Havuçlu Dereotlu Mısır Ekmeği & İzmir Salatası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Balık Köftesi & Tahinli Kabak Tatlısı",
+          "note": "Çocuklu aileler ve alkolsüz balık sofrası arayan gruplar için başlangıç ve tatlı tamamlayıcıları.",
+          "proof": "yenikoysandalbalik.com.tr ve BgnNeYesem"
+        }
+      ],
+      "suitability": {
+        "seating": "Köybaşı Caddesi üzerinde iki katlı geniş salon ve yeşil arka bahçe",
+        "crowdAndNoise": "Aileler, kalabalık hafta sonu yemek grupları ve alkolsüz taze balık arayan müdavimler",
+        "disadvantage": "Alkolsüz işletme olduğu için rakı-meze eşleşmesi arayanlara uygun değildir; kremalı/kızartma ara sıcaklar fazla seçildiğinde ağırlaşabiliyor.",
+        "transit": "Köybaşı Caddesi No:178 üzerinde İstinye yönü çıkışına doğru cadde üstünde yer alır."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Sandal Balık",
+          "url": "https://maps.google.com/?cid=14897281776021907201",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Köybaşı Cd. No:178 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Sandal Balık Resmi Sitesi",
+          "url": "http://www.yenikoysandalbalik.com.tr/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Tekil Yeniköy işletmesi, alkolsüz konsept ve balık simidi/mantısı imza menüsü doğrulandı."
+        },
+        {
+          "title": "Bugün Ne Yesem / Nerede Ne Var",
+          "url": "https://www.bgnneyesem.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Dereotlu mısır ekmeği, balık mantısı, bahçe ortamı ve aile dostu hizmet doğrulandı."
+        }
+      ],
+      "pros": [
+        "1300’ü aşkın değerlendirmede puan istikrarını koruyan yüksek hacimli mahalle balıkçısı",
+        "Balık simidi ve balık mantısı gibi başka balıkçılarda az bulunan sıcak ara lezzetler"
+      ],
+      "cons": [
+        "Tamamen alkolsüz konsept klasik meyhane beklentisi olanları şaşırtabiliyor"
+      ],
+      "uncertainties": [
+        "Mevsim balık çeşitliliği günlük hale gelen tekneye göre değişiklik gösteriyor."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yen-datca-balikcisi",
+      "categoryId": "balik",
+      "resolvedName": "Datça Balıkçısı Yeniköy",
+      "branchName": "Köybaşı caddesi, Yeniköy, Vapur iskelesi sk no 7/A, 34277 Sarıyer/İstanbul",
+      "placeId": "ChIJGSJkfzPLyhQRB4290anQCkk",
+      "coordinates": {
+        "lat": 41.121797199999996,
+        "lng": 29.0707387
+      },
+      "rating": 4.5,
+      "userRatingCount": 231,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://datçabalıkçısıyeniköy.com/",
+      "mapsUri": "https://maps.google.com/?cid=5263248542322756871",
+      "recommendedPrimary": [
+        "Levrekli Pazı Sarma",
+        "Ahtapot Izgara",
+        "Hibeş, Fava & Levrek Marine"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Karides Güveç & Lakerda",
+          "note": "Üst kat Boğaz manzarası eşliğinde soğuk meze ve sıcak deniz ürünü başlangıcı.",
+          "proof": "datçabalıkçısıyeniköy.com ve Mes Prestiges"
+        }
+      ],
+      "suitability": {
+        "seating": "Vapur İskelesi yanında iki katlı restoran; üst katta açılabilir camlı Boğaz manzaralı masalar",
+        "crowdAndNoise": "İskele manzarasında uzun meyhane akşamı geçirmek isteyen çiftler ve arkadaş grupları",
+        "disadvantage": "Boğaz hattı fiyat bandı yüksek düzeydedir ve yoğun hafta sonu akşamlarında sıcak ara servisleri gecikebiliyor.",
+        "transit": "Köybaşı Caddesi’nden Yeniköy Vapur İskelesi Sokağı No:7/A’ya yürüyerek."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Datça Balıkçısı Yeniköy",
+          "url": "https://maps.google.com/?cid=5263248542322756871",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Vapur İskelesi Sk. No:7/A sahil konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Datça Balıkçısı Yeniköy Resmi Sitesi",
+          "url": "https://datçabalıkçısıyeniköy.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Tekil Yeniköy işletmesi, Ege mezeleri ve Boğaz manzaralı üst kat yapısı doğrulandı."
+        },
+        {
+          "title": "Mes Prestiges & Menu-TR",
+          "url": "https://mesprestiges.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Hibeş, fava, levrekli pazı sarma, lakerda ve iskele yanı manzara doğrulandı."
+        }
+      ],
+      "pros": [
+        "Vapur İskelesi bitişiğinde gerçek Boğaz manzaralı camlı teras deneyimi",
+        "Ege odaklı hafif mezeler ile klasik mevsim balıklarının temiz dengesi"
+      ],
+      "cons": [
+        "Tam manzara masaları için rezervasyon gerekir ve fiyat skalası üst segmenttedir"
+      ],
+      "uncertainties": [
+        "Hafta sonu dolu salonda sipariş hızı değişebiliyor."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yen-taka-balik",
+      "categoryId": "balik",
+      "resolvedName": "Taka balık",
+      "branchName": "Yeniköy, Köybaşı Cd. No:1, 34464 Sarıyer/İstanbul",
+      "placeId": "ChIJw0bOm_LKyhQRK0fDU2ZiI_s",
+      "coordinates": {
+        "lat": 41.1257435,
+        "lng": 29.071065399999995
+      },
+      "rating": 4.3,
+      "userRatingCount": 2478,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18096415919336277803",
+      "recommendedPrimary": [
+        "Çıtır Kalamar Tava",
+        "Balık Ekmek (Hamsi / İstavrit / Mezgit)",
+        "Midye Tava"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Midye Tava & Fırın Helva",
+          "note": "Balık ekmek ve kalamar ikilisini tamamlayan turşu suyu eşlikli sıcak kapanış.",
+          "proof": "Yemek.com ve müdavim rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kaldırım kenarı ve dar iç alanda alçak tahta tabure/kısa masa düzeni; al-götür seçeneği de yaygındır",
+        "crowdAndNoise": "Samimi ve salaş ortamda hızlı taze balık yemek isteyen gençler, yürüyüşçüler ve müdavimler",
+        "disadvantage": "Konforlu sandalyeli bir restoran değildir (tabure düzeni), yoğun saatlerde ayakta sıra beklenir ve yalnızca nakit ödeme geçerli olabiliyor.",
+        "transit": "Köybaşı Caddesi No:1 adresinde Tarabya-Kalender sınırındaki sahil durağının hemen yanında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Taka balık",
+          "url": "https://maps.google.com/?cid=18096415919336277803",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Köybaşı Cd. No:1 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Yemek.com — Taka Balık Yeniköy",
+          "url": "https://yemek.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Alçak tabure düzeni, balık ekmek, kalamar tava ve Yeniköy sahil ritüeli doğrulandı."
+        },
+        {
+          "title": "DonanımHaber & Mekan.com",
+          "url": "https://www.mekan.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hızlı sirkülasyonlu taze tava balık, midye tava ve nakit ödeme uyarısı doğrulandı."
+        }
+      ],
+      "pros": [
+        "2400’ü aşkın değerlendirmeye sahip gerçek Boğaz salaş balık ekmek ve kalamar klasiği",
+        "Gösterişsiz, hızlı sirkülasyonlu taze kızartma standardı"
+      ],
+      "cons": [
+        "Alçak tabureler uzun oturuma elverişli değil",
+        "Nakit ödeme kısıtı ve dar alanda yoğun kalabalık"
+      ],
+      "uncertainties": [
+        "Mevsimine göre günlük tava balık türü (hamsi/istavrit/mezgit) değişiyor."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yen-aleko-deniz-park",
+      "categoryId": "balik",
+      "resolvedName": "Aleko’nun Yeri Deniz Park Restoran",
+      "branchName": "No:9, Yeniköy, Daire Sk., 34464 Sarıyer/İstanbul",
+      "placeId": "ChIJ5Q_JbvPKyhQRe_oyG_aEEGw",
+      "coordinates": {
+        "lat": 41.1225581,
+        "lng": 29.0712458
+      },
+      "rating": 4.3,
+      "userRatingCount": 643,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7786869948276734587",
+      "recommendedPrimary": [
+        "Lakerda & Levrek Marin",
+        "Karides Güveç",
+        "Kalkan / Levrek Buğulama"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Avokadolu Karides & Tarama",
+          "note": "Denize sıfır masalarda ana balık öncesi klasik beyaz örtülü meyhane başlangıçları.",
+          "proof": "Milliyet ve İstanbul meyhane arşivleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî taş bina altında denize nazır beyaz örtülü teras ve klasik iç salon",
+        "crowdAndNoise": "Eski İstanbul usulü ağırbaşlı balık meyhanesi arayan müdavimler ve özel aile yemekleri",
+        "disadvantage": "Boğaz hattının en yüksek fiyat bandındaki balıkçılarındandır; hesap kontrolü konusunda şeffaf menü sorma ihtiyacı ve dönemsel servis aksaklıkları bildirilebiliyor.",
+        "transit": "Köybaşı Caddesi’nden Yeniköy Vapur İskelesi yanındaki Daire Sokak No:9’a birkaç adımda."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Aleko’nun Yeri Deniz Park Restoran",
+          "url": "https://maps.google.com/?cid=7786869948276734587",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Daire Sk. No:9 sahil konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Milliyet — Bay Aleko ve Yeniköy Meyhaneleri",
+          "url": "https://www.milliyet.com.tr",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1967 kuruluş tarihi, Aleksandros Nikolaidis mirası ve tarihî Splendid sahil konumu doğrulandı."
+        },
+        {
+          "title": "Restoranım & Harita Değerlendirmeleri",
+          "url": "https://www.restoranim.net",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Lakerda, karides güveç, buğulama balıklar ve fiyat/hesap uyarıları doğrulandı."
+        }
+      ],
+      "pros": [
+        "1967’den beri süren otantik eski İstanbul balık lokantası kimliği",
+        "Tarihî sahil yapısı içinde gerçek suya sıfır beyaz örtü atmosferi"
+      ],
+      "cons": [
+        "Üst düzey fiyat politikası ve sipariş öncesi gramaj/fiyat teyidi gerektirmesi",
+        "Yoğun akşamlarda servis temposunun dalgalanabilmesi"
+      ],
+      "uncertainties": [
+        "Tarihi işletmede mevsim balığı gramaj fiyatları günlük sorulmalıdır."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    }
+  ]
+}

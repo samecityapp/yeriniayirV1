@@ -21,6 +21,8 @@ import etilerSnapshotJson from './regions/istanbul-besiktas-etiler.json';
 import ortakoySnapshotJson from './regions/istanbul-besiktas-ortakoy.json';
 import cukurcumaSnapshotJson from './regions/istanbul-beyoglu-cukurcuma.json';
 import balatSnapshotJson from './regions/istanbul-fatih-balat.json';
+import yenikoySnapshotJson from './regions/istanbul-sariyer-yenikoy.json';
+import gokturkSnapshotJson from './regions/istanbul-eyupsultan-gokturk.json';
 import kusadasiSnapshotJson from './regions/aydin-kusadasi.json';
 import gaziantepSnapshotJson from './regions/gaziantep-merkez.json';
 import antalyaKaleiciSnapshotJson from './regions/antalya-kaleici.json';
@@ -53,6 +55,8 @@ const ETILER_SNAPSHOT = etilerSnapshotJson as V3VerifiedRegionSnapshot;
 const ORTAKOY_SNAPSHOT = ortakoySnapshotJson as V3VerifiedRegionSnapshot;
 const CUKURCUMA_SNAPSHOT = cukurcumaSnapshotJson as V3VerifiedRegionSnapshot;
 const BALAT_SNAPSHOT = balatSnapshotJson as V3VerifiedRegionSnapshot;
+const YENIKOY_SNAPSHOT = yenikoySnapshotJson as V3VerifiedRegionSnapshot;
+const GOKTURK_SNAPSHOT = gokturkSnapshotJson as V3VerifiedRegionSnapshot;
 const KUSADASI_SNAPSHOT = kusadasiSnapshotJson as V3VerifiedRegionSnapshot;
 const GAZIANTEP_SNAPSHOT = gaziantepSnapshotJson as V3VerifiedRegionSnapshot;
 const ANTALYA_KALEICI_SNAPSHOT = antalyaKaleiciSnapshotJson as V3VerifiedRegionSnapshot;
@@ -84,6 +88,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   ORTAKOY_SNAPSHOT,
   CUKURCUMA_SNAPSHOT,
   BALAT_SNAPSHOT,
+  YENIKOY_SNAPSHOT,
+  GOKTURK_SNAPSHOT,
   KUSADASI_SNAPSHOT,
   GAZIANTEP_SNAPSHOT,
   ANTALYA_KALEICI_SNAPSHOT,
@@ -212,6 +218,17 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   ayvansaray: BALAT_SNAPSHOT,
   vodina: BALAT_SNAPSHOT,
   'cifit-carsisi': BALAT_SNAPSHOT,
+  yenikoy: YENIKOY_SNAPSHOT,
+  'yenikoy-sariyer': YENIKOY_SNAPSHOT,
+  'istanbul-sariyer-yenikoy': YENIKOY_SNAPSHOT,
+  koybasi: YENIKOY_SNAPSHOT,
+  kalender: YENIKOY_SNAPSHOT,
+  gokturk: GOKTURK_SNAPSHOT,
+  'gokturk-eyupsultan': GOKTURK_SNAPSHOT,
+  'istanbul-eyupsultan-gokturk': GOKTURK_SNAPSHOT,
+  'gokturk-merkez': GOKTURK_SNAPSHOT,
+  'arcadium-gokturk': GOKTURK_SNAPSHOT,
+  'larus-palas': GOKTURK_SNAPSHOT,
   kusadasi: KUSADASI_SNAPSHOT,
   'kusadasi-aydin': KUSADASI_SNAPSHOT,
   'merkez-kusadasi-aydin': KUSADASI_SNAPSHOT,

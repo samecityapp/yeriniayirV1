@@ -31,6 +31,8 @@ const PUBLISHED_REGION_KEYS = [
   'istanbul-besiktas-ortakoy',
   'istanbul-beyoglu-cukurcuma',
   'istanbul-fatih-balat',
+  'istanbul-sariyer-yenikoy',
+  'istanbul-eyupsultan-gokturk',
   'aydin-kusadasi',
   'gaziantep-merkez',
   'antalya-kaleici',
