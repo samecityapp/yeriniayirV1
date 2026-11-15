@@ -85,8 +85,8 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
   'kaleici-muratpasa-antalya': {
     image: '/images/gastronomy/regional.svg',
     badge: 'Doğrulanmış Seçki',
-    headline: 'Kaleiçi & Merkez, Antalya',
-    vibe: 'Tarihi Kaleiçi, eski çarşı ve Işıklar hattından Aksu rotasına uzanan tahinli piyaz, şiş köfte, yaprak döner ve akşam sofraları',
+    headline: 'Kaleiçi, Antalya',
+    vibe: 'Tarihi Kaleiçi, Yat Limanı, Üçkapılar ve Kalekapısı aksında odun fırını pizzacılar, yerel burgerler, nitelikli kahve, meyhane sofraları, tahinli piyaz ve serpme börek',
   },
   'lara-muratpasa-antalya': {
     image: '/images/gastronomy/pizza.svg',
@@ -97,8 +97,8 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
   'konyaalti-antalya': {
     image: '/images/gastronomy/coffee-pour-over.svg',
     badge: 'Doğrulanmış Seçki',
-    headline: 'Konyaaltı, Antalya',
-    vibe: 'Atatürk Kültür Parkı ve sahil şeridinden Gürsu, Liman ve Çakırlar’a uzanan özel gün klasikleri, kruvasan-pastane durakları ve odun ateşi pideler',
+    headline: 'Konyaaltı Sahil, Antalya',
+    vibe: 'Atatürk Kültür Parkı ve Akdeniz Bulvarı sahil hattında özel gün klasikleri, kruvasan-pastane durakları, nitelikli kahveciler, Napoli pizzaları ve taze deniz ürünleri',
   },
   'akyaka-ula-mugla': {
     image: '/images/gastronomy/gastronomy.svg',
@@ -408,7 +408,7 @@ export function GastronomyPageClient({
                       Konum Seç
                     </div>
                     <div className="text-xs text-slate-500 font-medium truncate mt-0.5">
-                      Taksim & İstiklal · Asmalımescit & Pera · Yeniköy · Göktürk · Balat · Çukurcuma · Etiler · Ortaköy · Akaretler · Bebek · Galata · Beşiktaş Çarşı · Karaköy · Cihangir · Nişantaşı · Üsküdar · Kuzguncuk · Çengelköy · Koşuyolu & Acıbadem · Kadıköy · Moda · Caddebostan · Suadiye · Bostancı · Antalya · Gaziantep · Kuşadası · Akyaka
+                      Taksim & İstiklal · Asmalımescit & Pera · Yeniköy · Göktürk · Balat · Çukurcuma · Etiler · Ortaköy · Akaretler · Bebek · Galata · Beşiktaş Çarşı · Karaköy · Cihangir · Nişantaşı · Üsküdar · Kuzguncuk · Çengelköy · Koşuyolu & Acıbadem · Kadıköy · Moda · Caddebostan · Suadiye · Bostancı · Kaleiçi · Konyaaltı Sahil · Lara (Antalya) · Gaziantep · Kuşadası · Akyaka
                     </div>
                   </div>
                 </div>

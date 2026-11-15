@@ -1,50 +1,60 @@
 {
   "schemaVersion": 3,
-  "verifiedAt": "2026-11-14T15:23:45.545Z",
+  "verifiedAt": "2026-11-15T16:31:51.055Z",
   "region": {
     "id": "konyaalti-antalya",
     "slug": "antalya-konyaalti",
     "city": "Antalya",
     "district": "Konyaaltı",
-    "neighborhood": "Konyaaltı",
-    "officialQuarter": "Gürsu, Altınkum, Arapsuyu, Liman & Çakırlar",
-    "displayName": "Konyaaltı, Antalya",
-    "locative": "Konyaaltı'nda",
+    "neighborhood": "Konyaaltı Sahil",
+    "officialQuarter": "Gürsu, Altınkum, Arapsuyu, Kuşkavağı, Liman & Atatürk Kültür Parkı",
+    "displayName": "Konyaaltı Sahil, Antalya",
+    "locative": "Konyaaltı Sahil'de",
     "path": [
       "antalya",
       "konyaalti"
     ],
     "aliases": [
+      "Konyaaltı Sahil",
+      "Konyaalti Sahil",
       "Konyaaltı",
       "Konyaalti",
+      "Akdeniz Bulvarı",
+      "Akdeniz Blv",
+      "Atatürk Kültür Parkı",
+      "Ataturk Kultur Parki",
       "Gürsu",
+      "Gursu",
       "Altınkum",
+      "Altinkum",
+      "Kuşkavağı",
+      "Kuskavagi",
       "Arapsuyu",
       "Liman",
-      "Hurma",
-      "Uncalı",
-      "Çakırlar",
-      "Cakirlar",
-      "Atatürk Kültür Parkı",
-      "Antalya",
+      "Yaşam Parkı",
+      "Yasam Parki",
       "7 Mehmet",
       "7mehmet",
-      "Pouchkine",
-      "Çamlık Pide",
-      "Çamlık Restoran"
+      "Pouchkine"
     ],
-    "scopeNote": "Atatürk Kültür Parkı, Gürsu, Liman & Çakırlar · Doğrulanmış Seçki",
-    "characterSubtitle": "Atatürk Kültür Parkı ve Konyaaltı sahil şeridinden Gürsu, Liman ve Çakırlar’a uzanan özel gün klasikleri, kruvasan-pastane durakları, odun fırını pideler ve deniz ürünleri.",
+    "scopeNote": "Atatürk Kültür Parkı, Akdeniz Bulvarı, Gürsu, Altınkum, Kuşkavağı & Liman Sahil Hattı · Doğrulanmış Seçki",
+    "characterSubtitle": "Atatürk Kültür Parkı ve Akdeniz Bulvarı sahil hattından Gürsu, Altınkum, Kuşkavağı ve Liman’a uzanan özel gün klasikleri, nitelikli kahveciler, kruvasan-pastane durakları, Napoli pizzacıları, deniz ürünleri ve taş fırın pideler.",
     "center": {
-      "lat": 36.8655,
-      "lng": 30.6335
+      "lat": 36.8635,
+      "lng": 30.635
     },
     "boundary": {
       "bbox": {
-        "minLat": 36.842,
-        "maxLat": 36.888,
-        "minLng": 30.524,
-        "maxLng": 30.668
+        "minLat": 36.845,
+        "maxLat": 36.8822,
+        "minLng": 30.603,
+        "maxLng": 30.6725
+      },
+      "excludeBbox": {
+        "minLat": 36.866,
+        "maxLat": 36.8825,
+        "minLng": 30.603,
+        "maxLng": 30.6285
       }
     }
   },
@@ -116,44 +126,11 @@
   ],
   "venues": [
     {
-      "id": "konyaalti-the-oven",
-      "placeId": "ChIJCZ2nFtCRwxQRnBVfDZQaXws",
-      "name": "THE OVEN Pizza Napoletana",
-      "address": "5M Migros AVM, Mood Alani, Arapsuyu, 07007 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Arapsuyu · Konyaaltı, Antalya",
-      "categoryId": "pizza",
-      "rating": 4.6,
-      "mapsUri": "https://maps.google.com/?cid=819402880386536860",
-      "coordinates": {
-        "lat": 36.882920399999996,
-        "lng": 30.658558700000004
-      },
-      "description": "Arapsuyu Mood Alanı'nda odun fırınında hızlı pişen ince kenarlı Napoli pizzaları ve hafif salatasıyla ailece rahat ulaşılabilen pizza durağı.",
-      "whatToOrder": [
-        "Diavola Napoletana",
-        "Margherita Bufala",
-        "Bresaola & Roka Pizza"
-      ],
-      "menuFrom": [
-        "Prosciutto / Funghi",
-        "Quattro Stagioni"
-      ],
-      "alsoTry": [
-        "Fırın Calzone & Rokalı Parmesan Salatası — Paylaşımlık bol rokalı parmesan salatası ve katlı peynirli calzone masalarda sıkça tercih ediliyor."
-      ],
-      "beforeYouGo": [
-        "Oturma & Servis: Açık hava bahçe alanı ve ferah iç masa düzeni · Öğle ve akşam saatlerinde ailelerle canlı",
-        "Dezavantaj: 5M Migros Mood alanı içinde bulunduğundan sokak içi butik atmosferden çok düzenli yaşam alanı temposuna sahiptir.",
-        "Ulaşım: Arapsuyu Atatürk Bulvarı ve 100. Yıl kesişiminde rahat otopark imkanıyla.",
-        "Bütçe seviyesi (Google): Orta"
-      ]
-    },
-    {
       "id": "konyaalti-pile-pizza",
       "placeId": "ChIJlfniIbmRwxQRhfyCjJz_9xI",
       "name": "Pile Neapolitan Pizza",
-      "address": "Uysal apartmanı, Altınkum, 439. Sk. no7a, 07050 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Altınkum · Konyaaltı, Antalya",
+      "address": "Uysal apartmanı, Altınkum, 439. Sk. no7a, 07050 Konyaaltı/Antalya",
+      "neighborhood": "Altınkum 439. Sk., Konyaaltı Sahil",
       "categoryId": "pizza",
       "rating": 4.8,
       "mapsUri": "https://maps.google.com/?cid=1366842059767610501",
@@ -161,7 +138,7 @@
         "lat": 36.868846,
         "lng": 30.636343099999998
       },
-      "description": "Altınkum'da yüksek ısılı taş fırında kabaran leopar kenarlı Napoli ekşi maya pizzaları ve ithal şarküteri eşleşmeleriyle mahallenin en yüksek beğenili pizzacısı.",
+      "description": "Altınkum'da yüksek ısılı taş fırında kabaran leopar kenarlı Napoli ekşi maya pizzaları ve ithal şarküteri eşleşmeleriyle mahallenin yüksek beğenili butik pizzacısı.",
       "whatToOrder": [
         "Margherita Verace",
         "Diavola & Sucuklu Pizza",
@@ -182,11 +159,45 @@
       ]
     },
     {
+      "id": "konyaalti-la-crosta",
+      "placeId": "ChIJq1SGN9GRwxQR7BBbTDz0m3Y",
+      "name": "La Crosta Pizzeria",
+      "address": "Kuşkavağı, 6. Cd., 07070 Konyaaltı/Antalya",
+      "neighborhood": "Kuşkavağı 6. Cd., Konyaaltı Sahil",
+      "categoryId": "pizza",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=8546693257681899756",
+      "coordinates": {
+        "lat": 36.8731818,
+        "lng": 30.6476105
+      },
+      "description": "Kuşkavağı 6. Cadde'de taş fırından çıkan ince hamurlu klasik ve somon-avokadolu gurme pizzalarının yanında taze makarna ve kahvaltı seçenekleri sunan İtalyan mutfağı durağı.",
+      "whatToOrder": [
+        "La Crosta Special Pizza",
+        "Karışık Mix Pizza",
+        "Ton Balıklı Pizza"
+      ],
+      "menuFrom": [
+        "Somon & Avokadolu Gurme Pizza",
+        "Taze Makarna Çeşitleri",
+        "Quesadilla"
+      ],
+      "alsoTry": [
+        "Çıtır Atıştırmalık Sepeti & Fresh Bowl — Pizza dışında paylaşımlık mozzarella stick, çıtır tavuk parçaları ve hafif salata kaseleri masalarda sık tercih ediliyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Ferah iç oturma salonu ve caddeye bakan açık hava masaları · Öğle ve akşam saatlerinde bölge sakinleri ile küçük gruplarla canlı",
+        "Dezavantaj: Menüsü pizza dışında hamburger ve quesadilla gibi kalemlere de yayıldığı için saf İtalyan odaklı yerlere kıyasla daha geniş bir bistro havasındadır.",
+        "Ulaşım: Kuşkavağı Mahallesi 6. Cadde üzerinde Akdeniz Bulvarı paralelinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
       "id": "konyaalti-mezonella",
       "placeId": "ChIJQ8a3zTqRwxQRr-3-L3HecVk",
       "name": "Mezonella Pizzeria Konyaaltı",
-      "address": "Gürsu, 304. Sk. No:24/2, 07070 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Gürsu · Konyaaltı, Antalya",
+      "address": "Gürsu, 304. Sk. No:24/2, 07070 Konyaaltı/Antalya",
+      "neighborhood": "Gürsu 304. Sk., Konyaaltı Sahil",
       "categoryId": "pizza",
       "rating": 4.8,
       "mapsUri": "https://maps.google.com/?cid=6445177119461797295",
@@ -194,7 +205,7 @@
         "lat": 36.861213899999996,
         "lng": 30.634146299999998
       },
-      "description": "Gürsu'nun popüler yeme-içme sokağında taze burrata, trüf sos ve ince hamurlu taş fırın pizzalarıyla hızlı yükselen yerel İtalyan pizzacısı.",
+      "description": "Gürsu'nun popüler yeme-içme sokağında taze burrata, trüf sos ve ince hamurlu taş fırın pizzalarıyla öne çıkan yerel İtalyan pizzacısı.",
       "whatToOrder": [
         "Trüf Mantarlı Pizza",
         "Burrata Margherita",
@@ -215,68 +226,103 @@
       ]
     },
     {
-      "id": "konyaalti-gece-burgercisi",
-      "placeId": "ChIJxfPlbyiTwxQRn0i8g6OFmZ8",
-      "name": "Gece Burgercisi",
-      "address": "Hurma, Boğaçay Cd. Sezerler Sitesi No:79AB/1, 07130 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Hurma · Konyaaltı, Antalya",
-      "categoryId": "hamburger",
-      "rating": 4.6,
-      "mapsUri": "https://maps.google.com/?cid=11500370060803590303",
+      "id": "konyaalti-san-lorenzo",
+      "placeId": "ChIJ47A45leRwxQRykJE30CPCoU",
+      "name": "San Lorenzo",
+      "address": "Konyaaltı apartmanı, Kuşkavağı, Akdeniz Blv. a blok No 106/D, 07070 Konyaaltı/Antalya",
+      "neighborhood": "Akdeniz Blv., Konyaaltı Sahil",
+      "categoryId": "pizza",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=9586632265597993674",
       "coordinates": {
-        "lat": 36.856490099999995,
-        "lng": 30.6092919
+        "lat": 36.8703541,
+        "lng": 30.651238099999997
       },
-      "description": "Boğaçay Caddesi üzerinde geç saatlere kadar döküm ızgarada mühürlediği taze smash burgerlerle Hurma ve Liman tarafının öne çıkan burger durağı.",
+      "description": "Kuşkavağı Akdeniz Bulvarı'nda odun fırınında pişen suda mozzarellalı ve füme kaburgalı pizzalarını geniş Anadolu ve İtalyan şarap seçkisiyle eşleştiren sahil şeridi pizzeriası.",
       "whatToOrder": [
-        "Double Gece Smash",
-        "Füme Etli Special",
-        "Lokum Smash Burger"
+        "Burrata Fresca Pizza",
+        "Anatolia Al Manzo (Kavurmalı)",
+        "Fumo Nero (Füme Kaburga)"
       ],
       "menuFrom": [
-        "Classic Cheese",
-        "Acılı Burger"
+        "Salmone Pizza",
+        "Sezo Special",
+        "Dana Carpaccio"
       ],
       "alsoTry": [
-        "Soslu Baharatlı Patates & Çilek/Vanilya Milkshake — Gece servisi eşlikçisi olarak erimiş soslu patates tabakları ve yoğun kıvamlı milkshake çeşitleri sıklıkla isteniyor."
+        "Trüflü Parmesanlı Patates & Şarap Eşleşmesi — Başlangıçta trüflü parmesan patates ile yerli ve İtalyan kadeh şarap seçkisi sahil terasındaki akşam servisini tamamlıyor."
       ],
       "beforeYouGo": [
-        "Oturma & Servis: Sade iç tezgah ve cadde üzeri masalar · Özellikle akşam geç saatlerde ve gece yarısına doğru canlı",
-        "Dezavantaj: Gündüz saatleri yerine akşam-gece servisine odaklanır; Hurma içindeki konumu sahil merkezinden kısa araç yolculuğu ister.",
-        "Ulaşım: Hurma Mahallesi Boğaçay Caddesi No:79 üzerinde Boğaçay Köprüsü batısında.",
+        "Oturma & Servis: Sahil bandına bakan açık hava terası ve şarap raflı iç salon · Akşamları çiftler ve şarap eşliğinde yemek yiyen gruplarla nezih",
+        "Dezavantaj: Akdeniz Bulvarı sahil önü konumu ve ithal şarküteri-şarap eşleşmeleri nedeniyle orta-üst fiyat bandındadır.",
+        "Ulaşım: Kuşkavağı Akdeniz Bulvarı No:106/D Konyaaltı apartmanı altında sahil yolu üzerinde.",
         "Bütçe seviyesi (Google): Orta"
       ]
     },
     {
-      "id": "konyaalti-mahalle-burger",
-      "placeId": "ChIJ481wgISRwxQRFratQdt0UKE",
-      "name": "Mahalle Burger - Konyaaltı",
-      "address": "Füssen apt, Gürsu, 303. Sk. No:2, 07070 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Gürsu · Konyaaltı, Antalya",
+      "id": "konyaalti-altincinar",
+      "placeId": "ChIJj_oiBLqRwxQRzfEX0y-IL1Y",
+      "name": "Altınçınar Burger & Fried Chicken",
+      "address": "Altınkum, 470. Sk. Eyiler Apt No: 7/b, 07070 Konyaaltı/Antalya",
+      "neighborhood": "Altınkum 470. Sk., Konyaaltı Sahil",
       "categoryId": "hamburger",
-      "rating": 4.6,
-      "mapsUri": "https://maps.google.com/?cid=11623919123291813398",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=6210332150153605581",
       "coordinates": {
-        "lat": 36.8623465,
-        "lng": 30.6349634
+        "lat": 36.866068899999995,
+        "lng": 30.640487200000003
       },
-      "description": "Gürsu 303. Sokak'ta yumuşak brioche ekmeği arasında pişirilen etli ve acılı burger reçeteleriyle istikrarlı bir mahalle burgercisi.",
+      "description": "Altınkum 470. Sokak'ta tereyağlı ekmek arasında hazırlanan ev yapımı dana burgerleri, kremalı mantarlı çeşitleri ve Nashville usulü çıtır tavuk burgerleriyle yüksek beğeni toplayan mahalle burgercisi.",
       "whatToOrder": [
-        "Mahalle Smash Burger",
-        "Truffle & Karamelize Soğanlı",
-        "BBQ Füme Burger"
+        "Altınçınar Burger",
+        "Kremalı Mantarlı Burger",
+        "Nashville Acılı Tavuk Burger"
       ],
       "menuFrom": [
         "Cheeseburger",
-        "Tavuk Burger"
+        "Golden Crispy Dürüm"
       ],
       "alsoTry": [
-        "Trüf Aromalı Kızartma & Soğan Halkası — Ana burgerlerin yanında taze kızartılmış patates ve kalın dilimli çıtır soğan halkaları tercih ediliyor."
+        "Buffalo & Korean Soslu Kanatlar — Burgerlerin yanında el yapımı tereyağlı buffalo soslu kanatlar ve tatlı-acı Kore soslu çıtır tavuk parçaları öne çıkıyor."
       ],
       "beforeYouGo": [
-        "Oturma & Servis: Kompakt iç salon ve sakin ara sokak dış masaları · Akşam yemeği saatlerinde mahalle sakinleriyle canlı",
-        "Dezavantaj: Oturma kapasitesi küçük olduğu için büyük arkadaş gruplarından ziyade iki-üç kişilik hızlı buluşmalara uygundur.",
-        "Ulaşım: Gürsu Mahallesi 303. Sokak No:2 Füssen Apartmanı altında.",
+        "Oturma & Servis: Temiz ve düzenli iç salon ile sokak kenarı masalar · Öğle ve akşam saatlerinde müdavim gençler ve mahalle sakinleriyle canlı",
+        "Dezavantaj: İç sokakta mütevazı bir cepheye sahip olduğundan ilk kez gelenler ara sokak girişini gözden kaçırabilir; yoğun saatlerde sipariş sırası oluşabiliyor.",
+        "Ulaşım: Altınkum Mahallesi 470. Sokak No:7/B Eyiler Apartmanı altında.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "konyaalti-smokey-bbq",
+      "placeId": "ChIJIWteUnibwxQReAdguL_8H-A",
+      "name": "Smokey BBQ&Burger",
+      "address": "Arapsuyu, 609. Sk. no12a, 07230 Konyaaltı/Antalya",
+      "neighborhood": "Arapsuyu 609. Sk., Konyaaltı Sahil",
+      "categoryId": "hamburger",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=16149904689136142200",
+      "coordinates": {
+        "lat": 36.873644899999995,
+        "lng": 30.6536693
+      },
+      "description": "Arapsuyu'nda ağır ateşte tütsülenmiş dana brisket etleri, yumuşak bulut dokulu burger ekmekleri ve duman aromalı soslarıyla Konyaaltı'nın köklü BBQ burger adresi.",
+      "whatToOrder": [
+        "Smoked Brisket Burger",
+        "Smokey Burger",
+        "Cheesy Beast Burger"
+      ],
+      "menuFrom": [
+        "Fried Chicken Burger",
+        "Rokter & Pastrami Burger",
+        "Vegan Falafel Burger"
+      ],
+      "alsoTry": [
+        "Pepper Cheese Balls & Baharatlı Patates — İsli etli burgerlerin yanında erimiş peynirli biber topları ve baharatlı patates kızartması paylaşım için sık seçiliyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Rahat iç salon masaları ve açık hava sokak önü oturumu · Akşamları özellikle füme et ve gurme burger müdavimleriyle yoğun",
+        "Dezavantaj: İsli BBQ sos ve ağır tütsü aroması hafif klasik burger arayanlara yoğun gelebilir; akşamları sokak parkı sınırlıdır.",
+        "Ulaşım: Arapsuyu Mahallesi 609. Sokak No:12A üzerinde sahil parkına yakın.",
         "Bütçe seviyesi (Google): Orta"
       ]
     },
@@ -284,8 +330,8 @@
       "id": "konyaalti-burger-cars",
       "placeId": "ChIJsfYD0OaRwxQRGIoIn5Lp3is",
       "name": "Burger Cars",
-      "address": "Altınkum, 416. Sk., 07070 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Altınkum · Konyaaltı, Antalya",
+      "address": "Altınkum, 416. Sk., 07070 Konyaaltı/Antalya",
+      "neighborhood": "Altınkum 416. Sk., Konyaaltı Sahil",
       "categoryId": "hamburger",
       "rating": 4.6,
       "mapsUri": "https://maps.google.com/?cid=3161220804403300888",
@@ -293,7 +339,7 @@
         "lat": 36.8651243,
         "lng": 30.6357131
       },
-      "description": "Altınkum 416. Sokak'ta ev yapımı ekmek, karamelize soğan ve füme et dengesiyle Konyaaltı gençlerinin yıllardır en çok tercih ettiği burger duraklarından biri.",
+      "description": "Altınkum 416. Sokak'ta ev yapımı ekmek, karamelize soğan ve füme et dengesiyle Konyaaltı gençlerinin yıllardır tercih ettiği yerel burger duraklarından biri.",
       "whatToOrder": [
         "Cars Special Burger",
         "Füme Etli Cheddar Burger",
@@ -309,16 +355,16 @@
       "beforeYouGo": [
         "Oturma & Servis: Renkli iç salon ve sokak önü masalar · Öğle ve akşamları özellikle genç müdavimlerle yoğun",
         "Dezavantaj: Sıcak ve nemli yaz akşamlarında dar ön bahçe masaları hemen dolabiliyor; araç parkı sokak arasına kalıyor.",
-        "Ulaşım: Altınkum Mahallesi 416. Sokak Atatürk Bulvarı üzerinde.",
+        "Ulaşım: Altınkum Mahallesi 416. Sokak Atatürk Bulvarı yakınında.",
         "Bütçe seviyesi (Google): Orta"
       ]
     },
     {
-      "id": "konyaalti-jiraf-coffee-book",
+      "id": "konyaalti-jiraf-coffee",
       "placeId": "ChIJ_xVZ7AiRwxQRWpB6P1WIqrs",
       "name": "Jiraf Coffee & Book",
       "address": "Gürsu, 312. Sk., 07070 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Gürsu · Konyaaltı, Antalya",
+      "neighborhood": "Gürsu 312. Sk., Konyaaltı Sahil",
       "categoryId": "kahve",
       "rating": 4.8,
       "mapsUri": "https://maps.google.com/?cid=13522770730851930202",
@@ -347,35 +393,70 @@
       ]
     },
     {
-      "id": "konyaalti-cafe-pouchkine",
-      "placeId": "ChIJWcz8zfSTwxQR_mZUJW9s2gw",
-      "name": "Cafe Pouchkine Antalya",
-      "address": "Liman, Akdeniz Blv. No: 257, 07130, 07070 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Liman · Konyaaltı, Antalya",
+      "id": "konyaalti-element-lab",
+      "placeId": "ChIJEXkhBAmRwxQRDjCWwLg6lKs",
+      "name": "Element Lab Coffee",
+      "address": "Gürsu, Gazi Mustafa Kemal Blv. 25/A, 07070 Konyaaltı/Antalya",
+      "neighborhood": "Gürsu GMK Blv., Konyaaltı Sahil",
       "categoryId": "kahve",
-      "rating": 4.3,
-      "mapsUri": "https://maps.google.com/?cid=926171898001516286",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=12363571442218315790",
       "coordinates": {
-        "lat": 36.846119099999996,
-        "lng": 30.604664500000002
+        "lat": 36.8646275,
+        "lng": 30.633804800000004
       },
-      "description": "Liman Akdeniz Bulvarı'nda yüksek tavanlı şık dekorasyonu, vitrinden taze çıkan kat kat tereyağlı tatlı ve tuzlu kruvasanlarıyla Konyaaltı'nın öne çıkan yeni kafe-pastane durağı.",
+      "description": "Gürsu Gazi Mustafa Kemal Bulvarı'nda sakin müzikleri, taze çiçekli sade masaları ve özenli demleme kahvelerinin yanındaki az unlu yoğun çikolatalı brownie'siyle dikkat çeken üçüncü nesil kahve dükkanı.",
       "whatToOrder": [
-        "Bademli Kruvasan",
-        "Çikolatalı & Meyveli Kruvasan",
-        "Somonlu / Roast Beef Kruvasan Sandviç"
+        "V60 / Filtre Kahve",
+        "Flat White",
+        "Matcha Latte"
       ],
       "menuFrom": [
-        "Sade Tereyağlı Kruvasan",
-        "Balkan Soslu Kruvasan Sandviç"
+        "Iced Americano",
+        "Cortado",
+        "Bitki Çayları"
       ],
       "alsoTry": [
-        "Medovik, Mille-feuille & Nitelikli Latte / Cappuccino — Kruvasan vitrini kadar kat kat ballı Medovik, çıtır mille-feuille pastalar ve köpüklü espresso bazlı kahveler yoğun talep görüyor."
+        "Az Unlu Çikolatalı Brownie & Elmalı Muffin — Düşük un oranlı yoğun çikolatalı brownie ile günlük çıkan elmalı muffin ve tuzlu kekler kahvenin yanına özellikle seçiliyor."
       ],
       "beforeYouGo": [
-        "Oturma & Servis: Yüksek tavanlı kristal avizeli şık iç salon ve ön teras masaları · Hafta sonları sabah ve öğleden sonra vitrin önünde yüksek ilgi",
-        "Dezavantaj: Popülerliği sebebiyle hafta sonu saatlerinde taze kruvasan ve pasta vitrini önünde kalabalık yaşanabiliyor; butik pastane fiyat bandındadır.",
-        "Ulaşım: Liman Mahallesi Akdeniz Bulvarı No:257 Fenix Center önünde Konyaaltı sahil aksında.",
+        "Oturma & Servis: Zarif ve sakin butik iç oturma düzeni · Kalabalık gürültüden uzak durmak isteyen kahve severlerle huzurlu",
+        "Dezavantaj: Küçük ölçekli butik dükkan olduğu için kalabalık arkadaş gruplarına geniş masa sunmaz; tam yemek mutfağı yoktur.",
+        "Ulaşım: Gürsu Mahallesi Gazi Mustafa Kemal Bulvarı No:25/A üzerinde Türkay Otel çaprazında.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "konyaalti-grazie-coffee",
+      "placeId": "ChIJbbERcXSRwxQR3DHziiKyFlo",
+      "name": "Grazie Coffee",
+      "address": "Grazie Coffee, Liman, 3. Sk. No:30/B, 07130 Konyaaltı/Antalya",
+      "neighborhood": "Liman 3. Sk., Konyaaltı Sahil",
+      "categoryId": "kahve",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=6491571774330974684",
+      "coordinates": {
+        "lat": 36.8525112,
+        "lng": 30.6221101
+      },
+      "description": "Liman 3. Sokak'ta sahil yürüyüş yoluna birkaç adımda modern ve evcil hayvan dostu ortamıyla flat white, matcha ve red velvet latte yanında günlük el yapımı tatlılar sunan yeni nesil kahve dükkanı.",
+      "whatToOrder": [
+        "Flat White",
+        "Red Velvet Latte",
+        "Matcha Latte"
+      ],
+      "menuFrom": [
+        "Iced Latte",
+        "Americano",
+        "Cortado"
+      ],
+      "alsoTry": [
+        "Ballı Medovik & Meyveli Tart — Günlük hazırlanan kat kat ballı Medovik dilimleri ile taze meyveli tart çeşitleri kahve molasını tamamlıyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Rahat çalışma masaları, evcil hayvan dostu iç salon ve sokak önü oturum · Sahil yürüyüşçüleri, uzaktan çalışanlar ve mahalle sakinleriyle dengeli",
+        "Dezavantaj: Tam kahvaltı ya da sıcak yemek menüsü bulunmaz; küçük mahalle dükkanı olduğundan yoğun saatlerde çalışma masaları dolabilir.",
+        "Ulaşım: Liman Mahallesi 3. Sokak No:30/B üzerinde sahil aksına yakın.",
         "Bütçe seviyesi (Google): Orta"
       ]
     },
@@ -383,8 +464,8 @@
       "id": "konyaalti-raw-coffee",
       "placeId": "ChIJm9IWRbCRwxQRufSYGnjeFqs",
       "name": "Raw Coffee Roaster",
-      "address": "Antalya, Arapsuyu, 605. Sk. No:2, 07000 Konyaaltı, Arapsuyu, 07030 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Arapsuyu · Konyaaltı, Antalya",
+      "address": "Antalya, Arapsuyu, 605. Sk. No:2, 07000 Konyaaltı, Arapsuyu, 07030 Konyaaltı/Antalya",
+      "neighborhood": "Arapsuyu 605. Sk., Konyaaltı Sahil",
       "categoryId": "kahve",
       "rating": 4.5,
       "mapsUri": "https://maps.google.com/?cid=12328285637396985017",
@@ -417,7 +498,7 @@
       "placeId": "ChIJh7ERGgeTwxQRfePuFXVpN94",
       "name": "Sensus Wine & Food Antalya",
       "address": "Liman, Akdeniz Blv. I Blok, 07130 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Liman · Konyaaltı, Antalya",
+      "neighborhood": "Akdeniz Blv., Liman / Konyaaltı Sahil",
       "categoryId": "date",
       "rating": 4.9,
       "mapsUri": "https://maps.google.com/?cid=16012382951739155325",
@@ -425,7 +506,7 @@
         "lat": 36.846116599999995,
         "lng": 30.604211499999998
       },
-      "description": "Liman Akdeniz Bulvarı'nda geniş Anadolu ve dünya şarap kavı, seçilmiş peynir eşleşmeleri ve şık tabaklarıyla Konyaaltı'nın yetişkin odaklı akşam buluşma adresi.",
+      "description": "Liman Akdeniz Bulvarı'nda geniş Anadolu ve dünya şarap kavı, seçilmiş peynir eşleşmeleri ve şık tabaklarıyla Konyaaltı Sahil'in yetişkin odaklı akşam buluşma adresi.",
       "whatToOrder": [
         "Yöresel Peynir & Şarküteri Tahtası",
         "Izgara Dana Bonfile Dilimleri",
@@ -449,7 +530,7 @@
       "placeId": "ChIJRco4qPWRwxQRq3IlqQluuT8",
       "name": "4 Köşe Restaurant",
       "address": "Gürsu, 306. Sk. No :12, 07070 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Gürsu · Konyaaltı, Antalya",
+      "neighborhood": "Gürsu 306. Sk., Konyaaltı Sahil",
       "categoryId": "date",
       "rating": 4.8,
       "mapsUri": "https://maps.google.com/?cid=4591822282852496043",
@@ -478,11 +559,11 @@
       ]
     },
     {
-      "id": "konyaalti-jetchef-bistro",
+      "id": "konyaalti-jetchef",
       "placeId": "ChIJ6yuPK9iRwxQR4Djt188a2Qo",
-      "name": "JETCHEF Bistro & Dining",
+      "name": "JETCHEF Bistro I Dining",
       "address": "Blue Garden Hotel, Arapsuyu, 605. Sk. No:1, 07070 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Arapsuyu · Konyaaltı, Antalya",
+      "neighborhood": "Arapsuyu 605. Sk., Konyaaltı Sahil",
       "categoryId": "date",
       "rating": 4.7,
       "mapsUri": "https://maps.google.com/?cid=781685490308692192",
@@ -501,7 +582,7 @@
         "Burrata & Fırın Domates"
       ],
       "alsoTry": [
-        "Ev Yapımı Brownie / San Sebastian & Özel Soslu Starterlar — Akşam servisinde tatlı kapanışı ve paylaşım başlangıçları şık sunumuyla öne çıkıyor."
+        "Ev Yapımı Brownie / San Sebastian & Paylaşım Başlangıçları — Akşam servisinde tatlı kapanışı ve paylaşım başlangıçları şık sunumuyla öne çıkıyor."
       ],
       "beforeYouGo": [
         "Oturma & Servis: Yumuşak aydınlatmalı şık bistro salonu ve sakin bahçe alanı · Çiftler ve iş buluşmalarıyla düzenli akşam kalabalığı",
@@ -511,11 +592,11 @@
       ]
     },
     {
-      "id": "konyaalti-sira-konyaalti",
+      "id": "konyaalti-sira",
       "placeId": "ChIJQeRLggeTwxQRKIpGXZqdXgk",
       "name": "Sıra Konyaaltı",
       "address": "İnş. A Blok Büfe, Gürsu, Atatürk Blv. D:1 No:231, 07580 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Gürsu (Sahil) · Konyaaltı, Antalya",
+      "neighborhood": "Atatürk Blv., Gürsu / Konyaaltı Sahil",
       "categoryId": "date",
       "rating": 4.7,
       "mapsUri": "https://maps.google.com/?cid=675150280467581480",
@@ -548,7 +629,7 @@
       "placeId": "ChIJz8XP05slwhQRASBCV1vS2Ec",
       "name": "7 Mehmet Restaurant",
       "address": "Meltem Mahallesi, Atatürk Kültür Parkı, Dumlupınar Bulvarı No:201, Meltem, 07030 Muratpaşa/Antalya, Türkiye",
-      "neighborhood": "Atatürk Kültür Parkı (Konyaaltı Üstü) · Antalya",
+      "neighborhood": "Atatürk Kültür Parkı, Konyaaltı Sahil",
       "categoryId": "date",
       "rating": 4.1,
       "mapsUri": "https://maps.google.com/?cid=5177119061410193409",
@@ -556,131 +637,98 @@
         "lat": 36.881158,
         "lng": 30.663344
       },
-      "description": "1937'den beri Akdeniz gastronomisine yön veren, Atatürk Kültür Parkı'nın Konyaaltı sahiline ve Beydağları'na bakan park konumuyla Antalya'da özel günlerin ve misafir ağırlamanın 1. derece simge restoranı.",
+      "description": "1937'den beri Akdeniz gastronomisine yön veren, Atatürk Kültür Parkı'nın Konyaaltı sahiline ve Beydağları'na bakan park konumuyla Antalya'da özel günlerin ve misafir ağırlamanın köklü simge restoranı.",
       "whatToOrder": [
         "Ağır Ateşte Kuzu Tandır",
-        "Bademli & Bergamotlu İç Pilav",
-        "Tahinli Cevizli Kaymaklı Kabak Tatlısı"
+        "Sezen Pilavı (Ciğerli & Bademli)",
+        "Bergamot & Bademli İç Pilav"
       ],
       "menuFrom": [
         "Kokoreç & Uykuluk Şiş",
         "Mevsimlik Yabani Ot Mezeleri"
       ],
       "alsoTry": [
-        "Çifte Kavrulmuş Tahinli, Cevizli ve Manda Kaymaklı Kabak Tatlısı & 7 Mehmet Mezeleri — Ana yemek öncesi Antalya yayla otları-cacık-tereyağlı ciğer mezeleri ve kapanıştaki aile reçeteli kaymaklı kabak tatlısı ulusal ölçekte tanınıyor."
+        "Çifte Kavrulmuş Tahinli, Cevizli ve Manda Kaymaklı Kabak Tatlısı — Kuruluş yılından bu yana aile reçetesiyle düşük ısıda karamelize edilip çifte kavrulmuş tahin, ceviz ve manda kaymağıyla servis edilen imza tatlı."
       ],
       "beforeYouGo": [
         "Oturma & Servis: Konyaaltı sahil üstü geniş yeşil teras, zarif iç salon ve özel davet masaları · Öğle ve akşamları özel misafirler ve kutlama gruplarıyla dolu",
-        "Dezavantaj: Şehrin en yüksek fiyat segmentinde yer alır; akşam ve hafta sonu öğle yemekleri için günler öncesinden rezervasyon yapılması gerekir (paket servis yoktur).",
+        "Dezavantaj: Şehrin en yüksek fiyat segmentinde yer alır; yüksek masa sirkülasyonu nedeniyle yoğun saatlerde servis temposu gürültülü hissedilebilir ve akşam ya da hafta sonu için günler öncesinden rezervasyon gerekir.",
         "Ulaşım: Meltem Mahallesi Atatürk Kültür Parkı Dumlupınar Bulvarı No:201 üzerinde Konyaaltı plajı üst terasında.",
         "Bütçe seviyesi (Google): Yüksek"
       ]
     },
     {
-      "id": "konyaalti-cetin-mola-cakirlar",
-      "placeId": "ChIJP_UPcVWTwxQR1TKMb0ZJzKw",
-      "name": "Çetin Mola Çakırlar",
-      "address": "Çakırlar Mevkii, Akdamlar Cd No:94/1, 07070 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Çakırlar · Konyaaltı, Antalya",
+      "id": "konyaalti-cafe-pouchkine",
+      "placeId": "ChIJWcz8zfSTwxQR_mZUJW9s2gw",
+      "name": "Cafe Pouchkine Antalya",
+      "address": "Liman, Akdeniz Blv. No: 257, 07130, 07070 Konyaaltı/Antalya",
+      "neighborhood": "Akdeniz Blv., Liman / Konyaaltı Sahil",
       "categoryId": "kahvalti",
-      "rating": 4.6,
-      "mapsUri": "https://maps.google.com/?cid=12451407636640576213",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=926171898001516286",
       "coordinates": {
-        "lat": 36.8637392,
-        "lng": 30.530566999999998
+        "lat": 36.846119099999996,
+        "lng": 30.604664500000002
       },
-      "description": "Konyaaltı Çakırlar'da narenciye bahçeleri içinde odun ateşindeki sacda taze açılan otlu-peynirli gözlemeleri ve doğal köy kahvaltısıyla hafta sonu geleneğini yaşatan bahçe durağı.",
+      "description": "Liman Akdeniz Bulvarı'nda yüksek tavanlı şık dekorasyonu, vitrinden taze çıkan kat kat tereyağlı tatlı ve tuzlu kruvasan sandviçleriyle sahil hattının öne çıkan kahvaltı ve pastane durağı.",
       "whatToOrder": [
-        "Serpme Çakırlar Köy Kahvaltısı",
-        "Odun Ateşi Ispanaklı & Peynirli Gözleme",
-        "Sıcak Bazlama & Tereyağı"
+        "Bademli Kruvasan",
+        "Çikolatalı & Meyveli Kruvasan",
+        "Somonlu / Roast Beef Kruvasan Sandviç"
       ],
       "menuFrom": [
-        "Kavurmalı Yumurta",
-        "Patatesli Gözleme"
+        "Sade Tereyağlı Kruvasan",
+        "Balkan Soslu Kruvasan Sandviç"
       ],
       "alsoTry": [
-        "Kıymalı Kaşarlı Sac Gözlemesi & Köpüklü Yayık Ayran — Soğuk kahvaltılıklardan sonra sıcacık sacdan inen kıymalı gözleme ve soğuk bakır bardak ayran Çakırlar klasiği."
+        "Ballı Medovik, Mille-feuille & Nitelikli Latte / Cappuccino — Kruvasan vitrini kadar kat kat ballı Medovik, çıtır mille-feuille pastalar ve köpüklü espresso bazlı kahveler yoğun talep görüyor."
       ],
       "beforeYouGo": [
-        "Oturma & Servis: Ağaç gölgesinde açık bahçe sedirleri ve kapalı cam çardaklar · Cumartesi-Pazar sabahları Antalyalı ailelerle oldukça kalabalık",
-        "Dezavantaj: Konyaaltı sahiline araçla 10-15 dakikalık mesafedeki Çakırlar yolunda bulunur; hafta sonu servis temposu yoğunluktan ağırlaşabilir.",
-        "Ulaşım: Çakırlar Mevkii Akdamlar Caddesi No:94/1 (ücretsiz geniş bahçe otoparkı).",
+        "Oturma & Servis: Yüksek tavanlı kristal avizeli şık iç salon ve ön teras masaları · Hafta sonları sabah ve öğleden sonra vitrin önünde yüksek ilgi",
+        "Dezavantaj: Popülerliği sebebiyle hafta sonu saatlerinde taze kruvasan ve pasta vitrini önünde kalabalık yaşanabiliyor; butik pastane fiyat bandındadır.",
+        "Ulaşım: Liman Mahallesi Akdeniz Bulvarı No:257 Fenix Center önünde Konyaaltı sahil aksında.",
         "Bütçe seviyesi (Google): Orta"
       ]
     },
     {
-      "id": "konyaalti-koyum-gozleme",
-      "placeId": "ChIJh2_BSwaTwxQR49aTCXVvk0M",
-      "name": "Köyüm Gözleme ve Kahvaltı Evi",
-      "address": "Bahtılı, 3351 Sokak No:4, 07070 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Bahtılı (Çakırlar Rotası) · Konyaaltı, Antalya",
+      "id": "konyaalti-brunchella",
+      "placeId": "ChIJs4pDxoGRwxQRfdm94sYBrhE",
+      "name": "Brunchella Breakfast & Cafe",
+      "address": "Kuşkavağı, 542. Sk. no4/a, 07070 Konyaaltı/Antalya",
+      "neighborhood": "Kuşkavağı 542. Sk., Konyaaltı Sahil",
       "categoryId": "kahvalti",
-      "rating": 4.6,
-      "mapsUri": "https://maps.google.com/?cid=4869358170580178659",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=1273957698311674237",
       "coordinates": {
-        "lat": 36.8817844,
-        "lng": 30.5700086
+        "lat": 36.870585999999996,
+        "lng": 30.649275999999997
       },
-      "description": "Bahtılı köyü içinde sakin aile bahçesinde taze sıkma meyve suları, pişi ve bol malzemeli el açması sac gözlemeleriyle yoğun kalabalıktan bir adım uzakta temiz kahvaltı sunuyor.",
+      "description": "Kuşkavağı 542. Sokak'ta samimi bir aile işletmesi sıcaklığıyla sunulan bol tereyağlı sucuklu yumurtalı imza SimitChella'sı, anne usulü menemeni ve günlük poğaçalarıyla sevilen butik kahvaltıcı.",
       "whatToOrder": [
-        "Serpme Köy Kahvaltısı",
-        "El Açması Otlu Peynirli Gözleme",
-        "Sıcak Pişi & Çökelek"
+        "SimitChella (Kaşar, Sucuk & Yumurta)",
+        "Zengin Kahvaltı Tabağı",
+        "Anne Usulü Menemen"
       ],
       "menuFrom": [
-        "Menemen",
-        "Kaşarlı Sucuklu Gözleme"
+        "Tereyağlı Sucuklu Yumurta",
+        "Günlük Pişi & Poğaça"
       ],
       "alsoTry": [
-        "Patatesli-Peynirli Çıtır Gözleme & Semaver Çay — Masaya koyulan semaver çay ve dumanı üstünde çıtır sac gözlemesi rahat kahvaltı ortamını tamamlıyor."
+        "Taze Simit, Açma & Ev Reçelleri — Sabah vitrininden çıkan sıcak simit, açma ve günlük hazırlanan ev reçelleri kahvaltıyı tamamlıyor."
       ],
       "beforeYouGo": [
-        "Oturma & Servis: Doğal ağaçlık bahçe masaları ve korunaklı veranda · Hafta sonları ailelerle sıcak ama Çakırlar merkezine göre daha rahat",
-        "Dezavantaj: Köy içi konumunda olduğu için toplu taşımadan ziyade şahsi araçla ulaşmak çok daha kolaydır.",
-        "Ulaşım: Bahtılı Mahallesi 3351. Sokak No:4 üzerinde Uncalı batı çıkışında.",
+        "Oturma & Servis: Samimi iç masa düzeni ve ara sokak gölgeli dış oturum · Sabah saatlerinde komşular ve müdavim ailelerle sıcak ve hareketli",
+        "Dezavantaj: Küçük ölçekli butik bir işletme olduğundan hafta sonu geç kahvaltı saatlerinde masalar çabuk dolabilir ve servis sipariş yoğunluğunda biraz bekletebilir.",
+        "Ulaşım: Kuşkavağı Mahallesi 542. Sokak No:4/A üzerinde sahil bandına yürüyüş mesafesinde.",
         "Bütçe seviyesi (Google): Orta"
       ]
     },
     {
-      "id": "konyaalti-cakirlar-sedir",
-      "placeId": "ChIJyYUZg1WTwxQReBrfSNnCov8",
-      "name": "Çakırlar Sedir Gözleme",
-      "address": "Akdamlar MAH.AKDAMLAR CAD. SOSYETE PAZARI, Sosyete pazarı, Akdamlar, Akdamlar Caddesi, 07075 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Çakırlar · Konyaaltı, Antalya",
-      "categoryId": "kahvalti",
-      "rating": 4.2,
-      "mapsUri": "https://maps.google.com/?cid=18420499664385022584",
-      "coordinates": {
-        "lat": 36.8631658,
-        "lng": 30.5309705
-      },
-      "description": "Çakırlar köy pazarının yanı başında yer sedirlerinde oturan yerlilerin hafta sonu odun ateşi gözlemesi, sıkma ve açık yayık ayran aldığı köklü Çakırlar klasiği.",
-      "whatToOrder": [
-        "Otlu & Çökelekli Sac Gözlemesi",
-        "Kıymalı Gözleme",
-        "Köpüklü Yayık Ayran"
-      ],
-      "menuFrom": [
-        "Sade Tereyağlı Sıkma",
-        "Patatesli Gözleme"
-      ],
-      "alsoTry": [
-        "Keşli-Cevizli Gözleme & Bakır Maşrapada Yayık Ayran — Geleneksel çökelek/keş ve ceviz iç harcıyla açılan sac gözlemesi ile buz gibi yayık ayran pazar dönüşü ritüelini tamamlıyor."
-      ],
-      "beforeYouGo": [
-        "Oturma & Servis: Üstü kapalı gölgelik altında geleneksel minderli yer sedirleri ve masalar · Hafta sonları Çakırlar pazarı kalabalığıyla oldukça hareketli",
-        "Dezavantaj: Geleneksel kır pazarı düzeni olduğu için yoğun gürültü ve park alanı kalabalığı yaşanabilir; lüks servis beklememek gerekir.",
-        "Ulaşım: Akdamlar Caddesi Çakırlar Sosyete Pazarı bitişiğinde.",
-        "Bütçe seviyesi (Google): Orta"
-      ]
-    },
-    {
-      "id": "konyaalti-vilanel-bakery",
+      "id": "konyaalti-vilanel",
       "placeId": "ChIJoQ4VmBCRwxQRLP7hf7-6ZJs",
       "name": "Vilanel Bakery",
-      "address": "turkish apt, Altınkum, 414. Sk. no:5/a, 07070 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Altınkum · Konyaaltı, Antalya",
+      "address": "turkish apt, Altınkum, 414. Sk. no:5/a, 07070 Konyaaltı/Antalya",
+      "neighborhood": "Altınkum 414. Sk., Konyaaltı Sahil",
       "categoryId": "kahvalti",
       "rating": 4.7,
       "mapsUri": "https://maps.google.com/?cid=11197279905196932652",
@@ -688,31 +736,165 @@
         "lat": 36.8642007,
         "lng": 30.635254600000003
       },
-      "description": "Altınkum 414. Sokak'ta günlük ekşi mayalı ekmekler, vişneli-fıstıklı hamur işleri ve dengeli espresso barıyla yerlilerin sabah ve öğleden sonra uğradığı butik fırın-kafe.",
+      "description": "Altınkum 414. Sokak'ta günlük ekşi mayalı ekmekler, fıstıklı kruvasanlar, tartine tabakları ve dengeli espresso barıyla yerlilerin sabah kahvaltısı için uğradığı butik fırın-kafe.",
       "whatToOrder": [
-        "Flat White",
-        "V60 Filtre Kahve",
-        "Cortado"
+        "Ekşi Maya Tartine & Kahvaltı Tabağı",
+        "Fıstıklı & Vişneli Kruvasan",
+        "Flat White / V60 Kahve"
       ],
       "menuFrom": [
-        "Iced Latte",
-        "Americano"
+        "Artizan Ekşi Mayalı Ekmekler",
+        "Cortado & Iced Latte"
       ],
       "alsoTry": [
-        "Ekşi Maya Tartine, Fıstıklı Kruvasan & Limonlu Tart — Fırın bölümünde pişen ekşi mayalı açık sandviçler, çıtır kruvasanlar ve limonlu tart kahvenin başlıca eşlikçileri."
+        "Limonlu Tart & Mevsim Meyveli Danış — Fırın bölümünde pişen limonlu tart ve katmanlı hamur işleri sabah kahvaltısının tatlı eşlikçileri."
       ],
       "beforeYouGo": [
-        "Oturma & Servis: Aydınlık iç dükkan masaları ve gölgeli dış oturum · Sabah saatleri ekmek alanlar ve gün içi kahve içenlerle canlı",
+        "Oturma & Servis: Aydınlık iç dükkan masaları ve gölgeli dış oturum · Sabah saatleri ekmek alanlar ve kahvaltı edenlerle canlı",
         "Dezavantaj: Öğleden sonra en çok aranan hamur işi çeşitleri tükenebiliyor; masa kapasitesi hafta sonları yetersiz kalabiliyor.",
         "Ulaşım: Altınkum Mahallesi 414. Sokak No:5A üzerinde Kent Meydanı yürüyüş mesafesinde."
       ]
     },
     {
+      "id": "konyaalti-keen-break",
+      "placeId": "ChIJPTvcy4yRwxQRHMv8rowNV6k",
+      "name": "KEEN Break & Bread Co.",
+      "address": "Gürsu mah. 355 Sk, Gürsu, Kasaba Sk. N BLOK NO: 19NF, 07070 Konyaaltı/Antalya",
+      "neighborhood": "Gürsu 355. Sk., Konyaaltı Sahil",
+      "categoryId": "kahvalti",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=12202236613266033436",
+      "coordinates": {
+        "lat": 36.864497799999995,
+        "lng": 30.623736699999995
+      },
+      "description": "Gürsu 355. Sokak'ta günlük pişirdiği ekşi mayalı ve siyez ekmeklerin üstünde avokado tost, Korean toast ve reçelli sırniki tabaklarıyla modern sahil brunch kültürünü temsil eden şef fırın-kafe.",
+      "whatToOrder": [
+        "Sırniki (Çilekli & Ahududu Reçelli)",
+        "Ekşi Maya Avokado Tost",
+        "Korean Toast"
+      ],
+      "menuFrom": [
+        "Otlu Çırpılmış Yumurta Tabağı",
+        "Karamelli Pankek",
+        "Siyez & Ekşi Mayalı Ekmekler"
+      ],
+      "alsoTry": [
+        "Özel Karışım Limonata & Fransız Tostu — Ev yapımı narenciye limonatası, çırpılmış peynirli tatlı kahvaltılar ve tavada Fransız tostu brunch menüsünün öne çıkan eşlikçileri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Modern ve ferah iç salon ile site içi sakin dış oturma alanı · Sabah ve öğleden sonra brunch sevenler ve spor sonrası müdavimlerle dengeli",
+        "Dezavantaj: Geleneksel serpme kahvaltı yerine tek tabak modern brunch ve tatlı tost odaklıdır; klasik serpme arayanlara uygun değildir.",
+        "Ulaşım: Gürsu Mahallesi 355. Sokak Kasaba Sokak N Blok No:19NF üzerinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "konyaalti-koftemix",
+      "placeId": "ChIJ8ycBXgCTwxQRfSPOF-Iuklo",
+      "name": "Köftemix",
+      "address": "Liman, 7. Sk. No:3, 07130 Konyaaltı/Antalya",
+      "neighborhood": "Liman 7. Sk., Konyaaltı Sahil",
+      "categoryId": "denemelisin",
+      "rating": 5,
+      "mapsUri": "https://maps.google.com/?cid=6526330358610142077",
+      "coordinates": {
+        "lat": 36.851543,
+        "lng": 30.617551000000002
+      },
+      "description": "Liman 7. Sokak'ta günlük taze dana kıymadan hazırlanan kaşarlı ve sade ızgara köfteleri, köfteli alinaziği ve temiz aile lokantası düzeniyle öne çıkan yüksek puanlı köfte durağı.",
+      "whatToOrder": [
+        "Kaşarlı Izgara Köfte",
+        "Köfteli Alinazik",
+        "Pilavlı Dana Köfte"
+      ],
+      "menuFrom": [
+        "Ekmek Arası Izgara Köfte",
+        "Köftemix Cheeseburger"
+      ],
+      "alsoTry": [
+        "Sumaklı Soğan Salatası, Pirinç Pilavı & Şalgam Suyu — Köfte tabaklarının yanında pirinç pilavı, kırmızı lahana turşusu, sumaklı soğan ve soğuk şalgam suyu aile lokantası geleneğini tamamlıyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Sade, tertemiz esnaf lokantası iç salonu ve sokak önü birkaç masa · Öğle ve akşam saatlerinde mahalle sakinleri ve ailelerle düzenli doluluk",
+        "Dezavantaj: Gösterişsiz küçük bir aile lokantası düzenindedir; uzun akşam davetlerinden çok temiz ve doyurucu köfte yemeğine odaklıdır.",
+        "Ulaşım: Liman Mahallesi 7. Sokak No:3 üzerinde Boğaçay batısında.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "konyaalti-evs-bakery",
+      "placeId": "ChIJW5yBebiRwxQREVGxvMBV5yU",
+      "name": "Ev's Artisan Bakery & Coffee",
+      "address": "Kuşkavağı, Belediye Cd. No: 35/2, 07070 Konyaaltı/Antalya",
+      "neighborhood": "Belediye Cd., Kuşkavağı / Konyaaltı Sahil",
+      "categoryId": "denemelisin",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=2731245985311314193",
+      "coordinates": {
+        "lat": 36.8726377,
+        "lng": 30.6508778
+      },
+      "description": "Kuşkavağı Belediye Caddesi'nde taze hazırlanmış doyurucu artisan sandviçleri, kruvasanları, tiramisusu ve nitelikli kahve barıyla sakin bir mola sunan butik fırın-kafe.",
+      "whatToOrder": [
+        "Artisan Sandviç Çeşitleri",
+        "Tereyağlı Kruvasan",
+        "Nitelikli Filtre / Espresso Kahve"
+      ],
+      "menuFrom": [
+        "Soğuk Demleme Kahveler",
+        "Günlük Unlu Mamuller"
+      ],
+      "alsoTry": [
+        "Ev Yapımı Tiramisu & Günlük Fırın Tatlıları — Kahve ve sandviç molasının ardından vitrinden seçilen tiramisu ile taze fırın tatlıları öne çıkıyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Şık, sakin iç oturum alanı ve cadde önü küçük masalar · Sabah kahvaltısı ve öğleden sonra sakin mola arayan semt sakinleriyle dengeli",
+        "Dezavantaj: Büyük gruplar için masa alanı kısıtlıdır; gün sonuna doğru vitrindeki kruvasan ve sandviç çeşitleri azalabilir.",
+        "Ulaşım: Kuşkavağı Mahallesi Belediye Caddesi No:35/2 üzerinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "konyaalti-casaba-mahir",
+      "placeId": "ChIJyRl46veRwxQRkJ7DRzOIckg",
+      "name": "Casaba Mahir",
+      "address": "Özpınarlar Casaba, Gürsu, 350. Sk. konutları no:25, 07070 Konyaaltı/Antalya",
+      "neighborhood": "Gürsu 350. Sk., Konyaaltı Sahil",
+      "categoryId": "denemelisin",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=5220384671904538256",
+      "coordinates": {
+        "lat": 36.8632859,
+        "lng": 30.6244065
+      },
+      "description": "Gürsu 350. Sokak'ta sabah serpme ve fit kahvaltısından akşam beğendili kuşbaşı ve dana bonfile sac tavaya uzanan özenli mutfağıyla mahallenin yüksek beğenili tüm gün restoranı.",
+      "whatToOrder": [
+        "Beğendili Kuşbaşı",
+        "Dana Bonfile Sac Tava",
+        "Casaba Serpme Kahvaltı"
+      ],
+      "menuFrom": [
+        "Gözleme Çeşitleri & Atom Tost",
+        "Izgara Köfte & Tavuk Şiş",
+        "Fit Kahvaltı"
+      ],
+      "alsoTry": [
+        "Günün Çorbası, Tatlılar & Kahve Serisi — Öğle ve akşam yemeklerinde sıcak mercimek çorbası ile yemek sonrası özel tatlı ve kahve seçenekleri sıkça tercih ediliyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Konut sitesi altında ferah iç salon ve gölgeli bahçe terası · Sabah kahvaltısı ve akşam yemeğinde Gürsu sakinleri ile ailelerle canlı",
+        "Dezavantaj: Gürsu iç kesimindeki konut sitesi altında yer aldığı için sahil yürüyüş bandından birkaç dakika içeride kalır; akşam yoğunluğunda önceden masa ayırtmak yararlıdır.",
+        "Ulaşım: Gürsu Mahallesi 350. Sokak Özpınarlar Casaba Konutları No:25 üzerinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
       "id": "konyaalti-ada-islama-kofte",
       "placeId": "ChIJqw_wYXeRwxQRBYvDsJf2o7s",
-      "name": "Ada Islama Köfte & Restaurant",
+      "name": "Ada Restaurant",
       "address": "Villa Çetin, Gürsu, 306. Sk. No:3, 07070 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Gürsu · Konyaaltı, Antalya",
+      "neighborhood": "Gürsu 306. Sk., Konyaaltı Sahil",
       "categoryId": "denemelisin",
       "rating": 4.7,
       "mapsUri": "https://maps.google.com/?cid=13520921637662460677",
@@ -720,11 +902,11 @@
         "lat": 36.8623739,
         "lng": 30.635402900000003
       },
-      "description": "Gürsu'da kemik suyu ve kırmızı toz biber sosuna batırılıp ızgaralanan ekmeklerin üstünde sulu ıslama köfteler sunan yüksek puanlı uzmanlık lokantası.",
+      "description": "Gürsu'da kemik suyu ve kırmızı toz biber sosuna batırılıp ızgaralanan ekmeklerin üstünde sulu Adapazarı usulü ıslama köfteler sunan yüksek puanlı uzmanlık lokantası.",
       "whatToOrder": [
         "Adapazarı Usulü Islama Köfte",
         "Izgara Kasap Köfte",
-        "Antalya / Piyaz Tabağı"
+        "Antalya Tahinli Piyaz"
       ],
       "menuFrom": [
         "Yoğurtlu Köfte",
@@ -741,109 +923,110 @@
       ]
     },
     {
-      "id": "konyaalti-pacaci-saban",
-      "placeId": "ChIJa2QZe8GRwxQRKRst1O90XKU",
-      "name": "Paçacı Şaban Konyaaltı",
-      "address": "Öğretmenevleri, Öğretmenler Cd. No:27/A, 07070 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Öğretmenevleri · Konyaaltı, Antalya",
+      "id": "konyaalti-lena-brunch",
+      "placeId": "ChIJwbkxCRWTwxQR3oxPBUqTGoI",
+      "name": "LENA Brunch-Breakfast",
+      "address": "Liman, 27. Sk. No:13, 07130 Konyaaltı/Antalya",
+      "neighborhood": "Liman 27. Sk., Konyaaltı Sahil",
       "categoryId": "denemelisin",
-      "rating": 4.1,
-      "mapsUri": "https://maps.google.com/?cid=11915527287521221417",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=9374967520451071198",
       "coordinates": {
-        "lat": 36.8748836,
-        "lng": 30.6409917
+        "lat": 36.849548999999996,
+        "lng": 30.616051
       },
-      "description": "Öğretmenevleri'nde klasik Konyaaltı esnaf çorbacısı geleneğini sürdüren, uzun süre kaynatılmış kemik suyuyla kelle paça ve işkembe sunan müdavim durağı.",
+      "description": "Liman 27. Sokak'ta huzurlu bahçesi ve seçkin müzikleriyle somonlu avokadolu tost, tatlı-tuzlu krep çeşitleri, smoothie bowl ve ev yapımı banana bread ile akşamüstüne dek hizmet veren brunch durağı.",
       "whatToOrder": [
-        "Sarımsaklı Terbiyeli Kelle Paça",
-        "Sade Ayak Paça",
-        "Kuzudan İşkembe Çorbası"
+        "Somonlu Avokadolu Tost",
+        "LENA Brunch Tabağı",
+        "Tuzlu & Tatlı Krep Çeşitleri"
       ],
       "menuFrom": [
-        "Ezogelin Çorbası",
-        "Tuzlama"
+        "Smoothie Bowl",
+        "Panini Tostlar",
+        "Nitelikli Kahve Barı"
       ],
       "alsoTry": [
-        "Kızarmış Fırın Sütlaç & Sarımsak Soslu Çorba Ekstrası — Çorba sonrası vitrinden sunulan klasik fırın sütlaç gece geç saatlerin sade tatlı kapanışı."
+        "Ev Yapımı Banana Bread, Brookie & Tarta Caprese — Brunch sonrası kahve yanında sunulan muzlu ekmek, brookie ve bademli çikolatalı kek dilimleri öne çıkıyor."
       ],
       "beforeYouGo": [
-        "Oturma & Servis: Geniş klasik çorbacı salonu ve hızlı servis masaları · Öğle esnafı ve gece geç saatlerde yüksek sirkülasyon",
-        "Dezavantaj: Geleneksel yoğun tempolu esnaf çorbacısı düzeninde olduğu için sakatat/sarımsak kokusu belirgindir.",
-        "Ulaşım: Öğretmenevleri Mahallesi Öğretmenler Caddesi No:27A üzerinde.",
+        "Oturma & Servis: Sakin açık bahçe masaları ve aydınlık iç mekan · Sabah ve öğleden sonra sakin brunch keyfi yapanlarla dengeli",
+        "Dezavantaj: Gündüz ve erken akşamüstü odaklı çalıştığından akşam yemeği servisi sunmaz; bazı hafta içi günlerinde kapalı olabileceği için önceden teyit yararlıdır.",
+        "Ulaşım: Liman Mahallesi 27. Sokak No:13 üzerinde sahil yürüyüş aksına yakın.",
         "Bütçe seviyesi (Google): Orta"
       ]
     },
     {
-      "id": "konyaalti-gilig-dondurma",
-      "placeId": "ChIJL7C3mvqRwxQRNXDVwNRDL1w",
-      "name": "Giliğ Dondurma Konyaaltı",
-      "address": "Toros, Atatürk Blv. No:56, 07030 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Toros · Konyaaltı, Antalya",
+      "id": "konyaalti-sahil-sandvic",
+      "placeId": "ChIJG12kou6TwxQRsOU0sYepFxg",
+      "name": "Sahil Sandviç Cafe",
+      "address": "Kuşkavağı, Akdeniz Blv. No:106A, 07070 Konyaaltı/Antalya",
+      "neighborhood": "Akdeniz Blv., Kuşkavağı / Konyaaltı Sahil",
       "categoryId": "denemelisin",
       "rating": 4.5,
-      "mapsUri": "https://maps.google.com/?cid=6642602556442112053",
+      "mapsUri": "https://maps.google.com/?cid=1736042581633328560",
       "coordinates": {
-        "lat": 36.8772519,
-        "lng": 30.6455793
+        "lat": 36.8705417,
+        "lng": 30.65103
       },
-      "description": "Atatürk Bulvarı üzerinde Antalya'nın yerel markası Giliğ'in gerçek keçi sütünden hazırladığı yanıksı ve bademli dondurmalarını sunan yüksek hacimli dondurma durağı.",
+      "description": "Akdeniz Bulvarı sahil şeridinde pratik sandviç ve tost çeşitlerinin yanında taze hazırlanan sushi, ramen ve noodle gibi Uzak Doğu mutfağı lezzetlerini bir arada sunan özgün sahil durağı.",
       "whatToOrder": [
-        "Yanıksı Sade Keçi Dondurma",
-        "Kavrulmuş Bademli",
-        "Tahinli Cevizli"
+        "Özel Sahil Sandviçleri",
+        "Ev Usulü Ramen & Noodle Çeşitleri",
+        "Taze Sushi Seçkisi"
       ],
       "menuFrom": [
-        "Şeftali / Çilek Sorbe",
-        "Bitter Çikolata"
+        "Sıcak Tost Çeşitleri",
+        "Uzak Doğu Usulü Tavuk & Sebze Tabakları"
       ],
       "alsoTry": [
-        "Cevizli/Bademli Dondurma Kupası & Kış Aylarında Sıcak Sahlep — Klasik külah dışında kase içi tahinli-bademli sunum ve kışın tarçınlı sıcak sahlep yerlilerin yıllardır uğrama sebebi."
+        "Çıtır Atıştırmalıklar & Soğuk İçecek Eşlikçileri — Klasik sahil sandviçlerinin yanı sıra Uzak Doğu mutfağından noodle ve sushi çeşitleri tek adreste buluşuyor."
       ],
       "beforeYouGo": [
-        "Oturma & Servis: Al-götür külah/kap servisi ve kısa mola düzeni · Yaz akşamları kaldırımda uzun dondurma sırası oluşuyor",
-        "Dezavantaj: Dine-in masa alanı bulunmaz; yalnızca paket veya ayakta hızlı külah servisi vardır ve akşamları sıra beklenir.",
-        "Ulaşım: Toros Mahallesi Atatürk Bulvarı No:56 üzerinde Konyaaltı sahil paralelinde."
+        "Oturma & Servis: Samimi iç masa düzeni ve sahil bulvarı önü hızlı servis oturumu · Sahil yürüyüşçüleri, öğle atıştırmalıkçıları ve Asya mutfağı meraklılarıyla canlı",
+        "Dezavantaj: Dış tabelası klasik bir sandviç kafe izlenimi verdiği için Asya mutfağı bölümü ilk kez gelenlerce gözden kaçabiliyor; şık restoran ambiyansından ziyade rahat sahil dükkanı düzenindedir.",
+        "Ulaşım: Kuşkavağı Mahallesi Akdeniz Bulvarı No:106A üzerinde Konyaaltı sahil bandında."
       ]
     },
     {
-      "id": "konyaalti-shakespeare-gursu",
-      "placeId": "ChIJ9UHyH26RwxQRTkRROjOcP6M",
-      "name": "Shakespeare Coffee & Bistro Gürsu",
-      "address": "Gürsu, 304. Sk. No: 2, 07070 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Gürsu · Konyaaltı, Antalya",
-      "categoryId": "denemelisin",
-      "rating": 4.5,
-      "mapsUri": "https://maps.google.com/?cid=11763292495550694478",
+      "id": "konyaalti-adabi-balik",
+      "placeId": "ChIJ14FQZ4mRwxQRkni2yoDsOo4",
+      "name": "Adab-ı Balık Fish Restaurant",
+      "address": "Gürsu, Atatürk Blv., 07070 Konyaaltı/Antalya",
+      "neighborhood": "Atatürk Blv., Gürsu / Konyaaltı Sahil",
+      "categoryId": "balik",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=10248763939935910034",
       "coordinates": {
-        "lat": 36.8622326,
-        "lng": 30.635983799999998
+        "lat": 36.8628698,
+        "lng": 30.6297696
       },
-      "description": "Antalya çıkışlı köklü bistro markası Shakespeare'in Gürsu'daki popüler buluşma noktası; gün boyu kahvaltı, salata, makarna ve vitrin tatlılarıyla her saate hitap ediyor.",
+      "description": "Gürsu Atatürk Bulvarı'nda günlük balık vitrini, özenle hazırlanmış Akdeniz mezeleri ve düzenli servis ekibiyle Konyaaltı Sahil'in yüksek puanlı deniz ürünleri restoranı.",
       "whatToOrder": [
-        "Kajun Baharatlı Tavuk Salata",
-        "El Yapımı Lazanya / Makarna",
-        "Beef Fajita"
+        "Izgara Lagos / Kaya Levreği",
+        "Tereyağlı Karides & Kalamar",
+        "Ahtapot Izgara"
       ],
       "menuFrom": [
-        "Serpme Bistro Kahvaltı",
-        "Izgara Somon"
+        "Deniz Levreği Buğulama",
+        "Barbun Tava"
       ],
       "alsoTry": [
-        "Taze Orman Meyveli Cheesecake & Espresso Barı — Geniş tatlı vitrinindeki orman meyveli pastalar ve espresso içecekleri akşamüstü kahve buluşmalarında sık seçiliyor."
+        "Deniz Mahsullü Ara Sıcaklar & Fırınlanmış Tahinli Helva — Ana balık öncesi sunulan şefin ara sıcak seçkisi ve kapanıştaki sıcak tahinli helva çok beğeniliyor."
       ],
       "beforeYouGo": [
-        "Oturma & Servis: Geniş çok masalı bahçe verandası ve ferah yüksek tavanlı iç salon · Sabah kahvaltısından gece yarısına sürekli canlı sosyal kalabalık",
-        "Dezavantaj: Gürsu ana kavşak köşesinde oldukça kalabalık ve enerjik olduğu için sessiz sakin bir ortam arayanlara fazla gürültülü gelebilir.",
-        "Ulaşım: Gürsu Mahallesi 304. Sokak No:2 üzerinde (Gürsu yeme-içme sokağı başı).",
-        "Bütçe seviyesi (Google): Orta"
+        "Oturma & Servis: Şık ahşap dokulu iç salon ve bahçe önü masalar · Akşamları aileler ve özel kutlama sofralarıyla yüksek talep",
+        "Dezavantaj: Üst fiyat bandında konumlanır ve akşamları önceden rezervasyon yaptırmak gerekir.",
+        "Ulaşım: Gürsu Mahallesi Atatürk Bulvarı sahil şeridi yürüyüş hattında.",
+        "Bütçe seviyesi (Google): Yüksek"
       ]
     },
     {
       "id": "konyaalti-isliyen-balik",
       "placeId": "ChIJ8dM4OMSRwxQRicCr10wLodo",
       "name": "İşliyen Balık Evi",
-      "address": "Altınkum, Atatürk Blv. No:163, 07070 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Altınkum · Konyaaltı, Antalya",
+      "address": "Altınkum, Atatürk Blv. No:163, 07070 Konyaaltı/Antalya",
+      "neighborhood": "Atatürk Blv., Altınkum / Konyaaltı Sahil",
       "categoryId": "balik",
       "rating": 4.8,
       "mapsUri": "https://maps.google.com/?cid=15753885396182483081",
@@ -871,35 +1054,69 @@
       ]
     },
     {
-      "id": "konyaalti-adab-i-balik",
-      "placeId": "ChIJ14FQZ4mRwxQRkni2yoDsOo4",
-      "name": "Adab-ı Balık",
-      "address": "Gürsu, Atatürk Blv., 07070 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Gürsu · Konyaaltı, Antalya",
+      "id": "konyaalti-manzara-meze-balik",
+      "placeId": "ChIJ2aVGI6uRwxQRU865w1XRh0g",
+      "name": "Manzara Meze & Balık",
+      "address": "Kuşkavağı, Akdeniz Blv. No:148 D:2, 07070 Bahtılı Köyü/Konyaaltı/Antalya",
+      "neighborhood": "Akdeniz Blv., Kuşkavağı / Konyaaltı Sahil",
       "categoryId": "balik",
-      "rating": 4.9,
-      "mapsUri": "https://maps.google.com/?cid=10248763939935910034",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=5226376058872909395",
       "coordinates": {
-        "lat": 36.8628698,
-        "lng": 30.6297696
+        "lat": 36.8669629,
+        "lng": 30.645666900000002
       },
-      "description": "Gürsu Atatürk Bulvarı'nda günlük balık vitrini, özenle hazırlanmış Akdeniz mezeleri ve düzenli servis ekibiyle Konyaaltı'nın en yüksek puanlı deniz ürünleri restoranı.",
+      "description": "Kuşkavağı Akdeniz Bulvarı'nda denize karşı konumu, üst kat deniz manzarası, klasik meze dolabı ve güveçte karides ile balık buğulama tabaklarıyla tercih edilen sahil balıkçısı.",
       "whatToOrder": [
-        "Izgara Lagos / Kaya Levreği",
-        "Tereyağlı Karides & Kalamar",
-        "Ahtapot Izgara"
+        "Balık Buğulama",
+        "Karides Güveç",
+        "Izgara Levrek / Çipura"
       ],
       "menuFrom": [
-        "Deniz Levreği Buğulama",
-        "Barbun Tava"
+        "Günlük Soğuk Meze Seçkisi",
+        "Kalamar Izgara"
       ],
       "alsoTry": [
-        "Deniz Mahsullü Ara Sıcaklar & Fırınlanmış Tahinli Helva — Ana balık öncesi sunulan şefin ara sıcak seçkisi ve kapanıştaki sıcak tahinli helva çok beğeniliyor."
+        "Taze Deniz Mahsulü Mezeleri & Roka Salatası — Günlük hazırlanan klasik soğuk meze tabakları ve limonlu roka salatası sahil manzarasına eşlik ediyor."
       ],
       "beforeYouGo": [
-        "Oturma & Servis: Şık ahşap dokulu iç salon ve bahçe önü masalar · Akşamları aileler ve özel kutlama sofralarıyla yüksek talep",
-        "Dezavantaj: Üst fiyat bandında konumlanır ve akşamları önceden rezervasyon yaptırmak gerekir.",
-        "Ulaşım: Gürsu Mahallesi Atatürk Bulvarı sahil şeridi yürüyüş hattında.",
+        "Oturma & Servis: Deniz manzaralı üst kat salonu ve sahil bulvarı önü masalar · Akşamları rakı-balık buluşmaları ve manzaralı yemek arayan misafirlerle sakin",
+        "Dezavantaj: Sahil şeridinde manzara konumunda yer aldığı için üst fiyat segmentindedir; hafta sonu manzaralı masalar için önceden aramak gerekir.",
+        "Ulaşım: Kuşkavağı Mahallesi Akdeniz Bulvarı No:148 D:2 üzerinde Konyaaltı sahil yolunda.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "konyaalti-yaz-balik",
+      "placeId": "ChIJ1ZXT3TiRwxQRfHkjzV68m8Y",
+      "name": "Yaz Balık",
+      "address": "Sunis Blue Residence önü, Altınkum, Akdeniz Blv. No:164/A, 07070 Konyaaltı/Antalya",
+      "neighborhood": "Akdeniz Blv., Altınkum / Konyaaltı Sahil",
+      "categoryId": "balik",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=14311239356254484860",
+      "coordinates": {
+        "lat": 36.8644015,
+        "lng": 30.6415878
+      },
+      "description": "Altınkum Akdeniz Bulvarı sahil bandında klasik ızgara balıkların yanı sıra levrek simit, balık mantı ve Ege-Akdeniz otlu soğuk mezeleriyle modern deniz ürünleri tabakları sunan balık restoranı.",
+      "whatToOrder": [
+        "Levrek Beğendi / Levrek Simit",
+        "Kadayıflı Karides & Ahtapot Izgara",
+        "Fesleğenli Levrek Marin & Lakerda"
+      ],
+      "menuFrom": [
+        "Günlük Taze Deniz Balıkları",
+        "Balık Kokoreç & Balık Mantı",
+        "Korsan Çorbası"
+      ],
+      "alsoTry": [
+        "Girit Ezme, Kaya Koruğu & İspanyol Karides — Ege ve Akdeniz otlu mezeleriyle sıcak İspanyol karides veya baby kalamar ızgara ana balık öncesi masayı zenginleştiriyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Modern dekorlu iç salon ve sahil caddesine açılan geniş teras · Akşamları çiftler, iş yemekleri ve kalabalık davet masalarıyla canlı",
+        "Dezavantaj: Geniş özel ara sıcak menüsü ve sahil önü adresi nedeniyle yüksek fiyat segmentindedir.",
+        "Ulaşım: Altınkum Mahallesi Akdeniz Bulvarı Sunis Blue Residence önü No:164/A üzerinde.",
         "Bütçe seviyesi (Google): Yüksek"
       ]
     },
@@ -907,8 +1124,8 @@
       "id": "konyaalti-harran-gurme",
       "placeId": "ChIJCbtiOgCHwxQR-__8TcK4X_w",
       "name": "Harran Gurme Kebap & Pide & Lahmacun",
-      "address": "Arapsuyu, Kuşkavağı Caddesi No:32/C, 07070 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Arapsuyu (Kuşkavağı) · Konyaaltı, Antalya",
+      "address": "Arapsuyu, Kuşkavağı Caddesi No:32/C, 07070 Konyaaltı/Antalya",
+      "neighborhood": "Kuşkavağı Cd., Arapsuyu / Konyaaltı Sahil",
       "categoryId": "ates-firin",
       "rating": 4.8,
       "mapsUri": "https://maps.google.com/?cid=18185456965016944635",
@@ -916,7 +1133,7 @@
         "lat": 36.873852,
         "lng": 30.6459452
       },
-      "description": "Kuşkavağı Caddesi'nde taş fırın lahmacunu, zırh kıymalı Adana/Urfa kebabı ve özenli mezeleriyle Arapsuyu'nun en yüksek beğeni puanlı kebap duraklarından.",
+      "description": "Kuşkavağı Caddesi'nde taş fırın lahmacunu, zırh kıymalı Adana/Urfa kebabı ve özenli mezeleriyle Arapsuyu'nun yüksek beğeni puanlı kebap duraklarından.",
       "whatToOrder": [
         "Taş Fırın Urfa / Acılı Lahmacun",
         "Zırh Adana Kebap",
@@ -932,16 +1149,49 @@
       "beforeYouGo": [
         "Oturma & Servis: Geniş ferah aile salonu ve cadde terası · Akşamları aile gruplarıyla istikrarlı doluluk",
         "Dezavantaj: Yoğun akşam yemeklerinde masa bulmak ve sıcak lahmacun siparişi beklemek gerekebiliyor.",
-        "Ulaşım: Arapsuyu Kuşkavağı Caddesi No:32C üzerinde MiniCity aksı paralelinde.",
+        "Ulaşım: Arapsuyu Kuşkavağı Caddesi No:32/C üzerinde sahil aksı paralelinde.",
         "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "konyaalti-vahap-usta",
+      "placeId": "ChIJCbU5P2WRwxQRFqhLAcRcQDI",
+      "name": "Vahap Usta Et Restaurant",
+      "address": "Gürsu, Atatürk Blv. No:160, 07070 Konyaaltı/Antalya, Türkiye",
+      "neighborhood": "Atatürk Blv., Gürsu / Konyaaltı Sahil",
+      "categoryId": "ates-firin",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=3620996097310959638",
+      "coordinates": {
+        "lat": 36.8630312,
+        "lng": 30.630009500000003
+      },
+      "description": "Atatürk Bulvarı üzerinde Konyaaltı Sahil'in en eski et ve ocakbaşı mekanlarından; zırh kebapları, dry-aged kesimleri, kuzu küşleme ve taş fırın pideleriyle geniş aile buluşmalarının köklü klasiği.",
+      "whatToOrder": [
+        "Adana / Beyti Sarma Kebap",
+        "Kuzu Küşleme Şiş",
+        "Karışık Odun Pide"
+      ],
+      "menuFrom": [
+        "Dry Aged Antrikot / Asado",
+        "Ali Nazik & Hünkar Beğendi",
+        "Kuzu Pirzola"
+      ],
+      "alsoTry": [
+        "Fındık Lahmacun, Yaprak Ciğer & Antep Havuç Dilim Baklava — Kebap öncesi fındık lahmacun ve baharatlı yaprak ciğer başlangıcıyla kapanıştaki sıcak havuç dilimi baklava köklü restoran geleneği."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Çok geniş kapalı salon ve sahil caddesi önü bahçe masaları · Özellikle akşamları kalabalık aile gruplarıyla hareketli",
+        "Dezavantaj: Yüksek kapasiteli klasik restoran olduğu için sakin atmosfer arayanlara kalabalık ve sesli gelebilir; üst-orta bütçe seviyesindedir.",
+        "Ulaşım: Gürsu Mahallesi Atatürk Bulvarı No:160 üzerinde kendi vale/otopark kolaylığıyla."
       ]
     },
     {
       "id": "konyaalti-camlik-pide",
       "placeId": "ChIJ1Sw-Y3iRwxQRBn3kJSVzs5E",
       "name": "Çamlık Pide Kebap",
-      "address": "Gürsu, 338. Sk. No:22, 07070 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Gürsu · Konyaaltı, Antalya",
+      "address": "Gürsu, 338. Sk. No:22, 07070 Konyaaltı/Antalya",
+      "neighborhood": "Gürsu 338. Sk., Konyaaltı Sahil",
       "categoryId": "ates-firin",
       "rating": 4.4,
       "mapsUri": "https://maps.google.com/?cid=10498861759717473542",
@@ -949,7 +1199,7 @@
         "lat": 36.8656541,
         "lng": 30.628789899999997
       },
-      "description": "Gürsu'da odun ateşindeki kara fırında açtığı çıtır hamurlu kıymalı, kuşbaşılı, kaşarlı ve Mevlana pideleriyle Batı Antalya yolundaki Kumluca klasiğinin Konyaaltı içi zirve adreslerinden biri.",
+      "description": "Gürsu'da odun ateşindeki kara fırında açtığı çıtır hamurlu kıymalı, kuşbaşılı, kaşarlı ve Mevlana pideleriyle Batı Antalya pide geleneğinin Konyaaltı Sahil'deki öne çıkan esnaf adresi.",
       "whatToOrder": [
         "Kuşbaşılı Kaşarlı Odun Pidesi",
         "Bıçak Arası / Kıymalı Pide",
@@ -974,7 +1224,7 @@
       "placeId": "ChIJVy-dOIaPwxQRRIUuMcIGT2A",
       "name": "Lahmacun Prime Altınkum",
       "address": "Altınkum, Anadolu Cd No:41/A, 07070 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Altınkum · Konyaaltı, Antalya",
+      "neighborhood": "Anadolu Cd., Altınkum / Konyaaltı Sahil",
       "categoryId": "ates-firin",
       "rating": 4.4,
       "mapsUri": "https://maps.google.com/?cid=6939772981919778116",
@@ -998,40 +1248,8 @@
       "beforeYouGo": [
         "Oturma & Servis: Aydınlık hızlı servis salonu ve cadde masaları · Öğle ve akşam saatlerinde yüksek paket ve hızlı masa devri",
         "Dezavantaj: Ana yemek çeşitliliği olmayan tek odaklı bir lahmacuncudur; uzun sohbet yemeklerinden çok hızlı yeme-kalkma için idealdir.",
-        "Ulaşım: Altınkum Anadolu Caddesi No:41A üzerinde.",
+        "Ulaşım: Altınkum Anadolu Caddesi No:41/A üzerinde.",
         "Bütçe seviyesi (Google): Orta"
-      ]
-    },
-    {
-      "id": "konyaalti-vahap-usta",
-      "placeId": "ChIJCbU5P2WRwxQRFqhLAcRcQDI",
-      "name": "Vahap Usta Et Restaurant",
-      "address": "Gürsu, Atatürk Blv. No:160, 07070 Konyaaltı/Antalya, Türkiye",
-      "neighborhood": "Gürsu · Konyaaltı, Antalya",
-      "categoryId": "ates-firin",
-      "rating": 4.4,
-      "mapsUri": "https://maps.google.com/?cid=3620996097310959638",
-      "coordinates": {
-        "lat": 36.8630312,
-        "lng": 30.630009500000003
-      },
-      "description": "Atatürk Bulvarı üzerinde Konyaaltı'nın en eski et ve ocakbaşı mekanlarından; zırh kebapları, kuzu küşleme ve taş fırın pideleriyle geniş aile buluşmalarının klasiği.",
-      "whatToOrder": [
-        "Adana / Beyti Kebap",
-        "Kuzu Küşleme Şiş",
-        "Karışık Odun Pide"
-      ],
-      "menuFrom": [
-        "Kuzu Pirzola",
-        "Çoban Kavurma"
-      ],
-      "alsoTry": [
-        "Fındık Lahmacun & Antep Havuç Dilim Baklava — Kebap öncesi fındık lahmacun ikramı ve kapanışta sunulan sıcak havuç dilimi baklava köklü restoran geleneği."
-      ],
-      "beforeYouGo": [
-        "Oturma & Servis: Çok geniş kapalı salon ve sahil caddesi önü bahçe masaları · Özellikle akşamları kalabalık aile gruplarıyla hareketli",
-        "Dezavantaj: Yüksek kapasiteli klasik restoran olduğu için sakin atmosfer arayanlara kalabalık gelebilir ve üst-orta bütçededir.",
-        "Ulaşım: Gürsu Mahallesi Atatürk Bulvarı No:160 üzerinde kendi vale/otopark kolaylığıyla."
       ]
     }
   ],
