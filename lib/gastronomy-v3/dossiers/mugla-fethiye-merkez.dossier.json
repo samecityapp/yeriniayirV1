@@ -1,0 +1,2718 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "mugla-fethiye-merkez",
+  "displayName": "Fethiye Merkez, Muğla",
+  "verifiedAt": "2026-11-16T11:43:14.902Z",
+  "selectedCount": 32,
+  "rejectedControls": [
+    {
+      "id": "neg-mozaik-bahce-closed",
+      "resolvedName": "Mozaik Bahçe",
+      "reason": "not_operational:CLOSED_TEMPORARILY"
+    },
+    {
+      "id": "neg-coffee-de-madrid",
+      "resolvedName": "Coffee de Madrid Fethiye",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "neg-goodeer-coffee",
+      "resolvedName": "Goodeer Coffee Fethiye",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "neg-starbucks-carsi",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "neg-burger-yiyelim",
+      "resolvedName": "Burger Yiyelim",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "neg-burger-king-ataturk",
+      "resolvedName": "Burger King - Fethiye Atatürk Caddesi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "neg-pizzabulls-fethiye",
+      "resolvedName": "Pizzabulls Fethiye",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "neg-dominos-akarca",
+      "resolvedName": "Domino's Pizza Fethiye Akarca",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "neg-little-caesars-akarca",
+      "resolvedName": "Little Caesars Fethiye Şubesi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "neg-karamel-pastane-kahve",
+      "resolvedName": "Karamel Pastane & Fırın",
+      "reason": "kahve_category_not_coffee_specialist:pastry_shop"
+    },
+    {
+      "id": "neg-hilmi-cumhuriyet",
+      "resolvedName": "Hilmi Restaurant",
+      "reason": "below_quality_threshold:★4(2423)"
+    },
+    {
+      "id": "neg-girida-port",
+      "resolvedName": "Girida Port",
+      "reason": "below_quality_threshold:★4.1(1223)"
+    },
+    {
+      "id": "neg-trattoria-di-kukina",
+      "resolvedName": "Trattoria di Kukina",
+      "reason": "below_quality_threshold:★4.2(1056)"
+    },
+    {
+      "id": "neg-bogazici-tuzla",
+      "resolvedName": "Boğaziçi Restaurant",
+      "reason": "below_quality_threshold:★4(2038)"
+    },
+    {
+      "id": "neg-address-restaurant",
+      "resolvedName": "Address Restaurant & Cafe Bar",
+      "reason": "below_quality_threshold:★4.3(1647)"
+    },
+    {
+      "id": "neg-limon-h2o",
+      "resolvedName": "LimonH2O cafe bistro",
+      "reason": "below_quality_threshold:★4.3(916)"
+    },
+    {
+      "id": "neg-doc-coffee-foca",
+      "resolvedName": "Doc Coffee Co.",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Cumhuriyet/Karagözler/Karagozler/Kesikkapı/Kesikkapi/Tuzla/Babataşı/Babatasi/Akarca/Paspatur, adres: Foça, Yerguzlar Cd. 58 A, 48300 Fethiye/Muğla)"
+    },
+    {
+      "id": "neg-efe-firin-patlangic",
+      "resolvedName": "Efe Fırın Bazlama Dükkanı",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Cumhuriyet/Karagözler/Karagozler/Kesikkapı/Kesikkapi/Tuzla/Babataşı/Babatasi/Akarca/Paspatur, adres: Patlangıç, Baha Şıkman Cd. No:185, 48300 Fethiye/Muğla)"
+    },
+    {
+      "id": "neg-pan-kayakoy",
+      "resolvedName": "Pan Restaurant Kayaköy",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Cumhuriyet/Karagözler/Karagozler/Kesikkapı/Kesikkapi/Tuzla/Babataşı/Babatasi/Akarca/Paspatur, adres: Karakeçililer, Keçiler sokak No:63/B, 48300 Fethiye/Muğla)"
+    },
+    {
+      "id": "neg-bella-gusto-oludeniz",
+      "resolvedName": "Bella Gusto",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Cumhuriyet/Karagözler/Karagozler/Kesikkapı/Kesikkapi/Tuzla/Babataşı/Babatasi/Akarca/Paspatur, adres: Ölüdeniz, Denizpark Cd., 48300 Fethiye/Muğla)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "fethiye-merkez-vicoli-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "Vicoli Neapolitan Pizza",
+      "branchName": "Cumhuriyet, 98. Sk. 12a, 48000 Fethiye/Muğla",
+      "placeId": "ChIJ0ZqX8a9BwBQR4Lv8u5sngP8",
+      "coordinates": {
+        "lat": 36.621060199999995,
+        "lng": 29.112874399999995
+      },
+      "rating": 4.9,
+      "userRatingCount": 832,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.vicolipizza.com/",
+      "mapsUri": "https://maps.google.com/?cid=18410758826517904352",
+      "recommendedPrimary": [
+        "Burrata Pizza",
+        "Ricotta Pesto Pizza",
+        "Kraliçe Margherita"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Yumurtasız Tiramisu",
+          "note": "Yumurtasız ve alkolsüz tarif ile günlük hazırlanan tiramisu, fesleğenli ayran ve ev yapımı limonata pizza sonrası masalarda sıkça tercih ediliyor.",
+          "proof": "vicolipizza.com resmi menüsü ve Wanderlog Fethiye kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Paspatur yakınındaki sakin ara sokakta samimi açık ön masa düzeni ve küçük iç tezgâh",
+        "crowdAndNoise": "Akşam saatlerinde Napoliten pizza arayan yerli ve yabancı misafirlerle hareketli",
+        "disadvantage": "Butik ölçekte günlük taze malzemeyle çalıştığından yoğun akşamlarda bazı malzemeler erken tükenebiliyor ve masa sayısı sınırlı",
+        "transit": "Paspatur Çarşısı ve Balık Pazarı merkezinden 98. Sokak içine yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Vicoli Neapolitan Pizza",
+          "url": "https://maps.google.com/?cid=18410758826517904352",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Cumhuriyet Mah. 98. Sk. No:12/A konumu doğrulandı"
+        },
+        {
+          "title": "Vicoli Neapolitan Pizza Resmi Sitesi",
+          "url": "http://www.vicolipizza.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Şef Serhat geçmişi, Napoliten pizza çeşitleri ve glütensiz hamur seçeneği"
+        },
+        {
+          "title": "Wanderlog — Vicoli Neapolitan Pizza",
+          "url": "https://wanderlog.com/tr/place/details/12037518/vicoli-neapolitan-pizza",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Odun fırını hamur dokusu, malzeme tazeliği ve tiramisu geri bildirimleri"
+        },
+        {
+          "title": "Restoranim — Vicoli Neapolitan Pizza",
+          "url": "https://restoranim.net/mugla/fethiye/pizzaci/vicoli-neapolitan-pizza",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Fethiye merkez pizzacılar arasında yüksek puanlı topluluk değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Hafif fermente odun fırını Napoli hamuru ve burrata/ricotta gibi nitelikli peynirler",
+        "Tüm pizzalarda glütensiz hamur alternatifi sunması"
+      ],
+      "cons": [
+        "Sınırlı masa kapasitesi ve yoğun akşamlarda erken malzeme bitimi"
+      ],
+      "uncertainties": [
+        "Sezona göre şefin özel pizza stokları akşam saatlerinde değişebiliyor"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-papelli",
+      "categoryId": "pizza",
+      "resolvedName": "Papelli Fethiye",
+      "branchName": "Akarca, Yerguzlar Cd. No:13/B, 48300 Fethiye/Muğla",
+      "placeId": "ChIJ68QmoexDwBQR-tHkKA9EDXw",
+      "coordinates": {
+        "lat": 36.654241,
+        "lng": 29.122438400000004
+      },
+      "rating": 4.9,
+      "userRatingCount": 884,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://papelli.zekmenu.com/",
+      "mapsUri": "https://maps.google.com/?cid=8938875667301585402",
+      "recommendedPrimary": [
+        "Mushroom Pizza (İzmir Tulumlu)",
+        "Margherita Pizza",
+        "Veggy Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Chili & Mushroom Burger",
+          "note": "Pizzalar kadar kendi köfteleriyle hazırlanan mantarlı ve acılı burgerler ile baharatlı patates kızartması da mutfağın öne çıkan seçeneklerinden.",
+          "proof": "Yemeksepeti Papelli Napoli Pizza menüsü ve Restaurant Guru kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Akarca cadde üzeri ferah veranda masaları ve samimi iç salon düzeni",
+        "crowdAndNoise": "Akarca sakinleri ve aileler tarafından akşam yemeği saatlerinde düzenli dolulukta",
+        "disadvantage": "Paspatur eski şehir merkezine yürüyerek uzak olduğundan Akarca hattına ulaşım veya kısa sürüş gerektirir",
+        "transit": "Akarca Yerguzlar Caddesi üzerinde Şehit Fethi Bey Parkı doğu ucundan yürüyerek beş dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Papelli Fethiye",
+          "url": "https://maps.google.com/?cid=8938875667301585402",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Akarca Mah. Yerguzlar Cd. No:13/B konumu doğrulandı"
+        },
+        {
+          "title": "Papelli Dijital Menü",
+          "url": "http://papelli.zekmenu.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Napoli tarzı pizza, burger ve sandviç menüsü"
+        },
+        {
+          "title": "Yemeksepeti — Papelli Napoli Pizza",
+          "url": "https://www.yemeksepeti.com/restaurant/if84/papelli-napoli-pizza",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İzmir tulumlu mantarlı pizza ve ev yapımı burger geri bildirimleri"
+        },
+        {
+          "title": "Restaurant Guru — Papelli Fethiye",
+          "url": "https://ru.restaurantguru.com/Papelli-Turkey",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Aile işletmesi atmosferi ve İtalyan tabakları değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "İzmir tulumu ve köz sebzelerle zenginleştirilen taze açılmış Napoli pizza seçenekleri",
+        "Aile işletmesi standardında özenli burger ve sandviç alternatifleri"
+      ],
+      "cons": [
+        "Tarihi merkez çarşısına uzak konumu nedeniyle özel ulaşım istemesi"
+      ],
+      "uncertainties": [
+        "Yaz akşamlarında bahçe masaları için bekleme oluşabiliyor"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-b1-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "B1 Burger",
+      "branchName": "Tuzla, 538. Sk. No: 1/B, 48300 Fethiye/Muğla",
+      "placeId": "ChIJoTG9XvxDwBQRDyshEQ1-h7U",
+      "coordinates": {
+        "lat": 36.6290535,
+        "lng": 29.1192077
+      },
+      "rating": 5,
+      "userRatingCount": 215,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13080562237307955983",
+      "recommendedPrimary": [
+        "B1 Smash Burger",
+        "Vişne Soslu Burger",
+        "Beğendili Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Soslu Çıtır Patates",
+          "note": "Açık mutfaktan sıcak çıkan ince çıtır patatesler ve burgerlere eşlik eden özel vişne ile cheddar sosları sıkça övülüyor.",
+          "proof": "Yemeksepeti B1 Burger Fethiye menü ve müşteri değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Açık mutfak karşısında kompakt iç tezgâh, sınırlı sokak masası ve güçlü paket servis akışı",
+        "crowdAndNoise": "Gençler ve Tuzla çevresindeki müdavimlerle akşam saatlerinde canlı",
+        "disadvantage": "Oturma alanı oldukça küçük olduğundan kalabalık gruplarla uzun akşam oturumları için uygun değil",
+        "transit": "Tuzla Bahriye Üçok Parkı ve Kordon hattından 538. Sokak içine yürüyerek üç dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — B1 Burger",
+          "url": "https://maps.google.com/?cid=13080562237307955983",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Tuzla Mah. 538. Sk. No:1/B konumu doğrulandı"
+        },
+        {
+          "title": "B1 Burger Dijital Menü",
+          "url": "https://dijital.link/b1-burger",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Smash köfte, vişneli ve beğendili burger çeşitleri"
+        },
+        {
+          "title": "Yemeksepeti — B1 Burger",
+          "url": "https://www.yemeksepeti.com/restaurant/yats/b1-burger-yats",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Açık mutfak temizliği, ekmek-köfte dengesi ve sıcak servis geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Vişne soslu ve beğendili gibi cesur tatları dengeli smash köfteyle birleştirmesi",
+        "Şeffaf açık mutfak düzeni ve hızlı hazırlanış"
+      ],
+      "cons": [
+        "Küçük dükkân ölçeği nedeniyle masa sayısının az olması"
+      ],
+      "uncertainties": [
+        "Akşam paket servis yoğunluğunda bekleme süresi uzayabiliyor"
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-burger-and-more",
+      "categoryId": "hamburger",
+      "resolvedName": "Burger And More",
+      "branchName": "Burger and More, Cumhuriyet, Çarşı Cd. kapı No: 200, 48300 Fethiye/Muğla",
+      "placeId": "ChIJWRbGy_9BwBQRlsi2gjFEEOM",
+      "coordinates": {
+        "lat": 36.620667499999996,
+        "lng": 29.114788700000002
+      },
+      "rating": 4.9,
+      "userRatingCount": 787,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16361652425674115222",
+      "recommendedPrimary": [
+        "Trüflü Burger",
+        "Beğendi Burger",
+        "Cherry More Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Philly Cheesesteak & Kajun Baharatlı Patates",
+          "note": "Burger çeşitlerinin yanı sıra ince dilimlenmiş biftekli Philly Cheesesteak sandviçleri, hot doglar ve kajun baharatlı patates kızartması menünün sevilen yan ürünleri.",
+          "proof": "Yemeksepeti Burger And More menüsü ve Dijital.link resmi menü kartı"
+        }
+      ],
+      "suitability": {
+        "seating": "Çarşı Caddesi cepheli pratik ön masalar ve sade iç salon oturumu",
+        "crowdAndNoise": "Çarşı yürüyüşçüleri ve öğle-akşam arası hızlı gurme burger arayanlarla sürekli hareketli",
+        "disadvantage": "Çarşı Caddesi üzerindeki küçük cephesi nedeniyle pik yemek saatlerinde masa bulmak zorlaşabiliyor",
+        "transit": "Paspatur ve Çarşı Caddesi merkez yürüyüş aksı üzerinde Balık Pazarı yönünden iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Burger And More",
+          "url": "https://maps.google.com/?cid=16361652425674115222",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Cumhuriyet Mah. Çarşı Cd. No:200 konumu doğrulandı"
+        },
+        {
+          "title": "Burger And More Dijital Menü",
+          "url": "https://dijital.link/burger-and-more",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Ev yapımı trüf aioli, beğendi, cherry more ve Philly cheesesteak menüsü"
+        },
+        {
+          "title": "Yemeksepeti — Burgers And More",
+          "url": "https://www.yemeksepeti.com/restaurant/rgo8/burgers-and-more-rgo8/reviews",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze köfte, el yapımı soslar ve kajun patates değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Aioli, trüf ve vişne marmelatı gibi sosların mutfakta sıfırdan hazırlanması",
+        "Philly Cheesesteak ve hot dog ile zenginleştirilmiş doyurucu sokak menüsü"
+      ],
+      "cons": [
+        "Çarşı içindeki yoğun yaya trafiği ve dar oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Standart köfte gramajı doyurucu olsa da büyük iştahlılar için çift köfte gerekebilir"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-hang-smash",
+      "categoryId": "hamburger",
+      "resolvedName": "HANG Smash Snack Drink",
+      "branchName": "Cumhuriyet, Çarşı Cd. no:160, 48300 Fethiye/Muğla",
+      "placeId": "ChIJk0Kcc0JBwBQR8nf3ouWJqt0",
+      "coordinates": {
+        "lat": 36.620312299999995,
+        "lng": 29.113384099999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 536,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/hangfethiye/",
+      "mapsUri": "https://maps.google.com/?cid=15972730647797528562",
+      "recommendedPrimary": [
+        "Klasik Smash Burger",
+        "Double Smash Cheeseburger",
+        "Özel Soslu Brioche Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mısır Kaburga (Corn Ribs) & Atıştırmalıklar",
+          "note": "Burgerlerin yanında baharatlı çıtır mısır kaburga (corn ribs) ve özel dip soslu atıştırmalıklar ziyaretçilerin dikkat çektiği imza eşlikçiler.",
+          "proof": "Dijital.link HANG Smash menüsü ve Maptons Fethiye kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Çarşı Caddesi üzerinde modern sade iç bar oturumu ve sokak önü masaları",
+        "crowdAndNoise": "Gençler, gastronomi meraklıları ve akşam çarşı kalabalığıyla enerjik",
+        "disadvantage": "Tek seferde az sayıda sipariş mühürlenen smash ızgarası yoğun anlarda kısa bekleme yaratabiliyor ve oturma alanı sınırlı",
+        "transit": "Cumhuriyet Çarşı Caddesi No:160 önünde Paspatur meydanından yürüyerek üç dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — HANG Smash Snack Drink",
+          "url": "https://maps.google.com/?cid=15972730647797528562",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Cumhuriyet Mah. Çarşı Cd. No:160 konumu doğrulandı"
+        },
+        {
+          "title": "HANG Smash Dijital Menü",
+          "url": "https://dijital.link/hang-smash-snack-drink",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Smash burger ve snack menü içeriği"
+        },
+        {
+          "title": "HANG Fethiye Resmi Instagram",
+          "url": "https://www.instagram.com/hangfethiye/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Şef yapımı brioche ve smash köfte paylaşımları"
+        },
+        {
+          "title": "Maptons — HANG Smash Fethiye",
+          "url": "https://lu.maptons.com/p/12847125152",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Brioche ekmek dokusu ve mısır kaburga yan ürünü değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Şef elinden çıkan gerçek karamelize kenarlı smash köfte ve tereyağlı brioche uyumu",
+        "Mısır kaburga gibi yaratıcı yan ürünlerle sade ama özenli menü"
+      ],
+      "cons": [
+        "Küçük dükkân düzeni ve yaz akşamları oluşan kısa sıra"
+      ],
+      "uncertainties": [
+        "Sezon dışındaki kış çalışma günleri dönemsel olarak değişebiliyor"
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-mag-street-food",
+      "categoryId": "hamburger",
+      "resolvedName": "MAG Street Food",
+      "branchName": "Cumhuriyet, Atatürk Cd. No:24, 48303, 48000 Fethiye/Muğla",
+      "placeId": "ChIJSQexPYBBwBQRluLQ7kPZaNY",
+      "coordinates": {
+        "lat": 36.622001700000006,
+        "lng": 29.1081318
+      },
+      "rating": 4.6,
+      "userRatingCount": 588,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://magstreetfood.com/",
+      "mapsUri": "https://maps.google.com/?cid=15449837407487189654",
+      "recommendedPrimary": [
+        "Brisket Burger",
+        "Mag Berry Burger",
+        "Truffle & Mush Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sokak Usulü Taco, Noodle & Churros",
+          "note": "Burger menüsünün ötesinde taze taco tabakları, Asya usulü noodlelar ve tarçın şekerli sıcak churros tatlısı akşam buluşmalarında sıkça paylaşılıyor.",
+          "proof": "magstreetfood.com resmi menüsü ve Restoranim Fethiye kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Modern sokak mutfağı tarzında iç salon ve Atatürk Caddesi kenarı açık masalar",
+        "crowdAndNoise": "Öğleden geceye kadar karma yaş grubu ve turistlerle canlı, rahat tempo",
+        "disadvantage": "Atatürk Caddesi araç trafiğine yakın konumu nedeniyle dış masalarda yol sesi hissedilebiliyor",
+        "transit": "Atatürk Caddesi No:24 üzerinde Paspatur Çarşısı girişinden yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — MAG (BURGER) Street Food",
+          "url": "https://maps.google.com/?cid=15449837407487189654",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Cumhuriyet Mah. Atatürk Cd. No:24 konumu doğrulandı"
+        },
+        {
+          "title": "MAG Street Food Resmi Sitesi",
+          "url": "https://magstreetfood.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Brisket, Mag Berry, taco, noodle ve churros sokak lezzetleri menüsü"
+        },
+        {
+          "title": "Yemeksepeti — MAG Street Food",
+          "url": "https://www.yemeksepeti.com/en/restaurant/k6xg/mag-street-food/reviews",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mag Berry ve Truffle & Mush burger değerlendirmeleri"
+        },
+        {
+          "title": "Restoranim — MAG Street Food",
+          "url": "https://restoranim.net/mugla/fethiye/burgerci/mag-street-food",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sokak konsepti ve ürün çeşitliliği puanlamaları"
+        }
+      ],
+      "pros": [
+        "Karamelize vişne-gravyer (Mag Berry) ve füme brisket gibi özgün reçeteler",
+        "Burger yanında taco ve churros ile paylaşmalık çeşitlilik"
+      ],
+      "cons": [
+        "Ana cadde kenarındaki dış masalarda trafik gürültüsü"
+      ],
+      "uncertainties": [
+        "Geniş menüde bazı günler belirli wok/taco çeşitleri stok durumuna bağlı olabiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-cream-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "C.R.E.A.M. Coffee Roastery",
+      "branchName": "Cumhuriyet, 38. Sk. No:4, 48300 Fethiye/Muğla",
+      "placeId": "ChIJUXlPbhhBwBQRRJeH-tnFflg",
+      "coordinates": {
+        "lat": 36.621742399999995,
+        "lng": 29.107736199999994
+      },
+      "rating": 4.7,
+      "userRatingCount": 530,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://creamcoff.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp_fethiye",
+      "mapsUri": "https://maps.google.com/?cid=6376751662404966212",
+      "recommendedPrimary": [
+        "Tek Kökenli V60 Pour-Over",
+        "Cortado / Flat White",
+        "Uji Ceremonial Matcha Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Keçi Peynirli Karamelize Soğanlı Kruvasan & El Yapımı Seramik",
+          "note": "Kavrum barının yanında tuzlu kruvasan sandviçleri ve dükkâna özel tasarlanan el yapımı seramik fincan koleksiyonu dikkat çekiyor.",
+          "proof": "European Coffee Trip, Kahveler.net ve Yemeksepeti C.R.E.A.M. kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi Paspatur sokağına bakan minimalist iç bar ve gölgelik sokak oturumu",
+        "crowdAndNoise": "Kahve meraklıları, dijital göçebeler ve nitelikli demleme arayanlarla sakin-odaklı",
+        "disadvantage": "Dar Paspatur ara sokağında konumlandığı için araçla kapı önüne yanaşmak mümkün değil ve oturma alanı kompakt",
+        "transit": "Paspatur Çarşısı ve Karagözler girişinden 38. Sokak içine yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — C.R.E.A.M. Coffee Roastery",
+          "url": "https://maps.google.com/?cid=6376751662404966212",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Cumhuriyet Mah. 38. Sk. No:4 konumu doğrulandı"
+        },
+        {
+          "title": "C.R.E.A.M. Coffee Roastery Resmi Sitesi",
+          "url": "https://creamcoff.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Yerinde kavrum çekirdek seçkisi, matcha ve seramik ürünler"
+        },
+        {
+          "title": "European Coffee Trip — C.R.E.A.M. Fethiye",
+          "url": "https://europeancoffeetrip.com/cafe/creamcoffee-fethiye/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Nitelikli kahve barı ve kavurma profili incelemesi"
+        },
+        {
+          "title": "Kahve Kulübü — C.R.E.A.M. Coffee Roastery",
+          "url": "https://www.kahvekulubu.net/sosyal/threads/c-r-e-a-m-coffee-roastery.11743/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Panama Geisha lotları ve kavrum kalitesi üzerine topluluk değerlendirmeleri"
+        },
+        {
+          "title": "Kahveler.net — C.R.E.A.M. Coffee Roastery",
+          "url": "https://www.kahveler.net/kahve/14393-c-r-e-a-m-coffee-roastery.html/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Uji matcha tedariki ve tek kökenli demlemeler hakkında baristası/müşteri notları"
+        }
+      ],
+      "pros": [
+        "Yerinde kavrulan nadir tek kökenli çekirdekler ve yüksek kaliteli Uji matcha",
+        "Kahve topluluklarında takdir gören demleme tutarlılığı ve özgün seramik kültürü"
+      ],
+      "cons": [
+        "Paspatur ara sokağındaki sınırlı oturma alanı"
+      ],
+      "uncertainties": [
+        "Mikro-lot çekirdek çeşitleri hasat ve kavrum takvimine göre sıkça yenileniyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-keci-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Keçi Coffee Roastery",
+      "branchName": "Cumhuriyet, 504. Sk., 48303 Fethiye/Muğla",
+      "placeId": "ChIJQU_Blt9DwBQRmjQYC5VXzCA",
+      "coordinates": {
+        "lat": 36.6240272,
+        "lng": 29.113763499999997
+      },
+      "rating": 4.8,
+      "userRatingCount": 508,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2363360202110547098",
+      "recommendedPrimary": [
+        "Chemex / AeroPress Demleme",
+        "Iced Latte (Bitkisel Sütlü)",
+        "Espresso Tonic"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Keçi Bowl & Ev Yapımı Fit Tatlılar",
+          "note": "Yulaf ezmesi ve meyvelerle hazırlanan Keçi Bowl seçenekleri ile vegan/glütensiz atıştırmalıklar uzun çalışma oturumlarına eşlik ediyor.",
+          "proof": "Wanderlog ve Restoranim Keçi Coffee Roastery kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık, ferah iç masa düzeni ve 504. Sokak cepheli gölgelik dış oturma alanı",
+        "crowdAndNoise": "Dizüstü bilgisayarıyla çalışanlar, yerleşikler ve sakin üçüncü dalga arayanlarla dengeli",
+        "disadvantage": "Sakin çalışma odaklı atmosferi grup halinde yüksek sesli sohbet etmek isteyenler için fazla dingin kalabilir",
+        "transit": "Cumhuriyet Belediyesi ve Uğur Mumcu Parkı çevresinden 504. Sokak içine yürüyerek üç dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — KeçiCoffeeRoastery",
+          "url": "https://maps.google.com/?cid=2363360202110547098",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Cumhuriyet Mah. 504. Sk. konumu doğrulandı"
+        },
+        {
+          "title": "Wanderlog — KeçiCoffeeRoastery",
+          "url": "https://wanderlog.com/tr/place/details/1159556/ke%C3%A7icoffeeroastery",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Chemex/AeroPress demlemeleri, sakin müzik seviyesi ve Keçi Bowl geri bildirimleri"
+        },
+        {
+          "title": "Restoranim — KeçiCoffeeRoastery",
+          "url": "https://restoranim.net/mugla/fethiye/kafe/kecicoffeeroastery",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Vegan/glütensiz dostu seçenekler ve çalışma ortamı puanları"
+        },
+        {
+          "title": "Kahve Kulübü — Keçi Coffee Roastery",
+          "url": "https://www.kahvekulubu.net/sosyal/threads/keci-coffee-roastery.3923/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Fethiye nitelikli kahve kavurucusu topluluk kaydı"
+        }
+      ],
+      "pros": [
+        "Chemex, AeroPress ve V60 dahil zengin manuel demleme barı",
+        "Sessiz çalışma dostu ortam ve vegan/laktozsuz alternatifler"
+      ],
+      "cons": [
+        "Merkez sokak içi park yeri kısıtı"
+      ],
+      "uncertainties": [
+        "Hafta sonu atölye ve etkinlik günlerinde iç salon düzeni değişebiliyor"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-kose-kahve",
+      "categoryId": "kahve",
+      "resolvedName": "Köşe Kahve Fethiye",
+      "branchName": "Kesikkapı, Kaya Cd. 118 sokak, 48300 Fethiye/Muğla",
+      "placeId": "ChIJUbJ8u19BwBQRb_sIVeldkvI",
+      "coordinates": {
+        "lat": 36.6202075,
+        "lng": 29.1177709
+      },
+      "rating": 4.8,
+      "userRatingCount": 1299,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.tripadvisor.com.tr/Restaurant_Review-g298031-d12946685-Reviews-Kose_Kahve_Fethiye-Fethiye_Mugla_Province_Turkish_Aegean_Coast.html",
+      "mapsUri": "https://maps.google.com/?cid=17479136360513731439",
+      "recommendedPrimary": [
+        "Flat White",
+        "V60 / Filtre Kahve",
+        "Soğuk Americano"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Cheesecake & Ekşi Mayalı Tostlar",
+          "note": "Kahve barını destekleyen taze cheesecake dilimleri ve ekşi mayalı ekmekle hazırlanan hafif tostlar mola veren gezginlerin favorisi.",
+          "proof": "TripAdvisor Köşe Kahve Fethiye ve Restaurant Guru kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi sokak köşesinde açık hava masaları ve samimi iç mekân oturumu",
+        "crowdAndNoise": "Amintas Kaya Mezarları ve Kesikkapı yürüyüşçüleriyle gün boyu canlı ama nezih",
+        "disadvantage": "Popüler köşe konumu nedeniyle sabah ve öğleden sonra saatlerinde dış masalar çabuk dolabiliyor",
+        "transit": "Amintas Kaya Mezarları eteğinde Kaya Caddesi 118. Sokak köşesinde, merkezden yürüyerek beş dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Köşe Kahve fethiye",
+          "url": "https://maps.google.com/?cid=17479136360513731439",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kesikkapı Mah. Kaya Cd. 118. Sk. konumu doğrulandı"
+        },
+        {
+          "title": "TripAdvisor — Köşe Kahve Fethiye",
+          "url": "https://www.tripadvisor.com.tr/Restaurant_Review-g298031-d12946685-Reviews-Kose_Kahve_Fethiye-Fethiye_Mugla_Province_Turkish_Aegean_Coast.html",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Üçüncü nesil kahve kalitesi, cheesecake ve ekşi mayalı tost değerlendirmeleri"
+        },
+        {
+          "title": "Restaurant Guru — Köşe Kahve Fethiye",
+          "url": "https://restaurantguru.com/Kose-Kahve-Fethiye-Turkey",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kesikkapı mahalle atmosferi ve servis puanları"
+        }
+      ],
+      "pros": [
+        "Kaya Mezarları rotası üzerinde yüksek hacimli istikrarlı kahve kalitesi",
+        "Ekşi mayalı tost ve ev yapımı cheesecake ile doyurucu mola imkânı"
+      ],
+      "cons": [
+        "Küçük köşe düzeninde gölgelik dış masaların hızlı dolması"
+      ],
+      "uncertainties": [
+        "Tatlı vitrini günlük üretime göre çeşitlilik gösteriyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-no-way-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "No Way! Speciality Coffee Shop",
+      "branchName": "Karagözler, 30. Sk. No:1, 48300 Fethiye/Muğla",
+      "placeId": "ChIJFev_o-BBwBQRBSae0kVXXJc",
+      "coordinates": {
+        "lat": 36.6212966,
+        "lng": 29.105180299999997
+      },
+      "rating": 4.9,
+      "userRatingCount": 67,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10906688354982438405",
+      "recommendedPrimary": [
+        "Filtre / Pour-Over Demleme",
+        "Cortado",
+        "Iced Flat White"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Konuk Kavurucu Çekirdek Seçkisi",
+          "note": "Spada Coffee temel seçkisinin yanında barda dönüşümlü olarak farklı yerli ve yabancı nitelikli kavurucuların çekirdekleri demleniyor.",
+          "proof": "Kahveler.net ve Kahve Kulübü No Way! Fethiye forum başlıkları"
+        }
+      ],
+      "suitability": {
+        "seating": "Karagözler yamacında manzaralı sakin dış oturma köşesi ve minimal iç espresso barı",
+        "crowdAndNoise": "Marina ziyaretçileri ve kahve tutkunlarıyla sakin, sohbete elverişli",
+        "disadvantage": "Karagözler ara sokağındaki küçük dükkan yapısı nedeniyle geniş yiyecek menüsü veya kalabalık masa düzeni bulunmaz",
+        "transit": "Karagözler Yat Limanı hattından 30. Sokak merdiven ve yokuş yönünde yürüyerek üç dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — No Way! Speciality Coffee Shop",
+          "url": "https://maps.google.com/?cid=10906688354982438405",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Karagözler Mah. 30. Sk. No:1 konumu doğrulandı"
+        },
+        {
+          "title": "Kahveler.net — No Way! Speciality Coffee Shop Fethiye",
+          "url": "https://www.kahveler.net/kahve/15364-no-way-speciality-coffee-shop-fethiye.html/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Spada Coffee çekirdek seçkisi, konuk kavurucular ve bar kurulumu incelemesi"
+        },
+        {
+          "title": "Kahve Kulübü — No Way! Speciality Coffee Shop Fethiye",
+          "url": "https://www.kahvekulubu.net/sosyal/threads/no-way-speciality-coffee-shop-fethiye.12526/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Karagözler konumu, manzaralı kahve deneyimi ve işletmeci tanıtımı"
+        }
+      ],
+      "pros": [
+        "Spada Coffee ve konuk kavurucularla gerçekten demleme odaklı butik yaklaşım",
+        "Karagözler kalabalığından bir adım içeride sakin marina manzarası"
+      ],
+      "cons": [
+        "Küçük alan ve yokuş sokak erişimi"
+      ],
+      "uncertainties": [
+        "Dönemsel konuk kavurucu çekirdekleri haftalık stoklara göre değişiyor"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-nude-restaurant",
+      "categoryId": "date",
+      "resolvedName": "Nude Restaurant Fethiye",
+      "branchName": "1, Karagözler, 30. Sk. No:43/A, 48300 Fethiye/Muğla",
+      "placeId": "ChIJdat_lXxBwBQRi0vwz_b8v_4",
+      "coordinates": {
+        "lat": 36.622053199999996,
+        "lng": 29.1032333
+      },
+      "rating": 4.6,
+      "userRatingCount": 270,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.hoteluniqueturkey.com/",
+      "mapsUri": "https://maps.google.com/?cid=18356668743166217099",
+      "recommendedPrimary": [
+        "Izgara Ahtapot & Levrek",
+        "Hellim (Halloumi) Salatası",
+        "Ossobuco / Kuzu İncik"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İmza Kokteyller & Dondurmalı İrmik Helvası",
+          "note": "Barmenlerin burbon, amaretto ve pisco bazlı köpüklü imza kokteylleri ile kapanıştaki dondurmalı irmik helvası romantik akşam sofralarını tamamlıyor.",
+          "proof": "OGGUSTO Fethiye Rehberi ve Restoranim Nude Restaurant kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Körfez ve marina manzarasına hakim taş-ahşap teras ve şık yetişkin (+16) açık restoran alanı",
+        "crowdAndNoise": "Gün batımı ve akşam yemeğinde çiftler ile sakin lüks atmosfer arayan misafirlerle dengeli",
+        "disadvantage": "Yetişkin oteli konsepti ve üst segment fiyat seviyesi nedeniyle çocuklu aileler veya ekonomik akşam yemeği arayanlara uygun değil",
+        "transit": "Karagözler marina yürüyüş yolundan 30. Sokak üzerine çıkılarak yürüyerek dört dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Nude Restaurant Fethiye",
+          "url": "https://maps.google.com/?cid=18356668743166217099",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Karagözler Mah. 30. Sk. No:43/A konumu doğrulandı"
+        },
+        {
+          "title": "Hotel Unique — Nude Restaurant Resmi Sitesi",
+          "url": "http://www.hoteluniqueturkey.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Teras mimarisi, körfez manzarası ve akşam yemeği servisi"
+        },
+        {
+          "title": "OGGUSTO — Fethiye Gezi ve Yeme-İçme Rehberi",
+          "url": "https://www.oggusto.com/seyahat/yurtici/fethiye-gezi-rehberi",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taş-ahşap Akdeniz mimarisi ve Karagözler akşam yemeği önerisi"
+        },
+        {
+          "title": "Restoranim — Nude Restaurant Fethiye",
+          "url": "https://restoranim.net/mugla/fethiye/restoran/nude-restaurant-fethiye",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Halloumi salatası, ossobuco, ravioli ve imza kokteyller hakkında değerlendirmeler"
+        }
+      ],
+      "pros": [
+        "Karagözler marinasını yukarıdan gören romantik gün batımı terası",
+        "Yetişkin konseptli sakin ortam ve özenli şarap-kokteyl eşleşmesi"
+      ],
+      "cons": [
+        "Yetişkin konsepti (+16) ve yüksek fiyat segmenti"
+      ],
+      "uncertainties": [
+        "Yüksek sezonda ön sıra manzaralı masalar için önceden rezervasyon gerekiyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-rise-restaurant",
+      "categoryId": "date",
+      "resolvedName": "Rise Restaurant",
+      "branchName": "Cumhuriyet, Beşkaza Meydanı 502/1 - 11/B, 48300 Fethiye/Muğla",
+      "placeId": "ChIJR0GKLR9BwBQRv4rl35aBSEE",
+      "coordinates": {
+        "lat": 36.6235527,
+        "lng": 29.1131401
+      },
+      "rating": 4.7,
+      "userRatingCount": 559,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://risebistrorestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=4704152295789923007",
+      "recommendedPrimary": [
+        "Şef Meze Tabağı & Kök Sebze Tarator",
+        "Bonfile / Izgara Et Tabakları",
+        "Izgara Ahtapot"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Sufle & Taze Kızarmış Ekmek İkramı",
+          "note": "Başlangıçta masaya sıcak gelen kızarmış ekmek ikramı ve kapanışta akışkan sıcak sufle tatlısı akşam yemeklerinin sevilen detayları.",
+          "proof": "risebistrorestaurant.com resmi sitesi ve Wanderlog Rise Restaurant kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık, çağdaş iç salon ve Beşkaza Meydanı tarafına bakan ferah akşam masaları",
+        "crowdAndNoise": "Çiftler, özel kutlama masaları ve şık meyhane-bistro atmosferi arayanlarla canlı",
+        "disadvantage": "Meydan çevresindeki hareketlilik ve yoğun sezonda artan doluluk zaman zaman servis temposunu yavaşlatabiliyor",
+        "transit": "Fethiye Beşkaza Meydanı 502/1 Sokak üzerinde Kordon yürüyüş bandından yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Rise Restaurant",
+          "url": "https://maps.google.com/?cid=4704152295789923007",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Cumhuriyet Mah. Beşkaza Meydanı 502/1 - 11/B konumu doğrulandı"
+        },
+        {
+          "title": "Rise Bistro Restaurant Resmi Sitesi",
+          "url": "https://risebistrorestaurant.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Fine-casual bistro konsepti ve çağdaş Anadolu-Akdeniz mutfağı"
+        },
+        {
+          "title": "Wanderlog — Rise Restaurant Fethiye",
+          "url": "https://wanderlog.com/place/details/8760647/rise-restaurant",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Meze çeşitliliği, deniz mahsulleri ve akşam saatleri geri bildirimleri"
+        },
+        {
+          "title": "Restoranim — Rise Restaurant",
+          "url": "https://restoranim.net/mugla/fethiye/restoran/rise-restaurant",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Beşkaza Meydanı servis kalitesi ve tabak sunum değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Klasik meyhane çizgisini aşan rafine şef mezeleri ve şık sunumlar",
+        "Fethiye merkezde kolay ulaşılabilir çağdaş akşam buluşma noktası"
+      ],
+      "cons": [
+        "Yoğun yaz akşamlarında servis hızında dönemsel yavaşlama"
+      ],
+      "uncertainties": [
+        "Dönemsel şef tabakları ve canlı akşam etkinlikleri mevsime göre değişebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-nomades",
+      "categoryId": "date",
+      "resolvedName": "Nomades Cafe & Restaurant",
+      "branchName": "Cumhuriyet, Çarşı Cd., 48300 Fethiye/Muğla",
+      "placeId": "ChIJrQGfk_tBwBQRSxMl095jSSY",
+      "coordinates": {
+        "lat": 36.6206001,
+        "lng": 29.113804999999996
+      },
+      "rating": 4.7,
+      "userRatingCount": 1452,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://nomades-restaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=2758846055417451339",
+      "recommendedPrimary": [
+        "Trüf Soslu Dana Tartar",
+        "Deniz Mahsullü Risotto",
+        "Ev Yapımı Makarna Çeşitleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çikolatalı Fondant & Canlı Müzik Akşamları",
+          "note": "Akşam yemeklerinin kapanışında akışkan çikolatalı fondant ve seçili günlerde düzenlenen akustik canlı müzik atmosferi öne çıkıyor.",
+          "proof": "nomades-restaurant.com resmi menüsü ve Restoranim Nomades kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Çarşı içinde beklenmedik derecede ferah, yüksek tavanlı şık iç salon ve cadde önü masalar",
+        "crowdAndNoise": "Romantik akşam yemeği arayan çiftler ve modern Avrupa tabaklarını seven misafirlerle dolu",
+        "disadvantage": "Turistik Çarşı Caddesi üzerindeki konumu nedeniyle akşam yaya hareketliliği dış masalarda hissediliyor ve fiyatlar esnaf lokantalarının üzerinde",
+        "transit": "Paspatur Çarşı Caddesi No:77/A üzerinde Balık Pazarı yönünden yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — NOMADES Cafe & Restaurant",
+          "url": "https://maps.google.com/?cid=2758846055417451339",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Cumhuriyet Mah. Çarşı Cd. konumu doğrulandı"
+        },
+        {
+          "title": "Nomades Restaurant Resmi Sitesi",
+          "url": "https://nomades-restaurant.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Avrupa mutfağı menüsü, dana tartar, risotto ve akşam servisi"
+        },
+        {
+          "title": "Restoranim — Nomades Cafe & Restaurant",
+          "url": "https://restoranim.net/mugla/fethiye/restoran/nomades-cafe-restaurant",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sunum estetiği, risotto ve çikolatalı fondant değerlendirmeleri"
+        },
+        {
+          "title": "Biz Evde Yokuz — Fethiye Restoranları",
+          "url": "https://www.bizevdeyokuz.com/fethiye-restoranlar/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Fethiye yeme-içme rehberi bağlamı"
+        }
+      ],
+      "pros": [
+        "Fethiye merkez çarşısında özenli Avrupa/füzyon tabakları ve ferah iç dekor",
+        "Dana tartar ve risotto gibi bölgede nadir bulunan şef reçeteleri"
+      ],
+      "cons": [
+        "Merkez çarşı yaya kalabalığına yakınlık ve orta-üst fiyat seviyesi"
+      ],
+      "uncertainties": [
+        "Canlı müzik programının günleri mevsime göre değişebiliyor"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-mandala-lounge",
+      "categoryId": "date",
+      "resolvedName": "Mandala Lounge",
+      "branchName": "Karagözler, Fevzi Çakmak Cd. No:14, 48300 Fethiye/Muğla",
+      "placeId": "ChIJ9dl2h2pBwBQRxqMDx9XGJYY",
+      "coordinates": {
+        "lat": 36.6224282,
+        "lng": 29.1018288
+      },
+      "rating": 4.5,
+      "userRatingCount": 45,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/mandala__lounge/?hl=en",
+      "mapsUri": "https://maps.google.com/?cid=9666350796689875910",
+      "recommendedPrimary": [
+        "Sushi & Roll Seçkisi",
+        "Dynamite Karides",
+        "Asya Usulü Noodle"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Gün Batımı DJ Performansları & Mocktail Barı",
+          "note": "Havuz ve marina manzarasına karşı yüksek sese boğmayan chill müzik, canlı DJ performansları ve alkolsüz kokteyl seçenekleri akşam buluşmalarını öne çıkarıyor.",
+          "proof": "yachtbohemehotel.com resmi sayfası ve Wanderlog Mandala Lounge kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Havuz başı bahçe lounge masaları, bar tabureleri ve açık marina manzaralı oturma grupları",
+        "crowdAndNoise": "Karagözler çiftleri ve kokteyl-suşi eşleşmesi arayan misafirlerle şık ve sakin-enerjik",
+        "disadvantage": "Otel (+16) konseptine bağlı çalıştığından aile ve küçük çocuklu gruplar için uygun değil; otel dışı girişlerde akşam rezervasyonu gerekebiliyor",
+        "transit": "Karagözler Fevzi Çakmak Caddesi No:14 üzerinde yat limanı boyunca yürüyerek dört dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Mandala lounge",
+          "url": "https://maps.google.com/?cid=9666350796689875910",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Karagözler Mah. Fevzi Çakmak Cd. No:14 konumu doğrulandı"
+        },
+        {
+          "title": "Yacht Boheme Hotel — Mandala Lounge Resmi Sayfası",
+          "url": "https://www.yachtbohemehotel.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Karagözler marina karşısı yetişkin konseptli restoran & bar bilgileri"
+        },
+        {
+          "title": "Wanderlog — Mandala Lounge Fethiye",
+          "url": "https://wanderlog.com/tr/place/details/9726198/mandala-lounge",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Suşi, dynamite shrimp, ambiyans ve DJ atmosferi incelemeleri"
+        },
+        {
+          "title": "Restaurant Guru — Mandala Lounge Fethiye",
+          "url": "https://restaurantguru.com/Mandala-Lounge-Fethiye",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Asya füzyon mutfağı ve kokteyl değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Fethiye merkezde klasik balık/kebap dışında nitelikli Asya füzyon ve suşi seçeneği",
+        "Sohbet etmeye izin veren dengeli aydınlatma ve chill lounge atmosferi"
+      ],
+      "cons": [
+        "+16 yetişkin otel sınırlandırması ve sezonluk dış misafir doluluğu"
+      ],
+      "uncertainties": [
+        "DJ ve canlı müzik gecelerinin haftalık takvimi mevsime bağlı"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-chez-la-vie",
+      "categoryId": "kahvalti",
+      "resolvedName": "Chez La Vie Coffee & Eatery",
+      "branchName": "Karagözler, Fevzi Çakmak Cd. No:91, 48300 Fethiye/Muğla",
+      "placeId": "ChIJ1yGcpIJBwBQRBORbaxkI2cM",
+      "coordinates": {
+        "lat": 36.6203867,
+        "lng": 29.095346499999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 1047,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.chezlavieeatery.com/",
+      "mapsUri": "https://maps.google.com/?cid=14112319812610548740",
+      "recommendedPrimary": [
+        "Fit Kahvaltı Tabağı",
+        "Kahvaltı Kasesi",
+        "Ekşi Mayalı Avokadolu Tost"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İmza Tatlılar (Reddish, Frangipanna & Letoon)",
+          "note": "Brunch sonrasında mutfağın kendi üretimi olan Reddish, Frangipanna ve Letoon tatlıları taze demlenmiş kahvelerle sıkça eşleştiriliyor.",
+          "proof": "chezlavieeatery.com resmi menüsü ve Müdavim Fethiye rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Karagözler sahil hattına paralel ferah teras ve ev sıcaklığında tasarlanmış şık iç mekân",
+        "crowdAndNoise": "Sabah kahvaltısı ve geç brunch saatlerinde Karagözler yerleşikleri ve gezginlerle hareketli",
+        "disadvantage": "Karagözler marinaya doğru uzandığından çarşıdan yürümek biraz zaman alır ve hafta sonu sabahları masa beklemek gerekebilir",
+        "transit": "Karagözler Fevzi Çakmak Caddesi No:91 üzerinde Yes Marina yönüne yürüyerek beş dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Chez La Vie Coffee & Eatery",
+          "url": "https://maps.google.com/?cid=14112319812610548740",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Karagözler Mah. Fevzi Çakmak Cd. No:91 konumu doğrulandı"
+        },
+        {
+          "title": "Chez La Vie Eatery Resmi Sitesi",
+          "url": "http://www.chezlavieeatery.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Fit Kahvaltı, Kahvaltı Kasesi, ekşi maya ekmek ve imza tatlılar menüsü"
+        },
+        {
+          "title": "Müdavim — Chez La Vie Fethiye",
+          "url": "https://mudavim.net/chez-la-vie-fethiye/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "240 Derece ekşi maya iş birliği, Petra Coffee ve mevsimsel tabaklar incelemesi"
+        },
+        {
+          "title": "Restoranim — Chez La Vie Coffee & Eatery",
+          "url": "https://restoranim.net/mugla/fethiye/restoran/chez-la-vie-coffee-eatery",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Brunch porsiyonları ve vegan alternatif değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Mevsimsel yerel ürünlerle hazırlanan yaratıcı brunch ve vegan kahvaltı kaseleri",
+        "Petra Coffee ve artizan ekşi mayalı ekmek standartları"
+      ],
+      "cons": [
+        "Hafta sonu sabah yoğunluğu ve çarşıya biraz mesafeli konum"
+      ],
+      "uncertainties": [
+        "Mevsimsel tatlı vitrini günlük olarak değişebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-2mb-sole",
+      "categoryId": "kahvalti",
+      "resolvedName": "2MB Sole Coffee & Eatery",
+      "branchName": "Uşaklı villaları, Akarca, Cahit Gündüz Cd. no:100/1, 48300 Fethiye/Muğla",
+      "placeId": "ChIJjdnhSkFDwBQR-YL8HMmdbRo",
+      "coordinates": {
+        "lat": 36.6432797,
+        "lng": 29.1216506
+      },
+      "rating": 4.8,
+      "userRatingCount": 442,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1904351704547885817",
+      "recommendedPrimary": [
+        "Berry Bowl (Meyveli & Granolalı)",
+        "Artizan Kahvaltı Tabağı",
+        "Flat White / Cortado"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Geniş Dünya Kahveleri & Hafif Eatery Tabakları",
+          "note": "Sabah kaselerinin yanı sıra gün boyu süren kaliteli espresso barı ve hafif öğle atıştırmalıkları Akarca sahil yürüyüşçülerini çekiyor.",
+          "proof": "2mbsolecoffee.com resmi sitesi ve Restoranim 2MB Sole kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Uşaklı Villaları altında geniş açık bahçe terası ve aydınlık modern iç oturum",
+        "crowdAndNoise": "Sabah yürüyüşü sonrası kahvaltı yapan Akarca sakinleri ve dijital göçebelerle ferah",
+        "disadvantage": "Merkez Paspatur çarşısından kuzeyde Akarca sahil bandında kaldığı için yürüyüş yerine bisiklet veya araçla ulaşım daha pratik",
+        "transit": "Akarca sahil bandında Şehit Fethi Bey Parkı güneyinden Cahit Gündüz Caddesi üzerinde yürüyerek dört dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — 2MB Sole Coffee & Eatery",
+          "url": "https://maps.google.com/?cid=1904351704547885817",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Akarca Mah. Cahit Gündüz Cd. No:100/1 konumu doğrulandı"
+        },
+        {
+          "title": "2MB Sole Coffee & Eatery Resmi Sitesi",
+          "url": "https://2mbsolecoffee.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Berry Bowl, kahvaltı tabakları ve kahve menüsü"
+        },
+        {
+          "title": "Fethiye Helal Rehberi — 2MB Sole Coffee & Eatery",
+          "url": "https://fethiyehelal.com/mekan/sole-coffee-eatery-fethiye-sahilde-nitelikli-kahve-ve-gastronomi/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Akarca sahil hattında artizan mutfak ve kahve deneyimi incelemesi"
+        },
+        {
+          "title": "Restoranim — 2MB Sole Coffee & Eatery",
+          "url": "https://restoranim.net/mugla/fethiye/kafe/2mb-sole-coffee-eatery",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bowl sunumları, kahvaltı çeşitliliği ve atmosfer puanları"
+        }
+      ],
+      "pros": [
+        "Klasik serpme kahvaltıya ferah alternatif sunan meyveli granola kaseleri",
+        "Akarca sahil yürüyüş yoluna çok yakın geniş bahçe oturumu"
+      ],
+      "cons": [
+        "Merkez çarşıya uzak konumu nedeniyle toplu taşıma veya araç gerektirmesi"
+      ],
+      "uncertainties": [
+        "Hafta sonu sabahları dış bahçe masaları hızla dolabiliyor"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-apple-cafe",
+      "categoryId": "kahvalti",
+      "resolvedName": "Apple Cafe",
+      "branchName": "Cumhuriyet, Çarşı Cd. No:35 D:B, 48300 Fethiye/Muğla",
+      "placeId": "ChIJzcKI52NBwBQRV0uThhKivqw",
+      "coordinates": {
+        "lat": 36.6205785,
+        "lng": 29.109386899999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 345,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12447564620549540695",
+      "recommendedPrimary": [
+        "Klasik Menemen",
+        "Klasik Kahvaltı Tabağı",
+        "Sebzeli Omlet"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Cheesecake & Günlük Kekler",
+          "note": "Sabah kahvaltısından sonra taze çekilmiş kahvelerin yanında günlük çıkan ev yapımı cheesecake ve kek dilimleri öne çıkıyor.",
+          "proof": "Restoranim Apple Cafe ve Şehir Pusulası Fethiye kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Çarşı içinde gölgelik açık sokak masaları ve samimi küçük iç salon",
+        "crowdAndNoise": "Sabah saatlerinde çarşı esnafı ve kahvaltı molası veren gezginlerle sıcak ve hareketli",
+        "disadvantage": "Turistik çarşı merkezinde yer aldığı için fiyatlar ara sokak fırınlarının biraz üzerinde ve masalar birbirine yakın",
+        "transit": "Paspatur Çarşı Caddesi No:35/B üzerinde Balık Pazarı güney girişinden yürüyerek bir dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Apple Cafe",
+          "url": "https://maps.google.com/?cid=12447564620549540695",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Cumhuriyet Mah. Çarşı Cd. No:35/B konumu doğrulandı"
+        },
+        {
+          "title": "Restoranim — Apple Cafe Fethiye",
+          "url": "https://restoranim.net/mugla/fethiye/kahvaltici/apple-cafe",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Menemen, kahvaltı tabakları ve çarşı servisi değerlendirmeleri"
+        },
+        {
+          "title": "Wanderlog — Fethiye Kahvaltı ve Yeme-İçme Listesi",
+          "url": "https://wanderlog.com/list/geoCategory/70875/best-places-to-eat-in-fethiye",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Samimi atmosfer ve çarşı içi kahvaltı önerisi"
+        },
+        {
+          "title": "Şehir Pusulası — Apple Cafe Muğla",
+          "url": "https://www.sehirpusulasi.com/mekan/apple-cafe-mugla/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çarşı merkezinde uzun soluklu menemen ve ev yapımı tatlı profili"
+        }
+      ],
+      "pros": [
+        "Paspatur ve Çarşı merkezinde sabah erken saatlerden itibaren hızlı ve sıcak menemen",
+        "Vejetaryen seçenekler ve ev yapımı tatlı eşlikçileri"
+      ],
+      "cons": [
+        "Çarşı içi kalabalık saatlerde dar masa yerleşimi"
+      ],
+      "uncertainties": [
+        "Günlük pasta ve kek çeşitleri o günkü üretime göre değişiyor"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-fethiye-gozleme-kafe",
+      "categoryId": "kahvalti",
+      "resolvedName": "Fethiye Gözleme Kafe",
+      "branchName": "Dış Kapı:12, Cumhuriyet, Gaffar Okkan Cd. İç Kapı:2, 48300 Fethiye/Muğla",
+      "placeId": "ChIJA7Y-uqtDwBQRF-QmUsNptYQ",
+      "coordinates": {
+        "lat": 36.624108299999996,
+        "lng": 29.115368200000002
+      },
+      "rating": 4.5,
+      "userRatingCount": 188,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9562665671408935959",
+      "recommendedPrimary": [
+        "Otlu Peynirli Gözleme",
+        "Pazılı & Pırasalı Gözleme",
+        "Patatesli / Ispanaklı Gözleme"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Vegan & Tereyağsız Sipariş Seçeneği",
+          "note": "Taze açılan patatesli ve ıspanaklı gözlemelerin talep üzerine peynir ve tereyağı eklenmeden hazırlanabilmesi bitkisel beslenenler için büyük kolaylık sağlıyor.",
+          "proof": "HappyCow Fethiye Gözleme Kafe ve Yemeksepeti menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Pasaj içi sade esnaf dükkânı masaları ve hızlı elden teslim/paket düzeni",
+        "crowdAndNoise": "Sabah işe giden yerleşikler ve yöresel el açması gözleme arayanlarla sakin tempolu",
+        "disadvantage": "Gösterişli manzara veya lüks kahvaltı servisi yerine sade bir pasaj içi esnaf dükkânı düzeninde çalışır",
+        "transit": "Cumhuriyet Gaffar Okkan Caddesi Dispanser civarı pasaj içinde, merkezden yürüyerek dört dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Fethiye Gözleme Kafe",
+          "url": "https://maps.google.com/?cid=9562665671408935959",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Cumhuriyet Mah. Gaffar Okkan Cd. No:12/2 konumu doğrulandı"
+        },
+        {
+          "title": "HappyCow — Fethiye Gözleme Kafe",
+          "url": "https://www.happycow.net/reviews/fethiye-goezleme-kafe-fethiye-316940",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Göz önünde el açması gözleme yapımı ve vegan/tereyağsız hazırlık seçenekleri"
+        },
+        {
+          "title": "Yemeksepeti — Fethiye Gözleme Kafe",
+          "url": "https://www.yemeksepeti.com/restaurant/znis/fethiye-gozleme-kafe-znis",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Otlu peynirli, pazılı-pırasalı ve kabaklı gözleme çeşitleri menüsü"
+        }
+      ],
+      "pros": [
+        "Sipariş üzerine göz önünde taze açılan ince hamurlu Ege otlu gözlemeler",
+        "Sade esnaf samimiyeti ve isteğe bağlı vegan hazırlık esnekliği"
+      ],
+      "cons": [
+        "Pasaj içi gösterişsiz dükkân ortamı ve kısıtlı oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Pazılı ve pırasalı gibi mevsimsel ot harçları döneme göre değişebiliyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-mantyka",
+      "categoryId": "denemelisin",
+      "resolvedName": "Mantyka Gastro Market",
+      "branchName": "Cumhuriyet, Çarşı Cd. No:178, 48300 Fethiye/Muğla",
+      "placeId": "ChIJE6e3s8hBwBQRXT7bXCzQlmg",
+      "coordinates": {
+        "lat": 36.6204058,
+        "lng": 29.1138795
+      },
+      "rating": 5,
+      "userRatingCount": 141,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.mantyka.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=7536439915406114397",
+      "recommendedPrimary": [
+        "Jumbo Dana Etli Mantı",
+        "Gürcü Mantısı (Hinkal)",
+        "Çiğ Börek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tatlı Peynirli Çörek",
+          "note": "Doyurucu mantı tabaklarının ardından hafif tatlı kapanış arayanlar için mutfağın özel tatlı peynirli çöreği en çok tavsiye edilen eşlikçi.",
+          "proof": "Yemeksepeti Mantyka Gastro Restaurant ve Restaurant Guru kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Çarşı Caddesi üzerinde temiz, samimi kafe-restoran masaları ve paket servis vitrini",
+        "crowdAndNoise": "Ev yapımı mantı arayan yerleşikler ve çarşı ziyaretçileriyle düzenli dolu",
+        "disadvantage": "Siparişler taze haşlanarak hazırlandığı için yoğun öğle-akşam saatlerinde servis biraz zaman alabiliyor",
+        "transit": "Cumhuriyet Çarşı Caddesi No:178 üzerinde merkez yürüyüş aksından iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — MANTYKA Gastro Market - Cafe & Restaurant",
+          "url": "https://maps.google.com/?cid=7536439915406114397",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Cumhuriyet Mah. Çarşı Cd. No:178 konumu doğrulandı"
+        },
+        {
+          "title": "Mantyka Resmi Sitesi",
+          "url": "https://www.mantyka.com.tr/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "El yapımı mantı ve gastro market ürün bilgileri"
+        },
+        {
+          "title": "Yemeksepeti — Mantyka Gastro Restaurant",
+          "url": "https://www.yemeksepeti.com/restaurant/eq5a/mantyka-gastro-restaurant",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Jumbo dana etli mantı porsiyonları ve tatlı peynirli çörek geri bildirimleri"
+        },
+        {
+          "title": "Restaurant Guru — Mantyka Gastro Market Fethiye",
+          "url": "https://ru.restaurantguru.com/MANTYKA-Gastro-Market-Cafe-and-Restaurant-Fethiye",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Gürcü mantısı, hamur işleri ve yüksek memnuniyet değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Jumbo dana etli ve Gürcü mantısı gibi özenli el açması hamur işleri",
+        "Doyurucu porsiyonlar ve gastro market tarzında eve götürmelik ürün seçeneği"
+      ],
+      "cons": [
+        "Küçük iç mekân düzeni ve taze pişirim kaynaklı kısa bekleme süresi"
+      ],
+      "uncertainties": [
+        "Bazı özel iç harç çeşitleri günlük üretim miktarına göre sınırlı olabiliyor"
+      ],
+      "selectionScore": 96,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-mezzelik",
+      "categoryId": "denemelisin",
+      "resolvedName": "Mezzelik Meze Evi",
+      "branchName": "Kesikkapı, Pürşah Bey cad No47/A, 48300 Fethiye/Muğla",
+      "placeId": "ChIJt6gJPcVDwBQRAVD3X7xgTJc",
+      "coordinates": {
+        "lat": 36.6282998,
+        "lng": 29.1190653
+      },
+      "rating": 4.8,
+      "userRatingCount": 96,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://mezzelik.com/",
+      "mapsUri": "https://maps.google.com/?cid=10902195160137289729",
+      "recommendedPrimary": [
+        "Yaban Mersinli Firik Tabule",
+        "Bakla Fava & Skordalia",
+        "Denizci Böreği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Karamelize Arpacık Soğan & Kaya Koruğu Mezesi",
+          "note": "Klasiklerin yanında tahin dokunuşlu karamelize arpacık soğan mezesi, kaya koruğu ve çıtır denizci böreği akşam sofralarına götürmek için sıkça alınıyor.",
+          "proof": "mezzelik.com resmi menüsü ve Yemeksepeti Mezzelik Meze Evi kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağırlıklı olarak şeffaf vitrinden taze seçmeli paket/al-götür düzeni ve sınırlı tadım masası",
+        "crowdAndNoise": "Akşam sofrası kuran yerel halk, tekne tedarikçileri ve meze meraklılarıyla hareketli",
+        "disadvantage": "Uzun saatler oturulacak bir restoran salonundan ziyade günlük taze meze seçilen butik bir meze evi düzeninde",
+        "transit": "Kesikkapı-Tuzla sınırında Pürşah Bey Caddesi No:47/A üzerinde merkezden yürüyerek beş dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Mezzelik meze evi",
+          "url": "https://maps.google.com/?cid=10902195160137289729",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kesikkapı Mah. Pürşah Bey Cd. No:47/A konumu doğrulandı"
+        },
+        {
+          "title": "Mezzelik Resmi Sitesi",
+          "url": "http://mezzelik.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Günlük meze dolabı, firik tabule, fava ve denizci böreği menüsü"
+        },
+        {
+          "title": "Yemeksepeti — Mezzelik Meze Evi",
+          "url": "https://www.yemeksepeti.com/restaurant/z90s/mezzelik-meze-evi",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hijyen, tazelik ve fındık/bakla fava müşteri değerlendirmeleri"
+        },
+        {
+          "title": "Migros Yemek — Mezzelik Meze Evi",
+          "url": "https://www.migros.com.tr/yemek/mezzelik-meze-evi-fethiye-tuzla-mah-st-2dad5",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yerel meze ve ara sıcak çeşitleri sipariş kayıtları"
+        }
+      ],
+      "pros": [
+        "Yaban mersinli firik tabule ve tahinli arpacık soğan gibi özgün meze reçeteleri",
+        "Yüksek hijyen standardı ve günlük taze üretim disiplini"
+      ],
+      "cons": [
+        "Tam kapsamlı oturmalı akşam yemeği salonu yerine meze vitrini konsepti"
+      ],
+      "uncertainties": [
+        "Mevsimsel Ege otları günün tedarikine göre vitrinde değişiyor"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-nefis-pide-1982",
+      "categoryId": "denemelisin",
+      "resolvedName": "Nefis Pide 1982 Salonu",
+      "branchName": "Cumhuriyet, 41. Sk. No:9, 48300 Fethiye/Muğla",
+      "placeId": "ChIJXZkbG1RBwBQR57pcsIlq1OI",
+      "coordinates": {
+        "lat": 36.6214051,
+        "lng": 29.1086959
+      },
+      "rating": 4.6,
+      "userRatingCount": 1050,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16344806087236303591",
+      "recommendedPrimary": [
+        "Kuşbaşılı Kaşarlı Pide",
+        "Çıtır Lahmacun",
+        "Kıymalı Pide"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Künefe & Çorba Başlangıcı",
+          "note": "Pide ve lahmacun öncesinde günlük çorba ile başlayıp sıcak künefe ile bitirmek mekanın geleneksel esnaf lokantası rutini.",
+          "proof": "Turkey's For Life Nefis Pide incelemesi ve Yemeksepeti kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Klasik sade esnaf salonu düzeni ve hızlı sirkülasyonlu iç-dış masalar",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde yerel esnaf, aileler ve otantik pide arayan gezginlerle dolu",
+        "disadvantage": "Gösterişten uzak sade bir esnaf salonu atmosferine sahip; romantik veya sessiz akşam ortamı arayanlara uygun değil",
+        "transit": "Eski Cami ve Kordon arkası Cumhuriyet 41. Sokak No:9 içinde merkezden yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Nefis Pide 1982 Salonu",
+          "url": "https://maps.google.com/?cid=16344806087236303591",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Cumhuriyet Mah. 41. Sk. No:9 konumu doğrulandı"
+        },
+        {
+          "title": "Turkey's For Life — Nefis Pide Fethiye",
+          "url": "https://www.turkeysforlife.com/2023/01/nefis-pide-fethiye.html",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Fethiye merkezde köklü taş fırın pide ve lahmacun geleneği incelemesi"
+        },
+        {
+          "title": "Yemeksepeti — Nefis Pide & Kebap",
+          "url": "https://www.yemeksepeti.com/restaurant/o9wt/nefis-pide-and-kebap",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kuşbaşılı kaşarlı pide, lahmacun ve hızlı servis geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Kırk yılı aşkın süredir korunan geleneksel taş fırın pide ve lahmacun kıvamı",
+        "Fethiye merkezde ulaşılabilir fiyat-performans dengesi"
+      ],
+      "cons": [
+        "Geleneksel sade salon düzeni ve yoğun öğle kalabalığı"
+      ],
+      "uncertainties": [
+        "Hafta sonu öğle saatlerinde fırın siparişlerinde kısa bekleme olabiliyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-lokanta-fethiye",
+      "categoryId": "denemelisin",
+      "resolvedName": "Lokanta Fethiye",
+      "branchName": "Cumhuriyet, Çarşı Cd. No:36, 48303 Fethiye/Muğla",
+      "placeId": "ChIJq5ZGlhJBwBQRGVRx0HYrY2M",
+      "coordinates": {
+        "lat": 36.620608,
+        "lng": 29.109123
+      },
+      "rating": 4.7,
+      "userRatingCount": 2844,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.lokantafethiye.com/",
+      "mapsUri": "https://maps.google.com/?cid=7161615621752443929",
+      "recommendedPrimary": [
+        "Etli Antep Kuru Dolma",
+        "Ağır Pişmiş Dana Pöç / Kuzu Pilav",
+        "Acı Tempura Karnabahar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çıtır Kabak Tatlısı & Ev Yapımı Bitki Limonataları",
+          "note": "Geleneksel tahinli çıtır kabak tatlısı, crème brûlée ve taze meyve-bitki aromalı ev yapımı limonatalar menünün ayırt edici kapanışları.",
+          "proof": "lokantafethiye.com resmi menüsü ve Butik Rota Fethiye rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Çarşı Caddesi üzerinde geniş, ferah ve özenli masalara sahip modern esnaf-restoran salonu",
+        "crowdAndNoise": "Hem yerel Fethiyeliler hem de nitelikli Anadolu yemekleri tatmak isteyen gezginlerle gün boyu dolu",
+        "disadvantage": "Popülerliği nedeniyle akşam yemeği saatlerinde kapıda kısa bekleme yaşanabiliyor",
+        "transit": "Cumhuriyet Çarşı Caddesi No:36 üzerinde Paspatur ve Atatürk Caddesi kesişiminden iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Lokanta Fethiye",
+          "url": "https://maps.google.com/?cid=7161615621752443929",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Cumhuriyet Mah. Çarşı Cd. No:36 konumu doğrulandı"
+        },
+        {
+          "title": "Lokanta Fethiye Resmi Sitesi",
+          "url": "http://www.lokantafethiye.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Etli Antep kuru dolma, dana pöç, kuzu pilav ve tatlı menüsü"
+        },
+        {
+          "title": "Butik Rota — Lokanta Fethiye",
+          "url": "https://butikrota.com/tr/Fethiye/restaurants/lokanta-fethiye",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Anadolu ve Akdeniz lezzetlerini birleştiren mutfak profili"
+        },
+        {
+          "title": "Wanderlog — Lokanta Fethiye",
+          "url": "https://wanderlog.com/tr/place/details/7258263/lokanta-fethiye",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kuzu gerdan çorbası, kuru dolma ve kabak tatlısı değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Sıradan turistik menülerin ötesinde Antep kuru dolma ve dana pöç gibi özgün Anadolu yemekleri",
+        "Hem tencere hem Akdeniz ara sıcaklarını aynı çatı altında başarıyla çıkarması"
+      ],
+      "cons": [
+        "Yoğun yemek saatlerinde rezervasyonsuz bekleme ihtimali"
+      ],
+      "uncertainties": [
+        "Günlük çorba ve zeytinyağlı çeşitleri mevsime göre değişebiliyor"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-pasa-kebap",
+      "categoryId": "denemelisin",
+      "resolvedName": "Fethiye Paşa Kebap",
+      "branchName": "Cumhuriyet, Çarşı Cd. No:42, 48300 Fethiye/Muğla",
+      "placeId": "ChIJzysf6GNBwBQR6Bo_enAxNpc",
+      "coordinates": {
+        "lat": 36.620453,
+        "lng": 29.109156
+      },
+      "rating": 4.5,
+      "userRatingCount": 4058,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.fethiyepasakebap.com/",
+      "mapsUri": "https://maps.google.com/?cid=10895950707626547944",
+      "recommendedPrimary": [
+        "İmza Paşa Kebabı",
+        "Adana / Urfa Kebap",
+        "Karışık Izgara"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Balon Lavaş & Başlangıç Meze İkramları",
+          "note": "Siparişin hemen ardından masaya gelen fırından yeni çıkmış kabarık sıcak ekmek, ezme, haydari ve taze salata ikramları gezginlerin en çok vurguladığı ritüel.",
+          "proof": "Turkey's For Life Paşa Kebap incelemesi ve Trip.com Fethiye kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Çarşı Caddesi girişinde hem iç salon hem sokak kenarı masalara yayılan geniş oturum",
+        "crowdAndNoise": "Yerli aileler ve çarşıyı gezen yabancı misafirlerle öğleden geceye kadar oldukça canlı",
+        "disadvantage": "Yüksek sirkülasyonlu kalabalık bir ocakbaşı olduğu için sessiz bir akşam yemeği arayanlara gürültülü gelebilir",
+        "transit": "Cumhuriyet Çarşı Caddesi No:42 üzerinde Balık Pazarı güney köşesinden yürüyerek bir dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Fethiye Paşa Kebap",
+          "url": "https://maps.google.com/?cid=10895950707626547944",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Cumhuriyet Mah. Çarşı Cd. No:42 konumu doğrulandı"
+        },
+        {
+          "title": "Fethiye Paşa Kebap Resmi Sitesi",
+          "url": "http://www.fethiyepasakebap.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Paşa kebabı, ızgaralar ve geleneksel kebap menüsü"
+        },
+        {
+          "title": "Turkey's For Life — Paşa Kebap Restaurant Fethiye",
+          "url": "https://www.turkeysforlife.com/2018/04/pasa-kebap-restaurant-fethiye.html",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Paspatur yakınındaki köklü kebap kültürü ve sıcak ekmek ikramı incelemesi"
+        },
+        {
+          "title": "Trip.com — Fethiye Paşa Kebap",
+          "url": "https://www.trip.com/moments/detail/fethiye-1912-153912355/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Cömert başlangıç ikramları ve kebap doyuruculuğu değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Sıcak balon lavaş ve başlangıç mezeleriyle yüksek misafirperverlik standardı",
+        "Fethiye çarşısında yıllardır çizgisini koruyan güvenilir ocakbaşı"
+      ],
+      "cons": [
+        "Turistik çarşı kalabalığı ve akşam saatlerindeki gürültü seviyesi"
+      ],
+      "uncertainties": [
+        "Yüksek sezonda akşam masaları hızla dolduğundan sıra beklenebiliyor"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-ercan-usta",
+      "categoryId": "denemelisin",
+      "resolvedName": "Ercan Usta Adana Kebapçısı",
+      "branchName": "Deniz Apt, Tuzla, Mustafa Kemal Blv. 52/C, 48300 Fethiye/Muğla",
+      "placeId": "ChIJ28Q9LjJDwBQRt4xYrqd3OC8",
+      "coordinates": {
+        "lat": 36.629591999999995,
+        "lng": 29.124117599999995
+      },
+      "rating": 4.9,
+      "userRatingCount": 398,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.yemeksepeti.com/restaurant/ve8c/ercan-usta-adana-kebapcisi",
+      "mapsUri": "https://maps.google.com/?cid=3402601080546692279",
+      "recommendedPrimary": [
+        "Adana Kebap Dürüm",
+        "Kuzu Şiş Porsiyon",
+        "Ciğer Şiş Dürüm"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Acılı Çiğ Köfte & Közlenmiş Biber Eşlikçileri",
+          "note": "Dürüm ve porsiyon kebapların yanında sunulan çiğ köfte ikramı, közlenmiş soğan-biber ve taze yeşillik tabağı otantik Adana sofrası hissini tamamlıyor.",
+          "proof": "villaradari.com Fethiye mekan rehberi ve Maptons Ercan Usta kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Bulvar kenarında sade ve temiz birkaç iç-dış masa düzeni",
+        "crowdAndNoise": "Turistik kalabalıktan uzak, lezzet odaklı yerel müşterilerle sakin-sıcak",
+        "disadvantage": "Gösterişsiz bir salaş kebapçı olduğundan manzara, geniş masa konforu veya uzun akşam eğlencesi vadetmez",
+        "transit": "Tuzla Mustafa Kemal Bulvarı Deniz Apartmanı 52/C altında Kordon üst paralelinden yürüyerek dört dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Ercan Usta Adana Kebapçısı",
+          "url": "https://maps.google.com/?cid=3402601080546692279",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Tuzla Mah. Mustafa Kemal Blv. 52/C konumu doğrulandı"
+        },
+        {
+          "title": "Yemeksepeti — Ercan Usta Adana Kebapçısı",
+          "url": "https://www.yemeksepeti.com/restaurant/ve8c/ercan-usta-adana-kebapcisi",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Adana kebap dürüm, ciğer ve kuzu şiş sipariş değerlendirmeleri"
+        },
+        {
+          "title": "Villa Radar — Fethiye Mekan Rehberi: Ercan Usta",
+          "url": "https://villaradari.com/villa/villa-luwi/mekanlar/ercan-usta-adana-kebapcisi",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yerel halk tarafından önerilen otantik Adana kebap durağı profili"
+        },
+        {
+          "title": "Maptons — Ercan Usta Adana Kebapçısı",
+          "url": "https://mt.maptons.com/p/12911573268",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Adana dürüm ve uygun fiyat-lezzet dengesi geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Turistik çarşı dışında yerel damak tadına hitap eden gerçek Adana kebap ve ciğer",
+        "Hızlı, samimi aile işletmesi yaklaşımı"
+      ],
+      "cons": [
+        "Çok sade dükkân düzeni ve bulvar kenarı park kısıtı"
+      ],
+      "uncertainties": [
+        "Akşam geç saatlere doğru bazı şiş çeşitleri tükenebiliyor"
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-mezgit-cafe",
+      "categoryId": "denemelisin",
+      "resolvedName": "Fethiye Balık Ekmek - Mezgit Cafe",
+      "branchName": "Tuzla, 48303 Fethiye/Muğla",
+      "placeId": "ChIJITf6Kd5DwBQRzncjkFgqTmc",
+      "coordinates": {
+        "lat": 36.625251899999995,
+        "lng": 29.1155601
+      },
+      "rating": 4.6,
+      "userRatingCount": 1732,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.mezgitcafe.com/",
+      "mapsUri": "https://maps.google.com/?cid=7443933793953740750",
+      "recommendedPrimary": [
+        "Mezgit Balık Ekmek",
+        "Hamsi Tava Ekmek",
+        "Taze Midye Tava"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fileto Balık Salatası & Midye Tava",
+          "note": "Ekmek arası yerine daha hafif bir sahil molası isteyenler için bol yeşillikli taze balık salatası ve çıtır midye tava menüde yer alıyor.",
+          "proof": "mezgitcafe.com resmi menüsü ve Turkey's For Life Mezgit Cafe incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Kordon yürüyüş yolu kenarında deniz manzaralı açık ahşap masalar ve al-götür pencere servisi",
+        "crowdAndNoise": "Kordon yürüyüşçüleri, öğle molası verenler ve gün batımı atıştırmalıkçılarına sürekli canlı",
+        "disadvantage": "Hızlı kızartma ve sokak lezzeti konseptinde olduğundan klasik rakı-balık meze sofrası veya iç mekan konforu sunmaz",
+        "transit": "Fethiye Kordon Boyu Tuzla sahil yürüyüş bandı üzerinde Belediye binasından kuzeye yürüyerek üç dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Fethiye Balık Ekmek - Mezgit Cafe",
+          "url": "https://maps.google.com/?cid=7443933793953740750",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Tuzla Mah. Kordon Boyu konumu doğrulandı"
+        },
+        {
+          "title": "Mezgit Cafe Resmi Sitesi",
+          "url": "http://www.mezgitcafe.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Kordon sahilindeki mezgit balık-ekmek ve sokak deniz ürünleri menüsü"
+        },
+        {
+          "title": "Turkey's For Life — Mezgit Cafe Fethiye",
+          "url": "https://www.turkeysforlife.com/2020/07/mezgit-cafe-fethiye-seafood.html",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Liman yürüyüşünde taze fileto balık-ekmek deneyimi incelemesi"
+        },
+        {
+          "title": "Wanderlog — Mezgit Cafe Fethiye",
+          "url": "https://wanderlog.com/tr/place/details/3082541/fethiye-bal%C4%B1k-ekmek-mezgit-cafe",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Körfez kıyısı manzarası ve mezgit tava değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Kılçıksız taze mezgit filetosuyla Fethiye Kordon yürüyüşünün en pratik ve otantik durağı",
+        "Doğrudan deniz kıyısında hızlı, sıcak ve samimi sokak servisi"
+      ],
+      "cons": [
+        "Açık hava ağırlıklı düzeni nedeniyle rüzgârlı/yağışlı günlerde konforunun düşmesi"
+      ],
+      "uncertainties": [
+        "Günlük av durumuna göre yan balık çeşitleri değişebiliyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-homemade",
+      "categoryId": "denemelisin",
+      "resolvedName": "Homemade",
+      "branchName": "Cumhuriyet, Dispanser Cd. No:17/A, 48300 Fethiye/Muğla",
+      "placeId": "ChIJUyBdht9DwBQRqKBYuKsTArM",
+      "coordinates": {
+        "lat": 36.6233512,
+        "lng": 29.1135387
+      },
+      "rating": 4.7,
+      "userRatingCount": 400,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12898893910995673256",
+      "recommendedPrimary": [
+        "Çikolatalı San Sebastian Cheesecake",
+        "Havuçlu Tarçınlı Pasta",
+        "Limonlu Cheesecake"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Taze Kruvasan & Glütensiz Tatlı Vitrinleri",
+          "note": "Cheesecake dilimlerinin dışında sabah taze çıkan katmanlı kruvasanlar ve dönemsel glütensiz/rafine şekersiz kek alternatifleri vitrinde yer alıyor.",
+          "proof": "GZT Fethiye mekan seçkisi, Buju Yollarda ve Wanderlog Homemade kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Butik pastane sıcaklığında küçük iç salon ve Dispanser Caddesi üzeri ön masalar",
+        "crowdAndNoise": "Öğleden sonra tatlı-kahve molası veren yerel halk ve gezginlerle sakin-samimi",
+        "disadvantage": "Günlük sınırlı tepsi üretimi nedeniyle akşam saatlerine doğru popüler pasta ve cheesecake çeşitleri tükenebiliyor",
+        "transit": "Cumhuriyet Dispanser Caddesi No:17/A üzerinde Beşkaza Meydanı doğu çıkışından yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Homemade",
+          "url": "https://maps.google.com/?cid=12898893910995673256",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Cumhuriyet Mah. Dispanser Cd. No:17/A konumu doğrulandı"
+        },
+        {
+          "title": "GZT — Fethiye 6 Mekan Rehberi: Homemade",
+          "url": "https://yemektarifleri.gzt.com/blog/fethiyede-sabah-kahvaltisindan-aksam-yemegine-kadar-tercih-edebileceginiz-6-mekan-3529269",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Karaköy butik kafe çizgisinde el yapımı tatlı ve pasta değerlendirmesi"
+        },
+        {
+          "title": "Buju Yollarda — Fethiyede Ne Yenir: Homemade Cakery",
+          "url": "https://bujuyollarda.com/fethiyede-ne-yenir/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Havuçlu tarçınlı kek ve San Sebastian cheesecake tatlı molası önerisi"
+        },
+        {
+          "title": "Wanderlog — Homemade Fethiye",
+          "url": "https://wanderlog.com/tr/place/details/1159557/homemade",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Aile işletmesi ilgisi ve glütensiz/şekersiz seçenek notları"
+        }
+      ],
+      "pros": [
+        "Tamamen el yapımı taze pasta ve cheesecake vitrini",
+        "Glütensiz ve rafine şekersiz tatlı alternatifi sunması"
+      ],
+      "cons": [
+        "Akşam geç saatlere kalındığında sevilen dilimlerin bitmesi ve sınırlı masa alanı"
+      ],
+      "uncertainties": [
+        "Günlük pasta çeşitleri mevsime göre değişiyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-casa-focaccia",
+      "categoryId": "denemelisin",
+      "resolvedName": "Casa Focaccia Italian Sandwiches",
+      "branchName": "Cumhuriyet, Hükümet Cd. olcay koç iş merkezi no:13/A, 48000 Fethiye/Muğla",
+      "placeId": "ChIJyZVmxtBBwBQRgL7kwhDcbLk",
+      "coordinates": {
+        "lat": 36.621448799999996,
+        "lng": 29.112228499999997
+      },
+      "rating": 4.8,
+      "userRatingCount": 177,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/focacciasandwiches.tr?igsh=cTN0bHh0bTJhdWFy&utm_source=qr",
+      "mapsUri": "https://maps.google.com/?cid=13361296159048777344",
+      "recommendedPrimary": [
+        "Toscana Sandviç (Tonnato Soslu)",
+        "Venedik Sandviç",
+        "Focaccia Roast Beef Sandviç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı İtalyan Tiramisu & Çilekli Limonata",
+          "note": "Focaccia sandviçlerin yanında Casa Signature menülerinde eşleşen ev yapımı tiramisu ve taze sıkım meyve suları ile çilekli limonata çok ilgi görüyor.",
+          "proof": "Yemeksepeti Focaccia Italian Sandwiches menüsü ve Seemor kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Olcay Koç İş Merkezi altında az sayıda masalı kompakt butik sandviç dükkânı",
+        "crowdAndNoise": "Hızlı, nitelikli öğle yemeği arayan çalışanlar ve İtalyan sandviç meraklılarıyla dengeli",
+        "disadvantage": "Oturma alanı oldukça küçük olduğundan özellikle kalabalık gruplar yerine tek/çift kişilik hızlı mola veya paket servise daha uygun",
+        "transit": "Cumhuriyet Hükümet Caddesi Olcay Koç İş Merkezi No:13/A önünde Paspatur girişinden yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Casa Focaccia İtalian Sandwiches",
+          "url": "https://maps.google.com/?cid=13361296159048777344",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Cumhuriyet Mah. Hükümet Cd. No:13/A konumu doğrulandı"
+        },
+        {
+          "title": "Casa Focaccia Resmi Instagram",
+          "url": "https://www.instagram.com/focacciasandwiches.tr",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Taze pişirilen İtalyan focaccia ekmekleri ve gurme sandviç içerikleri"
+        },
+        {
+          "title": "Yemeksepeti — Focaccia Italian Sandwiches",
+          "url": "https://www.yemeksepeti.com/en/restaurant/y45i/focaccia-italian-sandwiches-y45i",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Toscana, Venedik, Roma sandviçleri ve tiramisu menüsü"
+        },
+        {
+          "title": "Seemor — Casa Focaccia Italian Sandwiches",
+          "url": "https://app.seemor.ai/restaurant/fethiye/casa-focaccia-italian-sandwiches",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Aile işletmesi sıcaklığı ve taze malzeme değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Taze pişen hava kabarcıklı focaccia ekmeği ve tonnato gibi özenli İtalyan sosları",
+        "Fethiye merkezde klasik döner-tost dışında hızlı ama nitelikli öğle alternatifi"
+      ],
+      "cons": [
+        "İş hanı altındaki dar oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Bazı şarküteri ve peynir çeşitleri günlük parti durumuna bağlı"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-kahve-alti",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kahve Altı Geleneksel Türk Yemekleri",
+      "branchName": "Akarca, Yerguzlar Cd. No:8 D:B, 48000 Fethiye/Muğla",
+      "placeId": "ChIJu7eIwptDwBQRbokt6wXSnRs",
+      "coordinates": {
+        "lat": 36.6530185,
+        "lng": 29.122535700000004
+      },
+      "rating": 4.8,
+      "userRatingCount": 914,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1989977533229926766",
+      "recommendedPrimary": [
+        "Günün Ev Usulü Tencere Yemekleri",
+        "Zeytinyağlı Çeşitleri",
+        "Ev Mantısı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Geleneksel Kahvaltı & Ev Yapımı Tatlılar",
+          "note": "Öğle tencere yemeklerinin yanında sabah saatlerinde kahvaltı seçenekleri ve yemek sonrası ev yapımı günlük tatlılar düzenli olarak çıkıyor.",
+          "proof": "Wanderboat Kahve Altı değerlendirmeleri ve Nelerimeşhur Fethiye kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Akarca cadde kenarında temiz, sade ve huzurlu aile lokantası salonu",
+        "crowdAndNoise": "Akarca mahalle sakinleri, esnaf ve ev yemeği özleyen gezginlerle öğle saatlerinde yoğun",
+        "disadvantage": "Günlük hazırlanan tencere yemekleri bittikçe tezgâhtan kalktığından akşam geç saatlere kalındığında çeşit azalabiliyor",
+        "transit": "Akarca Yerguzlar Caddesi No:8/B üzerinde sahil parkı yönünden yürüyerek beş dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Kahve Altı Geleneksel Türk Yemekleri ~ Restoran & Kafe",
+          "url": "https://maps.google.com/?cid=1989977533229926766",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Akarca Mah. Yerguzlar Cd. No:8/B konumu doğrulandı"
+        },
+        {
+          "title": "Wanderboat — Kahve Altı Geleneksel Türk Yemekleri",
+          "url": "https://wanderboat.ai/restaurants/turkey/fethiye/kahve-alt%C4%B1-geleneksel-t%C3%BCrk-yemekleri-~-restoran-%26-kafe/U4-KOd7NR36jD26WeBXOoA",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Günlük değişen anne mutfağı tencere yemekleri ve temizlik değerlendirmeleri"
+        },
+        {
+          "title": "Nelerimeşhur — Kahve Altı Fethiye",
+          "url": "https://nelerimeshur.com/mugla/kafe-tatlicilar/kahve-alti-geleneksel-turk-yemekleri-restoran-kafe",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Akarca konumu ve geleneksel Türk ev yemekleri profili"
+        }
+      ],
+      "pros": [
+        "Sabit menü yerine günlük pişen ev yemeği ve zeytinyağlı tazeliği",
+        "Sade, temiz ve güler yüzlü aile işletmesi ortamı"
+      ],
+      "cons": [
+        "Geç saatlerde günlük tencere çeşitlerinin tükenebilmesi ve merkeze uzaklık"
+      ],
+      "uncertainties": [
+        "Hangi tencere yemeklerinin çıkacağı günün menüsüne göre değişiyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-yengec",
+      "categoryId": "balik",
+      "resolvedName": "Yengeç Restaurant",
+      "branchName": "Yes Marina, Karagözler, 2.karagozler street no 42, 48300 Fethiye/Muğla",
+      "placeId": "ChIJrybURtRDwBQRWqE-EUEiKcA",
+      "coordinates": {
+        "lat": 36.620776299999996,
+        "lng": 29.092871600000002
+      },
+      "rating": 4.6,
+      "userRatingCount": 3282,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.yengecrestaurant.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=13846636192184836442",
+      "recommendedPrimary": [
+        "Izgara Ahtapot",
+        "Karides Dolması",
+        "Enginar Fava & Soğuk Mezeler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Marina Kıyısı Gün Batımı & Romantik Akşam Sofrası",
+          "note": "Yalnızca taze deniz ürünleriyle değil, marinanın merkez kalabalığından uzak sakin gün batımı manzarasıyla da özel akşam buluşmalarının başlıca adreslerinden.",
+          "proof": "Biz Evde Yokuz Fethiye rehberi ve yengecrestaurant.com.tr resmi sitesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Marina iskelesi kıyısında teknelere sıfır açık hava masaları ve şık iç salon",
+        "crowdAndNoise": "Akşam yemeği ve gün batımında tekne misafirleri, çiftler ve deniz ürünü müdavimleriyle dolu",
+        "disadvantage": "Üst segment fiyat seviyesinde hizmet veriyor; ön sıra iskele masaları için yaz akşamları önceden rezervasyon şart",
+        "transit": "Karagözler Fevzi Çakmak Caddesi boyunca Yes Marina içine yürüyerek altı dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Yengeç Restaurant",
+          "url": "https://maps.google.com/?cid=13846636192184836442",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Karagözler Mah. Yes Marina konumu doğrulandı"
+        },
+        {
+          "title": "Yengeç Restaurant Resmi Sitesi",
+          "url": "http://www.yengecrestaurant.com.tr/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Yes Marina kıyısı konumu, deniz mahsulleri ve meze menüsü"
+        },
+        {
+          "title": "Biz Evde Yokuz — Fethiye Restoranları: Yengeç",
+          "url": "https://www.bizevdeyokuz.com/fethiye-restoranlar/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Karides, enginar fava ve gün batımı marina atmosferi tavsiyesi"
+        },
+        {
+          "title": "World Travel Toucan — Best Fethiye Restaurants",
+          "url": "https://worldtraveltoucan.com/best-fethiye-restaurants/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Karagözler marina manzarası ve deniz ürünleri değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Teknelerin hemen yanında huzurlu marina manzarası ve gün batımı atmosferi",
+        "Enginar fava, karides dolması ve ızgara ahtapot gibi yıllardır oturan imza tabaklar"
+      ],
+      "cons": [
+        "Yüksek fiyat seviyesi ve sezonluk ön sıra masa rezervasyonu zorunluluğu"
+      ],
+      "uncertainties": [
+        "Büyük boy mevsim balıklarının günlük ağırlık fiyatları tezgâha göre değişiyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-oztoklu",
+      "categoryId": "balik",
+      "resolvedName": "Öztoklu Balık Restoranı (Balık Pazarı)",
+      "branchName": "Fish And Vegetables Market, Cumhuriyet, No.111, 48300 Fethiye/Muğla",
+      "placeId": "ChIJq17RoGFBwBQRLC3coCFLBXs",
+      "coordinates": {
+        "lat": 36.6211355,
+        "lng": 29.111778700000002
+      },
+      "rating": 4.5,
+      "userRatingCount": 848,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8864574049353477420",
+      "recommendedPrimary": [
+        "Tezgâhtan Seçme Izgara Levrek",
+        "Güveçte Sarımsaklı Karides",
+        "Izgara / Tava Kalamar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Pazar Tezgâhından Seç & Pişirt Ritüeli",
+          "note": "Orta balık tezgâhlarından dilediğiniz balığı seçip yalnızca pişirme ve meze servisiyle canlı açık hava pazar meydanında tüketmek Fethiye merkezinin en karakteristik akşam deneyimi.",
+          "proof": "Restoranim Öztoklu Balık Pazarı ve Restaurant Guru Fethiye kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Üstü kapalı tarihi Balık Pazarı meydanında canlı açık hava masa düzeni",
+        "crowdAndNoise": "Akşamları sokak müzisyenleri ve pazar tezgâhları etrafında yüksek enerjili, kalabalık",
+        "disadvantage": "Pazar meydanının gürültülü ve turistik kalabalığı sakin, sessiz bir baş başa akşam yemeği arayanlara göre değil",
+        "transit": "Cumhuriyet Mahallesi Fethiye Balık ve Sebze Pazarı No:111 içinde Çarşı girişinden yürüyerek bir dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Oztoklu Fish & Sea food Restaurant",
+          "url": "https://maps.google.com/?cid=8864574049353477420",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Cumhuriyet Mah. Balık Pazarı No:111 konumu doğrulandı"
+        },
+        {
+          "title": "Restoranim — Öztoklu Fish & Seafood Restaurant",
+          "url": "https://restoranim.net/mugla/fethiye/balikci/oztoklu-fish-sea-food-restaurant-fethiye-fish-market",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Pazarda balık seçme deneyimi, karides güveç ve mezeler üzerine değerlendirmeler"
+        },
+        {
+          "title": "Restaurant Guru — Öztoklu Restaurant Fethiye",
+          "url": "https://restaurantguru.com/Oztoklu-Restaurant-Fethiye-2",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Izgara levrek, kalamar ve aile işletmesi ilgisi geri bildirimleri"
+        },
+        {
+          "title": "Wanderlog — Fethiye Balık Pazarı Restoranları",
+          "url": "https://wanderlog.com/list/geoCategory/74444/where-to-eat-best-restaurants-in-fethiye",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Balık Pazarı içinde öne çıkan köklü seçenek"
+        }
+      ],
+      "pros": [
+        "Balık Pazarı geleneğini ★4.5 kalite istikrarı ve samimi aile servisiyle yaşatması",
+        "Tezgâhtan taze seçilen balığın yanına başarılı sarımsaklı karides güveç"
+      ],
+      "cons": [
+        "Pazar alanı içindeki yoğun ses ve kalabalık"
+      ],
+      "uncertainties": [
+        "Tezgâhtan alınan balığın maliyeti ve restoran pişirme/meze bedeli ayrı hesaplanıyor"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-cunda-balik",
+      "categoryId": "balik",
+      "resolvedName": "Cunda Balık Fethiye",
+      "branchName": "Tuzla, Cahit Gündüz Cd. No:25, 48300 Fethiye/Muğla",
+      "placeId": "ChIJhXMVQG1DwBQRrkkcy8Lo5Ho",
+      "coordinates": {
+        "lat": 36.636688,
+        "lng": 29.121523
+      },
+      "rating": 4.5,
+      "userRatingCount": 494,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8855458690646165934",
+      "recommendedPrimary": [
+        "Levrek Marin & Balık Pastırma",
+        "Girit Ezmesi & Ege Otları (Cibes/Akkız)",
+        "Izgara Çipura / Dil Tava"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Karidesli Mantı & Sübye Kavurma",
+          "note": "Soğuk Kuzey Ege ot mezelerinin ardından ara sıcakta gelen tereyağlı karidesli mantı ve sübye kavurma menünün ayırt edici Kuzey Ege dokunuşları.",
+          "proof": "Restoranim Cunda Balık Fethiye ve Nerde Nerede incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sahil bandına bakan deniz manzaralı ferah teras ve düzenli iç salon",
+        "crowdAndNoise": "Kuzey Ege meze kültürünü arayan yerleşikler ve ailelerle sakin-nezih akşam temposunda",
+        "disadvantage": "Yoğun yaz akşamlarında servis hızında dönemsel yavaşlama yaşanabiliyor ve üst-orta fiyat seviyesinde",
+        "transit": "Tuzla Cahit Gündüz Caddesi No:25 üzerinde 2. Etap Sahil Bandı yürüyüş yolundan yürüyerek bir dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Cunda Balık Fethiye",
+          "url": "https://maps.google.com/?cid=8855458690646165934",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Tuzla Mah. Cahit Gündüz Cd. No:25 konumu doğrulandı"
+        },
+        {
+          "title": "Restoranim — Cunda Balık Fethiye",
+          "url": "https://restoranim.net/mugla/fethiye/balikci/cunda-balik-fethiye",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Levrek marin, Girit ezmesi ve sahil manzarası değerlendirmeleri"
+        },
+        {
+          "title": "Nerde Nerede — Cunda Balık Fethiye",
+          "url": "https://www.nerdenerede.com/cunda-balik-fethiye-i327074",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kuzey Ege otları, balık pastırma ve Ayvalık-Cunda mutfak konsepti"
+        }
+      ],
+      "pros": [
+        "Fethiye sahilinde Kuzey Ege (Cunda) otları, lakerda ve balık pastırma çeşitliliği",
+        "Balık Pazarı gürültüsünden uzak deniz manzaralı ferah oturum"
+      ],
+      "cons": [
+        "Yoğun sezon akşamlarında servis bekleme süresi ve üst-orta bütçe seviyesi"
+      ],
+      "uncertainties": [
+        "Mevsimsel Ege otları günün tedarikine bağlı olarak değişebiliyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-merkez-sef-meze-balik",
+      "categoryId": "balik",
+      "resolvedName": "Şef Meze & Balık Fethiye",
+      "branchName": "Cumhuriyet, 502/1 Sokak No:3/A, 48300 Fethiye/Muğla",
+      "placeId": "ChIJTcrR8DlDwBQRnPB1J4q3-Po",
+      "coordinates": {
+        "lat": 36.623742799999995,
+        "lng": 29.113188500000003
+      },
+      "rating": 4.5,
+      "userRatingCount": 367,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://sefmezebalikfethiye.com/",
+      "mapsUri": "https://maps.google.com/?cid=18084406107701637276",
+      "recommendedPrimary": [
+        "Izgara Ahtapot & Sübye",
+        "Taze Çıtır Levrek",
+        "Şef Meze Seçkisi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Deniz Mahsulleri Böreği & Ayvalık Lokumu",
+          "note": "Izgara balık ve ahtapotun yanında çıtır deniz mahsulleri böreği ile Ayvalık lokumu ara sıcak olarak sıkça paylaşılıyor.",
+          "proof": "sefmezebalikfethiye.com resmi sitesi ve Wanderlog Şef Meze & Balık kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sahile yakın ara sokakta şık ve samimi açık-kapalı masa düzeni",
+        "crowdAndNoise": "Kebap dışına çıkmak isteyen çiftler ve arkadaş gruplarıyla dengeli dolu",
+        "disadvantage": "Butik kapasitesi nedeniyle yüksek sezonda akşam masaları önceden dolabiliyor",
+        "transit": "Cumhuriyet 502/1. Sokak No:3/A üzerinde Beşkaza Meydanı ve Kordon hattından yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Şef Meze&Balık FETHİYE",
+          "url": "https://maps.google.com/?cid=18084406107701637276",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Cumhuriyet Mah. 502/1. Sk. No:3/A konumu doğrulandı"
+        },
+        {
+          "title": "Şef Meze & Balık Resmi Sitesi",
+          "url": "http://sefmezebalikfethiye.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Merkez konumu, meze ve taze deniz ürünleri mutfağı"
+        },
+        {
+          "title": "Wanderlog — Şef Meze & Balık Fethiye",
+          "url": "https://wanderlog.com/tr/place/details/2489733/%C5%9Fef-mezebal%C4%B1k-fethiye",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Izgara ahtapot, sübye ve Ayvalık lokumu üzerine misafir geri bildirimleri"
+        },
+        {
+          "title": "Restaurant Guru — Şef Meze & Balık Fethiye",
+          "url": "https://restaurantguru.com/Sef-Meze-Balik-Fethiye",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Meze tazeliği ve samimi servis değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Kıvamında ızgara ahtapot-sübye ve özgün deniz mahsullü ara sıcaklar",
+        "Balık Pazarı gürültüsüne girmeden merkezde rahat rakı-balık atmosferi"
+      ],
+      "cons": [
+        "Butik salon kapasitesi nedeniyle rezervasyon gerektirebilmesi"
+      ],
+      "uncertainties": [
+        "Mevsimsel balık çeşitleri günlük hale göre belirleniyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    }
+  ]
+}

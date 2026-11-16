@@ -294,6 +294,20 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'harpurdibek',
   'harputdibek',
   'make me joi',
+  'coffee de madrid',
+  'goodeer coffee',
+  'gua coffee',
+  'federico',
+  'understone',
+  'panama coffee',
+  'burger home',
+  'lokum döner',
+  'lokum doner',
+  'bakku coffee',
+  'sirius coffee',
+  'ohannes',
+  'cajun corner',
+  'bolulu hasan usta',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([
