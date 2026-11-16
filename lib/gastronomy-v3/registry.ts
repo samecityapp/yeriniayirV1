@@ -34,6 +34,7 @@ import antalyaKasMerkezSnapshotJson from './regions/antalya-kas-merkez.json';
 import antalyaKalkanMerkezSnapshotJson from './regions/antalya-kalkan-merkez.json';
 import antalyaAlanyaMerkezSnapshotJson from './regions/antalya-alanya-merkez.json';
 import antalyaSideSnapshotJson from './regions/antalya-side.json';
+import antalyaKemerSnapshotJson from './regions/antalya-kemer.json';
 import muglaUlaAkyakaSnapshotJson from './regions/mugla-ula-akyaka.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
@@ -74,6 +75,7 @@ const ANTALYA_KAS_MERKEZ_SNAPSHOT = antalyaKasMerkezSnapshotJson as V3VerifiedRe
 const ANTALYA_KALKAN_MERKEZ_SNAPSHOT = antalyaKalkanMerkezSnapshotJson as V3VerifiedRegionSnapshot;
 const ANTALYA_ALANYA_MERKEZ_SNAPSHOT = antalyaAlanyaMerkezSnapshotJson as V3VerifiedRegionSnapshot;
 const ANTALYA_SIDE_SNAPSHOT = antalyaSideSnapshotJson as V3VerifiedRegionSnapshot;
+const ANTALYA_KEMER_SNAPSHOT = antalyaKemerSnapshotJson as V3VerifiedRegionSnapshot;
 const AKYAKA_SNAPSHOT = muglaUlaAkyakaSnapshotJson as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
@@ -113,6 +115,7 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   ANTALYA_KALKAN_MERKEZ_SNAPSHOT,
   ANTALYA_ALANYA_MERKEZ_SNAPSHOT,
   ANTALYA_SIDE_SNAPSHOT,
+  ANTALYA_KEMER_SNAPSHOT,
   AKYAKA_SNAPSHOT,
 ];
 
@@ -342,6 +345,15 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'side-antik-kenti': ANTALYA_SIDE_SNAPSHOT,
   'side-antik-liman': ANTALYA_SIDE_SNAPSHOT,
   'side-manavgat': ANTALYA_SIDE_SNAPSHOT,
+  kemer: ANTALYA_KEMER_SNAPSHOT,
+  'antalya-kemer': ANTALYA_KEMER_SNAPSHOT,
+  'kemer-antalya': ANTALYA_KEMER_SNAPSHOT,
+  'kemer-merkez': ANTALYA_KEMER_SNAPSHOT,
+  'kemer-merkez-antalya': ANTALYA_KEMER_SNAPSHOT,
+  idyros: ANTALYA_KEMER_SNAPSHOT,
+  'idyros-antik-kenti': ANTALYA_KEMER_SNAPSHOT,
+  'ayisigi-kemer': ANTALYA_KEMER_SNAPSHOT,
+  'kemer-marina': ANTALYA_KEMER_SNAPSHOT,
   akyaka: AKYAKA_SNAPSHOT,
   'akyaka-ula-mugla': AKYAKA_SNAPSHOT,
   'mugla-ula-akyaka': AKYAKA_SNAPSHOT,

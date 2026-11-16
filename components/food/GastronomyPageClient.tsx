@@ -124,6 +124,12 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     headline: 'Side, Antalya',
     vibe: 'Antik Side taş sokakları ve Liman çevresinden Side Bulvarı hattına uzanan odun fırını pizzacılar, antik kent kahvecileri, gün batımı sofraları ve yerel balıkçılar',
   },
+  'kemer-antalya': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Kemer, Antalya',
+    vibe: 'Idyros Antik Kenti, Ayışığı Koyu ve Kemer Marina kıyısından Liman Caddesi ile Arslanbucak hattına uzanan odun fırını pizzacılar, özel kahve kavurucuları, kahvaltı noktaları ve yerel balıkçılar',
+  },
   'akyaka-ula-mugla': {
     image: '/images/gastronomy/gastronomy.svg',
     badge: 'Doğrulanmış Seçki',
@@ -432,7 +438,7 @@ export function GastronomyPageClient({
                       Konum Seç
                     </div>
                     <div className="text-xs text-slate-500 font-medium truncate mt-0.5">
-                      Taksim & İstiklal · Asmalımescit & Pera · Yeniköy · Göktürk · Balat · Çukurcuma · Etiler · Ortaköy · Akaretler · Bebek · Galata · Beşiktaş Çarşı · Karaköy · Cihangir · Nişantaşı · Üsküdar · Kuzguncuk · Çengelköy · Koşuyolu & Acıbadem · Kadıköy · Moda · Caddebostan · Suadiye · Bostancı · Kaleiçi · Konyaaltı Sahil · Lara · Kaş Merkez · Kalkan Merkez · Alanya Merkez · Side (Antalya) · Gaziantep · Kuşadası · Akyaka
+                      Taksim & İstiklal · Asmalımescit & Pera · Yeniköy · Göktürk · Balat · Çukurcuma · Etiler · Ortaköy · Akaretler · Bebek · Galata · Beşiktaş Çarşı · Karaköy · Cihangir · Nişantaşı · Üsküdar · Kuzguncuk · Çengelköy · Koşuyolu & Acıbadem · Kadıköy · Moda · Caddebostan · Suadiye · Bostancı · Kaleiçi · Konyaaltı Sahil · Lara · Kaş Merkez · Kalkan Merkez · Alanya Merkez · Side · Kemer (Antalya) · Gaziantep · Kuşadası · Akyaka
                     </div>
                   </div>
                 </div>
