@@ -41,6 +41,8 @@ import muglaFethiyeGocekSnapshotJson from './regions/mugla-fethiye-gocek.json';
 import muglaFethiyeMerkezSnapshotJson from './regions/mugla-fethiye-merkez.json';
 import muglaFethiyeCalisSnapshotJson from './regions/mugla-fethiye-calis.json';
 import muglaFethiyeOludenizSnapshotJson from './regions/mugla-fethiye-oludeniz.json';
+import muglaBodrumMerkezSnapshotJson from './regions/mugla-bodrum-merkez.json';
+import muglaBodrumYalikavakSnapshotJson from './regions/mugla-bodrum-yalikavak.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -87,6 +89,8 @@ const MUGLA_FETHIYE_GOCEK_SNAPSHOT = muglaFethiyeGocekSnapshotJson as V3Verified
 const MUGLA_FETHIYE_MERKEZ_SNAPSHOT = muglaFethiyeMerkezSnapshotJson as V3VerifiedRegionSnapshot;
 const MUGLA_FETHIYE_CALIS_SNAPSHOT = muglaFethiyeCalisSnapshotJson as V3VerifiedRegionSnapshot;
 const MUGLA_FETHIYE_OLUDENIZ_SNAPSHOT = muglaFethiyeOludenizSnapshotJson as V3VerifiedRegionSnapshot;
+const MUGLA_BODRUM_MERKEZ_SNAPSHOT = muglaBodrumMerkezSnapshotJson as V3VerifiedRegionSnapshot;
+const MUGLA_BODRUM_YALIKAVAK_SNAPSHOT = muglaBodrumYalikavakSnapshotJson as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -132,6 +136,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MUGLA_FETHIYE_MERKEZ_SNAPSHOT,
   MUGLA_FETHIYE_CALIS_SNAPSHOT,
   MUGLA_FETHIYE_OLUDENIZ_SNAPSHOT,
+  MUGLA_BODRUM_MERKEZ_SNAPSHOT,
+  MUGLA_BODRUM_YALIKAVAK_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -419,6 +425,25 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   kumburnu: MUGLA_FETHIYE_OLUDENIZ_SNAPSHOT,
   'mavi-lagun-oludeniz': MUGLA_FETHIYE_OLUDENIZ_SNAPSHOT,
   kidrak: MUGLA_FETHIYE_OLUDENIZ_SNAPSHOT,
+  'bodrum-merkez': MUGLA_BODRUM_MERKEZ_SNAPSHOT,
+  bodrum: MUGLA_BODRUM_MERKEZ_SNAPSHOT,
+  'mugla-bodrum-merkez': MUGLA_BODRUM_MERKEZ_SNAPSHOT,
+  'bodrum-merkez-mugla': MUGLA_BODRUM_MERKEZ_SNAPSHOT,
+  'bodrum-carsi': MUGLA_BODRUM_MERKEZ_SNAPSHOT,
+  kumbahce: MUGLA_BODRUM_MERKEZ_SNAPSHOT,
+  eskicesme: MUGLA_BODRUM_MERKEZ_SNAPSHOT,
+  'bodrum-marina': MUGLA_BODRUM_MERKEZ_SNAPSHOT,
+  'milta-bodrum-marina': MUGLA_BODRUM_MERKEZ_SNAPSHOT,
+  'neyzen-tevfik': MUGLA_BODRUM_MERKEZ_SNAPSHOT,
+  yalikavak: MUGLA_BODRUM_YALIKAVAK_SNAPSHOT,
+  'mugla-bodrum-yalikavak': MUGLA_BODRUM_YALIKAVAK_SNAPSHOT,
+  'yalikavak-bodrum-mugla': MUGLA_BODRUM_YALIKAVAK_SNAPSHOT,
+  'yalikavak-bodrum': MUGLA_BODRUM_YALIKAVAK_SNAPSHOT,
+  'bodrum-yalikavak': MUGLA_BODRUM_YALIKAVAK_SNAPSHOT,
+  'yalikavak-marina': MUGLA_BODRUM_YALIKAVAK_SNAPSHOT,
+  palmarina: MUGLA_BODRUM_YALIKAVAK_SNAPSHOT,
+  tilkicik: MUGLA_BODRUM_YALIKAVAK_SNAPSHOT,
+  'tilkicik-koyu': MUGLA_BODRUM_YALIKAVAK_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {
@@ -451,21 +476,6 @@ export const V3_LOCATIONS: FoodLocation[] = [
   ...V3_ALL_PUBLISHED_SNAPSHOTS.map(toPublishedLocation),
 
   // SIRADAKİ DOĞRULAMA KUYRUĞU (İl > İlçe > Semt ayrıştırılmış)
-  {
-    id: 'yalikavak-bodrum-mugla',
-    level: 'semt',
-    city: 'Muğla',
-    district: 'Bodrum',
-    neighborhood: 'Yalıkavak',
-    name: 'Yalıkavak',
-    slug: 'yalikavak',
-    path: ['mugla', 'bodrum', 'yalikavak'],
-    displayName: 'Yalıkavak, Bodrum, Muğla',
-    locative: "Yalıkavak'ta",
-    status: 'coming_soon',
-    aliases: ['Yalıkavak', 'Yalikavak', 'Bodrum', 'Muğla'],
-    scopeNote: 'Muğla · Bodrum · Yalıkavak (V3 Doğrulama Sırasında)',
-  },
   {
     id: 'bitez-bodrum-mugla',
     level: 'semt',

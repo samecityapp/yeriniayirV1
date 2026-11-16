@@ -1,0 +1,3287 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "mugla-bodrum-merkez",
+  "displayName": "Bodrum Merkez, Muğla",
+  "verifiedAt": "2026-11-16T17:02:17.184Z",
+  "selectedCount": 36,
+  "rejectedControls": [
+    {
+      "id": "ctrl-bodrum-iki-sandal-closed",
+      "resolvedName": "iki sandal geleneksel meyhane",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-bodrum-starbucks-tepecik",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bodrum-starbucks-carsi",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bodrum-kahve-dunyasi-marina",
+      "resolvedName": "Kahve Dünyası-Bodrum Marina",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bodrum-espressolab-marina",
+      "resolvedName": "Espressolab Bodrum Marina",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bodrum-caffe-nero-marina",
+      "resolvedName": "Caffè Nero",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bodrum-burger-king-carsi",
+      "resolvedName": "Burger King - Bodrum Çarşı",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bodrum-terra-pizza-carsi",
+      "resolvedName": "Terra Pizza - Bodrum Kumbahçe",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bodrum-endless-pizza-yokusbasi",
+      "resolvedName": "Endless Pizza Bodrum",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bodrum-dominos-cumhuriyet",
+      "resolvedName": "Domino's Pizza Bodrum",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bodrum-cookshop",
+      "resolvedName": "Bodrum Cookshop",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bodrum-coffee-lab",
+      "resolvedName": "Coffee LAB Bodrum",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bodrum-kaleici-muhallebicisi",
+      "resolvedName": "Kaleiçi Muhallebicisi Bodrum (Marina)",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bodrum-divan-pastane",
+      "resolvedName": "Divan Bodrum Milta Marina Pastane",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bodrum-so-big-gastro-pub",
+      "resolvedName": "So Big Gastro Pub",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bodrum-kocadon-hotel",
+      "resolvedName": "Kocadon Hotel",
+      "reason": "invalid_place_type:hotel"
+    },
+    {
+      "id": "ctrl-bodrum-marina-nonfood",
+      "resolvedName": "Bodrum marina",
+      "reason": "invalid_place_type:marina"
+    },
+    {
+      "id": "ctrl-bodrum-sunger-pizza",
+      "resolvedName": "Sünger Pizza Restaurant",
+      "reason": "below_quality_threshold:★4.3(2556)"
+    },
+    {
+      "id": "ctrl-bodrum-benjamin-burger",
+      "resolvedName": "Benjamin Burger Co.",
+      "reason": "below_quality_threshold:★3.9(174)"
+    },
+    {
+      "id": "ctrl-bodrum-otantik-ocakbasi",
+      "resolvedName": "Otantik Ocakbaşı",
+      "reason": "below_quality_threshold:★4.3(1861)"
+    },
+    {
+      "id": "ctrl-bodrum-victoria-pizza",
+      "resolvedName": "Victoria Pizza",
+      "reason": "below_quality_threshold:★4.2(192)"
+    },
+    {
+      "id": "ctrl-bodrum-blanca-restaurant",
+      "resolvedName": "Blanca Restaurant",
+      "reason": "below_quality_threshold:★4.1(1527)"
+    },
+    {
+      "id": "ctrl-bodrum-mosyo-bodrum",
+      "resolvedName": "Mösyö Bodrum",
+      "reason": "below_quality_threshold:★4(1139)"
+    },
+    {
+      "id": "ctrl-bodrum-memedof-below-threshold",
+      "resolvedName": "Memedof",
+      "reason": "below_quality_threshold:★4.1(887)"
+    },
+    {
+      "id": "ctrl-bodrum-cheers-gumbet-outside",
+      "resolvedName": "Cheers Restaurant",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Çarşı/Carsi/Kumbahçe/Kumbahce/Eskiçeşme/Eskicesme/Tepecik/Türkkuyusu/Turkkuyusu/Umurca/Umurça/Yokuşbaşı/Yokusbasi/Neyzen Tevfik, adres: Gümbet, Adnan Menderes Cd. No:31, 48400 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-bodrum-kuytu-bahce-bitez-outside",
+      "resolvedName": "Kuytu Bahçe Bodrum",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Çarşı/Carsi/Kumbahçe/Kumbahce/Eskiçeşme/Eskicesme/Tepecik/Türkkuyusu/Turkkuyusu/Umurca/Umurça/Yokuşbaşı/Yokusbasi/Neyzen Tevfik, adres: Bitez, Limonlu Cd. No:35, 48470 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-bodrum-odd-burger-bitez-outside",
+      "resolvedName": "Odd Burger Co.",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Çarşı/Carsi/Kumbahçe/Kumbahce/Eskiçeşme/Eskicesme/Tepecik/Türkkuyusu/Turkkuyusu/Umurca/Umurça/Yokuşbaşı/Yokusbasi/Neyzen Tevfik, adres: Bitez, Kavaklı Sarnıç Cd. No: 25 D:101, 48400 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-bodrum-crudo-konacik-outside",
+      "resolvedName": "Crudo Bodrum",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Çarşı/Carsi/Kumbahçe/Kumbahce/Eskiçeşme/Eskicesme/Tepecik/Türkkuyusu/Turkkuyusu/Umurca/Umurça/Yokuşbaşı/Yokusbasi/Neyzen Tevfik, adres: Konacık, Gazi Ahmet Özal sokak No:2 A İç kapı 10, 48480 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-bodrum-varona-konacik-outside",
+      "resolvedName": "Varona Coffee Roastery",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Çarşı/Carsi/Kumbahçe/Kumbahce/Eskiçeşme/Eskicesme/Tepecik/Türkkuyusu/Turkkuyusu/Umurca/Umurça/Yokuşbaşı/Yokusbasi/Neyzen Tevfik, adres: Konacık Mahallesi Gaz Deresi Caddesi Kale İş Merkezi No:4 A/27, Konacık, 48400 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-bodrum-industry-cumhuriyet-outside",
+      "resolvedName": "Industry Burger",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Çarşı/Carsi/Kumbahçe/Kumbahce/Eskiçeşme/Eskicesme/Tepecik/Türkkuyusu/Turkkuyusu/Umurca/Umurça/Yokuşbaşı/Yokusbasi/Neyzen Tevfik, adres: Cumhuriyet, Severcan Cd. No:11, 48440 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-bodrum-pixel-cevat-sakir-outside",
+      "resolvedName": "Pixel Burger Bodrum",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Çarşı/Carsi/Kumbahçe/Kumbahce/Eskiçeşme/Eskicesme/Tepecik/Türkkuyusu/Turkkuyusu/Umurca/Umurça/Yokuşbaşı/Yokusbasi/Neyzen Tevfik, adres: Cevat Şakir, İsmet İnönü Cd. No:58 D:c, 48400 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-bodrum-pizza-locale-cirkan-outside",
+      "resolvedName": "Pizza Locale Bodrum",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bodrum-starbucks-torba-outside",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bodrum-starbucks-ortakentyahsi-outside",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    }
+  ],
+  "venues": [
+    {
+      "id": "bodrum-merkez-arka-pizzeria",
+      "categoryId": "pizza",
+      "resolvedName": "Arka Ristorente Pizzeria Bodrum",
+      "branchName": "Çarşı, Cumhuriyet Cd. No:102, 48400 Bodrum/Muğla",
+      "placeId": "ChIJ1V4wbmpsvhQRDp_qER5Hl60",
+      "coordinates": {
+        "lat": 37.0327638,
+        "lng": 27.435675399999997
+      },
+      "rating": 4.5,
+      "userRatingCount": 7318,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.arkapizzeria.com/",
+      "mapsUri": "https://maps.google.com/?cid=12508544684520021774",
+      "recommendedPrimary": [
+        "Margherita Pizza",
+        "Marinara Pizza",
+        "Deniz Mahsullü Risotto"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ahtapot Güveç & Carpaccio",
+          "note": "Pizza öncesi veya paylaşımlık başlangıç olarak akşam masalarında sıkça tercih ediliyor.",
+          "proof": "arkapizzeria.com ve Fine Dine Menu kayıtları"
+        },
+        {
+          "name": "Ev Yapımı Tiramisu",
+          "note": "Yemek sonunda İtalyan mutfağı çizgisini tamamlayan klasik tatlı seçeneği.",
+          "proof": "Misafir geri bildirimleri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Çarşı içinde avlu ve sokak cephesi masa düzeni; ferah açık hava trattoria atmosferi",
+        "crowdAndNoise": "Akşam saatlerinde kapıda sıra oluşabilen yüksek tempolu kalabalık atmosfer",
+        "disadvantage": "Rezervasyon kabul edilmediğinden geliş sırasına göre bekleme listesine yazılmak gerekebiliyor",
+        "transit": "Çarşı Cumhuriyet Caddesi üzerinde, Bodrum Kalesi ve iskeleye yürüyerek birkaç dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=12508544684520021774",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı Cumhuriyet Cd. No:102 konum doğrulaması"
+        },
+        {
+          "title": "Arka Ristorante Pizzeria Resmi Sitesi",
+          "url": "http://www.arkapizzeria.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "2013 kuruluş yılı, no-reservation politikası ve Bodrum Merkez şube bilgisi"
+        },
+        {
+          "title": "Michelin Guide — Arka Ristorante Pizzeria",
+          "url": "https://guide.michelin.com",
+          "date": "2026-10-20",
+          "kind": "award",
+          "note": "Bodrum Bib Gourmand seçkisinde odun fırını Napoli pizzaları ve el yapımı makarna övgüsü"
+        },
+        {
+          "title": "Fine Dine Menu — Arka Ristorante Pizzeria",
+          "url": "https://www.finedinemenu.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Marinara, Margherita, Funghi, Burrata ve risotto menü kalemleri doğrulaması"
+        }
+      ],
+      "pros": [
+        "Odun fırını Napoli pizza ve on iki çeşit el yapımı taze makarna odağı",
+        "Bodrum merkezinde on yılı aşan istikrarlı kalite ve fiyat-performans dengesi"
+      ],
+      "cons": [
+        "Rezervasyon alınmaması nedeniyle yoğun akşamlarda kapıda bekleme süresi uzayabiliyor"
+      ],
+      "uncertainties": [
+        "Yaz akşamlarında kapı önü sıra süresi saatlere göre değişebiliyor"
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-mamarossa-pizzeria",
+      "categoryId": "pizza",
+      "resolvedName": "Mamarossa Pizzeria",
+      "branchName": "Çarşı, Atatürk Cd. No33/A, 48000 Bodrum/Muğla",
+      "placeId": "ChIJ3yK0mLBtvhQRrIITbHeB_zs",
+      "coordinates": {
+        "lat": 37.03432,
+        "lng": 27.4347872
+      },
+      "rating": 5,
+      "userRatingCount": 373,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4323316517213274796",
+      "recommendedPrimary": [
+        "Klasik Margherita Pizza",
+        "Napoli Tarzı Şarküteri Pizza",
+        "Dört Peynirli Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sarımsaklı Fırın Ekmeği & Başlangıçlar",
+          "note": "Pizza öncesi paylaşım için taze fırın hamuruyla hazırlanan hafif eşlikçi.",
+          "proof": "Restaurant Guru ve yerel rehber kayıtları"
+        },
+        {
+          "name": "Roka & Parmesanlı İnce Hamur Seçenekleri",
+          "note": "Fırın çıkışlı pizzalarda taze yeşillik dengesi arayanlarca tercih ediliyor.",
+          "proof": "Yandex Harita ve topluluk değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Atatürk Caddesi üzerinde samimi iç tezgâh ve cadde kenarı masa yerleşimi",
+        "crowdAndNoise": "Akşam ve gece saatlerinde merkezde sıcak pizza arayan yerel ve tatilci misafirlerle canlı",
+        "disadvantage": "Cadde üzeri küçük dükkan yapısı nedeniyle kalabalık gruplar için masa alanı kısıtlı kalabiliyor",
+        "transit": "Atatürk Caddesi No:33/A üzerinde, Bodrum Merkez Garajı ve feribot iskelesine yürüme mesafesinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=4323316517213274796",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı Atatürk Cd. No:33/A konum doğrulaması"
+        },
+        {
+          "title": "Restaurant Guru — Mamarossa Pizzeria",
+          "url": "https://restaurantguru.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur dokusu, malzeme tazeliği ve samimi servis üzerine ziyaretçi geri bildirimleri"
+        },
+        {
+          "title": "Yandex Harita — Mamarossa Pizzeria Bodrum",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Atatürk Caddesi konumu, çalışma düzeni ve esnaflık değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Bodrum merkezde tek şubeli bağımsız pizzacı kimliği",
+        "Hamur hafifliği ve geç saatlere kadar süren sıcak fırın servisi"
+      ],
+      "cons": [
+        "Resmi web menüsü bulunmadığından günlük çeşitler yerinde görülebiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışı dönemde gece kapanış saatleri erken çekilebiliyor"
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-rubys-pizzeria",
+      "categoryId": "pizza",
+      "resolvedName": "Ruby's Pizzeria",
+      "branchName": "Eskiçeşme, Cafer Paşa Cd. no: 39/B, 48400 Bodrum/Muğla",
+      "placeId": "ChIJTSsmuTttvhQRTfF2s7633oc",
+      "coordinates": {
+        "lat": 37.0351107,
+        "lng": 27.4153034
+      },
+      "rating": 4.8,
+      "userRatingCount": 694,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9790464669632622925",
+      "recommendedPrimary": [
+        "Pizza Burrata",
+        "Anam Babam Pizza",
+        "Dana Sucuklu Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fettuccine Alfredo",
+          "note": "Pizza dışında taze soslu ev yapımı makarna tercih eden misafirlerin favorilerinden.",
+          "proof": "Yemeksepeti ve Restoranim menü kayıtları"
+        },
+        {
+          "name": "Napoliten İnce Hamur Çeşitleri",
+          "note": "Klasik domates sos ve taze fesleğenle hazırlanan sade hamur seçenekleri.",
+          "proof": "Yemeksepeti kullanıcı notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Eskiçeşme mahalle arasında rahat oturma masaları ve paket servis hattı",
+        "crowdAndNoise": "Marina ve Eskiçeşme sakinleriyle akşamları hareketli, gündüzleri sakin tempo",
+        "disadvantage": "Yoğun yaz akşamlarında paket servis siparişleri nedeniyle mutfak bekleme süresi uzayabiliyor",
+        "transit": "Cafer Paşa Caddesi No:39/B üzerinde, Eskiçeşme-Marina hattından kısa yürüyüşle ulaşılır"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=9790464669632622925",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Eskiçeşme Cafer Paşa Cd. No:39/B konum doğrulaması"
+        },
+        {
+          "title": "Yemeksepeti — Rubys Pizzeria Bodrum",
+          "url": "https://www.yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Pizza Burrata, Anam Babam, Fettuccine Alfredo menü ve müşteri değerlendirmeleri"
+        },
+        {
+          "title": "Restoranim — Rubys Pizzeria Food & Beverage",
+          "url": "https://restoranim.net",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İnce hamur kalitesi ve Eskiçeşme bölge değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "İnce çıtır hamur dengesi ve burrata/şarküteri gibi nitelikli peynir-et eşleşmeleri",
+        "Turistik kalabalıktan bir adım içeride, Eskiçeşme mahalle dokusunda olması"
+      ],
+      "cons": [
+        "Yoğun sezon teslimat saatlerinde servis temposu yavaşlayabiliyor"
+      ],
+      "uncertainties": [
+        "Sezona göre şarküteri ve taze peynir stokları günlük değişebiliyor"
+      ],
+      "selectionScore": 96,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-tinto-pizzeria",
+      "categoryId": "pizza",
+      "resolvedName": "Tinto Pizzeria",
+      "branchName": "Çarşı Mah. Atatürk Cad, Çarşı, Uslu Sk. No:10, 48400 Bodrum/Muğla",
+      "placeId": "ChIJq1xDtuxtvhQRwHAIdDtn9GM",
+      "coordinates": {
+        "lat": 37.034237499999996,
+        "lng": 27.4336754
+      },
+      "rating": 4.8,
+      "userRatingCount": 799,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://tintopizzeria.com/",
+      "mapsUri": "https://maps.google.com/?cid=7202495209119707328",
+      "recommendedPrimary": [
+        "Enginar Kalpli & Pestolu Pizza",
+        "Köz Patlıcanlı Keçi Peynirli Pizza",
+        "Margarita (Cherry Domatesli)"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Köz Patlıcanlı Roka Salatası & Caprese",
+          "note": "Pizza paylaşımı yanında taze fesleğen ve keçi peyniri dengesiyle sıkça sipariş edilir.",
+          "proof": "tintopizzeria.com resmi menü kayıtları"
+        },
+        {
+          "name": "Ev Yapımı Tiramisu & Pannacotta",
+          "note": "Şarap veya espresso eşliğinde akşam yemeğini kapatan klasik İtalyan tatlıları.",
+          "proof": "Restaurant Guru ve misafir notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ara sokak avlusu ve loş iç bar-salon masaları; çiftler ve küçük gruplar için rahat düzen",
+        "crowdAndNoise": "Akşam saatlerinde sakin ama dolu, geç saatlere kadar devam eden sohbet atmosferi",
+        "disadvantage": "Dar sokak dokusu nedeniyle özel araç parkı mümkün değil ve masa sayısı sınırlı",
+        "transit": "Atatürk Caddesi bağlantılı Uslu Sokak No:10 üzerinde, Bodrum Deniz Müzesi yakını"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=7202495209119707328",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı Uslu Sk. No:10 konum doğrulaması"
+        },
+        {
+          "title": "Tinto Pizzeria Resmi Sitesi",
+          "url": "https://tintopizzeria.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Resmi pizza reçeteleri (Enginar Kalbi, Köz Patlıcanlı, Vegan, Quattro Formaggi)"
+        },
+        {
+          "title": "Restaurant Guru — Tinto Pizzeria Bodrum",
+          "url": "https://restaurantguru.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Özgün pizza çeşitleri, tiramisu/pannacotta ve şarap barı atmosferi geri bildirimleri"
+        },
+        {
+          "title": "Yemeksepeti — Tinto Pizzeria",
+          "url": "https://www.yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Canlı menü çeşitliliği ve teslimat kayıtları"
+        }
+      ],
+      "pros": [
+        "Enginar kalbi, köz patlıcan ve vegan opsiyonlar gibi alışılmışın dışında pizza reçeteleri",
+        "Çarşı merkezinde şarap eşleşmeli sakin sokak atmosferi"
+      ],
+      "cons": [
+        "Ara sokak konumu nedeniyle araç erişimi kapalı, yalnızca yaya ulaşımı uygun"
+      ],
+      "uncertainties": [
+        "Gece kapanış saatleri yaz ve kış sezonuna göre farklılık gösterebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-trastevere",
+      "categoryId": "pizza",
+      "resolvedName": "Trastevere Ristorante Italiano & Pizzeria",
+      "branchName": "Kumbahçe, Cumhuriyet Cd. 177/B, 48400 Bodrum/Muğla",
+      "placeId": "ChIJR29XdGpsvhQRI1PwqRPrBsA",
+      "coordinates": {
+        "lat": 37.0307481,
+        "lng": 27.4388231
+      },
+      "rating": 4.7,
+      "userRatingCount": 647,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.facebook.com/trastevereristoranteitaliano",
+      "mapsUri": "https://maps.google.com/?cid=13837005374830433059",
+      "recommendedPrimary": [
+        "Burrata & Fesleğenli Pizza",
+        "Dört Peynirli Odun Fırını Pizza",
+        "Pasta alla Genovese"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Gnocchi & Lazanya",
+          "note": "Romalı şef mutfağından pizza dışındaki sıcak taze hamur alternatifleri.",
+          "proof": "Restoranim ve Mesprestiges incelemeleri"
+        },
+        {
+          "name": "Klasik İtalyan Tiramisu",
+          "note": "Terasta akşam yemeğinin ardından en sık sipariş edilen ev yapımı tatlı.",
+          "proof": "Restoranim ve Trip.com geri bildirimleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Alt kat samimi salon ve üst kat körfez/kale yönüne bakan açık çatı terası",
+        "crowdAndNoise": "Gün batımından itibaren teras masaları hızlı doluyor; akşam yemeği temposu canlı",
+        "disadvantage": "Yaz akşamlarında manzaralı çatı terasındaki masalar için önceden rezervasyon gerekebiliyor",
+        "transit": "Kumbahçe Cumhuriyet Caddesi No:177/B üzerinde, Kumbahçe sahil yürüyüş bandında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=13837005374830433059",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kumbahçe Cumhuriyet Cd. 177/B konum doğrulaması"
+        },
+        {
+          "title": "Trastevere Resmi Facebook Sayfası",
+          "url": "https://www.facebook.com/trastevereristoranteitaliano",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Kumbahçe işletme hesabı, teras ve güncel İtalyan mutfağı duyuruları"
+        },
+        {
+          "title": "Mesprestiges — Trastevere Bodrum",
+          "url": "https://mesprestiges.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Romalı şef mutfağı, çatı terası ve Pasta alla Genovese değerlendirmesi"
+        },
+        {
+          "title": "Restoranim — Trastevere Ristorante Italiano",
+          "url": "https://restoranim.net",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Odun fırını pizzalar, gnocchi ve tiramisu üzerine ziyaretçi notları"
+        }
+      ],
+      "pros": [
+        "Romalı şef yönetiminde hem odun fırını pizza hem el yapımı taze makarna geleneği",
+        "Kumbahçe hattında körfeze bakan keyifli çatı terası"
+      ],
+      "cons": [
+        "Teras merdivenleri ve yüksek sezon akşam kalabalığı yer bulmayı zorlaştırabiliyor"
+      ],
+      "uncertainties": [
+        "Kış sezonunda açık gün ve teras kullanım durumu hava koşullarına bağlı"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-4munchies",
+      "categoryId": "hamburger",
+      "resolvedName": "4Munchies Bodrum Merkez",
+      "branchName": "Tepecik, Neyzen Tevfik Caddesi, Tepecik, Gerence Sk. NO:5, 48400 Bodrum/Muğla",
+      "placeId": "ChIJQQUAQR1tvhQRBajcFeGfqkQ",
+      "coordinates": {
+        "lat": 37.036063899999995,
+        "lng": 27.429022399999997
+      },
+      "rating": 4.9,
+      "userRatingCount": 619,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4947942929703151621",
+      "recommendedPrimary": [
+        "Munch Mexica Burger",
+        "Klasik Cheeseburger",
+        "Kibrit Patates Kızartması"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Munch Smoked House Burger",
+          "note": "Füme lezzet notaları ve özel sosuyla klasik cheeseburger dışında öne çıkan seçenek.",
+          "proof": "Yemeksepeti ve yerel dijital menü kayıtları"
+        },
+        {
+          "name": "Kaşık Patates Kızartması",
+          "note": "Kibrit patatesin yanında sosa batırmalık çıtır kesim yan ürün alternatifi.",
+          "proof": "Yemeksepeti sipariş değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Neyzen Tevfik bağlantılı sokakta gündelik iç-dış masa düzeni ve hızlı paket servis",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde genç kitle ve marinadan dönenlerle hareketli",
+        "disadvantage": "Sokak içi konumu sınırlı oturma alanı sunuyor; yoğun saatlerde sipariş bekleme süresi uzayabiliyor",
+        "transit": "Tepecik Neyzen Tevfik Caddesi yanındaki Gerence Sokak No:5 adresinde, marinaya iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=4947942929703151621",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Tepecik Gerence Sk. No:5 konum doğrulaması"
+        },
+        {
+          "title": "Yemeksepeti — 4Munchies Bodrum Merkez",
+          "url": "https://www.yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Munch Mexica, Smoked House, Mushroom burger ve kibrit patates menü doğrulaması"
+        },
+        {
+          "title": "Haber Bodrum — 4Munchies Değerlendirmesi",
+          "url": "https://haberbodrum.net",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bodrum merkez ve Yahşi yerel marka geçmişi ve brioche burger notları"
+        }
+      ],
+      "pros": [
+        "Tereyağlı brioche ekmek ve dengeli baharat-sos uyumu",
+        "Kibrit ve kaşık patates gibi akılda kalan çıtır yan ürünler"
+      ],
+      "cons": [
+        "Ara sokak konumu ve sınırlı masa sayısı kalabalık gruplara uygun değil"
+      ],
+      "uncertainties": [
+        "Sezon yoğunluğunda paket servis süreleri değişkenlik gösterebiliyor"
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-smash-burger-black-rock",
+      "categoryId": "hamburger",
+      "resolvedName": "Smash Burger Black Rock",
+      "branchName": "Kumbahçe, Rasathane Sk. No:2, 48400 Bodrum/Muğla",
+      "placeId": "ChIJH587zAVtvhQRIFRWepSCqxQ",
+      "coordinates": {
+        "lat": 37.0318579,
+        "lng": 27.4382275
+      },
+      "rating": 4.8,
+      "userRatingCount": 656,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1489427675995329568",
+      "recommendedPrimary": [
+        "Muncheese Smash Burger",
+        "Mushroom Smash Burger",
+        "Truffle Fries"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Smoked Smash Burger",
+          "note": "Füme kaburga ve karamelize soğan eşleşmesiyle daha yoğun et aroması arayanlar için.",
+          "proof": "Yemeksepeti canlı menü kayıtları"
+        },
+        {
+          "name": "Crispy Chicken Burger",
+          "note": "Kajun baharatlı çıtır tavuk seçeneğiyle kırmızı et dışındaki alternatif.",
+          "proof": "Qrdos dijital menü ve Yemeksepeti"
+        }
+      ],
+      "suitability": {
+        "seating": "Rasathane Sokak üzerinde sade açık ve kapalı burger tezgâhı masaları",
+        "crowdAndNoise": "Akşam yemek saatlerinde ve barlar sokağı öncesi hızlı durak olarak yoğun",
+        "disadvantage": "Sokak içi dar yerleşim ve sıcak havalarda sınırlı gölgelik oturma imkanı",
+        "transit": "Kumbahçe Rasathane Sokak No:2 üzerinde, Cumhuriyet Caddesi sahil hattına bir dakika yürüyüş"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=1489427675995329568",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kumbahçe Rasathane Sk. No:2 konum doğrulaması"
+        },
+        {
+          "title": "Yemeksepeti — Smash Burger Black Rock Bodrum",
+          "url": "https://www.yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Classic, Muncheese, Mushroom, Smoked, Quadro Cheese ve Truffle Fries menüsü"
+        },
+        {
+          "title": "Yandex Harita — Smash Burger Black Rock",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kumbahçe Rasathane Sokak adresi, ev yapımı ekmek ve smash köfte geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Çıtır kenarlı smash köfte tekniği ve kendi üretimi yumuşak burger ekmeği",
+        "Kumbahçe sahile bir adım mesafede net, burger odaklı menü"
+      ],
+      "cons": [
+        "Menüde yer alan domuz bacon içerikli seçeneğe sipariş sırasında dikkat edilmeli"
+      ],
+      "uncertainties": [
+        "Geç saatlerde kapanış ve kış sezonu servis günleri değişebiliyor"
+      ],
+      "selectionScore": 96,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-georgev",
+      "categoryId": "hamburger",
+      "resolvedName": "George'V Food & Drink",
+      "branchName": "Eskiçeşme, Neyzen Tevfik Cd. No:5, 48400 Bodrum/Muğla",
+      "placeId": "ChIJtaSdX4BtvhQR_2AKp7XrHGA",
+      "coordinates": {
+        "lat": 37.0349836,
+        "lng": 27.4223425
+      },
+      "rating": 4.6,
+      "userRatingCount": 128,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6925669492413063423",
+      "recommendedPrimary": [
+        "Trüf Soslu Burger",
+        "Özel Soslu Patates Kızartması",
+        "Klasik Hot Dog"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Trüflü Hot Dog",
+          "note": "Burger dışında sokak lezzeti formatında hızlı tüketilebilen sevilen ara ürün.",
+          "proof": "Restoranim ve Yandex menü kayıtları"
+        },
+        {
+          "name": "Özel Soslu Çıtır Patates",
+          "note": "Marinadan çıkınca paylaşımlık atıştırmalık olarak sıkça tercih ediliyor.",
+          "proof": "Yemeksepeti ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Self-servis tezgâh düzeni; kısıtlı cadde önü oturma alanı ve ağırlıklı al-götür servis",
+        "crowdAndNoise": "Marina tekne çıkışları ve akşamüstü yürüyüş saatlerinde pratik yemek arayanlarla canlı",
+        "disadvantage": "Self-servis sokak konsepti nedeniyle uzun süreli oturmalı restoran konforu sunmuyor",
+        "transit": "Neyzen Tevfik Caddesi No:5 üzerinde, Milta Bodrum Marina G Kapısı ve Gemibaşı karşısı"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=6925669492413063423",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Eskiçeşme Neyzen Tevfik Cd. No:5 konum doğrulaması"
+        },
+        {
+          "title": "Restoranim — George V Food & Drink",
+          "url": "https://restoranim.net",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Trüf soslu burger, hot dog ve Milta Marina G Kapısı karşısı konumu doğrulaması"
+        },
+        {
+          "title": "Yemeksepeti — George V Bodrum",
+          "url": "https://www.yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Self-servis sokak lezzetleri menüsü ve kullanıcı notları"
+        }
+      ],
+      "pros": [
+        "Milta Marina karşısında hızlı, pratik ve ulaşılabilir fiyatlı burger-hot dog seçeneği",
+        "Trüf soslu dokunuşlarla standart fast-food çizgisinden ayrışan tat profili"
+      ],
+      "cons": [
+        "Oturma alanı kısıtlı olduğundan daha çok ayaküstü veya al-götür tüketim için uygun"
+      ],
+      "uncertainties": [
+        "Sezon dışında akşam kapanış saatleri değişkenlik gösterebiliyor"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-diy-and-green",
+      "categoryId": "kahve",
+      "resolvedName": "DIY and Green / Art & Coffee Shop",
+      "branchName": "Çarşı, Dr. Ekrem Uslu Çk. no:12, 48400 Bodrum/Muğla",
+      "placeId": "ChIJLTFBUrxtvhQR2D5XJmbJUWs",
+      "coordinates": {
+        "lat": 37.0342489,
+        "lng": 27.4326188
+      },
+      "rating": 5,
+      "userRatingCount": 242,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://linktr.ee/diyandgreen",
+      "mapsUri": "https://maps.google.com/?cid=7733183475738951384",
+      "recommendedPrimary": [
+        "Flat White",
+        "Filtre Kahve",
+        "Soğuk Demleme (Cold Brew)"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Kurabiye & Günlük Kek",
+          "note": "Atölye kokuları eşliğinde kahve yanına günlük çıkan sade eşlikçiler.",
+          "proof": "Local Makers ve Yandex geri bildirimleri"
+        },
+        {
+          "name": "V60 & Manuel Demleme Kahve",
+          "note": "Sakin ortamda kitap veya sohbet eşliğinde uzun yudumlamak isteyenlerce seçiliyor.",
+          "proof": "Restoranim ve Wanderlog değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Çıkmaz sokak içinde butik bahçe/iç atölye masaları; sakin ve gürültüden uzak oturum",
+        "crowdAndNoise": "Kalabalık bar ve alışveriş aksından kopmak isteyen okuyucu ve tasarım meraklılarıyla dingin",
+        "disadvantage": "Atölye etkinlik saatlerinde masa düzeni dolabiliyor ve çıkmaz sokak girişi ilk seferde gizli kalabiliyor",
+        "transit": "Çarşı Dr. Ekrem Uslu Çıkmazı No:12 üzerinde, Atatürk Caddesi paralelinden yaya geçişiyle"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=7733183475738951384",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı Dr. Ekrem Uslu Çk. No:12 konum doğrulaması"
+        },
+        {
+          "title": "DIY and Green Resmi Bağlantı Sayfası",
+          "url": "https://linktr.ee/diyandgreen",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Sanat atölyesi, workshop takvimi ve kahve dükkanı konsepti"
+        },
+        {
+          "title": "Local Makers — DIY and Green Bodrum",
+          "url": "https://localmakers.com.tr",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mimar Habibe Karlıoğlu kuruluş hikayesi, seramik atölyesi ve kahve kültürü"
+        },
+        {
+          "title": "Restoranim — DIY and Green Art & Coffee Shop",
+          "url": "https://restoranim.net",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ev sıcaklığı, sakin sokak dokusu ve ev yapımı kek-kahve değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Bodrum Çarşı kalabalığının birkaç adım içinde tamamen sessiz bir atölye-kahve avlusuna açılması",
+        "Seramik-resim atölyesiyle bütünleşen samimi ve özgün kahve deneyimi"
+      ],
+      "cons": [
+        "Butik kapasite nedeniyle workshop günlerinde boş masa bulmak zorlaşabiliyor"
+      ],
+      "uncertainties": [
+        "Haftalık atölye saatlerine göre oturma alanı düzeni değişebiliyor"
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-new-zealand-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "New Zealand Coffee House",
+      "branchName": "Türkkuyusu Mahallesi Hacı Resul Sokak No:11A/B, ptt karşısı newzealand coffee Bodrum Çarşı mahalledi, Türkkuyusu, Cevat Şakir Cd. belediye kültür Sitesi no 28, 48400 Bodrum/Muğla",
+      "placeId": "ChIJ-eWj1T9svhQRCVe8tD7nRKk",
+      "coordinates": {
+        "lat": 37.0395075,
+        "lng": 27.432043399999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 167,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://newzealandcoffeehouse.com/",
+      "mapsUri": "https://maps.google.com/?cid=12197127947332376329",
+      "recommendedPrimary": [
+        "Of Mine Blend Espresso",
+        "Taze Çekim Filtre Kahve",
+        "Aromatik Türk Kahvesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Geitonas Blend Çekirdek Kahve",
+          "note": "Meyvemsi ve kakao notalı harmanı evde demlemek veya hediyelik almak için öne çıkar.",
+          "proof": "newzealandcoffeehouse.com resmi ürün kataloğu"
+        },
+        {
+          "name": "Bitter Çikolata & Narenciye Notalı Türk Kahvesi",
+          "note": "Alışılmış kavrumların dışında özel öğütüm arayanlarca tercih ediliyor.",
+          "proof": "Resmi site ve Yandex değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sakin mahalle sokağında küçük dükkan önü tabureleri ve ağırlıklı kavurma/al-götür tezgâhı",
+        "crowdAndNoise": "Çekirdek almaya gelen yerel kahve tutkunları ve sabah kahvesi müdavimleriyle sakin",
+        "disadvantage": "Sahil hattından içeride, Türkkuyusu ara sokağında kalıyor ve geniş oturma salonu sunmuyor",
+        "transit": "Türkkuyusu Hacı Resul Sokak (Belediye Kültür Sitesi yanı) üzerinde, Cevat Şakir Caddesi bağlantılı"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=12197127947332376329",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Türkkuyusu Hacı Resul Sk. / Cevat Şakir Cd. konum doğrulaması"
+        },
+        {
+          "title": "New Zealand Coffee House Resmi Sitesi",
+          "url": "http://newzealandcoffeehouse.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Of Mine Blend, Geitonas Blend, filtre kahve ve Türk kahvesi kavurma detayları"
+        },
+        {
+          "title": "Yandex Harita — New Zealand Coffee Roasting",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze kavrum çekirdekler, makul fiyat ve samimi mahalle sohbeti geri bildirimleri"
+        },
+        {
+          "title": "Restoranim — New Zealand Coffee House",
+          "url": "https://restoranim.net",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Türkkuyusu şubesi kahve tazeliği ve değerlendirme notları"
+        }
+      ],
+      "pros": [
+        "Kendi kavurduğu %100 Arabica çekirdeklerle taze demleme ve çekirdek satışı",
+        "Turistik fiyat şişkinliğinden uzak mahalle içi sakin konum"
+      ],
+      "cons": [
+        "Geniş oturma alanı veya manzara yerine nitelikli kavurma ve al-götür odağına sahip"
+      ],
+      "uncertainties": [
+        "Kavurma günlerine göre tek kökenli çekirdek stoğu değişebiliyor"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-gibi-bodrum",
+      "categoryId": "kahve",
+      "resolvedName": "Gibi Bodrum",
+      "branchName": "Tepecik, Neyzen Tevfik Cd. No:98, 48400 Bodrum/Muğla",
+      "placeId": "ChIJJ5oiQZxtvhQRssWcqH8g3Pw",
+      "coordinates": {
+        "lat": 37.036515699999995,
+        "lng": 27.4244742
+      },
+      "rating": 4.4,
+      "userRatingCount": 664,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18220473925095966130",
+      "recommendedPrimary": [
+        "Flat White",
+        "Cortado",
+        "Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Soğuk Espresso & Kokteyl Eşleşmeleri",
+          "note": "Gündüz kahve molasının akşam saatlerinde bar atmosferine dönüşmesini sağlayan içecekler.",
+          "proof": "My Guide Bodrum ve Restoranim kayıtları"
+        },
+        {
+          "name": "Günlük Tatlı Eşlikçileri",
+          "note": "Latte ve filtre kahve yanında sunulan sade kafe tatlıları.",
+          "proof": "Yandex kullanıcı geri bildirimleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş, ferah tasarım mağazası içi masalar ve Neyzen Tevfik cepheli oturma alanı",
+        "crowdAndNoise": "Gündüz bilgisayar başında çalışanlar ve tasarım gezenlerle rahat; akşamüstü hareketli",
+        "disadvantage": "Marina caddesi konumu nedeniyle kahve fiyat algısı ara sokak dükkanlarına göre daha yukarıda kalabiliyor",
+        "transit": "Tepecik Neyzen Tevfik Caddesi No:98 üzerinde, Milta Marina yürüyüş bandında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=18220473925095966130",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Tepecik Neyzen Tevfik Cd. No:98 konum doğrulaması"
+        },
+        {
+          "title": "Local Makers — Gibi Bodrum Design Store",
+          "url": "https://localmakers.com.tr",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sürdürülebilir tasarım mağazası ve kafe konsepti incelemesi"
+        },
+        {
+          "title": "My Guide Bodrum — Gibi Bodrum",
+          "url": "https://www.myguidebodrum.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Neyzen Tevfik Caddesi üzerindeki kafe-sahne ve bar işleyişi"
+        },
+        {
+          "title": "Restoranim — Gibi Cafe Sahne & Mutfak",
+          "url": "https://restoranim.net",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Espresso, Flat White, Cortado, Filtre Kahve ve Türk kahvesi menü doğrulaması"
+        }
+      ],
+      "pros": [
+        "Neyzen Tevfik üzerinde geniş, estetik ve soluklanmaya elverişli iç mekan",
+        "Nitelikli kahveyi seçkin bir tasarım mağazası deneyimiyle birleştirmesi"
+      ],
+      "cons": [
+        "Merkezi marina aksı sebebiyle iç sokak kahvecilerine kıyasla fiyat algısı daha yüksek"
+      ],
+      "uncertainties": [
+        "Akşam etkinlik ve sahne günlerine göre masa düzeni değişebiliyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-mahfel-cafe",
+      "categoryId": "kahve",
+      "resolvedName": "Mahfel Cafe (Bodrum Belediyesi)",
+      "branchName": "Çarşı, Çarşı Mah. Çarşı Sk No:2/11, 48400 Bodrum/Muğla",
+      "placeId": "ChIJv0JiQWpsvhQR7Zp7Bh6E5GQ",
+      "coordinates": {
+        "lat": 37.033284099999996,
+        "lng": 27.4341402
+      },
+      "rating": 4.4,
+      "userRatingCount": 3115,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7270080962975472365",
+      "recommendedPrimary": [
+        "Türk Kahvesi",
+        "Ice Latte",
+        "Cappuccino"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bitki Çayları & Meyve Smoothieleri",
+          "note": "Sıcak yaz öğleden sonralarında kahve dışında serinletici içecek alternatifi.",
+          "proof": "bodrumbelediyeas.com.tr ve Mahfel menü kayıtları"
+        },
+        {
+          "name": "Hafif Bowl & Atıştırmalıklar",
+          "note": "Uzun sahil sohbetlerinde içecek yanına alınan pratik tabaklar.",
+          "proof": "Yandex Harita misafir notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Deniz ve kale manzaralı geniş açık sahil terası; self-servis masa düzeni",
+        "crowdAndNoise": "Günün her saatinde yerli halk, emekliler ve gezginlerle kalabalık ve canlı",
+        "disadvantage": "Self-servis çalıştığından yoğun saatlerde kasa sırası oluşabiliyor ve boş masa beklemek gerekebiliyor",
+        "transit": "Çarşı Sokak No:2/11 üzerinde, Bodrum Kalesi girişi ve Barlar Sokağı başlangıcında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=7270080962975472365",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı Sk. No:2/11 konum doğrulaması"
+        },
+        {
+          "title": "Bodrum Belediye A.Ş. — Mahfel Cafe",
+          "url": "https://www.bodrumbelediyeas.com.tr/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Belediye sosyal tesisi statüsü, kale manzaralı konum ve hizmet bilgisi"
+        },
+        {
+          "title": "Yandex Harita — Mahfel Cafe Bodrum",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Self-servis işleyişi, manzara avantajı ve ekonomik fiyat değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Bodrum Kalesi ve deniz manzarasına karşı şeffaf belediye tesisi fiyatlaması",
+        "Yıl boyu her gün açık olan köklü merkez buluşma noktası"
+      ],
+      "cons": [
+        "Self-servis kasa kuyruğu ve yüksek sezonda manzaralı masa bulma zorluğu"
+      ],
+      "uncertainties": [
+        "Yoğun yaz akşamlarında soğuk içecek ve bowl stokları hızlı tükenebiliyor"
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-simare-bodrum",
+      "categoryId": "date",
+      "resolvedName": "Simare Bodrum",
+      "branchName": "Kumbahçe, Cumhuriyet Cd. No:157, 48400 Bodrum/Muğla",
+      "placeId": "ChIJKUwmUVptvhQRCuzqsKQ2hWE",
+      "coordinates": {
+        "lat": 37.0316343,
+        "lng": 27.4382986
+      },
+      "rating": 5,
+      "userRatingCount": 187,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://simarebodrum.com/",
+      "mapsUri": "https://maps.google.com/?cid=7027082874552249354",
+      "recommendedPrimary": [
+        "El Yapımı Taze Makarna",
+        "Odun Fırını Focaccia & Başlangıçlar",
+        "Günün Ege Deniz Ürünü Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Focaccia & Zeytinyağlı Başlangıçlar",
+          "note": "Gün batımında şarap veya aperitif eşliğinde masaya ilk gelen taze fırın ürünü.",
+          "proof": "Voggia ve Müdavim.net incelemeleri"
+        },
+        {
+          "name": "Seçkin İtalyan-Ege Tatlıları",
+          "note": "Deniz kenarında akşam yemeğini kapatan mevsimsel tatlı seçkisi.",
+          "proof": "simarebodrum.com resmi tanıtımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi taş bina avlusu, bahçe ve doğrudan kumsal üzerine kurulu kale manzaralı masalar",
+        "crowdAndNoise": "Gün batımı ve akşam yemeği saatlerinde şık, romantik ve sakin çift ağırlıklı tempo",
+        "disadvantage": "Üst segment fiyatlama ve sınırlı kumsal/manzara masaları için günler öncesinden rezervasyon şart",
+        "transit": "Kumbahçe Cumhuriyet Caddesi No:157 üzerinde, Kumbahçe sahil yürüyüş hattında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=7027082874552249354",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kumbahçe Cumhuriyet Cd. No:157 konum doğrulaması"
+        },
+        {
+          "title": "Simare Bodrum Resmi Sitesi",
+          "url": "https://simarebodrum.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Kumbahçe deniz sıfırı konsepti ve İtalyan-Ege mutfak yaklaşımı"
+        },
+        {
+          "title": "Voggia — Simare Bodrum",
+          "url": "https://voggia.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihi taş mimari, kumsal/bahçe oturumu ve ev yapımı focaccia-makarna detayları"
+        },
+        {
+          "title": "Müdavim.net — Simare Bodrum",
+          "url": "https://mudavim.net",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Şef Murat Bozok imzalı menü ve Bodrum Kalesi manzaralı gün batımı incelemesi"
+        }
+      ],
+      "pros": [
+        "Doğrudan kumsal ve kale manzaralı nostaljik Bodrum taş konak atmosferi",
+        "Ege yerel ürünlerini taze İtalyan hamurlarıyla işleyen rafine şef mutfağı"
+      ],
+      "cons": [
+        "Yüksek fiyat seviyesi ve sezon içi erken rezervasyon zorunluluğu"
+      ],
+      "uncertainties": [
+        "Mevsimsel menü kalemleri taze ürün tedarikine göre sık güncelleniyor"
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-moya-marina",
+      "categoryId": "date",
+      "resolvedName": "Moya Bodrum Marina",
+      "branchName": "Eskiçeşme, Neyzen Tevfik Cd. No:134, 48400, 48400 Bodrum/Muğla",
+      "placeId": "ChIJJ6Q4h0RtvhQREm6qPIXuPys",
+      "coordinates": {
+        "lat": 37.0357814,
+        "lng": 27.422931499999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 659,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.moyabodrum.com/",
+      "mapsUri": "https://maps.google.com/?cid=3116471723179535890",
+      "recommendedPrimary": [
+        "Karides Tempura",
+        "Izgara Levrek",
+        "Özel Et Tabağı & Şarap Eşleşmesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tapas & Paylaşımlık Başlangıçlar",
+          "note": "Şarap veya kokteyl öncesi masayı açan hafif atıştırmalık seçkisi.",
+          "proof": "Bodrum Cruise Port ve Wanderlog kayıtları"
+        },
+        {
+          "name": "Şarap Kavı Seçkisi & Kokteyller",
+          "note": "Akşamın ilerleyen saatlerinde sohbete eşlik eden bar menüsü.",
+          "proof": "moyabodrum.com resmi menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Marina caddesi cepheli şık açık ve kapalı masa düzeni; lounge ve bar bölümü",
+        "crowdAndNoise": "Akşam yemeğinden geceye uzanan enerjik, bakımlı ve sosyal buluşma atmosferi",
+        "disadvantage": "Çok yüksek fiyat seviyesi ve ilerleyen saatlerde yükselen müzik temposu sakinlik arayanlara ağır gelebilir",
+        "transit": "Eskiçeşme Neyzen Tevfik Caddesi No:134 üzerinde, Milta Bodrum Marina yanında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=3116471723179535890",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Eskiçeşme Neyzen Tevfik Cd. No:134 konum doğrulaması"
+        },
+        {
+          "title": "Moya Bodrum Resmi Sitesi",
+          "url": "https://www.moyabodrum.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Wine & Dine konsepti, karides tempura, balık köftesi ve şarap kavı menüsü"
+        },
+        {
+          "title": "Wanderlog — Moya Bodrum Marina",
+          "url": "https://wanderlog.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Şarap kavı, kokteyller ve akşam atmosferi üzerine gezgin değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Şarap kavı, deniz ürünleri ve et seçeneklerini tek şık mekanda toplaması",
+        "Marina yürüyüş bandında merkezi konum ve özenli akşam servisi"
+      ],
+      "cons": [
+        "Yüksek hesap tutarı ve geç saatlerde artan ses seviyesi"
+      ],
+      "uncertainties": [
+        "Hafta sonu ve yüksek sezon DJ/müzik programı dönemsel değişebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-bistro-marina-neyzar",
+      "categoryId": "date",
+      "resolvedName": "Bistro Marina Neyzar",
+      "branchName": "Milta marina, Eskiçeşme, Neyzen Tevfik Cd. No:5, 48400 Bodrum/Muğla",
+      "placeId": "ChIJU9OfTERsvhQR2aEpBzzfl5M",
+      "coordinates": {
+        "lat": 37.0327373,
+        "lng": 27.423429799999997
+      },
+      "rating": 4.6,
+      "userRatingCount": 584,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.bistromarina.com/",
+      "mapsUri": "https://maps.google.com/?cid=10635214493969916377",
+      "recommendedPrimary": [
+        "Sıralı Ocakbaşı Et Sunumu",
+        "Fırın Beyti & Kuzu Şiş",
+        "Ege Meze Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Soğuk Ege & Anadolu Mezeleri",
+          "note": "Et servisi öncesi masayı donatan günlük meze seçkisi.",
+          "proof": "Bodrumluculuk ve Wanderlog notları"
+        },
+        {
+          "name": "Künefe & Geleneksel Tatlılar",
+          "note": "Marina manzaralı ocakbaşı akşamının klasik tatlı kapanışı.",
+          "proof": "bistromarina.com ve misafir notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Milta Marina içinde denize ve kaleye bakan açık teras ve şık iç mekan masaları",
+        "crowdAndNoise": "Akşam yemeklerinde romantik çiftler, iş yemekleri ve kutlama gruplarıyla dolu",
+        "disadvantage": "Marina içi konumu sebebiyle çok yüksek fiyat bandında yer alıyor ve rezervasyonsuz manzaralı masa zor",
+        "transit": "Milta Bodrum Marina içi, Neyzen Tevfik Caddesi No:5 girişinden beş dakika yürüyüş"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=10635214493969916377",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Milta Marina Eskiçeşme Neyzen Tevfik Cd. No:5 konum doğrulaması"
+        },
+        {
+          "title": "Bistro Marina Neyzar Resmi Sitesi",
+          "url": "http://www.bistromarina.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Milta Marina içi konum ve ocakbaşı bistro menü yapısı"
+        },
+        {
+          "title": "Bodrumluculuk — Neyzar Bistro Ocakbaşı",
+          "url": "https://bodrumluculuk.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sıralı et servisi, meze çeşitliliği ve kale manzarası incelemesi"
+        },
+        {
+          "title": "Wanderlog — Bistro Marina Neyzar",
+          "url": "https://wanderlog.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Marina manzarası ve akşam servisi değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Milta Marina içinde kale manzaralı düzenli ve nezih bir ocakbaşı alternatifi",
+        "Etlerin soğumadan sırayla porsiyonluk servis edilmesi"
+      ],
+      "cons": [
+        "Fiyat bandının Bodrum ortalamasının üzerinde kalması"
+      ],
+      "uncertainties": [
+        "Kış döneminde açık alan ısıtmalı masaların kapasitesi sınırlanabiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-su-restaurant",
+      "categoryId": "date",
+      "resolvedName": "Su Restaurant",
+      "branchName": "No:29, Kumbahçe, Paşatarlası Sk., 48400 Bodrum/Muğla",
+      "placeId": "ChIJSXy-qW9svhQRgwJ1GYBKVLg",
+      "coordinates": {
+        "lat": 37.0272517,
+        "lng": 27.441127599999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 182,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.bodrumsurestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=13282323115065803395",
+      "recommendedPrimary": [
+        "Modern Dokunuşlu Ege Mezeleri",
+        "Günün Taze Izgara Balığı",
+        "Butik Şarap Eşleşmesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Bar Kokteylleri",
+          "note": "Gün batımında sahil terasında yemek öncesi veya sonrası tercih edilen içecekler.",
+          "proof": "Meyhanedeyiz ve resmi tanıtımlar"
+        },
+        {
+          "name": "Taze Kalamar & Ahtapot Tabakları",
+          "note": "Kıyı manzaralı akşam sofralarında mezelerin ardından gelen deniz ürünü ara sıcakları.",
+          "proof": "bodrumsurestaurant.com ve Trip.com kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Paşatarlası sahilinde bahçe, iç salon, bar ve kale manzaralı deniz sıfırı teras",
+        "crowdAndNoise": "Gün batımı saatlerinden geceye kadar sakin, şık ve romantik akşam atmosferi",
+        "disadvantage": "Yaz akşamlarında sahil önü masalar hızla doluyor ve ara sokak park imkanı kısıtlı",
+        "transit": "Kumbahçe Paşatarlası Sokak No:29 üzerinde, Kumbahçe sahil yürüyüş yolunun doğu ucunda"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=13282323115065803395",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kumbahçe Paşatarlası Sk. No:29 konum doğrulaması"
+        },
+        {
+          "title": "Su Restaurant Bodrum Resmi Sitesi",
+          "url": "http://www.bodrumsurestaurant.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Paşatarlası deniz sıfırı konum, bahçe/teras bölümleri ve mutfak konsepti"
+        },
+        {
+          "title": "Meyhanedeyiz — Su Restaurant & Bar",
+          "url": "https://meyhanedeyiz.biz",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ege mezeleri, günlük deniz ürünleri ve butik şarap kavı değerlendirmesi"
+        },
+        {
+          "title": "Trip.com — Su Restaurant Bodrum",
+          "url": "https://www.trip.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kale manzarası ve gün batımı atmosferi geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Kumbahçe merkez kalabalığından bir adım uzakta, doğrudan Bodrum Kalesi karşısı sahil manzarası",
+        "Bahçe, teras ve bar seçenekleriyle çiftler için uyarlanabilir oturum düzeni"
+      ],
+      "cons": [
+        "Sezon dışında çalışma takvimi daralabiliyor ve ön sıra masalar rezervasyon gerektiriyor"
+      ],
+      "uncertainties": [
+        "Sezon dışı kapalı günler ziyaret öncesi teyit edilmeli"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-la-pasion",
+      "categoryId": "date",
+      "resolvedName": "La Pasion Bodrum",
+      "branchName": "Çarşı Mahallesi Atatürk cd. Uslu sok. No:8, Çarşı, 48400 Bodrum/Muğla",
+      "placeId": "ChIJ8YDmZ2psvhQRa5IpID3jnVk",
+      "coordinates": {
+        "lat": 37.034061799999996,
+        "lng": 27.433661500000003
+      },
+      "rating": 4.4,
+      "userRatingCount": 1692,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.lapasionbodrum.com/",
+      "mapsUri": "https://maps.google.com/?cid=6457567292391264875",
+      "recommendedPrimary": [
+        "Deniz Mahsullü Paella (Socarrat)",
+        "Siyah Mürekkepli Paella",
+        "Manchego & İncir Tapas"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Sangria",
+          "note": "Sıcak yaz akşamlarında taş avluda tapas ve paella sofralarına eşlik eden imza içecek.",
+          "proof": "Bodrumlife ve My Guide Bodrum incelemeleri"
+        },
+        {
+          "name": "Carpaccio & Ceviche Başlangıçları",
+          "note": "Paella pişme süresinde paylaşımlık soğuk İspanyol-Akdeniz açılışı.",
+          "proof": "Mesprestiges değerlendirmesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi taş bina içi ve mum ışıklı açık taş avlu masaları; romantik akşam düzeni",
+        "crowdAndNoise": "Akşamları tamamen rezervasyonlu ilerleyen, sohbet ağırlıklı seçkin kalabalık",
+        "disadvantage": "Paellalar sipariş üzerine taze piştiğinden bekleme süresi uzun ve fiyat seviyesi çok yüksek",
+        "transit": "Çarşı Atatürk Caddesi bağlantılı Uslu Sokak No:8 adresinde, yaya bölgesinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=6457567292391264875",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı Uslu Sk. No:8 konum doğrulaması"
+        },
+        {
+          "title": "La Pasion Bodrum Resmi Sitesi",
+          "url": "https://www.lapasionbodrum.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "300 yıllık tarihi taş avlu ve İspanyol tapas-paella mutfağı"
+        },
+        {
+          "title": "Mesprestiges — La Pasion Bodrum",
+          "url": "https://mesprestiges.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Şef Necmettin Kılıç, Socarrat paellalar, Pintxos Gildas ve Manchego tapas incelemesi"
+        },
+        {
+          "title": "Bodrumlife — La Pasion",
+          "url": "https://www.bodrumlife.com.tr",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Romantik taş avlu atmosferi ve sangria eşleşmesi değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Üç yüz yıllık taş avlu atmosferiyle Bodrum merkezdeki en özgün İspanyol mutfağı deneyimi",
+        "Sipariş üzerine taze hazırlanan çıtır tabanlı paellalar ve özgün tapaslar"
+      ],
+      "cons": [
+        "Yüksek fiyat seviyesi ve paella hazırlık süresi nedeniyle acele akşam yemeğine uygun olmaması"
+      ],
+      "uncertainties": [
+        "Kış sezonunda açık gün sayısı haftalık olarak değişebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-cafe-chives",
+      "categoryId": "kahvalti",
+      "resolvedName": "Cafe Chives",
+      "branchName": "Eskiçeşme, Cafer Paşa Cd. No:57/A, 48400 Bodrum/Muğla",
+      "placeId": "ChIJrTRbqA9tvhQRpxq3brMrp28",
+      "coordinates": {
+        "lat": 37.036625,
+        "lng": 27.414537
+      },
+      "rating": 4.8,
+      "userRatingCount": 1081,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8045447308977314471",
+      "recommendedPrimary": [
+        "Avokadolu Yumurtalı Bruschetta",
+        "Eggs Benedict",
+        "Tereyağlı Kruvasan"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "French Toast & Granola Bowl",
+          "note": "Tuzlu yumurta tabakları dışında tatlı kahvaltı veya hafif başlangıç arayanlar için.",
+          "proof": "Skip.menu ve Wanderlog incelemeleri"
+        },
+        {
+          "name": "Nitelikli Espresso & Filtre Kahve",
+          "note": "Sabah fırın ürünlerine eşlik eden güçlü kahve servisi.",
+          "proof": "Yerels ve ziyaretçi notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Eskiçeşme cadde cephesi açık masalar ve fırın kokulu sıcak iç mekan",
+        "crowdAndNoise": "Sabah ve geç kahvaltı saatlerinde oldukça hareketli; hafta sonları masa beklemek gerekebiliyor",
+        "disadvantage": "Popüler sabah saatlerinde masa sırası oluşabiliyor ve erken saatlerde bazı kruvasan çeşitleri tükenebiliyor",
+        "transit": "Eskiçeşme Cafer Paşa Caddesi No:57/A üzerinde, Marina üst sokağında yaya ulaşımında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=8045447308977314471",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Eskiçeşme Cafer Paşa Cd. No:57/A konum doğrulaması"
+        },
+        {
+          "title": "Bodrum Mekan Rehberi — Cafe Chives",
+          "url": "https://bodrummekanrehberi.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ekşi mayalı hamur işleri, Alman-Fransız fırın ekolü ve kahvaltı tabakları incelemesi"
+        },
+        {
+          "title": "Wanderlog — Cafe Chives Bodrum",
+          "url": "https://wanderlog.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze kruvasanlar, avokado toast ve brunch değerlendirmeleri"
+        },
+        {
+          "title": "Mesprestiges — Cafe Chives",
+          "url": "https://mesprestiges.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Eskiçeşme kahvaltı kültürü ve artizan fırın üretimi övgüsü"
+        }
+      ],
+      "pros": [
+        "Yerinde pişen ekşi mayalı ekmek ve tereyağlı kruvasanların tazeliği",
+        "Klasik yumurta tabaklarının yanında vegan brunch alternatifleri de sunması"
+      ],
+      "cons": [
+        "Hafta sonu sabah yoğunluğunda kısa masa bekleme süreleri yaşanabiliyor"
+      ],
+      "uncertainties": [
+        "Günün ilerleyen saatlerinde popüler fırın çeşitleri erken bitebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-kasva-gurme",
+      "categoryId": "kahvalti",
+      "resolvedName": "Kasva Gurme Kahvaltı Evi",
+      "branchName": "Cafer paşa caddesi, Eskiçeşme, mah No No:23, 48400 Bodrum/Muğla",
+      "placeId": "ChIJKZ4WWARtvhQR_ZgKD7vtX9g",
+      "coordinates": {
+        "lat": 37.0343476,
+        "lng": 27.417039499999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 372,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15591441822646966525",
+      "recommendedPrimary": [
+        "Yöresel Serpme Kahvaltı",
+        "Sahanda Yumurta & Menemen",
+        "Sıcak Pişi & Sigara Böreği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Domates & Acı Biber Reçelli Peynir Eşleşmesi",
+          "note": "Serpme kahvaltıda yerel reçellerle en çok öne çıkan özgün lezzet detayı.",
+          "proof": "Kahvaltı Fiyatları ve My Guide Bodrum kayıtları"
+        },
+        {
+          "name": "Tek Kişilik Kahvaltı & Simit Tabağı",
+          "note": "Serpme yerine daha hafif porsiyon tercih eden konuklar için esnek seçenek.",
+          "proof": "Yerel menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Hem kapalı salon hem ferah açık bahçe masaları; kalabalık aile ve arkadaş gruplarına uygun",
+        "crowdAndNoise": "Hafta sonu geç kahvaltı saatlerinde ailelerle hareketli, hafta içi huzurlu bahçe havası",
+        "disadvantage": "Serpme kahvaltı odaklı olduğu için hızlı ve hafif atıştırmalık arayanlara porsiyonlar fazla gelebiliyor",
+        "transit": "Eskiçeşme Cafer Paşa Caddesi No:23 üzerinde, Marina yürüyüş hattının hemen üst paraleli"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=15591441822646966525",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Eskiçeşme Cafer Paşa Cd. No:23 konum doğrulaması"
+        },
+        {
+          "title": "My Guide Bodrum — Kasva Gurme Kahvaltı Evi",
+          "url": "https://www.myguidebodrum.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bahçeli ortam, aile dostu serpme kahvaltı ve Eskiçeşme konumu incelemesi"
+        },
+        {
+          "title": "Yandex Harita — Kasva Gurme Bodrum",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Zengin peynir çeşitliliği, pişi, menemen ve reçel kalitesi geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Bodrum merkezinde sakin bahçe dokusu içinde tam donanımlı geleneksel serpme kahvaltı",
+        "Yöresel peynir ve el yapımı reçel çeşitliliği"
+      ],
+      "cons": [
+        "Deniz manzaralı sahil hattında değil, ara cadde dokusunda yer alıyor"
+      ],
+      "uncertainties": [
+        "Sezon dışındaki hafta içi günlerde açık bahçe kullanımı hava durumuna bağlı"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-jardin-coffee-kruvasan",
+      "categoryId": "kahvalti",
+      "resolvedName": "Jardin Coffee Kruvasan",
+      "branchName": "Çarşı, Türk Kuyusu Cd. No:11 D:1, 48400 Bodrum/Muğla",
+      "placeId": "ChIJ0cImBdttvhQR6nFigdYmPuo",
+      "coordinates": {
+        "lat": 37.035329399999995,
+        "lng": 27.4307615
+      },
+      "rating": 4.8,
+      "userRatingCount": 135,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://jardincafebodrum.com/",
+      "mapsUri": "https://maps.google.com/?cid=16878971156166767082",
+      "recommendedPrimary": [
+        "Tereyağlı Sade Kruvasan & Espresso",
+        "Somon & Avokadolu Kruvasan Sandviç",
+        "Pain au Chocolat"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bademli & Lotus Kremalı Tatlı Kruvasanlar",
+          "note": "Sabah kahvesi yanında tatlı kruvasan arayanlar için en çok sipariş edilen çeşitler.",
+          "proof": "Yemeksepeti ve jardincafebodrum.com menüsü"
+        },
+        {
+          "name": "Serpme & Fit Kahvaltı Tabağı",
+          "note": "Kruvasan dışında klasik kahvaltı tabağı tercih edenlere sunulan alternatif.",
+          "proof": "Resmi menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi Çarşı caddesinde sade ve samimi kafe masaları; sabah hızlı al-götür de yaygın",
+        "crowdAndNoise": "Sabah açılıştan öğlene kadar taze kruvasan ve kahve müdavimleriyle canlı",
+        "disadvantage": "Sabah erken saatlerde çıkıp öğleden sonraya kadar hizmet verdiği için akşam yemeğine açık değil",
+        "transit": "Çarşı Türk Kuyusu Caddesi No:11 D:1 üzerinde, merkez çarşı içi yaya güzergahında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=16878971156166767082",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı Türk Kuyusu Cd. No:11 D:1 konum doğrulaması"
+        },
+        {
+          "title": "Jardin Coffee Kruvasan Resmi Sitesi",
+          "url": "https://jardincafebodrum.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Günlük taze kruvasan üretimi ve specialty kahve konsepti"
+        },
+        {
+          "title": "Yemeksepeti — Jardin Coffee Kruvasan Bodrum",
+          "url": "https://www.yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Pain au Chocolat, Somonlu-Avokadolu, Pesto-Mozzarellalı ve Bademli kruvasan menüsü"
+        },
+        {
+          "title": "Restoranim — Jardin Coffee Kruvasan",
+          "url": "https://restoranim.net",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kruvasan katman dokusu, tazelik ve servis puanı geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Tereyağlı katmanlı kruvasan hamurunu hem tuzlu sandviç hem tatlı formda ustalıkla işlemesi",
+        "Çarşı merkezinde nitelikli kahve ile hızlı veya oturmalı sabah kahvaltısı kolaylığı"
+      ],
+      "cons": [
+        "Öğleden sonra saatlerinden itibaren kruvasan çeşitliliği azalabiliyor"
+      ],
+      "uncertainties": [
+        "Sezon içi ve dışı kapanış saatleri öğleden sonra farklılaşabiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-bakery-stuff",
+      "categoryId": "kahvalti",
+      "resolvedName": "Bakery Stuff Bodrum",
+      "branchName": "Çarşı, Turgut Reis Cd., 48400 Bodrum/Muğla",
+      "placeId": "ChIJf9C8ccFtvhQRRYk0xXNzHMQ",
+      "coordinates": {
+        "lat": 37.0384721,
+        "lng": 27.430702
+      },
+      "rating": 5,
+      "userRatingCount": 110,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14131296671848761669",
+      "recommendedPrimary": [
+        "Roast Beef Fümeli Focaccia Sandviç",
+        "Köz Patlıcanlı Avokadolu Sandviç",
+        "Cinnamon Roll"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ekşi Mayalı Köy Ekmeği",
+          "note": "Evde kahvaltı için fırından taze bütün veya dilimli alınabilen temel artizan ürün.",
+          "proof": "Yemeksepeti ve Restaurant Guru kayıtları"
+        },
+        {
+          "name": "Günlük Tart & Tiramisu",
+          "note": "Sabah kahvaltısı veya öğle kahvesi sonrası tatlı kapanışı olarak seçiliyor.",
+          "proof": "Yemeksepeti ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Turgut Reis Caddesi üzerinde butik fırın tezgâhı ve kısıtlı oturma alanı; paket servis ağırlıklı",
+        "crowdAndNoise": "Sabah ve öğle arası taze sandviç ve fırın ürünü alanlarla hareketli",
+        "disadvantage": "Fırın-dükkan ölçeğinde olduğu için geniş masalı uzun oturmalı serpme kahvaltı ortamı yok",
+        "transit": "Çarşı Turgut Reis Caddesi üzerinde, merkez otogar ve pazaryerine kısa yürüyüş mesafesinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=14131296671848761669",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı Turgut Reis Cd. konum doğrulaması"
+        },
+        {
+          "title": "Yemeksepeti — Bakery Stuff Bodrum",
+          "url": "https://www.yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ekşi mayalı ekmek, Roast Beef focaccia, cinnamon roll ve tart menü kayıtları"
+        },
+        {
+          "title": "Restaurant Guru — Bakery Stuff Bodrum",
+          "url": "https://restaurantguru.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sandviç kalitesi ve taze fırın ürünleri üzerine ziyaretçi değerlendirmeleri"
+        },
+        {
+          "title": "Yandex Harita — Bakery Stuff Bodrum",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Turgut Reis Caddesi konumu ve sıcak servis geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Kendi ekşi mayalı ekmeği, ciabatta ve focacciası ile özgün kahvaltılık sandviçler üretmesi",
+        "Cinnamon roll ve tart gibi fırın tatlılarında istikrarlı tazelik"
+      ],
+      "cons": [
+        "Sınırlı oturma alanı sebebiyle daha çok hızlı kahvaltı veya al-götür fırın molasına uygun"
+      ],
+      "uncertainties": [
+        "Günlük sandviç ve ekmek çeşitleri fırın çıkış saatine göre tükenebiliyor"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-frenk",
+      "categoryId": "denemelisin",
+      "resolvedName": "Frenk Bodrum",
+      "branchName": "Tepecik, yangı çıkmazı sok No:4/A, 48400 Bodrum/Muğla",
+      "placeId": "ChIJxULuRnNtvhQR75Lnp5jtYJI",
+      "coordinates": {
+        "lat": 37.036361899999996,
+        "lng": 27.4279777
+      },
+      "rating": 4.8,
+      "userRatingCount": 1438,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10547691567209485039",
+      "recommendedPrimary": [
+        "Bazlama Tost & Avokado Bruschetta",
+        "Tantana (İnce Çıtır Patates)",
+        "Köpeoğlu & Ege Mezeleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Soğuk Sıkım Mandalina-Zencefil Karışımı",
+          "note": "Gündüz kahvaltı ve çalışma saatlerinde taze Bodrum mandalinasıyla hazırlanan imza içecek.",
+          "proof": "Bodrum Yaşam ve Wanderlog notları"
+        },
+        {
+          "name": "Mantar Mücver & Barbunya Mezesi",
+          "note": "Akşam saatlerinde kadeh eşliğinde paylaşılan ev yapımı meze tabakları.",
+          "proof": "Müdavim.net Frenk incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Marinaya yakın sakin çıkmaz sokakta nostaljik mavi ahşap iç mekan ve dış masa düzeni",
+        "crowdAndNoise": "Gündüzleri sakin kafe-kahvaltı ortamı; akşamları müdavimlerle cıvıl cıvıl sokak meyhanesi havası",
+        "disadvantage": "Çıkmaz sokaktaki küçük kapasite yüzünden akşam saatlerinde erken gidilmezse masa bulmak zorlaşabiliyor",
+        "transit": "Tepecik Yangı Çıkmazı Sokak No:4/A üzerinde, Neyzen Tevfik Caddesi arka paraleli"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=10547691567209485039",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Tepecik Yangı Çıkmazı Sk. No:4/A konum doğrulaması"
+        },
+        {
+          "title": "Müdavim.net — Frenk Bodrum",
+          "url": "https://mudavim.net",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Akşam meze menüsü, Tantana çıtır patates ve ev sıcaklığı atmosferi incelemesi"
+        },
+        {
+          "title": "Bodrum Yaşam — Frenk Bodrum",
+          "url": "https://bodrumdayasam.com.tr",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Gündüz bazlama tostları ve soğuk sıkım meyve suları değerlendirmesi"
+        },
+        {
+          "title": "Wanderlog — Frenk Bodrum",
+          "url": "https://wanderlog.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Gündüz kafe ve akşam meze-şarap geçişi üzerine misafir geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Gündüz bazlama tost ve taze meyve suyundan akşam meze-şaraba doğal bir geçiş sunması",
+        "Turistik kalabalıktan bir arka sokakta korunmuş samimi müdavim dokusu"
+      ],
+      "cons": [
+        "Küçük sokak kapasitesi nedeniyle akşam yemeği saatlerinde kalabalıklaşabiliyor"
+      ],
+      "uncertainties": [
+        "Akşam meze tepsisi içeriği günlük olarak değişebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-egede-maya",
+      "categoryId": "denemelisin",
+      "resolvedName": "Ege'de Maya Bodrum",
+      "branchName": "Çarşı Mah Atatürk cad, Çarşı, Adliye Sk. No:8 D:1, 48470 Bodrum/Muğla",
+      "placeId": "ChIJnYkq2dq3yhQR4Ry2RTSvWdA",
+      "coordinates": {
+        "lat": 37.0335876,
+        "lng": 27.4349115
+      },
+      "rating": 4.8,
+      "userRatingCount": 326,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15013223471858982113",
+      "recommendedPrimary": [
+        "Günlük Ege Otları & Zeytinyağlılar",
+        "Bademli Köfte & Falafel",
+        "Maya Beğendili Bonfile"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sarımsaklı Karides & Sardalya",
+          "note": "Bitkisel ve sebze ağırlıklı mezelerin yanında tercih edilen sıcak deniz ürünü tabakları.",
+          "proof": "Restaurant Guru incelemeleri"
+        },
+        {
+          "name": "Kadayıflı Şnitzel",
+          "note": "Klasik Ege tabakları dışında çıtır dokusuyla sevilen ana yemek seçeneği.",
+          "proof": "Mekanlar.com menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Adliye Sokak üzerinde sade ve zarif dizilmiş sokak masaları ve iç salon",
+        "crowdAndNoise": "Akşamları samimi meyhane ve akşam yemeği atmosferiyle dolu",
+        "disadvantage": "Üst-orta fiyat bandında yer alıyor ve dar sokak nedeniyle kalabalık akşamlarda rezervasyon öneriliyor",
+        "transit": "Çarşı Adliye Sokak No:8 D:1 üzerinde, Atatürk Caddesi ve sahile birkaç adım mesafede"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=15013223471858982113",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı Adliye Sk. No:8 D:1 konum doğrulaması"
+        },
+        {
+          "title": "Bodrum Mekan Rehberi — Egede Maya",
+          "url": "https://bodrummekanrehberi.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Zarif Çarşı atmosferi, Ege meyhanesi dokusu ve günlük mezeler incelemesi"
+        },
+        {
+          "title": "HappyCow — Egede Maya Bodrum",
+          "url": "https://www.happycow.net",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Vegan/vejetaryen dostu bademli köfte, falafel ve zeytinyağlı Ege otları kaydı"
+        },
+        {
+          "title": "Restaurant Guru — Egede Maya Bodrum",
+          "url": "https://restaurantguru.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sarımsaklı karides, taze mezeler ve güler yüzlü servis değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Hem klasik Ege meze-et mutfağını hem zengin vegan/vejetaryen tabakları özenle sunması",
+        "Çarşı merkezinde samimi ve zarif sokak oturum atmosferi"
+      ],
+      "cons": [
+        "Fiyat seviyesi esnaf lokantalarına kıyasla daha yüksek kalıyor"
+      ],
+      "uncertainties": [
+        "Günlük Ege otu ve zeytinyağlı seçkisi mevsime göre değişiyor"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-goca-patisserie",
+      "categoryId": "denemelisin",
+      "resolvedName": "GOCA Bodrum Patisserie",
+      "branchName": "Çarşı, 1014. Sokak No:39, 48400 Bodrum/Muğla",
+      "placeId": "ChIJI5xybwBtvhQR6dGFettUFPM",
+      "coordinates": {
+        "lat": 37.0332771,
+        "lng": 27.430702
+      },
+      "rating": 4.7,
+      "userRatingCount": 479,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/gocabodrumpatisserie?igsh=a2poY2syZ25qM2xi",
+      "mapsUri": "https://maps.google.com/?cid=17515718152380862953",
+      "recommendedPrimary": [
+        "Günlük Üretim Artizan Dondurma (Külah/Cup)",
+        "Goca Bowl Tatlı",
+        "Waffle & Pastane Tatlıları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Matcha Bar & Soğuk Kahve",
+          "note": "Dondurma ve tatlıların yanında sıcak yaz günlerinde ferahlatıcı içecek seçeneği.",
+          "proof": "MenuHaritasi ve Goca resmi kayıtları"
+        },
+        {
+          "name": "Sütlü Tatlılar & Kurabiye Seçkisi",
+          "note": "Dondurma dışındaki günlük taze pastane tatlıları.",
+          "proof": "Yandex Harita misafir değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Çarşı ara sokağında şık ama küçük masa-sandalye yerleşimi; ağırlıklı yürüyüş/al-götür tüketimi",
+        "crowdAndNoise": "Özellikle akşam yemek sonrası saatlerde tatlı ve dondurma kuyruğu ile oldukça kalabalık",
+        "disadvantage": "Oturma alanı dar olduğundan yoğun saatlerde yer bulmak zor, al-götür daha pratik",
+        "transit": "Çarşı 1014. Sokak No:39 üzerinde, sahil ve çarşı yürüyüş aksının tam ortasında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=17515718152380862953",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı 1014. Sk. No:39 konum doğrulaması"
+        },
+        {
+          "title": "Goca Dondurma Resmi Sitesi",
+          "url": "https://gocadondurma.com",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Günlük üretim yoğun kıvamlı dondurma ve Goca Cup/Bowl sunumları"
+        },
+        {
+          "title": "Bodrum Güncel Haber — Goca Bodrum Patisserie",
+          "url": "https://bodrumguncelhaber.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çarşı merkezdeki açılışı ve günlük tatlı-dondurma üretimi haberi"
+        },
+        {
+          "title": "Yandex Harita — Goca Bodrum Patisserie",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Dondurma aroması tazeliği ve dar oturma alanı geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Yapay şurup yerine gerçek meyve ve süt aromalı günlük taze dondurma üretimi",
+        "Çarşı akşam yürüyüşü sırasında hızlı ve nitelikli tatlı molası noktası"
+      ],
+      "cons": [
+        "Küçük dükkan önü sebebiyle uzun süreli oturmalı masa düzeni kısıtlı"
+      ],
+      "uncertainties": [
+        "Günlük dondurma çeşitleri sezon meyvelerine göre değişiyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-nazik-ana",
+      "categoryId": "denemelisin",
+      "resolvedName": "Nazik Ana Restaurant",
+      "branchName": "Çarşı, Eski Hükümet Sk. No:5, 48400 Bodrum/Muğla",
+      "placeId": "ChIJOf0umERtvhQROCo_iBZLMkU",
+      "coordinates": {
+        "lat": 37.035338,
+        "lng": 27.4312185
+      },
+      "rating": 4.4,
+      "userRatingCount": 1784,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://nazikanarestaurant.eatbu.com/",
+      "mapsUri": "https://maps.google.com/?cid=4986130297599765048",
+      "recommendedPrimary": [
+        "Günlük Zeytinyağlı Ege Tabakları",
+        "Tencere Et & Sebze Yemekleri",
+        "Ev Yapımı Mantı & Köfte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zeytinyağlı Vejetaryen Tabakları",
+          "note": "Et yemekleri dışında hafif Ege otları ve sebzelerle kurulan öğle seçkisi.",
+          "proof": "HappyCow ve Biz Evde Yokuz rehberi"
+        },
+        {
+          "name": "Günün Çorbası & Ev Yoğurdu",
+          "note": "Öğle servisinde tencere yemeğine eşlik eden geleneksel başlangıçlar.",
+          "proof": "nazikanarestaurant.com ve Eatbu menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi taş bina içi ve ağaç gölgeli samimi avlu masaları",
+        "crowdAndNoise": "Öğle ve akşam erken saatlerde hem yerel esnaf hem tarihî sokak gezginleriyle düzenli tempo",
+        "disadvantage": "Günün tencere yemekleri erken saatlerde tükenebiliyor ve sokak içi olduğundan manzara sunmuyor",
+        "transit": "Çarşı Eski Hükümet Sokak No:5 üzerinde, Bodrum Belediye Meydanı üst sokağında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=4986130297599765048",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı Eski Hükümet Sk. No:5 konum doğrulaması"
+        },
+        {
+          "title": "Nazik Ana Restaurant Resmi Menüsü",
+          "url": "https://nazikanarestaurant.eatbu.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Çeyrek asırlık tarihçe, ev yemekleri ve günlük menü içeriği"
+        },
+        {
+          "title": "Biz Evde Yokuz — Bodrum Yeme İçme Rehberi",
+          "url": "https://www.bizevdeyokuz.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bodrum Çarşı içinde otantik avluda geleneksel ev yemekleri tavsiyesi"
+        },
+        {
+          "title": "Bodrumania — Nazik Ana Restaurant",
+          "url": "https://bodrumania.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihi taş avluda Ege zeytinyağlıları ve yerel lokanta kültürü incelemesi"
+        }
+      ],
+      "pros": [
+        "Bodrum merkezinde turist menülerinden uzak, çeyrek asırlık gerçek tencere ve zeytinyağlı mutfağı",
+        "Tarihi taş ev avlusu içinde huzurlu ve gölgeli öğle-akşam yemeği ortamı"
+      ],
+      "cons": [
+        "Bazı tencere çeşitleri akşam saatlerine kalmadan bitebiliyor"
+      ],
+      "uncertainties": [
+        "Günlük çıkan yemek listesi mevsim sebzelerine göre değişiyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-bodrum-mudavim",
+      "categoryId": "denemelisin",
+      "resolvedName": "Bodrum Müdavim",
+      "branchName": "Çarşı, Dr. Alim Bey Cd. No:46/1, 48400 Bodrum/Muğla",
+      "placeId": "ChIJwaeT76dtvhQRrc8vsTNrOQM",
+      "coordinates": {
+        "lat": 37.0334232,
+        "lng": 27.4332659
+      },
+      "rating": 4.4,
+      "userRatingCount": 1599,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://bodrummudavim.com/",
+      "mapsUri": "https://maps.google.com/?cid=232334725546495917",
+      "recommendedPrimary": [
+        "Lakerda & Levrek Marin",
+        "Karamelize Soğanlı Fava & Kabak Çiçeği Dolması",
+        "Ayvalı Et Yahni"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ananaslı Enginar Kalbi Izgara & Mücver",
+          "note": "Soğuk meze tepsisinin ardından masaya gelen özgün Ege ara sıcakları.",
+          "proof": "bodrummudavim.com ve Müdavim.net kayıtları"
+        },
+        {
+          "name": "İstiridye Mantarı Kavurma & Kuru Köfte",
+          "note": "Balık dışında klasik ev yemeği dokunuşu arayanlarca seçilen sıcak tabaklar.",
+          "proof": "Müdavim.net değerlendirmesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Deniz kenarı beyaz örtülü teras masaları ve tarihi taş ev iç mekanı",
+        "crowdAndNoise": "Akşamları beyaz örtülü klasik Bodrum meyhanesi atmosferini arayan müdavimlerle dolu",
+        "disadvantage": "Çok yüksek fiyat kategorisinde yer alıyor ve deniz kenarı masalar önceden rezervasyon istiyor",
+        "transit": "Çarşı Dr. Alim Bey Caddesi No:46/1 üzerinde, Kale ve sahil hattında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=232334725546495917",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı Dr. Alim Bey Cd. No:46/1 konum doğrulaması"
+        },
+        {
+          "title": "Bodrum Müdavim Resmi Sitesi",
+          "url": "http://bodrummudavim.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Sadun Boro tarihi evi, soğuk meze ve ara sıcak menüsü doğrulaması"
+        },
+        {
+          "title": "Biz Evde Yokuz — Bodrum Müdavim",
+          "url": "https://www.bizevdeyokuz.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sadun Boro evi mimarisi ve kale manzaralı sahil meyhanesi incelemesi"
+        },
+        {
+          "title": "Müdavim.net — Bodrum Müdavim Meyhane",
+          "url": "https://mudavim.net",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ayvalı et yahni, lokum pilavı ve Ege mezeleri değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Sadun Boro mirasını taşıyan begonvilli tarihi denizci evinde gerçek bir Bodrum sahil akşamı",
+        "Klasik Ege mezelerinin yanında ayvalı yahni gibi mevsimsel ev yemekleri sunması"
+      ],
+      "cons": [
+        "Yüksek fiyat seviyesi bütçe odaklı ziyaretçiler için ağır kalabiliyor"
+      ],
+      "uncertainties": [
+        "Mevsimsel ana yemekler mevsime ve günlük mutfak hazırlığına göre değişiyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-cancan-kofte",
+      "categoryId": "denemelisin",
+      "resolvedName": "CanCan Köfte",
+      "branchName": "Artemis caddesi 13 kurutaş, Çarşı, otopark, 48800 Bodrum/Muğla",
+      "placeId": "ChIJjbSpYoxtvhQRSCWbzqZ-D5w",
+      "coordinates": {
+        "lat": 37.036374099999996,
+        "lng": 27.435198099999997
+      },
+      "rating": 4.9,
+      "userRatingCount": 94,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11245346049463362888",
+      "recommendedPrimary": [
+        "Izgara Köfte Porsiyon",
+        "Et Kavurma",
+        "Ev Yapımı Mantı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ekmek Arası Izgara Köfte",
+          "note": "Çarşı içinde hızlı ve bütçe dostu öğle atıştırmalığı olarak tercih edilir.",
+          "proof": "Yandex Harita ve Restoranim kayıtları"
+        },
+        {
+          "name": "Günün Sıcak Ev Yemeği & Çorbası",
+          "note": "Esnaf lokantası çizgisinde doyurucu öğle tamamlayıcıları.",
+          "proof": "CanCan Eatbu ve Restaurant Guru notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı aile lokantası içi ve sokak kenarı pratik masalar; hızlı servis",
+        "crowdAndNoise": "Öğle saatlerinde bölge esnafı ve uygun fiyatlı ev yemeği arayan yerlilerle canlı",
+        "disadvantage": "Gösterişsiz sokak lokantası ortamı sunuyor, deniz manzarası veya uzun akşam oturumu için tasarlanmamış",
+        "transit": "Çarşı Artemis Caddesi Kurutaş Otopark / Fabrika Sokak No:18 çevresinde, Merkez Garajı üstü"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=11245346049463362888",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı Artemis Cd. Kurutaş Otopark civarı konum doğrulaması"
+        },
+        {
+          "title": "CanCan Mantı & Köfte Resmi Eatbu Sayfası",
+          "url": "https://eatbu.com",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Izgara köfte, et kavurma ve ev yapımı mantı menü kayıtları"
+        },
+        {
+          "title": "Restoranim — CanCan Köfte Bodrum",
+          "url": "https://restoranim.net",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Aile işletmesi samimiyeti ve köfte lezzeti topluluk değerlendirmeleri"
+        },
+        {
+          "title": "Restaurant Guru — CanCan Köfte Bodrum",
+          "url": "https://restaurantguru.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Uygun fiyatlı doyurucu köfte ve kavurma geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Turistik sahil fiyatlarından tamamen bağımsız, yerel esnaf ve aile lokantası samimiyeti",
+        "Kıvamında ızgara köfte, et kavurma ve mantı odağı"
+      ],
+      "cons": [
+        "Gündüz odaklı sade esnaf lokantası olduğundan ambiyans beklentisiyle gidilmemeli"
+      ],
+      "uncertainties": [
+        "Akşam geç saatlerde kapanma durumu mevsime göre değişebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-suzgec-marina",
+      "categoryId": "denemelisin",
+      "resolvedName": "Süzgeç Marina",
+      "branchName": "Eskiçeşme, Neyzen Tevfik Cd. no:128, 48400 Bodrum/Muğla",
+      "placeId": "ChIJxdVCu1htvhQRDpW2plciuoY",
+      "coordinates": {
+        "lat": 37.0360101,
+        "lng": 27.4235272
+      },
+      "rating": 4.4,
+      "userRatingCount": 188,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9708109706605008142",
+      "recommendedPrimary": [
+        "Mürekkep Balıklı Ahtapot Risotto",
+        "Kaburga & Burrata Pizza",
+        "Günlük Levrek Ceviche"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Orzo Shrimp (Karidesli Arpa Şehriye)",
+          "note": "Deniz mahsullü sıcak tabaklar arasında hafif Akdeniz dokunuşuyla öne çıkar.",
+          "proof": "suzgecmarina.com resmi menüsü"
+        },
+        {
+          "name": "Bodrum Mandalinalı Midorino Shun Kokteyli",
+          "note": "Marina manzarasına karşı yerel narenciye aromasıyla hazırlanan imza kokteyl.",
+          "proof": "Bodrumluculuk ve resmi bar menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi taş bina içi ve marina yönüne bakan şık cadde masaları",
+        "crowdAndNoise": "Akşam yemeğinden kokteyl saatlerine uzanan şık ve dinamik marina kitlesi",
+        "disadvantage": "Üst segment fiyat seviyesinde yer alıyor ve akşamları cadde trafiği gürültüsü hissedilebiliyor",
+        "transit": "Eskiçeşme Neyzen Tevfik Caddesi No:128 üzerinde, Milta Bodrum Marina karşısı"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=9708109706605008142",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Eskiçeşme Neyzen Tevfik Cd. No:128 konum doğrulaması"
+        },
+        {
+          "title": "Süzgeç Marina Resmi Sitesi",
+          "url": "https://suzgecmarina.com",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Kaburga & Burrata pizza, ahtapot risotto, orzo shrimp ve ceviche menüsü"
+        },
+        {
+          "title": "Bodrumluculuk — Süzgeç Marina",
+          "url": "https://bodrumluculuk.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ortakent Süzgeç Müskebi kökenli ekibin Marina taş binasındaki konsept incelemesi"
+        },
+        {
+          "title": "Restoranim — Süzgeç Marina Bodrum",
+          "url": "https://restoranim.net",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Odun fırını ekşi mayalı pizzalar ve deniz mahsullü tabaklar üzerine misafir notları"
+        }
+      ],
+      "pros": [
+        "Bodrum yarımadası kökenli ekibin deniz ürünlerini modern İtalyan teknikleriyle işlemesi",
+        "Marina karşısında hem akşam yemeği hem imza kokteyl deneyimini birleştirmesi"
+      ],
+      "cons": [
+        "Ana cadde kenarındaki masalarda akşam araç geçişi sesi duyulabiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışı dönemde mutfak ve bar kapanış günleri güncellenebiliyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-zahmetsiz-balik",
+      "categoryId": "denemelisin",
+      "resolvedName": "Zahmetsiz Balık Evi",
+      "branchName": "Eskiçeşme, Neyzen Tevfik Cd. No:146, 48400 Bodrum/Muğla",
+      "placeId": "ChIJuT9Eb0ZsvhQRvINB2L484UY",
+      "coordinates": {
+        "lat": 37.0354801,
+        "lng": 27.422536599999997
+      },
+      "rating": 4.4,
+      "userRatingCount": 475,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.zahmetsizbalik.com/",
+      "mapsUri": "https://maps.google.com/?cid=5107430242784478140",
+      "recommendedPrimary": [
+        "Levrek Lokum",
+        "Balık Mantı",
+        "Balık Çorbası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Balık Kokoreç & Balık Börek",
+          "note": "Deniz ürünlerini geleneksel sokak ve hamur işi formlarında denemek isteyenlerin favorisi.",
+          "proof": "Hürriyet haberi ve zahmetsizbalik.com"
+        },
+        {
+          "name": "Çıtır Levrek & Balık Burger",
+          "note": "Özellikle çocuklu ailelerin ve hızlı öğle yemeği arayanların sık tercih ettiği pratik tabaklar.",
+          "proof": "Hürriyet ve Yandex değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Marina caddesi üzerinde sade, aydınlık ve hızlı servis odaklı iç-dış masa düzeni",
+        "crowdAndNoise": "Öğle ve erken akşam saatlerinde aileler ve hızlı taze balık yemek isteyenlerle hareketli",
+        "disadvantage": "Klasik meyhane ve içkili akşam ortamı arayanlar için uygun değil; sade bir yemek salonu yapısına sahip",
+        "transit": "Eskiçeşme Neyzen Tevfik Caddesi No:146 üzerinde, Milta Bodrum Marina ana girişi karşısı"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=5107430242784478140",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Eskiçeşme Neyzen Tevfik Cd. No:146 konum doğrulaması"
+        },
+        {
+          "title": "Zahmetsiz Balık Evi Resmi Sitesi",
+          "url": "http://www.zahmetsizbalik.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Levrek lokum, balık çorbası, balık mantı ve balık kokoreç konsepti"
+        },
+        {
+          "title": "Hürriyet — Zahmetsiz Balık Evi Bodrum",
+          "url": "https://www.hurriyet.com.tr",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Pratik, hızlı servisli ve çocuklu aile dostu yenilikçi balık evi haberi"
+        },
+        {
+          "title": "Yandex Harita — Zahmetsiz Balık Evi",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Servis hızı, levrek lokum ve balık çorbası tazeliği geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Klasik uzun balık masasına oturmadan balık mantı, balık kokoreç ve lokum gibi özgün tatlar sunması",
+        "Alkolsüz, sade ve hızlı servisli yapısıyla öğle molaları ve aileler için pratik olması"
+      ],
+      "cons": [
+        "Lüks sahil balıkçısı veya meyhane atmosferi bekleyen misafirlere sade gelebiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışındaki öğle-akşam arası servis saatleri değişebiliyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-yali-pide",
+      "categoryId": "denemelisin",
+      "resolvedName": "Yalı Pide & Lahmacun",
+      "branchName": "Çarşı, Neyzen Tevfik Cd. No:12, 48400 Bodrum/Muğla",
+      "placeId": "ChIJ8YO-c7NtvhQRsGJSsqqcXRs",
+      "coordinates": {
+        "lat": 37.0352929,
+        "lng": 27.4292451
+      },
+      "rating": 4.5,
+      "userRatingCount": 82,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1971904468808262320",
+      "recommendedPrimary": [
+        "Çıtır Lahmacun",
+        "Kuşbaşılı Kaşarlı Pide",
+        "Kıymalı Pide"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kuşbaşılı Pide",
+          "note": "Lahmacunun yanında fırından sıcak çıkan doyurucu hamur işi alternatifi.",
+          "proof": "Restaurant Guru ve Dijital Link menü kayıtları"
+        },
+        {
+          "name": "Kıymalı & Kaşarlı Pide",
+          "note": "Hızlı öğle yemeği veya paket servis için sıkça seçilen klasik çeşit.",
+          "proof": "Bodrun.org ve yerel menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı esnaf salonu içi ve küçük cadde önü masaları; hızlı otur-kalk ve paket servis",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde yerel çalışanlar ve pratik yemek arayan gezginlerle hareketli",
+        "disadvantage": "Alkol servisi bulunmayan çok sade bir pide salonu düzenine sahip, uzun oturum atmosferi sunmuyor",
+        "transit": "Çarşı Neyzen Tevfik Caddesi No:12 üzerinde, Belediye Meydanı ile Marina arasındaki yürüyüş hattında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=1971904468808262320",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı Neyzen Tevfik Cd. No:12 konum doğrulaması"
+        },
+        {
+          "title": "Restaurant Guru — Yalı Pide Bodrum",
+          "url": "https://restaurantguru.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çıtır lahmacun, taze yeşillik ikramı, hızlı servis ve makul fiyat değerlendirmeleri"
+        },
+        {
+          "title": "Yandex Harita — Yalı Pide Lahmacun",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Neyzen Tevfik Caddesi No:12 konumu ve pide-lahmacun geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Neyzen Tevfik gibi merkezi bir caddede hala ulaşılabilir fiyatla çıtır lahmacun ve pide sunması",
+        "Sipariş sonrası bekleme süresinin kısa ve hamurun taze olması"
+      ],
+      "cons": [
+        "Küçük dükkan yapısı ve yoğun saatlerde hızlı sirkülasyon nedeniyle sade atmosfer"
+      ],
+      "uncertainties": [
+        "Sezon dışında akşam kapanış saatleri erken çekilebiliyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-derin-beach-bar",
+      "categoryId": "denemelisin",
+      "resolvedName": "Derin Beach Bar Restaurant",
+      "branchName": "Kumbahçe, Cumhuriyet Cd. No:147, 48400 Bodrum/Muğla",
+      "placeId": "ChIJp4-oItttvhQRfkfnuOJ9k_Y",
+      "coordinates": {
+        "lat": 37.0319949,
+        "lng": 27.437885800000004
+      },
+      "rating": 4.7,
+      "userRatingCount": 1865,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.derinrestorant.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=17767683367624984446",
+      "recommendedPrimary": [
+        "Günlük Deniz Ürünleri & Ege Mezeleri",
+        "Whisky Sour & Espresso Martini",
+        "Izgara Çeşitleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Klasik Bar Kokteylleri (Whisky Sour / Gin Fizz)",
+          "note": "Akşamüstü iskele ve teras saatlerinde deniz esintisi eşliğinde en çok seçilen içecekler.",
+          "proof": "Restoranim ve My Guide Bodrum kayıtları"
+        },
+        {
+          "name": "Kumbahçe İskele Deniz Ürünleri Tabakları",
+          "note": "Plaj sonrası akşam yemeğine kalan masalarda paylaşımlık taze seçenekler.",
+          "proof": "derinrestorant.com.tr ve Yerels kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sahile sıfır kumsal şezlongları, iskele ve kale manzaralı açık restoran masaları",
+        "crowdAndNoise": "Gündüz plaj misafirleriyle sakin, gün batımı ve akşam saatlerinde sosyal ve hareketli",
+        "disadvantage": "Barlar Sokağı hattındaki canlılık nedeniyle akşamları müzik sesi yüksek olabiliyor ve deniz önü hızlı doluyor",
+        "transit": "Kumbahçe Cumhuriyet Caddesi No:147 üzerinde, sahil şeridi yürüyüş aksında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=17767683367624984446",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kumbahçe Cumhuriyet Cd. No:147 konum doğrulaması"
+        },
+        {
+          "title": "Derin Beach Bar Restaurant Resmi Sitesi",
+          "url": "https://www.derinrestorant.com.tr/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Kumbahçe deniz sıfırı plaj, iskele ve akşam restoranı bilgisi"
+        },
+        {
+          "title": "My Guide Bodrum — Derin Beach Bar Restaurant",
+          "url": "https://www.myguidebodrum.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bodrum Kalesi manzaralı iskele, günlük deniz ürünleri ve kokteyl değerlendirmesi"
+        },
+        {
+          "title": "Restoranim — Derin Beach Bar Restaurant",
+          "url": "https://restoranim.net",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kokteyl menüsü ve sahil konumu üzerine ziyaretçi geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Kumbahçe sahilinde hem gündüz deniz-iskele hem akşam kale manzaralı yemek-kokteyl imkanı",
+        "Merkezden yürüyerek kolay erişilen doğrudan kıyı konumu"
+      ],
+      "cons": [
+        "Yüksek sezonda bar ve plaj trafiği nedeniyle sakin yemek arayanlara gürültülü gelebiliyor"
+      ],
+      "uncertainties": [
+        "Kış döneminde plaj/iskele bölümü kapalı olup yalnızca restoran servisi değişebiliyor"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-linam-restaurant",
+      "categoryId": "balik",
+      "resolvedName": "Linam Restaurant",
+      "branchName": "marina caddesi, Eskiçeşme, Neyzen Tevfik Cd. 156{a, 48400 Bodrum/Muğla",
+      "placeId": "ChIJqRY60IhtvhQR1LXudFfnonw",
+      "coordinates": {
+        "lat": 37.035306,
+        "lng": 27.4223143
+      },
+      "rating": 4.8,
+      "userRatingCount": 827,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://linamrestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=8980994969740162516",
+      "recommendedPrimary": [
+        "Günlük Izgara Balık Seçkisi",
+        "Taze Ege Mezeleri",
+        "Deniz Mahsullü Ara Sıcaklar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ahtapot & Kalamar Ara Sıcakları",
+          "note": "Ana balık öncesi soğuk mezelerle birlikte masaya gelen sıcak deniz ürünleri.",
+          "proof": "linamrestaurant.com ve Bodrumlu kayıtları"
+        },
+        {
+          "name": "Mevsimsel Ege Otlu Soğuk Mezeler",
+          "note": "Günlük olarak hazırlanan hafif zeytinyağlı başlangıç tabakları.",
+          "proof": "Yandex Harita ziyaretçi notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Deniz temalı ferah iç salon ve Neyzen Tevfik marina aksına bakan düzenli açık masalar",
+        "crowdAndNoise": "Akşam yemeklerinde şık bir balık sofrası arayan çiftler ve gruplarla düzenli ve nezih",
+        "disadvantage": "Üst segment fiyatlama politikası uyguluyor ve hafta sonu akşamlarında rezervasyon gerektiriyor",
+        "transit": "Eskiçeşme Neyzen Tevfik Caddesi No:156/A üzerinde, Milta Marina yürüyüş bandında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=8980994969740162516",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Eskiçeşme Neyzen Tevfik Cd. No:156/A konum doğrulaması"
+        },
+        {
+          "title": "Linam Restaurant Resmi Sitesi",
+          "url": "https://linamrestaurant.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Günlük taze deniz ürünleri, ızgara balık ve Neyzen Tevfik konumu"
+        },
+        {
+          "title": "Bodrumlu — Linam Restaurant Bodrum",
+          "url": "https://www.bodrumlu.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Zarif deniz temalı tasarım ve şık balık sofrası incelemesi"
+        },
+        {
+          "title": "Yandex Harita — Linam Restaurant",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Balık tazeliği, servis kalitesi ve akşam atmosferi geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Marina hattında yüksek misafir memnuniyetini koruyan taze balık ve meze mutfağı",
+        "Şık ama gürültüden uzak dengeli akşam servisi"
+      ],
+      "cons": [
+        "Üst fiyat segmentinde olması ve sezon yoğunluğunda rezervasyon şartı"
+      ],
+      "uncertainties": [
+        "Mevsimsel balık çeşitleri günlük av durumuna göre değişiyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-deniz-restaurant",
+      "categoryId": "balik",
+      "resolvedName": "Deniz Restaurant",
+      "branchName": "Çarşı, Belediye Meydanı no 4Bodrum, 48400 Bodrum/Muğla",
+      "placeId": "ChIJQ3pASABtvhQR2uZDHNya6mE",
+      "coordinates": {
+        "lat": 37.0347802,
+        "lng": 27.4297744
+      },
+      "rating": 4.7,
+      "userRatingCount": 1740,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://denizrestaurantbodrum.com/",
+      "mapsUri": "https://maps.google.com/?cid=7055622036386997978",
+      "recommendedPrimary": [
+        "Günlük Taze Izgara Balık",
+        "Soğuk Meze Tezgâhı Seçkisi",
+        "Deniz Ürünlü Ara Sıcaklar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Güveçte Deniz Mahsulleri & Kalamar",
+          "note": "Meze tezgâhı seçiminin ardından ana balık öncesi paylaşılan klasik sıcaklar.",
+          "proof": "denizrestaurantbodrum.com resmi menüsü"
+        },
+        {
+          "name": "Et & Pide Alternatifleri",
+          "note": "Kalabalık masalarda deniz ürünü tüketmeyen misafirler için sunulan yan seçenek.",
+          "proof": "My Guide Bodrum incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Belediye Meydanı üstünde marinaya bakan ferah açık teras ve iç salon masaları",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde aileler, kalabalık arkadaş grupları ve meydan ziyaretçileriyle canlı",
+        "disadvantage": "Meydan başlangıcında yer aldığı için insan trafiği yoğun ve üst kat manzarası için rezervasyon önerilir",
+        "transit": "Çarşı Belediye Meydanı No:4 üzerinde, Bodrum Marina doğu girişi köşesinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=7055622036386997978",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı Belediye Meydanı No:4 konum doğrulaması"
+        },
+        {
+          "title": "Deniz Restaurant Bodrum Resmi Sitesi",
+          "url": "https://denizrestaurantbodrum.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "1998 kuruluşu, günlük taze balıklar, meze tezgâhı ve güveç çeşitleri"
+        },
+        {
+          "title": "My Guide Bodrum — Deniz Restaurant",
+          "url": "https://www.myguidebodrum.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Marina teras konumu, meze zenginliği ve karma gruplara uygunluk değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Çeyrek asrı aşan köklü işletme geçmişi ve marina manzaralı teras avantajı",
+        "Balık dışındaki et/güveç alternatifleriyle kalabalık gruplara kolay uyum sağlaması"
+      ],
+      "cons": [
+        "Meydan köşesi yoğunluğu sebebiyle sakin ara sokak meyhanesi arayanlara kalabalık gelebilir"
+      ],
+      "uncertainties": [
+        "Sezon içi teras masaları akşam yemeği öncesi hızlı dolabiliyor"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-dukkan-no-10",
+      "categoryId": "balik",
+      "resolvedName": "Dükkan No 10",
+      "branchName": "Çarşı, Adliye Sk. No:5, 48400 Bodrum/Muğla",
+      "placeId": "ChIJodiBVGpsvhQRJP_4mOPwIIs",
+      "coordinates": {
+        "lat": 37.0337643,
+        "lng": 27.4348408
+      },
+      "rating": 4.7,
+      "userRatingCount": 715,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.facebook.com/dukkanno10",
+      "mapsUri": "https://maps.google.com/?cid=10025277630841421604",
+      "recommendedPrimary": [
+        "Füme Ringa",
+        "Izgara Ahtapot",
+        "Karatahta Günün Taze Balığı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Girit Peynirli Ezme & Tahinli Patlıcan",
+          "note": "Masaya gelen günlük meze tepsisinin en çok tercih edilen iki soğuk açılışı.",
+          "proof": "Meyhankoli ve Mesprestiges incelemeleri"
+        },
+        {
+          "name": "Kağıtta Levrek & Baby Kalamar",
+          "note": "Hafif ve aromalı sıcak deniz ürünü arayan müdavimlerin düzenli seçimi.",
+          "proof": "Meyhankoli menü notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Adliye Sokak üzerinde dar sokak masaları ve samimi küçük iç dükkan",
+        "crowdAndNoise": "Akşamları tamamen yerel müdavimler ve meze-balık severlerle sıcak ve hareketli",
+        "disadvantage": "Küçük aile işletmesi kapasitesi nedeniyle rezervasyonsuz akşam masası bulmak çok zor",
+        "transit": "Çarşı Adliye Sokak No:5 üzerinde, Atatürk Caddesi paralelinden bir dakika yürüyüş"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=10025277630841421604",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı Adliye Sk. No:5 konum doğrulaması"
+        },
+        {
+          "title": "Dükkan No 10 Resmi Facebook Sayfası",
+          "url": "https://www.facebook.com/dukkanno10",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Adliye Sokak aile meyhanesi ve günlük taze deniz ürünü duyuruları"
+        },
+        {
+          "title": "Mesprestiges — Dükkan No 10 Bodrum",
+          "url": "https://mesprestiges.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Meze tepsisi, karatahta günlük balık seçimi, füme ringa ve ızgara ahtapot övgüsü"
+        },
+        {
+          "title": "Meyhankoli — Dükkan No 10",
+          "url": "https://www.meyhankoli.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tahinli patlıcan, ot kavurma, kağıtta levrek ve samimi meyhane atmosferi incelemesi"
+        },
+        {
+          "title": "Restaurant Guru — Dükkan No 10",
+          "url": "https://restaurantguru.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze meze çeşitliliği ve samimi esnaf hizmeti değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Sabit menü kalıplarından uzak, meze tepsisi ve karatahta balıklarıyla gerçek eski Bodrum meyhanesi ruhu",
+        "Füme ringa ve ızgara ahtapot gibi özenli deniz mahsulü dokunuşları"
+      ],
+      "cons": [
+        "Sınırlı masa kapasitesi yüzünden özellikle hafta sonları önceden yer ayırtmak şart"
+      ],
+      "uncertainties": [
+        "Günlük balık ve meze çeşitleri sabah halinden gelen ürüne bağlı olarak değişiyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-gemibasi",
+      "categoryId": "balik",
+      "resolvedName": "Gemibaşı Restaurant",
+      "branchName": "Eskiçeşme, Fırkateyn Sk. No:132, 48400 Bodrum/Muğla",
+      "placeId": "ChIJp2EErUdsvhQR4hhpautlFXQ",
+      "coordinates": {
+        "lat": 37.035926499999995,
+        "lng": 27.4230853
+      },
+      "rating": 4.4,
+      "userRatingCount": 974,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.gemibasi.com/",
+      "mapsUri": "https://maps.google.com/?cid=8364703944687556834",
+      "recommendedPrimary": [
+        "Ev Yapımı Lakerda & Levrek Marin",
+        "Kiloluk Taze Mevsim Balığı",
+        "Fava & Ege Otları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mütebbel & Mevsim Ege Otları",
+          "note": "Lakerda ile birlikte masaya gelen klasik soğuk meze tamamlayıcıları.",
+          "proof": "gemibasi.com ve Yemeksepeti kayıtları"
+        },
+        {
+          "name": "Kalamar & Izgara Ahtapot",
+          "note": "Kiloluk balık öncesi meyhane geleneğini sürdüren sıcak ara ürünler.",
+          "proof": "Eniyi.best ve ziyaretçi notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Milta Marina yan sokağında geleneksel beyaz-mavi Bodrum meyhanesi avlusu ve iç salon",
+        "crowdAndNoise": "Yıllardır değişmeyen sadık müdavimleri ve geleneksel meyhane arayanlarla akşamları dolu",
+        "disadvantage": "Çok yüksek fiyat kategorisinde yer alıyor ve doğrudan sahil manzarası yerine marina arka sokağında kalıyor",
+        "transit": "Eskiçeşme Fırkateyn Sokak No:132 üzerinde, Neyzen Tevfik Caddesi Milta Marina girişi yanı"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=8364703944687556834",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Eskiçeşme Fırkateyn Sk. No:132 konum doğrulaması"
+        },
+        {
+          "title": "Gemibaşı Restaurant Resmi Sitesi",
+          "url": "http://www.gemibasi.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "1974 kuruluş tarihçesi ve Bodrum denizci meyhanesi mirası"
+        },
+        {
+          "title": "Eniyi.best — Gemibaşı Restaurant Bodrum",
+          "url": "https://eniyi.best",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yarım asırlık klasik balıkçı ve müdavim meyhanesi incelemesi"
+        },
+        {
+          "title": "Yemeksepeti — Gemibaşı Restaurant",
+          "url": "https://www.yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Lakerda, fava, marine, mütebbel ve Ege otları menü doğrulaması"
+        }
+      ],
+      "pros": [
+        "1974'ten bu yana kesintisiz devam eden yarım asırlık otantik Bodrum meyhane kimliği",
+        "Gösterişten uzak klasik lakerda, Ege otları ve günlük kiloluk balık disiplini"
+      ],
+      "cons": [
+        "Yüksek fiyat seviyesi ve deniz manzaralı ön sırada değil yan sokakta bulunması"
+      ],
+      "uncertainties": [
+        "Sezon ve hal akışına göre kiloluk balık çeşitleri günlük belirleniyor"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-merkez-orfoz",
+      "categoryId": "balik",
+      "resolvedName": "Orfoz Restaurant Bodrum",
+      "branchName": "Kumbahçe, Zeki Müren Cd. No: 13/1, 48400 Bodrum/Muğla",
+      "placeId": "ChIJK8EeTELOvxQRvYZKtrHmCb8",
+      "coordinates": {
+        "lat": 37.0299614,
+        "lng": 27.440470299999998
+      },
+      "rating": 4.2,
+      "userRatingCount": 845,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.orfoz.net/",
+      "mapsUri": "https://maps.google.com/?cid=13765787386976569021",
+      "recommendedPrimary": [
+        "15 Ürünlük Deniz Tadım Menüsü",
+        "Tulum Peynirli İstiridye",
+        "Fırında Midye & Deniz Ürünleri Pilavı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bargilya Karidesi & Mavi Yengeç (Alakart Ekstra)",
+          "note": "Tadım menüsüne ek olarak yarımadanın nadir avlarından sipariş edilebilen özel kabuklular.",
+          "proof": "orfoz.net resmi alakart listesi"
+        },
+        {
+          "name": "Patlıcan Bomba & Anne Tatlısı",
+          "note": "Deniz mahsulleri geçişinin sonunda tadım akışını tamamlayan imza tabaklar.",
+          "proof": "orfoz.net ve uluslararası gastronomi rehberi kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kumbahçe sahilinde mavi-beyaz taş bina önü ve iç salon masaları; rezervasyonlu tadım servisi",
+        "crowdAndNoise": "Gastronomi odaklı misafirlerle sakin, rafine ve yavaş tempolu akşam servisi",
+        "disadvantage": "Çok yüksek fiyat seviyesi, en az iki kişilik sabit tadım menüsü formatı ve yoğun dönemlerde haftalar öncesinden rezervasyon gerektirmesi",
+        "transit": "Kumbahçe Zeki Müren Caddesi No:13/1 üzerinde, Kumbahçe sahilinin doğu devamında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=13765787386976569021",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kumbahçe Zeki Müren Cd. No:13/1 konum doğrulaması"
+        },
+        {
+          "title": "Orfoz Restaurant Resmi Sitesi",
+          "url": "http://www.orfoz.net/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "15 ürünlük tadım menüsü, tulum peynirli istiridye, kidonya ve Neferiye şarapları"
+        },
+        {
+          "title": "Michelin Guide — Orfoz Bodrum",
+          "url": "https://guide.michelin.com",
+          "date": "2026-10-20",
+          "kind": "award",
+          "note": "Michelin Seçkisi ve sürdürülebilir yerel deniz mahsulü mutfağı için Michelin Green Star ödülü"
+        },
+        {
+          "title": "Gault & Millau Türkiye — Orfoz Restaurant",
+          "url": "https://www.gault-millau.com.tr",
+          "date": "2026-10-20",
+          "kind": "award",
+          "note": "2 Toque (13/20) deniz ürünleri kategorisi ve Bozçağa kardeşler mutfağı değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Yarımadanın nadir kabuklu deniz ürünlerini ve yerel bağcılığı sürdürülebilir tadım akışıyla sunması",
+        "Sıradan rakı-balık menülerinden tamamen ayrışan özgün şef tekniği"
+      ],
+      "cons": [
+        "Sabit tadım menüsü yapısı ve çok yüksek hesap tutarı her bütçeye veya ayaküstü yemeğe uygun değil",
+        "Rezervasyon olmadan masa bulunamaması ve alakart esnekliğinin sınırlı olması"
+      ],
+      "uncertainties": [
+        "Mevsim ve av yasaklarına bağlı olarak deniz kestanesi, kidonya ve yengeç stokları değişebiliyor"
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    }
+  ]
+}
