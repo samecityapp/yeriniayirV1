@@ -40,6 +40,7 @@ import muglaFethiyeYaniklarSnapshotJson from './regions/mugla-fethiye-yaniklar.j
 import muglaFethiyeGocekSnapshotJson from './regions/mugla-fethiye-gocek.json';
 import muglaFethiyeMerkezSnapshotJson from './regions/mugla-fethiye-merkez.json';
 import muglaFethiyeCalisSnapshotJson from './regions/mugla-fethiye-calis.json';
+import muglaFethiyeOludenizSnapshotJson from './regions/mugla-fethiye-oludeniz.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -85,6 +86,7 @@ const MUGLA_FETHIYE_YANIKLAR_SNAPSHOT = muglaFethiyeYaniklarSnapshotJson as V3Ve
 const MUGLA_FETHIYE_GOCEK_SNAPSHOT = muglaFethiyeGocekSnapshotJson as V3VerifiedRegionSnapshot;
 const MUGLA_FETHIYE_MERKEZ_SNAPSHOT = muglaFethiyeMerkezSnapshotJson as V3VerifiedRegionSnapshot;
 const MUGLA_FETHIYE_CALIS_SNAPSHOT = muglaFethiyeCalisSnapshotJson as V3VerifiedRegionSnapshot;
+const MUGLA_FETHIYE_OLUDENIZ_SNAPSHOT = muglaFethiyeOludenizSnapshotJson as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -129,6 +131,7 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MUGLA_FETHIYE_GOCEK_SNAPSHOT,
   MUGLA_FETHIYE_MERKEZ_SNAPSHOT,
   MUGLA_FETHIYE_CALIS_SNAPSHOT,
+  MUGLA_FETHIYE_OLUDENIZ_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -406,6 +409,16 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'calis-fethiye-mugla': MUGLA_FETHIYE_CALIS_SNAPSHOT,
   'foca-calis': MUGLA_FETHIYE_CALIS_SNAPSHOT,
   'baris-manco-calis': MUGLA_FETHIYE_CALIS_SNAPSHOT,
+  oludeniz: MUGLA_FETHIYE_OLUDENIZ_SNAPSHOT,
+  'mugla-fethiye-oludeniz': MUGLA_FETHIYE_OLUDENIZ_SNAPSHOT,
+  'oludeniz-fethiye-mugla': MUGLA_FETHIYE_OLUDENIZ_SNAPSHOT,
+  'oludeniz-fethiye': MUGLA_FETHIYE_OLUDENIZ_SNAPSHOT,
+  'fethiye-oludeniz': MUGLA_FETHIYE_OLUDENIZ_SNAPSHOT,
+  belcekiz: MUGLA_FETHIYE_OLUDENIZ_SNAPSHOT,
+  'belcekiz-plaji': MUGLA_FETHIYE_OLUDENIZ_SNAPSHOT,
+  kumburnu: MUGLA_FETHIYE_OLUDENIZ_SNAPSHOT,
+  'mavi-lagun-oludeniz': MUGLA_FETHIYE_OLUDENIZ_SNAPSHOT,
+  kidrak: MUGLA_FETHIYE_OLUDENIZ_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {

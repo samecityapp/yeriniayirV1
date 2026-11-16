@@ -308,6 +308,7 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'ohannes',
   'cajun corner',
   'bolulu hasan usta',
+  'pellini',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([

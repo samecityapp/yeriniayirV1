@@ -160,6 +160,12 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     headline: 'Çalış, Fethiye, Muğla',
     vibe: 'Çalış Plajı 1054. Sokak kordonundan Barış Manço Bulvarı ve Yerguzlar Caddesi’ne uzanan odun fırını İtalyan mutfağı, sahil kahvecileri, gün batımı meyhaneleri ve taze deniz ürünleri',
   },
+  'oludeniz-fethiye-mugla': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Ölüdeniz, Fethiye, Muğla',
+    vibe: 'Belcekız sahili, Denizpark & Çarşı Caddesi, Kumburnu Lagünü ve Kıdrak hattında zeytin ağaçlı gün batımı terasları, nitelikli kahve, plaj kahvaltıları ve kıyı deniz ürünleri',
+  },
   'kosuyolu-acibadem': {
     image: '/images/gastronomy/gastronomy.svg',
     badge: 'Doğrulanmış Seçki',
@@ -462,7 +468,7 @@ export function GastronomyPageClient({
                       Konum Seç
                     </div>
                     <div className="text-xs text-slate-500 font-medium truncate mt-0.5">
-                      Taksim & İstiklal · Asmalımescit & Pera · Yeniköy · Göktürk · Balat · Çukurcuma · Etiler · Ortaköy · Akaretler · Bebek · Galata · Beşiktaş Çarşı · Karaköy · Cihangir · Nişantaşı · Üsküdar · Kuzguncuk · Çengelköy · Koşuyolu & Acıbadem · Kadıköy · Moda · Caddebostan · Suadiye · Bostancı · Kaleiçi · Konyaaltı Sahil · Lara · Kaş Merkez · Kalkan Merkez · Alanya Merkez · Side · Kemer (Antalya) · Gaziantep · Kuşadası · Akyaka · Fethiye Merkez · Çalış · Yanıklar · Göcek (Fethiye)
+                      Taksim & İstiklal · Asmalımescit & Pera · Yeniköy · Göktürk · Balat · Çukurcuma · Etiler · Ortaköy · Akaretler · Bebek · Galata · Beşiktaş Çarşı · Karaköy · Cihangir · Nişantaşı · Üsküdar · Kuzguncuk · Çengelköy · Koşuyolu & Acıbadem · Kadıköy · Moda · Caddebostan · Suadiye · Bostancı · Kaleiçi · Konyaaltı Sahil · Lara · Kaş Merkez · Kalkan Merkez · Alanya Merkez · Side · Kemer (Antalya) · Gaziantep · Kuşadası · Akyaka · Fethiye Merkez · Çalış · Ölüdeniz · Yanıklar · Göcek (Fethiye)
                     </div>
                   </div>
                 </div>
