@@ -352,6 +352,13 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'royal firin',
   'royal fırın',
   'royal pastanesi',
+  'karya firin',
+  'karya fırın',
+  'maharet manti',
+  'maharet mantı',
+  'oses cig kofte',
+  'oses çiğ köfte',
+  'oses cigkofte',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([
