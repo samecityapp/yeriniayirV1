@@ -346,6 +346,12 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'bodrum dondurmacısı',
   'ekleristan',
   'endlesspizza',
+  'costa coffee',
+  'bursa kebap evi',
+  'chinese inn',
+  'royal firin',
+  'royal fırın',
+  'royal pastanesi',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([

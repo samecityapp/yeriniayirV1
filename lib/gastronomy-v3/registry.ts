@@ -47,6 +47,8 @@ import muglaBodrumGumuslukSnapshotJson from './regions/mugla-bodrum-gumusluk.jso
 import muglaBodrumTurkbukuSnapshotJson from './regions/mugla-bodrum-turkbuku.json';
 import muglaBodrumBitezSnapshotJson from './regions/mugla-bodrum-bitez.json';
 import muglaBodrumTurgutreisSnapshotJson from './regions/mugla-bodrum-turgutreis.json';
+import muglaBodrumOrtakentYahsiSnapshotJson from './regions/mugla-bodrum-ortakent-yahsi.json';
+import muglaBodrumGundoganSnapshotJson from './regions/mugla-bodrum-gundogan.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -99,6 +101,8 @@ const MUGLA_BODRUM_GUMUSLUK_SNAPSHOT = muglaBodrumGumuslukSnapshotJson as V3Veri
 const MUGLA_BODRUM_TURKBUKU_SNAPSHOT = muglaBodrumTurkbukuSnapshotJson as V3VerifiedRegionSnapshot;
 const MUGLA_BODRUM_BITEZ_SNAPSHOT = muglaBodrumBitezSnapshotJson as V3VerifiedRegionSnapshot;
 const MUGLA_BODRUM_TURGUTREIS_SNAPSHOT = muglaBodrumTurgutreisSnapshotJson as V3VerifiedRegionSnapshot;
+const MUGLA_BODRUM_ORTAKENT_YAHSI_SNAPSHOT = muglaBodrumOrtakentYahsiSnapshotJson as V3VerifiedRegionSnapshot;
+const MUGLA_BODRUM_GUNDOGAN_SNAPSHOT = muglaBodrumGundoganSnapshotJson as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -150,6 +154,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MUGLA_BODRUM_TURKBUKU_SNAPSHOT,
   MUGLA_BODRUM_BITEZ_SNAPSHOT,
   MUGLA_BODRUM_TURGUTREIS_SNAPSHOT,
+  MUGLA_BODRUM_ORTAKENT_YAHSI_SNAPSHOT,
+  MUGLA_BODRUM_GUNDOGAN_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -490,6 +496,27 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'd-marin-turgutreis': MUGLA_BODRUM_TURGUTREIS_SNAPSHOT,
   'turgutreis-marina': MUGLA_BODRUM_TURGUTREIS_SNAPSHOT,
   'karabag-turgutreis': MUGLA_BODRUM_TURGUTREIS_SNAPSHOT,
+  'ortakent-yahsi': MUGLA_BODRUM_ORTAKENT_YAHSI_SNAPSHOT,
+  'mugla-bodrum-ortakent-yahsi': MUGLA_BODRUM_ORTAKENT_YAHSI_SNAPSHOT,
+  'ortakent-yahsi-bodrum-mugla': MUGLA_BODRUM_ORTAKENT_YAHSI_SNAPSHOT,
+  'ortakent-yahsi-bodrum': MUGLA_BODRUM_ORTAKENT_YAHSI_SNAPSHOT,
+  'bodrum-ortakent-yahsi': MUGLA_BODRUM_ORTAKENT_YAHSI_SNAPSHOT,
+  ortakent: MUGLA_BODRUM_ORTAKENT_YAHSI_SNAPSHOT,
+  yahsi: MUGLA_BODRUM_ORTAKENT_YAHSI_SNAPSHOT,
+  muskebi: MUGLA_BODRUM_ORTAKENT_YAHSI_SNAPSHOT,
+  musgebi: MUGLA_BODRUM_ORTAKENT_YAHSI_SNAPSHOT,
+  'yahsi-yalisi': MUGLA_BODRUM_ORTAKENT_YAHSI_SNAPSHOT,
+  'kargi-koyu': MUGLA_BODRUM_ORTAKENT_YAHSI_SNAPSHOT,
+  'camel-beach': MUGLA_BODRUM_ORTAKENT_YAHSI_SNAPSHOT,
+  gundogan: MUGLA_BODRUM_GUNDOGAN_SNAPSHOT,
+  'mugla-bodrum-gundogan': MUGLA_BODRUM_GUNDOGAN_SNAPSHOT,
+  'gundogan-bodrum-mugla': MUGLA_BODRUM_GUNDOGAN_SNAPSHOT,
+  'gundogan-bodrum': MUGLA_BODRUM_GUNDOGAN_SNAPSHOT,
+  'bodrum-gundogan': MUGLA_BODRUM_GUNDOGAN_SNAPSHOT,
+  farilya: MUGLA_BODRUM_GUNDOGAN_SNAPSHOT,
+  kucukbuk: MUGLA_BODRUM_GUNDOGAN_SNAPSHOT,
+  'kucukbuk-koyu': MUGLA_BODRUM_GUNDOGAN_SNAPSHOT,
+  'gundogan-sahil': MUGLA_BODRUM_GUNDOGAN_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {

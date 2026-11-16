@@ -1,0 +1,1821 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "mugla-bodrum-ortakent-yahsi",
+  "displayName": "Ortakent & Yahşi, Bodrum, Muğla",
+  "verifiedAt": "2026-11-16T19:27:24.983Z",
+  "selectedCount": 19,
+  "rejectedControls": [
+    {
+      "id": "ctrl-oy-midtown-avm",
+      "resolvedName": "Midtown Alışveriş Merkezi",
+      "reason": "invalid_place_type:shopping_mall"
+    },
+    {
+      "id": "ctrl-oy-kefi-beach-hotel",
+      "resolvedName": "Kefi Beach Bodrum",
+      "reason": "invalid_place_type:hotel"
+    },
+    {
+      "id": "ctrl-oy-marin-beach-otel",
+      "resolvedName": "Marin Beach & Otel",
+      "reason": "invalid_place_type:hotel"
+    },
+    {
+      "id": "ctrl-oy-yahsi-yalisi",
+      "resolvedName": "Yahşi Yalısı",
+      "reason": "invalid_place_type:tourist_attraction"
+    },
+    {
+      "id": "ctrl-oy-big-chefs",
+      "resolvedName": "Big Chefs - Bodrum Yahşi Şubesi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-oy-starbucks",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-oy-caffe-nero",
+      "resolvedName": "Caffè Nero",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-oy-kahve-dunyasi",
+      "resolvedName": "Kahve Dünyası Algötür-Bodrum Midtown",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-oy-costa-coffee",
+      "resolvedName": "COSTA COFFEE",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-oy-bursa-kebap-evi",
+      "resolvedName": "Bursa Kebap Evi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-oy-chinese-inn",
+      "resolvedName": "Chinese Inn Restaurant Midtown",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-oy-suzgec",
+      "resolvedName": "Süzgeç",
+      "reason": "below_quality_threshold:★4.2(214)"
+    },
+    {
+      "id": "ctrl-oy-tuzz",
+      "resolvedName": "TUZZ RESTAURANT",
+      "reason": "below_quality_threshold:★4.3(75)"
+    },
+    {
+      "id": "ctrl-oy-sirin-bahce",
+      "resolvedName": "Şirin Bahçe Bodrum",
+      "reason": "below_quality_threshold:★4.3(249)"
+    },
+    {
+      "id": "ctrl-oy-kosem-balik",
+      "resolvedName": "Köşem Balık Restaurant",
+      "reason": "below_quality_threshold:★4.1(762)"
+    },
+    {
+      "id": "ctrl-oy-la-bohemme",
+      "resolvedName": "La Bohemme Beach & Restaurant",
+      "reason": "below_quality_threshold:★4(422)"
+    },
+    {
+      "id": "ctrl-oy-ortakent-lokantasi",
+      "resolvedName": "Ortakent Lokantası Ev Yemekleri",
+      "reason": "below_quality_threshold:★4.2(44)"
+    },
+    {
+      "id": "ctrl-oy-hortma-beach",
+      "resolvedName": "Hortma Beach&Restaurant",
+      "reason": "below_quality_threshold:★4.2(414)"
+    },
+    {
+      "id": "ctrl-oy-yuzgec",
+      "resolvedName": "Yüzgeç",
+      "reason": "below_quality_threshold:★4.1(551)"
+    },
+    {
+      "id": "ctrl-oy-ayana-balik",
+      "resolvedName": "Ayana Balık Restaurant",
+      "reason": "below_quality_threshold:★3.9(669)"
+    },
+    {
+      "id": "ctrl-oy-yahsi-bati-rest",
+      "resolvedName": "YAHŞİ BATI RESTAURANT",
+      "reason": "below_quality_threshold:★5(1)"
+    },
+    {
+      "id": "ctrl-oy-mernas-bahce",
+      "resolvedName": "Mernas Bahçe",
+      "reason": "suspected_rating_inflation_no_community_proof"
+    },
+    {
+      "id": "ctrl-oy-crudo-konacik-outside",
+      "resolvedName": "Crudo Bodrum",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Ortakent/Yahşi/Yahsi/Müskebi/Muskebi/Müsgebi/Musgebi/Kargı/Kargi, adres: Konacık, Gazi Ahmet Özal sokak No:2 A İç kapı 10, 48480 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-oy-geremeli-islamhaneleri-outside",
+      "resolvedName": "Geremeli Cafe & Restaurant Köy Kahvaltısı",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Ortakent/Yahşi/Yahsi/Müskebi/Muskebi/Müsgebi/Musgebi/Kargı/Kargi, adres: İslamhaneleri, cumhuriyet caddesi No:138, 48960 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-oy-irme-dagbelen-outside",
+      "resolvedName": "İrme Köy Kahvaltı Evi",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Ortakent/Yahşi/Yahsi/Müskebi/Muskebi/Müsgebi/Musgebi/Kargı/Kargi, adres: Dağbelen Mahallesi Bodrum Cad 6774 Sokak No: 3, Dağbelen, 2 Yalıkavak Yolu Üzeri, 48420 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-oy-mid-burger-bitez-outside",
+      "resolvedName": "Mid Burger Bitez",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Ortakent/Yahşi/Yahsi/Müskebi/Muskebi/Müsgebi/Musgebi/Kargı/Kargi, adres: Bitez, Cumhuriyet Cd. No: 70/b, 48470 Bodrum/Muğla)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "iz-bodrum-ortakent",
+      "categoryId": "pizza",
+      "resolvedName": "İZ Bodrum",
+      "branchName": "Müskebi, Badrum Cad No:93 D:3, 48400 Bodrum/Muğla",
+      "placeId": "ChIJVaWzaLtzvhQRWJ-fLXPF7fE",
+      "coordinates": {
+        "lat": 37.0636173,
+        "lng": 27.3371671
+      },
+      "rating": 4.5,
+      "userRatingCount": 249,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.izbodrum.com/",
+      "mapsUri": "https://maps.google.com/?cid=17432806831098404696",
+      "recommendedPrimary": [
+        "Pizza Margherita",
+        "El Yapımı Taze Makarna",
+        "Gnocchi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bruschetta & Arancini (Antipasti)",
+          "note": "Ana pizza ve makarna siparişleri öncesinde paylaşımlık başlangıç olarak tercih edilen geleneksel İtalyan tabaklarıdır.",
+          "proof": "izbodrum.com dijital menüsü ve Wanderlog kayıtları"
+        },
+        {
+          "name": "Tiramisu & Panna Cotta",
+          "note": "Akşam yemeği kapanışında şarap eşliği sonrasında sunulan İtalyan tatlı klasikleridir.",
+          "proof": "izbodrum.com menü listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaçlar altında mum ışıklı bahçe masaları, kapalı salon, çocuk oyun alanı ve kendine ait otopark",
+        "crowdAndNoise": "Marina kalabalığından uzak, akşam yemeğinde çiftler ve çocuklu ailelerle sakin İtalyan sofrası temposu",
+        "disadvantage": "Sahil hattından kuzeyde iç kesimde yer aldığından deniz manzarası sunmaz; yoğun sezon akşamlarında servis akışı yavaşlayabilir ve fiyat seviyesi üst-orta segmenttedir",
+        "transit": "Müskebi (Ortakent) Badrum / Kapuz Caddesi No:93/3 üzerinde özel otopark imkanıyla"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "İZ Bodrum Resmi Web Sitesi & Dijital Menü",
+          "url": "https://www.izbodrum.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Napoliten pizza, Pizza Margherita, gnocchi, taze makarna, bruschetta, arancini, tiramisu ve Kapuz Cd. No:93/3 doğrulaması"
+        },
+        {
+          "title": "Mesprestiges — İZ Bodrum Mekan İncelemesi",
+          "url": "https://www.mesprestiges.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Marina hattından uzak ağaçlar altında mum ışıklı bahçe atmosferi ve İtalyan mutfak detayı"
+        },
+        {
+          "title": "Bodrum Flow — İZ Bodrum Pizza & Makarna Akşamları",
+          "url": "https://www.bodrumflow.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Seçili akşamlarda iki kişilik pizza/makarna ve şarap eşleşmeleri bilgisi"
+        },
+        {
+          "title": "Wanderlog & Yandex Harita — İZ Bodrum",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çocuk oyun alanı, otopark kolaylığı ve dönemsel servis hızı geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=17432806831098404696",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Müskebi Badrum Cad No:93 D:3 konum ve italian_restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "Yahşi sahil gürültüsünden uzakta ağaçlar içinde sakin İtalyan bahçe atmosferi sunması",
+        "Odun ateşi Napoli pizzaları yanında el yapımı taze makarna, gnocchi ve antipasti çeşitliliği"
+      ],
+      "cons": [
+        "Üst-orta fiyat segmentinde yer alır ve yoğun yaz akşamlarında servis akışı uzayabilir",
+        "Deniz kıyısında değil Ortakent kuzey sırtında kaldığından araçla ulaşım gerektirir"
+      ],
+      "uncertainties": [
+        "Sezon dışında haftalık açık günler ve özel pizza-makarna akşamı takvimi güncellenebiliyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mid-burger-yahsi",
+      "categoryId": "hamburger",
+      "resolvedName": "Mid Burger Yahşi",
+      "branchName": "garajı içi, Yahşi, Hortma Cd., 48420 Bodrum/Muğla",
+      "placeId": "ChIJ9eu_--RzvhQRPKjrIWdkaOY",
+      "coordinates": {
+        "lat": 37.0202721,
+        "lng": 27.3405857
+      },
+      "rating": 4.9,
+      "userRatingCount": 680,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://instagram.com/midburgerbodrum",
+      "mapsUri": "https://maps.google.com/?cid=16602630420414834748",
+      "recommendedPrimary": [
+        "Truffle Burger",
+        "Mushroom Burger",
+        "Mexico Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Crispy Chicken Tenders & Özel Soslar",
+          "note": "Dana burger dışındaki menüde çıtır tavuk parçaları ve imza dip sosları tercih edilir.",
+          "proof": "Yemeksepeti ve Yandex menü kayıtları"
+        },
+        {
+          "name": "Soğan Halkası & Kabuklu Hollanda Patatesi",
+          "note": "Burger menülerinin yanında paylaşımlık sıcak çıtır eşlikçi olarak sunulur.",
+          "proof": "Yemeksepeti sipariş listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Yahşi Garajı içi Hortma Caddesi cephesinde pratik oturma masaları ve hızlı paket servis tezgahı",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde bölge sakinleri, genç gruplar ve paket siparişiyle hareketli",
+        "disadvantage": "Sahil manzaralı uzun oturum mekanı değildir; bazı misafir geri bildirimlerinde patates kızartması kıvamının burger köftesinin gerisinde kalabildiği ve yaz yoğunluğunda bekleme süresinin uzayabildiği belirtilmiştir",
+        "transit": "Yahşi Mahallesi Hortma Caddesi üzerindeki Yahşi Garajı içinde yürüyüş ve araç ulaşımına uygun"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Restaurant Guru — Mid Burger Yahşi",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "El yapımı brioche ekmekli burger çeşitleri, güler yüzlü servis ve yüksek memnuniyet değerlendirmeleri"
+        },
+        {
+          "title": "Yemeksepeti — Mid Burger Yahşi",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Truffle, Mushroom, Mexico Burger ve Crispy Chicken Tenders menü kayıtları"
+        },
+        {
+          "title": "Yandex Harita — Mid Burger Yahşi",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hortma Cd. konumu, sıcak paket servis övgüleri ve patates kızartması geri bildirimleri"
+        },
+        {
+          "title": "Mid Burger Bodrum Resmi Instagram",
+          "url": "https://instagram.com/midburgerbodrum",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Yahşi ana şube ve güncel ürün paylaşımları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=16602630420414834748",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yahşi Hortma Cd. konum ve hamburger_restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "Taze brioche ekmek ve el yapımı köfte dengesini koruyan yerel Bodrum çıkışlı ana mutfak",
+        "Sıcak ve hızlı paket servis ile truffle, mushroom, mexico gibi net burger çeşitliliği"
+      ],
+      "cons": [
+        "Yan ürün olarak gelen patates kızartması dönemsel olarak burger kalitesinin gerisinde kalabiliyor",
+        "Garaj içi cadde noktasında olduğundan deniz kenarı ambiyansı sunmaz"
+      ],
+      "uncertainties": [
+        "Yaz pik saatlerinde hem masa hem kurye yoğunluğu hazırlık süresini uzatabiliyor"
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bob-burger-ortakent",
+      "categoryId": "hamburger",
+      "resolvedName": "Bob Burger",
+      "branchName": "Müskebi, Kemer Sk. No:16, 48420 Bodrum/Muğla",
+      "placeId": "ChIJo2eIjUdzvhQR-etvE1AxPag",
+      "coordinates": {
+        "lat": 37.0494349,
+        "lng": 27.346678299999997
+      },
+      "rating": 4.4,
+      "userRatingCount": 36,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12122899991944489977",
+      "recommendedPrimary": [
+        "Bobby Cheeseburger",
+        "Süper Bob Burger",
+        "Klasik Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tavuklu & Vejetaryen Burger Seçenekleri",
+          "note": "Klasik dana köfte dışında etsiz beslenenler ve tavuk burger tercih edenler için alternatif sunar.",
+          "proof": "Yandex Harita ve Yemeksepeti menüsü"
+        },
+        {
+          "name": "Soğan Halkası & Trüflü Dip Soslar",
+          "note": "Siparişlerin yanında taze ve sıcak sunulan yan ürün ve sos eşleşmeleridir.",
+          "proof": "Yemeksepeti menü içerikleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kemer Sokak üzerinde kompakt iç ve sokak önü masalarıyla paket servis odaklı düzen",
+        "crowdAndNoise": "Akşam saatlerinde Ortakent sakinleri ve online sipariş trafiğiyle düzenli akış",
+        "disadvantage": "İç kesim sokakta yer aldığından deniz manzarası sunmaz; yaz sezonu pik saatlerinde online paket sipariş yoğunluğu bekleme süresini uzatabiliyor",
+        "transit": "Müskebi (Ortakent) Kemer Sokak No:16 üzerinde Ortakent Köy İçi merkez yürüyüş aksında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Yemeksepeti — Bob Burger Ortakent",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bobby Cheeseburger, Süper Bob Burger, taze ekmek ve hızlı sıcak paket teslimat değerlendirmeleri"
+        },
+        {
+          "title": "Yandex Harita — Bob Burger Kemer Sk.",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kemer Sk. No:16 konumu, trüflü mayonez, karamelize soğan ve vejetaryen burger notları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=12122899991944489977",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Müskebi Kemer Sk. No:16 konum ve hamburger_restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "Ortakent Köy İçi merkezinde tek şubeli bağımsız yerel burger mutfağı olması",
+        "Taze yumuşak ekmekler yanında vejetaryen ve tavuklu burger alternatifleri de sunması"
+      ],
+      "cons": [
+        "Sahil kesiminden uzakta ve dar oturma kapasiteli küçük bir sokak dükkanı yapısındadır",
+        "Yoğun yaz akşamlarında kurye trafiği teslimat süresini etkileyebiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışındaki akşam çalışma saatleri yerel talebe göre esneyebiliyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "nis-coffee-bakery-yahsi",
+      "categoryId": "kahve",
+      "resolvedName": "Nis Coffee & Bakery",
+      "branchName": "Müskebi, Emiroğlu Sok No:18, 48420 Bodrum/Muğla",
+      "placeId": "ChIJs0Cl1ndzvhQRbsv3MAUNl3c",
+      "coordinates": {
+        "lat": 37.0208844,
+        "lng": 27.346055
+      },
+      "rating": 4.9,
+      "userRatingCount": 53,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8617370727944276846",
+      "recommendedPrimary": [
+        "Flat White",
+        "Filtre Kahve",
+        "Iced Matcha Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kore Tostu (Peynirli / Tavuklu / Etli)",
+          "note": "Kaşık patates eşliğinde sunulan sıcak ve doyurucu tuzlu atıştırmalık olarak kahve yanında sıkça tercih edilir.",
+          "proof": "niscoffeebakery.com ve GetClevi menü kayıtları"
+        },
+        {
+          "name": "Taze Kruvasan & Ekşi Mayalı Sandviçler",
+          "note": "Sabah kahvesi ve öğle arası molalarında taze fırın tezgahından sunulan eşlikçilerdir.",
+          "proof": "niscoffeebakery.com ve Yemeksepeti kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Emiroğlu Sokak üzerinde küçük, özenli butik kafe oturma alanı",
+        "crowdAndNoise": "Sabah saatlerinden öğleden sonraya sakin kahve ve hafif atıştırmalık arayanlarla huzurlu tempo",
+        "disadvantage": "Küçük oturma kapasitesi nedeniyle yoğun saatlerde masa bulmak zorlaşabilir; ara sokakta özel otoparkı bulunmadığından yaz sezonunda park alanı sınırlıdır ve fiyatlar butik üst-orta düzeydedir",
+        "transit": "Yahşi sahil yoluna paralel Emiroğlu Sokak No:18 üzerinde Yalı Caddesi yürüyüş mesafesinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Nis Coffee & Bakery Resmi Web Sitesi",
+          "url": "https://niscoffeebakery.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Specialty coffee, Kore tostları, ekşi mayalı kahvaltı tabağı ve Emiroğlu Sk. No:18 doğrulaması"
+        },
+        {
+          "title": "GetClevi — Nis Coffee & Bakery Menü Rehberi",
+          "url": "https://getclevi.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahve, matcha, Kore tostu ve fırın ürünleri menü ile fiyat segmenti kayıtları"
+        },
+        {
+          "title": "Yemeksepeti — Nis Coffee & Bakery",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Iced matcha, kahve ve günlük taze fırın ürünleri aktif menü listesi"
+        },
+        {
+          "title": "Yandex Harita — Nis Coffee & Bakery",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Müskebi Emiroğlu Sokak No:18 konum ve specialty coffee değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=8617370727944276846",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Müskebi Emiroğlu Sok No:18 konum ve coffee_shop doğrulaması"
+        }
+      ],
+      "pros": [
+        "Yahşi sahil bandındaki kalabalık zincir kafelere alternatif sakin nitelikli kahve ve matcha sunması",
+        "Kahve yanında klasik poğaça yerine Kore tostu ve ekşi mayalı taze fırın seçenekleri hazırlaması"
+      ],
+      "cons": [
+        "Oturma alanı küçük olduğundan kalabalık gruplar için elverişli değildir",
+        "Ara sokak konumu yaz döneminde araç parkını zorlaştırıyor"
+      ],
+      "uncertainties": [
+        "Sezon dışında mutfak ve fırın ürün çeşitliliği günlük talebe göre daralabiliyor"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mini-coffee-shop-ortakent",
+      "categoryId": "kahve",
+      "resolvedName": "Mini Coffee Shop",
+      "branchName": "Müskebi, Düzalan Cd. No:8, 48420 Bodrum/Muğla",
+      "placeId": "ChIJsRZbjd25yhQRggq3ooAY4kM",
+      "coordinates": {
+        "lat": 37.0499077,
+        "lng": 27.3485768
+      },
+      "rating": 4.8,
+      "userRatingCount": 87,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4891499086042565250",
+      "recommendedPrimary": [
+        "Filtre Kahve",
+        "Cold Brew",
+        "Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Kurabiye & Mini Kek Çeşitleri",
+          "note": "Kahve siparişlerinin yanında taze eşlikçi olarak tercih edilen ev yapımı tatlı atıştırmalıklardır.",
+          "proof": "Yandex Harita ve yerel kahve rehberi notları"
+        },
+        {
+          "name": "Türk Kahvesi & Bitki Çayları",
+          "note": "Espresso bazlı içecekler dışında klasik kahve ve sıcak demleme alternatifi sunar.",
+          "proof": "Bodrum Mekan Rehberi kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Düzalan Caddesi cephesinde birkaç masalı kompakt dükkan ve ayaküstü al-götür tezgahı",
+        "crowdAndNoise": "Gün içinde Ortakent sakinleri ve çevreden gelen hızlı kahve molası misafirleriyle sakin",
+        "disadvantage": "İsminin hakkını veren küçük bir dükkan olduğundan uzun süreli çalışma masaları veya geniş grup oturumu sunmaz; sahil hattından içeride kalır",
+        "transit": "Ortakent Düzalan Caddesi No:8 üzerinde Cumhuriyet Caddesi merkezine yürüyüş mesafesinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Bodrum Mekan Rehberi — Mini Coffee Shop",
+          "url": "https://www.bodrummekanrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Müskebi Düzalan Cd. No:8 adresi ve nitelikli filtre kahve odaklı yerel inceleme"
+        },
+        {
+          "title": "Bodrum Guru — Mini Coffee Shop Ortakent",
+          "url": "https://www.bodrumguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ortakent köy içi sakin kahve durağı ve butik mahalle atmosferi kaydı"
+        },
+        {
+          "title": "Yandex Harita — Mini Coffee Shop",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Cold brew, latte, kurabiye ve ilgili işletmeci yaklaşımı geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=4891499086042565250",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Müskebi Düzalan Cd. No:8 konum ve cafe doğrulaması"
+        }
+      ],
+      "pros": [
+        "Midtown çevresindeki ticari AVM zincirlerine alternatif samimi mahalle kahvecisi olması",
+        "Güler yüzlü servis, dengeli filtre kahve ve yaz aylarına uygun cold brew seçenekleri"
+      ],
+      "cons": [
+        "Oturma kapasitesi çok sınırlı olduğundan kalabalık gruplar ve uzun çalışma seansları için uygun değil",
+        "Ortakent iç caddede kaldığından deniz manzarası bulunmaz"
+      ],
+      "uncertainties": [
+        "Sezon dışı dönemlerde kapanış saatleri erken saatlere çekilebiliyor"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yaghane-ortakent",
+      "categoryId": "date",
+      "resolvedName": "Yaghane Cafe&Bistro",
+      "branchName": "Müskebi, Mustantik Sk. No:2, 48400 Bodrum/Muğla",
+      "placeId": "ChIJw2m-Y6lzvhQRhYkz7tOQV7c",
+      "coordinates": {
+        "lat": 37.048121,
+        "lng": 27.347151999999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 175,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.yaghanebodrum.com/",
+      "mapsUri": "https://maps.google.com/?cid=13211187271823493509",
+      "recommendedPrimary": [
+        "Ege Şarapları & Yerel Peynir Tabağı",
+        "Yağhane Tost",
+        "Avokadolu Kruvasan"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Erken Hasat Memecik Zeytinyağı Tadımı & Atıştırmalık Bagetler",
+          "note": "Milas ve Bodrum yöresi soğuk sıkım zeytinyağları eşliğinde sunulan ekşi mayalı sandviç ve börek seçenekleridir.",
+          "proof": "Mesprestiges incelemesi ve yaghanebodrum.com"
+        },
+        {
+          "name": "Kabaklı Cevizli Gül Böreği & Ev Tatlıları",
+          "note": "Gündüz kahve molalarında ve akşamüstü şarap öncesi hafif eşlikçi olarak tercih edilir.",
+          "proof": "Mesprestiges ve Yandex Harita kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi taş duvarlar ve dev zeytin ağaçları gölgesinde sakin köy malikanesi ruhunda avlu masaları ile iç sergi alanı",
+        "crowdAndNoise": "Gün batımından akşama sakinlik, kültür ve şarap eşleşmesi arayan çiftler ve seçkin misafirlerle huzurlu tempo",
+        "disadvantage": "Büyük ölçekli sıcak ana yemek restoranından ziyade şarap evi, kafe ve hafif bistro menüsüyle çalışır; Ortakent iç sokakta otopark planlaması gerekebilir",
+        "transit": "Ortakent Köy İçi Mustantik Sokak No:2 üzerinde merkezi köy yürüyüş aksında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Mesprestiges — Yağhane Bodrum İncelemesi",
+          "url": "https://www.mesprestiges.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "150 yıllık zeytinyağı fabrikası dönüşümü, Ege şarapları, Yağhane Tost, kabaklı gül böreği ve avlu atmosferi detayı"
+        },
+        {
+          "title": "Sözcü & Yerels — Tarihi Yağhane Restorasyonu",
+          "url": "https://www.sozcu.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1800lü yıllardan kalma taş değirmenli yapının korunması, sergiler ve soğuk sıkım zeytinyağı kültürü haberi"
+        },
+        {
+          "title": "Yağhane Bodrum Resmi Web Sitesi",
+          "url": "https://www.yaghanebodrum.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Milas Memecik zeytinyağları, sergi alanı ve bistro işletme doğrulaması"
+        },
+        {
+          "title": "Yandex Harita — Yaghane Cafe&Bistro",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mustantik Sk. No:2 konumu, sessiz avlu huzuru ve kahve-tatlı geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=13211187271823493509",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Müskebi Mustantik Sk. No:2 konum ve bistro/art_gallery doğrulaması"
+        }
+      ],
+      "pros": [
+        "Bodrum yarımadasındaki en özgün tarihi taş yağhane atmosferi ve sakin zeytinlik avlusu",
+        "Şarap eşlikçileri, yerel peynirler ve soğuk sıkım zeytinyağı tadımını kültür-sanatla buluşturması"
+      ],
+      "cons": [
+        "Kapsamlı akşam ana yemeği (et/balık) yerine kafe-bistro ve şarap eşlikçileri üzerine kuruludur",
+        "Köy içi dar sokakta bulunduğundan araç parkı için yakında yer aramak gerekebilir"
+      ],
+      "uncertainties": [
+        "Sergi takvimi ve akşam kapanış saatleri yaz-kış sezonuna göre değişiklik gösterebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "eyba-restoran-yahsi",
+      "categoryId": "date",
+      "resolvedName": "Eyba Restoran",
+      "branchName": "Müskebi, Oyder Cd. No:16, 48960 Bodrum/Muğla",
+      "placeId": "ChIJ8--58JByvhQRS2HEJeAM_Jg",
+      "coordinates": {
+        "lat": 37.0255556,
+        "lng": 27.3477778
+      },
+      "rating": 4.4,
+      "userRatingCount": 408,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11023700144741966155",
+      "recommendedPrimary": [
+        "Mangal Et & Pirzola Çeşitleri",
+        "Ege Otları & Kuru Cacık",
+        "Ciğer Tava & Atom"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Balzamik Sirkeli Sebze & Köz Biber Mezeleri",
+          "note": "Et mangal masalarının başlangıcında meyhane dolabından paylaşılan klasik soğuk tabaklardır.",
+          "proof": "Meyhanedeyiz.biz mekan profili"
+        },
+        {
+          "name": "Izgara Köfte",
+          "note": "Pirzola dışında kendin pişir mangal tezgahında tercih edilen klasik et seçeneğidir.",
+          "proof": "Yandex Harita misafir değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mandalina ve limon ağaçları altında masalara mangal kurulabilen geniş açık bahçe düzeni",
+        "crowdAndNoise": "Akşam saatlerinde nostaljik müzik eşliğinde uzun rakı-meze-et sofrası kuran çiftler ve gruplar",
+        "disadvantage": "Üst bütçe segmentinde konumlanır; yüksek yaz sezonunda servis hızı aksayabilir, masada mangal düzeni nedeniyle duman hassasiyeti olanlar için uygun olmayabilir ve rezervasyon gerekir",
+        "transit": "Yahşi-Ortakent Oyder Caddesi No:16 üzerinde sahile yürüyüş mesafesinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Meyhanedeyiz.biz — Eyba Restoran Ortakent",
+          "url": "https://www.meyhanedeyiz.biz/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Oyder Cd. No:16 konumu, Ege otları, kuru cacık, balzamik sebze, patlıcan salatası ve rezervasyon bilgisi"
+        },
+        {
+          "title": "Meyhankoli & MyGuideBodrum — Eyba Restoran",
+          "url": "https://www.meyhankoli.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mandalina ağaçları altında bahçe atmosferi, atom, ciğer tava ve üst segment fiyat değerlendirmesi"
+        },
+        {
+          "title": "Wanderlog & Yandex Harita — Eyba Restoran",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Masada mangal konsepti, Zeki Müren şarkıları ve yoğun sezonda servis temposu notları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=11023700144741966155",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Müskebi Oyder Cd. No:16 konum ve barbecue_restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "Mandalina ve limon ağaçları gölgesinde sahil gürültüsünden uzak nostaljik Bodrum bahçesi atmosferi",
+        "Zengin Ege meze açılışının ardından masada kendi etini pişirebilme sosyalliği"
+      ],
+      "cons": [
+        "Üst fiyat segmentinde yer alır ve kalabalık yaz akşamlarında servis akışı yavaşlayabiliyor",
+        "Masada mangal düzeni kıyafetlerde is kokusu bırakabilir"
+      ],
+      "uncertainties": [
+        "Kış döneminde açık gün sayısı hava durumuna ve sezon talebine göre değişebiliyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yarbasan-restaurant-yahsi",
+      "categoryId": "kahvalti",
+      "resolvedName": "Yarbasan Restaurant",
+      "branchName": "Yahşi, Kuslan Sk. No:29, 48420 Bodrum/Muğla",
+      "placeId": "ChIJx30nnO1yvhQRg52SZnGphPo",
+      "coordinates": {
+        "lat": 37.0304077,
+        "lng": 27.3355952
+      },
+      "rating": 4.5,
+      "userRatingCount": 195,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18051739510925073795",
+      "recommendedPrimary": [
+        "Serpme Köy Kahvaltısı",
+        "El Açması Otlu & Paçanga Böreği",
+        "Kavurmalı Taş Fırın Pide"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli Pide & Ev Yapımı Acı Sos",
+          "note": "Kahvaltı masasının sonunda fırından sıcak çıkan tatlı pide ve özel baharatlı kahvaltı sosu öne çıkar.",
+          "proof": "Meyhankoli incelemesi ve mesprestiges.com"
+        },
+        {
+          "name": "Ev Yemekleri & Taze Günlük Mezeler",
+          "note": "Öğle sonrası saatlerde kahvaltı dışında yöresel Ege ev yemekleri de mutfaktan çıkar.",
+          "proof": "Eatbu ve Wanderlog kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaçlar altında geniş, rustik ahşap masalı doğa bahçesi ve kapalı kış alanı",
+        "crowdAndNoise": "Özellikle hafta sonları ve pazar sabahları uzun kahvaltı sofraları kuran aileler ve gruplarla çok yoğun",
+        "disadvantage": "Hafta sonları ve yaz sezonunda birkaç gün önceden rezervasyon yapılmadan masa bulmak neredeyse imkansızdır; öğleden sonra erken kapanabildiği için gitmeden saat teyidi gerekir",
+        "transit": "Yahşi Mahallesi Kuşlan Sokak No:29 üzerinde Hortma Caddesi iç sırt hattında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Mesprestiges — Yarbasan Restaurant Bodrum",
+          "url": "https://www.mesprestiges.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kuşlan Sk. No:29 adresi, tarladan sofraya felsefe, ev yapımı reçeller ve hafta sonu rezervasyon zorunluluğu"
+        },
+        {
+          "title": "Meyhankoli & Kahvaltılık.com — Yarbasan",
+          "url": "https://www.meyhankoli.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Arka fırından çıkan sıcak pide-lavaş-pişi, otlu börek, kavurmalı pide ve tahinli pide detayları"
+        },
+        {
+          "title": "Wanderlog — Yarbasan Restaurant",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Rustik ağaçlık bahçe atmosferi, ürün doğallığı ve aile işletmesi ilgisi değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=18051739510925073795",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yahşi Kuslan Sk. No:29 konum ve turkish_restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "Dondurulmuş ürün yerine kendi bahçe ve fırınından çıkan taze peynir, reçel, pişi ve sıcak pideler",
+        "Yahşi sahil gürültüsünden uzakta geniş ve gölgelikli doğal bahçe ortamı"
+      ],
+      "cons": [
+        "Hafta sonları özellikle pazar sabahları rezervasyonsuz yer bulmak çok zordur",
+        "Akşam yemeği yerine gündüz ve kahvaltı odaklı erken kapanan bir işletme düzenine sahiptir"
+      ],
+      "uncertainties": [
+        "Sezon dışında hafta içi açılış ve kapanış saatleri dönemsel olarak daralabiliyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fikriye-sultan-ortakent",
+      "categoryId": "kahvalti",
+      "resolvedName": "Fikriye Sultan Kahvaltı Bahçesi",
+      "branchName": "Müskebi, 2729 Sokak No:3, 48400 Bodrum/Muğla",
+      "placeId": "ChIJ3ZWB2jBzvhQRvGXb9hE5KI4",
+      "coordinates": {
+        "lat": 37.0600439,
+        "lng": 27.3387261
+      },
+      "rating": 5,
+      "userRatingCount": 35,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.fikriyesultan.com/",
+      "mapsUri": "https://maps.google.com/?cid=10243500101772993980",
+      "recommendedPrimary": [
+        "Serpme Köy Kahvaltısı",
+        "Bakır Tavada Menemen",
+        "Çıtır Pişi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Semaverde Çay & Ev Yapımı Zeytin Reçel Çeşitleri",
+          "note": "Bahçedeki uzun kahvaltılarda masalara gelen semaver servisi ve ev yapımı doğal reçeller deneyimi tamamlar.",
+          "proof": "fikriyesultan.com ve bodrumfinder.com kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Zeytin ağaçları altında ferah açık bahçe masaları (evcil hayvan kabul edilir)",
+        "crowdAndNoise": "Sabah saatlerinden öğleden sonraya doğa içinde sessiz ve uzun kahvaltı arayan çiftler ve aileler",
+        "disadvantage": "Sabah ve öğleden erken saatlere odaklı çalıştığından günün ikinci yarısında kapanır; Ortakent üst sokakta kaldığı için araç gerektirir ve küçük bahçe kapasitesi nedeniyle önceden telefonla yer sormak faydalıdır",
+        "transit": "Müskebi (Ortakent) 2729. Sokak No:3 üzerinde Ortakent iç kesiminde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Fikriye Sultan Kahvaltı Bahçesi Resmi Web Sitesi",
+          "url": "http://www.fikriyesultan.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Bakır tavada menemen, çıtır pişi, ev zeytinleri, semaverde çay ve 2729. Sk. No:3 doğrulaması"
+        },
+        {
+          "title": "Bodrum Finder & NerdeYiyelim — Fikriye Sultan",
+          "url": "https://www.bodrumfinder.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Zeytin ağaçları altında ev yapımı serpme kahvaltı, menemen ve yöresel peynir tabağı rehber kaydı"
+        },
+        {
+          "title": "Yandex Harita & YouTube Mekan İncelemeleri",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Evcil hayvan dostu bahçe ortamı, sessiz doğa konumu ve misafir değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=10243500101772993980",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Müskebi 2729 Sokak No:3 konum ve breakfast_restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "Şehir gürültüsünden tamamen uzak gerçek zeytin bahçesi içinde huzurlu serpme kahvaltı sunması",
+        "Evcil hayvan dostu açık alan yapısı ve masaya semaverle çay servisi"
+      ],
+      "cons": [
+        "Öğleden sonra erken saatlerde kapandığı için geç öğünlere uygun değildir",
+        "Ana yolların dışında ara sokakta bulunduğundan araçsız ulaşım zordur"
+      ],
+      "uncertainties": [
+        "Sezon dışında yağışlı günlerde kapalı alan kapasitesi sınırlı kalabiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "firinci-oyder-yahsi",
+      "categoryId": "kahvalti",
+      "resolvedName": "FIRINCI",
+      "branchName": "Müskebi, Oyder Cd., 48400 Bodrum/Muğla",
+      "placeId": "ChIJ1X2hKGZzvhQRVfPoXIL08ig",
+      "coordinates": {
+        "lat": 37.0248376,
+        "lng": 27.344868500000004
+      },
+      "rating": 4.6,
+      "userRatingCount": 242,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2950689546622792533",
+      "recommendedPrimary": [
+        "Taze Kruvasan Çeşitleri",
+        "Ekşi Mayalı Ekmekler",
+        "Bodrum Simidi & Poğaça"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Pastane & Tart Ürünleri",
+          "note": "Sabah fırın çeşitleri dışında öğleden sonra tatlı molaları için günlük hazırlanan dilim pasta ve tartlar bulunur.",
+          "proof": "Yandex Harita ve bodrumguru.com kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Oyder Caddesi üzerinde pratik oturma düzeni ve yoğun al-götür fırın tezgahı",
+        "crowdAndNoise": "Sabah erken saatlerden itibaren taze ekmek ve hamur işi alan mahalle sakinleriyle hareketli",
+        "disadvantage": "Serpme bahçe kahvaltısı mekanı değil, ağırlıklı olarak fırın ve pastane tezgahı formatında hizmet verir; oturma kapasitesi sınırlıdır",
+        "transit": "Yahşi (Müskebi) Oyder Caddesi No:30 üzerinde Tansel Market ve Oyder Kavşağı yakınında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Bodrum Guru — Fırıncı Ortakent Rehberi",
+          "url": "https://www.bodrumguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taze ekmekler, ekşi maya alternatifleri, simit, poğaça ve kruvasan çeşitleri değerlendirmesi"
+        },
+        {
+          "title": "Yandex Harita — Fırıncı Patisserie Oyder Cd.",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Oyder Cd. No:30 (Tansel Market civarı) konumu ve unlu mamul kalite notları"
+        },
+        {
+          "title": "Winniey — Fırıncı Patisserie Bodrum",
+          "url": "https://winniey.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ortakent-Yahşi Oyder Caddesi pastane ve fırın doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=2950689546622792533",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Müskebi Oyder Cd. konum ve pastry_shop doğrulaması"
+        }
+      ],
+      "pros": [
+        "Oyder hattında günlük sıcak simit, poğaça, kruvasan ve ekşi maya ekmek bulmayı kolaylaştırması",
+        "Uzun serpme kahvaltı yerine hızlı ve taze sabah fırın ürünü arayanlar için pratik olması"
+      ],
+      "cons": [
+        "Bahçeli uzun oturumlu kahvaltı sofrası değil fırın-pastane tezgahı konseptindedir",
+        "Popüler çeşitler sabah geç saatlere kalmadan tükenebiliyor"
+      ],
+      "uncertainties": [
+        "Gün içi pasta ve ekmek çeşitliliği fırından çıkış saatlerine göre değişebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cezayir-usta-ortakent",
+      "categoryId": "denemelisin",
+      "resolvedName": "Cezayir Usta Bodrum Döner Salonu",
+      "branchName": "no:8/6 Muğla TR, Müskebi, 2721 CAD no8/6, 48400 Bodrum/Muğla",
+      "placeId": "ChIJJ8qkjxpzvhQRpVYcnUDR1YE",
+      "coordinates": {
+        "lat": 37.0489908,
+        "lng": 27.347032199999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 519,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.cezayirusta.com/",
+      "mapsUri": "https://maps.google.com/?cid=9355613876376065701",
+      "recommendedPrimary": [
+        "Odun Ateşinde Yatık Et Döner (Tabak)",
+        "Lavaş Dürüm Et Döner",
+        "Tombik Ekmek Et Döner"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günün Çorbası & Ayran Eşliği",
+          "note": "Odaklı döner menüsünü tamamlayan sıcak çorba başlangıcı ve geleneksel içecek seçeneğidir.",
+          "proof": "cezayirusta.com menü listesi"
+        },
+        {
+          "name": "Süzme Yoğurtlu ve Pişmiş Domatesli Tabak Sunumu",
+          "note": "Dönerin yanında verilen roka, salatalık ve cin biber turşusuyla hafifliğini koruyan servis biçimidir.",
+          "proof": "Yandex Harita ve Yemeksepeti kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "MY İnko Çarşısı içinde sade, düzenli salon masaları ve hızlı servis tezgahı",
+        "crowdAndNoise": "Öğle saatlerinden şiş bitimine dek bölge esnafı, tatilciler ve paket siparişiyle yoğun",
+        "disadvantage": "Günlük hazırlanan yatık döner şişi tükendiğinde servis sona erdiğinden akşam geç saatlerde et kalmama ihtimali vardır; sahil manzarası bulunmaz",
+        "transit": "Müskebi (Ortakent) 2721. Cadde No:8/6 üzerinde Ortakent PTT karşısı MY İnko Çarşısı içinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Cezayir Usta Resmi Web Sitesi",
+          "url": "https://www.cezayirusta.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "1970den beri odun ateşinde yatık et döner geleneği, gramaj seçenekleri ve Ortakent adres doğrulaması"
+        },
+        {
+          "title": "Restaurant Guru — Cezayir Usta Bodrum Döner Salonu",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hafif yağ dengesi, kalite istikrarı ve servis hızı değerlendirmeleri"
+        },
+        {
+          "title": "Yemeksepeti & Yandex Harita — Cezayir Usta Ortakent",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Süzme yoğurt, sumaklı soğan, pişmiş domatesli tabak servisi ve sıcak paket teslimat notları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=9355613876376065701",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Müskebi 2721 Cad. No:8/6 konum ve turkish_restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "Dikey döner yerine odun ateşinde yatık pişirimle ağır yağ hissi bırakmayan gerçek yaprak et döner",
+        "Süzme yoğurt, sumaklı soğan, köz domates ve turşu eşlikçileriyle eksiksiz esnaf servisi"
+      ],
+      "cons": [
+        "Günlük şiş tükendiğinde kapanabildiği için geç akşam ziyaretlerinde stok riski taşır",
+        "Çarşı içi sade yemek salonu düzeninde olduğundan manzaralı uzun oturuma hitap etmez"
+      ],
+      "uncertainties": [
+        "Sezon dışında şişin tükenme saati günlük yoğunluğa göre öne çekilebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ramonun-yeri-yahsi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Ramo'nun Yeri Bodrum",
+      "branchName": "Yahşi, Hortma Cd. 83 C, 48400 Bodrum/Muğla",
+      "placeId": "ChIJgcpWhYpzvhQR4g7Byd2lM_w",
+      "coordinates": {
+        "lat": 37.020126,
+        "lng": 27.340643900000003
+      },
+      "rating": 5,
+      "userRatingCount": 175,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18173051293361311458",
+      "recommendedPrimary": [
+        "Et Çökertme",
+        "Dana Külbastı",
+        "Yaprak Ciğer"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kelle Paça Çorbası & Gece Izgaraları",
+          "note": "Yahşi bölgesinde gece geç saatlere dek sıcak çorba ve ızgara köfte arayanların uğrak seçeneğidir.",
+          "proof": "ramonunyeribodrum.com menü listesi"
+        },
+        {
+          "name": "El Açması Gözleme & Bazlama Tost",
+          "note": "Sabah ve gündüz öğünlerinde kahvaltı ve pratik atıştırmalık olarak tercih edilir.",
+          "proof": "ramonunyeribodrum.com ve Yandex kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Hortma Caddesi üzerinde sade ve samimi aile lokantası masaları",
+        "crowdAndNoise": "Sabah kahvaltıcılarından akşam ızgara gruplarına ve gece çorbası müdavimlerine uzanan geniş akış",
+        "disadvantage": "Turistik deniz manzaralı restoran yerine yol üstü samimi lokanta düzenindedir; yaz sezonunda et yemekleri fiyatlaması Bodrum ortalamasına paralel yüksek bulunabiliyor",
+        "transit": "Yahşi Mahallesi Hortma Caddesi No:83/C üzerinde Yahşi Garajı cephesinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Ramo'nun Yeri Bodrum Resmi Web Sitesi",
+          "url": "https://ramonunyeribodrum.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Şef Ramazan Çığlı mutfağı, et çökertme, dana külbastı, yaprak ciğer, kelle paça ve gözleme menüsü"
+        },
+        {
+          "title": "Restaurant Guru — Ramo'nun Yeri Bodrum",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Güler yüzlü aile işletmesi yaklaşımı, köfte-ciğer kalitesi ve yüksek misafir memnuniyeti"
+        },
+        {
+          "title": "Yandex Harita — Ramo'nun Yeri Bodrum",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Gece geç saatlere uzanan açık çalışma düzeni, kelle paça ve gözleme geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=18173051293361311458",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yahşi Hortma Cd. 83/C konum ve turkish_restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "Sabah gözlemeden akşam et çökertme ve gece kelle paça çorbasına kadar çok geniş saatlerde açık kalması",
+        "Aile işletmesi sıcaklığında hem ev yemeği hem kömür ızgara seçeneklerini bir arada sunması"
+      ],
+      "cons": [
+        "Sahil kenarında değil cadde/garaj aksında bulunduğundan deniz manzarası sunmaz",
+        "Kırmızı et ana yemekleri yüksek sezonda tatil bölgesi fiyat bandındadır"
+      ],
+      "uncertainties": [
+        "Sezon dışında gece geç saat servisinin kapanış zamanı dönemsel değişebiliyor"
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gussiye-et-mangal-ortakent",
+      "categoryId": "denemelisin",
+      "resolvedName": "Güssiye Restaurant Et Mangal",
+      "branchName": "Müskebi Mh, Müskebi Cd. No:56, 48400 Bodrum/Muğla",
+      "placeId": "ChIJ-wsdfB1zvhQRCUI_sHyzL78",
+      "coordinates": {
+        "lat": 37.0415255,
+        "lng": 27.3482576
+      },
+      "rating": 4.8,
+      "userRatingCount": 135,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13776427133263888905",
+      "recommendedPrimary": [
+        "Kuzu Pirzola & Kuzu Şiş",
+        "Izgara Köfte & Ciğer",
+        "Enginar Kalbi & Çıtır Mantı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Mezeler (Enginar Kalbi & Çıtır Mantı)",
+          "note": "Mangal etleri öncesinde masada paylaşılan soğuk ve çıtır ara sıcak seçkisidir.",
+          "proof": "Wanderlog ve Yandex Harita değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mandalina ağaçları altında sakin bahçe masaları, kışın şömineli iç salon ve özel otopark alanı",
+        "crowdAndNoise": "Yüksek sesli müzikten kaçıp sakin et mangal akşamı geçirmek isteyen aileler ve yerel müdavimler",
+        "disadvantage": "Genellikle akşamüstü saatlerinden itibaren açıldığı için öğle servisi vermez; sahilden içeride cadde konumunda yer alır",
+        "transit": "Müskebi (Ortakent) Müskebi Caddesi No:56 üzerinde Ortakent Pazar Yeri yakınında özel otoparkıyla"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Wanderlog — Güssiye Restaurant Et Mangal",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mandalina bahçesi, kış şöminesi, otopark, enginar kalbi, çıtır mantı ve dengeli fiyat-performans incelemesi"
+        },
+        {
+          "title": "Yandex Harita — Güssiye Restaurant Et Mangal",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Müskebi Cd. No:56 konumu, et pişirme kıvamı, taze mezeler ve sakin aile işletmesi geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=13776427133263888905",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Müskebi Cd. No:56 konum ve restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "Bodrum lüks sahil mekanlarına kıyasla daha ulaşılabilir fiyatlarla et mangal ve taze meze sunması",
+        "Yazın mandalina bahçesi, kışın şömineli salon ve kendi otoparkıyla dört mevsim konforlu olması"
+      ],
+      "cons": [
+        "Akşamüstü sonrası açıldığı için gündüz öğle yemeğine uygun değildir",
+        "Denize uzak iç cadde hattında bulunduğundan manzara beklentisiyle gidilmemelidir"
+      ],
+      "uncertainties": [
+        "Sezon dışı dönemlerde haftalık çalışma günleri ve şömine salonu düzeni değişebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "donerci-alizade-ortakent",
+      "categoryId": "denemelisin",
+      "resolvedName": "Dönerci Alizade",
+      "branchName": "Müskebi, Kemer Sk. No:6, 48420 Bodrum/Muğla",
+      "placeId": "ChIJzVREdwBzvhQR4XpCvdaUkzo",
+      "coordinates": {
+        "lat": 37.0488328,
+        "lng": 27.347025
+      },
+      "rating": 4.6,
+      "userRatingCount": 80,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4220880925795449569",
+      "recommendedPrimary": [
+        "Erzurum Cağ Kebabı",
+        "Pilav Üstü Yaprak Et Döner",
+        "Lavaş Dürüm Et Döner"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yaprak Sarma & Piyaz",
+          "note": "Cağ kebabı ve döner porsiyonlarının yanında tercih edilen geleneksel ev yapımı yan lezzetlerdir.",
+          "proof": "donercializade.com.tr menü ve mobil sipariş listesi"
+        },
+        {
+          "name": "Ev Yapımı Ayran & Taze Fırın Ekmeği",
+          "note": "Her sabah kendi mutfağında çıkan taze ekmek ve köpüklü ayran eşliği sunar.",
+          "proof": "donercializade.com.tr kurumsal kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş duvarlı ve yeşil tenteli sade aile lokantası masaları ve açık mutfak tezgahı",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde Erzurum cağ kebabı arayan bölge sakinleri ve paket siparişleriyle canlı",
+        "disadvantage": "Günü kurtarmayan taze tüketim ilkesiyle çalıştığından etler tükendiğinde servis bitebilir; sahil yerine köy içi esnaf sokağındadır",
+        "transit": "Müskebi (Ortakent) Kemer Sokak No:6 üzerinde Ortakent merkez çarşı yürüyüş aksında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Dönerci Alizade Resmi Web Sitesi",
+          "url": "https://donercializade.com.tr/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "1973 geleneği, odun ateşinde Erzurum cağ kebabı, günlük yaprak döner ve taze ekmek doğrulaması"
+        },
+        {
+          "title": "Bodrum Guru — Dönerci Alizade Ortakent",
+          "url": "https://www.bodrumguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ortakent cephesinde geleneksel cağ kebabı ve yaprak döner esnaf durağı önerisi"
+        },
+        {
+          "title": "Apple App Store — Dönerci Alizade Menü",
+          "url": "https://apps.apple.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Dana-kuzu cağ kebabı, yaprak sarma, piyaz ve ev yapımı ayran menü listesi"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=4220880925795449569",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Müskebi Kemer Sk. No:6 konum ve turkish_restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "Bodrum yarımadasında ender bulunan gerçek odun ateşli Erzurum cağ kebabı adresi olması",
+        "Ertesi güne et bırakmayan şeffaf mutfak anlayışı ve sabah pişen taze ekmekler"
+      ],
+      "cons": [
+        "Akşam geç saatlerde günlük et stoğu tükenebiliyor",
+        "Sade esnaf lokantası ortamında olduğundan uzun akşam buluşmalarına yönelik değildir"
+      ],
+      "uncertainties": [
+        "Sezon dışındaki akşam servis bitiş saati günlük tüketim hızına bağlıdır"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "musgebi-cafe-yahsi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Bodrum Belediyesi Müsgebi Cafe",
+      "branchName": "Müskebi, Yalı Cd. No:2, 48420 Bodrum/Muğla",
+      "placeId": "ChIJxTCYupdyvhQRCmZe9arr5Qc",
+      "coordinates": {
+        "lat": 37.0202046,
+        "lng": 27.347684200000003
+      },
+      "rating": 4.4,
+      "userRatingCount": 1474,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=569120047425807882",
+      "recommendedPrimary": [
+        "Kahvaltı Tabağı",
+        "Kaşarlı & Karışık Tost",
+        "Çay & Türk Kahvesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Hamburger & Patates Kızartması",
+          "note": "Deniz sonrası öğle saatlerinde plaj misafirlerinin hızlı atıştırmalık olarak tercih ettiği sıcak menü kalemidir.",
+          "proof": "Yandex Harita ve bodrumbelediyeas.com.tr kayıtları"
+        },
+        {
+          "name": "Simit, Poğaça & Plaj İskelesi Kahvesi",
+          "note": "Sabah yürüyüşü veya deniz keyfi arasında ekonomik fiyatlı kıyı molası sağlar.",
+          "proof": "Kent TV ve Yandex değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Denize sıfır açık teras, ahşap iskele ve şezlonglu belediye plajı alanı (self-servis düzen)",
+        "crowdAndNoise": "Sabah yürüyüşçülerinden gün boyu denize giren ailelere yüksek sezonda oldukça kalabalık",
+        "disadvantage": "Self-servis çalıştığı için yoğun yaz günlerinde ve hafta sonlarında kasa sırası, masa bulma zorluğu ve temizlik/servis hızında aksamalar yaşanabiliyor",
+        "transit": "Yahşi sahil bandı Yalı Caddesi No:2 üzerinde sahil yürüyüş yolunda"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Bodrum Belediye A.Ş. — Müsgebi Cafe Resmi Sayfası",
+          "url": "https://bodrumbelediyeas.com.tr/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Belediye sosyal tesisi işletmesi, denize sıfır iskele ve Yalı Cd. No:2 doğrulaması"
+        },
+        {
+          "title": "Kent TV — Bodrum Belediyesi Müsgebi Cafe Haberi",
+          "url": "https://www.kenttv.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sahil şeridinde plaj-iskele imkanı ve sosyal tesis hizmeti haberi"
+        },
+        {
+          "title": "Yandex Harita — Bodrum Belediyesi Müsgebi Cafe",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bütçe dostu belediye fiyatları, deniz manzarası övgüsü ve self-servis yoğunluk eleştirileri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=569120047425807882",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Müskebi Yalı Cd. No:2 konum ve cafe doğrulaması"
+        }
+      ],
+      "pros": [
+        "Yahşi sahilindeki yüksek beach fiyatlarına karşı denize sıfır iskelede en ekonomik alternatif olması",
+        "Sabah kahvaltısından plaj sonrası tost ve kahveye gün boyu pratik erişim"
+      ],
+      "cons": [
+        "Yaz sezonunda çok kalabalık olduğundan şezlong ve masa bulmak erken saat gerektirir",
+        "Self-servis tezgahında pik saatlerde sıra ve masa temizliğinde gecikmeler olabiliyor"
+      ],
+      "uncertainties": [
+        "Plaj iskele ve şezlong sezon açılış-kapanış tarihleri hava şartlarına göre değişebiliyor"
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "emektar-gurme-ortakent",
+      "categoryId": "denemelisin",
+      "resolvedName": "Emektar Gurme Ortakent",
+      "branchName": "Müskebi, 2721 Caddesi B No: 8B İç Kapı No: 7, 48400 Bodrum/Muğla",
+      "placeId": "ChIJsyfjP39zvhQR8TPVHelEczk",
+      "coordinates": {
+        "lat": 37.048897,
+        "lng": 27.3469558
+      },
+      "rating": 4.4,
+      "userRatingCount": 62,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.emektargurme.com/",
+      "mapsUri": "https://maps.google.com/?cid=4139728250502198257",
+      "recommendedPrimary": [
+        "Taş Fırın Pide & Lahmacun",
+        "Adana Dürüm",
+        "Kelle Paça & Mercimek Çorbası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İşkembe & Ezogelin Çorbası",
+          "note": "Kebap ve lahmacun öncesi sıcak başlangıç ya da geç akşam öğünü olarak tercih edilir.",
+          "proof": "ortakentrestaurant.com ve menucum.com menü listesi"
+        },
+        {
+          "name": "Bulgur, Salata & Pide Garnitür İkramları",
+          "note": "Ana yemek ve paket siparişlerin yanında eksiksiz gönderilen doyurucu eşlikçilerdir.",
+          "proof": "Yemeksepeti müşteri geri bildirimleri"
+        }
+      ],
+      "suitability": {
+        "seating": "2721. Cadde üzerinde geniş cadde salonu ve yoğun paket servis operasyonu",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde Ortakent çalışanları, aileler ve online yemek siparişleriyle hareketli",
+        "disadvantage": "Turistik sahil manzarası yerine şehir içi esnaf restoranı düzenindedir; yoğun sipariş saatlerinde kurye teslimatında gecikme yaşanabiliyor",
+        "transit": "Müskebi (Ortakent) 2721. Cadde No:8/B üzerinde Ortakent merkez aksında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Emektar Gurme Resmi Sitesi (ortakentrestaurant.com)",
+          "url": "https://ortakentrestaurant.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Ortakent ve Yalıkavak iki şubeli yapı, taş fırın pide, lahmacun, çorba çeşitleri ve tedarik ilkeleri"
+        },
+        {
+          "title": "Yemeksepeti — Emektar Gurme Ortakent",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Adana dürüm, lahmacun, bol garnitür ikramı ve sipariş notu özeni hakkında 500+ değerlendirme"
+        },
+        {
+          "title": "Yandex Harita — Emektar Gurme 2721. Cd.",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Müskebi 2721. Cd. konum, çorba ve kebap çeşitliliği geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=4139728250502198257",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Müskebi 2721 Cd. No:8B konum ve restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "Taş fırın pide, lahmacun, kebap ve sıcak çorbayı aynı çatıda istikrarlı porsiyonlarla sunması",
+        "Salata, bulgur ve sıcak pide garnitürlerinin hem salonda hem paket serviste bol tutulması"
+      ],
+      "cons": [
+        "Ticari çarşı cadde noktasında olduğundan manzaralı tatil ambiyansı sunmaz",
+        "Yemek saatleri piklerinde paket servis kurye süresi uzayabiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışında geç gece çorba servisinin kapanış saati değişebiliyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "balikcinin-yeri-kargi-yahsi",
+      "categoryId": "balik",
+      "resolvedName": "Balıkçının Yeri Balık Restaurant",
+      "branchName": "Yahşi, 48420 Bodrum/Muğla",
+      "placeId": "ChIJFSTXyjINvhQRnzTLEavKbbs",
+      "coordinates": {
+        "lat": 37.003478,
+        "lng": 27.3281538
+      },
+      "rating": 4.6,
+      "userRatingCount": 439,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13505673693640733855",
+      "recommendedPrimary": [
+        "Günlük Av Tezgah Balığı",
+        "Ahtapotlu Pilav",
+        "Lakerda & Kalamar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yarım Porsiyon Ev Yapımı Meze Seçkisi",
+          "note": "İki kişilik masalarda fazla meze çeşidi deneyebilmek için mezelerin yarım porsiyon söylenebilmesi öne çıkan avantajdır.",
+          "proof": "Restaurant Guru misafir geri bildirimleri"
+        },
+        {
+          "name": "Karides & Kalamar Ara Sıcakları",
+          "note": "Ana balık öncesi sıcak paylaşımlık olarak tercih edilir.",
+          "proof": "Yandex Harita ve Yerels kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kargı Koyu yolunda mütevazı, temiz ve sakin aile meyhanesi masaları",
+        "crowdAndNoise": "Gösterişsiz ve taze balık sofrası arayan yerel müdavimler, çiftler ve sakin aile grupları",
+        "disadvantage": "Lüks marinalardaki şık dekorasyon veya denize sıfır kumsal masası konseptinde değildir; Kargı Koyu güney hattında kaldığından toplu taşıma dışında özel araçla ulaşım daha rahattır ve gramajlı balıkla hesap orta-üst segmente çıkabilir",
+        "transit": "Yahşi Mahallesi güney ucunda Kargı Koyu (Camel Beach) hattında araç ulaşımına uygun"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Restaurant Guru — Balıkçının Yeri Balık Restaurant",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ahtapotlu pilav, lakerda, sakin sahil müziği ve mezelerin yarım porsiyon sipariş edilebilmesi detayı"
+        },
+        {
+          "title": "Yerels & Restoranim.net — Balıkçının Yeri Yahşi",
+          "url": "https://www.yerels.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kargı Koyu yakınında günlük av balık tezgahı ve samimi aile işletmesi değerlendirmesi"
+        },
+        {
+          "title": "Yandex Harita — Balıkçının Yeri Balık Restaurant",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mekan temizliği, ev sahibi yaklaşımı ve taze deniz ürünleri notları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=13505673693640733855",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yahşi Kargı Koyu konum ve seafood_restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "Yarım porsiyon meze sipariş kolaylığı sayesinde az kişiyle çok çeşit tadılabilmesi",
+        "Ahtapotlu pilav ve günlük av balıklarını samimi aile işletmesi sıcaklığında sunması"
+      ],
+      "cons": [
+        "Kargı Koyu ucunda bulunduğundan merkezden yürüyüş mesafesinde değildir",
+        "Sade mütevazı dekorasyonu lüks akşam beklentisindeki misafirleri tatmin etmeyebilir"
+      ],
+      "uncertainties": [
+        "Günlük av tezgahı çeşitliliği hava şartlarına ve tekne tedarikine göre değişir"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gunes-balikcilik-ortakent",
+      "categoryId": "balik",
+      "resolvedName": "Güneş Balıkçılık Restaurant",
+      "branchName": "müskebi mahallesi, No:18, Müskebi, 48400 Bodrum/Muğla",
+      "placeId": "ChIJWQxidMVzvhQRFGs7iARxYtw",
+      "coordinates": {
+        "lat": 37.0462523,
+        "lng": 27.3475704
+      },
+      "rating": 4.7,
+      "userRatingCount": 109,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/gunesbalikcilikrestaurant/",
+      "mapsUri": "https://maps.google.com/?cid=15880379500341193492",
+      "recommendedPrimary": [
+        "Granyoz (Kaya Levreği) & Günlük Balık",
+        "Kalamar Tava & Karides",
+        "Deniz Börülcesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ege Otları & Çıtır Tatlı Kapanışı",
+          "note": "Soğuk Ege otları başlangıcı ve balık sonrasında ikram veya sipariş edilen hafif çıtır tatlı öne çıkar.",
+          "proof": "Restoranim.net ve Yandex Harita değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mandalina ağaçları altında ferah ve temiz açık bahçe masaları",
+        "crowdAndNoise": "Kıyıdaki yüksek sesli mekanlar yerine huzurlu rakı-balık sohbeti arayan aileler ve çiftler",
+        "disadvantage": "Sahil şeridinde değil Ortakent iç kesimde Müskebi Caddesi üzerinde kaldığından deniz manzarası sunmaz; online dijital menüsü olmadığından günlük balık çeşitleri ve fiyatları yerinde veya telefonla teyit edilir",
+        "transit": "Müskebi (Ortakent) Müskebi Caddesi No:18 üzerinde Ortakent Köy İçi güney çıkışında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Restoranim.net — Güneş Balıkçılık Restaurant",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Granyoz balığı, kalamar tava, karides, hijyen özeni, çıtır tatlı ve dengeli fiyat-performans incelemesi"
+        },
+        {
+          "title": "Yandex Harita — Güneş Balıkçılık Restaurant",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Müskebi Cd. No:18 konumu, mandalina ağaçları altı bahçe, deniz börülcesi ve güleryüzlü servis notları"
+        },
+        {
+          "title": "Güneş Balıkçılık Resmi Instagram",
+          "url": "https://www.instagram.com/gunesbalikcilikrestaurant/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Ortakent günlük balık tezgahı ve bahçe paylaşımları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=15880379500341193492",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Müskebi No:18 konum ve restoran doğrulaması"
+        }
+      ],
+      "pros": [
+        "Sahil bandındaki turistik balıkçılara göre daha dengeli hesapla taze granyoz ve Ege mezeleri sunması",
+        "Mandalina bahçesi içinde sessiz, temiz ve samimi aile işletmesi atmosferi"
+      ],
+      "cons": [
+        "İç kesimde yer aldığından deniz kıyısı manzarası yoktur",
+        "Sabit dijital menüsü sınırlı olup günlük tezgah balığına göre seçim yapılır"
+      ],
+      "uncertainties": [
+        "Sezon dışında haftalık açık günleri ve günlük dip balığı stoğu tedarike göre değişebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "musto-balik-yahsi",
+      "categoryId": "balik",
+      "resolvedName": "Musto Balık Restaurant & Beach",
+      "branchName": "Müskebi, Yalı Cd. 36 A, 48420 Bodrum/Muğla",
+      "placeId": "ChIJNzhKh2pzvhQRtfhEn1jN3wA",
+      "coordinates": {
+        "lat": 37.020085699999996,
+        "lng": 27.342859899999997
+      },
+      "rating": 4.4,
+      "userRatingCount": 255,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.myellaboutique.com/",
+      "mapsUri": "https://maps.google.com/?cid=62994700319389877",
+      "recommendedPrimary": [
+        "Günlük Izgara Balık Çeşitleri",
+        "Taze Ege Mezeleri",
+        "Deniz Mahsullü Ara Sıcaklar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Gün Batımı Bar Kokteylleri & Sahil Öğle Servisi",
+          "note": "Akşam balık masaları öncesinde denize sıfır plaj ve bar bölümünde gün batımı içecekleri tercih edilir.",
+          "proof": "myellaboutique.com resmi tesis bilgileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Yahşi Yalı Caddesi kıyısında denize sıfır plaj/teras masaları ve gün batımı bar bölümü",
+        "crowdAndNoise": "Gün batımında sahil kenarında balık ve içecek keyfi arayan otel misafirleri ve tatilciler",
+        "disadvantage": "Yüksek bütçe segmentinde yer alır; yoğun yaz sezonunda yüksek hesaplar karşısında bazı ara sıcaklarda porsiyon oranı ve kalabalık anlarda servis ilgisiyle ilgili şikayet geri bildirimleri bulunmuştur",
+        "transit": "Yahşi Yalı Caddesi No:36/A (Asma Sk. No:19 kıyısı) üzerinde MyElla Boutique Hotel sahilinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "MyElla Boutique Hotel — Musto Balık Resmi Sayfası",
+          "url": "https://www.myellaboutique.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Yahşi kıyısında denize sıfır balık, Akdeniz mutfağı ve gün batımı bar doğrulaması"
+        },
+        {
+          "title": "Etstur & Restoranim.net — Musto Balık Yahşi",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yalı Caddesi sahil konumu, taze deniz ürünleri ve meze konsepti kayıtları"
+        },
+        {
+          "title": "Yandex Harita & Şikayetvar — Musto Balık Değerlendirmeleri",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yahşi manzara övgülerinin yanında yüksek hesap ve ara sıcak porsiyon eleştirileri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=62994700319389877",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Müskebi Yalı Cd. 36/A konum ve seafood_restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "Yahşi Yalı Caddesi sahilinde doğrudan denize sıfır gün batımı manzarası ve plaj erişimi sunması",
+        "Hem gündüz sahil servisi hem akşam taze deniz ürünü sofraları için elverişli konum"
+      ],
+      "cons": [
+        "Üst bütçe segmentindedir; gramaj ve ara sıcak fiyatları sipariş öncesi netleştirilmelidir",
+        "Yoğun yaz sezonunda kalabalık saatlerde karşılama ve servis tutarlılığı eleştiri alabiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışında otel ve beach bölümü çalışma takvimine paralel olarak kapalı olabiliyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    }
+  ]
+}
