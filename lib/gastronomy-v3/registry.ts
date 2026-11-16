@@ -30,6 +30,8 @@ import gaziantepSnapshotJson from './regions/gaziantep-merkez.json';
 import antalyaKaleiciSnapshotJson from './regions/antalya-kaleici.json';
 import antalyaLaraSnapshotJson from './regions/antalya-lara.json';
 import antalyaKonyaaltiSnapshotJson from './regions/antalya-konyaalti.json';
+import antalyaKasMerkezSnapshotJson from './regions/antalya-kas-merkez.json';
+import antalyaKalkanMerkezSnapshotJson from './regions/antalya-kalkan-merkez.json';
 import muglaUlaAkyakaSnapshotJson from './regions/mugla-ula-akyaka.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
@@ -66,6 +68,8 @@ const GAZIANTEP_SNAPSHOT = gaziantepSnapshotJson as V3VerifiedRegionSnapshot;
 const ANTALYA_KALEICI_SNAPSHOT = antalyaKaleiciSnapshotJson as V3VerifiedRegionSnapshot;
 const ANTALYA_LARA_SNAPSHOT = antalyaLaraSnapshotJson as V3VerifiedRegionSnapshot;
 const ANTALYA_KONYAALTI_SNAPSHOT = antalyaKonyaaltiSnapshotJson as V3VerifiedRegionSnapshot;
+const ANTALYA_KAS_MERKEZ_SNAPSHOT = antalyaKasMerkezSnapshotJson as V3VerifiedRegionSnapshot;
+const ANTALYA_KALKAN_MERKEZ_SNAPSHOT = antalyaKalkanMerkezSnapshotJson as V3VerifiedRegionSnapshot;
 const AKYAKA_SNAPSHOT = muglaUlaAkyakaSnapshotJson as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
@@ -101,6 +105,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   ANTALYA_KALEICI_SNAPSHOT,
   ANTALYA_LARA_SNAPSHOT,
   ANTALYA_KONYAALTI_SNAPSHOT,
+  ANTALYA_KAS_MERKEZ_SNAPSHOT,
+  ANTALYA_KALKAN_MERKEZ_SNAPSHOT,
   AKYAKA_SNAPSHOT,
 ];
 
@@ -296,6 +302,24 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   arapsuyu: ANTALYA_KONYAALTI_SNAPSHOT,
   liman: ANTALYA_KONYAALTI_SNAPSHOT,
   'konyaalti-antalya': ANTALYA_KONYAALTI_SNAPSHOT,
+  'kas-merkez': ANTALYA_KAS_MERKEZ_SNAPSHOT,
+  kas: ANTALYA_KAS_MERKEZ_SNAPSHOT,
+  'antalya-kas': ANTALYA_KAS_MERKEZ_SNAPSHOT,
+  'antalya-kas-merkez': ANTALYA_KAS_MERKEZ_SNAPSHOT,
+  'kas-merkez-antalya': ANTALYA_KAS_MERKEZ_SNAPSHOT,
+  andifli: ANTALYA_KAS_MERKEZ_SNAPSHOT,
+  'uzun-carsi': ANTALYA_KAS_MERKEZ_SNAPSHOT,
+  'kucuk-cakil': ANTALYA_KAS_MERKEZ_SNAPSHOT,
+  'buyuk-cakil': ANTALYA_KAS_MERKEZ_SNAPSHOT,
+  'kas-marina': ANTALYA_KAS_MERKEZ_SNAPSHOT,
+  'kalkan-merkez': ANTALYA_KALKAN_MERKEZ_SNAPSHOT,
+  kalkan: ANTALYA_KALKAN_MERKEZ_SNAPSHOT,
+  'antalya-kalkan': ANTALYA_KALKAN_MERKEZ_SNAPSHOT,
+  'antalya-kalkan-merkez': ANTALYA_KALKAN_MERKEZ_SNAPSHOT,
+  'kalkan-merkez-antalya': ANTALYA_KALKAN_MERKEZ_SNAPSHOT,
+  'kalkan-kas': ANTALYA_KALKAN_MERKEZ_SNAPSHOT,
+  'kalkan-iskele': ANTALYA_KALKAN_MERKEZ_SNAPSHOT,
+  'yaliboyu-kalkan': ANTALYA_KALKAN_MERKEZ_SNAPSHOT,
   akyaka: AKYAKA_SNAPSHOT,
   'akyaka-ula-mugla': AKYAKA_SNAPSHOT,
   'mugla-ula-akyaka': AKYAKA_SNAPSHOT,

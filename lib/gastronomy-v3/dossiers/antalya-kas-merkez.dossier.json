@@ -1,0 +1,2791 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "antalya-kas-merkez",
+  "displayName": "Kaş Merkez, Antalya",
+  "verifiedAt": "2026-11-15T23:03:28.147Z",
+  "selectedCount": 35,
+  "rejectedControls": [
+    {
+      "id": "ctrl-kas-dominos-chain",
+      "resolvedName": "Domino's Pizza Antalya Kaş",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-kas-bambi-chain",
+      "resolvedName": "Bambi Cafe",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-kas-smileys-low",
+      "resolvedName": "Smiley's",
+      "reason": "below_quality_threshold:★3.8(1718)"
+    },
+    {
+      "id": "ctrl-kas-uzumkizi-low",
+      "resolvedName": "Üzüm Kızı Meyhane & Restaurant & Cocktail Kaş",
+      "reason": "below_quality_threshold:★3.4(444)"
+    },
+    {
+      "id": "ctrl-kas-2000-low",
+      "resolvedName": "2000 Restoran",
+      "reason": "below_quality_threshold:★2.9(553)"
+    },
+    {
+      "id": "ctrl-kas-elia-outside",
+      "resolvedName": "Elia Restaurant Kaş",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Andifli/Uzun Çarşı/Uzun Carsi/Küçük Çakıl/Kucuk Cakil/Küçükçakıl/Kucukcakil/Büyük Çakıl/Buyuk Cakil/Büyükçakıl/Buyukcakil/Hastane/İbrahim Serin/Ibrahim Serin/Hükümet/Hukumet/Cumhuriyet Meydanı/Doğruyol/Dogruyol/İlkokul/Ilkokul/Bucak Denizi/Süleyman Çavuş/Suleyman Cavus/Likya/Antiphellos/Kaş Merkez/Kas Merkez/15 Temmuz Demokrasi Meydanı/demokrasi meydanı/Emin Erdem/Çukurbağlılar/Cukurbaglilar, adres: Çukurbağ Yarımadası, Beyhan Cenkçi Cd. No.7, 07580 Kaş/Antalya)"
+    },
+    {
+      "id": "ctrl-kas-dogalanneeli-outside",
+      "resolvedName": "Doğal Anne Eli Kaş Kahvaltı",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Andifli/Uzun Çarşı/Uzun Carsi/Küçük Çakıl/Kucuk Cakil/Küçükçakıl/Kucukcakil/Büyük Çakıl/Buyuk Cakil/Büyükçakıl/Buyukcakil/Hastane/İbrahim Serin/Ibrahim Serin/Hükümet/Hukumet/Cumhuriyet Meydanı/Doğruyol/Dogruyol/İlkokul/Ilkokul/Bucak Denizi/Süleyman Çavuş/Suleyman Cavus/Likya/Antiphellos/Kaş Merkez/Kas Merkez/15 Temmuz Demokrasi Meydanı/demokrasi meydanı/Emin Erdem/Çukurbağlılar/Cukurbaglilar, adres: Pınarbaşı Mah. Kartın Küme Evleri No:20Kaş, Pınarbaşı, 07580 Kaş/Antalya)"
+    },
+    {
+      "id": "ctrl-kas-olivegarden-outside",
+      "resolvedName": "Olive Garden Kaş Kahvaltı",
+      "reason": "outside_strict_neighborhood:Bbox dışında (36.19154, 29.67741)"
+    },
+    {
+      "id": "ctrl-kas-krambi-noncoffee",
+      "resolvedName": "Krambi",
+      "reason": "kahve_category_not_coffee_specialist:dessert_shop"
+    },
+    {
+      "id": "ctrl-kas-nurdos-low",
+      "resolvedName": "NURDOS KAŞ",
+      "reason": "chain_or_franchise"
+    }
+  ],
+  "venues": [
+    {
+      "id": "kas-picasa",
+      "categoryId": "pizza",
+      "resolvedName": "Pi'Casa",
+      "branchName": "Andifli, Atatürk Blv. No:8C, 07580 Kaş/Antalya",
+      "placeId": "ChIJ6ejd5EfbwRQRGJw4SvRUGTA",
+      "coordinates": {
+        "lat": 36.1998436,
+        "lng": 29.6398419
+      },
+      "rating": 4.8,
+      "userRatingCount": 1254,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3465894796432284696",
+      "recommendedPrimary": [
+        "Dört Peynirli Pizza",
+        "Füme Etli Pizza",
+        "Margherita"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Tiramisu & Taze Makarna",
+          "note": "Pizza dışında taze hazırlanan makarna tabakları ve yemek sonu ev yapımı tiramisu menüde sıkça övülen tamamlayıcılar arasında.",
+          "proof": "Menu-TR ve Wanderlog Kaş İtalyan mutfağı değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt iç salon ve cadde kenarı az sayıda masa",
+        "crowdAndNoise": "Akşam yemek saatlerinde küçük kapasite nedeniyle hızlıca doluyor",
+        "disadvantage": "Mekân oldukça küçük olduğu için kalabalık saatlerde dışarıda kısa bekleme olabiliyor",
+        "transit": "Cumhuriyet Meydanı ve Atatürk Bulvarı durağından yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=3465894796432284696",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://www.menu-tr.com/en/antalya/kas/pizza-restorani/picasa",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Pizza, makarna ve tatlı menüsü"
+        },
+        {
+          "title": "Wanderlog",
+          "url": "https://wanderlog.com/place/details/9802165/picasa",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İnce hamur ve tiramisu geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Merkezi konumda hızlı ve özenli servis",
+        "Hamuru ağırlaşmayan ince pizza tabanı"
+      ],
+      "cons": [
+        "Küçük oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Yaz sezonunda kapıda bekleme süresi değişebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-lilys-corner",
+      "categoryId": "pizza",
+      "resolvedName": "Lily's Corner",
+      "branchName": "Andifli, Öztürk Sk. No:13, 07580 Kaş/Antalya",
+      "placeId": "ChIJPTkxeU_bwRQRVf03mKKcSKI",
+      "coordinates": {
+        "lat": 36.2002182,
+        "lng": 29.64128
+      },
+      "rating": 4.6,
+      "userRatingCount": 975,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.lilyscorner.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=11693768654619934037",
+      "recommendedPrimary": [
+        "Lily's Pizza",
+        "Siyah Sarımsaklı & Kavurmalı Pizza",
+        "Armut & Küflü Peynirli Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Parmesan Tekerinde Makarna",
+          "note": "İmza pizzaların yanında parmesan tekerinde karıştırılan taze makarna ve başlangıçlar özellikle akşam sofralarında tercih ediliyor.",
+          "proof": "lilyscorner.com.tr resmi menüsü ve Restoranim Kaş listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaç gölgeli, sakin arka bahçe avlusu ve açık masalar",
+        "crowdAndNoise": "Yaz akşamları çiftler ve gruplarla dengeli bir doluluğa ulaşıyor",
+        "disadvantage": "Ara sokak avlusu nedeniyle rezervasyonsuz akşam gidişlerinde masa bulmak zorlaşabiliyor",
+        "transit": "Atatürk Bulvarı üzerinden Öztürk Sokak içine yürüyerek birkaç dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=11693768654619934037",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Resmi Web Sitesi",
+          "url": "http://www.lilyscorner.com.tr/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "İmza pizza çeşitleri ve avlu bilgisi"
+        },
+        {
+          "title": "Restoranim",
+          "url": "https://restoranim.net/antalya/kas/pizzaci/lily-s-corner",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bahçe atmosferi ve makarna geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Merkez gürültüsünden uzak gölgeli bahçe",
+        "Yaratıcı peynir ve şarküteri kombinasyonları"
+      ],
+      "cons": [
+        "Sıcak yaz akşamlarında erken rezervasyon gerekebiliyor"
+      ],
+      "uncertainties": [
+        "Kış döneminde açık gün takvimi mevsime göre değişebiliyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-luwian-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "Luwian Pizza",
+      "branchName": "Andifli, Bilginler Sk. No:7/B, 07580 Kaş/Antalya",
+      "placeId": "ChIJk0QkGMHbwRQRDGlLdgWnMYM",
+      "coordinates": {
+        "lat": 36.2006986,
+        "lng": 29.639436099999994
+      },
+      "rating": 4.8,
+      "userRatingCount": 405,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/luwianpizzakas?igsh=bDhoNXBuMmVqbDgw",
+      "mapsUri": "https://maps.google.com/?cid=9453520734728710412",
+      "recommendedPrimary": [
+        "Diavola",
+        "Funghi e Tartufo",
+        "Quattro Formaggi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Fırın Sosları & Tiramisu",
+          "note": "Pizzaya eşlik eden acılı zeytinyağı-sarımsak sosları ve sınırlı sayıdaki günlük tatlı alternatifi menüyü tamamlıyor.",
+          "proof": "Luwian Pizza Kaş menüsü ve Menu-TR değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sokak cephesinde samimi dış masalar ve küçük açık mutfak önü",
+        "crowdAndNoise": "Genç gezginler ve pizza odaklı akşam müşterileriyle canlı",
+        "disadvantage": "Oturma alanı sınırlı olduğu için akşam yoğunluğunda bekleme veya paket seçeneğine yönelmek gerekebiliyor",
+        "transit": "Cumhuriyet Meydanı kuzey ara sokaklarından yürüyerek üç dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=9453520734728710412",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Resmi Instagram",
+          "url": "https://www.instagram.com/luwianpizzakas?igsh=bDhoNXBuMmVqbDgw",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "48 saat mayalanan hamur duyuruları"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://www.menu-tr.com/en/antalya/kas/pizza-restorani/luwian-pizza",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur hafifliği ve pizza çeşitleri"
+        },
+        {
+          "title": "Restoranim",
+          "url": "https://restoranim.net/antalya/kas/pizzaci/luwian-pizza",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kaş pizza puanı ve kullanıcı deneyimleri"
+        }
+      ],
+      "pros": [
+        "Uzun fermantasyon sayesinde yormayan hafif hamur",
+        "Yüksek puan istikrarı"
+      ],
+      "cons": [
+        "Masa sayısının az olması"
+      ],
+      "uncertainties": [
+        "Sezon dışı çalışma saatleri günlük değişebiliyor"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-fabio-pizzeria",
+      "categoryId": "pizza",
+      "resolvedName": "Fabio Pizzeria",
+      "branchName": "Andifli, Yeni Cami Cd. No:23, 07580 Kaş/Antalya",
+      "placeId": "ChIJix1UO9TbwRQREJqz-l9GtwI",
+      "coordinates": {
+        "lat": 36.1998283,
+        "lng": 29.636767799999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 435,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.fabiopizzeria.com/",
+      "mapsUri": "https://maps.google.com/?cid=195702486855817744",
+      "recommendedPrimary": [
+        "Pizza Margherita",
+        "Pizza Melanzana",
+        "Pizza Pesto"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Yapımı Ravioli & Tiramisu",
+          "note": "Odun fırını pizzalarının yanında günlük açılan dolgulu ravioli tabakları ve İtalyan usulü tiramisu tercih ediliyor.",
+          "proof": "fabiopizzeria.com resmi menüsü ve Restaurant Guru kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Bahçe terası ve iç salon oturumu",
+        "crowdAndNoise": "Aileler ve sakin akşam yemeği arayan konuklarla dengeli",
+        "disadvantage": "Çarşı merkezindeki sokaklara kıyasla birkaç dakika daha yokuş üstünde kalıyor",
+        "transit": "Hastane ve Yeni Cami Caddesi aksından yürüyerek beş dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=195702486855817744",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Resmi Web Sitesi",
+          "url": "https://www.fabiopizzeria.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Odun fırını ve İtalyan mutfağı detayları"
+        },
+        {
+          "title": "Restaurant Guru",
+          "url": "https://fr.restaurantguru.com/Fabio-Pizzeria-Kas-by-Hotel-Payam-Kas",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ravioli ve tiramisu geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Gerçek odun ateşli taş fırın aroması",
+        "Merkez gürültüsünden uzak ferah teras"
+      ],
+      "cons": [
+        "Ana çarşıdan hafif yokuş yukarı yürüme mesafesi"
+      ],
+      "uncertainties": [
+        "Kış sezonunda açık gün sayısı dönemsel olarak daralabiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-barlas-street-food",
+      "categoryId": "hamburger",
+      "resolvedName": "Barla's Street Food",
+      "branchName": "Çukurbağlılar, 1. Sk. No:4/C, 07580 Kaş/Antalya",
+      "placeId": "ChIJL8d570jbwRQRjr0dLTaBubc",
+      "coordinates": {
+        "lat": 36.2008758,
+        "lng": 29.640792100000002
+      },
+      "rating": 4.9,
+      "userRatingCount": 563,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/barlas.street.food/",
+      "mapsUri": "https://maps.google.com/?cid=13238754649317424526",
+      "recommendedPrimary": [
+        "Barla's Smash Burger",
+        "Chili Cheese Burger",
+        "Double Cheeseburger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Baharatlı Çıtır Patates & Ev Sosları",
+          "note": "Burger yanında sıcak servis edilen ince kesim patates ve ev yapımı özel soslar sıkça tekrar sipariş ediliyor.",
+          "proof": "Menu-TR ve Oggusto Kaş sokak lezzetleri önerisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük sokak cephesi masaları ve hızlı bar oturumu",
+        "crowdAndNoise": "Öğle sonrası ve akşam geç saatlere kadar burger tutkunlarıyla yoğun",
+        "disadvantage": "Küçük dükkan yapısı nedeniyle kalabalık akşamlarda sipariş bekleme süresi uzayabiliyor",
+        "transit": "Cumhuriyet Meydanı arka sokağından yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=13238754649317424526",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Resmi Instagram",
+          "url": "https://www.instagram.com/barlas.street.food/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Smash burger çeşitleri ve güncel paylaşımlar"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://www.menu-tr.com/en/antalya/kas/restoran/barlas-street-food",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Chili Cheese Burger ve sos geri bildirimleri"
+        },
+        {
+          "title": "Oggusto Kaş Rehberi",
+          "url": "https://www.oggusto.com/gastronomi/turkiye/kasin-en-iyi-restoranlari",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kaş merkez sokak lezzeti vurgusu"
+        }
+      ],
+      "pros": [
+        "Dengeli yağ oranlı çıtır kenarlı smash köfte",
+        "Ev yapımı sos çeşitliliği"
+      ],
+      "cons": [
+        "Sınırlı masa kapasitesi ve yoğun saatlerde kuyruk"
+      ],
+      "uncertainties": [
+        "Paket yoğunluğu akşam servis hızını etkileyebiliyor"
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-hold-and-bite",
+      "categoryId": "hamburger",
+      "resolvedName": "Hold&Bite",
+      "branchName": "Andifli, Cukurbağlılar Cd No:4/A, 07580 Kaş/Antalya",
+      "placeId": "ChIJk0aCx2_bwRQR50IaxFetf7c",
+      "coordinates": {
+        "lat": 36.200733899999996,
+        "lng": 29.6415977
+      },
+      "rating": 4.7,
+      "userRatingCount": 1664,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13222477623446880999",
+      "recommendedPrimary": [
+        "Truffle Burger",
+        "Bite Burger",
+        "Classic Cheeseburger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Chili Hot Dog & Baharatlı Patates",
+          "note": "Burger dışında özel sosisli sandviç çeşitleri ve baharat harmanlı patates sepetleri paylaşımlık olarak tercih ediliyor.",
+          "proof": "Hold&Bite Google Maps kaydı ve Kaş sokak burger değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sokak seviyesinde açık tezgah önü masalar ve hızlı oturum",
+        "crowdAndNoise": "Özellikle yaz akşamları ve gece dönüşlerinde hareketli",
+        "disadvantage": "Cadde üzeri açık düzen nedeniyle sıcak akşamlarda kalabalık ve trafik uğultusu hissedilebiliyor",
+        "transit": "Atatürk Bulvarı paralelindeki Çukurbağlılar Caddesi üzerinde merkezi konumda"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=13222477623446880999",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve yüksek değerlendirme hacmi"
+        },
+        {
+          "title": "Biz Evde Yokuz Kaş",
+          "url": "https://www.bizevdeyokuz.com/kasta-ne-yenir-kas-restoranlari/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kaş merkez hızlı lezzet bağlamı"
+        }
+      ],
+      "pros": [
+        "Taze brioche ekmek dokusu",
+        "Akşam geç saatlere dek hızlı sokak servisi"
+      ],
+      "cons": [
+        "Açık cadde önü oturumunda yüksek yaz yoğunluğu"
+      ],
+      "uncertainties": [
+        "Kalabalık yaz gecelerinde popüler burger çeşitleri erken tükenebiliyor"
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-fum-smokehouse",
+      "categoryId": "hamburger",
+      "resolvedName": "FÜM Smokehouse",
+      "branchName": "Andifli, Necipbey Cd. no:26/2, 07580 Kaş/Antalya",
+      "placeId": "ChIJC_zgCz7bwRQRe5N9spvZgxI",
+      "coordinates": {
+        "lat": 36.1993864,
+        "lng": 29.6378053
+      },
+      "rating": 4.8,
+      "userRatingCount": 752,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.fumsmokehouse.com/",
+      "mapsUri": "https://maps.google.com/?cid=1334149177369531259",
+      "recommendedPrimary": [
+        "Dana Kaburga Burger",
+        "Smash Burger XL",
+        "Tütsülenmiş Dana Brisket Sandviç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Chimichurri Soslu Brisket & Kaburga Tabağı",
+          "note": "Burger ekmeği dışında porsiyon olarak sunulan ağır tütsülenmiş brisket, kaburga tabağı ve taze chimichurri sosu öne çıkıyor.",
+          "proof": "fumsmokehouse.com resmi menüsü ve Menu-TR incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Yol kenarı gölgeli teras ve yarı açık iç mekan masaları",
+        "crowdAndNoise": "Et odaklı akşam yemeği grupları ve müdavimlerle düzenli dolu",
+        "disadvantage": "Günlük hazırlanan tütsü et stokları kalabalık günlerde akşam geç saatlerde tükenebiliyor",
+        "transit": "Hastane ve Necipbey Caddesi kavşağından yürüyerek üç dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=1334149177369531259",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Resmi Web Sitesi",
+          "url": "http://www.fumsmokehouse.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Tütsülenmiş kaburga, brisket ve burger menüsü"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://www.menu-tr.com/en/antalya/kas/restoran/fum-smokehouse",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kaburga burger ve brisket değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Gerçek meşe odunu dumanında uzun pişmiş et kalitesi",
+        "Porsiyon ve sos dengesi"
+      ],
+      "cons": [
+        "Tütsülenmiş etlerin gün sonunda bitebilmesi"
+      ],
+      "uncertainties": [
+        "Sezon dışında tütsü menü çeşitleri daralabiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-mavra-gastro-pub",
+      "categoryId": "hamburger",
+      "resolvedName": "Mavra Gastro Pub",
+      "branchName": "Andifli, Uzun Çarşı Sk No : 35, 07580 Kaş/Antalya",
+      "placeId": "ChIJ7_D7_WvbwRQRafrIyw7EYu4",
+      "coordinates": {
+        "lat": 36.199556,
+        "lng": 29.642752599999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 188,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17177507496572025449",
+      "recommendedPrimary": [
+        "Mavra Smash Burger",
+        "Trüflü Mantarlı Burger",
+        "Çıtır Tavuk Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Modern Paylaşımlı Mezeler & İmza Kokteyller",
+          "note": "Burger menüsünün yanında güncel meze tabakları ve bar kokteylleri akşam oturumlarında sıkça tercih ediliyor.",
+          "proof": "qr.mavrarestaurant.com resmi menüsü ve Menu-TR Kaş listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Uzun Çarşı sokak taşları üzerinde samimi dış masalar ve bar iç alanı",
+        "crowdAndNoise": "Akşam üstü ve gece kokteyl-yemek eşleşmesi arayan konuklarla canlı",
+        "disadvantage": "Uzun Çarşı yaya trafiğinin yoğun olduğu saatlerde sokak masaları hareketli ve gürültülü olabiliyor",
+        "transit": "Cumhuriyet Meydanı ve Likya Lahdi arasından Uzun Çarşı boyunca yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=17177507496572025449",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Resmi Dijital Menü",
+          "url": "https://qr.mavrarestaurant.com/mezeler/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Burger ve modern meze seçenekleri"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://www.menu-tr.com/en/antalya/kas/restoran/mavra-gastro-pub",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "El yapımı burger ekmeği ve pub atmosferi"
+        }
+      ],
+      "pros": [
+        "El yapımı taze ekmekle hazırlanan burgerler",
+        "Meze ve kokteyl çeşitliliği"
+      ],
+      "cons": [
+        "Akşam çarşı kalabalığında dar sokak oturumu"
+      ],
+      "uncertainties": [
+        "Müzik temposu geç saatlere doğru yükselebiliyor"
+      ],
+      "selectionScore": 96,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-godo-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "GODO COFFEE & MORE",
+      "branchName": "Andifli, Arısan Sk. No, 07580 Kaş/Antalya",
+      "placeId": "ChIJ5Sv-jgzbwRQRdqeAwYjv8B8",
+      "coordinates": {
+        "lat": 36.199466799999996,
+        "lng": 29.642903600000004
+      },
+      "rating": 4.6,
+      "userRatingCount": 1528,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.godocoffeeandmore.com/",
+      "mapsUri": "https://maps.google.com/?cid=2301602780227348342",
+      "recommendedPrimary": [
+        "V60 Filtre Kahve",
+        "Flat White",
+        "Badem Sütlü Iced Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Limonlu Tiramisu & Süt Reçelli Cheesecake",
+          "note": "Kahve yanında günlük vitrinden seçilen limonlu tiramisu, süt reçelli cheesecake ve Alman pastası büyük ilgi görüyor.",
+          "proof": "godocoffeeandmore.com resmi menüsü ve Wanderlog Kaş rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Begonvilli ara sokak tabureleri ve serin iç köşe masalar",
+        "crowdAndNoise": "Sabah kahvesi ve öğleden sonra tatlı molasında sürekli hareketli",
+        "disadvantage": "Popülerliği nedeniyle gölgeli sokak masalarında boş yer bulmak için kısa bekleme gerekebiliyor",
+        "transit": "Cumhuriyet Meydanı ve Uzun Çarşı kesişiminden Arısan Sokak içine yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=2301602780227348342",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve yüksek değerlendirme hacmi"
+        },
+        {
+          "title": "Resmi Web Sitesi",
+          "url": "http://www.godocoffeeandmore.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Single origin kahve çekirdekleri ve V60 menüsü"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://www.menu-tr.com/antalya/kas/kafe/godo-coffee-more",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahve ve tatlı vitrini detayları"
+        },
+        {
+          "title": "Wanderlog",
+          "url": "https://wanderlog.com/tr/place/details/3546802/godo-coffee--more",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Begonvil altı kahve deneyimi"
+        }
+      ],
+      "pros": [
+        "Seçkin yöresel çekirdek portföyü",
+        "Begonvil kaplı fotojenik ara sokak ortamı"
+      ],
+      "cons": [
+        "Günün sıcak saatlerinde gölgeli masaların hızlı dolması"
+      ],
+      "uncertainties": [
+        "Tatlı çeşitleri günlük üretime göre akşama doğru değişebiliyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-linckia-roastery",
+      "categoryId": "kahve",
+      "resolvedName": "Linckia Roastery Cafe",
+      "branchName": "Andifli, Necipbey Cd. 36c, 07580 Kaş/Antalya",
+      "placeId": "ChIJNfvYAvLbwRQRj9AaY4aM8iQ",
+      "coordinates": {
+        "lat": 36.199368,
+        "lng": 29.6371307
+      },
+      "rating": 4.5,
+      "userRatingCount": 1105,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2662344838545592463",
+      "recommendedPrimary": [
+        "Küp Kahve",
+        "Hand Drip Filtre",
+        "Linckia Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kavrulmuş Paket Çekirdek & Ev Kurabiyeleri",
+          "note": "Evde demlemek için taze kavrulmuş dünya çekirdekleri ve kahve yanında sade kurabiye çeşitleri sunuluyor.",
+          "proof": "Menu-TR ve Wanderlog Linckia Roastery incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Rahat iç oturum köşeleri ve cadde kenarı yüksek tabureler",
+        "crowdAndNoise": "Sabah nitelikli kahve arayan yerleşikler ve dalgıçlarla düzenli hareketli",
+        "disadvantage": "Yemek menüsü yerine salt kahve odaklı çalıştığı için kapsamlı kahvaltı beklentisine uygun değil",
+        "transit": "Antiphellos Antik Tiyatrosu yolundan Necipbey Caddesi boyunca yürüyerek üç dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=2662344838545592463",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://www.menu-tr.com/en/antalya/kas/kafe/linckia-roastery-cafe",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Küp kahve ve özel çekirdek menüsü"
+        },
+        {
+          "title": "Wanderlog",
+          "url": "https://wanderlog.com/place/details/1822714/linckia-roastery-cafe",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze kavrum ve soğuk demleme notları"
+        }
+      ],
+      "pros": [
+        "Yerinde taze kavrum ve geniş çekirdek seçkisi",
+        "Özgün imza küp kahve"
+      ],
+      "cons": [
+        "Mutfak/kahvaltı çeşitliliğinin sınırlı tutulması"
+      ],
+      "uncertainties": [
+        "Sezon dışı öğleden sonra çalışma saatleri kısalabiliyor"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-spoko-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "SPOKO COFFEE & KITCHEN",
+      "branchName": "Andifli, Menteşe Sk. No:12, 07580 Kaş/Antalya",
+      "placeId": "ChIJMd4cenPbwRQRg_CD0RbIXCE",
+      "coordinates": {
+        "lat": 36.199970199999996,
+        "lng": 29.638605000000002
+      },
+      "rating": 4.7,
+      "userRatingCount": 408,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2404016301438922883",
+      "recommendedPrimary": [
+        "Mevsimsel Filtre Kahve",
+        "Iced Flat White",
+        "Espresso Bazlı İmza İçecek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Füme Somonlu Sandviç & Ev Yapımı Cheesecake",
+          "note": "Sakin bahçede kahveye eşlik eden füme somonlu veya yumurtalı sandviçler ile günlük cheesecake dilimleri beğeniliyor.",
+          "proof": "spokocoffee.com resmi menüsü ve Yandex değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaç gölgeli huzurlu iç bahçe ve sessiz çalışma köşeleri",
+        "crowdAndNoise": "Sabah çalışan gezginler ve kalabalıktan uzaklaşmak isteyenlerle dengeli",
+        "disadvantage": "Liman ve Uzun Çarşı hattından birkaç blok içeride kaldığı için ilk kez gelenlerce ara sokakta gözden kaçabiliyor",
+        "transit": "Cumhuriyet Meydanı kuzeyinden Menteşe Sokak içine yürüyerek üç dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=2404016301438922883",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Resmi Menü",
+          "url": "https://www.spokocoffee.com/menu",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Mevsimsel kahve ve kahvaltı/sandviç menüsü"
+        }
+      ],
+      "pros": [
+        "Kaş ortasında nadir bulunan sessiz arka bahçe",
+        "İstikrarlı espresso ekstraksiyonu"
+      ],
+      "cons": [
+        "Ana yaya akslarının bir parça dışında kalması"
+      ],
+      "uncertainties": [
+        "Yoğun sabah saatlerinde prizli çalışma masaları çabuk dolabiliyor"
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-coflow-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Coflow Coffee",
+      "branchName": "Andifli, Atatürk Blv. No:20/3, 07580 Kaş/Antalya",
+      "placeId": "ChIJt-WVBQbbwRQRphIOxV3MjWk",
+      "coordinates": {
+        "lat": 36.2004291,
+        "lng": 29.639309899999997
+      },
+      "rating": 4.9,
+      "userRatingCount": 232,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7605960048808694438",
+      "recommendedPrimary": [
+        "Citrus Espresso Tonic",
+        "Bumble Coffee",
+        "Iced Matcha Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Somon Fümeli Lox Bagel & Banana Bread",
+          "note": "Soğuk kahve çeşitlerinin yanında taze bagellar (Lox Flow, Beef & Humus), kruvasan ve limonlu tart servis ediliyor.",
+          "proof": "Menu-TR ve Yemeksepeti güncel Coflow menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık iç mekan ve bulvar kenarı kaldırım masaları",
+        "crowdAndNoise": "Genç gezginler ve sabah kahvaltı-kahve eşleşmesi arayanlarla canlı",
+        "disadvantage": "Atatürk Bulvarı üzerindeki konumu nedeniyle dış masalarda araç geçiş sesi duyulabiliyor",
+        "transit": "Kaş Merkez Atatürk Bulvarı üzerinde otogar yönüne yürüyerek üç dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=7605960048808694438",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://www.menu-tr.com/antalya/kas/kafe/coflow-coffee",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Matcha ve soğuk kahve geri bildirimleri"
+        },
+        {
+          "title": "Yemeksepeti Menüsü",
+          "url": "https://www.yemeksepeti.com/restaurant/jflm/coflow",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Espresso Tonic, Bumble Coffee ve bagel çeşitleri"
+        }
+      ],
+      "pros": [
+        "Yüksek puanlı modern soğuk kahve ve matcha reçeteleri",
+        "Doyurucu bagel eşlikçileri"
+      ],
+      "cons": [
+        "Bulvar kenarı açık masalarda yol sesi"
+      ],
+      "uncertainties": [
+        "Öğleden sonra taze fırın ürünleri erken azalabiliyor"
+      ],
+      "selectionScore": 96,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-lapero",
+      "categoryId": "date",
+      "resolvedName": "L'Apéro Kaş",
+      "branchName": "Andifli, Doğruyol Cd. No:1, 07580 Kaş/Antalya",
+      "placeId": "ChIJIT3NvlbawRQR7uq7fHjywwc",
+      "coordinates": {
+        "lat": 36.1994067,
+        "lng": 29.642913699999998
+      },
+      "rating": 4.4,
+      "userRatingCount": 1425,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://laperokas.com/",
+      "mapsUri": "https://maps.google.com/?cid=559557378026760942",
+      "recommendedPrimary": [
+        "Boeuf Bourguignon",
+        "Moules Marinières",
+        "Soğan Çorbası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Crème Brûlée & İmza Bahçe Kokteylleri",
+          "note": "Ana yemek sonrası karamelize kabuklu Crème Brûlée ve akşam bahçe barında hazırlanan imza kokteyller öne çıkıyor.",
+          "proof": "laperokas.com resmi menüsü ve Wanderlog Kaş önerileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi taş bina avlusu, ağaç altı romantik bahçe masaları ve bar alanı",
+        "crowdAndNoise": "Özellikle çiftler ve özel akşam yemeği arayan konuklarla rezervasyonlu dolu",
+        "disadvantage": "Özel şef mutfağı fiyat seviyesi ortalamanın üzerinde ve yaz akşamları önceden rezervasyon şart",
+        "transit": "Uzun Çarşı üzerinden Doğruyol Caddesi girişinde yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=559557378026760942",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Resmi Menü",
+          "url": "https://laperokas.com/tr/menu/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Fransız mutfağı yemek ve tatlı menüsü"
+        },
+        {
+          "title": "Butik Rota",
+          "url": "https://www.butikrota.com/en/Ka%C5%9F/restaurants/l-apero-kas",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihi bahçe ve Fransız şef vurgusu"
+        },
+        {
+          "title": "Wanderlog",
+          "url": "https://wanderlog.com/place/details/1552793/lap%C3%A9ro-ka%C5%9F",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "150 yıllık taş ev bahçesi ve kokteyl değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Kaş Merkezde nadir Fransız bistronomi deneyimi",
+        "Tarihi taş ev bahçesinin sakin romantizmi"
+      ],
+      "cons": [
+        "Üst segment fiyat seviyesi ve rezervasyon zorunluluğu"
+      ],
+      "uncertainties": [
+        "Sezon dışında servis günleri daralabiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-ehlikeyf-meyhane",
+      "categoryId": "date",
+      "resolvedName": "Ehlikeyf Meyhane Kaş",
+      "branchName": "Andifli, Hükümet Cd. No:3, 07580 Kaş/Antalya",
+      "placeId": "ChIJr-nq0lbawRQRKOjIkA0ZWfQ",
+      "coordinates": {
+        "lat": 36.198915,
+        "lng": 29.6420519
+      },
+      "rating": 4.8,
+      "userRatingCount": 6488,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://ehlikeyfkas.com/",
+      "mapsUri": "https://maps.google.com/?cid=17607131764236019752",
+      "recommendedPrimary": [
+        "Karides Güveç",
+        "Ahtapot Izgara",
+        "Lakerda & Soğuk Mezeler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Haydari & Girit Ezmesi Başlangıç Seçkisi",
+          "note": "Sofranın açılışında günlük hazırlanan otlu Girit ezmesi, süzme haydari ve sıcak ara tabaklar paylaşım için tercih ediliyor.",
+          "proof": "ehlikeyfkas.com resmi menüsü ve Menu-TR değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Zeytin ağaçları gölgesinde uzun bahçe masaları ve açık hava avlusu",
+        "crowdAndNoise": "Akşamları çok yüksek ilgi gördüğü için masalar erkenden rezervasyonla doluyor",
+        "disadvantage": "Yüksek popülerlik nedeniyle rezervasyonsuz gitmek çoğu akşam mümkün olmuyor ve masa yerleşimi sık olabiliyor",
+        "transit": "Kaş Liman ve Cumhuriyet Meydanı arasından yürüyerek bir dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=17607131764236019752",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve yüksek değerlendirme hacmi"
+        },
+        {
+          "title": "Resmi Web Sitesi",
+          "url": "https://ehlikeyfkas.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Zeytin ağaçları altı bahçe ve meze konsepti"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://www.menu-tr.com/en/antalya/kas/meyhane/ehlikeyf-meyhane-kas",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Karides güveç ve ahtapot ızgara değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Zeytin ağaçları altında sıcak meyhane ambiyansı",
+        "Yüksek misafir memnuniyeti ve taze deniz ürünleri"
+      ],
+      "cons": [
+        "Sezonda günler öncesinden rezervasyon gerektirmesi"
+      ],
+      "uncertainties": [
+        "Kalabalık grupların yoğun olduğu gecelerde ses seviyesi yükselebiliyor"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-zuzu-gusto",
+      "categoryId": "date",
+      "resolvedName": "Zuzu Gusto",
+      "branchName": "Andifli, Şht. Kazım Temel Cd. No:31, 07580 Kaş/Antalya",
+      "placeId": "ChIJVw-yfwHbwRQRUL3lBCWkCho",
+      "coordinates": {
+        "lat": 36.2042686,
+        "lng": 29.641190299999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 569,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://zuzugusto.com/",
+      "mapsUri": "https://maps.google.com/?cid=1876492673656143184",
+      "recommendedPrimary": [
+        "Hardallı Mezgit",
+        "Köri Soslu Levrek",
+        "Yaratıcı Akdeniz Mezeleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Blueberry Coconut & Jalapeno Margarita Kokteylleri",
+          "note": "Gün batımı saatlerinden geceye uzanan barda orman meyveli ve acılı margarita başta olmak üzere imza kokteyller öne çıkıyor.",
+          "proof": "zuzugusto.com resmi menüsü ve Wanderlog değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Meis manzaralı teras masaları ve modern kokteyl bar oturumu",
+        "crowdAndNoise": "Gün batımında kokteyl ve akşam yemeği için gelen çiftlerle hareketli",
+        "disadvantage": "Yukarı cadde hattında yer aldığı için çarşı merkezinden kısa bir yokuş yürüyüşü gerektiriyor",
+        "transit": "Cumhuriyet Meydanı yukarı çıkışından yürüyerek beş dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=1876492673656143184",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Resmi Web Sitesi",
+          "url": "http://zuzugusto.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Manzaralı teras ve imza kokteyl menüsü"
+        },
+        {
+          "title": "Wanderlog",
+          "url": "https://wanderlog.com/place/details/986951/zuzu-gusto",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Modern meze ve gün batımı atmosferi"
+        },
+        {
+          "title": "Restoranim",
+          "url": "https://restoranim.net/antalya/kas/restoran/zuzu-gusto",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hardallı mezgit ve levrek geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Klasik meyhane çizgisinden ayrılan yaratıcı mutfak",
+        "Açık Meis Adası ve gün batımı manzarası"
+      ],
+      "cons": [
+        "Merkez limandan hafif yokuş yukarı konumda yer alması"
+      ],
+      "uncertainties": [
+        "Terasta manzaralı ön masalar rezervasyon sırasına göre veriliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-nazende",
+      "categoryId": "date",
+      "resolvedName": "Nazende Restaurant",
+      "branchName": "Andifli, Süleyman Sandıkçı Sk. No:3, 07580 Kaş/Antalya",
+      "placeId": "ChIJg8Ma7CnbwRQRdH1euOrdmOI",
+      "coordinates": {
+        "lat": 36.1988809,
+        "lng": 29.6423456
+      },
+      "rating": 4.6,
+      "userRatingCount": 2172,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/nazendekas/",
+      "mapsUri": "https://maps.google.com/?cid=16328044449217019252",
+      "recommendedPrimary": [
+        "Kalamar Salatası",
+        "Kağıtta Balık",
+        "Izgara Çipura"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Deniz Mahsullü Sıcak Başlangıç & Şarap Eşleşmesi",
+          "note": "Ana balık öncesinde paylaşılan güveç mantar ve soğuk meze tabakları liman ışıkları eşliğinde tercih ediliyor.",
+          "proof": "Menu-TR ve resmi Nazende paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Liman manzaralı teras masaları ve loş akşam aydınlatmalı iç avlu",
+        "crowdAndNoise": "Çiftler ve sakin sohbet odaklı akşam yemeği gruplarıyla dengeli",
+        "disadvantage": "Liman manzaralı üst teras masaları yoğun sezonda ön rezervasyon olmadan doluyor",
+        "transit": "Hükümet Caddesi ve Liman kıyısından yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=16328044449217019252",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve yüksek değerlendirme hacmi"
+        },
+        {
+          "title": "Resmi Instagram",
+          "url": "https://www.instagram.com/nazendekas/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Teras sunumları ve mevsim menüsü"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://www.menu-tr.com/en/antalya/kas/restoran/nazende-restaurant-2",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kalamar salatası ve şık atmosfer değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Kaş Limanı manzarasına hakim sakin teras",
+        "Özenli servis ve romantik akşam aydınlatması"
+      ],
+      "cons": [
+        "Teras masa talebinin yüksek olması"
+      ],
+      "uncertainties": [
+        "Açık terasta serin bahar akşamları için ince şal gerekebiliyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-voyn-meyhane",
+      "categoryId": "date",
+      "resolvedName": "Voyn Meyhane",
+      "branchName": "Andifli, Hükümet Cd., 07580 Kaş/Antalya",
+      "placeId": "ChIJGY5_TlHawRQRPle_c1Jn8Po",
+      "coordinates": {
+        "lat": 36.198444599999995,
+        "lng": 29.6427034
+      },
+      "rating": 4.4,
+      "userRatingCount": 1372,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18082066107719440190",
+      "recommendedPrimary": [
+        "Şevketi Bostanlı Levrek",
+        "Romlu Deniz Levreği",
+        "Günlük Meze Seçkisi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Deniz Mahsullü Ara Sıcaklar & Meyhane Rakı Eşleşmesi",
+          "note": "Klasik soğuk mezelerin yanında özel soslu deniz ürünü ara sıcakları akşam masalarının vazgeçilmez parçası.",
+          "proof": "Oggusto ve Biz Evde Yokuz Kaş meyhane rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Begonvilli bahçe masaları ve deniz manzaralı üst kat terası",
+        "crowdAndNoise": "Yüksek sezonda yer bulmak zor olduğu için akşamları sürekli dolu",
+        "disadvantage": "Popülerliği nedeniyle sezonda rezervasyonsuz masa bulmak çok güç ve masa düzeni birbirine yakın olabiliyor",
+        "transit": "Kaş Liman karşısındaki Hükümet Caddesi başlangıcında yürüyerek bir dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=18082066107719440190",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Oggusto Kaş Rehberi",
+          "url": "https://www.oggusto.com/gastronomi/turkiye/kasin-en-iyi-restoranlari",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kaşın öne çıkan yeni nesil meyhanesi vurgusu"
+        },
+        {
+          "title": "Biz Evde Yokuz Kaş",
+          "url": "https://www.bizevdeyokuz.com/kasta-ne-yenir-kas-restoranlari/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taze meze ve teras rezervasyon önerisi"
+        },
+        {
+          "title": "Restoranim",
+          "url": "https://restoranim.net/antalya/kas/meyhane/voyn-meyhane",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Özgün balık spesiyalleri ve meze notları"
+        }
+      ],
+      "pros": [
+        "Yaratıcı deniz mahsullü sıcak spesiyaller",
+        "Hem bahçe hem manzaralı teras alternatifi"
+      ],
+      "cons": [
+        "Önceden rezervasyon yapmadan yer bulma zorluğu"
+      ],
+      "uncertainties": [
+        "Terastaki masa konumu rüzgar yönüne göre değişiklik gösterebiliyor"
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-bugun-kahvalti",
+      "categoryId": "kahvalti",
+      "resolvedName": "Bugün Kahvaltı Kaş",
+      "branchName": "Andifli, Veli Kaptan Sk No:2 D:A, 07580 Kaş/Antalya",
+      "placeId": "ChIJMT0e-OrbwRQRC8DPNGbqWAY",
+      "coordinates": {
+        "lat": 36.199808,
+        "lng": 29.640317
+      },
+      "rating": 4.9,
+      "userRatingCount": 389,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=457373086871699467",
+      "recommendedPrimary": [
+        "Van Usulü Serpme Kahvaltı",
+        "Sucuklu Murtuğa",
+        "Sahanda Menemen"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ceviz Reçeli & Yöresel Peynir Tabağı",
+          "note": "Sofrayla birlikte gelen ev yapımı ceviz reçeli, otlu peynir çeşitleri ve taze demleme çay kahvaltıyı tamamlıyor.",
+          "proof": "Menu-TR ve Restoranim Kaş kahvaltı değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sakin ara sokak masaları ve samimi iç mekan oturumu",
+        "crowdAndNoise": "Sabah dokuz sonrası kahvaltı saatlerinde yüksek memnuniyetle dolu",
+        "disadvantage": "Ara sokaktaki masa kapasitesi kısıtlı olduğu için geç sabah saatlerinde kısa bekleme yaşanabiliyor",
+        "transit": "Atatürk Bulvarı paralelindeki Veli Kaptan Sokak içine yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=457373086871699467",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Restoranim",
+          "url": "https://restoranim.net/antalya/kas/kahvaltici/bugun-kahvalti-kas",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yöresel ürünler ve samimi sabah servisi"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://www.menu-tr.com/de/antalya/kas/restoran/bugun-kahvalti-kas",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Van kahvaltısı, murtuğa ve ceviz reçeli detayları"
+        }
+      ],
+      "pros": [
+        "Kaşta nadir bulunan Van usulü serpme çeşitliliği",
+        "Taze ve ev yapımı kahvaltılıklar"
+      ],
+      "cons": [
+        "Küçük sokak içi kapasite nedeniyle geç saatlerde masa bekleyebilme"
+      ],
+      "uncertainties": [
+        "Sezon dışında mutfak kapanış saati erkene çekilebiliyor"
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-tasbahce",
+      "categoryId": "kahvalti",
+      "resolvedName": "Taşbahçe Kahvaltı ve Kafe",
+      "branchName": "Andifli, Çukurbağlılar 2 sokak No 3, 07580 Kaş/Antalya",
+      "placeId": "ChIJGY5_TlHawRQROpUT5xNL0aE",
+      "coordinates": {
+        "lat": 36.2010088,
+        "lng": 29.6410047
+      },
+      "rating": 4.6,
+      "userRatingCount": 559,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.tripadvisor.com.tr/Restaurant_Review-g297965-d10303573-Reviews-Tas_Bahce-Kas_Turkish_Mediterranean_Coast.html",
+      "mapsUri": "https://maps.google.com/?cid=11660183459092206906",
+      "recommendedPrimary": [
+        "Taşbahçe Serpme Kahvaltı",
+        "Sıcak Pişi & Peynir Tabağı",
+        "Mozarellalı Tost"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Reçeller & Sınırsız Demleme Çay",
+          "note": "Meyve reçelleri ve bahçeden gelen ferahlık eşliğinde sunulan demleme çay sabah buluşmalarını uzatıyor.",
+          "proof": "TripAdvisor, Wanderlog ve Menu-TR Taşbahçe incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaç gölgeli, sessiz iç taş avlu ve bahçe masaları",
+        "crowdAndNoise": "Sakin kahvaltı arayan çiftler ve ailelerle sabahları dengeli dolu",
+        "disadvantage": "Sabit liste yerine şef/ev tarzı akış sunduğu için ekstra özel diyet seçenekleri sınırlı kalabiliyor",
+        "transit": "Antik kaya mezarına yakın merkez ara sokaktan yürüyerek üç dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=11660183459092206906",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "TripAdvisor Profili",
+          "url": "https://www.tripadvisor.com.tr/Restaurant_Review-g297965-d10303573-Reviews-Tas_Bahce-Kas_Turkish_Mediterranean_Coast.html",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bahçe ortamı ve kahvaltı geri bildirimleri"
+        },
+        {
+          "title": "Wanderlog",
+          "url": "https://wanderlog.com/place/details/2524399/ta%C5%9Fbah%C3%A7e-kahvalt%C4%B1",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Gizli taş bahçe, pişi ve ev yapımı reçeller"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://www.menu-tr.com/antalya/kas/restoran/tasbahce-kahvalti-ve-kafe",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Serpme sunum ve tost seçenekleri"
+        }
+      ],
+      "pros": [
+        "Ana cadde gürültüsünden tamamen izole taş avlu",
+        "Sıcak pişi ve ev yapımı reçel kalitesi"
+      ],
+      "cons": [
+        "Sabah yoğunluğunda servis hızının yavaşlayabilmesi"
+      ],
+      "uncertainties": [
+        "Menü dönemsel olarak taze hamur işlerine göre küçük değişiklikler gösterebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-sunrise-breakfast",
+      "categoryId": "kahvalti",
+      "resolvedName": "Sunrise Breakfast Kaş",
+      "branchName": "Andifli, 07580 Kaş/Antalya",
+      "placeId": "ChIJrRMV9wXbwRQRSLDIGJqni2E",
+      "coordinates": {
+        "lat": 36.206305799999996,
+        "lng": 29.629128200000004
+      },
+      "rating": 4.8,
+      "userRatingCount": 368,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://instagram.com/sunrise_breakfast_kass?r=nametag",
+      "mapsUri": "https://maps.google.com/?cid=7028895923724398664",
+      "recommendedPrimary": [
+        "Serpme Kahvaltı",
+        "El Açması Gözleme",
+        "Bakır Sahanda Menemen"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Reçel & Sıcak Bazlama Eşleşmesi",
+          "note": "Serpme kahvaltıda sunulan ev yapımı reçeller ve sıcak bazlama ekmeği manzaralı masada öne çıkan detaylardan.",
+          "proof": "Instagram resmi hesabı ve Restoranim incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Marina ve deniz manzarasına bakan açık teras masaları",
+        "crowdAndNoise": "Tekne turu öncesi ve sakin hafta sonu kahvaltılarında hareketli",
+        "disadvantage": "Çarşı içine kıyasla marina tarafında kaldığından merkezden biraz daha uzun bir yürüyüş gerektiriyor",
+        "transit": "Kaş Marina yolu boyunca Atatürk Bulvarı batı ucuna yürüyerek on dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=7028895923724398664",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Resmi Instagram",
+          "url": "https://instagram.com/sunrise_breakfast_kass?r=nametag",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Serpme kahvaltı ve manzara sunumları"
+        },
+        {
+          "title": "Restoranim",
+          "url": "https://restoranim.net/antalya/kas/kahvaltici/sunrise-breakfast-kas",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Marina yakını manzara ve aile işletmesi notları"
+        }
+      ],
+      "pros": [
+        "Kaş Marina ve koya hakim ferah manzara",
+        "El açması sıcak gözleme ve bazlama"
+      ],
+      "cons": [
+        "Çarşı meydanına göre yürüme mesafesinin biraz daha uzun olması"
+      ],
+      "uncertainties": [
+        "Tekne turlarının çıkış günlerinde sabah erken saatler hızla dolabiliyor"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-panu",
+      "categoryId": "kahvalti",
+      "resolvedName": "Panu Kaş",
+      "branchName": "Andifli, Hükümet Cd. No:53, 07580 Kaş/Antalya",
+      "placeId": "ChIJV9lHtRLbwRQR8VOm_IAEqko",
+      "coordinates": {
+        "lat": 36.196677699999995,
+        "lng": 29.6451709
+      },
+      "rating": 4.6,
+      "userRatingCount": 194,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://instagram.com/panu.kas?igshid=YmMyMTA2M2Y=",
+      "mapsUri": "https://maps.google.com/?cid=5380117656888562673",
+      "recommendedPrimary": [
+        "Poşe Yumurtalı Avokado Toast",
+        "French Toast",
+        "Granola Kasesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sankofa Nitelikli Kahve & Çıtır Tavuklu Brioche",
+          "note": "Modern kahvaltı sonrasında aynı avlu alanındaki nitelikli kahve ve günün ilerleyen saatlerinde brioche burgerleri öne çıkıyor.",
+          "proof": "Biz Evde Yokuz Kaş kahvaltı rehberi ve Menu-TR kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaç gölgeli deniz manzaralı açık platform masaları",
+        "crowdAndNoise": "Klasik serpme yerine hafif modern kahvaltı arayan konuklarla sabahları keyifli bir yoğunlukta",
+        "disadvantage": "Geleneksel büyük serpme kahvaltı arayan kalabalık aileler için porsiyon yapısı fazla modern ve hafif kalabiliyor",
+        "transit": "Küçük Çakıl yönüne Hükümet Caddesi boyunca yürüyerek dört dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=5380117656888562673",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Resmi Instagram",
+          "url": "https://instagram.com/panu.kas?igshid=YmMyMTA2M2Y=",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Kahvaltı ve sokak lezzetleri paylaşımları"
+        },
+        {
+          "title": "Biz Evde Yokuz Kaş",
+          "url": "https://www.bizevdeyokuz.com/kasta-ne-yenir-kas-restoranlari/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "French toast, avokado toast ve granola önerisi"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://www.menu-tr.com/antalya/kas/restoran/panu-kas",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahvaltı ve brioche burger çeşitleri"
+        }
+      ],
+      "pros": [
+        "Kaşta klasik serpmeye karşı güçlü modern kahvaltı alternatifi",
+        "Küçük Çakıl manzaralı gölgeli teras"
+      ],
+      "cons": [
+        "Geleneksel çok tabaklı serpme bekleyenlere uygun olmaması"
+      ],
+      "uncertainties": [
+        "Plaj/otel ortak alanı nedeniyle yaz öğle saatlerinde güneş yönüne göre masa gölgesi değişebiliyor"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-memedin-yeri",
+      "categoryId": "balik",
+      "resolvedName": "Memedin Yeri",
+      "branchName": "Büyükçakıl Plajı, Andifli, 07580 Kaş/Antalya",
+      "placeId": "ChIJzbRbe63bwRQRUUjpsmFmeaA",
+      "coordinates": {
+        "lat": 36.191463399999996,
+        "lng": 29.652101499999997
+      },
+      "rating": 4.4,
+      "userRatingCount": 444,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11563386088049952849",
+      "recommendedPrimary": [
+        "Günlük Taze Deniz Balığı",
+        "Kalamar Tava",
+        "Tereyağlı Karides & Ahtapot"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Termos Çay & İrmik Helvası Kapanışı",
+          "note": "Büyükçakıl kıyısında gün batımı yemeğinin ardından masaya gelen termos çay ve sıcak helva sunumu bölgenin klasik ritüeli.",
+          "proof": "Oggusto Kaş rehberi ve Menu-TR Büyükçakıl değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Doğrudan Büyükçakıl çakılları üzerinde denize sıfır ahşap masalar",
+        "crowdAndNoise": "Gün batımıyla birlikte doluyor; yaz akşamları önceden yer ayırtmak gerekiyor",
+        "disadvantage": "Çakıllı sahil zemininde yürüme güçlüğü yaratabiliyor ve rüzgarlı havalarda dalga serpintisi hissedilebiliyor",
+        "transit": "Kaş Merkezden Büyükçakıl Plajı yönüne yürüyerek on beş dakika veya kısa dolmuşla"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=11563386088049952849",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Oggusto Kaş Rehberi",
+          "url": "https://www.oggusto.com/gastronomi/turkiye/kasin-en-iyi-restoranlari",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Büyükçakıl kıyısında sade ve köklü rakı-balık deneyimi"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://www.menu-tr.com/antalya/kas/restoran/memedin-yeri",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze balık, kalamar ve sahil masaları"
+        }
+      ],
+      "pros": [
+        "Kaşın en otantik denize sıfır çakıl plaj sofrası",
+        "Gösterişsiz ve samimi akşamüstü atmosferi"
+      ],
+      "cons": [
+        "Merkeze göre yürüme mesafesi ve taşlı plaj zemini"
+      ],
+      "uncertainties": [
+        "Deniz kabarması veya rüzgarlı akşamlarda ön sıra masalar etkilenebiliyor"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-sardunya",
+      "categoryId": "balik",
+      "resolvedName": "Sardunya Restaurant",
+      "branchName": "Andifli, Necipbey Cd. No:20, 07580 Kaş/Antalya",
+      "placeId": "ChIJZ14GqFDawRQR26kwszZZIl0",
+      "coordinates": {
+        "lat": 36.1989069,
+        "lng": 29.6379597
+      },
+      "rating": 4.7,
+      "userRatingCount": 652,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.sardunyaotel.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=6711024486204877275",
+      "recommendedPrimary": [
+        "Sumaklı Levrek",
+        "Izgara Ahtapot",
+        "Taze Deniz Balığı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Girit Kabağı & Pastırmalı Humus Mezeleri",
+          "note": "Ana balık öncesi soğuk ve sıcak meze seçkisinde kabak mezesi ile pastırmalı humus sıkça tercih ediliyor.",
+          "proof": "sardunyaotel.com.tr resmi menüsü ve Menu-TR incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Deniz kenarı teras masaları ve gölgeli bahçe oturumu",
+        "crowdAndNoise": "Sakin akşam yemeği arayan çiftler ve otel dışı misafirlerle düzenli dolu",
+        "disadvantage": "Gündüz hareketli sokakların biraz batısında kaldığı için canlı çarşı atmosferi arayanlara daha durgun gelebiliyor",
+        "transit": "Limandan Necipbey Caddesi boyunca batıya yürüyerek beş dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=6711024486204877275",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Resmi Web Sitesi",
+          "url": "http://www.sardunyaotel.com.tr/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Deniz kenarı restoran ve meze konsepti"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://www.menu-tr.com/en/antalya/kas/restoran/sardunya-restaurant-2",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ahtapot, balık ve meze geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Denize karşı sessiz ve şık akşam masaları",
+        "Özgün sumaklı levrek ve meze reçeteleri"
+      ],
+      "cons": [
+        "Çarşı merkezindeki canlılıktan bir adım daha uzakta olması"
+      ],
+      "uncertainties": [
+        "Sezon dışında a la carte servis günleri değişebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-havana-balik",
+      "categoryId": "balik",
+      "resolvedName": "Havana Balık Evi Restaurant",
+      "branchName": "Andifli, Nevzat Hacı Velioğlu Sk No:3/A, 07580 Kaş/Antalya",
+      "placeId": "ChIJ6doxH1fawRQR59kVKhf-1EA",
+      "coordinates": {
+        "lat": 36.2010207,
+        "lng": 29.640438600000003
+      },
+      "rating": 4.5,
+      "userRatingCount": 652,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://instagram.com/havana_et_balk_evi07",
+      "mapsUri": "https://maps.google.com/?cid=4671638088933824999",
+      "recommendedPrimary": [
+        "Izgara Levrek & Çipura",
+        "Güveçte Karides",
+        "Balık Ekmek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Balık Çorbası & Günlük Yeşil Salata",
+          "note": "Özellikle hızlı öğle yemeklerinde taze balık çorbası ve bol limonlu mevsim salata porsiyonları övülüyor.",
+          "proof": "Instagram resmi hesabı ve Menu-TR Havana Balık Evi sayfası"
+        }
+      ],
+      "suitability": {
+        "seating": "Sokak içi sade masa düzeni ve küçük aile salonu",
+        "crowdAndNoise": "Öğle ve akşam uygun bütçeyle taze balık yemek isteyen aileler ve yerel halkla dolu",
+        "disadvantage": "Alkollü meyhane veya manzaralı sahil terası konsepti sunmuyor; tamamen sade lezzet odaklı",
+        "transit": "Cumhuriyet Meydanı arka sokağından yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=4671638088933824999",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Resmi Instagram",
+          "url": "https://instagram.com/havana_et_balk_evi07",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Günlük taze balık ve güveç çeşitleri"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://www.menu-tr.com/antalya/kas/balik-restorani/havana-balik-evi-restaurant",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çipura, levrek ve balık ekmek değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Kaş Merkezde abartısız, taze ve bütçe dostu balıkçı",
+        "Hızlı ve samimi aile servisi"
+      ],
+      "cons": [
+        "Deniz manzarası ve alkollü meze servisi bulunmaması"
+      ],
+      "uncertainties": [
+        "Günlük av durumuna göre tezgah balıkları akşam erken tükenebiliyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-manos-tavern",
+      "categoryId": "balik",
+      "resolvedName": "MANOS GREEK TAVERN KAŞ",
+      "branchName": "Andifli, 1. Çukurbağlılar Sk. No:3/E, 07530 Kaş/Antalya",
+      "placeId": "ChIJl7Z4lQXbwRQRHs9sJCe2YZ0",
+      "coordinates": {
+        "lat": 36.2008517,
+        "lng": 29.640980000000003
+      },
+      "rating": 4.4,
+      "userRatingCount": 682,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11340545615926710046",
+      "recommendedPrimary": [
+        "Izgara Ahtapot",
+        "Deniz Mahsulleri Saganaki",
+        "Tuzda Levrek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kızarmış Saganaki Peyniri & Çıtır Kabak",
+          "note": "Deniz ürünleri sofrasına eşlik eden ince kesim çıtır kabak cipsi ve sıcak saganaki peyniri sıkça sipariş ediliyor.",
+          "proof": "Menu-TR ve Wanderlog Manos Greek Tavern değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Canlı sokak terası ve grup paylaşımına uygun büyük masalar",
+        "crowdAndNoise": "Özellikle arkadaş grupları ve kalabalık akşam masalarıyla gürültülü ve enerjik",
+        "disadvantage": "Müzik ve taverna coşkusu yüksek olduğundan sakin, baş başa fısıltılı bir akşam yemeği için fazla hareketli kalabiliyor",
+        "transit": "Cumhuriyet Meydanı kuzey ara sokaklarından yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=11340545615926710046",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://www.menu-tr.com/en/antalya/kas/restoran/manos-greek-tavern-kas",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ahtapot, saganaki ve porsiyon detayları"
+        },
+        {
+          "title": "Wanderlog",
+          "url": "https://wanderlog.com/place/details/3085721/manos-greek-tavern-ka%C5%9F",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yunan taverna atmosferi ve deniz ürünleri"
+        },
+        {
+          "title": "Restoranim",
+          "url": "https://restoranim.net/antalya/kas/restoran/manos-greek-tavern-kas",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tuzda levrek ve paylaşımlı masa notları"
+        }
+      ],
+      "pros": [
+        "Büyük porsiyonlu taze deniz ürünleri ve meze uyumu",
+        "Neşeli ada tavernası atmosferi"
+      ],
+      "cons": [
+        "Yüksek ses seviyesi ve yoğun kalabalık"
+      ],
+      "uncertainties": [
+        "Tuzda balık gibi özel sunumlar için önceden bilgi vermek gerekebiliyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-bunbun",
+      "categoryId": "denemelisin",
+      "resolvedName": "Bunbun Kaş",
+      "branchName": "Andifli, Hastane Caddesi NO:22, 07580 Kaş/Antalya",
+      "placeId": "ChIJQ7-8wKPbwRQREJ570OlST_k",
+      "coordinates": {
+        "lat": 36.1992522,
+        "lng": 29.6380053
+      },
+      "rating": 4.6,
+      "userRatingCount": 3957,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://bunbunkas.com/",
+      "mapsUri": "https://maps.google.com/?cid=17964668602782817808",
+      "recommendedPrimary": [
+        "Dana Tiftik Bao Bun",
+        "Çıtır Tavuklu Bao Bun",
+        "Karides Köfteli Bao Bun"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fesleğenli Ayran & Çikolatalı Tatlı Bao",
+          "note": "Tuzlu bunların yanında taze fesleğenli soğuk ayran ve kapanışta sıcak çikolatalı tatlı bun sıkça sipariş ediliyor.",
+          "proof": "bunbunkas.com resmi menüsü ve Biz Evde Yokuz Kaş rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Kaldırım kenarı yüksek bar masaları ve küçük dış oturum alanı",
+        "crowdAndNoise": "Günün her saati hızlı öğle ve gece atıştırması için gelen kalabalıklarla canlı",
+        "disadvantage": "Popüler saatlerde sokak önünde kısa bekleme sırası oluşuyor ve masa sayısı kısıtlı",
+        "transit": "Kaş Liman batısında Hastane Caddesi üzerinde yürüyerek üç dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=17964668602782817808",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve yüksek değerlendirme hacmi"
+        },
+        {
+          "title": "Resmi Web Sitesi",
+          "url": "http://bunbunkas.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Bao bun çeşitleri ve şube bilgisi"
+        },
+        {
+          "title": "Biz Evde Yokuz Kaş",
+          "url": "https://www.bizevdeyokuz.com/kasta-ne-yenir-kas-restoranlari/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Hastane Caddesi bao bun ve çikolatalı bun önerisi"
+        },
+        {
+          "title": "Hürriyet Seyahat",
+          "url": "https://www.hurriyet.com.tr/seyahat/kasin-zorlu-virajlarindan-askla-hazirlanan-sofralarina-42338211",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kaşın öne çıkan sokak lezzeti vurgusu"
+        }
+      ],
+      "pros": [
+        "Kaşla özdeşleşmiş yumuşak bao bun reçeteleri",
+        "Hem etli hem vegan güçlü seçenekler"
+      ],
+      "cons": [
+        "Küçük sokak içi masa kapasitesi"
+      ],
+      "uncertainties": [
+        "Akşam geç saatlerde bazı özel dolgular tükenebiliyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-dudu-mutfak",
+      "categoryId": "denemelisin",
+      "resolvedName": "Dudu Mutfak",
+      "branchName": "Andifli, Süleyman Sandıkçı Sk. No:1/3, 07580 Kaş/Antalya",
+      "placeId": "ChIJI_hVM1HawRQR8UaVKvNvq_s",
+      "coordinates": {
+        "lat": 36.1987131,
+        "lng": 29.6423006
+      },
+      "rating": 4.6,
+      "userRatingCount": 2790,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18134711414719596273",
+      "recommendedPrimary": [
+        "Yaprak Ciğer",
+        "Ev Yapımı Mantı",
+        "Günlük Zeytinyağlı Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Reçeller & Anne Usulü Sulu Yemekler",
+          "note": "Mevsime göre değişen taze tencere yemekleri ve kahvaltıda çıkan ev yapımı reçeller misafirler arasında sürekli övülüyor.",
+          "proof": "Biz Evde Yokuz Kaş rehberi ve Dudu Mutfak Google Maps kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi taş bina giriş katı ve begonvilli sokak masaları",
+        "crowdAndNoise": "Öğle ev yemeği ve sabah kahvaltısı arasında gün boyu düzenli dolu",
+        "disadvantage": "Günlük pişen sınırlı tencere çeşitleri akşam saatlerine kalmadan bitebiliyor",
+        "transit": "Kaş Limanı paralelindeki Süleyman Sandıkçı Sokak üzerinde yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=18134711414719596273",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve yüksek değerlendirme hacmi"
+        },
+        {
+          "title": "Biz Evde Yokuz Kaş",
+          "url": "https://www.bizevdeyokuz.com/kasta-ne-yenir-kas-restoranlari/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Eski Kaş evi, yaprak ciğer ve kahvaltı notları"
+        }
+      ],
+      "pros": [
+        "Samimi ev mutfağı ve vegan seçenek dengesi",
+        "Hem kahvaltı hem akşam yemeğine uygun çeşitlilik"
+      ],
+      "cons": [
+        "Günlük sınırlı tencere yemeklerinin erken tükenebilmesi"
+      ],
+      "uncertainties": [
+        "Hangi zeytinyağlıların çıkacağı günün taze pazarına bağlı değişiyor"
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-kasik-manti",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kaşık Mantı Ev Yemekleri",
+      "branchName": "Andifli, Cumhuriyet Meydanı No:12, 07580 Kaş/Antalya",
+      "placeId": "ChIJrXg6Ae_bwRQRon_8KEwfwns",
+      "coordinates": {
+        "lat": 36.1994506,
+        "lng": 29.641385199999995
+      },
+      "rating": 4.7,
+      "userRatingCount": 2287,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8917724624112615330",
+      "recommendedPrimary": [
+        "Çıtır Mantı",
+        "Klasik Haşlama Mantı",
+        "Zeytinyağlı Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Ev Yemekleri & Mercimek Çorbası",
+          "note": "Mantı dışında günlük çıkan sulu ev yemekleri ve sıcak çorbalar pratik öğle molaları için tercih ediliyor.",
+          "proof": "Menu-TR ve Wanderlog Kaşık Mantı değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Meydan çevresi mütevazı iç salon ve sokak kenarı masalar",
+        "crowdAndNoise": "Öğle ve erken akşam saatlerinde yerel esnaf ile tatilcilerle hareketli",
+        "disadvantage": "Geleneksel küçük lokanta dekorasyonu sade tutulmuş; şık akşam ambiyansı beklentisine hitap etmiyor",
+        "transit": "Cumhuriyet Meydanı merkezinde yürüme mesafesinde"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=8917724624112615330",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve yüksek değerlendirme hacmi"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://www.menu-tr.com/antalya/kas/mantici/kasik-manti-ev-yemekleri",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çıtır mantı ve anne mutfağı değerlendirmeleri"
+        },
+        {
+          "title": "Wanderlog",
+          "url": "https://wanderlog.com/tr/place/details/2689844/ka%C5%9F%C4%B1k-mant%C4%B1-ev-yemekleri",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Meydan konumu ve zeytinyağlı notları"
+        }
+      ],
+      "pros": [
+        "Kaş merkezde ulaşılabilir el açması mantı ve ev yemekleri",
+        "Hızlı, doyurucu ve güler yüzlü servis"
+      ],
+      "cons": [
+        "Sade lokanta atmosferi"
+      ],
+      "uncertainties": [
+        "Yoğun öğle saatlerinde zeytinyağlı çeşitleri erken azalabiliyor"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-bay-kofte",
+      "categoryId": "denemelisin",
+      "resolvedName": "Bay Köfte",
+      "branchName": "15 temmuz demokrasi meydanı 16/A andifli mah.07580, Andifli, 07580 Kaş/Antalya",
+      "placeId": "ChIJ99tvFVfawRQRIZ1JDkX6Ds4",
+      "coordinates": {
+        "lat": 36.200614,
+        "lng": 29.6398175
+      },
+      "rating": 4.7,
+      "userRatingCount": 2228,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14848080195986496801",
+      "recommendedPrimary": [
+        "Izgara Köfte",
+        "Antalya Usulü Tahinli Piyaz",
+        "Cevizli Tahinli Kabak Tatlısı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Acılı Şalgam & Taze Salata Eşlikçisi",
+          "note": "Köfte-piyaz ikilisinin yanında taze közlenmiş biber ve soğuk şalgam suyunu misafirler sıklıkla tercih ediyor.",
+          "proof": "Menu-TR ve Restoranim Bay Köfte değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Meydan kenarı açık masalar ve hızlı servis iç salonu",
+        "crowdAndNoise": "Öğle ve erken akşam yemeklerinde sabit müdavim kitlesiyle yoğun",
+        "disadvantage": "Hızlı esnaf köftecisi temposu nedeniyle uzun akşam oturumları yerine pratik öğünlere daha uygun",
+        "transit": "15 Temmuz Demokrasi Meydanı üzerinden hemen meydan başında"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=14848080195986496801",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve yüksek değerlendirme hacmi"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://www.menu-tr.com/antalya/kas/kofteci/bay-kofte",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tahinli piyaz ve kabak tatlısı önerileri"
+        },
+        {
+          "title": "Wanderlog",
+          "url": "https://wanderlog.com/tr/place/details/2689792/bay-k%C3%B6fte",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Esnaf köftecisi notları"
+        },
+        {
+          "title": "Restoranim",
+          "url": "https://restoranim.net/antalya/kas/kofteci/bay-kofte-1",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sulu köfte ve samimi hizmet değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Kaş merkezde gerçek Antalya tahinli piyazı ve klasik ızgara köfte",
+        "Dengeli porsiyon ve samimi aile işletmesi"
+      ],
+      "cons": [
+        "Sade esnaf salonu düzeni"
+      ],
+      "uncertainties": [
+        "Sezon dışında akşam kapanış saati esnaf temposuna göre erkene gelebiliyor"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-sempati-mutfagi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Sempati Türk Mutfağı",
+      "branchName": "Andifli, Uzun carsı gürsoy sokak no 11, 07580 Kaş/Antalya",
+      "placeId": "ChIJwW1Cx1bawRQRalxOF4p6zbM",
+      "coordinates": {
+        "lat": 36.1994421,
+        "lng": 29.6419002
+      },
+      "rating": 4.7,
+      "userRatingCount": 1376,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12956146436529871978",
+      "recommendedPrimary": [
+        "Yavaş Pişmiş Dana Yanak",
+        "Alper Böreği",
+        "Vişneli Yaprak Sarma"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mücver, Çerkez Tavuğu & Bademli Tavuk Mezeleri",
+          "note": "Ana yemek öncesinde paylaşılan yöresel soğuk mezeler ve sıcak sebzeli mücver menünün sevilen tamamlayıcıları.",
+          "proof": "Menu-TR ve Restoranim Sempati Türk Mutfağı sayfası"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş sokak içinde şirin avlu masaları ve geleneksel iç salon",
+        "crowdAndNoise": "Yerli ve yabancı gezginlerle akşam yemeklerinde istikrarlı dolu",
+        "disadvantage": "Gürsoy Sokak içindeki dar taş geçitte masa aralıkları oldukça yakın olabiliyor",
+        "transit": "Uzun Çarşı ortasından Gürsoy Sokak içine dönünce yürüyerek bir dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=12956146436529871978",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve yüksek değerlendirme hacmi"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://www.menu-tr.com/en/antalya/kas/restoran/sempati-turk-mutfagi",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Dana yanak, Alper böreği ve meze notları"
+        },
+        {
+          "title": "Restoranim",
+          "url": "https://restoranim.net/antalya/kas/restoran/sempati-turk-mutfagi",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Osmanlı yemeği ve geleneksel Türk mutfağı detayları"
+        }
+      ],
+      "pros": [
+        "Zengin ve özenli klasik Türk yemekleri repertuvarı",
+        "Ağızda dağılan dana yanak ve özgün börek"
+      ],
+      "cons": [
+        "Dar çarşı ara sokağında sıkışık dış masa düzeni"
+      ],
+      "uncertainties": [
+        "Özel pişirim yemeklerin akşam yoğunluğuna göre bekleme süresi olabiliyor"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-n8-bakery",
+      "categoryId": "denemelisin",
+      "resolvedName": "N8 Bakery",
+      "branchName": "Andifli, İlkokul Sk. no:5, 07580 Kaş/Antalya",
+      "placeId": "ChIJKwuEUwPbwRQRz0SRPu7Z_Vg",
+      "coordinates": {
+        "lat": 36.1998203,
+        "lng": 29.642396700000003
+      },
+      "rating": 4.7,
+      "userRatingCount": 407,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/n8_kas?igsh=MWdwZzZ3c3dsNzkzeQ==",
+      "mapsUri": "https://maps.google.com/?cid=6412521061720605903",
+      "recommendedPrimary": [
+        "Bademli Kruvasan",
+        "Çikolatalı Kruvasan",
+        "Ekşi Maya Ekmek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Nitelikli Kahve & Günlük Fırın Tatlıları",
+          "note": "Fırından sıcak çıkan kruvasanların yanında alınan espresso bazlı içecekler ve günlük tart dilimleri sabah kuyruklarının sebebi.",
+          "proof": "n8_kas resmi hesabı ve Wanderlog Kaş fırın değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük sokak cephesi ve ağırlıklı paket-servis tezgahı",
+        "crowdAndNoise": "Sabah açılış saatlerinden öğlene kadar taze kruvasan arayanlarla kalabalık",
+        "disadvantage": "Günlük sınırlı fırın partisi nedeniyle öğleden sonraya kruvasan çeşitleri tükenebiliyor ve oturma alanı çok dar",
+        "transit": "Uzun Çarşı ile İlkokul Sokak kesişiminden yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=6412521061720605903",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Resmi Instagram",
+          "url": "https://www.instagram.com/n8_kas?igsh=MWdwZzZ3c3dsNzkzeQ==",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Günlük kruvasan ve ekşi maya ekmek üretimi"
+        },
+        {
+          "title": "Wanderlog",
+          "url": "https://wanderlog.com/place/details/11991511/n8-bakery",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Büyük boy bademli kruvasan geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Kaş Merkezde gerçek katmanlı tereyağlı kruvasan ve ekşi maya",
+        "Taze sabah çıkışı"
+      ],
+      "cons": [
+        "Oturma kapasitesinin darlığı ve ürünlerin erken bitmesi"
+      ],
+      "uncertainties": [
+        "Sezon dışında haftalık fırın açılış günleri değişebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-isik-lokantasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Işık Lokantası Çerçiler",
+      "branchName": "Andifli, ikili bakkal yanı, 07580 Kaş/Antalya",
+      "placeId": "ChIJ-xn_9W3bwRQRgVIIpYJ3ghk",
+      "coordinates": {
+        "lat": 36.1987762,
+        "lng": 29.651875000000004
+      },
+      "rating": 4.8,
+      "userRatingCount": 356,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1838163000918823553",
+      "recommendedPrimary": [
+        "Kömürde Piliç Çevirme",
+        "Günlük Sulu Ev Yemeği",
+        "Tavuk Suyu Çorba"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Salata & Ev Usulü Bulgur Pilavı",
+          "note": "Kömürde pişen pilicin yanında tereyağlı pilav ve taze salata doyurucu esnaf tabağı oluşturuyor.",
+          "proof": "Restoranim ve Menu-TR Işık Lokantası Çerçiler kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı, temiz ve geniş esnaf lokantası masa düzeni",
+        "crowdAndNoise": "Özellikle öğle saatlerinde Kaş esnafı ve yerleşikleriyle canlı",
+        "disadvantage": "Turistik çarşı merkezinin birkaç dakika doğusunda yer aldığı için sahil yürüyüşü rotasında tesadüfen denk gelmek zor",
+        "transit": "Atatürk Bulvarı doğu devamında Çerçiler yakınına yürüyerek sekiz dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=1838163000918823553",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Restoranim",
+          "url": "https://restoranim.net/antalya/kas/restoran/isik-lokantasi-cerciler",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kömürde piliç ve esnaf kültürü değerlendirmeleri"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://www.menu-tr.com/de/antalya/kas/restoran/isik-lokantasi-cerciler",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çorba, döner ve sulu yemek çeşitleri"
+        }
+      ],
+      "pros": [
+        "Turistik fiyatlardan uzak gerçek Kaş esnaf lokantası",
+        "İyi pişmiş kömürde piliç ve temiz mutfak"
+      ],
+      "cons": [
+        "Liman bölgesinden birkaç blok doğuda kalması"
+      ],
+      "uncertainties": [
+        "Akşam geç saatlerde sulu yemek çeşitleri tükenmiş olabiliyor"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-kurukopru",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kaş Kuruköprü Kebap-Çorba-Dürüm",
+      "branchName": "Andifli, Öztürk Sk. No:9 07580, 07580 Kaş/Antalya",
+      "placeId": "ChIJDxr_L2jbwRQRlrCHgFrhKfY",
+      "coordinates": {
+        "lat": 36.2003892,
+        "lng": 29.641251599999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 807,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/kaskurukopru/",
+      "mapsUri": "https://maps.google.com/?cid=17737956386195091606",
+      "recommendedPrimary": [
+        "Adana Kebap",
+        "Beyran Çorbası",
+        "Kelle Paça Çorbası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Tablacı Salatası & Közlenmiş Soğan",
+          "note": "Kebap porsiyonuyla gelen ince kıyım sumaklı tablacı salatası ve sıcak lavaş ikilisi masada fark yaratıyor.",
+          "proof": "Hürriyet en iyi 10 kebapçı seçkisi ve Ghost of Kaş rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı iç salon ve sokak önü pratik masalar",
+        "crowdAndNoise": "Gündüz kebapçılarla, gece geç saatlerde çorba arayanlarla dolu",
+        "disadvantage": "Geleneksel kebap-çorba salonu atmosferi hızlı öğün ve gece çorbasına yönelik; romantik ortam arayanlara uymaz",
+        "transit": "Atatürk Bulvarı üzerinden Öztürk Sokak içine yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=17737956386195091606",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Resmi Instagram",
+          "url": "https://www.instagram.com/kaskurukopru/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Adana kebap ve çorba çeşitleri"
+        },
+        {
+          "title": "Hürriyet Lezzetli Hayat",
+          "url": "https://www.hurriyet.com.tr/kelebek/lezzetli-hayat/sayfiyenin-en-iyi-10-kebapcisi-her-zaman-kebap-diyenlere-42892442",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sayfiye kebapçıları listesinde övgü"
+        },
+        {
+          "title": "Ghost of Kaş Rehberi",
+          "url": "https://ghostofkas.com/tr/rehberler/kasta-ucuz-yemek/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Gece beyran ve kelle paça çorbası önerisi"
+        }
+      ],
+      "pros": [
+        "Ulusal basın listelerine girmiş Adana kebap ustalığı",
+        "Gece geç saatlere kadar sıcak beyran ve kelle paça"
+      ],
+      "cons": [
+        "Küçük ve sade mekan dekoru"
+      ],
+      "uncertainties": [
+        "Gece yoğunluğunda çorba çeşitlerinden bazıları sabaha karşı bitebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-mey-et-ocakbasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kaş Mey Et Ocakbaşı",
+      "branchName": "Andifli, Ortaokul Sk. kapı no 3, 07580 Kaş/Antalya",
+      "placeId": "ChIJPSl2sfLbwRQRKlwY2shY7_8",
+      "coordinates": {
+        "lat": 36.199856,
+        "lng": 29.640446299999997
+      },
+      "rating": 4.8,
+      "userRatingCount": 204,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.kasmeyet.com/",
+      "mapsUri": "https://maps.google.com/?cid=18442056618781203498",
+      "recommendedPrimary": [
+        "Adana Kebap",
+        "Küşleme & Kuzu Şiş",
+        "Ciğer Şiş"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Arnavut Ciğeri & Güveçte Sıcak Humus",
+          "note": "Ocakbaşı etleri öncesinde masaya gelen sıcak humus, Arnavut ciğeri ve kaşık salata akşam sofrasını dengeliyor.",
+          "proof": "kasmeyet.com resmi menüsü ve Menu-TR Kaş Mey Et sayfası"
+        }
+      ],
+      "suitability": {
+        "seating": "Ocakbaşı etrafı masalar ve açık hava sokak terası",
+        "crowdAndNoise": "Et sever arkadaş grupları ve akşam yemekleriyle dengeli dolu",
+        "disadvantage": "Belirli akşamlar canlı müzik olması sessiz bir ocakbaşı sohbeti arayanlar için tempoyu yükseltebiliyor",
+        "transit": "Cumhuriyet Meydanı arkasındaki Ortaokul Sokak üzerinde yürüyerek bir dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=18442056618781203498",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Resmi Web Sitesi",
+          "url": "http://www.kasmeyet.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Adana kasap kültürü ve ocakbaşı menüsü"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://www.menu-tr.com/en/antalya/kas/restoran/kas-mey-et",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Et çeşitleri ve ocakbaşı sunumu"
+        }
+      ],
+      "pros": [
+        "Kaş Merkezde gerçek Adana kasap ve zırh kebabı geleneği",
+        "Küşleme ve ciğer şiş gibi güçlü et kesimleri"
+      ],
+      "cons": [
+        "Canlı müzik günlerinde yüksek ses seviyesi"
+      ],
+      "uncertainties": [
+        "Sezon dışı canlı müzik takvimi değişkenlik gösterebiliyor"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kas-kastavadondurma",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kastava Tava Dondurma",
+      "branchName": "Andifli, Hükümet Cd. No:2, 07580 Kaş/Antalya",
+      "placeId": "ChIJx0Z_bffbwRQRWlCADDxN-KY",
+      "coordinates": {
+        "lat": 36.1988355,
+        "lng": 29.641982000000002
+      },
+      "rating": 4.6,
+      "userRatingCount": 414,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12031451324823392346",
+      "recommendedPrimary": [
+        "Taze Meyveli Tava Dondurma",
+        "Çikolata & Oreolu Rulo Dondurma",
+        "Tahinli Cevizli Tava Dondurma"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kişiye Özel Ekstra Meyve ve Kuruyemiş Topingleri",
+          "note": "Soğuk sac üzerinde ezilip rulo yapılan baz dondurmanın üstüne seçilen taze meyve ve krokan dokunuşları öne çıkıyor.",
+          "proof": "Menu-TR ve Restoranim Kastavadondurma değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sokak vitrini önünde ayakta sipariş ve al-götür düzeni",
+        "crowdAndNoise": "Akşam yemeği sonrası Liman yürüyüşünde sıraya giren tatlıcılarla kalabalık",
+        "disadvantage": "Oturma alanı bulunmadığı için al-götür şeklinde tüketiliyor; yaz akşamlarında hazırlama sırası oluşabiliyor",
+        "transit": "Kaş Limanı girişi ve Cumhuriyet Meydanı kenarında yürüyerek bir dakika"
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps Profili",
+          "url": "https://maps.google.com/?cid=12031451324823392346",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://www.menu-tr.com/antalya/kas/dondurma-dukkani/kastavadondurmabyerdinc",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Soğuk sac tava dondurma detayları"
+        },
+        {
+          "title": "Restoranim",
+          "url": "https://restoranim.net/antalya/kas/dondurmaci/kastavadondurma-byerdinc",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze meyveli rulo dondurma deneyimleri"
+        },
+        {
+          "title": "Biz Evde Yokuz Kaş",
+          "url": "https://www.bizevdeyokuz.com/kas/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Cumhuriyet Meydanı civarı tava dondurma geleneği"
+        }
+      ],
+      "pros": [
+        "Siparişe özel taze meyveyle anında hazırlanan rulo dondurma",
+        "Merkez liman yürüyüşü üzerinde kolay erişim"
+      ],
+      "cons": [
+        "Oturma masası olmaması ve yaz akşamları oluşan sıra"
+      ],
+      "uncertainties": [
+        "Kış sezonunda tezgah açılış durumu mevsime göre değişebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    }
+  ]
+}

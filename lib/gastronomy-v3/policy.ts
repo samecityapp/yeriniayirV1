@@ -243,6 +243,16 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   '404 coffee',
   'burger 242',
   'pizza la vera',
+  'moc coffee',
+  'moc coffee roastery',
+  'levent borek',
+  'levent börek',
+  'saliha sultan',
+  'nurdos',
+  'nurdos kaş',
+  'nurdos kas',
+  'yomumu',
+  'mama africa',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([
