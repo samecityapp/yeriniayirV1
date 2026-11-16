@@ -1,0 +1,2557 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "mugla-bodrum-bitez",
+  "displayName": "Bitez, Bodrum, Muğla",
+  "verifiedAt": "2026-11-16T19:02:38.681Z",
+  "selectedCount": 26,
+  "rejectedControls": [
+    {
+      "id": "ctrl-bitez-dondurmacisi",
+      "resolvedName": "Bitez Dondurmacısı",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bitez-bodrum-dondurmacisi",
+      "resolvedName": "Bodrum Dondurmacısı BİTEZ Şubesi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bitez-eleos",
+      "resolvedName": "Eleos Bodrum",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bitez-pasaport-pizza",
+      "resolvedName": "Pasaport Pizza Bodrum Bitez",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bitez-david-people",
+      "resolvedName": "David People Bodrum",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bitez-starbucks",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bitez-levent-borek",
+      "resolvedName": "Levent Börek",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bitez-pizza-locale",
+      "resolvedName": "Pizza Locale Bodrum",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bitez-cookshop",
+      "resolvedName": "Bodrum Cookshop",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bitez-deniz-hotel",
+      "resolvedName": "Bitez Deniz Hotel - Restaurant - Beach",
+      "reason": "invalid_place_type:hotel"
+    },
+    {
+      "id": "ctrl-bitez-oslo",
+      "resolvedName": "OSLO BİTEZ",
+      "reason": "recent_quality_degradation:Yerel harita ve işletme kayıtlarında Çökertme Cd. No:90 kaydı için faal olmama ve isim belirsizliği sinyali"
+    },
+    {
+      "id": "ctrl-bitez-bagarasi",
+      "resolvedName": "Bağarası Restaurant",
+      "reason": "below_quality_threshold:★4.3(881)"
+    },
+    {
+      "id": "ctrl-bitez-balikci-ismet",
+      "resolvedName": "Balikçı İsmet - Bitez",
+      "reason": "below_quality_threshold:★4.2(585)"
+    },
+    {
+      "id": "ctrl-bitez-verona",
+      "resolvedName": "Verona Bitez",
+      "reason": "below_quality_threshold:★4.3(406)"
+    },
+    {
+      "id": "ctrl-bitez-gumsal",
+      "resolvedName": "Gumsal",
+      "reason": "below_quality_threshold:★4.3(198)"
+    },
+    {
+      "id": "ctrl-bitez-kurul",
+      "resolvedName": "Kurul Bitez",
+      "reason": "below_quality_threshold:★4(852)"
+    },
+    {
+      "id": "ctrl-bitez-bitz-lounge",
+      "resolvedName": "Bitz Lounge Bodrum",
+      "reason": "below_quality_threshold:★4.3(704)"
+    },
+    {
+      "id": "ctrl-bitez-pescador",
+      "resolvedName": "PESCADOR RESTORAN",
+      "reason": "below_quality_threshold:★4.1(225)"
+    },
+    {
+      "id": "ctrl-bitez-almera",
+      "resolvedName": "Almera Restaurant",
+      "reason": "below_quality_threshold:★4.2(278)"
+    },
+    {
+      "id": "ctrl-bitez-koftecisi",
+      "resolvedName": "Bitez Koftecisi",
+      "reason": "below_quality_threshold:★4.2(549)"
+    },
+    {
+      "id": "ctrl-bitez-bob-burger",
+      "resolvedName": "Bob Burger",
+      "reason": "missing_rating_metrics"
+    },
+    {
+      "id": "ctrl-bitez-rascal-pizza",
+      "resolvedName": "Rascal Napolitan Pizza & Panuozzo",
+      "reason": "below_quality_threshold:★5(1)"
+    },
+    {
+      "id": "ctrl-bitez-havandan-konacik-outside",
+      "resolvedName": "Havandan",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Bitez, adres: Konacık, Adliye Cd. B Blok No:1 İç Kapı No:1, 48400 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-bitez-hey-joe-konacik-outside",
+      "resolvedName": "Hey Joe Bodrum",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Bitez, adres: Konacık Mahallesi Kanuni Sultan Süleyman Caddesi, Konacık, Kubilay Sokak No:11B/3, 48480 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-bitez-vula-konacik-outside",
+      "resolvedName": "Vula Bodrum",
+      "reason": "outside_strict_neighborhood:Bbox dışında (37.04826, 27.38228)"
+    },
+    {
+      "id": "ctrl-bitez-kruvasanci-outside",
+      "resolvedName": "Kruvasancı",
+      "reason": "outside_strict_neighborhood:Bbox dışında (37.04816, 27.38246)"
+    },
+    {
+      "id": "ctrl-bitez-cheers-gumbet-outside",
+      "resolvedName": "Cheers Restaurant",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Bitez, adres: Gümbet, Adnan Menderes Cd. No:31, 48400 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-bitez-madu-gumbet-outside",
+      "resolvedName": "Madu Bodrum",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Bitez, adres: Gümbet, 3144. Sk. No: 10/12, 48400 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-bitez-landscape-gumbet-outside",
+      "resolvedName": "Landscape Bistro",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Bitez, adres: Gümbet, Ayaz Cd. no:11/1-2, 48400 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-bitez-suzgec-muskebi-outside",
+      "resolvedName": "Süzgeç",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Bitez, adres: Müskebi, Müskebi Cd. No:188, 48400 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-bitez-yuzgec-muskebi-outside",
+      "resolvedName": "Yüzgeç",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Bitez, adres: Müskebi, Müskebi Cd. No:194/3, 48400 Bodrum/Muğla)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "il-mio-sogno-bitez",
+      "categoryId": "pizza",
+      "resolvedName": "il mio sogno",
+      "branchName": "Bitez, Adliye Cd. No:42/A, 48100 Bodrum/Muğla",
+      "placeId": "ChIJNxmXPfJtvhQRvqpPmPOLKxQ",
+      "coordinates": {
+        "lat": 37.0428188,
+        "lng": 27.378495599999997
+      },
+      "rating": 4.4,
+      "userRatingCount": 201,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.ilmiosogno.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=1453409183105788606",
+      "recommendedPrimary": [
+        "Bufala Pizza",
+        "Diavola Pizza",
+        "4 Formaggi Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Yapımı İtalyan Makarnaları",
+          "note": "Pizza dışında akşam masalarında taze soslarla günlük hazırlanan makarna tabakları öne çıkar.",
+          "proof": "OGGUSTO ve The Magger Bitez seçkisi"
+        },
+        {
+          "name": "Tiramisu",
+          "note": "Yemek sonunda İtalyan klasiklerine sadık kalınarak hazırlanan imza tatlı seçeneğidir.",
+          "proof": "Müdavim.net gastronomi incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Adliye Caddesi cephesinde şık akşam yemek masaları ve samimi iç salon düzeni",
+        "crowdAndNoise": "Akşam saatlerinde çiftler ve sakin İtalyan mutfağı arayan gruplarla dengeli tempo",
+        "disadvantage": "Köy içi caddede bulunduğundan deniz manzarası sunmaz; yaz akşamlarında sınırlı masa sayısı nedeniyle rezervasyon gerekebilir",
+        "transit": "Bitez Adliye Caddesi No:42/A üzerinde Köy İçi yürüyüş aksında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "OGGUSTO — Il Mio Sogno Bitez İncelemesi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Modern İtalyan mutfağı, Roma usulü pizza ve el yapımı makarna vurgusu"
+        },
+        {
+          "title": "theMagger — Bodrum Bitez İtalyan Mutfağı",
+          "url": "https://www.themagger.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Şef Lorenzo Pellecchia ve Pizzaiolo Marco Melluzi imzalı taş fırın pizza detayları"
+        },
+        {
+          "title": "Müdavim.net — Il Mio Sogno Bitez",
+          "url": "https://www.mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tiramisu ve akşam servisi değerlendirmeleri"
+        },
+        {
+          "title": "Il Mio Sogno Resmi Web Sitesi",
+          "url": "https://www.ilmiosogno.com.tr/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Margherita, Bufala, Funghi ve 4 Formaggi menü doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=1453409183105788606",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bitez Adliye Cd. No:42/A konum ve italian_restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "İtalyan şef ve pizzaiolo yönetimiyle Roma usulü ince hamurlu taş fırın pizzaları sunması",
+        "Deniz kıyısındaki kalabalık mekanlara alternatif şık ve odaklı köy içi trattoria atmosferi"
+      ],
+      "cons": [
+        "Ana cadde üzerinde kaldığından sahil veya bahçe manzarası bulunmaz",
+        "Orta-üst fiyat segmentinde konumlanır ve yoğun akşamlarda yer bulmak zorlaşabilir"
+      ],
+      "uncertainties": [
+        "Yaz sezonu dışındaki çalışma günleri ve kış takvimi dönemsel değişebiliyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "elvis-bar-bitez",
+      "categoryId": "pizza",
+      "resolvedName": "Elvis Bar",
+      "branchName": "Bitez, Pomelan Cd. No : 8, 48470 Bodrum/Muğla",
+      "placeId": "ChIJs-JiyHVtvhQRlCoOWuisIDM",
+      "coordinates": {
+        "lat": 37.0290429,
+        "lng": 27.3801074
+      },
+      "rating": 4.7,
+      "userRatingCount": 99,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://cipasso.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=3684134609132333716",
+      "recommendedPrimary": [
+        "Picante Pizza",
+        "Quattro Formaggi Pizza",
+        "Margherita Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kremalı Risotto Çeşitleri",
+          "note": "Pizza fırınının yanında mutfağın öne çıkan diğer İtalyan ana yemek grubudur.",
+          "proof": "Restoranim.net ve Wanderlog kayıtları"
+        },
+        {
+          "name": "Malanzane Vejetaryen Pizza",
+          "note": "Izgara patlıcan, kabak, biber ve pesto rosso sosla etsiz pizza seçeneği sunar.",
+          "proof": "Yemeksepeti menü listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Pomelan Caddesi boyunca açık hava sokak masaları ve samimi bar bölümü",
+        "crowdAndNoise": "Günün sakin öğünlerinden akşam karaoke ve müzikli bar saatlerine doğru hareketlenen karma kitle",
+        "disadvantage": "Bazı akşamlarda karaoke ve bar etkinlikleri nedeniyle sessiz bir akşam yemeği arayanlar için ses seviyesi yükselebilir; haritalarda Cipasso Pizza Risotto ve Elvis Bar ikili adıyla geçer",
+        "transit": "Bitez Yalısı Pomelan Caddesi No:8 üzerinde sahile yürüyüş mesafesinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Restaurant Guru — Elvis Bar Bitez",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Pomelan Caddesi No:8/B konumu, samimi bar atmosferi ve uygun fiyat-performans notları"
+        },
+        {
+          "title": "Yemeksepeti — Elvis Bar / Cipasso Menü",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Margherita, Picante, Quattro Formaggi, Don Pedro ve Malanzane pizza menü kayıtları"
+        },
+        {
+          "title": "Wanderlog — Pizza Risotto and Elvis Bar",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bitez sahil arka sokağında İtalyan pizza, risotto ve kokteyl değerlendirmesi"
+        },
+        {
+          "title": "Cipasso Resmi Sitesi",
+          "url": "http://cipasso.com.tr/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Elvis Bar ile ortak İtalyan mutfağı işletme kaydı"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=3684134609132333716",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Pomelan Cd. No:8 konum ve italian_restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "Bitez Yalısı sahil şeridine kıyasla daha ulaşılabilir fiyatlarla taze pizza ve risotto sunması",
+        "Gündüz İtalyan mutfağı, gece sosyal mahalle barı olarak uzun saatler açık kalabilmesi"
+      ],
+      "cons": [
+        "Karaoke ve canlı etkinlik gecelerinde müzik seviyesi sakin yemek beklentisine uymayabilir",
+        "İtalyan mutfağı Cipasso ile bar kimliği Elvis Bar aynı adreste iç içe işletiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışında canlı müzik ve karaoke günlerinin sıklığı döneme göre değişebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "odd-burger-bitez",
+      "categoryId": "hamburger",
+      "resolvedName": "Odd Burger Co.",
+      "branchName": "Bitez, Kavaklı Sarnıç Cd. No: 25 D:101, 48400 Bodrum/Muğla",
+      "placeId": "ChIJd3O_SDptvhQRXrrSj0KHR-A",
+      "coordinates": {
+        "lat": 37.040983,
+        "lng": 27.3973074
+      },
+      "rating": 4.9,
+      "userRatingCount": 592,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.oddburger.co/",
+      "mapsUri": "https://maps.google.com/?cid=16161034507792857694",
+      "recommendedPrimary": [
+        "Hulky Burger",
+        "Diablo Burger",
+        "Cheeseburger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Lav & Maki Soslu İmza Eşleşmeleri",
+          "note": "Acı chili lav sosu ile taze otlu maki sosu klasik cheddar çizgisinin dışına çıkmak isteyenler tarafından tercih edilir.",
+          "proof": "Yemeksepeti menü içerikleri"
+        },
+        {
+          "name": "Ev Yapımı Soslu Patates Kızartması",
+          "note": "Burger menülerin yanında günlük taze soslarla sunulan tamamlayıcı yan üründür.",
+          "proof": "Restaurant Guru misafir değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kavaklı Sarnıç Caddesi üzerinde ferah bahçe masaları ve içinde ücretsiz atari kutusu bulunan modern salon",
+        "crowdAndNoise": "Akşam saatlerinde genç gruplar, gurme burger meraklıları ve çocuklu ailelerle enerjik ama rahat tempo",
+        "disadvantage": "Sahil bandından içeride yer aldığından deniz manzarası bulunmaz; nadiren köfte pişme derecesi ve yüksek yaz fiyatları konusunda eleştiri alabiliyor",
+        "transit": "Bitez Kavaklı Sarnıç Caddesi No:25 D:101 üzerinde kolay park imkanı bulunan iç aks"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "OGGUSTO — Bodrum Gurme Burger Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kadıköy kökenli smash burger ve özgün sos konsepti incelemesi"
+        },
+        {
+          "title": "Ege Telgraf — Odd Burger Bitez",
+          "url": "https://www.egetelgraf.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Günlük taze çekilen et, ev yapımı ekmek ve odun ateşi pişirme tekniği haberi"
+        },
+        {
+          "title": "Yemeksepeti — Odd Burger Co. Bitez",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hulky ve Diablo burger reçeteleri ile yüksek lezzet değerlendirmeleri"
+        },
+        {
+          "title": "Restaurant Guru — Odd Burger Co.",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Park kolaylığı, atari kutusu detayı ve güler yüzlü servis geri bildirimleri"
+        },
+        {
+          "title": "Odd Burger Resmi Web Sitesi",
+          "url": "http://www.oddburger.co/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Bitez şube ve menü doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=16161034507792857694",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kavaklı Sarnıç Cd. No:25 konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Kendi mutfağında hazırlanan ekmekler, günlük etler ve özgün soslarla Bitez burger standardını yükseltmesi",
+        "Atari kutusu ve geniş ulaşım-park kolaylığıyla arkadaş grupları ve aileler için rahat olması"
+      ],
+      "cons": [
+        "Gurme burger kategorisinde fiyat seviyesi standart fast-food zincirlerinin üzerinde yer alır",
+        "Bazı geri bildirimlerde köfte pişme derecesinin siparişte özellikle belirtilmesi gerektiği not ediliyor"
+      ],
+      "uncertainties": [
+        "Sezon içi yoğunluklarda paket servis ve masa servisi bekleme süreleri artabiliyor"
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mid-burger-bitez",
+      "categoryId": "hamburger",
+      "resolvedName": "Mid Burger Bitez",
+      "branchName": "Bitez, Cumhuriyet Cd. No: 70/b, 48470 Bodrum/Muğla",
+      "placeId": "ChIJa6YkZwxtvhQRirSpPdn35tw",
+      "coordinates": {
+        "lat": 37.0425727,
+        "lng": 27.379211899999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 124,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://instagram.com/midburgerbodrum",
+      "mapsUri": "https://maps.google.com/?cid=15917682445402092682",
+      "recommendedPrimary": [
+        "Mexico Burger",
+        "Mushroom Burger",
+        "Cheeseburger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Soğan Halkası & Özel Mid Sos",
+          "note": "Burgerlerin yanında tercih edilen çıtır atıştırmalık ve imza sos eşlikçisidir.",
+          "proof": "Yandex Harita ve menü kayıtları"
+        },
+        {
+          "name": "Brioche Ekmekli Cheeseburger",
+          "note": "Acılı veya mantarlı çeşitler yerine sade eritilmiş cheddar sevenler için klasik alternatiftir.",
+          "proof": "Restaurant Guru menü özetleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Cumhuriyet Caddesi üzerinde kompakt cadde önü masaları ve paket servis tezgahı",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde bölge sakinleri ile hızlı burger arayan tatilcilerle akıcı tempo",
+        "disadvantage": "Küçük bir köy içi dükkanı olduğundan geniş bahçe veya deniz manzarası sunmaz; bazı misafir geri bildirimlerinde patates kızartması kalitesinin burger köftesinin gerisinde kalabildiği belirtilmiştir",
+        "transit": "Bitez Köy İçi Cumhuriyet Caddesi No:70/B üzerinde merkez yürüyüş aksında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Restaurant Guru — Mid Burger Bitez",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Craft burger reçeteleri ve hızlı servis değerlendirmeleri"
+        },
+        {
+          "title": "Yandex Harita — Mid Burger Bitez & Yahşi",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mexico Burger, Mushroom Burger, brioche ekmek övgüleri ve patates kızartması eleştirisi"
+        },
+        {
+          "title": "Mid Burger Bodrum Resmi Instagram",
+          "url": "https://instagram.com/midburgerbodrum",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Bitez Cumhuriyet Caddesi şube ve ürün paylaşımları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=15917682445402092682",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bitez Cumhuriyet Cd. No:70/B konum ve hamburger_restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "Brioche ekmek dokusu, doyurucu köfte gramajı ve Mexico/Mushroom gibi özgün burger seçenekleri",
+        "Bitez Köy İçi merkezinde pratik ve hızlı bir yerel burger durağı olması"
+      ],
+      "cons": [
+        "Patates kızartması ve yan ürün performansı dönemsel olarak burger kalitesinin gerisinde kalabiliyor",
+        "Oturma kapasitesi sınırlı olduğundan kalabalık gruplar yerine paket veya hızlı öğüne daha uygundur"
+      ],
+      "uncertainties": [
+        "Sezon dışı aylarda akşam kapanış saatleri talebe göre erken çekilebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fika-coffee-tea-bitez",
+      "categoryId": "kahve",
+      "resolvedName": "Fika Coffee Tea",
+      "branchName": "Bitez, Kanuni Sultan Süleyman Cd. No:2, 48470 Bodrum/Muğla",
+      "placeId": "ChIJhfuJW_ZtvhQRn7sc5085cG0",
+      "coordinates": {
+        "lat": 37.0428873,
+        "lng": 27.3980079
+      },
+      "rating": 4.8,
+      "userRatingCount": 269,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/fika.coffeeshop/",
+      "mapsUri": "https://maps.google.com/?cid=7885865962868358047",
+      "recommendedPrimary": [
+        "Pour-Over Filtre Kahve",
+        "Flat White & Cortado",
+        "Chai Tea Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Dolgulu Kruvasanlar",
+          "note": "Siparişe göre hazırlanan tatlı ve tuzlu dolgulu çeşitleriyle sabah kahvesinin en sık tercih edilen eşlikçisidir.",
+          "proof": "Yandex Harita ve Mesprestiges incelemesi"
+        },
+        {
+          "name": "Kahvaltı Kaseleri",
+          "note": "Hafif sabah öğünü arayanlar için üçüncü nesil kahve menüsünü tamamlar.",
+          "proof": "Bodrum Mekan Rehberi ve Mesprestiges"
+        }
+      ],
+      "suitability": {
+        "seating": "Ahşap detaylar ve bitkilerle düzenlenmiş ferah iç salon, çalışma masaları ve dış cephe oturma alanı",
+        "crowdAndNoise": "Sabah saatlerinden öğleden sonraya kadar sakin çalışanlar, kitap okuyanlar ve kahve tutkunlarıyla huzurlu tempo",
+        "disadvantage": "Bitez sahilinden uzak ve doğu sınırına yakın bir konumda yer alır; mevsimlik dönemde çalışma saatleri erken kapanışa dönebiliyor",
+        "transit": "Bitez Kanuni Sultan Süleyman Caddesi No:2 üzerinde (Zeytinli Cd. yakınında)"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Mesprestiges — Fika Coffee Bitez İncelemesi",
+          "url": "https://www.mesprestiges.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İsveç fika kültürü, pour-over demlemeler, yerel seramikler ve sakin çalışma ortamı detayı"
+        },
+        {
+          "title": "Bodrum Mekan Rehberi — Fika Coffeetea",
+          "url": "https://www.bodrummekanrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Nitelikli kahveler, chai latte ve Kanuni Sultan Süleyman Cd. adres bilgisi"
+        },
+        {
+          "title": "Wanderlog — Fika Coffee Shop",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İskandinav dekorasyon, bitkili ferah ortam ve kruvasan değerlendirmeleri"
+        },
+        {
+          "title": "Yandex Harita — Fika Coffeetea Bitez",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Siparişe göre doldurulan taze kruvasanlar ve kahve kalitesi geri bildirimleri"
+        },
+        {
+          "title": "Fika Coffee Shop Resmi Instagram",
+          "url": "https://www.instagram.com/fika.coffeeshop/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Aktif işletme ve mevsimsel menü paylaşımları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=7885865962868358047",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bitez Kanuni Sultan Süleyman Cd. No:2 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Pour-over ve nitelikli espresso demlemelerinde Bitez standartlarının üzerinde istikrar sağlaması",
+        "Çalışmaya ve kitap okumaya uygun sakin İskandinav atmosferi ve taze kruvasan eşlikçileri"
+      ],
+      "cons": [
+        "Bitez Yalısı sahil şeridinden yürüyüşle biraz içeride ve doğu ucunda konumlanır",
+        "Kış ve ara sezonlarda açılış-kapanış takvimi dönemsel değişebiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışı dönem çalışma saatleri resmi sosyal medya hesabından kontrol edilmelidir"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cafe-fina-bitez",
+      "categoryId": "kahve",
+      "resolvedName": "Cafe Fina",
+      "branchName": "Bitez, Cumhuriyet Cd. no:70/A, 48470 Bodrum/Muğla",
+      "placeId": "ChIJ0cy--P1zvhQRoyTIYnhkNaY",
+      "coordinates": {
+        "lat": 37.0425622,
+        "lng": 27.3792077
+      },
+      "rating": 5,
+      "userRatingCount": 93,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/cafe.fina/",
+      "mapsUri": "https://maps.google.com/?cid=11976589252277839011",
+      "recommendedPrimary": [
+        "Americano & Siyah Kahve",
+        "Espresso Bazlı Sütlü Kahveler",
+        "Ev Yapımı Soğuk Çay"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Brownie & Scone Seçkisi",
+          "note": "Her gün taze pişirilen ev yapımı tatlı ve hamur işleri kahve molasının imza eşlikçisidir.",
+          "proof": "theMagger Bitez rehberi ve Yandex kayıtları"
+        },
+        {
+          "name": "Fit Snickers & Taze Salatalar",
+          "note": "Rafine şeker alternatifleri ve hafif öğün tercih eden misafirler için vitrinde yer alır.",
+          "proof": "Wanderlog ve theMagger kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Mavi-beyaz dekore edilmiş samimi iç mekan, prizli çalışma köşeleri ve köy içi sokak masaları",
+        "crowdAndNoise": "Sabah ve öğleden sonra kitap okuyanlar, dizüstü bilgisayarıyla çalışanlar ve mahalle sakinleriyle sakin",
+        "disadvantage": "Sabit geniş bir yemek menüsü yerine günlük taze üretilen kısıtlı vitrinle çalışır; oturma kapasitesi butik ölçektedir",
+        "transit": "Bitez Köy İçi Cumhuriyet Caddesi No:70/A üzerinde merkez yürüyüş güzergahında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "theMagger — Bitez Rehberi & Cafe Fina",
+          "url": "https://www.themagger.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sıla Uçan tarafından açılan mekanın günlük brownie, scone, salata ve ev yapımı soğuk çay detayları"
+        },
+        {
+          "title": "Wanderlog — Cafe Fina Bitez",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Prizli çalışma imkanı, müzik seçkisi, uygun fiyat ve yüksek kahve kalitesi değerlendirmeleri"
+        },
+        {
+          "title": "Yandex Harita — Cafe Fina Bitez",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Cumhuriyet Cd. No:70/A konumu, fit snickers ve mavi-beyaz konsept notları"
+        },
+        {
+          "title": "Cafe Fina Resmi Instagram",
+          "url": "https://www.instagram.com/cafe.fina/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Günlük taze ürünler ve işletme duyuruları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=11976589252277839011",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Cumhuriyet Cd. No:70/A konum ve coffee_shop / coworking_space doğrulaması"
+        }
+      ],
+      "pros": [
+        "Bitez sahil hattına kıyasla daha ulaşılabilir fiyatlarla nitelikli kahve ve ev yapımı tatlı sunması",
+        "Priz imkanı ve sakin müzik seçkisiyle Köy İçi içinde çalışmaya uygun nadir noktalardan biri"
+      ],
+      "cons": [
+        "Sabit menü yerine günlük çıkan ürünlerle çalıştığından günün geç saatlerinde tatlı çeşitleri tükenebiliyor",
+        "Küçük metrekare nedeniyle kalabalık arkadaş grupları için yer bulmak zorlaşabilir"
+      ],
+      "uncertainties": [
+        "Günlük değişen tatlı ve yiyecek vitrini mevsime göre farklılık gösterebiliyor"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "basel-bitez",
+      "categoryId": "kahve",
+      "resolvedName": "BASEL Bitez",
+      "branchName": "Bitez, 1965 Sk No: 23B D:1, 48470 Bodrum/Muğla",
+      "placeId": "ChIJr6Ai_4FtvhQRo4np8yOnF-g",
+      "coordinates": {
+        "lat": 37.0434741,
+        "lng": 27.379384899999998
+      },
+      "rating": 5,
+      "userRatingCount": 123,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16724019514121488803",
+      "recommendedPrimary": [
+        "Espresso Bazlı Kahveler",
+        "Filtre Kahve",
+        "Soğuk Kahve Çeşitleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Taze Kurabiyeler",
+          "note": "Kahve eşlikçisi olarak taze çıkarılan kurabiye ve unlu mamuller sade menüyü tamamlar.",
+          "proof": "Bodrum Flow ve Yandex Harita kayıtları"
+        },
+        {
+          "name": "Sessiz Kitap Okuma Buluşmaları",
+          "note": "Sabahları düzenlenen sessiz okuma saatleriyle dijitalden uzak bir kafe deneyimi sunar.",
+          "proof": "Bodrum Flow etkinlik takvimi"
+        }
+      ],
+      "suitability": {
+        "seating": "1965. Sokak üzerinde gürültüden uzak iç mekan ve sakin sokak masaları",
+        "crowdAndNoise": "Mahalle müdavimleri, kitap okuma grupları ve kalabalıktan kaçan ziyaretçilerle dingin tempo",
+        "disadvantage": "Büyük kahvaltı veya sıcak mutfak servisi sunmaz; haftanın bazı günleri kapalı olabilen kısa gündüz saatleriyle çalışır",
+        "transit": "Bitez Mahallesi 1965. Sokak (eski 1128. Sk.) No:23B D:1 adresinde Köy İçi ara sokakta"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Bodrum Flow — BASEL Bitez & Ben Burada Okuyorum",
+          "url": "https://www.bodrumflow.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1965 Sokak konumu, sessiz kitap okuma buluşmaları ve kahve-kurabiye servisi kaydı"
+        },
+        {
+          "title": "Yandex Harita — BASEL Bitez",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ara sokak sakinliği, kahve lezzeti ve temiz atmosfer geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=16724019514121488803",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bitez 1965 Sk. No:23B konum ve cafe doğrulaması"
+        }
+      ],
+      "pros": [
+        "Bitez ana arterlerinin karmaşasından uzak ara sokak sakinliği ve kitap okuma topluluğu kültürü",
+        "Nitelikli kahve ve taze kurabiye odaklı sade, temiz mola noktası"
+      ],
+      "cons": [
+        "Akşam saatlerine uzayan servisi ve geniş yemek menüsü bulunmaz",
+        "Pazartesi günleri kapalı olabiliyor; gitmeden gün kontrolü faydalıdır"
+      ],
+      "uncertainties": [
+        "Sezon dışındaki günlük açılış ve kapanış takvimi işletme tarafından güncellenebiliyor"
+      ],
+      "selectionScore": 96,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cibez-bitez",
+      "categoryId": "date",
+      "resolvedName": "Cibez Bitez",
+      "branchName": "Bitez, Çökertme Cd. no:52 iç kapı no:1, 48470 Bodrum/Muğla",
+      "placeId": "ChIJWVuALlVtvhQRXiapltXsNMI",
+      "coordinates": {
+        "lat": 37.027919,
+        "lng": 27.3779713
+      },
+      "rating": 4.9,
+      "userRatingCount": 218,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13994070344246830686",
+      "recommendedPrimary": [
+        "Tenekede Ahtapot",
+        "Ege Otları & Mezeler",
+        "Balık Çorbası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Hafta Sonu Sıcak Midye & Mangal Sofraları",
+          "note": "Dönemsel etkinlik günlerinde klasik akşam menüsüne ek olarak bahçe ve bar atmosferini canlandırır.",
+          "proof": "Bodrum Flow ve Bodrum Guru kayıtları"
+        },
+        {
+          "name": "Zeytinyağlı Ege Başlangıçları",
+          "note": "İsmini aldığı Ege cibez otu çizgisindeki mevsime göre değişen paylaşmalık tabaklardır.",
+          "proof": "cibezbitez.com ve Bodrum Guru"
+        }
+      ],
+      "suitability": {
+        "seating": "Bitez sahil hattında uzun akşam masaları, bar bölümü ve rahat bahçe oturma düzeni",
+        "crowdAndNoise": "Uzun sohbet sofraları kuran çiftler ve şık ama kasıntısız bir Ege akşamı arayan gruplarla canlı",
+        "disadvantage": "Bitez Yalısı üzerinde yer aldığı için fiyat seviyesi Köy İçi esnaf mekanlarının üzerindedir; yaz akşamlarında rezervasyon gerektirir",
+        "transit": "Bitez Mahallesi Çökertme Caddesi No:52 üzerinde sahil yürüyüş şeridinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Bodrum Guru — Cibez Bitez İncelemesi",
+          "url": "https://www.bodrumguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çökertme Caddesi sahil konumu, Ege-Akdeniz mezeleri ve uzun sohbet sofraları değerlendirmesi"
+        },
+        {
+          "title": "Bodrum Flow — Cibez Bitez Özel Menü & Etkinlikler",
+          "url": "https://www.bodrumflow.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tenekede ahtapot, balık çorbası, sıcak midye ve pazar mangal etkinlikleri kayıtları"
+        },
+        {
+          "title": "Cibez Bitez Resmi Sitesi",
+          "url": "https://cibezbitez.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Çökertme Cd. No:52 konum, yalın sunum felsefesi ve dijital menü doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=13994070344246830686",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çökertme Cd. No:52 konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Bitez sahil hattındaki turistik gürültüden ayrışan samimi uzun sofra ve bar atmosferi",
+        "Klasik meze-balık dengesini tenekede ahtapot ve özel hafta sonu etkinlikleriyle zenginleştirmesi"
+      ],
+      "cons": [
+        "Sahil şeridi konumundan ötürü bütçe seviyesi orta-üst çizgidedir",
+        "Yaz sezonunda ve etkinlik akşamlarında rezervasyonsuz masa bulmak güçleşebiliyor"
+      ],
+      "uncertainties": [
+        "Hafta sonu özel mangal ve köy tavuğu menüleri dönemsel takvime göre açılıyor"
+      ],
+      "selectionScore": 96,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ufak-grillery-bitez",
+      "categoryId": "date",
+      "resolvedName": "Ufak Grillery Bitez",
+      "branchName": "Bitez, Adliye Cd. 35c, 48470 Bodrum/Muğla",
+      "placeId": "ChIJI24KgD1tvhQRCb2UHdieEhc",
+      "coordinates": {
+        "lat": 37.0429636,
+        "lng": 27.3790852
+      },
+      "rating": 4.7,
+      "userRatingCount": 162,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1662565863499545865",
+      "recommendedPrimary": [
+        "Yaprak Ciğer",
+        "Kuzu Şiş & Güngörmez",
+        "Bal Kabaklı Fellah Köfte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bal Kabaklı Fellah Köfte & Fıstık Gibi Meze",
+          "note": "Klasik meyhane mezeleri yerine şef dokunuşuyla hazırlanan az ve öz soğuk başlangıç seçkisidir.",
+          "proof": "Müdavim.net gastronomi incelemesi"
+        },
+        {
+          "name": "İncir Uyutması",
+          "note": "Kömür ateşinden çıkan ana yemeklerin ardından sunulan hafif Ege kapanış tatlısıdır.",
+          "proof": "Müdavim.net menü notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş duvarlı sıcak küçük bahçe masaları ve şefin izlenebildiği seramik detaylı açık mutfak salonu",
+        "crowdAndNoise": "Sakin akşam yemeği, özel kutlamalar ve lezzet odaklı küçük gruplarla dengeli tempo",
+        "disadvantage": "Bahçe kapasitesi adından da anlaşılacağı üzere kısıtlıdır; yaz hafta sonlarında önceden rezervasyon yapılmadan masa bulmak zordur",
+        "transit": "Bitez Adliye Caddesi No:35/C üzerinde Köy İçi yürüyüş güzergahında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Müdavim.net — Ufak Grillery Bitez İncelemesi",
+          "url": "https://www.mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Şef Maruf Dora Giray mutfağı, kömürde sakatat, Bal Kabaklı Fellah Köfte ve İncir Uyutması detayı"
+        },
+        {
+          "title": "Restaurant Guru — Ufak Grillery Bitez",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Açık mutfak atmosferi, et pişirme dengesi ve Köy İçi konumu değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=1662565863499545865",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bitez Adliye Cd. 35/C konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Klasik Bodrum meyhanelerinden ayrılan açık mutfaklı çağdaş grillery ve şef sakatat reçeteleri",
+        "Az ve öz menü disipliniyle et pişirme kalitesini koruması"
+      ],
+      "cons": [
+        "Küçük metrekareli bahçesi nedeniyle önceden rezervasyon olmadan yer bulmak güçleşebiliyor",
+        "Gurmeye dönük şef mutfağı fiyatlaması mahalle esnaf lokantalarına göre yüksektir"
+      ],
+      "uncertainties": [
+        "Sezon dışı çalışma günleri ve günlük sakatat stokları değişkenlik gösterebiliyor"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mualla-bitez",
+      "categoryId": "date",
+      "resolvedName": "Mualla Bitez",
+      "branchName": "Bitez, Adliye Cd. No:60/5, 48470 Bodrum/Muğla",
+      "placeId": "ChIJkY_hT3JtvhQRNglW7GQ2fj8",
+      "coordinates": {
+        "lat": 37.0411332,
+        "lng": 27.377557600000003
+      },
+      "rating": 4.7,
+      "userRatingCount": 117,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.muallabitez.com/",
+      "mapsUri": "https://maps.google.com/?cid=4575154078544693558",
+      "recommendedPrimary": [
+        "Ege Otları & Zeytinyağlı Mezeler",
+        "Yaprak Ciğer",
+        "Izgara Kalamar & Ahtapot"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mevsimlik Zeytinyağlılar & Girit Ezme",
+          "note": "Mevsime göre güncellenen Rum ve Ege mezeleri uzun rakı masalarının temelini oluşturur.",
+          "proof": "Lokasyo ve Yandex Harita kayıtları"
+        },
+        {
+          "name": "Deniz Mahsullü Ara Sıcaklar",
+          "note": "Soğuk meze başlangıcından sonra sıcak olarak servis edilen kalamar ve ahtapot seçenekleridir.",
+          "proof": "Wanderlog ve işletme tanıtımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Bitez Köy İçi dokusunda akşam meyhaneciliğine uygun bahçe ve masa düzeni",
+        "crowdAndNoise": "Müzikli sohbet akşamlarını seven çiftler ve kalabalık arkadaş masalarıyla keyifli ama canlı tempo",
+        "disadvantage": "Müzik ve eğlence ağırlıklı akşamlarda sessiz ve baş başa bir ortam arayanlara göre hareketli kalabilir; Salı günleri kapalı olabiliyor",
+        "transit": "Bitez Adliye Caddesi No:60/5 üzerinde Köy İçi hattında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Lokasyo — Mualla Bitez Rehberi",
+          "url": "https://lokasyo.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Adliye Caddesi konumu, müzikli Bitez akşamları ve @mualla.bitez rezervasyon bilgisi"
+        },
+        {
+          "title": "Wanderlog — Mualla Bitez",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Rum ve Ege meze çeşitleri, ara sıcaklar ve akşam meyhane atmosferi notları"
+        },
+        {
+          "title": "Yandex Harita — Mualla Bitez Meyhane",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Adliye Cd. No:60/5 konumu, mezelerin tazeliği ve çalışma günleri bilgisi"
+        },
+        {
+          "title": "Mualla Bitez Resmi Sitesi",
+          "url": "http://www.muallabitez.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Bitez şube ve meyhane konsepti doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=4575154078544693558",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Adliye Cd. No:60/5 konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Bitez Köy İçi dokusunda Rum ve Ege mezelerini müzikli meyhane ritmiyle buluşturması",
+        "Paket servis yerine doğrudan masa ve sofra deneyimine odaklanması"
+      ],
+      "cons": [
+        "Yalnızca akşam servisi verir ve Salı günleri kapalı olabiliyor",
+        "Canlı müzik programları sırasında sessiz sohbet önceliği olan masalar için ses yüksek gelebilir"
+      ],
+      "uncertainties": [
+        "Yaz ve kış sezonlarında açık olduğu günler ve müzik takvimi işletme tarafından güncelleniyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatir-lokantasi-bitez",
+      "categoryId": "date",
+      "resolvedName": "Hatır Lokantası",
+      "branchName": "Bitez, Adliye Cd. no:73\\3, 48470 Bodrum/Muğla",
+      "placeId": "ChIJcc1gTSVtvhQRBFNs6s0F8MU",
+      "coordinates": {
+        "lat": 37.0395065,
+        "lng": 27.3768136
+      },
+      "rating": 4.5,
+      "userRatingCount": 523,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14262906401841763076",
+      "recommendedPrimary": [
+        "Hatır Kabak & Kahveli Mantar",
+        "Yaprak Ciğer & Atom Kokoreç",
+        "Izgara Köfte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Topik, Pazı Sarma & Pastırmalı Humus",
+          "note": "Klasik Ege mezelerine eklenen günlük az ve öz soğuk başlangıç seçkisidir.",
+          "proof": "Müdavim.net ve OGGUSTO incelemeleri"
+        },
+        {
+          "name": "Zencefilli Karides & Kalamar",
+          "note": "Et ve sakatat dışında deniz ürünü arayan masalar için günlük stokla servis edilen sıcak tabaklardır.",
+          "proof": "Müdavim.net menü incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Mandalina ve narenciye ağaçları altında ışıklandırılmış geniş ferah bahçe masaları",
+        "crowdAndNoise": "Dost grupları, çiftler ve Bitez yerlileriyle sıcak, samimi ve gürültüsüz akşam sohbet temposu",
+        "disadvantage": "Yaz aylarında yüksek talep nedeniyle rezervasyonsuz masa bulmak güçtür; az ve öz menü yapısı sebebiyle her gün tüm deniz ürünleri bulunmayabilir",
+        "transit": "Bitez Adliye Caddesi No:73/3 üzerinde Bitez Kuru Fasulye bitişiğinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "OGGUSTO — Hatır Lokantası Bitez İncelemesi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Narenciye ağaçları arasındaki bahçe düzeni, günlük zeytinyağlılar ve rezervasyon önerisi"
+        },
+        {
+          "title": "Mesprestiges — Hatır Lokantası Bodrum",
+          "url": "https://www.mesprestiges.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Feridun Düzağaç kurucu vizyonu ve ulaşılabilir fiyatlı lokanta konsepti"
+        },
+        {
+          "title": "Müdavim.net — Hatır Lokantası Menü İncelemesi",
+          "url": "https://www.mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hatır Kabak, Kahveli Mantar, Topik, Atom Kokoreç, Izgara Köfte ve Zencefilli Karides detayları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=14262906401841763076",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bitez Adliye Cd. No:73/3 konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Mandalina ağaçları altındaki huzurlu bahçe atmosferini Bodrum sahiline göre daha makul fiyat politikasıyla sunması",
+        "Sosyal fayda odaklı yaklaşımı ve Kahveli Mantar gibi özgün meze dokunuşları"
+      ],
+      "cons": [
+        "Yüksek sezonda önceden rezervasyon yapılmadığında bahçede yer kalmayabiliyor",
+        "Sınırlı günlük menü nedeniyle her akşam aynı deniz ürünü alternatifi çıkmayabiliyor"
+      ],
+      "uncertainties": [
+        "Sezon içi ve sezon dışı çalışma günleri işletme duyurularına göre değişebiliyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kuytu-bahce-bitez",
+      "categoryId": "kahvalti",
+      "resolvedName": "Kuytu Bahçe Bodrum",
+      "branchName": "Bitez, Limonlu Cd. No:35, 48470 Bodrum/Muğla",
+      "placeId": "ChIJq6tY6qBtvhQRhBICO1aIVB8",
+      "coordinates": {
+        "lat": 37.041532,
+        "lng": 27.392625799999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 1603,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.kuytubahce.com/",
+      "mapsUri": "https://maps.google.com/?cid=2257579217158017668",
+      "recommendedPrimary": [
+        "Serpme Mandalina Bahçesi Kahvaltısı",
+        "El Açması Otlu Börek & Pişi",
+        "Pişi Üstü Avokadolu"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Portakal Kabuğu & Mürdüm Eriği Reçelleri",
+          "note": "Bahçenin kendi meyvelerinden az şekerli olarak hazırlanan reçeller kahvaltı masasının imza parçalarındandır.",
+          "proof": "Mesprestiges ve Bodrum Finder incelemeleri"
+        },
+        {
+          "name": "Peynirli Kabak Çiçeği Kızartması & Bodrum Roll",
+          "note": "Klasik serpme dışında Ege otlu sıcak lezzetlerle kahvaltıyı zenginleştiren mutfak alternatifleridir.",
+          "proof": "kuytubahce.com ve Yandex Harita kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Mandalina ağaçlarının altında gölgeli açık bahçe masaları ve arka kısımda ahşap çocuk salıncağı alanı",
+        "crowdAndNoise": "Sabah ve hafta sonu brunch saatlerinde aileler ve tatilcilerle yüksek doluluk",
+        "disadvantage": "Pazartesi günleri kapalıdır; yoğun yaz hafta sonlarında rezervasyonsuz gelindiğinde bekleme ve servis hızında aksama yaşanabiliyor, fiyat seviyesi turistik bahçe kahvaltısı segmentindedir",
+        "transit": "Bitez Mahallesi Limonlu Caddesi No:35 üzerinde mandalina bahçeleri içinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Bodrum Finder — Kuytu Bahçe Bitez",
+          "url": "https://www.bodrumfinder.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mandalina ağaçları altında bahçe ortamı, ev yapımı reçeller, otlu börek ve Pazartesi tatil bilgisi"
+        },
+        {
+          "title": "Mesprestiges — Kuytu Bahçe Kahvaltı Menüsü",
+          "url": "https://www.mesprestiges.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Pişi Üstü Avokadolu, Bodrum Roll ve tek kişilik kahvaltı tabağı menü doğrulaması"
+        },
+        {
+          "title": "Yandex Harita — Kuytu Bahçe Bodrum",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kabak çiçeği kızartması, bahçe temizliği övgüleri ve yoğun saatlerde servis hızı notları"
+        },
+        {
+          "title": "Kuytu Bahçe Resmi Web Sitesi",
+          "url": "http://www.kuytubahce.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Limonlu Cd. No:35 konum ve kahvaltı menü kapsamı doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=2257579217158017668",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Limonlu Cd. No:35 konum ve breakfast_restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "Gerçek mandalina bahçesi içinde oturma deneyimi, çocuk oyun alanı ve tek kişilik tabak seçeneği",
+        "Bahçeden toplanan meyvelerle yapılan reçeller, taze pişi ve el açması Ege börekleri"
+      ],
+      "cons": [
+        "Hafta sonları ve yüksek sezonda rezervasyonsuz yer bulmak zor; yoğun saatlerde servis yavaşlayabiliyor",
+        "Pazartesi günleri kapalı ve fiyat seviyesi mahalle kahvaltıcılarına göre üst segmentte"
+      ],
+      "uncertainties": [
+        "Sezon dışı dönemdeki çalışma günleri ve bahçe ısıtma düzeni mevsime göre değişebiliyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bake-my-day-bitez",
+      "categoryId": "kahvalti",
+      "resolvedName": "Bake My Day Bitez",
+      "branchName": "Bitez, Adliye Cd. No: 53-1, 48550 Bodrum/Muğla",
+      "placeId": "ChIJUaOTMvttvhQRAoOiQIZAre0",
+      "coordinates": {
+        "lat": 37.040921,
+        "lng": 27.3777679
+      },
+      "rating": 4.4,
+      "userRatingCount": 233,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.bakemydaybodrum.com/",
+      "mapsUri": "https://maps.google.com/?cid=17126415903314051842",
+      "recommendedPrimary": [
+        "Croissant Benedict",
+        "Truffle Cheese Croissant",
+        "Ekşi Mayalı Avokadolu Tartin"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ekşi Mayalı Ekmek & Bagetler",
+          "note": "Kahvaltı tabaklarının ötesinde eve götürmek için günlük çıkarılan geleneksel maya ekmekleridir.",
+          "proof": "Yandex Harita ve T24 gastronomi haberi"
+        },
+        {
+          "name": "Glutensiz & Şekersiz Tatlı Alternatifleri",
+          "note": "Özel beslenme tercihlerine sahip ziyaretçiler için fırın tezgahında yer alan seçeneklerdir.",
+          "proof": "Yandex Harita ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Adliye Caddesi cephesinde açık hava masaları ve fırın vitrini önünde iç oturma düzeni",
+        "crowdAndNoise": "Sabah kahvaltısı ve fırın alışverişi için yerleşik Bodrum sakinleriyle düzenli sabah hareketliliği",
+        "disadvantage": "Geleneksel serpme köy kahvaltısı yerine artizan fırın ve tabak kahvaltı formatındadır; fiyat seviyesi klasik pastanelere kıyasla yüksek bulunuyor",
+        "transit": "Bitez Adliye Caddesi No:53-1 üzerinde Köy İçi ana aksında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "T24 — Bake My Day Bodrum Hikayesi",
+          "url": "https://t24.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Gümüşlük çıkışlı Bodrum artizan fırın markasının Bitez ve yarımada şubeleri haberi"
+        },
+        {
+          "title": "FineDineMenu — Bake My Day Bitez Menü",
+          "url": "https://finedinemenu.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Truffle Cheese Croissant ve Croissant Benedict içerik doğrulaması"
+        },
+        {
+          "title": "Yandex Harita — Bake My Day Bitez",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Artizan kruvasan, glutensiz seçenekler ve yüksek fiyat değerlendirmeleri"
+        },
+        {
+          "title": "Bake My Day Bodrum Resmi Sitesi",
+          "url": "https://www.bakemydaybodrum.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Bitez Adliye Cd. şube ve unlu mamuller doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=17126415903314051842",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bitez Adliye Cd. No:53-1 konum ve bakery doğrulaması"
+        }
+      ],
+      "pros": [
+        "Tereyağlı artizan kruvasan, ekşi mayalı ekmek ve Croissant Benedict gibi modern fırın kahvaltısı sunması",
+        "Glutensiz ve rafine şekersiz ürün alternatifleri bulundurması"
+      ],
+      "cons": [
+        "Serpme kahvaltı beklentisi olanlar için uygun değildir",
+        "Ürün kalitesiyle paralel olarak artizan fırın fiyatlaması yüksek segmentte kalıyor"
+      ],
+      "uncertainties": [
+        "Günlük çıkan sınırlı kruvasan ve ekşi maya çeşitleri öğleden sonra erken tükenebiliyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "van-kahvalti-lounge-bitez",
+      "categoryId": "kahvalti",
+      "resolvedName": "Van Kahvaltı Lounge Bodrum Bitez",
+      "branchName": "Bitez, Bergamut Cd. No: 40, 48470 Bodrum/Muğla",
+      "placeId": "ChIJgZDQGxNtvhQRAx2W3plQ5yE",
+      "coordinates": {
+        "lat": 37.030031300000005,
+        "lng": 27.3788776
+      },
+      "rating": 4.4,
+      "userRatingCount": 1021,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.vankahvaltilounge.com/",
+      "mapsUri": "https://maps.google.com/?cid=2443009944666381571",
+      "recommendedPrimary": [
+        "Van Serpme Kahvaltısı",
+        "Murtuga & Kavut",
+        "Kavurmalı Yumurta"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Van Otlu Peyniri & Mütebbel",
+          "note": "Klasik beyaz peynir çeşitlerinden ayrışan aromatik yöresel peynir ve mezelerdir.",
+          "proof": "Mesprestiges ve resmi menü kayıtları"
+        },
+        {
+          "name": "Bal-Kaymak & Sıcak Hamur İşleri",
+          "note": "Murtuga ve kavut yanında geleneksel tatlı-tuzlu dengesini tamamlayan ikramlardır.",
+          "proof": "Mesprestiges kahvaltı incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Bergamut Caddesi üzerinde mandalina bahçelerine komşu geniş açık hava bahçe masaları",
+        "crowdAndNoise": "Hafta sonu sabahları ve yaz sezonunda kalabalık aile gruplarıyla yoğun",
+        "disadvantage": "Serpme formatı ve lounge yapısı nedeniyle fiyat seviyesi yüksektir; yaz hafta sonu sabah saatlerinde rezervasyonsuz yer bulmak zorlaşabiliyor",
+        "transit": "Bitez Mahallesi Bergamut Caddesi No:40 üzerinde sahile yürüyüş mesafesinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Mesprestiges — Van Kahvaltı Lounge Bitez",
+          "url": "https://www.mesprestiges.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Otlu peynir, murtuga, kavut, mütebbel ve bahçe ortamı incelemesi"
+        },
+        {
+          "title": "Neleri Meşhur — Van Kahvaltı Lounge Bodrum",
+          "url": "https://www.nelerimeshur.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yaz dönemi yoğunluğu, erken saat önerisi ve serpme kahvaltı değerlendirmesi"
+        },
+        {
+          "title": "Van Kahvaltı Lounge Resmi Web Sitesi",
+          "url": "https://www.vankahvaltilounge.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Bitez Bergamut Cd. işletme ve menü doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=2443009944666381571",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bergamut Cd. No:40 konum ve breakfast_restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "Ege pişi-zeytin çizgisinden farklı olarak otantik Van otlu peyniri, murtuga ve kavut sunması",
+        "Yeşillikler içinde geniş bahçe kapasitesiyle kalabalık aile sofralarına elverişli olması"
+      ],
+      "cons": [
+        "Yüksek sezonda hafta sonu sabah yoğunluğu nedeniyle bekleme oluşabiliyor",
+        "Serpme lounge formatı tek kişilik hızlı ve ekonomik kahvaltı arayanlara hitap etmez"
+      ],
+      "uncertainties": [
+        "Mevsime bağlı olarak hafta içi kapanış saatleri güncellenebiliyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "nar-bitez-restaurant",
+      "categoryId": "denemelisin",
+      "resolvedName": "Nar Bitez Restaurant",
+      "branchName": "Bitez, Atatürk Cad No:28/A, 48470 Bodrum/Muğla",
+      "placeId": "ChIJt9IQPM1tvhQRxpDYir-kg-E",
+      "coordinates": {
+        "lat": 37.043763299999995,
+        "lng": 27.379131599999997
+      },
+      "rating": 5,
+      "userRatingCount": 141,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://narbitez.com/",
+      "mapsUri": "https://maps.google.com/?cid=16250013023058038982",
+      "recommendedPrimary": [
+        "Harman Kebabı",
+        "Zırh Kıyması Lahmacun & Pide",
+        "Kuzu Alinazik"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Ege Zeytinyağlıları (Enginar, Bamya, Pırasa)",
+          "note": "Kebap ve fırın yemeklerinin yanında ev yapımı tencere lezzetleri arayanlar için günlük çıkarılır.",
+          "proof": "Ege Alternatif ve narbitez.com menüsü"
+        },
+        {
+          "name": "Ayva Tatlısı, Kalburabastı & Fırın Sütlaç",
+          "note": "Klasik Türk tatlılarıyla yemeği sonlandırmak isteyenlerin tercih ettiği ev yapımı kapanış seçenekleridir.",
+          "proof": "narbitez.com menü listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Asırlık ağaçlar arasında Köy İçi bahçe masaları ve sade, temiz iç salon düzeni",
+        "crowdAndNoise": "Hem yazlıkçılar hem Bitez yerlileri ile yıl boyu düzenli aile ve öğle-akşam masaları",
+        "disadvantage": "Deniz kenarında değil Bitez Köy İçi ana caddesi üzerinde yer alır; kebap ve ev yemeği çeşitliliği sebebiyle tek ürünlü niş mekan arayanlardan farklılaşır",
+        "transit": "Bitez Köy İçi Atatürk Caddesi No:28/A üzerinde merkez ulaşım hattında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Ege Alternatif — Nar Bitez İncelemesi",
+          "url": "https://www.egealternatif.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "365 gün açık olma özelliği, Maraş baharatları, zırh kıyması ve fine-dining tecrübeli şef mutfağı haberi"
+        },
+        {
+          "title": "Restaurant Guru — Nar Bitez Restaurant",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Aile işletmesi sıcaklığı, makul fiyat-performans dengesi ve lahmacun-kebap değerlendirmeleri"
+        },
+        {
+          "title": "Yandex Harita — Nar Bitez",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Atatürk Cd. No:28/A konumu ve esnaf sıcaklığı geri bildirimleri"
+        },
+        {
+          "title": "Nar Bitez Resmi Web Sitesi",
+          "url": "http://narbitez.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Harman Kebabı, Alinazik, zeytinyağlılar ve ayva tatlısı menü doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=16250013023058038982",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Atatürk Cd. No:28/A konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Bodrum sezonluk kapanışlarının aksine yıl boyu açık kalması ve tutarlı fiyat-performans sunması",
+        "Zırh kıymalı kebap ve lahmacunu taze Ege zeytinyağlılarıyla aynı mutfakta başarıyla buluşturması"
+      ],
+      "cons": [
+        "Köy İçi caddesinde yer aldığı için deniz manzarası bulunmaz",
+        "Akşam yoğunluğunda sıcak lahmacun ve kebap servisinde kısa beklemeler yaşanabiliyor"
+      ],
+      "uncertainties": [
+        "Kış döneminde zeytinyağlı ve çorba çeşitleri günlük tazeliğe göre değişmektedir"
+      ],
+      "selectionScore": 96,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "sade-bodrum-bitez",
+      "categoryId": "denemelisin",
+      "resolvedName": "Sade Bodrum Restaurant",
+      "branchName": "Bitez, Kavaklı Sarnıç Cd. NO:33/1, 48470 Bodrum/Muğla",
+      "placeId": "ChIJ04PFKvBtvhQRzI7esM0NM6Q",
+      "coordinates": {
+        "lat": 37.03990530000001,
+        "lng": 27.3953431
+      },
+      "rating": 4.7,
+      "userRatingCount": 415,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://sadebodrum.com/",
+      "mapsUri": "https://maps.google.com/?cid=11831815823119257292",
+      "recommendedPrimary": [
+        "Börülceli Tarhana Çorbası",
+        "Yoğurtlu Bamya & Zeytinyağlılar",
+        "Sulu Karnıyarık & Güveç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Pancar Tatlısı",
+          "note": "Ev yemekleri sonrasında misafirlerin özellikle önerdiği özgün ve hafif tatlı kapanışıdır.",
+          "proof": "Restoranim.net misafir incelemeleri"
+        },
+        {
+          "name": "Glütene Duyarlı Ege Ot Tabakları",
+          "note": "Hassas beslenen konuklar için sade ve katkısız hazırlanan tencere alternatifleridir.",
+          "proof": "Venuesreyon ve Yandex Harita kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kavaklı Sarnıç Caddesi üzerinde sakin bahçe ve ev sıcaklığında iç salon masaları",
+        "crowdAndNoise": "Özellikle öğle saatlerinde hafif ve temiz ev yemeği arayan Bitez sakinleriyle huzurlu tempo",
+        "disadvantage": "Günlük taze tencere yemekleri erken saatlerde tükendiğinden akşam geç saatlerde çeşit azalabiliyor; sahil şeridinden uzaktadır",
+        "transit": "Bitez Mahallesi Kavaklı Sarnıç Caddesi No:33/1 üzerinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Biz Evde Yokuz — Bodrum Bitez Ev Yemekleri",
+          "url": "https://bizevdeyokuz.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taze Ege mutfağı ve ev yemekleri önerisi"
+        },
+        {
+          "title": "Restoranim.net — Sade Bodrum Restaurant",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Börülceli tarhana, yoğurtlu bamya, karnıyarık, yaprak sarma ikramı ve pancar tatlısı notları"
+        },
+        {
+          "title": "Yandex Harita — Sade Bodrum",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kavaklı Sarnıç Cd. No:33/1 konumu, temizlik ve glutensiz alternatif geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=11831815823119257292",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kavaklı Sarnıç Cd. No:33/1 konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Ağır turistik menülerden uzak hafif, taze Ege tencere yemekleri ve pancar tatlısı gibi özgün tatlar",
+        "Glütene duyarlı beslenen misafirlere uygun sade mutfak anlayışı"
+      ],
+      "cons": [
+        "Tencere yemeklerinin tazeliği için öğle veya erken akşam saatlerinde gitmek gerekir",
+        "Gece geç saat restoranı veya manzaralı sahil durağı değildir"
+      ],
+      "uncertainties": [
+        "Online platformlardaki paket menü çeşitliliği sezonluk operasyona göre değişebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "buber-restoran-bitez",
+      "categoryId": "denemelisin",
+      "resolvedName": "Büber Restoran",
+      "branchName": "Bitez, Pomelan Cd. No:6/a, 48960 Bodrum/Muğla",
+      "placeId": "ChIJ2zrOs3VtvhQRbBquaFzablU",
+      "coordinates": {
+        "lat": 37.029331899999995,
+        "lng": 27.380091000000004
+      },
+      "rating": 4.6,
+      "userRatingCount": 357,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6156097831090133612",
+      "recommendedPrimary": [
+        "Edirne Tava Ciğeri",
+        "Izgara Köfte",
+        "Ev Yapımı Mezeler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Günlük Mezeler & Çıtır Patates Cipsi",
+          "note": "Tava ciğerin yanında sofrayı paylaşmalık masaya dönüştüren temel eşlikçilerdir.",
+          "proof": "Yandex Harita ve Mekan.com kayıtları"
+        },
+        {
+          "name": "Klasik Izgara Köfte",
+          "note": "Sakatat tercih etmeyen masalar için ana yemek alternatifi sunar.",
+          "proof": "Yandex Harita değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Pomelan Caddesi üzerinde mütevazı, salaş ve samimi sokak masaları ile sade iç alan",
+        "crowdAndNoise": "Yerleşik Bitez müdavimleri ve sakin fiyat-performans akşamı arayanlarla dostane ortam",
+        "disadvantage": "Lüks dekorasyon veya sahil manzarası beklentisiyle gidilmemelidir; akşam saatlerinde küçük kapasite nedeniyle masalar hızlı dolabiliyor",
+        "transit": "Bitez Yalısı Pomelan Caddesi No:6/A üzerinde sahile birkaç adım mesafede"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Mekan.com — Büber Restaurant Bitez",
+          "url": "https://www.mekan.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İnce doğranmış lokum kıvamında Edirne tava ciğeri, sıcak esnaf yaklaşımı ve salaş atmosfer notları"
+        },
+        {
+          "title": "Yandex Harita — Büber Restoran Pomelan",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Edirne tava ciğeri, köfte, ev yapımı mezeler ve Bodrum ortalamasına göre makul fiyat değerlendirmesi"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=6156097831090133612",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Pomelan Cd. No:6/A konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Bitez Yalısı içinde abartısız ve güvenilir Edirne tava ciğeri sunan köklü müdavim adresi",
+        "Bodrum sahil şeridine kıyasla bütçe dostu esnaf lokantası çizgisini koruması"
+      ],
+      "cons": [
+        "Gösterişli bir restoran tasarımı veya deniz manzarası arayanlara hitap etmez",
+        "Menü kapsamı tava ciğer, köfte ve seçili mezeler etrafında sınırlı tutulur"
+      ],
+      "uncertainties": [
+        "Sezon dışı dönemlerde çalışma saatleri esneyebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bitez-kuru-fasulye",
+      "categoryId": "denemelisin",
+      "resolvedName": "Bitez Kuru Fasulye",
+      "branchName": "Bitez, Adliye Cd. no:73\\2, 48470 Bodrum/Muğla",
+      "placeId": "ChIJL0g1nhttvhQRrPMAtltg0MQ",
+      "coordinates": {
+        "lat": 37.039744899999995,
+        "lng": 27.3768541
+      },
+      "rating": 4.7,
+      "userRatingCount": 363,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14181941173601498028",
+      "recommendedPrimary": [
+        "Pilav Üstü İspir Kuru Fasulye",
+        "Bulgur Pilavı Üstü Kavurma",
+        "Etli Yaprak Sarma"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kızartma İçli Köfte & Ev Yapımı Turşular",
+          "note": "Fasulye-pilav ikilisine başlangıç ve iştah açıcı olarak eşlik eden esnaf klasikleridir.",
+          "proof": "Yemeksepeti menüsü ve MyBodrum yazısı"
+        },
+        {
+          "name": "Fırın Sütlaç & Kabak Tatlısı",
+          "note": "Geleneksel esnaf lokantası öğününü tamamlayan sütlü ve şerbetli tatlı alternatifleridir.",
+          "proof": "MyBodrum yerel rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Adliye Caddesi kenarında sade, temiz lokanta masaları ve hızlı öğle servis düzeni",
+        "crowdAndNoise": "Öğle ve erken akşam saatlerinde esnaf, aileler ve doyurucu ev yemeği arayanlarla hareketli",
+        "disadvantage": "Gece geç saatlere kadar açık değildir ve turistik sahil mekanı ambiyansı sunmaz; öğle saatlerinde yoğunluk yaşanabiliyor",
+        "transit": "Bitez Adliye Caddesi No:73/2 üzerinde Hatır Lokantası bitişiğinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "MyBodrum — Bitez Kuru Fasulye İncelemesi",
+          "url": "https://mybodrum.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İspir kuru fasulye, tereyağlı pilav, içli köfte, fırın sütlaç ve nostaljik esnaf lokantası detayları"
+        },
+        {
+          "title": "Restaurant Guru — Bitez Kuru Fasulye",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hızlı servis, doyurucu porsiyonlar ve fiyat-performans değerlendirmeleri"
+        },
+        {
+          "title": "Yemeksepeti — Bitez Kuru Fasulye Menü",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bulgur pilavı üstü kavurma, kuru cacık ve yaprak sarma menü kayıtları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=14181941173601498028",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Adliye Cd. No:73/2 konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Bodrum genelindeki yüksek restoran fiyatlarına karşı doyurucu ve dürüst esnaf lokantası alternatifi",
+        "İspir fasulyesi, tereyağlı pilav ve el yapımı yan ürünlerde tutarlı lezzet"
+      ],
+      "cons": [
+        "Akşam erken saatlerde servisini tamamladığından gece yemeği için uygun değildir",
+        "Görsel şıklık yerine pratik öğle yemeği düzenine odaklanır"
+      ],
+      "uncertainties": [
+        "Günlük çıkan ek ev yemekleri ve tatlı stokları öğleden sonra tükenebiliyor"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bitez-koy-manticisi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Bitez Köy Mantıcısı",
+      "branchName": "Bitez, Adliye Cd. No: 40/C, 48470 Bodrum/Muğla",
+      "placeId": "ChIJwa9jbMhtvhQRvo8vux2EQik",
+      "coordinates": {
+        "lat": 37.0428356,
+        "lng": 27.3785684
+      },
+      "rating": 4.5,
+      "userRatingCount": 290,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2973083967247323070",
+      "recommendedPrimary": [
+        "Ev Yapımı Klasik Mantı",
+        "Çıtır Mantı",
+        "Kıymalı & Karışık Çi Börek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ispanaklı & Cevizli Mantı Çeşitleri",
+          "note": "Klasik kıymalı mantı dışında vejetaryen veya farklı iç harç arayanlar için hazırlanan seçeneklerdir.",
+          "proof": "Yemeksepeti menü listesi"
+        },
+        {
+          "name": "Kıymalı & Kaşarlı Çi Börek",
+          "note": "Mantı tabaklarının yanında sıcak ve çıtır hamur işi olarak en sık sipariş edilen yan lezzettir.",
+          "proof": "Yemeksepeti ve Mekan.com değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Adliye Caddesi üzerinde sade bahçe/cadde masaları ve aile dostu iç oturma düzeni",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde yerli aileler, tatilciler ve paket servis trafiğiyle canlı",
+        "disadvantage": "Bölge ortalamasına göre mantı porsiyon fiyatları yüksek bulunabiliyor; yoğun yaz akşamlarında servis hızında gecikme veya paketlerde sos unutulması eleştirileri görülebiliyor",
+        "transit": "Bitez Köy İçi Adliye Caddesi No:40/C üzerinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Yemeksepeti — Bitez Köy Mantıcısı",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Klasik, çıtır, ıspanaklı, cevizli mantı ile çi börek menüsü; yüksek fiyat ve yoğun saat gecikme notları"
+        },
+        {
+          "title": "Yandex Harita — Bitez Köy Mantıcısı",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Adliye Cd. No:40/C konumu, hamur inceliği ve çi börek geri bildirimleri"
+        },
+        {
+          "title": "Mekan.com — Bitez Köy Mantıcısı",
+          "url": "https://www.mekan.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çıtır mantı ve geleneksel ev mantısı değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=2973083967247323070",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bitez Adliye Cd. No:40/C konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "İnce açılmış el yapımı hamurla klasik, çıtır, ıspanaklı ve cevizli mantı çeşitliliği sunması",
+        "Taze çi börek ve Bodrum mandalina gazozu eşleşmesiyle pratik bir Köy İçi klasiği olması"
+      ],
+      "cons": [
+        "Porsiyon fiyatları benzer mantıcılara kıyasla yüksek segmentte hissedilebiliyor",
+        "Yoğun yaz dönemlerinde servis hızında ve paket sos kontrolünde aksamalar yaşanabiliyor"
+      ],
+      "uncertainties": [
+        "Sezon içi ve sezon dışı çalışma saatleri yoğunluğa göre değişebiliyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "el-fuego-bitez",
+      "categoryId": "denemelisin",
+      "resolvedName": "El Fuego",
+      "branchName": "Bitez, Adliye Cd. No:42/B, 48100 Bodrum/Muğla",
+      "placeId": "ChIJi_DaxWVtvhQRA7bhLSzjnmY",
+      "coordinates": {
+        "lat": 37.0428188,
+        "lng": 27.378495599999997
+      },
+      "rating": 4.5,
+      "userRatingCount": 193,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.elfuego.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=7394597417076766211",
+      "recommendedPrimary": [
+        "Birria Tacos",
+        "Tacos Kokoreç",
+        "Buffalo Shrimp Tacos"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mucho Nachos & San Diego Carne Quesadilla",
+          "note": "Kalabalık arkadaş masalarında ortaya paylaşmalık olarak en sık tercih edilen Meksika başlangıçlarıdır.",
+          "proof": "Yemeksepeti ve Rotabu incelemeleri"
+        },
+        {
+          "name": "Carne Inferno Fajita & İmza Margaritalar",
+          "note": "Közde fajita ile eşleşen ferahlatıcı kokteyl bar menüsüdür.",
+          "proof": "OGGUSTO ve Müdavim.net incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kaktüslü renkli iç cantina salonu, shuffleboard alanı ve ağaçlar altında sakin arka bahçe",
+        "crowdAndNoise": "Akşamları genç gruplar, kokteyl severler ve ilerleyen saatlerde DJ müziğiyle enerjik ortam",
+        "disadvantage": "Akşam ilerledikçe DJ performansı nedeniyle ses seviyesi yükselir; yaz hafta sonları için rezervasyon yapılmadan masa bulmak güçtür",
+        "transit": "Bitez Adliye Caddesi No:42/B üzerinde Il Mio Sogno bitişiğinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "OGGUSTO — El Fuego Bitez İncelemesi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "El yapımı tortillalar, Birria Tacos, kuzu kokoreçli taco ve DJ performanslı gece enerjisi detayı"
+        },
+        {
+          "title": "Müdavim.net — El Fuego Bodrum",
+          "url": "https://www.mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mucho Nachos, Carne Inferno, arka bahçe sakinliği ve margarita değerlendirmeleri"
+        },
+        {
+          "title": "Rotabu — El Fuego Bitez",
+          "url": "https://www.rotabu.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "San Diego Carne Quesadilla ve rezervasyon zorunluluğu notları"
+        },
+        {
+          "title": "El Fuego Resmi Sitesi",
+          "url": "https://www.elfuego.com.tr/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Adliye Cd. No:42/B konum ve güncel menü doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=7394597417076766211",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bitez Adliye Cd. No:42/B konum ve mexican_restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "Bitez klasik Ege-balık çizgisine güçlü bir alternatif getiren otantik ve yaratıcı Meksika mutfağı",
+        "Sakin ağaçlı arka bahçe ile hareketli cantina barını tek mekanda sunması"
+      ],
+      "cons": [
+        "Yaz akşamlarında rezervasyonsuz gitmek risklidir ve bar müziği sessiz sohbetlere uymayabilir",
+        "Kokteyl ve paylaşımlı tabaklarla bütçe seviyesi orta-üst segmentte oluşur"
+      ],
+      "uncertainties": [
+        "DJ etkinlik takvimi ve bahçe servis saatleri sezona göre güncelleniyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yirmibir-bodrum-bitez",
+      "categoryId": "denemelisin",
+      "resolvedName": "Yirmibir Bodrum",
+      "branchName": "Bitez, Çökertme Cd. No:50, 48470 Bodrum/Muğla",
+      "placeId": "ChIJiSFcFGBtvhQRBKOJX3u6myg",
+      "coordinates": {
+        "lat": 37.0276971,
+        "lng": 27.378591099999998
+      },
+      "rating": 4.5,
+      "userRatingCount": 191,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://yirmibirbodrum.com/",
+      "mapsUri": "https://maps.google.com/?cid=2926137421953868548",
+      "recommendedPrimary": [
+        "Odun Ateşinde Çıtır Lahmacun",
+        "Tereyağlı Yaprak Bonfile & T-Bone",
+        "Kuzu Karski & Böğümlü Kebap"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Acılı Bezirgani, Zebeniye & Köz Patlıcan",
+          "note": "Et ve kebap öncesinde Gaziantep-Ege çizgisini buluşturan özgün meze başlangıçlarıdır.",
+          "proof": "Müdavim.net gastronomi incelemesi"
+        },
+        {
+          "name": "Dry-Aged T-Bone & File Şato",
+          "note": "Afyon ve Balıkesir bölgesinden seçilen etlerle hazırlanan premium steak seçenekleridir.",
+          "proof": "yirmibirbodrum.com ve Bodrumca"
+        }
+      ],
+      "suitability": {
+        "seating": "Bitez sahilinde denize sıfır iskele/teras masaları ve şık kapalı akşam salonu",
+        "crowdAndNoise": "Gündüz plaj misafirleri, akşamları ise özel steak-ocakbaşı sofraları kuran gruplarla şık tempo",
+        "disadvantage": "Üst segment fiyat politikasına sahiptir; dönemsel yoğunluklarda servis temposunda dalgalanmalar yaşanabiliyor",
+        "transit": "Bitez Mahallesi Çökertme Caddesi No:50 üzerinde sahil şeridinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Müdavim.net — Yirmibir Bodrum İncelemesi",
+          "url": "https://www.mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Lahmacun, T-Bone, Kuzu Karski, Acılı Bezirgani ve yıl boyu açık sahil düzeni detayları"
+        },
+        {
+          "title": "Bodrumca — Yirmibir Bodrum",
+          "url": "https://bodrumca.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Afyon-Balıkesir et tedariki ve denize sıfır steakhouse konsepti"
+        },
+        {
+          "title": "Yandex Harita — Yirmibir Bodrum",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Et pişirme kalitesi övgüleri ve dönemsel yoğunluk servis değerlendirmeleri"
+        },
+        {
+          "title": "Yirmibir Bodrum Resmi Sitesi",
+          "url": "https://yirmibirbodrum.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Çökertme Cd. No:50 adres ve menü doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=2926137421953868548",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çökertme Cd. No:50 konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Denize sıfır sahil atmosferinde hem dry-aged steak hem de odun fırınından lahmacun-kebap sunması",
+        "Kış aylarında da açık kalabilen kurumsal sahil mutfağı"
+      ],
+      "cons": [
+        "Üst bütçe segmentinde konumlandığından günlük yemekler için yüksek maliyetli kalabilir",
+        "Yoğun tatil dönemlerinde servis hızı tutarsızlaşabiliyor"
+      ],
+      "uncertainties": [
+        "Plaj kullanımı ile akşam restoranı arasındaki harcama koşulları sezona göre güncellenebiliyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yemek-evi-bitez",
+      "categoryId": "denemelisin",
+      "resolvedName": "Yemek Evi / Bitez",
+      "branchName": "Bitez, Cumhuriyet Cd. No:55, 48480 Bodrum/Muğla",
+      "placeId": "ChIJPY-xK5dtvhQRw9hzoPOkU1I",
+      "coordinates": {
+        "lat": 37.0426522,
+        "lng": 27.3795625
+      },
+      "rating": 4.6,
+      "userRatingCount": 124,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.instagram.com/yemekevibitez",
+      "mapsUri": "https://maps.google.com/?cid=5932266500453030083",
+      "recommendedPrimary": [
+        "Günlük Ege Zeytinyağlıları",
+        "Ev Usulü Tencere Yemekleri",
+        "Günün Ev Çorbaları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Vegan & Vejetaryen Sebze Tabakları",
+          "note": "Et ağırlıklı turistik menülere alternatif olarak günlük taze sebzelerle hazırlanan hafif seçeneklerdir.",
+          "proof": "Yandex Harita misafir değerlendirmeleri"
+        },
+        {
+          "name": "Günlük Ev Çorbaları",
+          "note": "Hafif ve sıcak öğle öğünü tercih eden mahalle sakinlerinin düzenli siparişidir.",
+          "proof": "Restoranim.net ve Yandex Harita kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Cumhuriyet Caddesi üzerinde sade, temiz lokanta masaları",
+        "crowdAndNoise": "Öğle saatlerinde bölge esnafı, mahalle sakinleri ve ev yemeği özleyen tatilcilerle sakin akış",
+        "disadvantage": "Küçük bir esnaf lokantası olduğu için akşam geç saat servisi ve sabit a la carte menüsü yoktur; günün yemekleri tükendikçe seçenek azalır",
+        "transit": "Bitez Köy İçi Cumhuriyet Caddesi No:55 üzerinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Yandex Harita — Bitez Yemek Evi",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Cumhuriyet Cd. No:55 konumu, taze hafif ev yemekleri, hijyen ve vegan-vejetaryen seçenek notları"
+        },
+        {
+          "title": "Restoranim.net — Yemek Evi / Bitez",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Geleneksel Türk mutfağı tencere yemekleri ve mütevazı lokanta değerlendirmesi"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=5932266500453030083",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Cumhuriyet Cd. No:55 konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Yağsız, hafif ve taze günlük ev yemeklerini sade temiz bir ortamda sunması",
+        "Vegan ve vejetaryen misafirler için günlük sebze yemeği çeşitliliği bulundurması"
+      ],
+      "cons": [
+        "Öğle ve erken akşam saatleriyle sınırlıdır; geç akşam yemeğine uygun değildir",
+        "Günlük tezgah sistemi nedeniyle her gün aynı yemek bulunmaz"
+      ],
+      "uncertainties": [
+        "Hafta sonu ve kış dönemi açık olduğu günler işletme düzenine göre değişebiliyor"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bitez-cafe-belediye",
+      "categoryId": "denemelisin",
+      "resolvedName": "Bitez Cafe & Restaurant (Bodrum Belediyesi)",
+      "branchName": "Bitez, Çökertme Cd. No:5, 48400 Bodrum/Muğla",
+      "placeId": "ChIJlT-eT3NtvhQRDa6dPdDU49U",
+      "coordinates": {
+        "lat": 37.0229224,
+        "lng": 27.3842546
+      },
+      "rating": 4.4,
+      "userRatingCount": 1860,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.bodrumbelediyeas.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=15412396340643999245",
+      "recommendedPrimary": [
+        "Çökertme Kebabı",
+        "Izgara Köfte & Tavuk",
+        "Türk Kahvesi & Espresso Çeşitleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kahvaltı Tabağı & Menemen",
+          "note": "Sabah yürüyüşleri ve yüzme öncesinde denize sıfır masalarda ekonomik kahvaltı seçeneği sunar.",
+          "proof": "Bodrum Belediye A.Ş. ve Restaurant Guru kayıtları"
+        },
+        {
+          "name": "Tost & Sahil Sandviçleri",
+          "note": "Gün boyu yüzme molalarında giriş ücreti veya harcama limiti olmadan tercih edilen pratik sahil atıştırmalıklarıdır.",
+          "proof": "Bodrum Belediyesi tesis sayfası"
+        }
+      ],
+      "suitability": {
+        "seating": "Bitez Yalısı kumsalına sıfır geniş açık hava terası ve gölgelik masa düzeni",
+        "crowdAndNoise": "Sabah yürüyüşçülerinden ailelere ve tatilcilere kadar gün boyu çok kalabalık ve hareketli",
+        "disadvantage": "Yüksek sezonda yoğunluk sebebiyle masa bulmak zorlaşabiliyor ve servis hızında aksamalar yaşanabiliyor; üçüncü nesil kahve uzmanı değildir, sahil konumu nedeniyle fiyatlar beklentiye göre zaman zaman yüksek bulunabiliyor",
+        "transit": "Bitez Yalısı Çökertme Caddesi No:5 üzerinde sahil yürüyüş bandında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Bodrum Belediyesi Resmi Sayfası — Bitez Cafe",
+          "url": "https://www.bodrum.bel.tr/tesis/bitez-cafe-ve-restaurant",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Bodrum Belediyesi sosyal tesis kaydı, Çökertme Cd. No:5 adresi ve iletişim bilgileri"
+        },
+        {
+          "title": "Bodrum Belediye A.Ş. Resmi Web Sitesi",
+          "url": "https://www.bodrumbelediyeas.com.tr/tesis/bitez-cafe-restaurant",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Denize sıfır konum ve imza Çökertme Kebabı vurgusu"
+        },
+        {
+          "title": "Muğla Gazetesi — Belediye Sosyal Tesisleri",
+          "url": "https://www.muglagazetesi.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Belediye tesislerinin ızgara ve erişilebilir menü yapısı haberi"
+        },
+        {
+          "title": "Yandex Harita — Bitez Cafe & Restaurant",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Deniz manzarası övgüleri ile sezonluk yoğunluk servis hızı eleştirileri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=15412396340643999245",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çökertme Cd. No:5 konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Bitez sahilinde harcama limiti olmadan denize sıfır oturulabilen kamu sosyal tesisi olması",
+        "Çökertme Caddesi üzerinde sembolleşmiş Çökertme Kebabı ve erişilebilir kahve-kahvaltı sunması"
+      ],
+      "cons": [
+        "Yoğun yaz günlerinde kalabalıktan kaynaklı masa bekleme ve servis yavaşlaması görülebiliyor",
+        "Özel kavurucu standardında nitelikli kahve deneyimi yerine klasik belediye kafe menüsü sunar"
+      ],
+      "uncertainties": [
+        "Sezon içi ve kış aylarındaki akşam kapanış saatleri belediye takvimine göre değişebiliyor"
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ekin-doner-bitez",
+      "categoryId": "denemelisin",
+      "resolvedName": "Ekin Döner Bitez",
+      "branchName": "Bitez, Cumhuriyet Cd. 68/A, 48400 Bodrum/Muğla",
+      "placeId": "ChIJCw0o5E9tvhQRFsMSI-39-3o",
+      "coordinates": {
+        "lat": 37.0426247,
+        "lng": 27.3794002
+      },
+      "rating": 4.4,
+      "userRatingCount": 70,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8861955886719091478",
+      "recommendedPrimary": [
+        "Porsiyon Yaprak Et Döner",
+        "Pilav Üstü Et Döner",
+        "Tombik Ekmek Arası Et Döner"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Lavaş Dürüm Et Döner",
+          "note": "Sade domates, marul ve soğan eşliğinde elde taşınabilir pratik öğün arayanların seçimidir.",
+          "proof": "Yemeksepeti menü kayıtları"
+        },
+        {
+          "name": "Bodrum Mandalina Gazozu & Şalgam",
+          "note": "Yaprak et dönerin yanında yerel içecek eşlikçisi olarak sunulur.",
+          "proof": "Yemeksepeti içecek menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Cumhuriyet Caddesi cephesinde sade masa düzeni ve paket servis tezgahı",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde yerel çalışanlar, sakinler ve paket siparişlerle düzenli akış",
+        "disadvantage": "Bölge genelinde fiyatlar ortalamanın üzerinde algılanabiliyor ve bazı geri bildirimlerde dürüm boyutunun beklentiye göre küçük kalabildiği belirtiliyor; manzaralı uzun oturum mekanı değildir",
+        "transit": "Bitez Köy İçi Cumhuriyet Caddesi No:68/A üzerinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Yemeksepeti — Ekin Döner Bitez",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "130 gr porsiyon ve pilav üstü gerçek yaprak et döner menüsü ile sıcak paket servis değerlendirmeleri"
+        },
+        {
+          "title": "Wanderlog — Ekin Döner Bitez",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Et kalitesi, dürüm porsiyon boyutu ve fiyat seviyesi geri bildirimleri"
+        },
+        {
+          "title": "Yandex Harita — Ekin Döner Bitez",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Cumhuriyet Cd. No:68/A konum ve yerel döner kalitesi notları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=8861955886719091478",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bitez Cumhuriyet Cd. 68/A konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Kıyma yerine gerçek yaprak et döner dokusunu koruyan az sayıdaki Bitez esnafından biri",
+        "Hızlı, sıcak ve düzenli paket-masa servisi sunması"
+      ],
+      "cons": [
+        "Dürüm ve ekmek arası gramajları fiyatına kıyasla bazı ziyaretçiler tarafından küçük bulunabiliyor",
+        "Küçük cadde dükkanı yapısında olduğundan uzun süreli oturum için tasarlanmamıştır"
+      ],
+      "uncertainties": [
+        "Akşam geç saatlere kalındığında döner şişinin tükenme durumu yaşanabiliyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karavida-bitez",
+      "categoryId": "balik",
+      "resolvedName": "Karavida Bitez",
+      "branchName": "Bitez, Adliye Cd. 34/A-1, 48470 Bodrum/Muğla",
+      "placeId": "ChIJbUYIekFtvhQRtXaeMxPKjrE",
+      "coordinates": {
+        "lat": 37.043496399999995,
+        "lng": 27.379073700000003
+      },
+      "rating": 4.9,
+      "userRatingCount": 37,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12794385775225370293",
+      "recommendedPrimary": [
+        "Kaya Barbun & Günlük Kalkan",
+        "Karidesli Orzo",
+        "Taş Fırında veya Kömürde Levrek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fava, Girit Ezme & Günlük Meze Dolabı",
+          "note": "İstanbul balıkçılarının zarafetini Ege meze geleneğiyle birleştiren taze soğuk başlangıçlardır.",
+          "proof": "OGGUSTO Bitez seçkisi"
+        },
+        {
+          "name": "Taş Fırın Balık Pişirimleri",
+          "note": "Klasik ızgaraya alternatif olarak odun ateşindeki taş fırında hazırlanan balık sunumlarıdır.",
+          "proof": "OGGUSTO mekan incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Yüksek sesli müzikten uzak, beyaz örtülü şık masalarla sohbet odaklı restoran salonu ve bahçe düzeni",
+        "crowdAndNoise": "Sakin, zarif ve lezzet odaklı balık akşamı arayan çiftler ve seçkin gruplarla huzurlu tempo",
+        "disadvantage": "Kıyı şeridinde değil Adliye Caddesi üzerinde yer alır ve sabit fiyatlı basılı menü yerine günlük tezgah mantığıyla çalıştığından üst segmentte bütçe gerektirir",
+        "transit": "Bitez Adliye Caddesi No:34/A-1 üzerinde Bitez-Konacık güney geçiş hattında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "OGGUSTO — Karavida Bitez İncelemesi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Özgür Arıkan kuruculuğu, günlük balık tezgahı, taş fırın pişirimleri, karidesli orzo ve beyaz örtülü konsept detayı"
+        },
+        {
+          "title": "Restaurant Guru — Karavida Bitez",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Adliye Cd. No:34/A-1 konumu, deniz mahsulleri tazeliği ve sakin servis değerlendirmeleri"
+        },
+        {
+          "title": "Yandex Harita — Karavida Bitez",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze balık dolabı, zarif atmosfer ve rezervasyon bilgisi"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=12794385775225370293",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Adliye Cd. 34/A-1 konum ve seafood_restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "Bitez içinde sahil gürültüsünden uzak beyaz örtülü rafine balık ve meze deneyimi sunması",
+        "Balıkların isteğe göre sade kömür ızgara veya odun ateşli taş fırında pişirilebilmesi"
+      ],
+      "cons": [
+        "Denize sıfır manzara sunmaz ve üst segment balık restoranı bütçesindedir",
+        "Günlük tezgah stoğuna bağlı çalıştığından kalkan gibi mevsimsel balıklar dönemsel değişebiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışı dönem çalışma günleri ve tezgah çeşitliliği günlük tedarike bağlıdır"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aqua-restaurant-bitez",
+      "categoryId": "balik",
+      "resolvedName": "Aqua Restaurant Bitez",
+      "branchName": "Bitez, Çökertme Cd. No:94, 48400 Bodrum/Muğla",
+      "placeId": "ChIJ--OWHt1xvhQRVmlqlQRSa_M",
+      "coordinates": {
+        "lat": 37.0279897,
+        "lng": 27.3765331
+      },
+      "rating": 4.6,
+      "userRatingCount": 563,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17540203353364654422",
+      "recommendedPrimary": [
+        "Levrek Marin & Lakerda",
+        "Tereyağlı Karides & Merzane",
+        "Günlük Taze Izgara Levrek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yetmiş Çeşitli Meze Dolabı (Van Cacığı, Avokadolu Girit, Ahtapot Salatası)",
+          "note": "Klasik Ege mezelerini yenilikçi tariflerle birleştiren geniş vitrin seçkisidir.",
+          "proof": "Nerede Ne Yenir rehberi ve aquabitez.com"
+        },
+        {
+          "name": "Merzane & Kalamar Tava",
+          "note": "Balık ana yemeğinden önce paylaşılan fırınlanmış deniz mahsullü sıcak ara tabaklardır.",
+          "proof": "aquabitez.com menü listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Bitez Yalısı kumsalında dalga seslerine sıfır açık sahil masaları ve teras düzeni",
+        "crowdAndNoise": "Gün batımından geceye meze ve balık masaları kuran kalabalık aileler ve gruplarla canlı",
+        "disadvantage": "Yüksek sezonda ve hafta sonlarında denize sıfır ön sıra masalar için mutlaka rezervasyon gerekir; kıyı balıkçısı üst segment fiyatlamasındadır",
+        "transit": "Bitez Yalısı Çökertme Caddesi No:94 üzerinde sahil yürüyüş yolunda"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "NerdeNerede — Aqua Restaurant Bitez",
+          "url": "https://www.nerdenerede.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Şef Medeni Özbilir mutfağı, 70+ çeşit meze dolabı ve rezervasyon zorunluluğu detayı"
+        },
+        {
+          "title": "Restaurant Guru — Aqua Restaurant Bitez",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çökertme Cd. No:94 konumu, meze çeşitliliği ve deniz kenarı değerlendirmeleri"
+        },
+        {
+          "title": "Yandex Harita — Aqua Restaurant Bitez",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Denize sıfır gün batımı manzarası, taze deniz mahsulleri ve profesyonel servis notları"
+        },
+        {
+          "title": "Aqua Bitez Resmi Sitesi",
+          "url": "https://aquabitez.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Van Cacığı, balık pastırma, Merzane ve günlük balık menü doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=17540203353364654422",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çökertme Cd. No:94 konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Bitez sahilinde denize sıfır konumda çok zengin meze vitrini ve taze buz tezgahı sunması",
+        "Klasik Ege mezelerinin yanında Van Cacığı ve Merzane gibi özgün şef dokunuşları barındırması"
+      ],
+      "cons": [
+        "Üst bütçe segmentinde yer alır; gramajlı taze balık siparişinde fiyat hesabı önceden teyit edilmelidir",
+        "Yaz akşamlarında ön sıra sahil masaları rezervasyonsuz dolmaktadır"
+      ],
+      "uncertainties": [
+        "Sezon dışında meze çeşit sayısı günlük doluluk durumuna göre optimize edilebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    }
+  ]
+}

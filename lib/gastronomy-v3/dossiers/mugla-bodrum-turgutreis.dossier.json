@@ -1,0 +1,2310 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "mugla-bodrum-turgutreis",
+  "displayName": "Turgutreis, Bodrum, Muğla",
+  "verifiedAt": "2026-11-16T19:02:39.171Z",
+  "selectedCount": 25,
+  "rejectedControls": [
+    {
+      "id": "ctrl-turgutreis-d-marin",
+      "resolvedName": "D-Marin Turgutreis Marina",
+      "reason": "invalid_place_type:marina"
+    },
+    {
+      "id": "ctrl-turgutreis-peksimet-otel",
+      "resolvedName": "Peksimet Butik Otel",
+      "reason": "invalid_place_type:hotel"
+    },
+    {
+      "id": "ctrl-turgutreis-big-chefs",
+      "resolvedName": "Big Chefs - D Marin Turgutreis Marina Şubesi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-turgutreis-starbucks",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-turgutreis-kahve-dunyasi",
+      "resolvedName": "Kahve Dünyası-Turgutreis Marina",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-turgutreis-caffe-nero",
+      "resolvedName": "Caffè Nero",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-turgutreis-dominos",
+      "resolvedName": "Domino's Pizza Turgutreis",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-turgutreis-endless-pizza",
+      "resolvedName": "EndlessPizza TURGUTREİS",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-turgutreis-burger-king",
+      "resolvedName": "Burger King - Turgut Reis",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-turgutreis-mcdonalds",
+      "resolvedName": "McDonald's Turgutreis",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-turgutreis-bitez-dondurma",
+      "resolvedName": "BİTEZ DONDURMA VE WAFFLE Turgutreis",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-turgutreis-bodrum-ekleristan",
+      "resolvedName": "Bodrum Ekleristan",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-turgutreis-izze-coffee",
+      "resolvedName": "İzze Coffee Turgutreis",
+      "reason": "suspected_rating_inflation_no_community_proof"
+    },
+    {
+      "id": "ctrl-turgutreis-sunger-pizza",
+      "resolvedName": "Sunger Pizza-1 Turgutreis / Paket Servisi Restoran",
+      "reason": "below_quality_threshold:★4.2(1040)"
+    },
+    {
+      "id": "ctrl-turgutreis-sold-out-hamburger",
+      "resolvedName": "Sold Out Hamburger Turgutreis",
+      "reason": "below_quality_threshold:★4.3(115)"
+    },
+    {
+      "id": "ctrl-turgutreis-diva-pastanesi",
+      "resolvedName": "Diva Pastanesi",
+      "reason": "below_quality_threshold:★4.3(797)"
+    },
+    {
+      "id": "ctrl-turgutreis-ana-ogul",
+      "resolvedName": "Ana Oğul Lokantası",
+      "reason": "below_quality_threshold:★4.2(492)"
+    },
+    {
+      "id": "ctrl-turgutreis-hulyanin-yeri",
+      "resolvedName": "Hülya'nın Yeri Balık Restaurant",
+      "reason": "below_quality_threshold:★4.2(512)"
+    },
+    {
+      "id": "ctrl-turgutreis-yi-gec-balik",
+      "resolvedName": "Yi Geç Balık Restaurant",
+      "reason": "below_quality_threshold:★4.1(399)"
+    },
+    {
+      "id": "ctrl-turgutreis-sunset-maksim",
+      "resolvedName": "Sunset Maksim Turgutreis",
+      "reason": "below_quality_threshold:★3.9(422)"
+    },
+    {
+      "id": "ctrl-turgutreis-kahvalti-16",
+      "resolvedName": "Turgutreis Kahvaltı",
+      "reason": "below_quality_threshold:★4.8(16)"
+    },
+    {
+      "id": "ctrl-turgutreis-cotto-kadikalesi-outside",
+      "resolvedName": "Cotto Cafe Kadikalesi",
+      "reason": "outside_strict_neighborhood:Bbox dışında (37.03286, 27.24937)"
+    },
+    {
+      "id": "ctrl-turgutreis-zerde-peksimet-outside",
+      "resolvedName": "Zerde",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Turgutreis/Bahçelievler/Bahcelievler/Karabağ/Karabag/Akçaalan/Akcaalan, adres: No:182, Peksimet, Gümüşlük Cd., 48960 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-turgutreis-yali-peksimet-outside",
+      "resolvedName": "Yalı Restaurant",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Turgutreis/Bahçelievler/Bahcelievler/Karabağ/Karabag/Akçaalan/Akcaalan, adres: Peksimet, Gümüşlük Cd. No:20, 48010 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-turgutreis-marea-akyarlar-outside",
+      "resolvedName": "Marea Fish Restaurant",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Turgutreis/Bahçelievler/Bahcelievler/Karabağ/Karabag/Akçaalan/Akcaalan, adres: Akyarlar, Gazi Mustafa Kemal Blv. No:323, 48960 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-turgutreis-burger-house-akyarlar-outside",
+      "resolvedName": "BURGER HOUSE BODRUM",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Turgutreis/Bahçelievler/Bahcelievler/Karabağ/Karabag/Akçaalan/Akcaalan, adres: Akyarlar, Atatürk Cd. No:261/4, 48680 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-turgutreis-geremeli-islamhaneleri-outside",
+      "resolvedName": "Geremeli Cafe & Restaurant Köy Kahvaltısı",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Turgutreis/Bahçelievler/Bahcelievler/Karabağ/Karabag/Akçaalan/Akcaalan, adres: İslamhaneleri, cumhuriyet caddesi No:138, 48960 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-turgutreis-jura-iskele-outside",
+      "resolvedName": "Jura İskele Balık",
+      "reason": "outside_strict_neighborhood:Bbox dışında (36.97287, 27.25995)"
+    },
+    {
+      "id": "ctrl-turgutreis-monachello-outside",
+      "resolvedName": "Monachello Restaurant",
+      "reason": "outside_strict_neighborhood:Bbox dışında (36.98033, 27.25869)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "milanz-crispy-turgutreis",
+      "categoryId": "hamburger",
+      "resolvedName": "Milanz Crispy",
+      "branchName": "Bahçelievler, 7025. Sk., 48960 Bodrum/Muğla",
+      "placeId": "ChIJY8ylsMULvhQRcl1QAXy9I7A",
+      "coordinates": {
+        "lat": 37.007785299999995,
+        "lng": 27.2589008
+      },
+      "rating": 4.8,
+      "userRatingCount": 74,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12692196515155828082",
+      "recommendedPrimary": [
+        "Crispy Mozzarella XL Burger",
+        "Izgara Kaburga Etli Burger",
+        "Gurme Tavuk Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Philadelphia & Fajita Sub Sandviçler",
+          "note": "Burger menüleri dışında uzun ekmekte sıcak et ve tavuk dolgulu sub sandviç seçenekleri öne çıkar.",
+          "proof": "Yemeksepeti ve Migros Yemek menü kayıtları"
+        },
+        {
+          "name": "Çıtır Tavuk & Özel Soslu Patates Kızartması",
+          "note": "Ana burgerlerin yanında paylaşımlık çıtır tavuk parçaları ve dip soslu patatesler tercih edilir.",
+          "proof": "Yemeksepeti sipariş listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "7025. Sokak üzerinde sade hızlı servis masaları ve yoğun paket servis düzeni",
+        "crowdAndNoise": "Akşam saatleri ve geç akşamda paket siparişiyle hareketli",
+        "disadvantage": "Sahil manzaralı uzun oturumlu restoran ambiyansı sunmaz; hızlı servis ve paket odaklı bir duraktır",
+        "transit": "Turgutreis Bahçelievler Mahallesi 7025. Sokak üzerinde, merkez marketler ve yürüyüş aksı yakınında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Yemeksepeti — Milanz Crispy Turgutreis Menü",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Crispy Mozzarella XL Burger, ızgara kaburga etli burger, sub sandviç ve çıtır tavuk menü kayıtları"
+        },
+        {
+          "title": "Migros Yemek — Milanz Crispy",
+          "url": "https://www.migros.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Turgutreis Bahçelievler aktif sipariş ve menü doğrulaması"
+        },
+        {
+          "title": "Muğla Esnaf & Yandex — Milanz Crispy Bahçelievler",
+          "url": "https://muglaesnaf.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bahçelievler 7025. Sokak No:13 konum ve operasyon saatleri kaydı"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=12692196515155828082",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bahçelievler, 7025. Sk. konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Çıtır tavuk burger ile dana kaburga burger çizgisini aynı merkez sokakta ulaşılabilir fiyatla sunması",
+        "Çoklu yerel sipariş platformu ve harita kayıtlarıyla teyit edilmiş menü"
+      ],
+      "cons": [
+        "Oturma alanı sade olduğundan uzun akşam buluşmalarından çok hızlı yemek veya paket servise uygundur",
+        "Yoğun akşam saatlerinde kurye trafiği beklemeyi uzatabiliyor"
+      ],
+      "uncertainties": [
+        "Yaz sezonu dışındaki geç gece kapanış saatleri dönemsel olarak güncellenebiliyor"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "blue-coffee-bar-turgutreis",
+      "categoryId": "kahve",
+      "resolvedName": "Blue Coffee Bar",
+      "branchName": "Turgutreis, Gazi Mustafa Kemal Blv. No:34, 48960 Bodrum/Muğla",
+      "placeId": "ChIJwyWzxwcLvhQRwTkoqTjagOs",
+      "coordinates": {
+        "lat": 36.994956099999996,
+        "lng": 27.2580162
+      },
+      "rating": 4.8,
+      "userRatingCount": 173,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.bluecoffeebar.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=16969803332823038401",
+      "recommendedPrimary": [
+        "Iced Latte",
+        "Flat White & Espresso",
+        "Ev Yapımı Limonata"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Geleneksel Sabah Kahvaltısı & Atıştırmalıklar",
+          "note": "Park içinde sabah saatlerinde kahve eşliğinde serpme ve tabak kahvaltı seçenekleri de servis edilir.",
+          "proof": "Wanderlog ve Yandex yerel değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Şevket Sabancı Parkı içinde ağaç gölgesinde açık hava masaları ve deniz yakınında oturma alanı",
+        "crowdAndNoise": "Sabah yürüyüşü sonrası sakin, gün batımına doğru park gezintisiyle hareketli tempo",
+        "disadvantage": "Açık park alanında konumlandığı için rüzgarlı veya yağışlı havalarda kapalı alan kapasitesi sınırlı kalabiliyor",
+        "transit": "Turgutreis Gazi Mustafa Kemal Bulvarı No:34, Şevket Sabancı Parkı içinde sahil yürüyüş yolunda"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Blue Coffee Bar Resmi Sitesi",
+          "url": "https://www.bluecoffeebar.com.tr/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Şevket Sabancı Parkı No:34 resmi işletme kaydı ve menü vitrini"
+        },
+        {
+          "title": "Wanderlog — Blue Coffee Bar Turgutreis",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Park içi denize yakın konum, latte çeşitleri, limonata ve gün batımı atmosferi incelemesi"
+        },
+        {
+          "title": "Rehberi.tr & Otzovik — Blue Coffee Bar",
+          "url": "https://rehberi.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Şevket Sabancı Parkı içi kahve molası ve sakin oturum geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=16969803332823038401",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Turgutreis, Gazi Mustafa Kemal Blv. No:34 konum ve fiyat seviyesi kaydı"
+        }
+      ],
+      "pros": [
+        "Marina kalabalığından uzakta, park yeşilliği ve deniz esintisi içinde keyifli kahve molası sunması",
+        "Gün batımı saatlerinde sakin buluşmalar için rahat açık alan düzeni"
+      ],
+      "cons": [
+        "Üçüncü dalga tek kökenli demleme barı yerine klasik espresso ve kafe menüsü sunar",
+        "Açık park yerleşimi mevsimsel hava şartlarına açıktır"
+      ],
+      "uncertainties": [
+        "Kış aylarında sabah açılış ve akşam kapanış saatleri mevsime göre kısalabiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "caffeine-coffee-turgutreis",
+      "categoryId": "kahve",
+      "resolvedName": "Caffeine Coffee Turgutreis",
+      "branchName": "Turgutreis, 4117. Sk. No:27, 48960 Bodrum/Muğla",
+      "placeId": "ChIJRULn0eALvhQR14ann0qw5lQ",
+      "coordinates": {
+        "lat": 36.9843202,
+        "lng": 27.2570928
+      },
+      "rating": 4.9,
+      "userRatingCount": 88,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.caffeineroaster.com/",
+      "mapsUri": "https://maps.google.com/?cid=6117770978382022359",
+      "recommendedPrimary": [
+        "Tek Kökenli Filtre Kahve",
+        "Cortado & Flat White",
+        "Özel Harman Espresso"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Brookie & San Sebastián Cheesecake",
+          "note": "Kahve eşliğinde taze servis edilen fırın tatlıları özellikle öğleden sonra molalarında tercih edilir.",
+          "proof": "Yemeksepeti Caffeine Coffee Roaster menüsü"
+        },
+        {
+          "name": "Perakende Çekirdek Kahve Paketleri",
+          "note": "Evde demleme yapmak isteyenler için kavrulmuş yöresel çekirdek ve harman satışları mevcuttur.",
+          "proof": "caffeineroaster.com resmi mağaza bilgileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sakin iç mekan çalışma-oturma düzeni ve sokak cephesinde ferah açık masalar",
+        "crowdAndNoise": "Gündüz bilgisayar başında çalışanlar ve kahve müdavimleriyle dingin tempo",
+        "disadvantage": "D-Marin ve çarşı merkezinin güneyinde yer aldığından yürüyerek merkezden biraz mesafe gerektirir; sahil cephesinde değildir",
+        "transit": "Turgutreis 4117. Sokak No:27 (Gazi Mustafa Kemal Bulvarı 183-185 hattı) üzerinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Caffeine Roaster Resmi Sitesi",
+          "url": "https://www.caffeineroaster.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Turgutreis nitelikli kahve kavurucusu ve perakende/toptan çekirdek bilgileri"
+        },
+        {
+          "title": "European Coffee Trip — Caffeine Coffee Roaster Turgutreis",
+          "url": "https://europeancoffeetrip.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Nitelikli kahve rehberi kaydı, çalışma düzeni ve specialty kahve doğrulaması"
+        },
+        {
+          "title": "Yemeksepeti — Caffeine Coffee Roaster Menü",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sıcak-soğuk kahve seçkisi, brookie ve San Sebastián cheesecake menü kalemleri"
+        },
+        {
+          "title": "Yandex Haritalar — Caffeine Coffee Turgutreis",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sakin iç mekan, müzik seçkisi ve tek kökenli çekirdek değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=6117770978382022359",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Turgutreis, 4117. Sk. No:27 konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Turgutreis içinde European Coffee Trip listeli gerçek nitelikli kahve ve kavurma noktası olması",
+        "Sakin atmosferiyle hem kahve tadımı hem çalışma için elverişli alan sunması"
+      ],
+      "cons": [
+        "Çarşı ve marina merkezine göre güney aksında kalıyor",
+        "Deniz manzaralı bir konum yerine mahalle sokak dokusunda yer alır"
+      ],
+      "uncertainties": [
+        "Mevsimsel tek kökenli çekirdek stokları kavurma takvimine göre değişebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "costa-del-sueno-turgutreis",
+      "categoryId": "date",
+      "resolvedName": "Costa Del Sueno",
+      "branchName": "Turgutreis, Gazi Mustafa Kemal Blv. No:183/4, 48400 Bodrum/Muğla",
+      "placeId": "ChIJ1ThucjsNvhQRdzOi4jg0qWQ",
+      "coordinates": {
+        "lat": 36.9835925,
+        "lng": 27.2562142
+      },
+      "rating": 4.9,
+      "userRatingCount": 496,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7253386093781988215",
+      "recommendedPrimary": [
+        "Deniz Mahsullü Paella",
+        "Sıcak & Soğuk Tapas Seçkisi",
+        "Pinchos Tabakları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İspanyol Şarapları & İmza Kokteyller",
+          "note": "Tapas paylaşımına eşlik eden özenli şarap listesi ve bar kokteylleri akşam buluşmalarını tamamlar.",
+          "proof": "costadelsueno.com resmi içecek menüsü"
+        },
+        {
+          "name": "Canlı Müzikli Akşam Etkinlikleri",
+          "note": "Belirli akşamlarda düzenlenen canlı performanslar mekanın İspanyol temasını öne çıkarır.",
+          "proof": "Yandex yerel rehber değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Gün batımına bakan özenle dekore edilmiş açık teras ve şık akşam masaları",
+        "crowdAndNoise": "Akşam yemeklerinde çiftler ve küçük gruplarla keyifli, canlı müzik gecelerinde daha hareketli",
+        "disadvantage": "Güneşin batışına yakın teras masaları hızlı dolabildiğinden rezervasyon önerilir; merkez yürüyüş aksının güneyindedir",
+        "transit": "Turgutreis Gazi Mustafa Kemal Bulvarı No:183/4 adresinde, güney kıyı yolu üzerinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Costa Del Sueño Resmi Sitesi",
+          "url": "https://costadelsueno.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Tapas, pinchos, paella, İspanyol şarapları ve resmi menü kategorileri"
+        },
+        {
+          "title": "Yerels — Costa Del Sueno Bodrum",
+          "url": "https://yerels.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Turgutreis İspanyol restoranı konsepti ve menü değerlendirmeleri"
+        },
+        {
+          "title": "Yandex Haritalar — Costa Del Sueno",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Gün batımı atmosferi, canlı müzik ve dekorasyon geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=7253386093781988215",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Turgutreis, Gazi Mustafa Kemal Blv. No:183/4 konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Bodrum genelindeki klasik balıkçı-ocakbaşı çizgisinden sıyrılan özgün İspanyol tapas ve paella odağı",
+        "Romantik akşam yemeğine uygun gün batımı manzaralı teras atmosferi"
+      ],
+      "cons": [
+        "Turgutreis çarşı merkezinden güneyde kaldığı için kısa araç veya dolmuş sürüşü gerektirebiliyor",
+        "Özel akşam ve canlı müzik programlarında rezervasyonsuz yer bulmak zorlaşabiliyor"
+      ],
+      "uncertainties": [
+        "Canlı müzik programı ve kış sezonu çalışma günleri mevsime göre güncellenebiliyor"
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bitter-bodrum-turgutreis",
+      "categoryId": "date",
+      "resolvedName": "Bitter Bodrum",
+      "branchName": "Bahçelievler, 7013. Sk. No:12/A, 48960 Bodrum/Muğla",
+      "placeId": "ChIJ89S9o9ALvhQRUBFsqXYwc2s",
+      "coordinates": {
+        "lat": 37.008237699999995,
+        "lng": 27.2573558
+      },
+      "rating": 5,
+      "userRatingCount": 182,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://instagram.com/bitterbodrum/",
+      "mapsUri": "https://maps.google.com/?cid=7742585470586720592",
+      "recommendedPrimary": [
+        "Eşref Saati Kokteyli",
+        "İmza Bar Kokteylleri",
+        "Fıçı Bira Seçkisi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fıçı Bira & Klasik Kokteyller",
+          "note": "İmza reçeteler dışında klasik kokteyller ve soğuk fıçı bira seçenekleri bar sohbetlerine eşlik eder.",
+          "proof": "Restoranim.net mekan incelemesi"
+        },
+        {
+          "name": "Gündüz Kahve & Ortak Çalışma Düzeni",
+          "note": "Akşam barına dönüşmeden önce gündüz saatlerinde sakin kahve ve çalışma alanı olarak da kullanılır.",
+          "proof": "Bodrum Flow ve mekan profil bilgileri"
+        }
+      ],
+      "suitability": {
+        "seating": "7013. Sokak üzerinde açık sokak masaları ve yerel sanat eserleriyle dekore edilmiş sıcak iç bar alanı",
+        "crowdAndNoise": "Akşam saatlerinden geceye DJ performanslarıyla enerjik ama samimi müdavim ortamı",
+        "disadvantage": "Ana odak noktası kokteyl ve içecek menüsüdür; kapsamlı akşam yemeği mutfağı yerine bar atıştırmalıkları sunar",
+        "transit": "Turgutreis Bahçelievler Mahallesi 7013. Sokak No:12/A adresinde, merkez barlar sokağı dokusunda"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Bitter Bodrum Resmi Instagram",
+          "url": "http://instagram.com/bitterbodrum/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Bahçelievler 7013. Sokak konumu ve güncel bar etkinlikleri"
+        },
+        {
+          "title": "Restoranim — Bitter Bodrum İncelemesi",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Eşref Saati (rakı-reyhan-kavun) kokteyli, fıçı biralar ve yerel sanat dekoru detayı"
+        },
+        {
+          "title": "MyGuideBodrum — Bitter Bodrum",
+          "url": "https://www.myguidebodrum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kokteyl bar konsepti ve sosyal akşam buluşmaları rehber kaydı"
+        },
+        {
+          "title": "Bodrum Flow — Bitter Bodrum DJ & Chill-House",
+          "url": "https://bodrumflow.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "DJ performansları ve chill-house müzik takvimi doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=7742585470586720592",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bahçelievler, 7013. Sk. No:12/A konum ve fiyat seviyesi kaydı"
+        }
+      ],
+      "pros": [
+        "Büyük kulüplerin gürültüsünden uzak, yerel tarifli yaratıcı kokteyllere odaklanan karakterli sokak barı",
+        "Gündüz sakin kafe-çalışma alanı, akşam sosyal kokteyl buluşma noktası olması"
+      ],
+      "cons": [
+        "Kapsamlı sıcak yemek menüsü arayan misafirler için akşam yemeği yerine yemek öncesi/sonrası içkiye daha uygundur",
+        "Sokak cephesi küçük ölçekli olduğundan hafta sonu akşamları erken dolabiliyor"
+      ],
+      "uncertainties": [
+        "DJ ve etkinlik günleri sezon yoğunluğuna göre haftalık değişebiliyor"
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "salt-kitchen-lounge-turgutreis",
+      "categoryId": "date",
+      "resolvedName": "Salt Kitchen & Lounge",
+      "branchName": "Bahçelievler, 7113. Sk., 48400 Bodrum/Muğla",
+      "placeId": "ChIJzW8X6eILvhQRNVazAS7xu-4",
+      "coordinates": {
+        "lat": 37.0177214,
+        "lng": 27.253321399999997
+      },
+      "rating": 4.8,
+      "userRatingCount": 259,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17202608381571061301",
+      "recommendedPrimary": [
+        "Chateaubriand (Paylaşımlık)",
+        "Bütün Izgara Levrek & Dev Karides",
+        "Günlük Ege Mezeleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sarımsaklı Mantar & Günlük Mezeler",
+          "note": "Ana et veya balık öncesinde masaya paylaşımlık sıcak başlangıçlar ve günlük mezeler eklenir.",
+          "proof": "saltkitchenbodrum.com menü listesi"
+        },
+        {
+          "name": "Sabah Serpme & İngiliz Kahvaltısı",
+          "note": "Gün boyu açık olan sahil terasında sabah saatlerinde kahvaltı servisi de sunulur.",
+          "proof": "saltkitchenbodrum.com ve Restaurant Guru kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Denize sıfır sahil terası, gün batımını ön sıradan gören açık yemek masaları ve lounge bölümü",
+        "crowdAndNoise": "Gün batımı ve akşam yemeğinde çiftler ve ailelerle düzenli dolu, zarif ve ferah tempo",
+        "disadvantage": "Bahçelievler kuzey sahil şeridinde yer aldığından Turgutreis çarşı merkezinden kısa yürüyüş veya araç mesafesindedir",
+        "transit": "Bahçelievler Mahallesi 7113. Sokak sahil hattı üzerinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Salt Kitchen & Lounge Resmi Sitesi",
+          "url": "https://saltkitchenbodrum.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Bahçelievler sahil konumu, Chateaubriand, deniz ürünleri, günlük mezeler ve kahvaltı menüsü"
+        },
+        {
+          "title": "Wanderlog — Salt Kitchen & Lounge",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sahil atmosferi, pizza/makarna çeşitleri ve ziyaretçi deneyimi incelemesi"
+        },
+        {
+          "title": "Restaurant Guru & Masaport — Salt Kitchen",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Spagetti carbonara, sarımsaklı mantar ve gün batımı servisi değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=17202608381571061301",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bahçelievler, 7113. Sk. konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Denize sıfır konumuyla Turgutreis gün batımını kesintisiz gören masalar sunması",
+        "Et, taze balık ve vejetaryen/glütensiz uyarlanabilir menüsüyle karma gruplara rahat uyum sağlaması"
+      ],
+      "cons": [
+        "Üst segment steak ve deniz ürünlerinde bütçe seviyesi çarşı içi mekanlara göre yukarıda kalabiliyor",
+        "Gün batımı ön sıra masaları için önceden rezervasyon gerekebiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışındaki kahvaltı ve akşam servisi günleri döneme göre değişebiliyor"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kakuli-meyhane-turgutreis",
+      "categoryId": "date",
+      "resolvedName": "Kakuli Meyhane",
+      "branchName": "Turgutreis, 4007. Sk. No 2 A-B, 48400 Bodrum/Muğla",
+      "placeId": "ChIJiU9oiZoLvhQRTUIszHMLyEA",
+      "coordinates": {
+        "lat": 37.006097,
+        "lng": 27.257922999999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 94,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4667993605744116301",
+      "recommendedPrimary": [
+        "Günlük Ege Mezeleri",
+        "Sıcak Ot Tabağı",
+        "Mevsim Balıkları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Hurma Tatlısı",
+          "note": "Rakı-balık ve meze sofrası sonrasında mekanın en sık övülen geleneksel tatlı kapanışıdır.",
+          "proof": "Yandex yerel değerlendirmeleri"
+        },
+        {
+          "name": "Zeytinyağlı Ege Başlangıçları",
+          "note": "Günlük mevsime göre değişen zeytinyağlı sebze ve ot tabakları meyhane masasının temelini oluşturur.",
+          "proof": "Bodrum Meyhaneleri ve MyGuideBodrum kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "4007. Sokak üzerinde temiz ve düzenli sokak-dış masa oturumu ile samimi iç mekan",
+        "crowdAndNoise": "Akşamları sohbet odaklı, kalabalık gürültüden uzak nezih meyhane temposu",
+        "disadvantage": "Küçük ölçekli sokak meyhanesi olduğundan yoğun yaz akşamlarında rezervasyonsuz masa bulmak güç olabiliyor",
+        "transit": "Turgutreis 4007. Sokak No:2 A-B adresinde, iskele ve merkez çarşı yürüme mesafesinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Bodrum Meyhaneleri — Kakuli Meyhane",
+          "url": "https://bodrummeyhaneleri.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Turgutreis meyhane kültürü, günlük taze meze ve nezih akşam atmosferi kaydı"
+        },
+        {
+          "title": "MyGuideBodrum — Kakuli Meyhane",
+          "url": "https://www.myguidebodrum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "4007. Sokak konumu, deniz ürünleri ve meyhane servis detayları"
+        },
+        {
+          "title": "Restaurant Guru — Kakuli Meyhane",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ziyaretçi memnuniyeti ve taze deniz ürünleri değerlendirmeleri"
+        },
+        {
+          "title": "Yandex Haritalar — Kakuli Meyhane",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sıcak ot tabağı, hurma tatlısı ve dengeli fiyat politikası geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=4667993605744116301",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Turgutreis, 4007. Sk. No:2 A-B konum ve fiyat seviyesi kaydı"
+        }
+      ],
+      "pros": [
+        "Abartısız, temiz mutfak ve makul fiyat çizgisiyle sıcak meyhane deneyimi sunması",
+        "Editoryal meyhane rehberleri ve yerel topluluk kayıtlarıyla güçlü doğrulama"
+      ],
+      "cons": [
+        "Kıyı sıfır deniz manzarası yerine çarşı içi sokak atmosferinde yer alır",
+        "Sınırlı masa kapasitesi sebebiyle hafta sonu rezervasyon gerektirir"
+      ],
+      "uncertainties": [
+        "Günlük meze ve taze balık çeşitleri hal tedarikine göre her akşam değişebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kupula-bahce-turgutreis",
+      "categoryId": "kahvalti",
+      "resolvedName": "Kupula Bahçe Kahvaltı & Restaurant",
+      "branchName": "Bahçelievler, 48960 Bodrum/Muğla",
+      "placeId": "ChIJf1USA1VzvhQRAPsa-xXZxyw",
+      "coordinates": {
+        "lat": 37.0198308,
+        "lng": 27.2708519
+      },
+      "rating": 4.5,
+      "userRatingCount": 182,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3226786346464639744",
+      "recommendedPrimary": [
+        "Serpme Bahçe Kahvaltısı",
+        "Taze Sıkılmış Organik Mandalina Suyu",
+        "Ev Yapımı Reçel Çeşitleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bahçe İçi Öğle & Restoran Seçenekleri",
+          "note": "Kahvaltı saatleri dışında da yeşil bahçe içinde ana yemek ve hafif tabak servisi devam eder.",
+          "proof": "Bodrumlu.com ve Bodrum Mekanları rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Gölgelikli geniş bahçe masaları ve çocuklu aileler için açık oyun alanı",
+        "crowdAndNoise": "Sabah ve hafta sonu brunch saatlerinde ailelerle hareketli ama ferah ve kuş sesli ortam",
+        "disadvantage": "Sahil bandı yerine Terminal Caddesi aksında yer aldığı için deniz manzarası bulunmaz",
+        "transit": "Bahçelievler Mahallesi Terminal Caddesi No:48 adresinde, Turgutreis otogar çevresi bağlantısında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Bodrumlu — Kupula Bahçe Kahvaltı",
+          "url": "https://bodrumlu.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yeşil bahçe atmosferi, serpme köy kahvaltısı ve sakin sabah ortamı incelemesi"
+        },
+        {
+          "title": "Bodrum Mekanları — Kupula Kahvaltı",
+          "url": "https://www.bodrummekanlari.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Turgutreis kahvaltı rehberinde bahçe kahvaltısı kaydı"
+        },
+        {
+          "title": "Yandex Haritalar — Kupula Bahçe",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Terminal Cd. No:48 adresi, organik mandalina suyu ve çocuk oyun alanı doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=3226786346464639744",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bahçelievler konum ve fiyat seviyesi kaydı"
+        }
+      ],
+      "pros": [
+        "Çarşı trafiğinden uzak, ağaçlar altında çocuklu aileler ve kalabalık gruplar için ferah bahçe sunması",
+        "Taze sıkılmış yerel mandalina suyu ve ev reçelleriyle öne çıkan serpme sofra"
+      ],
+      "cons": [
+        "Merkez kıyı yürüyüş yolundan içeride kaldığı için yürüyerek gitmek uzak gelebiliyor",
+        "Açık bahçe düzeni yağışlı kış günlerinde kısıtlı kullanım sunabilir"
+      ],
+      "uncertainties": [
+        "Hafta içi ve kış dönemi bahçe servis saatleri mevsime göre değişebiliyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mavi-park-turgutreis",
+      "categoryId": "kahvalti",
+      "resolvedName": "Mavi Park Restoran Kahvaltı ve Et Ocakbaşı",
+      "branchName": "Turgutreis, Şevket Sabancı Parkı İçi No:34, 48400 Bodrum/Muğla",
+      "placeId": "ChIJu8AFP1oLvhQRTvrwpDM99ao",
+      "coordinates": {
+        "lat": 36.9947053,
+        "lng": 27.2580331
+      },
+      "rating": 4.6,
+      "userRatingCount": 1831,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.maviparkrestaurant.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=12318819647761742414",
+      "recommendedPrimary": [
+        "Deniz Kenarı Serpme Kahvaltı",
+        "Taş Fırın Sıcak Hamur İşleri",
+        "Ev Yapımı Reçeller"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Odun Ateşinde Pide, Lahmacun & Ocakbaşı",
+          "note": "Öğle ve gün batımı akşamlarında park manzarası eşliğinde kebap ve taş fırın pideleri ana mutfağı devralır.",
+          "proof": "maviparkrestaurant.com.tr ve Bodrumluculuk rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Şevket Sabancı Parkı içinde denize sıfır geniş açık bahçe-teras ve kapalı salon masaları",
+        "crowdAndNoise": "Sabah kahvaltısı ve gün batımı akşamlarında aileler ile yerliler tarafından yoğun tercih edilir",
+        "disadvantage": "Büyük kapasiteli çok yönlü bir tesis olduğu için hafta sonu pik saatlerde servis temposu yoğunlaşabiliyor",
+        "transit": "Turgutreis Şevket Sabancı Parkı İçi No:34 adresinde, sahil yürüyüş yolu üzerinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Mavi Park Resmi Sitesi",
+          "url": "https://www.maviparkrestaurant.com.tr/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Şevket Sabancı Parkı konumu, serpme kahvaltı ve et ocakbaşı menü vitrini"
+        },
+        {
+          "title": "Bodrumluculuk — Mavi Park Turgutreis",
+          "url": "https://bodrumluculuk.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Deniz kenarı serpme kahvaltı, ev yapımı reçeller, taş fırın lezzetleri ve gün batımı ocakbaşı incelemesi"
+        },
+        {
+          "title": "MyGuideBodrum — Mavi Park Restaurant",
+          "url": "https://www.myguidebodrum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Park içi geniş mekan, kahvaltı ve akşam yemeği rehber kaydı"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=12318819647761742414",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Şevket Sabancı Parkı İçi No:34 konum ve yüksek hacimli doğrulama"
+        }
+      ],
+      "pros": [
+        "Hem deniz kıyısı manzarası hem de park içi rahat oturma alanını aynı noktada sunması",
+        "Kapalı ve açık alan dengesi sayesinde dört mevsim sürdürülebilir servis vermesi"
+      ],
+      "cons": [
+        "Yüksek hacimli ve geniş menülü yapısı butik bir kahvaltıcı sıcaklığından daha kalabalık hissedilebilir",
+        "Hafta sonu gün batımı saatlerinde park çevresinde otopark yoğunluğu yaşanabiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışı dönemlerde serpme kahvaltı saatleri ve ocakbaşı bölümü saatleri güncellenebiliyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "burcak-firin-turgutreis",
+      "categoryId": "kahvalti",
+      "resolvedName": "Burçak Fırın",
+      "branchName": "Karabağ, Turgut Özal Cd., 48960 Bodrum/Muğla",
+      "placeId": "ChIJPcQi2TULvhQRSJ2aoFd38P8",
+      "coordinates": {
+        "lat": 37.0045978,
+        "lng": 27.2654258
+      },
+      "rating": 4.6,
+      "userRatingCount": 215,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18442371692322528584",
+      "recommendedPrimary": [
+        "Ekşi Maya Tam Buğday Ekmeği",
+        "Sıcak Börek Çeşitleri",
+        "Çıtır Simit & Poğaça"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli Çörek & Katmer",
+          "note": "Sabah kahvaltısı sonrası veya çay yanında fırından taze çıkan tatlı hamur işleri sıkça tercih edilir.",
+          "proof": "Yemeksepeti ve Restoranim kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Turgut Özal Caddesi cephesinde hızlı sabah kahvaltısı ve fırından al-götür düzeni",
+        "crowdAndNoise": "Sabah erken saatlerde ve yaz sezonunda taze çıkan hamur işleri için kısa sıralar oluşabiliyor",
+        "disadvantage": "Serpme kahvaltı bahçesi değil, ağırlıklı olarak fırın ve hızlı sabah atıştırmalık noktasıdır; popüler çeşitler öğlene kalmadan tükenebilir",
+        "transit": "Karabağ Mahallesi Turgut Özal Caddesi üzerinde, Turgutreis giriş aksında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Burçak Fırın Resmi Sitesi",
+          "url": "https://burcakfirin.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Erken sabah taze fırın üretimi ve şube bilgileri"
+        },
+        {
+          "title": "Restoranim — Burçak Fırın Turgutreis",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ekşi maya tam buğday ekmeği, sıcak börek ve sabah yoğunluğu incelemeleri"
+        },
+        {
+          "title": "Restaurant Guru & Yemeksepeti — Burçak Fırın",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Simit, poğaça, açma, tahinli çörek ve börek menü doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=18442371692322528584",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Karabağ, Turgut Özal Cd. konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Serpme kahvaltı yerine gerçek ekşi mayalı ekmek ve sıcak mahalle böreği arayanlar için doğrudan fırın tazeliği",
+        "Bütçe dostu ve hızlı sabah kahvaltısı seçeneği sunması"
+      ],
+      "cons": [
+        "Geniş bahçe oturumu veya deniz manzarası arayanlara hitap etmez",
+        "Ekşi mayalı ekmek ve sıcak börek tepsileri sabah ilerledikçe bitebiliyor"
+      ],
+      "uncertainties": [
+        "Sezona göre belirli börek çeşitlerinin fırından çıkış saatleri değişebiliyor"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "venus-pastanesi-turgutreis",
+      "categoryId": "kahvalti",
+      "resolvedName": "Venüs Pastanesi",
+      "branchName": "Turgutreis, Gazi Mustafa Kemal Blv. No:16, 48400 Bodrum/Muğla",
+      "placeId": "ChIJBRLYegMLvhQRYHBjNAgVUFc",
+      "coordinates": {
+        "lat": 37.005039499999995,
+        "lng": 27.257970999999998
+      },
+      "rating": 4.4,
+      "userRatingCount": 404,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.venuspastanesi.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=6291551804419436640",
+      "recommendedPrimary": [
+        "Kruvasan Sandviç",
+        "Artizan Ekmek & Poğaça Çeşitleri",
+        "Bademli Keşkül & Fırın Sütlaç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sütlü Tatlılar & Glutensiz Pasta Seçenekleri",
+          "note": "Sabah hamur işleri dışında bademli keşkül, fırın sütlaç ve glutensiz tatlılar gün boyu vitrinde yer alır.",
+          "proof": "Yemeksepeti ve Venüs Pastanesi kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Gazi Mustafa Kemal Bulvarı üzerinde vitrin önü açık ve kapalı pastane oturma alanı",
+        "crowdAndNoise": "Sabah kahvaltısı ve öğleden sonra tatlı-pasta molalarında düzenli yerel ve tatilci trafiği",
+        "disadvantage": "Serpme köy kahvaltısı yerine pastane tipi sabah atıştırmalığı sunar; ana bulvar üzerinde olduğundan sakin bahçe dokusu yoktur",
+        "transit": "Turgutreis Gazi Mustafa Kemal Bulvarı No:16 adresinde, merkez çarşı ve marina yürüyüş aksında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Venüs Pastanesi Resmi Sitesi",
+          "url": "https://venuspastanesi.com.tr/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "1976 kuruluş geçmişi ve Turgutreis GMK Bulvarı No:16 şube doğrulaması"
+        },
+        {
+          "title": "Hürriyet — Köklü Pastane Geleneği (Venüs Pastanesi)",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1976 kuruluşlu köklü İstanbul pastane markasının tarihi ve ürün çizgisi"
+        },
+        {
+          "title": "Yemeksepeti — Venüs Pastanesi Turgutreis Menü",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kruvasan sandviç, poğaça, simit, bademli keşkül, fırın sütlaç ve glutensiz tatlı kayıtları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=6291551804419436640",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Turgutreis, Gazi Mustafa Kemal Blv. No:16 konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Merkez bulvarda erken saatlerden itibaren güvenilir pastane kahvaltısı ve glutensiz ürün seçeneği sunması",
+        "1976 kökenli oturmuş üretim standardı"
+      ],
+      "cons": [
+        "Köy kahvaltısı veya bahçe ortamı yerine şehir içi klasik pastane düzenindedir",
+        "Bulvar üzerindeki hareketlilik nedeniyle sakin doğa atmosferi sunmaz"
+      ],
+      "uncertainties": [
+        "Sezon yoğunluğunda glutensiz ve günlük sütlü tatlı çeşitliliği akşama doğru azalabiliyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "turgutreis-dogal-dondurma",
+      "categoryId": "denemelisin",
+      "resolvedName": "Turgutreis Doğal Dondurma",
+      "branchName": "Atatürk Cad Alçalan No:11/b, Akçaalan, 48960 Bodrum/Muğla",
+      "placeId": "ChIJt_NAYlhtvhQR6WrPGNRo5KA",
+      "coordinates": {
+        "lat": 37.0110713,
+        "lng": 27.273145600000003
+      },
+      "rating": 4.6,
+      "userRatingCount": 597,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11593506600917101289",
+      "recommendedPrimary": [
+        "Bodrum Mandalinalı Dondurma",
+        "Bal Bademli Dondurma",
+        "Karadut & Damla Sakızlı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fesleğenli & Cevizli Yerel Çeşitler",
+          "note": "Klasik mandalina ve karadut dışında taze fesleğen veya cevizli mevsimlik dondurma alternatifleri bulunur.",
+          "proof": "Bodrumdayız ve Hangi Mekan dondurma incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Atatürk Caddesi üzerinde dükkan önü al-götür servisi ve sınırlı dış oturma alanı",
+        "crowdAndNoise": "Yaz akşamları ve hafta sonlarında dondurma sırası oluşabilen canlı mahalle temposu",
+        "disadvantage": "Sahil yürüyüş yolunun içindeki Akçaalan caddesinde kaldığından çarşı merkezinden kısa yürüyüş veya araç mesafesindedir",
+        "transit": "Akçaalan Mahallesi Atatürk Caddesi No:11/B adresinde, Turgutreis giriş caddesi üzerinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Bodrumdayız — Turgutreis Doğal Dondurma",
+          "url": "https://www.bodrumdayiz.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Katkısız üretim, sakız kıvamı ve yerel esnaf dondurmacısı incelemesi"
+        },
+        {
+          "title": "Hangi Mekan — Turgutreis Doğal Dondurma",
+          "url": "https://www.hangimekan.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bodrum mandalinası, keçi sütü, karadut, bal badem ve cevizli çeşitlerin doğrulaması"
+        },
+        {
+          "title": "Yandex Haritalar — Turgutreis Doğal Dondurma",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Akçaalan Atatürk Cd. No:11/B konum ve ziyaretçi değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=11593506600917101289",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Akçaalan, Atatürk Cad Alçalan No:11/b konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Zincir dondurmacılar yerine gerçek keçi sütü ve yöresel Bodrum mandalinasıyla günlük üretim yapması",
+        "Yüzlerce yerel değerlendirmeyle istikrarlı kalite çizgisi"
+      ],
+      "cons": [
+        "Geniş oturmalı kafe konseptinden ziyade al-götür veya kısa mola dükkanıdır",
+        "Yaz akşamlarında kapı önü sırası oluşabiliyor"
+      ],
+      "uncertainties": [
+        "Mevsimlik meyveli çeşitler taze meyve tedarikine göre dönemsel değişebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "degirmen-lokantasi-turgutreis",
+      "categoryId": "denemelisin",
+      "resolvedName": "Değirmen Lokantası",
+      "branchName": "Turgutreis, Gazi Mustafa Kemal Blv. No:14B, 48960 Bodrum/Muğla",
+      "placeId": "ChIJJ34LkVwLvhQRlInbfbZC6Qk",
+      "coordinates": {
+        "lat": 37.0050533,
+        "lng": 27.2579462
+      },
+      "rating": 4.4,
+      "userRatingCount": 621,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=714175367477954964",
+      "recommendedPrimary": [
+        "Kabak Çiçeği Dolması",
+        "Şevketi Bostan & Ege Otları",
+        "Ev Yapımı Mücver"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Tencere Et & Sebze Yemekleri",
+          "note": "Zeytinyağlılar dışında günün taze pişen etli ve sebzeli ev yemekleri öğle-akşam servisinde yer alır.",
+          "proof": "Restoranim.net ve Yandex yerel kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Bulvar cephesinden içeride kalan sakin ve gölgeli bahçe masaları ile iç salon",
+        "crowdAndNoise": "Öğle ve erken akşam saatlerinde yerleşik halk ve ev yemeği arayan tatilcilerle dengeli tempo",
+        "disadvantage": "Geleneksel lokanta saatlerinde işlediğinden akşam geç saatlere doğru tencere yemeklerinin bir kısmı tükenebiliyor",
+        "transit": "Turgutreis Gazi Mustafa Kemal Bulvarı No:14B adresinde, merkez çarşı aksı üzerinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Restoranim — Değirmen Lokantası Turgutreis",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Aile işletmesi ev yemekleri, kabak çiçeği dolması ve mücver değerlendirmeleri"
+        },
+        {
+          "title": "Eatbu — Değirmen Lokantası",
+          "url": "https://eatbu.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Merkez adres ve Türk/Ege mutfağı lokanta kaydı"
+        },
+        {
+          "title": "Yandex Haritalar — Değirmen Lokantası",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Şevketi bostan, zeytinyağlılar ve huzurlu bahçe ortamı geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=714175367477954964",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Turgutreis, Gazi Mustafa Kemal Blv. No:14B konum ve fiyat seviyesi kaydı"
+        }
+      ],
+      "pros": [
+        "Turgutreis merkezinde turistik menüler yerine gerçek Ege zeytinyağlıları ve ot yemekleri sunması",
+        "Sakin bahçe alanı ve istikrarlı aile işletmesi çizgisi"
+      ],
+      "cons": [
+        "Deniz manzaralı bir konum yerine merkez bulvar içi bahçe dokusunda hizmet verir",
+        "Günlük çıkan tencere çeşitleri akşam geç saatlerde azalabiliyor"
+      ],
+      "uncertainties": [
+        "Şevketi bostan ve kabak çiçeği dolması gibi yöresel yemekler mevsime göre menüde yer alıyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "osmanin-yeri-turgutreis",
+      "categoryId": "denemelisin",
+      "resolvedName": "Osman’ın Yeri Restaurant",
+      "branchName": "Bahçelievler, Plaj Cd. No:10, 48960 Bodrum/Muğla",
+      "placeId": "ChIJ27rdxTALvhQRIU09uz-KSbY",
+      "coordinates": {
+        "lat": 37.0079967,
+        "lng": 27.257543799999997
+      },
+      "rating": 4.5,
+      "userRatingCount": 409,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://osmaninyerirestaurant.eatbu.com/",
+      "mapsUri": "https://maps.google.com/?cid=13135181794531691809",
+      "recommendedPrimary": [
+        "Kelle Paça Çorbası",
+        "Kuru Fasulye & Pilav",
+        "Günlük Sulu Tencere Yemekleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Güveç & Günlük Kebap Tabakları",
+          "note": "Sabah çorbalarının ardından öğle saatlerinde etli güveçler ve ızgara çeşitleri servis edilir.",
+          "proof": "Restaurant Guru ve Eatbu kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Plaj Caddesi köşesinde sade, samimi esnaf lokantası iç ve dış masaları",
+        "crowdAndNoise": "Sabah çorba saatleri ve Turgutreis semt pazarı günlerinde oldukça hareketli",
+        "disadvantage": "Gösterişli dekorasyon yerine sade esnaf lokantası düzenindedir; öğle sonrası popüler yemekler erken bitebiliyor",
+        "transit": "Bahçelievler Mahallesi Plaj Caddesi (7016. Sk.) No:10 adresinde, merkez çarşı ve pazar alanına yürüme mesafesinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Fodor's Travel — Osman'ın Yeri Turgutreis",
+          "url": "https://www.fodors.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Uluslararası seyahat rehberinde yerel esnaf lokantası ve geleneksel Türk yemekleri önerisi"
+        },
+        {
+          "title": "Osman'ın Yeri Resmi Sayfası (Eatbu)",
+          "url": "https://osmaninyerirestaurant.eatbu.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Plaj Caddesi No:10/A resmi işletme kaydı"
+        },
+        {
+          "title": "Restaurant Guru & Yandex — Meşhur Paçacı Osman'ın Yeri",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Erken sabah kelle paça çorbası, kuru fasulye ve pazar günü yoğunluğu geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=13135181794531691809",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bahçelievler, Plaj Cd. No:10 konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Gerçek yerel esnaf kültürünü ve sabah kelle paça geleneğini yaşatan köklü aile işletmesi",
+        "Ulaşılabilir bütçe ve doyurucu ev yemeği porsiyonları"
+      ],
+      "cons": [
+        "Sade esnaf lokantası görünümünde olduğundan özel akşam yemeği ambiyansı arayanlara uygun değildir",
+        "Cumartesi pazar günleri masa bulmak zorlaşabiliyor"
+      ],
+      "uncertainties": [
+        "Sakatat çorbaları ve günlük tencere yemekleri erken saatlerde tükenebiliyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "metin-guler-ocakbasi-turgutreis",
+      "categoryId": "denemelisin",
+      "resolvedName": "Metin Güler Ocakbaşı",
+      "branchName": "Marina Premium Sitesi Çarşısı, Turgutreis, Gazi Mustafa Kemal Blv. No: 105 F 4-5, 48400 Bodrum/Muğla",
+      "placeId": "ChIJV8aUQwALvhQRQgHknOyISk0",
+      "coordinates": {
+        "lat": 36.9971484,
+        "lng": 27.2590461
+      },
+      "rating": 4.5,
+      "userRatingCount": 315,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5569414439022887234",
+      "recommendedPrimary": [
+        "Adana Kebap",
+        "Ciğer Şiş & Kuzu Şiş",
+        "Odun Ateşi Lahmacun"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fıstıklı & Patlıcanlı Kebap Seçenekleri",
+          "note": "Klasik Adana ve ciğer şiş yanında özel kıyma ve köz patlıcanlı kebaplar akşam sofralarının öne çıkanlarıdır.",
+          "proof": "MyGuideBodrum ve Yerels kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Marina Premium Çarşısı cephesinde açık teras ve ocakbaşı etrafı iç mekan oturumu",
+        "crowdAndNoise": "Akşam yemeği ve gün batımı saatlerinde grup masalarıyla canlı tempo",
+        "disadvantage": "Büyük grup masaları akşamları gürültülü olabiliyor; doğrudan marina içi değil ana cadde çarşı tarafındadır",
+        "transit": "Turgutreis Gazi Mustafa Kemal Bulvarı No:105 F 4-5, Marina Premium Sitesi Çarşısı içinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "MyGuideBodrum — Metin Güler Ocakbaşı",
+          "url": "https://www.myguidebodrum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Marina Premium konumu, ızgara ve ocakbaşı konsepti rehber kaydı"
+        },
+        {
+          "title": "HaberBodrum — Metin Güler Ocakbaşı",
+          "url": "https://haberbodrum.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Turgutreis gün batımı aksında ocakbaşı deneyimi ve mekan haberi"
+        },
+        {
+          "title": "Yerels & Yandex — Metin Güler Ocakbaşı",
+          "url": "https://yerels.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Adana kebap, ciğer şiş, lahmacun ve pide çeşitleri değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=5569414439022887234",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Marina Premium Sitesi Çarşısı, GMK Blv. No:105 konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Deniz ürünleri ağırlıklı Turgutreis sahnesinde güçlü ve özenli et-ocakbaşı alternatifi sunması",
+        "Kebap yanında pide ve lahmacun seçenekleriyle kalabalık gruplara kolay uyum sağlaması"
+      ],
+      "cons": [
+        "Deniz kıyısında değil bulvar üstü çarşı kompleksinde konumlanır",
+        "Hafta sonu akşamlarında kalabalık masalar nedeniyle gürültü seviyesi artabiliyor"
+      ],
+      "uncertainties": [
+        "Sezon içi yoğun akşamlar için önceden masa rezervasyonu gerekebiliyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cancan-gurme-turgutreis",
+      "categoryId": "denemelisin",
+      "resolvedName": "Cancan Gurme Restoran",
+      "branchName": "Turgutreis, 4009. Sk. No:6, 48960 Bodrum/Muğla",
+      "placeId": "ChIJia54JGcLvhQRcD6b_3UvX6U",
+      "coordinates": {
+        "lat": 37.005868299999996,
+        "lng": 27.2582831
+      },
+      "rating": 4.7,
+      "userRatingCount": 285,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://cancangurmerestaurant.eatbu.com/",
+      "mapsUri": "https://maps.google.com/?cid=11916295322891665008",
+      "recommendedPrimary": [
+        "Ev Yapımı Tencere Yemekleri",
+        "Hamsili Pilav & Deniz Ürünleri",
+        "Kalamar & Karides"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Serpme Kahvaltı & Ev Yapımı Reçeller",
+          "note": "Sabah saatlerinde ev yapımı reçeller, yöresel peynirler ve taze yeşilliklerle sakin kahvaltı servisi bulunur.",
+          "proof": "Yandex yerel değerlendirmeleri"
+        },
+        {
+          "name": "Vejetaryen & Vegan Seçenekler",
+          "note": "Zeytinyağlılar ve bitkisel tabaklar sayesinde et veya balık tüketmeyen misafirler için de alternatif sunar.",
+          "proof": "Eatbu ve VeganHarita kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "4009. Sokak üzerinde açık sokak masaları ve samimi iç mekan düzeni",
+        "crowdAndNoise": "Öğlen ev yemeği, akşam balık-meze servisiyle gün boyu düzenli ancak sıcak mahalle temposu",
+        "disadvantage": "Çarşı içi ara sokakta konumlandığından doğrudan deniz manzarası sunmaz",
+        "transit": "Turgutreis 4009. Sokak No:6 adresinde, merkez Balıkçılar Çarşısı içinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Cancan Gurme Resmi Sayfası (Eatbu)",
+          "url": "https://cancangurmerestaurant.eatbu.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "4009. Sokak No:6 resmi işletme, brunch/akşam yemeği ve vejetaryen seçenek kayıtları"
+        },
+        {
+          "title": "MyGuideBodrum — Cancan Gurme Restaurant",
+          "url": "https://www.myguidebodrum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Turgutreis merkezde gurme yerel mutfak rehber kaydı"
+        },
+        {
+          "title": "Maptons & VeganHarita — Cancan Gurme",
+          "url": "https://maptons.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Temiz ev yemekleri, hamsili pilav, kalamar-karides ve vegan alternatif doğrulaması"
+        },
+        {
+          "title": "Yandex Haritalar — Cancan Gurme",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yan balıkçıdan alınan balığı pişirme geleneği, serpme kahvaltı ve meze incelemeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=11916295322891665008",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Turgutreis, 4009. Sk. No:6 konum ve fiyat seviyesi kaydı"
+        }
+      ],
+      "pros": [
+        "Kahvaltı, ev yemeği ve çarşı balıkçısından taze balık pişirme geleneğini tek samimi adreste birleştirmesi",
+        "Vegan/vejetaryen uyumlu zeytinyağlı seçkisi"
+      ],
+      "cons": [
+        "Deniz kıyısı manzarası bulunmayan çarşı içi sokakta yer alır",
+        "Küçük aile mutfağı olduğundan yoğun akşam yemeklerinde sipariş süresi uzayabiliyor"
+      ],
+      "uncertainties": [
+        "Hamsili pilav ve günlük ev yemekleri günün taze hazırlığına göre değişebiliyor"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "target-bar-turgutreis",
+      "categoryId": "denemelisin",
+      "resolvedName": "Target Bar",
+      "branchName": "Bahçelievler Mh, 7014. Sk. No: 6/B, 48960 Bodrum/Muğla",
+      "placeId": "ChIJiZ3uIVsLvhQRYjGBgHHQHog",
+      "coordinates": {
+        "lat": 37.008216399999995,
+        "lng": 27.2572783
+      },
+      "rating": 4.7,
+      "userRatingCount": 262,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.facebook.com/pages/Target-Bar/138976919510569?fref=ts",
+      "mapsUri": "https://maps.google.com/?cid=9808506224365351266",
+      "recommendedPrimary": [
+        "Geleneksel İngiliz Kahvaltısı",
+        "Pub Burger Çeşitleri",
+        "Fıçı Bira & Kokteyller"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sabah & Öğle Arası İngiliz Kahvaltısı",
+          "note": "Günün erken saatlerinden öğlene dek sunulan geleneksel İngiliz kahvaltısı müdavimlerin sık tercih ettiği öğünlerdendir.",
+          "proof": "Wanderlog ve Yandex yerel kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "7014. Sokak üzerinde açık sokak oturumu ve memorabilia dekorasyonlu pub iç alanı",
+        "crowdAndNoise": "Gündüzleri sakin kahvaltı, akşamları yerel halk ve yerleşik yabancılarla canlı pub temposu",
+        "disadvantage": "Deniz manzarası bulunmayan bir arka sokak pubıdır; büyük maç akşamlarında gürültü seviyesi yükselebilir",
+        "transit": "Bahçelievler Mahallesi 7014. Sokak No:6/B adresinde, merkez barlar sokağı bölgesinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Wanderlog — Target Bar Turgutreis",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İngiliz pub & mod estetiği, İngiliz kahvaltısı, gurme burgerler ve kokteyl incelemesi"
+        },
+        {
+          "title": "MyGuideBodrum — Target Bar",
+          "url": "https://www.myguidebodrum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "7014. Sokak konumu, pub atıştırmalıkları ve bar konsepti kaydı"
+        },
+        {
+          "title": "Meyhankoli & Yandex — Target Food & Bar",
+          "url": "https://www.meyhankoli.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Müdavim atmosferi, güler yüzlü işletme ve spor yayını değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=9808506224365351266",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bahçelievler Mh, 7014. Sk. No:6/B konum ve fiyat seviyesi kaydı"
+        }
+      ],
+      "pros": [
+        "Turgutreis yerleşik topluluğunun ve tatilcilerin yıllardır buluştuğu samimi, abartısız pub ruhu",
+        "Sabah İngiliz kahvaltısından gece bar sohbetine uzanan geniş zaman diliminde hizmet vermesi"
+      ],
+      "cons": [
+        "Sahil hattı veya deniz manzarası bulunmaz",
+        "Maç yayını saatlerinde yüksek sesli ortam oluşabiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışında mutfak ve kahvaltı servis saatleri hafta içi günlere göre kısalabiliyor"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "uncles-restoran-turgutreis",
+      "categoryId": "denemelisin",
+      "resolvedName": "Uncle's Restoran",
+      "branchName": "Turgutreis, Belediye Cd. No:12, 48960 Bodrum/Muğla",
+      "placeId": "ChIJpY-jMVsLvhQRw1FM4ykJPwg",
+      "coordinates": {
+        "lat": 37.00795420000001,
+        "lng": 27.2561571
+      },
+      "rating": 4.5,
+      "userRatingCount": 223,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=594203751347933635",
+      "recommendedPrimary": [
+        "Izgara Deniz Ürünleri & Etler",
+        "Ev Yapımı Burgerler",
+        "Gün Batımı Teras Kokteylleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Üst Kat Gün Batımı Terası & Bar",
+          "note": "Üst kat açık teras bölümü akşamüstü gün batımı manzarası eşliğinde içecek ve yemek için sıkça tercih edilir.",
+          "proof": "Yerels ve Yandex yerel incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Belediye Caddesi girişi, kapalı restoran salonu ve gün batımı gören üst kat açık terası",
+        "crowdAndNoise": "Akşam yemeklerinde farklı mutfak tercihi olan kalabalık aileler ve gruplarla hareketli",
+        "disadvantage": "Çok geniş uluslararası-yerel karma menüye sahip olduğundan tek bir mutfağa odaklanan niş şef mutfağı çizgisinde değildir",
+        "transit": "Turgutreis Belediye Caddesi No:12 adresinde, merkez çarşı aksı üzerinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Wanderlog — Uncle's Restaurant & Bar",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Köklü aile işletmesi kimliği, uluslararası ve yerel mutfak çeşitliliği incelemesi"
+        },
+        {
+          "title": "Restaurant Guru — Uncle's Restaurant",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Burgerler, deniz ürünleri, ızgaralar ve vejetaryen-vegan seçenek değerlendirmeleri"
+        },
+        {
+          "title": "Yerels & Yandex — Uncle's Turgutreis",
+          "url": "https://yerels.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Belediye Caddesi No:12 konumu ve üst kat gün batımı terası geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=594203751347933635",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Turgutreis, Belediye Cd. No:12 konum ve fiyat seviyesi kaydı"
+        }
+      ],
+      "pros": [
+        "Farklı beslenme tercihlerine (et, balık, burger, vegan/vejetaryen) aynı masada çözüm sunan köklü merkez işletmesi",
+        "Üst kat terasından şehir içi gün batımı izleme imkanı"
+      ],
+      "cons": [
+        "Geniş menü yapısı nedeniyle niş tek-ürün uzmanı arayanlara klasik gelebilir",
+        "Çarşı merkezi caddesi üzerinde olduğu için sahil sıfır sessizliği sunmaz"
+      ],
+      "uncertainties": [
+        "Üst teras açılışı ve sezon dışı menü kapsamı mevsime göre güncellenebiliyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mandalinci-restaurant-turgutreis",
+      "categoryId": "denemelisin",
+      "resolvedName": "Mandalinci Restaurant",
+      "branchName": "Turgutreis, Şevket Sabancı Cd., 48400 Bodrum/Muğla",
+      "placeId": "ChIJEbdGV1oLvhQRoDhT2bvYREE",
+      "coordinates": {
+        "lat": 37.0128621,
+        "lng": 27.2552837
+      },
+      "rating": 4.8,
+      "userRatingCount": 173,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4703122212198234272",
+      "recommendedPrimary": [
+        "Karışık Balık Tabağı & Mezeler",
+        "Izgara Steak Çeşitleri",
+        "Sahil Kahvaltısı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Gün Batımı Canlı Müzik Akşamları",
+          "note": "Sahil atmosferini canlı müzik programlarıyla birleştiren akşam saatleri sosyal buluşmalarda öne çıkar.",
+          "proof": "Yandex yerel rehber değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Şevket Sabancı Caddesi sahil kenarında plaj-teras masaları",
+        "crowdAndNoise": "Gündüz plaj misafirleriyle sakin, gün batımı ve canlı müzik akşamlarında hareketli",
+        "disadvantage": "Plaj ve restoran hizmetini bir arada yürüttüğünden yüksek yaz sezonunda akşam geçiş saatleri yoğun olabiliyor",
+        "transit": "Turgutreis Şevket Sabancı Caddesi sahil şeridi üzerinde, merkezden kuzey kıyıya yürüyüş hattında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Restaurant Guru — Mandalinci Restaurant",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Türk ve uluslararası mutfak, kahvaltı, steak ve balık tabakları değerlendirmeleri"
+        },
+        {
+          "title": "Yandex Haritalar — Mandalinci Restaurant & Beach",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Şevket Sabancı Cd. sahil konumu, gün batımı manzarası ve canlı müzik geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=4703122212198234272",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Turgutreis, Şevket Sabancı Cd. konum ve fiyat seviyesi kaydı"
+        }
+      ],
+      "pros": [
+        "Gün boyu plaj keyfini doğrudan akşam gün batımı yemeğine bağlayabilen sahil konumu",
+        "Hem et hem balık seçenekleriyle dengeli kıyı menüsü"
+      ],
+      "cons": [
+        "Plaj işletmesi karakteri nedeniyle sonbahar-kış aylarında sezonluk kapanma yapabiliyor",
+        "Canlı müzik akşamlarında sakin sohbet yerine hareketli bir sahil atmosferi hakimdir"
+      ],
+      "uncertainties": [
+        "Yaz sezonu dışındaki çalışma takvimi ve canlı müzik programı mevsime göre değişebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gunes-manti-turgutreis",
+      "categoryId": "denemelisin",
+      "resolvedName": "Güneş Mantı",
+      "branchName": "Karabağ, Amiral Turgut Reis Cd. no : 53/B, 48960 Bodrum/Muğla",
+      "placeId": "ChIJCzzSCgANvhQRcXoGfZS4f5A",
+      "coordinates": {
+        "lat": 37.0067108,
+        "lng": 27.2683122
+      },
+      "rating": 4.9,
+      "userRatingCount": 107,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10412243811396123249",
+      "recommendedPrimary": [
+        "El Açması Klasik Mantı",
+        "Çıtır Mantı",
+        "Kıymalı & Kaşarlı Çi Börek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Otlu Gözleme, İçli Köfte & Yaprak Sarma",
+          "note": "Mantı çeşitlerinin yanında taze açılmış yöresel otlu gözlemeler ve ev usulü zeytinyağlı yaprak sarma servis edilir.",
+          "proof": "Yemeksepeti Güneş Mantı menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Karabağ Amiral Turgut Reis Caddesi üzerinde samimi mahalle dükkanı masaları ve paket servis düzeni",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde bölge sakinleri ile doyurucu ev mantısı arayanlarla düzenli tempo",
+        "disadvantage": "Sahil hattından içerideki Karabağ mahallesinde konumlandığı için deniz manzarası yoktur",
+        "transit": "Karabağ Mahallesi Amiral Turgut Reis Caddesi No:53/B adresinde, Turgutreis üst aksında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Yemeksepeti — Güneş Mantı Karabağ Menü",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Klasik mantı, çıtır mantı, çi börek, gözleme çeşitleri, içli köfte ve yaprak sarma menü kaydı"
+        },
+        {
+          "title": "Tümİşyeri — Güneş Mantı Karabağ",
+          "url": "https://www.tumisyeri.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Amiral Turgut Reis Cd. No:53/B adres ve işletme kaydı"
+        },
+        {
+          "title": "Yandex Haritalar — Güneş Mantı",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "El açması lezzet, doyurucu porsiyonlar ve Karabağ konumu değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=10412243811396123249",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Karabağ, Amiral Turgut Reis Cd. No:53/B konum ve fiyat seviyesi kaydı"
+        }
+      ],
+      "pros": [
+        "Turgutreis sahil bandı dışında Karabağ mahallesinde gerçek el açması mantı ve çi börek sunan yerel durak",
+        "Çoklu yerel platformda tutarlı yüksek puan ve porsiyon memnuniyeti"
+      ],
+      "cons": [
+        "Kıyıdan içeride kaldığı için yürüyerek merkez sahilden uzak kalabiliyor",
+        "Küçük mahalle dükkanı ölçeğinde olduğundan ambiyans yerine lezzet odaklıdır"
+      ],
+      "uncertainties": [
+        "Yoğun sipariş saatlerinde el açması hamur işlerinin hazırlık süresi uzayabiliyor"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-saray-lokma-turgutreis",
+      "categoryId": "denemelisin",
+      "resolvedName": "Bodrum Saray Lokma",
+      "branchName": "Turgutreis, Gazi Mustafa Kemal Blv. NO:2, 48960 Bodrum/Muğla",
+      "placeId": "ChIJDwo2YlsLvhQRLoCyI2cGymI",
+      "coordinates": {
+        "lat": 37.006071500000004,
+        "lng": 27.257778499999997
+      },
+      "rating": 4.6,
+      "userRatingCount": 65,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://bodrumsaraylokma.com/",
+      "mapsUri": "https://maps.google.com/?cid=7118509201062789166",
+      "recommendedPrimary": [
+        "Taze Saray Lokması",
+        "İzmir Lokması",
+        "Tulumba Tatlısı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çıtır Tulumba Tatlısı",
+          "note": "Sıcak lokma dökümleri dışında tezgah vitrininde günlük taze tulumba tatlısı da bulunur.",
+          "proof": "Yandex yerel işletme kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Gazi Mustafa Kemal Bulvarı No:2 cephesinde tezgah önü al-götür ve kısıtlı oturma alanı",
+        "crowdAndNoise": "Özellikle sıcak lokma döküm saatlerinde ve çarşı gezintisinde ayaküstü uğrak noktası",
+        "disadvantage": "Dükkan servisinin yanında Bodrum genelinde hayır ve cemiyet organizasyonlarına mobil döküm hizmeti verdiklerinden belirli saatlerde tezgah yoğunluğu değişebilir",
+        "transit": "Turgutreis Gazi Mustafa Kemal Bulvarı No:2 adresinde, Merkez Camii ve balıkçı barınağı yürüyüş aksında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Bodrum Saray Lokma Resmi Sitesi",
+          "url": "https://bodrumsaraylokma.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Turgutreis merkezli saray/İzmir lokma üretimi ve resmi işletme bilgileri"
+        },
+        {
+          "title": "Saray Lokma Bodrum & Leziz Lokma",
+          "url": "https://saraylokmabodrum.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Turgutreis Merkez Camii yakını lokma döküm ve tatlı hizmeti doğrulaması"
+        },
+        {
+          "title": "Yandex Haritalar — Bodrum Saray Lokma",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sabit dükkan tulumba tatlısı, saray lokması ve çarşı içi konum geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=7118509201062789166",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Turgutreis, Gazi Mustafa Kemal Blv. NO:2 konum ve fiyat seviyesi kaydı"
+        }
+      ],
+      "pros": [
+        "Turgutreis merkez yürüyüşünde sıcak şerbetli saray lokması ve tulumba sunan nadir geleneksel tatlı duraklarından biri olması",
+        "Zincir şerbetli tatlıcılar yerine yerel usta üretimi sunması"
+      ],
+      "cons": [
+        "Ağırlıklı olarak al-götür ve ayaküstü tatlı molası için uygundur; uzun kafe oturumu sunmaz",
+        "Organizasyon ve hayır dökümleri nedeniyle dükkan içi taze döküm saatleri gün içinde değişebiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışında ve mobil organizasyon günlerinde dükkan açılış-kapanış saatleri değişiklik gösterebiliyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hadi-balik-turgutreis",
+      "categoryId": "balik",
+      "resolvedName": "Hadi Balık",
+      "branchName": "D-Marin Turgutreis, No:21, Turgutreis, 48400 Bodrum/Muğla",
+      "placeId": "ChIJB1ntvN9tvhQRMwPH2oJ3wS0",
+      "coordinates": {
+        "lat": 37.004214399999995,
+        "lng": 27.2574234
+      },
+      "rating": 4.8,
+      "userRatingCount": 2248,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.hadibalik.com/",
+      "mapsUri": "https://maps.google.com/?cid=3297047806111843123",
+      "recommendedPrimary": [
+        "Aslan Balığı Ceviche (Bodrum Mandalinalı)",
+        "Füme Alabalık & Köz Biberli Gambilya Fava",
+        "Karides Bruschetta"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Avokado & Gümüşlük Enginar Salatası",
+          "note": "Yöreye özgü Gümüşlük enginarı ve Kalamata zeytinli semizotu gibi ferah Ege başlangıçları ana balıkların eşlikçisidir.",
+          "proof": "hadibalik.com ve Restoranim menü kayıtları"
+        },
+        {
+          "name": "Kabuklu Deniz Ürünleri & Günlük Taze Balıklar",
+          "note": "Kendi tedarik ve soğuk zincir altyapısından gelen mevsimlik balıklar ızgara veya özel reçetelerle hazırlanır.",
+          "proof": "MyGuideBodrum ve FishRestaurants incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "D-Marin içinde deniz kıyısına bakan açık ahşap teras masaları ve sıcak bistro iç alanı",
+        "crowdAndNoise": "Gün batımı ve akşam yemeklerinde marina ziyaretçileri ile gastronomi meraklılarıyla hareketli",
+        "disadvantage": "Yüksek fiyat segmentinde yer alır; D-Marin içi popüler yaz akşamlarında rezervasyon gerektirir",
+        "transit": "D-Marin Turgutreis Marina içi No:21 adresinde, sahil gezinti yolu üzerinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Hadi Balık Resmi Sitesi",
+          "url": "http://www.hadibalik.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "D-Marin Turgutreis Bistro konumu, kendi tedarik ağı ve Aslan Balığı Ceviche vurgusu"
+        },
+        {
+          "title": "MyGuideBodrum — Hadi Balık Bistro",
+          "url": "https://www.myguidebodrum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "D-Marin No:21 gün batımı konumu ve modern deniz ürünleri bistrosu değerlendirmesi"
+        },
+        {
+          "title": "FishRestaurants & Restoranim — Hadi Balık Menü",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Gambilya fava, alabalık füme, karides bruschetta ve Gümüşlük enginar salatası reçeteleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=3297047806111843123",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "D-Marin Turgutreis, No:21 konum, yüksek puan ve fiyat seviyesi kaydı"
+        }
+      ],
+      "pros": [
+        "Klasik rakı-balık çizgisi dışında aslan balığı ceviche ve gambilya fava gibi yaratıcı yerel reçeteler sunması",
+        "D-Marin içinde ferah kıyı atmosferi ve güçlü tedarik tazeliği"
+      ],
+      "cons": [
+        "Turgutreis çarşı balıkçılarına göre yüksek fiyat segmentindedir",
+        "Akşam saatleri ve hafta sonları rezervasyonsuz masa bulmak zorlaşabiliyor"
+      ],
+      "uncertainties": [
+        "Mevsimsel av yasağı ve günlük tekne tedarikine göre özel ceviche ve balık çeşitleri güncellenebiliyor"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ada-beyi-sami-turgutreis",
+      "categoryId": "balik",
+      "resolvedName": "Ada Beyi Sami",
+      "branchName": "Turgutreis, 4007. Sk. 3c, 48960 Bodrum/Muğla",
+      "placeId": "ChIJfZSuZFsLvhQRzfodDlU3zqU",
+      "coordinates": {
+        "lat": 37.0061197,
+        "lng": 27.2580635
+      },
+      "rating": 4.7,
+      "userRatingCount": 249,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://adabeyisami.com/",
+      "mapsUri": "https://maps.google.com/?cid=11947547699909098189",
+      "recommendedPrimary": [
+        "Balık Kavurma",
+        "Balık Kokoreç",
+        "Izgara veya Buğulama Mevsim Balığı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Karides Güveç, Kalamar & Yengeç Bacağı",
+          "note": "Balık kokoreç dışındaki sıcak deniz mahsulü başlangıçları ve pabucaki gibi Ege mezeleri masayı zenginleştirir.",
+          "proof": "adabeyisami.com resmi menüsü ve Bodrum Meyhaneleri"
+        }
+      ],
+      "suitability": {
+        "seating": "4007. Sokak üzerinde çarşı meyhanesi atmosferinde açık sokak ve iç salon masaları",
+        "crowdAndNoise": "Akşamları rakı-balık müdavimleri ve tatilcilerle canlı, samimi sohbet temposunda",
+        "disadvantage": "Çarşı sokağı içinde bulunduğundan marina veya doğrudan deniz kıyısı manzarası sunmaz",
+        "transit": "Turgutreis 4007. Sokak No:3/C adresinde, Balıkçılar Çarşısı içinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Adabeyi Sami Resmi Sitesi",
+          "url": "http://adabeyisami.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Sami Bıçak kuruluşu, 4007. Sk. 3/C adresi, balık kavurma ve balık kokoreç menüsü"
+        },
+        {
+          "title": "Bodrum Meyhaneleri — Adabeyi Balık Restoran",
+          "url": "https://bodrummeyhaneleri.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Balıkçılar Çarşısı sahil meyhanesi atmosferi, kalamar-karides ve meze çeşitliliği"
+        },
+        {
+          "title": "Yandex Haritalar — Ada Beyi Sami",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze deniz ürünleri, köpoğlu, fava ve güler yüzlü servis değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=11947547699909098189",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Turgutreis, 4007. Sk. 3c konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Klasik ızgara balıkların yanında balık kavurma ve balık kokoreç gibi özgün ara sıcaklara imza atması",
+        "Marina restoranlarına kıyasla daha samimi çarşı esnafı sıcaklığı"
+      ],
+      "cons": [
+        "Sokak dokusunda yer aldığı için deniz manzaralı iskele oturumu bulunmaz",
+        "Akşam yoğunluğunda masa araları birbirine yakın hissedilebilir"
+      ],
+      "uncertainties": [
+        "Mevsimsel av koşullarına göre günlük balık ve kabuklu çeşitleri değişebiliyor"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "savarona-restaurant-turgutreis",
+      "categoryId": "balik",
+      "resolvedName": "Savarona Restaurant",
+      "branchName": "Turgutreis, 4007. Sk. No:8, 48960 Bodrum/Muğla",
+      "placeId": "ChIJ1zeae1sLvhQR3RkUBWu1bUQ",
+      "coordinates": {
+        "lat": 37.0061761,
+        "lng": 27.258278999999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 156,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4930796638291892701",
+      "recommendedPrimary": [
+        "Çörekotlu Çipura & Mevsim Balıkları",
+        "Kaya Koruğu, Çibes & Deniz Börülcesi",
+        "Deniz Mahsulleri Böreği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Balık Köftesi & Girit-Selanik Ezmeleri",
+          "note": "Soğuk Ege otları ve ezmelerle başlayan masada sıcak balık köftesi ve deniz mahsulleri böreği sıkça tercih edilir.",
+          "proof": "savaronarestaurant.com resmi menü listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "4007. Sokak Balıkçılar Çarşısı hattında açık sokak masaları ve samimi aile salonu",
+        "crowdAndNoise": "Akşam yemeği ve gün batımı sonrası rakı-balık masalarıyla düzenli dolu",
+        "disadvantage": "İç çarşı sokağında kaldığı için doğrudan deniz cephesinde değildir",
+        "transit": "Turgutreis 4007. Sokak No:8 adresinde, Balıkçılar Sokağı üzerinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Savarona Restaurant Resmi Sitesi",
+          "url": "https://savaronarestaurant.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "4007. Sokak Balıkçılar Sokağı konumu ve detaylı meze-ara sıcak menü listesi"
+        },
+        {
+          "title": "Yandex Haritalar — Savarona Restaurant",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Aile işletmesi geleneği, taze deniz ürünleri ve çarşı balık pişirme düzeni incelemeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=4930796638291892701",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Turgutreis, 4007. Sk. No:8 konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Kaya koruğundan çibes otuna, enginarlı bakladan çörekotlu çipuraya uzanan geniş Ege meze arşivi",
+        "Dışarıdan alınan taze balığı pişirme kolaylığıyla esnek çarşı deneyimi sunması"
+      ],
+      "cons": [
+        "Denize sıfır masalar yerine çarşı içi sokakta yer alır",
+        "Hafta sonu akşamları sokak trafiği ve kalabalık hissedilebiliyor"
+      ],
+      "uncertainties": [
+        "Mevsimsel Ege otları ve günlük meze listesi mevsime göre güncellenebiliyor"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "rihtim-restaurant-turgutreis",
+      "categoryId": "balik",
+      "resolvedName": "Rıhtım Restaurant Turgutreis",
+      "branchName": "Turgutreis, 4010. Sk. No:10/1, 48960 Bodrum/Muğla",
+      "placeId": "ChIJr-OhcFsLvhQRZLGwL-9KSso",
+      "coordinates": {
+        "lat": 37.00642,
+        "lng": 27.2582779
+      },
+      "rating": 4.6,
+      "userRatingCount": 119,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.rihtimrestoran.com/",
+      "mapsUri": "https://maps.google.com/?cid=14576545535095779684",
+      "recommendedPrimary": [
+        "Tezgahtan Seçme Taze Balık Pişirme",
+        "Klasik Ege Mezeleri",
+        "Izgara Kalamar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Balıkçı Tezgahından Masaya Taze Seçim",
+          "note": "Misafirler yandaki balıkçı dükkanından diledikleri balığı kendileri seçip restoranda pişirtebilir.",
+          "proof": "Wanderlog ve Turgutreis Rehberi kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "4010. Sokak içinde açık çarşı masaları ve samimi iç alan oturumu",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde yerliler ile taze balık pişirten misafirlerle sıcak tempo",
+        "disadvantage": "Lüks marina ambiyansı yerine sade çarşı sokak lokantası düzenindedir ve deniz manzarası bulunmaz",
+        "transit": "Turgutreis 4010. Sokak No:10/1 adresinde, Balıkçılar Çarşısı ve tezgahlar yanında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Wanderlog — Rıhtım Restaurant Turgutreis",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Balıkçılar Çarşısı içi konum, meze çeşitleri ve sıcak atmosfer değerlendirmesi"
+        },
+        {
+          "title": "Turgutreis Rehberi — Rıhtım Restaurant",
+          "url": "https://www.turgutreisrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Turgutreis merkez 4010. Sokak No:10/1 balık restoranı kaydı"
+        },
+        {
+          "title": "Yandex Haritalar — Rıhtım Restaurant Turgutreis",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yandaki balıkçıdan alınan taze balığı pişirme konsepti ve samimi servis geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=14576545535095779684",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Turgutreis, 4010. Sk. No:10/1 konum ve fiyat seviyesi kaydı"
+        }
+      ],
+      "pros": [
+        "Balıkçılar Çarşısı tezgahlarının hemen yanında en taze balığı seçip pişirtebilme kolaylığı",
+        "Abartısız fiyat dengesi ve güler yüzlü esnaf servisi"
+      ],
+      "cons": [
+        "Deniz manzaralı kıyı restoranı atmosferi arayanlara uygun değildir",
+        "Çarşı sokağı dar olduğu için akşam pik saatlerinde kalabalıklaşabiliyor"
+      ],
+      "uncertainties": [
+        "Pişirme ve kuver ücretleri sezonluk olarak restoran tarafından belirleniyor"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    }
+  ]
+}

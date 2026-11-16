@@ -339,6 +339,13 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'battalbey',
   'battal bey',
   'big chefs',
+  'bitez dondurmacisi',
+  'bitez dondurmacısı',
+  'bitez dondurma',
+  'bodrum dondurmacisi',
+  'bodrum dondurmacısı',
+  'ekleristan',
+  'endlesspizza',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([

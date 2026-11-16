@@ -45,6 +45,8 @@ import muglaBodrumMerkezSnapshotJson from './regions/mugla-bodrum-merkez.json';
 import muglaBodrumYalikavakSnapshotJson from './regions/mugla-bodrum-yalikavak.json';
 import muglaBodrumGumuslukSnapshotJson from './regions/mugla-bodrum-gumusluk.json';
 import muglaBodrumTurkbukuSnapshotJson from './regions/mugla-bodrum-turkbuku.json';
+import muglaBodrumBitezSnapshotJson from './regions/mugla-bodrum-bitez.json';
+import muglaBodrumTurgutreisSnapshotJson from './regions/mugla-bodrum-turgutreis.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -95,6 +97,8 @@ const MUGLA_BODRUM_MERKEZ_SNAPSHOT = muglaBodrumMerkezSnapshotJson as V3Verified
 const MUGLA_BODRUM_YALIKAVAK_SNAPSHOT = muglaBodrumYalikavakSnapshotJson as V3VerifiedRegionSnapshot;
 const MUGLA_BODRUM_GUMUSLUK_SNAPSHOT = muglaBodrumGumuslukSnapshotJson as V3VerifiedRegionSnapshot;
 const MUGLA_BODRUM_TURKBUKU_SNAPSHOT = muglaBodrumTurkbukuSnapshotJson as V3VerifiedRegionSnapshot;
+const MUGLA_BODRUM_BITEZ_SNAPSHOT = muglaBodrumBitezSnapshotJson as V3VerifiedRegionSnapshot;
+const MUGLA_BODRUM_TURGUTREIS_SNAPSHOT = muglaBodrumTurgutreisSnapshotJson as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -144,6 +148,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MUGLA_BODRUM_YALIKAVAK_SNAPSHOT,
   MUGLA_BODRUM_GUMUSLUK_SNAPSHOT,
   MUGLA_BODRUM_TURKBUKU_SNAPSHOT,
+  MUGLA_BODRUM_BITEZ_SNAPSHOT,
+  MUGLA_BODRUM_TURGUTREIS_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -468,6 +474,22 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'golkoy-bodrum': MUGLA_BODRUM_TURKBUKU_SNAPSHOT,
   'cennet-koyu': MUGLA_BODRUM_TURKBUKU_SNAPSHOT,
   hebil: MUGLA_BODRUM_TURKBUKU_SNAPSHOT,
+  bitez: MUGLA_BODRUM_BITEZ_SNAPSHOT,
+  'mugla-bodrum-bitez': MUGLA_BODRUM_BITEZ_SNAPSHOT,
+  'bitez-bodrum-mugla': MUGLA_BODRUM_BITEZ_SNAPSHOT,
+  'bitez-bodrum': MUGLA_BODRUM_BITEZ_SNAPSHOT,
+  'bodrum-bitez': MUGLA_BODRUM_BITEZ_SNAPSHOT,
+  'bitez-yalisi': MUGLA_BODRUM_BITEZ_SNAPSHOT,
+  'bitez-sahil': MUGLA_BODRUM_BITEZ_SNAPSHOT,
+  'bitez-koy-ici': MUGLA_BODRUM_BITEZ_SNAPSHOT,
+  turgutreis: MUGLA_BODRUM_TURGUTREIS_SNAPSHOT,
+  'mugla-bodrum-turgutreis': MUGLA_BODRUM_TURGUTREIS_SNAPSHOT,
+  'turgutreis-bodrum-mugla': MUGLA_BODRUM_TURGUTREIS_SNAPSHOT,
+  'turgutreis-bodrum': MUGLA_BODRUM_TURGUTREIS_SNAPSHOT,
+  'bodrum-turgutreis': MUGLA_BODRUM_TURGUTREIS_SNAPSHOT,
+  'd-marin-turgutreis': MUGLA_BODRUM_TURGUTREIS_SNAPSHOT,
+  'turgutreis-marina': MUGLA_BODRUM_TURGUTREIS_SNAPSHOT,
+  'karabag-turgutreis': MUGLA_BODRUM_TURGUTREIS_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {
@@ -498,23 +520,6 @@ function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {
 export const V3_LOCATIONS: FoodLocation[] = [
   // YAYINDA (V3 %100 Canlı API Doğrulamalı — Kadıköy 6 Semt + Anadolu & Ege Seçkileri)
   ...V3_ALL_PUBLISHED_SNAPSHOTS.map(toPublishedLocation),
-
-  // SIRADAKİ DOĞRULAMA KUYRUĞU (İl > İlçe > Semt ayrıştırılmış)
-  {
-    id: 'bitez-bodrum-mugla',
-    level: 'semt',
-    city: 'Muğla',
-    district: 'Bodrum',
-    neighborhood: 'Bitez',
-    name: 'Bitez',
-    slug: 'bitez',
-    path: ['mugla', 'bodrum', 'bitez'],
-    displayName: 'Bitez, Bodrum, Muğla',
-    locative: "Bitez'de",
-    status: 'coming_soon',
-    aliases: ['Bitez', 'Bodrum', 'Muğla'],
-    scopeNote: 'Muğla · Bodrum · Bitez (V3 Doğrulama Sırasında)',
-  },
 ];
 
 export function getPublishedV3Snapshot(regionSlugOrId: string): V3VerifiedRegionSnapshot | null {
