@@ -331,6 +331,14 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'zuma bodrum',
   'novikov',
   'bagatelle',
+  'hakkasan',
+  'gaia bodrum',
+  'firin bi tatli tuzlu',
+  'fırın bi tatlı tuzlu',
+  'lokanta by divan',
+  'battalbey',
+  'battal bey',
+  'big chefs',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([
