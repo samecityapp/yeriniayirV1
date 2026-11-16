@@ -51,6 +51,7 @@ import muglaBodrumOrtakentYahsiSnapshotJson from './regions/mugla-bodrum-ortaken
 import muglaBodrumGundoganSnapshotJson from './regions/mugla-bodrum-gundogan.json';
 import muglaBodrumGumbetSnapshotJson from './regions/mugla-bodrum-gumbet.json';
 import muglaBodrumTorbaSnapshotJson from './regions/mugla-bodrum-torba.json';
+import muglaBodrumAkyarlarSnapshotJson from './regions/mugla-bodrum-akyarlar.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -107,6 +108,7 @@ const MUGLA_BODRUM_ORTAKENT_YAHSI_SNAPSHOT = muglaBodrumOrtakentYahsiSnapshotJso
 const MUGLA_BODRUM_GUNDOGAN_SNAPSHOT = muglaBodrumGundoganSnapshotJson as V3VerifiedRegionSnapshot;
 const MUGLA_BODRUM_GUMBET_SNAPSHOT = muglaBodrumGumbetSnapshotJson as V3VerifiedRegionSnapshot;
 const MUGLA_BODRUM_TORBA_SNAPSHOT = muglaBodrumTorbaSnapshotJson as V3VerifiedRegionSnapshot;
+const MUGLA_BODRUM_AKYARLAR_SNAPSHOT = muglaBodrumAkyarlarSnapshotJson as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -162,6 +164,7 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MUGLA_BODRUM_GUNDOGAN_SNAPSHOT,
   MUGLA_BODRUM_GUMBET_SNAPSHOT,
   MUGLA_BODRUM_TORBA_SNAPSHOT,
+  MUGLA_BODRUM_AKYARLAR_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -540,6 +543,18 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'torba-sahil': MUGLA_BODRUM_TORBA_SNAPSHOT,
   zeytinlikahve: MUGLA_BODRUM_TORBA_SNAPSHOT,
   'usuluk-koyu': MUGLA_BODRUM_TORBA_SNAPSHOT,
+  akyarlar: MUGLA_BODRUM_AKYARLAR_SNAPSHOT,
+  'mugla-bodrum-akyarlar': MUGLA_BODRUM_AKYARLAR_SNAPSHOT,
+  'akyarlar-bodrum-mugla': MUGLA_BODRUM_AKYARLAR_SNAPSHOT,
+  'akyarlar-bodrum': MUGLA_BODRUM_AKYARLAR_SNAPSHOT,
+  'bodrum-akyarlar': MUGLA_BODRUM_AKYARLAR_SNAPSHOT,
+  karaincir: MUGLA_BODRUM_AKYARLAR_SNAPSHOT,
+  'karaincir-koyu': MUGLA_BODRUM_AKYARLAR_SNAPSHOT,
+  aspat: MUGLA_BODRUM_AKYARLAR_SNAPSHOT,
+  'aspat-koyu': MUGLA_BODRUM_AKYARLAR_SNAPSHOT,
+  anthaven: MUGLA_BODRUM_AKYARLAR_SNAPSHOT,
+  fenerburnu: MUGLA_BODRUM_AKYARLAR_SNAPSHOT,
+  akcabuk: MUGLA_BODRUM_AKYARLAR_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {

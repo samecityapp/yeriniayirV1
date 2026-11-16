@@ -359,6 +359,10 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'oses cig kofte',
   'oses çiğ köfte',
   'oses cigkofte',
+  'magnolia shop',
+  'buselik meyhane',
+  'caytaze',
+  'çaytaze',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([

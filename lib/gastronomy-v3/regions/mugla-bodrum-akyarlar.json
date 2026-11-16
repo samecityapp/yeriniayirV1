@@ -1,0 +1,527 @@
+{
+  "schemaVersion": 3,
+  "verifiedAt": "2026-11-16T21:36:38.757Z",
+  "region": {
+    "id": "akyarlar-bodrum-mugla",
+    "slug": "akyarlar",
+    "city": "Muğla",
+    "district": "Bodrum",
+    "neighborhood": "Akyarlar",
+    "officialQuarter": "Akyarlar Mahallesi — Akyarlar Limanı, Karaincir Koyu, Kemer Burnu, Fenerburnu, Akçabük & Aspat Koyu (Anthaven) Hattı",
+    "displayName": "Akyarlar, Bodrum, Muğla",
+    "locative": "Akyarlar'da",
+    "path": [
+      "mugla",
+      "bodrum",
+      "akyarlar"
+    ],
+    "aliases": [
+      "Akyarlar",
+      "Karaincir",
+      "Karaincir Koyu",
+      "Aspat",
+      "Aspat Koyu",
+      "Anthaven",
+      "Fenerburnu",
+      "Kemer Burnu",
+      "Akçabük",
+      "Akcabuk"
+    ],
+    "scopeNote": "Akyarlar Limanı, Karaincir Koyu, Kemer & Fenerburnu, Akçabük & Aspat Koyu (Anthaven) · Doğrulanmış Seçki",
+    "characterSubtitle": "Fenerburnu ve Çamlıburnu fenerinden Akyarlar Limanı, Karaincir Koyu ve Aspat (Anthaven) kanallarına uzanan taş fırın İtalyan mutfağı, bağımsız gurme burger, sahil kokteyl barları, ağaç gölgesinde gözleme ve serpme kahvaltılar, butik ekşi maya fırın, tencere ev yemekleri ile kırk yılı aşkın kıyı balıkçıları.",
+    "center": {
+      "lat": 36.9735,
+      "lng": 27.2965
+    },
+    "boundary": {
+      "bbox": {
+        "minLat": 36.95,
+        "maxLat": 36.9935,
+        "minLng": 27.255,
+        "maxLng": 27.3245
+      },
+      "excludeBbox": {
+        "minLat": 36.982,
+        "maxLat": 36.9935,
+        "minLng": 27.255,
+        "maxLng": 27.2855
+      }
+    }
+  },
+  "categories": [
+    {
+      "id": "pizza",
+      "slug": "pizza",
+      "label": "Pizza",
+      "title": "Pizza",
+      "emoji": "🍕",
+      "isMustTry": false
+    },
+    {
+      "id": "hamburger",
+      "slug": "hamburger",
+      "label": "Hamburger",
+      "title": "Hamburger",
+      "emoji": "🍔",
+      "isMustTry": false
+    },
+    {
+      "id": "date",
+      "slug": "date-mekanlari",
+      "label": "Date",
+      "title": "Date Mekanları",
+      "emoji": "🍷",
+      "isMustTry": false
+    },
+    {
+      "id": "kahvalti",
+      "slug": "kahvalti",
+      "label": "Kahvaltı",
+      "title": "Kahvaltı",
+      "emoji": "🍳",
+      "isMustTry": false
+    },
+    {
+      "id": "denemelisin",
+      "slug": "denemelisin",
+      "label": "Denemelisin",
+      "title": "Mutlaka Denemelisin",
+      "emoji": "⭐",
+      "isMustTry": false
+    },
+    {
+      "id": "balik",
+      "slug": "balik-deniz-urunleri",
+      "label": "Balıkçılar",
+      "title": "Balıkçılar & Deniz Ürünleri",
+      "emoji": "🐟",
+      "isMustTry": false
+    }
+  ],
+  "venues": [
+    {
+      "id": "antre-pizza-aspat",
+      "placeId": "ChIJ0e1AF9YNvhQRbcet65Ymwwc",
+      "name": "Antre Pizza Aspat",
+      "address": "Balkan köprüsü kule, Akyarlar, Atatürk Caddesi No: 352/26 1A, 48960 Bodrum/Muğla",
+      "neighborhood": "Aspat Koyu (Anthaven), Akyarlar",
+      "categoryId": "pizza",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=559333208365057901",
+      "coordinates": {
+        "lat": 36.9810292,
+        "lng": 27.310561
+      },
+      "description": "Aspat Koyu'ndaki Anthaven çarşısı ve Balkan köprüsü kulesi aksında taze günlük hamurla pişirdiği taş fırın İtalyan pizzaları, mantar dolgulu niyokki ve burrata başlangıçlarıyla hizmet veren İtalyan restoranı.",
+      "whatToOrder": [
+        "Dört Peynirli (Quattro Formaggi) Pizza",
+        "Pizza Margherita",
+        "Mantar Dolgulu Niyokki"
+      ],
+      "menuFrom": [
+        "Dört Peynirli Pizza (Quattro Formaggi)",
+        "Pizza Margherita",
+        "Caprese & Burrata Pizzalar",
+        "Mantar Dolgulu Niyokki (Gnocchi)",
+        "Ev Yapımı Ravioli & Taze Makarna",
+        "Taze Burrata Başlangıcı",
+        "Şarap Kavı Seçkisi"
+      ],
+      "alsoTry": [
+        "Taze Burrata & Başlangıç Tabakları — Ana pizza siparişi öncesi şarap eşliğinde paylaşımlık olarak tercih edilen kremsi İtalyan peyniri sunumudur.",
+        "Mantar Dolgulu Ev Yapımı Niyokki — Taş fırın pizzalar dışında İtalyan mutfağının öne çıkan sıcak makarna alternatifidir."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Anthaven kanal ve Balkan köprüsü kulesi manzarasına bakan açık teras ve modern iç salon masaları · Akşam yemeğinde Anthaven sakinleri, çiftler ve İtalyan mutfağı arayan gruplarla dengeli tempo",
+        "Dezavantaj: Anthaven kompleksinin üst segment fiyatlandırması uygulanır ve yaz sezon dışı dönemlerde çalışma düzeni değişebilir",
+        "Ulaşım: Akyarlar Atatürk Caddesi No:352/26-1A Aspat Koyu (Anthaven) içinde"
+      ]
+    },
+    {
+      "id": "burger-house-akyarlar",
+      "placeId": "ChIJoyX_IbwNvhQRciPiWgTUxoU",
+      "name": "BURGER HOUSE BODRUM",
+      "address": "Akyarlar, Atatürk Cd. No:261/4, 48680 Bodrum/Muğla",
+      "neighborhood": "Atatürk Cd., Akyarlar",
+      "categoryId": "hamburger",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=9639625167602852722",
+      "coordinates": {
+        "lat": 36.966735199999995,
+        "lng": 27.289430799999998
+      },
+      "description": "Akyarlar merkezindeki Atatürk Caddesi üzerinde faaliyet gösteren (ulusal zincirden bağımsız yerel işletme); dana fümeli Special Burger, karamelize mantarlı Cheff Burger ve kibrit patates eşlikleriyle öne çıkan burgerci.",
+      "whatToOrder": [
+        "Special Burger (150 g)",
+        "Cheff Burger",
+        "Mexico Burger"
+      ],
+      "menuFrom": [
+        "Special Burger (Dana Füme & Cheddar)",
+        "Cheff Burger (Karamelize Mantar)",
+        "Mexico Burger (Jalapeno)",
+        "Avokadolu & Pastırmalı Burger",
+        "Klasik / Double / Triple Burger",
+        "Kibrit Patates Kızartması",
+        "Burger House Combo Atıştırmalık Tabağı",
+        "Bodrum Mandalin & Çıtır Tavuk Seçenekleri"
+      ],
+      "alsoTry": [
+        "Kibrit Patates & Burger Combo Tabağı — İnce kesim çıtır kibrit patatesin yanında soğan halkası, kroket ve sosis içeren paylaşımlık eşlikçi seçeneğidir.",
+        "Tost, Gözleme & Sandviç Seçenekleri — Ana burger menüsünün dışında günün farklı saatleri için sıcak atıştırmalık alternatifleri de bulundurur."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Atatürk Caddesi üzerinde Akyarlar koyu esintisine açık teras ve iç masa düzeni · Öğleden gece yarısı sonrasına kadar yerel gençler, sörfçüler ve akşam atıştırmalığı arayanlarla canlı tempo",
+        "Dezavantaj: Gündelik hızlı servis ağırlıklı olduğundan uzun oturuşlu fine-dining veya masa düzeni atmosferi sunmaz",
+        "Ulaşım: Akyarlar Mahallesi Atatürk Caddesi No:261/4 üzerinde sahile yürüyüş mesafesinde",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "tiki-beach-akyarlar",
+      "placeId": "ChIJk4hH30kNvhQRLQZlMYwjIVc",
+      "name": "Tiki Beach Bodrum",
+      "address": "Akyarlar, Tarik Akan Sk, 48980 Bodrum/Muğla",
+      "neighborhood": "Tarık Akan Sk., Akyarlar",
+      "categoryId": "date",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=6278338440562279981",
+      "coordinates": {
+        "lat": 36.9682558,
+        "lng": 27.293962399999998
+      },
+      "description": "Akyarlar koyunda İstanköy (Kos) Adası manzarasına karşı bohem dekorasyonlu sahil alanında mevsim meyveli imza kokteylleri, ev yapımı soslu burgerleri ve canlı müzik eşliğinde gün batımı akşamları sunan plaj barı ve bistrosu.",
+      "whatToOrder": [
+        "Meyveli İmza Yaz Kokteylleri",
+        "Ev Yapımı Soslu Beach Burger"
+      ],
+      "menuFrom": [
+        "Meyveli & Tropikal İmza Kokteyller",
+        "Ev Yapımı Soslu Burger & Patates Kızartması",
+        "Akdeniz & Ton Balıklı Salatalar",
+        "Izgara Tavuklu & Peynirli Salata Çeşitleri",
+        "Sıcak Başlangıç & Snack Tabağı",
+        "Tost & Makarna Çeşitleri",
+        "Kahve & Serinletici Yaz İçecekleri"
+      ],
+      "alsoTry": [
+        "Akdeniz & Ton Balıklı Plaj Salatası — Gün boyu plajda ya da gün batımında hafif bir akşamüstü tabağı arayanlar tarafından öne çıkarılır.",
+        "Makarna & Izgara Snack Seçenekleri — Kokteyl eşliğinde paylaşımlık sıcak atıştırmalık isteyen gruplar için plaj mutfağının tamamlayıcı seçenekleridir."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Akyarlar kumsalında bohem ahşap gölgelikler, şezlong alanı ve Kos manzaralı sahil masaları · Gündüz sakin deniz ve güneşlenme, akşamüstü gün batımında canlı müzik eşliğinde sosyal plaj barı havası",
+        "Dezavantaj: Açık hava sahil işletmesi olduğundan rüzgarlı günlerde kıyıda esinti artar ve yaz dönemi şezlong/masa yoğunluğu görülür",
+        "Ulaşım: Akyarlar Mahallesi Tarık Akan Sokak (No:41/2) sahil bandı üzerinde"
+      ]
+    },
+    {
+      "id": "yali-cafe-akyarlar",
+      "placeId": "ChIJaX2qFWcMvhQR3FjMG5RPQjM",
+      "name": "Yalı Cafe Akyarlar",
+      "address": "Akyarlar, Atatürk Cd., 48960 Bodrum/Muğla",
+      "neighborhood": "Atatürk Cd., Akyarlar",
+      "categoryId": "kahvalti",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=3693602141937359068",
+      "coordinates": {
+        "lat": 36.9668336,
+        "lng": 27.289469099999998
+      },
+      "description": "Akyarlar Atatürk Caddesi kıyısında ağaçlar altında koy manzarasına açılan; el açması otlu gözlemeleri, çıtır simit ve ev yapımı böreklerle zengin serpme kahvaltı sunan mütevazı sahil kafesi.",
+      "whatToOrder": [
+        "Akyarlar Serpme Kahvaltı",
+        "El Açması Otlu Gözleme"
+      ],
+      "menuFrom": [
+        "Yöresel Serpme Kahvaltı",
+        "Kahvaltı Tabağı",
+        "El Açması Otlu & Peynirli Gözleme",
+        "Ev Yapımı Börek Çeşitleri",
+        "Çıtır Simit & Taze Peynir Tabakları",
+        "Sıcak Menemen & Sahanda Yumurta",
+        "Tost, Sandviç & Demleme Çay"
+      ],
+      "alsoTry": [
+        "Sıcak Menemen & Sahanda Yumurta — Serpme kahvaltı dışında sabah saatlerinde sade bir sıcak tabak tercih eden konukların öne çıkardığı seçenektir.",
+        "Ev Yapımı Börek & Çıtır Simit — Hafif sabah atıştırması arayanların manzaraya karşı sıkça tercih ettiği fırın eşlikçileridir."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Akyarlar koyuna bakan ağaç gölgeli ferah bahçe ve açık sahil masaları · Sabah ve geç kahvaltı saatlerinde sakin aileler, çiftler ve koy manzarası arayan gezginlerle huzurlu ortam",
+        "Dezavantaj: Temmuz-Ağustos hafta sonu sabah pik saatlerinde servis hızının yavaşlayabildiğine dair geri bildirimler bulunur",
+        "Ulaşım: Akyarlar Mahallesi Atatürk Caddesi sahil aksı üzerinde merkez iskeleye yürüme mesafesinde",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "bake-my-day-anthaven",
+      "placeId": "ChIJVbrZkDENvhQR-WSIZtYMbFg",
+      "name": "Bake My Day Anthaven",
+      "address": "Anthaven Avm. Girişi, Akyarlar, Atatürk Cad, 48960 Bodrum/Muğla",
+      "neighborhood": "Aspat Koyu (Anthaven), Akyarlar",
+      "categoryId": "kahvalti",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=6371481687805158649",
+      "coordinates": {
+        "lat": 36.9807871,
+        "lng": 27.310585
+      },
+      "description": "Bodrum çıkışlı butik fırın-kafe Bake My Day'in Anthaven girişindeki durağı; Fransız viennoiserie tekniğiyle hazırlanan kat kat tereyağlı kruvasanları, avokadolu-somonlu kruvasan sandviçleri ve ekşi maya ekmekleriyle sabah kahvaltısı adresi.",
+      "whatToOrder": [
+        "Tereyağlı Klasik Kruvasan",
+        "Avokadolu & Somonlu Kruvasan Sandviç",
+        "Ekşi Maya Ekmek & Kahvaltı Tabağı"
+      ],
+      "menuFrom": [
+        "Tereyağlı Sade Kruvasan",
+        "Avokadolu, Peynirli & Füme Etli/Somonlu Kruvasan Sandviç",
+        "Kruvasan Benedict Çeşitleri",
+        "Ekşi Maya Artizan Ekmekler",
+        "Ev Yapımı Tatlı & Tuzlu Kurabiyeler",
+        "Nitelikli Kahve Çeşitleri",
+        "Ev Yapımı Pasta & Tart Dilimleri"
+      ],
+      "alsoTry": [
+        "Ekşi Maya Ekmek & Tuzlu/Tatlı Kurabiyeler — Kahvaltı dışı gün içi saatlerinde ev alışverişi veya kahve yanı atıştırmalık olarak öne çıkan fırın ürünleridir.",
+        "Ev Yapımı Tatlılar & Fırın Pastaları — Öğleden sonra kahve eşliği arayan Anthaven ziyaretçilerinin tercih ettiği günlük vitrin ürünleridir."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Anthaven AVM giriş aksında ferah çarşı önü teras masaları ve modern butik kafe içi düzen · Sabah yürüyüşçüleri, Anthaven ev sakinleri ve hafta sonu brunch müdavimleriyle sakin ve düzenli tempo",
+        "Dezavantaj: Geleneksel serpme köy kahvaltısından ziyade artizan fırın, kruvasan ve kafe porsiyonları sunar; fiyatları üst segmenttedir",
+        "Ulaşım: Akyarlar Atatürk Caddesi Anthaven Çarşı girişinde",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "cafeluka-akyarlar",
+      "placeId": "ChIJ3-Fmr2AMvhQRmku3M7AELY8",
+      "name": "Cafeluka lokanta",
+      "address": "Akyarlar, 4. Sk., 48960 Bodrum/Muğla",
+      "neighborhood": "4. Sk. (Köy İçi), Akyarlar",
+      "categoryId": "denemelisin",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=10316907476204080026",
+      "coordinates": {
+        "lat": 36.9686131,
+        "lng": 27.290612
+      },
+      "description": "Akyarlar köy içi 4. (4261.) Sokak'ta günlük değişen sıcak tencere yemekleri, ev yapımı şakşuka ve hafif zeytinyağlı tabaklarıyla sahil turistik mekanlarından ayrışan sade aile lokantası.",
+      "whatToOrder": [
+        "Ev Yapımı Şakşuka",
+        "Günlük Sıcak Tencere Yemeği",
+        "Zeytinyağlı Ev Yemekleri Tabağı"
+      ],
+      "menuFrom": [
+        "Ev Yapımı Şakşuka",
+        "Günlük Değişen Sıcak Ev Yemekleri",
+        "Zeytinyağlı Tabak Çeşitleri",
+        "Kahvaltılık Alternatifler",
+        "Hafif Atıştırmalık & Sandviç Seçenekleri"
+      ],
+      "alsoTry": [
+        "Günlük Değişen Zeytinyağlı & Kahvaltılıklar — Sabah ve öğle servisinde ağır et/balık yemekleri yerine hafif, katkısız ev lezzeti arayanlarca tercih edilir."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Akyarlar köy içi ara sokakta mütevazı, sıcak mahalle lokantası oturma alanı · Gündüz ve öğle saatlerinde mahalle sakinleri ile sade ev yemeği arayan müdavimlerle sakin tempo (Pazar günleri kapalı)",
+        "Dezavantaj: Sahil manzarası ve akşam yemeği servisi bulunmaz; yalnızca gündüz saatlerinde hizmet veren ufak bir aile mutfağıdır",
+        "Ulaşım: Akyarlar Mahallesi 4. Sokak (4261. Sk. No:4, Sağlık Ocağı yakınında)",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "kaptanin-yeri-akyarlar",
+      "placeId": "ChIJn6V236gMvhQRbFCi9qlXcWk",
+      "name": "Kaptanın yeri",
+      "address": "Akyarlar, 4264 Sokak No:5/A, 48960 Bodrum/Muğla",
+      "neighborhood": "4264. Sk. (Liman), Akyarlar",
+      "categoryId": "denemelisin",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=7597950433849659500",
+      "coordinates": {
+        "lat": 36.968168,
+        "lng": 27.2912474
+      },
+      "description": "1984'ten bu yana Akyarlar Limanı yakınında taş fırından elde açılan pideleri, kömür ateşinde ızgara köfte-kebapları, zeytinyağlı meze vitrini ve günlük taze deniz ürünlerini aynı çatı altında sunan köklü aile işletmesi.",
+      "whatToOrder": [
+        "El Açması Taş Fırın Pide Çeşitleri",
+        "Kalamar & Tereyağlı Karides Tava",
+        "Kömür Ateşinde Izgara Köfte"
+      ],
+      "menuFrom": [
+        "El Açması Taş Fırın Pideler",
+        "Kömür Ateşinde Izgara Köfte & Kebaplar",
+        "Mevsimlik Günlük Taze Balıklar (Levrek & Çipura)",
+        "Tereyağlı Karides & Kalamar Tava",
+        "Kömür Ateşinde Ahtapot",
+        "Zeytinyağlı Soğuk & Sıcak Meze Vitrini",
+        "İkram Minik İrmik / Tahin Helva Dokunuşları"
+      ],
+      "alsoTry": [
+        "Günlük Meze Vitrini & Yemek Sonrası İkram Helva — Balık veya pide siparişlerinin başında vitrinden seçilen zeytinyağlı mezeler ve kapanışta sunulan geleneksel küçük helva öne çıkar.",
+        "Midye Dolma & Ekmek Arası Taze Balık / Köfte — Daha hızlı ve pratik öğün arayanlar tarafından paket veya hızlı servis olarak da tercih edilen seçeneklerdir."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Liman arkası 4264. Sokak üzerinde sade açık hava ve aile lokantası salonu düzeni · Öğle ve akşam saatlerinde yerel halk, aileler ve makul bütçeli balık-pide arayan misafirlerle dengeli tempo",
+        "Dezavantaj: Yalı Caddesi üzerindeki mekanlar gibi doğrudan kumsal üzerinde konumlanmaz ve bazı ziyaretçiler porsiyon fiyatlarını Bodrum ortalamasında bulabilir",
+        "Ulaşım: Akyarlar Mahallesi 4264. Sokak No:5/A, Akyarlar Limanı arkasında kısa yürüyüş mesafesinde"
+      ]
+    },
+    {
+      "id": "fener-restaurant-akyarlar",
+      "placeId": "ChIJAQAAwF8MvhQRSMDunuyV8r4",
+      "name": "Fener Restaurant",
+      "address": "Akyarlar Mahallesi, Turgutreis, Kemer Cd. No: 30, 48960 Bodrum/Muğla",
+      "neighborhood": "Kemer Cd. No:30 (Çamlıburnu), Akyarlar",
+      "categoryId": "balik",
+      "rating": 4.3,
+      "mapsUri": "https://maps.google.com/?cid=13759224655081553992",
+      "coordinates": {
+        "lat": 36.9649213,
+        "lng": 27.264443
+      },
+      "description": "1978'den beri üçüncü kuşak aile işletmesi olarak Çamlıburnu kayalıklarının üzerinden İstanköy (Kos) Boğazı'nı çerçeveleyen; her sabah taze hazırlanan klasik Ege mezeleri ve sade ızgara mevsim balıklarıyla Akyarlar'ın yarım asırlık simge balıkçısı.",
+      "whatToOrder": [
+        "Sabah Hazırlanan Tezgah Ege Mezeleri",
+        "Sade Izgara Mevsim Balıkları",
+        "Kalamar Tava & Ahtapot"
+      ],
+      "menuFrom": [
+        "Sabah Hazırlanan Zeytinyağlı & Yoğurtlu Ege Mezeleri",
+        "Kalamar Tava & Karides Güveç",
+        "Izgara Ahtapot",
+        "Balık Böreği",
+        "Günlük Mevsim Balıkları (Levrek, Çipura, Barbunya, Lüfer — Izgara/Buğulama)",
+        "Deniz Mahsullü Salatalar"
+      ],
+      "alsoTry": [
+        "Balık Böreği & Karides Güveç — Soğuk tezgah mezeleriyle ana ızgara balık arasında sıcak başlangıç olarak öne çıkar.",
+        "Deniz Mahsullü Yeşil Salatalar — Klasik rakı-balık masasını dengeleyen taze Ege yeşilliği tabaklarıdır."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Denizden yaklaşık 15 metre yüksekte çamlar ve taş teras üzerinde kesintisiz Kos Adası manzaralı masalar · Gün batımı saatlerinde büyük aile yemekleri, özel kutlamalar ve nostaljik Bodrum arayan müdavimlerle yüksek akşam yoğunluğu",
+        "Dezavantaj: Popüler gün batımı saatlerinde ve pik yaz akşamlarında servis hızında yavaşlama yaşanabilir; sahil ortalamasının üzerinde hesap gelir ve rezervasyonsuz masa bulmak zordur",
+        "Ulaşım: Akyarlar Mahallesi Kemer Caddesi No:30 Çamlıburnu Fener burnu üzerinde",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "mehtap-balik-akyarlar",
+      "placeId": "ChIJJVpmD6kMvhQRLQIjcEDmJ6U",
+      "name": "Mehtap Restaurant & Cafe",
+      "address": "Akyarlar mahallesi yalı caddesi, Akyarlar, Tarik Akan Sk no.4, 48400 Bodrum/Muğla",
+      "neighborhood": "Yalı Cd. (Liman), Akyarlar",
+      "categoryId": "balik",
+      "rating": 4.2,
+      "mapsUri": "https://maps.google.com/?cid=11900733704783462957",
+      "coordinates": {
+        "lat": 36.9675101,
+        "lng": 27.291029199999997
+      },
+      "description": "1986'dan beri Akyarlar Limanı'nda begonviller altında İdris Bey ve ailesi tarafından işletilen; önce haşlanıp ardından ızgarada karamelize edilen imza ahtapotu, kabak çiçeği dolması ve sabah iskeleden seçilen balıklarıyla kırk yıllık liman kurumu.",
+      "whatToOrder": [
+        "İmza Izgara Ahtapot (Karamelize)",
+        "Kabak Çiçeği Dolması & Patlıcanlı Mezeler",
+        "Sabah İskeleden Günlük Taze Balıklar"
+      ],
+      "menuFrom": [
+        "Haşlanıp Izgarada Karamelize Edilen Ahtapot",
+        "Kabak Çiçeği Dolması",
+        "Deniz Börülcesi & Taze Barbunya",
+        "Levrek Marin & Patlıcanlı Ege Mezeleri",
+        "Sabah İskeleden Seçilen Günlük Taze Balıklar",
+        "Kalamar & Mevsim Salataları"
+      ],
+      "alsoTry": [
+        "Deniz Börülcesi & Levrek Marin — Karamelize ahtapot ve kabak çiçeği dolması yanında sofrayı tamamlayan klasik günlük meze çeşitleridir.",
+        "Gün İçi Serpme Kahvaltı & Kafe Servisi — Akşam liman meyhanesi kimliği dışında gündüz saatlerinde limonata, çay ve kahvaltı seçeneği de sunar."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Akyarlar Limanı içinde begonviller altında, suya neredeyse sıfır kompakt iskele ve sokak kenarı masaları · Yaz akşamlarında yer bulmak için günler öncesinden dolan samimi müdavim ve gastronomi gezgini yoğunluğu",
+        "Dezavantaj: Küçük bir liman aile işletmesi olduğu için yaz pik aylarında masalar arası mesafe sıkışık ve gürültülü olabilir; üst segment deniz ürünü fiyatları uygulanır",
+        "Ulaşım: Akyarlar Mahallesi Yalı / Tarık Akan Sokak No:4 Akyarlar Limanı içinde",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "marea-fish-akyarlar",
+      "placeId": "ChIJkwToNoQLvhQRtv41Kxijt80",
+      "name": "Marea Fish Restaurant",
+      "address": "Akyarlar, Gazi Mustafa Kemal Blv. No:323, 48960 Bodrum/Muğla",
+      "neighborhood": "GMK Blv. No:323 (Fenerburnu), Akyarlar",
+      "categoryId": "balik",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=14823496022712778422",
+      "coordinates": {
+        "lat": 36.97353,
+        "lng": 27.259889
+      },
+      "description": "Akyarlar Fenerburnu batı kıyısında, Rammos Hotel bünyesinde denize sıfır gün batımı manzarasıyla hizmet veren; ev usulü taze lakerdası, özgün kalamar ara sıcakları, Ege otlu mezeleri ve günlük mevsim balıklarıyla modern çizgide bir kıyı balıkçısı.",
+      "whatToOrder": [
+        "Taze Lakerda & İmza Mezeler",
+        "Şef Dokunuşlu Kalamar & Karides",
+        "Günlük Mevsim Balıkları (Lagos / Fangri / Levrek)"
+      ],
+      "menuFrom": [
+        "Ev Usulü Taze Lakerda",
+        "Ege Otları & Modern Zeytinyağlı Mezeler",
+        "Şef Reçeteli Kalamar & Karides Ara Sıcakları",
+        "Günlük Taze Lagos, Fangri, Levrek & Çipura",
+        "Izgara, Tava & Buğulama Balık Seçenekleri",
+        "Deniz Mahsullü Salatalar"
+      ],
+      "alsoTry": [
+        "Ege Otları & Zeytinyağlı Meze Vitrini — Ana balık servisinden önce modern tekniklerle hafifletilmiş geleneksel Ege başlangıçları öne çıkar.",
+        "Deniz Mahsullü Salata & Karides Ara Sıcakları — Paylaşımlık akşam sofralarında lakerda ve kalamarın yanında sıkça tercih edilen ara tabaklardır."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Denize sıfır kumsal/teras platformu ve bohem akşam aydınlatmalı açık yemek alanı · Gün batımı saatlerinden geceye kadar sakin romantik çiftler ve gastronomi odaklı otel dışı akşam konukları",
+        "Dezavantaj: Üst segment otel bünyesinde hizmet verdiğinden fiyat seviyesi klasik köy balıkçılarının üzerindedir ve yaz akşamları önceden rezervasyon gerektirir",
+        "Ulaşım: Akyarlar, Gazi Mustafa Kemal Bulvarı No:323 (Rammos Hotel sahil bandı) üzerinde",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    }
+  ],
+  "nearbyVenues": [
+    {
+      "id": "costa-del-sueno-turgutreis",
+      "placeId": "ChIJ1ThucjsNvhQRdzOi4jg0qWQ",
+      "name": "Costa Del Sueno",
+      "address": "Turgutreis, Gazi Mustafa Kemal Blv. No:183/4, 48400 Bodrum/Muğla",
+      "neighborhood": "Gazi Mustafa Kemal Blv. (Güney Sahil), Turgutreis",
+      "categoryId": "date",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=7253386093781988215",
+      "coordinates": {
+        "lat": 36.9835925,
+        "lng": 27.2562142
+      },
+      "description": "Gazi Mustafa Kemal Bulvarı güney hattında İspanyol mutfağı dokunuşlarıyla sıcak ve soğuk tapaslar, pinchos, otantik paella ve şarap-kokteyl eşleşmelerini gün batımı manzaralı şık bir akşam atmosferinde sunan restoran.",
+      "whatToOrder": [
+        "Deniz Mahsullü Paella",
+        "Sıcak & Soğuk Tapas Seçkisi",
+        "Pinchos Tabakları"
+      ],
+      "menuFrom": [
+        "Paella Çeşitleri",
+        "Sıcak Tapaslar",
+        "Soğuk Tapaslar",
+        "Pinchos Çeşitleri",
+        "Akdeniz Makarnaları & Salatalar",
+        "İspanyol ve Yerel Şaraplar",
+        "İmza Kokteyller",
+        "Tatlılar"
+      ],
+      "alsoTry": [
+        "İspanyol Şarapları & İmza Kokteyller — Tapas paylaşımına eşlik eden özenli şarap listesi ve bar kokteylleri akşam buluşmalarını tamamlar.",
+        "Canlı Müzikli Akşam Etkinlikleri — Belirli akşamlarda düzenlenen canlı performanslar mekanın İspanyol temasını öne çıkarır."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Gün batımına bakan özenle dekore edilmiş açık teras ve şık akşam masaları · Akşam yemeklerinde çiftler ve küçük gruplarla keyifli, canlı müzik gecelerinde daha hareketli",
+        "Dezavantaj: Güneşin batışına yakın teras masaları hızlı dolabildiğinden rezervasyon önerilir; merkez yürüyüş aksının güneyindedir",
+        "Ulaşım: Turgutreis Gazi Mustafa Kemal Bulvarı No:183/4 adresinde, güney kıyı yolu üzerinde"
+      ],
+      "nearbyAreaLabel": "Gazi Mustafa Kemal Blv. (Güney Sahil), Turgutreis",
+      "distanceKm": 0.18,
+      "distanceMeters": 180
+    }
+  ]
+}
