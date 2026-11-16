@@ -42,6 +42,8 @@ const PUBLISHED_REGION_KEYS = [
   'antalya-konyaalti',
   'antalya-kas-merkez',
   'antalya-kalkan-merkez',
+  'antalya-alanya-merkez',
+  'antalya-side',
   'mugla-ula-akyaka',
 ];
 const NEARBY_POOL_KEY = 'istanbul-kadikoy-nearby-pool';
