@@ -290,6 +290,10 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'q stand coffee',
   'alaçatı muhallebicisi',
   'alacati muhallebicisi',
+  'harput dibek',
+  'harpurdibek',
+  'harputdibek',
+  'make me joi',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([

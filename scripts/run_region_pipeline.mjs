@@ -46,6 +46,8 @@ const PUBLISHED_REGION_KEYS = [
   'antalya-side',
   'antalya-kemer',
   'mugla-ula-akyaka',
+  'mugla-fethiye-yaniklar',
+  'mugla-fethiye-gocek',
 ];
 const NEARBY_POOL_KEY = 'istanbul-kadikoy-nearby-pool';
 const DEFAULT_REGION_ORDER = [...PUBLISHED_REGION_KEYS, NEARBY_POOL_KEY];

@@ -136,6 +136,18 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     headline: 'Akyaka, Muğla',
     vibe: 'Kadın Azmağı kıyısındaki su üstü balıkçılardan Akyaka sokaklarına, Akçapınar tost ritüeline ve Gökova kahvaltı duraklarına uzanan seçki',
   },
+  'yaniklar-fethiye-mugla': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Yanıklar, Fethiye, Muğla',
+    vibe: 'Yanıklar sığla ormanından Sağlık ve Esenli sokak bahçelerine, Karaot ile Katrancı hattına uzanan köy kahvaltıları, el açması gözleme durakları ve yerel lezzetler',
+  },
+  'gocek-fethiye-mugla': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Göcek, Fethiye, Muğla',
+    vibe: 'Göcek Çarşı Yolu, Turgut Özal Caddesi, İskele Meydanı ve marinalar hattında taş fırın pizzalar, artizan fırın-kahvaltılar, gurme burgerler, akşam sofraları ve deniz ürünleri',
+  },
   'kosuyolu-acibadem': {
     image: '/images/gastronomy/gastronomy.svg',
     badge: 'Doğrulanmış Seçki',
@@ -438,7 +450,7 @@ export function GastronomyPageClient({
                       Konum Seç
                     </div>
                     <div className="text-xs text-slate-500 font-medium truncate mt-0.5">
-                      Taksim & İstiklal · Asmalımescit & Pera · Yeniköy · Göktürk · Balat · Çukurcuma · Etiler · Ortaköy · Akaretler · Bebek · Galata · Beşiktaş Çarşı · Karaköy · Cihangir · Nişantaşı · Üsküdar · Kuzguncuk · Çengelköy · Koşuyolu & Acıbadem · Kadıköy · Moda · Caddebostan · Suadiye · Bostancı · Kaleiçi · Konyaaltı Sahil · Lara · Kaş Merkez · Kalkan Merkez · Alanya Merkez · Side · Kemer (Antalya) · Gaziantep · Kuşadası · Akyaka
+                      Taksim & İstiklal · Asmalımescit & Pera · Yeniköy · Göktürk · Balat · Çukurcuma · Etiler · Ortaköy · Akaretler · Bebek · Galata · Beşiktaş Çarşı · Karaköy · Cihangir · Nişantaşı · Üsküdar · Kuzguncuk · Çengelköy · Koşuyolu & Acıbadem · Kadıköy · Moda · Caddebostan · Suadiye · Bostancı · Kaleiçi · Konyaaltı Sahil · Lara · Kaş Merkez · Kalkan Merkez · Alanya Merkez · Side · Kemer (Antalya) · Gaziantep · Kuşadası · Akyaka · Yanıklar · Göcek (Fethiye)
                     </div>
                   </div>
                 </div>

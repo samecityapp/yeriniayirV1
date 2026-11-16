@@ -1,0 +1,2161 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "mugla-fethiye-gocek",
+  "displayName": "Göcek, Fethiye, Muğla",
+  "verifiedAt": "2026-11-16T10:51:45.145Z",
+  "selectedCount": 25,
+  "rejectedControls": [
+    {
+      "id": "ctrl-gocek-guverte-closed",
+      "resolvedName": "Güverte Restaurant",
+      "reason": "not_operational:CLOSED_TEMPORARILY"
+    },
+    {
+      "id": "ctrl-gocek-qlounge-closed",
+      "resolvedName": "Q Lounge",
+      "reason": "not_operational:CLOSED_TEMPORARILY"
+    },
+    {
+      "id": "ctrl-gocek-pizzalocale-chain",
+      "resolvedName": "Pizza Locale",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gocek-mcdonalds-chain",
+      "resolvedName": "McDonald's Göcek",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gocek-moc-chain",
+      "resolvedName": "MOC Coffee Roastery",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gocek-nero-chain",
+      "resolvedName": "Caffè Nero",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gocek-starbucks-chain",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gocek-kahvedunyasi-chain",
+      "resolvedName": "Kahve Dünyası (Al Götür)",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gocek-makemejoi-chain",
+      "resolvedName": "MAKE ME JOI GÖCEK",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gocek-westcafe-low",
+      "resolvedName": "West Cafe Bistro",
+      "reason": "below_quality_threshold:★4.3(2843)"
+    },
+    {
+      "id": "ctrl-gocek-damak-low",
+      "resolvedName": "DAMAK RESTAURANT",
+      "reason": "below_quality_threshold:★4.2(639)"
+    },
+    {
+      "id": "ctrl-gocek-ozcan-low",
+      "resolvedName": "Özcan Restaurant",
+      "reason": "below_quality_threshold:★4(708)"
+    },
+    {
+      "id": "ctrl-gocek-lotis-low",
+      "resolvedName": "Lotis Prime Göcek",
+      "reason": "below_quality_threshold:★4.3(672)"
+    },
+    {
+      "id": "ctrl-gocek-epocafe-low",
+      "resolvedName": "Epocafe",
+      "reason": "below_quality_threshold:★4.3(43)"
+    },
+    {
+      "id": "ctrl-gocek-soner-inlice-outside",
+      "resolvedName": "Soner ustanın yeri inlice",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Göcek/Gocek/Turgut Özal/Turgut Ozal/Sıtkı Koçman/Sitki Kocman/Çarşı Yolu/Carsi Yolu/D-Marin/Skopea/Büngüş/Bungus, adres: İnlice, 48300 Fethiye/Muğla)"
+    },
+    {
+      "id": "ctrl-gocek-ebegumeci-inlice-outside",
+      "resolvedName": "Ebegümeci Ev Yemekleri",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Göcek/Gocek/Turgut Özal/Turgut Ozal/Sıtkı Koçman/Sitki Kocman/Çarşı Yolu/Carsi Yolu/D-Marin/Skopea/Büngüş/Bungus, adres: İnlice, 48300 Fethiye/Muğla)"
+    },
+    {
+      "id": "ctrl-gocek-gobun-dalaman-outside",
+      "resolvedName": "Gobun Restaurant",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Göcek/Gocek/Turgut Özal/Turgut Ozal/Sıtkı Koçman/Sitki Kocman/Çarşı Yolu/Carsi Yolu/D-Marin/Skopea/Büngüş/Bungus, adres: Merkez, 48770 Dalaman/Muğla)"
+    },
+    {
+      "id": "ctrl-gocek-dalamanbalik-outside",
+      "resolvedName": "Dalaman Balık Restaurant",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Göcek/Gocek/Turgut Özal/Turgut Ozal/Sıtkı Koçman/Sitki Kocman/Çarşı Yolu/Carsi Yolu/D-Marin/Skopea/Büngüş/Bungus, adres: Karaçalı Ömer Musa Siva Caddesi 4, Karaçalı, Sokak NO:7/B, 48770 Dalaman/Muğla)"
+    },
+    {
+      "id": "ctrl-gocek-guz-gokceovacik-outside",
+      "resolvedName": "Guz Gökçeovacık Cafe Bistro",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Göcek/Gocek/Turgut Özal/Turgut Ozal/Sıtkı Koçman/Sitki Kocman/Çarşı Yolu/Carsi Yolu/D-Marin/Skopea/Büngüş/Bungus, adres: Gökçeovacık, Gedez street No-152, 48300 Fethiye/Muğla)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "gocek-mercan-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "Mercan Pizza",
+      "branchName": "Cumhuriyet Mh. (Göcek Köyü), Begonvil Sk. 5/1, 48310 Göcek Fethiye/Fethiye/Muğla",
+      "placeId": "ChIJey-_hPBlwBQRZORrsAUhw1A",
+      "coordinates": {
+        "lat": 36.7541943,
+        "lng": 28.9427055
+      },
+      "rating": 4.5,
+      "userRatingCount": 1218,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5819531451811226724",
+      "recommendedPrimary": [
+        "Mercan Gold Pizza",
+        "Göcek Pizza",
+        "Akdeniz Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Lahmacun & Ev Usulü Fırın Sütlaç",
+          "note": "Pizza dışında aynı fırından çıkan çıtır lahmacun ve yemek sonu sunulan fırın sütlaç müdavimlerin sık tercih ettiği eşlikçiler arasında yer alıyor.",
+          "proof": "Allzinapp menü kataloğu ve Restoranim Göcek geri bildirimleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Begonvil Sokak üzerinde gölgeli açık sokak masaları ve sade iç salon",
+        "crowdAndNoise": "Akşam yemeği saatlerinde aileler ve marina dışı sakin sofra arayanlarla düzenli dolu",
+        "disadvantage": "Marina kıyısı yerine ara sokak dokusunda yer aldığı için deniz manzarası sunmaz; yaz akşamlarında sokak masaları hızla dolabiliyor.",
+        "transit": "Çarşı Yolu Caddesi ile İskele Meydanı arasındaki Begonvil Sokak üzerinde yürüyüş mesafesinde."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Mercan Pizza",
+          "url": "https://maps.google.com/?cid=5819531451811226724",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve yüksek hacimli ziyaretçi kaydı"
+        },
+        {
+          "title": "Allzinapp — Mercan Pizza Göcek Menüsü",
+          "url": "https://allzinapp.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Göcek Pizza, Mercan Gold ve fırın lahmacun çeşitleri"
+        },
+        {
+          "title": "Restoranim — Mercan Pizza Göcek",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İnce hamur dengesi, soslu salata ikramı ve aile ortamı değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Marina hattına kıyasla daha ulaşılabilir bütçe dengesi",
+        "İnce hamurlu pizzalar yanında fırın ve tencere seçenekleri"
+      ],
+      "cons": [
+        "Deniz manzaralı bir konumda değil",
+        "Pik akşam saatlerinde sokak masalarında kısa bekleme olabiliyor"
+      ],
+      "uncertainties": [
+        "Yaz sezonu dışında menüdeki bazı günlük yemek çeşitleri sınırlanabiliyor."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gocek-drunken-bee",
+      "categoryId": "hamburger",
+      "resolvedName": "Drunken Bee Gocek Cafe & Bistro",
+      "branchName": "Göcek, Çarşı Yolu Cd. 53/1, 48310 Fethiye/Muğla",
+      "placeId": "ChIJY8R9sLRlwBQR4x6FWQEEz8U",
+      "coordinates": {
+        "lat": 36.754715399999995,
+        "lng": 28.940464199999997
+      },
+      "rating": 4.8,
+      "userRatingCount": 312,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14253615749494284003",
+      "recommendedPrimary": [
+        "Bee Burger",
+        "Mantar Burger",
+        "Acı Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Trüf Mayonezli Çıtır Tavuk & Karides Tempura",
+          "note": "Burger menüsünün yanında parmesan ve trüf mayonezli çıtır tavuk parçaları ile tartar soslu karides tempura paylaşımlık olarak öne çıkıyor.",
+          "proof": "drunkenbee.com.tr resmi menüsü ve Wanderlog Göcek değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Çarşı Yolu yaya aksında açık sokak masaları ve ferah bistro bar oturumu",
+        "crowdAndNoise": "Akşamüstü kokteyl ve akşam yemeği saatlerinde genç gruplar ve tekne misafirleriyle canlı",
+        "disadvantage": "Ana yaya aksında yer aldığından yoğun yaz akşamlarında müzik ve sokak hareketliliği yüksek olabiliyor.",
+        "transit": "Çarşı Yolu Caddesi üzerinde marinalara birkaç dakikalık yürüyüş mesafesinde."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Drunken Bee Resmi Web Menüsü",
+          "url": "https://drunkenbee.com.tr/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Bee Burger, Mantar Burger, Acı Burger ve atıştırmalık içerikleri"
+        },
+        {
+          "title": "Wanderlog — Drunken Bee Göcek",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Burger pişirimi, kokteyller ve aile işletmesi yaklaşımı notları"
+        },
+        {
+          "title": "Restaurant Guru — Drunken Bee Cafe & Bistro",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çıtır deniz mahsulleri, burger çeşitleri ve servis değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps — Drunken Bee Gocek Cafe & Bistro",
+          "url": "https://maps.google.com/?cid=14253615749494284003",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        }
+      ],
+      "pros": [
+        "Net et gramajlı ve özenli burger reçeteleri",
+        "Akşamüstü kokteyl ve atıştırmalık uyumu"
+      ],
+      "cons": [
+        "Kalabalık yaz gecelerinde masa bulmak zorlaşabiliyor",
+        "Sahil aksı gürültüsü hissedilebiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışı kış döneminde çalışma gün ve saatleri esneyebiliyor."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gocek-bunzo-port",
+      "categoryId": "hamburger",
+      "resolvedName": "Bunzo Port Göcek",
+      "branchName": "Göcek, Turgut Özal Cd. No:30 D:A, 48300 Fethiye/Muğla",
+      "placeId": "ChIJU9AuIABlwBQRQ-6rWlxdcFE",
+      "coordinates": {
+        "lat": 36.7565433,
+        "lng": 28.937803799999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 50,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://bunzoport.com/",
+      "mapsUri": "https://maps.google.com/?cid=5868292965703347779",
+      "recommendedPrimary": [
+        "Smash Deluxe Burger",
+        "Smash Cheeseburger",
+        "Bunzo Classic"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Ayvalık Tostu & Soğuk Sandviçler",
+          "note": "Smash burgerlerin yanında tekne çıkışı veya geç saatler için hazırlanan Ayvalık tostları ve günlük sandviçler pratik alternatif sunuyor.",
+          "proof": "bunzoport.com resmi menüsü ve Yemeksepeti Göcek kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Turgut Özal Caddesi üzerinde hızlı servis tezgahı ve dış mekan sokak masaları",
+        "crowdAndNoise": "Öğleden sonra tekne dönüşü ve gece geç saatlere kadar hareketli burger trafiği",
+        "disadvantage": "Oturma alanı kompakt bir sokak dükkanı ölçüsünde olduğundan kalabalık gruplar için al-götür daha pratik kalıyor.",
+        "transit": "Göcek Marina ve Turgut Özal Caddesi üzerinde yürüyerek bir dakika."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Bunzo Port Resmi Sitesi",
+          "url": "http://bunzoport.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Smash Deluxe, Smash Cheeseburger ve marina önü konumu"
+        },
+        {
+          "title": "Yemeksepeti — Bunzo Port Göcek",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Smash burger menü çeşitleri ve müşteri sipariş geri bildirimleri"
+        },
+        {
+          "title": "Yandex Haritalar — Bunzo Port Göcek",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Et lezzeti, marina yakınlığı ve geç saat açık olma değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps — Bunzo Port Göcek",
+          "url": "https://maps.google.com/?cid=5868292965703347779",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        }
+      ],
+      "pros": [
+        "Yüksek ısıda mühürlenen çıtır kenarlı smash köfte",
+        "Gece geç saatlere uzanan açık mutfak"
+      ],
+      "cons": [
+        "Sınırlı oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Yeni açılan bir işletme olduğu için yoğun tekne günlerinde paket yoğunluğu hazırlık süresini uzatabiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gocek-rizz-kitchen",
+      "categoryId": "hamburger",
+      "resolvedName": "Rizz Kitchen",
+      "branchName": "Göcek, Süleymanağa Cd. No:18, 48300 Fethiye/Muğla",
+      "placeId": "ChIJCatVym9lwBQRUjqMCW-Nm_k",
+      "coordinates": {
+        "lat": 36.7539636,
+        "lng": 28.943958199999997
+      },
+      "rating": 4.9,
+      "userRatingCount": 38,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://rizzkitchen.com/r/wy7n",
+      "mapsUri": "https://maps.google.com/?cid=17986125044875278930",
+      "recommendedPrimary": [
+        "BBQ Burger",
+        "Mushroom Burger",
+        "Sweet Chili Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çıtır Tavuk & Mozzarella Sticks",
+          "note": "Tüm burgerlerle gelen parmak patatese ek olarak paylaşımlık çıtır tavuk parçaları, soğan halkası ve mozzarella sticks menüyü tamamlıyor.",
+          "proof": "Yemeksepeti Rizz Kitchen menüsü ve Yandex Haritalar notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Süleymanağa Caddesi üzerinde küçük sokak önü masaları ve paket servis ağırlıklı mutfak",
+        "crowdAndNoise": "Akşam ve gece geç saatlerde paket sipariş ve hızlı atıştırmalık trafiği yoğun",
+        "disadvantage": "Paket servis yoğunluğu yüksek bir mutfak olduğundan akşam pik saatlerinde sipariş hazırlığı uzayabiliyor; geniş oturma salonu bulunmuyor.",
+        "transit": "Göcek merkez Süleymanağa Caddesi üzerinde çarşıdan yürüyerek üç dakika."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Rizz Kitchen Resmi Menüsü",
+          "url": "http://rizzkitchen.com/r/wy7n",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "El yapımı ekmekli 140 gr smashed burger çeşitleri"
+        },
+        {
+          "title": "Yemeksepeti — Rizz Kitchen Göcek",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "BBQ Burger, Mushroom Burger, patates eşliği ve kullanıcı puanlamaları"
+        },
+        {
+          "title": "Yandex Haritalar — Rizz Kitchen Göcek",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Süleymanağa Cd. gece burger servisi ve porsiyon memnuniyeti"
+        },
+        {
+          "title": "Google Maps — Rizz Kitchen",
+          "url": "https://maps.google.com/?cid=18057166796956283474",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        }
+      ],
+      "pros": [
+        "İsli peynir ve kekikli mantar gibi karakterli burger sosları",
+        "Gece geç saatlere kadar erişilebilir olması"
+      ],
+      "cons": [
+        "Oturma alanı kısıtlı, ağırlıklı paket odaklı çalışma düzeni"
+      ],
+      "uncertainties": [
+        "Aynı bina adresinde (Süleymanağa Cd. No:18) farklı mutfak konseptli kardeş işletme kaydı da yer alıyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gocek-dodo-cafe",
+      "categoryId": "kahve",
+      "resolvedName": "Dodo Cafe Göcek",
+      "branchName": "Göcek, Portmarin Küme Evleri no:28, 48300 Fethiye/Muğla",
+      "placeId": "ChIJT_8kST9lwBQRAwjuJHjGTzg",
+      "coordinates": {
+        "lat": 36.7476883,
+        "lng": 28.943970399999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 81,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4057680008602060803",
+      "recommendedPrimary": [
+        "Espresso & Latte Çeşitleri",
+        "Filtre Kahve",
+        "Türk Kahvesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Tiramisu & Dondurma Seçkisi",
+          "note": "Kahve molalarının yanında hafif ve taze hazırlanan tiramisu ile yaz sıcaklarında tercih edilen dondurma çeşitleri öne çıkıyor.",
+          "proof": "Restaurant Guru ve JoinPearl Göcek kafe seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Portmarin yürüyüş hattında yeşillikler içinde gölgeli dış mekan masaları",
+        "crowdAndNoise": "Sabah kahvesi ve öğleden sonra sakin dinlenme saatlerinde yerel müdavimlerle dengeli",
+        "disadvantage": "Ana Çarşı Yolu merkezinin güney ucundaki Portmarin bölgesinde yer aldığı için çarşı içinden yaklaşık beş dakikalık yürüyüş gerektiriyor.",
+        "transit": "D-Marin ve Portmarin Küme Evleri yürüyüş yolu üzerinde."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Restaurant Guru — Dodo Cafe Göcek",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Portmarin açık oturumu, kahve, tiramisu ve dondurma değerlendirmeleri"
+        },
+        {
+          "title": "JoinPearl — Dodo Cafe Göcek",
+          "url": "https://joinpearl.co/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Göcek sahilinde sakin kahve ve tatlı molası tanıtımı"
+        },
+        {
+          "title": "Google Maps — Dodo Cafe Göcek",
+          "url": "https://maps.google.com/?cid=4051212767114725891",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        }
+      ],
+      "pros": [
+        "Zincir kahvecilerin yoğunluğundan uzak sakin açık hava oturumu",
+        "Kahve yanına yakışan taze tiramisu ve dondurma alternatifleri"
+      ],
+      "cons": [
+        "Tam çarşı merkezine göre biraz güneyde kalıyor",
+        "Üçüncü nesil kavrum atölyesinden ziyade klasik kafe konsepti"
+      ],
+      "uncertainties": [
+        "Sezon dışı dönemde gün içi kapanış saatleri erken çekilebiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gocek-adin-gusto",
+      "categoryId": "date",
+      "resolvedName": "Adin Gusto",
+      "branchName": "Göcek, Çarşı Yolu Cd. 63/B Kat 1 Kapı No: 1, 48300 Fethiye/Muğla",
+      "placeId": "ChIJO2LkAFZlwBQRjPQm2Bgu3ZE",
+      "coordinates": {
+        "lat": 36.7550161,
+        "lng": 28.940150499999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 149,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.adingusto.com/",
+      "mapsUri": "https://maps.google.com/?cid=10510607789593130124",
+      "recommendedPrimary": [
+        "Tagliatelle Ragù (7 Saat Pişmiş)",
+        "Deniz Mahsulleri Tabağı",
+        "Vejetaryen Mezze Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Mini Mantı & Izgara Kuzu Köfte",
+          "note": "Akdeniz tapasları ve deniz ürünleri yanında Türk mutfağına göz kırpan yoğurtlu mini mantı ile yassı ekmekli ızgara kuzu köfte tercih ediliyor.",
+          "proof": "adingusto.com resmi menüsü ve Habertürk gastronomi röportajı"
+        }
+      ],
+      "suitability": {
+        "seating": "Göcek Marina manzaralı üst kat terası ve özenli akşam masaları",
+        "crowdAndNoise": "Gün batımıyla başlayan akşam yemeği saatlerinde çiftler ve küçük gruplarla yoğun",
+        "disadvantage": "Üst segment bir marina restoranı olduğundan yüksek bütçe aralığında yer alıyor; yaz akşamlarında rezervasyonsuz masa bulmak zor.",
+        "transit": "Çarşı Yolu Caddesi No:63/B üzerinde birinci katta, Göcek Marina iskelesi karşısında."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Adin Gusto Resmi Web Sitesi",
+          "url": "https://www.adingusto.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Tagliatelle Ragù, Carlingford istiridye, deniz mahsulleri ve mezze menüsü"
+        },
+        {
+          "title": "Habertürk — Adin Gusto Göcek",
+          "url": "https://www.haberturk.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İdris Adın liderliğinde Göcek Marina rafine sahil mutfağı tanıtımı"
+        },
+        {
+          "title": "Göcek Rehberi — Adin Gusto",
+          "url": "https://gocekrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Göcek Marina gün batımı gastronomi seçkisi"
+        },
+        {
+          "title": "Yandex Haritalar — Adin Gusto Göcek",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Marina manzarası, servis özeni ve paylaşımlı tabak geri bildirimleri"
+        },
+        {
+          "title": "Google Maps — Adin Gusto",
+          "url": "https://maps.google.com/?cid=10510402925198799948",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        }
+      ],
+      "pros": [
+        "Kasıntı olmadan yüksek teknikli yemek ve şarap eşleşmesi sunması",
+        "Marina ışıklarına bakan ferah üst kat konumu"
+      ],
+      "cons": [
+        "Yüksek bütçe seviyesi",
+        "Akşam servisleri için önceden rezervasyon gereksinimi"
+      ],
+      "uncertainties": [
+        "Sezon içi açılan yeni bir mekan olduğundan ara sezon çalışma takvimi kontrol edilmeli."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gocek-nena-lounge",
+      "categoryId": "date",
+      "resolvedName": "Nena Lounge Göcek",
+      "branchName": "Göcek, Sahil Yolu Cd No:54 D:3, 48310 Fethiye/Muğla",
+      "placeId": "ChIJKTs86PBlwBQRjYBmfEl3o4A",
+      "coordinates": {
+        "lat": 36.754856,
+        "lng": 28.939194999999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 1336,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://nenalounge.com/menu/",
+      "mapsUri": "https://maps.google.com/?cid=9269383615562023053",
+      "recommendedPrimary": [
+        "Limon Soslu Levrek",
+        "Izgara Ahtapot",
+        "Bonfile & Steak Seçkisi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taş Fırın Başlangıçları & Şarap Kavı Eşleşmeleri",
+          "note": "Ana yemek öncesi taş fırından çıkan sıcak paylaşımlıklar ve yerli-yabancı şarap kavından öneriler akşam sofrasını tamamlıyor.",
+          "proof": "nenalounge.com resmi menüsü ve Mavi Geziyor Göcek seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Skopea Marina manzaralı açık sahil terası ve şık lounge oturumu",
+        "crowdAndNoise": "Akşam yemeğinde çiftler, yat misafirleri ve kokteyl gruplarıyla yüksek doluluk",
+        "disadvantage": "Yüksek talep gören marina hattında yer aldığı için hafta sonları ve yaz akşamlarında rezervasyon gerektiriyor; fiyat seviyesi üst segmentte.",
+        "transit": "Sahil Yolu Caddesi No:54 üzerinde Skopea Marina yürüyüş hattında."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "NENA Lounge Resmi Sitesi",
+          "url": "https://nenalounge.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Akdeniz mutfağı, deniz ürünleri, taş fırın ve şarap kavı bilgileri"
+        },
+        {
+          "title": "Mavi Geziyor — NENA Lounge Göcek",
+          "url": "https://mavigeziyor.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Skopea Marina atmosferi ve akşam menüsü önerisi"
+        },
+        {
+          "title": "Restaurants-Info — Nena Lounge Göcek",
+          "url": "https://restaurants-info.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Limon soslu levrek, ızgara ahtapot ve şarap seçkisi geri bildirimleri"
+        },
+        {
+          "title": "Google Maps — Nena Lounge Göcek",
+          "url": "https://maps.google.com/?cid=9269381845507538957",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve yüksek değerlendirme hacmi"
+        }
+      ],
+      "pros": [
+        "Hem deniz ürünleri hem et ve taş fırın seçeneklerinde istikrarlı mutfak",
+        "Skopea Marina kıyısında akşam ışıklarıyla uyumlu teras"
+      ],
+      "cons": [
+        "Yoğun yaz akşamlarında ön sıra masalar hızla rezerve ediliyor"
+      ],
+      "uncertainties": [
+        "Yaz ve kış sezonları arasında havuz/gündüz servisi düzeni değişebiliyor."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gocek-sea-lounge",
+      "categoryId": "date",
+      "resolvedName": "Sea Lounge | Göcek",
+      "branchName": "Göcek, Çarşı Yolu Cd. No: 51/1, 48300 Fethiye/Muğla",
+      "placeId": "ChIJhXs6-TllwBQRo4Sv2Fbpkd4",
+      "coordinates": {
+        "lat": 36.754667399999995,
+        "lng": 28.9404991
+      },
+      "rating": 4.7,
+      "userRatingCount": 301,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://sealoungegocek.com/",
+      "mapsUri": "https://maps.google.com/?cid=16037856307254887587",
+      "recommendedPrimary": [
+        "Crunchy Roll & Baked Sushi",
+        "Crispy Salmon & Crab Tartare Maki",
+        "Singapur Usulü Karidesli Noodle"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kaburga Burger & İmza Kokteyl Eşleşmeleri",
+          "note": "Suşi dışı bir ana tabak arayan masalar için ağır pişmiş kaburga burger ve mevsime özel imza kokteyller öne çıkıyor.",
+          "proof": "sealoungegocek.com resmi sitesi ve Wanderlog Göcek değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Çarşı Yolu üzerinde özenli akşam masaları ve bar oturumu",
+        "crowdAndNoise": "Akşam yemeğinde farklı mutfak ve suşi arayan çiftler ile arkadaş grupları yoğun",
+        "disadvantage": "Geleneksel balık-meze yerine Asya füzyon ve suşi odaklı çalıştığından klasik Türk mutfağı arayan gruplar için uygun değildir; bütçesi orta-üst düzeydedir.",
+        "transit": "Çarşı Yolu Caddesi No:51/1 üzerinde, Drunken Bee hemen yanında."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Sea Lounge Göcek Resmi Sitesi",
+          "url": "http://sealoungegocek.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Asya sokak lezzetleri, suşi ve kokteyl konsepti"
+        },
+        {
+          "title": "Wanderlog — Sea Lounge Göcek",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Crunchy roll, baked sushi ve Asya ana yemekleri deneyimleri"
+        },
+        {
+          "title": "Restoranim — Sea Lounge Göcek",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Crispy salmon, noodle ve kaburga burger geri bildirimleri"
+        },
+        {
+          "title": "Google Maps — Sea Lounge | Göcek",
+          "url": "https://maps.google.com/?cid=16037864257770521763",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        }
+      ],
+      "pros": [
+        "Göcek sahilindeki klasik meze-balık düzenine taze bir Asya-suşi alternatifi sunması",
+        "Güçlü kokteyl eşleşmeleri"
+      ],
+      "cons": [
+        "Küçük sokak cephesinde yoğun saatlerde rezervasyon gerekebiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışında menü çeşitliliği ve açılış günleri dönemsel güncellenebiliyor."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gocek-anjelika-kitchen",
+      "categoryId": "date",
+      "resolvedName": "Anjelika Kitchen",
+      "branchName": "Göcek, Gonca Sk No:10/1, 48300 Fethiye/Muğla",
+      "placeId": "ChIJw9E8TxRxwBQRSTE4Kjz2ojI",
+      "coordinates": {
+        "lat": 36.7558771,
+        "lng": 28.9445939
+      },
+      "rating": 5,
+      "userRatingCount": 57,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.anjelikakitchen.com/",
+      "mapsUri": "https://maps.google.com/?cid=3648749386390319433",
+      "recommendedPrimary": [
+        "Mevsimsel Akdeniz Ana Tabakları",
+        "Taze Deniz Mahsullü Başlangıçlar",
+        "Şefin Günlük Et Seçkisi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Butik Şarap Eşlikli Başlangıçlar & Tatlı Kapanışı",
+          "note": "Yavaş akşam yemeği ritmine uygun olarak paylaşımlı Akdeniz başlangıçları ve günlük hazırlanan hafif tatlılar sunuluyor.",
+          "proof": "anjelikakitchen.com resmi sayfası ve seyahat rehberi geri bildirimleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Gonca Sokak arka bahçesinde yeşillikler içinde sakin akşam masaları",
+        "crowdAndNoise": "Sakin ve romantik akşam yemeği arayan çiftler için dengeli, kalabalıktan uzak ortam",
+        "disadvantage": "Yalnızca akşam servisi odaklı butik bir otel restoranı olduğu için gündüz uğramaya uygun değil; bütçe seviyesi yüksek segmentte ve rezervasyon gerekiyor.",
+        "transit": "D-Marin ile çarşı arasındaki Gonca Sokak No:10/1 üzerinde merkezden kısa yürüyüş mesafesinde."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Anjelika Kitchen Resmi Sitesi",
+          "url": "https://www.anjelikakitchen.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Akşam servisi odaklı dürüst ve taze Akdeniz mutfağı konsepti"
+        },
+        {
+          "title": "Restaurant Guru — Anjelika Kitchen Göcek",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tabak sunumları, sakin bahçe ve misafir memnuniyeti değerlendirmeleri"
+        },
+        {
+          "title": "Trip.com & Hotels.com — Yonca Anjelika & Kitchen",
+          "url": "https://www.trip.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Doğa içinde huzurlu atmosfer ve Akdeniz akşam mutfağı tanıtımı"
+        },
+        {
+          "title": "Google Maps — Anjelika Kitchen",
+          "url": "https://maps.google.com/?cid=3648747010834493769",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        }
+      ],
+      "pros": [
+        "Çarşı ve marina gürültüsünden uzak sakin bahçe ortamı",
+        "Özenli tabak sunumu ve samimi servis"
+      ],
+      "cons": [
+        "Yüksek bütçe seviyesi",
+        "Akşamları rezervasyonsuz yer bulma zorluğu"
+      ],
+      "uncertainties": [
+        "Sezon dışında otel takvimine paralel olarak çalışma günleri kısıtlanabiliyor."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gocek-monz-artisan-bakery",
+      "categoryId": "kahvalti",
+      "resolvedName": "Monz Artisan Bakery",
+      "branchName": "Göcek, Ihlamur Sk. No:5 D:1A, 48300 Fethiye/Muğla",
+      "placeId": "ChIJUxvhF_FlwBQRYjU-RIBvB2E",
+      "coordinates": {
+        "lat": 36.7550154,
+        "lng": 28.942740699999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 174,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6991679543207408994",
+      "recommendedPrimary": [
+        "Mozzarella & Roast Beef Focaccia Sandviç",
+        "Kişisel Kahvaltı Tabağı & Menemen",
+        "Taze Kruvasan"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Elmalı Tart, Karadutlu Cheesecake & Bademli Kurabiye",
+          "note": "Fırın tezgahında gün boyu taze kalan meyveli tartlar, cheesecake dilimleri ve bademli kurabiyeler kahve eşliği olarak sık tercih ediliyor.",
+          "proof": "Restoranim ve En İyi Kahvaltı Göcek incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ihlamur Sokak üzerinde sakin kaldırım masaları ve butik fırın tezgahı",
+        "crowdAndNoise": "Sabah tekne çıkışı öncesi erken saatlerde ve öğleden önce mahalle müdavimleriyle hareketli",
+        "disadvantage": "Büyük gruplara yönelik geniş serpme kahvaltı salonu düzeninde değil; masa sayısı sınırlı olduğundan sabah yoğunluğunda al-götür gerekebiliyor.",
+        "transit": "Göcek merkez Ihlamur Sokak No:5 adresinde çarşı içinden yürüyerek iki dakika."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Restoranim — Monz Artisan Bakery Göcek",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ekşi mayalı focaccia, ciabatta sandviç, elmalı tart ve çay-kahve kalitesi"
+        },
+        {
+          "title": "En İyi Kahvaltı Rehberi — Monz Artisan Bakery",
+          "url": "https://eniyikahvalti.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Erken sabah tekne öncesi hafif kahvaltı ve bademli kurabiye önerisi"
+        },
+        {
+          "title": "Restaurant Guru — Monz Artisan Bakery",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Artizan fırın tazeliği ve sandviç geri bildirimleri"
+        },
+        {
+          "title": "Google Maps — Monz Artisan Bakery",
+          "url": "https://maps.google.com/?cid=7063321970838926690",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        }
+      ],
+      "pros": [
+        "Günlük gerçek ekşi mayalı fırın ürünleri ve taze sandviçler",
+        "Sabah erken başlayan servis"
+      ],
+      "cons": [
+        "Küçük dükkan oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Sevilen kruvasan ve ekşi mayalı ekmek çeşitleri öğlene doğru tükenebiliyor."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gocek-blues-cafe",
+      "categoryId": "kahvalti",
+      "resolvedName": "Blues Cafe & Restaurant Göcek",
+      "branchName": "Göcek, Çarşı Yolu Cd., 48310 Fethiye/Muğla",
+      "placeId": "ChIJz3LKnPBlwBQR_Uz-fZt_B2Q",
+      "coordinates": {
+        "lat": 36.7544746,
+        "lng": 28.941060999999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 1288,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.bluescaferestaurantgocek.com/",
+      "mapsUri": "https://maps.google.com/?cid=7207870034440244477",
+      "recommendedPrimary": [
+        "Serpme Ev Kahvaltısı",
+        "Çıtır Simitli Çırpılmış Yumurta",
+        "Blues Sıcak Kahvaltı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İnce Hamurlu Pizzalar & Ev Yapımı Kekler",
+          "note": "Kahvaltı sonrası öğlen ve akşam saatlerinde İtalyan usulü ince hamurlu pizzalar ile günlük ev yapımı kekler menünün güçlü ikinci ayağını oluşturuyor.",
+          "proof": "bluescaferestaurantgocek.com resmi sitesi ve Mavi Geziyor tanıtımı"
+        }
+      ],
+      "suitability": {
+        "seating": "Çarşı Yolu üzerinde geniş gölgeli dış oturma alanı ve iç salon",
+        "crowdAndNoise": "Sabah kahvaltısı saatlerinden gece geç saatlere kadar yerli ve yabancı misafirlerle sürekli canlı",
+        "disadvantage": "Günün her saatine hitap eden kalabalık bir merkez bistrosu olduğundan özellikle yaz sabahları ve akşamlarında yüksek sirkülasyon yaşanıyor.",
+        "transit": "Çarşı Yolu Caddesi merkezinde marinalara yürüyerek iki dakika."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Blues Cafe & Restaurant Resmi Sitesi",
+          "url": "https://www.bluescaferestaurantgocek.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "1994 kuruluş tarihçesi, serpme kahvaltı ve gün boyu menü"
+        },
+        {
+          "title": "Restoranim — Blues Cafe & Restaurant Göcek",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Serpme ev kahvaltısı, Kars kaşarı ve simitli yumurta detayları"
+        },
+        {
+          "title": "Mavi Geziyor — Blues Cafe Göcek",
+          "url": "https://mavigeziyor.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Göcek merkezde sabahtan geceye uzanan köklü buluşma noktası"
+        },
+        {
+          "title": "Google Maps — BLUES CAFE & RESTAURANT GÖCEK",
+          "url": "https://maps.google.com/?cid=7206464212969999613",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve yüksek değerlendirme hacmi"
+        }
+      ],
+      "pros": [
+        "Otuz yılı aşan işletme istikrarı ve merkezi konum",
+        "Geniş kahvaltı çeşitliliği"
+      ],
+      "cons": [
+        "Sakin, küçük bir kahvaltı köşesi arayanlara çarşı hareketliliği yoğun gelebilir"
+      ],
+      "uncertainties": [
+        "Sezon dışında akşam ve gece kapanış saatleri daralabiliyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gocek-tarhun-restaurant",
+      "categoryId": "kahvalti",
+      "resolvedName": "Tarhun Restaurant & Bar",
+      "branchName": "Skopea Inn Hotel, Göcek, Turgut Özal Cd. No:1/B, 48310 Fethiye/Muğla",
+      "placeId": "ChIJkcZu6kZlwBQR-5g-uGHXrhM",
+      "coordinates": {
+        "lat": 36.7551348,
+        "lng": 28.939408200000003
+      },
+      "rating": 4.6,
+      "userRatingCount": 79,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://skopeainnhotel.com/tarhun-tr",
+      "mapsUri": "https://maps.google.com/?cid=1418307747371194619",
+      "recommendedPrimary": [
+        "İki Kişilik Serpme Kahvaltı",
+        "Bistro Kahvaltı Tabağı",
+        "Meyveli Granola & Omlet Çeşitleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tiftik Burger & Butik Bağ Şaraplı Akşam Menüsü",
+          "note": "Kahvaltı servisi sonrasında gün boyu devam eden mutfakta tiftik burger, mantı çeşitleri ve akşam kokteylleri tercih ediliyor.",
+          "proof": "skopeainnhotel.com resmi menüsü ve Restaurant Guru değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Skopea Marina hattında ferah otel avlusu ve açık teras masaları",
+        "crowdAndNoise": "Sabah kahvaltısında otel dışı konuklarla sakin ve düzenli, akşamları lounge temposunda",
+        "disadvantage": "Kahvaltı servisi öğleye doğru sonlandığından geç öğleden sonra gidenler yalnızca gün boyu bistro menüsüne ulaşabiliyor.",
+        "transit": "Turgut Özal Caddesi No:1/B üzerinde Skopea Marina tesisleri yanında."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Skopea Inn — Tarhun Restaurant Resmi Menüsü",
+          "url": "https://skopeainnhotel.com/tarhun-tr",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Serpme kahvaltı, bistro kahvaltı, granola ve akşam kokteyl menüsü"
+        },
+        {
+          "title": "Restaurant Guru — Tarhun Restaurant & Bar",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sunum özeni, marina yakınlığı ve servis kalitesi geri bildirimleri"
+        },
+        {
+          "title": "Wanderboat — Tarhun Göcek",
+          "url": "https://wanderboat.ai/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Porsiyon dengesi ve sakin lounge ortamı değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps — Tarhun Restaurant & Bar",
+          "url": "https://maps.google.com/?cid=1424234389861144827",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        }
+      ],
+      "pros": [
+        "Çarşı kalabalığından bir adım uzakta düzenli sabah kahvaltısı",
+        "Evcil hayvan dostu ferah ortam"
+      ],
+      "cons": [
+        "Butik otel bünyesinde yer alması nedeniyle akşamları rezervasyon gerektirebiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışında otel doluluğuna bağlı olarak mutfak saatleri değişebiliyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gocek-just-mezze",
+      "categoryId": "denemelisin",
+      "resolvedName": "Just Mezze Göcek",
+      "branchName": "Göcek, İskele Meydanı No:2/1, 48300 Fethiye/Muğla",
+      "placeId": "ChIJUxI-2VhlwBQRcl3VMcFFZAU",
+      "coordinates": {
+        "lat": 36.752756500000004,
+        "lng": 28.9420299
+      },
+      "rating": 4.8,
+      "userRatingCount": 345,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=388512163927776626",
+      "recommendedPrimary": [
+        "Girit Ezmesi & Avokadolu Humus",
+        "Tereyağlı Sarımsaklı Karides Sote",
+        "Çıtır Levrek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zeytinyağlı Yaprak Sarma & Ev Yapımı Baklava",
+          "note": "Meze sofrasının başlangıcında zeytinyağlı sarma ve yemek sonunda sıcak servis edilen ev yapımı baklava misafirlerin en çok öne çıkardığı dokunuşlar arasında.",
+          "proof": "ButikRota ve Restaurant Guru Just Mezze Göcek incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "İskele Meydanı üzerinde açık meydan masaları ve iç oturma alanı",
+        "crowdAndNoise": "Akşamları meze paylaşmayı seven çiftler ve kalabalık arkadaş sofralarıyla yoğun",
+        "disadvantage": "İskele Meydanı üzerinde yoğun akşam saatlerinde gürültü ve masa trafiği artıyor; akşamları rezervasyonsuz yer bulmak zorlaşabiliyor.",
+        "transit": "Göcek İskele Meydanı No:2/1 adresinde belediye marinası karşısında."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "ButikRota — Just Mezze Göcek",
+          "url": "https://butikrota.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İskele Meydanı meze konsepti ve popüler lezzet öne çıkarımı"
+        },
+        {
+          "title": "Restaurant Guru — Just Mezze Göcek",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Girit ezmesi, avokadolu humus, çıtır levrek ve baklava değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps — Just Mezze Göcek",
+          "url": "https://maps.google.com/?cid=388794808518565234",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        }
+      ],
+      "pros": [
+        "Sıradan meze dolabı yerine özenli soğuk ve sıcak meze reçeteleri",
+        "Merkezi iskele konumu"
+      ],
+      "cons": [
+        "Yoğun yaz akşamlarında rezervasyon gereksinimi",
+        "Üst-orta meyhane/meze bütçe seviyesi"
+      ],
+      "uncertainties": [
+        "Günlük çıkan meze çeşitleri mevsime göre değişebiliyor."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gocek-latife-meyhane",
+      "categoryId": "denemelisin",
+      "resolvedName": "Latife Meyhane Göcek",
+      "branchName": "Göcek, Gençlik Sokak 1C, 48000 Fethiye/Muğla",
+      "placeId": "ChIJI-b2zcllwBQRJSUX8YZoyng",
+      "coordinates": {
+        "lat": 36.753268,
+        "lng": 28.9422629
+      },
+      "rating": 4.7,
+      "userRatingCount": 478,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.latifegocekmeyhanesi.com/",
+      "mapsUri": "https://maps.google.com/?cid=8703884158626637093",
+      "recommendedPrimary": [
+        "Latife'nin Böreği",
+        "Levrek Marin & Köpoğlu",
+        "Girit Ezme & Atom"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kalamar Tava & Gaziantep Baharatlı Ocakbaşı Etleri",
+          "note": "Meze tepsisinden sonra ara sıcak olarak saganaki ve kalamar tava veya ana yemek olarak ocakbaşı ızgaraları tercih ediliyor.",
+          "proof": "latifegocekmeyhanesi.com resmi menüsü ve Mavi Geziyor seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Gençlik Sokak boyunca dizilen geleneksel meyhane masaları ve iç salon",
+        "crowdAndNoise": "Akşamları uzun fasıl/sohbet masalarıyla neşeli ve hareketli",
+        "disadvantage": "Sokak içi canlı meyhane atmosferi ve müzik sesi sakinlik arayanlara yüksek gelebilir; yüksek bütçe bandında yer alıyor.",
+        "transit": "Çarşı Yolu arkasındaki Gençlik Sokak No:1C üzerinde yürüyerek bir dakika."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Latife Meyhane Göcek Resmi Sitesi",
+          "url": "https://www.latifegocekmeyhanesi.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Soğuk mezeler, Latife Böreği, saganaki ve ocakbaşı menüsü"
+        },
+        {
+          "title": "Mavi Geziyor — Latife Meyhane Göcek",
+          "url": "https://mavigeziyor.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Gençlik Sokak meyhane atmosferi ve meze seçkisi tanıtımı"
+        },
+        {
+          "title": "Yandex Haritalar — Latife Meyhane Göcek",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Meze tazeliği ve sıcak meyhane servisi değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps — Latife Meyhane Göcek",
+          "url": "https://maps.google.com/?cid=8681449435681727781",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        }
+      ],
+      "pros": [
+        "Hem kapsamlı meze dolabı hem iyi ocakbaşı seçeneği sunması",
+        "Keyifli ara sokak atmosferi"
+      ],
+      "cons": [
+        "Yüksek bütçe seviyesi",
+        "Kalabalık akşamlarda yüksek ses düzeyi"
+      ],
+      "uncertainties": [
+        "Canlı müzik günleri sezona göre değişebiliyor."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gocek-ocakbasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Göcek Ocakbaşı",
+      "branchName": "Göcek, Turgut Özal Cd. 13/A, 48310 Fethiye/Muğla",
+      "placeId": "ChIJ0zgv1kBDwBQRFs6fnH_1PIE",
+      "coordinates": {
+        "lat": 36.7555976,
+        "lng": 28.938840499999994
+      },
+      "rating": 4.7,
+      "userRatingCount": 221,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.gocekocakbasi.com/",
+      "mapsUri": "https://maps.google.com/?cid=9312588057932713494",
+      "recommendedPrimary": [
+        "Yağlı Kara & Çöp Şiş",
+        "Patlıcan Kebabı & Fıstıklı Kebap",
+        "Atom Lahmacun"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mütebbel, Avokadolu Girit Ezmesi & Küşleme/Pirzola",
+          "note": "Kebap öncesi paylaşımlık mütebbel ve avokadolu Girit ezmesi ile odun fırını pideleri sofranın dengesini kuruyor.",
+          "proof": "Restoranim ve BiteCritic Göcek Ocakbaşı incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Turgut Özal Caddesi üzerinde gölgeli bahçe terası ve ocakbaşı çevresi iç masalar",
+        "crowdAndNoise": "Akşam yemeklerinde kalabalık aile ve arkadaş gruplarıyla yoğun",
+        "disadvantage": "Turgut Özal Caddesi hattında yer aldığı için yaz akşamlarında rezervasyonsuz oturmak zor olabiliyor ve servis süresi yoğunluğa göre uzayabiliyor.",
+        "transit": "Skopea Marina karşısındaki Turgut Özal Caddesi No:13/A üzerinde."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Göcek Ocakbaşı Resmi Sitesi",
+          "url": "http://www.gocekocakbasi.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Kebap, ocakbaşı etleri ve odun fırını pide-lahmacun tanıtımı"
+        },
+        {
+          "title": "Restoranim — Göcek Ocakbaşı",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Pide, lahmacun ve kebap çeşitleri geri bildirimleri"
+        },
+        {
+          "title": "BiteCritic — Göcek Ocakbaşı",
+          "url": "https://bitecritic.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Adana kebap, kuru cacık, acılı ezme ve mütebbel değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps — Göcek Ocakbaşı",
+          "url": "https://maps.google.com/?cid=9314702446109035030",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        }
+      ],
+      "pros": [
+        "Balık dışında güçlü ocakbaşı ve taş fırın lahmacun seçeneği",
+        "Zengin başlangıç mezeleri"
+      ],
+      "cons": [
+        "Turistik belde ortalamasında yüksek et fiyatları"
+      ],
+      "uncertainties": [
+        "Kış sezonunda haftalık çalışma günleri değişiklik gösterebiliyor."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gocek-caesar-et-lounge",
+      "categoryId": "denemelisin",
+      "resolvedName": "Caesar-Et Lounge",
+      "branchName": "Göcek, Çarşı Yolu Cd. No:14/A, 48310 Fethiye/Muğla",
+      "placeId": "ChIJcT9U51BlwBQRs0yUvG2fR8c",
+      "coordinates": {
+        "lat": 36.7539637,
+        "lng": 28.942370199999996
+      },
+      "rating": 4.5,
+      "userRatingCount": 378,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14359621230558203059",
+      "recommendedPrimary": [
+        "Dry-Aged Antrikot",
+        "Dana Bonfile Lokum",
+        "Şefin Özel Kesim Steak"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Şarap Kavı Eşleşmeleri & İmza Kokteyller",
+          "note": "Steak seçkisinin yanında kavdan seçilen yerli-yabancı şaraplar ve bar ekibinin hazırladığı klasik kokteyller sık tercih ediliyor.",
+          "proof": "caesar-etlounge.com resmi sitesi ve FineDine dijital menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Çarşı Yolu üzerinde şık şarap kavı dekorlu iç salon ve cadde terası",
+        "crowdAndNoise": "Akşam yemeğinde kırmızı et odaklı çiftler ve yat misafirleriyle hareketli",
+        "disadvantage": "Dry-aged et ve özel şarap kavı odağı nedeniyle bütçe seviyesi Göcek ortalamasının da üzerinde seyrediyor.",
+        "transit": "Çarşı Yolu Caddesi No:14/A üzerinde merkezi yürüme hattında."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Caesar-Et Lounge Resmi Sitesi",
+          "url": "https://caesar-etlounge.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Dry-aged dinlendirme dolapları, açık ateş ve şarap kavı detayları"
+        },
+        {
+          "title": "Restaurant Guru — Caesar-Et Lounge Göcek",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Antrikot, lokum, dana kaburga ve servis kalitesi değerlendirmeleri"
+        },
+        {
+          "title": "Yandex Haritalar — Caesar-Et Lounge",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Steakhouse pişirim dengesi ve merkezi konum notları"
+        },
+        {
+          "title": "Google Maps — Caesar-Et Lounge",
+          "url": "https://maps.google.com/?cid=10108174159546273971",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        }
+      ],
+      "pros": [
+        "Doğru dinlendirilmiş nitelikli et kesimleri",
+        "Zengin şarap kavı ve kokteyl barı"
+      ],
+      "cons": [
+        "Yüksek bütçe seviyesi"
+      ],
+      "uncertainties": [
+        "Sezon dışı dönemlerde dry-aged kesim stoğu günlere göre değişebiliyor."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gocek-lokantasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Göcek Lokantası",
+      "branchName": "Göcek, iskele meydanı no:5/a, 48300 Fethiye/Muğla",
+      "placeId": "ChIJQ80ZXKdlwBQRhwhqgCl83Ho",
+      "coordinates": {
+        "lat": 36.75252,
+        "lng": 28.942763900000003
+      },
+      "rating": 4.6,
+      "userRatingCount": 142,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8853087485193488519",
+      "recommendedPrimary": [
+        "Günün Tencere & Sulu Yemeği",
+        "Ege Zeytinyağlıları",
+        "Kuru Fasulye & Pilav"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yöresel Sabah Kahvaltısı & Ev Çorbaları",
+          "note": "Öğle tencere servisine ek olarak sabah saatlerinde taze ürünlerle hazırlanan kahvaltı tabağı ve sıcak ev çorbaları sunuluyor.",
+          "proof": "Ada Yacht Sailing Göcek rehberi ve Maptons değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "İskele Meydanı üzerinde sade esnaf lokantası salonu ve birkaç dış masa",
+        "crowdAndNoise": "Öğle saatlerinde bölge esnafı, marina çalışanları ve ev yemeği arayan tatilcilerle yoğun",
+        "disadvantage": "Günlük çıkan tencere yemekleri öğleden sonra erken tükenebiliyor; sade esnaf lokantası düzeni akşam şık yemek beklentisi için uygun değil.",
+        "transit": "Göcek İskele Meydanı No:5/A adresinde belediye marinası tam karşısında."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Ada Yacht Sailing — Göcek Yerel Lezzetler",
+          "url": "https://adayachtsailing.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İskele Meydanı ev yemekleri, zeytinyağlılar ve sabah kahvaltısı tanıtımı"
+        },
+        {
+          "title": "Maptons — Göcek Lokantası",
+          "url": "https://maptons.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ekonomik ev usulü yemekler ve esnaf lokantası deneyimi notları"
+        },
+        {
+          "title": "Harbi Yiyorum — Göcek Lokanta Rehberi",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Göcek marinalar hattında geleneksel esnaf lokantası bağlamı"
+        },
+        {
+          "title": "Google Maps — Göcek Lokantası",
+          "url": "https://maps.google.com/?cid=8851399817096038535",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        }
+      ],
+      "pros": [
+        "Göcek merkezde ev yapımı sulu yemek ve zeytinyağlı bulmak için nadir adreslerden biri",
+        "Bölgeye kıyasla çok makul bütçe seviyesi"
+      ],
+      "cons": [
+        "Öğleden sonra çeşitlerin azalması",
+        "Sade esnaf lokantası oturma düzeni"
+      ],
+      "uncertainties": [
+        "Günlük çıkan yemek listesi mevsim sebzelerine göre her gün değişiyor."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gocek-doner",
+      "categoryId": "denemelisin",
+      "resolvedName": "Göcek Döner",
+      "branchName": "Göcek, iskele meydanı no:6/D, 48310 Fethiye/Muğla",
+      "placeId": "ChIJB6w9GC1lwBQR3SRHAYB53og",
+      "coordinates": {
+        "lat": 36.7524212,
+        "lng": 28.9424741
+      },
+      "rating": 4.7,
+      "userRatingCount": 823,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://qrmenu.optimuspos.com/?u=8E1E5",
+      "mapsUri": "https://maps.google.com/?cid=9862453824672179421",
+      "recommendedPrimary": [
+        "Hatay Usulü Tavuk Shawarma Dürüm",
+        "XL Tombik Ekmek Döner",
+        "Zurna & Cheddarlı Döner"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Pilav Üstü Tavuk Döner & Ev Yapımı Sarımsaklı Mayonez",
+          "note": "Dürüm dışındaki öğünlerde pilav üstü porsiyon döner ile her siparişe lezzet katan ev yapımı sarımsaklı mayonez öne çıkıyor.",
+          "proof": "gocekdoner.com resmi menüsü ve Yemeksepeti değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "İskele Meydanı köşesinde pratik sokak masaları ve hızlı al-götür tezgahı",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde hızlı ve doyurucu yemek arayan tatilcilerle sürekli kalabalık",
+        "disadvantage": "Ayaküstü hızlı servis mantığıyla çalıştığından uzun oturmalı yemekler için uygun değil; öğle pik saatlerinde sıra oluşabiliyor.",
+        "transit": "İskele Meydanı No:6/D adresinde sahil kordonunun hemen girişinde."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Göcek Döner Resmi Web Sitesi",
+          "url": "https://gocekdoner.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Hatay usulü shawarma, gramajlı tombik döner ve ev yapımı mayonez detayı"
+        },
+        {
+          "title": "Yemeksepeti — Göcek Döner",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "XL tombik, zurna dürüm ve yüksek müşteri memnuniyet puanları"
+        },
+        {
+          "title": "Restoranim — Göcek Döner",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hızlı servis ve sos dengesi geri bildirimleri"
+        },
+        {
+          "title": "Google Maps — Göcek Döner",
+          "url": "https://maps.google.com/?cid=9862453824672179421",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve yüksek değerlendirme hacmi"
+        }
+      ],
+      "pros": [
+        "Taze Hatay sosu ve ev yapımı sarımsaklı mayonezle fark yaratması",
+        "İskele Meydanı başında pratik ve ulaşılabilir öğün"
+      ],
+      "cons": [
+        "Küçük dükkan çevresinde yoğun saatlerde bekleme sırası"
+      ],
+      "uncertainties": [
+        "Yoğun paket servis trafiği özellikle akşam erken saatlerde dükkan önü beklemesini uzatabiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gocek-tavuk",
+      "categoryId": "denemelisin",
+      "resolvedName": "Göcek Tavuk",
+      "branchName": "Göcek, Uzman Kaptan Sk. No: 3/1, 48300 Fethiye/Muğla",
+      "placeId": "ChIJj67DlXdlwBQRGr5vXJkr2kQ",
+      "coordinates": {
+        "lat": 36.75530990000001,
+        "lng": 28.941022
+      },
+      "rating": 4.8,
+      "userRatingCount": 173,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://gocektavuk.com/",
+      "mapsUri": "https://maps.google.com/?cid=4961325877182840346",
+      "recommendedPrimary": [
+        "Közde Çıtır Yarım Tavuk",
+        "Izgara Kanat & Tavuk Şiş",
+        "Cajun Tenders"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Pilav Üstü Köz Tavuk & Özel Soslu Dürümler",
+          "note": "Köz tavuk porsiyonlarının yanında pilav üstü seçenekler ve pratik dürümler öğle-akşam arası sıkça tercih ediliyor.",
+          "proof": "gocektavuk.com dijital menüsü ve Restaurant Guru kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Uzman Kaptan Sokak üzerinde sade masalar ve al-götür servis düzeni",
+        "crowdAndNoise": "Öğle arası yerel çalışanlar ve akşamları eve/tekneye paket yaptıran misafirlerle hareketli",
+        "disadvantage": "Kıyı hattının bir arka sokağında yer aldığı için deniz atmosferi sunmaz; yoğun saatlerde köz tavuk partisinin çıkmasını beklemek gerekebiliyor.",
+        "transit": "Çarşı merkezinin hemen arkasındaki Uzman Kaptan Sokak No:3/1 üzerinde."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Göcek Tavuk Resmi Menüsü",
+          "url": "https://gocektavuk.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Közde tavuk, ızgara kanat, tavuk şiş ve cajun tenders kataloğu"
+        },
+        {
+          "title": "Restaurant Guru — Göcek Tavuk",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Köz pişirimi ve tavuk çeşitleri değerlendirmeleri"
+        },
+        {
+          "title": "Yandex Haritalar — Göcek Tavuk",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Uzman Kaptan Sokak köz tavuk lezzeti ve temiz servis notları"
+        },
+        {
+          "title": "Google Maps — Göcek Tavuk",
+          "url": "https://maps.google.com/?cid=4961325877182840346",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        }
+      ],
+      "pros": [
+        "Gerçek köz ateşinde pişen sulu tavuk seçenekleri",
+        "Bütçe dostu doyurucu porsiyonlar"
+      ],
+      "cons": [
+        "Sade dükkan ortamı",
+        "Akşam yoğunluğunda köz partisi bekleme ihtimali"
+      ],
+      "uncertainties": [
+        "Kış döneminde geç akşam servis saatleri daralabiliyor."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gocek-kumrucu-ozan",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kumrucu Ozan",
+      "branchName": "Göcek, İskele Meydanı No:6/B, 48310 Fethiye/Muğla",
+      "placeId": "ChIJI1sO8_llwBQRFKMQPpeSwVg",
+      "coordinates": {
+        "lat": 36.7524794,
+        "lng": 28.9425435
+      },
+      "rating": 4.7,
+      "userRatingCount": 418,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6395554124121809684",
+      "recommendedPrimary": [
+        "İzmir Kumru Sandviç",
+        "Ayvalık Tostu",
+        "Ev Yapımı Limonata"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Köfte Ekmek & Çıtır Patates Sepeti",
+          "note": "Kumru ve tost dışında hızlı bir sıcak öğün arayanlar için ızgara köfte ekmek ve çıtır patates eşliği sunuluyor.",
+          "proof": "Göcek Rehberi tanıtımı ve Yandex Haritalar değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "İskele Meydanı kenarında hızlı atıştırmalık tabureleri ve al-götür penceresi",
+        "crowdAndNoise": "Tekne dönüşü ve akşamüstü atıştırmalık saatlerinde pratik ama hızlı devir",
+        "disadvantage": "Ayaküstü büfe konseptinde hizmet verdiğinden uzun süreli masa oturumu için elverişli değildir.",
+        "transit": "İskele Meydanı No:6/B adresinde Göcek Döner bitişiğinde."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Göcek Rehberi — Kumrucu Ozan",
+          "url": "https://gocekrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Belediye marina karşısında yerel İzmir kumrusu ve hızlı atıştırmalık durağı"
+        },
+        {
+          "title": "Yandex Haritalar — Kumrucu Ozan Göcek",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kumru ekmeği, Ayvalık tostu ve ev yapımı limonata geri bildirimleri"
+        },
+        {
+          "title": "Google Maps — Kumrucu Ozan",
+          "url": "https://maps.google.com/?cid=6395554124121809684",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve yüksek değerlendirme hacmi"
+        }
+      ],
+      "pros": [
+        "Tekne öncesi veya sonrası dakikalar içinde sıcak kumru ve limonata",
+        "Merkezi iskele noktası"
+      ],
+      "cons": [
+        "Kısıtlı oturma alanı",
+        "Ayaküstü sokak trafiği"
+      ],
+      "uncertainties": [
+        "Sezon dışında akşam kapanış saatleri erken çekilebiliyor."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gocek-pabechi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Pabechi Göcek",
+      "branchName": "Göcek, Turgut Özal Cd. No:20/A, 48310 Fethiye/Muğla",
+      "placeId": "ChIJL3t--c9lwBQRjuj7UAm4Ft8",
+      "coordinates": {
+        "lat": 36.756291999999995,
+        "lng": 28.938336399999997
+      },
+      "rating": 5,
+      "userRatingCount": 113,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/pabechigocek/",
+      "mapsUri": "https://maps.google.com/?cid=16075238270098466958",
+      "recommendedPrimary": [
+        "Çıtır Tavuk Atıştırmalık Tabağı",
+        "Fıçı Bira Seçkisi",
+        "Bar Atıştırmalıkları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kızarmış Tavuk Günleri & Bilardo Eşliği",
+          "note": "Belirli günlerde hazırlanan özel kızarmış tavuk tabakları ve mekandaki bilardo alanı müdavimlerin buluşma ritüelini oluşturuyor.",
+          "proof": "Restoranim ve Restaurant Guru Pabechi Göcek değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Turgut Özal Caddesi üzerinde ferah açık hava masaları ve bilardolu iç pub salonu",
+        "crowdAndNoise": "Akşamüstü ve gece geç saatlere kadar yerel müdavimler, tekne kaptanları ve samimi gruplarla canlı",
+        "disadvantage": "Sabah veya öğle saatlerinde hizmet vermiyor; yalnızca akşamüstü saatlerinden geceye kadar bir pub-bar düzeninde çalışıyor.",
+        "transit": "Turgut Özal Caddesi No:20/A üzerinde marinalar hattında yürüyerek iki dakika."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Restoranim — Pabechi Göcek",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Fıçı bira, çıtır tavuk, uygun fiyat dengesi ve samimi işletmeci profili"
+        },
+        {
+          "title": "Restaurant Guru — PABECHI Göcek",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Pub atmosferi ve yüksek misafir memnuniyeti notları"
+        },
+        {
+          "title": "Yandex Haritalar — PABECHI Göcek",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bilardo, maç yayını ve açık hava alanı değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps — PABECHI",
+          "url": "https://maps.google.com/?cid=16147261332888209550",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        }
+      ],
+      "pros": [
+        "Göcek merkezdeki yüksek fiyatlı marinalara göre çok dengeli bütçe",
+        "Samimi müdavim pub atmosferi"
+      ],
+      "cons": [
+        "Gündüz kahve veya öğle yemeği için açık değil",
+        "Maç yayınlarında ses düzeyi artabiliyor"
+      ],
+      "uncertainties": [
+        "Mutfak atıştırmalık çeşitleri günlere göre sınırlı tutulabiliyor."
+      ],
+      "selectionScore": 96,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gocek-sahiden-dondurma",
+      "categoryId": "denemelisin",
+      "resolvedName": "Sahiden Dondurma Göcek",
+      "branchName": "Göcek, Süleymanağa Cd. No4 D:F, 48310 Fethiye/Muğla",
+      "placeId": "ChIJpYJfXS1lwBQRbjr_1ZWBpXw",
+      "coordinates": {
+        "lat": 36.7534732,
+        "lng": 28.942989999999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 169,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8981727512400706158",
+      "recommendedPrimary": [
+        "Keçi Sütlü Sade Dondurma",
+        "Antep Fıstıklı Dondurma",
+        "Mevsim Meyveli Sorbeler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Külah & Kase Eşlikli Soğuk Kahve Molası",
+          "note": "Günlük çıkan taze dondurma çeşitlerinin yanında yaz akşamüstü yürüyüşlerinde tercih edilen kahve ve serinletici içecek alternatifleri sunuluyor.",
+          "proof": "Yandex Haritalar ve yerel Göcek dondurma rehberi kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Süleymanağa Caddesi üzerinde küçük dükkan önü oturumu ve hızlı al-götür tezgahı",
+        "crowdAndNoise": "Öğleden sonra ve akşamüstü yürüyüş saatlerinde kısa dondurma sırası oluşabiliyor",
+        "disadvantage": "Butik bir dondurma tezgahı olduğundan uzun süreli masa oturumu ve gece geç saat servisi sunmuyor.",
+        "transit": "Çarşı merkezine paralel Süleymanağa Caddesi No:4 üzerinde."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Yandex Haritalar — Sahiden Dondurma Göcek",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "El yapımı dondurma çeşitleri ve Süleymanağa Cd. yüksek puan değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps — Sahiden Dondurma/Göcek",
+          "url": "https://maps.google.com/?cid=8978008867013622638",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        }
+      ],
+      "pros": [
+        "Katkısız, günlük hazırlanan yoğun lezzetli artizan dondurma",
+        "Göcek sıcağında merkezi ve ferah mola"
+      ],
+      "cons": [
+        "Akşam geç saatlerde erken kapanabiliyor",
+        "Kısıtlı oturma alanı"
+      ],
+      "uncertainties": [
+        "Sezon dışında pazar günleri kapalı olabiliyor ve günlük çeşit sayısı azalıyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gocek-ege-balik",
+      "categoryId": "balik",
+      "resolvedName": "Göcek Ege Balık",
+      "branchName": "Göcek, Çarşı Yolu Cd. No: 57, 48310 Fethiye/Muğla",
+      "placeId": "ChIJpzc3ovBlwBQRgx3c_8Lyzbs",
+      "coordinates": {
+        "lat": 36.754923999999995,
+        "lng": 28.9402602
+      },
+      "rating": 4.6,
+      "userRatingCount": 1029,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13532739374648401283",
+      "recommendedPrimary": [
+        "Günlük Taze Deniz Balıkları",
+        "Izgara Ahtapot & Kalamar",
+        "Ege Otlu Mezeler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "T-Bone & Dallas Steak Seçenekleri",
+          "note": "Balık ve deniz ürünü odaklı bir sofrada et tercih eden misafirler için menüde özel kesim steak çeşitleri de bulunuyor.",
+          "proof": "gocekalaturka.com ve Wanderlog Göcek Ege Balık değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sahil hattına bakan geniş açık hava masaları ve kapalı restoran salonu",
+        "crowdAndNoise": "Akşam yemeklerinde kalabalık gruplar, romantik çiftler ve turist kafileleriyle yoğun",
+        "disadvantage": "Göcek merkezdeki yüksek hacimli popüler sahil restoranlarından biri olduğundan fiyat seviyesi yüksek segmentte ve akşam rezervasyon şart.",
+        "transit": "Çarşı Yolu Caddesi No:57 üzerinde, marinalar gezinti hattında."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Göcek Alaturka Ege Balıkçısı Resmi Sitesi",
+          "url": "https://gocekalaturka.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Günlük taze balıklar, Ege mezeleri ve konum bilgisi"
+        },
+        {
+          "title": "Wanderlog — Göcek Ege Balık",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çarşı Yolu balıkçı deneyimi ve meze geri bildirimleri"
+        },
+        {
+          "title": "Ada Yacht Sailing — Göcek Balıkçıları",
+          "url": "https://adayachtsailing.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taze deniz ürünleri, zeytinyağlılar ve akşam sofrası önerisi"
+        },
+        {
+          "title": "Google Maps — Göcek Ege Balık",
+          "url": "https://maps.google.com/?cid=13532678791848041859",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve yüksek değerlendirme hacmi"
+        }
+      ],
+      "pros": [
+        "Hem deniz ürünleri hem et alternatiflerini aynı sofrada çözebilmesi",
+        "Merkezi sahil yürüyüş aksında konum"
+      ],
+      "cons": [
+        "Yüksek bütçe seviyesi",
+        "Yoğun yaz akşamlarında yüksek masa yoğunluğu"
+      ],
+      "uncertainties": [
+        "Bazı dönemlerde Türk sanat müziği dinletisi nedeniyle müzikli akşamlar olabiliyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gocek-can-restaurant",
+      "categoryId": "balik",
+      "resolvedName": "Can Restaurant",
+      "branchName": "Cumhuriyet Mah, Skopea Marina, Cumhuriyet, 48310 Fethiye/Muğla",
+      "placeId": "ChIJ58868vBlwBQRMIO4VK4Ednw",
+      "coordinates": {
+        "lat": 36.7552297,
+        "lng": 28.9391937
+      },
+      "rating": 4.4,
+      "userRatingCount": 731,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8968360854747120432",
+      "recommendedPrimary": [
+        "Tuzda Balık",
+        "Günlük Lagos, Çipura & Barbun",
+        "Girit Ezmesi & Deniz Börülcesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kalamar Dolma & Ev Yapımı Ekmek Eşliği",
+          "note": "Ana balık öncesi fırından çıkan ev yapımı ekmeklerle servis edilen karides güveç ve kalamar dolma müdavimlerin vazgeçilmezleri arasında.",
+          "proof": "Göcek Online ve The Turquoise Collection Göcek seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Skopea Marina su kıyısında gölgeli sahil terası ve rıhtım kenarı masalar",
+        "crowdAndNoise": "Öğle tekne molaları ve akşam rakı-balık sofralarında müdavim ağırlıklı",
+        "disadvantage": "Denize sıfır konumu nedeniyle su kenarı masalar günler öncesinden dolabiliyor; tezgahtan seçilen büyük balıklarda hesap hızla yükselebiliyor.",
+        "transit": "Skopea Marina içinde sahil yürüyüş yolu üzerinde."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Göcek Online — Can Restaurant Skopea Marina",
+          "url": "https://gocekonline.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Köklü klasik Ege balıkçısı, Girit ezmesi, deniz börülcesi ve karides güveç"
+        },
+        {
+          "title": "The Turquoise Collection — Can Restaurant",
+          "url": "https://www.theturquoisecollection.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tuzda balık spesiyali ve marina kenarı teras önerisi"
+        },
+        {
+          "title": "My-Sea — Can Restaurant Göcek",
+          "url": "https://www.my-sea.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Aile işletmesi istikrarı ve günlük ev yapımı ekmek değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps — Can Restaurant",
+          "url": "https://maps.google.com/?cid=8896873129775432496",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve köklü ziyaretçi kaydı"
+        }
+      ],
+      "pros": [
+        "Gerçek deniz kıyısında klasik tezgah balığı deneyimi",
+        "Göcek tarihindeki en istikrarlı balıkçılardan biri"
+      ],
+      "cons": [
+        "Yüksek bütçe seviyesi",
+        "Ön sıra deniz kenarı masalar için erken rezervasyon şartı"
+      ],
+      "uncertainties": [
+        "Mevsimsel av yasağı ve hava durumuna göre tezgahtaki günlük balık türleri değişebiliyor."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gocek-joy-restaurant",
+      "categoryId": "balik",
+      "resolvedName": "Joy Restaurant and Lounge Bar",
+      "branchName": "Göcek mahallesi Camtaş caddesi No:12 D-Marin, Göcek, 48310 Fethiye/Muğla",
+      "placeId": "ChIJuSpeVH1lwBQR1wkyuOcJc4I",
+      "coordinates": {
+        "lat": 36.7489122,
+        "lng": 28.9449387
+      },
+      "rating": 4.6,
+      "userRatingCount": 299,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9399867738084739543",
+      "recommendedPrimary": [
+        "Izgara Ahtapot",
+        "Tereyağlı Karides",
+        "Deniz Levreği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zeytinyağlı Başlangıçlar & Kokteyl Eşleşmeleri",
+          "note": "Deniz mahsulleri tabaklarının yanında soğuk zeytinyağlı mezeler ve yemek sonrası bar menüsünden klasik kokteyller tercih ediliyor.",
+          "proof": "joyrestoran.com menüsü ve Restaurant Guru D-Marin değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "D-Marin içinde marina manzaralı açık veranda ve şık lounge oturumu",
+        "crowdAndNoise": "Tekne sahipleri ve D-Marin çevresindeki akşam misafirleriyle dengeli hareketlilik",
+        "disadvantage": "D-Marin yerleşkesi içinde yer aldığı için çarşı merkezine kıyasla yürüyüş mesafesi uzuyor ve turistik marina fiyatlandırması uygulanıyor.",
+        "transit": "Camtaş Caddesi No:12 D-Marin Göcek yerleşkesi içinde."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Joy Restaurant Resmi Menüsü",
+          "url": "https://joyrestoran.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Deniz mahsulleri, Akdeniz yemekleri ve kokteyl bar menüsü"
+        },
+        {
+          "title": "Restaurant Guru — Joy Restaurant and Lounge Bar",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Izgara ahtapot, deniz levreği ve D-Marin servisi notları"
+        },
+        {
+          "title": "Yandex Haritalar — Joy Restaurant Göcek",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tereyağlı karides, taze balıklar ve marina atmosferi geri bildirimleri"
+        },
+        {
+          "title": "Google Maps — Joy Restaurant and Lounge Bar",
+          "url": "https://maps.google.com/?cid=9399907139724053207",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Canlı konum ve operasyonel kayıt"
+        }
+      ],
+      "pros": [
+        "D-Marin tarafında deniz ürünü ve kokteyli bir arada sunan nitelikli durak",
+        "Ferah veranda ortamı"
+      ],
+      "cons": [
+        "Çarşı merkezine yürüyüş mesafesi",
+        "Marina içi yüksek fiyat seviyesi"
+      ],
+      "uncertainties": [
+        "Sezon dışında marina içindeki diğer noktalara paralel çalışma saatleri daralabiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    }
+  ]
+}

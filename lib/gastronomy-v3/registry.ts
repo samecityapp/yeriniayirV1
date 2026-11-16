@@ -36,6 +36,8 @@ import antalyaAlanyaMerkezSnapshotJson from './regions/antalya-alanya-merkez.jso
 import antalyaSideSnapshotJson from './regions/antalya-side.json';
 import antalyaKemerSnapshotJson from './regions/antalya-kemer.json';
 import muglaUlaAkyakaSnapshotJson from './regions/mugla-ula-akyaka.json';
+import muglaFethiyeYaniklarSnapshotJson from './regions/mugla-fethiye-yaniklar.json';
+import muglaFethiyeGocekSnapshotJson from './regions/mugla-fethiye-gocek.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -77,6 +79,8 @@ const ANTALYA_ALANYA_MERKEZ_SNAPSHOT = antalyaAlanyaMerkezSnapshotJson as V3Veri
 const ANTALYA_SIDE_SNAPSHOT = antalyaSideSnapshotJson as V3VerifiedRegionSnapshot;
 const ANTALYA_KEMER_SNAPSHOT = antalyaKemerSnapshotJson as V3VerifiedRegionSnapshot;
 const AKYAKA_SNAPSHOT = muglaUlaAkyakaSnapshotJson as V3VerifiedRegionSnapshot;
+const MUGLA_FETHIYE_YANIKLAR_SNAPSHOT = muglaFethiyeYaniklarSnapshotJson as V3VerifiedRegionSnapshot;
+const MUGLA_FETHIYE_GOCEK_SNAPSHOT = muglaFethiyeGocekSnapshotJson as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -117,6 +121,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   ANTALYA_SIDE_SNAPSHOT,
   ANTALYA_KEMER_SNAPSHOT,
   AKYAKA_SNAPSHOT,
+  MUGLA_FETHIYE_YANIKLAR_SNAPSHOT,
+  MUGLA_FETHIYE_GOCEK_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -359,6 +365,25 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'mugla-ula-akyaka': AKYAKA_SNAPSHOT,
   gokova: AKYAKA_SNAPSHOT,
   akcapinar: AKYAKA_SNAPSHOT,
+  yaniklar: MUGLA_FETHIYE_YANIKLAR_SNAPSHOT,
+  'mugla-fethiye-yaniklar': MUGLA_FETHIYE_YANIKLAR_SNAPSHOT,
+  'yaniklar-fethiye-mugla': MUGLA_FETHIYE_YANIKLAR_SNAPSHOT,
+  'yaniklar-fethiye': MUGLA_FETHIYE_YANIKLAR_SNAPSHOT,
+  'fethiye-yaniklar': MUGLA_FETHIYE_YANIKLAR_SNAPSHOT,
+  karaot: MUGLA_FETHIYE_YANIKLAR_SNAPSHOT,
+  'karaot-plaji': MUGLA_FETHIYE_YANIKLAR_SNAPSHOT,
+  katranci: MUGLA_FETHIYE_YANIKLAR_SNAPSHOT,
+  'katranci-koyu': MUGLA_FETHIYE_YANIKLAR_SNAPSHOT,
+  'akgol-yaniklar': MUGLA_FETHIYE_YANIKLAR_SNAPSHOT,
+  gocek: MUGLA_FETHIYE_GOCEK_SNAPSHOT,
+  'mugla-fethiye-gocek': MUGLA_FETHIYE_GOCEK_SNAPSHOT,
+  'gocek-fethiye-mugla': MUGLA_FETHIYE_GOCEK_SNAPSHOT,
+  'gocek-fethiye': MUGLA_FETHIYE_GOCEK_SNAPSHOT,
+  'fethiye-gocek': MUGLA_FETHIYE_GOCEK_SNAPSHOT,
+  'gocek-merkez': MUGLA_FETHIYE_GOCEK_SNAPSHOT,
+  'gocek-carsi': MUGLA_FETHIYE_GOCEK_SNAPSHOT,
+  'gocek-marina': MUGLA_FETHIYE_GOCEK_SNAPSHOT,
+  'd-marin-gocek': MUGLA_FETHIYE_GOCEK_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {
