@@ -1,0 +1,791 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "ankara-cankaya-cukurambar",
+  "displayName": "Çukurambar, Çankaya, Ankara",
+  "verifiedAt": "2026-11-17T19:29:43.690Z",
+  "selectedCount": 10,
+  "rejectedControls": [
+    {
+      "id": "ctrl-cukurambar-davidpeople-chain",
+      "resolvedName": "David People Cubes",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cukurambar-mamasburger-chain",
+      "resolvedName": "Mama's Burger Çukurambar",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cukurambar-coffeedemadrid-chain",
+      "resolvedName": "Coffee de Madrid Cubes",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cukurambar-farmburger-chain",
+      "resolvedName": "Farm Burger",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cukurambar-moltobene-chain",
+      "resolvedName": "Moltobene Çukurambar 1071",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cukurambar-moccabi-chain",
+      "resolvedName": "Moccabi Çukurambar 1071",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cukurambar-tuzdanbalik-chain",
+      "resolvedName": "Tuzdan Balık Ankara",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cukurambar-misbasak-chain",
+      "resolvedName": "Misbaşak Çukurambar",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cukurambar-bindiyar-chain",
+      "resolvedName": "Bindiyar Unlu Mamüller ve Kahvaltı",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cukurambar-bayramusta-chain",
+      "resolvedName": "Bayram Usta Yaprak Kebap Çukurambar",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cukurambar-aspava-chain",
+      "resolvedName": "Meşhur Özçelik Aspava Çukurambar",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cukurambar-loya-noncoffee",
+      "resolvedName": "Loya Çikolata,Nişan çikolatası,Bebek çikolatası, Waffle, Exclusive Chocolate",
+      "reason": "kahve_category_not_coffee_specialist:chocolate_shop"
+    },
+    {
+      "id": "ctrl-cukurambar-out-balgat-mantiyiyelim",
+      "resolvedName": "Mantı Yiyelim",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Çukurambar/Cukurambar/Kızılırmak/Kizilirmak, adres: Balgat, 1410. Sk. 12/A, 06520 Çankaya/Ankara)"
+    },
+    {
+      "id": "ctrl-cukurambar-out-oguzlar-ulucay",
+      "resolvedName": "Uluçay Tantuni Balgat Şubesi",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Çukurambar/Cukurambar/Kızılırmak/Kizilirmak, adres: Oğuzlar, 1377. Sk. No:14/A, 06520 Çankaya/Ankara)"
+    },
+    {
+      "id": "ctrl-cukurambar-out-iscibloklari-dipizza",
+      "resolvedName": "italian Di'Pizza Express - 100. Yıl",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cukurambar-low-todo",
+      "resolvedName": "TODO Croissant & Coffee Çukurambar",
+      "reason": "below_quality_threshold:★3.9(545)"
+    },
+    {
+      "id": "ctrl-cukurambar-vol-filotto",
+      "resolvedName": "FİLOTTO",
+      "reason": "over_commercialized_tourist_volume:★4.4(6520)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "cukurambar-vinozza-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "Vinozza Pizza & Sandwich",
+      "branchName": "Muhsin Yazıcıoğlu Caddesi 1480. Sokak No: 2B/5 Besa Kule, Çukurambar, 06510 Çankaya/Ankara",
+      "placeId": "ChIJwTCz8HdJ0xQRSucpMgEAuSI",
+      "coordinates": {
+        "lat": 39.9093309,
+        "lng": 32.8040131
+      },
+      "rating": 4.4,
+      "userRatingCount": 339,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2502031073117595466",
+      "recommendedPrimary": [
+        "Roastbeef / Bresaola Gurme Pizza",
+        "İtalyan Şarküterili Sandviçler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Gurme Şarküterili İtalyan Sandviçler",
+          "note": "İnce hamurlu pizzalar yanında iş merkezi temposuna uygun taze şarküteri sandviçleri de tercih edilir.",
+          "proof": "Şehir rehberleri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Besa Kule plaza dokusunda düzenli, temiz ve öğle-akşam servisli modern salon",
+        "crowdAndNoise": "Zincir pizza markaları dışında malzemesi özenli gurme pizza arayan iş ve mahalle sakinleri",
+        "disadvantage": "Plaza kompleksinde yer aldığı için akşam geç saatlerde mahalle sokağı meyhanesi ambiyansı vermez",
+        "transit": "Çukurambar Mahallesi Muhsin Yazıcıoğlu Cd. 1480. Sokak No:2B/5 Besa Kule."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Ankara Life Dergisi Vinozza",
+          "url": "https://ankaralifedergisi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Besa Kule konumu, malzeme kalitesi ve gurme İtalyan pizza değerlendirmesi"
+        },
+        {
+          "title": "Menu-TR Vinozza Pizza",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Roastbeef, bresaola pizza ve sandviç menüsü doğrulaması"
+        }
+      ],
+      "pros": [
+        "Çukurambar plaza hattında yüksek malzeme kalitesini koruyan nadir bağımsız pizzacı",
+        "Roastbeef ve bresaola gibi özenli üst malzemeler"
+      ],
+      "cons": [
+        "Plaza katı konumu nedeniyle geleneksel mahalle sokak dokusu sunmuyor"
+      ],
+      "uncertainties": [
+        "Hafta içi öğle iş yoğunluğunda paket ve masa servisi yavaşlayabilir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cukurambar-smokey-bbq-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Smokey BBQ&Burger",
+      "branchName": "CUBES ANKARA ÇUKURAMBAR MAH. 1424 CAD. NO: 6, Çukurambar, 1 İÇ KAPI NO: 401, 06510 Çankaya/Ankara",
+      "placeId": "ChIJz8b6UABJ0xQRrmwxJ7dFnU0",
+      "coordinates": {
+        "lat": 39.905775,
+        "lng": 32.803305
+      },
+      "rating": 4.7,
+      "userRatingCount": 178,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5592702965202906286",
+      "recommendedPrimary": [
+        "Smoked Brisket Burger",
+        "Trüflü Burger & Çıtır Patates"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ağır Ateşte Tütsülenmiş Brisket Seçkisi",
+          "note": "Klasik smash veya fast-food köfte dışında tütsülenmiş dana brisket eklentileriyle belirgin lezzet farkı oluşturur.",
+          "proof": "Restoran incelemeleri ve yerel menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Cubes Ankara içinde samimi ve modern Amerikan BBQ diner düzeni",
+        "crowdAndNoise": "Tütsülenmiş etli, tok ve doyurucu burger arayan Çukurambar ziyaretçileri",
+        "disadvantage": "Bütçe seviyesi standart fast-food burgerlerden yukarıdadır; yoğun akşamda porsiyon süresi uzayabilir",
+        "transit": "Çukurambar Mahallesi 1424. Cadde Cubes Ankara No:6 İç Kapı:401."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Restoranim Smokey BBQ & Burger",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Smoked Brisket, trüflü burger, doyurucu porsiyon ve samimi atmosfer değerlendirmesi"
+        },
+        {
+          "title": "Menu-TR Smokey BBQ",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Cubes Ankara 1424. Cd. adresi ve Amerikan barbekü menü detayları"
+        }
+      ],
+      "pros": [
+        "Tütsülenmiş brisket ve et kalitesiyle bölgedeki klasik fast-food zincirlerinden ayrışması",
+        "Doyurucu porsiyonlar"
+      ],
+      "cons": [
+        "Dumanlı ve yoğun BBQ soslu profil hafif burger arayanlara ağır gelebilir"
+      ],
+      "uncertainties": [
+        "Tütsülenmiş et stokları yoğun akşamlarda gün sonunda azalabilir"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cukurambar-hood-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Hood Coffee&BowL&Board Games",
+      "branchName": "Çukurambar, 1476. Sk. no:4, 06510 Çankaya/Ankara",
+      "placeId": "ChIJK_Fo8W1J0xQRXrbUIB1gAo4",
+      "coordinates": {
+        "lat": 39.907303999999996,
+        "lng": 32.8031538
+      },
+      "rating": 4.9,
+      "userRatingCount": 87,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10232846981560317534",
+      "recommendedPrimary": [
+        "Filtre / Espresso Bazlı Kahveler",
+        "Taze Tatlılar & Sağlıklı Bowl"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çalışma Düzeni & Kutu Oyunu Akşamları",
+          "note": "Gündüz saatlerinde ders ve iş odaklanmasına uygun olan ferah masalar akşam arkadaş gruplarının kutu oyunu buluşmalarına dönüşür.",
+          "proof": "Şehir rehberleri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sokak içinde ferah, odaklanmaya uygun ve kutu oyunu köşeli masa düzeni",
+        "crowdAndNoise": "Plaza zincirleri yerine mahalle arasında çalışmak veya arkadaşlarıyla sakin vakit geçirmek isteyenler",
+        "disadvantage": "Akşam kutu oyunu grupları kalabalıklaştığında sessiz çalışma atmosferi yerini sohbet sesine bırakır",
+        "transit": "Çukurambar Mahallesi 1476. Sokak No:4."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Hood Coffee",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1476. Sk. konumu, kahve-bowl ve odaklanma dostu ferah ortam incelemesi"
+        },
+        {
+          "title": "Restoranim Hood Coffee",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kutu oyunları, tatlılar ve üniversite-mahalle buluşması değerlendirmesi"
+        },
+        {
+          "title": "Yandex Haritalar Hood Coffee",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yüksek ziyaretçi memnuniyeti doğrulaması"
+        }
+      ],
+      "pros": [
+        "Çukurambar iş kulelerinden uzak sokak ölçeğinde tek şubeli nitelikli kahveci",
+        "Gündüz çalışma, akşam kutu oyunu dengesi"
+      ],
+      "cons": [
+        "Akşam oyun masaları yoğunlaştığında sakinlik azalabiliyor"
+      ],
+      "uncertainties": [
+        "Hafta sonu gruplarında masa bulmak için erken saatler avantaj sağlar"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cukurambar-nun-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "nun coffee",
+      "branchName": "Kızılırmak Mahallesi Mevlana Bulvarı, Kızılırmak, 1450. Sk. No:16/73, 06530 Çankaya/Ankara",
+      "placeId": "ChIJZ00LI5JP0xQRbAyvCyJPkHs",
+      "coordinates": {
+        "lat": 39.9014131,
+        "lng": 32.8134003
+      },
+      "rating": 4.4,
+      "userRatingCount": 220,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8903703470954974316",
+      "recommendedPrimary": [
+        "Tek Köken Filtre Kahve (V60)",
+        "Flat White & Sandviç-Tatlı Eşlikçisi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Geniş Yöresel Arabica Menüsü & Gece Saatleri",
+          "note": "Yüksek çeşitlilikteki single-origin Arabica demlemelerini geç kapanış saatleriyle iş çıkışı kahvecilerine de ulaştırır.",
+          "proof": "İşletme kahve menüsü ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Kızılırmak 1450. Sokak içinde modern, sakin akşam ve gündüz kahve masaları",
+        "crowdAndNoise": "Farklı çekirdek orijinleri denemek ve geç saatlere kadar kahve içmek isteyenler",
+        "disadvantage": "Dış cephesi ve yakın çevresi ofis-plaza geçiş hattında olduğu için bahçeli köy kahvesi hissi sunmaz",
+        "transit": "Kızılırmak Mahallesi 1450. Sokak No:16/73 (Söğütözü Metro yürüyüş mesafesi)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Nun Coffee Resmi Sitesi",
+          "url": "https://nuncoffeeco.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "%100 Arabica çekirdek seçkisi, 15+ menşe ve geç kapanış bilgisi"
+        },
+        {
+          "title": "Restoranim nun coffee",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1450. Sk. konumu, kahve kalitesi ve tatlı-sandviç değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Geniş single-origin Arabica çeşitliliği",
+        "Söğütözü Metro yakınlığı ve gece açık kalması"
+      ],
+      "cons": [
+        "Kızılırmak iş merkezi çevresinde park trafiği yoğun olabiliyor"
+      ],
+      "uncertainties": [
+        "Mikro lot çekirdek seçkisi stoklara bağlı olarak yenilenir"
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cukurambar-cupess",
+      "categoryId": "kahvalti",
+      "resolvedName": "Cupess Çukurambar",
+      "branchName": "Çukurambar, Malcolm X Cd. No: 2/2 A2-11, 06510 Çankaya/Ankara",
+      "placeId": "ChIJ2Z7kxkVJ0xQRaTME5kUfidA",
+      "coordinates": {
+        "lat": 39.9043943,
+        "lng": 32.8027681
+      },
+      "rating": 4.8,
+      "userRatingCount": 60,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://cafecup-ess.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=15026576016770610025",
+      "recommendedPrimary": [
+        "Tek Kişilik Special / Serpme Kahvaltı",
+        "Çakallı Menemen & Kavurmalı Yumurta",
+        "Mantarlı / Biftekli Krep"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Gündüz Bowl, Bazlama Tost & Krep Alternatifleri",
+          "note": "Sabah kahvaltısının yanında gün içinde bazlama-Ayvalık tostları ve Teriyaki Tavuk Bowl gibi pratik öğünler de çıkar.",
+          "proof": "İşletme mutfak menüsü ve şehir rehberi değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Malcolm X Caddesi üzerinde modern, aydınlık ve şık kafe-restoran oturumu",
+        "crowdAndNoise": "Zincir pastaneler dışında tek kişilik özel kahvaltı veya menemen-krep arayan Çukurambar sakinleri",
+        "disadvantage": "Hafta sonu geç kahvaltıda yer dolabilir; ana kahvaltı kalemleri öğleden sonra yavaşlar",
+        "transit": "Çukurambar Mahallesi Malcolm X Caddesi No:2/2 A2-11."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Cupess Resmi Sitesi",
+          "url": "https://cafecup-ess.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Çukurambar konumu, Çakallı menemen, krep, kahvaltı ve kahve menüsü"
+        },
+        {
+          "title": "Şehir Pusulası Cupess",
+          "url": "https://sehirpusulasi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Malcolm X Cd. kahvaltı konsepti ve menü değerlendirmeleri"
+        },
+        {
+          "title": "Yandex & Yemeksepeti Cupess",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Flat white, bowl ve kahvaltı sunumu üzerine misafir doğrulaması"
+        }
+      ],
+      "pros": [
+        "Hem serpme hem tek kişilik nitelikli kahvaltı (Çakallı menemen, krep) imkânı",
+        "Malcolm X Cd. üzerinde bağımsız konum"
+      ],
+      "cons": [
+        "Hafta içi plaza öğle kalabalığıyla yemek servisi karışabiliyor"
+      ],
+      "uncertainties": [
+        "Serpme kahvaltıda hafta sonu yoğunluk kaynaklı bekleme oluşabilir"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cukurambar-erdem-1071",
+      "categoryId": "denemelisin",
+      "resolvedName": "Erdem 1071 Et Lokantası",
+      "branchName": "Kızılırmak Mah. 1444. Cad, Çukurambar, 1071 Usta Plaza No:25 D:1, 06510 Çankaya/Ankara",
+      "placeId": "ChIJL6_tV45P0xQRw7GDOLlSRHs",
+      "coordinates": {
+        "lat": 39.9080806,
+        "lng": 32.8130685
+      },
+      "rating": 4.5,
+      "userRatingCount": 1547,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8882315320552042947",
+      "recommendedPrimary": [
+        "Kuzu Tandır",
+        "Camekândan Günlük Aşçı Tabağı & Tencere Yemekleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Hızlı Öğle Camekân Servisi & Geleneksel Çorbalar",
+          "note": "Plaza çalışanları ve misafirler için beklemeden görerek seçilebilen sıcak ev-esnaf tencere çeşitleri gün boyu tazelenir.",
+          "proof": "İşletme menü kayıtları ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş, ferah, hızlı devirli ve klasik Türk et-esnaf lokantası salonu",
+        "crowdAndNoise": "Çukurambar’da sulu tencere yemeği ve kuzu tandır arayan çalışanlar ile aileler",
+        "disadvantage": "Öğle saatleri oldukça kalabalık ve hareketlidir; romantik akşam yemeği ambiyansı arayanlar için fazla büyük ölçeklidir",
+        "transit": "Kızılırmak Mahallesi 1444. Cadde 1071 Usta Plaza No:25 D:1 (Söğütözü Metro yakını)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menulio Erdem 1071",
+          "url": "https://menulio.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1071 konumu, geleneksel lokanta mutfağı ve hizmet bilgileri"
+        },
+        {
+          "title": "Yandex Haritalar Erdem 1071",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Camekân tencere yemekleri, kuzu tandır, aşçı tabağı ve yüksek hacimli beğeni"
+        }
+      ],
+      "pros": [
+        "Binlerce plaza restoranı arasında gerçek tencere yemeği ve kuzu tandır standardını koruması",
+        "Geniş ferah oturum"
+      ],
+      "cons": [
+        "Öğle yemek saatlerinde kalabalık ve yüksek sirkülasyon gürültüsü"
+      ],
+      "uncertainties": [
+        "Sevilen tandır ve tencere çeşitleri öğleden sonra tükenebilir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cukurambar-1071-manti",
+      "categoryId": "denemelisin",
+      "resolvedName": "1071 Mantı Çukurambar",
+      "branchName": "Kızılırmak, 1443. Cd. No:25 A Dükkan 4, 06690 Çankaya/Ankara",
+      "placeId": "ChIJsaCS0tRP0xQRJN9WEejekp0",
+      "coordinates": {
+        "lat": 39.9079578,
+        "lng": 32.812503299999996
+      },
+      "rating": 4.4,
+      "userRatingCount": 1466,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.sinimanti.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=11354382698859126564",
+      "recommendedPrimary": [
+        "Sini Mantısı / Boşnak Mantısı",
+        "Ev Baklavası Kapanışı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Baklavası & Yöresel Börek Çeşitleri",
+          "note": "Mantı tabaklarının yanında çıtır ev baklavası ve yöresel hamur işleri gün boyu servis edilir.",
+          "proof": "Menü platformları ve şehir değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "1071 yaşam alanı içinde temiz, hızlı servis odaklı mantı restoranı düzeni",
+        "crowdAndNoise": "Çeşitli el açması mantılar ve ev baklavası arayan Çukurambar sakinleri ile çalışanlar",
+        "disadvantage": "Öğle saatlerinde 1071 Plaza yoğunluğundan etkilenir; et ızgara menüsü yerine mantı ve hamur işi odaklıdır",
+        "transit": "Kızılırmak Mahallesi 1443. Cadde No:25/A Dükkan 4."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR 1071 Mantı",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sini mantısı, Boşnak mantısı, soslu mantı çeşitleri ve ev baklavası menüsü"
+        },
+        {
+          "title": "Restoranim 1071 Mantı",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur kıvamı, servis temposu ve yüksek ziyaretçi puanı doğrulaması"
+        }
+      ],
+      "pros": [
+        "Yüksek ziyaretçi sayısında dahi Boşnak ve sini mantısında kalitesini koruması",
+        "Temiz porsiyon dengesi"
+      ],
+      "cons": [
+        "Hafta içi öğle arası kalabalık olabiliyor"
+      ],
+      "uncertainties": [
+        "Günün belirli saatlerinde Boşnak mantısı tepsi çıkışı beklenebilir"
+      ],
+      "selectionScore": 76,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cukurambar-seruven-balik",
+      "categoryId": "denemelisin",
+      "resolvedName": "Serüven Balık Restaurant",
+      "branchName": "Protokol İş Merkezi, Çukurambar, 06510 Çankaya/Ankara",
+      "placeId": "ChIJnfpGElhF0xQRGWRD1aE7Fos",
+      "coordinates": {
+        "lat": 39.8968086,
+        "lng": 32.810432399999996
+      },
+      "rating": 4.4,
+      "userRatingCount": 448,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10022263587013354521",
+      "recommendedPrimary": [
+        "Mevsim Hamsi Izgara / Çupra",
+        "Levrek Buğulama & Karadeniz Mezeleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çocuk Oyun Alanı & Aile Sofrası Konforu",
+          "note": "İç mekândaki kapalı oyun alanı sayesinde çocuklu ailelerin rahatça balık ve Karadeniz mutfağı yiyebildiği nadir restoranlardandır.",
+          "proof": "Yerel aile rehberleri ve yemek değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Protokol İş Merkezi yanında geniş, ferah ve çocuk oyun alanlı aile balık restoranı",
+        "crowdAndNoise": "Bar/meyhane kalabalığı yerine aile ve çocuklarla taze balık yemek isteyen Çukurambar sakinleri",
+        "disadvantage": "Aile ve çocuk dostu ortamı nedeniyle romantik baş başa sessiz akşam buluşması arayan çiftlere hareketli gelebilir",
+        "transit": "Çukurambar Mahallesi Muhsin Yazıcıoğlu Cd. No:39 Protokol İş Merkezi."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "AnkaradaÇocuk Serüven Balık",
+          "url": "https://ankaradacocuk.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Karadeniz mutfağı, ızgara balık çeşitleri ve kapalı çocuk oyun alanı detayları"
+        },
+        {
+          "title": "Restoranim Serüven Balık",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamsi ızgara, levrek buğulama, çupra ve aile servisi değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Çukurambar içinde ailelere yönelik taze balık ve Karadeniz mutfağı sunması",
+        "Geniş ferah oturma ve park kolaylığı"
+      ],
+      "cons": [
+        "Oyun alanı ve kalabalık aile masaları nedeniyle akşamları hareketli"
+      ],
+      "uncertainties": [
+        "Hafta sonu aile yemeklerinde büyük masalar için rezervasyon önerilir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cukurambar-strada-sandwich",
+      "categoryId": "denemelisin",
+      "resolvedName": "Strada Sandwich Çukurambar 1071",
+      "branchName": "1071 usta yaşam merkezi, Kızılırmak, 06510 Çankaya/Ankara",
+      "placeId": "ChIJbaNI1A5P0xQR-Ks6qfvfdCI",
+      "coordinates": {
+        "lat": 39.9076422,
+        "lng": 32.8123043
+      },
+      "rating": 4.5,
+      "userRatingCount": 209,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2482855566556965880",
+      "recommendedPrimary": [
+        "Özel Focaccia Et / Peynirli Sandviçler",
+        "Taze Salata & Fresh İçecek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Hafif Salata Tabakları & Fresh Bar",
+          "note": "Tok tutan focaccia sandviçlerin yanında iş temposunda hafif öğün arayanlar için taze salata seçenekleri sunulur.",
+          "proof": "Yerel menü kayıtları ve kullanıcı değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "1071 Yaşam Merkezi bünyesinde hızlı, pratik ve modern sandviç barı düzeni",
+        "crowdAndNoise": "Hazır tostlar yerine taze focaccia ekmeğinde kaliteli İtalyan sandviçi arayan çalışan ve öğrenciler",
+        "disadvantage": "Sıcak ana yemek restoranı değil, hızlı gurme sandviç ve salata tezgâhıdır",
+        "transit": "Kızılırmak Mahallesi 1443. Cadde 1071 Usta Yaşam Merkezi."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "MenuHaritası Strada Sandwich",
+          "url": "https://www.menuharitasi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Focaccia sandviçleri, salatalar, et-peynir eşleşmeleri ve fresh bar menüsü"
+        },
+        {
+          "title": "Restoranim Strada Sandwich 1071",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Doyurucu porsiyon, focaccia kalitesi ve hızlı servis değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Taze focaccia ekmeği ve yüksek malzeme doyuruculuğu",
+        "Hafta içi hızlı iş molaları için pratik"
+      ],
+      "cons": [
+        "Geniş oturumlu uzun akşam yemeği konsepti sunmuyor"
+      ],
+      "uncertainties": [
+        "Hafta içi öğle arasında sandviç hazırlık sırası oluşabilir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cukurambar-elit-kebap",
+      "categoryId": "denemelisin",
+      "resolvedName": "ELİT KEBAP PİDE",
+      "branchName": "Çukurambar, 1424. Cd. 26/B, 06530 Çankaya/Ankara",
+      "placeId": "ChIJS8JezApG0xQRCUcZ4LcKfQU",
+      "coordinates": {
+        "lat": 39.9006152,
+        "lng": 32.8067316
+      },
+      "rating": 4.4,
+      "userRatingCount": 287,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.elitkebap.com/",
+      "mapsUri": "https://maps.google.com/?cid=395484127133517577",
+      "recommendedPrimary": [
+        "Taş Fırın Lahmacun & Pide Çeşitleri",
+        "Fırın Güveç & Adana Kebap"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Gösterişsiz Aile Esnaf Mutfağı & Taş Fırın Güveç",
+          "note": "Lüks kebap zincirlerinin yüksek etiketlerinden ayrılarak mahalle içi uygun ve güvenilir taş fırın servisi sunar.",
+          "proof": "İşletme mutfak kayıtları ve yerel harita değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "1424. Cadde üzerinde sade, mütevazı ve temiz eski Çukurambar aile esnaf lokantası",
+        "crowdAndNoise": "Abartısız sunumda iyi lahmacun, pide ve taş fırın güveç yemek isteyen eski semt sakinleri",
+        "disadvantage": "Sade klasik dekorasyonundadır; yeni nesil şık plaza restoranı veya vale-kokteyl ortamı beklemez",
+        "transit": "Çukurambar Mahallesi 1424. Cadde No:26/B."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Elit Kebap Resmi Sitesi",
+          "url": "https://elitkebap.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "1424. Cadde köklü Çukurambar konumu, lahmacun, pide, güveç ve kebap menüsü"
+        },
+        {
+          "title": "Mekan.com & Yandex Elit Kebap",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Dürüst mahalle esnaf çizgisi ve ulaşılabilir fiyat değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Çukurambar’ın plaza dokusu arasında yıllardır korunan eski mahalle esnafı karakteri",
+        "Erişilebilir bütçe"
+      ],
+      "cons": [
+        "Sade esnaf lokantası dekoru"
+      ],
+      "uncertainties": [
+        "Öğle vakitlerinde iş yerlerinden gelen paket ve masa yoğunluğu artar"
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    }
+  ]
+}

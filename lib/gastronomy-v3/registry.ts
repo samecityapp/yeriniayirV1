@@ -77,6 +77,8 @@ import ankaraCankayaBahcelievlerSnapshotJson from './regions/ankara-cankaya-bahc
 import ankaraCankayaGaziosmanpasaSnapshotJson from './regions/ankara-cankaya-gaziosmanpasa.json';
 import ankaraCankayaCayyoluSnapshotJson from './regions/ankara-cankaya-cayyolu.json';
 import ankaraCankayaUmitkoyBeysukentSnapshotJson from './regions/ankara-cankaya-umitkoy-beysukent.json';
+import ankaraCankayaAyranciSnapshotJson from './regions/ankara-cankaya-ayranci.json';
+import ankaraCankayaCukurambarSnapshotJson from './regions/ankara-cankaya-cukurambar.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -165,6 +167,10 @@ const ANKARA_CANKAYA_CAYYOLU_SNAPSHOT =
   ankaraCankayaCayyoluSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 const ANKARA_CANKAYA_UMITKOY_BEYSUKENT_SNAPSHOT =
   ankaraCankayaUmitkoyBeysukentSnapshotJson as unknown as V3VerifiedRegionSnapshot;
+const ANKARA_CANKAYA_AYRANCI_SNAPSHOT =
+  ankaraCankayaAyranciSnapshotJson as unknown as V3VerifiedRegionSnapshot;
+const ANKARA_CANKAYA_CUKURAMBAR_SNAPSHOT =
+  ankaraCankayaCukurambarSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -246,6 +252,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   ANKARA_CANKAYA_GAZIOSMANPASA_SNAPSHOT,
   ANKARA_CANKAYA_CAYYOLU_SNAPSHOT,
   ANKARA_CANKAYA_UMITKOY_BEYSUKENT_SNAPSHOT,
+  ANKARA_CANKAYA_AYRANCI_SNAPSHOT,
+  ANKARA_CANKAYA_CUKURAMBAR_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -950,6 +958,28 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'galleria-arkasi': ANKARA_CANKAYA_UMITKOY_BEYSUKENT_SNAPSHOT,
   'umit-mahallesi': ANKARA_CANKAYA_UMITKOY_BEYSUKENT_SNAPSHOT,
   beysupark: ANKARA_CANKAYA_UMITKOY_BEYSUKENT_SNAPSHOT,
+  'ankara-cankaya-ayranci': ANKARA_CANKAYA_AYRANCI_SNAPSHOT,
+  ayranci: ANKARA_CANKAYA_AYRANCI_SNAPSHOT,
+  'ayranci-ankara': ANKARA_CANKAYA_AYRANCI_SNAPSHOT,
+  'ayranci-cankaya': ANKARA_CANKAYA_AYRANCI_SNAPSHOT,
+  'asagi-ayranci': ANKARA_CANKAYA_AYRANCI_SNAPSHOT,
+  'yukari-ayranci': ANKARA_CANKAYA_AYRANCI_SNAPSHOT,
+  hosdere: ANKARA_CANKAYA_AYRANCI_SNAPSHOT,
+  'hosdere-caddesi': ANKARA_CANKAYA_AYRANCI_SNAPSHOT,
+  'kuzgun-sokak': ANKARA_CANKAYA_AYRANCI_SNAPSHOT,
+  'mesnevi-sokak': ANKARA_CANKAYA_AYRANCI_SNAPSHOT,
+  guvenevler: ANKARA_CANKAYA_AYRANCI_SNAPSHOT,
+  'guvenevler-ankara': ANKARA_CANKAYA_AYRANCI_SNAPSHOT,
+  'aziziye-cankaya': ANKARA_CANKAYA_AYRANCI_SNAPSHOT,
+  'ankara-cankaya-cukurambar': ANKARA_CANKAYA_CUKURAMBAR_SNAPSHOT,
+  cukurambar: ANKARA_CANKAYA_CUKURAMBAR_SNAPSHOT,
+  'cukurambar-ankara': ANKARA_CANKAYA_CUKURAMBAR_SNAPSHOT,
+  'cukurambar-cankaya': ANKARA_CANKAYA_CUKURAMBAR_SNAPSHOT,
+  'muhsin-yazicioglu': ANKARA_CANKAYA_CUKURAMBAR_SNAPSHOT,
+  'muhsin-yazicioglu-caddesi': ANKARA_CANKAYA_CUKURAMBAR_SNAPSHOT,
+  'kizilirmak-cukurambar': ANKARA_CANKAYA_CUKURAMBAR_SNAPSHOT,
+  'kizilirmak-ankara': ANKARA_CANKAYA_CUKURAMBAR_SNAPSHOT,
+  'ufuk-universitesi-caddesi': ANKARA_CANKAYA_CUKURAMBAR_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {

@@ -87,6 +87,8 @@ const PUBLISHED_REGION_KEYS = [
   'ankara-cankaya-gaziosmanpasa',
   'ankara-cankaya-cayyolu',
   'ankara-cankaya-umitkoy-beysukent',
+  'ankara-cankaya-ayranci',
+  'ankara-cankaya-cukurambar',
 ];
 const NEARBY_POOL_KEY = 'istanbul-kadikoy-nearby-pool';
 const DEFAULT_REGION_ORDER = [...PUBLISHED_REGION_KEYS, NEARBY_POOL_KEY];
