@@ -1,0 +1,1280 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "ankara-cankaya-cayyolu",
+  "displayName": "Çayyolu & Park Caddesi, Çankaya, Ankara",
+  "verifiedAt": "2026-11-17T19:05:36.462Z",
+  "selectedCount": 17,
+  "rejectedControls": [
+    {
+      "id": "ctrl-cayyolu-brandburger-chain",
+      "resolvedName": "Brand Burger Çayyolu",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cayyolu-hmbrgr-chain",
+      "resolvedName": "HMBRGR Arcadium AVM",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cayyolu-caffeditoee-chain",
+      "resolvedName": "Caffé Di Toeé Park Caddesi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cayyolu-coffeegate-chain",
+      "resolvedName": "Coffee Gate Koru",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cayyolu-burgerking-chain",
+      "resolvedName": "Burger King - Çayyolu",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cayyolu-littlecaesars-chain",
+      "resolvedName": "Little Caesars Çayyolu Şubesi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cayyolu-balikcikoy-chain",
+      "resolvedName": "Balıkçıköy Fahri Çayyolu - Balık Restorantı - Ankara En İyi Balıkçı - Ankara En İyi Meze",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cayyolu-tarabya-chain",
+      "resolvedName": "Tarabya Balık Çayyolu",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cayyolu-zahire-chain",
+      "resolvedName": "Zahire Pastanesi Çayyolu",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cayyolu-cezzar-chain",
+      "resolvedName": "Cezzar Steakhouse - Çayyolu",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cayyolu-ifsokak-chain",
+      "resolvedName": "IF Sokak Çayyolu",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cayyolu-lepain-chain",
+      "resolvedName": "Le Pain",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cayyolu-nona-noncoffee",
+      "resolvedName": "Nona Brigadeiro - La Petite Nona",
+      "reason": "kahve_category_not_coffee_specialist:chocolate_shop"
+    },
+    {
+      "id": "ctrl-cayyolu-out-yasamkent-pacas",
+      "resolvedName": "Pacas Coffee & roastery",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Prof. Dr. Ahmet Taner Kışlalı/Ahmet Taner Kışlalı/Ahmet Taner Kislali/Çayyolu/Cayyolu/Koru/Konutkent, adres: Yaşamkent, 3059. Sk. No: 18, 06810 Çankaya/Ankara)"
+    },
+    {
+      "id": "ctrl-cayyolu-out-alacaatli-kvass",
+      "resolvedName": "Glütensiz Kvass Bakery",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Prof. Dr. Ahmet Taner Kışlalı/Ahmet Taner Kışlalı/Ahmet Taner Kislali/Çayyolu/Cayyolu/Koru/Konutkent, adres: Alacaatlı, 3309. Sk. No:2, 06810 Çankaya/Ankara)"
+    },
+    {
+      "id": "ctrl-cayyolu-low-vicolo",
+      "resolvedName": "Vicolo İtaliano",
+      "reason": "below_quality_threshold:★4.2(790)"
+    },
+    {
+      "id": "ctrl-cayyolu-low-flone",
+      "resolvedName": "Flone Kitchen & Cocktail",
+      "reason": "below_quality_threshold:★4.3(155)"
+    },
+    {
+      "id": "ctrl-cayyolu-infl-pizzest",
+      "resolvedName": "PIZZEST",
+      "reason": "suspected_rating_inflation_no_community_proof"
+    }
+  ],
+  "venues": [
+    {
+      "id": "cayyolu-borgo-due",
+      "categoryId": "pizza",
+      "resolvedName": "Borgo Due | Ristorante & Pizzeria",
+      "branchName": "Prof. Dr. Ahmet Taner Kışlalı, 2092. Cadde no:7/12, 06810 Çankaya/Ankara",
+      "placeId": "ChIJNU5XrWE50xQRmdPXcqi2Uxk",
+      "coordinates": {
+        "lat": 39.8799376,
+        "lng": 32.6873764
+      },
+      "rating": 4.9,
+      "userRatingCount": 174,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://borgo-due.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=1825003108612690841",
+      "recommendedPrimary": [
+        "Odun Fırını Burrata / Margherita Pizza",
+        "El Yapımı Taze Makarna",
+        "Tiramisu"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Yapımı Taze Makarna & Başlangıçlar",
+          "note": "Ekşi mayalı pizzaların yanı sıra ev yapımı taze makarna, risotto ve carpaccio başlangıçları aynı mutfak özeniyle sunulur.",
+          "proof": "İşletme mutfak menüsü ve misafir değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Şık aydınlatmalı, çiftler ve akşam yemeği buluşmalarına uygun ferah salon",
+        "crowdAndNoise": "Hafif ekşi mayalı Napoli pizzası ve sakin akşam İtalyan sofrası arayanlar",
+        "disadvantage": "Hafta sonu akşamlarında doluluk artar; rezervasyonla gitmek rahatlık sağlar",
+        "transit": "Prof. Dr. Ahmet Taner Kışlalı Mahallesi 2092. Cadde No:7/12 (Koru hattına kısa araç mesafesi)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Borgo Due Resmi Sitesi",
+          "url": "https://borgo-due.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Artizan İtalyan mutfağı, ekşi mayalı pizza ve el yapımı makarna menüsü"
+        },
+        {
+          "title": "Restoranim Borgo Due",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çayyolu Napoli pizzası, hafif hamur ve akşam buluşması değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Ekşi mayalı Napoli pizza ve el yapımı makarnayı bir arada başarıyla sunması",
+        "Sakin, özenli İtalyan restoranı atmosferi"
+      ],
+      "cons": [
+        "Metro yürüyüşü yerine özel araç veya taksi ile ulaşım daha pratik"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamları masa bekleme ihtimali oluşabilir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cayyolu-makka-ankara",
+      "categoryId": "pizza",
+      "resolvedName": "Makka Ankara",
+      "branchName": "ONYX ÇAYYOLU, Prof. Dr. Ahmet Taner Kışlalı, Selçuk Yula Caddesi No:25 C No:20, 06810 Çankaya/Ankara",
+      "placeId": "ChIJfahc8ho50xQRq8d0E4q5mxI",
+      "coordinates": {
+        "lat": 39.8667154,
+        "lng": 32.679065099999995
+      },
+      "rating": 4.5,
+      "userRatingCount": 265,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://makkacraftkitchen.com/",
+      "mapsUri": "https://maps.google.com/?cid=1340869316755900331",
+      "recommendedPrimary": [
+        "Taş Fırın İtalyan Pizza",
+        "Makka Alfredo / El Yapımı Ravioli",
+        "Arancini & Panzerotti"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Taze Makarna & İtalyan Atıştırmalıkları",
+          "note": "Taş fırın pizzalara eşlik eden günlük ravioli, tagliatelle ve arancini tabakları akşam servisinin ana direğini oluşturur.",
+          "proof": "İşletme mutfak menüsü ve şehir rehberi kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Onyx Çayyolu içinde modern, temiz ve şık masa düzeni",
+        "crowdAndNoise": "Kutlama yemekleri, çiftler ve İtalyan pasta-pizza ikilisi arayan Park Caddesi müdavimleri",
+        "disadvantage": "Üst-orta fiyat bandındadır; pizzalar yanında özellikle taze makarnaları öne çıkar",
+        "transit": "Prof. Dr. Ahmet Taner Kışlalı Mahallesi Selçuk Yula Caddesi Onyx Çayyolu No:25C/20."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Makka Craft Kitchen Resmi Sitesi",
+          "url": "https://makkacraftkitchen.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Onyx Çayyolu adresi, el yapımı makarna ve taş fırın pizza menüsü"
+        },
+        {
+          "title": "Menu-TR Makka Ankara",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Alfredo, ravioli ve taş fırın pizza değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Günlük taze açılan makarna ve taş fırın pizza birlikteliği",
+        "Temiz, özenli Onyx yaşam alanı konumu"
+      ],
+      "cons": [
+        "Makarnalara kıyasla pizza beklentisi zaman zaman ikinci planda kalabiliyor"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşam saatlerinde Onyx çevresinde otopark yoğunluğu artabilir"
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cayyolu-drool",
+      "categoryId": "hamburger",
+      "resolvedName": "Drool",
+      "branchName": "Çayyolu, Ankaralılar Cd. No:21 D:12, 06810 Çankaya/Ankara",
+      "placeId": "ChIJhykwwTo50xQR7cOGg3jKOBs",
+      "coordinates": {
+        "lat": 39.8908033,
+        "lng": 32.6908682
+      },
+      "rating": 4.4,
+      "userRatingCount": 383,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/drool.tr?igsh=MXhwNXRtcnRyajdseA==",
+      "mapsUri": "https://maps.google.com/?cid=1961540256671384557",
+      "recommendedPrimary": [
+        "Drool Smash Burger",
+        "Truffe Smash Burger",
+        "Nashville Hot Mozzarella"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yer Fıstığı Yağında Patates & Hot Mozzarella",
+          "note": "Şişkinlik yapmayan ev yapımı brioche ekmekler kadar yer fıstığı yağında kızaran patatesler ve uzayan peynirli atıştırmalık da tercih edilir.",
+          "proof": "Yerel mutfak rehberleri ve menü incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Dinamik ve modern şehir burgercisi konseptinde iç-dış masalar",
+        "crowdAndNoise": "Yeni nesil ince kenarlı çıtır smash burger tutkunları ve akşamüstü atıştırması arayanlar",
+        "disadvantage": "Popüler akşam saatlerinde sipariş bekleme süresi uzayabilir; klasik kalın köfte yerine smash stilidir",
+        "transit": "Çayyolu Mahallesi Ankaralılar Caddesi No:21 D:12 (Gordion AVM karşısı aksı)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Restoranim Drool Çayyolu",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ev yapımı ekmek, Drool/Truffe smash burger ve patates övgüsü"
+        },
+        {
+          "title": "Menu-TR Drool",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ankaralılar Cd. konumu, katmanlı porsiyonlar ve Nashville Hot Mozzarella detayları"
+        }
+      ],
+      "pros": [
+        "Şişkinlik yapmayan kendi yapımları ekmek ve dengeli smash köfte",
+        "Ankaralılar Cd. üzerinde kolay ulaşım"
+      ],
+      "cons": [
+        "Yoğun saatlerde masa sirkülasyonu yüksek olabiliyor"
+      ],
+      "uncertainties": [
+        "Köfte adedine göre değişen porsiyon tercihleri kalabalık gruplarda siparişi uzatabilir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cayyolu-mojo-house",
+      "categoryId": "hamburger",
+      "resolvedName": "Mojo House",
+      "branchName": "Prof. Dr. Ahmet Taner Kışlalı, 2864. Cd. No:42/ L, 06810 Çankaya/Ankara",
+      "placeId": "ChIJH-RgYe050xQRyUFDeuz7Rbs",
+      "coordinates": {
+        "lat": 39.868781899999995,
+        "lng": 32.6790502
+      },
+      "rating": 4.8,
+      "userRatingCount": 63,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13494468851567641033",
+      "recommendedPrimary": [
+        "Cheddar Gurme Burger",
+        "İmza Kokteyller",
+        "Çıtır Pub Atıştırmalıkları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kokteyl Barı & Dart Turnuvası Akşamları",
+          "note": "Akşam saatlerinde mutfaktan çıkan burgerlere kokteyl menüsü ve mekândaki dart masalarında sosyal pub etkinlikleri eşlik eder.",
+          "proof": "Şehir rehberleri ve müdavim değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Dart masaları ve bar bankosuyla samimi, kasıntısız Park Caddesi pub düzeni",
+        "crowdAndNoise": "İyi burger yanında kokteyl-bira içmek ve arkadaşlarıyla vakit geçirmek isteyenler",
+        "disadvantage": "Mutfak öğleden sonra erken saatlerde kapalı olabildiği için burger için akşam saatlerinde gitmek daha uygundur",
+        "transit": "Prof. Dr. Ahmet Taner Kışlalı Mahallesi 2864. Cadde No:42/L (Park Caddesi aksı)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Restoranim Mojo House",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Katkısız gurme cheddar burgerler, kokteyller ve akşam mutfak saati notu"
+        },
+        {
+          "title": "Menu-TR Mojo House",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Park Cd. pub konsepti, dart masaları ve menü değerlendirmeleri"
+        },
+        {
+          "title": "Yandex Haritalar Mojo House",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Konum ve ziyaretçi memnuniyeti doğrulaması"
+        }
+      ],
+      "pros": [
+        "Katkısız ev yapımı burger köftesi ve samimi pub atmosferi",
+        "Park Caddesi üzerinde yüksek müdavim memnuniyeti"
+      ],
+      "cons": [
+        "Gündüz/erken öğleden sonra mutfak servisi sınırlı olabiliyor"
+      ],
+      "uncertainties": [
+        "Cuma dart etkinliği akşamlarında kalabalık erken başlar"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cayyolu-hamburglu",
+      "categoryId": "hamburger",
+      "resolvedName": "Hamburglu",
+      "branchName": "Koru, Mesa Plaza No:2 D:28, 06810 Çankaya/Ankara",
+      "placeId": "ChIJF2YKcgA50xQRQaxauqZUPuM",
+      "coordinates": {
+        "lat": 39.8938667,
+        "lng": 32.6797008
+      },
+      "rating": 4.7,
+      "userRatingCount": 51,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16374618370233510977",
+      "recommendedPrimary": [
+        "Klasik Ev Yapımı Burger",
+        "Cheeseburger & Patates"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mesa Plaza Koru Kolay Erişimi",
+          "note": "Koru metro kavşağındaki Mesa Plaza içinde yer aldığı için günlük iş veya alışveriş arasında pratik durak sağlar.",
+          "proof": "Mesa Plaza dizini ve ziyaretçi değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "AVM içi hızlı servis ve pratik oturma düzeni",
+        "crowdAndNoise": "Koru Metro çevresinde pratik ve doyurucu ev yapımı burger arayanlar",
+        "disadvantage": "AVM katında yer aldığı için sokak restoranı ambiyansı sunmaz",
+        "transit": "Koru Mahallesi Mesa Plaza AVM 1. Kat No:2 D:28 (Koru Metro çıkışı yanı)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Mesa Plaza AVM Dizini",
+          "url": "https://mesaplaza.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mesa Plaza 1. Kat konumu ve hizmet bilgileri"
+        },
+        {
+          "title": "Yandex Haritalar Hamburglu",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ev yapımı burger kalitesi ve Koru konumu değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Koru Metro hemen yanında pratik ulaşım",
+        "Sade ve temiz ev yapımı burger menüsü"
+      ],
+      "cons": [
+        "AVM ortamı nedeniyle uzun akşam oturumları için sınırlı ambiyans"
+      ],
+      "uncertainties": [
+        "AVM kapanış saatlerine bağlı olarak geç akşam servisi bulunmaz"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cayyolu-solid-and-stripe",
+      "categoryId": "kahve",
+      "resolvedName": "Solid and Stripe coffee",
+      "branchName": "Ahmet Taner Kışlalı Mah, Çayyolu, Özçelik İş Merkezi, 06810 Çankaya/Ankara",
+      "placeId": "ChIJNTKg63c50xQRbHfmbCbXblU",
+      "coordinates": {
+        "lat": 39.874785700000004,
+        "lng": 32.6867326
+      },
+      "rating": 4.8,
+      "userRatingCount": 264,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6156094300697818988",
+      "recommendedPrimary": [
+        "V60 / Chemex Filtre Kahve",
+        "Espresso Bazlı İçimler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çalışma Odaları & Sosyal Oyun Alanları",
+          "note": "Ayrı çalışma bölümleri ve bilardo masalarıyla hem odaklanmak isteyenleri hem genç grupları ağırlayacak şekilde kurgulanmıştır.",
+          "proof": "İşletme menü kayıtları ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç hacimli, çalışma masaları ve bilardo alanları ayrılmış salon",
+        "crowdAndNoise": "Nitelikli demleme kahve eşliğinde çalışmak veya arkadaşlarıyla bilardo oynamak isteyenler",
+        "disadvantage": "Oyun alanında akşam saatlerinde hareketlilik arttığından sessizlik arayanlar çalışma bölümünü seçmelidir",
+        "transit": "Prof. Dr. Ahmet Taner Kışlalı Mahallesi Bangabandhu Bulvarı Özçelik İş Merkezi."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Solid and Stripe",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "V60, Chemex kahve seçkisi, çalışma odaları ve bilardo detayları"
+        },
+        {
+          "title": "Restoranim Solid and Stripe",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ahmet Taner Kışlalı konumu ve nitelikli kahve değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "V60 ve Chemex gibi el demlemelerine yer veren geniş mekân",
+        "Çayyolu içinde çalışma ve sosyalleşme dengesi"
+      ],
+      "cons": [
+        "Tamamen sakin butik espresso barı yerine çok amaçlı sosyal mekân"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamları oyun alanına bağlı olarak doluluk yükselir"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cayyolu-whisk",
+      "categoryId": "kahve",
+      "resolvedName": "Whisk",
+      "branchName": "Çayyolu, Ankaralılar Cd. No:21 D:30, 06810 Çankaya/Ankara",
+      "placeId": "ChIJCUMjdBE50xQRAUh8LvpH9Bg",
+      "coordinates": {
+        "lat": 39.891197399999996,
+        "lng": 32.6913068
+      },
+      "rating": 4.6,
+      "userRatingCount": 103,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://whiskandmore.com/",
+      "mapsUri": "https://maps.google.com/?cid=1798141291074963457",
+      "recommendedPrimary": [
+        "İmza Meyveli / Klasik Matcha Latte",
+        "Flat White & Soğuk Demlemeler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Meyveli & Seremoniyel Matcha Çeşitleri",
+          "note": "Espresso bazlı içeceklerin yanında mevsim meyveleri ve aromalarla hazırlanan taze matcha içecekleri en çok tercih edilen seçkidir.",
+          "proof": "İşletme içecek menüsü ve şehir değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Minimalist ve modern tasarımlı butik kahve-matcha barı masaları",
+        "crowdAndNoise": "Matcha kültürü meraklıları ve Ankaralılar Caddesi üçüncü dalga kahve severleri",
+        "disadvantage": "İç oturma alanı görece butik ölçeklidir; yoğun saatlerde yer bulmak zorlaşabilir",
+        "transit": "Çayyolu Mahallesi Ankaralılar Caddesi No:21 D:30 (Gordion çevresi)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Whisk Resmi Sitesi",
+          "url": "https://whiskandmore.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Matcha bar ve nitelikli kahve konsepti"
+        },
+        {
+          "title": "Restoranim Whisk Çayyolu",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ankaralılar Cd. konumu, matcha latte çeşitleri ve tatlı değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Ankara batı aksında nitelikli matcha latte çeşitleriyle öne çıkması",
+        "Sade ve kaliteli kahve sunumu"
+      ],
+      "cons": [
+        "Küçük oturma kapasitesi nedeniyle kalabalık çalışma gruplarına pek uygun değil"
+      ],
+      "uncertainties": [
+        "Yeni sezon aromalı matcha seçenekleri dönemsel yenilenir"
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cayyolu-koru-adatepe",
+      "categoryId": "date",
+      "resolvedName": "Koru Adatepe Restoran",
+      "branchName": "Koru, Ihlamur Cd. Mesa Koru Ticaret Merkezi No: 7/3-4-5-6-7, 06810 Çankaya/Ankara",
+      "placeId": "ChIJN8dSpks50xQRdAWnYmaSo8E",
+      "coordinates": {
+        "lat": 39.8904146,
+        "lng": 32.6812137
+      },
+      "rating": 4.6,
+      "userRatingCount": 263,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://koruadateperestoran.com/",
+      "mapsUri": "https://maps.google.com/?cid=13953157038963361140",
+      "recommendedPrimary": [
+        "Soğuk-Sıcak Meze Seçkisi",
+        "Izgara Et & Kebap Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Masa Sunumları & Akşam Fix Menüleri",
+          "note": "Çiftler ve özel kutlama masaları için mevsimlik meze tabaklarını tamamlayan düzenli akşam servisi sunulur.",
+          "proof": "İşletme mutfak sunumları ve şehir değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mesa Koru içinde şık aydınlatmalı, örtülü ve konforlu restoran salonu",
+        "crowdAndNoise": "Özenli bir ortamda meze-ızgara sofrası paylaşmak isteyen çiftler ve özel akşam grupları",
+        "disadvantage": "Üst segment bütçededir; cuma-cumartesi akşamları önceden rezervasyon gerekir",
+        "transit": "Koru Mahallesi Ihlamur Caddesi Mesa Koru Ticaret Merkezi No:7/3-7."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Koru Adatepe Resmi Sitesi",
+          "url": "http://koruadateperestoran.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Modern Türk meyhane-restoran konsepti, meze ve ızgara menüleri"
+        },
+        {
+          "title": "Restoranim Koru Adatepe",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mesa Koru akşam yemeği, servis kalitesi ve meze incelemeleri"
+        }
+      ],
+      "pros": [
+        "Mesa Koru içinde sakin, şık ve oturmuş servis kalitesi",
+        "Meze ve et dengesini iyi kuran mutfak"
+      ],
+      "cons": [
+        "Yüksek bütçe sınıfında konumlanır"
+      ],
+      "uncertainties": [
+        "Özel gün ve hafta sonu programlarında fiks menü şartları sorulmalıdır"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cayyolu-kalamis-fish-meat",
+      "categoryId": "date",
+      "resolvedName": "Çayyolu Kalamış | Fish & Meat",
+      "branchName": "Prof. Dr. Ahmet Taner Kışlalı, Alacaatlı Cd. No: 30/8, 06810 Çankaya/Ankara",
+      "placeId": "ChIJPwJAAxQ_0xQRsLR4TzfqDEw",
+      "coordinates": {
+        "lat": 39.8654273,
+        "lng": 32.683519499999996
+      },
+      "rating": 4.7,
+      "userRatingCount": 74,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://cayyolukalamis.com/",
+      "mapsUri": "https://maps.google.com/?cid=5480012369880462512",
+      "recommendedPrimary": [
+        "Baby Kalamar & Ahtapot Ara Sıcakları",
+        "Mevsim Balığı / Et Ana Yemeği",
+        "İmza Tatlı Kapanışı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Karma Deniz & Et Mutfağı Seçkisi",
+          "note": "Aynı sofrada taze balık tercih edenlerle kırmızı et veya wok seven misafirleri ortak kalite çizgisinde buluşturur.",
+          "proof": "İşletme mutfak menüsü ve yemek rehberi kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ferah yüksek tavanlı, VIP oda seçenekli şık akşam salonu",
+        "crowdAndNoise": "Estetik sunumlu modern deniz ve et sofrası arayan çiftler ve kutlama masaları",
+        "disadvantage": "Çok yüksek fiyat segmentindedir; akşam yemekleri için önceden rezervasyon önerilir",
+        "transit": "Prof. Dr. Ahmet Taner Kışlalı Mahallesi Alacaatlı Caddesi No:30/8."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Çayyolu Kalamış Resmi Sitesi",
+          "url": "https://cayyolukalamis.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Fish, meat ve wok konsepti, meze çeşitleri ve salon detayları"
+        },
+        {
+          "title": "Ankara Rehber İncelemesi",
+          "url": "https://ankaradagezilecekyerler.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ambiyans, estetik sunumlar ve modern meyhane değerlendirmeleri"
+        },
+        {
+          "title": "Menu-TR Çayyolu Kalamış",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Baby kalamar, balık ve et menüsü detayları"
+        }
+      ],
+      "pros": [
+        "Deniz ürünleri ile et mutfağını aynı kalite standardında sunması",
+        "Şık ve ferah akşam ambiyansı"
+      ],
+      "cons": [
+        "Bölgenin en yüksek bütçeli akşam restoranlarından biri"
+      ],
+      "uncertainties": [
+        "VIP salon ve hafta sonu canlı performans günleri rezervasyonda teyit edilmelidir"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cayyolu-salkim-meyhane",
+      "categoryId": "date",
+      "resolvedName": "Salkım Meyhane",
+      "branchName": "Prof. Dr. Ahmet Taner Kışlalı, 2853. Cd. No:28, 06810 Çankaya/Ankara",
+      "placeId": "ChIJE9fVZxY50xQRd2pziWQbpZw",
+      "coordinates": {
+        "lat": 39.8737773,
+        "lng": 32.6848536
+      },
+      "rating": 4.5,
+      "userRatingCount": 906,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11287458159690738295",
+      "recommendedPrimary": [
+        "Şefin Salkım Mezeleri & Girit",
+        "Balık Simit & Pastırmalı Humus",
+        "Antrikot Kavurma / Mevsim Balığı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Canlı Müzik Akşamları & Geniş Meze Masası",
+          "note": "Geniş salon yapısı sayesinde büyük kutlama ve sohbet sofralarına canlı müzik eşliğinde ev sahipliği yapar.",
+          "proof": "Yerel menü kayıtları ve etkinlik değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş kapasiteli, yüksek tavanlı, sahne odaklı meyhane masaları",
+        "crowdAndNoise": "Canlı müzikli keyifli rakı-meze akşamı ve kutlama sofrası planlayanlar",
+        "disadvantage": "Canlı müzik gecelerinde kalabalık ve ses seviyesi artar; sakin baş başa fısıltı sohbetine uygun değildir",
+        "transit": "Prof. Dr. Ahmet Taner Kışlalı Mahallesi 2853. Cadde No:28 (Park Caddesi arkası)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Salkım Meyhane",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Fesleğenli Girit, pastırmalı humus, balık simit ve antrikot kavurma menüsü"
+        },
+        {
+          "title": "Yandex Haritalar Salkım Meyhane",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Canlı müzik, şef mezeleri ve yüksek misafir değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Zengin ve tutarlı meze-ara sıcak seçkisi",
+        "Canlı müzikle birleşen oturmuş Çayyolu meyhane deneyimi"
+      ],
+      "cons": [
+        "Kalabalık gruplar ve müzik nedeniyle gürültü düzeyi yüksek olabiliyor"
+      ],
+      "uncertainties": [
+        "Hafta sonu fiks menü içerikleri sezona göre değişebilir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cayyolu-this-towns-last-stop",
+      "categoryId": "date",
+      "resolvedName": "This Town's Last Stop",
+      "branchName": "Prof. Dr. Ahmet Taner Kışlalı Mahallesi, Çayyolu, 2864. Cd. No:38/C, 06810 Çankaya/Ankara",
+      "placeId": "ChIJ14hxpNE40xQRD5Ios42jMF8",
+      "coordinates": {
+        "lat": 39.870177,
+        "lng": 32.680317699999996
+      },
+      "rating": 4.5,
+      "userRatingCount": 833,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.thistownslaststop.com/",
+      "mapsUri": "https://maps.google.com/?cid=6859162061476762127",
+      "recommendedPrimary": [
+        "Gastropub Et / Tavuk Ana Yemekleri",
+        "Paylaşımlı Atıştırmalık Tabağı & Bar İçecekleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Park Caddesi Teras & Paylaşımlı Bistro Servisi",
+          "note": "Meyhane yerine rahat müzik eşliğinde bira-kokteyl ve sıcak bistro tabakları tercih edenlerin buluşma noktasıdır.",
+          "proof": "İşletme mutfak sunumları ve şehir rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Park Caddesi cepheli açık teras ve sıcak aydınlatmalı iç pub alanı",
+        "crowdAndNoise": "Meyhane dışında modern gastropub akşamı arayan çiftler ve arkadaş grupları",
+        "disadvantage": "Akşam teras masaları hızlı dolar; hafta sonu müzikle beraber ortam hareketlenir",
+        "transit": "Prof. Dr. Ahmet Taner Kışlalı Mahallesi 2864. Cadde (Park Caddesi) No:38/C."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "This Town's Last Stop Resmi Sitesi",
+          "url": "http://www.thistownslaststop.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Gastropub konsepti, atıştırmalıklar ve Park Cd. adresi"
+        },
+        {
+          "title": "Restoranim This Towns Last Stop",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Teras alanı ve akşam buluşması değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Park Caddesi üzerinde köklü ve oturmuş gastropub atmosferi",
+        "Vegan dahil çeşitlilik sunan bistro mutfağı"
+      ],
+      "cons": [
+        "Hafta sonu teras doluluğu ve müzik temposu yükselebilir"
+      ],
+      "uncertainties": [
+        "Canlı etkinlik akşamlarında masa rezervasyonu önerilir"
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cayyolu-farro-artisan-bakery",
+      "categoryId": "kahvalti",
+      "resolvedName": "Farro Artisan Bakery Çayyolu",
+      "branchName": "Prof. Dr. Ahmet Taner Kışlalı, 2857. Sk. No: 8, 06810 Çankaya/Ankara",
+      "placeId": "ChIJU_h4BeNP0xQRPN3bzYcMwRM",
+      "coordinates": {
+        "lat": 39.87363620000001,
+        "lng": 32.6842148
+      },
+      "rating": 4.5,
+      "userRatingCount": 226,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1423432734639643964",
+      "recommendedPrimary": [
+        "Tereyağlı Sade / Bademli Kruvasan",
+        "Crovolcano (Antep Fıstıklı)",
+        "Paris Caprese Sandviç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ekşi Mayalı Sandviç & Yumurta Tabakları",
+          "note": "Tatlı kruvasanların yanında ekşi maya ekmekle hazırlanan sandviçler ve çırpılmış yumurtalı kahvaltı seçenekleri sunulur.",
+          "proof": "İşletme mutfak menüsü ve yemek değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Vitrin ve fırın kokusuna yakın şık kafe masaları",
+        "crowdAndNoise": "Sabah nitelikli artizan kruvasan, ekşi maya sandviç ve kahve arayanlar",
+        "disadvantage": "Günün ilerleyen saatlerinde popüler dolgulu kruvasan çeşitleri tükenebilir",
+        "transit": "Prof. Dr. Ahmet Taner Kışlalı Mahallesi 2857. Sokak No:8."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Farro Resmi Sitesi",
+          "url": "https://farro.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Fransız ön mayası, gerçek tereyağlı kruvasan ve ekşi maya üretimi"
+        },
+        {
+          "title": "Restoranim Farro",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kahvaltı tabakları ve artizan fırın kalitesi değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Katman dokusu başarılı gerçek tereyağlı kruvasanlar",
+        "Ekşi mayalı ekmek ve tuzlu sandviç çeşitliliği"
+      ],
+      "cons": [
+        "Öğleye doğru bazı imza hamur işleri bitebiliyor"
+      ],
+      "uncertainties": [
+        "Hafta sonu kahvaltı saatlerinde masa bulmak zaman alabilir"
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cayyolu-qrabiye-patisserie",
+      "categoryId": "kahvalti",
+      "resolvedName": "Qrabiye Boutique Patisserie",
+      "branchName": "Koru Mah. Ihlamur Caddesi Mesa Koru Ticaret merkezi, Çayyolu, no :2, 06810 Çankaya/Ankara",
+      "placeId": "ChIJMwzjxuQ40xQR1yWdLSCGs98",
+      "coordinates": {
+        "lat": 39.8905938,
+        "lng": 32.6811401
+      },
+      "rating": 4.5,
+      "userRatingCount": 195,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16119374964051486167",
+      "recommendedPrimary": [
+        "Özenli Kahvaltı & Pankek",
+        "Ev Yapımı Kurabiye & Cheesecake"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Kurabiyeler & Öğleden Sonra Çay Saati",
+          "note": "Kahvaltı servisinin ardından vitrindeki taze pişmiş elmalı kurabiyeler, börekler ve unsuz çikolatalı kek gün boyu ilgi görür.",
+          "proof": "Misafir rehberi ve değerlendirme kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük, sıcak ve ev atmosferinde dekore edilmiş butik pastane masaları",
+        "crowdAndNoise": "Sakin ortamda ev yapımı lezzetlerle kahvaltı ve çay keyfi yapmak isteyen Koru sakinleri",
+        "disadvantage": "Mekân küçük kapasiteli ve erken kapanışlıdır; hafta sonu kahvaltı için önceden yer ayırtmak gerekir",
+        "transit": "Koru Mahallesi Ihlamur Caddesi Mesa Koru Ticaret Merkezi No:2."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Qrabiye Resmi Sitesi",
+          "url": "https://qrabiye.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Mesa Koru Çarşısı konumu ve ev yapımı kurabiye-patisserie geçmişi"
+        },
+        {
+          "title": "Restoranim Qrabiye",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kahvaltı, pankek, samimi ev atmosferi ve erken kapanış detayları"
+        }
+      ],
+      "pros": [
+        "Mesa Koru içinde yıllardır çizgisini koruyan butik aile sıcaklığı",
+        "Ev yapımı kurabiye ve kahvaltı ikilisi"
+      ],
+      "cons": [
+        "Küçük oturma kapasitesi ve akşam erken kapanış"
+      ],
+      "uncertainties": [
+        "Hafta sonu kahvaltısı için rezervasyon yapılmadan yer bulmak zorlaşabilir"
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cayyolu-kaptanin-yeri",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kaptan'ın Yeri (Konutkent)",
+      "branchName": "Konutkent Carsısı 2 carsısı No.21, Prof. Dr. Ahmet Taner Kışlı Mah., Prof. Dr. Ahmet Taner Kışlalı, 06810 Çankaya/Ankara",
+      "placeId": "ChIJdbPJs9c40xQRT9xnFRMB0WQ",
+      "coordinates": {
+        "lat": 39.8754615,
+        "lng": 32.6743507
+      },
+      "rating": 4.5,
+      "userRatingCount": 581,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7264588855400455247",
+      "recommendedPrimary": [
+        "Dil Balığı Tava & Günlük Mevsim Balığı",
+        "Kalamar Tava & Midye Dolma",
+        "Zeytinyağlı Meze & Balık Çorbası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zeytinyağlı Meze Dolabı & Al-Pişir Pratikliği",
+          "note": "Mevsimlik günlük balıkların yanında taze zeytinyağlı mezeler ve balık çorbası da müdavimler tarafından düzenli alınır.",
+          "proof": "İşletme mutfak menüsü ve yemek rehberi değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Konutkent Çarşısı içinde gösterişten uzak, aile ve mahalle balıkçısı düzeni",
+        "crowdAndNoise": "Gösterişli meyhane yerine taze, günlük temiz balık yemek isteyen Konutkent ve Çayyolu sakinleri",
+        "disadvantage": "Yoğun akşam ve hafta sonlarında içerisi kalabalık ve gürültülü olabilir; porsiyon tartısı net sorulmalıdır",
+        "transit": "Prof. Dr. Ahmet Taner Kışlalı Mahallesi Konutkent 2 Çarşısı No:21."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Kaptan'ın Yeri Resmi Sitesi",
+          "url": "https://kaptaninyeri.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Konutkent balık pişirme ve taze meze-deniz ürünleri menüsü"
+        },
+        {
+          "title": "Sluurpy & Yemeksepeti Kayıtları",
+          "url": "https://www.sluurpy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Dil balığı tava, kalamar, balık çorbası ve kalabalık saat değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Mahalle çarşısı içinde güvenilir günlük taze balık rotasyonu",
+        "Meze ve sıcak deniz ürünleri tazeliği"
+      ],
+      "cons": [
+        "Lüks dekorasyon yerine klasik esnaf-çarşı balıkçısı atmosferi"
+      ],
+      "uncertainties": [
+        "Yoğun hafta sonu saatlerinde servis temposu düşebilir"
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cayyolu-carsihan-lahmacun",
+      "categoryId": "denemelisin",
+      "resolvedName": "Çarşıhan Lahmacun",
+      "branchName": "Prof. Dr. Ahmet Taner Kışlalı, 2818. Cd. No: 25, 06810 Çankaya/Ankara",
+      "placeId": "ChIJ2bI578I50xQRkoE8R8LvH0o",
+      "coordinates": {
+        "lat": 39.8694503,
+        "lng": 32.690433299999995
+      },
+      "rating": 4.5,
+      "userRatingCount": 791,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5341251300782539154",
+      "recommendedPrimary": [
+        "Taş Fırın Çıtır Lahmacun",
+        "Fındık Lahmacun & Adana Dürüm"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Hızlı Fırın Çıkışı & Dürüm Alternatifleri",
+          "note": "İnce hamurlu lahmacunun yanında taş fırın pideleri ve ızgara dürüm çeşitleri de hızlı servis edilir.",
+          "proof": "Yerel menü platformları ve sipariş değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Hızlı öğle ve akşam yemeğine uygun sade fırın-kebapçı oturma düzeni",
+        "crowdAndNoise": "Çıtır hamurlu dürüst lahmacun ve kebap dürüm arayan mahalle müdavimleri",
+        "disadvantage": "Uzun akşam oturumları için değil, hızlı sıcak fırın lezzeti odaklıdır",
+        "transit": "Prof. Dr. Ahmet Taner Kışlalı Mahallesi 2818. Cadde No:25."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Çarşıhan Lahmacun",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "2818. Cd. konumu, taş fırın lahmacun, fındık lahmacun ve Adana dürüm menüsü"
+        },
+        {
+          "title": "Restoranim Çarşıhan",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çıtır hamur ve fiyat-porsiyon dengesi değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Yüksek sipariş hacmine rağmen çıtır taş fırın hamur tutarlılığı",
+        "Hızlı ve erişilebilir fiyat-lezzet dengesi"
+      ],
+      "cons": [
+        "Ambiyans yerine pratik yemek odaklı sade salon"
+      ],
+      "uncertainties": [
+        "Öğle ve akşam yoğunluğunda sıcak servis birkaç dakika gecikebilir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cayyolu-kokorec-kofte",
+      "categoryId": "denemelisin",
+      "resolvedName": "Çayyolu Kokoreç&Köfte",
+      "branchName": "Prof. Dr. Ahmet Taner Kışlalı, 2760. Cd., 06680 Çankaya/Ankara",
+      "placeId": "ChIJ94SKFn450xQRUS90WsaZ_mw",
+      "coordinates": {
+        "lat": 39.8723355,
+        "lng": 32.6895109
+      },
+      "rating": 4.6,
+      "userRatingCount": 230,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://cayyolukokorec.com/",
+      "mapsUri": "https://maps.google.com/?cid=7853883877380861777",
+      "recommendedPrimary": [
+        "Yarım / Tam Ekmek Kokoreç",
+        "Izgara Köfte Ekmek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Izgara Köfte & Geç Saat Sokak Klasikleri",
+          "note": "Kokoreç sevmeyen eşlikçiler için odun-kömür ızgara köfte ve sucuk ekmek seçenekleri de aynı tezgâhtan çıkar.",
+          "proof": "Menü rehberleri ve gece atıştırması değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Hızlı tezgâh servisi ve küçük sade masa alanı",
+        "crowdAndNoise": "Temiz ortamda gevrek kokoreç ve ızgara köfte yemek isteyen Çayyolu sakinleri",
+        "disadvantage": "Gündüz-gece hızlı ayaküstü sokak lezzeti konseptindedir; geniş restoran konforu beklenmemelidir",
+        "transit": "Prof. Dr. Ahmet Taner Kışlalı Mahallesi 2760. Cadde."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Çayyolu Kokoreç",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İnce şiş kokoreç, ızgara köfte, sucuk ekmek ve antrikot menüsü"
+        },
+        {
+          "title": "RestaurantGuru Çayyolu Kokoreç",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Temiz sunum ve yerel değerlendirmeler"
+        }
+      ],
+      "pros": [
+        "Mahalle içinde temiz ve güvenilir kokoreç-köfte standardı",
+        "Hızlı paket ve masa servisi"
+      ],
+      "cons": [
+        "Sınırlı oturma alanı ve sade tezgâh düzeni"
+      ],
+      "uncertainties": [
+        "Gece geç saatlerde paket sipariş trafiği artabilir"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cayyolu-urfali-bekir",
+      "categoryId": "denemelisin",
+      "resolvedName": "Urfalı Kebapçı Bekir & Çarşaf Lahmacun",
+      "branchName": "Prof. Dr. Ahmet Taner Kışlalı, Selçuk Yula Cad 40/4, 06810 Çankaya/Ankara",
+      "placeId": "ChIJgcXZ5tE50xQR0Vz04Sh87oI",
+      "coordinates": {
+        "lat": 39.869515899999996,
+        "lng": 32.6795889
+      },
+      "rating": 4.5,
+      "userRatingCount": 126,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9434614784419192017",
+      "recommendedPrimary": [
+        "Urfa Usulü Çarşaf Lahmacun",
+        "Ciğer Şiş & Sarma Beyti",
+        "Közde Mantar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ciğer Şiş, Beyti & Közde Mantar Eşlikçileri",
+          "note": "Çarşaf lahmacunun dışında zırh kıymalı kebaplar ve közlenmiş mantar ikramları yemek deneyimini tamamlar.",
+          "proof": "Yerel menü kayıtları ve kullanıcı geri bildirimleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sade, temiz ve mahalle kebapçısı sıcaklığında iç salon",
+        "crowdAndNoise": "Park Caddesi çevresinde gösterişsiz Urfa lahmacunu ve ciğer şiş arayanlar",
+        "disadvantage": "Yoğun paket servis saatlerinde hamur çıtırlığı kısa beklemelerde yumuşayabilir; yerinde yemek daha iyidir",
+        "transit": "Prof. Dr. Ahmet Taner Kışlalı Mahallesi Selçuk Yula Caddesi No:40/4."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Urfalı Kebapçı Bekir",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Selçuk Yula Cd. adresi, çarşaf lahmacun, beyti ve ciğer şiş menüsü"
+        },
+        {
+          "title": "Yemeksepeti Değerlendirmeleri",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Lezzet, közde mantar ve hamur kıvamı üzerine misafir notları"
+        }
+      ],
+      "pros": [
+        "Büyük ince açılan çarşaf lahmacun ve ciğer şiş dengesi",
+        "Park Caddesi çevresine göre dengeli bütçe seviyesi"
+      ],
+      "cons": [
+        "Paket serviste çıtırlık yerinde tüketim kadar yüksek olmayabilir"
+      ],
+      "uncertainties": [
+        "Yoğun akşam saatlerinde taş fırın çıkış sırası uzayabilir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    }
+  ]
+}

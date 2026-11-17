@@ -1,0 +1,1256 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "ankara-cankaya-umitkoy-beysukent",
+  "displayName": "Ümitköy & Beysukent, Çankaya, Ankara",
+  "verifiedAt": "2026-11-17T19:05:36.521Z",
+  "selectedCount": 17,
+  "rejectedControls": [
+    {
+      "id": "ctrl-umitkoy-pizzalocale-chain",
+      "resolvedName": "Pizza Locale",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-umitkoy-hmbrgr-chain",
+      "resolvedName": "HMBRGR Ümitköy",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-umitkoy-mamasburger-chain",
+      "resolvedName": "Mama's Burger & Cajun Galeria",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-umitkoy-arabica-chain",
+      "resolvedName": "Arabica Coffee House",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-umitkoy-arabica-garden-chain",
+      "resolvedName": "ÜMİTKÖY GARDEN ARABİCA COFFEE HOUSE",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-umitkoy-caffeditoee-chain",
+      "resolvedName": "Caffé Di Toeé Ümitköy",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-umitkoy-roastnberry-chain",
+      "resolvedName": "Roast’n Berry Beysupark",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-umitkoy-dayikurek-chain",
+      "resolvedName": "Dayı Kürek Lahmacun (Ümitköy)",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-umitkoy-kruvasante-chain",
+      "resolvedName": "Kruvasante Ümitköy",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-umitkoy-mikel-chain",
+      "resolvedName": "Mikel Coffee Company",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-umitkoy-duale-noncoffee",
+      "resolvedName": "Duale Patisserie · Chocolate",
+      "reason": "kahve_category_not_coffee_specialist:dessert_restaurant"
+    },
+    {
+      "id": "ctrl-umitkoy-out-beytepe-kruvasanka",
+      "resolvedName": "Kruvasanka",
+      "reason": "outside_strict_neighborhood:Bbox dışında (39.86726, 32.70978)"
+    },
+    {
+      "id": "ctrl-umitkoy-out-mustafakemal-croissant",
+      "resolvedName": "Croissant & Co.",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Ümit/Umit/Ümitköy/Umitkoy/Mutlukent/Beysukent/Angora/Beytepe/Çayyolu/Cayyolu, adres: Mustafa Kemal, Dumlupınar Blv. Tepe Prime İş Merkezi No:13 No:266 A, 06510 Çankaya/Ankara)"
+    },
+    {
+      "id": "ctrl-umitkoy-low-qness",
+      "resolvedName": "Q'Ness Patisserie & Breakfast",
+      "reason": "below_quality_threshold:★3.8(782)"
+    },
+    {
+      "id": "ctrl-umitkoy-low-doublezero",
+      "resolvedName": "Double Zero Ümitköy",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-umitkoy-low-finestra",
+      "resolvedName": "Finestra Ümitköy",
+      "reason": "below_quality_threshold:★4.3(1435)"
+    },
+    {
+      "id": "ctrl-umitkoy-lagetom-chain",
+      "resolvedName": "Lagetom Coffee Roasters Ümitköy",
+      "reason": "chain_or_franchise"
+    }
+  ],
+  "venues": [
+    {
+      "id": "umitkoy-no95-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "No95",
+      "branchName": "Mutlukent, Doğan Taşdelen Blv. No: 95, 06810 Çankaya/Ankara",
+      "placeId": "ChIJi6nNKMA50xQRKhIHHMBySD4",
+      "coordinates": {
+        "lat": 39.8961182,
+        "lng": 32.7044019
+      },
+      "rating": 4.8,
+      "userRatingCount": 948,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4487963198104212010",
+      "recommendedPrimary": [
+        "Rich Burger",
+        "Chicken Cutlet Hero (Cajun Tavuk)",
+        "Kaşık Patates Kızartması"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Cajun Baharatlı Çıtır Tavuk & Kaşık Patates",
+          "note": "Dana burgerlerin yanında özgün Cajun baharatlı çıtır tavuk sandviçler ve kaşık patates sunumuyla müdavim kitlesi kazanmıştır.",
+          "proof": "İşletme menü kayıtları ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Doğan Taşdelen Bulvarı üzerinde modern, ferah iç oturma alanı",
+        "crowdAndNoise": "Kalabalık Galleria arkası sokaklarına girmeden hızlı ama nitelikli burger veya çıtır tavuk arayanlar",
+        "disadvantage": "Akşam ve hafta sonu paket yoğunluğu nedeniyle bekleme oluşabilir; menüsü burger ve çıtır tavuk ağırlıklıdır",
+        "transit": "Mutlukent Mahallesi Doğan Taşdelen Bulvarı No:95 (Ümitköy Metro çıkışı yürüyüş mesafesi)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR No95 Ümitköy",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Rich Burger, Chicken Cutlet Hero, kaşık patates ve konum detayları"
+        },
+        {
+          "title": "Yemeksepeti & RestaurantGuru No95",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ümitköy Cajun tavuk ve fiyat-performans memnuniyeti değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Hem dana burgerde hem Cajun çıtır tavukta yüksek tutarlılık",
+        "Ümitköy Metro durağına yakın konum"
+      ],
+      "cons": [
+        "Tamamen fast-casual konseptte, uzun akşam oturumları için tasarlanmamış"
+      ],
+      "uncertainties": [
+        "Hafta sonu öğle-akşam arası servis süresi sipariş hacmine bağlı olarak uzayabilir"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "umitkoy-fifty-fifty-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Fifty Fifty Burger",
+      "branchName": "Mutlukent Mah. Mutluköy Sitesi 1946. Sokak, Çayyolu, Ümitköy No:6, 06800 Çankaya/Ankara",
+      "placeId": "ChIJrU1DT3s50xQR8m0p_AJe3Xg",
+      "coordinates": {
+        "lat": 39.8960423,
+        "lng": 32.705117
+      },
+      "rating": 4.7,
+      "userRatingCount": 82,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.fiftyfifty.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=8709220621317926386",
+      "recommendedPrimary": [
+        "Trüf Smash Burger / Meksika Burger",
+        "Steak Sandviç & Baharatlı Patates"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Steak Sandviç & Baharatlı Patates Alternatifleri",
+          "note": "Smash burgerlerin yanında yumuşak etli steak sandviçler ve özel baharatlı patates tabakları hazırlanır.",
+          "proof": "İşletme menü kayıtları ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Mutluköy sokak dokusu içinde butik ve samimi burgerci oturma düzeni",
+        "crowdAndNoise": "Dışı çıtır içi sulu smash burger ve steak sandviç arayan Ümitköy burger tutkunları",
+        "disadvantage": "Pazartesi günleri kapalıdır; küçük butik kapasite nedeniyle akşam saatlerinde yer beklemek gerekebilir",
+        "transit": "Mutlukent Mahallesi Mutluköy Sitesi 1946. Sokak No:6 (Galleria arkası)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Fifty Fifty Resmi Sitesi",
+          "url": "http://www.fiftyfifty.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Smash ve steak sandviç konsepti, Mutluköy 1946. Sk. konumu"
+        },
+        {
+          "title": "Restoranim Fifty Fifty Burger",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Trüf burger, steak sandviç ve Pazartesi kapalı gün bilgisi"
+        }
+      ],
+      "pros": [
+        "Yüksek ısıda doğru karamelize edilen tek şubeli smash burger mutfağı",
+        "Baharatlı patates ve özel sos uyumu"
+      ],
+      "cons": [
+        "Pazartesi günleri hizmet vermemesi ve sınırlı oturma alanı"
+      ],
+      "uncertainties": [
+        "Akşam geç saatlerde stok tükenmesine bağlı olarak menü daralabilir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "umitkoy-grey-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "grey coffee etc.",
+      "branchName": "Mutlukent, 1949. Sk. No:10, 06800 Çankaya/Ankara",
+      "placeId": "ChIJ88EDR7Y50xQRhs6riZyW4fs",
+      "coordinates": {
+        "lat": 39.8952758,
+        "lng": 32.705096499999996
+      },
+      "rating": 4.8,
+      "userRatingCount": 644,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.coffeegrey.com/",
+      "mapsUri": "https://maps.google.com/?cid=18149953572348612230",
+      "recommendedPrimary": [
+        "İmza Honcoff / Nitelikli Filtre Kahve",
+        "Lotus Creamy Cheesecake"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Geniş Bahçe Oturumu & Geç Akşam Kapanışı",
+          "note": "Mutluköy villaları arasında gece yarısına kadar açık kalan ferah bahçesiyle akşam kahvesi buluşmalarının da adresidir.",
+          "proof": "İşletme kayıtları ve şehir değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaçlı geniş villa bahçesi ve sıcak tonlarda tasarlanmış iç salon",
+        "crowdAndNoise": "Geç saatlere kadar açık bahçede nitelikli kahve içmek isteyen Ümitköy müdavimleri",
+        "disadvantage": "Hafta sonu bahçe masaları çabuk dolar; kalabalık saatlerde gürültü düzeyi yükselebilir",
+        "transit": "Mutlukent Mahallesi 1949. Sokak No:10 (Galleria arkası)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Grey Coffee Resmi Sitesi",
+          "url": "http://www.coffeegrey.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Mutlukent 1949. Sk. konumu, üçüncü nesil kahve yaklaşımı ve bahçe düzeni"
+        },
+        {
+          "title": "Yandex Haritalar grey coffee",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Honcoff, cheesecake, geç kapanış ve geniş bahçe değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Ümitköy içindeki en ferah villalar arası kahve bahçelerinden biri",
+        "Uzun saatler ve istikrarlı içecek kalitesi"
+      ],
+      "cons": [
+        "Popüler akşam saatlerinde sakin çalışma ortamı yerine sosyal buluşma havası ağır basar"
+      ],
+      "uncertainties": [
+        "Yaz-kış bahçe ısıtma düzeni masa konumuna göre değişebilir"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "umitkoy-11-renaissance",
+      "categoryId": "kahve",
+      "resolvedName": "11 Renaissance Coffee",
+      "branchName": "Mutlukent, 1950. Sk. Mutluköy sitesi no:18, 06810 Çankaya/Ankara",
+      "placeId": "ChIJ0RoWoGU50xQRFLKyy2uPApI",
+      "coordinates": {
+        "lat": 39.895444,
+        "lng": 32.705841
+      },
+      "rating": 4.4,
+      "userRatingCount": 112,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.11renaissancecoffee.com/",
+      "mapsUri": "https://maps.google.com/?cid=10521129372632658452",
+      "recommendedPrimary": [
+        "Filtre Kahve / Flat White",
+        "Taze Kruvasan & Antep Fıstıklı Tiramisu"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yüksek Tavanlı Çalışma Masaları & Tatlı Vitrini",
+          "note": "Rahat oturum ergonomi ve elektrik prizi erişimini günlük taze kruvasan ve vitrin tatlılarıyla destekler.",
+          "proof": "İşletme tanıtımları ve bağımsız seyahat rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Yüksek tavanlı, gün ışıklı, masalara yakın priz destekli geniş çalışma düzeni",
+        "crowdAndNoise": "Ümitköy içinde uzun saatler bilgisayarla çalışmak veya sessiz sohbet etmek isteyenler",
+        "disadvantage": "Günün ortasında çalışma masaları hızla dolduğu için öğleden önce gitmek avantaj sağlar",
+        "transit": "Mutlukent Mahallesi 1950. Sokak Mutluköy Sitesi No:18."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "11 Renaissance Resmi Sitesi",
+          "url": "https://www.11renaissancecoffee.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Çalışma konsepti, priz altyapısı, kahve ve tatlı vitrini bilgileri"
+        },
+        {
+          "title": "Türk Travel Radar",
+          "url": "https://turktravelradar.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yüksek tavanlı çalışma ortamı, Antep fıstıklı tiramisu ve gün ışığı incelemesi"
+        }
+      ],
+      "pros": [
+        "Yüksek tavan, gün ışığı ve priz erişimi ile ergonomik çalışma düzeni",
+        "Kahve yanında taze tiramisu ve kruvasan seçenekleri"
+      ],
+      "cons": [
+        "Hafta içi yoğun çalışma saatlerinde boş prizli masa bulmak zorlaşabilir"
+      ],
+      "uncertainties": [
+        "Hafta sonları çalışma yerine sosyal kafe kalabalığı artabilir"
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "umitkoy-altemur-orman",
+      "categoryId": "date",
+      "resolvedName": "Altemur Orman",
+      "branchName": "Mutlukent, 2037. Cd. No:16, 06800 Çankaya/Ankara",
+      "placeId": "ChIJq4pkNs9H0xQRn18DOHbbvow",
+      "coordinates": {
+        "lat": 39.8929445,
+        "lng": 32.721653499999995
+      },
+      "rating": 4.7,
+      "userRatingCount": 107,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.altemurorman.com/",
+      "mapsUri": "https://maps.google.com/?cid=10141784711677304735",
+      "recommendedPrimary": [
+        "Tatar Usulü Bonfile / Dana Pöç",
+        "Bayburt Pazı Sarması & Izgara Ahtapot",
+        "Mevsim Tadım Menüsü"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mevsimsel Şef Tadım Menüsü & Orman Dokusu",
+          "note": "Alakart ana yemeklerin yanında mevsimlik yerel ürünleri modern teknikle işleyen tadım menüsü seçeneği bulunur.",
+          "proof": "İşletme mutfak menüsü ve gastronomi değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Beysukent orman sınırına bakan rafine aydınlatmalı fine-casual salon",
+        "crowdAndNoise": "Özel yıl dönümü, sakin şef mutfağı ve mevsimsel gastronomi deneyimi arayan çiftler",
+        "disadvantage": "Bölgenin en yüksek bütçe segmentindedir; rezervasyonsuz akşam servisi yakalamak zordur",
+        "transit": "Mutlukent Mahallesi (Beysukent) 2037. Cadde No:16 (Angora Bulvarı güney kolu)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Altemur Orman Resmi Sitesi",
+          "url": "https://www.altemurorman.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Fine-casual doğa konsepti, alakart ve mevsimsel tadım menüsü"
+        },
+        {
+          "title": "Bosco & Yerel Gastronomi Dizini",
+          "url": "https://boscoankara.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Şef mutfağı, yerel malzeme yaklaşımı ve Beysukent konumu"
+        }
+      ],
+      "pros": [
+        "Şehir karmaşasından kopuk Beysukent doğası içinde nitelikli şef mutfağı",
+        "Yerel Anadolu tatlarını yaratıcı teknikle buluşturması"
+      ],
+      "cons": [
+        "Yüksek bütçe sınıfı ve önceden rezervasyon zorunluluğu"
+      ],
+      "uncertainties": [
+        "Mevsimsel tadım menüsü içerikleri dönemsel olarak güncellenir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "umitkoy-mualla-meyhane",
+      "categoryId": "date",
+      "resolvedName": "Mualla Meyhane Ümitköy (Çayyolu)",
+      "branchName": "Mutlukent, 1946. Sk. No:14, 06810 Çankaya/Ankara",
+      "placeId": "ChIJs7SH_-k50xQRlNJHy5dUFgs",
+      "coordinates": {
+        "lat": 39.8962825,
+        "lng": 32.7049336
+      },
+      "rating": 4.9,
+      "userRatingCount": 152,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://muallameyhane.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=798918994832118420",
+      "recommendedPrimary": [
+        "Günlük Meze Tepsisi Seçkisi",
+        "Deniz Ürünlü Ara Sıcaklar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Canlı Müzik & Zengin Meze Tepsisi",
+          "note": "Günlük çıkan geniş soğuk meze seçenekleri akşam ilerledikçe canlı müzik eşliğinde uzun sohbet sofralarına dönüşür.",
+          "proof": "İşletme mutfak sunumları ve şehir rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Yakın ve sıcak düzenlenmiş, sahne/müzik algısı yüksek Ümitköy meyhane salonu",
+        "crowdAndNoise": "Bol meze çeşitliliği ve eğlenceli canlı müzikli rakı akşamı planlayan çift ve arkadaş masaları",
+        "disadvantage": "Canlı müzik saatlerinde ortam enerjik ve sesli olabildiği için sakin fısıltı buluşmalarına uygun değildir",
+        "transit": "Mutlukent Mahallesi 1946. Sokak No:14 (Galleria arkası)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Mualla Meyhane Resmi Sitesi",
+          "url": "https://muallameyhane.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Günlük 40+ meze, taze deniz ürünleri ve canlı müzik meyhane konsepti"
+        },
+        {
+          "title": "Restoranim Mualla Meyhane",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ümitköy şıklığı, meze tazeliği ve akşam deneyimi değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Günlük çok çeşitli taze meze dolabı ve ilgili masa servisi",
+        "Ümitköy içinde güçlü akşam enerjisi"
+      ],
+      "cons": [
+        "Hafta sonu canlı müzikte ses düzeyi yüksek olabiliyor"
+      ],
+      "uncertainties": [
+        "Cuma-cumartesi akşamlarında erken rezervasyon gerekebilir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "umitkoy-tingir-mingir",
+      "categoryId": "date",
+      "resolvedName": "Tıngır Mıngır Meyhane",
+      "branchName": "Mutlukent, Angora Blv. NO: 50, 06800 Çankaya/Ankara",
+      "placeId": "ChIJo9oFVHVH0xQRAT-eAfhNOPE",
+      "coordinates": {
+        "lat": 39.891931,
+        "lng": 32.723408000000006
+      },
+      "rating": 4.8,
+      "userRatingCount": 586,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.tingirmingir.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=17381728489410805505",
+      "recommendedPrimary": [
+        "Ege Esintili Soğuk Mezeler",
+        "Deniz Ürünleri Ara Sıcakları & Ana Balık"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Arka Bahçe Huzuru & Ege Meze Mutfağı",
+          "note": "Gürültülü eğlence meyhanelerinden ayrılarak daha sakin arka bahçe düzeninde sohbet ve Ege mutfağı sunar.",
+          "proof": "İşletme kayıtları ve misafir değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Huzurlu, yeşillikli arka bahçe masaları ve sıcak ahşap iç salon",
+        "crowdAndNoise": "Gürültüden uzak sakin Ege sofrası ve şık sohbet akşamı isteyen Beysukent-Ümitköy çiftleri",
+        "disadvantage": "Çok yüksek fiyat segmentindedir; meze ve deniz ürünleri hesabını yüksek tutabilir",
+        "transit": "Mutlukent Mahallesi Angora Bulvarı No:50 (Beysukent)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Tıngır Mıngır Resmi Sitesi",
+          "url": "https://www.tingirmingir.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Angora Bulvarı Ege meyhane konsepti, bahçe ve deniz ürünleri menüsü"
+        },
+        {
+          "title": "Restoranim Tıngır Mıngır",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Arka bahçe atmosferi ve meze kalitesi değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Sakin arka bahçe dokusuyla sohbeti bozmayan meyhane atmosferi",
+        "Ege mezeleri ve deniz ürünlerinde yüksek puan istikrarı"
+      ],
+      "cons": [
+        "Yüksek fiyat düzeyi"
+      ],
+      "uncertainties": [
+        "Bahçe masaları güzel havalarda önceden dolduğu için yer ayırtılmalıdır"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "umitkoy-vinus-wine-house",
+      "categoryId": "date",
+      "resolvedName": "Vinus Wine House",
+      "branchName": "Mutlukent, Angora Blv. No:30, 06800 Çankaya/Ankara",
+      "placeId": "ChIJG5uI1zJH0xQRDI2mSdR0xNc",
+      "coordinates": {
+        "lat": 39.8935921,
+        "lng": 32.727237699999996
+      },
+      "rating": 4.5,
+      "userRatingCount": 171,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15547680268707335436",
+      "recommendedPrimary": [
+        "Kadeh / Şişe Şarap Kavı Seçkisi",
+        "Peynir & Şarküteri Tabağı",
+        "Dünya Mutfağından Eşlikçiler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Peynir-Şarküteri Eşleşmeleri & Şarap Dışında Kokteyller",
+          "note": "Geniş şarap listesini kadeh uyumlu peynir-şarküteri tabakları ve klasik bar kokteylleri tamamlar.",
+          "proof": "Şehir rehberleri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Rahat koltuklu, loş aydınlatmalı sakin şarap barı ve iç masalar",
+        "crowdAndNoise": "Rakı veya kalabalık pub yerine sakin ortamda kadeh eşliğinde sohbet etmek isteyen çiftler",
+        "disadvantage": "Ana yemek odaklı tam restoran yerine şarap-bistro atıştırmalığı ağırlığındadır",
+        "transit": "Mutlukent Mahallesi Angora Bulvarı No:30 (Beysukent)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Restoranim Vinus Wine House",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Geniş şarap kavı, sakin atmosfer, peynir tabağı ve kokteyl değerlendirmeleri"
+        },
+        {
+          "title": "MenuLux & Yandex Haritalar Vinus",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Angora Bulvarı konumu ve bistro menü doğrulaması"
+        }
+      ],
+      "pros": [
+        "Beysukent içinde nadide kalan sakin, gösterişsiz kaliteli şarap barı",
+        "İyi seçilmiş peynir ve eşlikçi tabak dengesi"
+      ],
+      "cons": [
+        "Geniş sıcak ana yemek menüsü bekleyen masalara uygun olmayabilir"
+      ],
+      "uncertainties": [
+        "Kav stoğundaki butik şişeler sezona göre değişebilir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "umitkoy-nils-artisan-bakery",
+      "categoryId": "kahvalti",
+      "resolvedName": "Nil's Artisan Bakery",
+      "branchName": "Mutlukent, 1943. Cd. No:3, 06800 Çankaya/Ankara",
+      "placeId": "ChIJV2CCSIg40xQRTGNfD8h4v4w",
+      "coordinates": {
+        "lat": 39.894433899999996,
+        "lng": 32.704324
+      },
+      "rating": 4.6,
+      "userRatingCount": 381,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://nilsartisanbakery.com/",
+      "mapsUri": "https://maps.google.com/?cid=10141957686508348236",
+      "recommendedPrimary": [
+        "Artizan Tereyağlı Kruvasan",
+        "Ekşi Mayalı Ekmek & Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Doğal Ekşi Mayalı Somunlar & Kafe Oturumu",
+          "note": "Masada yenilen kat kat kruvasan ve kahvenin yanında ev için günlük çıkan ekşi mayalı ekmekler de hızla tükenir.",
+          "proof": "İşletme üretim kayıtları ve gastronomi değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Vitrin başında şık, aydınlık artizan fırın-kafe oturma düzeni",
+        "crowdAndNoise": "Serpme kahvaltı yerine iyi kruvasan, ekşi mayalı ekmek ve temiz sabah kahvesi arayanlar",
+        "disadvantage": "Günün ilerleyen saatlerinde popüler kruvasanlar ve ekmekler bitebilir; klasik Türk serpme kahvaltısı yoktur",
+        "transit": "Mutlukent Mahallesi 1943. Cadde No:3 (Çayyolu Metro yakın çevresi)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Nil's Artisan Bakery Resmi Sitesi",
+          "url": "https://nilsartisanbakery.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Mutlukent 1943. Cd. adresi ve artizan ekşi maya-kruvasan üretimi"
+        },
+        {
+          "title": "RestaurantGuru & Yandex Nil's Bakery",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kat kat kruvasanlar, ekşi maya ekmekler ve kahve uyumu değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Tek şubeli özenli artizan hamur ve maya işçiliği",
+        "Hem masada kahvaltı hem eve ekşi maya ekmek alma imkânı"
+      ],
+      "cons": [
+        "Geniş serpme kahvaltı yerine fırın-patisserie tarzı hafif sabah seçkisi"
+      ],
+      "uncertainties": [
+        "Hafta sonu sabahları kruvasan tepsileri öğleye varmadan tükenebilir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "umitkoy-ayderishi-firin",
+      "categoryId": "kahvalti",
+      "resolvedName": "Ayder'ishi Fırın & Cafe",
+      "branchName": "Mutlukent, 1961. Cd. No:11, 06800 Çankaya/Ankara",
+      "placeId": "ChIJw6ZAgno50xQRqyAgEnzoDww",
+      "coordinates": {
+        "lat": 39.8976815,
+        "lng": 32.7078671
+      },
+      "rating": 4.6,
+      "userRatingCount": 408,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=869168872683479211",
+      "recommendedPrimary": [
+        "Karadeniz Serpme Kahvaltı & Sıcak Kuymak",
+        "Laz Böreği & Fırın Çeşitleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yöresel Karadeniz Tatlıları & Fırın Vitrini",
+          "note": "Sabah kuymak-serpme sofrasının ardından vitrinden Laz böreği ve yöresel hamur işleri gün boyu eşlik eder.",
+          "proof": "İşletme mutfak sunumları ve şehir dizinleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ailelere ve hafta sonu kalabalık kahvaltı masalarına uygun ferah kafe-fırın salonu",
+        "crowdAndNoise": "Sıcak kuymaklı bol çeşitli Karadeniz serpme kahvaltısı arayan Ümitköy aile ve arkadaş grupları",
+        "disadvantage": "Hafta sonu geç kahvaltı saatlerinde yoğunluk yüksek olur",
+        "transit": "Mutlukent Mahallesi 1961. Cadde No:11 (Ümitköy Metro çıkışı çevresi)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Ayder'ishi Resmi Sitesi",
+          "url": "https://ayderishi.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Karadeniz serpme kahvaltısı, sıcak kuymak/mıhlama ve yöresel fırın konsepti"
+        },
+        {
+          "title": "Yandex Haritalar Ayder'ishi",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mutlukent 1961. Cd. konumu, kuymak lezzeti ve kahvaltı memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Ümitköy merkezinde yöresel Karadeniz kahvaltısı ve gerçek kuymak sunması",
+        "Ümitköy Metro yakınlığı"
+      ],
+      "cons": [
+        "Hafta sonu geç sabah saatlerinde masalar dolabiliyor"
+      ],
+      "uncertainties": [
+        "Bayram ve hafta sonu günlerinde serpme kahvaltı için önceden teyit faydalıdır"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "umitkoy-savarona-simit",
+      "categoryId": "kahvalti",
+      "resolvedName": "Savarona Simit Fırını",
+      "branchName": "Ümit, 2494/3. Sk. No:8, 06810 Yenimahalle/Çankaya/Ankara",
+      "placeId": "ChIJwX-PZok40xQRlQxlFVvAkOI",
+      "coordinates": {
+        "lat": 39.8931725,
+        "lng": 32.701638599999995
+      },
+      "rating": 4.4,
+      "userRatingCount": 294,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://menuburada.com/savarona-simit-firini-umitkoy-ankara/",
+      "mapsUri": "https://maps.google.com/?cid=16325760146651548821",
+      "recommendedPrimary": [
+        "Fırından Yeni Çıkmış Ankara Simidi & Beyaz Peynir",
+        "Çay & Taze Poğaça-Börek Seçkisi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Fırın Çeşitleri & Pratik Çay-Simit Molası",
+          "note": "Uzun serpme kahvaltı yerine işe veya yürüyüşe giderken sıcacık simit, börek ve demli çay almak için idealdir.",
+          "proof": "Yerel menü kayıtları ve mahalle değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Hızlı kahvaltı ve fırın alışverişine uygun sade mahalle fırını oturma alanı",
+        "crowdAndNoise": "Sıcak Ankara simidiyle hızlı, bütçe dostu sabah kahvaltısı yapmak isteyen Ümitköy sakinleri",
+        "disadvantage": "Geleneksel şık kafe-brunch ambiyansı arayanlar yerine pratik mahalle fırını çizgisindedir",
+        "transit": "Ümit Mahallesi 2494/3. Sokak No:8 (Çayyolu Metro & Osmanağa Konakları yakını)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Savarona Simit",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Simit, unlu mamuller ve pratik kahvaltı menüsü bilgileri"
+        },
+        {
+          "title": "MenuBurada Savarona Simit Fırını",
+          "url": "https://menuburada.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "2494/3. Sokak konumu ve fırın ürünleri değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Giriş bütçe seviyesinde günlük taze Ankara simidi ve börek çeşitleri",
+        "Sabah erken saatlerden itibaren hızlı servis"
+      ],
+      "cons": [
+        "Uzun hafta sonu brunch oturumu yerine hızlı fırın atmosferi"
+      ],
+      "uncertainties": [
+        "Sıcak simit çıkış saatleri sabah erken dilimlerde en yoğun tempodadır"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "umitkoy-nukteli",
+      "categoryId": "denemelisin",
+      "resolvedName": "Nükteli",
+      "branchName": "Osmanağa Konakları, Ümit, 2494/3. Sk. no 6, 06810 Çankaya/Ankara",
+      "placeId": "ChIJx1HY2o850xQRaKaxFscJyTY",
+      "coordinates": {
+        "lat": 39.893129699999996,
+        "lng": 32.7013653
+      },
+      "rating": 4.4,
+      "userRatingCount": 996,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://nukteli.com/",
+      "mapsUri": "https://maps.google.com/?cid=3947697299050833512",
+      "recommendedPrimary": [
+        "Beş Peynirli Köz Patlıcan & Fesleğenli Girit",
+        "Yaprak Ciğer / Kalamar Tava",
+        "Nükteli Special Kebap / Beef Wellington"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Alakart & Fiks Menü Dengesi + Canlı Performanslar",
+          "note": "Klasik meze-ara sıcaktan ödün vermeden ana yemeklerde Beef Wellington ve Lokum Bonfile gibi teknik tabaklara uzanır.",
+          "proof": "İşletme resmi menüsü ve gastronomi değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Osmanağa Konakları içinde modern, geniş ve canlı akşam aydınlatmalı salon",
+        "crowdAndNoise": "Yüksek enerjili akşam sofrasında iddialı meze ve et ana yemekleri arayan kutlama grupları",
+        "disadvantage": "Çok yüksek fiyat segmentindedir; canlı müzik akşamlarında masa arası mesafe kalabalıklaşabilir",
+        "transit": "Ümit Mahallesi 2494/3. Sokak No:6 Osmanağa Konakları."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Nükteli Resmi Sitesi",
+          "url": "https://nukteli.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Alakart ve fiks menü detayları, Osmanağa Konakları konumu"
+        },
+        {
+          "title": "GüncelMenü Nükteli",
+          "url": "https://www.guncelmenu.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Meze, ara sıcak ve özel şef ana yemekleri menü kayıtları"
+        }
+      ],
+      "pros": [
+        "Yaklaşık bin değerlendirmede çizgisini koruyan yüksek mutfak standartı",
+        "Hem meyhane hem güçlü et ana yemeği alternatifi"
+      ],
+      "cons": [
+        "Çok yüksek bütçe kategorisinde yer alır"
+      ],
+      "uncertainties": [
+        "Hafta sonu canlı müzikli gecelerde fix menü uygulaması geçerli olabilir"
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "umitkoy-kavakli-restaurant",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kavaklı Restaurant Beysukent",
+      "branchName": "Mutlukent Mahallesi, Angora Bulvarı, 2015, Mutlukent, Cadde No:4/8, 06800 Çankaya/Ankara",
+      "placeId": "ChIJFfRdCphT0xQRULD4WLKr8ZI",
+      "coordinates": {
+        "lat": 39.886901,
+        "lng": 32.7166895
+      },
+      "rating": 4.8,
+      "userRatingCount": 179,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://beysukent.kavaklirestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=10588432981409968208",
+      "recommendedPrimary": [
+        "Mangalda Adana Kebap / Kuzu Pirzola",
+        "Zengin Meze Dolabı & Taş Fırın Pide"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ferah Teras & Meze-Izgara Dengesi",
+          "note": "Grup yemeklerinde meze dolabından seçimler doğrudan mangaldan çıkan pirzola ve kebaplarla dengelenir.",
+          "proof": "İşletme mutfak kayıtları ve şehir değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Beysukent villa aksında ferah teraslı ve düzenli aile-iş restoranı salonu",
+        "crowdAndNoise": "Beysukent ve Angora çevresinde düzenli serviste mangal kebap ve meze yemek isteyen aileler",
+        "disadvantage": "Üst segment fiyat düzeyindedir; akşam grup yemekleri için rezervasyon gerekir",
+        "transit": "Mutlukent Mahallesi Angora Bulvarı 2015. Cadde No:4/8 (Beysukent)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Kavaklı Beysukent Resmi Sitesi",
+          "url": "https://beysukent.kavaklirestaurant.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Mangal ızgaralar, meze dolabı, ferah teras ve Beysukent adresi"
+        },
+        {
+          "title": "Restoranim Kavaklı Restaurant",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Adana kebap, pirzola, teras düzeni ve aile sofrası incelemeleri"
+        }
+      ],
+      "pros": [
+        "Beysukent içinde ferah teras ve oturmuş aile/iş yemeği standardı",
+        "Izgara etler yanında güçlü meze dolabı"
+      ],
+      "cons": [
+        "Yüksek bütçe sınıfı ve özel araç gerektiren konum"
+      ],
+      "uncertainties": [
+        "Hafta sonu aile buluşmalarında teras masaları hızlı dolar"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "umitkoy-patron-sapkali",
+      "categoryId": "denemelisin",
+      "resolvedName": "Patron Şapkalı Meyhane",
+      "branchName": "Mutlukent, 1946. Sk. no:4, 06800 Çankaya/Ankara",
+      "placeId": "ChIJSZ8i8v850xQR6bJbiPTIYVw",
+      "coordinates": {
+        "lat": 39.8960449,
+        "lng": 32.7051736
+      },
+      "rating": 4.7,
+      "userRatingCount": 542,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://patronsapkalımeyhane.com/",
+      "mapsUri": "https://maps.google.com/?cid=6656822676815590121",
+      "recommendedPrimary": [
+        "Akdeniz-Yunan Meze Seçkisi",
+        "Deniz Mahsullü Ara Sıcaklar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Geleneksel Fasıl Atmosferi & Dengeli Fiyat Politikası",
+          "note": "Lüks sunumlu yeni nesil meyhanelerden ayrılarak samimi fasıl ortamını erişilebilir masa maliyetiyle korur.",
+          "proof": "İşletme tanıtımları ve harita değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Neşeli fasıl masaları ve samimi klasik Ümitköy meyhane salonu",
+        "crowdAndNoise": "Samimi ortamda Ege-Akdeniz mezeleri eşliğinde fasıl dinlemek isteyen arkadaş grupları",
+        "disadvantage": "Neşeli ve sesli fasıl akşamları olduğu için sakin bir baş başa konuşma mekânı değildir",
+        "transit": "Mutlukent Mahallesi 1946. Sokak No:4 (Galleria arkası)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Patron Şapkalı Meyhane Resmi Sitesi",
+          "url": "https://xn--patronsapkalmeyhane-r5c.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Akdeniz-Yunan mezeleri, deniz ürünleri ve fasıl kültürü detayları"
+        },
+        {
+          "title": "Yandex Haritalar Patron Şapkalı",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mutlukent 1946. Sk. konumu, neşeli atmosfer ve yüksek puan istikrarı"
+        }
+      ],
+      "pros": [
+        "Ümitköy meyhane ortalamasına göre makul bütçe ve samimi yaklaşım",
+        "Ege-Yunan mezeleri ile geleneksel fasıl uyumu"
+      ],
+      "cons": [
+        "Fasıl saatlerinde yüksek ortam sesi"
+      ],
+      "uncertainties": [
+        "Masa koşulları ve güncel fasıl takvimi önceden teyit edilmelidir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "umitkoy-angora-grill",
+      "categoryId": "denemelisin",
+      "resolvedName": "Angora Grill",
+      "branchName": "Mutlukent, Angora Blv. No:29, 06800 Çankaya/Ankara",
+      "placeId": "ChIJBfjHONo50xQRsb_wX7TvF1k",
+      "coordinates": {
+        "lat": 39.8828526,
+        "lng": 32.7135257
+      },
+      "rating": 4.5,
+      "userRatingCount": 158,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6419863351822696369",
+      "recommendedPrimary": [
+        "Yağlı Kara (Kuzu Karski) & Zırh Adana",
+        "Kuzu Çöp Şiş & Dürüm"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Gece Geç Saat Mangal Servisi & Doyurucu Dürümler",
+          "note": "Beysukent ve Angora hattında akşam geç saatlerde sıcak zırh Adana veya kuzu çöp şiş bulmak için öne çıkan noktadır.",
+          "proof": "Sipariş platformu ve menü değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Pratik, düzenli ve hızlı servise yönelik Beysukent ocakbaşı-ızgara düzeni",
+        "crowdAndNoise": "Geç saatte nitelikli zırh Adana, yağlı kara veya mangal dürüm yemek isteyen Beysukent sakinleri",
+        "disadvantage": "Bölge genelinde fiyat düzeyi mahalle kebapçılarının biraz üzerindedir",
+        "transit": "Mutlukent Mahallesi Angora Bulvarı No:29 (Beysukent)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Yemeksepeti Angora Grill",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yağlı kara, zırh Adana, kuzu çöp şiş, kokoreç menüsü ve puan doğrulaması"
+        },
+        {
+          "title": "Yandex Haritalar Angora Grill",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Angora Bulvarı konumu, geç saat servisi ve doyuruculuk notları"
+        }
+      ],
+      "pros": [
+        "Zırh kıyması ve kuzu etinde düzgün pişirim kalitesi",
+        "Gece geç saatlere uzanan ocakbaşı erişimi"
+      ],
+      "cons": [
+        "Klasik mahalle dönercilerine kıyasla üst segment porsiyon fiyatları"
+      ],
+      "uncertainties": [
+        "Geç akşam siparişlerinde yoğunluk nedeniyle teslimat veya masa süresi uzayabilir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "umitkoy-berilya-pide",
+      "categoryId": "denemelisin",
+      "resolvedName": "Berilya Pide Kebap Salonu",
+      "branchName": "Ümit, 2494. Sk. No:70 D:7, 06490 Çankaya/Ankara",
+      "placeId": "ChIJhQetJIw40xQRtCV37vFEjSM",
+      "coordinates": {
+        "lat": 39.890803,
+        "lng": 32.70017
+      },
+      "rating": 4.5,
+      "userRatingCount": 193,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2561779568922273204",
+      "recommendedPrimary": [
+        "Karadeniz Usulü Kıymalı / Kavurmalı Pide",
+        "Et Kebap & Izgara Çeşitleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Aile İşletmesi İlgisi & Temiz Esnaf Mutfağı",
+          "note": "Büyük kalabalık kebap saraylarından uzak, tertemiz mutfağı ve güler yüzlü servisiyle mahallenin müdavim lokantasıdır.",
+          "proof": "Yerel menü kayıtları ve kullanıcı değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük, tertemiz ve sakin aile işletmesi lokantası düzeni",
+        "crowdAndNoise": "Abartısız, temiz malzemeli Karadeniz pidesi ve dürüst kebap yemek isteyen Ümitköy sakinleri",
+        "disadvantage": "Gösterişli dekorasyon veya geç gece eğlencesi sunmayan mütevazı bir esnaf salonudur",
+        "transit": "Ümit Mahallesi 2494. Sokak No:70 D:7 (Ümitköy içi)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Restoranim Berilya Pide",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Küçük temiz aile işletmesi, Karadeniz/Anadolu pidesi değerlendirmesi"
+        },
+        {
+          "title": "Menu-TR Berilya Pide",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Amasya yöresi et kalitesi ve güler yüzlü hizmet detayları"
+        }
+      ],
+      "pros": [
+        "Mahalle arasında tertemiz aile mutfağı güvenilirliği",
+        "Amasya eti ve hamur dengesi"
+      ],
+      "cons": [
+        "Küçük ölçekli sade esnaf salonu atmosferi"
+      ],
+      "uncertainties": [
+        "Hafta sonu öğle saatlerinde mahalle içi aile masaları nedeniyle dolabilir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "umitkoy-coffee-craft-town",
+      "categoryId": "denemelisin",
+      "resolvedName": "Coffee Craft Town",
+      "branchName": "Mutlukent Mah. Mutluköy Sitesi 1944.Cadde, Mutlukent, 1946. Sk. No:1, 06800 Çankaya/Ankara",
+      "placeId": "ChIJ800ammI40xQRLUz0UCceC6Q",
+      "coordinates": {
+        "lat": 39.895896199999996,
+        "lng": 32.705053899999996
+      },
+      "rating": 4.4,
+      "userRatingCount": 1482,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.craftyolda.com/",
+      "mapsUri": "https://maps.google.com/?cid=11820574801174744109",
+      "recommendedPrimary": [
+        "Roast Beef & Cheddar Ekşi Maya Sandviç / Cheeseburger",
+        "New York Cheesecake / Cookie & V60"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zengin Tatlı Vitrini & Ekşi Maya Sıcak Sandviçler",
+          "note": "Kahvaltıdan akşam saatlerine uzanan sürede hem V60 kahve-tatlı ikilisi hem doyurucu sıcak sandviç ve burger servisi sunar.",
+          "proof": "İşletme resmi menüsü ve restoran rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mutluköy villaları içinde geniş bahçeli, hareketli çok amaçlı cafe-bistro salonu",
+        "crowdAndNoise": "Aynı masada biri burger/sandviç isterken diğeri cheesecake ve üçüncü dalga kahve arayan kalabalık gruplar",
+        "disadvantage": "Popülerliği nedeniyle bahçe saatleri hareketli ve yer yer gürültülüdür; sakin espresso barı arayanlar için büyük ölçeklidir",
+        "transit": "Mutlukent Mahallesi Mutluköy Sitesi 1944. Cd. & 1946. Sk. No:1."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Coffee Craft Resmi Sitesi",
+          "url": "http://www.craftyolda.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Mutluköy Town şubesi, kahve, ekşi maya sandviç ve tatlı mutfağı konsepti"
+        },
+        {
+          "title": "Menu-TR Coffee Craft Town",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "New York cheesecake, dev donut, Roast Beef sandviç ve V60 değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Yüksek oylama hacmine rağmen yemek, sandviç, tatlı ve kahve standardını koruması",
+        "Geniş bahçe kapasitesi"
+      ],
+      "cons": [
+        "Büyük ve kalabalık düzeni nedeniyle sakin butik kafe hissi vermez"
+      ],
+      "uncertainties": [
+        "Hafta sonu bahçe masalarında boş yer bulmak zaman alabilir"
+      ],
+      "selectionScore": 71,
+      "selectedForSnapshot": true
+    }
+  ]
+}

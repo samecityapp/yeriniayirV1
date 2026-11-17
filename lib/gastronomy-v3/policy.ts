@@ -635,6 +635,23 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'basil gaziosmanpaşa',
   'basil gaziosmanpasa',
   'gurme tost',
+  'caffé di toeé',
+  'caffe di toee',
+  'coffee gate',
+  'roast’n berry',
+  "roast'n berry",
+  'cezzar',
+  'zahire pastanesi',
+  'kök cağ kebap',
+  'kok cag kebap',
+  'daphne coffee',
+  'dayı kürek',
+  'dayi kurek',
+  'le pain',
+  'balıkçıköy',
+  'balikcikoy',
+  'if sokak',
+  'pizza house',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([
