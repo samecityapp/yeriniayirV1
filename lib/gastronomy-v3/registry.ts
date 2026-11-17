@@ -79,6 +79,8 @@ import ankaraCankayaCayyoluSnapshotJson from './regions/ankara-cankaya-cayyolu.j
 import ankaraCankayaUmitkoyBeysukentSnapshotJson from './regions/ankara-cankaya-umitkoy-beysukent.json';
 import ankaraCankayaAyranciSnapshotJson from './regions/ankara-cankaya-ayranci.json';
 import ankaraCankayaCukurambarSnapshotJson from './regions/ankara-cankaya-cukurambar.json';
+import aydinMerkezSnapshotJson from './regions/aydin-merkez.json';
+import balikesirMerkezSnapshotJson from './regions/balikesir-merkez.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -171,6 +173,10 @@ const ANKARA_CANKAYA_AYRANCI_SNAPSHOT =
   ankaraCankayaAyranciSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 const ANKARA_CANKAYA_CUKURAMBAR_SNAPSHOT =
   ankaraCankayaCukurambarSnapshotJson as unknown as V3VerifiedRegionSnapshot;
+const AYDIN_MERKEZ_SNAPSHOT =
+  aydinMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
+const BALIKESIR_MERKEZ_SNAPSHOT =
+  balikesirMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -254,6 +260,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   ANKARA_CANKAYA_UMITKOY_BEYSUKENT_SNAPSHOT,
   ANKARA_CANKAYA_AYRANCI_SNAPSHOT,
   ANKARA_CANKAYA_CUKURAMBAR_SNAPSHOT,
+  AYDIN_MERKEZ_SNAPSHOT,
+  BALIKESIR_MERKEZ_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -980,6 +988,33 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'kizilirmak-cukurambar': ANKARA_CANKAYA_CUKURAMBAR_SNAPSHOT,
   'kizilirmak-ankara': ANKARA_CANKAYA_CUKURAMBAR_SNAPSHOT,
   'ufuk-universitesi-caddesi': ANKARA_CANKAYA_CUKURAMBAR_SNAPSHOT,
+  'aydin-merkez': AYDIN_MERKEZ_SNAPSHOT,
+  aydin: AYDIN_MERKEZ_SNAPSHOT,
+  efeler: AYDIN_MERKEZ_SNAPSHOT,
+  'efeler-aydin': AYDIN_MERKEZ_SNAPSHOT,
+  'aydin-efeler': AYDIN_MERKEZ_SNAPSHOT,
+  'efeler-merkez': AYDIN_MERKEZ_SNAPSHOT,
+  'adnan-menderes-bulvari': AYDIN_MERKEZ_SNAPSHOT,
+  'guzelhisar-aydin': AYDIN_MERKEZ_SNAPSHOT,
+  'mimar-sinan-aydin': AYDIN_MERKEZ_SNAPSHOT,
+  'kurtulus-aydin': AYDIN_MERKEZ_SNAPSHOT,
+  'girne-mahallesi-aydin': AYDIN_MERKEZ_SNAPSHOT,
+  'hasan-efendi-aydin': AYDIN_MERKEZ_SNAPSHOT,
+  'sevgi-yolu-aydin': AYDIN_MERKEZ_SNAPSHOT,
+  'balikesir-merkez': BALIKESIR_MERKEZ_SNAPSHOT,
+  balikesir: BALIKESIR_MERKEZ_SNAPSHOT,
+  karesi: BALIKESIR_MERKEZ_SNAPSHOT,
+  altieylul: BALIKESIR_MERKEZ_SNAPSHOT,
+  'karesi-balikesir': BALIKESIR_MERKEZ_SNAPSHOT,
+  'altieylul-balikesir': BALIKESIR_MERKEZ_SNAPSHOT,
+  'milli-kuvvetler': BALIKESIR_MERKEZ_SNAPSHOT,
+  'milli-kuvvetler-caddesi': BALIKESIR_MERKEZ_SNAPSHOT,
+  'anafartalar-caddesi': BALIKESIR_MERKEZ_SNAPSHOT,
+  'bahcelievler-balikesir': BALIKESIR_MERKEZ_SNAPSHOT,
+  pasaalani: BALIKESIR_MERKEZ_SNAPSHOT,
+  'plevne-balikesir': BALIKESIR_MERKEZ_SNAPSHOT,
+  'avlu-balikesir': BALIKESIR_MERKEZ_SNAPSHOT,
+  eskikuyumcular: BALIKESIR_MERKEZ_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {

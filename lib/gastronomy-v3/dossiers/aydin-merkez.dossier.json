@@ -1,0 +1,1956 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "aydin-merkez",
+  "displayName": "Aydın Merkez (Efeler)",
+  "verifiedAt": "2026-11-17T20:33:18.395Z",
+  "selectedCount": 26,
+  "rejectedControls": [
+    {
+      "id": "ctrl-aydin-terrapizza-chain",
+      "resolvedName": "Terra Pizza - Efeler Batıgazi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-aydin-pasaport-chain",
+      "resolvedName": "Pasaport Pizza Aydın Efeler",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-aydin-dominos-chain",
+      "resolvedName": "Domino's Pizza Aydın",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-aydin-paninopizza-chain",
+      "resolvedName": "Paninopizza aydın",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-aydin-burgeryiyelim-chain",
+      "resolvedName": "Burger Yiyelim",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-aydin-laos-chain",
+      "resolvedName": "Laos Coffee Aydın",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-aydin-pablo-chain",
+      "resolvedName": "Pablo Artisan Coffee",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-aydin-companycoffee-chain",
+      "resolvedName": "The Company Coffee Aydın",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-aydin-daniels-chain",
+      "resolvedName": "Daniel’s Coffee - Aydın",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-aydin-goodforyou-chain",
+      "resolvedName": "Good For You",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-aydin-ozsut-chain",
+      "resolvedName": "Özsüt Mimarsinan",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-aydin-ziyafetpide-chain",
+      "resolvedName": "Zİyafet Pide",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-aydin-ustunbaklava-noncoffee",
+      "resolvedName": "Üstün Baklava & Künefe | Aydın Efeler'in En İyi Baklava ve Tatlıcısı",
+      "reason": "kahve_category_not_coffee_specialist:dessert_restaurant"
+    },
+    {
+      "id": "ctrl-aydin-out-ortaklar-ahmet",
+      "resolvedName": "Kasap Ahmetin Yeri Çöp Şiş",
+      "reason": "outside_strict_neighborhood:İlçe uyuşmazlığı (beklenen: Efeler/Aydın Merkez/Merkez)"
+    },
+    {
+      "id": "ctrl-aydin-out-soke-akalar",
+      "resolvedName": "Akalar Çöp Şiş",
+      "reason": "outside_strict_neighborhood:İlçe uyuşmazlığı (beklenen: Efeler/Aydın Merkez/Merkez)"
+    },
+    {
+      "id": "ctrl-aydin-low-enistem",
+      "resolvedName": "Eniştem Lokantası",
+      "reason": "below_quality_threshold:★4.2(1481)"
+    },
+    {
+      "id": "ctrl-aydin-low-menderespide",
+      "resolvedName": "Menderes Pide Salonu",
+      "reason": "below_quality_threshold:★4.2(1011)"
+    },
+    {
+      "id": "ctrl-aydin-low-mayroka",
+      "resolvedName": "Mayroka Kahvaltı ve Peynir Evi",
+      "reason": "below_quality_threshold:★4.1(389)"
+    },
+    {
+      "id": "ctrl-aydin-low-feraye",
+      "resolvedName": "Feraye Meyhanesi Aydın",
+      "reason": "below_quality_threshold:★3.9(86)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "aydin-breen-co",
+      "categoryId": "pizza",
+      "resolvedName": "Breen Co.",
+      "branchName": "Köprülü - Veysipaşa, Hükümet Blv. No:72, 09100 Aydın Merkez/Aydın",
+      "placeId": "ChIJwRR-LgAruRQRJuoa0dk6CWs",
+      "coordinates": {
+        "lat": 37.852981899999996,
+        "lng": 27.844344999999997
+      },
+      "rating": 4.9,
+      "userRatingCount": 73,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/breenco.tr",
+      "mapsUri": "https://maps.google.com/?cid=7712760544039201318",
+      "recommendedPrimary": [
+        "İtalyan Taş Fırın Pizza",
+        "Poşe Yumurtalı Kahvaltı Tabağı",
+        "Taze Kruvasan"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fransız Kruvasan & Patüseri Vitrini",
+          "note": "Pizza dışında sabah ve öğle saatlerinde günlük çıkan kruvasan ve pastacılık ürünleri öne çıkıyor.",
+          "proof": "Breen Co. Instagram menüsü ve Menum.co listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "İçeride şık kafe-restoran masaları ve bulvar cephesinde oturma alanı",
+        "crowdAndNoise": "Merkezde buluşan genç yetişkinler, öğrenciler ve hafta sonu kafe müdavimleri",
+        "disadvantage": "Menü pizza yanında patüseri ağırlıklı olduğu için saf klasik İtalyan trattoria arayanlara hibrit gelebilir",
+        "transit": "Hükümet Blv. No:72 · Kent Meydanı yürüyüş mesafesi"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Breen Co. Resmi Instagram",
+          "url": "https://www.instagram.com/breenco.tr",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Hükümet Bulvarı pizzalar ve günlük patüseri paylaşımları"
+        },
+        {
+          "title": "Menum.co Aydın Rehberi",
+          "url": "https://menum.co/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İtalyan pizzaları, kruvasan ve ekmek çeşitleri incelemesi"
+        },
+        {
+          "title": "Yandex & Migros Yerel Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Atmosfer, temizlik ve sunum istikrarına dayalı misafir puanları"
+        }
+      ],
+      "pros": [
+        "Merkezi bulvar üzerinde pizza ve taze kruvasanı birleştiren tek şubeli işletme",
+        "Düzenli sunum ve malzeme kalitesi"
+      ],
+      "cons": [
+        "Hafta sonları yoğun saatlerde masa bekleme ihtimali"
+      ],
+      "uncertainties": [
+        "Günlük vitrin tatlı çeşitleri saatlere göre değişiklik gösterebilir"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-venezia-italy",
+      "categoryId": "pizza",
+      "resolvedName": "Venezia Italy Restaurant",
+      "branchName": "Orta Mah. Denizli Bulv. No:81/4 Tekstilpark, Orta, 09010 Efeler/Aydın",
+      "placeId": "ChIJ0_MeoCsruRQR9HIig-nvEcQ",
+      "coordinates": {
+        "lat": 37.843386699999996,
+        "lng": 27.8564901
+      },
+      "rating": 4.5,
+      "userRatingCount": 149,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://veneziarestoran.com/",
+      "mapsUri": "https://maps.google.com/?cid=14128337292244447988",
+      "recommendedPrimary": [
+        "İnce Hamurlu İtalyan Pizza",
+        "Kremalı Soslu Makarna",
+        "Venezia Özel Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Yapımı Makarna & Şarap Eşleştirmesi",
+          "note": "Pizza yanında parmesan soslu makarnalar ve akşam içecek seçenekleri misafirler tarafından tercih ediliyor.",
+          "proof": "veneziarestoran.com resmi menüsü ve Yandex değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tekstilpark içinde geniş bahçe ve kapalı salon oturma düzeni",
+        "crowdAndNoise": "Akşam yemeği grupları, aileler ve park çevresi yürüyüşçüleri",
+        "disadvantage": "Çarşı merkezine yürüme mesafesinden biraz uzakta, Tekstilpark içinde konumlanıyor",
+        "transit": "Denizli Blv. No:81/4 · Tekstilpark yerleşkesi içi"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Venezia Resmi Web Sitesi",
+          "url": "https://veneziarestoran.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Tekstilpark pizza, makarna ve akşam yemeği menüsü"
+        },
+        {
+          "title": "Yandex Mekan Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Park içi ferah oturum ve makarna/pizza lezzet puanları"
+        }
+      ],
+      "pros": [
+        "Yeşil alan içinde rahat park ve geniş masa imkânı",
+        "Pizza ve makarna çeşitliliği"
+      ],
+      "cons": [
+        "Merkez yaya caddelerine göre araç veya toplu taşıma gerektirir"
+      ],
+      "uncertainties": [
+        "Hafta sonu bahçe masaları hava durumuna göre dolabilir"
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-kozmopolit-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "KÖZMOPOLİT BURGER",
+      "branchName": "Zafer, Pınarbaşı Cd. no : 8/A, 09010 Efeler/Aydın",
+      "placeId": "ChIJteVnUZQruRQR8wt6Ya0bRHI",
+      "coordinates": {
+        "lat": 37.8499084,
+        "lng": 27.8474126
+      },
+      "rating": 4.7,
+      "userRatingCount": 130,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://aydinhamburgerservisi.com/",
+      "mapsUri": "https://maps.google.com/?cid=8233736450218789875",
+      "recommendedPrimary": [
+        "Közde Klasik Burger",
+        "Özel Soslu Közmopolit Burger",
+        "Baharatlı Patates Kızartması"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kare Ekmek & Ev Yapımı Acı-Tatlı Soslar",
+          "note": "Köfteye eşlik eden isli acılı ve sarımsaklı özel soslar tek başına da sıkça övülüyor.",
+          "proof": "aydinhamburgerservisi.com menüsü ve Aydın Havadisleri incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak mahalle burgercisi tarzında iç ve cadde kenarı sınırlı masalar",
+        "crowdAndNoise": "Akşamları öğrenciler, burger tutkunları ve paket servis müdavimleri",
+        "disadvantage": "Pınarbaşı yokuşu hattında otopark sınırlı ve salon kapasitesi küçüktür",
+        "transit": "Zafer Mah., Pınarbaşı Cd. No:8/A · Efeler Belediye arkası aksı"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Közmopolit Resmi Sitesi",
+          "url": "https://aydinhamburgerservisi.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Közde pişirme tekniği ve kare ekmek burger menüsü"
+        },
+        {
+          "title": "Aydın Havadisleri Gastronomi",
+          "url": "https://aydinhavadisleri.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Efeler öne çıkan butik burger durakları derlemesi"
+        },
+        {
+          "title": "Yemeksepeti & Yandex Kayıtları",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Köfte dokusu ve sos lezzetine dair yüksek puanlar"
+        }
+      ],
+      "pros": [
+        "Köz ateşinde pişen sulu dana burger köftesi",
+        "Tek şubeli Efeler üretimi özgün tarifler"
+      ],
+      "cons": [
+        "Küçük iç mekânda yoğun saatlerde beklemek gerekebiliyor"
+      ],
+      "uncertainties": [
+        "Yoğun paket sipariş saatlerinde servis süresi uzayabilir"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-c-chef",
+      "categoryId": "hamburger",
+      "resolvedName": "C-Chef",
+      "branchName": "Ramazanpaşa mahallesi, 1. Sk. No:8/B, 09100 Efeler/Aydın",
+      "placeId": "ChIJGaLezw4ruRQRpfRZPw6WFmk",
+      "coordinates": {
+        "lat": 37.8516274,
+        "lng": 27.844518599999997
+      },
+      "rating": 4.6,
+      "userRatingCount": 37,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7572404811406636197",
+      "recommendedPrimary": [
+        "Brioche Dana Burger",
+        "Çıtır Tavuk Burger",
+        "Ev Yapımı Soslu Patates"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çıtır Tavuk Burger & Özel Dip Soslar",
+          "note": "Dana burgerin yanı sıra baharatlı çıtır tavuk seçeneği ve el yapımı sarımsaklı-ballı hardal sosları öne çıkıyor.",
+          "proof": "Restoranim.net ve Yandex müşteri değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ara sokakta kompakt iç masa düzeni ve hızlı sokak servisi",
+        "crowdAndNoise": "Gençler, çarşı çevresinde hızlı ve nitelikli öğle/akşam yemeği arayanlar",
+        "disadvantage": "Kompakt dükkan ölçüsü kalabalık gruplar için uygun değildir; paket trafiği yoğun olabilir",
+        "transit": "Ramazanpaşa Mah., 1. Sk. No:8/B · Adnan Menderes Blv. ara sokağı"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Restoranim.net C-Chef Profili",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Brioche ekmek ve el yapımı burger sosları değerlendirmesi"
+        },
+        {
+          "title": "Yandex & Migros Mekan Verileri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çıtır tavuk ve et burger lezzet geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Brioche ekmek tazeliği ve yağ çekmeyen çıtır tavuk kaplaması",
+        "Zincir dışı butik üretim"
+      ],
+      "cons": [
+        "Oturma alanı dar olduğundan gruplara elverişli değil"
+      ],
+      "uncertainties": [
+        "Akşamüstü yoğunluğunda masaların çabuk dolması"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-reychef-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "ReyChef Tost - Hamburger",
+      "branchName": "Cumhuriyet, 1991. Sk. No:4D, 09100 Efeler/Aydın",
+      "placeId": "ChIJixlJAaoruRQRVul4C-BWVlM",
+      "coordinates": {
+        "lat": 37.8417276,
+        "lng": 27.8390591
+      },
+      "rating": 4.9,
+      "userRatingCount": 41,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/reychefaydin",
+      "mapsUri": "https://maps.google.com/?cid=6005082673410271574",
+      "recommendedPrimary": [
+        "ReyChef Özel Hamburger",
+        "Kaşarlı & Sucuklu Artizan Tost",
+        "Taze Baharatlı Patates"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kalın Ekmekli Artizan Tostlar",
+          "note": "Hamburgerle aynı titizlikte hazırlanan özel ekşi-maya dokulu tostlar öğün alternatifi sunuyor.",
+          "proof": "Yemeksepeti ve Restoranim.net Aydın sokak lezzetleri değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı sokak mutfağı; içeride birkaç masa ile paket ve hızlı servis",
+        "crowdAndNoise": "Çevredeki çalışanlar, öğrenciler ve akşam hafif yemek arayanlar",
+        "disadvantage": "Geleneksel restoran konforu sunmaz; küçük sokak dükkanı düzenindedir",
+        "transit": "Cumhuriyet Mah., 1991. Sk. No:4D · İstasyon Bulvarı yakını"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "ReyChef Instagram",
+          "url": "https://www.instagram.com/reychefaydin",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Günlük burger ve artizan tost hazırlıkları"
+        },
+        {
+          "title": "Restoranim.net Değerlendirmeleri",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Burger ve tost porsiyon doyuruculuğu ve hijyen notları"
+        },
+        {
+          "title": "Yemeksepeti & Yandex Müşteri Yorumları",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Efeler yerel değerlendirmelerinde sürekli yüksek puan"
+        }
+      ],
+      "pros": [
+        "Taze hazırlanmış hamburger köftesi ve tost birleşimi",
+        "Merkezi konum ve samimi esnaf sıcaklığı"
+      ],
+      "cons": [
+        "Sınırlı oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Geç akşam saatlerinde bazı ekmek çeşitleri tükenebilir"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-orions-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Orions coffee",
+      "branchName": "Köprülü - Veysipaşa, 1629. Sk. no91/b, 09100 Efeler/Aydın",
+      "placeId": "ChIJSXiQVzYruRQR9sWoI2HpCQQ",
+      "coordinates": {
+        "lat": 37.8507106,
+        "lng": 27.8432328
+      },
+      "rating": 5,
+      "userRatingCount": 51,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=291020254361470454",
+      "recommendedPrimary": [
+        "V60 / Filtre Kahve (Kendi Kavrumu)",
+        "Flat White",
+        "Iced Americano"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Soğuk Sandviçler & El Yapımı Seramik Kupalar",
+          "note": "Kahve eşliğinde taze soğuk sandviçler sunuluyor; dükkanda yerel seramik kupalar da sergileniyor.",
+          "proof": "Yandex Mekanlar ve Restoranim.net misafir incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Rahat çalışma masaları ve sakin iç mekân oturumu",
+        "crowdAndNoise": "Üniversite öğrencileri, uzaktan çalışanlar ve nitelikli çekirdek arayanlar",
+        "disadvantage": "Girişi ara sokakta kaldığından ilk kez gidenler için tabela takibi gerektirir ve kapasitesi sınırlıdır",
+        "transit": "Köprülü-Veysipaşa, 1629. Sk. No:91/B · Aydın Merkez çarşı içi"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Restoranim.net Orions Coffee",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kendi kavurduğu çekirdekler ve ders çalışma dostu sakin ortam incelemesi"
+        },
+        {
+          "title": "Yandex Mekan Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahve lezzet istikrarı, seramik kupalar ve soğuk sandviç geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Kendi kavrumu taze çekirdekler",
+        "Merkez gürültüsünden uzak sakin çalışma ortamı"
+      ],
+      "cons": [
+        "Ara sokak konumu ve sınırlı oturma alanı"
+      ],
+      "uncertainties": [
+        "Single-origin çekirdek menüsü dönemsel kavruma göre değişir"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-remnant-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Remnant Coffee",
+      "branchName": "Güzelhisar, 43. Sk. 5/a, 09000 Efeler/Aydın",
+      "placeId": "ChIJQZpwO6sruRQREpOauQbnkYk",
+      "coordinates": {
+        "lat": 37.844341299999996,
+        "lng": 27.8447486
+      },
+      "rating": 4.7,
+      "userRatingCount": 97,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9912958270888907538",
+      "recommendedPrimary": [
+        "Flat White",
+        "Cortado",
+        "Cold Brew"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Masa Oyunları & Tatlı Eşlikçiler",
+          "note": "Kahve molası dışında arkadaş gruplarının masa oyunlarıyla uzun süre vakit geçirdiği sosyal bir ortam sunuyor.",
+          "proof": "BugunNereye ve Restaurant Guru Efeler incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak iç salon masaları ve sokak seviyesi açık oturum",
+        "crowdAndNoise": "Güzelhisar gençleri, düzenli müdavimler ve küçük gruplar",
+        "disadvantage": "Akşam saatlerinde masa oyunları nedeniyle çalışma sessizliği yerine sohbet temposu artabilir",
+        "transit": "Güzelhisar Mah., 43. Sk. 5/A · Adnan Menderes Blv. paralel sokağı"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "BugunNereye Aydın Kahve Rehberi",
+          "url": "https://www.bugunnereye.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Güzelhisar üçüncü nesil kahve durakları ve barista eğitimi vurgusu"
+        },
+        {
+          "title": "Restaurant Guru & Yandex Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahve kalitesi ve sıcak mahalle kafesi puanlaması"
+        }
+      ],
+      "pros": [
+        "Dengeli espresso ekstraksiyonu ve ilgili barista ekibi",
+        "Samimi sokak köşesi ortamı"
+      ],
+      "cons": [
+        "Akşamları kalabalık gruplarla gürültü seviyesi yükselebiliyor"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamları boş masa bulmak için erken gitmek gerekebilir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-in-qr-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "In Qr Coffee",
+      "branchName": "Güzelhisar, 59. Sk. No:1, 09100 Efeler/Aydın",
+      "placeId": "ChIJL8kVFXEruRQRrHNuvev7sdY",
+      "coordinates": {
+        "lat": 37.8406354,
+        "lng": 27.845579899999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 44,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.inqrcoffee.com/",
+      "mapsUri": "https://maps.google.com/?cid=15470423184908383148",
+      "recommendedPrimary": [
+        "Filtre Kahve",
+        "Iced Latte",
+        "Americano"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Tatlı & Kurabiye Eşlikçileri",
+          "note": "Sıcak ve soğuk kahvelerin yanında günlük taze dilim pasta ve kurabiye alternatifleri servis ediliyor.",
+          "proof": "inqrcoffee.com resmi menüsü ve Yandex değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Modern iç salon oturumu ve rahat kahve barı düzeni",
+        "crowdAndNoise": "Bölge öğrencileri, çevre ofis çalışanları ve günlük kahve müdavimleri",
+        "disadvantage": "Küçük ölçekli işletme olduğu için geniş kalabalık masalar için sınırlı alan sunar",
+        "transit": "Güzelhisar Mah., 59. Sk. No:1 · Efeler merkez yürüyüş aksı"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "In Qr Coffee Resmi Sitesi",
+          "url": "https://www.inqrcoffee.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Özel çekirdek seçkisi ve sıcak/soğuk kahve menüsü"
+        },
+        {
+          "title": "Yandex Mekanlar Efeler",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Uygun bütçe ve kahve tazeliğine yönelik misafir değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Ulaşılabilir fiyat-kalite dengesi",
+        "Merkezde hızlı ve güler yüzlü barista servisi"
+      ],
+      "cons": [
+        "Küçük dükkan alanında akşamüstü saatlerinde masa doluluğu"
+      ],
+      "uncertainties": [
+        "Tatlı çeşitleri gün içi tüketime göre değişmektedir"
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-slouv-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Slouv Coffee Space",
+      "branchName": "Mimar Sinan, Yörük Ali Efe Blv. No:33, 09100 Efeler/Aydın",
+      "placeId": "ChIJEWxZXAAtuRQRMZ5npwBqBTc",
+      "coordinates": {
+        "lat": 37.8545099,
+        "lng": 27.8116518
+      },
+      "rating": 4.6,
+      "userRatingCount": 64,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3964691598010719793",
+      "recommendedPrimary": [
+        "Matcha Latte",
+        "Iced Flat White",
+        "Cortado"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Cookie & Ekşi Mayalı Atıştırmalıklar",
+          "note": "Kahve ve matcha servisinin yanında günlük pişirilen yumuşak dokulu kurabiye ve unlu mamuller tercih ediliyor.",
+          "proof": "Restoranim.net ve Yemeksepeti Efeler kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş, ferah pencereli iç alan ve dış kaldırım masaları",
+        "crowdAndNoise": "Mimar Sinan sakinleri, dijital çalışanlar ve kaliteli matcha/kahve arayanlar",
+        "disadvantage": "Mimar Sinan ana aksında fiyat seviyesi mahalle kahvehanelerine kıyasla orta-üst banttadır",
+        "transit": "Mimar Sinan Mah., Yörük Ali Efe Blv. No:33"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Restoranim.net Slouv Coffee",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ferah mimari, matcha çeşitleri ve cookie sunumu"
+        },
+        {
+          "title": "Yemeksepeti & Yandex Kayıtları",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahve ve atıştırmalık tutarlılığı değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Mimar Sinan aksındaki ferah tasarım ve başarılı matcha barı",
+        "Çalışma için rahat masa aralıkları"
+      ],
+      "cons": [
+        "Çarşı merkezine yürüyüşten ziyade ulaşım gerektirir"
+      ],
+      "uncertainties": [
+        "Hafta sonu sabah saatlerinde kahvaltılık ürünler hızla tükenebilir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-palermo-italian",
+      "categoryId": "date",
+      "resolvedName": "Palermo Italian Lounge",
+      "branchName": "Hasanefendi - Ramazan Paşa, 1913. Sk. no:8/C, 09100 Efeler/Aydın",
+      "placeId": "ChIJgZxtsqEruRQR5Pdw_GBWZl8",
+      "coordinates": {
+        "lat": 37.849559,
+        "lng": 27.842699
+      },
+      "rating": 4.8,
+      "userRatingCount": 512,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6874276855779751908",
+      "recommendedPrimary": [
+        "İki Aşamalı Maya Napoli Pizza",
+        "El Yapımı Taze Makarna",
+        "İmza Kokteyller"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Tiramisu & Kokteyl Eşleşmesi",
+          "note": "Yemek sonunda özgün tarifle sunulan tiramisu ve bar menüsündeki kokteyller akşam buluşmalarını tamamlar.",
+          "proof": "Aydın Detay incelemesi ve QRfix Aydın gastro-pub rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "İtalyan sokağı atmosferli iç salon ve keyifli akşam masaları",
+        "crowdAndNoise": "Akşam yemekleri, çiftler ve müzik eşliğinde kokteyl sohbetleri",
+        "disadvantage": "Akşam saatlerinde kokteyl bar temposu nedeniyle hareketli ve gürültülü olabilir; yer bulmak için erken gitmek gerekir",
+        "transit": "Hasanefendi - Ramazan Paşa, 1913. Sk. No:8/C · Eski çarşı ara sokağı"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Aydın Detay Palermo İncelemesi",
+          "url": "https://aydindetay.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İki aşamalı mayalı Napoli hamuru, makarna ve tiramisu detayları"
+        },
+        {
+          "title": "QRfix & İlkÜç Efeler Kayıtları",
+          "url": "https://qrfix.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kokteyl bar kalitesi ve yoğun saatlerde masa doluluğu notları"
+        }
+      ],
+      "pros": [
+        "El yapımı İtalyan mutfağı ile kokteyl bar kültürünü dengeli buluşturur",
+        "Merkezi konum ve yüksek değerlendirme istikrarı"
+      ],
+      "cons": [
+        "Hafta sonu akşamları yer bulma ve gürültü düzeyi"
+      ],
+      "uncertainties": [
+        "Kalabalık akşamlarda kokteyl ve mutfak çıkış süreleri uzayabilir"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-gala-restoran",
+      "categoryId": "date",
+      "resolvedName": "Gala Restoran",
+      "branchName": "İÇ KAPI, Mimar Sinan, Mimar Sinan Blv. NO: 1 NO: 3, 09010 Efeler/Aydın",
+      "placeId": "ChIJmSVotPMtuRQRvq3mV0MHIBE",
+      "coordinates": {
+        "lat": 37.8479185,
+        "lng": 27.8107297
+      },
+      "rating": 4.7,
+      "userRatingCount": 221,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1233994283718454718",
+      "recommendedPrimary": [
+        "Gala Özel Izgara Et",
+        "Taş Fırın İtalyan Pizza",
+        "Cheese / Texas Gurme Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mimar Sinan Akşam Kokteyl & Kahve Barı",
+          "note": "Ana yemek sonrası kahve ve tatlı servisi için aynı mekânda devam edilebilmesi buluşmaları kolaylaştırıyor.",
+          "proof": "galaburger.com resmi sitesi ve Restoranim.net incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ferah, modern şık iç salon ve bulvara bakan teras oturumu",
+        "crowdAndNoise": "Çiftler, kutlama masaları ve Mimar Sinan akşam misafirleri",
+        "disadvantage": "Geniş konseptli modern bistro olduğu için klasik ocakbaşı ya da müstakil meyhane dokusu arayanlara daha kurumsal gelebilir",
+        "transit": "Mimar Sinan Mah., Mimar Sinan Blv. No:1/3"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Gala Resmi Web Sitesi",
+          "url": "https://galaburger.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Et ızgaralar, taş fırın pizzalar ve burger menüleri"
+        },
+        {
+          "title": "Restoranim.net & Migros Rehberi",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Servis düzeni, şık atmosfer ve lezzet istikrarı"
+        }
+      ],
+      "pros": [
+        "Şık buluşmalar için yüksek konforlu oturma düzeni",
+        "Farklı damak zevklerine uyan zengin mutfak"
+      ],
+      "cons": [
+        "Hafta sonu akşamları yoğun masa trafiği"
+      ],
+      "uncertainties": [
+        "Sezonluk canlı etkinlik akşamlarında masa durumu değişebilir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-et-balik",
+      "categoryId": "date",
+      "resolvedName": "AYDIN ET&BALIK RESTAURANT",
+      "branchName": "Kemer, 1757. Sk. no/6, 09100 Efeler/Aydın",
+      "placeId": "ChIJg_9_cOgtuRQR0lflHPXB-XI",
+      "coordinates": {
+        "lat": 37.8633489,
+        "lng": 27.8226376
+      },
+      "rating": 4.4,
+      "userRatingCount": 636,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/aydinetbalik",
+      "mapsUri": "https://maps.google.com/?cid=8284866248020678610",
+      "recommendedPrimary": [
+        "Taze Deniz Balığı & Kılıç/Levrek Izgara",
+        "Soğuk Ege Mezeleri",
+        "Antrikot / Et Spesiyalleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ege Soğuk Meze Tezgâhı & Gün Batımı Terası",
+          "note": "Zeytinyağlı meze seçkisi ve Tralleis yamacına bakan manzara akşam sofralarının temel çekim noktasıdır.",
+          "proof": "Sektör Aydın incelemesi ve mekan Instagram duyuruları"
+        }
+      ],
+      "suitability": {
+        "seating": "Manzaralı teras masaları ve özenli beyaz örtülü/modern iç salon",
+        "crowdAndNoise": "Özel akşam buluşmaları, aile yemekleri ve iş misafirleri",
+        "disadvantage": "Üst-orta fiyat bandındadır ve şehir merkezinin kuzey yamacında kaldığından araçla ulaşım daha rahattır",
+        "transit": "Kemer Mah., 1757. Sk. No:6 · Tralleis yolu üzeri"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Aydın Et & Balık Instagram",
+          "url": "https://www.instagram.com/aydinetbalik",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Et ve taze balık servisleri ile manzaralı teras sunumu"
+        },
+        {
+          "title": "Sektör Aydın Gastronomi",
+          "url": "https://sektoraydin.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tralleis manzaralı gün batımı terası ve meze çeşitliliği"
+        },
+        {
+          "title": "Yandex Mekan Puanları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Özel gün akşam yemeklerinde kalite ve sunum değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Şehir ışıklarına ve Tralleis yamacına hakim akşam atmosferi",
+        "Hem et hem taze deniz ürününü aynı masada sunması"
+      ],
+      "cons": [
+        "Yüksek fiyat bandı ve merkez çarşıya göre tepe konumu"
+      ],
+      "uncertainties": [
+        "Hafta sonları teras masaları için önceden rezervasyon gerekir"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-aksamci-restaurant",
+      "categoryId": "date",
+      "resolvedName": "Akşamcı restaurant",
+      "branchName": "Işıklı, Kültür Blv. No:5, 09000 Efeler/Aydın",
+      "placeId": "ChIJK_H0qDctuRQRiDH9motLKOc",
+      "coordinates": {
+        "lat": 37.8362911,
+        "lng": 27.8084441
+      },
+      "rating": 4.5,
+      "userRatingCount": 105,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16656646284802601352",
+      "recommendedPrimary": [
+        "Karışık Izgara & Kuzu Şiş",
+        "Günün Taze Soğuk Mezeleri",
+        "Fırın Ara Sıcaklar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bahçe Masaları & Zengin Meze Başlangıcı",
+          "note": "Ana yemek öncesi masaya gelen yöresel meze çeşitliliği uzun akşam sohbetlerine eşlik eder.",
+          "proof": "Restaurant Guru ve İyifirma Efeler akşam yemeği kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş bahçe oturma düzeni ve kapalı salon alternatifi",
+        "crowdAndNoise": "Arkadaş grupları, çiftler ve sakin bahçe yemeği arayan aileler",
+        "disadvantage": "Kültür Bulvarı batı ucunda kaldığından merkezden kısa bir araç/dolmuş yolculuğu ister",
+        "transit": "Işıklı Mah., Kültür Blv. No:5 · Efeler batı aksı"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Restaurant Guru Akşamcı",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Işıklı bahçe düzeni, ızgara ve meze puanlamaları"
+        },
+        {
+          "title": "İyifirma & Yandex Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bahçeli akşam restoranı atmosferi ve servis yorumları"
+        }
+      ],
+      "pros": [
+        "Sıcak aylarda ferah açık bahçe konforu",
+        "Sakin meze-izgara buluşmaları için ideal tempo"
+      ],
+      "cons": [
+        "Merkez yaya bölgesinin dışında konumlanması"
+      ],
+      "uncertainties": [
+        "Hava serinlediğinde iç salon kapasitesi daha hızlı dolabilir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-van-konagi",
+      "categoryId": "kahvalti",
+      "resolvedName": "Van Konağı",
+      "branchName": "Girne, Girne Blv. No:89, 09100 Efeler/Aydın",
+      "placeId": "ChIJnxEWIIktuRQRnun0bQ56pp4",
+      "coordinates": {
+        "lat": 37.850192,
+        "lng": 27.826732
+      },
+      "rating": 4.8,
+      "userRatingCount": 3539,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11431958906519480734",
+      "recommendedPrimary": [
+        "Yöresel Serpme Van Kahvaltısı",
+        "Murtuğa & Kavut",
+        "Kavurmalı / Sucuklu Sahan Yumurta"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Sahanlar & El Açması Gözleme",
+          "note": "Serpme dışında tek tabak sahan yumurtaları ve ince açılmış gözlemeler hafta içi hızlı kahvaltılarda tercih ediliyor.",
+          "proof": "Restoranim.net ve Yemeksepeti Girne kahvaltı verileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Çok masalı geniş salon ve grup/aile kahvaltısına uygun konak düzeni",
+        "crowdAndNoise": "Hafta sonu aileleri, kalabalık arkadaş sofraları ve şehir dışı misafirler",
+        "disadvantage": "Pazar sabahları yoğun kalabalık ve gürültü oluşabilir; bazı otlu peynir çeşitleri damak zevkine göre tuzlu gelebilir",
+        "transit": "Girne Mah., Girne Blv. No:89 · Efeler merkezi aks"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Restoranim.net Van Konağı",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Serpme Van kahvaltısı içeriği, otlu peynir ve kalabalık gün uyarısı"
+        },
+        {
+          "title": "Yemeksepeti & Yandex Aydın Rehberi",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Binlerce misafirin ürün tazeliği ve çeşitlilik geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "3.500+ değerlendirmede yüksek memnuniyet koruyan zengin serpme menü",
+        "Geleneksel Doğu Anadolu kahvaltılıklarının eksiksiz sunulması"
+      ],
+      "cons": [
+        "Hafta sonu sabahları yüksek masa yoğunluğu ve bekleyiş"
+      ],
+      "uncertainties": [
+        "Kalabalık pazar günlerinde sıcak sahan servis hızı düşebilir"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-rein-bakery",
+      "categoryId": "kahvalti",
+      "resolvedName": "REIN coffee & bakery",
+      "branchName": "Mimar Sinan, Ali İhsan Paşa Blv. 51/A, 09000 Efeler/Aydın",
+      "placeId": "ChIJW3bPggAtuRQRDa3j5sDGwJE",
+      "coordinates": {
+        "lat": 37.851631,
+        "lng": 27.811405600000004
+      },
+      "rating": 4.5,
+      "userRatingCount": 98,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://reincoffee.com/",
+      "mapsUri": "https://maps.google.com/?cid=10502612862837697805",
+      "recommendedPrimary": [
+        "Tereyağlı Klasik / Bademli Kruvasan",
+        "Fıstıklı Çikolatalı Kruvasan",
+        "Kahvaltı Sandviçi & Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Nitelikli Kahve Eşleşmesi",
+          "note": "Fırın ürünlerinin yanı sıra özenli espresso barıyla sabah kahve-kruvasan ikilisi için sıkça tercih ediliyor.",
+          "proof": "reincoffee.com resmi sitesi ve Aydın Havadisleri kafe incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık, minimalist iç mekân masaları ve dış kaldırım oturumu",
+        "crowdAndNoise": "Sabah çalışanları, Mimar Sinan sakinleri ve kruvasan severler",
+        "disadvantage": "Klasik Türk serpme kahvaltısı arayanlara değil hafif kruvasan/sandviç tarzı sabah öğününe uygundur",
+        "transit": "Mimar Sinan Mah., Ali İhsan Paşa Blv. No:51/A"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "REIN Coffee & Bakery Resmi Sitesi",
+          "url": "https://reincoffee.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Günlük taze kruvasan üretimi ve kahve menüsü"
+        },
+        {
+          "title": "Aydın Havadisleri Kafe Rehberi",
+          "url": "https://aydinhavadisleri.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mimar Sinan öne çıkan taze kruvasan ve nitelikli kahve noktası incelemesi"
+        }
+      ],
+      "pros": [
+        "Katmanı yerinde günlük tereyağlı kruvasanlar",
+        "Temiz, aydınlık sabah oturma atmosferi"
+      ],
+      "cons": [
+        "Popüler kruvasan çeşitleri öğleden önce tükenebiliyor"
+      ],
+      "uncertainties": [
+        "Mevsimsel meyveli danish ve tatlı çeşitleri günlük değişir"
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-emilee-cuisine",
+      "categoryId": "kahvalti",
+      "resolvedName": "Emilee Cuisine - Bakery & Coffee",
+      "branchName": "Mimar Sinan Mah. 2360 Sk, Mimar Sinan, Kırçiçeği Apt No:4/A, 09100 Efeler/Aydın",
+      "placeId": "ChIJiY7mjJwtuRQRY3MxsY1R-1I",
+      "coordinates": {
+        "lat": 37.8516507,
+        "lng": 27.8105779
+      },
+      "rating": 4.4,
+      "userRatingCount": 134,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.emileeaydin.com/",
+      "mapsUri": "https://maps.google.com/?cid=5979462599269512035",
+      "recommendedPrimary": [
+        "Emilee Kahvaltı Tabağı",
+        "Kruvasanlı Sabah Sandviçi",
+        "Taze Meyveli Krep / Pancake"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Oyun Alanı & Gün İçi Pasta-Mutfak Çeşitleri",
+          "note": "Çocuk oyun alanı bulunması hafta sonları ailelerin uzun kahvaltı yapabilmesini kolaylaştırıyor.",
+          "proof": "emileeaydin.com resmi sitesi ve Restoranim.net aile rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç salon, bahçe masaları ve çocuklu aileler için düzenli oturum",
+        "crowdAndNoise": "Aileler, Mimar Sinan mahalle sakinleri ve hafta sonu brunch grupları",
+        "disadvantage": "Çocuklu aile yoğunluğu sebebiyle hafta sonu sabahları sessiz okuma kafe atmosferi sunmaz",
+        "transit": "Mimar Sinan Mah., 2360. Sk. No:4/A · Kırçiçeği Apt."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Emilee Cuisine Resmi Sitesi",
+          "url": "http://www.emileeaydin.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Kahvaltı, bakery ve dünya mutfağı menüsü"
+        },
+        {
+          "title": "Restoranim.net Emilee İncelemesi",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ferah mekân, kahvaltı tabağı ve çocuk oyun alanı avantajı"
+        }
+      ],
+      "pros": [
+        "Aileler için ferah salon ve oyun alanı konforu",
+        "Taze kahvaltılıklar ve tatlı dengesi"
+      ],
+      "cons": [
+        "Hafta sonları aile trafiği nedeniyle sesli olabiliyor"
+      ],
+      "uncertainties": [
+        "Brunch saatlerinde doluluk nedeniyle masa beklemek gerekebilir"
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-eksi-mayam",
+      "categoryId": "kahvalti",
+      "resolvedName": "Ekşi Mayam Artizan Ekmek",
+      "branchName": "Mimar Sinan, Yörük Ali Efe Blv., 09100 Efeler/Aydın",
+      "placeId": "ChIJRTt_GQ8tuRQRi4RIT9BRzDM",
+      "coordinates": {
+        "lat": 37.854384,
+        "lng": 27.8114152
+      },
+      "rating": 4.4,
+      "userRatingCount": 149,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://eksimayam.com/",
+      "mapsUri": "https://maps.google.com/?cid=3732448146308498571",
+      "recommendedPrimary": [
+        "Karakılçık / Siyez Ekşi Mayalı Ekmek",
+        "Ekşi Maya Kahvaltı Sandviçi",
+        "Zeytinyağlı & Peynirli Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ata Tohumu Fırın Ekmekleri & Al-Götür Somunlar",
+          "note": "Yerinde kahvaltının yanı sıra eve götürmek üzere erken saatte alınan siyez ve tam buğday somunları yoğun ilgi görüyor.",
+          "proof": "eksimayam.com resmi sitesi ve Yemeksepeti müşteri notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Butik fırın tezgâhı önünde sınırlı sabah oturumu",
+        "crowdAndNoise": "Katkısız ekmek arayan Efeler sakinleri ve hafif doğal kahvaltı tercih edenler",
+        "disadvantage": "Serpme kahvaltıcı konseptinde değil artizan ekmek ağırlıklı butik fırın düzenindedir",
+        "transit": "Mimar Sinan Mah., Yörük Ali Efe Blv. · Park hattı"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Ekşi Mayam Resmi Sitesi",
+          "url": "https://eksimayam.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Ata tohumu ekşi mayalı ekmek reçeteleri ve fermantasyon bilgisi"
+        },
+        {
+          "title": "Yemeksepeti & Yandex Aydın Fırınlar",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ekmek dokusu, sindirilebilirlik ve doğal lezzet memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Katkısız uzun fermantasyonlu gerçek ata tohumu ekmekler",
+        "Doğal malzeme odaklı temiz mutfak"
+      ],
+      "cons": [
+        "Oturma alanı kısıtlı; daha çok al-götür ve hızlı sabah molası için uygun"
+      ],
+      "uncertainties": [
+        "Bazı ata tohumu somun çeşitleri yalnız belirli günlerde çıkar"
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-guldeste-filibeli",
+      "categoryId": "denemelisin",
+      "resolvedName": "Güldeste Lokantası Aydın Merkez Tarihi Filibeli",
+      "branchName": "Cumhuriyet, 1951. Sk. No:11, 09020 Efeler/Aydın",
+      "placeId": "ChIJZ21SgZgruRQRlZjto_Q_cWw",
+      "coordinates": {
+        "lat": 37.847060000000006,
+        "lng": 27.8425077
+      },
+      "rating": 4.6,
+      "userRatingCount": 1554,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7814097148419348629",
+      "recommendedPrimary": [
+        "Aydın Yuvarlaması & Keşkek",
+        "Cevizli-Tahinli Aydın Kabak Tatlısı",
+        "Kuzu İncik / Arnavut Ciğeri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sabah Pişi & Yöresel Reçelli Kahvaltı / Tahinli Kabak Tatlısı",
+          "note": "Yemek üstüne kireçte çıtır kıvamlı kabak tatlısı özellikle tavsiye edilirken sabah saatlerinde geleneksel pişili kahvaltı servisi de öne çıkıyor.",
+          "proof": "Aydın Denge, Aydın Havadisleri ve Yemek.com Aydın seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi taş han dokulu avlu ve üst kat klasik lokanta salonu",
+        "crowdAndNoise": "Öğle esnafı, Aydın yöresel mutfağı arayan ziyaretçiler ve yerli aileler",
+        "disadvantage": "Öğle yemek saatlerinde masa trafiği çok yoğundur; sevilen yöresel tabaklar erken tükenebilir",
+        "transit": "Cumhuriyet Mah., 1951. Sk. No:11 · Tarihi Filibeli Hanı, Aydın Merkez"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Aydın Denge Kültür & Gastronomi",
+          "url": "https://www.aydindenge.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihi Filibeli binasında yuvarlama, keşkek ve ev yemekleri yazısı"
+        },
+        {
+          "title": "Aydın Havadisleri & Yemek.com",
+          "url": "https://yemek.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tahinli-cevizli kabak tatlısı ve sabah kahvaltısı değerlendirmesi"
+        },
+        {
+          "title": "QRfix Efeler Rehberi",
+          "url": "https://qrfix.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1.500+ değerlendirmede yüksek kalite istikrarı"
+        }
+      ],
+      "pros": [
+        "Tarihi handa otantik Ege ve Aydın yöresel tencere mutfağı",
+        "Kireçte kabak tatlısı, yuvarlama ve keşkeği aynı masada sunması"
+      ],
+      "cons": [
+        "Yoğun öğle saatlerinde kalabalık ve tükenen çeşitler"
+      ],
+      "uncertainties": [
+        "Günlük çıkan zeytinyağlı ve tencere menüsü mevsime göre değişir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-yeni-menderes-pide",
+      "categoryId": "denemelisin",
+      "resolvedName": "Yeni Menderes Pide",
+      "branchName": "Cumhuriyet, Tevfik Fikret Cd. No:30, 09020 Efeler/Aydın",
+      "placeId": "ChIJN_vjB14ruRQR8fZSot2DWEM",
+      "coordinates": {
+        "lat": 37.8425344,
+        "lng": 27.8368979
+      },
+      "rating": 4.6,
+      "userRatingCount": 343,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4852773586426066673",
+      "recommendedPrimary": [
+        "İnce Hamurlu Kıymalı Pide",
+        "Peynirli Yumurtalı Aydın Pidesi",
+        "Tahinli Kaymaklı Tatlı Pide"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli Pide & İkram Mezeler",
+          "note": "Yemek öncesi taze salata-meze ikramı ve taş fırından çıkan bol tahinli tatlı pide deneyimi tamamlıyor.",
+          "proof": "Restoranim.net ve Menu-TR Aydın pide salonları kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ferah bahçe ve geleneksel geniş pide salonu masaları",
+        "crowdAndNoise": "Aileler, merkez çalışanları ve akşam pide yemek isteyen Aydınlılar",
+        "disadvantage": "Klasik esnaf pide salonudur; akşam yoğun saatlerde fırın sırası nedeniyle servis yavaşlayabilir",
+        "transit": "Cumhuriyet Mah., Tevfik Fikret Cd. No:30 · Aydın Merkez"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Restoranim.net Yeni Menderes Pide",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Karacasu usulü ince hamurlu pide, peynirli yumurtalı çeşitler ve meze ikramı"
+        },
+        {
+          "title": "Menu-TR Aydın Pidecileri",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ferah bahçe, kabak tatlısı ikramı ve memnuniyet puanları"
+        }
+      ],
+      "pros": [
+        "İncecik çıtır Aydın hamuru ve dengeli iç harç",
+        "Tatlı olarak tahinli pide ve kabak tatlısının birlikte bulunması"
+      ],
+      "cons": [
+        "Yoğun öğle/akşam saatlerinde fırın çıkışında kısa bekleme"
+      ],
+      "uncertainties": [
+        "Hafta sonu bahçe alanı kalabalık gruplarla çabuk dolabilir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-sefika-ustanin-yeri",
+      "categoryId": "denemelisin",
+      "resolvedName": "Şefika Ustanın Yeri | Pide & Lahmacun",
+      "branchName": "Kurtuluş, Süleyman Seba Cd. NO:14/B, 09020 Efeler/Aydın",
+      "placeId": "ChIJSzwvvM8ruRQRvn_OcZGVDcE",
+      "coordinates": {
+        "lat": 37.839107899999995,
+        "lng": 27.8436259
+      },
+      "rating": 4.9,
+      "userRatingCount": 173,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/sefikaustaninyeri/?next=%2F",
+      "mapsUri": "https://maps.google.com/?cid=13910939275929485246",
+      "recommendedPrimary": [
+        "Taş Fırın Kıymalı Pide",
+        "Çıtır Lahmacun",
+        "Kaşarlı Kuşbaşılı Pide"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çıtır Taş Fırın Lahmacun",
+          "note": "Ana pidelerin yanında çıtır kenarlı taze lahmacunu ayrıca sipariş edilen temel ürünlerden biridir.",
+          "proof": "Restoranim.net ve Eniyitat Kurtuluş pide incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Temiz, samimi mahalle pide salonu düzeni",
+        "crowdAndNoise": "Kurtuluş sakinleri, öğle yemeği müdavimleri ve akşam aile paketleri",
+        "disadvantage": "Küçük aile salonu kapasitesindedir; yoğun paket sipariş saatlerinde masa servisi yavaşlayabilir",
+        "transit": "Kurtuluş Mah., Süleyman Seba Cd. No:14/B"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Şefika Ustanın Yeri Instagram",
+          "url": "https://www.instagram.com/sefikaustaninyeri/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Günlük taş fırın pide ve lahmacun paylaşımları"
+        },
+        {
+          "title": "Restoranim.net & Eniyitat Efeler",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Hamur kıvamı, malzeme bolluğu ve temizlik vurgusu"
+        },
+        {
+          "title": "Yandex & Dijital.link Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kurtuluş yerel müdavimlerinden yüksek tutarlılık puanları"
+        }
+      ],
+      "pros": [
+        "Taş fırında özenle pişirilen hamur ve dengeli kıymalı harç",
+        "Kalabalık büyük zincir salonlara göre daha kişisel ustalık"
+      ],
+      "cons": [
+        "Merkezi dar caddede otopark kısıtı ve mütevazı oturum"
+      ],
+      "uncertainties": [
+        "Cemiyet ve toplu sipariş günlerinde bekleme süresi artabilir"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-yildiz-pide",
+      "categoryId": "denemelisin",
+      "resolvedName": "Yıldız pide Aydın",
+      "branchName": "Cumhuriyet, İstasyon Blv. No: 7 (23/a, 09020 Aydın Merkez/Aydın",
+      "placeId": "ChIJuVMIp2EruRQR7Z6OZm-WXYo",
+      "coordinates": {
+        "lat": 37.8469539,
+        "lng": 27.833962
+      },
+      "rating": 4.7,
+      "userRatingCount": 263,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9970290555274305261",
+      "recommendedPrimary": [
+        "Turunçlu Aydın Kıymalı Pidesi",
+        "Kaşarlı Pide",
+        "Taş Fırın Lahmacun"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli Tatlı Pide",
+          "note": "Kıymalı pide ardından paylaşımlık olarak alınan sıcak tahinli pide menünün tamamlayıcı kapanışıdır.",
+          "proof": "Yandex Mekanlar ve Migros Aydın pide listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Hızlı tempolu merkez esnaf pide salonu masaları",
+        "crowdAndNoise": "İstasyon Bulvarı esnafı, tren yolcuları ve öğle yemeği müdavimleri",
+        "disadvantage": "Geleneksel hızlı esnaf salonudur; şık akşam yemeği veya sessiz sohbet ortamı sunmaz",
+        "transit": "Cumhuriyet Mah., İstasyon Blv. No:7 · Gar yürüyüş hattı"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Yandex Mekanlar Yıldız Pide",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İstasyon Bulvarı üzerinde esnaf pide istikrarı değerlendirmeleri"
+        },
+        {
+          "title": "Migros & Servis Merkezleri Rehberi",
+          "url": "https://www.migros.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Klasik Aydın pide çeşitleri ve çıtır lahmacun menüsü"
+        }
+      ],
+      "pros": [
+        "Tren garı ve bulvar üstünde hızlı, sıcak Aydın pidesi",
+        "Tuzlu ve tahinli pidede yıllanmış standart"
+      ],
+      "cons": [
+        "Öğle vakti yoğunluk ve bulvar üstü gürültü"
+      ],
+      "uncertainties": [
+        "Yoğun öğle servisinde boş masa için birkaç dakika beklenebilir"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-eray-usta-bozdogan-pide",
+      "categoryId": "denemelisin",
+      "resolvedName": "Eray Usta Bozdoğan Pide Salonu",
+      "branchName": "Yedi Eylül, 1008. Sk. 6/d, 09020 Efeler/Aydın",
+      "placeId": "ChIJHaodV1sruRQRWAGOlm519TI",
+      "coordinates": {
+        "lat": 37.836754899999995,
+        "lng": 27.841953999999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 208,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3671970189023248728",
+      "recommendedPrimary": [
+        "Bozdoğan Usulü Peynirli Pide",
+        "Kıymalı Çıtır Pide",
+        "Tahinli Tatlı Pide"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kiremitte Fırın Ürünleri",
+          "note": "Pide hamurlarının yanında taş fırına verilen kiremit et/sebze tabakları akşam öğünleri için tercih ediliyor.",
+          "proof": "Restoranim.net ve Yandex Yedi Eylül incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mahalle arası sıcak ve samimi pide salonu oturma düzeni",
+        "crowdAndNoise": "Bozdoğan usulü pide arayan Aydınlılar ve Yedi Eylül mahalle müdavimleri",
+        "disadvantage": "Merkezin güney ara sokağında kaldığından bulvar üstü mekânlara göre göz önünde değildir",
+        "transit": "Yedi Eylül Mah., 1008. Sk. No:6/D · Efeler"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Restoranim.net Eray Usta Bozdoğan",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bozdoğan taş fırın pidesi ve kiremit ürünleri incelemesi"
+        },
+        {
+          "title": "Yandex Mekanlar Efeler",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çıtır hamur kalitesi ve esnaf ilgisi puanlamaları"
+        }
+      ],
+      "pros": [
+        "Bozdoğan usulü pide hamur dokusu",
+        "Pide dışında kiremit fırın yemekleri sunması"
+      ],
+      "cons": [
+        "Ara sokak konumu ve basit lokanta dekoru"
+      ],
+      "uncertainties": [
+        "Akşam geç saatlerde kiremit yemek çeşitleri azalabilir"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-hayri-usta-lokantasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Hayri Usta Lokantası",
+      "branchName": "Ata, Tepecik Blv. 40 b, 09010 Efeler/Aydın",
+      "placeId": "ChIJV70qs2oruRQRY17qs4mj2ZY",
+      "coordinates": {
+        "lat": 37.8354792,
+        "lng": 27.8574752
+      },
+      "rating": 4.5,
+      "userRatingCount": 1560,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10869898987459731043",
+      "recommendedPrimary": [
+        "Osmanlı & Girit Usulü Ev Yemekleri",
+        "Kuzu Haşlama / Kavurma",
+        "Zeytinyağlı Sebze & Ot Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Geleneksel Sabah Çorbaları & Zeytinyağlı Çeşitleri",
+          "note": "Ana et yemeklerinin yanında Girit mutfağına özgü hafif zeytinyağlı tabakları öğle menüsünün dengesini sağlar.",
+          "proof": "Yeni Asır ve Aydın Hızlı Haber gastronomi yazıları"
+        }
+      ],
+      "suitability": {
+        "seating": "Büyük esnaf lokantası salonu; öğle trafiğine uygun geniş masa düzeni",
+        "crowdAndNoise": "Ata Sanayi ve Efeler esnafı, memurlar ve gerçek ev yemeği arayanlar",
+        "disadvantage": "Gündüz esnaf lokantası ritmindedir; akşam yemeği veya hafta sonu geç saat servisi kısıtlıdır",
+        "transit": "Ata Mah., Tepecik Blv. No:40/B · Sanayi aksı"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Yeni Asır Gastronomi Haberi",
+          "url": "https://www.yeniasir.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Osmanlı ve Girit mutfağından seçkiler sunan köklü Aydın lokantası"
+        },
+        {
+          "title": "Aydın Hızlı Haber & Enuygun",
+          "url": "https://www.enuygun.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ata Mahallesi esnaf lokantası tavsiyesi"
+        },
+        {
+          "title": "Yandex Mekan Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1.500+ değerlendirmede lezzet ve porsiyon tutarlılığı"
+        }
+      ],
+      "pros": [
+        "Zengin günlük tencere yemekleri ve Ege/Girit ot yemekleri",
+        "Yüksek günlük sirkülasyonla hep taze kalan kazanlar"
+      ],
+      "cons": [
+        "Sanayi/Ata aksında yer alması ve öğlen kalabalığı"
+      ],
+      "uncertainties": [
+        "Sevilen tencere çeşitleri öğleden sonra erken saatlerde bitebilir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-vehbi-lokantasi-1969",
+      "categoryId": "denemelisin",
+      "resolvedName": "Vehbi Lokantası 1969",
+      "branchName": "Hasanefendi - Ramazan Paşa, Doğu Gazi Blv. 15 A, 09100 Aydın Merkez/Aydın",
+      "placeId": "ChIJt2wDxG8ruRQRYYuE8sa66Sk",
+      "coordinates": {
+        "lat": 37.8499859,
+        "lng": 27.844736599999997
+      },
+      "rating": 4.6,
+      "userRatingCount": 108,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3020150388763691873",
+      "recommendedPrimary": [
+        "Odun Ateşinde Buğu Kebabı",
+        "Kuru Fasulye & Tereyağlı Pilav",
+        "Günün Esnaf Çorbası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kuru Fasulye & Pilav Klasikleri",
+          "note": "Buğu kebabıyla yarışan sade kuru fasulye-pilav ikilisi çarşı çalışanlarının günlük rutini haline gelmiştir.",
+          "proof": "Yandex Mekanlar ve Servis Merkezleri Aydın tarihçe kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı, nostaljik çarşı esnaf lokantası salonu",
+        "crowdAndNoise": "Çarşı esnafı, yaşlı Aydın müdavimleri ve köklü tatları arayanlar",
+        "disadvantage": "Geleneksel gündüz esnaf lokantası konseptinde olduğundan akşam saatlerinde servis vermez",
+        "transit": "Hasanefendi - Ramazan Paşa, Doğu Gazi Blv. No:15/A"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Vota & Maptons Aydın Rehberi",
+          "url": "https://vota.org/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1969’dan beri odun ateşi buğu kebabı ve çorba puanlamaları"
+        },
+        {
+          "title": "Yandex & Servis Merkezleri Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yarım asırlık aile işletmesi tarihçesi ve kuru fasulye yorumları"
+        }
+      ],
+      "pros": [
+        "1969’dan beri değişmeyen esnaf geleneği ve odun ateşi buğu kebabı",
+        "Merkez Doğu Gazi Bulvarı üzerinde kolay erişim"
+      ],
+      "cons": [
+        "Sınırlı gündüz saatleri ve sade eski dekorasyon"
+      ],
+      "uncertainties": [
+        "Özel buğu kebabı öğle yoğunluğunda tükenebilir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-danve-paca",
+      "categoryId": "denemelisin",
+      "resolvedName": "DANVE (Şifa ve Lezzet)",
+      "branchName": "Girne, Huzurevi Cd. No:19/A, 09100 Aydın Merkez/Aydın",
+      "placeId": "ChIJXWTnQgAtuRQR1OvhnK3EXc8",
+      "coordinates": {
+        "lat": 37.8478127,
+        "lng": 27.8270083
+      },
+      "rating": 4.7,
+      "userRatingCount": 218,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/danvesifavelezzet?igsh=d21sejZjaXVtaG0y",
+      "mapsUri": "https://maps.google.com/?cid=14942315388625611732",
+      "recommendedPrimary": [
+        "Özel Kelle Paça & Ayak Paça",
+        "Sarımsaklı Sirkeli Atom Çorbası",
+        "Kuzu Kavurma / Ev Yemeği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Atom Çorbası & Günlük Ev Yemekleri",
+          "note": "Kelle paçanın yanı sıra farklı sakatatların harmanlandığı atom çorbası ve günlük ev yemekleri de tercih ediliyor.",
+          "proof": "danve.net resmi sitesi ve Yandex Aydın çorbacı değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Temiz, düzenli ve geç saatlere kadar açık aydınlık çorba salonu",
+        "crowdAndNoise": "Gece vardiyası çalışanları, öğrenciler ve şifalı çorba müdavimleri",
+        "disadvantage": "Yoğun sarımsak/sakatat kokusu hassasiyeti olanlar için ağır gelebilir; gece saatlerinde kalabalıklaşabilir",
+        "transit": "Girne Mah., Huzurevi Cd. No:19/A · Efeler"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Danve Resmi Sitesi",
+          "url": "https://danve.net/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Gerçek paça suyu çorba reçeteleri ve günlük menü"
+        },
+        {
+          "title": "Danve Instagram & Yandex Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hijyen, lezzet ve gece açık çorba puanları"
+        }
+      ],
+      "pros": [
+        "Gerçek et-paça suyuyla kıvamlandırılan çorbalar",
+        "Temiz salon ve gece geç saatlere kadar servis"
+      ],
+      "cons": [
+        "Sakatat ağırlıklı menü herkese hitap etmez"
+      ],
+      "uncertainties": [
+        "Gece geç saatlerde bazı özel çorba kazanları azalabilir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "aydin-fresco-sinfonia",
+      "categoryId": "denemelisin",
+      "resolvedName": "Fresco Sinfonia Makarna",
+      "branchName": "Girne, Girne Blv. No:107/A, 09000 Efeler/Aydın",
+      "placeId": "ChIJhfWYE54tuRQRavQi8Qzomzs",
+      "coordinates": {
+        "lat": 37.8482167,
+        "lng": 27.826431099999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 860,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.frescomakarna.com/",
+      "mapsUri": "https://maps.google.com/?cid=4295281811910751338",
+      "recommendedPrimary": [
+        "Parmesan Tekerinde Alfredo Makarna",
+        "Trüf Mantarlı Taze Makarna",
+        "Pesto Soslu Makarna"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Sos Seçenekleri (Trüf & Pesto)",
+          "note": "Klasik parmesan harmanlamasına eklenen trüf mantarlı ve kremalı sos çeşitleri farklı tabaklar oluşturuyor.",
+          "proof": "frescomakarna.com resmi menüsü ve Sektör Aydın haberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Hızlı, pratik iç salon ve Girne Bulvarı önü masalar",
+        "crowdAndNoise": "Üniversite öğrencileri, gençler ve hızlı makarna öğünü arayanlar",
+        "disadvantage": "Klasik oturaklı şaraplı İtalyan restoranından çok hızlı-pratik taze makarna noktası düzenindedir",
+        "transit": "Girne Mah., Girne Blv. No:107/A"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Fresco Makarna Resmi Sitesi",
+          "url": "http://www.frescomakarna.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Parmesan tekerinde taze makarna çeşitleri ve sos menüsü"
+        },
+        {
+          "title": "Sektör Aydın & Nelerimeshur",
+          "url": "https://sektoraydin.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Aydın’da parmesan tekeri makarna konsepti değerlendirmesi"
+        },
+        {
+          "title": "Yandex Mekanlar",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "800+ yorumla sürdürülen genç kitle memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Masada veya göz önünde parmesan tekeri harmanı deneyimi",
+        "Hızlı servis ve taze hamur makarna"
+      ],
+      "cons": [
+        "Akşam romantik yemek ortamından ziyade hızlı konsepttedir"
+      ],
+      "uncertainties": [
+        "Yoğun öğle ve akşam saatlerinde tezgâh önünde sıra olabilir"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    }
+  ]
+}
