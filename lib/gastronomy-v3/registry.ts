@@ -60,6 +60,8 @@ import izmirKarsiyakaCarsiSnapshotJson from './regions/izmir-karsiyaka-carsi.jso
 import izmirBornovaMerkezSnapshotJson from './regions/izmir-bornova-merkez.json';
 import izmirKonakGoztepeGuzelyaliSnapshotJson from './regions/izmir-konak-goztepe-guzelyali.json';
 import izmirKarsiyakaMavisehirSnapshotJson from './regions/izmir-karsiyaka-mavisehir.json';
+import izmirCesmeAlacatiSnapshotJson from './regions/izmir-cesme-alacati.json';
+import izmirUrlaSnapshotJson from './regions/izmir-urla.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -125,6 +127,8 @@ const IZMIR_KARSIYAKA_CARSI_SNAPSHOT = izmirKarsiyakaCarsiSnapshotJson as V3Veri
 const IZMIR_BORNOVA_MERKEZ_SNAPSHOT = izmirBornovaMerkezSnapshotJson as V3VerifiedRegionSnapshot;
 const IZMIR_KONAK_GOZTEPE_GUZELYALI_SNAPSHOT = izmirKonakGoztepeGuzelyaliSnapshotJson as V3VerifiedRegionSnapshot;
 const IZMIR_KARSIYAKA_MAVISEHIR_SNAPSHOT = izmirKarsiyakaMavisehirSnapshotJson as V3VerifiedRegionSnapshot;
+const IZMIR_CESME_ALACATI_SNAPSHOT = izmirCesmeAlacatiSnapshotJson as V3VerifiedRegionSnapshot;
+const IZMIR_URLA_SNAPSHOT = izmirUrlaSnapshotJson as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -189,6 +193,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   IZMIR_BORNOVA_MERKEZ_SNAPSHOT,
   IZMIR_KONAK_GOZTEPE_GUZELYALI_SNAPSHOT,
   IZMIR_KARSIYAKA_MAVISEHIR_SNAPSHOT,
+  IZMIR_CESME_ALACATI_SNAPSHOT,
+  IZMIR_URLA_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -677,6 +683,34 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'mavisehir-sahil': IZMIR_KARSIYAKA_MAVISEHIR_SNAPSHOT,
   'caher-dudayev': IZMIR_KARSIYAKA_MAVISEHIR_SNAPSHOT,
   'aziz-nesin': IZMIR_KARSIYAKA_MAVISEHIR_SNAPSHOT,
+  // İzmir > Çeşme > Alaçatı (#63 — V3.7 coastal)
+  'izmir-cesme-alacati': IZMIR_CESME_ALACATI_SNAPSHOT,
+  'alacati-cesme-izmir': IZMIR_CESME_ALACATI_SNAPSHOT,
+  alacati: IZMIR_CESME_ALACATI_SNAPSHOT,
+  'alacati-cesme': IZMIR_CESME_ALACATI_SNAPSHOT,
+  'alacati-izmir': IZMIR_CESME_ALACATI_SNAPSHOT,
+  hacimemis: IZMIR_CESME_ALACATI_SNAPSHOT,
+  'alacati-koyici': IZMIR_CESME_ALACATI_SNAPSHOT,
+  'kemalpasa-alacati': IZMIR_CESME_ALACATI_SNAPSHOT,
+  'alacati-port': IZMIR_CESME_ALACATI_SNAPSHOT,
+  'port-alacati': IZMIR_CESME_ALACATI_SNAPSHOT,
+  'cark-plaji': IZMIR_CESME_ALACATI_SNAPSHOT,
+  yenimecidiye: IZMIR_CESME_ALACATI_SNAPSHOT,
+  // İzmir > Urla (#64 — V3.7 coastal)
+  'izmir-urla': IZMIR_URLA_SNAPSHOT,
+  'urla-izmir': IZMIR_URLA_SNAPSHOT,
+  urla: IZMIR_URLA_SNAPSHOT,
+  'urla-merkez': IZMIR_URLA_SNAPSHOT,
+  'urla-iskele': IZMIR_URLA_SNAPSHOT,
+  'iskele-urla': IZMIR_URLA_SNAPSHOT,
+  'sanat-sokagi-urla': IZMIR_URLA_SNAPSHOT,
+  'urla-sanat-sokagi': IZMIR_URLA_SNAPSHOT,
+  'malgaca-pazari': IZMIR_URLA_SNAPSHOT,
+  'urla-bag-yolu': IZMIR_URLA_SNAPSHOT,
+  kuscular: IZMIR_URLA_SNAPSHOT,
+  'kuscular-urla': IZMIR_URLA_SNAPSHOT,
+  cesmealti: IZMIR_URLA_SNAPSHOT,
+  'ozbek-urla': IZMIR_URLA_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {

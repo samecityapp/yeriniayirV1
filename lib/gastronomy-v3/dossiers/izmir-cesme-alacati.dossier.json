@@ -1,0 +1,2159 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "izmir-cesme-alacati",
+  "displayName": "Alaçatı, Çeşme, İzmir",
+  "verifiedAt": "2026-11-17T11:00:22.941Z",
+  "selectedCount": 27,
+  "rejectedControls": [
+    {
+      "id": "ctrl-alacati-fava-closed",
+      "resolvedName": "Fava Alaçatı",
+      "reason": "not_operational:CLOSED_TEMPORARILY"
+    },
+    {
+      "id": "ctrl-alacati-port-balik-closed",
+      "resolvedName": "Alaçatı Port Balık",
+      "reason": "not_operational:CLOSED_TEMPORARILY"
+    },
+    {
+      "id": "ctrl-alacati-petra-closed-chain",
+      "resolvedName": "Petra Roasting Co. Reserve",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-alacati-pizza-locale-chain",
+      "resolvedName": "Pizza Locale Alaçatı",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alacati-paprica-chain",
+      "resolvedName": "Paprica Ristorante & Pizza Çeşme",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alacati-terra-pizza-chain",
+      "resolvedName": "Terra Pizza - Çeşme Alaçatı",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alacati-dominos-chain",
+      "resolvedName": "Domino's Pizza Alaçatı",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alacati-bamburger-chain",
+      "resolvedName": "BAMBURGER - Burger And More",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alacati-mahalle-chain",
+      "resolvedName": "Mahalle Alaçatı",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alacati-ohannes-chain",
+      "resolvedName": "Ohannes Burger Alaçatı",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alacati-local-cups-chain",
+      "resolvedName": "Local Cups Coffee Society Alaçatı",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alacati-efendiler-chain",
+      "resolvedName": "Efendiler Kulübü Alaçatı",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alacati-alakoy-chain",
+      "resolvedName": "Alaköy Pastanesi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alacati-dondurmino-chain",
+      "resolvedName": "Dondurmino Gelato",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alacati-lime-chain",
+      "resolvedName": "Lime Alaçatı",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alacati-imren-chain",
+      "resolvedName": "İmren Alaçatı Tatlıcısı",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alacati-terramur-chain",
+      "resolvedName": "Terramur Marina Alaçatı",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alacati-ferdi-baba-chain",
+      "resolvedName": "Ferdi Baba Restaurant - MarinAlaçatı",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alacati-fabrice-chain",
+      "resolvedName": "Fabrice Çeşme- MarinAlaçatı",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alacati-fuente-cesme-marina-out",
+      "resolvedName": "Fuente Restaurant Çeşme Marina",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Alaçatı/Alacati/Yeni Mecidiye/Yenimecidiye/Hacımemiş/Hacimemis/Tokoğlu/Tokoglu/İsmetpaşa/Ismetpasa/Port Alaçatı/Alaçatı Port, adres: Musalla mah 1016 sokak 2/5g çeşme marina, Musalla, 35900 Çeşme/İzmir)"
+    },
+    {
+      "id": "ctrl-alacati-xl-ilica-out",
+      "resolvedName": "Alaçatı XL Kahvaltı & konaklama",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Alaçatı/Alacati/Yeni Mecidiye/Yenimecidiye/Hacımemiş/Hacimemis/Tokoğlu/Tokoglu/İsmetpaşa/Ismetpasa/Port Alaçatı/Alaçatı Port, adres: Ilıca, 5086. Sk. No:8, 35930 Çeşme/İzmir)"
+    },
+    {
+      "id": "ctrl-alacati-asma-yapragi-low",
+      "resolvedName": "Asma Yaprağı",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Alaçatı/Alacati/Yeni Mecidiye/Yenimecidiye/Hacımemiş/Hacimemis/Tokoğlu/Tokoglu/İsmetpaşa/Ismetpasa/Port Alaçatı/Alaçatı Port, adres: Kerimoğlu Mevkii, Ovacık, 7152. Sokak No 141/ 1, 35937 Çeşme/İzmir)"
+    },
+    {
+      "id": "ctrl-alacati-roberto-low",
+      "resolvedName": "Pizzeria da Roberto",
+      "reason": "below_quality_threshold:★4.3(565)"
+    },
+    {
+      "id": "ctrl-alacati-ortaya-low",
+      "resolvedName": "Ortaya Alaçatı",
+      "reason": "below_quality_threshold:★4.3(2460)"
+    },
+    {
+      "id": "ctrl-alacati-eflatun-low",
+      "resolvedName": "Eflatun Alaçatı",
+      "reason": "below_quality_threshold:★4.2(409)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "alacati-gusto-1865",
+      "categoryId": "pizza",
+      "resolvedName": "Gusto Alaçatı 1865",
+      "branchName": "Alaçatı, 3000. Sk. No:24, 35930 Çeşme/İzmir",
+      "placeId": "ChIJKdPiLWl5uxQRiRjtus8ImDo",
+      "coordinates": {
+        "lat": 38.2830887,
+        "lng": 26.375912699999997
+      },
+      "rating": 4.8,
+      "userRatingCount": 708,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/gustoalacati",
+      "mapsUri": "https://maps.google.com/?cid=4222134338947192969",
+      "recommendedPrimary": [
+        "Gusto Pizza (Dana Kavurmalı)",
+        "Quattro Formaggi Pizza",
+        "Margherita"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Mantı & Kayseri Yağlaması",
+          "note": "Pizza dışında akşam öğününde tercih edilen el açması hamur seçenekleri.",
+          "proof": "İşletme menüsü + yerel mekan rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş duvarlı iç salon ve sokak önü masaları · Alaçatı çarşısında sakin ara sokak yerleşimi",
+        "crowdAndNoise": "Yaz akşamlarında akşam yemeği saatlerinde masa sirkülasyonu yükseliyor",
+        "disadvantage": "Turistik çarşı merkezinde yer aldığı için yaz sezonunda sokak yoğunluğu kapı çevresine yansıyabilir.",
+        "transit": "Kemalpaşa Caddesi yürüyüş hattından 3000. Sokak içine kısa yürüyüş"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Instagram (@gustoalacati)",
+          "url": "https://www.instagram.com/gustoalacati",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "İnce hamurlu pizzalar ve ev yapımı hamur işleri"
+        },
+        {
+          "title": "Menü & Yemek Platformu İncelemeleri",
+          "url": "https://menu-tr.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Gusto Alaçatı 1865 pizza, mantı ve Kayseri yağlaması seçkisi"
+        },
+        {
+          "title": "Yerel Rehber Doğrulaması",
+          "url": "https://restoranim.net",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Köyiçi 3000. Sokak tek şubeli konum teyidi"
+        }
+      ],
+      "pros": [
+        "Taş binada yüksek memnuniyet istikrarı",
+        "Pizza dışında ev yapımı mantı seçeneği",
+        "Tek şubeli yerel işletme"
+      ],
+      "cons": [
+        "Yaz sezonunda sokak önü yoğunluğu"
+      ],
+      "uncertainties": [
+        "Sezon dışı dönemde servis gün ve saatleri kısalabiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-zeytin-tarla",
+      "categoryId": "pizza",
+      "resolvedName": "Alaçatı Zeytin Tarla",
+      "branchName": "Alaçatı, 14015. Sk No1, 35930 Çeşme/İzmir",
+      "placeId": "ChIJc4WoRlZ5uxQRk83ubqPSKKA",
+      "coordinates": {
+        "lat": 38.284977999999995,
+        "lng": 26.3648183
+      },
+      "rating": 4.6,
+      "userRatingCount": 183,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://instagram.com/alacatizeytintarla",
+      "mapsUri": "https://maps.google.com/?cid=11540705644519542163",
+      "recommendedPrimary": [
+        "Tarla Pizza",
+        "Dört Peynirli Odun Fırını Pizza",
+        "Mantarlı Ekşi Mayalı Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mevsimsel Paylaşımlı Tabaklar & Bahçe Salataları",
+          "note": "Odun fırını pizzalarının yanında paylaşıma sunulan taze zeytinlik mahsulü başlangıçlar.",
+          "proof": "tarlaalacati.com.tr resmi konsepti + yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Zeytinlik içinde açık kır bahçesi · Çarşı gürültüsünden uzak ferah masa düzeni",
+        "crowdAndNoise": "Gün batımı ve akşam servisinde özellikle hafta sonları rezervasyonlu dolu",
+        "disadvantage": "Açık kır bahçesi yerleşimi nedeniyle serin rüzgârlı akşamlarda üstlük gerekebilir ve fiyat seviyesi üst segmenttedir.",
+        "transit": "Alaçatı batı çıkışında 14015. Sokak üzerinde, özel araç ve taksiyle kısa mesafe"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi Site (Tarla Alaçatı)",
+          "url": "https://tarlaalacati.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Odun fırını ekşi mayalı pizzalar ve bahçe menüsü"
+        },
+        {
+          "title": "Menü Arşivi",
+          "url": "https://menu-tr.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tarla Pizza, Dört Peynirli ve Mantarlı Pizza doğrulaması"
+        },
+        {
+          "title": "Alaçatı Zeytin Otel Kaydı",
+          "url": "https://alacatizeytinotel.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Zeytin ağaçları içi açık mutfak ve konum bilgisi"
+        }
+      ],
+      "pros": [
+        "Zeytin ağaçları arasında huzurlu açık hava düzeni",
+        "Odun fırınında ekşi mayalı hamur",
+        "Çarşı kalabalığından izole konum"
+      ],
+      "cons": [
+        "Merkez yürüyüş aksının biraz dışında kalması",
+        "Üst segment fiyatlandırma"
+      ],
+      "uncertainties": [
+        "Kış ve yağışlı bahar günlerinde açık bahçe servisi kapalı olabiliyor"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-burger-fats",
+      "categoryId": "hamburger",
+      "resolvedName": "Burger Fats Alaçatı",
+      "branchName": "Alaçatı, 13069 sk no6/f, 35930 Çeşme/İzmir",
+      "placeId": "ChIJGzyaaBh5uxQRYtenweijR_E",
+      "coordinates": {
+        "lat": 38.2871838,
+        "lng": 26.3754621
+      },
+      "rating": 4.9,
+      "userRatingCount": 763,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.burgerfatsalacati.com/",
+      "mapsUri": "https://maps.google.com/?cid=17386045106563831650",
+      "recommendedPrimary": [
+        "Fats Special Burger",
+        "Cheeseburger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çıtır Tavuk Burger & Patates Eşlikçisi",
+          "note": "Dana köfteli klasiklerin dışında baharatlı pane tavuk seçeneği.",
+          "proof": "Resmi menü + sipariş platformu incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt dükkan içi tezgâh ve sokak kenarı hızlı oturma masaları · Paket servise de uygun",
+        "crowdAndNoise": "Akşam yemeği ve geç akşam saatlerinde hızlı sirkülasyon",
+        "disadvantage": "Oturma alanı kısıtlı olduğu için yoğun saatlerde masa beklemek veya al-götür tercih etmek gerekebilir.",
+        "transit": "Alaçatı merkez Atatürk Bulvarı paralelinde 13069. Sokak No:6/F üzerinde"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi Site (Burger Fats Alaçatı)",
+          "url": "https://www.burgerfatsalacati.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Fats Special Burger ve tek şube konum teyidi"
+        },
+        {
+          "title": "Menü & Değerlendirmeler",
+          "url": "https://yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "150 gr dana köftesi, soğan reçeli ve cheddar eşleşmesi"
+        },
+        {
+          "title": "Yerel Rehber",
+          "url": "https://menu-tr.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Alaçatı merkez bağımsız burger durağı teyidi"
+        }
+      ],
+      "pros": [
+        "Yüksek hacimli puan istikrarı",
+        "Soğan reçelli imza köfte dengesi",
+        "Alaçatı tek şubeli işletme"
+      ],
+      "cons": [
+        "Kısıtlı masa kapasitesi",
+        "Uzun oturmalık lounge konsepti sunmaması"
+      ],
+      "uncertainties": [
+        "Sezon dışında akşam kapanış saatleri yaz dönemine göre erken çekilebiliyor"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-1973-eskiden",
+      "categoryId": "hamburger",
+      "resolvedName": "1973 Eskiden Burger & Sandviç Alaçatı",
+      "branchName": "tokoglu mah, Alaçatı, 1048. Sk. 3e, 35930 Çeşme/İzmir",
+      "placeId": "ChIJX6mR9-B4uxQR4Fw4RIUGJpw",
+      "coordinates": {
+        "lat": 38.2869008,
+        "lng": 26.375466499999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 942,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.1973eskiden.com/",
+      "mapsUri": "https://maps.google.com/?cid=11251687888476724448",
+      "recommendedPrimary": [
+        "Eskiden Burger",
+        "Double Cheeseburger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Füme & Kızarmış Sandviç Çeşitleri",
+          "note": "Burger menüsünün yanında pratik öğle veya gece atıştırmalığı için sunulan sandviçler.",
+          "proof": "1973eskiden.com resmi sitesi + yemek platformu menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Sokak önü masaları ve sade iç servis düzeni · Gündelik ve hızlı sokak yemeği temposu",
+        "crowdAndNoise": "Öğleden geceye dek yerel çalışanlar ve tatilcilerle düzenli hareketli",
+        "disadvantage": "Sokak üstü hızlı servis düzeni nedeniyle uzun akşam yemeği oturumlarına değil pratik burger molalarına uygundur.",
+        "transit": "Tokoğlu Mahallesi Uğur Mumcu Caddesi bağlantısında 1048. Sokak No:3E"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi Site (1973 Eskiden)",
+          "url": "https://www.1973eskiden.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Brioche ekmekli Eskiden Burger ve sandviç menüsü"
+        },
+        {
+          "title": "Yemek Platformu Kaydı",
+          "url": "https://yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "120 gr ev yapımı köfte ve Mexican/cheddar sos detayları"
+        },
+        {
+          "title": "Harita İncelemeleri",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tokoğlu 1048. Sokak No:3E konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Geniş kitlede korunan yüksek memnuniyet",
+        "Köfte dışında sandviç alternatifi",
+        "Ulaşılabilir fiyat segmenti"
+      ],
+      "cons": [
+        "Dar sokak önü oturum alanı"
+      ],
+      "uncertainties": [
+        "Yoğun gece paket servisinde bekleme süreleri uzayabiliyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-smokey-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "SMOKEY BURGER & KUMRUCU TOMBUL",
+      "branchName": "Alaçatı, Uğur Mumcu Cd. 16/B, 35930 Çeşme/İzmir",
+      "placeId": "ChIJ3QbBP9Z5uxQRBFsaMnLZRnY",
+      "coordinates": {
+        "lat": 38.2862487,
+        "lng": 26.3748643
+      },
+      "rating": 4.7,
+      "userRatingCount": 354,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/smokeyburgersandvic/",
+      "mapsUri": "https://maps.google.com/?cid=8522738429335329540",
+      "recommendedPrimary": [
+        "Smokey Burger",
+        "Kömürde Çeşme Kumrusu"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kömürde Klasik Çeşme Kumrusu",
+          "note": "Susamlı kumru ekmeğinde sucuk, salam, sosis ve eritilmiş peynirli yöresel klasik.",
+          "proof": "İşletme dijital menüsü + yemek platformu listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Cadde kenarı küçük sokak masaları ve hızlı paket servis bankosu",
+        "crowdAndNoise": "Akşam ve gece saatlerinde özellikle pratik akşam yemeği arayanlarla yoğun",
+        "disadvantage": "Bölgesel sokak büfesi düzeninde çalıştığı için kokteyl veya gurme restoran ambiyansı arayanlara basit gelebilir.",
+        "transit": "Uğur Mumcu Caddesi No:16/B üzerinde Alaçatı merkez çarşı girişi"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Dijital Menü (@smokeyburgersandvic)",
+          "url": "https://www.instagram.com/smokeyburgersandvic/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Burger ve Çeşme kumrusu ortak menüsü"
+        },
+        {
+          "title": "Sipariş Platformu Kaydı",
+          "url": "https://yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Uğur Mumcu Caddesi menü içerikleri"
+        },
+        {
+          "title": "Yerel İşletme Dizini",
+          "url": "https://maptons.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Alaçatı Tokoğlu adres ve servis doğrulaması"
+        }
+      ],
+      "pros": [
+        "Hem burger hem kömürde Çeşme kumrusu sunması",
+        "Yüksek puan ve orta bütçe",
+        "Tek noktada yerel işletme"
+      ],
+      "cons": [
+        "Cadde kenarı dar ve gürültülü olabilen açık alan"
+      ],
+      "uncertainties": [
+        "Yaz gecelerinde trafik ve yaya kalabalığına bağlı sipariş yoğunluğu"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-unda-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Unda Alaçatı",
+      "branchName": "Alaçatı, 2000. Sk. No: 44/A, 35930 Çeşme/İzmir",
+      "placeId": "ChIJE048jch5uxQR1zqbcvo34f0",
+      "coordinates": {
+        "lat": 38.2825225,
+        "lng": 26.3729397
+      },
+      "rating": 4.9,
+      "userRatingCount": 148,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.undaalacati.com/",
+      "mapsUri": "https://maps.google.com/?cid=18293964710159792855",
+      "recommendedPrimary": [
+        "Flat White",
+        "Iced Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Pastalar & Artizan Sandviç",
+          "note": "Nitelikli kahvenin yanında gün içi mola için hazırlanan günlük tuzlu ve tatlı eşlikçiler.",
+          "proof": "undaalacati.com + harita topluluk seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş sokak kenarı açık masalar ve sakin iç oturum · Kitap ve sohbet odaklı ritim",
+        "crowdAndNoise": "Sabah kahvesi ve öğleden sonra Hacımemiş yürüyüş molalarında düzenli dolu",
+        "disadvantage": "Yaz aylarında dar Hacımemiş sokaklarında masa bulmak öğleden sonraları güçleşebilir.",
+        "transit": "Hacımemiş 2000. Sokak No:44/A üzerinde yaya bölgesinde"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi Site (Unda Alaçatı)",
+          "url": "https://www.undaalacati.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Espresso bazlı kahveler, sandviçler ve tatlı seçkisi"
+        },
+        {
+          "title": "Yandex Haritalar Seçkisi",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "2000. Sokak Hacımemiş puan ve kahve-tatlı değerlendirmeleri"
+        },
+        {
+          "title": "Yerel Gastronomi Rehberi",
+          "url": "https://restoranim.net",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ege doğallığında butik kafe konsepti ve yüksek kullanıcı puanı"
+        }
+      ],
+      "pros": [
+        "Yüksek değerlendirme ortalaması",
+        "Hacımemiş içinde sakin taş sokak atmosferi",
+        "Hem tatlı hem artizan sandviç uyumu"
+      ],
+      "cons": [
+        "Dar sokak önü masaları nedeniyle kalabalık saatlerde yer sınırlılığı"
+      ],
+      "uncertainties": [
+        "Sezon dışında hafta içi açılış saatleri değişiklik gösterebiliyor"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-wake-cup",
+      "categoryId": "kahve",
+      "resolvedName": "Wake Cup Alaçatı",
+      "branchName": "Alaçatı, 2060. Sk. No:3, 35450 Çeşme/İzmir",
+      "placeId": "ChIJizxbZlR5uxQRT1LczIdGjyA",
+      "coordinates": {
+        "lat": 38.2797469,
+        "lng": 26.3764142
+      },
+      "rating": 4.6,
+      "userRatingCount": 218,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.wakecupalacati.com/",
+      "mapsUri": "https://maps.google.com/?cid=2346171479954838095",
+      "recommendedPrimary": [
+        "Matcha Latte",
+        "Iced Americano"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Soğuk Matcha Çeşitleri & Bitki Çayları",
+          "note": "Klasik espresso menüsünün dışında yaz sıcaklarında öne çıkan serinletici içecek alternatifleri.",
+          "proof": "wakecupalacati.com resmi sitesi + harita incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Butik bahçe ve avlu masaları · Çarşının yoğun kalabalığından uzak dinlenme alanı",
+        "crowdAndNoise": "Sabah sakinliğiyle başlayan, öğleden sonra dinlenmeye gelenlerle dengeli akış",
+        "disadvantage": "Ağır kahvaltı veya ana yemek servisi yerine hafif içecek molası odaklı çalışır.",
+        "transit": "Hacımemiş güney aksında 2060. Sokak No:3 üzerinde"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi Site (Wake Cup Alaçatı)",
+          "url": "https://www.wakecupalacati.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Matcha çeşitleri, espresso bar ve avlu konsepti"
+        },
+        {
+          "title": "Yandex Haritalar Kaydı",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "2060. Sokak kahve ve sakin bahçe geri bildirimleri"
+        },
+        {
+          "title": "Konaklama & Rehber Kaydı",
+          "url": "https://etstur.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Wake Cup Alaçatı konum ve kafe hizmeti doğrulaması"
+        }
+      ],
+      "pros": [
+        "200+ değerlendirme bandında güçlü skor",
+        "Avlu içi huzurlu oturum",
+        "Matcha ve nitelikli kahve dengesi"
+      ],
+      "cons": [
+        "Geniş mutfak/yemek menüsü bulunmaması"
+      ],
+      "uncertainties": [
+        "Kış döneminde yalnızca hafta sonları açık kalabiliyor"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-the-mass-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "The Mass Coffee",
+      "branchName": "Alaçatı, 11026/1 Sok No:4/1A, 35930 Çeşme/İzmir",
+      "placeId": "ChIJSyBTDVZ5uxQR7KIvoSrNtxA",
+      "coordinates": {
+        "lat": 38.2850542,
+        "lng": 26.3741664
+      },
+      "rating": 4.9,
+      "userRatingCount": 103,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1204657008321471212",
+      "recommendedPrimary": [
+        "Iced Latte",
+        "Flat White"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Tatlı Eşlikçileri & Soğuk Kahveler",
+          "note": "Espresso bazlı içeceklerin yanında sunulan sade ev yapımı tatlı dilimleri.",
+          "proof": "Harita incelemeleri + menü rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt iç bar düzeni ve sokak önü oturumu · Hızlı kahve molası ve sohbet için elverişli",
+        "crowdAndNoise": "Çarşı yürüyüşçüleriyle gün içi dengeli trafik",
+        "disadvantage": "Alanı oldukça kompakt olduğu için büyük gruplarla uzun süre oturmaya sınırlıdır.",
+        "transit": "Yeni Mecidiye Mahallesi 11026/1. Sokak No:4/1A üzerinde"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Yandex Haritalar Seçkisi",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Alaçatı merkez nitelikli kahve ve tatlı puanlaması"
+        },
+        {
+          "title": "Menü & Kafe Rehberi",
+          "url": "https://menu-tr.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sıcak-soğuk kahve çeşitleri ve merkez konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Merkezi sokak içinde temiz kahve odağı",
+        "İsabetli espresso demleme tutarlılığı",
+        "Tek noktada bağımsız kafe"
+      ],
+      "cons": [
+        "Küçük metrekare nedeniyle sınırlı oturum"
+      ],
+      "uncertainties": [
+        "Yaz sezonu dışında çalışma saatleri daralabiliyor"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-niners-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Niners Alaçatı",
+      "branchName": "Alaçatı, 1057. Sk. No:1/7, 35490 Çeşme/İzmir",
+      "placeId": "ChIJrwxTVEB5uxQRz9vx-qF7Ka0",
+      "coordinates": {
+        "lat": 38.2866376,
+        "lng": 26.3724423
+      },
+      "rating": 5,
+      "userRatingCount": 64,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12477640178236775375",
+      "recommendedPrimary": [
+        "Nitelikli Filtre Kahve",
+        "Ceremonial Matcha"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Glutensiz Cheesecake & Brownie",
+          "note": "Nitelikli kahve ve matcha yanında rafine şekersiz ve glutensiz seçenekler sunan tatlı tezgâhı.",
+          "proof": "Harita topluluk seçkisi + yerel mekan rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Sakin sokak önü sandalyeleri ve ferah bar köşesi · Çalışmaya ve dingin molalara uygun",
+        "crowdAndNoise": "Kalabalık çarşı aksının dışındaki konumuyla sakin ve düzenli akış",
+        "disadvantage": "Çarşının tam merkezindeki hareketli kafe atmosferi yerine sakin mahalle arası yerleşimde kalır.",
+        "transit": "Tokoğlu Mahallesi 1057. Sokak No:1/7 üzerinde yürüyüş mesafesinde"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Yandex Haritalar Kaydı",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1057. Sokak matcha, kahve ve glutensiz tatlı geri bildirimleri"
+        },
+        {
+          "title": "Yerel Rehber Seçkisi",
+          "url": "https://restoranim.net",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kendi kahvesini kavuran butik dükkan ve matcha odağı teyidi"
+        },
+        {
+          "title": "Menü Rehberi",
+          "url": "https://menu-tr.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Cheesecake, brownie ve hafif kahvaltılık eşlikçiler"
+        }
+      ],
+      "pros": [
+        "Kendi kavurduğu nitelikli çekirdekler",
+        "Glutensiz ve matcha alternatifleri",
+        "Gürültüden uzak Tokoğlu konumu"
+      ],
+      "cons": [
+        "Ana çarşı aksına kıyasla birkaç sokak içerde kalması"
+      ],
+      "uncertainties": [
+        "Yeni mekan olması sebebiyle sezonluk menü güncellemeleri sürebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-terakki",
+      "categoryId": "date",
+      "resolvedName": "Terakki Alaçatı",
+      "branchName": "Alaçatı, 12000 Sk No:21, 35930 Çeşme/İzmir",
+      "placeId": "ChIJE2zYMhl5uxQRktfuCdxg2C0",
+      "coordinates": {
+        "lat": 38.2825983,
+        "lng": 26.3742396
+      },
+      "rating": 4.6,
+      "userRatingCount": 662,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.terakkialacati.com/",
+      "mapsUri": "https://maps.google.com/?cid=3303496824851978130",
+      "recommendedPrimary": [
+        "Ata Tabağı (Ezine & Sakız Leblebisi)",
+        "Tarama Bun"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Damla Sakızlı İmza Kokteyller",
+          "note": "Yemek eşleşmesi için bar ekibince hazırlanan sakız ve mevsim meyveli kokteyller.",
+          "proof": "terakkialacati.com resmi bar menüsü + editöryal seçkiler"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş duvarlı şık iç salon ve loş aydınlatmalı bahçe masaları · Rezervasyon gerekli",
+        "crowdAndNoise": "Özel akşam buluşmaları ve gastronomi meraklılarıyla sezon boyunca tam kapasite",
+        "disadvantage": "Tadım ve şef meze konsepti nedeniyle bütçe üst segmenttedir ve önceden rezervasyon yapılmadan masa bulmak zordur.",
+        "transit": "Hacımemiş 12000. Sokak No:21 üzerinde yürüyüş aksı içinde"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi Site (Terakki Alaçatı)",
+          "url": "https://www.terakkialacati.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Şef Tadım Menüsü, Ata Tabağı, Tarama Bun ve kokteyl bar"
+        },
+        {
+          "title": "MICHELIN Guide Türkiye Seçkisi",
+          "url": "https://guide.michelin.com",
+          "date": "2026-10-20",
+          "kind": "award",
+          "note": "Michelin seçili modern Ege meyhanesi ve açık mutfak tescili"
+        }
+      ],
+      "pros": [
+        "Uluslararası rehber seçkili modern meze tekniği",
+        "Özenli aydınlatma ve romantik taş avlu ambiyansı",
+        "Güçlü kokteyl eşleşme barı"
+      ],
+      "cons": [
+        "Üst segment fiyatlama",
+        "Rezervasyonsuz akşam servisinde yer bulunamaması"
+      ],
+      "uncertainties": [
+        "Tadım menüsü sezon meyve-sebze akışına göre yenileniyor"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-azize-meyhanesi",
+      "categoryId": "date",
+      "resolvedName": "Azize Alaçatı Meyhanesi",
+      "branchName": "Alaçatı, 3054 no 1, 35930 Çeşme/İzmir",
+      "placeId": "ChIJQ0_4ROJ4uxQRyAMR4vCrAIk",
+      "coordinates": {
+        "lat": 38.2856619,
+        "lng": 26.3763785
+      },
+      "rating": 4.8,
+      "userRatingCount": 885,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9872079434269393864",
+      "recommendedPrimary": [
+        "Zeytinyağlı Ege Meze Tabağı",
+        "Et & Ana Yemek Paylaşımları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Paylaşımlı Ara Sıcaklar & Zeytinyağlı Seçkisi",
+          "note": "Rakı sofrasının temposuna eşlik eden günlük taze meze dolabı tabakları.",
+          "proof": "azizealacati.com.tr resmi menüsü + Çeşme rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Açık hava taş avlu masaları ve loş akşam aydınlatması · Rezervasyon önerilir",
+        "crowdAndNoise": "Akşam yemeğinden geceye uzanan canlı müzik ve sohbet temposu",
+        "disadvantage": "Müzik temposu akşam ilerledikçe yükseldiği için çok sessiz baş başa sohbet arayanlara hareketli gelebilir.",
+        "transit": "Köyiçi merkezde 3054. Sokak No:1 üzerinde"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi Site (Azize Alaçatı)",
+          "url": "https://azizealacati.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Ege mezeleri, rakı sofrası ve Köyiçi konumu"
+        },
+        {
+          "title": "Meyhane Rehberi",
+          "url": "https://alacatimeyhaneleri.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Köyiçi atmosferi ve müzikli akşam yemeği incelemesi"
+        },
+        {
+          "title": "Çeşme Rezervasyon Rehberi",
+          "url": "https://cesmerezervasyon.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "880+ değerlendirme bandında yüksek memnuniyet teyidi"
+        }
+      ],
+      "pros": [
+        "Köyiçi merkezde güçlü puan istikrarı",
+        "Geleneksel meze-müzik dengesi",
+        "Paylaşımlı masa düzenine uyumlu"
+      ],
+      "cons": [
+        "Geç saatlerde yükselen müzik sesi",
+        "Üst segment hesap ortalaması"
+      ],
+      "uncertainties": [
+        "Sezon dışında yalnızca belirli hafta sonu akşamları müzikli program açabiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-iki-tek-meyhanesi",
+      "categoryId": "date",
+      "resolvedName": "İki Tek Meyhanesi Alaçatı",
+      "branchName": "Alaçatı, Kemalpaşa Cd. No:35, 35930 Çeşme/İzmir",
+      "placeId": "ChIJTwjjGFd5uxQR2yLdVeJEO1k",
+      "coordinates": {
+        "lat": 38.2848185,
+        "lng": 26.3741
+      },
+      "rating": 4.8,
+      "userRatingCount": 303,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6429808631895368411",
+      "recommendedPrimary": [
+        "Tereyağlı Karides",
+        "Kremamsı Fava & Deniz Börülcesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Yaprak Sarma & Ege Mezeleri",
+          "note": "Deniz mahsullü sıcakların öncesinde masaya gelen soğuk meze üçlemesi.",
+          "proof": "İzmir Mekan Rehberi + harita değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kemalpaşa Caddesi kaldırım ve avlu masaları · Canlı müzik eşliğinde samimi sohbet",
+        "crowdAndNoise": "Çiftler ve küçük arkadaş gruplarıyla akşam saatlerinde yoğun",
+        "disadvantage": "Merkezi cadde üstünde konumlandığı için akşam kalabalığında sokak hareketliliği masalara yakındır.",
+        "transit": "Kemalpaşa Caddesi No:35 Alaçatı çarşısının tam ortasında"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "İzmir Rehberi",
+          "url": "https://izmir.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kemalpaşa Caddesi canlı müzikli sokak meyhanesi profili"
+        },
+        {
+          "title": "Yandex Haritalar Kaydı",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Fava, deniz börülcesi ve tereyağlı karides öne çıkanları"
+        },
+        {
+          "title": "Restoran Rehberi",
+          "url": "https://restoranim.net",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "300+ değerlendirme ve samimi meyhane puanı"
+        }
+      ],
+      "pros": [
+        "Kemalpaşa merkezde yüksek memnuniyet",
+        "Klasik meze ve ara sıcak dengesi",
+        "Tek şubeli sokak meyhanesi"
+      ],
+      "cons": [
+        "Ana cadde yoğunluğu",
+        "Yüksek fiyat seviyesi"
+      ],
+      "uncertainties": [
+        "Canlı müzik programı dönemsel olarak değişebiliyor"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-dem-meyhane",
+      "categoryId": "date",
+      "resolvedName": "Dem Alaçatı Meyhane",
+      "branchName": "Alaçatı, 11039. Sk No:5/A, 35930 Çeşme/İzmir",
+      "placeId": "ChIJHbCY7OB4uxQRkzQM_qJkBD8",
+      "coordinates": {
+        "lat": 38.285151899999995,
+        "lng": 26.3762716
+      },
+      "rating": 4.6,
+      "userRatingCount": 1068,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4540864975505994899",
+      "recommendedPrimary": [
+        "Ahtapot Güveç",
+        "İsli Kalamar & Levrek Marin"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Avokadolu Girit Ezme & Mantar Mantı",
+          "note": "Klasik meyhane mezelerine yaratıcı sıcak başlangıç ekleyen imzalar.",
+          "proof": "Dijital QR menü + Alaçatı meyhane rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Sakin yan sokak avlu masaları ve özenli servis · Rezervasyon tavsiye edilir",
+        "crowdAndNoise": "Özellikle sohbet edilebilir bir meyhane arayan akşam misafirleriyle düzenli dolu",
+        "disadvantage": "Deniz mahsullü sıcak ve meze kalitesi üst segment fiyatlama ile sunulur; yüksek sezon akşamları yer bulmak zordur.",
+        "transit": "Yeni Mecidiye 11039. Sokak No:5/A üzerinde Sota yakınında"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Dijital Menü (Dem Alaçatı)",
+          "url": "https://myqrcodemenu.com",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Levrek marin, ahtapot güveç, isli kalamar ve rakı-kokteyl listesi"
+        },
+        {
+          "title": "Alaçatı Meyhaneleri Dizini",
+          "url": "https://alacatimeyhaneleri.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sakin sokak atmosferi ve müzik dengesi incelemesi"
+        },
+        {
+          "title": "Menü İncelemeleri",
+          "url": "https://menu-tr.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1.000+ değerlendirme bandında meze tutarlılığı"
+        }
+      ],
+      "pros": [
+        "Yüksek ziyaretçi sayısına rağmen korunan 4.6 puan",
+        "Sakin ara sokak konumu",
+        "Özgün deniz mahsulü ara sıcaklar"
+      ],
+      "cons": [
+        "Yüksek yaz dönemi rezervasyon talebi",
+        "Üst segment bütçe"
+      ],
+      "uncertainties": [
+        "Bahar-kış aylarında yalnız akşam saatlerinde açık olabiliyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-budins",
+      "categoryId": "kahvalti",
+      "resolvedName": "Budins Alaçatı",
+      "branchName": "Alaçatı, 12047 sokak no 16, 35930 Çeşme/İzmir",
+      "placeId": "ChIJz7a2-YGRuxQR0rFx6xg_fHc",
+      "coordinates": {
+        "lat": 38.2785339,
+        "lng": 26.3728373
+      },
+      "rating": 4.9,
+      "userRatingCount": 563,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.budins.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=8609825963887407570",
+      "recommendedPrimary": [
+        "Budins Bahçe Kahvaltısı",
+        "El Yapımı Brunch Tabakları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taş Fırın Pizzalar & Taze Makarna",
+          "note": "Geç kahvaltı sonrası öğleden sonra masalarında tercih edilen İtalyan bistro seçenekleri.",
+          "proof": "budins.com.tr + Food and Travel Türkiye incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi taş ev avlusu ve ağaç gölgeli bahçe masaları · Uzun pazar kahvaltılarına uygun",
+        "crowdAndNoise": "Hafta sonu geç kahvaltı saatlerinde avlu masaları hızla doluyor",
+        "disadvantage": "Tarihi taş ev avlusu popüler olduğu için sabah geç saatlerde rezervasyonsuz yer bulmak zorlaşabilir.",
+        "transit": "Hacımemiş güneyinde 12047. Sokak No:16 üzerinde"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi Site (Budins Alaçatı)",
+          "url": "http://www.budins.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Rum evi bahçesi konsepti, kahvaltı ve bistro menüsü"
+        },
+        {
+          "title": "Food and Travel Türkiye",
+          "url": "https://foodandtravel.com.tr",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihi Rum evi avlusu ve sabah-akşam mutfak incelemesi"
+        },
+        {
+          "title": "Yandex Haritalar Kaydı",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "560+ değerlendirme ile yüksek puan istikrarı"
+        }
+      ],
+      "pros": [
+        "4.9 puan ortalaması",
+        "Tarihi Rum evi avlu atmosferi",
+        "Sabah kahvaltısı ve bistro seçeneklerinin bir arada olması"
+      ],
+      "cons": [
+        "Yoğun sabah saatlerinde bekleme ihtimali"
+      ],
+      "uncertainties": [
+        "Sezon dışında kahvaltı menüsü yalnızca hafta sonu sunulabiliyor"
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-bumba-breakfast",
+      "categoryId": "kahvalti",
+      "resolvedName": "Bumba Breakfast Club",
+      "branchName": "Alaçatı, 12000. Sokak No:35, 35950 Çeşme/İzmir",
+      "placeId": "ChIJXYB3dN94uxQR084m_XYLz4o",
+      "coordinates": {
+        "lat": 38.2825187,
+        "lng": 26.3735215
+      },
+      "rating": 4.6,
+      "userRatingCount": 2223,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10002225903094386387",
+      "recommendedPrimary": [
+        "Serpme Ege Kahvaltısı & Saç Bazlaması",
+        "Salçalı Cevizli Yumurta"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Reçeller & Otlu Sıcak Tavalar",
+          "note": "Serpme kahvaltıyı tamamlayan yöresel otlu peynirler ve taze reçel çeşitleri.",
+          "proof": "Editöryal Alaçatı rehberleri + harita değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Limon ve nar ağaçları altı taş avlu · Rezervasyon tavsiye edilir",
+        "crowdAndNoise": "Alaçatı kahvaltı saatlerinin en yoğun klasiklerinden biri",
+        "disadvantage": "Bölgenin en bilinen kahvaltıcılarından olduğu için hafta sonu sabahları servis hızı yavaşlayabilir ve fiyatlar üst segmenttedir.",
+        "transit": "Hacımemiş ana girişinde 12000. Sokak No:35 üzerinde"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Mes Prestiges Alaçatı Rehberi",
+          "url": "https://mesprestiges.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "130 yıllık taş ev avlusu, saç bazlama ve serpme kahvaltı teyidi"
+        },
+        {
+          "title": "Yandex Haritalar Seçkisi",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Otlu peynirli/salçalı cevizli yumurtalar ve avlu ambiyansı"
+        },
+        {
+          "title": "Yerel Menü Kaydı",
+          "url": "https://locallivein.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "2.200+ değerlendirme ile yüksek puan sürekliliği"
+        }
+      ],
+      "pros": [
+        "2.200+ değerlendirmede 4.6 istikrarı",
+        "Nar ve limon ağaçlı otantik taş avlu",
+        "Sıcak saç bazlaması ve yöresel ürünler"
+      ],
+      "cons": [
+        "Hafta sonu sabahları yüksek yoğunluk",
+        "Üst segment serpme kahvaltı fiyatı"
+      ],
+      "uncertainties": [
+        "Sezon dışında avlu yerine kapalı bölüme geçildiğinde kapasite daralabiliyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-kose-bahce-kahvalti",
+      "categoryId": "kahvalti",
+      "resolvedName": "Köşe Bahçe Kahvaltı",
+      "branchName": "Alaçatı, 12038 Sk No.37, 35937 Çeşme/İzmir",
+      "placeId": "ChIJa2YiBHx7uxQR7L6QwZXQG7s",
+      "coordinates": {
+        "lat": 38.2792739,
+        "lng": 26.373625900000004
+      },
+      "rating": 4.7,
+      "userRatingCount": 418,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13482599251079905004",
+      "recommendedPrimary": [
+        "Serpme Bahçe Kahvaltısı",
+        "Ev Yapımı Mevsim Reçelleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Ev Pişisi & Peynir Seçkisi",
+          "note": "Limon bahçesinde taze demlenmiş çay eşliğinde sıcak servis edilen hamur işleri.",
+          "proof": "Mes Prestiges + harita topluluk seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Limon ağaçları altı sakin açık bahçe masaları · Hacımemiş kalabalığından daha huzurlu",
+        "crowdAndNoise": "Sabah saatlerinde çiftler ve ailelerle düzenli dolu",
+        "disadvantage": "Bahçe kapasitesi sınırlı olduğu için bayram ve yaz hafta sonlarında sıra beklenebilir.",
+        "transit": "Hacımemiş güney aksında 12038. Sokak No:37 üzerinde"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Mes Prestiges Rehberi",
+          "url": "https://mesprestiges.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Limon ağaçlı bahçe ve ev yapımı reçeller incelemesi"
+        },
+        {
+          "title": "Yandex Haritalar Kaydı",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "12038. Sokak serpme kahvaltı ve sakin ortam geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Ana sokakların kalabalığından daha sakin bahçe",
+        "4.7 puan istikrarı",
+        "Ev yapımı reçel ve sıcak hamur işi kalitesi"
+      ],
+      "cons": [
+        "Kısıtlı masa sayısı nedeniyle yoğun günlerde bekleme"
+      ],
+      "uncertainties": [
+        "Yağmurlu günlerde bahçe düzeni sınırlı etkilenebiliyor"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-koyun-kahvalticisi",
+      "categoryId": "kahvalti",
+      "resolvedName": "Köyün Kahvaltıcısı Alaçatı",
+      "branchName": "Alaçatı, 11015 Sokak No:1-A, 35930 Çeşme/İzmir",
+      "placeId": "ChIJs5NridR5uxQRDxt275B3Xu4",
+      "coordinates": {
+        "lat": 38.2824227,
+        "lng": 26.3723863
+      },
+      "rating": 4.7,
+      "userRatingCount": 288,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17176297493214141199",
+      "recommendedPrimary": [
+        "Geleneksel Köy Kahvaltısı",
+        "Sahanda Sucuklu & Peynirli Yumurta"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yöresel Zeytin & Köy Peyniri Seçkisi",
+          "note": "Bölge mandıra ve bahçelerinden temin edilen taze başlangıç ürünleri.",
+          "proof": "Menü kaydı + harita değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Merkezde sade bahçe ve sokak masaları · Rahat aile kahvaltısı atmosferi",
+        "crowdAndNoise": "Sabah ve geç kahvaltı saatlerinde dengeli doluluk",
+        "disadvantage": "Daha sade köy kahvaltısı çizgisinde kaldığı için fotoğraf odaklı lüks brunch mekanı arayanlara klasik gelebilir.",
+        "transit": "Yeni Mecidiye 11015. Sokak No:1-A üzerinde Alaçatı çarşıya birkaç dakika yürüyüşle"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Yandex Haritalar Kaydı",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "11015. Sokak taze köy kahvaltısı ve misafir ilgisi puanları"
+        },
+        {
+          "title": "Menü Dizini",
+          "url": "https://menu-tr.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Geleneksel kahvaltı tabakları ve sıcak servis detayları"
+        }
+      ],
+      "pros": [
+        "4.7 puan istikrarı",
+        "Yöresel ürün odağı ve orta segment fiyat dengesi",
+        "Merkeze yakın ulaşım"
+      ],
+      "cons": [
+        "Modern brunch kasesi çeşitliliği sınırlı"
+      ],
+      "uncertainties": [
+        "Hafta sonu erken öğleden sonra taze hamur işleri tükenebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-deniz-pide",
+      "categoryId": "denemelisin",
+      "resolvedName": "Deniz Pide",
+      "branchName": "16000 sk. no 23-b sakızlar alaçatı, Alaçatı, 35937 Çeşme/İzmir",
+      "placeId": "ChIJmZptHv14uxQRD3m3Q-qmN5E",
+      "coordinates": {
+        "lat": 38.2912408,
+        "lng": 26.376329799999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 1603,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.facebook.com/denizpidealacati/",
+      "mapsUri": "https://maps.google.com/?cid=10464015784307292431",
+      "recommendedPrimary": [
+        "Ege Otlu & Peynirli Pide",
+        "Tahinli Pide"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Odun Fırınında Çıtır Lahmacun & Çorba",
+          "note": "Otlu ve tahinli pideler dışında hızlı öğle veya akşam öğününe eşlik eden klasikler.",
+          "proof": "Harita değerlendirmeleri + sipariş platformu menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç salon ve cadde kenarı ferah esnaf lokantası masaları · Paket servise de uygun",
+        "crowdAndNoise": "Yalnızca yaz turistleriyle değil dört mevsim Alaçatı sakinleriyle yoğun",
+        "disadvantage": "Gündelik esnaf pidecisi atmosferine sahiptir; lüks dekor veya bar servisi beklenmemelidir.",
+        "transit": "Alaçatı Sakızlar Mahallesi 16000. Sokak No:23/B üzerinde"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Yandex Haritalar Kaydı",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ege otlu pide ve tahinli pide incelemeleri"
+        },
+        {
+          "title": "Sipariş Platformu Menüsü",
+          "url": "https://yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1.600+ değerlendirme ile pide, lahmacun ve çorba sürekliliği"
+        }
+      ],
+      "pros": [
+        "1.600+ değerlendirmede 4.7 puan",
+        "Dört mevsim açık yerel favori",
+        "Ege otlu ve tahinli pide ustalığı"
+      ],
+      "cons": [
+        "Şık akşam restoranı yerine sade esnaf düzeni"
+      ],
+      "uncertainties": [
+        "Yoğun öğle saatlerinde sıcak pide çıkışında bekleme yaşanabiliyor"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-apero-bakery",
+      "categoryId": "denemelisin",
+      "resolvedName": "Apéro Bakery & Sandwicherie",
+      "branchName": "Alaçatı, 2047. Sk. No:20, 35930 Çeşme/İzmir",
+      "placeId": "ChIJ1UEp7Tx5uxQRjRzF9H58zHA",
+      "coordinates": {
+        "lat": 38.2782757,
+        "lng": 26.372793899999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 217,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8128008312211184781",
+      "recommendedPrimary": [
+        "Club Sandviç (Ekşi Mayalı)",
+        "Tereyağlı Kruvasan & Fırın Tatlıları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Pasta Şefi Tartları & Kurabiyeler",
+          "note": "Sandviçlerin yanında çay ve kahve molasına eşlik eden taze pastane üretimleri.",
+          "proof": "We Heart Alaçatı + editöryal gezi rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Huzurlu sokak önü oturma masaları · Sabah fırından çıkan ürünlerle sakin kahve-sandviç molası",
+        "crowdAndNoise": "Özellikle sabah ve öğle saatlerinde günlük ürünler tükenmeden ziyaret ediliyor",
+        "disadvantage": "Sınırlı günlük üretimle çalıştığı için geç öğleden sonra bazı kruvasan ve ekmek çeşitleri tükenmiş olabiliyor.",
+        "transit": "Hacımemiş 2047. Sokak No:20 üzerinde sakin yaya caddesinde"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "We Heart Alaçatı Rehberi",
+          "url": "https://weheartalacati.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Pasta şefi çiftin kuruluş hikayesi ve günlük fırın ürünleri"
+        },
+        {
+          "title": "Biz Evde Yokuz Alaçatı Seçkisi",
+          "url": "https://bizevdeyokuz.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ekşi mayalı gurme sandviç ve kruvasan tavsiyesi"
+        },
+        {
+          "title": "Yandex Haritalar Kaydı",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "2047. Sokak konumu ve 4.8 kullanıcı puanı"
+        }
+      ],
+      "pros": [
+        "4.8 puan ortalaması",
+        "Pasta şefi dokunuşlu hamur işi ve sandviçler",
+        "Kalabalık çarşıdan sakin kaçış noktası"
+      ],
+      "cons": [
+        "Günlük stok tükendiğinde geç saatlerde çeşit azalması"
+      ],
+      "uncertainties": [
+        "Sezon dışında üretim günleri hafta sonuna yoğunlaşabiliyor"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-salkim-sogut",
+      "categoryId": "denemelisin",
+      "resolvedName": "Salkım Söğüt Alacatı",
+      "branchName": "Alaçatı, 11043 Sk No:4, 35930 Çeşme/İzmir",
+      "placeId": "ChIJoXRAteN5uxQR96pRwjs5Euk",
+      "coordinates": {
+        "lat": 38.28502280000001,
+        "lng": 26.375290999999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 1035,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/salkimsogutalacati/?hl=tr",
+      "mapsUri": "https://maps.google.com/?cid=16794548889243986679",
+      "recommendedPrimary": [
+        "Vişneli Yaprak Sarma",
+        "Zeytinyağlı Ege Mezeleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırında Ege Ana Yemekleri & Tatlılar",
+          "note": "Soğuk zeytinyağlı başlangıçların ardından gelen sıcak taş fırın ve tencere tabakları.",
+          "proof": "Harita değerlendirmeleri + gezi rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaçlarla örtülü serin Rum evi bahçesi ve iç salon · Uzun ve sakin akşam yemeği temposu",
+        "crowdAndNoise": "Akşam saatlerinde aileler ve sakin Ege sofrası arayan gruplarla doluyor",
+        "disadvantage": "Zaman zaman bahçede özel kutlama ve grup davetleri düzenlenebildiği için gitmeden masa durumu teyit edilmelidir.",
+        "transit": "Yeni Mecidiye 11043. Sokak No:4 üzerinde Alaçatı çarşısında"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "İzmir Mekan Rehberi",
+          "url": "https://izmirmekanrehberi.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihi Rum evi avlusunda Ege mutfağı seçkisi"
+        },
+        {
+          "title": "Yandex Haritalar Kaydı",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1.000+ değerlendirmede 4.7 puan ve zeytinyağlı kalitesi"
+        },
+        {
+          "title": "Wanderlog Alaçatı Seçkisi",
+          "url": "https://wanderlog.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Vişneli yaprak sarma ve serin bahçe doğrulaması"
+        }
+      ],
+      "pros": [
+        "1.000+ değerlendirmede 4.7 puan",
+        "Serin avlu bahçesi ve geleneksel Ege zeytinyağlıları",
+        "Tek şubeli yerleşik işletme"
+      ],
+      "cons": [
+        "Dönemsel özel etkinliklere ev sahipliği yapabilmesi"
+      ],
+      "uncertainties": [
+        "Özel davet akşamlarında bireysel masa kabulü sınırlanabiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-hurmuz-ocakbasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Hürmüz Ocakbaşı Alaçatı",
+      "branchName": "Alaçatı, 11044 Sokak No:10, 35930 Çeşme/İzmir",
+      "placeId": "ChIJh3zfuUJ5uxQRzLBV8VAWlXE",
+      "coordinates": {
+        "lat": 38.2855682,
+        "lng": 26.3749772
+      },
+      "rating": 4.7,
+      "userRatingCount": 1899,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://hurmuzocakbasialacati.com/",
+      "mapsUri": "https://maps.google.com/?cid=8184472434717864140",
+      "recommendedPrimary": [
+        "Fıstıklı Kebap & Kuzu Kaburga",
+        "Girit Ezme & Muttabel"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli Çıtır Kabak & Kaymaklı İncir Tatlısı",
+          "note": "Ocakbaşı ızgaralarından sonra masada paylaşılan yöresel tatlı kapanışı.",
+          "proof": "hurmuzocakbasialacati.com resmi menüsü + harita puanlaması"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş sokak önünde ocakbaşı masaları ve iç salon · Akşamları oldukça canlı kebap sofrası ritmi",
+        "crowdAndNoise": "1.800+ değerlendirme hacmiyle Alaçatı akşamlarının en işlek ocakbaşılarından biri",
+        "disadvantage": "Akşamları yoğun kalabalık ve ızgara dumanı sokak önü masalarına yansıyabilir; fiyatlar Alaçatı merkez ortalamasındadır.",
+        "transit": "Yeni Mecidiye 11044. Sokak No:10 Alaçatı merkezde"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi Site (Hürmüz Ocakbaşı)",
+          "url": "https://hurmuzocakbasialacati.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Fıstıklı kebap, Girit ezme, kuzu kaburga ve tatlı menüsü"
+        },
+        {
+          "title": "Google Haritalar / Yandex Kayıtları",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1.899 değerlendirmede 4.7 puan tutarlılığı"
+        }
+      ],
+      "pros": [
+        "1.800+ değerlendirmede 4.7 puan istikrarı",
+        "Deniz ürünleri dışındaki kebap/et açığını kapatan güçlü ocakbaşı",
+        "Ege mezeleriyle uyumlu meze-kebap kurgusu"
+      ],
+      "cons": [
+        "Yoğun akşam saatlerinde sokak önü kalabalığı ve ızgara kokusu"
+      ],
+      "uncertainties": [
+        "Yaz akşamlarında rezervasyonsuz masa beklemek gerekebiliyor"
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-sogusle",
+      "categoryId": "denemelisin",
+      "resolvedName": "Söğüşle Alaçatı",
+      "branchName": "Hacımemiş Mahallesi, 12077. Sk. No:4, 35930 Çeşme/İzmir",
+      "placeId": "ChIJhUgotWt7uxQRw5gyXMPneZ0",
+      "coordinates": {
+        "lat": 38.279042,
+        "lng": 26.3716461
+      },
+      "rating": 4.7,
+      "userRatingCount": 308,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11347355562388134083",
+      "recommendedPrimary": [
+        "İzmir Kelle Söğüş (Lavaş Dürüm)",
+        "Kokoreç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Közde Kokoreç & Ekmek Arası Sucuk",
+          "note": "Söğüş dışında özellikle gece çıkışlarında hızlı tercih edilen ızgara sokak seçenekleri.",
+          "proof": "Harita incelemeleri + sipariş platformu menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük sokak tezgâhı ve birkaç pratik dış tabure/masa · Al-götür ve hızlı ayakta yeme düzeni",
+        "crowdAndNoise": "Özellikle akşamüstü atıştırmalığı ve gece meyhane sonrası saatlerde yoğun",
+        "disadvantage": "Büfe tarzı küçük bir sokak durağı olduğundan uzun süreli masa servisi bekleyenlere uygun değildir.",
+        "transit": "Hacımemiş 12077. Sokak No:4 üzerinde sahil ve merkez bağlantı noktasında"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Yandex Haritalar Kaydı",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kelle söğüş dürüm ve tabak porsiyon değerlendirmeleri"
+        },
+        {
+          "title": "Usta Durağı Rehberi",
+          "url": "https://ustaduragi.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Hacımemiş 12077. Sokak söğüş ve kokoreç adresi teyidi"
+        },
+        {
+          "title": "Sipariş Platformu Kaydı",
+          "url": "https://yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "300+ değerlendirme ile 4.7 kullanıcı memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Alaçatı merkezde otantik İzmir söğüşü deneyimi",
+        "300+ değerlendirmede 4.7 puan",
+        "Pratik sokak bütçesi"
+      ],
+      "cons": [
+        "Çok kısıtlı oturma alanı",
+        "Sadece sakatat/ızgara sokak lezzeti odaklı olması"
+      ],
+      "uncertainties": [
+        "Gece geç saatlerde yoğunluğa bağlı olarak söğüş stoğu tükenebiliyor"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-about-bistro",
+      "categoryId": "denemelisin",
+      "resolvedName": "About Alaçatı",
+      "branchName": "Alaçatı, 11005 sk No:35, 35930 Çeşme/İzmir",
+      "placeId": "ChIJTdUfMU15uxQR8871jLxvIkw",
+      "coordinates": {
+        "lat": 38.2831433,
+        "lng": 26.3740828
+      },
+      "rating": 4.7,
+      "userRatingCount": 236,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/aboutalacati?igsh=MXFrMWIwZnVjbXFzMg==",
+      "mapsUri": "https://maps.google.com/?cid=5486070151700139763",
+      "recommendedPrimary": [
+        "Kore Tostu & Ardahan Pişisi",
+        "Bresaola & Roka Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Trüf Mayonezli Sarımsaklı Ekmek & Kahvaltı Kasesi",
+          "note": "Kore tostu ve pizzalar dışında öğle saatlerinde en sık paylaşılan başlangıçlar.",
+          "proof": "Dijital menü arşivi + yerel restoran incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Hareketli 11005. Sokak cephesinde renkli dış masalar ve kompakt iç alan",
+        "crowdAndNoise": "Geç kahvaltıdan akşam atıştırmalığına kadar genç tatilcilerle dinamik",
+        "disadvantage": "Geleneksel Ege sofrası yerine modern kafe-bistro çizgisindedir ve yoğun sokak köşesinde masalar birbirine yakındır.",
+        "transit": "Yeni Mecidiye 11005. Sokak No:35 üzerinde"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi Instagram (@aboutalacati)",
+          "url": "https://www.instagram.com/aboutalacati",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Kore tostları, geç kahvaltı ve bistro pizzaları"
+        },
+        {
+          "title": "Menü Arşivi",
+          "url": "https://menu-tr.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Granola, Ardahan pişi ve garlic bread menü detayları"
+        },
+        {
+          "title": "Yerel Rehber Kaydı",
+          "url": "https://restoranim.net",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "11005. Sokak bistro değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Alaçatı sokaklarında Kore tostu gibi farklı bir lezzet nişi sunması",
+        "Öğleden sonraya uzanan kahvaltı servisi",
+        "4.7 puan istikrarı"
+      ],
+      "cons": [
+        "Küçük sokak önü masa aralıkları"
+      ],
+      "uncertainties": [
+        "Yaz sezonunda sokak yürüyüş kalabalığı kapı önü konforunu azaltabiliyor"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-sota",
+      "categoryId": "balik",
+      "resolvedName": "Sota Alaçatı",
+      "branchName": "Alaçatı, 11039. Sokak No:18, 35930 Çeşme/İzmir",
+      "placeId": "ChIJSRjZeI15uxQRAFb5yP0ynMg",
+      "coordinates": {
+        "lat": 38.2857956,
+        "lng": 26.376327699999997
+      },
+      "rating": 4.4,
+      "userRatingCount": 659,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://sotaalacati.com/",
+      "mapsUri": "https://maps.google.com/?cid=14455484969532347904",
+      "recommendedPrimary": [
+        "Odun Ateşinde Günlük Balık",
+        "Canlı İstiridye & Kabuklu Deniz Ürünleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ege Ahtapotlu Humus & Izgara Enginar",
+          "note": "Kabuklu deniz ürünleri öncesinde odun fırınından ve yerel Ege mutfağından çıkan başlangıçlar.",
+          "proof": "Uluslararası seçki + vientoalacati.com / editoryal incelemeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Zeytin ağaçları altı taş avlu · Rezervasyonlu sakin ve özenli akşam yemeği masaları",
+        "crowdAndNoise": "Fine-dining deniz mahsulü meraklılarıyla akşamları tam kapasite",
+        "disadvantage": "Canlı kabuklu ve fine-dining mutfak konsepti nedeniyle bölgedeki en yüksek bütçe gerektiren restoranlar arasındadır.",
+        "transit": "Yeni Mecidiye 11039. Sokak No:18 üzerinde Alaçatı merkezde"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi Site (Sota Alaçatı)",
+          "url": "http://sotaalacati.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Odun ateşinde deniz ürünleri ve sıfır dondurulmuş ürün ilkesi"
+        },
+        {
+          "title": "MICHELIN Guide Türkiye Seçkisi",
+          "url": "https://guide.michelin.com",
+          "date": "2026-10-20",
+          "kind": "award",
+          "note": "Canlı kabuklular, odun ateşi balıklar ve zeytinli taş avlu tescili"
+        },
+        {
+          "title": "Oggusto Gastronomi Seçkisi",
+          "url": "https://www.oggusto.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Alaçatı imza deniz mahsulleri ve Ege ahtapotlu humus"
+        }
+      ],
+      "pros": [
+        "Alaçatı merkezde nadir canlı kabuklu ve odun ateşli balık ustalığı",
+        "Huzurlu taş konak avlusu",
+        "Güçlü kav ve kokteyl uyumu"
+      ],
+      "cons": [
+        "Yüksek fine-dining bütçe düzeyi",
+        "Önceden rezervasyon zorunluluğu"
+      ],
+      "uncertainties": [
+        "Günlük av ve mevsim kabuklu bulunurluğuna göre menü kalemleri değişebiliyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-longoz-balik",
+      "categoryId": "balik",
+      "resolvedName": "Longoz Alaçatı",
+      "branchName": "marina, Alaçatı, 35000 Çeşme/İzmir",
+      "placeId": "ChIJGYtsKbB7uxQRVtkJuTa9bzM",
+      "coordinates": {
+        "lat": 38.2550935,
+        "lng": 26.3828715
+      },
+      "rating": 4.6,
+      "userRatingCount": 299,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://longozalacati.com/",
+      "mapsUri": "https://maps.google.com/?cid=3706389061079521622",
+      "recommendedPrimary": [
+        "Karides Mantı & Longoz Ala",
+        "Mevsim Izgara Balık"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ekşi Elmalı Enginar & Levrek Marin",
+          "note": "Marina akşamlarında balık öncesi soğuk meze dolabından seçilen yerel başlangıçlar.",
+          "proof": "longozalacati.com + menü platformu incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Port Marina rıhtım kenarı açık masalar · Rüzgârlı akşamlara karşı korunaklı düzen",
+        "crowdAndNoise": "Marina ziyaretçileri, yat misafirleri ve özel akşam yemekleriyle düzenli hareketli",
+        "disadvantage": "Marina bölgesi turistik aksta olduğundan sezon akşamlarında hesap tutarı merkez mahalle balıkçılarına kıyasla yüksektir.",
+        "transit": "Alaçatı Port Marina rıhtım yürüyüş yolu üzerinde"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi Site (Longoz Alaçatı)",
+          "url": "https://longozalacati.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Port Marina konumu, soğuk mezeler ve günlük balıklar"
+        },
+        {
+          "title": "Menü Rehberi",
+          "url": "https://menu-tr.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Karides mantı, ekşi elmalı enginar ve Longoz Ala menü doğrulaması"
+        },
+        {
+          "title": "Yandex Haritalar Kaydı",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "300+ değerlendirmede 4.6 puan ve servis kalitesi"
+        }
+      ],
+      "pros": [
+        "Alaçatı Port rıhtımında yat manzaralı konum",
+        "Yaratıcı deniz mahsulü ara sıcakları",
+        "300 değerlendirmeye yakın 4.6 istikrarı"
+      ],
+      "cons": [
+        "Marina kaynaklı üst fiyat bandı",
+        "Merkezden araçla ulaşım gerekliliği"
+      ],
+      "uncertainties": [
+        "Sezon dışı kış döneminde marina içi servis saatleri daralabiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-yosun-balik",
+      "categoryId": "balik",
+      "resolvedName": "Yosun Alaçatı",
+      "branchName": "Alaçatı, 16000 sokak no 1B, 35937 Çeşme/İzmir",
+      "placeId": "ChIJra1_ICV5uxQRNA1pjkJorC0",
+      "coordinates": {
+        "lat": 38.2886829,
+        "lng": 26.377386299999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 380,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3291120062767369524",
+      "recommendedPrimary": [
+        "Tezgahtan Günlük Izgara Balık",
+        "Deniz Mahsüllü Arpa Şehriye"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak & Soğuk Ege Mezeleri",
+          "note": "Günlük balık pişirimine eşlik eden taze otlu mezeler ve ara sıcaklar.",
+          "proof": "Dijital menü arşivi + restoran rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Nezih ve rahat iç-dış masa yerleşimi · Sohbete elverişli, gürültüsüz balık sofrası",
+        "crowdAndNoise": "Yerli müdavimler ve kalite-fiyat dengesi arayan misafirlerle düzenli dolu",
+        "disadvantage": "Sahil manzarası yerine mahalle/cadde üzerinde konumlandığı için deniz kenarı ambiyansı bekleyenlere iç mekan odaklı gelebilir.",
+        "transit": "Sakızlar Mahallesi 16000. Sokak No:1B üzerinde Alaçatı girişinde"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menü Platformu (Yosun Alaçatı)",
+          "url": "https://menu-tr.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tezgahtan taze balık seçimi ve deniz mahsüllü arpa şehriye"
+        },
+        {
+          "title": "Dijital İşletme Kaydı",
+          "url": "https://dijital.link",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "16000. Sokak adresi ve meze menüsü"
+        },
+        {
+          "title": "TOOV Restoran Rehberi",
+          "url": "https://toov.com.tr",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "380 değerlendirme ve 4.8 kullanıcı memnuniyeti"
+        }
+      ],
+      "pros": [
+        "4.8 puan ortalaması ile güçlü müdavim memnuniyeti",
+        "Tezgahtan günlük balık seçimi",
+        "Deniz kenarına kıyasla daha dengeli bütçe"
+      ],
+      "cons": [
+        "Deniz manzaralı rıhtım konumu sunmaması"
+      ],
+      "uncertainties": [
+        "Mevsim balık çeşitliliği günlük balık hali arzına göre değişir"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alacati-denizin-mutfagi",
+      "categoryId": "balik",
+      "resolvedName": "Deniz'in Mutfağı Balık Restoran",
+      "branchName": "Alaçatı, 35930 Çeşme/İzmir",
+      "placeId": "ChIJG-dNsnx_uxQRycNRlQxaSDA",
+      "coordinates": {
+        "lat": 38.261927199999995,
+        "lng": 26.377227299999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 97,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3479129722234979273",
+      "recommendedPrimary": [
+        "Kalamar Tava & Deniz Mahsullü Erişte",
+        "Izgara Mevsim Balıkları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Girit Mezesi & Zeytinyağlı Ege Otları",
+          "note": "Büyük rıhtım mekanlarına kıyasla daha sade ve taze sunulan günlük meze tabakları.",
+          "proof": "Yerel restoran incelemeleri + harita değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaç gölgeli denize sıfır sakin aile bahçesi · Rezervasyon önerilir",
+        "crowdAndNoise": "Gösterişten uzak, huzurlu deniz kenarı balık masası arayanların uğrak noktası",
+        "disadvantage": "Büyük marina restoranlarındaki canlı müzik ve gösterişli sunumlar yerine sade aile işletmesi düzeni hakimdir.",
+        "transit": "Alaçatı Port / Liman yolu üzerinde deniz kıyısı hattında"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menü & İnceleme Kaydı",
+          "url": "https://menu-tr.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Denize sıfır aile işletmesi, kalamar tava ve ızgara balıklar"
+        },
+        {
+          "title": "Restoran Rehberi",
+          "url": "https://restoranim.net",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Girit mezesi, fiyat-performans dengesi ve sakin atmosfer teyidi"
+        },
+        {
+          "title": "Yandex Haritalar Kaydı",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Alaçatı Port konumu ve 4.7 memnuniyet puanı"
+        }
+      ],
+      "pros": [
+        "Büyük marina yerlerine kıyasla sakin aile atmosferi ve iyi fiyat-kalite oranı",
+        "4.7 puan",
+        "Denize sıfır açık bahçe"
+      ],
+      "cons": [
+        "Merkeze araçla ulaşım gerekmesi",
+        "Sade sunum düzeni"
+      ],
+      "uncertainties": [
+        "Sezon dışında rüzgâr ve hava durumuna göre açık alan servisi değişebilir"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    }
+  ]
+}
