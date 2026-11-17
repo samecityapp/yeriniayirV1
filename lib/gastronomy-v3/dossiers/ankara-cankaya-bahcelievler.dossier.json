@@ -1,0 +1,1934 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "ankara-cankaya-bahcelievler",
+  "displayName": "Bahçelievler & 7. Cadde, Çankaya, Ankara",
+  "verifiedAt": "2026-11-17T18:37:45.867Z",
+  "selectedCount": 27,
+  "rejectedControls": [
+    {
+      "id": "ctrl-bah-burgerking-chain",
+      "resolvedName": "Burger King - 7. Cadde",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bah-dominos-chain",
+      "resolvedName": "Domino's Pizza Bahçelievler",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bah-terrapizza-chain",
+      "resolvedName": "Terra Pizza - Bahçelievler 7. Cadde Şubesi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bah-hmbrgr-chain",
+      "resolvedName": "HMBRGR Bahçelievler",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bah-coffy-chain",
+      "resolvedName": "Ankara Bahçelievler Coffy",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bah-sunbrothers-chain",
+      "resolvedName": "Sun Brothers Pizza Bahçelievler",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bah-dipizza-chain",
+      "resolvedName": "italian Di'Pizza - Bahçelievler",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bah-thestock-chain",
+      "resolvedName": "the stock Bahçelievler",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bah-bigbaker-chain",
+      "resolvedName": "Big Baker",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bah-cannes-noncoffee",
+      "resolvedName": "CANNES Kruvasan & Chocolate",
+      "reason": "kahve_category_not_coffee_specialist:chocolate_shop"
+    },
+    {
+      "id": "ctrl-bah-uyanik-nonfood",
+      "resolvedName": "Uyanik Kutuphane Bahçelievler",
+      "reason": "invalid_place_type:library"
+    },
+    {
+      "id": "ctrl-bah-out-emek-alfreds",
+      "resolvedName": "Alfred's Croissant&Coffee",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Bahçelievler/Bahcelievler/Yukarı Bahçelievler/Yukari Bahcelievler/Aşkabat/Askabat, adres: EMEK MAH. BİŞKEK CADDESİ NO :55/A, Emek, 06450 Çankaya/Ankara)"
+    },
+    {
+      "id": "ctrl-bah-out-emek-beeburger",
+      "resolvedName": "BEE BURGER",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Bahçelievler/Bahcelievler/Yukarı Bahçelievler/Yukari Bahcelievler/Aşkabat/Askabat, adres: 4/b, Emek, 30. Sk. No:4, 06490 Çankaya/Ankara)"
+    },
+    {
+      "id": "ctrl-bah-low-sevgi-sofrasi",
+      "resolvedName": "Sevgi Sofrası",
+      "reason": "below_quality_threshold:★4.3(239)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "bah-figza-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "Figza Pizza",
+      "branchName": "Bahçelievler, Kazakistan Cd. No:41 D:B, 06380 Çankaya/Ankara",
+      "placeId": "ChIJgTZzzjRP0xQR5ETSpEeqavE",
+      "coordinates": {
+        "lat": 39.929098599999996,
+        "lng": 32.823291
+      },
+      "rating": 4.5,
+      "userRatingCount": 600,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17395903735356605668",
+      "recommendedPrimary": [
+        "Figza Pizza (İncirli & Füme Kaburga)",
+        "Dört Peynirli Pizza",
+        "Sarımsaklı Etli Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İsli Yoğurtlu Soğan Dolması & Kuzukulağı Limonata",
+          "note": "Pizza servisinin yanında ara sıcak olarak isli yoğurtlu soğan dolması ile humus ve içecek olarak ev yapımı kuzukulağı limonata öne çıkıyor.",
+          "proof": "İşletme menüsü ve yerel gastronomi değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük, samimi iç salon ve Kazakistan Caddesi önü masalar",
+        "crowdAndNoise": "Hamur ve özel eşleşme arayan akşamüstü ve akşam misafirleri",
+        "disadvantage": "Butik kapasite nedeniyle akşam pik saatlerinde yer bekleme ihtimali bulunur",
+        "transit": "Bahçelievler Kazakistan Caddesi No:41/B; Milli Kütüphane ve Bahçelievler metro duraklarına yürüyüş mesafesi."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Figza Pizza",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Hamur dokusu, Dört Peynirli ve Sarımsaklı Etli çeşitleri ile soğan dolması"
+        },
+        {
+          "title": "Ankara.com & Yemeksepeti Menü",
+          "url": "https://www.ankara.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Şef mutfağı reçeteleri, kurutulmuş incir-kaburga uyumu ve güncel menü"
+        }
+      ],
+      "pros": [
+        "Şef imzalı özgün pizza reçeteleri",
+        "Yüksek puanlı ara sıcak ve içecek eşlikleri"
+      ],
+      "cons": [
+        "Sınırlı masa kapasitesi"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamlarında doluluk hızlı yükselir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-pizzaci-sedat",
+      "categoryId": "pizza",
+      "resolvedName": "Pizzacı Sedat",
+      "branchName": "Yukarı Bahçelievler, 69. Sk. No:57, 06490 Çankaya/Ankara",
+      "placeId": "ChIJk_d6Tz1P0xQR_tsu-FjIvjk",
+      "coordinates": {
+        "lat": 39.9196603,
+        "lng": 32.8300963
+      },
+      "rating": 4.5,
+      "userRatingCount": 942,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.yemeksepeti.com/pizzaci-sedat-bahcelievler-3-cad-ankara",
+      "mapsUri": "https://maps.google.com/?cid=4160983390183414782",
+      "recommendedPrimary": [
+        "Kavurmalı Pizza",
+        "Et Şöleni",
+        "4 Peynirli Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ton Balıklı & Karnaval Seçenekleri",
+          "note": "Klasik etli çeşitlerin yanında 4 Peynirli ve Ton Balıklı gibi ince tabanlı seçenekler de aynı mutfaktan çıkar.",
+          "proof": "İşletme menü kayıtları ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt, sade salon düzeni; ağırlıkla hızlı servis ve mahalle içi müdavim oturumu",
+        "crowdAndNoise": "Bölge sakinleri, öğrenciler ve paket-gel-al siparişi veren müdavimler",
+        "disadvantage": "İç oturma alanı dardır; kalabalık gruplar için uygun değildir",
+        "transit": "Yukarı Bahçelievler 69. Sokak (Şehit Mehmet Aras Sk.) No:57; Milli Kütüphane metrosuna birkaç dakika."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "GazeteBilkent & Mekanlar",
+          "url": "https://gazetebilkent.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Eski Pizzacı Altan geleneği, ince hamur ve 4 peynirli değerlendirmeleri"
+        },
+        {
+          "title": "Yemeksepeti & Yandex Haritalar",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kavurmalı pizza, Et Şöleni menüsü ve yüksek müdavim puanı"
+        }
+      ],
+      "pros": [
+        "Bahçelievler’in en köklü tek merkezli ince hamur pizzacılarından",
+        "Bol malzeme standardı"
+      ],
+      "cons": [
+        "Oturma alanı kısıtlı"
+      ],
+      "uncertainties": [
+        "Yoğun akşam servisinde bekleme uzayabilir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-last-bite-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Last Bite Burger & Cajun",
+      "branchName": "Yukarı Bahçelievler, Şehit Kubilyan Çon Sk., No: 20 A, Yukarı Bahçelievler, 06490 Çankaya/Ankara",
+      "placeId": "ChIJZdgUMbdP0xQRvqT_iFvdhMQ",
+      "coordinates": {
+        "lat": 39.9215236,
+        "lng": 32.8338823
+      },
+      "rating": 4.9,
+      "userRatingCount": 168,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://lastbite.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=14160686513569899710",
+      "recommendedPrimary": [
+        "Vişne Reçelli & Trüflü Cheese Burger",
+        "Köz Burger",
+        "Erciyes Pastırmalı Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çıtır Cajun Tavuk Tenders Sepeti",
+          "note": "Burgerlere ek olarak özel baharatlı kajun tavuk tenders sepetleri ve çıtır patates kızartması çokça tercih ediliyor.",
+          "proof": "lastbite.com.tr ve güncel menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Temiz, samimi iç salon ve mahalle sokağı masaları",
+        "crowdAndNoise": "Özgün sos kombinasyonları arayan burger severler ve semt gençleri",
+        "disadvantage": "Ara sokak konumu nedeniyle ilk kez gelenler harita takibi yapmalı; hafta sonu akşamları dolabiliyor",
+        "transit": "Yukarı Bahçelievler Şehit Kubilay Çon Sk. (83. Sk.) No:20/A; Milli Kütüphane metrosuna yürüme mesafesi."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Last Bite Resmi Sitesi",
+          "url": "https://lastbite.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "%100 dana kaburga köfteler, brioche ekmek ve cajun tenders menüsü"
+        },
+        {
+          "title": "Restoranim & Menu-TR",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Vişne reçelli burger, Köz Burger ve çıtır patates değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Tek şubeli yüksek puanlı butik burger üretimi",
+        "Klasiklerin yanında cesur reçel-köz reçeteleri"
+      ],
+      "cons": [
+        "Ara sokakta kompakt oturum"
+      ],
+      "uncertainties": [
+        "Akşam saatlerinde taze parti hazırlığına bağlı kısa bekleme olabilir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-periperi-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "PeriPeri Burger",
+      "branchName": "Bahçelievler, Taşkent Cd. 55A, 06490 Çankaya/Ankara",
+      "placeId": "ChIJq_Gl-8RP0xQRhuwP0LEURq0",
+      "coordinates": {
+        "lat": 39.927354099999995,
+        "lng": 32.829641099999996
+      },
+      "rating": 4.6,
+      "userRatingCount": 944,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12485689770863750278",
+      "recommendedPrimary": [
+        "Dry-Age Smash Burger",
+        "PeriPeri Soslu Double Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Soslu Çıtır Patates & Sos Seçkisi",
+          "note": "Klasik smash burgerlerin yanına ev yapımı acılı ve sarımsaklı özel soslarla sunulan patatesler eşlik ediyor.",
+          "proof": "Yerel gastronomi dizinleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Hızlı-rahat tek şube içi oturum ve Taşkent Caddesi vitrini",
+        "crowdAndNoise": "Beşevler ve Taşkent hattındaki smash burger müdavimleri",
+        "disadvantage": "Küçük dükkân ölçeği nedeniyle öğle-akşam arası kalabalıklaşınca yer beklemek gerekebilir",
+        "transit": "Bahçelievler Taşkent Caddesi No:55/A-B; Beşevler metro çıkışına birkaç dakika yürüyüş."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR & Restoranim",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taşkent Caddesi 55B tek şube ve dry-age smash burger profili"
+        },
+        {
+          "title": "Sonsöz & Yandex Haritalar",
+          "url": "https://www.sonsoz.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Smash tekniği, sos çeşitliliği ve müdavim puanları"
+        }
+      ],
+      "pros": [
+        "Dry-age köfteli yüksek tutarlı smash burger",
+        "Merkezi Taşkent Caddesi konumu"
+      ],
+      "cons": [
+        "Sınırlı iç mekan genişliği"
+      ],
+      "uncertainties": [
+        "Yoğun saatlerde sipariş hazırlığı 15–20 dakikaya çıkabilir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-corner-burger-vita",
+      "categoryId": "hamburger",
+      "resolvedName": "Corner Burger Vita",
+      "branchName": "Bahçelievler, Taşkent Cd. No:14 D:C, 06490 Çankaya/Ankara",
+      "placeId": "ChIJFybuIu5P0xQR3glN3S3x52U",
+      "coordinates": {
+        "lat": 39.9309252,
+        "lng": 32.8285659
+      },
+      "rating": 4.8,
+      "userRatingCount": 165,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7343102896739518942",
+      "recommendedPrimary": [
+        "Vita Klasik Burger",
+        "Çıtır Tavuk Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çıtır Tavuk & Dürüm Çeşitleri",
+          "note": "Dana burgerlere alternatif olarak marineli çıtır tavuk menüleri ve pratik dürümler sunuluyor.",
+          "proof": "Menu-TR ve yerel sipariş platformu menüleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak iç masa düzeni ve Beşevler yaya aksı kenarı",
+        "crowdAndNoise": "Üniversite öğrencileri ve mahalle akşam yemeği müdavimleri",
+        "disadvantage": "Akşam yemek saatlerinde öğrenci sirkülasyonu sebebiyle ses seviyesi yükselebilir",
+        "transit": "Bahçelievler Taşkent Caddesi No:14/C; Ankaray Beşevler durağına yakın."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Corner Burger Vita",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taşkent Caddesi No:14/C burger ve çıtır tavuk menü içeriği"
+        },
+        {
+          "title": "Restoranim & Migros Yemek",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tek şube konumu ve yüksek fiyat-porsiyon dengesi"
+        }
+      ],
+      "pros": [
+        "Dengeli köfte pişirme ve hızlı servis",
+        "Beşevler metrosuna çok yakın"
+      ],
+      "cons": [
+        "Pik saatlerde kalabalık ve hareketli"
+      ],
+      "uncertainties": [
+        "Hafta sonu bazı özel soslar erken tükenebilir"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-turgay-abi-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Turgay Abi - Burger / Ekmek Arası",
+      "branchName": "Bahçelievler, Azerbaycan Cd. No: 104/A, 06490 Çankaya/Ankara",
+      "placeId": "ChIJqQauAlVP0xQRGrlT-_m6eZs",
+      "coordinates": {
+        "lat": 39.921761599999996,
+        "lng": 32.8287653
+      },
+      "rating": 5,
+      "userRatingCount": 300,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11203191130887010586",
+      "recommendedPrimary": [
+        "Turgay Abi Ev Yapımı Dana Burger",
+        "Sıcak Ekmek Arası Özel Soslu Sandviç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Izgara Ekmek Arası Çeşitleri",
+          "note": "Burgerlerin yanında taze ekmek arasında özel soslu sıcak ızgara seçenekleri eşit popülerlikte hazırlanıyor.",
+          "proof": "Yerel yemek menüleri ve esnaf dizinleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı, sıcak büfe-salon oturumu ve cadde önü",
+        "crowdAndNoise": "3. Cadde esnafı, öğrenciler ve esnaf usulü doyurucu burger arayanlar",
+        "disadvantage": "Geleneksel küçük dükkan düzenindedir; uzun süreli kafe oturumu yerine lezzet odaklı hızlı yemek içindir",
+        "transit": "Bahçelievler Azerbaycan Caddesi (3. Cadde) No:104/A."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Restoranim & Com.com.tr",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Azerbaycan Cd. ev yapımı dana burger ve ekmek arası değerlendirmeleri"
+        },
+        {
+          "title": "Yemeksepeti & RestaurantGuru",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Karamelize soğanlı dana köfte menü ve yüksek kullanıcı memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Katkısız ev yapımı köfte ve sıcak esnaf servisi",
+        "Yüksek lezzet istikrarı"
+      ],
+      "cons": [
+        "Sınırlı oturma alanı"
+      ],
+      "uncertainties": [
+        "Akşam yoğunluğunda ekmek arası grupları sıra oluşturabilir"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-speco-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Speco Coffee",
+      "branchName": "Yukarı Bahçelievler, 67. Sk. No:7 D:B, 06490 Çankaya/Ankara",
+      "placeId": "ChIJ25njQZ5P0xQRAR-a8TNrm7o",
+      "coordinates": {
+        "lat": 39.9197639,
+        "lng": 32.825342299999996
+      },
+      "rating": 4.9,
+      "userRatingCount": 225,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13446458983285661441",
+      "recommendedPrimary": [
+        "Single Origin V60",
+        "Cortado",
+        "Günlük Ev Yapımı Tatlı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Günlük Tatlı Eşlikçileri",
+          "note": "Kahve barının yanında her gün küçük porsiyonlarda taze çıkarılan tatlı dilimleri servis ediliyor.",
+          "proof": "Yerel çalışma kafe rehberleri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sessiz iç salon, çalışmaya elverişli masalar ve huzurlu 67. Sokak önü",
+        "crowdAndNoise": "Sakin sokakta iyi çekirdek ve odaklı kahve molası arayanlar",
+        "disadvantage": "Ana cadde gürültüsünden uzak olsa da kompakt oturma düzeni hafta sonu erken dolabiliyor",
+        "transit": "Yukarı Bahçelievler 67. Sokak No:7/B; Aşkabat Caddesi orta kesiminin hemen yan sokağı."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Koffie.work Ankara Seçkisi",
+          "url": "https://koffie.work/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bahçelievler sakin çalışma dostu nitelikli kahve listesi"
+        },
+        {
+          "title": "Menu-TR & Yandex Haritalar",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kendi kavrumu çekirdek kalitesi ve ev yapımı tatlı doğrulaması"
+        }
+      ],
+      "pros": [
+        "Taze kavrum çekirdek odaklanması",
+        "7. Cadde kalabalığından yalıtılmış sakin sokak"
+      ],
+      "cons": [
+        "Sınırlı masa adedi"
+      ],
+      "uncertainties": [
+        "Hafta sonu öğleden sonra çalışma masaları dolabilir"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-rispetto-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Rispetto Coffee Co.",
+      "branchName": "Yukarı Bahçelievler, 59. Sk. No:15 C, 06490 Çankaya/Ankara",
+      "placeId": "ChIJp-epnyRP0xQR_UBqWzLBIlo",
+      "coordinates": {
+        "lat": 39.923023,
+        "lng": 32.825199999999995
+      },
+      "rating": 4.6,
+      "userRatingCount": 553,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://instagram.com/rispettocoffeeco",
+      "mapsUri": "https://maps.google.com/?cid=6494966034647892221",
+      "recommendedPrimary": [
+        "V60 Filtre Demleme",
+        "Cortado",
+        "El Yapımı Brownie"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Yapımı Brownie & Bal Kabaklı Cheesecake",
+          "note": "Nitelikli kahve sunumlarının yanında mevsimlik bal kabaklı cheesecake ve yoğun dokulu brownie müdavim ürünüdür.",
+          "proof": "rispetto.com.tr ve kahve blogu incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Minimalist ahşap bar, sakin sokak önü masaları ve kitap-kahve köşeleri",
+        "crowdAndNoise": "Gerçek çekirdek profili ve dengeli süt köpüğü arayan kahve meraklıları",
+        "disadvantage": "Gürültülü kalabalıklar yerine sakin kahve sohbeti düzenindedir; geç saatlerde erken kapanabilir",
+        "transit": "Yukarı Bahçelievler 59. Sokak No:15/C; 7. Cadde paralel ara sokağı."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Rispetto Resmi Sitesi",
+          "url": "https://rispetto.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Gıda mühendisi kurucu vizyonu, V60 demleme ve tatlı menüsü"
+        },
+        {
+          "title": "Ankara.com & CoffeeRadar",
+          "url": "https://coffeeradar.io/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ankara öncü specialty kahve noktası, cortado ve bal kabaklı cheesecake incelemesi"
+        }
+      ],
+      "pros": [
+        "Ankara nitelikli kahve sahnesinin en köklü bağımsız öncülerinden",
+        "Yıllardır değişmeyen bar istikrarı"
+      ],
+      "cons": [
+        "Küçük sokak dükkânı"
+      ],
+      "uncertainties": [
+        "Mevsimlik cheesecake çeşitleri günlük tükenebilir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-drupe-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Drupe Coffee & Stuff",
+      "branchName": "Bahçelievler, 37. Sk. No:8, 06490, 06490 Çankaya/Ankara",
+      "placeId": "ChIJT5nEZtlP0xQRO7T-8i07L9Y",
+      "coordinates": {
+        "lat": 39.9286301,
+        "lng": 32.825297
+      },
+      "rating": 4.6,
+      "userRatingCount": 611,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.drupecoffee.com/",
+      "mapsUri": "https://maps.google.com/?cid=15433619516558324795",
+      "recommendedPrimary": [
+        "Single Origin Filtre / Demleme",
+        "Flat White"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Single-Origin Çekirdek Satışı & Ekipman Danışması",
+          "note": "Farklı yöre çekirdeklerini evde demlemek isteyenler için öğütülmüş veya çekirdek paket seçkisi bulunur.",
+          "proof": "drupecoffee.com resmi menüsü ve yerel notlar"
+        }
+      ],
+      "suitability": {
+        "seating": "Huzurlu, az masalı minimalist iç mekan ve sokak cephesi",
+        "crowdAndNoise": "Baristayla çekirdek notası konuşmayı seven nitelikli kahve müdavimleri",
+        "disadvantage": "Mutfak-yemek menüsü sunmaz; sade kahve ve hafif eşlikçi odaklıdır",
+        "transit": "Bahçelievler 37. Sokak (Şevket Süreyya Aydemir yakını) No:8."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Drupe Coffee Resmi Sitesi",
+          "url": "https://drupecoffee.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Tek kökenli çekirdek yaklaşımı ve manuel demleme menüsü"
+        },
+        {
+          "title": "Yandex Haritalar & Yerel Kahve Dizinleri",
+          "url": "https://www.ankarakahve.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Huzurlu atmosfer ve demleme sohbetleriyle yüksek memnuniyet"
+        }
+      ],
+      "pros": [
+        "Tamamen nitelikli çekirdek odaklı uzman bar",
+        "Bölgenin en sakin sokak noktalarından"
+      ],
+      "cons": [
+        "Yemek alternatifi yoktur"
+      ],
+      "uncertainties": [
+        "Tek kökenli mikro lot çekirdekler dönemsel değişir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-roamers-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Roamers Coffee & Roastery",
+      "branchName": "Yukarı Bahçelievler, 46. Sk. 53/A, 06490 Çankaya/Ankara",
+      "placeId": "ChIJLRcEY_lP0xQRQWGtjHDjX5Q",
+      "coordinates": {
+        "lat": 39.9229771,
+        "lng": 32.8236767
+      },
+      "rating": 4.7,
+      "userRatingCount": 161,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/roamerscoffeecompany/",
+      "mapsUri": "https://maps.google.com/?cid=10691514112936862017",
+      "recommendedPrimary": [
+        "Filtre Kahve / Espresso",
+        "Coco Star Latte",
+        "Limonlu Kek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Limonlu Kek & Brownie Barı",
+          "note": "Kavrulmuş kahvelerin yanında günlük pişen limonlu kek ve brownie tatlıları özellikle övülür.",
+          "proof": "Menu-TR ve işletme menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak iç mekan köşeleri ve sakin 46. Sokak kaldırım oturumu",
+        "crowdAndNoise": "Çalışan freelancer’lar ve sokak kafesi sıcaklığı arayan müdavimler",
+        "disadvantage": "Küçük butik alanda prizli masalar yoğun saatlerde erken dolabilir",
+        "transit": "Yukarı Bahçelievler 46. Sokak No:53/A."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Roamers Coffee Instagram & Menü",
+          "url": "https://www.instagram.com/roamerscoffeecompany/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Roastery seçkisi ve günlük tatlı duyuruları"
+        },
+        {
+          "title": "Menu-TR Roamers Coffee",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Coco Star latte, limonlu kek, brownie ve samimi atmosfer değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Hem klasik roastery hem de imza tatlı-kahve dengesi",
+        "Sıcak servis"
+      ],
+      "cons": [
+        "Küçük salon hacmi"
+      ],
+      "uncertainties": [
+        "Hafta sonu masa bulunabilirliği değişkendir"
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-tranca-et-balik",
+      "categoryId": "date",
+      "resolvedName": "Tranç'a Et Balık",
+      "branchName": "Bahçelievler, 50. Sk. No:9/A, 06490 Çankaya/Ankara",
+      "placeId": "ChIJh1oz9SNP0xQR60AtW3lQ7Ao",
+      "coordinates": {
+        "lat": 39.925113599999996,
+        "lng": 32.825486399999996
+      },
+      "rating": 4.5,
+      "userRatingCount": 307,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.trancabalik.com/",
+      "mapsUri": "https://maps.google.com/?cid=787092517033951467",
+      "recommendedPrimary": [
+        "Izgara Levrek / Mevsim Balığı",
+        "Yaprak Ciğer",
+        "Günlük Soğuk Meze Seçkisi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kiremitte Et & Yaprak Ciğer",
+          "note": "Balık istemeyen eşlikçiler için açık mutfakta hazırlanan yaprak ciğer ve kiremitte et çeşitleri güçlü alternatif oluşturur.",
+          "proof": "trancabalik.com ve Menu-TR menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Nezih, sakin iç salon ve düzenli akşam masaları; fasıl gürültüsü yok",
+        "crowdAndNoise": "Sohbet odaklı akşam yemeği planlayan çiftler ve aileler",
+        "disadvantage": "Akşam masaları için önceden ayırtma önerilir; otopark sokak düzenindedir",
+        "transit": "Bahçelievler 50. Sokak No:9/A."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Tranç’a Resmi Sitesi",
+          "url": "http://www.trancabalik.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Açık mutfak et ve balık menüsü, günlük meze yaklaşımı"
+        },
+        {
+          "title": "Menu-TR Tranç’a Et Balık",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Izgara levrek, kiremitte et, yaprak ciğer ve nezih sakin ortam notları"
+        }
+      ],
+      "pros": [
+        "Bahçelievler’de canlı müzik gürültüsüz şık balık-et sofrası",
+        "Açık mutfak güveni"
+      ],
+      "cons": [
+        "Sokak parkı akşam saatlerinde sınırlı olabilir"
+      ],
+      "uncertainties": [
+        "Hafta sonu taze balık stokları erken saatlerde tükenebilir"
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-nazende-meyhane",
+      "categoryId": "date",
+      "resolvedName": "NAZENDE MEYHANE ÇANKAYA",
+      "branchName": "Bahçelievler aşkaabat cad.46-7 Aşkabat Caddesi No:46/7, Bahçelievler, Aşkabat Cd. No:46 D:7, 06101 Çankaya/Ankara",
+      "placeId": "ChIJJy1M1daq1BQR00xcjxt0i7k",
+      "coordinates": {
+        "lat": 39.9203526,
+        "lng": 32.8265862
+      },
+      "rating": 4.5,
+      "userRatingCount": 696,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.nazendemeyhane.com/",
+      "mapsUri": "https://maps.google.com/?cid=13369907580497579219",
+      "recommendedPrimary": [
+        "Günlük Meze Tepsisi",
+        "Kalamar / Ara Sıcaklar",
+        "Izgara Köfte / Çöp Şiş"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ferah Bahçe Oturumu & Grup Sofraları",
+          "note": "Geniş salonunun yanı sıra mevsiminde açılan ferah bahçe bölümü uzun akşam sofraları için tercih ediliyor.",
+          "proof": "nazendemeyhane.com ve bölge rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç salon ve 7. Cadde içinde ferah bahçe masaları",
+        "crowdAndNoise": "Kutlama ve canlı fasıllı uzun akşam yemeği planlayan çiftler ve gruplar",
+        "disadvantage": "Canlı fasıl programı nedeniyle sessiz baş başa yemek arayanlar için müzik seviyesi yüksek kalabilir",
+        "transit": "Bahçelievler Aşkabat Caddesi No:46/7 (7 Kapı Meyhaneler Hattı)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Nazende Meyhane Resmi Sitesi",
+          "url": "http://www.nazendemeyhane.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "2008’den beri aynı konum, günlük meze ve bahçe kapasitesi bilgileri"
+        },
+        {
+          "title": "Winniey & Ankara Restoran Rehberleri",
+          "url": "https://winniey.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bahçelievler fasıl ve meyhane seçkisi içinde öne çıkan işletme"
+        }
+      ],
+      "pros": [
+        "2008’den beri süren aynı lokasyon istikrarı",
+        "Bahçe ve geniş meze çeşitliliği"
+      ],
+      "cons": [
+        "Canlı fasıl sırasında ses düzeyi yükselir"
+      ],
+      "uncertainties": [
+        "Cuma-Cumartesi akşamları rezervasyonsuz yer bulmak güçleşir"
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-miss-meyhane",
+      "categoryId": "date",
+      "resolvedName": "Miss Meyhane",
+      "branchName": "Mahallesi, Yukarı Bahçelievler, Aşkabat Cd. 46/3, 06490 Çankaya/Ankara",
+      "placeId": "ChIJ_ZsuGSdP0xQRPiFWdnUNjH8",
+      "coordinates": {
+        "lat": 39.920286999999995,
+        "lng": 32.826636
+      },
+      "rating": 4.7,
+      "userRatingCount": 370,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9190735737704030526",
+      "recommendedPrimary": [
+        "Geleneksel Meze Seçkisi",
+        "Ara Sıcak Tabağı",
+        "Izgara Ana Yemek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Haftanın Her Günü Canlı Fasıl Programı",
+          "note": "Eğlenceli akşam buluşmalarında fasıl müziği ve düzenli masa servisi ön plandadır.",
+          "proof": "missmeyhane.com ve yerel meyhane rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Canlı müzik düzeninde şık meyhane masaları ve salon yerleşimi",
+        "crowdAndNoise": "Fasıl ve müzikli akşam kutlaması arayan çiftler ve arkadaş grupları",
+        "disadvantage": "Müzikli ve canlı bir ortam sunar; sessiz akustik isteyenler için uygun değildir",
+        "transit": "Yukarı Bahçelievler Aşkabat Caddesi No:46/3."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Miss Meyhane Resmi Sitesi",
+          "url": "https://missmeyhane.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Aşkabat Cd. 46/3 konumu, meze ve her akşam canlı fasıl akışı"
+        },
+        {
+          "title": "Ankara Restoran Rehberleri",
+          "url": "https://www.ankararestoranlari.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bahçelievler canlı müzikli meyhane rehberi içinde yer alan durak"
+        }
+      ],
+      "pros": [
+        "Yüksek puanlı fasıl organizasyonu ve meze dengesi",
+        "7. Cadde merkezi konumu"
+      ],
+      "cons": [
+        "Canlı eğlence kaynaklı yüksek ambiyans sesi"
+      ],
+      "uncertainties": [
+        "Hafta sonları önceden masa teyidi gerekir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-zula-cafe",
+      "categoryId": "kahvalti",
+      "resolvedName": "ZULA CAFE",
+      "branchName": "Yukarı Bahçelievler, Taşkent Cd. No:107 f-g, 06490 Çankaya/Ankara",
+      "placeId": "ChIJs5Z-LiBP0xQRtbN-xb4j7EI",
+      "coordinates": {
+        "lat": 39.9225342,
+        "lng": 32.831488
+      },
+      "rating": 4.8,
+      "userRatingCount": 769,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4822268603271132085",
+      "recommendedPrimary": [
+        "Zengin Serpme Kahvaltı",
+        "Sıcak Börek / Pişi Tabağı",
+        "Demleme Çay & Menemen"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ağaçlıklı Yaz Bahçesi & Kışlık Sobası",
+          "note": "Mevsime göre bahçe gölgeliğinde veya içerdeki soba başında uzun hafta sonu kahvaltısı imkânı sunar.",
+          "proof": "Menu-TR ve yerel kahvaltı dizinleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaçlıklı ön-arka bahçe ve sobalı sıcak iç salon",
+        "crowdAndNoise": "Hafta sonu uzun serpme kahvaltı için gelen aileler ve semt müdavimleri",
+        "disadvantage": "Hafta sonu geç kahvaltı saatlerinde bahçe masaları hızlıca doluyor",
+        "transit": "Yukarı Bahçelievler Taşkent Caddesi No:107/F-G; Milli Kütüphane metrosuna yürüyüş mesafesi."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Zula Cafe",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taşkent Caddesi bahçeli ve sobalı atmosfer ile serpme kahvaltı değerlendirmesi"
+        },
+        {
+          "title": "Restoranim & Wanderlog",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bahçelievler kahvaltı durakları içinde yüksek puanlı hizmet ve bahçe konsepti"
+        }
+      ],
+      "pros": [
+        "Bahçelievler merkezinde nadir bulunan ağaçlıklı kahvaltı bahçesi",
+        "Yüksek puanlı samimi servis"
+      ],
+      "cons": [
+        "Hafta sonu geç saatlerde yer bekleme olabilir"
+      ],
+      "uncertainties": [
+        "Büyük gruplar için sabah erken gitmek avantajlıdır"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-agah-gozleme",
+      "categoryId": "kahvalti",
+      "resolvedName": "Agah Cafe & Gözleme Unlu Mamüller Yöresel Ürünler",
+      "branchName": "Bahçelievler, Taşkent Cd. No:39, 06490 Çankaya/Ankara",
+      "placeId": "ChIJY6qag6JP0xQRBBwTsJiWxuA",
+      "coordinates": {
+        "lat": 39.928605,
+        "lng": 32.829417
+      },
+      "rating": 4.9,
+      "userRatingCount": 322,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16196798692417805316",
+      "recommendedPrimary": [
+        "El Açması Yöresel Gözleme",
+        "Köy Tereyağlı Omlet",
+        "Kahvaltı Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yöresel Ürünler & Köy Tereyağlı Kahvaltılıklar",
+          "note": "Gözleme çeşitlerinin yanında günlük çıkarılan yöresel hamur işleri ve sade kahvaltılık ürünler de sunuluyor.",
+          "proof": "Menu-TR ve yerel yemek dizinleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Temiz, samimi küçük esnaf-kafe masa düzeni",
+        "crowdAndNoise": "Ev yapımı tadında sıcak gözleme ve köy tereyağlı kahvaltı arayanlar",
+        "disadvantage": "Siparişe göre el açması hazırlandığı için yoğun sabah saatlerinde servis biraz sürebilir",
+        "transit": "Bahçelievler Taşkent Caddesi No:39/A."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Agah Cafe",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "El açması gözleme, köy tereyağlı omlet ve unlu mamuller profili"
+        },
+        {
+          "title": "Restoranim & Yandex Haritalar",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taşkent Caddesi üzerinde ★4.9 yüksek değerlendirme istikrarı"
+        }
+      ],
+      "pros": [
+        "Siparişe taze el açması gözleme",
+        "Çok yüksek müşteri memnuniyeti ve yöresel malzeme"
+      ],
+      "cons": [
+        "Hazırlık süresi sipariş yoğunluğuna bağlı"
+      ],
+      "uncertainties": [
+        "Hafta sonu erken öğlede bazı börek çeşitleri tükenebilir"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-bidilim-cafe",
+      "categoryId": "kahvalti",
+      "resolvedName": "Bi'dilim Cafe",
+      "branchName": "Bahçelievler, Taşkent Cd. No:5 D:B, 06480 Çankaya/Ankara",
+      "placeId": "ChIJlwpxrN9O0xQRV_AH6M5o5Dg",
+      "coordinates": {
+        "lat": 39.931931,
+        "lng": 32.8288355
+      },
+      "rating": 4.4,
+      "userRatingCount": 220,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4099516798679380055",
+      "recommendedPrimary": [
+        "Özel Menemen",
+        "Sıcak Simit & Kahvaltı Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tost & Öğle Atıştırmalıkları",
+          "note": "Sabah simit-menemen servisinin ardından öğle saatlerinde tost ve atıştırmalık burger çeşitleri de hazırlanıyor.",
+          "proof": "Menu-TR ve yerel kafe rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Rahat, ulaşımı pratik iç ve vitrin kenarı oturumu",
+        "crowdAndNoise": "Beşevler civarında güne hızlı ve lezzetli kahvaltıyla başlayan öğrenciler ve çalışanlar",
+        "disadvantage": "Sabah ders-mesai başlangıcı öncesi simit-menemen kuyruğu oluşabilir",
+        "transit": "Bahçelievler Taşkent Caddesi No:5/B (Ankaray Beşevler çıkışı yanı)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Bi’dilim Simit Cafe",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taşkent Caddesi No:5/B taze simit ve kahvaltı profili"
+        },
+        {
+          "title": "Restoranim Bi’dilim",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İddialı menemen, taze simit ve pratik mahalle servisi yorumları"
+        }
+      ],
+      "pros": [
+        "Metro çıkışında hızlı ve taze Ankara simidi + menemen",
+        "Pratik sabah durağı"
+      ],
+      "cons": [
+        "Sabah pikinde masa devri hızlıdır"
+      ],
+      "uncertainties": [
+        "Sıcak simit partileri belirli aralıklarla çıkar"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-cruffin-bakery",
+      "categoryId": "kahvalti",
+      "resolvedName": "Cruffin",
+      "branchName": "Bahçelievler, Prof. Muammer Aksoy Cd No:5, 06490 Çankaya/Ankara",
+      "placeId": "ChIJb6fiFpFP0xQRK0myLf_GcfE",
+      "coordinates": {
+        "lat": 39.9313189,
+        "lng": 32.826724999999996
+      },
+      "rating": 4.4,
+      "userRatingCount": 212,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17397905634794555691",
+      "recommendedPrimary": [
+        "Tereyağlı Kruvasan",
+        "Danish Tiramisu",
+        "Özel Dolgulu Cruffin"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sabah Çıkan Fırın Çeşitleri & Gel-Al Servis",
+          "note": "Küçük fırın tezgâhında günlük sınırlı parti pişen ürünler özellikle sabah ve öğlen erken saatlerde tükeniyor.",
+          "proof": "Menu-TR ve yerel fırın değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Çok küçük butik alan; ağırlıkla gel-al ve kısa ayakta/tezgâh önü mola",
+        "crowdAndNoise": "Artizan hamur işi ve taze kruvasan arayan Bahçelievler sakinleri",
+        "disadvantage": "Oturma alanı çok dardır; uzun süreli kafe oturumu yerine al-götür veya hızlı kahvaltı için uygundur",
+        "transit": "Bahçelievler Prof. Dr. Muammer Aksoy Cd. No:5."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Cruffin Bahçelievler",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taze kruvasanlar, danish tiramisu ve küçük fırın alanı notları"
+        },
+        {
+          "title": "Restoranim Cruffin",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Muammer Aksoy Cd. konumu ve erken saat ziyaret tavsiyesi"
+        }
+      ],
+      "pros": [
+        "Gerçek tereyağlı katmanlı cruffin ve danish üretimi",
+        "Tek şubeli uzman butik fırın"
+      ],
+      "cons": [
+        "Geniş oturma alanı yok"
+      ],
+      "uncertainties": [
+        "Popüler tatlı dolgulu çeşitler öğleden sonraya kalmayabilir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-kardesler-uygur",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kardeşler Uygur mutfağı",
+      "branchName": "Yukarı Bahçelievler, 69. Sk. No:60, 06490 Çankaya/Ankara",
+      "placeId": "ChIJfb7mTJRP0xQRTe76P3nZI3U",
+      "coordinates": {
+        "lat": 39.9194028,
+        "lng": 32.8299296
+      },
+      "rating": 4.8,
+      "userRatingCount": 537,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.kardesleruygurmutfagi.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=8440829241410121293",
+      "recommendedPrimary": [
+        "El Çekimi Lagmen",
+        "Uygur Polosu (Özbek Pilavı)",
+        "Kızartma Mantı & Çüçüre Çorbası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çüçüre Çorbası & Fırın Samsa",
+          "note": "El açması hamurlarla pişen Çüçüre çorbası ve fırın samsa yemek öncesi öne çıkan otantik eşlikçilerdir.",
+          "proof": "kardesleruygurmutfagi.com.tr ve Ankara gastronomi notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı, otantik iki katlı lokanta masaları; hızlı servis",
+        "crowdAndNoise": "Ankara genelinden özgün Orta Asya ve el çekimi erişte mutfağı için gelenler",
+        "disadvantage": "Baharatlı ve yağlı et tabakları ağırlıktadır; öğle-akşam yemek saatlerinde doluluk yoğundur",
+        "transit": "Yukarı Bahçelievler 69. Sokak No:60."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Kardeşler Uygur Mutfağı Resmi Sitesi",
+          "url": "https://www.kardesleruygurmutfagi.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Lagmen, polo, çüçüre çorbası ve samsa otantik Uygur menüsü"
+        },
+        {
+          "title": "Yandex Haritalar & Yerel Gezi Blogları",
+          "url": "https://www.ankara.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ankara’da el çekimi erişte ve Uygur mutfağı denince öne çıkan adres"
+        }
+      ],
+      "pros": [
+        "Ankara’da nadir görülen özgün Uygur mutfağı uzmanlığı",
+        "El çekimi taze hamur ve güçlü porsiyon"
+      ],
+      "cons": [
+        "Yoğun yemek saatlerinde kısa masa bekleme"
+      ],
+      "uncertainties": [
+        "Bazı özel yemekler günün ikinci yarısında sınırlı kalabilir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-mersimek-corba",
+      "categoryId": "denemelisin",
+      "resolvedName": "MerSimek Çorba",
+      "branchName": "Bahçelievler, 58. Sk. no:16 D:A, 06490 Çankaya/Ankara",
+      "placeId": "ChIJ8aCYpUVP0xQRcKJkfGHHG_4",
+      "coordinates": {
+        "lat": 39.930932999999996,
+        "lng": 32.8284494
+      },
+      "rating": 4.8,
+      "userRatingCount": 266,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/mersi_mek?igsh=MTNyaHJ3cGpkNjIwNw==",
+      "mapsUri": "https://maps.google.com/?cid=18310447931517608560",
+      "recommendedPrimary": [
+        "İlikli Mercimek Çorbası",
+        "Beyran Çorbası",
+        "Kavurmalı Pilav"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kavurmalı Pilav Eşlikçisi",
+          "note": "Uzun pişen çorbaların ardından sıcak kavurmalı pilav tek başına doyurucu bir tamamlayıcıdır.",
+          "proof": "İşletme menü kayıtları ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Samimi, temiz ve sade mahalle çorbacısı oturumu",
+        "crowdAndNoise": "Sabah-öğle sıcak kemik sulu çorba arayan çalışanlar ve akşamüstü müdavimleri",
+        "disadvantage": "Küçük sokak dükkanı düzenindedir; geç akşam yemeklerinden ziyade günlük çorba servisine odaklanır",
+        "transit": "Bahçelievler 58. Sokak No:16/A."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "MerSimek Çorba Resmi Profili",
+          "url": "https://www.instagram.com/mersi_mek",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "İlikli mercimek, beyran ve kavurmalı pilav sunumları"
+        },
+        {
+          "title": "Yemeksepeti & Restoranim",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kemik suyu kalitesi, ilikli mercimek ve yüksek puan değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Katkısız ilikli kemik suyu odağı",
+        "Hem çorba hem kavurmalı pilavda yüksek istikrar"
+      ],
+      "cons": [
+        "Küçük dükkan alanı"
+      ],
+      "uncertainties": [
+        "Beyran ve paça kazanları gün içinde erken bitebilir"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-mini-mutfak",
+      "categoryId": "denemelisin",
+      "resolvedName": "Mini Mutfak",
+      "branchName": "Yukarı Bahçelievler, Taşkent Cd. 91/A, 06490 Çankaya/Ankara",
+      "placeId": "ChIJbck_l3JP0xQRhGz3jm60TyA",
+      "coordinates": {
+        "lat": 39.9239597,
+        "lng": 32.8308929
+      },
+      "rating": 4.8,
+      "userRatingCount": 226,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2328277919311817860",
+      "recommendedPrimary": [
+        "Günün Zeytinyağlı & Sulu Ev Yemekleri",
+        "Ev Yapımı Profiterol"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zeytinyağlı Seçkisi & Ev Yapımı Profiterol",
+          "note": "Hafif zeytinyağlı çeşitleri ve yemek sonrası ev yapımı profiterol düzenli tercih edilir.",
+          "proof": "Menu-TR Mini Mutfak değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük, sıcak ve sade ev yemeği lokantası salonu",
+        "crowdAndNoise": "Ev yapımı tencere yemeği özleyen bölge sakinleri ve çalışanlar",
+        "disadvantage": "Günün tezgâh çeşitleri öğle pikinde hızlı tükendiği için akşam geçe kalınca seçenek azalır",
+        "transit": "Yukarı Bahçelievler Taşkent Caddesi No:91/A."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Mini Mutfak",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Zeytinyağlılar, sulu yemekler ve profiterol değerlendirmesi"
+        },
+        {
+          "title": "Yandex Haritalar Bahçelievler",
+          "url": "https://www.qrdos.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taşkent Cd. 91/A ev yemeği temizliği ve ★4.8 müdavim memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Her gün değişen katkısız tencere ve zeytinyağlı menüsü",
+        "Yüksek puanlı hijyenik mutfak"
+      ],
+      "cons": [
+        "Geç saatlerde çeşitlerin azalması"
+      ],
+      "uncertainties": [
+        "Günlük zeytinyağlı listesi mevsime göre değişir"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-sinemis-manti",
+      "categoryId": "denemelisin",
+      "resolvedName": "Sinemis Mantı Evi",
+      "branchName": "Bahçelievler, Taşkent Cd. 19/A, 06500 Çankaya/Ankara",
+      "placeId": "ChIJv2KAloFP0xQR1XxqNIVkb6M",
+      "coordinates": {
+        "lat": 39.930454499999996,
+        "lng": 32.8291399
+      },
+      "rating": 4.7,
+      "userRatingCount": 170,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://sinemismantievi.com/menu/",
+      "mapsUri": "https://maps.google.com/?cid=11776742073869958357",
+      "recommendedPrimary": [
+        "Kayseri & Sinop Usulü Mantı",
+        "Özbek / Çerkes Mantısı",
+        "Boşnak Böreği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Boşnak Böreği & Çerkes Yağlaması",
+          "note": "Çeşitli bölge mantılarının yanında el açması çıtır Boşnak böreği ve kat kat Çerkes yağlaması özel olarak tercih edilir.",
+          "proof": "sinemismantievi.com menüsü ve yerel seçki kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Aile işletmesi sıcaklığında sade, temiz iç masa düzeni",
+        "crowdAndNoise": "Anadolu ve Kafkas hamur işlerini tek sofrada denemek isteyenler",
+        "disadvantage": "Butik aile mutfağı hızında taze pişirim yapıldığından yoğun saatlerde kısa bekleme yaşanabilir",
+        "transit": "Bahçelievler Taşkent Caddesi No:19/A."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Sinemis Mantı Evi Resmi Menüsü",
+          "url": "http://sinemismantievi.com/menu/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Kayseri, Özbek, Sinop, Çerkes ve tepsi mantıları ile Boşnak böreği"
+        },
+        {
+          "title": "Menu-TR Sinemis Mantı Evi",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bölgelere göre el yapımı mantı ve hamur işleri incelemesi"
+        }
+      ],
+      "pros": [
+        "Tek mekânda 5 farklı yöresel mantı çeşidi",
+        "Katkısız aile işletmesi standardı"
+      ],
+      "cons": [
+        "Küçük salonda pik saat yoğunluğu"
+      ],
+      "uncertainties": [
+        "Tepsi mantısı gibi özel ürünler gün içi stokla sınırlı olabilir"
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-aden-durum",
+      "categoryId": "denemelisin",
+      "resolvedName": "Aden Dürüm",
+      "branchName": "Bahçelievler, Aşkabat Cd. No:46 D:G, 06000 Çankaya/Ankara",
+      "placeId": "ChIJQTD4p6hP0xQRkA_HICcvseg",
+      "coordinates": {
+        "lat": 39.920286999999995,
+        "lng": 32.826636
+      },
+      "rating": 4.5,
+      "userRatingCount": 336,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16767234732777213840",
+      "recommendedPrimary": [
+        "Adana Dürüm",
+        "Ciğer Şiş Dürüm"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İkram Mezeler & Ciğer Şiş",
+          "note": "Közlenmiş biber, ezme ve salata ikramlarıyla sunulan ciğer dürüm 7. Cadde müdavimlerinin favorileri arasındadır.",
+          "proof": "Menu-TR ve restoran menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Hareketli cadde üzeri ocakbaşı-salonu oturumu",
+        "crowdAndNoise": "7. Cadde’de hızlı, doyurucu ve taze mangal dürüm arayanlar",
+        "disadvantage": "Cadde kalabalığı içinde akşam saatlerinde ocak önü hızlı ve gürültülüdür",
+        "transit": "Bahçelievler Aşkabat Caddesi No:46/G."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Aden Dürüm",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Aşkabat Caddesi kömürde Adana-ciğer dürüm ve meze ikramı"
+        },
+        {
+          "title": "Restoranim Aden Dürüm",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "7. Cadde’nin köklü dürüm ve şiş noktası değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Taze közlenmiş kebap dürüm ve cömert meze eşlikleri",
+        "Merkezi 7. Cadde adresi"
+      ],
+      "cons": [
+        "Akşam saatlerinde yoğun sirkülasyon"
+      ],
+      "uncertainties": [
+        "Hafta sonu ciğer şiş yoğun talep görür"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-alacati-mutfak",
+      "categoryId": "denemelisin",
+      "resolvedName": "Alaçatı Mutfak",
+      "branchName": "Bahçelievler, Prof. Muammer Aksoy Cd 76/c, 06490 Çankaya/Ankara",
+      "placeId": "ChIJ0fsMzyZP0xQR6SQTEMjhc08",
+      "coordinates": {
+        "lat": 39.9254423,
+        "lng": 32.8279746
+      },
+      "rating": 4.4,
+      "userRatingCount": 197,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5725167800697431273",
+      "recommendedPrimary": [
+        "Ege Zeytinyağlı Tabağı",
+        "Ev Mantısı & Gözleme"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Ev Yemekleri & Gözleme Seçkisi",
+          "note": "Hafif zeytinyağlı çeşitlerinin yanında taze pişen ev mantısı ve gözleme öğle-akşam arası tercih edilir.",
+          "proof": "Yerel restoran dizinleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Rahat, aydınlık küçük lokanta masaları",
+        "crowdAndNoise": "Hafif zeytinyağlı ve ev yemeği arayan çevre sakinleri ve çalışanlar",
+        "disadvantage": "Günlük üretilen zeytinyağlı ve ev yemeği tezgahı öğle sonrasında azalabilir",
+        "transit": "Bahçelievler Prof. Muammer Aksoy Caddesi No:76/C (Beşevler metro yakınları)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menum.co Alaçatı Mutfak",
+          "url": "https://menum.co/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Muammer Aksoy Cd. Ege zeytinyağlıları, mantı ve gözleme menüsü"
+        },
+        {
+          "title": "Yandex Haritalar Bahçelievler",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ev yemekleri tazeliği ve samimi işletme puanları"
+        }
+      ],
+      "pros": [
+        "Ege otları ve zeytinyağlılarda dengeli ev lezzeti",
+        "Hafif öğün arayanlar için güçlü alternatif"
+      ],
+      "cons": [
+        "Akşam geçe kalınca günlük yemek çeşidi daralabilir"
+      ],
+      "uncertainties": [
+        "Mevsimlik ot ve zeytinyağlılar haftalık güncellenir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-isler-gucler-kokorec",
+      "categoryId": "denemelisin",
+      "resolvedName": "İŞLER GÜÇLER IZGARA & KOKOREÇ",
+      "branchName": "Bahçelievler, Taşkent Cd. 19/B, 06490 Çankaya/Ankara",
+      "placeId": "ChIJ8cAvl99O0xQRvPeEsoZQ9yE",
+      "coordinates": {
+        "lat": 39.930592499999996,
+        "lng": 32.828967
+      },
+      "rating": 4.6,
+      "userRatingCount": 144,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2447513461950052284",
+      "recommendedPrimary": [
+        "Yarım Ekmek Kuzu Kokoreç",
+        "Izgara Köfte / Et Döner"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Izgara Et Döner & Gece Servisi",
+          "note": "Kuzu kokorecin yanı sıra ızgara et döner ve köfte geç saatlerde de sıcak hazırlanıyor.",
+          "proof": "Mekanlar.com ve güncel yemek menüleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Pratik, hızlı sokak lezzeti masaları ve kaldırım kenarı",
+        "crowdAndNoise": "Gece çıkışı ve akşam geç saatte kuzu kokoreç arayanlar",
+        "disadvantage": "Hızlı sokak lezzetleri odağındadır; uzun oturumlu restoran konforu sunmaz",
+        "transit": "Bahçelievler Taşkent Caddesi No:19/B."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Mekanlar.com İşler Güçler",
+          "url": "https://www.mekanlar.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taşkent Caddesi kuzu kokoreç ve gece açık sokak lezzeti profili"
+        },
+        {
+          "title": "Yemeksepeti & Yandex Haritalar",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kuzu kokoreç ve et döner değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Bahçelievler merkezinde temiz kuzu kokoreç ve geç akşam servisi",
+        "Yüksek puan istikrarı"
+      ],
+      "cons": [
+        "Hızlı sokak düzeni; dar oturma alanı"
+      ],
+      "uncertainties": [
+        "Hafta sonu geceleri kokoreç porsiyonları yoğun talep görür"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-prod-coffee",
+      "categoryId": "denemelisin",
+      "resolvedName": "Prod Coffee & Roastery",
+      "branchName": "Bahçelievler, 49. Sk. No:14, 06490 Çankaya/Ankara",
+      "placeId": "ChIJi2J0Qh9P0xQR8gQ3ADAvOZU",
+      "coordinates": {
+        "lat": 39.92813640000001,
+        "lng": 32.824486
+      },
+      "rating": 4.4,
+      "userRatingCount": 683,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://instagram.com/prodcoffeeroastery?igshid=tk5bv1dx8x2",
+      "mapsUri": "https://maps.google.com/?cid=10752677468532311282",
+      "recommendedPrimary": [
+        "V60 / Aeropress Demleme",
+        "Sıcak Sandviç",
+        "Günlük Tatlı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Sandviçler & Hafif Öğle Eşlikleri",
+          "note": "Demleme kahvelerle birlikte doyurucu sıcak sandviçler sunularak ders veya çalışma günlerine pratiklik katıyor.",
+          "proof": "Wanderlog ve yerel kafe dizinleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Rahat, ders ve çalışma dostu iç salon ile 49. Sokak ön oturumu",
+        "crowdAndNoise": "Bahçelievler’in eski kahve müdavimleri ve öğrenciler",
+        "disadvantage": "Öğle ve akşamüstü ders saatlerinde masa devri yavaşlar, yer bulmak zorlaşabilir",
+        "transit": "Bahçelievler 49. Sokak No:14."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Mekanlar.com Prod Coffee",
+          "url": "https://www.mekanlar.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "49. Sokak’ta köklü V60-Aeropress ve sıcak sandviç konsepti"
+        },
+        {
+          "title": "Wanderlog Ankara Guide",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Nitelikli çekirdek ve çalışma ortamı değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Bölgenin köklü üçüncü dalga roastery’lerinden",
+        "Kahve + sıcak sandviç dengesi"
+      ],
+      "cons": [
+        "Çalışan yoğunluğunda masa bekleme ihtimali"
+      ],
+      "uncertainties": [
+        "Hafta sonu prizli iç masalar erken dolar"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-qukies-bake-shop",
+      "categoryId": "denemelisin",
+      "resolvedName": "QUKİE'S BAKE SHOP",
+      "branchName": "Yukarı Bahçelievler, Kazakistan Cd. 143/C, 06490 Çankaya/Ankara",
+      "placeId": "ChIJqfNSnVBP0xQRt9mInA7JrUI",
+      "coordinates": {
+        "lat": 39.91966,
+        "lng": 32.823910999999995
+      },
+      "rating": 4.8,
+      "userRatingCount": 205,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4804717442067126711",
+      "recommendedPrimary": [
+        "İmza Fırın Cookie Çeşitleri",
+        "Brownie"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Dolgulu Cookie & Brownie Kutuları",
+          "note": "Günlük çıkan farklı dolgulu cookie seçenekleri tekli ya da hediyelik kutu olarak yoğun ilgi görüyor.",
+          "proof": "Yerel pastane dizinleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük, tatlı odaklı butik dükkan ve sınırlı oturma düzeni",
+        "crowdAndNoise": "Fırından taze cookie ve çikolatalı tatlı arayanlar",
+        "disadvantage": "Oturma kapasitesi sınırlıdır; ağırlıkla hızlı tatlı molası ve paket servis içindir",
+        "transit": "Yukarı Bahçelievler Kazakistan Caddesi No:143/C."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Yandex Haritalar QUKİE’S",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kazakistan Caddesi tek şubeli butik cookie ve brownie değerlendirmeleri"
+        },
+        {
+          "title": "Restoranim Ankara Pastane Listesi",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yukarı Bahçelievler ★4.8 puanlı tatlı bake shop kaydı"
+        }
+      ],
+      "pros": [
+        "Taze günlük çıkan dolgulu cookie uzmanlığı",
+        "Tek şubeli butik kalite"
+      ],
+      "cons": [
+        "Geniş oturma salonu bulunmaz"
+      ],
+      "uncertainties": [
+        "Popüler cookie çeşitleri akşam saatlerinde erken tükenebilir"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bah-coffee-roof",
+      "categoryId": "denemelisin",
+      "resolvedName": "Coffee Roof",
+      "branchName": "Profesör Doktor, Bahçelievler, Prof. Muammer Aksoy Cd No: 68/B, 06000 Çankaya/Ankara",
+      "placeId": "ChIJY6f2BrZP0xQRG48yJeRinvs",
+      "coordinates": {
+        "lat": 39.925962999999996,
+        "lng": 32.8277964
+      },
+      "rating": 4.5,
+      "userRatingCount": 426,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18131037881856331547",
+      "recommendedPrimary": [
+        "San Sebastian Cheesecake",
+        "Belçika Çikolatalı Özel Tatlı",
+        "Filtre Kahve / Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "San Sebastian & Tiramisu Tatlı Vitrini",
+          "note": "Belçika çikolatası sosuyla servis edilen San Sebastian ve katmanlı tiramisu mekanın en çok sipariş edilen ürünleridir.",
+          "proof": "Dijital.menu ve Menu-TR Coffee Roof kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş masalı, öğrencilerin sohbet ve tatlı molası için tercih ettiği kafe düzeni",
+        "crowdAndNoise": "Belçika çikolatalı tatlı-kahve buluşması arayan arkadaş grupları",
+        "disadvantage": "Tatlı odaklı kafe trafiği nedeniyle akşam saatlerinde hareketli ve sesli olabilir",
+        "transit": "Bahçelievler Prof. Muammer Aksoy Caddesi No:68/B."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Dijital.menu Coffee Roof",
+          "url": "https://dijital.menu/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Belçika çikolatalı tatlılar, San Sebastian ve magnolya menüsü"
+        },
+        {
+          "title": "Menu-TR Coffee Roof",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Muammer Aksoy Caddesi üzerindeki kafe-tatlı değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Kahve yanında zengin Belçika çikolatalı ve sütlü tatlı seçkisi",
+        "Sosyal buluşma için uygun oturum"
+      ],
+      "cons": [
+        "Akşam saatlerinde masa doluluğu"
+      ],
+      "uncertainties": [
+        "Tatlı çeşitliliği gün içi yenilemeye göre değişebilir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    }
+  ]
+}

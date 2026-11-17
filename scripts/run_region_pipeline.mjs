@@ -83,6 +83,8 @@ const PUBLISHED_REGION_KEYS = [
   'mersin-merkez',
   'ankara-cankaya-kizilay',
   'ankara-cankaya-tunali',
+  'ankara-cankaya-bahcelievler',
+  'ankara-cankaya-gaziosmanpasa',
 ];
 const NEARBY_POOL_KEY = 'istanbul-kadikoy-nearby-pool';
 const DEFAULT_REGION_ORDER = [...PUBLISHED_REGION_KEYS, NEARBY_POOL_KEY];
