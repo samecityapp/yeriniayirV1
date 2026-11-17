@@ -56,6 +56,8 @@ import muglaMarmarisMerkezSnapshotJson from './regions/mugla-marmaris-merkez.jso
 import muglaDatcaMerkezSnapshotJson from './regions/mugla-datca-merkez.json';
 import izmirKonakAlsancakSnapshotJson from './regions/izmir-konak-alsancak.json';
 import izmirKarsiyakaBostanliSnapshotJson from './regions/izmir-karsiyaka-bostanli.json';
+import izmirKarsiyakaCarsiSnapshotJson from './regions/izmir-karsiyaka-carsi.json';
+import izmirBornovaMerkezSnapshotJson from './regions/izmir-bornova-merkez.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -117,6 +119,8 @@ const MUGLA_MARMARIS_MERKEZ_SNAPSHOT = muglaMarmarisMerkezSnapshotJson as V3Veri
 const MUGLA_DATCA_MERKEZ_SNAPSHOT = muglaDatcaMerkezSnapshotJson as V3VerifiedRegionSnapshot;
 const IZMIR_KONAK_ALSANCAK_SNAPSHOT = izmirKonakAlsancakSnapshotJson as V3VerifiedRegionSnapshot;
 const IZMIR_KARSIYAKA_BOSTANLI_SNAPSHOT = izmirKarsiyakaBostanliSnapshotJson as V3VerifiedRegionSnapshot;
+const IZMIR_KARSIYAKA_CARSI_SNAPSHOT = izmirKarsiyakaCarsiSnapshotJson as V3VerifiedRegionSnapshot;
+const IZMIR_BORNOVA_MERKEZ_SNAPSHOT = izmirBornovaMerkezSnapshotJson as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -177,6 +181,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MUGLA_DATCA_MERKEZ_SNAPSHOT,
   IZMIR_KONAK_ALSANCAK_SNAPSHOT,
   IZMIR_KARSIYAKA_BOSTANLI_SNAPSHOT,
+  IZMIR_KARSIYAKA_CARSI_SNAPSHOT,
+  IZMIR_BORNOVA_MERKEZ_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -623,6 +629,27 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'cengiz-topel': IZMIR_KARSIYAKA_BOSTANLI_SNAPSHOT,
   nalkesen: IZMIR_KARSIYAKA_BOSTANLI_SNAPSHOT,
   'bostanli-carsi': IZMIR_KARSIYAKA_BOSTANLI_SNAPSHOT,
+  karsiyaka: IZMIR_KARSIYAKA_CARSI_SNAPSHOT,
+  'izmir-karsiyaka-carsi': IZMIR_KARSIYAKA_CARSI_SNAPSHOT,
+  'karsiyaka-carsi-izmir': IZMIR_KARSIYAKA_CARSI_SNAPSHOT,
+  'karsiyaka-carsi': IZMIR_KARSIYAKA_CARSI_SNAPSHOT,
+  'karsiyaka-izmir': IZMIR_KARSIYAKA_CARSI_SNAPSHOT,
+  'karsiyaka-iskele': IZMIR_KARSIYAKA_CARSI_SNAPSHOT,
+  donanmaci: IZMIR_KARSIYAKA_CARSI_SNAPSHOT,
+  'bahariye-karsiyaka': IZMIR_KARSIYAKA_CARSI_SNAPSHOT,
+  alaybey: IZMIR_KARSIYAKA_CARSI_SNAPSHOT,
+  'tiyatro-sokagi': IZMIR_KARSIYAKA_CARSI_SNAPSHOT,
+  bornova: IZMIR_BORNOVA_MERKEZ_SNAPSHOT,
+  'izmir-bornova-merkez': IZMIR_BORNOVA_MERKEZ_SNAPSHOT,
+  'bornova-merkez-izmir': IZMIR_BORNOVA_MERKEZ_SNAPSHOT,
+  'bornova-merkez': IZMIR_BORNOVA_MERKEZ_SNAPSHOT,
+  'bornova-izmir': IZMIR_BORNOVA_MERKEZ_SNAPSHOT,
+  kucukpark: IZMIR_BORNOVA_MERKEZ_SNAPSHOT,
+  kazimdirik: IZMIR_BORNOVA_MERKEZ_SNAPSHOT,
+  buyukpark: IZMIR_BORNOVA_MERKEZ_SNAPSHOT,
+  erzene: IZMIR_BORNOVA_MERKEZ_SNAPSHOT,
+  'ergene-bornova': IZMIR_BORNOVA_MERKEZ_SNAPSHOT,
+  'evka-3': IZMIR_BORNOVA_MERKEZ_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {

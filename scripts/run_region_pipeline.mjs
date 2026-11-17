@@ -66,6 +66,8 @@ const PUBLISHED_REGION_KEYS = [
   'mugla-datca-merkez',
   'izmir-konak-alsancak',
   'izmir-karsiyaka-bostanli',
+  'izmir-karsiyaka-carsi',
+  'izmir-bornova-merkez',
 ];
 const NEARBY_POOL_KEY = 'istanbul-kadikoy-nearby-pool';
 const DEFAULT_REGION_ORDER = [...PUBLISHED_REGION_KEYS, NEARBY_POOL_KEY];

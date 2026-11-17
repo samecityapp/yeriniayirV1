@@ -1,0 +1,1994 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "izmir-karsiyaka-carsi",
+  "displayName": "Karşıyaka, İzmir",
+  "verifiedAt": "2026-11-17T09:11:46.768Z",
+  "selectedCount": 27,
+  "rejectedControls": [
+    {
+      "id": "ctrl-ksk-her-an-burger-chain",
+      "resolvedName": "Her An Burger",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ksk-berry-coffee-chain",
+      "resolvedName": "Berry Coffee Company Karşıyaka",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ksk-neones-burger-chain",
+      "resolvedName": "Neones Burger",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ksk-elinden-firin-chain",
+      "resolvedName": "Elinden Fırın Girne",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ksk-cizbiz-balik-chain",
+      "resolvedName": "Cızbız Balık Evi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ksk-1924-gonen-chain",
+      "resolvedName": "1924 Gönen Karşıyaka İstasyon",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ksk-dodo-pizza-chain",
+      "resolvedName": "Dodo Pizza",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ksk-coffy-chain",
+      "resolvedName": "Karşıyaka Yalı Coffy",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ksk-soylem-bufe-chain",
+      "resolvedName": "Söylem Büfe",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ksk-corek-ev-non-food",
+      "resolvedName": "Çörek Ev Yapımı Unlu Mamüller",
+      "reason": "invalid_place_type:banquet_hall"
+    },
+    {
+      "id": "ctrl-ksk-nuts-bahcelievler-out",
+      "resolvedName": "Cafe Nuts Girne",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Donanmacı/Donanmaci/Tuna/Aksoy/Bahariye/Alaybey/Tersane/Bahriye Üçok/Bahriye Ucok, adres: Bahçelievler, Gün Sazak Bulvari No: 53, 35600 Karşıyaka/İzmir)"
+    },
+    {
+      "id": "ctrl-ksk-kaburger-nergiz-out",
+      "resolvedName": "Kaburger",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Donanmacı/Donanmaci/Tuna/Aksoy/Bahariye/Alaybey/Tersane/Bahriye Üçok/Bahriye Ucok, adres: Nergiz, 1775/3. Sk. No:25/A, 35560 Karşıyaka/İzmir)"
+    },
+    {
+      "id": "ctrl-ksk-nomi-bostanli-out",
+      "resolvedName": "Nomi Burger",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Donanmacı/Donanmaci/Tuna/Aksoy/Bahariye/Alaybey/Tersane/Bahriye Üçok/Bahriye Ucok, adres: Bostanlı, 1671. Sk. No:183/1, 35035 Karşıyaka/İzmir)"
+    },
+    {
+      "id": "ctrl-ksk-kent-balik-low",
+      "resolvedName": "Kent Balık Restoran",
+      "reason": "below_quality_threshold:★4.2(1374)"
+    },
+    {
+      "id": "ctrl-ksk-cibez-low",
+      "resolvedName": "Cibez Ege Yemekleri",
+      "reason": "below_quality_threshold:★4.3(783)"
+    },
+    {
+      "id": "ctrl-ksk-kokorec-low",
+      "resolvedName": "Karşıyaka Kokoreç",
+      "reason": "below_quality_threshold:★4.1(1496)"
+    },
+    {
+      "id": "ctrl-ksk-durak-borek-purity",
+      "resolvedName": "Durak Börekçisi",
+      "reason": "kahve_category_not_coffee_specialist:pastry_shop"
+    }
+  ],
+  "venues": [
+    {
+      "id": "karsiyaka-nepolit",
+      "categoryId": "pizza",
+      "resolvedName": "Nepolit Pizza",
+      "branchName": "Bahriye Üçok, 1843/3. Sk. No:1/A, 35025 Karşıyaka/İzmir",
+      "placeId": "ChIJwSGSXcbZuxQRCxAiogzalYc",
+      "coordinates": {
+        "lat": 38.462286999999996,
+        "lng": 27.113445
+      },
+      "rating": 5,
+      "userRatingCount": 197,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.nepolitpizza.com/",
+      "mapsUri": "https://maps.google.com/?cid=9769954714444763147",
+      "recommendedPrimary": [
+        "Napoliten Margarita",
+        "Pepperoni & Sıcak Bal Pizza",
+        "Dört Peynirli Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Füme Etli & Taze Fesleğenli Özel Pizzalar",
+          "note": "Klasik Margarita dışında şarküteri yoğunluğunu seven müdavimlerin seçtiği taş fırın alternatifleri.",
+          "proof": "nepolitpizza.com resmi menüsü ve harita incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sakin ara sokak cepheli kompakt iç salon ve birkaç dış masa",
+        "crowdAndNoise": "Akşam yemeği saatlerinde mahalleli ve pizza odaklı küçük gruplar",
+        "disadvantage": "İç oturma alanı küçüktür; hafta sonu akşamlarında sipariş sırası oluşabilir",
+        "transit": "Bahriye Üçok, 1843/3. Sk. No:1/A (Bahriye Üçok Bulvarı ve Nergiz İZBAN hattı arası)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi Site (Nepolit Pizza)",
+          "url": "https://www.nepolitpizza.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Bahriye Üçok adresi ve taş fırın pizza menüsü"
+        },
+        {
+          "title": "Yandex & Google Haritalar",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur hafifliği ve yüksek puan tutarlılığı"
+        }
+      ],
+      "pros": [
+        "Taş fırında hafif ve kabarık kenarlı Napoli hamuru",
+        "Kaliteli şarküteri ve peynir oranı"
+      ],
+      "cons": [
+        "Sınırlı masa kapasitesi"
+      ],
+      "uncertainties": [
+        "Yoğun akşam servislerinde hamur bitimine bağlı erken kapanış yaşanabilir"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-kybele-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "Kybele Pizza",
+      "branchName": "Donanmacı, Fazil Bey Cd. No:17/a, 35580 Karşıyaka/İzmir",
+      "placeId": "ChIJQdDkw5LZuxQRGXhhuou4lPI",
+      "coordinates": {
+        "lat": 38.453699,
+        "lng": 27.115856500000003
+      },
+      "rating": 4.9,
+      "userRatingCount": 133,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17479798963998652441",
+      "recommendedPrimary": [
+        "Karidesli Pizza",
+        "İsli Çerkez & Tulumlu 3 Peynirli Pizza",
+        "Klasik Pepperoni Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Patlıcanlı & Sucuksever Özel Karışık Pizzalar",
+          "note": "Standart zincir harçlarından ayrışan ev yapımı soslu ve bol malzemeli çeşitler.",
+          "proof": "menu-tr.com ve Yandex yerel incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Fazıl Bey Caddesi üzerinde samimi küçük iç salon ve kaldırım masaları",
+        "crowdAndNoise": "Çiftler ve mahalle sakinlerinin tercih ettiği dingin akşam yoğunluğu",
+        "disadvantage": "Sipariş üzerine tek fırında taze piştiği için yoğun saatlerde servis süresi uzayabilir",
+        "transit": "Donanmacı, Fazıl Bey Cd. No:17/A (Karşıyaka İskele ve tramvay durağına ~5 dk yürüyüş)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR (Kybele Pizza)",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Anne-oğul aile işletmesi profili ve hamur/sos incelemesi"
+        },
+        {
+          "title": "Yandex Mekanlar (Kybele)",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Karidesli, pepperoni ve taze hamur geri bildirimleri"
+        },
+        {
+          "title": "Yemeksepeti & Dijital Menü",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sucuksever ve 3 peynirli pizza içerik doğrulaması"
+        }
+      ],
+      "pros": [
+        "Butik aile işletmesi özeni ve ev yapımı domates sosu",
+        "Karidesli ve isli Çerkez peynirli özgün seçenekler"
+      ],
+      "cons": [
+        "Kompakt dükkân ölçeği nedeniyle kalabalık gruplara uygun olmaması"
+      ],
+      "uncertainties": [
+        "Deniz ürünlü pizzaların günlük bulunabilirliği"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-pizza-americano",
+      "categoryId": "pizza",
+      "resolvedName": "Pizza Americano",
+      "branchName": "Tuna, Tiyatro Sk. 46/B, 35600 Karşıyaka/İzmir",
+      "placeId": "ChIJSf-RbFfZuxQR3k4fAjkEhIY",
+      "coordinates": {
+        "lat": 38.4571612,
+        "lng": 27.1185789
+      },
+      "rating": 4.5,
+      "userRatingCount": 647,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://instagram.com/pizzaamericano?igshid=YmMyMTA2M2Y=",
+      "mapsUri": "https://maps.google.com/?cid=9692876940903403230",
+      "recommendedPrimary": [
+        "Pepperoni Pizza",
+        "Dört Peynirli Pizza",
+        "Karışık Özel Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırınlanmış Sarımsaklı Kenar & Ev Yapımı Acı Sos Eşlikçileri",
+          "note": "Sokak masalarında pizzaların yanında paylaşılan pratik sos ve başlangıç eşlikçileri.",
+          "proof": "Yandex yerel mekan kayıtları ve resmi Instagram menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Tiyatro Sokağı boyunca hareketli açık hava masaları ve kapalı salon",
+        "crowdAndNoise": "Çarşı yürüyüşü sonrası akşam saatlerinde karışık yaş grubu yoğunluğu",
+        "disadvantage": "Sokak üzerindeki masalar Tiyatro Sokağı trafiği nedeniyle gürültülü olabilir",
+        "transit": "Tuna, Tiyatro Sk. No:46/B (Karşıyaka Çarşı ve Alaybey hattı arası)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi Hesap (Pizza Americano)",
+          "url": "https://www.instagram.com/pizzaamericano/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Tiyatro Sokağı adresi ve güncel pizza reçeteleri"
+        },
+        {
+          "title": "Yandex Haritalar (Pizza Americano)",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tiyatro Sokağı yerleşik semt pizzacısı incelemeleri"
+        }
+      ],
+      "pros": [
+        "Çarşı merkezinde uzun yıllardır korunan standart",
+        "Akşam yürüyüşü üstü pratik ulaşım"
+      ],
+      "cons": [
+        "Yoğun sokak akışı içinde sakin ortam bekleyenlere uygun olmaması"
+      ],
+      "uncertainties": [
+        "Hafta sonu sokak masalarında yer bulma süresi"
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-mono-klas",
+      "categoryId": "pizza",
+      "resolvedName": "mono klas",
+      "branchName": "Donanmacı, Salah Birsel Sk. no:1, 35580 Karşıyaka/İzmir",
+      "placeId": "ChIJh-BVVK3ZuxQR0ifrYYU5sDs",
+      "coordinates": {
+        "lat": 38.456294299999996,
+        "lng": 27.1162581
+      },
+      "rating": 4.5,
+      "userRatingCount": 167,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4301000889175058386",
+      "recommendedPrimary": [
+        "Artisan Pizza Seçkisi",
+        "Füme Etli Panuozzo Sandviç",
+        "Pesto & Mozzarellalı Panuozzo"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Pizza Hamurundan Pişen Sıcak Panuozzo Sandviçler",
+          "note": "Tek kişilik öğle ve akşam atıştırmalarında pizza yerine sıklıkla tercih edilen katlanmış sıcak ekmek sandviçleri.",
+          "proof": "Karşıyaka Rehberi mono klas tanıtımı ve harita menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Salah Birsel Sokağı cepheli küçük iç tezgâh ve ön masalar",
+        "crowdAndNoise": "Öğle ve erken akşam saatlerinde genç ve çarşı esnafı kitlesi",
+        "disadvantage": "Oturma düzeni kısıtlıdır; daha çok hızlı yeme ve al-götür temposuna göre tasarlanmıştır",
+        "transit": "Donanmacı, Salah Birsel Sk. No:1 (Karşıyaka Çarşısı Kemalpaşa Cd. paralelinde)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Karşıyaka Rehberi (mono klas)",
+          "url": "https://karsiyakarehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yeni nesil pizza ve artisan panuozzo sandviç incelemesi"
+        },
+        {
+          "title": "Google & Yandex Haritalar",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur dokusu ve hızlı çarşı servisi geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Karşıyaka Çarşısı içinde pizza dışında sıcak panuozzo alternatifi",
+        "Merkezi yürüyüş rotasında yer alması"
+      ],
+      "cons": [
+        "Uzun oturmalı kalabalık akşam yemekleri için dar mekân yapısı"
+      ],
+      "uncertainties": [
+        "Günlük sandviç ekmeği stok durumu"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-moradaris-smash",
+      "categoryId": "hamburger",
+      "resolvedName": "Moradaris Smash Point",
+      "branchName": "Aksoy, Hasan Tahsin Abakan Sokağı 4A, 35580 Karşıyaka/İzmir",
+      "placeId": "ChIJVXsVov3ZuxQRiFYeIbZUv4U",
+      "coordinates": {
+        "lat": 38.4522037,
+        "lng": 27.105285400000003
+      },
+      "rating": 4.9,
+      "userRatingCount": 124,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9637514868812568200",
+      "recommendedPrimary": [
+        "Pi to Gama Smash Burger",
+        "The Nymph (Sote Mantar & Trüf Mayonez)",
+        "The Monster (Roastbeef Eklemeli)"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Füme Roastbeefli The Monster & Kaşık Patates",
+          "note": "Daha yoğun et ve çıtır patates eşliği arayanların burgerlerin yanında eklediği ikincil seçimler.",
+          "proof": "Restaurant Guru ve Menu-TR Moradaris incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt iç tezgâh ve Aksoy ara sokak önü küçük oturma alanı",
+        "crowdAndNoise": "Akşam yemeklerinde çevre mahallelerden gelen smash burger meraklıları",
+        "disadvantage": "Oturma kapasitesi çok dardır ve ağırlıklı paket sipariş yoğunluğu taşır",
+        "transit": "Aksoy, Hasan Tahsin Abakan Sk. No:4/A (Nergiz İZBAN ve Aksoy tramvay hattına yürüme mesafesi)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Restaurant Guru (Moradaris Smash)",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Dana döş smash teknikleri, siyah sarımsak püre ve The Nymph menü puanları"
+        },
+        {
+          "title": "Menu-TR (Moradaris)",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tek şubeli smash burger mutfağı ve ev yapımı ekmek detayı"
+        },
+        {
+          "title": "Yemeksepeti & TGO Yemek",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sipariş puanı ve kaşık patates eşleşmesi değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Karşıyaka merkezdeki tek şubeli, çıtır kabuklu gerçek smash burger mutfağı",
+        "Siyah sarımsak püresi ve trüf mayonez gibi karakterli soslar"
+      ],
+      "cons": [
+        "Geniş oturmalı restoran konforu sunmaması"
+      ],
+      "uncertainties": [
+        "Yoğun akşam paket trafiğinde bekleme süresi uzayabilir"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-cafe-de-barrio",
+      "categoryId": "kahve",
+      "resolvedName": "Cafe de Barrio",
+      "branchName": "Donanmacı, Fazil Bey Cd. No:31/A, 35580 Karşıyaka/İzmir",
+      "placeId": "ChIJf52gFLXZuxQRehuO-Lx-Kjg",
+      "coordinates": {
+        "lat": 38.454049399999995,
+        "lng": 27.1143903
+      },
+      "rating": 4.8,
+      "userRatingCount": 171,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4047186565234826106",
+      "recommendedPrimary": [
+        "Flat White",
+        "Cortado",
+        "Günlük V60 Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Cold Brew & Günlük Vitrinden Seçilen Taze Tatlılar",
+          "note": "Espresso bazlı içeceklerin yanında sıcak havalarda ve öğle molalarında öne çıkan hafif eşleşmeler.",
+          "proof": "Kahve Mekanları ve Restaurant Guru Donanmacı incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ahşap detaylarla sıcak iç alan ve cadde üzeri sokak masaları",
+        "crowdAndNoise": "Düzenli Donanmacı sakinleri, yalnız okuyanlar ve ikili sohbetler",
+        "disadvantage": "İç alanı büyük olmadığı için hafta sonu öğleden sonraları erken dolar",
+        "transit": "Donanmacı, Fazıl Bey Cd. No:31/A (Karşıyaka İskele ve tramvay hattına ~4 dk)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Kahve Mekanları (Cafe de Barrio)",
+          "url": "https://kahvemekanlari.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Fazıl Bey Caddesi mahalle kahvecisi ve demleme profili"
+        },
+        {
+          "title": "Restaurant Guru (Cafe de Barrio)",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Flat white, mocha ve misafirperver barista puanları"
+        }
+      ],
+      "pros": [
+        "Mahalle ölçeğinde dingin üçüncü nesil espresso bar",
+        "İskele çevresinin en tutarlı fiyat-kalite dengesi"
+      ],
+      "cons": [
+        "Yemeklik geniş mutfak menüsü sunmaması"
+      ],
+      "uncertainties": [
+        "Tek orijinli filtre çekirdekler partiye göre değişmektedir"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-laika-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Laika Coffee & Culture",
+      "branchName": "Tuna, İsmail Özkunt Sk. 25A, 35600 Karşıyaka/İzmir",
+      "placeId": "ChIJV1nIUNrZuxQRB6j_LZIE57g",
+      "coordinates": {
+        "lat": 38.4579032,
+        "lng": 27.120746399999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 133,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://instagram.com/coffee.laika?igshid=ZGUzMzM3NWJiOQ==",
+      "mapsUri": "https://maps.google.com/?cid=13323623048482367495",
+      "recommendedPrimary": [
+        "El Demlemesi Filtre Kahve",
+        "Ice Latte",
+        "Matcha Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Matcha & Vegan Bitkisel Sütlü Soğuk İçeceklere Ek Atıştırmalıklar",
+          "note": "Süt ürünü tüketmeyenler ve kahve dışı ferah seçenek arayanlar için menünün güçlü yanları.",
+          "proof": "Laika resmi sitesi ve Yandex yerel mekan değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Rahat okuma-çalışma masaları, sessiz iç köşe ve sakin sokak önü",
+        "crowdAndNoise": "Kitap okuyanlar, uzaktan çalışanlar ve Alaybey mahallesi müdavimleri",
+        "disadvantage": "Ana yaya çarşısından birkaç sokak içeride kaldığı için gece geç saatte tenha kalabilir",
+        "transit": "Tuna, İsmail Özkunt Sk. No:25/A (Alaybey İzban ve tramvay durağına ~3 dk)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi Site (Laika Coffee Roastery)",
+          "url": "https://laikacoffeeroastery.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Kavurma felsefesi ve Tuna Mahallesi şube bilgileri"
+        },
+        {
+          "title": "BiletimGO (Laika Coffee & Culture)",
+          "url": "https://biletimgo.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Atölye, kültür-sanat etkinlikleri ve üçüncü nesil kafe kimliği"
+        },
+        {
+          "title": "Yandex Haritalar (Laika Coffee)",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sessiz çalışma ortamı, vegan alternatifler ve kahve kalitesi notları"
+        }
+      ],
+      "pros": [
+        "Çarşının gürültüsünden uzak sakin çalışma atmosferi",
+        "Kedi dostu ve vegan uyumlu içecek yelpazesi"
+      ],
+      "cons": [
+        "Çalışan kitle nedeniyle prizli masaların hızlı dolması"
+      ],
+      "uncertainties": [
+        "Kültürel atölye günlerinde mekân daha erken rezerveli olabilir"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-yagmur-cafe",
+      "categoryId": "kahve",
+      "resolvedName": "Yağmur Cafe",
+      "branchName": "Donanmacı, 1724. Sk. No:16, 35570 Karşıyaka/İzmir",
+      "placeId": "ChIJPzzbbg3ZuxQRqjLsVI-Hr2Q",
+      "coordinates": {
+        "lat": 38.455540899999995,
+        "lng": 27.1182238
+      },
+      "rating": 4.6,
+      "userRatingCount": 218,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7255166574391997098",
+      "recommendedPrimary": [
+        "Türk Kahvesi & Latte Seçenekleri",
+        "Gerçek Sahlep",
+        "Ev Yapımı Cheesecake"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Sahlep & Magnolia Tatlıları",
+          "note": "Klasik üçüncü nesil espresso barlardan farklı olarak özellikle soğuk günlerde aranan nostaljik eşlikçiler.",
+          "proof": "Yandex Mekanlar ve Neredeyse.com yerel rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Otantik ve samimi iç oturma alanı ile 1724. Sokak içi küçük masalar",
+        "crowdAndNoise": "Çarşı arası dinlenen mahalle müdavimleri ve sohbet grupları",
+        "disadvantage": "Geleneksel kafe yapısında olduğundan özel yarışma mikrolot çekirdekleri odak noktası değildir",
+        "transit": "Donanmacı, 1724. Sk. No:16 (Karşıyaka Çarşı girişine ve iskeleye ~3 dk)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Yandex Mekanlar (Yağmur Cafe)",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1724. Sokak nostaljik atmosferi ve kahve-sahlep memnuniyeti"
+        },
+        {
+          "title": "Neredeyse.com (Yağmur Cafe)",
+          "url": "https://neredeyse.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Cheesecake, magnolia ve Donanmacı kafe rehberi"
+        }
+      ],
+      "pros": [
+        "Çarşının kalabalığından sıyrılan sıcak ara sokak ruhu",
+        "Kahvenin yanında ev yapımı tatlı ve sahlep seçeneği"
+      ],
+      "cons": [
+        "Minimal özel tek orijin demleme menüsü arayanlar için daha geleneksel kalması"
+      ],
+      "uncertainties": [
+        "Günlük tatlı tepsisi çeşidi saate göre tükenebilir"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-philia-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Philia Lifestyle & Coffee Co.",
+      "branchName": "Donanmacı, Yalı Blv. No:278/A, 35580 Karşıyaka/İzmir",
+      "placeId": "ChIJE9oosLfZuxQRKqoalKEZ_kM",
+      "coordinates": {
+        "lat": 38.4535787,
+        "lng": 27.117108299999998
+      },
+      "rating": 4.5,
+      "userRatingCount": 941,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://philiacoffee.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=4899381626390882858",
+      "recommendedPrimary": [
+        "Özel Demleme Filtre Kahve",
+        "Iced Flat White",
+        "Bitkisel Sütlü Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Vegan, Vejetaryen & Glutensiz Tatlı Eşlikçileri",
+          "note": "Yalı Bulvarı üzerinde hassasiyet veya bitkisel beslenmeye göre çeşit bulmak isteyen misafirlerin önceliği.",
+          "proof": "Gastrofests rehberi ve Eatbu Philia menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Yalı Bulvarı sahil bandı manzaralı dış oturum ve ferah iç salon",
+        "crowdAndNoise": "Sahil yürüyüşçüleri, öğrenciler ve hafta sonu yoğun kafe kalabalığı",
+        "disadvantage": "Sahil bulvarı üstü ve etkinliklere ev sahipliği yaptığı için hafta sonları yüksek hareketlilik yaşanabilir",
+        "transit": "Donanmacı, Yalı Blv. No:278/A (Karşıyaka Çarşı tramvay durağına ~3 dk)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi Site (Philia Coffee)",
+          "url": "https://philiacoffee.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Yalı Bulvarı konumu ve içecek menüsü"
+        },
+        {
+          "title": "Gastrofests Rehberi",
+          "url": "https://gastrofests.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Üçüncü nesil kahve konsepti ve etkinlik alanı tanıtımı"
+        },
+        {
+          "title": "Eatbu (Philia Coffee)",
+          "url": "https://eatbu.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Vegan ve glutensiz menü alternatifleri"
+        }
+      ],
+      "pros": [
+        "Yalı Bulvarı sahil şeridinde gün boyu ferah konum",
+        "Vegan ve glutensiz tatlı opsiyonlarıyla kapsayıcı tezgâh"
+      ],
+      "cons": [
+        "Etkinlik saatlerinde sakin bireysel çalışma için sesli olabilmesi"
+      ],
+      "uncertainties": [
+        "Bazı hafta sonları özel kutlama rezervasyonları alanı daraltabilir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-budakzade",
+      "categoryId": "date",
+      "resolvedName": "Budakzade İzmir",
+      "branchName": "Tuna, İsmail Özkunt Sk. No:4, 35600 Karşıyaka/İzmir",
+      "placeId": "ChIJYUA5RWrZuxQR9pSMAaLa9Yo",
+      "coordinates": {
+        "lat": 38.456187299999996,
+        "lng": 27.120594999999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 98,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://budakzadeizmir.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=10013149735873713398",
+      "recommendedPrimary": [
+        "Ege Otları & Soğuk Meze Seçkisi",
+        "Kalamar Tava & Ara Sıcaklar",
+        "Mevsim Balığı veya Kırmızı Et Izgara"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarihi Konak Avlusunda Fix Meyhane Meze Masası",
+          "note": "İlk buluşma veya kutlama akşamlarında mezelerle birlikte ana yemeği dengeli akışta sunan akşam kurgusu.",
+          "proof": "Budakzade Konağı resmi tanıtımı ve İzmir Mekan Rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "1841 yılından kalan tarihi konak salonu ve avluda mum/sıcak aydınlatmalı masalar",
+        "crowdAndNoise": "Özel akşam yemeği çıkan çiftler, kutlama grupları ve fasıl müdavimleri",
+        "disadvantage": "Canlı fasıl programı olduğu akşamlar sohbet sesini yükseltebilir; önceden masa ayırtmak gerekir",
+        "transit": "Tuna, İsmail Özkunt Sk. No:4 (Alaybey İzban durağına ~3 dk yürüme mesafesi)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi Site (Budakzade Konak)",
+          "url": "https://budakzadeizmir.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "1841 tarihi konak yapısı, meze ve akşam menüsü"
+        },
+        {
+          "title": "İzmir Mekan Rehberi & Budakzade",
+          "url": "https://www.izmirmekanrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Canlı fasıl, Ege mezeleri ve tarihi konak meyhanesi değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "1841 tarihli korunmuş konak mimarisinde benzersiz atmosfer",
+        "Ara sıcakları ve mezeleriyle özenli akşam servisi"
+      ],
+      "cons": [
+        "Fasıl saatlerinde sessiz ve loş baş başa sohbet isteyenler için hareketli kalması"
+      ],
+      "uncertainties": [
+        "Haftanın farklı günlerinde değişen canlı müzik kadrosu ve fix menü akışı"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-frumento",
+      "categoryId": "date",
+      "resolvedName": "Frumento",
+      "branchName": "Tuna, Tiyatro Sk. 39/a, 35600 Karşıyaka/İzmir",
+      "placeId": "ChIJe9sQLgDZuxQR0skqgj7rq2k",
+      "coordinates": {
+        "lat": 38.4571776,
+        "lng": 27.1184569
+      },
+      "rating": 4.4,
+      "userRatingCount": 449,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/frumento.tr?igsh=MWptZm42bzB3YzNwYQ==",
+      "mapsUri": "https://maps.google.com/?cid=7614438248704297426",
+      "recommendedPrimary": [
+        "Parmesan Tekerinde Taze Makarna",
+        "3 Peynirli Dolgulu Ravioli",
+        "Napoliten Soslu El Yapımı Fettuccine"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Cup Tiramisu",
+          "note": "Parmesanlı yoğun makarna sonrasında hafif kahve-mascarpone dokunuşuyla masaların paylaştığı tatlı kapanışı.",
+          "proof": "Restoranim.net menü kaydı ve İzmir Mekan Rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tiyatro Sokağı içinden açılan küçük sıcak iç salon ve birkaç sokak masası",
+        "crowdAndNoise": "Genç çiftler, makarna meraklıları ve akşam yürüyüşü sonrası masalar",
+        "disadvantage": "Dükkan ölçeği dardır; yoğun akşam saatlerinde parmesan tekeri sunumu için bekleme olabilir",
+        "transit": "Tuna, Tiyatro Sk. No:39/A (Karşıyaka Çarşı ve tramvay yürüyüş mesafesi)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "İzmir Mekan Rehberi (Frumento)",
+          "url": "https://www.izmirmekanrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tiyatro Sokağı İtalyan restoranı ve parmesan tekeri makarna incelemesi"
+        },
+        {
+          "title": "Restoranim.net & Resmi Hesap",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "El yapımı ravioli, glutensiz fettuccine ve cup tiramisu menü detayı"
+        }
+      ],
+      "pros": [
+        "Gerçek parmesan tekerinde taze harmanlanan imza makarna deneyimi",
+        "Glutensiz makarna alternatifi sunması"
+      ],
+      "cons": [
+        "Kompakt salon nedeniyle az masa sayısı"
+      ],
+      "uncertainties": [
+        "Soslu özel makarna stoklarının yoğun akşam sonuna doğru tükenmesi"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-eski-ev",
+      "categoryId": "date",
+      "resolvedName": "Eski Ev Kafe & Restaurant",
+      "branchName": "Donanmacı, 1671. Sk. No:113, 35550 Karşıyaka/İzmir",
+      "placeId": "ChIJh3Qgzu7ZuxQRyRj5cGC_1bo",
+      "coordinates": {
+        "lat": 38.4574007,
+        "lng": 27.112954199999997
+      },
+      "rating": 4.4,
+      "userRatingCount": 287,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13462877082027104457",
+      "recommendedPrimary": [
+        "Ana Yemek & Sıcak Tabağı Seçkisi",
+        "Ev Yapımı Limonata veya Churchill",
+        "Tatlı & Kahve Eşleşmesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Arka Bahçede Nostaljik Kahve & Tatlı Molası",
+          "note": "Akşam yemeği dışında erken saatlerde tarihi ahşap cumbanın bahçe huzuru için tercih edilen seçenek.",
+          "proof": "Erol Şaşmaz tarihi yapılar arşivi ve Menu-TR incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi tescilli konak odaları, yüksek tavanlı iç salon ve huzurlu arka bahçe",
+        "crowdAndNoise": "Nostaljik atmosfer arayan çiftler, dost buluşmaları ve sakin sohbet grupları",
+        "disadvantage": "Yoğun saatlerde mutfak ve masa servis hızı belirgin şekilde yavaşlayabilmektedir",
+        "transit": "Donanmacı, 1671. Sk. No:113 (Karşıyaka İZBAN istasyonunun hemen yakınında)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Erol Şaşmaz Arşivi",
+          "url": "https://www.erolsasmaz.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yaklaşık 200 yıllık tescilli ahşap cumbalı tarihi bina belgelenmesi"
+        },
+        {
+          "title": "Menu-TR & Yandex Mekanlar",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Arka bahçe dokusu ve servis hızına dair karma geri bildirimler"
+        }
+      ],
+      "pros": [
+        "Karşıyaka merkezde korunmuş özgün tarihi konak bahçesi",
+        "Akşam ve öğleden sonra farklı buluşmalara uyum sağlaması"
+      ],
+      "cons": [
+        "Servis temposunun zaman zaman aksayabilmesi"
+      ],
+      "uncertainties": [
+        "Mevsimsel bahçe kullanımı ve grup masalarının yerleşimi"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-pisi-misi",
+      "categoryId": "kahvalti",
+      "resolvedName": "Pişi Mişi",
+      "branchName": "Donanmacı, 1729. Sk. 16/A, 35580 Karşıyaka/İzmir",
+      "placeId": "ChIJ58nLpQbZuxQRfAOb_8vhDic",
+      "coordinates": {
+        "lat": 38.45667400000001,
+        "lng": 27.114493000000003
+      },
+      "rating": 5,
+      "userRatingCount": 176,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2814435083436098428",
+      "recommendedPrimary": [
+        "Kavurmalı & Kaşarlı Dolgulu Pişi",
+        "Köz Patlıcanlı & Biberli Pişi",
+        "Pişiviç Sandviç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ballı Kaymaklı & Profiterollü Tatlı Pişi Çeşitleri",
+          "note": "Tuzlu kahvaltı pişilerinin ardından masaların kapanışta bölüştüğü ev yapımı soslu sıcak hamur tatlıları.",
+          "proof": "Menu-TR Pişi Mişi incelemesi ve Neyiyelim menü arşivi"
+        }
+      ],
+      "suitability": {
+        "seating": "Temiz, aydınlık iç tezgâh masaları ve sokak kenarı birkaç masa",
+        "crowdAndNoise": "Sabah ve öğleden önce taze pişi peşindeki semt sakinleri ve çiftler",
+        "disadvantage": "Hamurlar siparişle açıldığı için hafta sonu kahvaltı pikinde bekleme süresi uzar",
+        "transit": "Donanmacı, 1729. Sk. No:16/A (Karşıyaka İskele ve Kemalpaşa Çarşısı arası)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR (Pişi Mişi)",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Gıda mühendisi-anne işletmesi, sipariş üstü hamur ve az yağ tekniği"
+        },
+        {
+          "title": "Neyiyelim & Yemeksepeti",
+          "url": "https://neyiyelim.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kavurmalı, köz patlıcanlı, pişiviç ve tatlı pişi puanları"
+        }
+      ],
+      "pros": [
+        "Yağ çekmeden kabararak pişen sipariş anı taze pişi hamuru",
+        "Tuzlu ve tatlı dolgulu çok sayıda özgün varyasyon"
+      ],
+      "cons": [
+        "Kalabalık kahvaltı saatlerinde sınırlı oturma alanı"
+      ],
+      "uncertainties": [
+        "Hafta sonu erken saatlerden sonra bazı dolguların stok durumu"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-1912-gozleme",
+      "categoryId": "kahvalti",
+      "resolvedName": "1912 Gözleme ve Çay Evi",
+      "branchName": "Tuna, 1710. Sk. no:3/A, 35520 Karşıyaka/İzmir",
+      "placeId": "ChIJlQ4BV0fZuxQRfjVfoYt4Bag",
+      "coordinates": {
+        "lat": 38.4558196,
+        "lng": 27.119278500000004
+      },
+      "rating": 4.5,
+      "userRatingCount": 47,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12107215714358605182",
+      "recommendedPrimary": [
+        "Peynirli & Otlu El Açması Gözleme",
+        "Patatesli Klasik Gözleme",
+        "İnce Belli Demleme Çay"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mantarlı & Patlıcanlı Bitkisel Gözlemeler",
+          "note": "Hayvansal ürün tüketmeyen misafirlerin taze hamurla sıcak alabildiği pratik sabah çeşitleri.",
+          "proof": "HappyCow Karşıyaka listesi ve Yandex Mekanlar değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı iç masalar ve mahalle sokağına bakan küçük oturma alanı",
+        "crowdAndNoise": "Hafta içi sabahları esnaf, öğrenciler ve sade kahvaltı arayan semt sakinleri",
+        "disadvantage": "Serpme kahvaltı lüksü değil hızlı el açması gözleme odaklı mütevazı bir esnaf düzenidir",
+        "transit": "Tuna, 1710. Sk. No:3/A (Karşıyaka Çarşı üst sokağı ve vapur iskelesine ~4 dk)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "HappyCow (1912 Gözleme)",
+          "url": "https://www.happycow.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tuna Mahallesi el açması gözleme ve bitkisel içerik seçenekleri"
+        },
+        {
+          "title": "Yandex Mekanlar (1912 Gözleme)",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çarşı içinde uygun bütçeli sıcak gözleme ve çay duraklaması"
+        }
+      ],
+      "pros": [
+        "Abartısız esnaf fiyatlarında taze el açması gözleme",
+        "Bitkisel seçeneklere açık iç harç yelpazesi"
+      ],
+      "cons": [
+        "Kalabalık gruplar için büyük oturma salonunun bulunmaması"
+      ],
+      "uncertainties": [
+        "Hafta sonu erken öğleden sonra iç harç tükenme durumu"
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-alaybey-gevrek",
+      "categoryId": "kahvalti",
+      "resolvedName": "Alaybeygevrekfırını",
+      "branchName": "İzmir Karşıyaka alabey hidayeterzeybek, mah, Bahariye, 1869sk NO:53A, 35600 Karşıyaka/İzmir",
+      "placeId": "ChIJEePNgs7ZuxQRoXG1SZOzVPc",
+      "coordinates": {
+        "lat": 38.4610765,
+        "lng": 27.120592199999997
+      },
+      "rating": 4.4,
+      "userRatingCount": 213,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17822067070590087585",
+      "recommendedPrimary": [
+        "Sıcak Susamlı İzmir Gevreği",
+        "Sade & Ispanaklı Boyoz",
+        "Taze Açma & Poğaça"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sabah Tepsisinden Taze Boyoz & Simit Sandviç",
+          "note": "Fırın çıkışına denk gelindiğinde yumurta ya da peynirle tamamlanan geleneksel İzmir sabah pratiği.",
+          "proof": "Menu-TR Alaybey Gevrek Fırını ve Adresci semt kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tezgâh önü al-götür fırın düzeni; masa oturumu yoktur",
+        "crowdAndNoise": "Sabah işe ve okula gidenlerde kapı önü hızlı sirkülasyonu",
+        "disadvantage": "Yalnızca tezgâhtan al-götür ve ayaküstü hizmet verir; oturup uzun kahvaltı etmeye uygun masası yoktur",
+        "transit": "Bahariye, 1869. Sk. No:53/A / Hidayet Erzeybek Cd. (Alaybey İZBAN durağına ~2 dk)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR (Alaybey Gevrek)",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Günlük gevrek, boyoz ve unlu mamul üretimi"
+        },
+        {
+          "title": "Adresci & Yandex Haritalar",
+          "url": "https://adresci.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Alaybey mahalle fırını ve sabah taze tepsi değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Mahalle fırınından gün doğarken çıkan gerçek İzmir gevreği ve boyoz",
+        "Alaybey istasyonu önünde hızlı erişim"
+      ],
+      "cons": [
+        "İçeride veya dışarıda oturarak çay-kahvaltı sofrası kurma imkânının bulunmaması"
+      ],
+      "uncertainties": [
+        "Öğleden sonraya doğru sıcak gevrek ve boyoz tepsilerinin seyrekleşmesi"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-sofra-kirim",
+      "categoryId": "denemelisin",
+      "resolvedName": "Sofra • Kırım Tatar Mutfağı",
+      "branchName": "Tuna, 1710. Sk. 66b, 35600 Karşıyaka/İzmir",
+      "placeId": "ChIJq838iZjZuxQRR8Nv8j_JeTY",
+      "coordinates": {
+        "lat": 38.4578827,
+        "lng": 27.1204727
+      },
+      "rating": 4.9,
+      "userRatingCount": 651,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.instagram.com/sofra.izmir/",
+      "mapsUri": "https://maps.google.com/?cid=3925389826717631303",
+      "recommendedPrimary": [
+        "Kıymalı Çi Börek",
+        "Yağsız Sacda Yantık",
+        "Buharda Türkistan / Özbek Mantısı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özbek Pilavı & Ev Yapımı Soğuk Hoşaf",
+          "note": "Hamur işlerinin yanında havuçlu-etli geleneksel pilav ve dengeleyici ev yapımı hoşaf arayanların favorisi.",
+          "proof": "Menu-TR ve Yemeksepeti Kırım Tatar Mutfağı kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tertemiz, mütevazı ama düzenli küçük aile salonu",
+        "crowdAndNoise": "Öğle ve erken akşam saatlerinde semt dışından da gelen müdavimler",
+        "disadvantage": "Akşam geç saatlere açık kalmaz ve kalabalık saatlerde birkaç masa beklemek gerekebilir",
+        "transit": "Tuna, 1710. Sk. No:66/B (Alaybey ve Karşıyaka Çarşısı arasında)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi Hesap (Sofra İzmir)",
+          "url": "https://www.instagram.com/sofra.izmir/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Günlük Kırım Tatar çi böreği, yantık ve mantı üretimi"
+        },
+        {
+          "title": "Menu-TR (Sofra Kırım Tatar)",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yağ çekmeyen çıtır çi börek, yantık ve temiz aile salonu incelemesi"
+        },
+        {
+          "title": "Yemeksepeti & Yandex",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yüksek puanlı Türkistan mantısı ve hoşaf geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Yağsız yantık ve gerçek Türkistan mantısı gibi nadir Kırım Tatar reçeteleri",
+        "Yüksek hijyen ve malzeme özeni"
+      ],
+      "cons": [
+        "Küçük oturma kapasitesi nedeniyle kalabalık gruplara uygun olmaması"
+      ],
+      "uncertainties": [
+        "Gün sonuna doğru Özbek pilavının erken tükenebilmesi"
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-can-ocakbasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Can Ocakbaşı",
+      "branchName": "Tuna, 1710. Sk. No:53/A, 35600 Karşıyaka/İzmir",
+      "placeId": "ChIJT3_ee8nZuxQRXB6pk-3J2Uo",
+      "coordinates": {
+        "lat": 38.457547399999996,
+        "lng": 27.1201264
+      },
+      "rating": 4.7,
+      "userRatingCount": 2078,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5393564050974645852",
+      "recommendedPrimary": [
+        "Ciğer Kebap / Ciğer Şiş",
+        "Adana Kebap",
+        "Sarma Beyti & Ali Nazik"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Köz Soğanlı Meze Tabağı & Fırın Sütlaç",
+          "note": "Kebap öncesi hibeş-ezme başlangıcı ve yemek sonrasında masaya gelen geleneksel fırın sütlaç.",
+          "proof": "cancigerocakbasi.com ve Menu-TR Karşıyaka ocakbaşı dosyası"
+        }
+      ],
+      "suitability": {
+        "seating": "Ocakbaşı tezgâhı çevresi ve kalabalığa elverişli geniş iç salon",
+        "crowdAndNoise": "Akşamları aileler, kebap müdavimleri ve gece geç saat masaları",
+        "disadvantage": "Akşam pikinde duman/ızgara kokusu ve kalabalık konuşma uğultusu yüksek olabilir",
+        "transit": "Tuna, 1710. Sk. No:53/A (Kemalpaşa Caddesi çarşı paraleli)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi Site (Can Ciğer Ocakbaşı)",
+          "url": "https://cancigerocakbasi.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Tuna Mahallesi kebap, ciğer ve çorba menüsü"
+        },
+        {
+          "title": "Menu-TR & Neyiyelim",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Karşıyaka geç saat ocakbaşı ve meze puanları"
+        }
+      ],
+      "pros": [
+        "Büyük hacme rağmen yıl boyu yüksek kalan puan istikrarı",
+        "Ciğerden zırh kebaba ve gece çorbasına uzanan güçlü ocakbaşı"
+      ],
+      "cons": [
+        "Yoğun akşam saatlerinde ızgara dumanı ve masa gürültüsü"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamları grup masaları için bekleme yaşanabilir"
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-kalender-ev",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kalender Ev Yemekleri",
+      "branchName": "Tuna, 1710. Sk. No:31, 35600 Karşıyaka/İzmir",
+      "placeId": "ChIJxf8w3zfZuxQR_BM8CGcG5So",
+      "coordinates": {
+        "lat": 38.456728999999996,
+        "lng": 27.119766
+      },
+      "rating": 4.7,
+      "userRatingCount": 80,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://kalenderevyemekleri.com/?kaynak=harita",
+      "mapsUri": "https://maps.google.com/?cid=3090883758849266684",
+      "recommendedPrimary": [
+        "İzmir Köfte",
+        "Orman Kebabı",
+        "Zeytinyağlı Biber Dolması & Taze Fasulye"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zeytinyağlı Taze Fasulye & Biber Dolması Seçkisi",
+          "note": "Etli ana yemekler dışında hafif Ege sebze tabağı arayanların tezgâhtan seçtiği günlük tencere yemekleri.",
+          "proof": "HappyCow listesi ve Restaurant Guru Karşıyaka incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık, sade ve düzenli benmari önü aile salonu",
+        "crowdAndNoise": "Öğle saatlerinde çarşı çalışanları ve mahalle sakinleri",
+        "disadvantage": "Gündüz tencere lokantası ritmiyle çalıştığından geç akşam saatlerinde çeşit kalmaz",
+        "transit": "Tuna, 1710. Sk. No:31 (Karşıyaka Çarşısı doğu paraleli)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi Site (Kalender Ev Yemekleri)",
+          "url": "https://kalenderevyemekleri.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Günlük sulu yemek ve zeytinyağlı menü anlayışı"
+        },
+        {
+          "title": "HappyCow & Restaurant Guru",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İzmir köfte ve vejetaryen zeytinyağlı seçeneklerinin doğrulanması"
+        }
+      ],
+      "pros": [
+        "Gerçek ev tenceresi lezzeti ve hafif zeytinyağlı sebze seçenekleri",
+        "Hızlı ve temiz öğle yemeği"
+      ],
+      "cons": [
+        "Geç saatte tencere çeşitlerinin bitmiş olması"
+      ],
+      "uncertainties": [
+        "Haftalık sıcak yemek menüsü günlere göre değişir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-kofteci-erol",
+      "categoryId": "denemelisin",
+      "resolvedName": "Köfteci Erol",
+      "branchName": "Donanmacı, 1721. Sk. No:4, 35580 Karşıyaka/İzmir",
+      "placeId": "ChIJU2G7zsnZuxQRd6n-WK67Ngs",
+      "coordinates": {
+        "lat": 38.4560258,
+        "lng": 27.1180818
+      },
+      "rating": 4.6,
+      "userRatingCount": 757,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=808039540651370871",
+      "recommendedPrimary": [
+        "Esnaf Usulü Izgara Köfte",
+        "Klasik Kuru Fasulye Piyazı",
+        "Süzme Yoğurt & Cacık"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahin-Sirke Dokunuşlu Fasulye Piyazı & Cacık",
+          "note": "Köftenin yanında neredeyse her masanın ortak söylediği klasik tamamlayıcı ikili.",
+          "proof": "Karşıyaka Rehberi 1967 tarihçesi ve Menu-TR incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük geleneksel esnaf lokantası iç masaları ve sokak önü",
+        "crowdAndNoise": "Öğle ve erken akşam boyunca eski Karşıyakalılar ve çarşı esnafı",
+        "disadvantage": "Menü yalnızca köfte-piyaz odaklıdır; konforlu uzun akşam yemeği veya lüks dekor arayanlara hitap etmez",
+        "transit": "Donanmacı, 1721. Sk. No:4 (Karşıyaka Çarşı merkezi iç sokağı)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Karşıyaka Rehberi (Köfteci Erol 1967)",
+          "url": "https://karsiyakarehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1967 kuruluş tarihi ve çarşı esnaf kültürü"
+        },
+        {
+          "title": "Menu-TR (Köfteci Erol)",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Izgara köfte, piyaz, cacık ve söğüş standartları"
+        }
+      ],
+      "pros": [
+        "1967’den bu yana bozulmayan Karşıyaka Çarşısı lezzet mirası",
+        "Sade, dürüst ve hızlı esnaf servisi"
+      ],
+      "cons": [
+        "Küçük mekânda öğle kalabalığı ve dar menü çeşitliliği"
+      ],
+      "uncertainties": [
+        "Akşam geç saatlere kalmadan günlük köfte hazırlığı tükenebilir"
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-karsiyaka-lokali",
+      "categoryId": "denemelisin",
+      "resolvedName": "Karşıyaka Lokali",
+      "branchName": "Donanmacı, 1726. Sk. No: 4A, 35580 Karşıyaka/İzmir",
+      "placeId": "ChIJI9YiLbbZuxQRcg1B0EKMr_o",
+      "coordinates": {
+        "lat": 38.454738899999995,
+        "lng": 27.1177316
+      },
+      "rating": 4.5,
+      "userRatingCount": 169,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.karsiyakasitesi.com/?newUrun=1&Id=637389&CatId=bs337691&Fstate=",
+      "mapsUri": "https://maps.google.com/?cid=18063810848996003186",
+      "recommendedPrimary": [
+        "Arnavut Ciğeri",
+        "Sac / Tava Kavurma",
+        "Günlük Soğuk Meze Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Sıcak Başlangıç & Meze Seçkisi",
+          "note": "Ciğer ve kavurma öncesi masa paylaşımında sevilen sıcak-soğuk lokaller klasiği.",
+          "proof": "Menu-TR ve Karşıyaka Sitesi lokal değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı, sıcak ve samimi iç lokal masaları",
+        "crowdAndNoise": "Karşıyaka müdavimleri, komşular ve sakin sohbet grupları",
+        "disadvantage": "Modern gastropub dekorasyonu yerine klasik lokal esnaf sadeliğine sahiptir",
+        "transit": "Donanmacı, 1726. Sk. No:4/A (Karşıyaka İskele ve Çarşı içi yürüyüş mesafesi)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR (Karşıyaka Lokali)",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Arnavut ciğeri, kavurma ve mütevazı mahalle lokali değerlendirmesi"
+        },
+        {
+          "title": "Karşıyaka Sitesi Rehberi",
+          "url": "https://www.karsiyakasitesi.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Donanmacı konumu ve samimi aile-arkadaş ortamı notları"
+        }
+      ],
+      "pros": [
+        "Lüks şovlardan uzak gerçek Karşıyaka semt lokali sıcaklığı",
+        "Bütçe dostu meze ve sıcak et dengesi"
+      ],
+      "cons": [
+        "Şık sunum veya yüksek enerjili bar atmosferi arayanlara sade gelmesi"
+      ],
+      "uncertainties": [
+        "Hafta sonu müdavim yoğunluğuna bağlı boş masa durumu"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-mc-kumru",
+      "categoryId": "denemelisin",
+      "resolvedName": "Mc Kumru Cafe. Kumrucu Murat",
+      "branchName": "Bahriye Üçok, Berin Taşan Sk No:13/C, 35580 Karşıyaka/İzmir",
+      "placeId": "ChIJ1dg51ErZuxQRZY4YcqB5F60",
+      "coordinates": {
+        "lat": 38.459773500000004,
+        "lng": 27.1139349
+      },
+      "rating": 4.5,
+      "userRatingCount": 124,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.tripadvisor.com.tr/Restaurant_Review-g298006-d7818497-Reviews-Mc_Kumru_Cafe-Izmir_Izmir_Province_Turkish_Aegean_Coast.html",
+      "mapsUri": "https://maps.google.com/?cid=12472571423041818213",
+      "recommendedPrimary": [
+        "Çeşme Kumrusu",
+        "Sayaslı Özel Kumru",
+        "İzmir Yengen Kumru"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bol Malzemeli Curcuna Kumru & Karışık Kumpir",
+          "note": "Klasik sucuk-salam-sosis kumru dışında daha ağır ve zengin karışım arayanların seçtiği alternatifler.",
+          "proof": "TripAdvisor ve Yemeksepeti Mc Kumru menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Rahat ara sokak büfe-kafe masaları",
+        "crowdAndNoise": "Öğrenciler, akşamüstü atıştırmacıları ve gece geç saat siparişleri",
+        "disadvantage": "Klasik kumru ve kumpir ağırlıklı hızlı menüdür; sakin restoran servisinden çok sokak lezzeti havasındadır",
+        "transit": "Bahriye Üçok, Berin Taşan Sk. No:13/C (Bahriye Üçok tramvay/bulvar yakını)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "TripAdvisor (Mc Kumru Cafe)",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kumru çeşitleri ve Bahriye Üçok müdavim puanları"
+        },
+        {
+          "title": "Menu-TR & Yemeksepeti",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sayaslı, Çeşme ve yengen kumru içerik detayı"
+        }
+      ],
+      "pros": [
+        "İzmir ve Çeşme usulü sıcak kumru ile gerçek sayas peyniri kullanması",
+        "Bol malzeme ve doyurucu porsiyonlar"
+      ],
+      "cons": [
+        "Fine-dining olmayan pratik büfe/kafe düzeni"
+      ],
+      "uncertainties": [
+        "Yoğun paket saatlerinde ızgara beklemesi yaşanabilir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-halim-usta",
+      "categoryId": "denemelisin",
+      "resolvedName": "Halim Usta",
+      "branchName": "Donanmacı, Hüseyin Çağlayan Sk. No: 14/A, 35580 Karşıyaka/İzmir",
+      "placeId": "ChIJfzXINMjZuxQRayRVWrNIRUY",
+      "coordinates": {
+        "lat": 38.4562166,
+        "lng": 27.1177037
+      },
+      "rating": 4.4,
+      "userRatingCount": 648,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5063533291199865963",
+      "recommendedPrimary": [
+        "Mardin Usulü Sembusek",
+        "İnce Çıtır Lahmacun",
+        "Mardin Kebap / Sarma Beyti"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Açık Ayran & Bol Yeşillik İkramlı Pide Sofrası",
+          "note": "Lahmacun ve sembusek yanında serinletici geleneksel ayran ile zengin salata-ezme eşliği.",
+          "proof": "Menu-TR ve Qrdos Halim Usta incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş fırın ısısı yakınında klasik kebap-pide salonu masaları",
+        "crowdAndNoise": "Öğle yemeklerinde esnaf, aileler ve akşam aile yemekleri",
+        "disadvantage": "Pik saatlerde masalar hızla dolar ve taş fırın servisi temposu içinde gürültü seviyesi artabilir",
+        "transit": "Donanmacı, Hüseyin Çağlayan Sk. No:14/A (Karşıyaka Çarşı girişinde)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR (Halim Usta Karşıyaka)",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çıtır lahmacun, Mardin sembusek ve yeşillik ikramları incelemesi"
+        },
+        {
+          "title": "Qrdos & Google Haritalar",
+          "url": "https://qrdos.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sembusek, Mardin kebap ve lahmacun menü değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "İzmir’de nadir bulunan özgün Mardin sembuseki ve ince çıtır lahmacun",
+        "Bol salata ve meze ikramı cömertliği"
+      ],
+      "cons": [
+        "Yoğun öğle-akşam saatlerinde sıkışık oturma temposu"
+      ],
+      "uncertainties": [
+        "Bazı yöresel hamur işleri gün sonuna doğru tükenebilir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-nejla-baci",
+      "categoryId": "denemelisin",
+      "resolvedName": "Nejla Bacının Yeri",
+      "branchName": "Bahariye, Berin Taşan Sk No:12, 35600 Karşıyaka/İzmir",
+      "placeId": "ChIJz_JSu8jZuxQR028PM4G8fpk",
+      "coordinates": {
+        "lat": 38.4597644,
+        "lng": 27.115301
+      },
+      "rating": 4.4,
+      "userRatingCount": 68,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11060484997961969619",
+      "recommendedPrimary": [
+        "Günlük Zeytinyağlı & Meze Tabağı",
+        "Ev Usulü Sulu Yemek",
+        "Taze Ege Otları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Akşam Sofrasına Özel Ev Yapımı Soğuk Mezeler",
+          "note": "Kendi içkisiyle gelen dost gruplarının masa paylaşımında ilk söylediği zeytinyağlılar ve meze çeşitleri.",
+          "proof": "Menu-TR ve Restoranim.net Nejla Bacının Yeri değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Salaş, samimi, sıcak küçük mahalle dükkânı düzeni",
+        "crowdAndNoise": "Samimi esnaf sofrası seven Karşıyaka yerlileri ve dost masaları",
+        "disadvantage": "İçeceği dışarıdan getirmeli çok salaş düzene sahiptir; şık restoran servisi veya hazır bar menüsü bekleyenlere uymaz",
+        "transit": "Bahariye, Berin Taşan Sk. No:12 (Bahariye Zübeyde Hanım Cd. civarı)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR (Nejla Bacının Yeri)",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Günlük ev yemekleri, zeytinyağlılar ve ev meze mutfağı"
+        },
+        {
+          "title": "Restoranim.net & Yandex",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Salaş samimi düzen ve kendi içkini getirebilme geleneği"
+        }
+      ],
+      "pros": [
+        "Karşıyaka’da az kalan samimi ev yapımı meze ve kendi içeceğinle sofra kültürü",
+        "Gerçek anne mutfağı tadı"
+      ],
+      "cons": [
+        "Çok küçük alan ve oldukça mütevazı/salaş fiziki koşullar"
+      ],
+      "uncertainties": [
+        "Günlük çıkan yemek ve meze çeşitleri o günkü tezgâha göre belirlenir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-izmir-balik",
+      "categoryId": "balik",
+      "resolvedName": "İzmir Balık",
+      "branchName": "Bahariye, Yaşar Aksoy Sk. no:1/C, 35600 Karşıyaka/İzmir",
+      "placeId": "ChIJRVa1UQDZuxQRkpYksaq_tOg",
+      "coordinates": {
+        "lat": 38.459086,
+        "lng": 27.118236999999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 181,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16768238052444509842",
+      "recommendedPrimary": [
+        "Izgara Çipura / Mevsim Levreği",
+        "Taze Kalamar Tava",
+        "Günlük Meze Eşlikçileri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Kalamar & Günlük Küçük Balık Çeşitleri",
+          "note": "Ana balık öncesi masa paylaşımı ya da hızlı akşam öğünü için öne çıkan taze tava/ızgara seçenekleri.",
+          "proof": "Menu-TR ve Yandex Bahariye balıkçıları incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı ama temiz mahalle restoranı masaları",
+        "crowdAndNoise": "Alaybey ve Bahariye sakinlerinin ağırlıkta olduğu sakin aile yemekleri",
+        "disadvantage": "Deniz kenarı manzarası yoktur; sade aile işletmesi atmosferine sahiptir",
+        "transit": "Bahariye, Yaşar Aksoy Sk. No:1/C (Alaybey Metro/İZBAN durağına ~3 dk)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR (İzmir Balık)",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Aile işletmesi taze deniz ürünleri ve Bahariye konumu"
+        },
+        {
+          "title": "Yandex Mekanlar (İzmir Balık)",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tazelik, temiz pişirim ve güler yüzlü servis değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Turist fiyatlamasından uzak dürüst mahalle balıkçısı kalitesi",
+        "Günlük taze tezgâh ve özenli pişirim"
+      ],
+      "cons": [
+        "Sahil manzarası veya lüks meyhane konsepti arayanlara sade kalması"
+      ],
+      "uncertainties": [
+        "Mevsime göre av çeşitliliği günlük balık hali arzına bağlıdır"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-alaybey-carsi-balik",
+      "categoryId": "balik",
+      "resolvedName": "Alaybey Çarşı Balık",
+      "branchName": "Alaybey, Şht. Asım Aksoy Cd. No:15, 35600 Karşıyaka/İzmir",
+      "placeId": "ChIJ5eUf58zZuxQRztBTp4oC5no",
+      "coordinates": {
+        "lat": 38.4603408,
+        "lng": 27.124775399999997
+      },
+      "rating": 4.6,
+      "userRatingCount": 208,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8855768511806689486",
+      "recommendedPrimary": [
+        "Mevsim Tava / Izgara Balık Porsiyon",
+        "Çıtır Midye Tava",
+        "Taze Balık Ekmek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kızarmış Midye Tava & Taze Ekmek Arası Seçenekler",
+          "note": "Hızlı akşam atıştırması ya da paket siparişlerde balığın yanında en çok talep gören çeşitler.",
+          "proof": "Eatbu ve Migros Yemek Alaybey Çarşı Balık menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük dükkân içi masalar ve cadde önü pratik oturum",
+        "crowdAndNoise": "Alaybey mahalle sakinleri ve iş çıkışı eve balık alanlar",
+        "disadvantage": "Akşam paket yoğunluğunun yüksek olduğu saatlerde servis sırası beklenebilir; deniz manzarası yoktur",
+        "transit": "Alaybey, Şht. Asım Aksoy Cd. No:15 (Alaybey İzban durağına ~2 dk)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Eatbu (Alaybey Çarşı Balık)",
+          "url": "https://eatbu.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Alaybey lokasyonu, masada ve gel-al balık pişirim menüsü"
+        },
+        {
+          "title": "Yandex & Migros Yemek",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Midye tava ve günlük taze balık değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Mahalle fiyatlarıyla sıcak pişmiş günlük balık ve midye tava",
+        "Ulaşıma son derece yakın merkez nokta"
+      ],
+      "cons": [
+        "Uzun rakı-meze oturumu için küçük ve hızlı esnaf akışlı olması"
+      ],
+      "uncertainties": [
+        "Akşam yoğun saatlerde belirli mevsim balıklarının hızlı bitmesi"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-metro-balik",
+      "categoryId": "balik",
+      "resolvedName": "Metro Balik Pisiricisi",
+      "branchName": "Aksoy, 1671. Sk. 161 C, 35580 Karşıyaka/İzmir",
+      "placeId": "ChIJVehmNpDZuxQRLPdfw6s3Lz8",
+      "coordinates": {
+        "lat": 38.4579276,
+        "lng": 27.107560600000003
+      },
+      "rating": 4.6,
+      "userRatingCount": 149,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://metrobalikpisiricisi.eatbu.com/",
+      "mapsUri": "https://maps.google.com/?cid=4552918959151642412",
+      "recommendedPrimary": [
+        "Dil Balığı Şiş",
+        "Izgara Çipura / Mevsim Levreği",
+        "Kalamar Tava"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırınlanmış Tahin Helvası & Çay Eşliğinde Kapanış",
+          "note": "Ana balık ve meze setinin ardından esnaf geleneği olarak sunulan geleneksel tatlı sonu.",
+          "proof": "Menu-TR ve Eatbu Metro Balık Pişiricisi menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Aile dostu sade iç salon ve sokak önü birkaç masa",
+        "crowdAndNoise": "Aileler, yaşlı mahalle sakinleri ve alkolsüz balık arayan misafirler",
+        "disadvantage": "Alkollü rakı-balık masası arayanlara uygun değildir; alkolsüz esnaf pişiricisi konseptindedir",
+        "transit": "Aksoy, 1671. Sk. No:161/C (Nergiz İZBAN / Aksoy hattı yürüme mesafesi)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR (Metro Balık Pişiricisi)",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Alkolsüz balık pişiricisi, dil balığı şiş ve tahin helvası sunumu"
+        },
+        {
+          "title": "Eatbu & Yandex Mekanlar",
+          "url": "https://eatbu.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Aile ortamı, taze balık ve porsiyon memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Nadir rastlanan dil balığı şiş ve alkolsüz sakin aile balıkçısı ortamı",
+        "Tahin helvası-çaylı esnaf misafirperverliği"
+      ],
+      "cons": [
+        "Rakı-meze gecesi kurmak isteyen misafirlere hitap etmemesi"
+      ],
+      "uncertainties": [
+        "Sezonsal büyük balık ve dil şiş porsiyonları günün tezgâhına bağlıdır"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karsiyaka-yelken",
+      "categoryId": "balik",
+      "resolvedName": "Karşıyaka Yelken Restaurant",
+      "branchName": "Aksoy, Yalı Blv. No:416/A, 35580 Karşıyaka/İzmir",
+      "placeId": "ChIJVzyvfLzZuxQROOB7L0v6JgE",
+      "coordinates": {
+        "lat": 38.4506985,
+        "lng": 27.108145099999998
+      },
+      "rating": 4.4,
+      "userRatingCount": 455,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=83028843979071544",
+      "recommendedPrimary": [
+        "Şarap Soslu Fırın Levrek",
+        "Ballı Kalamar",
+        "Mevsim Deniz Balıkları & Soğuk Mezeler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Deniz Kenarı Kutlama Menüsü & Sıcak Deniz Mahsulü Mezeleri",
+          "note": "Ana balık öncesinde paylaşılan seçkin ara sıcaklar ve gün batımı manzaralı sofra düzeni.",
+          "proof": "Yandex Mekanlar ve DüğünBuketi yemek tanıtımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Körfez ve deniz manzaralı ferah salon ile sahil cepheli akşam masaları",
+        "crowdAndNoise": "Özel akşam yemeği çıkan çiftler, iş yemekleri ve kutlama grupları",
+        "disadvantage": "Üst fiyat bandında konumlanır; deniz cephesi masalar için hafta sonu mutlaka rezervasyon yaptırılmalıdır",
+        "transit": "Aksoy, Yalı Blv. No:416/A (Karşıyaka Sahil ve Aksoy tramvay hattı üzerinde)"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "YakındaNeVar (Karşıyaka Yelken)",
+          "url": "https://yakindanevar.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yalı Bulvarı sahil konumu ve deniz ürünleri mutfağı"
+        },
+        {
+          "title": "DüğünBuketi & Yandex Mekanlar",
+          "url": "https://dugunbuketi.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ballı kalamar, şarap soslu fırın levrek ve körfez manzarası değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Karşıyaka sahil bandında kesintisiz körfez manzarası ve özel imza yemekler",
+        "Hem klasik rakı-balık hem romantik akşam düzenine uygunluk"
+      ],
+      "cons": [
+        "Yüksek fiyat seviyesi ve hafta sonu özel davet kalabalığı"
+      ],
+      "uncertainties": [
+        "Bazı hafta sonları toplu kutlama rezervasyonları bireysel oturum alanını etkileyebilir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    }
+  ]
+}
