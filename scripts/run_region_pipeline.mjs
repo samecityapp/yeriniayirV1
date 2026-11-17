@@ -74,6 +74,7 @@ const PUBLISHED_REGION_KEYS = [
   'izmir-urla',
   'izmir-seferihisar-sigacik',
   'izmir-foca',
+  'sanliurfa-merkez',
 ];
 const NEARBY_POOL_KEY = 'istanbul-kadikoy-nearby-pool';
 const DEFAULT_REGION_ORDER = [...PUBLISHED_REGION_KEYS, NEARBY_POOL_KEY];

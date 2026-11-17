@@ -64,6 +64,7 @@ import izmirCesmeAlacatiSnapshotJson from './regions/izmir-cesme-alacati.json';
 import izmirUrlaSnapshotJson from './regions/izmir-urla.json';
 import izmirSeferihisarSigacikSnapshotJson from './regions/izmir-seferihisar-sigacik.json';
 import izmirFocaSnapshotJson from './regions/izmir-foca.json';
+import sanliurfaMerkezSnapshotJson from './regions/sanliurfa-merkez.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -133,6 +134,7 @@ const IZMIR_CESME_ALACATI_SNAPSHOT = izmirCesmeAlacatiSnapshotJson as V3Verified
 const IZMIR_URLA_SNAPSHOT = izmirUrlaSnapshotJson as V3VerifiedRegionSnapshot;
 const IZMIR_SEFERIHISAR_SIGACIK_SNAPSHOT = izmirSeferihisarSigacikSnapshotJson as V3VerifiedRegionSnapshot;
 const IZMIR_FOCA_SNAPSHOT = izmirFocaSnapshotJson as V3VerifiedRegionSnapshot;
+const SANLIURFA_MERKEZ_SNAPSHOT = sanliurfaMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -201,6 +203,7 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   IZMIR_URLA_SNAPSHOT,
   IZMIR_SEFERIHISAR_SIGACIK_SNAPSHOT,
   IZMIR_FOCA_SNAPSHOT,
+  SANLIURFA_MERKEZ_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -741,6 +744,18 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   kozbeyli: IZMIR_FOCA_SNAPSHOT,
   'kozbeyli-koyu': IZMIR_FOCA_SNAPSHOT,
   'marsilya-meydani': IZMIR_FOCA_SNAPSHOT,
+  // Şanlıurfa > Merkez (#67 — V3.7 culinary_heritage)
+  sanliurfa: SANLIURFA_MERKEZ_SNAPSHOT,
+  'sanliurfa-merkez': SANLIURFA_MERKEZ_SNAPSHOT,
+  urfa: SANLIURFA_MERKEZ_SNAPSHOT,
+  'urfa-merkez': SANLIURFA_MERKEZ_SNAPSHOT,
+  eyyubiye: SANLIURFA_MERKEZ_SNAPSHOT,
+  haliliye: SANLIURFA_MERKEZ_SNAPSHOT,
+  karakopru: SANLIURFA_MERKEZ_SNAPSHOT,
+  balikligol: SANLIURFA_MERKEZ_SNAPSHOT,
+  hasimiye: SANLIURFA_MERKEZ_SNAPSHOT,
+  'gumruk-hani': SANLIURFA_MERKEZ_SNAPSHOT,
+  'bahcelievler-urfa': SANLIURFA_MERKEZ_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {

@@ -147,6 +147,73 @@ export const GAZIANTEP_HERITAGE_CATEGORIES: V3CategoryDef[] = [
   },
 ];
 
+export const SANLIURFA_HERITAGE_CATEGORIES: V3CategoryDef[] = [
+  {
+    id: 'ciger',
+    slug: 'ciger',
+    label: 'Sabah Ciğeri',
+    title: 'Sabah & Akşam Kuzu Ciğer Ocakları',
+    emoji: '🔥',
+    isMustTry: false,
+  },
+  {
+    id: 'kebap',
+    slug: 'kebap',
+    label: 'Haşhaş & Zırh Kebabı',
+    title: 'Patlıcanlı, Haşhaş, Keme & Zırh Kebabı',
+    emoji: '🥩',
+    isMustTry: false,
+  },
+  {
+    id: 'tirit',
+    slug: 'tirit-paca',
+    label: 'Tirit & Paça',
+    title: 'Sabah Tiridi, Kelle Paça & Kemik Suyu',
+    emoji: '🍲',
+    isMustTry: false,
+  },
+  {
+    id: 'tatli',
+    slug: 'sillik-kadayif',
+    label: 'Şıllık & Kadayıf',
+    title: 'Şıllık Tatlısı, Billuriye, Taş Kadayıf & Künefe',
+    emoji: '🥮',
+    isMustTry: false,
+  },
+  {
+    id: 'yoresel',
+    slug: 'urfa-mutfagi',
+    label: 'Urfa Mutfağı',
+    title: 'Tarihi Konaklar, Taş Fırın Lahmacun, Çiğköfte & Ev Yemekleri',
+    emoji: '🏛️',
+    isMustTry: false,
+  },
+  {
+    id: 'kahvalti',
+    slug: 'kahvalti',
+    label: 'Kahvaltı',
+    title: 'Salçalı Yumurta, Sahan Kaymağı & Yöresel Kahvaltı',
+    emoji: '🍳',
+    isMustTry: false,
+  },
+  {
+    id: 'kahve',
+    slug: 'kahve',
+    label: 'Mırra & Kahve',
+    title: 'Tarihi Han Kahvehaneleri, Mırra, Menengiç & Nitelikli Kahve',
+    emoji: '☕',
+    isMustTry: false,
+  },
+  {
+    id: 'denemelisin',
+    slug: 'denemelisin',
+    label: 'Denemelisin',
+    title: 'Mutlaka Denemelisin',
+    emoji: '⭐',
+    isMustTry: false,
+  },
+];
+
 export function buildRegionCategories(opts?: {
   mode?: 'standard' | 'culinary_heritage';
   customCategories?: V3CategoryDef[];

@@ -497,6 +497,12 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'meshur dondurmacim maras',
   'kahve deryası',
   'kahve deryasi',
+  'dedecan',
+  'cabra loca',
+  'coffee kangoo',
+  'gloria jean',
+  'suadiye coffee',
+  'colombia coffee',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([
