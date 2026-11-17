@@ -292,6 +292,18 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     headline: 'Urla, İzmir',
     vibe: 'Sanat Sokağı ve Malgaca Pazarı taş dükkanlarından Kuşçular Bağ Yolu ve Özbek şef masalarına, Arasta pizzacılarından üçüncü dalga kavuruculara, İskele balık ekmek büfesinden Özbek liman balıkçılarına uzanan seçki',
   },
+  'sigacik-seferihisar-izmir': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Sığacık, İzmir',
+    vibe: 'Kaleiçi taş sokaklarının meyhaneleri ve nitelikli kahve duraklarından Teos Marina ve Akkum hattındaki ince hamur pizza, smash burger, köy kahvaltısı ve liman balıkçılarına uzanan seçki',
+  },
+  'foca-izmir': {
+    image: '/images/gastronomy/gastronomy.svg',
+    badge: 'Doğrulanmış Seçki',
+    headline: 'Foça, İzmir',
+    vibe: 'Eski Foça Küçükdeniz ve Büyükdeniz sahil balıkçılarından ara sokak pizzacı ve burgercilerine, tasarım odaklı kahvecilerden Yeni Foça sahil duraklarına ve Kozbeyli köy kahvaltı ile taş dibek kahvesine uzanan seçki',
+  },
   'kosuyolu-acibadem': {
     image: '/images/gastronomy/gastronomy.svg',
     badge: 'Doğrulanmış Seçki',
@@ -594,7 +606,7 @@ export function GastronomyPageClient({
                       Konum Seç
                     </div>
                     <div className="text-xs text-slate-500 font-medium truncate mt-0.5">
-                      Taksim & İstiklal · Asmalımescit & Pera · Yeniköy · Göktürk · Balat · Çukurcuma · Etiler · Ortaköy · Akaretler · Bebek · Galata · Beşiktaş Çarşı · Karaköy · Cihangir · Nişantaşı · Üsküdar · Kuzguncuk · Çengelköy · Koşuyolu & Acıbadem · Kadıköy · Moda · Caddebostan · Suadiye · Bostancı · Kaleiçi · Konyaaltı Sahil · Lara · Kaş Merkez · Kalkan Merkez · Alanya Merkez · Side · Kemer (Antalya) · Gaziantep · Kuşadası · Akyaka & Akçapınar · Fethiye Merkez · Çalış · Ölüdeniz · Yanıklar · Göcek (Fethiye) · Bodrum Merkez · Yalıkavak · Gümüşlük · Türkbükü · Bitez · Turgutreis · Ortakent & Yahşi · Gündoğan · Gümbet · Torba · Akyarlar (Bodrum) · Marmaris Merkez · Datça Merkez · Alsancak · Bostanlı · Karşıyaka · Bornova · Göztepe & Güzelyalı · Mavişehir · Alaçatı · Urla (İzmir)
+                      Taksim & İstiklal · Asmalımescit & Pera · Yeniköy · Göktürk · Balat · Çukurcuma · Etiler · Ortaköy · Akaretler · Bebek · Galata · Beşiktaş Çarşı · Karaköy · Cihangir · Nişantaşı · Üsküdar · Kuzguncuk · Çengelköy · Koşuyolu & Acıbadem · Kadıköy · Moda · Caddebostan · Suadiye · Bostancı · Kaleiçi · Konyaaltı Sahil · Lara · Kaş Merkez · Kalkan Merkez · Alanya Merkez · Side · Kemer (Antalya) · Gaziantep · Kuşadası · Akyaka & Akçapınar · Fethiye Merkez · Çalış · Ölüdeniz · Yanıklar · Göcek (Fethiye) · Bodrum Merkez · Yalıkavak · Gümüşlük · Türkbükü · Bitez · Turgutreis · Ortakent & Yahşi · Gündoğan · Gümbet · Torba · Akyarlar (Bodrum) · Marmaris Merkez · Datça Merkez · Alsancak · Bostanlı · Karşıyaka · Bornova · Göztepe & Güzelyalı · Mavişehir · Alaçatı · Urla · Sığacık · Foça (İzmir)
                     </div>
                   </div>
                 </div>

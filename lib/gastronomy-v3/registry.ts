@@ -62,6 +62,8 @@ import izmirKonakGoztepeGuzelyaliSnapshotJson from './regions/izmir-konak-goztep
 import izmirKarsiyakaMavisehirSnapshotJson from './regions/izmir-karsiyaka-mavisehir.json';
 import izmirCesmeAlacatiSnapshotJson from './regions/izmir-cesme-alacati.json';
 import izmirUrlaSnapshotJson from './regions/izmir-urla.json';
+import izmirSeferihisarSigacikSnapshotJson from './regions/izmir-seferihisar-sigacik.json';
+import izmirFocaSnapshotJson from './regions/izmir-foca.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -129,6 +131,8 @@ const IZMIR_KONAK_GOZTEPE_GUZELYALI_SNAPSHOT = izmirKonakGoztepeGuzelyaliSnapsho
 const IZMIR_KARSIYAKA_MAVISEHIR_SNAPSHOT = izmirKarsiyakaMavisehirSnapshotJson as V3VerifiedRegionSnapshot;
 const IZMIR_CESME_ALACATI_SNAPSHOT = izmirCesmeAlacatiSnapshotJson as V3VerifiedRegionSnapshot;
 const IZMIR_URLA_SNAPSHOT = izmirUrlaSnapshotJson as V3VerifiedRegionSnapshot;
+const IZMIR_SEFERIHISAR_SIGACIK_SNAPSHOT = izmirSeferihisarSigacikSnapshotJson as V3VerifiedRegionSnapshot;
+const IZMIR_FOCA_SNAPSHOT = izmirFocaSnapshotJson as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -195,6 +199,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   IZMIR_KARSIYAKA_MAVISEHIR_SNAPSHOT,
   IZMIR_CESME_ALACATI_SNAPSHOT,
   IZMIR_URLA_SNAPSHOT,
+  IZMIR_SEFERIHISAR_SIGACIK_SNAPSHOT,
+  IZMIR_FOCA_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -711,6 +717,30 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'kuscular-urla': IZMIR_URLA_SNAPSHOT,
   cesmealti: IZMIR_URLA_SNAPSHOT,
   'ozbek-urla': IZMIR_URLA_SNAPSHOT,
+  // İzmir > Seferihisar > Sığacık (#65 — V3.7 coastal)
+  'izmir-seferihisar-sigacik': IZMIR_SEFERIHISAR_SIGACIK_SNAPSHOT,
+  'sigacik-seferihisar-izmir': IZMIR_SEFERIHISAR_SIGACIK_SNAPSHOT,
+  sigacik: IZMIR_SEFERIHISAR_SIGACIK_SNAPSHOT,
+  'sigacik-seferihisar': IZMIR_SEFERIHISAR_SIGACIK_SNAPSHOT,
+  'sigacik-izmir': IZMIR_SEFERIHISAR_SIGACIK_SNAPSHOT,
+  'sigacik-kaleici': IZMIR_SEFERIHISAR_SIGACIK_SNAPSHOT,
+  'kaleici-sigacik': IZMIR_SEFERIHISAR_SIGACIK_SNAPSHOT,
+  'teos-marina': IZMIR_SEFERIHISAR_SIGACIK_SNAPSHOT,
+  'sigacik-liman': IZMIR_SEFERIHISAR_SIGACIK_SNAPSHOT,
+  'teos-sigacik': IZMIR_SEFERIHISAR_SIGACIK_SNAPSHOT,
+  'akkum-sigacik': IZMIR_SEFERIHISAR_SIGACIK_SNAPSHOT,
+  // İzmir > Foça (#66 — V3.7 coastal)
+  'izmir-foca': IZMIR_FOCA_SNAPSHOT,
+  'foca-izmir': IZMIR_FOCA_SNAPSHOT,
+  foca: IZMIR_FOCA_SNAPSHOT,
+  'foca-merkez': IZMIR_FOCA_SNAPSHOT,
+  'eski-foca': IZMIR_FOCA_SNAPSHOT,
+  kucukdeniz: IZMIR_FOCA_SNAPSHOT,
+  buyukdeniz: IZMIR_FOCA_SNAPSHOT,
+  'yeni-foca': IZMIR_FOCA_SNAPSHOT,
+  kozbeyli: IZMIR_FOCA_SNAPSHOT,
+  'kozbeyli-koyu': IZMIR_FOCA_SNAPSHOT,
+  'marsilya-meydani': IZMIR_FOCA_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {

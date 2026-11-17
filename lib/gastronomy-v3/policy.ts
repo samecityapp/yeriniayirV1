@@ -488,6 +488,15 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'samimi izmir',
   'samimi urla',
   'ru coffee house',
+  'ayaküstü kahve',
+  'ayakustu kahve',
+  'hisarönü meşhur kazandibi',
+  'hisaronu meshur kazandibi',
+  'girit pastanesi 1950',
+  'meşhur dondurmacım maraş',
+  'meshur dondurmacim maras',
+  'kahve deryası',
+  'kahve deryasi',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([
