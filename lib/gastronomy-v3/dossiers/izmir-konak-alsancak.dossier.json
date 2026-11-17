@@ -1,0 +1,2204 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "izmir-konak-alsancak",
+  "displayName": "Alsancak, Konak, İzmir",
+  "verifiedAt": "2026-11-17T08:43:32.046Z",
+  "selectedCount": 29,
+  "rejectedControls": [
+    {
+      "id": "ctrl-alsancak-pizza-locale-chain",
+      "resolvedName": "Pizza Locale",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alsancak-burger-street-chain",
+      "resolvedName": "BURGER STREET ALSANCAK",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alsancak-two-hands-chain",
+      "resolvedName": "Two Hands Burger & Toastery",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alsancak-ohannes-chain",
+      "resolvedName": "Ohannes Burger",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alsancak-starbucks-chain",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alsancak-arabica-chain",
+      "resolvedName": "Arabica Coffee House | Nyva Lounge | Alsancak",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alsancak-brew-mood-chain",
+      "resolvedName": "Brew Mood Coffee And Tea",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alsancak-kahve-dunyasi-chain",
+      "resolvedName": "Kahve Dünyası-İzmir Alsancak",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alsancak-leone-chain",
+      "resolvedName": "Leone Patisserie & Boulangerie",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alsancak-ozsut-chain",
+      "resolvedName": "Özsüt",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alsancak-cizz-bizz-chain",
+      "resolvedName": "Cızz Bızz Balık Meyhane",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alsancak-tuzu-biberi-chain",
+      "resolvedName": "Tuzu Biberi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alsancak-buckin-chain",
+      "resolvedName": "Buckin Coffee Alsancak",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alsancak-poka-chain",
+      "resolvedName": "Poka Coffee Roasters",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alsancak-unlu-mamul-chain",
+      "resolvedName": "Alsancak Unlu Mamüler",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alsancak-hane-cikolata-purity",
+      "resolvedName": "Hane Çikolata&Kahve İzmir Alsancak",
+      "reason": "kahve_category_not_coffee_specialist:chocolate_shop"
+    },
+    {
+      "id": "ctrl-alsancak-saveur-purity",
+      "resolvedName": "Saveur Cake & Bake",
+      "reason": "kahve_category_not_coffee_specialist:pastry_shop"
+    },
+    {
+      "id": "ctrl-alsancak-sakiz-akdeniz-outside",
+      "resolvedName": "İzmir Sakız Alsancak Restaurant",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Alsancak/Kültür/Kultur/Mimar Sinan/Umurbey/Kıbrıs Şehitleri/Kibris Sehitleri/Kordon, adres: Akdeniz, Atatürk Cd. No:158/A, 35210 Konak/İzmir)"
+    },
+    {
+      "id": "ctrl-alsancak-margaux-akdeniz-outside",
+      "resolvedName": "Margaux Restaurant",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Alsancak/Kültür/Kultur/Mimar Sinan/Umurbey/Kıbrıs Şehitleri/Kibris Sehitleri/Kordon, adres: Cumhuriyet Blv, Akdeniz, Pasaport - Konak No:138, 35210 Konak/İzmir)"
+    },
+    {
+      "id": "ctrl-alsancak-coffee-been-kahramanlar",
+      "resolvedName": "COFFEE BEEN",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Alsancak/Kültür/Kultur/Mimar Sinan/Umurbey/Kıbrıs Şehitleri/Kibris Sehitleri/Kordon, adres: Kahramanlar, 1419. Sk. no:26/B, 35230 Konak/İzmir)"
+    },
+    {
+      "id": "ctrl-alsancak-prego-halkapinar",
+      "resolvedName": "Prego – Pizza Makarna Salata",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Alsancak/Kültür/Kultur/Mimar Sinan/Umurbey/Kıbrıs Şehitleri/Kibris Sehitleri/Kordon, adres: Halkapınar, 1202/11. Sk. No:16, 35170 Konak/İzmir)"
+    },
+    {
+      "id": "ctrl-alsancak-bayrakli-kiyi",
+      "resolvedName": "Bayraklı Kıyı Restaurant",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Alsancak/Kültür/Kultur/Mimar Sinan/Umurbey/Kıbrıs Şehitleri/Kibris Sehitleri/Kordon, adres: Fuat Edip Baksı, Altınyol caddesi no 75/A, 35540 Bayraklı/İzmir)"
+    },
+    {
+      "id": "ctrl-alsancak-nays-turgutreis",
+      "resolvedName": "NAYS SMASH BURGER",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Alsancak/Kültür/Kultur/Mimar Sinan/Umurbey/Kıbrıs Şehitleri/Kibris Sehitleri/Kordon, adres: Turgut Reis, Dario Moreno Sk. No:13B, 35280 Konak/İzmir)"
+    },
+    {
+      "id": "ctrl-alsancak-la-puerta-low",
+      "resolvedName": "La Puerta Alsancak",
+      "reason": "below_quality_threshold:★4.3(2443)"
+    },
+    {
+      "id": "ctrl-alsancak-two-cups-low",
+      "resolvedName": "Two Cups - Coffee Bar & Roastery",
+      "reason": "below_quality_threshold:★4.1(441)"
+    },
+    {
+      "id": "ctrl-alsancak-cartel-low",
+      "resolvedName": "Cartel Coffee Roastery",
+      "reason": "below_quality_threshold:★3.9(106)"
+    },
+    {
+      "id": "ctrl-alsancak-brgr-low",
+      "resolvedName": "BRGR Smash Burger",
+      "reason": "below_quality_threshold:★2.4(7)"
+    },
+    {
+      "id": "ctrl-alsancak-pizza-arte-low-count",
+      "resolvedName": "Pizza Arte Gastro Pub",
+      "reason": "below_quality_threshold:★4.9(33)"
+    },
+    {
+      "id": "ctrl-alsancak-pukky-low-count",
+      "resolvedName": "Pukky Alsancak",
+      "reason": "below_quality_threshold:★4.7(19)"
+    },
+    {
+      "id": "ctrl-alsancak-tavaci-recep-volume",
+      "resolvedName": "Tavacı Recep Usta Alsancak - İzmir",
+      "reason": "chain_or_franchise"
+    }
+  ],
+  "venues": [
+    {
+      "id": "alsancak-winapoli",
+      "categoryId": "pizza",
+      "resolvedName": "Winapoli",
+      "branchName": "Mimar Sinan Mahallesi, Alsancak, 1420. Sk. No:108/C, 35220 Konak/İzmir",
+      "placeId": "ChIJFdfRnByNuxQRWd-wU3zewX0",
+      "coordinates": {
+        "lat": 38.434474,
+        "lng": 27.149289
+      },
+      "rating": 4.8,
+      "userRatingCount": 403,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9061768550807560025",
+      "recommendedPrimary": [
+        "Burrata & Pesto Pizza",
+        "Füme Etli Napoli Pizza",
+        "Dört Peynirli Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fındık & Çikolata Kremalı Tatlı Pizza",
+          "note": "Ana pizza sonrasında paylaşım için fırından sıcak çıkan tatlı kapanış seçeneği.",
+          "proof": "Menu-TR ve İzmir Mekan Rehberi Napoli pizzaları seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak iç salon ve 1420. Sokak kenarı kaldırım masaları",
+        "crowdAndNoise": "Akşam saatlerinde yoğun yerel müdavim trafiği",
+        "disadvantage": "Mimar Sinan ara sokak masaları hafta sonu akşamlarında hızlı dolar",
+        "transit": "Mimar Sinan 1420. Sk. No:108/C (Talatpaşa ve Gazi Kadınlar yürüyüş hattı yakını)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "İzmir Mekan Rehberi (Winapoli)",
+          "url": "https://www.izmirmekanrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Odun ateşinde uzun fermantasyon Napoli hamuru incelemesi"
+        },
+        {
+          "title": "Menu-TR & Neredeyse",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Burrata-pesto pizza ve tatlı pizza menü doğrulaması"
+        }
+      ],
+      "pros": [
+        "Hafif ve iyi kabaran gerçek Napoli kenarı",
+        "Sessiz Mimar Sinan sokak dokusu"
+      ],
+      "cons": [
+        "Yoğun cuma-cumartesi akşamlarında yer bekleme ihtimali"
+      ],
+      "uncertainties": [
+        "Günlük hamur adedine bağlı olarak geç saatlerde hamur tükenebilir"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-bonci",
+      "categoryId": "pizza",
+      "resolvedName": "Bonci Alsancak",
+      "branchName": "Alsancak, 1469. Sk. No:31/A, 35000 Konak/İzmir",
+      "placeId": "ChIJy40m3SPZuxQRtfMJErFEggc",
+      "coordinates": {
+        "lat": 38.4392205,
+        "lng": 27.143987
+      },
+      "rating": 4.8,
+      "userRatingCount": 478,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.menum.co/boncialsancak",
+      "mapsUri": "https://maps.google.com/?cid=541070432540423093",
+      "recommendedPrimary": [
+        "Odun Ateşinde Ekşi Mayalı Margarita",
+        "Karışık İtalyan Şarküteri Pizza",
+        "Bresaola & Roka Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırınlanmış Sarımsaklı Zeytinyağı & Ev Sosları",
+          "note": "Ekşi mayalı pizza kenarlarını değerlendirmek için sunulan eşlikçi soslar.",
+          "proof": "boncialsancak.com ve Menum.co güncel menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt iç mekân ve 1469. Sokak önü sınırlı dış oturma alanı",
+        "crowdAndNoise": "Akşam ve gece paket/yerinde yeme yoğunluğu dengeli yüksek",
+        "disadvantage": "Masa sayısı kısıtlı olduğundan kalabalık gruplar için alan dar kalabilir",
+        "transit": "Alsancak 1469. Sk. No:31/A (Kıbrıs Şehitleri ve Muzaffer İzgü yakını)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Bonci Alsancak)",
+          "url": "https://www.boncialsancak.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Ekşi mayalı ve odun ateşinde İtalyan pizzaları"
+        },
+        {
+          "title": "Menum & Yandex Mekanlar",
+          "url": "https://www.menum.co/boncialsancak",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur hafifliği ve çıtır taban değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Ekşi maya fermantasyonu sayesinde mideyi yormayan hamur",
+        "Kıbrıs Şehitleri merkezinde hızlı servis"
+      ],
+      "cons": [
+        "Küçük dükkân ölçeği nedeniyle hafta sonu masa bulmak güçleşebilir"
+      ],
+      "uncertainties": [
+        "Sezonsal şarküteri ürünleri günlük stokla sınırlı olabilir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-lilav-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "LİLAV NEAPOLİTAN PİZZA&MAKARNA",
+      "branchName": "Alsancak, Kıbrıs Şehitleri Cd. No:145, 35220 Konak/İzmir",
+      "placeId": "ChIJzYreoi_ZuxQRKjT36F9FaDI",
+      "coordinates": {
+        "lat": 38.439223,
+        "lng": 27.143715000000004
+      },
+      "rating": 4.7,
+      "userRatingCount": 250,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3632229377707029546",
+      "recommendedPrimary": [
+        "Enginar & Kabaklı Neapolitan Pizza",
+        "Hindi Fümeli & Ricottalı Pizza",
+        "Klasik Margherita"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ragu Soslu El Yapımı Makarnalar",
+          "note": "Pizza dışında sıcak ana yemek alternatifi arayanlar için taze makarna tabakları.",
+          "proof": "Dijital.link ve Yandex Kıbrıs Şehitleri menü değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Caddeye bakan masa düzeni ve modern iç salon",
+        "crowdAndNoise": "Gün boyu hareketli Kıbrıs Şehitleri yaya akışı içinde yüksek doluluk",
+        "disadvantage": "Ana yaya aksı üzerinde bulunduğu için akşamları sokak gürültüsü belirgindir",
+        "transit": "Alsancak Kıbrıs Şehitleri Cd. No:145 (Alsancak Vapur İskelesi yürüyüş mesafesi)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Dijital Menü (Lilav)",
+          "url": "https://dijital.link/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Neapolitan pizza ve taze makarna çeşitleri"
+        },
+        {
+          "title": "Yandex & Yerel Rehberler",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hafif hamur, enginar-kabak pizza ve ragu makarna puanları"
+        }
+      ],
+      "pros": [
+        "İnce kenarlı hafif Neapolitan hamur ve taze makarna seçeneği bir arada",
+        "Merkezi konum"
+      ],
+      "cons": [
+        "Kıbrıs Şehitleri yoğunluğunda ön masalar gürültülü olabilir"
+      ],
+      "uncertainties": [
+        "Akşam saatlerinde taze makarna ve özel hamur porsiyonları erken azalabilir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-basta-la-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "Basta la Pizza",
+      "branchName": "Kültür, Nevvar Salih İşgören Sk No:14/c, 35220 Konak/İzmir",
+      "placeId": "ChIJCZ0qggDZuxQRzwdIx3q7OLo",
+      "coordinates": {
+        "lat": 38.4326699,
+        "lng": 27.143576799999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 403,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13418681225754183631",
+      "recommendedPrimary": [
+        "Ev Yapımı Pestolu İtalyan Pizza",
+        "Trüf & Mantarlı Pizza",
+        "Sarımsak Mayonezli Özel Dilim"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Sarımsak Mayonezi & El Yapımı Pesto Dip",
+          "note": "Kenarlarla birlikte paylaşılmak üzere taze çekilen imza eşlikçi soslar.",
+          "proof": "Menu-TR ve Yandex Kültür Mahallesi değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Az sayıda iç ve sokak önü bistro masası",
+        "crowdAndNoise": "Bölge sakinleri ve genç müdavimler arasında yüksek akşam ilgisi",
+        "disadvantage": "Çok küçük kapasiteli olduğu için kalabalık grupların tek masada oturması zordur",
+        "transit": "Kültür Nevvar Salih İşgören Sk. No:14/C (Lozan Meydanı ~4 dk yürüme)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Menu-TR (Basta la Pizza)",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taze malzeme, pesto ve sarımsak mayonezi detayları"
+        },
+        {
+          "title": "Yandex Mekanlar",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kültür ara sokakta sakin ve tutarlı pizza kalitesi"
+        }
+      ],
+      "pros": [
+        "Kültür ara sokaklarında telaşsız atmosfer",
+        "Taze ev yapımı dip soslarla zenginleşen sade menü"
+      ],
+      "cons": [
+        "Sınırlı masa kapasitesi"
+      ],
+      "uncertainties": [
+        "Özel sosların günlük mevcudiyeti akşam yoğunluğuna göre değişebilir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-pizzeria-venedik",
+      "categoryId": "pizza",
+      "resolvedName": "Ristorante Pizzeria Venedik",
+      "branchName": "1382 Sokak, Kültür, Alsancak - İzmir Gül sokak No:10/A-B, 35220 Konak/İzmir",
+      "placeId": "ChIJq3V3I1jYuxQRLyNEmFs1tnA",
+      "coordinates": {
+        "lat": 38.4320757,
+        "lng": 27.138287599999998
+      },
+      "rating": 4.2,
+      "userRatingCount": 3541,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.pizzavenedik.com/",
+      "mapsUri": "https://maps.google.com/?cid=8121737645522166575",
+      "recommendedPrimary": [
+        "Odun Fırını Venedik Özel Pizza",
+        "Tagliatelle al Ragu",
+        "Ev Yapımı Lazanya"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Yapımı Tiramisu & Klasik İtalyan Tatlıları",
+          "note": "Yemek sonunda eski usul masa servisiyle sunulan geleneksel kapanış tabakları.",
+          "proof": "pizzavenedik.com resmi menüsü ve gastronomi seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi Gül Sokak avlusu ve klasik beyaz örtülü geniş iç yemek salonu",
+        "crowdAndNoise": "Nesillerdir gelen İzmirli aileler ve akşam yemeği rezervasyonlarıyla dolu",
+        "disadvantage": "Yeni nesil üçüncü dalga pizzerialara kıyasla fiyat seviyesi daha yüksektir ve rezervasyon ister",
+        "transit": "Kültür 1382. Sk. (Gül Sokak) No:10/A-B (Vasıf Çınar & Dr. Mustafa Enver Bey arası)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Michelin Rehberi Seçkisi",
+          "url": "https://guide.michelin.com/",
+          "date": "2026-10-20",
+          "kind": "award",
+          "note": "1979 yılından bu yana Gül Sokak İtalyan restoranı seçkisi"
+        },
+        {
+          "title": "Resmi Site (Ristorante Pizzeria Venedik)",
+          "url": "https://www.pizzavenedik.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Odun fırını pizza ve el yapımı taze makarna geleneği"
+        },
+        {
+          "title": "OGGUSTO & Hürriyet Gastronomi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İzmir klasik İtalyan mutfağı mirası incelemesi"
+        }
+      ],
+      "pros": [
+        "1979 yılından beri aynı adreste süren köklü aile ve Michelin seçki geleneği",
+        "Pizza ile taze makarnada oturmuş mutfak disiplini"
+      ],
+      "cons": [
+        "Akşam yemeği için rezervasyonsuz yer bulmak zor olabilir ve hesap seviyesi klasik pizzeriaların üzerindedir"
+      ],
+      "uncertainties": [
+        "Yoğun hafta sonu akşamlarında masa devri yavaşlayabilir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-harbourger",
+      "categoryId": "hamburger",
+      "resolvedName": "Harbourger Burger & More",
+      "branchName": "Alsancak, 1472. Sk. No:34/B, 35220 Konak/İzmir",
+      "placeId": "ChIJ6SrFEePZuxQRm5-qtonhwSU",
+      "coordinates": {
+        "lat": 38.4398573,
+        "lng": 27.146210699999997
+      },
+      "rating": 5,
+      "userRatingCount": 271,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2720703631499894683",
+      "recommendedPrimary": [
+        "Harbourger Classic (2x70 gr)",
+        "İzmir Burger (Tulum Peynirli)",
+        "Rotterdam Mantar Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çıtır Tavuk Şeritleri & Harbour Soslu Patates",
+          "note": "Burger menüsünün yanında sıcak paylaşımlık olarak tercih edilen yan tabaklar.",
+          "proof": "Yemeksepeti ve Migros Yemek güncel mutfak menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "1472. Sokak içinde kompakt dükkân içi ve az sayıda ön masa",
+        "crowdAndNoise": "Paket servis siparişi ve genç burger müdavimleri akşamları yoğun",
+        "disadvantage": "İç oturma alanı küçük olduğu için yoğun saatlerde paket siparişi beklerken kalabalık oluşabilir",
+        "transit": "Alsancak 1472. Sk. No:34/B (Alsancak Garı ve 1469. Sk. arası)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemeksepeti & Migros Yemek",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Cloud ekmek, İzmir tulumlu ve Bangkok burger puanları"
+        },
+        {
+          "title": "Menu-TR & Yerel Rehberler",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tek şubeli Alsancak el yapımı burger seçkisi"
+        }
+      ],
+      "pros": [
+        "Yumuşak Cloud ekmeği ve dağılmayan köfte sululuğu",
+        "Yerel tulum peynirli özgün tarifler"
+      ],
+      "cons": [
+        "Küçük oturma kapasitesi nedeniyle kalabalık gruplar için uygun değil"
+      ],
+      "uncertainties": [
+        "Yoğun akşam saatlerinde sipariş hazırlık süresi uzayabilir"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-reel-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "REEL BURGER",
+      "branchName": "Alsancak, 1450. Sk. no:18/b, 35220 Konak/İzmir",
+      "placeId": "ChIJnTiWo1vYuxQRny89W6pQd6c",
+      "coordinates": {
+        "lat": 38.4364999,
+        "lng": 27.142429399999997
+      },
+      "rating": 4.5,
+      "userRatingCount": 748,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12067202419167932319",
+      "recommendedPrimary": [
+        "Parmesanlı Smash Burger",
+        "Reel Double Cheeseburger",
+        "Reel Mexican Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Trüf Mayonezli Çıtır Tavuk & Atıştırmalık Patates",
+          "note": "Dana smash burger dışında menüde yüksek puan alan tavuk ve kızartma seçeneği.",
+          "proof": "Wanderlog ve Yandex Alsancak burger değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kaykay tahtalarıyla süslü iç salon ve sokak önü masaları",
+        "crowdAndNoise": "Öğle sonrası ve akşamları genç gruplarla hareketli",
+        "disadvantage": "Yüksek müzik ve genç kalabalık nedeniyle sessiz bir akşam yemeği arayanlara uygun değildir",
+        "transit": "Alsancak 1450. Sk. No:18/B (Kıbrıs Şehitleri orta kesişimi)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Wanderlog İzmir Seçkisi",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kaykay teması, parmesan smash ve trüflü tavuk burger incelemesi"
+        },
+        {
+          "title": "Yandex & Qrdos Menü",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sıcak servis ve yüksek porsiyon memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Karakterli sokak kültürü dekorasyonu ve istikrarlı smash köfte kabuğu",
+        "Kıbrıs Şehitleri paralelinde kolay erişim"
+      ],
+      "cons": [
+        "Akşamları yüksek ses ve dar ara sokak yerleşimi"
+      ],
+      "uncertainties": [
+        "Özel parmesan sosları yoğun günlerde hızla tükenebilir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-vetti",
+      "categoryId": "hamburger",
+      "resolvedName": "Vetti Alsancak",
+      "branchName": "Alsancak, İtalya Sk. No:11/B, 35220 Konak/İzmir",
+      "placeId": "ChIJh_cfrKV5uxQRPpBvj_2Ghcg",
+      "coordinates": {
+        "lat": 38.431233,
+        "lng": 27.1398056
+      },
+      "rating": 4.4,
+      "userRatingCount": 123,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14449103403079405630",
+      "recommendedPrimary": [
+        "Smoked Beef Burger",
+        "Vetti Smash Burger",
+        "Çıtır Tavuk Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Meksika Usulü Taco & Burrito Seçenekleri",
+          "note": "Burger dışında sokak mutfağı çizgisini tamamlayan sıcak dürümler.",
+          "proof": "İzmir Mekan Rehberi ve Menu-TR İtalya Sokak incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "İtalya Sokak içinde samimi küçük dükkân ve dış masalar",
+        "crowdAndNoise": "Öğle ve erken akşam saatlerinde orta düzeyde düzenli yoğunluk",
+        "disadvantage": "Haftanın bazı taco/burrito günleri dışında çeşit sayısı kompakt tutulur",
+        "transit": "Alsancak/Kültür İtalya Sk. No:11/B (Vasıf Çınar Bulvarı yürüyüş mesafesi)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "İzmir Mekan Rehberi (Vetti Alsancak)",
+          "url": "https://www.izmirmekanrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tek şube İtalya Sokak burger ve burrito seçkisi"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Smoked ve smash burger et kalitesi değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Yumuşak ekmek ve temiz tütsü tadı",
+        "Kalabalıktan uzak İtalya Sokak konumu"
+      ],
+      "cons": [
+        "Küçük oturma alanı ve sınırlı yan ürün yelpazesi"
+      ],
+      "uncertainties": [
+        "Taco servisinin çıkarıldığı günler dönemsel olarak değişebilir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-soviet-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Soviet Coffee Gallery",
+      "branchName": "Kültür, 1437. Sk. No: 3A, 35220 Konak/İzmir",
+      "placeId": "ChIJqTQyHoXZuxQR6t6s_tZrKo0",
+      "coordinates": {
+        "lat": 38.435072999999996,
+        "lng": 27.144161
+      },
+      "rating": 5,
+      "userRatingCount": 672,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10172061279509602026",
+      "recommendedPrimary": [
+        "V60 Nitelikli Filtre Kahve",
+        "Flat White",
+        "Iced Americano"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Dönemsel Galeri Sergileri & Kahve Yanı Kurabiyeler",
+          "note": "Kahve eşliğinde sergi alanı ve okuma masalarında sunulan hafif atıştırmalıklar.",
+          "proof": "Izmir.art kültür portalı ve aWifiPlace çalışma mekânları listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Galeri odalarıyla bölünmüş sessiz iç salon masaları",
+        "crowdAndNoise": "Laptopuyla çalışanlar, öğrenciler ve sanatseverlerle gün boyu sakin dolu",
+        "disadvantage": "Sergi düzeni ve sessiz atmosfer nedeniyle yüksek sesli kalabalık grup sohbetlerine uygun değildir",
+        "transit": "Kültür 1437. Sk. No:3A (Alsancak İZBAN ve Kültür Metro durağı yakını)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "İzmir Art Kültür Portalı",
+          "url": "https://www.izmir.art/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sanat galerisi ve kahve dükkanı birleşimi değerlendirmesi"
+        },
+        {
+          "title": "aWifiPlace & Yandex",
+          "url": "https://awifiplace.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çalışma dostu sessiz ortam ve kahve kalitesi"
+        }
+      ],
+      "pros": [
+        "Sanat sergisiyle bütünleşen özgün ve huzurlu iç mimari",
+        "Yüksek barista istikrarı"
+      ],
+      "cons": [
+        "Öğleden sonra çalışma masaları hızla dolabilir"
+      ],
+      "uncertainties": [
+        "Galeri sergi açılış günlerinde mekân düzeni değişebilir"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-coffeemamma",
+      "categoryId": "kahve",
+      "resolvedName": "Coffeemamma Roastery & Barista Shop",
+      "branchName": "Umurbey, Alsancak, 1501. Sk. No: 2C, 35230 Konak/İzmir",
+      "placeId": "ChIJW6LL9mjYuxQR8zZSQFnsdn0",
+      "coordinates": {
+        "lat": 38.4376168,
+        "lng": 27.1533943
+      },
+      "rating": 4.8,
+      "userRatingCount": 206,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.coffeemamma.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=9040673170068223731",
+      "recommendedPrimary": [
+        "Single Origin Pour-Over (V60)",
+        "Taze Kavrum Espresso",
+        "Cortado"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Baristası Demleme Ekipmanları & Çekirdek Tadım Danışmanlığı",
+          "note": "Kafede içilen yöresel çekirdeklerin taze kavrulmuş paketlerini ve V60 filtre/ekipmanlarını alma imkânı.",
+          "proof": "Kahveler.net uzman yorumları ve OGGUSTO İzmir kahvecileri rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Endüstriyel kavurma atölyesi içi tadım barı ve sakin masa düzeni",
+        "crowdAndNoise": "Kahve meraklıları ve mahalle müdavimleriyle gün içi huzurlu yoğunluk",
+        "disadvantage": "Kıbrıs Şehitleri eğlence aksının dışında, Umurbey tarafında biraz daha sanayi-atölye dokusunda kalır",
+        "transit": "Umurbey 1501. Sk. No:2C (Alsancak Garı ve Tramvay hattına ~5 dk yürüme)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Coffeemamma)",
+          "url": "http://www.coffeemamma.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Taze kavrum tek köken çekirdekler ve barista mağazası"
+        },
+        {
+          "title": "OGGUSTO İzmir Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İzmir üçüncü nesil kahve kavurma öncüleri seçkisi"
+        },
+        {
+          "title": "Kahveler.net Topluluğu",
+          "url": "https://www.kahveler.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kavurma tazeliği ve profil tutarlılığı değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Doğrudan atölye kavrumu en taze tek köken çekirdekler",
+        "Turistik kalabalıktan uzak gerçek roastery deneyimi"
+      ],
+      "cons": [
+        "Pastane/brunch menüsü bekleyenler için yiyecek seçeneği çok sınırlıdır"
+      ],
+      "uncertainties": [
+        "Hafta sonu kapanış saatleri erken olabilir"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-no18-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "No.18 Coffee",
+      "branchName": "Alsancak, 1484. Sk. No:18/A, 35220 Konak/İzmir",
+      "placeId": "ChIJo5C0oVzYuxQRcin7EKUg9EA",
+      "coordinates": {
+        "lat": 38.4377104,
+        "lng": 27.1443129
+      },
+      "rating": 4.8,
+      "userRatingCount": 168,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4680401806071376242",
+      "recommendedPrimary": [
+        "Cortado",
+        "V60 Filtre Kahve",
+        "Flat White"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Protein İçecekleri & Günlük Taze Barista Tatlıları",
+          "note": "Kahve eşliğinde sunulan sade günlük kek ve hafif atıştırmalıklar.",
+          "proof": "Obilet İzmir Kahvecileri ve Restoranım sokak seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt iç bar çevresi ve 1484. Sokak kaldırım tabureleri",
+        "crowdAndNoise": "Öğleden sonra gençler ve yürüyüş rotası müdavimleriyle canlı",
+        "disadvantage": "Küçük sokak dükkânı olması nedeniyle yoğun saatlerde oturacak yer bulmak zorlaşabilir",
+        "transit": "Alsancak 1484. Sk. No:18/A (Gazi Kadınlar ve Kordon paralel sokakları)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Obilet İzmir Kahve Rehberi",
+          "url": "https://www.obilet.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Alsancak cortado ve üçüncü nesil filtre kahve tavsiyesi"
+        },
+        {
+          "title": "Restoranım & İzmir Mekan Rehberi",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sokak atmosferi ve yüksek kahve tutarlılığı"
+        }
+      ],
+      "pros": [
+        "Güçlü espresso-süt dengesi (özellikle cortado)",
+        "Alsancak ara sokak samimiyeti"
+      ],
+      "cons": [
+        "Uzun çalışma saatleri için masa alanı dardır"
+      ],
+      "uncertainties": [
+        "Günlük tatlı çeşitleri stokla sınırlıdır"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-kesis-kahve",
+      "categoryId": "kahve",
+      "resolvedName": "Keşiş Kahve",
+      "branchName": "Mimar Sinan, 1420. Sk. no:88 D:1C, 35220 Konak/İzmir",
+      "placeId": "ChIJ_dMbcGLZuxQRq7ZC5wQr2hc",
+      "coordinates": {
+        "lat": 38.4319011,
+        "lng": 27.1500669
+      },
+      "rating": 4.7,
+      "userRatingCount": 171,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1718733507855038123",
+      "recommendedPrimary": [
+        "Nitelikli Filtre Kahve",
+        "Latte & Flat White",
+        "Ev Yapımı Mozaik Pasta"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Bitki Çayları & Ev Yapımı Atıştırmalıklar",
+          "note": "Kafein dışındaki sıcak alternatifler ve kahve yanı ev tatlıları.",
+          "proof": "Menum.co ve Restoranım sakin çalışma kafeleri rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Sessiz iç çalışma masaları ve ara sokak kenarı ön bölüm",
+        "crowdAndNoise": "Mimar Sinan ve Kültür sakinleriyle gün boyu dingin tempo",
+        "disadvantage": "Sessiz çalışma stüdyosu yapısı nedeniyle kalabalık arkadaş gruplarına dar gelebilir",
+        "transit": "Mimar Sinan 1420. Sk. No:88/1C (Kültürpark Montrö kapısı yürüyüş mesafesi)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Menum (Keşiş Kahve)",
+          "url": "https://www.menum.co/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mimar Sinan kahve çeşitleri ve bitki çayları"
+        },
+        {
+          "title": "Restoranım Değerlendirmeleri",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sakin çalışma stüdyosu atmosferi ve mozaik pasta eşliği"
+        }
+      ],
+      "pros": [
+        "Gürültüden uzak konsantrasyon ortamı",
+        "Samimi işletmeci ilgisi ve tutarlı demlemeler"
+      ],
+      "cons": [
+        "Dar sokak cephesi nedeniyle büyük grup oturumu zor"
+      ],
+      "uncertainties": [
+        "Ev yapımı tatlı seçenekleri güne göre değişmektedir"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-alliance-kordon",
+      "categoryId": "date",
+      "resolvedName": "Alliance Kordon",
+      "branchName": "Kordon Alsancak, Kültür, Atatürk Cd. No: 174/A, 35220 Konak/İzmir",
+      "placeId": "ChIJF_gZawDZuxQR_fBC9DTLXrU",
+      "coordinates": {
+        "lat": 38.4298588,
+        "lng": 27.134547299999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 188,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.alliancekordon.com/",
+      "mapsUri": "https://maps.google.com/?cid=13069106596972523773",
+      "recommendedPrimary": [
+        "Levrek Lokum",
+        "Izgara Jumbo Karides",
+        "Kalamar & Özel Deniz Ürünleri Ara Sıcakları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Şef Mezeleri & Deniz Ürünlü Ara Sıcaklar",
+          "note": "Gün batımında şarap veya rakı eşliğini başlatan taze soğuk ve sıcak seçkiler.",
+          "proof": "Menu-TR ve restoran resmi tanıtım menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Açılır tavanlı şık yemek salonu ve 1. Kordon deniz cephesi masaları",
+        "crowdAndNoise": "Kutlama yemekleri ve çiftler nedeniyle akşamları rezervasyonlu doluluk yüksek",
+        "disadvantage": "Üst segment fiyat politikası uygulanır ve rezervasyonsuz akşam masası bulmak güçtür",
+        "transit": "Kültür Atatürk Cd. (1. Kordon) No:174/A (Alsancak Vapur İskelesi ve Cumhuriyet Meydanı arası)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Alliance Kordon)",
+          "url": "http://www.alliancekordon.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Kordon deniz cepheli restoran ve açılır tavan atmosferi"
+        },
+        {
+          "title": "Menu-TR & Yerel Rehberler",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Levrek lokum, jumbo karides ve profesyonel servis puanları"
+        }
+      ],
+      "pros": [
+        "Körfez gün batımına açılan rafine iç tasarım",
+        "Yüksek servis standartı"
+      ],
+      "cons": [
+        "Yüksek hesap seviyesi ve ön rezervasyon zorunluluğu"
+      ],
+      "uncertainties": [
+        "Rüzgârlı kış akşamlarında tavan kapalı salon düzenine geçilir"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-buke-garni",
+      "categoryId": "date",
+      "resolvedName": "Buke Garni Restaurant",
+      "branchName": "A Konak Mahallesi, Alsancak, 1401. Sk. no: 4/1, 35220 Konak/İzmir",
+      "placeId": "ChIJleINVl7YuxQRBQzdtW2W6tM",
+      "coordinates": {
+        "lat": 38.4314195,
+        "lng": 27.146840599999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 513,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15270182884499852293",
+      "recommendedPrimary": [
+        "Ev Yapımı Ekmek & Başlangıç Tabağı",
+        "Buke Burger",
+        "Günün Özel Et & Sebze Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Ekmekler & Zeytinyağlı Başlangıçlar",
+          "note": "Masa açılışında mevsimlik zeytinyağlıları tamamlayan sıcak fırın ekmekler.",
+          "proof": "İzmir Mekan Rehberi ve Lightinplan taş ev incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Az masalı samimi taş ev iç salonu",
+        "crowdAndNoise": "Hafta sonu akşamları çiftler ve sakin akşam yemeği arayan müdavimler",
+        "disadvantage": "Kapasitesi çok küçük olduğundan spontane gidişlerde masa bulunamayabilir",
+        "transit": "Alsancak 1401. Sk. No:4/1 (Talatpaşa ve Gazi Bulvarı yakınındaki sakin sokak)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "İzmir Mekan Rehberi (Buke Garni)",
+          "url": "https://www.izmirmekanrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taş ev atmosferi, görsel sunum özeni ve fiyat/kalite dengesi"
+        },
+        {
+          "title": "Lightinplan & Yandex",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Romantik az masalı akşam yemeği ve ev yapımı ekmek memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Kalabalık Kordon gürültüsünden tamamen uzak taş ev dinginliği",
+        "Özenli tabak sunumu"
+      ],
+      "cons": [
+        "Az masa sayısı nedeniyle ön planlama gerektirir"
+      ],
+      "uncertainties": [
+        "Sezonsal ana yemek çeşitleri mutfak hazırlığına göre günlük değişebilir"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-madame-prokopp",
+      "categoryId": "date",
+      "resolvedName": "Madame Prokopp Alsancak",
+      "branchName": "Alsancak, Muzaffer İzgü Sk. No: 2, 35220 Konak/İzmir",
+      "placeId": "ChIJu0ir24DZuxQRObeW18piVHM",
+      "coordinates": {
+        "lat": 38.4377923,
+        "lng": 27.1421696
+      },
+      "rating": 4.5,
+      "userRatingCount": 981,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://madameprokopp.com/",
+      "mapsUri": "https://maps.google.com/?cid=8310375835745302329",
+      "recommendedPrimary": [
+        "5'li Kraft Bira Tadım Seti",
+        "Kendi Üretimi Fıçı Kraft Bira",
+        "Paylaşımlık Gastro Başlangıç Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İmza Kokteyller & Çıtır Bira Yanı Atıştırmalıklar",
+          "note": "Bira dışındaki konuklar için hazırlanan kokteyller ve paylaşımlık sıcak atıştırmalıklar.",
+          "proof": "Gurme İzmir ve Menu-TR tarihi ev pub rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi İzmir evinin yüksek tavanlı odaları ve şık bar katları",
+        "crowdAndNoise": "Özellikle cuma-cumartesi akşamları rezervasyonsuz yer bulmak zor",
+        "disadvantage": "Hafta sonları yoğun doluluk nedeniyle yüksek ses ve masa rezervasyonu şartı bulunur",
+        "transit": "Alsancak Muzaffer İzgü Sk. No:2 (Kıbrıs Şehitleri yan sokağı)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Gurme İzmir & İzmir Mekan Rehberi",
+          "url": "https://www.gurmeizmir.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihi Hulda Clara Prokopp evi ve kraft bira üretimi"
+        },
+        {
+          "title": "Menu-TR",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "5’li tadım setleri ve tarihi dekorasyon incelemesi"
+        }
+      ],
+      "pros": [
+        "Tarihi İzmir evi mimarisiyle benzersiz buluşma ambiyansı",
+        "Geniş kendi üretimi kraft bira seçkisi"
+      ],
+      "cons": [
+        "Popüler akşam saatlerinde rezervasyon gerektirir ve içeride ses yükselebilir"
+      ],
+      "uncertainties": [
+        "Fıçı kraft bira çeşitleri parti üretimine göre mevsimsel değişebilir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-improvement",
+      "categoryId": "date",
+      "resolvedName": "Improvement",
+      "branchName": "Kültür, 1389. Sk. no:1/c, 35220 Konak/İzmir",
+      "placeId": "ChIJA6j8hSzZuxQR0ffkEzKRZJc",
+      "coordinates": {
+        "lat": 38.432469999999995,
+        "lng": 27.141966
+      },
+      "rating": 4.6,
+      "userRatingCount": 272,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://improvement.bar/",
+      "mapsUri": "https://maps.google.com/?cid=10909003841666349009",
+      "recommendedPrimary": [
+        "Mevsimsel İmza Kokteyller",
+        "İnfüze Edilmiş Cin/Viski Kokteylleri",
+        "Tatlı-Ekşi Özel Miksoloji"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bar Mutfağından Küçük Atıştırmalık Tabaklar",
+          "note": "Uzun kokteyl sohbetlerine eşlik etmek üzere çıkan hafif paylaşım tabakları.",
+          "proof": "OGGUSTO İzmir kokteyl barları seçkisi ve improvement.bar"
+        }
+      ],
+      "suitability": {
+        "seating": "Loş ışıklı bar tezgâhı ve sakin iç mahalle masaları (pati dostu)",
+        "crowdAndNoise": "Çiftler ve kokteyl meraklılarıyla özenli akşam yoğunluğu",
+        "disadvantage": "Niş malzeme ve el işçiliği nedeniyle kokteyl fiyatları ortalamanın üzerindedir; tam öğün yemeği yerine içki odaklidir",
+        "transit": "Kültür 1389. Sk. No:1/C (Gül Sokak ve Vasıf Çınar yürüme mesafesi)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "OGGUSTO İzmir Kokteyl Seçkisi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Deneysel miksoloji ve mevsimsel ev şuruplu kokteyller"
+        },
+        {
+          "title": "Resmi Site (Improvement Bar)",
+          "url": "https://improvement.bar/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Grafik veri destekli kokteyl menüsü ve bar atıştırmalıkları"
+        },
+        {
+          "title": "İzmir Mekan Rehberi & Yandex",
+          "url": "https://www.izmirmekanrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Loş sakin ambiyans ve yüksek barista/barmen ilgisi"
+        }
+      ],
+      "pros": [
+        "Gürültülü kulüplerden uzak, sohbete izin veren loş mahalle barı ortamı",
+        "Yaratıcı ve mevsimsel ev yapımı miksoloji"
+      ],
+      "cons": [
+        "Tam akşam yemeği mutfağı yerine kokteyl ve atıştırmalık barı ölçeğindedir"
+      ],
+      "uncertainties": [
+        "İmza kokteyl reçeteleri mevsime bağlı olarak düzenli güncellenir"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-uwawi",
+      "categoryId": "kahvalti",
+      "resolvedName": "Uwawi",
+      "branchName": "Alsancak, 1454. Sk. No: 28, 35220 Konak/İzmir",
+      "placeId": "ChIJuYr9glzYuxQRb5hDJ_Ng2_k",
+      "coordinates": {
+        "lat": 38.436925099999996,
+        "lng": 27.1441782
+      },
+      "rating": 4.7,
+      "userRatingCount": 605,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/uwawiizmir?igsh=N3l0aGtxb3lpb28%3D&utm_source=qr",
+      "mapsUri": "https://maps.google.com/?cid=18004090532795750511",
+      "recommendedPrimary": [
+        "Eggs Benedict & Poşe Yumurta Tabağı",
+        "Ekşi Maya Avokadolu Tost",
+        "Tütsülenmiş Dana Kaburgalı Dilim"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Banana Bread & Taze Sıkım Smoothie Çeşitleri",
+          "note": "Brunch sonrasında kahve veya taze meyve suyu eşliğinde tercih edilen hafif tatlı kapanışlar.",
+          "proof": "Yolculuk Terapisi İzmir ve Yakala/Google brunch seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Estetik iç salon ve sokak önü ferah brunch masaları",
+        "crowdAndNoise": "Hafta sonu geç kahvaltı saatlerinde yoğun sıra ve masa doluluğu",
+        "disadvantage": "Geleneksel serpme yerine modern tabak kahvaltı formatındadır; hafta sonu bekleme sürebilir",
+        "transit": "Alsancak 1454. Sk. No:28 (Gazi Kadınlar Sokağı ve Kordon arası)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yolculuk Terapisi İzmir",
+          "url": "https://www.yolculukterapisi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İtalyan Kültür çevresi brunch, avokado tost ve Eggs Benedict rehberi"
+        },
+        {
+          "title": "Restaurant Guru & Google Haritalar",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Poşe yumurta ve banana bread memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Taze ekşi maya ekmeklerle hazırlanan rafine brunch tabakları",
+        "Ara sokakta aydınlık ve şık atmosfer"
+      ],
+      "cons": [
+        "Hafta sonu sabahları hızlı dolduğundan sıra beklenebilir"
+      ],
+      "uncertainties": [
+        "Bazı tütsülenmiş etli özel brunch dilimleri gün sonuna kalmayabilir"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-atadan-firin",
+      "categoryId": "kahvalti",
+      "resolvedName": "Atadan Fırın İzmir",
+      "branchName": "Alsancak, Cumhuriyet Blv 300 B, 35220 Konak/İzmir",
+      "placeId": "ChIJK375Ok3ZuxQRpJAJDpIqpLM",
+      "coordinates": {
+        "lat": 38.4414644,
+        "lng": 27.143674299999997
+      },
+      "rating": 4.8,
+      "userRatingCount": 410,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.atadanbakery.com/?utm_source=google_profile&utm_campaign=localo&utm_medium=mainlink",
+      "mapsUri": "https://maps.google.com/?cid=12944518035758747812",
+      "recommendedPrimary": [
+        "Odun Ateşinde Sıcak İzmir Boyozu",
+        "Tereyağlı Susamlı Gevrek",
+        "Peynir Bombası & Ispanaklı Börek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Sütlü Tatlılar & Tek Kişilik Pastalar",
+          "note": "Fırın vitrininden kahvaltı sonrası veya çay saati için seçilebilen hafif pastane ürünleri.",
+          "proof": "atadanbakery.com resmi ürün listesi ve Menu-TR"
+        }
+      ],
+      "suitability": {
+        "seating": "Kısa sabah kahvaltısı oturma alanı ve ağırlıklı tezgâhtan al-götür düzeni",
+        "crowdAndNoise": "Sabah işe gidiş ve hafta sonu fırın saatlerinde hareketli",
+        "disadvantage": "Geniş serpme masa konsepti yerine hızlı fırın kahvaltısı ve oturmalı pastane düzenine sahiptir",
+        "transit": "Alsancak Cumhuriyet Blv. No:300B (Alsancak Limanı / Gazi Osman Paşa Bulvarı devamı)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Atadan Fırın)",
+          "url": "https://www.atadanbakery.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Odun ateşinde taş fırın boyoz, gevrek ve ekşi maya ekmekler"
+        },
+        {
+          "title": "Menu-TR & Restoranım",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tazelik, tereyağlı simit ve personel ilgisi değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Odun ateşi taş fırında günlük taze boyoz ve ekmek çıkışı",
+        "Güler yüzlü hızlı servis"
+      ],
+      "cons": [
+        "Uzun hafta sonu serpme oturumuna uygun masa alanı yoktur"
+      ],
+      "uncertainties": [
+        "Sıcak tepsi saatleri sabah erken ve öğlene yakın aralıklarda yoğunlaşır"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-zeynel-ergin-gevrek",
+      "categoryId": "kahvalti",
+      "resolvedName": "Zeynel Ergin Gevrek Fırını",
+      "branchName": "Alsancak, 1466. Sk. no: 2, 35220 Konak/İzmir",
+      "placeId": "ChIJExaHs1zYuxQR31aELybEmgY",
+      "coordinates": {
+        "lat": 38.4384435,
+        "lng": 27.145073399999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 7658,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.zeynelergin.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=475908378926012127",
+      "recommendedPrimary": [
+        "Kara Fırın Susamlı İzmir Gevreği",
+        "Sade & Ispanaklı Sıcak Boyoz",
+        "Taze Kumru"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Demli Çay Eşliğinde Haşlanmış Yumurta & Sıcak Börek",
+          "note": "Fırın önü taburelerde İzmir gevrek-boyoz kahvaltısının klasik tamamlayıcısı.",
+          "proof": "İzmir Mekan Rehberi ve Mes Prestiges sabah rotası incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Fırın tezgâhı ve sokak kenarı sınırlı tabure/masa düzeni (ağırlıklı hızlı sabah durağı)",
+        "crowdAndNoise": "Sabahın erken saatlerinden öğlene dek mahalleli ve turist sırasıyla çok canlı",
+        "disadvantage": "Tezgâh önü yoğun ve masa alanı kısıtlıdır; kalabalıkta bekleme ya da ayakta/al-götür tüketim gerekebilir",
+        "transit": "Alsancak 1466. Sk. No:2 (Kıbrıs Şehitleri arka sokağı, Alsancak Tren Garı ~4 dk)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "İzmir Mekan Rehberi (Zeynel Ergin)",
+          "url": "https://www.izmirmekanrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kara fırın İzmir gevreği ve boyoz çeşitleri rehberi"
+        },
+        {
+          "title": "Nelerimeşhur & Mes Prestiges",
+          "url": "https://www.nelerimeshur.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Alsancak gevrek-boyoz ve talaş böreği geleneği"
+        }
+      ],
+      "pros": [
+        "Kara fırında pişen gevrek çıtırlığı ve sürekli taze tepsi devri",
+        "Bütçe dostu hakiki İzmir sabah ritüeli"
+      ],
+      "cons": [
+        "Uzun oturmalı serpme kahvaltı yerine hızlı ayaküstü/sokak fırını düzenindedir"
+      ],
+      "uncertainties": [
+        "Özel içli boyoz çeşitleri sabah geç saatlerde tükenebilir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-dostlar-firini",
+      "categoryId": "kahvalti",
+      "resolvedName": "Alsancak Dostlar Fırını - Boyoz",
+      "branchName": "Alsancak, Kıbrıs Şehitleri Cd. No:120, 35220 Konak/İzmir",
+      "placeId": "ChIJE5Hqq0TYuxQRAI_uq7bnrNU",
+      "coordinates": {
+        "lat": 38.4392628,
+        "lng": 27.1439159
+      },
+      "rating": 4.5,
+      "userRatingCount": 12687,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://alsancakdostlarfirini.com/",
+      "mapsUri": "https://maps.google.com/?cid=15396935997827485440",
+      "recommendedPrimary": [
+        "Klasik Sade Boyoz & Fırında Yumurta",
+        "Enginarlı / Ispanaklı Boyoz",
+        "Tahinli Sıcak Boyoz"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırında Yavaş Pişmiş Yumurta & Tulum Peyniri Eşliği",
+          "note": "Boyoz tabağının vazgeçilmez geleneksel eşlikçisi ve sabah çayı düzeni.",
+          "proof": "OGGUSTO İzmir boyoz klasikleri ve alsancakdostlarfirini.com arşivleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Cadde kenarı dar tezgâh önü ve az sayıda masa (al-götür / hızlı oturum ağırlıklı)",
+        "crowdAndNoise": "Haftanın her günü sabah ve öğleden önce turist ve yerli kuyruğu oluşur",
+        "disadvantage": "Yoğun turistik talep nedeniyle sabah saatlerinde kuyruk uzayabilir ve konforlu masa oturumu sınırlıdır",
+        "transit": "Alsancak Kıbrıs Şehitleri Cd. No:120 (Alsancak İskele ve tramvay hattına ~4 dk)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Alsancak Dostlar Fırını)",
+          "url": "https://www.alsancakdostlarfirini.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1983 kuruluşu ve geleneksel boyoz çeşitleri"
+        },
+        {
+          "title": "OGGUSTO İzmir Lezzetleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kıbrıs Şehitleri tarihi boyoz geleneği incelemesi"
+        },
+        {
+          "title": "En İyi Best & Yerel Yazarlar",
+          "url": "https://eniyi.best/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yumurta eşliğinde klasik boyoz değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "1983 yılından beri şehrin gastronomi hafızasındaki boyoz standardı",
+        "Zengin sebzeli ve sade boyoz yelpazesi"
+      ],
+      "cons": [
+        "Kapı önü yoğunluğu, hızlı tüketim temposu ve sınırlı masa sayısı"
+      ],
+      "uncertainties": [
+        "Kış ve hafta sonu sabahları kuyruk bekleme süresi artabilir"
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-celebi-unlu-mamuller",
+      "categoryId": "denemelisin",
+      "resolvedName": "Çelebi Unlu Mamuller",
+      "branchName": "Alsancak, Kıbrıs Şehitleri Cd. 185/A, 35220 Konak/İzmir",
+      "placeId": "ChIJi0cqgkTYuxQRj2sz5BAsVf0",
+      "coordinates": {
+        "lat": 38.441198799999995,
+        "lng": 27.144019200000002
+      },
+      "rating": 4.5,
+      "userRatingCount": 15124,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18254545115675847567",
+      "recommendedPrimary": [
+        "Sıcak Klasik Kakaolu Fındıklı İzmir Bomba",
+        "Beyaz Çikolatalı İzmir Bomba",
+        "Antep Fıstıklı Bomba"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Beyaz Çikolatalı & Frambuazlı Mevsimlik Bomba Çeşitleri",
+          "note": "Klasik kakaolu dolgunun yanında fırından sıcak alınan farklı dolgu alternatifleri.",
+          "proof": "Kısık Ateş Akademi mutfak dosyası ve Yandex sokak lezzetleri rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Yalnızca tezgâhtan al-götür / sokakta sıcak tüketim (oturma salonu yok)",
+        "crowdAndNoise": "Özellikle akşamüstü ve akşam saatlerinde kapı önü hızlı ilerleyen sıra",
+        "disadvantage": "Oturma alanı bulunmaz ve akışkan sıcak dolgunun formunu koruması için bekletmeden yenmesi gerekir",
+        "transit": "Alsancak Kıbrıs Şehitleri Cd. No:185/A (Vapur İskelesi çıkışına ~2 dk)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Kısık Ateş Akademi (İzmir Bomba Dosyası)",
+          "url": "https://www.kisikatesakademi.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İzmir Bomba kurabiyesinin doğuşu ve ince hamur tekniği"
+        },
+        {
+          "title": "Yandex & İzmir Yerel Rehberler",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sıcak tepsi sirkülasyonu ve Kıbrıs Şehitleri klasiği değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Sürekli yeni çıkan sıcak tepsi sayesinde erimiş çikolata ve incecik hamur dengesi",
+        "Vapur iskelesi önünde zahmetsiz durak"
+      ],
+      "cons": [
+        "Tamamen ayakta / al-götür servisi ve yoğun akşamlarda kısa kuyruk"
+      ],
+      "uncertainties": [
+        "Özel dolgulu çeşitler akşam geç saatlerde bitebilir"
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-sevinc-pastanesi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Sevinç Pastanesi - Alsancak",
+      "branchName": "Alsancak, Ali Çetinkaya Blv No: 27 D:C, 35220 Konak/İzmir",
+      "placeId": "ChIJG9lMKlrYuxQRKYqtEb2yjAs",
+      "coordinates": {
+        "lat": 38.434757,
+        "lng": 27.142028
+      },
+      "rating": 4.3,
+      "userRatingCount": 7140,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.sevincpastanesi.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=832236556271847977",
+      "recommendedPrimary": [
+        "Klasik Profiterol",
+        "Milföy Pasta",
+        "Tarihi Badem Ezmesi & Kuru Pasta Çeşitleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarihi Kutu Badem Ezmesi & Acıbadem Kurabiyesi",
+          "note": "Pastane vitrininden hediyelik veya çay eşlikçisi olarak alınan klasik İzmir pastane seçkisi.",
+          "proof": "OGGUSTO İzmir tarihî mekânları ve ansiklopedik kent arşivi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi vitrin içi pastane oturma bölümü ve bulvar önü masa alanı",
+        "crowdAndNoise": "Gün boyu müdavimler, buluşan arkadaş grupları ve ailelerle canlı",
+        "disadvantage": "Modern butik patisserie yaklaşımları yerine eski usul klasik pastacılık sunar; fiyat seviyesi yüksektir",
+        "transit": "Alsancak Ali Çetinkaya Blv. No:27/C (Lozan Meydanı ve Talatpaşa Bulvarı köşesi)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "OGGUSTO İzmir Tarihî Mekanlar",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1957 yılından beri Alsancak buluşma ikonu ve klasik pasta geleneği"
+        },
+        {
+          "title": "Vikipedi & Kent Arşivleri",
+          "url": "https://tr.wikipedia.org/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İzmir sosyal tarihinde Sevinç Pastanesi önü kültürel mirası"
+        }
+      ],
+      "pros": [
+        "1957’den kesintisiz süren canlı Alsancak buluşma noktası",
+        "Klasik milföy ve badem ezmesi reçetesi"
+      ],
+      "cons": [
+        "Yoğun saatlerde gürültülü olabilen köşe konumu ve geleneksel pastane fiyatlaması"
+      ],
+      "uncertainties": [
+        "Halkapınar üretim tesisinden gelen günlük taze ürün sevkiyat saatleri gün içinde değişebilir"
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-soguscu-atakan-usta",
+      "categoryId": "denemelisin",
+      "resolvedName": "Meşhur Söğüşçü Atakan Usta",
+      "branchName": "MAHMUT ESAT BOZKURT CAD, Alsancak, Kıbrıs Şehitleri Cd. 1/F, 35220 Konak/İzmir",
+      "placeId": "ChIJqRdDha_ZuxQRIBSznJu3yBI",
+      "coordinates": {
+        "lat": 38.436704,
+        "lng": 27.14348
+      },
+      "rating": 4.8,
+      "userRatingCount": 429,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1353533567001629728",
+      "recommendedPrimary": [
+        "Tam Karışık Kuzu Söğüş Dürüm (Lavaş)",
+        "Ekmek Arası Dil & Yanak Söğüş",
+        "Beyinsiz Sade Söğüş"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Beyinsiz veya Seçmeli Parça Söğüş Porsiyonları",
+          "note": "İlk kez deneyenler için dil-yanak ağırlıklı daha hafif ve sade söğüş opsiyonu.",
+          "proof": "Ekşi Sözlük ve Restoranım İzmir söğüş rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük tezgâh önü oturma alanları ve ayakta sokak servisi",
+        "crowdAndNoise": "Öğle ve gece geç saatlerde sokak lezzeti müdavimleriyle yoğun",
+        "disadvantage": "Geleneksel sakatat temelli küçük sokak dükkânı olduğundan geniş restoran konforu beklenmemelidir",
+        "transit": "Alsancak Mahmut Esat Bozkurt & Kıbrıs Şehitleri Cd. No:1/F (Sevinç Pastanesi yakını)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım & Sokak Lezzetleri Rehberi",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kuzu kelle eti, dil ve kimyon dengesi incelemesi"
+        },
+        {
+          "title": "Yandex & Ekşi Sözlük Yorumları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hijyen, porsiyon cömertliği ve müdavim puanları"
+        }
+      ],
+      "pros": [
+        "Taze günlük kuzu etleriyle temiz ve dengeli söğüş hazırlığı",
+        "Merkezi Kıbrıs Şehitleri girişi"
+      ],
+      "cons": [
+        "Küçük dükkân cephesi ve sakatat odaklı dar menü"
+      ],
+      "uncertainties": [
+        "Gece geç saatlerde bazı spesifik parçalar (örneğin beyin/dil) erken bitebilir"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-tarihi-kumrucusu",
+      "categoryId": "denemelisin",
+      "resolvedName": "TARİHİ ALSANCAK KUMRUCUSU",
+      "branchName": "Alsancak, 1447. Sk. No:4 D:B, 35500 Konak/İzmir",
+      "placeId": "ChIJmfHKbRjZuxQRqb20QCCxn4o",
+      "coordinates": {
+        "lat": 38.435494999999996,
+        "lng": 27.142152
+      },
+      "rating": 4.7,
+      "userRatingCount": 211,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9988897250613706153",
+      "recommendedPrimary": [
+        "Karışık Sıcak İzmir Kumru (Kasap Sucuk & Salam)",
+        "İzmir Tulumlu & Domatesli Sade Kumru",
+        "Sayas Peynirli Kumru"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Nohut Mayalı Taze Ekmekte İzmir Tulumlu Soğuk Kumru",
+          "note": "Şarküterisiz asıl geleneksel İzmir reçetesini tatmak isteyenler için sade seçenek.",
+          "proof": "Trendyol/TGO Yemek ve Ekşi Sözlük Alsancak kumru tartışmaları"
+        }
+      ],
+      "suitability": {
+        "seating": "Büfe önü küçük tabureler ve ağırlıklı sokak/paket tüketim",
+        "crowdAndNoise": "Öğle arası ve akşamüstü hızlı sokak sandviçi trafiği yüksek",
+        "disadvantage": "Geleneksel küçük büfe yapısında olduğu için uzun oturma alanı sunmaz",
+        "transit": "Alsancak 1447. Sk. No:4/B (Kıbrıs Şehitleri ve Gazi Kadınlar arası)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemeksepeti & TGO Menü",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Nohut mayalı ekmek, tulum peyniri ve sıcak sucuklu kumru"
+        },
+        {
+          "title": "Ekşi Sözlük İzmir Rehberi",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Alsancak içi hakiki kumru ekmeği değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Gerçek nohut mayalı çıtır-yumuşak susamlı kumru ekmeği",
+        "Abartısız hızlı sokak lezzeti"
+      ],
+      "cons": [
+        "Büfe ölçeğinde dar alan"
+      ],
+      "uncertainties": [
+        "Taze günlük ekmek partileri bitince öğleden sonra ara verilebilir"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-al-dente-macaroni",
+      "categoryId": "denemelisin",
+      "resolvedName": "Al Dente Macaroni İzmir",
+      "branchName": "ALSANCAK MAH. 1469 SK. TEZVER MERİÇ, Alsancak, NO: 30 A, 35220 Konak/İzmir",
+      "placeId": "ChIJSf_3ME_ZuxQRHsueAyju56Y",
+      "coordinates": {
+        "lat": 38.439115699999995,
+        "lng": 27.1441189
+      },
+      "rating": 4.6,
+      "userRatingCount": 926,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.aldentemacaroni.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=12026843185543039774",
+      "recommendedPrimary": [
+        "Fettuccine Alfredo",
+        "Pesto Soslu Taze Fettuccine",
+        "Penne Arrabbiata"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İnce Hamurlu Pizza & Hafif İtalyan Tatlıları",
+          "note": "Taze makarna dışında masa paylaşımını tamamlayan fırın ve tatlı seçenekleri.",
+          "proof": "MioSocial İzmir ve Yemeksepeti taze makarna değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak bistro tarzı iç mekân ve 1469. Sokak masaları",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde öğrenci/çalışan kitlesiyle sürekli hareketli",
+        "disadvantage": "Hızlı makarna konsepti olduğu için fine dining servis ritmi yerine pratik bistro temposu sunar",
+        "transit": "Alsancak 1469. Sk. No:30/A (Kıbrıs Şehitleri orta bölgesi paralel sokağı)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "MioSocial İzmir İncelemesi",
+          "url": "https://www.miosocial.app/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Günlük taze makarna konsepti ve hafif İtalyan tatlıları"
+        },
+        {
+          "title": "Yemeksepeti Menü",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Fettuccine Alfredo, Arrabbiata ve porsiyon puanları"
+        }
+      ],
+      "pros": [
+        "Dökülmeyen kıvamda günlük taze makarna",
+        "Merkezi sokakta dengeli fiyat/performans"
+      ],
+      "cons": [
+        "Yoğun saatlerde sokak gürültüsü ve dar masa aralıkları"
+      ],
+      "uncertainties": [
+        "Özel günlük soslar akşam servisi sonuna doğru tükenebilir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-mona-della-pasta",
+      "categoryId": "denemelisin",
+      "resolvedName": "Mona Della Pasta",
+      "branchName": "Alsancak, 1441. Sk. no:6/A, 35220 Konak/İzmir",
+      "placeId": "ChIJEYMrfGfZuxQRcyXsfqC5mZo",
+      "coordinates": {
+        "lat": 38.4356613,
+        "lng": 27.1431485
+      },
+      "rating": 4.5,
+      "userRatingCount": 175,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11140139252252943731",
+      "recommendedPrimary": [
+        "Parmesan Tekerinde Kremalı Makarna",
+        "Pesto Soslu Jön Makarna",
+        "Tavuklu Mantarlı Taze Makarna"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Soslu El Yapımı İtalyan & Mantı Tabakları",
+          "note": "Parmesan tekeri dışında farklı sos eşleştirmeleriyle hazırlanan sıcak hamur işleri.",
+          "proof": "Yandex ve Yemeksepeti 1441. Sokak makarna incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük sokak dükkânı iç bölümü ve ön masa düzeni",
+        "crowdAndNoise": "Özellikle akşam saatlerinde genç çiftler ve arkadaş grupları",
+        "disadvantage": "Parmesan tekerinde sıcak servis zaman alabildiğinden yoğunlukta kısa bekleme yaşanabilir",
+        "transit": "Alsancak 1441. Sk. No:6/A (Kıbrıs Şehitleri girişi yakını)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemeksepeti (Mona Della Pasta)",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Parmesan tekerinde taze makarna ve pesto soslu seçenekler"
+        },
+        {
+          "title": "Yandex Mekan Rehberi",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1441. Sokak el yapımı makarna lezzeti değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Parmesan tekerinde görsel ve zengin aromalı sıcak soslama",
+        "Samimi küçük işletme yaklaşımı"
+      ],
+      "cons": [
+        "Sınırlı iç oturma kapasitesi ve kremalı ağırlık"
+      ],
+      "uncertainties": [
+        "Tezgâhta parmesan çevirme sırası yoğun akşam saatlerinde yavaşlayabilir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-balik-pisiricisi",
+      "categoryId": "balik",
+      "resolvedName": "Alsancak Balık Pişiricisi",
+      "branchName": "Alsancak, 1481. Sk. no:4/A, 35220 Konak/İzmir",
+      "placeId": "ChIJpejsOlvYuxQR0fhpG89pP5A",
+      "coordinates": {
+        "lat": 38.4386503,
+        "lng": 27.1422012
+      },
+      "rating": 4.8,
+      "userRatingCount": 1159,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10394142803233470673",
+      "recommendedPrimary": [
+        "Hardal Soslu Mezgit Şiş",
+        "Izgara Dil Şiş",
+        "Taze Hamsi & Çipura Porsiyon"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Klasik Salata, Soğuk Mezeler & Ekmek Arası Balık",
+          "note": "Ana balık porsiyonunun yanında sunulan sade günlük salata ve pratik ara lezzetler.",
+          "proof": "Mekanlar.com ve Yandex Alsancak balıkçıları değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sade küçük lokanta içi ve 1481. Sokak masaları",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde yerel semt sakinleriyle tutarlı doluluk",
+        "disadvantage": "Deniz manzaralı lüks meyhane düzeni yerine salaş ve dar bir sokak pişiricisi yapısına sahiptir",
+        "transit": "Alsancak 1481. Sk. No:4/A (Atatürk Caddesi Kordon ve Kıbrıs Şehitleri arası)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Mekanlar.com & İzmir Rehberi",
+          "url": "https://www.mekanlar.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tek şubeli aile işletmesi balık pişiricisi incelemesi"
+        },
+        {
+          "title": "Yandex & Restoranım",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hardal soslu mezgit şiş ve taze günlük balık puanları"
+        }
+      ],
+      "pros": [
+        "Dürüst fiyat/kalite dengesi ve imza hardal soslu mezgit şiş",
+        "İçten aile işletmesi servisi"
+      ],
+      "cons": [
+        "Dar iç alan nedeniyle yoğun akşamlarda servis hızı düşebilir"
+      ],
+      "uncertainties": [
+        "Günlük av durumuna göre bazı küçük sezon balıkları tezgahta bulunmayabilir"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-deniz-restaurant",
+      "categoryId": "balik",
+      "resolvedName": "İzmir Deniz Restaurant",
+      "branchName": "İzmir Palas Oteli, Kültür, Atatürk Cd. No: 188/B Zemin Kat, 35220 Konak/İzmir",
+      "placeId": "ChIJYbVq11fYuxQR4M2XuRiFapA",
+      "coordinates": {
+        "lat": 38.431004699999995,
+        "lng": 27.135785199999997
+      },
+      "rating": 4.3,
+      "userRatingCount": 2441,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.denizrestaurant.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=10406276230232395232",
+      "recommendedPrimary": [
+        "Levrek Lokum",
+        "Izgara Ahtapot",
+        "Şevketi Bostan & Girit Mezeleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İsli Balık Başlangıçları & Sıcak Şevketi Bostan",
+          "note": "Ana balık öncesinde klasik Kordon meze arabasından seçilen köklü Ege tatları.",
+          "proof": "Gault & Millau Türkiye seçkisi ve denizrestaurant.com.tr arşivi"
+        }
+      ],
+      "suitability": {
+        "seating": "İzmir Palas zemin katında beyaz örtülü zarif salon ve 1. Kordon deniz cephesi",
+        "crowdAndNoise": "İş yemekleri, özel aile kutlamaları ve gurme misafirlerle akşamları tam dolu",
+        "disadvantage": "Şehrin en yüksek fiyatlı balık restoranlarından biridir; rezervasyonsuz yer bulmak zordur ve klasik ağırbaşlı servis mesafelidir",
+        "transit": "Kültür Atatürk Cd. No:188/B (İzmir Palas Oteli altı, Pasaport-Cumhuriyet Meydanı hattı)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Gault & Millau Türkiye Seçkisi (1 Toque)",
+          "url": "https://www.gault-millau.com.tr/",
+          "date": "2026-10-20",
+          "kind": "award",
+          "note": "1 Toque derecelendirmesi ve Şef Şenol Öztürk mutfak değerlendirmesi"
+        },
+        {
+          "title": "Resmi Site (İzmir Deniz Restaurant)",
+          "url": "https://www.denizrestaurant.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1981 Kordon geçmişi ve Ege deniz ürünleri menüsü"
+        },
+        {
+          "title": "OGGUSTO & İzmir Mekan Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Klasik meze kültürü ve yüksek hesap uyarısı değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "45 yılı aşkın kurumsal mutfak tecrübesi ve kusura yer bırakmayan taze meze tepsisi",
+        "İzmir Körfezi klasik manzarası"
+      ],
+      "cons": [
+        "Yüksek fiyat politikası ve yoğun akşam saatlerinde resmî servis temposu"
+      ],
+      "uncertainties": [
+        "Mevsim dışı bazı yabani Ege otları meze seçkisinde dönemsel olabilir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alsancak-birinci-kordon-balik",
+      "categoryId": "balik",
+      "resolvedName": "Birinci Kordon Balık Restoran",
+      "branchName": "Alsancak, Atatürk Cd. No:196/A, 35220 Konak/İzmir",
+      "placeId": "ChIJi0JsAPzYuxQRAU0EyTdMP_k",
+      "coordinates": {
+        "lat": 38.433755399999995,
+        "lng": 27.138366599999998
+      },
+      "rating": 4.3,
+      "userRatingCount": 923,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.birincikordon.com/",
+      "mapsUri": "https://maps.google.com/?cid=17960157641456241921",
+      "recommendedPrimary": [
+        "Kömür Ateşinde Günlük Mezat Balığı",
+        "Kalamar Dolma",
+        "Ege Otlu Mevsim Mezeleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Deniz Mahsullü Ara Sıcaklar & Yöresel Ot Mezeleri",
+          "note": "Ana balık öncesinde masa paylaşımını zenginleştiren taze ot ve kabuklu başlangıçlar.",
+          "proof": "Michelin Rehberi seçkisi ve birincikordon.com menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Kordon boyunda açık hava deniz önü masaları ve şık iç salon",
+        "crowdAndNoise": "Gün batımından itibaren yüksek akşam rezervasyon yoğunluğu",
+        "disadvantage": "Turistik Kordon konumu ve seçki standardı nedeniyle hesaplar yüksektir; rezervasyonsuz masa bulunmaz",
+        "transit": "Alsancak Atatürk Cd. No:196/A (1. Kordon yürüyüş ve bisiklet yolu cephesi)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Michelin Rehberi (Tavsiye Listesi)",
+          "url": "https://guide.michelin.com/",
+          "date": "2026-10-20",
+          "kind": "award",
+          "note": "İzmir Körfezi günlük mezat balıkları ve kömür ateşi değerlendirmesi"
+        },
+        {
+          "title": "Resmi Site (Birinci Kordon Balık)",
+          "url": "https://birincikordon.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Kalamar dolma ve taze Ege mezeleri arşivi"
+        },
+        {
+          "title": "Mekan.com & OGGUSTO",
+          "url": "https://www.mekan.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kordon manzarası, profesyonel garson kadrosu ve yüksek fiyat dengesi"
+        }
+      ],
+      "pros": [
+        "Günlük İzmir Körfezi mezatından alınan taze balık standartı",
+        "Kordon gün batımı cephesinde deneyimli klasik servis"
+      ],
+      "cons": [
+        "Yüksek fiyat seviyesi ve ön rezervasyon zorunluluğu"
+      ],
+      "uncertainties": [
+        "Kış ve lodoslu günlerde yalnızca kapalı salon servisi verilir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    }
+  ]
+}

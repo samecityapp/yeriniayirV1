@@ -54,6 +54,8 @@ import muglaBodrumTorbaSnapshotJson from './regions/mugla-bodrum-torba.json';
 import muglaBodrumAkyarlarSnapshotJson from './regions/mugla-bodrum-akyarlar.json';
 import muglaMarmarisMerkezSnapshotJson from './regions/mugla-marmaris-merkez.json';
 import muglaDatcaMerkezSnapshotJson from './regions/mugla-datca-merkez.json';
+import izmirKonakAlsancakSnapshotJson from './regions/izmir-konak-alsancak.json';
+import izmirKarsiyakaBostanliSnapshotJson from './regions/izmir-karsiyaka-bostanli.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -113,6 +115,8 @@ const MUGLA_BODRUM_TORBA_SNAPSHOT = muglaBodrumTorbaSnapshotJson as V3VerifiedRe
 const MUGLA_BODRUM_AKYARLAR_SNAPSHOT = muglaBodrumAkyarlarSnapshotJson as V3VerifiedRegionSnapshot;
 const MUGLA_MARMARIS_MERKEZ_SNAPSHOT = muglaMarmarisMerkezSnapshotJson as V3VerifiedRegionSnapshot;
 const MUGLA_DATCA_MERKEZ_SNAPSHOT = muglaDatcaMerkezSnapshotJson as V3VerifiedRegionSnapshot;
+const IZMIR_KONAK_ALSANCAK_SNAPSHOT = izmirKonakAlsancakSnapshotJson as V3VerifiedRegionSnapshot;
+const IZMIR_KARSIYAKA_BOSTANLI_SNAPSHOT = izmirKarsiyakaBostanliSnapshotJson as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -171,6 +175,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MUGLA_BODRUM_AKYARLAR_SNAPSHOT,
   MUGLA_MARMARIS_MERKEZ_SNAPSHOT,
   MUGLA_DATCA_MERKEZ_SNAPSHOT,
+  IZMIR_KONAK_ALSANCAK_SNAPSHOT,
+  IZMIR_KARSIYAKA_BOSTANLI_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -592,6 +598,31 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'hastane-alti-datca': MUGLA_DATCA_MERKEZ_SNAPSHOT,
   'datca-liman': MUGLA_DATCA_MERKEZ_SNAPSHOT,
   'sevgi-yolu-datca': MUGLA_DATCA_MERKEZ_SNAPSHOT,
+  alsancak: IZMIR_KONAK_ALSANCAK_SNAPSHOT,
+  'izmir-konak-alsancak': IZMIR_KONAK_ALSANCAK_SNAPSHOT,
+  'alsancak-konak-izmir': IZMIR_KONAK_ALSANCAK_SNAPSHOT,
+  'alsancak-konak': IZMIR_KONAK_ALSANCAK_SNAPSHOT,
+  'alsancak-izmir': IZMIR_KONAK_ALSANCAK_SNAPSHOT,
+  kordon: IZMIR_KONAK_ALSANCAK_SNAPSHOT,
+  kordonboyu: IZMIR_KONAK_ALSANCAK_SNAPSHOT,
+  'birinci-kordon': IZMIR_KONAK_ALSANCAK_SNAPSHOT,
+  '1-kordon': IZMIR_KONAK_ALSANCAK_SNAPSHOT,
+  'kibris-sehitleri': IZMIR_KONAK_ALSANCAK_SNAPSHOT,
+  'kultur-alsancak': IZMIR_KONAK_ALSANCAK_SNAPSHOT,
+  'mimar-sinan-alsancak': IZMIR_KONAK_ALSANCAK_SNAPSHOT,
+  'gul-sokak': IZMIR_KONAK_ALSANCAK_SNAPSHOT,
+  'lozan-meydani': IZMIR_KONAK_ALSANCAK_SNAPSHOT,
+  'gundogdu-meydani': IZMIR_KONAK_ALSANCAK_SNAPSHOT,
+  bostanli: IZMIR_KARSIYAKA_BOSTANLI_SNAPSHOT,
+  'izmir-karsiyaka-bostanli': IZMIR_KARSIYAKA_BOSTANLI_SNAPSHOT,
+  'bostanli-karsiyaka-izmir': IZMIR_KARSIYAKA_BOSTANLI_SNAPSHOT,
+  'bostanli-karsiyaka': IZMIR_KARSIYAKA_BOSTANLI_SNAPSHOT,
+  'bostanli-izmir': IZMIR_KARSIYAKA_BOSTANLI_SNAPSHOT,
+  'bostanli-sahil': IZMIR_KARSIYAKA_BOSTANLI_SNAPSHOT,
+  'bostanli-iskele': IZMIR_KARSIYAKA_BOSTANLI_SNAPSHOT,
+  'cengiz-topel': IZMIR_KARSIYAKA_BOSTANLI_SNAPSHOT,
+  nalkesen: IZMIR_KARSIYAKA_BOSTANLI_SNAPSHOT,
+  'bostanli-carsi': IZMIR_KARSIYAKA_BOSTANLI_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {
