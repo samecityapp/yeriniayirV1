@@ -1,0 +1,2198 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "adana-merkez",
+  "displayName": "Adana Merkez",
+  "verifiedAt": "2026-11-17T16:39:26.856Z",
+  "selectedCount": 29,
+  "rejectedControls": [
+    {
+      "id": "ctrl-adana-kahve-dunyasi-chain",
+      "resolvedName": "Kahve Dünyası-Adana Turgut Özal",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-adana-caribou-chain",
+      "resolvedName": "Caribou Coffee Turgut Özal Blv.",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-adana-tuck-chain",
+      "resolvedName": "Tuck Coffee x Etc Adana",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-adana-nevada-chain",
+      "resolvedName": "Nevada Coffee",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-adana-soulmate-chain",
+      "resolvedName": "Soulmate Coffee",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-adana-pure-black-chain",
+      "resolvedName": "Pure Black Coffee",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-adana-levent-borek-chain",
+      "resolvedName": "Levent Börek Adana Turgut Özal Şubesi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-adana-emirgan-sutis-chain",
+      "resolvedName": "Emirgan Sütiş Park Zirve",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-adana-bizim-borekcilik-chain",
+      "resolvedName": "BİZİM BÖREKÇİLİK ZİYAPAŞA",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-adana-cadinin-evi-chocolate",
+      "resolvedName": "Cadı’nın Evi Ziyapaşa",
+      "reason": "kahve_category_not_coffee_specialist:chocolate_shop"
+    },
+    {
+      "id": "ctrl-adana-saricam-simsek-dis",
+      "resolvedName": "ŞİMŞEK LEZZETLER",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Hurmalı/Cemalpaşa/Reşatbey/Kurtuluş/Kocavezir/Sarıyakup/Beşocak/Döşeme/Hanedan/Tepebağ/Meydan/Mıdık/Namık Kemal/Mahfesığmaz/Güzelyalı/Karslılar/Toros/Yüzüncüyıl/Yenibaraj/Gürselpaşa/Yavuzlar/Alidede/Cumhuriyet/Dede Korkut/Seyhan/Çukurova/Yüreğir/Merkez, adres: Gültepe, 395W+HM, 01250 Sarıçam/Adana)"
+    },
+    {
+      "id": "ctrl-adana-masalkoy-low",
+      "resolvedName": "Masalköy",
+      "reason": "below_quality_threshold:★3(126)"
+    },
+    {
+      "id": "ctrl-adana-mint-coffee-low",
+      "resolvedName": "Mint Coffee & Roastery Co.",
+      "reason": "below_quality_threshold:★3.6(122)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "adana-kaya-kebap",
+      "categoryId": "kebap",
+      "resolvedName": "Kaya Kebap",
+      "branchName": "Hurmalı, 34006. Sk. No:6, 01060 Seyhan/Adana",
+      "placeId": "ChIJGfenGlyPKBURnFRIZBuir3A",
+      "coordinates": {
+        "lat": 36.989631,
+        "lng": 35.319921
+      },
+      "rating": 4.9,
+      "userRatingCount": 22593,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://kayakebap.com/",
+      "mapsUri": "https://maps.google.com/?cid=8119886891702572188",
+      "recommendedPrimary": [
+        "Zırh Kıyma Adana Kebap",
+        "Taş Fırın Çıtır Lahmacun",
+        "Kuzu Çöp Şiş"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taş Fırın Lahmacun & Kebap Uyumu",
+          "note": "Kebap öncesi veya yanında sıcak gelen çıtır taş fırın lahmacunları nedeniyle yalnız kebap değil fırın ustalığıyla da anılıyor.",
+          "proof": "kayakebap.com ve bujuyollarda.com Adana rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Çok katlı ve yoğun sirkülasyonlu klasik kebapçı salonları",
+        "crowdAndNoise": "Günün büyük bölümünde yerliler ve şehir dışı misafirlerle kesintisiz kalabalık",
+        "disadvantage": "Çok yüksek masa trafiği nedeniyle kalabalık saatlerde gürültülü ve hızlı tempolu olabiliyor.",
+        "transit": "Hurmalı Mahallesi 34006. Sokak No:6 üzerinde eski Adana merkez hattında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Kaya Kebap Resmi Sitesi",
+          "url": "http://kayakebap.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Hurmalı merkez şube ve taş fırın Adana kebap menüsü"
+        },
+        {
+          "title": "Bu Ju Yollarda Adana Rehberi",
+          "url": "https://bujuyollarda.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mahalle arası geleneksel lezzet çizgisi ve et kalitesi vurgusu"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "22.500+ değerlendirmeyle istikrarlı zirve puanı"
+        }
+      ],
+      "pros": [
+        "Zırh kıyması Adana kebabı ve taş fırın lahmacunu aynı yüksek standartta çıkıyor",
+        "Hızlı ve oturmuş servis ekibi"
+      ],
+      "cons": [
+        "Öğle ve akşam zirve saatlerinde dar sokakta park ve masa beklemesi olabiliyor"
+      ],
+      "uncertainties": [
+        "Hafta sonları yoğunluk sebebiyle masa kalma süresi kısa tutulabiliyor."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-sef-ocakbasi-fatih-usta",
+      "categoryId": "kebap",
+      "resolvedName": "Şef Ocakbaşı Fatih Usta",
+      "branchName": "Özdemir Apt, Cemalpaşa, 63012. Sk. No:5, 01000 Seyhan/Adana",
+      "placeId": "ChIJ1ZYcPwyPKBUR9ZdXkPuRG7k",
+      "coordinates": {
+        "lat": 37.0025578,
+        "lng": 35.328882199999995
+      },
+      "rating": 4.9,
+      "userRatingCount": 295,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13338415231032334325",
+      "recommendedPrimary": [
+        "Fatih Usta Zırh Adana Kebap",
+        "Kuzu Lokum & Çöp Şiş",
+        "Sıcak Humus & Köz Mezeler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Masa Başı Sıcak Meze Dengesi",
+          "note": "Et öncesi masaya gelen taze salata, ezme ve köz garnitür çeşitliliği klasik kebap akşamını zenginleştiriyor.",
+          "proof": "firmakonum.com ve Yandex Cemalpaşa değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Düzenli iç ocakbaşı salonu ve akşam masaları",
+        "crowdAndNoise": "Akşam yemeği saatlerinde yerli müdavimler ile düzenli dolulukta",
+        "disadvantage": "Büyük bahçeli bulvar mekanlarına kıyasla daha kompakt mahalle içi ocakbaşı ölçeğinde.",
+        "transit": "Cemalpaşa Mahallesi 63012. Sokak No:5 üzerinde Ziyapaşa-Gazipaşa arasında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yandex Maps Cemalpaşa",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Cemalpaşa konumunda et kalitesi ve meze övgüleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "295+ değerlendirmede çok yüksek memnuniyet skoru"
+        }
+      ],
+      "pros": [
+        "Büyük zincir kalabalığından uzak, et seçimine odaklanan ocakbaşı",
+        "Merkezi Cemalpaşa konumu"
+      ],
+      "cons": [
+        "Akşam grupları için önceden masa ayırtmak daha rahat"
+      ],
+      "uncertainties": [
+        "Yoğun akşam servislerinde özel et çeşitleri erken tükenebiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-kazancilar-kebap-ozal",
+      "categoryId": "kebap",
+      "resolvedName": "Kazancılar Kebap (Turgut Özal)",
+      "branchName": "Mahfesığmaz, Turgut Özal Blv. A blok no 77, 01770 Çukurova/Adana",
+      "placeId": "ChIJ5VLkYwCPKBURGUG6odvhhOU",
+      "coordinates": {
+        "lat": 37.043211299999996,
+        "lng": 35.311140099999996
+      },
+      "rating": 4.6,
+      "userRatingCount": 1290,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://kazancilarkebap.com/tr/ozal?utm_source=google&utm_medium=organic&utm_campaign=gbp_ozal&utm_content=website",
+      "mapsUri": "https://maps.google.com/?cid=16538592065038729497",
+      "recommendedPrimary": [
+        "Kazancılar Zırh Adana Kebap",
+        "Fındık Lahmacun & Çiğköfte İkramı",
+        "Kaburga Şiş"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarihî Çarşı Mirasından Modern Bulvara",
+          "note": "Büyüksaat merkezdeki tarihî şubeyle aynı usta çizgisini Çukurova tarafında daha konforlu masa düzeniyle sunuyor.",
+          "proof": "kazancilarkebap.com resmi tarihçesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç salon ve bulvar üstü aile masaları",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde aileler ile kalabalık grupların tercihi",
+        "disadvantage": "Geleneksel sokak kebapçılarına kıyasla daha yüksek fiyatlı düzenli restoran formatında.",
+        "transit": "Mahfesığmaz Mahallesi Turgut Özal Bulvarı No:77/A üzerinde Çukurova aksında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Kazancılar Kebap Resmi Sitesi",
+          "url": "https://kazancilarkebap.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1908’den bu yana süren çarşı kökeni ve Turgut Özal şube menüsü"
+        },
+        {
+          "title": "Yandex Maps Çukurova",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Turgut Özal Blv. kebap kalitesi ve salata-meze ikramları değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "1.290+ değerlendirmeyle Çukurova’nın en istikrarlı kebap noktalarından"
+        }
+      ],
+      "pros": [
+        "Hem Büyüksaat köklü tariflerini koruyor hem konforlu akşam oturumu sunuyor",
+        "İkram mezeleri taze ve zengin"
+      ],
+      "cons": [
+        "Turgut Özal Bulvarı akşam trafiğinde park yeri arayışı olabiliyor"
+      ],
+      "uncertainties": [
+        "Hafta sonları aile rezervasyonları erken dolabiliyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-sabos-ocakbasi",
+      "categoryId": "kebap",
+      "resolvedName": "Saboş Ocakbaşı",
+      "branchName": "Mahfesığmaz Adnan Kahveci Bulvarı Şerif Apt. Altı 6 A, Mahfesığmaz, D:6/A, 01170 Çukurova/Adana",
+      "placeId": "ChIJC71tVdCOKBUR0wD3TMqPe_4",
+      "coordinates": {
+        "lat": 37.0320371,
+        "lng": 35.310504
+      },
+      "rating": 4.6,
+      "userRatingCount": 428,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18337408406806528211",
+      "recommendedPrimary": [
+        "Klasik Zırh Adana Kebap",
+        "Közde Bıldırcın Izgara",
+        "Kuzu Çöp Şiş & Ciğer"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Klasik Dışında Özel Ocakbaşı Seçenekleri",
+          "note": "Sadece kıyma ve kuşbaşıyla sınırlı kalmayıp bıldırcın gibi Adana ocakbaşı sofralarına özgü çeşitleri taze çıkarıyor.",
+          "proof": "Yandex Mahfesığmaz ve yerel ocakbaşı notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Salaş ocakbaşı masaları ve bulvar kenarı oturumu",
+        "crowdAndNoise": "Özellikle akşam saatlerinde yerel müdavimlerle hareketli",
+        "disadvantage": "Lüks restoran konforu yerine dumanı üstünde mahalle ocakbaşısı havasında.",
+        "transit": "Mahfesığmaz Mahallesi Adnan Kahveci Bulvarı No:6/A, Çukurova."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yandex Maps Mahfesığmaz",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Adnan Kahveci Blv. ocakbaşı bıldırcın ve Adana kebap değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "428+ değerlendirmede yüksek yerel onay skoru"
+        }
+      ],
+      "pros": [
+        "Mahfesığmaz’da yerel müdavim profili yüksek, yapay olmayan ocakbaşı",
+        "Izgara çeşitliliği iyi"
+      ],
+      "cons": [
+        "Duman ve kömür kokusu açık alana göre içeride daha belirgin olabiliyor"
+      ],
+      "uncertainties": [
+        "Bıldırcın gibi özel ürünler akşam geç saatte tükenebiliyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-buyuksaat-cigercisi-ibrahim-usta",
+      "categoryId": "ciger",
+      "resolvedName": "Büyüksaat Ciğercisi İbrahim Usta",
+      "branchName": "Sarıyakup, 23004. Sk. 2 Büyüksaat, 01300 Seyhan/Adana",
+      "placeId": "ChIJgQqJkhyPKBURpNJJs_wdUzQ",
+      "coordinates": {
+        "lat": 36.9835314,
+        "lng": 35.329671499999996
+      },
+      "rating": 4.5,
+      "userRatingCount": 407,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3770390284216160932",
+      "recommendedPrimary": [
+        "Sabah Kuzu Ciğer Şiş Porsiyon",
+        "Sıcak Tırnaklı Pide & Sumaklı Soğan"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sabah Esnaf Sofrası & Taze Günlük Kesim",
+          "note": "Adana’nın ünlü sabah ciğeri geleneğini Büyüksaat dokusu içinde gürültüsüz, doğrudan esnaf mutfağı temizliğiyle yaşatıyor.",
+          "proof": "gastrocarto.com ve Sarıyakup yerel değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî sokak önü tabureleri ve sade küçük iç dükkân masaları",
+        "crowdAndNoise": "Sabah erken saatlerden öğle başına kadar yerel esnaf ve erken kalkan gezginlerle canlı",
+        "disadvantage": "Geleneksel sabah ciğercisi düzeninde; öğleden sonra taze ciğer şiş stoğu erken bitebiliyor.",
+        "transit": "Sarıyakup Mahallesi 23004. Sokak No:2 (Tarihî Büyüksaat yanı), Seyhan."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "GastroCarto Büyüksaat Kaydı",
+          "url": "https://gastrocarto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihî Büyüksaat çevresinde erken sabah ciğeri geleneği vurgusu"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "407+ değerlendirmeyle istikrarlı sabah ciğerci memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Büyüksaat tarihî çarşısı içinde otantik sabah ciğeri atmosferi",
+        "Kuzu ciğeri yumuşak ve kurutulmadan pişiyor"
+      ],
+      "cons": [
+        "Geç saatlerde gidenler için ciğer tükenebiliyor ve oturma alanı oldukça mütevazı"
+      ],
+      "uncertainties": [
+        "Öğleden sonraki servis saati günlük ciğer kesim stoğuna bağlı."
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-cigerci-ali-emmi",
+      "categoryId": "ciger",
+      "resolvedName": "Ciğerci Ali Emmi",
+      "branchName": "Beşocak, 22010. Sk. No:1, 01020 No:1, 01020, 01020 Seyhan/Adana",
+      "placeId": "ChIJ0SzY_1KFKBURmwX5gR6HZVk",
+      "coordinates": {
+        "lat": 36.9789982,
+        "lng": 35.326893999999996
+      },
+      "rating": 4.7,
+      "userRatingCount": 96,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6441703407122711963",
+      "recommendedPrimary": [
+        "Kuzu Ciğer Şiş",
+        "Kaburga Çöp Şiş",
+        "Közlenmiş Arpacık Soğan & Nane"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Gizli Mahalle İncisi & Fiyat-Lezzet Dengesi",
+          "note": "Turistik kalabalıktan uzak arka sokak düzeninde taze ciğer ve samimi esnaf ilgisiyle öne çıkıyor.",
+          "proof": "Yandex Beşocak ve yerel gastronomi değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı mahalle içi ocak kenarı ve sokak masaları",
+        "crowdAndNoise": "Sabah ve öğle saatlerinde ağırlıklı olarak bölge yerlileriyle doluyor",
+        "disadvantage": "Büyük restoran konforu yok; dar sokakta sade esnaf dükkânı düzeninde hizmet veriyor.",
+        "transit": "Beşocak Mahallesi 22010. Sokak No:1 üzerinde merkez çarşı güneyinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yandex Maps Beşocak",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze ciğer, samimi servis ve ekonomik porsiyon değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yaklaşık 100 misafirle güçlü mahalle memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Turistik kalabalıktan uzak samimi ciğer deneyimi",
+        "Etlerin sinirsiz ve yumuşak hazırlanışı"
+      ],
+      "cons": [
+        "Dekorasyon ve masa düzeni oldukça basit"
+      ],
+      "uncertainties": [
+        "Arka sokak konumu nedeniyle ilk kez gidecekler için harita takibi yararlı oluyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-cigerci-mahmut",
+      "categoryId": "ciger",
+      "resolvedName": "Ciğerci Mahmut (Reşatbey)",
+      "branchName": "Reşatbey, Ordu Cd. 36/A, 01120 Seyhan/Adana",
+      "placeId": "ChIJkwfu8muPKBURhICp2i6PVRg",
+      "coordinates": {
+        "lat": 36.9959108,
+        "lng": 35.3311288
+      },
+      "rating": 4.4,
+      "userRatingCount": 3733,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1753465061330485380",
+      "recommendedPrimary": [
+        "Klasik Kuzu Ciğer Şiş",
+        "Adana Kıyma & Ciğer Karışık",
+        "Fındık Lahmacun İkramı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günün Her Saatinde Tutarlı Ciğer Servisi",
+          "note": "Sadece sabah erken saatle sınırlı kalmayıp akşam yemeği saatlerinde de taze ciğer pişirmesiyle ziyaretçiler için erişilebilir.",
+          "proof": "durmakesfet.com ve Yandex Reşatbey kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş Reşatbey salonu ve kaldırım masaları",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde yüksek yerli-turist trafiği",
+        "disadvantage": "Yoğun sirkülasyonda servis hız odaklı ilerliyor; sakin sohbet ortamı yerine canlı ciğerci temposu hakim.",
+        "transit": "Reşatbey Mahallesi Ordu Caddesi No:36/A üzerinde merkezde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Durma Keşfet Adana Rehberi",
+          "url": "https://durmakesfet.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Adana’nın öne çıkan otantik ciğer durakları listesi"
+        },
+        {
+          "title": "Yandex Maps Reşatbey",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ordu Caddesi ciğer şiş ve bol meze değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "3.700+ değerlendirmeyle yüksek kent bilinirliği"
+        }
+      ],
+      "pros": [
+        "Hem sabah hem akşam ulaşılabilen merkezi Reşatbey adresi",
+        "Bol ve taze salata eşlikçisi"
+      ],
+      "cons": [
+        "Kalabalık saatlerde uğultu seviyesi yükseliyor"
+      ],
+      "uncertainties": [
+        "Hafta sonu yemek saatlerinde masa boşalması için kısa süre beklenebiliyor."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-cigerci-hadi",
+      "categoryId": "ciger",
+      "resolvedName": "Ciğerci Hadi",
+      "branchName": "Döşeme, 60054. Sk. No:2, 01130 Seyhan/Adana",
+      "placeId": "ChIJv2_JSXGPKBUR4Y2RPw-Q6P4",
+      "coordinates": {
+        "lat": 36.9979874,
+        "lng": 35.317507899999995
+      },
+      "rating": 4.4,
+      "userRatingCount": 1792,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18368089475395980769",
+      "recommendedPrimary": [
+        "Tam Pişmemiş Suluca Kuzu Ciğer Şiş",
+        "Köz Domates & Acı Biber Eşlikçisi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Adanalı Müdavimlerin Döşeme Klasiği",
+          "note": "Büyük turistik bulvar reklamları olmadan doğrudan mahalle ve çarşı esnafının kalabalığıyla dolan samimi ocak.",
+          "proof": "Yandex Döşeme ve yerel restoran değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "İç ocak salonu ve dış tabure düzeni",
+        "crowdAndNoise": "Sabah geç saatler ile öğle arasında çok canlı",
+        "disadvantage": "Mahalle arası küçük sokak konumu ve sade esnaf lokantası oturumu sunuyor.",
+        "transit": "Döşeme Mahallesi 60054. Sokak No:2 üzerinde Seyhan merkezde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yandex Maps Döşeme",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Döşeme’de taze günlük ciğer ve hızlı servis değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "1.790+ değerlendirmeyle istikrarlı ciğer memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Ziyaretçi kalabalığından daha çok şehrin yerli ciğer müdavimlerini ağırlıyor",
+        "Kuzu ciğeri pamuk yumuşaklığında"
+      ],
+      "cons": [
+        "Akşam geç saatlerden çok gündüz öğünlerine odaklı"
+      ],
+      "uncertainties": [
+        "Sokak çevresinde araç park alanı gün ortasında daralabiliyor."
+      ],
+      "selectionScore": 71,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-sirdanci-kivircik-guven",
+      "categoryId": "sirdan-sokak",
+      "resolvedName": "Şırdancı Kıvırcık Güven",
+      "branchName": "Kocavezir, Karacaoğlan Cd. No:24, 01060 Seyhan/Adana",
+      "placeId": "ChIJb6MleF-PKBURUQwBcY5iqSM",
+      "coordinates": {
+        "lat": 36.9843122,
+        "lng": 35.3218202
+      },
+      "rating": 4.6,
+      "userRatingCount": 256,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://instagram.com/sirdanciguven01?igshid=NGVhN2U2NjQ0Yg==",
+      "mapsUri": "https://maps.google.com/?cid=2569693426312350801",
+      "recommendedPrimary": [
+        "Sıcak Adana Şırdan",
+        "Kızarmış / Haşlama Mumbar Dolması",
+        "Karın Dolması (Kırkkat)"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kokusuz & Dengeli İç Harç Standardı",
+          "note": "İlk kez şırdan deneyecek misafirlerin bile övgüyle andığı temiz hazırlık süreciyle Kocavezir hattının önde gelen noktalarından.",
+          "proof": "firmarehberim.com ve Kocavezir topluluk değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kocavezir cadde üstü temiz iç tezgâh ve kaldırım masaları",
+        "crowdAndNoise": "Özellikle akşam saatlerinden gece yarısına kadar şırdan tutkunlarıyla dolu",
+        "disadvantage": "Geleneksel şırdancı temposu gece saatlerinde yoğunlaştığından erken öğle saatleri için uygun değil.",
+        "transit": "Kocavezir Mahallesi Karacaoğlan Caddesi No:24 üzerinde merkezde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "FirmaRehberim Kocavezir",
+          "url": "https://firmarehberim.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Karacaoğlan Caddesi temiz şırdan ve mumbar hazırlığı övgüleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "256+ değerlendirmede Kocavezir şırdancıları içinde en yüksek memnuniyet"
+        }
+      ],
+      "pros": [
+        "Şırdan ve mumbar temizliği ile baharat ayarı dengeli",
+        "Şehir merkezinde yürüme kolaylığı"
+      ],
+      "cons": [
+        "Gece sokak trafiği ve geç saat hareketliliği yoğun"
+      ],
+      "uncertainties": [
+        "Şırdan servisi öğleden sonra akşamüstüne doğru asıl hızına ulaşıyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-kazim-bufe",
+      "categoryId": "sirdan-sokak",
+      "resolvedName": "Kazım Büfe",
+      "branchName": "Cemalpaşa, Toros Cd. Bahadır Apt No.34/B, 01120 Seyhan/Adana",
+      "placeId": "ChIJR_OiMBWPKBURKvfZY0eJQfw",
+      "coordinates": {
+        "lat": 37.0017942,
+        "lng": 35.3270348
+      },
+      "rating": 4.5,
+      "userRatingCount": 26758,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18176960510754944810",
+      "recommendedPrimary": [
+        "Buzlu Muzlu Süt",
+        "Adana Usulü Karışık Tost",
+        "Taze Sıkılmış Portakal-Nar Suyu"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Adana’nın 7/24 Yaşayan Kaldırım Ritüeli",
+          "note": "Kebabın ardından sindirim ve serinlik için uğranan buzlu muzlu süt tezgâhı kentin her yaştan yerlisini buluşturuyor.",
+          "proof": "gezinomi.com ve durmakesfet.com Adana klasik durakları"
+        }
+      ],
+      "suitability": {
+        "seating": "Büfe önü açık hava kaldırım masaları ve hızlı ayakta tezgâh",
+        "crowdAndNoise": "Neredeyse günün ve gecenin her saati yoğun sıra ve sirkülasyon",
+        "disadvantage": "Çok yüksek kalabalık nedeniyle oturacak masa bulmak bazen zaman alabiliyor.",
+        "transit": "Cemalpaşa Mahallesi Toros Caddesi Bahadır Apt. No:34/B üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Gezinomi Adana Dosyası",
+          "url": "https://www.gezinomi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Cemalpaşa’da buzlu muzlu süt ve taze portakal suyu ikonu"
+        },
+        {
+          "title": "Durma Keşfet Adana Rehberi",
+          "url": "https://durmakesfet.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Adana’da kebap sonrası gidilmesi gereken simge büfe"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "26.700+ değerlendirmeyle şehrin en ikonik sokak lezzetlerinden"
+        }
+      ],
+      "pros": [
+        "Şehirle özdeşleşmiş gerçek muzlu süt kıvamı",
+        "Kebap ve sıcak hava sonrası ideal serinlik durağı"
+      ],
+      "cons": [
+        "Akşam saatlerinde sıra ve kaldırım kalabalığı yüksek"
+      ],
+      "uncertainties": [
+        "Muzlu sütün içine buzlu süt parçacıkları konulduğu için mevsim dışı hassasiyeti olanlar belirtmeli."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-sirdanci-kemal",
+      "categoryId": "sirdan-sokak",
+      "resolvedName": "Şırdancı Kemal",
+      "branchName": "Kocavezir, Karacaoğlan Cd. no:66, 01060 Seyhan/Adana",
+      "placeId": "ChIJPwHQHF-PKBURx0wvJjTW9wc",
+      "coordinates": {
+        "lat": 36.9861928,
+        "lng": 35.3213674
+      },
+      "rating": 4.4,
+      "userRatingCount": 3988,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://instagram.com/sirdancikemall",
+      "mapsUri": "https://maps.google.com/?cid=574162996980305095",
+      "recommendedPrimary": [
+        "Adana Usulü Şırdan",
+        "Mumbar Dolması",
+        "Sıcak Kırkkat"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Gece Yarısı Kazan Sirkülasyonu",
+          "note": "Yüksek gece trafiği sayesinde kazandan sürekli sıcak ve taze pişen şırdan alabilme avantajı sunuyor.",
+          "proof": "durmakesfet.com ve Kocavezir sokak lezzetleri incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Büyük cadde üstü salon ve kaldırım önü masaları",
+        "crowdAndNoise": "Akşamdan sabaha karşıya uzanan hareketli gece kalabalığı",
+        "disadvantage": "Çok hızlı kalabalık dönüşünde masa düzeni basit ve sokak uğultusu yüksek.",
+        "transit": "Kocavezir Mahallesi Karacaoğlan Caddesi No:66 üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Durma Keşfet Adana Rehberi",
+          "url": "https://durmakesfet.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kocavezir şırdan kültürü ve gece sokak lezzeti geleneği"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yaklaşık 4.000 değerlendirmeyle istikrarlı müşteri onayı"
+        }
+      ],
+      "pros": [
+        "Sürekli taze kalan sıcak kazan sirkülasyonu",
+        "Hem şırdan hem mumbar çeşitliliği"
+      ],
+      "cons": [
+        "Gece geç saat kalabalığı ve dar kaldırım alanı"
+      ],
+      "uncertainties": [
+        "Porsiyon acılık ve kimyon oranını kendi damak tadına göre masada eklemek en doğrusu."
+      ],
+      "selectionScore": 71,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-sirdanci-bedo",
+      "categoryId": "sirdan-sokak",
+      "resolvedName": "Şırdancı Bedo (Kocavezir Merkez)",
+      "branchName": "Kocavezir, Karacaoğlan Cd. No:8, 01060 Seyhan/Adana",
+      "placeId": "ChIJ81fXf1-PKBURVVpIWWqetok",
+      "coordinates": {
+        "lat": 36.983713,
+        "lng": 35.3217627
+      },
+      "rating": 4.3,
+      "userRatingCount": 12739,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/sirdancibedo/?hl=tr",
+      "mapsUri": "https://maps.google.com/?cid=9923293008559102549",
+      "recommendedPrimary": [
+        "Klasik Şırdan",
+        "Mumbar & Kırkkat Karışık"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Adana Gece Ritüelinin Simgesi",
+          "note": "Gazipaşa veya diğer noktalara kıyasla asıl yoğunluğun ve kazan ritminin döndüğü ilk merkez nokta.",
+          "proof": "gurmex.com ve saglikfind.com.tr Adana sakatat dosyaları"
+        }
+      ],
+      "suitability": {
+        "seating": "Büyük açık cephe ve hızlı oturumlu sokak masaları",
+        "crowdAndNoise": "Akşamüstü ve gece geç saatlerde kentin en kalabalık noktalarından biri",
+        "disadvantage": "Aşırı popülerlik ve turistik talep nedeniyle fiyat/lezzet kıyaslamasında eleştiriler alabiliyor ve sıra beklenebiliyor.",
+        "transit": "Kocavezir Mahallesi Karacaoğlan Caddesi No:8 üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Gurmex Adana Sokak Lezzetleri",
+          "url": "https://gurmex.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Adana gece şırdan ritüelinin simge adresi ve Kocavezir kökeni"
+        },
+        {
+          "title": "SağlıkFind & Seyahat Dosyası",
+          "url": "https://saglikfind.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Adana yöresel sakatat geleneği incelemesi"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "12.700+ değerlendirmeyle şehrin en yüksek hacimli şırdancısı"
+        }
+      ],
+      "pros": [
+        "Şehir dışından gelen ziyaretçilerin şırdan kültürünü tanıyacağı ilk merkez nokta",
+        "Gece geç saatte bile açık ve canlı"
+      ],
+      "cons": [
+        "Yüksek turistik yoğunluk sebebiyle kalabalık saatlerde beklenti dalgalanması yaşanabiliyor"
+      ],
+      "uncertainties": [
+        "Sakin bir deneyim için akşam erken saatte uğramak kalabalığı azaltıyor."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-askin-bici-bici",
+      "categoryId": "tatli-bicibici",
+      "resolvedName": "Aşkın Bici Bici",
+      "branchName": "Meydan, 39035. Sk. No:6, 01070 Seyhan/Adana",
+      "placeId": "ChIJ4Ry6wwaGKBUR-gltGCwGF4k",
+      "coordinates": {
+        "lat": 36.9866874,
+        "lng": 35.2992413
+      },
+      "rating": 4.7,
+      "userRatingCount": 575,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9878371094118599162",
+      "recommendedPrimary": [
+        "Geleneksel Gül Sulu Bici Bici",
+        "Sıcak Adana Gözleme & Şalgam",
+        "Kışın Doğal Sahlep"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kışın Sahlep, Yazın Gül Sulu Bici Bici",
+          "note": "Yalnızca yaz tatlısıyla sınırlı kalmayıp serin havalarda odun veya kısık ateş kıvamlı sıcak sahlebi ve gözlemesiyle dört mevsim doluyor.",
+          "proof": "bujuyollarda.com ve Adana mahalle tatlı rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mahalle sokağı içinde açık ve üstü örtülü sade aile masaları",
+        "crowdAndNoise": "Sıcak yaz öğleden sonraları ile akşamlarında büyük mahalle hareketliliği",
+        "disadvantage": "Geleneksel mütevazı büfe/sokak düzeninde; modern pastane konforu arayanlara sade gelebilir.",
+        "transit": "Meydan Mahallesi 39035. Sokak No:6 (Havalimanı çevresi aksında), Seyhan."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Bu Ju Yollarda Adana Rehberi",
+          "url": "https://bujuyollarda.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Meydan Mahallesi en otantik bici bici noktası önerisi"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "575+ değerlendirmeyle yüksek tat memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Ağır yapay boya yerine ferah ve dengeli bici bici lezzeti",
+        "Gerçek Adana sokak kültürünü yaşatıyor"
+      ],
+      "cons": [
+        "Merkez yaya çarşısı dışında, araç veya taksiyle birkaç dakika sürüyor"
+      ],
+      "uncertainties": [
+        "Mevsime göre sahlep ve bici bici ağırlığı değişiklik gösterebiliyor."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-sekiz-pasta-cafe",
+      "categoryId": "tatli-bicibici",
+      "resolvedName": "Sekiz Pasta & Cafe",
+      "branchName": "Güzelyalı, 81012. Sk. No:2, 01170 Çukurova/Adana",
+      "placeId": "ChIJOyqSmsSOKBURb5FwQgwm5U8",
+      "coordinates": {
+        "lat": 37.0338636,
+        "lng": 35.3185457
+      },
+      "rating": 4.5,
+      "userRatingCount": 660,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://sekizpastacafe.com/",
+      "mapsUri": "https://maps.google.com/?cid=5757049532759183727",
+      "recommendedPrimary": [
+        "Çilekli / Fıstıklı Butik Pasta Dilimi",
+        "Taze Magnolya",
+        "Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Hafif Krema & Günlük Dilim Seçkisi",
+          "note": "Şerbetli ağır tatlılardan uzaklaşıp hafif meyveli pasta ve kafe oturumu arayanlar için Güzelyalı’da ferah seçenek.",
+          "proof": "sekizpastacafe.com ve restoranim.net Adana"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık pastane içi masalar ve bahçe/kaldırım köşesi",
+        "crowdAndNoise": "Öğleden sonra kahve-pasta buluşmaları ve genç ziyaretçilerle canlı",
+        "disadvantage": "Özel gün bütün pasta siparişleri yoğunlaştığında vitrindeki tekil dilim çeşitleri azalabiliyor.",
+        "transit": "Güzelyalı Mahallesi 81012. Sokak No:2, Çukurova."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Sekiz Pasta Resmi Sitesi",
+          "url": "http://sekizpastacafe.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Güzelyalı pastane ve kafe ürün yelpazesi"
+        },
+        {
+          "title": "Restoranım Çukurova Kaydı",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Pasta tazeliği ve sakin buluşma ortamı değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "660+ değerlendirmede yüksek tatlı puanı"
+        }
+      ],
+      "pros": [
+        "Şerbetli tatlıların dışında hafif ve taze pastane kalitesi",
+        "Güzelyalı’da ulaşımı kolay konum"
+      ],
+      "cons": [
+        "Hafta sonu ikindi saatlerinde vitrin önü hareketli olabiliyor"
+      ],
+      "uncertainties": [
+        "Sezonluk meyveli pasta çeşitleri mevsime göre değişiyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-tatlici-gonul-kardesler",
+      "categoryId": "tatli-bicibici",
+      "resolvedName": "Tatlıcı Gönül Kardeşler (Kuruköprü Merkez)",
+      "branchName": "Tepebağ, Kuruköprü Sk. No:25, 01010 Seyhan/Adana",
+      "placeId": "ChIJ3XKaWmePKBURFkUfJKbJ9Is",
+      "coordinates": {
+        "lat": 36.9879391,
+        "lng": 35.325290599999995
+      },
+      "rating": 4.3,
+      "userRatingCount": 2251,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10084907180997166358",
+      "recommendedPrimary": [
+        "Sıcak Halka Tatlısı",
+        "Cevizli Taş Kadayıf",
+        "Adana Karakuş Tatlısı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Kızartma & Eski Usul Şerbet Dengesi",
+          "note": "Kuruköprü merkezindeki tezgahta gün boyu taze kızarıp çıtırlığını kaybetmeden şerbetlenen tatlılar şehrin hafıza lezzetleri arasında.",
+          "proof": "kisikatesakademi.com.tr Adana tatlı mirası dosyası"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağırlıklı ayakta tezgâh önü ve al-götür paket düzeni (sınırlı tabure)",
+        "crowdAndNoise": "Sabah ve akşamüstü sıcak halka tatlı çıkan saatlerde tezgâh önünde sürekli sıra",
+        "disadvantage": "Tarihî kalabalık tezgahta oturma konforu ve uzun dinlenme alanı bulunmuyor; ayrıca şerbet yoğunluğu çok hafif tatlı sevenlere ağır gelebiliyor.",
+        "transit": "Tepebağ Mahallesi Kuruköprü Sokak No:25 üzerinde eski merkezde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Kısık Ateş Akademi Dosyası",
+          "url": "https://kisikatesakademi.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "50–60 yıllık Adana aile geleneği; taş kadayıf, halka tatlı ve karakuş"
+        },
+        {
+          "title": "Yandex Maps Tepebağ",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kuruköprü merkez şubede taze çıtır halka tatlı notları"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "2.250+ değerlendirmeyle Adana sokak tatlıcılığının köklü ismi"
+        }
+      ],
+      "pros": [
+        "Taş kadayıf ve sıcak halka tatlıyı yarım asırlık reçeteyle sunuyor",
+        "Sıcacık tepsi sirkülasyonu yüksek"
+      ],
+      "cons": [
+        "Ayakta veya paket tüketime uygun, uzun oturma alanı yok"
+      ],
+      "uncertainties": [
+        "Şerbeti sıcak dökülen halka tatlılar bekledikçe yumuşadığı için yerinde taze yenmeli."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-borekci-tuncay-usta",
+      "categoryId": "kahvalti",
+      "resolvedName": "Börekçi Tuncay Usta",
+      "branchName": "Yüzüncüyıl, Fazlı Meto Blv. 97/a, no=7 Çukurova/Adana",
+      "placeId": "ChIJaW4CzWCIKBUROiCgYjhvsqE",
+      "coordinates": {
+        "lat": 37.0343985,
+        "lng": 35.244455099999996
+      },
+      "rating": 4.8,
+      "userRatingCount": 270,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11651497473924407354",
+      "recommendedPrimary": [
+        "Özel Peynirli Adana Su Böreği",
+        "Kıymalı Tepsi Böreği",
+        "Pastırmalı Su Böreği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Eriyen Peynir & İnce Yufka Çıtırlığı",
+          "note": "Büyük franchise börekçilere kıyasla hamurun yağ dengesini ve peynirin tazeliğini tepsi başında yakından koruyor.",
+          "proof": "restoranim.net ve Yüzüncüyıl kahvaltı tavsiyeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mahalle fırını içi sabah masaları ve hızlı al-götür düzeni",
+        "crowdAndNoise": "Sabah kahvaltısı ve hafta sonu tepsi alımlarında yoğun talep",
+        "disadvantage": "Öğleden sonra sıcak börek tepsisi saatleri seyrekleşebiliyor.",
+        "transit": "Yüzüncüyıl Mahallesi Fazlı Meto Bulvarı No:97/A üzerinde, Çukurova."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım Çukurova Kaydı",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kıymalı, pastırmalı ve uzayan peynirli Adana böreği övgüleri"
+        },
+        {
+          "title": "Migros & Yemeksepeti Adana",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sabah kahvaltısında taze börek tepsileri yüksek puanlı"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "270+ değerlendirmede çok yüksek mahalle onayı"
+        }
+      ],
+      "pros": [
+        "Adana su böreği geleneğini zincirleşmeden yerel ustalıkla koruyor",
+        "Porsiyonlar sıcak ve bol malzemeli"
+      ],
+      "cons": [
+        "Şehir merkezinden Yüzüncüyıl tarafına araç gerektiriyor"
+      ],
+      "uncertainties": [
+        "Hafta sonları öğleye kalmadan sıcak tepsiler çabuk tükenebiliyor."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-borekci-sahin",
+      "categoryId": "kahvalti",
+      "resolvedName": "Börekçi Şahin",
+      "branchName": "Reşatbey, Cumhuriyet Cd. İğneciler Apt. D:19/A, 01120 Seyhan/Adana",
+      "placeId": "ChIJzb4A8GuPKBURqJtQ6Zd0lfA",
+      "coordinates": {
+        "lat": 36.9956543,
+        "lng": 35.329606
+      },
+      "rating": 4.5,
+      "userRatingCount": 67,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.firmasec.com/firma/ttfbdk-borekci-sahin/",
+      "mapsUri": "https://maps.google.com/?cid=17335890536435850152",
+      "recommendedPrimary": [
+        "Karışık Kıymalı-Peynirli Tepsi Böreği",
+        "Köpüklü Açık Ayran",
+        "Sıcak Poğaça"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Merkezde Hızlı Esnaf Sabah Durağı",
+          "note": "Seyhan Reşatbey’de yaya ulaşımıyla sabah taze çıkan tepsiden hızlı ve ekonomik Adana kahvaltısı imkânı veriyor.",
+          "proof": "firmarehberim.com ve bulurum.com Reşatbey kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sade dükkan içi birkaç masa ve hızlı tezgâh düzeni",
+        "crowdAndNoise": "Hafta içi sabah işe gidiş ve kahvaltı saatlerinde yüksek sirkülasyon",
+        "disadvantage": "Serpme kahvaltı yerine doğrudan sade tepsi böreği ve çay sunan esnaf dükkânı.",
+        "transit": "Reşatbey Mahallesi Cumhuriyet Caddesi İğneciler Apt. No:19/A, Seyhan."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Bulurum Reşatbey Kaydı",
+          "url": "https://www.bulurum.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Cumhuriyet Caddesi köklü börekçi ve sabah tepsi bilgisi"
+        },
+        {
+          "title": "Yandex Maps Reşatbey",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze kıymalı ve peynirli böreklerle açık ayran uyumu"
+        }
+      ],
+      "pros": [
+        "Şehir merkezinde yürüme mesafesinde eski usul börekçi",
+        "Börek hamuru kuru değil dengeli"
+      ],
+      "cons": [
+        "Oturma alanı kısıtlı, hızlı sabah kahvaltısı formatında"
+      ],
+      "uncertainties": [
+        "Öğleden sonra geç saatlere kıyasla sabah saatleri ürün çeşitliliği daha geniş."
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-eski-bahce-midik",
+      "categoryId": "kahvalti",
+      "resolvedName": "Eski Bahçe",
+      "branchName": "Mıdık mahallesi Manisalı ali bey caddesi, Mıdık, 11129. Sk., 01030 Seyhan/Adana",
+      "placeId": "ChIJoYAA2syFKBURxTanhY9WyzQ",
+      "coordinates": {
+        "lat": 36.9442847,
+        "lng": 35.322929699999996
+      },
+      "rating": 4.4,
+      "userRatingCount": 367,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3804229484667156165",
+      "recommendedPrimary": [
+        "Portakal Bahçesi Serpme Kahvaltı",
+        "Sacda Sıcak Sıkma & Gözleme",
+        "Ev Reçelleri & Kaymak"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Şehir İçi Narenciye Bahçesi Atmosferi",
+          "note": "Merkeze yakın mesafede betonlaşmadan uzak portakal ağaçları altında kahvaltı yapabilmek kentin sevilen ayrıcalıklarından.",
+          "proof": "restaurantguru.com ve Yandex Mıdık değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaç altı açık bahçe masaları ve yarı kapalı çardaklar",
+        "crowdAndNoise": "Hafta sonu sabahları ve bahar aylarında ailelerle tam dolu",
+        "disadvantage": "Bahçe ortamı yağışlı ve soğuk günlerde dış oturumu kısıtlayabiliyor; merkeze göre kısa sürüş istiyor.",
+        "transit": "Mıdık Mahallesi Manisalı Ali Bey Caddesi 11129. Sokak, Seyhan."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restaurant Guru Mıdık",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Portakal bahçeleri içinde kahvaltı ve sıkma atmosferi övgüleri"
+        },
+        {
+          "title": "Yandex Maps Mıdık",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Doğal köy kahvaltısı ve sakin aile ortamı değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "367+ değerlendirmede yüksek bahçe kahvaltısı onayı"
+        }
+      ],
+      "pros": [
+        "Adana’da portakal ağaçları altında gerçek serpme kahvaltı sunan nadir adres",
+        "Sıcak sıkma ve çay uyumu"
+      ],
+      "cons": [
+        "Aracı olmayan ziyaretçiler için Mıdık ulaşımı taksi veya otobüs istiyor"
+      ],
+      "uncertainties": [
+        "Narenciye çiçeklenmesi dönemlerinde bahar hafta sonları erken doluyor."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-park-menderes",
+      "categoryId": "kahvalti",
+      "resolvedName": "Park Menderes",
+      "branchName": "Güzelyalı Mahallesi, GÖKER APARTMANI, Güzelyalı, Süleyman Demirel Blv. ZEMİN KAT, 01170 Çukurova/Adana",
+      "placeId": "ChIJ_y2_x3WPKBURCg2SbcJS8oQ",
+      "coordinates": {
+        "lat": 37.052399099999995,
+        "lng": 35.2965988
+      },
+      "rating": 4.4,
+      "userRatingCount": 3538,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9579810352385887498",
+      "recommendedPrimary": [
+        "Göl Kenarı Serpme Kahvaltı",
+        "Sıcak Gözleme & Sahanda Yumurta",
+        "Semaver Çay"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Baraj Gölü Kıyısı Gün Boyu Buluşma",
+          "note": "Geniş oturma kapasitesi ve yeşil çevre düzeniyle hem sabah kahvaltısına hem gün içi çay-kahve molasına elverişli.",
+          "proof": "kahvaltidanevar.com ve dugun.com Çukurova kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Büyük açık hava bahçesi, teras ve kapalı salon masaları",
+        "crowdAndNoise": "Hafta sonu sabahları ve akşamüstü yürüyüşçüleriyle yoğun kalabalık",
+        "disadvantage": "Büyük ölçekli sosyal tesis temposu butik küçük mahalle kafelerine kıyasla daha hareketli olabiliyor.",
+        "transit": "Güzelyalı Mahallesi Süleyman Demirel Bulvarı Göker Apt. altı, Çukurova."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Kahvaltıda Ne Var Adana",
+          "url": "https://kahvaltidanevar.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Menderes kıyısı ferah kahvaltı noktası önerisi"
+        },
+        {
+          "title": "Yandex Maps Çukurova",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Baraj gölü esintisi ve zengin kahvaltı çeşitleri değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "3.500+ değerlendirmeyle yüksek kent popülaritesi"
+        }
+      ],
+      "pros": [
+        "Çukurova’da göl kenarı havasıyla ferah sabah kahvaltısı imkânı",
+        "Kolay toplu taşıma ve geniş alan"
+      ],
+      "cons": [
+        "Hafta sonu pik saatlerde kalabalık ve gürültü düzeyi artıyor"
+      ],
+      "uncertainties": [
+        "Akşamüstü kafe-bistro yoğunluğu kahvaltı temposundan farklılaşabiliyor."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-atelier-nisi",
+      "categoryId": "kahve",
+      "resolvedName": "Atelier Nisi",
+      "branchName": "Reşatbey, 01120 Seyhan/Adana",
+      "placeId": "ChIJT4Dx3iOPKBURlP4ZqzUPIvI",
+      "coordinates": {
+        "lat": 36.9987066,
+        "lng": 35.325542999999996
+      },
+      "rating": 4.8,
+      "userRatingCount": 186,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17447524629565013652",
+      "recommendedPrimary": [
+        "Flat White",
+        "V60 Filtre Kahve",
+        "Iced Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Yapımı Seramik Fincanlar & Atölye Kimliği",
+          "note": "Kahvelerin kendi ürettikleri özgün seramik fincanlarda sunulması ve workshop etkinlikleri mekanı standart kafelerden ayırıyor.",
+          "proof": "durmakesfet.com ve restaurantguru.com Reşatbey"
+        }
+      ],
+      "suitability": {
+        "seating": "Atölye içi zarif masalar ve huzurlu köşeler",
+        "crowdAndNoise": "Öğleden sonra tasarım ve kahve meraklılarıyla sakin canlılıkta",
+        "disadvantage": "Butik atölye ölçeği kalabalık gruplara uygun değil ve seramik etkinlik saatlerinde dolabiliyor.",
+        "transit": "Reşatbey Mahallesi Atatürk Parkı yakın çevresinde yürüme mesafesinde, Seyhan."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Durma Keşfet Adana Nitelikli Kahve",
+          "url": "https://durmakesfet.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kendi seramik üretimi ve nitelikli kahve barı konsepti"
+        },
+        {
+          "title": "Restaurant Guru Reşatbey",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sakin atmosfer ve özenli demleme değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "186+ değerlendirmeyle şehrin zirvedeki üçüncü nesil kahvecisi"
+        }
+      ],
+      "pros": [
+        "Gürültüden uzak estetik ve ilham verici kahve ortamı",
+        "Kahve reçeteleri ve sunum titiz"
+      ],
+      "cons": [
+        "Küçük oturma kapasitesi nedeniyle hafta sonu yer bulmak zorlaşabiliyor"
+      ],
+      "uncertainties": [
+        "Seramik workshop günlerinde atölye bölümünün düzeni değişebiliyor."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-noc-nature-of-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "NOC (Nature Of Coffee)",
+      "branchName": "Kanat Apt, Cemalpaşa, Toros Cd. No:7, 01136 Seyhan/Adana",
+      "placeId": "ChIJBSN-eMiPKBURpgCQ_Vnzhjg",
+      "coordinates": {
+        "lat": 37.0020368,
+        "lng": 35.3306049
+      },
+      "rating": 4.7,
+      "userRatingCount": 81,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4073210480834904230",
+      "recommendedPrimary": [
+        "Cortado / Flat White",
+        "Iced Americano",
+        "Cold Brew"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Toros Caddesi Üzerinde Hızlı & Kaliteli Bar",
+          "note": "Ziyapaşa-Cemalpaşa hattında zincirlere uğramadan nitelikli çekirdek içimi arayanların düzenli adresi.",
+          "proof": "restoranim.net ve Yandex Cemalpaşa kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Modern iç bar ve cadde önü küçük oturma alanı",
+        "crowdAndNoise": "Öğle sonrası genç çalışanlar ve öğrencilerle hareketli",
+        "disadvantage": "İşlek Toros Caddesi kenarında açık alanda trafik sesi hissedilebiliyor.",
+        "transit": "Cemalpaşa Mahallesi Toros Caddesi Kanat Apt. No:7 üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım Cemalpaşa Kaydı",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahve çeşitliliği ve Cemalpaşa buluşma noktası değerlendirmeleri"
+        },
+        {
+          "title": "Yandex Maps Toros Cd.",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Nitelikli kahve tadı ve modern atmosfer notları"
+        }
+      ],
+      "pros": [
+        "Zincir olmayan temiz üçüncü nesil espresso kalitesi",
+        "Cemalpaşa yürüyüş aksında merkezi"
+      ],
+      "cons": [
+        "Yoğun akşamüstü saatlerinde masa aramak gerekebiliyor"
+      ],
+      "uncertainties": [
+        "Mevsimlik soğuk kahve spesiyalleri dönemsel değişiyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-vi-coffee-co",
+      "categoryId": "kahve",
+      "resolvedName": "Vi Coffee Co.",
+      "branchName": "Kurtuluş, Şinasi Efendi Cd. ikizler Apt no 13/a, 01010 Seyhan/Adana",
+      "placeId": "ChIJU0jtOa6PKBURANtG-Auc3V4",
+      "coordinates": {
+        "lat": 36.9998979,
+        "lng": 35.3211558
+      },
+      "rating": 4.6,
+      "userRatingCount": 127,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6835791384642247424",
+      "recommendedPrimary": [
+        "Badem / Yulaf Sütlü Flat White",
+        "Iced Filter Coffee",
+        "Şekersiz Tatlı Alternatifi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sağlıklı Atıştırmalık & Bitkisel Süt Çeşitliliği",
+          "note": "Adana’daki çoğu kafede bulunması zor glutensiz veya vegan tatlı eşlikçilerini düzenli çıkarmasıyla ayrışıyor.",
+          "proof": "venuesreyon.com ve Yandex Kurtuluş kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık iç salon ve ağaçlıklı cadde önü masaları",
+        "crowdAndNoise": "Gündüz bilgisayar başı çalışanlar ve akşamüstü sohbetleriyle sakin canlılıkta",
+        "disadvantage": "Büyük gruplar için masa birleştirme imkânı dar; butik kafe boyutunda.",
+        "transit": "Kurtuluş Mahallesi Şinasi Efendi Caddesi İkizler Apt. No:13/A, Seyhan."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Venues Reyon Adana Rehberi",
+          "url": "https://venuesreyon.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sağlıklı yaşam odaklı tatlılar ve nitelikli kahve barı vurgusu"
+        },
+        {
+          "title": "Yandex Maps Şinasi Efendi",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sakin ortam ve espresso tutarlılığı değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "127+ misafirden yüksek Kurtuluş kafe puanı"
+        }
+      ],
+      "pros": [
+        "Şinasi Efendi sokak dokusunda ferah kahve molası",
+        "Alternatif süt ve temiz içerikli tatlı seçenekleri"
+      ],
+      "cons": [
+        "Çalışma saatleri sırasında prizli masa sayısı çabuk dolabiliyor"
+      ],
+      "uncertainties": [
+        "Hafta sonu Ziyapaşa yoğunluğu arka sokak parkını zorlaştırabiliyor."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-daily-dose",
+      "categoryId": "kahve",
+      "resolvedName": "Daily Dose Bakery & Coffee",
+      "branchName": "Kurtuluş, 64019. Sk Evren Apt No 26 D, 01130 Seyhan/Adana",
+      "placeId": "ChIJF3wRcdyPKBURSRLJs1euoEw",
+      "coordinates": {
+        "lat": 37.0011268,
+        "lng": 35.3218993
+      },
+      "rating": 4.5,
+      "userRatingCount": 111,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5521604834857914953",
+      "recommendedPrimary": [
+        "Double Shot Latte",
+        "Fırından Sıcak Cookie",
+        "Iced Americano"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kahve & Sıcak Fırın Eşleşmesi",
+          "note": "Şinasi Efendi ve Ziyapaşa kesişiminde zincir kalabalığına girmeden kahve-tatlı eşleşmesi sunuyor.",
+          "proof": "restoranim.net ve Yandex Kurtuluş kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt iç bar ve sokak üstü samimi oturma köşesi",
+        "crowdAndNoise": "Özellikle öğleden sonra Ziyapaşa yürüyüşü yapan genç kitleyle hareketli",
+        "disadvantage": "Metrekare olarak küçük dükkân yapısına sahip olduğundan kalabalıkta al-götür daha pratik olabiliyor.",
+        "transit": "Kurtuluş Mahallesi 64019. Sokak Evren Apt. No:26/D üzerinde, Seyhan."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım Kurtuluş Kaydı",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahve kalitesi ve taze fırın tatlıları övgüleri"
+        },
+        {
+          "title": "Yandex Maps Kurtuluş",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Konsept ve sıcak cookie çeşitliliği değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Zincirlerin hakim olduğu Ziyapaşa bölgesinde bağımsız karakter",
+        "Taze pişmiş tatlı eşlikçileri"
+      ],
+      "cons": [
+        "Sınırlı iç oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Günün sonuna doğru taze bakery ürünleri tükenebiliyor."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-kebapci-mesut-1921",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kebapçı Mesut (1921)",
+      "branchName": "Kocavezır mahallesi karacaoğlan caddesi, Kocavezir, 32023. Sk. No:41, 01120 Seyhan/Adana",
+      "placeId": "ChIJb9zfnl-PKBURH7wUGdhDh1Q",
+      "coordinates": {
+        "lat": 36.9845751,
+        "lng": 35.3222628
+      },
+      "rating": 4.3,
+      "userRatingCount": 3144,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6090911616454671391",
+      "recommendedPrimary": [
+        "Tarihî Usul Zırh Adana Kebap",
+        "Kuzu Şiş & Soğan Salatası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yüzyılı Aşan Çıraklıktan Ustalığa Miras",
+          "note": "Adana kebap geleneğinin pek çok ustasını yetiştiren ekolü tarihsel bellek açısından kent mutfağının başlangıç noktalarından.",
+          "proof": "oggusto.com Adana kebap rehberi ve Yandex Kocavezir kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî sade salon ve eski usul kebap masaları",
+        "crowdAndNoise": "Öğle esnafı ve gurme ziyaretçilerle düzenli yoğunluk",
+        "disadvantage": "Çok eski işletme ölçeğinde günden güne servis temposu ve yağ/tuz oranı tartışmaları yaşanabiliyor.",
+        "transit": "Kocavezir Mahallesi Karacaoğlan Caddesi 32023. Sokak No:41, Seyhan."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Oggusto Adana Kebap Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1921’den bugüne Adana kebap duayeni olarak tarihsel konumlandırma"
+        },
+        {
+          "title": "Yandex Maps Kocavezir",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kocavezir tarihî ocak atmosferi ve kebap notları"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "3.140+ değerlendirmeyle şehrin köklü hafıza kebapçısı"
+        }
+      ],
+      "pros": [
+        "Adana’da 1921 tarihli yaşayan en köklü kebap kurumu",
+        "Tarihî çarşı bölgesinde özgün ortam"
+      ],
+      "cons": [
+        "Güncel mekan konforu ve servis hızı modern şubelere göre daha dalgalı olabiliyor"
+      ],
+      "uncertainties": [
+        "Farklı noktalardaki şube/tarihî merkez ayrımları için Kocavezir adresi temel alınmalı."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-birbicer-kebap",
+      "categoryId": "denemelisin",
+      "resolvedName": "Birbiçer Kebap (Bakımyurdu Merkez)",
+      "branchName": "Hanedan, Bakımyurdu Cd. 43 /A, 01060 Seyhan/Adana",
+      "placeId": "ChIJ2Z2RzyaPKBURJefVOn_D6e4",
+      "coordinates": {
+        "lat": 36.9877129,
+        "lng": 35.3200041
+      },
+      "rating": 4.1,
+      "userRatingCount": 12139,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://birbicer.com/",
+      "mapsUri": "https://maps.google.com/?cid=17215506001815791397",
+      "recommendedPrimary": [
+        "Sabah Kuzu Ciğer Şiş",
+        "Adana Kıyma & Pişmiş Soğan"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sabah Ritüeli & Merkez Dükkân Farkı",
+          "note": "Sonradan açılan dış şubelere kıyasla Bakımyurdu Caddesi’ndeki asıl merkez ocağı yüksek devirli klasik atmosferini koruyor.",
+          "proof": "durmakesfet.com ve gezinomi.com Adana rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Büyük yüksek devirli ocakbaşı salonu ve sokak masaları",
+        "crowdAndNoise": "Sabahın erken saatlerinden öğleye dek sürekli dolu ve hareketli",
+        "disadvantage": "Çok yüksek ziyaretçi kalabalığı ve turist akını nedeniyle zaman zaman porsiyon tutarlılığı ve servis hızı eleştirisi alabiliyor.",
+        "transit": "Hanedan Mahallesi Bakımyurdu Caddesi No:43/A üzerinde, Seyhan."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Durma Keşfet Adana",
+          "url": "https://durmakesfet.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Adana sabah ciğeri kültürünün simge ismi ve Bakımyurdu merkez vurgusu"
+        },
+        {
+          "title": "Gezinomi Adana Lezzetleri",
+          "url": "https://www.gezinomi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Şehir dışı ziyaretçilerin ilk duraklarından biri olarak gösteriliyor"
+        },
+        {
+          "title": "Birbiçer Resmi Sitesi",
+          "url": "http://birbicer.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Hanedan Bakımyurdu ana şube adresi ve kurumsal tarihçe"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "12.100+ değerlendirmeyle şehrin en bilinen ciğer markası"
+        }
+      ],
+      "pros": [
+        "Adana sabah ciğeri geleneğini tanımak için simge merkez adres",
+        "Küp küp doğranan yumuşak ciğer şiş"
+      ],
+      "cons": [
+        "Yoğun turistik talep nedeniyle yüksek devirli kalabalık ve fiyat algısı eleştirileri"
+      ],
+      "uncertainties": [
+        "Hafta sonları özellikle sabah saatlerinde masa bulmak için sıra olabiliyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-ceyhan-kebap-salonu",
+      "categoryId": "denemelisin",
+      "resolvedName": "Ceyhan Kebap Salonu (Seyhan)",
+      "branchName": "Namık Kemal, Mücahitler Cd. 102/A, 01140 Seyhan/Adana",
+      "placeId": "ChIJf5zPRjSPKBUR7jq4gkzirEs",
+      "coordinates": {
+        "lat": 37.0109199,
+        "lng": 35.3066447
+      },
+      "rating": 4.6,
+      "userRatingCount": 1019,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/ceyhanocakbasi?igsh=MzU2OHQweWl4OGw0",
+      "mapsUri": "https://maps.google.com/?cid=5452982067077331694",
+      "recommendedPrimary": [
+        "Zırh Kıyma Adana Kebap",
+        "Kuzu Çöp Şiş",
+        "Sıcak Meze & Tablacı Salatası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mahalle İçi Yüksek Memnuniyetli Ocakbaşı",
+          "note": "Turistik merkezlerin karmaşasından uzakta Mücahitler Caddesi’nde ailelerin akşam yemeği için tercih ettiği istikrarlı mutfak.",
+          "proof": "ceyhankebapevi.com ve restoranim.net Adana"
+        }
+      ],
+      "suitability": {
+        "seating": "Düzenli, temiz aile salonu masaları",
+        "crowdAndNoise": "Akşam yemeklerinde mahalle sakinleri ve düzenli müdavimlerle dolu",
+        "disadvantage": "Geleneksel Büyüksaat çevresinden batı yönünde araç ulaşımı gerektiriyor.",
+        "transit": "Namık Kemal Mahallesi Mücahitler Caddesi No:102/A, Seyhan."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Ceyhan Kebap Evi Resmi Sitesi",
+          "url": "https://ceyhankebapevi.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Mücahitler Cd. zırh kebap ve meze menüsü"
+        },
+        {
+          "title": "Restoranım Seyhan Kaydı",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Temiz salon düzeni ve yüksek kebap lezzeti notları"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "1.019+ değerlendirmeyle istikrarlı puan profili"
+        }
+      ],
+      "pros": [
+        "Aşırı kalabalık turist hacmine girmeden yüksek kalite tutturmuş mahalle kebapçısı",
+        "Zengin ve taze meze eşlikçileri"
+      ],
+      "cons": [
+        "Tarihî yürüyüş rotası dışında yer alıyor"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşam yemeği için önceden yer ayırtmak faydalı."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-lakerda-balik",
+      "categoryId": "denemelisin",
+      "resolvedName": "Lakerda Balık Restoran",
+      "branchName": "Güzelyalı Mahallesi Adnan Menderes Bulvarı No:59/A Çukurova, Güzelyalı, 01170 Seyhan/Adana",
+      "placeId": "ChIJT91RewCPKBURfU2LiyWqwdw",
+      "coordinates": {
+        "lat": 37.0482985,
+        "lng": 35.311614399999996
+      },
+      "rating": 4.6,
+      "userRatingCount": 317,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://lakerdabalikrestoran.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=15907182437080976765",
+      "recommendedPrimary": [
+        "Mevsim Deniz Levreği / Lagos",
+        "Kendi Yapımı Lakerda & Deniz Börülcesi",
+        "Kalamar Tava"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kebap Molası Verenler İçin Göl Bulvarı Balıkçısı",
+          "note": "Adana seyahatinde bir akşamı et yerine taze balık ve mezeyle geçirmek isteyen gruplar için özenli ve düzenli servis sağlıyor.",
+          "proof": "lakerdabalikrestoran.com.tr ve Yandex Çukurova kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ailelere uygun şık kapalı salon ve ferah masa düzeni",
+        "crowdAndNoise": "Özellikle cuma-cumartesi akşam yemeklerinde doluluk yüksek",
+        "disadvantage": "Göl kıyısı diğer işletmeleri gibi üst fiyat segmentinde konumlanıyor.",
+        "transit": "Güzelyalı Mahallesi Adnan Menderes Bulvarı No:59/A üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Lakerda Balık Resmi Sitesi",
+          "url": "https://lakerdabalikrestoran.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Adnan Menderes Blv. konumu ve meze-balık menü yapısı"
+        },
+        {
+          "title": "Yandex Maps Güzelyalı",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze balık ve aile dostu hizmet değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "317+ değerlendirmede yüksek deniz ürünleri memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Kebap ağırlıklı şehirde yüksek puanlı balık-meze alternatifi",
+        "Adnan Menderes Blv. kolay ulaşımı"
+      ],
+      "cons": [
+        "Tam su sıfırı yerine bulvar cephesinde yer alıyor"
+      ],
+      "uncertainties": [
+        "Mevsim balık çeşitleri günlük Karataş ve Akdeniz tedarikine göre değişiyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-lagos-balik",
+      "categoryId": "denemelisin",
+      "resolvedName": "Lagos Balık Restaurant (2001)",
+      "branchName": "Karslılar, Süleyman Demirel Blv. No:4/A, 01170 Çukurova/Adana",
+      "placeId": "ChIJWSO0RRaJKBURtAsHBKCOR_A",
+      "coordinates": {
+        "lat": 37.0528487,
+        "lng": 35.296076899999996
+      },
+      "rating": 4.4,
+      "userRatingCount": 697,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.lagosbalik.com/",
+      "mapsUri": "https://maps.google.com/?cid=17313964110362643380",
+      "recommendedPrimary": [
+        "Ahtapotlu Levrek Sarma",
+        "Izgara Akdeniz Lagos Şiş",
+        "Jumbo Karides Güveç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İki On Yılı Aşan Ara Sıcak İmza Tabakları",
+          "note": "Standart ızgara balık sunumunun ötesinde sıcak deniz mahsulü reçeteleriyle uzun yıllardır şehirde bilinen adreslerden.",
+          "proof": "lagosbalik.com ve dugunbuketi.com Adana kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Göl yakını geniş salon ve özel davetlere de elverişli masalar",
+        "crowdAndNoise": "Akşam yemekleri ve özel gün buluşmalarında düzenli yoğunluk",
+        "disadvantage": "Büyük akşam grupları nedeniyle hafta sonları rezervasyon olmadan yer bulmak zorlaşabiliyor.",
+        "transit": "Karslılar Mahallesi Süleyman Demirel Bulvarı No:4/A üzerinde, Çukurova."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Lagos Balık Resmi Sitesi",
+          "url": "http://www.lagosbalik.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "2001 kuruluş tarihçesi ve ahtapotlu levrek sarma spesiyalleri"
+        },
+        {
+          "title": "Düğün Buketi & Yerel Rehber",
+          "url": "https://dugunbuketi.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Karslılar Süleyman Demirel aksında köklü balık restoranı referansı"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "697+ değerlendirmeyle Çukurova’nın oturmuş deniz ürünü noktası"
+        }
+      ],
+      "pros": [
+        "2001’den bu yana istikrarlı balık mutfağı ve imza ara sıcakları",
+        "Şık akşam yemeği düzeni"
+      ],
+      "cons": [
+        "Merkez Seyhan’dan Çukurova göl yakasına araç gerektiriyor"
+      ],
+      "uncertainties": [
+        "Kalabalık grupların olduğu akşamlar salon sesi yükselebiliyor."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "adana-dalyan-balik",
+      "categoryId": "denemelisin",
+      "resolvedName": "Dalyan Balık Restaurant",
+      "branchName": "Karslılar Mah. Adnan Menderes Blv, Karslılar, 82002. Sk. no: 103/A, 01170 Çukurova/Adana",
+      "placeId": "ChIJ4cw0dFqJKBURsnmvPxp8S-A",
+      "coordinates": {
+        "lat": 37.063013,
+        "lng": 35.2912438
+      },
+      "rating": 4.5,
+      "userRatingCount": 454,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16162148139928615346",
+      "recommendedPrimary": [
+        "Günlük Izgara Çupra / Levrek",
+        "Köz Patlıcan & Deniz Mezeleri",
+        "Tereyağlı Karides"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Baraj Gölü Üstü Açık Hava Akşamları",
+          "note": "Adana’nın ılıman akşamlarında suya yakın manzara eşliğinde balık-meze sofrası kurmak için elverişli konumda.",
+          "proof": "Yandex Karslılar göl kenarı değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Göl manzaralı teras masaları ve kapalı restoran bölümü",
+        "crowdAndNoise": "Gün batımından akşam geç saatlere dek aile ve arkadaş grupları",
+        "disadvantage": "Göl kenarı bulvarı üzerindeki diğer yüksek fiyatlı restoranlar sınıfında.",
+        "transit": "Karslılar Mahallesi Adnan Menderes Bulvarı 82002. Sokak No:103/A, Çukurova."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yandex Maps Karslılar",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Seyhan Baraj Gölü manzarası ve Akdeniz mezeleri değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "454+ değerlendirmeyle manzaralı balıkçılar arasında yüksek puan"
+        }
+      ],
+      "pros": [
+        "Göl manzaralı masa yerleşimi",
+        "Kebap dışı akşam alternatifi olarak kaliteli meze-balık dengesi"
+      ],
+      "cons": [
+        "Hafta sonu Adnan Menderes Blv. park yoğunluğu yaşanabiliyor"
+      ],
+      "uncertainties": [
+        "Rüzgarlı kış günlerinde teras yerine iç salon tercih edilmeli."
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    }
+  ]
+}

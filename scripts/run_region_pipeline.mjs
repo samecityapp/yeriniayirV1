@@ -79,6 +79,8 @@ const PUBLISHED_REGION_KEYS = [
   'diyarbakir-merkez',
   'hatay-merkez',
   'iskenderun-merkez',
+  'adana-merkez',
+  'mersin-merkez',
 ];
 const NEARBY_POOL_KEY = 'istanbul-kadikoy-nearby-pool';
 const DEFAULT_REGION_ORDER = [...PUBLISHED_REGION_KEYS, NEARBY_POOL_KEY];

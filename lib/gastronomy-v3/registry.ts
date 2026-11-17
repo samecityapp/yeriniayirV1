@@ -69,6 +69,8 @@ import mardinMerkezSnapshotJson from './regions/mardin-merkez.json';
 import diyarbakirMerkezSnapshotJson from './regions/diyarbakir-merkez.json';
 import hatayMerkezSnapshotJson from './regions/hatay-merkez.json';
 import iskenderunMerkezSnapshotJson from './regions/iskenderun-merkez.json';
+import adanaMerkezSnapshotJson from './regions/adana-merkez.json';
+import mersinMerkezSnapshotJson from './regions/mersin-merkez.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -143,6 +145,8 @@ const MARDIN_MERKEZ_SNAPSHOT = mardinMerkezSnapshotJson as unknown as V3Verified
 const DIYARBAKIR_MERKEZ_SNAPSHOT = diyarbakirMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 const HATAY_MERKEZ_SNAPSHOT = hatayMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 const ISKENDERUN_MERKEZ_SNAPSHOT = iskenderunMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
+const ADANA_MERKEZ_SNAPSHOT = adanaMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
+const MERSIN_MERKEZ_SNAPSHOT = mersinMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -216,6 +220,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   DIYARBAKIR_MERKEZ_SNAPSHOT,
   HATAY_MERKEZ_SNAPSHOT,
   ISKENDERUN_MERKEZ_SNAPSHOT,
+  ADANA_MERKEZ_SNAPSHOT,
+  MERSIN_MERKEZ_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -810,6 +816,29 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'savas-iskenderun': ISKENDERUN_MERKEZ_SNAPSHOT,
   'yenisehir-iskenderun': ISKENDERUN_MERKEZ_SNAPSHOT,
   'pac-meydani': ISKENDERUN_MERKEZ_SNAPSHOT,
+  adana: ADANA_MERKEZ_SNAPSHOT,
+  'adana-merkez': ADANA_MERKEZ_SNAPSHOT,
+  seyhan: ADANA_MERKEZ_SNAPSHOT,
+  cukurova: ADANA_MERKEZ_SNAPSHOT,
+  yuregir: ADANA_MERKEZ_SNAPSHOT,
+  ziyapasa: ADANA_MERKEZ_SNAPSHOT,
+  'ziyapasa-bulvari': ADANA_MERKEZ_SNAPSHOT,
+  'gazipasa-adana': ADANA_MERKEZ_SNAPSHOT,
+  'turgut-ozal-adana': ADANA_MERKEZ_SNAPSHOT,
+  'kazancilar-carsisi': ADANA_MERKEZ_SNAPSHOT,
+  buyuksaat: ADANA_MERKEZ_SNAPSHOT,
+  resatbey: ADANA_MERKEZ_SNAPSHOT,
+  mersin: MERSIN_MERKEZ_SNAPSHOT,
+  'mersin-merkez': MERSIN_MERKEZ_SNAPSHOT,
+  'yenisehir-mersin': MERSIN_MERKEZ_SNAPSHOT,
+  mezitli: MERSIN_MERKEZ_SNAPSHOT,
+  'akdeniz-mersin': MERSIN_MERKEZ_SNAPSHOT,
+  toroslar: MERSIN_MERKEZ_SNAPSHOT,
+  'mersin-marina': MERSIN_MERKEZ_SNAPSHOT,
+  pozcu: MERSIN_MERKEZ_SNAPSHOT,
+  kushimoto: MERSIN_MERKEZ_SNAPSHOT,
+  'viransehir-mersin': MERSIN_MERKEZ_SNAPSHOT,
+  camiserif: MERSIN_MERKEZ_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {
