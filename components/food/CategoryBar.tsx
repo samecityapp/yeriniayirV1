@@ -36,6 +36,12 @@ const CATEGORY_FALLBACK_EMOJIS: Record<string, string> = {
   'balik-deniz-urunleri': '🐟',
   'kofte-piyaz': '🧆',
   'kebap-pide-doner': '🥙',
+  'hatay-mutfagi': '🏛️',
+  'tepsi-kebabi': '🥩',
+  'humus-meze': '🥣',
+  'kunefe-tatli': '🥮',
+  'iskenderun-doner': '🌯',
+  'kebap-ocakbasi': '🥩',
 };
 
 interface CategoryBarProps {

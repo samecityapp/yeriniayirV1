@@ -40,6 +40,12 @@ const CATEGORY_SLUG_MAP: Record<string, string> = {
  'diyarbakir-mutfagi': 'diyarbakir-mutfagi',
  'paca-corba': 'paca-corba',
  'burma-kadayif': 'burma-kadayif',
+ 'hatay-mutfagi': 'hatay-mutfagi',
+ 'tepsi-kebabi': 'tepsi-kebabi',
+ 'humus-meze': 'humus-meze',
+ 'kunefe-tatli': 'kunefe-tatli',
+ 'iskenderun-doner': 'iskenderun-doner',
+ 'kebap-ocakbasi': 'kebap-ocakbasi',
 };
 
 const CATEGORY_NAME_MAP: Record<string, string> = {
@@ -76,6 +82,12 @@ const CATEGORY_NAME_MAP: Record<string, string> = {
  'diyarbakir-mutfagi': 'Kaburga & Yöresel',
  'paca-corba': 'Paça & Çorba',
  'burma-kadayif': 'Burma Kadayıf',
+ 'hatay-mutfagi': 'Hatay Mutfağı',
+ 'tepsi-kebabi': 'Tepsi & Kağıt Kebabı',
+ 'humus-meze': 'Humus & Meze',
+ 'kunefe-tatli': 'Künefe & Baklava',
+ 'iskenderun-doner': 'İskenderun Döneri',
+ 'kebap-ocakbasi': 'Kebap & Ocakbaşı',
 };
 
 /** Never accepts the admin card or uses the Antigravity prototype provider. */

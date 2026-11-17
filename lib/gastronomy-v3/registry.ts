@@ -67,6 +67,8 @@ import izmirFocaSnapshotJson from './regions/izmir-foca.json';
 import sanliurfaMerkezSnapshotJson from './regions/sanliurfa-merkez.json';
 import mardinMerkezSnapshotJson from './regions/mardin-merkez.json';
 import diyarbakirMerkezSnapshotJson from './regions/diyarbakir-merkez.json';
+import hatayMerkezSnapshotJson from './regions/hatay-merkez.json';
+import iskenderunMerkezSnapshotJson from './regions/iskenderun-merkez.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -139,6 +141,8 @@ const IZMIR_FOCA_SNAPSHOT = izmirFocaSnapshotJson as V3VerifiedRegionSnapshot;
 const SANLIURFA_MERKEZ_SNAPSHOT = sanliurfaMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 const MARDIN_MERKEZ_SNAPSHOT = mardinMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 const DIYARBAKIR_MERKEZ_SNAPSHOT = diyarbakirMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
+const HATAY_MERKEZ_SNAPSHOT = hatayMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
+const ISKENDERUN_MERKEZ_SNAPSHOT = iskenderunMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -210,6 +214,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   SANLIURFA_MERKEZ_SNAPSHOT,
   MARDIN_MERKEZ_SNAPSHOT,
   DIYARBAKIR_MERKEZ_SNAPSHOT,
+  HATAY_MERKEZ_SNAPSHOT,
+  ISKENDERUN_MERKEZ_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -785,6 +791,25 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'cadde-75': DIYARBAKIR_MERKEZ_SNAPSHOT,
   'baglar-diyarbakir': DIYARBAKIR_MERKEZ_SNAPSHOT,
   'hasan-pasa-hani': DIYARBAKIR_MERKEZ_SNAPSHOT,
+  hatay: HATAY_MERKEZ_SNAPSHOT,
+  'hatay-merkez': HATAY_MERKEZ_SNAPSHOT,
+  antakya: HATAY_MERKEZ_SNAPSHOT,
+  'antakya-merkez': HATAY_MERKEZ_SNAPSHOT,
+  defne: HATAY_MERKEZ_SNAPSHOT,
+  harbiye: HATAY_MERKEZ_SNAPSHOT,
+  'antakya-uzun-carsi': HATAY_MERKEZ_SNAPSHOT,
+  odabasi: HATAY_MERKEZ_SNAPSHOT,
+  'cekmece-defne': HATAY_MERKEZ_SNAPSHOT,
+  sumerler: HATAY_MERKEZ_SNAPSHOT,
+  dover: HATAY_MERKEZ_SNAPSHOT,
+  guzelburc: HATAY_MERKEZ_SNAPSHOT,
+  iskenderun: ISKENDERUN_MERKEZ_SNAPSHOT,
+  'iskenderun-merkez': ISKENDERUN_MERKEZ_SNAPSHOT,
+  'iskenderun-sahil': ISKENDERUN_MERKEZ_SNAPSHOT,
+  'iskenderun-carsi': ISKENDERUN_MERKEZ_SNAPSHOT,
+  'savas-iskenderun': ISKENDERUN_MERKEZ_SNAPSHOT,
+  'yenisehir-iskenderun': ISKENDERUN_MERKEZ_SNAPSHOT,
+  'pac-meydani': ISKENDERUN_MERKEZ_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {
