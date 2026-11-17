@@ -71,6 +71,8 @@ import hatayMerkezSnapshotJson from './regions/hatay-merkez.json';
 import iskenderunMerkezSnapshotJson from './regions/iskenderun-merkez.json';
 import adanaMerkezSnapshotJson from './regions/adana-merkez.json';
 import mersinMerkezSnapshotJson from './regions/mersin-merkez.json';
+import ankaraCankayaKizilaySnapshotJson from './regions/ankara-cankaya-kizilay.json';
+import ankaraCankayaTunaliSnapshotJson from './regions/ankara-cankaya-tunali.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -147,6 +149,10 @@ const HATAY_MERKEZ_SNAPSHOT = hatayMerkezSnapshotJson as unknown as V3VerifiedRe
 const ISKENDERUN_MERKEZ_SNAPSHOT = iskenderunMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 const ADANA_MERKEZ_SNAPSHOT = adanaMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 const MERSIN_MERKEZ_SNAPSHOT = mersinMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
+const ANKARA_CANKAYA_KIZILAY_SNAPSHOT =
+  ankaraCankayaKizilaySnapshotJson as unknown as V3VerifiedRegionSnapshot;
+const ANKARA_CANKAYA_TUNALI_SNAPSHOT =
+  ankaraCankayaTunaliSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -222,6 +228,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   ISKENDERUN_MERKEZ_SNAPSHOT,
   ADANA_MERKEZ_SNAPSHOT,
   MERSIN_MERKEZ_SNAPSHOT,
+  ANKARA_CANKAYA_KIZILAY_SNAPSHOT,
+  ANKARA_CANKAYA_TUNALI_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -839,6 +847,35 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   kushimoto: MERSIN_MERKEZ_SNAPSHOT,
   'viransehir-mersin': MERSIN_MERKEZ_SNAPSHOT,
   camiserif: MERSIN_MERKEZ_SNAPSHOT,
+  'ankara-cankaya-kizilay': ANKARA_CANKAYA_KIZILAY_SNAPSHOT,
+  'kizilay-cankaya-ankara': ANKARA_CANKAYA_KIZILAY_SNAPSHOT,
+  kizilay: ANKARA_CANKAYA_KIZILAY_SNAPSHOT,
+  'kizilay-ankara': ANKARA_CANKAYA_KIZILAY_SNAPSHOT,
+  'kizilay-merkez': ANKARA_CANKAYA_KIZILAY_SNAPSHOT,
+  'kocatepe-ankara': ANKARA_CANKAYA_KIZILAY_SNAPSHOT,
+  'karanfil-sokak': ANKARA_CANKAYA_KIZILAY_SNAPSHOT,
+  'konur-sokak': ANKARA_CANKAYA_KIZILAY_SNAPSHOT,
+  'selanik-caddesi': ANKARA_CANKAYA_KIZILAY_SNAPSHOT,
+  'sakarya-caddesi-kizilay': ANKARA_CANKAYA_KIZILAY_SNAPSHOT,
+  'yuksel-caddesi': ANKARA_CANKAYA_KIZILAY_SNAPSHOT,
+  kumrular: ANKARA_CANKAYA_KIZILAY_SNAPSHOT,
+  necatibey: ANKARA_CANKAYA_KIZILAY_SNAPSHOT,
+  'mesrutiyet-kizilay': ANKARA_CANKAYA_KIZILAY_SNAPSHOT,
+  'ankara-cankaya-tunali': ANKARA_CANKAYA_TUNALI_SNAPSHOT,
+  'tunali-cankaya-ankara': ANKARA_CANKAYA_TUNALI_SNAPSHOT,
+  'tunali-hilmi': ANKARA_CANKAYA_TUNALI_SNAPSHOT,
+  tunali: ANKARA_CANKAYA_TUNALI_SNAPSHOT,
+  'tunali-ankara': ANKARA_CANKAYA_TUNALI_SNAPSHOT,
+  'tunali-hilmi-ankara': ANKARA_CANKAYA_TUNALI_SNAPSHOT,
+  kavaklidere: ANKARA_CANKAYA_TUNALI_SNAPSHOT,
+  'kavaklidere-ankara': ANKARA_CANKAYA_TUNALI_SNAPSHOT,
+  kugulu: ANKARA_CANKAYA_TUNALI_SNAPSHOT,
+  'kugulu-park': ANKARA_CANKAYA_TUNALI_SNAPSHOT,
+  bestekar: ANKARA_CANKAYA_TUNALI_SNAPSHOT,
+  'bestekar-sokak': ANKARA_CANKAYA_TUNALI_SNAPSHOT,
+  'bulten-sokak': ANKARA_CANKAYA_TUNALI_SNAPSHOT,
+  'tunus-caddesi': ANKARA_CANKAYA_TUNALI_SNAPSHOT,
+  'buklum-caddesi': ANKARA_CANKAYA_TUNALI_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {
