@@ -1,0 +1,2377 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "mugla-datca-merkez",
+  "displayName": "Datça Merkez, Muğla",
+  "verifiedAt": "2026-11-17T08:00:42.954Z",
+  "selectedCount": 32,
+  "rejectedControls": [
+    {
+      "id": "ctrl-datca-serap-cafe-closed",
+      "resolvedName": "Serap Cafe",
+      "reason": "not_operational:CLOSED_TEMPORARILY"
+    },
+    {
+      "id": "ctrl-datca-azzurra-closed",
+      "resolvedName": "AZZURRA",
+      "reason": "not_operational:CLOSED_TEMPORARILY"
+    },
+    {
+      "id": "ctrl-datca-dominos-chain",
+      "resolvedName": "Domino's Pizza Datca",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-datca-burger-king-chain",
+      "resolvedName": "Burger King",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-datca-cajun-corner-chain",
+      "resolvedName": "Cajun corner Datça",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-datca-meliha-hanim-chain",
+      "resolvedName": "Meliha Hanım Su Böreği ve Ev Lezzetleri (Merkez Şube)Datça Şubesi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-datca-tekin-usta-chain",
+      "resolvedName": "Tekin Usta %100 Keçi Sütü Dondurma",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-datca-kumluk-attraction",
+      "resolvedName": "Kumluk Plajı",
+      "reason": "invalid_place_type:tourist_attraction"
+    },
+    {
+      "id": "ctrl-datca-necmi-kaptan-service",
+      "resolvedName": "Necmi Kaptan",
+      "reason": "invalid_place_type:service"
+    },
+    {
+      "id": "ctrl-datca-no96-kahve-purity",
+      "resolvedName": "No:96 Patisserie&Coffee Datça",
+      "reason": "kahve_category_not_coffee_specialist:pastry_shop"
+    },
+    {
+      "id": "ctrl-datca-ekim-kahve-purity",
+      "resolvedName": "Ekim Pastanesi Datça",
+      "reason": "kahve_category_not_coffee_specialist:pastry_shop"
+    },
+    {
+      "id": "ctrl-datca-lumi-coffee-inflation",
+      "resolvedName": "Lumi Coffee Datça",
+      "reason": "suspected_rating_inflation_no_community_proof"
+    },
+    {
+      "id": "ctrl-datca-sail-roastery-low",
+      "resolvedName": "Sail Coffee Roastery & Bar",
+      "reason": "below_quality_threshold:★4.3(188)"
+    },
+    {
+      "id": "ctrl-datca-coffee-grinder-low",
+      "resolvedName": "The Coffee Grinder Datça",
+      "reason": "below_quality_threshold:★4.2(774)"
+    },
+    {
+      "id": "ctrl-datca-kekik-low",
+      "resolvedName": "Kekik Restoran",
+      "reason": "below_quality_threshold:★3.3(1596)"
+    },
+    {
+      "id": "ctrl-datca-zekeriya-low",
+      "resolvedName": "Zekeriya Sofrası",
+      "reason": "below_quality_threshold:★3.7(2223)"
+    },
+    {
+      "id": "ctrl-datca-maradona-low",
+      "resolvedName": "Maradona Restaurant",
+      "reason": "below_quality_threshold:★4(943)"
+    },
+    {
+      "id": "ctrl-datca-hammur-low-count",
+      "resolvedName": "HAMMUR DATÇA",
+      "reason": "below_quality_threshold:★5(29)"
+    },
+    {
+      "id": "ctrl-datca-depo-pizza-low-count",
+      "resolvedName": "Depo Pizza",
+      "reason": "below_quality_threshold:★4.6(12)"
+    },
+    {
+      "id": "ctrl-datca-eskidatcburger-outside",
+      "resolvedName": "EskiDatçaBurger",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: İskele/Iskele/Kumluk/Taşlık/Taslik/Burgaz/Hastane Altı/Hastane Alti, adres: Datça, Osman Karaca Sk. Kapı No:2 B Daire No, 48900 Datça/Muğla)"
+    },
+    {
+      "id": "ctrl-datca-pizza-trio-outside",
+      "resolvedName": "PIZZA TRIO",
+      "reason": "outside_strict_neighborhood:Bbox dışında (36.74061, 27.66461)"
+    },
+    {
+      "id": "ctrl-datca-franco-pizza-ovabuku-outside",
+      "resolvedName": "Franco Pizza Beach",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: İskele/Iskele/Kumluk/Taşlık/Taslik/Burgaz/Hastane Altı/Hastane Alti, adres: Mesudiye, Ovabükü Sokak No:15, 48900 Datça/Muğla)"
+    },
+    {
+      "id": "ctrl-datca-palamut-beach-outside",
+      "resolvedName": "Palamut Restaurant & Beach",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: İskele/Iskele/Kumluk/Taşlık/Taslik/Burgaz/Hastane Altı/Hastane Alti, adres: Yaka, Palamutbükü Sok No : 121, 48900 Datça/Muğla)"
+    },
+    {
+      "id": "ctrl-datca-yesim-kargi-outside",
+      "resolvedName": "Yesim Beach Bar",
+      "reason": "outside_strict_neighborhood:Bbox dışında (36.70040, 27.67534)"
+    },
+    {
+      "id": "ctrl-datca-tales-resadiye-outside",
+      "resolvedName": "Tales Datça",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: İskele/Iskele/Kumluk/Taşlık/Taslik/Burgaz/Hastane Altı/Hastane Alti, adres: Reşadiye, Çarşı Sk. No:45, 48900 Datça/Muğla)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "datca-dpo-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "D-PO Pizza",
+      "branchName": "İskele, Vatan Cd. No:14, 48900 Datça/Muğla",
+      "placeId": "ChIJR9StYeMkvhQRsdA0LlcVg_0",
+      "coordinates": {
+        "lat": 36.7267978,
+        "lng": 27.6846236
+      },
+      "rating": 4.5,
+      "userRatingCount": 1891,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.datcadepopizza.com/",
+      "mapsUri": "https://maps.google.com/?cid=18267467977726415025",
+      "recommendedPrimary": [
+        "Kraliçe Margarita",
+        "Memleket Pizza",
+        "4x4 Peynirli Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Datça Aşı Çorbası & Taze Mevsim Salataları",
+          "note": "Pizza öncesinde yerel mutfağa selam veren, mekânla özdeşleşmiş sıcak başlangıç seçeneği.",
+          "proof": "datcadepopizza.com resmi sitesi ve Restoranım incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş depo içi salon ve açık bahçe masaları",
+        "crowdAndNoise": "Akşam yemeklerinde yıl boyu yüksek yerel ve tatilci ilgisi",
+        "disadvantage": "Yaz akşamlarında rezervasyonsuz gelenler kısa süre avlu önünde bekleyebilir",
+        "transit": "Datça İskele Vatan Caddesi merkezi yürüyüş aksı üzeri"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (D-PO Pizza)",
+          "url": "https://www.datcadepopizza.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Özel pizzalar ve Datça Aşı çorbası menüsü"
+        },
+        {
+          "title": "Restoranım & Mavigeziyor",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Vatan Caddesi taş fırın pizza reçeteleri"
+        }
+      ],
+      "pros": [
+        "Datça İskele kimliğiyle bütünleşmiş özgün tarifler",
+        "Yüksek servis ve hamur istikrarı"
+      ],
+      "cons": [
+        "Yoğun sezon akşamlarında masa devri yavaşlayabilir"
+      ],
+      "uncertainties": [
+        "Sezon dışında açılış gün ve saatleri hafta içi değişebilir"
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-lezzet-restaurant-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "Lezzet Restaurant",
+      "branchName": "İskele, Atatürk Cd. No:98/A, 48900 Datça/Muğla",
+      "placeId": "ChIJdz9LPv0kvhQRwMSyBD33vaE",
+      "coordinates": {
+        "lat": 36.7226771,
+        "lng": 27.688103800000004
+      },
+      "rating": 4.5,
+      "userRatingCount": 119,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://instagram.com/lezzett_restaurant?igshid=YmMyMTA2M2Y=",
+      "mapsUri": "https://maps.google.com/?cid=11654743252148602048",
+      "recommendedPrimary": [
+        "Karışık İtalyan Pizza",
+        "Margarita Pizza",
+        "Deniz Ürünlü Makarna & Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Akdeniz Salataları & Deniz Ürünlü Başlangıçlar",
+          "note": "Balkon masalarında pizza paylaşımını tamamlayan hafif yan seçkiler.",
+          "proof": "Restaurant Guru ve Restoranım balkon değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Limana bakan üst balkon terası ve iç salon",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde sakin-dengeli doluluk",
+        "disadvantage": "Saf İtalyan trattoria yerine çok yönlü sahil restoranı düzeninde pizzalar çıkarır",
+        "transit": "İskele Limanı Atatürk Caddesi sonu yaya yürüyüş hattı"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım Rehberi",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Atatürk Caddesi liman manzaralı balkon ve mutfak notları"
+        },
+        {
+          "title": "Wanderlog & Restaurant Guru",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Pizza, burger ve deniz mahsulleri menü kapsamı"
+        }
+      ],
+      "pros": [
+        "Liman manzaralı üst balkon oturumu",
+        "Sakin sahil akşamı atmosferi"
+      ],
+      "cons": [
+        "Tam uzmanlaşmış Neapolitan pizzeria yerine çok yönlü sahil mutfağı"
+      ],
+      "uncertainties": [
+        "Balkon ön sıra masaları günbatımı öncesi dolabilir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-smashora",
+      "categoryId": "hamburger",
+      "resolvedName": "Smashora Datça",
+      "branchName": "İskele, Ahmet Taner Kışlalı Cd no:52-B, 48900 Datça/Muğla",
+      "placeId": "ChIJMzUlKRMlvhQRKIz-cLBQmwE",
+      "coordinates": {
+        "lat": 36.731776499999995,
+        "lng": 27.6848797
+      },
+      "rating": 4.9,
+      "userRatingCount": 251,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=115774934168276008",
+      "recommendedPrimary": [
+        "Datça Smash Burger (Badem Pestolu)",
+        "Space Smash Burger (Chili & Jalapeno)",
+        "Double Classic Smash"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Soslu Patates Kızartması & Jalapeno Dip",
+          "note": "Mühürlü ince smash köftelerin yanında sade ve baharatlı eşlikçi.",
+          "proof": "Datça.app ve Yemeksepeti smash menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük cadde kenarı teras ve sade iç oturum",
+        "crowdAndNoise": "Öğleden sonra ve akşam geç saatlere kadar genç yoğunluk",
+        "disadvantage": "Çift katlı ince smash köfteler klasik kalın sulu köfte arayanlara daha kıtır gelebilir",
+        "transit": "Datça Merkez Ahmet Taner Kışlalı Bulvarı yürüyüş aksı"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Datça.app Rehberi",
+          "url": "https://datca.app/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Smash teknikli köfteler ve çalışma düzeni incelemesi"
+        },
+        {
+          "title": "Datça Haber & Yemeksepeti",
+          "url": "https://datca-haber.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Datça badem pestolu smash burger değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Gerçek ince mühürlü smash dokusu",
+        "Datça badem pesto dokunuşlu imza reçete"
+      ],
+      "cons": [
+        "Kumluk sahil şeridinden biraz yukarı bulvarda yer alır"
+      ],
+      "uncertainties": [
+        "Yaz sezonunda öğleden sonra açılış ve gece kapanış temposu yoğunlaşır"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-burger-kofte",
+      "categoryId": "hamburger",
+      "resolvedName": "Datça.burger köfte",
+      "branchName": "İskele, Rauf balıkçı sokak No:5/AA, 48020 Datça/Muğla",
+      "placeId": "ChIJkYSclIMlvhQRQZULe5g2UQM",
+      "coordinates": {
+        "lat": 36.726752499999996,
+        "lng": 27.6852371
+      },
+      "rating": 4.8,
+      "userRatingCount": 710,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.burgerdatca.com/",
+      "mapsUri": "https://maps.google.com/?cid=239032283754632513",
+      "recommendedPrimary": [
+        "Datça Burger (Biftek Dilimli)",
+        "Classic Cheeseburger",
+        "Truffle Mushroom Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze İnce Dilim Patates Cipsi",
+          "note": "Burger tabağının içinde donmuş ürün yerine taze kızartılarak servis ediliyor.",
+          "proof": "burgerdatca.com resmi menü bilgisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Merkez çarşı sokağı masaları ve iç salon",
+        "crowdAndNoise": "Akşam yemeği ve sonrası çarşı yürüyüşçüleriyle hareketli",
+        "disadvantage": "Sokak içi oturumlar akşam saatlerinde komşu mekanlarla iç içe canlı olabilir",
+        "transit": "Atatürk Caddesi arkasındaki Rauf Balıkçı Sokak yaya alanı"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Burger Datça)",
+          "url": "http://www.burgerdatca.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Brioche ekmek, 120 gr dana köfte ve steak içerikleri"
+        },
+        {
+          "title": "Yandex İnceleme",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Rauf Balıkçı Sokak merkez burger değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Biftek parçalı dolgun iç malzeme",
+        "Tam çarşı merkezinde yürüme kolaylığı"
+      ],
+      "cons": [
+        "Ön kapı alanı dar sokak dokusu taşır"
+      ],
+      "uncertainties": [
+        "Sezon dışında mutfak ve stok saatleri erken kapanabilir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-soso-coffee-house",
+      "categoryId": "kahve",
+      "resolvedName": "SOSO Coffee House",
+      "branchName": "İskele, Rauf Balıkçı sk 14/2, 48900 Datça/Muğla",
+      "placeId": "ChIJT64TwTolvhQRl2zovnGEOIA",
+      "coordinates": {
+        "lat": 36.7274096,
+        "lng": 27.685869
+      },
+      "rating": 4.9,
+      "userRatingCount": 430,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/soso.datca/",
+      "mapsUri": "https://maps.google.com/?cid=9239280259619646615",
+      "recommendedPrimary": [
+        "Yulaf Sütlü Flat White",
+        "Iced Latte",
+        "V60 Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Avokadolu Ekşi Maya Tost & Ev Yapımı Kekler",
+          "note": "Sabah ve öğleden sonra kahvelerinin yanında hafif kahvaltılık olarak tercih ediliyor.",
+          "proof": "HappyCow.net ve Instagram @soso.datca kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Gölgelikli çarşı sokak önü masaları ve küçük iç bar",
+        "crowdAndNoise": "Sabah ve öğleden sonra düzenli ama dingin kitle",
+        "disadvantage": "Küçük sokak kapasitesi nedeniyle sabah pik saatlerinde masa bulmak zaman alabilir",
+        "transit": "İskele Çarşı Rauf Balıkçı Sokak (Atatürk Caddesi paralel sokak)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Instagram (@soso.datca)",
+          "url": "https://www.instagram.com/soso.datca/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Üçüncü nesil espresso ve günlük taze lezzetler"
+        },
+        {
+          "title": "HappyCow Seçkisi",
+          "url": "https://www.happycow.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Datça yulaf sütlü kahve ve bitkisel seçenek doğrulaması"
+        },
+        {
+          "title": "Yandex Topluluk",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İskele Rauf Balıkçı Sokak müdavim puanları"
+        }
+      ],
+      "pros": [
+        "Datça merkezde istikrarlı üçüncü nesil espresso profili",
+        "Bitkisel süt alternatifleri"
+      ],
+      "cons": [
+        "Küçük oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Mevsimsel tatlı çeşitleri günlük fırın çıkışına göre değişir"
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-zuraf-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Züraf Datça",
+      "branchName": "İskele, Atatürk Cd. No:72C, 48900 Datça/Muğla",
+      "placeId": "ChIJe7VLE9olvhQRoMPkJXy_0dY",
+      "coordinates": {
+        "lat": 36.7237248,
+        "lng": 27.6860872
+      },
+      "rating": 4.9,
+      "userRatingCount": 59,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15479363934181704608",
+      "recommendedPrimary": [
+        "Bademella (Bademli Özel Kahve)",
+        "Affogato / Çift Espresso",
+        "Iced Flat White"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Brownie & Yerel Avokadolu Sandviç",
+          "note": "Küçük pit-stop molasında kahvenin yanına taze olarak ekleniyor.",
+          "proof": "Yaka.la röportajı ve YouTube tanıtım kaydı"
+        }
+      ],
+      "suitability": {
+        "seating": "Mini kaldırım önü tabureler ve tezgah önü oturum; al-götür ağırlıklı",
+        "crowdAndNoise": "Gün içi hızlı mola ve yerel sohbet noktası",
+        "disadvantage": "Çok küçük dükkân hacmi nedeniyle bilgisayarlı uzun süreli çalışmaya elverişli değildir",
+        "transit": "Atatürk Caddesi No:72C (Kumluk arkası ana cadde üzeri)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yaka.la Yerel Keşif Dosyası",
+          "url": "https://yaka.la/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bademella, brownie ve kadın girişimi hikâyesi"
+        },
+        {
+          "title": "YouTube / Datça Yerel Röportajı",
+          "url": "https://www.youtube.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Fernaz Atanur espresso ve yerel sandviç anlatımı"
+        },
+        {
+          "title": "Servis Kayıt & Yandex",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Atatürk Caddesi yüksek kahve puanları"
+        }
+      ],
+      "pros": [
+        "Datça bademini nitelikli kahveye taşıyan özgün kimlik",
+        "Sıcak yerel karşılamalı pit-stop düzeni"
+      ],
+      "cons": [
+        "İçeride ve dışarıda masa sayısı çok sınırlı"
+      ],
+      "uncertainties": [
+        "Sezon içi yoğun günlerde brownie ve sandviçler erken tükenebilir"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-hane-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Hane Datça",
+      "branchName": "İskele, Vatan Cd. No:18/2, 48900 Datça/Muğla",
+      "placeId": "ChIJlUFAYEMlvhQR0L6H8CIvS68",
+      "coordinates": {
+        "lat": 36.7268944,
+        "lng": 27.684291899999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 117,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12631241407001509584",
+      "recommendedPrimary": [
+        "Flat White",
+        "Iced Americano",
+        "Cold Brew"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Orman Meyveli Smoothie Bowl",
+          "note": "Yaz sıcaklarında ağır kahvaltı yerine tercih edilen hafif kahve eşlikçisi.",
+          "proof": "Bizevdeyokuz.com ve Yandex Datça incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Rahat sokak kenarı masaları ve aydınlık iç oturum",
+        "crowdAndNoise": "Sabah ve öğleden sonra genç ve hayvan dostu misafir akışı",
+        "disadvantage": "Kahve uzmanlığı yanında kase ve tatlı menüsü güçlü olduğundan sadece kavurucu arayanlara daha genel kalabilir",
+        "transit": "İskele Mahallesi Vatan Caddesi üzeri"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Biz Evde Yokuz Datça Rehberi",
+          "url": "https://www.bizevdeyokuz.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Vatan Caddesi bağımsız kahve ve bowl notu"
+        },
+        {
+          "title": "Yandex Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hayvan dostu ortam ve San Sebastian puanlamaları"
+        }
+      ],
+      "pros": [
+        "Ferah ve hayvan dostu sosyal ortam",
+        "Yazın serin bowl & soğuk kahve uyumu"
+      ],
+      "cons": [
+        "Dönemsel servis yoğunluğu"
+      ],
+      "uncertainties": [
+        "Meyveli bowl çeşitleri günlük tedariğe göre değişebilir"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-ayse-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Ayşe Datça",
+      "branchName": "İskele, Şehit Ali Osman Çetiner Caddesi No:5, 48900 Datça/Muğla",
+      "placeId": "ChIJRzfvHtklvhQRBq7orlBi5Oc",
+      "coordinates": {
+        "lat": 36.7262384,
+        "lng": 27.686513899999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 115,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/ayse.datca/",
+      "mapsUri": "https://maps.google.com/?cid=16709588616122772998",
+      "recommendedPrimary": [
+        "Caffe Latte",
+        "Cortado",
+        "Iced Caramel / Sade Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Ev Yapımı Kurabiye & Kek Dilimleri",
+          "note": "Filtre kahve yanında ev mutfağından çıkan sade eşlikçiler.",
+          "proof": "Datça Haber yerel haber dosyası ve Instagram @ayse.datca"
+        }
+      ],
+      "suitability": {
+        "seating": "İçeride samimi masa düzeni ve cadde önü küçük oturumlar",
+        "crowdAndNoise": "Gün boyu sakin kahve sohbetleri",
+        "disadvantage": "Ana sahil yürüyüş yolunun biraz arka sokağında yer aldığı için sokak tarifi gerektirir",
+        "transit": "İskele Merkez Şehit Ali Osman Çetiner Caddesi yürüyüş mesafesi"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Datça Haber Yerel Dosya",
+          "url": "https://datca-haber.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kadın girişimi bağımsız kafe açılış ve hikâyesi"
+        },
+        {
+          "title": "Resmi Instagram (@ayse.datca)",
+          "url": "https://www.instagram.com/ayse.datca/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Nitelikli kahve ve günlük eşlikçiler"
+        },
+        {
+          "title": "Yandex Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İskele merkez kahve memnuniyet puanı"
+        }
+      ],
+      "pros": [
+        "Samimi ve yapaylıktan uzak yerel kafe ruhu",
+        "Dengeli sütlü espresso çekimleri"
+      ],
+      "cons": [
+        "Sahil manzarası yok; sokak içi konumlu"
+      ],
+      "uncertainties": [
+        "Kış döneminde çalışma günleri değişebilir"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-ege-meyhanesi",
+      "categoryId": "date",
+      "resolvedName": "Ege Meyhanesi",
+      "branchName": "İskele, Ambarcı Cd. No: 11/B, 48900 Datça/Muğla",
+      "placeId": "ChIJO8IwAWMlvhQRAPxKAiZi9dA",
+      "coordinates": {
+        "lat": 36.7247491,
+        "lng": 27.684211899999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 388,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15057048844569869312",
+      "recommendedPrimary": [
+        "Ege Mezeleri (Fava, Girit Ezme, Deniz Börülcesi)",
+        "Kalamar & Ahtapot Izgara",
+        "Kuzu Şiş / Ciğer Şiş"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ara Sıcak Kalamar & Karides Güveç",
+          "note": "Soğuk meze paylaşımı sonrası masayı ısıtan ana geçiş tabakları.",
+          "proof": "MyQRMenu ve Restaurant Guru meyhane menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Ambarcı Caddesi sokak önü masaları ve küçük iç salon",
+        "crowdAndNoise": "Akşam yemeklerinde meyhane sokağı canlılığı",
+        "disadvantage": "Sokak üzerindeki diğer meyhanelerle yakın yerleşim nedeniyle akşam ses seviyesi yüksektir",
+        "transit": "Atatürk Caddesi ve Liman kavşağından Ambarcı Caddesi No:11B"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Dijital Menü (MyQRMenu)",
+          "url": "https://myqrmenu.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Soğuk mezeler, ara sıcaklar ve ızgaralar"
+        },
+        {
+          "title": "Restaurant Guru & YesMenu",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ambarcı Caddesi meyhane değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Kumluk kumsalı yerine çarşı sokağı sıcaklığında samimi meze sofrası",
+        "Tutarlı soğuk meze kalitesi"
+      ],
+      "cons": [
+        "Deniz manzarası bulunmuyor"
+      ],
+      "uncertainties": [
+        "Yaz akşamları için aynı gün önceden rezervasyon önerilir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-ala-restaurant",
+      "categoryId": "date",
+      "resolvedName": "Âlâ Restaurant",
+      "branchName": "İskele, Yat Limanı Sk. no:2 D:G, 48900 Datça/Muğla",
+      "placeId": "ChIJbdLSubclvhQR9LKUr5R1x_M",
+      "coordinates": {
+        "lat": 36.722816,
+        "lng": 27.688457
+      },
+      "rating": 4.7,
+      "userRatingCount": 242,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17566138153043276532",
+      "recommendedPrimary": [
+        "Yöresel Şarap Eşlikli Meze Tabağı",
+        "Izgara Et & Balık Ana Yemeği",
+        "Taze Baharatlı Ara Sıcaklar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Datça Bölgesi Yerel Bağ Şarapları",
+          "note": "Menünün ayırt edici eşlikçisi olarak kadeh ve şişe seçkisinde sunuluyor.",
+          "proof": "PardonApp dijital menü ve Yandex kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Yat Limanı Sokağı düzenli açık oturum ve şık iç alan",
+        "crowdAndNoise": "Akşam yemeklerinde çiftler ve küçük gruplar ağırlıkta",
+        "disadvantage": "Yerel şarap ve bistro fiyat bandı sade esnaf lokantalarının üzerindedir",
+        "transit": "Datça Yat Limanı Sokağı No:2 (Liman içi yaya alanı)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "PardonApp Menü Kaydı",
+          "url": "https://pardonapp.co/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Datça yerel bağ şarapları ve akşam yemek listesi"
+        },
+        {
+          "title": "Yandex Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yat Limanı sakin akşam yemeği puanları"
+        }
+      ],
+      "pros": [
+        "Datça bağ şaraplarına menüde özel yer ayırması",
+        "Sakin ve özenli liman atmosferi"
+      ],
+      "cons": [
+        "Liman içinde yer aldığı için yazın geç saat yürüyüş trafiği yanından geçer"
+      ],
+      "uncertainties": [
+        "Sezon dışı çalışma düzeni hafta sonlarına odaklanabilir"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-meyhane-datca",
+      "categoryId": "date",
+      "resolvedName": "Meyhane Datca",
+      "branchName": "İskele, Ambarcı Cd. No:9, 48900 Datça/Muğla",
+      "placeId": "ChIJ8Z-2V_skvhQRgywEOTqnIjk",
+      "coordinates": {
+        "lat": 36.7247421,
+        "lng": 27.6845228
+      },
+      "rating": 4.6,
+      "userRatingCount": 1028,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4117036877876571267",
+      "recommendedPrimary": [
+        "Günlük Ot Kavurma & Girit Ezme",
+        "Ahtapot / Kalamar Ara Sıcakları",
+        "Et & Kebap Izgaraları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mevsimlik Zeytinyağlı Ege Otları",
+          "note": "Yarımada pazarlarından temin edilen taze otlarla günlük hazırlanıyor.",
+          "proof": "Datça.app ve Biz Evde Yokuz meyhane seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Canlı sokak önü masaları ve geleneksel iç meyhane düzeni",
+        "crowdAndNoise": "Yaz ve bahar akşamlarında yüksek; masalar erken dolar",
+        "disadvantage": "Oldukça popüler olduğundan rezervasyonsuz akşam masası bulmak zorlaşabilir",
+        "transit": "Ambarcı Caddesi No:9 (İskele Meydanı yanı)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Datça.app Şehir Rehberi",
+          "url": "https://datca.app/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ambarcı Caddesi meze ve akşam atmosferi değerlendirmesi"
+        },
+        {
+          "title": "Biz Evde Yokuz Seçkisi",
+          "url": "https://www.bizevdeyokuz.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Datça meyhaneler ve yerel meze kültürü incelemesi"
+        }
+      ],
+      "pros": [
+        "Yüksek müdavim memnuniyeti",
+        "Zengin mevsimlik meze vitrini"
+      ],
+      "cons": [
+        "Gürültü düzeyi canlı ve sokak dokulu"
+      ],
+      "uncertainties": [
+        "Yoğun sezon akşamlarında ikinci oturuma kalınabilir"
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-kylix-restaurant",
+      "categoryId": "date",
+      "resolvedName": "Kylix Restaurant & Bar Datça",
+      "branchName": "İskele, Kargı Yolu No: 26, 48900 Datça/Muğla",
+      "placeId": "ChIJnTEGvWclvhQRdHqQnrDNCiE",
+      "coordinates": {
+        "lat": 36.7203875,
+        "lng": 27.685119099999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 126,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://capekrio.com/Kylix-Restaurant-Bar.html",
+      "mapsUri": "https://maps.google.com/?cid=2380941511476935284",
+      "recommendedPrimary": [
+        "Şef İmza Deniz Mahsulü Tabağı",
+        "A la Carte Bonfile",
+        "Butik Şarap Eşlikçileri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Butik Şarap Seçkisi & Başlangıç Peynir Tabağı",
+          "note": "Taşlık Plajı ve Ilıca Göleti karşısındaki terasta günbatımını uzatan ikili.",
+          "proof": "capekrio.com resmi menü bilgisi ve Restoranım"
+        }
+      ],
+      "suitability": {
+        "seating": "Ilıca Göleti ve deniz manzaralı teras masaları",
+        "crowdAndNoise": "Sakin, kalabalıktan uzak seçkin akşam temposu",
+        "disadvantage": "Merkeze kıyasla üst fiyat segmentinde konumlanır; sokak meyhanelerine göre daha formal bir havası vardır",
+        "transit": "Taşlık Plajı Ilıca Göleti yürüyüş sonu Kargı Yolu başlangıcı (merkeze ~7 dakika yürüme)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Cape Krio / Kylix)",
+          "url": "http://capekrio.com/Kylix-Restaurant-Bar.html",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Dış misafirlere açık a la carte menü ve şarap listesi"
+        },
+        {
+          "title": "Restoranım Rehberi",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taşlık ve Ilıca Göleti manzaralı upscale yemek incelemesi"
+        }
+      ],
+      "pros": [
+        "İskele içinde nadide gürültüsüz gölet-deniz manzarası",
+        "Özenli mutfak ve masa servisi"
+      ],
+      "cons": [
+        "Çarşı içine göre bütçe seviyesi yüksek"
+      ],
+      "uncertainties": [
+        "Sezon dışında akşam servis günleri önceden teyit edilmeli"
+      ],
+      "selectionScore": 82,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-eski-meyhane",
+      "categoryId": "date",
+      "resolvedName": "Eski Meyhane",
+      "branchName": "İskele, 70. Sk. no:1/B, 48900 Datça/Muğla",
+      "placeId": "ChIJk68MV2IlvhQRkP5w8gQNaak",
+      "coordinates": {
+        "lat": 36.7250604,
+        "lng": 27.685688499999998
+      },
+      "rating": 4.5,
+      "userRatingCount": 1415,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12207302579862961808",
+      "recommendedPrimary": [
+        "Sac Kavurma & Küşleme",
+        "Girit Ezme & Zeytinyağlı Yaprak Sarma",
+        "Şaşlık Kebap"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Muska Böreği & Ege Zeytinyağlı Mezeleri",
+          "note": "Ana et ızgarası gelmeden önce masada paylaşılan klasik meyhane açılışı.",
+          "proof": "Yandex ve Datça meyhane incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sokak arası keyifli açık masalar ve sıcak iç alan",
+        "crowdAndNoise": "Yıl boyu yüksek; yazın ikinci oturuma kadar uzayan akış",
+        "disadvantage": "Balıktan çok et ve meze dengesi üzerine kurulu olduğu için salt balık arayanlar balıkçıları seçmeli",
+        "transit": "Kumluk Yolu arkasındaki İskele 70. Sokak yaya erişimi"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Tek Buçuk & Datça Meyhane Seçkisi",
+          "url": "https://tekbucukdatca.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yerel meze ve sac kavurma/küşleme mutfak geleneği"
+        },
+        {
+          "title": "Biz Evde Yokuz & Yandex",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "70. Sokak meyhane akşamları ve servis değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Hem güçlü meze vitrini hem başarılı et/küşleme sunumu",
+        "Kumluk yürüyüş yoluna adım mesafesi"
+      ],
+      "cons": [
+        "Popüler akşam saatlerinde masa bulmak rezervasyon ister"
+      ],
+      "uncertainties": [
+        "Özel et porsiyonları hafta sonu akşamları erken tükenebilir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-cafe-inn",
+      "categoryId": "kahvalti",
+      "resolvedName": "Cafe Inn",
+      "branchName": "İskele, Kumluk Yolu :32/B, 48900 Datça/Muğla",
+      "placeId": "ChIJxbxKZR2_vxQRzvbKdu2OtIc",
+      "coordinates": {
+        "lat": 36.7238687,
+        "lng": 27.6863781
+      },
+      "rating": 4.5,
+      "userRatingCount": 1879,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://cafeinndatca.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=9778597841479595726",
+      "recommendedPrimary": [
+        "Ege Kahvaltı Tabağı",
+        "Ev Yapımı Reçelli & Otlu Brunch",
+        "Taze Demleme Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Dondurmalı Beyaz Çikolatalı Brownie & Tiramisu",
+          "note": "Kahvaltı ya da öğleden sonra deniz kenarı molasında mekânla özdeşleşen imza tatlı.",
+          "proof": "cafeinndatca.com.tr ve Biz Evde Yokuz Datça rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Kumluk sahiline açılan ferah deniz kenarı masaları ve iç oturum",
+        "crowdAndNoise": "Sabah kahvaltısı ve öğleden sonra sürekli tercih edilen yüksek ilgi",
+        "disadvantage": "Kumluk hattının en popüler duraklarından olduğu için sezonda gölge ön masalar hızlı dolar",
+        "transit": "Kumluk Yolu No:32/B yaya sahil yürüyüş şeridi"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Cafe Inn Datça)",
+          "url": "https://cafeinndatca.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Kumluk sahili kahvaltı, Akdeniz menüsü ve tatlılar"
+        },
+        {
+          "title": "Biz Evde Yokuz & Yemek.com",
+          "url": "https://yemek.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Datça Kumluk kahvaltı ve brownie önerisi"
+        }
+      ],
+      "pros": [
+        "Ev yapımı reçeller ve yöresel zeytin kalitesi",
+        "Kumluk sahilinde uzun yıllara dayanan aile işletmesi güveni"
+      ],
+      "cons": [
+        "Pik sezon hafta sonlarında ön masa beklemesi olabilir"
+      ],
+      "uncertainties": [
+        "Kahvaltı saatleri dışında menü Akdeniz bistro-pizzaya döner"
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-seyir-cafe",
+      "categoryId": "kahvalti",
+      "resolvedName": "Seyir Cafe Restaurant",
+      "branchName": "İskele, Kumluk Yolu 48/1, 48900 Datça/Muğla",
+      "placeId": "ChIJj99_ZlolvhQRP8XgD2t6Uoo",
+      "coordinates": {
+        "lat": 36.7236386,
+        "lng": 27.6889906
+      },
+      "rating": 4.6,
+      "userRatingCount": 137,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://instagram.com/seyircafedatca?igshid=YmMyMTA2M2Y=",
+      "mapsUri": "https://maps.google.com/?cid=9967163525570807103",
+      "recommendedPrimary": [
+        "Serpme Köy Kahvaltısı",
+        "Sıcak Menemen & Mıhlama",
+        "Karışık & Ayvalık Tost Çeşitleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Mıhlama & Ayvalık Tostu",
+          "note": "Klasik serpme yerine tekil ve sıcak sabah atıştırmalığı isteyenlerin seçtiği alternatifler.",
+          "proof": "seyircafe.net dijital menü ve Yemeksepeti kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kumluk plaj ucuna bakan geniş sahil terası",
+        "crowdAndNoise": "Sabah aile kahvaltıları ve gün içi yürüyüşçülerle canlı",
+        "disadvantage": "Menüsü çok geniş olduğu için klasik yöresel kahvaltı dışındaki yemekler standart kafe çizgisindedir",
+        "transit": "Kumluk Yolu No:48/1 (Kumluk Plajı doğu ucu yürüyüş yolu)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Menü (Seyir Cafe)",
+          "url": "https://seyircafe.net/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Serpme kahvaltı, mıhlama, menemen ve tost listesi"
+        },
+        {
+          "title": "Yemeksepeti & Instagram",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kumluk sahilinde sıcak kahvaltı puanları"
+        }
+      ],
+      "pros": [
+        "Sıcak mıhlama ve menemeni taze çıkarması",
+        "Denize karşı geniş masa aralığı"
+      ],
+      "cons": [
+        "Çok sayfalı menü yapısı"
+      ],
+      "uncertainties": [
+        "Sıcak yaz öğlenlerinde güneş alan masalar yerine gölge bölüm seçilmeli"
+      ],
+      "selectionScore": 82,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-dalida",
+      "categoryId": "kahvalti",
+      "resolvedName": "Dalida Datça",
+      "branchName": "İskele, Sabiha Gökçen Cad No 8, 48900 Datça/Muğla",
+      "placeId": "ChIJAa3NV_wkvhQRiEBT0Sk6Aak",
+      "coordinates": {
+        "lat": 36.7219513,
+        "lng": 27.686768599999997
+      },
+      "rating": 4.5,
+      "userRatingCount": 199,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://dalidacafe.com/",
+      "mapsUri": "https://maps.google.com/?cid=12178078818666496136",
+      "recommendedPrimary": [
+        "Dalida Kahvaltı / Brunch Tabağı",
+        "Vejetaryen / Vegan Kahvaltı Seçenekleri",
+        "Filtre Kahve & Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Datça Ürünlü İmza Kokteyller & Atıştırmalıklar",
+          "note": "Akşamüstü geçişinde kafeyi bistro buluşma noktasına dönüştüren ikinci menü bölümü.",
+          "proof": "dalidacafe.com resmi sitesi ve Yandex kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tasarım detaylarına sahip iç alan ve cadde kenarı teras",
+        "crowdAndNoise": "Geç kahvaltı ve brunch saatlerinde dingin ve keyifli tempo",
+        "disadvantage": "Geleneksel büyük serpme kahvaltı arayan kalabalık ailelere porsiyonları daha modern/hafif gelebilir",
+        "transit": "Taşlık ve Yat Limanı arasındaki Sabiha Gökçen Caddesi No:8"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Dalida Cafe)",
+          "url": "http://dalidacafe.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Kahvaltı, vejetaryen seçenekler ve kokteyller"
+        },
+        {
+          "title": "Yandex İncelemeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sabiha Gökçen Caddesi brunch ve kahve kalitesi"
+        }
+      ],
+      "pros": [
+        "Klasik serpme dışında hafif modern brunch alternatifleri",
+        "Vejetaryen/vegan dostu tabaklar"
+      ],
+      "cons": [
+        "Sezon dışında açılış saatleri değişiklik gösterebilir"
+      ],
+      "uncertainties": [
+        "Kış döneminde çalışma gün ve mutfak saatleri önceden kontrol edilmeli"
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-gol-evi-taslik",
+      "categoryId": "kahvalti",
+      "resolvedName": "Datça Göl Evi Beach Cafe",
+      "branchName": "Göl evi, İskele, taşlık plajı, 48900 Datça/Muğla",
+      "placeId": "ChIJ_9BocIYlvhQRUPal-lxnjcs",
+      "coordinates": {
+        "lat": 36.719856199999995,
+        "lng": 27.6869989
+      },
+      "rating": 4.4,
+      "userRatingCount": 474,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14667493210455406160",
+      "recommendedPrimary": [
+        "Tava Kahvaltısı (Sıcak Yumurta & Sucuklu)",
+        "Serpme / Tabak Kahvaltı",
+        "Gözleme & Çay"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sahil Atıştırmalıkları & Soğuk İçecekler",
+          "note": "Kahvaltı sonrası plaj gününe devam eden misafirlerin öğle saatlerinde tercih ettiği seçenekler.",
+          "proof": "Restaurant Guru ve Wanderlog Taşlık Plajı incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Taşlık Plajı kıyısında açık gölge teras masaları",
+        "crowdAndNoise": "Sabah yürüyüşçüleri ve plaj misafirleriyle sakin başlayan, öğlene doğru artan hareketlilik",
+        "disadvantage": "Plaj işletmesi düzeni de barındırdığından güneşli günlerde servis hızı öğlene doğru yavaşlayabilir",
+        "transit": "Datça merkezden sahil yürüyüş yoluyla Taşlık Plajı / Ilıca Göleti yanı (~6 dk)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restaurant Guru Rehberi",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taşlık Plajı tava kahvaltısı ve sahil menüsü değerlendirmesi"
+        },
+        {
+          "title": "Wanderlog & Yandex",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Göl ve deniz manzaralı Taşlık kıyı deneyimi"
+        }
+      ],
+      "pros": [
+        "Taşlık Plajı ve gölet arasındaki eşsiz doğal konum",
+        "Tava kahvaltısı lezzeti"
+      ],
+      "cons": [
+        "Sahil rüzgârının arttığı günlerde açık teras serin olabilir"
+      ],
+      "uncertainties": [
+        "Plaj servis yoğunluğuna bağlı olarak masa bekleme süresi uzayabilir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-sevincin-lezzet-sofrasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Sevinç'in Lezzet Sofrası",
+      "branchName": "İSKELE MAH. 86 SK, İskele, Atatürk Cd. No:26 Kapı No:2 AB, 48900 Datça/Muğla",
+      "placeId": "ChIJSeeCbeMkvhQRQOtn2dMU-uM",
+      "coordinates": {
+        "lat": 36.7266489,
+        "lng": 27.685672
+      },
+      "rating": 4.4,
+      "userRatingCount": 1227,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16427465490905426752",
+      "recommendedPrimary": [
+        "Kabak Çiçeği Dolması & Zeytinyağlı Yaprak Sarma",
+        "Kelle Paça / Ayak Paça Çorbası",
+        "Şevketi Bostan & Günlük Tencere Yemekleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sevinç Hanım Köftesi & Ev Yapımı Mantı",
+          "note": "Tencere ve zeytinyağlı çeşitlerinin yanında öğle-akşam masalarında en çok istenen ana yemekler.",
+          "proof": "Restoranim.net ve ButikRota Datça mutfak incelemeleri"
+        },
+        {
+          "name": "Sıcak Sucuklu Menemen & Ev Kahvaltı Tabağı",
+          "note": "Erken saatlerde gelen ziyaretçilerin taze reçeller ve yerel peynirlerle tercih ettiği sabah alternatifi.",
+          "proof": "Restaurant Guru ve Dijital.link kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "İçeride samimi ev lokantası masaları ve sokak önü gölge oturumu",
+        "crowdAndNoise": "Öğle yemeklerinde yerliler, esnaf ve müdavim tatilcilerle dolu",
+        "disadvantage": "Günlük kısıtlı tencere üretimi yapıldığı için kabak çiçeği dolması ve şevketi bostan gibi spesiyaller akşamüstü erken tükenebilir",
+        "transit": "İskele Atatürk Caddesi No:26 / 86. Sokak merkezi yürüyüş aksı"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "ButikRota Yerel Rehberi",
+          "url": "https://www.butikrota.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kabak çiçeği dolması, zeytinyağlılar ve yarım porsiyon ev yemekleri detayı"
+        },
+        {
+          "title": "Restoranım Menü İncelemesi",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kelle paça çorbası, Sevinç Hanım Köftesi, mantı ve şevketi bostan"
+        },
+        {
+          "title": "Restaurant Guru & Yandex",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sabah kahvaltısı, menemen ve aile işletmesi değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Katkısız günlük ev yemekleri ve gerçek yarım porsiyon esnekliği",
+        "Yöresel Datça otları ve kabak çiçeği dolmasını yılın uygun dönemlerinde özenle çıkarması"
+      ],
+      "cons": [
+        "Küçük salonda yoğun öğle saatlerinde masa beklemek gerekebilir"
+      ],
+      "uncertainties": [
+        "Kabak çiçeği dolması ve şevketi bostan mevsimine göre günlük menüde yer alır"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-datca-ocakbasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "DATÇA OCAKBAŞI",
+      "branchName": "İskele, rauf balıkçı SK no.10, 48900 Datça/Muğla",
+      "placeId": "ChIJWzlGVjQlvhQR9wB5lmbsve8",
+      "coordinates": {
+        "lat": 36.727168,
+        "lng": 27.6856509
+      },
+      "rating": 4.9,
+      "userRatingCount": 277,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.datcaocakbasi.com/",
+      "mapsUri": "https://maps.google.com/?cid=17275223671018422519",
+      "recommendedPrimary": [
+        "Zırh Adana Kebap",
+        "Kuzu Pirzola & Ciğer Şiş",
+        "İnce Hamur Lahmacun"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Gavurdağı Salatası & Ocakbaşı Soğuk Mezeleri",
+          "note": "Közlenmiş etlerin yanında taze domates ve cevizle masayı dengeleyen eşlikçiler.",
+          "proof": "datcaocakbasi.com ve Menun.net dijital kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "İç ocakbaşı düzeni ve sokak önü masaları",
+        "crowdAndNoise": "Akşam yemeklerinde özellikle et ve kebap seven yerlilerle kalabalık",
+        "disadvantage": "Akşam ocak ateşi çevresinde duman ve sokak canlılığı yüksek olabilir",
+        "transit": "Rauf Balıkçı Sokak No:10 (İskele Çarşı içi)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Datça Ocakbaşı)",
+          "url": "https://www.datcaocakbasi.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Zırhta Adana, ciğer şiş ve fırın lahmacun çeşitleri"
+        },
+        {
+          "title": "Yandex & Menun.net",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Merkez ocakbaşı et kalitesi puanlamaları"
+        }
+      ],
+      "pros": [
+        "Kıyı kasabasında gerçek zırh Adana ve kuzu kalitesi",
+        "Lahmacun ve pideyi aynı fırında taze çıkarması"
+      ],
+      "cons": [
+        "Deniz kenarı ambiyansı yerine çarşı sokağı yerleşimi"
+      ],
+      "uncertainties": [
+        "Sezonda akşam geç saatlerde kuzu pirzola stokları tükenebilir"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-il-fico-gelato",
+      "categoryId": "denemelisin",
+      "resolvedName": "İl Fico Gelato Datça - İtalyan Dondurması",
+      "branchName": "İskele, Şehit Ali Osmaner Cad No :3, 48900 Datça/Muğla",
+      "placeId": "ChIJS7FKVgglvhQR64jL8GmsU1c",
+      "coordinates": {
+        "lat": 36.7261856,
+        "lng": 27.686404999999997
+      },
+      "rating": 4.8,
+      "userRatingCount": 1004,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6292562675378129131",
+      "recommendedPrimary": [
+        "Datça Bademli Gelato",
+        "Taze Mevsim Meyveli Sorbe",
+        "Antep Fıstıklı / Bitter Gelato"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Meyve Sorbeleri (Limon, İncir, Karadut)",
+          "note": "Süt ürünü tüketmeyenler için şeker oranı dengeli taze meyve alternatifi.",
+          "proof": "Bizevdeyokuz ve Yandex Datça lezzet rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Al-götür tezgah ağırlıklı; kapı önü birkaç oturum",
+        "crowdAndNoise": "Akşamüstü ve gece yürüyüşlerinde önünde sıra oluşur",
+        "disadvantage": "Oturup uzun süre kahve içme yerine dondurma alıp merkezde yürümeye uygundur",
+        "transit": "Atatürk Caddesi paralelindeki Şehit Ali Osman Çetiner Caddesi"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Biz Evde Yokuz Datça Rehberi",
+          "url": "https://www.bizevdeyokuz.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İskele çevresinde gerçek İtalyan dondurması (Il Fico Gelato) önerisi"
+        },
+        {
+          "title": "Yandex Topluluk",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1000’i aşan misafir puanıyla Datça bademli gelato övgüleri"
+        }
+      ],
+      "pros": [
+        "Sanayi tipi aroma vericilerden uzak gerçek İtalyan gelato kıvamı",
+        "Datça bademli özgün çeşitler"
+      ],
+      "cons": [
+        "Kış döneminde sezonluk kapalı kalabilir"
+      ],
+      "uncertainties": [
+        "Günlük çıkan çeşitler tezgahtaki taze meyveye göre değişir"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-tatca-lezzetler",
+      "categoryId": "denemelisin",
+      "resolvedName": "Tatça Lezzetler",
+      "branchName": "İskele, Hatçavuş sokak no:5, 48900 Datça/Muğla",
+      "placeId": "ChIJd2rvXFklvhQRzmVDry4YeLY",
+      "coordinates": {
+        "lat": 36.7289313,
+        "lng": 27.6871436
+      },
+      "rating": 4.8,
+      "userRatingCount": 429,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13148285700896155086",
+      "recommendedPrimary": [
+        "Patlıcan Musakka",
+        "Etli Nohut & Pirinç Pilavı",
+        "Tas Kebabı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Çorba & Ev Yapımı Cacık İkilisi",
+          "note": "Ana tencere yemeği yanında öğle tabağını dengeleyen taze tamamlayıcı.",
+          "proof": "Restoranım ve Yandex yerel esnaf lokantası incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı aile lokantası salonu ve sokak önü masaları",
+        "crowdAndNoise": "Öğle yemek saatlerinde düzenli yerel akış",
+        "disadvantage": "Erken akşam saatlerinden sonra kalan tencere yemek çeşitleri sınırlanır",
+        "transit": "İskele Mahallesi Hatçavuş Sokak No:5"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım Rehberi",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Musakka, etli nohut ve cacık günlük menü detayı"
+        },
+        {
+          "title": "Yandex Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İskele yerlilerinin yüksek memnuniyet verdiği ev yemekleri"
+        }
+      ],
+      "pros": [
+        "Her tabağı taze çıkan ev mutfağı istikrarı",
+        "Yalın ve dürüst fiyatlandırma"
+      ],
+      "cons": [
+        "Akşam geç saatlere açık kalmaz"
+      ],
+      "uncertainties": [
+        "Özel yemekler günlük tencere adediyle sınırlıdır"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-crux-street-food",
+      "categoryId": "denemelisin",
+      "resolvedName": "Crux Street Food",
+      "branchName": "İskele, Kocareis Sok No:11, 48900 Datça/Muğla",
+      "placeId": "ChIJTxgEXKclvhQRHAQ1zqSAIes",
+      "coordinates": {
+        "lat": 36.7274141,
+        "lng": 27.6860069
+      },
+      "rating": 4.8,
+      "userRatingCount": 348,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/crux.streetfood?igsh=ODB6azNmbmd5OXU0&utm_source=qr",
+      "mapsUri": "https://maps.google.com/?cid=16942964718467089436",
+      "recommendedPrimary": [
+        "Özel Soslu Tavuk / Et Wrap",
+        "Crux Sokak Sandviçi",
+        "Çıtır Patates & Sos Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çıtır Tavuk Parçaları & Özel Dip Soslar",
+          "note": "Sandviç ve wrap siparişlerinin yanında paylaşımlık sıcak atıştırmalık olarak alınıyor.",
+          "proof": "Dijital.link ve Instagram @crux.streetfood kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Az sayıda sokak önü oturumu; al-götür ve hızlı servis ağırlıklı",
+        "crowdAndNoise": "Öğleden sonra ve akşam genç misafirlerle dinamik",
+        "disadvantage": "Geleneksel Ege mutfağı arayanlar yerine dünya sokak lezzetlerine hitap eder",
+        "transit": "İskele Kocareis Sokak / Atatürk Caddesi arka bağlantısı"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Instagram (@crux.streetfood)",
+          "url": "https://www.instagram.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Günlük sokak yemekleri ve sos çeşitleri"
+        },
+        {
+          "title": "Dijital.link & Yandex",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yüksek puanlı Datça sokak lezzetleri incelemesi"
+        }
+      ],
+      "pros": [
+        "Datça merkezde genç ve özenli street-food alternatifi",
+        "Doyurucu porsiyonlar"
+      ],
+      "cons": [
+        "Oturma alanı kısıtlı"
+      ],
+      "uncertainties": [
+        "Sezonda bazı geç akşam saatlerinde hızlı sipariş kuyruğu olabilir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-omer-usta",
+      "categoryId": "denemelisin",
+      "resolvedName": "ÖMER USTA DATÇA",
+      "branchName": "İskele, Atatürk Cd. No:86 D:F, 48900 Datça/Muğla",
+      "placeId": "ChIJUbYWcYolvhQRv2NvqlOOs1k",
+      "coordinates": {
+        "lat": 36.7227363,
+        "lng": 27.686911199999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 1201,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6463666380199650239",
+      "recommendedPrimary": [
+        "Dana İlikli Ayak Paça Çorbası",
+        "Ömer Usta Kavurma",
+        "El Yapımı Kayseri Mantısı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günün Zeytinyağlıları & Kuru Fasulye-Pilav",
+          "note": "Çorba veya kavurma yanında klasik Anadolu lokanta tabağı arayanların tercihi.",
+          "proof": "omerustadatca.com resmi menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç salon ve Atatürk Caddesi önü masalar",
+        "crowdAndNoise": "Sabah kahvaltısı, öğle ve akşam gece çorbasında sürekli akış",
+        "disadvantage": "Çok geniş menüye sahip olduğu için özellikle imza kavurma, ayak paça ve mantısı hedeflenmeli",
+        "transit": "İskele Atatürk Caddesi No:86/F"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Menü (Ömer Usta Datça)",
+          "url": "https://omerustadatca.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "İlikli ayak paça, kavurma, Kayseri mantısı ve ev yemekleri"
+        },
+        {
+          "title": "Yandex Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1200’e yakın oyla teyit edilen esnaf lokantası puanı"
+        }
+      ],
+      "pros": [
+        "Günün her saatinde sıcak çorba ve taze et yemeği erişimi",
+        "Uzun yıllardır süren yerel güven"
+      ],
+      "cons": [
+        "Ana cadde trafiği önü hareketli ortam"
+      ],
+      "uncertainties": [
+        "Yoğun sezon akşamlarında mantı ve bazı tencere yemekleri erken bitebilir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-neseli-gunler-ev-yemekleri",
+      "categoryId": "denemelisin",
+      "resolvedName": "Neşeli Günler | Datça Ev Yemekleri",
+      "branchName": "İskele, Buxerolles Sk. No: 9, 48900 Datça/Muğla",
+      "placeId": "ChIJxfI6qK0fvhQRwEGygjyw0wM",
+      "coordinates": {
+        "lat": 36.7253081,
+        "lng": 27.6846329
+      },
+      "rating": 4.7,
+      "userRatingCount": 520,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://neseligunlerdatca.com/",
+      "mapsUri": "https://maps.google.com/?cid=275757776136978880",
+      "recommendedPrimary": [
+        "Günün Zeytinyağlı Sebze Yemekleri",
+        "Sulu Ev Yemekleri & Pilav",
+        "Ev Usulü Çorbalar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Günlük Sütlü / Şerbetli Tatlılar",
+          "note": "Yemek sonrasında katkı ve hazır şurup içermeyen sade tatlı kapanışı.",
+          "proof": "neseligunlerdatca.com resmi sitesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaç gölgeli sokak içi masalar ve temiz iç oturma alanı",
+        "crowdAndNoise": "Öğle saatlerinde Datça yerlileri ağırlıklı",
+        "disadvantage": "Öğle yemekleri üzerine kurulu olduğu için akşam geç saat servisi beklenmemeli",
+        "transit": "İskele Mahallesi Buxerolles Sokak No:9 (Ambarcı arkası yaya sokak)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Neşeli Günler Datça)",
+          "url": "https://neseligunlerdatca.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Katkısız anne mutfağı felsefesi ve mevsimsel tencere"
+        },
+        {
+          "title": "Yandex Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Buxerolles Sokak ev yemekleri memnuniyet notları"
+        }
+      ],
+      "pros": [
+        "Yağ dengesi hafif ve ev mutfağı hissiyatı güçlü yemekler",
+        "Sakin gölgeli sokak konumu"
+      ],
+      "cons": [
+        "Günlük az sayıda çıkarılan tezgâh erken saatte biter"
+      ],
+      "uncertainties": [
+        "Kış ve ara sezon günlerinde açılış takvimi değişiklik gösterebilir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-zeytin-dali",
+      "categoryId": "denemelisin",
+      "resolvedName": "Zeytin Dalı Datça",
+      "branchName": "İskele, Buxerolles Sk. no:7/B, 48400 Datça/Muğla",
+      "placeId": "ChIJK1IFY4QlvhQRGya_BYPBoCY",
+      "coordinates": {
+        "lat": 36.7252114,
+        "lng": 27.684894399999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 221,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.zeytindalidatca.com/",
+      "mapsUri": "https://maps.google.com/?cid=2783437338196256283",
+      "recommendedPrimary": [
+        "Muğla Usulü Nohutlu Et Yahni",
+        "Arnavut Ciğeri",
+        "İzmir Köfte & Pilav"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Soslu Karışık Kızartma & Zeytinyağlı Sarma",
+          "note": "Et yahnisinin yanında Muğla ev sofrasını tamamlayan günlük zeytinyağlılar.",
+          "proof": "zeytindalidatca.com resmi sitesi ve Yemeksepeti menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Samimi iç alan ve sokak önü masaları",
+        "crowdAndNoise": "Öğle saatlerinde dengeli yerel doluluk",
+        "disadvantage": "Geleneksel esnaf benmari düzeninde çalıştığı için günün geç saatlerinde çeşitler azalır",
+        "transit": "İskele Buxerolles Sokak No:7/B"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Zeytin Dalı Datça)",
+          "url": "http://www.zeytindalidatca.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Muğla nohutlu et yahni, Arnavut ciğeri ve çorba menüsü"
+        },
+        {
+          "title": "Yemeksepeti Menü Kaydı",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Buxerolles Sokak günlük ev yemeği listesi"
+        }
+      ],
+      "pros": [
+        "Muğla yöresine özgü nohutlu yahni gibi yerel klasikleri koruması",
+        "Samimi aile servisi"
+      ],
+      "cons": [
+        "Küçük sokak dokusu nedeniyle araç yanaşması zor"
+      ],
+      "uncertainties": [
+        "Arnavut ciğeri ve özel yahni porsiyonları öğleden sonra bitebilir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-ozen-balik-ekmek",
+      "categoryId": "denemelisin",
+      "resolvedName": "Özen Balık Ekmek",
+      "branchName": "İskele, Ambarcı Cd. no:4, 48900 Datça/Muğla",
+      "placeId": "ChIJXdUCxBglvhQR9Aem4U8Kuko",
+      "coordinates": {
+        "lat": 36.725009299999996,
+        "lng": 27.685050000000004
+      },
+      "rating": 4.5,
+      "userRatingCount": 149,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5384627642679298036",
+      "recommendedPrimary": [
+        "Kömürde Balık Ekmek (Mevsim Balığı / Sardalya)",
+        "Porsiyon Izgara Sardalya",
+        "Bol Yeşillikli Salata"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Porsiyon Kömür Izgara Balık & Salata",
+          "note": "Ekmek arası yerine tabakta sade balık isteyenler için hızlı ve sıcak alternatif.",
+          "proof": "Datça Haber dosyası ve Restaurant Guru incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı dükkan önü birkaç masa ve al-götür tezgahı",
+        "crowdAndNoise": "Öğle ve erken akşam saatlerinde hızlı gel-al akışı",
+        "disadvantage": "Geleneksel büyük restoran servisi yerine hızlı sokak lezzetçisi ölçeğinde çalışır",
+        "transit": "Ambarcı Caddesi No:4 (Yat Limanı kavşağı yanı)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Datça Haber Dosyası",
+          "url": "https://datca-haber.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ambarcı Kavşağı kömür ateşi balık ekmek değerlendirmesi"
+        },
+        {
+          "title": "Restaurant Guru Kayıtları",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taze sardalya ve pratik ızgara menüsü"
+        }
+      ],
+      "pros": [
+        "Kömür ateşinde taze pişirim",
+        "Merkezde erişilebilir ekonomik sokak balığı"
+      ],
+      "cons": [
+        "Küçük oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Kış sezonunda veya deniz koşullarında sardalya/balık türü mevsime göre değişir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-rumeli-kofte-ciger",
+      "categoryId": "denemelisin",
+      "resolvedName": "Rumeli Köfte-Ciğer-Tatlı",
+      "branchName": "İskele Mahallesi 86.Sokak, Datça Eczanesi, İskele, Ara Sokağı No:3, 48900 Datça/Muğla",
+      "placeId": "ChIJgwXob-MkvhQRv11oRkmXHyU",
+      "coordinates": {
+        "lat": 36.7266949,
+        "lng": 27.6854908
+      },
+      "rating": 4.4,
+      "userRatingCount": 678,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/rumelikoftecigertatli?igsh=aXZtMmoyMGR6Zzh1",
+      "mapsUri": "https://maps.google.com/?cid=2675023044651015615",
+      "recommendedPrimary": [
+        "Rumeli / Akhisar Usulü Izgara Köfte",
+        "Yaprak Ciğer Tava",
+        "Piyaz"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Klasik Kuru Fasulye Piyazı",
+          "note": "Rumeli köfte ve yaprak ciğerin yanında vazgeçilmez tamamlayıcı salata.",
+          "proof": "Mavigeziyor ve Yandex İskele esnaf rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ara sokak masaları ve sade iç salon",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde yerel et severlerle düzenli doluluk",
+        "disadvantage": "Köfte ve sakatat odaklı dar uzmanlık menüsü olduğundan vejetaryen seçenekleri çok kısıtlıdır",
+        "transit": "İskele 86. Sokak (Datça Eczanesi ara sokağı No:3)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Mavigeziyor Datça Rehberi",
+          "url": "https://mavigeziyor.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Akhisar usulü köfte ve yaprak ciğer incelemesi"
+        },
+        {
+          "title": "Yandex Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "86. Sokak köfte, ciğer ve piyaz memnuniyet puanı"
+        }
+      ],
+      "pros": [
+        "Deniz ürünleri ağırlıklı İskele merkezinde güçlü Rumeli köfte-ciğer alternatifi",
+        "Hızlı ve temiz ızgara"
+      ],
+      "cons": [
+        "Sokak içi dar giriş konumu"
+      ],
+      "uncertainties": [
+        "Yaprak ciğer partileri akşam yoğunluğunda tükenebilir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-kilcik-balik-evi",
+      "categoryId": "balik",
+      "resolvedName": "Datça Kılçık Balık Evi",
+      "branchName": "İskele, Atatürk Cd. No:84 D:G, 48900 Datça/Muğla",
+      "placeId": "ChIJ-7BoSOAlvhQR3xJ_9xjRVFY",
+      "coordinates": {
+        "lat": 36.722818100000005,
+        "lng": 27.686622399999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 419,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6220826890467218143",
+      "recommendedPrimary": [
+        "Sardalya Tava Menü",
+        "Izgara Çipura / Levrek Porsiyon",
+        "Günün Salatası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Kalamar & Mevsim Salatası",
+          "note": "Hızlı balık sofrasında ana balığa eşlik eden taze yan tabaklar.",
+          "proof": "Yemeksepeti menü listesi ve Yandex müşteri notları"
+        }
+      ],
+      "suitability": {
+        "seating": "İç balık evi salonu ve küçük ön masalar",
+        "crowdAndNoise": "Akşam yemeğinde yerel aileler ağırlıkta",
+        "disadvantage": "Kumluk sahilindeki gibi ayağı kuma değen masa konsepti yerine sokak içi balık evi ortamı sunar",
+        "transit": "Atatürk Caddesi No:84/G (Liman yakınındaki ana cadde ucu)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemeksepeti Katalog",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sardalya tava, levrek ve çipura porsiyon menü detayları"
+        },
+        {
+          "title": "Yandex İncelemeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Datça merkez yüksek puanlı temiz balık evi notları"
+        }
+      ],
+      "pros": [
+        "Ağır meyhane hesabı yerine net ve dürüst taze balık porsiyonları",
+        "Sardalya ve levrek pişirim istikrarı"
+      ],
+      "cons": [
+        "Kumsal manzarası yerine cadde yerleşimi"
+      ],
+      "uncertainties": [
+        "Av yasağı ve sezon dışı dönemlerde balık çeşitliliği değişir"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-iskandil-balik",
+      "categoryId": "balik",
+      "resolvedName": "İskandil Balık",
+      "branchName": "İskele, Vatan Cd. No:12, 48900 Datça/Muğla",
+      "placeId": "ChIJA9YTArIlvhQRIdIcCYDc-v8",
+      "coordinates": {
+        "lat": 36.7267332,
+        "lng": 27.684725099999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 751,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.iskandilbalik.com/",
+      "mapsUri": "https://maps.google.com/?cid=18445297666316096033",
+      "recommendedPrimary": [
+        "Orkinos Izgara (Roka Salatası ile)",
+        "Tereyağında Karides & Ahtapot Izgara",
+        "Ekmek Arası Kalamar / Orkinos Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Helva & Çıtır Kabak Tatlısı",
+          "note": "Balık sofrasının ardından tahinli cevizli kapanışı yapan tescilli tatlılar.",
+          "proof": "iskandilbalik.com resmi sitesi ve menum.co"
+        }
+      ],
+      "suitability": {
+        "seating": "Samimi iç salon ve Vatan Caddesi ön teras oturumu",
+        "crowdAndNoise": "Akşam saatlerinde özellikle yerliler ve müdavimler arasında popüler",
+        "disadvantage": "Kendine has konsepti gereği içecek tercihini önceden bilerek gitmek gerekir; sahil kıyısı manzarası sunmaz",
+        "transit": "İskele Vatan Caddesi No:12 (merkez yürüyüş aksı)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (İskandil Balık)",
+          "url": "https://www.iskandilbalik.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Orkinos ızgara, içkini al gel konsepti ve taze mezeler"
+        },
+        {
+          "title": "Menum.co & Yandex",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ahtapot, orkinos burger ve çıtır kabak tatlısı puanları"
+        }
+      ],
+      "pros": [
+        "Şeffaf esnaf balıkçı modeli ve yüksek meze/balık kalitesi",
+        "Orkinos ızgara gibi özgün yerel seçenek"
+      ],
+      "cons": [
+        "Sahilde değil çarşı Vatan Caddesi üzerinde"
+      ],
+      "uncertainties": [
+        "Sezona göre orkinos ve özel av balıkları günlük çıkabilir"
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-dus-datca",
+      "categoryId": "balik",
+      "resolvedName": "Düş Datça",
+      "branchName": "İskele, Taşlık mevki No:10, 48900 Datça/Muğla",
+      "placeId": "ChIJL5UTxW4lvhQRJM68UWU6WDQ",
+      "coordinates": {
+        "lat": 36.7198472,
+        "lng": 27.686995099999997
+      },
+      "rating": 4.6,
+      "userRatingCount": 345,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://dusdatca.com/",
+      "mapsUri": "https://maps.google.com/?cid=3771828894760226340",
+      "recommendedPrimary": [
+        "Günün Taze Balığı",
+        "Deniz Mahsullü Miço Böreği",
+        "Tereyağında Karides & Kalamar Sote"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kalamata Zeytinli & Yöresel Otlu Soğuk Mezeler",
+          "note": "Taşlık kıyısında günbatımıyla birlikte balık öncesi paylaşılan soğuk eşlikçiler.",
+          "proof": "ButikRota ve Restoranım Datça seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Taşlık koyuna nazır sahil önü masaları ve kapalı bölüm",
+        "crowdAndNoise": "Günbatımı ve akşam yemeklerinde özenli doluluk",
+        "disadvantage": "Taşlık uç kısmında olduğu için Kumluk merkez kalabalığından 5 dakikalık ek yürüyüş gerektirir",
+        "transit": "İskele Taşlık Plajı kıyısı No:10 (merkezden sahil yürüyüşüyle ~6 dk)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Düş Datça)",
+          "url": "https://dusdatca.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Taşlık kıyısı deniz ürünleri ve bar konsepti"
+        },
+        {
+          "title": "ButikRota & Restoranım",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Deniz mahsullü miço börek ve Kalamata meze değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Kumluk keşmekeşinin dışında deniz kıyısında nitelikli balık",
+        "Özgün deniz mahsullü ara sıcaklar"
+      ],
+      "cons": [
+        "Sezonda akşam rüzgârı alan ön masalar için ince kıyafet gerekebilir"
+      ],
+      "uncertainties": [
+        "Ara sıcak çeşitleri mevsimsel deniz ürünü gelişine bağlıdır"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-mirayda-restaurant",
+      "categoryId": "balik",
+      "resolvedName": "Mirayda Restaurant",
+      "branchName": "İskele, Atatürk Cd. no:100/3, 48900 Datça/Muğla",
+      "placeId": "ChIJmYV_V3olvhQRumb6RBcKQg8",
+      "coordinates": {
+        "lat": 36.7227503,
+        "lng": 27.688233
+      },
+      "rating": 4.6,
+      "userRatingCount": 183,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1099452354089608890",
+      "recommendedPrimary": [
+        "Günün Taze Balığı",
+        "Taze Kalamar Tava",
+        "Zeytinyağlı 5 Çeşit Meze Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yöresel Zeytinyağlılar & Sıcak Kalamar Tava",
+          "note": "Masayı donatan taze soğuk başlangıç ve sıcak ara geçiş.",
+          "proof": "ButikRota aile işletmesi ve deniz mahsulleri rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Sahil bandında denize karşı mütevazı açık ve kapalı masa düzeni",
+        "crowdAndNoise": "Akşam yemeklerinde aileler ve sakin meze-balık masaları ağırlıkta",
+        "disadvantage": "Şık bistro dekorasyonu yerine klasik samimi sahil lokantası estetiğine sahiptir",
+        "transit": "İskele Atatürk Caddesi No:100/3 (Liman bölgesi yakını)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "ButikRota Datça Rehberi",
+          "url": "https://www.butikrota.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Denize sıfır aile işletmesi ve 5 çeşit meze değerlendirmesi"
+        },
+        {
+          "title": "Google & Yandex Topluluk",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze kalamar ve samimi servis memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Güler yüzlü aile işletmesi dokusu ve doğrudan kıyı konumu",
+        "Dürüst porsiyonlar"
+      ],
+      "cons": [
+        "Gösterişli menü sunumu yerine klasik balık lokantası sadeliği"
+      ],
+      "uncertainties": [
+        "Sezon dışında mutfak saatleri gün batımına endeksli daralabilir"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "datca-kumluk-big-balik",
+      "categoryId": "balik",
+      "resolvedName": "Kumluk Big Balık Datça Restaurant",
+      "branchName": "İskele, Kumluk Yolu No:6, 48900 Datça/Muğla",
+      "placeId": "ChIJDYyTm6UlvhQRP8JvFy3Gnws",
+      "coordinates": {
+        "lat": 36.725730299999995,
+        "lng": 27.6864604
+      },
+      "rating": 4.4,
+      "userRatingCount": 1499,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=837605952683229759",
+      "recommendedPrimary": [
+        "Kumluk Kumsalında Günün Izgara Balığı",
+        "Karides Güveç & Kalamar",
+        "Geniş Meze Dolabından Seçki"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Karides Güveç & Meze Dolabı Seçkisi",
+          "note": "Kumsal üzerindeki masada balık öncesi paylaşılan sıcak ve soğuk başlangıçlar.",
+          "proof": "Dijital.link ve Restoranım Kumluk sahili rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Doğrudan Kumluk kumsalı üzerine kurulan denize sıfır akşam masaları",
+        "crowdAndNoise": "Günbatımı sonrasında Kumluk yürüyüş trafiği nedeniyle çok canlı",
+        "disadvantage": "Kumsal yürüyüş yolu tam masaların yanından geçtiği için sessiz ve izole bir köşe sunmaz",
+        "transit": "İskele Kumluk Yolu No:6 (yaya plaj şeridi üzeri)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım Kumluk Dosyası",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kumluk Plajı denize sıfır balık ve meze seçkisi"
+        },
+        {
+          "title": "Dijital.link & Wanderlog",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kumluk kumsal masaları ve ızgara balık incelemeleri"
+        }
+      ],
+      "pros": [
+        "Gerçek Kumluk kumsalı üzerinde yüksek puan istikrarını koruyan nadir adres",
+        "Merkezde yürüyerek zahmetsiz ulaşım"
+      ],
+      "cons": [
+        "Yaz akşamlarında yürüme kalabalığı ve masabaşı fiyat seviyesi"
+      ],
+      "uncertainties": [
+        "Kumluk ön sırası rüzgârlı havalarda dalga spreyine açık olabilir"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    }
+  ]
+}

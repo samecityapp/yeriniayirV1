@@ -62,6 +62,8 @@ const PUBLISHED_REGION_KEYS = [
   'mugla-bodrum-gumbet',
   'mugla-bodrum-torba',
   'mugla-bodrum-akyarlar',
+  'mugla-marmaris-merkez',
+  'mugla-datca-merkez',
 ];
 const NEARBY_POOL_KEY = 'istanbul-kadikoy-nearby-pool';
 const DEFAULT_REGION_ORDER = [...PUBLISHED_REGION_KEYS, NEARBY_POOL_KEY];

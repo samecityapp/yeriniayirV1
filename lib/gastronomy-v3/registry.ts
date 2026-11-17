@@ -52,6 +52,8 @@ import muglaBodrumGundoganSnapshotJson from './regions/mugla-bodrum-gundogan.jso
 import muglaBodrumGumbetSnapshotJson from './regions/mugla-bodrum-gumbet.json';
 import muglaBodrumTorbaSnapshotJson from './regions/mugla-bodrum-torba.json';
 import muglaBodrumAkyarlarSnapshotJson from './regions/mugla-bodrum-akyarlar.json';
+import muglaMarmarisMerkezSnapshotJson from './regions/mugla-marmaris-merkez.json';
+import muglaDatcaMerkezSnapshotJson from './regions/mugla-datca-merkez.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -109,6 +111,8 @@ const MUGLA_BODRUM_GUNDOGAN_SNAPSHOT = muglaBodrumGundoganSnapshotJson as V3Veri
 const MUGLA_BODRUM_GUMBET_SNAPSHOT = muglaBodrumGumbetSnapshotJson as V3VerifiedRegionSnapshot;
 const MUGLA_BODRUM_TORBA_SNAPSHOT = muglaBodrumTorbaSnapshotJson as V3VerifiedRegionSnapshot;
 const MUGLA_BODRUM_AKYARLAR_SNAPSHOT = muglaBodrumAkyarlarSnapshotJson as V3VerifiedRegionSnapshot;
+const MUGLA_MARMARIS_MERKEZ_SNAPSHOT = muglaMarmarisMerkezSnapshotJson as V3VerifiedRegionSnapshot;
+const MUGLA_DATCA_MERKEZ_SNAPSHOT = muglaDatcaMerkezSnapshotJson as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -165,6 +169,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MUGLA_BODRUM_GUMBET_SNAPSHOT,
   MUGLA_BODRUM_TORBA_SNAPSHOT,
   MUGLA_BODRUM_AKYARLAR_SNAPSHOT,
+  MUGLA_MARMARIS_MERKEZ_SNAPSHOT,
+  MUGLA_DATCA_MERKEZ_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -562,6 +568,30 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   anthaven: MUGLA_BODRUM_AKYARLAR_SNAPSHOT,
   fenerburnu: MUGLA_BODRUM_AKYARLAR_SNAPSHOT,
   akcabuk: MUGLA_BODRUM_AKYARLAR_SNAPSHOT,
+  'marmaris-merkez': MUGLA_MARMARIS_MERKEZ_SNAPSHOT,
+  marmaris: MUGLA_MARMARIS_MERKEZ_SNAPSHOT,
+  'mugla-marmaris-merkez': MUGLA_MARMARIS_MERKEZ_SNAPSHOT,
+  'marmaris-merkez-mugla': MUGLA_MARMARIS_MERKEZ_SNAPSHOT,
+  'marmaris-carsi': MUGLA_MARMARIS_MERKEZ_SNAPSHOT,
+  'marmaris-kaleici': MUGLA_MARMARIS_MERKEZ_SNAPSHOT,
+  'marmaris-kordon': MUGLA_MARMARIS_MERKEZ_SNAPSHOT,
+  'marmaris-yat-limani': MUGLA_MARMARIS_MERKEZ_SNAPSHOT,
+  'netsel-marina': MUGLA_MARMARIS_MERKEZ_SNAPSHOT,
+  uzunyali: MUGLA_MARMARIS_MERKEZ_SNAPSHOT,
+  'uzunyali-marmaris': MUGLA_MARMARIS_MERKEZ_SNAPSHOT,
+  'sariana-marmaris': MUGLA_MARMARIS_MERKEZ_SNAPSHOT,
+  'datca-merkez': MUGLA_DATCA_MERKEZ_SNAPSHOT,
+  datca: MUGLA_DATCA_MERKEZ_SNAPSHOT,
+  'mugla-datca-merkez': MUGLA_DATCA_MERKEZ_SNAPSHOT,
+  'datca-merkez-mugla': MUGLA_DATCA_MERKEZ_SNAPSHOT,
+  'datca-iskele': MUGLA_DATCA_MERKEZ_SNAPSHOT,
+  'iskele-datca': MUGLA_DATCA_MERKEZ_SNAPSHOT,
+  kumluk: MUGLA_DATCA_MERKEZ_SNAPSHOT,
+  'kumluk-plaji': MUGLA_DATCA_MERKEZ_SNAPSHOT,
+  'taslik-plaji': MUGLA_DATCA_MERKEZ_SNAPSHOT,
+  'hastane-alti-datca': MUGLA_DATCA_MERKEZ_SNAPSHOT,
+  'datca-liman': MUGLA_DATCA_MERKEZ_SNAPSHOT,
+  'sevgi-yolu-datca': MUGLA_DATCA_MERKEZ_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {

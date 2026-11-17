@@ -363,6 +363,17 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'buselik meyhane',
   'caytaze',
   'çaytaze',
+  'meliha hanim',
+  'meliha hanım',
+  'obadan',
+  'kircicegi',
+  'kırçiçeği',
+  'tekin usta',
+  'books & coffee marmaris',
+  'books & coffee uzunyali',
+  'books & coffee uzunyalı',
+  'coffee kuppa',
+  'kupa coffee',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([
