@@ -58,6 +58,8 @@ import izmirKonakAlsancakSnapshotJson from './regions/izmir-konak-alsancak.json'
 import izmirKarsiyakaBostanliSnapshotJson from './regions/izmir-karsiyaka-bostanli.json';
 import izmirKarsiyakaCarsiSnapshotJson from './regions/izmir-karsiyaka-carsi.json';
 import izmirBornovaMerkezSnapshotJson from './regions/izmir-bornova-merkez.json';
+import izmirKonakGoztepeGuzelyaliSnapshotJson from './regions/izmir-konak-goztepe-guzelyali.json';
+import izmirKarsiyakaMavisehirSnapshotJson from './regions/izmir-karsiyaka-mavisehir.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -121,6 +123,8 @@ const IZMIR_KONAK_ALSANCAK_SNAPSHOT = izmirKonakAlsancakSnapshotJson as V3Verifi
 const IZMIR_KARSIYAKA_BOSTANLI_SNAPSHOT = izmirKarsiyakaBostanliSnapshotJson as V3VerifiedRegionSnapshot;
 const IZMIR_KARSIYAKA_CARSI_SNAPSHOT = izmirKarsiyakaCarsiSnapshotJson as V3VerifiedRegionSnapshot;
 const IZMIR_BORNOVA_MERKEZ_SNAPSHOT = izmirBornovaMerkezSnapshotJson as V3VerifiedRegionSnapshot;
+const IZMIR_KONAK_GOZTEPE_GUZELYALI_SNAPSHOT = izmirKonakGoztepeGuzelyaliSnapshotJson as V3VerifiedRegionSnapshot;
+const IZMIR_KARSIYAKA_MAVISEHIR_SNAPSHOT = izmirKarsiyakaMavisehirSnapshotJson as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -183,6 +187,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   IZMIR_KARSIYAKA_BOSTANLI_SNAPSHOT,
   IZMIR_KARSIYAKA_CARSI_SNAPSHOT,
   IZMIR_BORNOVA_MERKEZ_SNAPSHOT,
+  IZMIR_KONAK_GOZTEPE_GUZELYALI_SNAPSHOT,
+  IZMIR_KARSIYAKA_MAVISEHIR_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -650,6 +656,27 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   erzene: IZMIR_BORNOVA_MERKEZ_SNAPSHOT,
   'ergene-bornova': IZMIR_BORNOVA_MERKEZ_SNAPSHOT,
   'evka-3': IZMIR_BORNOVA_MERKEZ_SNAPSHOT,
+  'goztepe-guzelyali': IZMIR_KONAK_GOZTEPE_GUZELYALI_SNAPSHOT,
+  'izmir-konak-goztepe-guzelyali': IZMIR_KONAK_GOZTEPE_GUZELYALI_SNAPSHOT,
+  'goztepe-guzelyali-konak-izmir': IZMIR_KONAK_GOZTEPE_GUZELYALI_SNAPSHOT,
+  goztepe: IZMIR_KONAK_GOZTEPE_GUZELYALI_SNAPSHOT,
+  guzelyali: IZMIR_KONAK_GOZTEPE_GUZELYALI_SNAPSHOT,
+  'goztepe-izmir': IZMIR_KONAK_GOZTEPE_GUZELYALI_SNAPSHOT,
+  'guzelyali-izmir': IZMIR_KONAK_GOZTEPE_GUZELYALI_SNAPSHOT,
+  'kucukyali-izmir': IZMIR_KONAK_GOZTEPE_GUZELYALI_SNAPSHOT,
+  mithatpasa: IZMIR_KONAK_GOZTEPE_GUZELYALI_SNAPSHOT,
+  susuzdede: IZMIR_KONAK_GOZTEPE_GUZELYALI_SNAPSHOT,
+  'hakimiyet-i-milliye': IZMIR_KONAK_GOZTEPE_GUZELYALI_SNAPSHOT,
+  'goztepe-sahil': IZMIR_KONAK_GOZTEPE_GUZELYALI_SNAPSHOT,
+  'guzelyali-sahil': IZMIR_KONAK_GOZTEPE_GUZELYALI_SNAPSHOT,
+  mavisehir: IZMIR_KARSIYAKA_MAVISEHIR_SNAPSHOT,
+  'izmir-karsiyaka-mavisehir': IZMIR_KARSIYAKA_MAVISEHIR_SNAPSHOT,
+  'mavisehir-karsiyaka-izmir': IZMIR_KARSIYAKA_MAVISEHIR_SNAPSHOT,
+  'mavisehir-karsiyaka': IZMIR_KARSIYAKA_MAVISEHIR_SNAPSHOT,
+  'mavisehir-izmir': IZMIR_KARSIYAKA_MAVISEHIR_SNAPSHOT,
+  'mavisehir-sahil': IZMIR_KARSIYAKA_MAVISEHIR_SNAPSHOT,
+  'caher-dudayev': IZMIR_KARSIYAKA_MAVISEHIR_SNAPSHOT,
+  'aziz-nesin': IZMIR_KARSIYAKA_MAVISEHIR_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {

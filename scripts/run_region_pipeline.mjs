@@ -68,6 +68,8 @@ const PUBLISHED_REGION_KEYS = [
   'izmir-karsiyaka-bostanli',
   'izmir-karsiyaka-carsi',
   'izmir-bornova-merkez',
+  'izmir-konak-goztepe-guzelyali',
+  'izmir-karsiyaka-mavisehir',
 ];
 const NEARBY_POOL_KEY = 'istanbul-kadikoy-nearby-pool';
 const DEFAULT_REGION_ORDER = [...PUBLISHED_REGION_KEYS, NEARBY_POOL_KEY];

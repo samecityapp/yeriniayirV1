@@ -439,6 +439,29 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'panama coffee',
   'buzuki meyhane',
   'boho social pub',
+  'kokoreççi asım usta',
+  'kokorecci asim usta',
+  'kokoreçci asım usta',
+  'süt çiçeği',
+  'sut cicegi',
+  'caffe sacco',
+  'sıdık usta',
+  'sidik usta',
+  'sıdkı usta',
+  'sidki usta',
+  '1919 kahve',
+  'taşplak',
+  'tasplak',
+  'fabrice restaurant',
+  'musa gülçimen',
+  'musa gulcimen',
+  'izmir aspava',
+  'ferdi baba',
+  'gold yengeç',
+  'gold yengec',
+  'alsancak dostlar fırını - karşıyaka',
+  'alsancak dostlar firini - karsiyaka',
+  '%100 & more',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([
@@ -596,9 +619,17 @@ export function cleanMapsUri(uri?: string): string {
   return uri.split('&g_mp=')[0].trim();
 }
 
+const WORD_BOUNDARY_CHAIN_TOKENS = new Set(['nappo']);
+
 export function isBlockedChain(name: string): boolean {
   const norm = normalizeTr(name);
-  return CHAIN_BLOCKLIST.some((token) => norm.includes(normalizeTr(token)));
+  return CHAIN_BLOCKLIST.some((token) => {
+    const normToken = normalizeTr(token);
+    if (WORD_BOUNDARY_CHAIN_TOKENS.has(normToken)) {
+      return new RegExp(`(?:^|[^a-z0-9])${normToken}(?:$|[^a-z0-9])`).test(norm);
+    }
+    return norm.includes(normToken);
+  });
 }
 
 export function isFoodOrDrinkPlace(
