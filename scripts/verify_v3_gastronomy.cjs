@@ -129,6 +129,8 @@ const REGION_KEYS = [
   'izmir-seferihisar-sigacik',
   'izmir-foca',
   'sanliurfa-merkez',
+  'mardin-merkez',
+  'diyarbakir-merkez',
 ];
 
 const CANONICAL_SLUGS = [
@@ -194,14 +196,18 @@ test('all published snapshots follow schema v3, canonical order, dynamic caps (1
       key === 'izmir-urla' ||
       key === 'izmir-seferihisar-sigacik' ||
       key === 'izmir-foca';
-    const isHeritage = key === 'gaziantep-merkez' || key === 'sanliurfa-merkez';
+    const isHeritage =
+      key === 'gaziantep-merkez' ||
+      key === 'sanliurfa-merkez' ||
+      key === 'mardin-merkez' ||
+      key === 'diyarbakir-merkez';
     const isAntalya =
       key === 'antalya-kaleici' ||
       key === 'antalya-lara' ||
       key === 'antalya-konyaalti';
     assert.ok(
       isHeritage
-        ? data.categories.length === 8
+        ? (key === 'mardin-merkez' ? data.categories.length === 7 : data.categories.length === 8)
         : isAntalya
         ? data.categories.length >= 8 && data.categories.length <= 9
         : isCoastal
@@ -229,6 +235,10 @@ test('all published snapshots follow schema v3, canonical order, dynamic caps (1
       const expectedHeritageSlugs =
         key === 'gaziantep-merkez'
           ? ['kebap', 'beyran', 'baklava', 'katmer', 'antep-mutfagi', 'kahvalti', 'kahve', 'denemelisin']
+          : key === 'mardin-merkez'
+          ? ['mardin-mutfagi', 'kebap-corba', 'suryani-sarabi-teras', 'kahiye-ve-tatli', 'kahvalti', 'kahve', 'denemelisin']
+          : key === 'diyarbakir-merkez'
+          ? ['ciger', 'kebap-doner', 'diyarbakir-mutfagi', 'paca-corba', 'burma-kadayif', 'kahvalti', 'kahve', 'denemelisin']
           : ['ciger', 'kebap', 'tirit-paca', 'sillik-kadayif', 'urfa-mutfagi', 'kahvalti', 'kahve', 'denemelisin'];
       assert.deepEqual(slugs, expectedHeritageSlugs, `Unexpected heritage categories in ${key}`);
     } else {
@@ -425,7 +435,7 @@ test('Gumusluk dynamically prunes hamburger & kahve ("Yoksa Onerme") and exposes
   assert.equal(gumusluk.categories.some((c) => c.slug === 'balik-deniz-urunleri'), true);
 });
 
-test('all 67 published regions have zero overlapping placeIds, valid ratings, and canonical CID links', () => {
+test('all 69 published regions have zero overlapping placeIds, valid ratings, and canonical CID links', () => {
   const globalPlaceIds = new Set();
   for (const { key, data } of snapshots) {
     const expectedDistricts =
@@ -443,6 +453,10 @@ test('all 67 published regions have zero overlapping placeIds, valid ratings, an
         ? ['Beyoğlu', 'Taksim']
         : key === 'sanliurfa-merkez'
         ? ['Eyyübiye', 'Haliliye', 'Karaköprü', 'Şanlıurfa Merkez', 'Merkez', 'Haşimiye meydanı']
+        : key === 'mardin-merkez'
+        ? ['Artuklu', 'Mardin Merkez', 'Merkez']
+        : key === 'diyarbakir-merkez'
+        ? ['Sur', 'Yenişehir', 'Kayapınar', 'Bağlar', 'Diyarbakır Merkez', 'Merkez']
         : data.region.district.split('&').map((s) => s.trim());
     for (const venue of data.venues) {
       assert.ok(!globalPlaceIds.has(venue.placeId), `Cross-region or duplicate placeId ${venue.placeId} (${venue.name} in ${key})`);
@@ -2224,6 +2238,89 @@ test('policy gates reject closed, chain, out-of-neighborhood, and degraded candi
     assert.ok(sanliurfaMap.get(lowCtrl).reason.includes('below_quality_threshold'));
   }
 
+  const mardinAudit = JSON.parse(
+    fs.readFileSync(path.join(ROOT, 'work/gastronomy-v3/mardin-merkez.audit.json'), 'utf8')
+  );
+  const mardinMap = new Map(mardinAudit.decisions.map((d) => [d.id, d]));
+  for (const chainCtrl of [
+    'ctrl-mardin-espressolab-chain',
+    'ctrl-mardin-coffy-chain',
+    'ctrl-mardin-artukbey-chain',
+    'ctrl-mardin-coffee-kangoo-chain',
+    'ctrl-mardin-arabica-chain',
+    'ctrl-mardin-van-kahvalti-chain',
+    'ctrl-mardin-sadik-kunefe-chain',
+  ]) {
+    assert.equal(mardinMap.get(chainCtrl).accepted, false);
+    assert.equal(mardinMap.get(chainCtrl).reason, 'chain_or_franchise');
+  }
+  assert.equal(mardinMap.get('ctrl-mardin-reyhan-nonfood').accepted, false);
+  assert.ok(mardinMap.get('ctrl-mardin-reyhan-nonfood').reason.includes('invalid_place_type'));
+  for (const outCtrl of [
+    'ctrl-mardin-kiziltepe-sabri-dis',
+    'ctrl-mardin-midyat-cihan-dis',
+  ]) {
+    assert.equal(mardinMap.get(outCtrl).accepted, false);
+    assert.ok(mardinMap.get(outCtrl).reason.includes('outside_strict_neighborhood'));
+  }
+  for (const lowCtrl of [
+    'ctrl-mardin-sultan-low',
+    'ctrl-mardin-harire-low',
+    'ctrl-mardin-mirhan-low',
+    'ctrl-mardin-isot-low',
+  ]) {
+    assert.equal(mardinMap.get(lowCtrl).accepted, false);
+    assert.ok(mardinMap.get(lowCtrl).reason.includes('below_quality_threshold'));
+  }
+
+  const diyarbakirAudit = JSON.parse(
+    fs.readFileSync(path.join(ROOT, 'work/gastronomy-v3/diyarbakir-merkez.audit.json'), 'utf8')
+  );
+  const dbkMap = new Map(diyarbakirAudit.decisions.map((d) => [d.id, d]));
+  for (const chainCtrl of [
+    'ctrl-dbk-sitki-usta-sur',
+    'ctrl-dbk-sitki-usta-ofis',
+    'ctrl-dbk-firin-ci-chain',
+    'ctrl-dbk-pacaci-fazil-chain',
+    'ctrl-dbk-walkers-chain',
+    'ctrl-dbk-espressolab-chain',
+    'ctrl-dbk-soulmate-chain',
+    'ctrl-dbk-nevada-chain',
+    'ctrl-dbk-firuze-chain',
+    'ctrl-dbk-bedri-usta-chain',
+    'ctrl-dbk-dedecan-chain',
+    'ctrl-dbk-van-kahvalti-chain',
+    'ctrl-dbk-sadik-kunefe-chain',
+  ]) {
+    assert.equal(dbkMap.get(chainCtrl).accepted, false);
+    assert.equal(dbkMap.get(chainCtrl).reason, 'chain_or_franchise');
+  }
+  assert.equal(dbkMap.get('ctrl-dbk-luuma-chocolate').accepted, false);
+  assert.ok(dbkMap.get('ctrl-dbk-luuma-chocolate').reason.includes('kahve_category_not_coffee_specialist'));
+  for (const nonFoodCtrl of [
+    'ctrl-dbk-hasanpasa-landmark',
+    'ctrl-dbk-suluklu-landmark',
+  ]) {
+    assert.equal(dbkMap.get(nonFoodCtrl).accepted, false);
+    assert.ok(dbkMap.get(nonFoodCtrl).reason.includes('invalid_place_type'));
+  }
+  for (const outCtrl of [
+    'ctrl-dbk-ergani-veysi-dis',
+    'ctrl-dbk-sur-mermer-dis',
+  ]) {
+    assert.equal(dbkMap.get(outCtrl).accepted, false);
+    assert.ok(dbkMap.get(outCtrl).reason.includes('outside_strict_neighborhood'));
+  }
+  for (const lowCtrl of [
+    'ctrl-dbk-cigerci-ibo-low',
+    'ctrl-dbk-mustafa-kahvalti-low',
+    'ctrl-dbk-kadri-low',
+    'ctrl-dbk-onur-low',
+  ]) {
+    assert.equal(dbkMap.get(lowCtrl).accepted, false);
+    assert.ok(dbkMap.get(lowCtrl).reason.includes('below_quality_threshold'));
+  }
+
   const caddeAudit = JSON.parse(
     fs.readFileSync(path.join(ROOT, 'work/gastronomy-v3/istanbul-kadikoy-caddebostan.audit.json'), 'utf8')
   );
@@ -2903,7 +3000,7 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
   const provider = providerMod.createRealFoodProvider(food);
 
   const ready = provider.getReadyRegions();
-  assert.equal(ready.length, 67);
+  assert.equal(ready.length, 69);
   assert.deepEqual(
     ready.map((r) => r.slug),
     [
@@ -2974,6 +3071,8 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
       'sigacik',
       'foca',
       'sanliurfa',
+      'mardin',
+      'diyarbakir',
     ]
   );
 
@@ -3259,6 +3358,21 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
   assert.equal(provider.getLocationBySlug('balikligol')?.slug, 'sanliurfa');
   assert.equal(provider.getLocationBySlug('gumruk-hani')?.slug, 'sanliurfa');
   assert.ok(provider.searchLocations('urfa').some((l) => l.slug === 'sanliurfa'));
+  assert.equal(provider.getLocationBySlug('mardin')?.slug, 'mardin');
+  assert.equal(provider.getLocationBySlug('mardin-merkez')?.slug, 'mardin');
+  assert.equal(provider.getLocationBySlug('artuklu')?.slug, 'mardin');
+  assert.equal(provider.getLocationBySlug('eski-mardin')?.slug, 'mardin');
+  assert.equal(provider.getLocationBySlug('sar-mahallesi')?.slug, 'mardin');
+  assert.ok(provider.searchLocations('mardin').some((l) => l.slug === 'mardin'));
+  assert.equal(provider.getLocationBySlug('diyarbakir')?.slug, 'diyarbakir');
+  assert.equal(provider.getLocationBySlug('diyarbakir-merkez')?.slug, 'diyarbakir');
+  assert.equal(provider.getLocationBySlug('amed')?.slug, 'diyarbakir');
+  assert.equal(provider.getLocationBySlug('sur')?.slug, 'diyarbakir');
+  assert.equal(provider.getLocationBySlug('surici')?.slug, 'diyarbakir');
+  assert.equal(provider.getLocationBySlug('dagkapi')?.slug, 'diyarbakir');
+  assert.equal(provider.getLocationBySlug('kayapinar')?.slug, 'diyarbakir');
+  assert.equal(provider.getLocationBySlug('diclekent')?.slug, 'diyarbakir');
+  assert.ok(provider.searchLocations('diyarbakır').some((l) => l.slug === 'diyarbakir'));
   const izmirMatches = provider.searchLocations('izmir').map((l) => l.slug);
   assert.ok(
     izmirMatches.includes('alsancak') &&
@@ -3305,6 +3419,16 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
     'viransehir',
     'suruc',
     'akcakale',
+    'midyat',
+    'kiziltepe',
+    'nusaybin',
+    'savur',
+    'yesilli',
+    'ergani',
+    'silvan',
+    'bismil',
+    'cinar',
+    'egil',
   ]) {
     assert.equal(provider.getLocationBySlug(unpublishedNeighbor), undefined);
   }
@@ -3312,7 +3436,7 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
   // Unpublished regions cannot resolve
   assert.equal(provider.getLocationBySlug('beylerbeyi'), undefined);
 
-  // Verify all 67 published regions resolve cleanly through readIntegrationDiscovery
+  // Verify all 69 published regions resolve cleanly through readIntegrationDiscovery
   for (const slug of [
     'moda',
     'kadikoy',
@@ -3381,6 +3505,8 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
     'sigacik',
     'foca',
     'sanliurfa',
+    'mardin',
+    'diyarbakir',
   ]) {
     const disc = await discoveryMod.readIntegrationDiscovery(slug, '');
     assert.ok(disc, `Missing discovery for ${slug}`);
@@ -5694,6 +5820,122 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
         );
       }
     }
+    if (slug === 'mardin') {
+      assert.equal(p.getLocationBySlug('mardin')?.locative, "Mardin Merkez'de");
+      assert.equal(disc.region.displayName, 'Mardin Merkez');
+      const cats = p.getRegionCategories(disc.region.id);
+      assert.equal(cats.length, 7, 'mardin must expose 7 culinary heritage categories');
+      assert.equal(cats.some((c) => c.slug === 'pizza'), false, 'mardin must not expose pizza');
+      assert.equal(cats.some((c) => c.slug === 'hamburger'), false, 'mardin must not expose hamburger');
+      assert.equal(f.venues.length, 31, 'mardin must expose 31 verified venues');
+      for (const v of f.venues) {
+        assert.ok(
+          v.location.endsWith(', Mardin'),
+          `mardin venue location must end with ', Mardin': ${v.name} -> ${v.location}`
+        );
+      }
+      const names = f.venues.map((v) => v.name);
+      for (const expected of [
+        'Leyli Muse Mutfak restoran',
+        'Lummi Restaurant',
+        'Zamarot1890',
+        'Yay Konağı',
+        'Cercis Murat Konağı',
+        'Dostlar Ciğercisi Şef Mehmet',
+        'Kebapçı Yusuf Dayı',
+        'Çorbacı Talip',
+        'Piyal Wine House',
+        'İzla art Cafe',
+        'Kahiye Mardin',
+        'Tarihi Mardin Kahvaltıcısı',
+        'Marangozlar Kahvesi',
+        'Tarihi Mardin Kahvecisi',
+        'Kebapçı Rıdo',
+        'Kadim Mokid Mutfağı',
+      ]) {
+        assert.ok(names.some((n) => n.includes(expected)), `mardin missing ${expected}`);
+      }
+      for (const forbidden of [
+        'Espressolab',
+        'Coffy',
+        'Artukbey',
+        'Coffee Kangoo',
+        'Arabica',
+        'Van Kahvaltı Sarayı',
+        'Sadık Künefe',
+        'Midyat',
+        'Kızıltepe',
+        'Reyhan Restaurant',
+      ]) {
+        assert.equal(
+          names.some((n) => n.toLocaleLowerCase('tr').includes(forbidden.toLocaleLowerCase('tr'))),
+          false,
+          `mardin must exclude ${forbidden}`
+        );
+      }
+    }
+    if (slug === 'diyarbakir') {
+      assert.equal(p.getLocationBySlug('diyarbakir')?.locative, "Diyarbakır Merkez'de");
+      assert.equal(disc.region.displayName, 'Diyarbakır Merkez');
+      const cats = p.getRegionCategories(disc.region.id);
+      assert.equal(cats.length, 8, 'diyarbakir must expose 8 culinary heritage categories');
+      assert.equal(cats.some((c) => c.slug === 'pizza'), false, 'diyarbakir must not expose pizza');
+      assert.equal(cats.some((c) => c.slug === 'hamburger'), false, 'diyarbakir must not expose hamburger');
+      assert.equal(f.venues.length, 38, 'diyarbakir must expose 38 verified venues');
+      for (const v of f.venues) {
+        assert.ok(
+          v.location.endsWith(', Diyarbakır'),
+          `diyarbakir venue location must end with ', Diyarbakır': ${v.name} -> ${v.location}`
+        );
+      }
+      const names = f.venues.map((v) => v.name);
+      for (const expected of [
+        'Diyarbekir Ciğer Evi',
+        'Cigerci Apo Suriçi',
+        'Ciğerci Hacı Anzele',
+        'Küçebaşı Ciğercisi',
+        'Paşa Kebap',
+        'Beroş restaurant',
+        'Meşhur Kebapçı Hacı Halid',
+        'Çorbacı ve Hindici zahid ustanın yeri',
+        'Paçaçı Şaban Usta',
+        'Katmerci İbo Dayı',
+        'Safir Künefe&Baklava',
+        'Kadayıfçı Hacı Levent',
+        'Hewş Cafe-Kahvaltı',
+        'Tarihi Diyarbakır Konağı',
+        'Morgen Coffee House',
+        'Valinor Coffee',
+        'Ciğerci Xale Meheme',
+        'UMUT CİĞERCİSİ',
+        'Nasır Usta Adana Kebapçısı',
+      ]) {
+        assert.ok(names.some((n) => n.includes(expected)), `diyarbakir missing ${expected}`);
+      }
+      for (const forbidden of [
+        'Sıtkı Usta',
+        'Fırın-ci',
+        'Paçacı Fazıl Usta',
+        "Walker's",
+        'Espressolab',
+        'Soulmate',
+        'Nevada Coffee',
+        'Firuze Kahve',
+        'Bedri Usta',
+        'Dedecan',
+        'Van Kahvaltı Sarayı',
+        'Sadık Künefe',
+        'Luuma',
+        'Ergani',
+        'Silvan',
+      ]) {
+        assert.equal(
+          names.some((n) => n.toLocaleLowerCase('tr').includes(forbidden.toLocaleLowerCase('tr'))),
+          false,
+          `diyarbakir must exclude ${forbidden}`
+        );
+      }
+    }
     if (slug === 'kosuyolu-acibadem') {
       assert.equal(p.getLocationBySlug('kosuyolu-acibadem')?.locative, "Koşuyolu ve Acıbadem'de");
       const cats = p.getRegionCategories(disc.region.id);
@@ -6917,9 +7159,9 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
   }
 });
 
-test('V3.6 strict chain blocklist, coffee purity, and >=4.4 quality floor across all 67 snapshots', () => {
+test('V3.6 strict chain blocklist, coffee purity, and >=4.4 quality floor across all 69 snapshots', () => {
   const bannedRe =
-    /pizza v|kaffee schütz|kaffee schutz|adile sultan|hane çikolata|çanak kebap|brand burger|butcher's burger|vakko|filizler köftecisi|çengelköy börekçisi|kirpi|intiba döner|la veria|döner bank|doner bank|burger evim|nazar profiterol|pizzalazza|simple co|5masa|develi|bedri usta|divan brasserie|perran ocakbaşı|coffee manifesto|balta burger|beylerbeyi profiterol|saltbae|the house cafe|faruk güllüoğlu|hafız mustafa|cro & cups|white burger|biber burger|perlo's|burgerlab|akali|federal galata|ot cafe|pizza krema|sun brothers|fres burger|napoli gourmet|sliceguy|betro burger|the hunger|upper crust|selamlique|mikel coffee|pasaport pizza|8one burger|bodrum mantı|bodrum manti|casita|grandma|nusr-et|nusret|david people|paper roasting|asırlık tencere|asirlik tencere|tarihi tencere|hopdaddy|fiko yeniköy|fiko yenikoy|fiko ocakbaşı|fiko ocakbasi|voi yeniköy|voi yenikoy|voi göktürk|voi gokturk|voi coffee|ioki|girandola|numnum|il forno|laos coffee|kolcuoğlu|kolcuoglu|emmy burger|hızlı burger|hizli burger|noww|cup of joy|backhaus|karafırın|karafirin|pelit|coni&co|carl's jr|mezzaluna|serafina|zsa zsa zsu|blackjack pizza|eleos|moc pera|ministry of coffee|noir pit|miss pizza|cecconi's|yesen burger|bambi cafe|saray muhallebicisi|bravo coffee roastery|twins coffee roasters|hero's pizza|mono burger|pera döner|pera doner|simit sarayi|varuna gezgin|shakespeare|mahalle burger|hmbrgr|mackbear|the big man|robert's coffee|roberts coffee|yemen kahvesi|dodo pizza|knockout burger|the beaver coffee|chemex coffee|rotto pizzeria|ottobros|balıkçı halil|balikci halil|milklaç|milklac|dospresso|skull street food|skull kaleiçi|skull kaleici|route burger|tezgah burger|schiller|franco's pizza|francos pizza|sıralı kebap|sirali kebap|paçacı şemsi|pacaci semsi|akdeniz dondurma|giliğ|gilig|pikan fırın|pikan firin|texas buffalo|arap nazmi|404 coffee|burger 242|pizza la vera|moc coffee|moc coffee roastery|levent borek|levent börek|saliha sultan|nurdos|yomumu|mama africa|özsüt|ozsut|kocatepe kahve|surf coffee|gönül kahvesi|gonul kahvesi|soulmate coffee|coffeemania|coffee mania|artukbey|bayramefendi|osmanlı kahvecisi|osmanli kahvecisi|fırıncı baba|firinci baba|akat ankara simit|simit noktası|simit noktasi|harmoni fırın|harmoni firin|romm coffee|zulu coffee|luuq coffee|endless pizza|enjoy burger|just burger|tadim tantuni|tadım tantuni|hanci bistro|hancı bistro|hanci pastane|citirim pastane|çıtırım pastane|pizza tomato|q stand coffee|alaçatı muhallebicisi|alacati muhallebicisi|harput dibek|harpurdibek|harputdibek|make me joi|coffee de madrid|goodeer coffee|gua coffee|federico|understone|panama coffee|burger home|lokum döner|lokum doner|bakku coffee|sirius coffee|ohannes|cajun corner|bolulu hasan usta|pellini|coffee lab|kaleiçi muhallebicisi|kaleici muhallebicisi|sobig|so big|divan pastane|divan bodrum|huqqa|meet lab|five o'clock|five o clock|mua gelatieri|mua yalikavak|godiva|blak coffee|gurkan sef|gürkan şef|nespresso|karaarslan et|zuma bodrum|novikov|bagatelle|hakkasan|gaia bodrum|firin bi tatli tuzlu|fırın bi tatlı tuzlu|lokanta by divan|battalbey|battal bey|big chefs|bitez dondurmacisi|bitez dondurmacısı|bitez dondurma|bodrum dondurmacisi|bodrum dondurmacısı|ekleristan|endlesspizza|costa coffee|bursa kebap evi|chinese inn|royal firin|royal fırın|royal pastanesi|karya firin|karya fırın|maharet manti|maharet mantı|oses cig kofte|oses çiğ köfte|oses cigkofte|magnolia shop|buselik meyhane|caytaze|çaytaze|meliha hanim|meliha hanım|obadan|kircicegi|kırçiçeği|tekin usta|books & coffee marmaris|books & coffee uzunyali|books & coffee uzunyalı|coffee kuppa|kupa coffee|tuzu biberi|reyhan pastanesi|bogazici restaurant|boğaziçi restaurant|baristocrat|alsancak unlu mamul|kumrucu sevki|kumrucu şevki|burgerhane|spada coffee|bravo patisserie|brew mood|kahve diyari|kahve diyarı|leone patisserie|burger street|goldenfingers|slices of the world|sasso fried chicken|two hands burger|uptown pizza|carre gusto|cizz bizz|cızz bızz|tavaci recep usta|tavacı recep usta|midyeci ahmet|chop bbq|buckin coffee|poka coffee|un posto|berry coffee|neones burger|elinden firin|elinden fırın|pizza pizzeria|kahvalti kafasi|kahvaltı kafası|cizbiz balik|cızbız balık|helsinki pocket pizza|helsinki pizza|pizza rucola|durumcu esnaf|dürümcü esnaf|1924 gonen|1924 gönen|topraktan|noww croissants|more coffee|burger's way|burger’s way|soylem bufe|söylem büfe|her an burger|choconut|cochem coffee|buzuki meyhane|boho social pub|kokoreççi asım usta|kokorecci asim usta|kokoreçci asım usta|süt çiçeği|sut cicegi|caffe sacco|sıdık usta|sidik usta|1919 kahve|taşplak|tasplak|fabrice restaurant|musa gülçimen|musa gulcimen|izmir aspava|ferdi baba|gold yengeç|gold yengec|alsancak dostlar fırını - karşıyaka|alsancak dostlar firini - karsiyaka|%100 & more|paprica|bamburger|mahalle alaçatı|mahalle alacati|local cups|efendiler kulübü|efendiler kulubu|alaköy pastanesi|alakoy pastanesi|dondurmino|lime alaçatı|lime alacati|imren alaçatı|imren alacati|alaçatı tatlıcısı imren|alacati tatlicisi imren|imren helva|terramur|fabrice çeşme|fabrice cesme|petra roasting|route 95|samimi izmir|samimi urla|ru coffee house|baristocrat|coffee de madrid|leone patisserie|léone patisserie|pasta kodu|ayaküstü kahve|ayakustu kahve|hisarönü meşhur kazandibi|hisaronu meshur kazandibi|girit pastanesi 1950|meşhur dondurmacım maraş|meshur dondurmacim maras|kahve deryası|kahve deryasi|dedecan|cabra loca|coffee kangoo|gloria jean|suadiye coffee|colombia coffee/i;
+    /pizza v|kaffee schütz|kaffee schutz|adile sultan|hane çikolata|çanak kebap|brand burger|butcher's burger|vakko|filizler köftecisi|çengelköy börekçisi|kirpi|intiba döner|la veria|döner bank|doner bank|burger evim|nazar profiterol|pizzalazza|simple co|5masa|develi|bedri usta|divan brasserie|perran ocakbaşı|coffee manifesto|balta burger|beylerbeyi profiterol|saltbae|the house cafe|faruk güllüoğlu|hafız mustafa|cro & cups|white burger|biber burger|perlo's|burgerlab|akali|federal galata|ot cafe|pizza krema|sun brothers|fres burger|napoli gourmet|sliceguy|betro burger|the hunger|upper crust|selamlique|mikel coffee|pasaport pizza|8one burger|bodrum mantı|bodrum manti|casita|grandma|nusr-et|nusret|david people|paper roasting|asırlık tencere|asirlik tencere|tarihi tencere|hopdaddy|fiko yeniköy|fiko yenikoy|fiko ocakbaşı|fiko ocakbasi|voi yeniköy|voi yenikoy|voi göktürk|voi gokturk|voi coffee|ioki|girandola|numnum|il forno|laos coffee|kolcuoğlu|kolcuoglu|emmy burger|hızlı burger|hizli burger|noww|cup of joy|backhaus|karafırın|karafirin|pelit|coni&co|carl's jr|mezzaluna|serafina|zsa zsa zsu|blackjack pizza|eleos|moc pera|ministry of coffee|noir pit|miss pizza|cecconi's|yesen burger|bambi cafe|saray muhallebicisi|bravo coffee roastery|twins coffee roasters|hero's pizza|mono burger|pera döner|pera doner|simit sarayi|varuna gezgin|shakespeare|mahalle burger|hmbrgr|mackbear|the big man|robert's coffee|roberts coffee|yemen kahvesi|dodo pizza|knockout burger|the beaver coffee|chemex coffee|rotto pizzeria|ottobros|balıkçı halil|balikci halil|milklaç|milklac|dospresso|skull street food|skull kaleiçi|skull kaleici|route burger|tezgah burger|schiller|franco's pizza|francos pizza|sıralı kebap|sirali kebap|paçacı şemsi|pacaci semsi|akdeniz dondurma|giliğ|gilig|pikan fırın|pikan firin|texas buffalo|arap nazmi|404 coffee|burger 242|pizza la vera|moc coffee|moc coffee roastery|levent borek|levent börek|saliha sultan|nurdos|yomumu|mama africa|özsüt|ozsut|kocatepe kahve|surf coffee|gönül kahvesi|gonul kahvesi|soulmate coffee|coffeemania|coffee mania|artukbey|bayramefendi|osmanlı kahvecisi|osmanli kahvecisi|fırıncı baba|firinci baba|akat ankara simit|simit noktası|simit noktasi|harmoni fırın|harmoni firin|romm coffee|zulu coffee|luuq coffee|endless pizza|enjoy burger|just burger|tadim tantuni|tadım tantuni|hanci bistro|hancı bistro|hanci pastane|citirim pastane|çıtırım pastane|pizza tomato|q stand coffee|alaçatı muhallebicisi|alacati muhallebicisi|harput dibek|harpurdibek|harputdibek|make me joi|coffee de madrid|goodeer coffee|gua coffee|federico|understone|panama coffee|burger home|lokum döner|lokum doner|bakku coffee|sirius coffee|ohannes|cajun corner|bolulu hasan usta|pellini|coffee lab|kaleiçi muhallebicisi|kaleici muhallebicisi|sobig|so big|divan pastane|divan bodrum|huqqa|meet lab|five o'clock|five o clock|mua gelatieri|mua yalikavak|godiva|blak coffee|gurkan sef|gürkan şef|nespresso|karaarslan et|zuma bodrum|novikov|bagatelle|hakkasan|gaia bodrum|firin bi tatli tuzlu|fırın bi tatlı tuzlu|lokanta by divan|battalbey|battal bey|big chefs|bitez dondurmacisi|bitez dondurmacısı|bitez dondurma|bodrum dondurmacisi|bodrum dondurmacısı|ekleristan|endlesspizza|costa coffee|bursa kebap evi|chinese inn|royal firin|royal fırın|royal pastanesi|karya firin|karya fırın|maharet manti|maharet mantı|oses cig kofte|oses çiğ köfte|oses cigkofte|magnolia shop|buselik meyhane|caytaze|çaytaze|meliha hanim|meliha hanım|obadan|kircicegi|kırçiçeği|tekin usta|books & coffee marmaris|books & coffee uzunyali|books & coffee uzunyalı|coffee kuppa|kupa coffee|tuzu biberi|reyhan pastanesi|bogazici restaurant|boğaziçi restaurant|baristocrat|alsancak unlu mamul|kumrucu sevki|kumrucu şevki|burgerhane|spada coffee|bravo patisserie|brew mood|kahve diyari|kahve diyarı|leone patisserie|burger street|goldenfingers|slices of the world|sasso fried chicken|two hands burger|uptown pizza|carre gusto|cizz bizz|cızz bızz|tavaci recep usta|tavacı recep usta|midyeci ahmet|chop bbq|buckin coffee|poka coffee|un posto|berry coffee|neones burger|elinden firin|elinden fırın|pizza pizzeria|kahvalti kafasi|kahvaltı kafası|cizbiz balik|cızbız balık|helsinki pocket pizza|helsinki pizza|pizza rucola|durumcu esnaf|dürümcü esnaf|1924 gonen|1924 gönen|topraktan|noww croissants|more coffee|burger's way|burger’s way|soylem bufe|söylem büfe|her an burger|choconut|cochem coffee|buzuki meyhane|boho social pub|kokoreççi asım usta|kokorecci asim usta|kokoreçci asım usta|süt çiçeği|sut cicegi|caffe sacco|sıdık usta|sidik usta|1919 kahve|taşplak|tasplak|fabrice restaurant|musa gülçimen|musa gulcimen|izmir aspava|ferdi baba|gold yengeç|gold yengec|alsancak dostlar fırını - karşıyaka|alsancak dostlar firini - karsiyaka|%100 & more|paprica|bamburger|mahalle alaçatı|mahalle alacati|local cups|efendiler kulübü|efendiler kulubu|alaköy pastanesi|alakoy pastanesi|dondurmino|lime alaçatı|lime alacati|imren alaçatı|imren alacati|alaçatı tatlıcısı imren|alacati tatlicisi imren|imren helva|terramur|fabrice çeşme|fabrice cesme|petra roasting|route 95|samimi izmir|samimi urla|ru coffee house|baristocrat|coffee de madrid|leone patisserie|léone patisserie|pasta kodu|ayaküstü kahve|ayakustu kahve|hisarönü meşhur kazandibi|hisaronu meshur kazandibi|girit pastanesi 1950|meşhur dondurmacım maraş|meshur dondurmacim maras|kahve deryası|kahve deryasi|dedecan|cabra loca|coffee kangoo|gloria jean|suadiye coffee|colombia coffee|kadayıfçı sıtkı|kadayifci sitki|sıtkı usta|sitki usta|fırın-ci|firin-ci|firuze kahve akademi|firuze kahve mardin|paçacı fazıl|pacaci fazil|walker's|walkers coffee|van kahvaltı sarayı|van kahvalti sarayi|sadık künefe|sadik kunefe/i;
   const nonCoffeeRe = /çikolata|cikolata|pastanesi|unlu mamülleri|börek|borek|baklava/i;
 
   for (const { key, data } of snapshots) {

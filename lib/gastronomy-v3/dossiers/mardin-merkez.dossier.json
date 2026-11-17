@@ -1,0 +1,2290 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "mardin-merkez",
+  "displayName": "Mardin Merkez",
+  "verifiedAt": "2026-11-17T14:11:51.871Z",
+  "selectedCount": 31,
+  "rejectedControls": [
+    {
+      "id": "ctrl-mardin-espressolab-chain",
+      "resolvedName": "Espressolab Mardin Antik Kent AVM",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-mardin-coffy-chain",
+      "resolvedName": "Coffy Mardin Antikkent",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-mardin-artukbey-chain",
+      "resolvedName": "Artukbey Kahve",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-mardin-coffee-kangoo-chain",
+      "resolvedName": "Coffee Kangoo Mardin",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-mardin-arabica-chain",
+      "resolvedName": "Arabica Coffee House",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-mardin-van-kahvalti-chain",
+      "resolvedName": "Van Kahvaltı Sarayı | Mardin Antik Kent AVM",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-mardin-sadik-kunefe-chain",
+      "resolvedName": "Sadık Künefe Mardin",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-mardin-kiziltepe-sabri-dis",
+      "resolvedName": "Sabri Usta Kebap salonu",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Şar/Sar/Teker/Medrese/Latifiye/Ulucami/Savurkapı/Savurkapi/Diyarbakır Kapı/Çabuk/Yenişehir/13 Mart/Yalım/Nur/Cumhuriyet/Şehidiye/Eminüddin/Kışla/Hamzabey/Necmettin/Yeniyol/Merkez, adres: Sabri Usta Kebap, İpek, İpekyolu No:35 D:01 D400, 47400 Kızıltepe/Mardin)"
+    },
+    {
+      "id": "ctrl-mardin-midyat-cihan-dis",
+      "resolvedName": "Midyat Cihan Lokantası",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Şar/Sar/Teker/Medrese/Latifiye/Ulucami/Savurkapı/Savurkapi/Diyarbakır Kapı/Çabuk/Yenişehir/13 Mart/Yalım/Nur/Cumhuriyet/Şehidiye/Eminüddin/Kışla/Hamzabey/Necmettin/Yeniyol/Merkez, adres: Gölcük, 47510 Midyat/Mardin)"
+    },
+    {
+      "id": "ctrl-mardin-reyhan-nonfood",
+      "resolvedName": "Reyhan Restaurant ( Sıra gecesi ) Teras Cafe",
+      "reason": "invalid_place_type:live_music_venue"
+    },
+    {
+      "id": "ctrl-mardin-sultan-low",
+      "resolvedName": "Tarihi Sultan Sofrası",
+      "reason": "below_quality_threshold:★4(2408)"
+    },
+    {
+      "id": "ctrl-mardin-harire-low",
+      "resolvedName": "Harire Mardin",
+      "reason": "below_quality_threshold:★3.4(2003)"
+    },
+    {
+      "id": "ctrl-mardin-mirhan-low",
+      "resolvedName": "Mir Han Cafe Restoran",
+      "reason": "below_quality_threshold:★3.9(237)"
+    },
+    {
+      "id": "ctrl-mardin-isot-low",
+      "resolvedName": "İsot Lahmacun",
+      "reason": "below_quality_threshold:★4(2067)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "mardin-leyli-muse-mutfak",
+      "categoryId": "yoresel",
+      "resolvedName": "Leyli Muse Mutfak restoran",
+      "branchName": "Şar mahallesi 239.bademci sokak no:17 Cumhuriyet meydanı 239.bademci sokak, Şar, Kültür Sok. no:17, 47100 Artuklu/Mardin",
+      "placeId": "ChIJI65hAZGJCkARa39Hwd_SW34",
+      "coordinates": {
+        "lat": 37.3138277,
+        "lng": 40.7339881
+      },
+      "rating": 4.7,
+      "userRatingCount": 7210,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://leylimusemutfak.com/",
+      "mapsUri": "https://maps.google.com/?cid=9105102930121817963",
+      "recommendedPrimary": [
+        "Kitel Raha (Haşlanmış İçli Köfte)",
+        "İrok & Sembusek",
+        "Bademli Haşu Pilavı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Vegan ve Vejetaryen Yöresel Alternatifler",
+          "note": "Zeytinyağlılar, yerel otlu mezeler ve etsiz Mardin tabaklarıyla farklı beslenme tercihlerine de yer açıyor.",
+          "proof": "leylimusemutfak.com menü kapsamı ve journavel.com notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Restore edilmiş tarihî taş duvarlı salon ve avlu masaları",
+        "crowdAndNoise": "Akşam yemekleri ve hafta sonu gezi saatlerinde yoğun talep",
+        "disadvantage": "Eski Mardin dar sokağında kaldığı için kapı önüne araçla giriş mümkün değil.",
+        "transit": "Şar Mahallesi Cumhuriyet Meydanı Kültür Sokak No:17 (239. Bademci Sk.) üzerinde yürüyüş mesafesinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Leyli Muse Resmi Sitesi",
+          "url": "https://leylimusemutfak.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Konak konumu ve yöresel set menü yapısı"
+        },
+        {
+          "title": "Journavel Mardin Rehberi",
+          "url": "https://journavel.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kitel raha, bademli haşu pilavı ve irok önerisi"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Binlerce misafirle yüksek puan istikrarı"
+        }
+      ],
+      "pros": [
+        "Geleneksel Süryani ve Arap mutfağı reçetelerine sadık mutfak",
+        "Eski Mardin merkezinde kolay ulaşım"
+      ],
+      "cons": [
+        "Akşam saatlerinde rezervasyonsuz masa bulmak güçleşebiliyor"
+      ],
+      "uncertainties": [
+        "Set menü ve alakart sunum tercihi servis yoğunluğuna göre değişebiliyor."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-lummi-restaurant",
+      "categoryId": "yoresel",
+      "resolvedName": "Lummi Restaurant",
+      "branchName": "Şar, 225 sokak Mardin Müzesi yani No 5, 47100 Artuklu/Mardin",
+      "placeId": "ChIJtc_jyYqJCkARYyWk0MqRcfo",
+      "coordinates": {
+        "lat": 37.3135513,
+        "lng": 40.7348311
+      },
+      "rating": 4.8,
+      "userRatingCount": 3546,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.lummirestaurant.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=18046365482120127843",
+      "recommendedPrimary": [
+        "Mardin Kebabı",
+        "Zeytinyağlı Sarma & Meze Tabağı",
+        "Ağır Ateş Kuzu Kuşbaşı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çinili Salon & Ovaya Bakan Teras Deneyimi",
+          "note": "Şarap odası ve farklı taş odalarıyla akşam yemeklerinde sakin ve özenli bir atmosfer sağlıyor.",
+          "proof": "lummirestaurant.com.tr mekan tanıtımı"
+        }
+      ],
+      "suitability": {
+        "seating": "Ovaya bakan manzaralı taş teras ve farklı konseptte iç salonlar",
+        "crowdAndNoise": "Özellikle gün batımı ve akşam servisinde çiftler ile küçük gruplar yoğunlaşıyor",
+        "disadvantage": "Fiyat seviyesi şehir ortalamasının üzerinde yer alıyor.",
+        "transit": "Şar Mahallesi 225. Yeniyol Sokak No:5A, Mardin Müzesi bitişiğinde yer alıyor."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Lummi Restaurant Resmi Sitesi",
+          "url": "https://lummirestaurant.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Teras, Çinili Salon ve şef menüsü detayları"
+        },
+        {
+          "title": "Restoranım — Lummi Mardin",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mardin Müzesi yanı konumu ve kuzu spesiyalleri"
+        }
+      ],
+      "pros": [
+        "Tarihî müze dokusuyla bütünleşen teras manzarası",
+        "Özenli masa düzeni ve servis temposu"
+      ],
+      "cons": [
+        "Yüksek fiyat segmenti"
+      ],
+      "uncertainties": [
+        "Teras masaları özellikle gün batımı saatlerinde önceden dolabiliyor."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-zamarot-1890",
+      "categoryId": "yoresel",
+      "resolvedName": "Zamarot1890",
+      "branchName": "Şar, 1. Cadde 243/1, 47420 Artuklu/Mardin",
+      "placeId": "ChIJwSixbByJCkARzctVbrztGHY",
+      "coordinates": {
+        "lat": 37.3133951,
+        "lng": 40.7370271
+      },
+      "rating": 4.7,
+      "userRatingCount": 36,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.zamarot1890.com/",
+      "mapsUri": "https://maps.google.com/?cid=8509812889477303245",
+      "recommendedPrimary": [
+        "Yöresel Tadım Menüsü",
+        "Mezopotamya Buğdaylı Ana Yemekler",
+        "Derik Zeytinyağlı Başlangıçlar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarımsal Kalkınma & Yerel Üretici Seçkisi",
+          "note": "Kullanılan tahıl ve zeytinyağı doğrudan bölge çiftçilerinden ve kadın kooperatifi üretiminden geliyor.",
+          "proof": "zamarot1890.com ve kisikatesakademi.com.tr röportajları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî taş kemerli butik salon ve sınırlı sayıda tadım masası",
+        "crowdAndNoise": "Rezervasyonlu gastronomi odaklı küçük gruplar ağırlıkta",
+        "disadvantage": "Klasik kebap/alakart esnaf lokantası beklentisiyle gidenler için set tadım akışı kısa seçenekli gelebilir.",
+        "transit": "Şar Mahallesi 1. Cadde No:243/1 üzerinde Eski Mardin ana aksında bulunuyor."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Zamarot 1890 Resmi Sitesi",
+          "url": "https://zamarot1890.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1. Cadde konumu ve sıfır atık gastronomi konsepti"
+        },
+        {
+          "title": "Kısık Ateş Akademi Dosyası",
+          "url": "https://www.kisikatesakademi.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Derik zeytinyağı ve yerel buğday reçeteleri"
+        },
+        {
+          "title": "Sabah Gazetesi Gastronomi",
+          "url": "https://www.sabah.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ebru Baybara Demir kooperatif mutfağı ve hikâyeli tabaklar"
+        }
+      ],
+      "pros": [
+        "Türkiye’nin öncü sıfır atık yöresel mutfaklarından",
+        "Birebir yerel üretici malzemeleri"
+      ],
+      "cons": [
+        "Sınırlı masa kapasitesi ve set menü düzeni"
+      ],
+      "uncertainties": [
+        "Sezonluk ürünlere göre tadım menüsü içeriği dönemsel olarak güncelleniyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-yay-konagi",
+      "categoryId": "yoresel",
+      "resolvedName": "Yay Konağı",
+      "branchName": "Medrese, 1. Cadde No:194/B, 47100 Artuklu/Mardin",
+      "placeId": "ChIJ481S3wiJCkAR6Rl5rJW4W_s",
+      "coordinates": {
+        "lat": 37.313825699999995,
+        "lng": 40.7411329
+      },
+      "rating": 4.5,
+      "userRatingCount": 1875,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.yaykonagi.com/",
+      "mapsUri": "https://maps.google.com/?cid=18112273279383837161",
+      "recommendedPrimary": [
+        "Kaburga Dolması",
+        "Alluciye (Erikli Kuzu Yahnisi)",
+        "Sembusek & İrok Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarihî Çarşı Karşısında Çok Katlı Avlu & Teras",
+          "note": "Hem kahve molası hem de tam kapsamlı yöresel öğle yemeği için çarşı rotası üzerinde elverişli bir durak.",
+          "proof": "yaykonagi.com menü listesi ve wanderlog.com değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Dört katlı taş konakta balkon, salon ve teras katları",
+        "crowdAndNoise": "Öğle çarşı gezisi ve hafta sonu turistik akışında hareketli",
+        "disadvantage": "Menüsü dünya kahveleri ve genel kalemlerle geniş tutulduğu için mutfak odak yoğunluğu konak uzmanlarına kıyasla biraz daha dağınık.",
+        "transit": "Medrese Mahallesi 1. Cadde No:194/B, Hasan Ammar Çarşısı tam karşısında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yay Konağı Resmi Sitesi",
+          "url": "https://yaykonagi.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "4 katlı konak mimarisi ve yöresel menü"
+        },
+        {
+          "title": "Wanderlog Mardin Kayıtları",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1. Cadde konumu ve alluciye/reyhan şerbeti"
+        }
+      ],
+      "pros": [
+        "Yöresel yemeklerin neredeyse tamamını tek menüde bulunduruyor",
+        "Merkezi çarşı konumu"
+      ],
+      "cons": [
+        "Merdivenli çok katlı yapı ve geniş karma menü"
+      ],
+      "uncertainties": [
+        "Öğle gruplarının girdiği saatlerde yemek servisi yavaşlayabiliyor."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-cercis-murat-konagi",
+      "categoryId": "yoresel",
+      "resolvedName": "Cercis Murat Konağı",
+      "branchName": "Şar, 1. Cadde No:517, 47100 Artuklu/Mardin",
+      "placeId": "ChIJWSv-brmICkARJ4dHgnOd8mg",
+      "coordinates": {
+        "lat": 37.3127474,
+        "lng": 40.7338635
+      },
+      "rating": 4.3,
+      "userRatingCount": 2847,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.cercismurat.com/",
+      "mapsUri": "https://maps.google.com/?cid=7562279843741009703",
+      "recommendedPrimary": [
+        "Dobo (Sarımsaklı & Bademli Kuzu But)",
+        "Kişk Çorbası & Meze Tepsisi",
+        "Alluciye & Harire"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarihî Süryani Konağında Meze Tepsisi Geleneği",
+          "note": "Mıkli, küflü yoğurt, maş salatası ve taratorlu patlıcandan oluşan meze tepsisi ana yemek öncesi sofrayı açıyor.",
+          "proof": "oggusto.com ve timeout.com Mardin gastronomi dosyaları"
+        }
+      ],
+      "suitability": {
+        "seating": "1888 tarihli konakta avlu, kemerli taş salon ve panoramik ova terası",
+        "crowdAndNoise": "Yerli-yabancı misafirler ve gastronomi turları nedeniyle sürekli yoğun",
+        "disadvantage": "Yüksek turistik talep nedeniyle fiyat bandı yukarıda ve rezervasyonsuz akşam masası bulmak zor olabiliyor.",
+        "transit": "Şar Mahallesi 1. Cadde No:517, Eski Mardin ana güzergâhında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "OGGUSTO Mardin Dosyası",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1888 konağı, 2001 kuruluşu ve Dobo reçetesi"
+        },
+        {
+          "title": "Hürriyet & Time Out Arşivi",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ebru Baybara Demir kadın istihdamı ve meze tepsisi"
+        }
+      ],
+      "pros": [
+        "Şehrin ilk restore edilmiş konak restoranı olarak gastronomi hafızası taşıyor",
+        "Geniş geleneksel meze çeşitliliği"
+      ],
+      "cons": [
+        "Yüksek fiyat seviyesi ve turistik yoğunluk"
+      ],
+      "uncertainties": [
+        "Özellikle akşam Reyhani etkinlik günlerinde yoğun kalabalık yaşanabiliyor."
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-dostlar-ciger-sef-mehmet",
+      "categoryId": "kebap",
+      "resolvedName": "Dostlar Ciğercisi Şef Mehmet`in yeri",
+      "branchName": "Yenişehir, Ravza Cd. İnci apt, 47200 Artuklu/Mardin",
+      "placeId": "ChIJaZBRZqWJCkARrDMuh8-Bht4",
+      "coordinates": {
+        "lat": 37.318598,
+        "lng": 40.724497799999995
+      },
+      "rating": 5,
+      "userRatingCount": 166,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.dokunapp.com/dostlarcigercisi",
+      "mapsUri": "https://maps.google.com/?cid=16034646251625395116",
+      "recommendedPrimary": [
+        "Kuzu Ciğer Şiş",
+        "Yürek & Böbrek Şiş",
+        "Adana / Urfa Kebap"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Akşam Ocakbaşı Servisinde Taze Şiş Ritmi",
+          "note": "Sipariş anında köz üstüne çekilen ciğer şişler sıcak lavaş ve bol taze nane-maydanozla sunuluyor.",
+          "proof": "yandex.com.tr Artuklu değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Yenişehir cadde cepheli ferah iç salon",
+        "crowdAndNoise": "Akşam yemekleri ve iş çıkışı yerel aile gruplarıyla canlı",
+        "disadvantage": "Tarihî Eski Mardin dokusundan ayrı olarak modern Yenişehir aksında bulunuyor.",
+        "transit": "Yenişehir Mahallesi Ravza Caddesi İnci Apartmanı altında merkezi cadde üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Google Maps Yenişehir Kaydı",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "160+ değerlendirme ile yüksek puan istikrarı"
+        },
+        {
+          "title": "Yandex Maps Mardin",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ravza Caddesi ciğer şiş ve taze salata yorumları"
+        }
+      ],
+      "pros": [
+        "Yenişehir’in en tutarlı kuzu ciğeri adreslerinden",
+        "Hızlı servis ve taze yeşillik tezgâhı"
+      ],
+      "cons": [
+        "Tarihî Eski Mardin’e göre araçla kısa mesafe gerektiriyor"
+      ],
+      "uncertainties": [
+        "Akşam zirve saatlerinde ciğer şiş siparişlerinde kısa süreli bekleme olabiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-kebapci-yusuf-dayi",
+      "categoryId": "kebap",
+      "resolvedName": "Kebapçı Yusuf Dayı",
+      "branchName": "Çabuk mahallesi Mardin-Midyat yolu üzeri KYK kız yurdu karşısı, Çabuk, 47100 Artuklu/Mardin",
+      "placeId": "ChIJm7t-3xWJCkARE69CSb_1Kdc",
+      "coordinates": {
+        "lat": 37.320909300000004,
+        "lng": 40.7287888
+      },
+      "rating": 4.6,
+      "userRatingCount": 98,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15504193394116308755",
+      "recommendedPrimary": [
+        "Fıstıklı / Cevizli Zırh Mardin Kebabı",
+        "Kuzu Şiş & Patlıcan Kebap",
+        "Bakır Tasta Ayran"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sade Salon, Doyurucu İkram Sofrası",
+          "note": "Kebap öncesinde masaya gelen sumaklı soğan ve köz eşlikçileri gösterişsiz ama güçlü bir esnaf lokantası kimliği taşıyor.",
+          "proof": "eniyi.best ve wanderlog.com kebap değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Gösterişsiz ve pratik esnaf lokantası salonu",
+        "crowdAndNoise": "Öğle ve erken akşam saatlerinde yerel çalışanlar ile kebabına giden ziyaretçiler",
+        "disadvantage": "Turistik taş konak ambiyansı arayanlar için dekorasyon oldukça sade.",
+        "transit": "Çabuk Mahallesi Midyat Yolu güzergâhında kolay erişilebilir konumda."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Wanderlog Mardin Kebabı",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "2001 kuruluşu ve fıstıklı/cevizli zırh kebap"
+        },
+        {
+          "title": "En İyi Best Mardin Rehberi",
+          "url": "https://www.eniyi.best/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yerel halk arasında en çok önerilen esnaf kebapçılarından"
+        }
+      ],
+      "pros": [
+        "Zırh kıymasından cevizli-fıstıklı gerçek Mardin kebabı",
+        "Dengeli fiyat ve hızlı servis"
+      ],
+      "cons": [
+        "Dekorasyon sade ve manzara sunmuyor"
+      ],
+      "uncertainties": [
+        "Yoğun öğle servisinde bazı özel kebap kalemleri gün sonuna doğru tükenebiliyor."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-corbaci-talip",
+      "categoryId": "kebap",
+      "resolvedName": "Çorbacı Talip",
+      "branchName": "Savurkapı, 1. Cadde No:39, 47100 Artuklu/Mardin",
+      "placeId": "ChIJC7Fuh6iJCkARaXMyh1HxYrU",
+      "coordinates": {
+        "lat": 37.3150731,
+        "lng": 40.7495362
+      },
+      "rating": 4.9,
+      "userRatingCount": 130,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13070274401045476201",
+      "recommendedPrimary": [
+        "Kelle Paça Çorbası",
+        "İşkembe Çorbası",
+        "Kemik Sulu Mercimek Çorbası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Savurkapı Hattında Erken Sabah Çorba Geleneği",
+          "note": "Turistik serpme kahvaltıların dışına çıkıp yerel esnaf ritmiyle güne başlamak için net bir adres.",
+          "proof": "restoranim.net ve dijital.link kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük, temiz ve hızlı dönen geleneksel çorba salonu",
+        "crowdAndNoise": "Sabah erken ve öğle saatlerinde çevre esnafı yoğunlukta",
+        "disadvantage": "Oturma alanı dar olduğundan kalabalık turist gruplarına uygun değil.",
+        "transit": "Savurkapı Mahallesi 1. Cadde No:39 adresinde Eski Mardin doğu kapısı hattında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım — Çorbacı Talip",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Savurkapı konumu ve erken sabah paça/işkembe profili"
+        },
+        {
+          "title": "Dijital Link Esnaf Dizini",
+          "url": "https://dijital.link/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Geleneksel çorba çeşitleri ve hızlı esnaf servisi"
+        },
+        {
+          "title": "Yandex Maps Mardin",
+          "url": "https://yandex.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1. Cadde çorbacısı kullanıcı puanları"
+        }
+      ],
+      "pros": [
+        "Eski Mardin’in gerçek erken sabah esnaf çorbacısı",
+        "Temiz, ekonomik ve net odak"
+      ],
+      "cons": [
+        "Sınırlı masa kapasitesi ve sade ortam"
+      ],
+      "uncertainties": [
+        "Kelle paça porsiyonları öğleden sonraki saatlere kalmadan azalabiliyor."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-muhittin-amcanin-yeri",
+      "categoryId": "kebap",
+      "resolvedName": "Muhittin Amcanın Yeri",
+      "branchName": "Yenişehir Mahallesi, Gençlik Sk, Reyhani Is Merkezi, Yenişehir, Kuba Camii Yanı No:1, 47200 Artuklu/Mardin",
+      "placeId": "ChIJc8lehcmJCkAR1ARPp4OQmjA",
+      "coordinates": {
+        "lat": 37.3195433,
+        "lng": 40.722608699999995
+      },
+      "rating": 4.4,
+      "userRatingCount": 294,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3502270555356071124",
+      "recommendedPrimary": [
+        "Kuzu Dolması",
+        "İşkembe Dolma & İçli Köfte",
+        "Sembusek / Etli Ekmek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yenişehir’in Yerel Esnaf Sofrası",
+          "note": "Turistik rota dışında yerel halkın öğle yemeğinde tercih ettiği tencere ve fırın çeşitlerini sunuyor.",
+          "proof": "youtube.com ve restaurantguru.com Mardin lokanta incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Düzenli esnaf lokantası iç salonu",
+        "crowdAndNoise": "Öğle yemeklerinde çevre ofis ve esnaf ağırlıklı yoğunluk",
+        "disadvantage": "Tarihî doku veya manzara yerine günlük tencere-et odaklı şehir içi lokantası.",
+        "transit": "Yenişehir Mahallesi Gençlik Sokak Reyhani İş Merkezi Kuba Camii yanında yer alıyor."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restaurant Guru Mardin",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yenişehir esnaf lokantası ve kuzu dolması profili"
+        },
+        {
+          "title": "Yandex Maps Mardin",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kuba Camii yanı konum ve günlük yemek çeşitleri"
+        }
+      ],
+      "pros": [
+        "Şehir merkezinde yerel halkın günlük tercih ettiği otantik lokanta",
+        "Çeşitli tencere ve dolma seçenekleri"
+      ],
+      "cons": [
+        "Öğle sonrasında bazı günlük tepsi yemekleri tükenebiliyor"
+      ],
+      "uncertainties": [
+        "Kuzu ve işkembe dolması porsiyonları günün yoğunluğuna göre erken bitebiliyor."
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-piyal-wine-house",
+      "categoryId": "date",
+      "resolvedName": "Piyal Wine House & Italian Restaurant",
+      "branchName": "Şar, 220 Soner Sk No:1, 47100 Artuklu/Mardin",
+      "placeId": "ChIJH8ZwcPyJCkARVD6pmGoYY0I",
+      "coordinates": {
+        "lat": 37.3141691,
+        "lng": 40.731611799999996
+      },
+      "rating": 4.9,
+      "userRatingCount": 722,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.piyalwinehouse.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=4783694075304427092",
+      "recommendedPrimary": [
+        "Yöresel Üzüm Şarap Seçkisi",
+        "Trüflü Risotto",
+        "Bonfile Eşleşme Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Akşam Date Atmosferi & Şef Mutfağı",
+          "note": "Klasik yöresel sofralara alternatif olarak loş taş kemer altında şarap eşleşmeli şık akşam yemeği kurguluyor.",
+          "proof": "piyalwinehouse.com.tr ve yandex.com.tr kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Özenli aydınlatmalı taş kemerli akşam salonu",
+        "crowdAndNoise": "Akşam yemeği saatlerinde çiftler ve küçük arkadaş grupları",
+        "disadvantage": "Gündüz esnaf yemeği değil, akşam bütçesine hitap eden butik konsept sunuyor.",
+        "transit": "Şar Mahallesi 220. Soner Sokak No:1 adresinde tarihî sokak aksında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Piyal Wine House Resmi Sitesi",
+          "url": "https://piyalwinehouse.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Şarap koleksiyonu ve Akdeniz-İtalyan şef menüsü"
+        },
+        {
+          "title": "Yandex Maps Mardin",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Şar konumu ve akşam atmosferi değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Şehirde gastronomi odaklı en şık akşam şarap evi-restoran ikililerinden",
+        "Zengin bağcılık seçkisi"
+      ],
+      "cons": [
+        "Üst fiyat segmenti ve dar taş sokak erişimi"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamları için önceden masa ayırmak gerekiyor."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-izla-art-cafe",
+      "categoryId": "date",
+      "resolvedName": "İzla art Cafe",
+      "branchName": "Şar, 239. Bademci sok 42/D, 47100 Artuklu/Mardin",
+      "placeId": "ChIJXQ4Aeb-ICkARXaZE-cLiFwU",
+      "coordinates": {
+        "lat": 37.3138947,
+        "lng": 40.7360317
+      },
+      "rating": 4.6,
+      "userRatingCount": 325,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=367011221687543389",
+      "recommendedPrimary": [
+        "Ev Yapımı Kırmızı / Beyaz Süryani Şarabı",
+        "Mardin Badem Şekerli İkramlıklar",
+        "Süryani Kahvesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarihî Avluda Sanat & Bağcılık Buluşması",
+          "note": "Büyük sıra gecesi kalabalıklarından uzak, sakin müzik ve taş duvar dokusuyla dinlenmek isteyenler için öne çıkıyor.",
+          "proof": "wanderlog.com ve macizlenecekyerler.com Mardin kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sanat objeleriyle döşeli samimi iç oda ve taş avlu",
+        "crowdAndNoise": "Öğleden sonra ve akşamüstü sakin şarap-kahve molası veren çiftler ve gezginler",
+        "disadvantage": "Geniş sıcak yemek mutfağı sunmadığından ana akşam yemeği yerine içki ve sohbet molası için uygun.",
+        "transit": "Şar Mahallesi 239. Bademci Sokak No:42/D adresinde Cumhuriyet Meydanı yakınında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Wanderlog — İzla Art Cafe",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Süryani sanatı ve ev yapımı şarap profili"
+        },
+        {
+          "title": "Yandex & Yerel Harita Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sakin avlu atmosferi ve servis değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Yüksek ses ve kalabalıktan uzak otantik sanat atmosferi",
+        "Ev yapımı yerel şarap deneyimi"
+      ],
+      "cons": [
+        "Tam kapsamlı akşam yemeği mutfağı bulunmuyor"
+      ],
+      "uncertainties": [
+        "Küçük oturma kapasitesi nedeniyle hafta sonu akşamüstü hızlı dolabiliyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-siras-winehouse",
+      "categoryId": "date",
+      "resolvedName": "Siras Winehouse",
+      "branchName": "Şar, 1. Cadde No:220, 47100 Artuklu/Mardin",
+      "placeId": "ChIJK6p7csCICkARf8MLLXMZJhk",
+      "coordinates": {
+        "lat": 37.3133903,
+        "lng": 40.7390621
+      },
+      "rating": 4.4,
+      "userRatingCount": 319,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1812163882530882431",
+      "recommendedPrimary": [
+        "Mazrona / Boğazkere Şarap Tadımı",
+        "Özel Soslu Fırın Pizza & Makarna",
+        "Süryani Usulü Atıştırmalıklar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Birinci Cadde Üzerinde Tadım & Yemek Dengesi",
+          "note": "Şarap tadımına eşlik edecek sıcak fırın tabakları sunmasıyla yalnızca içki sunan mahzenlerden ayrışıyor.",
+          "proof": "sirassarap.com ve restoranim.net incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî taş bina içinde masa ve bar düzeni",
+        "crowdAndNoise": "Akşam saatlerinde turist ve şarap meraklısı ziyaretçilerle hareketli",
+        "disadvantage": "Fiyatlandırma ve kalabalık cadde yoğunluğu akşam saatlerinde hissedilebiliyor.",
+        "transit": "Şar Mahallesi 1. Cadde No:220 adresinde ana tarihî cadde üstünde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Siras Şarapçılık Resmi Sitesi",
+          "url": "https://sirassarap.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1. Cadde şarap evi ve Süryani bağcılık seçkisi"
+        },
+        {
+          "title": "Restoranım & Restaurant Guru",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yemekli şarap evi konsepti ve fırın lezzetleri"
+        }
+      ],
+      "pros": [
+        "Tadım yaparken sıcak yemek yeme imkânı",
+        "Birinci Cadde yürüyüş aksında doğrudan erişim"
+      ],
+      "cons": [
+        "Bazı saatlerde turistik cadde gürültüsü"
+      ],
+      "uncertainties": [
+        "Mahzen/tadım seçkisi dönemsel mahsul stokuna göre değişebiliyor."
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-lelyo-suryani-sarapcilik",
+      "categoryId": "date",
+      "resolvedName": "Lelyo Süryani Şarapcılık",
+      "branchName": "Diyarbakır Kapı, 239. Sk., 47100 Artuklu/Mardin",
+      "placeId": "ChIJj8bidz-JCkAR-3qEF6gDD4s",
+      "coordinates": {
+        "lat": 37.313220699999995,
+        "lng": 40.7288852
+      },
+      "rating": 4.7,
+      "userRatingCount": 85,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.lelyosuryanisarap.com/",
+      "mapsUri": "https://maps.google.com/?cid=10020231716406590203",
+      "recommendedPrimary": [
+        "Mahlepli Süryani Şarabı & Kırmızı Kupaj",
+        "Geleneksel Mahlepli Süryani Çöreği",
+        "Tadım Paketi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tatlı-Şarap & Fırın Geleneği Birlikteliği",
+          "note": "Üzüm ve mahlep geleneğini tek çatı altında anlatmasıyla alışveriş ve tadım molasını birleştiriyor.",
+          "proof": "mardinde.com.tr ve restoranim.net Lelyo profili"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş duvarlı butik tadım salonu ve ürün tezgâhı",
+        "crowdAndNoise": "Gündüz ve akşamüstü tadım için uğrayan gezginler",
+        "disadvantage": "Büyük akşam yemeği masaları yerine tadım ve ürün alma odaklı küçük bir mekân.",
+        "transit": "Diyarbakır Kapı Mahallesi 239. Sokak üzerinde Eski Mardin batı girişinde yer alıyor."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Mardinde Rehber — Lelyo",
+          "url": "https://mardinde.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mahlepli Süryani çöreği ve yerel ürünler"
+        },
+        {
+          "title": "Restoranım — Lelyo Şarapçılık",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Süryani şarabı tadım evi değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Butik tadım anlatımı ve Süryani çöreği eşliği",
+        "Diyarbakır Kapı tarafından kolay başlangıç"
+      ],
+      "cons": [
+        "Oturma alanı kısıtlı, daha çok tadım ve butik alışveriş düzeninde"
+      ],
+      "uncertainties": [
+        "Grup kalabalığında tadım alanı dar kalabiliyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-kahiye-mardin",
+      "categoryId": "tatli",
+      "resolvedName": "Kahiye Mardin",
+      "branchName": "Teker, 1. Cadde No:163, 47100 Artuklu/Mardin",
+      "placeId": "ChIJIbjWpiGJCkARWrFJ5y6kHm8",
+      "coordinates": {
+        "lat": 37.313773,
+        "lng": 40.7413153
+      },
+      "rating": 4.4,
+      "userRatingCount": 213,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.kahiyeci.com/",
+      "mapsUri": "https://maps.google.com/?cid=8007017708867137882",
+      "recommendedPrimary": [
+        "Peynirli Çıtır Kahiye",
+        "Cevizli Kahiye & Kaymak İlavesi",
+        "Türk / Mırra Kahvesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Eski Mardin’de Kaybolmayan İnce Hamur Tatlısı",
+          "note": "Şerbetli ağır tatlılardan farklı olarak ince katmanlı kızarmış hamur ve tuzsuz peynir dengesiyle öğleden sonra molasına oturuyor.",
+          "proof": "restoranim.net ve yandex.com.tr Kahiye Mardin incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Birinci Cadde üstü pratik tatlı salonu masaları",
+        "crowdAndNoise": "Öğleden sonra ve akşamüstü gezintisinde yoğunlaşıyor",
+        "disadvantage": "Çok küçük cadde salonu olduğu için kalabalık gruplarda beklemek gerekebiliyor.",
+        "transit": "Teker Mahallesi 1. Cadde No:163 adresinde Eski Mardin merkez yürüyüş güzergâhında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım — Kahiye Mardin",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tescilli Kahiye tatlısı ve 1. Cadde konumu"
+        },
+        {
+          "title": "Yandex & Google Maps Topluluk",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "200+ değerlendirme ile peynirli kahiye memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Doğrudan Mardin’in imza tatlısı kahiyeye odaklanan nadir adreslerden",
+        "Taze ve sıcak servis"
+      ],
+      "cons": [
+        "Küçük oturma alanı ve cadde trafiği"
+      ],
+      "uncertainties": [
+        "Yoğun gezi saatlerinde sıcak tepsi çıkışları arasında kısa beklemeler olabiliyor."
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-ustaeli-katmer-kunefe",
+      "categoryId": "tatli",
+      "resolvedName": "Ustaeli Katmer & Künefe",
+      "branchName": "13 Mart, 42.Cad Okumuşlar Apt No:19/H, 47200 Artuklu/Mardin",
+      "placeId": "ChIJW9NTGTOPCkARgI6h4nTROyA",
+      "coordinates": {
+        "lat": 37.331098499999996,
+        "lng": 40.7114222
+      },
+      "rating": 4.9,
+      "userRatingCount": 36,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.ustaelikatmerkunefe.com/",
+      "mapsUri": "https://maps.google.com/?cid=2322680332788272768",
+      "recommendedPrimary": [
+        "Antep Fıstıklı Çıtır Katmer",
+        "Özel Çıtır Künefe",
+        "Havuç Dilim Baklava"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Akşam Tatlısı İçin Yenişehir Alternatifi",
+          "note": "Eski Mardin dışındaki konaklamalarda zincir şubelere gitmeden sıcak katmer yemek için öne çıkıyor.",
+          "proof": "yemeksepeti.com ve yandex.com.tr değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Modern Yenişehir mahalle içi tatlı dükkânı",
+        "crowdAndNoise": "Akşam saatlerinde mahalle sakinleri ve sipariş yoğunluğu",
+        "disadvantage": "Eski Mardin tarihî dokusundan uzak, modern konut bölgesinde yer alıyor.",
+        "transit": "13 Mart Mahallesi 42. Cadde Okumuşlar Apartmanı No:19/H adresinde bulunuyor."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemeksepeti Kullanıcı Puanları",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çıtır katmer ve künefe puanlaması"
+        },
+        {
+          "title": "Yandex Maps Mardin",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "13 Mart Mahallesi taze katmer değerlendirmeleri"
+        },
+        {
+          "title": "Yerel Gastronomi Dizini",
+          "url": "https://www.eniyi.best/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Artuklu tatlı adresleri derlemesi"
+        }
+      ],
+      "pros": [
+        "Taze açılan katmer hamuru ve fıstık oranı",
+        "Zincir olmayan yerel dükkân kimliği"
+      ],
+      "cons": [
+        "Eski Mardin yürüyüş rotasından araç mesafesinde"
+      ],
+      "uncertainties": [
+        "Akşam geç saatlerde katmer hamuru sıcak pişirim için birkaç dakika bekletebiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-suttle",
+      "categoryId": "tatli",
+      "resolvedName": "Süttle",
+      "branchName": "13 Mart, 5. Sk. No:11 D:924, 47100 Artuklu/Mardin",
+      "placeId": "ChIJwZE9BSSJCkARPzEJv3BFkFE",
+      "coordinates": {
+        "lat": 37.3223342,
+        "lng": 40.725580099999995
+      },
+      "rating": 4.5,
+      "userRatingCount": 176,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5877273864262201663",
+      "recommendedPrimary": [
+        "Fırın Sütlaç (Hamsiköy Usulü)",
+        "Karamelli / Bisküvili Cheesecake",
+        "Kahve Eşlikçileri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ağır Şerbete Hafif Sütlü Alternatif",
+          "note": "Özellikle bol baharatlı bir Mardin akşam yemeği sonrası hafif bir tatlı arayan ziyaretçiler tarafından seviliyor.",
+          "proof": "yandex.com.tr ve yemeksepeti.com Süttle kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Temiz ve düzenli iç salon masaları",
+        "crowdAndNoise": "Akşam saatleri ve hafta sonları yerel gençler ve aileler",
+        "disadvantage": "Geleneksel Mardin tatlıları (kahiye, harire) yerine modern sütlü tatlı ve pastane çizgisinde.",
+        "transit": "13 Mart Mahallesi 5. Sokak No:11 D:924 adresinde Yenişehir merkezinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yandex Maps — Süttle Mardin",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "13 Mart konumu, hijyen ve tatlı yorumları"
+        },
+        {
+          "title": "Yemeksepeti Mardin",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sütlaç ve cheesecake çeşitliliği"
+        }
+      ],
+      "pros": [
+        "Hafif tatlı arayanlar için çok yüksek memnuniyet",
+        "Temiz servis ve güler yüzlü karşılama"
+      ],
+      "cons": [
+        "Yöresel Mardin tatlısı çeşitleri sunmuyor"
+      ],
+      "uncertainties": [
+        "Akşam geç saatlerde sevilen cheesecake çeşitleri erken tükenebiliyor."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-tarihi-mardin-kahvalticisi",
+      "categoryId": "kahvalti",
+      "resolvedName": "Tarihi Mardin Kahvaltıcısı",
+      "branchName": "Ulucami, 129 AYIŞIĞI SOKAK NO:101, 47100 Artuklu/Mardin",
+      "placeId": "ChIJRfupQGqJCkARrpzmF2C2KJU",
+      "coordinates": {
+        "lat": 37.3128824,
+        "lng": 40.7355194
+      },
+      "rating": 4.6,
+      "userRatingCount": 370,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://tarihimardinkahvalticisi.com/",
+      "mapsUri": "https://maps.google.com/?cid=10748041034553793710",
+      "recommendedPrimary": [
+        "Yöresel Mardin Serpme Kahvaltı",
+        "Kavurmalı Yumurta & Sıcak Çörek",
+        "Süryani Kahvesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarihî Çatı Terastan Eski Mardin Silüeti",
+          "note": "Sabah kahvaltısı sonrasında aynı terasta menengiç veya Süryani kahvesi içmek manzara deneyimini uzatıyor.",
+          "proof": "mardin360.com ve wanderlog.com Mardin kahvaltı önerileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş oda içi masalar ve Eski Mardin manzaralı açık teras",
+        "crowdAndNoise": "Sabah ve geç kahvaltı saatlerinde özellikle hafta sonu yoğun",
+        "disadvantage": "Taş merdivenli ara sokakta yer aldığı için ulaşım yürüme ve kısa tırmanış gerektiriyor.",
+        "transit": "Ulucami Mahallesi 129. Ayışığı Sokak No:101, Birinci Cadde’nin birkaç sokak altında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Mardin 360 Rehberi",
+          "url": "https://www.mardin360.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ulucami manzaralı teras ve serpme kahvaltı"
+        },
+        {
+          "title": "Wanderlog & Resmi Site",
+          "url": "https://tarihimardinkahvecisi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yöresel reçeller, sıcak ikramlar ve kahve seçkisi"
+        }
+      ],
+      "pros": [
+        "Ulucami ve ova silüetine bakan konum",
+        "Bölgeye özgü peynir ve çörek çeşitleri"
+      ],
+      "cons": [
+        "Merdivenli ara sokak yürüyüşü ve hafta sonu beklemesi"
+      ],
+      "uncertainties": [
+        "Açık teras masaları serin mevsimlerde hava durumuna göre kapalı tutulabiliyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-marangozlar-kahvesi",
+      "categoryId": "kahvalti",
+      "resolvedName": "Marangozlar Kahvesi",
+      "branchName": "Teker, 75. Akın sokak no 47, 47100 Artuklu/Mardin",
+      "placeId": "ChIJX8IJoFyJCkARyeEbEJfPo-c",
+      "coordinates": {
+        "lat": 37.3132267,
+        "lng": 40.7412996
+      },
+      "rating": 4.5,
+      "userRatingCount": 791,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16691412891682464201",
+      "recommendedPrimary": [
+        "Yöresel Kahvaltı Sofrası",
+        "Menengiç / Dibek Kahvesi",
+        "Gözleme & Sıcak Tava"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Marangozlar Çarşısı İçinde Gün Boyu Manzara",
+          "note": "Tarihî çarşı dokusunun içinde oturup ovayı izlerken sade ve otantik bir kahvaltı-kahve ritmi yaşatıyor.",
+          "proof": "marangozlarkahvesi.com ve wanderlog.com kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî taş çarşı cephesinde manzaralı balkon ve iç mekân masaları",
+        "crowdAndNoise": "Sabah kahvaltısı ve öğleden sonra kahve molalarında sürekli ziyaretçi akışı",
+        "disadvantage": "Küçük çarşı sokağında kalması nedeniyle park alanı yok; manzara kenarı masalar hızla doluyor.",
+        "transit": "Teker Mahallesi 75. Akın Sokak No:47 (Tarihî Marangozlar Çarşısı içi), Birinci Cadde paralelinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Marangozlar Kahvesi Resmi Sitesi",
+          "url": "https://marangozlarkahvesi.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Marangozlar Çarşısı konumu ve kahvaltı/kahve menüsü"
+        },
+        {
+          "title": "Wanderlog & Yandex Mardin",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mezopotamya manzarası ve menengiç kahvesi"
+        }
+      ],
+      "pros": [
+        "Tarihî çarşı atmosferiyle birleşen açık manzara",
+        "Hem kahvaltı hem gün boyu kahve için güçlü seçenek"
+      ],
+      "cons": [
+        "Pencere/manzara önü masalarda yoğunluk yaşanabiliyor"
+      ],
+      "uncertainties": [
+        "Hafta sonu sabah saatlerinde kahvaltı için erken varmak avantaj sağlıyor."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-keyfi-sokak-cafe-kahvalti",
+      "categoryId": "kahvalti",
+      "resolvedName": "Keyfi Sokak Cafe Kahvaltı",
+      "branchName": "Latifiye, 47100 Artuklu/Mardin",
+      "placeId": "ChIJpVJXu4eJCkAROFJ8YEABSBM",
+      "coordinates": {
+        "lat": 37.312826099999995,
+        "lng": 40.7346086
+      },
+      "rating": 5,
+      "userRatingCount": 40,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1389361861052092984",
+      "recommendedPrimary": [
+        "Sokak Serpme Kahvaltısı",
+        "Soğuk Reyhan Şerbeti",
+        "Süryani / Türk Kahvesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taş Sokak Dokusunda Fotojenik Sabah Mola Alanı",
+          "note": "Kapalı salonların aksine Eski Mardin’in yürüyüş sokağı dokusunun tam içinde kahvaltı yapma imkânı tanıyor.",
+          "proof": "yandex.com.tr ve macizlenecekyerler.com kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî taş sokak içine yerleştirilmiş açık masalar",
+        "crowdAndNoise": "Sabah geç kahvaltı ve hafta sonu öğle öncesi sokak fotoğrafçılarına açık hareketlilik",
+        "disadvantage": "Sokak üstü oturum olduğundan yaya geçişiyle iç içe ve serin havalarda dış mekan serin kalabiliyor.",
+        "transit": "Latifiye Mahallesi Mertler Sokak, Latifiye Camii arkasında ve Birinci Cadde’nin hemen altında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yandex Maps — Keyfi Sokak",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Latifiye camii arkası sokak kahvaltısı ve reyhan şerbeti"
+        },
+        {
+          "title": "Maç İzlenecek & Gezilecek Yerler",
+          "url": "https://www.macizlenecekyerler.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Eski Mardin sokak içi kahvaltı değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Taş sokak içinde özgün açık hava kahvaltı hissi",
+        "Merkezi Latifiye konumu"
+      ],
+      "cons": [
+        "Yaya sokağı kalabalığı ve dar geçiş alanı"
+      ],
+      "uncertainties": [
+        "Yağışlı havalarda dış sokak masalarının kapasitesi daralabiliyor."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-tarihi-mardin-kahvecisi",
+      "categoryId": "kahve",
+      "resolvedName": "Tarihi Mardin Kahvecisi",
+      "branchName": "Teker, 1. Cadde No:185/B, 47000 Artuklu/Mardin",
+      "placeId": "ChIJn2b0CrCJCkARrCeCKY8_Wjo",
+      "coordinates": {
+        "lat": 37.3134154,
+        "lng": 40.739925799999995
+      },
+      "rating": 4.9,
+      "userRatingCount": 446,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://tarihimardinkahvecisi.com/",
+      "mapsUri": "https://maps.google.com/?cid=4204743086213048236",
+      "recommendedPrimary": [
+        "Kakuleli Süryani Kahvesi",
+        "Geleneksel Mırra (Acı Kahve)",
+        "Közde Menengiç & Dibek Kahvesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kakule & Çekirdek Harmanı Tadımı",
+          "note": "Yemek sonrası kısa bir mola verip bölgenin üç ayrı kahve geleneğini (Süryani, Mırra, Menengiç) art arda tatma şansı veriyor.",
+          "proof": "tarihimardinkahvecisi.com ve dibekkahve.com bilgileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Birinci Cadde üzerinde otantik kahve ocağı ve mütevazı tadım masaları",
+        "crowdAndNoise": "Gün boyu Eski Mardin yürüyüşü yapan ziyaretçilerle sürekli akışkan",
+        "disadvantage": "Yüksek devirli turistik cadde üzerinde yer aldığı için sessiz çalışma ortamı değil, kısa sohbet ve tadım noktası.",
+        "transit": "Teker Mahallesi 1. Cadde No:185/B adresinde Eski Mardin ana yaya hattında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Tarihi Mardin Kahvecisi Sitesi",
+          "url": "https://tarihimardinkahvecisi.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1. Cadde konumu ve Süryani/Mırra/Menengiç menüsü"
+        },
+        {
+          "title": "Dibek Kahve & Yerel Rehberler",
+          "url": "https://dibekkahve.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Özel harman Süryani kahvesi değerlendirmesi"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "440+ değerlendirme ile yüksek cadde memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Kakuleli Süryani kahvesi, mırra ve menengiçi bir arada tatmak için en saf durak",
+        "Hızlı ve güler yüzlü ikram"
+      ],
+      "cons": [
+        "Kısıtlı oturma yeri ve cadde yoğunluğu"
+      ],
+      "uncertainties": [
+        "Yoğun gezi saatlerinde mırra sunumu için küçük tezgahta birkaç dakika sıra oluşabiliyor."
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-coffee-in-madre",
+      "categoryId": "kahve",
+      "resolvedName": "Coffee in Madre",
+      "branchName": "Yenişehir, Esenler Sk Golden Life apt No: 11/C, 47200 Artuklu/Mardin",
+      "placeId": "ChIJZc9APwCJCkARXfVccLd1B1A",
+      "coordinates": {
+        "lat": 37.3202484,
+        "lng": 40.7217997
+      },
+      "rating": 4.5,
+      "userRatingCount": 140,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.coffeeinmadre.com/",
+      "mapsUri": "https://maps.google.com/?cid=5766707278595814749",
+      "recommendedPrimary": [
+        "Flat White / Cortado",
+        "Soğuk Demleme (Cold Brew) & Buzlu Latte",
+        "El Yapımı Kahve Eşlikçileri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yenişehir’de Bağımsız Kahve Noktası",
+          "note": "Modern kent merkezinde büyük kahve zincirlerinin aksine butik bar atmosferiyle nitelikli çekirdek odaklı servis veriyor.",
+          "proof": "coffeeinmadre.com ve yandex.com kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Modern, temiz ve oturma konforu yüksek iç salon",
+        "crowdAndNoise": "Öğleden sonra ve akşam saatlerinde yerel üniversite gençliği ve kahveseverler",
+        "disadvantage": "Eski Mardin turistik yürüyüş aksının dışında, Yenişehir konut bölgesinde kalıyor.",
+        "transit": "Yenişehir Mahallesi Esenler Sokak Golden Life Apartmanı No:11/C adresinde yer alıyor."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Coffee in Madre Resmi Sitesi",
+          "url": "https://coffeeinmadre.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Yenişehir konumu ve sıcak/soğuk kahve menüsü"
+        },
+        {
+          "title": "Yandex Maps Mardin",
+          "url": "https://yandex.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Esenler Sokak bağımsız kafe değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Bölgedeki zincir kafelere güçlü bağımsız üçüncü nesil alternatif",
+        "Ferah ve modern bar düzeni"
+      ],
+      "cons": [
+        "Eski Mardin merkezine araç veya toplu taşıma mesafesinde"
+      ],
+      "uncertainties": [
+        "Akşam saatlerinde Yenişehir sakinlerinin yoğunluğuyla masalar hızla dolabiliyor."
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-border-coffee-house",
+      "categoryId": "kahve",
+      "resolvedName": "Border Coffee House",
+      "branchName": "Teker, 1. Cadde No:157, 47060 Artuklu/Mardin",
+      "placeId": "ChIJH1GZ0IqJCkARCQ5RrqKxoQs",
+      "coordinates": {
+        "lat": 37.314084099999995,
+        "lng": 40.742326899999995
+      },
+      "rating": 4.9,
+      "userRatingCount": 74,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=838146317934988809",
+      "recommendedPrimary": [
+        "Cappuccino / Americano",
+        "3 Peynirli Kruvasan",
+        "Limonlu / Ahududulu Cheesecake"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Eski Mardin’de Espresso & Kruvasan Durağı",
+          "note": "Yöresel mırra dışında günlük espresso ya da filtre kahve rutini arayan gezginler için cadde üzerinde erişilebilir bir mola noktası.",
+          "proof": "restoranim.net ve macizlenecekyerler.com incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş duvarlı modern iç mekân masaları",
+        "crowdAndNoise": "Öğleden sonra kahve molalarında ve maç akşamlarında hareketli",
+        "disadvantage": "Akşamları büyük ekran yayınları nedeniyle zaman zaman yüksek sesli bir kafe ortamına dönüşebiliyor.",
+        "transit": "Teker Mahallesi 1. Cadde No:157 adresinde Eski Mardin doğu yürüyüş aksında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım — Border Coffee House",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Espresso çeşitleri, kruvasan ve cheesecake menüsü"
+        },
+        {
+          "title": "Maç İzlenecek Yerler Rehberi",
+          "url": "https://www.macizlenecekyerler.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1. Cadde konumu ve atmosfer notları"
+        },
+        {
+          "title": "Yandex Maps Mardin",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Teker Mahallesi kahve puanlaması"
+        }
+      ],
+      "pros": [
+        "Tarihî caddede güvenilir espresso ve kruvasan kalitesi",
+        "Temiz iç mekân"
+      ],
+      "cons": [
+        "Spor yayını olan akşamlarda sakin sohbet ortamı azalabiliyor"
+      ],
+      "uncertainties": [
+        "Kruvasan ve fırın eşlikçileri öğleden sonra saatlerine göre azalabiliyor."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-coffee-jin",
+      "categoryId": "kahve",
+      "resolvedName": "Coffee JIN",
+      "branchName": "Şar, Kültür Sok., 47100 Artuklu/Mardin",
+      "placeId": "ChIJ4XJqOwCJCkARCuYpwG83miM",
+      "coordinates": {
+        "lat": 37.3136754,
+        "lng": 40.734077
+      },
+      "rating": 4.9,
+      "userRatingCount": 69,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2565423890845787658",
+      "recommendedPrimary": [
+        "Sütlü Espresso / Latte",
+        "Taze Demleme Çay & Filtre Kahve",
+        "Günlük Tatlı Eşlikçisi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Eski Mardin Merkezinde Sosyal Sorumluluk & Kahve",
+          "note": "Turistik fiyat baskısından uzak, güler yüzlü kadın ekip tarafından işletilen sıcak bir soluklanma noktası.",
+          "proof": "mardinhaberyolu.com ve restoranim.net Coffee JIN haberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Şar taş sokağı kenarında samimi iç salon ve birkaç masa",
+        "crowdAndNoise": "Gün içi gezginler, öğrenciler ve yerel kadın misafirler",
+        "disadvantage": "Büyük manzara terası bulunmadığından panoramik manzara beklentisiyle değil sıcak sokak molası için uygun.",
+        "transit": "Şar Mahallesi Kültür Sokak üzerinde Cumhuriyet Meydanı’na çok yakın konumda."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Mardin Haber Yolu",
+          "url": "https://www.mardinhaberyolu.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tamamen kadın çalışanlarla sosyal amaçlı kafe kuruluşu"
+        },
+        {
+          "title": "Mardin GZT & Restoranım",
+          "url": "https://mardingzt.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kültür Sokak konumu, ekonomik fiyatlar ve sütlü kahveler"
+        }
+      ],
+      "pros": [
+        "Kadın emeğini görünür kılan yerel sosyal girişim",
+        "Ulaşılabilir fiyatlar ve samimi servis"
+      ],
+      "cons": [
+        "Küçük alan ve manzarasız sokak seviyesi konumu"
+      ],
+      "uncertainties": [
+        "Özel etkinlik günlerinde masa yoğunluğu yaşanabiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-han-mutfak-sanatlari",
+      "categoryId": "denemelisin",
+      "resolvedName": "Han Mutfak Sanatları Restaurant",
+      "branchName": "1.Cadde Şar Mah. No:351 Şahkulubey Konağı Karşısı Şahım Pasajı, Şar, 47060 Artuklu/Mardin",
+      "placeId": "ChIJ15lLU0uJCkARXTSCF4F-rNc",
+      "coordinates": {
+        "lat": 37.3134307,
+        "lng": 40.736484499999996
+      },
+      "rating": 4.4,
+      "userRatingCount": 3409,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.hanmutfaksanatlarirestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=15540935507059029085",
+      "recommendedPrimary": [
+        "Kaburga Dolması",
+        "İrok & İkbebet & Sembusek",
+        "Kuzu Haşlama / Alluciye"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarihî Çarşı Aksi İçinde Eksiksiz Yöresel Masa",
+          "note": "Özellikle kaburga dolması, saç tava ve lebeni çorbasıyla kapsamlı Mardin sofrası kuruyor.",
+          "proof": "hanmutfaksanatlarirestaurant.com ve yandex.com.tr incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî taş kemer altı iç salon ve üst kat masaları",
+        "crowdAndNoise": "Öğle ve akşam sıra gecesi seanslarında gruplarla yoğun",
+        "disadvantage": "Grup turlarının geldiği akşamlarda ses düzeyi yükseliyor ve bireysel servis temposu değişebiliyor.",
+        "transit": "Şar Mahallesi 1. Cadde No:351 (Şahkulubey Konağı karşısı Şahım Pasajı)."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Han Mutfak Sanatları Sitesi",
+          "url": "https://hanmutfaksanatlarirestaurant.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1. Cadde Şahım Pasajı adresi ve kaburga/alluciye/mumbar menüsü"
+        },
+        {
+          "title": "Yandex Maps Mardin",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Binlerce değerlendirmeyle yöneltilen yöresel mutfak profili"
+        }
+      ],
+      "pros": [
+        "Sakatattan tencere yemeğine tüm yerel kalemleri tek menüde sunuyor",
+        "Merkezi konum"
+      ],
+      "cons": [
+        "Turistik sıra gecesi akşamlarında gürültülü ve kalabalık olabiliyor"
+      ],
+      "uncertainties": [
+        "Kaburga dolması için gün içi yoğunluğuna göre stok teyidi faydalı oluyor."
+      ],
+      "selectionScore": 71,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-revan-restoran",
+      "categoryId": "denemelisin",
+      "resolvedName": "Revan Restoran, Mardin",
+      "branchName": "1. Cadde, Latifiye, Cami Mah 152 Tepe Sokak No: 2, 47100 Artuklu/Mardin",
+      "placeId": "ChIJCVJMwZaJCkAR73l6zaFZlhE",
+      "coordinates": {
+        "lat": 37.3125813,
+        "lng": 40.7350366
+      },
+      "rating": 4.4,
+      "userRatingCount": 623,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://revanrestoran.com/",
+      "mapsUri": "https://maps.google.com/?cid=1267298896623335919",
+      "recommendedPrimary": [
+        "Fırında Kuzu Kaburga Dolması (Ön Sipariş)",
+        "Paylaşımlık Mardin Tabağı",
+        "Bakır Tasta Yayık Ayranı & Mırra"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarihî Konak Terasında Karşılama Ritüeli",
+          "note": "Yemek başında bol yeşillikli ev usulü çiğköfte, kapanışta ise demlik çay ve geleneksel acı mırra sunuluyor.",
+          "proof": "revanrestoran.com menü ve konak hikâyesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî kemerli taş salonlar ve ovaya açık teras",
+        "crowdAndNoise": "Akşam yemekleri ve gün batımı saatlerinde yüksek talep",
+        "disadvantage": "152. Tepe Sokak yokuşlu taş sokak olduğundan yürüyerek çıkmak gerekiyor.",
+        "transit": "Latifiye (Cami Mah.) 152. Tepe Sokak No:2 adresinde 1. Cadde bağlantısında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Revan Restoran Resmi Sitesi",
+          "url": "https://revanrestoran.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "800 yıllık konak tarihi, Mardin Tabağı ve kaburga dolması"
+        },
+        {
+          "title": "Google Maps Mardin",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "620+ değerlendirme ile yüksek akşam yemeği memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Manzara, tarihî taş mimari ve yöresel tabak dengesini iyi kuruyor",
+        "Zengin başlangıç ve mırra ikramı"
+      ],
+      "cons": [
+        "Kaburga dolması gibi ağır pişen kalemlerde ön sipariş öneriliyor"
+      ],
+      "uncertainties": [
+        "Akşam teras masaları hava şartlarına ve rezervasyon durumuna göre açılıyor."
+      ],
+      "selectionScore": 67,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-seyr-i-merdin",
+      "categoryId": "denemelisin",
+      "resolvedName": "Seyr-i Merdin",
+      "branchName": "Teker, Cumhuriyet Caddesi No:249, 47100 Artuklu/Mardin",
+      "placeId": "ChIJTSnQFcCICkAR13PPCUWK330",
+      "coordinates": {
+        "lat": 37.313340499999995,
+        "lng": 40.739868
+      },
+      "rating": 4.2,
+      "userRatingCount": 7216,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.seyrimerdin.com/",
+      "mapsUri": "https://maps.google.com/?cid=9070120203669435351",
+      "recommendedPrimary": [
+        "Seyr-i Merdin Kebabı",
+        "Mahalli Yöresel Tabağı & Mehir",
+        "Harire Tatlısı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Panoramik Ova Manzarasında Fiks & Alakart Seçenekler",
+          "note": "Geniş teras kapasitesi sayesinde kalabalık saatlerde dahi ovaya karşı akşam yemeği veya kahve molası verebilen ikonik nokta.",
+          "proof": "seyrimerdin.com ve mardin360.com rehber kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Çok geniş manzaralı açık teras ve kapalı salonlar",
+        "crowdAndNoise": "Özellikle gün batımı ve akşamüstü teras fotoğrafları için yoğun kalabalık",
+        "disadvantage": "Yüksek turistik hacim ve büyük ölçekli servis temposu butik lokanta hassasiyetini zaman zaman gölgeleyebiliyor.",
+        "transit": "Teker Mahallesi Cumhuriyet Caddesi (1. Cadde) No:249 adresinde merkez noktada."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Seyr-i Merdin Resmi Sitesi",
+          "url": "https://seyrimerdin.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Teker konumu, kebaplar ve teras profili"
+        },
+        {
+          "title": "Mardin 360 Gezi Rehberi",
+          "url": "https://www.mardin360.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mahalli kebap, mehir ve harire tatlısı kapanışı"
+        },
+        {
+          "title": "Yandex Maps Mardin",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Teker Cumhuriyet Caddesi teras ve mahalli yemek kayıtları"
+        },
+        {
+          "title": "Google Maps Büyük Hacim",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Binlerce misafirle semtin en tanınan teraslarından"
+        }
+      ],
+      "pros": [
+        "Eski Mardin’de ova manzarasını en geniş açıdan gören teraslardan biri",
+        "Merkezi 1. Cadde konumu"
+      ],
+      "cons": [
+        "Yüksek turistik kalabalıkta servis standartları dalgalanabiliyor"
+      ],
+      "uncertainties": [
+        "Ön sıra manzara masaları gün batımı öncesi hızla doluyor."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-bagdadi-restaurant",
+      "categoryId": "denemelisin",
+      "resolvedName": "Bağdadi Restaurant",
+      "branchName": "Şar, Vali Adil 228 Sk., 47100 Artuklu/Mardin",
+      "placeId": "ChIJT_iIZL-ICkARRgnhcCQZ3kY",
+      "coordinates": {
+        "lat": 37.3136393,
+        "lng": 40.7363071
+      },
+      "rating": 4,
+      "userRatingCount": 1975,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.mardinbagdadi.com/",
+      "mapsUri": "https://maps.google.com/?cid=5106546671788034374",
+      "recommendedPrimary": [
+        "Cara Kebabı",
+        "Bağdadi Çorbası & Mezopotamya Tabağı",
+        "Alluciye & Kaburga Dolması"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Akşam Leyli Geceleri & Taş Avlu Sohbeti",
+          "note": "Şarap peyniri ve kurutulmuş domates gibi antik başlangıçlarla akşam programını birleştiren klasik durak.",
+          "proof": "mardin360.com ve yandex.com.tr Bağdadi profili"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş kemerli avlu, tarihî odalar ve Mezopotamya manzaralı teras",
+        "crowdAndNoise": "Akşam müzikli seanslarda turistik gruplar yoğunlaşıyor",
+        "disadvantage": "Turistik akşam eğlencesi ve eski bina yoğunluğu nedeniyle servis hızı ile fiyat-kalite dengesi karma geri bildirimler alabiliyor.",
+        "transit": "Şar Mahallesi Vali Adil 228. Sokak üzerinde Eski Mardin merkezinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Mardin 360 — Bağdadi Restoran",
+          "url": "https://www.mardin360.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bağdadi çorbası, Cara kebabı ve Mezopotamya Tabağı"
+        },
+        {
+          "title": "Gezinomi & Yandex Mardin",
+          "url": "https://www.gezinomi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihî taş konak geçmişi ve akşam programı"
+        }
+      ],
+      "pros": [
+        "Başka yerde az bulunan Cara kebabı ve Bağdadi çorbası gibi geleneksel kalemler",
+        "Tarihî Şar taş mimarisi"
+      ],
+      "cons": [
+        "Yoğun turistik gecelerde servis temposu düşebiliyor"
+      ],
+      "uncertainties": [
+        "Müziksiz sakin akşam yemeği arayanlar için akşam saatleri gürültülü gelebiliyor."
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-kebapci-rido",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kebapçı Rıdo",
+      "branchName": "Teker, 1. Cadde no:219, 47200 Artuklu/Mardin",
+      "placeId": "ChIJ2cLxOsCICkAR4fe9Wzc-L4Y",
+      "coordinates": {
+        "lat": 37.3136967,
+        "lng": 40.740938199999995
+      },
+      "rating": 3.8,
+      "userRatingCount": 751,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.tripadvisor.com.tr/Restaurant_Review-g672951-d3537803-Reviews-RIdo_Kebap_Salonu-Mardin_Mardin_Province.html",
+      "mapsUri": "https://maps.google.com/?cid=9669015332471044065",
+      "recommendedPrimary": [
+        "Acılı / Acısız Zırh Mardin Kebabı",
+        "Kuzu Ciğer Şiş & Kuzu Pirzola",
+        "Sumaklı Soğan Eşliği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Gösterişsiz Eski Çarşı Ocağı",
+          "note": "Modern lüks konak restoranlarının tam tersine, ince çekilmiş zırh kıymasını meşe közüne veren yalın bir tarihi esnaf dükkânı.",
+          "proof": "yerel gastronomi arşivleri ve kisikatesakademi.com.tr"
+        }
+      ],
+      "suitability": {
+        "seating": "Dar tarihî cadde içinde mütevazı esnaf lokantası masaları",
+        "crowdAndNoise": "Öğle saatlerinde yerel halk ve gastronomi gezginleriyle hızlı devirli",
+        "disadvantage": "Çok sade fiziki koşulları, dar alanı ve yoğun günlerdeki hızlı servis beklentisi lüks restoran arayanları memnun etmeyebilir.",
+        "transit": "Teker Mahallesi 1. Cadde No:219 adresinde Eski Mardin merkez yürüyüş aksında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Harbi Yiyorum — Kebapçı Rıdo",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Eski Mardin sokak lezzeti ve Mardin kebabı ritüeli"
+        },
+        {
+          "title": "Kısık Ateş Akademi & Resmi Site",
+          "url": "https://kebapciridoseyhmususta.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Torunu Şeyhmus Usta ve 3. kuşak zırh kıyma ustalığı"
+        },
+        {
+          "title": "İnternethaber Mardin Gastronomi",
+          "url": "https://www.internethaber.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1920’lerin başına uzanan Halep kökenli 100 yıllık geçmiş"
+        }
+      ],
+      "pros": [
+        "Şehrin yaşayan en eski kebapçı miraslarından biri",
+        "Sade ocakbaşı odağı ve zırh eti ustalığı"
+      ],
+      "cons": [
+        "Çok küçük esnaf mekânı ve düşük fiziksel konfor"
+      ],
+      "uncertainties": [
+        "Akşam geç saatlere kalmadan günlük hazırlanan et stoğu bitebiliyor."
+      ],
+      "selectionScore": 74,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-kadim-mokid-mutfagi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kadim Mokid Mutfağı",
+      "branchName": "Çabuk, 1. Cadde No:320, 47200 Artuklu/Mardin",
+      "placeId": "ChIJKXKfam-JCkART3epb6SLGdY",
+      "coordinates": {
+        "lat": 37.3130984,
+        "lng": 40.7323837
+      },
+      "rating": 4.5,
+      "userRatingCount": 90,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://kadimmokidmutfagi.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=15427515536898619215",
+      "recommendedPrimary": [
+        "Ev Usulü Yöresel Tabağı",
+        "Kızartma İrok & Haşlama İkbebet",
+        "Ev Yapımı Sembusek & Tatlılar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sosyal Sorumluluk & Anne Eli Reçeteleri",
+          "note": "Büyük turistik konak gösterileri yerine yerel kadın istihdamına doğrudan katkı sağlayan temiz ev mutfağı sunuyor.",
+          "proof": "mokid.org ve yandex.com.tr Eski Mardin kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "1. Cadde üzerinde sade ve temiz lokanta masaları",
+        "crowdAndNoise": "Öğle yemeği saatlerinde bireysel gezginler ve yerel çalışanlar",
+        "disadvantage": "Büyük akşam ziyafet konsepti yerine gündüz esnaf ve ev mutfağı düzeninde işliyor.",
+        "transit": "Çabuk Mahallesi 1. Cadde No:320 adresinde ana tarihî cadde güzergâhında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "MOKİD Resmi Sayfası",
+          "url": "https://mokid.org/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mardin Ortak Kadın İşbirliği Derneği mutfak projesi"
+        },
+        {
+          "title": "Yandex Maps Eski Mardin",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1. Cadde konumu ve ev yemeği temizliği puanları"
+        }
+      ],
+      "pros": [
+        "Doğrudan kadın kooperatifini destekleyen samimi lezzet durağı",
+        "Ağır yağsız gerçek ev pişirimi"
+      ],
+      "cons": [
+        "Kısıtlı akşam servisi ve sade dekorasyon"
+      ],
+      "uncertainties": [
+        "Günlük ev yemekleri menüdeki tepsi mevcuduna göre öğleden sonra değişebiliyor."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-hubo-suryani-sarapcilik",
+      "categoryId": "denemelisin",
+      "resolvedName": "Hubo’ Süryani Şarapçılık",
+      "branchName": "Latifiye, 1. Cadde No:425/D, 47100 Artuklu/Mardin",
+      "placeId": "ChIJx86dLxSJCkARA7EMheO_6WU",
+      "coordinates": {
+        "lat": 37.3128928,
+        "lng": 40.7325417
+      },
+      "rating": 4.9,
+      "userRatingCount": 755,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://hubosuryanisarapcilik.com/",
+      "mapsUri": "https://maps.google.com/?cid=7343611651314987267",
+      "recommendedPrimary": [
+        "Hubo Mardin Kırmızı Kupaj",
+        "Cehennem Deresi (Gavdoni & Boğazkere)",
+        "Beyto Özel Seri Tadımı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Anadolu & Tur Abdin Yerli Üzüm Tanıtımı",
+          "note": "Mahlep aromalı klasiklerin dışında doğrudan bölgenin yerli üzüm karakterini öne çıkaran butik üretim yapıyor.",
+          "proof": "hubosuryanisarapcilik.com ürün ve bağcılık notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş mağaza içi tadım tezgâhı ve küçük oturma köşesi",
+        "crowdAndNoise": "Gündüz Eski Mardin turu yapan gezginlerle gün boyu canlı",
+        "disadvantage": "Restoran düzeninde uzun akşam oturumu değil, mahzen/üretici tadımı ve şişe alımı için tasarlanmış.",
+        "transit": "Latifiye Mahallesi 1. Cadde No:425/D üzerinde Eski Mardin merkez hattında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Hubo Süryani Şarapçılık",
+          "url": "https://hubosuryanisarapcilik.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Tur Abdin üzümleri, Cehennem Deresi ve Beyto serileri"
+        },
+        {
+          "title": "Google Maps Eski Mardin",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "750+ değerlendirme ile yüksek tadım memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Bölgenin yerli üzüm kupajlarını üreticiden birebir dinleyerek tatma imkânı",
+        "Merkezi 1. Cadde konumu"
+      ],
+      "cons": [
+        "Uzun süreli restoran masası konforu sunmuyor"
+      ],
+      "uncertainties": [
+        "Yüksek turizm günlerinde tadım alanı kalabalıklaşabiliyor."
+      ],
+      "selectionScore": 82,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mardin-hamdani-restaurant",
+      "categoryId": "denemelisin",
+      "resolvedName": "Hamdani Restaurant - Her Akşam Sıra Gecesi",
+      "branchName": "Diyarbakır Kapı, Mah.1 Cad No:455, 47100 Artuklu/Mardin",
+      "placeId": "ChIJudwTpuuJCkARs6vLB7yL9-g",
+      "coordinates": {
+        "lat": 37.3130774,
+        "lng": 40.7304572
+      },
+      "rating": 4.8,
+      "userRatingCount": 10279,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://hamdanirestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=16787039775747713971",
+      "recommendedPrimary": [
+        "Sıra Gecesi Yöresel Fiks Menü",
+        "Kaburga Dolması & İkbebet",
+        "Mırra Kahvesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarihî Konak İçinde Akşam Müzik Programı",
+          "note": "Mardin’de sıra gecesi ve canlı müzik atmosferini yemekle birleştirmek isteyen gruplar için şehrin en büyük adresi.",
+          "proof": "hamdanirestaurant.com ve mardin360.com incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Yüksek tavanlı dev taş kemer salonlar ve grup masaları",
+        "crowdAndNoise": "Her akşam sıra gecesi saatlerinde tam dolu turistik ve grup katılımı",
+        "disadvantage": "Gala/etkinlik tempolu ve çok yüksek fiyatlı fiks menü düzeni sakin, sade akşam yemeği arayanlara uygun değil.",
+        "transit": "Diyarbakır Kapı Mahallesi 1. Cadde No:455 (Maridin Otel bünyesinde)."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Hamdani Restaurant Resmi Sitesi",
+          "url": "https://hamdanirestaurant.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1600 yıllık taş mimari ve akşam sıra gecesi fiks menüsü"
+        },
+        {
+          "title": "Mardin 360 & Google Maps",
+          "url": "https://www.mardin360.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kaburga dolması, ikbebet ve canlı fasıl akşamları"
+        },
+        {
+          "title": "Yandex Maps Mardin",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Diyarbakır Kapı sıra gecesi ve konak değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Etkileyici tarihî taş salon mimarisi",
+        "Düzenli her akşam sıra gecesi programı"
+      ],
+      "cons": [
+        "Yüksek fiyat segmenti ve çok kalabalık etkinlik gürültüsü"
+      ],
+      "uncertainties": [
+        "Akşam seansları ön rezervasyonsuz yer bulmaya çoğunlukla imkân tanımıyor."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    }
+  ]
+}

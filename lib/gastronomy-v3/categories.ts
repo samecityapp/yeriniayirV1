@@ -214,6 +214,132 @@ export const SANLIURFA_HERITAGE_CATEGORIES: V3CategoryDef[] = [
   },
 ];
 
+export const MARDIN_HERITAGE_CATEGORIES: V3CategoryDef[] = [
+  {
+    id: 'yoresel',
+    slug: 'mardin-mutfagi',
+    label: 'Yöresel Mutfak',
+    title: 'Kaburga Dolması, Dobo, Sembusek & Konak Mutfağı',
+    emoji: '🏛️',
+    isMustTry: false,
+  },
+  {
+    id: 'kebap',
+    slug: 'kebap-corba',
+    label: 'Kebap & Çorba',
+    title: 'Zırh Kebabı, Ciğer Şiş & Sabah Çorbacıları',
+    emoji: '🥩',
+    isMustTry: false,
+  },
+  {
+    id: 'date',
+    slug: 'suryani-sarabi-teras',
+    label: 'Şarap & Teras',
+    title: 'Süryani Şarap Evleri & Taş Teraslar',
+    emoji: '🍷',
+    isMustTry: false,
+  },
+  {
+    id: 'tatli',
+    slug: 'kahiye-ve-tatli',
+    label: 'Kahiye & Tatlı',
+    title: 'Kahiye, Katmer, Künefe & Sütlü Tatlılar',
+    emoji: '🥮',
+    isMustTry: false,
+  },
+  {
+    id: 'kahvalti',
+    slug: 'kahvalti',
+    label: 'Kahvaltı',
+    title: 'Taş Avlu Kahvaltısı, Sıcak Çörek & Menengiç',
+    emoji: '🍳',
+    isMustTry: false,
+  },
+  {
+    id: 'kahve',
+    slug: 'kahve',
+    label: 'Süryani & Mırra',
+    title: 'Süryani Kahvesi, Mırra, Dibek & Nitelikli Kahve',
+    emoji: '☕',
+    isMustTry: false,
+  },
+  {
+    id: 'denemelisin',
+    slug: 'denemelisin',
+    label: 'Denemelisin',
+    title: 'Mutlaka Denemelisin',
+    emoji: '⭐',
+    isMustTry: false,
+  },
+];
+
+export const DIYARBAKIR_HERITAGE_CATEGORIES: V3CategoryDef[] = [
+  {
+    id: 'ciger',
+    slug: 'ciger',
+    label: 'Sabah Ciğeri',
+    title: 'Suriçi & Ocakbaşı Kuzu Ciğeri',
+    emoji: '🔥',
+    isMustTry: false,
+  },
+  {
+    id: 'kebap',
+    slug: 'kebap-doner',
+    label: 'Kebap & Lahmacun',
+    title: 'Zırh Kebabı, Odun Fırını Lahmacun & Tava',
+    emoji: '🥩',
+    isMustTry: false,
+  },
+  {
+    id: 'yoresel',
+    slug: 'diyarbakir-mutfagi',
+    label: 'Kaburga & Yöresel',
+    title: 'Kaburga Dolması, Meftune, Güveç & Tarihi Mutfak',
+    emoji: '🏛️',
+    isMustTry: false,
+  },
+  {
+    id: 'tirit',
+    slug: 'paca-corba',
+    label: 'Paça & Çorba',
+    title: 'Kelle Paça, Mumbar & Hindi Sulu Çorbacılar',
+    emoji: '🍲',
+    isMustTry: false,
+  },
+  {
+    id: 'tatli',
+    slug: 'burma-kadayif',
+    label: 'Burma Kadayıf',
+    title: 'Fıstıklı Burma Kadayıf, Katmer & Künefe',
+    emoji: '🥮',
+    isMustTry: false,
+  },
+  {
+    id: 'kahvalti',
+    slug: 'kahvalti',
+    label: 'Kahvaltı',
+    title: 'Suriçi Taş Avluları & Yöresel Serpme Kahvaltı',
+    emoji: '🍳',
+    isMustTry: false,
+  },
+  {
+    id: 'kahve',
+    slug: 'kahve',
+    label: 'Kahve',
+    title: 'Suriçi, Ofis & Cadde 75 Nitelikli Kahve Durakları',
+    emoji: '☕',
+    isMustTry: false,
+  },
+  {
+    id: 'denemelisin',
+    slug: 'denemelisin',
+    label: 'Denemelisin',
+    title: 'Mutlaka Denemelisin',
+    emoji: '⭐',
+    isMustTry: false,
+  },
+];
+
 export function buildRegionCategories(opts?: {
   mode?: 'standard' | 'culinary_heritage';
   customCategories?: V3CategoryDef[];

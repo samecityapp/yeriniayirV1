@@ -65,6 +65,8 @@ import izmirUrlaSnapshotJson from './regions/izmir-urla.json';
 import izmirSeferihisarSigacikSnapshotJson from './regions/izmir-seferihisar-sigacik.json';
 import izmirFocaSnapshotJson from './regions/izmir-foca.json';
 import sanliurfaMerkezSnapshotJson from './regions/sanliurfa-merkez.json';
+import mardinMerkezSnapshotJson from './regions/mardin-merkez.json';
+import diyarbakirMerkezSnapshotJson from './regions/diyarbakir-merkez.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -135,6 +137,8 @@ const IZMIR_URLA_SNAPSHOT = izmirUrlaSnapshotJson as V3VerifiedRegionSnapshot;
 const IZMIR_SEFERIHISAR_SIGACIK_SNAPSHOT = izmirSeferihisarSigacikSnapshotJson as V3VerifiedRegionSnapshot;
 const IZMIR_FOCA_SNAPSHOT = izmirFocaSnapshotJson as V3VerifiedRegionSnapshot;
 const SANLIURFA_MERKEZ_SNAPSHOT = sanliurfaMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
+const MARDIN_MERKEZ_SNAPSHOT = mardinMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
+const DIYARBAKIR_MERKEZ_SNAPSHOT = diyarbakirMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -204,6 +208,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   IZMIR_SEFERIHISAR_SIGACIK_SNAPSHOT,
   IZMIR_FOCA_SNAPSHOT,
   SANLIURFA_MERKEZ_SNAPSHOT,
+  MARDIN_MERKEZ_SNAPSHOT,
+  DIYARBAKIR_MERKEZ_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -756,6 +762,29 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   hasimiye: SANLIURFA_MERKEZ_SNAPSHOT,
   'gumruk-hani': SANLIURFA_MERKEZ_SNAPSHOT,
   'bahcelievler-urfa': SANLIURFA_MERKEZ_SNAPSHOT,
+  mardin: MARDIN_MERKEZ_SNAPSHOT,
+  'mardin-merkez': MARDIN_MERKEZ_SNAPSHOT,
+  artuklu: MARDIN_MERKEZ_SNAPSHOT,
+  'eski-mardin': MARDIN_MERKEZ_SNAPSHOT,
+  'birinci-cadde-mardin': MARDIN_MERKEZ_SNAPSHOT,
+  'yenisehir-mardin': MARDIN_MERKEZ_SNAPSHOT,
+  'sar-mahallesi': MARDIN_MERKEZ_SNAPSHOT,
+  'ulucami-mardin': MARDIN_MERKEZ_SNAPSHOT,
+  savurkapi: MARDIN_MERKEZ_SNAPSHOT,
+  diyarbakir: DIYARBAKIR_MERKEZ_SNAPSHOT,
+  'diyarbakir-merkez': DIYARBAKIR_MERKEZ_SNAPSHOT,
+  amed: DIYARBAKIR_MERKEZ_SNAPSHOT,
+  sur: DIYARBAKIR_MERKEZ_SNAPSHOT,
+  surici: DIYARBAKIR_MERKEZ_SNAPSHOT,
+  dagkapi: DIYARBAKIR_MERKEZ_SNAPSHOT,
+  mardinkapi: DIYARBAKIR_MERKEZ_SNAPSHOT,
+  'yenisehir-diyarbakir': DIYARBAKIR_MERKEZ_SNAPSHOT,
+  'ofis-diyarbakir': DIYARBAKIR_MERKEZ_SNAPSHOT,
+  kayapinar: DIYARBAKIR_MERKEZ_SNAPSHOT,
+  diclekent: DIYARBAKIR_MERKEZ_SNAPSHOT,
+  'cadde-75': DIYARBAKIR_MERKEZ_SNAPSHOT,
+  'baglar-diyarbakir': DIYARBAKIR_MERKEZ_SNAPSHOT,
+  'hasan-pasa-hani': DIYARBAKIR_MERKEZ_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {

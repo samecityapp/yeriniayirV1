@@ -503,6 +503,22 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'gloria jean',
   'suadiye coffee',
   'colombia coffee',
+  'kadayıfçı sıtkı',
+  'kadayifci sitki',
+  'sıtkı usta',
+  'sitki usta',
+  'fırın-ci',
+  'firin-ci',
+  'firuze kahve akademi',
+  'firuze kahve mardin',
+  'paçacı fazıl',
+  'pacaci fazil',
+  "walker's",
+  'walkers coffee',
+  'van kahvaltı sarayı',
+  'van kahvalti sarayi',
+  'sadık künefe',
+  'sadik kunefe',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([
