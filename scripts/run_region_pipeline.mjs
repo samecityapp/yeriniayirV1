@@ -91,6 +91,8 @@ const PUBLISHED_REGION_KEYS = [
   'ankara-cankaya-cukurambar',
   'aydin-merkez',
   'balikesir-merkez',
+  'balikesir-ayvalik-merkez',
+  'balikesir-ayvalik-cunda',
 ];
 const NEARBY_POOL_KEY = 'istanbul-kadikoy-nearby-pool';
 const DEFAULT_REGION_ORDER = [...PUBLISHED_REGION_KEYS, NEARBY_POOL_KEY];

@@ -81,6 +81,8 @@ import ankaraCankayaAyranciSnapshotJson from './regions/ankara-cankaya-ayranci.j
 import ankaraCankayaCukurambarSnapshotJson from './regions/ankara-cankaya-cukurambar.json';
 import aydinMerkezSnapshotJson from './regions/aydin-merkez.json';
 import balikesirMerkezSnapshotJson from './regions/balikesir-merkez.json';
+import balikesirAyvalikMerkezSnapshotJson from './regions/balikesir-ayvalik-merkez.json';
+import balikesirAyvalikCundaSnapshotJson from './regions/balikesir-ayvalik-cunda.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -177,6 +179,10 @@ const AYDIN_MERKEZ_SNAPSHOT =
   aydinMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 const BALIKESIR_MERKEZ_SNAPSHOT =
   balikesirMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
+const BALIKESIR_AYVALIK_MERKEZ_SNAPSHOT =
+  balikesirAyvalikMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
+const BALIKESIR_AYVALIK_CUNDA_SNAPSHOT =
+  balikesirAyvalikCundaSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -262,6 +268,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   ANKARA_CANKAYA_CUKURAMBAR_SNAPSHOT,
   AYDIN_MERKEZ_SNAPSHOT,
   BALIKESIR_MERKEZ_SNAPSHOT,
+  BALIKESIR_AYVALIK_MERKEZ_SNAPSHOT,
+  BALIKESIR_AYVALIK_CUNDA_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -1015,6 +1023,33 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'plevne-balikesir': BALIKESIR_MERKEZ_SNAPSHOT,
   'avlu-balikesir': BALIKESIR_MERKEZ_SNAPSHOT,
   eskikuyumcular: BALIKESIR_MERKEZ_SNAPSHOT,
+  'balikesir-ayvalik-merkez': BALIKESIR_AYVALIK_MERKEZ_SNAPSHOT,
+  'ayvalik-merkez': BALIKESIR_AYVALIK_MERKEZ_SNAPSHOT,
+  ayvalik: BALIKESIR_AYVALIK_MERKEZ_SNAPSHOT,
+  'ayvalik-balikesir': BALIKESIR_AYVALIK_MERKEZ_SNAPSHOT,
+  'ayvalik-carsi': BALIKESIR_AYVALIK_MERKEZ_SNAPSHOT,
+  macaron: BALIKESIR_AYVALIK_MERKEZ_SNAPSHOT,
+  'macaron-mahallesi': BALIKESIR_AYVALIK_MERKEZ_SNAPSHOT,
+  'ayvalik-marina': BALIKESIR_AYVALIK_MERKEZ_SNAPSHOT,
+  'setur-ayvalik-marina': BALIKESIR_AYVALIK_MERKEZ_SNAPSHOT,
+  'sefa-camlik': BALIKESIR_AYVALIK_MERKEZ_SNAPSHOT,
+  'camlik-ayvalik': BALIKESIR_AYVALIK_MERKEZ_SNAPSHOT,
+  'fevzipasa-vehbibey': BALIKESIR_AYVALIK_MERKEZ_SNAPSHOT,
+  'hayrettinpasa-ayvalik': BALIKESIR_AYVALIK_MERKEZ_SNAPSHOT,
+  'armutcuk-ayvalik': BALIKESIR_AYVALIK_MERKEZ_SNAPSHOT,
+  'balikesir-ayvalik-cunda': BALIKESIR_AYVALIK_CUNDA_SNAPSHOT,
+  'ayvalik-cunda': BALIKESIR_AYVALIK_CUNDA_SNAPSHOT,
+  cunda: BALIKESIR_AYVALIK_CUNDA_SNAPSHOT,
+  'cunda-adasi': BALIKESIR_AYVALIK_CUNDA_SNAPSHOT,
+  'cunda-ayvalik': BALIKESIR_AYVALIK_CUNDA_SNAPSHOT,
+  'cunda-balikesir': BALIKESIR_AYVALIK_CUNDA_SNAPSHOT,
+  'alibey-adasi': BALIKESIR_AYVALIK_CUNDA_SNAPSHOT,
+  alibey: BALIKESIR_AYVALIK_CUNDA_SNAPSHOT,
+  'namik-kemal-cunda': BALIKESIR_AYVALIK_CUNDA_SNAPSHOT,
+  'mithatpasa-cunda': BALIKESIR_AYVALIK_CUNDA_SNAPSHOT,
+  paterica: BALIKESIR_AYVALIK_CUNDA_SNAPSHOT,
+  'cataltepe-cunda': BALIKESIR_AYVALIK_CUNDA_SNAPSHOT,
+  'cunda-sahil': BALIKESIR_AYVALIK_CUNDA_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {

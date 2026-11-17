@@ -701,6 +701,12 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   "d'milagro",
   'd’milagro',
   'dmilagro',
+  'tatlı penguen',
+  'tatli penguen',
+  'dr kolçak',
+  'dr. kolçak',
+  'dr kolcak',
+  'dr. kolcak',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([
