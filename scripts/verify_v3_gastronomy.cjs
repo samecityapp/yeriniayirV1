@@ -714,10 +714,45 @@ test('policy gates reject closed, chain, out-of-neighborhood, and degraded candi
   assert.ok(aMap.get('ctrl-akyaka-leos-closed').reason.includes('CLOSED_TEMPORARILY'));
   assert.equal(aMap.get('ctrl-akyaka-lightroom-closed').accepted, false);
   assert.ok(aMap.get('ctrl-akyaka-lightroom-closed').reason.includes('CLOSED_PERMANENTLY'));
+  assert.equal(aMap.get('ctrl-akyaka-pangea-closed').accepted, false);
+  assert.ok(aMap.get('ctrl-akyaka-pangea-closed').reason.includes('CLOSED_PERMANENTLY'));
   assert.equal(aMap.get('ctrl-akyaka-starbucks-chain').accepted, false);
   assert.equal(aMap.get('ctrl-akyaka-starbucks-chain').reason, 'chain_or_franchise');
-  assert.equal(aMap.get('ctrl-akyaka-mentese-outside').accepted, false);
-  assert.ok(aMap.get('ctrl-akyaka-mentese-outside').reason.includes('outside_strict_neighborhood'));
+  assert.equal(aMap.get('ctrl-akyaka-dominos-chain').accepted, false);
+  assert.equal(aMap.get('ctrl-akyaka-dominos-chain').reason, 'chain_or_franchise');
+  assert.equal(aMap.get('ctrl-akyaka-huysuz-kahve-purity').accepted, false);
+  assert.ok(
+    aMap.get('ctrl-akyaka-huysuz-kahve-purity').reason.includes('kahve_category_not_coffee_specialist')
+  );
+  for (const nonFoodCtrl of ['ctrl-akyaka-akcapinar-otel', 'ctrl-akyaka-loop-hotel']) {
+    assert.equal(aMap.get(nonFoodCtrl).accepted, false);
+    assert.ok(aMap.get(nonFoodCtrl).reason.includes('invalid_place_type'));
+  }
+  assert.equal(aMap.get('ctrl-akyaka-backloop-inflation').accepted, false);
+  assert.equal(
+    aMap.get('ctrl-akyaka-backloop-inflation').reason,
+    'suspected_rating_inflation_no_community_proof'
+  );
+  for (const lowCtrl of [
+    'ctrl-akyaka-ayseana-low',
+    'ctrl-akyaka-sems-burger-low',
+    'ctrl-akyaka-rahat-meyhane-low',
+    'ctrl-akyaka-kordon-low',
+    'ctrl-akyaka-pisi-breakfast-low',
+    'ctrl-akyaka-su-cafe-low',
+    'ctrl-akyaka-cennet-low',
+    'ctrl-akyaka-sunset-low',
+    'ctrl-akyaka-viya-low',
+    'ctrl-akyaka-gokova-dinlenme-low',
+    'ctrl-akyaka-azmakbasi-low-count',
+  ]) {
+    assert.equal(aMap.get(lowCtrl).accepted, false);
+    assert.ok(aMap.get(lowCtrl).reason.includes('below_quality_threshold'));
+  }
+  for (const outCtrl of ['ctrl-akyaka-mentese-outside', 'ctrl-akyaka-citlik-collective-outside']) {
+    assert.equal(aMap.get(outCtrl).accepted, false);
+    assert.ok(aMap.get(outCtrl).reason.includes('outside_strict_neighborhood'));
+  }
 
   const yaniklarAudit = JSON.parse(
     fs.readFileSync(path.join(ROOT, 'work/gastronomy-v3/mugla-fethiye-yaniklar.audit.json'), 'utf8')
@@ -2401,6 +2436,9 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
   assert.equal(provider.getLocationBySlug('tekirova'), undefined);
   assert.equal(provider.getLocationBySlug('gokova')?.slug, 'akyaka');
   assert.equal(provider.getLocationBySlug('akcapinar')?.slug, 'akyaka');
+  assert.equal(provider.getLocationBySlug('akyaka-akcapinar')?.slug, 'akyaka');
+  assert.equal(provider.getLocationBySlug('kadin-azmagi')?.slug, 'akyaka');
+  assert.equal(provider.getLocationBySlug('asiklar-yolu')?.slug, 'akyaka');
   assert.equal(provider.getLocationBySlug('yaniklar')?.slug, 'yaniklar');
   assert.equal(provider.getLocationBySlug('karaot-plaji')?.slug, 'yaniklar');
   assert.equal(provider.getLocationBySlug('katranci-koyu')?.slug, 'yaniklar');
@@ -2773,32 +2811,78 @@ test('runtime discovery, foodAdapter, and realProvider expose all 6 Kadikoy regi
       );
     }
     if (slug === 'akyaka') {
-      assert.equal(p.getLocationBySlug('akyaka')?.locative, "Akyaka'da");
-      assert.equal(disc.region.displayName, 'Akyaka, Muğla');
+      assert.equal(p.getLocationBySlug('akyaka')?.locative, "Akyaka ve Akçapınar'da");
+      assert.equal(disc.region.displayName, 'Akyaka & Akçapınar, Ula, Muğla');
       const akyakaCats = p.getRegionCategories(disc.region.id);
-      assert.equal(akyakaCats.length, 7, 'Akyaka must expose 7 coastal categories');
+      assert.equal(akyakaCats.length, 7, 'Akyaka & Akçapınar must expose 7 coastal categories');
       assert.ok(
         akyakaCats.some((c) => c.slug === 'balik-deniz-urunleri'),
         'Akyaka missing balik-deniz-urunleri category'
       );
+      assert.equal(f.venues.length, 31, 'Akyaka & Akçapınar must expose 31 verified venues');
+      assert.ok(
+        f.venues.every(
+          (v) =>
+            typeof v.location === 'string' &&
+            (v.location.endsWith(', Akyaka') || v.location.endsWith(', Akçapınar'))
+        ),
+        'Every Akyaka & Akçapınar card location must end with , Akyaka or , Akçapınar'
+      );
+      const akyakaFish = p.getCategoryResult(disc.region.id, 'balik-deniz-urunleri');
+      assert.ok(
+        akyakaFish?.coreVenues[0]?.name.includes('Yengeç'),
+        `Akyaka & Akçapınar balik #1 must be Yengeç, got ${akyakaFish?.coreVenues[0]?.name}`
+      );
+      const akyakaKahvalti = p.getCategoryResult(disc.region.id, 'kahvalti');
+      assert.ok(
+        akyakaKahvalti?.coreVenues[0]?.name.includes('West Cafe'),
+        `Akyaka & Akçapınar kahvalti #1 must be West Cafe, got ${akyakaKahvalti?.coreVenues[0]?.name}`
+      );
+      const akyakaDate = p.getCategoryResult(disc.region.id, 'date-mekanlari');
+      assert.ok(
+        akyakaDate?.coreVenues.some((v) => v.name.includes('Yengeç')),
+        'Akyaka & Akçapınar date-mekanlari must include Yengeç'
+      );
       const names = f.venues.map((v) => v.name);
       for (const expected of [
+        'Yengeç Restaurant & Otel',
+        'West Cafe Bistro',
+        'Sepia Akçapınar',
+        'Köprü Restaurant',
+        'Lemongrass Coffee Bar',
+        'Gökova Köy Lokantası',
+        'Gökova Pide',
+        'Selanik',
+        'Muhtar Akçapınar',
+        'Idyma Restaurant Akçapınar',
         'Pizza Fellas',
         "Börfi's Burger",
         "Halil'in Yeri",
         'Akyaka Orfoz',
         'Olta Balık',
-        'West Cafe Bistro',
         'Gökova Börek',
         'Mosso Akyaka',
         "No22 Riders'Inn",
         'Meşhur Akçapınar Tostçusu',
+        'Kite Beach Akyaka',
         'Sandal Balık Ekmek',
         'Pazarola Yöresel Mutfak',
       ]) {
         assert.ok(names.some((n) => n.includes(expected)), `Akyaka missing ${expected}`);
       }
-      for (const forbidden of ["Leo's Pizza", 'Lightroom', 'Starbucks', "Domino's"]) {
+      for (const forbidden of [
+        "Leo's Pizza",
+        'Lightroom',
+        'Starbucks',
+        "Domino's",
+        'Pangea',
+        'Huysuz',
+        'Back Loop',
+        'Collective Coffee',
+        'Cennet Restaurant',
+        'Sems Burger',
+        'Kordon Restaurant',
+      ]) {
         assert.equal(names.some((n) => n.includes(forbidden)), false, `Akyaka must exclude ${forbidden}`);
       }
     }
