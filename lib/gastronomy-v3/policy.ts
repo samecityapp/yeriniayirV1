@@ -716,6 +716,10 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'helvacı ali',
   'helvaci ali',
   'ercan burger',
+  'parme edirne',
+  'guernica',
+  'chaff coffee',
+  'ayten usta',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([

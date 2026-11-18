@@ -85,6 +85,8 @@ import balikesirAyvalikMerkezSnapshotJson from './regions/balikesir-ayvalik-merk
 import balikesirAyvalikCundaSnapshotJson from './regions/balikesir-ayvalik-cunda.json';
 import bursaMerkezSnapshotJson from './regions/bursa-merkez.json';
 import canakkaleMerkezSnapshotJson from './regions/canakkale-merkez.json';
+import edirneMerkezSnapshotJson from './regions/edirne-merkez.json';
+import eskisehirMerkezSnapshotJson from './regions/eskisehir-merkez.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -189,6 +191,10 @@ const BURSA_MERKEZ_SNAPSHOT =
   bursaMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 const CANAKKALE_MERKEZ_SNAPSHOT =
   canakkaleMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
+const EDIRNE_MERKEZ_SNAPSHOT =
+  edirneMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
+const ESKISEHIR_MERKEZ_SNAPSHOT =
+  eskisehirMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -278,6 +284,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   BALIKESIR_AYVALIK_CUNDA_SNAPSHOT,
   BURSA_MERKEZ_SNAPSHOT,
   CANAKKALE_MERKEZ_SNAPSHOT,
+  EDIRNE_MERKEZ_SNAPSHOT,
+  ESKISEHIR_MERKEZ_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -1084,6 +1092,31 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   'barbaros-canakkale': CANAKKALE_MERKEZ_SNAPSHOT,
   dardanos: CANAKKALE_MERKEZ_SNAPSHOT,
   'guzelyali-canakkale': CANAKKALE_MERKEZ_SNAPSHOT,
+  'edirne-merkez': EDIRNE_MERKEZ_SNAPSHOT,
+  edirne: EDIRNE_MERKEZ_SNAPSHOT,
+  karaagac: EDIRNE_MERKEZ_SNAPSHOT,
+  'karaagac-edirne': EDIRNE_MERKEZ_SNAPSHOT,
+  'kaleici-edirne': EDIRNE_MERKEZ_SNAPSHOT,
+  saraclar: EDIRNE_MERKEZ_SNAPSHOT,
+  'saraclar-caddesi': EDIRNE_MERKEZ_SNAPSHOT,
+  'selimiye-edirne': EDIRNE_MERKEZ_SNAPSHOT,
+  'meric-nehri': EDIRNE_MERKEZ_SNAPSHOT,
+  aysekadin: EDIRNE_MERKEZ_SNAPSHOT,
+  'sukrupasa-edirne': EDIRNE_MERKEZ_SNAPSHOT,
+  'osmaniye-caddesi': EDIRNE_MERKEZ_SNAPSHOT,
+  'eskisehir-merkez': ESKISEHIR_MERKEZ_SNAPSHOT,
+  eskisehir: ESKISEHIR_MERKEZ_SNAPSHOT,
+  odunpazari: ESKISEHIR_MERKEZ_SNAPSHOT,
+  'tepebasi-eskisehir': ESKISEHIR_MERKEZ_SNAPSHOT,
+  'porsuk-adalar': ESKISEHIR_MERKEZ_SNAPSHOT,
+  'doktorlar-caddesi': ESKISEHIR_MERKEZ_SNAPSHOT,
+  hosnudiye: ESKISEHIR_MERKEZ_SNAPSHOT,
+  eskibaglar: ESKISEHIR_MERKEZ_SNAPSHOT,
+  yenibaglar: ESKISEHIR_MERKEZ_SNAPSHOT,
+  'baglar-eskisehir': ESKISEHIR_MERKEZ_SNAPSHOT,
+  visnelik: ESKISEHIR_MERKEZ_SNAPSHOT,
+  'batikent-eskisehir': ESKISEHIR_MERKEZ_SNAPSHOT,
+  'koprubasi-eskisehir': ESKISEHIR_MERKEZ_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {

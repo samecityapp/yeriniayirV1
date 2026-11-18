@@ -1,0 +1,925 @@
+{
+  "schemaVersion": 3,
+  "verifiedAt": "2026-11-18T09:18:55.499Z",
+  "region": {
+    "id": "edirne-merkez",
+    "slug": "edirne-merkez",
+    "city": "Edirne",
+    "district": "Merkez",
+    "neighborhood": "Edirne Merkez",
+    "officialQuarter": "Edirne Merkez (Selimiye, Saraçlar, Kaleiçi, Dilaverbey, Sabuni, Mithat Paşa, Talatpaşa, Ayşekadın, Şükrüpaşa, Cumhuriyet, İstasyon & Karaağaç / Meriç)",
+    "displayName": "Edirne Merkez (Kaleiçi, Saraçlar & Karaağaç)",
+    "locative": "Edirne Merkez'de",
+    "path": [
+      "edirne",
+      "merkez",
+      "edirne-merkez"
+    ],
+    "aliases": [
+      "Edirne Merkez",
+      "Edirne",
+      "Kaleiçi Edirne",
+      "Saraçlar Caddesi",
+      "Selimiye Edirne",
+      "Karaağaç",
+      "Karaağaç Edirne",
+      "Meriç Nehri",
+      "Ayşekadın",
+      "Şükrüpaşa Edirne",
+      "Zübeyde Hanım Caddesi",
+      "Osmaniye Caddesi"
+    ],
+    "scopeNote": "Edirne Merkez (Selimiye, Saraçlar, Kaleiçi, Dilaverbey, Sabuni, Şükrüpaşa, İstasyon & Karaağaç; Keşan, Uzunköprü, İpsala, Enez/Erikli, Havsa ve Kapıkule otoyol dışı tesisler hariç) · Doğrulanmış Seçki",
+    "characterSubtitle": "Saraçlar ve Kaleiçi’nden Karaağaç ile Şükrüpaşa’ya uzanan yaprak tava ciğer ustaları, 1946–1967 mirası badem ezmesi ve tarihî meyhane geleneğiyle odun ateşinde ekşi maya pizzalar, burger dükkanları, üçüncü nesil kahveciler ve Karaağaç bahçe kahvaltıları.",
+    "center": {
+      "lat": 41.6735,
+      "lng": 26.5585
+    },
+    "boundary": {
+      "bbox": {
+        "minLat": 41.64,
+        "maxLat": 41.695,
+        "minLng": 26.508,
+        "maxLng": 26.625
+      }
+    }
+  },
+  "categories": [
+    {
+      "id": "pizza",
+      "slug": "pizza",
+      "label": "Pizza",
+      "title": "Pizza",
+      "emoji": "🍕",
+      "isMustTry": false
+    },
+    {
+      "id": "hamburger",
+      "slug": "hamburger",
+      "label": "Hamburger",
+      "title": "Hamburger",
+      "emoji": "🍔",
+      "isMustTry": false
+    },
+    {
+      "id": "kahve",
+      "slug": "kahve",
+      "label": "Kahve",
+      "title": "Kahve",
+      "emoji": "☕",
+      "isMustTry": false
+    },
+    {
+      "id": "date",
+      "slug": "date-mekanlari",
+      "label": "Date",
+      "title": "Date Mekanları",
+      "emoji": "🍷",
+      "isMustTry": false
+    },
+    {
+      "id": "kahvalti",
+      "slug": "kahvalti",
+      "label": "Kahvaltı",
+      "title": "Kahvaltı",
+      "emoji": "🍳",
+      "isMustTry": false
+    },
+    {
+      "id": "denemelisin",
+      "slug": "denemelisin",
+      "label": "Denemelisin",
+      "title": "Mutlaka Denemelisin",
+      "emoji": "⭐",
+      "isMustTry": false
+    }
+  ],
+  "venues": [
+    {
+      "id": "edm-roka-italyan",
+      "placeId": "ChIJUxLfoR4vsxQRA57WFaD-WC0",
+      "name": "Roka İtalyan Lezzetleri",
+      "address": "Çağan Apt, Cumhuriyet, Abdi İpekçi Cd No:30, 22100 Edirne Merkez/Edirne",
+      "neighborhood": "Cumhuriyet, Edirne Merkez",
+      "categoryId": "pizza",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=3267641493171904003",
+      "coordinates": {
+        "lat": 41.6708615,
+        "lng": 26.5937815
+      },
+      "description": "Cumhuriyet Mahallesi’nde ekşi mayalı hamurdan odun ateşi pizzalar ve taze panzarotti hazırlayan tek şubeli İtalyan mutfağı.",
+      "whatToOrder": [
+        "Roka Special Pizza",
+        "Dört Mantarlı Trüf Krema Pizza"
+      ],
+      "menuFrom": [
+        "Pepperoni Pizza",
+        "Dana Kavurmalı Pizza"
+      ],
+      "alsoTry": [
+        "Dana Fümeli Panzarotti — Kapalı hamur içinde füme etli İtalyan fırın ürünü."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Al-götür ağırlıklı servis ve sınırlı oturma alanı · Sipariş ağırlıklı çalıştığı için akşam fırın sırası oluşabilir",
+        "Dezavantaj: Oturma düzeni kısıtlı olduğu için paket veya al-götür planlamak daha rahattır",
+        "Ulaşım: Cumhuriyet Abdi İpekçi Caddesi üzerinde",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "edm-unopia-pizza",
+      "placeId": "ChIJubzmTvYvsxQRHqljabOIuhU",
+      "name": "Unopia Pizza",
+      "address": "Şükrüpaşa, Şehit Üsteğmen efkan Yıldırım caddesi No:19, 22100 Edirne Merkez/Edirne",
+      "neighborhood": "Şükrüpaşa, Edirne Merkez",
+      "categoryId": "pizza",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=1565714124613331230",
+      "coordinates": {
+        "lat": 41.666041199999995,
+        "lng": 26.589105699999998
+      },
+      "description": "Şükrüpaşa’da taze açılan hamurla klasik ve yöresel dokunuşlu gurme pizzalar hazırlayan bağımsız mahalle pizzacısı.",
+      "whatToOrder": [
+        "Avellino Pizza",
+        "Floransa Pizza"
+      ],
+      "menuFrom": [
+        "Novara Pizza",
+        "Margherita"
+      ],
+      "alsoTry": [
+        "Sarımsaklı Ekmek & Sufle — Fırından sıcak çıkan atıştırmalık başlangıç ve tatlı eşlikçisi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Aile ve kalabalık gruplara uygun ferah iç salon · Akşam ve hafta sonu aile ile öğrenci masalarıyla hareketli",
+        "Dezavantaj: Tarihî çarşı dışında yer aldığı için merkezden kısa araç veya otobüs ulaşımı gerektirir",
+        "Ulaşım: Şükrüpaşa Şehit Üsteğmen Efkan Yıldırım Caddesi üzerinde şehir içi hatlara yakın",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "edm-manciz-pizza",
+      "placeId": "ChIJfymiNpsvsxQRMluJhWkWm7o",
+      "name": "Mançiz Pizza",
+      "address": "Şükrüpaşa, 136. Sk. No:8 D:a, 22030 Edirne Merkez/Edirne",
+      "neighborhood": "Şükrüpaşa, Edirne Merkez",
+      "categoryId": "pizza",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=13446365754912496434",
+      "coordinates": {
+        "lat": 41.665742,
+        "lng": 26.584136599999997
+      },
+      "description": "Dilim ve bütün porsiyon seçenekleriyle hem hızlı atıştırmalık hem akşam yemeği için tercih edilen yerel pizza adresi.",
+      "whatToOrder": [
+        "Mançiz Pizza",
+        "Magic Mushroom Pizza"
+      ],
+      "menuFrom": [
+        "Hünkar Bunu Beğendi",
+        "Margarita"
+      ],
+      "alsoTry": [
+        "Fredo Makarna — Pizza çeşitlerinin yanında sunulan kremalı makarna seçeneği."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Kompakt iç oturum ve hızlı al-götür servisi · Akşam saatlerinde üniversite çevresi yoğunluğu görülür",
+        "Dezavantaj: Küçük oturma alanı nedeniyle kalabalık saatlerde masa beklemek gerekebilir",
+        "Ulaşım: Şükrüpaşa 136. Sokak üzerinden araç ve şehir içi hatlarla ulaşım sağlanır",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "edm-pastos-burger",
+      "placeId": "ChIJ13degokvsxQRgZ1WGWC5Ik0",
+      "name": "PASTOS Burger & Pizza",
+      "address": "ATATÜRK MAH. 8._ CAD. KORUR APARTMAN NO: 11, İÇ KAPI, Atatürk, NO: 7, 22000 Edirne Merkez/Edirne",
+      "neighborhood": "Atatürk, Edirne Merkez",
+      "categoryId": "hamburger",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=5558208712521719169",
+      "coordinates": {
+        "lat": 41.6720202,
+        "lng": 26.585087599999998
+      },
+      "description": "Atatürk Mahallesi’nde mantar soslu ve rozbif dilimli burgerleriyle öne çıkan, taze ekmekli burger ve pizza mutfağı.",
+      "whatToOrder": [
+        "Mushroom Burger",
+        "Rozbif Burger"
+      ],
+      "menuFrom": [
+        "Cheeseburger",
+        "Klasik Dana Burger"
+      ],
+      "alsoTry": [
+        "Margherita Pizza — Aynı fırından çıkan orta boy klasik İtalyan pizzası."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Samimi iç masa düzeni ve hızlı paket hazırlığı · Öğle ve akşam paket servis temposu hissedilir",
+        "Dezavantaj: Küçük dükkân ölçeği nedeniyle geniş masalı restoran ambiyansı arayanlara uygun değildir",
+        "Ulaşım: Atatürk Mahallesi 8. Cadde çevresi toplu taşıma duraklarına yakın",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "edm-brother-burgers",
+      "placeId": "ChIJ47F9CH4vsxQRRjc41QgPfkI",
+      "name": "Edirne Brother Burgers",
+      "address": "Av, Şükrüpaşa, Avrupa Ruhi Uğurlu Sk. No: 2B, 22030 Edirne Merkez/Edirne",
+      "neighborhood": "Şükrüpaşa, Edirne Merkez",
+      "categoryId": "hamburger",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=4791283584180172614",
+      "coordinates": {
+        "lat": 41.673989899999995,
+        "lng": 26.5867483
+      },
+      "description": "Şükrüpaşa’da dana kaburga köftesi ve tiftik etli seçenekleriyle hazırladığı doyurucu burgerleriyle tanınan yerel burger dükkanı.",
+      "whatToOrder": [
+        "Tiftik Dana Kaburga Burger",
+        "Texas Burger"
+      ],
+      "menuFrom": [
+        "Brothers Burger",
+        "Double Cheeseburger"
+      ],
+      "alsoTry": [
+        "Çıtır Soğan Halkası & Combo Tabağı — Burger menülerini tamamlayan sıcak atıştırmalık sepeti."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Rahat iç salon oturumu · Akşam yemeği saatlerinde mahalle ve öğrenci trafiği yoğundur",
+        "Dezavantaj: Tarihî merkeze uzak yeni yerleşim tarafında yer alır",
+        "Ulaşım: Şükrüpaşa Avrupa Ruhi Uğurlu Sokak üzerinde",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "edm-fries-club",
+      "placeId": "ChIJKaD0DuMlsxQR0GSF1wWBAyg",
+      "name": "Fries Club Edirne",
+      "address": "avantaj 22, İstasyon, İriş Sk. No:3, 22100 Edirne Merkez/Edirne",
+      "neighborhood": "İstasyon, Edirne Merkez",
+      "categoryId": "hamburger",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=2883290048537912528",
+      "coordinates": {
+        "lat": 41.6530008,
+        "lng": 26.584722400000004
+      },
+      "description": "İstasyon bölgesinde smash burgerleri, özel soslu patates tabakları ve kokteyl barıyla öne çıkan tek şubeli burger noktası.",
+      "whatToOrder": [
+        "Smoke Bacon Club Burger",
+        "Parmesan Cream Smash"
+      ],
+      "menuFrom": [
+        "Classic Cheeseburger",
+        "Crispy Chicken Burger"
+      ],
+      "alsoTry": [
+        "Özel Soslu Patates & Tenders — Patates kızartması tabakları, nachos ve tenders eşlikçileri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: İç salon ve yarı açık oturma düzeni · Akşam saatleri genç yetişkin ve üniversite çevresiyle canlı",
+        "Dezavantaj: Günün ileri saatlerinde yüksek müzik ve kalabalık nedeniyle sakin yemek arayanlara ağır gelebilir",
+        "Ulaşım: İstasyon İriş Sokak, Avantaj 22 çevresi yürüyüş ve araçla kolay erişim",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "edm-kuytu-kose",
+      "placeId": "ChIJnXoEvCElsxQRp8slfg3tqRU",
+      "name": "Kuytu Köşe Cafe",
+      "address": "Karaağaç, Arifiye Cd. No14, 22100 Edirne Merkez/Edirne",
+      "neighborhood": "Karaağaç, Edirne Merkez",
+      "categoryId": "kahve",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=1561039388067351463",
+      "coordinates": {
+        "lat": 41.653449699999996,
+        "lng": 26.521727799999997
+      },
+      "description": "Karaağaç’ın yeşillikler içindeki ahşap detaylı avlusunda sakin kahve molaları sunan köklü mahalle kahvecisi.",
+      "whatToOrder": [
+        "Americano",
+        "Közde Türk Kahvesi"
+      ],
+      "menuFrom": [
+        "Latte",
+        "Filtre Kahve"
+      ],
+      "alsoTry": [
+        "Ev Yapımı Limonata & Günlük Tatlı — Bahçede kahve yanında tercih edilen ferah içecek ve kek seçenekleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Ağaç gölgeli bahçe ve ahşap iç mekân · Hafta içi sakin, hafta sonu bahçe masaları hareketli",
+        "Dezavantaj: Kış veya yağışlı havalarda iç mekân oturumu bahçeye göre sınırlıdır",
+        "Ulaşım: Karaağaç Arifiye Caddesi üzerinde yürüyüşle kolay erişim",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "edm-moods-coffee",
+      "placeId": "ChIJn0fGV0QlsxQRslF7g4DYnac",
+      "name": "Mood's Coffee Co. Edirne",
+      "address": "libra terrace apartmanı, İstasyon, Talat Paşa Cd. No:47 no:15 b, 22300 Edirne Merkez/Edirne",
+      "neighborhood": "İstasyon, Edirne Merkez",
+      "categoryId": "kahve",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=12078047822150848946",
+      "coordinates": {
+        "lat": 41.6536914,
+        "lng": 26.588722299999997
+      },
+      "description": "İstasyon Talat Paşa Caddesi’nde yöresel kahve çekirdekleri ve soğuk demleme çeşitleriyle çalışan modern kahve barı.",
+      "whatToOrder": [
+        "Flat White",
+        "V60 Yöresel Filtre Kahve"
+      ],
+      "menuFrom": [
+        "Cortado",
+        "Iced Latte"
+      ],
+      "alsoTry": [
+        "San Sebastian Cheesecake — Espresso bazlı kahvelerin yanında günlük servis edilen sütlü tatlı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Modern iç oturma alanı ve çalışma dostu masalar · Öğleden sonra genç profesyoneller ve öğrencilerle canlı",
+        "Dezavantaj: Günün kalabalık saatlerinde priz ve sessiz köşe bulmak zorlaşabilir",
+        "Ulaşım: İstasyon Talat Paşa Caddesi Libra Terrace üzerinde",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "edm-mehmet-hocaoglu",
+      "placeId": "ChIJOaWB4rslsxQR_g9UuEM4sIE",
+      "name": "Kahveci Mehmet Hocaoğlu",
+      "address": "Karaağaç, Arifiye Cd. No: 4, 22100 Edirne Merkez/Edirne",
+      "neighborhood": "Karaağaç, Edirne Merkez",
+      "categoryId": "kahve",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=9345031090300260350",
+      "coordinates": {
+        "lat": 41.652949299999996,
+        "lng": 26.522746599999998
+      },
+      "description": "1933 tarihli Edirne Hocaoğlu kahvecilik mirasını Karaağaç’a taşıyan, odun ateşinde kavrulmuş Türk ve Osmanlı kahvesi durağı.",
+      "whatToOrder": [
+        "Odun Ateşinde Türk Kahvesi",
+        "Osmanlı Kahvesi"
+      ],
+      "menuFrom": [
+        "Dibek Kahvesi",
+        "Filtre Kahve"
+      ],
+      "alsoTry": [
+        "Edirne Kavala Kurabiyesi — Geleneksel fincan kahve servisinin yanında sunulan bademli eşlikçi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Karaağaç Arifiye Caddesi’nde açık hava ve nostaljik kafe oturumu · Hafta sonu Karaağaç yürüyüşü yapan ziyaretçilerle dolar",
+        "Dezavantaj: Geleneksel fincan kahve odaklı olduğu için üçüncü nesil pour-over çeşitliliği arayanlara hitap etmez",
+        "Ulaşım: Karaağaç Arifiye Caddesi, Meriç Köprüsü geçişi sonrası yürüme mesafesi"
+      ]
+    },
+    {
+      "id": "edm-sisler-bulvari",
+      "placeId": "ChIJn2fUvN0lsxQRGJt1OJGc8Go",
+      "name": "Sisler Bulvarı Sanat Kafe",
+      "address": "Karaağaç, İstasyon Cd. No:12, 22100 Edirne Merkez/Edirne",
+      "neighborhood": "Karaağaç, Edirne Merkez",
+      "categoryId": "kahve",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=7705831109962341144",
+      "coordinates": {
+        "lat": 41.652710299999995,
+        "lng": 26.521728
+      },
+      "description": "Karaağaç İstasyon Caddesi’nde arka bahçesi, kültürel dokusu ve kahve servisiyle bilinen semtin uzun soluklu sanat kahvehanesi.",
+      "whatToOrder": [
+        "Türk Kahvesi",
+        "Filtre Kahve"
+      ],
+      "menuFrom": [
+        "Latte",
+        "Cappuccino"
+      ],
+      "alsoTry": [
+        "Ev Yapımı Mantı — Kahve molasını öğlene taşıyanların tercih ettiği sıcak mutfak tabağı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Geniş arka bahçe ve kapalı nostaljik salon · Üniversite öğrencileri ve gezginlerle gün boyu sosyal bir akış",
+        "Dezavantaj: Yüksek ziyaretçi yoğunluğu nedeniyle sessiz çalışma kafesi atmosferi arayanlara gürültülü gelebilir",
+        "Ulaşım: Karaağaç İstasyon Caddesi, Eski Tren Garı hattına yürüyüşle yakın",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "edm-adali",
+      "placeId": "ChIJM7iccN0lsxQRLzu46E4_ZlI",
+      "name": "Adalı Restaurant",
+      "address": "Karaağaç, Karaağaç Cd., 22100 Edirne Merkez/Edirne",
+      "neighborhood": "Karaağaç, Edirne Merkez",
+      "categoryId": "date",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=5937502766878964527",
+      "coordinates": {
+        "lat": 41.6532784,
+        "lng": 26.5229888
+      },
+      "description": "Karaağaç’ın sakin sokağında taze deniz ürünleri, sıcak kalamar-karides ve ızgara yemekleriyle akşam buluşmaları sunan restoran.",
+      "whatToOrder": [
+        "Tereyağlı Karides & Kalamar",
+        "Günlük Deniz Balığı"
+      ],
+      "menuFrom": [
+        "Soğuk Meze Tabağı",
+        "Izgara Et Seçenekleri"
+      ],
+      "alsoTry": [
+        "Trakya Peynirli Sıcak Otlar & Salata — Ana yemek öncesi paylaşımlı başlangıç tabağı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Bahçe ve kapalı salonlu sakin akşam yemeği düzeni · Akşamları çiftler ve sakin sofra arayan küçük gruplarla dengeli",
+        "Dezavantaj: İsmini Edirne’deki döner şubeleriyle karıştırmamak gerekir; Karaağaç’taki restoran rezervasyon gerektirebilir",
+        "Ulaşım: Karaağaç Mahallesi Karaağaç Caddesi üzerinden araç veya toplu taşımayla erişim"
+      ]
+    },
+    {
+      "id": "edm-gazibaba",
+      "placeId": "ChIJl9yCSnovsxQRkdlrTjl-hYo",
+      "name": "Gazibaba Meyhanesi",
+      "address": "Talatpaşa, Zindan Altı Sk., 22100 Edirne Merkez/Edirne",
+      "neighborhood": "Zindanaltı, Talatpaşa, Edirne Merkez",
+      "categoryId": "date",
+      "rating": 4.3,
+      "mapsUri": "https://maps.google.com/?cid=9981522933730498961",
+      "coordinates": {
+        "lat": 41.6719486,
+        "lng": 26.553617400000004
+      },
+      "description": "1967’den bu yana Zindanaltı’nda Türk sanat müziği, zengin Trakya mezeleri ve tarihî meyhane ritüelini yaşatan Edirne kurumu.",
+      "whatToOrder": [
+        "Trakya Meze Seçkisi & Mamzana",
+        "Izgara Et veya Balık"
+      ],
+      "menuFrom": [
+        "Arnavut Ciğeri",
+        "Ara Sıcak Tabağı"
+      ],
+      "alsoTry": [
+        "Peynir Helvası / Fırın Tahin Helvası — Meyhane sofrası sonrasında sıcak helva kapanışı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Masa örtülü geleneksel tarihî meyhane salonu · Akşamları fasıl eşliğinde dolan köklü sohbet sofraları",
+        "Dezavantaj: Geleneksel meyhane fiyat bandı yüksek ve rezervasyonsuz akşamları yer bulmak zordur",
+        "Ulaşım: Saraçlar Caddesi ve Makedonya Kulesi çevresinden birkaç dakikalık yürüyüş",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "edm-palladio-prive",
+      "placeId": "ChIJ8XDKjP0vsxQRijVB0TDvKr4",
+      "name": "PALLADIO PRIVE",
+      "address": "Cumhuriyet, Alper Yazoğlu Caddesi No:83, 22100 Edirne Merkez/Edirne",
+      "neighborhood": "Cumhuriyet, Edirne Merkez",
+      "categoryId": "date",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=13703027809176335754",
+      "coordinates": {
+        "lat": 41.668501,
+        "lng": 26.6000194
+      },
+      "description": "Cumhuriyet Mahallesi’nde modern iç tasarımı, özel kokteylleri ve dünya mutfağı tabaklarıyla öne çıkan akşam buluşma restoranı.",
+      "whatToOrder": [
+        "Antrikot / Dana Madalyon",
+        "İmza Kokteyl Seçkisi"
+      ],
+      "menuFrom": [
+        "Ev Yapımı Makarnalar",
+        "Başlangıç Paylaşım Tabağı"
+      ],
+      "alsoTry": [
+        "Çikolatalı Sufle / Tiramisu — Kokteyl sonrası akşam kapanışı için paylaşımlı tatlı seçeneği."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Modern iç lounge masaları ve konforlu koltuk düzeni · Akşam saatlerinde kokteyl ve akşam yemeği için modern bir kitleyle doluyor",
+        "Dezavantaj: Büyük maç gecelerinde geniş ekran yayınları nedeniyle romantik sessizlik bozulabilir",
+        "Ulaşım: Cumhuriyet Alper Yazoğlu Caddesi üzerinde ulaşımı kolay",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "edm-hanedan",
+      "placeId": "ChIJpSjHNXwvsxQRNGMMtIhUN3I",
+      "name": "Hanedan Restaurant",
+      "address": "Karaağaç, 22100 Edirne Merkez/Edirne",
+      "neighborhood": "Meriç Kıyısı, Karaağaç, Edirne Merkez",
+      "categoryId": "date",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=8230139790155866932",
+      "coordinates": {
+        "lat": 41.667255499999996,
+        "lng": 26.5536282
+      },
+      "description": "Tunca ve Meriç geçişi üzerinde nehir kenarı atmosferi, et yemekleri, deniz ürünleri ve özenli mezeleriyle bilinen klasik akşam restoranı.",
+      "whatToOrder": [
+        "Izgara Dana Lokum",
+        "Edirne Usulü Tava Ciğer & Meze Tabağı"
+      ],
+      "menuFrom": [
+        "Mevsim Balıkları",
+        "Karışık Izgara"
+      ],
+      "alsoTry": [
+        "Fırın Sütlaç & Künefe — Nehir manzaralı akşam yemeğini kapatan klasik sıcak ve sütlü tatlılar."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Nehir kıyısı teras ve şık kapalı yemek salonu · Akşam saatleri özel gün yemekleri ve kalabalık aile masaları görülür",
+        "Dezavantaj: Grup organizasyonu olan akşamlarda manzara masaları hızla dolar",
+        "Ulaşım: Meriç Köprüsü çıkışında Karaağaç girişinde doğrudan erişim"
+      ]
+    },
+    {
+      "id": "edm-hasbahce-225",
+      "placeId": "ChIJdyjeyUElsxQRfcnu28J6lNM",
+      "name": "Hasbahçe 22.5",
+      "address": "Karaağaç, Ferahiye Cd. No:37, 22100 Edirne Merkez/Edirne",
+      "neighborhood": "Ferahiye Cd., Karaağaç, Edirne Merkez",
+      "categoryId": "kahvalti",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=15245945615888075133",
+      "coordinates": {
+        "lat": 41.6541554,
+        "lng": 26.5191491
+      },
+      "description": "Tarihî Karaağaç Tren Garı’na komşu bahçesinde sıcak menemen çeşitleri, serpme kahvaltı ve kahve sunan huzurlu sabah durağı.",
+      "whatToOrder": [
+        "Bahçe Serpme Kahvaltı",
+        "Sıcak Menemen"
+      ],
+      "menuFrom": [
+        "Edirne Peynir Tabağı",
+        "Sahanda Sucuklu Yumurta"
+      ],
+      "alsoTry": [
+        "Türk Kahvesi & Fincan Çay — Bahçede kahvaltı sonrası ağaç altında dinlenme eşlikçisi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Yeşil bahçe masaları ve yarı kapalı çardaklar · Sabah ve kuşluk vakti Karaağaç ziyaretçileriyle canlı",
+        "Dezavantaj: Kış ve serin havalarda bahçedeki oturum keyfi kapalı alanlarla sınırlı kalır",
+        "Ulaşım: Karaağaç Ferahiye Caddesi, Trakya Üniversitesi Güzel Sanatlar / Eski Gar çevresi",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "edm-karaagac-kahvalti-evi",
+      "placeId": "ChIJlaR9U4MlsxQROnUiczWdhkc",
+      "name": "Karaağaç Kahvaltı Evi",
+      "address": "Karaağaç, Lozan Cd. No:50, 22020 Edirne Merkez/Edirne",
+      "neighborhood": "Lozan Cd., Karaağaç, Edirne Merkez",
+      "categoryId": "kahvalti",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=5153979676462576954",
+      "coordinates": {
+        "lat": 41.656182699999995,
+        "lng": 26.5270525
+      },
+      "description": "Karaağaç’ın ağaçlıklı yolu üzerinde yöresel poy kaymak, Edirne beyaz peyniri, acuka ve sıcak pişiyle öne çıkan serpme kahvaltı bahçesi.",
+      "whatToOrder": [
+        "Yöresel Edirne Serpme Kahvaltı",
+        "Sıcak Pişi & Poy Kaymak"
+      ],
+      "menuFrom": [
+        "Ekşimikli Biber",
+        "Sigara Böreği"
+      ],
+      "alsoTry": [
+        "Ev Yapımı Acuka & Yöresel Bal — Kahvaltı masasını zenginleştiren köy usulü yan ürünler."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Ağaç gölgeli geniş bahçe ve kapalı kış alanı · Hafta sonu sabah ve öğle saatlerinde aile gruplarıyla yoğun",
+        "Dezavantaj: Pazar sabahları yoğunluk nedeniyle servis ve sıcak ikram süreleri uzayabilir",
+        "Ulaşım: Karaağaç Lozan Caddesi üzerinde Meriç Köprüsü sonrası kısa araç veya yürüyüş mesafesi",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "edm-cevizli-bahce",
+      "placeId": "ChIJhblkiCQlsxQRN9g7Wsd3qvk",
+      "name": "Cevizli Bahçe Kahvaltı & Düğün Edirne",
+      "address": "Edirne Karaağaç mahallesi, Bosnaköyü yolu sokak no:30, Karaağaç, Bosnaköyü yolu sokak no.30, 22100 Edirne Merkez/Edirne",
+      "neighborhood": "Karaağaç, Edirne Merkez",
+      "categoryId": "kahvalti",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=17990323359580936247",
+      "coordinates": {
+        "lat": 41.659030099999995,
+        "lng": 26.5537046
+      },
+      "description": "Karaağaç’ın Bosnaköyü aksında ceviz ağaçları altındaki geniş çim alanında aileler ve gruplar için hazırlanan serpme kahvaltı bahçesi.",
+      "whatToOrder": [
+        "Cevizli Bahçe Serpme Kahvaltı",
+        "Gözleme & Köy Böreği"
+      ],
+      "menuFrom": [
+        "Sıcak Pişi",
+        "Sucuklu Yumurta"
+      ],
+      "alsoTry": [
+        "Semaver Çay — Geniş masa kahvaltılarını bahçede uzatan demlik çay servisi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Ceviz ağaçları altında çok geniş açık alan ve çocuk oyun bahçesi · Hafta sonu çocuklu aileler ve kalabalık davet gruplarıyla hareketli",
+        "Dezavantaj: Düğün ve organizasyon mekanı olduğu için etkinlik günleri kalabalık ve gürültülü olabilir",
+        "Ulaşım: Karaağaç Mahallesi Bosnaköyü Yolu üzerinde özel araçla kolay park imkânı",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "edm-aydin-tava-ciger",
+      "placeId": "ChIJPbBD13AvsxQRdljl_WOKltI",
+      "name": "Aydın Tava Ciğer",
+      "address": "Sabuni, Tahmis Çarşısı Sk. No:8, 22000 Edirne Merkez/Edirne",
+      "neighborhood": "Tahmis Çarşısı, Sabuni, Edirne Merkez",
+      "categoryId": "denemelisin",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=15174468156537526390",
+      "coordinates": {
+        "lat": 41.6757747,
+        "lng": 26.554331599999998
+      },
+      "description": "1998’den bu yana Tahmis Çarşısı’nda günde binlerce porsiyon servis eden, Edirne’nin en bilinen yaprak ciğer ritüel duraklarından biri.",
+      "whatToOrder": [
+        "Aydın Tava Ciğer",
+        "Karaağaç Acı Biberi & Acı Sos"
+      ],
+      "menuFrom": [
+        "Edirne Usulü Söğüş Garnitür",
+        "Balkabağı / Hayrabolu Tatlısı"
+      ],
+      "alsoTry": [
+        "Domates & Acı Sos Eşlikçisi — Masaya standart gelen sıcak ekmek ve söğüş tabağı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Çok katlı hızlı sirkülasyonlu şehir merkezi salonu · Gün boyu turist otobüsleri ve kalabalık şehir içi trafiğiyle çok yoğun",
+        "Dezavantaj: Kapıda uzun kuyruk oluşması sık görülür; turist yoğunluğu nedeniyle gürültülü ve aceleci servis ortamı vardır",
+        "Ulaşım: Tahmis Meydanı, Sabuni Mahallesi yaya bölgesinin merkezinde",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "edm-sayinbas-sekerleme",
+      "placeId": "ChIJy23Fd3ovsxQRTdGawNKQXy8",
+      "name": "Sayınbaş Şekerleme",
+      "address": "Mithat Paşa, Balık Pazarı Cd. No:10, 22020 Edirne Merkez/Edirne",
+      "neighborhood": "Balık Pazarı Cd., Mithat Paşa, Edirne Merkez",
+      "categoryId": "denemelisin",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=3413606277419028813",
+      "coordinates": {
+        "lat": 41.6741119,
+        "lng": 26.552913999999998
+      },
+      "description": "1946’da Hikmet Turhan Sayınbaş tarafından kurulan ve üçüncü kuşakta coğrafi işaretli el yapımı badem ezmesini sürdüren tarihî şekerleme dükkanı.",
+      "whatToOrder": [
+        "Coğrafi İşaretli Badem Ezmesi",
+        "Deva-i Misk Helvası"
+      ],
+      "menuFrom": [
+        "Acıbadem Kurabiyesi",
+        "Kavala Kurabiyesi"
+      ],
+      "alsoTry": [
+        "Kallavi Kurabiyesi — Antep fıstığı ve safranlı Osmanlı saray tatlısı geleneği."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Tarihî vitrin dükkân, al-götür ve tadımlık satış noktası (oturma alanı yok) · Hafta sonu hediyelik paket alan yerli ve günübirlik ziyaretçilerle yoğun",
+        "Dezavantaj: Kafe tarzı oturma salonu bulunmayan, sadece tezgâh ve paket al-götür satışı yapan küçük dükkândır",
+        "Ulaşım: Mithat Paşa Balık Pazarı Caddesi, Eski Cami çevresinde yürüyüş mesafesinde"
+      ]
+    },
+    {
+      "id": "edm-doyum-tava-ciger",
+      "placeId": "ChIJ21Hi_IkvsxQR2SheCaas0Ds",
+      "name": "Edirne Tava ciğer Doyum Tava Ciğer Salonu",
+      "address": "İstasyon, Sanayi Sitesi 22. Sk., 22100 Edirne Merkez/Edirne",
+      "neighborhood": "Sanayi Sitesi, İstasyon, Edirne Merkez",
+      "categoryId": "denemelisin",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=4310134672515279065",
+      "coordinates": {
+        "lat": 41.6587506,
+        "lng": 26.577901400000002
+      },
+      "description": "Çarşıdaki turist kuyruklarından uzakta, Sanayi Sitesi içinde yumuşak dokulu tava ciğeri ve tereyağlı çorbasıyla müdavimlerin bildiği esnaf ciğercisi.",
+      "whatToOrder": [
+        "Tava Ciğer",
+        "Tereyağlı Mercimek Çorbası"
+      ],
+      "menuFrom": [
+        "Izgara Köfte",
+        "Piyaz"
+      ],
+      "alsoTry": [
+        "Kuru Karaağaç Biberi & Söğüş — Klasik esnaf servisi içinde ciğerin yanında taze sunulan eşlikçiler."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Sade ve temiz esnaf lokantası masa düzeni · Öğle saatleri yerel ustalar ve bilen gezginlerle dolu olur",
+        "Dezavantaj: Tarihî çarşıya uzak sanayi sitesi içinde olduğu için araçsız ulaşım pratik değildir ve akşam kapanışı erken olabilir",
+        "Ulaşım: İstasyon Mahallesi Sanayi Sitesi 22. Sokak üzerinde özel araçla kolay park",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "edm-cicek-tava-ciger",
+      "placeId": "ChIJpZYk0nAvsxQR7vwY131TcVw",
+      "name": "Çiçek Tava Ciğer Salonu",
+      "address": "Sabuni, Çilingirler Cd., 22100 Edirne Merkez/Edirne",
+      "neighborhood": "Çilingirler Cd., Sabuni, Edirne Merkez",
+      "categoryId": "denemelisin",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=6661197123802430702",
+      "coordinates": {
+        "lat": 41.675556900000004,
+        "lng": 26.554843599999998
+      },
+      "description": "Kazım Usta’nın yanında yetişen Nusret Demir tarafından 1992’de kurulan, ince doğranmış ve yağı çekmeyen tava ciğer klasiği.",
+      "whatToOrder": [
+        "Edirne Tava Ciğer",
+        "Domates Soslu Kuru Acı Biber"
+      ],
+      "menuFrom": [
+        "Süzme Cacık",
+        "Piyaz"
+      ],
+      "alsoTry": [
+        "Edirne Köftesi — Ciğer tercih etmeyen masalar için ızgarada hazırlanan köfte alternatifi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Çarşı içinde temiz ve düzenli kapalı salon · Öğle vakti hem Edirne esnafı hem ziyaretçilerle yoğun",
+        "Dezavantaj: Küçük çarşı sokağı nedeniyle araç parkı zordur; yoğun saatlerde kısa bekleme yaşanır",
+        "Ulaşım: Sabuni Çilingirler Caddesi üzerinde, Eski Cami ve Bedesten çevresinden yürüyüş mesafesi",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "edm-edirne-sultanzade",
+      "placeId": "ChIJFaLsVfovsxQRLdJFqtkVMLQ",
+      "name": "Edirne Sultanzade | Badem Ezmesi | Kavala Kurabiyesi",
+      "address": "Sabuni, Tahmis Çarşısı Sk. No:2, 22100 Edirne Merkez/Edirne",
+      "neighborhood": "Tahmis Çarşısı, Sabuni, Edirne Merkez",
+      "categoryId": "denemelisin",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=12983901750317929005",
+      "coordinates": {
+        "lat": 41.675809,
+        "lng": 26.554579699999998
+      },
+      "description": "Tahmis Çarşısı içinde Edirne badem ezmesi, bol tereyağlı Kavala kurabiyesi ve peynir helvasıyla öne çıkan yerel şekerleme durağı.",
+      "whatToOrder": [
+        "Kavala Kurabiyesi",
+        "Badem Ezmesi"
+      ],
+      "menuFrom": [
+        "Edirne Peynir Helvası",
+        "Fıstıklı Lokum"
+      ],
+      "alsoTry": [
+        "Deva-i Misk & Saray Helvaları — 41 çeşit baharatla hazırlanan geleneksel Osmanlı helva kutuları."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Çarşı içi paket ve tadım dükkânı (al-götür odaklı) · Tahmis Meydanı yaya trafiğiyle öğle sonrası hareketli",
+        "Dezavantaj: Kafe oturma alanı yoktur; çarşı kalabalığı içinde hızlı alışverişe uygundur",
+        "Ulaşım: Sabuni Tahmis Çarşısı Sokak, Eski Cami ve Üç Şerefeli yürüyüş aksında"
+      ]
+    },
+    {
+      "id": "edm-havuzbasi-hasan",
+      "placeId": "ChIJS76tfBklsxQRBcVKAcQP4hE",
+      "name": "havuzbaşı hasanın yeri",
+      "address": "Karaağaç, Karaağaç Cd. No:9, 22100 Edirne Merkez/Edirne",
+      "neighborhood": "Karaağaç Cd., Karaağaç, Edirne Merkez",
+      "categoryId": "denemelisin",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=1288609777891067141",
+      "coordinates": {
+        "lat": 41.6552027,
+        "lng": 26.5262234
+      },
+      "description": "Karaağaç Caddesi’nde ağaçlıklı havuzlu bahçesinde ızgara etleri, meze tabakları ve sakin Trakya sofraları sunan yerel restoran.",
+      "whatToOrder": [
+        "Izgara Köfte & Kuzu Et Çeşitleri",
+        "Trakya Mezeleri"
+      ],
+      "menuFrom": [
+        "Yaprak Ciğer",
+        "Balık Tava"
+      ],
+      "alsoTry": [
+        "Salata & Fırın Tatlılar — Ana ızgaraların yanında sunulan mevsim salatası ve tatlı çeşitleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Havuz çevresi açık bahçe ve kapalı kış salonu · Akşam ve hafta sonu sakin yemek arayan yerel ailelerle dengeli",
+        "Dezavantaj: Bahçe deneyimi güneşli ve ılık günlerde öne çıkar; şehir merkezinden Karaağaç geçişi gerekir",
+        "Ulaşım: Karaağaç Caddesi No:9 üzerinde özel araç ve minibüs erişimi",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "edm-kazim-ilhan-usta",
+      "placeId": "ChIJJTy3ZHovsxQRXLOgslOz8IA",
+      "name": "Meşhur Edirne Ciğercisi Kazım ve İlhan Usta",
+      "address": "Dilaverbey, Osmaniye Cd. No:69, 22030 Edirne Merkez/Edirne",
+      "neighborhood": "Osmaniye Cd., Dilaverbey, Edirne Merkez",
+      "categoryId": "denemelisin",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=9291123203325866844",
+      "coordinates": {
+        "lat": 41.6737621,
+        "lng": 26.5526437
+      },
+      "description": "1964’te çıraklıkla başlayıp 1972’de dükkan açan Kazım Gilan ve oğlu İlhan Usta’nın zarlarından ayıklanmış çıtır Edirne yaprak tava ciğeri kurumu.",
+      "whatToOrder": [
+        "Edirne Tava Ciğer",
+        "Kurutulmuş Karaağaç Acı Biberi"
+      ],
+      "menuFrom": [
+        "Piyaz & Cacık",
+        "Hayrabolu / Kemalpaşa Tatlısı"
+      ],
+      "alsoTry": [
+        "Kızarmış Biber & Soğan Söğüş Eşlikçisi — Yaprak ciğerin sıcak yağ dengesini tamamlayan geleneksel yan tabak."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Hızlı sirkülasyonlu klasik esnaf salonu · Öğle ve akşam yemeği saatlerinde kapıda sıra oluşabilir",
+        "Dezavantaj: Turistik ve yerel yoğunluk nedeniyle öğle saatlerinde sıra beklemek ve hızlı masa kalkışı normaldir",
+        "Ulaşım: Osmaniye Caddesi, Saraçlar yürüyüş aksının hemen yakınında",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "edm-hocaoglu-gida",
+      "placeId": "ChIJ_YFQc3ovsxQRzeh-l3JfqPQ",
+      "name": "HOCAOĞLU GIDA",
+      "address": "Dilaverbey, Saraçlar Cd. No:154, 22100 Edirne Merkez/Edirne",
+      "neighborhood": "Saraçlar Cd., Dilaverbey, Edirne Merkez",
+      "categoryId": "denemelisin",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=17629445687114393805",
+      "coordinates": {
+        "lat": 41.673848,
+        "lng": 26.553352999999998
+      },
+      "description": "1933 mirası Hocaoğlu geleneğinin Saraçlar Caddesi’ndeki köklü adresinde Edirne beyaz peyniri, Karaağaç acı sosları, kuru kahve ve Trakya yöresel ürünleri.",
+      "whatToOrder": [
+        "Tam Yağlı Edirne Beyaz Peyniri",
+        "Özel Kavrum Kuru Türk Kahvesi"
+      ],
+      "menuFrom": [
+        "Kurutulmuş Karaağaç Acı Biberi",
+        "Trakya Kaşarı"
+      ],
+      "alsoTry": [
+        "Yöresel Acı Sos & Baharat Seçkisi — Evde Edirne sofrası kurmak isteyenlerin aldığı vakumlu şarküteri ürünleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Tarihî şarküteri ve yöresel ürün satış noktası (al-götür, oturma alanı yok) · Hafta içi ve hafta sonu Edirne peyniri alan yerel halkla düzenli yoğunluk",
+        "Dezavantaj: Restoran değil tarihî şarküteri ve kavurmacı olduğu için içeride yemek servisi yapılmaz",
+        "Ulaşım: Saraçlar Caddesi No:154, Eski Cami ve Çarşı merkezinin tam üzerinde"
+      ]
+    },
+    {
+      "id": "edm-kurabiyeci-dede",
+      "placeId": "ChIJxRrv58IvsxQRDgpFCj8mAHw",
+      "name": "Edirneli Kurabiyeci Dede",
+      "address": "Sabuni Mahallesi Lüleciler Sokak, Sabuni, Bedesten Çarşısı No:1, 22100 Edirne Merkez/Edirne",
+      "neighborhood": "Bedesten Çarşısı, Sabuni, Edirne Merkez",
+      "categoryId": "denemelisin",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=8935183712900155918",
+      "coordinates": {
+        "lat": 41.6764085,
+        "lng": 26.5553362
+      },
+      "description": "Edirneli Arif Meriç’in yarım asrı aşan reçeteleriyle kavala ve kallavi kurabiyesi, badem ezmesi ile deva-i misk helvası sunan tarihî Bedesten adresi.",
+      "whatToOrder": [
+        "Kallavi Kurabiyesi",
+        "Kavala Kurabiyesi"
+      ],
+      "menuFrom": [
+        "Badem Ezmesi",
+        "Deva-i Misk Helvası"
+      ],
+      "alsoTry": [
+        "Osmanlı Saray Lokumları — Geleneksel şerbet ve kurabiye yanında sunulan meyveli/bademli lokumlar."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Bedesten Çarşısı köşesi tadım ve paket alışveriş dükkânı (al-götür) · Selimiye ve Eski Cami ziyaretçileriyle gün boyu canlı",
+        "Dezavantaj: Arif Meriç dışı taklit isimlerle karıştırılmamalıdır; sadece Bedesten/Eski Cami çevresi tercih edilmelidir ve oturma alanı yoktur",
+        "Ulaşım: Sabuni Lüleciler Sokak / Bedesten Çarşısı köşesinde yaya ulaşım"
+      ]
+    }
+  ],
+  "nearbyVenues": []
+}
