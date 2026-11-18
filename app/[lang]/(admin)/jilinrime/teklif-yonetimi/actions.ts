@@ -1,109 +1,182 @@
 'use server';
 
-import { offers } from '@/lib/offers';
-import { Offer } from '@/lib/types';
 import { revalidatePath } from 'next/cache';
+import { z } from 'zod';
+import { requireOfferAdminAccess } from '@/lib/admin/offerAdminGuard';
+import { offers } from '@/lib/offers';
+import { IncludedItem } from '@/lib/types';
 
-export async function getOffers() {
-    return await offers.getAll();
+const IncludedItemSchema = z
+  .object({
+    id: z.string().trim().min(1).max(80),
+    title: z.string().trim().max(160),
+    description: z.string().trim().max(400),
+    isActive: z.boolean(),
+    isCustom: z.boolean().optional(),
+  })
+  .strict();
+
+const OfferIdSchema = z.string().trim().uuid('Geçersiz teklif kimliği.');
+
+const OfferPayloadSchema = z
+  .object({
+    hotel_name: z.string().trim().min(1, 'Otel adı zorunludur.').max(160),
+    slug: z
+      .string()
+      .trim()
+      .min(1, 'Slug zorunludur.')
+      .max(120)
+      .regex(
+        /^[a-z0-9][a-z0-9_-]*$/,
+        'Slug yalnız küçük harf, rakam, "-" ve "_" karakterlerinden oluşmalıdır.'
+      ),
+    price: z.string().trim().min(1, 'Fiyat zorunludur.').max(40),
+    currency: z.enum(['TL', 'USD', 'EUR', 'GBP']).default('TL'),
+    region: z.string().trim().min(1, 'Bölge zorunludur.').max(100),
+    promo_text: z.string().trim().max(240).optional().default(''),
+    included_items: z.array(IncludedItemSchema).max(20).nullable(),
+  })
+  .strict();
+
+function readFormString(data: FormData, field: string): string {
+  const value = data.get(field);
+  return typeof value === 'string' ? value : '';
+}
+
+function parseOfferFormData(
+  data: FormData
+):
+  | { ok: true; data: z.infer<typeof OfferPayloadSchema> }
+  | { ok: false; error: string } {
+  const rawIncludedItems = data.get('included_items');
+  let includedItems: IncludedItem[] | null = null;
+
+  if (typeof rawIncludedItems === 'string' && rawIncludedItems.trim() !== '') {
+    try {
+      includedItems = JSON.parse(rawIncludedItems);
+    } catch {
+      return { ok: false, error: 'Dahil olan maddeler JSON formatı geçersiz.' };
+    }
+  } else if (rawIncludedItems !== null && typeof rawIncludedItems !== 'string') {
+    return { ok: false, error: 'Dahil olan maddeler alanı geçersiz.' };
+  }
+
+  const parsed = OfferPayloadSchema.safeParse({
+    hotel_name: readFormString(data, 'hotel_name'),
+    slug: readFormString(data, 'slug'),
+    price: readFormString(data, 'price'),
+    currency: readFormString(data, 'currency') || 'TL',
+    region: readFormString(data, 'region'),
+    promo_text: readFormString(data, 'promo_text'),
+    included_items: includedItems,
+  });
+
+  if (!parsed.success) {
+    return {
+      ok: false,
+      error: parsed.error.issues[0]?.message || 'Teklif bilgileri doğrulanamadı.',
+    };
+  }
+
+  return { ok: true, data: parsed.data };
 }
 
 export async function createOffer(data: FormData) {
-    try {
-        const hotel_name = data.get('hotel_name') as string;
-        const slug = data.get('slug') as string;
-        const price = data.get('price') as string;
-        const currency = (data.get('currency') as string) || 'TL';
-        const region = data.get('region') as string;
-        const promo_text = data.get('promo_text') as string;
-        const included_items_json = data.get('included_items') as string;
+  const auth = await requireOfferAdminAccess({ requireSameOrigin: true });
+  if (!auth.ok) {
+    return { success: false, error: auth.error, status: auth.status };
+  }
 
-        let included_items = null;
-        try {
-            if (included_items_json) {
-                included_items = JSON.parse(included_items_json);
-            }
-        } catch (e) {
-            console.error("Error parsing included_items", e);
-        }
+  const parsed = parseOfferFormData(data);
+  if (!parsed.ok) {
+    return { success: false, error: parsed.error, status: 400 };
+  }
 
-        await offers.create({
-            hotel_name,
-            slug,
-            price,
-            currency,
-            region,
-            included_items,
-            promo_text
-        });
+  try {
+    await offers.create(auth.capability, parsed.data);
 
-        revalidatePath('/[lang]/(admin)/jilinrime/teklif-yonetimi');
+    revalidatePath('/[lang]/(admin)/jilinrime/teklif-yonetimi');
+    revalidatePath(`/tr/${parsed.data.slug}`);
+    revalidatePath(`/en/${parsed.data.slug}`);
 
-        // Server-Side Warmup (Trigger Cache Generation)
-        const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.yeriniayir.com';
-        try {
-            console.log(`Warming up: ${baseUrl}/tr/${slug}`);
-            await fetch(`${baseUrl}/tr/${slug}`, { method: 'GET' });
-            await fetch(`${baseUrl}/en/${slug}`, { method: 'GET' });
-        } catch (e) {
-            console.error("Warmup failed:", e);
-        }
+    return { success: true };
+  } catch (error: unknown) {
+    console.error('Create Offer Error:', error);
+    const errObj = error as { code?: string; message?: string };
+    let errorMessage = errObj?.message || 'Teklif oluşturulamadı.';
 
-        return { success: true };
-    } catch (error: any) {
-        console.error("Create Offer Error:", error);
-        let errorMessage = error.message || JSON.stringify(error);
-
-        if (error?.code === '23505' || errorMessage.includes('duplicate key')) {
-            errorMessage = "Bu URL (slug) zaten bir teklifte kullanılıyor. Lütfen 'slug' alanını değiştirin.";
-        }
-
-        return { success: false, error: errorMessage };
+    if (errObj?.code === '23505' || errorMessage.includes('duplicate key')) {
+      errorMessage =
+        "Bu URL (slug) zaten bir teklifte kullanılıyor. Lütfen 'slug' alanını değiştirin.";
     }
+
+    return { success: false, error: errorMessage };
+  }
 }
 
 export async function updateOffer(id: string, data: FormData) {
-    try {
-        const hotel_name = data.get('hotel_name') as string;
-        const slug = data.get('slug') as string;
-        const price = data.get('price') as string;
-        const currency = (data.get('currency') as string) || 'TL';
-        const region = data.get('region') as string;
-        const promo_text = data.get('promo_text') as string;
-        const included_items_json = data.get('included_items') as string;
+  const auth = await requireOfferAdminAccess({ requireSameOrigin: true });
+  if (!auth.ok) {
+    return { success: false, error: auth.error, status: auth.status };
+  }
 
-        // Parse JSON if valid
-        let included_items = null;
-        try {
-            if (included_items_json) {
-                included_items = JSON.parse(included_items_json);
-            }
-        } catch (e) {
-            console.error("Error parsing included_items:", e);
-        }
+  const parsedId = OfferIdSchema.safeParse(id);
+  if (!parsedId.success) {
+    return {
+      success: false,
+      error: parsedId.error.issues[0]?.message || 'Geçersiz teklif kimliği.',
+      status: 400,
+    };
+  }
 
-        await offers.update(id, {
-            hotel_name,
-            slug,
-            price,
-            currency,
-            region,
-            included_items,
-            promo_text
-        });
+  const parsed = parseOfferFormData(data);
+  if (!parsed.ok) {
+    return { success: false, error: parsed.error, status: 400 };
+  }
 
-        revalidatePath('/[lang]/(admin)/jilinrime/teklif-yonetimi');
-        revalidatePath(`/tr/${slug}`);
-        revalidatePath(`/en/${slug}`);
+  try {
+    await offers.update(auth.capability, parsedId.data, parsed.data);
 
-        return { success: true };
-    } catch (error: any) {
-        console.error("Update Offer Error:", error);
-        return { success: false, error: error.message || "Failed to update offer" };
-    }
+    revalidatePath('/[lang]/(admin)/jilinrime/teklif-yonetimi');
+    revalidatePath(`/tr/${parsed.data.slug}`);
+    revalidatePath(`/en/${parsed.data.slug}`);
+
+    return { success: true };
+  } catch (error: unknown) {
+    console.error('Update Offer Error:', error);
+    const errObj = error as { message?: string };
+    return {
+      success: false,
+      error: errObj?.message || 'Failed to update offer',
+    };
+  }
 }
 
 export async function deleteOffer(id: string) {
-    await offers.delete(id);
+  const auth = await requireOfferAdminAccess({ requireSameOrigin: true });
+  if (!auth.ok) {
+    return { success: false, error: auth.error, status: auth.status };
+  }
+
+  const parsedId = OfferIdSchema.safeParse(id);
+  if (!parsedId.success) {
+    return {
+      success: false,
+      error: parsedId.error.issues[0]?.message || 'Geçersiz teklif kimliği.',
+      status: 400,
+    };
+  }
+
+  try {
+    await offers.delete(auth.capability, parsedId.data);
     revalidatePath('/[lang]/(admin)/jilinrime/teklif-yonetimi');
+    return { success: true };
+  } catch (error: unknown) {
+    console.error('Delete Offer Error:', error);
+    const errObj = error as { message?: string };
+    return {
+      success: false,
+      error: errObj?.message || 'Teklif silinemedi.',
+    };
+  }
 }

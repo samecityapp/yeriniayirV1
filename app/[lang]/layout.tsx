@@ -1,4 +1,5 @@
 import {isLocalFoodPreview} from '@/lib/food/localPreview';
+import {getAllowedPublicSupabaseOrigin} from '@/lib/supabase-env-guard';
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
@@ -99,6 +100,9 @@ export default async function RootLayout(
   } = props;
 
   const localPreview = (await isLocalFoodPreview());
+  const allowedSupabaseOrigin = localPreview
+    ? null
+    : getAllowedPublicSupabaseOrigin(process.env.NEXT_PUBLIC_SUPABASE_URL);
   const orgSchema = generateOrganizationSchema();
   const websiteSchema = generateWebSiteSchema();
 
@@ -110,9 +114,9 @@ export default async function RootLayout(
   return (
     <html lang={params.lang} className={localPreview?'gastronomy-font':inter.variable} style={{ backgroundColor: '#ffffff' }}>
       <head>{localPreview&&<link rel="preload" href="/fonts/Inter-TR-EN-04308d9ab394.woff2" as="font" type="font/woff2" crossOrigin="anonymous"/>}{!localPreview && <>
-        <link rel="preconnect" href="https://jerkkxwgddujigsbeqwo.supabase.co" />
+        {allowedSupabaseOrigin && <link rel="preconnect" href={allowedSupabaseOrigin} />}
         <link rel="preconnect" href="https://images.pexels.com" />
-        <link rel="dns-prefetch" href="https://jerkkxwgddujigsbeqwo.supabase.co" />
+        {allowedSupabaseOrigin && <link rel="dns-prefetch" href={allowedSupabaseOrigin} />}
         <link rel="dns-prefetch" href="https://images.pexels.com" />
       </>}</head>
       <body className="font-sans" style={{ backgroundColor: '#ffffff' }}>

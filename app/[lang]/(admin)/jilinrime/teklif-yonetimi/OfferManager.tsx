@@ -243,7 +243,12 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
 
     const handleDeleteClick = async (id: string) => {
         if (confirm('Bu teklifi silmek istediğinize emin misiniz?')) {
-            await deleteOffer(id);
+            const res = await deleteOffer(id);
+            if (!res?.success) {
+                alert(`Hata: ${res?.error || 'Silme başarısız oldu'}`);
+                return;
+            }
+            window.location.reload();
         }
     };
 
@@ -272,9 +277,8 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
                         <form
                             onSubmit={async (e) => {
                                 e.preventDefault();
-                                setIsWarming(true); // Start Loop
+                                setIsWarming(true);
                                 const formData = new FormData(e.currentTarget);
-                                const slug = formData.get('slug') as string;
 
                                 // Inject JSON
                                 formData.append('included_items', JSON.stringify(currentItems));
@@ -288,27 +292,6 @@ export default function OfferManager({ offers }: { offers: Offer[] }) {
                                         // Handle specific "duplicate key" error if visible, but actions.ts handles it nicely now
                                         alert(`Hata: ${result?.error || 'Oluşturma başarısız oldu'}`);
                                         return;
-                                    }
-
-                                    // 2. Client-Side Verification Gate
-                                    const checkUrl = `https://www.yeriniayir.com/tr/${slug}`;
-                                    const maxRetries = 20;
-                                    let attempts = 0;
-                                    let success = false;
-
-                                    while (attempts < maxRetries && !success) {
-                                        try {
-                                            // Cache bust query to bypass local browser cache if any
-                                            const res = await fetch(`${checkUrl}?t=${Date.now()}`, { method: 'GET' });
-                                            if (res.ok) {
-                                                success = true;
-                                                break;
-                                            }
-                                        } catch (e) {
-                                            console.log("Warmup check failed, retrying...", e);
-                                        }
-                                        await new Promise(r => setTimeout(r, 1000)); // Wait 1s
-                                        attempts++;
                                     }
 
                                     setIsWarming(false);

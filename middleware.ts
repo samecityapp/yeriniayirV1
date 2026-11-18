@@ -57,6 +57,41 @@ async function applicationMiddleware(request: NextRequest) {
         return response;
     }
 
+    const applyJilinrimeHeaders = (response: NextResponse) => {
+        response.headers.set('Cache-Control', 'private, no-store, max-age=0');
+        response.headers.set('X-Robots-Tag', 'noindex, nofollow');
+        response.headers.set('Vary', process.env.GASTRONOMY_AUTH_MODE === 'supabase' ? 'Cookie' : 'Authorization');
+        return response;
+    };
+
+    const isJilinrime = pathname.split('/').includes('jilinrime');
+    if (isJilinrime) {
+        if (process.env.GASTRONOMY_AUTH_MODE === 'supabase') {
+            const adminCookie = request.cookies.get('ya_cloud_admin')?.value;
+            if (!adminCookie) {
+                return new NextResponse('Auth Required', {
+                    status: 401,
+                    headers: {
+                        'Cache-Control': 'private, no-store, max-age=0',
+                        'Vary': 'Cookie',
+                        'X-Robots-Tag': 'noindex, nofollow',
+                    },
+                });
+            }
+        } else {
+            const auth = await checkPilotAdmin(request.headers.get('authorization'));
+            if (!auth.ok) {
+                return new NextResponse(auth.status === 503 ? 'Admin configuration unavailable' : 'Auth Required', {
+                    status: auth.status,
+                    headers: {
+                        ...pilotAuthFailureHeaders(auth.status),
+                        'X-Robots-Tag': 'noindex, nofollow',
+                    },
+                });
+            }
+        }
+    }
+
     // 1. CRITICAL: Skip all internal Next.js paths and static files
     if (
         pathname.startsWith('/_next') ||
@@ -66,13 +101,14 @@ async function applicationMiddleware(request: NextRequest) {
         pathname === '/robots.txt' ||
         pathname === '/sitemap.xml'
     ) {
-        return NextResponse.next();
+        const res = NextResponse.next();
+        return isJilinrime ? applyJilinrimeHeaders(res) : res;
     }
 
     // RATE LIMITING LOGIC (Skip for localhost to avoid dev friction)
     // OPTIMIZATION: Only limit API routes and Admin sections to prevent latency on normal page navigation
     try {
-        if (process.env.NODE_ENV === 'production' && (pathname.startsWith('/api') || pathname.includes('/jilinrime'))) {
+        if (process.env.NODE_ENV === 'production' && (pathname.startsWith('/api') || isJilinrime)) {
             // We limit page views here. API routes can have their own limits if needed.
             const { success, pending, limit, reset, remaining } = await ratelimit.limit(
                 `ratelimit_middleware_${ip}`
@@ -93,57 +129,6 @@ async function applicationMiddleware(request: NextRequest) {
     } catch (error) {
         console.error('Rate Limiting Error (Fail Open):', error);
         // Continue execution if Redis/RateLimit fails
-    }
-
-    // 5. ADMIN PROTECTION (Basic Auth) - Fail-closed without hardcoded password fallback
-    // This must run before locale rewrites to ensure it catches the path
-    if (pathname.includes('/jilinrime')) {
-        const expectedUser = process.env.ADMIN_USER?.trim() || 'admin';
-        const expectedPassword = process.env.ADMIN_PASSWORD?.trim();
-
-        if (!expectedPassword) {
-            console.error('SECURITY CRITICAL: ADMIN_PASSWORD environment variable is not set.');
-            return new NextResponse('Admin configuration error: ADMIN_PASSWORD is required.', {
-                status: 503,
-            });
-        }
-
-        const basicAuth = request.headers.get('authorization');
-
-        if (basicAuth && basicAuth.startsWith('Basic ')) {
-            try {
-                const authValue = basicAuth.slice(6).trim();
-                const decoded = atob(authValue);
-                const colonIndex = decoded.indexOf(':');
-                const user = colonIndex !== -1 ? decoded.slice(0, colonIndex) : '';
-                const pwd = colonIndex !== -1 ? decoded.slice(colonIndex + 1) : '';
-
-                if (user === expectedUser && pwd === expectedPassword) {
-                    // Valid credentials, proceed
-                } else {
-                    return new NextResponse('Auth Required', {
-                        status: 401,
-                        headers: {
-                            'WWW-Authenticate': 'Basic realm="Secure Area"',
-                        },
-                    });
-                }
-            } catch {
-                return new NextResponse('Invalid Auth Header', {
-                    status: 401,
-                    headers: {
-                        'WWW-Authenticate': 'Basic realm="Secure Area"',
-                    },
-                });
-            }
-        } else {
-            return new NextResponse('Auth Required', {
-                status: 401,
-                headers: {
-                    'WWW-Authenticate': 'Basic realm="Secure Area"',
-                },
-            });
-        }
     }
 
     // 2. Domain-Based Routing Configuration
@@ -176,9 +161,10 @@ async function applicationMiddleware(request: NextRequest) {
         }
 
         if (pathnameIsMissingLocale) {
-            return NextResponse.rewrite(
+            const res = NextResponse.rewrite(
                 new URL(`/en${pathname}`, request.url)
             );
+            return isJilinrime ? applyJilinrimeHeaders(res) : res;
         }
     }
 
@@ -190,14 +176,16 @@ async function applicationMiddleware(request: NextRequest) {
         }
 
         if (pathnameIsMissingLocale) {
-            return NextResponse.rewrite(
+            const res = NextResponse.rewrite(
                 new URL(`/tr${pathname}`, request.url)
             );
+            return isJilinrime ? applyJilinrimeHeaders(res) : res;
         }
     }
 
     // 4. Fallback for other languages or mixed states
-    return NextResponse.next();
+    const res = NextResponse.next();
+    return isJilinrime ? applyJilinrimeHeaders(res) : res;
 
 
 }

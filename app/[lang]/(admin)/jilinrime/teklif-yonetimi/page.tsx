@@ -1,14 +1,20 @@
-import { getOffers } from './actions';
+import { requireOfferAdminAccess } from '@/lib/admin/offerAdminGuard';
+import { offers } from '@/lib/offers';
 import OfferManager from './OfferManager';
 
 export const dynamic = 'force-dynamic';
 
 export default async function OfferManagementPage() {
-    const offers = await getOffers();
+  const auth = await requireOfferAdminAccess({ requireSameOrigin: false });
+  if (!auth.ok) {
+    return <p>Yönetici erişimi gerekli.</p>;
+  }
 
-    return (
-        <div className="space-y-6">
-            <OfferManager offers={offers} />
-        </div>
-    );
+  const offerList = await offers.getAll(auth.capability);
+
+  return (
+    <div className="space-y-6">
+      <OfferManager offers={offerList} />
+    </div>
+  );
 }

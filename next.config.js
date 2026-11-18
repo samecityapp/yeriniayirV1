@@ -1,5 +1,33 @@
+const PRODUCTION_SUPABASE_HOSTS = new Set([
+  'jerkkxwgddujigsbeqwo.supabase.co',
+  'aknhkpevrlpsrfxzqtop.supabase.co',
+]);
+
+function isProductionSupabaseHost(rawUrl) {
+  if (!rawUrl || typeof rawUrl !== 'string') return false;
+  try {
+    return PRODUCTION_SUPABASE_HOSTS.has(new URL(rawUrl.trim()).hostname.toLowerCase());
+  } catch {
+    return false;
+  }
+}
+
+const isNonProdBuild =
+  process.env.VERCEL_ENV === 'preview' ||
+  process.env.VERCEL_ENV === 'development' ||
+  process.env.APP_ENVIRONMENT === 'staging' ||
+  process.env.GASTRONOMY_CLOUD_ENV === 'staging';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  ...(isNonProdBuild && isProductionSupabaseHost(process.env.NEXT_PUBLIC_SUPABASE_URL)
+    ? {
+        env: {
+          NEXT_PUBLIC_SUPABASE_URL: 'https://isolated-preview-blocked.invalid',
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: 'isolated-preview-blocked-anon-key',
+        },
+      }
+    : {}),
   webpack(config, {isServer}) {
     if (!isServer && process.env.PERFORMANCE_ANALYZE === '1') {
       config.plugins.push({apply(compiler) {compiler.hooks.done.tap('LocalPerformanceStats', stats => {

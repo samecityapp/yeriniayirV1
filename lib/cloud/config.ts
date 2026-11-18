@@ -6,8 +6,8 @@ export function cloudConfig(){
  const u=new URL(url);
  if(!key||!ref||u.protocol!=='https:'||u.hostname!==ref+'.supabase.co'||u.pathname!=='/'||u.username||u.password||u.search||u.hash)throw new Error('Cloud configuration unavailable');
  // Production activation requires explicit two-key authorization, never accidental runtime activation.
- if(ref==='jerkkxwgddujigsbeqwo'){
-  if(env!=='production'||process.env.GASTRONOMY_PRODUCTION_AUTHORIZED!=='1'){
+ if(ref==='jerkkxwgddujigsbeqwo'||ref==='aknhkpevrlpsrfxzqtop'){
+  if(env!=='production'||process.env.GASTRONOMY_PRODUCTION_AUTHORIZED!=='1'||process.env.VERCEL_ENV==='preview'||process.env.VERCEL_ENV==='development'||process.env.APP_ENVIRONMENT==='staging'){
    throw new Error('Production cloud activation requires explicit authorization');
   }
  } else {
