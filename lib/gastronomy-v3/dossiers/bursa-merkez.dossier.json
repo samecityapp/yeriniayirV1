@@ -1,0 +1,2141 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "bursa-merkez",
+  "displayName": "Bursa Merkez (Osmangazi, Nilüfer & Yıldırım)",
+  "verifiedAt": "2026-11-18T08:37:54.975Z",
+  "selectedCount": 30,
+  "rejectedControls": [
+    {
+      "id": "ctrl-bursa-house-of-b-chain",
+      "resolvedName": "House of B Balat",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bursa-pizza-locale-chain",
+      "resolvedName": "Pizza Locale",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bursa-mikel-chain",
+      "resolvedName": "Mikel Coffee Company",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bursa-company-coffee-chain",
+      "resolvedName": "The Company Coffee Bursa",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bursa-white-burger-chain",
+      "resolvedName": "White Burger By Serhat Doğramacı Bursa Nilüfer",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bursa-starbucks-balat-chain",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bursa-dominos-besevler-chain",
+      "resolvedName": "Domino's Pizza Beşevler",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bursa-petrov-podyum-chain",
+      "resolvedName": "Petrov Coffee PodyumPark",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bursa-atelier-bakery-purity",
+      "resolvedName": "Atelier Bakery",
+      "reason": "kahve_category_not_coffee_specialist:pastry_shop"
+    },
+    {
+      "id": "ctrl-bursa-bursadan-suthelva-purity",
+      "resolvedName": "Bursadan Süt Helva",
+      "reason": "kahve_category_not_coffee_specialist:dessert_shop"
+    },
+    {
+      "id": "ctrl-bursa-trilye-sofrasi-outside",
+      "resolvedName": "Trilye sofrası",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Alacamescit/Orhanbey/Kayıhan/Kayhan/Tuzpazarı/Tuz Pazarı/Aktarhüssam/Gülbahçe/Yahşibey/Kocanaip/Şehreküstü/Soğanlı/İstiklal/Akpınar/Çekirge/Kükürtlü/Demirtaş/Kültür/Odunluk/Çamlıca/İhsaniye/Esentepe/Cumhuriyet/Konak/Beşevler/Üçevler/23 Nisan/29 Ekim/Altınşehir/Özlüce/30 Ağustos Zafer/Ahmet Yesevi/Balat/Gümüştepe/Misi/Esenevler/Nalbantoğlu/Barış/Ataevler/Dumlupınar, adres: Talatbey Mah, İskele Cd No:39, 16970 Mudanya/Bursa)"
+    },
+    {
+      "id": "ctrl-bursa-tola-bademli-outside",
+      "resolvedName": "Tola Restaurant",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Alacamescit/Orhanbey/Kayıhan/Kayhan/Tuzpazarı/Tuz Pazarı/Aktarhüssam/Gülbahçe/Yahşibey/Kocanaip/Şehreküstü/Soğanlı/İstiklal/Akpınar/Çekirge/Kükürtlü/Demirtaş/Kültür/Odunluk/Çamlıca/İhsaniye/Esentepe/Cumhuriyet/Konak/Beşevler/Üçevler/23 Nisan/29 Ekim/Altınşehir/Özlüce/30 Ağustos Zafer/Ahmet Yesevi/Balat/Gümüştepe/Misi/Esenevler/Nalbantoğlu/Barış/Ataevler/Dumlupınar, adres: Bademli, Aydoğdu Sk. No:1 NO:3, 16960 Mudanya/Bursa)"
+    },
+    {
+      "id": "ctrl-bursa-ablanin-yeri-mudanya-outside",
+      "resolvedName": "Ablanın Yeri Mudanya - Tek Şube",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Alacamescit/Orhanbey/Kayıhan/Kayhan/Tuzpazarı/Tuz Pazarı/Aktarhüssam/Gülbahçe/Yahşibey/Kocanaip/Şehreküstü/Soğanlı/İstiklal/Akpınar/Çekirge/Kükürtlü/Demirtaş/Kültür/Odunluk/Çamlıca/İhsaniye/Esentepe/Cumhuriyet/Konak/Beşevler/Üçevler/23 Nisan/29 Ekim/Altınşehir/Özlüce/30 Ağustos Zafer/Ahmet Yesevi/Balat/Gümüştepe/Misi/Esenevler/Nalbantoğlu/Barış/Ataevler/Dumlupınar, adres: Hasanbey, Halitpaşa Cd. No:59, 16940 Mudanya/Bursa)"
+    },
+    {
+      "id": "ctrl-bursa-balat-istanbul-outside",
+      "resolvedName": "Balat Kahvaltı Evi",
+      "reason": "outside_strict_neighborhood:İlçe uyuşmazlığı (beklenen: Osmangazi/Nilüfer/Nilufer/Yıldırım/Yildirim/Bursa Merkez/Merkez)"
+    },
+    {
+      "id": "ctrl-bursa-porta-besevler-low",
+      "resolvedName": "Porta İtaliana Beşevler",
+      "reason": "below_quality_threshold:★4.3(376)"
+    },
+    {
+      "id": "ctrl-bursa-aci-dayi-cantik-low",
+      "resolvedName": "Acı Dayı Cantık Salonu",
+      "reason": "below_quality_threshold:★4.3(3090)"
+    },
+    {
+      "id": "ctrl-bursa-coffee-cocolab-low",
+      "resolvedName": "Coffee Cocolab Roastery & Workshop",
+      "reason": "below_quality_threshold:★4.3(307)"
+    },
+    {
+      "id": "ctrl-bursa-iskender-ahsap-low",
+      "resolvedName": "İSKENDER Tarihi Ahşap Dükkan",
+      "reason": "below_quality_threshold:★4.1(9752)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "bursa-impasto-fatto-a-mano",
+      "categoryId": "pizza",
+      "resolvedName": "Impasto Fatto A Mano, Ristorante & Caffè",
+      "branchName": "30 Ağustos Zafer, Örencik Cd. No:7 E12, 16280 Ni̇lüfer/Bursa",
+      "placeId": "ChIJjULcc-kPyhQR6zcu5Tg7y0o",
+      "coordinates": {
+        "lat": 40.199313499999995,
+        "lng": 28.8385538
+      },
+      "rating": 4.9,
+      "userRatingCount": 252,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://impasto.tr/",
+      "mapsUri": "https://maps.google.com/?cid=5389466494628149227",
+      "recommendedPrimary": [
+        "Burrata Di Bufala Pizza",
+        "Rubino Bresaolalı Napoli Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Yapımı Taze Makarna (Ravioli Verde & Tortellone Terra)",
+          "note": "Pizza dışında ricotta-ıspanak dolgulu ravioli ve pesto soslu taze makarna tabakları düzenli olarak çıkar.",
+          "proof": "Impasto resmi menüsü ve topluluk değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sakin, ferah iç salon ve kafe bölümünde rahat masa düzeni",
+        "crowdAndNoise": "Akşam saatlerinde Kayapa–30 Ağustos Zafer hattında yüksek talep görür",
+        "disadvantage": "Bursa şehir merkezine kıyasla batı Nilüfer aksında kaldığından araçsız ulaşım daha uzun sürer",
+        "transit": "30 Ağustos Zafer Mahallesi Örencik Caddesi No:7E/12, Özlüce batı uzantısında"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Impasto Fatto A Mano Resmi Menü",
+          "url": "https://impasto.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Burrata Di Bufala pizza ve el yapımı ravioli/tortellone menü teyidi"
+        },
+        {
+          "title": "Bursa Gastronomi Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur hafifliği ve otantik İtalyan reçete tutarlılığı"
+        }
+      ],
+      "pros": [
+        "4.9 puan ortalaması",
+        "Hem otantik Napoli pizza hem taze makarna üretimi"
+      ],
+      "cons": [
+        "Merkez Osmangazi’ye mesafeli konum"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamlarında rezervasyon gereksinimi"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-pizzeria-maestro",
+      "categoryId": "pizza",
+      "resolvedName": "PİZZERİA MAESTRO",
+      "branchName": "Kültür, Bilginler Cad. NO:99, 16110 Ni̇lüfer/Bursa",
+      "placeId": "ChIJV7YT-zcXyhQRvaFpTi6-3l4",
+      "coordinates": {
+        "lat": 40.2055271,
+        "lng": 28.9638036
+      },
+      "rating": 4.8,
+      "userRatingCount": 422,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://instagram.com/pizzeriamaestroo?igshid=11r53s8fi38aj",
+      "mapsUri": "https://maps.google.com/?cid=6836110390488310205",
+      "recommendedPrimary": [
+        "Maestro Özel Pizza",
+        "Dört Peynirli İtalyan Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Yapımı Ekmekli Satır Köfte Burger",
+          "note": "Pizza çeşitlerinin yanında fırından çıkan kendi ekmekleriyle hazırlanan satır köfteli burger seçeneği bulunur.",
+          "proof": "Pizzeria Maestro menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Samimi mahalle restoranı iç oturumu ve ön bahçe masaları",
+        "crowdAndNoise": "Akşam ve hafta sonu öğünlerinde ailelerle genç misafirlerin dengeli yoğunluğu",
+        "disadvantage": "Bilginler Caddesi üzerinde akşam saatlerinde park yeri bulmak zorlaşabiliyor",
+        "transit": "Kültür Mahallesi Bilginler Caddesi No:99, Beşevler aksına yürüme mesafesinde"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Bursa Mekan & Menü Rehberi",
+          "url": "https://migros.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kültür mahallesi tek şube menü ve burger/pizza doğrulaması"
+        },
+        {
+          "title": "Nilüfer Topluluk İncelemeleri",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "422+ değerlendirmede 4.8 istikrarlı puan"
+        }
+      ],
+      "pros": [
+        "Yüksek memnuniyet istikrarı",
+        "Mahalle ölçeğinde bağımsız işletme"
+      ],
+      "cons": [
+        "Sınırlı masa kapasitesi"
+      ],
+      "uncertainties": [
+        "Yoğun akşam saatlerinde paket servis kaynaklı mutfak beklemesi"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-baratie-pizzeria",
+      "categoryId": "pizza",
+      "resolvedName": "Baratie Pizzeria",
+      "branchName": "Demirtaş Cumhuriyet, Panayır Yolu Cd. No:20 D:E, 16120 Osmangazi̇/Bursa",
+      "placeId": "ChIJz-PVr0Y_yhQRc7aTK5KOveQ",
+      "coordinates": {
+        "lat": 40.2444238,
+        "lng": 29.0770598
+      },
+      "rating": 4.8,
+      "userRatingCount": 274,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/baratiepizzeria/",
+      "mapsUri": "https://maps.google.com/?cid=16482486969693353587",
+      "recommendedPrimary": [
+        "Odun Ateşi Margherita",
+        "Özel Peynir & Şarküteri Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Lazanya & Ev Yapımı Tiramisu",
+          "note": "Odun fırınından çıkan lazanya ve kapanışta sunulan taze tiramisu pizzayla aynı derecede övülür.",
+          "proof": "Baratie Pizzeria dijital menü verileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Modern ve düzenli iç mekan salonu",
+        "crowdAndNoise": "Akşam saatlerinde Demirtaş çevresinden gelen düzenli misafir kitlesi",
+        "disadvantage": "Tarihi Heykel veya FSM Bulvarı yürüyüş akslarının kuzeyinde yer alıyor",
+        "transit": "Demirtaş Cumhuriyet Mahallesi Panayır Yolu Caddesi No:20D/E, Osmangazi"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Baratie Menü Arşivi",
+          "url": "https://migros.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Odun fırını pizza ve lazanya/tiramisu çeşitliliği"
+        },
+        {
+          "title": "Osmangazi Ziyaretçi Puanları",
+          "url": "https://yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur kıvamı ve sıcak servis geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "4.8 puan ortalaması",
+        "Osmangazi kuzeyindeki güçlü İtalyan mutfağı"
+      ],
+      "cons": [
+        "Merkezi metro istasyonlarına dolmuş/araç gerektirmesi"
+      ],
+      "uncertainties": [
+        "Fırın lazanya porsiyonlarının gün sonuna doğru tükenebilmesi"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-alpes-pizzeria",
+      "categoryId": "pizza",
+      "resolvedName": "ALPE'S PİZZERİA",
+      "branchName": "Odunluk, Tecer sokak, 16000 Ni̇lüfer/Bursa",
+      "placeId": "ChIJy6c2nooXyhQROh-7EyJIQC4",
+      "coordinates": {
+        "lat": 40.1997626,
+        "lng": 28.9959918
+      },
+      "rating": 4.7,
+      "userRatingCount": 229,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/alpespizzeria?igsh=NGptazdiejl0aDFv",
+      "mapsUri": "https://maps.google.com/?cid=3332743035451285306",
+      "recommendedPrimary": [
+        "San Marzano Margherita",
+        "Manda Mozarellalı & Şarküterili Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Uzun Fermantasyon Ekşi Maya Kenarlı Hamur",
+          "note": "Hamur yapısı yüksek hidrasyonlu fermantasyon sayesinde hafif ve sindirimi kolay dokuyla öne çıkar.",
+          "proof": "Bursa yerel gastronomi rehberi incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Odunluk sakin sokak dokusunda sade ve temiz oturma düzeni",
+        "crowdAndNoise": "Akşam yemeklerinde özellikle çiftler ve küçük gruplarca tercih edilir",
+        "disadvantage": "Şehir dışı çevre yollarına yakın konumu nedeniyle hafta içi akşamları kalabalıklaşabilir",
+        "transit": "Odunluk Mahallesi Tecer Sokak No:2/B, Nilüfer Çayı aksı yakınında"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Bursa Gastronomi Rehberi",
+          "url": "https://bicikalim.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Uzun fermantasyon Napoli hamuru ve ithal peynir kullanımı"
+        },
+        {
+          "title": "Nilüfer Yemek Değerlendirmeleri",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taş fırın leopar kenar dokusu ve servis tutarlılığı"
+        }
+      ],
+      "pros": [
+        "Tek şube özenli hamur fermantasyonu",
+        "Nitelikli ithal ve yerel malzeme dengesi"
+      ],
+      "cons": [
+        "Küçük sokak içi otopark kısıtı"
+      ],
+      "uncertainties": [
+        "Hafta sonu hamur kotasının erken bitme ihtimali"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-otto-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Otto Burger",
+      "branchName": "Altınşehir, 323. Sk. No:16/C, 16120 Ni̇lüfer/Bursa",
+      "placeId": "ChIJly53PWERyhQRWGhqshGFzrQ",
+      "coordinates": {
+        "lat": 40.2245458,
+        "lng": 28.9166071
+      },
+      "rating": 4.8,
+      "userRatingCount": 1146,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://ottoburgertr.com/",
+      "mapsUri": "https://maps.google.com/?cid=13028497083083679832",
+      "recommendedPrimary": [
+        "Otto Burger",
+        "Double Clutch (200g Çift Köfte)"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Baharatlı El Yapımı Patates & Sos Eşliği",
+          "note": "Burgerlerin yanında taze kızartılmış el yapımı soslu patates porsiyonları düzenli talep görür.",
+          "proof": "Otto Burger resmi menü ve Bursa yerel rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Modern, enerjik iç salon ve sokak önü masalar",
+        "crowdAndNoise": "Üniversite ve iş çıkışı saatlerinde Altınşehir bölgesinin en yoğun duraklarından",
+        "disadvantage": "Akşam zirve saatlerinde kısa masa bekleme süresi oluşabiliyor",
+        "transit": "Altınşehir Mahallesi 323. Sokak No:16/C, Ertuğrul Metro durağına kısa mesafede"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Otto Burger Resmi Sitesi",
+          "url": "https://ottoburgertr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kendi ekmek-sos üretimi ve Wankel/Clutch imza burger serisi"
+        },
+        {
+          "title": "Bursa Özel Mekan Rehberi",
+          "url": "https://ozelbursa.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1140+ değerlendirmede 4.8 istikrarlı memnuniyet"
+        }
+      ],
+      "pros": [
+        "Ekmek ve sosların tamamı mutfakta üretilir",
+        "Bin yılı aşan yüksek memnuniyet hacmi"
+      ],
+      "cons": [
+        "Yoğun akşam saatlerinde kalabalıklaşan oturma alanı"
+      ],
+      "uncertainties": [
+        "Özellikle çift katlı burgerlerin geç saatlerde stoğunun azalması"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-konsept-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Konsept Burger",
+      "branchName": "İhsaniye, Tuna Cd. Esra Sitesi No:173/M B Blok, 16130 Ni̇lüfer/Bursa",
+      "placeId": "ChIJPYbWOuYVyhQRYSfAnHYpndc",
+      "coordinates": {
+        "lat": 40.2246106,
+        "lng": 28.979478099999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 901,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.konseptburger.com/",
+      "mapsUri": "https://maps.google.com/?cid=15536619878910797665",
+      "recommendedPrimary": [
+        "Trüf Mantar Soslu Steak Burger",
+        "Chipotle Soslu Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Yapımı Dip Soslar & Kömür Ateşi Pişirim",
+          "note": "Kızartmalar ve burgerler yanında sunulan el yapımı acı ve fesleğen bazlı dip soslar sıkça vurgulanır.",
+          "proof": "Konsept Burger resmi menüsü ve Tuna Cd. müşteri kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük, samimi iç mekan (yaklaşık 20 kişilik kapasite)",
+        "crowdAndNoise": "FSM Bulvarı paralelinde öğle ve akşam saatlerinde hızlı dolan masa düzeni",
+        "disadvantage": "Kapasitesi dar olduğu için kalabalık gruplarla masa bulmak zorlaşabiliyor",
+        "transit": "İhsaniye Mahallesi Tuna Caddesi Esra Sitesi No:173/M B Blok, İhsaniye Metro yakını"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Konsept Burger Resmi Menü",
+          "url": "https://konseptburger.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "%100 steak eti, kömür ateşinde pişirme ve dip sos çeşitleri"
+        },
+        {
+          "title": "Bursa Yerel Değerlendirmeler",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "900+ incelemede et sululuğu ve kömür kokusu"
+        }
+      ],
+      "pros": [
+        "Gerçek kömür ateşi steak burger pişirimi",
+        "900+ değerlendirmede 4.8 puan"
+      ],
+      "cons": [
+        "Küçük iç mekan kapasitesi"
+      ],
+      "uncertainties": [
+        "Kısıtlı masa sayısı nedeniyle hafta sonu bekleme"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-bunter-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Bunter Burger",
+      "branchName": "Akpınar, Armağan Cd. No:4/E, 16180 Osmangazi̇/Bursa",
+      "placeId": "ChIJN2XFO78_yhQRPllFYletvX8",
+      "coordinates": {
+        "lat": 40.2493549,
+        "lng": 28.9617503
+      },
+      "rating": 4.9,
+      "userRatingCount": 70,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://bunterburger.food/",
+      "mapsUri": "https://maps.google.com/?cid=9204703804237633854",
+      "recommendedPrimary": [
+        "Trüf Smash Burger",
+        "Bunter Double Smash"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Trüflü Patates Kızartması & Ev Yapımı Tiramisu",
+          "note": "Burger menüsünün yanında trüflü baharatlı patates kızartması ve tatlı olarak ev yapımı tiramisu çıkar.",
+          "proof": "Özel Bursa rehberi ve online menü incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sade, modern dekore edilmiş küçük iç salon oturumu",
+        "crowdAndNoise": "Özellikle akşam yemekleri ve paket siparişte yoğunlaşan genç müdavim kitlesi",
+        "disadvantage": "Korupark aksına yakın olduğu için akşam trafiğinde ulaşım yavaşlayabilir",
+        "transit": "Akpınar Mahallesi Armağan Caddesi No:4/E, Emek / Korupark metro hattı yakını"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Özel Bursa Mekan İncelemesi",
+          "url": "https://ozelbursa.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Karamelize kenarlı smash köfte ve trüflü patates/tiramisu detayları"
+        },
+        {
+          "title": "Nelerimeşhur & Topluluk Değerlendirmeleri",
+          "url": "https://nelerimeshur.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Et pişme kıvamı, ekmek dokusu ve 4.9 yüksek puan teyidi"
+        }
+      ],
+      "pros": [
+        "Dışı çıtır içi sulu gerçek smash köfte tekniği",
+        "4.9 gibi yüksek kullanıcı memnuniyeti"
+      ],
+      "cons": [
+        "Sınırlı iç oturum alanı"
+      ],
+      "uncertainties": [
+        "Yeni nesil bir işletme olması nedeniyle henüz görece az değerlendirme hacmi"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-burgerxburger",
+      "categoryId": "hamburger",
+      "resolvedName": "Burgerxburger",
+      "branchName": "İstiklal, Pars Sokak Concept 216 Sitesi D:7/A 35, 16250 Osmangazi̇/Bursa",
+      "placeId": "ChIJoxcm-SIVyhQR_1O2jnHM_es",
+      "coordinates": {
+        "lat": 40.219085199999995,
+        "lng": 29.011325
+      },
+      "rating": 4.6,
+      "userRatingCount": 389,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17004972556118545407",
+      "recommendedPrimary": [
+        "Kremalı Mantarlı Dana Burger",
+        "Füme Etli & Cheddarlı Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Soslu Çıtır Patates & Tatlı Eşlikçili Menü",
+          "note": "Menü setlerinde cajun baharatlı patates ve günün tatlı eşlikçileri porsiyon bütünlüğü sağlar.",
+          "proof": "Yemeksepeti ve Osmangazi topluluk kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Concept 216 site içi modern ve rahat masa düzeni",
+        "crowdAndNoise": "Acemler / Bursaspor aksında akşam ve hafta sonu öğle yemeklerinde düzenli yoğunluk",
+        "disadvantage": "Cazibe caddelerinin biraz içinde yer aldığı için ilk kez gidenler navigasyonla bulur",
+        "transit": "İstiklal Mahallesi Pars Sokak Concept 216 B Blok No:7/A, Acemler Metro yakını"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Bursa Harita & Mekan Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "389 değerlendirmede 4.6 puan istikrarı"
+        },
+        {
+          "title": "Burgerxburger Menü Verileri",
+          "url": "https://yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "150g köfte gramajı ve füme et/cajun menü çeşitliliği"
+        }
+      ],
+      "pros": [
+        "Doyurucu 150g et gramajı",
+        "Osmangazi yakasındaki güçlü tek şubeli alternatif"
+      ],
+      "cons": [
+        "Ana cadde yerine site içi konum"
+      ],
+      "uncertainties": [
+        "Akşam paket servis yoğunluğunda servis hızı değişimleri"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-grind-up-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "grind up coffe co.",
+      "branchName": "İhsaniye, Alageyik Sk. No:54, 16000 Ni̇lüfer/Bursa",
+      "placeId": "ChIJVcAhsgkVyhQRvqdHJ-c7h3g",
+      "coordinates": {
+        "lat": 40.2235691,
+        "lng": 28.979328499999994
+      },
+      "rating": 4.8,
+      "userRatingCount": 393,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.grindupco.com/",
+      "mapsUri": "https://maps.google.com/?cid=8684976270389782462",
+      "recommendedPrimary": [
+        "V60 Tek Köken Filtre Kahve",
+        "Iced Spanish Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Vişneli Brownie & Fit Hurma Topları",
+          "note": "Kahvelerin yanında glütensiz/şekersiz hurma topları ve vişneli brownie atıştırmalığı beğenilir.",
+          "proof": "Grind Up resmi sitesi ve Wanderlog incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Park manzaralı açık alan ve rahat çalışmaya uygun iç oturum",
+        "crowdAndNoise": "FSM gürültüsünden uzak, öğle sonrası sakin ve verimli çalışma ortamı",
+        "disadvantage": "FSM ana aksından iki sokak içeride olduğundan park alanı sınırlı kalabiliyor",
+        "transit": "İhsaniye Mahallesi Alageyik Sokak No:54, Ortanca Parkı karşısı (İhsaniye Metro 6 dk)"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Grind Up Resmi Websitesi",
+          "url": "https://grindupco.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Üçüncü dalga demleme profili ve V60 reçeteleri"
+        },
+        {
+          "title": "Wanderlog Bursa Rehberi",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "V60 kalitesi, brownie uyumu ve sakin atmosfer övgüleri"
+        }
+      ],
+      "pros": [
+        "FSM kalabalığından izole park manzaralı köşe",
+        "Hem klasik espresso hem özenli V60 demleme"
+      ],
+      "cons": [
+        "Dar sokak üzerinde park yeri kısıtı"
+      ],
+      "uncertainties": [
+        "Çekirdek çeşitlerinin mevsimsel hasada göre değişmesi"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-fabriek-coffee-roasting",
+      "categoryId": "kahve",
+      "resolvedName": "Fabriek Coffee Roasting CO.",
+      "branchName": "23 Nisan Mahallesi 251 sk B.T.G Inventum no:6/G, 23 Nisan, 16100 Ni̇lüfer/Bursa",
+      "placeId": "ChIJzUIJ63I5yhQRnOJ0nFCQQ4Q",
+      "coordinates": {
+        "lat": 40.2171636,
+        "lng": 28.9439468
+      },
+      "rating": 4.8,
+      "userRatingCount": 131,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://fabriekcoffee.com/",
+      "mapsUri": "https://maps.google.com/?cid=9530619912342790812",
+      "recommendedPrimary": [
+        "Single Origin El Demleme (V60/Chemex)",
+        "Flat White"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Nitelikli Sandviç & Günlük Kruvasan Eşliği",
+          "note": "Kahve eşliğinde taze hazırlanan artisan sandviç ve kruvasan seçenekleri sunulur.",
+          "proof": "European Coffee Trip Bursa seçkisi ve Bikalım incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Yüksek tavanlı loft iç mekan, ferah masa aralıkları ve dış oturum",
+        "crowdAndNoise": "Sabah ve öğleden sonra dizüstü bilgisayarlı kahve tutkunlarıyla dengeli canlılık",
+        "disadvantage": "Şehrin batı aksında yer aldığı için Heykel/Osmangazi’den araç veya metro gerekir",
+        "transit": "23 Nisan Mahallesi 251. Sokak BTG Inventum No:6/G, Altınşehir/23 Nisan"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "European Coffee Trip Bursa Seçkisi",
+          "url": "https://europeancoffeetrip.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bursa nitelikli kahve kavurma atölyesi bağımsız listelemesi"
+        },
+        {
+          "title": "Bikalım & Topluluk İncelemeleri",
+          "url": "https://bicikalim.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yüksek tavanlı loft mimari, taze kavrum aroması ve filtre başarısı"
+        }
+      ],
+      "pros": [
+        "Kendi çekirdeğini kavuran bağımsız mikro kavurmacı",
+        "Geniş, aydınlık çalışma dostu mekan"
+      ],
+      "cons": [
+        "Merkez Çarşı bölgesine mesafesi"
+      ],
+      "uncertainties": [
+        "Mikro lot çekirdek kavrumlarının sınırlı stoklarla yenilenmesi"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-3-broos-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "3 BROOS COFFEE",
+      "branchName": "Soğanlı mahallesi 1, Soğanlı, Dilber Sk. no:14, 16190 Osmangazi̇/Bursa",
+      "placeId": "ChIJVaPn6isVyhQRMd-KWc8Hges",
+      "coordinates": {
+        "lat": 40.2125142,
+        "lng": 29.045234400000002
+      },
+      "rating": 4.7,
+      "userRatingCount": 569,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.3broos.com/",
+      "mapsUri": "https://maps.google.com/?cid=16969853458050637617",
+      "recommendedPrimary": [
+        "Double Shot Latte / Flat White",
+        "Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Frambuazlı & Limonlu Cheesecake",
+          "note": "Kahve eşliğinde vitrinden sunulan ev yapımı cheesecake ve churros çeşitleri sıkça tercih edilir.",
+          "proof": "3 Broos Coffee resmi menü ve Osmangazi ziyaretçi değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak ve samimi sokak cepheli iç/dış oturma alanları",
+        "crowdAndNoise": "Mahalle sakinleri ve Kültürpark yürüyüşü sonrası mola verenlerle keyifli tempo",
+        "disadvantage": "İç salonu büyük gruplar için görece kompakt ölçülerdedir",
+        "transit": "Soğanlı Mahallesi 1. Dilber Sokak No:14, Kültürpark Metro durağına yürüme mesafesinde"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "3 Broos Coffee Resmi Sitesi",
+          "url": "https://3broos.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Üç kardeş kuruluş hikayesi ve kahve/tatlı menü kapsamı"
+        },
+        {
+          "title": "Osmangazi Topluluk Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "569+ değerlendirmede 4.7 puan istikrarı"
+        }
+      ],
+      "pros": [
+        "Samimi ve erişilebilir mahalle kahvecisi kimliği",
+        "Kültürpark metroya yakınlık"
+      ],
+      "cons": [
+        "Sokak içi kompakt salon kapasitesi"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamüstleri masa doluluğu"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-espressonist",
+      "categoryId": "kahve",
+      "resolvedName": "Espressonist",
+      "branchName": "Şehreküstü, Cumhuriyet Cd. No:194 A blok, 16030 Osmangazi̇/Bursa",
+      "placeId": "ChIJt5LWeAc9yhQROSU-yAms2kU",
+      "coordinates": {
+        "lat": 40.18628,
+        "lng": 29.0599985
+      },
+      "rating": 4.6,
+      "userRatingCount": 625,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://espressonist.com/",
+      "mapsUri": "https://maps.google.com/?cid=5033524691554149689",
+      "recommendedPrimary": [
+        "Freddo Espresso",
+        "Affogato"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Sandviç & Çikolatalı Cookie Seçkisi",
+          "note": "Merkezi konumda hızlı molalar için günlük taze sandviç ve cookie çeşitleri tezgâhta yer alır.",
+          "proof": "Espressonist resmi menü ve Şehreküstü mekan incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Cadde cephesi ve tarihî han avlusuna entegre oturma masaları",
+        "crowdAndNoise": "Hanlar Bölgesi ve Zafer Plaza trafiği nedeniyle gün boyu yüksek yaya sirkülasyonu",
+        "disadvantage": "Merkezi konumu sebebiyle özellikle hafta sonları gürültülü ve kalabalık olabiliyor",
+        "transit": "Şehreküstü Mahallesi Cumhuriyet Caddesi No:194, Şehreküstü Metro çıkışına 3 dk"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Espressonist Resmi Menüsü",
+          "url": "https://espressonist.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Freddo espresso, matcha ve magnolia/sandviç menü teyidi"
+        },
+        {
+          "title": "Bursa Çarşı Topluluk Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "625 değerlendirmede 4.6 puan ve merkezi konum övgüleri"
+        }
+      ],
+      "pros": [
+        "Hanlar Bölgesi yürüyüşü sırasında tek şubeli nitelikli kahve durağı",
+        "Freddo ve soğuk espresso çeşitliliği"
+      ],
+      "cons": [
+        "Kalabalık saatlerde yüksek ses ve bekleme"
+      ],
+      "uncertainties": [
+        "Han avlusundaki dış masaların hava koşullarına bağlı kullanımı"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-pinot-restaurant",
+      "categoryId": "date",
+      "resolvedName": "PINOT Restaurant",
+      "branchName": "Ahmet Yesevi Mh, Sapanca(301) Sk No.4/1/18, 16040 Ni̇lüfer/Bursa",
+      "placeId": "ChIJaaARR_sTyhQRwZijKeZbq8U",
+      "coordinates": {
+        "lat": 40.2659816,
+        "lng": 28.940836299999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 151,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14243579290588518593",
+      "recommendedPrimary": [
+        "Manda Burrata & Dana Carpaccio",
+        "Pizza Pinot (Fiore di Latte & Trüf Yağlı)"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kavrulmuş Fındıklı San Sebastian Cheesecake & Panna Cotta",
+          "note": "Akşam yemeği kapanışında kavrulmuş fındıklı San Sebastian ve taze panna cotta beğenilir.",
+          "proof": "Pinot Restaurant Balat menü ve masa değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Özenli masa örtülü şık iç salon ve Balat teras/bahçe düzeni",
+        "crowdAndNoise": "Özellikle Cuma–Cumartesi akşamları çiftler ve özel kutlamalarla yüksek doluluk",
+        "disadvantage": "Üst segment menü ve şarap seçkisi nedeniyle hesap düzeyi ortalamanın üzerinde seyreder",
+        "transit": "Ahmet Yesevi / Balat Mahallesi Sapanca Sokak No:4/1/18, Turkuaz Plus Çarşı"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Menükolay Pinot Balat Menüsü",
+          "url": "https://menukolay.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Dana carpaccio, manda burrata, arancini ve şarap eşleşmeleri"
+        },
+        {
+          "title": "Bursa Mekan Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "151 değerlendirmede 4.7 ambiyans ve yemek puanı"
+        }
+      ],
+      "pros": [
+        "Şık ve sakin Balat akşam atmosferi",
+        "İtalyan başlangıçlar ve zengin şarap eşleşmeleri"
+      ],
+      "cons": [
+        "Hafta sonu rezervasyonsuz masa bulma güçlüğü"
+      ],
+      "uncertainties": [
+        "Dönemsel tadım ve şarap listesi güncellemeleri"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-tiene-vida",
+      "categoryId": "date",
+      "resolvedName": "Tiene Vida",
+      "branchName": "Odunluk, Akpınar Cd. No:4, 16110 Ni̇lüfer/Bursa",
+      "placeId": "ChIJh8jAWwAVyhQRGteZYeWflPI",
+      "coordinates": {
+        "lat": 40.207403,
+        "lng": 28.9992104
+      },
+      "rating": 4.6,
+      "userRatingCount": 42,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17479771861265536794",
+      "recommendedPrimary": [
+        "Köz Patlıcan Çorbası & Akdeniz Izgara Et",
+        "Taze Risotto & Makarna Seçkisi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özenli Akşam Kokteylleri & İmza Tatlı Tabakları",
+          "note": "Ana yemek sonrası yerli-yabancı kav ve özel hazırlanmış akşam tatlıları romantik ritmi tamamlar.",
+          "proof": "Bursa Mekan ve MoreCravings değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Yüksek tavanlı, loş ışıklı ve geniş aralıklı sakin fine-dining masaları",
+        "crowdAndNoise": "İş yemekleri ve baş başa akşam yemekleri için sakin tempo",
+        "disadvantage": "Otel kompleksi bünyesinde yer aldığı için sokak restoranı dokusundan farklıdır ve fiyat düzeyi yüksektir",
+        "transit": "Odunluk Mahallesi Akpınar Caddesi No:4, Nilüfer parkları ve metroya kısa araç mesafesinde"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "MoreCravings & Bursa Rehberi",
+          "url": "https://morecravings.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Fine-dining Akdeniz-Anadolu mutfağı ve şarap koleksiyonu"
+        },
+        {
+          "title": "Bursa Mekan Topluluk Yorumları",
+          "url": "https://bursamekan.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Servis kalitesi ve sakin ortam değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Yüksek akustik konforu ve geniş masa aralıkları",
+        "Güçlü şarap kavı ve mevsimlik ana yemekler"
+      ],
+      "cons": [
+        "Otel içi giriş düzeni ve üst fiyat seviyesi"
+      ],
+      "uncertainties": [
+        "Sezonsal ana yemek menüsü değişimleri"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-da-vittorio",
+      "categoryId": "date",
+      "resolvedName": "Da Vittorio Ristorante Italiano",
+      "branchName": "Çekirge, Çekirge Cd. No:81, 16265 Osmangazi̇/Bursa",
+      "placeId": "ChIJzWQAUfwVyhQRueiwzrsZeMQ",
+      "coordinates": {
+        "lat": 40.19675,
+        "lng": 29.038050399999996
+      },
+      "rating": 4.5,
+      "userRatingCount": 517,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://movenpick.accor.com/en/europe/turkey/bursa/hotel-thermal-spa-bursa/restaurants/da-vittorio-ristorante-italiano.html",
+      "mapsUri": "https://maps.google.com/?cid=14157093723056433337",
+      "recommendedPrimary": [
+        "Taze Manda Burrata (Pancar & Fesleğenli)",
+        "Otantik İtalyan Risotto & Taze Makarna"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Odun Fırın Valtellina Pizza & İtalyan Şarap Eşliği",
+          "note": "Taze makarna ve ana yemeklerin yanında ince hamurlu İtalyan pizzaları ve şarap seçkisi öne çıkar.",
+          "proof": "Accor Dining & Çekirge yemek rehberi incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Klasik beyaz masa örtülü, sakin ve zarif restoran salonu",
+        "crowdAndNoise": "Çekirge’de sakin bir akşam yemeği arayan çiftlerin düzenli adresi",
+        "disadvantage": "Çekirge yokuşundaki konumu nedeniyle hafta sonu vale/otopark kullanımı gerekebilir",
+        "transit": "Çekirge Mahallesi Çekirge Caddesi No:81, Çekirge Meydanı aksında"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Accor & Bursa İtalyan Mutfağı Rehberi",
+          "url": "https://accor.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İtalyan şef yönetiminde otantik risotto, makarna ve burrata sunumu"
+        },
+        {
+          "title": "Bursa Ziyaretçi Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "517+ değerlendirmede 4.5 puan ve servis nezaketi"
+        }
+      ],
+      "pros": [
+        "Şef imzalı klasik İtalyan tabakları",
+        "Merkezi Çekirge konumunda sessiz masa düzeni"
+      ],
+      "cons": [
+        "Yüksek fiyat seviyesi ve otel bağlantılı konum"
+      ],
+      "uncertainties": [
+        "Sezonsal trüf ve ithal peynir çeşitliliğindeki değişimler"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-farah-balat",
+      "categoryId": "date",
+      "resolvedName": "Farah Balat",
+      "branchName": "Balat, Bozkir Sk Dikencik Meteor Evleri L Blok, No:15-16, 16225 Ni̇lüfer/Bursa",
+      "placeId": "ChIJe1__fAATyhQRpQFggH3NhUM",
+      "coordinates": {
+        "lat": 40.265367399999995,
+        "lng": 28.931075900000003
+      },
+      "rating": 4.5,
+      "userRatingCount": 148,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.farahbalat.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=4865520911352070565",
+      "recommendedPrimary": [
+        "Özel Soğuk & Ara Sıcak Meze Seçkisi",
+        "Et / Balık Ana Yemek Eşliği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Panna Cotta Kapanışı",
+          "note": "Meze ve ana yemek dolu akşamın sonunda hafif sütlü panna cotta tatlısı sıkça övülür.",
+          "proof": "Farah Balat resmi sayfası ve Restoranım menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Şık aydınlatmalı iç salon ve ferah Balat oturum alanları",
+        "crowdAndNoise": "Akşam saatlerinde kutlama grupları ve çiftlerle canlı ve keyifli atmosfer",
+        "disadvantage": "Canlı müzik veya fasıl olan gecelerde ses düzeyi romantik fısıltı sohbetinin üstüne çıkabiliyor",
+        "transit": "Balat Mahallesi Bozkır Sokak Dikencik Meteor Evleri L Blok No:15-16, Nilüfer"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Farah Balat Resmi Sitesi",
+          "url": "https://farahbalat.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Modern meze konsepti ve Balat akşam sofrası detayları"
+        },
+        {
+          "title": "Restoranım & Misafir Geri Bildirimleri",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Özgün sarma mezeleri, ana yemekler ve panna cotta beğenisi"
+        }
+      ],
+      "pros": [
+        "Yaratıcı meze sunumları ve estetik dekorasyon",
+        "Uzun akşam sohbetlerine elverişli tempo"
+      ],
+      "cons": [
+        "Müzikli gecelerde artan salon sesi"
+      ],
+      "uncertainties": [
+        "Fasıl günleri için önceden program ve masa teyidi ihtiyacı"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-cumhuriyet-kahvalti-ozluce",
+      "categoryId": "kahvalti",
+      "resolvedName": "Cumhuriyet Kahvaltı Kafe Özlüce",
+      "branchName": "29 Ekim, Muammer Aksoy Cd. 28/C-B, 16120 Ni̇lüfer/Bursa",
+      "placeId": "ChIJST_WLvwRyhQRG-tK_2dSf98",
+      "coordinates": {
+        "lat": 40.2254781,
+        "lng": 28.913824
+      },
+      "rating": 4.7,
+      "userRatingCount": 842,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16104681399118392091",
+      "recommendedPrimary": [
+        "Cumhuriyet & Yöresel Van Serpme Kahvaltı",
+        "Güveçte Kaşarlı Domatesli Sucuk"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Süt Reçeli & Acuka Kavanozları",
+          "note": "Masaya gelen taze süt reçeli ve cevizli acuka kahvaltıların en çok konuşulan eşlikçileridir.",
+          "proof": "Gezentianne & Kahvaltı Nerede incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş, aydınlık iç mekan ve ailelere uygun rahat bahçe masaları",
+        "crowdAndNoise": "Cumartesi–Pazar sabah 09.30 sonrasında Özlüce’de ailelerle tam doluluğa ulaşır",
+        "disadvantage": "Hafta sonu geç saatlerde rezervasyonsuz gidenler kısa süre masa bekleyebiliyor",
+        "transit": "29 Ekim Mahallesi Muammer Aksoy Caddesi No:28/C-B, Özlüce Metro yakını"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Kahvaltı Nerede Bursa Seçkisi",
+          "url": "https://kahvaltinerede.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Van ve Cumhuriyet serpme kahvaltı menü kapsamı ve çeşitlilik"
+        },
+        {
+          "title": "Özlüce Topluluk Puanları",
+          "url": "https://gezentianne.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "842 değerlendirmede 4.7 puan ve güler yüzlü servis"
+        }
+      ],
+      "pros": [
+        "Zengin yöresel kahvaltılık çeşitliliği ve güveç sıcakları",
+        "4.7 puan yüksek sabah memnuniyeti"
+      ],
+      "cons": [
+        "Hafta sonu sabah geç saatlerde yoğunluk"
+      ],
+      "uncertainties": [
+        "Hafta sonu rezervasyon uygulamasının dönemlik değişimi"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-atelier-bakery",
+      "categoryId": "kahvalti",
+      "resolvedName": "Atelier Bakery",
+      "branchName": "Ona 202, 23 Nisan, Köroğlu Cd. A Blok No: 24AC, 16230 Ni̇lüfer/Bursa",
+      "placeId": "ChIJZyfRVuQTyhQRk52_lPJjxGY",
+      "coordinates": {
+        "lat": 40.2206994,
+        "lng": 28.944606399999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 627,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.atelierbakery.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=7405153580832759187",
+      "recommendedPrimary": [
+        "Taze Çikolatalı & Sade Tereyağlı Kruvasan",
+        "Sabah Filtre Kahve & Tart"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mevsim Meyveli & Pastacı Kremalı Tartlar",
+          "note": "Kruvasanların yanında günlük taze çıkan pastacılık tartları ve ekler çeşitleri büyük ilgi görür.",
+          "proof": "Bibursa ve Menü Haritası incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Şık pastane vitrini önü masalar ve modern açık hava oturumu",
+        "crowdAndNoise": "Hafta sonu sabahları taze fırın çıkışı saatlerinde yoğun ilgi görür",
+        "disadvantage": "Klasik serpme Türk kahvaltısı yerine artizan kruvasan-pasta odaklı hafif sabah sunar",
+        "transit": "23 Nisan Mahallesi Köroğlu Caddesi Ona 202 A Blok No:24AC, 100. Yıl metro aksı yakını"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Bibursa Mekan İncelemesi",
+          "url": "https://bibursa.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taze kruvasan katmanları ve artizan fırın üretimi"
+        },
+        {
+          "title": "Nilüfer Kullanıcı Yorumları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "627+ değerlendirmede 4.7 tutarlılık"
+        }
+      ],
+      "pros": [
+        "Tereyağlı taze kruvasan ve artizan hamur kalitesi",
+        "Sakin ve temiz sabah kahvaltısı ortamı"
+      ],
+      "cons": [
+        "Klasik sıcak menemen/serpme arayanlar için sınırlı çeşit"
+      ],
+      "uncertainties": [
+        "Özel dolgulu kruvasanların öğleden sonra tükenebilmesi"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-misi-masal-kahvalti",
+      "categoryId": "kahvalti",
+      "resolvedName": "Misi Masal Kahvaltı",
+      "branchName": "Gümüştepe, Lefkoşe Cd. no:25, 16110 Ni̇lüfer/Bursa",
+      "placeId": "ChIJS3OgsGIXyhQRYsf-zg25dDE",
+      "coordinates": {
+        "lat": 40.1813745,
+        "lng": 28.977006399999993
+      },
+      "rating": 4.5,
+      "userRatingCount": 1503,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://sites.google.com/view/masalkahvalti/men%C3%BC",
+      "mapsUri": "https://maps.google.com/?cid=3563676674115422050",
+      "recommendedPrimary": [
+        "Masal Serpme Kahvaltı (Sıcak Gözleme & Pişili)",
+        "Kuymak & Kavurmalı Yumurta"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Kalem Böreği & Patatesli Gözleme Servisi",
+          "note": "Soğuk kahvaltılıklara ek olarak masaya sıcak pişi, kalem böreği ve gözleme takviyesi sunulur.",
+          "proof": "Bursa Mekan & Misi kahvaltı rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Misi yeşilliğine bakan açık köy bahçesi ve kışlık kapalı cam salon",
+        "crowdAndNoise": "Hafta sonu Misi ziyaretçileri ve ailelerle oldukça canlı bir sabah temposuna sahiptir",
+        "disadvantage": "Hafta sonları dere boyu trafiği ve kalabalık nedeniyle servis hızı yavaşlayabiliyor",
+        "transit": "Gümüştepe Mahallesi (Misi), Lefkoşe Caddesi No:25, Orhaneli Yolu Misi girişinde"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Bursa Mekan Kahvaltı Rehberi",
+          "url": "https://bursamekan.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Misi köyü serpme kahvaltı, pişi ve kuymak menü doğrulaması"
+        },
+        {
+          "title": "Nelerimeşhur & Misafir Kayıtları",
+          "url": "https://nelerimeshur.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1503+ değerlendirmede 4.5 puan ve doğa ortamı"
+        }
+      ],
+      "pros": [
+        "Misi Köyü dokusunda geniş açık bahçe",
+        "Sıcak hamur işleriyle zengin köy kahvaltısı"
+      ],
+      "cons": [
+        "Pazar sabahları Misi girişi araç trafiği ve yoğunluk"
+      ],
+      "uncertainties": [
+        "Kış sezonunda açık bahçe yerine kapalı salon oturumu"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-tarihi-tas-firin-gursel-kavan",
+      "categoryId": "kahvalti",
+      "resolvedName": "TARİHİ TAŞ FIRIN GÜRSEL KAVAN",
+      "branchName": "Tuzpazarı, Abdal Cd. No:39/A, 16020 Osmangazi̇/Bursa",
+      "placeId": "ChIJmzwPvwo-yhQRhGm5bW0TLo0",
+      "coordinates": {
+        "lat": 40.186883,
+        "lng": 29.067943999999997
+      },
+      "rating": 4.5,
+      "userRatingCount": 7808,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.tripadvisor.com.tr/Restaurant_Review-g1813811-d12995011-Reviews-Tarihi_Tas_Firini-Osmangazi.html",
+      "mapsUri": "https://maps.google.com/?cid=10173089968989759876",
+      "recommendedPrimary": [
+        "Sıcak Taş Fırın Tahinli Pide",
+        "Çıtır Pekmezli Bursa Simidi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarihî Abdal Meydanı Çay Evi Eşleşmesi",
+          "note": "Fırından alınan sıcak tahinli pide ve simitlerin hemen karşıdaki çay bahçesi masalarında çayla tüketilmesi köklü bir şehir ritüelidir.",
+          "proof": "Tarihi Taş Fırın kayıtları ve Wanderlog Bursa rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî taş fırın önü hızlı al-götür ve meydan açık alan çay masaları",
+        "crowdAndNoise": "Sabahın erken saatlerinden öğlene kadar fırın önünde sürekli simit/tahanlı kuyruğu vardır",
+        "disadvantage": "Sabah yoğunluğunda fırın önünde sıra beklenir; klasik restoran masa servisi yoktur",
+        "transit": "Tuzpazarı Mahallesi Abdal Caddesi No:39/A, Demirtaşpaşa veya Şehreküstü Metro’dan 5 dk yürüyüş"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Tarihi Taş Fırın Gürsel Kavan Arşivi",
+          "url": "https://tarihitasfirin.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taş fırın tahinli pide, Bursa simidi ve cantık üretimi"
+        },
+        {
+          "title": "Wanderlog & Bursadabugün Rehberi",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "7808 değerlendirmede 4.5 puanla yaşayan şehir sabah ritüeli"
+        }
+      ],
+      "pros": [
+        "Taş fırından çıkan sıcak tahinli pide ve hakiki Bursa simidi",
+        "Tarihî Abdal Meydanı atmosferi"
+      ],
+      "cons": [
+        "Özellikle sabahları sıra bekleme ve ayakta/kahvehane oturumu düzeni"
+      ],
+      "uncertainties": [
+        "Sıcak çıkış partilerinin gün içi saatlere göre değişmesi"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-tarihi-carsi-kebapcisi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Tarihi Bursa Çarşı Kebapçısı",
+      "branchName": "Konum için Arayınız. KUTLUCAN OTOPARK ÇIKIŞ KAPISI KARŞISI. Bursa Heykel Atürk caddesinde Ahmet Vefik Paşa Tiyatrosu Ara Sokağındayız, Alacamescit, Tuz Pazarı Cd. No: 1, 16020 Osmangazi̇/Bursa",
+      "placeId": "ChIJjSw4-QI9yhQRLBFT5C3D-yY",
+      "coordinates": {
+        "lat": 40.1835734,
+        "lng": 29.066846199999997
+      },
+      "rating": 4.8,
+      "userRatingCount": 7203,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://carsikebapcisi.com/",
+      "mapsUri": "https://maps.google.com/?cid=2809053394467229996",
+      "recommendedPrimary": [
+        "Tereyağlı Bursa İskender Kebabı",
+        "Üzüm Şırası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kaymaklı Kemalpaşa Tatlısı & Taze Şıra",
+          "note": "Tereyağlı İskender’i dengeleyen ferah üzüm şırası ve kapanışta sunulan Kemalpaşa tatlısı klasiği tamamlar.",
+          "proof": "Tarihi Bursa Çarşı Kebapçısı menü kayıtları ve İlkuç Bursa seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî çarşı dokusuna uygun sade, hızlı sirkülasyonlu iki katlı salon",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde hem Bursalılar hem şehir dışından gelen misafirlerle dolu",
+        "disadvantage": "Tarihî çarşı ara sokağında kaldığından otopark gerektirir ve öğle vakti kısa bekleme olabilir",
+        "transit": "Alacamescit Mahallesi Tuz Pazarı Caddesi Tek Sokak No:1, Heykel AVM / Tiyatro arkası"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Tarihi Çarşı Kebapçısı Resmi Sitesi",
+          "url": "https://carsikebapcisi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tek şubeli çarşı İskender reçetesi ve tarihçesi"
+        },
+        {
+          "title": "Bursa Gastronomi Değerlendirmeleri",
+          "url": "https://ilkuc.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "7203 değerlendirmede 4.8 puan ve tereyağ/et lezzeti teyidi"
+        }
+      ],
+      "pros": [
+        "7200+ değerlendirmede 4.8 gibi nadir istikrar",
+        "Tek şubeli özenli yaprak döner kesimi"
+      ],
+      "cons": [
+        "Öğle yemeklerinde yoğunluk ve dar çarşı sokağı"
+      ],
+      "uncertainties": [
+        "Dönerin akşam geç saatlere kalmadan tükenebilmesi"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-tarihi-konak-kebap",
+      "categoryId": "denemelisin",
+      "resolvedName": "TARİHİ KONAK KEBAP (İskender Kebap/ Pideli Köfte)",
+      "branchName": "Orhanbey Mah. 2.İmaret sok, Kızılay kan merkezi aralığı, Orhanbey, Teyyare kültür merkezi arkası No:10, 16010 Osmangazi̇/Bursa",
+      "placeId": "ChIJR5kUNrE9yhQRaHiib2dRMoQ",
+      "coordinates": {
+        "lat": 40.1841807,
+        "lng": 29.065453499999997
+      },
+      "rating": 4.8,
+      "userRatingCount": 2702,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/tarihikonakkebap?igsh=MXVoZWs0a2ZiZ2t2dA%3D%3D&utm_source=qr",
+      "mapsUri": "https://maps.google.com/?cid=9525765666538420328",
+      "recommendedPrimary": [
+        "Bursa İskender Kebap",
+        "Tereyağlı Pideli Köfte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırınlanmış Bursa Süt Helvası & Şıra",
+          "note": "Kebap veya pideli köfte sonrası sıcak fırın süt helvası ve ferah üzüm şırası müdavimlerin klasiğidir.",
+          "proof": "Tarihi Konak Kebap Orhanbey ziyaretçi kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geleneksel ahşap ve çini detaylı sıcak çarşı restoranı salonu",
+        "crowdAndNoise": "Öğle kuşağında esnaf ve turist yoğunluğu görülür",
+        "disadvantage": "Yoğunlukta kapıda kısa masa sırası oluşabiliyor; akşam geç saatlerde kapanışa dikkat etmek gerekir",
+        "transit": "Orhanbey Mahallesi 2. İmaret Sokak No:10, Teyyare Kültür Merkezi arkası, Heykel"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Orhanbey Çarşı Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "2702 incelemede 4.8 puan ve pideli köfte/İskender dengesi"
+        },
+        {
+          "title": "Bursa Şehir Merkezi Seçkileri",
+          "url": "https://ilkuc.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Teyyare arkası tarihi çarşı lezzet durağı teyidi"
+        }
+      ],
+      "pros": [
+        "Hem İskender hem pideli köftede aynı yüksek standart",
+        "Merkezi Heykel yürüyüş rotasında tek şube"
+      ],
+      "cons": [
+        "Öğle saatlerinde kısa süreli sıra"
+      ],
+      "uncertainties": [
+        "Hafta sonları öğleden sonra köfte ve dönerin erken bitmesi"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-kebapci-huseyin-usta",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kebapçı Hüseyin Usta",
+      "branchName": "Alacamescit, Tuz Pazarı Cd. 16/B, 16020 Osmangazi̇/Bursa",
+      "placeId": "ChIJN2w1-eA9yhQR3NEiafUpwDk",
+      "coordinates": {
+        "lat": 40.184031,
+        "lng": 29.066723
+      },
+      "rating": 4.6,
+      "userRatingCount": 22458,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://bursakebapcihuseyin.com/",
+      "mapsUri": "https://maps.google.com/?cid=4161372189697954268",
+      "recommendedPrimary": [
+        "Tam Porsiyon Tereyağlı Bursa Kebabı",
+        "Yayık Ayran / Üzüm Şırası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kaymaklı Mustafakemalpaşa Peynir Tatlısı",
+          "note": "Yemek sonunda masalara gelen sade veya kaymaklı peynir tatlısı etin ağırlığını yumuşatır.",
+          "proof": "Kebapçı Hüseyin Usta resmi kayıtları ve İlkuç Bursa rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük, geleneksel ve yüksek sirkülasyonlu tarihi kebapçı salonu",
+        "crowdAndNoise": "Hafta içi öğle dahil günün büyük bölümünde kapıda sıra oluşur",
+        "disadvantage": "Küçük dükkan olduğu için sıra beklemek ve hızlı yemek temposuna uymak gerekir; rezervasyon alınmaz",
+        "transit": "Alacamescit Mahallesi Tuz Pazarı Caddesi No:16/B, Ulu Cami ve Koza Han’a 3 dk"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Kebapçı Hüseyin Usta Resmi Sitesi",
+          "url": "https://bursakebapcihuseyin.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tek dükkan geleneği ve günlük taze döner üretimi"
+        },
+        {
+          "title": "İlkuç & Topluluk İncelemeleri",
+          "url": "https://ilkuc.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "22458+ değerlendirmede 4.6 güçlü puan ve lezzet istikrarı"
+        }
+      ],
+      "pros": [
+        "Şehrin en ikonik bakır tabak döner deneyimi",
+        "Koza Han ve Ulu Cami’ye 3 dakika"
+      ],
+      "cons": [
+        "Küçük salonda sürekli sıra ve hızlı masa dönüşü"
+      ],
+      "uncertainties": [
+        "Hafta sonu öğleden sonra dönerin erken tükenmesi"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-mert-pideli-kofte",
+      "categoryId": "denemelisin",
+      "resolvedName": "MERT Pideli Köfte. İskender kebap ,kebapci Kazim usta",
+      "branchName": "Kayhan mah ünlü caddesi. 17, Kayıhan, Ünlü Cd. 17 a, 16270 Osmangazi̇/Bursa",
+      "placeId": "ChIJicIk3d89yhQRM48XdqUckKU",
+      "coordinates": {
+        "lat": 40.1821293,
+        "lng": 29.0690004
+      },
+      "rating": 4.8,
+      "userRatingCount": 2702,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11930066909880880947",
+      "recommendedPrimary": [
+        "Tereyağlı Kayhan Pideli Köfte",
+        "Kazım Usta Yaprak İskender"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Klasik Kuru Fasulye Piyazı & Kemalpaşa",
+          "note": "Pideli köfteye eşlik eden tahin-sirkeli piyaz ve şerbetli Kemalpaşa tatlısı geleneği tamamlar.",
+          "proof": "Kayhan Çarşısı topluluk değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ünlü Cadde üzerinde sade, temiz iki katlı geleneksel salon",
+        "crowdAndNoise": "Öğle yemeği ve hafta sonları tarihi Kayhan rotasında yoğun talep",
+        "disadvantage": "Merkez caddede park alanı kısıtlı olduğundan toplu taşıma tercih edilmelidir",
+        "transit": "Kayhan Mahallesi Ünlü Caddesi No:17/A, Heykel ve Kayhan Çarşısı girişi"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Kayhan Çarşısı Harita İncelemeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "2702 incelemede 4.8 puanla Kayhan bölgesinin en yüksek puanlılarından"
+        },
+        {
+          "title": "Bursa Pideli Köfte Rehberi",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kazım Usta pideli köfte ve sos/tereyağ dengesi"
+        }
+      ],
+      "pros": [
+        "2700+ değerlendirmede 4.8 istikrarlı puan",
+        "Pide altı yumuşak köfte suyu ve tereyağı"
+      ],
+      "cons": [
+        "Hafta sonu öğle kalabalığı"
+      ],
+      "uncertainties": [
+        "Üst kat sıcak yaz günlerinde daha hızlı ısınabiliyor"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-sehzade-pideli-kofte-muaz",
+      "categoryId": "denemelisin",
+      "resolvedName": "Şehzade Pideli Köfte - Muaz Usta",
+      "branchName": "Kayıhan, Kayhan Cd. No:30/1 Merkez, 16010 Osmangazi̇/Bursa",
+      "placeId": "ChIJ5ynD7lY9yhQR6V_q9oFZKgw",
+      "coordinates": {
+        "lat": 40.184104999999995,
+        "lng": 29.069499999999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 232,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=876611492205191145",
+      "recommendedPrimary": [
+        "Muaz Usta Pideli Köfte",
+        "Kayhan Usulü Piyaz & Şıra"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Salata Bürosu & Yoğurtlu Pideli Servis",
+          "note": "Köftenin yanındaki taze köz biber, soğan ve süzme yoğurt uyumu sıkça övülür.",
+          "proof": "Turizm Atlası Kayhan raporu ve Eatbu menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî Kayhan Çarşısı sokağına bakan geleneksel dükkan masaları",
+        "crowdAndNoise": "Çarşı yürüyüşü yapan ziyaretçilerle öğle kuşağında hareketli",
+        "disadvantage": "Kayhan Çarşısı içi yaya sokağı olduğundan araç girişi yoktur",
+        "transit": "Kayhan Mahallesi Kayhan Caddesi No:30/1, Tarihi Kayhan Çarşısı içi"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Turizm Atlası Kayhan Raporu",
+          "url": "https://turizmatlasi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kayhan Çarşısı tescilli pideli köfte üretimi"
+        },
+        {
+          "title": "Pidelibursa & Topluluk İncelemeleri",
+          "url": "https://pidelibursa.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Et kalitesi ve 4.8 puan ortalaması"
+        }
+      ],
+      "pros": [
+        "Tarihî Kayhan Çarşısı içinde otantik atmosfer",
+        "Dengeli sos ve %100 dana köfte dokusu"
+      ],
+      "cons": [
+        "Sınırlı kapasiteli tarihi çarşı dükkanı"
+      ],
+      "uncertainties": [
+        "Akşam kapanış saatlerinin çarşı esnaf düzenine göre erken olabilmesi"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-ali-usta-tahinli-pide-odunluk",
+      "categoryId": "denemelisin",
+      "resolvedName": "Tarihi Bursa Tahinli Pidecisi Ali Usta Odunluk",
+      "branchName": "Odunluk, Odunluk Cd. No:38, 16110 Ni̇lüfer/Bursa",
+      "placeId": "ChIJeZrCh4YWyhQRhijdsMaPs3E",
+      "coordinates": {
+        "lat": 40.199050299999996,
+        "lng": 28.994430800000004
+      },
+      "rating": 4.8,
+      "userRatingCount": 1475,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://aliustaodunluk.com/",
+      "mapsUri": "https://maps.google.com/?cid=8193050230650644614",
+      "recommendedPrimary": [
+        "Sıcak Taş Fırın Tahinli Pide",
+        "Pırasalı Arnavut Böreği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Pırasalı Arnavut Böreği & Ev Yapımı Limonata",
+          "note": "Tahinli pidenin yanında el açması pırasalı Arnavut böreği ve ferah ev yapımı limonata çok tercih edilir.",
+          "proof": "Ali Usta Odunluk resmi menüsü ve Bursadabugün haberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Fırın tezgâhı önü hızlı al-götür ve kısıtlı iç/dış ayakta-oturmalı masa alanı",
+        "crowdAndNoise": "Sabah saatleri ve hafta sonu öğleden öncesinde sıcak pide çıkışı başında yoğunluk",
+        "disadvantage": "Uzun kahvaltı oturumu yerine fırından sıcak alıp tüketmeye uygundur",
+        "transit": "Odunluk Mahallesi Odunluk Caddesi No:38, Odunluk Metro / Carrefour aksı yakını"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Ali Usta Odunluk Resmi Sitesi",
+          "url": "https://aliustaodunluk.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Geleneksel Bursa tahinli pide ve Arnavut böreği üretimi"
+        },
+        {
+          "title": "Bursadabugün & Wanderlog Yorumları",
+          "url": "https://bursadabugun.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1475+ değerlendirmede 4.8 puan istikrarı"
+        }
+      ],
+      "pros": [
+        "Akışkan tahinli pide kıvamında 4.8 istikrar",
+        "El açması pırasalı Arnavut böreği"
+      ],
+      "cons": [
+        "Geniş oturma salonu yerine fırın-tezgahtan al-götür odaklı düzen"
+      ],
+      "uncertainties": [
+        "Özel bayram ve hafta sonlarında önceden sipariş gerekliliği"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-rumeli-kardesler-sofrasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Rumeli Kardeşler Sofrası",
+      "branchName": "Gülbahçe, Vardar Cd. No:36, 16240 Osmangazi̇/Bursa",
+      "placeId": "ChIJBadyXGw-yhQRWfsah422GHk",
+      "coordinates": {
+        "lat": 40.1971741,
+        "lng": 29.0727196
+      },
+      "rating": 4.7,
+      "userRatingCount": 3376,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8725924997003672409",
+      "recommendedPrimary": [
+        "Rumeli Köftesi & Kuru Etli Tabaklar",
+        "Fırınlanmış Bursa Süt Helvası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Elbasan Tava & Balkan Börekleri",
+          "note": "Köfte ve çorba yanında tepside çıkan Balkan börekleri ile Elbasan tava yerel mirası yaşatır.",
+          "proof": "Rumeli Kardeşler Vardar Cd. topluluk ve lezzet kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş, temiz ve hızlı servisli geleneksel aile lokantası salonu",
+        "crowdAndNoise": "Öğle ve erken akşam yemeklerinde mahalle sakinleri ve iş çevresiyle dolu",
+        "disadvantage": "Geleneksel yemekler akşam saatlerine yaklaştıkça tek tek tükenebiliyor",
+        "transit": "Gülbahçe Mahallesi Vardar Caddesi No:36, Demirtaşpaşa / Abdal metro duraklarına 8 dk"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Osmangazi Topluluk İncelemeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "3376 değerlendirmede 4.7 puanla Rumeli mutfağı başarısı"
+        },
+        {
+          "title": "Bursa Gastronomi Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Elbasan tava, Balkan köftesi ve esnaf lokantası tutarlılığı"
+        }
+      ],
+      "pros": [
+        "Bursa’nın Rumeli mutfağı mirasını yansıtan tek şubeli adres",
+        "3300+ değerlendirmede 4.7 yüksek puan"
+      ],
+      "cons": [
+        "Tencere ve fırın çeşitlerinin akşamüstü azalması"
+      ],
+      "uncertainties": [
+        "Yoğun öğle saatlerinde park yeri kısıtı"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-bursadan-sut-helva",
+      "categoryId": "denemelisin",
+      "resolvedName": "Bursadan Süt Helva",
+      "branchName": "Yahşibey, Bozkurt Cd. No:1 A, 16050 Osmangazi̇/Bursa",
+      "placeId": "ChIJR0MsUa4_yhQRBLMCmo8M6rw",
+      "coordinates": {
+        "lat": 40.19029,
+        "lng": 29.050552999999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 704,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13612706634584470276",
+      "recommendedPrimary": [
+        "Sıcak Fırınlanmış Klasik Süt Helvası",
+        "Tahinli Süt Helvası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Dondurmalı Tahin Helvası & Ev Yapımı Limonata",
+          "note": "Süt helvası dışında dondurmalı sıcak tahin helvası ve ferah ev yapımı limonata da çok tercih edilir.",
+          "proof": "Yemek.com Bursa tatlı seçkisi ve Wanderlog rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî mahalle içinde sıcak, samimi ve kompakt tatlıcı dükkanı",
+        "crowdAndNoise": "Özellikle akşamüstü ve yemek sonrası tatlı molalarında hızlı sıra oluşur",
+        "disadvantage": "Masa sayısı az olduğundan yoğun saatlerde ayakta veya paket tercih edilebiliyor",
+        "transit": "Yahşibey Mahallesi Bozkurt Caddesi No:1/A, Tophane yokuşuna ve Muradiye’ye yürüyüş mesafesinde"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Yemek.com Bursa Lezzet Rehberi",
+          "url": "https://yemek.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Saray mutfağından süt helvası ve tahinli varyasyonu incelemesi"
+        },
+        {
+          "title": "Wanderlog Bursa Tatlıları",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "704+ değerlendirmede 4.7 puan ve dondurmalı helva övgüleri"
+        }
+      ],
+      "pros": [
+        "Üzeri karamelize gerçek Bursa fırın süt helvası",
+        "Sadece bu tatlıda uzmanlaşmış butik dükkan"
+      ],
+      "cons": [
+        "Küçük oturum kapasitesi"
+      ],
+      "uncertainties": [
+        "Sıcak fırın partilerinin anlık çıkış saatlerine denk gelme durumu"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-sanat-lokantasi-bulent-sef",
+      "categoryId": "denemelisin",
+      "resolvedName": "Sanat Lokantası Bülent Şef",
+      "branchName": "Üçevler, 84. Sk. No:24, 16100 Ni̇lüfer/Bursa",
+      "placeId": "ChIJc6vbE_8RyhQRlUEf8qVqa0c",
+      "coordinates": {
+        "lat": 40.1996195,
+        "lng": 28.9406738
+      },
+      "rating": 4.6,
+      "userRatingCount": 2213,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5146324260165206421",
+      "recommendedPrimary": [
+        "Vişneli Kuzu",
+        "Fırın Süt Helvası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zeytinyağlı Başlangıçlar & Kuru Etli Çorbalar",
+          "note": "Ana et tabakları öncesinde mevsim sebzeli zeytinyağlı tezgahı ve kemik sulu çorbalar düzenli övülür.",
+          "proof": "Sanat Lokantası Nilüfer değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Yüksek tavanlı, düzenli ve hızlı ama özenli servis veren lokanta salonu",
+        "crowdAndNoise": "Hafta içi 12.00–14.30 arası yoğun; özel lezzetler öğleden sonra bitebilir",
+        "disadvantage": "Küçük Sanayi / Üçevler içinde konumlandığından hafta sonu akşamları yerine öğle saatleri daha uygundur",
+        "transit": "Üçevler Mahallesi 84. Sokak No:24, Küçük Sanayi Metro durağı yakını"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Nilüfer Lezzet İncelemeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "2213+ değerlendirmede 4.6 puan ve şef lokantası standardı"
+        },
+        {
+          "title": "Bursa Gastronomi Videoları & Rehber",
+          "url": "https://youtube.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Vişneli kuzu ve Osmanlı tencere yemekleri doğrulaması"
+        }
+      ],
+      "pros": [
+        "Şef dokunuşlu geleneksel tencere yemekleri",
+        "2200+ değerlendirmede yüksek lezzet tutarlılığı"
+      ],
+      "cons": [
+        "Öğle vakti yoğunluk ve seçkin tabakların erken tükenmesi"
+      ],
+      "uncertainties": [
+        "Haftalık çıkan şef spesiyallerinin günden güne değişmesi"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bursa-bir-esnaf-lokantasi-1958",
+      "categoryId": "denemelisin",
+      "resolvedName": "Bir Esnaf Lokantası 1958",
+      "branchName": "Beşevler,Beşevler Sanayi Sitesi, Küçük Sanayi Camii yanı, Üçevler, 29. Sk. No:27, 16120 Ni̇lüfer/Bursa",
+      "placeId": "ChIJYSLMUEoRyhQRcFy_dvJsKt0",
+      "coordinates": {
+        "lat": 40.2065787,
+        "lng": 28.941863800000004
+      },
+      "rating": 4.4,
+      "userRatingCount": 1038,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://menu.biresnaf.com/",
+      "mapsUri": "https://maps.google.com/?cid=15936670020034059376",
+      "recommendedPrimary": [
+        "Kuzu Tandır & Bakır Tencere Sulu Yemekler",
+        "Odun Ateşi Bursa Cantığı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Odun Ateşi Lahmacun & Ev Usulü Tatlılar",
+          "note": "Sulu yemeklerin dışında fırın bölümünden çıkan Bursa cantığı ve lahmacun da öğle menüsünün gözdesidir.",
+          "proof": "FoodRank Bursa menü ve Beşevler/Üçevler topluluk kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş, ferah ve esnaf lokantası disiplininde temiz salon düzeni",
+        "crowdAndNoise": "Hafta içi öğle yemeklerinde Küçük Sanayi çevresinin en hızlı dönen duraklarından",
+        "disadvantage": "Sanayi bölgesinde yer aldığı için akşam geç saatler yerine gündüz öğünlerine odaklanır",
+        "transit": "Üçevler Mahallesi Beşevler Sanayi Sitesi 29. Sokak No:27, Küçük Sanayi Camii yanı"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "FoodRank Bursa Menü Arşivi",
+          "url": "https://foodrank.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1958 esnaf lokantası tandır, cantık ve bakır tencere yemekleri"
+        },
+        {
+          "title": "Nilüfer Misafir Puanları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1038+ incelemede tazelik ve doyuruculuk"
+        }
+      ],
+      "pros": [
+        "Bakır tencere yemekleriyle birlikte fırın cantık bir arada",
+        "1000+ değerlendirmeli köklü esnaf geleneği"
+      ],
+      "cons": [
+        "Sanayi bölgesi konumu nedeniyle sınırlı akşam atmosferi"
+      ],
+      "uncertainties": [
+        "Bazı tencere yemeklerinin öğlen 15.00 sonrasında bitmesi"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    }
+  ]
+}

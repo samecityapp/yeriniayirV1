@@ -83,6 +83,8 @@ import aydinMerkezSnapshotJson from './regions/aydin-merkez.json';
 import balikesirMerkezSnapshotJson from './regions/balikesir-merkez.json';
 import balikesirAyvalikMerkezSnapshotJson from './regions/balikesir-ayvalik-merkez.json';
 import balikesirAyvalikCundaSnapshotJson from './regions/balikesir-ayvalik-cunda.json';
+import bursaMerkezSnapshotJson from './regions/bursa-merkez.json';
+import canakkaleMerkezSnapshotJson from './regions/canakkale-merkez.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -183,6 +185,10 @@ const BALIKESIR_AYVALIK_MERKEZ_SNAPSHOT =
   balikesirAyvalikMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 const BALIKESIR_AYVALIK_CUNDA_SNAPSHOT =
   balikesirAyvalikCundaSnapshotJson as unknown as V3VerifiedRegionSnapshot;
+const BURSA_MERKEZ_SNAPSHOT =
+  bursaMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
+const CANAKKALE_MERKEZ_SNAPSHOT =
+  canakkaleMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -270,6 +276,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   BALIKESIR_MERKEZ_SNAPSHOT,
   BALIKESIR_AYVALIK_MERKEZ_SNAPSHOT,
   BALIKESIR_AYVALIK_CUNDA_SNAPSHOT,
+  BURSA_MERKEZ_SNAPSHOT,
+  CANAKKALE_MERKEZ_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -1050,6 +1058,32 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   paterica: BALIKESIR_AYVALIK_CUNDA_SNAPSHOT,
   'cataltepe-cunda': BALIKESIR_AYVALIK_CUNDA_SNAPSHOT,
   'cunda-sahil': BALIKESIR_AYVALIK_CUNDA_SNAPSHOT,
+  'bursa-merkez': BURSA_MERKEZ_SNAPSHOT,
+  bursa: BURSA_MERKEZ_SNAPSHOT,
+  osmangazi: BURSA_MERKEZ_SNAPSHOT,
+  nilufer: BURSA_MERKEZ_SNAPSHOT,
+  'nilufer-bursa': BURSA_MERKEZ_SNAPSHOT,
+  'yildirim-bursa': BURSA_MERKEZ_SNAPSHOT,
+  'tophane-bursa': BURSA_MERKEZ_SNAPSHOT,
+  'heykel-bursa': BURSA_MERKEZ_SNAPSHOT,
+  'kayhan-carsisi': BURSA_MERKEZ_SNAPSHOT,
+  cekirge: BURSA_MERKEZ_SNAPSHOT,
+  ozluce: BURSA_MERKEZ_SNAPSHOT,
+  'fsm-bulvari': BURSA_MERKEZ_SNAPSHOT,
+  podyumpark: BURSA_MERKEZ_SNAPSHOT,
+  'balat-bursa': BURSA_MERKEZ_SNAPSHOT,
+  setbasi: BURSA_MERKEZ_SNAPSHOT,
+  'canakkale-merkez': CANAKKALE_MERKEZ_SNAPSHOT,
+  canakkale: CANAKKALE_MERKEZ_SNAPSHOT,
+  'kepez-canakkale': CANAKKALE_MERKEZ_SNAPSHOT,
+  'canakkale-kordon': CANAKKALE_MERKEZ_SNAPSHOT,
+  'aynali-carsi': CANAKKALE_MERKEZ_SNAPSHOT,
+  cevatpasa: CANAKKALE_MERKEZ_SNAPSHOT,
+  'kemalpasa-canakkale': CANAKKALE_MERKEZ_SNAPSHOT,
+  'ismetpasa-canakkale': CANAKKALE_MERKEZ_SNAPSHOT,
+  'barbaros-canakkale': CANAKKALE_MERKEZ_SNAPSHOT,
+  dardanos: CANAKKALE_MERKEZ_SNAPSHOT,
+  'guzelyali-canakkale': CANAKKALE_MERKEZ_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {

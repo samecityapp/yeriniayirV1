@@ -707,6 +707,15 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'dr. kolçak',
   'dr kolcak',
   'dr. kolcak',
+  'house of b',
+  'the north shield',
+  'the north pizza',
+  'crespo burger',
+  'the coffee factory',
+  'petrov coffee',
+  'helvacı ali',
+  'helvaci ali',
+  'ercan burger',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([

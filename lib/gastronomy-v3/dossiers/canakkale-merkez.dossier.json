@@ -1,0 +1,2204 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "canakkale-merkez",
+  "displayName": "Çanakkale Merkez (Kordon & Kepez)",
+  "verifiedAt": "2026-11-18T08:37:55.045Z",
+  "selectedCount": 31,
+  "rejectedControls": [
+    {
+      "id": "ctrl-ck-north-pizza-chain",
+      "resolvedName": "THE NORTH PİZZA",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ck-crespo-burger-chain",
+      "resolvedName": "Crespo Burger Argentina Çanakkale",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ck-coffee-factory-chain",
+      "resolvedName": "The Coffee Factory",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ck-chemex-coffee-chain",
+      "resolvedName": "Chemex Coffee Çanakkale",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ck-helvaci-ali-chain",
+      "resolvedName": "Helvacı Ali",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ck-starbucks-akol-chain",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ck-dominos-cevatpasa-chain",
+      "resolvedName": "Domino's Pizza Çanakkale",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ck-ohannes-burger-chain",
+      "resolvedName": "Ohannes Burger Çanakkale",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ck-babalik-peynirhelva-purity",
+      "resolvedName": "BABALIK TEKİN PEYNİR HELVACISI",
+      "reason": "kahve_category_not_coffee_specialist:dessert_restaurant"
+    },
+    {
+      "id": "ctrl-ck-flag-bakes-purity",
+      "resolvedName": "Flag Bakes & Coffee",
+      "reason": "kahve_category_not_coffee_specialist:pastry_shop"
+    },
+    {
+      "id": "ctrl-ck-kilitbahir-eceabat-outside",
+      "resolvedName": "Kilitbahir Kale Mola Kafe",
+      "reason": "outside_strict_neighborhood:İlçe uyuşmazlığı (beklenen: Çanakkale Merkez/Merkez/Kepez)"
+    },
+    {
+      "id": "ctrl-ck-gelibolu-sardalya-outside",
+      "resolvedName": "Gelibolu sardalya",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Kemalpaşa/Kemalpasa/Mustafa Kemal Paşa/Cevatpaşa/Cevat Paşa/Cevatpasa/İsmetpaşa/Ismetpasa/Barbaros/Fevzipaşa/Fevzipasa/Namık Kemal/Namik Kemal/Esenler/Kepez/Hamidiye/Cumhuriyet/Boğazkent/Bogazkent, adres: Alaeddin, Eski Ptt Cd. No:2, 17500 Gelibolu/Çanakkale)"
+    },
+    {
+      "id": "ctrl-ck-hektor-erenkoy-outside",
+      "resolvedName": "Hektor Şarap Evi",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Kemalpaşa/Kemalpasa/Mustafa Kemal Paşa/Cevatpaşa/Cevat Paşa/Cevatpasa/İsmetpaşa/Ismetpasa/Barbaros/Fevzipaşa/Fevzipasa/Namık Kemal/Namik Kemal/Esenler/Kepez/Hamidiye/Cumhuriyet/Boğazkent/Bogazkent, adres: Merkez, 18 Mart Sk. No:77, 17100 Erenköy/Çanakkale Merkez/Çanakkale)"
+    },
+    {
+      "id": "ctrl-ck-sahil-ayvacik-outside",
+      "resolvedName": "Sahil Cafe Restaurant Beach",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Kemalpaşa/Kemalpasa/Mustafa Kemal Paşa/Cevatpaşa/Cevat Paşa/Cevatpasa/İsmetpaşa/Ismetpasa/Barbaros/Fevzipaşa/Fevzipasa/Namık Kemal/Namik Kemal/Esenler/Kepez/Hamidiye/Cumhuriyet/Boğazkent/Bogazkent, adres: Sokakağzı, 17860 Koyunevi/Ayvacık/Çanakkale)"
+    },
+    {
+      "id": "ctrl-ck-sayka-balik-low",
+      "resolvedName": "Şayka Restaurant",
+      "reason": "below_quality_threshold:★4.3(1254)"
+    },
+    {
+      "id": "ctrl-ck-seaside-low",
+      "resolvedName": "SEA SIDE RESTAURANT",
+      "reason": "below_quality_threshold:★4.3(393)"
+    },
+    {
+      "id": "ctrl-ck-maruf-kahvalti-low",
+      "resolvedName": "Maruf Kahvaltı Çanakkale",
+      "reason": "below_quality_threshold:★4.3(2045)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "canakkale-lancora",
+      "categoryId": "pizza",
+      "resolvedName": "L'ancora",
+      "branchName": "Cevat Paşa, Mehmet Akif Ersoy Cd. no: 4/1, 17000 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJ91sQJhWpsRQRTrrGVcid2G8",
+      "coordinates": {
+        "lat": 40.152603299999996,
+        "lng": 26.4090755
+      },
+      "rating": 4.7,
+      "userRatingCount": 618,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8059365016937609806",
+      "recommendedPrimary": [
+        "Margherita & Buffolina Pizza",
+        "Porto (Gelibolu Sardalye Ançuezli Pizza)"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Butik Şarap & Caz Eşliğinde İtalyan Masası",
+          "note": "Yemek deneyimini tamamlayan özenli şarap seçkisi ve ferah caz atmosferi öne çıkar.",
+          "proof": "TheMagger Çanakkale gastronomi yazısı ve Menum.co kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Şık tasarım detaylarıyla aydınlık iç salon ve Kordon yakını sokak oturumu",
+        "crowdAndNoise": "Akşam yemeklerinde özellikle çiftler ve genç profesyonellerle yüksek doluluk",
+        "disadvantage": "Hafta sonu akşamları erken dolabildiği için masa beklememek adına erken gidilmeli",
+        "transit": "Cevatpaşa Mahallesi Mehmet Akif Ersoy Caddesi No:4/1, İskele Kordon’dan 4 dk yürüyüş"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "TheMagger Çanakkale Seçkisi",
+          "url": "https://themagger.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Torino unu, San Marzano domatesi ve manda burrata doğrulaması"
+        },
+        {
+          "title": "Menum & Ziyaretçi Puanları",
+          "url": "https://menum.co/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "618 değerlendirmede 4.7 puan istikrarı"
+        }
+      ],
+      "pros": [
+        "Şehir merkezindeki öncü otantik Napoli pizza adresi",
+        "Yerel ançuez ve manda peyniri dokunuşu"
+      ],
+      "cons": [
+        "Yoğun akşam saatlerinde kısa bekleme"
+      ],
+      "uncertainties": [
+        "Sezonsal ada-merkez arası malzeme temin farklılıkları"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-yeni-pizzeria",
+      "categoryId": "pizza",
+      "resolvedName": "Yeni Pizzeria",
+      "branchName": "Cevatpaşa Mah, Ordu Sk. No:21/1, 17020 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJeao3npmpsRQRH4_91UPQjHU",
+      "coordinates": {
+        "lat": 40.1523574,
+        "lng": 26.408523499999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 464,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8470373988948610847",
+      "recommendedPrimary": [
+        "Dört Peynirli (Mozzarella, Gorgonzola & Gravyer) Pizza",
+        "Taş Fırın Margherita"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kars Gravyerli & İtalyan Peynirli Özel Harmanlar",
+          "note": "Anadolu gravyeri ile İtalyan peynirlerinin buluştuğu imza reçeteler sıkça vurgulanır.",
+          "proof": "Restoranım menüsü ve Cevatpaşa harita kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sakin mahalle ara sokağında sıcak iç salon ve birkaç sokak önü masası",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde bölge sakinlerinin tercih ettiği dengeli yoğunluk",
+        "disadvantage": "Küçük ara sokak dükkanı olduğu için kalabalık gruplara uygun geniş masa sayısı azdır",
+        "transit": "Cevatpaşa Mahallesi Ordu Sokak No:21/1, İskele ve Cumhuriyet Bulvarı yakını"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Restoranım Çanakkale Rehberi",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taş fırın ince hamur ve gravyer/gorgonzola peynir kombinasyonları"
+        },
+        {
+          "title": "Cevatpaşa Yerel Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "464 değerlendirmede 4.8 istikrarlı puan"
+        }
+      ],
+      "pros": [
+        "464 değerlendirmede 4.8 gibi güçlü yerel sadakat",
+        "Anadolu ve İtalyan peynir dengesi"
+      ],
+      "cons": [
+        "Sınırlı masa kapasitesi"
+      ],
+      "uncertainties": [
+        "Yoğun paket siparişi anlarında fırın çıkış süresi"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-culto-pizzeria-caffe",
+      "categoryId": "pizza",
+      "resolvedName": "Culto Pizzeria Caffe",
+      "branchName": "Kemalpaşa, 17000 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJz2GaRACpsRQRpixGxVlKUfE",
+      "coordinates": {
+        "lat": 40.1481454,
+        "lng": 26.4028609
+      },
+      "rating": 4.8,
+      "userRatingCount": 210,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17388761385676450982",
+      "recommendedPrimary": [
+        "Ezine Peynirli & Yerel Domatesli Pizza",
+        "Culto Karışık Ekşi Maya Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Nitelikli Kahve & Ev Yapımı Tatlı Eşliği",
+          "note": "Pizza sonrası aynı mekanda sunulan taze espresso bazlı kahveler mola konforu sağlar.",
+          "proof": "Çanakkale’yi Seviyoruz rehberi ve Yemeksepeti kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî Kemalpaşa ara sokağında sıcak iç oturum ve küçük ön masalar",
+        "crowdAndNoise": "Öğleden sonra kahve-pizza buluşmalarıyla sakin ve samimi akış",
+        "disadvantage": "Dar ara sokakta yer aldığı için araç parkı yerine yürüyerek ulaşım çok daha kolaydır",
+        "transit": "Kemalpaşa Mahallesi Tarla Sokak, Saat Kulesi ve Deniz Müzesi’ne 4 dk yürüyüş"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Çanakkale’yi Seviyoruz Rehberi",
+          "url": "https://canakkaleyiseviyoruz.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ekşi maya hamur ile Ezine peyniri uyumu ve tek şube doğrulaması"
+        },
+        {
+          "title": "Yemeksepeti & Yerel Değerlendirmeler",
+          "url": "https://yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "210 değerlendirmede 4.8 puan ve yerel ürün vurgusu"
+        }
+      ],
+      "pros": [
+        "Ekşi maya hamura Ezine peyniri dokunuşu",
+        "4.8 puan yüksek memnuniyet"
+      ],
+      "cons": [
+        "Dar sokak dokusu nedeniyle sınırlı otopark"
+      ],
+      "uncertainties": [
+        "Hamurun günlük sınırlı sayıda mayalanması"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-1890-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "1890 burger",
+      "branchName": "Kemalpaşa, İnönü Cd. no:122/1, 17100 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJk0DTtkipsRQR7DtY_YWhuag",
+      "coordinates": {
+        "lat": 40.1462593,
+        "lng": 26.403901899999997
+      },
+      "rating": 4.8,
+      "userRatingCount": 546,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12157926265916505068",
+      "recommendedPrimary": [
+        "1890 Özel Burger",
+        "Mantar Soslu Double Cheeseburger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Patates Kızartması & Kuru Etli Özel Sandviç",
+          "note": "Burger menülerin dışında dana rozbifli ve kuru etli kulüp sandviç alternatifleri düzenli talep görür.",
+          "proof": "Eniyitat incelemesi ve Restoranım Çanakkale verileri"
+        }
+      ],
+      "suitability": {
+        "seating": "İnönü Caddesi üzerinde düzenli, modern iç salon ve sokak önü masalar",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde Çanakkale merkezinin en istikrarlı dolu burgercilerinden",
+        "disadvantage": "Yoğun akşam saatlerinde hem paket hem salon talebiyle bekleme süresi uzayabiliyor",
+        "transit": "Kemalpaşa Mahallesi İnönü Caddesi No:122/1, Aynalı Çarşı aksına yürüme mesafesinde"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Eniyitat Çanakkale Seçkisi",
+          "url": "https://eniyitat.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Brioche ekmeği, el yapımı köfte ve imza sos incelemesi"
+        },
+        {
+          "title": "Çanakkale Kalem & Topluluk Puanları",
+          "url": "https://canakkalekalem.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "546 değerlendirmede 4.8 yüksek memnuniyet"
+        }
+      ],
+      "pros": [
+        "546 değerlendirmede 4.8 puan istikrarı",
+        "Yumuşak brioche ve özgün 1890 sosu"
+      ],
+      "cons": [
+        "Yoğun saatlerde masa ve mutfak beklemesi"
+      ],
+      "uncertainties": [
+        "Özel rozbif stoklarının geç saatlerde tükenebilmesi"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-cafe-25-metrekare",
+      "categoryId": "hamburger",
+      "resolvedName": "Cafe 25 Metrekare",
+      "branchName": "Cevat Paşa, Güzel Sk. no:6 17000, 17000 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJ85-Yy9-psRQRfISLheWXP1s",
+      "coordinates": {
+        "lat": 40.1562786,
+        "lng": 26.4140756
+      },
+      "rating": 4.7,
+      "userRatingCount": 374,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6575140993028031612",
+      "recommendedPrimary": [
+        "Füme Burger",
+        "Antrikotlu Gurme Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kuru Domatesli Özel Sos & Kasap Köfte Seçeneği",
+          "note": "Klasik cheddarlı burgerlerin yanında kuru domates soslu özel dokunuş müdavimlerce öne çıkarılır.",
+          "proof": "Masaport Çanakkale rehberi ve Cevatpaşa harita kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt, samimi küçük iç dükkan ve birkaç sokak masası",
+        "crowdAndNoise": "Akşam yemeklerinde müdavimler ve öğrencilerle hızla dolan masa düzeni",
+        "disadvantage": "Küçük metrekareli mekan olduğu için kalabalık grupların oturması güçtür",
+        "transit": "Cevatpaşa Mahallesi Güzel Sokak No:6, Halk Bahçesi kuzey yürüyüş aksında"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Masaport Çanakkale Rehberi",
+          "url": "https://masaport.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Füme ve antrikot burger menüsü ile butik dükkan konsepti"
+        },
+        {
+          "title": "Yemeksepeti & Cevatpaşa Yorumları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "374 değerlendirmede 4.7 puan istikrarı"
+        }
+      ],
+      "pros": [
+        "Köklü ve samimi mahalle burgercisi atmosferi",
+        "Zengin füme ve kuru domates sos seçenekleri"
+      ],
+      "cons": [
+        "Çok küçük salon alanı"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamlarında içeride yer bulmanın zorlaşması"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-brown-swiss-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Brown Swiss Burger&Coffee",
+      "branchName": "Kemalpaşa, Molla Yakup Sk. no:15 /a, 17010 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJi4xi87CpsRQRk9ArMs995vo",
+      "coordinates": {
+        "lat": 40.1477767,
+        "lng": 26.402403399999997
+      },
+      "rating": 4.6,
+      "userRatingCount": 138,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18079276082978869395",
+      "recommendedPrimary": [
+        "Texas Smoke Burger",
+        "Klasik Brown Swiss Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kahve & El Yapımı Sos Eşlikçisi",
+          "note": "Burger öğünü dışında kendi kahve çekirdeği servisi ve füme aromalı sosları sıkça övülür.",
+          "proof": "Restoranım Çanakkale ve Yemeksepeti kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî Kemalpaşa ara sokağında sakin iç mekan oturumu",
+        "crowdAndNoise": "Merkezdeki gürültüden biraz uzakta rahat burger yemek isteyenlerin tercihi",
+        "disadvantage": "Dar tarihî sokakta kaldığı için araç girişi sınırlıdır",
+        "transit": "Kemalpaşa Mahallesi Molla Yakup Sokak No:15/A, Çarşı içi yaya bölgesi"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Restoranım & Online Menü Kayıtları",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Texas Smoke burger ve malzeme kalibrasyonu"
+        },
+        {
+          "title": "Kemalpaşa Ziyaretçi Puanları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "138 değerlendirmede 4.6 istikrarlı puan"
+        }
+      ],
+      "pros": [
+        "İsli füme burger lezzeti",
+        "Merkez çarşının sakin bir yan sokağında konum"
+      ],
+      "cons": [
+        "Küçük sokak dokusu nedeniyle sınırlı otopark"
+      ],
+      "uncertainties": [
+        "Günlük öğle ve akşam arası yoğunluk farkları"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-altiustu-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "AltıüstüBurger",
+      "branchName": "Kayserili Ahmet paşa cad, Cevat Paşa, 2. Bahçe Sk. 3 B, 17000 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJgzSpGJGpsRQRwUi174g9teU",
+      "coordinates": {
+        "lat": 40.156161,
+        "lng": 26.410266999999997
+      },
+      "rating": 4.4,
+      "userRatingCount": 560,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.altiustuburger.com/",
+      "mapsUri": "https://maps.google.com/?cid=16552203663816607937",
+      "recommendedPrimary": [
+        "Altıüstü Özel Cheddar Soslu Burger",
+        "Kibrit Patatesli Dana Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kıtır Kibrit Patates & Sıcak Cheddar Sosu",
+          "note": "Burger içi kıtır kibrit patates ve ekstra cheddar sos sunumuyla öğrenci ve genç kitlenin favorisidir.",
+          "proof": "Restoranım Çanakkale ve Masaport verileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kayserili Ahmet Paşa aksına yakın genç ve enerjik salon düzeni",
+        "crowdAndNoise": "Akşam yemeklerinde kalabalık arkadaş gruplarıyla hareketli",
+        "disadvantage": "Yoğun akşam saatlerinde yüksek ses düzeyi ve kısa servis beklemesi görülebiliyor",
+        "transit": "Cevatpaşa Mahallesi 2. Bahçe Sokak No:3/B, Kordon Kayserili Ahmet Paşa Cd. paraleli"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Masaport Çanakkale Seçkisi",
+          "url": "https://masaport.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "El yapımı ekmek, kibrit patates ve şırıngalı cheddar sunumu"
+        },
+        {
+          "title": "Cevatpaşa Topluluk Puanları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "560 değerlendirmede 4.4 puan ve porsiyon doyuruculuğu"
+        }
+      ],
+      "pros": [
+        "560 değerlendirmeli yüksek bilinirlik",
+        "Kordon’a paralel rahat ulaşım"
+      ],
+      "cons": [
+        "Genç ve dinamik kitle nedeniyle yoğun saatlerde gürültülü ortam"
+      ],
+      "uncertainties": [
+        "Akşam paket servis yoğunluğunda masa servis hızı"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-the-nork-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "The Nork Coffee",
+      "branchName": "Barbaros mh. İğdelik sk, yeni, kordon mevki no:27/1, 17100 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJHaasvE2psRQRe1G5cm9p17E",
+      "coordinates": {
+        "lat": 40.1332977,
+        "lng": 26.40569
+      },
+      "rating": 4.6,
+      "userRatingCount": 283,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/thenorkcoffee/",
+      "mapsUri": "https://maps.google.com/?cid=12814827192093069691",
+      "recommendedPrimary": [
+        "Flat White & Filtre Kahve",
+        "Iced Americano"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fıstık Rüyası & Yaban Mersinli Kek Eşlikçileri",
+          "note": "Çalışma ve kahve molalarına taze havuçlu kek, sandviç ve yaban mersinli pasta dilimleri eşlik eder.",
+          "proof": "Nork resmi menü kayıtları ve RestaurantGuru değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Priz erişimli çalışma dostu iç masalar ve Yeni Kordon esintili açık alan",
+        "crowdAndNoise": "Gündüz çalışma saatlerinde düzenli ama rahatsız etmeyen sakin tempo",
+        "disadvantage": "Hafta sonu güzel havalarda Yeni Kordon yürüyüş kalabalığıyla dış masalar çabuk dolar",
+        "transit": "Barbaros Mahallesi İğdelik Sokak No:27/1, Yeni Kordon sahil yürüyüş yoluna 1 dk"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Yeni Kordon Mekan Rehberi",
+          "url": "https://kasif.ai/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Smart working cafe düzeni, espresso ve soğuk kahve menüsü"
+        },
+        {
+          "title": "Barbaros Ziyaretçi İncelemeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "283 değerlendirmede 4.6 istikrarlı puan"
+        }
+      ],
+      "pros": [
+        "Yeni Kordon’da rahat çalışma imkanı sunan tek şubeli kahveci",
+        "Dengeli espresso reçeteleri"
+      ],
+      "cons": [
+        "Hafta sonu bahçe masası doluluğu"
+      ],
+      "uncertainties": [
+        "Yaz akşamlarında Yeni Kordon yoğunluğuna bağlı ortam sesi"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-heredot-kahve",
+      "categoryId": "kahve",
+      "resolvedName": "Heredot Kahve",
+      "branchName": "Kemalpaşa, Kemalyeri Sk. :40 /B, 17010 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJxYHdd1OpsRQRN7-IRN1WKfw",
+      "coordinates": {
+        "lat": 40.1486843,
+        "lng": 26.4024394
+      },
+      "rating": 5,
+      "userRatingCount": 108,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18170149679940550455",
+      "recommendedPrimary": [
+        "Günlük Taze Çekirdek Filtre Kahve",
+        "Özel Türk Kahvesi Çeşitleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Aromalı Geleneksel Türk Kahvesi Servisi",
+          "note": "Üçüncü dalga demlemelerin yanında özgün Türk kahvesi sunumuyla müdavimlerin beğenisini toplar.",
+          "proof": "Menü Haritası Çanakkale ve Kemalpaşa harita kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî ara sokakta samimi küçük salon ve sokak önü masaları",
+        "crowdAndNoise": "Gündüz ve akşamüstü sakin kahve sohbeti arayan yerel müdavim profili",
+        "disadvantage": "Küçük ara sokak dükkanı olduğundan geniş kalabalık gruplar için masa birleştirme kısıtlıdır",
+        "transit": "Kemalpaşa Mahallesi Kemalyeri Sokak No:40/B, İskele Meydanı’na 3 dk yürüyüş"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Menü Haritası Çanakkale",
+          "url": "https://menuharitasi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kemalyeri Sokak konumu, aromalı Türk kahvesi ve taze demlemeler"
+        },
+        {
+          "title": "Çanakkale Topluluk Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "108 değerlendirmede 5.0 seviyesinde yüksek memnuniyet teyidi"
+        }
+      ],
+      "pros": [
+        "Ara sokak huzurunda 5.0 gibi yüksek kullanıcı takdiri",
+        "Hem filtre kahve hem özel Türk kahvesi odağı"
+      ],
+      "cons": [
+        "Küçük dükkan ölçeği"
+      ],
+      "uncertainties": [
+        "Hafta sonları yoğun saatlerde küçük sokak önünün hızlı dolması"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-benefico-coffee-house",
+      "categoryId": "kahve",
+      "resolvedName": "Benefico Coffee House",
+      "branchName": "Hamidiye mah. Aziz Sancar Cad. No:2K Kırlangıç Vadisi Kepez, Hamidiye, 17110 Kepez/Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJL64VOwCrsRQRK6H-CWe9z0g",
+      "coordinates": {
+        "lat": 40.097759499999995,
+        "lng": 26.4186458
+      },
+      "rating": 4.9,
+      "userRatingCount": 84,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/beneficocoffeehouse/",
+      "mapsUri": "https://maps.google.com/?cid=5246620341156880683",
+      "recommendedPrimary": [
+        "Flat White & Filtre Kahve",
+        "Caramel / White Chocolate Mocha"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli & San Sebastian Ev Yapımı Cheesecake",
+          "note": "Kahve eşliğinde ev yapımı tahinli cheesecake dilimi ziyaretçilerin ortak tavsiyesidir.",
+          "proof": "Kepez topluluk değerlendirmeleri ve Yemeksepeti menü verileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ferah, sessiz ve çalışma dostu iç salon ile açık ön oturum",
+        "crowdAndNoise": "Kepez sakinleri ve sessiz çalışma ortamı arayan öğrencilerle huzurlu atmosfer",
+        "disadvantage": "İskele/Kordon merkezine araçla veya Kepez dolmuşlarıyla yaklaşık 10–15 dakika mesafededir",
+        "transit": "Hamidiye Mahallesi Aziz Sancar Caddesi No:2K, Kırlangıç Vadisi, Kepez"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Kepez Ziyaretçi Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "84 değerlendirmede 4.9 puan, temizlik ve tahinli cheesecake övgüleri"
+        },
+        {
+          "title": "Yemeksepeti Çanakkale Menü Kaydı",
+          "url": "https://yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kahve çeşitliliği ve ev yapımı cheesecake doğrulaması"
+        }
+      ],
+      "pros": [
+        "4.9 puanla Kepez’in en beğenilen sakin kahvecisi",
+        "Ev yapımı tahinli cheesecake uyumu"
+      ],
+      "cons": [
+        "Çanakkale merkez çarşıdan dolmuş/araç gerektirmesi"
+      ],
+      "uncertainties": [
+        "Ev yapımı tatlı tepsisinin gün sonuna doğru azalması"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-adda-coffee-more",
+      "categoryId": "kahve",
+      "resolvedName": "ADDA COFFEE & MORE",
+      "branchName": "Cevat Paşa, Mehmetçik Blv. NO:13, 17000 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJOexTnbGpsRQR0N8LYFwOZ-c",
+      "coordinates": {
+        "lat": 40.150772599999996,
+        "lng": 26.404599299999997
+      },
+      "rating": 4.4,
+      "userRatingCount": 130,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16674311935273721808",
+      "recommendedPrimary": [
+        "Iced Latte & Americano",
+        "Cortado / Flat White"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Taze Kek & Patiseri Eşliği",
+          "note": "Kahvelerin yanında sunulan ev yapımı tatlı dilimleri öğleden sonra sohbetlerine eşlik eder.",
+          "proof": "Cevatpaşa mekan değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Bulvar cepheli açık hava masaları ve konforlu iç salon",
+        "crowdAndNoise": "Gün boyu çevre mahalle sakinleri ve merkez yürüyüşçüleriyle keyifli tempo",
+        "disadvantage": "Bulvar üzerinde araç trafiği sesine açık ön masalara sahip",
+        "transit": "Cevatpaşa Mahallesi Mehmetçik Bulvarı No:13, İskele ve Cevatpaşa Meydanı yakını"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Çanakkale Merkez Mekan Yorumları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "130 değerlendirmede kahve kalitesi ve evcil hayvan dostu ortam"
+        },
+        {
+          "title": "Cevatpaşa Kafe Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Merkezi Mehmetçik Bulvarı kahve menüsü doğrulaması"
+        }
+      ],
+      "pros": [
+        "Evcil hayvan dostu rahat ambiyans",
+        "Merkezi bulvar konumunda pratik erişim"
+      ],
+      "cons": [
+        "Ana cadde kenarında yol sesi duyulabilmesi"
+      ],
+      "uncertainties": [
+        "Hafta sonu bahçe masalarında yer bulma süresi"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-bertha",
+      "categoryId": "date",
+      "resolvedName": "Bertha",
+      "branchName": "Barbaros, Atatürk Cd. No:350/24, 17020 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJl2BMrsursRQR13Hrde6bwtQ",
+      "coordinates": {
+        "lat": 40.114208,
+        "lng": 26.407714
+      },
+      "rating": 4.8,
+      "userRatingCount": 84,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://berthatable.com/",
+      "mapsUri": "https://maps.google.com/?cid=15330987530005475799",
+      "recommendedPrimary": [
+        "Ateş Üstünde Kuzu / Et Tabakları",
+        "Yerel Domates & Taze Ege Başlangıçları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kuzey Ege Şarap Kavı & İmza Kokteyller (Caz Akşamları)",
+          "note": "Seçkin bölgesel şarap listesi ve belirli gecelerdeki caz performansı date atmosferini güçlendirir.",
+          "proof": "Müdavim gastronomi rehberi ve Bertha resmi menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Zarif aydınlatmalı modern fine-dining salonu ve açık Gastroport teras oturumu",
+        "crowdAndNoise": "Akşam saatlerinde özel kutlamalar ve romantik yemeklerle şık ve sakin atmosfer",
+        "disadvantage": "Fine-dining düzeyi nedeniyle şehir ortalamasının üzerinde bütçe gerektirir ve rezervasyon şarttır",
+        "transit": "Barbaros Mahallesi Atatürk Caddesi No:350/24 Gastroport yaşam alanı içi, Yeni Kordon devamında"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Müdavim Çanakkale Gastronomi Rehberi",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Osman Sezener danışmanlığı, Kuzey Ege menüsü ve şarap kavı"
+        },
+        {
+          "title": "Ristivo Guide & Yenir.be Seçkisi",
+          "url": "https://ristivoguide.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Casual fine dining standartları ve 4.8 yüksek memnuniyet"
+        }
+      ],
+      "pros": [
+        "Şef danışmanlıklı çağdaş Kuzey Ege mutfağı",
+        "Zengin Kuzey Ege bağ şarapları ve kokteyl barı"
+      ],
+      "cons": [
+        "Üst segment fiyat seviyesi ve hafta sonu rezervasyon gereksinimi"
+      ],
+      "uncertainties": [
+        "Caz/DJ programı olan akşamların önceden takip edilmesi gerekliliği"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-bizim-yaka-restaurant",
+      "categoryId": "date",
+      "resolvedName": "Bizim Yaka Restaurant",
+      "branchName": "Barbaros, Atatürk Cd. No:318/36, 17020 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJRdudHeOpsRQRjYxBL1J4LhI",
+      "coordinates": {
+        "lat": 40.122931099999995,
+        "lng": 26.409404499999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 477,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://bizimyakarestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=1310116835986869389",
+      "recommendedPrimary": [
+        "Izgara Ahtapot & Kalamar Tava",
+        "Kuzu Tandır & Ege Otları Mezeleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kaya Koruğu, Hamsi Füme & Mütebbel Meze Tepsisi",
+          "note": "Ana yemek öncesi Kuzey Ege otları ve isli hamsi füme mezeleri oldukça beğenilir.",
+          "proof": "Bizim Yaka resmi menü ve Wanderlog Çanakkale incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Deniz cepheli teras/bahçe masaları ve ferah kapalı cam salon",
+        "crowdAndNoise": "Özellikle gün batımı ve akşam yemeklerinde çiftler ile ailelerce yoğun tercih edilir",
+        "disadvantage": "Hafta sonları gün batımı saatlerinde deniz kenarı ön sıra masalar rezervasyonsuz doludur",
+        "transit": "Barbaros Mahallesi Atatürk Caddesi No:318/36, Yeni Kordon sahil yürüyüşü üzerinde"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Bizim Yaka Resmi Menü",
+          "url": "https://bizimyakarestaurant.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ahtapot, hamsi füme, kaya koruğu ve kuzu tandır menüsü"
+        },
+        {
+          "title": "Wanderlog Çanakkale Yorumları",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "477 değerlendirmede 4.7 puan ve sahil manzarası övgüsü"
+        }
+      ],
+      "pros": [
+        "Deniz manzaralı konumda hem et hem balık alternatifleri",
+        "477+ değerlendirmede 4.7 yüksek memnuniyet"
+      ],
+      "cons": [
+        "Ön sıra sahil masaları için önceden rezervasyon zorunluluğu"
+      ],
+      "uncertainties": [
+        "Rüzgarlı havalarda dış teras kullanımının sınırlanması"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-pasa-mudavim-liman",
+      "categoryId": "date",
+      "resolvedName": "Paşa Müdavim Liman",
+      "branchName": "Kemalpaşa, Eski Balıkhane Sk. No: 7/1, 17000 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJA_BUPaKpsRQRmIc7Ic_yFIA",
+      "coordinates": {
+        "lat": 40.1499259,
+        "lng": 26.401668899999997
+      },
+      "rating": 4.6,
+      "userRatingCount": 275,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9229268507818690456",
+      "recommendedPrimary": [
+        "Ekşili Levrek Buğulama",
+        "Ev Yapımı Lakerda & Balık Pastırması"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Balık Pastırması & Soğuk Meze Dolabı Seçkisi",
+          "note": "Masaya tepsiyle gelen soğuk meze seçkisi ve ince dilim balık pastırması meyhane sofrasının yıldızıdır.",
+          "proof": "Restoranım Çanakkale ve Liman mekan kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Liman sokak dokusunda taş duvarlı sıcak iç salon ve açık sokak masaları",
+        "crowdAndNoise": "Akşam saatlerinde uzun sohbetli akşam yemekleri için samimi kalabalık",
+        "disadvantage": "Tarihî dar sokakta yan masalarla akustik yakınlığı akşam ilerledikçe artabilir",
+        "transit": "Kemalpaşa Mahallesi Eski Balıkhane Sokak No:7/1, Feribot İskelesi ve Kordon yakını"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Restoranım Liman İncelemesi",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Lakerda, balık pastırması ve ekşili buğulama levrek menü teyidi"
+        },
+        {
+          "title": "Çanakkale Merkez Harita Yorumları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "275 değerlendirmede 4.6 puan ve servis kalitesi"
+        }
+      ],
+      "pros": [
+        "Liman içinde özgün deniz ürünleri mezeleri",
+        "Ekşili buğulama gibi özenli sıcak balık yemekleri"
+      ],
+      "cons": [
+        "Hafta sonu canlı dar sokak akustiği"
+      ],
+      "uncertainties": [
+        "Mevsime bağlı günlük taze balık bulunurluğu"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-bob-the-pasta-factory",
+      "categoryId": "date",
+      "resolvedName": "Bob the Pasta Factory",
+      "branchName": "Kemalpaşa Mahallesi Eski Mahkeme Sokak Sekure, Kemalpaşa, Apartmanı No 21/2, 17100 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJlRtW-r2psRQRM1fMwyH_dfI",
+      "coordinates": {
+        "lat": 40.1480895,
+        "lng": 26.4016314
+      },
+      "rating": 4.4,
+      "userRatingCount": 373,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17471150849937659699",
+      "recommendedPrimary": [
+        "Parmesan Tekerinde Kremalı Taze Makarna",
+        "4 Peynirli / Ispanaklı Ravioli"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mantarlı & Ispanaklı El Yapımı Ravioli",
+          "note": "Teker parmesan şovunun yanında dolgun harçlı el yapımı ravioliler akşam tercihlerinde öne çıkar.",
+          "proof": "Nearby-Res ve Kemalpaşa yemek incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak aydınlatmalı samimi taş sokak bistro oturumu",
+        "crowdAndNoise": "Akşam saatlerinde özellikle ikili masalarda canlı ve keyifli doluluk",
+        "disadvantage": "Pizza yerine salt makarna/İtalyan bistro odaklı bir menüye sahiptir",
+        "transit": "Kemalpaşa Mahallesi Eski Mahkeme Sokak No:21/2, Saat Kulesi ve Aynalı Çarşı’ya 4 dk"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Çanakkale Makarna & Bistro Rehberi",
+          "url": "https://nearby-res.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Parmesan tekerinde harmanlanan taze makarna ve ravioli menüsü"
+        },
+        {
+          "title": "Kemalpaşa Topluluk Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "373 değerlendirmede 4.4 istikrarlı puan"
+        }
+      ],
+      "pros": [
+        "Çarşı içinde tekerlek parmesan taze makarna deneyimi",
+        "Özenli sunumlu akşam bistro atmosferi"
+      ],
+      "cons": [
+        "Küçük dükkan olması nedeniyle akşam bekleyiş ihtimali"
+      ],
+      "uncertainties": [
+        "Sos ve taze makarna stoklarının yoğun akşamlarda değişimi"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-cream-coffee-kitchen",
+      "categoryId": "kahvalti",
+      "resolvedName": "Cream Coffee & Kitchen",
+      "branchName": "Kepez Sahil, Boğazkent, Zakkum Sk. No:7, 17100 Kepez/Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJby5uSfersRQRfColhmr3zFk",
+      "coordinates": {
+        "lat": 40.1082434,
+        "lng": 26.400135499999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 337,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://creamcoffeekitchen.com/",
+      "mapsUri": "https://maps.google.com/?cid=6470818801513736828",
+      "recommendedPrimary": [
+        "Boğaz Manzaralı Kahvaltı Tabağı",
+        "Eggs Benedict / Avokado Poşe"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Tatlılar & Sabah Espresso Barı",
+          "note": "Kahvaltı sonrası aynı masada taze demlenen kahvelerle kek ve tatlı seçenekleri sunulur.",
+          "proof": "Cream Coffee & Kitchen resmi sitesi ve Wanderlog Kepez kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Deniz gören ferah açık hava bahçesi ve aydınlık modern cam salon",
+        "crowdAndNoise": "Hafta sonu sabahları Kepez sahilinin en popüler kahvaltı noktalarından",
+        "disadvantage": "Güneşli hafta sonu sabahlarında sahil önündeki masalar erken doluyor",
+        "transit": "Boğazkent Mahallesi Zakkum Sokak No:7, Kepez Sahil yürüyüş bandı üzerinde"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Cream Coffee & Kitchen Resmi Sitesi",
+          "url": "https://creamcoffeekitchen.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kepez sahil konumu ve kahvaltı/mutfak konsepti"
+        },
+        {
+          "title": "Wanderlog Çanakkale Kepez Seçkisi",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "337 değerlendirmede 4.7 puan ve deniz manzarası"
+        }
+      ],
+      "pros": [
+        "Deniz manzaralı bahçede 4.7 puanlı modern kahvaltı",
+        "Klasik tabaklar yanında brunch seçenekleri"
+      ],
+      "cons": [
+        "Hafta sonu sahil önü masalarında hızlı doluluk"
+      ],
+      "uncertainties": [
+        "Sezona göre hafta sonu erken saat kuyrukları"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-esnaf-kahvaltisi",
+      "categoryId": "kahvalti",
+      "resolvedName": "Çanakkale Esnaf Kahvaltısı",
+      "branchName": "İsmetpaşa, Demircioğlu Cd. 87/C, 17010 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJs9RM-AmpsRQRbiuv_Le4C0I",
+      "coordinates": {
+        "lat": 40.1459635,
+        "lng": 26.411939699999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 139,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://sites.google.com/view/canakkaleesnafkahvaltisi/ana-sayfa",
+      "mapsUri": "https://maps.google.com/?cid=4759100531604925294",
+      "recommendedPrimary": [
+        "Geleneksel Esnaf Kahvaltı Tabağı",
+        "Sahanda Sucuklu / Peynirli Yumurta"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ezine Peyniri & Sıcak Gözleme/Börek Takviyesi",
+          "note": "Bölge mandıralarından gelen Ezine peyniri ve taze gözlemelerle esnaf usulü doyuruculuk sağlar.",
+          "proof": "İsmetpaşa kahvaltı rehberleri ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Merkez cadde kenarında sade, temiz ve hızlı servis veren esnaf kahvaltı salonu",
+        "crowdAndNoise": "Sabah saatlerinde esnaf, yolcular ve merkez sakinleriyle istikrarlı sirkülasyon",
+        "disadvantage": "Lüks kafe ambiyansı yerine hızlı ve sade geleneksel salon düzenine sahip",
+        "transit": "İsmetpaşa Mahallesi Demircioğlu Caddesi No:87/C, Aynalı Çarşı ve Troya Cd. kesişimi yakını"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Çanakkale Kahvaltı Rehberi",
+          "url": "https://hizmetx.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Geleneksel kahvaltı tabakları ve Demircioğlu Caddesi konumu"
+        },
+        {
+          "title": "İsmetpaşa Ziyaretçi Puanları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "139 değerlendirmede 4.7 puan ve taze malzeme beğenisi"
+        }
+      ],
+      "pros": [
+        "Merkezde 4.7 puanlı sade ve taze kahvaltı",
+        "Hızlı servis ve dengeli porsiyon"
+      ],
+      "cons": [
+        "Sahil manzarası olmayan cadde içi konum"
+      ],
+      "uncertainties": [
+        "Sabah erken saatler dışında öğleden sonra servis saatlerinin daralması"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-nub-kruvasan",
+      "categoryId": "kahvalti",
+      "resolvedName": "Nub Kruvasan",
+      "branchName": "Kemalpaşa, Eski Mahkeme Sk. No:4/A, 17100 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJZwDgxAapsRQRDmfgzc0lOTE",
+      "coordinates": {
+        "lat": 40.1483433,
+        "lng": 26.4010115
+      },
+      "rating": 4.6,
+      "userRatingCount": 86,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3546907747383535374",
+      "recommendedPrimary": [
+        "Tereyağlı Sade / File Bademli Kruvasan",
+        "Tuzlu Peynirli Sandviç Kruvasan"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Küp Kruvasan, Roll & Danish Serisi",
+          "note": "Klasik kruvasanın yanında kremalı küp kruvasan ve meyveli danish çeşitleri gün boyu ilgi görür.",
+          "proof": "Çanakkale Olay haberi ve Yemeksepeti menü verileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî ara sokakta küçük, sıcak hamur kokulu fırın ve birkaç ön masa",
+        "crowdAndNoise": "Sabah kahvesi ve kruvasan eşleşmesi arayanlarla sakin sabah trafiği",
+        "disadvantage": "Serpme sıcak kahvaltı yerine kruvasan ve filtre kahve odaklı hafif bir duraktır",
+        "transit": "Kemalpaşa Mahallesi Eski Mahkeme Sokak No:4/A, Eski Çarşı yaya bölgesi"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Çanakkale Olay Kruvasan Haberi",
+          "url": "https://canakkaleolay.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "%100 tereyağlı tatlı-tuzlu kruvasan ve danish üretimi"
+        },
+        {
+          "title": "Yemeksepeti & Kemalpaşa Puanları",
+          "url": "https://yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "86 değerlendirmede 4.6 puan ve çıtır hamur katmanları"
+        }
+      ],
+      "pros": [
+        "%100 gerçek tereyağıyla günlük çıtır kruvasan üretimi",
+        "Tatlı ve tuzlu geniş çeşitlilik"
+      ],
+      "cons": [
+        "Çok küçük iç oturum kapasitesi"
+      ],
+      "uncertainties": [
+        "Özel dolgulu küp kruvasanların öğleden önce tükenebilmesi"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-limon-kepez",
+      "categoryId": "kahvalti",
+      "resolvedName": "Çanakkale Limon",
+      "branchName": "Boğazkent, 8. Cd. No:10, 17100 Kepez/Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJLUPiCOOpsRQRfNmerEpaAGM",
+      "coordinates": {
+        "lat": 40.107425299999996,
+        "lng": 26.400820699999997
+      },
+      "rating": 4.4,
+      "userRatingCount": 1030,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.canakkalelimon.com/",
+      "mapsUri": "https://maps.google.com/?cid=7133801086525036924",
+      "recommendedPrimary": [
+        "Sıcak Kuymak & Kavurmalı Yumurta",
+        "Ev Yapımı Reçelli Serpme Kahvaltı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Reçeller & Sıcak Yöresel Kuymak",
+          "note": "Mevsim meyvelerinden ev yapımı reçeller ve uzayan peynirli kuymak sofranın öne çıkanlarıdır.",
+          "proof": "Kepez mahalle kahvaltı kayıtları ve topluluk incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ailelere uygun geniş açık bahçe ve kapalı kış salonu",
+        "crowdAndNoise": "Özellikle Pazar sabahları kalabalık aile sofralarıyla oldukça yoğun",
+        "disadvantage": "Hafta sonları bahçe tam dolduğunda kahvaltı sıcaklarının gelişi uzayabiliyor",
+        "transit": "Boğazkent Mahallesi 8. Cadde No:10, Kepez sahil yerleşkesi içinde"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Kepez Ziyaretçi Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1030 değerlendirmede kuymak, kavurmalı yumurta ve ev yapımı reçel övgüleri"
+        },
+        {
+          "title": "Çanakkale Kahvaltı Rehberi",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kepez Boğazkent serpme kahvaltı mekanı teyidi"
+        }
+      ],
+      "pros": [
+        "1000+ değerlendirmeyle kanıtlanmış istikrar",
+        "Geniş bahçe düzeniyle aileler için rahat ortam"
+      ],
+      "cons": [
+        "Hafta sonu geç saatlerde kalabalık servis temposu"
+      ],
+      "uncertainties": [
+        "Kış aylarında açık bahçe yerine iç salona geçiş"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-babalik-tekin-peynir-helvasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "BABALIK TEKİN PEYNİR HELVACISI",
+      "branchName": "Kemalpaşa, Yalı Cd. No:47, 17000 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJ5-8Lsh6psRQRVnEysFnbYYA",
+      "coordinates": {
+        "lat": 40.1491865,
+        "lng": 26.4006088
+      },
+      "rating": 4.6,
+      "userRatingCount": 2314,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://babaliktekinpeynirhelvasi.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=9250916287850377558",
+      "recommendedPrimary": [
+        "Fırınlanmış Klasik Çanakkale Peynir Helvası",
+        "Fırınlanmamış Taze Peynir Helvası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Dondurmalı veya Fıstıklı Fırın Helva Servisi",
+          "note": "Sıcak fırın peynir helvasının yanında sade dondurma veya Antep fıstığı ilavesi çok tercih edilir.",
+          "proof": "Babalık Tekin resmi tarihçesi ve 2300+ ziyaretçi incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî Yalı Caddesi üzerinde kısa tadım masaları ve yoğun paket satış tezgâhı",
+        "crowdAndNoise": "Feribot İskelesi dönüşü hediyelik ve yerinde tadım için gün boyu sürekli müşteri akışı",
+        "disadvantage": "İskele yakınında popüler bir tatlı durağı olduğu için akşamüstü tezgâhta kısa sıra oluşur",
+        "transit": "Kemalpaşa Mahallesi Yalı Caddesi No:47, Feribot İskelesi ve Saat Kulesi’ne 2 dk"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Babalık Tekin Resmi Tarihçe",
+          "url": "https://babaliktekinpeynirhelvasi.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1912 kuruluş mirası ve fırınlı/fırınsız peynir helvası reçetesi"
+        },
+        {
+          "title": "Çanakkale Gastronomi Değerlendirmeleri",
+          "url": "https://yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "2314 incelemede 4.6 puan istikrarı"
+        }
+      ],
+      "pros": [
+        "1912’den bugüne yaşayan Çanakkale’nin en köklü peynir helvası kurumu",
+        "Fırınlanmış ve taze seçenekler bir arada"
+      ],
+      "cons": [
+        "Uzun oturmalı kafe yerine tadım ve paket ağırlıklı dükkan"
+      ],
+      "uncertainties": [
+        "Yoğun hafta sonu akşamlarında sıcak tepsilerin çıkış sırası bekleme durumu"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-kadir-usta-peynir-helvasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Meşhur Çanakkale Helvacısı Kadir Usta",
+      "branchName": "Namık Kemal, Arap İbrahim Paşa Cd. No:24, 17000 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJb5ElqcWpsRQRoxf6YJ2_Dlg",
+      "coordinates": {
+        "lat": 40.145275399999996,
+        "lng": 26.404235399999997
+      },
+      "rating": 4.6,
+      "userRatingCount": 5185,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.kadirustapeynirhelvasi.com/",
+      "mapsUri": "https://maps.google.com/?cid=6345219607669381027",
+      "recommendedPrimary": [
+        "Fırınlanmış Çanakkale Peynir Helvası",
+        "Fıstıklı Tahin & Yaz Helvası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Tahin Helvası & Tahin-Pekmez İmalatı",
+          "note": "Peynir helvasının yanında günlük çekilmiş tahin, üzüm pekmezi ve cevizli yaz helvası öne çıkar.",
+          "proof": "Kadir Usta resmi sitesi ve Kasaplar Çarşısı kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî çarşı köşesinde hızlı yerinde tadım ve yüksek sirkülasyonlu satış dükkanı",
+        "crowdAndNoise": "Günün her saati hem yerliler hem dönüş yolundaki ziyaretçilerle yoğun",
+        "disadvantage": "Arap İbrahim Paşa Caddesi ara çarşısı dar olduğundan park sorunu yaşanır; ağırlıklı al-götürdür",
+        "transit": "Namık Kemal Mahallesi Arap İbrahim Paşa Caddesi No:24, Eski Kasaplar Çarşısı"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Kadir Usta Resmi Sitesi",
+          "url": "https://kadirustapeynirhelvasi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1979 kuruluşu, koyun-keçi sütü peyniri reçetesi ve tahin üretimi"
+        },
+        {
+          "title": "Çanakkale Merkez Topluluk Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "5185 incelemede 4.6 yüksek memnuniyet"
+        }
+      ],
+      "pros": [
+        "5185+ değerlendirmede 4.6 güçlü kalite puanı",
+        "Geleneksel koyun-keçi peynirli fırın helvası"
+      ],
+      "cons": [
+        "Geniş oturma alanı bulunmayan al-götür odaklı çarşı dükkanı"
+      ],
+      "uncertainties": [
+        "Hafta sonu sıcak tepsi çıkışı öncesi kısa kuyruklar"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-dondurmaci-nevzat-usta",
+      "categoryId": "denemelisin",
+      "resolvedName": "Dondurmacı Nevzat Usta",
+      "branchName": "Barbaros, Atatürk Cd. No:224, 17020, 17020 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJyzGhFmSpsRQRAzEMrDZdcNQ",
+      "coordinates": {
+        "lat": 40.1366982,
+        "lng": 26.4082471
+      },
+      "rating": 4.9,
+      "userRatingCount": 199,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15307837622828413187",
+      "recommendedPrimary": [
+        "Katkısız Mevsim Meyveli & Sütlü Dondurma",
+        "Taze Çıtır Tulumba / Baklava"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Dondurma Üstü Sıcak Çıtır Tulumba Tatlısı",
+          "note": "Dondurma dışında özellikle taze kızartılmış çıtır tulumba tatlısı yerel müdavimlerce övülür.",
+          "proof": "Maptons Çanakkale ve Barbaros topluluk kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Cadde üzeri açık ön masalar ve pratik külah/paket alım düzeni",
+        "crowdAndNoise": "Akşam yürüyüşleri sırasında özellikle aileler ve gençlerle hareketli",
+        "disadvantage": "Akşam saatlerinde dondurma dolabı önünde sıra beklemek gerekebiliyor",
+        "transit": "Barbaros Mahallesi Atatürk Caddesi No:224, Troya ve Kordon yürüyüş aksları arasında"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Çanakkale Doğal Tatlı Rehberi",
+          "url": "https://maptons.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Katkısız sütlü-meyveli dondurma ve şerbetli tatlı çeşitleri"
+        },
+        {
+          "title": "Barbaros Ziyaretçi Puanları",
+          "url": "https://firmakonum.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "199 değerlendirmede 4.9 yüksek puan teyidi"
+        }
+      ],
+      "pros": [
+        "Yapay aroma içermeyen doğal dondurma",
+        "199 değerlendirmede 4.9 puan"
+      ],
+      "cons": [
+        "Yaz akşamlarında dolap önü sırası"
+      ],
+      "uncertainties": [
+        "Bazı mevsimlik meyve çeşitlerinin stoklara göre değişmesi"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-sahin-lokantasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Şahin Lokantası",
+      "branchName": "Kemalpaşa, Hamdibey Sk. No:21, 17000 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJsZAtm8WpsRQR_vwTAH13--0",
+      "coordinates": {
+        "lat": 40.146727999999996,
+        "lng": 26.4042326
+      },
+      "rating": 4.6,
+      "userRatingCount": 174,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17148431384899222782",
+      "recommendedPrimary": [
+        "Günün Çorbası & Tencere Ev Yemeği",
+        "Pirinç Pilavı & Yoğurtlu Kızartma"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Meyve Kompostosu & Kemalpaşa Tatlısı",
+          "note": "Tencere yemeği yanında kendi hazırladıkları taze komposto ve şerbetli Kemalpaşa tatlısı geleneği yaşatır.",
+          "proof": "Yemeksepeti Şahin Lokantası menüsü ve Mekanlar.com kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geleneksel esnaf lokantası sıcaklığında sade ve temiz iç salon",
+        "crowdAndNoise": "Hafta içi öğle yemeklerinde çarşı esnafı ve memurlarla düzenli tempo",
+        "disadvantage": "Gündüz lokantası karakterinde olduğundan akşam geç saatlerde ana yemek çeşitleri azalır",
+        "transit": "Kemalpaşa Mahallesi Hamdibey Sokak No:21, Çarşı Caddesi arkası"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Mekanlar Çanakkale Kayıtları",
+          "url": "https://mekanlar.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Köklü esnaf lokantası ve Kemalpaşa konumu doğrulaması"
+        },
+        {
+          "title": "Yemeksepeti Menü & Puanları",
+          "url": "https://yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tavuk suyu, tencere yemeği ve komposto çeşitleri"
+        }
+      ],
+      "pros": [
+        "Katkısız geleneksel sulu ev yemekleri ve komposto",
+        "4.6 puanlı istikrarlı esnaf mutfağı"
+      ],
+      "cons": [
+        "Erken tükenen günün yemekleri ve akşam sınırlılığı"
+      ],
+      "uncertainties": [
+        "Hafta sonları öğleden sonra bazı zeytinyağlıların bitmesi"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-cevahir-ev-yemekleri",
+      "categoryId": "denemelisin",
+      "resolvedName": "Cevahir Ev Yemekleri",
+      "branchName": "Kemalpaşa, Fetvane Sk. No: 16, 17100 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJ27ukXCuosRQRYFPWTzoQ9z0",
+      "coordinates": {
+        "lat": 40.1492137,
+        "lng": 26.4012852
+      },
+      "rating": 4.4,
+      "userRatingCount": 1631,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4465055398194729824",
+      "recommendedPrimary": [
+        "Salçalı İzmir Köfte / Sebzeli Güveç",
+        "Günlük Zeytinyağlı Tabağı & Fırın Sütlaç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taş Bina İçinde Fırın Sütlaç & Zeytinyağlı Çeşitleri",
+          "note": "Ana yemek sonrası ev yapımı fırın sütlaç ve günlük taze zeytinyağlı sebze tabakları öne çıkar.",
+          "proof": "Yemeksepeti Cevahir menüsü ve Fetvane Sokak rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî Fetvane Sokak’ta taş doku içinde geniş ve aydınlık salon düzeni",
+        "crowdAndNoise": "Öğle ve erken akşam saatlerinde yerel çalışanlar ve gezginlerle oldukça canlı",
+        "disadvantage": "Fetvane Sokak yaya yoğunluğu yüksek olduğundan öğle servisinde tezgâh önü kısa kuyruk oluşabilir",
+        "transit": "Kemalpaşa Mahallesi Fetvane Sokak No:16, Aynalı Çarşı ve Saat Kulesi arası"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Fetvane Sokak Ev Yemekleri Rehberi",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihî taş bina dokusu ve günlük ev yemeği konsepti"
+        },
+        {
+          "title": "Yemeksepeti Çanakkale Kayıtları",
+          "url": "https://yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1631 değerlendirmede İzmir köfte, zeytinyağlılar ve sütlaç beğenisi"
+        }
+      ],
+      "pros": [
+        "Tarihî taş binada otantik ev yemeği ortamı",
+        "1631+ değerlendirme hacmiyle kanıtlanmış tutarlılık"
+      ],
+      "cons": [
+        "Öğle saatlerinde tezgâh önü sıra ve dar yaya sokağı"
+      ],
+      "uncertainties": [
+        "Günlük çıkan yemek listesinin mevsime göre değişmesi"
+      ],
+      "selectionScore": 76,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-soyleme-lezzet-duragi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Söyleme Lezzet Durağı",
+      "branchName": "Kemalpaşa, Eczane Sk. No: 4, 17000 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJc7U8TRCpsRQRegPr1VdWj1g",
+      "coordinates": {
+        "lat": 40.1477706,
+        "lng": 26.400985700000003
+      },
+      "rating": 4.9,
+      "userRatingCount": 85,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.soylemelezzetduragi.com/",
+      "mapsUri": "https://maps.google.com/?cid=6381414132258374522",
+      "recommendedPrimary": [
+        "Kağıt Kebabı & El Yapımı İçli Köfte",
+        "Humus & Ev Mantısı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Peynirli Künefe & Çorba Eşliği",
+          "note": "Yemek sonunda sıcak künefe ve günlük çorba seçenekleri tam puan alan eşlikçilerdendir.",
+          "proof": "Söyleme Lezzet Durağı resmi sitesi ve Yemeksepeti değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Çarşı içi sade ve düzenli küçük aile restoranı salonu",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde çarşı esnafı ve ev yemeği sevenlerle istikrarlı",
+        "disadvantage": "Küçük sokak dükkanı olduğu için akşam kalabalık gruplarda yer sınırlı kalabilir",
+        "transit": "Kemalpaşa Mahallesi Eczane Sokak No:4, Kale Çimenlik Parkı ve Çarşı Caddesi yakını"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Söyleme Lezzet Durağı Resmi Menüsü",
+          "url": "https://soylemelezzetduragi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kağıt kebabı, içli köfte, gül böreği ve humus üretimi"
+        },
+        {
+          "title": "Yemeksepeti & HizmetX Değerlendirmeleri",
+          "url": "https://yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "85 değerlendirmede 4.9 yüksek kalite puanı"
+        }
+      ],
+      "pros": [
+        "El açması içli köfte ve kağıt kebabı başarısı",
+        "4.9 gibi nadir değerlendirme ortalaması"
+      ],
+      "cons": [
+        "Dar sokakta sınırlı masa kapasitesi"
+      ],
+      "uncertainties": [
+        "Künefe ve kağıt kebabı hazırlık sürelerinin yoğunlukta uzaması"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-kofteci-mumin",
+      "categoryId": "denemelisin",
+      "resolvedName": "Köfteci Mümin",
+      "branchName": "Kemalpaşa, 17100 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJyf53NM-psRQRwCfHWurk8Yc",
+      "coordinates": {
+        "lat": 40.149325999999995,
+        "lng": 26.4019151
+      },
+      "rating": 4.6,
+      "userRatingCount": 267,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://iyifirma.com/kofteci-mumin/",
+      "mapsUri": "https://maps.google.com/?cid=9795862359704020928",
+      "recommendedPrimary": [
+        "Porsiyon Izgara Köfte",
+        "Kızarmış Ekmek & Piyaz Eşliği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Közlenmiş Biber & Kızarmış Taze Ekmek Servisi",
+          "note": "Köftelerin altına veya yanına verilen kızarmış ekmek ve piyaz sade esnaf ustalığını yansıtır.",
+          "proof": "Yerel Esnaf Çanakkale ve RestaurantGuru kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî çarşı atmosferinde sade, pratik oturma düzeni",
+        "crowdAndNoise": "Özellikle öğle saatlerinde Çanakkale esnafı ve gezginlerle hareketli",
+        "disadvantage": "Geleneksel esnaf dükkanı olduğu için akşam geç saatlere kadar açık kalmayabilir",
+        "transit": "Kemalpaşa Mahallesi Çarşı bölgesi, İskele Meydanı’na 3 dk yürüyüş"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Yerel Esnaf Çanakkale Kayıtları",
+          "url": "https://yerelesnaf.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Köklü yerel ızgara köfte geleneği ve çarşı konumu"
+        },
+        {
+          "title": "Çanakkale Mekan Topluluk Değerlendirmeleri",
+          "url": "https://canakkalemekan.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "267 değerlendirmede 4.6 puan ve fiyat-kalite dengesi"
+        }
+      ],
+      "pros": [
+        "Abartısız ama istikrarlı esnaf köftesi",
+        "267 incelemede 4.6 puan"
+      ],
+      "cons": [
+        "Sınırlı menü çeşitliliği (salt köfte-tavuk ızgara)"
+      ],
+      "uncertainties": [
+        "Öğleden sonra kalabalık günlerde erken kapanabilme ihtimali"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-lemanti",
+      "categoryId": "denemelisin",
+      "resolvedName": "Lemantı",
+      "branchName": "Kemalpaşa, Aynalı Çarşı No:7, 17000 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJ1ZG-l8WpsRQROhl1JnQ6ats",
+      "coordinates": {
+        "lat": 40.1462548,
+        "lng": 26.4038044
+      },
+      "rating": 4.4,
+      "userRatingCount": 68,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15810513712373373242",
+      "recommendedPrimary": [
+        "El Yapımı Yoğurtlu Klasik Mantı",
+        "Günlük Zeytinyağlı Ev Yemekleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Saklı Bahçe Avlusunda Çıtır & Haşlama Mantı",
+          "note": "Çarşının kalabalığından içerideki huzurlu avluya kaçış imkanı en sevilen özelliğidir.",
+          "proof": "Wanderlog Çanakkale ve Aynalı Çarşı harita kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Aynalı Çarşı içinde sakin küçük bahçe avlusu ve sıcak iç mekan",
+        "crowdAndNoise": "Öğle ve ikindi arası çarşıyı gezen misafirlerle huzurlu tempo",
+        "disadvantage": "Aynalı Çarşı içi pasaj konumunda olduğu için araç girişi yoktur",
+        "transit": "Kemalpaşa Mahallesi Aynalı Çarşı No:7, Çanakkale Merkez Çarşı"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Wanderlog Aynalı Çarşı İncelemesi",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bahçe atmosferi, el açması mantı ve zeytinyağlı övgüleri"
+        },
+        {
+          "title": "Çanakkale Çarşı Harita Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Aynalı Çarşı No:7 konumu ve ev yapımı mantı çeşitleri"
+        }
+      ],
+      "pros": [
+        "Aynalı Çarşı içinde sürpriz bahçe avlusu",
+        "Taze el açması mantı ve zeytinyağlılar"
+      ],
+      "cons": [
+        "Yaya pasajı içi giriş ve sınırlı bahçe kapasitesi"
+      ],
+      "uncertainties": [
+        "Günlük hazırlanan mantı dışındaki tencere çeşitlerinin değişmesi"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-1986-balikevi",
+      "categoryId": "balik",
+      "resolvedName": "1986 Balıkevi",
+      "branchName": "Barbaros, Sarıçay Cd. No:67, 17020 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJuUMgTaKpsRQRo8p4TiJo1U4",
+      "coordinates": {
+        "lat": 40.1428632,
+        "lng": 26.4038676
+      },
+      "rating": 4.6,
+      "userRatingCount": 1197,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://1986balikevi.com/",
+      "mapsUri": "https://maps.google.com/?cid=5680561001552464547",
+      "recommendedPrimary": [
+        "Kelebek Sardalya & Bako Mezgit Tava",
+        "İskorpit-Kırlangıç-Levrek Balık Çorbası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Deniz Börülcesi, Kalamar & Günlük Balık Ekmek",
+          "note": "Masada tava/ızgaranın yanında hızlı sardalya-palamut balık ekmek ve meze seçenekleri bulunur.",
+          "proof": "1986 Balıkevi resmi sitesi ve Barbaros ziyaretçi değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Düzenli, sade aile balıkçısı iç salonu ve sokak önü masaları",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde taze günlük balık için hem yerliler hem misafirlerce yoğun",
+        "disadvantage": "Kordon’un doğrudan deniz kıyısı yerine Sarıçay köprüsü civarında iç sokak aksındadır",
+        "transit": "Barbaros Mahallesi Sarıçay Caddesi No:67, Çarşı–Yeni Kordon geçiş hattında"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "1986 Balıkevi Resmi Sitesi",
+          "url": "https://1986balikevi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İskorpit-kırlangıç balık çorbası, bako mezgit ve sardalya menüsü"
+        },
+        {
+          "title": "Nelerimeşhur & Ziyaretçi Puanları",
+          "url": "https://nelerimeshur.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1197 değerlendirmede 4.6 puan ve balık tazeliği"
+        }
+      ],
+      "pros": [
+        "1197+ değerlendirmede 4.6 yüksek tazelik skoru",
+        "Balık çorbasından tava sardalyaya geniş ürün skalası"
+      ],
+      "cons": [
+        "Denize sıfır manzarası olmayan cadde içi konum"
+      ],
+      "uncertainties": [
+        "Av yasakları ve mevsime göre balık türlerinin günlük değişimi"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-sardalye",
+      "categoryId": "balik",
+      "resolvedName": "Sardalye",
+      "branchName": "Mustafa Kemal Paşa Mahallesi, Küçük Hamam Sk. No:24/b, 17000 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJBzEUk8WpsRQR_oGNBa0NPCo",
+      "coordinates": {
+        "lat": 40.147369499999996,
+        "lng": 26.403022800000002
+      },
+      "rating": 4.4,
+      "userRatingCount": 8881,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://sardalyetekinemek.com/",
+      "mapsUri": "https://maps.google.com/?cid=3043322484969275902",
+      "recommendedPrimary": [
+        "Çıtır Sardalye Tava Porsiyon",
+        "Bol Rokalı Ekmek Arası Sardalye & Turşu Suyu"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Dil Balığı Tava & Acılı Turşu Suyu Ritüeli",
+          "note": "Sardalye dışında kılçıksız dil balığı tava ve ev yapımı turşu suyu mutlaka eşlikçi olarak anılır.",
+          "proof": "Restoranım Çanakkale ve 8800+ ziyaretçi değerlendirmesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Salaş, samimi sokak içi hızlı servis masaları ve yoğun al-götür penceresi",
+        "crowdAndNoise": "Günün büyük bölümünde özellikle öğle ve akşam saatlerinde kapı önünde kısa sıra olur",
+        "disadvantage": "Geleneksel şık balık restoranı yerine salaş, gürültülü ve hızlı masa dönüşlü esnaf düzenindedir",
+        "transit": "Mustafa Kemal Paşa Mahallesi Küçük Hamam Sokak No:24/B, İskele Meydanı’na 3 dk"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Restoranım Çanakkale Rehberi",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Küçük Hamam Sokak konumu, ekmek arası sardalya ve tava kültürü"
+        },
+        {
+          "title": "Çanakkale Çarşı Topluluk Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "8881 değerlendirmede 4.4 puanla yaşayan sokak balığı ritüeli"
+        }
+      ],
+      "pros": [
+        "Çanakkale’nin en ikonik günlük Boğaz sardalyesi durağı",
+        "Hızlı, ulaşılabilir ve taze tava/ekmek arası"
+      ],
+      "cons": [
+        "Salaş dükkan düzeni, sıkışık oturum ve kapıda sıra bekleme"
+      ],
+      "uncertainties": [
+        "Mevsime göre sardalyenin yerini palamut veya istavritle paylaşması"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-vira-balik-restaurant",
+      "categoryId": "balik",
+      "resolvedName": "Vira Balık Restaurant",
+      "branchName": "Esenler, Naci Dura Sk. No:14, 17010 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJwVf6aQAHsRQR5UBeRnGZEyA",
+      "coordinates": {
+        "lat": 40.162404699999996,
+        "lng": 26.4228377
+      },
+      "rating": 4.4,
+      "userRatingCount": 204,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2311359745562132709",
+      "recommendedPrimary": [
+        "Kelebek Sardalya Tava / Izgara Deniz Levreği",
+        "Taratorlu Kalamar & Karides Mantı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Karışık Balık Çorbası & Levrek Marin",
+          "note": "Ana balık öncesi iskorpit-somon-kırlangıç karışımlı balık çorbası ve levrek marin soğukları övülür.",
+          "proof": "Yemeksepeti Vira Balık menü ve Mekanlar Çanakkale kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Esenler konut dokusu içinde düzenli ve aile dostu iç salon oturumu",
+        "crowdAndNoise": "Akşam yemeklerinde çevre mahalle aileleriyle sakin ama düzenli yoğunluk",
+        "disadvantage": "Tarihî Kordon yürüyüşünün kuzeyindeki Esenler semtinde kaldığından merkezden kısa ulaşım ister",
+        "transit": "Esenler Mahallesi Naci Dura Sokak No:14, Esenler Özgürlük Parkı yakınında"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Mekanlar & Yemeksepeti Balık Menüsü",
+          "url": "https://mekanlar.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kelebek sardalya, karides mantı ve balık çorbası menü doğrulaması"
+        },
+        {
+          "title": "Esenler Topluluk Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "204 değerlendirmede 4.4 puan ve porsiyon tazeliği"
+        }
+      ],
+      "pros": [
+        "Karides mantı ve taratorlu kalamar gibi özenli deniz ürünleri",
+        "Merkez kalabalığından uzak düzenli aile balıkçısı"
+      ],
+      "cons": [
+        "Merkez Kordon’a kıyasla kuzey yaka konumu"
+      ],
+      "uncertainties": [
+        "Günlük tezgâh avına göre barbun ve kalkan bulunurluğu"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "canakkale-yalova-restaurant",
+      "categoryId": "balik",
+      "resolvedName": "Yalova Restaurant Çanakkale",
+      "branchName": "Kemalpaşa, Gümrük Sk. No:7, 17100 Çanakkale Merkez/Çanakkale",
+      "placeId": "ChIJd7UIl8ipsRQRfBN1LCaqhqk",
+      "coordinates": {
+        "lat": 40.1493998,
+        "lng": 26.400247399999998
+      },
+      "rating": 4,
+      "userRatingCount": 2358,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.yalovarestoran.com/",
+      "mapsUri": "https://maps.google.com/?cid=12215638120220398460",
+      "recommendedPrimary": [
+        "Günün Taze Boğaz Balığı (Lüfer / Sardalye)",
+        "Atatürk Mezesi & Ege Otları Ekşilemesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kalamar Şiş, Balık Kokoreç & Yerel Şarap Kavı",
+          "note": "Klasik balıkların yanında deniz ürünlü ara sıcaklar ve nostaljik fotoğraf duvarlı Kordon manzarası öne çıkar.",
+          "proof": "Yalova Restaurant resmi arşivi, Ristivo menüsü ve Onedio gastronomi seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî Kordon üzerinde Boğaz’a bakan cam kenarı masalar ve şık klasik salon",
+        "crowdAndNoise": "Yaz sezonu ve hafta sonları gün batımı saatlerinde rezervasyonsuz yer bulmak zordur",
+        "disadvantage": "★4.0 puanında görüldüğü üzere yoğun sezonda servis temposu ve kilo usulü Boğaz balığı hesabı eleştiri alabiliyor",
+        "transit": "Kemalpaşa Mahallesi Gümrük Sokak No:7, Tarihi Balık Hali ve Feribot İskelesi yanı"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Onedio & GeziveYorum Gastronomi Dosyası",
+          "url": "https://onedio.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1940 Ziya Sürgit kuruluş hikayesi ve otlu levrek/Boğaz sardalyesi mirası"
+        },
+        {
+          "title": "Yalova Resmi Arşivi & Ristivo Menüsü",
+          "url": "https://ristivo.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "2358+ ziyaretçi kaydı, Atatürk Mezesi ve smart-casual Kordon deneyimi"
+        }
+      ],
+      "pros": [
+        "1940’tan bu yana kesintisiz süren Çanakkale Kordon balıkçılığı geleneği",
+        "Benzersiz Boğaz ve feribot iskelesi manzarası"
+      ],
+      "cons": [
+        "★4.0 puanında yansıyan yüksek hesap ve yoğun akşam servis yavaşlaması şikayetleri"
+      ],
+      "uncertainties": [
+        "Hafta sonu pencere önü masalar için haftalar öncesinden rezervasyon gerekliliği"
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    }
+  ]
+}
