@@ -1,16 +1,16 @@
 'use client';
 
 import Image from 'next/image';
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
-import { useSearchParams, useRouter } from 'next/navigation';
-import { 
-  MapPin, 
-  Search, 
-  Sparkles, 
+import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
+import {
+  MapPin,
+  Search,
+  Sparkles,
   ChevronRight,
   Info
 } from 'lucide-react';
 
+import type { StaticRegionVenuePayload } from '@/lib/food/regionDiscovery';
 import { FoodLocation, VisitorFoodVenue as FoodVenue, VisitorFoodDiscovery } from '@/lib/food/types';
 import { createRealFoodProvider } from '@/lib/food/realProvider';
 import { FOOD_DISCOVERY } from '@/lib/food/config';
@@ -657,42 +657,181 @@ export function GastronomyPageClient({
   lang = 'tr',
   embedded = false,
 }: GastronomyPageClientProps) {
-  const router = useRouter();
-  const foodDiscoveryProvider = useMemo(() => createRealFoodProvider(discovery), [discovery]);
-  const searchParams = useSearchParams();
+  const directoryProvider = useMemo(() => createRealFoodProvider(discovery), [discovery]);
+  const initialLocation = useMemo(
+    () => (initialLocationSlug ? directoryProvider.getLocationBySlug(initialLocationSlug) || null : null),
+    [directoryProvider, initialLocationSlug]
+  );
 
-  // 1. Seçili Bölge Durumu
-  const [selectedLocation, setSelectedLocation] = useState<FoodLocation | null>(() => {
-    if (initialLocationSlug) {
-      const match = foodDiscoveryProvider.getLocationBySlug(initialLocationSlug);
-      if (match) return match;
-    }
-    return null;
-  });
+  const regionCacheRef = useRef<Map<string, StaticRegionVenuePayload>>(new Map());
+  const inFlightRequestsRef = useRef<Map<string, Promise<StaticRegionVenuePayload>>>(new Map());
+  const activeRegionRequestRef = useRef<string | null>(initialLocation?.slug || null);
 
+  if (initialLocation && discovery.venues.length > 0 && !regionCacheRef.current.has(initialLocation.slug)) {
+    regionCacheRef.current.set(initialLocation.slug, {
+      regionSlug: initialLocation.slug,
+      categories: discovery.categories,
+      venues: discovery.venues,
+      nearbyVenues: discovery.nearbyVenues || [],
+    });
+  }
+
+  const [selectedLocation, setSelectedLocation] = useState<FoodLocation | null>(() => initialLocation);
+  const [activePayload, setActivePayload] = useState<StaticRegionVenuePayload | null>(() =>
+    initialLocation && discovery.venues.length > 0
+      ? regionCacheRef.current.get(initialLocation.slug) || null
+      : null
+  );
   const [selectedCategorySlug, setSelectedCategorySlug] = useState<string>(() => {
-    if (selectedLocation) {
-      const cats = foodDiscoveryProvider.getRegionCategories(selectedLocation.id);
+    if (initialLocation && discovery.venues.length > 0) {
+      const cats = directoryProvider.getRegionCategories(initialLocation.id);
       if (initialCategorySlug && cats.some((c) => c.slug === initialCategorySlug)) {
         return initialCategorySlug;
       }
       return cats[0]?.slug || 'kahve';
     }
-    return initialCategorySlug || 'kahve';
+    return initialCategorySlug || '';
   });
-
+  const [unpublishedRegionSlug, setUnpublishedRegionSlug] = useState<string | null>(() =>
+    initialLocationSlug && !initialLocation ? initialLocationSlug : null
+  );
+  const [isRegionLoading, setIsRegionLoading] = useState(false);
+  const [regionLoadError, setRegionLoadError] = useState<string | null>(null);
   const [activeVenueForModal, setActiveVenueForModal] = useState<FoodVenue | null>(null);
   const [isLocationModalOpen, setIsLocationModalOpen] = useState(false);
 
-  // URL is the single source of truth, including Back/Forward and invalid scopes.
-  const regionParam = searchParams.get('region') || initialLocationSlug;
-  const categoryParam = searchParams.get('category') || initialCategorySlug;
-  useEffect(() => {
-    const location = regionParam ? foodDiscoveryProvider.getLocationBySlug(regionParam) || null : null;
+  const mergedDiscovery = useMemo<VisitorFoodDiscovery>(
+    () => ({
+      locations: discovery.locations,
+      categories: activePayload?.categories || [],
+      venues: activePayload?.venues || [],
+      nearbyVenues: activePayload?.nearbyVenues || [],
+    }),
+    [discovery.locations, activePayload]
+  );
+
+  const foodDiscoveryProvider = useMemo(
+    () => createRealFoodProvider(mergedDiscovery),
+    [mergedDiscovery]
+  );
+
+  const fetchRegionPayload = useCallback(async (slug: string): Promise<StaticRegionVenuePayload> => {
+    const cached = regionCacheRef.current.get(slug);
+    if (cached) return cached;
+
+    const existingPromise = inFlightRequestsRef.current.get(slug);
+    if (existingPromise) return existingPromise;
+
+    const requestPromise = (async () => {
+      const res = await fetch(`/api/gastronomy/regions/${encodeURIComponent(slug)}`);
+      if (!res.ok) {
+        throw new Error(`HTTP ${res.status}`);
+      }
+      const payload = (await res.json()) as StaticRegionVenuePayload;
+      regionCacheRef.current.set(slug, payload);
+      return payload;
+    })().finally(() => {
+      inFlightRequestsRef.current.delete(slug);
+    });
+
+    inFlightRequestsRef.current.set(slug, requestPromise);
+    return requestPromise;
+  }, []);
+
+  const syncFromBrowserUrl = useCallback(() => {
+    if (typeof window === 'undefined') return;
+    const params = new URLSearchParams(window.location.search);
+    const hasRegionParam = params.has('region');
+    const rParam = params.get('region') || (hasRegionParam ? '' : initialLocationSlug || '');
+    const cParam = params.get('category') || (hasRegionParam ? '' : initialCategorySlug || '');
+
+    if (!rParam) {
+      activeRegionRequestRef.current = null;
+      setUnpublishedRegionSlug(null);
+      setSelectedLocation(null);
+      setActivePayload(null);
+      setSelectedCategorySlug('');
+      setIsRegionLoading(false);
+      setRegionLoadError(null);
+      setActiveVenueForModal(null);
+      return;
+    }
+
+    const location = directoryProvider.getLocationBySlug(rParam);
+    if (!location) {
+      activeRegionRequestRef.current = null;
+      setUnpublishedRegionSlug(rParam);
+      setSelectedLocation(null);
+      setActivePayload(null);
+      setSelectedCategorySlug('');
+      setIsRegionLoading(false);
+      setRegionLoadError(null);
+      setActiveVenueForModal(null);
+      return;
+    }
+
+    setUnpublishedRegionSlug(null);
     setSelectedLocation(location);
-    setSelectedCategorySlug(categoryParam || (location ? foodDiscoveryProvider.getRegionCategories(location.id)[0]?.slug || '' : ''));
+    setRegionLoadError(null);
     setActiveVenueForModal(null);
-  }, [regionParam, categoryParam, foodDiscoveryProvider]);
+    activeRegionRequestRef.current = location.slug;
+
+    const cached = regionCacheRef.current.get(location.slug);
+    if (cached) {
+      setActivePayload(cached);
+      setIsRegionLoading(false);
+      const firstValidCategory =
+        cached.categories.find((c) => cached.venues.some((v) => v.categorySlugs.includes(c.slug)))?.slug ||
+        cached.categories[0]?.slug ||
+        '';
+      const resolvedCategory = cParam || firstValidCategory;
+      setSelectedCategorySlug(resolvedCategory);
+      if (!cParam && resolvedCategory && params.has('region')) {
+        const updated = new URLSearchParams(window.location.search);
+        updated.set('region', location.slug);
+        updated.set('category', resolvedCategory);
+        window.history.replaceState(null, '', `/${lang}?${updated.toString()}`);
+      }
+      return;
+    }
+
+    setActivePayload(null);
+    setIsRegionLoading(true);
+    setSelectedCategorySlug(cParam);
+
+    fetchRegionPayload(location.slug)
+      .then((payload) => {
+        if (activeRegionRequestRef.current !== location.slug) return;
+        setActivePayload(payload);
+        setIsRegionLoading(false);
+        const firstValidCategory =
+          payload.categories.find((c) => payload.venues.some((v) => v.categorySlugs.includes(c.slug)))?.slug ||
+          payload.categories[0]?.slug ||
+          '';
+        const resolvedCategory = cParam || firstValidCategory;
+        setSelectedCategorySlug(resolvedCategory);
+        if (!cParam && resolvedCategory) {
+          const updated = new URLSearchParams(window.location.search);
+          if (updated.has('region') || hasRegionParam) {
+            updated.set('region', location.slug);
+            updated.set('category', resolvedCategory);
+            window.history.replaceState(null, '', `/${lang}?${updated.toString()}`);
+          }
+        }
+      })
+      .catch(() => {
+        if (activeRegionRequestRef.current !== location.slug) return;
+        setIsRegionLoading(false);
+        setRegionLoadError('Bölge verileri yüklenemedi. Lütfen tekrar deneyin.');
+      });
+  }, [directoryProvider, fetchRegionPayload, initialCategorySlug, initialLocationSlug, lang]);
+
+  useEffect(() => {
+    syncFromBrowserUrl();
+    const onPopState = () => syncFromBrowserUrl();
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, [syncFromBrowserUrl]);
 
   // Konum seçimi değiştiğinde
   const handleSelectLocation = useCallback(
@@ -701,29 +840,27 @@ export function GastronomyPageClient({
         localStorage.setItem(FOOD_DISCOVERY.storage.lastRegionKey, loc.slug);
       } catch {}
 
-      if (!selectedLocation || loc.id !== selectedLocation.id) {
-        router.push(`/${lang}?region=${loc.slug}`);
-        return;
+      const cached = regionCacheRef.current.get(loc.slug);
+      let nextUrl = `/${lang}?region=${loc.slug}`;
+      if (cached) {
+        const cachedCats = cached.categories.filter((c) =>
+          cached.venues.some((v) => v.categorySlugs.includes(c.slug))
+        );
+        const preferredCat =
+          selectedLocation &&
+          loc.id === selectedLocation.id &&
+          cachedCats.some((c) => c.slug === selectedCategorySlug)
+            ? selectedCategorySlug
+            : cachedCats[0]?.slug || '';
+        if (preferredCat) {
+          nextUrl = `/${lang}?region=${loc.slug}&category=${preferredCat}`;
+        }
       }
 
-      setSelectedLocation(loc);
-
-      // Yeni bölgenin kategorilerini al
-      const newCats = foodDiscoveryProvider.getRegionCategories(loc.id);
-
-      // Kural: Eski kategorinin karşılığı yeni bölgede varsa koru, yoksa ilk kategoriye geç
-      let nextCategorySlug = newCats[0]?.slug || '';
-      if (newCats.some((c) => c.slug === selectedCategorySlug)) {
-        nextCategorySlug = selectedCategorySlug;
-      }
-
-      setSelectedCategorySlug(nextCategorySlug);
-
-      // URL senkronizasyonu ve sunucu tarafı bölge yüklemesi
-      const newUrl = `/${lang}?region=${loc.slug}&category=${nextCategorySlug}`;
-      router.push(newUrl);
+      window.history.pushState(null, '', nextUrl);
+      syncFromBrowserUrl();
     },
-    [lang, selectedLocation, selectedCategorySlug, foodDiscoveryProvider, router]
+    [lang, selectedLocation, selectedCategorySlug, syncFromBrowserUrl]
   );
 
   // Kategori seçimi değiştiğinde
@@ -732,10 +869,10 @@ export function GastronomyPageClient({
       setSelectedCategorySlug(catSlug);
       if (selectedLocation) {
         const newUrl = `/${lang}?region=${selectedLocation.slug}&category=${catSlug}`;
-        window.history.pushState(null,'',newUrl);
+        window.history.pushState(null, '', newUrl);
       }
     },
-    [lang, selectedLocation, router]
+    [lang, selectedLocation]
   );
 
   // Seçili bölgenin dinamik kategorileri
@@ -779,8 +916,8 @@ export function GastronomyPageClient({
         {/* =================================================================== */}
         {/* 1. DURUM: KONUM HENÜZ SEÇİLMEDİ (YENİ MODERN HERO & KONUM SEÇİMİ)   */}
         {/* =================================================================== */}
-        {regionParam && !selectedLocation ? (
-          <div className="py-12 px-2 text-center"><h1 className="text-xl font-bold break-words">Bu konum için rehber henüz hazır değil.</h1><button className="mt-4 text-[#C42B1C] hover:text-[#A61E11] font-semibold" onClick={()=>router.push(`/${lang}`)}>Konum seçimine dön</button></div>
+        {unpublishedRegionSlug && !selectedLocation ? (
+          <div className="py-12 px-2 text-center"><h1 className="text-xl font-bold break-words">Bu konum için rehber henüz hazır değil.</h1><button className="mt-4 text-[#C42B1C] hover:text-[#A61E11] font-semibold" onClick={() => { window.history.pushState(null, '', `/${lang}`); syncFromBrowserUrl(); }}>Konum seçimine dön</button></div>
         ) : !selectedLocation ? (
           <div className="pt-2 sm:pt-4 pb-12 max-w-xl mx-auto">
             {/* BAŞLIK & METİN — İKONSUZ, HEADER'IN DİREKT BİR TIK ALTINDA */}
@@ -955,7 +1092,34 @@ export function GastronomyPageClient({
             )}
 
             {/* 3. MEKAN KARTLARI LİSTESİ (ORİJİNAL TAM BOY KART DÜZENİ) */}
-            {categoryResult && categoryResult.coreVenues.length > 0 ? (
+            {isRegionLoading ? (
+              <div className="grid grid-cols-1 gap-5 sm:gap-6" aria-busy="true" aria-label="Mekanlar yükleniyor">
+                {[0, 1, 2].map((slot) => (
+                  <div
+                    key={slot}
+                    className="w-full rounded-3xl border border-[#EFE5DF] bg-white overflow-hidden animate-pulse"
+                  >
+                    <div className="w-full aspect-[16/10] sm:aspect-[16/9] bg-[#F5EFEA]" />
+                    <div className="p-4 sm:p-5 space-y-3">
+                      <div className="h-3 w-1/3 rounded bg-[#EFE5DF]" />
+                      <div className="h-5 w-2/3 rounded bg-[#EAE0D8]" />
+                      <div className="h-3.5 w-full rounded bg-[#F5EFEA]" />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : regionLoadError ? (
+              <div className="py-10 px-4 text-center text-[#6E5A53] text-xs font-medium bg-white rounded-2xl border border-dashed border-[#EFE5DF] space-y-3">
+                <p>{regionLoadError}</p>
+                <button
+                  type="button"
+                  onClick={() => syncFromBrowserUrl()}
+                  className="inline-flex items-center px-4 py-2 rounded-full bg-[#C42B1C] hover:bg-[#A61E11] text-white text-xs font-bold transition-colors"
+                >
+                  Tekrar Dene
+                </button>
+              </div>
+            ) : categoryResult && categoryResult.coreVenues.length > 0 ? (
               <div className="space-y-6 sm:space-y-7">
                 <div className="grid grid-cols-1 gap-5 sm:gap-6">
                   {categoryResult.coreVenues.map((venue,index) => (

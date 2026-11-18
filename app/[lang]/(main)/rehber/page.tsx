@@ -2,7 +2,11 @@ import { LOCATIONS } from '@/lib/constants';
 import { LocationCard } from '@/components/LocationCard';
 import { getDictionary } from '@/lib/dictionary';
 
-export const revalidate = 0;
+export const revalidate = 3600;
+
+export function generateStaticParams() {
+  return [{ lang: 'tr' }, { lang: 'en' }];
+}
 
 export default async function GuidePage(props: { params: Promise<{ lang: 'tr' | 'en' }> }) {
   const params = await props.params;

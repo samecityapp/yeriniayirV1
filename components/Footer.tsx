@@ -1,14 +1,23 @@
 import Link from 'next/link';
+import { unstable_cache } from 'next/cache';
 import { Mail, Instagram, Globe } from 'lucide-react';
 import { db } from '@/lib/db';
+import { isSupabaseIsolated } from '@/lib/supabase';
 import { getLocalizedText } from '@/lib/localization';
 import { Article } from '@/lib/types';
 import { BrandLogo } from './ui/BrandLogo';
 import { getDictionary } from '@/lib/dictionary';
 
+const getCachedLatestArticles = unstable_cache(
+  async (targetLang: 'tr' | 'en') => db.articles.getLatest(3, targetLang),
+  ['footer-latest-articles'],
+  { revalidate: 3600, tags: ['articles', 'footer-articles'] }
+);
+
 export async function Footer({ lang = 'tr', localPreview = false }: { lang?: 'tr' | 'en'; localPreview?:boolean }) {
   const currentYear = 2026;
-  const latestArticles = localPreview ? [] : await db.articles.getLatest(3, lang);
+  const latestArticles =
+    localPreview || isSupabaseIsolated ? [] : await getCachedLatestArticles(lang);
   const dict = await getDictionary(lang);
 
   return (

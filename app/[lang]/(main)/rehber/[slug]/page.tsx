@@ -22,7 +22,7 @@ import { SmartContent } from '@/components/blog/SmartContent';
 
 type Props = { params: Promise<{ slug: string; lang: 'tr' | 'en' }> };
 
-export const revalidate = 0;
+export const revalidate = 3600;
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const params = await props.params;

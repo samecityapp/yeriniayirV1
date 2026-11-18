@@ -1,6 +1,8 @@
 import { MetadataRoute } from 'next';
 import { db } from '@/lib/db';
 
+export const revalidate = 3600;
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const TR_DOMAIN = 'https://www.yeriniayir.com';
   const EN_DOMAIN = 'https://www.worldandhotels.com';
