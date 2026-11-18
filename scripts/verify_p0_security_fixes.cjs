@@ -425,6 +425,8 @@ function parseActionJsonResult(rawText) {
 
 async function run() {
   const savedEnv = { ...process.env };
+  const tsconfigPath = path.join(root, 'tsconfig.json');
+  const savedTsconfig = fs.existsSync(tsconfigPath) ? fs.readFileSync(tsconfigPath, 'utf8') : null;
   const anonKey = 'dummy-anon-key-only';
   const serviceKey = makeJwt({ role: 'service_role', ref: 'local' });
   const { server: mockServer, state } = makeStatefulSupabaseServer({
@@ -920,6 +922,11 @@ async function run() {
         assert.match(anonHome.headers.get('cache-control') || '', /private, no-store/);
         assert.match(anonHome.headers.get('x-robots-tag') || '', /noindex/);
 
+        const anonRegionApi = await REAL_FETCH(`http://127.0.0.1:${stagingPort}/api/gastronomy/regions/moda`);
+        assert.equal(anonRegionApi.status, 401);
+        assert.match(anonRegionApi.headers.get('cache-control') || '', /private, no-store/);
+        assert.match(anonRegionApi.headers.get('x-robots-tag') || '', /noindex/);
+
         const anonJson = await REAL_FETCH(`http://127.0.0.1:${stagingPort}/tr/jilinrime/teklif-yonetimi`);
         assert.equal(anonJson.status, 401);
 
@@ -1203,6 +1210,9 @@ async function run() {
         const enOffer1 = await REAL_FETCH(`${localhostBase}/en/canli-teklif-1`);
         assert.equal(enOffer1.status, 200);
         assert.match(stripHtml(await enOffer1.text()), /19\.500/);
+        const elOffer1 = await REAL_FETCH(`${base}/el/canli-teklif-1`);
+        assert.equal(elOffer1.status, 200);
+        assert.match(stripHtml(await elOffer1.text()), /19\.500/);
 
         // Admin listing page reflects created offer and blocks anon
         assert.equal((await REAL_FETCH(`${base}/tr/jilinrime/teklif-yonetimi`)).status, 401);
@@ -1231,6 +1241,7 @@ async function run() {
 
         await assertOfferNotFound(`${base}/tr/canli-teklif-1`, 'Stale old TR slug');
         await assertOfferNotFound(`${localhostBase}/en/canli-teklif-1`, 'Stale old EN slug');
+        await assertOfferNotFound(`${base}/el/canli-teklif-1`, 'Stale old EL slug');
         const trOffer2 = await REAL_FETCH(`${base}/tr/canli-teklif-2`);
         assert.equal(trOffer2.status, 200);
         const trOffer2Html = await trOffer2.text();
@@ -1257,6 +1268,7 @@ async function run() {
         assert.equal(state.offers.size, 0);
         await assertOfferNotFound(`${base}/tr/canli-teklif-2`, 'Deleted TR slug');
         await assertOfferNotFound(`${localhostBase}/en/canli-teklif-2`, 'Deleted EN slug');
+        await assertOfferNotFound(`${base}/el/canli-teklif-2`, 'Deleted EL slug');
         await assertOfferNotFound(`${base}/tr/luvicavehotel-teklif`, 'Zombie luvicavehotel-teklif fallback');
       } finally {
         srv.kill('SIGTERM');
@@ -1269,6 +1281,9 @@ async function run() {
     clearPolicyEnv();
     Object.assign(process.env, savedEnv);
     fs.rmSync(path.join(root, tempDistDir), { recursive: true, force: true });
+    if (savedTsconfig !== null) {
+      fs.writeFileSync(tsconfigPath, savedTsconfig);
+    }
     await new Promise((resolve) => mockServer.close(resolve));
   }
 }

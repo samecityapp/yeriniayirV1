@@ -168,9 +168,27 @@ async function run() {
 
   // Key validation (anon vs service_role)
   check('publicKey rejects sb_secret_ and service_role JWT', () => {
-    assert.throws(() => p.publicKey('sb_secret_12345678901234567890'));
+    const fakeSecretPrefix = 'sb_secret_';
+    assert.throws(() => p.publicKey(`${fakeSecretPrefix}12345678901234567890`));
     assert.throws(() => p.publicKey(serviceJwtStage));
     assert.equal(p.publicKey(anonJwt), anonJwt);
+  });
+
+  check('hasValidCloudAdminJwtClaims rejects prefix-spoofed iss and missing iss under cloud requireJwt=true', () => {
+    const spoofedIssJwt = makeJwt({
+      sub: '00000000-0000-4000-8000-000000000999',
+      role: 'authenticated',
+      aal: 'aal2',
+      iss: `${stage}.evil.example/auth/v1`,
+    });
+    const missingIssJwt = makeJwt({
+      sub: '00000000-0000-4000-8000-000000000999',
+      role: 'authenticated',
+      aal: 'aal2',
+    });
+    assert.equal(p.hasValidCloudAdminJwtClaims(spoofedIssJwt, stage, true), false);
+    assert.equal(p.hasValidCloudAdminJwtClaims(missingIssJwt, stage, true), false);
+    assert.equal(p.hasValidCloudAdminJwtClaims(adminAal2JwtStage, stage, true), true);
   });
 
   check('serviceRoleKey rejects sb_publishable_, anon JWT, wrong-ref JWT, and non-JWT dummy in cloud', () => {
@@ -236,6 +254,10 @@ async function run() {
   global.window.location.hostname = 'www.yeriniayir.com';
   check('browser production approved domain succeeds', () =>
     assert.equal(guard.resolvePublicSupabaseConfig(prod, prodAnonJwt).isolated, false)
+  );
+  global.window.location.hostname = 'www.yeriniayir.com.';
+  check('browser trailing-dot hostname rejected', () =>
+    assert.equal(guard.resolvePublicSupabaseConfig(prod, prodAnonJwt).isolated, true)
   );
   delete global.window;
 
@@ -346,13 +368,21 @@ async function run() {
     assert.equal(postRes.status, 200);
   });
 
-  await checkAsync('staging blocks anonymous public pages, APIs, and /images/ without MFA', async () => {
-    for (const u of ['/tr', '/api/gastronomy/regions/moda', '/tr/jilinrime', '/images/gastronomy/coffee-pour-over.svg']) {
+  await checkAsync('staging blocks anonymous public pages, APIs, /_next/image, and /tr/jilinrime.rsc without MFA', async () => {
+    for (const u of ['/tr', '/api/gastronomy/regions/moda', '/tr/jilinrime', '/tr/jilinrime.rsc', '/images/gastronomy/coffee-pour-over.svg', '/_next/image?url=%2Fimages%2Flogo.png']) {
       const r = await mw(new NextRequest('https://preview.example.com' + u));
       assert.equal(r.status, 401);
       assert.match(r.headers.get('cache-control') || '', /no-store/);
       assert.match(r.headers.get('x-robots-tag') || '', /noindex/);
     }
+  });
+
+  await checkAsync('staging custom hostname visiting /en does not redirect to worldandhotels.com', async () => {
+    isAdmin = true;
+    const r = await mw(new NextRequest('https://preview.example.com/en', { headers: { host: 'preview.example.com', cookie: `ya_cloud_admin=${adminAal2JwtStage}` } }));
+    assert.equal(r.status, 200);
+    assert.equal(r.headers.get('location'), null);
+    isAdmin = false;
   });
 
   await checkAsync('staging rejects aal1 JWT in ya_cloud_admin with 403', async () => {

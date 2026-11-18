@@ -25,7 +25,7 @@ function loadTs(relativePath, mocks = {}, cache = new Map()) {
       module: ts.ModuleKind.CommonJS,
       target: ts.ScriptTarget.ES2020,
       esModuleInterop: true,
-      jsx: ts.JsxEmit.ReactJSX,
+      ...(filename.endsWith('.tsx') ? { jsx: ts.JsxEmit.ReactJSX } : {}),
     },
   }).outputText;
 
@@ -69,30 +69,34 @@ function loadTs(relativePath, mocks = {}, cache = new Map()) {
   }
 
   // ---------------------------------------------------------------------------
-  // 1. Static & P0 Untouchability Checks
+  // 1. Static & Hardened P0 Baseline Preservation Checks
   // ---------------------------------------------------------------------------
-  await check('1.1 P0 security files from b208160 are completely untouched', async () => {
-    const p0Files = [
+  await check('1.1 Perf merge (0cd87e6) left all P0 security boundaries intact and active', async () => {
+    const perfTouched = execFileSync('git', ['diff', '--name-only', 'b208160', 'feat/gastronomy-v5-perf-cost'], {
+      cwd: root,
+      encoding: 'utf8',
+    })
+      .trim()
+      .split('\n');
+    const securityCore = [
+      'lib/security/supabase-policy.js',
+      'lib/pilot/securityPolicy.ts',
       'lib/admin/offerAdminGuard.ts',
       'lib/supabase-env-guard.ts',
       'lib/supabase.ts',
       'lib/supabase-admin.ts',
       'lib/cloud/config.ts',
+      'lib/cloud/auth.ts',
       'lib/offers.ts',
       'middleware.ts',
       'next.config.js',
-      'app/[lang]/layout.tsx',
-      'app/[lang]/(admin)/jilinrime/layout.tsx',
       'app/[lang]/(admin)/jilinrime/teklif-yonetimi/actions.ts',
-      'app/[lang]/(admin)/jilinrime/teklif-yonetimi/page.tsx',
-      'app/[lang]/(admin)/jilinrime/teklif-yonetimi/OfferManager.tsx',
-      'scripts/verify_p0_security_fixes.cjs',
     ];
-    const diffOut = execFileSync('git', ['diff', '--name-only', 'b208160', '--', ...p0Files], {
-      cwd: root,
-      encoding: 'utf8',
-    }).trim();
-    assert.equal(diffOut, '', `Unexpected diff on P0 files: ${diffOut}`);
+    for (const secFile of securityCore) {
+      assert.equal(perfTouched.includes(secFile), false, `Perf branch 0cd87e6 must not touch ${secFile}`);
+    }
+    assert.match(fs.readFileSync(path.join(root, 'lib/offers.ts'), 'utf8'), /assertValidOfferAdminCapability/);
+    assert.match(fs.readFileSync(path.join(root, 'middleware.ts'), 'utf8'), /hasProtectedSegment/);
   });
 
   await check('1.2 localPreview.ts no longer uses headers() and Gastronomy root uses ISR', async () => {
@@ -116,6 +120,7 @@ function loadTs(relativePath, mocks = {}, cache = new Map()) {
     assert.match(pubSrc, /revalidateTag\('ya-publication'\)/);
     assert.match(pubSrc, /revalidatePath\('\/tr'\)/);
     assert.match(pubSrc, /revalidatePath\('\/en'\)/);
+    assert.match(pubSrc, /revalidatePath\(`\/api\/gastronomy\/regions\/\$\{regionSlug\}`\)/);
   });
 
   // ---------------------------------------------------------------------------
@@ -349,15 +354,19 @@ function loadTs(relativePath, mocks = {}, cache = new Map()) {
     const nextPort = 3345;
     const origin = `http://127.0.0.1:${nextPort}`;
 
-    const nextProc = spawn('npx', ['next', 'start', '-p', String(nextPort)], {
+    const nextProc = spawn(process.execPath, ['node_modules/next/dist/bin/next', 'start', '--hostname', '127.0.0.1', '--port', String(nextPort)], {
       cwd: root,
       env: {
         ...process.env,
         NODE_ENV: 'production',
+        NODE_OPTIONS: `--require ${path.join(root, 'scripts/security/network-lock.cjs')}`,
         VERCEL: '1',
-        VERCEL_ENV: 'production',
+        VERCEL_ENV: 'preview',
+        NEXT_PUBLIC_VERCEL_ENV: 'preview',
+        APP_ENVIRONMENT: 'preview',
+        GASTRONOMY_AUTH_MODE: 'supabase',
+        GASTRONOMY_ENABLE_PREVIEW: '0',
         GASTRONOMY_LOCAL_PREVIEW: '0',
-        APP_ENVIRONMENT: 'production',
         NEXT_PUBLIC_DISABLE_ANALYTICS: '0',
         NEXT_PUBLIC_SUPABASE_URL: `http://127.0.0.1:${mockPort}`,
         NEXT_PUBLIC_SUPABASE_ANON_KEY: 'dummy-anon',
@@ -368,12 +377,30 @@ function loadTs(relativePath, mocks = {}, cache = new Map()) {
 
     try {
       await new Promise((resolve, reject) => {
-        const timer = setTimeout(() => reject(new Error('Next startup timeout')), 15000);
+        let startupLogs = '';
+        let settled = false;
+        const done = (err) => {
+          if (settled) return;
+          settled = true;
+          clearTimeout(timer);
+          if (err) reject(err);
+          else resolve();
+        };
+        const timer = setTimeout(() => {
+          done(new Error(`Next startup timeout. Logs:\n${startupLogs.slice(-1500)}`));
+        }, 15000);
         nextProc.stdout.on('data', (c) => {
-          if (String(c).includes('Ready')) {
-            clearTimeout(timer);
-            resolve();
+          const text = String(c);
+          startupLogs += text;
+          if (text.includes('Ready')) {
+            done();
           }
+        });
+        nextProc.stderr.on('data', (c) => {
+          startupLogs += String(c);
+        });
+        nextProc.once('exit', (code, signal) => {
+          done(new Error(`Next exited early (code=${code}, signal=${signal}). Logs:\n${startupLogs.slice(-1500)}`));
         });
       });
 

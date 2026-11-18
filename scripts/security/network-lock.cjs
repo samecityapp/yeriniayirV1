@@ -1,6 +1,8 @@
 // OS/Socket-level egress blocker loaded into test & child Next processes via NODE_OPTIONS.
-// Strictly blocks any TCP/TLS/HTTP/fetch attempt outside 127.0.0.1 / localhost / ::1.
+// Strictly blocks any TCP/TLS/DNS/UDP/fetch attempt outside 127.0.0.1 / localhost / ::1.
 const net = require('node:net');
+const dns = require('node:dns');
+const dgram = require('node:dgram');
 
 const LOOPBACK_HOSTS = new Set(['127.0.0.1', 'localhost', '::1', '[::1]']);
 
@@ -38,6 +40,31 @@ net.Socket.prototype.connect = function (...args) {
     throw new Error(`TEST_EGRESS_BLOCKED: outbound TCP socket refused (${host})`);
   }
   return originalSocketConnect.apply(this, args);
+};
+
+const originalDnsLookup = dns.lookup;
+dns.lookup = function (hostname, options, callback) {
+  const cb = typeof options === 'function' ? options : callback;
+  if (!isAllowedHost(hostname)) {
+    const err = new Error(`TEST_EGRESS_BLOCKED: outbound DNS lookup refused (${hostname})`);
+    if (typeof cb === 'function') return queueMicrotask(() => cb(err));
+    throw err;
+  }
+  return originalDnsLookup.apply(this, arguments);
+};
+
+if (dns.promises && typeof dns.promises.lookup === 'function') {
+  const origPromisesLookup = dns.promises.lookup.bind(dns.promises);
+  dns.promises.lookup = async function (hostname, options) {
+    if (!isAllowedHost(hostname)) {
+      throw new Error(`TEST_EGRESS_BLOCKED: outbound DNS lookup refused (${hostname})`);
+    }
+    return origPromisesLookup(hostname, options);
+  };
+}
+
+dgram.createSocket = function () {
+  throw new Error('TEST_EGRESS_BLOCKED: outbound UDP socket refused');
 };
 
 if (typeof globalThis.fetch === 'function') {

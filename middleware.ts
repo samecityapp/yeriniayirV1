@@ -60,6 +60,12 @@ async function verifyCloudAdminCookie(token: string | undefined): Promise<
   }
 }
 
+function hasProtectedSegment(pathname: string, segmentName: string): boolean {
+  return pathname
+    .split('/')
+    .some((seg) => seg === segmentName || seg.startsWith(`${segmentName}.`));
+}
+
 async function applicationMiddleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
   const hostname = request.headers.get('host') || '';
@@ -69,7 +75,7 @@ async function applicationMiddleware(request: NextRequest) {
   if (
     pathname.startsWith('/api/gastronomy-admin/') ||
     pathname === '/api/gastronomy-public' ||
-    pathname.split('/').includes('gastronomi-yonetimi')
+    hasProtectedSegment(pathname, 'gastronomi-yonetimi')
   ) {
     const response = NextResponse.next();
     if (pathname !== '/api/gastronomy-public') {
@@ -82,7 +88,7 @@ async function applicationMiddleware(request: NextRequest) {
 
   // Protect all locales, the locale-free alias and child routes before static-file skips.
   // Route handlers also authenticate independently of middleware.
-  const isPilot = pathname.split('/').includes('moda-kadikoy-pilot');
+  const isPilot = hasProtectedSegment(pathname, 'moda-kadikoy-pilot');
   if (isPilot) {
     const auth = await checkPilotAdmin(request.headers.get('authorization'));
     if (!auth.ok) {
@@ -112,7 +118,7 @@ async function applicationMiddleware(request: NextRequest) {
   };
 
   let jilinrimeAuthMode: 'basic' | 'supabase' = 'basic';
-  const isJilinrime = pathname.split('/').includes('jilinrime');
+  const isJilinrime = hasProtectedSegment(pathname, 'jilinrime');
   if (isJilinrime) {
     try {
       jilinrimeAuthMode = authMode(process.env);
@@ -165,9 +171,9 @@ async function applicationMiddleware(request: NextRequest) {
     return isJilinrime ? applyJilinrimeHeaders(res, jilinrimeAuthMode) : res;
   }
 
-  // Rate limit API routes and Admin sections only to avoid latency on normal navigation.
+  // Rate limit admin sections in production without taxing static/public SSR pages.
   try {
-    if (process.env.NODE_ENV === 'production' && (pathname.startsWith('/api') || isJilinrime)) {
+    if (process.env.NODE_ENV === 'production' && isJilinrime) {
       const { success, limit, reset, remaining } = await ratelimit.limit(`ratelimit_middleware_${ip}`);
       if (!success) {
         return new NextResponse('Too Many Requests', {
@@ -186,7 +192,12 @@ async function applicationMiddleware(request: NextRequest) {
 
   const DOMAIN_TR = 'yeriniayir.com';
   const DOMAIN_EN = 'worldandhotels.com';
-  const isDev = hostname.includes('localhost') || hostname.endsWith('.vercel.app');
+  const isDev =
+    hostname.includes('localhost') ||
+    hostname.startsWith('127.0.0.1') ||
+    hostname.endsWith('.vercel.app') ||
+    process.env.APP_ENVIRONMENT === 'staging' ||
+    process.env.VERCEL_ENV === 'preview';
   const isEnglishDomain = hostname === DOMAIN_EN || hostname === `www.${DOMAIN_EN}`;
 
   const pathnameIsMissingLocale = locales.every(
@@ -243,7 +254,7 @@ export async function middleware(request: NextRequest) {
       (request.method === 'POST' && pathname === '/api/gastronomy-admin/login') ||
       (request.method === 'GET' && pathname === '/api/gastronomy-admin/session') ||
       (request.method === 'POST' && pathname === '/api/gastronomy-admin/logout');
-    const isLoginAsset = request.method === 'GET' && /^(?:\/_next\/|\/fonts\/)/.test(pathname);
+    const isLoginAsset = request.method === 'GET' && /^(?:\/_next\/static\/|\/fonts\/)/.test(pathname);
 
     if (!isLoginPage && !isLoginApi && !isLoginAsset) {
       const check = await verifyCloudAdminCookie(request.cookies.get('ya_cloud_admin')?.value);
@@ -269,4 +280,4 @@ export async function middleware(request: NextRequest) {
   return response;
 }
 
-export const config = { matcher: ['/((?!_next/static|_next/image|favicon.ico).*)'] };
+export const config = { matcher: ['/((?!_next/static|favicon.ico).*)'] };

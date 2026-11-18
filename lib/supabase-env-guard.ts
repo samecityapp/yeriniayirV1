@@ -44,6 +44,9 @@ export function validatedSupabaseTarget(): Target {
       throw new Error('Supabase build policy missing');
     }
     const host = window.location.hostname.toLowerCase();
+    if (!host || host.endsWith('.')) {
+      throw new Error('Malformed or trailing-dot browser origin rejected');
+    }
     if (descriptor.environment === 'production' && !PRODUCTION_BROWSER_HOSTS.includes(host)) {
       throw new Error('Production Supabase browser origin rejected');
     }

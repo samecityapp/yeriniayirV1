@@ -11,6 +11,15 @@ export async function POST(request:Request){
   const result=await admin.client.rpc('ya_publish_order',{p_scope:p.scope,p_expected:p.expectedRevision,p_order:p.order,p_reason:p.reason});
   if(result.error){const status=result.error.code==='PT409'?409:result.error.code==='42501'?403:result.error.code==='P0001'?400:503;
    return Response.json({error:'Değişiklik doğrulanamadı; güncel sürümü yeniden yükleyin.'},{status,headers:PRIVATE_HEADERS});}
-  invalidateCloudPublication();revalidateTag('ya-publication');revalidatePath('/tr');revalidatePath('/en');revalidatePath('/api/gastronomy/regions/moda');return Response.json({revision:result.data},{headers:PRIVATE_HEADERS});
+  invalidateCloudPublication();
+  revalidateTag('ya-publication');
+  const regionSlug = p.scope.split('/')[0];
+  revalidatePath('/tr');
+  revalidatePath('/en');
+  revalidatePath('/el');
+  if (regionSlug && /^[a-z0-9-]+$/.test(regionSlug)) {
+    revalidatePath(`/api/gastronomy/regions/${regionSlug}`);
+  }
+  return Response.json({revision:result.data},{headers:PRIVATE_HEADERS});
  }catch{return Response.json({error:'İşlem tamamlanamadı.'},{status:503,headers:PRIVATE_HEADERS});}
 }

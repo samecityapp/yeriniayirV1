@@ -62,7 +62,7 @@ for (const file of trackedFiles) {
       recordFinding(m[0], 'Google API key', file, index + 1);
     }
     for (const m of line.matchAll(
-      /(?:sb_secret_[A-Za-z0-9_-]{20,}|gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{40,}|sk-(?:proj-)?[A-Za-z0-9_-]{32,}|tvly-[A-Za-z0-9_-]{18,})/g
+      /(?:sb_secret_[A-Za-z0-9_-]{10,}|gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{40,}|sk-(?:proj-)?[A-Za-z0-9_-]{32,}|tvly-[A-Za-z0-9_-]{18,})/g
     )) {
       recordFinding(m[0], 'API/Secret token', file, index + 1);
     }
@@ -80,7 +80,7 @@ for (const file of trackedFiles) {
       recordFinding(`private-key:${file}:${index + 1}`, 'Private key header', file, index + 1);
     }
     for (const m of line.matchAll(/postgres(?:ql)?:\/\/[^:\s/'"]+?:[^@\s/'"]+?@[^\s/'"]+/gi)) {
-      if (!/user:pass|username:password|postgres:postgres@127\.0\.0\.1|localhost/i.test(m[0])) {
+      if (!/^postgres(?:ql)?:\/\/(?:user:pass|username:password|postgres:postgres)@(?:127\.0\.0\.1|localhost)(?::\d+)?$/i.test(m[0])) {
         recordFinding(m[0], 'Postgres URI with credentials', file, index + 1);
       }
     }
