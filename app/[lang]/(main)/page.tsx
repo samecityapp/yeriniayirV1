@@ -3,20 +3,22 @@ import {GastronomyPageClient} from '@/components/food/GastronomyPageClient';
 import {readIntegrationDiscovery} from '@/lib/pilot/integration/discovery';
 import {toFoodDiscovery} from '@/lib/pilot/integration/foodAdapter';
 import {isLocalFoodPreview} from '@/lib/food/localPreview';
-import HotelHomePage, {generateMetadata as generateHotelMetadata} from './_legacy/HotelHomePage';
 
 export const dynamic='force-dynamic';
 
 export async function generateMetadata(props:{params: Promise<{lang:string}>}):Promise<Metadata>{
  const params = await props.params;
- if(await isLocalFoodPreview()){
-  return {
-   title:'Yerini Ayır — Seçkin Oteller & Gastronomi Keşif Rehberi',
-   description:'Kalabalıkların değil, bilenlerin tercih ettiği butik otelleri, kahvecileri, kahvaltıcıları ve restoranları keşfet.',
-   robots:{index:false,follow:false,googleBot:{index:false,follow:false}}
-  };
- }
- return generateHotelMetadata({params});
+ const isEn = params.lang === 'en';
+ const preview = await isLocalFoodPreview();
+ return {
+  title: isEn
+   ? 'Yerini Ayır — Verified Local Gastronomy Guide'
+   : 'Yerini Ayır — Doğrulanmış Yerel Gastronomi Rehberi',
+  description: isEn
+   ? 'Discover independent coffee roasters, neighborhood kitchens, bakeries and local culinary stops.'
+   : 'Kahvecileri, yemek mekanlarını, ekşi maya fırınları ve doğrulanmış yerel lezzet duraklarını keşfet.',
+  ...(preview ? {robots:{index:false,follow:false,googleBot:{index:false,follow:false}}} : {}),
+ };
 }
 
 export default async function UnifiedHomePage(
@@ -27,24 +29,20 @@ export default async function UnifiedHomePage(
  const targetRegion = searchParams.region || 'moda';
  const targetCategory = searchParams.category || '';
  const data = await readIntegrationDiscovery(targetRegion, targetCategory);
+ const resolvedData = data || (await readIntegrationDiscovery('moda', ''));
  const lang = params.lang === 'en' ? 'en' : 'tr';
 
- // Eğer kullanıcı Gastronomi sekmesini açtıysa (?view=gastronomi) veya bir bölge seçtiyse (?region=...)
- // doğrudan tam ekran orijinal Gastronomi sekmesi açılır!
- if (searchParams.view === 'gastronomi' || Boolean(searchParams.region)) {
-  const resolvedData = data || (await readIntegrationDiscovery('moda', ''));
-  if (resolvedData) {
-   return (
-    <GastronomyPageClient
-     discovery={toFoodDiscovery(resolvedData)}
-     initialLocationSlug={searchParams.region}
-     initialCategorySlug={searchParams.category}
-     lang={lang}
-     embedded={false}
-    />
-   );
-  }
+ if (!resolvedData) {
+  return null;
  }
 
- return <HotelHomePage params={params} />;
+ return (
+  <GastronomyPageClient
+   discovery={toFoodDiscovery(resolvedData)}
+   initialLocationSlug={searchParams.region}
+   initialCategorySlug={searchParams.category}
+   lang={lang}
+   embedded={false}
+  />
+ );
 }

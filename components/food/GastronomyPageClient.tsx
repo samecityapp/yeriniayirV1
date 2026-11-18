@@ -766,7 +766,7 @@ export function GastronomyPageClient({
   );
 
   return (
-    <div className={embedded ? "w-full bg-[#fafbfc] text-slate-900 flex flex-col font-sans antialiased" : "min-h-screen bg-[#fafbfc] text-slate-900 flex flex-col font-sans antialiased"}>
+    <div className={embedded ? "w-full bg-[#FCFAF8] text-[#181210] flex flex-col font-sans antialiased" : "min-h-screen bg-[#FCFAF8] text-[#181210] flex flex-col font-sans antialiased"}>
       {/* 1. ORTAK HEADER */}
       <GastronomyHeader
         currentLocation={selectedLocation}
@@ -776,38 +776,19 @@ export function GastronomyPageClient({
 
       {/* ANA İÇERİK — ORİJİNAL TAM GENİŞLİK / MAX-W-2XL DÜZENİ */}
       <main className="flex-1 max-w-2xl w-full mx-auto px-3.5 min-[375px]:px-4 sm:px-6 py-3 sm:py-5">
-        {/* KOMPAKT SEKME (TAB) GEÇİŞİ: OTELLER / GASTRONOMİ KEŞFİ */}
-        <div className="flex justify-center mb-4">
-          <div className="inline-flex max-w-full items-center p-1 rounded-full bg-slate-200/70 border border-slate-200/90 shadow-sm">
-            <a
-              href={`/${lang}`}
-              className="inline-flex items-center gap-1.5 sm:gap-2 px-3 min-[380px]:px-4 sm:px-5 py-2 rounded-full text-slate-600 hover:text-slate-900 font-bold text-[11px] min-[375px]:text-xs sm:text-sm whitespace-nowrap transition-all"
-            >
-              <span>🏨</span>
-              <span>{lang === 'tr' ? 'Oteller' : 'Hotels'}</span>
-            </a>
-            <a
-              href={`/${lang}?view=gastronomi`}
-              className="inline-flex items-center gap-1.5 sm:gap-2 px-3 min-[380px]:px-4 sm:px-5 py-2 rounded-full bg-white text-slate-950 font-bold text-[11px] min-[375px]:text-xs sm:text-sm whitespace-nowrap shadow-sm border border-slate-200/70 transition-all"
-            >
-              <span>🍽️</span>
-              <span>{lang === 'tr' ? 'Gastronomi Keşfi' : 'Gastronomy Discovery'}</span>
-            </a>
-          </div>
-        </div>
         {/* =================================================================== */}
         {/* 1. DURUM: KONUM HENÜZ SEÇİLMEDİ (YENİ MODERN HERO & KONUM SEÇİMİ)   */}
         {/* =================================================================== */}
         {regionParam && !selectedLocation ? (
-          <div className="py-12 px-2 text-center"><h1 className="text-xl font-bold break-words">Bu konum için rehber henüz hazır değil.</h1><button className="mt-4 text-blue-600 font-semibold" onClick={()=>router.push(`/${lang}`)}>Konum seçimine dön</button></div>
+          <div className="py-12 px-2 text-center"><h1 className="text-xl font-bold break-words">Bu konum için rehber henüz hazır değil.</h1><button className="mt-4 text-[#C42B1C] hover:text-[#A61E11] font-semibold" onClick={()=>router.push(`/${lang}`)}>Konum seçimine dön</button></div>
         ) : !selectedLocation ? (
           <div className="pt-2 sm:pt-4 pb-12 max-w-xl mx-auto">
             {/* BAŞLIK & METİN — İKONSUZ, HEADER'IN DİREKT BİR TIK ALTINDA */}
             <div className="text-center pt-2 sm:pt-4 pb-1">
-              <h1 className="text-[clamp(1.5rem,6.5vw,2.75rem)] font-black tracking-tight text-slate-950 uppercase leading-[1.08] [text-wrap:balance]">
+              <h1 className="text-[clamp(1.5rem,6.5vw,2.75rem)] font-black tracking-tight text-[#181210] uppercase leading-[1.08] [text-wrap:balance]">
                 CANIN NE ÇEKİYOR?
               </h1>
-              <p className="text-[13px] min-[375px]:text-sm sm:text-base font-medium text-slate-600 leading-relaxed mt-2.5 sm:mt-3 max-w-md mx-auto [text-wrap:pretty] px-1">
+              <p className="text-[13px] min-[375px]:text-sm sm:text-base font-medium text-[#5C4B45] leading-relaxed mt-2.5 sm:mt-3 max-w-md mx-auto [text-wrap:pretty] px-1">
                 Konum seç! Kahvecileri, yemek mekanlarını ve yerel deneyimleri keşfet.
               </p>
             </div>
@@ -817,23 +798,23 @@ export function GastronomyPageClient({
               <button
                 type="button"
                 onClick={() => setIsLocationModalOpen(true)}
-                className="w-full flex items-center justify-between gap-2 sm:gap-3 p-2 sm:p-3 bg-white hover:bg-slate-50/90 active:bg-slate-100 border border-slate-200/90 hover:border-blue-400 rounded-full shadow-[0_8px_24px_-4px_rgba(15,23,42,0.08),0_2px_6px_rgba(15,23,42,0.03)] hover:shadow-[0_16px_36px_-6px_rgba(37,99,235,0.15)] transition-all duration-200 group active:scale-[0.99] text-left"
+                className="w-full flex items-center justify-between gap-2 sm:gap-3 p-2 sm:p-3 bg-white hover:bg-[#FFFDFC] active:bg-[#FAF6F2] border border-[#EAE0D8] hover:border-[#C42B1C]/45 rounded-full shadow-[0_8px_24px_-4px_rgba(24,18,16,0.08),0_2px_6px_rgba(24,18,16,0.03)] hover:shadow-[0_16px_36px_-6px_rgba(196,43,28,0.16)] transition-all duration-200 group active:scale-[0.99] text-left"
               >
                 <div className="flex items-center gap-2.5 sm:gap-3 pl-0.5 sm:pl-1.5 min-w-0 flex-1">
-                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-blue-600 text-white flex items-center justify-center flex-shrink-0 shadow-md shadow-blue-500/25 group-hover:scale-105 transition-transform duration-200">
+                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#C42B1C] text-white flex items-center justify-center flex-shrink-0 shadow-md shadow-[#C42B1C]/25 group-hover:scale-105 transition-transform duration-200">
                     <Search size={18} />
                   </div>
                   <div className="min-w-0 flex-1">
-                    <div className="text-[15px] min-[375px]:text-base sm:text-lg font-black text-slate-950 tracking-tight leading-tight">
+                    <div className="text-[15px] min-[375px]:text-base sm:text-lg font-black text-[#181210] tracking-tight leading-tight">
                       Konum Seç
                     </div>
-                    <div className="text-[11px] sm:text-xs text-slate-500 font-medium truncate mt-0.5">
+                    <div className="text-[11px] sm:text-xs text-[#6E5A53] font-medium truncate mt-0.5">
                       Taksim & İstiklal · Asmalımescit & Pera · Yeniköy · Göktürk · Balat · Çukurcuma · Etiler · Ortaköy · Akaretler · Bebek · Galata · Beşiktaş Çarşı · Karaköy · Cihangir · Nişantaşı · Üsküdar · Kuzguncuk · Çengelköy · Koşuyolu & Acıbadem · Kadıköy · Moda · Caddebostan · Suadiye · Bostancı · Kaleiçi · Konyaaltı Sahil · Lara · Kaş Merkez · Kalkan Merkez · Alanya Merkez · Side · Kemer (Antalya) · Gaziantep · Kuşadası · Akyaka & Akçapınar · Fethiye Merkez · Çalış · Ölüdeniz · Yanıklar · Göcek (Fethiye) · Bodrum Merkez · Yalıkavak · Gümüşlük · Türkbükü · Bitez · Turgutreis · Ortakent & Yahşi · Gündoğan · Gümbet · Torba · Akyarlar (Bodrum) · Marmaris Merkez · Datça Merkez · Alsancak · Bostanlı · Karşıyaka · Bornova · Göztepe & Güzelyalı · Mavişehir · Alaçatı · Urla · Sığacık · Foça (İzmir) · Şanlıurfa Merkez · Mardin Merkez · Diyarbakır Merkez · Hatay Merkez · İskenderun Merkez · Adana Merkez · Mersin Merkez · Kızılay · Tunalı Hilmi · Bahçelievler & 7. Cadde · Gaziosmanpaşa · Çayyolu & Park Caddesi · Ümitköy & Beysukent · Ayrancı · Çukurambar (Ankara) · Aydın Merkez · Balıkesir Merkez · Ayvalık Merkez · Cunda · Bursa Merkez · Çanakkale Merkez · Edirne Merkez · Eskişehir Merkez · Denizli Merkez · Rize Merkez · Trabzon Merkez
                     </div>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-1 sm:gap-1.5 text-[11px] min-[375px]:text-xs font-bold text-white bg-slate-900 group-hover:bg-blue-600 px-3 min-[375px]:px-4 py-2 sm:py-2.5 rounded-full transition-colors duration-200 flex-shrink-0 mr-0.5 sm:mr-1 shadow-sm">
+                <div className="flex items-center gap-1 sm:gap-1.5 text-[11px] min-[375px]:text-xs font-bold text-white bg-[#181210] group-hover:bg-[#C42B1C] px-3 min-[375px]:px-4 py-2 sm:py-2.5 rounded-full transition-colors duration-200 flex-shrink-0 mr-0.5 sm:mr-1 shadow-sm">
                   <span>Keşfet</span>
                   <ChevronRight size={14} />
                 </div>
@@ -842,16 +823,16 @@ export function GastronomyPageClient({
 
             {/* POPÜLER HIZLI SEÇİM ÇİPLERİ (11 KONUM) */}
             <div data-testid="quick-discovery-list" className="flex items-center justify-center flex-wrap gap-1.5 sm:gap-2 mb-7 sm:mb-8">
-              <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 mr-0.5">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-[#68554E] mr-0.5">
                 Hızlı Keşif:
               </span>
               {quickDiscoveryRegions.map((region) => (
                 <button
                   key={region.id}
                   onClick={() => handleSelectLocation(region)}
-                  className="inline-flex items-center gap-1 min-h-[34px] sm:min-h-[36px] max-w-full px-2.5 sm:px-3 py-1.5 rounded-full text-[11px] sm:text-xs font-bold bg-white hover:bg-blue-50 text-slate-700 hover:text-blue-700 border border-slate-200/80 hover:border-blue-300 shadow-sm transition-all active:scale-95"
+                  className="inline-flex items-center gap-1 min-h-[34px] sm:min-h-[36px] max-w-full px-2.5 sm:px-3 py-1.5 rounded-full text-[11px] sm:text-xs font-bold bg-white hover:bg-[#FFF5F3] text-[#2F2521] hover:text-[#A61E11] border border-[#EAE0D8] hover:border-[#E2B5AA] shadow-xs transition-all active:scale-95"
                 >
-                  <MapPin size={11} className="text-blue-600 flex-shrink-0" />
+                  <MapPin size={11} className="text-[#C42B1C] flex-shrink-0" />
                   <span className="truncate">{region.name}</span>
                 </button>
               ))}
@@ -860,10 +841,10 @@ export function GastronomyPageClient({
             {/* ÖRNEK KEŞİF BÖLGELERİ (11 BÖLGE) — ZENGİN GÖRSEL DERGİ KARTLARI */}
             <div>
               <div className="flex items-center justify-between gap-2 mb-3 px-1">
-                <span className="text-[11px] sm:text-xs font-black uppercase tracking-wider text-slate-500">
+                <span className="text-[11px] sm:text-xs font-black uppercase tracking-wider text-[#68554E]">
                   Öne Çıkan Keşif Bölgeleri
                 </span>
-                <span className="text-[11px] font-bold text-slate-500 flex-shrink-0">
+                <span className="text-[11px] font-bold text-[#68554E] flex-shrink-0">
                   {readyRegions.length} Bölge Hazır
                 </span>
               </div>
@@ -889,7 +870,7 @@ export function GastronomyPageClient({
                           handleSelectLocation(region);
                         }
                       }}
-                      className="group relative w-full min-h-[11.5rem] sm:min-h-[12.5rem] rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer shadow-[0_6px_20px_-4px_rgba(0,0,0,0.1)] hover:shadow-[0_16px_36px_-6px_rgba(0,0,0,0.22)] border border-slate-200/80 transition-all duration-300 active:scale-[0.99] select-none flex flex-col"
+                      className="group relative w-full min-h-[11.5rem] sm:min-h-[12.5rem] rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer shadow-[0_6px_20px_-4px_rgba(24,18,16,0.12)] hover:shadow-[0_16px_36px_-6px_rgba(196,43,28,0.22)] border border-[#EFE5DF] transition-all duration-300 active:scale-[0.99] select-none flex flex-col"
                     >
                       {/* Arka Plan Görseli */}
                       <Image
@@ -902,35 +883,42 @@ export function GastronomyPageClient({
                         fetchPriority={index < 2 ? 'high' : undefined}
                       />
 
-                      {/* Çok Katmanlı Karartma Gradyanı */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/60 to-slate-900/45 group-hover:from-slate-950 transition-colors" />
+                      {/* Sıcak Espresso Çok Katmanlı Karartma Gradyanı */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#181210]/95 via-[#181210]/58 to-[#181210]/35 group-hover:from-[#181210] transition-colors" />
 
                       {/* Kart İçi İçerik */}
                       <div className="relative flex-1 p-4 sm:p-5 flex flex-col justify-between gap-4">
                         {/* Üst Bar: Rozet ve Ok Butonu */}
                         <div className="flex items-center justify-between gap-2">
-                          <span className="text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-full bg-slate-900/45 backdrop-blur-md text-white border border-white/25 truncate">
+                          <span className="text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-full bg-[#181210]/55 backdrop-blur-md text-white border border-white/25 truncate">
                             {curated.badge}
                           </span>
-                          <div className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 group-hover:border-blue-500 transition-colors">
+                          <div className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white flex items-center justify-center flex-shrink-0 group-hover:bg-[#C42B1C] group-hover:border-[#C42B1C] transition-colors">
                             <ChevronRight size={16} />
                           </div>
                         </div>
 
                         {/* Alt Alan: Şehir/Semt Başlığı ve Vibe Açıklaması */}
                         <div className="min-w-0">
-                          <h2 className="text-[clamp(1.125rem,4.5vw,1.5rem)] font-black text-white tracking-tight leading-snug break-words group-hover:text-blue-200 transition-colors">
+                          <h2 className="text-[clamp(1.125rem,4.5vw,1.5rem)] font-black text-white tracking-tight leading-snug break-words group-hover:text-[#FDE68A] transition-colors">
                             {curated.headline}
                           </h2>
-                          <p className="text-xs sm:text-[13px] text-slate-200 font-medium line-clamp-2 mt-1 leading-relaxed">
+                          <p className="text-xs sm:text-[13px] text-[#F5EBE6] font-medium line-clamp-2 mt-1 leading-relaxed">
                             {curated.vibe}
                           </p>
-                          <div className="flex items-center gap-1 text-[11px] font-extrabold text-blue-300 mt-2 group-hover:translate-x-1 transition-transform">
+                          <div className="flex items-center gap-1 text-[11px] font-extrabold text-[#FDBA74] mt-2 group-hover:translate-x-1 transition-transform">
                             <span>Rehberi Keşfet</span>
                             <ChevronRight size={12} />
                           </div>
                         </div>
                       </div>
+
+                      {/* 3px San Marzano İmza Şeridi */}
+                      <div
+                        aria-hidden="true"
+                        className="relative z-10 w-full h-[3px] flex-shrink-0"
+                        style={{ background: 'linear-gradient(90deg, #C42B1C 0%, #EA580C 55%, #F59E0B 100%)' }}
+                      />
                     </div>
                   );
                 })}
@@ -1048,12 +1036,12 @@ export function GastronomyPageClient({
 
       {/* ALT BİLGİ / FOOTER */}
       {!embedded && (
-        <footer className="mt-auto border-t border-slate-200/70 bg-white py-6 px-4 text-center text-slate-500 text-xs select-none">
+        <footer className="mt-auto border-t border-[#EFE5DF] bg-white py-6 px-4 text-center text-[#68554E] text-xs select-none">
           <div className="max-w-2xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-3 text-[11px]">
-            <div className="flex items-center gap-1 font-bold text-slate-700 flex-shrink-0">
+            <div className="flex items-center gap-1 font-bold text-[#181210] flex-shrink-0">
               <span>YERİNİ AYIR</span>
-              <span className="text-blue-600">·</span>
-              <span className="font-normal text-slate-500">Gastronomi Keşif Platformu</span>
+              <span className="text-[#C42B1C]">·</span>
+              <span className="font-normal text-[#68554E]">Gastronomi Keşif Platformu</span>
             </div>
             <div className="text-center sm:text-right break-words max-w-full">
               {selectedLocation ? `${selectedLocation.displayName} Rehberi` : 'Doğrulanmış Yerel Gastronomi Rehberi'}

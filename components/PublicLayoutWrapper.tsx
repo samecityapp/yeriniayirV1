@@ -21,11 +21,18 @@ export function PublicLayoutWrapper({
   lang,
   dict,
 }: PublicLayoutWrapperProps) {
+  const pathname = usePathname();
+  const isGastronomyRoot =
+    pathname === '/' ||
+    pathname === '' ||
+    pathname === `/${lang}` ||
+    pathname === `/${lang}/`;
+
   return (
     <>
-      <Header lang={lang} />
+      {!isGastronomyRoot && <Header lang={lang} />}
       <div className="min-h-[100dvh]">{children}</div>
-      {footer}
+      {!isGastronomyRoot && footer}
       {!preview && <CookieBanner dict={dict} />}
     </>
   );
