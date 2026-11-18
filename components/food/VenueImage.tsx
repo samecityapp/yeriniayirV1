@@ -36,7 +36,7 @@ export function VenueImage({visual,priority=false,sizes='(max-width: 640px) 100v
  const representative=!visual.url||visual.kind==='illustration'||failedUrls.includes(primary);
  return <>
   {inline?<InlineCategoryGraphic category={visual.category}/>:<Image src={src} alt={representative?`${illustrationLabel(visual.category)} kategorisi için temsili illüstrasyon`:'Doğrulanmış işletme fotoğrafı'} fill sizes={sizes} priority={priority} fetchPriority={priority?'high':undefined} unoptimized={visual.kind==='rights-cleared-photo'} className={`object-cover ${className}`} onError={()=>setFailedUrls(previous=>previous.includes(src)?previous:[...previous,src])}/>}
-  {representative?<span data-representative-label className={`absolute ${labelPlacement==='below-category'?'top-14 left-4':'bottom-3 left-3'} z-10 rounded-full border border-slate-200/70 bg-white/95 px-3 py-1 text-[11px] font-semibold leading-normal text-slate-600`}>Temsili görsel</span>:null}
+  {representative?<span data-representative-label className={`absolute ${labelPlacement==='below-category'?'top-14 left-4':'bottom-3 left-3'} z-10 rounded-full border border-[#EFE5DF] bg-white/95 px-3 py-1 text-[11px] font-semibold leading-normal text-[#181210]`}>Temsili görsel</span>:null}
   {!representative&&visual.attribution?.length?<span className="absolute bottom-2 left-2 right-2 z-10 rounded bg-white/95 p-1 text-[10px] text-slate-700">{visual.attribution.map((a,i)=>a.url?<a key={i} href={a.url} target="_blank" rel="noopener noreferrer" onClick={e=>e.stopPropagation()}>{a.label} </a>:<span key={i}>{a.label} </span>)}</span>:null}
  </>;
 }

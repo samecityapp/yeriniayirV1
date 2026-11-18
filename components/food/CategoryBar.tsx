@@ -74,10 +74,10 @@ export function CategoryBar({
               aria-pressed={isActive}
               type="button"
               onClick={() => onSelectCategory(cat.slug)}
-              className={`min-w-0 w-full min-h-[42px] flex items-center justify-center gap-1 sm:gap-1.5 py-2.5 sm:py-3 px-2 rounded-2xl sm:rounded-full text-[11px] min-[375px]:text-xs sm:text-[13px] font-bold text-center transition-all duration-150 active:scale-95 select-none ${
+              className={`min-w-0 w-full min-h-[42px] flex items-center justify-center gap-1 sm:gap-1.5 py-2.5 sm:py-3 px-2 rounded-2xl sm:rounded-full text-[11px] min-[375px]:text-xs sm:text-[13px] font-bold text-center transition-all duration-150 active:scale-95 select-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C42B1C] ${
                 isActive
-                  ? 'bg-blue-600 text-white shadow-md shadow-blue-500/25 ring-2 ring-blue-600/20'
-                  : 'bg-white hover:bg-slate-50 text-slate-800 border border-slate-200/90 shadow-sm hover:border-slate-300'
+                  ? 'bg-[#C42B1C] text-white shadow-md shadow-[#C42B1C]/25 ring-2 ring-[#C42B1C]/20'
+                  : 'bg-white hover:bg-[#FFF5F3] text-[#181210] hover:text-[#B82516] border border-[#EFE5DF] hover:border-[#E5C5BC] shadow-sm'
               }`}
             >
               <span className="text-sm sm:text-base leading-none flex-shrink-0">{emoji}</span>

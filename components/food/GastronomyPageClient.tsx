@@ -944,12 +944,12 @@ export function GastronomyPageClient({
           <div className="pt-1">
             {/* 1. BAŞLIK & AÇIKLAMA (MOCKUP İLE BİREBİR AYNI DİZİLİM) */}
             <div className="pt-1 pb-4 sm:pb-5">
-              <h1 className="text-[clamp(1.25rem,5vw,1.875rem)] font-black text-slate-950 tracking-tight flex items-start sm:items-center gap-2 sm:gap-2.5 leading-snug">
+              <h1 className="text-[clamp(1.25rem,5vw,1.875rem)] font-black text-[#181210] tracking-tight flex items-start sm:items-center gap-2 sm:gap-2.5 leading-snug">
                 <span className="text-2xl sm:text-3xl leading-none flex-shrink-0 mt-0.5 sm:mt-0">{categoryResult?.category.emoji || '🍽️'}</span>
                 <span className="min-w-0 break-words [text-wrap:balance]">{formatLocationCategoryHeading(selectedLocation.locative, categoryResult?.category.title)}</span>
               </h1>
               {selectedLocation.characterSubtitle && (
-                <p className="text-xs sm:text-sm text-slate-500 font-medium mt-1.5 leading-relaxed">
+                <p className="text-xs sm:text-sm text-[#6E5A53] font-medium mt-1.5 leading-relaxed">
                   {selectedLocation.characterSubtitle}
                 </p>
               )}
@@ -984,21 +984,21 @@ export function GastronomyPageClient({
                 {categoryResult.nearbyVenues && categoryResult.nearbyVenues.length > 0 && (
                   <section
                     aria-labelledby="nearby-suggestions-heading"
-                    className="pt-6 sm:pt-8 border-t border-slate-200/80 space-y-4"
+                    className="pt-6 sm:pt-8 border-t border-[#EFE5DF] space-y-4"
                     style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 640px' }}
                   >
                     <div className="space-y-1">
-                      <div className="inline-flex items-center gap-1.5 text-[11px] font-extrabold uppercase tracking-wider text-blue-700">
-                        <MapPin size={12} className="text-blue-600" />
+                      <div className="inline-flex items-center gap-1.5 text-[11px] font-extrabold uppercase tracking-wider text-[#B82516]">
+                        <MapPin size={12} className="text-[#C42B1C]" />
                         <span>KOMŞU SINIR · EN FAZLA 400 METRE</span>
                       </div>
                       <h2
                         id="nearby-suggestions-heading"
-                        className="text-lg sm:text-xl font-black text-slate-950 tracking-tight"
+                        className="text-lg sm:text-xl font-black text-[#181210] tracking-tight"
                       >
                         Çok Yakındaki Diğer Öneri
                       </h2>
-                      <p className="text-xs sm:text-sm text-slate-500 font-medium leading-relaxed">
+                      <p className="text-xs sm:text-sm text-[#6E5A53] font-medium leading-relaxed">
                         {selectedLocation.name} sınırının hemen dışında, yürüme mesafesindeki (maks. 400 m) tek komşu{' '}
                         {categoryResult.category.label.toLocaleLowerCase('tr')} önerisi
                       </p>
@@ -1020,7 +1020,7 @@ export function GastronomyPageClient({
 
               </div>
             ) : (
-              <div className="py-12 text-center text-slate-500 text-xs font-medium bg-white rounded-2xl border border-dashed border-slate-200">
+              <div className="py-12 text-center text-[#6E5A53] text-xs font-medium bg-white rounded-2xl border border-dashed border-[#EFE5DF]">
                 Bu kategoride bölgede henüz doğrulanmış mekan bulunmuyor.
               </div>
             )}
