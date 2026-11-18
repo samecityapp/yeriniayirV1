@@ -1,0 +1,1000 @@
+{
+  "schemaVersion": 3,
+  "verifiedAt": "2026-11-15T10:05:47.230Z",
+  "region": {
+    "id": "akaretler-besiktas",
+    "slug": "akaretler",
+    "city": "İstanbul",
+    "district": "Beşiktaş",
+    "neighborhood": "Akaretler",
+    "officialQuarter": "Vişnezade",
+    "displayName": "Akaretler, Beşiktaş, İstanbul",
+    "locative": "Akaretler'de",
+    "path": [
+      "istanbul",
+      "besiktas",
+      "akaretler"
+    ],
+    "aliases": [
+      "Akaretler",
+      "Vişnezade",
+      "Visnezade",
+      "Süleyman Seba",
+      "Suleyman Seba",
+      "Sıraevler",
+      "Siraevler",
+      "Şair Nedim",
+      "Sair Nedim",
+      "Maçka"
+    ],
+    "scopeNote": "İstanbul · Beşiktaş · Vişnezade (Akaretler Sıraevler, Süleyman Seba Cd. ve Şair Nedim Çevresi Doğrulanmış Seçkisi)",
+    "characterSubtitle": "Vişnezade Sıraevler aksından Süleyman Seba ve Şair Nedim yokuşuna uzanan kavurma ve mantı durakları, nitelikli kahveciler, smash burgerciler, kokteyl barlar ve butik meyhanelerden oluşan seçki.",
+    "center": {
+      "lat": 41.0434,
+      "lng": 28.9999
+    },
+    "boundary": {
+      "bbox": {
+        "minLat": 41.041,
+        "maxLat": 41.047,
+        "minLng": 28.996,
+        "maxLng": 29.0038
+      }
+    }
+  },
+  "categories": [
+    {
+      "id": "pizza",
+      "slug": "pizza",
+      "label": "Pizza",
+      "title": "Pizza",
+      "emoji": "🍕",
+      "isMustTry": false
+    },
+    {
+      "id": "hamburger",
+      "slug": "hamburger",
+      "label": "Hamburger",
+      "title": "Hamburger",
+      "emoji": "🍔",
+      "isMustTry": false
+    },
+    {
+      "id": "kahve",
+      "slug": "kahve",
+      "label": "Kahve",
+      "title": "Kahve",
+      "emoji": "☕",
+      "isMustTry": false
+    },
+    {
+      "id": "date",
+      "slug": "date-mekanlari",
+      "label": "Date",
+      "title": "Date Mekanları",
+      "emoji": "🍷",
+      "isMustTry": false
+    },
+    {
+      "id": "kahvalti",
+      "slug": "kahvalti",
+      "label": "Kahvaltı",
+      "title": "Kahvaltı",
+      "emoji": "🍳",
+      "isMustTry": false
+    },
+    {
+      "id": "denemelisin",
+      "slug": "denemelisin",
+      "label": "Denemelisin",
+      "title": "Mutlaka Denemelisin",
+      "emoji": "⭐",
+      "isMustTry": false
+    }
+  ],
+  "venues": [
+    {
+      "id": "aka-emporio",
+      "placeId": "ChIJ611wZV-3yhQRYD_HxyzjiAA",
+      "name": "Emporio Ristorante Akaretler",
+      "address": "Vişnezade, Şair Nedim Cd. No:3, 34357 Beşiktaş/İstanbul",
+      "neighborhood": "Şair Nedim Cd. / Sıraevler, Akaretler",
+      "categoryId": "pizza",
+      "secondaryCategoryIds": [
+        "date"
+      ],
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=38530378302439264",
+      "coordinates": {
+        "lat": 41.042395899999995,
+        "lng": 29.002623
+      },
+      "description": "Akaretler Sıraevler girişinde San Marzano domates sosu ve ince hamurlu 32 cm Napoli pizzalarının yanı sıra klasik İtalyan makarnalarıyla köklü masa servisi sunan restoran.",
+      "whatToOrder": [
+        "Affumicato Costola Pizza (Füme Kaburga & Roka)",
+        "Pizza Funghi Porcini (Porçini & Cremini Mantar)",
+        "Quattro Formaggi Pizza"
+      ],
+      "menuFrom": [
+        "Pizza Marinara",
+        "Pizza Margherita",
+        "Pepperoni Pizza"
+      ],
+      "alsoTry": [
+        "Emporio Speciale & Taze İtalyan Makarnaları — Akşam buluşmalarında pizzanın yanına başlangıç ve el yapımı makarna tabaklarıyla masayı uzatma seçeneği sunar."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Tarihi Sıraevler cephesinde kaldırım masaları ve geniş iç salon · Akşam yemeklerinde çiftler, iş çıkışı grupları ve aile masalarıyla dengeli yoğunluk",
+        "Dezavantaj: Hafta sonu akşam saatlerinde Sıraevler önü dış masalar hızlı dolabiliyor.",
+        "Ulaşım: Akaretler Sıraevler kavşağında, Şair Nedim Caddesi başlangıç köşesinde Beşiktaş iskelesinden kısa yürüyüşle.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "aka-vona",
+      "placeId": "ChIJpw9qOTG3yhQRqKMVcDlplBM",
+      "name": "Vona Akaretler",
+      "address": "Vişnezade, Abacı Latif Sokaği NO: 2 A, 34357 Beşiktaş/İstanbul",
+      "neighborhood": "Abacı Latif Sk., Akaretler",
+      "categoryId": "hamburger",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=1410868278688326568",
+      "coordinates": {
+        "lat": 41.043116,
+        "lng": 28.997636
+      },
+      "description": "Vişnezade’nin ara sokağında uzun süre pişmiş tiftik eti, karamelize soğanlı Alman turşulu Vona Burgeri ve ev yapımı soslarıyla müdavim kitlesi oluşturan butik burgerci.",
+      "whatToOrder": [
+        "Tiftik Burger (Uzun Pişmiş Dana Eti)",
+        "Vona Burger (Cheddar, Karamelize Soğan & Soğan Cipsi)",
+        "Trüflü Cheddar Burger"
+      ],
+      "menuFrom": [
+        "Buffalo Tavuk Burger",
+        "Çıtır Patates Kızartması",
+        "El Yapımı Sos Çeşitleri"
+      ],
+      "alsoTry": [
+        "Buffalo Tavuk Burger & Trüflü Atıştırmalıklar — Kırmızı et dışındaki alternatiflerde çıtır tavuk burgeri ve ev yapımı soslar sık tercih ediliyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Sakin ara sokak cephesinde sınırlı dış ve samimi iç oturum · Öğle ve akşam saatlerinde bölge çalışanları ve burger odaklı gruplarla hareketli",
+        "Dezavantaj: Ara sokaktaki dükkân küçük olduğundan akşam saatlerinde kısa bekleme yaşanabilir.",
+        "Ulaşım: Süleyman Seba Caddesi’nin üst ucundan Abacı Latif Sokak içine girildiğinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "aka-single-bite",
+      "placeId": "ChIJL05eutS3yhQRUlZtL3Ztsfs",
+      "name": "The Single Bite",
+      "address": "Vişnezade, Sporcu Adil Sk. Nur Apt. NO: 1, 34357 Beşiktaş/İstanbul",
+      "neighborhood": "Sporcu Adil Sk., Akaretler",
+      "categoryId": "hamburger",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=18136397528766961234",
+      "coordinates": {
+        "lat": 41.0447835,
+        "lng": 29.000076699999994
+      },
+      "description": "İnce preslenerek kenarı mühürlenmiş katlı smash köfteleri, siyah sarımsak ve trüf bazlı imza soslarıyla Vişnezade’de yükselen genç smash burger durağı.",
+      "whatToOrder": [
+        "Original Smash (Çok Katlı Smash Köfte & Karamelize Soğan)",
+        "Garlic Eclipse (Siyah Sarımsak Sos & Karamelize Mantar)",
+        "White Diamond (Trüf Sos & Cheddar)"
+      ],
+      "menuFrom": [
+        "Smokey Antrikot Füme Burger",
+        "Hot Jalapeño Burger",
+        "Patates Kızartması"
+      ],
+      "alsoTry": [
+        "Smokey Antrikot Füme & Hot Smash Burger — Siyah sarımsak ve trüf profiline ek olarak antrikot fümeli veya acı mayolu katlı alternatifler dikkat çekiyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Küçük dükkân içi hızlı servis tezgâhı ve birkaç sokak masası · Genellikle genç misafirler ve paket servis yoğunluğuyla tempolu",
+        "Dezavantaj: İç oturma alanı kısıtlı olduğundan uzun süre oturmalık restoran düzeni sunmuyor.",
+        "Ulaşım: Şair Nedim ve Süleyman Seba’yı birbirine bağlayan ara sokaklardan Sporcu Adil Sokak’ta.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "aka-beny-burger",
+      "placeId": "ChIJLz6JtcS3yhQRlVZWFoaErys",
+      "name": "Beny Burger House",
+      "address": "Vişnezade, Şair Nedim Cd. No: 49/ A, 34357 Beşiktaş/İstanbul",
+      "neighborhood": "Şair Nedim Cd., Akaretler",
+      "categoryId": "hamburger",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=3147880375990507157",
+      "coordinates": {
+        "lat": 41.0441131,
+        "lng": 29.001084000000002
+      },
+      "description": "Şair Nedim Caddesi üzerinde geniş sos seçkisi eşliğindeki burgerlerinin yanı sıra tava cookie ve San Sebastian cheesecake gibi tatlılarıyla uzun oturuma uygun mahalle burgercisi.",
+      "whatToOrder": [
+        "Klasik Beny Burger & Özel Sos Seçkisi",
+        "Çıtır Patates & Peperton / Reverse Sos Tabağı",
+        "Tava Cookie (Sıcak Çikolatalı)"
+      ],
+      "menuFrom": [
+        "San Sebastian Cheesecake",
+        "Brownie",
+        "Cheesecake Çeşitleri"
+      ],
+      "alsoTry": [
+        "San Sebastian Cheesecake & Brownie Vitrini — Burger sonrasında tatlıya geçmek isteyenler için kendi kafeterya vitrininden sıcak cookie ve cheesecake seçenekleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Şair Nedim Caddesi üzerinde ferah iç salon ve cadde cepheli masalar · Öğrenci, arkadaş grupları ve tatlı-kahve molası verenlerle gün boyu dengeli",
+        "Dezavantaj: Günün her saatinde burger ve tatlı bir arada sunulduğu için salt gurme etçi arayanlara kafe ağırlıklı gelebilir.",
+        "Ulaşım: Şair Nedim Caddesi No:49 üzerinde, Akaretler’den Beşiktaş merkeze inen eğimde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "aka-caffestudio-kef",
+      "placeId": "ChIJq9r6K7m3yhQRqPeb8THZDVU",
+      "name": "caffestudio by KEF",
+      "address": "Vişnezade, Enis Akaygen Sk. No:11, 34445 Beşiktaş/İstanbul",
+      "neighborhood": "Enis Akaygen Sk., Akaretler",
+      "categoryId": "kahve",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=6128793476451268520",
+      "coordinates": {
+        "lat": 41.0432111,
+        "lng": 29.000060599999998
+      },
+      "description": "Profesyonel kahve ekipmanları kültüründen doğan, barista atölyeleri ve hassas kalibrasyonlu demlemelerinin yanına Norveç keki ve tiramisu eşlikçisi sunan uzman kahve stüdyosu.",
+      "whatToOrder": [
+        "Cortado & Çift Ristretto Flat White",
+        "Tek Kökenli V60 Demleme",
+        "Espresso Tonic"
+      ],
+      "menuFrom": [
+        "Norveç Keki",
+        "Tiramisu",
+        "Filtre Kahve"
+      ],
+      "alsoTry": [
+        "Norveç Keki & Ev Yapımı Tiramisu — Yüksek kalibrasyonlu espresso ve demlemelerin yanında hafif tatlı eşlikçisi arayan müdavimlerin tercih ettiği vitrin seçenekleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Enis Akaygen Sokak üzerinde yüksek tavanlı, sakin ve düzenli çalışma dostu iç mekân · Kahve odaklı müdavimler ve sakin sohbet arayanlarla kaliteli, düşük gürültülü tempo",
+        "Dezavantaj: Akaretler ana aksının bir tık üzerinde kaldığı için hafif yokuş çıkmak gerekiyor.",
+        "Ulaşım: Süleyman Seba Caddesi’nden Maçka yönüne doğru çıkarken Enis Akaygen Sokak içinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "aka-amazonas",
+      "placeId": "ChIJW0Rltly3yhQRsMo3D9N5VrU",
+      "name": "Amazonas Coffee Roastery",
+      "address": "Vişnezade, Süleyman Seba Cd. No:85/B, 34357 Beşiktaş/İstanbul",
+      "neighborhood": "Süleyman Seba Cd., Akaretler",
+      "categoryId": "kahve",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=13066765316262447792",
+      "coordinates": {
+        "lat": 41.0431252,
+        "lng": 28.997565299999998
+      },
+      "description": "Süleyman Seba Caddesi üst kesiminde Latin Amerika, Afrika ve Asya-Pasifik çekirdeklerini taze kavurup yöresel filtrelerden espressoya taşıyan samimi mahalle kavurmahanesi.",
+      "whatToOrder": [
+        "Yöresel Filtre Kahve (Latin Amerika & Afrika)",
+        "Flat White",
+        "Günlük Ev Yapımı Tiramisu"
+      ],
+      "menuFrom": [
+        "Norveç Pastası",
+        "Taze Sandviç Çeşitleri",
+        "White Mocha"
+      ],
+      "alsoTry": [
+        "Norveç Pastası & Taze Sandviçler — Kavurmahanenin taze kahvelerine eşlik eden günlük tatlı vitrini semt müdavimlerinin sık tercihleri arasında."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Süleyman Seba Caddesi Maçka tarafında sıcak küçük iç mekân ve birkaç dış tabure · Çevre sakinleri ve düzenli paket çekirdek alanlarla samimi, tanıdık ortam",
+        "Dezavantaj: Büyük çalışma masaları sınırlı olduğu için uzun bilgisayar oturumundan çok kahve molasına daha uygun.",
+        "Ulaşım: Süleyman Seba Caddesi No:85/B’de, Maçka Parkı ve Abacı Latif köşesine yakın.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "aka-rodi-coffee",
+      "placeId": "ChIJF2O61CG3yhQRGtbufRXY21w",
+      "name": "Rodi Coffee Shop",
+      "address": "Vişnezade mahallesi süleyman seba caddesi, Vişnezade, Refik Osman Top Sk. No:22, 34000 Beşiktaş/İstanbul",
+      "neighborhood": "Refik Osman Top Sk., Akaretler",
+      "categoryId": "kahve",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=6691179258207720986",
+      "coordinates": {
+        "lat": 41.043295799999996,
+        "lng": 29.0006161
+      },
+      "description": "Süleyman Seba’nın bir arka paralelindeki Refik Osman Top Sokak’ta soğuk-sıcak özel kahvelerini ve matcha reçetelerini kahve yanına fıstıklı baklava eşleşmesiyle sunan sakin dükkân.",
+      "whatToOrder": [
+        "Filtre Kahve & Flat White",
+        "Iced Turkish Delight / Lychee Matcha Latte",
+        "Iced Palo Santo Latte"
+      ],
+      "menuFrom": [
+        "Iced Salt Caramel Latte",
+        "Kahve Yanı Fıstıklı Baklava",
+        "Cheesecake & Brownie"
+      ],
+      "alsoTry": [
+        "Kahve Yanı Fıstıklı Baklava & Cheesecake — Klasik kahve tatlılarının dışında taze baklava porsiyonları ve özel matcha reçeteleri sık tercih ediliyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Ara sokak cepheli sakin masa düzeni ve mütevazı iç alan · Semt sakinleri ve yan sokak huzuru arayan kahveseverlerle sakin tempo",
+        "Dezavantaj: Ana cadde vitrini dışında ara sokakta yer aldığı için bilerek gidilmesi gereken bir adres.",
+        "Ulaşım: Süleyman Seba Caddesi’nden Refik Osman Top Sokak içine saptıktan birkaç adım sonra.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "aka-blum",
+      "placeId": "ChIJjTbVY3W3yhQRcJ_jN6YzDi8",
+      "name": "Blum Coffee House",
+      "address": "Vişnezade, Süleyman Seba Cd. 64/A, 34357 Beşiktaş/İstanbul",
+      "neighborhood": "Süleyman Seba Cd., Akaretler",
+      "categoryId": "kahve",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=3390704358451814256",
+      "coordinates": {
+        "lat": 41.04282,
+        "lng": 28.999251999999995
+      },
+      "description": "Süleyman Seba Caddesi’nin köklü bağımsız üçüncü nesil kahvecisi; V60 ve Syphon gibi demlemelerin yanına Pistacchino, keçiboynuzlu latte ve rafine şekersiz/glutensiz kekler sunar.",
+      "whatToOrder": [
+        "Pistacchino (Antep Fıstıklı Cappuccino)",
+        "V60 / Syphon Yöresel Demleme",
+        "Blummy Brownie (Glutensiz)"
+      ],
+      "menuFrom": [
+        "Blum Keçiboynuzlu Latte",
+        "Blummy Cake (Badem Unlu)",
+        "Affogato"
+      ],
+      "alsoTry": [
+        "Keçiboynuzlu Latte & Badem Unlu Rafine Şekersiz Kekler — Glutensiz ve rafine şekersiz beslenenlerin sık yöneldiği ev yapımı kek ve kiş vitriniyle semtte fark yaratıyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Caddeden yüksek tavanlı, ahşap ağırlıklı şık iç salon ve ön teras masaları · Hafta içi serbest çalışanlar ve hafta sonu Akaretler gezginleriyle canlı",
+        "Dezavantaj: Hafta sonu öğleden sonraları Akaretler yaya akışıyla ön bölüm oldukça kalabalıklaşıyor.",
+        "Ulaşım: Akaretler Sıraevler hattı boyunca Süleyman Seba Caddesi No:64/A’da.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "aka-mahal-meze",
+      "placeId": "ChIJrcvgsD63yhQRKCNGEvBdmAo",
+      "name": "Mahal Meze & Meyhane",
+      "address": "Vişnezade, Şair Nedim Cd. No:81/A, 34357 Beşiktaş/İstanbul",
+      "neighborhood": "Şair Nedim Cd., Akaretler",
+      "categoryId": "date",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=763463422519419688",
+      "coordinates": {
+        "lat": 41.0454972,
+        "lng": 29.000147700000003
+      },
+      "description": "Eski mahalle meyhanesi samimiyetini retro detaylarla harmanlayan, Anadolu’nun farklı yörelerinden günlük meze seçkisi ve ara sıcaklarıyla akşam buluşmalarına yakışan butik meyhane.",
+      "whatToOrder": [
+        "Anadolu Yöresel Soğuk Meze Seçkisi",
+        "Deniz Ürünlü Ara Sıcaklar",
+        "Klasik Meyhane Paylaşım Sofrası"
+      ],
+      "menuFrom": [
+        "Günlük Meze Tepsisi",
+        "Kalamar & Deniz Mahsulleri",
+        "Tatlı Kapanışlar"
+      ],
+      "alsoTry": [
+        "Kalamar & Meyhane Tatlı Kapanışları — Soğuk meze başlangıcının devamında paylaşımlı ara sıcaklarla akşamı uzatan dengeli bir mutfak çizgisi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Retro objelerle dekore edilmiş sıcak, samimi meyhane salonu · Akşam yemeklerinde çiftler, küçük kutlama masaları ve düzenli müdavim grupları",
+        "Dezavantaj: Butik kapasitesi ve popüler akşam temposu nedeniyle rezervasyonsuz yer bulmak zor.",
+        "Ulaşım: Şair Nedim Caddesi No:81/A üzerinde, Akaretler’den Beşiktaş merkeze inmeden üst hatta.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "aka-agata",
+      "placeId": "ChIJqVCwrEy3yhQRBelLL4ItJs8",
+      "name": "Agata İstanbul",
+      "address": "Vişnezade, Süleyman Seba Cd. No:59, 34034 Beşiktaş/İstanbul",
+      "neighborhood": "Süleyman Seba Cd., Akaretler",
+      "categoryId": "date",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=14926668052128590085",
+      "coordinates": {
+        "lat": 41.0424546,
+        "lng": 28.999886900000003
+      },
+      "description": "Akaretler yokuşundaki tarihi köşe konumunda Anadolu baharatları ve modern klarifikasyon teknikleriyle kurgulanan imza kokteylleri küçük paylaşımlı tabaklarla buluşturan sanat odaklı bar.",
+      "whatToOrder": [
+        "Berraklaştırılmış İmza Kokteyller",
+        "Dana Brisket Bao",
+        "Levrek Ceviche"
+      ],
+      "menuFrom": [
+        "Kızarmış Karnabahar",
+        "Mevsimsel Sanat Temalı Kokteyl Seçkisi",
+        "Klasik Kokteyller"
+      ],
+      "alsoTry": [
+        "Kızarmış Karnabahar & Small Plates Bar Tabakları — Dana brisket bao ve levrek ceviche gibi tabaklar imza kokteyllerle akşam buluşmalarını eksiksiz tamamlıyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Tarihi köşe binada şık bar tezgâhı ve loş ışıklı yüksek/alçak masa düzeni · Kokteyl meraklıları, çiftler ve sanat temalı bar atmosferi arayan akşam misafirleri",
+        "Dezavantaj: Hafta sonu ilerleyen saatlerde bar önü kalabalıklaşıp ayakta sosyalleşme artabiliyor.",
+        "Ulaşım: Akaretler Sıraevler ana aksında, Süleyman Seba Caddesi No:59 köşesinde."
+      ]
+    },
+    {
+      "id": "aka-bordo-kulup",
+      "placeId": "ChIJ77fhXXW3yhQReukOEuHyszU",
+      "name": "Bordo Kulüp Maçka",
+      "address": "Süleyman Seba Cad, Vişnezade, Çeşme Meydanı Sk. No:13, 34357 Beşiktaş/İstanbul",
+      "neighborhood": "Çeşme Meydanı Sk., Akaretler",
+      "categoryId": "date",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=3869703553325918586",
+      "coordinates": {
+        "lat": 41.0432754,
+        "lng": 28.999174800000002
+      },
+      "description": "Süleyman Seba hattının bir yan cephesinde yüksek tavanlı beyaz örtülü masaları, akşam geç saatlere uzanan kokteyl barı ve paylaşımlı başlangıçlarıyla şık akşam randevusu adresi.",
+      "whatToOrder": [
+        "Ev Yapımı Kordiyal & İnfüzyon Kokteyller",
+        "Ağır Ateşte Aslanboğa Kokoreç",
+        "Acılı Tuna Tartar"
+      ],
+      "menuFrom": [
+        "Deniz Tarağı Başlangıcı",
+        "Levrek Ceviche",
+        "Zamansız Klasik Kokteyller"
+      ],
+      "alsoTry": [
+        "Deniz Tarağı & Levrek Ceviche Başlangıçları — Akşam yemeğinden kulüp enerjisine geçişte beyaz örtülü masaların sık paylaşılan rafine başlangıçları."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Yüksek tavanlı şık iç salon, beyaz örtülü yemek masaları ve bar bölümü · Özel akşam kutlamaları yapan çiftler ve şık giyimli gruplar",
+        "Dezavantaj: Gecenin ilerleyen saatlerinde yemek temposu yerini yüksek müzikli bar enerjisine bırakıyor.",
+        "Ulaşım: Süleyman Seba Caddesi üzerinden Çeşme Meydanı Sokak No:13 içine dönünce."
+      ]
+    },
+    {
+      "id": "aka-tiny-drinkery",
+      "placeId": "ChIJMU8eSM63yhQRZjcF9tODmVA",
+      "name": "Tiny Drinkery House",
+      "address": "Akaretler, Vişnezade, Şair Nedim Cd. N:31, 34357 Beşiktaş/İstanbul",
+      "neighborhood": "Şair Nedim Cd., Akaretler",
+      "categoryId": "date",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=5807818140859840358",
+      "coordinates": {
+        "lat": 41.043558999999995,
+        "lng": 29.001962999999996
+      },
+      "description": "Şair Nedim üzerinde samimi ölçeğiyle dikkat çeken, aromatik el yapımı imza kokteyllerini taco, ince pizzetta ve trüflü patates gibi sokak atıştırmalıklarıyla sunan akşam barı.",
+      "whatToOrder": [
+        "Tiny Spritz (Greyfurt & Mor Fesleğen)",
+        "Şıp Sevdi / Coco Blush İmza Kokteyl",
+        "Fiesta Taco & İnce Pizzetta"
+      ],
+      "menuFrom": [
+        "Green Whisper",
+        "Seratonin Kokteyl",
+        "Trüf & Parmesan Patates"
+      ],
+      "alsoTry": [
+        "Trüf Parmesan Patates & Sokak Barı Atıştırmalıkları — İki-üç kokteyl yanına masayı ağırlaştırmadan eşlik eden pratik sokak lezzeti seçkisi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Küçük, samimi iç bar ve Şair Nedim cephesinde ayakta/yüksek masalı sosyalleşme alanı · Cuma ve hafta sonu akşamları yüksek enerjili genç kalabalık ve DJ müzik eşliği",
+        "Dezavantaj: Geceleri ayakta kalabalık taşabildiğinden sessiz baş başa yemek arayanlara gürültülü gelebilir.",
+        "Ulaşım: Şair Nedim Caddesi No:31’de, Beşiktaş Çarşı ve Sıraevler kavşağına çok yakın.",
+        "Bütçe seviyesi (Google): Üst-orta"
+      ]
+    },
+    {
+      "id": "aka-sabrosa",
+      "placeId": "ChIJ9QaXxHW3yhQRQrN3QQc1G0w",
+      "name": "Sabrosa Restaurant",
+      "address": "Vişnezade, Acısu Sk. 19 Macka, 34357 Beşiktaş/İstanbul",
+      "neighborhood": "Acısu Sk. / Maçka, Akaretler",
+      "categoryId": "kahvalti",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=5484035276533117762",
+      "coordinates": {
+        "lat": 41.0423581,
+        "lng": 28.997221999999997
+      },
+      "description": "Akaretler-Maçka yamacındaki konumuyla Boğaz silüetine karşı taze fırın kruvasanları, seçkin şarküteri-peynir reyonu ve kişiye özel hazırlanan yumurta çeşitleriyle uzun pazar kahvaltılarının adresi.",
+      "whatToOrder": [
+        "Taze Kruvasan & Danish Fırın Seçkisi",
+        "Kişiye Özel Yumurta & Omletler",
+        "Gurme Peynir & Şarküteri İstasyonu"
+      ],
+      "menuFrom": [
+        "Artisan Ekmekler",
+        "Granola & Taze Meyve Köşesi",
+        "Taze Sıkılmış Meyve Suları"
+      ],
+      "alsoTry": [
+        "Artisan Ekmekler & Granola-Meyve Köşesi — Açık büfe içindeki taze kruvasan ve granola/yoğurt çeşitleri erken saatlerde bile taze tutuluyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Panoramik pencereli yüksek tavanlı zarif salon ve manzaralı teras bölümleri · Hafta sonu özel sabah kutlamaları yapan misafirler ve konfor arayan gruplar",
+        "Dezavantaj: Otel bünyesinde olduğu için mahalle kahvaltıcılarına kıyasla belirgin yüksek bütçeli bir seçenektir.",
+        "Ulaşım: Süleyman Seba Caddesi’nin Maçka ucundan Acısu Sokak No:19’a çıkarak.",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "aka-madame-kuki",
+      "placeId": "ChIJHQs5eau3yhQRg6nUJ7yH0xo",
+      "name": "Madame Kuki Patisserie",
+      "address": "Lale Apartmanı, Vişnezade, Aktarlar Sk. No:14/1, 34349 Beşiktaş/İstanbul",
+      "neighborhood": "Aktarlar Sk., Akaretler",
+      "categoryId": "kahvalti",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=1933037907263924611",
+      "coordinates": {
+        "lat": 41.0438112,
+        "lng": 28.9982336
+      },
+      "description": "Vişnezade’nin sakin ara sokağında İzmir tulumu, çörek otlu lor, otlu tereyağı ve mini kaşarlı gözlemeden oluşan iki kişilik Rahat Kahvaltı sofrası ve butik pastane vitriniyle sevilen durak.",
+      "whatToOrder": [
+        "Madame Kuki Rahat Kahvaltı (2 Kişilik)",
+        "Tek Kişilik Kahvaltı Tabağı",
+        "Menemen & Mini Kaşarlı Gözleme"
+      ],
+      "menuFrom": [
+        "Sporcu Omleti (Yumurta Akı)",
+        "Ev Yapımı Tatlı & Pasta Vitrini",
+        "Sınırsız Çay"
+      ],
+      "alsoTry": [
+        "Butik Pasta & Günlük Tatlı Vitrini — Kahvaltı sonrasında kahveye geçmek isteyenler için günlük pastane ürünleri hazır bulunuyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Aktarlar Sokak içinde sıcak, renkli ve samimi butik kafe masaları · Sakin mahalle kahvaltısı ve doğum günü/buluşma pastası arayan düzenli müdavimler",
+        "Dezavantaj: Sabah geç saatlerde sokak içi sınırlı masalar hızlıca dolabiliyor.",
+        "Ulaşım: Süleyman Seba Caddesi üzerinden Aktarlar Sokak No:14/1 içine kısa yürüyüşle."
+      ]
+    },
+    {
+      "id": "aka-sairler-kahvesi",
+      "placeId": "ChIJZU23wJ-3yhQRMW-00RrvcEY",
+      "name": "Şairler Kahvesi Akaretler",
+      "address": "Vişnezade, Süleyman Seba Cd. 50 A, 34357 Beşiktaş/İstanbul",
+      "neighborhood": "Süleyman Seba Cd., Akaretler",
+      "categoryId": "kahvalti",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=5075819678513000241",
+      "coordinates": {
+        "lat": 41.0424866,
+        "lng": 29.000949300000002
+      },
+      "description": "Siparişlerin yanında şiir notlarıyla sunulan edebiyat temalı atmosferiyle Akaretler’in simge adreslerinden; serpme kahvaltı, Balkan kahvaltısı ve gün boyu kafe tabakları sunuyor.",
+      "whatToOrder": [
+        "Serpme & Balkan Kahvaltı Sofrası",
+        "Sahanda Yumurta & Menemen Çeşitleri",
+        "Zengin Kahvaltı Tabağı"
+      ],
+      "menuFrom": [
+        "Ev Yapımı Reçeller & Bal-Kaymak",
+        "Demleme Çay & Türk Kahvesi",
+        "Günlük Ev Tatlıları"
+      ],
+      "alsoTry": [
+        "Ev Yapımı Reçeller & Günlük Ev Tatlıları — Klasik serpme kahvaltıya eşlik eden sıcak hamur işleri ve ev reçelleriyle öne çıkıyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Tarihi cephede edebiyat temalı sıcak iç salon ve Süleyman Seba üzeri ön bahçe masaları · Hafta sonu kahvaltı grupları ve Akaretler yürüyüşü sonrası mola verenler",
+        "Dezavantaj: Hafta sonu sabah-öğle arası cadde üzerindeki popülerliği nedeniyle masa döngüsü yoğunlaşabiliyor.",
+        "Ulaşım: Akaretler Sıraevler tam ortasında Süleyman Seba Caddesi No:50/A üzerinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "aka-kavur",
+      "placeId": "ChIJMWJU6wK3yhQRYQXZchcH9Kk",
+      "name": "Kavur Beşiktaş",
+      "address": "Vişnezade, Şair Nedim Cd. 45/A, 34357 Beşiktaş/İstanbul",
+      "neighborhood": "Şair Nedim Cd., Akaretler",
+      "categoryId": "denemelisin",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=12246421084019688801",
+      "coordinates": {
+        "lat": 41.0439073,
+        "lng": 29.0015612
+      },
+      "description": "Menüsünün tamamını ağır ateşte pişmiş et kavurma üzerine kuran odak lezzet durağı; çıtır ekmek arasında, tereyağlı pirinç pilavı üzerinde ya da geleneksel keşkek yatağında kavurmayı tablacı salatası ve açık ayranla servis ediyor.",
+      "whatToOrder": [
+        "Keşkek Üstü Et Kavurma",
+        "Ekmek Arası Et Kavurma & Tablacı Salatası",
+        "Pilav Üstü Et Kavurma"
+      ],
+      "menuFrom": [
+        "Köz Biberli Özel Soslar",
+        "Ev Yapımı Turşu",
+        "Ev Yapımı Sütlü Tatlılar"
+      ],
+      "alsoTry": [
+        "Açık Ayran & Köz Biberli Özel Soslar — Kavurma tabaklarının ve sandviç formatının lezzet dengesini tamamlayan ev yapımı eşlikçiler."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Şair Nedim Caddesi üzerinde sade, hızlı servis odaklı modern lokanta düzeni · Öğle yemeği müdavimleri ve tek bir üründe uzmanlaşmış net lezzet arayanlar",
+        "Dezavantaj: Öğle ve erken akşam yoğunluğunda keşkek gibi günlük kazan ürünleri erken bitebiliyor.",
+        "Ulaşım: Şair Nedim Caddesi No:45/A üzerinde, Vişnezade çarşı sınırı hemen başında.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "aka-mamamanti",
+      "placeId": "ChIJsREdwve3yhQRaLpLRXmOrhk",
+      "name": "Mamamanti",
+      "address": "Vişnezade, Maçka Meydanı Sok. No:24/A, 34357 Beşiktaş/İstanbul",
+      "neighborhood": "Maçka Meydanı, Akaretler",
+      "categoryId": "denemelisin",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=1850573148400630376",
+      "coordinates": {
+        "lat": 41.0436373,
+        "lng": 28.998369999999994
+      },
+      "description": "Maçka Meydanı cephesinde peynirli Kafkas mantısı Haluj’dan özel kıymalı çıtır mantı Feraye’ye uzanan el açması hamur işleriyle ev sıcaklığında lokanta deneyimi.",
+      "whatToOrder": [
+        "Çıtır Mantı (Feraye)",
+        "Haluj (Peynir & Azımra Otlu Kafkas Mantısı)",
+        "Patatesli Çıtır Mantı"
+      ],
+      "menuFrom": [
+        "Ev Yapımı Börek Çeşitleri",
+        "Yoğurtlu Soslu Klasik Mantı",
+        "Ev Tatlıları"
+      ],
+      "alsoTry": [
+        "Ev Yapımı Börekler & Klasik Mantı — Klasik kıymalı mantının yanında ev usulü el açması böreklerle semtte otantik bir ev mutfağı yakalıyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Maçka Meydanı tarafında sıcak ve temiz mahalle lokantası oturma alanı · Semt sakinleri, öğrenciler ve ev usulü mantı arayan akşam misafirleri",
+        "Dezavantaj: Yokuşun üst kısmında yer aldığı için sahilden yürüyüşte hafif çıkış gerektirir.",
+        "Ulaşım: Vişnezade’nin üst kesimindeki Maçka Meydanı Sokak No:24/A üzerinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "aka-say-cheese",
+      "placeId": "ChIJXTY8NFi3yhQRss13nSFmyOY",
+      "name": "Say Cheese Akaretler",
+      "address": "Vişnezade, Şair Nedim Cd. no:53/A, 34357 Beşiktaş/İstanbul",
+      "neighborhood": "Şair Nedim Cd., Akaretler",
+      "categoryId": "denemelisin",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=16629653918627384754",
+      "coordinates": {
+        "lat": 41.0441376,
+        "lng": 29.000992
+      },
+      "description": "El yapımı taze fettuccine’yi dev parmesan tekeri içinde harmanlayıp trüf yağı, orman mantarı veya dana tiftik etiyle kişiselleştirerek servis eden popüler taze makarna durağı.",
+      "whatToOrder": [
+        "Parmesan Tekerinde Fettuccine Alfredo",
+        "Trüf Yağı & Orman Mantarlı Taze Makarna",
+        "Dana Tiftik Etli Fettuccine"
+      ],
+      "menuFrom": [
+        "Pesto & Kuru Domatesli Alfredo",
+        "Bolonez Makarna",
+        "Ev Yapımı Limonata"
+      ],
+      "alsoTry": [
+        "Kendi Reçetesi Ev Yapımı Tiramisu — Yoğun peynirli makarna sonrası masaların çoğu kapanışı işletmenin özel tiramisusuyla yapıyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Şair Nedim cephesinde tempolu, kompakt masa düzeni · Parmesan tekeri sunumunu deneyimleyen genç gruplar ve akşam ziyaretçileri",
+        "Dezavantaj: Akşam yemek saatlerinde kapı önünde kısa sıra oluşabiliyor; ağır kremalı peynir sosu hafif lezzet arayanlara yoğun gelebilir.",
+        "Ulaşım: Şair Nedim Caddesi No:53/A üzerinde, Beşiktaş Çarşı merkeze inen eğimde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "aka-atistir",
+      "placeId": "ChIJnWs5ZHW3yhQRSSoozKAXwns",
+      "name": "Atıştır1989",
+      "address": "Vişnezade, Süleyman Seba Cd. no85/A, 34340 Beşiktaş/İstanbul",
+      "neighborhood": "Süleyman Seba Cd., Akaretler",
+      "categoryId": "denemelisin",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=8917716191534393929",
+      "coordinates": {
+        "lat": 41.0431266,
+        "lng": 28.997612200000003
+      },
+      "description": "1989’dan beri Akaretler-Maçka hattında günün farklı saatlerine eşlik eden, Sıcak Peynir ve kuru cacık gibi imza atıştırmalıklarıyla semt hafızasında yer etmiş buluşma noktası.",
+      "whatToOrder": [
+        "Sıcak Peynir",
+        "Kuru Cacık & Peynir-Şarküteri Tabağı",
+        "Günlük Kafe & Kahvaltı Seçkisi"
+      ],
+      "menuFrom": [
+        "Menemen & Omlet Çeşitleri",
+        "Makarna ve Salatalar",
+        "İçecek Seçkisi"
+      ],
+      "alsoTry": [
+        "Menemen & Akşamüstü Atıştırmalık Tabakları — Özellikle akşamüstü buluşmalarında masaya gelen Sıcak Peynir ve kahvaltı/atıştırmalık tabakları semt müdavimlerinin klasik tercihi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Süleyman Seba Caddesi üzerinde uzun yıllardır değişmeyen samimi cadde masaları ve iç mekân · Eski semt sakinleri, iş çıkışı müdavimleri ve rahat sohbet arayan gruplar",
+        "Dezavantaj: Güncel kafe-bar trendlerinden ziyade eski usul mahalle samimiyetini koruduğu için gösterişli sunum arayanlara sade kalır.",
+        "Ulaşım: Süleyman Seba Caddesi No:85/A’da, Maçka tarafındaki üst blokta."
+      ]
+    },
+    {
+      "id": "aka-minoa",
+      "placeId": "ChIJjXWSw5-3yhQRKjO7W8o1-OA",
+      "name": "Minoa Books & Coffee Akaretler",
+      "address": "Vişnezade, Süleyman Seba Cd. No:52/A, 34357 Beşiktaş/İstanbul",
+      "neighborhood": "Süleyman Seba Cd., Akaretler",
+      "categoryId": "denemelisin",
+      "rating": 4.1,
+      "mapsUri": "https://maps.google.com/?cid=16210766001958761258",
+      "coordinates": {
+        "lat": 41.0425512,
+        "lng": 29.000483
+      },
+      "description": "Akaretler Sıraevler’in mimarisi içinde binlerce yerli ve yabancı kitabı kahve, günlük kruvasanlar, çorba ve dünya mutfağı tabaklarıyla buluşturan ikonik bağımsız kitabevi-kafe.",
+      "whatToOrder": [
+        "Nitelikli Kahve & Günlük Kruvasan Vitrini",
+        "Günün Çorbası & Sandviç Seçkisi",
+        "Dünya Mutfağı Kafe Tabakları"
+      ],
+      "menuFrom": [
+        "Zengin Salatalar",
+        "Günün Pastane Tartları",
+        "Bitki Çayları"
+      ],
+      "alsoTry": [
+        "Ev Yapımı Tartlar & Zengin Salatalar — Sadece kahve değil, kitap rafları arasında hafif bir öğle öğünü ya da tatlı molası için pastane vitrini öne çıkıyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Alt ve üst kat kitap rafları arasına yayılmış okuma-yeme masaları ve cadde önü oturumu · Kitapseverler, öğrenciler ve hafta sonu ziyaretçileriyle oldukça yoğun akış",
+        "Dezavantaj: Yoğun ziyaretçi trafiği sebebiyle hafta sonu boş masa bulmak zorlaşabilir ve servis temposu kalabalık saatlerde yavaşlayabilir.",
+        "Ulaşım: Süleyman Seba Caddesi No:52/A üzerinde, Akaretler Sıraevler ana sırasında.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    }
+  ],
+  "nearbyVenues": [
+    {
+      "id": "bes-sprout",
+      "placeId": "ChIJ62GSh623yhQRWUkcNRLgtiU",
+      "name": "Sprout",
+      "address": "Türkali, Şair Nedim Cd. 62/A, 34357 Beşiktaş/İstanbul",
+      "neighborhood": "Şair Nedim Cd., Beşiktaş Çarşı",
+      "categoryId": "pizza",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=2717605793969752409",
+      "coordinates": {
+        "lat": 41.0450526,
+        "lng": 29.000348
+      },
+      "description": "Türkali sınırındaki Şair Nedim girişinde uzun fermente edilmiş hafif Roma usulü pizza pala hamurunu İsli Çerkes peyniri ve Bergama tulumu gibi yerel malzemelerle buluşturan bağımsız pizzacı.",
+      "whatToOrder": [
+        "Mantar & İsli Çerkes Peynirli Pizza Pala",
+        "Kuzu Cotto & Bergama Tulumlu Pizza",
+        "Ricotta & Kasap Sucuklu Pizza"
+      ],
+      "menuFrom": [
+        "Margherita Pala",
+        "Burrata Pizza",
+        "Dört Peynirli Pizza"
+      ],
+      "alsoTry": [
+        "Yedikule Sezar Salata & İsli Paprikalı Ezilmiş Patates — Uzun fermente Roma usulü çıtır pizza pala dilimlerinin yanına yerel malzemeli taze başlangıç eşlikçisi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Taş ve ahşap detaylı şık iç salon ve Şair Nedim köşesinde açık kaldırım masaları · Kaliteli hamur ve özenli şarküteri malzemesi arayan semt müdavimleri",
+        "Dezavantaj: Akşam yemeği ve hafta sonu saatlerinde dış masalar kısa sürede dolabiliyor.",
+        "Ulaşım: Türkali ve Şair Nedim Caddesi kesişimindeki alt blokta.",
+        "Bütçe seviyesi (Google): Orta"
+      ],
+      "nearbyAreaLabel": "Şair Nedim Cd., Beşiktaş Çarşı",
+      "distanceKm": 0.04,
+      "distanceMeters": 40
+    },
+    {
+      "id": "bes-beyefendi",
+      "placeId": "ChIJb7M_QN23yhQRx-bpVMVzdVY",
+      "name": "Beyefendi Burger",
+      "address": "Türkali, Şht. Asım Cd. 48A, 34353 Beşiktaş/İstanbul",
+      "neighborhood": "Şehit Asım Cd., Beşiktaş Çarşı",
+      "categoryId": "hamburger",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=6230012950907315911",
+      "coordinates": {
+        "lat": 41.04479,
+        "lng": 29.0045883
+      },
+      "description": "Şehit Asım Caddesi’nde günlük çekilen sulu kasap köftesini beğendili, mantar soslu ve füme dokunuşlu özgün tariflerle sunan çarşının yüksek puanlı mahalle burgercisi.",
+      "whatToOrder": [
+        "Kasap Köfteli Füme Burger",
+        "Beğendili Burger",
+        "Mantar Soslu Cheeseburger"
+      ],
+      "menuFrom": [
+        "Klasik Cheeseburger",
+        "Acılı Burger",
+        "Double Burger"
+      ],
+      "alsoTry": [
+        "Çıtır Tavuk Burger & Baharatlı Patates Kızartması — Günlük çekilen sulu kasap köftesi alternatiflerinin yanında tavuk severler ve paylaşım için sıcak eşlikçi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Samimi ve temiz iç mekan masa düzeni ile pratik dış oturma bölümü · Şehit Asım ve Ihlamurdere hattında ev yapımı kasap köfte lezzeti arayan semt sakinleri",
+        "Dezavantaj: İç salon masaları kısıtlı olduğundan 4 kişiden büyük gruplar için uygunluğu düşük.",
+        "Ulaşım: Şehit Asım Caddesi ile Muradiye çıkışının kesişimine yakın konumda.",
+        "Bütçe seviyesi (Google): Orta"
+      ],
+      "nearbyAreaLabel": "Şehit Asım Cd., Beşiktaş Çarşı",
+      "distanceKm": 0.07,
+      "distanceMeters": 70
+    },
+    {
+      "id": "bes-pangea",
+      "placeId": "ChIJv7Mcm3m3yhQRQLKv9nDEUHI",
+      "name": "Pangea Roasting Co.",
+      "address": "Sinanpaşa, Ihlamurdere Cd. No:22/B, 34353 Beşiktaş/İstanbul",
+      "neighborhood": "Ihlamurdere Cd., Beşiktaş Çarşı",
+      "categoryId": "kahve",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=8237299707914728000",
+      "coordinates": {
+        "lat": 41.0442647,
+        "lng": 29.003295100000003
+      },
+      "description": "Ihlamurdere Caddesi girişinde Kolombiya, Etiyopya ve Kosta Rika tek köken çekirdekleriyle özenli V60 ve Chemex demlemeleri sunan kavurma atölyesi ve çalışma dostu espresso bar.",
+      "whatToOrder": [
+        "Yöresel V60 Filtre Kahve",
+        "Flat White",
+        "Tek Köken Espresso"
+      ],
+      "menuFrom": [
+        "Chemex Demleme",
+        "Cortado",
+        "Iced Latte"
+      ],
+      "alsoTry": [
+        "Ev Yapımı Kahve Yanı Kek & Çekirdek Seçkisi — Ihlamurdere aksında tek köken demlemelerin yanında taze fırınlanmış günlük kek ve eve öğütülmüş çekirdek imkanı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Rahat iç çalışma masaları, demleme barı ve Ihlamurdere yakası aydınlık cephe oturumu · Tek köken filtre kahve seven müdavimler ve sakin çalışma ortamı arayan semt sakinleri",
+        "Dezavantaj: Günün öğleden sonra saatlerinde çalışma masalarının doluluğu hızlı artabiliyor.",
+        "Ulaşım: Sinanpaşa ve Yıldız metro bağlantısına yakın Ihlamurdere Caddesi No:22/B üzerinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ],
+      "nearbyAreaLabel": "Ihlamurdere Cd., Beşiktaş Çarşı",
+      "distanceKm": 0.04,
+      "distanceMeters": 40
+    },
+    {
+      "id": "bes-sarina",
+      "placeId": "ChIJn2CTP6G3yhQR_fK8KEQqpYE",
+      "name": "Sarina Meyhanesi",
+      "address": "Sinanpaşa, Alaybeyi Sk No:22, 34353 Beşiktaş/İstanbul",
+      "neighborhood": "Alaybeyi Sk., Beşiktaş Çarşı",
+      "categoryId": "date",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=9341919474279576317",
+      "coordinates": {
+        "lat": 41.043855,
+        "lng": 29.0037528
+      },
+      "description": "Alaybeyi Sokak’ta eski Türk filmi afişleri ve nostaljik müzik eşliğinde lakerdadan ağır ateşte kuzu kaburgaya uzanan sıcak, köklü bir akşam meyhanesi deneyimi.",
+      "whatToOrder": [
+        "Lakerda & Pilaki Başlangıcı",
+        "Kalamar Tava",
+        "Ağır Ateşte Kuzu Kaburga"
+      ],
+      "menuFrom": [
+        "Girit Ezmesi",
+        "Karides Güveç",
+        "Yaprak Ciğer"
+      ],
+      "alsoTry": [
+        "Acılı Atom Mezesi & Izgara Köfte — Nostaljik Yeşilçam posterleri ve hafif Türk müziği eşliğinde uzun akşam sohbetlerine yakışan klasik meyhane tabakları."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Nostaljik duvar panolu iç salon ve samimi Alaybeyi Sokak akşam masaları · Samimi Yeşilçam nostaljisi ve güvenilir klasik meyhane mutfağı arayan çiftler",
+        "Dezavantaj: Mekanın sıcak kalabalığı hafta sonu akşamlarında masalar arası mesafeyi daraltabiliyor.",
+        "Ulaşım: Sinanpaşa Köyiçi içindeki Alaybeyi Sokak üzerinde.",
+        "Bütçe seviyesi (Google): Üst-orta"
+      ],
+      "nearbyAreaLabel": "Alaybeyi Sk., Beşiktaş Çarşı",
+      "distanceKm": 0.04,
+      "distanceMeters": 40
+    },
+    {
+      "id": "bes-cakmak-kahvalti",
+      "placeId": "ChIJRe0y0aG3yhQRgLoCOuYO3rI",
+      "name": "Çakmak Kahvaltı Salonu",
+      "address": "Sinanpaşa, Çelebi Oğlu Sk. No:6, 34353 Beşiktaş/İstanbul",
+      "neighborhood": "Kahvaltıcılar Sk., Beşiktaş Çarşı",
+      "categoryId": "kahvalti",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=12888755565559462528",
+      "coordinates": {
+        "lat": 41.043512199999995,
+        "lng": 29.003261899999995
+      },
+      "description": "Beşiktaş Kahvaltıcılar Sokağı kültürünü başlatan öncü esnaf salonu; 2002’den beri Erzincan tulumu, Karakovan balı ve manda kaymağıyla sade ve geleneksel kahvaltı ritüelini yaşatıyor.",
+      "whatToOrder": [
+        "Erzincan Tulum Peyniri & Karakovan Balı",
+        "Kaşarlı Menemen",
+        "Sıcak Pişi & Kavurmalı Yumurta"
+      ],
+      "menuFrom": [
+        "Beyaz Peynir Tabağı",
+        "Sucuklu Yumurta",
+        "Söğüş Tabağı"
+      ],
+      "alsoTry": [
+        "Manda Kaymağı & İnce Belli Bardakta Demli Çay — Kahvaltıcılar Sokağı kültürünü başlatan esnaf salonunda hızlı, sade ve geleneksel sabah sofrasının imzası."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Geleneksel esnaf salonu masaları ve sokak cephesinde hızlı servis masaları · Gösterişli brunch yerine köklü esnaf kahvaltısı geleneğini seven yerliler ve öğrenciler",
+        "Dezavantaj: Klasik esnaf salonu düzeni modern kafe konforundan çok hızlı ve samimi sabah ritmine göre işler.",
+        "Ulaşım: Kahvaltıcılar Sokağı (Çelebi Oğlu Sk.) girişine en yakın tarihi esnaf dükkanlarından.",
+        "Bütçe seviyesi (Google): Orta"
+      ],
+      "nearbyAreaLabel": "Kahvaltıcılar Sk., Beşiktaş Çarşı",
+      "distanceKm": 0.04,
+      "distanceMeters": 40
+    },
+    {
+      "id": "bes-oktay-kurabiye",
+      "placeId": "ChIJKS3BD6G3yhQRjGijtHoNJ0Y",
+      "name": "Tarihi Oktay Kurabiye Fırını",
+      "address": "Türkali, Yaverağa Sk. 1/A, 34357 Beşiktaş/İstanbul",
+      "neighborhood": "Türkali, Beşiktaş Çarşı",
+      "categoryId": "denemelisin",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=5055023927414450316",
+      "coordinates": {
+        "lat": 41.0459699,
+        "lng": 29.002924800000002
+      },
+      "description": "1934’ten beri odun fırını geleneğini sürdüren, Acıbadem kurabiyesi, koko, anasonlu yaprak galeta ve tuzlu kuru pastalarıyla Beşiktaş mahalle hafızasının en eski fırını.",
+      "whatToOrder": [
+        "Acıbadem Kurabiyesi",
+        "Odun Fırını Koko & Un Kurabiyesi",
+        "Anasonlu Yaprak Galeta"
+      ],
+      "menuFrom": [
+        "Tuzlu Kuru Pasta",
+        "Tahinli Çörek",
+        "Elmalı Kurabiye"
+      ],
+      "alsoTry": [
+        "Karaköy Poğaçası & Siyez Unlu Kurabiye — 1934’ten bu yana taş fırın geleneğini sürdüren mahalle fırınından çay yanına paket alınan günlük tuzlu ve tatlılar."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Tarihi fırın camekanı ve al-götür fırın tezgahı (oturma salonu bulunmuyor) · Semt sakinleri, çocukluk lezzetini arayan İstanbullular ve çay yanı kurabiyesi alanlar",
+        "Dezavantaj: Geleneksel al-götür mahalle fırını olduğu için masa ve kahve oturma alanı bulunmuyor.",
+        "Ulaşım: Türkali Mahallesi’nde Ihlamurdere Caddesi’ne dik bağlanan Şehit Ali Kerem / Mısırlıbahçe civarında.",
+        "Bütçe seviyesi (Google): Orta"
+      ],
+      "nearbyAreaLabel": "Türkali, Beşiktaş Çarşı",
+      "distanceKm": 0.04,
+      "distanceMeters": 40
+    }
+  ]
+}

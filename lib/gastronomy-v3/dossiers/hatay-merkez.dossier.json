@@ -1,0 +1,2051 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "hatay-merkez",
+  "displayName": "Hatay Merkez",
+  "verifiedAt": "2026-11-17T15:08:24.255Z",
+  "selectedCount": 27,
+  "rejectedControls": [
+    {
+      "id": "ctrl-hatay-soulmate-chain",
+      "resolvedName": "Soulmate Coffee - Hatay Defne",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-hatay-mackbear-chain",
+      "resolvedName": "Mackbear Coffee CO. (Defne)",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-hatay-yemen-chain",
+      "resolvedName": "Yemen Kahvesi Antakya",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-hatay-atife-chocolate",
+      "resolvedName": "Atife Çikolata ve Kahve",
+      "reason": "kahve_category_not_coffee_specialist:chocolate_shop"
+    },
+    {
+      "id": "ctrl-hatay-selale-museum",
+      "resolvedName": "Harbiye Şelalesi",
+      "reason": "below_quality_threshold:★4.2(18032)"
+    },
+    {
+      "id": "ctrl-hatay-samandag-iskarmoz-dis",
+      "resolvedName": "İskarmoz Balık",
+      "reason": "outside_strict_neighborhood:Bbox dışında (36.14704, 36.07995)"
+    },
+    {
+      "id": "ctrl-hatay-reyhanli-ferah-dis",
+      "resolvedName": "Hatay Ferah Künefe ve Baklava Salonu",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Meydan/Haraparası/Odabaşı/Akasya/Güzelburç/Saraycık/Akevler/Kuzeytepe/Küçükdalyan/Oğlakören/Armutlu/Cebrail/Harbiye/Çekmece/Sümerler/Aşağıokçular/Subaşı/Bostancık/Döver/Bahçeköy/Balıklıdere/Antakya/Defne/Merkez, adres: Yeni Mh, Atatürk Cd. No:3/B, 31500 Reyhanlı/Hatay)"
+    },
+    {
+      "id": "ctrl-hatay-nuri-kuzeytepe-low",
+      "resolvedName": "Nuri Kuzeytepe Restaurant",
+      "reason": "below_quality_threshold:★4(1544)"
+    },
+    {
+      "id": "ctrl-hatay-havuzlu-selale-low",
+      "resolvedName": "Havuzlu Şelale Restaurant",
+      "reason": "below_quality_threshold:★1.8(59)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "hatay-casa-liva",
+      "categoryId": "yoresel",
+      "resolvedName": "Casa Liva Restaurant",
+      "branchName": "Çekmece, Samandağ Bulvarı No:196/A, 31010 Defne/Hatay",
+      "placeId": "ChIJDWD59g_XJRURj51tLeoEIM0",
+      "coordinates": {
+        "lat": 36.1887015,
+        "lng": 36.124297399999996
+      },
+      "rating": 4.7,
+      "userRatingCount": 148,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14780819380860984719",
+      "recommendedPrimary": [
+        "Yöresel Meze Tabağı",
+        "Izgara Dana Şaşlık",
+        "Humus & Cevizli Biber"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Akşam Buluşmaları & Grup Masaları",
+          "note": "Geniş salon düzeni ve masa servisi temposuyla akşam yemeği ve kutlama sofralarına elverişli ortam sağlıyor.",
+          "proof": "casalivarestaurant.com.tr ve hataymahallihaber.com notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç salon ve düzenlenmiş masa yerleşimi",
+        "crowdAndNoise": "Akşam saatlerinde aileler ve kalabalık arkadaş gruplarıyla hareketli",
+        "disadvantage": "Gündelik hızlı esnaf durağından ziyade oturumlu akşam yemeği temposunda işliyor.",
+        "transit": "Çekmece Mahallesi Samandağ Bulvarı No:196/A üzerinde araç ve dolmuş güzergâhında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Casa Liva Resmi Sitesi",
+          "url": "https://casalivarestaurant.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Çekmece Samandağ Bulvarı konumu ve menü içeriği"
+        },
+        {
+          "title": "Hatay Mahalli Haber",
+          "url": "https://hataymahallihaber.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Defne bölgesindeki aktif gastronomi ve davet mekânı"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çekmece meze ve ızgara memnuniyeti yüksek"
+        }
+      ],
+      "pros": [
+        "Yöresel meze ve ana yemekleri aynı sofrada düzenli sunuyor",
+        "Ana bulvar üzerinde ulaşımı kolay"
+      ],
+      "cons": [
+        "Hafta sonu akşamları rezervasyonsuz yoğun olabiliyor"
+      ],
+      "uncertainties": [
+        "Meze ve ana yemek porsiyonları paylaşım sayısına göre masada şekilleniyor."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-mayk-usta",
+      "categoryId": "yoresel",
+      "resolvedName": "Mayk Usta Restaurant",
+      "branchName": "Harbiye, esenler caddesi no 9, 31080 Defne/Hatay",
+      "placeId": "ChIJDRIGiXnFJRUR2Z46s3WT5SM",
+      "coordinates": {
+        "lat": 36.172015,
+        "lng": 36.145474
+      },
+      "rating": 4.8,
+      "userRatingCount": 297,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/maykustarestaurant?igsh=aXIzZWtrMmlsamJ4",
+      "mapsUri": "https://maps.google.com/?cid=2586635694721638105",
+      "recommendedPrimary": [
+        "Antakya Meze Seçkisi",
+        "Dinlendirilmiş Lokum Bonfile",
+        "Bıçak Kıyma Kebap"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Açık Hava Bahçe Atmosferi",
+          "note": "Harbiye hattında havuzbaşı ve ferah bahçe oturumuyla uzun akşam yemekleri için tercih ediliyor.",
+          "proof": "restoranim.net ve firmarehberim.com Harbiye kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ferah bahçe ve üstü kapalı açık hava masaları",
+        "crowdAndNoise": "Özellikle akşam yemeklerinde ve hafta sonlarında yoğun talep görüyor",
+        "disadvantage": "Geleneksel çarşı lokantalarına kıyasla daha üst fiyatlı et ve meze restoranı düzeninde.",
+        "transit": "Harbiye Mahallesi Eşenler Caddesi No:9 üzerinde Harbiye merkez hattında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım Harbiye Kaydı",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Harbiye meze, et çeşitleri ve bahçe atmosferi notları"
+        },
+        {
+          "title": "Mayk Usta Instagram",
+          "url": "https://www.instagram.com/maykustarestaurant",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Harbiye Eşenler Caddesi aktif mutfak paylaşımları"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "300’e yakın değerlendirmede yüksek puan istikrarı"
+        }
+      ],
+      "pros": [
+        "Meze tazeliği ve ızgara et pişirim dengesi istikrarlı",
+        "Harbiye içinde ferah bahçe oturumu"
+      ],
+      "cons": [
+        "Toplu taşıma sıklığı akşam geç saatlerde azalabiliyor"
+      ],
+      "uncertainties": [
+        "Hafta sonu canlı program veya kalabalık masalara göre ses düzeyi değişebiliyor."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-alican-restaurant",
+      "categoryId": "yoresel",
+      "resolvedName": "Alican Restaurant",
+      "branchName": "Güzelburç, Atatürk 62. Cadde no: 76/3, 31175 Antakya/Hatay",
+      "placeId": "ChIJU8jv-xHqJRURmpVu9S3nkGY",
+      "coordinates": {
+        "lat": 36.240618999999995,
+        "lng": 36.192056799999996
+      },
+      "rating": 4.4,
+      "userRatingCount": 1673,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7390661173092193690",
+      "recommendedPrimary": [
+        "Cevizli Biber & Humus",
+        "Tepsi Kebabı",
+        "Antakya Usulü Ciğer Salatası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yemek Yazarlarının Klasik Antakya Seçkisi",
+          "note": "Sıcak pideler eşliğinde sunulan meze tabakları ve ciğer salatası şehir dışı ziyaretçilerin de sıkça andığı başlıklardan.",
+          "proof": "nelerimeshur.com ve alicanrestaurant.com Antakya incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Yüksek kapasiteli iç salon ve ailelere uygun geniş masalar",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde yerli müdavimler ile şehir dışı misafirlerle düzenli yoğun",
+        "disadvantage": "Butik konak atmosferi yerine geniş salonlu klasik şehir restoranı düzenine sahip.",
+        "transit": "Güzelburç Mahallesi Atatürk 62. Caddesi No:76/3 üzerinde İskenderun yolu çıkışında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Alican Restaurant Resmi Sitesi",
+          "url": "https://alicanrestaurant.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Güzelburç adresi ve geleneksel meze-kebap menüsü"
+        },
+        {
+          "title": "Neleri Meşhur Antakya Rehberi",
+          "url": "https://nelerimeshur.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ciğer salatası, humus ve cevizli biber incelemesi"
+        },
+        {
+          "title": "Restoranım & Maps Topluluk",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bölgenin köklü ve yüksek hacimli restoran referansı"
+        }
+      ],
+      "pros": [
+        "Deprem sonrası Güzelburç’ta istikrarlı mutfak kalitesini koruyan köklü adreslerden",
+        "Geniş meze seçkisi"
+      ],
+      "cons": [
+        "Merkez yaya çarşısına uzak, araçla ulaşım gerektiriyor"
+      ],
+      "uncertainties": [
+        "Yoğun öğle servislerinde sıcak kebap çıkışında kısa beklemeler yaşanabiliyor."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-unesco-gastronomi-evi",
+      "categoryId": "yoresel",
+      "resolvedName": "UNESCO Hatay Gastronomi Evi (Hatay Expo)",
+      "branchName": "Küçükdalyan, 64V3+G8, 31001 Antakya/Hatay",
+      "placeId": "ChIJuR2WTgDDJRURTP5HVh-YVvs",
+      "coordinates": {
+        "lat": 36.2437756,
+        "lng": 36.103254899999996
+      },
+      "rating": 4.4,
+      "userRatingCount": 151,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18110830211875995212",
+      "recommendedPrimary": [
+        "Tepsi Oruğu & Şeyh Mualla",
+        "Zılk Sarması & Kaytaz Böreği",
+        "Külçe & Humus"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tescilli Ev ve Tencere Reçeteleri Arşivi",
+          "note": "Kebap dışında kalan geleneksel Antakya sulu ve zeytinyağlı ev yemeklerini bir arada tatmak için öne çıkan nadir adres.",
+          "proof": "aa.com.tr ve hatayimar.com.tr 2024–2025 yayınları"
+        }
+      ],
+      "suitability": {
+        "seating": "Expo alanı içinde düzenli kapalı yemek salonu ve açık oturma alanı",
+        "crowdAndNoise": "Öğle ve öğleden sonra ziyaretçi gruplarıyla canlı",
+        "disadvantage": "Gündelik sokak lokantası temposundan ziyade kurumsal saatlerle çalışıyor.",
+        "transit": "Küçükdalyan Mahallesi Hatay Expo yerleşkesi içinde Antakya çevre yolu bağlantısında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Anadolu Ajansı Gastronomi Haberi",
+          "url": "https://www.aa.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Deprem sonrası yeni yerleşkede asri Antakya yemeklerinin sürdürülmesi"
+        },
+        {
+          "title": "Hürriyet UNESCO Hatay Dosyası",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Coğrafi işaretli Hatay mutfağı seçkisi"
+        },
+        {
+          "title": "Hatay İmar Gastronomi Evi",
+          "url": "https://hatayimar.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "600’ü aşkın yöresel tarif arşivi ve aktif mutfak"
+        }
+      ],
+      "pros": [
+        "Kebap dışında geleneksel Antakya tencere ve hamur işlerini aynı menüde topluyor",
+        "Hijyenik ve düzenli servis"
+      ],
+      "cons": [
+        "Merkez dışı Expo alanında yer alması yaya gezginler için araç gerektiriyor"
+      ],
+      "uncertainties": [
+        "Günlük çıkan tencere yemekleri mevsime ve günlük hazırlığa göre değişebiliyor."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-nar-et-restoran",
+      "categoryId": "tepsi-kebabi",
+      "resolvedName": "Nar Et Restoran",
+      "branchName": "Haraparası, Şht. Osman Durmaz Cd., 31001 Antakya/Hatay",
+      "placeId": "ChIJERXZuW3DJRURv_EHvO26-V0",
+      "coordinates": {
+        "lat": 36.212702,
+        "lng": 36.1679501
+      },
+      "rating": 4.7,
+      "userRatingCount": 471,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6771649044952904127",
+      "recommendedPrimary": [
+        "Antakya Kağıt Kebabı",
+        "Tepsi Kebabı",
+        "Bıçak Kıyma Zırh Kebap"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kasap & Ocakbaşı Bütünlüğü",
+          "note": "Günlük işlenen etlerin doğrudan taş fırın ve kömür ızgarasına girmesi pişirim tazeliğini koruyor.",
+          "proof": "yerelesnaf.com ve Haraparası topluluk kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "İç salon masaları ve aile oturma düzeni",
+        "crowdAndNoise": "Öğle yemeği ve akşam saatlerinde yerel et müdavimleriyle dolu",
+        "disadvantage": "Girişte yoğun mangal ve fırın sirkülasyonu nedeniyle saat bazlı kalabalık artabiliyor.",
+        "transit": "Haraparası Mahallesi Şehit Osman Durmaz Caddesi üzerinde Antakya merkez ulaşımında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yerel Esnaf Haraparası Kaydı",
+          "url": "https://yerelesnaf.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Şht. Osman Durmaz Cd. tepsi ve kağıt kebabı incelemeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "470’i aşkın değerlendirmede yüksek et lezzeti puanı"
+        }
+      ],
+      "pros": [
+        "Zırh kıyması kağıt ve tepsi kebaplarında et oranı dengeli",
+        "Yüksek misafir memnuniyeti"
+      ],
+      "cons": [
+        "Çevre inşaat ve trafik yoğunluğu otopark bulmayı zorlaştırabiliyor"
+      ],
+      "uncertainties": [
+        "Akşam geç saatlerde fırın kebaplarında bekleme süresi uzayabiliyor."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-salah-kebap",
+      "categoryId": "tepsi-kebabi",
+      "resolvedName": "Salah Kebap",
+      "branchName": "Subaşı, Çevre Yolu 56 / 15, 31160 Defne/Hatay",
+      "placeId": "ChIJh8y1CMzDJRUR8e2CLcqFt7w",
+      "coordinates": {
+        "lat": 36.1924231,
+        "lng": 36.120928899999996
+      },
+      "rating": 4.6,
+      "userRatingCount": 402,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13598484703261945329",
+      "recommendedPrimary": [
+        "Zırh Kıyma Antakya Kebabı",
+        "Tepsi Kebabı",
+        "Kuşbaşı Çöp Şiş"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yerel Ocakbaşı Geleneği",
+          "note": "Şehir merkezinin turistik kalabalığından uzakta doğrudan mahalle ve ilçe halkının müdavim kebapçısı olarak biliniyor.",
+          "proof": "Defne Subaşı yerel rehber ve Google Maps değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Subaşı yol kenarı sade iç salon ve açık masa düzeni",
+        "crowdAndNoise": "Öğle ve akşam arası yerel aileler ile düzenli yoğunlukta",
+        "disadvantage": "Lüks sunum beklentisi yerine geleneksel sade kebapçı formatında hizmet veriyor.",
+        "transit": "Subaşı Mahallesi Çevre Yolu No:56/15 adresinde Defne ana ulaşım güzergâhında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım & Yerel Rehber",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Defne Çevre Yolu zırh kebabı ve porsiyon dengesi"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "400+ değerlendirmeyle istikrarlı yerel memnuniyet"
+        }
+      ],
+      "pros": [
+        "Yerel halk tarafından sık tercih edilen gerçekçi fiyat-performans kebapçısı",
+        "Et pişirim kıvamı tutarlı"
+      ],
+      "cons": [
+        "Merkez yaya aksının dışında konumlanıyor"
+      ],
+      "uncertainties": [
+        "Aynı isimli diğer şube/ocakbaşı kayıtlarıyla adres karıştırmamak için Subaşı şubesi tercih edilmeli."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-gariban-kebap-antakya",
+      "categoryId": "tepsi-kebabi",
+      "resolvedName": "Gariban Kebap Antakya",
+      "branchName": "Haraparası, Küçük Sanayi Cd. No: 14-16/1 D:1, 31060 Antakya/Hatay",
+      "placeId": "ChIJX9hqd0_DJRURaZ85P2e2lcA",
+      "coordinates": {
+        "lat": 36.206981999999996,
+        "lng": 36.163888
+      },
+      "rating": 4.6,
+      "userRatingCount": 117,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13877198381370679145",
+      "recommendedPrimary": [
+        "Antakya Usulü Kıyma Kebap",
+        "Sarımsaklı Köz Domatesli Kebap",
+        "Kuzu Ciğer Şiş"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Esnaf Lokantası Hızı & Odun Kömürü",
+          "note": "Küçük Sanayi içindeki şubesi, zincirleşen şubelere kıyasla klasik usta-müşteri sıcaklığını ve kömür ateşini daha sıkı koruyor.",
+          "proof": "Haraparası yerel esnaf değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı sanayi içi kebapçı salonu ve hızlı masa düzeni",
+        "crowdAndNoise": "Özellikle öğle servisinde bölge esnafı ve müdavimlerle doluyor",
+        "disadvantage": "Sanayi çevresinde yer aldığı için akşam fine-dining beklentisine uygun atmosfer sunmuyor.",
+        "transit": "Haraparası Mahallesi Küçük Sanayi Caddesi No:14-16/1 üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Bulurum Antakya Kaydı",
+          "url": "https://www.bulurum.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Küçük Sanayi Caddesi köklü Antakya kebapçısı konumu"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Haraparası şubesinde 100+ misafirden yüksek lezzet puanı"
+        }
+      ],
+      "pros": [
+        "Diğer şubelere göre Haraparası merkez mutfağında yüksek tutarlılık",
+        "Hızlı ve samimi servis"
+      ],
+      "cons": [
+        "Sanayi bölgesi çevresinde kısıtlı dekorasyon"
+      ],
+      "uncertainties": [
+        "Harbiye veya Meydan şubeleriyle saat ve porsiyon farklılıkları görülebiliyor."
+      ],
+      "selectionScore": 82,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-sarioglu-kasap-firin",
+      "categoryId": "tepsi-kebabi",
+      "resolvedName": "Sarıoğlu Kasap Fırın Restoran",
+      "branchName": "Bostancık, 31100 Defne/Hatay",
+      "placeId": "ChIJmZhWWTXFJRURBXH17bc3Zx8",
+      "coordinates": {
+        "lat": 36.1655772,
+        "lng": 36.1337664
+      },
+      "rating": 4.4,
+      "userRatingCount": 294,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2262838600887791877",
+      "recommendedPrimary": [
+        "Kasap Fırını Kağıt Kebabı",
+        "Tepsi Kebabı",
+        "Antakya Lahmacun"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Geleneksel Antakya Kasap Fırını Kültürü",
+          "note": "Eti günlük kasap tezgâhından zırha alıp taş fırına süren gelenek, porsiyon tazeliğini doğrudan hissettiriyor.",
+          "proof": "serviskayitlistesi.com ve Defne yerel gastronomi kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ailelere uygun geniş salon ve açık oturma alanları",
+        "crowdAndNoise": "Hafta içi öğle ve hafta sonu aile akşam yemeklerinde canlı",
+        "disadvantage": "Şehir merkezindeki yaya çarşısına uzak konumda kaldığından araçla ulaşım gerekiyor.",
+        "transit": "Bostancık Mahallesi Defne çevre yolu güzergâhı üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Servis Kayıt Listesi Defne",
+          "url": "https://serviskayitlistesi.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bostancık Çevre Yolu kasap fırını menüsü ve aile konsepti"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yaklaşık 300 değerlendirmede yüksek et ve fırın memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Kasap ve taş fırının bir arada bulunması et tazeliğini artırıyor",
+        "Ferah aile oturumu"
+      ],
+      "cons": [
+        "Aracı olmayan ziyaretçiler için Bostancık ulaşımı aktarma gerektirebiliyor"
+      ],
+      "uncertainties": [
+        "Hafta sonu aile kalabalığında fırın siparişlerinin hazırlanması biraz zaman alabiliyor."
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-harbiye-meze",
+      "categoryId": "humus-meze",
+      "resolvedName": "Harbiye Meze",
+      "branchName": "Çekmece, Uğur Mumcu Cd. Yusuf Güiü apt 90/A D:90/A, 31160 Defne/Hatay",
+      "placeId": "ChIJN0OzosDDJRURhD-lR4jP4Xk",
+      "coordinates": {
+        "lat": 36.2036708,
+        "lng": 36.1392759
+      },
+      "rating": 4.6,
+      "userRatingCount": 160,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8782528932573691780",
+      "recommendedPrimary": [
+        "Cevizli Muhammara & Humus",
+        "Abugannuş",
+        "Kırma Yeşil Zeytin & Zahter Salatası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Soğuk Meze Tezgâhı Çeşitliliği",
+          "note": "Tam oturumlu kebap restoranı yerine meze tezgâhından seçme veya sofraya paket meze hazırlama odaklı çalışıyor.",
+          "proof": "Yandex Maps ve yerel Çekmece meze tavsiyeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Paket tezgâhı ağırlıklı butik meze noktası ve sınırlı oturma alanı",
+        "crowdAndNoise": "Özellikle akşamüstü ev sofraları ve hafta sonu öncesinde hızlı sirkülasyon",
+        "disadvantage": "Büyük akşam yemeği salonu yerine ağırlıklı olarak meze seçimi ve tadımlık tezgâh sunuyor.",
+        "transit": "Çekmece Mahallesi Uğur Mumcu Caddesi No:90/A üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yandex Maps Defne Kaydı",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çekmece Caddesi ev yapımı taze Hatay mezeleri değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "160 misafirden meze tazeliği için yüksek puan"
+        }
+      ],
+      "pros": [
+        "Antakya meze çeşitlerini tek tezgahta günlük ve taze sunuyor",
+        "Ev veya piknik sofrası kurmak için ideal"
+      ],
+      "cons": [
+        "Tam kapsamlı akşam restoranı konforu sunmuyor"
+      ],
+      "uncertainties": [
+        "Popüler zeytinyağlılar öğleden sonra tükenebiliyor."
+      ],
+      "selectionScore": 82,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-cayirci-1953-hasan-usta",
+      "categoryId": "humus-meze",
+      "resolvedName": "Çayırcı 1953 Hasan Usta",
+      "branchName": "Meydan, Meydan Cd., 31030 Antakya/Hatay",
+      "placeId": "ChIJa-nviQ3DJRURxcAdRbbfRxU",
+      "coordinates": {
+        "lat": 36.2039672,
+        "lng": 36.165427699999995
+      },
+      "rating": 4.5,
+      "userRatingCount": 101,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1533440172079562949",
+      "recommendedPrimary": [
+        "Tereyağlı & Zeytinyağlı Bakla Ezmesi",
+        "Sıcak Pastırmalı / Sade Humus",
+        "Köz Biber & Soğan Turşusu Eşlikçisi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Geleneksel Ağır Pişirim Tekniği",
+          "note": "Nohut ve baklanın geceden sabaha ağır ısıda demlenip taş veya tokmak dokusuyla ezilmesi Antakya sabah kültürünün temel direği.",
+          "proof": "kisikatesakademi.com.tr Antakya bakla-humus dosyası"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî esnaf tezgâhı ve sade hızlı kahvaltı/öğle masaları",
+        "crowdAndNoise": "Sabahın ilk ışıklarından öğleye dek hızlı esnaf ve müdavim akışı",
+        "disadvantage": "Geleneksel esnaf dükkanı atmosferinde sade bir sunuma sahip; erken saatlerde uğramak gerekiyor.",
+        "transit": "Meydan Mahallesi Meydan Caddesi üzerinde Antakya çarşı merkezinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Kısık Ateş Akademi Dosyası",
+          "url": "https://kisikatesakademi.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1953’ten beri ağır ateş hamam külhanı usulü bakla ezmesi geleneği"
+        },
+        {
+          "title": "Yandex Maps Meydan Kaydı",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Antakya Meydan sıcak humus ve bakla değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "100+ misafirle yüksek geleneksel lezzet skoru"
+        }
+      ],
+      "pros": [
+        "Yarım asrı aşan geleneksel bakla ezmesi ve sıcak humus ustalığı",
+        "Otantik Antakya sabah deneyimi"
+      ],
+      "cons": [
+        "Öğleden sonra kalmayabiliyor ve oturma alanı oldukça sade"
+      ],
+      "uncertainties": [
+        "Yeniden yapılanma sürecinde Meydan civarı tezgâh saatleri dönemsel esneyebiliyor."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-cayirci-bakla-saraycik",
+      "categoryId": "humus-meze",
+      "resolvedName": "Çayırcı Bakla & Humus Salonu (Saraycık)",
+      "branchName": "Yeni otogar yanında Saraycık kavşağı saray plaza karşısında, saray plaza karşısında, Saraycık, kavşağı Yeni otogar yanında, 31060 Antakya/Hatay",
+      "placeId": "ChIJ0YOVwDLCJRURiVM9NEo5kp8",
+      "coordinates": {
+        "lat": 36.235169,
+        "lng": 36.127294
+      },
+      "rating": 4.4,
+      "userRatingCount": 98,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11498315789497095049",
+      "recommendedPrimary": [
+        "Tereyağlı Sıcak Humus",
+        "Geleneksel Bakla Ezmesi",
+        "Zeytinyağlı Çekme Humus"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ulaşımı Rahat Alternatif Salon",
+          "note": "Tarihî çarşıya inmeden çevre yolu aksında hızlı bir sıcak humus-bakla molası vermek isteyenler için pratik bir nokta.",
+          "proof": "Antakya Saraycık yerel işletme kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sade iç salon ve yol üstü pratik masa düzeni",
+        "crowdAndNoise": "Sabah kahvaltısı ve öğle arasında bölge çalışanları ile dolu",
+        "disadvantage": "Geleneksel çarşı dokusu yerine modern yol üstü bina altında hizmet veriyor.",
+        "transit": "Saraycık kavşağı yeni otogar yakınında ana yol güzergâhında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yandex Maps Saraycık",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Saraycık şubesi sıcak humus ve bakla ezmesi notları"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yaklaşık 100 değerlendirmede tutarlı sabah lezzeti"
+        }
+      ],
+      "pros": [
+        "Otopark ve ulaşım açısından çarşı içine göre daha rahat",
+        "Taze sıcak servis"
+      ],
+      "cons": [
+        "Çarşı içi atmosferi arayanlar için daha sıradan çevre düzeni"
+      ],
+      "uncertainties": [
+        "Sabah yoğunluğunda erken saatlerde ürün tazeliği zirvede oluyor."
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-dafne-kunefe",
+      "categoryId": "kunefe",
+      "resolvedName": "Hatay Dafne Künefe",
+      "branchName": "Çekmece mah 387 sk, sınav koleji önü, Çekmece, Çevre Yolu 2/2, 31100 Defne/Hatay",
+      "placeId": "ChIJb9zjdqnDJRURRjKJ44cVlKw",
+      "coordinates": {
+        "lat": 36.2121517,
+        "lng": 36.1239846
+      },
+      "rating": 4.7,
+      "userRatingCount": 183,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12435588144458969670",
+      "recommendedPrimary": [
+        "Antakya Çıtır Künefe",
+        "Fıstıklı Katmer",
+        "Kaymaklı Künefe"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ferah Teras & Sıcak Servis Dengesi",
+          "note": "Kalabalık çarşı aralarına kıyasla akşamüstü serinliğinde oturup taze pişen tepsiyi beklemek için elverişli.",
+          "proof": "yemek.com ve Yandex Defne tatlı rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Kapalı salon ve ferah teras oturma alanı",
+        "crowdAndNoise": "Akşamüstü ve yemek sonrası aile kalabalığı ile hareketli",
+        "disadvantage": "Hafta sonu akşamlarında taze pişen künefe tepsisi için kısa bekleme yaşanabiliyor.",
+        "transit": "Çekmece Mahallesi Çevre Yolu No:2/2 (Sınav Koleji önü) üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemek.com Künefe Rehberi",
+          "url": "https://yemek.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Antakya künefesinin tuzsuz peynir ve açık ateş pişirim kriterleri"
+        },
+        {
+          "title": "Yandex Maps Çekmece",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Teras alanı ve çıtır künefe porsiyonları hakkında olumlu geri bildirimler"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "180+ değerlendirmede yüksek tazelik puanı"
+        }
+      ],
+      "pros": [
+        "Peynir uzama kıvamı ve şerbet dengesi hafif",
+        "Rahat teras oturumu"
+      ],
+      "cons": [
+        "Akşam geç saatlerde masa dönüşü yavaşlayabiliyor"
+      ],
+      "uncertainties": [
+        "Porsiyon künefeler sipariş anında piştiğinden hazırlanma süresi birkaç dakika sürüyor."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-yess-kunefe",
+      "categoryId": "kunefe",
+      "resolvedName": "Yess Künefe",
+      "branchName": "Akevler, 75. Yıl Blv., 31030 Antakya/Hatay",
+      "placeId": "ChIJF2UPNcLDJRURmfMd3jHicrU",
+      "coordinates": {
+        "lat": 36.2198924,
+        "lng": 36.1476225
+      },
+      "rating": 4.6,
+      "userRatingCount": 213,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13074761372017750937",
+      "recommendedPrimary": [
+        "Klasik Antakya Künefe",
+        "Antep Fıstıklı Özel Künefe",
+        "Kaymak & Süt Eşlikçisi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Gösterişli Servis & Şerbet Ayarı",
+          "note": "Şerbetinin boğmayan dengesi ve hızlı masaya gelişiyle akşam tatlı molalarında tercih ediliyor.",
+          "proof": "Akevler Yandex Maps ve yerel tatlı listeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Akevler cadde üstü açık ve kapalı küçük masa alanı",
+        "crowdAndNoise": "Özellikle akşam yemek sonrası saatlerinde hareketli",
+        "disadvantage": "Enerjik espri/şovlu servis tarzı sakin tatlı molası arayanlara hareketli gelebilir.",
+        "transit": "Akevler Mahallesi 75. Yıl Bulvarı üzerinde Antakya merkez ulaşımında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yandex Maps Akevler",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Akevler şubesinde künefe lezzeti ve sunum memnuniyeti"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "210+ değerlendirmeyle istikrarlı puan profili"
+        }
+      ],
+      "pros": [
+        "Şehir merkezinde 75. Yıl Blv. üstünde kolay erişim",
+        "Çıtırlığını koruyan alt-üst kızarma"
+      ],
+      "cons": [
+        "Geniş salon yerine daha kompakt oturum"
+      ],
+      "uncertainties": [
+        "Yoğun akşam saatlerinde oturacak yer beklemek gerekebiliyor."
+      ],
+      "selectionScore": 82,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-guler-tatlicisi",
+      "categoryId": "kunefe",
+      "resolvedName": "Güler Tatlıcısı (Güleroğlu Geleneği)",
+      "branchName": "Sümerler, Levent Sk. No:1, 31160 Defne/Hatay",
+      "placeId": "ChIJKSMG_6LDJRURQ6KGIzbjNmI",
+      "coordinates": {
+        "lat": 36.1913868,
+        "lng": 36.155835599999996
+      },
+      "rating": 4.8,
+      "userRatingCount": 85,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7077093686123078211",
+      "recommendedPrimary": [
+        "Fıstıklı Kuru & Yaş Baklava",
+        "Cevizli Ev Baklavası",
+        "Fıstıklı Dolama"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yarım Asırlık Aile İmalat Geleneği",
+          "note": "1970’lerde Mehmet Güler tarafından başlatılan imalat birikimini Sümerler hattında saf tereyağıyla sürdürüyor.",
+          "proof": "antakyagazetesi.com ve guleroglubaklava.com.tr arşivleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Al-götür ağırlıklı pastane tezgâhı ve küçük tadım masaları",
+        "crowdAndNoise": "Özellikle bayram öncesi ve akşamüstü saatlerinde kutu alımlarıyla yoğun",
+        "disadvantage": "Uzun oturumlu kafe düzeninden çok kaliteli imalat ve kutu tatlı satış noktası.",
+        "transit": "Sümerler Mahallesi Levent Sokak No:1 üzerinde Defne merkez aksında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Antakya Gazetesi Kültür Haberi",
+          "url": "https://antakyagazetesi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1970’lerden bugüne Hatay Güleroğlu baklava geleneği ve Sümerler noktaları"
+        },
+        {
+          "title": "Restoranım Sümerler Kaydı",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çıtır hamur ve tereyağlı fıstıklı baklava değerlendirmeleri"
+        },
+        {
+          "title": "Güleroğlu Baklava Resmi Sitesi",
+          "url": "https://guleroglubaklava.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Aile ustalığı ve birinci sınıf fıstık-tereyağı üretim standardı"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Sümerler’de yüksek tat memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Şerbeti hafif ve hamur katları çıtır",
+        "Köklü aile imalatından günlük taze tepsi"
+      ],
+      "cons": [
+        "Oturma alanı kısıtlı, ağırlıklı paket satış odaklı"
+      ],
+      "uncertainties": [
+        "Sümerler yakınında aynı ailenin birden fazla tatlı/baklava şubesi yer alıyor."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-cinaralti-yusuf-usta",
+      "categoryId": "kunefe",
+      "resolvedName": "Çınaraltı Künefe Yusuf Usta (Gastronomi Çarşısı)",
+      "branchName": "Odabaşı mahallesi akasya sokak gastronomi çarşısı, Odabaşı, Akasya Sk. gastronomi çarşısı no:11, 31060 Antakya/Hatay",
+      "placeId": "ChIJ2f1PxTLCJRURvMQFd-ESEVc",
+      "coordinates": {
+        "lat": 36.2295403,
+        "lng": 36.167402700000004
+      },
+      "rating": 4.1,
+      "userRatingCount": 4747,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6273816515477619900",
+      "recommendedPrimary": [
+        "Odun Kömüründe Peynirli Künefe",
+        "Kaymaklı Künefe"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Elle Hazırlanan Kadayıf & Köz Çevirme Ritüeli",
+          "note": "Gaz ocağı yerine kömür közü üzerinde sabırla çevrilen tepsisi gastronomi yazarlarının Antakya için temel referanslarından.",
+          "proof": "kisikatesakademi.com.tr ve gurmanatlas.com künefe incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Gastronomi Çarşısı avlusu açık ve yarı kapalı tabure/masa düzeni",
+        "crowdAndNoise": "Günün neredeyse her saatinde yerliler ve ziyaretçi kalabalığıyla yoğun",
+        "disadvantage": "Çok yüksek ziyaretçi sirkülasyonu sırasında bazen sıcaklık ve peynir kıvamı günden güne dalgalanabiliyor.",
+        "transit": "Odabaşı Mahallesi Akasya Sokak Antakya Gastronomi Çarşısı No:11 içinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Kısık Ateş Akademi İncelemesi",
+          "url": "https://kisikatesakademi.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ömür Akkor ve gastronomi çevrelerince ortak anılan odun kömürü pişirimi"
+        },
+        {
+          "title": "Gurman Atlas Antakya Dosyası",
+          "url": "https://gurmanatlas.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Elle kıyım kadayıf ve közde pişirim tekniği analizi"
+        },
+        {
+          "title": "Odatv & Yandex Gastronomi Çarşısı",
+          "url": "https://odatv.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Odabaşı Gastronomi Çarşısı’nda aktif faaliyet teyidi ve yoğunluk notları"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "4.700+ değerlendirmeyle Antakya’nın en bilinen künefe noktası"
+        }
+      ],
+      "pros": [
+        "Gaz yerine köz ateşinde pişirim geleneğini koruyan nadir merkez",
+        "Antakya Gastronomi Çarşısı’nda merkezi konum"
+      ],
+      "cons": [
+        "Yüksek talep nedeniyle zaman zaman kısa sıra ve masa beklemesi yaşanıyor"
+      ],
+      "uncertainties": [
+        "Kalabalık saatlerde arka arkaya çıkan tepsilerde pişirim/peynir esnekliği farklı hissedilebiliyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-bahcekoy-guz-bahcesi",
+      "categoryId": "kahvalti",
+      "resolvedName": "Bahçeköy Güz Bahçesi Yöresel Kahvaltı Evi",
+      "branchName": "Bahçeköy, 6006. Sok no. 18, 31160 Defne/Hatay",
+      "placeId": "ChIJxQ0erKTFJRURF5roYerew2A",
+      "coordinates": {
+        "lat": 36.1279798,
+        "lng": 36.1126247
+      },
+      "rating": 4.7,
+      "userRatingCount": 224,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6972661746346007063",
+      "recommendedPrimary": [
+        "Hatay Yöresel Serpme Kahvaltı",
+        "Biberli Ekmek & Sürk Çökeleği",
+        "Odun Çaydanlıkta Çay"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Yapımı Kahvaltılıklar & Sakin Köy Bahçesi",
+          "note": "Döver kalabalığına alternatif olarak daha sakin bahçe atmosferinde ev yapımı yöresel kahvaltılıklarla öne çıkıyor.",
+          "proof": "Bahçeköy yerel kahvaltı tavsiyeleri ve Google Maps incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaç gölgesinde açık bahçe ve çardak masaları",
+        "crowdAndNoise": "Özellikle cumartesi ve pazar sabahları ailelerle dolu",
+        "disadvantage": "Köy yolu üzerinde yer aldığından toplu taşımadan çok özel araçla ulaşım pratik.",
+        "transit": "Bahçeköy Mahallesi 6006. Sokak No:18 üzerinde Defne güney sırtlarında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yandex Maps Bahçeköy",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bahçeköy bahçeli yöresel kahvaltı çeşitleri değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "220+ değerlendirmede yüksek yöresel kahvaltı puanı"
+        }
+      ],
+      "pros": [
+        "Sakin köy bahçesi ortamı",
+        "Sürk, tuzlu yoğurt ve biberli ekmek gibi gerçek Hatay kahvaltılıkları eksiksiz"
+      ],
+      "cons": [
+        "Merkezden kısa dağ/köy yolu sürüşü gerektiriyor"
+      ],
+      "uncertainties": [
+        "Hava durumuna bağlı olarak kış aylarında kapalı çardak kapasitesi sınırlanabiliyor."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-hammusun-yeri-yagmur",
+      "categoryId": "kahvalti",
+      "resolvedName": "Hammuşun Yeri Yağmur Kahvaltı Salonu",
+      "branchName": "Döver Mah. Döver Sokak Köy Meydanı Türbe Yanı, Döver, 31160 Defne/Hatay",
+      "placeId": "ChIJicjHB3HFJRURN5mHZzLnp28",
+      "coordinates": {
+        "lat": 36.1151015,
+        "lng": 36.1245707
+      },
+      "rating": 4.5,
+      "userRatingCount": 1325,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8045653462992001335",
+      "recommendedPrimary": [
+        "Yöresel Döver Serpme Kahvaltı",
+        "Ceviz Reçeli & Kaymak",
+        "Fırından Taze Sıkma & Biberli Ekmek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarihî Çınar Gölgesi & Aile İşletmesi Geleneği",
+          "note": "Harbiye vadisinin üst köyü Döver’de üç kuşaktır köylünün kendi üretimi peynir, zeytin ve reçelleriyle masa donatıyor.",
+          "proof": "antakyagazetesi.com ve nelerimeshur.com Döver dosya haberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Dev çınar altları, taş duvarlı serin teraslar ve köy bahçesi",
+        "crowdAndNoise": "Hafta sonu sabahları Antakya ve İskenderun’dan gelen misafirlerle tam doluluk",
+        "disadvantage": "Hafta sonları yoğun talep nedeniyle servis temposu yavaşlayabiliyor; sabah erken gitmek şart.",
+        "transit": "Döver Mahallesi köy meydanı türbe yanında Harbiye yukarısı araç yolunda."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Antakya Gazetesi Döver Özel",
+          "url": "https://antakyagazetesi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Üç kuşaktır çınar gölgesinde hizmet veren tarihî köy kahvaltısı"
+        },
+        {
+          "title": "Neleri Meşhur Hatay Dosyası",
+          "url": "https://nelerimeshur.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Döver köyünün tescilli serpme kahvaltı adresi"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "1.300+ değerlendirmeyle yüksek köy kahvaltısı memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Eşsiz çınar altı köy atmosferi",
+        "Zeytinden peynire gerçek ev yapımı yöresel ürünler"
+      ],
+      "cons": [
+        "Hafta sonu kalabalığında park yeri ve masa beklemek gerekebiliyor"
+      ],
+      "uncertainties": [
+        "Hafta içi daha sakin, pazar sabahları ise yoğun kalabalık oluyor."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-yusuf-dayi-kahvalti",
+      "categoryId": "kahvalti",
+      "resolvedName": "Yusuf Dayı Kahvaltı Salonu",
+      "branchName": "Hatay /Defne ilçesi, Döver, 31160 Defne/Hatay",
+      "placeId": "ChIJoYv6rgrFJRUR7CiTXaRk9ZM",
+      "coordinates": {
+        "lat": 36.119471499999996,
+        "lng": 36.1323365
+      },
+      "rating": 4.4,
+      "userRatingCount": 2204,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10661538349976856812",
+      "recommendedPrimary": [
+        "Manzaralı Yöresel Serpme Kahvaltı",
+        "Közde Biberli Ekmek",
+        "Ceviz Reçeli & Bal Kaymak"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Vadi Manzaralı Teras Masaları",
+          "note": "Geniş teras kapasitesi sayesinde hafta sonu büyük aile gruplarının da rahatlıkla manzaraya karşı oturabileceği alan sunuyor.",
+          "proof": "bitecritic.com ve restoranim.net Döver incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Vadilere bakan geniş teraslar ve kapalı camlı salon",
+        "crowdAndNoise": "Özellikle pazar sabahları ve resmî tatillerde yoğun ziyaretçi akışı",
+        "disadvantage": "Yüksek sirkülasyon nedeniyle hafta sonu pik saatlerde masaya sıcak eklemelerin gelmesi zaman alabiliyor.",
+        "transit": "Döver Mahallesi ana köy yolu üzerinde Defne sınırlarında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım Döver Rehberi",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Döver manzarası ve zengin Hatay kahvaltı çeşitleri değerlendirmeleri"
+        },
+        {
+          "title": "Neleri Meşhur Defne Kahvaltıları",
+          "url": "https://nelerimeshur.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bölgenin önde gelen köy kahvaltısı adresleri arasında gösteriliyor"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "2.200+ değerlendirmeyle yüksek bölgesel bilinirlik"
+        }
+      ],
+      "pros": [
+        "Antakya ovasına ve yeşilliğe hakim manzaralı masalar",
+        "Kalabalık gruplara uygun geniş kapasite"
+      ],
+      "cons": [
+        "Döver yokuşunda hafta sonu araç yoğunluğu yaşanabiliyor"
+      ],
+      "uncertainties": [
+        "Hafta sonu erken rezervasyon veya sabah erken varış manzara masası için belirleyici."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-keyfi-bahce-oglakoren",
+      "categoryId": "kahvalti",
+      "resolvedName": "Keyfi Bahçe Restaurant",
+      "branchName": "Oğlakören, Oğlakören sokak no 470, 31000 Antakya/Hatay",
+      "placeId": "ChIJ69PdnKzpJRURi8urcWtQAkQ",
+      "coordinates": {
+        "lat": 36.296770599999995,
+        "lng": 36.1264787
+      },
+      "rating": 4.4,
+      "userRatingCount": 313,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4900567766931327883",
+      "recommendedPrimary": [
+        "Kır Bahçesi Serpme Kahvaltı",
+        "Biberli Ekmek & Sıcak Gözleme",
+        "Tuzlu Yoğurt & Zeytin Salatası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Antakya Kuzey Hattında Kır Bahçesi Seçeneği",
+          "note": "Harbiye-Döver aksına alternatif olarak Antakya kuzeybatı yamaçlarında geniş otoparklı ve aile dostu alan sunuyor.",
+          "proof": "rehber326.com ve Yandex Antakya kır bahçeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaç altı kır bahçesi çardakları ve aile oturma bölümleri",
+        "crowdAndNoise": "Hafta sonu sabahları ve öğleden sonraları aile gruplarıyla kalabalık",
+        "disadvantage": "Şehir merkezinden ayrı bir kır tesisi olduğundan araçsız ulaşım zor.",
+        "transit": "Oğlakören Mahallesi Oğlakören Sokak No:470 adresinde Antakya sınırlarında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Rehber 326 Hatay Kaydı",
+          "url": "https://rehber326.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Oğlakören kır bahçesi, kahvaltı ve aile alanı bilgileri"
+        },
+        {
+          "title": "Yandex Maps Oğlakören",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Doğa içi su sesli kahvaltı bahçesi değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "310+ değerlendirmeyle istikrarlı kahvaltı memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Çocuklu aileler ve kalabalık sofralar için geniş açık alan",
+        "Otopark sorunu yaşamadan erişim"
+      ],
+      "cons": [
+        "Dış mahalle konumunda kaldığı için araba gerektiriyor"
+      ],
+      "uncertainties": [
+        "Yaz sıcaklarında gölge masalar ve su kenarı yerleri daha çabuk doluyor."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-tarihi-affan-kahvesi",
+      "categoryId": "kahve",
+      "resolvedName": "Tarihi Affan Kahvesi (Defne)",
+      "branchName": "Miroğlu kasabı arkası, Aşağıokçular, Harbiye caddesi, 31000 Defne/Hatay",
+      "placeId": "ChIJzwVnks7DJRURYpNlX0aRl8o",
+      "coordinates": {
+        "lat": 36.1744045,
+        "lng": 36.1416189
+      },
+      "rating": 4.5,
+      "userRatingCount": 4223,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.affankahvesi.com/",
+      "mapsUri": "https://maps.google.com/?cid=14598296448578982754",
+      "recommendedPrimary": [
+        "Cam Bardakta Süvari Türk Kahvesi",
+        "Gül Sulu Dondurmalı Haytalı",
+        "Zahter Çayı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Deprem Sonrası Yaşayan Hafıza & Süvari Kültürü",
+          "note": "Özel kulpsuz cam çay bardağında içilen yoğun telveli Antakya süvari kahvesi ve haytalıyı deprem sonrasında da yaşatmaya devam ediyor.",
+          "proof": "bellekantakya.com, arthenos.com ve antakyagazetesi.com röportajları"
+        }
+      ],
+      "suitability": {
+        "seating": "Aşağıokçular Harbiye Caddesi hattında yenilenmiş kafe/kahvehane masaları",
+        "crowdAndNoise": "Günün her saatinde şehir yerlileri ve nostaljik lezzet arayanlarla canlı",
+        "disadvantage": "Orijinal 1913 Kurtuluş Caddesi taş binasının restorasyonu tamamlanana kadar geçici Defne lokasyonunda hizmet veriyor.",
+        "transit": "Aşağıokçular Mahallesi Harbiye Caddesi (Miroğlu Kasabı arkası), Defne."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Bellek Antakya Sözlü Tarih",
+          "url": "https://bellekantakya.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1913’ten bugüne Affan Kahvesi tarihi ve Defne’de yeniden açılış kaydı"
+        },
+        {
+          "title": "Arthenos Kültür Dosyası",
+          "url": "https://arthenos.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sahilli ailesi üç kuşaklık kahvehane ve haytalı geleneği"
+        },
+        {
+          "title": "Affan Kahvesi Resmi Sitesi",
+          "url": "http://www.affankahvesi.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Resmî duyuru ve süvari kahve-haytalı menü geleneği"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "4.200+ değerlendirmeyle bölgenin simge kahvehanesi"
+        }
+      ],
+      "pros": [
+        "Antakya’nın yaşayan en köklü kahvehane kültürünü sürdürüyor",
+        "Otantik süvari kahvesi ve haytalı bir arada"
+      ],
+      "cons": [
+        "Orijinal tarihî taş binanın mimari dokusu henüz restorasyon aşamasında"
+      ],
+      "uncertainties": [
+        "Kurtuluş Caddesi’ndeki tarihî yapının açılışıyla adres düzenlemesi ileride yeniden güncellenebilir."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-aya-coffee-antakya",
+      "categoryId": "kahve",
+      "resolvedName": "Aya Coffee Antakya",
+      "branchName": "Ayacoffe Şükrü Güçlü Bulvarı No:28 Defne, Armutlu, 31141 Antakya/Hatay",
+      "placeId": "ChIJ7QemET_DJRURXr4iouDrYLE",
+      "coordinates": {
+        "lat": 36.194089999999996,
+        "lng": 36.1490856
+      },
+      "rating": 4.6,
+      "userRatingCount": 99,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12781475092502855262",
+      "recommendedPrimary": [
+        "Flat White",
+        "Iced Americano",
+        "V60 Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sakin Çalışma & Mahalle Sohbet Alanı",
+          "note": "Gürültülü nargile kafelerinden ayrılarak sade kahve odaklı daha dingin bir oturum sunuyor.",
+          "proof": "serviskayitlistesi.com ve Yandex Armutlu kafe notları"
+        }
+      ],
+      "suitability": {
+        "seating": "İç ve dış sade kahve masaları",
+        "crowdAndNoise": "Öğleden sonra ve akşamüstü gençler ile kahve müdavimleri",
+        "disadvantage": "Büyük zincir salonlara göre daha kompakt oturma kapasitesine sahip.",
+        "transit": "Armutlu Mahallesi Şükrü Güçlü Bulvarı No:28 üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Servis Kayıt Listesi Armutlu",
+          "url": "https://serviskayitlistesi.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Şükrü Güçlü Bulvarı konumu ve sakin kahve molası notları"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yaklaşık 100 misafirle güçlü mahalle memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Nargilesiz temiz kahve atmosferi",
+        "Antakya-Defne geçiş aksında kolay konum"
+      ],
+      "cons": [
+        "Geniş yemek menüsü arayanlar için seçenek sınırlı"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamüstü saatlerinde masa bulmak biraz yoğunlaşabiliyor."
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-motto-coffee-co",
+      "categoryId": "kahve",
+      "resolvedName": "Motto Coffee Co. (Defne)",
+      "branchName": "Çekmece, Çevre Yolu Kültür Sanat Çarşısı No:42/9, 31160 Defne/Hatay",
+      "placeId": "ChIJ1ZAglOHDJRURfoJC1-JG8h8",
+      "coordinates": {
+        "lat": 36.2085297,
+        "lng": 36.1211274
+      },
+      "rating": 4.6,
+      "userRatingCount": 36,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://mottocoffeeco.com/",
+      "mapsUri": "https://maps.google.com/?cid=2301980299627758206",
+      "recommendedPrimary": [
+        "V60 Pour-Over",
+        "Iced Latte",
+        "Cortado"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Modern Çarşı İçinde Nitelikli Çekirdek Odaklı Bar",
+          "note": "Deprem sonrası oluşan Kültür Sanat Çarşısı dokusunda üçüncü nesil demleme standardı yakalayan öncü yerel kahve markalarından.",
+          "proof": "mottocoffeeco.com ve Yandex Defne kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kültür Sanat Çarşısı önü açık alan ve modern iç bar",
+        "crowdAndNoise": "Gündüz çalışma ve akşamüstü sosyalleşme saatlerinde canlı",
+        "disadvantage": "Çekmece çevre yolu çarşı yapısı içinde açık alan yoğunluğu rüzgara açık olabiliyor.",
+        "transit": "Çekmece Mahallesi Çevre Yolu Kültür Sanat Çarşısı No:42/9 içinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Motto Coffee Resmi Sitesi",
+          "url": "https://mottocoffeeco.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Defne Çekmece ve Sümerler nitelikli kahve barı konsepti"
+        },
+        {
+          "title": "Web Mutfağı Defne Rehberi",
+          "url": "https://webmutfagi.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Modern demleme kahve seçkisi ve Çekmece konumu"
+        },
+        {
+          "title": "Yandex Maps Çekmece",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahve kalitesi ve ortam memnuniyeti notları"
+        }
+      ],
+      "pros": [
+        "Nitelikli üçüncü nesil kahve seçenekleri tutarlı",
+        "Kültür Sanat Çarşısı içinde ulaşılabilir"
+      ],
+      "cons": [
+        "Geniş kapalı çalışma odası yerine kompakt çarşı dükkânı"
+      ],
+      "uncertainties": [
+        "Farklı tek köken çekirdek stokları haftalık kavrum programına göre değişiyor."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-unutulmaz-cafe",
+      "categoryId": "kahve",
+      "resolvedName": "Unutulmaz Cafe",
+      "branchName": "Balıklıdere, 31160 Defne/Hatay",
+      "placeId": "ChIJDXZfF2TFJRURv4eVyu80pzM",
+      "coordinates": {
+        "lat": 36.111069,
+        "lng": 36.117196899999996
+      },
+      "rating": 4.5,
+      "userRatingCount": 415,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://instagram.com/unutulmazcafe?utm_medium=copy_link",
+      "mapsUri": "https://maps.google.com/?cid=3722001821545629631",
+      "recommendedPrimary": [
+        "Közde / Klasik Türk Kahvesi",
+        "Demlik Çay & Doğal Limonata",
+        "Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Gün Batımı Vadisi & Sessiz Dinlenme Durağı",
+          "note": "Şehir içi yoğunluğun uzağında serin yayla esintisi eşliğinde kahve molası vermek isteyenler tarafından özellikle hafta sonları seçiliyor.",
+          "proof": "Yandex Maps Defne ve serviskayitlistesi.com kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Vadiye bakan kademeli açık teraslar ve bahçe oturumu",
+        "crowdAndNoise": "Özellikle ikindi ve gün batımı saatlerinde manzara izlemeye gelen misafirlerle dolu",
+        "disadvantage": "Yüksek köy/yayla aksında olduğu için özel araçla ulaşım gerektiriyor.",
+        "transit": "Balıklıdere Mahallesi Defne sınırlarında, Harbiye–Döver yukarısında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yandex Maps Balıklıdere",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Doğa manzaralı vadi kafesi ve gün batımı atmosferi değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "415+ değerlendirmeyle bölgenin en beğenilen seyir kafelerinden"
+        }
+      ],
+      "pros": [
+        "Panoramik yeşil vadi manzarası ve yaz akşamları serin esintisi",
+        "Şehir stresinden uzak ortam"
+      ],
+      "cons": [
+        "Toplu taşıma kısıtlı ve akşam dönüş yolu virajlı köy yolundan sağlanıyor"
+      ],
+      "uncertainties": [
+        "Yağışlı veya rüzgarlı havalarda açık teras kapasitesi daralıyor."
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-umut-et-restaurant",
+      "categoryId": "denemelisin",
+      "resolvedName": "Umut Et Restaurant",
+      "branchName": "Sosyete Pazarı Yanı, Çekmece, Uğur Mumcu Cd., 31000 Defne/Hatay",
+      "placeId": "ChIJS6j1F6TDJRURA_j9xCJXI4c",
+      "coordinates": {
+        "lat": 36.1958793,
+        "lng": 36.1462299
+      },
+      "rating": 4.7,
+      "userRatingCount": 225,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/umutet_restaurant?igsh=MXN5ZGs3emR0ZHA0NQ%3D%3D&utm_source=qr",
+      "mapsUri": "https://maps.google.com/?cid=9737722626150627331",
+      "recommendedPrimary": [
+        "Antakya Usulü Zırh Kebap",
+        "Kuzu Kaburga & Pirzola",
+        "Kağıt Kebabı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mahalle Kasap-Restoran Güvenilirliği",
+          "note": "Sosyete pazarı yanı konumunda doğrudan yöre halkının et seçtiği temiz ve istikrarlı et lokantası olarak öne çıkıyor.",
+          "proof": "Defne Çekmece yerel rehber ve Instagram mutfak arşivi"
+        }
+      ],
+      "suitability": {
+        "seating": "Düzenli kapalı restoran salonu ve aile masaları",
+        "crowdAndNoise": "Akşam saatlerinde aileler ve et tutkunlarıyla düzenli hareketlilikte",
+        "disadvantage": "Günün yoğun saatlerinde ızgara siparişlerinin masaya gelişi biraz zaman alabiliyor.",
+        "transit": "Çekmece Mahallesi Uğur Mumcu Caddesi (Sosyete Pazarı yanı), Defne."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Umut Et Instagram Arşivi",
+          "url": "https://www.instagram.com/umutet_restaurant",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Çekmece güncel et, kaburga ve kebap sunumları"
+        },
+        {
+          "title": "Yandex Maps Çekmece",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bölge halkının et kalitesi ve güler yüzlü servis değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "225+ değerlendirmeyle istikrarlı puan profili"
+        }
+      ],
+      "pros": [
+        "Et seçimi temiz ve pişirim derecesi beklentiye uygun",
+        "Uğur Mumcu aksında kolay adres"
+      ],
+      "cons": [
+        "Akşam yoğunluğunda masa beklemesi olabiliyor"
+      ],
+      "uncertainties": [
+        "Özel kesim etlerin günlük mevcudu kasap dolabına göre değişebiliyor."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-sagiroglu-et-pazari",
+      "categoryId": "denemelisin",
+      "resolvedName": "Sağıroğlu Et Pazarı",
+      "branchName": "Meydan, 31060 Antakya/Hatay",
+      "placeId": "ChIJ8VyiTCzCJRURm-KztSKCppA",
+      "coordinates": {
+        "lat": 36.2044121,
+        "lng": 36.168195499999996
+      },
+      "rating": 4.6,
+      "userRatingCount": 102,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10423161473184555675",
+      "recommendedPrimary": [
+        "Günlük Tepsi Kebabı",
+        "Kağıt Kebabı Hazırlığı",
+        "Zırh Kıyma Kebap"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarihî Merkezde Kasap-Fırın Pratikliği",
+          "note": "Meydan ve Uzun Çarşı hattında hızlı, taze et odaklı bir Antakya durağı arayanlar için yerlilerin güvendiği adreslerden.",
+          "proof": "reklamsayfalari.com ve bulurum.com Meydan kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kasap tezgâhı ve sade hızlı esnaf oturumu",
+        "crowdAndNoise": "Gündüz alışveriş ve öğle servisi saatlerinde yoğun",
+        "disadvantage": "Akşam oturumlu restoran ambiance’ı yerine esnaf kasap-tepsi düzeni ön planda.",
+        "transit": "Meydan Mahallesi Kurtuluş Caddesi çevresinde Antakya merkezinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Bulurum Antakya Kaydı",
+          "url": "https://www.bulurum.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Meydan kasap pazarı ve köklü esnaf konumu"
+        },
+        {
+          "title": "Yandex Maps Meydan",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Günlük taze kırmızı et ve tepsi kebabı kalitesi notları"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "100+ misafirden tazelik odaklı güçlü onay"
+        }
+      ],
+      "pros": [
+        "Eti doğrudan tezgâhtan seçme şeffaflığı",
+        "Tarihî Antakya merkezinde yürüyüşle erişim"
+      ],
+      "cons": [
+        "Gündüz odaklı saatlerde çalışıyor, dekorasyon sade"
+      ],
+      "uncertainties": [
+        "Tepsi pişirimi bitişik fırın yoğunluğuna göre dakika farkı gösterebiliyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-bogazici-kebap-kunefe",
+      "categoryId": "denemelisin",
+      "resolvedName": "Boğaziçi Kebap & Künefe",
+      "branchName": "Döver köyü yolu üzeri 1.seyir alanı, Harbiye, 31080 Defne/Hatay",
+      "placeId": "ChIJWfLIOnbFJRURKEvFr8GtYug",
+      "coordinates": {
+        "lat": 36.1270664,
+        "lng": 36.143701
+      },
+      "rating": 4.5,
+      "userRatingCount": 218,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16745137411906161448",
+      "recommendedPrimary": [
+        "Harbiye Kebabı",
+        "Közde Peynirli Künefe",
+        "Kuzu Şiş"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kebap Sonrası Tek Adreste Sıcak Künefe",
+          "note": "Harbiye seyir hattında ayrıca tatlıcıya geçmeye gerek bırakmadan taze pişen künefesiyle akşam yemeğini tamamlıyor.",
+          "proof": "restoranim.net ve Yandex Harbiye incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Vadiye nazır teras masaları ve kapalı bölüm",
+        "crowdAndNoise": "Akşamüstü ve hafta sonu aile yemeklerinde hareketli",
+        "disadvantage": "Döver çıkış rampası üzerinde yer aldığı için yaya yürüyüşten çok araçla uğramaya uygun.",
+        "transit": "Harbiye Mahallesi Döver köyü yolu 1. seyir alanı üzerinde, Defne."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım Harbiye Kaydı",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Harbiye dürümleri, kebap ve künefe servisiyle öne çıkan yerel adres"
+        },
+        {
+          "title": "Yandex Maps Harbiye",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Seyir alanı konumu ve akşam servisi değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "210+ misafirle istikrarlı puan profili"
+        }
+      ],
+      "pros": [
+        "Kebap ve sıcak künefe kalitesini aynı sofrada sunuyor",
+        "Vadi seyir noktası konumu"
+      ],
+      "cons": [
+        "Dönüş yolunda akşam karanlığında yol dikkat gerektiriyor"
+      ],
+      "uncertainties": [
+        "Hafta sonu vadi terasındaki ön sıra masalar erken dolabiliyor."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hatay-orkinos-balik-kuzeytepe",
+      "categoryId": "denemelisin",
+      "resolvedName": "Orkinos Balık Restaurant",
+      "branchName": "Kuzeytepe, Atatürk 16. cad No:53A, 31027 Antakya/Hatay",
+      "placeId": "ChIJbcr3KlvBJRURqOdyHoYQWx0",
+      "coordinates": {
+        "lat": 36.254047,
+        "lng": 36.171864
+      },
+      "rating": 4.6,
+      "userRatingCount": 35,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/orkinosbalik.restaurant?igsh=ZnJrOXFiMDBzcXdn",
+      "mapsUri": "https://maps.google.com/?cid=2115302618203088808",
+      "recommendedPrimary": [
+        "Günün Taze Izgara Balığı",
+        "Kalamar & Karides Güveç",
+        "Hatay Usulü Deniz Mezeleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Antakya İçinde Deniz Ürünleri Alternatifi",
+          "note": "Uzun Antakya seyahatlerinde kebap ve etten kısa bir mola verip taze deniz balığı yemek isteyenler için özenli seçenek.",
+          "proof": "orkinosbalik.com menü kapsamı ve Yandex Kuzeytepe notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Düzenli kapalı balık salonu ve aile oturma bölümleri",
+        "crowdAndNoise": "Akşam yemekleri ve hafta sonu aile buluşmalarında canlı",
+        "disadvantage": "İskenderun sahil şeridindeki büyük balık lokantalarına kıyasla şehir içi sade balıkçı salonu ölçeğinde.",
+        "transit": "Kuzeytepe Mahallesi Atatürk 16. Cadde No:53A, Antakya."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Orkinos Balık Resmi Sitesi",
+          "url": "https://orkinosbalik.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Taze günlük balık, Ege-Akdeniz mezeleri ve Kuzeytepe konumu"
+        },
+        {
+          "title": "Yandex Maps Kuzeytepe",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Antakya içinde taze deniz ürünü ve meze kalitesi övgüleri"
+        }
+      ],
+      "pros": [
+        "Antakya merkezde taze balık ve ara sıcak bulmayı kolaylaştırıyor",
+        "Temiz meze sunumu"
+      ],
+      "cons": [
+        "Merkez yaya hattından Kuzeytepe’ye kısa araç yolculuğu gerekiyor"
+      ],
+      "uncertainties": [
+        "Mevsim balığı çeşitleri günlük Körfez ve Akdeniz gelişine bağlı."
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    }
+  ]
+}

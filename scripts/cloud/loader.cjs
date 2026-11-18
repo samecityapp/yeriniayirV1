@@ -1,0 +1,2 @@
+const fs=require('node:fs'),path=require('node:path'),ts=require('typescript');
+require.extensions['.ts']=(module,filename)=>{if(!filename.startsWith(path.join(process.cwd(),'lib')))throw Error('Outside local library');module._compile(ts.transpileModule(fs.readFileSync(filename,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText,filename);};

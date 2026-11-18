@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import { Ratelimit } from '@upstash/ratelimit';
 import { Redis } from '@upstash/redis';
+import { checkPilotAdmin, PILOT_PRIVATE_HEADERS, pilotAuthFailureHeaders } from '@/lib/pilot/adminAuth';
 
 const defaultLocale = 'tr';
 const locales = ['tr', 'en', 'el'];
@@ -21,11 +22,40 @@ const ratelimit = new Ratelimit({
     prefix: '@upstash/ratelimit',
 });
 
-export async function middleware(request: NextRequest) {
+async function applicationMiddleware(request: NextRequest) {
 
     const pathname = request.nextUrl.pathname;
     const hostname = request.headers.get('host') || '';
-    const ip = request.ip || '127.0.0.1';
+    const ip = request.headers.get('x-real-ip') || '127.0.0.1';
+
+    // Independent cloud endpoints authenticate inside each handler; no legacy Basic fallback.
+    if(pathname.startsWith('/api/gastronomy-admin/')||pathname==='/api/gastronomy-public'||pathname.split('/').includes('gastronomi-yonetimi')){
+        const response=NextResponse.next();
+        if(pathname!=='/api/gastronomy-public'){
+            response.headers.set('Cache-Control','private, no-store');
+            response.headers.set('X-Robots-Tag','noindex, nofollow');
+        }
+        return response;
+    }
+
+    // Protect all locales, the locale-free alias and child routes before static-file skips.
+    // Route handlers also authenticate independently of middleware.
+    const isPilot = pathname.split('/').includes('moda-kadikoy-pilot');
+    if (isPilot) {
+        const auth = await checkPilotAdmin(request.headers.get('authorization'));
+        if (!auth.ok) {
+            return new NextResponse(auth.status === 503 ? 'Admin configuration unavailable' : 'Auth Required', {
+                status: auth.status,
+                headers: pilotAuthFailureHeaders(auth.status),
+            });
+        }
+        const hasLocale = locales.some(locale => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`));
+        const response = hasLocale
+            ? NextResponse.next()
+            : NextResponse.rewrite(new URL(`/${hostname === 'worldandhotels.com' || hostname === 'www.worldandhotels.com' ? 'en' : 'tr'}${pathname}`, request.url));
+        for (const [name, value] of Object.entries(PILOT_PRIVATE_HEADERS)) response.headers.set(name, value);
+        return response;
+    }
 
     // 1. CRITICAL: Skip all internal Next.js paths and static files
     if (
@@ -65,19 +95,41 @@ export async function middleware(request: NextRequest) {
         // Continue execution if Redis/RateLimit fails
     }
 
-    // 5. ADMIN PROTECTION (Basic Auth) - MOVED UP
+    // 5. ADMIN PROTECTION (Basic Auth) - Fail-closed without hardcoded password fallback
     // This must run before locale rewrites to ensure it catches the path
     if (pathname.includes('/jilinrime')) {
+        const expectedUser = process.env.ADMIN_USER?.trim() || 'admin';
+        const expectedPassword = process.env.ADMIN_PASSWORD?.trim();
+
+        if (!expectedPassword) {
+            console.error('SECURITY CRITICAL: ADMIN_PASSWORD environment variable is not set.');
+            return new NextResponse('Admin configuration error: ADMIN_PASSWORD is required.', {
+                status: 503,
+            });
+        }
+
         const basicAuth = request.headers.get('authorization');
 
-        if (basicAuth) {
-            const authValue = basicAuth.split(' ')[1];
-            const [user, pwd] = atob(authValue).split(':');
+        if (basicAuth && basicAuth.startsWith('Basic ')) {
+            try {
+                const authValue = basicAuth.slice(6).trim();
+                const decoded = atob(authValue);
+                const colonIndex = decoded.indexOf(':');
+                const user = colonIndex !== -1 ? decoded.slice(0, colonIndex) : '';
+                const pwd = colonIndex !== -1 ? decoded.slice(colonIndex + 1) : '';
 
-            if (user === 'admin' && pwd === (process.env.ADMIN_PASSWORD || 'Otel2024!')) {
-                // Valid credentials, proceed
-            } else {
-                return new NextResponse('Auth Required', {
+                if (user === expectedUser && pwd === expectedPassword) {
+                    // Valid credentials, proceed
+                } else {
+                    return new NextResponse('Auth Required', {
+                        status: 401,
+                        headers: {
+                            'WWW-Authenticate': 'Basic realm="Secure Area"',
+                        },
+                    });
+                }
+            } catch {
+                return new NextResponse('Invalid Auth Header', {
                     status: 401,
                     headers: {
                         'WWW-Authenticate': 'Basic realm="Secure Area"',
@@ -150,8 +202,13 @@ export async function middleware(request: NextRequest) {
 
 }
 
-export const config = {
-    // Matcher to filter what the middleware runs on
-    // Negative lookahead to ignore internal paths
-    matcher: ['/((?!_next|api|static|favicon.ico|robots.txt).*)'],
-};
+// Staging is opt-in and fails closed without its own ADMIN_PASSWORD.
+export async function middleware(request:NextRequest){
+ const staging=process.env.APP_ENVIRONMENT==='staging';
+ if(staging){const auth=await checkPilotAdmin(request.headers.get('authorization'));if(!auth.ok)return new NextResponse(auth.status===503?'Staging configuration unavailable':'Auth Required',{status:auth.status,headers:{...pilotAuthFailureHeaders(auth.status),'X-Robots-Tag':'noindex, nofollow, noarchive'}});}
+ const api=request.nextUrl.pathname==='/api'||request.nextUrl.pathname.startsWith('/api/');
+ const response=api?NextResponse.next():await applicationMiddleware(request);
+ if(staging){response.headers.set('X-Robots-Tag','noindex, nofollow, noarchive');response.headers.set('Cache-Control','private, no-store, max-age=0');response.headers.set('Vary','Authorization');}
+ return response;
+}
+export const config={matcher:['/((?!_next/static|_next/image|favicon.ico).*)']};

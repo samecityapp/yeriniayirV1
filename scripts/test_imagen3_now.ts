@@ -1,5 +1,6 @@
+if (!process.env.GEMINI_API_KEY) throw new Error('GEMINI_API_KEY is required; no request sent.');
 async function testImagen3() {
-    const apiKey = 'AIzaSyCVEAM5S-_4kUEp9Cetof5CEn-rSXOfRC4';
+    const apiKey = process.env.GEMINI_API_KEY;
 
     // Test imagen-3.0-generate-002
     const url002 = `https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-002:predict?key=${apiKey}`;

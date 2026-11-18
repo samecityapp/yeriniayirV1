@@ -1,0 +1,865 @@
+{
+  "schemaVersion": 3,
+  "verifiedAt": "2026-11-17T11:58:51.750Z",
+  "region": {
+    "id": "sigacik-seferihisar-izmir",
+    "slug": "sigacik",
+    "city": "İzmir",
+    "district": "Seferihisar",
+    "neighborhood": "Sığacık",
+    "officialQuarter": "Sığacık Mahallesi (Sığacık Kaleiçi, Sığacık Limanı / Kordon, Teos Marina, Teos Caddesi, Teos Antik Kenti, Akkum & Ekmeksiz Hattı)",
+    "displayName": "Sığacık, Seferihisar, İzmir",
+    "locative": "Sığacık'ta",
+    "path": [
+      "izmir",
+      "seferihisar",
+      "sigacik"
+    ],
+    "aliases": [
+      "Sığacık",
+      "Sigacik",
+      "Sığacık Seferihisar",
+      "Sığacık İzmir",
+      "Sığacık Kaleiçi",
+      "Kaleiçi Sığacık",
+      "Teos Marina",
+      "Sığacık Liman",
+      "Teos",
+      "Akkum Plajı",
+      "Akkum Sığacık"
+    ],
+    "scopeNote": "Sığacık Kaleiçi, Sığacık Limanı, Teos Marina & Akkum Hattı (Seferihisar Merkez ve Akarca hariç) · Doğrulanmış Seçki",
+    "characterSubtitle": "Kaleiçi taş sokaklarının meyhaneleri ve nitelikli kahve duraklarından Teos Marina ve Akkum hattındaki ince hamur pizza, smash burger, köy kahvaltısı ve liman balıkçılarına uzanan kıyı seçkisi.",
+    "center": {
+      "lat": 38.1932,
+      "lng": 26.7845
+    },
+    "boundary": {
+      "bbox": {
+        "minLat": 38.17,
+        "maxLat": 38.212,
+        "minLng": 26.755,
+        "maxLng": 26.815
+      }
+    }
+  },
+  "categories": [
+    {
+      "id": "pizza",
+      "slug": "pizza",
+      "label": "Pizza",
+      "title": "Pizza",
+      "emoji": "🍕",
+      "isMustTry": false
+    },
+    {
+      "id": "hamburger",
+      "slug": "hamburger",
+      "label": "Hamburger",
+      "title": "Hamburger",
+      "emoji": "🍔",
+      "isMustTry": false
+    },
+    {
+      "id": "kahve",
+      "slug": "kahve",
+      "label": "Kahve",
+      "title": "Kahve",
+      "emoji": "☕",
+      "isMustTry": false
+    },
+    {
+      "id": "date",
+      "slug": "date-mekanlari",
+      "label": "Date",
+      "title": "Date Mekanları",
+      "emoji": "🍷",
+      "isMustTry": false
+    },
+    {
+      "id": "kahvalti",
+      "slug": "kahvalti",
+      "label": "Kahvaltı",
+      "title": "Kahvaltı",
+      "emoji": "🍳",
+      "isMustTry": false
+    },
+    {
+      "id": "denemelisin",
+      "slug": "denemelisin",
+      "label": "Denemelisin",
+      "title": "Mutlaka Denemelisin",
+      "emoji": "⭐",
+      "isMustTry": false
+    },
+    {
+      "id": "balik",
+      "slug": "balik-deniz-urunleri",
+      "label": "Balıkçılar",
+      "title": "Balıkçılar & Deniz Ürünleri",
+      "emoji": "🐟",
+      "isMustTry": false
+    }
+  ],
+  "venues": [
+    {
+      "id": "sigacik-pianetta-pizza",
+      "placeId": "ChIJxf1p-nCNuxQRWc73ULGphz8",
+      "name": "Pianetta Pizza",
+      "address": "Teos Marina İşletme ve Ticaret A.Ş., Sığacık, Akkum Cd. no4/3, 35460 Seferihisar/İzmir",
+      "neighborhood": "Teos Marina, Sığacık",
+      "categoryId": "pizza",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=4577814125278121561",
+      "coordinates": {
+        "lat": 38.1912829,
+        "lng": 26.7838705
+      },
+      "description": "Teos Marina içinde Akkum Caddesi hattında ince ve çıtır hamurlu pizzalarını zengin kav eşlikçileriyle servis eden tek şubeli Sığacık pizzacısı.",
+      "whatToOrder": [
+        "Füme Kaburgalı & Kavurmalı Pizza",
+        "Margherita Pizza"
+      ],
+      "menuFrom": [
+        "İnce Hamur Pizza Çeşitleri",
+        "Dana Burger",
+        "Şarap Seçkisi"
+      ],
+      "alsoTry": [
+        "Izgara Dana Burger & Şarap Eşleşmesi — Pizza dışında akşam servisinde tercih edilen burger tabağı ve kadeh kav seçenekleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Marina yürüyüş hattına bakan geniş açık teras ve ferah iç salon masaları · Gün batımından itibaren yaz akşamlarında marina hareketliliği artıyor",
+        "Dezavantaj: Marina içinde yer aldığı için hafta sonu akşamlarında masalar hızlı dolabiliyor.",
+        "Ulaşım: Teos Marina girişinden sahil yürüyüş aksında yaya erişimi",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "sigacik-the-way-street-food",
+      "placeId": "ChIJH3UQsh3zuxQRCBAeL9mytVI",
+      "name": "The Way Street Food",
+      "address": "Sığacık, 138/3 sok no:4 D:1, 35460 Seferihisar/İzmir",
+      "neighborhood": "Eski Sığacık Girişi (138/3. Sk.), Sığacık",
+      "categoryId": "hamburger",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=5959866327762866184",
+      "coordinates": {
+        "lat": 38.192934099999995,
+        "lng": 26.7865351
+      },
+      "description": "Sığacık 138/3. Sokak üzerinde el yapımı ekmekler, smash teknikli köfteler ve özgün ev yapımı soslarla hamburger hazırlayan bağımsız sokak mutfağı.",
+      "whatToOrder": [
+        "Karamelize Soğanlı Smash Burger",
+        "Jalapenolu Özel Soslu Cheeseburger"
+      ],
+      "menuFrom": [
+        "Classic Smash Burger",
+        "Jalapeno Burger",
+        "Baharatlı Patates Kızartması"
+      ],
+      "alsoTry": [
+        "Çıtır Patates & Ev Yapımı Soslar — Burger menülerinin yanında el yapımı soslarla sunulan sıcak eşlikçi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Sığacık giriş sokağında samimi ön teras ve sade iç mekan masaları · Akşamüstü ve gece atıştırmalığı saatlerinde hızlı paket ve masa trafiği",
+        "Dezavantaj: Kaleiçi sur dışı sokakta olduğu için oturum alanı sınırlı ve daha çok hızlı servis odaklı.",
+        "Ulaşım: Sığacık pazar alanı ve kale surlarına kısa yürüyüş mesafesi",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "sigacik-hypatia",
+      "placeId": "ChIJ81QwdH-NuxQR7vEBofGuHbw",
+      "name": "Hypatia Sığacık",
+      "address": "127. Sokak, Sığacık, Kaleiçi No:39/A, 35460 Seferihisar/İzmir",
+      "neighborhood": "Kaleiçi (127. Sk.), Sığacık",
+      "categoryId": "kahve",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=13555182806266671598",
+      "coordinates": {
+        "lat": 38.1946908,
+        "lng": 26.7856965
+      },
+      "description": "Kaleiçi 127. Sokak üzerinde egzotik avlusu, cam bardakta soğuk espresso demlemeleri ve Seferihisar mandalinalı ev yapımı kekleriyle bilinen butik kahve evi.",
+      "whatToOrder": [
+        "Iced Americano",
+        "Filtre Kahve"
+      ],
+      "menuFrom": [
+        "Flat White",
+        "Mandalinalı Kek",
+        "Koruk Şerbeti",
+        "Ev Yapımı Kurabiye"
+      ],
+      "alsoTry": [
+        "Mandalinalı Kek & Koruk Şerbeti — Kahve siparişlerinin yanında yerel mandalina ve korukla hazırlanan ev yapımı eşlikçiler."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: 127. Sokak taş ev önünde gölgeli avlu ve butik iç mekan masaları · Özellikle cumartesi pazarı ve öğle saatlerinde sokak trafiğine paralel artan talep",
+        "Dezavantaj: Küçük avlu kapasitesi nedeniyle yoğun hafta sonlarında oturacak masa beklemek gerekebilir.",
+        "Ulaşım: Sığacık Kaleiçi 127. Sokak yaya alanı içinde merkezi konum",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "sigacik-so-coffee-and-more",
+      "placeId": "ChIJ1ddGcQCNuxQROXQmRmiuZUY",
+      "name": "SO COFFEE AND MORE",
+      "address": "Sığacık, 127. Sk. no:33, 35460 Seferihisar/İzmir",
+      "neighborhood": "Kaleiçi (127. Sk.), Sığacık",
+      "categoryId": "kahve",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=5072652318179488825",
+      "coordinates": {
+        "lat": 38.1945578,
+        "lng": 26.785498099999998
+      },
+      "description": "Sığacık Kaleiçi 127. Sokak üzerinde taze çekilmiş espresso harmanları ve soğuk kahve demlemeleri hazırlayan tek şubeli butik kahve dükkanı.",
+      "whatToOrder": [
+        "Flat White",
+        "V60 / Filtre Kahve"
+      ],
+      "menuFrom": [
+        "Espresso",
+        "Cortado",
+        "Iced Americano",
+        "Kafe Tatlıları"
+      ],
+      "alsoTry": [
+        "Günün Tatlıları & Atıştırmalık Tabaklar — Nitelikli kahvelerin yanında günlük sunulan pasta ve kurabiye seçenekleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Taş duvarlı Kaleiçi sokağına açılan cephe önü oturma alanı · Cumartesi pazarı günü yoğun; hafta içi öğleden sonraları sakin mola temposu",
+        "Dezavantaj: Dar kale sokağı üzerindeki küçük oturum alanı kalabalık saatlerde çabuk doluyor.",
+        "Ulaşım: Kaleiçi 127. Sokak merkezinde yürüyerek ulaşım",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "sigacik-fehu-konak",
+      "placeId": "ChIJ7-iH_M-MuxQRAZr8rtTM_uY",
+      "name": "Fehu Konak Nitelikli Kahve Evi",
+      "address": "Sığacık, 126. Sk. No:36, 35460 Seferihisar/İzmir",
+      "neighborhood": "Kaleiçi (126. Sk.), Sığacık",
+      "categoryId": "kahve",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=16644966486648855041",
+      "coordinates": {
+        "lat": 38.1953609,
+        "lng": 26.7858637
+      },
+      "description": "Sığacık Kaleiçi 126. Sokak taş konağında gün boyu cold brew ve espresso bazlı nitelikli kahveler demleyen, akşamları ise kokteyl barına dönüşen bağımsız mekan.",
+      "whatToOrder": [
+        "Cold Brew",
+        "Espresso Bazlı Sütlü Kahveler"
+      ],
+      "menuFrom": [
+        "Filtre Kahve",
+        "Cortado",
+        "Ev Yapımı Magnolya",
+        "İmza Kokteyller"
+      ],
+      "alsoTry": [
+        "Ev Yapımı Tatlı & Akşam Kokteyl Seçkisi — Kahve eşlikçisi tatlıların ardından gün batımında bar servisine geçen içecek seçkisi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Tarihi taş konak içi ve 126. Sokak gölgelik avlu oturumu · Sabah kahvesinde sakin; akşamüstü müzikle birlikte hareketli avlu kalabalığı",
+        "Dezavantaj: Akşam saatlerinde lounge müzik nedeniyle sessiz çalışma ortamı arayanlara uygun olmayabilir.",
+        "Ulaşım: Sığacık Kaleiçi girişinden 126. Sokak boyunca yürüyerek 2 dakika",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "sigacik-the-ruva-coffee",
+      "placeId": "ChIJ182o19mNuxQRRdyIdTUCWr8",
+      "name": "The Ruva Coffee & Bistro",
+      "address": "Sığacık, 127. Sk. no37, 35000 Seferihisar/İzmir",
+      "neighborhood": "Kaleiçi (127. Sk.), Sığacık",
+      "categoryId": "kahve",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=13788335637776620613",
+      "coordinates": {
+        "lat": 38.1946584,
+        "lng": 26.7856447
+      },
+      "description": "Kaleiçi 127. Sokak köşesinde gündüz taze çekim espresso bazlı kahveler, akşamları ise kokteyl ve kav seçenekleri sunan bağımsız Sığacık bistro-kafesi.",
+      "whatToOrder": [
+        "Cortado",
+        "Iced Latte"
+      ],
+      "menuFrom": [
+        "Americano",
+        "Espresso",
+        "San Sebastian Cheesecake",
+        "Kokteyl Menüsü"
+      ],
+      "alsoTry": [
+        "San Sebastian Cheesecake & Akşam Kokteylleri — Kahve molasına eşlik eden fırın tatlısı ve akşamüstü bar seçkisi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Kaleiçi sokak köşesinde yaya akışına dönük dış masalar ve iç bar oturumu · Öğleden sonra ve akşam saatlerinde dinamik Kaleiçi kalabalığı",
+        "Dezavantaj: Bistro-bar kimliği de taşıdığı için gün ilerledikçe müzik ve sohbet sesi yükselir.",
+        "Ulaşım: Sığacık Şadırvan Meydanı arkasında 127. Sokak yaya güzergahı",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "sigacik-serefe-41",
+      "placeId": "ChIJqU_YgCaNuxQRBvV4r-m_Uf0",
+      "name": "Şerefe 41 Sığacık Meyhanesi - Meze & Balık",
+      "address": "Sığacık, 129. Sk. No : 26, 35460 Seferihisar/İzmir",
+      "neighborhood": "Kaleiçi (129. Sk.), Sığacık",
+      "categoryId": "date",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=18253581775101555974",
+      "coordinates": {
+        "lat": 38.194038899999995,
+        "lng": 26.7864991
+      },
+      "description": "Sığacık Kaleiçi 129. Sokak No:26’daki tarihi taş avluda ızgara ahtapot, kalamar ve Ege meze çeşitlerini akşam müziği eşliğinde servis eden meyhane.",
+      "whatToOrder": [
+        "Izgara Ahtapot & Kalamar Tava",
+        "Ege Otlu Soğuk Meze Seçkisi"
+      ],
+      "menuFrom": [
+        "Günlük Balık",
+        "Karides Güveç",
+        "Fasıl / Canlı Müzik Eşliği"
+      ],
+      "alsoTry": [
+        "Deniz Ürünlü Ara Sıcaklar — Meze tepsisi sonrası masalara sıcak getirilen güveç karides ve kalamar tabağı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: 129. Sokak tarihi avlu içi ve sokak taş kaldırım oturma düzeni · Özellikle cuma-cumartesi akşamlarında yüksek tempolu kalabalık",
+        "Dezavantaj: Yoğun akşam saatlerinde sokaktaki yan masalarla mesafe daralabiliyor ve müzik sesi yükseliyor.",
+        "Ulaşım: Sığacık Kalesi içi yaya bölgesi, 129. Sokak",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "sigacik-meyhane",
+      "placeId": "ChIJUxsVb6GNuxQRxFv-ZjbWL0k",
+      "name": "Sigacik meyhane",
+      "address": "Sığacık, 129. Sk. no:62, 35465 Seferihisar/İzmir",
+      "neighborhood": "Kaleiçi (129. Sk.), Sığacık",
+      "categoryId": "date",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=5273669217818663876",
+      "coordinates": {
+        "lat": 38.194966199999996,
+        "lng": 26.786531699999998
+      },
+      "description": "Kaleiçi 129. Sokak taş evleri arasında patlıcanlı karides ve kabaklı yoğurtlu gibi imza mezelerini akustik canlı müzik eşliğinde sunan Sığacık meyhanesi.",
+      "whatToOrder": [
+        "Patlıcanlı Karides",
+        "Kabaklı Yoğurtlu Meze & Günlük Balık"
+      ],
+      "menuFrom": [
+        "Soğuk Ege Mezeleri",
+        "Ara Sıcak Deniz Ürünleri",
+        "Akustik Fasıl / Canlı Müzik"
+      ],
+      "alsoTry": [
+        "Girit Usulü Ara Sıcaklar — Klasik soğuk mezelerin ardından masaya paylaşımlı gelen sıcak deniz ürünü tabakları."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Kaleiçi 129. Sokak taş avlusu ve sokak içi yan yana meyhane masaları · Akşam saatlerinde canlı müzikle birlikte yükselen kalabalık tempo",
+        "Dezavantaj: Gitar ve keman eşliğinde canlı müzik yapıldığı için sessiz baş başa sohbet arayanlar erken saatleri seçmeli.",
+        "Ulaşım: Sığacık Kaleiçi ana meydanından 129. Sokak içine 2 dakika yürüyüş",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "sigacik-elia-meyhane",
+      "placeId": "ChIJA3d8MmaNuxQRtpJFy62WWVo",
+      "name": "Elia Sığacık Meyhane",
+      "address": "Sığacık, Kaleiçi 129 sokak no:20, 35460 Seferihisar/İzmir",
+      "neighborhood": "Kaleiçi (129. Sk.), Sığacık",
+      "categoryId": "date",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=6510400409524605622",
+      "coordinates": {
+        "lat": 38.193820599999995,
+        "lng": 26.786550400000003
+      },
+      "description": "Kaleiçi 129. Sokak’ta pansiyon avlusuyla iç içe sıcak aile işletmesi olarak günlük Akdeniz mezeleri ve deniz mahsulleri sunan samimi meyhane.",
+      "whatToOrder": [
+        "Günlük Girit & Ege Mezeleri",
+        "Izgara Mevsim Balığı"
+      ],
+      "menuFrom": [
+        "Deniz Mahsullü Ara Sıcaklar",
+        "Zeytinyağlı Ot Tabağı",
+        "Butik Meze Çeşitleri"
+      ],
+      "alsoTry": [
+        "Deniz Mahsullü Sıcak Paylaşımlıklar — Soğuk meze başlangıcını takip eden tereyağlı karides ve kalamar çeşitleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Kaleiçi taş duvarlı bahçe avlusu ve 129. Sokak kenarı masalar · Sokaktaki gürültülü mekanlara göre daha dengeli ve sohbet odaklı akşam masaları",
+        "Dezavantaj: Az sayıda masadan oluşan butik avlu nedeniyle yaz akşamlarında ön rezervasyon şarttır.",
+        "Ulaşım: Kaleiçi 129. Sokak yaya aksında yer alır"
+      ]
+    },
+    {
+      "id": "sigacik-lutfiye",
+      "placeId": "ChIJDZfLIi6NuxQRBIcXy_yqEQ0",
+      "name": "Lütfiye Sığacık",
+      "address": "Sığacık, 129. Sk. No:30, 35460 Seferihisar/İzmir",
+      "neighborhood": "Kaleiçi (129. Sk.), Sığacık",
+      "categoryId": "date",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=941721799812941572",
+      "coordinates": {
+        "lat": 38.1940885,
+        "lng": 26.786759699999998
+      },
+      "description": "Kaleiçi’nin asırlık taş duvarlı avlusunda Rum meyhanesi üslubuyla Girit mezeleri, kabak çiçeği dolması ve taze deniz mahsulleri sunan köklü Sığacık adresi.",
+      "whatToOrder": [
+        "Girit Ezmesi & Kabak Çiçeği Dolması",
+        "Günün Deniz Mahsulü Tabağı"
+      ],
+      "menuFrom": [
+        "Akdeniz Mezeleri",
+        "Fava & Deniz Börülcesi",
+        "Balık Çeşitleri"
+      ],
+      "alsoTry": [
+        "Akdeniz & Rum Taverna Ara Sıcakları — Meze masasını tamamlayan sıcak deniz ürünleri ve zeytinyağlı seçkisi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Tarihi taş avluda ağaç altı masalar ve butik konak önü oturumu · Sezon akşamlarında tam dolulukla çalışan Sığacık’ın en tanınan meyhane avlularından",
+        "Dezavantaj: Yüksek popülerlik nedeniyle hafta sonları rezervasyon gerektirir ve porsiyon fiyatları semt ortalamasının üzerindedir.",
+        "Ulaşım: Kaleiçi 129. Sokak içinde yürüyüş mesafesi"
+      ]
+    },
+    {
+      "id": "sigacik-maya-bahce",
+      "placeId": "ChIJCTP2u0qNuxQRWzAUvpC1sgo",
+      "name": "Maya Bahçe",
+      "address": "Sığacık, 139/6. Sk. No:15, 35460 Seferihisar/İzmir",
+      "neighborhood": "Teos Yolu (139/6. Sk.), Sığacık",
+      "categoryId": "kahvalti",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=770878119502688347",
+      "coordinates": {
+        "lat": 38.186673299999995,
+        "lng": 26.7910978
+      },
+      "description": "Sığacık dış çeperindeki doğa içinde yer alan bahçesinde, kendi üretimi reçeller, taze köy peynirleri ve sıcak pişilerle organik serpme kahvaltı hazırlayan aile işletmesi.",
+      "whatToOrder": [
+        "Organik Çiftlik Serpme Kahvaltı",
+        "Ev Yapımı Reçel & Sıcak Pişi"
+      ],
+      "menuFrom": [
+        "Köy Yumurtası Çeşitleri",
+        "Yöresel Peynir Tabağı",
+        "Taze Bahçe Yeşillikleri"
+      ],
+      "alsoTry": [
+        "Mevsimsel El Yapımı Reçel & Köy Hamurları — Bahçe ürünlerinden hazırlanan ev yapımı reçel kavanozları ve sıcak gözleme-pişi servisi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Ağaçlık doğa bahçesinde geniş ahşap masalar; açık hava ağırlıklı düzen · Özellikle cumartesi-pazar sabahları aile gruplarıyla erken saatlerde doluyor",
+        "Dezavantaj: Kaleiçi merkezine göre Teos yolu yönünde biraz yürüyüş veya araç gerektirir; hafta sonu rezervasyon gerekir.",
+        "Ulaşım: Sığacık merkezden Teos Yolu (139/6. Sokak) yönüne kısa araç veya bisiklet mesafesi",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "sigacik-defi-gam",
+      "placeId": "ChIJOSQQ8cWMuxQRHgXZxmf_KDg",
+      "name": "Def'i Gam Cafe Kahvaltı Ve Yöresel Lezzetler",
+      "address": "Sığacık, Akkum Cd. No:5, 35460 Seferihisar/İzmir",
+      "neighborhood": "Akkum Caddesi, Sığacık",
+      "categoryId": "kahvalti",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=4046765086375216414",
+      "coordinates": {
+        "lat": 38.1909912,
+        "lng": 26.7846762
+      },
+      "description": "Akkum Caddesi üzerinde el yapımı özel reçelleri, peynirli pişi çeşitleri ve tortulu yumurtasıyla Sığacık’ın en yüksek ziyaretçi hacmine sahip yerel kahvaltı adresi.",
+      "whatToOrder": [
+        "Peynirli Pişi & Tortulu Yumurta",
+        "Yöresel Serpme Kahvaltı"
+      ],
+      "menuFrom": [
+        "Sıcak Gözleme & Börek",
+        "Ev Yapımı Özel Reçeller",
+        "Taze Demleme Çay"
+      ],
+      "alsoTry": [
+        "El Yapımı Meyve & Mandalina Reçelleri — Klasik serpme dışında kendi mutfaklarında kaynatılan yöresel reçel seçkisi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Akkum Caddesi girişinde bahçe çardağı ve kapalı salon masaları · Cumartesi pazarı günlerinde ve yaz hafta sonlarında yoğun kapı sırası oluşuyor",
+        "Dezavantaj: Yüksek popülerlik nedeniyle hafta sonları masaya oturmak için kısa bekleme ve hızlı servis temposu görülür.",
+        "Ulaşım: Sığacık Meydanı ile Teos Marina arasındaki Akkum Caddesi başlangıcı",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "sigacik-casa-fiore",
+      "placeId": "ChIJDb0mfxuNuxQR8O-YOO0IJc4",
+      "name": "Casa Fiore Konaklama & Kahvaltı",
+      "address": "Sığacık, 127. Sk. No: 21, 35460 Seferihisar/İzmir",
+      "neighborhood": "Kaleiçi (127. Sk.), Sığacık",
+      "categoryId": "kahvalti",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=14854288760901267440",
+      "coordinates": {
+        "lat": 38.194254,
+        "lng": 26.7851735
+      },
+      "description": "Kaleiçi 127. Sokak’ta bohem taş avlu atmosferinde taze Seferihisar zeytinleri, yerel peynirler ve ev yapımı sıcak lezzetlerle butik kahvaltı sunan adres.",
+      "whatToOrder": [
+        "Bohem Ege Serpme Kahvaltı",
+        "Taze Pişi & Çılbır"
+      ],
+      "menuFrom": [
+        "Yöresel Mandıra Peynirleri",
+        "Ev Yapımı Reçel Seçkisi",
+        "Taze Demleme Çay & Kahve"
+      ],
+      "alsoTry": [
+        "Bölgesel Zeytin & Ev Yapımı Reçel Tabağı — Seferihisar mandalinası ve yerel ürünlerle hazırlanan kahvaltılık çeşitler."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Butik taş avluda sakin bahçe masaları ve özenli bohem iç alan · Hafta sonu geç kahvaltı saatlerinde butik konuk yoğunluğu artıyor",
+        "Dezavantaj: Otel/konaklama kahvaltıları da aynı anda servis edildiği için dışarıdan gelecek misafirlerin rezervasyon yapması önerilir.",
+        "Ulaşım: Sığacık Kaleiçi 127. Sokak yaya alanı içi"
+      ]
+    },
+    {
+      "id": "sigacik-pita",
+      "placeId": "ChIJk37kJEyNuxQR26Jk1_w-Cqg",
+      "name": "Pita Sığacık",
+      "address": "Sığacık, 126. Sk. No:7, 35460 Seferihisar/İzmir",
+      "neighborhood": "Kaleiçi (126. Sk.), Sığacık",
+      "categoryId": "kahvalti",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=12108559803805377243",
+      "coordinates": {
+        "lat": 38.1941985,
+        "lng": 26.784615799999997
+      },
+      "description": "Kaleiçi 126. Sokak’ta geniş bahçesi içinde Seferihisar’a özgü armola peyniri, özel menemen çeşitleri, sıcak pişi ve Ege otlarıyla uzun soluklu kahvaltı sofraları kuruyor.",
+      "whatToOrder": [
+        "Sade veya Kaşarlı Menemen",
+        "Armola Peynirli Pita Serpme Kahvaltı"
+      ],
+      "menuFrom": [
+        "Kaşarlı Sucuklu Menemen",
+        "Boşnak Mantısı",
+        "Kabak Çiçeği Dolması"
+      ],
+      "alsoTry": [
+        "Boşnak Mantısı & Kabak Çiçeği Dolması — Öğleye doğru kahvaltı sonrası tercih edilen el açması Boşnak mantısı ve Ege sıcakları."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Kaleiçi içindeki nadir geniş ağaçlı avlulardan birinde gölgeli bahçe masaları · Cumartesi-pazar kahvaltı saatlerinde tam kapasite çalışan yüksek tempolu bahçe",
+        "Dezavantaj: Yüksek talep sebebiyle hafta sonu kahvaltılarında servis yoğunluğu ve kalabalık oluşur.",
+        "Ulaşım: Sığacık Kaleiçi 126. Sokak yürüyüş güzergahı",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "sigacik-sambalicisi-1960",
+      "placeId": "ChIJt-Tb1sCNuxQRhHrIY3oaipM",
+      "name": "(Sığacık) Seferhisar Artizan Dondurma & Meşhur Seferihisar Şambalicisi’ 1960",
+      "address": "Sığacık, Liman Cd. No:28, 35460 Seferihisar/İzmir",
+      "neighborhood": "Liman Caddesi, Sığacık",
+      "categoryId": "denemelisin",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=10631338983323892356",
+      "coordinates": {
+        "lat": 38.193466699999995,
+        "lng": 26.7844518
+      },
+      "description": "1960’ta Erol Usta ile başlayan Seferihisar aile geleneğini üçüncü kuşakta Liman Caddesi tezgahında sürdüren, sıcak şambali tatlısı ve mandalinalı artizan dondurma durağı.",
+      "whatToOrder": [
+        "Sıcak Seferihisar Şambalisi",
+        "Seferihisar Mandalinalı Dondurma"
+      ],
+      "menuFrom": [
+        "Klasik Tarçınlı Şambali",
+        "Kaymaklı Şambali",
+        "Doğal Meyveli Artizan Dondurma"
+      ],
+      "alsoTry": [
+        "Doğal Meyveli Artizan Dondurma Çeşitleri — Yaz sezonunda sıcak şambalinin yanında mandalina başta olmak üzere doğal meyvelerle sunulan dondurma."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Liman Caddesi üzerinde ağırlıklı ayakta, al-götür ve cadde kenarı kısa mola düzeni (oturma alanı yok) · Akşamüstü liman yürüyüşünde tezgah önünde hızlı sıra oluşuyor",
+        "Dezavantaj: Oturmalı pastane salonu olmadığı için tatlılar ayakta veya sahilde yürürken yeniyor.",
+        "Ulaşım: Sığacık Liman Caddesi No:28 üzerinde kale surları ile marina arası yaya hattı"
+      ]
+    },
+    {
+      "id": "sigacik-vaziyet-ocakbasi",
+      "placeId": "ChIJhab3TcSNuxQR_JcWO4FgNKI",
+      "name": "Vaziyet Ocakbaşı Sığacık",
+      "address": "Sığacık, 136. Sk. No:3, 35460 Seferihisar/İzmir",
+      "neighborhood": "Kaleiçi Çevresi (136. Sk.), Sığacık",
+      "categoryId": "denemelisin",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=11688073041091663868",
+      "coordinates": {
+        "lat": 38.1948043,
+        "lng": 26.7853903
+      },
+      "description": "Sığacık 136. Sokak üzerinde balık ağırlıklı Kaleiçi aksına karşılık zırh kıymalı Adana kebap, kuzu küşleme ve şaşlık sunan modern ocakbaşı restoranı.",
+      "whatToOrder": [
+        "Kuzu Küşleme & Şaşlık",
+        "Zırh Kıyması Adana Kebap"
+      ],
+      "menuFrom": [
+        "Urfa Kebap",
+        "Kuzu Pirzola",
+        "Taze Ege Mezeleri",
+        "Fıstıklı Katmer"
+      ],
+      "alsoTry": [
+        "Sıcak Katmer & Meze Başlangıçları — Ocakbaşı et servisi öncesi soğuk mezeler ve yemek sonunda çıtır katmer tatlısı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Taş dokuya uyumlu modern ocakbaşı salonu ve akşam masaları · Akşam yemeği saatlerinde özellikle et ve kebap seven Sığacık ziyaretçileriyle dolu",
+        "Dezavantaj: Deniz kenarı balık restoranı yerine kapalı/yarı açık sokak içi et restoranı düzenindedir.",
+        "Ulaşım: Sığacık Kalesi kuzey surlarına paralel 136. Sokak yürüyüş hattı",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "sigacik-yoruk-efe",
+      "placeId": "ChIJsbxz3diNuxQRXul4yYgvbEw",
+      "name": "Yörük Efe Kasap & Restaurant",
+      "address": "Sığacık Mahallesi Eski Sığacık Yolu Caddesi, Sığacık, Sokak No:8/1, 35460 Seferihisar/İzmir",
+      "neighborhood": "Eski Sığacık Yolu, Sığacık",
+      "categoryId": "denemelisin",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=5506828708909476190",
+      "coordinates": {
+        "lat": 38.192607599999995,
+        "lng": 26.7873266
+      },
+      "description": "Eski Sığacık Yolu’nda hem kasap reyonu hem restoran olarak işleyen, tezgahtan seçilen pirzola ve antrikotların yanında Akhisar köfteli pidesiyle bilinen aile lokantası.",
+      "whatToOrder": [
+        "Kasap Reyonundan Seçme Pirzola & Antrikot",
+        "Akhisar Köfteli Pide"
+      ],
+      "menuFrom": [
+        "Sebzeli Kuzu Köfte",
+        "Beyti Sarma",
+        "Sıcak İkram Pide & Mezeler"
+      ],
+      "alsoTry": [
+        "Sebzeli Kuzu Köfte & İkram Mezeler — Kömür ızgara öncesi masaya sıcak pidelerle gelen yoğurtlu ve acılı mezeler."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Eski Sığacık Yolu üzerinde geniş aile sofralarına uygun bahçe ve iç salon · Özellikle akşam yemekleri ve hafta sonu aile buluşmalarında canlı",
+        "Dezavantaj: Sığacık Kaleiçi taş sokaklarının dışında, ana yol bağlantısı üzerinde yer alır.",
+        "Ulaşım: Sığacık kavşağına ve kale girişine yürüyüş veya kısa araç mesafesi"
+      ]
+    },
+    {
+      "id": "sigacik-monza",
+      "placeId": "ChIJp719KuONuxQREbs83UCYqOs",
+      "name": "Monza Restaurant Sığacık",
+      "address": "Sığacık, 129. Sk. No:35, 35460 Seferihisar/İzmir",
+      "neighborhood": "Kaleiçi (129. Sk.), Sığacık",
+      "categoryId": "denemelisin",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=16980989799357528849",
+      "coordinates": {
+        "lat": 38.1948788,
+        "lng": 26.786752099999998
+      },
+      "description": "Kaleiçi 129. Sokak içinde enginarlı kalamar, beğendili karides ve Monza atom gibi özgün sıcak Akdeniz tabakları hazırlayan, şarap ve kokteyl menüsü güçlü meyhane-restoran.",
+      "whatToOrder": [
+        "Enginarlı Kalamar",
+        "Beğendili Karides & Monza Atom"
+      ],
+      "menuFrom": [
+        "Izgara Ahtapot Bacağı",
+        "Günlük Balık",
+        "Monza Tatlısı",
+        "Kokteyl Seçkisi"
+      ],
+      "alsoTry": [
+        "Monza Atom & Özel Tatlı Servisi — Klasik deniz ürünü sıcaklarını tamamlayan imza başlangıç ve tatlı alternatifi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Kaleiçi taş ev avlusunda düzenli masa yerleşimi ve sokak cephesi · Akşam yemeklerinde meze-şarap masalarının yoğunlaştığı saatlerde hareketli",
+        "Dezavantaj: Popüler 129. Sokak üzerinde olduğu için hafta sonu akşamlarında çevre sokak sesi duyulabilir.",
+        "Ulaşım: Sığacık Kaleiçi 129. Sokak yaya aksı",
+        "Bütçe seviyesi (Google): Yüksek"
+      ]
+    },
+    {
+      "id": "sigacik-ladude-art-cafe",
+      "placeId": "ChIJJU1pYcWMuxQR7eg3q6u78_M",
+      "name": "La'dude Art Cafe&Galeri Restorant",
+      "address": "Sığacık, 134. Sk. No:3, 35460 Seferihisar/İzmir",
+      "neighborhood": "Kaleiçi (134. Sk.), Sığacık",
+      "categoryId": "denemelisin",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=17578600116543547629",
+      "coordinates": {
+        "lat": 38.1938874,
+        "lng": 26.784598
+      },
+      "description": "Kaleiçi 134. Sokak’ta yerel sanat galerisiyle birleşen aile işletmesi içinde İzmir tulum peynirli el açması gözlemeleri, vişne sarması ve enginar yemekleriyle öne çıkan mekan.",
+      "whatToOrder": [
+        "İzmir Tulum Peynirli Gözleme",
+        "Vişne Sarma & Enginar Şiş"
+      ],
+      "menuFrom": [
+        "Otlu & Patatesli Gözleme",
+        "Kabak Çekirdeği Dolması",
+        "Zeytinyağlı Ege Tabağı"
+      ],
+      "alsoTry": [
+        "Kabak Çekirdeği Dolması & Zeytinyağlılar — Gözleme dışında gün içi öğünlerde tercih edilen ev yapımı Ege zeytinyağlı çeşitleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Taş duvarlı galeri içi salon ve çiçekli 134. Sokak bahçe masaları · Cumartesi pazarı ve hafta sonu öğle saatlerinde yüksek ziyaretçi yoğunluğu",
+        "Dezavantaj: Gözlemeler sipariş üzerine tek tek açıldığı için kalabalık saatlerde hazırlık süresi uzayabilir.",
+        "Ulaşım: Sığacık Kaleiçi 134. Sokak üzerinde yaya erişimi",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "sigacik-hiddenbay-teos",
+      "placeId": "ChIJk8-Ni9WNuxQRzqv2rumeciA",
+      "name": "Hiddenbay Teos Restaurant",
+      "address": "Sigacik mah, Sığacık, 3219. Sk. No:4, 35460 Seferihisar/İzmir",
+      "neighborhood": "Teos Yarımadası (3219. Sk.), Sığacık",
+      "categoryId": "denemelisin",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=2338105883058678734",
+      "coordinates": {
+        "lat": 38.175028999999995,
+        "lng": 26.770422699999997
+      },
+      "description": "Sığacık yarımadasının uç noktasında gündüz ekşi maya kahvaltı tabakları, akşam ise crudo, yerel et-balık sunumlarıyla sade şef tabakları ve butik şarap kavı sunan sakin koy restoranı.",
+      "whatToOrder": [
+        "Taze Balık Crudo & Yerel Şef Ana Yemekleri",
+        "Gündüz Ekşi Maya Kahvaltı Tabağı"
+      ],
+      "menuFrom": [
+        "Syrniki & Çılbır",
+        "Kuru Etli & Deniz Ürünlü Akşam Tabakları",
+        "İmza Kokteyller"
+      ],
+      "alsoTry": [
+        "Gündüz Ekşi Maya Kahvaltı & Syrniki — Akşam mutfağı açılmadan önceki gündüz diliminde sunulan tuzlu tereyağlı ekşi maya ve kahvaltı tabakları."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Teos yarımadasında çam ve deniz manzaralı teras masaları ile şık salon · Kaleiçi gürültüsünden uzak, sakin ve rezervasyonlu akşam temposu",
+        "Dezavantaj: Kaleiçi merkezine araçla veya yürüyüş yolundan ulaşım gerekir; üst segment fiyatlandırma uygulanır.",
+        "Ulaşım: Teos Marina devamında 3219. Sokak yarımada ucuna araçla birkaç dakika"
+      ]
+    },
+    {
+      "id": "sigacik-nena-balik",
+      "placeId": "ChIJz6-pic-MuxQR41rGUqqc1oc",
+      "name": "Sığacık Nena Balık & Meze Restoran",
+      "address": "Sığacık, Şadırvan Medanı No:15, 35460 Seferihisar/İzmir",
+      "neighborhood": "Şadırvan Meydanı (Kaleiçi), Sığacık",
+      "categoryId": "balik",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=9788183095483456227",
+      "coordinates": {
+        "lat": 38.193329,
+        "lng": 26.7848637
+      },
+      "description": "Sığacık Kaleiçi Şadırvan Meydanı’nda günlük körfez balıklarını, kalamar ve klasik Ege zeytinyağlı mezeleriyle birlikte sunan yüksek puanlı semt balıkçısı.",
+      "whatToOrder": [
+        "Günlük Izgara Mevsim Balığı",
+        "Kalamar Tava & Ege Meze Seçkisi"
+      ],
+      "menuFrom": [
+        "Sardalya & Çipura",
+        "Tereyağlı Karides",
+        "Fava & Girit Ezme"
+      ],
+      "alsoTry": [
+        "Girit Ezme & Deniz Ürünlü Ara Sıcaklar — Ana balık servisinden önce masayı açan günlük zeytinyağlılar ve sıcak deniz ürünleri."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Şadırvan Meydanı taş meydan açık masaları ve iç salon oturumu · Akşamüzerinden itibaren Kaleiçi meydanındaki en işlek noktalardan biri",
+        "Dezavantaj: Merkezi meydan üzerinde konumlandığı için hafta sonu akşamlarında kalabalık ve hareketlilik yoğundur.",
+        "Ulaşım: Sığacık Kaleiçi girişindeki Şadırvan Meydanı No:15 yaya erişimi"
+      ]
+    },
+    {
+      "id": "sigacik-urcan-restaurant",
+      "placeId": "ChIJx678eXONuxQRSmIdpm9lX80",
+      "name": "Urcan Restaurant Sığacık",
+      "address": "Akkum Caddesi, Sığacık, Türbe Mevki, 35460 Seferihisar/İzmir",
+      "neighborhood": "Akkum (Türbe Mevkii), Sığacık",
+      "categoryId": "balik",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=14798658430765457994",
+      "coordinates": {
+        "lat": 38.1942644,
+        "lng": 26.780844199999997
+      },
+      "description": "Kaleiçi kalabalığının biraz dışındaki Türbe Mevkii’nde marina manzarasına hakim konumda kalamar tava, karides güveç ve taze balık sunan sakin aile işletmesi.",
+      "whatToOrder": [
+        "Kalamar Tava",
+        "Tereyağlı Karides Güveç & Günlük Balık"
+      ],
+      "menuFrom": [
+        "Sardalya & Levrek",
+        "Ege Mezeleri",
+        "Sıcak Deniz Ürünü Ara Sıcakları"
+      ],
+      "alsoTry": [
+        "Ege Otlu Mezeler & Balık Izgara — Karides güveç ve kalamar ardından masaya gelen mevsimlik ızgara deniz balıkları."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Teos Marina ve körfeze bakan açık teras masaları; sessiz aile restoranı düzeni · Kaleiçine göre daha dingin; gün batımı ve sakin akşam yemekleri için tercih ediliyor",
+        "Dezavantaj: Kaleiçi çarşı merkezinden Akkum yönüne yokuş/yürüyüş mesafesinde kalır.",
+        "Ulaşım: Teos Marina üst yolu Akkum Caddesi Türbe Mevkii üzerinde yaya veya araçla erişim",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "sigacik-pasa-kaptan",
+      "placeId": "ChIJkcvmF9CMuxQRSHsDL3XXcVQ",
+      "name": "Paşa Kaptan Sığacık Meyhane | Restoran | Balık | Meze",
+      "address": "Sığacık, 127. Sk. No:58/A, 35460 Seferihisar/İzmir",
+      "neighborhood": "Kaleiçi (127. Sk.), Sığacık",
+      "categoryId": "balik",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=6084881469854153544",
+      "coordinates": {
+        "lat": 38.1952839,
+        "lng": 26.786466899999997
+      },
+      "description": "Kaleiçi 127. Sokak’ta günlük deniz balıkları, kalamar ve Akdeniz usulü meze çeşitlerini meyhane sıcaklığında bir araya getiren deneyimli Sığacık balık restoranı.",
+      "whatToOrder": [
+        "Mevsimlik Günlük Balık",
+        "Deniz Ürünlü Ara Sıcak & Meze Seçkisi"
+      ],
+      "menuFrom": [
+        "Sardalya",
+        "Çipura & Levrek",
+        "Soğuk Zeytinyağlı Mezeler"
+      ],
+      "alsoTry": [
+        "Soğuk Meze Tepsisi & Ara Sıcaklar — Balık öncesi paylaşımlı getirilen Girit ve Ege usulü soğuk meze tabakları."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: 127. Sokak taş dükkan önü açık masalar ve samimi iç salon · Akşam yemeklerinde meze-balık masalarıyla istikrarlı doluluk",
+        "Dezavantaj: Kaleiçi ara sokakta bulunduğu için deniz cephesi manzarası sunmaz.",
+        "Ulaşım: Sığacık Kaleiçi 127. Sokak yaya alanı içinde merkezi konum",
+        "Bütçe seviyesi (Google): Üst-orta"
+      ]
+    }
+  ],
+  "nearbyVenues": []
+}

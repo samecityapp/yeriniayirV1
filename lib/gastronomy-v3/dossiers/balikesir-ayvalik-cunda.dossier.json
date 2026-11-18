@@ -1,0 +1,2009 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "balikesir-ayvalik-cunda",
+  "displayName": "Cunda (Alibey Adası), Ayvalık, Balıkesir",
+  "verifiedAt": "2026-11-17T21:32:05.866Z",
+  "selectedCount": 28,
+  "rejectedControls": [
+    {
+      "id": "ctrl-cunda-closed-fero",
+      "resolvedName": "Fero Cunda (Food - Coffee - Beer)",
+      "reason": "not_operational:CLOSED_TEMPORARILY"
+    },
+    {
+      "id": "ctrl-cunda-karadeniz-noncoffee",
+      "resolvedName": "Karadeniz Pastanesi",
+      "reason": "kahve_category_not_coffee_specialist:pastry_shop"
+    },
+    {
+      "id": "ctrl-cunda-incir-noncoffee",
+      "resolvedName": "İncir by Setenay",
+      "reason": "kahve_category_not_coffee_specialist:pastry_shop"
+    },
+    {
+      "id": "ctrl-cunda-out-mainland-pazza",
+      "resolvedName": "Pizzeria Pazza",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Namık Kemal/Namik Kemal/Mithatpaşa/Mithatpasa/Cunda/Alibey Adası/Alibey Adasi/Pateriça/Paterica/Patriça/Çataltepe/Cataltepe, adres: Fevzipaşa - Vehbibey, 10033 sokak No:6, 10400 Ayvalık/Balıkesir)"
+    },
+    {
+      "id": "ctrl-cunda-out-mainland-magcafe",
+      "resolvedName": "MAG CAFE Ayvalık",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Namık Kemal/Namik Kemal/Mithatpaşa/Mithatpasa/Cunda/Alibey Adası/Alibey Adasi/Pateriça/Paterica/Patriça/Çataltepe/Cataltepe, adres: Hamdibey, Alibey Cami Cd. no6, 10400 Ayvalık/Balıkesir)"
+    },
+    {
+      "id": "ctrl-cunda-out-sarikoy-somun",
+      "resolvedName": "Somun Breakfast Club",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Namık Kemal/Namik Kemal/Mithatpaşa/Mithatpasa/Cunda/Alibey Adası/Alibey Adasi/Pateriça/Paterica/Patriça/Çataltepe/Cataltepe, adres: Küçükköy, Küçükköy Caddesi No 26/A, 10410 Ayvalık/Balıkesir)"
+    },
+    {
+      "id": "ctrl-cunda-low-baynihat",
+      "resolvedName": "Bay Nihat Restoran",
+      "reason": "below_quality_threshold:★3.4(1468)"
+    },
+    {
+      "id": "ctrl-cunda-low-uno",
+      "resolvedName": "Cunda Uno Restaurant",
+      "reason": "below_quality_threshold:★4(2807)"
+    },
+    {
+      "id": "ctrl-cunda-low-lal",
+      "resolvedName": "Lal Girit Mutfağı",
+      "reason": "below_quality_threshold:★4.2(730)"
+    },
+    {
+      "id": "ctrl-cunda-low-papaz",
+      "resolvedName": "Papaz'ın Evi - Tria Cunda",
+      "reason": "below_quality_threshold:★4.2(1325)"
+    },
+    {
+      "id": "ctrl-cunda-low-adabeyi",
+      "resolvedName": "Cunda Adabeyi Restaurant",
+      "reason": "below_quality_threshold:★4.2(622)"
+    },
+    {
+      "id": "ctrl-cunda-low-sade",
+      "resolvedName": "Sade Coffee & Tea Artisan",
+      "reason": "below_quality_threshold:★4(741)"
+    },
+    {
+      "id": "ctrl-cunda-low-rituel",
+      "resolvedName": "Ritüel 1873",
+      "reason": "below_quality_threshold:★4.3(221)"
+    },
+    {
+      "id": "ctrl-cunda-low-luna",
+      "resolvedName": "Cunda Luna",
+      "reason": "below_quality_threshold:★4.3(585)"
+    },
+    {
+      "id": "ctrl-cunda-low-kalosto",
+      "resolvedName": "Kalosto Cunda",
+      "reason": "below_quality_threshold:★5(33)"
+    },
+    {
+      "id": "ctrl-cunda-low-sahika",
+      "resolvedName": "Şahika Cunda",
+      "reason": "below_quality_threshold:★5(33)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "cunda-farina-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "Farina Cunda",
+      "branchName": "Namık Kemal, 15 Eylül Cd. No: 27, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJ41po9aB3uhQRlAZ16aF9b44",
+      "coordinates": {
+        "lat": 39.3350252,
+        "lng": 26.6556279
+      },
+      "rating": 4.6,
+      "userRatingCount": 231,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://cundabyhouse.com/farina",
+      "mapsUri": "https://maps.google.com/?cid=10263560210160617108",
+      "recommendedPrimary": [
+        "Chorizo & Roka Pizza",
+        "Dört Peynirli & Margherita Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sarımsaklı Fırın Ekmeği & Ev Yapımı Tiramisu",
+          "note": "Pizza başlangıcı ve kapanışında menünün sade tamamlayıcı seçenekleri.",
+          "proof": "Cunda gastronomi rehberleri ve Yandex topluluk kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sakin cadde kenarı bahçe ve küçük modern salon masaları",
+        "crowdAndNoise": "Yaz akşamlarında pizza seven ada ziyaretçileriyle canlıdır",
+        "disadvantage": "Girdi kalitesi nedeniyle ada restoranları içinde üst fiyat seviyesindedir",
+        "transit": "Namık Kemal Mah., 15 Eylül Cd. No:27, Cunda merkez yürüyüş aksı üzerinde"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Cundam Rehber & Bölge Seçkisi",
+          "url": "https://cundam.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "15 Eylül Caddesi konumu ve Napoli usulü taze hamur"
+        },
+        {
+          "title": "Yandex & Konuk Notları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "230+ değerlendirmede hamur hafifliği ve sos kalitesi"
+        }
+      ],
+      "pros": [
+        "Ada içinde yüksek hamur standardına sahip özgün pizzacı",
+        "Çarşı gürültüsünden hafifçe ayrılan sakin cephe"
+      ],
+      "cons": [
+        "Üst fiyat segmentinde konumlanması"
+      ],
+      "uncertainties": [
+        "Sezon dışında açılış saatleri haftanın belirli günlerine göre sınırlanabilir"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-luca-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "Luca Cunda",
+      "branchName": "Mithatpaşa, ulusal egemenlik caddesi no:13, 10060 Ayvalık/Balıkesir",
+      "placeId": "ChIJI832Oct3uhQRwxKp6TKkZlU",
+      "coordinates": {
+        "lat": 39.3324375,
+        "lng": 26.659126399999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 615,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6153786479423853251",
+      "recommendedPrimary": [
+        "Figo Pizza (İncirli Özel Pizza)",
+        "Fettuccine al Ragu"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İmza Ev Yapımı Tiramisu",
+          "note": "Pizza ve makarna yemeğinin sonunda hafif tatlı kapanışı olarak sık tercih edilir.",
+          "proof": "Restoranım ve ButikRota konuk değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî taş sokak önü masaları ve sıcak İtalyan mutfağı iç düzeni",
+        "crowdAndNoise": "Akşam yemeklerinde düzenli çift ve küçük masa sirkülasyonu",
+        "disadvantage": "Masa sayısı sınırlı olduğundan akşam tepe saatlerinde ön bilgi almak faydalıdır",
+        "transit": "Mithatpaşa Mah., Ulusal Egemenlik Cd. No:13, Cunda meydanı yürüyüş mesafesinde"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Restoranım & Menü Kayıtları",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Figo pizza, fettuccine ve tiramisu doğrulaması"
+        },
+        {
+          "title": "ButikRota Cunda İncelemeleri",
+          "url": "https://butikrota.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "600+ değerlendirmede taze makarna ve güler yüzlü servis"
+        }
+      ],
+      "pros": [
+        "Özgün Figo pizza ve el yapımı makarna ikilisi",
+        "Yüksek misafir memnuniyet oranı"
+      ],
+      "cons": [
+        "Küçük oturma alanı nedeniyle akşamları erken dolması"
+      ],
+      "uncertainties": [
+        "Kış sezonunda hafta içi servis saatleri daraltılabiliyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-kardias-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "Cunda Kardias Otel Restaurant",
+      "branchName": "Mithatpaşa, 20082 sokak No:4, 10405 Ayvalık/Balıkesir",
+      "placeId": "ChIJR1k-YKR3uhQRdNO9J7aqfmU",
+      "coordinates": {
+        "lat": 39.331909499999995,
+        "lng": 26.658561499999998
+      },
+      "rating": 4.5,
+      "userRatingCount": 294,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7313470544223785844",
+      "recommendedPrimary": [
+        "Deniz Manzaralı Çıtır Margherita & Sucuklu Pizza",
+        "Dört Peynirli Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ferah Teras Soğuk İçecek & Atıştırmalık Tabağı",
+          "note": "Gün batımına doğru pizza dışında atıştırmalıklar ve soğuk içeceklerle paylaşım imkanı sunar.",
+          "proof": "Restoranım ve Menü Haritası kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ayvalık manzaralı çatı terası ve sakin avlu masaları",
+        "crowdAndNoise": "Kalabalık çarşı gürültüsünden kaçıp manzara eşliğinde oturmak isteyenler",
+        "disadvantage": "Dönemsel otel yoğunluğunda teras servis hızında zaman zaman gecikme yaşanabiliyor",
+        "transit": "Mithatpaşa Mah., 20082. Sk. No:4, Cunda tarihi tepe dokusu"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Restoranım & Teras Restoran Kayıtları",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Manzaralı çatı terası ve pizza menüsü"
+        },
+        {
+          "title": "Menü Haritası & Misafir Notları",
+          "url": "https://menuharitasi.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Atmosfer ve akşam pizza-içecek uyumu"
+        }
+      ],
+      "pros": [
+        "Çarşıdan hafifçe yüksekte ferah manzara terası",
+        "Sakin oturum"
+      ],
+      "cons": [
+        "Yüksek otel doluluğunda alakart mutfak bekleme süresinin uzayabilmesi"
+      ],
+      "uncertainties": [
+        "Rüzgarlı akşam veya kış dönemlerinde sadece iç mekan kullanılabiliyor"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-roll-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Roll Cunda",
+      "branchName": "Namık Kemal, Çarşı Cd., 10405 Ayvalık/Balıkesir",
+      "placeId": "ChIJAUi1XnF3uhQR-6ylPrcjGjI",
+      "coordinates": {
+        "lat": 39.331968599999996,
+        "lng": 26.6581963
+      },
+      "rating": 4.4,
+      "userRatingCount": 181,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3610237321227906299",
+      "recommendedPrimary": [
+        "Kaburga Tiftik Burger",
+        "Double Smash Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çıtır Patates & Soğan Halkası Kombosu",
+          "note": "Hızlı sokak burger menüsüne eşlik eden sıcak atıştırmalık sepetleri.",
+          "proof": "Yemeksepeti ve Restoranim.net Cunda kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Çarşı sokağı önü pratik masalar ve hızlı paket tezgahı",
+        "crowdAndNoise": "Geç akşam atıştırmalığı ve hızlı öğle yemeği arayan ada ziyaretçileri",
+        "disadvantage": "Tam servis oturumlu şık restoran formatından ziyade pratik sokak büfesi düzenindedir",
+        "transit": "Namık Kemal Mah., Çarşı Cd., Cunda merkez sahiline birkaç adım mesafede"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Ayvalık Rehberi & Cunda Çarşı",
+          "url": "https://ayvalikrehberi.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çarşı Caddesi konumu ve tiftik burger menüsü"
+        },
+        {
+          "title": "Yemeksepeti & Yandex Değerlendirmeleri",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hızlı servis, tiftik kaburga ve köfte sandviç memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Cunda’da nadir bulunan özgün kaburga smash burger adresi",
+        "Pratik ve ulaşılabilir bütçe"
+      ],
+      "cons": [
+        "Geniş oturma alanı ve sakin restoran ambiyansı sunmaması"
+      ],
+      "uncertainties": [
+        "Kış sezonunda açık gün sayısı haftaya göre esneyebilir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-brew-co-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Brew Co. Coffee",
+      "branchName": "Namık Kemal, Selamet Cd. 5A, 10405 Ayvalık/Balıkesir",
+      "placeId": "ChIJ69QK3sh3uhQR2U9uSPBADbU",
+      "coordinates": {
+        "lat": 39.33251440000001,
+        "lng": 26.6573994
+      },
+      "rating": 4.9,
+      "userRatingCount": 708,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.brewcocunda.com/",
+      "mapsUri": "https://maps.google.com/?cid=13046155096313712601",
+      "recommendedPrimary": [
+        "Iced Flat White & Cortado",
+        "V60 Nitelikli Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Ev Yapımı Kurabiye & Kek Seçkisi",
+          "note": "Kahvenin yanında hafif fırın eşlikçisi olarak taze dilimler hazırlanır.",
+          "proof": "Brew Co. Cunda resmi sitesi ve gezgin notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Restore taş bina içi masalar ve gölgeli taş sokak oturumu",
+        "crowdAndNoise": "Sabah ve öğleden sonra kahve molası veren ada müdavimleri",
+        "disadvantage": "Popüler yaz saatlerinde sokak önü oturumu hızlıca dolmaktadır",
+        "transit": "Namık Kemal Mah., Selamet Cd. No:5A, Cunda kilise/çarşı sokakları hattında"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Brew Co. Cunda Resmi Web Sitesi",
+          "url": "https://brewcocunda.com/",
+          "date": "2026-11-18",
+          "kind": "operator",
+          "note": "Tarihî 100 yıllık taş bina ve nitelikli kahve barı"
+        },
+        {
+          "title": "RestaurantGuru & Topluluk Seçkisi",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "700+ değerlendirmede çekirdek tazeliği ve tarihi doku puanı"
+        }
+      ],
+      "pros": [
+        "Tarihî Rum taş mimarisinde gerçek üçüncü dalga espresso",
+        "Çok yüksek konuk puanı istikrarı"
+      ],
+      "cons": [
+        "Yoğun sezonda bekleme veya masa kısıtı"
+      ],
+      "uncertainties": [
+        "Sezona bağlı kahve yanı hafif atıştırmalık menüsü değişebiliyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-nona",
+      "categoryId": "kahve",
+      "resolvedName": "Nona Cunda",
+      "branchName": "Mithatpaşa, Bahar Sk. no:31, 10405 Ayvalık/Balıkesir",
+      "placeId": "ChIJ7fUqf453uhQRSphrwXgJ-TU",
+      "coordinates": {
+        "lat": 39.333053899999996,
+        "lng": 26.6608736
+      },
+      "rating": 4.9,
+      "userRatingCount": 700,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3889150167456913482",
+      "recommendedPrimary": [
+        "Flat White & Filtre Kahve",
+        "Günlük Limonlu Cheesecake"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Taze Tartlar & Çay Saati Dilimleri",
+          "note": "Günlük az sayıda hazırlanan tartsız kahve molası nadir kalır.",
+          "proof": "ButikRota ve HangiMekan Cunda incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sakin Arnavut kaldırımlı ara sokakta mütevazı ahşap masalar",
+        "crowdAndNoise": "Sahil kalabalığından uzaklaşmak isteyen bilinçli kahve severler",
+        "disadvantage": "İç oturma alanı çok küçük olup tatlılar gün içinde erken bitebilir",
+        "transit": "Mithatpaşa Mah., Bahar Sk. No:31"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "ButikRota Cunda Seçkisi",
+          "url": "https://butikrota.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sakin ara sokak konumu ve nitelikli kahve-tart uyumu"
+        },
+        {
+          "title": "HangiMekan & Yandex Notları",
+          "url": "https://hangimekan.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "700 değerlendirmede cheesecake tazeliği ve samimi işletme"
+        }
+      ],
+      "pros": [
+        "Kalabalık sahil hattından izole sakin sokak",
+        "Yüksek kahve ve ev tatlısı dengesi"
+      ],
+      "cons": [
+        "Sınırlı tezgah tatlısı stoğu"
+      ],
+      "uncertainties": [
+        "Kış sezonunda hafta içi kapalı gün uygulanabiliyor"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-too-hot-to-handle",
+      "categoryId": "kahve",
+      "resolvedName": "Too Hot To Handle Coffee Co",
+      "branchName": "Alibey Adası, Namık Kemal, Ayvalık Cd. No:21, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJF8RbPXR3uhQRoS0Crlcnuws",
+      "coordinates": {
+        "lat": 39.3327502,
+        "lng": 26.657624499999997
+      },
+      "rating": 4.9,
+      "userRatingCount": 54,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.tohottohandle.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=845312612597116321",
+      "recommendedPrimary": [
+        "Cold Brew & Freddo Espresso",
+        "Single Origin Espresso / Cortado"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Al-Götür Nitelikli Soğuk Kahve Bardakları",
+          "note": "Cunda sokak yürüyüşünde elde taşıma için özenli soğuk espresso seçenekleri.",
+          "proof": "Bölge kahve seçkisi ve misafir geri bildirimleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Dükkan önü sokak kenarı birkaç küçük masa ve al-götür pencere/bar düzeni",
+        "crowdAndNoise": "Sadece iyi espresso içmek için gelen ada müdavimleri",
+        "disadvantage": "Yiyecek/kahvaltı sunumu kısıtlı olup salt nitelikli kahve barı olarak çalışır",
+        "transit": "Namık Kemal Mah., Ayvalık Cd. No:21"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Ayvalık & Cunda Nitelikli Kahve İncelemeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Espresso çekim kalitesi ve yüksek çekirdek memnuniyeti"
+        },
+        {
+          "title": "Yerel Ada Rehber Seçkisi",
+          "url": "https://cundam.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Alibey Adası üçüncü dalga espresso barı teyidi"
+        }
+      ],
+      "pros": [
+        "Saf ve odaklı üçüncü dalga kahve disiplini",
+        "Çok yüksek müşteri puanı"
+      ],
+      "cons": [
+        "Oturumlu uzun mola için alanın çok küçük olması"
+      ],
+      "uncertainties": [
+        "Kış aylarında hafta sonu odaklı açılış yapabiliyor"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-iskele-cafe",
+      "categoryId": "kahve",
+      "resolvedName": "Cunda İskele Cafe",
+      "branchName": "Mithatpaşa, ALİ ÇETİNKAYA MEYDANI NO:11, 10100 Ayvalık/Balıkesir",
+      "placeId": "ChIJjdoWDid3uhQReGW13jaWa0o",
+      "coordinates": {
+        "lat": 39.3319742,
+        "lng": 26.6569967
+      },
+      "rating": 4.6,
+      "userRatingCount": 372,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5362544943723537784",
+      "recommendedPrimary": [
+        "Sakızlı & Klasik Türk Kahvesi",
+        "Buzlu Kahve & Taze Çay"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sahil Meydanı Tost & Hafif Atıştırmalıklar",
+          "note": "Kahve eşliğinde gün içi pratik atıştırmalık arayanlar için sade seçenekler.",
+          "proof": "Restoranım ve dijital menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "İskele meydanına açılan ferah deniz önü masaları",
+        "crowdAndNoise": "Feribottan veya yürüyüşten dönen ada misafirleri",
+        "disadvantage": "Kapsamlı serpme kahvaltı mekanı yerine deniz kenarı kahve-mola durağı olarak konumlanır",
+        "transit": "Mithatpaşa Mah., Ali Çetinkaya Meydanı No:11"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Restoranım & Sahil Mekan Kayıtları",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İskele meydanı konumu ve sahil kahve-içecek hizmeti"
+        },
+        {
+          "title": "Dijital Menü & Topluluk Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "370+ değerlendirmede konum avantajı ve düzenli servis puanı"
+        }
+      ],
+      "pros": [
+        "Doğrudan liman ve iskele manzarasına açılan ferah konum",
+        "Rahat ulaşım"
+      ],
+      "cons": [
+        "Kapsamlı yemek/kahvaltı menüsü beklentisini karşılamaması"
+      ],
+      "uncertainties": [
+        "Rüzgarlı havalarda dış meydan masaları kısıtlanabiliyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-oli-mera",
+      "categoryId": "date",
+      "resolvedName": "Oli Mera",
+      "branchName": "Namık Kemal, Ayvalık Cd. No:17, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJAaFmOIJ3uhQRNWDRwy7dgXY",
+      "coordinates": {
+        "lat": 39.332696399999996,
+        "lng": 26.657390099999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 3515,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8539349561394683957",
+      "recommendedPrimary": [
+        "El Yapımı Truffled & Pesto Ravioli",
+        "Deniz Ürünlü Tagliatelle"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Butik Şarap Eşleşmesi & Tiramisu Kapanışı",
+          "note": "Akşam masalarında el yapımı makarna yemeklerini tamamlayan klasik İtalyan eşleşmesi.",
+          "proof": "Küçük Oteller ve Cunda gastronomi rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş duvar dokulu şık iç salon ve ışıklandırılmış sokak önü masaları",
+        "crowdAndNoise": "Akşam yemeğinde romantik atmosfer arayan çiftler ve düzenli kalabalık",
+        "disadvantage": "Yüksek popülerlik nedeniyle yaz akşamları rezervasyonsuz kapıda bekleme ihtimali yüksektir",
+        "transit": "Namık Kemal Mah., Ayvalık Cd. No:17"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Küçük Oteller & Gastronomi Seçkisi",
+          "url": "https://www.kucukoteller.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "El yapımı makarna, ravioli ve taş mimari ambiyansı"
+        },
+        {
+          "title": "Yandex & Geniş Ziyaretçi Topluluğu",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "3500+ değerlendirmede yüksek makarna ve sos istikrarı"
+        }
+      ],
+      "pros": [
+        "Binlerce misafire rağmen 4.7 puanı koruyan nadir istikrar",
+        "Romantik taş mimari"
+      ],
+      "cons": [
+        "Yoğun sezon akşamlarında masa bekleme süresi"
+      ],
+      "uncertainties": [
+        "Dönemsel özel taze makarna reçeteleri mevsime göre değişir"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-la-taverna",
+      "categoryId": "date",
+      "resolvedName": "La Taverna Cunda",
+      "branchName": "Mithatpaşa, Meydan aralığı caddesi No:6 Cunda, 10045 Ayvalık/Balıkesir",
+      "placeId": "ChIJde5aWPl3uhQRLR8Hv2Ny2Bc",
+      "coordinates": {
+        "lat": 39.3317858,
+        "lng": 26.659183799999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 1274,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1718249030574087981",
+      "recommendedPrimary": [
+        "Ahtapot Carpaccio & Ege Otları",
+        "Günlük Balık & Karides Ara Sıcak"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Akustik Taverna Müziği Eşliğinde Sıcak Meze Sofası",
+          "note": "Sadece yemek değil, avluda gece boyu süren sıcak müzikli akşam deneyimi sunar.",
+          "proof": "Gastronomi Atlası ve Cunda Rehberim"
+        }
+      ],
+      "suitability": {
+        "seating": "Yüksek duvarlı ışıklandırılmış taş avlu masaları",
+        "crowdAndNoise": "Eğlenceli ama şık bir meyhane-taverna akşamı geçirmek isteyen gruplar ve çiftler",
+        "disadvantage": "Üst fiyat seviyesinde olup canlı müzik saatlerinde ortam enerjik ve hareketlidir",
+        "transit": "Mithatpaşa Mah., Meydan Aralığı Cd. No:6, Taksiyarhis yakınında"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Gastronomi Atlası Cunda Seçkisi",
+          "url": "https://gastronomiatlasi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihî taş avlu, taverna müziği ve Ege mezeleri"
+        },
+        {
+          "title": "Cunda Rehberim & Konuk İncelemeleri",
+          "url": "https://cundarehberim.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1200+ değerlendirmede yüksek avlu ambiyansı ve meze beğenisi"
+        }
+      ],
+      "pros": [
+        "Özgün ışıklandırılmış taş avlu atmosferi",
+        "Güçlü servis ve müzik uyumu"
+      ],
+      "cons": [
+        "Yüksek fiyat segmenti ve kalabalık gecelerde ses düzeyi"
+      ],
+      "uncertainties": [
+        "Sezon dışında canlı müzik günleri hafta sonuna yoğunlaşabiliyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-larancia",
+      "categoryId": "date",
+      "resolvedName": "L’Arancia",
+      "branchName": "Mithatpaşa, Çarşı Cd. 2. Sk. No:7, 10405 Ayvalık/Balıkesir",
+      "placeId": "ChIJcdM0EwV3uhQRWKZhfnzum0I",
+      "coordinates": {
+        "lat": 39.331840799999995,
+        "lng": 26.6592205
+      },
+      "rating": 4.4,
+      "userRatingCount": 1766,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://laranciacunda.com/",
+      "mapsUri": "https://maps.google.com/?cid=4799692046357079640",
+      "recommendedPrimary": [
+        "Mevsimsel Ege Otlu El Yapımı Makarna",
+        "Deniz Mahsullü Günlük Ana Tabak"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Şefin Mevsimlik Tadım & Şarap Eşleşmeleri",
+          "note": "Akşamları tarihî avludaki ağaç altında şarap ve zeytinyağı seçkisi eşliğinde sunuluyor.",
+          "proof": "L’Arancia resmi sitesi ve Saatolog Cunda incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî Rum evinin portakal ağaçlı, sessiz ve zarif taş avlusu",
+        "crowdAndNoise": "Gastronomi odaklı çiftler ve sakin, özenli akşam yemeği arayanlar",
+        "disadvantage": "Çok üst fiyat segmentinde yer alır; menü porsiyonları klasik tavernalara göre daha minimal ve rafinedir",
+        "transit": "Mithatpaşa Mah., Çarşı Cd. 2. Sk. No:7"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "L’Arancia Cunda Resmi Sitesi",
+          "url": "https://laranciacunda.com/",
+          "date": "2026-11-18",
+          "kind": "operator",
+          "note": "Avlu dokusu, mevsimsel İtalyan-Ege mutfağı"
+        },
+        {
+          "title": "Saatolog & Cunda Rehberim",
+          "url": "https://www.saatolog.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihî Rum evi bahçesinde fine dining deneyim teyidi"
+        }
+      ],
+      "pros": [
+        "Kalabalık çarşıdan koparan portakal ağaçlı tarihî avlu",
+        "Sezonluk rafine mutfak"
+      ],
+      "cons": [
+        "Üst-fine dining bütçe gereksinimi"
+      ],
+      "uncertainties": [
+        "Mevsim ve taze ürün akışına göre menü sıkça yenilenir"
+      ],
+      "selectionScore": 71,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-vino-sarap-evi",
+      "categoryId": "date",
+      "resolvedName": "Vino Şarap Evi",
+      "branchName": "No:, Mithatpaşa, Cumhuriyet Cd. No:8, 10405 Ayvalık/Balıkesir",
+      "placeId": "ChIJp-Wzm1N2uhQRElsBLL9iWyY",
+      "coordinates": {
+        "lat": 39.331973999999995,
+        "lng": 26.658894000000004
+      },
+      "rating": 4.4,
+      "userRatingCount": 1178,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2763911369538493202",
+      "recommendedPrimary": [
+        "Butik Şarap Seçkisi & Ege Peynir Tabağı",
+        "Ev Yapımı Karadut / Vişne Likörü"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Meyve Likörleri & Atıştırmalık İkilisi",
+          "note": "Yemek sonrası tek kadeh keyfi için ziyaret edilen ikonik ev üretimi likör seçenekleri.",
+          "proof": "Yolculuk Terapisi ve Yandex yerel notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı tarihî cephe önü masaları ve arka taş salon",
+        "crowdAndNoise": "Rakı-balık dışındaki romantik şarap sohbeti konukları",
+        "disadvantage": "Tam öğün ana yemek mutfağından ziyade şarap ve eşlikçi tabaklar üzerine kuruludur",
+        "transit": "Mithatpaşa Mah., Cumhuriyet Cd. No:8"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Yolculuk Terapisi Cunda Seçkisi",
+          "url": "https://www.yolculukterapisi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Geniş şarap kavı ve ev yapımı likör çeşitleri"
+        },
+        {
+          "title": "Yandex & Topluluk Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1100+ değerlendirmede romantik ve samimi şarap evi puanı"
+        }
+      ],
+      "pros": [
+        "Ada içinde yüksek sesli mekanlara alternatif dingin şarap sohbeti",
+        "Özgün ev yapımı likörler"
+      ],
+      "cons": [
+        "Sıcak ana yemek menüsü yerine soğuk eşlikçilerle sınırlı olması"
+      ],
+      "uncertainties": [
+        "Butik üretici şarapların stokları mevsime göre değişebiliyor"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-nana-kahvalti",
+      "categoryId": "kahvalti",
+      "resolvedName": "Nana Cunda Restoran & Otel",
+      "branchName": "Mithatpaşa, Ulusal Egemenlik Cad No:17 Cunda, 10405 Ayvalık/Balıkesir",
+      "placeId": "ChIJa_-Me7l3uhQRMJo-CRFF178",
+      "coordinates": {
+        "lat": 39.332507,
+        "lng": 26.6592131
+      },
+      "rating": 4.7,
+      "userRatingCount": 396,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.nanacunda.com/",
+      "mapsUri": "https://maps.google.com/?cid=13823593520708885040",
+      "recommendedPrimary": [
+        "Tarihî Bahçede Butik Ege Kahvaltısı",
+        "Ev Yapımı İncir-Portakal Reçeli & Sıcak Hamur İşleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Akşam Mahzen Mutfağı & Zeytin Ağaçları Altı Şarap Servisi",
+          "note": "Konak bahçesi günün ilerleyen saatlerinde şarap ve butik akşam yemeğine de ev sahipliği yapar.",
+          "proof": "Nana Cunda resmi sitesi ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Sokak karmaşasından izole zeytin ve meyve ağaçları gölgeli bahçe avlusu",
+        "crowdAndNoise": "Uzun ve sessiz sabah kahvaltısı yapmak isteyen konaklama dışı misafirler ve konuklar",
+        "disadvantage": "Butik otel bahçesi olduğu için dışarıdan kahvaltı için önceden yer müsaitliği sormak gerekir",
+        "transit": "Mithatpaşa Mah., Ulusal Egemenlik Cd. No:17"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Nana Cunda Resmi Web Sitesi",
+          "url": "https://nanacunda.com/",
+          "date": "2026-11-18",
+          "kind": "operator",
+          "note": "170 yıllık Rum evi zeytin bahçesi kahvaltı konsepti"
+        },
+        {
+          "title": "Bölge Topluluk İncelemeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bahçe huzuru, ürün kalitesi ve özenli servis puanları"
+        }
+      ],
+      "pros": [
+        "Meydan ve iskele karmaşasından uzak zeytin ağaçlı bahçe",
+        "Yalın ve özenli Ege kahvaltısı"
+      ],
+      "cons": [
+        "Otel kahvaltısı önceliği nedeniyle yoğun sezonda kontenjan kısıtı"
+      ],
+      "uncertainties": [
+        "Kış döneminde dış bahçe yerine iç taş mahzen kullanımı yapılabiliyor"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-port-kahvalti",
+      "categoryId": "kahvalti",
+      "resolvedName": "Cunda Port",
+      "branchName": "Mithat paşa mahallesi.15 eylül caddesi.4.sokak, Mithatpaşa, Eski cunda yolu no.159, 10400 Cunda/Balıkesir",
+      "placeId": "ChIJ0daihUN3uhQRzqRRumOLgeo",
+      "coordinates": {
+        "lat": 39.3403847,
+        "lng": 26.6726095
+      },
+      "rating": 4.7,
+      "userRatingCount": 261,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16897940537314747598",
+      "recommendedPrimary": [
+        "Deniz Kenarı Serpme Ege Kahvaltısı",
+        "Izgara Sucuk & Yöresel Peynirler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Gün Batımı Akşam Deniz Ürünleri & Izgara Mutfağı",
+          "note": "Geniş kıyı alanı öğleden sonra ve akşam saatlerinde alakart akşam yemeğine de açık kalır.",
+          "proof": "Restoranım ve Cunda kıyı rehberi kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Doğrudan deniz kıyısında geniş ve ferah bahçe-kıyı masaları",
+        "crowdAndNoise": "Geniş masada kalabalık gruplar ve manzaralı kahvaltı tercih edenler",
+        "disadvantage": "Tarihî Cunda çarşı merkezinin doğu sahil girişinde yer aldığından çarşı içine araç veya yürüyüş mesafesi ister",
+        "transit": "Mithatpaşa Mah., 15 Eylül Cd. 4. Sk. / Eski Cunda Yolu No:159"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Restoranım Cunda İncelemeleri",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Serpme kahvaltı çeşitleri, ızgara sucuk ve ev yapımı limonata"
+        },
+        {
+          "title": "Yandex & Ada Misafir Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "260+ değerlendirmede deniz kenarı ferahlık ve sunum beğenisi"
+        }
+      ],
+      "pros": [
+        "Denize sıfır ferah kahvaltı yerleşimi ve rahat park erişimi",
+        "Zengin kahvaltı içeriği"
+      ],
+      "cons": [
+        "Ada çarşı ara sokaklarının dış kenarında konumlanması"
+      ],
+      "uncertainties": [
+        "Kuvvetli poyrazlı günlerde açık kıyı masaları rüzgar alabiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-ayna-girit-ege",
+      "categoryId": "denemelisin",
+      "resolvedName": "AYNA",
+      "branchName": "Namık Kemal, Çarşı Cd. No:29, 10405 Cunda Adası/Ayvalık/Balıkesir",
+      "placeId": "ChIJ8S4vcVN2uhQRoJGCi__NXQo",
+      "coordinates": {
+        "lat": 39.3319858,
+        "lng": 26.658123
+      },
+      "rating": 4.3,
+      "userRatingCount": 1013,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://aynacunda.com/",
+      "mapsUri": "https://maps.google.com/?cid=746979610654314912",
+      "recommendedPrimary": [
+        "Sardalya Aşkına Üçlüsü & Levrek Ceviche",
+        "Tarhunlu Deniz Ürünleri Güveci"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Portakallı ve Lorlu İmza Pasta",
+          "note": "Yemek sonrasında mutlaka istenen, Cunda loruyla yapılan ünlü imza tatlısı.",
+          "proof": "Ayna Cunda menü arşivi ve gastronomi seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Çarşı içinde zevkli ve sakin taş duvarlı iki katlı restoran salonu",
+        "crowdAndNoise": "Özenli Girit-Ege gastronomisi arayan bilinçli gezginler",
+        "disadvantage": "Adanın üst fiyat diliminde yer alır ve özellikle yaz akşamları rezervasyonsuz yer bulmak zordur",
+        "transit": "Namık Kemal Mah., Çarşı Cd. No:29"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Ayna Cunda Resmi Web & Menü Arşivi",
+          "url": "https://aynacunda.com/",
+          "date": "2026-11-18",
+          "kind": "operator",
+          "note": "Kuzey Ege zeytinyağı disiplini, Sardalya Aşkına ve lorlu pasta"
+        },
+        {
+          "title": "Gault & Millau Türkiye Seçkisi",
+          "url": "https://gault-millau.com.tr/",
+          "date": "2026-10-20",
+          "kind": "award",
+          "note": "Cunda Girit-Ege mutfağının ödüllü gastronomik temsilcisi"
+        },
+        {
+          "title": "Yandex & Turizm İncelemeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1000+ değerlendirmede özenli sunum ve mevsimsel menü istikrarı"
+        }
+      ],
+      "pros": [
+        "Yalın ve özgün Girit-mübadil mutfak kürasyonu",
+        "Yüksek kaliteli yerel zeytinyağı disiplini"
+      ],
+      "cons": [
+        "Üst fiyat segmenti ve rezervasyon şartı"
+      ],
+      "uncertainties": [
+        "Yaz ve kış menüleri av ve mevsim döngüsüne göre köklü biçimde güncellenir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-dejong-cocktail",
+      "categoryId": "denemelisin",
+      "resolvedName": "dejong coffee and cocktail bar",
+      "branchName": "Namık Kemal, 15 Eylül Cd. 24.Sokak No: 5/1 CUNDA, 10405 Ayvalık/Balıkesir",
+      "placeId": "ChIJu9c1Drl3uhQRUcHHdvbknqA",
+      "coordinates": {
+        "lat": 39.333354199999995,
+        "lng": 26.656772500000002
+      },
+      "rating": 4.9,
+      "userRatingCount": 549,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.dejongcocktail.com/menu",
+      "mapsUri": "https://maps.google.com/?cid=11573939839594643793",
+      "recommendedPrimary": [
+        "Cunda İmza Kokteyller",
+        "Espresso Bazlı Gündüz Kahveleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Akşam DJ Performanslı Sokak Barı Atmosferi",
+          "note": "Gündüz kahve keyfini gece dinamik kokteyl sohbetiyle bağlar.",
+          "proof": "Yerels.com ve Ayvalık Etkinlik kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî taş ara sokakta açık hava masa-bistro düzeni",
+        "crowdAndNoise": "Genç ve dinamik ada ziyaretçileri ile kokteyl tutkunları",
+        "disadvantage": "Akşam geç saatlerde DJ ve kalabalık nedeniyle ses seviyesi yüksektir",
+        "transit": "Namık Kemal Mah., 15 Eylül Cd. 24. Sk. No:5/1"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Yerels.com Cunda Mekan Rehberi",
+          "url": "https://yerels.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İmza kokteyller ve çift konseptli kahve-bar yapısı"
+        },
+        {
+          "title": "Restoranım & Ayvalık Etkinlik",
+          "url": "https://ayvaliketkinlik.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "540+ değerlendirmede yüksek kokteyl ve müzik memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Gündüzden geceye kesintisiz yüksek kalite",
+        "Cunda içinde güçlü imza kokteyl seçkisi"
+      ],
+      "cons": [
+        "Gece kalabalığı ve yüksek ses seviyesi"
+      ],
+      "uncertainties": [
+        "Sezon dışında etkinlik takvimi hafta sonlarıyla sınırlanabiliyor"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-aura",
+      "categoryId": "denemelisin",
+      "resolvedName": "Aura Cunda",
+      "branchName": "Mithatpaşa, 20065 sokak no 9, 10400 alibey adası/Ayvalık/Balıkesir",
+      "placeId": "ChIJpz_MeCh3uhQR54NluGajAXE",
+      "coordinates": {
+        "lat": 39.332128499999996,
+        "lng": 26.6599164
+      },
+      "rating": 4.9,
+      "userRatingCount": 260,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8142969262838219751",
+      "recommendedPrimary": [
+        "Taze Meyve Püreli İmza Kokteyller",
+        "Tapas & Paylaşımlık Bahçe Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bahçe Işıkları Altında Paylaşım Tabakları",
+          "note": "Kokteyl yanında akşam yemeği sonrası hafif atıştırmalık ihtiyacını dengeler.",
+          "proof": "Restoranım ve ETS Mekan incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Duvarlarla çevrili samimi bahçe avlusu ve bar oturumu",
+        "crowdAndNoise": "Cunda meyhaneleri sonrası kokteyl için gelen arkadaş grupları",
+        "disadvantage": "Ara sokakta konumlandığından gece kalabalığında yön bulmak biraz dikkat ister",
+        "transit": "Mithatpaşa Mah., 20065. Sk. No:9"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Restoranım & Cunda Bahçe Seçkisi",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taze kokteyl menüsü ve bahçe avlu atmosferi"
+        },
+        {
+          "title": "Yandex Topluluk Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "260 değerlendirmede 4.9 puan istikrarı"
+        }
+      ],
+      "pros": [
+        "Yüksek kaliteli taze malzeme kokteylleri",
+        "Huzurlu ama canlı bahçe"
+      ],
+      "cons": [
+        "Ana sahil yolunun biraz gerisinde kalması"
+      ],
+      "uncertainties": [
+        "Sezon dışı dönemlerde kokteyl bahçesi hafta sonu ağırlıklı çalışabiliyor"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-sakkra",
+      "categoryId": "denemelisin",
+      "resolvedName": "Sakkra Cunda",
+      "branchName": "Mithatpaşa, Halk Cd. No:25, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJ1w1_xDt3uhQR43yQAgP7MW8",
+      "coordinates": {
+        "lat": 39.33307980000001,
+        "lng": 26.6593083
+      },
+      "rating": 4.7,
+      "userRatingCount": 160,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://view.qrall.co/tr?tenantId=3a1a2f4c-1909-5118-2771-2479b5fa379c&channelId=3a1a2f4c-1dd6-3a5b-d91c-de12c7a8046e",
+      "mapsUri": "https://maps.google.com/?cid=8012461202415320291",
+      "recommendedPrimary": [
+        "Akşam İmza Kokteylleri",
+        "İnce Hamur Paylaşımlık Atıştırmalık Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Canlı Akustik Müzik Bahçe Oturumu",
+          "note": "Yaz akşamlarında bahçe ortamına eşlik eden dinletilerle ada gecelerini renklendirir.",
+          "proof": "Yandex ve Cunda rehber notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlatılmış taş ve yeşillikli açık bahçe masaları",
+        "crowdAndNoise": "Canlı müzikli ama rahat sohbet edilebilen gece durağı arayanlar",
+        "disadvantage": "Canlı müzik saatlerinde iç ve bahçe alanı çabuk dolmaktadır",
+        "transit": "Mithatpaşa Mah., Halk Cd. No:25"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Ayvalık Rehberi & Etkinlik",
+          "url": "https://ayvalikrehberi.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Halk Caddesi konumu, bahçe atmosferi ve canlı müzik"
+        },
+        {
+          "title": "Yandex Konuk İncelemeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kokteyl kalitesi, müzik dengesi ve samimi personel övgüleri"
+        }
+      ],
+      "pros": [
+        "Sıcak bahçe ortamı ve canlı müzik uyumu",
+        "Kokteyl yanında pizza alternatifi"
+      ],
+      "cons": [
+        "Sadece akşam saatlerine odaklı açılış"
+      ],
+      "uncertainties": [
+        "Canlı müzik programları mevsime göre değişiyor"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-nesos-dondurma",
+      "categoryId": "denemelisin",
+      "resolvedName": "Cunda dondurma Nesos Cafe",
+      "branchName": "cunda alibey adası, Namık Kemal, 10405 Ayvalık/Balıkesir",
+      "placeId": "ChIJw9VA-DN3uhQRSICq3vj2nDg",
+      "coordinates": {
+        "lat": 39.3315817,
+        "lng": 26.6582482
+      },
+      "rating": 4.5,
+      "userRatingCount": 371,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4079406911238864968",
+      "recommendedPrimary": [
+        "Kavunlu & Damla Sakızlı Dondurma",
+        "Doğal Karadutlu Dondurma"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Geleneksel Soğuk İçecek & Atıştırmalıklar",
+          "note": "Yürüyüş sırasında serinlemek için dondurma eşliğinde hızlı içecek molası sunar.",
+          "proof": "GoAyvalık ve Restoranim.net Cunda rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sokak önü bankları ve hızlı yürüyüş külah/kap servisi",
+        "crowdAndNoise": "Özellikle yaz akşamları yürüyüş yapan aileler ve dondurma severler",
+        "disadvantage": "Akşam gezintisi saatlerinde tezgah önünde kuyruk oluşabiliyor",
+        "transit": "Namık Kemal Mah., Cunda sahil yürüyüş çarşısı içinde"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "GoAyvalık & Ada Lezzet Rehberi",
+          "url": "https://goayvalik.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kavunlu, karadutlu ve damla sakızlı Cunda dondurması"
+        },
+        {
+          "title": "Restoranım Topluluk Notları",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "370+ değerlendirmede doğal meyve tadı ve tazelik puanı"
+        }
+      ],
+      "pros": [
+        "Gerçek meyve ve sakız aromalı günlük Cunda dondurması",
+        "Yüksek misafir beğenisi"
+      ],
+      "cons": [
+        "Oturma alanı kısıtlı hızlı tatlı durağı olması"
+      ],
+      "uncertainties": [
+        "Kış döneminde dondurma çeşitliliği sınırlanabiliyor"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-pastane",
+      "categoryId": "denemelisin",
+      "resolvedName": "Cunda pastane",
+      "branchName": "Ayvalık/cunda adası, Mithatpaşa, Cumhuriyet Cd., 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJmQk9tQN3uhQRVh7dTPfbcOY",
+      "coordinates": {
+        "lat": 39.332278300000006,
+        "lng": 26.6589062
+      },
+      "rating": 4.4,
+      "userRatingCount": 283,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16605013681307983446",
+      "recommendedPrimary": [
+        "Taze Cunda Lor Tatlısı (Dondurmalı/Sade)",
+        "Damla Sakızlı & Bademli Kurabiye"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Hediye Paketlik Damla Sakızlı Kurabiye Kutuları",
+          "note": "Adadan dönüşte yanınızda götürmek için paketlenen taze yerel kurabiye çeşitleri.",
+          "proof": "Ayvalık Dijital ve Cunda gastronomi rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Pastane içi birkaç küçük masa ve tezgah paketi servisi",
+        "crowdAndNoise": "Sabah hamur işi alan ada sakinleri ve kurabiye arayan ziyaretçiler",
+        "disadvantage": "Sınırlı masa düzeni nedeniyle daha çok paket/al-götür pastane formatında çalışır",
+        "transit": "Mithatpaşa Mah., Cumhuriyet Cd. üzeri"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Ayvalık Dijital & Yerel Rehber",
+          "url": "https://ayvalikdijital.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Cumhuriyet Caddesi pastanesi ve taze kurabiye çeşitleri"
+        },
+        {
+          "title": "Cunda Topluluk Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "280+ değerlendirmede lor tatlısı ve sakızlı kurabiye tazeliği"
+        }
+      ],
+      "pros": [
+        "Turistik kalabalığa kıyasla yüksek puanlı yerel lor tatlısı ve kurabiyeler",
+        "Günlük üretim"
+      ],
+      "cons": [
+        "Geniş oturumlu kafe alanının olmaması"
+      ],
+      "uncertainties": [
+        "Taze lor tatlısı tepsisi akşamüstü erken tükenebiliyor"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-oz-avsar-tost",
+      "categoryId": "denemelisin",
+      "resolvedName": "Öz Avşar Cunda Tost & Balık",
+      "branchName": "Tost Büfeleri, Namık Kemal, Ayvalık Cd. no: 6C, 10405 Ayvalık/Balıkesir",
+      "placeId": "ChIJxazGQVN2uhQRPpYkflaZ9bU",
+      "coordinates": {
+        "lat": 39.332559800000006,
+        "lng": 26.6567191
+      },
+      "rating": 4.4,
+      "userRatingCount": 363,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://restomaster.app/oz-avsar-cunda-tost-balik",
+      "mapsUri": "https://maps.google.com/?cid=13111554486921631294",
+      "recommendedPrimary": [
+        "Bol Malzemeli Orijinal Ayvalık Tostu",
+        "Çıtır Papalina Balığı Ekmek / Porsiyon"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarator Soslu Midye Tava",
+          "note": "Cunda sokak lezzetlerinin ikincil klasiği olarak gün boyu taze kızartılıyor.",
+          "proof": "Gezgin videoları ve Yandex yerel rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tost büfeleri açık hava kaldırım masaları ve hızlı servis",
+        "crowdAndNoise": "Gündüz ada gezginleri, plaj dönüşü müdavimleri ve gece atıştırmalıkçıları",
+        "disadvantage": "Büfe sırası atmosferidir; sakin restoran düzeni yerine hızlı sokak lezzeti beklentisiyle gidilmelidir",
+        "transit": "Namık Kemal Mah., Ayvalık Cd. Tost Büfeleri No:6C"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Yemek ve Gezi Rehberleri",
+          "url": "https://www.yemek.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tost Büfeleri hattında Ayvalık tostu, papalina ve midye tava"
+        },
+        {
+          "title": "Yandex Topluluk Notları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "360+ değerlendirmede hızlı servis ve sokak lezzeti istikrarı"
+        }
+      ],
+      "pros": [
+        "Tost ve Cunda’ya özgü çıtır papalinayı aynı bütçe dostu noktada sunması",
+        "Yüksek sirkülasyonda hızlı tazelik"
+      ],
+      "cons": [
+        "Sokak büfesi düzeninde gürültü ve kısıtlı konfor"
+      ],
+      "uncertainties": [
+        "Papalina av yasağı dışındaki taze sezon dönemlerinde bulunur"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-kucuk-yer-semali",
+      "categoryId": "denemelisin",
+      "resolvedName": "Küçük yer semali",
+      "branchName": "Namık Kemal, Zafer Sk. No:10, 10405 Ayvalık/Balıkesir",
+      "placeId": "ChIJQzJC6ox3uhQRS6Z8b4amGno",
+      "coordinates": {
+        "lat": 39.332202599999995,
+        "lng": 26.6580814
+      },
+      "rating": 4.6,
+      "userRatingCount": 433,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.tripadvisor.com.tr/Restaurant_Review-g3398674-d10693688-Reviews-Kucuk_Yer_Semali-Cunda_Island_Turkish_Aegean_Coast.html",
+      "mapsUri": "https://maps.google.com/?cid=8798527918347953739",
+      "recommendedPrimary": [
+        "Şefin Özgün Ege Mezeleri Seçkisi",
+        "Ev Yapımı Likör & Kokteyl Eşleşmesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Likörler & Butik Kokteyller",
+          "note": "Yemek sonrası başka bir bara geçmeden aynı samimi masada devam etme imkanı verir.",
+          "proof": "Hürriyet ve Gazete Oksijen Cunda seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Dar taş sokak kenarı ve birkaç masalı samimi butik avlu",
+        "crowdAndNoise": "Kalabalık sahil lokantaları yerine özel ara sokak deneyimi arayan çiftler",
+        "disadvantage": "Üst fiyat seviyesindedir ve çok sınırlı masa adedi nedeniyle önceden rezervasyon şarttır",
+        "transit": "Namık Kemal Mah., Zafer Sk. No:10"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Gazete Oksijen & Hürriyet Cunda Rehberi",
+          "url": "https://gazeteoksijen.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Özgün mezeleri, ev yapımı likörleri ve butik ara sokak ruhu"
+        },
+        {
+          "title": "Restoranım & Yandex Değerlendirmeleri",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "430+ değerlendirmede özenli tatlar ve samimi konukseverlik"
+        }
+      ],
+      "pros": [
+        "Büyük turistik tavernalardan çok daha özenli ve samimi atmosfer",
+        "Yaratıcı meze-kokteyl ikilisi"
+      ],
+      "cons": [
+        "Yüksek bütçe seviyesi ve masa sayısının azlığı"
+      ],
+      "uncertainties": [
+        "Sezon dışında açılış günleri hafta sonuna yoğunlaşabiliyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-limon-cocktail",
+      "categoryId": "denemelisin",
+      "resolvedName": "Limon Cocktail Cunda",
+      "branchName": "Namık kemal mahallesi Zafer sokak no:14/A 23040 cunda, Namık Kemal, 10405 Ayvalık/Balıkesir",
+      "placeId": "ChIJM1x0v293uhQR_v1t1aczfBc",
+      "coordinates": {
+        "lat": 39.3321921,
+        "lng": 26.6579068
+      },
+      "rating": 4.5,
+      "userRatingCount": 185,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1692284355917774334",
+      "recommendedPrimary": [
+        "Limonlu & Narenciyeli İmza Kokteyller",
+        "Botanik Gin Karışımları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Akustik Canlı Performans Akşamları",
+          "note": "Cunda akşam yemeği sonrasını canlı müzikle taçlandıran düzenli sahne enerjisi.",
+          "proof": "Maptons ve Restoranim.net Cunda notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî Zafer Sokak avlu masaları ve bar oturumu",
+        "crowdAndNoise": "Yemek sonrası Cunda’da kaliteli kokteyl ve canlı akustik dinlemek isteyenler",
+        "disadvantage": "Ana yemek menüsü sunmaz ve canlı müzik gecelerinde ses ve doluluk artar",
+        "transit": "Namık Kemal Mah., Zafer Sk. No:14/A"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Maptons & Gece Hayatı Rehberi",
+          "url": "https://maptons.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Zengin imza kokteyl menüsü ve günlük canlı müzik"
+        },
+        {
+          "title": "Restoranım & Yerel Değerlendirmeler",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kokteyl dengesi ve bahçe atmosferi beğenileri"
+        }
+      ],
+      "pros": [
+        "Her güne yayılan kaliteli akustik müzik",
+        "Özgün narenciyeli imza kokteyller"
+      ],
+      "cons": [
+        "Sadece gece içecek-atıştırmalık odağında hizmet vermesi"
+      ],
+      "uncertainties": [
+        "Canlı müzik program saatleri yaz ve sonbahar takvimine göre değişebiliyor"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-tas-kahve",
+      "categoryId": "denemelisin",
+      "resolvedName": "TAŞ KAHVE",
+      "branchName": "Alibey Adası Cunda, Namık Kemal, Sahil Boyu Sokak No:20, 10405 Ayvalık/Balıkesir",
+      "placeId": "ChIJq6qqan52uhQRFho52mA_VmY",
+      "coordinates": {
+        "lat": 39.3317044,
+        "lng": 26.6580576
+      },
+      "rating": 3.8,
+      "userRatingCount": 10391,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.taskahve.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=7374151125076351510",
+      "recommendedPrimary": [
+        "Taş Havanda Dövülmüş Dibek & Sakızlı Türk Kahvesi",
+        "Sade Ada Çayı & Sakızlı Kurabiye"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yüksek Tavanlı Tarihî Salonda Sabah Tostu & Ada Çayı",
+          "note": "Sabah erken saatlerde kalabalık artmadan yapının mimari ruhunu soluma imkanı.",
+          "proof": "Taş Kahve resmi arşivi ve seyahat rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî kolonsuz yüksek tavanlı taş salon ve doğrudan liman önü sandalyeleri",
+        "crowdAndNoise": "10 bini aşkın ziyaretçisiyle adanın en yoğun turistik sirkülasyon noktası",
+        "disadvantage": "Yüksek turistik yoğunluk sebebiyle kalabalık yaz günlerinde servis temposu aksayabiliyor ve fiyatları mahalle ortalamasının üzerindedir",
+        "transit": "Namık Kemal Mah., Sahil Boyu Sk. No:20"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Taş Kahve Resmi Web Sitesi",
+          "url": "https://taskahve.com.tr/",
+          "date": "2026-11-18",
+          "kind": "operator",
+          "note": "1885 tarihli sarımsak taşı bina ve elde dövülen dibek kahvesi"
+        },
+        {
+          "title": "Gazete Duvar & Harbi Yiyorum Arşivi",
+          "url": "https://www.gazeteduvar.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Cunda simgesi neoklasik mimari ve yüksek sirkülasyon analizleri"
+        },
+        {
+          "title": "Yandex & Turizm Topluluk Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "10.000+ değerlendirmede kalabalık servis aksamalarına rağmen korunan ritüel"
+        }
+      ],
+      "pros": [
+        "Eşi olmayan 1885 sarımsak taşı kahvehane mimarisi",
+        "Atalık tokmakla dövülen dibek-sakızlı kahve"
+      ],
+      "cons": [
+        "Çok yoğun sezonda sabırsız servis ve yüksek turistik fiyat eleştirileri"
+      ],
+      "uncertainties": [
+        "Sezon zirvesinde sahil masalarında boş yer bulmak zorlaşabiliyor"
+      ],
+      "selectionScore": 74,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-balikcisi-kerem",
+      "categoryId": "balik",
+      "resolvedName": "Cunda-Ayvalık Balıkçısı Kerem",
+      "branchName": "Namık Kemal, Halk Cd. No:1, 10405 Ayvalık/Balıkesir",
+      "placeId": "ChIJFxKWJnJ3uhQRdpysfWUuwF8",
+      "coordinates": {
+        "lat": 39.331770299999995,
+        "lng": 26.658269999999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 841,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6899565642566638710",
+      "recommendedPrimary": [
+        "Günlük Mevsim Balığı (Levrek / Çipura / Barbun)",
+        "Izgara Ahtapot & Zeytinyağlı Ot Mezeleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ayvalık Sızma Zeytinyağlı Girit Mezeleri",
+          "note": "Ağır soslara boğulmadan doğal malzeme tadını koruyan sade ve taze soğuk başlangıçlar.",
+          "proof": "Gault & Millau Türkiye seçkisi ve Restoran değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî taş sokak boyunca düzenli ve nezih açık/kapalı akşam masaları",
+        "crowdAndNoise": "Balık kalitesinden ödün vermeyen gastronomi meraklıları ve müdavimler",
+        "disadvantage": "Çok üst bütçe segmentindedir; sahil barlarının gürültüsünden uzakta kalite odaklı ücretlendirme yapar",
+        "transit": "Namık Kemal Mah., Halk Cd. No:1"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Gault & Millau Türkiye Seçkisi",
+          "url": "https://gault-millau.com.tr/",
+          "date": "2026-10-20",
+          "kind": "award",
+          "note": "Sade, yalın Ege deniz ürünleri ekolü ve Girit mezeleri"
+        },
+        {
+          "title": "Yeni Asır & Topluluk Kayıtları",
+          "url": "https://www.yeniasir.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "840+ değerlendirmede günlük balık ve meze başarısı"
+        }
+      ],
+      "pros": [
+        "Gösterişli turistik şovlardan uzak yüksek ürün kalitesi",
+        "İstikrarlı balık pişirme tekniği"
+      ],
+      "cons": [
+        "Çok yüksek bütçe kategorisinde konumlanması"
+      ],
+      "uncertainties": [
+        "Mevsimsel av koşullarına göre spesifik balık türleri değişiklik gösterir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-on-bucuk",
+      "categoryId": "balik",
+      "resolvedName": "On Buçuk Cunda",
+      "branchName": "Namık Kemal, Çarşı Cd. No:14A, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJ7_UN1JV3uhQRPIKnZxWWdE4",
+      "coordinates": {
+        "lat": 39.332024499999996,
+        "lng": 26.6574455
+      },
+      "rating": 4.6,
+      "userRatingCount": 134,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://onbucukcunda.com/",
+      "mapsUri": "https://maps.google.com/?cid=5653308450934325820",
+      "recommendedPrimary": [
+        "Taze Deniz Mahsullü Ara Sıcaklar",
+        "Günlük Meze Seçkisi & Izgara Balık"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mevsimlik Özel Deniz Ara Sıcakları",
+          "note": "Klasik masaya yenilikçi dokunuş ekleyen sıcak başlangıç tabakları.",
+          "proof": "Esnaf Türkiye ve Restoranım Cunda seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Çarşı aksı üzerinde ferah sokak masaları ve sıcak restoran düzeni",
+        "crowdAndNoise": "Hem geleneksel rakı-balık hem yeni nesil meze lezzetini arayan akşam misafirleri",
+        "disadvantage": "Hafta sonları çarşı akışı içinde hareketlilik ve sıra oluşabiliyor",
+        "transit": "Namık Kemal Mah., Çarşı Cd. No:14A"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Esnaf Türkiye & Ayvalık Seçkisi",
+          "url": "https://esnafturkiye.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çarşı Caddesi konumu, taze deniz ürünleri ve meze tabakları"
+        },
+        {
+          "title": "Restoranım & Yandex Topluluk Kayıtları",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "130+ değerlendirmede yüksek servis nezaketi ve tazelik puanı"
+        }
+      ],
+      "pros": [
+        "Güncel hijyen ve servis kalitesi yüksek meze-balık adresi",
+        "Yalın ve taze tabaklar"
+      ],
+      "cons": [
+        "Merkezdeki diğer balıkçılarla yan yana yoğun sokak konumunda kalması"
+      ],
+      "uncertainties": [
+        "Yaz sezonu akşamları önceden masa ayırtmak gerekebiliyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-ela-meyhane",
+      "categoryId": "balik",
+      "resolvedName": "Ela Meyhane",
+      "branchName": "Mithatpaşa, Çarşı Cd. 2. Sk. No:1/1, 10405 Ayvalık/Balıkesir",
+      "placeId": "ChIJBVf3kFN2uhQRIrlCMbMr4Fk",
+      "coordinates": {
+        "lat": 39.3320704,
+        "lng": 26.658569999999997
+      },
+      "rating": 4.5,
+      "userRatingCount": 1026,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.tripadvisor.com.tr/Restaurant_Review-g12215698-d14059492-Reviews-Ela_Meyhane-Namik_Kemal_Cunda_Island_Turkish_Aegean_Coast.html",
+      "mapsUri": "https://maps.google.com/?cid=6476224312784369954",
+      "recommendedPrimary": [
+        "Türk-Yunan Meze Dolabı Seçkisi",
+        "Taze Deniz Balığı & Ahtapot"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarihî Çarşı Sokaklarında Uzo & Rakı Sofrası",
+          "note": "Müzik ve samimi sohbet eşliğinde uzun akşam yemekleri için klasikleşen düzen.",
+          "proof": "ButikRota ve Yandex yerel topluluk notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî kilise yakınında taş sokak önü masaları ve küçük iç salon",
+        "crowdAndNoise": "Eğlenceli ve samimi meyhane enerjisi arayan akşam sofraları",
+        "disadvantage": "Çok üst bütçe dilimindedir; kalabalık akşam saatlerinde masa yerleşimi sıkışıktır",
+        "transit": "Mithatpaşa Mah., Çarşı Cd. 2. Sk. No:1/1"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "ButikRota Cunda Seçkisi",
+          "url": "https://butikrota.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taksiyarhis çevresinde Türk-Yunan meyhane ve balık mutfağı"
+        },
+        {
+          "title": "RestaurantGuru & Yandex Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1000+ değerlendirmede meze tazeliği ve sıcak ortam övgüsü"
+        }
+      ],
+      "pros": [
+        "Yüksek hacimli konuk yorumlarında korunan 4.5 puan başarısı",
+        "Tarihî dokuda neşeli meyhane"
+      ],
+      "cons": [
+        "Üst segment fiyatlama ve yoğunluk anlarında dar sokak oturumu"
+      ],
+      "uncertainties": [
+        "Kalabalık gruplar için kışın sadece iç salon imkanı mevcut"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cunda-zayka-balik",
+      "categoryId": "balik",
+      "resolvedName": "Zayka Balık Restaurant",
+      "branchName": "Namık Kemal, Ayvalık Cd. no:22, 10405 Ayvalık/Balıkesir",
+      "placeId": "ChIJp07vC1N2uhQRh38YiFQQmrE",
+      "coordinates": {
+        "lat": 39.3327046,
+        "lng": 26.657801199999998
+      },
+      "rating": 4.4,
+      "userRatingCount": 929,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12797559246373289863",
+      "recommendedPrimary": [
+        "Zayka Özel Balık Simiti & Kalamar",
+        "Ege Otları Kavurması & Günün Balığı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Akustik Müzikli Rakı-Balık Masaları",
+          "note": "Bazı akşamlar canlı müzik eşliğinde Cunda’nın geleneksel sahil meyhane havasını taşır.",
+          "proof": "Restoranım ve Cunda lezzet değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ayvalık Caddesi cepheli taş bina salonu ve açık sokak/teras masaları",
+        "crowdAndNoise": "Özgün ara sıcak tatları ve hareketli akşam sofraları arayanlar",
+        "disadvantage": "Çok üst fiyat segmentinde yer alır; canlı müzik olduğunda ortam gürültülü olabilir",
+        "transit": "Namık Kemal Mah., Ayvalık Cd. No:22"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Restoranım Cunda İncelemeleri",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Balık Simiti spesiyali ve Akdeniz deniz ürünleri"
+        },
+        {
+          "title": "Yandex & Misafir Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "920+ değerlendirmede ot kavurma ve ara sıcak beğenisi"
+        }
+      ],
+      "pros": [
+        "Başka yerde nadir bulunan özgün Balık Simiti tabağı",
+        "Zengin ara sıcak seçenekleri"
+      ],
+      "cons": [
+        "Çok yüksek bütçe kategorisi ve canlı müzik akşamlarında ses yüksekliği"
+      ],
+      "uncertainties": [
+        "Sezon yoğunluğuna bağlı olarak masa süreleri ve bekleme artabilir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    }
+  ]
+}

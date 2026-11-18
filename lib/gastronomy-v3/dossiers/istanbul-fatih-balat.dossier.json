@@ -1,0 +1,1896 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "istanbul-fatih-balat",
+  "displayName": "Balat, Fatih, İstanbul",
+  "verifiedAt": "2026-11-15T13:41:33.278Z",
+  "selectedCount": 23,
+  "rejectedControls": [
+    {
+      "id": "ctrl-bal-velvet-closed",
+      "resolvedName": "Velvet Cafe, Balat",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-bal-davidpeople-chain",
+      "resolvedName": "David People Coffee Balat",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bal-paperroasting-chain",
+      "resolvedName": "Paper Roasting Coffee & Eatery - Balat",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bal-asirliktencere-chain",
+      "resolvedName": "Asırlık Tencere Köftecisi - Balat",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bal-8one-chain",
+      "resolvedName": "8one Burger - Yusufpaşa",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bal-soil-kahve-purity",
+      "resolvedName": "Soil Coffee & Chocolate",
+      "reason": "kahve_category_not_coffee_specialist:name"
+    },
+    {
+      "id": "ctrl-bal-francala-kahve-purity",
+      "resolvedName": "Tarihi Francala E.K. Firini",
+      "reason": "kahve_category_not_coffee_specialist:bakery"
+    },
+    {
+      "id": "ctrl-bal-pops-below-44",
+      "resolvedName": "Pops Balat",
+      "reason": "below_quality_threshold:★4.3(461)"
+    },
+    {
+      "id": "ctrl-bal-ilters-below-44",
+      "resolvedName": "İlter's Coffee - Balat",
+      "reason": "below_quality_threshold:★4(2244)"
+    },
+    {
+      "id": "ctrl-bal-sahil-below-44",
+      "resolvedName": "Balat Sahil Restoran",
+      "reason": "below_quality_threshold:★4.2(2013)"
+    },
+    {
+      "id": "ctrl-bal-perispri-below-44",
+      "resolvedName": "Perispri",
+      "reason": "below_quality_threshold:★4.2(511)"
+    },
+    {
+      "id": "ctrl-bal-cibalikapi-outside",
+      "resolvedName": "Cibalikapı Balıkçısı Haliç",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Balat/Ayvansaray/Yavuz Sultan Selim/Fener, adres: Cibali, Kadir Has Cd. No: 5, 34083 Fatih/İstanbul)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "bal-forno-balat",
+      "categoryId": "pizza",
+      "resolvedName": "Forno Balat",
+      "branchName": "Vodina Caddesi, Balat, Fener Kireçhane Sk. No:13/A, 34087 Fatih/İstanbul",
+      "placeId": "ChIJHYfN0gK6yhQRdbNODSVaZHg",
+      "coordinates": {
+        "lat": 41.0298333,
+        "lng": 28.9506215
+      },
+      "rating": 4.4,
+      "userRatingCount": 2648,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.fornobalat.com/",
+      "mapsUri": "https://maps.google.com/?cid=8675157897405969269",
+      "recommendedPrimary": [
+        "Mantarlı Taş Fırın Pizza",
+        "Dört Peynirli İnce Hamur Pizza",
+        "Taş Fırın Pide & Lahmacun"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Karamelli Kayısılı Sıcak Sufle & Fırınlanmış Sebze Tabağı",
+          "note": "Taş fırından çıkan pizzaların öncesinde sıcak sebze başlangıcı ve kapanışta karamelize kayısılı sufle eşliği.",
+          "proof": "fornobalat.com menüsü ve Balat gastronomi seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş fırın ısısını gören açık mutfaklı salon ve köşe sokak önü masaları",
+        "crowdAndNoise": "Hafta sonu Fener-Balat gezginleri ve akşam saatlerinde aile-arkadaş gruplarıyla hareketli",
+        "disadvantage": "Hafta sonu öğlen saatlerinde taş fırın önünde masa beklemek gerekebiliyor.",
+        "transit": "Vodina Caddesi Fener Kireçhane Sokak No:13/A köşesinde Fener sahil durağından beş dakikalık yürüyüşle."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Forno Balat",
+          "url": "https://maps.google.com/?cid=8675157897405969269",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Vodina Cd. Fener Kireçhane Sk. No:13/A konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Forno Balat Resmi Sitesi",
+          "url": "http://www.fornobalat.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Taş fırın pizza, pide, lahmacun ve fırınlanmış tatlı menüsü doğrulandı."
+        },
+        {
+          "title": "Oggusto — Fener & Balat Mekan Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Balat’ta taş fırın hamur işleri ve ince hamur pizzaları bir arada sunan yerleşik mutfak."
+        },
+        {
+          "title": "Balat Yerel Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İki bini aşan değerlendirmeyle taş fırın kıtırlığı ve tutarlı hamur kalitesiyle seviliyor."
+        }
+      ],
+      "pros": [
+        "Odun ateşinde pişen çıtır ince pizza ve geleneksel pide dengesi",
+        "Fener-Vodina aksının merkezi köşesinde kolay ulaşım"
+      ],
+      "cons": [
+        "Hafta sonu yoğun saatlerde gürültü ve masa bekleme süresi artabiliyor"
+      ],
+      "uncertainties": [
+        "Mevsimlik sebzeli pizza çeşitleri günlük tezgah hazırlığına göre değişebilir."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bal-db-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "DB Pizza & Makarna",
+      "branchName": "Balat, Ayan Cd. 90/A, 34440 Fatih/İstanbul",
+      "placeId": "ChIJp-4seL-7yhQRGcLwLz1dZ0M",
+      "coordinates": {
+        "lat": 41.0331213,
+        "lng": 28.9463743
+      },
+      "rating": 4.8,
+      "userRatingCount": 191,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4856953240521064985",
+      "recommendedPrimary": [
+        "Margherita Pizza",
+        "Füme Kaburgalı Pizza",
+        "Pesto Soslu Penne"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sarımsaklı Fırın Ekmek & Ev Yapımı Tiramisu",
+          "note": "Pizza öncesi sıcak zeytinyağlı sarımsaklı ekmek ve hafif mascarpone dokulu tiramisu eşlikçisi.",
+          "proof": "Balat sokak lezzetleri rehberleri ve işletme vitrini"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt, temiz iç dükkan masaları ve Ayan Caddesi önü birkaç açık masa",
+        "crowdAndNoise": "Kalabalık caddelerden uzaklaşıp temiz İtalyan pizzası ve makarnası arayan semt sakinleri",
+        "disadvantage": "Dükkan salonu küçük olduğundan kalabalık grup yemeklerine sınırlıdır.",
+        "transit": "Balat Ayan Caddesi No:90/A üzerinde Çıfıt Çarşısı ve Ayvansaray çarşı geçişinde."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — DB Pizza & Makarna",
+          "url": "https://maps.google.com/?cid=4856953240521064985",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Balat Ayan Cd. 90/A konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Tarihi Yarımada Sokak Mutfakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ayan Caddesi üzerinde dürüst malzeme oranıyla ev sıcaklığında pizza-makarna sunan mahalle dükkanı."
+        },
+        {
+          "title": "Balat Müdavim Değerlendirmeleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur tazeliği, güler yüzlü usta ilgisi ve yüksek puan ortalamasıyla öne çıkıyor."
+        }
+      ],
+      "pros": [
+        "Turistik kalabalıktan uzak samimi mahalle pizzacısı atmosferi",
+        "İnce hamur dengesi ve taze soslu makarna seçenekleri"
+      ],
+      "cons": [
+        "Sınırlı iç masa kapasitesi yoğun akşam saatlerinde çabuk dolabiliyor"
+      ],
+      "uncertainties": [
+        "Bazı füme etli çeşitler günlük malzeme stoğuna göre sınırlanabilir."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bal-patika-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "Balat Patika Kahvaltı ve Pizza Salonu",
+      "branchName": "Balat, 34087 Fatih/İstanbul",
+      "placeId": "ChIJMflZMh26yhQRFKlz8QYQnHE",
+      "coordinates": {
+        "lat": 41.02945950000001,
+        "lng": 28.950850900000002
+      },
+      "rating": 4.5,
+      "userRatingCount": 399,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8186435844659456276",
+      "recommendedPrimary": [
+        "Patika Special Pizza",
+        "Akdeniz Sebzeli Pizza",
+        "Dört Peynirli Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fesleğenli Domates Bruschetta & Ev Yapımı Limonata",
+          "note": "Fırın pizzaların yanına ferahlık veren nane dokunuşlu ev limonatası ve domatesli bruschetta eşliği.",
+          "proof": "Fener-Balat yerel rehberleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak mahalle lokali masaları ve Fener yokuşu kenarı sakin oturma alanı",
+        "crowdAndNoise": "Fener Rum Erkek Lisesi çevresini gezen çiftler ve mahalle aileleriyle rahat ortam",
+        "disadvantage": "Eğimli Fener yokuşu üzerinde konumlandığı için araçla kapı önüne park etmek zordur.",
+        "transit": "Balat Camcı Çeşmesi Yokuşu ve Yıldırım Caddesi bağlantısının alt aksında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Balat Patika Kahvaltı ve Pizza Salonu",
+          "url": "https://maps.google.com/?cid=8186435844659456276",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Balat Camcı Çeşmesi Ykş. konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Fener & Balat Sokak Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taş tabanlı pizzaları ve sıcak esnaf yaklaşımıyla Fener yokuşu altında öne çıkan mekan."
+        },
+        {
+          "title": "Fatih Yerel Topluluk Notları",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Doyurucu malzeme oranı ve temiz hamur pişirimiyle istikrarlı beğeni topluyor."
+        }
+      ],
+      "pros": [
+        "Taş fırında özenle pişen ince hamurlu çeşitler",
+        "Yüksek müzikten uzak, aile ve sohbet dostu sakin salon"
+      ],
+      "cons": [
+        "Yokuş konumu ve dar kaldırım nedeniyle dış masalar sınırlı"
+      ],
+      "uncertainties": [
+        "Hafta sonu öğle kahvaltı-pizza geçiş saatlerinde mutfak temposu yoğunlaşabilir."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bal-burgermoon",
+      "categoryId": "hamburger",
+      "resolvedName": "Burgermoon",
+      "branchName": "Balat, Düriye Sk. No:1, 34087 Fatih/İstanbul",
+      "placeId": "ChIJzz6UcwG7yhQR7dWyTjwbjxs",
+      "coordinates": {
+        "lat": 41.0330977,
+        "lng": 28.945732500000002
+      },
+      "rating": 4.9,
+      "userRatingCount": 1307,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1985835906526008813",
+      "recommendedPrimary": [
+        "Moon Burger",
+        "Dimple Burger",
+        "Karamelize Soğanlı Cheeseburger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Baharatlı Çıtır Patates Kızartması & Trüflü Ev Sosu",
+          "note": "Sipariş üzerine sıcak çıkan dışı kıtır patates kızartmaları ile burgerlerde imza oluşturan trüflü mayonez sosu.",
+          "proof": "Balat sokak gastronomisi seçkileri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Modern sokak köşesi mutfağı, yüksek bar tabureleri ve dar sokak önü masaları",
+        "crowdAndNoise": "Zincir dışı el yapımı gurme burger arayan gençler ve mahalle müdavimleri",
+        "disadvantage": "Dükkan alanı kompakt olduğundan yoğun akşam saatlerinde boş masa bulmak güçleşebiliyor.",
+        "transit": "Balat Düriye Sokak No:1 üzerinde Ayvansaray çarşı girişine birkaç adım mesafede."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Burgermoon",
+          "url": "https://maps.google.com/?cid=1985835906526008813",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Balat Düriye Sk. No:1 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Oggusto — Tarihi Yarımada Butik Burgerciler",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "El yapımı brioche ekmekleri ve karamelize soğanlı burger reçeteleriyle Balat’ta öne çıkan tekil adres."
+        },
+        {
+          "title": "İstanbul Burger Müdavimleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bini aşan konuğun değerlendirmesiyle köfte sululuğu ve sos dengesinde neredeyse tam puan koruyor."
+        }
+      ],
+      "pros": [
+        "Günlük taze ekmek ve sulu pişirilen dana et köftesi",
+        "Zincir dışı ev yapımı soslar ve baharatlı sıcak patatesler"
+      ],
+      "cons": [
+        "Küçük iç mekan kalabalık gruplara uygun değildir"
+      ],
+      "uncertainties": [
+        "Yoğun geç akşam servislerinde bazı özel soslu çeşitler erken tükenebilir."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bal-coffee-department",
+      "categoryId": "kahve",
+      "resolvedName": "Coffee Department",
+      "branchName": "Ayvansaray, Kürkçü Çeşmesi Sk. No:5, 34087 Fatih/İstanbul",
+      "placeId": "ChIJ6UdvjgS6yhQR1BfgC23KDEs",
+      "coordinates": {
+        "lat": 41.0328574,
+        "lng": 28.9457956
+      },
+      "rating": 4.7,
+      "userRatingCount": 678,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://coffeedepartment.co/",
+      "mapsUri": "https://maps.google.com/?cid=5407919822264604628",
+      "recommendedPrimary": [
+        "V60 Tek Çiftlik Demleme",
+        "Double Espresso",
+        "Cold Brew"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Kavrulmuş Çekirdek Seçkisi & Yulaflı Kurabiye",
+          "note": "Bar kenarında fincan kahveye eşlik eden yulaflı fırın kurabiyesi ve eve alınabilen taze kavrum paket çekirdekler.",
+          "proof": "coffeedepartment.co kavrum rehberi ve İstanbul kahve seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi Balat evleri arasındaki sessiz köşe sokak masaları ve kavrumhane kokulu küçük iç bar",
+        "crowdAndNoise": "Gerçek üçüncü dalga demleme arayan kahve meraklıları ve mahalle yerlileri",
+        "disadvantage": "Kahve saflığına odaklanan ufak bir kavrum dükkanıdır; kalabalık masa çalışma alanı beklemeden gidilmelidir.",
+        "transit": "Ayvansaray Kürkçü Çeşmesi Sokak No:5 üzerinde Balat sahil parkının arka sokağında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Coffee Department",
+          "url": "https://maps.google.com/?cid=5407919822264604628",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Ayvansaray Kürkçü Çeşmesi Sk. No:5 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Coffee Department Resmi Sitesi",
+          "url": "http://coffeedepartment.co/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Mikro lot tek çiftlik kavrum profilleri ve demleme rehberi doğrulandı."
+        },
+        {
+          "title": "Oggusto — İstanbul Nitelikli Kahve Kavurmacıları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Balat’ta kavurmacılık kültürünü başlatan öncü adreslerden biri olarak öne çıkıyor."
+        },
+        {
+          "title": "İstanbul Kahve Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Demleme tutarlılığı ve çekirdek kalitesiyle yıllardır değişmeyen yüksek memnuniyet alıyor."
+        }
+      ],
+      "pros": [
+        "Türkiye’nin köklü mikro kavurmacılarından yüksek çekirdek kalibrasyonu",
+        "Fotoğraf turizmi kalabalığından uzakta gerçek kahve atmosferi"
+      ],
+      "cons": [
+        "Oturma alanı küçük ve mutfak menüsü yalnızca hafif kurabiye-tatlı odaklı"
+      ],
+      "uncertainties": [
+        "Mevsimsel hasat çekirdekleri ay bazında menüden değişir."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bal-arc-co",
+      "categoryId": "kahve",
+      "resolvedName": "Arc Co Coffee Roastery",
+      "branchName": "Balat, Yarım Balat Sk. No:8/A, 34087 Fatih/İstanbul",
+      "placeId": "ChIJw8I57KW3yhQRDRfBG71ZejI",
+      "coordinates": {
+        "lat": 41.0329359,
+        "lng": 28.946626400000003
+      },
+      "rating": 5,
+      "userRatingCount": 950,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://arccoffee.co/",
+      "mapsUri": "https://maps.google.com/?cid=3637318317804427021",
+      "recommendedPrimary": [
+        "Etiyopya Pour Over",
+        "Cortado",
+        "Flat White"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Japanese Iced Coffee & Şekersiz Hurmalı Top",
+          "note": "Yaz-kış tercih edilen soğuk demleme tekniği ve kahvenin meyvemsi asiditesini bastırmayan şekersiz enerji topu.",
+          "proof": "arccoffee.co kavrum menüsü ve Balat nitelikli kafe seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Yalın tasarım çizgili ferah bar alanı ve sakin ara sokak masaları",
+        "crowdAndNoise": "Nitelikli çekirdek profili ve barista diyaloğu arayan kahveseverler",
+        "disadvantage": "Gürültüsüz, kahve tadımı merkezli sakin bir dükkandır.",
+        "transit": "Balat Yarım Balat Sokak No:8/A üzerinde Vodina Caddesi ile Haliç kıyısı arasında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Arc Co Coffee Roastery",
+          "url": "https://maps.google.com/?cid=3637318317804427021",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Balat Yarım Balat Sk. No:8/A konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Arc Co Coffee Roastery Resmi Sitesi",
+          "url": "http://arccoffee.co/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Kendi kavrum tek köken çekirdekler ve SCA demleme standartları doğrulandı."
+        },
+        {
+          "title": "Oggusto — Tarihi Yarımada Kahve Durakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yarım Balat Sokak içinde berrak filtre demlemeleriyle öne çıkan yeni nesil kavurmacı."
+        },
+        {
+          "title": "Balat Kahve Müdavimleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Dokuz yüzü aşkın konuğun değerlendirmesiyle olağanüstü istikrar ve tam puan seviyesi yakalamış durumda."
+        }
+      ],
+      "pros": [
+        "Özenli kavrum profilleri ve berrak pour-over ekstraksiyonu",
+        "Kalabalık fotoğraf sokaklarından sıyrılan sakin konum"
+      ],
+      "cons": [
+        "Ağır tatlı veya kahvaltı tabağı arayanlara değil saf kahveye odaklıdır"
+      ],
+      "uncertainties": [
+        "Mikro lot çekirdek stokları kavrum takvimine göre yenilenir."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bal-rota-balat",
+      "categoryId": "kahve",
+      "resolvedName": "Rota Balat Coffee",
+      "branchName": "Balat, Camcı Çeşmesi Ykş. 43/2, 34087 Fatih/İstanbul",
+      "placeId": "ChIJccFLTr27yhQRmY0rz7n94GY",
+      "coordinates": {
+        "lat": 41.0298872,
+        "lng": 28.9509401
+      },
+      "rating": 4.7,
+      "userRatingCount": 317,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://instagram.com/rotabalat?igshid=YmMyMTA2M2Y=",
+      "mapsUri": "https://maps.google.com/?cid=7413203961138351513",
+      "recommendedPrimary": [
+        "Filtre Kahve",
+        "Yaban Mersinli Ice Latte",
+        "Cappuccino"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarçınlı Elmalı Tart & Demleme Bitki Çayı",
+          "note": "Tarihi ahşap döşemeli üst kat masalarında kahveye eşlik eden taze elmalı tart ve bitki çayı seçenekleri.",
+          "proof": "Fener-Balat konsept kafeler rehberi ve işletme duyuruları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi taş binanın farklı ruhlara sahip dört ayrı katı ve cam kenarı masalar",
+        "crowdAndNoise": "Fener Rum Lisesi yokuşunu gezdikten sonra soluklanan kahve tutkunları ve sessiz katları sevenler",
+        "disadvantage": "Dik tarihi ahşap merdivenli dört katlı yapıda üst katlara yürümek hareket kısıtı olanlara zor gelebilir.",
+        "transit": "Balat Camcı Çeşmesi Yokuşu No:43/2 üzerinde Kırmızı Mektep’ten Vodina’ya inerken."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Rota Balat Coffee",
+          "url": "https://maps.google.com/?cid=7413203961138351513",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Balat Camcı Çeşmesi Ykş. 43/2 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Exploreİstanbul — Tarihi Yapılardaki Balat Kafeleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Asırlık taş bina dokusunu nitelikli kahve servisiyle koruyan dört katlı özel mekan."
+        },
+        {
+          "title": "Fener & Balat Gezgin Notları",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Katların huzurlu atmosferi ve dengeli soğuk kahve lezzetleriyle yüksek puan topluyor."
+        }
+      ],
+      "pros": [
+        "130 yıllık tarihi sivil mimari içinde dört katlı ferah mekan",
+        "Sakin üst kat oturma köşeleri ve özenli barista servisi"
+      ],
+      "cons": [
+        "Eğimli yokuş ve tarihi merdivenler sebebiyle erişilebilirlik sınırlıdır"
+      ],
+      "uncertainties": [
+        "Mevsimlik soğuk aromalı latte çeşitleri yaz-kış menüsüne göre güncellenir."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bal-rincon-roastery",
+      "categoryId": "kahve",
+      "resolvedName": "Rincon Coffee Roastery",
+      "branchName": "Rincon Coffee, Balat, Vodina Cd. No:101/A, 34093 Fatih/İstanbul",
+      "placeId": "ChIJkyJx-7K7yhQRFobOZRhg3cY",
+      "coordinates": {
+        "lat": 41.0323334,
+        "lng": 28.947172799999997
+      },
+      "rating": 4.6,
+      "userRatingCount": 383,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.rinconcoffee.net/",
+      "mapsUri": "https://maps.google.com/?cid=14329715247266301462",
+      "recommendedPrimary": [
+        "Yerinde Kavrulmuş Filtre Kahve",
+        "Americano",
+        "Iced Flat White"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bademli Biscotti & Soğuk Hibiskus Demlemesi",
+          "note": "Kahve yanında hafif kıtır bademli biscotti ve ferahlatıcı şekersiz soğuk hibiskus çayı.",
+          "proof": "rinconcoffee.net kavrum bilgisi ve Balat kahve seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Vodina köşesi yüksek tavanlı kavurmacı barı ve dış sokak bankları",
+        "crowdAndNoise": "Vodina yürüyüşü sırasında hızlı ve kaliteli espresso arayan semt sakinleri ve gezginler",
+        "disadvantage": "Hafta sonu Vodina Caddesi yoğunluğunda dış cephe kalabalık olabiliyor.",
+        "transit": "Balat Vodina Caddesi No:101/A köşesinde Ayan Caddesi kesişimi yakınında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Rincon Coffee Roastery",
+          "url": "https://maps.google.com/?cid=14329715247266301462",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Balat Vodina Cd. No:101/A konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Rincon Coffee Resmi Sitesi",
+          "url": "http://www.rinconcoffee.net/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Yerinde kahve kavrumu ve çekirdek menüsü doğrulandı."
+        },
+        {
+          "title": "Oggusto — Vodina Caddesi Kahve Durakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Vodina hattında kendi kavurduğu taze çekirdeklerle temiz kahve sunan köşe barı."
+        },
+        {
+          "title": "Balat Kahve Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kavrum tazeliği ve sıcak barista ilgisiyle düzenli beğeni alıyor."
+        }
+      ],
+      "pros": [
+        "Yerinde taze kavrulan dengeli espresso harmanları",
+        "Merkezi Vodina köşesinde pratik kahve molası"
+      ],
+      "cons": [
+        "Dükkan içi oturma alanı büyük masalı çalışma için küçüktür"
+      ],
+      "uncertainties": [
+        "Haftalık kavrum serilerine göre filtre kahve çekirdeği değişebilir."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bal-primi",
+      "categoryId": "date",
+      "resolvedName": "Primi Balat",
+      "branchName": "Yavuz Sultan Selim, Yıldırım Cd. No:23 D:23, 34807 Fatih/İstanbul",
+      "placeId": "ChIJeYb1O3S7yhQR_iILlxSrmko",
+      "coordinates": {
+        "lat": 41.0299294,
+        "lng": 28.951121899999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 1336,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.primibalat.com/",
+      "mapsUri": "https://maps.google.com/?cid=5375797210141893374",
+      "recommendedPrimary": [
+        "Ricotta ve Ispanak Dolgulu Casoncelli",
+        "Cenova Pestolu El Yapımı Fettuccine",
+        "Sicilya Usulü Patlıcanlı Rigatoni"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Burrata Başlangıç Tabağı & Klasik Tiramisu",
+          "note": "Paylaşılan taze domatesli burrata tabağı ve masada özenle sunulan klasik İtalyan tiramisu.",
+          "proof": "primibalat.com resmi menüsü ve İstanbul İtalyan mutfağı rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş ve tuğla dokulu sıcak İtalyan salonu ve arka bahçe-sokağa açılan masalar",
+        "crowdAndNoise": "Baş başa akşam yemeği arayan çiftler ve rafine İtalyan mutfağı meraklıları",
+        "disadvantage": "Küçük trattoria salonu özellikle akşam saatlerinde hızla dolduğundan rezervasyon şarttır.",
+        "transit": "Yavuz Sultan Selim Yıldırım Caddesi No:23 üzerinde Fener Meydanı ile Balat kavşağının arasında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Primi Restaurant Balat",
+          "url": "https://maps.google.com/?cid=5375797210141893374",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yavuz Sultan Selim Yıldırım Cd. No:23 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Primi Balat Resmi Sitesi",
+          "url": "https://www.primibalat.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Günlük el yapımı taze makarna reçeteleri ve rezervasyon düzeni doğrulandı."
+        },
+        {
+          "title": "Oggusto — İstanbul En Özgün İtalyan Trattoriaları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Balat dokusu içinde gerçek İtalyan el yapımı makarna zanaatını temsil eden rafine mekan."
+        },
+        {
+          "title": "İstanbul Gastronomi Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Makarna dokusu, sos dengesi ve şık akşam atmosferiyle bini aşan yüksek değerlendirme alıyor."
+        }
+      ],
+      "pros": [
+        "Günlük elde açılan gerçek İtalyan dolgulu ve kesme makarnalar",
+        "Romantik ve zarif akşam yemeği ambiyansı"
+      ],
+      "cons": [
+        "Akşam ve hafta sonu servislerinde rezervasyonsuz masa bulmak güçtür"
+      ],
+      "uncertainties": [
+        "Mevsimsel sos ve dolgulu makarna çeşitleri haftalık değişebilir."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bal-evelik",
+      "categoryId": "date",
+      "resolvedName": "Evelik Restaurant",
+      "branchName": "Yavuz Sultan Selim, Dr. Sadık Ahmet Cd. No:15, 34083 Fatih/İstanbul",
+      "placeId": "ChIJWYkyYm65yhQRguxJr_vfh4I",
+      "coordinates": {
+        "lat": 41.028365099999995,
+        "lng": 28.9531393
+      },
+      "rating": 4.7,
+      "userRatingCount": 313,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://qr.finedinemenu.com/evelik-restaurant/reservation",
+      "mapsUri": "https://maps.google.com/?cid=9405732618857213058",
+      "recommendedPrimary": [
+        "Baklava Yufkasında Levrek",
+        "Kuru Patlıcanlı Izgara Ahtapot",
+        "Evelik Çorbası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli Köz Patlıcan Mütebbel & Tulum Peynirli Fırın Pancar",
+          "note": "Akşam terasında ana yemek öncesi paylaşılan yöresel soğuk mezeler ve füme pancar başlangıcı.",
+          "proof": "Evelik dijital menüsü ve İstanbul şef restoranları seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Haliç kıyısını yukarıdan gören ferah akşam terası ve modern dekorlu iç salon",
+        "crowdAndNoise": "Özel akşam kutlamaları, gün batımı randevuları ve rafine Anadolu mutfağı sevenler",
+        "disadvantage": "Giriş üst kata çıktığı için manzaralı teras masaları adına önceden rezervasyon yaptırmak faydalıdır.",
+        "transit": "Yavuz Sultan Selim Dr. Sadık Ahmet Caddesi No:15 üzerinde Fener tramvay durağına yakın yamaçta."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Evelik Restaurant",
+          "url": "https://maps.google.com/?cid=9405732618857213058",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yavuz Sultan Selim Dr. Sadık Ahmet Cd. No:15 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Evelik Restaurant Resmi Menüsü",
+          "url": "https://qr.finedinemenu.com/evelik-restaurant/reservation",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Baklava yufkasında levrek, evelik çorbası ve Haliç teras düzeni doğrulandı."
+        },
+        {
+          "title": "Oggusto — Haliç Manzaralı Şef Sofraları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Anadolu otlarını ve geleneksel reçeteleri Haliç manzaralı modern sunumla buluşturan şef restoranı."
+        },
+        {
+          "title": "İstanbul Gastronomi Müdavimleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Terasta gün batımı manzarası ve yaratıcı meze-balık tabaklarıyla yüksek beğeni alıyor."
+        }
+      ],
+      "pros": [
+        "Haliç’e hakim akşam terası ve huzurlu aydınlatma",
+        "Yöresel Anadolu ürünlerini modern teknikle işleyen özgün şef menüsü"
+      ],
+      "cons": [
+        "Teras kenarı manzara masaları gün batımı saatlerinde hızla doluyor"
+      ],
+      "uncertainties": [
+        "Mevsim otlarına ve balık avına göre günlük teras tabakları çeşitlenir."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bal-ballad",
+      "categoryId": "date",
+      "resolvedName": "Ballad Restaurant",
+      "branchName": "Yavuz Sultan Selim, Camcı Çeşmesi Ykş. No:68, 34083 Fatih/İstanbul",
+      "placeId": "ChIJL0SDYsW7yhQRKaU4ROqRx_M",
+      "coordinates": {
+        "lat": 41.02977,
+        "lng": 28.950883099999995
+      },
+      "rating": 4.6,
+      "userRatingCount": 688,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17566169306934846761",
+      "recommendedPrimary": [
+        "Izgara Sebzeli Akdeniz Tabağı",
+        "Çıtır Kabak Mücveri",
+        "İnce Hamur Taş Fırın Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Trüf Yağlı Patates Kızartması & Sıcak Ev Yapımı Brownie",
+          "note": "Akşam sohbetine eşlik eden sıcak atıştırmalık ve kakaolu yoğun brownie kapanışı.",
+          "proof": "Fener-Balat akşam bistrosu seçkileri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi taş dokulu şirin iç avlu ve mum ışıklı akşam masaları",
+        "crowdAndNoise": "Fener sırtlarının gürültüden uzak samimi akşam bistrosu arayan çiftler",
+        "disadvantage": "Yokuş sokak üzerinde olduğundan taksi veya yürüyüşle çıkmak daha rahattır.",
+        "transit": "Yavuz Sultan Selim Camcı Çeşmesi Yokuşu No:68 üzerinde Kırmızı Mektep’e komşu aks üzerinde."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Ballad Restaurant",
+          "url": "https://maps.google.com/?cid=17566169306934846761",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Camcı Çeşmesi Ykş. No:68 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Exploreİstanbul — Fener Sırtları Gizli Bistroları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taş dokulu iç avlusunda özenli Akdeniz mezeleri ve bistro tabakları sunan sakin durak."
+        },
+        {
+          "title": "Balat Akşam Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Avlu atmosferi, müziği ve kibar ilgisiyle akşam buluşmalarında yüksek puan alıyor."
+        }
+      ],
+      "pros": [
+        "Taş duvarlı sıcak avlu ve dengeli akşam müziği",
+        "Paylaşımlı Akdeniz başlangıçları ve güler yüzlü servis"
+      ],
+      "cons": [
+        "Kalabalık gruplar için avlu masaları önceden planlanmalıdır"
+      ],
+      "uncertainties": [
+        "Sezon içi meze ve sebze garnitürleri haftalık yenilenebilir."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bal-barba-vasilis",
+      "categoryId": "date",
+      "resolvedName": "Barba Vasilis Restoran",
+      "branchName": "Yavuz Sultan Selim, Abdülezelpaşa Cd. no:97, 34083 Fatih/İstanbul",
+      "placeId": "ChIJG618_fe5yhQR5hGp23ghSnI",
+      "coordinates": {
+        "lat": 41.028618200000004,
+        "lng": 28.952964800000004
+      },
+      "rating": 4.5,
+      "userRatingCount": 1355,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://barbavasilis.com/",
+      "mapsUri": "https://maps.google.com/?cid=8235431671565455846",
+      "recommendedPrimary": [
+        "Izgara Ahtapot",
+        "Deniz Mahsullü Ara Sıcaklar",
+        "Geleneksel Rum Mezeleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Girit Ezmesi & Fırında Tahinli Helva",
+          "note": "Rakı-meze masalarının olmazsa olmazı fesleğenli Girit ezmesi ve gecenin sonunda sıcak tahinli helva.",
+          "proof": "barbavasilis.com menüsü ve İstanbul Rum tavernaları rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Mavi-beyaz Rum meyhanesi dokulu yüksek tavanlı iç salon ve cadde kenarı düzen",
+        "crowdAndNoise": "Uzun akşam sofrası, fasıl-taverna ruhu ve taze deniz mezeleri arayan yetişkin masalar",
+        "disadvantage": "Hafta sonu canlı müzikli akşam saatlerinde gürültü düzeyi yükselebildiği için sessiz sohbet arayanlar erken saatleri seçebilir.",
+        "transit": "Yavuz Sultan Selim Abdülezelpaşa Caddesi No:97 üzerinde Fener tramvay durağının hemen karşısında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Barba Vasilis Restoran",
+          "url": "https://maps.google.com/?cid=8235431671565455846",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yavuz Sultan Selim Abdülezelpaşa Cd. No:97 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Barba Vasilis Resmi Sitesi",
+          "url": "http://barbavasilis.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Rum taverna mutfağı, deniz mezeleri ve akşam etkinlik programı doğrulandı."
+        },
+        {
+          "title": "Oggusto — İstanbul Rum Tavernaları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Fener sahil aksında eski İstanbul Rum mutfağı mezelerini canlı meyhane kültürüyle sürdüren durak."
+        },
+        {
+          "title": "İstanbul Meyhane Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Meze lezzeti, sıcak servisi ve nostaljik atmosferiyle binlerce konuktan yüksek beğeni topluyor."
+        }
+      ],
+      "pros": [
+        "Otantik İstanbul Rum mutfağı soğuk mezeleri ve ızgara ahtapot",
+        "T5 Fener durağının karşısında çok kolay sahil ulaşımı"
+      ],
+      "cons": [
+        "Canlı müzik programının olduğu akşamlar sessiz masa arayanlara sesli gelebilir"
+      ],
+      "uncertainties": [
+        "Haftanın canlı müzik takvimi ve taze deniz ürünü çeşitleri döneme göre değişir."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bal-maison-balat",
+      "categoryId": "kahvalti",
+      "resolvedName": "Maison Balat",
+      "branchName": "Balat, Vodina Cd. No:50, 34087 Fatih/İstanbul",
+      "placeId": "ChIJn1EmJAO6yhQRfLhqdBfARnA",
+      "coordinates": {
+        "lat": 41.03083,
+        "lng": 28.949569500000003
+      },
+      "rating": 4.8,
+      "userRatingCount": 580,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.instagram.com/maisonbalat",
+      "mapsUri": "https://maps.google.com/?cid=8090364987587606652",
+      "recommendedPrimary": [
+        "Antika Sunumlu Kahvaltı Tabağı",
+        "Baharatlı Havuçlu Tarçınlı Kek",
+        "Otlu Köy Yumurtalı Omlet"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Demleme Siyah Çay & Ev Yapımı Elmalı Turta",
+          "note": "Porselen demlikte gelen siyah çay ve tarçınlı ev yapımı elmalı turta eşlikçisi.",
+          "proof": "Balat nostaljik kahvaltı durakları rehberi ve işletme duyuruları"
+        }
+      ],
+      "suitability": {
+        "seating": "Antika dolap ve avizelerle döşeli sıcak iç oda ve Vodina Caddesi pencere kenarı",
+        "crowdAndNoise": "Balat’ın vintage estetiğini gerçek bir sabah kahvaltısıyla yaşamak isteyen konuklar",
+        "disadvantage": "İç mekan kompakt ve hafta sonu sabahları talep yüksek olduğundan erken saatler daha sakindir.",
+        "transit": "Balat Vodina Caddesi No:50 üzerinde Çorba Çeşme ve Fener-Balat çarşı geçişinde."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Maison Balat",
+          "url": "https://maps.google.com/?cid=8090364987587606652",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Balat Vodina Cd. No:50 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Oggusto — Balat Vintage Kafeleri ve Kahvaltı Durakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Fransız-İstanbul vintage sunumlarını ev yapımı kekler ve kahvaltı tabağıyla birleştiren öncü mekan."
+        },
+        {
+          "title": "Balat Sabah Müdavimleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Antika atmosferin yanında hamur işleri ve sıcak çayıyla yüksek memnuniyet koruyor."
+        }
+      ],
+      "pros": [
+        "Her parçasında emeği hissedilen antika dekor ve özenli sunum",
+        "Taze ev yapımı tarçınlı kek ve yumurtalı sabah tabakları"
+      ],
+      "cons": [
+        "Turistik hafta sonu kalabalığında dışarıda kısa bekleme oluşabiliyor"
+      ],
+      "uncertainties": [
+        "Günlük fırınlanan kek ve tart çeşitleri tezgaha göre yenilenir."
+      ],
+      "selectionScore": 96,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bal-faro-caffe",
+      "categoryId": "kahvalti",
+      "resolvedName": "Faro Caffe & Patisserie",
+      "branchName": "Yıldırım cad. Balat mah. No:12 Fener, Balat, 34087 Fatih/İstanbul",
+      "placeId": "ChIJyXrBEwW7yhQRNM4jQeThFzQ",
+      "coordinates": {
+        "lat": 41.0299456,
+        "lng": 28.9514228
+      },
+      "rating": 4.8,
+      "userRatingCount": 1720,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://farocaffebalat.com/",
+      "mapsUri": "https://maps.google.com/?cid=3753717184898256436",
+      "recommendedPrimary": [
+        "Tereyağlı Kruvasan Kahvaltı",
+        "Poşe Yumurtalı Avokado Tabağı",
+        "Ege Peynirli Serpme Kahvaltılıklar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Meyveli Ekşi Maya Tart & Taze Demleme Çay",
+          "note": "Sabah kahvaltısı sonrası paylaşılan meyveli ekşi maya tart ve demleme Türk çayı.",
+          "proof": "farocaffebalat.com menüsü ve Balat patisserie rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ferah cadde cepheli patisserie salonu ve Yıldırım Caddesi kenarı masalar",
+        "crowdAndNoise": "Hem klasik kahvaltı tabağı hem Fransız kruvasan arayan sabah grupları ve aileler",
+        "disadvantage": "Hafta sonları Yıldırım Caddesi yoğun yaya trafiği sebebiyle ön sıra masaları kalabalıklaşabilir.",
+        "transit": "Balat Yıldırım Caddesi No:12 üzerinde Fener meydanından Balat merkezine girişte."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Faro Caffe & Patisserie",
+          "url": "https://maps.google.com/?cid=3753717184898256436",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Balat Yıldırım Cd. No:12 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Faro Caffe Balat Resmi Sitesi",
+          "url": "http://farocaffebalat.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Kruvasan kahvaltı çeşitleri, serpme kahvaltılıklar ve patisserie vitrini doğrulandı."
+        },
+        {
+          "title": "Oggusto — Balat Kahvaltı ve Fırın Seçkisi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taze kruvasanları ve ferah sabah kahvaltı tabaklarıyla Fener-Balat sınırında öne çıkan adres."
+        },
+        {
+          "title": "İstanbul Kahvaltı Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bin yedi yüzü aşan değerlendirmede hızlı servis ve pastane tazeliğiyle övülüyor."
+        }
+      ],
+      "pros": [
+        "Taze pişmiş tereyağlı kruvasan ve poşe yumurtalı tabaklar",
+        "Geniş ve düzenli salon kapasitesi"
+      ],
+      "cons": [
+        "Hafta sonu öğlen brunch saatlerinde masa sirkülasyonu yoğun olabiliyor"
+      ],
+      "uncertainties": [
+        "Mevsimsel patisserie tart çeşitleri günlük mutfak üretimine göre değişir."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bal-kahvalti-evi",
+      "categoryId": "kahvalti",
+      "resolvedName": "Balat Kahvaltı Evi",
+      "branchName": "Balat, Ayan Cd. No:43/A, 34087 Fatih/İstanbul",
+      "placeId": "ChIJrXohX4u7yhQRKkGGEnCbEh0",
+      "coordinates": {
+        "lat": 41.0323578,
+        "lng": 28.9456624
+      },
+      "rating": 4.8,
+      "userRatingCount": 324,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.balatkahvaltievi.com/",
+      "mapsUri": "https://maps.google.com/?cid=2094907682330132778",
+      "recommendedPrimary": [
+        "Yöresel Peynirli Kahvaltı Sofrası",
+        "Bakır Sahanda Menemen",
+        "Tereyağlı Karadeniz Muhlaması"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Pişi & Ev Yapımı Reçel Çeşitleri",
+          "note": "Kızgın yağdan yeni çıkmış yağ çekmeyen pişi halkaları ve vişne-kayısı ev reçelleri.",
+          "proof": "balatkahvaltievi.com menüsü ve Fatih sabah durakları seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Aile işletmesi sıcaklığında iç salon ve mahalle sokağı masaları",
+        "crowdAndNoise": "Süslü dekor yerine geleneksel Karadeniz-Anadolu kahvaltısı lezzetine odaklı aileler",
+        "disadvantage": "Geleneksel serpme kahvaltı ağırlıklı olduğu için tek kişilik hızlı kruvasan kahvesi arayanlara büyük kalır.",
+        "transit": "Balat Ayan Caddesi No:43/A üzerinde Vodina ve Ayvansaray çarşı paraleli boyunca."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Balat Kahvaltı Evi",
+          "url": "https://maps.google.com/?cid=2094907682330132778",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Balat Ayan Cd. No:43/A konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Balat Kahvaltı Evi Resmi Sitesi",
+          "url": "http://www.balatkahvaltievi.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Muhlama, bakır sahanda menemen ve yöresel kahvaltı menüsü doğrulandı."
+        },
+        {
+          "title": "Tarihi Yarımada Yerel Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ayan Caddesi’nin mahalle dokusunda sıcak pişi ve muhlama geleneğini koruyan samimi ev."
+        },
+        {
+          "title": "Balat Yerel Ziyaretçileri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Peynir tazeliği, muhlama kıvamı ve aile misafirperverliğiyle yüksek puan koruyor."
+        }
+      ],
+      "pros": [
+        "Gerçek Trabzon tereyağlı muhlama ve yağ çekmeyen sıcak pişi",
+        "Turistik kalabalık yerine mahalle kahvaltıcısı samimiyeti"
+      ],
+      "cons": [
+        "Küçük dükkan düzeni hafta sonu kalabalık gruplarda rezervasyon gerektiriyor"
+      ],
+      "uncertainties": [
+        "Yöresel peynir ve reçel tezgahı mevsim hasadına göre güncellenebilir."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bal-tarihi-tas-firin",
+      "categoryId": "kahvalti",
+      "resolvedName": "Tarihi Taş Fırın Evin Unlu Mamulleri",
+      "branchName": "Balat, Vodina Cd. 82/A, 34087 Fatih/İstanbul",
+      "placeId": "ChIJRRWbPQO6yhQR68n2nXG1zgk",
+      "coordinates": {
+        "lat": 41.031281500000006,
+        "lng": 28.948877699999997
+      },
+      "rating": 4.5,
+      "userRatingCount": 745,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=706701691129874923",
+      "recommendedPrimary": [
+        "Odun Ateşi Taş Fırın Susamlı Galeta",
+        "Taş Fırın Çıtır Simit",
+        "Cevizli Kuru Poğaça"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli Çörek & Tuzlu Halka Kurabiye",
+          "note": "Sabah fırın tezgahından sıcak alınan tahinli çörek ve çay saati için dayanıklı tuzlu halka kurabiye.",
+          "proof": "İstanbul tarihi semt fırınları seçkisi ve Vodina esnaf arşivi"
+        }
+      ],
+      "suitability": {
+        "seating": "Gel-al / al-götür ve ayakta fırın tezgahı düzeni (oturma masası yoktur)",
+        "crowdAndNoise": "Sabahın erken saatlerinden itibaren taze galeta ve sıcak simit sırasına giren Balat sakinleri",
+        "disadvantage": "Yalnızca al-götür / ayakta satış yapan tarihi esnaf fırınıdır; masalı kafe oturumu sunulmaz.",
+        "transit": "Balat Vodina Caddesi No:82/A üzerinde Balat Merkez çarşı aksının kalbinde."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Tarihi Taş Fırın Evin Unlu Mamulleri",
+          "url": "https://maps.google.com/?cid=706701691129874923",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Balat Vodina Cd. 82/A konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Oggusto — İstanbul Asırlık Taş Fırınları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Vodina Caddesi üzerinde odun ateşli taş fırında kıtır galeta ve geleneksel simit çıkaran tarihi miras."
+        },
+        {
+          "title": "Balat Semt Hafızası Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Galetasının çıtırlığı ve bozulmayan fırın kokusuyla kuşaklar boyu müdavimlerini koruyor."
+        }
+      ],
+      "pros": [
+        "Odun alevli gerçek taş fırından çıkan katkısız galeta ve simit",
+        "Balat’ın yüzyıllık yaşayan esnaf fırın geleneği"
+      ],
+      "cons": [
+        "Oturma salonu yoktur; fırından alıp yürüyerek veya evde tüketilir"
+      ],
+      "uncertainties": [
+        "Sıcak simit ve çörek tavalarının çıkış zamanı gün içi fırın ısısına bağlıdır."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bal-agora-1890",
+      "categoryId": "denemelisin",
+      "resolvedName": "Agora Meyhanesi 1890",
+      "branchName": "Balat, Mürselpaşa Cd. no:185, 34087 Fatih/İstanbul",
+      "placeId": "ChIJbXPVfgS6yhQRAAOBCHefNbY",
+      "coordinates": {
+        "lat": 41.0335803,
+        "lng": 28.9468056
+      },
+      "rating": 4.4,
+      "userRatingCount": 1611,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://agora1890.com/",
+      "mapsUri": "https://maps.google.com/?cid=13129575622261146368",
+      "recommendedPrimary": [
+        "Tarçınlı Geleneksel Topik",
+        "Ermeni Pilakisi",
+        "Torik Lakerda"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tereyağlı Yaprak Ciğer & Geleneksel İrmik Helvası",
+          "note": "Soğuk İstanbul meze tepsisinin ardından sıcak yaprak ciğer ve fıstıklı irmik helvası kapanışı.",
+          "proof": "agora1890.com tarihçesi ve İstanbul tarihi meyhaneler seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi taş duvarlı yüksek tavanlı iç mekan ve çınar gölgeli avlu bahçesi",
+        "crowdAndNoise": "Eski İstanbul meyhane kültürünü ve edebi hafızasını yerinde yaşamak isteyen sofra dostları",
+        "disadvantage": "Ünlü tarihi kurum olduğundan özellikle akşamları rezervasyonsuz gitmek risklidir ve turistik ilgi yüksektir.",
+        "transit": "Balat Mürselpaşa Caddesi No:185 üzerinde Haliç sahil yürüyüş yolunun hemen arkasında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Agora Meyhanesi 1890",
+          "url": "https://maps.google.com/?cid=13129575622261146368",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Balat Mürselpaşa Cd. No:185 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Agora Meyhanesi 1890 Resmi Sitesi",
+          "url": "http://agora1890.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "1890 kuruluş tarihçesi, geleneksel meze listesi ve rezervasyon bilgisi doğrulandı."
+        },
+        {
+          "title": "Oggusto — İstanbul Asırlık Meyhaneleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Şarkılara konu olan avlu atmosferi ve topik-lakerda geleneğiyle İstanbul mirası."
+        },
+        {
+          "title": "İstanbul Tarih & Sofra Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tarihi dokusu, topik ve Ermeni pilakisi reçeteleriyle binlerce ziyaretçinin hafızasında yer alıyor."
+        }
+      ],
+      "pros": [
+        "1890 yılından bugüne taşınan otantik İstanbul meyhane atmosferi",
+        "Nadir bulunan geleneksel topik, pilaki ve lakerda meze geleneği"
+      ],
+      "cons": [
+        "Popüler akşam saatlerinde gürültü ve servis yoğunluğu artabiliyor"
+      ],
+      "uncertainties": [
+        "Mevsimlik lakerda ve sıcak balık çeşitleri günlük av durumuna göre sunulur."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bal-merkez-sekercisi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Balat Merkez Şekercisi",
+      "branchName": "Ayvansaray, Leblebiciler Sk. No:33, 34087 Fatih/İstanbul",
+      "placeId": "ChIJp2bzcQS6yhQRsgZSIiGOuDQ",
+      "coordinates": {
+        "lat": 41.0341698,
+        "lng": 28.9464345
+      },
+      "rating": 4.9,
+      "userRatingCount": 411,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.merkezsekercisi.com/",
+      "mapsUri": "https://maps.google.com/?cid=3798942558647879346",
+      "recommendedPrimary": [
+        "Bakır Kazanda Tarçınlı Akide Şekeri",
+        "Bergamotlu Akide Şekeri",
+        "Fıstıklı Çifte Kavrulmuş Lokum"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sakızlı Akide Şekeri & Geleneksel Lohusa Şekeri",
+          "note": "Kavun içi ve sakız aromalı geleneksel akideler ile karanfil baharatlı lohusa şekeri seçkisi.",
+          "proof": "merkezsekercisi.com arşiv kayıtları ve İstanbul tarihi esnaflar seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Gel-al / al-götür ve ayakta tadım odaklı tarihi şekerci tezgahı (oturma alanı yoktur)",
+        "crowdAndNoise": "Nesillerdir bayram ve günlük şeker alışverişi yapan İstanbullular ile meraklı gezginler",
+        "disadvantage": "Yalnızca tezgah üzerinden paket al-götür / ayakta satış yapılır; kafe oturma düzeni yoktur.",
+        "transit": "Ayvansaray Leblebiciler Sokak No:33 üzerinde tarihi Çıfıt Çarşısı merkezinde."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Balat Merkez Şekercisi",
+          "url": "https://maps.google.com/?cid=3798942558647879346",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Ayvansaray Leblebiciler Sk. No:33 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Balat Merkez Şekercisi Resmi Sitesi",
+          "url": "http://www.merkezsekercisi.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "1879 kuruluş tarihçesi ve bakır kazanda akide şekeri üretim detayları doğrulandı."
+        },
+        {
+          "title": "Oggusto — İstanbul Asırlık Esnaf Kurumları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "145 yılı aşan bakır kazan akide geleneğini Çıfıt Çarşısı’nda kesintisiz yaşatan tarihi şekerci."
+        },
+        {
+          "title": "Tarihi Yarımada Müdavimleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Katkısız akide aromaları ve el kesimi şeker kıtırlığıyla neredeyse tam puan alıyor."
+        }
+      ],
+      "pros": [
+        "1879 mirası gerçek bakır kazanda el yapımı akide şekeri ustalığı",
+        "Katkısız tarçın, bergamot, sakız ve karanfil aromaları"
+      ],
+      "cons": [
+        "Küçük dükkanda oturup çay-kahve içilecek masa düzeni bulunmaz"
+      ],
+      "uncertainties": [
+        "Özel aromalı küçük parti üretim şeker çeşitleri sezona göre değişebilir."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bal-koftecisi-1948",
+      "categoryId": "denemelisin",
+      "resolvedName": "Meşhur Balat Köftecisi 1948",
+      "branchName": "Ayvansaray, Ayan Cd. No: 81, 34403 Fatih/İstanbul",
+      "placeId": "ChIJ3w2p4zm7yhQRGuFzvRWSrUs",
+      "coordinates": {
+        "lat": 41.033174599999995,
+        "lng": 28.946211599999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 778,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5453175345885995290",
+      "recommendedPrimary": [
+        "Tereyağlı Pideli Köfte",
+        "Klasik Izgara Köfte",
+        "Tahinli Yumurtalı Piyaz"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Manda Yoğurdu & Sıcak İrmik Helvası",
+          "note": "Izgara köftenin yanına taze manda yoğurdu ve yemek sonrasında sıcacık tereyağlı irmik helvası.",
+          "proof": "Fatih köklü esnaf lokantaları seçkileri ve Balat yerel hafızası"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı esnaf köftecisi dükkanı, temiz mermer masalar ve hızlı sıcak servis",
+        "crowdAndNoise": "Öğle ve akşam arası esnaf, öğrenciler ve gerçek köfte-piyaz tadı arayan İstanbullular",
+        "disadvantage": "Gündelik küçük bir esnaf köftecisidir; geç akşam saatlerinde köfte stoğu tükenebiliyor.",
+        "transit": "Ayvansaray Ayan Caddesi No:81 üzerinde Çıfıt Çarşısı ile köşe fırın aksının devamında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Meşhur Balat Köftecisi 1948",
+          "url": "https://maps.google.com/?cid=5453175345885995290",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Ayvansaray Ayan Cd. No:81 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Oggusto — Tarihi Yarımada Köklü Köftecileri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1948’den beri değişmeyen köfte-piyaz dengesi ve dürüst esnaf tavrıyla Balat’ın temel direği."
+        },
+        {
+          "title": "İstanbul Esnaf Lezzetleri Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Köftesinin baharat dengesi, piyaz sosu ve güler yüzlü usta ilgisiyle yüksek puan koruyor."
+        }
+      ],
+      "pros": [
+        "1948’den bu yana süregelen bozulmamış ızgara köfte ve piyaz dengesi",
+        "Turistik şovdan uzak gerçek semt esnafı samimiyeti"
+      ],
+      "cons": [
+        "Salon alanı küçük olduğu için öğle yoğunluğunda kısa masa bekleme olabiliyor"
+      ],
+      "uncertainties": [
+        "Günlük hazırlanan köfte harcı yoğun günlerde erken tükenebilir."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bal-fetih-iskembe",
+      "categoryId": "denemelisin",
+      "resolvedName": "Meşhur Fetih İşkembe",
+      "branchName": "Ayvansaray, Leblebiciler Sk. No:6, 34087 Fatih/İstanbul",
+      "placeId": "ChIJH0Q8cAS6yhQROPv5qv1w4os",
+      "coordinates": {
+        "lat": 41.033477999999995,
+        "lng": 28.946537000000003
+      },
+      "rating": 4.6,
+      "userRatingCount": 2212,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10079743150806137656",
+      "recommendedPrimary": [
+        "Terbiyeli Tuzlama Çorbası",
+        "Klasik İşkembe Çorbası",
+        "Fırınlanmış Kuzu Kelle"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kömürde Halka Kokoreç & Geleneksel Zerde Tatlısı",
+          "note": "Çorba yanına kıtır kuzu kokoreç porsiyonu ve safran renginde hafif Osmanlı zerde tatlısı.",
+          "proof": "İstanbul geleneksel çorbacılar rehberi ve Balat yerel esnaf arşivi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi çorbacı salonu düzeni ve Leblebiciler Sokak önü masaları",
+        "crowdAndNoise": "Sabahın ilk saatlerinden gece geç saatlere dek çorba ve sakatat müdavimleri",
+        "disadvantage": "Geleneksel yoğun esnaf çorbacısı temposunda sarımsak-sirke kokusu hakimdir.",
+        "transit": "Ayvansaray Leblebiciler Sokak No:6 üzerinde Balat Çıfıt Çarşısı girişinde."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Meşhur Fetih İşkembe",
+          "url": "https://maps.google.com/?cid=10079743150806137656",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Ayvansaray Leblebiciler Sk. No:6 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Oggusto — İstanbul Köklü Çorba & Sakatat Durakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1973’ten beri temizliği ve terbiyeli tuzlamasıyla Fatih esnaf kültürünün simgelerinden biri."
+        },
+        {
+          "title": "İstanbul Gece & Çorba Müdavimleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İki bini aşan değerlendirmeyle terbiye kıvamı ve sıcak servis hızıyla yüksek beğeni topluyor."
+        }
+      ],
+      "pros": [
+        "Yarım asırlık titiz sakatat temizliği ve klasik bakır kazan lezzeti",
+        "Geniş çorba, fırın kelle ve kokoreç çeşitliliği"
+      ],
+      "cons": [
+        "Sakatat ve sarımsak kokusundan hoşlanmayan ziyaretçiler için uygun değildir"
+      ],
+      "uncertainties": [
+        "Fırın kelle ve özel sakatat porsiyonları gün içi stoklara göre servis edilir."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bal-sevda-gazozcusu",
+      "categoryId": "denemelisin",
+      "resolvedName": "Sevda Gazozcusu Balat",
+      "branchName": "Ayvansaray, Leblebiciler Sk. No:4, 34087 Fatih/İstanbul",
+      "placeId": "ChIJe50rhQa7yhQRAmIeFQciZU8",
+      "coordinates": {
+        "lat": 41.033392,
+        "lng": 28.946462999999994
+      },
+      "rating": 4.6,
+      "userRatingCount": 1201,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5721016315458511362",
+      "recommendedPrimary": [
+        "Yöresel Anadolu Gazozları Seçkisi",
+        "Zencefilli ve Mandalinalı Yerel Gazozlar",
+        "Nostaljik Gazoz Tadım Paketi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kağıt Helva Eşlikçisi & Soğuk Meşrubat Seçkisi",
+          "note": "Cam şişede açılan soğuk Anadolu gazozlarının yanına nostaljik çıtır kağıt helva eşlikçisi.",
+          "proof": "Balat Çıfıt Çarşısı yerel seçkisi ve dükkan raf arşivi"
+        }
+      ],
+      "suitability": {
+        "seating": "Renkli şişe raflarıyla dolu minik esnaf dükkanı ve kapı önü birkaç tabure",
+        "crowdAndNoise": "Farklı illerin nostaljik yerel gazozlarını keşfetmek isteyen aileler ve gezginler",
+        "disadvantage": "Büyük yemek servisi veren bir kafe değil, özel yerel gazoz ve atıştırmalık dükkanıdır.",
+        "transit": "Ayvansaray Leblebiciler Sokak No:4 üzerinde Fetih İşkembe yanında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Sevda Gazozcusu Balat",
+          "url": "https://maps.google.com/?cid=5721016315458511362",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Ayvansaray Leblebiciler Sk. No:4 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Oggusto — Balat Özgün Esnaf Dükkanları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Anadolu’nun kaybolmaya yüz tutmuş yerel gazoz markalarını bir arada yaşatan nostaljik durak."
+        },
+        {
+          "title": "Balat Ziyaretçi Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Zengin gazoz arşivi ve güler yüzlü sohbetiyle bin iki yüzü aşkın konuktan yüksek beğeni alıyor."
+        }
+      ],
+      "pros": [
+        "Türkiye’nin farklı şehirlerinden nadir cam şişe gazoz seçkisi",
+        "Yürüyüş molasında pratik ve nostaljik serinleme durağı"
+      ],
+      "cons": [
+        "Dükkan içi çok küçük olduğundan hızlı seçim veya dış kapı önü taburesi gerekir"
+      ],
+      "uncertainties": [
+        "Yerel gazoz üreticilerinin çeşitleri tedarik sevkiyatlarına göre değişebilir."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bal-tarihi-borekci",
+      "categoryId": "denemelisin",
+      "resolvedName": "Tarihi Balat Börekçisi",
+      "branchName": "Balat, Vodina Cd. No:190, 34087 Fatih/İstanbul",
+      "placeId": "ChIJnREVCde7yhQRTEXTVpqPtYU",
+      "coordinates": {
+        "lat": 41.0327805,
+        "lng": 28.9463694
+      },
+      "rating": 4.6,
+      "userRatingCount": 276,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9634764870873466188",
+      "recommendedPrimary": [
+        "Kıymalı El Açması Kol Böreği",
+        "Peynirli Su Böreği",
+        "Pudra Şekerli Kürt Böreği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Patatesli Kol Böreği & Demleme Bardak Çay",
+          "note": "Yağsız pişirilmiş patatesli kol böreği dilimleriyle ince belli bardakta taze demleme çay eşlikçisi.",
+          "proof": "Vodina Caddesi esnaf durakları ve Fatih börekçileri rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tezgah içi klasik börekçi masaları ve Vodina kenarı hızlı servis düzeni",
+        "crowdAndNoise": "Sabah işe giden mahalle sakinleri ve çıtır börek arayan müdavimler",
+        "disadvantage": "Gündelik klasik esnaf börekçisidir; sabah ve öğlen tepsileri tükendikten sonra çeşit azalabilir.",
+        "transit": "Balat Vodina Caddesi No:190 üzerinde Ayvansaray sur kapılarına yakın aks üzerinde."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Tarihi Balat Börekçisi",
+          "url": "https://maps.google.com/?cid=9634764870873466188",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Balat Vodina Cd. No:190 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Fatih Esnaf Börekçileri Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Zincir börekçilerden bağımsız olarak el açması tepsi böreği çıkaran klasik Balat esnafı."
+        },
+        {
+          "title": "Balat Mahalle Müdavimleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yağsız çıtır yufkası, bol iç harcı ve taze çayıyla istikrarlı puanını koruyor."
+        }
+      ],
+      "pros": [
+        "Gerçek el açması yufka ile hafif ve çıtır börek çeşitleri",
+        "Zincir dışı taze günlük esnaf üretimi"
+      ],
+      "cons": [
+        "Öğleden sonra popüler su ve kol böreği tepsileri bitebiliyor"
+      ],
+      "uncertainties": [
+        "Tepsi çıkış sıklığı günün saatine göre farklılık gösterir."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bal-naftalin-k",
+      "categoryId": "denemelisin",
+      "resolvedName": "Cafe Naftalin K",
+      "branchName": "Balat, Yıldırım Cd. No:27/A, 34087 Fatih/İstanbul",
+      "placeId": "ChIJbystyQK6yhQRx6PcoG6CUmo",
+      "coordinates": {
+        "lat": 41.029982100000005,
+        "lng": 28.950984599999998
+      },
+      "rating": 4.4,
+      "userRatingCount": 3238,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://catcafemap.com/cat-cafe/cafe-naftalin-k",
+      "mapsUri": "https://maps.google.com/?cid=7661329327767462855",
+      "recommendedPrimary": [
+        "Damla Sakızlı Türk Kahvesi",
+        "Mardin Dibek Kahvesi",
+        "Ev Yapımı Havuçlu Kek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Reyhan Şerbeti & Günlük Anne Kurabiyesi",
+          "note": "Nostaljik fincan ve bardaklarda sunulan ferah reyhan şerbeti ve taze tarçınlı anne kurabiyesi.",
+          "proof": "Balat klasik durakları seçkileri ve işletme vitrini"
+        }
+      ],
+      "suitability": {
+        "seating": "Kadife retro koltuklu renkli iç salon ve Yıldırım Caddesi kaldırım masaları",
+        "crowdAndNoise": "Balat’ın bohem nostalji ruhunu, ev kedilerini ve Türk kahvesi sohbetini seven ziyaretçiler",
+        "disadvantage": "Mekanda kediler özgürce dolaştığı ve sokak köşesi kalabalıklaşabildiği için kedi alerjisi olanlara uygun değildir.",
+        "transit": "Balat Yıldırım Caddesi No:27/A üzerinde Balat-Fener kesişimi olan renkli sokak aksında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Cafe Naftalin K",
+          "url": "https://maps.google.com/?cid=7661329327767462855",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Balat Yıldırım Cd. No:27/A konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Oggusto — Balat İkonik Kafeleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Retro objeleri, ev yapımı havuçlu keki ve Türk kahvesi ritüeliyle Balat hafızasına kazınan simge durak."
+        },
+        {
+          "title": "İstanbul & Balat Ziyaretçi Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Üç bini aşan değerlendirmeyle değişmeyen nostaljik atmosferi ve kedili sıcaklığıyla öne çıkıyor."
+        }
+      ],
+      "pros": [
+        "Balat’ın simgesel nostaljik kafe kimliği ve özenli Türk kahvesi çeşitleri",
+        "Taze ev yapımı kekler ve geleneksel reyhan şerbeti"
+      ],
+      "cons": [
+        "Hafta sonu kalabalık saatlerde sokak köşesi masaları hızla dolabiliyor"
+      ],
+      "uncertainties": [
+        "Mutfakta günlük çıkan ev tatlısı çeşitleri günün hazırlığına göre değişir."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    }
+  ]
+}

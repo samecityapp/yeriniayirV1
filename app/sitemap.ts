@@ -5,6 +5,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const TR_DOMAIN = 'https://www.yeriniayir.com';
   const EN_DOMAIN = 'https://www.worldandhotels.com';
 
+  try {
+
   // Get all hotels
   const hotels = await db.hotels.getAll();
   const hotelUrls = hotels.flatMap((hotel) => {
@@ -90,4 +92,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...articleUrls,
     ...locationUrls,
   ];
+  } catch (error) {
+    console.warn('Sitemap fallback triggered during build:', error);
+    return [
+      {
+        url: TR_DOMAIN,
+        lastModified: new Date(),
+        changeFrequency: 'daily' as const,
+        priority: 1.0,
+      },
+      {
+        url: EN_DOMAIN,
+        lastModified: new Date(),
+        changeFrequency: 'daily' as const,
+        priority: 1.0,
+      },
+    ];
+  }
 }

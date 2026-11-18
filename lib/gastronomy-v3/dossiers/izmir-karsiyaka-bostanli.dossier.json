@@ -1,0 +1,1974 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "izmir-karsiyaka-bostanli",
+  "displayName": "Bostanlı, Karşıyaka, İzmir",
+  "verifiedAt": "2026-11-17T09:11:47.879Z",
+  "selectedCount": 26,
+  "rejectedControls": [
+    {
+      "id": "ctrl-bostanli-pizza-locale-chain",
+      "resolvedName": "Pizza Locale",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bostanli-slices-chain",
+      "resolvedName": "Slices of The World",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bostanli-uptown-chain",
+      "resolvedName": "Uptown Pizza Bostanlı",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bostanli-biber-burger-chain",
+      "resolvedName": "Biber Burger",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bostanli-burger-street-chain",
+      "resolvedName": "Burger Street",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bostanli-goldenfingers-chain",
+      "resolvedName": "Goldenfingers Burger & Cheesesteak",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bostanli-white-burger-chain",
+      "resolvedName": "White Burger By Serhat Doğramacı İzmir Karşıyaka",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bostanli-sasso-chain",
+      "resolvedName": "Sasso Fried Chicken Bostanlı",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bostanli-bravo-chain",
+      "resolvedName": "Bravo Patisserie",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bostanli-reyhan-chain",
+      "resolvedName": "Reyhan Pastanesi Bostanlı",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bostanli-bogazici-chain",
+      "resolvedName": "Boğaziçi Restaurant Bostanlı",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bostanli-goches-chain",
+      "resolvedName": "Goche's Coffee",
+      "reason": "below_quality_threshold:★4.1(1073)"
+    },
+    {
+      "id": "ctrl-bostanli-coffeemania-chain",
+      "resolvedName": "Coffeemania Next Bostanlı",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bostanli-starbucks-chain",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bostanli-gusto-cikolata-purity",
+      "resolvedName": "Gusto Cafe & Çikolata Bostanlı",
+      "reason": "kahve_category_not_coffee_specialist:chocolate_shop"
+    },
+    {
+      "id": "ctrl-bostanli-spatula-bakery-purity",
+      "resolvedName": "Spatula Bakery",
+      "reason": "kahve_category_not_coffee_specialist:pastry_shop"
+    },
+    {
+      "id": "ctrl-bostanli-moradaris-aksoy-outside",
+      "resolvedName": "Moradaris Smash Point",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Bostanlı/Bostanli, adres: Aksoy, Hasan Tahsin Abakan Sokağı 4A, 35580 Karşıyaka/İzmir)"
+    },
+    {
+      "id": "ctrl-bostanli-kybele-donanmaci-outside",
+      "resolvedName": "Kybele Pizza",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Bostanlı/Bostanli, adres: Donanmacı, Fazil Bey Cd. No:17/a, 35580 Karşıyaka/İzmir)"
+    },
+    {
+      "id": "ctrl-bostanli-rucola-atakent-outside",
+      "resolvedName": "Pizza Rucola",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bostanli-leaf-atakent-outside",
+      "resolvedName": "The Leaf Coffee Shop",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Bostanlı/Bostanli, adres: Atakent, 2032. Sk. No: 5/AA, 35590 Karşıyaka/İzmir)"
+    },
+    {
+      "id": "ctrl-bostanli-smor-yali-outside",
+      "resolvedName": "Smör Bakery",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Bostanlı/Bostanli, adres: Yalı, 6339. Sk. 8A, 35590 Karşıyaka/İzmir)"
+    },
+    {
+      "id": "ctrl-bostanli-montagna-nergiz-outside",
+      "resolvedName": "Montagna pizzeria",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Bostanlı/Bostanli, adres: Nergiz, mh2003 sokak no1/a, 35320 Karşıyaka/İzmir)"
+    },
+    {
+      "id": "ctrl-bostanli-denizkent-mavisehir-outside",
+      "resolvedName": "Denizkent Restoran",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Bostanlı/Bostanli, adres: Mavişehir, 2043. Sk. No:9, 35540 Karşıyaka/İzmir)"
+    },
+    {
+      "id": "ctrl-bostanli-optimist-low",
+      "resolvedName": "The Optimist Coffee Co.",
+      "reason": "below_quality_threshold:★4.3(1186)"
+    },
+    {
+      "id": "ctrl-bostanli-dogan-konice-low",
+      "resolvedName": "Balıkçı Doğan Koniçe",
+      "reason": "below_quality_threshold:★4.3(294)"
+    },
+    {
+      "id": "ctrl-bostanli-ayvalik-balikcisi-low",
+      "resolvedName": "Bostanlı Ayvalık Balıkçısı",
+      "reason": "below_quality_threshold:★4.1(1344)"
+    },
+    {
+      "id": "ctrl-bostanli-yalin-balik-low",
+      "resolvedName": "Yalın Balık",
+      "reason": "below_quality_threshold:★4.1(192)"
+    },
+    {
+      "id": "ctrl-bostanli-zemin-low",
+      "resolvedName": "Zemin Burrito•Taco•Etc.",
+      "reason": "below_quality_threshold:★4.1(1461)"
+    },
+    {
+      "id": "ctrl-bostanli-mekan-low-count",
+      "resolvedName": "MEKAN BOSTANLI",
+      "reason": "below_quality_threshold:★5(25)"
+    },
+    {
+      "id": "ctrl-bostanli-mezeci-low-count",
+      "resolvedName": "Mezeci",
+      "reason": "below_quality_threshold:★4.6(31)"
+    },
+    {
+      "id": "ctrl-bostanli-cochem-low-count",
+      "resolvedName": "Cochem Coffee Bostanlı",
+      "reason": "chain_or_franchise"
+    }
+  ],
+  "venues": [
+    {
+      "id": "bostanli-kupika",
+      "categoryId": "pizza",
+      "resolvedName": "Kupika",
+      "branchName": "Bostanlı, 1811. Sk. No:23/B, 35590 Karşıyaka/İzmir",
+      "placeId": "ChIJw9pN6tnZuxQRQh_lw357K7g",
+      "coordinates": {
+        "lat": 38.4589933,
+        "lng": 27.096199199999997
+      },
+      "rating": 4.5,
+      "userRatingCount": 1705,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.kupikamutfak.com/",
+      "mapsUri": "https://maps.google.com/?cid=13270836511359967042",
+      "recommendedPrimary": [
+        "48 Saat Fermentasyonlu Odun Fırını Margarita",
+        "Mevsimsel Şarküterili Napolitan",
+        "Dört Peynirli Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Akışkan Beyaz Çikolatalı, Karamelize Cevizli & Sorbetli Tatlı",
+          "note": "Özgün pizza sonrasında masaların özellikle paylaştığı imza tatlı kapanışı.",
+          "proof": "kupikamutfak.com resmi menüsü ve Enresto Bostanlı incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Samimi iç mutfak önü masalar ve 1811. Sokak açık oturma alanı",
+        "crowdAndNoise": "Akşam yemeklerinde yıl boyu yüksek Bostanlı müdavimi yoğunluğu",
+        "disadvantage": "Popüler 1811. Sokak akşamlarında önceden yer sormadan masa bulmak güçleşebilir",
+        "transit": "Bostanlı 1811. Sk. No:23/B (Bostanlı Tramvay ve Cemal Gürsel sahil hattı ~4 dk)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Kupika Mutfak)",
+          "url": "https://kupikamutfak.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "48 saat fermantasyonlu hamur ve mevsimsel malzeme felsefesi"
+        },
+        {
+          "title": "Enresto & Yandex Mekanlar",
+          "url": "https://enresto.app/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taş fırın Napoli pizzaları ve ceviz-sorbetli tatlı incelemesi"
+        }
+      ],
+      "pros": [
+        "Uzun fermantasyonla hafifleşen hamur yapısı",
+        "Özgün şef reçeteli tatlı kapanışı"
+      ],
+      "cons": [
+        "Yoğun akşam saatlerinde bekleme ihtimali"
+      ],
+      "uncertainties": [
+        "Mevsimsel yerel ürünlü pizzalar dönemsel olarak değişmektedir"
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-soledo",
+      "categoryId": "pizza",
+      "resolvedName": "Soledo",
+      "branchName": "Bostanlı, 2014/1. Sk. no:21, 35590 Karşıyaka/İzmir",
+      "placeId": "ChIJcZsp3HHZuxQRO2iLtZ9vepw",
+      "coordinates": {
+        "lat": 38.456172699999996,
+        "lng": 27.0960698
+      },
+      "rating": 4.4,
+      "userRatingCount": 1010,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.soledo.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=11275447348811753531",
+      "recommendedPrimary": [
+        "Füme Kaburga Pizza",
+        "Kavurmalı Odun Ateşi Pizza",
+        "Pancar & Rokforlu Gurme Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Dört Peynirli & Pancar-Rokforlu Alternatif Kombinasyonlar",
+          "note": "Klasik etli seçimler dışında özgün peynir-sebze dengesi arayanlara sunulan seçenekler.",
+          "proof": "İzmir Mekan Rehberi meşe odunu pizzacıları dosyası"
+        }
+      ],
+      "suitability": {
+        "seating": "Meşe fırını kokusunun yayıldığı kompakt iç alan ve ara sokak masaları",
+        "crowdAndNoise": "Akşam yemeklerinde düzenli semt yoğunluğu",
+        "disadvantage": "Odun ateşinde ince tabanlı hamur hızlı yenmediğinde soğuyarak sertleşebilir; masa alanı sınırlıdır",
+        "transit": "Bostanlı 2014/1. Sk. No:21 (Bostanlı sahil bandına yürüyüş mesafesi)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "İzmir Mekan Rehberi (Soledo)",
+          "url": "https://www.izmirmekanrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Meşe odunu alevi ve füme kaburgalı ince hamurlu pizza incelemesi"
+        },
+        {
+          "title": "Yandex & Yemeksepeti",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çıtır taban ve malzeme dengesi değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Meşe odunu dumanını alan çıtır ince hamur",
+        "Alışılagelmişin dışındaki lezzet eşleştirmeleri"
+      ],
+      "cons": [
+        "Kompakt dükkân ölçeği ve kalabalık gruplar için dar oturum"
+      ],
+      "uncertainties": [
+        "Füme et stokuna göre bazı özel çeşitler akşam geç saatte tükenebilir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-spazzo",
+      "categoryId": "pizza",
+      "resolvedName": "Spazzo",
+      "branchName": "Bostanlı, 1671. Sk. No: 189, 33590 Karşıyaka/İzmir",
+      "placeId": "ChIJ2wqvPcDZuxQRAxiya2j4MGA",
+      "coordinates": {
+        "lat": 38.460048,
+        "lng": 27.103614999999998
+      },
+      "rating": 4.4,
+      "userRatingCount": 162,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6931312953890314243",
+      "recommendedPrimary": [
+        "Çimçim Karidesli Pizza",
+        "Dört Peynirli İtalyan Pizza",
+        "Kavurmalı (Old Turkish) Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kremalı Jambonlu & Ev Yapımı Tiramisu Kapanışı",
+          "note": "Beyaz soslu pizza sevenler ile yemek sonrası hafif tatlı eşlikçisi.",
+          "proof": "Yemeksepeti ve Yandex 1671. Sokak değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak iç mekân ve sakin sokak kenarı masaları",
+        "crowdAndNoise": "Akşamları orta yoğunlukta semt sakinleri",
+        "disadvantage": "Geleneksel 48 saat uzun fermantasyonlu Napoli ekolü yerine daha klasik ince pizza çizgisindedir",
+        "transit": "Bostanlı 1671. Sk. No:189 (Bostanlı Pazarı ve Nergiz yürüyüş aksı arası)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemeksepeti (Spazzo Bostanlı)",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çimçim karidesli ve dört peynirli pizza çeşitleri"
+        },
+        {
+          "title": "Yandex Mekan Rehberi",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Samimi atmosfer, hızlı servis ve mahalle pizzacısı puanları"
+        }
+      ],
+      "pros": [
+        "Farklı malzemeli çeşit zenginliği ve güleryüzlü hızlı servis",
+        "Ara sokakta rahat masa bulma şansı"
+      ],
+      "cons": [
+        "Sahil ve çarşı merkezine göre biraz iç sokakta kalması"
+      ],
+      "uncertainties": [
+        "Deniz mahsullü çimçim karides pizza günlük malzeme stokuna bağlıdır"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-sanos-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Sanos Burger",
+      "branchName": "Bostanlı, 2013. Sk. 18A, 35590 Karşıyaka/İzmir",
+      "placeId": "ChIJLSQyRT_ZuxQRomSaDHdZxNI",
+      "coordinates": {
+        "lat": 38.457105899999995,
+        "lng": 27.0967747
+      },
+      "rating": 4.9,
+      "userRatingCount": 354,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.sanosburger.com/",
+      "mapsUri": "https://maps.google.com/?cid=15187362211247580322",
+      "recommendedPrimary": [
+        "Cheese & Cheese Smash Burger",
+        "Brie Truffle Smash Burger",
+        "Gravyer Smash Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sanos Patates (Cheddar Sos & Bacon) & Çıtır Turşu",
+          "note": "Smash burger menülerini tamamlayan en çok sipariş edilen sıcak yan lezzetler.",
+          "proof": "sanosburger.com resmi menüsü ve Menu-TR incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Sade ve temiz iç oturma düzeni ile sokak önü küçük masalar",
+        "crowdAndNoise": "Akşam yemeği saatlerinde yerli burger tutkunlarıyla çok canlı",
+        "disadvantage": "Sınırlı masa kapasitesi nedeniyle kalabalık gruplarda boş masa beklemek gerekebilir",
+        "transit": "Bostanlı 2013. Sk. No:18A (Cemal Gürsel Caddesi ve Bestekar Yusuf Nalkesen arası)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Sanos Burger)",
+          "url": "https://sanosburger.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Smash köfte, Kars gravyer ve Sanos patates tarifleri"
+        },
+        {
+          "title": "Menu-TR & Yandex Mekanlar",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Brie truffle smash ve et sululuğu incelemesi"
+        }
+      ],
+      "pros": [
+        "Dışı dantel gibi çıtır içi sulu smash köfte kıvamı",
+        "Peynir çeşitliliğinde iddialı reçeteler"
+      ],
+      "cons": [
+        "Küçük oturum kapasitesi ve ağırlıklı zengin peynirli tarifler"
+      ],
+      "uncertainties": [
+        "Yoğun cuma-cumartesi akşamlarında hazırlık süresi uzayabilir"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-jungle-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Jungle Burger",
+      "branchName": "Bostanlı, 1809. Sk. No:5/B, 35590 Karşıyaka/İzmir",
+      "placeId": "ChIJt69R4YvZuxQR6wq3hjhVxII",
+      "coordinates": {
+        "lat": 38.458341499999996,
+        "lng": 27.097090599999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 1466,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9422750021632592619",
+      "recommendedPrimary": [
+        "GorilJam Burger",
+        "Smoky Jungle Burger",
+        "Hot American Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Korean Fried Chicken & Özel Soslu Çıtır Tavuk",
+          "note": "Kırmızı et dışındaki konuklar için menüde güçlü alternatif sunan tavuk seçenekleri.",
+          "proof": "Kısık Ateş Akademi Bostanlı seçkisi ve Yemeksepeti menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Canlı iç salon ve 1809. Sokak açık masaları",
+        "crowdAndNoise": "Akşamları ve hafta sonları genç kitleyle yüksek doluluk",
+        "disadvantage": "Popüler 1809. Sokak lokasyonunda akşam gürültüsü yüksektir; porsiyonlar oldukça ağırdır",
+        "transit": "Bostanlı 1809. Sk. No:5/B (Bostanlı Çarşı ve Tramvay yürüme mesafesi)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Kısık Ateş Akademi & İzmir İçi",
+          "url": "https://www.kisikatesakademi.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tek şubeli Bostanlı burger klasyiği ve reçete istikrarı"
+        },
+        {
+          "title": "Menu-TR & Yemeksepeti",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "GorilJam, Hot American ve Korean Fried Chicken puanları"
+        }
+      ],
+      "pros": [
+        "Yıllardır 1.400+ değerlendirmede sarsılmayan mutfak tutarlılığı",
+        "Kırmızı et yanında Kore usulü tavuk seçeneği"
+      ],
+      "cons": [
+        "Büyük ve yoğun porsiyon yapısı ile kalabalık sokak gürültüsü"
+      ],
+      "uncertainties": [
+        "Yoğun akşamlarda ön masalar hızlı dolar"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-nomi-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Nomi Burger",
+      "branchName": "Bostanlı, 1671. Sk. No:183/1, 35035 Karşıyaka/İzmir",
+      "placeId": "ChIJPXX6Iu_ZuxQRGbQfDRyiiwY",
+      "coordinates": {
+        "lat": 38.459323,
+        "lng": 27.104626
+      },
+      "rating": 4.9,
+      "userRatingCount": 108,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.nomiburger.com/",
+      "mapsUri": "https://maps.google.com/?cid=471648827353314329",
+      "recommendedPrimary": [
+        "Midnight Burger (İzmir Tulum & Yaban Mersini)",
+        "Füme Kaburgalı Burger",
+        "Trüf & Mantarlı Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Kesimi Anne Patatesi & El Fuego Sosları",
+          "note": "Hazır donuk patates yerine el doğraması sıcak eşlikçi ve ev yapımı acı sos.",
+          "proof": "Menu-TR ve Restoranım Bostanlı incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Samimi iç masa düzeni ve 1671. Sokak açık cephe",
+        "crowdAndNoise": "Akşam yemeği ve hafta sonları düzenli semt müdavimleri",
+        "disadvantage": "Küçük mahalle dükkânı olması sebebiyle kalabalık gruplara masa birleştirmek zordur",
+        "transit": "Bostanlı 1671. Sk. No:183/1 (Bostanlı Pazar yeri yakınındaki ara cadde)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Menu-TR (Nomi Burger)",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Midnight Tulumlu Burger ve el yapımı yumuşak ekmek incelemesi"
+        },
+        {
+          "title": "Restoranım & Yemeksepeti",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Anne Patatesi, füme kaburga ve taze el yapımı burger memnuniyeti"
+        },
+        {
+          "title": "Resmi Site (Nomi Burger)",
+          "url": "https://nomiburger.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "El yapımı ekmek ve özgün sos reçeteleri"
+        }
+      ],
+      "pros": [
+        "İzmir tulumu ve yaban mersini gibi özgün imza tatlar",
+        "Gerçek el kesimi sıcak Anne Patatesi"
+      ],
+      "cons": [
+        "Çarşı içindeki rakiplere göre biraz daha dar mekân ölçüsü"
+      ],
+      "uncertainties": [
+        "Özel füme kaburga hazırlığı akşam geç saatlere kalmayabilir"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-gracia-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Gracia Coffee Co.",
+      "branchName": "Bostanlı, Nebil Susup Sk. No:130, 35590 Karşıyaka/İzmir",
+      "placeId": "ChIJY2kwsrDZuxQReqX0rL6CyCM",
+      "coordinates": {
+        "lat": 38.455494699999996,
+        "lng": 27.1040206
+      },
+      "rating": 4.9,
+      "userRatingCount": 533,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2578454542126720378",
+      "recommendedPrimary": [
+        "Pink Bourbon V60 Pour-Over",
+        "Yaseminli Özel Latte",
+        "Portakallı Espresso / Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Nitelikli Çekirdek Demlemeleri & Hafif Kahve Eşlikçileri",
+          "note": "Farklı yöresel çekirdek seçimleri eşliğinde sade günlük kurabiye ve tatlılar.",
+          "proof": "Şehir Pusulası ve Yandex Bostanlı nitelikli kahve değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Bitkilerle ferahlatılmış şık iç salon ve açık sokak masaları (pati dostu)",
+        "crowdAndNoise": "Hafta içi çalışanlar ve hafta sonu mahalle müdavimleriyle canlı",
+        "disadvantage": "Yüksek popülaritesi nedeniyle öğleden sonra masalar hızlı dolar",
+        "transit": "Bostanlı Nebil Susup Sk. No:130 (Yalı Bulvarı ve Bostanlı sahiline ~3 dk)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Şehir Pusulası İzmir",
+          "url": "https://sehirpusulasi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Pink Bourbon çekirdekleri ve imza aromalı latte incelemesi"
+        },
+        {
+          "title": "Yandex & Restoranım",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bitkili ferah ortam, pati dostu yaklaşım ve 4.9 müşteri memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Özgün tek köken çekirdek ve yaratıcı imza içecek dengesi",
+        "Bitkili, ferah ve evcil hayvan dostu atmosfer"
+      ],
+      "cons": [
+        "Kalabalık hafta sonlarında oturma alanı bekletebilir"
+      ],
+      "uncertainties": [
+        "Pink Bourbon gibi mikrolot çekirdekler stok dönemine göre değişir"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-lot-coffee-roastery",
+      "categoryId": "kahve",
+      "resolvedName": "Lot Coffee Roastery",
+      "branchName": "Mersin Apt, Bostanlı, 1821/1. Sk. No:12/A, 35590 Karşıyaka/İzmir",
+      "placeId": "ChIJNWOFVXXZuxQRVN97tm3HkPw",
+      "coordinates": {
+        "lat": 38.462237,
+        "lng": 27.100346
+      },
+      "rating": 4.9,
+      "userRatingCount": 135,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.lotcoffeeroastery.com/",
+      "mapsUri": "https://maps.google.com/?cid=18199265368231108436",
+      "recommendedPrimary": [
+        "Etiyopya / Burundi V60 Demleme",
+        "Aeropress Tek Köken Tadım",
+        "Nitelikli Flat White"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tadımlık Günlük Cheesecake & Evde Demleme İçin Çekirdek Paketleri",
+          "note": "Kafede beğenilen kavrumların taze paketli satışı ve sınırlı eşlikçi tatlılar.",
+          "proof": "Kahveler.net, Kahve Kulübü ve Mes Prestiges uzman değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sade kavurma barı ve sakin sokak önü tadım masaları",
+        "crowdAndNoise": "Kahve kulüpleri ve ev demleyicileri arasında gün boyu düzenli ilgi",
+        "disadvantage": "Büyük tatlı vitrinli oturma kafesi değil, doğrudan kahve ve kavrum odaklı butik tadım barıdır",
+        "transit": "Bostanlı 1821/1. Sk. No:12/A (Şht. Cengiz Topel ve Nalkesen üst paraleli)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Kahveler.net Uzman İncelemesi",
+          "url": "https://www.kahveler.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Toptan ve perakende kavrum istikrarı ile Burundi/Etiyopya profilleri"
+        },
+        {
+          "title": "Kahve Kulübü Topluluk Değerlendirmesi",
+          "url": "https://www.kahvekulubu.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Şeffaf kavurma tarihi ve ev baristaları memnuniyeti"
+        },
+        {
+          "title": "Mes Prestiges & Restoranım",
+          "url": "https://www.mesprestiges.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ödüllü barista imzalı espresso ve V60 kalitesi"
+        }
+      ],
+      "pros": [
+        "Şehir genelinde referans gösterilen tutarlı kavurma kalitesi",
+        "Ticari gürültüden uzak gerçek tadım odaklı yaklaşım"
+      ],
+      "cons": [
+        "Sınırlı yemek ve tatlı seçeneği"
+      ],
+      "uncertainties": [
+        "Taze kavrum çekirdek menüsü hasat mevsimlerine göre yenilenir"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-myth-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Myth Coffee & More",
+      "branchName": "Bostanlı, Bestekar Yusuf Nalkesen Sok. No:12/B, 35590 Karşıyaka/İzmir",
+      "placeId": "ChIJq67cs7HZuxQRoHUOZNUj8aI",
+      "coordinates": {
+        "lat": 38.4581503,
+        "lng": 27.0949909
+      },
+      "rating": 4.6,
+      "userRatingCount": 219,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.instagram.com/mythcoffeeco",
+      "mapsUri": "https://maps.google.com/?cid=11741205102945269152",
+      "recommendedPrimary": [
+        "Moccamaster Filtre Kahve",
+        "Cortado & Flat White",
+        "Iced Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sezonsal Soğuk Demlemeler & Günlük Sade Eşlikçiler",
+          "note": "Hızlı mahalle molasında filtre kahveye eşlik eden taze kurabiye seçenekleri.",
+          "proof": "European Coffee Trip ve Yemeksepeti Bostanlı değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt iç bar ve Bestekar Yusuf Nalkesen Sokak masaları",
+        "crowdAndNoise": "Tramvay ve çarşı hattındaki günlük mahalle trafiğiyle canlı",
+        "disadvantage": "Bostanlı merkez geçişinde olması nedeniyle kalabalık saatlerde açık masalar çabuk dolar",
+        "transit": "Bostanlı Bestekar Yusuf Nalkesen Sk. No:12/B (Bostanlı Tramvay Durağı ~2 dk)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "European Coffee Trip",
+          "url": "https://europeancoffeetrip.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Avrupa nitelikli kahve rehberinde Bostanlı temsilcisi seçkisi"
+        },
+        {
+          "title": "Yemeksepeti & Yandex",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Moccamaster filtre ve espresso kıvam puanları"
+        }
+      ],
+      "pros": [
+        "Uluslararası specialty coffee rehber standartında tutarlı kahve",
+        "Tramvay durağına hemen komşu pratik konum"
+      ],
+      "cons": [
+        "Geniş çalışma masası yerine kısa-orta süreli kahve molası düzeni"
+      ],
+      "uncertainties": [
+        "Kullanılan kavurucu çekirdekleri dönemsel olarak dönüşebilir"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-london-cafe",
+      "categoryId": "kahve",
+      "resolvedName": "London Cafe Bostanlı",
+      "branchName": "Bostanlı, 1820/1. Sk. No:3 D:1, 35590 Karşıyaka/İzmir",
+      "placeId": "ChIJU8zjVJjZuxQR6hDOiNNH6Oc",
+      "coordinates": {
+        "lat": 38.459609,
+        "lng": 27.098273
+      },
+      "rating": 4.6,
+      "userRatingCount": 155,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://londoncafe.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=16710685391217103082",
+      "recommendedPrimary": [
+        "Flat White",
+        "Iced Matcha / Latte",
+        "Nitelikli Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Kruvasan & Fluffy Hamur Eşlikçileri",
+          "note": "Sabah ve öğleden sonra kahvelerini tamamlayan taze fırın seçenekleri.",
+          "proof": "londoncafe.com.tr ve Yandex Bostanlı kafe değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Modern ve konforlu iç oturma düzeni ile sokak cepheli dış masalar",
+        "crowdAndNoise": "Genç profesyoneller ve hafta sonu buluşmalarıyla dinamik dolu",
+        "disadvantage": "Hafta sonu öğleden sonra saatlerinde masa doluluğu ve sohbet sesi yükselebilir",
+        "transit": "Bostanlı 1820/1. Sk. No:3 D:1 (1821. Sokak kahveciler aksı)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (London Cafe Bostanlı)",
+          "url": "https://www.londoncafe.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Nitelikli kahve, müzik seçkisi ve fırın eşlikçileri"
+        },
+        {
+          "title": "Yandex Mekanlar",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İç mimari tasarımı ve kahve sunumu değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Rahat oturma ergonomisi ve zevkli müzik atmosferi",
+        "Taze kruvasan eşlikli kahve deneyimi"
+      ],
+      "cons": [
+        "Çok sessiz çalışma ortamı yerine sosyal buluşma temposundadır"
+      ],
+      "uncertainties": [
+        "Fırından çıkan günlük ürünler öğleden sonra sınırlanabilir"
+      ],
+      "selectionScore": 82,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-cucina-maestra",
+      "categoryId": "date",
+      "resolvedName": "Cucina Maestra",
+      "branchName": "Bostanlı, 2010. Sk. No:4/A, 35590 Karşıyaka/İzmir",
+      "placeId": "ChIJS3yvjrvZuxQRD3Rs6_OaYt0",
+      "coordinates": {
+        "lat": 38.4554799,
+        "lng": 27.1002479
+      },
+      "rating": 4.8,
+      "userRatingCount": 801,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15952483202517201935",
+      "recommendedPrimary": [
+        "El Yapımı Taze İtalyan Makarnaları",
+        "Taş Fırın Şef Pizzaları",
+        "İmza Ev Yapımı Tiramisu"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı İtalyan Başlangıçları & Şefin Tiramisusu",
+          "note": "Akşam yemeğini baştan sona tamamlayan taze antipasti ve şehrin en çok övülen tiramisu kapanışı.",
+          "proof": "İzmir Mekan Rehberi açık mutfak incelemesi ve Menu-TR"
+        }
+      ],
+      "suitability": {
+        "seating": "Açık mutfağı izleyen zarif iç yemek salonu ve 2010. Sokak akşam masaları",
+        "crowdAndNoise": "Çiftler ve şef mutfağı meraklılarıyla akşam yemeklerinde oldukça dolu",
+        "disadvantage": "Butik açık mutfak salonunda akşam saatlerinde rezervasyonsuz masa bulmak güçtür",
+        "transit": "Bostanlı 2010. Sk. No:4/A (Bostanlı İskelesi karşısı ara sokak)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "İzmir Mekan Rehberi (Cucina Maestra)",
+          "url": "https://www.izmirmekanrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Üç şefli açık mutfak, el yapımı makarna ve tiramisu incelemesi"
+        },
+        {
+          "title": "Menu-TR & Yandex",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taş fırın pizza ve otantik İtalyan mutfağı yüksek puanları"
+        }
+      ],
+      "pros": [
+        "Şeflerin açık mutfaktaki özenli taze üretimi",
+        "Hem pasta hem pizza hem de imza tiramisu düzeyinde yüksek bütünlük"
+      ],
+      "cons": [
+        "Yoğun akşam yemekleri için önceden rezervasyon gerekmesi"
+      ],
+      "uncertainties": [
+        "Taze günlük makarna ve tiramisu porsiyonları geç saatlerde sınırlanabilir"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-karaf-meyhane",
+      "categoryId": "date",
+      "resolvedName": "Karaf Meyhane",
+      "branchName": "Bostanlı, Cemal Gürsel Cd. No:97/B D:35590, 35000 Karşıyaka/İzmir",
+      "placeId": "ChIJUUKMBknZuxQRV4FVn0CZ7d8",
+      "coordinates": {
+        "lat": 38.4579695,
+        "lng": 27.096348199999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 582,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://karafmeyhane.com/",
+      "mapsUri": "https://maps.google.com/?cid=16135721542768492887",
+      "recommendedPrimary": [
+        "Tereyağlı Yaprak Ciğer",
+        "Günlük Soğuk Ege Mezeleri",
+        "Ocakbaşı Kuzu & Et Çeşitleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Ot Tabakları & Kokoreç Kavurma",
+          "note": "Klasik soğuk meze ve ana ocakbaşı arasındaki geleneksel sıcak ara geçiş tabakları.",
+          "proof": "karafmeyhane.com resmi menüsü ve Mes Prestiges incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Samimi iç meyhane salonu ve Cemal Gürsel sahil bandı ön cephesi",
+        "crowdAndNoise": "Hafta sonu akşamları yüksek rezervasyon doluluğu",
+        "disadvantage": "Ana cadde kenarında yer aldığından yoğun saatlerde sokak ve müzik sesi yükselebilir; hesap üst düzeydedir",
+        "transit": "Bostanlı Cemal Gürsel Cd. No:97/B (Bostanlı İskele sahil yürüyüş yolu üzeri)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Karaf Meyhane)",
+          "url": "https://www.karafmeyhane.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Ege mezeleri, sıcak ot tabakları ve ocakbaşı konsepti"
+        },
+        {
+          "title": "Mes Prestiges & Yandex",
+          "url": "https://www.mesprestiges.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tereyağlı yaprak ciğer ve rakı-meze atmosferi değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Meze ve ocakbaşı et kalitesini aynı masada dengede tutabilmesi",
+        "Sahile yakın erişimli konum"
+      ],
+      "cons": [
+        "Cadde cephesi gürültüsü ve yüksek akşam hesabı"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamları rezervasyonsuz kapıdan yer bulunmayabilir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-kulup-meyhane",
+      "categoryId": "date",
+      "resolvedName": "Kulüp Meyhane",
+      "branchName": "Bostanlı, Cemal Bülbül Sk. No:15B, 35540 Karşıyaka/İzmir",
+      "placeId": "ChIJyQ8b29nZuxQRb7OrFLmio3s",
+      "coordinates": {
+        "lat": 38.4581857,
+        "lng": 27.0976435
+      },
+      "rating": 4.6,
+      "userRatingCount": 230,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8909143403668419439",
+      "recommendedPrimary": [
+        "Özel Soğuk Meze Tepsisi",
+        "Sıcak Ara Deniz & Et Tabakları",
+        "Izgara Ana Seçenekler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Hazırlanan Zeytinyağlı & Deniz Ürünlü Ara Sıcaklar",
+          "note": "Masa açılışında meze paylaşımını tamamlayan taze sıcak ara seçenekler.",
+          "proof": "Menu-TR Cemal Bülbül meyhane rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Cemal Bülbül Sokak içi samimi masalar ve şık bar destekli salon",
+        "crowdAndNoise": "Cuma ve cumartesi akşamları yüksek enerjili ve canlı",
+        "disadvantage": "Eğlence sokağının kalbinde olduğu için geç saatlerde sessiz baş başa yemek arayanlara gürültülü gelebilir",
+        "transit": "Bostanlı Cemal Bülbül Sk. No:15B (Bostanlı İskele ~3 dk yürüme)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Menu-TR (Kulüp Meyhane)",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tek şube Bostanlı meyhane menüsü ve meze seçkisi"
+        },
+        {
+          "title": "Yandex Mekanlar",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Samimi servis ve akşam meyhane atmosferi puanları"
+        }
+      ],
+      "pros": [
+        "Sokak içi enerjik ve bakımlı meyhane düzeni",
+        "Tutarlı soğuk meze ve ara sıcak dengesi"
+      ],
+      "cons": [
+        "Hafta sonları yoğun sokak kalabalığı ve yüksek ortam sesi"
+      ],
+      "uncertainties": [
+        "Cuma-Cumartesi için erken rezervasyon gerekebilir"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-peri-art",
+      "categoryId": "date",
+      "resolvedName": "Peri Art Restoran İzmir",
+      "branchName": "Bostanlı, Yalı Blv. No:472/1, 35590 Karşıyaka/İzmir",
+      "placeId": "ChIJq1Gc6s7ZuxQRRCPxfMad3u4",
+      "coordinates": {
+        "lat": 38.454105899999995,
+        "lng": 27.1006218
+      },
+      "rating": 4.4,
+      "userRatingCount": 263,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.periartizmir.com/",
+      "mapsUri": "https://maps.google.com/?cid=17212368301681877828",
+      "recommendedPrimary": [
+        "Püreli Peri Köftesi",
+        "Füme Etli Ekşi Maya Pizza",
+        "Çıtır Kalamar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İmza Red Velvet Kek & Seçme Şarap Menüsü",
+          "note": "Ana yemek sonrasında şarap eşliğini veya kahve kapanışını tamamlayan imza tatlı.",
+          "proof": "periartizmir.com resmi menüsü ve Restoranım incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Sanat galerisi esintili şık salon ve Yalı Bulvarı akşam terası",
+        "crowdAndNoise": "Meyhane kalabalığından uzak sakin sohbet isteyen çiftlerle dengeli dolu",
+        "disadvantage": "Geleneksel rakı-meze yerine wine-and-dining bistro konseptindedir; fiyat seviyesi ortalamanın üzerindedir",
+        "transit": "Bostanlı Yalı Blv. No:472/1 (Ataköy / Bostanlı Tramvay yürüyüş hattı)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Peri Art İzmir)",
+          "url": "https://periartizmir.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Wine & dining konsepti, püreli Peri köftesi ve ekşi maya pizza"
+        },
+        {
+          "title": "Restoranım & Tvlpls",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Red Velvet kek, kalamar ve sakin buluşma ambiyansı"
+        }
+      ],
+      "pros": [
+        "Meyhane ve pub kalabalığından bağımsız sakin wine & dining ortamı",
+        "Farklı lezzet arayanlar için dengeli bistro menüsü"
+      ],
+      "cons": [
+        "Yemek sonrası saatlerde mutfak kapanışına dikkat gerektirir"
+      ],
+      "uncertainties": [
+        "Şarap seçkisi dönemsel olarak güncellenmektedir"
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-nuvia",
+      "categoryId": "kahvalti",
+      "resolvedName": "Nuvia Bostanlı Breakfast - Kitchen & Bar",
+      "branchName": "Bostanlı, Bestekar Yusuf Nalkesen Sok. 2 /A, 35590 Karşıyaka/İzmir",
+      "placeId": "ChIJ0ZmhZ5XZuxQRLH079WzMhEU",
+      "coordinates": {
+        "lat": 38.4561801,
+        "lng": 27.0941865
+      },
+      "rating": 4.6,
+      "userRatingCount": 7077,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.nuviabostanli.com/",
+      "mapsUri": "https://maps.google.com/?cid=5009353453885685036",
+      "recommendedPrimary": [
+        "Nuvia Serpme & Tabak Kahvaltı",
+        "Özel İçli Omlet Çeşitleri",
+        "Sıcak Sahanda & Börek Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Brunch Kokteylleri & Günün Dünya Mutfağı Alternatifleri",
+          "note": "Kahvaltı saatini aşan uzun hafta sonu buluşmalarında masayı devam ettiren hafif tabaklar.",
+          "proof": "Restaurant Guru ve Nelerimeşhur Bostanlı seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş sokak içi bahçe ve ferah iki cepheli oturma düzeni",
+        "crowdAndNoise": "Hafta sonu sabahları Bostanlı’nın en hareketli kahvaltı noktalarından",
+        "disadvantage": "Büyük ve popüler bir buluşma mekânı olduğundan hafta sonu geç saatlerde kalabalık ve gürültülü olabilir",
+        "transit": "Bostanlı Bestekar Yusuf Nalkesen Sk. No:2/A (Bostanlı İskele sahil yoluna paralel)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restaurant Guru (Nuvia Bostanlı)",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Omlet çeşitleri, serpme kahvaltı ve ferah sokak atmosferi"
+        },
+        {
+          "title": "Nelerimeşhur & Yerel Yazarlar",
+          "url": "https://www.nelerimeshur.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "7.000+ değerlendirmede yüksek kahvaltı istikrarı incelemeleri"
+        }
+      ],
+      "pros": [
+        "Yüksek ziyaretçi hacminde dahi bozulmayan kahvaltı standartı",
+        "Büyük masalara ve arkadaş buluşmalarına uygun ferah düzen"
+      ],
+      "cons": [
+        "Sessiz iki kişilik butik köşe arayanlar için hafta sonu kalabalık kalabilir"
+      ],
+      "uncertainties": [
+        "Pazar sabahları masa bekleme süresi uzayabilir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-cafe-de-feu",
+      "categoryId": "kahvalti",
+      "resolvedName": "Café de feu Breakfast & Brunch",
+      "branchName": "Bostanlı, Prof. Dr. Yusuf Vardar Sk. No:47/A, 35590 Karşıyaka/İzmir",
+      "placeId": "ChIJ-ZBoTArZuxQRl_sxA26bUx4",
+      "coordinates": {
+        "lat": 38.457197099999995,
+        "lng": 27.103665499999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 303,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2185261141007137687",
+      "recommendedPrimary": [
+        "Eggs Benedict (Hollandaise Soslu)",
+        "İngiliz Kahvaltısı (English Breakfast)",
+        "Pofuduk Pankek Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Nitelikli Sabah Kahvesi & Ev Tatlıları",
+          "note": "Tuzlu yumurtalı tabak sonrasında masayı pankek veya tatlıyla kapatan klasik eşlik.",
+          "proof": "Tecrübelerim Blog ve Bostanlı brunch rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Az masalı samimi butik kafe düzeni",
+        "crowdAndNoise": "Hafta sonu sabahları çiftler ve sakin brunch sevenlerle keyifli doluluk",
+        "disadvantage": "Sınırlı masa kapasitesi sebebiyle geç hafta sonu gelişlerinde yer beklemek gerekebilir",
+        "transit": "Bostanlı Prof. Dr. Yusuf Vardar Sk. No:47/A (Bostanlı Pazarı ve Nalkesen paralel arkası)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Tecrübelerim Gastronomi Günlüğü",
+          "url": "https://tecrubelerim.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Hollandaise soslu Eggs Benedict ve pofuduk pankek değerlendirmesi"
+        },
+        {
+          "title": "Yandex & Nearby Guides",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Butik brunch kalitesi ve İngiliz kahvaltısı memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Hollandaise sos ve yumurta pişirme kıvamında yüksek dikkat",
+        "Gürültülü büyük kahvaltı salonlarına göre sakin sokak konumu"
+      ],
+      "cons": [
+        "Klasik Türk serpmesi yerine tamamen tabak brunch odaklıdır"
+      ],
+      "uncertainties": [
+        "Hafta sonu brunch yoğunluğunda tatlı ve pankek servisi kısa gecikebilir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-ingo-breakfast",
+      "categoryId": "kahvalti",
+      "resolvedName": "ingo Breakfast Club",
+      "branchName": "Bostanlı, Bestekar Sadi Hoşses Sk no:23/A, 35590 Karşıyaka/İzmir",
+      "placeId": "ChIJfQNVv7PZuxQRbME2gLppeoU",
+      "coordinates": {
+        "lat": 38.46178,
+        "lng": 27.093154
+      },
+      "rating": 4.4,
+      "userRatingCount": 471,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://ingocoffee.com/",
+      "mapsUri": "https://maps.google.com/?cid=9618116203939021164",
+      "recommendedPrimary": [
+        "Fırından Taze Kruvasan Kahvaltı Tabağı",
+        "Yumurtalı Avokadolu Ekmek Üstü",
+        "Nitelikli Kahve & Smoothie"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kendi Fırınından Tuzlu Sandviç & Taş Fırın Dokunuşları",
+          "note": "Öğleye kayan kahvaltılarda klasik yumurta tabaklarını tamamlayan taze fırın alternatifleri.",
+          "proof": "Menu-TR ve Yandex Sadi Hoşses değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık sokak cepheli masa düzeni ve kahve barı bölümü",
+        "crowdAndNoise": "Sabahları ve hafta sonları genç kitleyle hareketli",
+        "disadvantage": "Yüksek popülaritesiyle paralel fiyatlar mahalle ortalamasının biraz üzerindedir ve hafta sonu kalabalıktır",
+        "transit": "Bostanlı Bestekar Sadi Hoşses Sk. No:23/A (Cengiz Topel kesişimi yakını)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Menu-TR (ingo Breakfast Club)",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Fırın kruvasan, kahvaltı tabakları ve kahve uyumu incelemesi"
+        },
+        {
+          "title": "Yandex & Foursquare",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Güler yüzlü servis ve Sadi Hoşses brunch popülerliği"
+        }
+      ],
+      "pros": [
+        "Taze fırın üretimi kruvasan ve ekmeğin kahvaltı kalitesine doğrudan yansıması",
+        "Güçlü kahve barı desteği"
+      ],
+      "cons": [
+        "Ortalama üstü fiyat algısı ve hafta sonu masa bulma yarışı"
+      ],
+      "uncertainties": [
+        "Fırın vitrini öğleden sonra belirli çeşitlerde azalabilir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-le-dimanche",
+      "categoryId": "kahvalti",
+      "resolvedName": "Le Dimanche",
+      "branchName": "Bostanlı, 1811. Sk. 25 A, 35000 Karşıyaka/İzmir",
+      "placeId": "ChIJOyLOJA_ZuxQRO9wvditkPxQ",
+      "coordinates": {
+        "lat": 38.4590283,
+        "lng": 27.0960738
+      },
+      "rating": 4.4,
+      "userRatingCount": 246,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://ledimanche.org/",
+      "mapsUri": "https://maps.google.com/?cid=1458994942120549435",
+      "recommendedPrimary": [
+        "Eggs Benedict / Eggs Royal (Brioche Üstü)",
+        "Fırında Dutch Baby (Füme Etli / Orman Meyveli)",
+        "Somon Fümeli Tuzlu Kruvasan"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Nutella Dolgulu & Orman Meyveli French Toast Çeşitleri",
+          "note": "Tatlı-tuzlu brunch dengesini kurmak isteyen masalar için paylaşımlık sıcak kapanış.",
+          "proof": "ledimanche.org resmi menüsü ve İzmir Mekan Rehberi incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Fransız kafe tarzı küçük bistro masaları ve 1811. Sokak dış oturumu",
+        "crowdAndNoise": "Geç kahvaltı tercih edenler ve hafta sonu brunchçılarıyla yoğun",
+        "disadvantage": "Brioche ve pankek porsiyonları ağır gelebilir; küçük masalar uzun serpme düzenine göre değil tabak servise göre kurgulanmıştır",
+        "transit": "Bostanlı 1811. Sk. No:25/A (Bostanlı İskele ve Çarşı merkezine ~3 dk)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Le Dimanche)",
+          "url": "https://ledimanche.org/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Gün boyu Fransız brunch, Eggs Royal ve Dutch Baby reçeteleri"
+        },
+        {
+          "title": "İzmir Mekan Rehberi",
+          "url": "https://www.izmirmekanrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Dutch Baby pankek ve tuzlu kruvasan incelemeleri"
+        }
+      ],
+      "pros": [
+        "İzmir genelinde nadir bulunan taze Dutch Baby ve gerçek brioche Eggs Royal",
+        "Gün boyu kahvaltı özgürlüğü"
+      ],
+      "cons": [
+        "Küçük bistro masa ölçüsü ve hafta sonu sıra bekleme ihtimali"
+      ],
+      "uncertainties": [
+        "Fırından taze Dutch Baby pişirme süresi yoğun saatlerde birkaç dakika uzayabilir"
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-rue-gelato",
+      "categoryId": "denemelisin",
+      "resolvedName": "Rue Gelato",
+      "branchName": "Bostanlı, 1798. Sk. No:11/B Sokak, 35590 Karşıyaka/İzmir",
+      "placeId": "ChIJN3Z227vZuxQRtTcvdyUF9nM",
+      "coordinates": {
+        "lat": 38.457555899999996,
+        "lng": 27.100016999999998
+      },
+      "rating": 5,
+      "userRatingCount": 482,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8355871817104046005",
+      "recommendedPrimary": [
+        "Mevsimlik Gerçek Meyveli Gelato",
+        "Bitter Çikolata & Fındıklı Gelato",
+        "Antep Fıstıklı Gelato"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Değişen Mevsim Sorbe & Kutu Paket Seçenekleri",
+          "note": "Yaz akşamlarında yürüyüş sırasında tadımlık veya eve götürmelik doğal sorbeler.",
+          "proof": "Yandex ve Restoranım Bostanlı dondurma incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük butik tezgâh ve 1798. Sokak önü birkaç tabure (al-götür ağırlıklı)",
+        "crowdAndNoise": "Akşam yürüyüşü saatlerinde özellikle yaz ve bahar aylarında çok canlı",
+        "disadvantage": "Geniş oturmalı kafe alanı yoktur; esas olarak yürüyüş öncesi/sonrası al-götür durağıdır",
+        "transit": "Bostanlı 1798. Sk. No:11/B (Bostanlı Sahil ve Tramvay durakları yakını)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yandex Mekanlar",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Doğal malzeme, mevsime göre değişen gelato lezzetleri ve içten servis"
+        },
+        {
+          "title": "Restoranım Bostanlı Seçkisi",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Butik tek şube İtalyan gelato doku değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Şeker baskın olmayan temiz meyve ve kakao dengesi",
+        "Samimi küçük atölye yaklaşımı"
+      ],
+      "cons": [
+        "Oturma alanı çok kısıtlıdır"
+      ],
+      "uncertainties": [
+        "Özel günlük tatlar vitrin dönüşümüne göre her gün değişebilir"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-gibi-vegan",
+      "categoryId": "denemelisin",
+      "resolvedName": "gibi vegan",
+      "branchName": "Bostanlı, Şehitler Blv No:49/C, 35590 Karşıyaka/İzmir",
+      "placeId": "ChIJTxqOI4HZuxQRmghIGDQIhzU",
+      "coordinates": {
+        "lat": 38.4599024,
+        "lng": 27.100949999999997
+      },
+      "rating": 4.8,
+      "userRatingCount": 319,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://instagram.com/gibivegan",
+      "mapsUri": "https://maps.google.com/?cid=3857060625704814746",
+      "recommendedPrimary": [
+        "Vegan İskender",
+        "Antakya Usulü Vegan Dürüm",
+        "El Yapımı Vegan Tiramisu"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Vegan Mantı & Bitkisel Ev Yapımı Tiramisu",
+          "note": "Ana tabaklardan sonra bitkisel krema dengesiyle övgü alan hafif tatlı kapanışı.",
+          "proof": "Menu-TR ve Yemeksepeti Bostanlı vegan mutfak incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Samimi küçük iç salon ve Şehitler Bulvarı önü masalar",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde şehir genelinden gelen vegan ve meraklı konuklarla dolu",
+        "disadvantage": "Küçük bir işletme olduğundan yoğun saatlerde boş masa sayısı kısıtlıdır",
+        "transit": "Bostanlı Şehitler Blv. No:49/C (Bostanlı Tramvay ve İZBAN geçiş aksı yakını)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Menu-TR (gibi vegan)",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Vegan İskender, Antakya dürüm ve bitkisel tiramisu incelemesi"
+        },
+        {
+          "title": "Yemeksepeti & Yandex",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sokak lezzeti uyumu, hızlı servis ve yüksek memnuniyet"
+        }
+      ],
+      "pros": [
+        "Geleneksel Türk sokak yemeklerini hayvansal ürün olmadan yüksek doku başarısıyla sunması",
+        "Şehrin her yakasından erişilen tekil uzman adres"
+      ],
+      "cons": [
+        "Küçük mekân ölçeğinde akşamları hızlı dolan masa sayısı"
+      ],
+      "uncertainties": [
+        "Bazı özel el yapımı mantı ve tatlılar günlük üretim bittiğinde kapanabilir"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-francala",
+      "categoryId": "denemelisin",
+      "resolvedName": "Francala Bostanlı",
+      "branchName": "Bostanlı, Bestekar Yusuf Nalkesen Sok. No:72A, 35590 Karşıyaka/İzmir",
+      "placeId": "ChIJm8PM7F3ZuxQRhZldeawDbyI",
+      "coordinates": {
+        "lat": 38.464161,
+        "lng": 27.099466699999997
+      },
+      "rating": 4.8,
+      "userRatingCount": 174,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2481205959009868165",
+      "recommendedPrimary": [
+        "Ekşi Maya Ekmekli Özel Şarküteri Sandviç",
+        "Ata Tohumu Ekmekli Gourmet Tost",
+        "Taze Günlük Bowl Çeşitleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mevsimsel Makarna & Sağlıklı Kase Seçenekleri",
+          "note": "Sandviç ve tost dışında sıcak öğle yemeği arayanlar için sade mutfak tabakları.",
+          "proof": "Yemeksepeti ve Dijital.link Francala güncel menüleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık sokak cepheli sakin oturma düzeni",
+        "crowdAndNoise": "Öğle arası çalışanlar ve Nalkesen yürüyüşçüleriyle dengeli dolu",
+        "disadvantage": "Gece meyhanesi atmosferi yerine gündüz/erken akşam fırın-kafe çizgisindedir",
+        "transit": "Bostanlı Bestekar Yusuf Nalkesen Sk. No:72A (Bostanlı İskele’ye yürüyerek ~8 dk)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemeksepeti (Francala Bostanlı)",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ata tohumu ekmekler, sandviç ve bowl puanları"
+        },
+        {
+          "title": "Dijital.link Menü Arşivi",
+          "url": "https://dijital.link/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Ekşi mayalı gurme tost ve günlük fırın çeşitleri"
+        }
+      ],
+      "pros": [
+        "Gerçek ekşi maya ve ata tohumu ekmekle hazırlanan doyurucu sandviçler",
+        "Ana cadde karmaşasından bir adım içeride dingin nokta"
+      ],
+      "cons": [
+        "Geç akşam yemeklerinden ziyade gündüz-öğle temposuna uygundur"
+      ],
+      "uncertainties": [
+        "Bazı ekşi maya ekmek çeşitleri yalnızca belirli fırın günlerinde çıkabilir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-galeb-dondurma",
+      "categoryId": "denemelisin",
+      "resolvedName": "Galeb Dondurma Dükkanı",
+      "branchName": "Bostanlı, Cemal Gürsel Cd. No:530 D:C, 35590 Karşıyaka/İzmir",
+      "placeId": "ChIJ9TLUalfZuxQR8d6vKEUy1x0",
+      "coordinates": {
+        "lat": 38.458408000000006,
+        "lng": 27.0956224
+      },
+      "rating": 4.7,
+      "userRatingCount": 293,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.galeb.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=2150242619709447921",
+      "recommendedPrimary": [
+        "Sade Salep Kıvamlı Kesme Dondurma",
+        "Gerçek Antep Fıstıklı Dondurma",
+        "Mevsim Meyveli Çeşitler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Dondurma Eşlikli Türk Kahvesi & Kutu Servis",
+          "note": "Sahil yürüyüşü öncesi veya sonrası masa ya da bank keyfini tamamlayan sade eşlikçiler.",
+          "proof": "galeb.com.tr ve İzmir Mekan Rehberi sahil dondurmacıları dosyası"
+        }
+      ],
+      "suitability": {
+        "seating": "Cadde üzeri küçük oturma düzeni ve çoğunlukla sahil yürüyüşüne al-götür",
+        "crowdAndNoise": "Akşam sahil yürüyüşü saatlerinde yoğun",
+        "disadvantage": "İtalyan gelato yerine daha yoğun sakızlı-salepli geleneksel kıvam sunar; masa sayısı azdır",
+        "transit": "Bostanlı Cemal Gürsel Cd. No:530/C (Bostanlı İskele sahil yürüyüş yolu üzeri)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Galeb Dondurma)",
+          "url": "https://www.galeb.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Gerçek salep, meyve ve kesme dondurma üretim anlayışı"
+        },
+        {
+          "title": "İzmir Mekan Rehberi",
+          "url": "https://www.izmirmekanrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bostanlı sahil bandında geleneksel dondurma durağı incelemesi"
+        }
+      ],
+      "pros": [
+        "Buzlanma ve yapay kıvamlaştırıcı olmadan temiz gerçek salep dokusu",
+        "Tam sahil yürüyüş yolu üzeri"
+      ],
+      "cons": [
+        "Geniş oturma salonu bulunmaması"
+      ],
+      "uncertainties": [
+        "Kış aylarında akşam kapanış ve çeşit sayısı daralabilir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-neuf-patisserie",
+      "categoryId": "denemelisin",
+      "resolvedName": "Neuf Patisserie & Boulangerie",
+      "branchName": "Bostanlı, 1820/1. Sk. No:7, 35590 Karşıyaka/İzmir",
+      "placeId": "ChIJL2vpvKXZuxQRrbT90eqnRdI",
+      "coordinates": {
+        "lat": 38.459976,
+        "lng": 27.098673599999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 594,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://neufpatisserie.com/?utm_source=gmb&utm_medium=gmb_link",
+      "mapsUri": "https://maps.google.com/?cid=15151701148345152685",
+      "recommendedPrimary": [
+        "Klasik Tereyağlı Kruvasan",
+        "Dolgulu Cruffin & Fransız Tartları",
+        "Sable Parmesan Kurabiye"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Artisan Ekmekler & Tuzlu Sable Parmesan Kurabiyeler",
+          "note": "Tatlı pastane vitrininin yanında eve veya çay saatine alınabilecek tuzlu ve ekmek seçkileri.",
+          "proof": "neufpatisserie.com resmi vitrin listesi ve İzmir Mekan Rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük butik patisserie içi ve 1820/1. Sokak masaları",
+        "crowdAndNoise": "Sabah ve öğleden sonra pastane severlerle yüksek ilgi",
+        "disadvantage": "Fransız tereyağlı üretimi nedeniyle fiyatlar mahalle pastanelerinin üzerindedir ve popüler çeşitler erken biter",
+        "transit": "Bostanlı 1820/1. Sk. No:7 (Bostanlı İZBAN ve Nergiz yürüyüş mesafesi)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Neuf Patisserie)",
+          "url": "https://www.neufpatisserie.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Fransız viennoiserie, kruvasan, Sable Parmesan ve Biscotti"
+        },
+        {
+          "title": "İzmir Mekan Rehberi",
+          "url": "https://www.izmirmekanrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Günlük taze cruffin, tart ve kruvasan katman kalitesi incelemesi"
+        }
+      ],
+      "pros": [
+        "Gerçek tereyağı katlamalı çıtır-katmanlı kruvasan tekniği",
+        "AVM şubeleri açmadan korunan tek şubeli atölye kalitesi"
+      ],
+      "cons": [
+        "Öğleden sonra en popüler tart ve kruvasanların tükenebilmesi"
+      ],
+      "uncertainties": [
+        "Bazı mevsim meyveli tart çeşitleri hafta sonuna özel çıkabilir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-karsiyaka-meze-evi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Karşıyaka Meze Evi",
+      "branchName": "Bostanlı, Yalı Blv. No:534 D:A, 35590 Karşıyaka/İzmir",
+      "placeId": "ChIJrU9ZmpTZuxQRYnuHaZVieKQ",
+      "coordinates": {
+        "lat": 38.4587037,
+        "lng": 27.0965365
+      },
+      "rating": 4.6,
+      "userRatingCount": 703,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11851330813285596002",
+      "recommendedPrimary": [
+        "Tereyağlı Yaprak & Arnavut Ciğeri",
+        "Humus, Şakşuka & Köpoğlu Meze Tabağı",
+        "Zeytinyağlı Yaprak Sarma & Enginar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Güveçler & Paket Servislik Meze Çeşitleri",
+          "note": "Akşam ev sofraları için tartılıp hazırlanabilen soğuk meze ve sıcak ev yemeği çeşitleri.",
+          "proof": "İzmir Mekan Rehberi ve Yemeksepeti Karşıyaka meze seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağırlıklı tezgâh/şarküteri satışı ve sade esnaf lokantası masaları",
+        "crowdAndNoise": "Öğle yemeklerinde semt çalışanları ve akşam öncesi meze alışverişiyle hareketli",
+        "disadvantage": "Geleneksel şık meyhane düzeni yerine şarküteri-lokanta düzenindedir; bazı mezelerin tuz oranı güçlü bulunabilmektedir",
+        "transit": "Bostanlı Yalı Blv. No:534/A (Bostanlı İskele tramvay durağı hemen yakını)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "İzmir Mekan Rehberi",
+          "url": "https://www.izmirmekanrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Uzun yıllık Bostanlı meze ve günlük ev yemeği geleneği"
+        },
+        {
+          "title": "Yemeksepeti & Yandex",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Şakşuka, humus, tereyağlı ciğer lezzetleri ve tuz dengesi notları"
+        }
+      ],
+      "pros": [
+        "Gündelik taze üretilen geniş zeytinyağlı ve meze yelpazesi",
+        "Bostanlı İskele yakını pratik konum"
+      ],
+      "cons": [
+        "Restoran ambiyansı yerine hızlı lokanta ve paket alışveriş odaklı yapı"
+      ],
+      "uncertainties": [
+        "Özel zeytinyağlılar öğleden sonra tükenebilir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-pisir-balikcim",
+      "categoryId": "balik",
+      "resolvedName": "Pişir Balıkçım",
+      "branchName": "Bostanlı, 1787/1. Sk. No:29, 35590 Karşıyaka/İzmir",
+      "placeId": "ChIJz6YN_ZTZuxQRR_KcCQaW228",
+      "coordinates": {
+        "lat": 38.4577289,
+        "lng": 27.099897
+      },
+      "rating": 4.4,
+      "userRatingCount": 1283,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://wa.me/905304748007",
+      "mapsUri": "https://maps.google.com/?cid=8060200910784885319",
+      "recommendedPrimary": [
+        "Izgara Çipura & Levrek",
+        "Taze Mevsim Balığı Tava",
+        "Şevketi Bostan & Deniz Börülcesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Hazırlanan Ege Otları & Klasik Soğuk Mezeler",
+          "note": "Izgara ve tava balık öncesinde masaya eklenen sade ve hesaplı soğuk başlangıçlar.",
+          "proof": "Yıldırmaz İzmir Rehberi ve Yandex Bostanlı balıkçıları incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı iç dükkân ve 1787/1. Sokak dış oturma alanı",
+        "crowdAndNoise": "Akşam yemeklerinde mahalle sakinleri ve düzenli balık müdavimleri",
+        "disadvantage": "Yoğun akşam yemeklerinde masalar birbirine yakındır ve ses seviyesi artabilir; lüks deniz cephesi manzarası yoktur",
+        "transit": "Bostanlı 1787/1. Sk. No:29 (Bostanlı İskele ve Nalkesen arka sokağı)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yandex Mekanlar (Pişir Balıkçım)",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tek şube taze balık pişiricisi, ızgara ve meze memnuniyeti"
+        },
+        {
+          "title": "İzmir Bölge Rehberi (Yıldırmaz)",
+          "url": "https://yildirmaz.org/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bostanlı makul fiyatlı günlük balık ve meze incelemesi"
+        }
+      ],
+      "pros": [
+        "Şeffaf ve makul mahalle balıkçısı fiyat dengesi",
+        "Günlük taze tezgâh sirkülasyonu"
+      ],
+      "cons": [
+        "Denize sıfır manzara olmaması ve yoğun akşamlarda yakın masa düzeni"
+      ],
+      "uncertainties": [
+        "Günlük av çeşitliliği mevsime ve balık hâli gelişine bağlıdır"
+      ],
+      "selectionScore": 76,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bostanli-olta-balik",
+      "categoryId": "balik",
+      "resolvedName": "OLTA BALIK BOSTANLI RESTORAN",
+      "branchName": "Bostanlı, 2018. Sk. No:8, 35590 Karşıyaka/İzmir",
+      "placeId": "ChIJ19MlkpDZuxQRG5UhNkVUuUQ",
+      "coordinates": {
+        "lat": 38.457547999999996,
+        "lng": 27.093715999999997
+      },
+      "rating": 4.4,
+      "userRatingCount": 1103,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4952081921508218139",
+      "recommendedPrimary": [
+        "Meze Dolabından Günlük Ege Seçkisi",
+        "Izgara Deniz Balıkları",
+        "Kalamar & Tereyağlı Karides"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zengin Meze Dolabı & Sıcak Deniz Mahsulleri Ara Sıcakları",
+          "note": "Ana balık öncesinde tezgâhtan görerek seçilen günlük soğuk ve sıcak deniz tatları.",
+          "proof": "iyimasa.com.tr ve İzmir Mekan Rehberi Bostanlı dosyası"
+        }
+      ],
+      "suitability": {
+        "seating": "Bakımlı iç salon ve sahil parkına yakın açık akşam masaları",
+        "crowdAndNoise": "Hafta içi iş-aile yemekleri ve hafta sonu akşamları yüksek doluluk",
+        "disadvantage": "Üst fiyat bandında yer alır ve hafta sonu akşamları rezervasyonsuz boş masa bulmak zordur",
+        "transit": "Bostanlı 2018. Sk. No:8 (Güzel Sanatlar Parkı ve Cemal Gürsel sahil bandı karşısı)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "İyiMasa (Olta Balık Bostanlı)",
+          "url": "https://iyimasa.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Güzel Sanatlar Parkı karşısı tek şube balık ve meze dolabı seçkisi"
+        },
+        {
+          "title": "İzmir Mekan Rehberi & Mekan.com",
+          "url": "https://www.izmirmekanrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Zengin meze çeşitleri ve deniz ürünleri puanları"
+        }
+      ],
+      "pros": [
+        "Taze ve geniş soğuk meze dolabı seçeneği",
+        "Sahil parkı kenarında oturmuş klasik balık restoranı deneyimi"
+      ],
+      "cons": [
+        "Yüksek fiyat seviyesi ve hafta sonu rezervasyon gereksinimi"
+      ],
+      "uncertainties": [
+        "Sezonsal büyük deniz balıkları günlük mezat durumuna göre değişir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    }
+  ]
+}

@@ -1,0 +1,1882 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "eskisehir-merkez",
+  "displayName": "Eskişehir Merkez (Odunpazarı & Tepebaşı)",
+  "verifiedAt": "2026-11-18T09:18:35.027Z",
+  "selectedCount": 26,
+  "rejectedControls": [
+    {
+      "id": "ctrl-esk-guernica-hosnudiye-chain",
+      "resolvedName": "Guernica Hoşnudiye",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-esk-guernica-batikent-chain",
+      "resolvedName": "Guernica Batıkent",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-esk-cro-cups-chain",
+      "resolvedName": "Cro & Cups Kruvasan Kahve Eskişehir",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-esk-pizzalavera-chain",
+      "resolvedName": "Pizza La Vera Eskişehir",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-esk-ilforno-chain",
+      "resolvedName": "İl Forno",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-esk-nevada-chain",
+      "resolvedName": "Nevada Coffee Eskişehir Anadolu Üniversitesi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-esk-walkers-chain",
+      "resolvedName": "Walker's Hatboyu",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-esk-kaleicimuh-chain",
+      "resolvedName": "Kaleiçi Muhallebicisi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-esk-aytenusta-chain",
+      "resolvedName": "Ayten Usta Gurme Restoran Eskişehir Kahvaltı | Yemek",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-esk-mazlumlar-purity",
+      "resolvedName": "Mazlumlar Muhallebicisi",
+      "reason": "kahve_category_not_coffee_specialist:dessert_shop"
+    },
+    {
+      "id": "ctrl-esk-helvacimutlu-purity",
+      "resolvedName": "MEŞHUR HELVACI MUTLU -ÇARŞI",
+      "reason": "kahve_category_not_coffee_specialist:confectionery"
+    },
+    {
+      "id": "ctrl-esk-sivrihisar-outside",
+      "resolvedName": "NAPOLİ VERA 26",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Odunpazarı/Tepebaşı/Paşa/Pasa/Orta/Şarkiye/Sarkiye/Arifiye/İstiklal/Istiklal/Deliklitaş/Deliklitas/Akarbaşı/Akarbasi/Vişnelik/Visnelik/Kurtuluş/Kurtulus/Hoşnudiye/Hosnudiye/Eskibağlar/Eskibaglar/Yenibağlar/Yenibaglar/Güllük/Gulluk/Cumhuriye/Cumhuriyet/Batıkent/Batikent/Mustafa Kemal Paşa/Uluönder/Sümer/Akcami/Çamlıca/Çankaya/Merkez Yeni, adres: Karacalar, Eskişehir Cd. No: 39A, 26600 Sivrihisar/Eskişehir)"
+    },
+    {
+      "id": "ctrl-esk-kutahya-outside",
+      "resolvedName": "Biga Napoli pizza",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Odunpazarı/Tepebaşı/Paşa/Pasa/Orta/Şarkiye/Sarkiye/Arifiye/İstiklal/Istiklal/Deliklitaş/Deliklitas/Akarbaşı/Akarbasi/Vişnelik/Visnelik/Kurtuluş/Kurtulus/Hoşnudiye/Hosnudiye/Eskibağlar/Eskibaglar/Yenibağlar/Yenibaglar/Güllük/Gulluk/Cumhuriye/Cumhuriyet/Batıkent/Batikent/Mustafa Kemal Paşa/Uluönder/Sümer/Akcami/Çamlıca/Çankaya/Merkez Yeni, adres: Servi, Merkez Sk. no:23 D:1b, 43020 Kütahya Merkez/Kütahya)"
+    },
+    {
+      "id": "ctrl-esk-pino-arifiye-low",
+      "resolvedName": "Pino",
+      "reason": "below_quality_threshold:★4(1043)"
+    },
+    {
+      "id": "ctrl-esk-ordinarius-low",
+      "resolvedName": "Ordinarius Coffee Sümer",
+      "reason": "below_quality_threshold:★4.1(658)"
+    },
+    {
+      "id": "ctrl-esk-fiore-low",
+      "resolvedName": "Fiore Pizza",
+      "reason": "below_quality_threshold:★4.3(543)"
+    },
+    {
+      "id": "ctrl-esk-papagan-low",
+      "resolvedName": "Papağan Çiğbörek",
+      "reason": "below_quality_threshold:★3.7(9906)"
+    },
+    {
+      "id": "ctrl-esk-abdusselam-low",
+      "resolvedName": "Abdüsselam Balaban Kebap Salonu",
+      "reason": "below_quality_threshold:★3.9(8116)"
+    },
+    {
+      "id": "ctrl-esk-flores-lowvol",
+      "resolvedName": "Flores Roastery & Coffee Bar",
+      "reason": "below_quality_threshold:★5(8)"
+    },
+    {
+      "id": "ctrl-esk-antenato-lowvol",
+      "resolvedName": "Antenato Pizza&Burger",
+      "reason": "below_quality_threshold:★5(34)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "esk-marco-pizzeria",
+      "categoryId": "pizza",
+      "resolvedName": "Marco Pizzeria",
+      "branchName": "Eskibağlar, Oğuz Sk. No:2/A, 26100 Tepebaşı/Eskişehir",
+      "placeId": "ChIJX95eiecVzBQRkYZ9Mk6BUUY",
+      "coordinates": {
+        "lat": 39.781363999999996,
+        "lng": 30.5144484
+      },
+      "rating": 4.5,
+      "userRatingCount": 874,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5066973228623038097",
+      "recommendedPrimary": [
+        "Margherita",
+        "Dört Peynirli Napoli Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sarımsaklı Zeytinyağlı Ekmek",
+          "note": "Ana pizza siparişi öncesi sıcak paylaşımlık fırın eşlikçisi.",
+          "proof": "Yandex + Restoranim menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Eskibağlar sokak dokusu içinde kompakt iç masa düzeni",
+        "crowdAndNoise": "Üniversite çevresi nedeniyle öğleden akşama istikrarlı doluluk",
+        "disadvantage": "Merkez Bağlar sokaklarında yer aldığı için özel araçla park yeri bulmak zor olabilir",
+        "transit": "Eskibağlar Oğuz Sokak, Espark ve tramvay hattına yürüyüş mesafesinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yandex Eskişehir Pizzacıları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "San Marzano domatesi ve Napoli usulü hamur incelemesi"
+        },
+        {
+          "title": "Restoranim & Restaurant Guru",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "870+ kullanıcı değerlendirmesiyle Eskişehir pizzacı seçkisi"
+        }
+      ],
+      "pros": [
+        "874 değerlendirmede ★4.5 tutarlılık",
+        "San Marzano malzemeli gerçek Napoli odağı"
+      ],
+      "cons": [
+        "Eskibağlar içinde dar sokak ve otopark kısıtı"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşam paket trafiği masa servisini yavaşlatabilir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-sib-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "Sib Pizza",
+      "branchName": "Vişnelik, Erkan Sk., 26020 Odunpazarı/Eskişehir",
+      "placeId": "ChIJ_x8R1aUXzBQRXYKV9r7QLx0",
+      "coordinates": {
+        "lat": 39.7669047,
+        "lng": 30.5031816
+      },
+      "rating": 4.7,
+      "userRatingCount": 84,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://sibpizza.com/",
+      "mapsUri": "https://maps.google.com/?cid=2103129069604667997",
+      "recommendedPrimary": [
+        "Napoliten Margherita",
+        "Özel İtalyan Sucuklu Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Trüflü Mantar Soslu Pizza",
+          "note": "Klasik kırmızı sos dışında beyaz tabanlı öne çıkan alternatif.",
+          "proof": "Sib Pizza resmi site + Yandex"
+        }
+      ],
+      "suitability": {
+        "seating": "Vişnelik mahalle dokusunda sıcak iç salon masaları",
+        "crowdAndNoise": "Akşam saatleri aileler ve pizza müdavimleriyle dengeli doluluk",
+        "disadvantage": "Odun fırını temposu yoğun akşam saatlerinde bekleme süresi yaratabilir",
+        "transit": "Vişnelik Erkan Sokak, Atatürk Bulvarı tramvay durağından kısa yürüyüş"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Sib Pizza Resmi Site",
+          "url": "https://sibpizza.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Odun ateşi Napoliten hamur ve İtalyan un/Ayaş domates detayı"
+        },
+        {
+          "title": "Restoranim & Yandex İncelemeleri",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Vişnelik ve Batıkent iki şubeli yerel Eskişehir markası"
+        }
+      ],
+      "pros": [
+        "Odun ateşinde yüksek ısı Napoli pişirimi",
+        "Güçlü ★4.7 memnuniyet"
+      ],
+      "cons": [
+        "Eskişehir içi Batıkent şubesi dışında ayrı salonu küçük kalabilir"
+      ],
+      "uncertainties": [
+        "Hamur günlük stokla piştiğinden geç saatte çeşitler azalabilir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-vero-rosso",
+      "categoryId": "pizza",
+      "resolvedName": "Vero Rosso",
+      "branchName": "Batıkent, Org. Kıvrıkoğlu Cd. 71/D, 26180 Tepebaşı/Eskişehir",
+      "placeId": "ChIJByi6l8cXzBQRerjCq9axUmA",
+      "coordinates": {
+        "lat": 39.7947883,
+        "lng": 30.442523899999998
+      },
+      "rating": 4.4,
+      "userRatingCount": 227,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.verorosso.com/",
+      "mapsUri": "https://maps.google.com/?cid=6940805511294138490",
+      "recommendedPrimary": [
+        "Vero Rosso Special Pizza",
+        "Pepperoni & Roka Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze İtalyan Salata",
+          "note": "Odun fırını pizzaların yanında hafif denge sağlayan yeşil tabak.",
+          "proof": "Vero Rosso resmi sitesi + yerel harita"
+        }
+      ],
+      "suitability": {
+        "seating": "Batıkent içinde ferah aile masalı restoran düzeni",
+        "crowdAndNoise": "Akşamları Batıkent sakinleri ve aile gruplarıyla dolu",
+        "disadvantage": "Şehir merkezi Odunpazarı/Adalar hattından uzakta, Batıkent mahallesi içindedir",
+        "transit": "Batıkent Orgeneral Kıvrıkoğlu Caddesi üzerinde otobüs ve araç ulaşımı kolay"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Vero Rosso Resmi Site",
+          "url": "https://verorosso.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Tek şubeli aile işletmesi Napoli pizza menüsü"
+        },
+        {
+          "title": "Yandex Batıkent Restoranları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "227 değerlendirmeyle istikrarlı aile puanlaması"
+        }
+      ],
+      "pros": [
+        "Tek şubeli samimi aile işletmesi",
+        "Batıkent bölgesinde oturuma elverişli ortam"
+      ],
+      "cons": [
+        "Merkez yürüyüş aksının batısında kalır"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamları grup rezervasyonları masa doluluğunu artırır"
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-oven-halls",
+      "categoryId": "pizza",
+      "resolvedName": "Oven Hall's Pizzeria & Jönblue Souffle",
+      "branchName": "Batıkent Mahallesi Bağ Sokak No 13/aa, Batıkent, 26180 Tepebaşı/Eskişehir",
+      "placeId": "ChIJE--2Ru4VzBQR-yFfpZ1O9wE",
+      "coordinates": {
+        "lat": 39.7900868,
+        "lng": 30.445837899999997
+      },
+      "rating": 4.4,
+      "userRatingCount": 179,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.ovenhalls.com/",
+      "mapsUri": "https://maps.google.com/?cid=141668352276767227",
+      "recommendedPrimary": [
+        "Casablanca Pizza",
+        "Milano Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Jönblue Sufle",
+          "note": "Pizzadan sonra sıcak servis edilen mekanla özdeş imza tatlısı.",
+          "proof": "Oven Halls resmi menü + Yandex"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük, samimi iç mekân masaları",
+        "crowdAndNoise": "Akşam yemeği ve tatlı eşleşmesi arayan Batıkent müdavimleriyle canlı",
+        "disadvantage": "Küçük salon kapasitesi ve Batıkent konumu nedeniyle kalabalık gruplar için uygun değildir",
+        "transit": "Batıkent Bağ Sokak üzerinden araç ve tramvay/otobüs aktarmasıyla erişilir"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Oven Halls Resmi Site",
+          "url": "https://ovenhalls.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Casablanca, Milano pizza ve Jönblue sufle menüsü"
+        },
+        {
+          "title": "Restoranim & Yandex Doğrulaması",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur dokusu ve hızlı sıcak servis puanlaması"
+        }
+      ],
+      "pros": [
+        "Tatlı (Jönblue sufle) ile tamamlanan butik pizza deneyimi",
+        "Taze sos vurgusu"
+      ],
+      "cons": [
+        "Küçük oturma kapasitesi ve merkez dışı konum"
+      ],
+      "uncertainties": [
+        "Yoğun paket saatlerinde hamur stokuna göre bekleme uzayabilir"
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-etevim-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Etevim Cafe & Burger",
+      "branchName": "Güllük, Zübeyde Hanım Blv No:13 D:B, 26170 Tepebaşı/Eskişehir",
+      "placeId": "ChIJ1WsoR_UVzBQRDJZKJsmh680",
+      "coordinates": {
+        "lat": 39.7814713,
+        "lng": 30.515841299999995
+      },
+      "rating": 4.6,
+      "userRatingCount": 1048,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.etevim.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=14838131282605151756",
+      "recommendedPrimary": [
+        "Etevim Lokum Burger",
+        "Dry-Aged Dana Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Küp Patates & Kasap Köfte Tabağı",
+          "note": "Burgerlerin yanında et odaklı ana tabak ve çıtır eşlikçi.",
+          "proof": "Etevim resmi sitesi + Menulook"
+        }
+      ],
+      "suitability": {
+        "seating": "Hatboyu hattında düzenli iç salon ve ön cephe oturumu",
+        "crowdAndNoise": "Öğle sonrası ve akşam et kalitesine göre tercih eden kitleyle yoğun",
+        "disadvantage": "Pino gibi klasik öğrenci fiyatlarına göre kasap eti odaklı üst segmentte yer alır",
+        "transit": "Güllük Zübeyde Hanım Bulvarı / Hatboyu-1 Caddesi, Espark arkası yürüyüş aksı"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Etevim Resmi Site",
+          "url": "https://etevim.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Steakhouse et üretimi ve Hatboyu burger şubesi bilgisi"
+        },
+        {
+          "title": "Yemeksepeti & Menulook Seçkisi",
+          "url": "https://menulook.io/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1.000+ değerlendirmede et kalitesi ve lokum burger memnuniyeti"
+        }
+      ],
+      "pros": [
+        "1.048 değerlendirmede ★4.6 puan başarısı",
+        "Steakhouse et kalitesi ve tek şehir yerel marka"
+      ],
+      "cons": [
+        "Popüler akşam saatlerinde Hatboyu bulvarında kalabalık yaşanabilir"
+      ],
+      "uncertainties": [
+        "Steakhouse ile burger menüsü birbirinden ayrı Hatboyu şubesinde sunulur"
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-prime-smash",
+      "categoryId": "hamburger",
+      "resolvedName": "Prime Smash Burger",
+      "branchName": "Güllük, Zübeyde Hanım Blv 13/A, 26170 Tepebaşı/Eskişehir",
+      "placeId": "ChIJ3wDUQSAVzBQRFBjTlbzdjqU",
+      "coordinates": {
+        "lat": 39.7814899,
+        "lng": 30.515703
+      },
+      "rating": 4.4,
+      "userRatingCount": 385,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.google.com/search?q=Prime+Smash+Burger&stick=H4sIAAAAAAAA_-NgU1I1qDA0SU42NDUyMDFMMTEwSEmzMqhINLVITUlJSrY0TTE2tDA0WcQqFFCUmZuqEJybWJyh4FRalJ5aBAB_mjr8PgAAAA&hl=tr&mat=CaJjcXHRILdQElYBEKoLaTkX4S4ZMJsLpCSnztJhyBPtvum33DjDci43WniitCfBHug_4zzot_YsLFxwIYNzgPZwrnS6SliCTFAIPP4mj7LgtaJjS5w1jFWbSyfAdOQt4A&authuser=4",
+      "mapsUri": "https://maps.google.com/?cid=11929716264988252180",
+      "recommendedPrimary": [
+        "Füme Kaburgalı Smash Burger",
+        "Trüflü Smash Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Cheddarlı Patates Kızartması",
+          "note": "İnce smash menülerini doyurucu hâle getiren sıcak patates eşlikçisi.",
+          "proof": "Yemensa + yerel harita incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Modern burger barı düzeni, hızlı servis",
+        "crowdAndNoise": "Akşamları öğrenci ve smash burger severlerle hareketli",
+        "disadvantage": "Güllük aksında park yeri kısıtlıdır; masa düzeni hızlı yemek temposuna göre kuruludur",
+        "transit": "Güllük Zübeyde Hanım Bulvarı, tren garı ve Espark çevresinden yürüme mesafesi"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemensa Eskişehir Seçkisi",
+          "url": "https://www.yemensa.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hatboyu smash burger teknikleri ve kaburga/trüf çeşitleri"
+        },
+        {
+          "title": "Yandex Yerel Değerlendirmeler",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "385 değerlendirme ile tek şubeli yerel smash burger doğrulaması"
+        }
+      ],
+      "pros": [
+        "Eskişehir merkezde gerçek smash teknikli bağımsız burgerci",
+        "Dengeli puan istikrarı"
+      ],
+      "cons": [
+        "Küçük oturma alanı hızlı tüketime uygun"
+      ],
+      "uncertainties": [
+        "Akşam zirve saatlerinde paket sırası mutfak süresini uzatabilir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-coffeeciel",
+      "categoryId": "kahve",
+      "resolvedName": "Coffeeciel",
+      "branchName": "Vişnelik, Ünal Sk. no:14/A, 26020 Odunpazarı/Eskişehir",
+      "placeId": "ChIJHQ7Ukp4XzBQRIX3eR-dMSOs",
+      "coordinates": {
+        "lat": 39.7658789,
+        "lng": 30.501643500000004
+      },
+      "rating": 4.8,
+      "userRatingCount": 217,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://coffeeciel.com/",
+      "mapsUri": "https://maps.google.com/?cid=16953885353463151905",
+      "recommendedPrimary": [
+        "Nitelikli Filtre Kahve (V60)",
+        "Flat White"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Fırın Tatlıları",
+          "note": "Kahve servisi yanında porsiyonu doyurucu tatlı alternatifleri.",
+          "proof": "Coffeeciel resmi sitesi + Wanderlog"
+        }
+      ],
+      "suitability": {
+        "seating": "Sessiz Vişnelik sokak atmosferinde ferah iç ve dış oturma alanı",
+        "crowdAndNoise": "Gündüz çalışmak ve sakin kahve içmek isteyenlerle düzenli dolu",
+        "disadvantage": "Vişnelik ara sokağında kaldığı için Adalar’ın yürüyüş kalabalığından biraz içeridedir",
+        "transit": "Vişnelik Ünal Sokak, Atatürk Bulvarı ve Taşköprü hattından kısa yürüyüş"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Coffeeciel Resmi Site",
+          "url": "https://coffeeciel.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Roastery kimliği, Vişnelik adresi ve menü kapsamı"
+        },
+        {
+          "title": "Wanderlog Eskişehir Seçkisi",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahve kalitesi ve çalışma/oturma düzeni doğrulaması"
+        }
+      ],
+      "pros": [
+        "Gerçek coffee_roastery sınıflandırması ve ★4.8 yüksek puan",
+        "Sakin Vişnelik sokağı"
+      ],
+      "cons": [
+        "Adalar merkez kalabalığına göre 10-15 dakikalık yürüme mesafesi"
+      ],
+      "uncertainties": [
+        "Hafta sonu öğleden sonra çalışma masaları hızla dolabilir"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-kedd-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Kedd Coffee",
+      "branchName": "İstiklal, Adalar Sk. No:35/ab, 26130 Odunpazarı/Eskişehir",
+      "placeId": "ChIJvWXdiggWzBQROEXVnYX2kgo",
+      "coordinates": {
+        "lat": 39.7754048,
+        "lng": 30.5148996
+      },
+      "rating": 4.6,
+      "userRatingCount": 576,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.keddcoffee.com/",
+      "mapsUri": "https://maps.google.com/?cid=761942340718118200",
+      "recommendedPrimary": [
+        "V60 / Chemex Manuel Demleme",
+        "Cortado"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Ev Yapımı Tatlı",
+          "note": "Küçük butik tezgâhta kahve eşlikçisi el yapımı tatlılar.",
+          "proof": "Kedd Coffee resmi sitesi + yerel harita"
+        }
+      ],
+      "suitability": {
+        "seating": "Adalar merkezinde butik iç ve sokak önü masaları",
+        "crowdAndNoise": "Öğleden akşama kahve müdavimleri ve merkez gezginleriyle yoğun",
+        "disadvantage": "Küçük metrekare nedeniyle uzun süre bilgisayar başında kalabalık çalışma masası arayanlara dar gelebilir",
+        "transit": "İstiklal Adalar Sokak No:35, Porsuk Çayı ve Doktorlar yürüyüş aksı üzerinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Kedd Coffee Resmi Site",
+          "url": "https://keddcoffee.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Kendi kavurduğu çekirdekler, manuel demleme ve Adalar tek şubesi"
+        },
+        {
+          "title": "Eskişehir Kahve Rehberleri",
+          "url": "https://www.gastrofests.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bağımsız üçüncü nesil kavurucu seçkisi"
+        }
+      ],
+      "pros": [
+        "576 değerlendirmede ★4.6 tutarlılığı",
+        "Merkezde yürünerek ulaşılabilen kendi kavurucusu"
+      ],
+      "cons": [
+        "Butik alanı yoğun saatlerde dolabiliyor"
+      ],
+      "uncertainties": [
+        "Tatlı çeşitleri günlük üretime göre erken tükenebilir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-black-cat",
+      "categoryId": "kahve",
+      "resolvedName": "Black Cat Coffee",
+      "branchName": "Cumhuriye, Yıldırımer Sk. No:8, 26130 Tepebaşı/Eskişehir",
+      "placeId": "ChIJM_EvauMVzBQRTHJegR3SGAo",
+      "coordinates": {
+        "lat": 39.777361,
+        "lng": 30.5186094
+      },
+      "rating": 4.5,
+      "userRatingCount": 380,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.blackcatcoffee.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=727562363986670156",
+      "recommendedPrimary": [
+        "Single Origin V60 / Aeropress",
+        "Americano"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel İmza Sıcak Çikolata / Salep",
+          "note": "Kahve dışındaki kış dönemi alternatif sıcak içecek seçenekleri.",
+          "proof": "Black Cat resmi sitesi + Yandex"
+        }
+      ],
+      "suitability": {
+        "seating": "Cumhuriye sokağında samimi iç mekân ve az sayıda dış masa",
+        "crowdAndNoise": "Nitelikli çekirdek arayan yerel müdavimlerle dengeli doluluk",
+        "disadvantage": "Barlar ve çarşı yoğunluğuna yakın sokakta park sorunu yaşanabilir",
+        "transit": "Cumhuriye Yıldırımer Sokak, Kızılcıklı ve Porsuk kenarından yürüyüşle 5 dakika"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Black Cat Coffee Resmi Site",
+          "url": "https://blackcatcoffee.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Honduras, Etiyopya, Kolombiya çekirdekleri ve V60/Aeropress demleme"
+        },
+        {
+          "title": "Eskişehir Harita Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "380 kullanıcı puanıyla tekil nitelikli kahve doğrulaması"
+        }
+      ],
+      "pros": [
+        "Geniş single-origin çekirdek menüsü",
+        "Turistik kalabalıktan bir sokak içeride sakin duruş"
+      ],
+      "cons": [
+        "Araçla gelenler için cadde çevresinde park kısıtlı"
+      ],
+      "uncertainties": [
+        "Yöresel çekirdek seçkisi kavurum takvimine göre yenilenir"
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-brauner-cafe",
+      "categoryId": "kahve",
+      "resolvedName": "Brauner Cafe",
+      "branchName": "Gürdal abacı ofis, Hoşnudiye, Behiç Erkin Caddesi No:4A, 26130 Tepebaşı/Eskişehir",
+      "placeId": "ChIJqUDNUYMVzBQRnzV2DwBWHGc",
+      "coordinates": {
+        "lat": 39.7809956,
+        "lng": 30.5078175
+      },
+      "rating": 4.7,
+      "userRatingCount": 161,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.braunercafe.com/",
+      "mapsUri": "https://maps.google.com/?cid=7429908043513869727",
+      "recommendedPrimary": [
+        "Wiener Melange",
+        "Brauner & Einspanner"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Kruvasan & Kurabiye",
+          "note": "Viyana fincan servisiyle eşleşen sade fırın ve tatlı eşlikçileri.",
+          "proof": "Brauner resmi sitesi + Yandex"
+        }
+      ],
+      "suitability": {
+        "seating": "Sakin, aydınlık iç kafe oturumu",
+        "crowdAndNoise": "Özellikle sohbet ve dingin okuma ortamı arayan ziyaretçilerle dengeli",
+        "disadvantage": "Bazı akşamlar maç/etkinlik takvimleri düzenlendiğinden ses düzeyi saatlere göre değişebilir",
+        "transit": "Hoşnudiye Behiç Erkin Caddesi üzerinde Espark ve tramvay durağına yakın"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Brauner Cafe Resmi Site",
+          "url": "https://braunercafe.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Wiener Melange, Brauner, Einspanner ve tek şubeli Viyana konsepti"
+        },
+        {
+          "title": "Maptons & Yandex İncelemeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sakin atmosfer, kahve ve service kalitesi puanlaması"
+        }
+      ],
+      "pros": [
+        "Viyana kahvesi nişiyle şehirdeki benzer kafelerden ayrışır",
+        "★4.7 istikrarı"
+      ],
+      "cons": [
+        "Etkinlik akşamlarında sessiz çalışma karakteri değişebilir"
+      ],
+      "uncertainties": [
+        "Kruvasan stokları öğleden sonra azalabilir"
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-teho-restaurant",
+      "categoryId": "date",
+      "resolvedName": "Teho Restaurant",
+      "branchName": "Hoşnudiye Mahallesi. Vural Sk, Hoşnudiye, Barlar Sokağı No:9/1, 26130 Tepebaşı/Eskişehir",
+      "placeId": "ChIJ3eXMvHcVzBQREc9rb9OE_-c",
+      "coordinates": {
+        "lat": 39.778133,
+        "lng": 30.5163567
+      },
+      "rating": 4.5,
+      "userRatingCount": 996,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/tehorestaurant/",
+      "mapsUri": "https://maps.google.com/?cid=16717226385464872721",
+      "recommendedPrimary": [
+        "El Yapımı İtalyan Makarnaları & Toskana Ana Yemekleri",
+        "Napoli Usulü Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tiramisu & İtalyan Tatlıları",
+          "note": "Özenli akşam yemeğinin ardından servis edilen ev yapımı kapanış tatlısı.",
+          "proof": "Gastronomi Turkey + Yandex"
+        }
+      ],
+      "suitability": {
+        "seating": "Şık, masa servisli ve loş akşam restoran düzeni",
+        "crowdAndNoise": "Akşamları çiftler, özel yemekler ve gurme masa gruplarıyla dolu",
+        "disadvantage": "Bütçe seviyesi yüksek kategoridedir ve Hoşnudiye Barlar Sokağı aksında olduğu için hafta sonu rezervasyon gerektirir",
+        "transit": "Hoşnudiye Vural Sokak, İsmet İnönü Bulvarı ve tren garına yürüyüş mesafesi"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Gastronomi Turkey İncelemesi",
+          "url": "https://www.gastronomiturkey.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Teho Ristorante Italiano mevsimsel Toskana mutfağı ve şarap eşleşmesi"
+        },
+        {
+          "title": "Yandex Eskişehir Restoranları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "996 değerlendirme ile Hoşnudiye üst segment akşam yemeği doğrulaması"
+        }
+      ],
+      "pros": [
+        "Yaklaşık 1.000 değerlendirmede yüksek kalite puanı",
+        "Eskişehir’de gerçek şef trattoria akşam deneyimi"
+      ],
+      "cons": [
+        "Yüksek bütçe seviyesi ve hafta sonu rezervasyon gerekliliği"
+      ],
+      "uncertainties": [
+        "Çevredeki barların sokak hareketliliği Cuma-Cumartesi gece geç saatlerde hissedilebilir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-mezze-house",
+      "categoryId": "date",
+      "resolvedName": "Mezze House Kızılcıklı",
+      "branchName": "Hoşnudiye Mahallesi Kızılcıklı Mahmut Pehlivan Cad, Hoşnudiye, Nazım Hikmet Sk. No:2, 26100 Tepebaşı/Eskişehir",
+      "placeId": "ChIJFTIwsicUzBQR4vrAB14S72s",
+      "coordinates": {
+        "lat": 39.7776782,
+        "lng": 30.511843199999998
+      },
+      "rating": 4.5,
+      "userRatingCount": 1513,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7777455276558449378",
+      "recommendedPrimary": [
+        "Ahtapot Tandır & Deniz Ürünlü Mezeler",
+        "Izgara Deniz Balığı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Soğuk Zeytinyağlı Meze Tabağı",
+          "note": "Başlangıçta paylaşımlı soğuk ve yoğurtlu Akdeniz mezeleri.",
+          "proof": "Menuvefiyat + Allzinapp menü"
+        }
+      ],
+      "suitability": {
+        "seating": "Özenli meze/balık restoranı masaları ve akşam servisi",
+        "crowdAndNoise": "Akşam saatleri özellikle çiftler ve kutlama sofralarıyla yoğun",
+        "disadvantage": "Üst bütçe seviyesinde konumlanır; yüksek popülerlik nedeniyle hafta sonu rezervasyonsuz masa bulmak zordur",
+        "transit": "Hoşnudiye Nazım Hikmet Sokak / Kızılcıklı Bulvarı çevresinde merkezî yürüyüş ulaşımı"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yandex Eskişehir Akşam Restoranları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1.500+ değerlendirmede ahtapot, meze ve ambiyans puanlaması"
+        },
+        {
+          "title": "Trip & Allzinapp Eskişehir Rehberi",
+          "url": "https://www.allzinapp.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kızılcıklı / İki Kule hattındaki meze ve deniz ürünleri menüsü"
+        }
+      ],
+      "pros": [
+        "1.513 değerlendirme hacminde ★4.5 istikrarı",
+        "Deniz ürünleri ve mezede şehrin güçlü akşam adresi"
+      ],
+      "cons": [
+        "Yüksek fiyat seviyesi ve rezervasyon zorunluluğu"
+      ],
+      "uncertainties": [
+        "Hafta içi daha sakin olan salon Cuma-Cumartesi akşamı oldukça canlıdır"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-azbar",
+      "categoryId": "date",
+      "resolvedName": "Azbar Dünya Lezzetleri",
+      "branchName": "Zuhal Yorgancılar Moda Tasarım Müzesi yanı, Akarbaşı, Depboy Sk. No:28, 26020 Odunpazarı/Eskişehir",
+      "placeId": "ChIJIVROkcoXzBQRLoQKjh5Dm0M",
+      "coordinates": {
+        "lat": 39.7648778,
+        "lng": 30.520084399999995
+      },
+      "rating": 4.5,
+      "userRatingCount": 505,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://azbardunyalezzetleri.com/",
+      "mapsUri": "https://maps.google.com/?cid=4871561220442457134",
+      "recommendedPrimary": [
+        "Dünya Mutfağı Ana Yemekler & Fajita",
+        "Kırım Usulü Özel Tabaklar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Tatlı & Nitelikli Kahve",
+          "note": "Alkolsüz konseptli akşam yemeği sonrası dingin masa kapanışı.",
+          "proof": "Azbar resmi sitesi + Gzt26"
+        }
+      ],
+      "suitability": {
+        "seating": "Müzeler komşuluğunda şık, ferah ve sakin iç mekân",
+        "crowdAndNoise": "Özellikle çiftler ve sakin akşam yemeği arayan yerel misafirlerle dolu",
+        "disadvantage": "İslami usullere uygun alkolsüz konseptte hizmet verdiği için şarap/kokteyl eşleşmesi arayanlara uygun değildir",
+        "transit": "Akarbaşı Depboy Sokak, Odunpazarı Moda Tasarım Müzesi yanı yürüme mesafesinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Azbar Dünya Lezzetleri Resmi Site",
+          "url": "https://azbardunyalezzetleri.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Kırım dokunuşlu dünya mutfağı ve konsept çerçevesi"
+        },
+        {
+          "title": "Gzt26 Eskişehir Gastronomi Haberi",
+          "url": "https://www.gzt26.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Akarbaşı restoran dokusu ve mutfak çeşitliliği doğrulaması"
+        }
+      ],
+      "pros": [
+        "505 değerlendirmede ★4.5 puan başarısı",
+        "Tarihî Odunpazarı’na komşu sakin akşam ortamı"
+      ],
+      "cons": [
+        "Alkol servisi sunulmuyor"
+      ],
+      "uncertainties": [
+        "Hafta sonları aile ve akşam yemekleri nedeniyle masa sormakta fayda var"
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-lazy-duck",
+      "categoryId": "kahvalti",
+      "resolvedName": "Lazy Duck Kruvasan Tatlı Kahve / Eskişehir",
+      "branchName": "İstiklal, Başarılı Sk. no:11/D, 26010 Odunpazarı/Eskişehir",
+      "placeId": "ChIJm8I5gtcXzBQRi1c9HEVklcA",
+      "coordinates": {
+        "lat": 39.776483,
+        "lng": 30.51594
+      },
+      "rating": 4.7,
+      "userRatingCount": 970,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13877108074801354635",
+      "recommendedPrimary": [
+        "Kahvaltı Tabağı",
+        "Bademli / Tuzlu Kruvasan Çeşitleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Filtre Kahve & Flat White",
+          "note": "Taze kruvasan eşlikçisi espresso bar seçkisi.",
+          "proof": "Yemeksepeti + Yandex"
+        }
+      ],
+      "suitability": {
+        "seating": "Şık iç masa düzeni ve sınırlı sokak oturumu",
+        "crowdAndNoise": "Hafta sonu sabahları ve kuşluk saatlerinde genç ziyaretçilerle tam kapasite",
+        "disadvantage": "Hafta sonu sabah saatlerinde kapıda masa bekleme süresi oluşabilir",
+        "transit": "İstiklal Başarılı Sokak No:11/D, Porsuk Çayı ve Çarşı merkezine yürüyüş mesafesi"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yandex Eskişehir Kahvaltı Listesi",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "970 değerlendirme ile kruvasan ve Fransız kafe doğrulaması"
+        },
+        {
+          "title": "Yemeksepeti Menü Kayıtları",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kruvasan tabakları ve kahve servisi"
+        }
+      ],
+      "pros": [
+        "970 değerlendirmede ★4.7 yüksek memnuniyet",
+        "Sıradan serpme dışında özgün kruvasan kahvaltısı"
+      ],
+      "cons": [
+        "Hafta sonu sabah sıra beklemek gerekebilir"
+      ],
+      "uncertainties": [
+        "Taze kruvasan çeşitleri öğleye doğru azalabilir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-erkence-mutfak",
+      "categoryId": "kahvalti",
+      "resolvedName": "Erkence Mutfak",
+      "branchName": "Yenibağlar, Zübeyde Hanım Blv, 26170 Tepebaşı/Eskişehir",
+      "placeId": "ChIJnQ5YHO8VzBQRsENIrLLfWB0",
+      "coordinates": {
+        "lat": 39.781366299999995,
+        "lng": 30.5150044
+      },
+      "rating": 4.7,
+      "userRatingCount": 555,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2114685983538037680",
+      "recommendedPrimary": [
+        "Kuru Etli & Köz Patlıcanlı Dolgulu Pişi",
+        "Pancarlı Ekmek Üstü Kahvaltı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Çay & Fincan Kahve",
+          "note": "Kahvaltı tabağını tamamlayan sıcak içecek eşlikçileri.",
+          "proof": "Şehir Pusulası + Google Harita kaydı"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık iç mekân kahvaltı masaları",
+        "crowdAndNoise": "Hafta sonu geç kahvaltı saatlerinde yoğunlaşır",
+        "disadvantage": "Porsiyonlar kişiye özel tabak olarak kurgulandığı için klasik kalabalık serpme masa bekleyenlere sade gelebilir",
+        "transit": "Yenibağlar Zübeyde Hanım Bulvarı üzerinde, Espark’a birkaç dakikalık yürüyüşle yakın"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Şehir Pusulası Eskişehir",
+          "url": "https://www.sehirpusulasi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Serpme zorunluluğu olmayan tabak, dolgulu pişi ve pancar ekmek analizi"
+        },
+        {
+          "title": "Yandex & Yerel Değerlendirmeler",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "555 değerlendirmede ★4.7 memnuniyet"
+        }
+      ],
+      "pros": [
+        "Gereksiz israfsız özgün pişi & tabak konsepti",
+        "Yüksek puan istikrarı"
+      ],
+      "cons": [
+        "Klasik bol reçelli köy kahvaltısı konsepti değil"
+      ],
+      "uncertainties": [
+        "Hafta sonu geç sabah saatlerinde masa beklemek gerekebilir"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-cafe-de-meri",
+      "categoryId": "kahvalti",
+      "resolvedName": "Cafe de Meri Kahvaltı Salonu",
+      "branchName": "Hoşnudiye, Altın Sk. No:5/A, 26130 Tepebaşı/Eskişehir",
+      "placeId": "ChIJoYmWOIkXzBQRwWdlqWBcU2g",
+      "coordinates": {
+        "lat": 39.777373,
+        "lng": 30.511183999999997
+      },
+      "rating": 4.6,
+      "userRatingCount": 291,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7517453773240100801",
+      "recommendedPrimary": [
+        "Serpme Kahvaltı",
+        "Sıcak Hamur İşi & Börek Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Türk Kahvesi",
+          "note": "Sabah masasını noktalayan taze demlenmiş kahve ikramı.",
+          "proof": "Restoranim + Google topluluk değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak iç mekân ve sakin sokak kenarı düzeni",
+        "crowdAndNoise": "Sabah ve kuşluk saatlerinde çiftler ve küçük arkadaş gruplarıyla canlı",
+        "disadvantage": "Ara sokak konumu nedeniyle araçla doğrudan kapı önünde park alanı kısıtlıdır",
+        "transit": "Hoşnudiye Altın Sokak No:5/A, Kızılcıklı aksından yürüyerek erişilebilir"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranim Eskişehir Kahvaltı",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Hoşnudiye Altın Sokak nezih kahvaltı salonu incelemesi"
+        },
+        {
+          "title": "Yandex Eskişehir Mekânları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "291 değerlendirmede ★4.6 kalite istikrarı"
+        }
+      ],
+      "pros": [
+        "Merkez gürültüsünden hafif içerde sakin sokak",
+        "Güler yüzlü özenli servis"
+      ],
+      "cons": [
+        "Araç otoparkı sınırlı"
+      ],
+      "uncertainties": [
+        "Hafta sonu geç sabah saatleri için masa durumu sorulmalı"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-cafe-deva",
+      "categoryId": "kahvalti",
+      "resolvedName": "Cafe Deva - Eskişehir Serpme Kahvaltı Mekanı",
+      "branchName": "Kurtuluş, Yargı Sk. No:16, 26090 Odunpazarı/Eskişehir",
+      "placeId": "ChIJncXXZ6wXzBQRKOBY9Ui-WSs",
+      "coordinates": {
+        "lat": 39.768431199999995,
+        "lng": 30.534901399999995
+      },
+      "rating": 4.5,
+      "userRatingCount": 965,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/cafedevaeskisehir/",
+      "mapsUri": "https://maps.google.com/?cid=3123737037121314856",
+      "recommendedPrimary": [
+        "Geleneksel Serpme Kahvaltı",
+        "Sıcak Sucuklu Yumurta & Pişi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Demlik Çay & Filtre Kahve",
+          "note": "Kalabalık serpme masalar için kesintisiz çay servisi.",
+          "proof": "İşletme kaydı + yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç salon, kalabalık aile ve arkadaş gruplarına uygun masalar",
+        "crowdAndNoise": "Cumartesi ve Pazar sabahları yüksek doluluk görülür",
+        "disadvantage": "Hafta sonu kalabalığında servis süresi uzayabilir; klasik serpme kahvaltı formatındadır",
+        "transit": "Kurtuluş Yargı Sokak No:16, Odunpazarı merkezine yakın yerleşim"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Cafe Deva Resmî Kahvaltı Kaydı",
+          "url": "https://eniyikahvalti.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Eskişehir serpme kahvaltı rehberleri seçkisi"
+        },
+        {
+          "title": "Yandex Eskişehir Yorumları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "965 değerlendirmede ★4.5 istikrarlı puan"
+        }
+      ],
+      "pros": [
+        "Yaklaşık 1.000 değerlendirmede yüksek puan",
+        "Geniş grup oturum kapasitesi"
+      ],
+      "cons": [
+        "Kalabalık serpme formatı tek/iki kişi hızlı kahvaltı isteyenlere fazla gelebilir"
+      ],
+      "uncertainties": [
+        "Pazar sabahı erken saatlerde dolmaya başlar"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-karakedi-bozacisi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Karakedi Bozacısı (köprübaşı)",
+      "branchName": "Arifiye, Köprübaşı Cd. no:22, 26750 Odunpazarı/Eskişehir",
+      "placeId": "ChIJUaUlqgcWzBQRGRLxWzfRB3A",
+      "coordinates": {
+        "lat": 39.774612999999995,
+        "lng": 30.519094600000003
+      },
+      "rating": 4.6,
+      "userRatingCount": 2727,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/karakedi.bozacisi/",
+      "mapsUri": "https://maps.google.com/?cid=8072650892780835353",
+      "recommendedPrimary": [
+        "Taze Boza (Tarçın ve Leblebi İle)"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kavrulmuş Sarı Leblebi",
+          "note": "Boza bardağı veya eve götürülen şişelerin ayrılmaz eşlikçisi.",
+          "proof": "Eskişehir Kültür Kayıtları + Gzt26"
+        }
+      ],
+      "suitability": {
+        "seating": "Dükkân içi kısa ayakta tadım ve al-götür şişe satışı (uzun masa oturumu yoktur)",
+        "crowdAndNoise": "Özellikle sonbahar-kış günleri ve hafta sonları kapı önü hareketlenir",
+        "disadvantage": "Uzun süre oturulacak kafe düzeni değil; hızlı ayakta içim ve al-götür dükkânıdır",
+        "transit": "Arifiye Köprübaşı Caddesi No:22, Porsuk Köprüsü yanında yürüyerek merkezi nokta"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Gzt26 Kültür & Tarihçe Dosyası",
+          "url": "https://www.gzt26.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1925 kuruluşlu Eskişehir boza geleneği belgesi"
+        },
+        {
+          "title": "Karakedi Bozacısı Resmî Site",
+          "url": "https://www.google.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Köprübaşı ana şube ve şişe/bardak boza üretimi"
+        },
+        {
+          "title": "Eskişehir Şehir Rehberleri",
+          "url": "https://www.yolculukterapisi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Eskişehir’de mutlaka tadılacak tarihî simge durak"
+        }
+      ],
+      "pros": [
+        "Yüzyılı dolduran yaşayan Eskişehir mirası",
+        "2.727 değerlendirmede ★4.6 istikrarı"
+      ],
+      "cons": [
+        "Masa oturumu olmayan hızlı ayakta tadım ve al-götür dükkanı"
+      ],
+      "uncertainties": [
+        "Sıcak yaz aylarında talep kış dönemine göre düşse de yıl boyu açıktır"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-taninmis-helvaci",
+      "categoryId": "denemelisin",
+      "resolvedName": "Tanınmış Helvacı 1875",
+      "branchName": "Deliklitaş, Değirmen Sk. No:34/B, 26090 Odunpazarı/Eskişehir",
+      "placeId": "ChIJjZ274AYWzBQRc0BxvXxK5yk",
+      "coordinates": {
+        "lat": 39.773433499999996,
+        "lng": 30.5207029
+      },
+      "rating": 4.6,
+      "userRatingCount": 4103,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.taninmishelvaci.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=3019463974789922931",
+      "recommendedPrimary": [
+        "Sade & Kakaolu Met Helvası",
+        "Sıcak Kesme Helva"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahin & Susam Ezmesi",
+          "note": "Aynı köklü tezgâhta geleneksel yöntemle hazırlanan yerel ürünler.",
+          "proof": "Tanınmış Helvacı resmi site + Ekonomim"
+        }
+      ],
+      "suitability": {
+        "seating": "Üretim ve paket satış dükkânı (al-götür ve ayaküstü tadım; masa oturumu yoktur)",
+        "crowdAndNoise": "Hafta sonu hediyelik met helvası alan ziyaretçilerle sürekli sirkülasyon",
+        "disadvantage": "Yalnızca tezgâh/al-götür dükkânıdır ve farklı şehirlerde/Eskişehir içinde başka şubesi yoktur; Değirmen Sokak dışı isimlerle karıştırılmamalıdır",
+        "transit": "Deliklitaş Değirmen Sokak No:34/B, Köprübaşı’ndan yürüyerek 5 dakika"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Tanınmış Helvacı Resmî Site",
+          "url": "https://taninmishelvaci.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1875 tek merkez kuruluşu, met ve sıcak kesme helva üretimi"
+        },
+        {
+          "title": "Ekonomim & Eskişehir Basını",
+          "url": "https://www.ekonomim.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "150 yılı aşan kesintisiz aile helva üretimi haberi"
+        }
+      ],
+      "pros": [
+        "4.100+ değerlendirmede ★4.6 kalite istikrarı",
+        "Tek merkezde 1875’ten beri üretim"
+      ],
+      "cons": [
+        "Oturma alanı yoktur; al-götür satış"
+      ],
+      "uncertainties": [
+        "Sıcak kesme helva gün içindeki döküm saatlerine göre taze çıkar"
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-mazlumlar",
+      "categoryId": "denemelisin",
+      "resolvedName": "Mazlumlar Muhallebicisi",
+      "branchName": "No:, Vişnelik, Atatürk Blv. No:104/B, 26020 Odunpazarı/Eskişehir",
+      "placeId": "ChIJrbi94moWzBQROTxiBv1pzjc",
+      "coordinates": {
+        "lat": 39.765120499999995,
+        "lng": 30.5029555
+      },
+      "rating": 4.5,
+      "userRatingCount": 971,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://mazlumlarmuhallebicisi.com/iletisim.html",
+      "mapsUri": "https://maps.google.com/?cid=4021268052743175225",
+      "recommendedPrimary": [
+        "Fırın Sütlaç & Tavukgöğsü",
+        "Keşkül / Supangle"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Limonata & Çay",
+          "note": "Sütlü tatlı veya kurabiye tabağıyla eşleşen klasik içecekler.",
+          "proof": "Mazlumlar resmi kayıt + yerel harita"
+        }
+      ],
+      "suitability": {
+        "seating": "Ferah pastane/muhallebici salonu ve vitrin önü masalar",
+        "crowdAndNoise": "Öğleden akşama tatlı molası veren yerel müdavimlerle düzenli dolu",
+        "disadvantage": "Geleneksel şerbetli/hamurlu kafe tatlılarından ziyade klasik sütlü tatlı çizgisindedir",
+        "transit": "Vişnelik Atatürk Bulvarı No:104/B üzerinde tramvay ve araçla doğrudan erişim"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Eskişehir Şehir Rehberleri",
+          "url": "https://www.gzt26.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Eskişehir’in köklü sütlü tatlı ve muhallebi geleneği seçkisi"
+        },
+        {
+          "title": "Yandex Vişnelik Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "971 değerlendirmede ★4.5 puanla Vişnelik sütlü tatlı başarısı"
+        }
+      ],
+      "pros": [
+        "971 değerlendirmede ★4.5 güçlü istikrar (Haller şubesine göre daha sakin ve yüksek puanlı)",
+        "Geleneksel sütlü tatlı sadeliği"
+      ],
+      "cons": [
+        "Geç akşam saatlerinde bazı sütlü tatlı çeşitleri tükenebilir"
+      ],
+      "uncertainties": [
+        "Haller Gençlik Merkezi noktasına kıyasla Vişnelik şubesi puanı belirgin şekilde daha yüksektir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-kosk-balaban",
+      "categoryId": "denemelisin",
+      "resolvedName": "Köşk Balaban",
+      "branchName": "Paşa, Beyler Sk. No:4, 26030 Odunpazarı/Eskişehir",
+      "placeId": "ChIJvyoqn5EXzBQRLQ2_5Xb5qJI",
+      "coordinates": {
+        "lat": 39.7645398,
+        "lng": 30.524638300000003
+      },
+      "rating": 4.8,
+      "userRatingCount": 468,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10567970814680829229",
+      "recommendedPrimary": [
+        "Balaban Köfte (Soslu & Tereyağlı)"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Üzüm Şırası & Piyaz",
+          "note": "Tereyağlı sıcak pideli kebap yanında geleneksel Eskişehir eşlikçileri.",
+          "proof": "Qrfix menü + Odunpazarı rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî Beyler Sokak dokusunda sıcak restoran salonu",
+        "crowdAndNoise": "Öğle ve akşam Odunpazarı gezginleriyle hızla dolar",
+        "disadvantage": "Tarihî dar sokakta araç girişi kısıtlıdır; hafta sonu öğle saatlerinde masa beklemek gerekebilir",
+        "transit": "Odunpazarı Paşa Mahallesi Beyler Sokak No:4, tarihî evler yürüyüş güzergâhında"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Qrfix Resmî Menü Kaydı",
+          "url": "https://www.qrfix.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Balaban köfte, piyaz ve üzüm şırası menüsü"
+        },
+        {
+          "title": "Yandex Odunpazarı Balabanları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "468 değerlendirmede ★4.8 yüksek memnuniyet"
+        }
+      ],
+      "pros": [
+        "Şehir merkezinde balaban köftenin en yüksek puanlı adreslerinden biri",
+        "Tarihî Beyler Sokak konumu"
+      ],
+      "cons": [
+        "Dar sokak dokusu ve hafta sonu turistik yoğunluk"
+      ],
+      "uncertainties": [
+        "Hafta sonu öğle pik saatlerinde doluluk zirveye çıkar"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-yunus-usta-balaban",
+      "categoryId": "denemelisin",
+      "resolvedName": "Eskişehir Balaban Kebap Yunus usta",
+      "branchName": "Kurtuluş, Ziya Paşa Cd. No:35, 26090 Odunpazarı/Eskişehir",
+      "placeId": "ChIJSU74c_89zBQR0P0MmLquXuk",
+      "coordinates": {
+        "lat": 39.7711751,
+        "lng": 30.528966099999995
+      },
+      "rating": 4.6,
+      "userRatingCount": 712,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.eskisehirbalabankebap.com/",
+      "mapsUri": "https://maps.google.com/?cid=16816070175086149072",
+      "recommendedPrimary": [
+        "Klasik Balaban Kebap",
+        "Karışık Balaban (Köfte + Bonfile)"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli Piyaz & Şıra",
+          "note": "Balaban tabağını dengeleyen yerel yan tabak ve ferah içecek.",
+          "proof": "Yandex + Eskişehir mekan rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kurtuluş bölgesinde sade ve rahat restoran oturumu",
+        "crowdAndNoise": "Özellikle öğle yemeklerinde yerel halk ve çevre çalışanlarla hareketli",
+        "disadvantage": "Turistik Odunpazarı aksından birkaç sokak dışarıda kaldığı için yürüyüş rotasına ek plan ister",
+        "transit": "Kurtuluş Ziya Paşa Caddesi No:35, Odunpazarı / Hamamyolu yakınında"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yandex Eskişehir Kebabçıları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "712 değerlendirmede ★4.6 puan istikrarı"
+        },
+        {
+          "title": "Koftes / Eskişehir Gastronomi Kaydı",
+          "url": "https://koftesbalaban.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Eskişehir balaban köfte hazırlama yöntemi ve geleneksel sunumu"
+        }
+      ],
+      "pros": [
+        "Yüksek hacimli esnaf ve yerli müşteri tutarlılığı",
+        "Hızlı ve düzenli servis"
+      ],
+      "cons": [
+        "Dekorasyonu gösterişli turistik lokantalar yerine sade esnaf çizgisinde"
+      ],
+      "uncertainties": [
+        "Öğle yoğunluğu sonrası et/köfte stoğuna bağlı akşam kapanışı değişebilir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-cicek-balaban",
+      "categoryId": "denemelisin",
+      "resolvedName": "Meşhur Çiçek Balaban Kebap",
+      "branchName": "Arifiye, Kıbrıs Şehitleri Cd. Sipahi iş merkezi, 26010 Odunpazarı/Eskişehir",
+      "placeId": "ChIJrRwhLAQWzBQRvgWc4y1QSHY",
+      "coordinates": {
+        "lat": 39.771560199999996,
+        "lng": 30.519721500000003
+      },
+      "rating": 4.5,
+      "userRatingCount": 798,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8523150452821067198",
+      "recommendedPrimary": [
+        "Balaban Köfte (Tereyağlı & Domates Soslu)"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kemalpaşa Tatlısı & Şıra",
+          "note": "Esnaf usulü kebap sonrasında hafif kapanış tatlısı ve geleneksel içecek.",
+          "proof": "Yandex + Restoranim"
+        }
+      ],
+      "suitability": {
+        "seating": "İş hanı çevresinde samimi esnaf salonu masaları",
+        "crowdAndNoise": "Öğle saatlerinde çarşı esnafı ve şehir merkezi gezginleriyle dolar",
+        "disadvantage": "İş merkezi altındaki mütevazı salon atmosferi akşam kutlamasından çok öğle/erken akşam yemeğine uygundur",
+        "transit": "Arifiye Kıbrıs Şehitleri Caddesi Sipahi İş Merkezi, tramvay ve yaya merkezinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranim Eskişehir Seçkisi",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "798 değerlendirmeyle merkezdeki balaban kebap adresi"
+        },
+        {
+          "title": "Yandex Haritalar İncelemeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tereyağ ve köfte lezzeti puanlaması"
+        }
+      ],
+      "pros": [
+        "Tarihî devralınmış ün yerine kendi ★4.5 istikrarını koruyan esnaf durağı",
+        "Tam merkezde yürüyüş ulaşımı"
+      ],
+      "cons": [
+        "Akşam geç saat yerine öğle esnaf temposuna göre çalışır"
+      ],
+      "uncertainties": [
+        "Sipahi İş Merkezi içinde konumlandığı için ilk kez gidenler tabelaya dikkat etmelidir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-oz-kirim-ciborek",
+      "categoryId": "denemelisin",
+      "resolvedName": "Öz Kırım Tatar Çibörek ve Mantı Evi",
+      "branchName": "Paşa, Beyler Sk. no:3, 26249 Odunpazarı/Eskişehir",
+      "placeId": "ChIJadqPRbsXzBQRLSXY2m85QMg",
+      "coordinates": {
+        "lat": 39.7645465,
+        "lng": 30.524745699999997
+      },
+      "rating": 4.6,
+      "userRatingCount": 1148,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://ozkirimtatarciborek.com/",
+      "mapsUri": "https://maps.google.com/?cid=14429596358670820653",
+      "recommendedPrimary": [
+        "Klasik Kırım Çiböreği (Kıymalı)"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zeytinyağlı Yaprak Sarma & Ev Ayranı",
+          "note": "Çibörek porsiyonuyla birlikte servis edilen Tatar ev mutfağı eşlikçileri.",
+          "proof": "Öz Kırım resmi site + Yandex"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî konak sokağında samimi iç salon ve bahçe masaları",
+        "crowdAndNoise": "Hafta sonu Odunpazarı gezginleriyle öğle ve ikindi saatlerinde yoğun",
+        "disadvantage": "Turistik Odunpazarı aksında bulunduğu için hafta sonu kısa bekleme oluşabilir",
+        "transit": "Paşa Mahallesi Beyler Sokak No:3, Odunpazarı Evleri yürüyüş bölgesi"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Öz Kırım Tatar Resmî Site",
+          "url": "https://ozkirimtatarciborek.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "El açması Kırım çiböreği, mantı ve yaprak sarma menüsü"
+        },
+        {
+          "title": "Yandex Odunpazarı Çibörekçileri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1.148 değerlendirmede ★4.6 puan başarısı"
+        }
+      ],
+      "pros": [
+        "1.148 değerlendirmede ★4.6 tutarlılık",
+        "Yağ çekmeyen taze kızartma tekniği"
+      ],
+      "cons": [
+        "Hafta sonu sokak kalabalığı masaya oturma süresini etkileyebilir"
+      ],
+      "uncertainties": [
+        "Her sipariş taze açılıp kızartıldığı için toplu masalarda hazırlık süresi uzayabilir"
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-arasta-ciborek",
+      "categoryId": "denemelisin",
+      "resolvedName": "Arasta Kırım Tatar Çibörek Evi Arasta Çarşısı",
+      "branchName": "Orta, Çürükhoca Sk No:18, 26030 Odunpazarı/Eskişehir",
+      "placeId": "ChIJRamtEx0WzBQR0uMT8xEX1j0",
+      "coordinates": {
+        "lat": 39.7636945,
+        "lng": 30.526255
+      },
+      "rating": 4.6,
+      "userRatingCount": 1554,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.arastaciborek.com/",
+      "mapsUri": "https://maps.google.com/?cid=4455774247189734354",
+      "recommendedPrimary": [
+        "Klasik Kırım Çiböreği",
+        "Tatar Göbetesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tatar Baklavası (Paklava)",
+          "note": "Geleneksel Tatar hamur işlerinin üzerine özgün şerbetli tatlı kapanışı.",
+          "proof": "Yemek.com + 222 Rehber"
+        }
+      ],
+      "suitability": {
+        "seating": "Arasta Çarşısı içinde tarihî avlu/salon oturumu",
+        "crowdAndNoise": "Öğleden sonra Odunpazarı ziyaretçileriyle oldukça hareketli",
+        "disadvantage": "Tarihî çarşı kalabalığı ve hafta sonu grup ziyaretleri nedeniyle masa bekleme yaşanabilir",
+        "transit": "Orta Mahallesi Çürükhoca Sokak No:18, Atlıhan ve Arasta Çarşısı içi"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemek.com Eskişehir Tatar Mutfağı",
+          "url": "https://www.yemek.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çibörek, Göbete ve Sorpa çorbası incelemesi"
+        },
+        {
+          "title": "222 Rehber & Nelerimeşhur",
+          "url": "https://www.nelerimeshur.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1.554 değerlendirmede ★4.6 yüksek Tatar mutfağı puanı"
+        }
+      ],
+      "pros": [
+        "Çibörek dışında Göbete ve Sorpa gibi otantik Tatar yemeklerini bulabilmek",
+        "1.554 değerlendirmede ★4.6"
+      ],
+      "cons": [
+        "Hafta sonu Arasta Çarşısı yaya kalabalığı yoğun"
+      ],
+      "uncertainties": [
+        "Göbete gibi özel tepsi yemekleri gün içi porsiyonlarla sınırlı çıkabilir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "esk-bulvar-ciborek",
+      "categoryId": "denemelisin",
+      "resolvedName": "Bulvar ÇiBörek",
+      "branchName": "Arifiye, İletişim Sokak, 26010 Odunpazarı/Eskişehir",
+      "placeId": "ChIJabzVvAcWzBQRAhWKSgYe20A",
+      "coordinates": {
+        "lat": 39.7755795,
+        "lng": 30.5185204
+      },
+      "rating": 4.5,
+      "userRatingCount": 2038,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.bulvarciborek.com/",
+      "mapsUri": "https://maps.google.com/?cid=4673362050696221954",
+      "recommendedPrimary": [
+        "Klasik Kıymalı Çibörek (5’li Porsiyon)",
+        "Kavurma Börek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Açması Mantı & Ev Limonata",
+          "note": "Çibörek dışında doyurucu ana tabak ve ferah içecek eşlikçisi.",
+          "proof": "Bulvar Çibörek resmi sitesi + Menukolay"
+        }
+      ],
+      "suitability": {
+        "seating": "Şehir merkezinde ferah iki katlı hızlı servis salonu",
+        "crowdAndNoise": "Porsuk ve Hamamyolu çevresinde gün boyu yerli ve gezgin akışı sürer",
+        "disadvantage": "Tam çarşı merkezinde olduğu için araçla erişimde yakında otopark aramak gerekir",
+        "transit": "Arifiye İletişim Sokak, Köprübaşı Porsuk tramvay durağına yürüyerek 2 dakika"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Bulvar Çibörek Resmî Site",
+          "url": "https://www.bulvarciborek.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1999 kuruluşu, çibörek ve kavurma börek menüsü"
+        },
+        {
+          "title": "Yemek.com Eskişehir Çibörek Rehberi",
+          "url": "https://www.yemek.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "2.038 değerlendirmede ★4.5 puanla şehir merkezi klasiği"
+        }
+      ],
+      "pros": [
+        "2.038 değerlendirmede yüksek merkez puanı",
+        "Odunpazarı’na çıkmadan Porsuk kenarında kaliteli çibörek"
+      ],
+      "cons": [
+        "Yoğun öğle vakti merdiven ve salon trafiği artar"
+      ],
+      "uncertainties": [
+        "Soğansız veya karışık tabaklar siparişte özel olarak teyit edilmelidir"
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    }
+  ]
+}

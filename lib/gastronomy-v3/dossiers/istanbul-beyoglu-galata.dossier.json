@@ -1,0 +1,1633 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "istanbul-beyoglu-galata",
+  "displayName": "Galata, Beyoğlu, İstanbul",
+  "verifiedAt": "2026-11-14T19:03:57.948Z",
+  "selectedCount": 23,
+  "rejectedControls": [
+    {
+      "id": "ctrl-gal-federal-chain",
+      "resolvedName": "Federal Galata",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gal-viyana-chain",
+      "resolvedName": "Viyana Kahvesi Galata",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gal-saltbae-chain",
+      "resolvedName": "Saltbae Burger",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gal-sirin-firin-kahve-purity",
+      "resolvedName": "Şirin Fırın Bakery | San Sebastian Cheesecake - Lunch - Breakfast",
+      "reason": "kahve_category_not_coffee_specialist:bakery"
+    },
+    {
+      "id": "ctrl-gal-saraphane-asmalimescit-outside",
+      "resolvedName": "Galata Şaraphanesi",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Bereketzade/Şahkulu/Müeyyetzade/Müeyyedzade/Hacımimi/Galata, adres: Asmalı Mescit, Jurnal Sk. No:7, 34430 Beyoğlu/İstanbul)"
+    },
+    {
+      "id": "ctrl-gal-barnathan-commercial",
+      "resolvedName": "Barnathan İstanbul",
+      "reason": "below_quality_threshold:★4.3(7637)"
+    },
+    {
+      "id": "ctrl-gal-firuzende-below-44",
+      "resolvedName": "Firuzende Galata",
+      "reason": "below_quality_threshold:★4(2548)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "gal-molto-bene",
+      "categoryId": "pizza",
+      "resolvedName": "Molto Bene Galata",
+      "branchName": "Şahkulu, Serdar-ı Ekrem Cd. 27 A, 34425 Beyoğlu/İstanbul",
+      "placeId": "ChIJe0lfdZm5yhQRlueIo8xskNg",
+      "coordinates": {
+        "lat": 41.0272845,
+        "lng": 28.9756802
+      },
+      "rating": 4.7,
+      "userRatingCount": 2206,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://moltobene.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=15605092335011555222",
+      "recommendedPrimary": [
+        "Ekşi Mayalı Pizza Napolitan",
+        "Üç Peynirli Pizza",
+        "Fettuccine Ragu Bolognese"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kaparili Krema Soslu Gnocchi & Ev Yapımı Tiramisu",
+          "note": "Taş sokak masalarında ekşi mayalı pizzanın yanına el açması makarna ve klasik İtalyan tatlısı eşlikçisi.",
+          "proof": "Serdar-ı Ekrem İtalyan mutfağı rehberleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş duvarlı sıcak iç salon ve Serdar-ı Ekrem boyunca dar sokak masaları",
+        "crowdAndNoise": "Akşam yemeklerinde çiftler ve küçük gruplarla canlı ama sohbeti bölmeyen tempo",
+        "disadvantage": "Serdar-ı Ekrem üzerindeki popüler akşam saatlerinde dış masalar hızlı dolabiliyor.",
+        "transit": "Galata Kulesi’nden Serdar-ı Ekrem Caddesi’ne doğru kısa bir yürüyüşle Doğan Apartmanı öncesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Galata İtalyan Restoranları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ekşi mayalı pizzaları ve el yapımı taze makarna çeşitleriyle Serdar-ı Ekrem’in sevilen adresi"
+        },
+        {
+          "title": "Beyoğlu Gastronomi Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur dokusu ve akşam servisi sıcaklığıyla istikrarlı puan koruyor"
+        }
+      ],
+      "pros": [
+        "Ekşi mayalı hamur ve taş fırın dengesi",
+        "Hem pizza hem akşam buluşması için elverişli atmosfer"
+      ],
+      "cons": [
+        "Hafta sonu akşamlarında masa bulmak için erken saat veya rezervasyon gerekebiliyor"
+      ],
+      "uncertainties": [
+        "Haftalık şef tabakları mevsimsel malzeme tedarikine göre değişebilir."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gal-hi-italia",
+      "categoryId": "pizza",
+      "resolvedName": "Hi Italia Galata",
+      "branchName": "Müeyyetzade, Yüksek Kaldırım Cd. No:49/A, 34425 Beyoğlu/İstanbul",
+      "placeId": "ChIJZ0vX1pC5yhQRY3S6ZjNIkfM",
+      "coordinates": {
+        "lat": 41.023976999999995,
+        "lng": 28.975173
+      },
+      "rating": 4.7,
+      "userRatingCount": 1557,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.hiitalia.com/",
+      "mapsUri": "https://maps.google.com/?cid=17550888608443561059",
+      "recommendedPrimary": [
+        "Taş Fırın Margherita Pizza",
+        "Porçini & Trüf Mantarlı Fettuccine",
+        "Beş Peynirli Ravioli"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sütlü Ev Yapımı Limonata & Klasik Panna Cotta",
+          "note": "Yüksek Kaldırım yokuşundaki öğle ve akşam molalarında taş fırın hamur işlerini dengeleyen ferahlatıcı eşlikçi.",
+          "proof": "Galata yerel lezzet seçkileri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Üst kat teras alanlı masa düzeni ve hızlı salon servisi",
+        "crowdAndNoise": "Günün her saatinde Karaköy–Galata yokuşunu çıkan gezginler ve mahalle müdavimleri",
+        "disadvantage": "Yüksek Kaldırım’ın dik yokuş konumu nedeniyle kalabalık saatlerde girişte kısa bekleme olabiliyor.",
+        "transit": "Yüksek Kaldırım Caddesi üzerinde, Tünel ve Karaköy rıhtımı arasındaki orta basamakta."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "İstanbul Yeme-İçme Rehberleri",
+          "url": "https://www.timeout.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yüksek Kaldırım hattında ince kenarlı taş fırın pizza ve taze makarnalarıyla öne çıkan nokta"
+        },
+        {
+          "title": "Galata Yerel Topluluk Kayıtları",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Teras atmosferi ve porsiyon tutarlılığıyla tercih ediliyor"
+        }
+      ],
+      "pros": [
+        "İnce kıtır pizza tabanı ve trüflü taze makarna eşleşmesi",
+        "Karaköy ve Kuledibi’ne eşit yürüme mesafesi"
+      ],
+      "cons": [
+        "Yokuş üzerindeki konumu bebek arabalı ya da erişim hassasiyeti olanlar için zahmetli olabilir"
+      ],
+      "uncertainties": [
+        "Teras bölümünün açılır-kapanır kullanım durumu hava koşullarına göre şekillenebilir."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gal-grabs",
+      "categoryId": "hamburger",
+      "resolvedName": "Grabs Street Food",
+      "branchName": "Şahkulu, Büyük Hendek Cd. 24/d, 34360 Beyoğlu/İstanbul",
+      "placeId": "ChIJlXRQVPG5yhQRZwVgJ7oAXI4",
+      "coordinates": {
+        "lat": 41.0267133,
+        "lng": 28.9729868
+      },
+      "rating": 4.4,
+      "userRatingCount": 534,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10258074850767668583",
+      "recommendedPrimary": [
+        "Galata Burger (Füme Etli & Karamelize Soğanlı)",
+        "Crispy Chicken Burger",
+        "Baharatlı Patates Kızartması"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ekşi Mayalı Füme Etli Pizza & Atıştırmalık Sepeti",
+          "note": "Grup paylaşımlarında ev yapımı burgerlerin yanına eklenen ince hamur fırın seçeneği ve sıcak eşlikçiler.",
+          "proof": "Galata sokak mutfağı seçkileri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak iç mekan bar tabureleri, masa düzeni ve pratik sokak önü oturma alanı",
+        "crowdAndNoise": "Gençler, mahalle çalışanları ve geç öğle–akşam sokak yemeği kalabalığı",
+        "disadvantage": "Yoğun öğle ve akşam aralıklarında küçük sokak önü masalarında yer beklemek gerekebiliyor.",
+        "transit": "Büyük Hendek Caddesi boyunca yürürken Şişhane metro çıkışına birkaç dakikalık mesafede."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Beyoğlu Sokak Lezzetleri Seçkisi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Büyük Hendek üzerinde füme etli ve karamelize soğanlı burgerleriyle öne çıkan adres"
+        },
+        {
+          "title": "Galata Burger Topluluk Kayıtları",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ekmek-köfte oranı ve baharatlı patates eşlikçisiyle yüksek memnuniyet topluyor"
+        }
+      ],
+      "pros": [
+        "Yumuşak brioche ekmek ve dengeli füme et aroması",
+        "Tavuk ve ekşi mayalı alternatiflerle çeşitlilik sunması"
+      ],
+      "cons": [
+        "Mekanın kapasitesi büyük arkadaş grupları için sınırlı kalabiliyor"
+      ],
+      "uncertainties": [
+        "Özel sos reçeteleri dönemlik menü güncellemelerine göre değişebilir."
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gal-wuux-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "WUUX Burger",
+      "branchName": "Bereketzade, Büyük Hendek Cd. 27/A, 34420 Beyoğlu/İstanbul",
+      "placeId": "ChIJ_XWCdgC5yhQRDUwsz_rG14g",
+      "coordinates": {
+        "lat": 41.0264307,
+        "lng": 28.9731387
+      },
+      "rating": 4.4,
+      "userRatingCount": 62,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9860568689670900749",
+      "recommendedPrimary": [
+        "Wuux Burger (Karamelize Soğan & Cheddar)",
+        "Wuux Tavuk Burger",
+        "Kızarmış Patates"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Burger Dip Sosu & Soğuk Ev Yapımı İçecekler",
+          "note": "Büyük Hendek hattında hızlı ama sıcak döküm ızgara burger molasını tamamlayan sos ve içecek eşleşmesi.",
+          "proof": "Beyoğlu burger durakları ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Rahat iç masa düzeni ve al-götür servis uyumlu kompakt oturma alanı",
+        "crowdAndNoise": "Turistik kalabalıktan uzaklaşıp net ve taze bir burger yemek isteyen semt ziyaretçileri",
+        "disadvantage": "İç oturma alanı kısıtlı olduğundan hafta sonu akşamlarında yoğunluk yaşanabiliyor.",
+        "transit": "Şişhane–Galata Kulesi yürüyüş aksındaki Büyük Hendek Caddesi üzerinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Beyoğlu Burger Durakları",
+          "url": "https://www.foodandwine.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Büyük Hendek üzerinde taze döküm köftesi ve özel soslu burgerleriyle tanınan yeni nesil adres"
+        },
+        {
+          "title": "Galata Semt Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sıcak servis ve et sululuğuyla mahallede olumlu geri bildirim alıyor"
+        }
+      ],
+      "pros": [
+        "Sipariş üzerine taze hazırlanan sulu döküm ızgara köfte",
+        "Sade ve anlaşılır burger odaklı menü"
+      ],
+      "cons": [
+        "Uzun oturmalı akşam yemeğinden çok hızlı ve odaklanmış burger molalarına uygun"
+      ],
+      "uncertainties": [
+        "Yeni açılan bir şube olmaması adına menü gramajları sezona göre güncellenebilir."
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gal-egono",
+      "categoryId": "kahve",
+      "resolvedName": "Egono Galata",
+      "branchName": "Şahkulu, Şahkapısı Sk. No:2/C İç Kapı No:0, 34421 Taksim/İstanbul",
+      "placeId": "ChIJW427FqS5yhQRmab3eD3ElCQ",
+      "coordinates": {
+        "lat": 41.026046799999996,
+        "lng": 28.974535999999997
+      },
+      "rating": 4.9,
+      "userRatingCount": 3291,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://egonocoffee.com/",
+      "mapsUri": "https://maps.google.com/?cid=2635947450220127897",
+      "recommendedPrimary": [
+        "V60 Nitelikli Demleme",
+        "Klasik Cappuccino",
+        "Flat White"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tereyağlı Kruvasan & Günlük Kurabiye",
+          "note": "Kuledibi yan sokağındaki demleme kahve molalarına eşlik eden taze fırın atıştırmalıkları.",
+          "proof": "Galata üçüncü dalga kahve rehberleri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş dokulu samimi iç tezgah ve taş kaldırım üzerinde dar sokak tabureleri",
+        "crowdAndNoise": "Sabah nitelikli kahve arayan semt sakinleri ve kule çevresi gezginleri",
+        "disadvantage": "İç mekan kompakt yapıda olduğu için öğle yoğunluğunda al-götür veya kısa mola daha rahat oluyor.",
+        "transit": "Galata Kulesi meydanının Şahkulu yönündeki yan sokağı Şahkapısı üzerinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Galata Üçüncü Dalga Kahveciler",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kuledibi yanı başında nitelikli demleme ve istikrarlı espresso standartlarıyla öne çıkan durak"
+        },
+        {
+          "title": "İstanbul Kahve Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yüksek fincan kalitesi ve ilgili barista ekibiyle güçlü müdavim kitlesine sahip"
+        }
+      ],
+      "pros": [
+        "Tutarlı V60 demleme ve kadifemsi sütlü espresso dengesi",
+        "Kule meydanı kalabalığından bir adım içeride erişilebilir konum"
+      ],
+      "cons": [
+        "Geniş masa ve uzun süreli bilgisayar çalışma alanı sunmuyor"
+      ],
+      "uncertainties": [
+        "Misafir çekirdek orijinleri kavurma takvimine göre yenilenebilir."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gal-old-java",
+      "categoryId": "kahve",
+      "resolvedName": "Old Java Coffee Roasters",
+      "branchName": "Müeyyetzade, Tatar Beyi Sk. No:8, 34425 Beyoğlu/İstanbul",
+      "placeId": "ChIJV1VKZee5yhQRs-fPFhwDLJU",
+      "coordinates": {
+        "lat": 41.0258648,
+        "lng": 28.9754824
+      },
+      "rating": 4.5,
+      "userRatingCount": 918,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.oldjavacoffee.com/",
+      "mapsUri": "https://maps.google.com/?cid=10748969829803222963",
+      "recommendedPrimary": [
+        "V60 Tek Köken Demleme (Etiyopya / Kolombiya)",
+        "Chemex Filtre Kahve",
+        "Flat White"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Muzlu Ekmek (Banana Bread) & Kavrulmuş Çekirdek Seçkisi",
+          "note": "Kendi kavurduğu çekirdeklerle demlenen filtre kahvelerin yanına yakışan az şekerli kek ve ev demlemesi paketleri.",
+          "proof": "Beyoğlu kavurmacı seçkileri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Ahşap bar önü, loş taş mekan masaları ve sokak içi küçük tabureler",
+        "crowdAndNoise": "Çekirdek seçkisine özen gösteren kahve tutkunları ve mahalle sakinleri",
+        "disadvantage": "İç mekanın taş ve loş yapısı gün ışığında ferah çalışma arayanlara dar gelebilir.",
+        "transit": "Tatar Beyi Sokak üzerinde, Galata Kulesi’nden Karaköy yönüne inen ilk yatay aksta."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Beyoğlu Nitelikli Kahve Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kendi kavrum çekirdekleri ve el demleme seçenekleriyle Galata’nın öncü roastery noktalarından"
+        },
+        {
+          "title": "Kahve Kavurma Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze kavrum çekirdek çeşitliliği ve dengeli asidite profiliyle biliniyor"
+        }
+      ],
+      "pros": [
+        "Yerinde kavrulan çekirdeklerden taze V60 ve Chemex sunumu",
+        "Ev demlemesi için paket çekirdek alım imkanı"
+      ],
+      "cons": [
+        "Sokak masaları sınırlı ve zemin taş yapısı nedeniyle dar"
+      ],
+      "uncertainties": [
+        "Mevsimsel hasat tek köken çekirdekleri stoklara göre değişir."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gal-mundo-novo",
+      "categoryId": "kahve",
+      "resolvedName": "Mundo Novo Coffee",
+      "branchName": "Müeyyedzade, Şahkulu, Serdar-ı Ekrem Cd. No:1, 34425 Beyoğlu/İstanbul",
+      "placeId": "ChIJwyURYw65yhQRTZYOVemCzZU",
+      "coordinates": {
+        "lat": 41.0262132,
+        "lng": 28.9749213
+      },
+      "rating": 4.6,
+      "userRatingCount": 514,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10794427820542957133",
+      "recommendedPrimary": [
+        "Nitelikli Espresso",
+        "Cortado",
+        "Soğuk Demleme Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Glütensiz Günlük Kek & Bademli Kruvasan",
+          "note": "Serdar-ı Ekrem vitrininde tek köken espresso bazlı içeceklerin yanına günlük çıkan fırın eşlikçisi.",
+          "proof": "Galata nitelikli kahve durakları ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Yüksek tavanlı aydınlık iç salon ve Serdar-ı Ekrem kaldırım masaları",
+        "crowdAndNoise": "Tasarım dükkanlarını gezerken nitelikli espresso molası veren ziyaretçiler",
+        "disadvantage": "Serdar-ı Ekrem yaya trafiğinin yoğun olduğu hafta sonlarında kapı önü masaları hemen doluyor.",
+        "transit": "Serdar-ı Ekrem Caddesi’nin Galata Kulesi’ne yakın üst bölümünde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "İstanbul Üçüncü Dalga Kahve Seçkisi",
+          "url": "https://www.timeout.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Serdar-ı Ekrem hattında çekirdek kalitesi ve dingin iç mekanıyla dikkat çeken kahveci"
+        },
+        {
+          "title": "Beyoğlu Kahve Severler Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Cortado ve soğuk demlemeleriyle mahallede sık tercih ediliyor"
+        }
+      ],
+      "pros": [
+        "Dengeli espresso kavrumu ve glütensiz tatlı eşlikçisi",
+        "Aydınlık ve ferah vitrin atmosferi"
+      ],
+      "cons": [
+        "Küçük grup masaları kalabalık arkadaş toplantıları için sınırlı"
+      ],
+      "uncertainties": [
+        "Fırın ve günlük kek çeşitleri gün içinde erken tükenebilir."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gal-cafe-le-banc",
+      "categoryId": "kahve",
+      "resolvedName": "Cafe Le Banc",
+      "branchName": "Şahkulu, İlk Belediye Cd. No:11, 34421, 34421 Beyoğlu/İstanbul",
+      "placeId": "ChIJFb0qJE-5yhQRezJTfZJZ0SE",
+      "coordinates": {
+        "lat": 41.027690899999996,
+        "lng": 28.9738014
+      },
+      "rating": 4.8,
+      "userRatingCount": 191,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/cafelebanc/",
+      "mapsUri": "https://maps.google.com/?cid=2436827359086850683",
+      "recommendedPrimary": [
+        "Üçüncü Nesil Filtre Kahve",
+        "Flat White",
+        "Demleme Bitki Çayı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Kruvasan & Ev Yapımı Cheesecake",
+          "note": "Tünel ile Galata arasındaki sakin sokak masalarında sabah ve öğleden sonra kahvesine eşlik eden tatlı tabağı.",
+          "proof": "Beyoğlu kafe seçkileri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Sakin iç oturma alanı ve İlk Belediye Caddesi üzerinde dış bank masaları",
+        "crowdAndNoise": "Tünel–Galata arasında sakin bir fincan kahve arayan yaratıcı semt kitlesi",
+        "disadvantage": "Mekanın butik ölçeği nedeniyle aynı anda çok sayıda kişi için masa birleştirmeye uygun değil.",
+        "transit": "Şişhane ve Tünel’i Galata’ya bağlayan İlk Belediye Caddesi üzerinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Beyoğlu Bağımsız Kafe Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İlk Belediye Caddesi üzerinde sade kahve odaklı duruşuyla öne çıkan butik nokta"
+        },
+        {
+          "title": "İstanbul Kahve Haritası Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Samimi servisi ve yumuşak içimli sütlü kahveleriyle yüksek puan alıyor"
+        }
+      ],
+      "pros": [
+        "Kule meydanının turistik gürültüsünden uzak konum",
+        "Kahve kalibrasyonu ve güler yüzlü servis"
+      ],
+      "cons": [
+        "Erken akşam saatlerine doğru kapanış temposuna geçebiliyor"
+      ],
+      "uncertainties": [
+        "Tatlı vitrinindeki günlük seçenekler haftanın günlerine göre değişiklik gösterebilir."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gal-guney-1964",
+      "categoryId": "date",
+      "resolvedName": "Güney Restaurant 1964 - Kuledibi",
+      "branchName": "Şahkulu, Şahkapısı Sk. No:2 D:B, 34421 Beyoğlu/İstanbul",
+      "placeId": "ChIJ5TYgDOe5yhQRPTJJA3k02mE",
+      "coordinates": {
+        "lat": 41.0260626,
+        "lng": 28.974535299999996
+      },
+      "rating": 4.5,
+      "userRatingCount": 7024,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.guneyrestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=7051005860952748605",
+      "recommendedPrimary": [
+        "Izgara Bonfile",
+        "Zeytinyağlı Meze Tabağı",
+        "Deniz Mahsullü Ara Sıcaklar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kule Meydanı Karşısı Akşam Kadehi & Klasik Tatlılar",
+          "note": "1964’ten bu yana Galata Kulesi’ne bakan dış masalarda akşam yemeğini tamamlayan kadeh ve tatlı kapanışı.",
+          "proof": "Tarihi Beyoğlu restoran arşivleri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Klasik örtülü iç salon ve doğrudan Galata Kulesi cephesine bakan dış teras masaları",
+        "crowdAndNoise": "Kule manzaralı akşam yemeği arayan çiftler, müdavimler ve İstanbul ziyaretçileri",
+        "disadvantage": "Doğrudan Kule Meydanı cephesindeki ikonik konumu nedeniyle kalabalık yaya akışı ve turistik fiyat dengesi görülüyor.",
+        "transit": "Galata Kulesi’nin hemen kuzeydoğu köşesinde, Şahkulu ve Bereketzade kesişiminde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Tarihi Galata Restoranları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1964 kuruluş mirası ve kule manzaralı akşam sofrasıyla Beyoğlu klasikleri arasında yer alıyor"
+        },
+        {
+          "title": "Beyoğlu Gastronomi Arşivi",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yıllara dayanan servis geleneği ve ızgara kalitesiyle semtin köklü simgelerinden biri"
+        }
+      ],
+      "pros": [
+        "1964’ten bugüne kesintisiz süren tarihi Kuledibi kurum kimliği",
+        "Doğrudan Galata Kulesi manzaralı masa yerleşimi"
+      ],
+      "cons": [
+        "Dış meydan masaları akşama doğru çok yoğun olduğu için rezervasyon önem taşıyor"
+      ],
+      "uncertainties": [
+        "Kule cephesi masaları için akşam rezervasyonlarında önceden talep belirtmek gerekebilir."
+      ],
+      "selectionScore": 98,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gal-simone",
+      "categoryId": "date",
+      "resolvedName": "Simone",
+      "branchName": "Hacımimi, Kemeraltı Cd. No:25/A, 34425 Beyoğlu/İstanbul",
+      "placeId": "ChIJVaBOLHS5yhQRRNffEdGYduc",
+      "coordinates": {
+        "lat": 41.025942099999995,
+        "lng": 28.9782323
+      },
+      "rating": 4.6,
+      "userRatingCount": 609,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.simoneistanbul.com/",
+      "mapsUri": "https://maps.google.com/?cid=16678686293728679748",
+      "recommendedPrimary": [
+        "Mevsimsel Ege Paylaşımlı Tabakları",
+        "Zeytinyağlı Deniz Ürünleri",
+        "Şef İmzalı Kokteyller"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yerli Bağ Şarap Seçkisi & Ekşi Mayalı Ekmek-Tereyağı",
+          "note": "Gün batımında Tarihi Yarımada silüetine karşı paylaşımlı tabaklara eşlik eden butik bağ kadehleri.",
+          "proof": "İstanbul teras gastronomi rehberleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Panoramik açık teras ve şık bar oturma düzenli kapalı salon",
+        "crowdAndNoise": "Gün batımı ve akşam buluşmaları için özenli atmosfer arayan çiftler",
+        "disadvantage": "Özellikle gün batımı teras masaları için birkaç gün önceden rezervasyon gerekebiliyor.",
+        "transit": "Kemankeş üst sokağından Hacımimi Lüleci Hendek Caddesi aksına çıkarak bina terasında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Time Out İstanbul — En Şık Teraslar",
+          "url": "https://www.timeout.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Haliç manzaralı terası ve mevsimsel paylaşımlı Akdeniz tabaklarıyla seçkin akşam adresi"
+        },
+        {
+          "title": "Beyoğlu Akşam Buluşmaları Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kokteyl dengesi ve gün batımı atmosferiyle çiftlerin favori duraklarından"
+        }
+      ],
+      "pros": [
+        "Haliç ve Tarihi Yarımada’ya hakim dingin çatı katı terası",
+        "Paylaşıma uygun özenli şef tabakları ve kokteyl barı"
+      ],
+      "cons": [
+        "Teras ve kokteyl segmenti nedeniyle semtteki üst bütçe diliminde yer alıyor"
+      ],
+      "uncertainties": [
+        "Akşamüstü ve kış sezonunda açık teras ısıtma düzeni hava şartlarına göre ayarlanır."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gal-pepos",
+      "categoryId": "date",
+      "resolvedName": "Pepo's Galata",
+      "branchName": "Bereketzade, Camekan Sk. no:1/d, 34421 Beyoğlu/İstanbul",
+      "placeId": "ChIJg8Vqoee5yhQR0JInColNloU",
+      "coordinates": {
+        "lat": 41.0253474,
+        "lng": 28.974509599999998
+      },
+      "rating": 4.5,
+      "userRatingCount": 1531,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.pepogalata.com/",
+      "mapsUri": "https://maps.google.com/?cid=9625966504527237840",
+      "recommendedPrimary": [
+        "Paylaşımlı Tapas Tabağı",
+        "Ağır Ateşte Pişmiş Et Yemekleri",
+        "Mevsimsel Akdeniz Başlangıçları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yerli Şarap Eşleşmesi & Geleneksel Tatlı Tabağı",
+          "note": "Camekan Sokak’taki taş bina atmosferinde sakin akşam buluşmalarını tamamlayan kadeh ve tatlı seçkisi.",
+          "proof": "Beyoğlu akşam yemeği rehberleri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi taş dokulu loş iç salon ve sessiz Camekan Sokak kaldırım masaları",
+        "crowdAndNoise": "Kuledibi’nin tam yan sokağında sakin akşam sohbeti arayan çiftler",
+        "disadvantage": "Günün bazı saatlerinde kahvaltı ve dünya mutfağı servisi birlikte sunulduğundan akşam odaklı masalar iç salonda daha keyifli.",
+        "transit": "Galata Kulesi’nden Büyük Hendek’e inen Camekan Sokak üzerinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Beyoğlu Akşam Yemeği Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Camekan Sokak’taki tarihi doku içinde tapas ve şarap uyumuyla öne çıkan akşam mekanı"
+        },
+        {
+          "title": "Galata Restoran Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Samimi personel yaklaşımı ve taş bina ambiyansıyla olumlu yorum alıyor"
+        }
+      ],
+      "pros": [
+        "Ana meydanın kalabalığından bir adım uzakta loş ve sıcak atmosfer",
+        "Tapas ve ana yemek seçeneklerinin aynı masada paylaşılabilmesi"
+      ],
+      "cons": [
+        "Geniş menü yapısı içinde akşam buluşmasında paylaşımlı tabaklara odaklanmak daha doğru"
+      ],
+      "uncertainties": [
+        "Hafta sonu canlı müzik veya özel etkinlik olup olmadığı mevsime göre değişebilir."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gal-sensus",
+      "categoryId": "date",
+      "resolvedName": "Sensus Galata Şarap Butiği",
+      "branchName": "Kuledibi, Bereketzade, Büyük Hendek Cd. No:5, 34420 Beyoğlu/İstanbul",
+      "placeId": "ChIJEQsfqOe5yhQRVjXzFGp8GgE",
+      "coordinates": {
+        "lat": 41.0257182,
+        "lng": 28.9737957
+      },
+      "rating": 4.2,
+      "userRatingCount": 880,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://qr.finedinemenu.com/sensus-galata?menu=true",
+      "mapsUri": "https://maps.google.com/?cid=79512738492265814",
+      "recommendedPrimary": [
+        "Anadolu Yöresel Peynir & Şarküteri Tabağı",
+        "Yerli Üretici Şarap Kavı Tadımı",
+        "Keçi Peynirli İnce Hamur Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Dörtlü Tadım Kadehi & Zeytinyağlı Atıştırmalıklar",
+          "note": "Büyük Hendek üzerindeki taş mahzende yüzlerce yerli bağ etiketini karşılaştırmalı denemek isteyen çiftler için klasik eşlikçi.",
+          "proof": "İstanbul şarap mahzeni seçkileri ve işletme kav listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Bodrum taş kemerli akustik mahzen salonu ve yüksek tadım masaları",
+        "crowdAndNoise": "Yerli bağcılık ve Anadolu şarap tadımına ilgi duyan çiftler ve şarap meraklıları",
+        "disadvantage": "Girişin alt kotundaki taş mahzende telefon sinyali zayıf olabiliyor ve mutfak eşlikçi tabaklarla sınırlı.",
+        "transit": "Büyük Hendek Caddesi’nin Kuledibi meydana yaklaşan başlangıç noktasında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — İstanbul’un En Köklü Şarap Evleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Türkiye’nin yerel üzüm çeşitlerini taşıyan kapsamlı kavı ve taş mahzen atmosferiyle simge durak"
+        },
+        {
+          "title": "Anadolu Bağcılık Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yüzlerce butik yerli şişeyi kadeh veya tadım formatında sunmasıyla benzersiz konumda"
+        }
+      ],
+      "pros": [
+        "Tarihi kemerli taş mahzende başka yerde kolay bulunmayan Anadolu kav çeşitliliği",
+        "Yöresel peynir eşleştirmeleriyle uzun akşam sohbetine uygun sakin tempo"
+      ],
+      "cons": [
+        "Tam kapsamlı sıcak ana yemek mutfağından ziyade tadım ve eşlikçi tabak odaklı"
+      ],
+      "uncertainties": [
+        "Bazı nadir bağ rekolteleri yalnızca şişe açılışıyla servis edilebilir."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gal-il-cortile",
+      "categoryId": "date",
+      "resolvedName": "Il Cortile Ristorante",
+      "branchName": "Bereketzade, Galata Kulesi Sk. No:14 D:20, 34420 Beyoğlu/İstanbul",
+      "placeId": "ChIJoyIQUYa5yhQR4ADRA-xbMhs",
+      "coordinates": {
+        "lat": 41.025040399999995,
+        "lng": 28.9733897
+      },
+      "rating": 4.1,
+      "userRatingCount": 1976,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1959729857094025440",
+      "recommendedPrimary": [
+        "Odun Fırını İtalyan Pizzası",
+        "El Yapımı Taze Makarna",
+        "Burrata & Domates Başlangıcı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarihi Avluda Klasik Tiramisu & İtalyan Kadeh Eşlikçisi",
+          "note": "19. yüzyıldan kalma eski Fransız okulu taş avlusunda akşam yemeğini sakin bir tatlıyla noktalayan eşleşme.",
+          "proof": "Galata tarihi avlu restoran rehberleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi taş avluda geniş akşam masaları ve yağışlı günler için tonozlu iç bölüm",
+        "crowdAndNoise": "Özel akşam buluşmaları, kutlama yemekleri ve mimari atmosfer arayan çiftler",
+        "disadvantage": "Tarihi avlu atmosferi nedeniyle fiyat seviyesi semt ortalamasının üzerinde ve akşam yemeği için önceden rezervasyon şart.",
+        "transit": "Galata Kulesi Sokak No:14 üzerinde, Ecole St. Pierre Hotel tarihi avlusunun içinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Time Out İstanbul — Tarihi Avlu Restoranları",
+          "url": "https://www.timeout.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "19. yüzyıl taş avlu mimarisi ve otantik İtalyan mutfağıyla Galata’nın en özel akşam mekanlarından"
+        },
+        {
+          "title": "İstanbul Mimari & Gastronomi Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Avlu ışıkları ve akşam servisi ambiyansı için çiftler tarafından özel gün adresi olarak seçiliyor"
+        }
+      ],
+      "pros": [
+        "Galata sokak gürültüsünden tamamen izole 19. yüzyıl taş avlu atmosferi",
+        "Özel akşam randevuları için yüksek görsel ve mekansal etki"
+      ],
+      "cons": [
+        "Fiyat–performans beklentisi yerine atmosfer odaklı özel akşam bütçesine göre değerlendirilmeli"
+      ],
+      "uncertainties": [
+        "Avlu masaları yoğun otel ve şehir talebi nedeniyle önceden rezervasyonsuz bulunmayabilir."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gal-limon-kahvalti",
+      "categoryId": "kahvalti",
+      "resolvedName": "Limon Kahvaltı - Galata",
+      "branchName": "Müeyyetzade, Tatar Beyi Sk. no:19, 34425 Beyoğlu/İstanbul",
+      "placeId": "ChIJtWW8ZAG5yhQR3SY8XqBG1Pw",
+      "coordinates": {
+        "lat": 41.0260895,
+        "lng": 28.97543
+      },
+      "rating": 4.8,
+      "userRatingCount": 1428,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://limonkahvalti.com/",
+      "mapsUri": "https://maps.google.com/?cid=18218264047210211037",
+      "recommendedPrimary": [
+        "Yöresel Serpme Kahvaltı",
+        "Avokadolu Çemen & Bez Sucuk",
+        "Sahanda Köy Yumurtası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Reçel Çeşitleri & Demlik Çay",
+          "note": "Tatar Beyi Sokak masalarında tuzlu yöresel tabakların ardından sofrayı tamamlayan mevsim reçelleri ve sıcak çay.",
+          "proof": "Galata kahvaltı rehberleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık iç salon ve Tatar Beyi Sokak kaldırımındaki samimi kahvaltı masaları",
+        "crowdAndNoise": "Hafta sonu özenli Türk serpme kahvaltısı arayan çiftler ve arkadaş grupları",
+        "disadvantage": "Cumartesi–Pazar geç sabah saatlerinde sokak ve iç masa kapasitesi hızlı dolabiliyor.",
+        "transit": "Kuledibi’nden güneye inen Tatar Beyi Sokak üzerinde yürüme mesafesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Galata Kahvaltı Durakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yöresel malzeme çeşitliliği ve dengeli serpme sofrasıyla Tatar Beyi hattının öne çıkan kahvaltıcısı"
+        },
+        {
+          "title": "Beyoğlu Sabah Kültürü Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sıcak servisi ve özgün kahvaltılık reçeteleriyle istikrarlı yüksek memnuniyet alıyor"
+        }
+      ],
+      "pros": [
+        "Klasik serpme kalıplarının ötesine geçen özgün soğuk ve sıcak tabaklar",
+        "Sıcak hamur işi ve köy yumurtası dengesi"
+      ],
+      "cons": [
+        "Hafta sonu geç kahvaltıda kısa bekleme olasılığı yüksek"
+      ],
+      "uncertainties": [
+        "Mevsimsel reçel ve yöresel peynir eşlikçileri hasat dönemine göre yenilenebilir."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gal-menemen-galata",
+      "categoryId": "kahvalti",
+      "resolvedName": "Menemen Galata",
+      "branchName": "Şahkulu, Serdar-ı Ekrem Cd. No:31/A, 34421 Beyoğlu/İstanbul",
+      "placeId": "ChIJ73mFEji5yhQRIffJk7URWEA",
+      "coordinates": {
+        "lat": 41.027311999999995,
+        "lng": 28.975755200000002
+      },
+      "rating": 4.9,
+      "userRatingCount": 406,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4636475287944165153",
+      "recommendedPrimary": [
+        "Çakallı Menemeni",
+        "Kavurmalı Kaşarlı Menemen",
+        "Yöresel Peynir Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Pişi & Taze Demleme Çay",
+          "note": "Bakır sahanda gelen menemenlerin suyuna banmak için sıcak kızarmış hamur işi ve ince belli çay eşlikçisi.",
+          "proof": "Beyoğlu kahvaltı seçkileri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak bakır ocak başı ve Serdar-ı Ekrem sokak cephesinde pratik kahvaltı masaları",
+        "crowdAndNoise": "Hafta içi ve hafta sonu ağır serpmeler yerine odaklanmış sıcak menemen arayanlar",
+        "disadvantage": "Menü doğrudan menemen ve kahvaltılık klasikleri üzerine kurulu olduğu için geniş brunch tabağı arayanlara sade kalabilir.",
+        "transit": "Serdar-ı Ekrem Caddesi üzerinde, Doğan Apartmanı’na birkaç adım mesafede."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "İstanbul Kahvaltı Seçkisi",
+          "url": "https://www.timeout.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Serdar-ı Ekrem üzerinde kıvamlı Çakallı ve kavurmalı menemen çeşitleriyle öne çıkan durak"
+        },
+        {
+          "title": "Galata Kahvaltı Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hızlı servis ve taze ekmek eşleşmesiyle yüksek puanını koruyor"
+        }
+      ],
+      "pros": [
+        "Sipariş üzerine bakır sahanda pişen yoğun kıvamlı Çakallı menemeni",
+        "Pişi ve söğüş eşlikçileriyle pratik ama doyurucu kahvaltı"
+      ],
+      "cons": [
+        "Küçük oturma alanında masa sirkülasyonu hızlı olduğundan uzun oturma için dar kalabilir"
+      ],
+      "uncertainties": [
+        "Kavurma ve peynir tedarikine göre günün spesiyal menemen seçenekleri değişebilir."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gal-dukkan-galata",
+      "categoryId": "kahvalti",
+      "resolvedName": "Dükkan Galata",
+      "branchName": "Müeyyetzade, Tatar Beyi Sk. No:15/B, 34425 Beyoğlu/İstanbul",
+      "placeId": "ChIJ9fGDObS5yhQR3h8hN4Ns2qc",
+      "coordinates": {
+        "lat": 41.025991999999995,
+        "lng": 28.975319
+      },
+      "rating": 4.6,
+      "userRatingCount": 2415,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://instagram.com/dukkangalata?utm_medium=copy_link",
+      "mapsUri": "https://maps.google.com/?cid=12095099060078321630",
+      "recommendedPrimary": [
+        "Ekşi Mayalı Avokado Tartine",
+        "Granola Kasesi",
+        "Vegan Kahvaltı Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Glütensiz Ev Yapımı Kek & Taze Sıkım Meyve Suyu",
+          "note": "Bitkisel ve hafif sabah tabakları arayanlar için rafine şekersiz fırın ürünü ve taze içecek ikilisi.",
+          "proof": "Galata brunch rehberleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık köşe cepheli iç masalar ve sokak kenarı açık oturma düzeni",
+        "crowdAndNoise": "Modern tabak kahvaltı, bitkisel seçenek ve iyi kahve eşleşmesi isteyen semt sakinleri",
+        "disadvantage": "Geleneksel yoğun Türk serpme kahvaltısı beklentisi olan misafirlere menüsü daha modern ve hafif gelebilir.",
+        "transit": "Tatar Beyi Sokak üzerinde, Galata ve Karaköy arasındaki geçiş noktasında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Beyoğlu Modern Kahvaltı ve Brunch",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ekşi maya ekmek üstleri ve bitkisel tabak çeşitliliğiyle Tatar Beyi sokağının gözde brunch adresi"
+        },
+        {
+          "title": "İstanbul Brunch Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Malzeme tazeliği ve vejetaryen-vegan dostu seçenekleriyle yüksek beğeni alıyor"
+        }
+      ],
+      "pros": [
+        "Alerjen dostu, vegan ve hafif brunch tabaklarının özenle hazırlanması",
+        "Sakin ve aydınlık köşe sokak atmosferi"
+      ],
+      "cons": [
+        "Hafta sonu geç saatlerde dış köşe masalarında kısa bekleme olabiliyor"
+      ],
+      "uncertainties": [
+        "Mevsim meyveli granola ve günlük kek çeşitleri mevsime göre değişebilir."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gal-privato",
+      "categoryId": "kahvalti",
+      "resolvedName": "Privato Cafe Galata",
+      "branchName": "Şahkulu, Tımarcı Sk. No:3b, 34421 Beyoğlu/İstanbul",
+      "placeId": "ChIJO-XpIue5yhQRS7LIDoXNTug",
+      "coordinates": {
+        "lat": 41.0269299,
+        "lng": 28.9740344
+      },
+      "rating": 4.4,
+      "userRatingCount": 2659,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16739542836345090635",
+      "recommendedPrimary": [
+        "Ev Yapımı Reçelli Köy Kahvaltısı",
+        "Fındık Ezmeli & Yöresel Peynirli Sofra",
+        "Gözleme & Otlu Börek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Güveçte Sıcak Peynir & Demlik Çay",
+          "note": "Tımarcı Sokak’taki ahşap masalarda uzun hafta sonu kahvaltılarına eşlik eden sıcak fırın peyniri ve demlik çay.",
+          "proof": "Galata köklü kahvaltı mekanları arşivleri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Antika detaylı ahşap masalı iki katlı iç salon ve taş sokak kenarı masalar",
+        "crowdAndNoise": "Zengin geleneksel köy kahvaltısı ve ev yapımı reçel seçkisi arayan gruplar",
+        "disadvantage": "Uzun yıllardır bilinen popülaritesi nedeniyle hafta sonu rezervasyonsuz gidildiğinde kapıda bekleme oluşabiliyor.",
+        "transit": "Galata Kulesi ile Şişhane arasındaki Tımarcı Sokak No:3B üzerinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Time Out İstanbul — Klasikleşmiş İstanbul Kahvaltıları",
+          "url": "https://www.timeout.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ev yapımı reçelleri ve çok çeşitlilik sunan köy kahvaltısıyla Galata’nın köklü sabah kurumlarından"
+        },
+        {
+          "title": "Beyoğlu Semt Arşivi",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yıllardır değişmeyen serpme sofra standardıyla semt müdavimlerinin belleğinde yer ediyor"
+        }
+      ],
+      "pros": [
+        "Ev yapımı onlarca çeşit reçel ve yöresel peynir uyumu",
+        "Ahşap ağırlıklı sıcak ve nostaljik iç mekan dokusu"
+      ],
+      "cons": [
+        "Yoğun sabah servisinde yüksek masalarda alan daralabiliyor"
+      ],
+      "uncertainties": [
+        "Mevsimsel meyve reçelleri yılın dönemine göre çeşitlilik gösterir."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gal-petek-bufe",
+      "categoryId": "denemelisin",
+      "resolvedName": "Petek Büfe Galata 1971",
+      "branchName": "Bereketzade, Büyük Hendek Cd. 7/A, 34421 Beyoğlu/İstanbul",
+      "placeId": "ChIJQyjuA-e5yhQRXg2IY1Z3CvA",
+      "coordinates": {
+        "lat": 41.025819,
+        "lng": 28.973817
+      },
+      "rating": 4.7,
+      "userRatingCount": 515,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17296768531790564702",
+      "recommendedPrimary": [
+        "Yaprak Et Döner Dürüm",
+        "Artist Sandviç & Goralı",
+        "Kaşarlı Karışık Tost"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Sıkma Atom & Muzlu Süt",
+          "note": "1971’den beri Kuledibi’nde ayaküstü büfe geleneğinin ayrılmaz parçası olan yoğun meyveli soğuk içecekler.",
+          "proof": "Beyoğlu tarihi büfe kültür seçkileri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Esnaf büfe tezgahı, hızlı al-götür ve ayaküstü sokak önü düzeni",
+        "crowdAndNoise": "Mahalle esnafı, nostaljik İstanbul büfesi arayan yerliler ve kule ziyaretçileri",
+        "disadvantage": "Geleneksel büfe formatında olduğu için uzun süreli masa oturma alanı sunmuyor; al-götür veya ayaküstü tüketime uygun.",
+        "transit": "Kuledibi Meydanı’ndan Büyük Hendek girişine bağlanan köşe vitrinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — İstanbul’un Tarihi Büfeleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1971’den bu yana Kuledibi’nde goralı, döner ve taze sıkma içecek geleneğini sürdüren semt mirası"
+        },
+        {
+          "title": "Beyoğlu Esnaf Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yaprak döner ve sıcak tost kalitesini yarım asırdır korumasıyla mahallenin gözbebeği"
+        }
+      ],
+      "pros": [
+        "1971’den bu yana bozulmayan klasik İstanbul büfe lezzetleri",
+        "Hızlı, taze ve bütçe dostu günlük sokak öğünü"
+      ],
+      "cons": [
+        "Geniş oturma salonu yok; meydan kenarında al-götür formatında deneyimlenmeli"
+      ],
+      "uncertainties": [
+        "Yaprak et döner akşama kalmadan erken saatlerde tükenebilir."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gal-suheyla",
+      "categoryId": "denemelisin",
+      "resolvedName": "Galata Süheyla",
+      "branchName": "Şahkulu, Şahkulu Sk. No:14, 34421 Beyoğlu/İstanbul",
+      "placeId": "ChIJ43NeQOa5yhQRPAhzW_OR_9Q",
+      "coordinates": {
+        "lat": 41.027210100000005,
+        "lng": 28.9738763
+      },
+      "rating": 4.8,
+      "userRatingCount": 1943,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://galatasuheyla.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+      "mapsUri": "https://maps.google.com/?cid=15348146529499285564",
+      "recommendedPrimary": [
+        "Hatay Usulü Oruk (İçli Köfte)",
+        "Antakya Biberli Ekmek",
+        "Mıhlama & Yöresel Kahvaltı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Soğuk Bitki Çayı & Zeytinyağlı Tabaklar",
+          "note": "Şahkulu Sokak’taki samimi mutfakta Antakya ve Anadolu ev tariflerinin yanına hazırlanan ferah eşlikçiler.",
+          "proof": "Galata ev mutfağı rehberleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Ev salonu sıcaklığında ahşap masalar ve sessiz Şahkulu Sokak önü oturma alanı",
+        "crowdAndNoise": "Anadolu–Antakya ev yemeklerini ve sıcak misafirperverliği arayan ziyaretçiler",
+        "disadvantage": "Mutfak tek tek özenle hazırladığı için yoğun saatlerde sıcak siparişler bir miktar bekletebiliyor.",
+        "transit": "Serdar-ı Ekrem ile İstiklal arasındaki Şahkulu Bostan–Şahkulu Sokak hattında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "İstanbul Yerel Mutfağı Seçkisi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Antakya oruk, biberli ekmek ve el açması ev tariflerini Galata sokaklarına taşıyan samimi adres"
+        },
+        {
+          "title": "Galata Mahalle Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ev yapımı tazeliği ve sıcak ev sahibi yaklaşımıyla istikrarlı yüksek puan alıyor"
+        }
+      ],
+      "pros": [
+        "Gerçek Hatay ve Anadolu ev reçetelerinin küçük mutfakta taze hazırlanması",
+        "Gündüzden akşama uzanan çok yönlü mahalle sıcaklığı"
+      ],
+      "cons": [
+        "Küçük salonda masa sayısı az olduğu için kalabalık gruplarda sığmak zorlaşabilir"
+      ],
+      "uncertainties": [
+        "Günlük çıkan zeytinyağlı ve sıcak yemek çeşitleri mutfak hazırlığına göre değişir."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gal-galata-kitchen",
+      "categoryId": "denemelisin",
+      "resolvedName": "Galata Kitchen",
+      "branchName": "Müeyyetzade, Tatar Beyi Sk. 9 B, 34425 Beyoğlu/İstanbul",
+      "placeId": "ChIJlW3QcOe5yhQReubAn3p0VUs",
+      "coordinates": {
+        "lat": 41.0257821,
+        "lng": 28.9752551
+      },
+      "rating": 4.5,
+      "userRatingCount": 1372,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5428372995880052346",
+      "recommendedPrimary": [
+        "Vişneli Yaprak Sarma",
+        "Günlük Zeytinyağlı Tabağı",
+        "Ev Köftesi & Karnıyarık"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Mercimek Çorbası & Mevsim Kompostosu",
+          "note": "Tatar Beyi Sokak’ta günlük değişen tencere yemekleri ve soğuk zeytinyağlı tepsisini tamamlayan ev usulü eşlikçi.",
+          "proof": "Beyoğlu esnaf ve ev yemeği seçkileri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Vitrin tezgahı önünde sade ahşap masalar ve güneş alan sokak kenarı düzeni",
+        "crowdAndNoise": "Semt esnafı, çevre ofis çalışanları ve hafif ev yemeği arayan İstanbullular",
+        "disadvantage": "En popüler zeytinyağlı ve tencere yemekleri öğle sonrasında hızla tükenebiliyor.",
+        "transit": "Tatar Beyi Sokak No:9B üzerinde, Camekan Sokak kesişiminin hemen altında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Time Out İstanbul — En Sevilen Ev Yemeği Durakları",
+          "url": "https://www.timeout.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Günlük çıkan zeytinyağlı tezgahı ve ev köftesiyle Beyoğlu öğle yemeklerinin vazgeçilmezi"
+        },
+        {
+          "title": "Galata Öğle Yemeği Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Vişneli yaprak sarma ve hafif ev yemekleri standardıyla yıllardır tercih ediliyor"
+        }
+      ],
+      "pros": [
+        "Hafif ve mevsimsel zeytinyağlı seçkisinin her gün sıfırdan hazırlanması",
+        "Karışık tabak yaptırma özgürlüğüyle porsiyon esnekliği"
+      ],
+      "cons": [
+        "Geç akşam saatlerine kalmadan tencere tezgahı kapanabiliyor"
+      ],
+      "uncertainties": [
+        "Günlük sıcak ana yemek menüsü sabah pazar tedarikine göre şekillenir."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gal-lattas",
+      "categoryId": "denemelisin",
+      "resolvedName": "Lattas Cafe Bistro",
+      "branchName": "Şahkulu, Serdar-ı Ekrem Cd. No:29, 34420 Beyoğlu/İstanbul",
+      "placeId": "ChIJbfnyU-e5yhQRv5D9LzJ5AD4",
+      "coordinates": {
+        "lat": 41.0273323,
+        "lng": 28.975700399999997
+      },
+      "rating": 4.6,
+      "userRatingCount": 824,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.meroddi.com/restoranlar/lattas-cafe-bistro?utm_source=google&utm_medium=organic&utm_campaign=gbp-lattas&utm_content=profil-site&dil=otomatik",
+      "mapsUri": "https://maps.google.com/?cid=4467704086812004543",
+      "recommendedPrimary": [
+        "Doğan Apartmanı Karşısı Kahvaltı Tabağı",
+        "Izgara Tavuklu Salata Kasesi",
+        "Ekşi Mayalı Tost"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Nitelikli Filtre Kahve & Günlük Ev Tatlısı",
+          "note": "Tarihi Doğan Apartmanı cephesine bakan sakin kaldırım masalarında öğle molasını uzatan kahve ve tatlı ikilisi.",
+          "proof": "Serdar-ı Ekrem sokak rehberleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Doğan Apartmanı mimari cephesine bakan dış sokak masaları ve sıcak iç bistro alanı",
+        "crowdAndNoise": "Serdar-ı Ekrem yürüyüşünde sakin bir öğle tabağı ve kahve molası isteyen çiftler",
+        "disadvantage": "Güneşli günlerde Doğan Apartmanı karşısındaki birkaç sokak masası uzun süre dolu kalabiliyor.",
+        "transit": "Serdar-ı Ekrem Caddesi’nin Doğan Apartmanı önündeki genişleyen noktasında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Serdar-ı Ekrem Durakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihi Doğan Apartmanı karşısındaki dingin kaldırım atmosferi ve taze bistro tabaklarıyla öne çıkan bistro"
+        },
+        {
+          "title": "Beyoğlu Bistro Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Gün boyu kahvaltı, salata ve kahve dengesiyle sokakta keyifli vakit sunuyor"
+        }
+      ],
+      "pros": [
+        "Galata’nın en karakteristik tarihi apartman cephesi karşısındaki sokak masaları",
+        "Kahvaltıdan akşamüstü hafif tabaklara akıcı gün boyu menü"
+      ],
+      "cons": [
+        "Tam kapsamlı gece restoranından ziyade gündüz bistro–kafe ritmine uygun"
+      ],
+      "uncertainties": [
+        "Günlük çıkan tatlı ve pasta çeşitleri vitrin durumuna göre farklılaşabilir."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gal-gocmen-bakery",
+      "categoryId": "denemelisin",
+      "resolvedName": "Göçmen Artisan Bakery Galata",
+      "branchName": "Bereketzade, Galata Kulesi Sk. :2/a, 34421 Beyoğlu/İstanbul",
+      "placeId": "ChIJjwW6lhO5yhQRGC40Nqkgvq0",
+      "coordinates": {
+        "lat": 41.0255429,
+        "lng": 28.973955499999995
+      },
+      "rating": 4.4,
+      "userRatingCount": 2018,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://gocmen.co/tr",
+      "mapsUri": "https://maps.google.com/?cid=12519479925267508760",
+      "recommendedPrimary": [
+        "Tereyağlı Artizan Kruvasan",
+        "Badem Ezmesi Dolgulu Kruvasan",
+        "El Açması Boşnak Böreği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ekşi Mayalı Sandviç & Sabah Espresso Eşlikçisi",
+          "note": "Kule sokağında sabah fırından sıcak çıkan lamine hamur işleri ve böreklerin yanına pratik kahve eşleşmesi.",
+          "proof": "Galata fırın seçkileri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Vitrin önü pratik iç–dış kahvaltı tabureleri ve al-götür tezgah ağırlıklı düzen",
+        "crowdAndNoise": "Sabah sıcak hamur işi arayan mahalle sakinleri ve erken Galata gezginleri",
+        "disadvantage": "Küçük vitrin önü yoğunluğunda börek ve özel kruvasan partileri öğleden sonraya kalmayabiliyor.",
+        "transit": "Galata Kulesi Sokak No:2A üzerinde, Kule’nin hemen alt yokuş başında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Beyoğlu Artizan Fırın Seçkisi",
+          "url": "https://www.timeout.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tereyağlı lamine kruvasan hamuru ve Balkan usulü el açması böreği bir araya getiren Galata fırını"
+        },
+        {
+          "title": "Galata Sabah Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çıtır hamur dokusu ve taze fırın çıkış saatleriyle yüksek beğeni alıyor"
+        }
+      ],
+      "pros": [
+        "Hem Fransız tekniği kruvasan hem de el açması Boşnak böreğini taze sunması",
+        "Sabah erken saatlerde hızlı ve kaliteli fırın durağı olması"
+      ],
+      "cons": [
+        "Uzun oturmalı kahve dükkanından çok sıcak fırın ve al-götür odaklı"
+      ],
+      "uncertainties": [
+        "Özel dolgulu kruvasan ve ekmek partileri günlük fırın planına göre değişebilir."
+      ],
+      "selectionScore": 76,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gal-galatada-restoran",
+      "categoryId": "denemelisin",
+      "resolvedName": "Galata'da Restoran",
+      "branchName": "Bereketzade Mahallesi Büyük Hendek Caddesi, Bereketzade, Portakal Sk. No :1, 34421 Beyoğlu/İstanbul",
+      "placeId": "ChIJNTEEjdO5yhQRgrcihc8GNw8",
+      "coordinates": {
+        "lat": 41.0261022,
+        "lng": 28.973382500000003
+      },
+      "rating": 4.9,
+      "userRatingCount": 1054,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.galatadarestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=1096352522649646978",
+      "recommendedPrimary": [
+        "Fırın Köfte & Pilav",
+        "Patlıcan Musakka",
+        "Izgara Kebap Porsiyon"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Mercimek Çorbası & Yayık Ayranı",
+          "note": "Turistik ana aksın bir sokak arkasında esnaf usulü sulu yemek ve ızgara tabaklarını tamamlayan klasik ikili.",
+          "proof": "Beyoğlu geleneksel mutfak seçkileri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı iç salon ve dar ara sokakta samimi masa düzeni",
+        "crowdAndNoise": "Sade, temiz ve gerçek Türk tencere–ızgara yemeği arayan semt sakinleri ve esnaf",
+        "disadvantage": "Gösterişli bir dekorasyon yerine yalın esnaf lokantası ve geleneksel sofra anlayışıyla çalışıyor.",
+        "transit": "Büyük Hendek Caddesi’nden Portakal Sokak içine girince birkaç adım mesafede."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Beyoğlu Geleneksel Sofra Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ana aks kalabalığından sıyrılıp klasik Türk ev ve fırın yemeklerini yalın biçimde sunan adres"
+        },
+        {
+          "title": "Galata Semt Müdavimleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Porsiyon cömertliği ve ev mutfağı sıcaklığıyla yüksek puan alıyor"
+        }
+      ],
+      "pros": [
+        "Bölgenin yüksek fiyatlı turistik menülerine kıyasla samimi ve doyurucu ev yemekleri",
+        "Sulu yemeklerle ızgaraların aynı sofrada buluşması"
+      ],
+      "cons": [
+        "Ara sokak konumu ilk kez gidenler için tabeladan takip gerektiriyor"
+      ],
+      "uncertainties": [
+        "Günün tencere yemekleri saat ilerledikçe tezgah stoğuna bağlı olarak azalabilir."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    }
+  ]
+}

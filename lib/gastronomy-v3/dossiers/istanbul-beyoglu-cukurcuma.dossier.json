@@ -1,0 +1,1548 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "istanbul-beyoglu-cukurcuma",
+  "displayName": "Çukurcuma, Beyoğlu, İstanbul",
+  "verifiedAt": "2026-11-15T13:41:33.253Z",
+  "selectedCount": 19,
+  "rejectedControls": [
+    {
+      "id": "ctrl-cuk-koftecisi-closed",
+      "resolvedName": "Çukurcuma Köftecisi",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-cuk-burgeryiyelim-chain",
+      "resolvedName": "Burger Yiyelim",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cuk-burgerking-chain",
+      "resolvedName": "Burger King - İstiklal",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cuk-betro-chain",
+      "resolvedName": "Betro Burger Taksim",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-cuk-bolci-kahve-purity",
+      "resolvedName": "Bolçi",
+      "reason": "kahve_category_not_coffee_specialist:chocolate_shop"
+    },
+    {
+      "id": "ctrl-cuk-cuma-below-44",
+      "resolvedName": "Cuma",
+      "reason": "below_quality_threshold:★4.1(1383)"
+    },
+    {
+      "id": "ctrl-cuk-norre-below-44",
+      "resolvedName": "Nørre İstanbul",
+      "reason": "below_quality_threshold:★4(583)"
+    },
+    {
+      "id": "ctrl-cuk-curve-below-44",
+      "resolvedName": "curve çukurcuma",
+      "reason": "below_quality_threshold:★4.3(322)"
+    },
+    {
+      "id": "ctrl-cuk-probador-below-44",
+      "resolvedName": "Probador Colectiva Cafe",
+      "reason": "below_quality_threshold:★4.2(313)"
+    },
+    {
+      "id": "ctrl-cuk-hayvore-below-44",
+      "resolvedName": "Hayvore Karadeniz Mutfağı",
+      "reason": "below_quality_threshold:★4.2(2325)"
+    },
+    {
+      "id": "ctrl-cuk-limonlu-below-44",
+      "resolvedName": "Limonlu Bahçe",
+      "reason": "below_quality_threshold:★4.2(4268)"
+    },
+    {
+      "id": "ctrl-cuk-tavanarasi-asmalimescit",
+      "resolvedName": "tavanarası restaurant",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Firuzağa/Kuloğlu/Tomtom, adres: Asmalı Mescit, Asmalı Mescit Cd. No:10 kat 6, 34430 Beyoğlu/İstanbul)"
+    },
+    {
+      "id": "ctrl-cuk-bad-burger-cihangir",
+      "resolvedName": "B.A.D Burger Basic And Delicious",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Firuzağa/Kuloğlu/Tomtom, adres: Cihangir, Bakraç Sk. No:15/A, 34433 Beyoğlu/İstanbul)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "cuk-un-pizzeria",
+      "categoryId": "pizza",
+      "resolvedName": "UN Cihangir",
+      "branchName": "Firuzağa, Çukur Cuma Cd. No:34/1A, 34421 Beyoğlu/İstanbul",
+      "placeId": "ChIJEYpA9Z-3yhQRHKRQaxR2vsE",
+      "coordinates": {
+        "lat": 41.0311865,
+        "lng": 28.980171799999994
+      },
+      "rating": 4.9,
+      "userRatingCount": 265,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.uncihangir.com/",
+      "mapsUri": "https://maps.google.com/?cid=13960725724966986780",
+      "recommendedPrimary": [
+        "Un Special Tiftik Kaburgalı Pizza",
+        "Armut & Gorgonzola Pizza",
+        "Burrata Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarator Soslu Çıtır Kabak & Ev Yapımı Tiramisu",
+          "note": "Pizza öncesi paylaşılan tarator soslu çıtır kabak başlangıcı ve yemek sonrası klasik tiramisu eşlikçisi.",
+          "proof": "uncihangir.com menüsü ve Çukurcuma yeme-içme rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık sokak cepheli masa düzeni ve samimi iç oturum",
+        "crowdAndNoise": "Akşamları semt sakinleri ve tasarım-sanat çevresiyle canlı ama sohbete uygun ortam",
+        "disadvantage": "Akşam yemek saatlerinde popüler çeşitler için masalar çabuk dolabiliyor.",
+        "transit": "Firuzağa Çukurcuma Caddesi No:34/1A üzerinde Firuzağa Camii ve Galatasaray aksının arasında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — UN Cihangir",
+          "url": "https://maps.google.com/?cid=13960725724966986780",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Firuzağa Çukurcuma Cd. No:34/1A konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Oggusto — Beyoğlu Ekşi Maya Pizzacıları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ekşi mayalı hamuru ve tiftik kaburgalı-armutlu imza çeşitleriyle Çukurcuma’da öne çıkıyor."
+        },
+        {
+          "title": "Çukurcuma Yerel Topluluk Notları",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur hafifliği ve tatlı-tuzlu peynir eşleşmeleriyle yüksek beğeni topluyor."
+        }
+      ],
+      "pros": [
+        "Ekşi mayalı sindirimi hafif hamur tekniği",
+        "Özgün tiftik kaburga ve armut-gorgonzola kombinasyonları"
+      ],
+      "cons": [
+        "Çukurcuma sokak içi park yeri sınırlı olduğu için yürüyerek gitmek daha pratik"
+      ],
+      "uncertainties": [
+        "Günlük ekşi maya hamur stokuna göre geç saatlerde çeşit azalabiliyor."
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cuk-napoli-gusto",
+      "categoryId": "pizza",
+      "resolvedName": "Napoli Gusto TomTom",
+      "branchName": "Istanbul Buyuksehir, Tomtom, Boğazkesen Cd. 65F, 34433 Beyoğlu/İstanbul",
+      "placeId": "ChIJqTOvRRW5yhQRO4UyviJ1Rx0",
+      "coordinates": {
+        "lat": 41.029551399999995,
+        "lng": 28.979424599999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 1615,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2109783742526686523",
+      "recommendedPrimary": [
+        "Margherita Bufala",
+        "Diavola Pizza",
+        "Burrata e Crudo"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Ev Yapımı Tagliatelle & Klasik Tiramisu",
+          "note": "Pizza dışında el açması makarna tercih edenler için taze tagliatelle ve geleneksel mascarpone soslu tiramisu.",
+          "proof": "TomTom İtalyan mutfağı seçkileri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Yokuş boyu dış sokak masaları ve sıcak İtalyan trattoria iç salonu",
+        "crowdAndNoise": "TomTom ve Çukurcuma gezginleri ile mahalle sakinlerinin buluştuğu enerjik akşam masaları",
+        "disadvantage": "Boğazkesen Yokuşu üzerindeki dar kaldırım sebebiyle dış masalar eğimli bir sokak hattına bakar.",
+        "transit": "Tomtom Boğazkesen Caddesi No:65F üzerinde Tomtom Kaptan Sokak ve Çukurcuma inişi boyunca."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Napoli Gusto TomTom",
+          "url": "https://maps.google.com/?cid=2109783742526686523",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Tomtom Boğazkesen Cd. 65F konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Oggusto — Beyoğlu İtalyan Restoranları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kabarık Napoli kenarlı pizzaları ve ev yapımı makarna tabaklarıyla Boğazkesen hattında öne çıkıyor."
+        },
+        {
+          "title": "TomTom & Çukurcuma Müdavimleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Binlerce konuğun değerlendirmesinde taze burrata ve mozzarella dengesiyle öne çıkarılıyor."
+        }
+      ],
+      "pros": [
+        "Klasik Napoli tekniğinde ferah ve elastik pizza hamuru",
+        "Hem pizza hem ev yapımı makarnada istikrarlı mutfak"
+      ],
+      "cons": [
+        "Hafta sonu akşam saatlerinde bekleme süresi oluşabiliyor"
+      ],
+      "uncertainties": [
+        "Şarküteri ve taze makarna çeşitleri haftalık tedarike göre değişebilir."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cuk-49-cukurcuma",
+      "categoryId": "pizza",
+      "resolvedName": "49 Çukurcuma",
+      "branchName": "Kuloğlu, Turnacıbaşı Cd. No:49, 34433 Beyoğlu/İstanbul",
+      "placeId": "ChIJ-UM2F2S3yhQR4aeeAOr8L4s",
+      "coordinates": {
+        "lat": 41.0333842,
+        "lng": 28.981369299999997
+      },
+      "rating": 4.4,
+      "userRatingCount": 1280,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.tripadvisor.com.tr/Restaurant_Review-g293974-d2420666-Reviews-49_Cukurcuma-Istanbul.html",
+      "mapsUri": "https://maps.google.com/?cid=10029512977140328417",
+      "recommendedPrimary": [
+        "Tulumi Pizza",
+        "Da Atalai Pizza",
+        "Robespierre Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kav Şarap Eşleşmeli Peynir Tabağı & Sıcak Çikolatalı Sufle",
+          "note": "Şarap eşliğinde paylaşılan yerli-ithal peynir tabağı ve fırından sıcak çıkan çikolatalı sufle.",
+          "proof": "Çukurcuma akşam durakları seçkileri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Yüksek taş duvarlı sıcak iç salon ve caddenin enerjisini gören ön masalar",
+        "crowdAndNoise": "Akşam yemeğinde romantik masalar ve şarap-pizza eşleşmesi seven gruplarla dengeli",
+        "disadvantage": "Akşam saatlerinde loş ambiyansı ve bar atmosferi nedeniyle erken rezervasyon sormak faydalıdır.",
+        "transit": "Kuloğlu Turnacıbaşı Caddesi No:49 üzerinde Galatasaray Lisesi ile Faik Paşa aksında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — 49 Çukurcuma",
+          "url": "https://maps.google.com/?cid=10029512977140328417",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kuloğlu Turnacıbaşı Cd. No:49 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Oggusto — Çukurcuma Klasik Mekanları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İnce çıtır taş fırın pizzaları ve kav kültürüyle Çukurcuma’nın köklü adresi."
+        },
+        {
+          "title": "Beyoğlu Akşam Müdavimleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tulumi ve karamelize soğanlı pizzaları ile atmosferiyle uzun süredir seviliyor."
+        }
+      ],
+      "pros": [
+        "Taş fırında ince çıtır hamur geleneği",
+        "Pizza ve kadeh şarap eşleşmesine uygun sıcak akşam ortamı"
+      ],
+      "cons": [
+        "Hafta sonu akşamlarında içerisi loş ve sesli olabiliyor"
+      ],
+      "uncertainties": [
+        "Sezonsal şarküteri ve peynir çeşitleri döneme göre değişebilir."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cuk-olea-osteria",
+      "categoryId": "pizza",
+      "resolvedName": "Olea Osteria Italiana",
+      "branchName": "Tomtom, Yeni Çarşı Cd. No:46/A, 34425 Beyoğlu/İstanbul",
+      "placeId": "ChIJs9cEJWC3yhQRVNCfub90XQU",
+      "coordinates": {
+        "lat": 41.031903,
+        "lng": 28.9783562
+      },
+      "rating": 4.4,
+      "userRatingCount": 734,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.oleapizzeria.com/",
+      "mapsUri": "https://maps.google.com/?cid=386593509825564756",
+      "recommendedPrimary": [
+        "Quattro Formaggi Pizza",
+        "Funghi Tartufata Pizza",
+        "Penne Arrabbiata"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Domatesli Bruschetta Tabağı & Panna Cotta",
+          "note": "Sarımsaklı çıtır ekmek üstü domatesli başlangıç ve hafif vanilyalı panna cotta tatlısı.",
+          "proof": "oleapizzeria.com menüsü ve Beyoğlu osteria rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt taş duvarlı osteria salonu ve Yeni Çarşı kenarı masalar",
+        "crowdAndNoise": "Turistik karmaşadan uzak, samimi İtalyan yemeği arayan akşam müdavimleri",
+        "disadvantage": "İç salon dar ve Yeni Çarşı yokuşu eğimli olduğu için kalabalık masa düzenine sınırlıdır.",
+        "transit": "Tomtom Yeni Çarşı Caddesi No:46/A üzerinde Fransız Sokağı alt aksı boyunca."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Olea Osteria Italiana",
+          "url": "https://maps.google.com/?cid=386593509825564756",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Tomtom Yeni Çarşı Cd. No:46/A konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Olea Pizzeria Resmi Menüsü",
+          "url": "http://www.oleapizzeria.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Quattro Formaggi, Funghi Tartufata, bruschetta ve İtalyan makarna menüsü doğrulandı."
+        },
+        {
+          "title": "ExploreBeyoğlu — Yeni Çarşı Mutfakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Samimi ölçekli taş fırın pizzalarıyla Tomtom-Çukurcuma geçişinde istikrarını koruyan osteria."
+        },
+        {
+          "title": "Beyoğlu İtalyan Lezzet Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İnce hamur dengesi ve sıcak aile işletmesi ilgisiyle yüksek puanını sürdürüyor."
+        }
+      ],
+      "pros": [
+        "Abartısız, dengeli soslu ince İtalyan hamuru",
+        "Sakin atmosfer ve özenli küçük mutfak servisi"
+      ],
+      "cons": [
+        "Küçük salonda yoğun saatlerde boş masa sayısı kısıtlıdır"
+      ],
+      "uncertainties": [
+        "Mevsimsel mantar ve peynir eşlikçileri döneme göre güncellenir."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cuk-cosmos-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Cosmos Coffee Event",
+      "branchName": "Kuloğlu, Turnacıbaşı Cd. No:18A, 34218 Beyoğlu/İstanbul",
+      "placeId": "ChIJ9We6Y4GsDq8RUUWQuKRPjIQ",
+      "coordinates": {
+        "lat": 41.032916199999995,
+        "lng": 28.979993
+      },
+      "rating": 4.9,
+      "userRatingCount": 154,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.cosmosorganizasyon.com/",
+      "mapsUri": "https://maps.google.com/?cid=9551096478635672913",
+      "recommendedPrimary": [
+        "V60 Tek Köken Demleme",
+        "Cortado",
+        "Flat White"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Avokadolu Ekşi Maya Ekmek & Ev Yapımı Muzlu Kek",
+          "note": "Sabah ve öğlen filtre kahvelerinin yanına eşlik eden hafif tuzlu ekmek üstü ve ev yapımı banana bread.",
+          "proof": "Beyoğlu nitelikli kahve barları seçkisi ve dükkan vitrini"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık cadde cepheli bar oturumu ve sıcak iç mekan köşeleri",
+        "crowdAndNoise": "Kahve kalibrasyonuna dikkat eden müdavimler ve semtin sakin sabah ziyaretçileri",
+        "disadvantage": "Kahve barı odağı güçlüdür; büyük tabaklı uzun brunch servisi sunmaz.",
+        "transit": "Kuloğlu Turnacıbaşı Caddesi No:18A üzerinde Galatasaray Meydanı’ndan Çukurcuma inişinde."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Cosmos Coffee Event",
+          "url": "https://maps.google.com/?cid=9551096478635672913",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kuloğlu Turnacıbaşı Cd. No:18A konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Beyoğlu Üçüncü Dalga Kahve Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Turnacıbaşı girişinde tek köken pour-over ve yüksek espresso kalibrasyonuyla ayrışan adres."
+        },
+        {
+          "title": "Çukurcuma Kahve Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Dengeli çekirdek profilleri ve güler yüzlü baristasıyla semtin en yüksek puanlı duraklarından."
+        }
+      ],
+      "pros": [
+        "Titiz V60 demleme ve espresso ekstraksiyonu",
+        "Turnacıbaşı üst aksında kolay ulaşım ve sakin tempo"
+      ],
+      "cons": [
+        "Küçük oturum düzeni sebebiyle kalabalık çalışma gruplarına dar gelebiliyor"
+      ],
+      "uncertainties": [
+        "Misafir kavrum tek köken çekirdekleri sezon partilerine göre değişir."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cuk-gramaj-roastery",
+      "categoryId": "kahve",
+      "resolvedName": "Gramaj Coffee Roastery",
+      "branchName": "Kuloğlu mahallesi, Cihangir, Turnacıbaşı Cd. No:44/A, 34433 Beyoğlu/İstanbul",
+      "placeId": "ChIJ0f1F1Nq3yhQRGjo-lodmECU",
+      "coordinates": {
+        "lat": 41.033254,
+        "lng": 28.981618499999996
+      },
+      "rating": 4.7,
+      "userRatingCount": 984,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://gramajcoffee.com/",
+      "mapsUri": "https://maps.google.com/?cid=2670747311557982746",
+      "recommendedPrimary": [
+        "V60 Pour Over",
+        "Flat White",
+        "Cold Brew"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "San Sebastian Cheesecake & Bademli Biscotti",
+          "note": "Filtre kahvenin meyvemsi notalarına yakışan karamelize cheesecake ve kıtır bademli biscotti.",
+          "proof": "gramajcoffee.com kavrum listesi ve Çukurcuma kahve rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Sakin, minimalist iç oturma alanı ve cadde önü küçük tezgahlar",
+        "crowdAndNoise": "Nitelikli çekirdek ve sessiz kahve deneyimi arayan müdavimler için ideal tempo",
+        "disadvantage": "Yoğun sokak eğlencesi yerine kahvenin kendisine odaklanan mütevazı bir oturum düzeni vardır.",
+        "transit": "Kuloğlu Turnacıbaşı Caddesi No:44/A üzerinde Çukurcuma antikacılar kavşağı girişinde."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Gramaj Coffee Roastery",
+          "url": "https://maps.google.com/?cid=2670747311557982746",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kuloğlu Turnacıbaşı Cd. No:44/A konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Gramaj Coffee Roastery Resmi Sitesi",
+          "url": "http://gramajcoffee.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Haftalık tek köken kavrumlar ve kahve demleme menüsü doğrulandı."
+        },
+        {
+          "title": "Beyoğlu Kahve Kavurmacıları Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kendi kavurduğu tek köken çekirdeklerle Turnacıbaşı’nda saf nitelikli kahve sunan durak."
+        },
+        {
+          "title": "Çukurcuma Kahve Notları",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze kavrum aroma profili ve vintage fincan sunumlarıyla yüksek puan alıyor."
+        }
+      ],
+      "pros": [
+        "Bağımsız taze kavrum çekirdek seçenekleri",
+        "Gürültüden uzak, kahve odaklı iç atmosfer"
+      ],
+      "cons": [
+        "Geniş yemek menüsü arayanlar için yalnızca kahve ve hafif tatlılar sunar"
+      ],
+      "uncertainties": [
+        "Perakende çekirdek stokları haftalık kavrum programına göre değişir."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cuk-muz-botanik",
+      "categoryId": "kahve",
+      "resolvedName": "Müz Botanik & Kahve",
+      "branchName": "Firuzağa, Hayriye Cd. 18/A, 34425 Beyoğlu/İstanbul",
+      "placeId": "ChIJP835zmG3yhQRkwY3yshdMRc",
+      "coordinates": {
+        "lat": 41.0318944,
+        "lng": 28.979611100000003
+      },
+      "rating": 4.4,
+      "userRatingCount": 400,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.muz.se/",
+      "mapsUri": "https://maps.google.com/?cid=1671220053698610835",
+      "recommendedPrimary": [
+        "Günlük Filtre Kahve",
+        "Iced Latte",
+        "Espresso Tonic"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bitki Çayı Harmanı & Vegan Havuçlu Kek",
+          "note": "Yeşillikler içindeki sakin masalarda kahveye eşlik eden özel harman bitki çayı ve nemli havuçlu kek.",
+          "proof": "muz.se resmi sayfası ve Çukurcuma tasarım durakları seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Bitkilerle dolu serin iç dükkan köşesi ve Hayriye Caddesi önü birkaç tabure",
+        "crowdAndNoise": "Çukurcuma tasarım dükkanlarını gezerken sessiz mola arayan sanat ve tasarım severler",
+        "disadvantage": "Atölye-dükkan içi oturma kapasitesi sınırlı olduğundan kalabalık bilgisayar çalışmasına uygun değildir.",
+        "transit": "Firuzağa Hayriye Caddesi 18/A üzerinde Çukurcuma Hamamı ara sokağında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Müz Botanik & Kahve",
+          "url": "https://maps.google.com/?cid=1671220053698610835",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Firuzağa Hayriye Cd. 18/A konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Müz Botanik Resmi Sitesi",
+          "url": "http://www.muz.se/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Botanik atölye konsepti ve kahve-çay servis detayları doğrulandı."
+        },
+        {
+          "title": "Oggusto — İstanbul Konsept Kahvecileri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çukurcuma ara sokaklarında bitki tasarımı ile nitelikli kahveyi buluşturan sakin durak."
+        },
+        {
+          "title": "Beyoğlu Tasarım & Kahve Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Huzurlu yeşil ortamı ve taze kahveleriyle yıllardır yüksek beğeni topluyor."
+        }
+      ],
+      "pros": [
+        "Şehir kalabalığından tamamen soyutlanan yeşil botanik ortam",
+        "Sakin sohbet ve okuma molaları için huzurlu atmosfer"
+      ],
+      "cons": [
+        "Küçük oturum kapasitesi sebebiyle uzun laptop çalışma masası arayanlara kısıtlı"
+      ],
+      "uncertainties": [
+        "Günlük vegan kek ve çay harmanları mevsim stoklarına göre yenilenir."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cuk-cafe-note",
+      "categoryId": "kahve",
+      "resolvedName": "Cafe Note",
+      "branchName": "Tomtom, Boğazkesen Cd. No:92, 34433 Beyoğlu/İstanbul",
+      "placeId": "ChIJgSSsDN-5yhQRPE7Ytc6MgGY",
+      "coordinates": {
+        "lat": 41.0300209,
+        "lng": 28.979563399999996
+      },
+      "rating": 4.4,
+      "userRatingCount": 305,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.instagram.com/note.cafe",
+      "mapsUri": "https://maps.google.com/?cid=7386058208329616956",
+      "recommendedPrimary": [
+        "Cappuccino",
+        "El Demlemesi Filtre Kahve",
+        "Americano"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarçınlı Fındıklı Kurabiye & Sıcak Brownie",
+          "note": "Kahve eşliğinde tercih edilen taze tarçınlı kurabiye ve yoğun kakao dokulu brownie.",
+          "proof": "TomTom kafe rehberleri ve işletme menü duyuruları"
+        }
+      ],
+      "suitability": {
+        "seating": "Minimalist ahşap dokulu huzurlu iç mekan ve ön pencere tezgahı",
+        "crowdAndNoise": "Yaratıcı semt profesyonelleri, kitap okuyanlar ve sessiz kahve içmek isteyenlerle dingin",
+        "disadvantage": "Sakin dükkan ölçeğinde olduğu için büyük grup buluşmalarına elverişli değildir.",
+        "transit": "Tomtom Boğazkesen Caddesi No:92 üzerinde Çukurcuma inişinin Tomtom kestirmesinde."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Cafe Note",
+          "url": "https://maps.google.com/?cid=7386058208329616956",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Tomtom Boğazkesen Cd. No:92 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Oggusto — TomTom & Çukurcuma Sakin Kafeleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yalın tasarımı ve kahve tutarlılığıyla Boğazkesen hattında öne çıkan adres."
+        },
+        {
+          "title": "Beyoğlu Müdavim Değerlendirmeleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sakin müziği, ferah iç tasarımı ve taze kurabiyeleriyle düzenli beğeni topluyor."
+        }
+      ],
+      "pros": [
+        "Zarif ve dingin iç mimari ortam",
+        "Gürültüsüz, istikrarlı kahve deneyimi"
+      ],
+      "cons": [
+        "Dış oturma alanı dar olduğu için ağırlıkla iç salon kullanılır"
+      ],
+      "uncertainties": [
+        "Haftalık kurabiye ve kek seçenekleri mutfak partisine göre değişebilir."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cuk-solera-winery",
+      "categoryId": "date",
+      "resolvedName": "Solera Winery",
+      "branchName": "Tomtom, Yeni Çarşı Cd. No:44, 34433 Beyoğlu/İstanbul",
+      "placeId": "ChIJQ_gjJWC3yhQRMjGYQ318cRc",
+      "coordinates": {
+        "lat": 41.032025999999995,
+        "lng": 28.978178
+      },
+      "rating": 4.8,
+      "userRatingCount": 871,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.facebook.com/solerawinery",
+      "mapsUri": "https://maps.google.com/?cid=1689268212687450418",
+      "recommendedPrimary": [
+        "Yerli Butik Üretici Kadeh Seçkisi",
+        "Olgunlaştırılmış Peynir & Şarküteri Tabağı",
+        "Fırınlanmış Keçi Peyniri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zeytinyağlı Kurutulmuş Domates & Bruschetta Üçlemesi",
+          "note": "Kadeh eşleşmelerinin yanına sıcak istenen otlu bruschetta üçlemesi ve zeytin ezmesi.",
+          "proof": "İstanbul en iyi şarap barları rehberi ve Solera kav listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Ahşap fıçı dokulu loş mahzen atmosferi, yüksek bar masaları ve samimi iç köşeler",
+        "crowdAndNoise": "Baş başa akşam kadehi yudumlayan çiftler ve şarap meraklılarıyla sofistike ama kasıntısız",
+        "disadvantage": "Akşam saatlerinde hızlı dolduğundan özellikle cuma-cumartesi önceden rezervasyon gerekir.",
+        "transit": "Tomtom Yeni Çarşı Caddesi No:44 üzerinde Galatasaray Lisesi’nden aşağı inerken."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Solera Winery",
+          "url": "https://maps.google.com/?cid=1689268212687450418",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Tomtom Yeni Çarşı Cd. No:44 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Oggusto — İstanbul Butik Şarap Evleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yerli butik bağcılığı destekleyen seçkisi ve romantik mahzen havasıyla Beyoğlu klasiği."
+        },
+        {
+          "title": "İstanbul Şarap & Gastronomi Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Uzman ekip önerileri, kadeh seçenekleri ve peynir tabaklarıyla çok yüksek puan koruyor."
+        }
+      ],
+      "pros": [
+        "Türkiye’nin dört bir yanından nadir butik bağ şarapları",
+        "Sıcak mum ışığı ve sohbete ideal loş atmosfer"
+      ],
+      "cons": [
+        "Tam kapsamlı akşam yemeğinden çok kadeh-tapas/peynir düzenine odaklıdır"
+      ],
+      "uncertainties": [
+        "Kadehte açılan şarap listesi aylık kav stoklarına göre değişir."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cuk-vasalisa",
+      "categoryId": "date",
+      "resolvedName": "Vasalisa Cihangir",
+      "branchName": "Firuzağa, Çukur Cuma Cami Sk. No:4/A, 34425 Beyoğlu/İstanbul",
+      "placeId": "ChIJr8gJeB63yhQRmUE03HitksY",
+      "coordinates": {
+        "lat": 41.03179970000001,
+        "lng": 28.9811164
+      },
+      "rating": 4.5,
+      "userRatingCount": 654,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14308689700711580057",
+      "recommendedPrimary": [
+        "Avlu Akşamüstü Paylaşım Tabağı",
+        "Fesleğenli Ev Makarnası",
+        "Baharatlı Sıcak Elma Çayı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Limonlu Kek & Mevsimsel Meyveli Tart",
+          "note": "Akşam sohbetinin ya da kahve buluşmasının sonunda paylaşılan hafif limonlu kek ve taze meyveli tart.",
+          "proof": "Çukurcuma avlu mekanları seçkileri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Sokaktan gizlenmiş sessiz tarihi avlu bahçesi ve sıcak iç bistro odaları",
+        "crowdAndNoise": "Gürültülü kalabalıklardan uzak kalmak isteyen çiftler ve huzurlu akşam masaları",
+        "disadvantage": "Avlu ve iç oda kapasitesi dar olduğu için hafta sonu akşamlarında rezervasyon sormak gerekir.",
+        "transit": "Firuzağa Çukurcuma Cami Sokak No:4/A üzerinde Masumiyet Müzesi ve tarihi Çukurcuma sokakları arasında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Vasalisa Cihangir",
+          "url": "https://maps.google.com/?cid=14308689700711580057",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Firuzağa Çukurcuma Cami Sk. No:4/A konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "ExploreBeyoğlu — Gizli Avlulu Çukurcuma Mekanları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Eski okul binasının sakin avlusu içinde ev yapımı tabaklar sunan samimi mahalle bistrosu."
+        },
+        {
+          "title": "Çukurcuma Akşam Müdavimleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sakin avlu atmosferi, özenli makarnaları ve zarif servisiyle yüksek beğeni topluyor."
+        }
+      ],
+      "pros": [
+        "Gürültüden korunan tarihi iç avlu konumu",
+        "Romantik, sakin aydınlatmalı masa düzeni"
+      ],
+      "cons": [
+        "Küçük salonda büyük gruplar için uygun masa sayısı sınırlı"
+      ],
+      "uncertainties": [
+        "Sezonsal avlu menüsü ve tatlılar döneme göre yenilenir."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cuk-giardin",
+      "categoryId": "date",
+      "resolvedName": "Giardin İstanbul",
+      "branchName": "Tomtom Boğazkesen Caddesi No:65H, Tomtom, Boğazkesen Cd. No:65H Karaköy, 34433 Beyoğlu/İstanbul",
+      "placeId": "ChIJM4rkxRm5yhQR4M4ynhvfsR8",
+      "coordinates": {
+        "lat": 41.0298404,
+        "lng": 28.979368099999995
+      },
+      "rating": 4.4,
+      "userRatingCount": 470,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2283851795764793056",
+      "recommendedPrimary": [
+        "Odun Ateşinde Dana Şaşlık",
+        "Meşe Kömüründe Kuzu Şiş",
+        "Köz Patlıcanlı Sıcak Başlangıç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taş Fırın İnce Pide & Tahinli Cevizli Kabak Tatlısı",
+          "note": "Meze eşliğinde sıcak taş fırın pide ve yemek sonu bol tahinli-cevizli fırın kabak tatlısı.",
+          "proof": "Beyoğlu avlu restoranları rehberleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi tuğla kemerli akustik salon ve ferah gizli arka bahçe",
+        "crowdAndNoise": "Özel akşam kutlamaları, çiftler ve şık sofralı sohbet grupları",
+        "disadvantage": "Girişi Boğazkesen cephesinde sade olduğu için tarihi avluyu görmek üzere içeriyi yürümek gerekir.",
+        "transit": "Tomtom Boğazkesen Caddesi No:65H üzerinde Çukurcuma-Tophane geçişinde."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Giardin İstanbul",
+          "url": "https://maps.google.com/?cid=2283851795764793056",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Tomtom Boğazkesen Cd. No:65H konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Oggusto — Beyoğlu Tarihi Avlu Restoranları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tuğla tonozlu mahzen dokusu ve iç bahçesiyle odun ateşi mutfağını buluşturan şık mekan."
+        },
+        {
+          "title": "Beyoğlu Akşam Sofra Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mekan mimarisi, et pişirme dengesi ve güler yüzlü servisiyle öne çıkarılıyor."
+        }
+      ],
+      "pros": [
+        "Tarihi tuğla tonozlu salon ve sessiz gizli bahçe ambiyansı",
+        "Yumuşak marine edilmiş odun ateşi şaşlık ve kuzu şiş"
+      ],
+      "cons": [
+        "Hafta sonları yoğun olabildiğinden bahçe masaları için rezervasyon önerilir"
+      ],
+      "uncertainties": [
+        "Mevsimlik köz meze ve zeytinyağlı çeşitleri haftalık değişebilir."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cuk-meraki",
+      "categoryId": "kahvalti",
+      "resolvedName": "Meraki Cihangir Cafe",
+      "branchName": "Kuloğlu, Sadri Alışık Sk. No: 40 D:1B, 34433 Beyoğlu/İstanbul",
+      "placeId": "ChIJDYYQG4y3yhQRWmzZp3YcELI",
+      "coordinates": {
+        "lat": 41.0335891,
+        "lng": 28.981575499999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 595,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12830786634326305882",
+      "recommendedPrimary": [
+        "Ege Kahvaltı Tabağı",
+        "Domatesli Feta Peynirli Yumurta (Strapatsada)",
+        "Freddo Espresso"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Tuzlu Kiş & Tarçınlı Çörek",
+          "note": "Kahvaltı veya öğlen freddo kahve molasında paylaşılan taze fırınlanmış kiş ve tarçınlı çörek.",
+          "proof": "Beyoğlu özgün kahvaltı durakları rehberleri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık köşe dükkan içi ve Sadri Alışık Sokak kenarı masalar",
+        "crowdAndNoise": "Sabah sakinliğini seven mahalle müdavimleri ve özgün Ege reçeteleri arayan konuklar",
+        "disadvantage": "Ufak ve popüler bir köşe mekanı olduğu için geç sabah saatlerinde boş masa sınırlanabilir.",
+        "transit": "Kuloğlu Sadri Alışık Sokak No:40 üzerinde Turnacıbaşı ve Çukurcuma kesişiminin hemen yanında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Meraki Cihangir Cafe",
+          "url": "https://maps.google.com/?cid=12830786634326305882",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kuloğlu Sadri Alışık Sk. No:40 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Oggusto — Özgün İstanbul Kahvaltıları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ege-Yunan mutfağından strapatsada ve gerçek freddo espressoyu Çukurcuma köşesine taşıyan sıcak kafe."
+        },
+        {
+          "title": "Beyoğlu Sabah Müdavimleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ev sıcaklığındaki tarifleri ve olağanüstü yüksek puan ortalamasıyla öne çıkıyor."
+        }
+      ],
+      "pros": [
+        "Standart serpme dışı özgün Ege-Yunan kahvaltı reçeteleri",
+        "İstanbul’da nadir bulunan özenli freddo espresso ve cappuccino"
+      ],
+      "cons": [
+        "Küçük dükkan kapasitesi nedeniyle kalabalık gruplar için uygun değil"
+      ],
+      "uncertainties": [
+        "Günlük kiş ve hamur işleri küçük parti üretim olduğundan saat ilerledikçe değişir."
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cuk-cafe-da-giovanni",
+      "categoryId": "kahvalti",
+      "resolvedName": "Cafe da Giovanni",
+      "branchName": "Kuloğlu, Yeni Çarşı Cd. No: 11/A, 34433 Beyoğlu/İstanbul",
+      "placeId": "ChIJdwOvxNWxyhQRWVqzvUluJcQ",
+      "coordinates": {
+        "lat": 41.031816,
+        "lng": 28.978557
+      },
+      "rating": 4.6,
+      "userRatingCount": 584,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14133824268566485593",
+      "recommendedPrimary": [
+        "Tereyağlı Kruvasan Yumurta",
+        "Füme Somonlu Bagel",
+        "Poşe Yumurtalı Avokado Tost"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bademli Kruvasan & Taze Sıkım Portakal Suyu",
+          "note": "Tuzlu kahvaltı tabağını tamamlayan çıtır badem kremalı kruvasan ve günlük sıkım portakal suyu.",
+          "proof": "Yeni Çarşı kafe-bistro seçkileri ve işletme vitrini"
+        }
+      ],
+      "suitability": {
+        "seating": "Şirin avrupa bistrosu havasında ön cam masalar ve iç oturma alanı",
+        "crowdAndNoise": "Sabah yürüyüşçüleri, Fransız-İtalyan kruvasan severler ve komşu gezginler",
+        "disadvantage": "Yeni Çarşı Caddesi eğimli ve yoğun yaya trafikli olduğundan dış oturum kompakt alandadır.",
+        "transit": "Kuloğlu Yeni Çarşı Caddesi No:11/A üzerinde Galatasaray Lisesi yan sokağı inişinde."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Cafe da Giovanni",
+          "url": "https://maps.google.com/?cid=14133824268566485593",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kuloğlu Yeni Çarşı Cd. No:11/A konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "ExploreBeyoğlu — Yeni Çarşı Kahvaltı Noktaları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kruvasan ve bagel çeşitleriyle ağır serpme kahvaltıya zarif bir bistro alternatifi sunuyor."
+        },
+        {
+          "title": "Beyoğlu Kahvaltı & Brunch Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur tazeliği ve hızlı, nazik servisiyle yüzlerce misafirden yüksek puan alıyor."
+        }
+      ],
+      "pros": [
+        "Taze tereyağlı kruvasan ve dengeli bagel reçeteleri",
+        "Pratik, temiz ve hızlı sabah servisi"
+      ],
+      "cons": [
+        "Kapasite küçük olduğundan hafta sonu sabahları ön masalar çabuk doluyor"
+      ],
+      "uncertainties": [
+        "Kruvasan dolguları gün içi pişirim durumuna göre çeşitlenir."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cuk-faik-pasha",
+      "categoryId": "kahvalti",
+      "resolvedName": "Faik Pasha Cafe",
+      "branchName": "Firuzağa, Çukur Cuma Cd. 51/A, 34425 Beyoğlu/İstanbul",
+      "placeId": "ChIJ-ba1k2G3yhQRu-Kt3ncc0pg",
+      "coordinates": {
+        "lat": 41.032122799999996,
+        "lng": 28.980748
+      },
+      "rating": 4.6,
+      "userRatingCount": 226,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11011895340036907707",
+      "recommendedPrimary": [
+        "Köy Peynirli Kahvaltı Tabağı",
+        "Ev Yapımı Reçel Seçkisi",
+        "Otlu Sahanda Yumurta"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Mantı & Elmalı Tarçınlı Turta",
+          "note": "Öğlene uzayan oturumlarda sıcak ev yapımı mantı ve klasik elmalı tarçınlı turta eşlikçisi.",
+          "proof": "Çukurcuma nostaljik kafeler seçkisi ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Antika eşyalarla bezeli yüksek tavanlı salon ve Arnavut kaldırımlı sokak önü masaları",
+        "crowdAndNoise": "Tarihi Çukurcuma dokusunu yaşamak isteyen dingin sabah ve öğleden sonra ziyaretçileri",
+        "disadvantage": "Butik tarihi mekan temposu hızlı fast-food temposundan daha ağırdır.",
+        "transit": "Firuzağa Çukurcuma Caddesi No:51/A üzerinde Faik Paşa Yokuşu kesişimi yakınında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Faik Pasha Cafe",
+          "url": "https://maps.google.com/?cid=11011895340036907707",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Firuzağa Çukurcuma Cd. 51/A konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Oggusto — Tarihi Dokulu Beyoğlu Kafeleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çukurcuma’nın antikacı ve Levanten mimari mirası içinde özenli sabah sofrası kuran köklü mekan."
+        },
+        {
+          "title": "Çukurcuma Semt Ziyaretçileri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Nostaljik dekoru, doğal reçelleri ve sessiz sokak masalarıyla yüksek beğeni alıyor."
+        }
+      ],
+      "pros": [
+        "Otantik 19. yüzyıl Çukurcuma atmosferi",
+        "Doğal köy peynirleri ve katkısız ev reçelleri"
+      ],
+      "cons": [
+        "Küçük sokak masaları yağışlı günlerde içeride kısıtlanabiliyor"
+      ],
+      "uncertainties": [
+        "Mevsimlik reçel ve peynir seçenekleri tedarike göre değişir."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cuk-nold-eatery",
+      "categoryId": "kahvalti",
+      "resolvedName": "Nold Eatery",
+      "branchName": "Firuzağa, Çukur Cuma Cd. No:52B, 34425 Beyoğlu/İstanbul",
+      "placeId": "ChIJYWnKh_W3yhQRJZi1Ks788l8",
+      "coordinates": {
+        "lat": 41.031982299999996,
+        "lng": 28.9809328
+      },
+      "rating": 4.6,
+      "userRatingCount": 209,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6913866340377139237",
+      "recommendedPrimary": [
+        "Ekşi Maya Üstü Çırpılmış Yumurta",
+        "Granola & Yoğurt Kasesi",
+        "Izgara Hellimli Kahvaltı Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Naneli Limonata & Dereotlu Tuzlu Kek",
+          "note": "Sabah sonrası hafif molalarda tercih edilen taze naneli ev yapımı limonata ve dereotlu tuzlu kek.",
+          "proof": "Beyoğlu modern kahvaltı rehberleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Minimalist aydınlık iç oturum ve antikacı sokağına bakan dış masalar",
+        "crowdAndNoise": "Sakin, temiz içerikli modern sabah tabakları arayan genç çiftler ve bölge sakinleri",
+        "disadvantage": "Geleneksel dev serpme kahvaltı yerine sade, porsiyon bazlı modern tabak düzeni vardır.",
+        "transit": "Firuzağa Çukurcuma Caddesi No:52B üzerinde antikacı dükkanları sırasının merkezinde."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Nold Eatery",
+          "url": "https://maps.google.com/?cid=6913866340377139237",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Firuzağa Çukurcuma Cd. No:52B konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Oggusto — Yeni Nesil Semt Kahvaltıcıları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ekşi maya ekmek üstü reçeteleri ve yalın atmosferiyle Çukurcuma sabahlarına taze soluk getiren adres."
+        },
+        {
+          "title": "Çukurcuma Yerel Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze malzeme kullanımı ve güleryüzlü ekibiyle yüksek memnuniyet alıyor."
+        }
+      ],
+      "pros": [
+        "Hafif, modern ve özenle hazırlanmış porsiyon kahvaltılar",
+        "Merkezi Çukurcuma Caddesi üzerinde keyifli sokak izleme konumu"
+      ],
+      "cons": [
+        "Kapasite butik olduğu için öğle geç saatlerde masa beklemek gerekebilir"
+      ],
+      "uncertainties": [
+        "Mevsimsel meyve kaseleri ve fırın eşlikçileri döneme göre güncellenir."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cuk-mayko-lokanta",
+      "categoryId": "denemelisin",
+      "resolvedName": "Mayko Lokanta",
+      "branchName": "Kuloğlu, Hacıoğlu Sk. 1A, 34433 Beyoğlu/İstanbul",
+      "placeId": "ChIJ_8h8Q0q3yhQRSb9qX4icH64",
+      "coordinates": {
+        "lat": 41.0323393,
+        "lng": 28.9808716
+      },
+      "rating": 4.8,
+      "userRatingCount": 368,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12546919196407807817",
+      "recommendedPrimary": [
+        "Cevizli Çerkes Tavuğu",
+        "Hardallı Patates Salatası",
+        "Günlük Zeytinyağlı Enginar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kızarmış Ekşi Maya Üstü Humus & Fırın Mücver",
+          "note": "Meze tepsisinin yanına sıcak servis edilen çıtır fırın mücveri ve tahini dengeli humus eşlikçisi.",
+          "proof": "Çukurcuma yerel gastronomi seçkisi ve dükkan vitrini"
+        }
+      ],
+      "suitability": {
+        "seating": "Samimi küçük lokanta tezgahı, az sayıda iç masa ve sokak kenarı oturumu",
+        "crowdAndNoise": "Ev yapımı temiz zeytinyağlı meze ve öğle-akşam ev lezzeti arayan semt yerlileri",
+        "disadvantage": "Günün taze üretimi sınırlı olduğundan akşam saatlerinde vitrin hızla tükenebiliyor.",
+        "transit": "Kuloğlu Hacıoğlu Sokak No:1A üzerinde Turnacıbaşı ile Çukurcuma bağlantısındaki dar sokakta."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Mayko Lokanta",
+          "url": "https://maps.google.com/?cid=12546919196407807817",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kuloğlu Hacıoğlu Sk. 1A konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Oggusto — Beyoğlu Artizan Zeytinyağlı & Meze Durakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Küçük bir sokak lokantasında Çerkes tavuğu ve günlük zeytinyağlıları temiz ev reçetesiyle sunan durak."
+        },
+        {
+          "title": "Çukurcuma Semt Müdavimleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yağsız, katkısız ev lezzetleri ve günlük vitrin tazeliğiyle semtin yıldızı konumunda."
+        }
+      ],
+      "pros": [
+        "Katkısız, her gün sıfırdan hazırlanan taze zeytinyağlı çeşitleri",
+        "Yüksek hijyen ve özenli Çerkes-Anadolu ev reçeteleri"
+      ],
+      "cons": [
+        "Küçük lokanta düzeni büyük masa gruplarına uygun değildir"
+      ],
+      "uncertainties": [
+        "Günlük zeytinyağlı ve salata vitrini pazar alışverişine göre her sabah değişir."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cuk-tomtom-kebap",
+      "categoryId": "denemelisin",
+      "resolvedName": "Tomtom Kebap",
+      "branchName": "Firuzağa, Yeni Çarşı Cd. 39 A, 34425 Beyoğlu/İstanbul",
+      "placeId": "ChIJ-UX95eq5yhQRx5kA6OlBCEA",
+      "coordinates": {
+        "lat": 41.030912099999995,
+        "lng": 28.9788801
+      },
+      "rating": 4.8,
+      "userRatingCount": 5148,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.tripadvisor.com.tr/Restaurant_Review-g293974-d17740493-Reviews-Tomtom_Kebap-Istanbul.html",
+      "mapsUri": "https://maps.google.com/?cid=4614010291116612039",
+      "recommendedPrimary": [
+        "Zırh Kıyması Adana Kebap",
+        "Kömür Ateşinde Kuzu Şiş Dürüm",
+        "Közlenmiş Domates ve Biber"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sumaklı Gavurdağı Salatası & Yayık Ayranı",
+          "note": "Kömür ateşi kebaplarının yanında nar ekşili gavurdağı salatası ve köpüklü yayık ayranı eşlikçisi.",
+          "proof": "Beyoğlu sokak kebapçıları seçkisi ve dükkan menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük ocak başı iç salon, sokak önü masaları ve hızlı sıcak servis",
+        "crowdAndNoise": "Yerli semt sakinlerinden akşamüstü kebap dürüm molası veren gezginlere kadar her kesimle dolu",
+        "disadvantage": "Alan küçük ve talep yoğun olduğundan özellikle akşam yemeği saatlerinde kapıda kısa bekleme olabilir.",
+        "transit": "Firuzağa Yeni Çarşı Caddesi No:39A üzerinde İtalyan Hastanesi ve Çukurcuma kesişimi yakınında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Tomtom Kebap",
+          "url": "https://maps.google.com/?cid=4614010291116612039",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Firuzağa Yeni Çarşı Cd. 39A konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Oggusto — Beyoğlu Esnaf Ocakbaşıları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Dürüst zırh kıyması, taze köz sebzesi ve abartısız aile sıcaklığıyla öne çıkan küçük ocakbaşı."
+        },
+        {
+          "title": "İstanbul Kebap & Esnaf Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Beş bini aşan değerlendirmeye rağmen istikrarlı lezzeti ve misafirperverliğiyle yüksek puanını koruyor."
+        }
+      ],
+      "pros": [
+        "Zırh kıyması et kalitesi ve doğrudan kömür ızgarası lezzeti",
+        "Binlerce siparişe rağmen düşmeyen servis samimiyeti"
+      ],
+      "cons": [
+        "Dükkan kapasitesi ufak olduğundan kalabalık saatlerde ayakta sıra beklenebiliyor"
+      ],
+      "uncertainties": [
+        "Bazı geç akşam saatlerinde günlük zırh kıyması stoğu tükenebilir."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cuk-no-19-dining",
+      "categoryId": "denemelisin",
+      "resolvedName": "No 19 Dining",
+      "branchName": "Kuloğlu, Faik Paşa Cd. No:6, 34433 Beyoğlu/İstanbul",
+      "placeId": "ChIJY66UgmG3yhQRhBBKBWgijIY",
+      "coordinates": {
+        "lat": 41.032963599999995,
+        "lng": 28.981301199999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 795,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://no19.ist/",
+      "mapsUri": "https://maps.google.com/?cid=9695161927982518404",
+      "recommendedPrimary": [
+        "Mevsimsel Zeytinyağlı Seçkisi",
+        "Ağır Ateşte Kuzu İncik",
+        "Vişneli Yaprak Sarma"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Ekşi Maya Ekmek & Tahinli İncirli Tatlı",
+          "note": "Yemekle birlikte sunulan doğal ekşi maya ekmeği ve mevsim inciriyle hazırlanan hafif tahinli tatlı.",
+          "proof": "no19.ist resmi menüsü ve İstanbul gastronomi seçkileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi taş bina içinde zarif bistro masaları ve sakin akşam atmosferi",
+        "crowdAndNoise": "Anadolu’nun mevsimsel yemeklerini özenli sunumla tatmak isteyen gastronomi meraklıları",
+        "disadvantage": "Günlük sınırlı porsiyon üretildiği için akşam servisinde popüler yemekler kalmayabiliyor.",
+        "transit": "Kuloğlu Faik Paşa Caddesi No:6 üzerinde Çukurcuma Meydanı’na açılan yokuşun hemen üstünde."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — No 19 Dining",
+          "url": "https://maps.google.com/?cid=9695161927982518404",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kuloğlu Faik Paşa Cd. No:6 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "No 19 Dining Resmi Sitesi",
+          "url": "https://no19.ist/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Mevsimsel Anadolu mutfağı konsepti, günlük vitrin tabakları ve lokasyon doğrulandı."
+        },
+        {
+          "title": "Oggusto — İstanbul Şef Lokantaları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Anadolu yemek mirasını mevsimsel malzemelerle modern lokanta tezgahında yaşatan Çukurcuma adresi."
+        },
+        {
+          "title": "Beyoğlu Gastronomi Müdavimleri",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Vişneli yaprak sarması, kuzu inciği ve sıcak şef dokunuşuyla düzenli beğeni topluyor."
+        }
+      ],
+      "pros": [
+        "Türkiye’nin farklı bölgelerinden her hafta değişen otantik reçeteler",
+        "Hem öğle lokantası hem zarif akşam date sofrası olarak uygun"
+      ],
+      "cons": [
+        "Küçük salonda akşam yemekleri için önceden yer ayırtmak gerekebiliyor"
+      ],
+      "uncertainties": [
+        "Menü her gün ve her hafta yerel üretici tedarikine göre değişir."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cuk-cukur-meyhane",
+      "categoryId": "denemelisin",
+      "resolvedName": "Çukur Meyhane",
+      "branchName": "Kuloğlu, Turnacıbaşı Cd. & Kartal Sokak, Galatasaray 1/A, 34435 Beyoğlu/İstanbul",
+      "placeId": "ChIJhUaYXmC3yhQRr9ppi3UGwvI",
+      "coordinates": {
+        "lat": 41.033719,
+        "lng": 28.978966
+      },
+      "rating": 4.4,
+      "userRatingCount": 461,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17492551004580338351",
+      "recommendedPrimary": [
+        "Hamsi Şiş",
+        "Balık Mantısı",
+        "Tereyağlı Yaprak Ciğer"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Girit Ezmesi & Fırında Tahinli Helva",
+          "note": "Soğuk başlangıçta tercih edilen taze fıstıklı Girit ezmesi ve gece sonunda fırında tahinli helva.",
+          "proof": "Beyoğlu klasik meyhaneler seçkisi ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Ahşap masalı klasik mahalle meyhanesi salonu ve köşe sokak oturumu",
+        "crowdAndNoise": "Yüksek müzikli eğlence yerine sohbet ve temiz meze-ara sıcak arayan semt dostları",
+        "disadvantage": "Hafta sonu akşamlarında masalar hızlı dolduğu için rezervasyon önerilir.",
+        "transit": "Kuloğlu Turnacıbaşı Caddesi ve Kartal Sokak köşesi No:1/A üzerinde Galatasaray Lisesi arka aksında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Çukur Meyhane",
+          "url": "https://maps.google.com/?cid=17492551004580338351",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Turnacıbaşı Cd. & Kartal Sk. 1/A konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Oggusto — Beyoğlu Klasik Meyhaneleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Hamsi şiş ve balık mantısı gibi farklı sıcak mezeleriyle Çukurcuma’nın samimi mahalle meyhanesi."
+        },
+        {
+          "title": "Beyoğlu Sofra Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Temiz mezeleri, mütevazı müziği ve ilgili servisiyle çizgisini koruyor."
+        }
+      ],
+      "pros": [
+        "Karadeniz dokunuşlu özgün hamsi şiş ve balık mantısı çeşitleri",
+        "Yüksek sesten uzak klasik sohbet meyhanesi atmosferi"
+      ],
+      "cons": [
+        "Köşe salonda kalabalık gruplar için masalar yan yana gelebiliyor"
+      ],
+      "uncertainties": [
+        "Günlük taze balık ara sıcakları mevsim avına göre değişir."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    }
+  ]
+}

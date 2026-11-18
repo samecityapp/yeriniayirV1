@@ -14,7 +14,7 @@ export default function KullanimKosullariPage() {
 
         <h3 className="text-xl font-bold text-gray-900 mt-6 mb-3">1. Taraflar ve Kapsam</h3>
         <p>
-          Bu Kullanım Koşulları ("Koşullar"), YeriniAyir.com alan adlı internet sitesinin ("Platform") kullanımına ilişkindir. Platform’un sahibi ve işleteni <strong>Yerini Ayır</strong>’dır ("Şirket", "Biz"). Platform’u ziyaret eden veya kullanan herkes ("Kullanıcı") bu Koşulları okumuş ve kabul etmiş sayılır.
+          Bu Kullanım Koşulları (&quot;Koşullar&quot;), YeriniAyir.com alan adlı internet sitesinin (&quot;Platform&quot;) kullanımına ilişkindir. Platform’un sahibi ve işleteni <strong>Yerini Ayır</strong>’dır (&quot;Şirket&quot;, &quot;Biz&quot;). Platform’u ziyaret eden veya kullanan herkes (&quot;Kullanıcı&quot;) bu Koşulları okumuş ve kabul etmiş sayılır.
         </p>
 
         <h3 className="text-xl font-bold text-gray-900 mt-6 mb-3">2. Platform’un Niteliği – Rezervasyon Hizmeti Sunmuyoruz</h3>

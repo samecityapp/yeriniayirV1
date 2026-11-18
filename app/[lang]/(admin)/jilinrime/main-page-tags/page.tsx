@@ -151,7 +151,7 @@ export default function MainPageTagsPage() {
       <div className="bg-white p-6 rounded-lg shadow-sm border">
         <h2 className="text-xl font-semibold mb-2">Popüler Özellikler</h2>
         <p className="text-sm text-gray-500 mb-6">
-          Ana sayfada görünecek özellik etiketlerini buradan seçin. Bu etiketler, "Etiket Yönetimi" sayfasından eklenir.
+          Ana sayfada görünecek özellik etiketlerini buradan seçin. Bu etiketler, &quot;Etiket Yönetimi&quot; sayfasından eklenir.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {allTags.map(tag => (
@@ -169,7 +169,7 @@ export default function MainPageTagsPage() {
         </div>
         {allTags.length === 0 && (
           <div className="text-center py-8 text-gray-400">
-            <p>Henüz etiket eklenmemiş. Önce "Etiket Yönetimi" sayfasından etiket ekleyin.</p>
+            <p>Henüz etiket eklenmemiş. Önce &quot;Etiket Yönetimi&quot; sayfasından etiket ekleyin.</p>
           </div>
         )}
       </div>

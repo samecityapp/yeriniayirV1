@@ -1,0 +1,918 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "istanbul-besiktas-bebek",
+  "displayName": "Bebek, Beşiktaş, İstanbul",
+  "verifiedAt": "2026-11-15T10:05:47.247Z",
+  "selectedCount": 11,
+  "rejectedControls": [
+    {
+      "id": "beb-neg-sankai",
+      "resolvedName": "Sankai by Nagaya",
+      "reason": "not_operational:CLOSED_TEMPORARILY"
+    },
+    {
+      "id": "beb-neg-upper-crust",
+      "resolvedName": "The Upper Crust Pizzeria Bebek",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "beb-neg-espressolab",
+      "resolvedName": "Espressolab Bebek",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "beb-neg-divan",
+      "resolvedName": "Divan Pastanesi Bebek",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "beb-neg-selamlique",
+      "resolvedName": "Selamlique Bebek",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "beb-neg-ninda",
+      "resolvedName": "Ninda Bebek",
+      "reason": "kahve_category_not_coffee_specialist:bakery"
+    },
+    {
+      "id": "beb-neg-atlas-balik",
+      "resolvedName": "ATLAS BALIK",
+      "reason": "outside_strict_neighborhood:Bbox dışında (41.06743, 29.04445)"
+    },
+    {
+      "id": "beb-neg-piccola-arnavutkoy",
+      "resolvedName": "Piccola Pizzeria Arnavutköy",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Bebek, adres: Arnavutköy, Kamacı Sk. No:5, 34345 Beşiktaş/İstanbul)"
+    },
+    {
+      "id": "beb-neg-lucca",
+      "resolvedName": "Lucca",
+      "reason": "below_quality_threshold:★2.9(457)"
+    },
+    {
+      "id": "beb-neg-mangerie",
+      "resolvedName": "Mangerie",
+      "reason": "below_quality_threshold:★3.4(1693)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "beb-bread-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Bread & Burger",
+      "branchName": "Bebek, Manolya Sk. 12/A, 34342 Beşiktaş/İstanbul",
+      "placeId": "ChIJd1-IdH63yhQR4Tj2n9L75n0",
+      "coordinates": {
+        "lat": 41.077383999999995,
+        "lng": 29.042576999999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 2055,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.breadandburger.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=9072215381429860577",
+      "recommendedPrimary": [
+        "Trüf Burger",
+        "Klasik Bread & Burger",
+        "Boşnak Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Buffalo Tavuk Kanatları & Mac and Cheese Topları",
+          "note": "Burger yanına çıtır atıştırmalık paylaşmak isteyen masaların sık tercih ettiği başlangıç ikilisi.",
+          "proof": "Bread & Burger resmi menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Manolya Sokak içinde iç oturum ve kaldırım kenarı masalar",
+        "crowdAndNoise": "Akşam ve hafta sonu öğle saatlerinde Bebek sakinleri ve burger odaklı gruplarla hareketli",
+        "disadvantage": "Manolya Sokak trafiği ve dar masa yerleşimi yoğun saatlerde biraz sıkışık hissettirebiliyor.",
+        "transit": "Cevdet Paşa Caddesi’nden Manolya Sokak içine birkaç adımlık yürüyüşle."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Bread & Burger Bebek",
+          "url": "https://maps.google.com/?cid=9072215381429860577",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bebek Manolya Sk. 12/A konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Bread & Burger Resmi Sitesi",
+          "url": "http://www.breadandburger.com.tr/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Ekşi mayalı artizan ekmekler ve %100 süt danası satır kıyma burger yaklaşımı doğrulandı."
+        },
+        {
+          "title": "The Magger — Bebek Bread & Burger",
+          "url": "https://www.themagger.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bebek içi burger seçenekleri, Fit Burger ve ev yapımı sos çeşitliliği doğrulandı."
+        }
+      ],
+      "pros": [
+        "Ekşi mayalı ekmek ve satır kıyma et kalitesini uzun süredir koruyan mutfak",
+        "Sahil kalabalığının bir arka sokağı olan Manolya Sokak’ta kolay ulaşım"
+      ],
+      "cons": [
+        "Hafta sonları sokak içi dar oturma alanı çabuk dolabiliyor"
+      ],
+      "uncertainties": [
+        "Ekşi mayalı ekmek ve fit/vegan alternatif stokları güne göre değişebilir."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "beb-ck-steakhouse",
+      "categoryId": "hamburger",
+      "resolvedName": "ÇK & Steakhouse Bebek",
+      "branchName": "Bebek, Küçük Bebek Cd. No:25/B, 34342 Beşiktaş/İstanbul",
+      "placeId": "ChIJDSJ-MXK3yhQRoXjBQMV6qGo",
+      "coordinates": {
+        "lat": 41.080118399999996,
+        "lng": 29.044750299999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 177,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7685527751721318561",
+      "recommendedPrimary": [
+        "Lokum Burger (Dana Lokum Dilimli)",
+        "Steak Burger",
+        "Sucuk Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Dry-Aged Steak & Kasap Köfte Porsiyonları",
+          "note": "Burger dışında klasik ızgara et tabakları ve porsiyon köfte sunması et seven gruplar için avantaj sağlıyor.",
+          "proof": "Küçük Bebek yerel menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük Bebek Caddesi girişinde şık ama samimi steak-burger salonu",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde et odaklı yemek arayan bölge sakinleri ve gruplar",
+        "disadvantage": "Küçük Bebek trafiğinin hemen kenarında kaldığı için ön masalar cadde hareketine açık.",
+        "transit": "Bebek sahil kavşağından Küçük Bebek Caddesi’ne doğru çıkarken No:25/B’de."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Çk&Steakhouse Bebek",
+          "url": "https://maps.google.com/?cid=7685527751721318561",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bebek Küçük Bebek Cd. No:25/B konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Restoranim — ÇK Steakhouse Bebek Menü",
+          "url": "https://www.restoranim.net",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Lokum Burger, Steak Burger, Sucuk Burger ve kasap köfte porsiyonları doğrulandı."
+        },
+        {
+          "title": "Yandex Haritalar — Bebek Et & Burger Seçkisi",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Küçük Bebek Caddesi üzerindeki bağımsız steakhouse ve burger odağı doğrulandı."
+        }
+      ],
+      "pros": [
+        "Dana lokum dilimli burgerle klasik kıyma burgerden ayrışan etçi dokunuşu",
+        "Klasik steak porsiyonlarıyla karışık gruplara hitap etmesi"
+      ],
+      "cons": [
+        "Yokuş trafiğinin ve park arama sirkülasyonunun yoğun olduğu bir aksta konumlanır"
+      ],
+      "uncertainties": [
+        "Dry-aged kesim stokları gün içindeki servis yoğunluğuna bağlıdır."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "beb-poco-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "POCO Coffee & Matcha Bar",
+      "branchName": "Bebek, Manolya Sk. No:8 D:B, 34342 Beşiktaş/İstanbul",
+      "placeId": "ChIJi21dSs63yhQRO32vhkmH0XA",
+      "coordinates": {
+        "lat": 41.077387,
+        "lng": 29.04272
+      },
+      "rating": 4.6,
+      "userRatingCount": 299,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.pocomatcha.com/",
+      "mapsUri": "https://maps.google.com/?cid=8129427552242466107",
+      "recommendedPrimary": [
+        "Iced Strawberry Matcha Latte",
+        "Seremonial Yulaf Sütlü Matcha",
+        "Flat White & Espresso Bazlı Kahveler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Matcha Aromalı Kurabiyeler & Hafif Barlar",
+          "note": "İçecek odaklı menüye eşlik eden küçük matcha kurabiyeleri ve rafine tatlı barları öne çıkıyor.",
+          "proof": "POCO resmi sitesi ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Manolya Sokak üzerinde minimal iç tezgâh ve kaldırım kenarı bank/tabureler",
+        "crowdAndNoise": "Sabah yürüyüşü sonrası kahve-matcha alanlar ve semt gençleriyle dinamik akış",
+        "disadvantage": "Uzun masa başında çalışmaktan çok hızlı kahve/matcha molası ve kısa sohbet için tasarlanmış kompakt bir alan.",
+        "transit": "Manolya Sokak No:8B üzerinde, Cevdet Paşa sahil hattına paralel ilk sokakta."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — POCO Coffee & Matcha Bar Bebek",
+          "url": "https://maps.google.com/?cid=8129427552242466107",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bebek Manolya Sk. No:8 D:B konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "POCO Matcha Resmi Sitesi",
+          "url": "https://www.pocomatcha.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Seremonial ve platinum grade matcha bar konsepti ile espresso çeşitleri doğrulandı."
+        },
+        {
+          "title": "JoinPearl & Menü Kayıtları — POCO Bebek",
+          "url": "https://joinpearl.co",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Iced Strawberry Matcha Latte, yulaf sütlü matcha ve matcha kurabiye eşlikçileri doğrulandı."
+        }
+      ],
+      "pros": [
+        "İstanbul’da seremonial derece matcha standardını kuran öncü bağımsız bar",
+        "Espresso bazlı içeceklerde de temiz çekirdek kalibrasyonu"
+      ],
+      "cons": [
+        "Kompakt oturma kapasitesi nedeniyle kalabalık saatlerde al-götür daha pratik olur"
+      ],
+      "uncertainties": [
+        "Özel hasat matcha ve yulaf sütü çeşitleri döneme göre değişebiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "beb-sabba-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Sabba Coffee",
+      "branchName": "Bebek, Cevdet Paşa Cd. No:46/C, 34342 Beşiktaş/İstanbul",
+      "placeId": "ChIJQbjk1-a7yhQRumtRASVmE0Y",
+      "coordinates": {
+        "lat": 41.078302199999996,
+        "lng": 29.044779899999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 59,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5049491916334394298",
+      "recommendedPrimary": [
+        "Nitelikli Espresso & Cortado",
+        "Yöresel Filtre Kahve",
+        "İmza Soğuk Kahveler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Artisan Kurabiyeler & Tatlı Eşlikçileri",
+          "note": "Zincir kafe vitrinlerinden ayrılan taze kurabiye ve unlu mamul eşlikçileriyle sade kahve saatine yakışıyor.",
+          "proof": "Bebek yerel kafe menü kayıtları ve harita arşivi"
+        }
+      ],
+      "suitability": {
+        "seating": "Cevdet Paşa Caddesi üzerinde kompakt, temiz ve düzenli kafe içi oturma köşesi",
+        "crowdAndNoise": "Zincir kahveci kalabalığından kaçıp temiz fincan arayan Bebek müdavimleri",
+        "disadvantage": "Sahil yürüyüş aksındaki ana cadde üzerinde küçük bir cepheye sahip olduğundan kalabalık gruplara uygun değil.",
+        "transit": "Cevdet Paşa Caddesi No:46/C’de, Bebek meydanı ile Küçük Bebek kavşağı arasında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Sabba Coffee Bebek",
+          "url": "https://maps.google.com/?cid=5049491916334394298",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bebek Cevdet Paşa Cd. No:46/C konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Menu-TR — Sabba Coffee Bebek Menüsü",
+          "url": "https://menu-tr.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Espresso bazlı kahveler, soğuk imza içecekler ve günlük kurabiye/tatlı eşlikçileri doğrulandı."
+        },
+        {
+          "title": "Yandex Haritalar — Bebek Bağımsız Kahve Noktaları",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Cevdet Paşa Caddesi üzerinde zincirler dışı nitelikli kahve durağı olarak yüksek memnuniyet sağladığı doğrulandı."
+        }
+      ],
+      "pros": [
+        "Cevdet Paşa’daki zincir tekeline karşı temiz demleme ve özenli espresso sunumu",
+        "Sahil yürüyüşünün hemen yanında kolay erişim"
+      ],
+      "cons": [
+        "Genç bir adres olması ve sınırlı oturma alanı"
+      ],
+      "uncertainties": [
+        "Haftalık kurabiye ve tatlı eşlikçileri tezgâhtaki taze üretime bağlıdır."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "beb-sekizdeyiz",
+      "categoryId": "date",
+      "resolvedName": "Sekizdeyiz Bebek",
+      "branchName": "Bebek, İnşirah Sokağı No:7, 34342 Beşiktaş/İstanbul",
+      "placeId": "ChIJVwbvCwC3yhQROKwjxAiF-UU",
+      "coordinates": {
+        "lat": 41.0764657,
+        "lng": 29.042524699999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 140,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://sekizdeyizbebek.com/",
+      "mapsUri": "https://maps.google.com/?cid=5042207530514885688",
+      "recommendedPrimary": [
+        "Cunda Ezmesi, Pastırmalı Humus & Zeytinyağlı Enginar",
+        "Zırh Kıyması Adana & Kuzu Şiş",
+        "İmza Kokteyller"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yanık Yedikule Salatası & Çilekli Semizotu",
+          "note": "Klasik ocakbaşı menülerinden farklılaşan taze ve yaratıcı salata seçenekleri özellikle kokteyl eşlikçisi olarak tercih ediliyor.",
+          "proof": "Sekizdeyiz Bebek resmi menüsü ve gastronomi rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "İnşirah Sokağı’nda özenli masalar, bar köşesi ve akşam yemeğine uygun sıcak aydınlatma",
+        "crowdAndNoise": "Bebek akşam yemeği buluşmaları, çiftler ve kutlama masalarıyla nezih atmosfer",
+        "disadvantage": "Bebek’in en yüksek bütçeli akşam yemek kategorisinde yer alır ve hafta sonu için rezervasyon gerektirir.",
+        "transit": "Cevdet Paşa’dan Bebek Parkı güney ucundaki İnşirah Sokağı No:7’ye kısa adımlarla."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Sekizdeyiz Bebek Restaurant & Kokteyl Bar",
+          "url": "https://maps.google.com/?cid=5042207530514885688",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bebek İnşirah Sokağı No:7 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Sekizdeyiz Bebek Resmi Sitesi",
+          "url": "https://sekizdeyizbebek.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Meze, ızgara, salata ve kokteyl bar menüsü doğrulandı."
+        },
+        {
+          "title": "Favori Lezzetler — Sekizdeyiz Bebek Değerlendirmesi",
+          "url": "https://www.favorilezzetler.com.tr",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Meze kültürü ile et odaklı mutfağı ve imza kokteylleri birleştiren İnşirah Sokağı konsepti doğrulandı."
+        },
+        {
+          "title": "Yemeksepeti — Sekizdeyiz Bebek Menü Doğrulaması",
+          "url": "https://www.yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Zeytinyağlı enginar, Cunda ezmesi, zırh Adana ve yanık Yedikule salatası kalemleri doğrulandı."
+        }
+      ],
+      "pros": [
+        "Klasik meyhane-ocakbaşı çizgisini kokteyl bar ve rafine salatalarla modernleştiren denge",
+        "Sahil ana caddesinin kalabalığından bir adım içeride, İnşirah Sokağı’nda huzurlu konum"
+      ],
+      "cons": [
+        "Yüksek segment hesap bütçesi ve rezervasyon zorunluluğu"
+      ],
+      "uncertainties": [
+        "Mevsimsel salata ve meze çeşitleri dönemsel ürün tedarikine göre güncellenir."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "beb-numa",
+      "categoryId": "kahvalti",
+      "resolvedName": "Numa Bebek",
+      "branchName": "Bebek, Cevdet Paşa Cd. No:121, 34342 Beşiktaş/İstanbul",
+      "placeId": "ChIJX2ULcJHJyhQRoHX91gkIUDQ",
+      "coordinates": {
+        "lat": 41.0801522,
+        "lng": 29.051028699999996
+      },
+      "rating": 4.6,
+      "userRatingCount": 252,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.numacafe.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=3769521726463767968",
+      "recommendedPrimary": [
+        "Numa Sunrise İmza Kahvaltı",
+        "Mediterranean Morning & Simitli Göz Yumurta",
+        "Kabaklı Fit Omlet"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Trüflü Dört Mantarlı Pizetta & Günlük Fırın Vitrini",
+          "note": "Sabah kahvaltısı sonrasında gün ortasına sarkan masalar için kiş, kruvasan ve pizetta çeşitleri öne çıkıyor.",
+          "proof": "Numa Bebek resmi menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Cevdet Paşa sahil hattında aydınlık iç salon ve cadde kenarı keyifli dış masalar",
+        "crowdAndNoise": "Sabah Boğaz yürüyüşü sonrası kahvaltıya oturanlar ve Bebek müdavimleri",
+        "disadvantage": "Hafta sonu sabah-öğle geçişinde Cevdet Paşa sahil yürüyüşçüleriyle bekleme sırası oluşabiliyor.",
+        "transit": "Cevdet Paşa Caddesi No:121 üzerinde, Bebek koyunun Rumelihisarı’na doğru uzanan kuzey aksında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Numa Bebek",
+          "url": "https://maps.google.com/?cid=3769521726463767968",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bebek Cevdet Paşa Cd. No:121 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Numa Cafe Resmi Sitesi",
+          "url": "https://www.numacafe.com.tr/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "Kendi üretimi ekmek/granola, Mediterranean Morning, Numa Sunrise ve all-day kahvaltı menüsü doğrulandı."
+        },
+        {
+          "title": "Müdavim — Numa Bebek Değerlendirmesi",
+          "url": "https://www.mudavim.net",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Simitli göz yumurta, trüflü pizetta ve günlük fırın vitrini doğrulandı."
+        }
+      ],
+      "pros": [
+        "Kendi mutfağında pişirilen ekmek ve granola ile oturmuş modern kahvaltı kalitesi",
+        "Mangerie/Lucca çizgisine kıyasla tutarlı servis ve yüksek memnuniyet"
+      ],
+      "cons": [
+        "Bebek sahil bandı popülerliği nedeniyle hafta sonu masa bulmak zaman alabilir"
+      ],
+      "uncertainties": [
+        "Fırın vitrinindeki günlük kurabiye, cheesecake ve kiş seçenekleri güne göre değişir."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "beb-season-bakery",
+      "categoryId": "kahvalti",
+      "resolvedName": "SEASON Artisan Bakery",
+      "branchName": "Bebek, Küçük Bebek Cd. No:15-17, 34342 Beşiktaş/İstanbul",
+      "placeId": "ChIJX8_fnDG3yhQRkelrZ6TVqlA",
+      "coordinates": {
+        "lat": 41.0795033,
+        "lng": 29.044887400000004
+      },
+      "rating": 4.5,
+      "userRatingCount": 446,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.seasonbakery.com/",
+      "mapsUri": "https://maps.google.com/?cid=5812693171161524625",
+      "recommendedPrimary": [
+        "Sade & Dolgulu Ev Yapımı Kruvasanlar",
+        "%100 Ekşi Mayalı Köy Ekmeği Üstü Kahvaltılıklar",
+        "Paris-Brest Ekler & Limonlu Cheesecake Tart"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çilekli Bademli Dacquoise Tart & Rafine Şekersiz Tatlılar",
+          "note": "Düşük şeker yaklaşımıyla hazırlanan meyveli tartlar ve glütensiz tatlılar kahvaltı sonrası vitrini tamamlıyor.",
+          "proof": "SEASON Artisan Bakery resmi sitesi ve gastronomi rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük Bebek’te masalsı vitrin önünde sınırlı kafe masaları ve sıcak iç köşe",
+        "crowdAndNoise": "Ekşi maya ekmek almaya gelen semt sakinleri ve hafta sonu fırın-kahve buluşmaları",
+        "disadvantage": "Oturma alanı kısıtlıdır; ayrıca mekânda Türk çayı ve Türk kahvesi servis edilmiyor.",
+        "transit": "Cevdet Paşa’dan Küçük Bebek Caddesi No:15-17 içine kısa yürüyüşle."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — SEASON Artisan Bakery Bebek",
+          "url": "https://maps.google.com/?cid=5812693171161524625",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bebek Küçük Bebek Cd. No:15-17 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "SEASON Artisan Bakery Resmi Sitesi",
+          "url": "http://www.seasonbakery.com/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "%100 ekşi mayalı ekmekler, kruvasanlar, Paris-Brest ekler ve minimum şeker felsefesi doğrulandı."
+        },
+        {
+          "title": "Gurme Rehber & Wanderlog — SEASON Bebek",
+          "url": "https://gurmerehber.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Fransız patisserie tekniği ve mekânda Türk çayı/kahvesi bulunmadığı detayı doğrulandı."
+        }
+      ],
+      "pros": [
+        "Gerçek %100 ekşi maya hamur kalitesi ve yüksek Fransız patisserie işçiliği",
+        "Rafine şekersiz ve glütensiz tatlı/ekmek seçeneklerinde özen"
+      ],
+      "cons": [
+        "Türk çayı ve Türk kahvesi olmaması klasik kahvaltı arayanlara uymayabilir"
+      ],
+      "uncertainties": [
+        "Özel dolgulu kruvasan ve ekmek partileri gün içinde tükenebiliyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "beb-badem-ezmesi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Meşhur Bebek Badem Ezmesi",
+      "branchName": "Bebek, Cevdet Paşa Cd. No:53/C, 34342 Beşiktaş/İstanbul",
+      "placeId": "ChIJLSBYMB22yhQRXQ-T77zbJBs",
+      "coordinates": {
+        "lat": 41.077657699999996,
+        "lng": 29.043420299999998
+      },
+      "rating": 4,
+      "userRatingCount": 217,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.meshurbebekbademezmesi.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=1955929742705364829",
+      "recommendedPrimary": [
+        "Geleneksel Sade Badem Ezmesi",
+        "Antep Fıstıklı Badem Ezmesi",
+        "El Yapımı Şekerleme & Lokum Seçkisi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fıstıklı Lokum & Geleneksel El Yapımı Çikolatalar",
+          "note": "Badem ezmesi kutularının yanında hediyelik olarak tercih edilen küçük lokum ve el yapımı çikolata seçenekleri.",
+          "proof": "Meşhur Bebek Badem Ezmesi resmi kaynakları ve ansiklopedik kayıtlar"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi paket satış tezgâhı; yalnızca al-götür düzeninde hizmet verir (oturma alanı yok)",
+        "crowdAndNoise": "Semt yürüyüşçüleri, hediyelik kutu alan İstanbullular ve gün içi sakin tezgâh akışı",
+        "disadvantage": "İçeride oturma düzeni yoktur; bazı ziyaretçiler ezmenin şeker oranını geleneksel tarif gereği tatlı bulabiliyor.",
+        "transit": "Cevdet Paşa Caddesi No:53/C’de, Bebek meydanı hattının tam üzerinde."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Meşhur Bebek Badem Ezmesi",
+          "url": "https://maps.google.com/?cid=1955929742705364829",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bebek Cevdet Paşa Cd. No:53/C konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Meşhur Bebek Badem Ezmesi Resmi Sitesi",
+          "url": "https://www.meshurbebekbademezmesi.com.tr/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "1904 kuruluş geçmişi, katkısız el yapımı sade ve fıstıklı badem ezmesi üretimi doğrulandı."
+        },
+        {
+          "title": "Vikipedi — Meşhur Bebek Badem Ezmesi Tarihi",
+          "url": "https://tr.wikipedia.org/wiki/Me%C5%9Fhur_Bebek_Badem_Ezmesi",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1904 tarihli tarihî İstanbul şekercilik kurumu statüsü doğrulandı."
+        },
+        {
+          "title": "İstanbul.net Kültür & Gastronomi Arşivi",
+          "url": "https://www.istanbul.net.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bebek semtiyle özdeşleşmiş paket tezgâhı geleneği doğrulandı."
+        }
+      ],
+      "pros": [
+        "1904’ten bugüne aynı sokakta el işçiliği tarifini koruyan nadir gastronomi mirası",
+        "Hediyelik ve yürüyüş molası için katkısız geleneksel üretim"
+      ],
+      "cons": [
+        "Oturma alanı bulunmayan saf paket dükkânı olması ve fiyat/tat profilinin herkesin damak tadına uymaması"
+      ],
+      "uncertainties": [
+        "Sezonluk taze badem hasadına göre doku ve nem dengesinde küçük nüanslar olabilir."
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "beb-mini-dondurma",
+      "categoryId": "denemelisin",
+      "resolvedName": "Bebek Mini Dondurma",
+      "branchName": "Bebek, Cevdet Paşa Cd. 38/A, 34342 Beşiktaş/İstanbul",
+      "placeId": "ChIJLztnMR22yhQRgVOOyJcZ5dE",
+      "coordinates": {
+        "lat": 41.078034099999996,
+        "lng": 29.0443556
+      },
+      "rating": 4.5,
+      "userRatingCount": 339,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.tripadvisor.com.tr/Restaurant_Review-g293974-d2670930-Reviews-Mini_Dondurma-Istanbul.html",
+      "mapsUri": "https://maps.google.com/?cid=15124523063289205633",
+      "recommendedPrimary": [
+        "Nane Lokumlu Dondurma",
+        "Lotus Bisküvili Dondurma",
+        "Taze Mevsim Meyveli & Sütlü Klasik Toplar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Karamelli & Çikolatalı Külahta Karışık Seçenekler",
+          "note": "Mevsimlik meyvelerin yanında yoğun sütlü karamelli ve çikolatalı klasikler külah ikilisini tamamlıyor.",
+          "proof": "İstanbul gastronomi rehberleri ve ziyaretçi kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Cevdet Paşa Caddesi üzerinde küçük al-götür penceresi; sahil yürüyüşünde ayakta tüketilir (oturma alanı yok)",
+        "crowdAndNoise": "Özellikle güneşli öğleden sonra ve akşamüstü saatlerinde kapı önünde kısa külah sırası",
+        "disadvantage": "Oturma alanı yoktur; sıcak yaz ve bahar akşamlarında pencere önünde kısa kuyruk beklenebiliyor.",
+        "transit": "Cevdet Paşa Caddesi No:38/A üzerinde, Bebek Parkı’na birkaç adımlık mesafede."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Bebek Mini Dondurma",
+          "url": "https://maps.google.com/?cid=15124523063289205633",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bebek Cevdet Paşa Cd. 38/A konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "İstanbul Dondurma Rehberleri — Bebek Mini Dondurma",
+          "url": "https://www.timeout.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taze süt ve meyveli üretim, Lotus bisküvili ve nane lokumlu çeşitleri ile sahil ritüeli doğrulandı."
+        },
+        {
+          "title": "Tripadvisor Bebek Topluluk Kayıtları",
+          "url": "https://www.tripadvisor.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yıllardır kalitesini koruyan küçük al-götür penceresi geleneği doğrulandı."
+        }
+      ],
+      "pros": [
+        "Yapay şuruba kaçmayan, taze sütlü ve meyveli temiz dondurma kıvamı",
+        "Bebek sahil yürüyüşünü tamamlayan klasik mahalle penceresi ritüeli"
+      ],
+      "cons": [
+        "Küçük tezgâh önünde yoğun akşamlarda sıra oluşması ve oturma alanı olmaması"
+      ],
+      "uncertainties": [
+        "Mevsimlik meyve çeşitleri günlük tezgâh stoğuna göre rotasyonla çıkar."
+      ],
+      "selectionScore": 99,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "beb-yirmibir-kebap",
+      "categoryId": "denemelisin",
+      "resolvedName": "Yirmibir Kebap Bebek",
+      "branchName": "Bebek, Manolya Sk. no:1, 34342 Beşiktaş/İstanbul",
+      "placeId": "ChIJ52I0-Cm3yhQRoDPGFcUE_VM",
+      "coordinates": {
+        "lat": 41.077187099999996,
+        "lng": 29.043059099999994
+      },
+      "rating": 4.7,
+      "userRatingCount": 138,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6051998718776193952",
+      "recommendedPrimary": [
+        "Zırh Adana & Urfa Kebap",
+        "Diyarbakır Usulü Ciğer Şiş & Çöp Şiş",
+        "Atom, Humus & Ev Yapımı Ocakbaşı Mezeleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kuzu Şiş & Yoğurtlu Soğuk Başlangıçlar",
+          "note": "Ana ızgara öncesi masayı donatan günlük haydari, humus ve atom ikilisi akşam buluşmalarına uyum sağlıyor.",
+          "proof": "Bebek ocakbaşı menü kayıtları ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Manolya Sokak’ta loş ışıklı, samimi bohem meyhane-ocakbaşı masaları",
+        "crowdAndNoise": "Bebek içi klasik balık/kafe çizgisi dışında samimi rakı-kebap akşamı arayan gruplar",
+        "disadvantage": "Ocakbaşı ölçeği kompakt olduğundan hafta sonu akşamlarında rezervasyonsuz yer bulmak zor ve bütçesi semt ortalamasına paralel yüksek.",
+        "transit": "Cevdet Paşa’dan Manolya Sokak No:1 içine döner dönmez."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Yirmibir Kebap Bebek",
+          "url": "https://maps.google.com/?cid=6051998718776193952",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bebek Manolya Sk. No:1 konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Stilika & Mekân İncelemeleri — Yirmibir Kebap Bebek",
+          "url": "https://www.stilika.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bohem ocakbaşı atmosferi, atom/humus mezeleri ve kebap menüsü doğrulandı."
+        },
+        {
+          "title": "Yandex Haritalar — Yirmibir Kebap Bebek",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Manolya Sokak girişindeki konumu ve ocakbaşı lezzet istikrarı doğrulandı."
+        }
+      ],
+      "pros": [
+        "Bebek sahil şeridinde nitelikli zırh kebap ve ciğer şiş sunan nadir bağımsız ocakbaşı",
+        "Hem günlük keyifli akşam yemeğine hem Date buluşmasına uygun samimi atmosfer"
+      ],
+      "cons": [
+        "Bebek konumuna bağlı yüksek bütçe seviyesi ve kompakt salon kapasitesi"
+      ],
+      "uncertainties": [
+        "Hafta sonları grup yoğunluğuna göre ocakbaşı servisi biraz uzayabilir."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "beb-bebek-balikci",
+      "categoryId": "balik",
+      "resolvedName": "Bebek Balıkçı",
+      "branchName": "Bebek, Cevdet Paşa Cd. 26/A, 34342 Beşiktaş/İstanbul",
+      "placeId": "ChIJScCPisi3yhQRMhVKw4AZVWY",
+      "coordinates": {
+        "lat": 41.0775377,
+        "lng": 29.0439158
+      },
+      "rating": 3.8,
+      "userRatingCount": 917,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.bebekbalikci.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=7373828005711975730",
+      "recommendedPrimary": [
+        "Deniz Kirpi Taraması",
+        "Mevsim Günlük Izgara Levrek / Dülger",
+        "Balık Çorbası & Lakerda"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Karides Güveç, Cevizli Balık & Balık Köftesi",
+          "note": "Soğuk meze ve çorba girişinin ardından gelen sıcak ara sıcak üçlüsü masaların vazgeçilmezleri arasında.",
+          "proof": "Bebek Balıkçı resmi menü kayıtları ve İstanbul gastronomi arşivi"
+        }
+      ],
+      "suitability": {
+        "seating": "Boğaz suyuna sıfır tarihî deniz cephesi masaları ve kapalı kıyı salonu",
+        "crowdAndNoise": "Özel akşam kutlamaları, yabancı konuk ağırlayanlar ve köklü Bebek müdavimleri",
+        "disadvantage": "Boğaz kıyısı lüks segment fiyatlaması oldukça yüksektir; yoğun dönemlerde masa servisi hızında ve hesap-performans dengesinde dalgalanma şikâyetleri görülebiliyor.",
+        "transit": "Cevdet Paşa Caddesi No:26/A’da, Bebek iskelesi ve sahil yürüyüş yolunun hemen yanında."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Bebek Balıkçı",
+          "url": "https://maps.google.com/?cid=7373828005711975730",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Bebek Cevdet Paşa Cd. 26/A konumu ve operational durumu doğrulandı."
+        },
+        {
+          "title": "Bebek Balıkçı Resmi Sitesi",
+          "url": "http://www.bebekbalikci.com.tr/",
+          "date": "2026-11-15",
+          "kind": "operator",
+          "note": "1952 kuruluş geçmişi, deniz ürünleri menüsü ve kıyı teras konumu doğrulandı."
+        },
+        {
+          "title": "Gastromanya — Bebek Balıkçı İncelemesi",
+          "url": "https://www.gastromanya.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Deniz kirpi taraması, balık çorbası ve Boğaz sıfır konumuyla tarihsel kıyı kurumu olduğu doğrulandı."
+        },
+        {
+          "title": "Mesprestiges & Mekanlar — Bebek Balıkçı Notları",
+          "url": "https://www.mesprestiges.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Lakerda, cevizli balık ve yüksek fiyat/servis dalgalanması notlarıyla semt ritüeli statüsü teyit edildi."
+        }
+      ],
+      "pros": [
+        "1952’den beri aynı Boğaz kıyısı noktasında varlığını koruyan yaşayan balıkçı kurumu",
+        "Deniz kirpi taraması, lakerda ve günlük mevsim balığı gibi klasik reçeteler"
+      ],
+      "cons": [
+        "Çok yüksek Boğaz kıyısı hesap seviyesi ve zaman zaman yoğunlukta yaşanan servis/fiyat-performans eleştirileri"
+      ],
+      "uncertainties": [
+        "Günlük av balığı ve deniz kirpi taraması stoğu mevsime göre değişebiliyor."
+      ],
+      "selectionScore": 73,
+      "selectedForSnapshot": true
+    }
+  ]
+}

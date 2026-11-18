@@ -1,0 +1,914 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "mugla-bodrum-torba",
+  "displayName": "Torba, Bodrum, Muğla",
+  "verifiedAt": "2026-11-16T20:06:20.679Z",
+  "selectedCount": 8,
+  "rejectedControls": [
+    {
+      "id": "ctrl-torba-mehmetin-yeri",
+      "resolvedName": "Mehmetin Yeri Restorant",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-torba-doner-kebap-ev-yemekleri",
+      "resolvedName": "Torba Döner, Kebap - Ev Yemekleri",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-torba-susona-bodrum-hotel",
+      "resolvedName": "Susona Bodrum, LXR Hotels & Resorts",
+      "reason": "invalid_place_type:resort_hotel"
+    },
+    {
+      "id": "ctrl-torba-voyage-torba-hotel",
+      "resolvedName": "Voyage Torba",
+      "reason": "invalid_place_type:hotel"
+    },
+    {
+      "id": "ctrl-torba-hyde-bodrum-hotel",
+      "resolvedName": "Hyde Bodrum",
+      "reason": "invalid_place_type:hotel"
+    },
+    {
+      "id": "ctrl-torba-hotel-zeytinada",
+      "resolvedName": "Hotel Zeytinada",
+      "reason": "invalid_place_type:hotel"
+    },
+    {
+      "id": "ctrl-torba-hotel-torbahan",
+      "resolvedName": "Hotel Torbahan",
+      "reason": "below_quality_threshold:★4.2(506)"
+    },
+    {
+      "id": "ctrl-torba-bodrum-shop-and-go",
+      "resolvedName": "Bodrum Shop & Go",
+      "reason": "invalid_place_type:shopping_mall"
+    },
+    {
+      "id": "ctrl-torba-starbucks",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-torba-big-chefs-yahsi",
+      "resolvedName": "Big Chefs - Bodrum Yahşi Şubesi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-torba-belediye-kafe-dup",
+      "resolvedName": "belediye Kafe",
+      "reason": "insufficient_independent_sources"
+    },
+    {
+      "id": "ctrl-torba-suyah-bodrum",
+      "resolvedName": "Suyah Bodrum",
+      "reason": "below_quality_threshold:★4.3(215)"
+    },
+    {
+      "id": "ctrl-torba-plaji",
+      "resolvedName": "Torba Plajı",
+      "reason": "below_quality_threshold:★4.2(131)"
+    },
+    {
+      "id": "ctrl-torba-unlu-mamulleri",
+      "resolvedName": "Torba Unlu Mamulleri",
+      "reason": "kahve_category_not_coffee_specialist:bakery"
+    },
+    {
+      "id": "ctrl-torba-karya-firin",
+      "resolvedName": "KARYA FIRIN",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-torba-mercan-restaurant-beach",
+      "resolvedName": "Mercan Restaurant & Beach",
+      "reason": "below_quality_threshold:★4(95)"
+    },
+    {
+      "id": "ctrl-torba-sanat-evi-restoran",
+      "resolvedName": "Sanat Evi Restoran",
+      "reason": "below_quality_threshold:★4(51)"
+    },
+    {
+      "id": "ctrl-torba-zeytinkoy-cafe",
+      "resolvedName": "ZeytinKöy Cafe Restaurant",
+      "reason": "outside_strict_neighborhood:Bbox dışında (37.05432, 27.45496)"
+    },
+    {
+      "id": "ctrl-torba-sanat-evi-pin2",
+      "resolvedName": "Torba Sanat Evi",
+      "reason": "below_quality_threshold:★2.6(21)"
+    },
+    {
+      "id": "ctrl-torba-karya-lounge-doner",
+      "resolvedName": "Karya Lounge & Döner",
+      "reason": "below_quality_threshold:★4.4(15)"
+    },
+    {
+      "id": "ctrl-torba-dalli-restaurant",
+      "resolvedName": "Dalli Restaurant",
+      "reason": "below_quality_threshold:★4.6(34)"
+    },
+    {
+      "id": "ctrl-torba-el-papi-usuluk",
+      "resolvedName": "El Papi Spanish Meat & Paella Bar",
+      "reason": "below_quality_threshold:★4.4(19)"
+    },
+    {
+      "id": "ctrl-torba-paper-moon-golkoy-outside",
+      "resolvedName": "Paper Moon",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Torba/Kaynar/Usuluk/Zeytinlikahve, adres: Rota Mevkii, Gölköy, 325. Sok, 48400 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-torba-kaana-gundogan-outside",
+      "resolvedName": "Kaana Restoran",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Torba/Kaynar/Usuluk/Zeytinlikahve, adres: Gündoğan, Farilya Cd. No:14, 48965 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-torba-egede-maya-carsi-outside",
+      "resolvedName": "Ege'de Maya Bodrum",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Torba/Kaynar/Usuluk/Zeytinlikahve, adres: Çarşı Mah Atatürk cad, Çarşı, Adliye Sk. No:8 D:1, 48470 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-torba-sultan-bahce-umurca-outside",
+      "resolvedName": "sultan bahçe restaurant",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Torba/Kaynar/Usuluk/Zeytinlikahve, adres: Umurca, Derviş Görgün Cd. No:43, 48470 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-torba-zeytinli-bahce-ciftlik-outside",
+      "resolvedName": "Zeytinli Bahçe Restaurant",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Torba/Kaynar/Usuluk/Zeytinlikahve, adres: Çiftlik, Mumcular-Bodrum Yolu, 48401 Bodrum/Muğla)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "torba-cakil-beach",
+      "categoryId": "date",
+      "resolvedName": "Torba Çakıl Beach",
+      "branchName": "Omar Otel, Torba, Atatürk Cd., 48400 Bodrum/Muğla",
+      "placeId": "ChIJ_zl93CxpvhQRZxEu8ghU888",
+      "coordinates": {
+        "lat": 37.083885699999996,
+        "lng": 27.456579299999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 84,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14984412782591349095",
+      "recommendedPrimary": [
+        "Kalamar Tava & Karides",
+        "Günlük Balık (Barbun) & Ahtapot",
+        "Ege Mezeleri & İmza Kokteyller"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kahvaltı Tabağı",
+          "note": "Sabah saatlerinde deniz kenarında hafif ve pratik bir başlangıç arayanlar için serpme yerine tabak düzeninde sunulur.",
+          "proof": "Restoranım.net ve Menü Haritası kayıtları"
+        },
+        {
+          "name": "Spaghetti Bolognese & Plaj Burgerleri",
+          "note": "Deniz ürünleri dışında gündüz plaj molasında makarna veya hızlı atıştırmalık tercih eden misafirler için hazırlanır.",
+          "proof": "Restaurant Guru menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Torba Koyu kıyısında denize sıfır ahşap teras, iskele masaları ve gündüz plaj şezlong düzeni",
+        "crowdAndNoise": "Gündüz plaj misafirleriyle sakin, gün batımı ve akşam yemeği saatlerinde çiftler ve küçük gruplarla keyifli tempo",
+        "disadvantage": "Kapsamlı köy serpme kahvaltısı yerine sade kahvaltı tabağı ağırlıklıdır; yaz sezonunda plaj giriş ve harcama koşulları dönemsel değişebiliyor",
+        "transit": "Torba Mahallesi Mustafa Kemal Atatürk Caddesi (Omar Otel önü) üzerinde kıyı yürüyüş hattında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Bodrum Guru — Torba Çakıl Beach",
+          "url": "https://www.bodrumguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Torba sahil hattında denize sıfır plaj-restoran konsepti ve atmosfer tanıtımı"
+        },
+        {
+          "title": "My Guide Bodrum — Torba Çakıl Beach",
+          "url": "https://www.myguidebodrum.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Omar Hotel & Suites konumu, akşam à la carte servisi, kokteyl-şarap barı ve orta fiyat seviyesi"
+        },
+        {
+          "title": "Restaurant Guru — Torba Çakıl Beach",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Türk mezeleri, barbun, ahtapot, makarna ve burger menü kalemleri ile ziyaretçi puanları"
+        },
+        {
+          "title": "Restoranım.net & Yandex Harita — Torba Çakıl Beach",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ahşap teras ve iskele, kalamar tava, karides ve kahvaltı tabağı değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=14984412782591349095",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Omar Otel Torba Atatürk Cd. konum ve restaurant/bar tür doğrulaması"
+        }
+      ],
+      "pros": [
+        "Torba sahilindeki üst segment resort restoranlarına kıyasla orta bütçe seviyesinde ahşap teras ve iskele akşamı sunması",
+        "Deniz ürünleri ve mezelerin yanında kokteyl ve şarap seçkisiyle gün batımına uygun sahil ortamı"
+      ],
+      "cons": [
+        "Kış döneminde sezonluk kapanış veya kısıtlı servis düzenine geçebiliyor",
+        "Yaz aylarında plaj bölümü harcama koşulları işletme tarafından güncellenebiliyor"
+      ],
+      "uncertainties": [
+        "Sezon içi plaj giriş veya minimum harcama uygulaması önceden teyit edilmelidir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ezi-restaurant-susona-torba",
+      "categoryId": "date",
+      "resolvedName": "Ezi Restaurant",
+      "branchName": "Torba, Kaynar Cd No:15, 48400 Bodrum/Muğla",
+      "placeId": "ChIJEVHu_j5pvhQRJxgWe2QVSwk",
+      "coordinates": {
+        "lat": 37.0879286,
+        "lng": 27.4767309
+      },
+      "rating": 4.5,
+      "userRatingCount": 69,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://susonabodrum.com/ezi/",
+      "mapsUri": "https://maps.google.com/?cid=669652490900609063",
+      "recommendedPrimary": [
+        "Şefin Ege Mezeleri & Otlu Mücver",
+        "Bargilya Karides Güveç & Kalamar",
+        "Izgara Günlük Balık Çeşitleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Vitello Tonnato & Kızarmış Mihaliç Peyniri",
+          "note": "Ege mezeleri dışında akşam başlangıçlarında artizan peynir, kapari ve ekşi maya eşlikçili modern tabaklar sunar.",
+          "proof": "Susona Bodrum resmi akşam menü kayıtları"
+        },
+        {
+          "name": "Yarı Açık Büfe & Alakart Sabah Kahvaltısı",
+          "note": "Bodrum tulumu, Milas beyaz peyniri, Bitez mandalini reçeli, Çakallı menemen ve Eggs Benedict gibi seçeneklerle sabah saatlerinde de tercih edilir.",
+          "proof": "Gastronomi Dergisi ve The Turquoise Collection incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Torba Koyu ve sonsuzluk havuzu manzaralı açık teras, zarif akşam yemek masaları ve bar alanı",
+        "crowdAndNoise": "Özel akşam yemeği planlayan çiftler ve otel dışı rezervasyonlu misafirlerle rafine; cuma ve cumartesi etkinlik gecelerinde daha sosyal tempo",
+        "disadvantage": "Üst lüks segmentte yer alır; yaz sezonunda otel dışı misafirler için önceden telefonla masa rezervasyonu ve müsaitlik teyidi gerektirir",
+        "transit": "Torba Mahallesi Kaynar Caddesi No:15 (Susona Bodrum içinde) üzerinde özel araçla kolay ulaşılır"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Gastronomi Dergisi — Susona Bodrum & Ezi Restaurant",
+          "url": "https://www.gastronomidergisi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Torba koyu manzaralı Susona Bodrum içinde deniz-havuz cepheli sosyal gastronomi alanı tanıtımı"
+        },
+        {
+          "title": "Alem & Mes Prestiges — Ezi Taverna Geceleri",
+          "url": "https://www.alem.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Hafta sonu canlı müzikli buluşmalar ve paylaşımlı Ege meze-deniz ürünleri set menüsü haberi"
+        },
+        {
+          "title": "The Turquoise Collection & Prince of Travel — Susona Kahvaltı & Akşam",
+          "url": "https://www.theturquoisecollection.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bodrum tulumu, Milas peyniri, Bitez mandalina reçeli, Çakallı menemen ve akşam paylaşım tabakları değerlendirmesi"
+        },
+        {
+          "title": "Susona Bodrum Resmi Sayfası — Ezi Restaurant",
+          "url": "https://susonabodrum.com/ezi/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Kaynar Cd. No:15 adresi, resmi akşam menüsü, Bargilya karides, otlu mücver ve rezervasyon bilgisi"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=669652490900609063",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Torba Kaynar Cd. No:15 konum ve fine_dining_restaurant tür doğrulaması"
+        }
+      ],
+      "pros": [
+        "Torba koyu ve sonsuzluk havuzu manzaralı ferah terasta yerel Ege ürünleriyle rafine paylaşım mutfağı sunması",
+        "Taverna konseptli akşamları ve yarı açık büfe-alakart sabah kahvaltısıyla günün farklı saatlerine hitap etmesi"
+      ],
+      "cons": [
+        "Yüksek lüks fiyat segmentinde yer alır",
+        "Otel doluluğuna bağlı olarak dışarıdan gelen misafirler için önceden rezervasyon zorunludur"
+      ],
+      "uncertainties": [
+        "Sezon dışı aylarda akşam konsept geceleri ve dış misafir kabul saatleri güncellenebiliyor"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "rise-restaurant-usuluk-torba",
+      "categoryId": "date",
+      "resolvedName": "Rise Restaurant",
+      "branchName": "Mevkii Usuluk Koyu, Torba, Kaynar Cd, 48400 Bodrum/Muğla",
+      "placeId": "ChIJn-bxQABpvhQRO9gskDfxkRA",
+      "coordinates": {
+        "lat": 37.080854599999995,
+        "lng": 27.471470399999998
+      },
+      "rating": 4.4,
+      "userRatingCount": 35,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1194000597174245435",
+      "recommendedPrimary": [
+        "Yunan Mezeleri Seçkisi",
+        "Saganaki",
+        "Izgara Ahtapot & Deniz Ürünleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Akdeniz Salataları & Soğuk Başlangıçlar",
+          "note": "Yunan mezeleri ve deniz mahsulleri öncesinde hafif sahil başlangıcı olarak sunulur.",
+          "proof": "Vogue Hotel Supreme Gastro Bay kayıtları"
+        },
+        {
+          "name": "Günlük Izgara Balık Çeşitleri",
+          "note": "Sıcak ara sıcakların ardından akşam ana yemeğinde deniz kenarı sofralarını tamamlar.",
+          "proof": "Guest Reservations & My Guide Bodrum kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Usuluk Koyu kıyısında beyaz kumlu plaj ve deniz cepheli açık hava à la carte akşam düzeni",
+        "crowdAndNoise": "Akşam yemeğinde otel misafirleri ve rezervasyonlu konuklarla şık, sakin ve romantik sahil temposu",
+        "disadvantage": "Ultra her şey dahil konseptli tatil köyü alanı içinde bulunduğundan otel dışı ziyaretçiler için ön rezervasyon, ek giriş/kuver bedeli veya günlük kabul sınırlaması uygulanabilir; değerlendirme havuzu henüz küçük ölçeklidir",
+        "transit": "Torba Usuluk Koyu Kaynar Caddesi (Vogue Hotel Supreme Bodrum sahil hattı) üzerinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Vogue Hotel Supreme Resmi Sitesi — Gastro Bay & The Rise",
+          "url": "https://www.voguehotelsupreme.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Usuluk Koyu sahil hattında Yunan mutfağı konseptli The Rise ve Gastro Bay alanları resmi tanıtımı"
+        },
+        {
+          "title": "My Guide Bodrum — The Rise Village & Beach Usuluk",
+          "url": "https://www.myguidebodrum.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Torba Usuluk Koyu sahil konumu ve kıyı restoran-plaj profili"
+        },
+        {
+          "title": "Guest Reservations — The Rise Bodrum Gastro Bay",
+          "url": "https://www.guestreservations.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yunan mutfağı, saganaki, Akdeniz mezeleri, deniz ürünleri ve akşam kıyafet-rezervasyon politikası bilgisi"
+        },
+        {
+          "title": "Yandex Harita — Rise Restaurant Usuluk Koyu",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Usuluk Koyu Kaynar Cd. konum ve Yunan restoranı değerlendirme kaydı"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=1194000597174245435",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Mevkii Usuluk Koyu Torba Kaynar Cd. konum ve greek_restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "Usuluk Koyu beyaz kumlu sahil hattında doğrudan Yunan mutfağı ve deniz ürünlerine odaklanan akşam konsepti",
+        "Saganaki, mezeler ve ızgara ahtapot eşliğinde sakin koy atmosferi sunması"
+      ],
+      "cons": [
+        "Yüksek bütçe segmentindedir ve kapalı resort yerleşkesi içinde yer alır",
+        "Konaklamayan misafirler için giriş ve masa rezervasyonu tesis onayına bağlıdır"
+      ],
+      "uncertainties": [
+        "Otel dışı ziyaretçiler için güncel kuver veya günlük giriş koşulları gitmeden önce otel danışmasından teyit edilmelidir"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "torba-cafe-bodrum-belediyesi",
+      "categoryId": "kahvalti",
+      "resolvedName": "Torba Cafe (Bodrum Belediyesi)",
+      "branchName": "Torba, Atatürk Cd. No:157, 48400 Bodrum/Muğla",
+      "placeId": "ChIJV1UlUtNuvhQRvGWwTw4Etck",
+      "coordinates": {
+        "lat": 37.0855171,
+        "lng": 27.4553175
+      },
+      "rating": 4.4,
+      "userRatingCount": 826,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14534527831921157564",
+      "recommendedPrimary": [
+        "Kahvaltı Tabağı & Menemen",
+        "Bodrum Tostu",
+        "Türk Kahvesi & Demleme Çay"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Serpme Kahvaltı Seçenekleri",
+          "note": "Kalabalık aile veya arkadaş masaları için tek kişilik kahvaltı tabağına ek olarak tercih edilen paylaşım düzenidir.",
+          "proof": "Bodrum Belediye A.Ş. tesis menü ve Restoranım.net kayıtları"
+        },
+        {
+          "name": "Taze Sıkılmış Meyve Suları & Sahil Atıştırmalıkları",
+          "note": "Deniz sonrası veya öğle sıcağında kahve ve çay dışında serinlemek isteyen misafirlere sunulur.",
+          "proof": "Restoranım.net ve Yandex Harita değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Torba Halk Plajı kenarında çam ağaçları altında denize sıfır açık sahil masaları",
+        "crowdAndNoise": "Sabah yürüyüşçüleri, aileler ve yerel sakinlerle gün boyu samimi, telaşsız ama sezonda yoğun tempo",
+        "disadvantage": "Üçüncü nesil nitelikli kahve kavurucusu veya lüks servis odaklı bir mekan değildir; yaz hafta sonları ve tatil günlerinde boş masa bulmak ve sipariş sırası beklemek gerekebilir",
+        "transit": "Torba Mahallesi Mustafa Kemal Atatürk Caddesi No:157 (halk plajı hattı) üzerinde sahil yürüyüş yolunda"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Bodrum Belediye A.Ş. Resmi Sayfası — Torba Cafe",
+          "url": "https://www.bodrumbelediyeas.com.tr/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Atatürk Cd. Torba plaj mevkii konumu, çam ağaçları altı deniz manzaralı sosyal tesis ve QR menü bilgisi"
+        },
+        {
+          "title": "Bodrum Belediyesi Resmi Duyuruları",
+          "url": "https://www.bodrum.bel.tr/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Bodrum yerleşik halk tarifesi, ekonomik belediye tesisi ve halk plajı komşuluğu bilgisi"
+        },
+        {
+          "title": "Restaurant Guru — Torba Cafe Bodrum Belediye",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahvaltı, salata, atıştırmalık, çay-kahve servisi ve manzara değerlendirmeleri"
+        },
+        {
+          "title": "Restoranım.net & Yandex Harita — Torba Cafe",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çamlar altında kahvaltı tabağı, Bodrum tostu, menemen ve fiyat-performans dengesi notları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=14534527831921157564",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Torba Atatürk Cd. No:157 konum ve cafe türü doğrulaması"
+        }
+      ],
+      "pros": [
+        "Torba sahilinde giriş ücreti veya yüksek harcama zorunluluğu olmadan çam ağaçları altında denize sıfır kahvaltı ve mola imkanı",
+        "Bodrum genelindeki özel tesislere kıyasla şeffaf ve erişilebilir belediye fiyat tarifesi"
+      ],
+      "cons": [
+        "Özel kavurucu nitelikli filtre kahve odaklı değildir; standart kafe içecekleriyle hizmet verir",
+        "Hafta sonu ve yüksek yaz sezonunda masa bulma ve servis süresi uzayabilir"
+      ],
+      "uncertainties": [
+        "Sezon dışı kış aylarında tesis açılış ve kapanış saatleri belediye çalışma takvimine göre değişebiliyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-cardak-kokorec-kofte-torba",
+      "categoryId": "denemelisin",
+      "resolvedName": "BODRUM Çardak Kokoreç ve Köfte",
+      "branchName": "Torba, Atatürk Cd. No:97, 48400 Bodrum/Muğla",
+      "placeId": "ChIJ-QgtYU9pvhQRI_I2X5aMmdA",
+      "coordinates": {
+        "lat": 37.080561599999996,
+        "lng": 27.457257199999997
+      },
+      "rating": 4.5,
+      "userRatingCount": 106,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15031199808796160547",
+      "recommendedPrimary": [
+        "Kokoreç (Ekmek Arası veya Porsiyon)",
+        "Ev Usulü Izgara Köfte",
+        "Sucuklu Köfte & Ekmek Arası Sucuk"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ekmek Arası Sandviç Çeşitleri",
+          "note": "Geç saatlerde hızlı ve doyurucu al-götür öğün arayan misafirler için hazırlanır.",
+          "proof": "Restaurant Guru ve Maptons kayıtları"
+        },
+        {
+          "name": "Al-Götür & Paket Servis Seçenekleri",
+          "note": "Torba içi akşam ve gece atıştırmalıklarında pratik sipariş alternatifi olarak tercih edilir.",
+          "proof": "Restoranım.net işletme profili"
+        }
+      ],
+      "suitability": {
+        "seating": "Atatürk Caddesi cephesinde sade açık hava masa düzeni ve hızlı al-götür tezgahı",
+        "crowdAndNoise": "Akşamüstü ve gece geç saatlere kadar yerel sakinler ile pratik atıştırmalık arayan tatilcilerle hareketli",
+        "disadvantage": "Deniz manzaralı oturma veya klasik esnaf lokantası meze sofrası sunmaz; cadde kenarı sade sokak lezzeti konseptindedir",
+        "transit": "Torba Mahallesi Mustafa Kemal Atatürk Caddesi No:97 üzerinde sahil yerleşimi içinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Yandex Harita — Bodrum Çardak Kokoreç ve Köfte",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Atatürk Cd. No:97 adresi, yaz-kış açık olması, bol porsiyonlu kokoreç ve ev yapımı tadında köfte notları"
+        },
+        {
+          "title": "Restaurant Guru — Bodrum Çardak Kokoreç ve Köfte",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kokoreç, köfte ve sandviç değerlendirmeleri ile açık hava/al-götür bilgisi"
+        },
+        {
+          "title": "Restoranım.net & Maptons — Çardak Kokoreç Torba",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sucuklu köfte menü detayı, aile işletmesi yapısı ve gece servis saatleri kaydı"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=15031199808796160547",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Torba Atatürk Cd. No:97 konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Yaz kış açık kalarak Torba içinde gece geç saatlere kadar sıcak kokoreç ve köfte sunan samimi aile işletmesi",
+        "Bölgedeki otel ve sahil kulüplerine kıyasla orta bütçe seviyesinde doyurucu porsiyonlar"
+      ],
+      "cons": [
+        "Sokak kenarı mütevazı bir işletme olduğundan manzara veya uzun akşam sofrası arayanlara uygun değil",
+        "Menü kapsamı ağırlıklı ızgara köfte, kokoreç ve sandviçle sınırlıdır"
+      ],
+      "uncertainties": [
+        "Sezon dışında gece kapanış saatleri dönemsel talebe göre değişebiliyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hocanin-yeri-torba",
+      "categoryId": "denemelisin",
+      "resolvedName": "Hoca'nın Yeri",
+      "branchName": "Torba, Atatürk Cd. No:53, 48400 Bodrum/Muğla",
+      "placeId": "ChIJtUQXcDNpvhQRCLA5T4CXR18",
+      "coordinates": {
+        "lat": 37.0761302,
+        "lng": 27.45789
+      },
+      "rating": 4.5,
+      "userRatingCount": 71,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6865622734290399240",
+      "recommendedPrimary": [
+        "El Yapımı Minik Mantı",
+        "Kıymalı Çi Börek",
+        "El Açması Gözleme & Pişi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Lahmacun & Pide Çeşitleri",
+          "note": "Mantı ve hamur işleri dışında geleneksel fırın lezzetleri arayan aile masalarında sıkça paylaşılır.",
+          "proof": "Wanderlog ve Restaurant Guru kayıtları"
+        },
+        {
+          "name": "Ev Usulü Bahçe Kahvaltısı & Brunch",
+          "note": "Zeytin ağaçları altında gözleme, pişi ve sıcak hamur işleriyle sabah kahvaltısı seçeneği sunar.",
+          "proof": "Yandex Harita ve Eatbu işletme kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Atatürk Caddesi üzerinde zeytin ağaçları altında gölgeli açık bahçe masaları",
+        "crowdAndNoise": "Torba sakinleri, aileler ve gösterişsiz ev lezzeti arayan müdavimlerle huzurlu ve samimi tempo",
+        "disadvantage": "Lüks sahil kulübü tasarımı yerine mütevazı bir bahçe lokantası dokusundadır; sezon dönemine göre çalışma saatleri önceden teyit edilmelidir",
+        "transit": "Torba Mahallesi Mustafa Kemal Atatürk Caddesi No:53 üzerinde koy yerleşimi içinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Wanderlog — Hoca’nın Yeri Torba",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İnce hamurlu minik mantı, çi börek ve lahmacun vurgulu Torba yerel lezzet seçkisi"
+        },
+        {
+          "title": "Mes Prestiges — Hoca’nın Yeri Atatürk Cd. No:53",
+          "url": "https://www.mesprestiges.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Atatürk Cd. No:53 konum, aile işletmesi kimliği ve sezonluk saat uyarısı"
+        },
+        {
+          "title": "Restaurant Guru — Hoca’nın Yeri Torba",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mantı, pişi ve çi börek çeşitleri hakkında olumlu ziyaretçi geri bildirimleri"
+        },
+        {
+          "title": "Yandex Harita & Restoranım.net — Hoca’nın Yeri",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Zeytin ağaçları altındaki bahçe atmosferi ve ev yapımı Türk mutfağı notları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=6865622734290399240",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Torba Atatürk Cd. No:53 konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Zeytin ağaçları altındaki gölgeli bahçede ev yapımı mantı ve az yağlı çıtır çi börek sunması",
+        "Gösterişli turistik menülerden uzak, samimi aile işletmesi sıcaklığı ve orta bütçe dengesi"
+      ],
+      "cons": [
+        "Sipariş üzerine açılan hamur işlerinde öğle yoğunluğunda bekleme süresi oluşabilir",
+        "Kış aylarında çalışma günleri ve saatleri sınırlı olabiliyor"
+      ],
+      "uncertainties": [
+        "Sezon geçişlerinde aktif açılış saatleri telefonla teyit edilmelidir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "essahli-adana-isi-torba",
+      "categoryId": "denemelisin",
+      "resolvedName": "Essahlı Adana İşi",
+      "branchName": "Torba, Rıza Anter Cd. no:51, 48400 Bodrum/Muğla",
+      "placeId": "ChIJt4hIGW5pvhQR33Fv344tHVc",
+      "coordinates": {
+        "lat": 37.0701056,
+        "lng": 27.4595906
+      },
+      "rating": 4.9,
+      "userRatingCount": 49,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6277223547281568223",
+      "recommendedPrimary": [
+        "Zırh Kıyması Adana Kebap",
+        "Adana & Urfa Dürüm",
+        "Tavuk Şiş & Tavuk Kanat"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mercimek Çorbası & Gavurdağı Salatası",
+          "note": "Kebap ve ızgara öncesinde veya geç saat öğünlerinde sofrayı tamamlayan sıcak başlangıç ve taze salata seçenekleridir.",
+          "proof": "Yemeksepeti aktif menü kayıtları"
+        },
+        {
+          "name": "Kiloluk Pişmiş Kebap Seçenekleri",
+          "note": "Kalabalık aile veya arkadaş gruplarının toplu siparişlerinde tercih edilen porsiyon alternatifi olarak sunulur.",
+          "proof": "Yemeksepeti menü listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Rıza Anter Caddesi cephesinde mütevazı masa düzeni ve ağırlıklı hızlı paket servis mutfağı",
+        "crowdAndNoise": "Öğleden gece geç saatlere kadar paket sipariş veren bölge sakinleri ve geç akşam acıkan misafirlerle pratik tempo",
+        "disadvantage": "Deniz kıyısı manzarası yoktur, ağırlıklı paket ve hızlı kebap servisi odaklıdır; yoğun saatlerde teslimat hızı ve garnitür paketlemesinde dönemsel dalgalanmalar yaşanabiliyor",
+        "transit": "Torba Mahallesi Rıza Anter Caddesi No:51 (3030. Sokak bağlantısı) üzerinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Yemeksepeti — Essahlı Adana İşi Torba",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Zırh kıymalı Adana ve Urfa kebap, dürüm, tavuk şiş, mercimek çorbası ve kiloluk kebap menüsü ile altmışın üzerinde sipariş geri bildirimi"
+        },
+        {
+          "title": "Yandex Harita — Essahlı Adana İşi",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Rıza Anter Cd. / 3030. Sk. Torba konumu, gece geç saatlere kadar açık kebapçı profili"
+        },
+        {
+          "title": "Rehberi.pro & Infobel — Essahlı Adana İşi Torba",
+          "url": "https://rehberi.pro/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Torba Rıza Anter Cd. No:51 işletme, çalışma ve Instagram iletişim kaydı"
+        },
+        {
+          "title": "Essahlı Adana İşi Resmi Instagram",
+          "url": "https://www.instagram.com/essahliadanaisikebap",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "İşletme resmi Instagram hesabı, Adana kebap sunumları ve adres doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=6277223547281568223",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Torba Rıza Anter Cd. No:51 konum ve kebab_shop tür doğrulaması"
+        }
+      ],
+      "pros": [
+        "Torba içinde deniz ürünlerinden farklı olarak zırh kıyması Adana kebap ve dürüm odağında net uzmanlaşma",
+        "Gece geç saatlere kadar açık kalması ve kiloluk servis gibi pratik grup seçenekleri sunması"
+      ],
+      "cons": [
+        "Ana yol/cadde aksında kaldığı için sahil manzarası ve oturma konforu beklentisine hitap etmez",
+        "Sipariş yoğunluğunda paketleme veya garnitür içeriğinde tutarsızlık bildirimleri görülebiliyor"
+      ],
+      "uncertainties": [
+        "Kış döneminde geç gece kapanış saatleri işletme yoğunluğuna göre güncellenebiliyor"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gonca-balik-torba",
+      "categoryId": "balik",
+      "resolvedName": "Gonca Balık Bodrum",
+      "branchName": "Torba, Mutlu Sk. No:15, 48400 Bodrum/Muğla",
+      "placeId": "ChIJF40NW3hyvxQRiOYF-fBfuZs",
+      "coordinates": {
+        "lat": 37.0818485,
+        "lng": 27.460680999999997
+      },
+      "rating": 4.2,
+      "userRatingCount": 691,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.goncabalik.net/",
+      "mapsUri": "https://maps.google.com/?cid=11221105435145004680",
+      "recommendedPrimary": [
+        "Kömürde Günlük Taze Balık (Lagos / Sinarit / Levrek)",
+        "Gonca Börek & Karidesli Mantı",
+        "Girit Ezmesi & Sıcak Otlu Ege Mezeleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Balık Kokoreç & Deniz Mahsullü Pazı Sarma",
+          "note": "Klasik kalamar ve ahtapot dışında mutfağın özgün deniz mahsullü sıcak başlangıçları arasında öne çıkar.",
+          "proof": "Gonca Balık menü kayıtları ve Yandex Harita değerlendirmeleri"
+        },
+        {
+          "name": "Dondurmalı İrmik & Fırında Helva",
+          "note": "Rakı-balık sofrasının ardından tercih edilen klasik sıcak ve soğuk tatlı kapanışlarıdır.",
+          "proof": "Mes Prestiges Bodrum sahil seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Torba Kilise Mevkii kumsalında doğrudan kum üzerine yerleştirilmiş fener ışıklı denize sıfır masalar",
+        "crowdAndNoise": "Uzun yıllardır süregelen müdavim kitlesiyle samimi ve nostaljik; yüksek yaz sezonu hafta sonlarında yoğun",
+        "disadvantage": "Yüksek fiyat segmentindedir ve hesap tutarına yönelik eleştiriler görülebilir; yaz pik sezonunda masa doluluğu ve servis yavaşlaması yaşanabildiğinden önceden rezervasyon gerekir",
+        "transit": "Torba Mahallesi Kilise Mevkii Mutlu Sokak No:15 üzerinde sahil hattında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Hürriyet — Bodrum Sahil Balıkçıları (Savaş Özbey & Saffet Emre Tonguç)",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Torba sahilinde kum üstü masalarda kömürde balık, Gonca Börek ve nostaljik Ege sofrası değerlendirmesi"
+        },
+        {
+          "title": "Mes Prestiges — Gonca Balık 1987 Torba",
+          "url": "https://www.mesprestiges.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1987 kuruluşlu, kışın da açık kalan köklü balıkçı, 40 çeşit meze ve ağustos rezervasyon tavsiyesi"
+        },
+        {
+          "title": "Meyhankoli — Gonca Balık Zeki Torba",
+          "url": "https://www.meyhankoli.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Zeki Soylu işletmeciliği ve 1990’lardan bugüne uzanan müdavim kitlesi profili"
+        },
+        {
+          "title": "Yandex Harita & Restoranım.net — Gonca Balık Bodrum",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Girit ezmesi, sıcak otlu mezeler ve taze balık beğenisinin yanında yüksek fiyat şikayetleri notu"
+        },
+        {
+          "title": "Gonca Balık Resmi Sitesi",
+          "url": "http://www.goncabalik.net/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Kilise Mevkii Mutlu Sk. No:15 adresi, Gonca Börek, karidesli mantı, ahtapot beğendi ve balık kokoreç menüsü"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=11221105435145004680",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Torba Mutlu Sk. No:15 konum, seafood_restaurant türü ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "1987’den bu yana Torba koyunda otel dönüşümüne rağmen ayakta kalan yıl boyu açık özgün kum üstü balıkçı",
+        "Gonca Börek, karidesli mantı, balık kokoreç ve 40’a yakın günlük meze ile güçlü mutfak hafızası"
+      ],
+      "cons": [
+        "Yüksek fiyat seviyesi ve sezon içi hesap tutarı eleştirileri dikkat gerektirir",
+        "Ağustos ve hafta sonu akşamlarında rezervasyonsuz masa bulmak güçtür, servis temposu yavaşlayabilir"
+      ],
+      "uncertainties": [
+        "Günlük av ve mevsime bağlı taze balık çeşitleri ile porsiyon fiyatları günün tedarikine göre değişmektedir"
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    }
+  ]
+}

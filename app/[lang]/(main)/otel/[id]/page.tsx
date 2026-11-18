@@ -23,10 +23,7 @@ import { JsonLd } from '@/components/seo/JsonLd';
 import { generateHotelSchema, generateBreadcrumbSchema, generateFAQSchema } from '@/lib/schema-generator';
 import { formatCurrency } from '@/lib/utils';
 
-const LocationCard = dynamic(() => import('@/components/hotel/LocationCard'), {
-  ssr: false,
-  loading: () => <div className="h-[250px] w-full bg-gray-100 animate-pulse rounded-xl" />
-});
+import LocationCard from '@/components/hotel/LocationCard';
 
 export const revalidate = 0;
 
@@ -34,10 +31,11 @@ import { LOCATIONS } from '@/lib/constants';
 import { LocationListingView } from '@/components/hotel/LocationListingView';
 
 type Props = {
-  params: { id: string; lang: 'tr' | 'en' };
+  params: Promise<{ id: string; lang: 'tr' | 'en' }>;
 };
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params;
   const lang = params.lang || 'tr';
   const dict = await getDictionary(lang);
   const location = LOCATIONS.find(l => l.slug === params.id);
@@ -108,7 +106,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function HotelDetailPage({ params }: Props) {
+export default async function HotelDetailPage(props: Props) {
+  const params = await props.params;
   const lang = params.lang || 'tr';
   const dict = await getDictionary(lang);
   const location = LOCATIONS.find(l => l.slug === params.id);

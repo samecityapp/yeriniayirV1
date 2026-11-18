@@ -20,11 +20,12 @@ import { BlogAuthor } from '@/components/blog/BlogAuthor';
 import { SmartContent } from '@/components/blog/SmartContent';
 
 
-type Props = { params: { slug: string; lang: 'tr' | 'en' } };
+type Props = { params: Promise<{ slug: string; lang: 'tr' | 'en' }> };
 
 export const revalidate = 0;
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params;
   const lang = params.lang || 'tr';
   const dict = await getDictionary(lang);
   const location = LOCATIONS.find(l => l.slug === params.slug);
@@ -105,7 +106,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function ArticlePage({ params }: Props) {
+export default async function ArticlePage(props: Props) {
+  const params = await props.params;
   const lang = params.lang || 'tr';
   const dict = await getDictionary(lang);
   const locationConstant = LOCATIONS.find(l => l.slug === params.slug);

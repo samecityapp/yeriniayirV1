@@ -1,0 +1,2317 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "antalya-kemer",
+  "displayName": "Kemer, Antalya",
+  "verifiedAt": "2026-11-16T10:11:44.841Z",
+  "selectedCount": 29,
+  "rejectedControls": [
+    {
+      "id": "ctrl-kemer-dominos-chain",
+      "resolvedName": "Domino's Pizza Kemer",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-kemer-burgerking-chain",
+      "resolvedName": "Burger King - Kemer",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-kemer-mcdonalds-chain",
+      "resolvedName": "McDonald's Antalya Kemer",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-kemer-starbucks-chain",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-kemer-mackbear-chain",
+      "resolvedName": "Mackbear Coffee Co. Kemer",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-kemer-gilig-chain",
+      "resolvedName": "Giliğ Dondurma Kemer",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-kemer-tezgah-chain",
+      "resolvedName": "Tezgah Burger Kemer",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-kemer-subway-chain",
+      "resolvedName": "Subway - Kemer",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-kemer-qualista-ayisigi-low",
+      "resolvedName": "Qualista",
+      "reason": "below_quality_threshold:★4.2(2697)"
+    },
+    {
+      "id": "ctrl-kemer-pasakebap-low",
+      "resolvedName": "PAŞA KEBAP KEMER",
+      "reason": "below_quality_threshold:★4.3(2009)"
+    },
+    {
+      "id": "ctrl-kemer-doydoy-low",
+      "resolvedName": "DOY DOY DÖNER KEMER",
+      "reason": "below_quality_threshold:★3.5(90)"
+    },
+    {
+      "id": "ctrl-kemer-naturelbalik-low",
+      "resolvedName": "NATUREL BALIK EVİ KEMER (Kemer Deniz Ürünleri)",
+      "reason": "below_quality_threshold:★4.1(228)"
+    },
+    {
+      "id": "ctrl-kemer-saraypastanesi-noncoffee",
+      "resolvedName": "SARAY PASTANESİ",
+      "reason": "kahve_category_not_coffee_specialist:pastry_shop"
+    },
+    {
+      "id": "ctrl-kemer-harnup-cirali-outside",
+      "resolvedName": "HARNUP COFFEE SHOP",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Merkez/Yeni Mahalle/Yeni Mh/Yeni,/Arslanbucak/Ayışığı/Ayisigi/Moon Light/Moonlight/Idyros/Yörük/Yoruk/Liman Cd/Atatürk Cd/Ataturk Cd/Atatürk Blv/Ataturk Blv/Deniz Cd/Yalı Cd/Yali Cd/Lise Cd/Dörtyol/Dortyol/Cumhuriyet Cd/Kavakdibi, adres: Ulupınar, Çıralı Sk no:396/1, 07980 Kemer/Antalya)"
+    },
+    {
+      "id": "ctrl-kemer-forellenhof-goynuk-outside",
+      "resolvedName": "\"Forellenhof\" Göynük Fish & Steak House. Since 1991",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Merkez/Yeni Mahalle/Yeni Mh/Yeni,/Arslanbucak/Ayışığı/Ayisigi/Moon Light/Moonlight/Idyros/Yörük/Yoruk/Liman Cd/Atatürk Cd/Ataturk Cd/Atatürk Blv/Ataturk Blv/Deniz Cd/Yalı Cd/Yali Cd/Lise Cd/Dörtyol/Dortyol/Cumhuriyet Cd/Kavakdibi, adres: Atatürk Caddesi. 101.Sokak No:2B, Göynük, 07994 Kemer/Antalya)"
+    },
+    {
+      "id": "ctrl-kemer-deniz-camyuva-outside",
+      "resolvedName": "Deniz Restaurant",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Merkez/Yeni Mahalle/Yeni Mh/Yeni,/Arslanbucak/Ayışığı/Ayisigi/Moon Light/Moonlight/Idyros/Yörük/Yoruk/Liman Cd/Atatürk Cd/Ataturk Cd/Atatürk Blv/Ataturk Blv/Deniz Cd/Yalı Cd/Yali Cd/Lise Cd/Dörtyol/Dortyol/Cumhuriyet Cd/Kavakdibi, adres: Turizm Bulvarı Ekizoğlu İşhanı A Blok No:, Çamyuva, D:5, 07990 Kemer/Antalya)"
+    },
+    {
+      "id": "ctrl-kemer-mithat-tekirova-outside",
+      "resolvedName": "Tekirova Gözleme Köy Kahvaltısı Mithat’ın Yeri",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Merkez/Yeni Mahalle/Yeni Mh/Yeni,/Arslanbucak/Ayışığı/Ayisigi/Moon Light/Moonlight/Idyros/Yörük/Yoruk/Liman Cd/Atatürk Cd/Ataturk Cd/Atatürk Blv/Ataturk Blv/Deniz Cd/Yalı Cd/Yali Cd/Lise Cd/Dörtyol/Dortyol/Cumhuriyet Cd/Kavakdibi, adres: Antalya Kumluca karayolu üzeri, Cumayeri mevkii, 34/B, Tekirova Mahallesi, Tekirova, 07995 Kemer/Antalya)"
+    },
+    {
+      "id": "ctrl-kemer-cici-kuzdere-outside",
+      "resolvedName": "CİCİ Restaurant Oki Doki",
+      "reason": "outside_strict_neighborhood:Bbox dışında (36.55552, 30.56365)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "kemer-casa-la-luna",
+      "categoryId": "pizza",
+      "resolvedName": "Casa La Luna Kemer",
+      "branchName": "Merkez, Atatürk Cd. 19/a, 07980 Kemer/Antalya",
+      "placeId": "ChIJodZ4WL23wxQRPewJ8VVduI8",
+      "coordinates": {
+        "lat": 36.599621899999995,
+        "lng": 30.5616455
+      },
+      "rating": 4.6,
+      "userRatingCount": 1212,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10356129966836018237",
+      "recommendedPrimary": [
+        "Dört Peynirli İtalyan Pizza",
+        "Pepperoni & Mantarlı Pizza",
+        "Fettuccine Alfredo"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fettuccine Alfredo & Akdeniz Izgaraları",
+          "note": "Pizza dışında kremalı İtalyan makarnaları ve ızgara ana yemek tabakları akşam masalarında sık tercih ediliyor.",
+          "proof": "Eniyi.best ve Yandex Kemer rehber değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "İç salon ve Atatürk Caddesi yönüne açılan yarı kapalı ön teras masaları",
+        "crowdAndNoise": "Akşam yemek saatlerinde yaz sezonunda yerli ve yabancı misafirlerle yoğun; öğle servisi daha rahat",
+        "disadvantage": "Ana cadde üzerinde yer aldığı için araç ve yaya trafiği sesi terasa yansıyabiliyor.",
+        "transit": "Kemer Merkez saat kulesi ve Atatürk Caddesi yürüme hattı üzerinde bulunur."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Casa La Luna Kemer",
+          "url": "https://maps.google.com/?cid=10356129966836018237",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Merkez Atatürk Cd. 19/A konumu ve operasyonel durumu doğrulandı."
+        },
+        {
+          "title": "Eniyi.best — Kemer Casa La Luna Değerlendirmesi",
+          "url": "https://eniyi.best/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İtalyan pizza hamuru, malzeme kalitesi ve makarna çeşitleri doğrulandı."
+        },
+        {
+          "title": "Yandex Haritalar — Casa La Luna Kemer",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Atatürk Caddesi konumu ve akşam servis geri bildirimleri."
+        }
+      ],
+      "pros": [
+        "Merkezi konumda dengeli İtalyan pizza hamuru",
+        "Makarna ve vejetaryen dostu çeşitlilik"
+      ],
+      "cons": [
+        "Cadde kenarı masalarda akşam hareketliliği yüksek"
+      ],
+      "uncertainties": [
+        "Sezon dışında menü çeşitliliği daralabiliyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-pizza-zahra",
+      "categoryId": "pizza",
+      "resolvedName": "Kemer Pizza Zahra",
+      "branchName": "Merkez, Lise Cd. G16, 07980 Kemer/Antalya",
+      "placeId": "ChIJx-BbnL23wxQReZ63zFRDxV8",
+      "coordinates": {
+        "lat": 36.599392099999996,
+        "lng": 30.5591118
+      },
+      "rating": 4.4,
+      "userRatingCount": 134,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6900996035506052729",
+      "recommendedPrimary": [
+        "Karışık Sucuk & Mantarlı Pizza",
+        "Margherita Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Tavuk Kanat & Patates Eşlikçisi",
+          "note": "Pizza siparişlerinin yanında taze kızartma ve fırın kanat tabakları hızlı akşam atıştırmalığı olarak öne çıkar.",
+          "proof": "Wanderlog ve Eatbu Kemer işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük iç dükkan masaları ve cadde önü sade oturum alanı",
+        "crowdAndNoise": "Öğleden sonra ve akşam paket/masa trafiğiyle mahalle ölçeğinde canlı",
+        "disadvantage": "Büyük restoran atmosferinden ziyade sade, hızlı servis ve paket ağırlıklı bir pizzeria.",
+        "transit": "Kemer Merkez Lise Caddesi G16 üzerinde Kemer Pastanesi çevresinde yürüyüş mesafesinde yer alır."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Kemer Pizza Zahra",
+          "url": "https://maps.google.com/?cid=6900996035506052729",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Lise Cd. konumu ve operasyonel durumu doğrulandı."
+        },
+        {
+          "title": "Wanderlog — Kemer Pizza Zahra",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Pizzalar, burger eşlikçileri ve mahalle pizzacısı notları."
+        },
+        {
+          "title": "Restaurant Guru — Kemer Pizza Zahra",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze hamur ve bütçe dostu servis profili."
+        }
+      ],
+      "pros": [
+        "Mahalle içi samimi hizmet ve taze pişen klasik pizzalar",
+        "Turistik marina hattına göre daha sakin cadde fiyatı"
+      ],
+      "cons": [
+        "Sınırlı oturma alanı; ambiyans arayanlar için fazla sade"
+      ],
+      "uncertainties": [
+        "Yoğun akşam saatlerinde paket siparişi nedeniyle fırın bekleme süresi uzayabiliyor."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-sir-williams",
+      "categoryId": "hamburger",
+      "resolvedName": "Sir Williams Pub & Bistro",
+      "branchName": "Bade Otel Altı, Merkez, 110. Sk. No:8, 07980 Kemer/Antalya",
+      "placeId": "ChIJ9ze4NNO3wxQR7pHwqLZhDhA",
+      "coordinates": {
+        "lat": 36.6003202,
+        "lng": 30.563086899999995
+      },
+      "rating": 4.8,
+      "userRatingCount": 242,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://instagram.com/sirwilliams_pub_bistro_kemer?igshid=MzRlODBiNWFlZA==",
+      "mapsUri": "https://maps.google.com/?cid=1156969591427076590",
+      "recommendedPrimary": [
+        "Ev Yapımı Sir Williams Burger",
+        "Cheeseburger & Patates"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çıtır Tavuk & Paylaşımlık Pub Tabağı",
+          "note": "Ev yapımı burgerler dışında kalabalık masalarda çıtır tavuk parçaları ve sıcak paylaşımlıklar sıkça seçiliyor.",
+          "proof": "Menu-TR ve Yandex Kemer bistro incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ahşap bar tezgahı, ekranlı bistro salonu ve sokak kenarı masalar",
+        "crowdAndNoise": "Maç akşamları ve gece saatlerinde hareketli; kış sezonunda da yerel müdavimleri ağırlıyor",
+        "disadvantage": "Canlı maç yayını olan akşamlarda gürültü düzeyi yüksek olabiliyor; sessiz akşam yemeği arayanlara uygun değil.",
+        "transit": "Merkez 110. Sokak No:8 adresinde Atatürk Caddesi ara bağlantısından yürüyerek 2 dakikadır."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Sir Williams Pub & Bistro",
+          "url": "https://maps.google.com/?cid=1156969591427076590",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Merkez 110. Sk. No:8 konumu ve operasyonel durumu doğrulandı."
+        },
+        {
+          "title": "Menu-TR — Sir Williams Pub & Bistro Kemer",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ev yapımı burger, tahıllı ekmek seçenekleri ve pub mutfağı notları."
+        },
+        {
+          "title": "Restoranim — Sir Williams Kemer",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kemer bistro ve yıl boyu açık pub değerlendirmesi."
+        }
+      ],
+      "pros": [
+        "Kemer merkezde bağımsız ev yapımı köfte ve ekmek standardı",
+        "Yaz-kış açık istikrarlı mutfak"
+      ],
+      "cons": [
+        "Gece pub/maç yayını atmosferi ailece sakin akşam yemeğine uymayabilir"
+      ],
+      "uncertainties": [
+        "Mutfak kapanış saatleri maç programına ve sezona göre esneyebiliyor."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-coffee-extrax",
+      "categoryId": "kahve",
+      "resolvedName": "Coffee Extrax Specialty Coffee House",
+      "branchName": "Merkez, 125. Sk. No:14, 07980 Kemer/Antalya",
+      "placeId": "ChIJNydAvzO3wxQRIUfPNx8nW5c",
+      "coordinates": {
+        "lat": 36.5980345,
+        "lng": 30.5654911
+      },
+      "rating": 4.9,
+      "userRatingCount": 137,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.coffeextrax.com/",
+      "mapsUri": "https://maps.google.com/?cid=10906353937641588513",
+      "recommendedPrimary": [
+        "V60 / Pour-Over Filtre Kahve",
+        "Flat White"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Taze Kahve Eşlikçisi Kurabiye & Kek",
+          "note": "Saf kahve odağını bozmayan küçük porsiyon ev yapımı kurabiye ve kek dilimleri demleme kahvelerin yanında sunulur.",
+          "proof": "coffeextrax.com resmi sayfası ve Restoranim değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Barista tezgahı çevresi az sayıda iç masa ve sakin sokak kenarı oturumu",
+        "crowdAndNoise": "Sabah ve öğleden sonra kahve tutkunlarıyla sakin ve odaklanmış bir akışa sahip",
+        "disadvantage": "Geniş kahvaltı veya ana yemek mutfağı yoktur; salt nitelikli kahve molası için uygundur.",
+        "transit": "Merkez 125. Sokak No:14 adresinde Liman Caddesi ara sokağından yürüyerek ulaşılır."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Coffee Extrax Specialty Coffee House",
+          "url": "https://maps.google.com/?cid=10906353937641588513",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Merkez 125. Sk. konumu ve operasyonel durumu doğrulandı."
+        },
+        {
+          "title": "Coffee Extrax Resmi Web Sitesi",
+          "url": "https://www.coffeextrax.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Nitelikli kahve çekirdekleri ve demleme barı bilgileri."
+        },
+        {
+          "title": "Restoranim — Coffee Extrax Kemer",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Üçüncü nesil demleme teknikleri ve espresso kalitesi değerlendirmesi."
+        },
+        {
+          "title": "Menu-TR — Coffee Extrax Kemer",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Nitelikli filtre kahve ve anaerobic çekirdek geri bildirimleri."
+        },
+        {
+          "title": "Restaurant Guru — Coffee Extrax Specialty Coffee House",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kemer specialty coffee topluluk değerlendirmeleri."
+        }
+      ],
+      "pros": [
+        "Kemer merkezde nadir gerçek specialty coffee ve pour-over odağı",
+        "Kalabalık bar caddelerinden izole sakin sokak"
+      ],
+      "cons": [
+        "Sınırlı oturma alanı ve kısıtlı yiyecek menüsü"
+      ],
+      "uncertainties": [
+        "Sezonluk mikro-lot çekirdek seçkisi dönemsel değişebiliyor."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-the-lombak",
+      "categoryId": "kahve",
+      "resolvedName": "The Lombak cafe & cocktails",
+      "branchName": "Merkez, Münir Özkul Liman Cd. No:6 D:10, 07990 Kemer/Antalya",
+      "placeId": "ChIJuZj4ptG3wxQRlxMXYXks4E4",
+      "coordinates": {
+        "lat": 36.5997416,
+        "lng": 30.563001900000003
+      },
+      "rating": 4.9,
+      "userRatingCount": 203,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5683591629573133207",
+      "recommendedPrimary": [
+        "Iced Spanish Latte",
+        "Espresso & Cold Brew"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Hafif Tatlı & Kruvasan Eşlikçisi",
+          "note": "Gündüz kahve saatlerinde taze tatlılar ve atıştırmalıklar, akşamüstüne doğru ise imza içecekler tercih ediliyor.",
+          "proof": "Menu-TR ve Yandex Kemer kafe notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Üst kat ferah iç salon, balkon masaları ve alt kat giriş terası",
+        "crowdAndNoise": "Öğleden sonra tasarım kafe atmosferi, akşamları kokteyl ve sohbet temposuyla canlı",
+        "disadvantage": "Girişi tasarım mağazası içinden geçildiğinden ilk kez gidenler tabelayı kolayca kaçırabilir.",
+        "transit": "Münir Özkul Liman Caddesi No:6 üzerinde Kemer Marina yönüne yürürken başlangıç hattındadır."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — The Lombak cafe & cocktails",
+          "url": "https://maps.google.com/?cid=5683591629573133207",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Liman Cd. No:6 konumu ve operasyonel durumu doğrulandı."
+        },
+        {
+          "title": "Menu-TR — The Lombak Cafe Kemer",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahve barı, tatlılar ve konsept mekan yapısı doğrulandı."
+        },
+        {
+          "title": "Restoranim — The Lombak Kemer",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kemer Liman Caddesi modern kafe ve tasarım alanı incelemesi."
+        }
+      ],
+      "pros": [
+        "Zincir kahvecilerden sıyrılan özgün konsept ve dingin üst kat",
+        "Merkez yaya caddesinde ferah mola imkanı"
+      ],
+      "cons": [
+        "Akşam saatlerinde kokteyl bar yönü kahve odağının önüne geçebiliyor"
+      ],
+      "uncertainties": [
+        "Yaz sezonu akşamlarında üst kat masaları hızlı dolabiliyor."
+      ],
+      "selectionScore": 96,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-la-cafe-m-callas",
+      "categoryId": "kahve",
+      "resolvedName": "La Cafe M.Callas",
+      "branchName": "Liman Caddesi, Merkez, 128. Sk. No:6/A, 07980 Kemer/Antalya",
+      "placeId": "ChIJYWauwX-3wxQRH55PbVRqdMw",
+      "coordinates": {
+        "lat": 36.5985946,
+        "lng": 30.563234299999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 251,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14732517191879466527",
+      "recommendedPrimary": [
+        "Taze Demlenmiş Filtre Kahve",
+        "Közde / Klasik Türk Kahvesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Cheesecake & Limonata",
+          "note": "Kahve eşliğinde ev yapımı cheesecake dilimleri ve bahçeden taze sıkılan limonatalar müdavimlerin başlıca tercihleri.",
+          "proof": "Wanderlog ve Yandex Kemer değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Limon ve bitki ağaçlarıyla çevrili huzurlu avlu bahçesi ve samimi iç oturum",
+        "crowdAndNoise": "Gün boyu gürültülü bar kalabalığından uzak, sohbet ve kitap okuma temposunda sakin",
+        "disadvantage": "Ara sokakta kaldığı için deniz manzarası sunmaz; akşam erken kapanabildiği için gündüz kahvesine daha uygundur.",
+        "transit": "Liman Caddesi paralelindeki Merkez 128. Sokak No:6/A adresine yürüyerek ulaşılır."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — La Cafe M.Callas",
+          "url": "https://maps.google.com/?cid=14732517191879466527",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Merkez 128. Sk. No:6/A konumu ve operasyonel durumu doğrulandı."
+        },
+        {
+          "title": "Wanderlog — La Cafe M.Callas Kemer",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Limon ağaçlı bahçe, klasik müzik, kahve ve cheesecake değerlendirmeleri."
+        },
+        {
+          "title": "Yandex Haritalar — La Cafe M.Callas",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kemer merkez sokak içi butik kafe geri bildirimleri."
+        }
+      ],
+      "pros": [
+        "Gürültülü turist aksından uzak limon ağaçlı sakin avlu",
+        "Kahve ve taze ev tatlısı uyumu"
+      ],
+      "cons": [
+        "Ara sokak konumu nedeniyle sahil manzarası bulunmuyor"
+      ],
+      "uncertainties": [
+        "Sezona göre akşam kapanış saati öne çekilebiliyor."
+      ],
+      "selectionScore": 96,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-qualista-marina",
+      "categoryId": "date",
+      "resolvedName": "Qualista Restaurant Marina",
+      "branchName": "Merkez, Yalı Cd. 5/A, 07990 Kemer/Antalya",
+      "placeId": "ChIJgf5S_563wxQRTXcm2JOssI8",
+      "coordinates": {
+        "lat": 36.599433999999995,
+        "lng": 30.5709212
+      },
+      "rating": 4.5,
+      "userRatingCount": 874,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://qualistamarina.com/",
+      "mapsUri": "https://maps.google.com/?cid=10353965294311339853",
+      "recommendedPrimary": [
+        "Kiremitte Karides & Deniz Mahsullü Makarna",
+        "Izgara Deniz Levreği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kiremitte Karides & İmza Kokteyller",
+          "note": "Ana balık ve et tabaklarının yanında kiremitte tereyağlı karides ve gün batımı kokteylleri sık tercih edilir.",
+          "proof": "qualistamarina.com resmi sayfası ve Menu-TR Kemer kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kemer Marina ve Ayışığı Koyu manzaralı geniş açık rıhtım terası ve özenli iç salon",
+        "crowdAndNoise": "Gün batımıyla birlikte rezervasyonlu çiftler ve akşam yemeği masaları yoğunlaşır",
+        "disadvantage": "Marina kıyısındaki üst segment konumu nedeniyle fiyat seviyesi çarşı içi lokantalara göre yüksektir.",
+        "transit": "Yalı Caddesi No:5/A üzerinde Idyros Antik Kenti ve Ayışığı Parkı girişine 2 dakika yürüyüştedir."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Qualista Restaurant Marina",
+          "url": "https://maps.google.com/?cid=10353965294311339853",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yalı Cd. 5/A marina konumu ve operasyonel durumu doğrulandı."
+        },
+        {
+          "title": "Qualista Marina Resmi Sitesi",
+          "url": "https://qualistamarina.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Marina kıyısı Akdeniz ve İtalyan şef mutfağı detayları."
+        },
+        {
+          "title": "Menu-TR — Qualista Restaurant Marina Kemer",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kiremitte karides, deniz mahsullü makarna ve balık menüsü notları."
+        },
+        {
+          "title": "Restoranim — Qualista Restaurant Marina",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ayışığı Koyu ve marina hattında akşam yemeği değerlendirmesi."
+        }
+      ],
+      "pros": [
+        "Idyros ve marina rıhtımının tam kesişiminde güçlü gün batımı atmosferi",
+        "Özenli sunum ve geniş deniz ürünü seçkisi"
+      ],
+      "cons": [
+        "Marina konumu nedeniyle fiyat düzeyi ortalamanın üzerinde"
+      ],
+      "uncertainties": [
+        "Ayışığı Koyu plaj tesisleriyle farklı çalışma saatlerine sahip olabiliyor."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-brothers-restaurant",
+      "categoryId": "date",
+      "resolvedName": "Brothers Restaurant",
+      "branchName": "Merkez, Atatürk Cd. No:44, 07990 Kemer/Antalya",
+      "placeId": "ChIJyxTQ4Wy3wxQRw-2XW_vIwlQ",
+      "coordinates": {
+        "lat": 36.5974661,
+        "lng": 30.562748600000003
+      },
+      "rating": 4.8,
+      "userRatingCount": 648,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://brothersrestaurantkemer.eatbu.com/?lang=tr",
+      "mapsUri": "https://maps.google.com/?cid=6107665026566843843",
+      "recommendedPrimary": [
+        "Deniz Ürünlü Tagliatelle / Makarna",
+        "Izgara Et & Akdeniz Mezeleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Viski & Espresso Bazlı Kokteyller",
+          "note": "Akşam yemeği sonrasında mekanın barından çıkan klasik ve espresso kokteylleri misafirlerce öne çıkarılıyor.",
+          "proof": "Eatbu resmi sayfası ve Restoranim Kemer incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Şık aydınlatmalı cadde verandası ve düzenli akşam masaları",
+        "crowdAndNoise": "Akşam yemek saatlerinde çiftler ve küçük arkadaş gruplarıyla dengeli ve nezih kalabalık",
+        "disadvantage": "Atatürk Caddesi üzerinde konumlandığı için deniz manzarası yerine canlı cadde ambiyansı sunar.",
+        "transit": "Atatürk Caddesi No:44 üzerinde Kemer Merkez cami ve meydan hattına yürüme mesafesinde."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Brothers Restaurant Kemer",
+          "url": "https://maps.google.com/?cid=6107665026566843843",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Merkez Atatürk Cd. No:44 konumu ve operasyonel durumu doğrulandı."
+        },
+        {
+          "title": "Eatbu — Brothers Restaurant Kemer",
+          "url": "https://brothersrestaurantkemer.eatbu.com/?lang=tr",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Akdeniz mutfağı, deniz ürünleri ve akşam servisi menüsü."
+        },
+        {
+          "title": "Restoranim — Brothers Restaurant Kemer",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Deniz ürünlü makarna, meze ve kokteyl barı değerlendirmeleri."
+        }
+      ],
+      "pros": [
+        "Yüksek mutfak tutarlılığı ve ilgili masa servisi",
+        "Makarna, et ve Akdeniz mezelerinde dengeli seçenek"
+      ],
+      "cons": [
+        "Sahil kenarı manzarası bulunmuyor"
+      ],
+      "uncertainties": [
+        "Yüksek sezonda akşam masaları için önden rezervasyon gerekebiliyor."
+      ],
+      "selectionScore": 96,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-pier-hemingway",
+      "categoryId": "date",
+      "resolvedName": "Pier Hemingway G-Marina",
+      "branchName": "Merkez, Yalı Cd. G-Marina D:9/B, 07990 Kemer/Antalya",
+      "placeId": "ChIJsdm9VJ63wxQRs9-s6lJR7zo",
+      "coordinates": {
+        "lat": 36.5994715,
+        "lng": 30.572494300000002
+      },
+      "rating": 4.4,
+      "userRatingCount": 398,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4246702390200033203",
+      "recommendedPrimary": [
+        "Taş Fırın Margherita Pizza",
+        "Deniz Mahsullü Risotto"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Rıhtım Kokteyl & Şarap Seçkisi",
+          "note": "Akşam saatlerinde yat limanı manzarasına karşı servis edilen şaraplar ve klasik kokteyller öne çıkar.",
+          "proof": "Restoranim ve Menu-TR Kemer Marina değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Yat limanı rıhtımına sıfır açık teras ve lounge oturma grubu",
+        "crowdAndNoise": "Yat sahipleri ve akşam yemeği için marina atmosferi arayan çiftlerle şık ve sakin",
+        "disadvantage": "G-Marina içi konumu sebebiyle üst fiyat segmentindedir ve rüzgarlı havalarda rıhtım açık kalabiliyor.",
+        "transit": "Yalı Caddesi G-Marina D:9/B adresinde Idyros Antik Kenti yürüyüş aksının marina kapısı içindedir."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Pier Hemingway G-Marina Kemer",
+          "url": "https://maps.google.com/?cid=4246702390200033203",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "G-Marina konumu ve operasyonel durumu doğrulandı."
+        },
+        {
+          "title": "Menu-TR — Pier Hemingway G-Marina Kemer",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Margherita pizza, risotto, sushi ve şarap menüsü notları."
+        },
+        {
+          "title": "Restoranim — Pier Hemingway Kemer",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kemer Marina rıhtım atmosferi ve servis değerlendirmesi."
+        }
+      ],
+      "pros": [
+        "Doğrudan G-Marina tekne rıhtımı kenarında sakin akşam ambiyansı",
+        "Pizza, risotto ve suşi çeşitliliği"
+      ],
+      "cons": [
+        "Yüksek fiyat seviyesi",
+        "Açık rıhtım alanı rüzgarlı akşamlarda serin olabilir"
+      ],
+      "uncertainties": [
+        "Kış döneminde marina çalışma saatleri yaz sezonuna göre kısalabiliyor."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-grace-rooftop",
+      "categoryId": "date",
+      "resolvedName": "Grace Rooftop & Lounge",
+      "branchName": "Merkez, Yalı Cd. no:2, 07990 Kemer/Antalya",
+      "placeId": "ChIJvQHXNWm3wxQRDJ8GvH97g8w",
+      "coordinates": {
+        "lat": 36.599471799999996,
+        "lng": 30.5700048
+      },
+      "rating": 4.4,
+      "userRatingCount": 455,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://gracekemer.com/",
+      "mapsUri": "https://maps.google.com/?cid=14736758194232008460",
+      "recommendedPrimary": [
+        "Özel Soslu Izgara Bonfile",
+        "Suşi & Deniz Ürünleri Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Panoramik Teras İmza Kokteylleri",
+          "note": "Akşam günbatımıyla birlikte bar ekibinin hazırladığı meyveli ve baharatlı kokteyller sıkça tercih edilir.",
+          "proof": "gracekemer.com resmi sitesi ve Menu-TR incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Yüksek kat panoramik deniz ve dağ manzaralı teras masaları",
+        "crowdAndNoise": "Gün batımı ve geç akşam saatlerinde çiftler ve manzara arayan gruplarla canlı",
+        "disadvantage": "Giriş üst katta yer alır ve yüksek sezonda kokteyl/müzik temposu gece geç saatlere uzayabilir.",
+        "transit": "Yalı Caddesi No:2 üzerinde Kemer Marina ve Ayışığı Parkı arasındaki sahil kavşağında."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Grace Rooftop & Lounge",
+          "url": "https://maps.google.com/?cid=14736758194232008460",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yalı Cd. No:2 konumu ve operasyonel durumu doğrulandı."
+        },
+        {
+          "title": "Grace Kemer Resmi Web Sitesi",
+          "url": "https://gracekemer.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Çatı terası manzarası, suşi, et ve deniz ürünleri menüsü."
+        },
+        {
+          "title": "Restoranim — Grace Rooftop Kemer",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Panoramik deniz manzarası ve teras yemekleri incelemesi."
+        }
+      ],
+      "pros": [
+        "Hem deniz hem Beydağları manzarasını gören nadir rooftop konumu",
+        "Et, suşi ve deniz ürünü dengesi"
+      ],
+      "cons": [
+        "Üst kat erişimi merdiven/asansör gerektiriyor",
+        "Üst fiyat segmentinde yer alır"
+      ],
+      "uncertainties": [
+        "DJ ve teras etkinlik günleri haftaya göre farklılık gösterebiliyor."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-captain-pirate",
+      "categoryId": "date",
+      "resolvedName": "Captain Pirate Restaurant Bar",
+      "branchName": "Merkez, Münir Özkul Liman Cd. No:36, 07980 Kemer/Antalya",
+      "placeId": "ChIJTYa06Zi3wxQRHvkVOr2SMM4",
+      "coordinates": {
+        "lat": 36.5998045,
+        "lng": 30.566549399999996
+      },
+      "rating": 4.6,
+      "userRatingCount": 1712,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.captainpiraterestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=14857536512116259102",
+      "recommendedPrimary": [
+        "Steakhouse Bonfile & T-Bone",
+        "Deniz Mahsullü Makarna & Izgara"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Akşam Canlı Müzik & Craft Kokteyller",
+          "note": "Korsan güvertesi dekorlu üst terasta akşam yemeklerine eşlik eden canlı performanslar ve kokteyl bar öne çıkar.",
+          "proof": "captainpiraterestaurant.com ve Restoranim Kemer incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "İki katlı tematik ahşap güverte terası ve iç salon oturumu",
+        "crowdAndNoise": "Akşamları özellikle canlı müzik saatlerinde oldukça hareketli ve enerjik",
+        "disadvantage": "Tematik dekorasyonu ve canlı müzik ses düzeyi, minimalist veya çok sakin bir akşam yemeği arayanlara uygun olmayabilir.",
+        "transit": "Münir Özkul Liman Caddesi No:36 üzerinde Kemer Marina girişinden yürüyerek 3 dakikadır."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Captain Pirate Restaurant Bar",
+          "url": "https://maps.google.com/?cid=14857536512116259102",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Liman Cd. No:36 konumu ve operasyonel durumu doğrulandı."
+        },
+        {
+          "title": "Captain Pirate Resmi Sitesi",
+          "url": "https://www.captainpiraterestaurant.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Steakhouse menüsü ve canlı müzik terası bilgileri."
+        },
+        {
+          "title": "Restoranim — Captain Pirate Kemer",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Liman Caddesi akşam atmosferi ve mutfak değerlendirmesi."
+        }
+      ],
+      "pros": [
+        "Liman aksında yüksek servis kapasitesi ve oturmuş mutfak ekibi",
+        "Et ve deniz ürünlerinde geniş menü"
+      ],
+      "cons": [
+        "Canlı müzik saatlerinde ortam sesi yüksek olabiliyor",
+        "Turistik tema dekorasyonu herkesin zevkine uymayabilir"
+      ],
+      "uncertainties": [
+        "Sezon dışında canlı müzik programı belirli günlerle sınırlanabiliyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-pastanesi-firin-mutfak",
+      "categoryId": "kahvalti",
+      "resolvedName": "Kemer Pastanesi Fırın & Mutfak",
+      "branchName": "Merkez, Lise Cd. No:4, 07980 Kemer/Antalya",
+      "placeId": "ChIJB7YeY723wxQRN284FWB0U6s",
+      "coordinates": {
+        "lat": 36.599820799999996,
+        "lng": 30.560369400000003
+      },
+      "rating": 4.5,
+      "userRatingCount": 6057,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://kemerpastanesi.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=12345338959574363959",
+      "recommendedPrimary": [
+        "Serpme Kahvaltı & Taze Poğaça/Börek",
+        "Geleneksel Badem Ezmesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kemer Badem Ezmesi & El Yapımı Hamur İşleri",
+          "note": "Sabah kahvaltısı dışında taş/fırın ekmekler, pelmeni mantı ve Kemer usulü badem ezmesi sıkça paket olarak da alınır.",
+          "proof": "kemerpastanesi.com.tr ve Restoranim tarihçe kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş çok masalı iç pastane-restoran salonu ve Lise Caddesi ön terası",
+        "crowdAndNoise": "Sabah kahvaltı ve öğle fırın saatlerinde yerel halk ile ziyaretçilerin karışımıyla canlı",
+        "disadvantage": "Büyük ve hareketli bir merkez fırın-lokantası olduğu için butik sessiz kahve köşesi atmosferi vermez.",
+        "transit": "Merkez Mahallesi Lise Caddesi No:4 üzerinde saat kulesi çevresinde."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Kemer Pastanesi Fırın&Mutfak",
+          "url": "https://maps.google.com/?cid=12345338959574363959",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Merkez Lise Cd. No:4 konumu ve operasyonel durumu doğrulandı."
+        },
+        {
+          "title": "Kemer Pastanesi Resmi Sitesi",
+          "url": "https://kemerpastanesi.com.tr/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "1952 kuruluş tarihçesi, fırın ürünleri ve kahvaltı/mutfak menüsü."
+        },
+        {
+          "title": "Restoranim — Kemer Pastanesi Fırın & Mutfak",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kemer merkez unlu mamuller, badem ezmesi ve mutfak değerlendirmesi."
+        },
+        {
+          "title": "Menu-TR — Kemer Pastanesi",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahvaltı tabağı, börek ve mantı seçenekleri."
+        }
+      ],
+      "pros": [
+        "1952 mirasıyla Kemer merkezin en köklü ve yerel halkın da kullandığı fırın-mutfağı",
+        "Sabah erken saatlerden itibaren taze hamur işi"
+      ],
+      "cons": [
+        "Yüksek masa sirkülasyonu sebebiyle sakinlik arayanlara kalabalık gelebilir"
+      ],
+      "uncertainties": [
+        "Bazı sıcak ev yemekleri yalnız öğle saatlerinde tezgaha çıkıyor."
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-liman-cafe-bar",
+      "categoryId": "kahvalti",
+      "resolvedName": "Liman Cafe & Bar",
+      "branchName": "Merkez, 142. Sk., 07990 Kemer/Antalya",
+      "placeId": "ChIJC_zDbRq3wxQR38-ox-PW8hs",
+      "coordinates": {
+        "lat": 36.599613,
+        "lng": 30.566620999999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 232,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2013908257183682527",
+      "recommendedPrimary": [
+        "Special Kahvaltı Tabağı",
+        "Kavurmalı Menemen & Ayvalık Tostu"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kavurmalı & Avokadolu Tost Çeşitleri",
+          "note": "Klasik serpme yerine tek kişilik hızlı kahvaltı isteyenler için sıcak kavurmalı ve avokadolu tostlar öne çıkıyor.",
+          "proof": "Restoranim ve Yemeksepeti Kemer menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Gölgelikli sokak masaları ve samimi iç kafe tezgahı",
+        "crowdAndNoise": "Sabah ve geç kahvaltı saatlerinde rahat ve yerel temposuyla dengeli dolu",
+        "disadvantage": "Sokak içi sade bir kafe olduğu için deniz manzarası sunmuyor.",
+        "transit": "Liman Caddesi bağlantısındaki Merkez 142. Sokak üzerinde marinaya 4 dakika yürüyüştür."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Liman Cafe & Bar",
+          "url": "https://maps.google.com/?cid=2013908257183682527",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Merkez 142. Sk. konumu ve operasyonel durumu doğrulandı."
+        },
+        {
+          "title": "Restoranim — Liman Cafe & Bar Kemer",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tüm gün kahvaltı servisi ve merkez kafe değerlendirmesi."
+        },
+        {
+          "title": "Yandex Haritalar — Liman Cafe & Bar",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahvaltı tabağı, menemen ve tost çeşitleri geri bildirimleri."
+        }
+      ],
+      "pros": [
+        "Geç kahvaltı arayanlar için gün boyu süren yumurta ve tost servisi",
+        "Porsiyon ve çeşit dengesi iyi merkez kahvaltısı"
+      ],
+      "cons": [
+        "Deniz kıyısı manzarası yok",
+        "Öğleden sonra sokak bar/tost temposuna döner"
+      ],
+      "uncertainties": [
+        "Yaz sezonunda menemen ve tost teslimat yoğunluğu masalara bekleme ekleyebiliyor."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-tutti-frutti-cafe",
+      "categoryId": "kahvalti",
+      "resolvedName": "Tutti Frutti Cafe",
+      "branchName": "Merkez, 179. Sk., 07990 Kemer/Antalya",
+      "placeId": "ChIJY0pbJ563wxQRmtdSoC3ITec",
+      "coordinates": {
+        "lat": 36.5994472,
+        "lng": 30.5739137
+      },
+      "rating": 4.5,
+      "userRatingCount": 70,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16667197894256940954",
+      "recommendedPrimary": [
+        "Meyveli & Peynirli Kahvaltı Tabağı",
+        "Taze Otlu Omlet"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Meyve Suları & Hafif Krep",
+          "note": "Sıcak yumurta tabaklarının yanında taze sıkılan narenciye suları ve hafif kahvaltı krepleri sık tercih ediliyor.",
+          "proof": "Restoranim ve Trip.com Kemer değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Çiçekli açık bahçe masaları ve gölgelikli veranda oturumu",
+        "crowdAndNoise": "Sabah saatlerinde sahil öncesi sakin kahvaltı arayan çiftler ve turistlerle huzurlu",
+        "disadvantage": "Büyük geleneksel Türk serpme kahvaltısı arayanlar için porsiyonlar daha hafif/kafe odaklı kalabilir.",
+        "transit": "179. Sokak üzerinde Ayışığı Parkı ve Kemer Marina yürüyüş yoluna birkaç dakika uzaklıktadır."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Tutti Frutti Cafe Kemer",
+          "url": "https://maps.google.com/?cid=16667197894256940954",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "179. Sk. konumu ve operasyonel durumu doğrulandı."
+        },
+        {
+          "title": "Restoranim — Tutti Frutti Cafe Kemer",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çiçekli teras ve hafif kahvaltı değerlendirmesi."
+        },
+        {
+          "title": "Trip.com — Tutti Frutti Cafe Kemer",
+          "url": "https://www.trip.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze meyveli kahvaltı tabakları ve sakin bahçe ortamı notları."
+        }
+      ],
+      "pros": [
+        "Ayışığı çevresinde gürültüden uzak çiçekli bahçe",
+        "Hafif ve vejetaryen dostu sabah seçenekleri"
+      ],
+      "cons": [
+        "Kapsamlı sıcak köy serpme kahvaltısı konseptinde değil"
+      ],
+      "uncertainties": [
+        "Ara sezon aylarda günlük açılış saatleri değişiklik gösterebilir."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-ayisigi-gunubirlik",
+      "categoryId": "kahvalti",
+      "resolvedName": "Ayışığı Koyu Günübirlik Kafe",
+      "branchName": "Merkez, Yalı Cd. No:9, 07980 Kemer/Antalya",
+      "placeId": "ChIJ4Sq1LZ63wxQR8lzbnV7ANxQ",
+      "coordinates": {
+        "lat": 36.5990496,
+        "lng": 30.5734881
+      },
+      "rating": 4.4,
+      "userRatingCount": 115,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1456844517085502706",
+      "recommendedPrimary": [
+        "Koy Manzaralı Serpme / Tabak Kahvaltı",
+        "Taze Gözleme & Tost"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çam Gölgesinde Sabah Gözlemesi & Çay",
+          "note": "Sabah deniz öncesi çam ağaçlarının altında taze pişirilen gözleme ve demleme çay başlıca kıyı ritüeli.",
+          "proof": "Google Maps ve Yandex Ayışığı Parkı ziyaretçi notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ayışığı Koyu kenarında çam gölgesinde açık sahil masaları",
+        "crowdAndNoise": "Sabah plaj açılış saatlerinde sakin; öğle sıcağına doğru koy ziyaretçileriyle hareketli",
+        "disadvantage": "Açık hava günübirlik sahil noktası olduğundan kış aylarında ve yağışlı havalarda kısıtlı çalışabiliyor.",
+        "transit": "Yalı Caddesi No:9 üzerinde Ayışığı Parkı ve Idyros Antik Kenti yürüyüş yolu içindedir."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Ayışığı Günübirlik Tesisleri",
+          "url": "https://maps.google.com/?cid=1456844517085502706",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yalı Cd. No:9 Ayışığı Koyu konumu doğrulandı."
+        },
+        {
+          "title": "Kemer Belediyesi — Idyros ve Ayışığı Parkı Rehberi",
+          "url": "https://www.kemer.bel.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Idyros Antik Kenti ve Ayışığı Koyu konumu doğrulandı."
+        },
+        {
+          "title": "Yandex Haritalar — Ayışığı Koyu",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sahil ve çamlık içinde kahvaltı değerlendirmeleri."
+        }
+      ],
+      "pros": [
+        "Idyros Antik Kenti yürüyüşüyle doğrudan birleşen koy kıyısı",
+        "Çam gölgesinde doğal sabah atmosferi"
+      ],
+      "cons": [
+        "Günübirlik tesis yapısı nedeniyle gastronomi beklentisi butik restoran seviyesinde değil"
+      ],
+      "uncertainties": [
+        "Sezon dışında mutfak hizmeti hafta sonlarıyla sınırlanabiliyor."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-merhaba-garden",
+      "categoryId": "denemelisin",
+      "resolvedName": "Merhaba Garden Restaurant",
+      "branchName": "Merkez, Atatürk Cd. No: 44/A, 07980 Kemer/Antalya",
+      "placeId": "ChIJJ3M9zKK3wxQRC4u4aHO1yEo",
+      "coordinates": {
+        "lat": 36.59754420000001,
+        "lng": 30.562650499999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 495,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.facebook.com/share/g/188ghFheLD/?mibextid=wwXIfr",
+      "mapsUri": "https://maps.google.com/?cid=5388756461431589643",
+      "recommendedPrimary": [
+        "Ağır Pişmiş Kuzu İncik (Lamb Shank)",
+        "Izgara Jumbo Karides"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Steak Diana & Ev Yapımı Tatlılar",
+          "note": "Kuzu incik ve deniz ürünlerinin yanı sıra biber soslu bonfile ve ev yapımı tatlılar akşam masalarında sık seçilir.",
+          "proof": "Menu-TR ve Mekanlar.com Kemer rehber kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaçlı geniş açık hava bahçesi ve kapalı kış salonu",
+        "crowdAndNoise": "Akşam yemeğinde özellikle aileler ve müdavimlerle dolu; bahçe yerleşimi ferah",
+        "disadvantage": "Canlı müzik olan akşamlarda arka masalar yerine ön sahne yakını daha sesli olabiliyor.",
+        "transit": "Merkez Atatürk Caddesi No:44/A üzerinde meydandan 3 dakika yürüyüş mesafesinde."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Merhaba Garden Restaurant",
+          "url": "https://maps.google.com/?cid=5388756461431589643",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Merkez Atatürk Cd. No:44/A konumu doğrulandı."
+        },
+        {
+          "title": "Menu-TR — Merhaba Garden Restaurant Kemer",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kuzu incik, Steak Diana ve ızgara karides menü notları."
+        },
+        {
+          "title": "Yandex Haritalar — Merhaba Garden Kemer",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bahçe oturumu ve servis düzeni değerlendirmeleri."
+        }
+      ],
+      "pros": [
+        "Et ve deniz ürününü aynı tutarlılıkta çıkaran geniş bahçeli mutfak",
+        "Ferah masa aralığı"
+      ],
+      "cons": [
+        "Ana yemek fiyatları esnaf lokantalarına kıyasla turistik ortalamada"
+      ],
+      "uncertainties": [
+        "Canlı müzik günleri sezona göre değişebiliyor."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-monte-kemer",
+      "categoryId": "denemelisin",
+      "resolvedName": "Monte Kemer Restaurant",
+      "branchName": "Merkez, 125. Sk. No: 58, 07980 Kemer/Antalya",
+      "placeId": "ChIJF3ds3KK3wxQRkogZOdRSF9o",
+      "coordinates": {
+        "lat": 36.5981306,
+        "lng": 30.566533699999997
+      },
+      "rating": 4.5,
+      "userRatingCount": 942,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15715120496177154194",
+      "recommendedPrimary": [
+        "Boşnak Köftesi",
+        "Özel Soslu Köfte & Izgara Tabakları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Sebze Çorbası & Balkan Eşlikçileri",
+          "note": "Boşnak köftesinin yanında taze hazırlanan ev çorbaları ve mezeler müdavimlerin kış-yaz tercihi.",
+          "proof": "Menu-TR ve VisitKemer değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Samimi ahşap iç salon, kışın soba başı masalar ve gölgeli ön sokak",
+        "crowdAndNoise": "Yerli müdavimler ve sakin akşam yemeği arayan ziyaretçilerle dengeli",
+        "disadvantage": "Gösterişli deniz manzarası veya beach ambiyansı arayanlar için fazla sade bir sokak restoranıdır.",
+        "transit": "Merkez 125. Sokak No:58 üzerinde Atatürk Caddesi ile Liman arasındaki bağlantıda."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Monte Kemer Restaurant",
+          "url": "https://maps.google.com/?cid=15715120496177154194",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Merkez 125. Sk. No:58 konumu doğrulandı."
+        },
+        {
+          "title": "Menu-TR — Monte Kemer Restaurant",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Boşnak köftesi, ev çorbaları ve ızgaralar menüsü."
+        },
+        {
+          "title": "VisitKemer — Monte Kemer Rehberi",
+          "url": "https://visitkemer.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kemer merkez Türk ve dünya mutfağı yerel önerisi."
+        }
+      ],
+      "pros": [
+        "Zincir/turistik menülerden farklı Boşnak köftesi spesiyali",
+        "Kış aylarında da sıcak soba başı düzeni"
+      ],
+      "cons": [
+        "Ara sokak konumu ve sınırlı dış teras"
+      ],
+      "uncertainties": [
+        "Bazı özel Balkan lezzetleri günlük hazırlığa göre çıkabiliyor."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-baykal-restaurant",
+      "categoryId": "denemelisin",
+      "resolvedName": "Baykal Restaurant",
+      "branchName": "Merkez, Yalı Cd. 6 / A, 07980 Kemer/Antalya",
+      "placeId": "ChIJNZryRpq3wxQRar7TZX5_Cro",
+      "coordinates": {
+        "lat": 36.5991637,
+        "lng": 30.568115499999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 1247,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://bio.link/baykal_restaurant",
+      "mapsUri": "https://maps.google.com/?cid=13405667421672685162",
+      "recommendedPrimary": [
+        "Izgara Deniz Levreği",
+        "Kömürde Beyti & Karışık Köfte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Yöresel Çorbalar & Taze Fırın Ekmeği",
+          "note": "Ana ızgara siparişinden önce gelen sıcak çorbalar ve taze ev ekmeği özellikle övülen başlangıçlar.",
+          "proof": "Menu-TR ve Yandex Kemer Yalı Cd. kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Yalı Caddesi üzeri açık veranda masaları ve kapalı aile salonu",
+        "crowdAndNoise": "Akşamları aile masaları ve düzenli servis arayan yerli ziyaretçilerle istikrarlı",
+        "disadvantage": "Yalı Caddesi üzerinde yer alsa da doğrudan marina iskelesi içinde değil, cadde aksındadır.",
+        "transit": "Yalı Caddesi No:6/A adresinde Kemer Marina yürüyüş kavşağına 2 dakika uzaklıkta."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Baykal Restaurant Kemer",
+          "url": "https://maps.google.com/?cid=13405667421672685162",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yalı Cd. 6/A konumu ve operasyonel durumu doğrulandı."
+        },
+        {
+          "title": "Menu-TR — Baykal Restaurant Kemer",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çorbalar, ızgara levrek ve kebap çeşitleri."
+        },
+        {
+          "title": "Yandex Haritalar — Baykal Restaurant",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Merkezi konum, temiz servis ve aile restoranı notları."
+        }
+      ],
+      "pros": [
+        "Hem ızgara balık hem kebap/çorbada tutarlı mutfak",
+        "Marina çevresine göre daha ulaşılabilir fiyat dengesi"
+      ],
+      "cons": [
+        "Doğrudan deniz kıyısı değil cadde üzerindedir"
+      ],
+      "uncertainties": [
+        "Yoğun yaz akşamlarında ön veranda masaları hızlı dolabiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-skyline-restaurant",
+      "categoryId": "denemelisin",
+      "resolvedName": "Skyline Restaurant Kemer",
+      "branchName": "Merkez, 128. Sk. No:1 / A, 07990 Kemer/Antalya",
+      "placeId": "ChIJE2WNWui3wxQRoE5_fGQOsHY",
+      "coordinates": {
+        "lat": 36.5995045,
+        "lng": 30.563368099999995
+      },
+      "rating": 4.8,
+      "userRatingCount": 450,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.skylinerestaurantkemer.com/",
+      "mapsUri": "https://maps.google.com/?cid=8552351517124808352",
+      "recommendedPrimary": [
+        "Odun Ateşinde Kapalı Kıymalı Bafra Pidesi",
+        "Kaşarlı & Kuşbaşılı Pide"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Izgara Et & Akdeniz Deniz Ürünleri",
+          "note": "Odun fırını pideler dışında kalabalık masalar için ızgara köfte ve balık çeşitleri de çıkarılıyor.",
+          "proof": "Menu-TR ve KemerCityGuide Kemer işletme rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Sokak cephesinde ferah veranda masaları ve kapalı mutfak salonu",
+        "crowdAndNoise": "Akşam yemek saatlerinde yerel halk ve pidesi için gelen müdavimlerle düzenli dolu",
+        "disadvantage": "Büyük bahçeli fine-dining düzeninden ziyade odun fırını odaklı sade bir restoran havasındadır.",
+        "transit": "Merkez 128. Sokak No:1/A üzerinde Atatürk Caddesi arkasında merkezi konumdadır."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Skyline Restaurant Kemer",
+          "url": "https://maps.google.com/?cid=8552351517124808352",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Merkez 128. Sk. No:1/A konumu doğrulandı."
+        },
+        {
+          "title": "Skyline Restaurant Resmi Sitesi",
+          "url": "https://www.skylinerestaurantkemer.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Odun fırını pideler ve restoran bilgileri."
+        },
+        {
+          "title": "Menu-TR — Skyline Restaurant Kemer",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kapalı kıymalı Bafra pidesi ve ızgara menüsü notları."
+        },
+        {
+          "title": "Kemer City Guide — Skyline Restaurant",
+          "url": "https://www.kemercityguide.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Odun ateşi pide ve yerel mutfak incelemesi."
+        }
+      ],
+      "pros": [
+        "Kemer merkezde gerçek odun ateşinde kapalı Bafra pidesi bulma imkanı",
+        "Temiz servis ve porsiyon tutarlılığı"
+      ],
+      "cons": [
+        "Dış görünüşü sade; sadece manzara için seçilecek bir teras değil"
+      ],
+      "uncertainties": [
+        "Fırın hamuru sipariş üzerine taze açıldığı için yoğunlukta hazırlık biraz uzayabiliyor."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-friends-restaurant",
+      "categoryId": "denemelisin",
+      "resolvedName": "FRIENDS RESTAURANT",
+      "branchName": "MERKEZ M LİMAN C 28/A, Merkez, 07130 Kemer/Antalya",
+      "placeId": "ChIJc339IUGVwxQRBifjPG4GYXs",
+      "coordinates": {
+        "lat": 36.599829199999995,
+        "lng": 30.565374700000003
+      },
+      "rating": 4.6,
+      "userRatingCount": 527,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://frendsrestaurant.eatbu.com/",
+      "mapsUri": "https://maps.google.com/?cid=8890394209943758598",
+      "recommendedPrimary": [
+        "Tavuk & Et Fajita",
+        "Soslu Bonfile Steak"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Meksika Usulü Pizza & Bar Kokteylleri",
+          "note": "Sıcak döküm tavada gelen fajitaların yanında ince hamurlu pizzalar ve kokteyller sıkça eşlik ediyor.",
+          "proof": "frendsrestaurant.eatbu.com ve Wanderlog değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Yaya trafiğine bakan geniş Liman Caddesi açık hava masaları",
+        "crowdAndNoise": "Akşam yemeği ve sonrası yürüyüş saatlerinde canlı ve enerjik",
+        "disadvantage": "Yaya caddesi üzerinde olduğundan sakinlik yerine hareketli cadde atmosferi hakimdir.",
+        "transit": "Münir Özkul Liman Caddesi 28/A adresinde Marina yürüyüş yolu ortasında yer alır."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Friends Restaurant Kemer",
+          "url": "https://maps.google.com/?cid=8890394209943758598",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Liman Cd. 28/A konumu doğrulandı."
+        },
+        {
+          "title": "Friends Restaurant Resmi Sayfası",
+          "url": "https://frendsrestaurant.eatbu.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Dünya mutfağı, steak, pizza ve fajita menüsü."
+        },
+        {
+          "title": "Wanderlog — Friends Restaurant Kemer",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Servis temposu ve yemek memnuniyeti değerlendirmeleri."
+        }
+      ],
+      "pros": [
+        "Liman Caddesi üzerinde ilgili ekip ve hızlı sıcak servis",
+        "Fajita, steak ve pizzada geniş dünya mutfağı seçenekleri"
+      ],
+      "cons": [
+        "Turistik yaya caddesi ortasında müzik ve sokak sesi yoğun"
+      ],
+      "uncertainties": [
+        "Yoğun akşam servisinde ön sıralardaki masalarda yer beklemek gerekebiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-yummy-kemer",
+      "categoryId": "denemelisin",
+      "resolvedName": "Yummy Kemer",
+      "branchName": "Merkez, Lise Cd. 20A, 07980 Kemer/Antalya",
+      "placeId": "ChIJ8cWKDgC3wxQR59XvnIx8Elc",
+      "coordinates": {
+        "lat": 36.5993183,
+        "lng": 30.558668899999994
+      },
+      "rating": 4.6,
+      "userRatingCount": 159,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://yummykemer.com/",
+      "mapsUri": "https://maps.google.com/?cid=6274214174250751463",
+      "recommendedPrimary": [
+        "Philadelphia & Dragon Roll Suşi",
+        "Tavuklu / Deniz Mahsullü Noodle"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Karışık Suşi Setleri & Ev Limonataları",
+          "note": "İki veya dört kişilik paylaşım için Samuray/Dragon roll setleri paket ve masada en çok çıkan ürünler arasında.",
+          "proof": "yummykemer.com resmi menüsü ve Yemeksepeti kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sade iç salon ve Lise Caddesi kenarı birkaç küçük masa",
+        "crowdAndNoise": "Akşamları suşi ve noodle siparişi veren yerli gençler ve turistlerle düzenli dolu",
+        "disadvantage": "Geleneksel şık bir Uzak Doğu restoranı dekorundan ziyade pratik kafe-mutfak konseptindedir.",
+        "transit": "Merkez Lise Caddesi 20A üzerinde Çınar Kavşağı yakınındadır."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Yummy Kemer",
+          "url": "https://maps.google.com/?cid=6274214174250751463",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Lise Cd. 20A konumu doğrulandı."
+        },
+        {
+          "title": "Yummy Kemer Resmi Web Sitesi",
+          "url": "https://yummykemer.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Suşi roll menüsü, setler ve noodle çeşitleri."
+        },
+        {
+          "title": "Restoranim — Yummy Kemer",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Suşi tazeliği ve noodle değerlendirmeleri."
+        }
+      ],
+      "pros": [
+        "Kemer merkezde ulaşılabilir fiyatla taze suşi ve wok noodle seçeneği",
+        "Hızlı hazırlık ve paket uyumluluğu"
+      ],
+      "cons": [
+        "Küçük oturma alanı ve sınırlı manzara"
+      ],
+      "uncertainties": [
+        "Taze balık stoğuna göre bazı özel sashimi çeşitleri günlük değişebiliyor."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-hanimeli-dondurma",
+      "categoryId": "denemelisin",
+      "resolvedName": "Hanımeli Dondurma",
+      "branchName": "Arslanbucak, Cumhuriyet Cd. 108/A, 07980 Kemer/Antalya",
+      "placeId": "ChIJ0aCA4ta3wxQREWZpLllcaE4",
+      "coordinates": {
+        "lat": 36.5959523,
+        "lng": 30.5318555
+      },
+      "rating": 4.8,
+      "userRatingCount": 177,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5649867270636791313",
+      "recommendedPrimary": [
+        "Keçiboynuzu Özlü & Tahinli Dondurma",
+        "İncirli / Kuzu Kulaklı Dondurma"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Üzerine Erimiş Çikolata & Fındıklı Servis",
+          "note": "Doğal meyveli ve tahinli topların üzerine eklenen sıcak çikolata ve kırık fındık süslemesi buranın imza sunumudur.",
+          "proof": "Menu-TR ve KemerCityGuide dondurma notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Vitrin önü tezgah ve Cumhuriyet Caddesi üzeri pratik kaldırım oturma masaları",
+        "crowdAndNoise": "Sıcak ikindi ve akşam saatlerinde ailelerle dolu; gün ortası kısa sırada alınır",
+        "disadvantage": "Kemer Marina ve sahil hattında değil, iç mahalle Arslanbucak aksındadır (kısa araç/bisiklet mesafesi).",
+        "transit": "Arslanbucak Mahallesi Cumhuriyet Caddesi No:108/A üzerinde merkezden 5 dakika sürüşle ulaşılır."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Hanımeli Dondurma Kemer",
+          "url": "https://maps.google.com/?cid=5649867270636791313",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Arslanbucak Cumhuriyet Cd. 108/A konumu doğrulandı."
+        },
+        {
+          "title": "Restoranim — Hanımeli Dondurma Arslanbucak",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Doğal keçi sütü, keçiboynuzu ve kuzu kulaklı özgün aromalar."
+        },
+        {
+          "title": "Kemer City Guide — Hanımeli Dondurma",
+          "url": "https://www.kemercityguide.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yerel mahalle dondurmacısı değerlendirmeleri."
+        }
+      ],
+      "pros": [
+        "Katkısız meyve, tahin ve keçiboynuzu gibi nadir yerel aromalar",
+        "Turistik dondurma zincirlerinden çok daha otantik içerik"
+      ],
+      "cons": [
+        "Marina yürüyüş bandı dışında yer alıyor",
+        "Kalabalık akşamüstü saatlerinde kısa bekleme olabiliyor"
+      ],
+      "uncertainties": [
+        "Kuzu kulaklı veya incirli mevsim aromaları meyve sezonuna göre tezgahta değişebiliyor."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-kardesler-pide",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kardeşler Pide Ve Kebap Salonu",
+      "branchName": "Arslanbucak, Cumhuriyet Cd. No:118, 07980 Kemer/Antalya",
+      "placeId": "ChIJMW_658O3wxQROwdo2NO2KGY",
+      "coordinates": {
+        "lat": 36.5944253,
+        "lng": 30.5301609
+      },
+      "rating": 4.5,
+      "userRatingCount": 70,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7361334611922126651",
+      "recommendedPrimary": [
+        "Taş Fırın Lahmacun & Kuşbaşılı Pide",
+        "Günlük Tencere Sulu Yemekleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Öğle Çorbaları & Kömürde Kebap Çeşitleri",
+          "note": "Taş fırın pideleri yanında hızlı öğle servisinde taze çorba ve sulu ev yemeği çeşitleri tercih ediliyor.",
+          "proof": "kardeslerpidekebap.com resmi sayfası ve Menu-TR kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş temiz aile salonu ve cadde önü masaları",
+        "crowdAndNoise": "Öğle paydosunda esnaf ve yerel çalışanlarla oldukça yoğun",
+        "disadvantage": "Turistik sahil restoranı beklentisiyle gidilmemeli; hızlı ve dürüst Anadolu esnaf lokantasıdır.",
+        "transit": "Arslanbucak Cumhuriyet Caddesi No:118 üzerinde merkez dolmuş hattı güzergahındadır."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Kardeşler Pide Ve Kebap Salonu",
+          "url": "https://maps.google.com/?cid=7361334611922126651",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Arslanbucak Cumhuriyet Cd. No:118 konumu doğrulandı."
+        },
+        {
+          "title": "Kardeşler Pide Kebap Resmi Web Sitesi",
+          "url": "https://www.kardeslerpidekebap.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Taş fırın pide, lahmacun ve kebap çeşitleri."
+        },
+        {
+          "title": "Menu-TR — Kardeşler Pide Kebap Kemer",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Esnaf lokantası sulu yemekler ve pide geri bildirimleri."
+        }
+      ],
+      "pros": [
+        "Turist menüsü değil, %100 yerli esnaf standardında lezzet ve porsiyon",
+        "Hızlı ve temiz servis"
+      ],
+      "cons": [
+        "Sahil yürüyüş bölgesi dışındaki Arslanbucak caddesinde yer alır"
+      ],
+      "uncertainties": [
+        "Tencere yemekleri akşam geç saatlere kalmadan tükenebiliyor."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-golden-shish",
+      "categoryId": "denemelisin",
+      "resolvedName": "Golden Shish & Kebap",
+      "branchName": "Merkez, Kavaklı Cd. No:8/1, 07980 Kemer/Antalya",
+      "placeId": "ChIJu6W1Uhy3wxQRKFMPpFbbM_w",
+      "coordinates": {
+        "lat": 36.6021681,
+        "lng": 30.563993999999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 116,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://vk.link/goldenshishkebap",
+      "mapsUri": "https://maps.google.com/?cid=18173110086536221480",
+      "recommendedPrimary": [
+        "Odun Ateşinde Cağ Kebabı",
+        "Pilav Üstü Cağ Döner"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tereyağlı İskender & Çömlekte Güveç",
+          "note": "Cağ şişleri dışında özel soslu İskender ve ağır pişmiş et güveç porsiyonları akşam masalarında öne çıkıyor.",
+          "proof": "Yandex ve VK resmi menü sayfası"
+        }
+      ],
+      "suitability": {
+        "seating": "Kapalı iç ocakbaşı salonu ve Kavaklı Caddesi ön masaları",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde yerel et severler ve merkez esnafıyla istikrarlı",
+        "disadvantage": "Cağ şişi belirli öğle-akşam tezgah saatlerinde yatay şişten kesildiğinden erken/geç saatte bitebiliyor.",
+        "transit": "Merkez Mahallesi Kavaklı Caddesi No:8/1 adresinde çarşı içinde yürüyüş mesafesindedir."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Golden Shish & Kebap Kemer",
+          "url": "https://maps.google.com/?cid=18173110086536221480",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Merkez Kavaklı Cd. No:8/1 konumu doğrulandı."
+        },
+        {
+          "title": "Yandex Haritalar — Golden Shish & Kebap Kemer",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Cağ kebabı, İskender ve et güveç menüsü notları."
+        },
+        {
+          "title": "Golden Shish Menü Kaydı",
+          "url": "https://vk.link/goldenshishkebap",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Cağ kebabı ve döner menü içerikleri."
+        }
+      ],
+      "pros": [
+        "Antalya kıyısında nadir gerçek Erzurum cağ kebabı yapan adres",
+        "Merkezi çarşı konumu"
+      ],
+      "cons": [
+        "Deniz veya bahçe atmosferi arayanlar için kapalı lokanta tarzı"
+      ],
+      "uncertainties": [
+        "Cağ şişinin taze kesim saatleri günlük talebe göre değişebiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-kavurmaci-suber",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kavurmacı suber",
+      "branchName": "Merkez, Atatürk Cd. no42-A, 07400 Kemer/Antalya",
+      "placeId": "ChIJlVvm9QC3wxQRxV_06RmGwLg",
+      "coordinates": {
+        "lat": 36.5978417,
+        "lng": 30.5625314
+      },
+      "rating": 4.7,
+      "userRatingCount": 61,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13312787944364597189",
+      "recommendedPrimary": [
+        "Tereyağlı Kavurma Ekmek",
+        "Porsiyon Sac Kavurma"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Porsiyon Kavurma & Yayık Ayran Eşleşmesi",
+          "note": "Sandviç yerine tabakta pilav üstü veya sade kavurma porsiyonu, yanında soğuk ayranla düzenli tercih ediliyor.",
+          "proof": "Google Maps ve Yandex Kemer Atatürk Cd. değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük büfe-lokanta tezgahı ve Atatürk Caddesi kenarında birkaç sade masa",
+        "crowdAndNoise": "Öğle arası ve akşamüstü hızlı sokak lezzeti arayanlarla hareketli",
+        "disadvantage": "Küçük oturma kapasitesine sahip hızlı yemek noktasıdır; uzun akşam oturumu için uygun değildir.",
+        "transit": "Atatürk Caddesi No:42-A adresinde Kemer Merkez cami karşısı hattındadır."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Kavurmacı suber",
+          "url": "https://maps.google.com/?cid=13312787944364597189",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Atatürk Cd. No:42-A konumu doğrulandı."
+        },
+        {
+          "title": "Yandex Haritalar — Kavurmacı suber Kemer",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sac kavurma sandviç lezzeti ve hızlı servis notları."
+        },
+        {
+          "title": "Menu-TR — Kemer Merkez Atatürk Cd. Sokak Lezzetleri",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kemer merkez kavurma ve hızlı yemek noktası değerlendirmesi."
+        }
+      ],
+      "pros": [
+        "Ağır restoran porsiyonları dışında sade, et odaklı yerel sokak lezzeti",
+        "Merkez caddede hızlı erişim"
+      ],
+      "cons": [
+        "Kısıtlı oturma düzeni ve yalnızca kavurma odaklı dar menü"
+      ],
+      "uncertainties": [
+        "Günlük et stoğu bittiğinde akşam geç saatlerden önce kapatabiliyor."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-nokta-balik",
+      "categoryId": "balik",
+      "resolvedName": "Nokta Balık Kemer",
+      "branchName": "Merkez, Yalı Cd. No:8/A, 07990 Kemer/Antalya",
+      "placeId": "ChIJ9wD5T2S3wxQRLKmpWPE8JiE",
+      "coordinates": {
+        "lat": 36.599117,
+        "lng": 30.568249400000003
+      },
+      "rating": 4.8,
+      "userRatingCount": 847,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2388663659638925612",
+      "recommendedPrimary": [
+        "Mangalda Kaya / Deniz Levreği",
+        "Güveçte Sebzeli Kalamar & Çıtır Kalamar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Balık Çorbası & Güveçte Kalamar",
+          "note": "Ana balık öncesi verilen balık çorbası ve sebzeli kalamar güveç en çok tekrarlanan başlangıçlar arasında.",
+          "proof": "Menu-TR ve Yemeksepeti Kemer balık menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Yalı Caddesi gölgeli teras masaları ve kapalı balık tezgahı salonu",
+        "crowdAndNoise": "Akşam yemeklerinde yerli müdavimler ve taze balık arayan gezginlerle yoğun",
+        "disadvantage": "Marina içindeki rıhtım restoranları gibi su sıfırında değil, Yalı Caddesi tarafında yer alır.",
+        "transit": "Merkez Yalı Caddesi No:8/A adresinde Kemer Marina giriş kapısına 1 dakika yürüme mesafesindedir."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Nokta Balık Kemer",
+          "url": "https://maps.google.com/?cid=2388663659638925612",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yalı Cd. No:8/A konumu doğrulandı."
+        },
+        {
+          "title": "Menu-TR — Nokta Balık Kemer",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mangalda levrek, kalamar güveç ve balık çorbası notları."
+        },
+        {
+          "title": "Onedio — Kemer Yeme-İçme Rehberi",
+          "url": "https://onedio.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kemer merkezde öne çıkan taze balık adresi."
+        }
+      ],
+      "pros": [
+        "Yüksek memnuniyet skoru ve doğrudan tezgah tazeliği",
+        "Marina içindeki pahalı tesislere göre daha makul fiyat/lezzet"
+      ],
+      "cons": [
+        "Su sıfırı marina manzarası bulunmuyor"
+      ],
+      "uncertainties": [
+        "Günlük av durumuna göre kaya levreği ve mevsim balıkları değişiklik gösterebilir."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-yacht-club-fish",
+      "categoryId": "balik",
+      "resolvedName": "Yacht Club Fish Restaurant",
+      "branchName": "Merkez mah Yalı cad Kemer Marina, Merkez, 07980 Kemer/Antalya",
+      "placeId": "ChIJBcfgbG-3wxQRLFLYARDN5c4",
+      "coordinates": {
+        "lat": 36.600334499999995,
+        "lng": 30.570541300000002
+      },
+      "rating": 4.8,
+      "userRatingCount": 414,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.kemersailing.com/",
+      "mapsUri": "https://maps.google.com/?cid=14908547610114019884",
+      "recommendedPrimary": [
+        "Ahtapot Izgara",
+        "Karides Güveç & Kalamar Dolma"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Karidesli Sigara Böreği & Akdeniz Mezeleri",
+          "note": "Deniz ürünü ara sıcakları arasında kalamar dolma ile karidesli börek masaların vazgeçilmez başlangıcı.",
+          "proof": "kemersailing.com ve Restoranim Yacht Club Kemer incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Marina teknelerine nazır açık rıhtım terası ve camlı kapalı salon",
+        "crowdAndNoise": "Akşam günbatımı saatlerinde sakin, zarif akşam yemeği arayan çiftler ve gruplarla dolu",
+        "disadvantage": "Marina içi konumu sebebiyle hesap tutarı çarşı içi esnaf balıkçılarına göre belirgin şekilde yüksektir.",
+        "transit": "Merkez Mahallesi Yalı Caddesi Kemer Marina içindedir; Idyros Antik Kenti tarafındaki marina yolundan yürünür."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Yacht Club Fish Restaurant",
+          "url": "https://maps.google.com/?cid=14908547610114019884",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kemer Marina konumu doğrulandı."
+        },
+        {
+          "title": "Kemer Sailing — Yacht Club Fish Restaurant",
+          "url": "https://www.kemersailing.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Marina içi deniz ürünleri restoranı ve manzara detayları."
+        },
+        {
+          "title": "Restoranim — Yacht Club Fish Kemer",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ahtapot ızgara, karides güveç ve meze kalitesi incelemesi."
+        }
+      ],
+      "pros": [
+        "Kemer Marina ile Beydağları manzarasını birleştiren seçkin konum",
+        "Ahtapot ve kalamar dolmada güçlü mutfak işçiliği"
+      ],
+      "cons": [
+        "Yüksek marina fiyat seviyesi"
+      ],
+      "uncertainties": [
+        "Sezon dışında erken kapanma veya grup organizasyonu kaynaklı kısıtlama olabiliyor."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-oz-mercan-faruk",
+      "categoryId": "balik",
+      "resolvedName": "Öz Mercan Balıkçılık (Balıkçı Faruk)",
+      "branchName": "Yeni, Dörtyol Blv. No:18 f/g, Yeni, 07980 Kemer/Antalya",
+      "placeId": "ChIJwQ3sQa-3wxQRSdFCoeQvhb0",
+      "coordinates": {
+        "lat": 36.6013035,
+        "lng": 30.5552753
+      },
+      "rating": 4.7,
+      "userRatingCount": 931,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13656374104075456841",
+      "recommendedPrimary": [
+        "Kılçıksız Somon Lokum",
+        "Mevsim Levrek / Çipura Tava"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Borş & Deniz Ürünleri Çorbası",
+          "note": "Günlük tezgah balıkları dışında özel tarif balık çorbası ve kemer yerlilerinin sevdiği borş çorbası da çıkarılır.",
+          "proof": "balikcifaruk.com resmi menüsü ve Menu-TR Kemer değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tezgah arkası sade iç salon ve Dörtyol Bulvarı açık masaları",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde bölge sakinleriyle hareketli",
+        "disadvantage": "Manzaralı sahil meyhanesi atmosferi yerine sade, hızlı ve doğrudan lezzet odaklı bir mahalle balıkçısıdır.",
+        "transit": "Yeni Mahalle Dörtyol Bulvarı No:18/F-G üzerinde Kemer merkez pazarı çevresinde."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Öz Mercan Balıkçılık (Balıkçı Faruk)",
+          "url": "https://maps.google.com/?cid=13656374104075456841",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yeni Mah. Dörtyol Blv. konumu doğrulandı."
+        },
+        {
+          "title": "Balıkçı Faruk Resmi Sitesi",
+          "url": "https://balikcifaruk.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Somon lokum, deniz ürünleri çorbası ve tezgah balıkları."
+        },
+        {
+          "title": "Menu-TR — Öz Mercan Balıkçılık Kemer",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Balık tazeliği ve yerli müdavim değerlendirmeleri."
+        }
+      ],
+      "pros": [
+        "Yerli halkın en sık tercih ettiği tezgah tazeliği",
+        "Sahil tesislerine kıyasla çok daha ekonomik fiyatlar"
+      ],
+      "cons": [
+        "Deniz manzarası yok ve dekorasyon oldukça sade"
+      ],
+      "uncertainties": [
+        "Tezgah kapanış saatine yakın bazı av balıkları tükenebiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kemer-caca-balik",
+      "categoryId": "balik",
+      "resolvedName": "Çaça Balık",
+      "branchName": "Merkez, Yalı Cd. No:5 Marina, 07990 Kemer/Antalya",
+      "placeId": "ChIJa4aKR563wxQRYOfAlL25pN0",
+      "coordinates": {
+        "lat": 36.6001268,
+        "lng": 30.570448499999998
+      },
+      "rating": 4.5,
+      "userRatingCount": 461,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15971094402458249056",
+      "recommendedPrimary": [
+        "Balık Şiş & Levrek Buğulama",
+        "Meze Tabağı & Fırında Helva"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırında Sıcak Helva & Keçi Sütü Dondurma",
+          "note": "Deniz mahsulü sofrasının ardından fırından yeni çıkmış sıcak helva ve keçi sütlü dondurma klasik kapanıştır.",
+          "proof": "Restoranim ve Restaurant Guru Kemer Marina kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Marina kıyı yürüyüş hattına açılan rıhtım masaları ve iç salon",
+        "crowdAndNoise": "Akşam yemeklerinde marina gezginleri ve akşam balık masalarıyla canlı",
+        "disadvantage": "Marina şeridinde konumlandığı için fiyat seviyesi sokak arası balıkçılara göre yüksektir.",
+        "transit": "Merkez Yalı Caddesi No:5 Kemer Marina girişi içindedir."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Çaça Balık Kemer Marina",
+          "url": "https://maps.google.com/?cid=15971094402458249056",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kemer Marina Yalı Cd. No:5 konumu doğrulandı."
+        },
+        {
+          "title": "Menu-TR — Çaça Balık Kemer",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Balık şiş, buğulama ve mezeler menü kaydı."
+        },
+        {
+          "title": "Restoranim — Çaça Balık Kemer Marina",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Marina kıyısında balık ve meze deneyimi incelemesi."
+        }
+      ],
+      "pros": [
+        "Doğrudan marina rıhtımı atmosferinde geleneksel Türk balıkçısı menüsü",
+        "Balık şiş ve buğulamada başarılı mutfak"
+      ],
+      "cons": [
+        "Marina konumuna bağlı yüksek hesap ortalaması"
+      ],
+      "uncertainties": [
+        "Kış döneminde açık rıhtım masaları hava durumuna göre kapalı salona alınıyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    }
+  ]
+}

@@ -1,6 +1,7 @@
+if (!process.env.GEMINI_API_KEY) throw new Error('GEMINI_API_KEY is required; no request sent.');
 import { GoogleGenAI } from '@google/genai';
 
-const ai = new GoogleGenAI({ apiKey: 'AIzaSyCVEAM5S-_4kUEp9Cetof5CEn-rSXOfRC4' });
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 async function checkModels() {
     try {

@@ -1,0 +1,2165 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "izmir-foca",
+  "displayName": "Foça, İzmir",
+  "verifiedAt": "2026-11-17T11:58:52.384Z",
+  "selectedCount": 30,
+  "rejectedControls": [
+    {
+      "id": "ctrl-foca-celep-closed",
+      "resolvedName": "Celep Restaurant",
+      "reason": "not_operational:CLOSED_TEMPORARILY"
+    },
+    {
+      "id": "ctrl-foca-dominos-chain",
+      "resolvedName": "Domino's Pizza İzmir Foça",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-foca-pasaport-yeni-foca-chain",
+      "resolvedName": "Pasaport Pizza Yeni Foça",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-foca-kahve-deryasi-merkez-chain",
+      "resolvedName": "Kahve Deryası",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-foca-kahve-deryasi-sahil-chain",
+      "resolvedName": "Kahve Deryasi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-foca-meshur-dondurmacim-maras-chain",
+      "resolvedName": "Meşhur Dondurmacım Maraş",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-foca-soguscu-baba-aliaga-out",
+      "resolvedName": "Söğüşçü Baba Aliağa tek şubemizdir.",
+      "reason": "outside_strict_neighborhood:İlçe uyuşmazlığı (beklenen: Foça)"
+    },
+    {
+      "id": "ctrl-foca-loca-aliaga-out",
+      "resolvedName": "Loça Restoran",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Foça/Foca/Eski Foça/Eski Foca/Yeni Foça/Yeni Foca/İsmetpaşa/Ismetpasa/Atatürk/Ataturk/Fevzipaşa/Fevzipasa/Küçükdeniz/Kucukdeniz/Büyükdeniz/Buyukdeniz/Karakum/Mustafa Kemal Atatürk/Mustafa Kemal Ataturk/Fevzi Çakmak/Fevzi Cakmak/Mareşal Fevzi Çakmak/Cumhuriyet/Fatih/Hacıveli/Haciveli/Kozbeyli, adres: Çakmaklı, Sahil Cd. No:2, 35800 Aliağa/İzmir)"
+    },
+    {
+      "id": "ctrl-foca-rokaa-menemen-out",
+      "resolvedName": "RoKaa Balık Evi Ayhan Usta - Balık Restoran - Balık Pişirici",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Foça/Foca/Eski Foça/Eski Foca/Yeni Foça/Yeni Foca/İsmetpaşa/Ismetpasa/Atatürk/Ataturk/Fevzipaşa/Fevzipasa/Küçükdeniz/Kucukdeniz/Büyükdeniz/Buyukdeniz/Karakum/Mustafa Kemal Atatürk/Mustafa Kemal Ataturk/Fevzi Çakmak/Fevzi Cakmak/Mareşal Fevzi Çakmak/Cumhuriyet/Fatih/Hacıveli/Haciveli/Kozbeyli, adres: Esatpaşa, Altuğ Karaburun Cd. no:, 35660 Menemen/İzmir)"
+    },
+    {
+      "id": "ctrl-foca-foca-balik-menemen-out",
+      "resolvedName": "Foça Balık",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Foça/Foca/Eski Foça/Eski Foca/Yeni Foça/Yeni Foca/İsmetpaşa/Ismetpasa/Atatürk/Ataturk/Fevzipaşa/Fevzipasa/Küçükdeniz/Kucukdeniz/Büyükdeniz/Buyukdeniz/Karakum/Mustafa Kemal Atatürk/Mustafa Kemal Ataturk/Fevzi Çakmak/Fevzi Cakmak/Mareşal Fevzi Çakmak/Cumhuriyet/Fatih/Hacıveli/Haciveli/Kozbeyli, adres: Kasımpaşa, Cengiz Topel Cd. No:7 D:B, 35660 Menemen/İzmir)"
+    },
+    {
+      "id": "ctrl-foca-saka-burger-low",
+      "resolvedName": "Saka Gurme Kumpir Burger",
+      "reason": "below_quality_threshold:★4(300)"
+    },
+    {
+      "id": "ctrl-foca-ox-coffee-low",
+      "resolvedName": "OX Coffee - Marina",
+      "reason": "below_quality_threshold:★4(961)"
+    },
+    {
+      "id": "ctrl-foca-goches-kozbeyli-low",
+      "resolvedName": "Goche’s Coffee Village",
+      "reason": "below_quality_threshold:★4.3(260)"
+    },
+    {
+      "id": "ctrl-foca-kavala-bistro-low",
+      "resolvedName": "Kavala Wine Bistro Bar",
+      "reason": "below_quality_threshold:★4.3(2258)"
+    },
+    {
+      "id": "ctrl-foca-marsilya-low",
+      "resolvedName": "Marsilya Meyhanesi",
+      "reason": "below_quality_threshold:★3.9(387)"
+    },
+    {
+      "id": "ctrl-foca-kozbeyli-sofrasi-low",
+      "resolvedName": "Kozbeyli Sofrası",
+      "reason": "below_quality_threshold:★4.2(1650)"
+    },
+    {
+      "id": "ctrl-foca-nazmi-usta-low",
+      "resolvedName": "Nazmi Usta Sakız Dondurma (Merkez)",
+      "reason": "below_quality_threshold:★3.5(2113)"
+    },
+    {
+      "id": "ctrl-foca-deniz-restorant-low",
+      "resolvedName": "Deniz Restorant",
+      "reason": "below_quality_threshold:★4.1(542)"
+    },
+    {
+      "id": "ctrl-foca-sahil-balik-low",
+      "resolvedName": "Sahil Balık & Steak Restaurant",
+      "reason": "below_quality_threshold:★3.9(640)"
+    },
+    {
+      "id": "ctrl-foca-eray-low",
+      "resolvedName": "Eray Restaurant",
+      "reason": "below_quality_threshold:★3.9(622)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "foca-mammaroma-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "Mammaroma Pizza",
+      "branchName": "Hacıveli, 430. Sk. No:1 D:A, 35683 Foça/İzmir",
+      "placeId": "ChIJU4knO73LuxQR0l5izjgtuoM",
+      "coordinates": {
+        "lat": 38.6594123,
+        "lng": 26.852396499999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 152,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9491948886640713426",
+      "recommendedPrimary": [
+        "Margherita & Diavola Pizza",
+        "Karışık İnce Hamur Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sarımsaklı Zeytin Ezmeli Fırın Ekmekleri",
+          "note": "Pizza öncesinde paylaşımlı olarak sunulan sıcak fırın eşlikçileri.",
+          "proof": "Restoranım + Dijital Menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Hacıveli sokak içi samimi masa düzeni ve sakin bahçe oturumu",
+        "crowdAndNoise": "Akşam yemeklerinde bölge sakinleri ve paket siparişleriyle istikrarlı akış",
+        "disadvantage": "Eski Foça ve Yeni Foça merkez çarşılarının dışında, sakin yerleşim içinde kalır.",
+        "transit": "Foça giriş hattından Hacıveli 430. Sokak yönüne araç veya kısa minibüs erişimi"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Dijital Menü & Mekan Kaydı",
+          "url": "https://dijital.link/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Hacıveli konumu ve ince hamur İtalyan pizzası doğrulaması"
+        },
+        {
+          "title": "Restoranım & Yandex Kayıtları",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "150+ değerlendirmede yüksek hamur ve malzeme kalitesi"
+        }
+      ],
+      "pros": [
+        "Sakin mahalle konumunda özenli ince hamur",
+        "Yüksek konuk puanı istikrarı"
+      ],
+      "cons": [
+        "Sahil çarşısına yürüyüş mesafesinin dışında kalması"
+      ],
+      "uncertainties": [
+        "Sezon dışı dönemlerde haftalık açılış saatleri değişiklik gösterebilir"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-buono-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "Buono Pizza Yeni Foça",
+      "branchName": "Mustafa Kemal Atatürk, Kaşıkcı Sk. No:5, 35687 Foça/İzmir",
+      "placeId": "ChIJffGF6qE1uhQRSL5CtY8JDbo",
+      "coordinates": {
+        "lat": 38.7412863,
+        "lng": 26.8388259
+      },
+      "rating": 4.7,
+      "userRatingCount": 821,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://buono-pizza.eatbu.com/?lang=tr",
+      "mapsUri": "https://maps.google.com/?cid=13406382178577858120",
+      "recommendedPrimary": [
+        "Buono Pizza (Füme Etli)",
+        "Enginarlı Pizza & Margherita"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Tiramisu & Espresso Servisi",
+          "note": "Pizza sonrasında kendi mutfaklarında hazırlanan klasik tiramisu tatlısı.",
+          "proof": "buono-pizza.eatbu.com + RestaurantGuru"
+        }
+      ],
+      "suitability": {
+        "seating": "Yeni Foça ara sokakta sıcak iç salon ve açık sokak masaları",
+        "crowdAndNoise": "Yaz akşamlarında sahil yürüyüşü sonrası yoğun masa sirkülasyonu",
+        "disadvantage": "Küçük ve popüler bir ara sokak dükkanı olduğu için akşamları rezervasyonsuz yer bulmak zorlaşabilir.",
+        "transit": "Yeni Foça sahil merkezinden Kaşıkçı Sokak içine 1 dakika yürüyüş"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi İşletme Menüsü (EatBu)",
+          "url": "https://buono-pizza.eatbu.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Buono, Enginarlı, Alla Turca ve Üç Peynirli pizza listesi doğrulaması"
+        },
+        {
+          "title": "Menü-TR & RestaurantGuru",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "800+ değerlendirmede ince hamur ve tiramisu kalitesi"
+        }
+      ],
+      "pros": [
+        "820+ değerlendirmede Yeni Foça’nın en istikrarlı İtalyan mutfağı",
+        "Enginarlı yöresel pizza yorumu"
+      ],
+      "cons": [
+        "Akşam yoğun saatlerde dar sokak masalarında yer bekleme ihtimali"
+      ],
+      "uncertainties": [
+        "Yaz sezonunda hafta sonları rezervasyon gerekebilir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-yeni-foca-deniz-cafe",
+      "categoryId": "pizza",
+      "resolvedName": "Yeni Foça Pizza Deniz Cafe",
+      "branchName": "Mustafa Kemal Atatürk mahallesi, Yeni, Merkez Cd. No:3, 35300 Foça/İzmir",
+      "placeId": "ChIJDW_N0qs1uhQRWKFalbtxzzs",
+      "coordinates": {
+        "lat": 38.7413871,
+        "lng": 26.838625600000004
+      },
+      "rating": 4.6,
+      "userRatingCount": 342,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://yenifocadenizcafe.com/",
+      "mapsUri": "https://maps.google.com/?cid=4309788418895421784",
+      "recommendedPrimary": [
+        "Karışık Deniz Cafe Pizza",
+        "Margherita Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Yapımı Mantı & Gözleme Seçenekleri",
+          "note": "Gündüz saatlerinde pizzaya alternatif olarak tercih edilen yerel hamur işi tabakları.",
+          "proof": "yenifocadenizcafe.com + Menü-TR"
+        }
+      ],
+      "suitability": {
+        "seating": "Yeni Foça kıyısında dalga sesine sıfır açık sahil masaları",
+        "crowdAndNoise": "Gün batımı ve yaz akşamlarında aile masalarıyla hareketli sahil kalabalığı",
+        "disadvantage": "Açık menülü bir sahil kafesi olduğu için yalnızca dar uzmanlık sunan butik pizzerialara göre daha gündelik bir tempodadır.",
+        "transit": "Yeni Foça Merkez Caddesi kordon hattı üzerinde yaya erişimi"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi İşletme Sitesi",
+          "url": "https://yenifocadenizcafe.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Denize sıfır konum ve pizza ağırlıklı menü doğrulaması"
+        },
+        {
+          "title": "Menü-TR & Dijital Menü",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yeni Foça kordon hattında taze pizza ve yüksek ziyaretçi memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Denize sıfır konum avantajı",
+        "Aileler için rahat ve ulaşılabilir sahil oturumu"
+      ],
+      "cons": [
+        "Geniş kafe menüsü sebebiyle yoğun saatlerde servis temposunun değişebilmesi"
+      ],
+      "uncertainties": [
+        "Rüzgarlı akşam saatlerinde kordon önü masalarda serinlik olabilir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-kirke-pizzeria",
+      "categoryId": "pizza",
+      "resolvedName": "Foça Kirke Otel & Pizzeria",
+      "branchName": "Fevzipaşa, 187. Sk. No:6, 35680 Foça/İzmir",
+      "placeId": "ChIJD3q_tHu1uxQRKKjnI9CJ3kU",
+      "coordinates": {
+        "lat": 38.669165299999996,
+        "lng": 26.755468
+      },
+      "rating": 4.5,
+      "userRatingCount": 1037,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.focakirke.com/",
+      "mapsUri": "https://maps.google.com/?cid=5034612960495380520",
+      "recommendedPrimary": [
+        "Foça Karası Pizza",
+        "Smyrna Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yöresel Bağ Şarabı Seçkisi",
+          "note": "Tarihi taş avluda pizzaların yanında kadeh ve şişe olarak sunulan Ege şarapları.",
+          "proof": "focakirke.com + Menü-TR"
+        }
+      ],
+      "suitability": {
+        "seating": "Restore edilmiş taş bina avlusu içinde dingin ve şık akşam masaları",
+        "crowdAndNoise": "Sakin taş avlusuyla Eski Foça akşamlarının en rağbet gören duraklarından",
+        "disadvantage": "Popüler bir butik otel-restoran avlusu olduğundan yaz akşamlarında önceden masa ayırtmak gerekir.",
+        "transit": "Eski Foça Fevzipaşa çarşısı içindeki 187. Sokak yaya alanı"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi İşletme Sitesi",
+          "url": "http://www.focakirke.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Eski Foça taş avlu pizzeriası, Smyrna ve Foça Karası pizzaları"
+        },
+        {
+          "title": "Menü-TR Değerlendirmesi",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1000+ değerlendirmede pizza ve kav kalitesi istikrarı"
+        }
+      ],
+      "pros": [
+        "Tarihi taş avlu atmosferinde yerel dokunuşlu pizzalar",
+        "1000+ konuk yorumuyla kanıtlı güven"
+      ],
+      "cons": [
+        "Rezervasyonsuz akşam saatlerinde yer bulma güçlüğü"
+      ],
+      "uncertainties": [
+        "Kış sezonunda açık hava avlu servisi kapalı bölüme alınabilir"
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-oscar-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "OSCAR Burger & Köfte",
+      "branchName": "Fevzipaşa, 191. Sk., 35680 Foça/İzmir",
+      "placeId": "ChIJz7Mz2rO1uxQR2Ih8vZ6srUY",
+      "coordinates": {
+        "lat": 38.668669,
+        "lng": 26.755111
+      },
+      "rating": 4.8,
+      "userRatingCount": 1168,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5092916551409764568",
+      "recommendedPrimary": [
+        "Double Cheeseburger",
+        "Klasik Hamburger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Izgara Köfte & Naneli Ayran",
+          "note": "Burger dışında sıklıkla tercih edilen ızgara köfte ve soğuk naneli ayran ikilisi.",
+          "proof": "İzmir Mekan Rehberi + Res-Pick"
+        }
+      ],
+      "suitability": {
+        "seating": "Eski Foça çarşı sokağı içinde sade iç ve ön kaldırım masaları",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde hızlı döngülü çarşı kalabalığı",
+        "disadvantage": "Gösterişli gurme salonundan ziyade hızlı ve samimi bir esnaf burgercisi düzenindedir.",
+        "transit": "Eski Foça Fevzipaşa çarşı merkezine 191. Sokak yaya erişimi"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "İzmir Mekan Rehberi",
+          "url": "https://www.izmirmekanrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Double burger ve ızgara köfte çarşı değerlendirmesi"
+        },
+        {
+          "title": "Res-Pick & Yandex Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1100+ konuk yorumunda yüksek puan istikrarı"
+        }
+      ],
+      "pros": [
+        "1160+ yorumla kanıtlı çarşı burgeri istikrarı",
+        "Taze köfte ve naneli ayran uyumu"
+      ],
+      "cons": [
+        "Sınırlı dar sokak masaları"
+      ],
+      "uncertainties": [
+        "Yoğun sezon öğle ve akşam saatlerinde hızlı dolabilir"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-phoka-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Phoka Burger",
+      "branchName": "Fevzipaşa, 179. Sk. No:5/A, 35680 Foça/İzmir",
+      "placeId": "ChIJ_QMCYjW1uxQRfy-_xVnKPlY",
+      "coordinates": {
+        "lat": 38.669499699999996,
+        "lng": 26.755459
+      },
+      "rating": 4.8,
+      "userRatingCount": 446,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6214627022736404351",
+      "recommendedPrimary": [
+        "Trüflü Mantarlı Burger",
+        "Klasik Cheeseburger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Baharatlı Patates & Özel Sos Sepeti",
+          "note": "El yapımı burgerlerin yanında paylaşılan taze kızarmış patates ve sos çeşitleri.",
+          "proof": "Menü-TR + Yandex yerel incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "179. Sokak taş duvarlı ve sarmaşıklı gölgeli sokak masaları",
+        "crowdAndNoise": "Akşamüstü ve gece yemeği saatlerinde Eski Foça’nın en canlı gurme burger adresi",
+        "disadvantage": "Küçük sokak içi dükkan olduğu için akşam saatlerinde masa beklemek gerekebilir.",
+        "transit": "Eski Foça Küçükdeniz arkası 179. Sokak yaya güzergahı"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menü-TR Eski Foça Kaydı",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "El yapımı günlük ekmek ve trüf mantarlı burger doğrulaması"
+        },
+        {
+          "title": "Yandex Harita Yorumları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "440+ değerlendirmede ekmek ve et lezzeti istikrarı"
+        }
+      ],
+      "pros": [
+        "Günlük kendi pişirdikleri yumuşak burger ekmekleri",
+        "Sakin sarımsaklı ve trüflü sos dengesi"
+      ],
+      "cons": [
+        "Kısıtlı ara sokak oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Yoğun yaz gecelerinde günlük taze ekmekler geç saatlere kalmadan tükenebilir"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-sail-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Sail Burger",
+      "branchName": "Mustafa Kemal Atatürk, Ali Stair Cd. No:2/22, 35680 Foça/İzmir",
+      "placeId": "ChIJBfSnXwA1uhQR6krT1XFAVZA",
+      "coordinates": {
+        "lat": 38.742336,
+        "lng": 26.840726000000004
+      },
+      "rating": 4.6,
+      "userRatingCount": 224,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10400289772144904938",
+      "recommendedPrimary": [
+        "Sail Smash Burger",
+        "Özel Marine Çıtır Tavuk Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çıtır Tavuk Tenders & Ev Yapımı Patates",
+          "note": "Smash burger dışında atıştırmalık olarak sunulan marineli tenders ve özel soslar.",
+          "proof": "oasismarina.com.tr + Menü-TR"
+        }
+      ],
+      "suitability": {
+        "seating": "Marina çevresi ferah dış mekan ve çağdaş iç salon masaları",
+        "crowdAndNoise": "Akşamüstü tekne dönüşleri ve Yeni Foça sahil gezintilerinde dinamik kalabalık",
+        "disadvantage": "Marina kompleksinin içinde yer aldığı için Eski Foça sokaklarına göre daha modern AVM/marina havasındadır.",
+        "transit": "Yeni Foça Yat Limanı Ali Şair Caddesi yaya girişi"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Oasis Marina Resmi Kaydı",
+          "url": "https://oasismarina.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yeni Foça marina konumu ve konsept doğrulaması"
+        },
+        {
+          "title": "Menü-TR & Restoranım",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sail Smash, çıtır tavuk burger ve ev yapımı soslar değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Yeni Foça marinasında taze smash ve tavuk burger seçeneği",
+        "Ferah ve temiz marina terası"
+      ],
+      "cons": [
+        "Geleneksel Eski Foça dokusunun dışında, modern marina alanında konumlanması"
+      ],
+      "uncertainties": [
+        "Kış sezonunda marina saatlerine paralel çalışma süresi kısalabilir"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-gatsby-coffee-hub",
+      "categoryId": "kahve",
+      "resolvedName": "Gatsby Coffee Hub",
+      "branchName": "Fevzipaşa, Reha Midilli Cd. No:28 /A, 35680 Foça/İzmir",
+      "placeId": "ChIJbfvaT2m1uxQRZ8YipeOj980",
+      "coordinates": {
+        "lat": 38.667777799999996,
+        "lng": 26.75496
+      },
+      "rating": 4.7,
+      "userRatingCount": 225,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.tripadvisor.com.tr/Restaurant_Review-g312735-d17585717-Reviews-Gatsby_Foca-Foca_Izmir_Province_Turkish_Aegean_Coast.html",
+      "mapsUri": "https://maps.google.com/?cid=14841511295146182247",
+      "recommendedPrimary": [
+        "Iced Latte & Espresso Bazlı Kahveler",
+        "Cold Brew"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Atıştırmalıklar & İmza Kokteyller",
+          "note": "Günün ilerleyen saatlerinde kahvenin yerini alan sosyal akşam içecekleri ve eşlikçiler.",
+          "proof": "Tripadvisor + Yandex Foça rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Reha Midilli Caddesi üzeri cadde masaları ve dönem temalı iç salon",
+        "crowdAndNoise": "Gündüz kahve molasında rahat; önemli maç ve etkinlik akşamlarında kalabalık",
+        "disadvantage": "Akşamları maç yayını veya müzik etkinliği olabildiğinden sessiz okuma kafesi düzeninden uzaklaşabilir.",
+        "transit": "Eski Foça merkez Reha Midilli Caddesi No:28/A yürüyüş yolu"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Tripadvisor Foça Kaydı",
+          "url": "https://www.tripadvisor.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Reha Midilli Caddesi konumu ve kahve değerlendirmeleri"
+        },
+        {
+          "title": "Restoranım & Maç İzlenecek Yerler Rehberi",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Nitelikli kahve çeşitleri ve 1920’ler dekorasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Eski Foça ana aksında kolay erişim ve geniş menü",
+        "220+ yorumda yüksek konuk puanı"
+      ],
+      "cons": [
+        "Sosyal etkinlik akşamlarında artan mekan gürültüsü"
+      ],
+      "uncertainties": [
+        "Sezon içi etkinlik akşamlarında masa doluluğu hızlı artabilir"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-marti-cafe",
+      "categoryId": "kahve",
+      "resolvedName": "Martı Cafe",
+      "branchName": "Fevzipaşa, 210. Sk. No:10, 35680 Foça/İzmir",
+      "placeId": "ChIJN_Jv4uK1uxQRG7hjKTrqHOI",
+      "coordinates": {
+        "lat": 38.6687803,
+        "lng": 26.755418199999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 508,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16293155087443015707",
+      "recommendedPrimary": [
+        "Filtre Kahve & Türk Kahvesi",
+        "Ice Americano"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "San Sebastian Cheesecake & Üst Kat Sanat Alanı",
+          "note": "Kahve eşliğinde sunulan tatlılar ve üst katta gezilebilen yerel resim sergileri.",
+          "proof": "Yolcu360 Foça rehberi + Yandex kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "210. Sokak taş cephe masaları ve üst kat sergi salonu içinde sakin oturum",
+        "crowdAndNoise": "Gündüzden akşama hem yerel Foçalıların hem gezginlerin düzenli uğrak noktası",
+        "disadvantage": "Sahil rüzgarının sokak içine vurduğu günlerde dış masalar serin olabilir.",
+        "transit": "Eski Foça Küçükdeniz sahilinden 210. Sokak içine 1 dakika yürüyüş"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Yolcu360 Foça Kahve Rehberi",
+          "url": "https://blog.yolcu360.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sahile yakın konum ve kafe karakteri incelemesi"
+        },
+        {
+          "title": "Yandex Harita Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "500+ yorumda kahve, San Sebastian cheesecake ve sergi atmosferi notları"
+        }
+      ],
+      "pros": [
+        "500+ konuk yorumuyla oturmuş Eski Foça kahve durağı",
+        "Sanat sergileriyle zenginleşen iç mekan"
+      ],
+      "cons": [
+        "Küçük sokak cephesi nedeniyle güneşli günlerde dış masa talebi"
+      ],
+      "uncertainties": [
+        "Üst kat sergi takvimi dönemlere göre değişmektedir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-be-coffee-design",
+      "categoryId": "kahve",
+      "resolvedName": "BE Coffee Design Shop",
+      "branchName": "Fevzipaşa, Eski, 187. Sk. No:10/C, 35680 Foça/İzmir",
+      "placeId": "ChIJZRgii_K1uxQRxgF-aWKe4_c",
+      "coordinates": {
+        "lat": 38.6692198,
+        "lng": 26.7559342
+      },
+      "rating": 5,
+      "userRatingCount": 123,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://becoffeeshop.com/",
+      "mapsUri": "https://maps.google.com/?cid=17862294692595368390",
+      "recommendedPrimary": [
+        "Single-Origin Filtre / Cold Brew",
+        "Double Espresso"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tiramisu Affogato & Limon Kabuğunda Posset",
+          "note": "Masada taze çift espresso dökülerek servis edilen affogato ve ferah yaz tatlısı.",
+          "proof": "becoffeeshop.com + QRfix dijital menü"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi taş sokakta sanat atölyesi dokulu iç masa ve sakin sokak önü oturumu",
+        "crowdAndNoise": "Sakin kahve ve seramik tasarımı arayan ziyaretçilerin favorisi; laptop yalnız ortak masada serbest",
+        "disadvantage": "Alan darlığı nedeniyle kalabalık saatlerde bilgisayarlı uzun çalışma sınırlanıyor ve masa sayısı az.",
+        "transit": "Eski Foça çarşısı 187. Sokak yaya alanı içi"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi İşletme Sitesi",
+          "url": "https://becoffeeshop.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Single-origin çekirdekler, el yapımı seramik tasarım ve tatlı menüsü"
+        },
+        {
+          "title": "QRfix & Menü-TR Kayıtları",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Cold brew, espresso demleme kalitesi ve laptop kullanım kuralı doğrulaması"
+        },
+        {
+          "title": "Müşteri Yorumları (Yandex / Yerel Seçki)",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tasarım dükkan atmosferi ve yüksek konuk puanı"
+        }
+      ],
+      "pros": [
+        "Özel seramik fincanlarda tek kökenli kahve özeni",
+        "Yüksek beğeni alan Tiramisu Affogato"
+      ],
+      "cons": [
+        "Küçük mekan hacmi ve kısıtlı bilgisayar çalışma imkanı"
+      ],
+      "uncertainties": [
+        "Düşük sezonda haftalık açılış günleri butik işletme takvimine göre değişebilir"
+      ],
+      "selectionScore": 96,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-pel-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Pel coffee & co",
+      "branchName": "Mustafa Kemal Atatürk, Çınar Sk. No:4, 35680 Foça/İzmir",
+      "placeId": "ChIJEcYcTjI1uhQRsv9TStN85f8",
+      "coordinates": {
+        "lat": 38.738643599999996,
+        "lng": 26.839128799999997
+      },
+      "rating": 5,
+      "userRatingCount": 120,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18439281496265326514",
+      "recommendedPrimary": [
+        "Iced Latte & Espresso Bazlı Kahveler",
+        "Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Firuze Tatlısı",
+          "note": "Yeni Foça ziyaretçilerinin nitelikli kahve yanında özellikle tercih ettiği hafif imza tatlı.",
+          "proof": "Menü-TR + RestaurantGuru değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Dev çınar ağaçları gölgesinde sakin sokak masaları ve sıcak iç bar",
+        "crowdAndNoise": "Deniz molası sonrası serinlemek isteyenlerin sakin uğrak noktası",
+        "disadvantage": "Yeni Foça ara sokağında yer aldığı için Eski Foça merkezinden ayrı araç veya dolmuşla geçilir.",
+        "transit": "Yeni Foça Çınar Sokak No:4 üzerinde sahil arkası yürüme mesafesi"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menü-TR Yeni Foça Seçkisi",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çınar ağacı altı konum, kahve barı ve Firuze tatlısı doğrulaması"
+        },
+        {
+          "title": "RestaurantGuru & Restoranım Kayıtları",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yeni Foça’daki en yüksek konuk memnuniyeti ve kahve puanları"
+        }
+      ],
+      "pros": [
+        "Dev çınar gölgesinde huzurlu sokak oturumu",
+        "Sadece tek şubeli Yeni Foça kahve uzmanlığı"
+      ],
+      "cons": [
+        "Küçük dükkan çevresinde hafta sonu masa doluluğu"
+      ],
+      "uncertainties": [
+        "Günlük ev yapımı tatlıların çeşidi saatlere göre değişebiliyor"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-letafet-meyhane",
+      "categoryId": "date",
+      "resolvedName": "Letafet Meyhane",
+      "branchName": "Fevzipaşa, 197. Sk. No:3, 35680 Foça/İzmir",
+      "placeId": "ChIJG1Gh37O1uxQRINRYV17QSmo",
+      "coordinates": {
+        "lat": 38.6682345,
+        "lng": 26.7554034
+      },
+      "rating": 4.7,
+      "userRatingCount": 445,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7659163219907892256",
+      "recommendedPrimary": [
+        "Soğuk Ege Meze Tabağı",
+        "Ara Sıcak Kalamar & Karides"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Ara Sıcak Tabağı",
+          "note": "Soğuk mezeler sonrası paylaşımlı servis edilen sıcak deniz ürünü başlangıçları.",
+          "proof": "Düğün.com + Yandex yerel değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "197. Sokak üzerinde nostaljik ahşap dekorlu salon ve sokak önü masalar",
+        "crowdAndNoise": "Özellikle cuma-cumartesi akşamlarında akustik müzikle dolu samimi akşam masaları",
+        "disadvantage": "Canlı müzik akşamlarında ses düzeyi yükseldiği için sessiz ortam isteyenler hafta içi akşamları seçebilir.",
+        "transit": "Eski Foça çarşısı 197. Sokak yürüyüş alanı içi"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Yandex Harita Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "440+ konuk yorumunda meze, ara sıcak ve akşam müziği memnuniyeti"
+        },
+        {
+          "title": "Düğün & Mekan Rehberleri",
+          "url": "https://www.dugun.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Nostaljik ahşap ambiyans ve butik meyhane doğrulaması"
+        }
+      ],
+      "pros": [
+        "440+ yorumda dengeli meze ve hizmet kalitesi",
+        "Sıcak akustik meyhane atmosferi"
+      ],
+      "cons": [
+        "Canlı müzik saatlerinde artan kalabalık ve rezervasyon zorunluluğu"
+      ],
+      "uncertainties": [
+        "Müzik program günleri sezona göre değişebilir"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-lokanta-biber",
+      "categoryId": "date",
+      "resolvedName": "Lokanta biber ocakbaşı ve meyhane",
+      "branchName": "Fevzipaşa, 197. Sk. No: 6, 35680 Foça/İzmir",
+      "placeId": "ChIJn4IbGRK1uxQRPA_n5aHEdYI",
+      "coordinates": {
+        "lat": 38.6680596,
+        "lng": 26.755245
+      },
+      "rating": 4.7,
+      "userRatingCount": 154,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9400635996831682364",
+      "recommendedPrimary": [
+        "Zırh Kıyması Kebap & Kuzu Şiş",
+        "Ocakbaşı Meze Seçkisi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Soğuk Meze & Ara Sıcak Başlangıçları",
+          "note": "Et servisinden önce sofraya gelen sıcak humuslar ve yöresel soğuk mezeler.",
+          "proof": "En İyi Tat + Yandex yorumları"
+        }
+      ],
+      "suitability": {
+        "seating": "197. Sokak üzerinde temiz şık meyhane düzeni ve sokak masaları",
+        "crowdAndNoise": "Balık dışında kaliteli et masası arayanların akşam buluşma durağı",
+        "disadvantage": "Deniz kenarında değil Eski Foça iç sokağında yer aldığı için manzara odaklı değildir.",
+        "transit": "Eski Foça Küçükdeniz arkasındaki 197. Sokak yaya güzergahı"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "En İyi Tat Rehberi",
+          "url": "https://eniyitat.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Zırh kıyması kebap ve kuzu şiş et kalitesi incelemesi"
+        },
+        {
+          "title": "Dijital Menü & Yandex Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Foça’da et ve meze uyumuyla yüksek puanlı ocakbaşı doğrulaması"
+        }
+      ],
+      "pros": [
+        "Kıyı kasabasında yüksek standartlı zırh kıyması ve kuzu şiş",
+        "Sıcak meyhane servisi"
+      ],
+      "cons": [
+        "Deniz manzarası olmaması ve akşam rezervasyon gerekliliği"
+      ],
+      "uncertainties": [
+        "Mevsim dışı hafta içi servis saatleri güncellenebilir"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-madam-hestia",
+      "categoryId": "date",
+      "resolvedName": "Madam Hestia Meyhanesi",
+      "branchName": "Atatürk, Aşıklar Cd. No:11, 35680 Foça/İzmir",
+      "placeId": "ChIJcXbSbTW1uxQR9hZIKKAbZVw",
+      "coordinates": {
+        "lat": 38.669972099999995,
+        "lng": 26.7536213
+      },
+      "rating": 4.6,
+      "userRatingCount": 719,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6657757998821676790",
+      "recommendedPrimary": [
+        "Pastırmalı Humus & Girit Ezme",
+        "Deniz Mahsulleri & Günlük Balık"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Açık Mutfaktan Ara Sıcaklar",
+          "note": "Soğuk mezeleri tamamlayan taze deniz ürünleri ve tereyağlı sıcak tabaklar.",
+          "proof": "İzmir Mekan Rehberi + Menü-TR"
+        }
+      ],
+      "suitability": {
+        "seating": "Foça limanını panoramik gören üst teras ve açık mutfaklı iç salon",
+        "crowdAndNoise": "Yüksek manzaralı konumuyla gün batımı ve akşam yemeklerinin en popüler adreslerinden",
+        "disadvantage": "Panoramik sahil manzarası ve canlı müzik sebebiyle yaz sezonunda günler öncesinden rezervasyon gerekebilir.",
+        "transit": "Eski Foça Küçükdeniz Aşıklar Caddesi No:11 yaya aksı"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "İzmir Mekan Rehberi",
+          "url": "https://www.izmirmekanrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Panoramik liman manzarası, açık mutfak ve meyhane konsepti"
+        },
+        {
+          "title": "Menü-TR & Yandex Değerlendirmeleri",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "700+ yorumda pastırmalı humus, Girit ezme ve manzara övgüleri"
+        }
+      ],
+      "pros": [
+        "Limanı yukarıdan gören etkileyici akşam manzarası",
+        "Açık mutfak ve zengin sıcak meze çeşitleri"
+      ],
+      "cons": [
+        "Canlı müzik saatlerinde yükselen ortam sesi ve rezervasyon zorunluluğu"
+      ],
+      "uncertainties": [
+        "Üst teras masaları yoğun günlerde hızlı dolmaktadır"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-zeytuni-meyhane",
+      "categoryId": "date",
+      "resolvedName": "Zeytuni Meyhane & Kahvaltı",
+      "branchName": "Atatürk, 194. Sk. No:2, 35680 Foça/İzmir",
+      "placeId": "ChIJLV6zeeK1uxQRPz4XKFW_2Xw",
+      "coordinates": {
+        "lat": 38.6687941,
+        "lng": 26.754489699999997
+      },
+      "rating": 4.6,
+      "userRatingCount": 300,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8996432103115013695",
+      "recommendedPrimary": [
+        "Özgün Ege Mezeleri",
+        "Sıcak Ana Yemek & Deniz Mahsulleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Veranda Sıcak Ana Yemekleri",
+          "note": "Meze başlangıçlarının yanında mutfaktan taze hazırlanan ana yemek tabakları.",
+          "proof": "İzmir Mekan Rehberi + Yaka.la"
+        }
+      ],
+      "suitability": {
+        "seating": "İç sokak içinde dingin veranda/bahçe masaları; sohbet dostu düzen",
+        "crowdAndNoise": "Yüksek müzikten uzak, baş başa sohbet arayan çiftlerin ve grupların tercihi",
+        "disadvantage": "Sahil şeridine paralel iç sokakta kaldığı için deniz kıyısı manzarası yoktur.",
+        "transit": "Eski Foça Atatürk Mahallesi 194. Sokak yaya yolu"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "İzmir Mekan Rehberi",
+          "url": "https://www.izmirmekanrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sakin veranda ortamı ve özgün meze-sofra değerlendirmesi"
+        },
+        {
+          "title": "Yaka.la & Yandex Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "300 değerlendirmede ev sıcaklığı ve samimi servis memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Sohbete imkan tanıyan gürültüsüz iç sokak verandası",
+        "Özgün ev yapımı meze dokunuşları"
+      ],
+      "cons": [
+        "Deniz manzarası olmaması"
+      ],
+      "uncertainties": [
+        "Hafta sonu bahçe masaları sınırlı olduğundan rezervasyon önerilir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-antik-ev-kozbeyli",
+      "categoryId": "kahvalti",
+      "resolvedName": "Antik Ev Kozbeyli",
+      "branchName": "Küme evleri no:191, Kozbeyli, 35680 Foça/İzmir",
+      "placeId": "ChIJk5gstfEzuhQRCmHti4xmIXM",
+      "coordinates": {
+        "lat": 38.7145483,
+        "lng": 26.894950299999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 597,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8296024742422208778",
+      "recommendedPrimary": [
+        "Kozbeyli Köy Serpme Kahvaltı",
+        "Sıcak Pişi & Menemen"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Köy Hamurları & Sahanda Yumurta",
+          "note": "Klasik serpme yanında isteğe göre eklenen menemen ve kızarmış taze pişiler.",
+          "proof": "Menü-TR + RestaurantGuru Kozbeyli listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş avlu terası ve köy tepesinden körfeze bakan açık hava masaları",
+        "crowdAndNoise": "Hafta sonu sabah ve öğle arası İzmir’den gelen kahvaltı gruplarıyla yoğun",
+        "disadvantage": "Eski Foça sahilinden yaklaşık 15 dakika araç mesafesindeki Kozbeyli köyündedir; pazar günleri kalabalıktır.",
+        "transit": "Kozbeyli Köyü Küme Evleri No:191 ulaşımı için araç veya köy minibüsü önerilir"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menü-TR Kozbeyli Seçkisi",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihi taş ev dokusu, serpme kahvaltı ve manzara incelemesi"
+        },
+        {
+          "title": "RestaurantGuru Kayıtları",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "590+ değerlendirmede yüksek kahvaltı kalitesi ve servis memnuniyeti"
+        }
+      ],
+      "pros": [
+        "590+ değerlendirmede Kozbeyli’nin en yüksek puanlı köy kahvaltısı",
+        "Körfeze bakan taş avlu"
+      ],
+      "cons": [
+        "Pazar sabahları İzmir kaynaklı yoğun kalabalık"
+      ],
+      "uncertainties": [
+        "Hafta sonu manzaralı masalar için rezervasyon gerekir"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-firuze-kahvalti",
+      "categoryId": "kahvalti",
+      "resolvedName": "Firuze Kahve-Kahvaltı",
+      "branchName": "Mustafa Kemal Atatürk, Savran Sk No:19, 35680 Foça/İzmir",
+      "placeId": "ChIJJ7CrlIg1uhQR2171cfuHsGI",
+      "coordinates": {
+        "lat": 38.738993799999996,
+        "lng": 26.838717199999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 994,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://firuzekahvalti.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=7111333325636460251",
+      "recommendedPrimary": [
+        "1835 Avlu Serpme Kahvaltı",
+        "Firuze Özel Pişi & Sıcak Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarihi Avlu Kahvesi & Ev Reçelleri",
+          "note": "Kahvaltı sofrasını izleyen türk kahvesi veya süzme filtre kahve molası.",
+          "proof": "firuzekahvalti.com.tr + Yandex kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "1835 Rum taş evi gölgeli iç avlu bahçesi ve tarihi salon masaları",
+        "crowdAndNoise": "Hafta içi sakin, hafta sonu sabahları ise Yeni Foça’nın en yerleşik buluşma noktası",
+        "disadvantage": "Tarihi taş avluda hafta sonları masalar tamamen dolabildiğinden önceden yer ayırtmak gerekir.",
+        "transit": "Yeni Foça Savran Sokak No:19 merkezi konumu"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi İşletme Sitesi",
+          "url": "https://firuzekahvalti.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "1835 Rum taş evi tarihçesi ve kahvaltı avlusu doğrulaması"
+        },
+        {
+          "title": "Yandex Harita Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "990+ konuk yorumunda tazelik ve tarihi mekan kalitesi"
+        }
+      ],
+      "pros": [
+        "1835 yılından kalan özgün taş Rum evi avlusu",
+        "990+ yorumla kanıtlanmış istikrar"
+      ],
+      "cons": [
+        "Hafta sonları yoğun talep nedeniyle rezervasyon gereksinimi"
+      ],
+      "uncertainties": [
+        "Kış döneminde açık bahçe alanının sadece bir kısmı kullanılabilir"
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-mavrova-kahvalti",
+      "categoryId": "kahvalti",
+      "resolvedName": "Mavrova Kahvaltı Salonu",
+      "branchName": "Kozbeyli, 35680 Foça/İzmir",
+      "placeId": "ChIJUYPsfmQzuhQRtPKM7e3OaqQ",
+      "coordinates": {
+        "lat": 38.712326,
+        "lng": 26.897211799999997
+      },
+      "rating": 4.5,
+      "userRatingCount": 692,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11847509291039519412",
+      "recommendedPrimary": [
+        "Kozbeyli Köy Serpme Kahvaltı",
+        "Sıcak Ev Yapımı Pişi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Reçel & Otlu Gözleme",
+          "note": "Mevsimine göre köy bahçesinden toplanan otlarla açılan sıcak gözleme eşlikçisi.",
+          "proof": "Yolcu360 Foça rehberi + Yandex kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaçlı köy avlusunda doğal taş zemin üzerinde açık masalar",
+        "crowdAndNoise": "Hafta içi huzurlu; hafta sonları aile masalarıyla hareketli",
+        "disadvantage": "Sabit dijital menü yerine günlük ev düzeninde serpme akış sunulur; köy tepesine araçla çıkılır.",
+        "transit": "Kozbeyli köy merkezine bağlanan taş avlu yolu üzeri"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Yolcu360 Foça Rehberi",
+          "url": "https://blog.yolcu360.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kozbeyli kahvaltı geleneği ve serpme içeriği incelemesi"
+        },
+        {
+          "title": "Yandex Harita Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "690+ değerlendirmede ev yapımı reçel ve pişi memnuniyeti"
+        }
+      ],
+      "pros": [
+        "690+ konuk yorumunda samimi köy kahvaltısı istikrarı",
+        "Gölgeli doğal köy bahçesi"
+      ],
+      "cons": [
+        "Merkez Foça dışında yer alması ve hafta sonu ulaşım gereksinimi"
+      ],
+      "uncertainties": [
+        "Hafta içi kalabalık gruplar için önceden haber vermek yararlı olur"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-agacli-ev",
+      "categoryId": "kahvalti",
+      "resolvedName": "Ağaçlı Ev",
+      "branchName": "Kozbeyli, Küme Evler, 35680 Foça/İzmir",
+      "placeId": "ChIJDYITI30zuhQRRHtjxBIFM8k",
+      "coordinates": {
+        "lat": 38.7166837,
+        "lng": 26.893417099999997
+      },
+      "rating": 4.4,
+      "userRatingCount": 1046,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14497937203598162756",
+      "recommendedPrimary": [
+        "Tulum Eritmeli Serpme Kahvaltı",
+        "Babaanne Usulü Yumurtalı Ekmek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Otlu Köy Pidesi & Ev Reçelleri",
+          "note": "Serpme kahvaltı ortasına fırından sıcak gelen yöresel otlu pide ve reçel ikramları.",
+          "proof": "Kahvaltıda Ne Var + Restoranım"
+        }
+      ],
+      "suitability": {
+        "seating": "Çam ve zeytin ağaçları gölgesinde geniş aile sofralarına elverişli köy bahçesi",
+        "crowdAndNoise": "Kozbeyli’nin en kalabalık ve tanınan kahvaltı bahçelerinden biri",
+        "disadvantage": "Yüksek popülerlik sebebiyle pazar sabahları gürültü düzeyi ve servis bekleme süresi artabilir.",
+        "transit": "Kozbeyli Köyü Küme Evler hattında araçla kolay park ve erişim"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Kahvaltıda Ne Var Seçkisi",
+          "url": "https://kahvaltidanevar.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tulum eritme, yumurtalı ekmek ve serpme kahvaltı menü incelemesi"
+        },
+        {
+          "title": "Restoranım & İzmir Mekan Rehberi",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1040+ konuk yorumunda aile işletmesi ve bahçe değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "1040+ konuk yorumuyla köklü Kozbeyli kahvaltı standardı",
+        "Babaanne usulü yumurtalı ekmek ve tulum eritme farkı"
+      ],
+      "cons": [
+        "Pazar sabahları yüksek kalabalık yoğunluğu"
+      ],
+      "uncertainties": [
+        "Yağışlı kış günlerinde açık bahçe kullanımı sınırlanabilir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-gustina",
+      "categoryId": "denemelisin",
+      "resolvedName": "GUSTİNA",
+      "branchName": "Fevzipaşa, 209. Sk. 2/A, 35680 Foça/İzmir",
+      "placeId": "ChIJNaNLTX61uxQRMsOUND3a_FI",
+      "coordinates": {
+        "lat": 38.667839099999995,
+        "lng": 26.755058299999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 191,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5979894361651200818",
+      "recommendedPrimary": [
+        "Taze El Yapımı Pesto / Mantarlı Makarna",
+        "Ev Yapımı Kedi Dili Tiramisu"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kedi Dili Bisküvili Ev Yapımı Tiramisu",
+          "note": "Makarna servisi kadar talep gören, kedi dili bisküvileri dahi dükkanda yapılan imza tatlı.",
+          "proof": "Foça Guide + Wanderboat incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "209. Sokak taş kaldırımında az sayıda küçük masa; samimi sokak üstü düzen",
+        "crowdAndNoise": "Özellikle akşam yemeklerinde az sayıda masa olduğu için sırayla doluyor",
+        "disadvantage": "Küçük sokak dükkanı formatı nedeniyle az sayıda masa vardır ve rezervasyonsuz yoğunlukta beklemek gerekir.",
+        "transit": "Eski Foça çarşısı 209. Sokak No:2/A yürüyüş aksı"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Foça Guide İncelemesi",
+          "url": "https://focaguide.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taze makarna ve ev yapımı tiramisu gastronomi önerisi"
+        },
+        {
+          "title": "Wanderboat & Menü-TR",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "209. Sokak tek şube makarna dükkanı ve yüksek konuk puanı doğrulaması"
+        }
+      ],
+      "pros": [
+        "Günlük taze açılan soslu makarnalar",
+        "Kedi diline kadar ev yapımı nadir tiramisu"
+      ],
+      "cons": [
+        "Küçük sokak kapasitesi nedeniyle kısa bekleme ihtimali"
+      ],
+      "uncertainties": [
+        "Günlük taze hamur ve tiramisu stoğu akşam geç saatlerde tükenebilir"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-kavurcan",
+      "categoryId": "denemelisin",
+      "resolvedName": "KAVURCAN KIYI KAVURMACISI",
+      "branchName": "Eski, Fevzipaşa, 189. Sk. No:1, 35680 Foça/İzmir",
+      "placeId": "ChIJ8_KbqaO1uxQRUKXWQ5jLT-0",
+      "coordinates": {
+        "lat": 38.6689259,
+        "lng": 26.755545599999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 169,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/kavurcan_kiyikavurmacisi/profilecard/?igsh=ZXB4d2I0OWU0cWJ2",
+      "mapsUri": "https://maps.google.com/?cid=17100110164982670672",
+      "recommendedPrimary": [
+        "Özel Kıyı Dana Kavurma",
+        "Eşlikçi Mezeli Kavurma Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Magnolya & Günlük Mezeler",
+          "note": "Kavurma tabağına eşlik eden soğuk mezeler ve yemek sonrası taze magnolya tatlısı.",
+          "proof": "Menü-TR + Yandex yerel kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Eski Foça 189. Sokak içinde sade, samimi sokak ve salon oturumu",
+        "crowdAndNoise": "Balık dışındaki et alternatifini tercih eden müdavimlerle öğleden akşama dengeli tempo",
+        "disadvantage": "Büyük restoran konseptinden ziyade sade mahalle lokantası ölçeğinde hizmet verir.",
+        "transit": "Eski Foça sahiline paralel 189. Sokak No:1 yaya erişimi"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menü-TR Foça Kaydı",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kıyı kavurma çeşitleri ve magnolya menü doğrulaması"
+        },
+        {
+          "title": "Wanderboat & Yandex Harita",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "169 konuk değerlendirmesinde yüksek puanlı kavurma ve meze kalitesi"
+        }
+      ],
+      "pros": [
+        "Foça’da lokum kıvamında kavurma uzmanı tek şube adres",
+        "Sakin sokak ortamı"
+      ],
+      "cons": [
+        "Balık menüsü yerine et/kavurma odağı taşıması"
+      ],
+      "uncertainties": [
+        "Kavurma stoğu günün ilerleyen saatlerinde azalabilir"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-lumin",
+      "categoryId": "denemelisin",
+      "resolvedName": "Lumin Foça",
+      "branchName": "Atatürk, 194. Sk. No:4, 35680 Foça/İzmir",
+      "placeId": "ChIJv7a74-K1uxQR-3KqrlFuaQM",
+      "coordinates": {
+        "lat": 38.6684755,
+        "lng": 26.7545412
+      },
+      "rating": 4.9,
+      "userRatingCount": 634,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=245848951770215163",
+      "recommendedPrimary": [
+        "Foça Rüyası & Biber Borani",
+        "Pastırmalı Humus & Girit Ezme"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Izgara Deniz & Kara Ana Yemekleri",
+          "note": "Zengin soğuk meze başlangıçlarını takip eden günlük sıcak tabaklar.",
+          "proof": "Yemeksepeti menü listesi + Yandex yorumları"
+        }
+      ],
+      "suitability": {
+        "seating": "Eski Foça 194. Sokak içinde keyifli taş sokak ve veranda masaları",
+        "crowdAndNoise": "Akşam yemeklerinde eski sokak atmosferinde en çok tercih edilen adreslerden",
+        "disadvantage": "Akşam saatlerinde masalar erken dolduğundan özellikle yaz aylarında rezervasyon şarttır.",
+        "transit": "Eski Foça Atatürk Mahallesi 194. Sokak No:4 yaya aksı"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Yemeksepeti Resmi Menü",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Foça Rüyası, biber borani ve mütebbel meze listesi doğrulaması"
+        },
+        {
+          "title": "Yandex & Şehir Pusulası Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "630+ konuk yorumunda yüksek lezzet ve servis istikrarı"
+        }
+      ],
+      "pros": [
+        "630+ yorumda 4.9 ortalamasına ulaşan meze kalitesi",
+        "Foça Rüyası gibi özgün reçeteler"
+      ],
+      "cons": [
+        "Popülerlik sebebiyle hafta sonları rezervasyonsuz masa bulma güçlüğü"
+      ],
+      "uncertainties": [
+        "Sezon içi meze çeşitleri günlük hazırlığa göre değişebilir"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-elif-ev-yemekleri",
+      "categoryId": "denemelisin",
+      "resolvedName": "Elif ev yemekleri kahvaltı , ızgara catering ve restoran yenifoça lokantası",
+      "branchName": "Fevzi Çakmak, Merkez Cd. No:52, 35687 Foça/İzmir",
+      "placeId": "ChIJFcG2-ak1uhQR1XUM2mLqbt0",
+      "coordinates": {
+        "lat": 38.7396702,
+        "lng": 26.837798799999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 191,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15955948240106190293",
+      "recommendedPrimary": [
+        "Günlük Zeytinyağlı & Tencere Yemeği Tabağı",
+        "Izgara Çeşitleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günün Çorbası & Ev Tatlıları",
+          "note": "Öğle tencere yemeklerinin başlangıcı olan ev çorbası ve geleneksel tatlı sunumları.",
+          "proof": "FirmaKonum + yerel harita kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Merkez Caddesi üzerinde temiz, aydınlık ve ailece oturuma uygun esnaf lokantası salonu",
+        "crowdAndNoise": "Öğle ve erken akşam saatlerinde yerel halk ve yazlıkçıların düzenli uğrağı",
+        "disadvantage": "Esnaf lokantası temposunda gündüz-akşam servisi verdiği için geç gece meyhane düzeni sunmaz.",
+        "transit": "Yeni Foça Fevzi Çakmak Merkez Caddesi No:52 yaya yolu"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "FirmaKonum Yeni Foça Kaydı",
+          "url": "https://www.firmakonum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yeni Foça tek şube Merkez Caddesi No:52 konumu doğrulaması"
+        },
+        {
+          "title": "Yandex Harita Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "190+ değerlendirmede ev yemekleri hijyeni ve lezzet memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Yeni Foça merkezde güvenilir günlük ev yemeği durağı",
+        "Tek şubeli samimi aile mutfağı"
+      ],
+      "cons": [
+        "Geç gece servisi sunmaması"
+      ],
+      "uncertainties": [
+        "Günlük tencere menüsü öğleden sonra çeşide göre tükenebilir"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-husnu-usta-dondurma",
+      "categoryId": "denemelisin",
+      "resolvedName": "Dondurmacı Hüsnü Usta",
+      "branchName": "Atatürk, Büyük Deniz Sahil Cd. No:2, 35680 Foça/İzmir",
+      "placeId": "ChIJaZ-qa7S1uxQRZJjDc8Tfk3U",
+      "coordinates": {
+        "lat": 38.6665846,
+        "lng": 26.7538086
+      },
+      "rating": 4.6,
+      "userRatingCount": 360,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8472361358862817380",
+      "recommendedPrimary": [
+        "Sakızlı & Karadutlu Dondurma",
+        "Bal-Bademli Dondurma"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bal-Bademli & Mevsim Meyveli Kase Seçkisi",
+          "note": "Sakızlı klasik dışında yoğun karadut ve bal-badem aromalı günlük taze dondurmalar.",
+          "proof": "Menü-TR + Yandex yerel değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Büyükdeniz sahil tezgahı önünde hızlı al-götür ve ayakta dondurma servisi (oturma alanı sınırlı)",
+        "crowdAndNoise": "Yaz akşamları Büyükdeniz sahil yürüyüşünde tezgah önünde canlı sıra oluşuyor",
+        "disadvantage": "Sahil büfesi tarzında al-götür odaklı olduğu için geniş masa oturumu sunmaz.",
+        "transit": "Eski Foça Büyükdeniz Sahil Caddesi No:2 deniz kenarı yürüyüş yolu"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menü-TR Eski Foça Kaydı",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Doğal süt, sakızlı/karadutlu/bal-bademli dondurma ve cömert porsiyon doğrulaması"
+        },
+        {
+          "title": "Yandex Harita Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "360 konuk değerlendirmesinde sahil şeridinin yüksek puanlı dondurma tercihi"
+        }
+      ],
+      "pros": [
+        "Yüksek memnuniyetli doğal sakız ve karadut dondurması",
+        "Büyükdeniz yürüyüş aksında doğrudan konum"
+      ],
+      "cons": [
+        "Geniş oturma alanı olmaksızın al-götür ağırlıklı hizmet"
+      ],
+      "uncertainties": [
+        "Kış aylarında günlük dondurma çeşit sayısı azaltılabilir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-tarihi-simit-firini",
+      "categoryId": "denemelisin",
+      "resolvedName": "Tarihi Foça Simit Fırını",
+      "branchName": "Fevzipaşa, 210. Sk. No:8, 35680 Foça/İzmir",
+      "placeId": "ChIJqfsx2LO1uxQRQHaMTSEsIGs",
+      "coordinates": {
+        "lat": 38.6687124,
+        "lng": 26.7555103
+      },
+      "rating": 4.5,
+      "userRatingCount": 991,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.focasimit.com/",
+      "mapsUri": "https://maps.google.com/?cid=7719218282859624000",
+      "recommendedPrimary": [
+        "Taze İzmir Boyozu & Çıtır Simit",
+        "Sıcak Kumru Ekmeği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Geleneksel Fırın Tatlıları & Açmalar",
+          "note": "Sabah kahvaltılık boyoz ve simidin ardından gün boyu çıkan poğaça ve tatlı fırın ürünleri.",
+          "proof": "focasimit.com + Menü-TR"
+        }
+      ],
+      "suitability": {
+        "seating": "210. Sokak üzerinde ağırlıklı al-götür fırın tezgahı ve kapı önü birkaç küçük tabure-masa",
+        "crowdAndNoise": "Sabah erken saatlerden öğleye kadar sıcak boyoz ve simit için kesintisiz sıra",
+        "disadvantage": "Geleneksel semt fırını olduğu için geniş kahvaltı salonu düzeninden ziyade al-götür temposundadır.",
+        "transit": "Eski Foça Fevzipaşa 210. Sokak No:8 çarşı merkezi"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi İşletme Sitesi",
+          "url": "http://www.focasimit.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Taş fırın simit, boyoz ve unlu mamul üretimi doğrulaması"
+        },
+        {
+          "title": "Menü-TR & Dijital Menü",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "990+ değerlendirmede sabah tazeliği ve boyoz memnuniyeti"
+        }
+      ],
+      "pros": [
+        "990+ konuk yorumuyla kanıtlı sabah simit & boyoz geleneği",
+        "Merkez çarşı içinde hızlı erişim"
+      ],
+      "cons": [
+        "Uzun süreli oturum yerine al-götür tezgah ağırlıklı olması"
+      ],
+      "uncertainties": [
+        "Sıcak boyoz partileri sabah saatlerinde hızlı tükenebilir"
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-sakir-dibek-kahvesi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Foça Kozbeyli Şakir'in Dibek Kahvesi",
+      "branchName": "Kozbeyli, Köy Meydanı No:136, 35680 Foça/İzmir",
+      "placeId": "ChIJ0ZOctq7YuxQR_2-QeS6Xwwo",
+      "coordinates": {
+        "lat": 38.7155202,
+        "lng": 26.8931337
+      },
+      "rating": 4.3,
+      "userRatingCount": 2562,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=775629786701656063",
+      "recommendedPrimary": [
+        "Taş Dibekte Dövülmüş Türk Kahvesi",
+        "Sütlü Dibek Kahvesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Geleneksel Lokum & Su İkramlı Kahve Tepsisi",
+          "note": "Taş dibekten yeni alınan taze dövülmüş kahve yanında sunulan klasik köy kahvesi ikramı.",
+          "proof": "Harbiyiyorum + Hürriyet Seyahat + Kısık Ateş Akademi"
+        }
+      ],
+      "suitability": {
+        "seating": "Kozbeyli Köy Meydanı’nda asırlık ağaçlar altında sade ahşap köy kahvesi tabure ve masaları",
+        "crowdAndNoise": "Hafta sonları Kozbeyli ziyaretçilerinin en yoğun meydan durağı",
+        "disadvantage": "Hafta sonu köy meydanı kalabalığında oturum alanı sıkışık olabiliyor ve geleneksel el yapımı servis temposu hızlı kafe düzeninden farklıdır.",
+        "transit": "Kozbeyli Köy Meydanı No:136 — Eski veya Yeni Foça üzerinden araç/köy dolmuşu erişimi"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Hürriyet Seyahat Köşesi",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kozbeyli’nin tarihi taş dibek kahvesi ve köy meydanı simgesi"
+        },
+        {
+          "title": "Harbiyiyorum & Kısık Ateş Akademi Dosyası",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1935 kuruluşu, 1990’dan beri Şakir Yalavaç işletmesi ve Foça taşı dibek tokmak geleneği"
+        },
+        {
+          "title": "Ege Telgraf & Yemek.com Seçkisi",
+          "url": "https://www.egetelgraf.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "2500+ değerlendirmede korunan tarihi taş dibek kahvesi ritüeli"
+        }
+      ],
+      "pros": [
+        "1935’ten süregelen gerçek taş dibek ve tokmak kahve geleneği",
+        "Kozbeyli köy meydanında yaşayan kültürel miras"
+      ],
+      "cons": [
+        "Hafta sonu kalabalığında sipariş temposunun yavaşlaması ve sıkışık masa düzeni"
+      ],
+      "uncertainties": [
+        "Kalabalık tatil günlerinde fincan servis bekleme süresi uzayabilir"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-limni-balikcisi",
+      "categoryId": "balik",
+      "resolvedName": "LİMNİ BALIKÇISI",
+      "branchName": "Atatürk, Aşıklar Cd. no:3, 35680 Foça/İzmir",
+      "placeId": "ChIJifubOyu1uxQR6WIubsH15bY",
+      "coordinates": {
+        "lat": 38.6691864,
+        "lng": 26.754272000000004
+      },
+      "rating": 4.6,
+      "userRatingCount": 1709,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13179210095695651561",
+      "recommendedPrimary": [
+        "Balıklı Çıtır Limni Böreği",
+        "Kalamar Tava & Mevsim Sardalyası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Güveçte Karides & Midye Tava",
+          "note": "Limni Böreği ve balık öncesinde paylaşılan çıtır ara sıcak deniz ürünleri.",
+          "proof": "Menü-TR + Restoranım Foça listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Aşıklar Caddesi Küçükdeniz rıhtımına bakan sahil masaları ve iç salon",
+        "crowdAndNoise": "Gün batımından itibaren sahilin en hareketli ve masaları hızlı dolan noktası",
+        "disadvantage": "Yüksek popülerlik nedeniyle özellikle akşam saatlerinde kalabalık yoğunluğu ve masa rezervasyonu gerekliliği bulunur.",
+        "transit": "Eski Foça Küçükdeniz Aşıklar Caddesi No:3 yaya yürüyüş hattı"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menü-TR & Foça Gündem Haber",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Limni Böreği spesiyali ve Küçükdeniz sahil balıkçısı incelemesi"
+        },
+        {
+          "title": "Restoranım & Yandex Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1700+ değerlendirmede yüksek deniz ürünü memnuniyeti"
+        }
+      ],
+      "pros": [
+        "1700+ yorumda istikrarlı taze balık ve ara sıcak kalitesi",
+        "İmza deniz mahsullü Limni Böreği"
+      ],
+      "cons": [
+        "Akşam saatlerinde yoğun sahil gürültüsü ve rezervasyonsuz yer bulma zorluğu"
+      ],
+      "uncertainties": [
+        "Hafta sonları rıhtım önü masalar erken dolmaktadır"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-aheste-volkan",
+      "categoryId": "balik",
+      "resolvedName": "AHESTE volkan'ın yeri",
+      "branchName": "Fevzipaşa, 197. Sk. no:1 BB:14, 35680 Foça/İzmir",
+      "placeId": "ChIJwy-IYcC1uxQR3ICzBdDUUMg",
+      "coordinates": {
+        "lat": 38.668385199999996,
+        "lng": 26.7551211
+      },
+      "rating": 4.7,
+      "userRatingCount": 872,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/ahestevolkaninyeri?igsh=Zzhoc2ZnNzBxc2E0",
+      "mapsUri": "https://maps.google.com/?cid=14434270795636375772",
+      "recommendedPrimary": [
+        "Ev Yapımı Lakerda & Deniz Börülcesi",
+        "Günün Taze Balığı & Kalamar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Girit Esintili Meze Seçkisi",
+          "note": "Ana balık öncesinde taze deniz börülcesi ve özgün Girit otlarıyla hazırlanan başlangıçlar.",
+          "proof": "Instagram + Yandex Foça rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "197. Sokak içinde denizle iç içe samimi akşam masaları",
+        "crowdAndNoise": "Kalabalık kıyı aksı yerine lezzet odaklı balık masası arayanların gözdesi",
+        "disadvantage": "Sınırlı masa düzeni nedeniyle sezon akşamlarında önceden yer ayırtmak gerekir.",
+        "transit": "Eski Foça Fevzipaşa 197. Sokak No:1 yaya alanı"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "İşletme Paylaşımları (Instagram)",
+          "url": "https://www.instagram.com/ahestevolkaninyeri",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Girit mutfağı esintili mezeler ve günlük taze balık servisi"
+        },
+        {
+          "title": "Yandex Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "870+ konuk değerlendirmesinde lakerda, börülce ve yüksek ★4.7 puanı"
+        }
+      ],
+      "pros": [
+        "870+ değerlendirmede ★4.7 ile yüksek kalite tutarlılığı",
+        "Girit mutfağı ve ev yapımı lakerda özeni"
+      ],
+      "cons": [
+        "Sahil rıhtımından biraz içeride sınırlı masa sayısı"
+      ],
+      "uncertainties": [
+        "Lakerda ve özel günlük balıkların mevcudiyeti mevsime göre değişir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-ali-baba-balik",
+      "categoryId": "balik",
+      "resolvedName": "Foçalı Ali Baba",
+      "branchName": "Atatürk, Büyük Deniz Sahil Cd. 2 B, 35680 Foça/İzmir",
+      "placeId": "ChIJEehRGAC1uxQRNFW3mEB6S34",
+      "coordinates": {
+        "lat": 38.666654,
+        "lng": 26.753871699999998
+      },
+      "rating": 4.5,
+      "userRatingCount": 783,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.focalialibaba.com/",
+      "mapsUri": "https://maps.google.com/?cid=9100501889890866484",
+      "recommendedPrimary": [
+        "Sıcak Ekmek Arası Sardalya & Mezgit",
+        "Taze Gümüş & Porsiyon Balık"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Açık Büfe Salata & Taze Fırın Ekmeği",
+          "note": "Porsiyon veya ekmek arası balıkların yanında taze sunulan kendi üretimleri sıcak ekmek ve salata.",
+          "proof": "Menü-TR + Restoranım"
+        }
+      ],
+      "suitability": {
+        "seating": "Büyükdeniz Sahil Caddesi 2/B üzerinde denize karşı sade açık ve kapalı masalar",
+        "crowdAndNoise": "Günün her saatinde hızlı, pratik ve hesaplı balık yemek isteyenlerin canlı durağı",
+        "disadvantage": "Geleneksel meyhane masası yerine hızlı balık-ekmek ve sade balık lokantası konseptindedir.",
+        "transit": "Eski Foça Büyükdeniz Sahil Caddesi 2/B sahil yürüyüş güzergahı"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Resmi İşletme Sitesi",
+          "url": "http://www.focalialibaba.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Fırından sıcak ekmek, tavadan taze balık konsepti doğrulaması"
+        },
+        {
+          "title": "Menü-TR & Tripadvisor Kayıtları",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "780+ konuk yorumunda fiyat/performans, sardalya ve mezgit kalitesi"
+        }
+      ],
+      "pros": [
+        "780+ yorumda ulaşılabilir fiyatlarla taze balık-ekmek standardı",
+        "Kendi ekmeğini üreten sıcak fırın farkı"
+      ],
+      "cons": [
+        "Uzun akşam rakı-meze meyhanesi formatı sunmaması"
+      ],
+      "uncertainties": [
+        "Hafta sonu öğle ve akşam saatlerinde tezgah kuyruğu oluşabilir"
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foca-fokai-balik",
+      "categoryId": "balik",
+      "resolvedName": "Fokai Balık Restoran",
+      "branchName": "Atatürk, 121. Sk., 35680 Foça/İzmir",
+      "placeId": "ChIJwdllZLO1uxQR5fCD_Yio9m8",
+      "coordinates": {
+        "lat": 38.668197,
+        "lng": 26.751632999999998
+      },
+      "rating": 4.4,
+      "userRatingCount": 1930,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.instagram.com/fokaibalikrestaurant",
+      "mapsUri": "https://maps.google.com/?cid=8067821088803123429",
+      "recommendedPrimary": [
+        "Kalamar Şiş & Kalamar Tava",
+        "Tereyağlı Karides & Günlük Deniz Balığı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ahtapot Salatası & Deniz Börülcesi",
+          "note": "1984’ten beri değişmeyen klasik meze dolabından deniz börülcesi ve taze Ege otları.",
+          "proof": "fokaibalikrestaurant.com + Mesprestiges Foça rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçükdeniz Atatürk Mahallesi 121. Sokak kıyısında ferah sahil masaları ve iç salon",
+        "crowdAndNoise": "Hem köklü müdavimleri hem gezginleriyle yılın her dönemi güçlü akşam sirkülasyonu",
+        "disadvantage": "Köklü liman restoranı olduğu için yoğun yaz akşamlarında rezervasyon gerektirir.",
+        "transit": "Eski Foça Küçükdeniz batı sahili Atatürk 121. Sokak yürüyüş yolu"
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Mesprestiges Eski Foça Rehberi",
+          "url": "https://mesprestiges.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1984 kuruluşu, kalamar şiş, deniz börülcesi ve liman kıyısı incelemesi"
+        },
+        {
+          "title": "Yemek.com & İşletme Kayıtları",
+          "url": "https://yemek.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1900+ değerlendirmede Eski Foça’nın en köklü balıkçılarından biri olması"
+        }
+      ],
+      "pros": [
+        "1984’ten beri süregelen 40 yıllık Foça balıkçı mirası",
+        "1930+ konuk yorumunda yüksek güven"
+      ],
+      "cons": [
+        "Popüler liman konumunda akşamları rezervasyonsuz masa bulmanın zorluğu"
+      ],
+      "uncertainties": [
+        "Sezon balık tezgahı günlük av koşullarına göre farklılık gösterir"
+      ],
+      "selectionScore": 76,
+      "selectedForSnapshot": true
+    }
+  ]
+}

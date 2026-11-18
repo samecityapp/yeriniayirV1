@@ -1,0 +1,2441 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "mugla-fethiye-calis",
+  "displayName": "Çalış, Fethiye, Muğla",
+  "verifiedAt": "2026-11-16T11:43:15.352Z",
+  "selectedCount": 28,
+  "rejectedControls": [
+    {
+      "id": "ctrl-gua-coffee-calis",
+      "resolvedName": "Gua Coffee Company Fethiye",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-federico-calis",
+      "resolvedName": "Federico Fethiye Çalış",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-understone-calis",
+      "resolvedName": "Understone Fethiye",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-mado-calis",
+      "resolvedName": "MADO Fethiye Çalış Plaj",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-panama-coffee-calis",
+      "resolvedName": "Panama Coffee Fethiye",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-burger-home-calis",
+      "resolvedName": "Burger Home Fethiye",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-pizza-calisto-calis",
+      "resolvedName": "Pizza Calisto",
+      "reason": "below_quality_threshold:★4.2(1244)"
+    },
+    {
+      "id": "ctrl-allora-pizza-calis",
+      "resolvedName": "Allora pizza",
+      "reason": "below_quality_threshold:★5(29)"
+    },
+    {
+      "id": "ctrl-dodo-coffee-calis",
+      "resolvedName": "Dodo coffee",
+      "reason": "below_quality_threshold:★4.8(27)"
+    },
+    {
+      "id": "ctrl-babafirin-calis",
+      "resolvedName": "Babafırın",
+      "reason": "below_quality_threshold:★4.3(1419)"
+    },
+    {
+      "id": "ctrl-kerimoglu-yoruk-calis",
+      "resolvedName": "Kerimoğlu Yörük Çadırları",
+      "reason": "below_quality_threshold:★4.1(1389)"
+    },
+    {
+      "id": "ctrl-sora-sushi-calis",
+      "resolvedName": "SORA Sushi & Lounge",
+      "reason": "below_quality_threshold:★4.1(343)"
+    },
+    {
+      "id": "ctrl-ada-balik-calis",
+      "resolvedName": "Ada Balık Fethiye",
+      "reason": "below_quality_threshold:★4.2(186)"
+    },
+    {
+      "id": "ctrl-dogan-balik-calis",
+      "resolvedName": "DOĞAN BALIK MARKET",
+      "reason": "below_quality_threshold:★4.3(91)"
+    },
+    {
+      "id": "ctrl-calis-indian-calis",
+      "resolvedName": "Çalış Beach Indian Restoran",
+      "reason": "below_quality_threshold:★4.1(292)"
+    },
+    {
+      "id": "ctrl-sushi-station-calis",
+      "resolvedName": "Sushi Station",
+      "reason": "outside_strict_neighborhood:İlçe uyuşmazlığı (beklenen: Fethiye)"
+    },
+    {
+      "id": "ctrl-sundia-hotel-calis",
+      "resolvedName": "Sundia Exclusive by Liberty Fethiye",
+      "reason": "invalid_place_type:hotel"
+    },
+    {
+      "id": "ctrl-papelli-akarca",
+      "resolvedName": "Papelli Fethiye",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Foça/Foca/Çalış/Calis/Barış Manço/Baris Manco, adres: Akarca, Yerguzlar Cd. No:13/B, 48300 Fethiye/Muğla)"
+    },
+    {
+      "id": "ctrl-terra-pizza-akarca",
+      "resolvedName": "Terra Pizza - Fethiye Çalış",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-pasaport-pizza-akarca",
+      "resolvedName": "Pasaport Pizza Çalış",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-burger-king-akarca",
+      "resolvedName": "Burger King - Kipa Avm",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-zentara-ciftlik",
+      "resolvedName": "zentara kahvaltı beach",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Foça/Foca/Çalış/Calis/Barış Manço/Baris Manco, adres: Çiftlik, 101sokak no:19, 48300 Fethiye/Muğla)"
+    },
+    {
+      "id": "ctrl-rodos-balikcisi-yeni",
+      "resolvedName": "Rodos Balıkçısı",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Foça/Foca/Çalış/Calis/Barış Manço/Baris Manco, adres: Yeni Mah. Adnan Menderes Bulvarı, Futbol Sahası, Yeni, Karşısı 346/C, 48300 Fethiye/Muğla)"
+    },
+    {
+      "id": "ctrl-ada-sovalye",
+      "resolvedName": "Ada Restaurant Sovalye Island",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Foça/Foca/Çalış/Calis/Barış Manço/Baris Manco, adres: Fethiye Adası - Şövalye Adası No: 61, Sovalye Island, Eskimeğri Adası, 48300 Fethiye/Muğla)"
+    },
+    {
+      "id": "ctrl-beyoglu-pide-karagedik",
+      "resolvedName": "Beyoğlu Pide",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Foça/Foca/Çalış/Calis/Barış Manço/Baris Manco, adres: Karagedik mahallesi 1483 sokak no:1, Karagedik, 48300 Fethiye/Muğla)"
+    },
+    {
+      "id": "ctrl-cervos-akarca",
+      "resolvedName": "Cervos Coffee Roasters Akarca",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Foça/Foca/Çalış/Calis/Barış Manço/Baris Manco, adres: Akarca, Yerguzlar Cd. no:25/3, 48300 Fethiye/Muğla)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "mojo-italian-gusto",
+      "categoryId": "pizza",
+      "resolvedName": "Mojo Italian Gusto",
+      "branchName": "Foça, Barış Manço Blv. No:55/B, 48300 Fethiye/Muğla",
+      "placeId": "ChIJjcwjqPZDwBQRruVBaajXsvA",
+      "coordinates": {
+        "lat": 36.6622308,
+        "lng": 29.1212049
+      },
+      "rating": 4.8,
+      "userRatingCount": 293,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17344162233277605294",
+      "recommendedPrimary": [
+        "Margherita (Napoli Usulü)",
+        "Carne Arrosto Pizza",
+        "Pepperoni Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Frutti Di Mare Pizza",
+          "note": "Deniz mahsullü taş fırın seçeneği olarak akşam servisinde sıkça tercih edilir.",
+          "proof": "Yemeksepeti ve yerel menü kayıtları"
+        },
+        {
+          "name": "El Yapımı Makarna",
+          "note": "Pizza dışında taze soslu doyurucu bir ana yemek alternatifi sunar.",
+          "proof": "Turkey's For Life rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "İç mekan ve bulvar cephesinde masa servisi; paket servis imkanı da var",
+        "crowdAndNoise": "Akşam yemek saatlerinde mahalle sakinleri ve tatilcilerle hareketli, diğer saatlerde rahat",
+        "disadvantage": "Haftanın başlangıcında pazartesi günleri kapalı olabiliyor ve plaj kordonundan içeride kalıyor",
+        "transit": "Barış Manço Bulvarı üzerinde, CarrefourSA karşısında yürüyüş ve dolmuş hattında"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Turkey's For Life — Mojo Italian Gusto",
+          "url": "https://www.turkeysforlife.com/mojo-italian-gusto-fethiye-pizza-heaven",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Napoli tarzı hamuru ve pepperoni pizzası öne çıkarılan yerel Fethiye gastronomi incelemesi"
+        },
+        {
+          "title": "Yemeksepeti — Mojo Italian Gusto Fethiye",
+          "url": "https://www.yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Margherita, Carne Arrosto ve sıcak teslimat geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=17344162233277605294",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Foça Mah. Barış Manço Blv. No:55/B konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Bağımsız Napoli tarzı hamur ve pişirme disiplini",
+        "Hem yerel hem tatilci kesimden güçlü kanıt"
+      ],
+      "cons": [
+        "Deniz manzaralı kordon hattında yer almıyor",
+        "Pazartesi kapanış gününe dikkat edilmeli"
+      ],
+      "uncertainties": [
+        "Sezon içi öğle ve akşam servis saatleri güncellenebiliyor"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "sapori-ditalia-calis",
+      "categoryId": "pizza",
+      "resolvedName": "SAPORI D'ITALIA",
+      "branchName": "CALIS PLAJI, Foça, 1054. Sk. NO:68, 48300 Fethiye/Muğla",
+      "placeId": "ChIJiRD48F1DwBQR3agtyTGaAvg",
+      "coordinates": {
+        "lat": 36.663475,
+        "lng": 29.107954999999993
+      },
+      "rating": 4.5,
+      "userRatingCount": 190,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17871015809978837213",
+      "recommendedPrimary": [
+        "Odun Fırını Margherita",
+        "Burrata & Şarküteri Pizzası",
+        "Linguine allo Scoglio"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bruschetta & Burrata Tabağı",
+          "note": "Pizza öncesi gün batımına eşlik eden hafif başlangıç olarak öne çıkar.",
+          "proof": "Dish ve Wanderlog menü notları"
+        },
+        {
+          "name": "Bolognese & Taze Makarna",
+          "note": "Hamur işi dışındaki konuklar için klasik soslarla servis edilir.",
+          "proof": "Menuspot ve ziyaretçi kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sahil kordonuna bakan açık oturma alanı ve iç salon masaları",
+        "crowdAndNoise": "Gün batımı ve akşam saatlerinde sakin bir sahil temposu hakim",
+        "disadvantage": "Kordon konumu nedeniyle fiyat algısı iç sokak mekanlarına göre daha yüksek kalabiliyor",
+        "transit": "Çalış Plajı 1054. Sokak yürüyüş bandı üzerinde, sahilden doğrudan erişim"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Wanderlog — Sapori d'Italia Fethiye",
+          "url": "https://wanderlog.com/place/23019316/sapori-ditalia-fethiye-turkiye",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sahil konumu, gün batımı manzarası ve İtalyan tabakları değerlendirmesi"
+        },
+        {
+          "title": "Menuspot & Dish — Sapori d'Italia Menü",
+          "url": "https://dish.co",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Margherita, Burrata, Bruschetta ve Linguine allo Scoglio menü doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=17871015809978837213",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Foça 1054. Sk. No:68 Çalış Plajı konum kaydı"
+        }
+      ],
+      "pros": [
+        "Çalış sahil şeridinde gün batımı manzaralı İtalyan sofrası",
+        "Hem taş fırın pizza hem el yapımı makarna"
+      ],
+      "cons": [
+        "Sahil bandı fiyat seviyesi zaman zaman eleştiri alabiliyor",
+        "Kış döneminde sezonluk kapanış olabiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışı çalışma takvimi işletme tarafından belirleniyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "la-casa-di-mamma-calis",
+      "categoryId": "pizza",
+      "resolvedName": "La Casa Di Mamma Ristorante",
+      "branchName": "Foça, 1054. Sk. no:50, 48300 Fethiye/Muğla",
+      "placeId": "ChIJD8YqJ6dDwBQR9PDnPyGRsNo",
+      "coordinates": {
+        "lat": 36.6616739,
+        "lng": 29.1089555
+      },
+      "rating": 4.4,
+      "userRatingCount": 340,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.tripadvisor.com.tr/Restaurant_Review-g298031-d3242537-Reviews-La_Casa_Di_Mamma_Ristorante-Fethiye_Mugla_Province_Turkish_Aegean_Coast.html",
+      "mapsUri": "https://maps.google.com/?cid=15758254668161478900",
+      "recommendedPrimary": [
+        "La Casa Bonfile Pizza",
+        "La Casa Folded Pizza (Calzone)",
+        "Odun Fırını Margherita"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Spagetti Frutti di Mare",
+          "note": "Odun fırını pizzaların yanında deniz ürünlü klasik İtalyan alternatifi sunar.",
+          "proof": "Restoranim menü kaydı"
+        },
+        {
+          "name": "Ev Yapımı Tiramisu",
+          "note": "Yemek sonunda kahveyle eşleştirilen hafif tatlı seçeneği olarak bilinir.",
+          "proof": "Restaurant Guru ve Tripadvisor kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sahil bandında Olimpia Hotel zemin katında teras ve iç salon masa düzeni",
+        "crowdAndNoise": "Aileler ve uzun süreli Çalış müdavimleriyle dengeli, akşamları canlı",
+        "disadvantage": "Menüde Meksika ve dünya mutfağı ekleri bulunduğu için saf İtalyan odaklı yerlere göre daha karma",
+        "transit": "Çalış Plajı 1054. Sokak No:50 adresinde kordon yürüyüş yolu üzerinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Tripadvisor — La Casa Di Mamma Ristorante",
+          "url": "https://www.tripadvisor.com.tr/Restaurant_Review-g298031-d3242537-Reviews-La_Casa_Di_Mamma_Ristorante-Fethiye_Mugla_Province_Turkish_Aegean_Coast.html",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Uzun yıllara dayanan Çalış sahil restoranı gezgin incelemeleri"
+        },
+        {
+          "title": "Restoranim — La Casa Di Mamma Menü",
+          "url": "https://restoranim.net",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Odun fırını La Casa, Di Mamma, Calzone ve Frutti di Mare menü verileri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=15758254668161478900",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Foça 1054. Sk. No:50 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Odun ateşinde ince hamur ve özgün katlanmış calzone çeşitliliği",
+        "Köklü sahil konumu"
+      ],
+      "cons": [
+        "Genişletilmiş karma menü odak dağınıklığı yaratabiliyor",
+        "Yaz akşamlarında sahil gürültüsü artabiliyor"
+      ],
+      "uncertainties": [
+        "Yaz ve kış sezon menü kapsamı farklılık gösterebilir"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lu-bistro-calis",
+      "categoryId": "hamburger",
+      "resolvedName": "Lu Bistro",
+      "branchName": "Çalış, Foça, Barış Manço Blv. No:95, 48300 Fethiye/Muğla",
+      "placeId": "ChIJt0w-RwVDwBQRspDef9_ZTlA",
+      "coordinates": {
+        "lat": 36.6615897,
+        "lng": 29.114396400000004
+      },
+      "rating": 4.7,
+      "userRatingCount": 446,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5786802125163892914",
+      "recommendedPrimary": [
+        "El Yapımı Dana Burger",
+        "Vejetaryen Burger",
+        "El Açması Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Flamingo İmza Kokteyl",
+          "note": "Akşam bistro saatlerinde burger yanına ferah eşlikçi olarak tercih edilir.",
+          "proof": "Şehir Pusulası ve ziyaretçi notları"
+        },
+        {
+          "name": "Ekmek Üstü & Kahvaltı Tabakları",
+          "note": "Gündüz saatlerinde hafif kahvaltı ve atıştırmalık arayanlara hitap eder.",
+          "proof": "Yandex Maps ve dijital menü verileri"
+        }
+      ],
+      "suitability": {
+        "seating": "İç salon ve bulvar üstü rahat bistro oturma düzeni",
+        "crowdAndNoise": "Gündüz sakin, DJ etkinliklerinin olduğu akşamlarda daha hareketli",
+        "disadvantage": "Fiyat seviyesi mahalledeki hızlı burger büfelerine göre biraz daha üstte kalabiliyor",
+        "transit": "Foça Barış Manço Bulvarı No:95 üzerinde, Çalış merkez hattında yürüyüş mesafesinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Şehir Pusulası — Lu Bistro İncelemesi",
+          "url": "https://www.sehirpusulasi.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "El yapımı burger ekmeği, köfte kalitesi ve kokteyl vurgusu"
+        },
+        {
+          "title": "Restoranim — Lu Bistro Fethiye",
+          "url": "https://restoranim.net",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Burger, el açması pizza ve vejetaryen seçenek geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=5786802125163892914",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Barış Manço Blv. No:95 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Ekmeğinden köftesine özenli burger yapımı ve vejetaryen opsiyon",
+        "Bağımsız yerel bistro kimliği"
+      ],
+      "cons": [
+        "Patates kızartması porsiyonu kişiye göre küçük bulunabiliyor",
+        "Etkinlik akşamlarında müzik sesi yükseliyor"
+      ],
+      "uncertainties": [
+        "DJ etkinlik günleri sezona göre değişebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "lukka-restaurant-calis",
+      "categoryId": "hamburger",
+      "resolvedName": "Lukka Restaurant,Çalış Plajı/Fethiye",
+      "branchName": "Foça, 1054. Sk. 102/A, 48300 Fethiye/Muğla",
+      "placeId": "ChIJ08hzwAhDwBQRJrzFxiS1wbU",
+      "coordinates": {
+        "lat": 36.6684951,
+        "lng": 29.1054306
+      },
+      "rating": 4.4,
+      "userRatingCount": 420,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://lukkarestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=13096948360928410662",
+      "recommendedPrimary": [
+        "Lukka Gurme Burger & Ev Yapımı Patates",
+        "Scampi & Chips",
+        "Fish & Chips"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kuzu Pirzola & Wrap Çeşitleri",
+          "note": "Burger dışındaki ana yemek ve hafif öğle öğünü tercihlerinde öne çıkan seçeneklerdir.",
+          "proof": "Wanderlog ve Restaurant Guru kayıtları"
+        },
+        {
+          "name": "Fıçı Bira Seçkisi",
+          "note": "Pub atmosferinde burger ve atıştırmalıkların yanında en çok tercih edilen eşlikçidir.",
+          "proof": "Yandex Maps ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaç altı gölgeli dış teras ve klimalı iç salon masaları",
+        "crowdAndNoise": "Yerel halk ve bölgede yerleşik yabancı müdavimlerle samimi ve rahat pub temposu",
+        "disadvantage": "Gourmet fine-dining beklentisi yerine gösterişsiz pub servisi sunar; spor yayını saatleri hareketli olur",
+        "transit": "Çalış Plajı 1054. Sokak No:102/A sahil yürüyüş yolunun kuzey bölümünde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Turkey's For Life — Lukka Bar, Restaurant & Cafe",
+          "url": "https://www.turkeysforlife.com/lukka-bar-restaurant-cafe-calis-beach",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ev yapımı patatesle sunulan gurme burgeri ve scampi tabağı önerisi"
+        },
+        {
+          "title": "Lukka Restaurant Resmi Sitesi",
+          "url": "http://lukkarestaurant.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Mekan konsepti, menü kapsamı ve iletişim bilgileri"
+        },
+        {
+          "title": "Restaurant Guru — Lukka Çalış",
+          "url": "https://restaurantguru.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Fiyat-performans dengesi ve fıçı bira kalitesi notları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=13096948360928410662",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Foça 1054. Sk. 102/A konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Ev yapımı el kesimi patates ve dürüst gurme burger",
+        "Sahil kordonuna kıyasla dengeli fiyat-performans"
+      ],
+      "cons": [
+        "Gösterişli sunum arayanlara fazla sade gelebilir",
+        "Canlı spor yayını sırasında kalabalıklaşabiliyor"
+      ],
+      "uncertainties": [
+        "Kış sezonu çalışma günleri kısalabiliyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "burger-24-calis",
+      "categoryId": "hamburger",
+      "resolvedName": "Burger 24",
+      "branchName": "Foça, Barış Manço Blv. no:105A, 48300 Fethiye/Muğla",
+      "placeId": "ChIJj66eWaBDwBQR9ZwZZ4LNUV4",
+      "coordinates": {
+        "lat": 36.6609641,
+        "lng": 29.112329499999994
+      },
+      "rating": 4.4,
+      "userRatingCount": 130,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6796439272637963509",
+      "recommendedPrimary": [
+        "Klasik Dana Burger",
+        "Çift Cheddarlı Cheeseburger",
+        "Parmak Dilim Patates"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Soğan Halkası & Yan Aperatifler",
+          "note": "Gece atıştırmalığı siparişlerinde burger menüsünü tamamlayan sıcak yan ürünlerdir.",
+          "proof": "Restaurant Guru ve Yandex yerel kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük ölçekli iç ve ön cephe oturma alanı; paket ve gel-al servis güçlü",
+        "crowdAndNoise": "Gün içi sakin, akşam ve gece geç saatlerde hızlı servis trafiği yoğun",
+        "disadvantage": "Yan ürün ve patates porsiyonları büyük tabak beklentisi olanlara küçük gelebiliyor",
+        "transit": "Foça Barış Manço Bulvarı No:105/A adresinde Mustafa Kemal Bulvarı bağlantısına yakın"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restaurant Guru — Burger 24 Fethiye",
+          "url": "https://restaurantguru.com/Burger-24-Fethiye",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze malzeme, cheeseburger lezzeti ve Foursquare puanı derlemesi"
+        },
+        {
+          "title": "Restoranim — Burger 24 Fethiye",
+          "url": "https://restoranim.net",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Aile işletmesi samimiyeti ve gece geç saat servis saatleri doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=6796439272637963509",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Foça Barış Manço Blv. No:105A konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Zincir dışı bağımsız yerel burgerci",
+        "Gece geç saatlere kadar ulaşılabilir sıcak servis"
+      ],
+      "cons": [
+        "Oturma kapasitesi sınırlı ve dekorasyonu sade",
+        "Yan ürün porsiyonları hakkında karışık notlar var"
+      ],
+      "uncertainties": [
+        "Sabit çevrimiçi menü linki bulunmuyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "puc-coffee-roasters-calis",
+      "categoryId": "kahve",
+      "resolvedName": "Puc Coffee Roasters Co.",
+      "branchName": "Foça mah. Mustafa Kemal Bulvarı, Meri bar içi, Çalış, Foça, 1002. Sk., 48300 Fethiye/Muğla",
+      "placeId": "ChIJb_FGSONDwBQRp8HuY83D5oo",
+      "coordinates": {
+        "lat": 36.660820799999996,
+        "lng": 29.1132901
+      },
+      "rating": 4.9,
+      "userRatingCount": 154,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10008902508789809575",
+      "recommendedPrimary": [
+        "V60 Pour-Over Demleme",
+        "Double Espresso & Flat White",
+        "Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Kavrum Çekirdek Kahve",
+          "note": "Evde demlemek üzere bölgesel tek köken çekirdekleri paket olarak sunuyor.",
+          "proof": "Samokatus Fethiye kahve rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Meri Bar içi avluda küçük ve samimi kahve barı oturma düzeni",
+        "crowdAndNoise": "Sabah ve öğleden sonra nitelikli kahve arayan müdavimlerle sakin ve odaklanmış",
+        "disadvantage": "Geleneksel kahve-tatlı zincirlerine göre yiyecek menüsü oldukça dar; odak tamamen kahvede",
+        "transit": "Foça Mahallesi Mustafa Kemal Bulvarı, 1002. Sokak Meri Bar içinde yürüyüş mesafesinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Samokatus — Fethiye Kahve & Kafe Rehberi",
+          "url": "https://samokatus.ru/mishka-travel-moy-mini-putevoditel-po-fethiye-my-prozhili-tut-120-dney-v-summe-chto-mogu-skazat-idealnoe-dlya-ranney-oseni-etot-byl-slozhnyy-period-v-zhizni-dlya-nas-no-1/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Fethiye yerel mini rehberinde nitelikli kahve kalitesiyle öne çıkarılan kavurmacı"
+        },
+        {
+          "title": "Restaurant Guru — Puc Coffee Roasters Co.",
+          "url": "https://restaurantguru.com/Puc-Coffee-Roasters-Co-Fethiye",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ziyaretçi memnuniyeti ve taze çekirdek demleme notları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=10008902508789809575",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "1002. Sk. Foça Fethiye konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Kavurma ve demleme odaklı saf üçüncü nesil kahve deneyimi",
+        "Turistik kordon kalabalığından uzak sakin avlu"
+      ],
+      "cons": [
+        "Meri Bar içi girişi ilk kez gelenler için tabeladan takip gerektiriyor",
+        "Kapsamlı kahvaltı/tatlı mutfağı yok"
+      ],
+      "uncertainties": [
+        "Mevsimsel çekirdek stokları haftalık değişiyor"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "doc-coffee-co-calis",
+      "categoryId": "kahve",
+      "resolvedName": "Doc Coffee Co.",
+      "branchName": "Foça, Yerguzlar Cd. 58 A, 48300 Fethiye/Muğla",
+      "placeId": "ChIJF7lJYE9DwBQRzF1sXWKHH0Y",
+      "coordinates": {
+        "lat": 36.658380199999996,
+        "lng": 29.121234199999996
+      },
+      "rating": 4.8,
+      "userRatingCount": 721,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5052906163476913612",
+      "recommendedPrimary": [
+        "Flat White & Iced Americano",
+        "Matcha Latte",
+        "Raf Coffee"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bitter Çikolatalı & Cevizli Cookie",
+          "note": "Dışı çıtır içi yumuşak dokusuyla kahve yanında en çok sipariş edilen taze fırın ürünüdür.",
+          "proof": "Yemeksepeti ve Restoranim notları"
+        },
+        {
+          "name": "Dilim Bask Cheesecake & Smoothie",
+          "note": "Öğleden sonra tatlı ve soğuk içecek molaları için tercih edilir.",
+          "proof": "Restaurant Guru ve Linktree menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Rahat koltuklu ve masalı iç mekan düzeni; laptop ile çalışmaya ve sohbete uygun",
+        "crowdAndNoise": "Sabah sakin, öğleden sonra ve akşam saatlerinde yerel gençlerle canlı",
+        "disadvantage": "Mutfak servisi akşamüstüne doğru kapanabiliyor; akşam saatleri içecek ve tatlı odaklı ilerliyor",
+        "transit": "Foça Yerguzlar Caddesi No:58/A üzerinde, Çalış ile ilçe merkezi bağlantı hattında"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restaurant Guru — Doc Coffee Co.",
+          "url": "https://restaurantguru.com/Doc-Coffee-Co-Fethiye",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Huzurlu iç mekan, kahve kalitesi ve güler yüzlü servis değerlendirmeleri"
+        },
+        {
+          "title": "Yemeksepeti — Doc Coffee Co. Fethiye",
+          "url": "https://www.yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Matcha, Raf Coffee, Bask cheesecake ve cookie sipariş geri bildirimleri"
+        },
+        {
+          "title": "Doc Coffee Co. Resmi Bağlantıları",
+          "url": "https://linktr.ee",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Sabah-gece açık çalışma düzeni ve mutfak servis bilgisi"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=5052906163476913612",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yerguzlar Cd. 58A konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Sabah erken saatten gece geç saate kadar istikrarlı kahve servisi",
+        "Çalışma ve sohbet dostu sakin iç ortam"
+      ],
+      "cons": [
+        "Mutfak tabakları gün ortasıyla sınırlı olabiliyor",
+        "Ana cadde üstü olduğundan deniz manzarası yok"
+      ],
+      "uncertainties": [
+        "Sezon içi maç yayını akşamlarında ses düzeyi artabiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cervos-coffee-roasters-calis",
+      "categoryId": "kahve",
+      "resolvedName": "Cervos Coffee Roasters",
+      "branchName": "Foça, 1054. Sk., 48300 Fethiye/Muğla",
+      "placeId": "ChIJj5VwBpxDwBQR8sgNCqs7K_w",
+      "coordinates": {
+        "lat": 36.6625936,
+        "lng": 29.1083616
+      },
+      "rating": 4.6,
+      "userRatingCount": 250,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18170682727350520050",
+      "recommendedPrimary": [
+        "Cortado & Flat White",
+        "Mevsimlik Single-Origin Filtre",
+        "Portakallı / Limonatalı Soğuk Espresso"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Cold Brew & Matcha",
+          "note": "Sıcak yaz günlerinde Çalış sahili dönüşü ferah içecek olarak sıkça tercih edilir.",
+          "proof": "Yemeksepeti ve Buraya Gidelim notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Modern tasarımlı ferah iç mekan ve sokak cephesi oturma alanları",
+        "crowdAndNoise": "Sabah koşu/yürüyüş sonrası ve öğleden sonra laptop kullanıcılarıyla dengeli",
+        "disadvantage": "Fethiye genelinde Akarca şubesi de bulunduğu için Çalış ana kavurathane olan 1054. Sokak noktası seçilmeli",
+        "transit": "Foça Mahallesi 1054. Sokak üzerinde, Çalış sahil yürüyüş bandına birkaç dakikalık yürüme mesafesinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Cervos Coffee Roasters Resmi Sitesi",
+          "url": "http://www.cervoscoffeeroasters.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Fethiye merkezli bağımsız kahve kavurma markası ve çekirdek bilgileri"
+        },
+        {
+          "title": "Buraya Gidelim — Cervos Coffee Roasters",
+          "url": "https://www.burayagidelim.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Foça 1054. Sokak konumunda üçüncü nesil kavurmacı incelemesi"
+        },
+        {
+          "title": "Yemeksepeti — Cervos Coffee Roasters",
+          "url": "https://www.yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Cortado ve narenciyeli soğuk espresso menü geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=18170682727350520050",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Foça 1054. Sk. Çalış konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Kendi çekirdeğini seçip kavuran Fethiye yerel roastery",
+        "Sahil kordonuna yürüyüş mesafesinde modern mekan"
+      ],
+      "cons": [
+        "Tam kapsamlı kahvaltı yerine kahve-tatlı eşleşmesine odaklı",
+        "Yaz öğlen saatlerinde dış masalar güneş alabiliyor"
+      ],
+      "uncertainties": [
+        "Mevsimsel tek köken çekirdek seçkisi ithalat dönemine göre değişiyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hann-coffee-roastery-calis",
+      "categoryId": "kahve",
+      "resolvedName": "Hann Coffee Roastery",
+      "branchName": "Foça, 1054. Sk. no:70/b, 48300 Fethiye/Muğla",
+      "placeId": "ChIJCTW7nHBDwBQRgvZ7YDQFw5U",
+      "coordinates": {
+        "lat": 36.6637749,
+        "lng": 29.108008800000004
+      },
+      "rating": 4.5,
+      "userRatingCount": 379,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.hanncoffee.com/",
+      "mapsUri": "https://maps.google.com/?cid=10791474854625015426",
+      "recommendedPrimary": [
+        "V60 Yöresel Filtre Demleme",
+        "Taze Kavrum Espresso & Latte",
+        "Soğuk Demleme (Cold Brew)"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Balkan Çöreği",
+          "note": "Filtre kahve yanında özellikle sabah saatlerinde hızlı tükenen taze fırın eşlikçisidir.",
+          "proof": "Yemeksepeti menü verileri"
+        },
+        {
+          "name": "Üzümlü / Frambuazlı Çörek & Bowl",
+          "note": "Hafif sabah öğünü arayan konuklar için kahveye eşlik eder.",
+          "proof": "Restaurant Guru ve yerel kayıtlar"
+        }
+      ],
+      "suitability": {
+        "seating": "Sahil arka paralelinde samimi iç mekan ve sokak kenarı masaları",
+        "crowdAndNoise": "Sabah kahve-çörek molalarında sakin, öğleden sonra otel çevresi konuklarla hareketli",
+        "disadvantage": "Günün ilerleyen saatlerinde Balkan çöreği gibi günlük unlu mamuller tükenebiliyor",
+        "transit": "Foça 1054. Sokak No:70/B adresinde Okaliptus ve Remer Hotel çevresinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Hann Coffee Roastery Resmi Sitesi",
+          "url": "http://www.hanncoffee.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Kavurma atölyesi çekirdek seçkisi ve üçüncü nesil kahve yaklaşımı"
+        },
+        {
+          "title": "Restaurant Guru — Hann Coffee Roastery",
+          "url": "https://restaurantguru.com/Hann-Coffee-Roastery-Fethiye",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tutarlı kahve lezzeti ve samimi ortam değerlendirmeleri"
+        },
+        {
+          "title": "Yemeksepeti — Hann Coffee Roastery",
+          "url": "https://www.yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "V60, Balkan çöreği ve fırın ürünleri menü doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=10791474854625015426",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Foça 1054. Sk. 70/B konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Kendi kavrumhanesi olan yerel kahveci ve taze çörek eşleşmesi",
+        "V60 yöresel çekirdek odağı"
+      ],
+      "cons": [
+        "Oturma alanı geniş gruplar için sınırlı",
+        "Çörek çeşitleri gün sonuna kalmayabiliyor"
+      ],
+      "uncertainties": [
+        "Yaz ve kış arası saatlerde değişiklik olabiliyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "levissi-luxe-calis",
+      "categoryId": "date",
+      "resolvedName": "Levissi Luxe",
+      "branchName": "Foça, 1085. Sk. no:25, 48300 Fethiye/Muğla",
+      "placeId": "ChIJVTGVnC5DwBQRAqil0oT0QW8",
+      "coordinates": {
+        "lat": 36.6671049,
+        "lng": 29.1064959
+      },
+      "rating": 4.9,
+      "userRatingCount": 309,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://levissiluxe.com/",
+      "mapsUri": "https://maps.google.com/?cid=8016957663003125762",
+      "recommendedPrimary": [
+        "Keşkek Yatağında Yavaş Pişmiş Kuzu İncik",
+        "Surf & Turf / Biber Soslu Bonfile",
+        "Hibiscus Berry & Aperol Spritz"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bask Usulü Cheesecake",
+          "note": "Akşam yemeği kapanışında yıldızlar altında en çok tercih edilen imza tatlıdır.",
+          "proof": "Levissi Luxe resmi menü"
+        },
+        {
+          "name": "Spaghetti di Mare & Risotto",
+          "note": "Et yemekleri dışında Akdeniz dokunuşlu akşam seçeneği sunar.",
+          "proof": "Levissi Luxe resmi sitesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Gün batımına bakan şık teras masaları ve özenli akşam servisi; rezervasyon önerilir",
+        "crowdAndNoise": "Çiftler ve özel akşam kutlamaları için sakin, şık ve özenli atmosfer",
+        "disadvantage": "Otel bünyesinde olduğu için Kayaköy’deki eski Levissi Garden ile isim karışıklığı yaşanabiliyor; rezervasyonsuz akşamları yer bulmak zorlaşabilir",
+        "transit": "Foça Mahallesi 1085. Sokak No:25, Malhun Hotel Çalış sahil hattında"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Levissi Luxe Resmi Sitesi",
+          "url": "https://levissiluxe.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Gün batımı kokteylleri, akşam fine-dining menüsü ve Bask cheesecake detayları"
+        },
+        {
+          "title": "Yandex & Bölge Rehber Kayıtları",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çalış sahil hattında şık ambiyans ve servis kalitesi geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=8016957663003125762",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Foça 1085. Sk. No:25 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Çalış sahil hattının en yüksek puanlı akşam ve kokteyl buluşma adresi",
+        "Mutfak sunumu ve gün batımı manzarası"
+      ],
+      "cons": [
+        "Kayaköy’deki farklı isimdeş mekanla karıştırılmamalı",
+        "Otel bünyesi nedeniyle sezon dışı kapanış dönemleri olabiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışı akşam servis günleri dönemsel güncelleniyor"
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "efendi-fethiye-calis",
+      "categoryId": "date",
+      "resolvedName": "Efendi Fethiye",
+      "branchName": "Foça, Yerguzlar Cd., 48300 Fethiye/Muğla",
+      "placeId": "ChIJNchrb55DwBQRMs3GW4S-Z0I",
+      "coordinates": {
+        "lat": 36.6586815,
+        "lng": 29.120567100000002
+      },
+      "rating": 4.7,
+      "userRatingCount": 644,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4785002604789157170",
+      "recommendedPrimary": [
+        "Safranlı Deniz Mahsülleri Güveci",
+        "Izgara Derin Deniz Levreği",
+        "Deniz Börülcesi & Soğuk Mezeler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Deniz Ürünlü Mantı",
+          "note": "Klasik balık sofralarından ayrılan özgün sıcak başlangıç olarak öne çıkar.",
+          "proof": "Wanderlog ve seyahat notları"
+        },
+        {
+          "name": "Dondurmalı İrmik Tatlısı",
+          "note": "Akşam yemeğini hafif kapatan klasik tatlı önerisidir.",
+          "proof": "Wanderlog Efendi Fethiye incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mavi-beyaz Akdeniz dekorlu ön ve arka bahçede özenli masa servisi",
+        "crowdAndNoise": "Kordon gürültüsünden uzak, sohbet ve uzun akşam yemeğine uygun dingin tempo",
+        "disadvantage": "Denize sıfır sahil manzarası sunmaz; akşam servisi yoğun günlerde rezervasyon gerektirir",
+        "transit": "Foça Mahallesi Yerguzlar Caddesi üzerinde, yürüyüş ve araç ulaşımına elverişli"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Biz Evde Yokuz — Fethiye Mekanları",
+          "url": "https://www.bizevdeyokuz.com/fethiye-mekanlari/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Fethiye meyhane önerilerinde deniz börülcesi ve safranlı deniz mahsulleri güveci vurgusu"
+        },
+        {
+          "title": "Wanderlog — Efendi Fethiye",
+          "url": "https://wanderlog.com/place/20127598/efendi-fethiye-fethiye-turkiye",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bahçe atmosferi, ızgara bebek kalamar ve servis ilgisi değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=4785002604789157170",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Foça Yerguzlar Cd. konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Şık ve gürültüsüz Ege bahçesi ambiyansı",
+        "Klasik meyhane dışında safranlı güveç ve deniz ürünlü mantı dokunuşları"
+      ],
+      "cons": [
+        "Sahil kenarında yer almıyor",
+        "Popüler akşamlarda masa doluluğu yaşanabiliyor"
+      ],
+      "uncertainties": [
+        "Canlı akustik müzik geceleri haftalık programa göre değişiyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yezi-coffee-wine-food-calis",
+      "categoryId": "date",
+      "resolvedName": "YEZİ COFFEE-WINE-FOOD",
+      "branchName": "Foça, Yerguzlar Cd. NO:63/B, 48300 Fethiye/Muğla",
+      "placeId": "ChIJ_zc6qRVDwBQRMvzf7gnF48s",
+      "coordinates": {
+        "lat": 36.6608799,
+        "lng": 29.119529900000003
+      },
+      "rating": 4.6,
+      "userRatingCount": 302,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14691803055865723954",
+      "recommendedPrimary": [
+        "Şarap & Köz Patlıcanlı Humus Tabağı",
+        "Bademli Kruvasan & Cappuccino",
+        "Falafel & Karides Bowl"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Lotus Cheesecake",
+          "note": "Gün boyu kahve ya da şarap sonrası tatlı eşlikçisi olarak sıkça tercih edilir.",
+          "proof": "Wanderlog Yezi incelemeleri"
+        },
+        {
+          "name": "Vegan Kahvaltı & Porridge Kase",
+          "note": "Bitkisel süt alternatifleriyle sabah sağlıklı başlangıç sunar.",
+          "proof": "HappyCow Fethiye kaydı"
+        }
+      ],
+      "suitability": {
+        "seating": "Yeşillikler içinde ferah bahçe ve modern iç salon; evcil hayvan dostu masa düzeni",
+        "crowdAndNoise": "Gündüz çalışmak ve kahvaltı için sakin, gün batımı sonrası şarap eşliğinde samimi ve dingin",
+        "disadvantage": "Hem kahvaltı hem akşam şarap mutfağı yürüttüğü için kalabalık saatlerde mutfak temposu yavaşlayabiliyor",
+        "transit": "Foça Mahallesi Yerguzlar Caddesi No:63/B üzerinde, Çalış merkezine yakın konumda"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "HappyCow — YEZİ COFFEE-WINE-FOOD",
+          "url": "https://www.happycow.net/reviews/yezi-coffee-wine-food-fethiye-231624",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Etiketli vegan tabaklar, bitkisel süt alternatifleri ve kase menüsü kaydı"
+        },
+        {
+          "title": "Wanderlog — Yezi Coffee Wine Food",
+          "url": "https://wanderlog.com/view/gkkzrypfyg/yezi-coffee-wine-food-fethiye-turkiye/shared",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bademli kruvasan, Lotus cheesecake ve sakin bahçe ortamı geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=14691803055865723954",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Foça Yerguzlar Cd. No:63/B konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Sabah kahvaltıdan akşam şarap-tabak buluşmasına uzanan zarif bahçe kimliği",
+        "Güçlü vegan ve sağlıklı tabak çeşitliliği"
+      ],
+      "cons": [
+        "Yoğun saatlerde mutfak servisi bekletebiliyor",
+        "Deniz manzarası bulunmuyor"
+      ],
+      "uncertainties": [
+        "Şarap ve akşam mutfağı menüsü mevsimsel güncellenebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "sardunya-et-balik-meze-calis",
+      "categoryId": "date",
+      "resolvedName": "Sardunya Et Balık Meze",
+      "branchName": "Foça, 1054. Sk. No:58, 48300 Fethiye/Muğla",
+      "placeId": "ChIJMb9pgeVDwBQRZvxIoclfv_w",
+      "coordinates": {
+        "lat": 36.6622438,
+        "lng": 29.1086264
+      },
+      "rating": 4.5,
+      "userRatingCount": 303,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://sardunyafethiye.com/",
+      "mapsUri": "https://maps.google.com/?cid=18212380737708555366",
+      "recommendedPrimary": [
+        "Ahtapot Carpaccio & İsli Midye",
+        "Girit Ezmesi & Portakallı Enginar",
+        "Günlük Izgara Balık"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Karidesli Fellah & Pastırmalı Humus",
+          "note": "Soğuk meze vitrininin ardından masayı zenginleştiren sıcak ara seçeneklerdir.",
+          "proof": "Sardunya resmi menü"
+        },
+        {
+          "name": "Ateşten Et Seçenekleri",
+          "note": "Balık tercih etmeyen eşlikçiler için ızgara et alternatifleri sunar.",
+          "proof": "Sardunya resmi sitesi ve Fethiye TV"
+        }
+      ],
+      "suitability": {
+        "seating": "Sahil yürüyüş yolunda denize sıfır teras ve ferah iç masa düzeni",
+        "crowdAndNoise": "Gün batımı saatlerinden geceye uzanan canlı ve romantik Çalış sahil atmosferi",
+        "disadvantage": "Yüksek meze ve deniz ürünü odaklı sahil mekanı olduğu için bütçe planı gerektirir; yoğun akşamlarda rezervasyon şart",
+        "transit": "Foça Mahallesi 1054. Sokak No:58, Çalış Plajı yürüyüş bandında"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Sardunya Et Balık Meze Resmi Sitesi",
+          "url": "https://sardunyafethiye.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "82 çeşit meze yaklaşımı, ahtapot carpaccio ve et/balık menü yapısı"
+        },
+        {
+          "title": "Fethiye TV — Sardunya Et & Balık Meze Haberi",
+          "url": "https://www.fethiyetv.com/calisin-yeni-gozdesi-sardunya-et-balik-meze-restaurant",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çalış Plajı sahil konumu ve meze çeşitliliği üzerine yerel yayın haberi"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=18212380737708555366",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Foça 1054. Sk. No:58 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Denize sıfır gün batımı manzarası ve sıra dışı geniş meze vitrini",
+        "Hem balık hem et seven çiftler için dengeli menü"
+      ],
+      "cons": [
+        "Sahil kordonu fiyat bandında yer alıyor",
+        "Yaz hafta sonlarında masa yoğunluğu yüksek"
+      ],
+      "uncertainties": [
+        "Mevsimlik soğuk meze listesi günlük tedarike göre değişiyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "rakula-fethiye-calis",
+      "categoryId": "kahvalti",
+      "resolvedName": "RakulaFethiye",
+      "branchName": "Çalış Plajı, Foça, 1054. Sk. No:18/1, 48300 Fethiye/Muğla",
+      "placeId": "ChIJ20e1W4BDwBQRlfU6XAdxHw4",
+      "coordinates": {
+        "lat": 36.6587527,
+        "lng": 29.1102574
+      },
+      "rating": 4.6,
+      "userRatingCount": 374,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1017656317235099029",
+      "recommendedPrimary": [
+        "Avokadolu & Poşe Yumurtalı Ekmek Üstü",
+        "Somonlu / Füme Etli Brunch Tabağı",
+        "Serpme Kahvaltı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Közde Türk Kahvesi & Ev Yapımı Tiramisu",
+          "note": "Sahil kahvaltısı sonrası gün ortası molası için en sık eşleştirilen kapanıştır.",
+          "proof": "Promenu dijital menü kaydı"
+        }
+      ],
+      "suitability": {
+        "seating": "Çalış sahil bandında deniz manzaralı teras ve iç mekan masa servisi",
+        "crowdAndNoise": "Sabah-öğle brunch saatlerinde hareketli, gün batımında manzara odaklı",
+        "disadvantage": "Yoğun sezon saatlerinde servis hızında aksamalar ve sahil fiyat seviyesi eleştirileri görülebiliyor",
+        "transit": "Foça Mahallesi 1054. Sokak No:18/1, Çalış Plajı yürüyüş bandı girişi"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemek.com — Fethiye Kahvaltı Mekanları",
+          "url": "https://yemek.com/kesfet/fethiyenin-en-iyi-kahvalti-mekanlari",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çalış Plajı sahilinde modern brunch ve poşe yumurtalı avokado tabakları önerisi"
+        },
+        {
+          "title": "Yandex & Wanderboat — Rakula Fethiye",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sahil manzarası ve kahvaltı/akşam tabakları değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=1017656317235099029",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Foça 1054. Sk. No:18/1 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Çalış sahilinde serpme dışında modern poşe yumurtalı brunch seçeneği",
+        "Deniz manzaralı başlangıç noktası"
+      ],
+      "cons": [
+        "Yoğun yaz sabahlarında servis süresi uzayabiliyor",
+        "Sahil konumu bütçeyi yukarı çekebiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışı sabah açılış saatleri değişiklik gösterebilir"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "sobre-coffee-dessert-calis",
+      "categoryId": "kahvalti",
+      "resolvedName": "Sobre Coffee & Dessert",
+      "branchName": "Foça, Yerguzlar Cd. No:80A, 48048 Fethiye/Muğla",
+      "placeId": "ChIJj15u_CxDwBQRjeZoQY51gsQ",
+      "coordinates": {
+        "lat": 36.660644399999995,
+        "lng": 29.1199912
+      },
+      "rating": 4.7,
+      "userRatingCount": 255,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://sobrecoffee.tr/",
+      "mapsUri": "https://maps.google.com/?cid=14160009432249460365",
+      "recommendedPrimary": [
+        "Kruvasan Kahvaltı Tabağı",
+        "Sobre Special & Pesto Focaccia Sandviç",
+        "San Sebastian Cheesecake"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sandviç Kruvasan Çeşitleri",
+          "note": "Hızlı ama nitelikli sabah kahvaltısı isteyenler için hindi fümeli ve peynirli alternatifler sunar.",
+          "proof": "Sobre Coffee resmi menüsü"
+        },
+        {
+          "name": "V60 & Orange Espresso",
+          "note": "Kruvasan ve cheesecake eşliğinde nitelikli kahve deneyimini tamamlar.",
+          "proof": "Sobre Coffee resmi web sitesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Modern ve sakin iç salon ile cadde önü küçük oturma alanı",
+        "crowdAndNoise": "Sabah kruvasan ve kahve saatlerinde sakin, çalışmaya ve sohbete uygun",
+        "disadvantage": "Klasik Türk serpme kahvaltı yerine fırın-kruvasan ve focaccia tabanlı brunch konsepti sunar; deniz kıyısında değil",
+        "transit": "Foça Mahallesi Yerguzlar Caddesi No:80A adresinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Sobre Coffee & Dessert Resmi Sitesi",
+          "url": "http://sobrecoffee.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Fransız tereyağlı kruvasan kahvaltı tabağı, ev yapımı focaccia sandviç ve San Sebastian menüsü"
+        },
+        {
+          "title": "Gurudayım & Yerel Rehberler — Sobre",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Barista bilgisi, kruvasan tazeliği ve sakin iç ortam değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=14160009432249460365",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Foça Yerguzlar Cd. No:80A konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Uzun fermantasyon kruvasan ve ev yapımı focaccia ekmekleri",
+        "Hem nitelikli V60 kahve hem güçlü tatlı-kahvaltı mutfağı"
+      ],
+      "cons": [
+        "Geleneksel sıcak serpme kahvaltı arayanlara uygun değil",
+        "Sınırlı dış mekan kapasitesi"
+      ],
+      "uncertainties": [
+        "Günlük taze kruvasan çeşitleri öğleden sonra azalabiliyor"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mehtap-restaurant-calis",
+      "categoryId": "kahvalti",
+      "resolvedName": "Mehtap Restaurant Fethiye",
+      "branchName": "Çalış Kavşağı No:2 Mehtap Restaurant, Foça, Cahit Beğenç Blv., 48300 Fethiye/Muğla",
+      "placeId": "ChIJTyirE8xDwBQR4OkonmIU6gQ",
+      "coordinates": {
+        "lat": 36.6615383,
+        "lng": 29.113080500000002
+      },
+      "rating": 4.6,
+      "userRatingCount": 539,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=354117934494837216",
+      "recommendedPrimary": [
+        "Geleneksel Serpme Kahvaltı",
+        "Mıhlama & Menemen",
+        "Paçanga & Sigara Böreği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Köfte Güveç & Günlük Çorbalar",
+          "note": "Kahvaltı dışındaki öğle ve akşam öğünlerinde esnaf lokantası çizgisinin en beğenilen tabaklarıdır.",
+          "proof": "Turkey's For Life incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Gölgelikli geniş açık alan ve aile düzenine uygun sade iç salon masaları",
+        "crowdAndNoise": "Sabah kahvaltısı ve öğle yemeklerinde yerel sakinlerle düzenli, gürültüsüz bir mahalle temposu",
+        "disadvantage": "Kavşak kenarında yer aldığı için sahil manzarası sunmaz; gösterişten uzak sade bir lokantadır",
+        "transit": "Çalış Kavşağı No:2, Cahit Beğenç Bulvarı üzerinde, toplu taşıma ve dolmuş duraklarının merkezinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Turkey's For Life — Mehtap Lokantası",
+          "url": "https://www.turkeysforlife.com/fethiye-restaurants-mehtap-lokantasi-an-old-not-very-regular",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çalış Kavşağı yerel lokanta kimliği, köfte güveç ve bütçe dostu mutfak incelemesi"
+        },
+        {
+          "title": "Temassız Menü & Restaurant Guru — Mehtap",
+          "url": "https://restaurantguru.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Serpme kahvaltı, mıhlama, börek çeşitleri ve aile işletmesi notları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=354117934494837216",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çalış Kavşağı Cahit Beğenç Blv. konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Sahil fiyatlarının aksine dürüst mahalle esnaf lokantası bütçesi",
+        "Hem kahvaltı hem gün boyu sıcak ev yemekleri"
+      ],
+      "cons": [
+        "Ana kavşak yanında olduğu için araç sesi duyulabiliyor",
+        "Deniz manzaralı bir terası yok"
+      ],
+      "uncertainties": [
+        "Sabah kahvaltı servisinin başlangıç-bitiş saatleri mevsime göre esneyebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kavala-ocakbasi-calis",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kavala Ocakbaşı & Restaurant",
+      "branchName": "Foça, Barış Manço Blv. No:57, 48300 Fethiye/Muğla",
+      "placeId": "ChIJfd4Y9i9DwBQR3mL_sFY0Z_s",
+      "coordinates": {
+        "lat": 36.662244799999996,
+        "lng": 29.120688299999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 301,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/kavalaocakbasi?igsh=MXJ6OWs0dGN1OW5mbA==",
+      "mapsUri": "https://maps.google.com/?cid=18115505573062468318",
+      "recommendedPrimary": [
+        "Adana / Urfa Kebap",
+        "Ciğer Şiş",
+        "Patlıcanlı Kebap"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kuşbaşılı & Kıymalı Pide",
+          "note": "Kebap yanında paylaşımlık sıcak fırın ürünü olarak sıkça masaya gelir.",
+          "proof": "Yemeksepeti menü verileri"
+        },
+        {
+          "name": "Adana & Tavuk Şiş Dürüm",
+          "note": "Daha hızlı ve pratik öğle-akşam öğünü tercih edenler için sunulur.",
+          "proof": "Yemeksepeti Kavala Ocakbaşı menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Ocakbaşı etrafı iç salon ve bulvar üstü masalar",
+        "crowdAndNoise": "Akşam yemeklerinde kalabalık ve enerjik; canlı müzik akşamları daha sesli",
+        "disadvantage": "Canlı müzik olan akşamlarda sakin sohbet arayanlar için gürültü seviyesi yükselebiliyor",
+        "transit": "Foça Mahallesi Barış Manço Bulvarı No:57 üzerinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Kavala Ocakbaşı Resmi Instagram",
+          "url": "https://www.instagram.com/kavalaocakbasi",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Ocakbaşı menüsü, canlı müzik programları ve şube duyuruları"
+        },
+        {
+          "title": "Yemeksepeti — Kavala Ocakbaşı Fethiye",
+          "url": "https://www.yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Adana, ciğer şiş, patlıcanlı kebap ve pide porsiyon geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=18115505573062468318",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Foça Barış Manço Blv. No:57 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Çalış bölgesinde gerçek ocakbaşı ve ciğer şiş deneyimi",
+        "Hem kebap hem taş fırın pide seçeneği"
+      ],
+      "cons": [
+        "Canlı müzik programlarında ses düzeyi yüksek olabiliyor",
+        "Sahil manzarası bulunmuyor"
+      ],
+      "uncertainties": [
+        "Canlı müzik günleri sezon takvimine göre değişebiliyor"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "corbaci-fethiye-calis",
+      "categoryId": "denemelisin",
+      "resolvedName": "ÇORBACI FETHİYE",
+      "branchName": "Foça, Yerguzlar Cd. No:37, 48300 Fethiye/Muğla",
+      "placeId": "ChIJlTEjIPlDwBQRbqrxrzm0tCs",
+      "coordinates": {
+        "lat": 36.6574846,
+        "lng": 29.1214339
+      },
+      "rating": 4.5,
+      "userRatingCount": 1447,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/corbaci_fethiye?igsh=MXR0eHczdHZ3NHh2bQ==",
+      "mapsUri": "https://maps.google.com/?cid=3149340199296805486",
+      "recommendedPrimary": [
+        "Geleneksel Çorba Çeşitleri",
+        "Antrikot & Lokum Izgara",
+        "Kasap Köfte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kuzu Şiş",
+          "note": "Çorba sonrası doyurucu ana yemek isteyen yerel müdavimlerin başlıca ızgara tercihidir.",
+          "proof": "Restaurant Guru ve Wanderboat notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş, hızlı devirli sade lokanta salonu ve dış masa düzeni",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde yerel çalışanlar ve ailelerle sürekli canlı ve tempolu",
+        "disadvantage": "Adındaki çorbacı vurgusunun aksine ızgara et ağırlıklı servis hızlı ama dekorasyon sade ve gürültülü olabiliyor",
+        "transit": "Foça Mahallesi Yerguzlar Caddesi No:37 adresinde kolay araç ve yaya erişiminde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Çorbacı Fethiye Resmi Instagram",
+          "url": "https://www.instagram.com/corbaci_fethiye",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Günlük çorba ve kasap usulü et sunumları"
+        },
+        {
+          "title": "Restaurant Guru — Çorbacı Fethiye",
+          "url": "https://restaurantguru.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Antrikot, lokum, kuzu şiş ve çorba çeşitleri ziyaretçi geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=3149340199296805486",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Foça Yerguzlar Cd. No:37 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Yüksek yerel sirkülasyonla taze kalan yıl boyu açık mutfak",
+        "Çorbanın yanında güçlü kasap ızgara menüsü"
+      ],
+      "cons": [
+        "Romantik veya sakin bir akşam yemeği ambiyansı sunmaz",
+        "Akşam yoğunluğunda masa sirkülasyonu hızlı ve sesli"
+      ],
+      "uncertainties": [
+        "Günlük özel et kesimleri stok durumuna bağlı"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cadde-55-pide-calis",
+      "categoryId": "denemelisin",
+      "resolvedName": "CADDE 55 PİDE LAHMACUN",
+      "branchName": "Foça, Adnan Menderes Blv. No:351, 48300 Fethiye/Muğla",
+      "placeId": "ChIJYaCAMexDwBQRuzF3IoYK3HU",
+      "coordinates": {
+        "lat": 36.659959199999996,
+        "lng": 29.132053000000003
+      },
+      "rating": 4.7,
+      "userRatingCount": 320,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8492674568534045115",
+      "recommendedPrimary": [
+        "Kıymalı Kapalı Samsun Pidesi",
+        "Antep Lahmacun",
+        "Kuşbaşılı Pide"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kelle Paça & Mercimek Çorbası",
+          "note": "Pide öncesi sıcak başlangıç arayan yerel müşterilerin sıkça tercih ettiği fırın eşlikçisidir.",
+          "proof": "Yemeksepeti menü verileri"
+        },
+        {
+          "name": "Akçaabat Köfte",
+          "note": "Hamur işi dışındaki konuklar için doyurucu ızgara seçeneği olarak öne çıkar.",
+          "proof": "Maptons ve yerel sipariş notları"
+        }
+      ],
+      "suitability": {
+        "seating": "İç salon ve cadde kenarı sade pide salonu masaları; paket servis hacmi yüksek",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde yerel mahalle sakinleri ve paket kuryeleriyle yoğun",
+        "disadvantage": "Çalış sahil kordonundan uzakta, bulvar sınırında yer alıyor; ambiyans sade bir esnaf pidecisi çizgisinde",
+        "transit": "Foça Mahallesi Adnan Menderes Bulvarı No:351 üzerinde, Çalış doğu sınırında"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemeksepeti — Cadde 55 Pide & Lahmacun",
+          "url": "https://www.yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İki bini aşkın yerel sipariş verisinde Bafra kapalı pide, lahmacun ve yeşillik tazeliği övgüsü"
+        },
+        {
+          "title": "Restoranim — Cadde 55 Pide Lahmacun",
+          "url": "https://restoranim.net",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çıtır hamur, bol iç malzeme ve Akçaabat köfte değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=8492674568534045115",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Foça Adnan Menderes Blv. No:351 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Bağımsız yerel fırında gerçek Samsun kapalı pidesi ve çıtır lahmacun",
+        "Yüksek yerel talep ve istikrarlı porsiyon"
+      ],
+      "cons": [
+        "Sahil bölgesine yürüme mesafesi uzun, araç veya dolmuş gerektirir",
+        "Karton kutu paketlemesi yerine yerinde tüketim daha çıtır sonuç verir"
+      ],
+      "uncertainties": [
+        "Adnan Menderes Bulvarı karşı cephesi Yeni Mahalle sınırına komşu"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "oben-restaurant-calis",
+      "categoryId": "denemelisin",
+      "resolvedName": "Oben Restaurant",
+      "branchName": "Çalış Plajı, Foça, 1054. Sk. 120/B, 48300 Fethiye/Muğla",
+      "placeId": "ChIJ4bOr0ghDwBQRssuLWMBGXD4",
+      "coordinates": {
+        "lat": 36.668391,
+        "lng": 29.105126
+      },
+      "rating": 4.7,
+      "userRatingCount": 501,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4493544320142134194",
+      "recommendedPrimary": [
+        "Etli / Sebzeli Güveç",
+        "Kabak Mücver & Humus",
+        "Kuzu Pirzola / Chicken Kiev"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Tatlı & Çikolatalı Krep",
+          "note": "Akşam yemeği sonrası aile işletmesi tarzında sade tatlı kapanışı sunar.",
+          "proof": "Restaurant Guru ve Wanderboat notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Asmalarla gölgelendirilmiş huzurlu bahçe masaları ve açık mutfak görünümü",
+        "crowdAndNoise": "Gündüzden geceye aileler ve Çalış müdavimleriyle sakin ve sıcak bir bahçe ortamı",
+        "disadvantage": "Ağırlıklı olarak yaz sezonu boyunca (bahar sonundan sonbahar ortasına kadar) hizmet veriyor; kışın kapalı kalabiliyor",
+        "transit": "Foça Mahallesi 1054. Sokak No:120/B, Çalış Plajı kuzey sahil hattında"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Turkey's For Life — Oben Restaurant",
+          "url": "https://www.turkeysforlife.com/oben-restaurant-calis-beach-turkish-food-home-comfort",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Asmalar altında bahçe atmosferi, güveçler, mücver ve açık mutfak incelemesi"
+        },
+        {
+          "title": "Fethiye Rehberi — Oben Restaurant",
+          "url": "https://www.fethiyerehberi.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sezonluk çalışma düzeni ve ev yapımı Türk mutfağı kaydı"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=4493544320142134194",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Foça 1054. Sk. 120/B konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Sahil kalabalığından bir adım içeride gölgelik asma altı bahçesi",
+        "Taze ev yapımı Türk mezeleri ve güveçleri"
+      ],
+      "cons": [
+        "Sezonluk işletme olduğu için kış aylarında kapalı olabiliyor",
+        "Doğrudan deniz cephesinde değil"
+      ],
+      "uncertainties": [
+        "Sezon açılış ve kapanış tarihleri yıla göre değişiyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "eys-cafe-bistro-calis",
+      "categoryId": "denemelisin",
+      "resolvedName": "EY's Cafe-bistro",
+      "branchName": "Foça, 1054. Sk. No:80, 48300 Fethiye/Muğla",
+      "placeId": "ChIJbcqHB4pDwBQRPzTcV3BtXW8",
+      "coordinates": {
+        "lat": 36.665352899999995,
+        "lng": 29.1067397
+      },
+      "rating": 4.6,
+      "userRatingCount": 260,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8024690440321905727",
+      "recommendedPrimary": [
+        "Köz Lavaşta Köfte & Meksika Tavuk Dürüm",
+        "Hellim Eklemeli Dana Burger",
+        "Ev Yapımı Limonlu Mereng Turta"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Vegan Pizza & Falafel Salatası",
+          "note": "Bitki temelli beslenen ziyaretçiler için sahil bandındaki en net seçeneklerdendir.",
+          "proof": "HappyCow Fethiye kaydı"
+        },
+        {
+          "name": "Izgara Levrek",
+          "note": "Hafif bistro ürünleri dışında sahilde balık yemek isteyenlere hitap eder.",
+          "proof": "Trip.com ve Restaurant Guru notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Büyük şemsiyeli sahil açık oturma alanı ve bistro bar düzeni",
+        "crowdAndNoise": "Gündüz kahve-tatlı molalarından gün batımı kokteyllerine ve canlı müziğe uzanan keyifli tempo",
+        "disadvantage": "Günün farklı saatlerinde İngiliz kahvaltısı, burger ve Türk dürümü bir arada sunduğundan mutfak yelpazesi oldukça geniş",
+        "transit": "Foça Mahallesi 1054. Sokak No:80, Çalış Plajı yürüyüş yolu Sundia Hotel yakınında"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Turkey's For Life — Çalış Mekanları (EY's Bistro Bar)",
+          "url": "https://www.turkeysforlife.com/fethiye-restaurants-bars",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ev yapımı turtalar, köz lavaş dürümler ve Çalış kordonundaki bistro dönüşümü"
+        },
+        {
+          "title": "HappyCow — Ey's Cafe Bistro Fethiye",
+          "url": "https://www.happycow.net/reviews/eys-cafe-bistro-fethiye-446068",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Vegan peynirli pizza ve falafel salatası seçenekleri doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=8024690440321905727",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Foça 1054. Sk. No:80 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Ev yapımı hamur işleri ve limonlu mereng turta ile güçlü pastane kökeni",
+        "Vegan dostu ve gün batımı manzaralı sahil oturumu"
+      ],
+      "cons": [
+        "Çok geniş menü nedeniyle yoğun akşam yemeklerinde bekleme olabiliyor",
+        "Kordon yürüyüş trafiğine doğrudan açık"
+      ],
+      "uncertainties": [
+        "Canlı müzik programları haftalık duyuruluyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "on-masa-meyhane-calis",
+      "categoryId": "denemelisin",
+      "resolvedName": "10 Masa Meyhane",
+      "branchName": "Foça, Yerguzlar Cd. No:37, 48300 Fethiye/Muğla",
+      "placeId": "ChIJySO65tpDwBQR-H9objpmJ-k",
+      "coordinates": {
+        "lat": 36.6574846,
+        "lng": 29.1214339
+      },
+      "rating": 4.9,
+      "userRatingCount": 123,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16800509336075403256",
+      "recommendedPrimary": [
+        "Pastırmalı Humus & Vişneli Yaprak Sarma",
+        "Zırh Kıyması Adana / Antep Kebap",
+        "Fırın Helva & Kabak Tatlısı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli Kabak & Fıstıklı Hasır Kadayıf",
+          "note": "Rakı-meze masasının sonunda paylaşımlık geleneksel tatlı kapanışıdır.",
+          "proof": "10 Masa Meyhane resmi menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Adından da anlaşılacağı gibi sınırlı masalı samimi iç ve ön alan esnaf meyhanesi",
+        "crowdAndNoise": "Yerel müdavimler ve komşularla akşamları dolan samimi sohbet ortamı",
+        "disadvantage": "Sahil manzarası bulunmuyor ve Çorbacı Fethiye ile aynı bina numarasında yer aldığı için giriş tabelasına dikkat edilmeli; küçük kapasite nedeniyle rezervasyon gerekir",
+        "transit": "Foça Mahallesi Yerguzlar Caddesi No:37 adresinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Fethiye TV — 10 Masa Meyhane Ocakbaşı Haberi",
+          "url": "https://www.fethiyetv.com/10-masa-meyhanede-ocakbasi-keyfi",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Esnaf meyhanesi konsepti, yerel hedef kitle ve zırh kıyması ocakbaşı mutfağı haberi"
+        },
+        {
+          "title": "Muğla Gazetesi — 10 Masa Meyhane Fethiye Açılışı",
+          "url": "https://www.muglagazetesi.com.tr/fethiyede-meyhane-acilisinda-dua-edildi-sosyal-medya-ikiye-bolundu-152202h.htm",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mayıs 2026 Fethiye açılışı yerel basın doğrulaması"
+        },
+        {
+          "title": "10 Masa Meyhane Resmi Sitesi",
+          "url": "https://10masameyhane.com",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Resmi dijital meze, ocakbaşı ve tatlı menü kayıtları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=16800509336075403256",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Foça Yerguzlar Cd. No:37 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Turist odaklı fiyatlamadan uzak samimi yerel esnaf meyhanesi",
+        "Meze ve zırh kıyması ocakbaşının aynı masada buluşması"
+      ],
+      "cons": [
+        "Yeni bir işletme olduğu için uzun dönemli sezon istikrarı izlenmeli",
+        "Az sayıda masa nedeniyle spontane girişte yer kalmayabiliyor"
+      ],
+      "uncertainties": [
+        "Yoğun hafta sonları için masa rezervasyonu gerekliliği yüksek"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fethiye-meze-evi-calis",
+      "categoryId": "denemelisin",
+      "resolvedName": "Fethiye Meze Evi",
+      "branchName": "Foça, Yerguzlar Cd. No:80/B, 48300 Fethiye/Muğla",
+      "placeId": "ChIJi-LtEHNDwBQRuIlkogsf5tY",
+      "coordinates": {
+        "lat": 36.6606486,
+        "lng": 29.119949
+      },
+      "rating": 4.8,
+      "userRatingCount": 137,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/fethiyemezeevi/",
+      "mapsUri": "https://maps.google.com/?cid=15485098503589628344",
+      "recommendedPrimary": [
+        "Zeytinyağlı Yaprak Sarma",
+        "Köpoğlu & Fırınlanmış Kabak Dip",
+        "Fava & Şakşuka"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Atom & Baharatlı Salata Çeşitleri",
+          "note": "Evde meze sofrası kurmak isteyenlerin paket siparişlerde en çok eklediği çeşitlerdir.",
+          "proof": "Wanderlog ve Yemeksepeti kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağırlıklı olarak günlük meze tezgahı ve gel-al / paket servis düzeni; sınırlı hızlı tadım alanı",
+        "crowdAndNoise": "Akşamüstü evine veya sahile meze alan mahalle sakinleriyle düzenli",
+        "disadvantage": "Tam servisli büyük bir meyhane salonu yerine meze evi ve paket noktası gibi çalışır; porsiyon ölçüleri kişiye göre küçük bulunabiliyor",
+        "transit": "Foça Mahallesi Yerguzlar Caddesi No:80/B adresinde (Sobre Coffee bitişiğinde)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restaurant Guru — Fethiye Meze Evi",
+          "url": "https://restaurantguru.com/Fethiye-Meze-Evi-Fethiye",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Günlük meze tazeliği, hijyen ve samimi işletme geri bildirimleri"
+        },
+        {
+          "title": "Yemeksepeti — Fethiye Meze Evi",
+          "url": "https://www.yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Zeytinyağlı yaprak sarma, fava, köpoğlu ve şakşuka menü doğrulaması"
+        },
+        {
+          "title": "Fethiye Meze Evi Resmi Instagram",
+          "url": "https://www.instagram.com/fethiyemezeevi/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Günlük çıkan taze zeytinyağlı ve meze duyuruları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=15485098503589628344",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Foça Yerguzlar Cd. No:80/B konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Günlük ev yapımı taze zeytinyağlılar ve yüksek hijyen standartı",
+        "Çalış ev/yazlık mutfakları için pratik meze çözümü"
+      ],
+      "cons": [
+        "Uzun süreli oturmalı restoran veya meyhane düzeni sunmuyor",
+        "Meze porsiyonları paylaşım için birden fazla kap gerektirebiliyor"
+      ],
+      "uncertainties": [
+        "Bazı çeşitler gün içinde erken saatlerde tükenebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "zoi-fish-calis",
+      "categoryId": "balik",
+      "resolvedName": "Zoi Fish Restaurant",
+      "branchName": "FOÇA MAH 1085 SOK, Foça, Barış Manço Blv. No:19, 48300 Fethiye/Muğla",
+      "placeId": "ChIJ-bVdihhDwBQR5OL1Gg3-yNs",
+      "coordinates": {
+        "lat": 36.665732999999996,
+        "lng": 29.107002999999995
+      },
+      "rating": 4.8,
+      "userRatingCount": 3183,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://zoifishrestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=15837187421888701156",
+      "recommendedPrimary": [
+        "Levrek Lokum & Izgara Levrek",
+        "Karides Mantı & Ahtapot Tandır",
+        "Peynirli Levrek Sarma"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kalamar Dolma & Tava",
+          "note": "Balık öncesi ara sıcak olarak masada sıkça paylaşılan imza deniz ürünüdür.",
+          "proof": "Zoi Fish resmi menüsü"
+        },
+        {
+          "name": "Deniz Börülcesi & Semizotu Mezeleri",
+          "note": "Taze balık yanına Ege otlarıyla eşlik eden hafif başlangıçlardır.",
+          "proof": "Zoi Fish resmi sitesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Sahil hattında gün batımı cepheli geniş teras ve kapalı salon masaları; rezervasyon önerilir",
+        "crowdAndNoise": "Yüksek hacimli ancak düzenli servis akışı; gün batımı öncesi masa doluluğu artar",
+        "disadvantage": "Bölgenin üst fiyat bandında yer alır ve gün batımı saatlerinde rezervasyonsuz masa bulmak zorlaşabilir",
+        "transit": "Foça Mahallesi 1085. Sokak, Barış Manço Bulvarı No:19 sahil bağlantısında"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Zoi Fish Restaurant Resmi Sitesi",
+          "url": "https://zoifishrestaurant.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Levrek lokum, karides mantı, peynirli levrek sarma ve meze menüsü"
+        },
+        {
+          "title": "Wanderlog — Fethiye En İyi Deniz Ürünleri Listesi",
+          "url": "https://wanderlog.com/view/nkncgnxsoc/the-29-best-seafood-restaurants-in-fethiye/shared",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çalış gün batımı konumu, meze tazeliği ve servis kalitesi değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=15837187421888701156",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Foça 1085. Sk. Barış Manço Blv. No:19 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Yüksek memnuniyet skoru ve standart üstü sıcak ara lezzetler",
+        "Çalış gün batımı hattının referans balık sofrası"
+      ],
+      "cons": [
+        "Üst fiyat segmentinde konumlanıyor",
+        "Yoğun yaz akşamlarında rezervasyon şart"
+      ],
+      "uncertainties": [
+        "Günlük özel balık türleri av mevsimine göre değişiyor"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "balik-pazari-calis",
+      "categoryId": "balik",
+      "resolvedName": "BALIK PAZARI ÇALIŞ",
+      "branchName": "Foça, Barış Manço Blv. No:59, 48300 Fethiye/Muğla",
+      "placeId": "ChIJhRAg_e5DwBQRL7qNid7g38Q",
+      "coordinates": {
+        "lat": 36.662275,
+        "lng": 29.1205459
+      },
+      "rating": 4.6,
+      "userRatingCount": 967,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14186304597635480111",
+      "recommendedPrimary": [
+        "Tezgah Seçimi Izgara Levrek / Çipura / Barbun",
+        "Kalamar Tava & Ahtapot Izgara",
+        "Deniz Ürünleri Güveç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mantarlı Kaşarlı Jumbo Karides",
+          "note": "Seçilen balığın yanında sıcak paylaşımlık olarak tercih edilen ara sıcaktır.",
+          "proof": "Yemeksepeti kooperatif menüsü"
+        },
+        {
+          "name": "Fava & Kuru Cacık",
+          "note": "Tezgah balığına eşlik eden sade ve dengeli geleneksel mezelerdir.",
+          "proof": "Yemeksepeti Çalış Balık Pazarı kaydı"
+        }
+      ],
+      "suitability": {
+        "seating": "Kooperatif tezgahı önünde ve kanal/bulvar hattında sade, rahat masa düzeni",
+        "crowdAndNoise": "Akşam saatlerinde hem yerel aileler hem taze balık arayan tatilcilerle hareketli",
+        "disadvantage": "Lüks sahil balıkçıları gibi şık masa ambiyansı sunmaz; akşam yoğunluğunda tezgah sırası beklenebilir",
+        "transit": "Foça Mahallesi Barış Manço Bulvarı No:59 üzerinde, ulaşımı kolay konumda"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Fethiye Rehberi — Balık Pazarı Çalış Kooperatifi",
+          "url": "https://www.fethiyerehberi.com/balik-pazari-calis-0534-555-73-37",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "S.S. Çalış Su Ürünleri Kooperatifi günlük balık tezgahı ve pişirme düzeni doğrulaması"
+        },
+        {
+          "title": "Restaurant Guru — Balık Pazarı Çalış",
+          "url": "https://restaurantguru.com/Balik-Pazari-Calis-Fethiye",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tezgah tazeliği, erişilebilir fiyatlar ve akşam yoğunluğu notları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=14186304597635480111",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Foça Barış Manço Blv. No:59 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Kooperatif tezgahından doğrudan balık seçme güvencesi",
+        "Sahil lüks restoranlarına göre daha ulaşılabilir maliyet"
+      ],
+      "cons": [
+        "Akşam geç saatte bazı tezgah türleri tükenebiliyor",
+        "Sade lokanta düzeni özel kutlama arayanlara basit gelebilir"
+      ],
+      "uncertainties": [
+        "Mevsimsel balık çeşitliliği günlük av durumuna bağlı"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "calis-balikcisi-calis",
+      "categoryId": "balik",
+      "resolvedName": "Çalış Balıkçısı",
+      "branchName": "Çalış Sahili, Foça, 1054. Sk. No: 66, 48300 Fethiye/Muğla",
+      "placeId": "ChIJeUze-FFDwBQRrgR-tJ3iZvg",
+      "coordinates": {
+        "lat": 36.6630325,
+        "lng": 29.1082134
+      },
+      "rating": 4.5,
+      "userRatingCount": 2584,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://calisbalikcisi.com/",
+      "mapsUri": "https://maps.google.com/?cid=17899242935996515502",
+      "recommendedPrimary": [
+        "Levrek Lokum",
+        "Vitrin Seçimi Girit Ezmesi & Deniz Mahsüllü Mezeler",
+        "Izgara Çipura / Jumbo Karides"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Deniz Mahsüllü Börek & Karides Güveç",
+          "note": "Ana balık öncesi meze vitrininden seçilen sıcak başlangıç olarak öne çıkar.",
+          "proof": "Turkey's For Life ve resmi site"
+        },
+        {
+          "name": "Balık Çorbası",
+          "note": "Serin akşamlarda hafif başlangıç arayan konukların tercihi olur.",
+          "proof": "Çalış Balıkçısı resmi menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Sahil yürüyüş yolunda gün batımı cepheli açık teras ve meze dolaplı iç salon",
+        "crowdAndNoise": "Yüksek hacimli sahil restoranı; gün batımı saatlerinde özellikle yazın oldukça yoğun",
+        "disadvantage": "Sabit basılı fiyat listesi yerine tezgah ve vitrin seçimi usulü çalışıyor; üst fiyat bandında konumlanıyor",
+        "transit": "Foça Mahallesi 1054. Sokak No:66, Çalış Plajı sahil yürüyüş bandında"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Turkey's For Life — Çalış Balıkçısı",
+          "url": "https://www.turkeysforlife.com/calis-balikcisi-beachside-seafood-dining",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Vitrin meze dolabı, deniz ürünleri böreği ve sahil gün batımı deneyimi incelemesi"
+        },
+        {
+          "title": "Çalış Balıkçısı Resmi Sitesi",
+          "url": "https://calisbalikcisi.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Levrek lokum, taze balık tezgahı ve günlük meze konsepti"
+        },
+        {
+          "title": "Restaurant Guru — Çalış Balıkçısı",
+          "url": "https://restaurantguru.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yüksek ziyaretçi memnuniyeti ve taze deniz ürünleri geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=17899242935996515502",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Foça 1054. Sk. No:66 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Vitrin meze seçimiyle tazelik takibi kolaylığı",
+        "Köklü Çalış sahili gün batımı adresi"
+      ],
+      "cons": [
+        "Yüksek fiyat segmentinde yer alıyor",
+        "Yaz sezonunda yüksek turistik kalabalık oluşabiliyor"
+      ],
+      "uncertainties": [
+        "Tezgah balığı çeşitleri günün avına göre farklılık gösterir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ju-balik-calis",
+      "categoryId": "balik",
+      "resolvedName": "Ju Balık Restaurant Fethiye",
+      "branchName": "Foça, 1054. Sk. No:34/A, 48300 Fethiye/Muğla",
+      "placeId": "ChIJ5_dVFnNDwBQRd-huSoVlOsM",
+      "coordinates": {
+        "lat": 36.660668400000006,
+        "lng": 29.1093951
+      },
+      "rating": 4.5,
+      "userRatingCount": 310,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://jufethiye.com/",
+      "mapsUri": "https://maps.google.com/?cid=14067668009199003767",
+      "recommendedPrimary": [
+        "Balık Simit",
+        "Beğendili Karides",
+        "Dolgulu Levrek & Izgara Bebek Kalamar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Dövme Patlıcan Üzeri Atom & Sıcak Ege Otları",
+          "note": "Şef spesiyalleri öncesi masaya gelen özgün Ege başlangıçlarıdır.",
+          "proof": "Ju Balık resmi menüsü"
+        },
+        {
+          "name": "Ahtapot Tandır",
+          "note": "Yumuşak dokusuyla akşam yemeğinde paylaşımlık ara sıcak olarak tercih edilir.",
+          "proof": "Ju Balık resmi sitesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Çalış Plajı cepheli açık teras ve iç salon masa düzeni",
+        "crowdAndNoise": "Gün batımı ve canlı müzik akşamlarında keyifli, temposu orta-yüksek sahil atmosferi",
+        "disadvantage": "Canlı müzik olan akşamlar sakin sohbet arayanlara sesli gelebiliyor; menüde et-makarna ekleri de bulunduğu için salt balıkçı atmosferinden biraz ayrılıyor",
+        "transit": "Foça Mahallesi 1054. Sokak No:34/A, Çalış Plajı yürüyüş yolu üzerinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Ju Balık Resmi Sitesi",
+          "url": "https://jufethiye.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Balık Simit, beğendili karides, dolgulu levrek ve sıcak Ege otları menü doğrulaması"
+        },
+        {
+          "title": "Restaurant Guru — Ju Balık Fethiye",
+          "url": "https://restaurantguru.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Gün batımı konumu, canlı müzik ve özgün deniz ürünleri değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=14067668009199003767",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Foça 1054. Sk. No:34/A konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Balık Simit ve beğendili karides gibi yaratıcı şef spesiyalleri",
+        "Sahil bandında canlı ve sıcak akşam atmosferi"
+      ],
+      "cons": [
+        "Canlı müzik saatlerinde ses düzeyi artabiliyor",
+        "Geniş mutfak karması nedeniyle odak sadece balıkta değil"
+      ],
+      "uncertainties": [
+        "Sezon içi canlı müzik akşamları değişiklik gösterebiliyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    }
+  ]
+}

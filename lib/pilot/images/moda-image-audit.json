@@ -1,0 +1,286 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-10-31",
+  "scope": "Moda / Kahve / dört seçilmiş fiziksel şube",
+  "stage": "source-and-rights-audit-only",
+  "notRuntimeAuthorization": true,
+  "method": {
+    "publicPagesOnly": true,
+    "imageBytesDownloaded": false,
+    "instagramScraped": false,
+    "googlePhotosApiRequests": 0,
+    "paidApiRequests": 0,
+    "apiCostUsd": 0,
+    "modelApiRequests": 0,
+    "limitations": [
+      "Sayfa metni, görsel etiketi, kaynak kredisi ve adres bağlamı incelendi; fotoğraf baytları indirilmedi veya görsel olarak doğrulanmadı.",
+      "Kullanım hakkı bulunamadı ifadesi hak sahibinin izin vermeyeceği anlamına gelmez.",
+      "Sınırlı Wikimedia Commons aramalarında doğru şubeye ait uygun lisanslı görsel saptanmadı; kapsamlı yokluk iddiası değildir.",
+      "Mevcut ürün kaynaklarında işletme-ürün eşleşmesi ve yeniden yayın hakkı birlikte doğrulanmış ürün fotoğrafı saptanmadı."
+    ]
+  },
+  "candidates": [
+    {
+      "id": "cekirdek-barista-exterior",
+      "venueId": "osm-node-5764070654",
+      "venueName": "Çekirdek",
+      "targetBranchAddress": "Şair Latifi 9/A",
+      "kind": "venue-photo",
+      "sourceType": "editorial",
+      "sourcePageUrl": "https://www.baristamagazine.com/5-cool-cafes-to-check-out-in-kadikoy-istanbul/",
+      "assetLocator": "Çekirdek dış cephe fotoğrafı",
+      "assetUrl": null,
+      "sourcePublishedAt": "2026-03-02",
+      "checkedOn": "2026-10-31",
+      "branchMatch": {
+        "status": "venue-associated",
+        "proofUrl": "https://www.baristamagazine.com/5-cool-cafes-to-check-out-in-kadikoy-istanbul/",
+        "notes": "Yazıda işletme adı var; fotoğraf için sokak/kapı numarası ve görsel kimliği ayrıca doğrulanmalı.",
+        "verified": false
+      },
+      "productMatch": null,
+      "rights": {
+        "status": "unverified",
+        "license": null,
+        "permissionProof": null,
+        "commercialRedistributionVerified": false,
+        "notes": "İncelenen kaynak sayfasında Yerini Ayır için yeniden yayın izni veya uygun açık lisans doğrulanamadı. Atıf, izin yerine geçmez."
+      },
+      "attribution": {
+        "sourceCredit": "Benjamin Sand",
+        "requiredDisplay": null,
+        "status": "pending-rights-terms"
+      },
+      "verificationStatus": "needs-permission-and-image-validation",
+      "visitorEligible": false
+    },
+    {
+      "id": "story-official-moda",
+      "venueId": "osm-node-6124757286",
+      "venueName": "Story Coffee",
+      "targetBranchAddress": "Dalga Sokak 22",
+      "kind": "venue-photo",
+      "sourceType": "operator",
+      "sourcePageUrl": "https://storyroasters.com/pages/kafelerimiz",
+      "assetLocator": "Story Moda bölümündeki Story Moda etiketli görsel",
+      "assetUrl": null,
+      "sourcePublishedAt": null,
+      "checkedOn": "2026-10-31",
+      "branchMatch": {
+        "status": "source-labeled-branch",
+        "proofUrl": "https://storyroasters.com/pages/kafelerimiz",
+        "notes": "Aynı bölümde Moda / Dalga Sokak 22 adresi bulunuyor; görüntünün kendisi bağımsız görsel incelemeden geçmedi.",
+        "verified": false
+      },
+      "productMatch": null,
+      "rights": {
+        "status": "unverified",
+        "license": null,
+        "permissionProof": null,
+        "commercialRedistributionVerified": false,
+        "notes": "İncelenen kaynak sayfasında Yerini Ayır için yeniden yayın izni veya uygun açık lisans doğrulanamadı. Atıf, izin yerine geçmez."
+      },
+      "attribution": {
+        "sourceCredit": null,
+        "requiredDisplay": null,
+        "status": "pending-rights-terms"
+      },
+      "verificationStatus": "needs-permission-and-image-validation",
+      "visitorEligible": false
+    },
+    {
+      "id": "guten-timeout",
+      "venueId": "osm-node-8017443297",
+      "venueName": "Guten Morgen",
+      "targetBranchAddress": "Fırıldak Sokak 19/B",
+      "kind": "venue-photo",
+      "sourceType": "editorial",
+      "sourcePageUrl": "https://www.timeout.com/istanbul/tr/restoranlar/guten-morgen-1",
+      "assetLocator": "Guten Morgen etiketli fotoğraf",
+      "assetUrl": null,
+      "sourcePublishedAt": "2024-03-12",
+      "checkedOn": "2026-10-31",
+      "branchMatch": {
+        "status": "venue-associated",
+        "proofUrl": "https://www.timeout.com/istanbul/tr/restoranlar/guten-morgen-1",
+        "notes": "Yayın Fırıldak Sokak 19 adresini veriyor; üst konum etiketi Üsküdar ile çelişiyor. Fotoğraftaki şube ayrıca doğrulanmalı.",
+        "verified": false
+      },
+      "productMatch": null,
+      "rights": {
+        "status": "unverified",
+        "license": null,
+        "permissionProof": null,
+        "commercialRedistributionVerified": false,
+        "notes": "İncelenen kaynak sayfasında Yerini Ayır için yeniden yayın izni veya uygun açık lisans doğrulanamadı. Atıf, izin yerine geçmez."
+      },
+      "attribution": {
+        "sourceCredit": "Guten Morgen",
+        "requiredDisplay": null,
+        "status": "pending-rights-terms"
+      },
+      "verificationStatus": "needs-permission-and-image-validation",
+      "visitorEligible": false
+    },
+    {
+      "id": "montag-official-moda",
+      "venueId": "osm-node-9375785317",
+      "venueName": "Montag",
+      "targetBranchAddress": "Bademaltı Sokak 22/A",
+      "kind": "venue-photo",
+      "sourceType": "operator",
+      "sourcePageUrl": "https://www.montagcoffee.com/pages/moda",
+      "assetLocator": "Montag Coffee Moda Espresso Bar etiketli görsel",
+      "assetUrl": null,
+      "sourcePublishedAt": null,
+      "checkedOn": "2026-10-31",
+      "branchMatch": {
+        "status": "source-labeled-branch",
+        "proofUrl": "https://www.montagcoffee.com/pages/moda",
+        "notes": "Resmî Moda sayfası Bademaltı 22/A adresini veriyor; görüntünün kendisi bağımsız görsel incelemeden geçmedi.",
+        "verified": false
+      },
+      "productMatch": null,
+      "rights": {
+        "status": "unverified",
+        "license": null,
+        "permissionProof": null,
+        "commercialRedistributionVerified": false,
+        "notes": "İncelenen kaynak sayfasında Yerini Ayır için yeniden yayın izni veya uygun açık lisans doğrulanamadı. Atıf, izin yerine geçmez."
+      },
+      "attribution": {
+        "sourceCredit": null,
+        "requiredDisplay": null,
+        "status": "pending-rights-terms"
+      },
+      "verificationStatus": "needs-permission-and-image-validation",
+      "visitorEligible": false
+    },
+    {
+      "id": "montag-barista-interior",
+      "venueId": "osm-node-9375785317",
+      "venueName": "Montag",
+      "targetBranchAddress": "Bademaltı Sokak 22/A",
+      "kind": "venue-photo",
+      "sourceType": "editorial",
+      "sourcePageUrl": "https://www.baristamagazine.com/5-cool-cafes-to-check-out-in-kadikoy-istanbul/",
+      "assetLocator": "Montag iç mekan fotoğrafı",
+      "assetUrl": null,
+      "sourcePublishedAt": "2026-03-02",
+      "checkedOn": "2026-10-31",
+      "branchMatch": {
+        "status": "unresolved",
+        "proofUrl": "https://www.baristamagazine.com/5-cool-cafes-to-check-out-in-kadikoy-istanbul/",
+        "notes": "Yazıda birden fazla Montag şubesi anlatılıyor. Marka eşleşmesi Moda şubesi doğrulaması değildir.",
+        "verified": false
+      },
+      "productMatch": null,
+      "rights": {
+        "status": "unverified",
+        "license": null,
+        "permissionProof": null,
+        "commercialRedistributionVerified": false,
+        "notes": "İncelenen kaynak sayfasında Yerini Ayır için yeniden yayın izni veya uygun açık lisans doğrulanamadı. Atıf, izin yerine geçmez."
+      },
+      "attribution": {
+        "sourceCredit": "Benjamin Sand",
+        "requiredDisplay": null,
+        "status": "pending-rights-terms"
+      },
+      "verificationStatus": "needs-permission-and-image-validation",
+      "visitorEligible": false
+    }
+  ],
+  "venues": [
+    {
+      "venueId": "osm-node-5764070654",
+      "name": "Çekirdek",
+      "branch": "Şair Latifi 9/A",
+      "usablePhotoIds": [],
+      "verifiedProductPhotoIds": [],
+      "fallback": {
+        "kind": "category-illustration",
+        "category": "coffee",
+        "required": true,
+        "label": "Temsili görsel",
+        "assetUrl": null,
+        "rightsProof": null,
+        "status": "required-not-created"
+      }
+    },
+    {
+      "venueId": "osm-node-6124757286",
+      "name": "Story Coffee",
+      "branch": "Dalga Sokak 22",
+      "usablePhotoIds": [],
+      "verifiedProductPhotoIds": [],
+      "fallback": {
+        "kind": "category-illustration",
+        "category": "coffee",
+        "required": true,
+        "label": "Temsili görsel",
+        "assetUrl": null,
+        "rightsProof": null,
+        "status": "required-not-created"
+      }
+    },
+    {
+      "venueId": "osm-node-8017443297",
+      "name": "Guten Morgen",
+      "branch": "Fırıldak Sokak 19/B",
+      "usablePhotoIds": [],
+      "verifiedProductPhotoIds": [],
+      "fallback": {
+        "kind": "category-illustration",
+        "category": "coffee",
+        "required": true,
+        "label": "Temsili görsel",
+        "assetUrl": null,
+        "rightsProof": null,
+        "status": "required-not-created"
+      }
+    },
+    {
+      "venueId": "osm-node-9375785317",
+      "name": "Montag",
+      "branch": "Bademaltı Sokak 22/A",
+      "usablePhotoIds": [],
+      "verifiedProductPhotoIds": [],
+      "fallback": {
+        "kind": "category-illustration",
+        "category": "coffee",
+        "required": true,
+        "label": "Temsili görsel",
+        "assetUrl": null,
+        "rightsProof": null,
+        "status": "required-not-created"
+      }
+    }
+  ],
+  "googlePhotos": {
+    "status": "inactive-not-requested",
+    "placeIdentityVerified": false,
+    "storePhotoNames": false,
+    "storePhotoBytes": false,
+    "allowNextImagePersistentCache": false,
+    "authorAttributionsRequiredWhenProvided": true,
+    "policyUrls": [
+      "https://developers.google.com/maps/documentation/places/web-service/place-photos",
+      "https://developers.google.com/maps/documentation/places/web-service/policies"
+    ],
+    "pricing": {
+      "sourceUrl": "https://developers.google.com/maps/billing-and-pricing/pricing",
+      "sku": "Place Details Photos",
+      "monthlyFreeCap": 1000,
+      "firstPaidTierUsdPer1000": 7,
+      "fourMediaRetrievalsBeforeFreeAllowanceUsd": 0.028,
+      "excludes": [
+        "identity matching",
+        "search/details metadata requests",
+        "tax"
+      ],
+      "accountRemainingFreeAllowance": null,
+      "approvalRequiredBeforeRequests": true
+    }
+  }
+}

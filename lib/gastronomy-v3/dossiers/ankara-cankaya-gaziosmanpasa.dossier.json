@@ -1,0 +1,1408 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "ankara-cankaya-gaziosmanpasa",
+  "displayName": "Gaziosmanpaşa, Çankaya, Ankara",
+  "verifiedAt": "2026-11-17T18:37:45.928Z",
+  "selectedCount": 19,
+  "rejectedControls": [
+    {
+      "id": "ctrl-gop-doublezero-chain",
+      "resolvedName": "Double Zero Gop",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gop-divan-chain",
+      "resolvedName": "Divan Brasserie Çankaya",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gop-mezzaluna-chain",
+      "resolvedName": "Mezzaluna",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gop-sofaburger-chain",
+      "resolvedName": "Sofa Burger GOP",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gop-thestock-chain",
+      "resolvedName": "the stock Arjantin",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gop-bigbaker-chain",
+      "resolvedName": "BIG BAKER",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gop-kahvedunyasi-chain",
+      "resolvedName": "Kahve Dünyası-Ankara Büyükesat",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gop-arabica-chain",
+      "resolvedName": "Arabica Coffee House Köroğlu",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gop-basil-chain",
+      "resolvedName": "basil gaziosmanpaşa",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gop-tarabya-chain",
+      "resolvedName": "Tarabya Balık",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gop-guava-noncoffee",
+      "resolvedName": "Guava Çikolata",
+      "reason": "kahve_category_not_coffee_specialist:chocolate_shop"
+    },
+    {
+      "id": "ctrl-gop-out-tunali-eksimaya",
+      "resolvedName": "Ekşi Maya Tunalı",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Gaziosmanpaşa/Gaziosmanpasa/Büyükesat/Buyukesat/Kazım Özalp/Kazim Ozalp, adres: Occidendal Otel, Barbaros, Güniz Sk. 42/ 1 D:1. katı, 06660 Çankaya/Ankara)"
+    },
+    {
+      "id": "ctrl-gop-out-ayranci-oak",
+      "resolvedName": "OAK Coffee Co.",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Gaziosmanpaşa/Gaziosmanpasa/Büyükesat/Buyukesat/Kazım Özalp/Kazim Ozalp, adres: Ayrancı, Kuzgun Cd No: 18 D:C, 06830 Çankaya/Ankara)"
+    },
+    {
+      "id": "ctrl-gop-low-vento",
+      "resolvedName": "Vento Italiano Ristorante",
+      "reason": "below_quality_threshold:★3.7(1094)"
+    },
+    {
+      "id": "ctrl-gop-low-cafemiz",
+      "resolvedName": "CAFEMİZ",
+      "reason": "below_quality_threshold:★4.1(1851)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "gop-origano-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "Origano Pizza & Pasta",
+      "branchName": "Kazım Özalp, Rabat Sk. No:13/A, 06700 Çankaya/Ankara",
+      "placeId": "ChIJV4GK9CNP0xQRBk8H8Sm-myY",
+      "coordinates": {
+        "lat": 39.895130699999996,
+        "lng": 32.8707975
+      },
+      "rating": 4.6,
+      "userRatingCount": 1032,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://origanorestoran.com/",
+      "mapsUri": "https://maps.google.com/?cid=2782026282178137862",
+      "recommendedPrimary": [
+        "Odun Fırını Margherita / Napoliten Pizza",
+        "El Yapımı Taze Makarna",
+        "Fırın Başlangıçları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Yapımı Taze Makarna & İtalyan Tatlıları",
+          "note": "Napoliten pizzaların yanı sıra günlük açılan taze makarna tabakları ve tiramisu kapanışları sıkça tercih ediliyor.",
+          "proof": "origanorestoran.com menü ve mutfak bilgileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ferah bahçe masaları ve açık mutfağı gören şık, sakin iç salon",
+        "crowdAndNoise": "Gerçek odun fırını İtalyan mutfağı arayan çiftler ve akşam misafirleri",
+        "disadvantage": "Akşam bahçe ve salon masaları dolduğu için rezervasyon önerilir; yokuşlu Rabat Sokak’ta park sınırlıdır",
+        "transit": "Kazım Özalp Mahallesi Rabat Sokak No:13/A (Arjantin üst paraleli)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Origano Resmi Sitesi",
+          "url": "https://origanorestoran.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Şef Meryem Doğan imzalı Napoliten pizza, el yapımı makarna ve bahçe detayları"
+        },
+        {
+          "title": "Yemek.com & Nerdeyiyelim",
+          "url": "https://yemek.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Açık mutfak odun fırını pizzaları ve taze makarna değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Şef yönetiminde tek şubeli gerçek İtalyan mutfağı",
+        "Bahçe ve pizza + makarna kalitesi"
+      ],
+      "cons": [
+        "Sokak park yeri akşam saatlerinde kısıtlı"
+      ],
+      "uncertainties": [
+        "Hafta sonu bahçe masaları hızlı dolabilir"
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gop-arca-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Arca Burger Ankara",
+      "branchName": "Büyükesat, Uğur Mumcu Cd. 96/8, 06680 Çankaya/Ankara",
+      "placeId": "ChIJdyjFZZpP0xQR2Lc0FT0iD4w",
+      "coordinates": {
+        "lat": 39.896350999999996,
+        "lng": 32.8798528
+      },
+      "rating": 4.5,
+      "userRatingCount": 205,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://arcaburger.framer.ai/",
+      "mapsUri": "https://maps.google.com/?cid=10092322935704696792",
+      "recommendedPrimary": [
+        "Molendini Gourmand / Aurum Bite",
+        "Pluvia Soslu Patates"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Pluvia Soslu Çıtır Patates",
+          "note": "İmza gurme burgerlerin yanına özel reçeteli Pluvia sosuyla sunulan çıtır patatesler tercih ediliyor.",
+          "proof": "arcaburger.framer.ai menüsü ve Menu-TR kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt, düzenli iç oturum ve Uğur Mumcu üst hattı vitrini",
+        "crowdAndNoise": "GOP ve Büyükesat çevresinde zincir dışı gurme burger arayanlar",
+        "disadvantage": "Paket servis akışı yoğundur ve küçük dükkân alanında masa sayısı azdır",
+        "transit": "Büyükesat Mahallesi Uğur Mumcu Caddesi No:96/8."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Arca Burger Resmi Sayfası",
+          "url": "https://arcaburger.framer.ai/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Molendini Gourmand, Aurum Bite, Kıyıntı ve Ventus Prime menüsü"
+        },
+        {
+          "title": "Menu-TR & SehrinMenusu",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Özel soslu gurme burger ve Pluvia soslu patates değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Klasik zincir burgerlerden ayrılan yaratıcı reçeteler",
+        "Tek şubeli özenli pişirim"
+      ],
+      "cons": [
+        "Sınırlı iç oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Yoğun paket saatlerinde mutfak teslimi uzayabilir"
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gop-buen-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "BUEN Coffee",
+      "branchName": "Büyükesat, Uğur Mumcu Cd. 95/A, 06500 Çankaya/Ankara",
+      "placeId": "ChIJVXDxp-hP0xQRWSqGEoiuS_A",
+      "coordinates": {
+        "lat": 39.896502,
+        "lng": 32.879201
+      },
+      "rating": 4.6,
+      "userRatingCount": 205,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.buencoffee.com/",
+      "mapsUri": "https://maps.google.com/?cid=17315125091805571673",
+      "recommendedPrimary": [
+        "Cortado / Americano",
+        "Pastel de Nata"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Taze Pastel de Nata",
+          "note": "Dışı çıtır katmanlı, içi yumuşak kremalı Portekiz turtası Pastel de Nata kahvelerin yanındaki birincil imza eşlikçisidir.",
+          "proof": "buencoffee.com menüsü ve yerel tatlı değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sakin iç oturma alanı ve Uğur Mumcu önü küçük açık masalar",
+        "crowdAndNoise": "Sakin ortamda kahve ve taze Pastel de Nata molası veren Büyükesat müdavimleri",
+        "disadvantage": "Büyük yemek menüsü arayanlar için sade kahve-tatlı düzenindedir",
+        "transit": "Büyükesat Mahallesi Uğur Mumcu Caddesi No:95/A."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "BUEN Coffee Resmi Sitesi",
+          "url": "http://www.buencoffee.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Uğur Mumcu Cd. 95/A adresi ve nitelikli espresso menüsü"
+        },
+        {
+          "title": "Restoranim & Menu-TR BUEN",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Pastel de Nata tazeliği, Cortado ve sakin ortam değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Ankara’da iyi kıvamlı Pastel de Nata + kahve ikilisi sunan nadir nokta",
+        "Sakin atmosfer"
+      ],
+      "cons": [
+        "Doyurucu öğün menüsü yok"
+      ],
+      "uncertainties": [
+        "Pastel de Nata tepsileri günlük stokla sınırlıdır"
+      ],
+      "selectionScore": 82,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gop-globica-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Globica Coffee Shop",
+      "branchName": "Büyükesat, Uğur Mumcu Cd. No:45, 06700 Çankaya/Ankara",
+      "placeId": "ChIJ68GwoZRP0xQR9yAAQAZUzQA",
+      "coordinates": {
+        "lat": 39.892423199999996,
+        "lng": 32.8748048
+      },
+      "rating": 4.5,
+      "userRatingCount": 817,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.globicacoffee.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=57794756045971703",
+      "recommendedPrimary": [
+        "V60 / Chemex Demleme",
+        "Flat White",
+        "Orman Meyveli Cheesecake"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sandviçler & Cheesecake Çeşitleri",
+          "note": "Laktozsuz süt opsiyonlu kahvelerinin yanında doyurucu kruvasan-sandviç çeşitleri ve zengin cheesecake seçkisi bulunur.",
+          "proof": "globicacoffee.com.tr menüsü ve yerel dizinler"
+        }
+      ],
+      "suitability": {
+        "seating": "Rahat, çalışmaya ve sohbete elverişli geniş masa düzeni ile açık teras bölümü",
+        "crowdAndNoise": "Laptopuyla çalışanlar, müdavimler ve akşam kahve molası verenler",
+        "disadvantage": "Uğur Mumcu üzerindeki yüksek popülerliği nedeniyle öğleden sonra masalar çabuk dolar",
+        "transit": "Büyükesat Mahallesi Uğur Mumcu Caddesi No:45/B."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Globica Coffee Resmi Sitesi",
+          "url": "https://www.globicacoffee.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "3. nesil V60/Chemex/Cold Brew demlemeler ve sandviç-cheesecake menüsü"
+        },
+        {
+          "title": "Menu-TR & Hammhum",
+          "url": "https://www.hammhum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Uğur Mumcu Cd. konumu, laktozsuz seçenekler ve çalışma alanı uyumu"
+        }
+      ],
+      "pros": [
+        "Hem filtre demleme derinliği hem de güçlü sandviç-cheesecake eşliği",
+        "Yüksek puan ve hacimli memnuniyet"
+      ],
+      "cons": [
+        "Öğleden sonra kalabalıklaşma"
+      ],
+      "uncertainties": [
+        "Hafta sonları dış oturumda bekleme olabilir"
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gop-atlas-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Atlas Coffee & Roastery",
+      "branchName": "Büyükesat, Kahraman Kadın Sokağı 17/a, 06700 Çankaya/Ankara",
+      "placeId": "ChIJu5ti2hVP0xQRvcbakObhprQ",
+      "coordinates": {
+        "lat": 39.893665,
+        "lng": 32.878505
+      },
+      "rating": 4.8,
+      "userRatingCount": 89,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13017340153349981885",
+      "recommendedPrimary": [
+        "Filtre Kahve / Espresso",
+        "Taze Kruvasan & Ev Yapımı Tatlı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Pati Dostu Sıcak Mahalle Kahvesi & Ev Yapımı Tatlı",
+          "note": "Ev yapımı tatlı çeşitleri ve evcil hayvan dostu yaklaşımıyla Büyükesat ara sokaklarında huzurlu bir mola noktası sunar.",
+          "proof": "Ankara kahve seçkileri ve Qrdos yerel kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük, sıcak sokak içi salon ve kapı önü sakin masalar",
+        "crowdAndNoise": "Kalabalık caddeden uzaklaşıp kitap veya kahve eşliğinde nefes almak isteyen mahalle sakinleri",
+        "disadvantage": "Ara sokaktaki küçük iç mekan nedeniyle kalabalık gruplara uygun değildir",
+        "transit": "Büyükesat Mahallesi Kahraman Kadın Sokağı No:17/A."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "AnkaraKahve Rehberi",
+          "url": "https://www.ankarakahve.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "3. nesil kahve sunumu ve pati dostu Büyükesat sokak kafesi incelemesi"
+        },
+        {
+          "title": "Menu-TR Atlas Cafe",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kahraman Kadın Sk. kahve, kruvasan ve ev yapımı tatlı değerlendirmesi"
+        },
+        {
+          "title": "Qrdos Yerel Dizin",
+          "url": "https://qrdos.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Büyükesat mahalle müdavim puanları ve adres teyidi"
+        }
+      ],
+      "pros": [
+        "Ana cadde gürültüsünden uzak sakin ara sokak",
+        "Evcil hayvan dostu samimi yaklaşım"
+      ],
+      "cons": [
+        "Sınırlı iç mekan kapasitesi"
+      ],
+      "uncertainties": [
+        "Günlük kruvasan ve tatlı stokları saatlere göre azalır"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gop-house-blend-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "House Blend Coffee Shop",
+      "branchName": "Gaziosmanpaşa, Uğur Mumcu Cd. No:17/A, 06000 Çankaya/Ankara",
+      "placeId": "ChIJpZ9OA15P0xQR3bqSlOXfLx8",
+      "coordinates": {
+        "lat": 39.892451799999996,
+        "lng": 32.8709673
+      },
+      "rating": 4.8,
+      "userRatingCount": 50,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2247260916214315741",
+      "recommendedPrimary": [
+        "Filtre Kahve / Latte",
+        "Günlük Ev Yapımı Tatlı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Alt Kat Çalışma Alanı & Keyifli Bahçe",
+          "note": "İki katlı ve bahçeli yerleşim sayesinde alt katta odaklanarak çalışmak, bahçede ise kahve sohbeti yapmak mümkün.",
+          "proof": "Menu-TR ve Neyiyelim değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Alt kat çalışma/toplantı masaları, ferah üst kat ve açık bahçe",
+        "crowdAndNoise": "Çalışmak için sessiz alan arayanlar ile bahçede kahve içen GOP sakinleri",
+        "disadvantage": "Etkinlik akşamlarında ana kat daha hareketli olur; sessizlik isteyenler çalışma katını seçmelidir",
+        "transit": "Gaziosmanpaşa (Kazım Özalp) Uğur Mumcu Caddesi No:17/A."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR House Blend Coffee",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Uğur Mumcu 17/A bahçe, kahve-tatlı menüsü ve çalışma katı değerlendirmesi"
+        },
+        {
+          "title": "Neyiyelim Ankara",
+          "url": "https://neyiyelim.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Gaziosmanpaşa nitelikli kahve durakları profili"
+        },
+        {
+          "title": "Bubilet Etkinlik Kayıtları",
+          "url": "https://www.bubilet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Stand-up ve kültür akşamlarına ev sahipliği yapan mekân doğrulaması"
+        }
+      ],
+      "pros": [
+        "Çalışma katı ile bahçe sosyalleşmesini net biçimde ayıran plan",
+        "Merkezi Uğur Mumcu konumu"
+      ],
+      "cons": [
+        "Etkinlik günlerinde erken saat dışında bahçe-salon kalabalık olabilir"
+      ],
+      "uncertainties": [
+        "Akşam etkinlik programları hafta içi günlere göre değişir"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gop-trilye-restoran",
+      "categoryId": "date",
+      "resolvedName": "Trilye Restoran",
+      "branchName": "Kazım Özalp, Kuleli Sokağı No: 32, 06680 Çankaya/Ankara",
+      "placeId": "ChIJgWWgw5VP0xQRPb6m-k-HePk",
+      "coordinates": {
+        "lat": 39.8940686,
+        "lng": 32.8719779
+      },
+      "rating": 4.5,
+      "userRatingCount": 3217,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.trilye.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=17976266690226732605",
+      "recommendedPrimary": [
+        "Mevsimlik Taze Deniz Balığı",
+        "Özel Deniz Mahsulleri Mezeleri",
+        "Sütlü Kadayıf / Tatlı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zengin Şarap Kavı & Ara Sıcak Mezeler",
+          "note": "Günlük av deniz balıklarına eşlik eden geniş kav seçkisi ve özenli ara sıcaklar özel kutlamaların temel parçasıdır.",
+          "proof": "trilyerestaurant.com menü ve mutfak kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Beyaz örtülü, şık, sakin üst segment salon ve özel davet masaları",
+        "crowdAndNoise": "Özel akşam kutlamaları, iş yemekleri ve üst düzey deniz ürünü sofraları",
+        "disadvantage": "Üst segment fiyat seviyesindedir ve özellikle akşamları rezervasyonsuz masa bulmak zordur",
+        "transit": "Kazım Özalp Mahallesi Kuleli Sokak No:32."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Trilye Resmi Sitesi",
+          "url": "http://www.trilye.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Süreyya Üzmez mutfağı, deniz bilinci ve Kuleli Sokak konumu"
+        },
+        {
+          "title": "Gastronomi Rehberleri & Seçkiler",
+          "url": "https://www.kisikatesakademi.com.tr/",
+          "date": "2026-10-20",
+          "kind": "award",
+          "note": "Türkiye genelinde ödüllü ve referans deniz mahsulleri restoranı doğrulaması"
+        },
+        {
+          "title": "GurmanAtlas & Vedat Milor Arşivi",
+          "url": "https://www.gurmanatlas.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ankara balık mutfağı liderliği ve istikrarlı ürün kalitesi değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Ankara’nın en saygın taze deniz ürünleri kurumlarından",
+        "Üst düzey masa servisi ve kav"
+      ],
+      "cons": [
+        "Yüksek bütçe seviyesi ve zorunlu rezervasyon gereksinimi"
+      ],
+      "uncertainties": [
+        "Günlük balık ve kabuklu deniz ürünleri av dönemine göre değişir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gop-charm-bistro",
+      "categoryId": "date",
+      "resolvedName": "Charm",
+      "branchName": "Gaziosmanpaşa, Arjantin Cd. No:6 D:A, 06700 Çankaya/Ankara",
+      "placeId": "ChIJJ3__QWBP0xQRPsFd2ldyYSk",
+      "coordinates": {
+        "lat": 39.8990864,
+        "lng": 32.8636243
+      },
+      "rating": 4.8,
+      "userRatingCount": 414,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.charmbistro.com/",
+      "mapsUri": "https://maps.google.com/?cid=2981790149947277630",
+      "recommendedPrimary": [
+        "Passion / Luna İmza Kokteyller",
+        "Bistro Paylaşımlı Tabaklar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sanat Galerisi İç Mekan & Arka Bahçe",
+          "note": "Şık iç mekan enstalasyonları ve sakin arka bahçe alanı özellikle iki kişilik akşam buluşmalarında tercih ediliyor.",
+          "proof": "charmbistro.com ve yerel bistro incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Estetik iç bar masaları ve ağaçlıklı arka bahçe oturumu",
+        "crowdAndNoise": "Şık ambiyansta kokteyl ve akşam sohbeti planlayan çiftler",
+        "disadvantage": "Etkinlik ve hafta sonu akşamlarında bahçe masaları hızlıca dolar; fiyatlar Arjantin çizgisindedir",
+        "transit": "Gaziosmanpaşa Arjantin Caddesi No:6/A."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Charm Resmi Sitesi",
+          "url": "https://www.charmbistro.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Mimar kurucular, kokteyl menüsü ve bahçe konsepti bilgileri"
+        },
+        {
+          "title": "Restoranim Charm",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Passion/Luna kokteylleri, servis kalitesi ve Arjantin ambiyansı incelemesi"
+        }
+      ],
+      "pros": [
+        "Zarif mimari atmosfer ve imza kokteyller",
+        "Arjantin Caddesi başında şık randevu adresi"
+      ],
+      "cons": [
+        "Hafta sonu bahçe masası için önceden ayırtma gerekir"
+      ],
+      "uncertainties": [
+        "Haftalık trivia veya sosyal etkinlik akşamlarında atmosfer daha canlı olabilir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gop-sargus-seafood",
+      "categoryId": "date",
+      "resolvedName": "Sargus Seafood & More",
+      "branchName": "Kazım Özalp, Nenehatun Cd No:111, 06700 Çankaya/Ankara",
+      "placeId": "ChIJp03bzN1P0xQRFmT_jmMn608",
+      "coordinates": {
+        "lat": 39.894390099999995,
+        "lng": 32.8688392
+      },
+      "rating": 4.6,
+      "userRatingCount": 382,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.sargus.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=5758739857077658646",
+      "recommendedPrimary": [
+        "Karides Ravioli",
+        "Levrekli Şevketi Bostan",
+        "Avokadolu Karides"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yaratıcı Deniz Ürünü Ara Sıcakları",
+          "note": "Klasik ızgara balıkların ötesinde karides ravioli ve Ege otlu deniz ürünü eşleşmeleri akşam menüsünü farklılaştırır.",
+          "proof": "sargus.com.tr menüsü ve yerel restoran değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Huzurlu, şık, masa aralıkları ferah akşam restoranı düzeni",
+        "crowdAndNoise": "Sakin müzik ve yaratıcı Akdeniz mutfağı arayan çiftler",
+        "disadvantage": "Üst-yüksek bütçe sınıfındadır; akşam yemeği için rezervasyon önerilir",
+        "transit": "Kazım Özalp Mahallesi Nenehatun Caddesi No:111."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Sargus Resmi Sitesi",
+          "url": "http://www.sargus.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Deniz mahsulleri menüsü ve Nenehatun Cd. konumu"
+        },
+        {
+          "title": "Menu-TR Sargus Seafood",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Karides ravioli, tazelik, sakin ortam ve profesyonel servis incelemesi"
+        }
+      ],
+      "pros": [
+        "Yaratıcı deniz mahsulü tabakları ve sakin akustik",
+        "Çok yüksek tazelik ve servis kalitesi"
+      ],
+      "cons": [
+        "Yüksek hesap ortalaması"
+      ],
+      "uncertainties": [
+        "Mevsim balığı alternatifleri günlük olarak yenilenir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gop-gabbiano-balik",
+      "categoryId": "date",
+      "resolvedName": "Gabbiano Balık",
+      "branchName": "Gaziosmanpaşa, Kırlangıç Sk No:3, 06700 Çankaya/Ankara",
+      "placeId": "ChIJe11SBZdP0xQRQjR5WdGOUDA",
+      "coordinates": {
+        "lat": 39.8968148,
+        "lng": 32.8669473
+      },
+      "rating": 4.6,
+      "userRatingCount": 269,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://gabbiano.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=3481439541757817922",
+      "recommendedPrimary": [
+        "Günlük Taze Izgara Balık",
+        "Akdeniz Meze Seçkisi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kırlangıç Sokak Bahçe & Özel Masa Düzeni",
+          "note": "Cadde kalabalığından içeride kalan Kırlangıç Sokak konumu romantik ve gürültüsüz yemekler için uygundur.",
+          "proof": "gabbiano.com.tr ve Ankara balık restoranı dizinleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sakin, zarif iç salon ve yeşillikler arasındaki Kırlangıç Sokak cephesi",
+        "crowdAndNoise": "Baş başa sakin balık ve şarap-rakı sofrası isteyen çiftler",
+        "disadvantage": "Üst segment fiyat aralığındadır; dar Kırlangıç Sokak akşamları park yönünden yoğun olabilir",
+        "transit": "Gaziosmanpaşa Kırlangıç Sokak No:3."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Gabbiano Balık Resmi Sitesi",
+          "url": "http://gabbiano.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Kırlangıç Sokak konumu ve Akdeniz esintili deniz ürünleri mutfağı"
+        },
+        {
+          "title": "Gotoeat & Yandex Haritalar",
+          "url": "https://gotoeat.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taze deniz ürünleri ve sakin şık ortam doğrulaması"
+        }
+      ],
+      "pros": [
+        "Cadde gürültüsünden uzak sakin Kırlangıç Sokak atmosferi",
+        "İstikrarlı ürün ve sunum kalitesi"
+      ],
+      "cons": [
+        "Üst segment fiyat seviyesi"
+      ],
+      "uncertainties": [
+        "Hafta sonları masa ayırtmak gerekir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gop-soli-croissant",
+      "categoryId": "kahvalti",
+      "resolvedName": "Soli Croissant",
+      "branchName": "Büyükesat, Uğur Mumcu Cd. No:84, 06700 Çankaya/Ankara",
+      "placeId": "ChIJg5hfUAtP0xQRij22CqZIEV0",
+      "coordinates": {
+        "lat": 39.8951788,
+        "lng": 32.8785928
+      },
+      "rating": 4.5,
+      "userRatingCount": 346,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6706221198112865674",
+      "recommendedPrimary": [
+        "Tuzlu Peynirli / Klasik Kruvasan",
+        "Kahvaltı Tabağı",
+        "Nutellalı-Dondurmalı Kruvasan"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ferah Bahçe Oturumu & Tatlı Kruvasanlar",
+          "note": "Bahçe masalarında tatlı-tuzlu kruvasanların yanında sabah kahvaltı tabağı ve özel kahveler bir arada sunulur.",
+          "proof": "Menu-TR ve yerel kahvaltı rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ferah, yeşillikli bahçe alanı ve aydınlık iç masalar",
+        "crowdAndNoise": "Hafta sonu sakin bahçede kruvasan ve kahvaltı keyfi yapanlar",
+        "disadvantage": "Hafta sonu geç sabah saatlerinde bahçe masaları hızlı dolabilir",
+        "transit": "Büyükesat Mahallesi Uğur Mumcu Caddesi No:84."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Soli Croissant",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Uğur Mumcu Cd. No:84 ferah bahçe, kruvasan çeşitleri ve huzurlu ortam"
+        },
+        {
+          "title": "Yemeksepeti & Restoranim Soli",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tatlı-tuzlu kruvasanlar ve kahvaltı tabağı değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Uğur Mumcu üzerinde geniş ve sakin bahçe",
+        "Hem tatlı hem tuzlu artizan kruvasan çeşitleri"
+      ],
+      "cons": [
+        "Hafta sonu bahçe masası için bekleme ihtimali"
+      ],
+      "uncertainties": [
+        "Özel dolgulu kruvasan çeşitleri gün içi erken tükenebilir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gop-adiguzel-meyhane",
+      "categoryId": "denemelisin",
+      "resolvedName": "Adıgüzel Meyhane",
+      "branchName": "Kazım Özalp, Filistin Cd. No:38, 06700 Çankaya/Ankara",
+      "placeId": "ChIJda8-OABP0xQRMqNPN96RKs0",
+      "coordinates": {
+        "lat": 39.896493,
+        "lng": 32.8731673
+      },
+      "rating": 4.8,
+      "userRatingCount": 202,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://adiguzelmeyhane.com/",
+      "mapsUri": "https://maps.google.com/?cid=14783789110393807666",
+      "recommendedPrimary": [
+        "Soğuk Meze Seçkisi",
+        "Ara Sıcaklar",
+        "Izgara Ana Yemek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Ara Yemekler & Manzaralı Salon",
+          "note": "Klasik rakı-meze eşleşmelerinin yanı sıra özenle hazırlanan ara sıcak çeşitleri uzun akşamlar için öne çıkar.",
+          "proof": "adiguzelmeyhane.com ve Menu-TR kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Zarif, modern Türk meyhanesi masaları ve ferah Ankara manzaralı pencere hattı",
+        "crowdAndNoise": "Kaliteli meze ve nezih akşam sohbeti arayan dost sofraları",
+        "disadvantage": "Üst segment meyhane fiyat seviyesindedir; Cuma-Cumartesi akşamları erken rezervasyon şarttır",
+        "transit": "Kazım Özalp Mahallesi Filistin Caddesi No:38."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Adıgüzel Meyhane Resmi Sitesi",
+          "url": "https://adiguzelmeyhane.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Filistin Cd. 38 konumu, soğuk meze ve meyhane adabı detayları"
+        },
+        {
+          "title": "Menu-TR Adıgüzel Meyhane",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Modern meze kalitesi ve zarif atmosfer değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Şık ve temiz sunumlu yüksek puanlı modern meyhane",
+        "Tek şubede tutarlı mutfak"
+      ],
+      "cons": [
+        "Yüksek bütçe seviyesi ve önceden masa ayırtma gereksinimi"
+      ],
+      "uncertainties": [
+        "Cam kenarı masalar günler öncesinden dolabilir"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gop-senli-benli-meyhane",
+      "categoryId": "denemelisin",
+      "resolvedName": "Senli Benli Meyhane",
+      "branchName": "Gaziosmanpaşa, Arjantin Cd. No.21/A, 06700 Çankaya/Ankara",
+      "placeId": "ChIJn7KDas1P0xQRpQqDxc2jKnw",
+      "coordinates": {
+        "lat": 39.8977837,
+        "lng": 32.8657234
+      },
+      "rating": 4.7,
+      "userRatingCount": 492,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.senlibenlimeyhane.com/",
+      "mapsUri": "https://maps.google.com/?cid=8947143713902234277",
+      "recommendedPrimary": [
+        "Modern Meze Seçkisi",
+        "Ara Sıcak Tabağı",
+        "Izgara Lokum / Köfte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ferah Salon & Geniş Grup Masaları",
+          "note": "Arjantin Caddesi’ndeki birçok sıkışık mekana kıyasla masa aralıkları daha geniştir ve arkadaş kutlamalarına uygundur.",
+          "proof": "senlibenlimeyhane.com ve bölge değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ferah salon, rahat koltuklu ve geniş masalı meyhane yerleşimi",
+        "crowdAndNoise": "Arjantin Caddesi’nde modern meyhane ve dost sohbeti arayanlar",
+        "disadvantage": "Hafta sonları yoğun grup ağırlamaları nedeniyle ortam hareketli olabilir",
+        "transit": "Gaziosmanpaşa Arjantin Caddesi No:21/A."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Senli Benli Resmi Sitesi",
+          "url": "https://www.senlibenlimeyhane.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Arjantin Cd. No:21/A adresi, geniş masalar ve modern meyhane mutfağı"
+        },
+        {
+          "title": "Yerel Ankara Rehberleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yüksek puan istikrarı ve servis kalitesi doğrulaması"
+        }
+      ],
+      "pros": [
+        "Arjantin Caddesi kalbinde modern ve ferah meyhane deneyimi",
+        "Masa aralıkları konforlu"
+      ],
+      "cons": [
+        "Hafta sonu rezervasyonsuz yer bulmak zor"
+      ],
+      "uncertainties": [
+        "Özel meze tabakları akşam servisine göre güncellenir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gop-muptela-meyhane",
+      "categoryId": "denemelisin",
+      "resolvedName": "Müptela Meyhane",
+      "branchName": "Kazım Özalp, Reşit Galip Cd. No:53, 06700 Çankaya/Ankara",
+      "placeId": "ChIJ3SZNxeJP0xQRmu-9mXFSOXA",
+      "coordinates": {
+        "lat": 39.897875,
+        "lng": 32.8698358
+      },
+      "rating": 4.7,
+      "userRatingCount": 364,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/muptelameyhane/",
+      "mapsUri": "https://maps.google.com/?cid=8086585253784579994",
+      "recommendedPrimary": [
+        "Günlük Meze Seçkisi",
+        "Sıcak Ara Tabaklar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Samimi Akşam Atmosferi & Müzikli Sohbet",
+          "note": "Arkadaş gruplarının uzun akşam buluşmaları için canlı ve samimi masa düzeni sunar.",
+          "proof": "Mekanlar.com ve Restoranim kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Canlı ve sıcak meyhane masa düzeni",
+        "crowdAndNoise": "Reşit Galip hattında eğlenceli akşam sofrası arayan gruplar",
+        "disadvantage": "Akşam müzik ve sohbet temposu yüksektir; sakin yemek arayanlar için hareketli kalır",
+        "transit": "Kazım Özalp Mahallesi Reşit Galip Caddesi No:53."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Müptela Meyhane Resmi Profili",
+          "url": "https://www.instagram.com/muptelameyhane/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Reşit Galip Cd. 53 konumu ve güncel akşam programı"
+        },
+        {
+          "title": "Mekanlar.com & Restoranim",
+          "url": "https://www.mekanlar.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taze mezeler ve samimi atmosfer değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Taze günlük meze çeşitliliği ve canlı atmosfer",
+        "Tek şubede samimi ilgi"
+      ],
+      "cons": [
+        "Akşam saatlerinde yüksek ortam sesi"
+      ],
+      "uncertainties": [
+        "Hafta sonu fiks veya menü düzeni rezervasyonla teyit edilmelidir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gop-kuleli-ocakbasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kuleli Ocakbaşı",
+      "branchName": "Kızkulesi sokak 18/2 gop, Kazım Özalp, 06680 Çankaya/Ankara",
+      "placeId": "ChIJK1CliJFP0xQRW5e2wTCilus",
+      "coordinates": {
+        "lat": 39.890592999999996,
+        "lng": 32.87005
+      },
+      "rating": 4.6,
+      "userRatingCount": 304,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16975934175711762267",
+      "recommendedPrimary": [
+        "Kuleli Adana / Urfa Zırh Kebap",
+        "Kuzu Şiş & Yaprak Ciğer",
+        "Ocakbaşı Mezeleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Klasik Ocakbaşı Mezeleri & Ara Sıcaklar",
+          "note": "Közde etlerin yanında taze ezme, humus, haydari ve közlenmiş sebze mezeleri övgü alır.",
+          "proof": "Yerel ocakbaşı rehberleri ve harita kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak ocakbaşı ve şık iç masa düzeni",
+        "crowdAndNoise": "Balık dışındaki akşamlarda gerçek mangal ve meze arayan GOP sakinleri",
+        "disadvantage": "Ocakbaşı çevresi akşam saatlerinde yoğun ve duman kokusu barındırabilir",
+        "transit": "Kazım Özalp Mahallesi Kızkulesi Sokak No:18/2."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Yandex Haritalar Kuleli Ocakbaşı",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Et kalitesi, zırh kebabı ve meyhane-ocakbaşı uyumu değerlendirmeleri"
+        },
+        {
+          "title": "Ankara Restoran Dizinleri",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kızkulesi Sokak tek şube ocakbaşı mutfak doğrulaması"
+        }
+      ],
+      "pros": [
+        "GOP içinde nitelikli tek şube ocakbaşı alternatifi",
+        "Et seçimi ve meze tazeliği"
+      ],
+      "cons": [
+        "Yoğun akşam servisinde masalar hızlı dolar"
+      ],
+      "uncertainties": [
+        "Özel kuzu kesimleri akşam geçe kalınca tükenebilir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gop-ruhe-restaurant",
+      "categoryId": "denemelisin",
+      "resolvedName": "Ruhe Restaurant",
+      "branchName": "Kazım Özalp, Nenehatun Cd No:123 D:A, 06680 Çankaya/Ankara",
+      "placeId": "ChIJJ7g05RFP0xQRWlNh8xFEcSw",
+      "coordinates": {
+        "lat": 39.893315,
+        "lng": 32.868930999999996
+      },
+      "rating": 4.5,
+      "userRatingCount": 161,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.ruherestaurant.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=3202415653925507930",
+      "recommendedPrimary": [
+        "Türk-Yunan Meze Tabakları",
+        "Deniz & Et Ana Yemekleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Canlı Müzik Akşamları & Ege Mezeleri",
+          "note": "Özenli meyhane-bistro sunumları seçili günlerde akustik/canlı müzik eşliğiyle tamamlanır.",
+          "proof": "ruherestaurant.com.tr ve Restoranim değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Şık, sıcak aydınlatmalı iç salon düzeni",
+        "crowdAndNoise": "Ege-Yunan mezeleri eşliğinde keyifli canlı müzik akşamı planlayanlar",
+        "disadvantage": "Üst segment fiyat düzeyindedir; canlı müzik akşamlarında önceden yer ayırtmak gerekir",
+        "transit": "Kazım Özalp Mahallesi Nenehatun Caddesi No:123/A."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Ruhe Restaurant Resmi Sitesi",
+          "url": "http://www.ruherestaurant.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Türk-Yunan mutfağı konsepti ve Nenehatun Cd. konumu"
+        },
+        {
+          "title": "Restoranim Ruhe",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Samimi atmosfer ve canlı müzik performansı değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Türk ve Yunan meyhane mutfağını birleştiren dengeli menü",
+        "Kaliteli canlı müzik ambiyansı"
+      ],
+      "cons": [
+        "Yüksek bütçe sınıfı"
+      ],
+      "uncertainties": [
+        "Canlı müzik program günleri dönemsel güncellenir"
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gop-kumsal-lokantasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kumsal Lokantası",
+      "branchName": "Kazım Özalp Mah., .Nenehatun Cad No:97 Gaziosmanpaşa, Çankaya, 06700 Çankaya/Ankara",
+      "placeId": "ChIJNSiFGlVO0xQRcRro7GE99aU",
+      "coordinates": {
+        "lat": 39.895702299999996,
+        "lng": 32.8689641
+      },
+      "rating": 4.4,
+      "userRatingCount": 1802,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://kumsallokantasi.com/",
+      "mapsUri": "https://maps.google.com/?cid=11958531876347976305",
+      "recommendedPrimary": [
+        "Sezonluk Izgara Sardalya / Mezgit",
+        "Klasik Ankara Balıkçı Mezeleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sade Klasik Lokanta Kültürü & Nikah/Aile Sofraları",
+          "note": "Lüks sunumlar yerine taze günlük balık ve klasik sohbet sofrası arayan eski Ankaralıların yarım asırlık durağıdır.",
+          "proof": "kumsallokantasi.com ve Haydibul rehber kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Gösterişsiz, klasik beyaz örtülü eski Ankara lokantası salonu",
+        "crowdAndNoise": "Sade, samimi ortamda taze balık ve klasik meze tercih eden eski Ankara müdavimleri",
+        "disadvantage": "Modern bistro dekorasyonu bekleyenler için fazla geleneksel ve sade kalır",
+        "transit": "Kazım Özalp Mahallesi Nenehatun Caddesi No:97."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Kumsal Lokantası Resmi Sitesi",
+          "url": "http://kumsallokantasi.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Köklü GOP Nenehatun balık lokantası menüsü ve bilgileri"
+        },
+        {
+          "title": "Haydibul & DüğünBuketi",
+          "url": "https://www.haydibul.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1970’lerden beri süren miras, sade atmosfer, taze sardalya-mezgit ve dengeli fiyat övgüsü"
+        }
+      ],
+      "pros": [
+        "Yarım asra yaklaşan köklü Ankara geleneği",
+        "GOP lüks balıkçılarına göre samimi ve ulaşılabilir klasik çizgi"
+      ],
+      "cons": [
+        "Sade ve eski usul dekorasyon"
+      ],
+      "uncertainties": [
+        "Hafta sonu kalabalık aile grupları nedeniyle önceden aramak faydalıdır"
+      ],
+      "selectionScore": 71,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gop-amarillo",
+      "categoryId": "denemelisin",
+      "resolvedName": "Amarillo",
+      "branchName": "Kazım Özalp, Reşit Galip Cd. 89/2, 06700 Çankaya/Ankara",
+      "placeId": "ChIJFZjFi5FP0xQRMGHzFea-HXQ",
+      "coordinates": {
+        "lat": 39.8928952,
+        "lng": 32.869765199999996
+      },
+      "rating": 4.4,
+      "userRatingCount": 1131,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8367053578144276784",
+      "recommendedPrimary": [
+        "Sizzling Fajita",
+        "Nachos & Quesadilla",
+        "Klasik Kokteyller"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Hafta Sonu Canlı Müzik & Pub İçecek Menüsü",
+          "note": "Tex-Mex yemeklerinin ardından bar atmosferinde hafta sonu canlı müzik programları devam eder.",
+          "proof": "Wanderlog ve yerel pub rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ahşap Tex-Mex pub barı ve geniş akşam masaları",
+        "crowdAndNoise": "Baharatlı Meksika-Teksas mutfağı ve akşam pub müziği sevenler",
+        "disadvantage": "Canlı müzik akşamlarında gürültü seviyesi yüksektir",
+        "transit": "Kazım Özalp Mahallesi Reşit Galip Caddesi No:89/2."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Wanderlog Amarillo",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Reşit Galip Cd. Tex-Mex menüsü ve pub incelemeleri"
+        },
+        {
+          "title": "MenuHaritasi & Yandex Haritalar",
+          "url": "https://www.menuharitasi.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Fajita, burger, kokteyller ve hafta sonu canlı müzik teyidi"
+        }
+      ],
+      "pros": [
+        "GOP içinde nadir bulunan uzun soluklu Tex-Mex mutfağı",
+        "1000+ oyda istikrarlı ★4.4 puan"
+      ],
+      "cons": [
+        "Canlı müzik gecelerinde sohbet zorlaşabilir"
+      ],
+      "uncertainties": [
+        "Mutfak kapanış ve canlı müzik başlangıç saatleri güne göre değişir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gop-aramizda-meyhane",
+      "categoryId": "denemelisin",
+      "resolvedName": "Aramızda Meyhane",
+      "branchName": "Gaziosmanpaşa, Beyaz Zambaklar Sok. No:9/1, 06700 Çankaya/Ankara",
+      "placeId": "ChIJ1WIl5b1P0xQRPn6UiqX6y_A",
+      "coordinates": {
+        "lat": 39.897141999999995,
+        "lng": 32.867759899999996
+      },
+      "rating": 4.4,
+      "userRatingCount": 238,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/aramizda_meyhane/",
+      "mapsUri": "https://maps.google.com/?cid=17351237578276503102",
+      "recommendedPrimary": [
+        "Meze & Ara Sıcak Fiks Seçkisi",
+        "Ana Yemek Izgara"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Canlı Fasıl & Geç Akşam DJ Programı",
+          "note": "Yemekle başlayan akşam fasıl ve ardından ritmik eğlence programıyla geceye uzanır.",
+          "proof": "aramizdameyhane.com ve Restoranim değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Eğlence odaklı, sahne görüşlü meyhane masaları",
+        "crowdAndNoise": "Yemek sonrası fasıl ve canlı eğlence isteyen kutlama grupları",
+        "disadvantage": "Tamamen eğlence ve yüksek sesli fasıl konseptlidir; sakin baş başa yemek için uygun değildir",
+        "transit": "Gaziosmanpaşa Beyaz Zambaklar Sokak No:9/1."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Aramızda Meyhane Resmi Sitesi",
+          "url": "https://www.aramizdameyhane.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Beyaz Zambaklar Sk. tek şube konumu, meze ve fasıl-DJ akışı"
+        },
+        {
+          "title": "Restoranim Aramızda Meyhane",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "GOP meyhane ve gece eğlencesi değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Tek mekânda meze yemeğinden fasıl-DJ eğlencesine kesintisiz geçiş",
+        "Tek şube GOP odağı"
+      ],
+      "cons": [
+        "Yüksek ses ve üst-orta bütçe"
+      ],
+      "uncertainties": [
+        "Cuma-Cumartesi programları rezervasyonla takip edilmelidir"
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    }
+  ]
+}

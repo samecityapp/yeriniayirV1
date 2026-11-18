@@ -1,0 +1,1413 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "ankara-cankaya-ayranci",
+  "displayName": "Ayrancı, Çankaya, Ankara",
+  "verifiedAt": "2026-11-17T19:29:43.644Z",
+  "selectedCount": 19,
+  "rejectedControls": [
+    {
+      "id": "ctrl-ayranci-terrapizza-chain",
+      "resolvedName": "Terra Pizza Ankara (Çankaya Hoşdere)",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ayranci-littlecaesars-chain",
+      "resolvedName": "Little Caesars Hoşdere Şubesi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ayranci-tadimpizza-chain",
+      "resolvedName": "Tadım Pizza",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ayranci-mamasburger-chain",
+      "resolvedName": "Mama's Burger Hoşdere",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ayranci-herdsbbq-chain",
+      "resolvedName": "Herd's BBQ & Burger Hoşdere",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ayranci-coffeep22-chain",
+      "resolvedName": "Coffee P22 Hoşdere",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ayranci-ekleristan-chain",
+      "resolvedName": "Ekleristan Hoşdere",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ayranci-kaymaklava-chain",
+      "resolvedName": "Kaymaklava Hoşdere Şube",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ayranci-3rdsebastian-chain",
+      "resolvedName": "3rdsebastian",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ayranci-chocolateart-noncoffee",
+      "resolvedName": "The Chocolate Art",
+      "reason": "kahve_category_not_coffee_specialist:chocolate_shop"
+    },
+    {
+      "id": "ctrl-ayranci-out-tunali-unica",
+      "resolvedName": "Unica ekşimaya pizza",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Ayrancı/Ayranci/Güvenevler/Guvenevler/Aziziye/Güzeltepe/Guzeltepe, adres: Remzi Oğuz Arık, Şimşek Sk. 13/A, 06680 Çankaya/Ankara)"
+    },
+    {
+      "id": "ctrl-ayranci-out-yildiz-kuce",
+      "resolvedName": "KÜÇE OCAKBAŞI MEYHANE",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Ayrancı/Ayranci/Güvenevler/Guvenevler/Aziziye/Güzeltepe/Guzeltepe, adres: Yıldızevler, 712. Sk. no:1, 06550 Çankaya/Ankara)"
+    },
+    {
+      "id": "ctrl-ayranci-out-gop-origano",
+      "resolvedName": "Origano Pizza & Pasta",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Ayrancı/Ayranci/Güvenevler/Guvenevler/Aziziye/Güzeltepe/Guzeltepe, adres: Kazım Özalp, Rabat Sk. No:13/A, 06700 Çankaya/Ankara)"
+    },
+    {
+      "id": "ctrl-ayranci-low-unbakery",
+      "resolvedName": "UN Bakery Breakfast Club",
+      "reason": "below_quality_threshold:★4.3(781)"
+    },
+    {
+      "id": "ctrl-ayranci-low-letsbake",
+      "resolvedName": "Let's Bake Artisan Bakery",
+      "reason": "below_quality_threshold:★4.3(785)"
+    },
+    {
+      "id": "ctrl-ayranci-low-nofork",
+      "resolvedName": "No Fork Burger",
+      "reason": "below_quality_threshold:★4.3(335)"
+    },
+    {
+      "id": "ctrl-ayranci-low-burgerdinho",
+      "resolvedName": "Burgerdinho",
+      "reason": "chain_or_franchise"
+    }
+  ],
+  "venues": [
+    {
+      "id": "ayranci-gusto-di-napoli",
+      "categoryId": "pizza",
+      "resolvedName": "Gusto Di Napoli Pizza & Panuozzo Sandviç",
+      "branchName": "Aziziye, Kırkpınar Sk. No:7 D:C, 06690 Çankaya/Ankara",
+      "placeId": "ChIJzcQjAQBP0xQRzOq0GSl_VTE",
+      "coordinates": {
+        "lat": 39.891456,
+        "lng": 32.854658
+      },
+      "rating": 4.9,
+      "userRatingCount": 235,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3554887295380548300",
+      "recommendedPrimary": [
+        "El Açması Napoli Pizzaları",
+        "Fırından Panuozzo Sandviç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Pizza Hamurundan Sıcak Panuozzo Sandviç",
+          "note": "Klasik daire pizza dışında aynı fermente hamurdan hazırlanan içi dolgulu Napoli sokak sandviçi panuozzo ile öne çıkar.",
+          "proof": "İşletme mutfak menüsü ve şehir rehberi değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kırkpınar Sokak üzerinde sade, birkaç masalı butik pizzeria ve hızlı paket tezgâhı",
+        "crowdAndNoise": "Hafif fermente Napoli hamuru ve gerçek panuozzo sandviç arayan mahalle sakinleri",
+        "disadvantage": "Oturma alanı kısıtlıdır; büyük gruplar veya uzun akşam oturumları için uygun değildir",
+        "transit": "Aziziye Mahallesi Kırkpınar Sokak No:7 D:C (Hoşdere & Cinnah arası yokuş bağlantı)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menum Gusto Di Napoli",
+          "url": "https://menum.co/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kırkpınar Sk. adresi, el açması Napoli pizzası ve panuozzo sandviç menüsü"
+        },
+        {
+          "title": "Restoranim Gusto Di Napoli",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur fermente dokusu ve özgün sos değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Mahalle arasında gerçek Napoli hamuru ve nadir bulunan panuozzo sandviç uzmanlığı",
+        "Temiz, hafif hamur dengesi"
+      ],
+      "cons": [
+        "Sınırlı iç masa kapasitesi ve sade tezgâh düzeni"
+      ],
+      "uncertainties": [
+        "Yoğun akşam saatlerinde taze hamur stoku nedeniyle bekleme uzayabilir"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayranci-ratu-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Ratu Burger House",
+      "branchName": "Güvenevler, Hoşdere Cd. No.51 D:C, 06690 Çankaya/Ankara",
+      "placeId": "ChIJBQi5YHNP0xQRWjs89JcrvBA",
+      "coordinates": {
+        "lat": 39.8982154,
+        "lng": 32.8492617
+      },
+      "rating": 4.8,
+      "userRatingCount": 547,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.yemeksepeti.com/ratu-burger-house-hosdere-caddesi-ankara",
+      "mapsUri": "https://maps.google.com/?cid=1205886731866094426",
+      "recommendedPrimary": [
+        "Nosferatu / Deli Burger",
+        "Cheddar Dolgulu Tiftik Burger",
+        "Çıtır Patates Kızartması"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Reçete Soslar & Çıtır Başlangıçlar",
+          "note": "Klasik burgerlerin yanı sıra tiftik dana etli çeşitler ve ev yapımı burger sosları siparişlerde sıkça tercih edilir.",
+          "proof": "Yerel menü platformları ve misafir değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Hoşdere Caddesi üzerinde mütevazı, sıcak ve samimi mahalle burgercisi salonu",
+        "crowdAndNoise": "Zincir fast-food yerine dürüst el yapımı köfteli burger arayan Ayrancı müdavimleri",
+        "disadvantage": "İç mekân görece küçük ölçeklidir; yoğun saatlerde masa bulmak veya paket sırası beklemek gerekebilir",
+        "transit": "Güvenevler Mahallesi Hoşdere Caddesi No:51 D:C."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Restoranim Ratu Burger House",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Aile işletmesi sıcaklığı, el yapımı burger köftesi ve Hoşdere değerlendirmeleri"
+        },
+        {
+          "title": "Menu-TR Ratu Burger House",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Nosferatu, Tiftik Burger ve Anadolu Burger menü doğrulaması"
+        }
+      ],
+      "pros": [
+        "Yıllardır Hoşdere üzerinde kalitesini bozmayan bağımsız aile işletmesi",
+        "Zengin özgün burger reçeteleri"
+      ],
+      "cons": [
+        "Küçük oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Akşam paket servis yoğunluğunda masa siparişi birkaç dakika gecikebilir"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayranci-hamm-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "HAMM-BURGER",
+      "branchName": "Ayrancı, Şht. Pilot Mustafa Atakan DUT Cad. NO:49 B, 06690 Çankaya/Ankara",
+      "placeId": "ChIJadELg95P0xQRL-G7ZcoPlhc",
+      "coordinates": {
+        "lat": 39.900383,
+        "lng": 32.845971999999996
+      },
+      "rating": 4.9,
+      "userRatingCount": 44,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1699563271343563055",
+      "recommendedPrimary": [
+        "Mahalle Burger / Trüflü Burger",
+        "Çıtır Patates & Soslar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Yumuşak Ekmek & Trüflü Sos Uyumu",
+          "note": "Köftelerin suyunu tutan yumuşak ekmek yapısı ve trüflü sos alternatifleri mahalle müdavimlerince öne çıkarılır.",
+          "proof": "Şehir rehberleri ve menü değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ayrancı ara caddesinde sakin, temiz ve aile ortamına uygun birkaç masalı salon",
+        "crowdAndNoise": "Sakin sokakta sulu burger ve çıtır patates yemek isteyen Aşağı Ayrancı sakinleri",
+        "disadvantage": "Kapasitesi kısıtlı olduğu için özellikle akşamları dolabilir; ana cadde dışında yokuşlu sokak konumundadır",
+        "transit": "Ayrancı Mahallesi Şht. Pilot Mustafa Atakan Dut Caddesi No:49/B."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Restoranim HAMM-BURGER Ayrancı",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sulu dana köfte, yumuşak ekmek, trüflü sos ve temiz aile ortamı değerlendirmesi"
+        },
+        {
+          "title": "Menu-TR HAMM-BURGER",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Atakan Dut Cd. konumu, Mahalle Burger ve Üç Kardeş menü incelemesi"
+        },
+        {
+          "title": "Migros Yemek & Dijital Menü",
+          "url": "https://www.migros.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ayrancı tek şube doğrulaması ve menü seçenekleri"
+        }
+      ],
+      "pros": [
+        "Mahalle içinde temiz, nezih aile ortamı ve dengeli burger ekmeği",
+        "Katkısız sulu dana köfte profili"
+      ],
+      "cons": [
+        "Sınırlı masa kapasitesi ve ara sokak park zorluğu"
+      ],
+      "uncertainties": [
+        "Yoğun akşam saatlerinde stoklara bağlı olarak sınırlı adet çıkabilir"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayranci-oak-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "OAK Coffee Co.",
+      "branchName": "Ayrancı, Kuzgun Cd No: 18 D:C, 06830 Çankaya/Ankara",
+      "placeId": "ChIJvUldCaRP0xQRo-pPSrcuZvg",
+      "coordinates": {
+        "lat": 39.90218600000001,
+        "lng": 32.850507
+      },
+      "rating": 4.7,
+      "userRatingCount": 301,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17899045133791259299",
+      "recommendedPrimary": [
+        "V60 / Espresso Bazlı Kahveler",
+        "Günün Ev Yapımı Tatlıları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ferah Mahalle Bahçesi & Sosyal Masa Düzeni",
+          "note": "Kuzgun Sokak dokusu içindeki açık bahçesiyle günün her saatinde hem kahve sohbetine hem rahat çalışmaya olanak tanır.",
+          "proof": "Yerel mahalle rehberleri ve menü değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaçlı ferah dış bahçe masaları ve sıcak ahşap iç salon",
+        "crowdAndNoise": "Kuzgun Sokak çevresinde bahçeli üçüncü dalga kahve keyfi arayan Ayrancı müdavimleri",
+        "disadvantage": "Günün popüler saatlerinde bahçe alanı hareketli olduğu için tam sessiz odaklanma bekleyenler için canlı kalabilir",
+        "transit": "Ayrancı Mahallesi Kuzgun Caddesi No:18 D:C (Ali Dede Sk. köşesi)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Ayrancım Yerel Rehber",
+          "url": "https://ayrancim.org.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ayrancı tek şubeli bahçeli kahveci konumu ve mahalle kültürü incelemesi"
+        },
+        {
+          "title": "Menu-TR OAK Coffee",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahve çeşitleri, tatlılar ve bahçe düzeni değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Ayrancı içindeki en ferah açık bahçelerden biri",
+        "Tek şubeli samimi mahalle kimliği"
+      ],
+      "cons": [
+        "Hafta sonu bahçe masaları hızla dolar"
+      ],
+      "uncertainties": [
+        "Kış aylarında ısıtmalı yarı açık alan kapasitesi sınırlı kalabilir"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayranci-owster-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Owster Coffee",
+      "branchName": "yukarı, Ayrancı, Elçi Sokağı 17-A, 06990 Çankaya/Ankara",
+      "placeId": "ChIJmwfkX3hP0xQRymm5i36rtq0",
+      "coordinates": {
+        "lat": 39.9027284,
+        "lng": 32.847111399999996
+      },
+      "rating": 4.7,
+      "userRatingCount": 260,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://owstercoffee.com/",
+      "mapsUri": "https://maps.google.com/?cid=12517380774321285578",
+      "recommendedPrimary": [
+        "Filtre Kahve / Cortado",
+        "Günün Taze Tatlıları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çalışma Masaları & Sakin Sokak Atmosferi",
+          "note": "Ana caddelerin gürültüsünden uzak Elçi Sokak konumu sayesinde bilgisayarla odaklanmak veya kitap okumak için idealdir.",
+          "proof": "İşletme mutfak kayıtları ve Ayrancı mahalle değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Rahat çalışma masaları ve samimi iç mekân oturumu",
+        "crowdAndNoise": "Yukarı Ayrancı yokuşunda sessiz, sıcak kahve barı ve çalışma alanı arayanlar",
+        "disadvantage": "Yukarı Ayrancı’nın eğimli sokaklarında yer aldığı için yürüyüşle ulaşımda yokuş çıkılır",
+        "transit": "Ayrancı Mahallesi Elçi Sokağı No:17/A."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Owster Coffee Resmi Sitesi",
+          "url": "http://owstercoffee.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Yukarı Ayrancı Elçi Sokak konumu ve kahve menüsü"
+        },
+        {
+          "title": "Ayrancım & Menu-TR İncelemesi",
+          "url": "https://ayrancim.org.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Aile işletmesi sıcaklığı, çalışma masaları ve kahve kalitesi notları"
+        }
+      ],
+      "pros": [
+        "Ana caddeden uzak huzurlu çalışma ve kahve atmosferi",
+        "İlgili aile işletmesi servis kalitesi"
+      ],
+      "cons": [
+        "Eğimli ara sokak konumu nedeniyle araç parkı kısıtlı olabilir"
+      ],
+      "uncertainties": [
+        "Öğleden sonra çalışma masalarında doluluk artabilir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayranci-caffenux",
+      "categoryId": "kahve",
+      "resolvedName": "CaffeNux",
+      "branchName": "Güvenevler, Kıbrıs Sk. No:13, 06105 Çankaya/Ankara",
+      "placeId": "ChIJP1eIEORP0xQRaBEhfO60aBY",
+      "coordinates": {
+        "lat": 39.897417999999995,
+        "lng": 32.855446
+      },
+      "rating": 4.6,
+      "userRatingCount": 450,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1614739402790080872",
+      "recommendedPrimary": [
+        "Nitelikli Espresso / Filtre Kahve",
+        "Günlük Ev Yapımı Tatlılar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ağaç Altı Arka Teras & Müzik Seçkisi",
+          "note": "Kalabalık caddelerin hemen arkasında ağaç gölgesi sunan terası ve özenli müzik seçkisiyle uzun sohbetlere ev sahipliği yapar.",
+          "proof": "Şehir rehberleri ve müdavim değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaç altı sakin teras ve karakterli iç salon masaları",
+        "crowdAndNoise": "Klasik AVM veya zincir tasarımından uzak, sakin teraslı kahve sığınağı arayanlar",
+        "disadvantage": "Güneşsiz günlerde dış teras serin olabildiğinden içerideki sınırlı masalar hızla dolabilir",
+        "transit": "Güvenevler Mahallesi Kıbrıs Sokak No:13 (Farabi Sk. yakını)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Restoranim CaffeNux",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ağaç altı teras, nitelikli kahve ve günlük ev tatlıları değerlendirmesi"
+        },
+        {
+          "title": "Ayrancım CaffeNux Rehberi",
+          "url": "https://ayrancim.org.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Steampunk esintili dekorasyon ve Kıbrıs Sokak huzurlu atmosfer incelemesi"
+        }
+      ],
+      "pros": [
+        "Ağaç altı terasıyla Güvenevler içinde nadide sakin sığınak atmosferi",
+        "Zincir benzeri olmayan özgün iç tasarım"
+      ],
+      "cons": [
+        "Kış aylarında iç salon kapasitesi nispeten butik"
+      ],
+      "uncertainties": [
+        "Hafta sonu bahçe masaları hızlı dolabilir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayranci-sloth-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Sloth Coffee Shop",
+      "branchName": "Ayrancı, Güvenlik Cd. 36/A, 06540 Çankaya/Ankara",
+      "placeId": "ChIJzb5ij3VP0xQR6xCAP8zyA-E",
+      "coordinates": {
+        "lat": 39.9008828,
+        "lng": 32.8531882
+      },
+      "rating": 4.5,
+      "userRatingCount": 376,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.facebook.com/Slothcoffeeshop/",
+      "mapsUri": "https://maps.google.com/?cid=16214070042516525291",
+      "recommendedPrimary": [
+        "Filtre Kahve / Americano",
+        "Bitki Çayları & Hafif Tatlılar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Odaklanma Dostu Sessiz Çizgi & Bitki Çayı Seçkisi",
+          "note": "Kahve dışında özenli bitki çayı alternatifleri ve dikkat dağıtmayan sade tasarımıyla çalışmaya olanak tanır.",
+          "proof": "Yerel harita kayıtları ve müdavim değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Minimalist, sade ve bilgisayarla odaklanmaya elverişli çalışma masaları",
+        "crowdAndNoise": "Dikkat dağılmadan sessiz ortamda çalışmak ve kahve içmek isteyen öğrenciler ve uzaktan çalışanlar",
+        "disadvantage": "Büyük bahçe veya yüksek enerjili akşam sohbet ortamı arayanlar için fazla sakin ve minimalist kalır",
+        "transit": "Ayrancı Mahallesi Güvenlik Caddesi No:36/A (Portakal Çiçeği & Tunalı yakını)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Ekşi Şeyler Ankara Kahve Rehberi",
+          "url": "https://eksiseyler.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Güvenlik Cd. çalışma dostu ve minimalist üçüncü nesil kahveci değerlendirmesi"
+        },
+        {
+          "title": "Yandex Haritalar Sloth Coffee",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bitki çayları, kahve çeşitleri ve sakin ortam teyidi"
+        }
+      ],
+      "pros": [
+        "Güvenlik Caddesi üzerinde sakin çalışma atmosferi",
+        "İyi dengelenmiş kahve ve bitki çayı alternatifleri"
+      ],
+      "cons": [
+        "Sosyal kalabalık buluşmalar yerine bireysel/küçük masa düzeni"
+      ],
+      "uncertainties": [
+        "Hafta içi öğleden sonra çalışma masaları yoğun olabilir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayranci-mufredat-meyhane",
+      "categoryId": "date",
+      "resolvedName": "Müfredat Meyhane",
+      "branchName": "Güzeltepe, Ahmet Mithat Efendi Sk. No:10, 06690 Çankaya/Ankara",
+      "placeId": "ChIJkVsi83NF0xQRtH0GyTLlXCA",
+      "coordinates": {
+        "lat": 39.88442260000001,
+        "lng": 32.8549483
+      },
+      "rating": 4.6,
+      "userRatingCount": 101,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://mufredatmeyhane.com/",
+      "mapsUri": "https://maps.google.com/?cid=2331990713354845620",
+      "recommendedPrimary": [
+        "Günlük Taze Mezeler",
+        "Ortaklar Usulü Çöp Şiş / Kaz Kebabı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Teras Akşamları & Anadolu Spesiyal Etler",
+          "note": "Standart meze-balık menülerinin ötesinde Ortaklar çöp şiş ve sezonluk kaz kebabı gibi yöresel et yemekleri sunmasıyla ayrışır.",
+          "proof": "İşletme mutfak kayıtları ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Şık aydınlatmalı modern teras ve keyifli meyhane salonu",
+        "crowdAndNoise": "Tunalı kalabalığından sıyrılıp özgün et-meze menüsüyle akşam buluşması arayanlar",
+        "disadvantage": "Hafta sonu akşamları erken dolduğundan önceden yer ayırtmak gerekir; yokuşlu Güzeltepe ara sokağındadır",
+        "transit": "Güzeltepe Mahallesi Ahmet Mithat Efendi Sokak No:10 (Hoşdere üst aksı)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Müfredat Meyhane Resmi Sitesi",
+          "url": "https://mufredatmeyhane.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Güzeltepe teras konsepti, günlük mezeler, Ortaklar çöp şiş ve kaz kebabı"
+        },
+        {
+          "title": "Yandex Haritalar Müfredat Meyhane",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Modern meyhane atmosferi ve yüksek akşam memnuniyeti değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Teras atmosferiyle birleşen özgün çöp şiş ve kaz kebabı seçkisi",
+        "Tunalı kalabalığı dışında seçkin konum"
+      ],
+      "cons": [
+        "Güzeltepe eğimli sokaklarda otopark kısıtı"
+      ],
+      "uncertainties": [
+        "Kaz kebabı gibi özel yemeklerin servis günleri önceden teyit edilmelidir"
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayranci-ora-restaurant",
+      "categoryId": "date",
+      "resolvedName": "Ora Restaurant",
+      "branchName": "Aziziye, Willy Brand Sk. No:1 D:A, 06490 Çankaya/Ankara",
+      "placeId": "ChIJv4FJaoJP0xQRzfWiI5UFsgw",
+      "coordinates": {
+        "lat": 39.890451999999996,
+        "lng": 32.855070000000005
+      },
+      "rating": 4.5,
+      "userRatingCount": 131,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=914799812415780301",
+      "recommendedPrimary": [
+        "Soğuk & Sıcak Meze Seçkisi",
+        "Izgara Ana Yemekler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Dost Meclisi Atmosferi & Canlı Akşam Müziği",
+          "note": "Gösterişçi lüksten uzak, samimi sohbet ortamını seçili günlerdeki canlı müzik eşliğiyle dengeler.",
+          "proof": "Yerel menü kayıtları ve restoran rehberi değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak ve samimi iç salon masa düzeni",
+        "crowdAndNoise": "Abartısız, içten bir ortamda meze ve canlı müzik akşamı arayan çiftler ve arkadaş masaları",
+        "disadvantage": "Canlı müzik akşamlarında ortam sesi yükselir; yüksek tavanlı ferah teras arayanlara görece kompakt gelebilir",
+        "transit": "Aziziye Mahallesi Willy Brandt Sokak No:1 D:A (Atakule çevresi aşağı aks)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Ora Restaurant",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Willy Brandt Sk. konumu, meze-ızgara menüsü ve canlı müzik detayları"
+        },
+        {
+          "title": "Restoranim Ora Restaurant",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Dost meclisi sıcaklığı ve samimi servis değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Aziziye içinde abartısız, içten meyhane atmosferi",
+        "İyi kurgulanmış meze çeşitliliği"
+      ],
+      "cons": [
+        "Canlı müzik saatlerinde ses seviyesi yükselebiliyor"
+      ],
+      "uncertainties": [
+        "Canlı müzik günleri ve masa rezervasyonu önceden doğrulanmalıdır"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayranci-meymenet-meyhane",
+      "categoryId": "date",
+      "resolvedName": "Meymenet Meyhane",
+      "branchName": "Aziziye, Portakal Çiçeği Sk. 2/A, 06690 Çankaya/Ankara",
+      "placeId": "ChIJNwGtngNP0xQR7di9Pl8zKIc",
+      "coordinates": {
+        "lat": 39.8930128,
+        "lng": 32.8510387
+      },
+      "rating": 4.4,
+      "userRatingCount": 763,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9739090678356236525",
+      "recommendedPrimary": [
+        "Ağaç Altı Meze Seçkisi",
+        "Özel Şaşlık Et / Izgaralar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ağaç Altı Geniş Bahçe & Et Seçenekleri",
+          "note": "Kapalı alanlara sıkışmadan bahçedeki ağaçların altında ferah masalarda şaşlık ve meze paylaşımı sağlar.",
+          "proof": "Şehir rehberleri ve meyhane değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaçlıklı geniş açık bahçe masaları ve klasik iç meyhane salonu",
+        "crowdAndNoise": "Özellikle ılık havalarda ağaç altında geniş ve ferah rakı-meze akşamı planlayanlar",
+        "disadvantage": "Geniş bahçe kapasitesi nedeniyle dolu akşamlarda gürültülü olabiliyor ve servis süresi uzayabiliyor",
+        "transit": "Aziziye Mahallesi Portakal Çiçeği Sokak No:2/A."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Restoranim Meymenet Meyhane",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ağaçlar altındaki geniş bahçe düzeni, şaşlık ve meze değerlendirmeleri"
+        },
+        {
+          "title": "Yandex Haritalar Meymenet Meyhane",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Portakal Çiçeği Sk. konumu ve bahçe atmosferi teyidi"
+        }
+      ],
+      "pros": [
+        "Aziziye içinde ferah, ağaçlıklı gerçek bahçe meyhanesi",
+        "Meze yanında et ve şaşlık dengesi"
+      ],
+      "cons": [
+        "Kalabalık yaz akşamlarında servis temposu yavaşlayabilir"
+      ],
+      "uncertainties": [
+        "Bahçe masaları için güzel havalarda önceden rezervasyon gerekir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayranci-around-tatli-tuzlu",
+      "categoryId": "kahvalti",
+      "resolvedName": "Around Tatlı Tuzlu",
+      "branchName": "Ayrancı, Kuzgun Cd 20/A, 06690 Çankaya/Ankara",
+      "placeId": "ChIJ53WuMvlP0xQRekC-g-l5XZE",
+      "coordinates": {
+        "lat": 39.9017044,
+        "lng": 32.850543699999996
+      },
+      "rating": 4.9,
+      "userRatingCount": 69,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/aroundtatlituzlu?igsh=NnIzano3N21vbXhr",
+      "mapsUri": "https://maps.google.com/?cid=10474662352178266234",
+      "recommendedPrimary": [
+        "Tuzlu Kahvaltı Tabağı & Kahve",
+        "Ev Yapımı Banana Bread / Fırın Tatlıları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Tatlıları & Tatlı-Tuzlu Denge",
+          "note": "Klasik serpme yerine günlük pişen muzlu ekmek ve hafif kahvaltı tabaklarıyla hem sabah hem öğleden sonra tercih edilir.",
+          "proof": "Yerel menü platformları ve misafir değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kuzgun Caddesi üzerinde sıcak, butik mahalle kafesi masaları",
+        "crowdAndNoise": "Hafif ve özenli tatlı-tuzlu kahvaltı tabakları arayan Kuzgun Sokak müdavimleri",
+        "disadvantage": "Küçük butik mekân olduğu için kalabalık hafta sonu grupları yerine 2–3 kişilik buluşmalara daha uygundur",
+        "transit": "Ayrancı Mahallesi Kuzgun Caddesi No:20/A."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Restoranim Around Tatlı Tuzlu",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Fırınlanmış elma dilimleri, banana bread ve kahvaltı-kahve değerlendirmeleri"
+        },
+        {
+          "title": "Menu-TR Around Tatlı Tuzlu",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kuzgun Cd. No:20/A menü kalemleri ve kahvaltılık seçkisi"
+        },
+        {
+          "title": "Yandex Haritalar Around Tatlı Tuzlu",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Konum doğrulaması ve yüksek ziyaretçi memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Ağır serpmeler yerine taze fırınlanmış muzlu ekmek ve temiz kahvaltı çizgisi",
+        "Samimi Kuzgun Cd. konumu"
+      ],
+      "cons": [
+        "Küçük oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Günlük taze pişen tatlı çeşitleri öğleden sonra bitebilir"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayranci-art-artisan-bakery",
+      "categoryId": "kahvalti",
+      "resolvedName": "Art. Artisan Bakery",
+      "branchName": "Güvenevler, Güvenlik Cd. 74C, 06690 Çankaya/Ankara",
+      "placeId": "ChIJFz-GTAtP0xQR1W5uR7_A3do",
+      "coordinates": {
+        "lat": 39.89724640000001,
+        "lng": 32.853427599999996
+      },
+      "rating": 4.6,
+      "userRatingCount": 250,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15770973397891051221",
+      "recommendedPrimary": [
+        "Tereyağlı Kruvasan / Danish",
+        "Zimtschnecken (Tarçınlı Rulo) & Berliner",
+        "Ekşi Mayalı Ekmekler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Alman Ekolü Zimtschnecken, Berliner & Ekşi Maya",
+          "note": "Standart kruvasancıların ötesinde gerçek Alman tarçınlı rulosu zimtschnecken ve dolgulu berliner çıkarmasıyla ayrışır.",
+          "proof": "Fırın rehberleri ve menü değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tezgâh önü hızlı al-götür ağırlıklı düzen (oturma alanı sınırlıdır)",
+        "crowdAndNoise": "Sabah erken saatte sıcak kruvasan, tarçınlı rulo ve gerçek ekşi mayalı somun almak isteyenler",
+        "disadvantage": "Büyük kahvaltı masası oturtan kafe yerine erken tükenen tezgâh-fırın formatındadır",
+        "transit": "Güvenevler Mahallesi Güvenlik Caddesi No:74/C."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Art Artisan Bakery",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kruvasan, berliner, zimtschnecken ve erken tükenen fırın detayları"
+        },
+        {
+          "title": "RestaurantGuru Art Bakery",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Fransız-Alman ekolü hamur kalitesi ve yüksek memnuniyet notları"
+        }
+      ],
+      "pros": [
+        "Ankara içinde nadir Alman-Fransız tarzı zimtschnecken ve ekşi maya üretimi",
+        "Taze ve yüksek hamur işçiliği"
+      ],
+      "cons": [
+        "Uzun oturmalı kafe salonu yok; geç kalınınca ürünler bitebiliyor"
+      ],
+      "uncertainties": [
+        "Sabah tepsileri öğle saatlerinden önce hızla tükenebilir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayranci-sarah-bakery",
+      "categoryId": "kahvalti",
+      "resolvedName": "Sarah Bakery",
+      "branchName": "Aziziye, Mesnevi Sokağı 19a, 06690 Çankaya/Ankara",
+      "placeId": "ChIJp6vOdMNP0xQRckaVPQHdwMI",
+      "coordinates": {
+        "lat": 39.895193,
+        "lng": 32.854504399999996
+      },
+      "rating": 4.6,
+      "userRatingCount": 204,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/sarahbakerycoffee/",
+      "mapsUri": "https://maps.google.com/?cid=14033459436284364402",
+      "recommendedPrimary": [
+        "Sabah Kahvaltı Tabağı & Kahve",
+        "Unsuz Portakallı Çikolatalı Kek / Tiramisu"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Unsuz Portakallı-Çikolatalı Kek & Kahve Kapanışı",
+          "note": "Sabah kahvaltısı dışında öğleden sonra özellikle unsuz portakallı keki ve tiramisusuyla tatlı-kahve molası için seçilir.",
+          "proof": "Yerel menü rehberleri ve kullanıcı değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mesnevi Sokak üzerinde zarif, sakin mahalle fırın-kafe masaları",
+        "crowdAndNoise": "Mesnevi hattında sakin kahvaltı veya unsuz kek eşliğinde kahve molası arayanlar",
+        "disadvantage": "Mekân kapasitesi butik olduğundan kalabalık grup kahvaltıları için sınırlıdır",
+        "transit": "Aziziye Mahallesi Mesnevi Sokağı No:19/A."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Sarah Bakery",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kahvaltı seçenekleri, unsuz portakallı-çikolatalı kek ve tiramisu menüsü"
+        },
+        {
+          "title": "Yandex Haritalar Sarah Bakery",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mesnevi Sokak konumu, kahve kalitesi ve atmosfer değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Mesnevi Sokak dokusu içinde sakin sabah kahvaltısı ve nitelikli unsuz kek seçeneği",
+        "Dengeli servis hızı"
+      ],
+      "cons": [
+        "Sınırlı masa adedi"
+      ],
+      "uncertainties": [
+        "Günlük pasta-kek vitrini saate göre değişebilir"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayranci-solepigastro",
+      "categoryId": "denemelisin",
+      "resolvedName": "SolePiGastro",
+      "branchName": "Güvenevler, Mesnevi Sokağı 20 / B, 06690 Çankaya/Ankara",
+      "placeId": "ChIJs78laCBP0xQRLhQfL1CjkB4",
+      "coordinates": {
+        "lat": 39.895378199999996,
+        "lng": 32.8548095
+      },
+      "rating": 5,
+      "userRatingCount": 214,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2202439782567449646",
+      "recommendedPrimary": [
+        "Pizza Hamurundan Özel Vegan / Gurme Sandviç",
+        "Parmak Patates & Taze Salata"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Güçlü Vegan Seçenekler & Özel Salatalar",
+          "note": "Klasik et sandviçleri dışında bitkisel beslenenler için de baştan sona özenli kremalı soslu sandviç ve salata çıkarır.",
+          "proof": "İşletme menü kayıtları ve restoran değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mesnevi Sokak üzerinde butik gastro-sandviç tezgâhı ve samimi oturma düzeni",
+        "crowdAndNoise": "Özenle hazırlanmış hamurda gurme/vegan sandviç arayan Güvenevler sakinleri",
+        "disadvantage": "Küçük ölçekli bir gastro-sandviç dükkanıdır; uzun masa yemeği beklentisi yerine taze el yapımı sandviç sunar",
+        "transit": "Güvenevler Mahallesi Mesnevi Sokağı No:20/B."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "VenuesReyon SolePiGastro",
+          "url": "https://venuesreyon.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Pizza hamurundan ekmek, vegan sandviç reçetesi, patates ve salata menüsü"
+        },
+        {
+          "title": "Restoranim SolePiGastro",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mesnevi Sokak gastronomi değerlendirmeleri ve tam puana yakın memnuniyet"
+        }
+      ],
+      "pros": [
+        "Pizza hamuru ekmeğiyle ayrışan yaratıcı gurme ve vegan sandviç mutfağı",
+        "Yüksek puan istikrarı"
+      ],
+      "cons": [
+        "Sınırlı kapasiteli sandviç dükkânı formatı"
+      ],
+      "uncertainties": [
+        "Günlük hamur hazırlığına bağlı olarak akşam geç saatlerde bazı çeşitler bitebilir"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayranci-mangiare",
+      "categoryId": "denemelisin",
+      "resolvedName": "Mangiare",
+      "branchName": "Ayrancı, Güvenevler, Yeşilyurt Sk. 21/D, 06680 Çankaya/Ankara",
+      "placeId": "ChIJ3_ytcgBP0xQRNizg7pWGKlk",
+      "coordinates": {
+        "lat": 39.8975256,
+        "lng": 32.8547909
+      },
+      "rating": 4.9,
+      "userRatingCount": 85,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6425095796913351734",
+      "recommendedPrimary": [
+        "Roma Focaccia Sandviç (Roastbeef & İsli Peynir)",
+        "Livorno (Brisket & Trüf Mayonez)",
+        "Günün Çorbası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günün Çorbası & İtalyan Kahvaltı Alternatifleri",
+          "note": "Sipariş üzerine sıcak dilimlenen focaccia sandviçlerin yanında günlük çorba ve hafif ev tatlıları da bulunur.",
+          "proof": "İşletme mutfak kayıtları ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Yeşilyurt Sokak üzerinde samimi birkaç masalık İtalyan sandviç barı",
+        "crowdAndNoise": "Fırından yeni çıkmış gerçek focaccia sandviç arayan öğle ve akşamüstü müdavimleri",
+        "disadvantage": "İç mekân küçük olduğu için yoğun öğle saatlerinde ayakta bekleme veya paket tercih edilebilir",
+        "transit": "Güvenevler Mahallesi Yeşilyurt Sokak No:21/D."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Mangiare Resmi Sitesi",
+          "url": "https://mangiare.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Taze focaccia ekmeğiyle Roma, Como, Palermo, Livorno sandviç reçeteleri"
+        },
+        {
+          "title": "Menu-TR Mangiare",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yeşilyurt Sk. konumu, brisket ve roastbeef sandviç incelemeleri"
+        },
+        {
+          "title": "Restoranim Mangiare",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Focaccia kalitesi, çorba ve tatlı değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Taze günlük focaccia hamuru ve dengeli soğuk-sıcak İtalyan şarküteri eşleşmeleri",
+        "Hızlı ve tutarlı kalite"
+      ],
+      "cons": [
+        "Küçük oturma alanı nedeniyle kalabalık gruplara uygun değil"
+      ],
+      "uncertainties": [
+        "Focaccia partileri gün sonunda tükenebilir"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayranci-hestia",
+      "categoryId": "denemelisin",
+      "resolvedName": "Hestia",
+      "branchName": "Aziziye, Mesnevi Cd No:9/B, 06660 Çankaya/Ankara",
+      "placeId": "ChIJq_bgiLJP0xQRRduY_xuHxX0",
+      "coordinates": {
+        "lat": 39.8951229,
+        "lng": 32.8560037
+      },
+      "rating": 4.6,
+      "userRatingCount": 397,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9062798379475065669",
+      "recommendedPrimary": [
+        "Izgara Etli / Tavuklu Özel Bowl",
+        "Vişneli Brownie & Vitamin Bar İçecekleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Vitamin Bar & Vişneli Brownie Seçenekleri",
+          "note": "Hafif öğün kaselerine eşlik eden taze sıkım meyve-sebze suları ve ev yapımı vişneli brownie sunumuyla tamamlanır.",
+          "proof": "İşletme mutfak menüsü ve restoran rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mesnevi Caddesi üzerinde aydınlık, modern ve temiz bistro salonu",
+        "crowdAndNoise": "Hamur işi ve fast-food dışında dengeli, taze malzemeli öğle veya akşam yemeği arayanlar",
+        "disadvantage": "Klasik Türk kebapçısı veya meyhane arayanlar yerine bowl ve sağlıklı bistro çizgisindedir",
+        "transit": "Aziziye Mahallesi Mesnevi Caddesi No:9/B."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Dijital Menü Hestia",
+          "url": "https://dijital.menu/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Akdeniz yeşillikli kaseler, ızgara et/tavuk, brownie ve Vitamin Bar detayları"
+        },
+        {
+          "title": "Restoranim Hestia Mesnevi",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Malzeme tazeliği, sağlıklı menü ve servis değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Bölge içinde nadir bulunan tutarlı sağlıklı bowl ve ızgara bistrosu",
+        "Yüksek malzeme tazeliği"
+      ],
+      "cons": [
+        "Geleneksel tencere yemeği çeşitliliği yok"
+      ],
+      "uncertainties": [
+        "Öğle saatlerinde çevredeki çalışan yoğunluğu nedeniyle servis uzayabilir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayranci-kuzgundokuz",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kuzgundokuz",
+      "branchName": "Ayrancı, Kuzgun Cd no:9, 06830 Çankaya/Ankara",
+      "placeId": "ChIJ771axtFP0xQR1HTzQvwX7kM",
+      "coordinates": {
+        "lat": 39.903968899999995,
+        "lng": 32.850988
+      },
+      "rating": 4.7,
+      "userRatingCount": 726,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4894876217220756692",
+      "recommendedPrimary": [
+        "Lavantalı / Balkabaklı / Süt Reçelli Cheesecake",
+        "Türk Kahvesi veya Ev Yapımı Sahlep"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mevsimlik Ev Yapımı Sahlep & Özgün Tatlı Vitrini",
+          "note": "Üçüncü dalga kahve barlarından ayrılarak özellikle ev yapımı sahlebi ve imza cheesecake reçeteleriyle Ayrancı’da ayrı bir yer edinmiştir.",
+          "proof": "Şehir değerlendirmeleri ve tatlı rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kuzgun Caddesi üzerinde sıcak, sakin ve sohbete uygun butik kafe düzeni",
+        "crowdAndNoise": "Klasik pastane kalıplarının dışında özgün cheesecake, Türk kahvesi ve sahlep sevenler",
+        "disadvantage": "Ana yemek mutfağı yoktur; tatlı-kahve-sohbet durağıdır ve akşam yoğunlukta masa çabuk dolar",
+        "transit": "Ayrancı Mahallesi Kuzgun Caddesi No:9."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Restoranim Kuzgundokuz",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kuzgun Cd. No:9 konumu, lavantalı/balkabaklı cheesecake, sahlep ve Türk kahvesi"
+        },
+        {
+          "title": "Yandex Haritalar Kuzgundokuz",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yüksek değerlendirme istikrarı ve sakin mahalle atmosferi doğrulaması"
+        }
+      ],
+      "pros": [
+        "Yüksek ziyaretçi hacmine rağmen el yapımı cheesecake standardını koruması",
+        "Sahlep ve Türk kahvesi vurgusu"
+      ],
+      "cons": [
+        "Tuzlu yemek yerine sadece tatlı-içecek odaklı"
+      ],
+      "uncertainties": [
+        "Hafta sonu öğleden sonra bazı özel cheesecake dilimleri erken tükenebilir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayranci-basbousa",
+      "categoryId": "denemelisin",
+      "resolvedName": "Basbousa - Şam Tatlı, Kömbe, Kaytaz Böreği",
+      "branchName": "Ayrancı, Hoşdere Cd. No:29 D:B, 06690 Çankaya/Ankara",
+      "placeId": "ChIJF7e9PnRP0xQRCJmYkwCPwPE",
+      "coordinates": {
+        "lat": 39.9011,
+        "lng": 32.849618899999996
+      },
+      "rating": 4.7,
+      "userRatingCount": 123,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17420080591308101896",
+      "recommendedPrimary": [
+        "Antakya Usulü Unsuz Şam Tatlısı",
+        "Kaytaz Böreği & Biberli Ekmek",
+        "Antakya Kömbesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tuzlu Hatay Fırını (Kaytaz Böreği & Biberli Ekmek)",
+          "note": "Şam tatlısı yanında günlük çıkan sıcak Antakya kaytaz böreği ve biberli ekmek öğle-ikindi atıştırması olarak rağbet görür.",
+          "proof": "Yerel mahalle rehberleri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük, tezgâh-paket ağırlıklı sade aile fırını dükkânı",
+        "crowdAndNoise": "Ağır şerbetli tatlılar yerine gerçek Hatay usulü hafif Şam tatlısı ve kaytaz böreği arayanlar",
+        "disadvantage": "Uzun kafe oturumu yerine eve/ayaküstü paket almaya daha uygun küçük bir dükkândır",
+        "transit": "Ayrancı Mahallesi Hoşdere Caddesi No:29 D:B."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Ayrancım Basbousa İncelemesi",
+          "url": "https://ayrancim.org.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Hoşdere aile işletmesi, unsuz-yağsız Şam tatlısı, kaytaz böreği ve kömbe detayları"
+        },
+        {
+          "title": "Menu-TR Basbousa",
+          "url": "https://www.menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Biberli ekmek, kaytaz böreği ve yöresel tatlı değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Ankara’da tek çatı altında nadir bulunan özgün Hatay kaytaz böreği ve hafif Şam tatlısı",
+        "İçten aile işletmesi"
+      ],
+      "cons": [
+        "Oturma alanı oldukça kısıtlı, ağırlıklı paket odaklı"
+      ],
+      "uncertainties": [
+        "Kaytaz böreği ve kömbe çeşitleri gün içinde tükendikçe yenilenir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayranci-kaymaklim-kunefe",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kaymaklım künefe",
+      "branchName": "Ayrancı, Hoşdere Cd. No:46 D:c, 06530 Çankaya/Ankara",
+      "placeId": "ChIJFTrWr1BP0xQREhvH4-CzePk",
+      "coordinates": {
+        "lat": 39.9001437,
+        "lng": 32.8489127
+      },
+      "rating": 4.6,
+      "userRatingCount": 72,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17976315691124857618",
+      "recommendedPrimary": [
+        "Klasik Peynirli Künefe",
+        "Hasır / Atom Künefe"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Süt & Çay Eşliğinde Akşam Tatlısı",
+          "note": "Siparişle sıcak pişen künefe servisi sade dondurma veya süt eşlikçisiyle akşam sohbetlerinin tatlı kapanışı olur.",
+          "proof": "Harita kayıtları ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Hoşdere Caddesi cephesinde sade, tatlı odaklı oturma salonu",
+        "crowdAndNoise": "Akşam yemeği sonrası Hoşdere hattında sıcak taze künefe yemek isteyenler",
+        "disadvantage": "Geleneksel şerbetli künefe dükkânıdır; hafif kafe pastanesi arayanlar için ağırdır",
+        "transit": "Ayrancı Mahallesi Hoşdere Caddesi No:46 D:C."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "TGO & Yemek Kayıtları Kaymaklım Künefe",
+          "url": "https://www.tgoyemek.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Peynirli, hasır, atom künefe ve baklava menüsü"
+        },
+        {
+          "title": "Yandex Haritalar Kaymaklım Künefe",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hoşdere Cd. konumu ve sıcak künefe memnuniyet notları"
+        }
+      ],
+      "pros": [
+        "Mahalle içinde siparişe göre sıcak pişirilen temiz Antep-Hatay künefesi",
+        "Akşam geç saatlere kadar tatlı erişimi"
+      ],
+      "cons": [
+        "Küçük oturma alanı ve park güçlüğü"
+      ],
+      "uncertainties": [
+        "Akşam kalabalığında künefe pişirim sırası kısa bekleme yaratabilir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    }
+  ]
+}

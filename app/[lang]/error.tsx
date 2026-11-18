@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useEffect } from 'react';
 import { AlertTriangle } from 'lucide-react';
 
@@ -42,9 +43,9 @@ export default function Error({
         <div className="pt-8">
           <p className="text-sm text-zinc-400">
             veya{' '}
-            <a href="/" className="text-zinc-600 hover:text-foreground font-medium underline underline-offset-4 transition-colors">
+            <Link href="/" className="text-zinc-600 hover:text-foreground font-medium underline underline-offset-4 transition-colors">
               anasayfaya dönün
-            </a>
+            </Link>
           </p>
         </div>
       </div>

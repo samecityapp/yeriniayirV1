@@ -1,0 +1,1002 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "rize-merkez",
+  "displayName": "Rize Merkez (Çarşı, Ziraat & Sahil)",
+  "verifiedAt": "2026-11-18T10:33:26.980Z",
+  "selectedCount": 13,
+  "rejectedControls": [
+    {
+      "id": "ctrl-rize-crakers-chain",
+      "resolvedName": "Crakers Pizza Rize",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-rize-dominos-chain",
+      "resolvedName": "Domino's Pizza Toki",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-rize-mono-chain",
+      "resolvedName": "Mono Burger",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-rize-burgerking-chain",
+      "resolvedName": "Burger King - Şimal Avm",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-rize-harvey-low",
+      "resolvedName": "Harvey Burger Rize",
+      "reason": "below_quality_threshold:★4.1(251)"
+    },
+    {
+      "id": "ctrl-rize-starbucks-chain",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-rize-espressolab-chain",
+      "resolvedName": "Espressolab Rize Merkez",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-rize-bayramefendi-chain",
+      "resolvedName": "Bayramefendi Osmanlı Kahvecisi (Ekspres)",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-rize-yagmur-purity",
+      "resolvedName": "Yağmur Pastanesi",
+      "reason": "kahve_category_not_coffee_specialist:pastry_shop"
+    },
+    {
+      "id": "ctrl-rize-konak-purity",
+      "resolvedName": "Konak pastaneleri",
+      "reason": "kahve_category_not_coffee_specialist:pastry_shop"
+    },
+    {
+      "id": "ctrl-rize-fasuli-chain",
+      "resolvedName": "Fasuli Rize",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-rize-nalia-chain",
+      "resolvedName": "Nalia Karadeniz Mutfağı Rize",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-rize-dagmaran-low",
+      "resolvedName": "Dağmaran",
+      "reason": "below_quality_threshold:★4.2(3696)"
+    },
+    {
+      "id": "ctrl-rize-yakamoz-low",
+      "resolvedName": "YAKAMOZ",
+      "reason": "below_quality_threshold:★4.3(1191)"
+    },
+    {
+      "id": "ctrl-rize-evvelzaman-low",
+      "resolvedName": "Evvel Zaman Yöresel Yemek",
+      "reason": "below_quality_threshold:★3.6(386)"
+    },
+    {
+      "id": "ctrl-rize-kuzeybalik-low",
+      "resolvedName": "Kuzey Balık Restaurant",
+      "reason": "below_quality_threshold:★4.2(764)"
+    },
+    {
+      "id": "ctrl-rize-cayeli-lale-outside",
+      "resolvedName": "LALE 1973",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Çarşı/Carsi/Piriçelebi/Piricelebi/Tophane/Reşadiye/Resadiye/Atmeydanı/Atmeydani/Müftü/Muftu/Fener/Eminettin/Yeniköy/Yenikoy/İslampaşa/Islampasa/Portakallık/Portakallik/Taşlıdere/Taslidere/Dağınıksu/Daginiksu/Gündoğdu/Gundogdu/Alipaşa/Alipasa/Camiönü/Camionu/Fatih/Balsu/Ekrem Orhon/Engindere, adres: Yenipazar, 9 Mart Cd No:121C, 53200 Çayeli/Rize, Türkiye)"
+    },
+    {
+      "id": "ctrl-rize-cayeli-husrev-outside",
+      "resolvedName": "Hüsrev Lokantası",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Çarşı/Carsi/Piriçelebi/Piricelebi/Tophane/Reşadiye/Resadiye/Atmeydanı/Atmeydani/Müftü/Muftu/Fener/Eminettin/Yeniköy/Yenikoy/İslampaşa/Islampasa/Portakallık/Portakallik/Taşlıdere/Taslidere/Dağınıksu/Daginiksu/Gündoğdu/Gundogdu/Alipaşa/Alipasa/Camiönü/Camionu/Fatih/Balsu/Ekrem Orhon/Engindere, adres: Büyüktaşhane, Amiral Hasan Sarıoğlu Cd. No:51/A, 53200 Çayeli/Rize, Türkiye)"
+    },
+    {
+      "id": "ctrl-rize-derepazari-outside",
+      "resolvedName": "Köşk pide",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Çarşı/Carsi/Piriçelebi/Piricelebi/Tophane/Reşadiye/Resadiye/Atmeydanı/Atmeydani/Müftü/Muftu/Fener/Eminettin/Yeniköy/Yenikoy/İslampaşa/Islampasa/Portakallık/Portakallik/Taşlıdere/Taslidere/Dağınıksu/Daginiksu/Gündoğdu/Gundogdu/Alipaşa/Alipasa/Camiönü/Camionu/Fatih/Balsu/Ekrem Orhon/Engindere, adres: Merkez, Atatürk Cd.inönü sok no 35, 53900 Derepazarı/Rize, Türkiye)"
+    },
+    {
+      "id": "ctrl-rize-ayder-outside",
+      "resolvedName": "Ayder Eylül Restaurant",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Çarşı/Carsi/Piriçelebi/Piricelebi/Tophane/Reşadiye/Resadiye/Atmeydanı/Atmeydani/Müftü/Muftu/Fener/Eminettin/Yeniköy/Yenikoy/İslampaşa/Islampasa/Portakallık/Portakallik/Taşlıdere/Taslidere/Dağınıksu/Daginiksu/Gündoğdu/Gundogdu/Alipaşa/Alipasa/Camiönü/Camionu/Fatih/Balsu/Ekrem Orhon/Engindere, adres: Kaplıca, Ayder Yaylası Yolu, 53750 Çamlıhemşin/Rize, Türkiye)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "rize-pizzabey",
+      "categoryId": "pizza",
+      "resolvedName": "pizzabey",
+      "branchName": "Çarşı, osman karavin cad no:8 h blok, 53020 Rize Merkez/Rize, Türkiye",
+      "placeId": "ChIJjYWZeCF7ZkARz6N2NwAndYc",
+      "coordinates": {
+        "lat": 41.0252558,
+        "lng": 40.5198207
+      },
+      "rating": 5,
+      "userRatingCount": 195,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://pizzabey.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=9760750649279423439",
+      "recommendedPrimary": [
+        "Fırtına Vadisi (Karışık) Pizza",
+        "Gito / Kaçkar Özel Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Tiramisu",
+          "note": "Yemek sonunda en sık tercih edilen İtalyan usulü tatlı eşlikçisi.",
+          "proof": "pizzabey.com.tr + Yemeksepeti değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Çarşı Blokları içinde kompakt, düzenli iç masa düzeni",
+        "crowdAndNoise": "Akşam saatlerinde gençler ve Rize merkezde gerçek Napoli hamuru arayanlarla canlı",
+        "disadvantage": "Ev yapımı fermante hamur nedeniyle sipariş başına hazırlık süresi klasik zincirlere göre daha uzun sürebilir",
+        "transit": "Çarşı Mahallesi Osman Karavin Caddesi No:8 H Blok Çarşı AVM içinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Pizzabey Resmi Site",
+          "url": "https://pizzabey.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Uzun fermantasyon ekşi maya, San Marzano domates sosu ve Gito/Kaçkar/Fırtına Vadisi menüsü"
+        },
+        {
+          "title": "Yemeksepeti Rize Çarşı Puanı",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hafif hamur yapısı ve tiramisu geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Rize merkezde nadir gerçek ekşi maya Napoli hamuru",
+        "Yüksek puan istikrarı"
+      ],
+      "cons": [
+        "Hazırlık süresi pik akşamlarda uzayabilir"
+      ],
+      "uncertainties": [
+        "AVM içi blok yerleşimi sokağa açık değil"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "rize-express-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "Express Pizza",
+      "branchName": "268, Reşadiye, Cumhuriyet Cd., 53020 Rize Merkez/Rize, Türkiye",
+      "placeId": "ChIJLUtjEeB6ZkARAyUHTfHVz5U",
+      "coordinates": {
+        "lat": 41.0314337,
+        "lng": 40.512184
+      },
+      "rating": 4.5,
+      "userRatingCount": 319,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://expresspizza.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=10795082064186516739",
+      "recommendedPrimary": [
+        "Pastırmalı & Kavurmalı Pizza",
+        "Karışık Özel Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırınlanmış Atıştırmalık Sepeti",
+          "note": "Soğan halkası ve baharatlı patates kızartması eşlikleri.",
+          "proof": "expresspizza.com.tr + Yemeksepeti menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Reşadiye cadde üzerinde sade ve pratik iç oturum",
+        "crowdAndNoise": "Geç akşam saatlerine kadar aileler ve öğrenciler tarafından yoğun ilgi görür",
+        "disadvantage": "Geleneksel İtalyan taş fırını yerine doyurucu yerel pizza salonu çizgisindedir",
+        "transit": "Reşadiye Mahallesi Cumhuriyet Caddesi No:268 üzerinde merkez sahil yürüyüşüne yakın"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Express Pizza Resmi Site",
+          "url": "https://expresspizza.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Küçük/orta/büyük/jumbo boy pizza ve fırın yan ürün kataloğu"
+        },
+        {
+          "title": "Yemeksepeti Reşadiye Değerlendirmeleri",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sıcak teslimat ve hamur dengesi geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Geç saatlere kadar ulaşılabilir yerel pizza salonu",
+        "Bol malzeme oranı"
+      ],
+      "cons": [
+        "Napoliten ekşi maya arayanlardan ziyade klasik pizza severlere hitap eder"
+      ],
+      "uncertainties": [
+        "Yoğun yağışlı akşamlarda paket sırası uzayabilir"
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "rize-burger-no301",
+      "categoryId": "hamburger",
+      "resolvedName": "Burger No 301",
+      "branchName": "Çarşı, Osman Karavin Cad TOKİ Blokları B Blok, 53020 Rize Merkez/Rize, Türkiye",
+      "placeId": "ChIJAXgf4OV6ZkAR8kHbJ8u5APM",
+      "coordinates": {
+        "lat": 41.0258617,
+        "lng": 40.518493299999996
+      },
+      "rating": 4.5,
+      "userRatingCount": 606,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17510199633414668786",
+      "recommendedPrimary": [
+        "Casablanca Burger",
+        "Klasik Dana Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Baharatlı Patates Kızartması",
+          "note": "Burger menülerin yanında sıcak ve gevrek çıkan temel eşlikçi.",
+          "proof": "Yemeksepeti + yerel burger menüleri"
+        }
+      ],
+      "suitability": {
+        "seating": "TOKİ Blokları cadde cephesinde pratik masa düzeni",
+        "crowdAndNoise": "Öğle ve akşam arası genç kitleyle hareketli",
+        "disadvantage": "Rize Ardeşen şubesiyle birlikte iki noktalı yerel bir markadır; fiyat bandı klasik büfe burgerlerin üzerindedir",
+        "transit": "Çarşı Osman Karavin Caddesi TOKİ Blokları B Blok üzerinde merkez meydandan yürüyüş mesafesinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemeksepeti Rize Burger Listesi",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Casablanca Burger, et tazeliği ve sıcak servis geri bildirimleri"
+        },
+        {
+          "title": "Rizedesin Mekan Rehberi",
+          "url": "https://rizedesin.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çarşı Osman Karavin Caddesi yerel burger işletmesi kaydı"
+        }
+      ],
+      "pros": [
+        "Rize merkezde 600 üstü oylamayla en istikrarlı yerel burger noktası",
+        "Özgün sos seçenekleri"
+      ],
+      "cons": [
+        "Tek kalem büyük porsiyon arayanlara göre ek patatesle tamamlanmalı"
+      ],
+      "uncertainties": [
+        "Paket yoğunluğunda kurye bekleme süresi uzayabilir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "rize-haura-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Haura Coffee Lounge",
+      "branchName": "Çarşı, Tevfik İleri Cd. Çarşı AVM, 53020 Rize Merkez/Rize, Türkiye",
+      "placeId": "ChIJcw0GIel6ZkAR8YmDPfM1aCU",
+      "coordinates": {
+        "lat": 41.0254641,
+        "lng": 40.5200556
+      },
+      "rating": 4.5,
+      "userRatingCount": 2112,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://hauracoffeelounge.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=2695463695806597617",
+      "recommendedPrimary": [
+        "Üçüncü Nesil Filtre Kahve",
+        "Cortado & Flat White"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "San Sebastian Cheesecake & Ev Tatlıları",
+          "note": "Kahve eşliğinde tercih edilen vitrin tatlıları ve atıştırmalıklar.",
+          "proof": "hauracoffeelounge.com.tr + Finedinemenu"
+        }
+      ],
+      "suitability": {
+        "seating": "Zümrüt yeşili koltuklu ferah salon ve üst teras oturumu",
+        "crowdAndNoise": "Gündüz sakin çalışma, akşam saatlerinde ise oldukça kalabalık sosyal buluşma noktası",
+        "disadvantage": "Akşamları lounge ve nargile oturumları nedeniyle ses düzeyi ve kalabalık artar",
+        "transit": "Çarşı Mahallesi Tevfik İleri Caddesi Çarşı AVM üzerinde merkezde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Haura Coffee Resmi Site",
+          "url": "https://hauracoffeelounge.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Üçüncü nesil kahve, matcha, tatlı ve teras oturumu bilgisi"
+        },
+        {
+          "title": "Neleri Meşhur Rize Kahve Rehberi",
+          "url": "https://nelerimeshur.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çarşı Mahallesi’nin en bilinen buluşma kahve evlerinden biri olarak inceleme"
+        }
+      ],
+      "pros": [
+        "Yüksek hacimde 4.5 puan tutarlılığı",
+        "Merkezi Çarşı konumu ve ferah salon"
+      ],
+      "cons": [
+        "Akşam nargile alanı ve kalabalığı sessiz çalışma için ağır gelebilir"
+      ],
+      "uncertainties": [
+        "Yoğun saatlerde teras masaları hızlı dolar"
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "rize-bkr-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "BKR COFFEE",
+      "branchName": "Çarşı, İbrahim Karaoğlanoğlu Cad Çarşı Avm A Blok No:4-1/3, 53020 Rize Merkez/Rize, Türkiye",
+      "placeId": "ChIJsRgDb8p7ZkAR6d1t66Gb_9E",
+      "coordinates": {
+        "lat": 41.026418899999996,
+        "lng": 40.5182855
+      },
+      "rating": 4.4,
+      "userRatingCount": 72,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://bkrcoffee.com/",
+      "mapsUri": "https://maps.google.com/?cid=15131984392730041833",
+      "recommendedPrimary": [
+        "Cappuccino & Flat White",
+        "Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günün Kahve Yanı Tatlısı",
+          "note": "Filtre kahve eşliğinde sunulan sade tatlı ve kurabiye alternatifleri.",
+          "proof": "bkrcoffee.com + Restoranım sayfası"
+        }
+      ],
+      "suitability": {
+        "seating": "Büyük lounge kafelerden daha sakin, odaklanmaya ve sohbete uygun masa düzeni",
+        "crowdAndNoise": "Çarşı içinde kaliteli espresso arayan kahve müdavimleri",
+        "disadvantage": "Geniş yemek mutfağı yoktur; kahve ve küçük tatlı eşlikçilerine odaklanır",
+        "transit": "Çarşı İbrahim Karaoğlanoğlu Caddesi Çarşı AVM A Blok No:4-1/3 içinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "BKR Coffee Resmi Site",
+          "url": "https://bkrcoffee.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Çarşı tek şubeli nitelikli kahve ve espresso menüsü"
+        },
+        {
+          "title": "Restoranım Rize BKR Kaydı",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Cappuccino, filtre kahve ve sakin atmosfer değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Tek şubeli saf kahveci yaklaşımı",
+        "Nargile gürültüsünden uzak sakin tempo"
+      ],
+      "cons": [
+        "AVM içi cephesi manzaralı sahil mekanlarına göre daha içe dönüktür"
+      ],
+      "uncertainties": [
+        "Tatlı çeşitleri günlük tezgâh stoğuna göre değişir"
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "rize-coffee-de-101",
+      "categoryId": "kahve",
+      "resolvedName": "Coffee De 101",
+      "branchName": "Tophane, Atatürk Cd., 53100 Rize Merkez/Rize, Türkiye",
+      "placeId": "ChIJcVsFbAB7ZkAR3NCzy-GKLVs",
+      "coordinates": {
+        "lat": 41.024312099999996,
+        "lng": 40.522214999999996
+      },
+      "rating": 4.7,
+      "userRatingCount": 37,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6570060133793255644",
+      "recommendedPrimary": [
+        "Iced Caramel Latte / Flat White",
+        "Espresso Tonic"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Kahve Yanı Atıştırmalıklar",
+          "note": "Cadde molasına eşlik eden küçük tatlı ve sandviç seçenekleri.",
+          "proof": "101cafelounge.com.tr + yerel dizinler"
+        }
+      ],
+      "suitability": {
+        "seating": "Tophane ana cadde üzerinde modern sokak önü ve iç masa alanı",
+        "crowdAndNoise": "Tophane ve Liman civarı genç çalışanlar",
+        "disadvantage": "Hacmi henüz görece düşüktür; akşam cadde trafiği önünde dış oturum hareketli olur",
+        "transit": "Tophane Mahallesi Atatürk Caddesi üzerinde şehir içi durakların hemen yanında"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "101 Cafe Lounge Resmi Sayfa",
+          "url": "https://101cafelounge.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Tophane kahve çeşitleri ve kafe menüsü"
+        },
+        {
+          "title": "Rizedesin İşletme Dizini",
+          "url": "https://rizedesin.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tophane Atatürk Caddesi konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Tophane ana aksında yürümesi kolay konum",
+        "Yüksek misafir puanı"
+      ],
+      "cons": [
+        "Menüde ağırlık klasik espresso bazlı içeceklerde"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamları ön masalar hızlı dolabilir"
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "rize-aware-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Aware Coffee & Lounge",
+      "branchName": "Fener, Menzil Sk. No:1/A, 53100 Rize Merkez/Rize, Türkiye",
+      "placeId": "ChIJF5SlJjx7ZkARPmFtdPD-n28",
+      "coordinates": {
+        "lat": 41.039648199999995,
+        "lng": 40.5031393
+      },
+      "rating": 4.7,
+      "userRatingCount": 43,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8043427768205926718",
+      "recommendedPrimary": [
+        "V60 / Filtre Kahve",
+        "Iced Americano & Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Fener Tost Çeşitleri",
+          "note": "Üniversite çevresi misafirlerin kahve yanında sık tercih ettiği sıcak tost alternatifleri.",
+          "proof": "Restoranım + Winniey Rize rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Fener’de gürültüden uzak samimi iç salon",
+        "crowdAndNoise": "Fener mahallesi öğrencileri ve sahil yürüyüşü sonrası mola verenler",
+        "disadvantage": "Çarşı merkezine yürüyüşle biraz uzaktır; Fener yönüne dolmuş veya araç gerekir",
+        "transit": "Fener Mahallesi Menzil Sokak No:1/A üzerinde Menderes Bulvarı’na birkaç adım"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım Fener Aware İncelemesi",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Fener’de nitelikli kahve, tatlı ve özel tost çeşitleriyle 4.7 puan profili"
+        },
+        {
+          "title": "Winniey Rize Rehberi",
+          "url": "https://www.winniey.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tostbağa Fener / Aware Coffee sahil-kampüs kafe doğrulaması"
+        }
+      ],
+      "pros": [
+        "Çarşı AVM dışı gerçek mahalle sokak kafesi dokusu",
+        "Fener sahiline yakınlık"
+      ],
+      "cons": [
+        "Küçük ölçekli alan nedeniyle büyük gruplara dar kalabilir"
+      ],
+      "uncertainties": [
+        "Akademik dönem dışı günlerde yoğunluk seviyesi değişir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "rize-sandal-balik",
+      "categoryId": "balik",
+      "resolvedName": "SANDAL BALIK VE KÖFTE RİZE",
+      "branchName": "Reşadiye, Atatürk Cd., 53020 Rize Merkez/Rize, Türkiye",
+      "placeId": "ChIJx9saDhd7ZkARckBDiy31G3w",
+      "coordinates": {
+        "lat": 41.0317041,
+        "lng": 40.5100139
+      },
+      "rating": 4.8,
+      "userRatingCount": 1738,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8943011061033025650",
+      "recommendedPrimary": [
+        "Tava veya Izgara Mezgit / Hamsi / Levrek",
+        "Özel Balık Çorbası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Karides Mantı & Kalamar Tava",
+          "note": "Ana balık öncesi masada en sık paylaşılan sıcak deniz ürünü başlangıcı.",
+          "proof": "sandalbalikmenu.com + Yemeksepeti menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Reşadiye merkezde aile ve iş yemeklerine uygun düzenli kapalı salon",
+        "crowdAndNoise": "Akşam ve öğle yemeklerinde temiz deniz ürünü arayan yerliler ve ziyaretçilerle yoğun",
+        "disadvantage": "Ana cadde içinde yer aldığı için deniz sıfır manzarası yoktur; pik akşamlarda masa düzeni sıkışık hissedilebilir",
+        "transit": "Reşadiye Atatürk Caddesi üzerinde şehir içi ulaşımla yürüyüşle ulaşılabilir"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Sandal Balık Resmi Menü",
+          "url": "https://sandalbalikmenu.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Balık çorbası, mevsim balıkları, karides mantı, kalamar ve köfte menüsü"
+        },
+        {
+          "title": "Neleri Meşhur Rize Rehberi",
+          "url": "https://nelerimeshur.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Rize Merkez’in önde gelen yerel deniz ürünü restoranı incelemesi"
+        }
+      ],
+      "pros": [
+        "Bin yedi yüzü aşkın oylamayla şehirdeki en yüksek balık puanı",
+        "Balık yemeyenler için köfte alternatifi"
+      ],
+      "cons": [
+        "Deniz manzaralı sahil tesisi yerine şehir içi cadde lokasyonu"
+      ],
+      "uncertainties": [
+        "Hamsi ve palamut çeşitliliği günlük av sezonuna göre değişir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "rize-piriyoz-balik",
+      "categoryId": "balik",
+      "resolvedName": "piriyoz balık restaurant",
+      "branchName": "Rize Merkez, Taşlıdere, Cumhuriyet Çay fabrikası karşısı, 53020 Rize Merkez/Rize, Türkiye",
+      "placeId": "ChIJd_aA7mtlZkARH4f1hT8uCA0",
+      "coordinates": {
+        "lat": 41.0444404,
+        "lng": 40.5877906
+      },
+      "rating": 4.7,
+      "userRatingCount": 497,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=939051372672026399",
+      "recommendedPrimary": [
+        "Mevsimine Göre Barbun / İstavrit / Kalkan",
+        "Karides Güveç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Buğulama Balık & Soğuk Başlangıç Mezeleri",
+          "note": "Kızartma dışında fırın/buğulama isteyenler için sade deniz ürünü tabakları.",
+          "proof": "Restoranım + Wanderlog incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Taşlıdere sahil yolunda denize bakan pencereli, ferah ve aile dostu salon",
+        "crowdAndNoise": "Akşamüstü ve akşam saatlerinde Rize Merkez–Çayeli arası gelen ailelerle canlı",
+        "disadvantage": "Çarşı merkezinin biraz doğusunda yer aldığı için sahil yolundan kısa araç veya minibüs ulaşımı ister",
+        "transit": "Taşlıdere Mahallesi Cumhuriyet Çay Fabrikası karşısı Karadeniz Sahil Yolu üzerinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım Piriyoz İncelemesi",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Hamsi, barbun, mezgit, sargan, kalkan ve karides güveç menü kaydı"
+        },
+        {
+          "title": "Wanderlog Rize Balık Seçkisi",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taşlıdere sahil konumu ve misafirperver servis notları"
+        }
+      ],
+      "pros": [
+        "Rize Merkez sınırında gerçek Karadeniz kıyı balık çeşitliliği",
+        "Taze av sezonuna dayalı tezgâh"
+      ],
+      "cons": [
+        "Pişirme tekniği talepleri sipariş anında net belirtilmelidir"
+      ],
+      "uncertainties": [
+        "Kalkan ve sargan yalnızca sezonunda tezgâha çıkar"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "rize-kale-balik",
+      "categoryId": "balik",
+      "resolvedName": "Kale Balık Lokantası",
+      "branchName": "Dağınıksu Mahallesi, Dağınıksu, 53840 Gündoğdu/Rize Merkez/Rize Merkez/Rize, Türkiye",
+      "placeId": "ChIJK3jh2YtlZkARttCySang3oc",
+      "coordinates": {
+        "lat": 41.0587849,
+        "lng": 40.6285075
+      },
+      "rating": 4.4,
+      "userRatingCount": 539,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9790509657640587446",
+      "recommendedPrimary": [
+        "Mevsimlik Deniz Mezgiti / Hamsi Tava",
+        "Tereyağlı Mantarlı Karides Güveç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yemek Sonrası Laz Böreği & Kabak Tatlısı",
+          "note": "Karadeniz balık sofrasını tamamlayan geleneksel yöresel tatlı seçkisi.",
+          "proof": "Öğrenci Nerede Yer + Neleri Meşhur Rize"
+        }
+      ],
+      "suitability": {
+        "seating": "Sahil yolundan içeriye uzanan temiz, aydınlık ve açık mutfaklı aile salonu",
+        "crowdAndNoise": "Yerli müdavimlerin taze av balığı için Rize doğu çıkışında tercih ettiği durak",
+        "disadvantage": "Gündoğdu yönünde şehir merkezine araçla kısa mesafededir; günlük av maliyetine göre balık fiyatları değişkenlik gösterir",
+        "transit": "Rize Merkez Dağınıksu / Gündoğdu sahil yolu paralelinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Öğrenci Nerede Yer İncelemesi",
+          "url": "https://ogrencinerdeyer.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Deniz balığı tazeliği, açık mutfak temizliği ve tereyağlı karides güveç notları"
+        },
+        {
+          "title": "Neleri Meşhur Rize Deniz Ürünleri",
+          "url": "https://nelerimeshur.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mezgit, hamsi, kalamar ve laz böreği tatlı seçkisi doğrulaması"
+        }
+      ],
+      "pros": [
+        "Yetiştirme yerine mevsimsel deniz balığına odaklanması",
+        "Açık ve temiz mutfak düzeni"
+      ],
+      "cons": [
+        "Merkez Çarşı’dan araçla ulaşım gerektirir"
+      ],
+      "uncertainties": [
+        "Günlük çıkan balık türleri hava koşullarına göre değişebilir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "rize-liman-lokantasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Liman Lokantası",
+      "branchName": "Çarşı, Osman Karavin Caddesi No:4 D:e, 53020 Rize Merkez/Rize, Türkiye",
+      "placeId": "ChIJHbZCEeZ6ZkARUzkFsUHllNk",
+      "coordinates": {
+        "lat": 41.025676399999995,
+        "lng": 40.5183184
+      },
+      "rating": 4.3,
+      "userRatingCount": 8566,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15678408273089083731",
+      "recommendedPrimary": [
+        "Bakır Kazandan Rize Kavurması",
+        "Kuru Fasulye & Tereyağlı Pilav"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kadayıflı Fırın Sütlaç & Çıtır Laz Böreği",
+          "note": "Rize kavurması sonrasında esnaf lokantasının en çok anılan iki geleneksel tatlısı.",
+          "proof": "Gurmex + Gezinomi Rize gastronomi dosyası"
+        }
+      ],
+      "suitability": {
+        "seating": "Çarşı içinde yüksek sirkülasyonlu, işlevsel klasik esnaf lokantası salonu",
+        "crowdAndNoise": "Sabah geç saatten öğle sonrasına kadar yerel esnaf ve şehir dışı gurmelerle sürekli yoğun",
+        "disadvantage": "Çok yüksek kalabalık nedeniyle öğle saatlerinde masa ve garson temposu hızlı akar; günün popüler yemekleri akşama kalmadan tükenebilir",
+        "transit": "Çarşı Mahallesi Osman Karavin Caddesi No:4/E üzerinde merkez meydanın hemen içinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Gastronomiturkey Rize Dosyası",
+          "url": "https://gastronomiturkey.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1960’lardan beri bakır tencerede Rize kavurması, karalahana sarması ve sütlaç mirası"
+        },
+        {
+          "title": "Serbestiyet Rize Esnaf Kültür Yazısı",
+          "url": "https://serbestiyet.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1968 üç kuşak esnaf lokantası ve kuzine pişirme tekniği"
+        },
+        {
+          "title": "Gurmex Liman Lokantası Rize",
+          "url": "https://gurmex.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Rize kavurması, kuru fasulye-pilav ve erken tükenme notları"
+        }
+      ],
+      "pros": [
+        "Yarım asrı aşan Rize kavurması standardı",
+        "Üç kuşak esnaf disiplini ve merkezi konum"
+      ],
+      "cons": [
+        "Yoğun öğle sirkülasyonu ve kavurmanın gün içinde tükenebilmesi"
+      ],
+      "uncertainties": [
+        "Rize kavurması için öğle vaktinden önce gitmek riski azaltır"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "rize-tadal-pide",
+      "categoryId": "denemelisin",
+      "resolvedName": "TADAL PİDE SALONU",
+      "branchName": "Çarşı, Hacı Eşref Cd. No:11 D:B, 53020 Rize Merkez/Rize, Türkiye",
+      "placeId": "ChIJr17jtL57ZkAR-6Rc2nmtUkY",
+      "coordinates": {
+        "lat": 41.023384799999995,
+        "lng": 40.5190728
+      },
+      "rating": 4.7,
+      "userRatingCount": 47,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5067303269611382011",
+      "recommendedPrimary": [
+        "Kavurmalı Karadeniz Pidesi",
+        "Kıymalı Kapalı / Açık Pide"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Usulü Fırın Sütlaç",
+          "note": "Pide üstüne sıklıkla söylenen hafif sütlü fırın tatlısı.",
+          "proof": "Yemeksepeti + yerel Rize pide incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Hacı Eşref Caddesi üzerinde sade ve hızlı esnaf pide salonu",
+        "crowdAndNoise": "Çarşı esnafı ve öğle–akşam pide müdavimleriyle düzenli",
+        "disadvantage": "Geleneksel büyük salonlar yerine kompakt yerel pideci atmosferi taşır",
+        "transit": "Çarşı Mahallesi Hacı Eşref Caddesi No:11/B üzerinde merkez yürüyüş rotasında"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemeksepeti Tadal Pide Rize",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kavurmalı/kıymalı pide tereyağı dengesi, mercimek çorbası ve fırın sütlaç onayları"
+        },
+        {
+          "title": "Rizedesin Çarşı Pide Rehberi",
+          "url": "https://rizedesin.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çarşı Hacı Eşref Caddesi yerel pide salonu doğrulaması"
+        }
+      ],
+      "pros": [
+        "Merkezde yüksek puanlı tereyağlı pide alternatifi",
+        "Hızlı servis ve sıcak fırın çıktısı"
+      ],
+      "cons": [
+        "Klasik Derepazarı tarzı çok ince hamur bekleyenlere daha dolgun gelebilir"
+      ],
+      "uncertainties": [
+        "Öğle vakti sıcak fırın sırası yoğun olabilir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "rize-ziraat-cay-bahcesi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Ziraat Çay Bahçesi",
+      "branchName": "Atmeydanı, Narenciye Sk. No:16, 53020 Rize Merkez/Rize, Türkiye",
+      "placeId": "ChIJPadUmvp6ZkARsOBZMcfJqTI",
+      "coordinates": {
+        "lat": 41.021650199999996,
+        "lng": 40.511139299999996
+      },
+      "rating": 4.5,
+      "userRatingCount": 7119,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.caykur.gov.tr/",
+      "mapsUri": "https://maps.google.com/?cid=3650670830324146352",
+      "recommendedPrimary": [
+        "Taze Demlenmiş Rize Çayı (Demlik / Bardak)",
+        "Rize Simidi Eşleşmesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Botanik Çay Bahçesi Yürüyüşü & Mikro Çay Tesisi",
+          "note": "Çay terasları arasından geçerek Rize körfezi seyrini yaşatan mekânsal deneyim.",
+          "proof": "Vikipedi Ziraat Çay Bahçesi + Tatılana rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Çay tarhlarına bakan açık teras ve kapalı seyir masaları",
+        "crowdAndNoise": "Günün her saatinde şehir yerlileri ve misafirlerle canlı, hafta sonu yüksek yoğunluk",
+        "disadvantage": "Ana yemek restoranı değildir; çay kültürü ve seyir molası odaklıdır, yağışlı günlerde açık teras kullanımı kısıtlanır",
+        "transit": "Atmeydanı Narenciye Sokak No:16 üzerinde merkezden kısa yokuş çıkışı veya minibüsle erişimli"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Tatilana Rize Ziraat Dosyası",
+          "url": "https://www.tatilana.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çaykur Ziraat Botanik Çay Bahçesi tarihçesi ve mikro üretim tesisi"
+        },
+        {
+          "title": "Gezilesi Yer Rize Çay Kültürü",
+          "url": "https://www.gezilesiyer.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çay bahçeleri içinde taze demlik çay ve Rize manzarası doğrulaması"
+        }
+      ],
+      "pros": [
+        "Şehirle özdeşleşmiş gerçek Rize çayı deneyimi",
+        "Geniş çay terası ve körfez panoraması"
+      ],
+      "cons": [
+        "Tam öğünlük restoran servisi beklenmemelidir"
+      ],
+      "uncertainties": [
+        "Sisli ve yağışlı günlerde manzara görüşü düşebilir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    }
+  ]
+}

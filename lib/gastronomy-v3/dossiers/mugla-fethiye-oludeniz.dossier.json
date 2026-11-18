@@ -1,0 +1,1274 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "mugla-fethiye-oludeniz",
+  "displayName": "Ölüdeniz, Fethiye, Muğla",
+  "verifiedAt": "2026-11-16T12:28:46.125Z",
+  "selectedCount": 14,
+  "rejectedControls": [
+    {
+      "id": "ctrl-pellini-oludeniz",
+      "resolvedName": "Pellini Ölüdeniz",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-starbucks-oludeniz",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-dominos-hisaronu",
+      "resolvedName": "Muğla Fethiye Ölüdeniz Domino's Pizza",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-jade-residence-hotel-oludeniz",
+      "resolvedName": "Jade Residence (14+) | Ölüdeniz",
+      "reason": "invalid_place_type:hotel"
+    },
+    {
+      "id": "ctrl-sea-horse-hotel-oludeniz",
+      "resolvedName": "Oludeniz Sea Horse Beach Club&Hotel",
+      "reason": "insufficient_independent_sources"
+    },
+    {
+      "id": "ctrl-oludeniz-sahil-park",
+      "resolvedName": "Ölüdeniz Sahil",
+      "reason": "invalid_place_type:national_park"
+    },
+    {
+      "id": "ctrl-bella-gusto-oludeniz",
+      "resolvedName": "Bella Gusto",
+      "reason": "below_quality_threshold:★4.2(1878)"
+    },
+    {
+      "id": "ctrl-montebello-kitchen-oludeniz",
+      "resolvedName": "MONTEBELLO KITCHEN",
+      "reason": "below_quality_threshold:★4(88)"
+    },
+    {
+      "id": "ctrl-mimoza-cafe-oludeniz",
+      "resolvedName": "Mimoza Cafe Restaurant",
+      "reason": "below_quality_threshold:★4.1(241)"
+    },
+    {
+      "id": "ctrl-sey-beach-oludeniz",
+      "resolvedName": "Şey Beach Lounge",
+      "reason": "below_quality_threshold:★4.2(726)"
+    },
+    {
+      "id": "ctrl-captain-hook-oludeniz",
+      "resolvedName": "Captain Hook Sea Food Restoran",
+      "reason": "below_quality_threshold:★4.3(685)"
+    },
+    {
+      "id": "ctrl-paradise-beach-oludeniz",
+      "resolvedName": "Paradise Beach, Bar and Restaurant",
+      "reason": "below_quality_threshold:★4.2(540)"
+    },
+    {
+      "id": "ctrl-ottoman-oludeniz",
+      "resolvedName": "Ottoman restaurant Ölüdeniz",
+      "reason": "below_quality_threshold:★4.1(611)"
+    },
+    {
+      "id": "ctrl-bamboo-oludeniz",
+      "resolvedName": "BamBoo Restaurant Cocktail Bar Ölüdeniz",
+      "reason": "below_quality_threshold:★4.1(282)"
+    },
+    {
+      "id": "ctrl-sea-horse-restoran-oludeniz",
+      "resolvedName": "Sea Horse Restoran",
+      "reason": "below_quality_threshold:★4.5(30)"
+    },
+    {
+      "id": "ctrl-cake-coffee-ovacik",
+      "resolvedName": "Cake Coffee & Breakfast & Lounge",
+      "reason": "outside_strict_neighborhood:Bbox dışında (36.57169, 29.14344)"
+    },
+    {
+      "id": "ctrl-dominic-hisaronu",
+      "resolvedName": "Dominic Restaurant traditional Turkish cuisine",
+      "reason": "outside_strict_neighborhood:Bbox dışında (36.57178, 29.13310)"
+    },
+    {
+      "id": "ctrl-loca-luna-hisaronu",
+      "resolvedName": "Loca Luna",
+      "reason": "outside_strict_neighborhood:Bbox dışında (36.57230, 29.13508)"
+    },
+    {
+      "id": "ctrl-shiraz-ovacik",
+      "resolvedName": "Shiraz Eat & Drink",
+      "reason": "outside_strict_neighborhood:Bbox dışında (36.58170, 29.15450)"
+    },
+    {
+      "id": "ctrl-karizma-ovacik",
+      "resolvedName": "Karizma Restaurant",
+      "reason": "outside_strict_neighborhood:Bbox dışında (36.57759, 29.15605)"
+    },
+    {
+      "id": "ctrl-narli-bahce-ovacik",
+      "resolvedName": "Narlı bahçe pomegranate Garden - Ölüdeniz En İyi Köy Kahvaltısı - Hisarönü Ovacık En İyi Kahvaltı - Ev Yapımı Ürünler",
+      "reason": "outside_strict_neighborhood:Bbox dışında (36.58316, 29.14594)"
+    },
+    {
+      "id": "ctrl-qaya-lounge-kayakoy",
+      "resolvedName": "Qaya Lounge",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Ölüdeniz/Oludeniz/Belcekız/Belcekiz/Belceğiz/Belcegiz/Kumburnu/Denizpark/Kıdrak/Kidrak, adres: Kayaköy, Nadir Nadi Caddesi No:82, 48300 Fethiye/Muğla)"
+    },
+    {
+      "id": "ctrl-balbura-faralya",
+      "resolvedName": "Balbura italian restaurant",
+      "reason": "outside_strict_neighborhood:Bbox dışında (36.52467, 29.12590)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "infinity-pizza-oludeniz",
+      "categoryId": "pizza",
+      "resolvedName": "İnfinity Pizza Ölüdeniz",
+      "branchName": "Ölüdeniz, Ölüdeniz Cd. No:57/A, 48300 Fethiye/Muğla",
+      "placeId": "ChIJa86CT_JDwBQR9bMzzJipRMQ",
+      "coordinates": {
+        "lat": 36.5477217,
+        "lng": 29.121712899999995
+      },
+      "rating": 4.6,
+      "userRatingCount": 207,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14142615203576263669",
+      "recommendedPrimary": [
+        "Margherita Pizza",
+        "Pepperoni Pizza",
+        "Karışık Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sarımsaklı Ekmek & Atıştırmalıklar",
+          "note": "Pizza öncesi veya yanında paylaşımlık sıcak fırın başlangıcı olarak seçilir.",
+          "proof": "dijital.link ve yerel menü kayıtları"
+        },
+        {
+          "name": "Vejetaryen Pizza",
+          "note": "Taze sebze dolgulu hafif hamurlu seçenek olarak öne çıkar.",
+          "proof": "gercekfethiye.com ve tumisyeri.com kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Açık ve kapalı sade oturma düzeni; paket ve al-götür servisi yaygın",
+        "crowdAndNoise": "Yaz akşamlarında sahil dönüşü ve cadde trafiğiyle yoğunlaşır",
+        "disadvantage": "Turistik cadde temposunda yüksek sezonda servis hızı ve pişirme standardı değişkenlik gösterebiliyor",
+        "transit": "Ölüdeniz Caddesi No:57/A üzerinde, Belcekız plaj yürüyüş hattına kısa mesafede"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Dijital Menü & İnfinity Pizza Ölüdeniz Kaydı",
+          "url": "https://dijital.link",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Margherita, Pepperoni ve klasik pizza seçkisi doğrulaması"
+        },
+        {
+          "title": "Gerçek Fethiye & Tümİşyeri Ölüdeniz Rehberi",
+          "url": "https://www.gercekfethiye.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ölüdeniz Cd. No:57/A adresi, paket ve masa servisi doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=14142615203576263669",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Ölüdeniz Cad. No:57/A konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Ölüdeniz Caddesi merkezinde bağımsız pizza odağı",
+        "Hem oturma hem hızlı al-götür seçeneği"
+      ],
+      "cons": [
+        "Üçüncü parti derleme sitelerinde puan ve fiyat-performans dengesi konusunda karışık geri bildirimler görülüyor",
+        "Sahil cephesinden içeride kalıyor"
+      ],
+      "uncertainties": [
+        "Düşük sezon ve kış aylarında çalışma günleri daralabiliyor"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "foodbox-oludeniz",
+      "categoryId": "hamburger",
+      "resolvedName": "FOODBOX ÖLÜDENİZ KEBAP VE HAMBURGER",
+      "branchName": "Ölüdeniz mh, kıdrak cad no 1-6, 48003 Fethiye/Muğla",
+      "placeId": "ChIJ2bkzmitBwBQRXRMY71JDChA",
+      "coordinates": {
+        "lat": 36.5506561,
+        "lng": 29.123036600000002
+      },
+      "rating": 4.7,
+      "userRatingCount": 426,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1155810277851665245",
+      "recommendedPrimary": [
+        "Klasik Dana Burger",
+        "Cheeseburger & Patates",
+        "Et Döner Dürüm"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Et Döner & Kebap Tabakları",
+          "note": "Hamburger dışında hızlı ve doyurucu ızgara et alternatifi arayanlarca tercih edilir.",
+          "proof": "Yemeksepeti ve yerel menü kayıtları"
+        },
+        {
+          "name": "Patates Kızartması Eşlikçileri",
+          "note": "Burger menülerinin yanında taze kızartılmış sıcak garnitür olarak servis edilir.",
+          "proof": "Yandex Harita ve yerel kullanıcı geri bildirimleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kıdrak Caddesi cephesinde pratik cadde masaları ve yoğun paket servis düzeni",
+        "crowdAndNoise": "Plaj sonrası ve akşamüstü geç saatlere kadar akışkan kalabalık görülür",
+        "disadvantage": "Hızlı yemek (fast-casual) odaklı olduğu için uzun akşam yemeği atmosferi sunmaz",
+        "transit": "Kıdrak Caddesi No:1-6 üzerinde, Belcekız-Kıdrak bağlantı aksında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Yemeksepeti — Foodbox Ölüdeniz Kaydı",
+          "url": "https://www.yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Burger çeşitleri, et-tavuk döner ve atıştırmalık menü kalemleri"
+        },
+        {
+          "title": "Yandex Harita & İşletme Doğrulaması",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ölüdeniz Mah. Kıdrak Cd. No:1/6 konumu ve hızlı servis geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=1155810277851665245",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kıdrak Cd. canlı konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Tek noktada taze ızgara burger ve yerel döner-kebap alternatifleri",
+        "Kıdrak-Belcekız hattında pratik ulaşım"
+      ],
+      "cons": [
+        "Ambiyans yerine hızlı servis önceliklidir",
+        "Yaz aylarında akşam saatlerinde paket siparişi sırası uzayabiliyor"
+      ],
+      "uncertainties": [
+        "Kış sezonunda açık gün sayısı mevsim şartlarına göre değişebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "the-hangout-oludeniz",
+      "categoryId": "hamburger",
+      "resolvedName": "The HangOut Ölüdeniz",
+      "branchName": "Ölüdeniz, Çarşı Cd. No:1, 48300 Fethiye/Muğla",
+      "placeId": "ChIJL9kGnaZAwBQRHh6_-oadA6E",
+      "coordinates": {
+        "lat": 36.5460266,
+        "lng": 29.123615799999996
+      },
+      "rating": 4.4,
+      "userRatingCount": 438,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.hangoutoludeniz.com/",
+      "mapsUri": "https://maps.google.com/?cid=11602290268094537246",
+      "recommendedPrimary": [
+        "Gurme Smash Burger",
+        "Braised Rib Pizza (Tiftik Kaburgalı)",
+        "Bianco Funghi Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Napoli Taş Fırın Pizzaları (Margherita & Diavolata)",
+          "note": "Özel fermante hamurla hazırlanan taş fırın pizzaları hamburger seçkisiyle aynı mutfaktan çıkar.",
+          "proof": "Resmi menü: hangoutoludeniz.com"
+        },
+        {
+          "name": "Çikolatalı Fondü & Krem Brüle",
+          "note": "Akşam yemeği ve imza kokteyller sonrasında paylaşımlık sıcak tatlı seçeneği sunar.",
+          "proof": "hangoutoludeniz.com tatlı menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş cadde terası, bar bölümü ve gölgelikli rahat bistro oturma alanları",
+        "crowdAndNoise": "Gündüz kahvaltı ve burger, akşamüstü ise kokteyl-pizza eşliğinde hareketli müzik temposuna geçer",
+        "disadvantage": "Yüksek sezonda canlı bar atmosferi nedeniyle ses düzeyi sakin sohbet masalarına göre yükselebiliyor",
+        "transit": "Çarşı Caddesi No:1 noktasında, Belcekız plaj girişinin hemen başında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Resmi Menü — The HangOut Ölüdeniz",
+          "url": "https://www.hangoutoludeniz.com",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Smash burgerler, Napoli pizzaları (Bianco Funghi, Braised Rib, Margherita) ve kokteyl listesi"
+        },
+        {
+          "title": "Belcekız Çarşı & Mekan İncelemeleri",
+          "url": "https://www.trip.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çarşı Cd. No:1 konumu ve gün batımı kokteyl/pizza deneyimi bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=11602290268094537246",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Ölüdeniz Çarşı Cd. No:1 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Hem smash burger hem Napoli tarzı taş fırın pizzada zengin ve net reçete listesi",
+        "Belcekız yürüyüş aksının tam girişinde kolay erişim"
+      ],
+      "cons": [
+        "Akşam bar temposunda kalabalık ve gürültü artabiliyor",
+        "Plaj önü turistik hat nedeniyle fiyatlar üst bantta"
+      ],
+      "uncertainties": [
+        "Sezon dışı dönemlerde kokteyl ve akşam mutfak kapanış düzeni değişebiliyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fly-coffee-oludeniz",
+      "categoryId": "kahve",
+      "resolvedName": "Fly Coffee",
+      "branchName": "Ölüdeniz, Denizpark Cd. No:1, 48300 Fethiye/Muğla",
+      "placeId": "ChIJQ7arNR5BwBQRhLECsodRW10",
+      "coordinates": {
+        "lat": 36.546116399999995,
+        "lng": 29.1234275
+      },
+      "rating": 4.5,
+      "userRatingCount": 144,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://fly-coffee.tilda.ws/",
+      "mapsUri": "https://maps.google.com/?cid=6727060111656923524",
+      "recommendedPrimary": [
+        "Flat White",
+        "Iced Americano / Cold Brew",
+        "Taze Kruvasan"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Kruvasan & Kuru Kek Seçkisi",
+          "note": "Sabah ve öğle kahvesi eşliğinde taze fırın atıştırmalığı olarak servis edilir.",
+          "proof": "Resmi sayfa ve yerel rehberler"
+        },
+        {
+          "name": "Soğuk Kahveler (Iced Latte & Cold Brew)",
+          "note": "Sıcak Belcekız günlerinde yamaç paraşütü ve plaj molası için en çok tercih edilen seçenektir.",
+          "proof": "fly-coffee.tilda.ws menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Sahil yürüyüş yoluna açılan butik oturma köşeleri ve evcil hayvan dostu açık alan",
+        "crowdAndNoise": "Sabah kahve molası ve öğle plaj arası saatlerinde dengeli ve akıcı kalabalık",
+        "disadvantage": "Sınırlı masa kapasitesi sebebiyle kalabalık saatlerde al-götür servisi daha pratik olabiliyor",
+        "transit": "Denizpark Caddesi No:1 (No:9D girişi) üzerinde, Belcekız sahil yürüyüş aksında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Resmi Dijital Menü — Fly Coffee",
+          "url": "http://fly-coffee.tilda.ws",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Nitelikli espresso, soğuk kahve ve atıştırmalık seçkisi doğrulaması"
+        },
+        {
+          "title": "Yandex Harita & Belcekız Kahve Rehberi",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Denizpark Cd. konumu, kahve kalitesi ve evcil hayvan dostu ortam bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=6727060111656923524",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Denizpark Cd. No:1 canlı konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Büyük kahve zincirlerinden bağımsız gerçek espresso ve soğuk demleme odağı",
+        "Evcil hayvan dostu yaklaşımı ve merkezi Belcekız konumu"
+      ],
+      "cons": [
+        "Geniş kapalı oturma salonu bulunmuyor",
+        "Tam sahil sıfırı değil çarşı/cadde girişinde"
+      ],
+      "uncertainties": [
+        "Kavrum ve çekirdek menşei mevsime göre değişiklik gösterebiliyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "jade-terrace-oludeniz",
+      "categoryId": "date",
+      "resolvedName": "Jade Terrace Food & Drink",
+      "branchName": "Ölüdeniz, 224. Sk. No:3, 48340 Fethiye/Muğla",
+      "placeId": "ChIJ9-ChIiJBwBQRWkozJU18MiA",
+      "coordinates": {
+        "lat": 36.5471386,
+        "lng": 29.122000600000003
+      },
+      "rating": 4.7,
+      "userRatingCount": 576,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.jade-terrace.com/",
+      "mapsUri": "https://maps.google.com/?cid=2320053428827671130",
+      "recommendedPrimary": [
+        "Şefin Deniz Ürünleri Tabağı",
+        "Akdeniz Usulü Başlangıç Mezeleri",
+        "Izgara Balık & Et Ana Yemekleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Taze Makarnalar & Şarap Kavı",
+          "note": "Zeytin ağaçları altında yavaş akşam yemeği için şefin makarnaları yerel ve ithal şaraplarla eşleştirilir.",
+          "proof": "jade-terrace.com ve jade-residence.com"
+        },
+        {
+          "name": "İmza Gün Batımı Kokteylleri",
+          "note": "Belcekız ufku eşliğinde akşamüstü aperitif saatlerinin öne çıkan eşlikçisidir.",
+          "proof": "Resmi menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Zeytin ağaçlı geniş teras ve sakin, özenli akşam servisi masa düzeni (yetişkin odaklı butik otel terası)",
+        "crowdAndNoise": "Altın saatler ve akşam yemeğinde romantik çiftlerle dolu, önceden rezervasyon önerilir",
+        "disadvantage": "Bütçe seviyesi üst segmenttedir ve kalabalık yaz akşamlarında manzaralı kenar masalar hızla dolar",
+        "transit": "Belcekız Mevkii 224. Sokak No:3 üzerinde, plaj kordonuna birkaç adım mesafede"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Resmi Site — Jade Terrace Food & Drink",
+          "url": "https://www.jade-terrace.com",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Akdeniz-Ege mutfağı, kokteyl barı ve rezervasyon detayları"
+        },
+        {
+          "title": "Jade Residence — Çatı Terası & Zeytin Bahçesi Tanıtımı",
+          "url": "https://www.jade-residence.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Belcekız manzaralı teras atmosferi ve gün batımı servisi"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=2320053428827671130",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "224. Sk. No:3 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Zeytin ağaçlı çatı terasıyla Ölüdeniz sahilindeki en karakteristik gün batımı atmosferi",
+        "Özenli masa düzeni ve sakin servis temposu"
+      ],
+      "cons": [
+        "Yüksek bütçe gerektiriyor",
+        "Özel etkinlik veya düğün günlerinde teras kapatılabiliyor"
+      ],
+      "uncertainties": [
+        "Sezon içi menü ve tadım tabakları dönemsel yenileniyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "rose-garden-oludeniz",
+      "categoryId": "date",
+      "resolvedName": "Rose Garden Restoran Bar",
+      "branchName": "Ölüdeniz, Kıdrak caddesi 45/1, 48300 Fethiye/Muğla",
+      "placeId": "ChIJb7Z4x6RAwBQRhBymTw6_5zM",
+      "coordinates": {
+        "lat": 36.5508902,
+        "lng": 29.1228032
+      },
+      "rating": 4.7,
+      "userRatingCount": 122,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3740168083741219972",
+      "recommendedPrimary": [
+        "Izgara Biftek Çeşitleri",
+        "Taze Soslu Makarnalar",
+        "Meyveli Akşam Kokteylleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tavuk & Et Izgara Tabakları",
+          "note": "Biftek dışında klasik Akdeniz garnitürleriyle servis edilen ana yemek alternatifidir.",
+          "proof": "rosegardenn.com ve Trip.com"
+        },
+        {
+          "name": "Soğuk Kahve & Meyveli Kokteyller",
+          "note": "Bahçe masalarında akşam yemeği sonrası uzun sohbet eşlikçisi olarak öne çıkar.",
+          "proof": "İşletme menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Yeşillikler içinde romantik aydınlatmalı açık bahçe masaları ve bar oturumu",
+        "crowdAndNoise": "Merkez kalabalığından kaçmak isteyen akşam yemekçileri için sakin ve samimi yoğunluk",
+        "disadvantage": "Deniz manzaralı ilk sıra kordon yerine Kıdrak Caddesi iç bahçe dokusunu sunar",
+        "transit": "Kıdrak Caddesi 45/1 üzerinde, Belcekız merkez yürüyüş aksının üst kısmında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Resmi Site — Rose Garden Restoran & Bar",
+          "url": "https://www.rosegardenn.com",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Izgara biftekler, makarnalar, serpme kahvaltı ve kokteyl seçkisi"
+        },
+        {
+          "title": "Trip.com — Rose Garden Ölüdeniz Listelemesi",
+          "url": "https://www.trip.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Türk ve dünya mutfağı bahçe restoranı kullanıcı değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=3740168083741219972",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kıdrak Cd. 45/1 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Bahçe ortamı sayesinde akşam yemeğinde ferah ve gürültüsüz atmosfer",
+        "Zengin biftek ve kokteyl menüsü"
+      ],
+      "cons": [
+        "Sahil şeridine kısa yürüyüş mesafesinde içeride kalıyor",
+        "Kış döneminde kapalı kalabiliyor"
+      ],
+      "uncertainties": [
+        "Sezon içi canlı müzik ve akşam programı haftalık değişebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "secret-garden-oludeniz",
+      "categoryId": "date",
+      "resolvedName": "Secret Garden Restaurant",
+      "branchName": "Ölüdeniz, 226. Sk. No:4, 48300 Fethiye/Muğla",
+      "placeId": "ChIJq6qqqtZGwBQRekl6xMugEEw",
+      "coordinates": {
+        "lat": 36.5493161,
+        "lng": 29.123449200000003
+      },
+      "rating": 4.4,
+      "userRatingCount": 561,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5481057543545047418",
+      "recommendedPrimary": [
+        "Güveçte Kuzu (Lamb Shank)",
+        "Taze Ekmek & Ev Yapımı Meze Tabağı",
+        "Limon Tarhunlu Tavuk"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Ekmek & Başlangıç Meze İkramları",
+          "note": "Ana yemek öncesi sofraya gelen ev yapımı soslar ve mezelerle paylaşımı güçlendirir.",
+          "proof": "Wanderlog ve Restaurant Guru kayıtları"
+        },
+        {
+          "name": "Karides Kokteyl (Prawn Cocktail)",
+          "note": "Klasik başlangıçlar arasında hafif deniz ürünü alternatifi olarak sunulur.",
+          "proof": "Wanderlog menü doğrulaması"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaçlar ve fenerlerle aydınlatılan kuytu bahçe masaları",
+        "crowdAndNoise": "Çarşı uğultusundan yalıtılmış atmosferi nedeniyle akşam çiftler arasında çok popüler; rezervasyon önerilir",
+        "disadvantage": "Ara sokak bahçesi olduğu için deniz manzarası sunmaz ve sıcak yaz akşamlarında sivrisinek önlemi gerekebilir",
+        "transit": "Ölüdeniz 226. Sokak No:4 içinde, Belcekız yürüyüş çarşısının hemen paralelinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Wanderlog — Secret Garden Restaurant Ölüdeniz",
+          "url": "https://www.wanderlog.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "226. Sk. fenerli gizli bahçe konsepti, güveçte kuzu ve limon tarhunlu tavuk detayları"
+        },
+        {
+          "title": "Yandex & Restaurant Guru Ölüdeniz",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ölüdeniz 226. Sokak No:4 adresi ve akşam yemeği ambiyans bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=5481057543545047418",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "226. Sk. No:4 canlı konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Sarmaşıklar ve fenerlerle son derece özgün, sakin bahçe ambiyansı",
+        "Güveç yemekleri ve özenli başlangıçlar"
+      ],
+      "cons": [
+        "Deniz manzarası bulunmuyor",
+        "Yoğun akşam saatlerinde rezervasyonsuz masa bulmak zorlaşabiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışı çalışma takvimi işletme tarafından mevsime göre belirleniyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bake-and-more-oludeniz",
+      "categoryId": "kahvalti",
+      "resolvedName": "Bake & More Ölüdeniz",
+      "branchName": "Ölüdeniz, Çarşı Cd. No:2C, 48300 Fethiye/Muğla",
+      "placeId": "ChIJc8etfXFBwBQR3LZ7F_gb1WE",
+      "coordinates": {
+        "lat": 36.546152,
+        "lng": 29.123644499999997
+      },
+      "rating": 4.6,
+      "userRatingCount": 592,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7049571544078202588",
+      "recommendedPrimary": [
+        "Taze Kruvasan & Avokado Tost",
+        "Pastel de Nata (Nata Tart)",
+        "Caprese Sandviç & Ev Yapımı Çilekli Limonata"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Lotus Ekler & Meyveli Tartlar",
+          "note": "Kahvaltı sonrası vitrinden seçilen günün taze pastane tatlıları arasında öne çıkar.",
+          "proof": "Wanderlog pastane rehberi"
+        },
+        {
+          "name": "Ev Yapımı Çilekli Limonata",
+          "note": "Yaz sabahlarında fırın ürünleri yanında ferahlatıcı içecek olarak sıkça sipariş edilir.",
+          "proof": "Ziyaretçi menü bildirimleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Vitrin önü şık kafe masaları ve hızlı al-götür tezgah düzeni",
+        "crowdAndNoise": "Sabah kahvaltı ve öğle öncesi brunch saatlerinde yerli-yabancı ziyaretçilerle hareketli",
+        "disadvantage": "Serpme köy kahvaltısından ziyade fırın-brunch ve pastane tabağı düzenindedir",
+        "transit": "Çarşı Caddesi No:2C noktasında, Belcekız plaj kapısına birkaç dakikalık yürüyüş mesafesinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Wanderlog — Bake & More Ölüdeniz İncelemesi",
+          "url": "https://www.wanderlog.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kruvasan, avokado tost, pastel de nata, Lotus ekler ve caprese sandviç doğrulaması"
+        },
+        {
+          "title": "Maptons & Yerel Rehber Kayıtları",
+          "url": "https://maptons.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çarşı Cd. No:2C tek şube konumu ve taze fırın ürünleri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=7049571544078202588",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı Cd. No:2C konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Bölgede taze kruvasan, nata ve modern brunch alternatifini tek çatı altında sunan az sayıdaki fırından biri",
+        "Tek şubeli bağımsız üretim"
+      ],
+      "cons": [
+        "Geleneksel uzun serpme kahvaltı sofrası kurmuyor",
+        "Sabah yoğunluğunda popüler hamur işleri erken tükenebiliyor"
+      ],
+      "uncertainties": [
+        "Sezon içi açılış temposu ve vitrin çeşitliliği mevsime göre değişebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "banana-cafe-beach-oludeniz",
+      "categoryId": "kahvalti",
+      "resolvedName": "Banana Cafe & Beach",
+      "branchName": "Ölüdeniz, 48300 Fethiye/Muğla",
+      "placeId": "ChIJLWUk0a5BwBQRtWW3gwYWtqo",
+      "coordinates": {
+        "lat": 36.5426855,
+        "lng": 29.1258186
+      },
+      "rating": 4.5,
+      "userRatingCount": 258,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12301043649444537781",
+      "recommendedPrimary": [
+        "Sahil Kahvaltı Tabağı",
+        "Sucuklu & Peynirli Yumurta Çeşitleri",
+        "Soğuk İçecek & Atıştırmalıklar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Kahve & Sahil İçecekleri",
+          "note": "Sabah deniz öncesi veya güneşlenme arasında plaj kenarında hızlı mola seçeneği sunar.",
+          "proof": "Menum.co menü kaydı"
+        },
+        {
+          "name": "Tost & Plaj Atıştırmalıkları",
+          "note": "Öğleye sarkan plaj saatlerinde hafif tuzlu eşlikçi olarak tercih edilir.",
+          "proof": "Yandex Harita kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Doğrudan sahil şeridinde plaj sandalyeleri ve gölgelikli rahat kafe masaları",
+        "crowdAndNoise": "Sabah deniz öncesi sakin, öğle saatlerinde plaj kalabalığıyla canlı",
+        "disadvantage": "Gastronomi restoranından ziyade sade plaj kafesi standartlarında mutfak ve menü çeşitliliği sunar",
+        "transit": "Belcekız Plajı doğu ucundan kıyı boyunca yürüyüşle doğrudan ulaşılır"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Menum.co — Banana Cafe & Beach Menü Özeti",
+          "url": "https://www.menum.co",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahvaltı tabağı, yumurta, sucuk, peynir ve plaj atıştırmalıkları"
+        },
+        {
+          "title": "Yandex Harita — Banana Cafe & Beach Ölüdeniz",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Belcekız sahil şeridi konumu ve plaj kafe-bar değerlendirmesi"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=12301043649444537781",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Ölüdeniz sahil şeridi canlı konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Doğrudan sahil üzerinde plaj atmosferiyle iç içe kahvaltı molası",
+        "Ana çarşı kalabalığının biraz dışında daha rahat konum"
+      ],
+      "cons": [
+        "Sade plaj büfesi düzeyinde dar menü",
+        "Kış sezonunda açık olmayabiliyor"
+      ],
+      "uncertainties": [
+        "Plaj şezlong ve servis düzeni mevsime göre güncelleniyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "nice-n-easy-oludeniz",
+      "categoryId": "denemelisin",
+      "resolvedName": "Nice N Easy",
+      "branchName": "Ölüdeniz Mah. Kıdrak Cad. No:8, Ölüdeniz, 48300 Fethiye/Muğla",
+      "placeId": "ChIJJ2nfTlhBwBQRCxqfN2O-H48",
+      "coordinates": {
+        "lat": 36.550039700000006,
+        "lng": 29.124952600000004
+      },
+      "rating": 4.5,
+      "userRatingCount": 88,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.karbelsun.com/",
+      "mapsUri": "https://maps.google.com/?cid=10313171005045938699",
+      "recommendedPrimary": [
+        "Izgara Levrek & Deniz Ürünleri",
+        "Türk Kebap & Biftek Çeşitleri",
+        "Krem Brüle (Crème Brûlée)"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Krem Brüle & Günlük Tatlılar",
+          "note": "Akşam yemeği kapanışında sıcak mutfaktan taze çıkan imza tatlı olarak öne çıkar.",
+          "proof": "Restaurant Guru ve Trip.com geri bildirimleri"
+        },
+        {
+          "name": "Vejetaryen Akdeniz Tabakları",
+          "note": "Et ve balık seçenekleri yanında bitki bazlı sıcak akşam alternatifi sunar.",
+          "proof": "Trip.com restoran profili"
+        }
+      ],
+      "suitability": {
+        "seating": "Rahat açık teras masaları ve aile dostu samimi servis düzeni",
+        "crowdAndNoise": "Akşamları eğlence ve sıcak misafirperverlik arayan müdavim turistlerle samimi yoğunluk",
+        "disadvantage": "Otel yerleşkesine bitişik cadde konumunda kaldığı için deniz kıyısı manzarası yoktur",
+        "transit": "Kıdrak Caddesi No:8 üzerinde, çarşı merkezinden Kıdrak yönüne yürüyüş mesafesinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Karbel Sun Resmi Sitesi — Nice N Easy Bilgisi",
+          "url": "https://www.karbelsun.com",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Ölüdeniz Kıdrak Cd. No:8 bünyesindeki restoran ve akşam servisi doğrulaması"
+        },
+        {
+          "title": "Trip.com & Restaurant Guru — Nice N Easy Ölüdeniz",
+          "url": "https://www.trip.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Levrek, kebap, biftek, krem brüle ve sıcak servis atmosferi bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=10313171005045938699",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kıdrak Cd. No:8 canlı konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Sıcak karşılama ve hem Türk kebabı hem Batı ızgaralarında tutarlı mutfak",
+        "Vejetaryen dostu alternatifler"
+      ],
+      "cons": [
+        "Sahil bandının biraz gerisinde kalıyor",
+        "Eğlence gecelerinde ortam hareketli olabiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışı dönemde otel takvimine bağlı olarak kapalı kalabiliyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "safran-turkish-delights-oludeniz",
+      "categoryId": "denemelisin",
+      "resolvedName": "Safran Turkish Delights & Baklava",
+      "branchName": "Ölüdeniz, Çarşı Cd. No:2 D:K, 48300 Fethiye/Muğla",
+      "placeId": "ChIJfR-YshFBwBQRnyZIb_oG92k",
+      "coordinates": {
+        "lat": 36.546403399999996,
+        "lng": 29.123766999999997
+      },
+      "rating": 4.4,
+      "userRatingCount": 125,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7635579365908555423",
+      "recommendedPrimary": [
+        "Fıstıklı Dilim Baklava",
+        "Gül Aromalı Türk Lokumu",
+        "Taze Öğütülmüş Türk Kahvesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Gül & Fıstık Kaplı Türk Lokumları",
+          "note": "Çarşı yürüyüşü sırasında tadımlık veya hediyelik kutu olarak sıkça tercih edilir.",
+          "proof": "Wanderlog ve Yandex doğrulaması"
+        },
+        {
+          "name": "Taze Çekilmiş Türk Kahvesi",
+          "note": "Tatlı tabaklarının şerbet ve lokum dengesini tamamlamak üzere taze öğütülmüş çekirdekten hazırlanır.",
+          "proof": "Wanderlog mekan kaydı"
+        }
+      ],
+      "suitability": {
+        "seating": "Çarşı cephesinde küçük açık oturma masaları ve ağırlıklı al-götür tatlı tezgahı",
+        "crowdAndNoise": "Akşamüstü ve gece çarşı yürüyüşlerinde kısa mola trafiği yüksek",
+        "disadvantage": "Oturum alanı sınırlıdır; uzun sohbet veya kahve uzmanlığı yeri olmaktan çok geleneksel tatlı durağıdır",
+        "transit": "Ölüdeniz Çarşı Caddesi No:2 D:K noktasında, yaya çarşısının tam ortasında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Wanderlog — Safran Turkish Delights & Baklava",
+          "url": "https://www.wanderlog.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çarşı Caddesi konumu, gül aromalı lokumlar, baklava ve taze çekilmiş Türk kahvesi"
+        },
+        {
+          "title": "Yandex Harita — Safran Baklava & Lokum Ölüdeniz",
+          "url": "https://yandex.com.tr",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çarşı Cd. No:2 konumu ve geleneksel tatlı sunumu bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=7635579365908555423",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı Cd. No:2 D:K konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Geleneksel lokum ve dilim baklavayı tek noktada temiz sunumla vermesi",
+        "Çarşı yürüyüşünde pratik erişim"
+      ],
+      "cons": [
+        "Küçük dükkan düzeninde masa sayısı az",
+        "Kahve menüsü geleneksel Türk kahvesiyle sınırlı"
+      ],
+      "uncertainties": [
+        "Sezon içi geç saatlere uzayan kapanış saatleri dönemsel değişebiliyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "the-kumsal-oludeniz",
+      "categoryId": "balik",
+      "resolvedName": "The Kumsal Restaurant",
+      "branchName": "Ölüdeniz, Denizpark Cd., 48300 Fethiye/Muğla",
+      "placeId": "ChIJh-QHaKZAwBQRJxSnKfWIZuo",
+      "coordinates": {
+        "lat": 36.544921099999996,
+        "lng": 29.12503
+      },
+      "rating": 4.5,
+      "userRatingCount": 1459,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.thekumsal.com/",
+      "mapsUri": "https://maps.google.com/?cid=16890338039046804519",
+      "recommendedPrimary": [
+        "Kalamar Tava & Fava-Deniz Börülcesi Mezeleri",
+        "Günlük Izgara Mevsim Balığı (Çipura / Levrek)",
+        "Fırın Kaşarlı Mantar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Deniz Börülcesi & Fava Meze Seçkisi",
+          "note": "Balık ve kalamar öncesi soğuk Ege başlangıçları olarak tercih edilir.",
+          "proof": "kumsalrestaurant.com menü listesi"
+        },
+        {
+          "name": "Fırın Kaşarlı Mantar & Sigara Böreği",
+          "note": "Deniz mahsullü sıcak ara sıcaklara eşlik eden klasik sıcak başlangıçlardır.",
+          "proof": "thekumsal.com ve kumsalrestaurant.com"
+        }
+      ],
+      "suitability": {
+        "seating": "Doğrudan deniz ve gün batımı manzaralı teras ile sahil cephesi masa düzeni",
+        "crowdAndNoise": "Gün batımında sahil akşam yemeği arayan misafirlerle oldukça hareketli; önceden masa ayırtmak faydalı",
+        "disadvantage": "Hem kahvaltı hem dünya mutfağı servisi verdiği için sadece sade balıkçı tezgahı odaklanmasına göre menüsü geniş tutulmuştur",
+        "transit": "Denizpark Caddesi üzerinde, Belcekız plaj kordonunda yaya erişimiyle"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Resmi Site & Menü — The Kumsal Ölüdeniz",
+          "url": "https://www.thekumsal.com",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Sahil cepheli teras, şarap-kokteyl kavı ve kıyı menüsü"
+        },
+        {
+          "title": "Kumsal Restaurant — Meze & Sıcak Başlangıçlar Menüsü",
+          "url": "https://www.kumsalrestaurant.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Deniz börülcesi, fava, kalamar tava ve taze balık/meze seçkisi"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=16890338039046804519",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Denizpark Cd. canlı konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Tam deniz cephesinde gün batımı manzaralı akşam sofrası",
+        "Geniş meze ve sıcak başlangıç çeşitliliği"
+      ],
+      "cons": [
+        "Tam otel/kordon restoranı temposunda gürültü ve yoğunluk olabiliyor",
+        "Pazar-hafta sonu gün batımı masaları hızlı doluyor"
+      ],
+      "uncertainties": [
+        "Sezon dışındaki aylarda kış bakım kapanışları olabiliyor"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "oyster-restaurant-oludeniz",
+      "categoryId": "balik",
+      "resolvedName": "Oyster Restaurant Ölüdeniz",
+      "branchName": "Ölüdeniz Mahallesi, Belcekız mevki, Denizpark Cd. No:5/b, 48340 Fethiye/Muğla",
+      "placeId": "ChIJk8S7BKRAwBQRASL_44xI48E",
+      "coordinates": {
+        "lat": 36.546795599999996,
+        "lng": 29.122333100000002
+      },
+      "rating": 4.4,
+      "userRatingCount": 579,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.oysterresidences.com/restaurant",
+      "mapsUri": "https://maps.google.com/?cid=13971090238991180289",
+      "recommendedPrimary": [
+        "Günün Taze Yerel Balığı",
+        "Akdeniz Meze Tabağı",
+        "Tavuklu Satay & Ev Yapımı Spesiyaller"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zengin Meze & Akdeniz Salata Seçkisi",
+          "note": "Ana balık yemeği öncesi veya hafif sahil öğle yemeği olarak tercih edilir.",
+          "proof": "oysterresidences.com ve pardonapp.co menüsü"
+        },
+        {
+          "name": "Ev Yapımı Geleneksel Türk Spesiyalleri",
+          "note": "Deniz ürünlerinin yanında yöresel ev yemekleri arayanlar için öne çıkar.",
+          "proof": "Wanderlog incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Zarif bahçe ve havuz çevresi masalar; sahil kordonundaki kalabalıktan bir adım içeride sakin düzen",
+        "crowdAndNoise": "Yüksek sezonda öğle plaj arası ve romantik akşam yemeğinde dengeli butik yoğunluk",
+        "disadvantage": "Gündelik kalabalık balık restoranlarına göre daha sakin ve bütçe olarak orta-üst çizgide konumlanır",
+        "transit": "Belcekız Mevkii Denizpark Caddesi No:5/B adresinde, plaj şeridine birkaç adım mesafede"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Resmi Site — Oyster Residences Restaurant",
+          "url": "https://www.oysterresidences.com/restaurant",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Taze deniz ürünleri, yerel balıklar, Türk-Akdeniz mutfağı ve Belcekız konumu"
+        },
+        {
+          "title": "Wanderlog — Oyster Restaurant Ölüdeniz Rehberi",
+          "url": "https://www.wanderlog.com",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Babadağ paraşüt iniş manzaralı butik ortam ve menü öne çıkanları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=13971090238991180289",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Denizpark Cd. No:5/b konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Belcekız kalabalığının hemen yanında daha dingin ve rafine butik restoran düzeni",
+        "Taze yerel balıklarla geleneksel ev usulü mezeleri dengeli birleştirmesi"
+      ],
+      "cons": [
+        "Tam plaj önü gürültülü bar ortamı arayanlara fazla sakin gelebilir",
+        "Kış döneminde otel sezonuna bağlı kapanabiliyor"
+      ],
+      "uncertainties": [
+        "Sezon içi menü ve şef spesiyalleri haftalık güncellenebiliyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "buzz-beach-bar-oludeniz",
+      "categoryId": "balik",
+      "resolvedName": "Buzz Beach Bar",
+      "branchName": "Ölüdeniz, Denizpark Cd. No:7/B, 48300 Fethiye/Muğla",
+      "placeId": "ChIJC8kXH6RAwBQRbON9A8p_CuE",
+      "coordinates": {
+        "lat": 36.5466658,
+        "lng": 29.122757699999998
+      },
+      "rating": 4.4,
+      "userRatingCount": 1594,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.buzzbeachbar.com/",
+      "mapsUri": "https://maps.google.com/?cid=16215913913919595372",
+      "recommendedPrimary": [
+        "Beyaz Şarap & Sarımsak Soslu Midye",
+        "Sarımsaklı Karides (Garlic Prawns)",
+        "Günlük Izgara Balık & Kalamar Tava"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Thai Yeşil Körili Karides (Thai Green Prawn Curry)",
+          "note": "Klasik ızgara balık dışında Asya dokunuşlu baharatlı deniz ürünü arayanlar için imza ana yemektir.",
+          "proof": "buzzbeachbar.com deniz ürünleri menüsü"
+        },
+        {
+          "name": "Karides Böreği & Deniz Ürünlü Salata",
+          "note": "Sıcak deniz ürünü ara sıcağı veya kalamar-somon-karides eşlikli hafif kordon öğünü olarak seçilir.",
+          "proof": "buzzbeachbar.com başlangıç listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Doğrudan Belcekız kordonu ve deniz manzaralı teras masaları ile canlı bar oturma alanı",
+        "crowdAndNoise": "Özellikle akşamüstü gün batımından geceye kadar kordon üzerindeki en canlı noktalardan biri",
+        "disadvantage": "Günün ilerleyen saatlerinde bar ve kokteyl müziği yükseldiği için sakin bir sahil yemeği arayanlara gürültülü gelebilir",
+        "transit": "Denizpark Caddesi No:7/B üzerinde, Belcekız sahil şeridinin tam merkezinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Resmi Site & Seafood Grill Menüsü — Buzz Beach Bar",
+          "url": "https://www.buzzbeachbar.com",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Midye, sarımsaklı karides, kalamar tava, karides böreği ve Thai yeşil körili karides menüsü"
+        },
+        {
+          "title": "Trip.com & Belcekız Deniz Ürünleri Değerlendirmeleri",
+          "url": "https://www.trip.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Denizpark Cd. No:7/B sahil konumu ve taze deniz ürünleri servisi geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=16215913913919595372",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Denizpark Cd. No:7/B canlı konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Sıradan ızgara balık dışına çıkan kapsamlı karides, midye ve kalamar çeşitliliği",
+        "Belcekız kordonundaki kesintisiz deniz manzarası"
+      ],
+      "cons": [
+        "Gece bar müziği yemek temposunun önüne geçebiliyor",
+        "Turistik ilk sıra nedeniyle hafta sonu rezervasyon gerekebilir"
+      ],
+      "uncertainties": [
+        "Yaz sezonu dışındaki aylarda bar ve mutfak saatleri daralabiliyor"
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    }
+  ]
+}

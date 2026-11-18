@@ -1,0 +1,1822 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "mugla-bodrum-gumusluk",
+  "displayName": "Gümüşlük, Bodrum, Muğla",
+  "verifiedAt": "2026-11-16T17:42:18.542Z",
+  "selectedCount": 19,
+  "rejectedControls": [
+    {
+      "id": "ctrl-limon-gumusluk",
+      "resolvedName": "LİMON GÜMÜŞLÜK RESTAURANT",
+      "reason": "not_operational:CLOSED_TEMPORARILY"
+    },
+    {
+      "id": "ctrl-starbucks-turgutreis",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bigchefs-turgutreis",
+      "resolvedName": "Big Chefs - D Marin Turgutreis Marina Şubesi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-battalbey-gumusluk",
+      "resolvedName": "GÜMÜŞLÜK BATTALBEY ÇİĞKÖFTE BAYİSİ GÜMÜŞLÜK KRAL DÖNER KÖFTE EKMEK TAVUK DÖNER ET DÖNER️ BATTALBEY ÇİĞKÖFTE KUMRU SANDWICH",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-metins-hotel-gumusluk",
+      "resolvedName": "Metin's Gümüşlük - Hotel & Restaurant",
+      "reason": "below_quality_threshold:★4.1(377)"
+    },
+    {
+      "id": "ctrl-kofteci-kemal-gumusluk",
+      "resolvedName": "Köfteci Kemal",
+      "reason": "invalid_place_type:store"
+    },
+    {
+      "id": "ctrl-gumusluk-firin-pastane",
+      "resolvedName": "Gümüşlük Fırın Pastane",
+      "reason": "kahve_category_not_coffee_specialist:bakery"
+    },
+    {
+      "id": "ctrl-mimoza-gumusluk",
+      "resolvedName": "Mimoza Gümüşlük Restaurant",
+      "reason": "below_quality_threshold:★3.4(1580)"
+    },
+    {
+      "id": "ctrl-melengec-gumusluk",
+      "resolvedName": "Melengeç Balık Restaurant",
+      "reason": "below_quality_threshold:★3.7(1798)"
+    },
+    {
+      "id": "ctrl-karafaki-37-gumusluk",
+      "resolvedName": "Karafaki",
+      "reason": "below_quality_threshold:★3.7(510)"
+    },
+    {
+      "id": "ctrl-tuz-duman-gumusluk",
+      "resolvedName": "Tuz Duman",
+      "reason": "below_quality_threshold:★4.1(438)"
+    },
+    {
+      "id": "ctrl-club-gumusluk",
+      "resolvedName": "Club Gümüşlük",
+      "reason": "below_quality_threshold:★4.1(988)"
+    },
+    {
+      "id": "ctrl-zeytun-balik-gumusluk",
+      "resolvedName": "Zeytun Balık Restaurant",
+      "reason": "below_quality_threshold:★4.1(474)"
+    },
+    {
+      "id": "ctrl-nazmi-gumusluk",
+      "resolvedName": "Nazmi Restaurant",
+      "reason": "below_quality_threshold:★4.1(310)"
+    },
+    {
+      "id": "ctrl-satsuma-gumusluk",
+      "resolvedName": "Satsuma Gümüşlük",
+      "reason": "below_quality_threshold:★3.8(139)"
+    },
+    {
+      "id": "ctrl-okyanus-gumusluk",
+      "resolvedName": "Okyanus Restaurant Gümüşlük",
+      "reason": "below_quality_threshold:★3.6(355)"
+    },
+    {
+      "id": "ctrl-victorias-koyunbaba",
+      "resolvedName": "Victoria's",
+      "reason": "below_quality_threshold:★3.9(189)"
+    },
+    {
+      "id": "ctrl-cilli-pizza-gumusluk",
+      "resolvedName": "Çilli Pizza",
+      "reason": "below_quality_threshold:★5(22)"
+    },
+    {
+      "id": "ctrl-myndos-pizza-gumusluk",
+      "resolvedName": "Myndos Pizza&Pide",
+      "reason": "below_quality_threshold:★4.6(19)"
+    },
+    {
+      "id": "ctrl-sisko-burger-gumusluk",
+      "resolvedName": "Şişko Burger Tost",
+      "reason": "below_quality_threshold:★5(1)"
+    },
+    {
+      "id": "ctrl-armut-coffee-gumusluk",
+      "resolvedName": "Armut Coffee",
+      "reason": "below_quality_threshold:★4.8(5)"
+    },
+    {
+      "id": "ctrl-gumus-ev-yemekleri",
+      "resolvedName": "Gümüş Ev Yemekleri",
+      "reason": "suspected_rating_inflation_no_community_proof"
+    },
+    {
+      "id": "ctrl-zest-burger-bahcelievler",
+      "resolvedName": "ZEST BURGER",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Gümüşlük/Gumusluk/Koyunbaba/Karakaya/Yalı Mevkii/Yali Mevkii, adres: Bahçelievler, 7008. Sk. No:18, 48400 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-milanz-crispy-bahcelievler",
+      "resolvedName": "MILANZ CRİSPY",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Gümüşlük/Gumusluk/Koyunbaba/Karakaya/Yalı Mevkii/Yali Mevkii, adres: Bahçelievler, 7025. Sk., 48960 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-degirmen-turgutreis",
+      "resolvedName": "Değirmen Lokantası",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Gümüşlük/Gumusluk/Koyunbaba/Karakaya/Yalı Mevkii/Yali Mevkii, adres: Turgutreis, Gazi Mustafa Kemal Blv. No:14B, 48960 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-zerde-peksimet",
+      "resolvedName": "Zerde",
+      "reason": "outside_strict_neighborhood:Bbox dışında (37.02421, 27.26381)"
+    },
+    {
+      "id": "ctrl-cotto-kadikalesi",
+      "resolvedName": "Cotto Cafe Kadikalesi",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Gümüşlük/Gumusluk/Koyunbaba/Karakaya/Yalı Mevkii/Yali Mevkii, adres: Bahçelievler, 48960 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-zeytin-alti-geris",
+      "resolvedName": "Zeytin Altı Yalıkavak",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Gümüşlük/Gumusluk/Koyunbaba/Karakaya/Yalı Mevkii/Yali Mevkii, adres: zeytin altı restoran, Geriş, Erdemil Cd. 29B D:3, 48990 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-gunes-manti-karabag",
+      "resolvedName": "Güneş Mantı",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Gümüşlük/Gumusluk/Koyunbaba/Karakaya/Yalı Mevkii/Yali Mevkii, adres: Karabağ, Amiral Turgut Reis Cd. no : 53/B, 48960 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-burcak-firin-karabag",
+      "resolvedName": "Burçak Fırın",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Gümüşlük/Gumusluk/Koyunbaba/Karakaya/Yalı Mevkii/Yali Mevkii, adres: Karabağ, Turgut Özal Cd., 48960 Bodrum/Muğla)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "munda-gumusluk",
+      "categoryId": "pizza",
+      "resolvedName": "Munda Gümüşlük",
+      "branchName": "Gümüşlük, Ahmet Yesevi Sk. No:33, 48400 Bodrum/Muğla",
+      "placeId": "ChIJmbCU4a91vhQR3sjYt8yhmOo",
+      "coordinates": {
+        "lat": 37.04567,
+        "lng": 27.2560297
+      },
+      "rating": 4.9,
+      "userRatingCount": 128,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16904439101964994782",
+      "recommendedPrimary": [
+        "Napoliten Margherita Pizza",
+        "Odun Fırını Şarküteri Pizza",
+        "El Yapımı Taze Makarna"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Butik Şarap Eşleşmeleri ve İmza Kokteyller",
+          "note": "Akşamüstü ve gece servisinde pizzaların yanında geniş şarap kavından kadeh seçenekleri öne çıkar.",
+          "proof": "mundagumusluk.com ve MyGuideBodrum kayıtları"
+        },
+        {
+          "name": "Zeytin Ağacı Altında Sabah Kahvaltısı",
+          "note": "Günün erken saatlerinde sakin bahçe atmosferinde kahvaltı servisi de sunulur.",
+          "proof": "MyGuideBodrum incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Zeytin ağaçları altında uzun ahşap Akdeniz masaları ve bahçe oturma düzeni",
+        "crowdAndNoise": "Yaz akşamları ve hafta sonlarında canlı, kalabalık arkadaş gruplarına uygun, akşamüstü daha sakin",
+        "disadvantage": "Sahil yürüyüş bandından içeride yer alır ve yoğun yaz akşamlarında önceden rezervasyon gerekebilir",
+        "transit": "Gümüşlük içi Ahmet Yesevi Sokak No:33 adresinde, köy içi güzergahtan kısa sürüş veya yürüyüş mesafesinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Munda Gümüşlük Resmi Sitesi",
+          "url": "https://www.mundagumusluk.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Zeytin ağaçları altı bahçe konsepti, Napoliten odun fırını pizza ve taze makarna odağı"
+        },
+        {
+          "title": "MyGuideBodrum — Munda Gümüşlük",
+          "url": "https://www.myguidebodrum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kahvaltı, pizza restoranı ve şarap evi/bar çok yönlülüğü, canlı müzik ve akşam temposu değerlendirmesi"
+        },
+        {
+          "title": "Müdavim — Munda Gümüşlük İncelemesi",
+          "url": "https://www.mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Zeytin ağaçları altı Akdeniz akşamları ve odun fırını hamur kalitesi rehber kaydı"
+        },
+        {
+          "title": "Fornero Oven — Munda Gümüşlük Referansı",
+          "url": "https://fornerooven.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Napoliten taş fırın altyapısı ve odun ateşi pişirim doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=16904439101964994782",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Gümüşlük, Ahmet Yesevi Sk. No:33 konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Gümüşlük balıkçı hattının dışında zeytin bahçesinde özgün Napoliten odun fırını pizza ve şarap odağı",
+        "Resmi operatör, editoryal rehberler ve fırın üreticisi kayıtlarıyla çoklu bağımsız doğrulama"
+      ],
+      "cons": [
+        "Kıyı şeridinden içeride kaldığı için deniz manzaralı sahil masası arayanlara hitap etmez",
+        "Sezon akşamlarında rezervasyonsuz yer bulmak zorlaşabiliyor"
+      ],
+      "uncertainties": [
+        "Canlı müzik ve sabah kahvaltısı saatleri yaz/bahar dönemine göre güncellenebiliyor"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "sia-eli-bodrum",
+      "categoryId": "date",
+      "resolvedName": "Sia Eli Bodrum",
+      "branchName": "Gümüşlük, 1120. Sk. NO: 108/1-2-3, 48970 Bodrum/Muğla",
+      "placeId": "ChIJvQNV0sV1vhQRBFGBwnvtZzc",
+      "coordinates": {
+        "lat": 37.0589708,
+        "lng": 27.236282
+      },
+      "rating": 4.4,
+      "userRatingCount": 200,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.siaelibodrum.com/",
+      "mapsUri": "https://maps.google.com/?cid=3992420710487249156",
+      "recommendedPrimary": [
+        "Çıtır Barbunya Tempura",
+        "Kekikli Yavaş Pişmiş Kuzu İncik",
+        "Izgara Lagos"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bostan Başlangıçları ve Ekşi Mayalı Ekmek",
+          "note": "Fırından yeni çıkmış ekşi mayalı ekmek ve mevsimsel sebze tabakları akşam yemeğinin imza açılışıdır.",
+          "proof": "Oggusto ve rehber menü kayıtları"
+        },
+        {
+          "name": "Not Sebastian Cheesecake ve Otlu Kokteyller",
+          "note": "Yemek sonunda şekeri dengeli tatlılar ile taze bahçe otlarıyla hazırlanan kokteyller sıkça tercih edilir.",
+          "proof": "Oggusto incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Yüz yıllık zeytin ve mandalina ağaçları altında aralıklı bahçe masaları; el yapımı seramik servis",
+        "crowdAndNoise": "Kalabalıktan uzak, sakin, romantik ve yavaş tempolu akşam yemeği atmosferi",
+        "disadvantage": "Yalnızca sıcak sezonda hizmet verir; rezervasyon zorunludur ve bölge genelinde üst bütçe segmentindedir",
+        "transit": "Gümüşlük 1120. Sokak No:108 adresinde, Kardak yoluna doğru bahçe girişli alan"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Sia Eli Bodrum Resmi Sitesi",
+          "url": "https://www.siaelibodrum.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Tarladan tabağa bahçe mutfağı felsefesi ve sezonluk çalışma düzeni"
+        },
+        {
+          "title": "Michelin Guide Türkiye — Sia Eli",
+          "url": "https://guide.michelin.com/",
+          "date": "2026-10-20",
+          "kind": "award",
+          "note": "2026 rehber seçkisi, zeytin ağaçları altı bahçe ve Akdeniz füzyon şef mutfağı"
+        },
+        {
+          "title": "Oggusto — Sia Eli Bodrum İncelemesi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Barbunya tempura, kuzu incik, ızgara lagos, Not Sebastian Cheesecake ve Urla-Bozcaada kavı detayları"
+        },
+        {
+          "title": "Bodrum Guru — Sia Eli Gümüşlük",
+          "url": "https://www.bodrumguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "MSA yaz dönemi şef iş birliği ve bahçe servis deneyimi kaydı"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=3992420710487249156",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Gümüşlük, 1120. Sk. No:108/1-2-3 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Narenciye ve zeytin ağaçları içinde kalabalıktan izole yüksek gastronomi standardı",
+        "Kendi bostanı ve yerel üreticilere dayanan mevsimsel şef menüsü ile seçkin şarap kavı"
+      ],
+      "cons": [
+        "Kış döneminde kapalı olup yalnızca sıcak sezon aylarında açılıyor",
+        "Üst segment fiyatlama ve deniz ürünlerinde dönemsel pişirim farkı eleştirisi görülebiliyor"
+      ],
+      "uncertainties": [
+        "Her yaz sezonunda dönemsel şef kadrosu ve tadım menüsü güncellenebiliyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "teras-gumusluk",
+      "categoryId": "date",
+      "resolvedName": "Teras Gümüşlük",
+      "branchName": "Gümüşlük, 5120 sokak no 52, 48400 Bodrum/Muğla",
+      "placeId": "ChIJ387gnj11vhQRKXN-noBVogI",
+      "coordinates": {
+        "lat": 37.054733299999995,
+        "lng": 27.2357358
+      },
+      "rating": 4.6,
+      "userRatingCount": 299,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.terasgumusluk.com/",
+      "mapsUri": "https://maps.google.com/?cid=189808145206244137",
+      "recommendedPrimary": [
+        "Spaghetti alla Puttanesca",
+        "Pappardelle Gamberi",
+        "Mantarlı İtalyan Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Deniz Mahsullü Capellini ve Mushroom Bolognese",
+          "note": "Resmi menüdeki alternatif soslu makarnalar balık dışındaki akşam seçeneklerini zenginleştirir.",
+          "proof": "terasgumusluk.com resmi menüsü"
+        },
+        {
+          "name": "Teras Serpme Kahvaltısı",
+          "note": "Sabah saatlerinde aynı koy manzarası eşliğinde Ege peynir ve reçelleriyle kahvaltı servisi verilir.",
+          "proof": "terasgumusluk.com ve EniyiKahvaltı kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Yüksek konumlu açık deniz manzaralı teras masaları ve iç salon oturumu",
+        "crowdAndNoise": "Gün batımı ve akşam yemeği saatlerinde romantik ve keyifli, gündüzleri daha dingin",
+        "disadvantage": "Yoğun yaz akşamlarında servis temposu yavaşlayabiliyor ve ön sıra manzaralı masalar için rezervasyon gerekiyor",
+        "transit": "Gümüşlük 5120. Sokak No:52 (Liman Hotel teras katı) adresinde, Yalı sahiline birkaç adım yokuş yukarıda"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Teras Gümüşlük Resmi Sitesi",
+          "url": "http://www.terasgumusluk.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Spaghetti alla Puttanesca, Napoletana, Pappardelle Gamberi, Capellini menü kalemleri ve gün batımı terası"
+        },
+        {
+          "title": "MyGuideBodrum — Teras Gümüşlük",
+          "url": "https://www.myguidebodrum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kahvaltı, Akdeniz-İtalyan mutfağı, kokteyl ve manzara değerlendirmesi"
+        },
+        {
+          "title": "Yandex Maps & TripAdvisor — Teras Gümüşlük",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Gün batımı terası manzarası, pizza ve makarna memnuniyeti ile yoğunlukta servis hızı notları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=189808145206244137",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Gümüşlük, 5120. Sk. No:52 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Klasik sahil balıkçılarının dışında yüksek terastan koy manzaralı İtalyan akşamı ve kokteyl alternatifi",
+        "Resmi web menüsüyle kalem kalem doğrulanan makarna, pizza ve kahvaltı seçenekleri"
+      ],
+      "cons": [
+        "Teras merdiven çıkışı gerektiriyor ve yüksek sezonda servis gecikmeleri yaşanabiliyor",
+        "Manzaralı ön masalar rezervasyonsuz dolabiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışı dönemde servis saatleri ve kahvaltı düzeni kısalabiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "jadem-gumusluk",
+      "categoryId": "date",
+      "resolvedName": "Jadem Gümüşlük",
+      "branchName": "Gümüşlük, 1120. Sk. No:7/1, 48970 Bodrum/Muğla",
+      "placeId": "ChIJlzzVDFB1vhQR2EhMBCEoMl4",
+      "coordinates": {
+        "lat": 37.0534834,
+        "lng": 27.2352934
+      },
+      "rating": 4.4,
+      "userRatingCount": 129,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://myndosrestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=6787531710671898840",
+      "recommendedPrimary": [
+        "Kabak Çiçeğinde Bodrum Mandalinalı Levrek",
+        "Deniz Mahsullü Keşkek",
+        "Haftanın Meze Beşlisi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mandalinalı Jelli Deniz Tarağı ve Somon Tartar",
+          "note": "Açık ateş ana yemekleri öncesinde soğuk başlangıç olarak sıkça önerilen imza tabaklardır.",
+          "proof": "GurmeRehber menü incelemesi"
+        },
+        {
+          "name": "Bodrum Narenciyeli İmza Kokteyller",
+          "note": "Gün batımına karşı yemek öncesi veya sonrası için yerel turunçgillerle hazırlanır.",
+          "proof": "jadem.com.tr resmi kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kral Yolu başında su kenarı masalar ve ahşap-taş heykellerle dekore edilmiş açık alan",
+        "crowdAndNoise": "Özel akşam yemekleri ve gün batımı buluşmaları için şık ve özenli akşam temposu",
+        "disadvantage": "Gümüşlük içindeki en yüksek bütçeli restoranlardan biridir ve yaz döneminde servis aksamalarına dair münferit eleştiriler bulunabilir",
+        "transit": "Gümüşlük 1120. Sokak No:7/1 adresinde, Kral Yolu başlangıcında yaya sahil bandında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Jadem Gümüşlük Resmi Sitesi",
+          "url": "https://jadem.com.tr/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Dört element ve açık ateş mutfağı konsepti, Erkan ve Sinan Uyav heykelleri ve narenciye kokteylleri"
+        },
+        {
+          "title": "GurmeRehber — Jadem Gümüşlük",
+          "url": "https://gurmerehber.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Haftanın Meze Beşlisi, mandalinalı deniz tarağı, deniz mahsullü keşkek ve kabak çiçeğinde levrek menü incelemesi"
+        },
+        {
+          "title": "GrabLocals & Mes Prestiges — Jadem Gümüşlük",
+          "url": "https://www.mesprestiges.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Myndos kalıntıları yanı başındaki konum, su altı aydınlatmalı akşam masaları ve sezonluk Nisan-Ekim takvimi"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=6787531710671898840",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Gümüşlük, 1120. Sk. No:7/1 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Klasik sahil meyhanesi kalıbının dışında Şef Uğur Filiz imzalı açık ateş ve yerel narenciye mutfağı",
+        "Antik Kral Yolu kıyısındaki özgün konum ve sanatsal dekorasyon"
+      ],
+      "cons": [
+        "Yüksek fiyat seviyesi ve sezon piklerinde zaman zaman eleştirilen servis temposu",
+        "Yalnızca sıcak sezonda (Nisan–Ekim bandında) hizmet veriyor"
+      ],
+      "uncertainties": [
+        "Sezon açılış/kapanış tarihleri ve haftalık meze seçkisi döneme göre değişebiliyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "guzelev-gumusluk",
+      "categoryId": "date",
+      "resolvedName": "Güzelev Gümüşlük",
+      "branchName": "Gümüşlük, 48970 Bodrum/Muğla",
+      "placeId": "ChIJ1Z972fF0vhQR33PhjWr0FRc",
+      "coordinates": {
+        "lat": 37.0563066,
+        "lng": 27.236125500000004
+      },
+      "rating": 4.6,
+      "userRatingCount": 119,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1663504375867339743",
+      "recommendedPrimary": [
+        "Günlük Mezeler ve Zeytinyağlılar",
+        "Mevsim Balığı Izgara",
+        "Şarap ve Paylaşım Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Deniz Manzaralı Sabah Kahvaltısı",
+          "note": "Sabah saatlerinden itibaren aynı koy manzarası karşısında sakin kahvaltı servisi sunulur.",
+          "proof": "MyGuideBodrum ve EniyiKahvaltı kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Koy ve deniz manzaralı teras masaları ile samimi konukevine bağlı bahçe oturumu",
+        "crowdAndNoise": "Sahil kalabalığından kaçan çiftler ve küçük gruplar için huzurlu akşam temposu",
+        "disadvantage": "Yoğun yaz akşamlarında servis hızı yavaşlayabiliyor ve sahil düzlüğünden yokuş yukarı çıkmak gerekiyor",
+        "transit": "Gümüşlük Kardak Caddesi / Oruç Reis Sokak bölgesinde, Yalı merkezinden kısa yürüyüşle yamaç üstünde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "MyGuideBodrum — Güzelev Gümüşlük",
+          "url": "https://www.myguidebodrum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Butik konukevi ve restoran birleşimi, meze, ana yemek ve içecek seçkisi kaydı"
+        },
+        {
+          "title": "Restaurant Guru — Güzelev Gümüşlük",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Akdeniz ve Türk mutfağı yemekleri ile sakin teras atmosferi değerlendirmeleri"
+        },
+        {
+          "title": "Yandex Maps — Güzelev Gümüşlük",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kardak Cd. Oruç Reis Sk. adres, gün batımı manzarası ve yoğunlukta servis hızı geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=1663504375867339743",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Gümüşlük yamacı konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Sahil bandındaki yoğun ve gürültülü düzenden uzak, koy manzaralı sakin akşam atmosferi",
+        "Hem akşamüstü şarap-meze buluşmalarına hem sabah kahvaltısına uygun çok yönlü yapı"
+      ],
+      "cons": [
+        "Yamaç konumu nedeniyle yürüyerek çıkış gerektiriyor",
+        "Kalabalık günlerde servis süresinin uzadığına dair ziyaretçi notları mevcut"
+      ],
+      "uncertainties": [
+        "Mevsimsel menü kalemleri günlük tedariğe göre değişebiliyor"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "daisy-coffee-breakfast-gumusluk",
+      "categoryId": "kahvalti",
+      "resolvedName": "Daisy Coffee & Breakfast",
+      "branchName": "Gümüşlük, 48970 Bodrum/Muğla",
+      "placeId": "ChIJBahz1DV1vhQRpfJehr3mCOY",
+      "coordinates": {
+        "lat": 37.054588599999995,
+        "lng": 27.2355739
+      },
+      "rating": 4.5,
+      "userRatingCount": 90,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16575752130214687397",
+      "recommendedPrimary": [
+        "Serpme Kahvaltı",
+        "Menemen & Yumurta Çeşitleri",
+        "Günlük Tatlı & Kahve Eşleşmesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günün Tatlıları ve Kahve Molası",
+          "note": "Kahvaltı saatleri dışında da açık oturma alanında kahve ve günlük tatlı ikilisi için uğranır.",
+          "proof": "Restaurant Guru ve dijital menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sokak cephesinde açık hava masaları ve iç salon oturumu",
+        "crowdAndNoise": "Sabah ve öğle saatlerinde sakin mahalle kahvaltısı temposunda, yaz ortasında masalar çabuk dolabiliyor",
+        "disadvantage": "Denize sıfır kordon masası bulunmuyor ve yüksek sezonda masalar hızlı dolabiliyor",
+        "transit": "Gümüşlük 5120. Sokak üzerinde, Yalı sahiline ve dolmuş son durağına yürüme mesafesinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "MyQRCodeMenu — Daisy Coffee & Breakfast",
+          "url": "https://myqrcodemenu.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Kahvaltı tabakları, yumurta çeşitleri, tatlı ve içecek menü kapsamı"
+        },
+        {
+          "title": "Restaurant Guru — Daisy Coffee & Breakfast",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahvaltı, kahve, tatlılar ve açık hava oturumu değerlendirmeleri"
+        },
+        {
+          "title": "Yandex Maps — Daisy Coffee & Breakfast",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "5120. Sokak No:52 konumu, güler yüzlü servis ve sabah kahvaltısı geri bildirimleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=16575752130214687397",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Gümüşlük 5120. Sk. koordinat ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Yalı sahilinin kalabalığına girmeden sakin sokakta ulaşılabilir kahvaltı ve kahve seçeneği",
+        "Kahvaltı sonrası gün içinde tatlı-kahve molasına da elverişli menü"
+      ],
+      "cons": [
+        "Doğrudan deniz sıfırı manzara yerine sokak içi oturuma sahip",
+        "Yaz sezonunda küçük masa kapasitesi hızlı dolabiliyor"
+      ],
+      "uncertainties": [
+        "Yaz dışı çalışma günleri sezon takvimine göre değişebiliyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "furnos-koyunbaba-gumusluk",
+      "categoryId": "kahvalti",
+      "resolvedName": "Furnos",
+      "branchName": "Koyunbaba, Kazım Karabekir Cd. no71, 48970 Bodrum/Muğla",
+      "placeId": "ChIJr03NJmJ1vhQRqDirmhT62CQ",
+      "coordinates": {
+        "lat": 37.0737863,
+        "lng": 27.2446402
+      },
+      "rating": 4.6,
+      "userRatingCount": 74,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.furnosbodrum.com/",
+      "mapsUri": "https://maps.google.com/?cid=2655146946736109736",
+      "recommendedPrimary": [
+        "Ekşi Mayalı Ekmek Çeşitleri",
+        "Kahvaltı Tabağı & Fırın Hamur İşleri",
+        "Taze Kahve & Kruvasan"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Evlik Ekşi Mayalı Ekmek ve Günlük Tatlılar",
+          "note": "Yerinde kahvaltı dışında eve taze ekmek veya gün içi atıştırmalık tatlı almak için sıkça tercih edilir.",
+          "proof": "furnosbodrum.com ve BodrumGuru kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Koyunbaba dükkan önü kafe oturma alanı ve fırın tezgahı (paket alım da yaygın)",
+        "crowdAndNoise": "Sabah erken saatlerde mahalle sakinlerinin ekmek ve kahvaltı alışverişiyle canlı, öğleden sonra sakin",
+        "disadvantage": "Gümüşlük sahilinden uzakta, Koyunbaba ana caddesi üzerinde ticari bir noktada konumlanıyor",
+        "transit": "Koyunbaba Kazım Karabekir Caddesi No:71/A (Migros yanı) adresinde, araç ve Yalıkavak–Gümüşlük minibüs hattında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Furnos Bodrum Resmi Sitesi",
+          "url": "https://www.furnosbodrum.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Furnos Unlu Mamüller Koyunbaba Kazım Karabekir Cd. No:71/A adres ve fırın-kafe kimliği"
+        },
+        {
+          "title": "Bodrum Guru — Furnos Bodrum",
+          "url": "https://www.bodrumguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ekşi maya ekmekler, kahvaltı tabağı ve kahve eşlikçileri incelemesi"
+        },
+        {
+          "title": "Yandex Maps & Aratsana — Furnos Koyunbaba",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sabah erken açılış düzeni, unlu mamul ve artizan ekmek değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=2655146946736109736",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Koyunbaba, Kazım Karabekir Cd. no:71 konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Koyunbaba hattında sabah erken saatlerden itibaren taze ekşi mayalı fırın ve kahvaltı imkanı",
+        "Hem yerinde kahvaltı/kahve hem de evlik fırın alışverişi için kullanışlı"
+      ],
+      "cons": [
+        "Sahil atmosferi yerine Koyunbaba cadde ve market çevresi dokusunda yer alıyor",
+        "Özel ürün çıkış günleri dışında çeşitler öğleden sonra azalabiliyor"
+      ],
+      "uncertainties": [
+        "Pizza ve özel hamur işleri gün içinde belirli fırın partileriyle sınırlı olabiliyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "plaj-cafe-gumusluk",
+      "categoryId": "kahvalti",
+      "resolvedName": "Plaj Cafe Gümüşlük",
+      "branchName": "Gümüşlük, 1120. Sk. 16/1, 48970 Bodrum/Muğla",
+      "placeId": "ChIJ2wT9sc91vhQR1-X6AyRLKis",
+      "coordinates": {
+        "lat": 37.0510349,
+        "lng": 27.237152199999997
+      },
+      "rating": 4.4,
+      "userRatingCount": 106,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3110381110710429143",
+      "recommendedPrimary": [
+        "Ege Kahvaltı Tabağı",
+        "Klasik Tost & Sandviç",
+        "Türk Kahvesi ve Ev Yapımı Reçel"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Gün İçi Sahil Molası ve Hafif Öğle Yemeği",
+          "note": "Sabah kahvaltısından sonra plaj ve şezlong kullanımına eşlik eden salata, balık ızgara ve soğuk içeceklerle devam eder.",
+          "proof": "Gümüşlük Rehberi kaydı"
+        }
+      ],
+      "suitability": {
+        "seating": "Denize sıfır sahil masaları ve gündüz plaj bölümünde şezlong-şemsiye düzeni",
+        "crowdAndNoise": "Sabah sakin ve aile dostu, gün batımına doğru sahil yürüyüşçüleriyle hareketli",
+        "disadvantage": "Modern veya lüks bir tasarım bekleyenlere göre oldukça sade ve eski usul salaş bir yapıya sahip",
+        "transit": "Gümüşlük 1120. Sokak No:16/1 adresinde, sahil yürüyüş yolu üzerinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Gümüşlük Rehberi — Plaj Cafe",
+          "url": "https://www.gumuslukrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1120. Sokak No:16 sahil konumu, şezlong-duş imkanı ve geniş kahvaltı-yemek menüsü"
+        },
+        {
+          "title": "Yandex Maps — Plaj Cafe Gümüşlük",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1972 kuruluş geçmişi, aile işletmesi atmosferi ve gün batımı manzarası değerlendirmeleri"
+        },
+        {
+          "title": "Vota — Plaj Cafe Gümüşlük",
+          "url": "https://vota.org/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Gümüşlük sahilinde sakin ve nezih ortam memnuniyeti"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=3110381110710429143",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Gümüşlük, 1120. Sk. 16/1 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Yarım asrı aşan geçmişiyle abartısız, denize sıfır kahvaltı ve gün boyu sahil molası",
+        "Gösterişten uzak samimi aile işletmesi temposu"
+      ],
+      "cons": [
+        "Modern kafe donanımı veya özel çekirdek kahve barı standardı arayanlara sade kalabilir",
+        "Gün batımı ve hafta sonu öğleden sonraları doluluk artıyor"
+      ],
+      "uncertainties": [
+        "Sezon dışı dönemlerde plaj ve mutfak servis saatleri daralabiliyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "social-gumusluk",
+      "categoryId": "denemelisin",
+      "resolvedName": "Social Gümüşlük",
+      "branchName": "Gümüşlük mah. Atatürk, Gümüşlük, Cad No:6/2, 48970 Bodrum/Muğla",
+      "placeId": "ChIJl30Rr2Z1vhQRyWNI29Es3ZQ",
+      "coordinates": {
+        "lat": 37.0530462,
+        "lng": 27.248883
+      },
+      "rating": 4.8,
+      "userRatingCount": 273,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10726779167305130953",
+      "recommendedPrimary": [
+        "İmza Kokteyller",
+        "Social Dana Burger",
+        "Paylaşımlık Bar Atıştırmalıkları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Canlı Müzik ve Akustik Performans Geceleri",
+          "note": "Sezon boyunca konuk sanatçı konserleri ve DJ setleriyle akşam eğlencesi sunar.",
+          "proof": "Biletinial ve Müdavim kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş açık hava terası ve sahne odaklı bar oturma düzeni",
+        "crowdAndNoise": "Gündüz sakin, akşam canlı müzik ve konser gecelerinde oldukça kalabalık ve enerjik",
+        "disadvantage": "Deniz kıyısında değil köy içi ana cadde üzerinde bulunur; konser akşamları gürültülü olabilir ve rezervasyon ister",
+        "transit": "Gümüşlük Atatürk Caddesi No:6/2 (Jandarma kavşağı yakını) adresinde, dolmuş hattı üzerinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Müdavim — Social Gümüşlük",
+          "url": "https://www.mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Geniş teras, imza kokteyller, burger/atıştırmalıklar ve canlı müzik sahnesi incelemesi"
+        },
+        {
+          "title": "MyGuideBodrum — Social Gümüşlük",
+          "url": "https://www.myguidebodrum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Pub/bar atmosferi, şarap-kokteyl ve açık oturma düzeni kaydı"
+        },
+        {
+          "title": "Biletinial — Social Gümüşlük Etkinlikleri",
+          "url": "https://biletinial.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Biletli canlı performans ve konser takvimi doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=10726779167305130953",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Gümüşlük, Atatürk Cd. No:6/2 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Sahil balıkçılarının dışında kaliteli canlı müzik, teras kokteyli ve burger alternatifi",
+        "Bölge ortalamasına göre dengeli fiyat/performans algısı"
+      ],
+      "cons": [
+        "Deniz manzaralı sahil mekanı değil; cadde üzerinde yer alıyor",
+        "Konser akşamlarında giriş düzeni ve yoğunluk artabiliyor"
+      ],
+      "uncertainties": [
+        "Canlı performans günleri ve bilet uygulaması haftalık programa göre değişiyor"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dalgic-restaurant-gumusluk",
+      "categoryId": "denemelisin",
+      "resolvedName": "Dalgıç Restaurant",
+      "branchName": "Yalı Mevki İskele Karşısı, Gümüşlük, 48960 Bodrum/Muğla",
+      "placeId": "ChIJEX8rTO50vhQRZBbaL60hA8g",
+      "coordinates": {
+        "lat": 37.054491999999996,
+        "lng": 27.235622
+      },
+      "rating": 4.5,
+      "userRatingCount": 179,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14412400260231599716",
+      "recommendedPrimary": [
+        "Kabak Çiçeği Dolması",
+        "Taze Ev Yapımı Bamya ve Zeytinyağlılar",
+        "Ev Yapımı Mantı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Köfte Güveç ve Yaprak Ciğer",
+          "note": "Zeytinyağlıların yanında sıcak ana yemek arayanlar için ev usulü doyurucu seçeneklerdir.",
+          "proof": "Wanderlog menü değerlendirmesi"
+        },
+        {
+          "name": "Sabah Kahvaltısı ve Taze Gözleme",
+          "note": "Gündüz saatlerinde aynı bitkili bahçede kahvaltı ve el açması gözleme de sunulur.",
+          "proof": "Wanderlog ziyaretçi kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "İskele karşısında kaktüs ve çiçeklerle çevrili samimi bahçe ve açık alan masaları",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde yerel halk ve düzenli müdavimlerle dolu, sıcak aile temposunda",
+        "disadvantage": "Pik yaz akşamlarında yoğunluk nedeniyle servis hızında gecikme yaşanabiliyor",
+        "transit": "Yalı Mevkii İskele Karşısı noktasında, Gümüşlük son durağından sahile yürüyüşle bir dakika mesafede"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Wanderlog — Dalgıç Restaurant Gümüşlük",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Camekanlı ev yemekleri, kabak çiçeği dolması, bamya, yaprak ciğer, mantı, gözleme ve bitkili bahçe notları"
+        },
+        {
+          "title": "MyGuideBodrum — Dalgıç Restaurant",
+          "url": "https://www.myguidebodrum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yalı Mevkii İskele Karşısı konumu ve geleneksel Türk mutfağı rehber kaydı"
+        },
+        {
+          "title": "Yandex Maps — Dalgıç Restaurant Gümüşlük",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yüksek fiyatlı balıkçılara kıyasla bütçe dostu ev yemekleri ve yoğun sezonda servis temposu notları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=14412400260231599716",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yalı Mevkii İskele Karşısı konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Gümüşlük sahil merkezinde balık dışında ev yapımı sulu yemek ve zeytinyağlı bulmak için nadir adres",
+        "Sahil ortalamasına kıyasla bütçe dostu esnaf lokantası dengesi"
+      ],
+      "cons": [
+        "Lüks meze veya manzaralı deniz sıfırı masa düzeni bulunmuyor",
+        "Çok yoğun yaz öğle/akşamlarında servis bekleyebiliyor"
+      ],
+      "uncertainties": [
+        "Günlük tencere ve zeytinyağlı çeşitleri sabah mutfağına göre değişiyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "nuka-gumusluk",
+      "categoryId": "denemelisin",
+      "resolvedName": "Nuka",
+      "branchName": "Gümüşlük, 5233 Caddesi 23/4, 48970 Bodrum/Muğla",
+      "placeId": "ChIJ6xmuFmJ1vhQRTbZJE2qzqvs",
+      "coordinates": {
+        "lat": 37.047188399999996,
+        "lng": 27.2421829
+      },
+      "rating": 4.9,
+      "userRatingCount": 120,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://nukabodrum.online/",
+      "mapsUri": "https://maps.google.com/?cid=18134504117732226637",
+      "recommendedPrimary": [
+        "Teriyaki Tavuklu Bowl",
+        "Pink Smash Burger",
+        "Fıstık Krokanlı Profiterol"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Paris-Brest ve Çikolatalı Kurabiyeler",
+          "note": "Kaseler veya burger sonrası choux hamuru ve pastacı kremasıyla hazırlanan ev yapımı tatlılar öne çıkar.",
+          "proof": "Addagio ve Wanderlog menü kayıtları"
+        },
+        {
+          "name": "Ev Yapımı Kombucha ve Nuka Iced Tea",
+          "note": "Hazır meşrubatlar yerine kendi üretimi ferahlatıcı soğuk içecekler sunulur.",
+          "proof": "Wanderlog ve Yemeksepeti kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sahil kalabalığından içeride ferah, temiz ve sade oturma düzeni; paket servis de aktif",
+        "crowdAndNoise": "Gündüz ve akşamüstü sakin, mahalle sakinleri ile sağlıklı öğün arayanların uğradığı tempolu nokta",
+        "disadvantage": "Sahil bandından uzakta 5233. Cadde yamacında yer aldığı için yürüyüşte yokuş gerektirebilir",
+        "transit": "Gümüşlük 5233. Cadde No:23/4 adresinde, Güney Gümüşlük / Armonia yönünde araçla kısa mesafede"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Nuka Bodrum Resmi Sitesi",
+          "url": "http://nukabodrum.online/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Yavaş ve taze üretim felsefesi, kase ve ev yapımı tatlı konsepti"
+        },
+        {
+          "title": "Wanderlog — Nuka Bowl & Dessert",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "5233. Cadde No:23/4 adres doğrulaması, Teriyaki Bowl, profiterol ve kombucha menü kayıtları"
+        },
+        {
+          "title": "Yemeksepeti — Nuka Bowl & Dessert Gümüşlük",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Cheddar hindi fümeli tost, Nuka Iced Tea, hijyen ve paketleme özeni geri bildirimleri"
+        },
+        {
+          "title": "VeganHarita & Addagio — Nuka Bodrum",
+          "url": "https://veganharita.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Vegan/vejetaryen kase seçenekleri, Pink Smash Burger ve Paris-Brest doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=18134504117732226637",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Gümüşlük, 5233. Cd. 23/4 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Bölgede taze bowl, bitki bazlı seçenekler ve artizan choux tatlılarını bir arada sunan nadir adres",
+        "Resmi site, Wanderlog, Yemeksepeti ve VeganHarita ile çoklu bağımsız doğrulama"
+      ],
+      "cons": [
+        "Sahil yürüyüş aksının dışında kaldığı için özel araç veya kısa transfer gerektiriyor",
+        "Klasik Ege mutfağı ya da akşam meze ortamı arayanlara uygun değildir"
+      ],
+      "uncertainties": [
+        "Sezon içi açılış saatleri ve paket servis alanı döneme göre değişebiliyor"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kardesler-koftecisi-gumusluk",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kardeşler Köftecisi",
+      "branchName": "5120 sok, Gümüşlük, yalı mevkii 48/6, 48400 Bodrum/Muğla",
+      "placeId": "ChIJG4-j9-h1vhQRG2q8fzfqsKE",
+      "coordinates": {
+        "lat": 37.0543875,
+        "lng": 27.2356888
+      },
+      "rating": 4.8,
+      "userRatingCount": 73,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11651069760094628379",
+      "recommendedPrimary": [
+        "Salça Soslu Ekmek Arası Köfte",
+        "Yoğurtlu Soslu Köfte",
+        "Kasap Sucuklu Kaşarlı Tost"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Izgara Köfte Porsiyon ve Piyaz",
+          "note": "Ekmek arası yerine tabakta salata ve piyaz eşliğinde oturarak yemek isteyenler için sunulur.",
+          "proof": "Yemeksepeti menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sokak arasında tahta masa ve sandalyeli sade açık alan oturumu; paket servis mevcut",
+        "crowdAndNoise": "Öğle ve akşamüstü saatlerinde yerel esnaf ve ekonomik atıştırmalık arayanlarla hareketli",
+        "disadvantage": "Sokak arasında kaldığı için ilk kez gelenler açısından gizli kalabiliyor ve porsiyonlar hızlı sokak yemeği ölçüsündedir",
+        "transit": "Gümüşlük Yalı Mevkii 5120. Sokak No:48/6 adresinde, sahil merkezine yürüme mesafesinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "NowBodrum — Kardeşler Köftecisi Gümüşlük",
+          "url": "https://www.nowbodrum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yalı bölgesinde bütçe dostu yerel köfte durağı kaydı"
+        },
+        {
+          "title": "Küçük Oteller & Gümüşlük Rehberi — Kardeşler Köftecisi",
+          "url": "https://www.gumuslukrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tahta masalı çay bahçesi tarzı samimi yapı ve balık restoranlarına ekonomik alternatif vurgusu"
+        },
+        {
+          "title": "Yemeksepeti — Kardeşler Köftecisi Gümüşlük",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ekmek arası köfte, yoğurtlu soslu köfte, ızgara köfte menüleri ve fiyat-performans yorumları"
+        },
+        {
+          "title": "Yaka.la & Yandex Maps — Kardeşler Köftecisi",
+          "url": "https://yaka.la/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Özel salça soslu ekmek arası köfte, kasap sucuğu tost ve 5120. Sk. adres doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=11651069760094628379",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "5120. Sk. Yalı Mevkii 48/6 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Gümüşlük sahilindeki yüksek fiyatlı restoranlara karşı gerçek ekonomik sokak lezzeti alternatifi",
+        "Hem editoryal rehberler hem Yemeksepeti ve yerel topluluk kayıtlarıyla güçlü doğrulama"
+      ],
+      "cons": [
+        "Salaş ve sade sokak arası oturumu nedeniyle restoran konforu sunmuyor",
+        "Porsiyon boyutları büyük iştahlılar için tek başına küçük gelebiliyor"
+      ],
+      "uncertainties": [
+        "Paket servis saatleri ve sos yoğunluğu yoğun günlere göre değişebiliyor"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "cafe-bien-gumusluk",
+      "categoryId": "denemelisin",
+      "resolvedName": "Cafe Bien Gümüşlük",
+      "branchName": "Gümüşlük, Kırçiçeği Sk. 2/1, 48400 Bodrum/Muğla",
+      "placeId": "ChIJRR2GZsR1vhQRrwcoTtlxGHE",
+      "coordinates": {
+        "lat": 37.0520147,
+        "lng": 27.236974699999998
+      },
+      "rating": 4.5,
+      "userRatingCount": 86,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8149388703860000687",
+      "recommendedPrimary": [
+        "İmza Kokteyller",
+        "Klasik Kokteyl Seçkisi",
+        "Gündüz Kahve Molası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Canlı Caz, Akustik ve DJ Sahne Geceleri",
+          "note": "Akşam saatlerinden gece yarısı sonrasına kadar uzanan canlı performans programıyla öne çıkar.",
+          "proof": "BizimCaz ve BodrumGuru kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sahil ve bahçe bağlantılı bar masaları ile sahne çevresi oturumu",
+        "crowdAndNoise": "Gündüzleri sakin sahil temposunda, akşamları canlı müzik ve konser günlerinde hareketli",
+        "disadvantage": "Yemek odaklı bir mutfağı yoktur; konser akşamlarında müzik veya giriş ücreti yansıtılabiliyor",
+        "transit": "Gümüşlük Kırçiçeği Sokak No:2/1 adresinde, sahil yürüyüş aksının güney tarafında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Bodrum Guru — Cafe Bien Gümüşlük",
+          "url": "https://www.bodrumguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ankara kökenli markanın Gümüşlük sahnesi, caz-akustik-alternatif rock geceleri ve gece çalışma düzeni"
+        },
+        {
+          "title": "BizimCaz & Müdavim — Cafe Bien Gümüşlük",
+          "url": "https://www.bizimcaz.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kırçiçeği Sokak No:2/1 adres ve canlı müzik etkinlik programı kaydı"
+        },
+        {
+          "title": "MyGuideBodrum — Cafe Bien Gümüşlük",
+          "url": "https://www.myguidebodrum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mutfak yerine zengin bar, kokteyl, şarap ve kahve formatı doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=8149388703860000687",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Gümüşlük, Kırçiçeği Sk. 2/1 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Gümüşlük gecelerinde nitelikli caz, akustik ve alternatif müzik dinlenebilen az sayıdaki bar",
+        "Güçlü kokteyl seçkisi ve sahil erişimli sosyal atmosfer"
+      ],
+      "cons": [
+        "Kapsamlı akşam yemeği mutfağı bulunmadığından yemek sonrası içecek ve müzik için daha uygun",
+        "Etkinlik gecelerinde ek müzik ücreti veya rezervasyon şartı olabiliyor"
+      ],
+      "uncertainties": [
+        "Sezonluk yaz operasyonu olduğundan bahar/kış dönemi açık durumu kontrol edilmeli"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fenercinin-gizi-gumusluk",
+      "categoryId": "denemelisin",
+      "resolvedName": "Fenerci'nin Gızı",
+      "branchName": "Gümüşlük, 5233. Cadde no:17/5, 48970 Bodrum/Muğla",
+      "placeId": "ChIJCX2JgPZ1vhQRdG6GGvNg2Y8",
+      "coordinates": {
+        "lat": 37.0458579,
+        "lng": 27.2419852
+      },
+      "rating": 4.5,
+      "userRatingCount": 229,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10365422614608244340",
+      "recommendedPrimary": [
+        "Günlük Kek ve Tart Çeşitleri",
+        "Özel Tasarım Pastalar",
+        "Taze Ekmek ve Unlu Mamuller"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bahçede Hafif Fırın Brunch Molası",
+          "note": "Gün içinde taze pişmiş tuzlu unlu mamullerle bahçe masalarında sakin bir mola imkanı sunar.",
+          "proof": "Gümüşlük Rehberi ve BodrumGuru kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Doğal malzemelerle hazırlanmış bahçe oturma alanı ve tezgah siparişi",
+        "crowdAndNoise": "Sabah ve öğleden sonra tatlı-pasta alışverişi yapan mahalle sakinleri ve tatilcilerle sakin",
+        "disadvantage": "Sahil bandından uzakta Turgutreis–Gümüşlük bağlantı caddesi üzerinde kalıyor",
+        "transit": "Gümüşlük 5233. Cadde No:17/5 (Turgutreis Cd. dolmuş güzergahı) üzerinde kolay araç ve dolmuş erişimli"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Gümüşlük Rehberi — Fenerci’nin Gızı",
+          "url": "https://www.gumuslukrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tasarım pastalar, kekler, taze ekmekler, doğal malzeme kullanımı ve bahçe atmosferi kaydı"
+        },
+        {
+          "title": "Bodrum Guru & BodrumdaYaşam — Fenerci’nin Gızı",
+          "url": "https://www.bodrumguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Butik fırın, pastane ve bahçe brunch durağı önerisi"
+        },
+        {
+          "title": "Yandex Maps — Fenerci’nin Gızı",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "5233. Cadde No:17/5 adres ve tatlı/pasta lezzet memnuniyeti"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=10365422614608244340",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Gümüşlük, 5233. Cd. no:17/5 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Bölgede taze günlük pasta, tart ve doğal malzemeli unlu mamul arayanlar için köklü butik adres",
+        "Bahçeli samimi atmosfer ve dolmuş güzergahı üzerinde kolay erişim"
+      ],
+      "cons": [
+        "Sahildeki yürüyüş aksının uzağında kaldığı için araç veya dolmuşla uğramak gerekiyor",
+        "Kapsamlı sıcak yemek veya serpme kahvaltı yerine fırın/pastane odağında kalıyor"
+      ],
+      "uncertainties": [
+        "Özel sipariş tasarım pastalar için önceden iletişim kurulması gerekiyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mayhos-gumusluk",
+      "categoryId": "denemelisin",
+      "resolvedName": "Mayhoş Gümüşlük",
+      "branchName": "Gümüşlük, Cumhuriyet Cd. No:85/2, 48970 Bodrum/Muğla",
+      "placeId": "ChIJgczgpfJ1vhQRh87ihLcuTeg",
+      "coordinates": {
+        "lat": 37.053202,
+        "lng": 27.251775499999997
+      },
+      "rating": 4.4,
+      "userRatingCount": 94,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16739086755749351047",
+      "recommendedPrimary": [
+        "Limonlu Tart (Limon Curd)",
+        "Tarçınlı Rulo (Cinnamon Roll)",
+        "Bitter Çikolatalı Fudge Brownie"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ekşi Mayalı Ekmekler ve Crumble Barlar",
+          "note": "Günlük çıkan ekşi maya ekmekler ile meyveli crumble barlar paket alımlarda öne çıkar.",
+          "proof": "Menum.co ve Yemeksepeti menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sınırlı kapasiteli butik dükkan düzeni; gel-al ve paket sipariş ağırlıklı",
+        "crowdAndNoise": "Sabah ve öğle saatlerinde mahalle sakinlerinin ekmek ve tatlı alışverişiyle hareketli",
+        "disadvantage": "Oturma alanı oldukça kısıtlı olduğu için kalabalık günlerde yer bulmak zor olabiliyor ve akşamüstü geç saatlerde kapanıyor",
+        "transit": "Gümüşlük Cumhuriyet Caddesi No:85/2 adresinde, Gümüşlük merkez içi cadde üzerinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Menum.co — Mayhoş Gümüşlük",
+          "url": "https://menum.co/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Artisan bakery konsepti, Callebaut çikolata kullanımı, ekşi mayalı ekmek ve brioche üretimi"
+        },
+        {
+          "title": "Yemeksepeti — Mayhoş Gümüşlük Menü",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Profiterol, limonlu tart, entremetler, cinnamon roll, crumble bar ve fudge brownie menü doğrulaması"
+        },
+        {
+          "title": "Yandex Maps — Mayhoş Gümüşlük",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Cumhuriyet Cd. No:85/2 konumu, ürün tazeliği ve dengeli şeker oranı değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=16739086755749351047",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Gümüşlük, Cumhuriyet Cd. No:85/2 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Gümüşlük merkezde nitelikli çikolata ve ekşi maya teknikleriyle üretim yapan modern artizan pastane",
+        "Aşırı şekerli olmayan dengeli tatlı profili ve taze ekmek seçeneği"
+      ],
+      "cons": [
+        "Oturma alanı kısıtlı olduğundan daha çok gel-al ve paket alışverişe uygun",
+        "Akşam yemeği saatlerinden önce kapanabiliyor"
+      ],
+      "uncertainties": [
+        "Haftanın başlangıç günü olan pazartesi kapanış düzeni sezona göre değişebiliyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "karafaki-erhan-usta-gumusluk",
+      "categoryId": "balik",
+      "resolvedName": "Karafaki Erhan Usta Gümüşlük Balık Restoranı",
+      "branchName": "Gümüşlük Yalı Mevkii, No:68, Gümüşlük, 48970 Bodrum/Muğla",
+      "placeId": "ChIJS2zohEB1vhQR0I555fjQzA0",
+      "coordinates": {
+        "lat": 37.055331300000006,
+        "lng": 27.235239999999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 2957,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://karafakierhanusta.com/",
+      "mapsUri": "https://maps.google.com/?cid=994399385162452688",
+      "recommendedPrimary": [
+        "Paşa Mezesi ve Deniz Börülcesi",
+        "Izgara Ahtapot ve Kalamar",
+        "Tuzda veya Izgara Günlük Balık"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarakta Karides ve Deniz Mahsullü Kroket",
+          "note": "Meze tezgahından sonra masa sıcakları için sıkça tercih edilen ara sıcaklardır.",
+          "proof": "BodrumFinder ve Wanderlog kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Yalı Mevkii No:68 önünde suya sıfır sahil masaları ve iç oturma alanı",
+        "crowdAndNoise": "Gün batımı ve akşam servisinde oldukça yoğun; sezon boyunca rezervasyonsuz yer bulmak zor",
+        "disadvantage": "Bütçe seviyesi yüksektir; balık gramajı ve meze fiyatları önceden sorulmalı ve aynı sokaktaki adaş Karafaki ile karıştırılmamalıdır",
+        "transit": "Gümüşlük Yalı Mevkii No:68 adresinde, sahil yürüyüş bandının uç kısmında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Karafaki Erhan Usta Resmi Sitesi",
+          "url": "http://karafakierhanusta.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Erhan Usta marka tescili, Yalı Mevkii No:68 adres ve deniz ürünleri odağı"
+        },
+        {
+          "title": "Mes Prestiges — Karafaki Erhan Usta",
+          "url": "https://www.mesprestiges.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1983 yılından bu yana Gümüşlük deneyimi, sabah teknelerinden günlük balık ve suya sıfır gün batımı masaları"
+        },
+        {
+          "title": "BodrumFinder — Karafaki Erhan Usta Farkı",
+          "url": "https://bodrumfinder.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "No:68 Erhan Usta ve kızı Ceyda yönetimi, Paşa Mezesi, tuzda balık ve adaş Karafaki işletmesinden ayrım bilgisi"
+        },
+        {
+          "title": "Wanderlog — Karafaki Erhan Usta",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kalamar, ahtapot, meze tazeliği ve fiyatların sipariş öncesi teyit edilmesi önerisi"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=994399385162452688",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Gümüşlük Yalı Mevkii No:68 konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Sahildeki adaş mekanlara kıyasla usta ve aile gözetimiyle puan istikrarını koruyan köklü balıkçı",
+        "Kalamar-ahtapot pişirim kıvamı, zengin meze dolabı ve suya sıfır gün batımı manzarası"
+      ],
+      "cons": [
+        "Üst bütçe segmentinde yer alıyor; gramajlı balık siparişinde hesap önceden netleştirilmeli",
+        "Aynı sahil bandındaki diğer Karafaki tabelasıyla karıştırılabiliyor (No:68 tabelasına dikkat)"
+      ],
+      "uncertainties": [
+        "Günlük balık çeşitleri tekne avına ve mevsime göre değişmektedir"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ali-rizanin-yeri-gumusluk",
+      "categoryId": "balik",
+      "resolvedName": "Ali Riza’nın Yeri Gümüşlük",
+      "branchName": "Gümüşlük, 1120. Sk. 56/1, 48999 Bodrum/Muğla",
+      "placeId": "ChIJz4HEmK91vhQRVZF66DJSxiA",
+      "coordinates": {
+        "lat": 37.0547502,
+        "lng": 27.2354357
+      },
+      "rating": 4.6,
+      "userRatingCount": 287,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2361665433204592981",
+      "recommendedPrimary": [
+        "Ahtapot Izgara & Salatası",
+        "Günlük Sade Izgara Balık",
+        "Ege Otları ve Bahçe Mezeleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kalamar ve Günlük Ege Otları",
+          "note": "Ana balık öncesi bahçeden gelen taze ot kavurmaları ve kalamar ikilisi sıkça tercih edilir.",
+          "proof": "Mes Prestiges ve Yandex kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Yalı kıyısında suya neredeyse sıfır ahşap sahil masaları ve sade düzen",
+        "crowdAndNoise": "Gün batımı saatlerinden geceye kadar sakin ama düzenli müdavim yoğunluğuna sahip",
+        "disadvantage": "Üst segment fiyatlama geçerlidir; gösterişsiz ve rustik yapıda olduğundan lüks servis bekleyenlere uygun değildir",
+        "transit": "Gümüşlük 1120. Sokak No:56/1 adresinde, Yalı sahil şeridinin kalbinde yaya yolu üzerinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Mes Prestiges — Balıkçı Ali Rıza’nın Yeri",
+          "url": "https://www.mesprestiges.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1960–1970 kökenli aile işletmesi, günlük tekne avı, ahtapot salatası ve ahşap su kenarı masaları"
+        },
+        {
+          "title": "MyGuideBodrum & Müdavim — Ali Rıza’nın Yeri",
+          "url": "https://www.myguidebodrum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Nostaljik Gümüşlük balıkçısı, sade ızgara balık ve rezervasyon önerisi kaydı"
+        },
+        {
+          "title": "Yandex Maps — Ali Rıza’nın Yeri Gümüşlük",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Aile sıcaklığı, meze tazeliği ve yüksek fiyat değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=2361665433204592981",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Gümüşlük, 1120. Sk. 56/1 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Gümüşlük’ün eski balıkçı kasabası ruhunu koruyan yarım asırlık aile işletmesi",
+        "Gösterişten uzak sade ızgara tekniği ve ayakların suya yakın olduğu sahil masaları"
+      ],
+      "cons": [
+        "Sahil hattı genelinde olduğu gibi hesap seviyesi yüksek çıkabiliyor",
+        "Yaz gün batımında rezervasyonsuz masa bulmak güç"
+      ],
+      "uncertainties": [
+        "Menü günlük tekne avına bağlı olarak sınırlı ve değişken kalabiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gumusluk-balik-evi",
+      "categoryId": "balik",
+      "resolvedName": "Gümüşlük Balık Evi",
+      "branchName": "Gümüşlük, 1135. Sk. No:1 D:1, 48970 Bodrum/Muğla",
+      "placeId": "ChIJ2wDcd6Z1vhQRPEXmGZy7BZE",
+      "coordinates": {
+        "lat": 37.0541507,
+        "lng": 27.2371409
+      },
+      "rating": 4.5,
+      "userRatingCount": 692,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://gumusluk.com/r/balik-pisirme-evi/",
+      "mapsUri": "https://maps.google.com/?cid=10449964789506917692",
+      "recommendedPrimary": [
+        "Tezgahtan Seçme Izgara Balık (Levrek / Çipura)",
+        "Kalamar ve Karides Ara Sıcak",
+        "Ege Otları ve Soğuk Mezeler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Paket Pişmiş Balık ve Tezgah Alımı",
+          "note": "Evde yemek isteyenler için de aynı taze balıkları tezgahtan alıp pişirtme imkanı sunar.",
+          "proof": "Gümüşlük Rehberi ve Meyhanedeyiz kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Çarşı içinde sıcak aile işletmesi masaları ve taze balık teşhir tezgahı",
+        "crowdAndNoise": "Akşam yemeklerinde mahalle sakinleri ve aşırı turistik kalabalıktan kaçan ziyaretçilerle dengeli",
+        "disadvantage": "Deniz sıfırı gün batımı manzarası yoktur; bazı ziyaretçiler meze porsiyonlarını küçük bulabiliyor ve pik sezonda servis yavaşlayabiliyor",
+        "transit": "Gümüşlük 1135. Sokak No:1/D:1 adresinde, otobüs ve minibüs son duraklarının hemen yanında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Gümüşlük Rehberi — Balık Pişirme Evi",
+          "url": "https://gumusluk.com/r/balik-pisirme-evi/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Minibüs son durakları yanı konumu, tezgahtan günlük balık seçimi ve pişirme evi düzeni"
+        },
+        {
+          "title": "Meyhanedeyiz — Gümüşlük Balık Evi",
+          "url": "https://meyhanedeyiz.biz/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1135. Sk. No:1 adresi, meze-ara sıcak eşlikçileri ve rezervasyon bilgisi"
+        },
+        {
+          "title": "Wanderlog & Yandex Maps — Gümüşlük Balık Evi",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sahil restoranlarına kıyasla daha makul fiyat dengesi, balık tazeliği ve küçük meze porsiyonu notları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=10449964789506917692",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Gümüşlük, 1135. Sk. No:1 D:1 konum doğrulaması"
+        }
+      ],
+      "pros": [
+        "Kıyı şeridindeki fahiş turistik hesaplar olmadan taze günlük balık ve meze deneyimi",
+        "Hem yerinde rakı-balık sofrası hem eve pişmiş balık alma esnekliği"
+      ],
+      "cons": [
+        "Sahil cephesinde olmadığı için deniz ve gün batımı manzarası bulunmuyor",
+        "Yoğun yaz akşamlarında servis temposu düşebiliyor ve meze tabakları görece küçük kalabiliyor"
+      ],
+      "uncertainties": [
+        "Sezon içi masa rezervasyonu özellikle hafta sonları gerekebiliyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "reis-balik-gumusluk",
+      "categoryId": "balik",
+      "resolvedName": "Reis Balık Gümüşlük",
+      "branchName": "Gümüşlük, 48970 Bodrum/Muğla",
+      "placeId": "ChIJU85Jae50vhQRJGUrB4hlf0c",
+      "coordinates": {
+        "lat": 37.055361,
+        "lng": 27.235656
+      },
+      "rating": 4.4,
+      "userRatingCount": 309,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5151948133645378852",
+      "recommendedPrimary": [
+        "Mevsim Balıkları Izgara",
+        "Kalamar ve Karides Güveç",
+        "Klasik Ege Mezeleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kiremitte ve Tereyağlı Deniz Mahsulleri",
+          "note": "Balık ana yemeği yanında masaya paylaşımlık sıcak başlangıç olarak sipariş edilir.",
+          "proof": "Bodrum Mekanları ve MyGuideBodrum kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sahil bandında açık hava ve kapalı mekan masa düzeni",
+        "crowdAndNoise": "Akşamüstü gün batımı ve akşam yemeği saatlerinde sahil temposuyla uyumlu hareketli düzen",
+        "disadvantage": "Gümüşlük sahilindeki pek çok balıkçıda olduğu gibi fiyat algısı yüksektir ve Yalıkavak’taki adaş mekanla karıştırılmamalıdır",
+        "transit": "Gümüşlük Yalı sahil şeridi üzerinde, son duraktan kıyıya birkaç dakikalık yürüyüş mesafesinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Bodrum Mekanları — Reis Balık Gümüşlük",
+          "url": "https://www.bodrummekanlari.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Gümüşlük sahilinde deniz ürünleri, meze ve rakı-balık sofrası rehber kaydı"
+        },
+        {
+          "title": "MyGuideBodrum — Reis Balık Gümüşlük",
+          "url": "https://www.myguidebodrum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Açık ve kapalı oturma alanı ile Gümüşlük balık restoranı listelemesi"
+        },
+        {
+          "title": "Dijital Link / Yerel İşletme Kaydı — Reis Balık Gümüşlük",
+          "url": "https://dijital.link/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yalıkavak’taki adaş işletmeden ayrı olarak Gümüşlük şube ve menü odağı teyidi"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=5151948133645378852",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Gümüşlük Yalı Mevkii konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Gümüşlük sahil yürüyüş aksında klasik meze ve mevsim balığı deneyimi",
+        "Açık ve kapalı oturma alanı seçeneğiyle akşam servisine uygun yapı"
+      ],
+      "cons": [
+        "Sahil bölgesi fiyat seviyesi ziyaretçilere yüksek gelebiliyor",
+        "Yalıkavak’taki aynı adlı başka bir balıkçıyla sıkça karıştırılıyor"
+      ],
+      "uncertainties": [
+        "Sezon dışı dönem çalışma saatleri ve güncel tezgah çeşitliliği işletmeden teyit edilmeli"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    }
+  ]
+}

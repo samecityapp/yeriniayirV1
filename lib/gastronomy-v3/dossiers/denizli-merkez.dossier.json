@@ -1,0 +1,1994 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "denizli-merkez",
+  "displayName": "Denizli Merkez (Merkezefendi & Çamlık)",
+  "verifiedAt": "2026-11-18T10:03:09.769Z",
+  "selectedCount": 27,
+  "rejectedControls": [
+    {
+      "id": "ctrl-dnz-marina-closed",
+      "resolvedName": "Çamlık Marina Restaurant",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-dnz-pizzalocale-closed",
+      "resolvedName": "Pizza Locale",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-dnz-miske-closed",
+      "resolvedName": "Miske Antep Mutfağı",
+      "reason": "not_operational:CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ctrl-dnz-baget-chain",
+      "resolvedName": "Baget Burger - Çamlık Şubesi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-dnz-palermo-chain",
+      "resolvedName": "PİZZA PALERMO 2GO ÇAMLIK",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-dnz-starbucks-chain",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-dnz-haciserif-chain",
+      "resolvedName": "Hacı Şerif Merkez",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-dnz-pausecoffea-chain",
+      "resolvedName": "Pause Coffea Çamlık",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-dnz-marwell-purity",
+      "resolvedName": "Marwell Bakery | Freshly Baked Daily",
+      "reason": "kahve_category_not_coffee_specialist:pastry_shop"
+    },
+    {
+      "id": "ctrl-dnz-savor-purity",
+      "resolvedName": "Savor Artisan Bakery & Patisserie",
+      "reason": "below_quality_threshold:★4.5(14)"
+    },
+    {
+      "id": "ctrl-dnz-pamukkale-outside",
+      "resolvedName": "Asian Kitchen Landscape Restaurant",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Bahçelievler/Bahcelievler/Selçukbey/Selcukbey/Selçuk Bey/Selcuk Bey/15 TEMMUZ/15 Temmuz/Kınıklı/Kinikli/Adalet/Bereketli/Sırakapılar/Sirakapilar/Saltak/Altıntop/Altintop/Yenişehir/Yenisehir/Siteler/Atalar/İncilipınar/Incilipinar/Saraylar/Bayramyeri/Kaleici/Kaleiçi/Topraklık/Topraklik/Servergazi/Asmalıevler/Asmalievler/Merkez Efendi/Merkezefendi/Gökpınar/Gokpinar/Delikliçınar/Deliklicinar/Gültepe/Gultepe/Mehmetçik/Mehmetcik/15 Mayıs/15 Mayis/Sümer/Sumer/Fesleğen/Feslegen/Çamlık/Camlik/Eski, adres: Pamukkale, Cumhuriyet Meydani, 20190 Pamukkale/Denizli, Türkiye)"
+    },
+    {
+      "id": "ctrl-dnz-buldan-outside",
+      "resolvedName": "Buldan Ağam Kebap",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Bahçelievler/Bahcelievler/Selçukbey/Selcukbey/Selçuk Bey/Selcuk Bey/15 TEMMUZ/15 Temmuz/Kınıklı/Kinikli/Adalet/Bereketli/Sırakapılar/Sirakapilar/Saltak/Altıntop/Altintop/Yenişehir/Yenisehir/Siteler/Atalar/İncilipınar/Incilipinar/Saraylar/Bayramyeri/Kaleici/Kaleiçi/Topraklık/Topraklik/Servergazi/Asmalıevler/Asmalievler/Merkez Efendi/Merkezefendi/Gökpınar/Gokpinar/Delikliçınar/Deliklicinar/Gültepe/Gultepe/Mehmetçik/Mehmetcik/15 Mayıs/15 Mayis/Sümer/Sumer/Fesleğen/Feslegen/Çamlık/Camlik/Eski, adres: Dört Eylül, 14 Mayıs Cd. No:2, 20400 Buldan/Denizli, Türkiye)"
+    },
+    {
+      "id": "ctrl-dnz-tavas-outside",
+      "resolvedName": "Meşhur Kebapçı",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Bahçelievler/Bahcelievler/Selçukbey/Selcukbey/Selçuk Bey/Selcuk Bey/15 TEMMUZ/15 Temmuz/Kınıklı/Kinikli/Adalet/Bereketli/Sırakapılar/Sirakapilar/Saltak/Altıntop/Altintop/Yenişehir/Yenisehir/Siteler/Atalar/İncilipınar/Incilipinar/Saraylar/Bayramyeri/Kaleici/Kaleiçi/Topraklık/Topraklik/Servergazi/Asmalıevler/Asmalievler/Merkez Efendi/Merkezefendi/Gökpınar/Gokpinar/Delikliçınar/Deliklicinar/Gültepe/Gultepe/Mehmetçik/Mehmetcik/15 Mayıs/15 Mayis/Sümer/Sumer/Fesleğen/Feslegen/Çamlık/Camlik/Eski, adres: Kızılcabölük, Çarşı Meydanı No:19, 20950 Tavas/Denizli, Türkiye)"
+    },
+    {
+      "id": "ctrl-dnz-karahayit-outside",
+      "resolvedName": "Çelikay pide kahvaltı salonu ve ızgara salonu",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Bahçelievler/Bahcelievler/Selçukbey/Selcukbey/Selçuk Bey/Selcuk Bey/15 TEMMUZ/15 Temmuz/Kınıklı/Kinikli/Adalet/Bereketli/Sırakapılar/Sirakapilar/Saltak/Altıntop/Altintop/Yenişehir/Yenisehir/Siteler/Atalar/İncilipınar/Incilipinar/Saraylar/Bayramyeri/Kaleici/Kaleiçi/Topraklık/Topraklik/Servergazi/Asmalıevler/Asmalievler/Merkez Efendi/Merkezefendi/Gökpınar/Gokpinar/Delikliçınar/Deliklicinar/Gültepe/Gultepe/Mehmetçik/Mehmetcik/15 Mayıs/15 Mayis/Sümer/Sumer/Fesleğen/Feslegen/Çamlık/Camlik/Eski, adres: Karahayıt, Osmanlı pazarı karşısında Beyazıt camii karşısında, Merkez, 20000 Denizli Merkez/Pamukkale/Denizli, Türkiye)"
+    },
+    {
+      "id": "ctrl-dnz-mackburger-low",
+      "resolvedName": "Mack Burger – Denizli Hamburger & Smash Burger",
+      "reason": "below_quality_threshold:★4.1(516)"
+    },
+    {
+      "id": "ctrl-dnz-kaynarca-low",
+      "resolvedName": "Kaynarca Restaurant",
+      "reason": "below_quality_threshold:★4.3(1253)"
+    },
+    {
+      "id": "ctrl-dnz-reserve-low",
+      "resolvedName": "Reserve Kitchen",
+      "reason": "below_quality_threshold:★4.1(1010)"
+    },
+    {
+      "id": "ctrl-dnz-yesilbahce-low",
+      "resolvedName": "Yeşilbahçe Köy Kahvaltısı - Serpme - Denizli’nin En İyi Kahvaltıcısı- Köy Kahvaltısı -Denizli kahvaltı mekanı -PİŞİ",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Bahçelievler/Bahcelievler/Selçukbey/Selcukbey/Selçuk Bey/Selcuk Bey/15 TEMMUZ/15 Temmuz/Kınıklı/Kinikli/Adalet/Bereketli/Sırakapılar/Sirakapilar/Saltak/Altıntop/Altintop/Yenişehir/Yenisehir/Siteler/Atalar/İncilipınar/Incilipinar/Saraylar/Bayramyeri/Kaleici/Kaleiçi/Topraklık/Topraklik/Servergazi/Asmalıevler/Asmalievler/Merkez Efendi/Merkezefendi/Gökpınar/Gokpinar/Delikliçınar/Deliklicinar/Gültepe/Gultepe/Mehmetçik/Mehmetcik/15 Mayıs/15 Mayis/Sümer/Sumer/Fesleğen/Feslegen/Çamlık/Camlik/Eski, adres: Kale, 20180 Pamukkale/Denizli, Türkiye)"
+    },
+    {
+      "id": "ctrl-dnz-rawtown-lowvol",
+      "resolvedName": "RAWTOWN COFFEE ROASTERY",
+      "reason": "below_quality_threshold:★5(14)"
+    },
+    {
+      "id": "ctrl-dnz-nova-low",
+      "resolvedName": "Nova Coffee",
+      "reason": "below_quality_threshold:★3.8(306)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "dnz-pizza-la-mia",
+      "categoryId": "pizza",
+      "resolvedName": "PİZZA LA MİA",
+      "branchName": "Bahçelievler, Bahçelievler Cd. No:41, 20040 Denizli Merkez/Denizli, Türkiye",
+      "placeId": "ChIJB4xZAwBBxxQR6ubhoDvKPyo",
+      "coordinates": {
+        "lat": 37.774914599999995,
+        "lng": 29.0396072
+      },
+      "rating": 4.9,
+      "userRatingCount": 368,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://web.javipos.com/qrmenu/6d36c799-1840-4013-b878-72f13421196c",
+      "mapsUri": "https://maps.google.com/?cid=3044374230576785130",
+      "recommendedPrimary": [
+        "Margherita Pizza",
+        "Özel Etli Karışık Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sarımsaklı Fırın Ekmek & Tiramisu",
+          "note": "Pizza öncesi sıcak atıştırmalık ve yemek sonu klasik İtalyan tatlısı olarak öne çıkar.",
+          "proof": "Yerel yemek portalları + misafir değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Bahçelievler Caddesi üzerinde samimi ve düzenli iç masa düzeni",
+        "crowdAndNoise": "Akşam saatleri ile hafta sonları Bahçelievler ve Adalet müdavimleriyle yoğun",
+        "disadvantage": "Bayramyeri eski çarşıdan yürüyüşle uzaktır; akşamları yoğun saatte bekleme yaşanabilir",
+        "transit": "Bahçelievler Caddesi No:41 üzerinde belediye otobüs ve minibüs duraklarına yakın"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım Denizli İncelemeleri",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taş fırın ince hamurlu pizza çeşitleri ve yüksek puan istikrarı"
+        },
+        {
+          "title": "Yemeksepeti Denizli Listesi",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Pizza La Mia Bahçelievler menü ve müşteri geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Bahçelievler’de yüksek hacimli yerel memnuniyet",
+        "Taş fırında ince çıtır hamur"
+      ],
+      "cons": [
+        "Çarşı merkezine kısa araç veya toplu taşıma mesafesinde"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşam paket trafiği salon servis süresini etkileyebilir"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-verace-napolitan",
+      "categoryId": "pizza",
+      "resolvedName": "Verace Napolitan Pizza",
+      "branchName": "Kınıklı, 6021. Sk. Tekdem İş Merkezi Avlusu no:21/1, 20160 Pamukkale/Denizli, Türkiye",
+      "placeId": "ChIJj-OcDgw_xxQRcc6BUu-IoaE",
+      "coordinates": {
+        "lat": 37.7472244,
+        "lng": 29.090104499999995
+      },
+      "rating": 5,
+      "userRatingCount": 46,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11646740672819613297",
+      "recommendedPrimary": [
+        "Margherita (San Marzano)",
+        "Mortadella e Pistacchio"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Panuozzo Sandviçler",
+          "note": "Odunlu hamurla hazırlanan sıcak İtalyan sandviç çeşidi.",
+          "proof": "İşletme QR menüsü + Migros Yemek"
+        }
+      ],
+      "suitability": {
+        "seating": "Tekdem İş Merkezi avlusunda açık mutfağı gören modern salon",
+        "crowdAndNoise": "Kınıklı kampüs ve Çamlık kesiminden özenli akşam buluşmaları",
+        "disadvantage": "Avlu içindeki konumu cadde önünden hemen fark edilmeyebilir; hamur stoğu akşamları tükenebilir",
+        "transit": "Kınıklı 6021. Sokak Tekdem İş Merkezi Avlusu içinde Çamlık hattına yürüme mesafesinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Verace Resmi Dijital Menü",
+          "url": "https://dijital.link/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "San Marzano sos, Mortadella e Pistacchio ve Panuozzo menüsü"
+        },
+        {
+          "title": "Yemeksepeti Kınıklı Puanları",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "4.9 ortalama ile Margherita ve Diavola pizza değerlendirmeleri"
+        },
+        {
+          "title": "Restoranım Denizli Rehberi",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kınıklı’da açık mutfaklı taş fırın Napoli pizzası incelemesi"
+        },
+        {
+          "title": "Migros Yemek Denizli",
+          "url": "https://www.migros.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Panuozzo ve Quattro Formaggi doğrulaması"
+        }
+      ],
+      "pros": [
+        "Gerçek San Marzano sosu ve Napoli hamur tekniği",
+        "Çoklu platformda yüksek puan tutarlılığı"
+      ],
+      "cons": [
+        "Avlu içi girişi ilk kez gidenler için tarif gerektirir"
+      ],
+      "uncertainties": [
+        "Yoğun akşamlarda özel hamur miktarı sınırlı olabilir"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-de-pizzazz",
+      "categoryId": "pizza",
+      "resolvedName": "De Pizzazz pizzeria",
+      "branchName": "Selçukbey mahallesi, 15 TEMMUZ, ŞEHİTLER YOLU 7/A, 20020 Denizli Merkezefendi/Denizli, Türkiye",
+      "placeId": "ChIJVz7PfmJBxxQR9MGHkLzbKh4",
+      "coordinates": {
+        "lat": 37.791226,
+        "lng": 29.024860799999995
+      },
+      "rating": 4.6,
+      "userRatingCount": 89,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://depizzazz.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=2173791373084836340",
+      "recommendedPrimary": [
+        "New York Usulü Pepperoni (Dev Boy)",
+        "Özel Soslu Karışık Dilim"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Stromboli (Rulo Pizza)",
+          "note": "Katlanıp fırınlanmış hamur içinde bol peynir ve et dolgusuyla en sık anılan imza yan ürün.",
+          "proof": "depizzazz.com.tr + Yemeksepeti menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Kısıtlı sayıda iç masa ve ağırlıklı dilim/kutu servis düzeni",
+        "crowdAndNoise": "Yenişehir–Selçukbey hattında akşam dilim ve arkadaş paylaşımlarıyla hareketli",
+        "disadvantage": "Dev boy dilimler hızlı tüketime yöneliktir; geniş oturma alanı sınırlı kalabilir",
+        "transit": "Selçukbey 15 Temmuz Şehitler Yolu No:7/A üzerinde araç ve otobüsle doğrudan erişimli"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "De Pizzazz Resmi Web Sitesi",
+          "url": "https://depizzazz.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Dev boy NY usulü ince hamur pizza ve Stromboli tarifleri"
+        },
+        {
+          "title": "Yemeksepeti Selçukbey Puanı",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Stromboli rulo pizza ve katlanabilir dilim değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Şehirdeki nadir dev boy New York dilim konsepti",
+        "Stromboli ile ayrışan fırın tekniği"
+      ],
+      "cons": [
+        "Uzun akşam oturması yerine dilim ve paylaşımlık servis odaklı"
+      ],
+      "uncertainties": [
+        "Dilim çeşitliliği akşam saatlerine göre değişiklik gösterebilir"
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-vicolo-neapolitan",
+      "categoryId": "pizza",
+      "resolvedName": "Vicolo Neapolitan Pizza",
+      "branchName": "Adalet, 10103 Sk. No:9, 20040 Denizli Merkez/Denizli, Türkiye",
+      "placeId": "ChIJVRSBr7lBxxQRIIyVzubz72Q",
+      "coordinates": {
+        "lat": 37.7829518,
+        "lng": 29.026523299999997
+      },
+      "rating": 4.9,
+      "userRatingCount": 54,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7273300095860575264",
+      "recommendedPrimary": [
+        "Pizza Vesta",
+        "Pizza Al Pollo"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Penne Alfredo",
+          "note": "Pizza dışında sıcak ve doyurucu İtalyan mutfağı alternatifi olarak tercih edilir.",
+          "proof": "Yemeksepeti + Migros Yemek menüleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Adalet ara sokağında sakin ve modern iç masa yerleşimi",
+        "crowdAndNoise": "Merkezefendi yeni yerleşim bölgesinden akşam yemeği ve paket talebi",
+        "disadvantage": "Görece yeni mahalle konumu nedeniyle hafta sonu rezervasyonsuz masada bekleme olabilir",
+        "transit": "Adalet Mahallesi 10103. Sokak No:9 üzerinde Delikliçınar yönünden toplu taşımaya yakın"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemeksepeti Adalet Menüsü",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ekşi mayalı Pizza Vesta, Vegetariana ve Penne Alfredo listesi"
+        },
+        {
+          "title": "Migros Yemek Adalet Doğrulaması",
+          "url": "https://www.migros.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Vicolo Neapolitan Pizza Adalet şube menü ve kullanıcı onayları"
+        }
+      ],
+      "pros": [
+        "Ekşi mayalı hafif Napoli hamuru",
+        "Merkezefendi yakasında güçlü alternatif"
+      ],
+      "cons": [
+        "Oturma kapasitesi butik ölçekte"
+      ],
+      "uncertainties": [
+        "Yoğun paket saatlerinde mutfak çıkış süresi uzayabilir"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-dip-smash-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Dip Smash Burger",
+      "branchName": "Kınıklı, 6017. Sk. No:10 D:B, 20160 Pamukkale/Denizli, Türkiye",
+      "placeId": "ChIJH4aYXlk_xxQRT9m_G6hv0wE",
+      "coordinates": {
+        "lat": 37.744492,
+        "lng": 29.0883893
+      },
+      "rating": 4.5,
+      "userRatingCount": 314,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=131571581934623055",
+      "recommendedPrimary": [
+        "Dip Jam Burger",
+        "Dip Truffle Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Soslu Çıtır Patates & Kurabiye İkramı",
+          "note": "Köfte dışı eşlikçilerde sıcak baharatlı patates ve yan ikram kurabiyesiyle anılır.",
+          "proof": "Yemeksepeti Süper Restoran + Neyiyelim"
+        }
+      ],
+      "suitability": {
+        "seating": "Kınıklı yan sokağında pratik ve genç odaklı hızlı masa düzeni",
+        "crowdAndNoise": "Pamukkale Üniversitesi ve Çamlık civarı genç kitleyle günün her saati canlı",
+        "disadvantage": "Pik öğünlerde içeride masa sayısı çabuk dolar; soslar yoğun yapılı olduğu için sade sevenler sos seçimine dikkat etmelidir",
+        "transit": "Kınıklı 6017. Sokak No:10 üzerinde Çamlık Bulvarı’na yürüme mesafesinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemeksepeti Süper Restoran",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "4.8 ortalama ile Dip Jam ve Dip Truffle burger geri bildirimleri"
+        },
+        {
+          "title": "Neyiyelim Denizli Menüsü",
+          "url": "https://www.neyiyelim.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Dip Smash Burger tam burger ve tavuk burger menü kaydı"
+        }
+      ],
+      "pros": [
+        "Gerçek çıtır kenarlı smash mühürleme",
+        "Kendi reçete reçelli ve trüflü sos dengesi"
+      ],
+      "cons": [
+        "Öğrenci saatlerinde gürültü düzeyi artabiliyor"
+      ],
+      "uncertainties": [
+        "Farklı sos kombinasyonlarında tuz dengesi damağa göre değişebilir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-gustatory-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "GUSTATORY ( Smash Burger )",
+      "branchName": "Adalet, Kazım Karabekir Cd. No: 47/B, 20040 Denizli Merkezefendi/Denizli, Türkiye",
+      "placeId": "ChIJldVeqdFBxxQR3YY33-3Yz4A",
+      "coordinates": {
+        "lat": 37.7799468,
+        "lng": 29.0239034
+      },
+      "rating": 4.6,
+      "userRatingCount": 124,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9281875873197688541",
+      "recommendedPrimary": [
+        "Black Gold Burger",
+        "Truffle Edition Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "BBQ Fries & Çıtır Kanat",
+          "note": "Burger yanında tütsü soslu patates ve özel kanat alternatifi olarak tercih edilir.",
+          "proof": "Yemeksepeti + Tıklagelsin yerel menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Kazım Karabekir Caddesi üzerinde sade ve modern butik dükkân yerleşimi",
+        "crowdAndNoise": "Merkezefendi tarafında akşam yemeği ve gurme fast-food arayanlarla istikrarlı",
+        "disadvantage": "Tek köfteli gramajı 100 gr standardındadır; yüksek doyuruculuk için çift köfte seçmek yerinde olur",
+        "transit": "Adalet Kazım Karabekir Caddesi No:47/B üzerinde ana toplu taşıma güzergâhında"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemeksepeti Adalet İncelemeleri",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Black Gold (Black Aioli + fındık parçalı) ve Truffle Edition burger menüsü"
+        },
+        {
+          "title": "Restoranım Gustatory Sayfası",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ev yapımı brioche ve tütsü soslu smash burger konsepti"
+        }
+      ],
+      "pros": [
+        "Özgün Black Aioli ve ev yapımı brioche ekmek kalitesi",
+        "Paketlemede dağılmayan sunum"
+      ],
+      "cons": [
+        "Tek köfte porsiyonu büyük iştahlılar için küçük kalabilir"
+      ],
+      "uncertainties": [
+        "Özel sos içeriğinde kuruyemiş bulunduğu için alerjen uyarısı sorulmalıdır"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-burger-no20",
+      "categoryId": "hamburger",
+      "resolvedName": "Burger No:20",
+      "branchName": "Bereketli mahallesi, Hasan Gönüllü Blv. no:33/A, 20000 Denizli Merkezefendi/Denizli, Türkiye",
+      "placeId": "ChIJlTqgaeNBxxQRaEZtV2DMl3w",
+      "coordinates": {
+        "lat": 37.779719,
+        "lng": 29.016931999999994
+      },
+      "rating": 4.4,
+      "userRatingCount": 140,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8977869096342079080",
+      "recommendedPrimary": [
+        "Butik Smash Cheeseburger",
+        "Karamelize Soğanlı Özel Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Kesimi Baharatlı Patates Cipsi",
+          "note": "Dondurulmuş yerine taze hazırlanan gevrek yan ürün olarak öne çıkar.",
+          "proof": "Restoranım + Yemeksepeti değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Bereketli Bulvar kenarında rahat ve temiz iç masa alanı",
+        "crowdAndNoise": "Adalet ve Bereketli çevresi aileler ile gençler tarafından akşamları tercih edilir",
+        "disadvantage": "Porsiyon boyutu klasik fast-food büyük menülere göre daha kompakt kalır",
+        "transit": "Bereketli Mahallesi Hasan Gönüllü Bulvarı No:33/A önünde otobüs duraklarına yakın"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemeksepeti Burger No:20",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Dana kaburga smash köfte ve hızlı teslimat geri bildirimleri"
+        },
+        {
+          "title": "Restoranım Bereketli Rehberi",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Butik kaburga smash burger ve taze patates sunumu doğrulaması"
+        }
+      ],
+      "pros": [
+        "Yağ oranı dengeli kaburga eti lezzeti",
+        "Temiz ve düzenli mutfak çıktısı"
+      ],
+      "cons": [
+        "Merkez Çınar’dan biraz batıda yer alır",
+        "Tekli burgerler kompakt boyutlu"
+      ],
+      "uncertainties": [
+        "Akşam yoğunluğunda ekmek ve köfte stoklarına göre bekleme yaşanabilir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-analog-plak-kahve",
+      "categoryId": "kahve",
+      "resolvedName": "Analog Plak & Kahve Evi Denizli",
+      "branchName": "Kınıklı, Kınıklı Cd. No:5, 20160, 20160 Pamukkale/Denizli, Türkiye",
+      "placeId": "ChIJucTfWpg_xxQRGmu4JghD4jU",
+      "coordinates": {
+        "lat": 37.74592,
+        "lng": 29.0932697
+      },
+      "rating": 4.7,
+      "userRatingCount": 1095,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.analogplak.com/",
+      "mapsUri": "https://maps.google.com/?cid=3882739531035208474",
+      "recommendedPrimary": [
+        "V60 Filtre Kahve",
+        "Cortado"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Türk Kahvesi & Ev Yapımı Kupa Tatlıları",
+          "note": "Plak eşliğinde uzun sohbetlere eşlik eden klasik sıcak kahve ve hafif tatlılar.",
+          "proof": "analogplak.com + Wanderlog rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Vintage plak kapaklarıyla çevrili sıcak, iki katlı ve karakterli oturma alanları",
+        "crowdAndNoise": "Günün büyük bölümünde üniversite öğrencileri ve plak tutkunlarıyla hareketli",
+        "disadvantage": "Mekân karakteri sohbet ve müzik odaklı olduğu için sessiz çalışma ortamı arayanlara zaman zaman hareketli gelebilir",
+        "transit": "Kınıklı Caddesi No:5 üzerinde Çamlık Parkı ve fakülte aksının hemen yanında"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Analog Plak Resmi Site",
+          "url": "https://analogplak.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "2017 kuruluş hikayesi, Kınıklı Caddesi adresi ve analog plak konsepti"
+        },
+        {
+          "title": "Wanderlog Denizli Kahve Seçkisi",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kınıklı’da plak ve kahve kültürü üzerine bağımsız ziyaretçi doğrulaması"
+        }
+      ],
+      "pros": [
+        "Şehirde benzeri olmayan gerçek plak arşivi ve 2017 sürekliliği",
+        "İstikrarlı kahve standardı"
+      ],
+      "cons": [
+        "Sınav ve hafta sonu saatlerinde boş masa bulmak zorlaşabilir"
+      ],
+      "uncertainties": [
+        "Akşamları müzik ses seviyesi çalışma için yüksek kalabilir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-baucup-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Baucup Coffee",
+      "branchName": "Atalar, 885. Sk. no:4/A, 20150 Pamukkale/Denizli, Türkiye",
+      "placeId": "ChIJt5Mg6b0_xxQRw0qAJYWiXm4",
+      "coordinates": {
+        "lat": 37.7724365,
+        "lng": 29.089
+      },
+      "rating": 4.8,
+      "userRatingCount": 112,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.instagram.com/baucupcoffee",
+      "mapsUri": "https://maps.google.com/?cid=7952972684726389443",
+      "recommendedPrimary": [
+        "Cold Brew",
+        "Flat White"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Chemex & Manuel Filtre Demleme",
+          "note": "Çekirdeğin meyvemsi ve floral aromalarını öne çıkaran paylaşım demleme seçeneği.",
+          "proof": "Restoranım + Tratoli Denizli kahve listeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Atalar ara sokağında aydınlık pencere önü tezgâh ve sakin iç masalar",
+        "crowdAndNoise": "Çınar ve Atalar bölgesinden kitap okumak ve çalışmak için gelen düzenli müdavimler",
+        "disadvantage": "Küçük metrekareli butik bir dükkan olduğu için kalabalık gruplara uygun değildir",
+        "transit": "Atalar Mahallesi 885. Sokak No:4/A üzerinde Çınar Meydanı ve Valilik durağından kısa yürüyüşle"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım Atalar İncelemesi",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Atalar’ın erken dönem butik üçüncü nesil kahvecisi, Cold Brew ve sakin atmosfer"
+        },
+        {
+          "title": "Tratoli Denizli Nitelikli Kafe Rehberi",
+          "url": "https://tratoli.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Baucup Coffee Atalar konumu ve kahve kalitesi topluluk doğrulaması"
+        },
+        {
+          "title": "Yandex Harita İşletme Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Atalar 885. Sokak tek şubeli yerel kahve işletmesi onayı"
+        }
+      ],
+      "pros": [
+        "Zincir olmayan gerçek butik üçüncü nesil odak",
+        "Çalışma ve odaklanmaya uygun sessiz doku"
+      ],
+      "cons": [
+        "Büyük gruplar için sınırlı masa kapasitesi"
+      ],
+      "uncertainties": [
+        "Yöresel çekirdek orijinleri dönemsel kavrum stoğuna göre değişir"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-baykus-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Baykuş",
+      "branchName": "Kınıklı, 6015. Sk. no14, 20160 Pamukkale/Denizli, Türkiye",
+      "placeId": "ChIJRz6wZ1I_xxQRtLarDek_NaA",
+      "coordinates": {
+        "lat": 37.746268799999996,
+        "lng": 29.0878956
+      },
+      "rating": 4.4,
+      "userRatingCount": 242,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11544203490023421620",
+      "recommendedPrimary": [
+        "Taze Kavrum Filtre Kahve",
+        "Espresso Tonic"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev İçin Öğütülmüş / Çekirdek Kahve Paketleri",
+          "note": "Farklı yöresel profillerden seçilebilen taze kavrulmuş paket çekirdek.",
+          "proof": "Tecrübelerim + yerel 3. nesil rehberler"
+        }
+      ],
+      "suitability": {
+        "seating": "Kınıklı ara sokak dokusunda sade ve müdavim ağırlıklı iç–dış masalar",
+        "crowdAndNoise": "Süslü büyük kafeler yerine kahve tadına odaklanan müdavimler",
+        "disadvantage": "Güneşli günlerde küçük dış oturma alanı hızlı dolar; tatlı mutfağı kapsamlı değildir",
+        "transit": "Kınıklı 6015. Sokak No:14 üzerinde Fakülte Caddesi’nin bir alt paralelinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Tecrübelerim Denizli Kahve Notları",
+          "url": "https://www.tecrubelerim.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Baykuş Coffee & Roastery filtre kahve ve espresso değerlendirmeleri"
+        },
+        {
+          "title": "Neleri Meşhur Denizli Kafe Rehberi",
+          "url": "https://nelerimeshur.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kınıklı yerel üçüncü nesil kahve ekosistemi incelemesi"
+        }
+      ],
+      "pros": [
+        "Kendi kavrum profilini sunan özgün dükkân",
+        "Sakin sokak konumu ve sade menü"
+      ],
+      "cons": [
+        "Geniş mutfak ve brunch tabağı beklentisine göre sınırlı atıştırmalık"
+      ],
+      "uncertainties": [
+        "Kavurma günlerine göre çekirdek seçkisi güncellenir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-knox-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Knox Coffee",
+      "branchName": "Selçuk Bey, 646. Sk. no:30, 20030 Denizli Merkezefendi/Denizli, Türkiye",
+      "placeId": "ChIJwxd4301BxxQRo_9zqBpvDxQ",
+      "coordinates": {
+        "lat": 37.7919365,
+        "lng": 29.0223524
+      },
+      "rating": 4.6,
+      "userRatingCount": 129,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1445496165695225763",
+      "recommendedPrimary": [
+        "V60 Hand Brew",
+        "KnoX Matcha Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Hindi Fümeli Sandviç & Sıcak Kruvasan",
+          "note": "Kahve eşliğinde gün içi hafif öğün arayanlar için fırın eşlikçileri.",
+          "proof": "knoxcoffee.com.tr resmi menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Yeşil ve bej tonlarda ferah, bilgisayar çalışmasına elverişli modern iç salon",
+        "crowdAndNoise": "Selçukbey ve Servergazi sakinleri tarafından gün boyu çalışma ve buluşma amaçlı tercih edilir",
+        "disadvantage": "Merkez Çınar’dan uzak konumu nedeniyle özel araç veya otobüs gerektirir",
+        "transit": "Selçukbey 646. Sokak (15 Temmuz Şehitler Sokak) No:30/A Evora karşısında"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "KnoX Coffee Resmi Site ve Menü",
+          "url": "https://knoxcoffee.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "V60 Hand Brew, Cold Brew, Matcha serisi ve sandviç menüsü"
+        },
+        {
+          "title": "Denizli Nitelikli Kafe Rehberi",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Selçukbey tek şubeli modern kahve durağı doğrulaması"
+        }
+      ],
+      "pros": [
+        "Batı yakasında güçlü V60 ve matcha seçeneği",
+        "Ferah ve bilgisayar dostu iç tasarım"
+      ],
+      "cons": [
+        "Şehir merkezinin batı ucunda yer alır"
+      ],
+      "uncertainties": [
+        "Hafta sonu öğleden sonra çalışma masaları dolabiliyor"
+      ],
+      "selectionScore": 82,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-garson-sukru",
+      "categoryId": "date",
+      "resolvedName": "Garson Şükrü Aile Restaurant",
+      "branchName": "Gökpınar, Atatürk Blv. No:33, 20100 Merkez/Denizli, Türkiye",
+      "placeId": "ChIJL_cOxBc8xxQRlLAp7ipdwnw",
+      "coordinates": {
+        "lat": 37.7310819,
+        "lng": 29.152643999999995
+      },
+      "rating": 4.4,
+      "userRatingCount": 3679,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.garsonsukru.com/",
+      "mapsUri": "https://maps.google.com/?cid=8989850245150650516",
+      "recommendedPrimary": [
+        "Limonlu Kavurma",
+        "Yaprak Ciğer"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zeytinyağlı Soğuk Meze Dolabı & Yerli Şarap Seçkisi",
+          "note": "Ana yemek öncesi masayı kuran meyhane mezeleri ve Güney/Çal bağlarından kadeh uyumu.",
+          "proof": "garsonsukru.com + Tahsin Duman yazısı"
+        }
+      ],
+      "suitability": {
+        "seating": "Klasik beyaz masa örtülü, mesafeli ve özenli akşam restoranı salonu",
+        "crowdAndNoise": "İş yemekleri, kutlamalar ve akşam rakı-balık/et sofralarıyla rezervasyon yoğunluğu yüksek",
+        "disadvantage": "Denizli’nin üst fiyat segmentindedir ve akşamları rezervasyonsuz masa bulmak zordur",
+        "transit": "Gökpınar Atatürk Bulvarı No:33 üzerinde Antalya yolu çıkışında özel araç ve taksiyle kolay"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Garson Şükrü Resmi Menüsü",
+          "url": "https://garsonsukru.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Limonlu kavurma, yaprak ciğer, nuriş kebap, meze ve Pamukkale şarap listesi"
+        },
+        {
+          "title": "Tahsin Duman Gastronomi Yazısı",
+          "url": "https://tahsinduman.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Denizli’nin simge akşam meyhane kültürü ve yöresel çiğ dolma incelemesi"
+        },
+        {
+          "title": "Enuygun Denizli Lezzet Rehberi",
+          "url": "https://www.enuygun.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Klasik akşam sofrası ve meyhane referansı"
+        }
+      ],
+      "pros": [
+        "Şehirde çiğ dolma ve meyhane disiplinini en istikrarlı yaşatan akşam kurumu",
+        "Geniş yerli şarap kavı"
+      ],
+      "cons": [
+        "Üst fiyat bandı ve merkez dışında taksi/araç gerektiren bulvar konumu"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamları mutlaka önceden masa ayırtmak gerekir"
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-focalina",
+      "categoryId": "date",
+      "resolvedName": "Focalina Cafe & Restaurant",
+      "branchName": "Sırakapılar, Şht. Şükrü Sk., 20100 Denizli Merkezefendi/Denizli, Türkiye",
+      "placeId": "ChIJ89OGGwA_xxQRyBDecup0EaE",
+      "coordinates": {
+        "lat": 37.7793342,
+        "lng": 29.0837996
+      },
+      "rating": 4.7,
+      "userRatingCount": 486,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.focalina.com/",
+      "mapsUri": "https://maps.google.com/?cid=11606186265008804040",
+      "recommendedPrimary": [
+        "El Yapımı İtalyan Makarna Tabakları",
+        "Focaccia Sandviçler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Kruvasan & Kahve Eşleşmesi",
+          "note": "Gündüz buluşmalarından akşam hafif yemeklerine uzanan fırın-kafe çizgisi.",
+          "proof": "Yemeksepeti + dijital.link menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Açık mutfağı görebilen sıcak aydınlatmalı iç salon ve sokak önü masalar",
+        "crowdAndNoise": "Sırakapılar ve Delikliçınar çevresinden sakin buluşmalar ve çiftler",
+        "disadvantage": "Klasik ocakbaşı veya alkollü meyhane düzeni yerine bistro-kafe ağırlıklıdır",
+        "transit": "Sırakapılar Şehit Şükrü Sokak üzerinde Delikliçınar ve Gazi Bulvarı’na yürüme mesafesinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Focalina Dijital Menü",
+          "url": "https://dijital.link/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "İtalyan mutfağı, focaccia ekmekleri ve açık mutfak bistro menüsü"
+        },
+        {
+          "title": "Yemeksepeti Sırakapılar Doğrulaması",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Focaccia, makarna ve fırın ürünleri değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Merkez Sırakapılar’da yürüyerek gidilebilen özenli bistro ortamı",
+        "Fırından taze focaccia hamuru"
+      ],
+      "cons": [
+        "Ağır akşam et sofrası veya meyhane atmosferi arayanlara daha hafif kalır"
+      ],
+      "uncertainties": [
+        "Akşam menüsü mutfak kapanış saatinden önce kontrol edilmelidir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-kalabalik-et-balik",
+      "categoryId": "date",
+      "resolvedName": "Kalabalık -Et -Balık Deniz Ürünleri Restoranı",
+      "branchName": "Selçuk Bey, 658. Sk. No:3 D:1A, 20030 Denizli Merkezefendi/Denizli, Türkiye",
+      "placeId": "ChIJG2I-g0JAxxQRQNEIBLaXLKE",
+      "coordinates": {
+        "lat": 37.7946449,
+        "lng": 29.0273796
+      },
+      "rating": 4.7,
+      "userRatingCount": 461,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11613824347089195328",
+      "recommendedPrimary": [
+        "Izgara Kaya Levreği / Çipura",
+        "Tava veya Izgara Kalamar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Deniz Ürünü Mezeleri",
+          "note": "Balık öncesi masaya gelen taze salata ve sıcak deniz mahsullü başlangıçlar.",
+          "proof": "Restoranım + Yemeksepeti menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Ailelere ve sakin akşam buluşmalarına uygun ferah iç restoran düzeni",
+        "crowdAndNoise": "Merkezefendi kesiminde temiz ve gürültüsüz balık yemek isteyen misafirler",
+        "disadvantage": "Alkolsüz konseptli bir işletmedir ve Salı günleri kapalı olabilir; rakı-balık beklentisine göre tercih edilmelidir",
+        "transit": "Selçuk Bey 658. Sokak No:3/1A üzerinde Adalet–Yenişehir hattına yakın"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım Kalabalık Et & Balık",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Denizli’de deniz ürünleri ve aile sıcaklığında balık restoranı profili"
+        },
+        {
+          "title": "Yemeksepeti Deniz Ürünleri Menüsü",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Izgara çipura, levrek, kalamar ve balık çorbası menü kaydı"
+        }
+      ],
+      "pros": [
+        "Denizli içinde taze mevsim balığı ve yüksek puanlı mutfak hijyeni",
+        "Sakin akşam oturumu"
+      ],
+      "cons": [
+        "Alkolsüz hizmet politikası ve Salı günleri kapalı olma durumu"
+      ],
+      "uncertainties": [
+        "Güncel çalışma günü ve alkol politikası gidiş öncesi telefonla teyit edilmelidir"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-toscana-exclusive",
+      "categoryId": "date",
+      "resolvedName": "Toscana Exclusive",
+      "branchName": "Kınıklı, 6108. Sk. No:14/A, 20160 Pamukkale/Denizli, Türkiye",
+      "placeId": "ChIJr-anJvo_xxQRCeWLBUZjkPY",
+      "coordinates": {
+        "lat": 37.750355,
+        "lng": 29.086463999999996
+      },
+      "rating": 4.4,
+      "userRatingCount": 296,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17766809682368521481",
+      "recommendedPrimary": [
+        "El Yapımı Ravioli / Fettuccine",
+        "Odun Ateşi İtalyan Pizzaları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tiramisu, Panna Cotta & Cannoli",
+          "note": "İtalyan akşam yemeğini kapatan klasik ev yapımı tatlı seçkisi.",
+          "proof": "Restoranım + Migros Yemek menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Kınıklı’nın ara sokağında şık İtalyan bistro masa yerleşimi",
+        "crowdAndNoise": "Akşamları çiftler ve Çamlık–Kınıklı çevresinden sakin yemek buluşmaları",
+        "disadvantage": "Çarşı merkeze uzaktır; yoğun öğrenci saatlerinde çevre sokak parkı daralabilir",
+        "transit": "Kınıklı 6108. Sokak No:14/A üzerinde Çamlık Bulvarı’na yürüme mesafesinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım Toscana Exclusive",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İtalyan mutfağı, ravioli, lazanya, tiramisu ve panna cotta doğrulaması"
+        },
+        {
+          "title": "Migros Yemek Kınıklı",
+          "url": "https://www.migros.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Odun ateşi pizza ve el yapımı makarna menü kayıtları"
+        }
+      ],
+      "pros": [
+        "Pizza yanında güçlü el yapımı makarna ve tatlı menüsü",
+        "Çamlık’ta özenli akşam masası"
+      ],
+      "cons": [
+        "Hafta sonu Kınıklı sokaklarında park yeri aramak gerekebilir"
+      ],
+      "uncertainties": [
+        "Taze günlük makarna ve tatlı çeşitleri mevsime göre değişebilir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-varol-veranda",
+      "categoryId": "kahvalti",
+      "resolvedName": "Varol Veranda",
+      "branchName": "Yenişehir, 2. Sk. No:7, 20040 Denizli Merkezefendi/Denizli, Türkiye",
+      "placeId": "ChIJBbaLkfo_xxQR1rXARJfcszQ",
+      "coordinates": {
+        "lat": 37.7666956,
+        "lng": 29.031001000000003
+      },
+      "rating": 4.7,
+      "userRatingCount": 1106,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://varolveranda.com/",
+      "mapsUri": "https://maps.google.com/?cid=3797621453055112662",
+      "recommendedPrimary": [
+        "Serpme Veranda Kahvaltısı",
+        "Sıcak Pişi & Peynir Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Demleme Çay & Veranda Kahve Seçenekleri",
+          "note": "Kahvaltı sonrasını bahçede uzatmak isteyenler için sıcak çay ve kahve eşlikleri.",
+          "proof": "varolveranda.com + yerel kahvaltı rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Yeşillikler içinde geniş bahçe masaları ve gölgeli veranda düzeni",
+        "crowdAndNoise": "Cumartesi ve Pazar sabahları aileler ve kalabalık arkadaş masalarıyla oldukça yoğun",
+        "disadvantage": "Hafta sonu bahçe masaları hızlı dolduğu için geç saatlerde bekleme süresi uzar",
+        "transit": "Yenişehir 2. Sokak No:7 üzerinde Merkezefendi Yenişehir otobüs duraklarına yakın"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Varol Veranda Resmi Site",
+          "url": "https://varolveranda.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Yenişehir geniş bahçe alanı, serpme kahvaltı ve restoran menüsü"
+        },
+        {
+          "title": "Denizli Kahvaltı Rehberi",
+          "url": "https://www.eniyikahvalti.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yenişehir bahçe kahvaltısı, pişi ve serpme tabak incelemesi"
+        },
+        {
+          "title": "Neleri Meşhur Denizli Dosyası",
+          "url": "https://nelerimeshur.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Denizli’de ferah açık hava kahvaltı noktası doğrulaması"
+        }
+      ],
+      "pros": [
+        "Şehrin merkezinde nadir geniş yeşil bahçe dokusu",
+        "Pişi ve yerel ürünlerle özenli serpme"
+      ],
+      "cons": [
+        "Hafta sonu sabahları yüksek kalabalık ve gürültü"
+      ],
+      "uncertainties": [
+        "Kış ve yağışlı günlerde açık bahçe kullanımı sınırlanır"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-lifano-bakery",
+      "categoryId": "kahvalti",
+      "resolvedName": "Lifano Bakery | | Yeni Nesil Kahvaltı, Tatlı & Sağlıklı Ürünler | Kahve l Sandwich Denizli Kahvaltı Tereyağlı Kurabiye",
+      "branchName": "Siteler, Doğan Demircioğlu Cd. No:43/B, 20160 Pamukkale/Denizli, Türkiye",
+      "placeId": "ChIJKwcgKh4_xxQRvZoe8BvQRw8",
+      "coordinates": {
+        "lat": 37.7505068,
+        "lng": 29.092364
+      },
+      "rating": 4.6,
+      "userRatingCount": 567,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://lifano.co/",
+      "mapsUri": "https://maps.google.com/?cid=1101077452326607549",
+      "recommendedPrimary": [
+        "Ekşi Mayalı Avokadolu Yumurta Tabağı",
+        "Özel Kahvaltı Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tereyağlı Kurabiye & Sağlıklı Granola Kâseleri",
+          "note": "Sabah hafif ya da tatlı bitiriş arayanlar için fırından çıkan özel kurabiye ve kâseler.",
+          "proof": "Yemek.com + İşletme Google kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Doğan Demircioğlu Caddesi üzerinde modern ve ferah fırın-kafe salonu",
+        "crowdAndNoise": "Sabah saatlerinde Çamlık ve Siteler çevresinden modern kahvaltı müdavimleri",
+        "disadvantage": "Geleneksel serpme kahvaltı yerine tek kişilik tabak ve fırın sandviç düzeni sunar",
+        "transit": "Siteler Doğan Demircioğlu Caddesi No:43/B üzerinde Forum Çamlık yakını"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemek.com Denizli Kahvaltı Rehberi",
+          "url": "https://yemek.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çamlık–Siteler hattında modern fırın-kafe kahvaltısı incelemesi"
+        },
+        {
+          "title": "Restoranım Lifano Sayfası",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ekşi mayalı kahvaltı tabakları, sandviçler ve tereyağlı kurabiye onayları"
+        }
+      ],
+      "pros": [
+        "Serpme tekrarına alternatif taze ekmek üstü brunch tabakları",
+        "Özenli unlu mamul kalitesi"
+      ],
+      "cons": [
+        "Grupça klasik serpme masa arayanlara göre daha bireysel tabaklar"
+      ],
+      "uncertainties": [
+        "Öğleye doğru bazı popüler ekşi mayalı ekmek ve kurabiyeler tükenebilir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-samvera-bakery",
+      "categoryId": "kahvalti",
+      "resolvedName": "Samvera Coffee Bakery",
+      "branchName": "Yenişehir Mahallesi 73. Sokak No:7 Denizli/Merkezefendi, Yenişehir, 20200 merkez/Denizli, Türkiye",
+      "placeId": "ChIJ3x2NAe4_xxQReFKobTBa6R4",
+      "coordinates": {
+        "lat": 37.7682691,
+        "lng": 29.036724800000002
+      },
+      "rating": 4.5,
+      "userRatingCount": 84,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2227410654756098680",
+      "recommendedPrimary": [
+        "Samvera Kahvaltı Tabağı",
+        "Peynirli & Poşe Yumurtalı Kruvasan"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günün Tatlı Hamur İşleri & Latte",
+          "note": "Kahvaltı sonrasına yakışan taze fırıncılık tatlıları ve kahve ikilisi.",
+          "proof": "Restoranım + YouTube mekan içerikleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Yenişehir içinde aydınlık, sakin ve ferah modern pastane-kafe oturumu",
+        "crowdAndNoise": "Hafta içi ve hafta sonu sakin sohbetli kahvaltı tercih eden bölge müdavimleri",
+        "disadvantage": "Büyük bahçe yerine modern iç kafe atmosferi sunar; eski merkezden araçla daha rahattır",
+        "transit": "Yenişehir 73. Sokak No:7 üzerinde Yenişehir Yürüyüş Yolu’na yakın"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım Yenişehir Kayıtları",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Samvera Coffee Bakery Yenişehir fırın kahvaltısı profili"
+        },
+        {
+          "title": "Denizli Yerel İçerik Videoları",
+          "url": "https://www.youtube.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze kruvasan tabakları ve Yenişehir kahvaltı ortamı doğrulaması"
+        }
+      ],
+      "pros": [
+        "Gürültüden uzak şık Yenişehir iç sokağı",
+        "Kruvasan ve kahvaltı tabağı dengesi"
+      ],
+      "cons": [
+        "Hafta sonu bahçe masası arayanlar için kapalı alan ağırlıklı"
+      ],
+      "uncertainties": [
+        "Fırın tezgâhından çıkan sıcak ürün saatleri sabah erken dilimde yoğunlaşır"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-fox-croissant",
+      "categoryId": "kahvalti",
+      "resolvedName": "Fox croissant&coffee",
+      "branchName": "Altıntop, 1601. Sk. No:7 D:A, 20040 Denizli Merkezefendi/Denizli, Türkiye",
+      "placeId": "ChIJ3xQxOQA_xxQREPuDDRH3fuo",
+      "coordinates": {
+        "lat": 37.774606999999996,
+        "lng": 29.085609200000004
+      },
+      "rating": 4.9,
+      "userRatingCount": 69,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16897214504553937680",
+      "recommendedPrimary": [
+        "Tuzlu Peynirli & Jambonlu Kruvasan",
+        "Sade Tereyağlı Kruvasan"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Iced Latte & Cortado",
+          "note": "Tatlı ya da tuzlu kruvasan yanında dengeli sütlü kahve eşlikçisi.",
+          "proof": "Yemeksepeti + Migros Yemek Altıntop listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Altıntop içinde butik, hızlı ve sade sabah oturumu",
+        "crowdAndNoise": "Çınar ve Altıntop çalışanları ile kruvasan-kahve kahvaltısı seven gençler",
+        "disadvantage": "Klasik Türk kahvaltısı veya serpme masa sunmaz; kompakt alanında masa sayısı sınırlıdır",
+        "transit": "Altıntop 1601. Sokak No:7/A üzerinde Gazi Bulvarı ve Çınar Meydanı’na yürüme mesafesinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemeksepeti Fox Croissant Altıntop",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tatlı ve tuzlu kruvasan tazeliği ile kahve memnuniyeti"
+        },
+        {
+          "title": "Migros Yemek Merkezefendi",
+          "url": "https://www.migros.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Altıntop şubesi sade, tuzlu ve meyveli kruvasan menüsü"
+        }
+      ],
+      "pros": [
+        "Şehir merkezinde yürüme mesafesinde gerçek katmanlı kruvasan",
+        "Ulaşılabilir fiyat dengesi"
+      ],
+      "cons": [
+        "Serpme veya sıcak omletli klasik kahvaltı sunumu yok"
+      ],
+      "uncertainties": [
+        "Öğleden sonra en çok tercih edilen kruvasan çeşitleri kalmayabilir"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-kocabaylar-kebap",
+      "categoryId": "denemelisin",
+      "resolvedName": "Hüsamettin Usta Kocabaylar Kebap Salonu",
+      "branchName": "Bayramyeri Kaleici, 486. Sk., 20010 Denizli Merkezefendi/Denizli, Türkiye",
+      "placeId": "ChIJ_bfxGLc_xxQRn5Ny8GnV9f4",
+      "coordinates": {
+        "lat": 37.7859527,
+        "lng": 29.083758299999996
+      },
+      "rating": 4.4,
+      "userRatingCount": 2783,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.kebapcihusamettinusta.com/",
+      "mapsUri": "https://maps.google.com/?cid=18371824905910129567",
+      "recommendedPrimary": [
+        "Sakız Odunu Denizli Kebabı (Elle Yenir)"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kaleiçi Pidesi Üzerinde Kuzu Yağlı Alt Pide",
+          "note": "Kuzu etinin kendi yağını çekerek çıtırlaşan taban pidesi ritüelin ayrılmaz parçasıdır.",
+          "proof": "kocabaykebap.com + gastronomi yazarları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî Kaleiçi çarşısı içinde sade, işlevsel klasik esnaf kebapçısı salonu",
+        "crowdAndNoise": "Öğle saatlerinde şehir dışından gelen gurmeler ve çarşı esnafıyla yoğun",
+        "disadvantage": "Günlük hazırlanan kuzu eti öğle sonrasında tükendiğinde kepenk kapatır; salonda çatal-bıçak servisi yoktur",
+        "transit": "Bayramyeri Kaleiçi 486. Sokak üzerinde Bayramyeri Meydanı’na yürüme mesafesinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Kocabaylar Kebap Resmi Site",
+          "url": "https://kocabaykebap.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1945 kuruluşu, sakız ağacı odunu ateşinde süt kuzusu kebap geleneği"
+        },
+        {
+          "title": "Hürriyet & Vedat Milor Denizli Yazıları",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kaleiçi Bayramyeri geleneğinde Hüsamettin Usta Denizli kebabı incelemesi"
+        },
+        {
+          "title": "Tahsin Duman Gastronomi Arşivi",
+          "url": "https://tahsinduman.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Denizli kebabının ustalık ekolü ve et seçimi doğrulaması"
+        }
+      ],
+      "pros": [
+        "1945’ten bu yana kesintisiz aile ve ustalık zinciri",
+        "Gerçek çatal-bıçaksız Bayramyeri geleneği"
+      ],
+      "cons": [
+        "Et bitince erkenden kapanması",
+        "Yağlı kuzu eti yapısı herkese hafif gelmeyebilir"
+      ],
+      "uncertainties": [
+        "Akşam geç saat yerine öğle diliminde gitmek güvence sağlar"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-kebapci-baki",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kebapçı Baki",
+      "branchName": "Eski, Saraylar, Sarayköy Cd. No:15/B, 20100 Denizli Merkezefendi/Denizli, Türkiye",
+      "placeId": "ChIJwwy8JLc_xxQRTmcJC1gS1y8",
+      "coordinates": {
+        "lat": 37.7853223,
+        "lng": 29.083115099999997
+      },
+      "rating": 4.6,
+      "userRatingCount": 2294,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.kebapcibaki.com/",
+      "mapsUri": "https://maps.google.com/?cid=3447244209126991694",
+      "recommendedPrimary": [
+        "Porsiyon Denizli Kebabı (Yağlı / Yağsız Tercihli)"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırınlanmış Kemik İliği & Çıtır Tırnak Pide",
+          "note": "Etle aynı fırından çıkan sıcak Kaleiçi pidesi kebap sofrasının temel eşlikçisidir.",
+          "proof": "kebapcibaki.com + gastronomi portalları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî Saraylar sokaklarında otantik iki katlı esnaf lokantası",
+        "crowdAndNoise": "Öğle kuşağında çarşı esnafı ve çevre illerden gelen ziyaretçilerle tam dolu",
+        "disadvantage": "Sadece kebap ve yanında soğuk söğüş sunar; salata/tatlı çeşitliliği arayanlara tek odaklıdır ve erken saatte et bitebilir",
+        "transit": "Saraylar Mahallesi Sarayköy Caddesi No:15/B Bayramyeri girişinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Kebapçı Baki Resmi Site",
+          "url": "https://kebapcibaki.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1950’lerden kuşaklararası Denizli kebabı geleneği ve pişirme tekniği"
+        },
+        {
+          "title": "Denizli Kebabı Gastronomi Arşivi",
+          "url": "https://denizlikebabi.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Coğrafi işaretli Bayramyeri ustaları arasında tarihsel referans"
+        },
+        {
+          "title": "Milliyet Lezzet Rehberi",
+          "url": "https://www.milliyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Anadolu esnaf lokantaları ve Denizli kebabı dosyası"
+        }
+      ],
+      "pros": [
+        "Yarım asrı aşan ustalık sürekliliği",
+        "İsteğe göre yağlı veya yağsız bölüm seçilebilmesi"
+      ],
+      "cons": [
+        "Öğleden sonra stok bitimiyle kapanması",
+        "Tek kalem menü"
+      ],
+      "uncertainties": [
+        "Hafta sonu öğle vaktinde kısa sıra bekleme ihtimali bulunur"
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-kebapci-dursun",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kebapçı Dursun",
+      "branchName": "Saraylar, 357. Sk. No: 3 D:C, 20010 Denizli Merkezefendi/Denizli, Türkiye",
+      "placeId": "ChIJuQbBMLc_xxQRSvGjW5TjmNM",
+      "coordinates": {
+        "lat": 37.785283299999996,
+        "lng": 29.0828802
+      },
+      "rating": 4.6,
+      "userRatingCount": 3498,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.kebapcidursun.com/",
+      "mapsUri": "https://maps.google.com/?cid=15247186764794949962",
+      "recommendedPrimary": [
+        "Klasik Denizli Kebabı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Kelle & Yağlı Alt Pide",
+          "note": "Sabah–öğle kuşağında kısıtlı sayıda çıkan tandır kelle çeşitliliğiyle bilinir.",
+          "proof": "kebapcidursun.com resmi kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Bayramyeri kebapçılar sokağında iki katlı geleneksel esnaf salonu",
+        "crowdAndNoise": "Yüksek puanı ve merkezi sokağı nedeniyle gün ortasında sürekli canlı",
+        "disadvantage": "Geleneksel esnaf düzeninde garson hızı yoğundur; kuzu yağı kokusuna hassas olanlar yağsız dilim istemelidir",
+        "transit": "Saraylar 357. Sokak No:3/C Bayramyeri Kaleiçi merkezinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Kebapçı Dursun Resmi Site",
+          "url": "https://kebapcidursun.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1982 tarihçesi, 9–12 aylık süt kuzusu ve fırın pişirme detayı"
+        },
+        {
+          "title": "Denizli Kebabı Portalı",
+          "url": "https://denizlikebabi.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bayramyeri kebapçılar sokağının öncü adreslerinden biri olarak tescil"
+        }
+      ],
+      "pros": [
+        "Yumuşak dokulu, siniri ayıklanmış kuzu pişimi",
+        "Bayramyeri’nin tam kalbinde konum"
+      ],
+      "cons": [
+        "Öğle zirvesinde masa devri çok hızlıdır"
+      ],
+      "uncertainties": [
+        "Kelle servisi gün erken dilimlerinde hızlıca tükenebilir"
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-kebapci-ridvan",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kebapçı Rıdvan - Meşhur Denizli Kebabı",
+      "branchName": "Saraylar, 2. Ticari Yol No:13/C, 20200 Merkez/Denizli, Türkiye",
+      "placeId": "ChIJ20RRWMU_xxQRCToQNpt5qiY",
+      "coordinates": {
+        "lat": 37.7841126,
+        "lng": 29.0851586
+      },
+      "rating": 4.8,
+      "userRatingCount": 2941,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.kebapciridvan.com/",
+      "mapsUri": "https://maps.google.com/?cid=2786173027015997961",
+      "recommendedPrimary": [
+        "Karışık Denizli Kebabı Porsiyon"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kiloluk Paket & Orta Kaburga Porsiyon",
+          "note": "Kalabalık sofralar için sıcak pide içinde paket veya kiloluk masa sunumu.",
+          "proof": "kebapciridvan.com + yerel incelemeler"
+        }
+      ],
+      "suitability": {
+        "seating": "2. Ticari Yol üzerinde düzenli, ailelere elverişli ferah kebap salonu",
+        "crowdAndNoise": "Çarşıdaki en yüksek memnuniyetli kebap duraklarından biri olup öğleden akşama kadar hareketlidir",
+        "disadvantage": "Ticari Yol trafiği ve kalabalığı nedeniyle öğle saatlerinde dışarıda kısa bekleme oluşabilir",
+        "transit": "Saraylar Mahallesi 2. Ticari Yol No:13/C üzerinde Delikliçınar ile Bayramyeri arasında"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Kebapçı Rıdvan Resmi Site",
+          "url": "https://kebapciridvan.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Sakız odununda Denizli kebabı ve elle yemek usulü rehberi"
+        },
+        {
+          "title": "Denizli Kebabı Topluluk Arşivi",
+          "url": "https://denizlikebabi.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bayramyeri yüksek puanlı geleneksel kebap salonu doğrulaması"
+        }
+      ],
+      "pros": [
+        "Diğer çarşı dükkanlarına kıyasla biraz daha ferah iç düzen",
+        "Dengeli et–yağ pişimi"
+      ],
+      "cons": [
+        "Ana cadde çevresinde otopark bulmak zor olabilir"
+      ],
+      "uncertainties": [
+        "Akşam saatlerine yaklaşıldığında kuzu bölüm seçimi daralabilir"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-kebapci-halil-albas",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kebapçı Halil Albaş",
+      "branchName": "Kebapçı Halil Albaş Eski Sarayköy Cad. No:3/E Bayramyeri, Merkezefendi, Saraylar, 357. Sk., 20100 Denizli Merkez/Denizli, Türkiye",
+      "placeId": "ChIJxzJpMLc_xxQRfbfkjs4S4ho",
+      "coordinates": {
+        "lat": 37.7852274,
+        "lng": 29.082832099999997
+      },
+      "rating": 4.5,
+      "userRatingCount": 1135,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.kebapcihalil.com/",
+      "mapsUri": "https://maps.google.com/?cid=1937131468092651389",
+      "recommendedPrimary": [
+        "Denizli Kebabı (Orta Karışık)"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bakır Bardakta Köpüklü Ayran & Kaleiçi Pidesi",
+          "note": "Kuzu kebabının yağ dengesini kıran klasik soğuk ayran eşliği.",
+          "proof": "Yerel harita + esnaf kebapçı arşivi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî sokağın içinde mütevazı ve temiz küçük esnaf salonu",
+        "crowdAndNoise": "Turistik turlar yerine doğrudan mahalle ve çarşı esnafının öğle durağı",
+        "disadvantage": "Pazar günleri kapalı olabilir; küçük salonu öğle vaktinde hızlı dolar",
+        "transit": "Saraylar 357. Sokak Eski Sarayköy Caddesi No:3/E Bayramyeri içi"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Denizli Kebabı Usta Dizini",
+          "url": "https://denizlikebabi.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bayramyeri geleneksel kebapçıları arasında ustalık kaydı"
+        },
+        {
+          "title": "Mekan Gurme Çarşı Rehberi",
+          "url": "https://mekangurme.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kuzu eti hafifliği ve tırnak pide eşliği değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Turist kalabalığından görece uzak müdavim çizgisi",
+        "Temiz kuzu aroması"
+      ],
+      "cons": [
+        "Pazar günü kapalı olabilmesi ve sınırlı oturum kapasitesi"
+      ],
+      "uncertainties": [
+        "Hafta sonu ziyaretlerinde Pazar günü çalışma durumu mutlaka kontrol edilmelidir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-meshur-denizli-halk",
+      "categoryId": "denemelisin",
+      "resolvedName": "Meşhur Denizli Kebapçısı",
+      "branchName": "Topraklık, Halk Cd. No:22, 20150 Pamukkale/Denizli, Türkiye",
+      "placeId": "ChIJpfJYhrQ_xxQRkjijwsfNNik",
+      "coordinates": {
+        "lat": 37.7832515,
+        "lng": 29.0898006
+      },
+      "rating": 4.5,
+      "userRatingCount": 2574,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://denizlikebapcisi.wixsite.com/",
+      "mapsUri": "https://maps.google.com/?cid=2969787262145083538",
+      "recommendedPrimary": [
+        "Denizli Kebabı",
+        "Ballı Cevizli Tahinli Pide"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tavas Usulü Tahinli Pide",
+          "note": "Aynı binadaki fırın ekolüyle çıkan bol tahin, tereyağı ve cevizli yöresel tatlı pide imza üründür.",
+          "proof": "ugurpide.com + Meşhur Mekanlar rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Topraklık ana cadde üzerinde aile gruplarına uygun geniş salon",
+        "crowdAndNoise": "Öğle kebabıyla birlikte akşamüstü tahinli pide almaya gelen yerel aileler",
+        "disadvantage": "Bayramyeri’nin minik tek kalem kebapçılarından farklı olarak geniş pide ve ızgara menülü aile restoranıdır",
+        "transit": "Topraklık Mahallesi Halk Caddesi No:22 üzerinde Çınar’dan yürüme veya tek dolmuş mesafesinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Uğur Pide / Halk Cd. Resmi Kayıt",
+          "url": "https://ugurpide.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Topraklık Halk Caddesi No:22 taş fırın tahinli pide ve Denizli kebabı işletmesi"
+        },
+        {
+          "title": "Meşhur Mekanlar Denizli",
+          "url": "https://meshurmekanlar.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Halk Caddesi üzerinde geleneksel Denizli kebabı adresi doğrulaması"
+        }
+      ],
+      "pros": [
+        "Hem Denizli kebabı hem otantik tahinli pideyi bir arada sunması",
+        "Geniş aile sofrasına uygun"
+      ],
+      "cons": [
+        "Kalabalık aile salonu atmosferi butik çarşı esnafı dokusundan farklıdır"
+      ],
+      "uncertainties": [
+        "Tahinli pidenin sıcak çıkması için şerbet/bal opsiyonu sipariş sırasında belirtilmelidir"
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-camlik-denizli-kebapcisi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Çamlık Denizli Kebapçısı | Meşhur Denizli Kebabı - Kuyu Tandır - Tandır Kebabı",
+      "branchName": "Kınıklı, Çamlık Blv. no:62a, 20160 Pamukkale/Denizli, Türkiye",
+      "placeId": "ChIJI0PaoCI_xxQRjPmAB53B8Ys",
+      "coordinates": {
+        "lat": 37.747496999999996,
+        "lng": 29.086429
+      },
+      "rating": 4.4,
+      "userRatingCount": 2798,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.camlikdenizlikebapcisi.com/",
+      "mapsUri": "https://maps.google.com/?cid=10084053920839170444",
+      "recommendedPrimary": [
+        "Kuyu Tandır Denizli Kebabı",
+        "Leblebi Çorbası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yöresel Keşkek & Çamlık Fırın Lezzetleri",
+          "note": "Yalnızca kebapla sınırlı kalmayıp yöre mutfağından çorba ve keşkek deneyimi sunar.",
+          "proof": "Denizli Muhabir + işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Çamlık Bulvarı üzerinde yüksek tavanlı, geniş aile ve misafir ağırlama salonu",
+        "crowdAndNoise": "Pamukkale–Kınıklı bölgesinden aile yemekleri ve şehir dışından misafir ağırlamaları",
+        "disadvantage": "Bayramyeri’ndeki tarihî esnaf ocaklarına kıyasla daha modern ve kalabalık restoran ölçeğindedir",
+        "transit": "Kınıklı Çamlık Bulvarı No:62A üzerinde Çamlık Koruluğu’na yakın merkezi güzergâhta"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Denizli Muhabir Gastronomi Dosyası",
+          "url": "https://www.denizlimuhabir.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çamlık Bulvarı’nda leblebi çorbası, keşkek ve kuyu tandır Denizli kebabı"
+        },
+        {
+          "title": "Restoranım Çamlık Değerlendirmeleri",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kıvırcık kuzu tandır ve aile salonu geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Çamlık çevresinde ulaşımı çok kolay",
+        "Leblebi çorbası ve keşkek gibi nadir yöre yemekleri"
+      ],
+      "cons": [
+        "Bayramyeri’nin küçük tarihî çarşı dokusu yerine büyük salon atmosferi"
+      ],
+      "uncertainties": [
+        "Hafta sonu öğlen gruplar yoğun olabileceği için masa durumu sorulabilir"
+      ],
+      "selectionScore": 76,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "dnz-menekse-et",
+      "categoryId": "denemelisin",
+      "resolvedName": "MENEKŞE ET RESTAURANT",
+      "branchName": "Mahallesi, Merkez Efendi, 29 Ekim Blv. No:5 D:1, 20010 Denizli Merkez/Denizli, Türkiye",
+      "placeId": "ChIJWQo7SaI_xxQRuOeAwnUeSeA",
+      "coordinates": {
+        "lat": 37.7793579,
+        "lng": 29.0716599
+      },
+      "rating": 4.5,
+      "userRatingCount": 444,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16161482228918970296",
+      "recommendedPrimary": [
+        "Tartılı Seçme Kuzu Pirzola / Şiş",
+        "Beyti Kebap"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Açık Büfe Salata Barı & İkram Dibek Kahvesi",
+          "note": "Masaya eşlik eden mezeler ve yemek kapanışında ikram edilen geleneksel dibek kahvesi.",
+          "proof": "Yemeksepeti + Wanderlog incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "29 Ekim Bulvarı üzerinde kalabalık aile gruplarına uygun geniş ve alkolsüz salon",
+        "crowdAndNoise": "Akşamları et yemek isteyen Denizlili ailelerle dolu ve hareketli",
+        "disadvantage": "Alkolsüz bir kasap-restorandır; akşam zirvesinde ızgara çıkış süresi ve servis temposu yoğunluğa göre uzayabilir",
+        "transit": "Merkezefendi Mahallesi 29 Ekim Bulvarı No:5/1 üzerinde şehir içi ana bulvar hattında"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Wanderlog Menekşe Et İncelemesi",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Alkolsüz aile işletmesi, kuzu şiş ve yemek sonu dibek kahvesi notları"
+        },
+        {
+          "title": "Yemeksepeti Merkezefendi Menüsü",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Pirzola, beyti, köfte ve açık büfe meze eşlikleri"
+        }
+      ],
+      "pros": [
+        "Etinizi vitrinden görüp seçebilme güveni",
+        "Fiyat–performans dengesi ve taze yan mezeler"
+      ],
+      "cons": [
+        "Yoğun akşam saatlerinde gürültü ve servis beklemesi yaşanabiliyor"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşam masaları için erken varmak avantaj sağlar"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    }
+  ]
+}

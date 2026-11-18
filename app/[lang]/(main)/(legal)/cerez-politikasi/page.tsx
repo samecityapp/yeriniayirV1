@@ -67,12 +67,12 @@ export default function CerezPolitikasiPage() {
           </table>
         </div>
         <p className="text-sm italic text-gray-500">
-          Not: Detaylı çerez listesi ve yönetim seçenekleri için sitemizin alt kısmında yer alan "Çerez Ayarları" panelini kullanabilirsiniz.
+          Not: Detaylı çerez listesi ve yönetim seçenekleri için sitemizin alt kısmında yer alan &quot;Çerez Ayarları&quot; panelini kullanabilirsiniz.
         </p>
 
         <h3 className="text-xl font-bold text-gray-900 mt-6 mb-3">4. Onay Yönetimi ve Geri Alma</h3>
         <p>
-          Analitik/pazarlama çerezleri varsayılan olarak kapalı sunulmaktadır; Kullanıcı açıkça seçerek bunları aktif hale getirebilir. Onayınızı dilediğiniz an geri almak veya değiştirmek için <strong>"Çerez Ayarları"</strong> panelini kullanabilirsiniz.
+          Analitik/pazarlama çerezleri varsayılan olarak kapalı sunulmaktadır; Kullanıcı açıkça seçerek bunları aktif hale getirebilir. Onayınızı dilediğiniz an geri almak veya değiştirmek için <strong>&quot;Çerez Ayarları&quot;</strong> panelini kullanabilirsiniz.
         </p>
 
         <h3 className="text-xl font-bold text-gray-900 mt-6 mb-3">5. Tarayıcı Üzerinden Yönetim</h3>

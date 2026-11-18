@@ -1,0 +1,2362 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "balikesir-ayvalik-merkez",
+  "displayName": "Ayvalık Merkez, Balıkesir",
+  "verifiedAt": "2026-11-17T21:32:05.802Z",
+  "selectedCount": 33,
+  "rejectedControls": [
+    {
+      "id": "ctrl-ayvalik-burgerking-chain",
+      "resolvedName": "Burger King - Kırlangıç Avm",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ayvalik-dominos-chain",
+      "resolvedName": "Domino's Pizza Ayvalık",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ayvalik-pasaport-chain",
+      "resolvedName": "Pasaport Pizza Ayvalık",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ayvalik-terrapizza-chain",
+      "resolvedName": "Terra Pizza - Ayvalık Kırlangıç AVM",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ayvalik-cajun-chain",
+      "resolvedName": "Cajun Corner Balıkesir Ayvalık",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ayvalik-boluluhasan-chain",
+      "resolvedName": "Bolulu Hasan Usta Ayvalık",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ayvalik-pizzatomato-chain",
+      "resolvedName": "Pizza Tomato Ayvalık",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ayvalik-unclespizzahouse-chain",
+      "resolvedName": "Uncle's Pizza House",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ayvalik-tatlipenguen-chain",
+      "resolvedName": "Tatlı Penguen Pastahaneleri",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ayvalik-drkolcak-chain",
+      "resolvedName": "DR KOLÇAK fırın",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-ayvalik-macaroncikolata-noncoffee",
+      "resolvedName": "Macaron Çikolata Kahve",
+      "reason": "kahve_category_not_coffee_specialist:chocolate_shop"
+    },
+    {
+      "id": "ctrl-ayvalik-out-kucukkoy-kahve",
+      "resolvedName": "Küçük Kahve Küçükköy",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Fevzipaşa/Fevzipasa/Fevzi Paşa/Vehbibey/Vehbi Bey/Hayrettinpaşa/Hayrettinpasa/Macaron/Gazi Kemal Paşa/Gazi Kemal Pasa/Gazikemalpaşa/Zekibey/Sakarya/İsmetpaşa/Ismetpasa/Hamdibey/Kazım Karabekir/Kemalpaşa/Sefa Çamlık/Sefacamlik/Ali Çetinkaya/150 Evler/Yüzelli Evler/Yenimahalle, adres: Küçükköy, caddesi no:26/A, 10410 Ayvalık/Balıkesir)"
+    },
+    {
+      "id": "ctrl-ayvalik-out-kucukkoy-somun",
+      "resolvedName": "Somun Breakfast Club",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Fevzipaşa/Fevzipasa/Fevzi Paşa/Vehbibey/Vehbi Bey/Hayrettinpaşa/Hayrettinpasa/Macaron/Gazi Kemal Paşa/Gazi Kemal Pasa/Gazikemalpaşa/Zekibey/Sakarya/İsmetpaşa/Ismetpasa/Hamdibey/Kazım Karabekir/Kemalpaşa/Sefa Çamlık/Sefacamlik/Ali Çetinkaya/150 Evler/Yüzelli Evler/Yenimahalle, adres: Küçükköy, Küçükköy Caddesi No 26/A, 10410 Ayvalık/Balıkesir)"
+    },
+    {
+      "id": "ctrl-ayvalik-out-cunda-farina",
+      "resolvedName": "Farina Cunda",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Fevzipaşa/Fevzipasa/Fevzi Paşa/Vehbibey/Vehbi Bey/Hayrettinpaşa/Hayrettinpasa/Macaron/Gazi Kemal Paşa/Gazi Kemal Pasa/Gazikemalpaşa/Zekibey/Sakarya/İsmetpaşa/Ismetpasa/Hamdibey/Kazım Karabekir/Kemalpaşa/Sefa Çamlık/Sefacamlik/Ali Çetinkaya/150 Evler/Yüzelli Evler/Yenimahalle, adres: Namık Kemal, 15 Eylül Cd. No: 27, 10400 Ayvalık/Balıkesir)"
+    },
+    {
+      "id": "ctrl-ayvalik-low-payeli",
+      "resolvedName": "PAYELİ RESTAURANT",
+      "reason": "below_quality_threshold:★3.9(782)"
+    },
+    {
+      "id": "ctrl-ayvalik-low-fermenta",
+      "resolvedName": "FERMENTA PİZZA AYVALIK",
+      "reason": "below_quality_threshold:★4.3(191)"
+    },
+    {
+      "id": "ctrl-ayvalik-low-morsalkim",
+      "resolvedName": "Mor Salkım Cafe",
+      "reason": "below_quality_threshold:★4.3(998)"
+    },
+    {
+      "id": "ctrl-ayvalik-low-guler",
+      "resolvedName": "Güler Tatlıhanesi",
+      "reason": "below_quality_threshold:★4.1(3610)"
+    },
+    {
+      "id": "ctrl-ayvalik-low-imren",
+      "resolvedName": "İmren Pastanesi",
+      "reason": "below_quality_threshold:★3.8(625)"
+    },
+    {
+      "id": "ctrl-ayvalik-low-kepce",
+      "resolvedName": "Kepçe Lokantası",
+      "reason": "below_quality_threshold:★3.9(529)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "ayvalik-pizzeria-pazza",
+      "categoryId": "pizza",
+      "resolvedName": "Pizzeria Pazza",
+      "branchName": "Fevzipaşa - Vehbibey, 10033 sokak No:6, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJTc-vU5d3uhQRG08ZS_1iN0E",
+      "coordinates": {
+        "lat": 39.3175339,
+        "lng": 26.693582799999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 913,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/pazza.ayvalik?igsh=djVtbmk5aHF1bjBx&utm_source=qr",
+      "mapsUri": "https://maps.google.com/?cid=4699333576210599707",
+      "recommendedPrimary": [
+        "Margherita & Burrata Pizza",
+        "Ayvalık Lorlu & Kekikli Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırınlanmış Sarımsaklı Zeytin Ezmeli Ekmek",
+          "note": "Pizza öncesi paylaşımlık olarak sıcak taş fırından çıkan sade başlangıç seçeneği.",
+          "proof": "Restoranım ve yemek rehberi kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî taş sokak önü masaları ve küçük iç salon oturumu",
+        "crowdAndNoise": "Akşam yemeklerinde özellikle hafta sonları yüksek talep görür",
+        "disadvantage": "Dar ara sokakta yer aldığı için yaz akşamlarında masa bekleme oluşabiliyor",
+        "transit": "Barbaros Caddesi 10033. Sokak No:6, Saatli Cami ve çarşıya yürüme mesafesinde"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Ayvalık Gastronomi Rehberi & Menü",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Taş fırın Napoli hamuru ve lorlu pizza reçetesi doğrulaması"
+        },
+        {
+          "title": "Bölge Topluluk İncelemeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur kıvamı, servis tutarlılığı ve yüksek puan istikrarı"
+        }
+      ],
+      "pros": [
+        "Yüksek taş fırın hamur tutarlılığı",
+        "Yerel ürünlerle özgünleşen menü"
+      ],
+      "cons": [
+        "Yoğun akşam saatlerinde sokak masalarının çabuk dolması"
+      ],
+      "uncertainties": [
+        "Sezon dışında haftalık kapanış günü değişkenlik gösterebilir"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-olivento-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "Olivento Pizza",
+      "branchName": "Fevzipaşa - Vehbibey, Barbaros Cd. No:226, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJRYRxMQB3uhQRk_Q76XiVteE",
+      "coordinates": {
+        "lat": 39.3180142,
+        "lng": 26.693387299999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 96,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16264069975860049043",
+      "recommendedPrimary": [
+        "Pastırmalı & Tulum Peynirli Pizza",
+        "Üç-Dört Peynirli Ekşi Maya Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çikolata Soslu Taze Churros",
+          "note": "Pizza sonrası sıcak ve çıtır tatlı kapanışı olarak işletmenin imzasını taşır.",
+          "proof": "İşletme menüsü ve yerel sipariş kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Barbaros Caddesi cepheli mütevazı iç ve dış masa düzeni",
+        "crowdAndNoise": "Akşam saatlerinde hem yerinde oturanlar hem paket siparişleri görülür",
+        "disadvantage": "Masa sayısı az olduğundan kalabalık gruplar için yer bulmak zorlaşabilir",
+        "transit": "Barbaros Cd. No:226, Fevzipaşa-Vehbibey yürüyüş hattı üzerinde"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Yerel Menü ve Sipariş Kayıtları",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ekşi maya hamur ve yerel peynirli pizza çeşitleri"
+        },
+        {
+          "title": "Ayvalık Kullanıcı Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "San Marzano sos, hamur hafifliği ve taze churros teyidi"
+        }
+      ],
+      "pros": [
+        "Ekşi maya hamur ve kaliteli sos dengesi",
+        "Yerel peynirli özgün kombinasyonlar"
+      ],
+      "cons": [
+        "Sınırlı iç oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Yoğun saatlerde ekşi maya hamurun erken tükenme olasılığı"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-kona-mutfak",
+      "categoryId": "pizza",
+      "resolvedName": "Kona Mutfak",
+      "branchName": "Hamdibey, 13013. Sokak No:3, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJ90cmBtp3uhQRkViAdATaoGI",
+      "coordinates": {
+        "lat": 39.3175963,
+        "lng": 26.697034199999997
+      },
+      "rating": 5,
+      "userRatingCount": 257,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.konamutfak.com/",
+      "mapsUri": "https://maps.google.com/?cid=7106919924659935377",
+      "recommendedPrimary": [
+        "Funghi Mantarlı Napoli Pizza",
+        "Klasik Margherita Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kona El Yapımı Çikolata Koleksiyonu",
+          "note": "Aynı mutfakta küçük partiler hâlinde hazırlanan yerel esinli butik çikolatalar.",
+          "proof": "İşletme sitesi ve misafir değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Hamdibey ara sokağında sıcak ve sakin atölye-mutfak masaları",
+        "crowdAndNoise": "Rezervasyon ve günlük üretim temposuna bağlı sakin akış",
+        "disadvantage": "Günlük hamur stoğu sınırlı olduğu için akşam saatlerinde erken tükenebilir",
+        "transit": "Hamdibey Mah., 13013. Sokak No:3, Ayvalık çarşısına kısa yürüyüş mesafesinde"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "İşletme Resmi Web Sitesi",
+          "url": "https://konamutfak.com/",
+          "date": "2026-11-18",
+          "kind": "operator",
+          "note": "Kuruluş hikayesi, ekşi maya pizza ve Kona Chocolatier menüsü"
+        },
+        {
+          "title": "Gastronomi Rehberi & Misafir Notları",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Hamdibey adresi, hamur kalitesi ve mevsimsel reçeteler"
+        }
+      ],
+      "pros": [
+        "Gıda mühendisi disiplininde yalın malzeme seçkisi",
+        "Hamur ve tatlının aynı atölyeden çıkması"
+      ],
+      "cons": [
+        "Sezon dışındaki dönemlerde gün ve saat kısıtı"
+      ],
+      "uncertainties": [
+        "Mevsimsel olarak açılış günlerinde güncelleme yapılabiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-tino-ristorante",
+      "categoryId": "pizza",
+      "resolvedName": "Tino Ristorante Pizzeria",
+      "branchName": "Cumhuriyet Cd. 2. Sk. 3-1, Fevzipaşa-Vehbibey No: 6, İsmetpaşa, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJn8E1rlh3uhQRNeEoXJsLOh8",
+      "coordinates": {
+        "lat": 39.3197499,
+        "lng": 26.693211599999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 558,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.tinoristorante.com/",
+      "mapsUri": "https://maps.google.com/?cid=2250123725719003445",
+      "recommendedPrimary": [
+        "Pizza Arrosto (Antrikotlu)",
+        "Diavola & Burrata Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Yapımı Taze Makarna & İtalyan Peynir Tabağı",
+          "note": "Pizza dışında akşam masalarında el yapımı soslu makarnalar sıkça tercih edilir.",
+          "proof": "Restoran menüsü ve bölge incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "İçeride şık masa düzeni ve avlu-sokak kenarı oturma alanı",
+        "crowdAndNoise": "Akşam yemeklerinde düzenli çift ve grup akışı",
+        "disadvantage": "Tam servis İtalyan restoranı olduğundan sokak pizzacılarına göre daha üst fiyat segmentindedir",
+        "transit": "İsmetpaşa / Fevzipaşa-Vehbibey sınırı, Cumhuriyet Cd. 2. Sk. üzerinde"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "İşletme Resmi Menü",
+          "url": "https://tinoristorante.com/",
+          "date": "2026-11-18",
+          "kind": "operator",
+          "note": "Pizza Arrosto, taze makarna ve el yapımı peynir menüsü"
+        },
+        {
+          "title": "Ayvalık İnceleme Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Atmosfer, makarna ve Napoli pizza memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Restoran konforunda İtalyan mutfağı",
+        "Kendi üretimi peynir ve makarna desteği"
+      ],
+      "cons": [
+        "Akşam saatlerinde önceden masa ayırtmak gerekebiliyor"
+      ],
+      "uncertainties": [
+        "Yüksek sezonda bahçe masaları hızla doluyor"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-fox-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Fox Burger & Hotdog",
+      "branchName": "Sakarya, 26085 Sk No:4, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJqVvT-l13uhQRvBSR0_eweBc",
+      "coordinates": {
+        "lat": 39.3216397,
+        "lng": 26.6941986
+      },
+      "rating": 4.8,
+      "userRatingCount": 245,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.foxburger.net/",
+      "mapsUri": "https://maps.google.com/?cid=1691296238530532540",
+      "recommendedPrimary": [
+        "Double Fox Burger",
+        "Karamelize Soğanlı Hotdog"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Soslu Kızarmış Patates",
+          "note": "Burger menülerine eşlik eden çıtır patates ve ev yapımı dip soslar.",
+          "proof": "İşletme sitesi ve misafir değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük dükkân içi tezgahlar ve sakin sokak masaları",
+        "crowdAndNoise": "Akşamları hem yerel müdavim hem paket siparişi trafiği yoğundur",
+        "disadvantage": "Oturma alanı dar olduğundan yüksek saatlerde kısa bekleme yaşanabilir",
+        "transit": "Sakarya Mah., 26085. Sk. No:4, Cumhuriyet Caddesi sahil hattının iç paralelinde"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "İşletme Resmi Web Sitesi",
+          "url": "https://foxburger.net/",
+          "date": "2026-11-18",
+          "kind": "operator",
+          "note": "Burger ve hotdog çeşitleri ile adres bilgisi"
+        },
+        {
+          "title": "Yerel Topluluk Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Et pişirme derecesi, sos kalitesi ve yüksek puan istikrarı"
+        }
+      ],
+      "pros": [
+        "Yüksek müdavim puanı ve net burger odağı",
+        "Hem burger hem kaliteli hotdog alternatifi"
+      ],
+      "cons": [
+        "Küçük oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "Paket yoğunluğunda sıcak servis süresi uzayabiliyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-ati-co-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Ati&Co Burger",
+      "branchName": "Fevzipaşa - Vehbibey, 13 Nisan Cd. 14. Sk. No:47/1, 10000 Ayvalık/Balıkesir",
+      "placeId": "ChIJYV3yZep3uhQRIt7QLP2AARM",
+      "coordinates": {
+        "lat": 39.3181297,
+        "lng": 26.694456
+      },
+      "rating": 4.6,
+      "userRatingCount": 853,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1369517586564308514",
+      "recommendedPrimary": [
+        "Trüf Burger",
+        "Bergama Tulumlu & Chili Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Trüf Soslu & Parmesanlı Patates",
+          "note": "Burgerlerin yanında masaya paylaşımlık olarak en sık söylenen yan ürün.",
+          "proof": "Bölge menü ve rehber kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Cadde önü kaldırım masaları ve samimi iç salon düzeni",
+        "crowdAndNoise": "Özellikle yaz akşamları genç gruplar ve müdavimlerle doludur",
+        "disadvantage": "Sokak önü masalarda araç trafiğine yakın konumda kalınabiliyor",
+        "transit": "Fevzipaşa-Vehbibey, 13 Nisan Cd. 14. Sk. No:47/1"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Dijital Menü & Ayvalık Rehberi",
+          "url": "https://ayvalikrehberi.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bergama tulumlu, trüflü burger ve yan ürünler"
+        },
+        {
+          "title": "Restoran Değerlendirmeleri",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "800+ konukta süregelen köfte ve patates memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Yüksek değerlendirme adedinde kanıtlı istikrar",
+        "Yerel Bergama tulumlu reçeteler"
+      ],
+      "cons": [
+        "Akşam servisinde dar sokakta bekleme ihtimali"
+      ],
+      "uncertainties": [
+        "Dönemsel şef özel burgerleri menüde değişebiliyor"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-ediz-burgers",
+      "categoryId": "hamburger",
+      "resolvedName": "Ediz’s Burgers",
+      "branchName": "Gazi Kemal Paşa, Mustafa Kemal Atatürk Blv 99/19, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJ65JMWQB3uhQREi8gSAueyS8",
+      "coordinates": {
+        "lat": 39.312785399999996,
+        "lng": 26.6873896
+      },
+      "rating": 4.4,
+      "userRatingCount": 71,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3443457161393352466",
+      "recommendedPrimary": [
+        "Oklahoma Smash Burger",
+        "Barcelona Dana Kaburga Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sarımsaklı & Baharatlı Patates Kızartması",
+          "note": "Ev yapımı burger soslarıyla sunulan günlük kesim çıtır eşlikçi.",
+          "proof": "Gastronomi incelemesi ve mekan kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Açık hava kıyı terası ve modern bistro masaları",
+        "crowdAndNoise": "Akşamüstü gün batımı ve akşam yemeği saatlerinde canlıdır",
+        "disadvantage": "Girdi maliyetleri nedeniyle merkezdeki hızlı büfelere göre üst fiyat dilimindedir",
+        "transit": "Gazi Kemal Paşa, Mustafa Kemal Atatürk Blv. No:99/19, Setur Marina kıyı yürüyüş hattında"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Harbi Yiyorum Gastronomi İncelemesi",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kendi brioche ekmeği, kaburga smash eti ve marina bistrosu"
+        },
+        {
+          "title": "Yerel Rehber & Misafir Notları",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sos çeşitliliği ve et lezzeti üzerine olumlu geri dönüşler"
+        }
+      ],
+      "pros": [
+        "Günlük kendi ekmeği ve kaburga smash köfte",
+        "Marina yanında ferah açık oturum"
+      ],
+      "cons": [
+        "Üst fiyat segmentinde yer alması"
+      ],
+      "uncertainties": [
+        "Sezon dışında akşam kapanış saatleri erkenleşebiliyor"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-oloa-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Oloa Coffee",
+      "branchName": "Vehbibey, Fevzipaşa - Vehbibey, Perşembe Sk No:10/A, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJI4EKSDB3uhQRUnlUQr_3gjs",
+      "coordinates": {
+        "lat": 39.317238599999996,
+        "lng": 26.694295399999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 440,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://oloacoffee.com/",
+      "mapsUri": "https://maps.google.com/?cid=4288262196033780050",
+      "recommendedPrimary": [
+        "Flat White & V60 Filtre Kahve",
+        "Iced Matcha Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Ev Yapımı Kurabiye & Kek Dilimi",
+          "note": "Espresso barının yanında sade fırınlanmış tatlı eşlikçisi olarak sunuluyor.",
+          "proof": "İşletme web sitesi ve konuk notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş duvarlı sanatsal iç mekan ve ara sokak tabureleri",
+        "crowdAndNoise": "Sabah ve öğleden sonra sakin çalışma/kahve molası arayanlarla canlıdır",
+        "disadvantage": "İç oturma alanı küçük olduğundan kalabalık gruplara uygun değildir",
+        "transit": "Fevzipaşa-Vehbibey, Perşembe Sokak No:10/A"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "İşletme Resmi Web Sitesi",
+          "url": "https://oloacoffee.com/",
+          "date": "2026-11-18",
+          "kind": "operator",
+          "note": "Espresso barı, V60 demleme ve matcha seçenekleri"
+        },
+        {
+          "title": "Ayvalık Kahve Rehberi & Yandex",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihî sokak atmosferi ve çekirdek kalitesi teyidi"
+        }
+      ],
+      "pros": [
+        "Yüksek konuk puanı ve net barista odağı",
+        "İyi matcha ve nitelikli demleme dengesi"
+      ],
+      "cons": [
+        "Sınırlı masa kapasitesi"
+      ],
+      "uncertainties": [
+        "Dönemsel çekirdek değişimleri tat profilini çeşitlendiriyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-declan-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Declan Coffee",
+      "branchName": "Hayrettinpaşa, Barbaros Cd. No:88, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJ7YZ4xbp3uhQRfuAoQ9jFpXc",
+      "coordinates": {
+        "lat": 39.3143344,
+        "lng": 26.691970599999998
+      },
+      "rating": 5,
+      "userRatingCount": 199,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8621514594301042814",
+      "recommendedPrimary": [
+        "Iced Americano",
+        "Cortado & Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Çay Saati Keki & Taze Tatlılar",
+          "note": "Kahve eşliğinde sunulan sade ev yapımı tatlı dilimleri.",
+          "proof": "Ayvalık Macaron yerel rehberi ve konuk geri bildirimleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Macaron sokak önü masaları ve sakin iç mekan köşeleri",
+        "crowdAndNoise": "Gün boyu dingin, kitap okuyan ve gezi molası veren konuklar",
+        "disadvantage": "Gündüz odaklı olduğundan akşam geç saatlerde kapalıdır",
+        "transit": "Hayrettinpaşa Mah., Barbaros Cd. No:88, Macaron ekseni üzerinde"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Macaron Bölge İşletme Kayıtları",
+          "url": "https://serviskayitlistesi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Barbaros Caddesi konumu ve nitelikli kahve hizmeti"
+        },
+        {
+          "title": "Yerel Kahve Seçkisi",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahve lezzet istikrarı ve samimi servis notları"
+        }
+      ],
+      "pros": [
+        "Macaron yürüyüş rotasının tam kalbinde sakin mola",
+        "Çok yüksek müşteri memnuniyeti"
+      ],
+      "cons": [
+        "Akşam geç servis bulunmaması"
+      ],
+      "uncertainties": [
+        "Hafta sonları sokak masaları hızla dolabiliyor"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-paleo-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Paleo Coffee",
+      "branchName": "Zekibey, 33003 sk no 1/A, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJVciuyed3uhQRNeqGogIg68s",
+      "coordinates": {
+        "lat": 39.3159108,
+        "lng": 26.6957316
+      },
+      "rating": 4.8,
+      "userRatingCount": 256,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/paleocoffeeayvalik/",
+      "mapsUri": "https://maps.google.com/?cid=14693873404915149365",
+      "recommendedPrimary": [
+        "Flat White & Pour-Over Kahve",
+        "Soğuk Demleme Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ekşi Mayalı Kruvasan & Granola Kâsesi",
+          "note": "Sabah ve öğleden sonra kahvelerinin yanında taze ekşi mayalı hamur işleri ve bitkisel kâseler sunulur.",
+          "proof": "Ayvalık kahve rehberi ve GrabLocals incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaç gölgeli taş sokak önü masaları ve aydınlık iç oturum",
+        "crowdAndNoise": "Sabah saatlerinden öğleden sonraya kadar sürekli hareketli",
+        "disadvantage": "Popüler kahvaltı saatlerinde dış masalarda yer bulmak zorlaşabiliyor",
+        "transit": "Zekibey Mah., 33003. Sk. No:1/A, Şeytanın Kahvesi’ne birkaç adım mesafede"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Gezgin Kahve Rehberi",
+          "url": "https://journavel.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çınar altı konumu ve Ayvalık üçüncü dalga seçkisi"
+        },
+        {
+          "title": "GrabLocals & Konuk Notları",
+          "url": "https://grablocals.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Nitelikli kahve, ekşi maya kruvasan ve bitkisel menü"
+        }
+      ],
+      "pros": [
+        "Gölgeli sokak oturumu ve ekşi maya hamur işleri",
+        "Bitkisel süt seçenekleri ve temiz çekirdek profili"
+      ],
+      "cons": [
+        "Öğle öncesi sokak oturumunun hızlı dolması"
+      ],
+      "uncertainties": [
+        "Sezonluk kruvasan ve fırıncılık üretimi gün içinde tükenebiliyor"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-crow-coffee-roastery",
+      "categoryId": "kahve",
+      "resolvedName": "Crow Coffee Roastery",
+      "branchName": "Sakarya, Cumhuriyet Cd. No:218, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJN-jq0UJ3uhQRKfuMbTI_8ew",
+      "coordinates": {
+        "lat": 39.3240763,
+        "lng": 26.6954189
+      },
+      "rating": 4.7,
+      "userRatingCount": 291,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://crowcoffee.co/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=2706923289025300211",
+      "mapsUri": "https://maps.google.com/?cid=17073497148157131561",
+      "recommendedPrimary": [
+        "Pour Over Single Origin Kahve",
+        "Espresso Bazlı Sütlü Kahveler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Paketli Tek Yöre Kavrum Çekirdekler",
+          "note": "Kendi kavurma atölyesinden çıkan haftalık çekirdekleri ev demlemesi için temin etmek mümkün.",
+          "proof": "Crow Coffee Roastery ve gezi rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Cadde cepheli modern roastery barı ve bahçe-iç mekan oturumu",
+        "crowdAndNoise": "Kahve tutkunları ve düzenli yerel müdavimler",
+        "disadvantage": "Eski çarşı ve Macaron ara sokaklarına göre Cumhuriyet Caddesi kuzey aksında kalır",
+        "transit": "Sakarya Mah., Cumhuriyet Cd. No:218"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "İşletme Resmi Web Sitesi",
+          "url": "https://crowcoffee.co/",
+          "date": "2026-11-18",
+          "kind": "operator",
+          "note": "Kendi çekirdek kavurumu ve tek köken kahve menüsü"
+        },
+        {
+          "title": "Journavel Ayvalık Seçkisi",
+          "url": "https://journavel.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ayvalık’ın öncü nitelikli kahve kavurucularından biri olarak doğrulama"
+        }
+      ],
+      "pros": [
+        "Kendi kavrum atölyesine sahip tek Ayvalık roastery’si",
+        "Geniş çekirdek ve demleme çeşitliliği"
+      ],
+      "cons": [
+        "Ana cadde üzerinde araç trafiğine yakın cephe"
+      ],
+      "uncertainties": [
+        "Yeni mikro lot kavrumları haftalık olarak menüyü yeniliyor"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-klan-bistro",
+      "categoryId": "date",
+      "resolvedName": "Klan",
+      "branchName": "Gazi Kemal Paşa, Barbaros Cd. No:37, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJAzV_tDt3uhQR93xcoUdrhco",
+      "coordinates": {
+        "lat": 39.3137755,
+        "lng": 26.6912056
+      },
+      "rating": 4.9,
+      "userRatingCount": 175,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14593188122958003447",
+      "recommendedPrimary": [
+        "İmza Kokteyller & Başlangıç Tabağı",
+        "Şarap Eşlikli Peynir & Atıştırmalıklar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Akşam Müzik Seçkisi & Kokteyl Eşleşmeleri",
+          "note": "Sakin akşam sohbetinden gece ritmine geçerken seçkin kokteyllerle öne çıkar.",
+          "proof": "Ayvalık etkinlik ve rehber kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî bina önü masa düzeni ve sıcak bistro iç alanı",
+        "crowdAndNoise": "Akşam saatlerinde çiftler ve küçük arkadaş grupları",
+        "disadvantage": "Etkinlik olan gecelerde kalabalık ve ses seviyesi artabiliyor",
+        "transit": "Gazi Kemal Paşa Mah., Barbaros Cd. No:37"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Ayvalık Rehber & Dijital Menü",
+          "url": "https://ayvalikrehberi.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bistro konsepti, adres ve menü içeriği"
+        },
+        {
+          "title": "Bölge Etkinlik & Topluluk Kayıtları",
+          "url": "https://ayvaliketkinlik.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Akşam atmosferi ve yüksek konuk değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Özenli bistro ve müzik atmosferi",
+        "Merkezde şık akşam buluşma noktası"
+      ],
+      "cons": [
+        "Küçük alan nedeniyle önceden bilgi almak gerekebiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışı etkinlik programları haftalık değişebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-tia-vine-house",
+      "categoryId": "date",
+      "resolvedName": "Tia Vine House/ Şarap evi",
+      "branchName": "Sakarya, Cumhuriyet Cd. No:196, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJY5avP5V3uhQRCzA0J3F3OEs",
+      "coordinates": {
+        "lat": 39.3235544,
+        "lng": 26.695020399999997
+      },
+      "rating": 5,
+      "userRatingCount": 130,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5420213479413133323",
+      "recommendedPrimary": [
+        "Kuzey Ege Butik Şarap Seçkisi",
+        "Peynir & Şarküteri Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Yapımı Çerkez Mantısı (Haluj)",
+          "note": "Klasik şarap evi menüsünü özgünleştiren, işletmenin en çok konuşulan imza sıcak tabağı.",
+          "proof": "İşletme menüsü ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî taş duvarlı yüksek tavanlı salon ve özenli akşam masaları",
+        "crowdAndNoise": "Sakin şarap sohbeti arayan çiftler ve gastronomi meraklıları",
+        "disadvantage": "Butik kapasite ve özenli servis nedeniyle kalabalık akşamlar için önceden yer ayırtmak gerekir",
+        "transit": "Sakarya Mah., Cumhuriyet Cd. No:196"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Dijital Menü (Menum) & Şarap Seçkisi",
+          "url": "https://menum.co/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kuzey Ege şarap kavı ve Çerkez Haluj imza tabağı"
+        },
+        {
+          "title": "Ayvalık Şarap Evi İncelemeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Restore taş bina dokusu, peynir tabakları ve yüksek puan"
+        }
+      ],
+      "pros": [
+        "Özgün Çerkez Haluj ve yerel şarap eşleşmesi",
+        "Sakin, tarihi taş depo atmosferi"
+      ],
+      "cons": [
+        "Rezervasyonsuz akşam saatlerinde yer kalmayabilmesi"
+      ],
+      "uncertainties": [
+        "Sezonluk şarap şişe seçkisi üretici stoklarına göre yenileniyor"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-uzum-meyhane",
+      "categoryId": "date",
+      "resolvedName": "Üzüm Meyhane Ayvalık",
+      "branchName": "İsmetpaşa, 15008, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJO5P0RK53uhQROx6YI0d0gP4",
+      "coordinates": {
+        "lat": 39.320281699999995,
+        "lng": 26.693583099999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 104,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18338785531541331515",
+      "recommendedPrimary": [
+        "Altı Çeşit Mevsim Mezesi Tabağı",
+        "Bademli Tavuk & Deniz Ürünlü Ara Sıcak"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Espresso Martini & İmza Kokteyller",
+          "note": "Rakı sofrasına alternatif olarak kokteyl menüsüyle de akşam keyfine devam imkanı sunar.",
+          "proof": "Restoran menüsü ve misafir incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî sokak dokusu içinde düzenli iç ve dış masalar",
+        "crowdAndNoise": "Sakin yemek ve müzik kalitesine önem veren akşam konukları",
+        "disadvantage": "Hafta sonu akşamları için önceden rezervasyon zorunludur",
+        "transit": "İsmetpaşa Mah., 15008. Sk. / Cumhuriyet Cd. cephesi yakını"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Restoranım & Dijital Seçki",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mevsimlik meze tabakları, büyük porsiyonlar ve akşam atmosferi"
+        },
+        {
+          "title": "Bölge Kullanıcı İncelemeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Müzik seviyesi, servis nezaketi ve kokteyl beğenileri"
+        }
+      ],
+      "pros": [
+        "Sakin, gürültüsüz nezih meyhane havası",
+        "Hem meze hem yaratıcı ana yemek dengesi"
+      ],
+      "cons": [
+        "Küçük sokak girişi nedeniyle araçla erişim kısıtı"
+      ],
+      "uncertainties": [
+        "Akşam menüsündeki özel ara sıcaklar gününe göre değişebilir"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-macaron-meyhanesi",
+      "categoryId": "date",
+      "resolvedName": "Macaron meyhanesi",
+      "branchName": "Hayrettinpaşa, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJbXvVGsN3uhQR7CHcKCTHNgE",
+      "coordinates": {
+        "lat": 39.3144868,
+        "lng": 26.691882
+      },
+      "rating": 4.8,
+      "userRatingCount": 342,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/macaronmeyhanesi?igsh=bzlsY211Z205b21j",
+      "mapsUri": "https://maps.google.com/?cid=87476200898568684",
+      "recommendedPrimary": [
+        "Günlük Soğuk Ege Mezeleri",
+        "Izgara Deniz Ürünleri & Ara Sıcaklar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Canlı Kanun & Akustik Fasıl Akşamları",
+          "note": "Tarihî sokak içinde akşam yemeğine eşlik eden samimi müzik programı.",
+          "proof": "Ayvalık rehberleri ve misafir geri dönüşleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî Rum evleri arasındaki açık sokak masaları ve samimi iç salon",
+        "crowdAndNoise": "Macaron akşam gezintisini rakı-balık sohbetiyle tamamlamak isteyenler",
+        "disadvantage": "Fiyat segmenti üst-orta seviyede olup canlı müzik akşamlarında ortam kalabalıklaşabilir",
+        "transit": "Hayrettinpaşa Mah., Barbaros Cd. Macaron hattı üzerinde"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Ayvalık Rehber & Canlı Etkinlik Kayıtları",
+          "url": "https://ayvalikrehberi.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Macaron sokak oturumu ve Ege meze menüsü"
+        },
+        {
+          "title": "Restoranım & Yandex Değerlendirmeleri",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Canlı kanun atmosferi ve meze kalitesi doğrulaması"
+        }
+      ],
+      "pros": [
+        "Macaron’un tarihî sokak siluetinde akşam yemeği",
+        "Canlı akustik müzikli sıcak atmosfer"
+      ],
+      "cons": [
+        "Üst-orta bütçe seviyesi ve canlı müzik günlerinde ses yoğunluğu"
+      ],
+      "uncertainties": [
+        "Canlı müzik günleri mevsimlere göre yeniden planlanıyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-cavlibahce-1885",
+      "categoryId": "kahvalti",
+      "resolvedName": "CavlıBahçe 1885",
+      "branchName": "Hayrettinpaşa, 13 Nisan Cd. 18. Sk. No: 20, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJR7vzsNp3uhQRlf3ejWfOfgc",
+      "coordinates": {
+        "lat": 39.3144547,
+        "lng": 26.6942053
+      },
+      "rating": 4.8,
+      "userRatingCount": 49,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://cavlihane.com/tr-TR/iletisim",
+      "mapsUri": "https://maps.google.com/?cid=540095949488192917",
+      "recommendedPrimary": [
+        "Tarihî Konak Avlusu Ege Kahvaltısı",
+        "Ev Yapımı Reçeller & Sıcak Börek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kabak Çiçeği & Bahçe Pizzası (Öğle/Akşam)",
+          "note": "Kahvaltı saatlerinden sonra bahçe servisinde yerel otlu fırın lezzetleri de çıkar.",
+          "proof": "Restoranım ve dijital menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî 1885 taş konak bahçesi, gölgeli ağaç altı masa düzeni",
+        "crowdAndNoise": "Özellikle hafta sonu sabahları sakin kahvaltı arayan konuklar",
+        "disadvantage": "Tarihî konak kapasitesi nedeniyle kalabalık tatil günlerinde bahçe masaları çabuk dolabiliyor",
+        "transit": "Hayrettinpaşa Mah., 13 Nisan Cd. 18. Sk. No:20"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Ayvalık Bahçe Mekânları Rehberi",
+          "url": "https://cundam.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1885 konak avlusu ve serpme Ege kahvaltısı seçkisi"
+        },
+        {
+          "title": "Restoranım & Dijital Menü",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahvaltı ürünleri, kabak çiçekli seçenek ve bahçe huzuru"
+        }
+      ],
+      "pros": [
+        "Gürültüden izole 1885 tarihli bahçe dokusu",
+        "Katkısız zeytin, zeytinyağı ve reçeller"
+      ],
+      "cons": [
+        "Hafta sonu bahçe rezervasyonu gerekmesi"
+      ],
+      "uncertainties": [
+        "Sezon dışında kahvaltı dışı mutfak servis saatleri daralabilir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-ares-cafe",
+      "categoryId": "kahvalti",
+      "resolvedName": "Ares Cafe",
+      "branchName": "Fevzipaşa - Vehbibey, Matbaa Sk., 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJK96rRH12uhQRtp--uiDlXvg",
+      "coordinates": {
+        "lat": 39.3188068,
+        "lng": 26.6918416
+      },
+      "rating": 4.5,
+      "userRatingCount": 3007,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17896993897951698870",
+      "recommendedPrimary": [
+        "Ayvalık Serpme Kahvaltı",
+        "Lor Peynirli & Otlu Gözleme"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Öğle/Akşam Bistro Makarnaları & Çay Saati Tatlıları",
+          "note": "Kahvaltı sonrası günün geri kalanında da soğuk içecek ve tatlılarla mola imkanı verir.",
+          "proof": "Restoranım ve bölge değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ferah yüksek tavanlı tarihî taş mekan ve arka avlu masaları",
+        "crowdAndNoise": "Binlerce misafiri ağırlayan merkezin en hareketli buluşma noktalarından biridir",
+        "disadvantage": "Yoğun hafta sonu ve tatil sabahlarında yüksek doluluk nedeniyle servis temposu yavaşlayabilir",
+        "transit": "Fevzipaşa-Vehbibey, Matbaa Sokak / Talatpaşa Cd. paraleli"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Restoranım & Ayvalık Seçkisi",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihî taş bina ve zengin serpme kahvaltı menüsü"
+        },
+        {
+          "title": "Yandex & Geniş Misafir Topluluğu",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "3000+ değerlendirmede yüksek ferahlık ve serpme çeşitliliği"
+        }
+      ],
+      "pros": [
+        "Yüksek kapasiteli tarihi ferah salon",
+        "Ayvalık çarşısının merkezinde erişilebilir konum"
+      ],
+      "cons": [
+        "Tepe saatlerde yüksek kalabalık ve bekleme ihtimali"
+      ],
+      "uncertainties": [
+        "Grup kalabalığına bağlı olarak sıcak ikram süresi değişebilir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-minta-bahce",
+      "categoryId": "kahvalti",
+      "resolvedName": "Minta Bahçe",
+      "branchName": "Fevzipaşa - Vehbibey, Barbaros Cd. No:55, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJIZeBnod2uhQRRmqDp6KUS8w",
+      "coordinates": {
+        "lat": 39.3168034,
+        "lng": 26.6934915
+      },
+      "rating": 4.4,
+      "userRatingCount": 165,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.tripadvisor.com.tr/Restaurant_Review-g297975-d8631855-Reviews-Minta-Ayvalik_Turkish_Aegean_Coast.html",
+      "mapsUri": "https://maps.google.com/?cid=14721023233306618438",
+      "recommendedPrimary": [
+        "Yeşil Bahçede Ev Yapımı Kahvaltı",
+        "Taze Açılmış Çiğ Börek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Zeytinyağlılar & Keşkek",
+          "note": "Belirli günlerde öğleye doğru taze pişen geleneksel zeytinyağlı ev yemekleri.",
+          "proof": "Ayvalık rehber ve bahçe incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Cadde gürültüsünden kopuk, ağaçlıklı sakin arka bahçe",
+        "crowdAndNoise": "Sabah kahvaltısı ve öğle molası için sakin yer arayan semt müdavimleri",
+        "disadvantage": "Giriş kapısı sokakta mütevazı göründüğünden dikkatsiz yürüyüşte gözden kaçabilir",
+        "transit": "Fevzipaşa-Vehbibey, Barbaros Cd. No:55"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Ayvalık Bahçe Rehberi",
+          "url": "https://ayvalikrehberi.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Barbaros Caddesi arka bahçe düzeni ve kahvaltı hizmetleri"
+        },
+        {
+          "title": "Restoranım & Topluluk Kayıtları",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yeşil bahçe ortamı, çiğ börek ve ev yemekleri teyidi"
+        }
+      ],
+      "pros": [
+        "Ana sokağın hemen ardında beklenmedik yeşil bahçe",
+        "Ev yapımı sıcak hamur işleri"
+      ],
+      "cons": [
+        "Kış ve yağışlı havalarda dış bahçe kullanımının azalması"
+      ],
+      "uncertainties": [
+        "Keşkek gibi bazı yöresel tabaklar haftanın belirli günleri çıkıyor"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-kurkubinya",
+      "categoryId": "kahvalti",
+      "resolvedName": "Kurkubinya Firin Pasta kafe",
+      "branchName": "Fevzipaşa - Vehbibey, Cumhuriyet Cd. No:166 /A, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJsTedq8B1uhQR1Mu0Flk3njc",
+      "coordinates": {
+        "lat": 39.3194873,
+        "lng": 26.693455699999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 175,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4007701574178884564",
+      "recommendedPrimary": [
+        "Ekşi Mayalı Kahvaltı Sandviçi & Poğaça",
+        "El Yapımı Limonlu Tart"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Doğal Ayvalık Koruk Suyu & El Yapımı Pasta Dilimleri",
+          "note": "Sabah kahvaltısına ya da ikindi molasına ferahlık katan özgün içecek-tatlı ikilisi.",
+          "proof": "Ayvalık gastronomi kayıtları ve konuk notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak butik fırın önü tezgahlar ve cadde kenarı sınırlı masalar",
+        "crowdAndNoise": "Sabah fırından taze ürün almak isteyen müdavimler",
+        "disadvantage": "Serpme kahvaltı mekanı değildir; hamur işi, tart ve hafif kahvaltı konseptinde çalışır",
+        "transit": "Fevzipaşa-Vehbibey, Cumhuriyet Cd. No:166/A"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Ayvalık Rehber & Fırın Seçkisi",
+          "url": "https://ayvalikrehberi.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ekşi mayalı hamur işleri, tartlar ve koruk suyu menüsü"
+        },
+        {
+          "title": "Restoranım İncelemeleri",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Günlük taze fırın ürünleri ve yüksek kalite istikrarı"
+        }
+      ],
+      "pros": [
+        "Katkısız ekşi maya fırın ve tart üretimi",
+        "Yüksek müşteri memnuniyeti"
+      ],
+      "cons": [
+        "Tam serpme kahvaltı yerine hamur işi ve tart odaklı olması"
+      ],
+      "uncertainties": [
+        "Popüler hamur işleri öğlene kalmadan tükenebilir"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-seytanin-kahvesi",
+      "categoryId": "denemelisin",
+      "resolvedName": "ŞEYTANIN KAHVESİ",
+      "branchName": "Zekibey, 13 Nisan Cd. No:171, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJc2zyV4d2uhQRa8fHqhL-bFY",
+      "coordinates": {
+        "lat": 39.317007600000004,
+        "lng": 26.6959721
+      },
+      "rating": 4.6,
+      "userRatingCount": 2572,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6227631740874639211",
+      "recommendedPrimary": [
+        "Taze Sıkma Buzlu Koruk Suyu",
+        "Ev Yapımı Karadut Şerbeti"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarihî Rum Kıraathanesi Avlusunda Türk Kahvesi",
+          "note": "Asırlık kahvehane geleneğini koruyan sade sunumlu köz ve cezve kahvesi.",
+          "proof": "Kültür Envanteri ve seyahat yazarları seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî taş bina içi ahşap sandalyeler ve çınar ağacı gölgeli sokak masaları",
+        "crowdAndNoise": "Yılın her dönemi ziyaretçi ve yerel emeklilerin buluştuğu yüksek sirkülasyonlu nokta",
+        "disadvantage": "Kahvehane kültürünü koruduğu için yemek veya zengin tatlı menüsü sunmaz",
+        "transit": "Zekibey Mah., 13 Nisan Cd. No:171"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Türkiye Kültür Envanteri & Tarih",
+          "url": "https://kulturenvanteri.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "19. yüzyıl taş kahvehane mimarisi ve tarihi mirası"
+        },
+        {
+          "title": "Seyahat Yazarları & Turna / Sabah Seçkisi",
+          "url": "https://www.sabah.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ayvalık simgesi koruk şerbeti ve karadut geleneği"
+        }
+      ],
+      "pros": [
+        "150 yıla yaklaşan yaşayan Ayvalık kahvehane mirası",
+        "Gerçek sıkma ekşi koruk suyu"
+      ],
+      "cons": [
+        "Geniş yemek ve pasta menüsü bulunmaması"
+      ],
+      "uncertainties": [
+        "Taze koruk suyu mevsim dışı dönemlerde stok durumuna göre sınırlanabilir"
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-passali-mudavim",
+      "categoryId": "denemelisin",
+      "resolvedName": "Paşşalı Müdavim Çorba & Zeytinyağlı Anne Yemekleri",
+      "branchName": "Fevzipaşa - Vehbibey, Cami Sk. No:7, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJ-UyDcBx3uhQR9XymuG7aIjQ",
+      "coordinates": {
+        "lat": 39.3192872,
+        "lng": 26.6939885
+      },
+      "rating": 4.9,
+      "userRatingCount": 766,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3756805208259591413",
+      "recommendedPrimary": [
+        "Günün Zeytinyağlı Ege Otları Tabağı",
+        "Kelle Paça & Günün Çorbası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Kabak Çiçeği Dolması & Zeytinyağlı Enginar",
+          "note": "Ayvalık sızma zeytinyağıyla pişen soğuk zeytinyağlı seçkisi vitrinin temelidir.",
+          "proof": "Wanderlog ve bölge kullanıcı incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî cami gölgesinde sade esnaf lokantası iç ve sokak önü masaları",
+        "crowdAndNoise": "Öğle saatlerinde ev yemeği arayan esnaf ve gezginlerle yoğundur",
+        "disadvantage": "Günlük tencere üretimi yapıldığı için geç öğleden sonra ana yemek çeşitleri tükenmiş olabiliyor",
+        "transit": "Fevzipaşa-Vehbibey, Cami Sk. No:7, Saatli Cami yanı"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Wanderlog Ayvalık Rehberi",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Zeytinyağlı ot yemekleri ve çorba çeşitleri"
+        },
+        {
+          "title": "Yerel Lokanta Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "750+ konukta ev yapımı lezzet ve temizlik övgüsü"
+        }
+      ],
+      "pros": [
+        "Gerçek ev usulü Ege tencere ve zeytinyağlıları",
+        "Çok yüksek konuk memnuniyeti"
+      ],
+      "cons": [
+        "Öğleden sonra popüler çeşitlerin kalmaması"
+      ],
+      "uncertainties": [
+        "Mevsim otlarına göre günlük tencere menüsü her gün değişir"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-pasta-punto",
+      "categoryId": "denemelisin",
+      "resolvedName": "Pasta Punto Makarna - Lazanya- Pizza",
+      "branchName": "Fevzipaşa - Vehbibey, 10033 sokak No:7, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJ3wWnhpd3uhQRt7kgChYQxiY",
+      "coordinates": {
+        "lat": 39.317544,
+        "lng": 26.693657899999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 710,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2793938305675213239",
+      "recommendedPrimary": [
+        "Fesleğen Pesto Soslu El Yapımı Makarna",
+        "Fırın Lazanya"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Tiramisu & Tatlı-Kahve Eşleşmesi",
+          "note": "Makarna yemeğinin ardından masada sıkça paylaşılan İtalyan tatlısı.",
+          "proof": "Ayvalık rehberi ve restoran değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak renkli duvarlı küçük bistro içi ve birkaç sokak önü masası",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde makarna müdavimleriyle sürekli dolu",
+        "disadvantage": "Alanı dar olduğundan yüksek sezonda sıra beklemek gerekebilir",
+        "transit": "Fevzipaşa-Vehbibey, 10033. Sokak No:7"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Ayvalık Rehber & Sokak Mutfağı",
+          "url": "https://ayvalikrehberi.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "El yapımı taze makarna, lazanya ve sokak adresi"
+        },
+        {
+          "title": "RestaurantGuru & Yandex Notları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "700+ değerlendirmede yüksek pesto makarna ve porsiyon puanı"
+        }
+      ],
+      "pros": [
+        "Günlük taze kesim makarna dokusu",
+        "Ara sokakta sıcak ve erişilebilir İtalyan durağı"
+      ],
+      "cons": [
+        "Dar mekan kapasitesi"
+      ],
+      "uncertainties": [
+        "Günlük taze hamur miktarına bağlı kapanış saati esneyebiliyor"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-meti-guzel",
+      "categoryId": "denemelisin",
+      "resolvedName": "Meti Güzel ev yemekleri",
+      "branchName": "Fevzipaşa-vehbibey Bedesten sokak, İmren pastanesi karşısı, Fevzipaşa - Vehbibey, ara sokak no:12, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJ-a67Qe93uhQRH5KJ23GPDho",
+      "coordinates": {
+        "lat": 39.3186928,
+        "lng": 26.692749199999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 498,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1877595813837378079",
+      "recommendedPrimary": [
+        "Zeytinyağlı Çeşitleri & Kuru Fasulye-Pilav",
+        "Günün Tencere Et Yemeği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günün Ev Yapımı Tatlısı & Cacık",
+          "note": "Esnaf lokantası öğününü tamamlayan ev tipi sade eşlikçiler.",
+          "proof": "Bedesten sokak rehberi ve yerel değerlendirmeler"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı esnaf vitrini önü masaları ve sade iç salon",
+        "crowdAndNoise": "Öğle yemeği saatlerinde semt sakinleri ve esnaf yoğunluğu",
+        "disadvantage": "Gösterişsiz lokanta ortamıdır; akşam servisi bulunmaz veya erken biter",
+        "transit": "Fevzipaşa-Vehbibey, Bedesten Aralığı No:12"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Ayvalık Rehber Seçkisi",
+          "url": "https://ayvalikrehberi.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bedesten Sokak konumu ve günlük anne ev yemekleri"
+        },
+        {
+          "title": "Topluluk Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "500’e yakın değerlendirmede istikrarlı lezzet övgüsü"
+        }
+      ],
+      "pros": [
+        "Samimi fiyat/performanslı gerçek ev yemekleri",
+        "Tarihî çarşı Bedesten Sokak konumu"
+      ],
+      "cons": [
+        "Öğle yemekleri odaklı çalışma düzeni"
+      ],
+      "uncertainties": [
+        "Yemek çeşitleri tenceredeki stoğa göre erken tükenebilir"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-mehmet-tas-kahvesi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Mehmet Taş Kahvesi",
+      "branchName": "Fevzipaşa - Vehbibey, 10025 sokak 4A, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJVaEfbEB3uhQR8bsmQLLmexg",
+      "coordinates": {
+        "lat": 39.3180705,
+        "lng": 26.692557599999997
+      },
+      "rating": 5,
+      "userRatingCount": 318,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1764257332300528625",
+      "recommendedPrimary": [
+        "Damla Sakızlı Türk Kahvesi",
+        "Sade Geleneksel Dibek Türk Kahvesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Elde Paketlenen Çekilmiş Türk Kahvesi & Yerel Zeytin",
+          "note": "Mekanın kendi kavrumu kahve paketleri ev götürülmek üzere raflarda sunulur.",
+          "proof": "İşletme web sitesi ve misafir kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Çarşı içinde butik nostaljik kahvehane ve sokak önü oturumu",
+        "crowdAndNoise": "Cunda kalabalığından uzakta sakin Türk kahvesi içmek isteyenler",
+        "disadvantage": "Geleneksel kahvehane odaklıdır; üçüncü dalga soğuk demlemeler yerine Türk kahvesine odaklanır",
+        "transit": "Fevzipaşa-Vehbibey, 10025. Sokak 4A"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Mehmet Taş Kahvesi Resmi Site",
+          "url": "https://mehmettaskahvesi.com/",
+          "date": "2026-11-18",
+          "kind": "operator",
+          "note": "1923/1929 Taş ailesi kahve geleneği ve yerel ürünler"
+        },
+        {
+          "title": "Restoranım & Yandex Değerlendirmeleri",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Damla sakızlı kahve ve samimi esnaflık üzerine yüksek puan"
+        }
+      ],
+      "pros": [
+        "Cunda kalabalığına girmeden Taş Kahve aile mirasını yaşatması",
+        "Yüksek misafir memnuniyeti"
+      ],
+      "cons": [
+        "Modern kafe çeşitliliği yerine dar Türk kahvesi odağı"
+      ],
+      "uncertainties": [
+        "Sezon dışında erken akşam saatlerinde kapanabiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-istasyon-fast-food",
+      "categoryId": "denemelisin",
+      "resolvedName": "İstasyon Fast Food",
+      "branchName": "Vehbibey mahallesi Talatpaşa caddesi fotoğrafçılar aralığı, İstasyon Fast Food, Fevzipaşa - Vehbibey, no 2 A, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJ6yCOZn12uhQRs2j6L-1qdFo",
+      "coordinates": {
+        "lat": 39.3183558,
+        "lng": 26.692415699999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 361,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6517952127656683699",
+      "recommendedPrimary": [
+        "Karışık Orijinal Ayvalık Tostu",
+        "Ev Yapımı Taze Limonata"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Ferahlatıcı Limonata",
+          "note": "Sıcak tostu dengelemek için neredeyse her masanın yanında sipariş edilen imza içecek.",
+          "proof": "Yandex yerel topluluk incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Pasaj aralığında birkaç hızlı tabure ve ayakta/kısa masa düzeni",
+        "crowdAndNoise": "Günün her saati öğrenci, yerel esnaf ve çarşı gezginleri",
+        "disadvantage": "Hızlı tost büfesi formatındadır; uzun oturumlu yemek için uygun değildir",
+        "transit": "Fevzipaşa-Vehbibey, Talatpaşa Cd. Fotoğrafçılar Aralığı No:2A"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Restoranım & Çarşı Tost Rehberi",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Talatpaşa Caddesi adresi ve orijinal Ayvalık tostu"
+        },
+        {
+          "title": "Yemeksepeti & Konuk Notları",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Temizlik, güler yüz ve taze limonata beğenileri"
+        }
+      ],
+      "pros": [
+        "Turistik çarşının hemen içinde esnaf kalitesi ve temizliği",
+        "Orijinal ekmekle gerçek tost reçetesi"
+      ],
+      "cons": [
+        "Kısa süreli oturum için tasarlanmış dar büfe alanı"
+      ],
+      "uncertainties": [
+        "Öğle tatili saatlerinde tost sırası uzayabiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-macaron-tost-evi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Macaron Tost Evi Hanyotun Yeri",
+      "branchName": "Hayrettinpaşa, Barbaros Cd. No:81, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJX0m6Gmp3uhQRUD29HtCXqe4",
+      "coordinates": {
+        "lat": 39.314712899999996,
+        "lng": 26.692131399999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 319,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17197443572215659856",
+      "recommendedPrimary": [
+        "Klasik Hanyot Ayvalık Tostu",
+        "Tulum Peynirli Kavurmalı Tost"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Demlenmiş Çay & Yerel Şerbet İkramları",
+          "note": "Tostun yanında sıcacık bardak çay veya soğuk yerel içecek eşlik eder.",
+          "proof": "Ayvalık Rehberi ve tost seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî taş bina önünde küçük kaldırım masaları ve samimi iç alan",
+        "crowdAndNoise": "Sabah kahvaltısı ve öğle atıştırmalığı için gelen Macaron gezginleri",
+        "disadvantage": "Tek tost ustası tezgahında siparişe göre hazırlandığı için yoğun saatlerde beklemek gerekir",
+        "transit": "Hayrettinpaşa Mah., Barbaros Cd. No:81"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Ayvalık Rehber & Lezzet Rotası",
+          "url": "https://ayvalikrehberi.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Macaron’da Hanyotun Yeri orijinal ekmek ve peynir dengesi"
+        },
+        {
+          "title": "Yemek Rehberleri & Misafir Yemek Notları",
+          "url": "https://yemek.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Dışı çıtır ekmek kalitesi ve güler yüzlü esnaf servisi"
+        }
+      ],
+      "pros": [
+        "Tulum-kaşar karışımıyla ağırlaşmayan orijinal Ayvalık tostu",
+        "Macaron sokak ambiyansı"
+      ],
+      "cons": [
+        "Bekleme sırası oluşabilen tek tezgahlı hızlı mutfak"
+      ],
+      "uncertainties": [
+        "Ekmek günlük fırından geldiği için geç saatte tükenebilir"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-tika-basa-kokorec",
+      "categoryId": "denemelisin",
+      "resolvedName": "Tıka Basa Kokoreç & Döner",
+      "branchName": "Fevzipaşa - Vehbibey, Gümrük Cd. no:34, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJyZRu83h3uhQREUcpn2qqs0A",
+      "coordinates": {
+        "lat": 39.3193397,
+        "lng": 26.692103200000002
+      },
+      "rating": 4.7,
+      "userRatingCount": 544,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4662257414172133137",
+      "recommendedPrimary": [
+        "Yarım Ekmek İnce Kıyım Kokoreç",
+        "Pilav Üstü / Porsiyon Et Döner"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Kömür Izgarada Baharatlı Kokoreç Porsiyon",
+          "note": "Akşam yemeği veya gece kapanışı için ekmeksiz porsiyon tercihi.",
+          "proof": "Çarşı gıda rehberleri ve yerel topluluk notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Cadde önü hızlı masa düzeni ve tezgah servisi",
+        "crowdAndNoise": "Akşam meyhane sonrası uğrayanlar ve yerel lezzet avcıları",
+        "disadvantage": "Sokak büfesi/dükkanı tarzında olduğundan sakin akşam oturumu arayanlara uygun değildir",
+        "transit": "Fevzipaşa-Vehbibey, Gümrük Cd. No:34"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Yerel Sokak Lezzetleri Seçkisi",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "500+ değerlendirmede kokoreç gevrekliği ve temizlik puanı"
+        },
+        {
+          "title": "Ayvalık Merkez Rehberi",
+          "url": "https://ayvalikrehberi.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Gümrük Caddesi adresi ve et döner/kokoreç odağı"
+        }
+      ],
+      "pros": [
+        "Yüksek hacimli değerlendirmede istikrarlı puan",
+        "Geç akşam saatlerinde sıcak sokak yemeği imkanı"
+      ],
+      "cons": [
+        "Kömür ızgara yoğunluğu nedeniyle sadece hızlı durak formatında olması"
+      ],
+      "uncertainties": [
+        "Gece kapanış saatleri yaz ve kış sezonunda değişebiliyor"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-kafedemia",
+      "categoryId": "denemelisin",
+      "resolvedName": "KAFEDEMİA / Destek Tasarım Akademisi",
+      "branchName": "Fevzipaşa - Vehbibey, Barbaros Cd. No:159 A, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJW_PGnod2uhQR6_ttbx7j4OE",
+      "coordinates": {
+        "lat": 39.3168043,
+        "lng": 26.693124299999997
+      },
+      "rating": 4.8,
+      "userRatingCount": 166,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.destekakademisi.org/",
+      "mapsUri": "https://maps.google.com/?cid=16276258773174975467",
+      "recommendedPrimary": [
+        "Sicilya Çekirdekli Espresso & Latte",
+        "Soğuk Demleme Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarihî Avluda Tasarım Atölyesi & Sergi Atmosferi",
+          "note": "Barbaros Caddesi’ndeki kahve molasına sanatsal galeri ve taş avlu deneyimi katar.",
+          "proof": "Biz Evde Yokuz ve Ayvalık tasarım kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî taş bina içi galeri masaları ve avlu bahçesi",
+        "crowdAndNoise": "Sakin ortamda kahve eşliğinde sanat dokusu görmek isteyen konuklar",
+        "disadvantage": "Atölye veya etkinlik saatlerinde çalışma düzeni değişiklik gösterebilir",
+        "transit": "Fevzipaşa-Vehbibey, Barbaros Cd. No:159A"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Biz Evde Yokuz Ayvalık Rehberi",
+          "url": "https://bizevdeyokuz.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sicilya kahvesi ve tasarım atölyeli taş bina konsepti"
+        },
+        {
+          "title": "Restoranım & Yandex Değerlendirmeleri",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Barbaros Caddesi taş avlu huzuru ve kahve memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Kültür-sanat ve nitelikli kahveyi aynı tarihî yapıda buluşturması",
+        "Huzurlu iç avlu"
+      ],
+      "cons": [
+        "Kapsamlı yemek menüsü bulunmaması"
+      ],
+      "uncertainties": [
+        "Akademi etkinlik takvimi çerçevesinde hafta sonu kullanım yoğunluğu artabilir"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-aima-cafe",
+      "categoryId": "denemelisin",
+      "resolvedName": "AIMA CAFE",
+      "branchName": "Sakarya, Gümrük Cd. 2. Sk. No:45, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJWwcYVzN3uhQR6-IZJkiNgTc",
+      "coordinates": {
+        "lat": 39.3212968,
+        "lng": 26.692710100000003
+      },
+      "rating": 4.7,
+      "userRatingCount": 156,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3999633285098103531",
+      "recommendedPrimary": [
+        "Taze Focaccia Sandviç",
+        "Ev Yapımı Tuzlu/Tatlı Kek & Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Müzik Akademisi Kıyı Bahçesi & Sakin Deniz Manzarası",
+          "note": "Sabah kahvesi ve sakin öğleden sonra molası için çarşının kalabalığından izole bir teras sunar.",
+          "proof": "AIMA resmi sitesi ve Ayvalık rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Denize sıfır tarihî taş konak bahçesi ve açık hava terası",
+        "crowdAndNoise": "Sakin sohbet ve kitap/manzara eşliğinde dinlenmek isteyen müdavimler",
+        "disadvantage": "Klasik yüksek sesli kafe yerine dingin kültür akademisi temposunda hizmet verir",
+        "transit": "Sakarya Mah., Gümrük Cd. 2. Sk. No:45 (AIMA Konak Bahçesi)"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Ayvalık Uluslararası Müzik Akademisi",
+          "url": "https://ayvalikmusic.org/",
+          "date": "2026-11-18",
+          "kind": "operator",
+          "note": "Haluk Barutçuoğlu Evi konumu ve bahçe kafeteryası"
+        },
+        {
+          "title": "Restoranım & Ayvalık Rehberi",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Focaccia sandviçleri, deniz kıyısı bahçe ve ev yapımı kekler"
+        }
+      ],
+      "pros": [
+        "Denize sıfır Rum konağı bahçesinde dingin atmosfer",
+        "Ev yapımı focaccia ve kekler"
+      ],
+      "cons": [
+        "Konser/atölye dönemlerinde belirli alanların akademi etkinliklerine ayrılabilmesi"
+      ],
+      "uncertainties": [
+        "Kış sezonunda açık teras kullanım saatleri hava durumuna göre düzenlenir"
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-mavi-mutfak",
+      "categoryId": "balik",
+      "resolvedName": "Mavi Mutfak Ayvalik",
+      "branchName": "Fevzipaşa-vehbibey Talatpaşa caddesi, Fevzipaşa - Vehbibey, Bedesten Sk. no:15, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJ837ab312uhQRZbHkYsfrBw4",
+      "coordinates": {
+        "lat": 39.3185103,
+        "lng": 26.6928691
+      },
+      "rating": 4.7,
+      "userRatingCount": 398,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1011035882958139749",
+      "recommendedPrimary": [
+        "Taze Izgara Ayvalık Sardalyası",
+        "Günlük Hazırlanan Ege Otları & Meze Seçkisi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Zeytinyağlı Tabaklar & Ara Sıcaklar",
+          "note": "Büyük turist menüleri yerine küçük tavalarda anlık pişen sade deniz ürünleri.",
+          "proof": "Restoranım ve dijital menü incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî sokak masaları ve samimi küçük iç salon",
+        "crowdAndNoise": "Özenli sokak mutfağı arayan çiftler ve gastronomi gezginleri",
+        "disadvantage": "Denize sıfır konumu yoktur; çarşının tarihî Bedesten ara sokağındadır",
+        "transit": "Fevzipaşa-Vehbibey, Talatpaşa Cd. Bedesten Sk. No:15"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Restoranım & Dijital Menü",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bedesten Sokak adresi, taze sardalya ve meze çeşitleri"
+        },
+        {
+          "title": "Yerel Balık Mutfağı Değerlendirmeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "400’e yakın konukta yüksek tazelik ve servis puanı"
+        }
+      ],
+      "pros": [
+        "Turistik kalabalıktan uzak butik balık ve meze mutfağı",
+        "Uygun maliyet-lezzet dengesi"
+      ],
+      "cons": [
+        "Deniz manzaralı masa bulunmaması"
+      ],
+      "uncertainties": [
+        "Mevsimsel av yasağı ve hava durumuna göre günlük balık türleri değişir"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-secil-balikevi",
+      "categoryId": "balik",
+      "resolvedName": "Seçil Balıkevi",
+      "branchName": "Vehbi Bey Caddesi Cumhuriyet Meydanı Atatürk Heykeli Arkası (Ayvalık/Merkez), Fevzipaşa - Vehbibey, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJh19qnn12uhQRIf2AIiw4X8g",
+      "coordinates": {
+        "lat": 39.3184256,
+        "lng": 26.6916273
+      },
+      "rating": 4.7,
+      "userRatingCount": 311,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14438320692581694753",
+      "recommendedPrimary": [
+        "Günlük Mezattan Izgara Levrek / Çipura",
+        "Taze Kırmızı Kaya Barbunu & Karides"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zeytinyağlı Fava & Otlu Mezeler",
+          "note": "Balık öncesi sade ve katkısız biçimde masaya gelen geleneksel Ege mezeleri.",
+          "proof": "Ayvalık rehberi ve kullanıcı incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Meydan arkasında samimi açık sokak ve küçük salon masaları",
+        "crowdAndNoise": "Hem yerel Ayvalıklı balık tutkunları hem müdavim gezginler",
+        "disadvantage": "Sade ve gösterişsiz atmosferi nedeniyle lüks kıyı mekanı bekleyenlere hitap etmez",
+        "transit": "Fevzipaşa-Vehbibey, Cumhuriyet Meydanı Atatürk Heykeli arkası"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Ayvalık Rehber & Dijital Kayıt",
+          "url": "https://ayvalikrehberi.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Cumhuriyet Meydanı konumu ve günlük balık menüsü"
+        },
+        {
+          "title": "ButikRota & Topluluk Kayıtları",
+          "url": "https://butikrota.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Aile işletmesi samimiyeti ve taze balık fiyat dengesi"
+        }
+      ],
+      "pros": [
+        "Turist tuzağından uzak dürüst esnaf balıkevi",
+        "Yüksek puan istikrarı"
+      ],
+      "cons": [
+        "Kısıtlı sokak alanı ve deniz cephesinin olmayışı"
+      ],
+      "uncertainties": [
+        "Günlük mezat balığı seçkisi saatine göre erken azalabiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-tamam-meyhane-yali",
+      "categoryId": "balik",
+      "resolvedName": "Tamam Meyhane YALI",
+      "branchName": "Fevzipaşa - Vehbibey, 10013. Sok NO:3, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJN04Gwzt3uhQRHDnYufC2r6A",
+      "coordinates": {
+        "lat": 39.319829299999995,
+        "lng": 26.6914882
+      },
+      "rating": 4.6,
+      "userRatingCount": 3227,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://tamammeyhane.com/",
+      "mapsUri": "https://maps.google.com/?cid=11578674312019196188",
+      "recommendedPrimary": [
+        "Günlük Meze Seçkisi & Ahtapot Izgara",
+        "Kızarmış Kabak Çiçeği & Levrek Marin"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sübye Yahnisi & Rum Usulü Deniz Ara Sıcakları",
+          "note": "Balık ana yemeğinin yanında paylaşımlık olarak tercih edilen yerel kıyı klasikleri.",
+          "proof": "Tamam Meyhane menü ve Gazete Duvar / rehber kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Liman ve körfeze sıfır iskele/kıyı masaları",
+        "crowdAndNoise": "Yılın en yoğun akşam talebine sahip köklü kıyı buluşma adresi",
+        "disadvantage": "Çok yüksek bütçe dilimindedir; rezervasyonsuz yaz akşamlarında masa bulmak neredeyse imkansızdır",
+        "transit": "Fevzipaşa-Vehbibey, 10013. Sokak No:3, Ayvalık liman kıyısı"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Tamam Meyhane Resmi Sitesi",
+          "url": "https://tamammeyhane.com/",
+          "date": "2026-11-18",
+          "kind": "operator",
+          "note": "Yalı kıyısı ve mevsimsel Ege mutfağı konsepti"
+        },
+        {
+          "title": "Gazete Duvar & Yandex Topluluk",
+          "url": "https://www.gazeteduvar.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "3000+ değerlendirmede sade meze başarısı ve kıyı masaları"
+        }
+      ],
+      "pros": [
+        "Denize sıfır manzara eşliğinde rafine meze-balık mutfağı",
+        "Yüksek puanlı kalıcı kalite"
+      ],
+      "cons": [
+        "Yüksek fiyat seviyesi ve yaz akşamı erken rezervasyon zorunluluğu"
+      ],
+      "uncertainties": [
+        "Kış döneminde sokak içindeki kışlık avlu lokasyonunda ağırlama yapılabiliyor"
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "ayvalik-deniz-yildizi",
+      "categoryId": "balik",
+      "resolvedName": "Ayvalık Deniz Yıldızı Restoran",
+      "branchName": "A, İsmetpaşa, Karantina Sk. No:5, 10400 Ayvalık/Balıkesir",
+      "placeId": "ChIJZa6C4Hx2uhQR05wJH2Ihvh4",
+      "coordinates": {
+        "lat": 39.320647,
+        "lng": 26.692182
+      },
+      "rating": 4.4,
+      "userRatingCount": 2338,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://ayvalikdenizyildizi.com/",
+      "mapsUri": "https://maps.google.com/?cid=2215244772024098003",
+      "recommendedPrimary": [
+        "Gün Batımında Izgara Balık & Kalamar",
+        "Ege Mezeleri & Ahtapot Salatası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tereyağlı Karides Güveç & Fener Kavurma",
+          "note": "Soğuk mezelerin ardından masaya sıcak olarak paylaşılan kıyı ara sıcakları.",
+          "proof": "İşletme web sitesi ve konuk değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Doğrudan deniz kıyısında gün batımına bakan açık ve kapalı alanlar",
+        "crowdAndNoise": "Manzaralı akşam yemeği arayan aileler ve büyük sofralar",
+        "disadvantage": "Yüksek kalabalık günlerinde kıyı masalarında servis bekleme süresi uzayabiliyor",
+        "transit": "İsmetpaşa Mah., Karantina Sokak No:5, Ayvalık sahil bandı"
+      },
+      "verifiedAt": "2026-11-18",
+      "sources": [
+        {
+          "title": "Ayvalık Deniz Yıldızı Resmi Site",
+          "url": "https://ayvalikdenizyildizi.com/",
+          "date": "2026-11-18",
+          "kind": "operator",
+          "note": "Denize sıfır gün batımı konumu ve balık/meze seçkisi"
+        },
+        {
+          "title": "Ayvalık Rehber & Turizm Seçkisi",
+          "url": "https://ayvalikrehberi.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kıyı balıkçısı konumu, iskele düzeni ve kalamar/meze seçkisi"
+        },
+        {
+          "title": "Yandex & Ziyaretçi Topluluğu",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "2300+ değerlendirmede manzara ve klasik deniz ürünleri deneyimi"
+        }
+      ],
+      "pros": [
+        "Doğrudan deniz üzerinde ferah gün batımı masaları",
+        "Köklü yerel deneyim"
+      ],
+      "cons": [
+        "Kalabalık yaz gecelerinde servis temposunun ağırlaşabilmesi"
+      ],
+      "uncertainties": [
+        "Rüzgarlı havalarda dış iskele masaları iç salona çekilebiliyor"
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    }
+  ]
+}

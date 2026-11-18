@@ -1,0 +1,2836 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "antalya-alanya-merkez",
+  "displayName": "Alanya Merkez, Antalya",
+  "verifiedAt": "2026-11-16T09:32:45.188Z",
+  "selectedCount": 34,
+  "rejectedControls": [
+    {
+      "id": "ctrl-alanya-dominos-chain",
+      "resolvedName": "Domino's Pizza Alanya Atatürk",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alanya-burgerking-chain",
+      "resolvedName": "Burger King - Güllerpınar Mahallesi Şubesi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alanya-papajohns-chain",
+      "resolvedName": "Papa John's Pizza",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alanya-pasaport-chain",
+      "resolvedName": "Pasaport Pizza Şekerhane",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alanya-burgeryiyelim-chain",
+      "resolvedName": "Burger Yiyelim",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alanya-paperroasting-chain",
+      "resolvedName": "Paper Roasting Coffee & Chocolate",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alanya-espressolab-mahmutlar-chain",
+      "resolvedName": "Espressolab Alanya",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alanya-citirim-noncoffee",
+      "resolvedName": "Çıtırım Pastanesi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-alanya-harbour-low",
+      "resolvedName": "Harbour Kitchen & Bar",
+      "reason": "below_quality_threshold:★3.9(1587)"
+    },
+    {
+      "id": "ctrl-alanya-gardenia-low",
+      "resolvedName": "Gardenia Restaurant",
+      "reason": "below_quality_threshold:★4.1(2031)"
+    },
+    {
+      "id": "ctrl-alanya-zilliokuz-low",
+      "resolvedName": "ZİLLİ ÖKÜZ Home Made Hamburger",
+      "reason": "below_quality_threshold:★4(594)"
+    },
+    {
+      "id": "ctrl-alanya-bumba-low",
+      "resolvedName": "Bumba Restaurant & Bistro",
+      "reason": "below_quality_threshold:★4.2(1065)"
+    },
+    {
+      "id": "ctrl-alanya-enberi-oba-outside",
+      "resolvedName": "Enberi Cafe",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Çarşı/Carsi/Saray/Şekerhane/Sekerhane/Kadıpaşa/Kadipasa/Güller Pınarı/Guller Pinari/Güllerpınarı/Gullerpinari/Kızlar Pınarı/Kizlar Pinari/Kızlarpınarı/Kizlarpinari/Hisariçi/Hisarici/Tophane/Hacet/Cumhuriyet/İskele/Iskele/Damlataş/Damlatas/Kleopatra/Kızılkule/Kizilkule/Keykubat/Bostancı Pınarı/Bostanci Pinari, adres: göl Mahallesi, Oba, Oer- Erkenschwick Cd No:2, 07460 Alanya/Antalya)"
+    },
+    {
+      "id": "ctrl-alanya-meetncorner-oba-outside",
+      "resolvedName": "Meet’n Corner Burger",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Çarşı/Carsi/Saray/Şekerhane/Sekerhane/Kadıpaşa/Kadipasa/Güller Pınarı/Guller Pinari/Güllerpınarı/Gullerpinari/Kızlar Pınarı/Kizlar Pinari/Kızlarpınarı/Kizlarpinari/Hisariçi/Hisarici/Tophane/Hacet/Cumhuriyet/İskele/Iskele/Damlataş/Damlatas/Kleopatra/Kızılkule/Kizilkule/Keykubat/Bostancı Pınarı/Bostanci Pinari, adres: Yaşar Doğu Cd, Oba, 2. Sk., 07600 Alanya/Antalya)"
+    },
+    {
+      "id": "ctrl-alanya-dimcayi-outside",
+      "resolvedName": "Dimçayı Pınarbaşı Restaurant",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Çarşı/Carsi/Saray/Şekerhane/Sekerhane/Kadıpaşa/Kadipasa/Güller Pınarı/Guller Pinari/Güllerpınarı/Gullerpinari/Kızlar Pınarı/Kizlar Pinari/Kızlarpınarı/Kizlarpinari/Hisariçi/Hisarici/Tophane/Hacet/Cumhuriyet/İskele/Iskele/Damlataş/Damlatas/Kleopatra/Kızılkule/Kizilkule/Keykubat/Bostancı Pınarı/Bostanci Pinari, adres: Dim Çayı Mah Baraj Yolu Cad. 9.Km, Kuzyaka, 07450 Alanya/Antalya)"
+    },
+    {
+      "id": "ctrl-alanya-croissant-mahmutlar-outside",
+      "resolvedName": "Croissant Atelier - Alanya",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Çarşı/Carsi/Saray/Şekerhane/Sekerhane/Kadıpaşa/Kadipasa/Güller Pınarı/Guller Pinari/Güllerpınarı/Gullerpinari/Kızlar Pınarı/Kizlar Pinari/Kızlarpınarı/Kizlarpinari/Hisariçi/Hisarici/Tophane/Hacet/Cumhuriyet/İskele/Iskele/Damlataş/Damlatas/Kleopatra/Kızılkule/Kizilkule/Keykubat/Bostancı Pınarı/Bostanci Pinari, adres: Mahmutlar, 106. Sk. No:10, 07460 Alanya/Antalya)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "alanya-cafe-local",
+      "categoryId": "pizza",
+      "resolvedName": "Cafe Local",
+      "branchName": "Saray, Yunus Emre Cd. No:16, 07400 Alanya/Antalya",
+      "placeId": "ChIJZ5QFoIaZ3BQReCkbqeUCA4o",
+      "coordinates": {
+        "lat": 36.5475917,
+        "lng": 31.992926699999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 2748,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.cafelocal.net/",
+      "mapsUri": "https://maps.google.com/?cid=9944795587572083064",
+      "recommendedPrimary": [
+        "Füme Etli Pizza",
+        "Margherita Pizza",
+        "Ton Balıklı Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bademli & Tuzlu Artizan Kruvasanlar",
+          "note": "Taş fırın pizzaların yanı sıra gün boyu taze çıkan katmanlı bademli, lotuslu ve kahvaltılık kruvasan çeşitleri büyük ilgi görüyor.",
+          "proof": "cafelocal.com resmi menüsü ve Yemeksepeti Alanya kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş cadde terası, aydınlık iç salon ve yarı açık oturma alanları",
+        "crowdAndNoise": "Sabah kruvasanından akşam pizza-bira saatlerine kadar gün boyu canlı ve hareketli",
+        "disadvantage": "Çok yönlü popülerliği nedeniyle akşam yemek saatlerinde ve hafta sonu kahvaltılarında kalabalıklaşabiliyor",
+        "transit": "Atatürk Bulvarı paralelinde Yunus Emre Caddesi üzerinde Damlataş yönüne yürüyerek beş dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Cafe Local",
+          "url": "https://maps.google.com/?cid=9944795587572083064",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Saray Mah. Yunus Emre Cd. No:16 konumu ve yüksek puan hacmi doğrulandı"
+        },
+        {
+          "title": "Cafe Local Resmi Sitesi",
+          "url": "http://www.cafelocal.net/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Taş fırın Napoliten pizza hamuru ve artizan kruvasan üretimi"
+        },
+        {
+          "title": "Restoranim — Cafe Local Alanya",
+          "url": "https://restoranim.net/restoran/cafe-local-alanya-antalya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Pizza, kruvasan ve servis kalitesi değerlendirmeleri"
+        },
+        {
+          "title": "Restaurant Guru — Cafe Local",
+          "url": "https://it.restaurantguru.com/Cafe-Local-Alanya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Napoliten pizza ve akşam atmosferi geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Taş fırında hafif Napoliten pizza tabanı ve kaliteli sos",
+        "Sabah fırınıyla birleşen çok yönlü mutfak"
+      ],
+      "cons": [
+        "Pik akşam saatlerinde yoğunluk kaynaklı bekleme yaşanabilmesi"
+      ],
+      "uncertainties": [
+        "Sezona göre özel kruvasan ve tatlı çeşitleri günlük değişebiliyor"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-fiaba-brasserie",
+      "categoryId": "pizza",
+      "resolvedName": "Fiaba Brasserie",
+      "branchName": "Çarşı, Kaleyolu Cd. No: 83, 07400 Alanya/Antalya",
+      "placeId": "ChIJXRGZyhCZ3BQRlRdcjnNS6BE",
+      "coordinates": {
+        "lat": 36.53797240000001,
+        "lng": 31.995238
+      },
+      "rating": 4.7,
+      "userRatingCount": 595,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://fiababrasserie.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=1290371949504763797",
+      "recommendedPrimary": [
+        "Quattro Formaggi Pizza",
+        "Pizza Fiaba",
+        "Klasik Margherita Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Yapımı Lazanya & Fiaba Tiramisu",
+          "note": "Pizza dışında taze makarna katmanlarıyla hazırlanan fırın lazanya ve kapanışta Fiaba tiramisu akşam sofralarında öne çıkıyor.",
+          "proof": "fiababrasserie.com.tr resmi menüsü ve TripAdvisor Alanya kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kale ve liman manzarasına hakim açık teras ile şık iç brasserie masaları",
+        "crowdAndNoise": "Gün batımı ve akşam yemeği saatlerinde çiftler ve İtalyan mutfağı arayanlarla dengeli dolu",
+        "disadvantage": "Kaleyolu üzerinde yamaçta konumlandığı için merkez çarşıdan kısa bir yokuş çıkışı gerektiriyor ve fiyat seviyesi mahalle pizzacılarının üzerinde",
+        "transit": "Alanya İskele ve Çarşı merkezinden Kaleyolu Caddesi boyunca yukarı yürüyerek beş dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Fiaba Brasserie",
+          "url": "https://maps.google.com/?cid=1290371949504763797",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı Mah. Kaleyolu Cd. No:83 konumu doğrulandı"
+        },
+        {
+          "title": "Fiaba Brasserie Resmi Sitesi",
+          "url": "http://fiababrasserie.com.tr/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "El açması pizza çeşitleri, taze makarna ve kokteyl menüsü"
+        },
+        {
+          "title": "Restoranim — Fiaba Brasserie",
+          "url": "https://www.restoranim.net/mekan/fiaba-brasserie-alanya-antalya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kale yolu manzarası ve İtalyan tabakları değerlendirmeleri"
+        },
+        {
+          "title": "TripAdvisor — Fiaba Brasserie",
+          "url": "https://www.tripadvisor.com/Restaurant_Review-g297961-d27289528-Reviews-Fiaba_Brasserie-Alanya_Turkish_Mediterranean_Coast.html",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Quattro Formaggi pizza ve tiramisu deneyimleri"
+        }
+      ],
+      "pros": [
+        "El açması ince pizza hamuru ve ev yapımı sos dengesi",
+        "Akdeniz ve limana bakan ferah teras"
+      ],
+      "cons": [
+        "Yokuş konumu ve brasserie segmenti fiyat seviyesi"
+      ],
+      "uncertainties": [
+        "Gün batımı ön sıra teras masaları rezervasyonsuz dolabiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-pizza-cafe-42",
+      "categoryId": "pizza",
+      "resolvedName": "Pizza Cafe 42",
+      "branchName": "Kızlar Pınarı, Spor Cd. no:12/D, 07460 Alanya/Antalya",
+      "placeId": "ChIJH5FUKoei3BQRbRl570b119s",
+      "coordinates": {
+        "lat": 36.553926,
+        "lng": 31.986705999999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 315,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15841399899313215853",
+      "recommendedPrimary": [
+        "Karışık İtalyan Pizza",
+        "Pepperoni Pizza",
+        "Klasik Margherita"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Soğuk Fermente Ekşi Mayalı Sarımsaklı Ekmek",
+          "note": "Sipariş öncesi paylaşılan uzun soğuk fermantasyonlu çıtır sarımsaklı ekmek ve geleneksel Türk pideleri mekanın sevilen eşlikçileri.",
+          "proof": "Wanderlog ve Restoranim Pizza Cafe 42 incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı, temiz ve samimi iç salon ile sokak önü küçük masalar",
+        "crowdAndNoise": "Yerel yerleşikler ve butik pizzacı arayan gezginlerle sakin bir akşam temposunda",
+        "disadvantage": "Gösterişsiz mahalle dükkanı düzeninde olduğundan manzaralı veya şık akşam ortamı arayanlara hitap etmez",
+        "transit": "Kleopatra Plajı kuzeyinden ve Balık Hali çevresinden Spor Caddesi boyunca yürüyerek dört dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — PİZZA Cafe 42",
+          "url": "https://maps.google.com/?cid=15841399899313215853",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kızlar Pınarı Spor Cd. No:12/D konumu doğrulandı"
+        },
+        {
+          "title": "Restoranim — Pizza Cafe 42",
+          "url": "https://www.restoranim.net/isletme/pizza-cafe-42",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "32 cm ince hamur pizza ve taze malzeme değerlendirmeleri"
+        },
+        {
+          "title": "Wanderlog — Pizza Cafe 42",
+          "url": "https://wanderlog.com/view/eizvqugyvq/p%C4%B0zza-cafe-42-reviews-ratings-tips/shared",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Aile işletmesi atmosferi ve ekşi maya sarımsaklı ekmek notları"
+        }
+      ],
+      "pros": [
+        "Sıfırdan hazırlanan taze hamur ve bol malzeme dengesi",
+        "Sakin aile işletmesi samimiyeti ve makul fiyatlar"
+      ],
+      "cons": [
+        "Dekorasyon ve oturma alanının oldukça sade olması"
+      ],
+      "uncertainties": [
+        "Yoğun paket sipariş saatlerinde fırın çıkış süresi biraz uzayabiliyor"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-miante-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Miante Burger",
+      "branchName": "Saray, Yunus Emre Cd. No:46/A, 07400 Alanya/Antalya",
+      "placeId": "ChIJE0SUoIuj3BQR8fY8QfZHS9I",
+      "coordinates": {
+        "lat": 36.550306899999995,
+        "lng": 31.989353
+      },
+      "rating": 4.8,
+      "userRatingCount": 582,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15153284494200207089",
+      "recommendedPrimary": [
+        "Mia Smash Burger",
+        "Oklahoma Smash Burger",
+        "Trüf Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çıtır Soğan Halkası & Tavuk Parçaları",
+          "note": "Burger menüsünün yanında günlük hazırlanan çıtır soğan halkaları, baharatlı patates kızartması ve trüflü aioli sos sıkça tercih ediliyor.",
+          "proof": "mianteburger.com resmi sayfası ve Yemeksepeti değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Modern sokak önü masalar ve temiz iç servis salonu",
+        "crowdAndNoise": "Öğle sonrası ve akşam saatlerinde yerel burger severlerle canlı ama düzenli",
+        "disadvantage": "Cadde üzerindeki popülerliği nedeniyle akşam saatlerinde kurye ve masa trafiği bir arada yoğunlaşabiliyor",
+        "transit": "Atatürk Bulvarı üzerinden Yunus Emre Caddesi batı yönüne yürüyerek altı dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Miante Burger",
+          "url": "https://maps.google.com/?cid=15153284494200207089",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Saray Mah. Yunus Emre Cd. No:46/A konumu doğrulandı"
+        },
+        {
+          "title": "Miante Burger Resmi Sitesi",
+          "url": "https://mianteburger.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Smash burger konsepti ve günlük taze köfte hazırlığı"
+        },
+        {
+          "title": "Restoranim — Miante Burger",
+          "url": "https://www.restoranim.net/isletme/miante-burger-13353",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mia Smash, Trüf Burger ve köfte dokusu geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Dışı çıtır içi sulu smash köfte kıvamı",
+        "Oklahoma ve Blueberry gibi özgün smash alternatifleri"
+      ],
+      "cons": [
+        "Akşam paket servis yoğunluğunda masa servisinin yavaşlayabilmesi"
+      ],
+      "uncertainties": [
+        "Özel smash çeşitlerinin günlük stokları akşam geç saatte azalabiliyor"
+      ],
+      "selectionScore": 96,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-felice-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Felice Coffee & Burger",
+      "branchName": "Şekerhane, Yayla Yolu Cd. No:26/B, 07400 Alanya/Antalya",
+      "placeId": "ChIJ68xMC3qZ3BQRfU3UzGXlrNM",
+      "coordinates": {
+        "lat": 36.5460346,
+        "lng": 32.003301799999996
+      },
+      "rating": 4.9,
+      "userRatingCount": 362,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://feliceburger.web.tr/Menu",
+      "mapsUri": "https://maps.google.com/?cid=15252818263387950461",
+      "recommendedPrimary": [
+        "Közzy Burger",
+        "Egg Burger",
+        "BBQ Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Margarita Pizza & Günlük Magnolya",
+          "note": "Burger dışında ince hamurlu Margarita pizza ve vitrinde günlük çıkan taze magnolya-pasta dilimleri sıkça sipariş ediliyor.",
+          "proof": "feliceburger.web.tr resmi menüsü ve Restoranim kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Rahat iç oturma düzeni ve cadde kenarı samimi masalar",
+        "crowdAndNoise": "Gençler, öğrenciler ve çevre mahalle sakinleriyle akşamüstü ve geceye kadar hareketli",
+        "disadvantage": "Turistik sahil şeridinden içeride, Yayla Yolu üzerinde yer aldığı için sahil yürüyüşü sırasında yürüyüş mesafesi uzuyor",
+        "transit": "Şekerhane Cuma Pazarı ve Hacet kavşağından Yayla Yolu Caddesi kuzeyine yürüyerek beş dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Felice Coffee & Burger",
+          "url": "https://maps.google.com/?cid=15252818263387950461",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Şekerhane Mah. Yayla Yolu Cd. No:26/B konumu doğrulandı"
+        },
+        {
+          "title": "Felice Burger Resmi Menüsü",
+          "url": "https://feliceburger.web.tr/Menu",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Kasap köfte burger çeşitleri, pizza ve tatlı menüsü"
+        },
+        {
+          "title": "Restoranim — Felice Coffee & Burger",
+          "url": "https://restoranim.net/isletme/felice-coffee-burger-alanya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Közzy Burger ve fiyat-performans dengesi notları"
+        },
+        {
+          "title": "Yemeksepeti — Felice Coffee & Burgers",
+          "url": "https://www.yemeksepeti.com/restoran/felice-coffee-burgers-sekerhane-mah-yayla-yolu-cad-antalya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "El yapımı köfte ve paket servis değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Mahalle içinde turist kalabalığından uzak yerel burgerci",
+        "Hem burger hem günlük tatlı çeşitliliği"
+      ],
+      "cons": [
+        "İskele ve Kleopatra sahil hattına birkaç blok içeride kalması"
+      ],
+      "uncertainties": [
+        "Yoğun akşam saatlerinde sipariş hazırlık süresi uzayabiliyor"
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-smes-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Smeş Burger & More",
+      "branchName": "Güller Pınarı, Sahire Tüzün Cd. No:3A, 07000 Alanya/Antalya",
+      "placeId": "ChIJ6cGQJgeZ3BQRSFvTt-SNH7Q",
+      "coordinates": {
+        "lat": 36.5440876,
+        "lng": 32.0138064
+      },
+      "rating": 4.7,
+      "userRatingCount": 84,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12979248664581200712",
+      "recommendedPrimary": [
+        "Hot Honey Smash Burger",
+        "Double Smash Burger",
+        "Smeş's Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Smash Tacos & Focaccia Sandviçler",
+          "note": "Burger ekmeği yerine tortilla içinde ezilmiş köfteli Hot Honey Smash Taco ve focaccia sandviçler menünün özgün yan ürünleri.",
+          "proof": "Restoranim ve Migros Yemek Smeş Alanya menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt iç mekan ve sokak seviyesinde hızlı oturum masaları",
+        "crowdAndNoise": "Özellikle akşam saatlerinde smash burger ve taco arayan genç kitleyle hareketli",
+        "disadvantage": "Küçük ölçekli bir burger dükkanı olduğu için kalabalık arkadaş grupları yerine hızlı bireysel/ikili öğünlere uygun",
+        "transit": "Atatürk Anıtı ve Ahmet Tokuş Bulvarı doğusundan Sahire Tüzün Caddesi içine yürüyerek altı dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Smeş. Burger & More",
+          "url": "https://maps.google.com/?cid=12979248664581200712",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Güller Pınarı Mah. Sahire Tüzün Cd. No:3A konumu doğrulandı"
+        },
+        {
+          "title": "Restoranim — Smeş. Burger & More",
+          "url": "https://restoranim.net/mekan/smes-burger-more-alanya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hot Honey Smash ve smash burger geri bildirimleri"
+        },
+        {
+          "title": "Migros Yemek — Smeş Alanya",
+          "url": "https://www.migros.com.tr/yemek/smes-alanya-guller-pinari-mah-s78635",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Smash taco, focaccia ve burger menü detayları"
+        }
+      ],
+      "pros": [
+        "Güller Pınarında özgün acı ballı smash burger ve smash taco seçenekleri",
+        "Hızlı ve taze ızgara çıkışı"
+      ],
+      "cons": [
+        "Dar oturma kapasitesi ve merkez çarşı doğusunda kalması"
+      ],
+      "uncertainties": [
+        "Sezon dışında geç akşam menü bulunurluğu değişebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-buns-bites",
+      "categoryId": "hamburger",
+      "resolvedName": "Buns & Bites Burger",
+      "branchName": "ANTALYA, Şekerhane, 1139. Sk. 4B, 07000 Alanya/Antalya",
+      "placeId": "ChIJI3KlJVKj3BQRugb3bzS0ni4",
+      "coordinates": {
+        "lat": 36.5423545,
+        "lng": 31.998436599999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 55,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.bunsandbites.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=3359320509374727866",
+      "recommendedPrimary": [
+        "Buns & Bites Burger",
+        "Trüf Mantar Burger",
+        "Jalapeno Fox Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çıtır Tavuk Parçaları & İzmir Kumru",
+          "note": "Burger menülerine eşlik eden taze patates kızartmasının yanında çıtır tavuk atıştırmalıkları ve kumru çeşitleri de sunuluyor.",
+          "proof": "bunsandbites.com.tr resmi menüsü ve Restoranim değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük sokak cephesi masaları ve ağırlıklı hızlı servis düzeni",
+        "crowdAndNoise": "Merkez çarşıya yakın konumuyla öğle ve akşam saatlerinde pratik burger arayanlarla hareketli",
+        "disadvantage": "Oturma alanı sınırlı ve ara sokakta konumlandığı için özellikle paket servis ağırlıklı çalışıyor",
+        "transit": "Alanya Çarşı ve Hükümet Caddesi kuzeyindeki 1139. Sokak üzerinde yürüyerek üç dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Buns&Bites Burger",
+          "url": "https://maps.google.com/?cid=3359320509374727866",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Şekerhane Mah. 1139. Sk. 4B konumu doğrulandı"
+        },
+        {
+          "title": "Buns & Bites Resmi Sitesi",
+          "url": "http://www.bunsandbites.com.tr/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Kaburga köfte harmanı ve güncel burger menüsü"
+        },
+        {
+          "title": "Restoranim — Buns & Bites Burger",
+          "url": "https://www.restoranim.net/mekan/bunsbites-burger-alanya-antalya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "El yapımı burger kalitesi ve kullanıcı puanları"
+        },
+        {
+          "title": "Yemeksepeti — Buns & Bites Urban Grill",
+          "url": "https://www.yemeksepeti.com/restaurant/eu4m/buns-bites-urban-grill",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Trüf Mantar Burger ve taze ekmek geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Kaburga-antrikot et harmanıyla güçlü köfte lezzeti",
+        "Merkez çarşıya çok yakın ara sokak konumu"
+      ],
+      "cons": [
+        "Kısıtlı masa kapasitesi ve sade oturum alanı"
+      ],
+      "uncertainties": [
+        "Paket servis yoğunluğu yerinde servis hızını zaman zaman etkileyebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-greenspresso",
+      "categoryId": "kahve",
+      "resolvedName": "Greenspresso Coffee & Roastery",
+      "branchName": "Saray, Tarım Sk No:2/A, 07400 Alanya/Antalya",
+      "placeId": "ChIJ_7sz7CmZ3BQRbl1u2dbn1A4",
+      "coordinates": {
+        "lat": 36.544322099999995,
+        "lng": 31.994103299999995
+      },
+      "rating": 4.9,
+      "userRatingCount": 171,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.greenspresso.com/",
+      "mapsUri": "https://maps.google.com/?cid=1068733921550556526",
+      "recommendedPrimary": [
+        "Cold Brew",
+        "Flat White",
+        "V60 Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kavrulmuş Paket Çekirdek & Günlük Tatlılar",
+          "note": "Evde demleme için taze kavrulmuş paket çekirdek satışının yanı sıra kahveye eşlik eden günlük tatlı dilimleri sunuluyor.",
+          "proof": "greenspresso.com resmi sitesi ve Restoranim incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Bitkilerle süslü aydınlık iç mekan, sakin çalışma masaları ve sıcak avlu",
+        "crowdAndNoise": "Kahve meraklıları, baristalar ve dizüstü bilgisayarıyla sakin çalışma alanı arayanlarla dingin",
+        "disadvantage": "Ana kahve odağı nedeniyle kapsamlı sıcak yemek veya serpme kahvaltı beklentisine yönelik değildir",
+        "transit": "Damlataş ve Saray ara sokakları içinde Tarım Sokak üzerinde yürüyerek üç dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Greenspresso Coffee & Roastery",
+          "url": "https://maps.google.com/?cid=1068733921550556526",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Saray Mah. Tarım Sk. No:2/A konumu doğrulandı"
+        },
+        {
+          "title": "Greenspresso Resmi Sitesi",
+          "url": "https://www.greenspresso.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Yerinde kahve kavurma atölyesi ve yöresel çekirdek portföyü"
+        },
+        {
+          "title": "Restoranim — Greenspresso Coffee & Roastery",
+          "url": "https://www.restoranim.net/isletme/greenspresso-coffee-roastery",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Cold brew, flat white ve sessiz çalışma ortamı notları"
+        },
+        {
+          "title": "Restaurant Guru — Greenspresso",
+          "url": "https://tr.restaurantguru.com/Coffee-and-Roastery-Alanya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze kavrum kalitesi ve temizlik geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Alanya Merkezde yerinde taze kavrum yapan üçüncü nesil roastery",
+        "Bitkili, ferah ve çalışma dostu sakin atmosfer"
+      ],
+      "cons": [
+        "Yemek çeşitliliğinin sınırlı tutulması"
+      ],
+      "uncertainties": [
+        "Mevsimsel tek köken çekirdek stokları kavrum takvimine göre değişebiliyor"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-zero-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Zero Coffee",
+      "branchName": "Şekerhane, 1100. Sk. No:8, 07400, 07400 Alanya/Antalya",
+      "placeId": "ChIJ90a_NoWZ3BQR3dCuczjW0TY",
+      "coordinates": {
+        "lat": 36.5431447,
+        "lng": 32.0007589
+      },
+      "rating": 4.7,
+      "userRatingCount": 707,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3950173886127984861",
+      "recommendedPrimary": [
+        "Chemex / Aeropress Demleme",
+        "Cold Brew",
+        "Cortado"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Brownie & Çikolatalı Eşlikçiler",
+          "note": "Nitelikli kahve sunumlarının yanında özellikle yoğun kıvamlı brownie çeşitleri ve bitkisel süt alternatifleri öne çıkıyor.",
+          "proof": "Restoranim ve Restaurant Guru Zero Coffee kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Şık tasarlanmış iç bar oturumu, rahat koltuklar ve sakin sokak masaları",
+        "crowdAndNoise": "Gün içinde nitelikli kahve molası veren yerleşikler ve hayvan dostu ortam arayanlarla dengeli dolu",
+        "disadvantage": "Popüler saatlerde iç mekandaki rahat köşeler çabuk dolabiliyor; salt kahve ve tatlı odaklıdır",
+        "transit": "Atatürk Bulvarı ve Hayate Hanım Caddesi kesişiminden 1100. Sokak içine yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — ZERO COFFEE",
+          "url": "https://maps.google.com/?cid=3950173886127984861",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Şekerhane Mah. 1100. Sk. No:8 konumu doğrulandı"
+        },
+        {
+          "title": "Restoranim — Zero Coffee",
+          "url": "https://www.restoranim.net/isletme/zero-coffee",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Aeropress, Chemex, Delter Press ve soğuk demleme menüsü"
+        },
+        {
+          "title": "Restaurant Guru — ZERO COFFEE",
+          "url": "https://restaurantguru.com/ZERO-COFFEE-Alanya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Brownie, barista sunumu ve atmosfer değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Zengin üçüncü nesil demleme ekipmanı seçkisi",
+        "Merkezi çarşı sokakları içinde sakin ve evcil hayvan dostu düzen"
+      ],
+      "cons": [
+        "Yoğun öğleden sonraları masa bulmanın zorlaşabilmesi"
+      ],
+      "uncertainties": [
+        "Sezonluk imza soğuk kahve reçeteleri yaz-kış değişebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-caffe-della-via",
+      "categoryId": "kahve",
+      "resolvedName": "Caffe Della Via",
+      "branchName": "Şekerhane, 1100. Sk. Ortaklar İş Mrk D:7/D, 07400 Alanya/Antalya",
+      "placeId": "ChIJT5DzZXqY3BQRfEgLmuEVrzc",
+      "coordinates": {
+        "lat": 36.54325800000001,
+        "lng": 32.000589
+      },
+      "rating": 4.6,
+      "userRatingCount": 372,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4012449851706656892",
+      "recommendedPrimary": [
+        "Flat White",
+        "Espresso Bazlı Latte",
+        "Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "San Sebastián Cheesecake & Ev Yapımı Tatlılar",
+          "note": "Dünya kahvelerine eşlik eden günlük ev yapımı tatlılar ve San Sebastián cheesecake dilimleri özellikle öğleden sonra molalarında tercih ediliyor.",
+          "proof": "Restoranim, Restaurant Guru ve Alanya.date Caffe Della Via kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Şık aydınlatmalı butik iç salon ve pasaj önü sakin masalar",
+        "crowdAndNoise": "Sakin kahve buluşması ve ikili sohbet arayan yerel müdavimlerle dengeli",
+        "disadvantage": "Büyük bahçeli kafeler yerine kompakt butik salon ölçeğindedir; yoğun hafta sonları masalar çabuk dolabiliyor",
+        "transit": "Atatürk Bulvarı ve Hükümet Caddesi arasından 1100. Sokak Ortaklar İş Merkezi girişine yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Caffe Della Via",
+          "url": "https://maps.google.com/?cid=4012449851706656892",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Şekerhane Mah. 1100. Sk. D:7/D konumu doğrulandı"
+        },
+        {
+          "title": "Restoranim — Caffe Della Via",
+          "url": "https://www.restoranim.net/mekan/caffe-della-via-19343",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Butik kahveci atmosferi ve tatlı eşlikçileri notları"
+        },
+        {
+          "title": "Restaurant Guru — Caffe Della Via",
+          "url": "https://restaurantguru.com/Caffe-Della-Via-Alanya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahve kalitesi ve samimi ortam değerlendirmeleri"
+        },
+        {
+          "title": "Alanya.date — Caffe Della Via",
+          "url": "https://alanya.date/v/places/caffe-della-via",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Şekerhane merkez buluşma noktası rehber kaydı"
+        }
+      ],
+      "pros": [
+        "Çarşı merkezinde gürültüden izole samimi butik kahveci",
+        "Kahve ve ev yapımı tatlı uyumu"
+      ],
+      "cons": [
+        "Sınırlı masa kapasitesi"
+      ],
+      "uncertainties": [
+        "Tatlı vitrini günlük üretime göre değişiklik gösterebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-kahveci-enes",
+      "categoryId": "kahve",
+      "resolvedName": "Kahveci Enes",
+      "branchName": "Şekerhane, Hasan Karagöz Sk., 07400 Alanya/Antalya",
+      "placeId": "ChIJkzkMgJ-Z3BQRfFXy1OnMx20",
+      "coordinates": {
+        "lat": 36.5464602,
+        "lng": 32.0000983
+      },
+      "rating": 5,
+      "userRatingCount": 123,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7910516575171663228",
+      "recommendedPrimary": [
+        "Taze Çekilmiş Türk Kahvesi",
+        "Filtre Kahve",
+        "Espresso"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Paket Taze Çekilmiş Kahve & Ev Kurabiyeleri",
+          "note": "Fincan servisinin yanında eve götürmek için siparişe göre çekilen taze kahve paketleri ve sade kurabiyeler tercih ediliyor.",
+          "proof": "kahvecienes.com resmi sitesi, Restoranim ve Restaurant Guru kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı dükkan içi tezgah önü ve sokak kenarı birkaç tabure-masa",
+        "crowdAndNoise": "Sabah dokuzdan itibaren çarşı esnafı ve kahve tutkunlarıyla sıcak ve samimi",
+        "disadvantage": "Büyük kafe salonu yerine geleneksel kavurmacı-kahveci ölçeğinde olduğundan uzun laptop oturumlarına uygun değil",
+        "transit": "Şekerhane Cuma Pazarı meydanı ve Atatürk Bulvarı'ndan Hasan Karagöz Sokak içine yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Kahveci Enes",
+          "url": "https://maps.google.com/?cid=7910516575171663228",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Şekerhane Mah. Hasan Karagöz Sk. konumu doğrulandı"
+        },
+        {
+          "title": "Kahveci Enes Resmi Sitesi",
+          "url": "https://kahvecienes.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Taze kavrum Türk kahvesi ve espresso bazlı demleme bilgileri"
+        },
+        {
+          "title": "Restoranim — Kahveci Enes",
+          "url": "https://www.restoranim.net/isletme/kahveci-enes-alanya-antalya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze çekilmiş kahve ve güler yüzlü hizmet notları"
+        },
+        {
+          "title": "Restaurant Guru — Kahveci Enes",
+          "url": "https://restaurantguru.com/Kahveci-Enes-Alanya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahve aroması, kurabiye ve yerel müdavim geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Alanya çarşısı içinde taze kavrum ve öğütüm yapan özgün yerel kahveci",
+        "Geleneksel Türk kahvesi ve espresso dengesi"
+      ],
+      "cons": [
+        "Sınırlı oturma alanı ve sade sokak düzeni"
+      ],
+      "uncertainties": [
+        "Cuma Pazarı kurulduğu günlerde çevre sokaklarda yaya yoğunluğu artıyor"
+      ],
+      "selectionScore": 96,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-mahperi",
+      "categoryId": "date",
+      "resolvedName": "Mahperi Restaurant",
+      "branchName": "Çarşı, Rıhtım Cd. no:20, 07400 Alanya/Antalya",
+      "placeId": "ChIJW-CEwXCY3BQRgZGFf4hsgtg",
+      "coordinates": {
+        "lat": 36.5411979,
+        "lng": 31.999631899999997
+      },
+      "rating": 4.6,
+      "userRatingCount": 671,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.mahperi.net/",
+      "mapsUri": "https://maps.google.com/?cid=15601151392675631489",
+      "recommendedPrimary": [
+        "Deniz Levreği Izgara",
+        "Dana Bonfile Spesiyal",
+        "Kalamar & Karides Başlangıç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Şarap Eşleşmesi & Akşamüstü Liman Kokteylleri",
+          "note": "Gün batımından geceye uzanan rıhtım masalarında yerli-yabancı şarap kavı ve klasik kokteyller sofrayı tamamlıyor.",
+          "proof": "mahperi.net resmi sayfası ve TripAdvisor Mahperi Restaurant kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Liman ve kale manzaralı açık rıhtım terası ile klasik iç yemek salonu",
+        "crowdAndNoise": "Özellikle gün batımı ve akşam yemeğinde çiftler ve köklü Alanya atmosferi arayanlarla dolu",
+        "disadvantage": "Liman önündeki tarihi konumu nedeniyle yaz akşamları ön sıra masalar rezervasyonsuz bulunmuyor",
+        "transit": "Alanya Rıhtım Caddesi ve Kızılkule arasında liman boyunca yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Mahperi Restaurant",
+          "url": "https://maps.google.com/?cid=15601151392675631489",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı Mah. Rıhtım Cd. No:20 konumu doğrulandı"
+        },
+        {
+          "title": "Mahperi Restaurant Resmi Sitesi",
+          "url": "http://www.mahperi.net/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "1947 kuruluş geçmişi ve liman önü Akdeniz mutfağı"
+        },
+        {
+          "title": "TripAdvisor — Mahperi Restaurant",
+          "url": "https://www.tripadvisor.com.tr/Restaurant_Review-g297961-d2272825-Reviews-Mahperi_Restaurant-Alanya_Turkish_Mediterranean_Coast.html",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tarihi atmosfer, manzara ve akşam yemeği değerlendirmeleri"
+        },
+        {
+          "title": "Restoranim — Mahperi Restaurant",
+          "url": "https://www.restoranim.net/mekan/mahperi-restaurant-alanya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kale etekleri manzarası ve servis kalitesi notları"
+        }
+      ],
+      "pros": [
+        "1947 yılından uzanan tarihi liman kimliği",
+        "Kale ve deniz manzaralı romantik rıhtım masaları"
+      ],
+      "cons": [
+        "Turistik rıhtım hattında üst-orta fiyat seviyesi ve yaz kalabalığı"
+      ],
+      "uncertainties": [
+        "Rıhtım üzerindeki akşam yaya trafiği ön masalarda hissedilebiliyor"
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-merlot-restaurant",
+      "categoryId": "date",
+      "resolvedName": "Merlot Restaurant Alanya",
+      "branchName": "Çarşı, İskele Cd. No:43, 07400 Alanya/Antalya",
+      "placeId": "ChIJS12j2VaZ3BQRI8jn4D-A_oI",
+      "coordinates": {
+        "lat": 36.537791999999996,
+        "lng": 31.998251099999997
+      },
+      "rating": 4.8,
+      "userRatingCount": 1032,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://merlotrestaurantalanya.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=9439122880859719715",
+      "recommendedPrimary": [
+        "Dana Bonfile & Antrikot",
+        "Deniz Mahsulleri Tabağı",
+        "Izgara Levrek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yerli-Yabancı Şarap Kavı & Akşam Tatlıları",
+          "note": "Yemek eşleşmesi için özenle seçilen şarap kavı ve özel gün akşamlarında sunulan şık tatlı tabakları öne çıkıyor.",
+          "proof": "merlotrestaurantalanya.com.tr resmi sitesi ve Sosyete Gazetesi seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Liman manzaralı loş aydınlatmalı teras ve zarif iç salon masaları",
+        "crowdAndNoise": "Özel kutlamalar, çiftler ve şarap-yemek eşleşmesi arayan misafirlerle şık ve dingin",
+        "disadvantage": "Fine-dining çizgisi ve iskele konumu nedeniyle bütçe seviyesi yüksektir; manzaralı masalar için önceden rezervasyon gerekir",
+        "transit": "Alanya İskele ve Kızılkule meydanından İskele Caddesi boyunca yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Merlot Restaurant Alanya",
+          "url": "https://maps.google.com/?cid=9439122880859719715",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı Mah. İskele Cd. No:43 konumu doğrulandı"
+        },
+        {
+          "title": "Merlot Restaurant Resmi Sitesi",
+          "url": "https://merlotrestaurantalanya.com.tr/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Fine dining Akdeniz mutfağı ve şarap kavı detayları"
+        },
+        {
+          "title": "Sosyete Gazetesi — Alanya Merlot",
+          "url": "https://www.sosyetegazetesi.com.tr/Alanya-Merlot-Restaurant/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Şarap kavı, kale manzarası ve romantik akşam atmosferi incelemesi"
+        },
+        {
+          "title": "Restoranim — Merlot Restaurant",
+          "url": "https://www.restoranim.net/mekan/merlot-restaurant-alanya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Deniz mahsulleri ve biftek memnuniyeti notları"
+        }
+      ],
+      "pros": [
+        "Alanya İskelede seçkin şarap kavı ve şık masa sunumu",
+        "Kale ile limanı gören sakin akşam terası"
+      ],
+      "cons": [
+        "Yüksek fiyat seviyesi ve rezervasyon gerekliliği"
+      ],
+      "uncertainties": [
+        "Hafta sonu özel kutlama masaları teras kapasitesini erkenden doldurabiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-kaleici-meyhanesi",
+      "categoryId": "date",
+      "resolvedName": "Kaleiçi Meyhanesi Alanya",
+      "branchName": "Çarşı, İskele Cd. No:80, 07400 Alanya/Antalya",
+      "placeId": "ChIJ7yYeAXSY3BQRECZu6FpMBzA",
+      "coordinates": {
+        "lat": 36.537898999999996,
+        "lng": 31.998034
+      },
+      "rating": 4.6,
+      "userRatingCount": 783,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://kaleicimeyhanesi.com/",
+      "mapsUri": "https://maps.google.com/?cid=3460818791987815952",
+      "recommendedPrimary": [
+        "Soğuk Meze Seçkisi",
+        "Kalamar & Karides Güveç",
+        "Izgara Deniz Balığı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Girit Ezmesi & Sıcak Paçanga Ara Sıcakları",
+          "note": "Rakı sofrasının açılışında taze otlu Girit mezeleri ve çıtır ara sıcaklar ana balık öncesi paylaşılmak üzere övülüyor.",
+          "proof": "kaleicimeyhanesi.com resmi sitesi ve Meyhanedeyiz kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Deniz cepheli balkon-teras masaları ve klasik meyhane iç salonu",
+        "crowdAndNoise": "Akşamları çiftler, arkadaş grupları ve rakı-meze eşliğinde keyifli sohbet arayanlarla canlı",
+        "disadvantage": "İskele hattındaki yüksek bütçe seviyesinde yer alır; popüler hafta sonu akşamlarında müzik sesi yükselebiliyor",
+        "transit": "Alanya Limanı üzerinden İskele Caddesi kuzeyine yürüyerek üç dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Kaleiçi Meyhanesi Alanya",
+          "url": "https://maps.google.com/?cid=3460818791987815952",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı Mah. İskele Cd. No:80 konumu doğrulandı"
+        },
+        {
+          "title": "Kaleiçi Meyhanesi Resmi Sitesi",
+          "url": "https://kaleicimeyhanesi.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Deniz manzaralı meyhane menüsü ve rezervasyon bilgileri"
+        },
+        {
+          "title": "Meyhanedeyiz — Kaleiçi Meyhanesi Alanya",
+          "url": "https://meyhanedeyiz.biz/mekan/kaleici-meyhanesi-alanya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Meze çeşitliliği, ara sıcaklar ve deniz manzarası değerlendirmeleri"
+        },
+        {
+          "title": "Restoranim — Kaleiçi Meyhanesi",
+          "url": "https://restoranim.net/mekan/kaleici-meyhanesi-alanya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Meze tazeliği ve meyhane ambiyansı notları"
+        }
+      ],
+      "pros": [
+        "İskele kıyısında açık deniz manzaralı meyhane sofrası",
+        "Geniş meze ve deniz ürünü ara sıcak repertuvarı"
+      ],
+      "cons": [
+        "Yüksek fiyat seviyesi ve hareketli gece atmosferi"
+      ],
+      "uncertainties": [
+        "Canlı müzik programları sezona göre değişiklik gösterebiliyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-le-chevy",
+      "categoryId": "date",
+      "resolvedName": "Le Chevy Restaurant",
+      "branchName": "Saray, Damlataş Cd. No:76, 07400 Alanya/Antalya",
+      "placeId": "ChIJQ0bC-pyi3BQRTuSoTZ1s6to",
+      "coordinates": {
+        "lat": 36.543759,
+        "lng": 31.9894212
+      },
+      "rating": 4.9,
+      "userRatingCount": 3843,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/lechevyrestorant/",
+      "mapsUri": "https://maps.google.com/?cid=15774540067687162958",
+      "recommendedPrimary": [
+        "Karidesli Makarna",
+        "Özel Soslu Dana Steak",
+        "Meksika Usulü Fajita"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İmza Akşam Kokteylleri & Tatlı Seçkisi",
+          "note": "Yemek sonrası barda hazırlanan özel kokteyller ve sıcak çikolatalı tatlılar özellikle çiftlerin akşam buluşmalarında tercih ediliyor.",
+          "proof": "Gezinomi Alanya restoran rehberi ve Explore Alanya incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Şık aydınlatmalı cadde verandası ve özenle dekore edilmiş iç mekan masaları",
+        "crowdAndNoise": "Yerli ve yabancı misafirlerle akşam saatlerinde oldukça yoğun; rezervasyon öneriliyor",
+        "disadvantage": "Damlataş Caddesi üzerindeki yüksek popülaritesi nedeniyle sezonda yürüyerek gelen misafirler kısa masa beklemesi yaşayabiliyor",
+        "transit": "Damlataş Mağarası ve Alanya Arkeoloji Müzesi aksından yürüyerek üç dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Le Chevy Restaurant",
+          "url": "https://maps.google.com/?cid=15774540067687162958",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Saray Mah. Damlataş Cd. No:76 konumu doğrulandı"
+        },
+        {
+          "title": "Le Chevy Resmi Instagram",
+          "url": "https://www.instagram.com/lechevyrestorant/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Akşam sunumları, kokteyller ve mutfak paylaşımları"
+        },
+        {
+          "title": "Explore Alanya — Le Chevy Restaurant",
+          "url": "https://www.explorealanya.com/le-chevy-restaurant",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Fransız-Akdeniz mutfağı ve servis kalitesi değerlendirmesi"
+        },
+        {
+          "title": "Gezinomi — Alanya Restoran Rehberi",
+          "url": "https://gezinomi.com/blog/alanyanin-me%C5%9Fhur-yemekleri-ve-restoranlar%C4%B1",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Karidesli makarna, lazanya ve dünya mutfağı vurgusu"
+        }
+      ],
+      "pros": [
+        "Damlataş bölgesinde yüksek servis istikrarı ve şık akşam atmosferi",
+        "Vegan ve glutensiz menü hassasiyeti"
+      ],
+      "cons": [
+        "Damlataş cadde kenarı konumu nedeniyle yaz akşamları yoğunluk"
+      ],
+      "uncertainties": [
+        "Sezonda akşam yemeği için rezervasyonsuz masa bulmak zorlaşabiliyor"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-tlc-restoran",
+      "categoryId": "date",
+      "resolvedName": "TLC Restoran",
+      "branchName": "Şekerhane, Müftüler Sk, 07400 Alanya/Antalya",
+      "placeId": "ChIJqyHCtXCY3BQReZXoJduvUi0",
+      "coordinates": {
+        "lat": 36.541799999999995,
+        "lng": 31.998800000000003
+      },
+      "rating": 4.8,
+      "userRatingCount": 965,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/tlcrestaurantbar07?igsh=Ym82eXFvanhoNWN4&utm_source=qr",
+      "mapsUri": "https://maps.google.com/?cid=3265866035565729145",
+      "recommendedPrimary": [
+        "Özel Soslu Dana Steak",
+        "Sarımsaklı Karides Tava",
+        "Meksika Usulü Tabaklar"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Çikolatalı Sufle & Akşam İçecekleri",
+          "note": "Akşam yemeğinin kapanışında sıcak servis edilen akışkan çikolatalı sufle misafirler arasında sıkça öne çıkarılıyor.",
+          "proof": "Restoranim ve Restaurant Guru TLC Restoran Alanya kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Bakımlı dış mekan bahçe-sokak masaları ve temiz iç restoran salonu",
+        "crowdAndNoise": "Akşam yemeği saatlerinde çiftler ve özenli servis arayan küçük gruplarla dengeli dolu",
+        "disadvantage": "İthal et ve özel mutfak çizgisi nedeniyle fiyat seviyesi merkez ortalamasının üzerindedir",
+        "transit": "Şekerhane Cuma Pazarı ve Hükümet Caddesi arasından Müftüler Sokak içine yürüyerek üç dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Tlc Restoran",
+          "url": "https://maps.google.com/?cid=3265866035565729145",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Şekerhane Mah. Müftüler Sk. konumu doğrulandı"
+        },
+        {
+          "title": "TLC Restoran Resmi Instagram",
+          "url": "https://www.instagram.com/tlcrestaurantbar07/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Akşam et sunumları ve güncel mutfak paylaşımları"
+        },
+        {
+          "title": "Restoranim — TLC Restoran Alanya",
+          "url": "https://restoranim.net/mekan/tlc-restoran-alanya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Steak, hijyen ve dış mekan atmosferi değerlendirmeleri"
+        },
+        {
+          "title": "Restaurant Guru — TLC Restoran",
+          "url": "https://restaurantguru.com/Tlc-Restoran-Alanya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Karides, çikolatalı sufle ve servis kalitesi notları"
+        }
+      ],
+      "pros": [
+        "Merkez Şekerhanede yüksek puanlı temiz akşam yemeği ortamı",
+        "Steak, deniz ürünü ve vegan alternatif dengesi"
+      ],
+      "cons": [
+        "Üst-orta fiyat seviyesi ve sahil manzarası sunmaması"
+      ],
+      "uncertainties": [
+        "Sezona bağlı olarak akşam masa dolulukları rezervasyon gerektirebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-smak-cafe",
+      "categoryId": "kahvalti",
+      "resolvedName": "SMAK Cafe & Eatery",
+      "branchName": "Saray, İsmet Hilmi Balcı Cd. no:1/1, 07400 Alanya/Antalya",
+      "placeId": "ChIJuc4D1bSj3BQR8wdby-1GNn8",
+      "coordinates": {
+        "lat": 36.5436739,
+        "lng": 31.9881446
+      },
+      "rating": 4.7,
+      "userRatingCount": 1120,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://smakcafeeatery.com/",
+      "mapsUri": "https://maps.google.com/?cid=9166592078692157427",
+      "recommendedPrimary": [
+        "Füme Somonlu Eggs Benedict",
+        "Avokado Toast",
+        "Smac Açai Bowl"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bademli Kruvasan & Özel Danish Çeşitleri",
+          "note": "Sabah kahvaltısına eşlik eden taze kruvasanlar ve nitelikli kahve barı günün ilerleyen saatlerine kadar sürüyor.",
+          "proof": "smakcafeeatery.com resmi sitesi, HappyCow ve Yemeksepeti kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Estetik iç mekan, aydınlık cadde terası ve rahat brunch masaları",
+        "crowdAndNoise": "Geç sabah brunch saatlerinde genç profesyoneller ve modern kahvaltı arayanlarla canlı",
+        "disadvantage": "Geleneksel çok tabaklı Türk serpme kahvaltısı yerine modern porsiyon tabaklar sunar ve fiyatlar ortalama kafelerin üzerindedir",
+        "transit": "Damlataş ve Kleopatra Plajı yürüme aksındaki İsmet Hilmi Balcı Caddesi başında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — SMAK Cafe & Eatery",
+          "url": "https://maps.google.com/?cid=9166592078692157427",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Saray Mah. İsmet Hilmi Balcı Cd. No:1/1 konumu doğrulandı"
+        },
+        {
+          "title": "SMAK Cafe & Eatery Resmi Sitesi",
+          "url": "https://smakcafeeatery.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Modern brunch, sağlıklı kaseler ve fırın ürünleri"
+        },
+        {
+          "title": "Yemeksepeti — SMAK Cafe & Eatery",
+          "url": "https://www.yemeksepeti.com/restoran/smak-cafe-eatery-saray-mah-antalya-alanya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Eggs Benedict, Acai Bowl ve kruvasan menüsü"
+        },
+        {
+          "title": "HappyCow — SMAK Cafe & Eatery",
+          "url": "https://www.happycow.net/reviews/smak-cafe-eatery-x-cadde-alanya-420768",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Vegan ve glutensiz brunch seçenekleri değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Modern brunch ve sağlıklı kase seçeneklerinde şehirdeki en güçlü adreslerden",
+        "Vegan ve glutensiz hassasiyeti"
+      ],
+      "cons": [
+        "Geleneksel serpme kahvaltı bekleyenlere hitap etmemesi"
+      ],
+      "uncertainties": [
+        "Hafta sonu geç sabah saatlerinde dış masalar hızla dolabiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-tersane-cafe",
+      "categoryId": "kahvalti",
+      "resolvedName": "Tersane Cafe",
+      "branchName": "Tophane, Tersane Sk. No:7, 07400 Alanya/Antalya",
+      "placeId": "ChIJD9DcEv2Z3BQRSaa5MnAbIQc",
+      "coordinates": {
+        "lat": 36.53539550000001,
+        "lng": 31.9979023
+      },
+      "rating": 4.5,
+      "userRatingCount": 492,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/alanyatersanecafe/",
+      "mapsUri": "https://maps.google.com/?cid=513722001198261833",
+      "recommendedPrimary": [
+        "Sarımsaklı Yoğurtlu Çılbır",
+        "El Açması Gözleme",
+        "Sahanda Menemen"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Limonata & Demleme Çay",
+          "note": "Sıcak gözleme ve yumurta tabaklarının yanında taze sıkılan ev yapımı limonata ve deniz manzaralı çay servisi sıkça övülüyor.",
+          "proof": "alanyamag.com yerel dergisi ve Restoranim Tersane Cafe kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kale surları dibinde deniz ve tersane manzaralı gölgeli açık teras",
+        "crowdAndNoise": "Sabah yürüyüşü ve Tersane gezisi sonrası sakin manzara arayanlarla dengeli",
+        "disadvantage": "Tarihi Tophane sur içi yolundan taş basamak ve yokuş yürüyüşü gerektirdiği için araba doğrudan kapıya ulaşmıyor",
+        "transit": "Kızılkule arkasından tarihi Tersane yolu boyunca yürüyerek dört dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Tersane Cafe",
+          "url": "https://maps.google.com/?cid=513722001198261833",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Tophane Mah. Tersane Sk. No:7 konumu doğrulandı"
+        },
+        {
+          "title": "Tersane Cafe Resmi Instagram",
+          "url": "https://www.instagram.com/alanyatersanecafe/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Tarihi Tersane önü kahvaltı ve manzara paylaşımları"
+        },
+        {
+          "title": "AlanyaMag — Tersane Cafe",
+          "url": "https://alanyamag.com/tersane-cafe/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kale altı konum, çılbır ve el açması gözleme incelemesi"
+        },
+        {
+          "title": "Restoranim — Tersane Cafe",
+          "url": "https://restoranim.net/mekan/tersane-cafe-73442929",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Deniz manzarası ve ev yapımı limonata geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "Tarihi Alanya Tersanesi ve denize sıfır eşsiz konum",
+        "Çılbır ve taze açılan gözlemede otantik yerel lezzet"
+      ],
+      "cons": [
+        "Yaya taş yolu ve yokuş nedeniyle araç erişiminin sınırlı olması"
+      ],
+      "uncertainties": [
+        "Rüzgarlı ve yağışlı kış günlerinde açık teras oturumu kısıtlanabiliyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-karaff-van-kahvaltisi",
+      "categoryId": "kahvalti",
+      "resolvedName": "Van Kahvaltısı Karaff",
+      "branchName": "Kızlar Pınarı, Türkmenbaşı Cd. No:7, 07400 Alanya/Antalya",
+      "placeId": "ChIJP8wXn4-i3BQRfOFRxwomWLI",
+      "coordinates": {
+        "lat": 36.55034,
+        "lng": 31.981179500000003
+      },
+      "rating": 4.4,
+      "userRatingCount": 1426,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12851063364437270908",
+      "recommendedPrimary": [
+        "Van Serpme Kahvaltı",
+        "Geleneksel Murtuğa",
+        "Kavurmalı Sahanda Yumurta"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Van Otlu Peyniri, Yayık Tereyağı & Bal-Kaymak",
+          "note": "Sofranın temelini oluşturan doğal otlu peynir, taze yayık tereyağı ve sıcak tandır/ekmek eşliği büyük ilgi görüyor.",
+          "proof": "Restoranim ve Yemeksepeti Van Kahvaltısı Karaff kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç salon ve cadde boyunca ailelere uygun ferah masa düzeni",
+        "crowdAndNoise": "Hafta sonları aileler ve kalabalık sabah gruplarıyla oldukça yoğun",
+        "disadvantage": "Zengin serpme sofrası özellikle hafta sonları yüksek talep gördüğünden kalabalık saatlerde servis hızı yavaşlayabiliyor",
+        "transit": "Alanya Otogarı ve Kleopatra Plajı doğu girişine yakın Türkmenbaşı Caddesi üzerinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Van Kahvaltısı Karaff",
+          "url": "https://maps.google.com/?cid=12851063364437270908",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kızlar Pınarı Mah. Türkmenbaşı Cd. No:7 konumu doğrulandı"
+        },
+        {
+          "title": "Restoranim — Van Kahvaltısı Karaff",
+          "url": "https://www.restoranim.net/mekan/van-kahvaltisi-karaff-alanya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Otlu peynir, murtuğa ve serpme kahvaltı değerlendirmeleri"
+        },
+        {
+          "title": "Yemeksepeti — Van Kahvaltısı Karaff",
+          "url": "https://www.yemeksepeti.com/restoran/van-kahvaltisi-karaff-kizlar-pinari-mah-antalya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Van kahvaltı çeşitleri ve sahanda lezzetler"
+        }
+      ],
+      "pros": [
+        "Alanya Merkezde gerçek Van usulü otlu peynir ve murtuğa geleneği",
+        "Aile ve gruplara uygun geniş masa kapasitesi"
+      ],
+      "cons": [
+        "Hafta sonu yoğunluğunda servis bekleme süresi uzayabiliyor"
+      ],
+      "uncertainties": [
+        "Serpme dışı tek tabak seçenekleri hafta sonu kalabalığında sınırlı tutulabiliyor"
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-cuppa-corner",
+      "categoryId": "kahvalti",
+      "resolvedName": "Cuppa Corner",
+      "branchName": "Saray, Güzelyalı Cd. No:20/A, 07400 Alanya/Antalya",
+      "placeId": "ChIJCx-udHyj3BQRRXHNiMJL7po",
+      "coordinates": {
+        "lat": 36.5448929,
+        "lng": 31.9866045
+      },
+      "rating": 4.8,
+      "userRatingCount": 410,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://cuppacorner.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=11163943825188942149",
+      "recommendedPrimary": [
+        "Avokadolu & Poşe Yumurtalı Ekmek Üstü",
+        "Klasik Kahvaltı Tabağı",
+        "Tatlı & Tuzlu Kruvasan"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Nitelikli Kahveler & Ev Yapımı Soğuk Çaylar",
+          "note": "Sabah kahvaltısı yanında sıcak-soğuk espresso bazlı kahveler ve taze meyveli ev yapımı soğuk çaylar tercih ediliyor.",
+          "proof": "cuppacorner.com.tr resmi menüsü ve Restoranim değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaç gölgeli ferah köşe teras ve modern iç oturum masaları",
+        "crowdAndNoise": "Sabah kahvaltısından öğleden sonra kahve molasına kadar plaj çevresi misafirleriyle canlı",
+        "disadvantage": "Günün ilerleyen saatlerinde burger ve dünya mutfağı da servis ettiği için öğle sonrası saf kahvaltı sakinliğinden uzaklaşabiliyor",
+        "transit": "Damlataş Mağarası ve Kleopatra Plajı arasındaki Güzelyalı Caddesi üzerinde yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Cuppa Corner",
+          "url": "https://maps.google.com/?cid=11163943825188942149",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Saray Mah. Güzelyalı Cd. No:20/A konumu doğrulandı"
+        },
+        {
+          "title": "Cuppa Corner Resmi Sitesi",
+          "url": "https://cuppacorner.com.tr/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Kahvaltı tabakları, kruvasan, pankek ve içecek menüsü"
+        },
+        {
+          "title": "Restoranim — Cuppa Corner",
+          "url": "https://www.restoranim.net/mekan/cuppa-corner-alanya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ferah teras, kahvaltı ve güler yüzlü servis değerlendirmeleri"
+        },
+        {
+          "title": "Yemeksepeti — Cuppa Corner",
+          "url": "https://www.yemeksepeti.com/restoran/cuppa-corner-saray-mah-antalya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Poşe yumurta, kruvasan ve kafe menü kalemleri"
+        }
+      ],
+      "pros": [
+        "Kleopatra Plajına çok yakın gölgeli ve ferah açık teras",
+        "Hem klasik tabak hem kruvasan-pankek dengesi"
+      ],
+      "cons": [
+        "Yaz sezonunda plaj trafiği nedeniyle öğlene doğru hareketli kalabalık"
+      ],
+      "uncertainties": [
+        "Sabah kahvaltı servis saati sonrası gün içi bistro menüsü ağırlık kazanıyor"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-iskele-sofrasi",
+      "categoryId": "balik",
+      "resolvedName": "İskele Sofrası (Father and Son Place)",
+      "branchName": "Numa port otel ile kaptan otel arasinda joy marketin kale tarafinda iskele caddesi uzerinde, Çarşı, Tophane Cd. No:2 D:B, 07400 Alanya/Antalya",
+      "placeId": "ChIJC3bqAnSY3BQRNi-nP_0elpY",
+      "coordinates": {
+        "lat": 36.5381103,
+        "lng": 31.9979512
+      },
+      "rating": 4.7,
+      "userRatingCount": 575,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.islelesofrasi.com/",
+      "mapsUri": "https://maps.google.com/?cid=10850894425239269174",
+      "recommendedPrimary": [
+        "Günlük Taze Izgara Levrek & Çipura",
+        "Tereyağlı Karides Güveç",
+        "Kalamar Tava"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Akdeniz Mezeleri & Sıcak Pide Eşlikleri",
+          "note": "Balık öncesi masaya gelen günlük soğuk mezeler, sıcak ev pidesi ve ev sahibi baba-oğulun samimi ilgisi misafirlerce sürekli övülüyor.",
+          "proof": "Wanderlog ve Restaurant Guru İskele Sofrası değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Limana bakan sıcak cadde-teras masaları ve samimi iç salon",
+        "crowdAndNoise": "Akşamları müdavim turistler ve ailelerle dolu ama gürültülü kulüp havasından uzak",
+        "disadvantage": "İskele üzerindeki diğer büyük restoranlara göre daha butik masa kapasitesine sahip olduğu için akşamları yer ayırmak faydalı",
+        "transit": "Alanya Yat Limanı ve İskele Caddesi üzerinde Numa Port ile Kaptan Otel arasında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — İskele Sofrası",
+          "url": "https://maps.google.com/?cid=10850894425239269174",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı Mah. Tophane Cd. No:2 D:B konumu doğrulandı"
+        },
+        {
+          "title": "Wanderlog — İskele Sofrası Father and Son Place",
+          "url": "https://wanderlog.com/place/2157297/iskele-sofrasi-restaurant-father-and-son-place-alanya-turkiye",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Baba-oğul işletmesi sıcaklığı, taze balık ve mezeler"
+        },
+        {
+          "title": "Restaurant Guru — İskele Sofrası",
+          "url": "https://tr.restaurantguru.com/Iskele-Sofrasi-Father-and-Son-Place-Alanya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Liman manzarası ve günlük deniz ürünleri değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Turistik iskele hattında samimi baba-oğul aile işletmesi",
+        "Taze pişmiş deniz balığı ve dürüst porsiyonlar"
+      ],
+      "cons": [
+        "Butik masa sayısı nedeniyle yaz akşamları yer bulma zorluğu"
+      ],
+      "uncertainties": [
+        "Günlük av durumuna göre tezgah balığı çeşitleri değişebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-my-balikcim",
+      "categoryId": "balik",
+      "resolvedName": "My Balıkçım",
+      "branchName": "ucuz halk pazarı, Kızlar Pınarı, Spor Cd. No:49 no: 47, 07400 Alanya/Antalya",
+      "placeId": "ChIJC6aJDgmj3BQRExuVA4qO_Hw",
+      "coordinates": {
+        "lat": 36.5527782,
+        "lng": 31.989193000000004
+      },
+      "rating": 4.4,
+      "userRatingCount": 607,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9006230078250883859",
+      "recommendedPrimary": [
+        "Tezgahtan Günlük Izgara Balık",
+        "Kızarmış Ahtapot",
+        "Tereyağlı Karides"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yeşil Salata & Mısır Ekmeği Eşliği",
+          "note": "Hal tezgahından seçilip pişirilen taze balıkların yanında bol limonlu mevsim salata ve sıcak mısır ekmeği sunuluyor.",
+          "proof": "mybalikcim.com resmi sayfası ve Wanderlog My Balıkçım incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Balık Hali girişinde sade, temiz iç salon ve açık hava masaları",
+        "crowdAndNoise": "Özellikle aileler, yerel Alanya sakinleri ve abartısız taze balık yemek isteyenlerle öğle-akşam dolu",
+        "disadvantage": "Alkolsüz balık hali lokantası düzeninde çalışır; manzaralı sahil terası veya meyhane atmosferi sunmaz",
+        "transit": "Kızlar Pınarı Spor Caddesi Ucuz Halk Pazarı Balık Hali girişinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — my balıkçım",
+          "url": "https://maps.google.com/?cid=9006230078250883859",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kızlar Pınarı Spor Cd. No:49 konumu doğrulandı"
+        },
+        {
+          "title": "My Balıkçım Resmi Sitesi",
+          "url": "https://mybalikcim.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "2008 kuruluşlu alkolsüz aile balık restoranı bilgileri"
+        },
+        {
+          "title": "Wanderlog — My Balıkçım",
+          "url": "https://wanderlog.com/place/2232070/my-balikcim-alanya-turkiye",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kızarmış ahtapot ve taze balık değerlendirmeleri"
+        },
+        {
+          "title": "Restoranim — My Balıkçım",
+          "url": "https://restoranim.net/isletme/my-balikcim-alanya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Balık hali hijyeni ve aile konsepti notları"
+        }
+      ],
+      "pros": [
+        "Balık hali girişinde taze tezgah balığı seçme imkanı",
+        "Temiz, hesaplı ve gösterişsiz aile mutfağı"
+      ],
+      "cons": [
+        "Deniz manzarası ve alkollü meze servisi bulunmaması"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamları taze av çeşitleri erkenden tükenebiliyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-balikci-yusuf",
+      "categoryId": "balik",
+      "resolvedName": "Balıkçı Yusuf’un Yeri",
+      "branchName": "Saray mahallesi Şirinevler Sokak Best Home 20A/Blok No:18, Kızlar Pınarı, 07400 Alanya/Antalya",
+      "placeId": "ChIJsWvjV4Ci3BQRCBgFCL0pEl0",
+      "coordinates": {
+        "lat": 36.5532052,
+        "lng": 31.989547700000003
+      },
+      "rating": 4.5,
+      "userRatingCount": 228,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6706468686968199176",
+      "recommendedPrimary": [
+        "Balık Kavurma",
+        "Günlük Izgara Deniz Balığı",
+        "Kalamar & Ahtapot"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Deniz Mahsulü Mezeleri & Tahin Helvası",
+          "note": "Balık öncesi masaya gelen taze meze çeşitleri ve yemek sonu geleneksel helva ikramı müdavimlerce öne çıkarılıyor.",
+          "proof": "Restoranim ve Wanderlog Balıkçı Yusufun Yeri değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mahalle sokağında sade, rahat iç mekan ve kaldırım önü masalar",
+        "crowdAndNoise": "Turistik iskele fiyatlarından uzaklaşmak isteyen yerli halk ve bilen ziyaretçilerle sakin dolu",
+        "disadvantage": "Deniz kenarında değil ara sokak içinde konumlandığı için manzara beklentisinden ziyade mutfak odaklıdır",
+        "transit": "Spor Caddesi Balık Hali ve Şirinevler Sokak kesişiminde yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Balıkçı Yusuf’un Yeri",
+          "url": "https://maps.google.com/?cid=6706468686968199176",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Şirinevler Sk. Best Home 20A No:18 konumu doğrulandı"
+        },
+        {
+          "title": "Restoranim — Balıkçı Yusuf’un Yeri",
+          "url": "https://www.restoranim.net/mekan/balikci-yusufun-yeri-alanya-antalya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze balık, balık kavurma ve samimi ortam notları"
+        },
+        {
+          "title": "Wanderlog — Balıkçı Yusufun Yeri Mezze",
+          "url": "https://wanderlog.com/place/2357732/balikci-yusufun-yeri-mezze-alanya-turkey",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Meze kalitesi ve deniz ürünleri değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "İskele turizminden uzak dürüst mahalle balıkçısı",
+        "Balık kavurma ve meze uyumu"
+      ],
+      "cons": [
+        "Sahil manzarası olmaması"
+      ],
+      "uncertainties": [
+        "Sezonluk av takvimine göre mevsim balıkları değişiklik gösteriyor"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-cadde-balik",
+      "categoryId": "balik",
+      "resolvedName": "Cadde Balık",
+      "branchName": "Cadde balik restorant, Saray, İsmet Hilmi Balcı Cd. No:8/B, 07400 Alanya/Antalya",
+      "placeId": "ChIJDUcfjpOj3BQROrR0psiOxdY",
+      "coordinates": {
+        "lat": 36.545232999999996,
+        "lng": 31.989493799999995
+      },
+      "rating": 4.4,
+      "userRatingCount": 1370,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://caddebalik.com/",
+      "mapsUri": "https://maps.google.com/?cid=15475932686965847098",
+      "recommendedPrimary": [
+        "Lagos & Akya Izgara",
+        "Güveçte Balık Kavurma",
+        "Izgara Levrek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Soğuk Meze Tezgahı & Taze Deniz Mahsullü Salata",
+          "note": "Ana balık öncesinde tezgah seçkisi olarak sunulan soğuk mezeler ve sıcak balık kavurma akşam masalarında sıkça tercih ediliyor.",
+          "proof": "caddebalik.com resmi sitesi ve Wanderlog deniz ürünleri listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş cadde cepheli kapalı ve yarı açık restoran salonu",
+        "crowdAndNoise": "Turistik Kleopatra hattına yakınlığı sayesinde akşam yemeklerinde düzenli kalabalık",
+        "disadvantage": "Turistik cadde üzerinde et ve balık seçeneklerini bir arada sunduğu için butik balıkçılara kıyasla fiyatlar bir kademe yüksek hissedilebiliyor",
+        "transit": "Damlataş ve Kleopatra Plajı arasındaki İsmet Hilmi Balcı Caddesi üzerinde yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Cadde Balık et balik restaurant",
+          "url": "https://maps.google.com/?cid=15475932686965847098",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Saray Mah. İsmet Hilmi Balcı Cd. No:8/B konumu doğrulandı"
+        },
+        {
+          "title": "Cadde Balık Resmi Sitesi",
+          "url": "http://caddebalik.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Akya, lagos, levrek ve balık kavurma menü detayları"
+        },
+        {
+          "title": "Restoranim — Cadde Balık",
+          "url": "https://www.restoranim.net/mekan/cadde-balik-restaurant-alanya-antalya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Servis ilgisi ve merkez konumu notları"
+        },
+        {
+          "title": "Wanderlog — Cadde Balık",
+          "url": "https://wanderlog.com/place/2357733/cadde-balik-et-balik-restorant-alanya-turkey",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Akdeniz balıkları ve mezeler üzerine değerlendirmeler"
+        }
+      ],
+      "pros": [
+        "Kleopatra hattında akya ve lagos gibi bölge balıklarını düzenli bulabilme",
+        "Geniş ve düzenli salon kapasitesi"
+      ],
+      "cons": [
+        "Merkezi turistik cadde fiyatlandırması"
+      ],
+      "uncertainties": [
+        "Büyük grupların geldiği akşamlarda salon gürültüsü artabiliyor"
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-ravza",
+      "categoryId": "denemelisin",
+      "resolvedName": "Ravza Restaurant",
+      "branchName": "Çarşı, 10. Sk. No:16, 07400 Alanya/Antalya",
+      "placeId": "ChIJzevQ7aCi3BQRZOH2P3mWcyw",
+      "coordinates": {
+        "lat": 36.5420004,
+        "lng": 32.0003928
+      },
+      "rating": 4.4,
+      "userRatingCount": 2506,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.ravzarestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=3203069207498908004",
+      "recommendedPrimary": [
+        "Meşhur Alanya Kebabı",
+        "Kuzu Tandır & Pilav",
+        "Günlük Çorba"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Geleneksel Çorba & Sütlü Tatlı Kapanışı",
+          "note": "Alanya Kebabı öncesinde sunulan sıcak çorba çeşitleri ve yemek sonu geleneksel tatlılar üç katlı tarihi lokanta deneyimini tamamlıyor.",
+          "proof": "ravzarestaurant.com resmi sitesi, AlanyaOtelleri ve Gezinomi rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Üç katlı tarihi çarşı binasında geniş aile salonları",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde yerel halk, aileler ve geleneksel mutfak arayan gezginlerle dolu",
+        "disadvantage": "Alkolsüz klasik büyük lokanta düzeninde çalışır; zaman zaman tur grupları nedeniyle kalabalık ve hareketli olabiliyor",
+        "transit": "Alanya Çarşı merkezinde Atatürk Bulvarı ve Hükümet Caddesi arasından yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Ravza Restaurant",
+          "url": "https://maps.google.com/?cid=3203069207498908004",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı Mah. 10. Sk. No:16 konumu doğrulandı"
+        },
+        {
+          "title": "Ravza Restaurant Resmi Sitesi",
+          "url": "http://www.ravzarestaurant.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "1955 kuruluş geçmişi, Alanya Kebabı ve aile konsepti"
+        },
+        {
+          "title": "Alanya Otelleri — Ravza Restaurant",
+          "url": "https://alanyaotelleri.tr/isletme/ravza-restaurant",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Alanya Kebabı ve üç katlı tarihi lokanta rehber notu"
+        },
+        {
+          "title": "TripAdvisor — Ravza Restaurant",
+          "url": "https://www.tripadvisor.com.tr/Restaurant_Review-g297962-d2272304-Reviews-Ravza_Restaurant-Alanya_Turkish_Mediterranean_Coast.html",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Geleneksel Türk mutfağı ve aile dostu hizmet geri bildirimleri"
+        }
+      ],
+      "pros": [
+        "1955 yılından gelen köklü Alanya lokanta mirası",
+        "Bölgenin imza lezzeti Alanya Kebabını deneyimleyebilme"
+      ],
+      "cons": [
+        "Büyük salon temposu ve kalabalık saatlerde uğultu"
+      ],
+      "uncertainties": [
+        "Bazı tencere yemekleri akşam saatlerine kalmadan tükenebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-oztat-kebap",
+      "categoryId": "denemelisin",
+      "resolvedName": "ÖZTAT KEBAP Alanya",
+      "branchName": "Kadıpaşa Mahallesi, ptt sk, Merkez, Postane Arkası 2 a, 07400 Alanya/Antalya",
+      "placeId": "ChIJ03po0XmY3BQR5D_FtX1ftHU",
+      "coordinates": {
+        "lat": 36.5439244,
+        "lng": 31.995959300000003
+      },
+      "rating": 4.7,
+      "userRatingCount": 4224,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.öztatkebap.com/",
+      "mapsUri": "https://maps.google.com/?cid=8481508991770640356",
+      "recommendedPrimary": [
+        "Adana Kebap",
+        "Kuşbaşılı Kaşarlı Pide",
+        "Et Tantuni"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Lahmacun & Yayık Ayran",
+          "note": "Kebap yanında sıcak servis edilen ince çıtır lahmacun, taze ezme ikramları ve köpüklü yayık ayran sofrayı dengeliyor.",
+          "proof": "Restoranim ve Restaurant Guru Öztat Kebap Alanya kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "İki katlı geniş esnaf salonu ve sokak önü masalar",
+        "crowdAndNoise": "Öğle yemeğinden gece geç saatlere kadar sürekli hareketli ve hızlı sirkülasyonlu",
+        "disadvantage": "Yüksek müşteri hacmi nedeniyle öğle-akşam pik saatlerinde gürültü seviyesi yükseliyor ve sıra oluşabiliyor",
+        "transit": "Alanya Merkez PTT binası arkasındaki sokakta Atatürk Bulvarı'ndan yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — ÖZTAT KEBAP Alanya",
+          "url": "https://maps.google.com/?cid=8481508991770640356",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kadıpaşa Mah. Postane Arkası 2a konumu doğrulandı"
+        },
+        {
+          "title": "Restoranim — Öztat Kebap Alanya",
+          "url": "https://www.restoranim.net/isletme/oztat-kebap-alanya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kebap, pide ve tantuni çeşitliliği üzerine değerlendirmeler"
+        },
+        {
+          "title": "Restaurant Guru — ÖZTAT KEBAP",
+          "url": "https://en.restaurantguru.com/OZTAT-KEBAP-TANTUNI-Alanya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yüksek yerel müdavim memnuniyeti ve hızlı servis notları"
+        }
+      ],
+      "pros": [
+        "Alanya Merkezde kebap, pide ve tantuniyi aynı taze standartta sunması",
+        "Hızlı servis ve dürüst porsiyonlar"
+      ],
+      "cons": [
+        "Öğle ve akşam yoğun saatlerinde kalabalık ve gürültülü salon"
+      ],
+      "uncertainties": [
+        "Yoğun paket sipariş saatlerinde masa servisi birkaç dakika gecikebiliyor"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-aksu-kofte-piyaz",
+      "categoryId": "denemelisin",
+      "resolvedName": "Aksu Köfte Piyaz İsmail Usta",
+      "branchName": "Mahallesi, Güller Pınarı, İsmi Sk. No:14, 07460 Alanya/Antalya",
+      "placeId": "ChIJGUKAtmGY3BQRdpmL9FcGbNE",
+      "coordinates": {
+        "lat": 36.5470907,
+        "lng": 32.0124661
+      },
+      "rating": 4.6,
+      "userRatingCount": 546,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.facebook.com/Aksu-K%C3%B6fte-Piyaz-513-68-00-5192318-164117360345332/?fref=ts",
+      "mapsUri": "https://maps.google.com/?cid=15090443426246400374",
+      "recommendedPrimary": [
+        "Izgara Aksu Köfte",
+        "Antalya Usulü Tahinli Piyaz",
+        "Cevizli Kabak Tatlısı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Közlenmiş Biber & Ev Usulü Kabak Tatlısı",
+          "note": "Köfte-piyaz ikilisinin yanında gelen közlenmiş acı biber ve kapanışta tahin-cevizli Antalya kabak tatlısı sıkça öneriliyor.",
+          "proof": "Restoranim ve Wanderlog Aksu Köfte Piyaz İsmail Usta incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Samimi esnaf dükkanı iç salonu ve sokak önü gölgeli masalar",
+        "crowdAndNoise": "Öğle ve erken akşam saatlerinde gerçek tahinli piyaz arayan yerel halkla dengeli dolu",
+        "disadvantage": "Klasik esnaf köftecisi konseptindedir; akşam yemeği ambiyansı yerine doğrudan köfte-piyaz odağı sunar",
+        "transit": "Atatürk Bulvarı doğu devamında Güller Pınarı İsmi Sokak içinde yürüyerek dört dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Aksu Kofte Piyaz Ismail Usta",
+          "url": "https://maps.google.com/?cid=15090443426246400374",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Güller Pınarı Mah. İsmi Sk. No:14 konumu doğrulandı"
+        },
+        {
+          "title": "Restoranim — Aksu Köfte Piyaz İsmail Usta",
+          "url": "https://www.restoranim.net/isletme/aksu-kofte-piyaz-ismail-usta-alanya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sade et köfte ve gerçek tahinli Antalya piyazı değerlendirmeleri"
+        },
+        {
+          "title": "Wanderlog — Aksu Köfte Piyaz",
+          "url": "https://wanderlog.com/view/gkkrdzuxps/aksu-kofte-piyaz-ismail-usta-alanya-turkiye/shared",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Aile işletmesi samimiyeti ve kabak tatlısı notları"
+        }
+      ],
+      "pros": [
+        "Alanya Merkezde gerçek Antalya usulü tahinli piyaz standardı",
+        "Baharatla bastırılmamış saf et köftesi"
+      ],
+      "cons": [
+        "Küçük esnaf salonu ve dar çeşit yelpazesi"
+      ],
+      "uncertainties": [
+        "Akşam geç saatlere kalındığında günlük piyaz ve köfte stoğu tükenebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-durumcu-hasan-usta",
+      "categoryId": "denemelisin",
+      "resolvedName": "Dürümcü Hasan Usta",
+      "branchName": "Saray Mah Damlataş Cd. Bayırman Apt, Saray, No:28/1, 07400 Alanya/Antalya",
+      "placeId": "ChIJPZqIqlSZ3BQRzFc_2vQBP9E",
+      "coordinates": {
+        "lat": 36.5429458,
+        "lng": 31.995061399999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 1091,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://sites.google.com/view/durumcuhasanusta/ana-sayfa",
+      "mapsUri": "https://maps.google.com/?cid=15077772228604942284",
+      "recommendedPrimary": [
+        "Zırh Kıyması Adana Dürüm",
+        "Tavuk Şiş Dürüm",
+        "Hatay Usulü Şavurma"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sumaklı Soğan Salatası & Acılı Şalgam",
+          "note": "Sıcak lavaşa sarılı dürümlerin yanında taze sumaklı salata ve soğuk şalgam suyu özellikle akşam saatlerinde tercih ediliyor.",
+          "proof": "Restoranim ve Best of Alanya Dürümcü Hasan Usta kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Cadde kenarı pratik masalar ve hızlı servis iç tezgahı",
+        "crowdAndNoise": "Akşam yemeğinden gece geç saatlere kadar hem yerel halk hem tatilcilerle hareketli",
+        "disadvantage": "Hızlı dürüm salonu atmosferi taşır; Damlataş cadde trafiği nedeniyle dış masalar hareketli ve sesli olabiliyor",
+        "transit": "Atatürk Bulvarı üzerinden Damlataş Caddesi başlangıcında yürüyerek bir dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Dürümcü Hasan Usta",
+          "url": "https://maps.google.com/?cid=15077772228604942284",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Saray Mah. Damlataş Cd. No:28/1 konumu doğrulandı"
+        },
+        {
+          "title": "Dürümcü Hasan Usta Resmi Sayfası",
+          "url": "https://sites.google.com/view/durumcuhasanusta/ana-sayfa",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Zırh kıyması kebap ve dürüm menü bilgileri"
+        },
+        {
+          "title": "Restoranim — Dürümcü Hasan Usta",
+          "url": "https://www.restoranim.net/isletme/durumcu-hasan-usta-alanya-restaurant",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Adana dürüm, şavurma ve gece servisi notları"
+        },
+        {
+          "title": "Best of Alanya — Dürümcü Hasan Usta",
+          "url": "https://bestofalanya.com/durumcu-hasan-usta/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Damlataş caddesi geç saat sokak lezzeti önerisi"
+        }
+      ],
+      "pros": [
+        "Damlataş merkezinde taze zırh kıyması dürüm ve gece erişilebilirliği",
+        "Hızlı ve doyurucu porsiyonlar"
+      ],
+      "cons": [
+        "Dar cadde cephesi ve uzun oturumlara uygun olmayan hızlı tempo"
+      ],
+      "uncertainties": [
+        "Gece yarısı sonrası yoğunluğa göre bazı şiş çeşitleri bitebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-uygun-lokantasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Uygun Lokantası",
+      "branchName": "Şekerhane, Halimağa Cd., 07400 Alanya/Antalya",
+      "placeId": "ChIJW0K-qvqZ3BQRNDeQRhhh5zw",
+      "coordinates": {
+        "lat": 36.545657,
+        "lng": 32.0003026
+      },
+      "rating": 4.9,
+      "userRatingCount": 235,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4388583118786803508",
+      "recommendedPrimary": [
+        "Günlük Sulu Ev Yemeği",
+        "Tereyağlı Pilav Üstü Kavurma",
+        "Antalya Usulü Piyaz"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Usulü Çorba & Mevsim Zeytinyağlıları",
+          "note": "Öğle servisinde taze pişen sıcak çorbalar ve zeytinyağlı sebze tabakları sade ev mutfağı arayanların favorisi.",
+          "proof": "Restaurant Guru ve Migros Yemek Uygun Lokantası kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı, temiz ve aydınlık esnaf lokantası masa düzeni",
+        "crowdAndNoise": "Özellikle öğle yemeği saatlerinde Alanya merkez esnafı ile kalabalık",
+        "disadvantage": "Gündüz esnaf lokantası mantığıyla çalıştığından akşam geç saatlere doğru tencere yemekleri azalıyor ve ortamı oldukça sade",
+        "transit": "Şekerhane Çarşı içinde Halimağa Caddesi üzerinde yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — UYGUN lokantası",
+          "url": "https://maps.google.com/?cid=4388583118786803508",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Şekerhane Mah. Halimağa Cd. konumu doğrulandı"
+        },
+        {
+          "title": "Restaurant Guru — Uygun Lokantası",
+          "url": "https://tr.restaurantguru.com/UYGUN-lokantasi-sulu-yemek-ve-kebap-salonu-Alanya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sulu ev yemekleri ve fiyat-performans dengesi değerlendirmeleri"
+        },
+        {
+          "title": "Yemeksepeti — Uygun Lokantası",
+          "url": "https://www.yemeksepeti.com/restoran/uygun-lokantasi-yemek-kebap-sekerhane-mah-alanya-antalya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Günlük tencere yemekleri, piyaz ve kebap menüsü"
+        }
+      ],
+      "pros": [
+        "Turistik bölgenin ortasında gerçek, temiz ve hesaplı esnaf lokantası",
+        "Günlük değişen taze sulu ev yemekleri"
+      ],
+      "cons": [
+        "Akşam saatlerinde tencere yemeklerinin tükenebilmesi"
+      ],
+      "uncertainties": [
+        "Hangi sulu yemeklerin çıkacağı günün mutfak tezgahına göre değişiyor"
+      ],
+      "selectionScore": 96,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-cheese-and-cheese",
+      "categoryId": "denemelisin",
+      "resolvedName": "Cheese & Cheese",
+      "branchName": "Kadıpaşa, Şevket Tokuş Cd. Cemal Sarıkadıoğlu Apt No:61/D-E, 07400 Alanya/Antalya",
+      "placeId": "ChIJqyTXG0qZ3BQRXievL3FGRlY",
+      "coordinates": {
+        "lat": 36.5471388,
+        "lng": 31.995036599999995
+      },
+      "rating": 4.6,
+      "userRatingCount": 229,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.cheesealanya.com/",
+      "mapsUri": "https://maps.google.com/?cid=6216733787576805214",
+      "recommendedPrimary": [
+        "Parmesan Tekerinde Fettuccine Alfredo",
+        "Pesto Soslu Taze Makarna",
+        "Trüflü Mantarlı Makarna"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kremalı Tavuklu & Dört Peynirli Özel Soslar",
+          "note": "Klasik parmesan tekeri sunumuna eklenen tavuklu, mantarlı ve dört peynirli sos alternatifleri makarna menüsünü zenginleştiriyor.",
+          "proof": "cheesealanya.com resmi sitesi ve Restoranim Cheese & Cheese sayfası"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük, modern sokak dükkanı içi ve kaldırım kenarı masalar",
+        "crowdAndNoise": "Özellikle akşamüstü ve akşam saatlerinde genç ziyaretçiler ve makarna severlerle canlı",
+        "disadvantage": "Tek konsept odaklı küçük dükkan yapısına sahiptir; kalabalık sofralar veya uzun şaraplı akşamlar yerine pratik lezzet durağıdır",
+        "transit": "Atatürk Bulvarı kuzey paralelindeki Şevket Tokuş (25 Metrelik) Caddesi üzerinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Cheese & Cheese",
+          "url": "https://maps.google.com/?cid=6216733787576805214",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kadıpaşa Mah. Şevket Tokuş Cd. No:61/D-E konumu doğrulandı"
+        },
+        {
+          "title": "Cheese & Cheese Resmi Sitesi",
+          "url": "https://www.cheesealanya.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Parmesan tekerinde İtalyan makarna konsepti ve sos çeşitleri"
+        },
+        {
+          "title": "Restoranim — Cheese & Cheese",
+          "url": "https://restoranim.net/isletme/cheese-cheese-alanya-nin-italyan-makarnacisi",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Parmesan tekeri sunumu ve sos kıvamı değerlendirmeleri"
+        },
+        {
+          "title": "Migros Yemek — Cheese & Cheese",
+          "url": "https://www.migros.com.tr/yemek/cheese-cheese-alanya-kadipasa-mah-antalya-r29007",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Makarna çeşitleri ve porsiyon bilgisi"
+        }
+      ],
+      "pros": [
+        "Alanya Merkezde parmesan tekerinde makarna hazırlayan özgün uzman dükkan",
+        "Kişiselleştirilebilir taze sos seçenekleri"
+      ],
+      "cons": [
+        "Küçük dükkan oturma kapasitesi"
+      ],
+      "uncertainties": [
+        "25 Metrelik Yol üzerindeki paket servis trafiği sıcak servis süresini etkileyebiliyor"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-mio-dio-panzarotti",
+      "categoryId": "denemelisin",
+      "resolvedName": "Mio Dio Panzarotti",
+      "branchName": "Şekerhane, Tevfikiye Cd. 29c, 07400 Alanya/Antalya",
+      "placeId": "ChIJcy9ton6Z3BQRuDCkUSx4nHc",
+      "coordinates": {
+        "lat": 36.5462999,
+        "lng": 31.997778099999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 85,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://miodiopanzarotti.my.canva.site/discover-the-joy-of-delicious-paznzarotti-and-more-kopyas",
+      "mapsUri": "https://maps.google.com/?cid=8618895918623895736",
+      "recommendedPrimary": [
+        "Klasik Peynirli & Sucuklu Panzarotti",
+        "Ton Balıklı Panzarotti",
+        "Burger Panzarotti"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı 7 Çeşit Özel Sos & Tatlı Panzarotti",
+          "note": "Tuzlu panzarottilerin yanında sunulan sarımsaklı, ıspanaklı, köri ve orman meyveli özgün soslar ile tatlı panzarotti çeşitleri beğeni topluyor.",
+          "proof": "Restoranim ve Yemeksepeti Mio Dio Panzarotti kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük aile mutfağı tezgahı ve sokak kenarı birkaç mütevazı masa",
+        "crowdAndNoise": "Sipariş üzerine taze pişirildiği için sakin ama sadık bir yerel müdavim kitlesine sahip",
+        "disadvantage": "Küçük butik dükkan yapısı nedeniyle oturma yeri sınırlıdır; panzarottiler taze kızartıldığı için kısa hazırlık süresi beklenir",
+        "transit": "Şekerhane Tevfikiye Caddesi ve 1117. Sokak kesişiminde yürüyerek üç dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Mio Dio Panzarotti",
+          "url": "https://maps.google.com/?cid=8618895918623895736",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Şekerhane Mah. Tevfikiye Cd. 29c konumu doğrulandı"
+        },
+        {
+          "title": "Restoranim — Mio Dio Panzarotti",
+          "url": "https://www.restoranim.net/antalya/alanya/mio-dio-panzarotti-r862c7d5c",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ev yapımı İtalyan panzarotti, şef aile işletmesi ve sos çeşitleri"
+        },
+        {
+          "title": "Yemeksepeti — Mio Dio Panzarotti",
+          "url": "https://www.yemeksepeti.com/restaurant/o78i/mio-dio-panzarotti",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ton balıklı, burger panzarotti ve kullanıcı puanları"
+        },
+        {
+          "title": "Migros Yemek — Mio Dio Panzarotti",
+          "url": "https://www.migros.com.tr/yemek/mio-dio-panzarotti-alanya-sekerhane-mah-antalya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "BBQ, sarımsaklı ve ıspanaklı özel sos detayları"
+        }
+      ],
+      "pros": [
+        "Alanyada başka örneği olmayan ev yapımı İtalyan panzarotti uzmanlığı",
+        "33 yıllık şef tecrübesi ve sıcak aile işletmesi"
+      ],
+      "cons": [
+        "Küçük oturma alanı ve sipariş üzerine taze pişirme bekleme süresi"
+      ],
+      "uncertainties": [
+        "Haftalık özel dolgu çeşitleri günlük taze malzeme durumuna göre değişebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-cozy",
+      "categoryId": "denemelisin",
+      "resolvedName": "Cozy Alanya",
+      "branchName": "Çarşı, Damlataş Cd. No:51, 07400 Alanya/Antalya",
+      "placeId": "ChIJ-Y1ZUpyj3BQRel7o6cNT_8Y",
+      "coordinates": {
+        "lat": 36.5432657,
+        "lng": 31.9924909
+      },
+      "rating": 4.8,
+      "userRatingCount": 1427,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.facebook.com/cozyalanya/",
+      "mapsUri": "https://maps.google.com/?cid=14339271839478996602",
+      "recommendedPrimary": [
+        "Vegan Sebzeli Kebap",
+        "Akdeniz Izgara Tabağı",
+        "Glutensiz Özel Ana Yemek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Glutensiz Meze Başlangıçları & Ev Kokteylleri",
+          "note": "Özel beslenme hassasiyeti olan misafirler için ayrı hazırlanan sıcak mezeler ve samimi içecek servisi öne çıkıyor.",
+          "proof": "Restoranim ve Restaurant Guru Cozy Alanya değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Renkli, sıcak dekore edilmiş cadde terası ve samimi iç salon",
+        "crowdAndNoise": "Özel diyet hassasiyeti olan gezginler ve sıcak sohbet ortamı arayan çiftlerle istikrarlı dolu",
+        "disadvantage": "Damlataş ana yaya caddesi üzerinde olduğu için akşam saatlerinde masa bulmak adına önceden uğramak faydalı olur",
+        "transit": "Damlataş Mağarası ile Atatürk Bulvarı arasında Damlataş Caddesi No:51 üzerinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Cozy Alanya",
+          "url": "https://maps.google.com/?cid=14339271839478996602",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Çarşı Mah. Damlataş Cd. No:51 konumu doğrulandı"
+        },
+        {
+          "title": "Cozy Alanya Resmi Facebook Sayfası",
+          "url": "https://www.facebook.com/cozyalanya/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "İşletme duyuruları ve günlük mutfak paylaşımları"
+        },
+        {
+          "title": "Restoranim — Cozy Alanya",
+          "url": "https://www.restoranim.net/restoran/cozy-alanya-antalya-alanya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Vegan kebap, hijyen ve samimi servis değerlendirmeleri"
+        },
+        {
+          "title": "Restaurant Guru — Cozy Alanya",
+          "url": "https://restaurantguru.com/Cozy-alanya-Alanya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Glutensiz-vejetaryen çeşitlilik ve atmosfer notları"
+        }
+      ],
+      "pros": [
+        "Alanya Merkezde gerçek vegan kebap ve glutensiz mutfak hassasiyeti",
+        "Yüksek temizlik ve misafir ilgisi"
+      ],
+      "cons": [
+        "Küçük cadde cephesinin yaz akşamları hızlı dolması"
+      ],
+      "uncertainties": [
+        "Sezona göre özel vegan tatlı çeşitleri değişiklik gösterebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-toast-house-gourmet",
+      "categoryId": "denemelisin",
+      "resolvedName": "Toast House Gourmet",
+      "branchName": "Kadıpaşa, Damlataş Cd. no:22/A, 07400 Alanya/Antalya",
+      "placeId": "ChIJc3xjIlCZ3BQRhPyjkEwLkUc",
+      "coordinates": {
+        "lat": 36.5426004,
+        "lng": 31.995911900000003
+      },
+      "rating": 4.8,
+      "userRatingCount": 157,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.alanyatoasthouse.com/",
+      "mapsUri": "https://maps.google.com/?cid=5156915471788014724",
+      "recommendedPrimary": [
+        "Gurme Ayvalık Tost",
+        "Kavurmalı Atom Tost",
+        "Pizza Tost"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Patates Kızartması & Taze Sıkım Portakal Suyu",
+          "note": "Sıcak tostların yanında çıtır patates ve Alanya bölgesinin taze sıkılmış portakal suları pratik öğle molalarını tamamlıyor.",
+          "proof": "alanyatoasthouse.com resmi sitesi ve Restoranim değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük iç salon ve kaldırım kenarı hızlı servis masaları",
+        "crowdAndNoise": "Sabah kahvaltısı ve öğle arası hızlı atıştırma arayan öğrenciler ile tatilcilerle hareketli",
+        "disadvantage": "Hızlı tost ve atıştırmalık dükkanı düzeninde olduğundan sakin akşam yemeği beklentisine uygun değil",
+        "transit": "Atatürk Bulvarı ile Damlataş Caddesi kavşağından güneye yürüyerek bir dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — TOAST HOUSE GOURMET & FAST FOOD ALANYA",
+          "url": "https://maps.google.com/?cid=5156915471788014724",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kadıpaşa Mah. Damlataş Cd. No:22/A konumu doğrulandı"
+        },
+        {
+          "title": "Toast House Alanya Resmi Sitesi",
+          "url": "http://www.alanyatoasthouse.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Gurme Ayvalık, atom ve özel tost menü çeşitleri"
+        },
+        {
+          "title": "Restoranim — Toast House Alanya",
+          "url": "https://www.restoranim.net/isletme/toast-house-fast-food-alanya-gourmet",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bol malzeme ve çıtır ekmek kalitesi değerlendirmeleri"
+        },
+        {
+          "title": "Yemeksepeti — Toast House Gourmet",
+          "url": "https://www.yemeksepeti.com/restoran/toast-house-gourmet-fast-food-alanya-kadipasa-mah-antalya",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tost çeşitleri ve kahvaltı alternatifleri"
+        }
+      ],
+      "pros": [
+        "Damlataş girişinde doyurucu ve taze gurme tost çeşitleri",
+        "Sabah hızlı kahvaltı ve gece atıştırması için pratik erişim"
+      ],
+      "cons": [
+        "Küçük oturma kapasitesi ve cadde önü hareketliliği"
+      ],
+      "uncertainties": [
+        "Yoğun sabah saatlerinde tost hazırlık süresi kısa süreli uzayabiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "alanya-chefmetin-steakhouse",
+      "categoryId": "denemelisin",
+      "resolvedName": "Chefmetin Moonlight Steakhouse",
+      "branchName": "özer.apart.Alti, Kadıpaşa, Yeni Ptt Cd. No:5 D:A, 07400 Alanya/Antalya",
+      "placeId": "ChIJQd4j5ECZ3BQRR9E4Ui9-hdg",
+      "coordinates": {
+        "lat": 36.5434919,
+        "lng": 31.9961627
+      },
+      "rating": 4.8,
+      "userRatingCount": 467,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15602015225802969415",
+      "recommendedPrimary": [
+        "Lav Taşında Dana Lokum",
+        "Chefmetin Özel Biftek",
+        "Tomahawk Steak"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Sarımsaklı Ekmek & Karamelize Soğanlı Patates",
+          "note": "Ana et sunumları öncesinde masaya gelen sıcak ekmek-tereyağı eşlikçisi ve garnitürler misafirlerce sıkça övülüyor.",
+          "proof": "Wanderlog ve Restoranim Chefmetin Moonlight Steakhouse incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Şık aydınlatmalı cadde terası ve samimi iç steakhouse salonu",
+        "crowdAndNoise": "Et sever yerli-yabancı misafirlerle akşam yemeği saatlerinde düzenli dolu",
+        "disadvantage": "Nitelikli dinlendirilmiş et kesimleri nedeniyle fiyat seviyesi üst segmenttedir ve akşam yemeği için önceden yer ayırtmak gerekir",
+        "transit": "Alanya Merkez Postane çevresindeki Yeni PTT Caddesi üzerinde yürüyerek iki dakika"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Haritalar — Chefmetin Moonlightrestaurant&Steakhouse",
+          "url": "https://maps.google.com/?cid=15602015225802969415",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kadıpaşa Mah. Yeni PTT Cd. No:5 konumu doğrulandı"
+        },
+        {
+          "title": "Wanderlog — Chefmetin Moonlight Steakhouse",
+          "url": "https://wanderlog.com/view/gqowjfyvup/chefmetin-moonlightrestaurant-and-steakhouse-alanya-turkiye-reviews-ratings-tips-and-why-you-should-go",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Lav taşında et pişirme ve şef ilgisi değerlendirmeleri"
+        },
+        {
+          "title": "Restoranim — Chefmetin Moonlight",
+          "url": "https://restoranim.net/isletme/chefmetin-moonlightrestaurant-steakhouse",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Dana lokum, Tomahawk ve sunum kalitesi notları"
+        }
+      ],
+      "pros": [
+        "Sıcak lav taşı üzerinde kişiye özel pişirim deneyimi",
+        "Merkez çarşı içinde istikrarlı şef et mutfağı"
+      ],
+      "cons": [
+        "Üst fiyat seviyesi ve akşam rezervasyon gerekliliği"
+      ],
+      "uncertainties": [
+        "Özel kemikli büyük et kesimleri günlük stok durumuna bağlı sunuluyor"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    }
+  ]
+}

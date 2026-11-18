@@ -1,0 +1,2778 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "diyarbakir-merkez",
+  "displayName": "Diyarbakır Merkez",
+  "verifiedAt": "2026-11-17T14:14:24.507Z",
+  "selectedCount": 38,
+  "rejectedControls": [
+    {
+      "id": "ctrl-dbk-sitki-usta-sur",
+      "resolvedName": "Sıtkı usta sur şubesi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-dbk-sitki-usta-ofis",
+      "resolvedName": "SITKI USTA OFİS ŞUBE",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-dbk-firin-ci-chain",
+      "resolvedName": "Fırın-ci",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-dbk-pacaci-fazil-chain",
+      "resolvedName": "Paçacı Fazıl Usta",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-dbk-walkers-chain",
+      "resolvedName": "Walker's 75. Cadde",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-dbk-espressolab-chain",
+      "resolvedName": "Espressolab Diyarbakır - Cadde 75",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-dbk-soulmate-chain",
+      "resolvedName": "Soulmate coffee 75. CADDE",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-dbk-nevada-chain",
+      "resolvedName": "Nevada Coffee Diyarbakır",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-dbk-firuze-chain",
+      "resolvedName": "Firuze Kahve Akademi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-dbk-bedri-usta-chain",
+      "resolvedName": "Bedri Usta Diyarbakır",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-dbk-dedecan-chain",
+      "resolvedName": "DEDECAN",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-dbk-van-kahvalti-chain",
+      "resolvedName": "Van Kahvaltı Sarayı - Diyarbakır",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-dbk-sadik-kunefe-chain",
+      "resolvedName": "Sadık Künefe Ofis",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-dbk-luuma-chocolate",
+      "resolvedName": "Luuma Kayapınar",
+      "reason": "kahve_category_not_coffee_specialist:chocolate_shop"
+    },
+    {
+      "id": "ctrl-dbk-hasanpasa-landmark",
+      "resolvedName": "Hasan Paşa Hanı",
+      "reason": "invalid_place_type:historical_landmark"
+    },
+    {
+      "id": "ctrl-dbk-suluklu-landmark",
+      "resolvedName": "Sülüklü Han",
+      "reason": "invalid_place_type:historical_place"
+    },
+    {
+      "id": "ctrl-dbk-ergani-veysi-dis",
+      "resolvedName": "KEBAPÇI VEYSİ USTA",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Cami Kebir/Cami Nebi/Dabanoğlu/Hasırlı/Savaş/Melikahmet/Abdaldede/Cevat Paşa/Cevatpaşa/Fatihpaşa/Ziya Gökalp/Süleyman Nazif/İnönü/İskender Paşa/Lalebey/Ali Paşa/Yenişehir/Kooperatifler/Ofis/Ferit Köşk/Cumhuriyet/Şehitlik/Fabrika/Aziziye/Seyrantepe/Kayapınar/Diclekent/Peyas/Mezopotamya/Fırat/Medya/Huzurevleri/Talaytepe/Bağlar/Bağcılar/Alipınar/5 Nisan/Mevlana Halit/Selahattin Eyyubi/Kuruçeşme/Kaynartepe/Muradiye/Yunus Emre/Merkez, adres: Dicle, 21950 Ergani/Diyarbakır)"
+    },
+    {
+      "id": "ctrl-dbk-sur-mermer-dis",
+      "resolvedName": "Veysi Ustanını Yeri",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Cami Kebir/Cami Nebi/Dabanoğlu/Hasırlı/Savaş/Melikahmet/Abdaldede/Cevat Paşa/Cevatpaşa/Fatihpaşa/Ziya Gökalp/Süleyman Nazif/İnönü/İskender Paşa/Lalebey/Ali Paşa/Yenişehir/Kooperatifler/Ofis/Ferit Köşk/Cumhuriyet/Şehitlik/Fabrika/Aziziye/Seyrantepe/Kayapınar/Diclekent/Peyas/Mezopotamya/Fırat/Medya/Huzurevleri/Talaytepe/Bağlar/Bağcılar/Alipınar/5 Nisan/Mevlana Halit/Selahattin Eyyubi/Kuruçeşme/Kaynartepe/Muradiye/Yunus Emre/Merkez, adres: Mermer, 21310 Sur/Diyarbakır, Türkiye)"
+    },
+    {
+      "id": "ctrl-dbk-cigerci-ibo-low",
+      "resolvedName": "Ciğerci İbo",
+      "reason": "below_quality_threshold:★3.8(2640)"
+    },
+    {
+      "id": "ctrl-dbk-mustafa-kahvalti-low",
+      "resolvedName": "Mustafa'nın Kahvaltı Dünyası",
+      "reason": "below_quality_threshold:★3.9(875)"
+    },
+    {
+      "id": "ctrl-dbk-kadri-low",
+      "resolvedName": "MEŞHUR KAHVALTICI KADRİ",
+      "reason": "below_quality_threshold:★2.2(1200)"
+    },
+    {
+      "id": "ctrl-dbk-onur-low",
+      "resolvedName": "Onur Ocakbaşı Diclekent",
+      "reason": "below_quality_threshold:★4.3(3056)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "diyarbakir-diyarbekir-ciger-evi",
+      "categoryId": "ciger",
+      "resolvedName": "Diyarbekir Ciğer Evi",
+      "branchName": "Hasırlı, Yenikapı Sk. no78, 21010 Yenikapı mahallesi/Sur/Diyarbakır",
+      "placeId": "ChIJgdvS47shdUARIyxZMyWXybA",
+      "coordinates": {
+        "lat": 37.9099426,
+        "lng": 40.2427515
+      },
+      "rating": 4.7,
+      "userRatingCount": 505,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/soslumdiyarbekircigerevi?igsh=MW1vbDN6dmo2N2kydg==",
+      "mapsUri": "https://maps.google.com/?cid=12738879207025224739",
+      "recommendedPrimary": [
+        "Kuzu Ciğer Şiş (Acılı)",
+        "Perde Ciğeri (Ciğer Sarma)",
+        "Haşhaşlı Kebap & Açık Ayran"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Nadir Bulunan Perde Ciğeri Sunumu",
+          "note": "Klasik şiş ciğerin dışında gömlek yağına sarılı perde ciğeri hazırlamasıyla Suriçi esnafları arasından ayrışıyor.",
+          "proof": "restoranim.net Hasırlı ciğer profili"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî Hasırlı mahallesinde düzenli iç salon ve sokak önü masaları",
+        "crowdAndNoise": "Sabah geç saatlerden akşamüstü servisine kadar istikrarlı yerel müşteri",
+        "disadvantage": "Tarihî Sur sokakları dar olduğundan özel araçla kapı önüne park etmek güç.",
+        "transit": "Sur Hasırlı Mahallesi Yenikapı Sokak No:78 üzerinde Dört Ayaklı Minare çevresinde yürüyüş mesafesinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım — Diyarbekir Ciğer Evi",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Hasırlı Yenikapı Sokak konumu ve perde ciğeri profili"
+        },
+        {
+          "title": "Google Maps Kaydı",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "500+ değerlendirme ile Sur’un en yüksek puanlı ciğercilerinden"
+        }
+      ],
+      "pros": [
+        "Perde ciğeri gibi nadir yerel kalemleri bulunduruyor",
+        "Temiz salon düzeni ve taze meze servisi"
+      ],
+      "cons": [
+        "Suriçi araç parkı kısıtı"
+      ],
+      "uncertainties": [
+        "Perde ciğeri özel günlerde veya öğle stoğunda erken tükenebiliyor."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-cigerci-apo-surici",
+      "categoryId": "ciger",
+      "resolvedName": "Cigerci Apo Suriçi",
+      "branchName": "diyarbakir gazi cad ulucami yanı CAHIT SITKI TARANCI muzesi karsisi zafer otopark içi, Cami Kebir, 21080 Sur/Diyarbakır",
+      "placeId": "ChIJR7o9V-MhdUAR7knZlBILfZw",
+      "coordinates": {
+        "lat": 37.9130526,
+        "lng": 40.2357261
+      },
+      "rating": 4.7,
+      "userRatingCount": 359,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/keyfiziyafetocakbasi/",
+      "mapsUri": "https://maps.google.com/?cid=11276181216440175086",
+      "recommendedPrimary": [
+        "Taze Kuzu Ciğer Şiş",
+        "Lavaşta Acılı Ciğer Dürüm",
+        "Köprü/Açık Yayık Ayran"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sabahın İlk Saatlerinden Öğleye Taze Tezgâh",
+          "note": "Gereksiz yan ürün kalabalığı olmadan doğrudan meşe közündeki taze kuzu ciğerine odaklanan yalın düzen sunuyor.",
+          "proof": "sehirpusulasi.com ve wanderlog.com Suriçi notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı, hızlı dönen geleneksel esnaf ocağı masaları",
+        "crowdAndNoise": "Sabah kahvaltısı saatleri ve öğle molasında yerel halk yoğunlukta",
+        "disadvantage": "Gösterişsiz ve dar iç mekan sebebiyle kalabalık gruplara veya uzun akşam oturumuna uygun değil.",
+        "transit": "Cami Kebir Mahallesi Gazi Caddesi Ulu Cami yanı, Zafer Otoparkı içinde kolay ulaşılır noktada."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Şehir Pusulası & Firmakonum",
+          "url": "https://www.sehirpusulasi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Suriçi tek şube esnaf ciğercisi profili"
+        },
+        {
+          "title": "Wanderlog & Yeniasır Arşivi",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sabah ciğeri servisi ve zincirden bağımsız kimliği"
+        }
+      ],
+      "pros": [
+        "Ulu Cami ve Cahit Sıtkı Tarancı Müzesi yürüyüşüyle birebir örtüşüyor",
+        "Saf tek odaklı esnaf ustalığı"
+      ],
+      "cons": [
+        "Küçük ve sade fiziki mekân"
+      ],
+      "uncertainties": [
+        "Taze kuzu ciğeri öğleden sonraki saatlere sarkıldığında bitebiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-cigerci-haci-anzele",
+      "categoryId": "ciger",
+      "resolvedName": "Ciğerci Hacı Anzele (Başka şubemiz yoktur)",
+      "branchName": "Melikahmet, 21300 Sur/Diyarbakır",
+      "placeId": "ChIJ6wAyuw0hdUARvaj0OcX3kGU",
+      "coordinates": {
+        "lat": 37.913165,
+        "lng": 40.2293048
+      },
+      "rating": 4.6,
+      "userRatingCount": 226,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7318621820930009277",
+      "recommendedPrimary": [
+        "Kuyruk Yağlı Kuzu Ciğer Şiş",
+        "Lavaş Dürüm & Köz Biber",
+        "Açık Ayran"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Anzele Suyu Çevresinde Mahalle Esnaf Ritmi",
+          "note": "Klasik turist yoğunluğunun biraz kenarında kalarak mahallelinin sabah ciğeri geleneğini sürdürüyor.",
+          "proof": "restoranim.net ve yemeksepeti.com değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Temiz, güler yüzlü hizmet sunan semt salonu",
+        "crowdAndNoise": "Sabah saatleri ve öğle arasında yerel mahalle müdavimleri",
+        "disadvantage": "Gazi Caddesi ana aksından kısa bir yürüyüşle Melikahmet içine girmeyi gerektiriyor.",
+        "transit": "Sur Melikahmet Mahallesi, Anzele Parkı ve tarihi suyunun hemen yakınında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım — Hacı Anzele",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tek şube vurgusu, erken saat ciğeri ve misafirperverlik"
+        },
+        {
+          "title": "Yemeksepeti Diyarbakır",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Melikahmet ciğer şiş ve kebap değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Tek şubede ustalık kontrolünü koruyor",
+        "Pişirim kuruluğuna düşmeyen sulu ciğer kıvamı"
+      ],
+      "cons": [
+        "Küçük mahalle sokakları ve sınırlı park alanı"
+      ],
+      "uncertainties": [
+        "Sabah erken gelen taze ciğerler öğleden önce yoğun talep görüyor."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-kucebasi-cigercisi",
+      "categoryId": "ciger",
+      "resolvedName": "Küçebaşı Ciğercisi",
+      "branchName": "İnönü caddesi, sütçü sokak no:7D, 21110 Sur/Diyarbakır",
+      "placeId": "ChIJgcKBpqchdUARNL8rrLOjL14",
+      "coordinates": {
+        "lat": 37.915393099999996,
+        "lng": 40.234896500000005
+      },
+      "rating": 4.4,
+      "userRatingCount": 1152,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6786823155553648436",
+      "recommendedPrimary": [
+        "Kuzu Ciğer Şiş",
+        "Kuzu Çöp Şiş",
+        "Patlıcanlı Kebap & Sıcak Lavaş"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarihî Çarşıda Dengeli Fiyat-Kalite",
+          "note": "Bölgedeki kalabalık şöhret noktalarına göre esnaf lokantası sıcaklığını ve istikrarlı terbiye kalitesini koruyor.",
+          "proof": "eniyitat.com ve nelerimeshur.com Suriçi incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "İki katlı ve sokak içi esnaf masaları",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde sürekli masa devri yüksek",
+        "disadvantage": "Dar sokak içi köşede kaldığı için yoğun saatlerde ocağa yakın masalar duman kokabiliyor.",
+        "transit": "Sur Cami Nebi Mahallesi İnönü Caddesi Sütçü Sokak No:7/D üzerinde Dağkapı girişine yakın."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "En İyi Tat — Küçebaşı",
+          "url": "https://www.eniyitat.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sütçü Sokak konumu, kuzu çöp şiş ve tırnak pide"
+        },
+        {
+          "title": "Neleri Meşhur & Yandex",
+          "url": "https://www.nelerimeshur.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1100+ değerlendirme ile yüksek esnaf memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Yüksek hacme rağmen puan istikrarını koruyor",
+        "Dağkapı girişinde pratik yürüyüş konumu"
+      ],
+      "cons": [
+        "Dar sokak masaları ve mangal kokusu"
+      ],
+      "uncertainties": [
+        "Hafta sonu öğle vaktinde alt kat masaları hızlı doluyor."
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-pasa-kebap-diclekent",
+      "categoryId": "kebap",
+      "resolvedName": "Paşa Kebap",
+      "branchName": "Diclekent mahallesi kayapınar caddesi 250.Sokak, Diclekent, Diclekent Villaları No:104/A, 21070 Kayapınar/Diyarbakır",
+      "placeId": "ChIJHRdow54fdUARN1KyFYkbnsA",
+      "coordinates": {
+        "lat": 37.9473203,
+        "lng": 40.177596799999996
+      },
+      "rating": 4.9,
+      "userRatingCount": 261,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://pasakebap21.com/",
+      "mapsUri": "https://maps.google.com/?cid=13879561377190924855",
+      "recommendedPrimary": [
+        "Zırh Kebabı",
+        "Kuzu Pirzola & Kuşbaşı Şiş",
+        "Ciğer Şiş Dürüm"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Diclekent’te Modern Ocakbaşı Standartı",
+          "note": "Tarihî çarşının dışında geniş masalı, rahat otoparklı ve hızlı servisli akşam kebabı seçeneği sunuyor.",
+          "proof": "pasakebap21.com ve ilkuc.com Diclekent incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ferah modern salon ve bahçe/teras alanı",
+        "crowdAndNoise": "Akşam yemeklerinde çevre mahalle aileleri yoğunlukta",
+        "disadvantage": "Tarihî Suriçi dokusunun dışında modern Kayapınar semtinde konumlanıyor.",
+        "transit": "Kayapınar Diclekent Mahallesi 250. Sokak Diclekent Villaları No:104/A adresinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Paşa Kebap Resmi Sitesi",
+          "url": "https://pasakebap21.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Odun kömürü kebap, pirzola ve Diclekent Villaları konumu"
+        },
+        {
+          "title": "İlk Üç Rehberi — Diyarbakır",
+          "url": "https://ilkuc.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Diclekent ocakbaşı ve aile salonu değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Modern semtte çok yüksek puan tutarlılığı",
+        "Aile ve çocuklu gruplar için rahat yerleşim"
+      ],
+      "cons": [
+        "Suriçi gezi rotasından araçla ulaşım gerektiriyor"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşam yemekleri için önceden masa teyidi faydalı oluyor."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-pinar-lahmacun",
+      "categoryId": "kebap",
+      "resolvedName": "Pınar Lahmacun ve Et Lokantası",
+      "branchName": "Alipınar, Sezai Karakoç Blv., 21090 Bağlar/Diyarbakır",
+      "placeId": "ChIJIbGvds4hdUARE0Qbmauo0sw",
+      "coordinates": {
+        "lat": 37.906717,
+        "lng": 40.2130655
+      },
+      "rating": 4.4,
+      "userRatingCount": 1077,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14759044383808111635",
+      "recommendedPrimary": [
+        "Taş Fırın Lahmacun",
+        "Kuşbaşılı Pide & Tepsi",
+        "Izgara Et Çeşitleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yerel Halkın Günlük Fırın Adresi",
+          "note": "Turistik rota dışında şehir sakinlerinin günlük lahmacun ve kebap ritmini koruyan yüksek sirkülasyonlu nokta.",
+          "proof": "Google Maps ve Yandex Bağlar verileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş, çok masalı klasik mahalle lokantası",
+        "crowdAndNoise": "Öğle yemeklerinde ve iş çıkışı akşam saatlerinde sürekli kalabalık",
+        "disadvantage": "Geleneksel lokanta gürültüsü ve hızlı servis temposu nedeniyle romantik veya sakin oturuma göre değil.",
+        "transit": "Bağlar Alipınar Mahallesi Sezai Karakoç Bulvarı üzerinde kolay bulunabilir cephede."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Google Maps Bağlar Kaydı",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "1000+ değerlendirme ile yüksek mahalle memnuniyeti"
+        },
+        {
+          "title": "Yandex Maps Diyarbakır",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sezai Karakoç Bulvarı lahmacun ve et lokantası puanları"
+        }
+      ],
+      "pros": [
+        "Yüksek hacme rağmen taş fırın çıtırlığını koruyor",
+        "Geniş aile ve grup alanı"
+      ],
+      "cons": [
+        "Yoğun yemek saatlerinde yüksek gürültü ve park sıkıntısı"
+      ],
+      "uncertainties": [
+        "Akşam paket sipariş yoğunluğu masa servisini birkaç dakika uzatabiliyor."
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-tavaci-nezir-usta",
+      "categoryId": "kebap",
+      "resolvedName": "Tavacı Nezir Usta",
+      "branchName": "Mezopotamya, Mahabad Blv No: 53BB, 21070 Kayapınar/Diyarbakır",
+      "placeId": "ChIJJ65ffgAfdUARHS33ip1GEDc",
+      "coordinates": {
+        "lat": 37.93762830000001,
+        "lng": 40.156145699999996
+      },
+      "rating": 4.7,
+      "userRatingCount": 74,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3967748914168671517",
+      "recommendedPrimary": [
+        "Taş Fırında Diyarbakır Tava",
+        "Kuzu Sac Kavurma",
+        "Zırh Kebabı & Şiş"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "75 Metrelik Yol’da Et Tava İhtisası",
+          "note": "Yalnızca şiş ve kebaba değil, Diyarbakır’ın ağır ateş tava geleneğine odaklanmasıyla modern caddede ayrışıyor.",
+          "proof": "yandex.com.tr ve yerel restoran rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Cadde 75 üzerinde ferah ve temiz salon",
+        "crowdAndNoise": "Öğle ve akşam iş-aile yemeklerinde düzenli kalabalık",
+        "disadvantage": "Tava yemekleri fırın sürecine bağlı olduğundan sipariş sonrası kısa pişirme sabrı gerektiriyor.",
+        "transit": "Kayapınar Mezopotamya Mahallesi Mahabad Bulvarı No:53BB adresinde yer alıyor."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yandex Maps Kayapınar",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mahabad Bulvarı tava ve et değerlendirmeleri"
+        },
+        {
+          "title": "Restoranım Diyarbakır",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Diyarbakır tava yemekleri profili"
+        }
+      ],
+      "pros": [
+        "Şehir merkezinde Diyarbakır tava odağıyla öne çıkıyor",
+        "Temiz servis ve kaliteli et kesimi"
+      ],
+      "cons": [
+        "Tarihî Sur dokusundan araç mesafesinde"
+      ],
+      "uncertainties": [
+        "Fırın tava çeşitleri günün yoğun saatlerinde taze çıkarım süresi alabiliyor."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-muharrem-usta-lahmacun",
+      "categoryId": "kebap",
+      "resolvedName": "Muharrem Usta Lahmacun pide salonu",
+      "branchName": "5 Nisan, Teymenler Cd., 21090 Bağlar/Diyarbakır",
+      "placeId": "ChIJVRIXf5ofdUARqtaTHn-8vHY",
+      "coordinates": {
+        "lat": 37.924847899999996,
+        "lng": 40.205236
+      },
+      "rating": 4.6,
+      "userRatingCount": 167,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8555920646256973482",
+      "recommendedPrimary": [
+        "Çıtır Lahmacun",
+        "Kuşbaşılı Kaşarlı Pide",
+        "Peynirli Pide"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sade Fırın İşçiliği",
+          "note": "Gösterişsiz semt fırını düzeninde harç oranından ödün vermeden hızlı sıcak servis çıkarıyor.",
+          "proof": "yandex.com.tr ve restoranim.net Bağlar değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Basit ve işlevsel mahalle pide salonu masaları",
+        "crowdAndNoise": "Öğle yemeği saatlerinde mahalle esnafı yoğun",
+        "disadvantage": "Dekorasyonu çok sade; hızlı yemek ya da paket için tasarlanmış.",
+        "transit": "Bağlar 5 Nisan Mahallesi Teymenler Caddesi üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Google Maps Bağlar",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "160+ değerlendirme ile semtin yüksek puanlı fırını"
+        },
+        {
+          "title": "Yandex Maps Bağlar",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Lahmacun çıtırlığı ve harç boluluğu yorumları"
+        }
+      ],
+      "pros": [
+        "Fiyat/performans açısından kentin en net semt fırınlarından",
+        "Hızlı sıcak servis"
+      ],
+      "cons": [
+        "Turistik veya manzaralı oturma alanı yok"
+      ],
+      "uncertainties": [
+        "Öğle yemek saatinde sıcak fırın çıkışı birkaç dakika sıra getirebiliyor."
+      ],
+      "selectionScore": 82,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-beros-restaurant",
+      "categoryId": "yoresel",
+      "resolvedName": "Beroş restaurant",
+      "branchName": "Hasırlı, Yenikapı Sk. No:88, 21200 Sur/Diyarbakır",
+      "placeId": "ChIJt_yzUfshdUAR_uqppY3JkGI",
+      "coordinates": {
+        "lat": 37.9098633,
+        "lng": 40.2437932
+      },
+      "rating": 4.6,
+      "userRatingCount": 612,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.berosrestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=7102398222570220286",
+      "recommendedPrimary": [
+        "Parmak Kebabı",
+        "Haşlama & Kızartma İçli Köfte",
+        "Kuzu Etli Yöresel Fırın Yemekleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Suriçi’nde Yüksek Memnuniyetli Yöresel Sofralar",
+          "note": "Büyük han kalabalıklarının dışında daha sakin bir Hasırlı sokağında geleneksel tabakları koruyor.",
+          "proof": "berosrestaurant.com ve eniyitat.com Diyarbakır değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî Sur dokusunda restore edilmiş taş salon ve avlu masaları",
+        "crowdAndNoise": "Öğle ve akşam gezi saatlerinde yerli ve yabancı misafirlerle hareketli",
+        "disadvantage": "Tarihî mahalle içi ara sokakta olduğundan araç girişi dar ve sınırlı.",
+        "transit": "Sur Hasırlı Mahallesi Yenikapı Sokak No:88 adresinde Suriçi yürüyüş rotasında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Beroş Restaurant Resmi Sitesi",
+          "url": "https://berosrestaurant.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Sur Hasırlı konumu ve Mezopotamya yöresel mutfağı"
+        },
+        {
+          "title": "En İyi Tat & Restoranım",
+          "url": "https://www.eniyitat.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Parmak kebabı, içli köfte ve kuzu fırın yemekleri"
+        }
+      ],
+      "pros": [
+        "Suriçi’nde yüksek puan ve lezzet dengesini yakalayan yöresel mutfak",
+        "Samimi konak atmosferi"
+      ],
+      "cons": [
+        "Ara sokak konumu nedeniyle araç parkı kısıtlı"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamları için önceden masa sormak yer garantisi sağlıyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-haci-halid",
+      "categoryId": "yoresel",
+      "resolvedName": "Meşhur Kebapçı Hacı Halid",
+      "branchName": "gazi caddesi hacı halit, kebapcı, Dabanoğlu, Çiftehan Sk. no 9 no 9, 21300 Sur/Diyarbakır",
+      "placeId": "ChIJVVVVVVXodEARNr-PhxceO8w",
+      "coordinates": {
+        "lat": 37.9122722,
+        "lng": 40.2372011
+      },
+      "rating": 4,
+      "userRatingCount": 337,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14716389293770653494",
+      "recommendedPrimary": [
+        "Özel Kuzu Gerdan (Istakoz)",
+        "Arap Tava & Etli Güveç",
+        "Patlıcanlı Kebap"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Cuma Çıkışı Tükenen Kuzu Spesiyalleri",
+          "note": "Turistik gösterişten uzak, çarşı esnafının ve Diyarbakır yemek kültürü araştırmacılarının nesillerdir takip ettiği tencere-fırın geleneği.",
+          "proof": "bizevdeyokuz.com ve nelerimeshur.com Diyarbakır dosyaları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî çarşı içinde sade, küçük ve hızlı dönen esnaf lokantası salonu",
+        "crowdAndNoise": "Özellikle öğle servisinde ve cuma öğlenleri çok yoğun; porsiyonlar hızla tükenebiliyor",
+        "disadvantage": "Geleneksel esnaf düzeni oldukça sade, modern konfor veya akşam geç saat servisi sunmuyor.",
+        "transit": "Sur Dabanoğlu Mahallesi Çiftehan Sokak No:9, Gazi Caddesi ve Ulu Cami’ye birkaç dakikalık yürüme mesafesinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Biz Evde Yokuz — Hacı Halid",
+          "url": "https://www.bizevdeyokuz.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kuzu gerdan, Arap tava ve esnaf tarihi"
+        },
+        {
+          "title": "Neleri Meşhur — Diyarbakır Lokantaları",
+          "url": "https://www.nelerimeshur.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çiftehan Sokak konumu ve orman kebabı"
+        }
+      ],
+      "pros": [
+        "Şehrin bozulmamış en köklü esnaf lokantalarından",
+        "Gerçek geleneksel Arap tava ve gerdan pişirimi"
+      ],
+      "cons": [
+        "Öğleden sonra ana yemeklerin çoğu tükenebiliyor, ortam sade"
+      ],
+      "uncertainties": [
+        "Kuzu gerdan ve güveç çeşitleri gün bitmeden hızla tükeniyor."
+      ],
+      "selectionScore": 74,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-kebabci-mehmet-ustanin-yeri",
+      "categoryId": "yoresel",
+      "resolvedName": "Kebabçı Mehmet Ustanın Yeri",
+      "branchName": "Ulu cami karşısı. Eskiyogurt pazarı burcular dokak.no 11sokak . No:13, Savaş, Değer Sk., 21200 Sur/Diyarbakır",
+      "placeId": "ChIJGVEz8kcgdUARgxdLrIvInKs",
+      "coordinates": {
+        "lat": 37.9117837,
+        "lng": 40.237062
+      },
+      "rating": 4.6,
+      "userRatingCount": 176,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12365979179069151107",
+      "recommendedPrimary": [
+        "Kuzu Pirzola",
+        "Lüle Kebap & Ciğer Şiş",
+        "Açık Ayran"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Suriçi Ara Sokakta Mahalle Ustalığı",
+          "note": "Büyük tabelalardan uzakta, ustasıyla birebir sohbet edilen minik dükkan atmosferini sürdürüyor.",
+          "proof": "nasilbiryer.com.tr ve restoranim.net Mehmet Usta notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Çok küçük, otantik çarşı içi esnaf dükkânı",
+        "crowdAndNoise": "Öğle ve erken akşam saatlerinde çarşı esnafı ile bilen gezginler",
+        "disadvantage": "Dükkan oldukça küçük ve dar ara sokakta olduğu için büyük gruplara uygun değil ve ilk defa bulanlar dikkatle bakmalı.",
+        "transit": "Sur Savaş Mahallesi Eski Yoğurt Pazarı Değer Sokak No:11-13, Ulu Cami karşısı pasaj içinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Nasıl Bir Yer — Mehmet Usta",
+          "url": "https://nasilbiryer.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Eski Yoğurt Pazarı konumu, pirzola ve lüle kebap"
+        },
+        {
+          "title": "Restoranım & Yandex Diyarbakır",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Esnaf samimiyeti ve et yumuşaklığı değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Gerçek ara sokak gizli hazinesi",
+        "Yüksek et pişirim tutarlılığı"
+      ],
+      "cons": [
+        "Küçük oturma alanı ve ilk gidişte tarife ihtiyaç duyan ara sokak konumu"
+      ],
+      "uncertainties": [
+        "Akşam geç saatlerde porsiyonlar kalabalığa göre erken tükenebiliyor."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-piran-ocakbasi",
+      "categoryId": "yoresel",
+      "resolvedName": "Piran Ocakbaşı",
+      "branchName": "Tanya-Ava Plaza, Diclekent, 265. Sk. Altı, 21000 Kayapınar/Diyarbakır",
+      "placeId": "ChIJ19_zm00fdUARvWGyLZQUmRk",
+      "coordinates": {
+        "lat": 37.945854499999996,
+        "lng": 40.1751735
+      },
+      "rating": 4.5,
+      "userRatingCount": 56,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1844528149039309245",
+      "recommendedPrimary": [
+        "Zırh Kebap & Kuzu Şiş",
+        "Kuzu Pirzola",
+        "Ocakbaşı Başlangıçları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Modern Konut Aksında Düzenli Akşam Ocakbaşısı",
+          "note": "Kalabalık Suriçi merkezinin alternatifi olarak Kayapınar’da sakin ve düzenli akşam yemeği arayanlara hitap ediyor.",
+          "proof": "Google Maps ve Yandex Kayapınar verileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ferah modern ocakbaşı iç salonu",
+        "crowdAndNoise": "Akşam saatlerinde çevre sakinleri ağırlıklı",
+        "disadvantage": "Gündüz tarihî rota içinde değil, akşam Kayapınar akşam yemeği odağında.",
+        "transit": "Kayapınar Diclekent Mahallesi 265. Sokak Tanya-Ava Plaza altında bulunuyor."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Google Maps Diclekent",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "55+ değerlendirme ile yüksek ocakbaşı puanı"
+        },
+        {
+          "title": "Yandex Maps Kayapınar",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Diclekent et kalitesi ve servis yorumları"
+        }
+      ],
+      "pros": [
+        "Modern Diclekent bölgesinde düzenli hizmet",
+        "Taze köz mezeleri"
+      ],
+      "cons": [
+        "Suriçi yürüme rotasından uzaklık"
+      ],
+      "uncertainties": [
+        "Akşam yoğunluğunda sıcak ocak sırası birkaç dakika uzayabiliyor."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-corbaci-hindici-zahid-usta",
+      "categoryId": "tirit",
+      "resolvedName": "Çorbacı ve Hindici zahid ustanın yeri",
+      "branchName": "Kooperatifler, 21100 Yenişehir/Diyarbakır",
+      "placeId": "ChIJXfSzcCcgdUARvCfVIFFngXA",
+      "coordinates": {
+        "lat": 37.9210663,
+        "lng": 40.218636499999995
+      },
+      "rating": 4.5,
+      "userRatingCount": 242,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8106874402384455612",
+      "recommendedPrimary": [
+        "Hindi Etli & Sulu Mercimek Çorbası",
+        "Kavurmalı Çorba",
+        "Geleneksel Paça & İşkembe"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Hindi Suyuyla Çorba Pişiren Nadir Esnaf Geleneği",
+          "note": "Öğlene kalmadan tükenen kazanlarıyla şehrin gerçek erken sabah işçileri ve müdavimleri için özgün bir lezzet sunuyor.",
+          "proof": "iyifirma.com ve tavsiyemiz.com Zahid Usta incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı, temiz ve hızlı devirli esnaf çorbacısı salonu",
+        "crowdAndNoise": "Sabah erken saatlerden öğle öncesi saatlere kadar yoğun esnaf akışı",
+        "disadvantage": "Çorbalar öğlene doğru tükenebildiği için öğleden sonra gidildiğinde seçenek azalabiliyor.",
+        "transit": "Yenişehir Kooperatifler Mahallesi Akkoyunlu 2. Sokak No:10/D, Ofis merkezinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "İyi Firma & Restoranım",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Hindi etli mercimek, kavurmalı çorba ve sabah esnaf geleneği"
+        },
+        {
+          "title": "Tavsiyemiz & Yandex Diyarbakır",
+          "url": "https://www.tavsiyemiz.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kooperatifler paça-işkembe puanı ve erken tükenme notu"
+        }
+      ],
+      "pros": [
+        "Şehirde hindi suyuyla çorba yapan en özgün adreslerden",
+        "Ekonomik ve doyurucu sabah servisi"
+      ],
+      "cons": [
+        "Öğleden sonra çorba çeşitleri çoğunlukla bitmiş oluyor"
+      ],
+      "uncertainties": [
+        "Sabah geç saatlere kalındığında kavurmalı ve hindi çorbası tükenebiliyor."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-pacaci-saban-usta",
+      "categoryId": "tirit",
+      "resolvedName": "Paçaçı Şaban Usta",
+      "branchName": "Çeysa Diyar Park, Diclekent, Selahattin Eyyubi Blv. D:3 Altı No:1, 21070 Kayapınar/Diyarbakır",
+      "placeId": "ChIJC3UMM0EedUARQzD2jyuWzk0",
+      "coordinates": {
+        "lat": 37.946719099999996,
+        "lng": 40.1647962
+      },
+      "rating": 4.1,
+      "userRatingCount": 2254,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5606583699965882435",
+      "recommendedPrimary": [
+        "Kelle Paça / Ayak Paça",
+        "Kibe Mumbar Dolması",
+        "Sarımsaklı Sirkeli İşkembe"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Modern Salonda Geleneksel Sakatat Çeşitleri",
+          "note": "Küçük esnaf dükkanlarına giremeyen aile grupları için de ferah ortamda kelle paça ve mumbar sunuyor.",
+          "proof": "pacacisabanusta.com.tr ve yandex.com.tr değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş, aydınlık ve aileye uygun masa düzeni",
+        "crowdAndNoise": "Sabah erken ve gece geç saatlerde sürekli yüksek sirkülasyon",
+        "disadvantage": "Çok yüksek devir nedeniyle yoğun saatlerde gürültü artabiliyor ve servis hızı dalgalanabiliyor.",
+        "transit": "Kayapınar Diclekent Mahallesi Selahattin Eyyubi Bulvarı Çeysa Diyar Park altı."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Paçacı Şaban Usta Sitesi",
+          "url": "https://pacacisabanusta.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Diclekent konumu, paça ve mumbar/şırdan menüsü"
+        },
+        {
+          "title": "Bioyla & Restaurant Guru",
+          "url": "https://bioyla.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kayapınar sakatat salonu profili"
+        },
+        {
+          "title": "Yandex Maps Kayapınar",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Selahattin Eyyubi Bulvarı kelle paça ve mumbar puanları"
+        },
+        {
+          "title": "Google Maps Büyük Hacim",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "2200+ değerlendirme ile yüksek sirkülasyon kanıtı"
+        }
+      ],
+      "pros": [
+        "Şırdandan ayak paçaya geniş sakatat çeşitliliği",
+        "Geniş ve temiz salon düzeni"
+      ],
+      "cons": [
+        "Yoğun saatlerde kalabalık gürültüsü"
+      ],
+      "uncertainties": [
+        "Özel sakatat kalemleri akşam geç saatlerde hızla azalabiliyor."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-pacaci-mehmet-usta-1987",
+      "categoryId": "tirit",
+      "resolvedName": "Paçacı Mehmet Usta 1987",
+      "branchName": "Yeni Stadyum Yolu Üzeri Özay21 Sit. - Fırat Bulvarı - Mezopotamya Mah Numara, Mezopotamya, D:152AA, 21100 Kayapınar/Diyarbakır",
+      "placeId": "ChIJveNakBYfdUARNUrua_lXtBI",
+      "coordinates": {
+        "lat": 37.9404134,
+        "lng": 40.132683799999995
+      },
+      "rating": 4.2,
+      "userRatingCount": 291,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1347798917259872821",
+      "recommendedPrimary": [
+        "Klasik Kelle Paça Çorbası",
+        "Tuzlama / İşkembe",
+        "İlikli Kemik Suyu Çorbası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Diyarbakır İçi Bağımsız Aile Geleneği",
+          "note": "Şehir dışına açılmadan kendi mutfak kontrolünü koruyarak Fırat Bulvarı üzerinde istikrarlı çorba servisi yapıyor.",
+          "proof": "restoranim.net ve yandex.com.tr 1987 kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ferah bulvar cepheli düzenli çorba salonu",
+        "crowdAndNoise": "Sabah ve gece geç saatlerde düzenli yerel müşteri kitlesi",
+        "disadvantage": "Stadyum yolu Fırat Bulvarı tarafında kaldığından Suriçi gezisinden araçla gidilmesi gerekiyor.",
+        "transit": "Kayapınar Mezopotamya Mahallesi Fırat Bulvarı (Yeni Stadyum Yolu) Özay 21 Sitesi altında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım — Mehmet Usta 1987",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Fırat Bulvarı konumu ve 1987 kuruluşlu paça profili"
+        },
+        {
+          "title": "Yandex & Dijital Link",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Diyarbakır bağımsız paça salonu değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Köklü 1987 usta geleneğini şehir dışı zincire dönüşmeden sürdürüyor",
+        "Kolay araç erişimi"
+      ],
+      "cons": [
+        "Tarihî Sur merkezine uzak yeni yerleşim aksında"
+      ],
+      "uncertainties": [
+        "Gece servisinde bazı sakatat kalemleri erken saat stoğuna göre değişebiliyor."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-katmerci-ibo-dayi",
+      "categoryId": "tatli",
+      "resolvedName": "Katmerci İbo Dayı - Diyarbakır",
+      "branchName": "Talaytepe, Mezopotamya Blv ay office apt no 37, 21220, 21070 Kayapınar/Diyarbakır",
+      "placeId": "ChIJE50lNQAddUARNKbKATnfqnE",
+      "coordinates": {
+        "lat": 37.9661598,
+        "lng": 40.1540708
+      },
+      "rating": 4.7,
+      "userRatingCount": 279,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8190604308262856244",
+      "recommendedPrimary": [
+        "Fıstıklı Kaymaklı Katmer",
+        "Peynirli Çıtır Künefe",
+        "Soğuk Baklava"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Akşam Saatlerinde Sıcak Fırın Çıkışı",
+          "note": "Zincir kadayıf şubelerinin dışında taze hamur işçiliğine odaklanan hızlı ve yüksek puanlı tatlı durağı.",
+          "proof": "yemeksepeti.com ve yandex.com.tr İbo Dayı kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Modern ve temiz bulvar cepheli tatlı kafe düzeni",
+        "crowdAndNoise": "Akşam yemeği sonrası gençler ve ailelerle kalabalık",
+        "disadvantage": "Tarihî merkeze uzak Talaytepe hattında yer alıyor.",
+        "transit": "Kayapınar Talaytepe Mahallesi Mezopotamya Bulvarı Ay Office Apartmanı No:37."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemeksepeti Diyarbakır",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Katmer ve soğuk baklava puanlaması"
+        },
+        {
+          "title": "Yandex Maps Kayapınar",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "270+ değerlendirme ile katmer memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Yüksek çıtırlık ve bol fıstık dengesi",
+        "Hızlı sıcak pişirim"
+      ],
+      "cons": [
+        "Suriçi bölgesine araç mesafesinde"
+      ],
+      "uncertainties": [
+        "Akşam geç saat yoğunluğunda masalarda servis birkaç dakika sürebiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-safir-kunefe-baklava",
+      "categoryId": "tatli",
+      "resolvedName": "Safir Künefe&Baklava Diyarbakır",
+      "branchName": "Mahabad Bulvarı Eyüp Andan City B-Blok Dış Kapı No:43BB, Mezopotamya, 21070 Kayapınar/Diyarbakır",
+      "placeId": "ChIJ0Yzm-A8fdUAR6Cq_PzB-w2Y",
+      "coordinates": {
+        "lat": 37.9440102,
+        "lng": 40.1597651
+      },
+      "rating": 5,
+      "userRatingCount": 398,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://safirkunefebaklava.com/",
+      "mapsUri": "https://maps.google.com/?cid=7404900958020250344",
+      "recommendedPrimary": [
+        "Fıstıklı Çıtır Künefe",
+        "Klasik Fıstıklı Baklava",
+        "Burma Kadayıf & Taze Kaymak"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Cadde 75’in Yeni Nesil Tatlı Mimarisi",
+          "note": "Şık iç mekân tasarımını taze sıcak künefe pişirimiyle birleştirerek akşam buluşmalarına konfor kazandırıyor.",
+          "proof": "yirmibirtv.com ve amedmanset.com incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş, modern ve konforlu aile tatlı salonu",
+        "crowdAndNoise": "Akşamları Cadde 75 yürüyüşü yapan çiftler ve aileler yoğunlukta",
+        "disadvantage": "Geleneksel çarşı atmosferinden uzak, modern bulvar kafe konseptinde.",
+        "transit": "Kayapınar Mezopotamya Mahallesi Mahabad Bulvarı Eyüp Andan City B-Blok No:43BB."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yirmi Bir TV & Amed Manşet",
+          "url": "https://www.yirmibirtv.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mahabad Bulvarı konumu, künefe peyniri ve baklava şerbeti"
+        },
+        {
+          "title": "Gazete Manşet & Google Maps",
+          "url": "https://www.gztmanset.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "400’e yakın değerlendirmede çok yüksek temizlik ve lezzet puanı"
+        }
+      ],
+      "pros": [
+        "Şık ve konforlu salon ortamı",
+        "Künefenin çıtırlığı ve sıcak servis düzeni"
+      ],
+      "cons": [
+        "Geleneksel çarşı tatlıcısı atmosferi yok"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamları kalabalık masa talebinden dolayı kısa bekleme yaşanabiliyor."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-katmerci-eyyup-usta",
+      "categoryId": "tatli",
+      "resolvedName": "Katmerci Eyyüp Usta Künefe Salonu",
+      "branchName": "KILIÇ SITESI, Mezopotamya, Mahabad Blv KILIÇ SİTESİ C-BLOK NO: 49, 21070 Kayapınar/Diyarbakır",
+      "placeId": "ChIJRz7TIxkfdUARjWNAZy_Q66s",
+      "coordinates": {
+        "lat": 37.9394851,
+        "lng": 40.156929999999996
+      },
+      "rating": 4.4,
+      "userRatingCount": 541,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12388224102026994573",
+      "recommendedPrimary": [
+        "Fıstıklı Çıtır Katmer",
+        "Fıstıklı Burma Kadayıf",
+        "Peynirli Künefe"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Cadde 75’te Yerel Tatlı Ustalığı",
+          "note": "Şehir dışına franchise dağıtan büyük zincirlerin yanında kendi yerel ustalık odağını sürdüren kalıcı bir adres.",
+          "proof": "yandex.com.tr ve menuburada.com Kayapınar kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Düzenli cadde cepheli tatlı salonu ve dış masa alanı",
+        "crowdAndNoise": "Akşam yemeklerinden sonra düzenli mahalle ve aile yoğunluğu",
+        "disadvantage": "Cadde trafiği üzerinde olduğundan yoğun akşamları ses düzeyi artabiliyor.",
+        "transit": "Kayapınar Mezopotamya Mahallesi Mahabad Bulvarı Kılıç Sitesi C-Blok No:49."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Menu Burada — Eyyüp Usta",
+          "url": "https://menuburada.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Katmer, künefe ve burma kadayıf çeşitliliği"
+        },
+        {
+          "title": "Google & Yandex Maps",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "540+ değerlendirme ile bölgenin istikrarlı tatlı salonu"
+        }
+      ],
+      "pros": [
+        "Katmer ve burma kadayıfta dengeli şerbet oranı",
+        "Rahat bulvar erişimi"
+      ],
+      "cons": [
+        "Tarihî merkeze uzaklık"
+      ],
+      "uncertainties": [
+        "Sıcak katmer siparişleri yoğun saatlerde pişirim sırası bekleyebiliyor."
+      ],
+      "selectionScore": 72,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-seyhmus-alto-sur",
+      "categoryId": "tatli",
+      "resolvedName": "Şeyhmus Alto | Sur Dörtyol Şubesi",
+      "branchName": "Fatihpaşa, Gazi Cd. gürhani iş merkezi altı no:21, 21200 Sur/Diyarbakır",
+      "placeId": "ChIJ2-jSRz0hdUAR0tk9eszUzog",
+      "coordinates": {
+        "lat": 37.9146326,
+        "lng": 40.2370318
+      },
+      "rating": 4.5,
+      "userRatingCount": 53,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.seyhmusalto.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=9858050609049885138",
+      "recommendedPrimary": [
+        "Fıstıklı Burma Kadayıf",
+        "Cevizli Burma Kadayıf",
+        "Fıstıklı Baklava"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Suriçi Yürüyüşünde Köklü Yerel Kadayıfçı",
+          "note": "Suriçi esnafının içindeki konumuyla büyük otoyol şubelerine gitmeden taze tepsiden porsiyon alma imkânı sunuyor.",
+          "proof": "yandex.com.tr ve Google Maps Suriçi kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Gazi Caddesi kenarı mütevazı tatlı tezgâhı ve oturma masaları",
+        "crowdAndNoise": "Gündüz çarşı yürüyüşçüleri ve paket tatlı alan yerel halk",
+        "disadvantage": "Dörtyol kalabalığı üzerinde hızlı esnaf dükkânı düzeninde, uzun oturumlu kafe ortamı yok.",
+        "transit": "Sur Fatihpaşa Mahallesi Gazi Caddesi Gürhani İş Merkezi Altı No:21 adresinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Google Maps Suriçi",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Fatihpaşa Gazi Caddesi yüksek puanlı burma kadayıf durağı"
+        },
+        {
+          "title": "Yandex & Yerel Rehber",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Diyarbakır içi çok şubeli köklü yerel tatlı markası"
+        }
+      ],
+      "pros": [
+        "Şehir dışı zincire dönüşmemiş Diyarbakır markası",
+        "Suriçi’nde yürüyerek kolay ulaşım ve ekonomik fiyat"
+      ],
+      "cons": [
+        "Basit tezgâh düzeni, oturma alanı dar"
+      ],
+      "uncertainties": [
+        "Akşam saatlerinde sıcak tepsi çıkışı tezgâh yoğunluğuna göre değişebiliyor."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-kadayifci-haci-levent-dagkapi",
+      "categoryId": "tatli",
+      "resolvedName": "Kadayıfçı Hacı Levent | Dağkapı Şubesi",
+      "branchName": "Cami Nebi, Hz. Süleyman Cd. No:5, 21300 Sur/Diyarbakır",
+      "placeId": "ChIJQdeDBzwedUARY2LnAhk7gFg",
+      "coordinates": {
+        "lat": 37.9149222,
+        "lng": 40.2372716
+      },
+      "rating": 4.3,
+      "userRatingCount": 780,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://hacilevent.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=6377162050965561955",
+      "recommendedPrimary": [
+        "Tescilli Fıstıklı Burma Kadayıf",
+        "Cevizli Burma Kadayıf",
+        "Kaymak İlaveli Künefe"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "1907’den Beş Kuşağa Taşınan Diyarbakır Şerbet Geleneği",
+          "note": "Şam ustalık birikimiyle başlayan tepsi tekniğini beşinci kuşakta Suriçi girişinde yaşatan simgesel marka.",
+          "proof": "hacilevent.com.tr tarihçe sayfası ve haleftatli.com arşivi"
+        }
+      ],
+      "suitability": {
+        "seating": "Dağkapı’da iki cepheli düzenli tarihî cadde tatlı salonu",
+        "crowdAndNoise": "Gündüz ve akşam hem turistler hem kargo/paket alan yerlilerle sürekli yoğun",
+        "disadvantage": "Yüksek turistik popülerlik dönemlerinde masa servisi hızlılaşabiliyor ve kalabalık saatlerde lezzet algısı tepsi ısısına göre dalgalanabiliyor.",
+        "transit": "Sur Cami Nebi Mahallesi Hz. Süleyman Caddesi No:5, Dağkapı Meydanı hemen yanında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Hacı Levent Resmi Tarihçe",
+          "url": "https://hacilevent.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1907 kuruluşu, 5 kuşak aile mirası ve Diyarbakır-merkezli şubeler"
+        },
+        {
+          "title": "Özdiyarbakır Gazetesi & Halef Tatlı",
+          "url": "https://ozdiyarbakirgazetesi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1907 Hacı Mustafa Serdar Efendi ve sadeyağlı burma kadayıf ustalığı"
+        },
+        {
+          "title": "Yandex Maps Suriçi",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Dağkapı Şubesi tescilli burma kadayıf ve fıstık dengesi puanları"
+        }
+      ],
+      "pros": [
+        "Şehrin 1907’den gelen yaşayan burma kadayıf hafızası",
+        "Dağkapı yürüyüş kapısında merkezi konum"
+      ],
+      "cons": [
+        "Yoğun turistik saatlerde tezgâh önünde ve kasada kalabalık oluşuyor"
+      ],
+      "uncertainties": [
+        "Sıcak tepsi denk gelme oranı yoğun servis saatlerine göre farklılaşabiliyor."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-hews-cafe-kahvalti",
+      "categoryId": "kahvalti",
+      "resolvedName": "Hewş Cafe-Kahvaltı",
+      "branchName": "Cami Kebir, Müze Sok:18, 21300 Sur/Diyarbakır",
+      "placeId": "ChIJ0T9EygUhdUAReEZI6r66X8A",
+      "coordinates": {
+        "lat": 37.912526299999996,
+        "lng": 40.2343368
+      },
+      "rating": 4.8,
+      "userRatingCount": 230,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/hewsa.me?igsh=MXJhczlhNzd1b2o0dQ==",
+      "mapsUri": "https://maps.google.com/?cid=13862003507206833784",
+      "recommendedPrimary": [
+        "Yöresel Avlu Serpme Kahvaltı",
+        "Örgü Peyniri & Kavurmalı Yumurta",
+        "Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kalabalık Hanların Dışında Sakin Avlu Sabahi",
+          "note": "Hasan Paşa Hanı’ndaki aşırı yoğun kalabalığa alternatif olarak sakin müzik ve gölgeli avlu huzuru sunuyor.",
+          "proof": "restaurantguru.com ve yandex.com Müze Sokak incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî taş duvarlarla çevrili avlu ve samimi iç mekân masaları",
+        "crowdAndNoise": "Sabah kahvaltısı ve hafta sonu öğle öncesi dolu, hafta içi daha dingin",
+        "disadvantage": "Küçük avlu kapasitesi nedeniyle hafta sonu kalabalık gruplarda erkenden yer bulmak gerekiyor.",
+        "transit": "Sur Cami Kebir Mahallesi Müze Sokak No:18, Ziya Gökalp Müze Evi’ne komşu."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restaurant Guru — Hewş",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Samimi avlu, kahvaltı ve kaliteli filtre kahve notları"
+        },
+        {
+          "title": "Yandex & Google Maps",
+          "url": "https://yandex.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "230+ değerlendirmeyle Suriçi kahvaltıda zirve memnuniyet"
+        }
+      ],
+      "pros": [
+        "Suriçi’nin en huzurlu tarihî ev avlularından biri",
+        "Kahvaltı sonrası iyi filtre kahve bulma şansı"
+      ],
+      "cons": [
+        "Ara sokakta sınırlı masa sayısı"
+      ],
+      "uncertainties": [
+        "Hafta sonu geç kahvaltı saatlerinde avlu masaları bekletebiliyor."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-tarihi-diyarbakir-konagi",
+      "categoryId": "kahvalti",
+      "resolvedName": "Tarihi Diyarbakır Konağı Cafe & Kahvaltı",
+      "branchName": "Cevat Paşa, Doğru Sok No: 3, 21200 Sur/Diyarbakır",
+      "placeId": "ChIJm2BpWSEhdUARPoUu3K_lGsY",
+      "coordinates": {
+        "lat": 37.9149735,
+        "lng": 40.2390855
+      },
+      "rating": 4.6,
+      "userRatingCount": 889,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://sites.google.com/view/kahvalti/ana-sayfa",
+      "mapsUri": "https://maps.google.com/?cid=14274974512380282174",
+      "recommendedPrimary": [
+        "Geleneksel Konak Serpme Kahvaltı",
+        "Kavurmalı Yumurta & Mıhlama",
+        "Semaverde Taze Çay"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bazalt Taş Konakta Aile İşletmesi İlgisi",
+          "note": "Yüz yıllık konak mimarisini koruyarak standartlaştırılmış seri servis yerine ev sahipliği hissi veriyor.",
+          "proof": "wanderlog.com ve wanderboat.ai incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Bazalt taşlı açık avlu ve tarihî konak odaları",
+        "crowdAndNoise": "Sabah ve hafta sonu kahvaltılarında turistlerle canlı",
+        "disadvantage": "Grup kalabalığının girdiği saatlerde sıcak tabakların masaya gelişi biraz zaman alabiliyor.",
+        "transit": "Sur Cevat Paşa Mahallesi Doğru Sokak No:3, İçkale güzergâhına yakın."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Wanderlog — Diyarbakır Konağı",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "100 yıllık taş avlu ve aile işletmesi profili"
+        },
+        {
+          "title": "Restaurants Info & Maps",
+          "url": "https://www.restaurants-info.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "880+ değerlendirme ile yüksek konak kahvaltı puanı"
+        }
+      ],
+      "pros": [
+        "Otantik bazalt taş Diyarbakır konak mimarisi",
+        "Sıcak kahvaltılık çeşitliliği ve güler yüz"
+      ],
+      "cons": [
+        "Hafta sonu sabah kalabalığında servis süresi uzayabiliyor"
+      ],
+      "uncertainties": [
+        "Hava durumuna göre iç konak odaları daha erken dolabiliyor."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-diyarbakirevi-kahvalti",
+      "categoryId": "kahvalti",
+      "resolvedName": "Diyarbakirevi Kahvaltı & Cafe",
+      "branchName": "Dörtayaklı minare yanı, Savaş, Dicle Sk. No:20, 21200 Sur/Diyarbakır",
+      "placeId": "ChIJeeOXyuUhdUARwEUbsl6gl1s",
+      "coordinates": {
+        "lat": 37.9108479,
+        "lng": 40.2377689
+      },
+      "rating": 4.6,
+      "userRatingCount": 692,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.facebook.com/Diyarbak%C4%B1revi-Kahvalt%C4%B1Cafe-469043339812095/?rf=321432027960422",
+      "mapsUri": "https://maps.google.com/?cid=6599920107510252992",
+      "recommendedPrimary": [
+        "Yöresel Diyarbakır Serpme Kahvaltı",
+        "Manda Kaymağı & Bal",
+        "Menengiç / Türk Kahvesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Simgesel Yapıya İki Adım Uzaklıkta Sabah Mola Noktası",
+          "note": "Şeyh Mutahhar Camii (Dört Ayaklı Minare) gezisiyle kahvaltıyı aynı avluda birleştiren konumu öne çıkıyor.",
+          "proof": "eniyikahvalti.com.tr Diyarbakır Sur rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî bazalt taşlı konak avlusu ve eyvan oturumu",
+        "crowdAndNoise": "Sabah ve öğleden önce turist grupları ve şehir misafirleriyle yoğun",
+        "disadvantage": "Merkezi turistik odağa bitişik olması nedeniyle hafta sonları ses ve masa sirkülasyonu yükseliyor.",
+        "transit": "Sur Savaş Mahallesi Dicle Sokak No:20, Dört Ayaklı Minare’nin hemen bitişiğinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "En İyi Kahvaltı Rehberi",
+          "url": "https://eniyikahvalti.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tescilli Diyarbakır evi mimarisi ve Dört Ayaklı Minare komşuluğu"
+        },
+        {
+          "title": "Google Maps Suriçi",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "690+ değerlendirme ile Savaş mahallesinin gözdesi"
+        }
+      ],
+      "pros": [
+        "Dört Ayaklı Minare ile komşu eşsiz tarihî ortam",
+        "İstikrarlı kahvaltı tazeliği"
+      ],
+      "cons": [
+        "Hafta sonu turistik kalabalık ve masa bekleme ihtimali"
+      ],
+      "uncertainties": [
+        "Açık eyvan masaları için sabah erken saatlerde gitmek rahatlık sağlıyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-kastal-cafe-kahvalti",
+      "categoryId": "kahvalti",
+      "resolvedName": "Kastal Cafe kahvaltı",
+      "branchName": "Cami Nebi, Telgrafhane Sk. No:12, 21300 Sur/Diyarbakır",
+      "placeId": "ChIJQySFUzggdUARfeIsSYH_m_o",
+      "coordinates": {
+        "lat": 37.9136497,
+        "lng": 40.2357705
+      },
+      "rating": 4.5,
+      "userRatingCount": 901,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18058308061615678077",
+      "recommendedPrimary": [
+        "Kastal Serpme Kahvaltı",
+        "Fırından Taze Çörek & Hamur İşi",
+        "Dibek / Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kahvaltı Sonrası Kahve & Tatlı Devamlılığı",
+          "note": "Sadece sabah kahvaltısı verip kapanmak yerine öğle öncesi kahve ve tatlı molasına da imkân tanıyor.",
+          "proof": "nelerimeshur.com ve gastrolife.com.tr Suriçi incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî taş bina içinde düzenli iki katlı oturum ve avlu alanı",
+        "crowdAndNoise": "Hafta sonları genç gruplar ve aile kahvaltılarıyla yüksek yoğunluk",
+        "disadvantage": "Gazi Caddesi arkası dar sokakta park alanı bulunmuyor.",
+        "transit": "Sur Cami Nebi Mahallesi Telgrafhane Sokak No:12 adresinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Gastrolife & Neleri Meşhur",
+          "url": "https://gastrolife.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Telgrafhane Sokak konumu, taze hamur işleri ve kahvaltı"
+        },
+        {
+          "title": "Restoranım & Google Maps",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "900+ değerlendirme ile Cami Nebi puan liderlerinden"
+        }
+      ],
+      "pros": [
+        "Yüksek hacme rağmen puan tutarlılığını koruyor",
+        "Taze fırın eşlikçileri"
+      ],
+      "cons": [
+        "Hafta sonları gürültülü ve kalabalık olabiliyor"
+      ],
+      "uncertainties": [
+        "Kalabalık gruplar için hafta sonu öncesi yer sormak gerekiyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-morgen-coffee-house",
+      "categoryId": "kahve",
+      "resolvedName": "Morgen Coffee House",
+      "branchName": "Yenişehir Mah. Lise Cad. Çavuşoğlu-6 A Blok No: D:10AB, Yenişehir, 21100 Yenişehir/Diyarbakır",
+      "placeId": "ChIJZwRuYyYhdUARE5zyOA6h6VM",
+      "coordinates": {
+        "lat": 37.9178681,
+        "lng": 40.2307809
+      },
+      "rating": 4.5,
+      "userRatingCount": 190,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6046541057178639379",
+      "recommendedPrimary": [
+        "Funky Berry / Özel Kahveler",
+        "Cortado & Flat White",
+        "Ev Yapımı Cheesecake"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Merkezi Lise Caddesi’nde Huzurlu Sohbet Ortamı",
+          "note": "Hem iç hem dış oturma alanıyla şehir merkezinde makul fiyatlı ve düzenli bir kahve buluşma noktası.",
+          "proof": "restaurantguru.com ve yandex.com.tr Lise Cd. değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Şık iç salon ve cadde kenarı dış oturma alanı",
+        "crowdAndNoise": "Öğleden sonra ve akşam saatlerinde yerel üniversite gençleri ve kentliler",
+        "disadvantage": "Tarihî Suriçi dokusu yerine modern Yenişehir merkez aksında bulunuyor.",
+        "transit": "Yenişehir Mahallesi Lise Caddesi Çavuşoğlu-6 A Blok No:10AB adresinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restaurant Guru — Morgen",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Özel kahveler, cheesecake ve dış oturma değerlendirmesi"
+        },
+        {
+          "title": "Yandex Maps Yenişehir",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Lise Caddesi konum ve dengeli fiyat yorumları"
+        }
+      ],
+      "pros": [
+        "Diyarbakır merkezinde bağımsız ve yüksek puanlı kafe",
+        "İç-dış ferah oturum"
+      ],
+      "cons": [
+        "Sur içi yürüyüş rotasından birkaç dakika mesafede"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamları açık oturma bölümü erken doluyor."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-valinor-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Valinor Coffee",
+      "branchName": "Mezopotamya Mahallesi Mahabad Bulvarı 75 Metrelik Yol Üstü Azel, Çetin Durmaz Rezidansları, Mezopotamya, D:2. Etap B/blok no 41:BB, 21070 Kayapınar/Diyarbakır",
+      "placeId": "ChIJtQZBKG4fdUARWpZ-v7tqyX8",
+      "coordinates": {
+        "lat": 37.9447754,
+        "lng": 40.1605911
+      },
+      "rating": 4.8,
+      "userRatingCount": 74,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9208008267739862618",
+      "recommendedPrimary": [
+        "V60 Pour Over Demleme",
+        "Flat White / Cortado",
+        "Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Demleme Odaklı Barista Yaklaşımı",
+          "note": "Bölgedeki büyük zincir nargile-kafe karmalarından tamamen ayrılarak saf çekirdek ve sakin mekân kalitesine odaklanıyor.",
+          "proof": "yandex.com.tr ve restoranim.net Valinor incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ferah, temiz ve konsept dekorasyonlu sakin salon",
+        "crowdAndNoise": "Öğleden sonra çalışma veya kaliteli kahve için gelen konuklar",
+        "disadvantage": "Cadde 75 modern semtinde yer aldığı için eski şehir gezisi sonrası araç gerektiriyor.",
+        "transit": "Kayapınar Mezopotamya Mahallesi Mahabad Bulvarı Azel Çetin Durmaz Rezidansları B-Blok No:41BB."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yandex Maps — Valinor Coffee",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "V60 demleme, sakin atmosfer ve yüksek temizlik puanları"
+        },
+        {
+          "title": "Restoranım & Infobel Diyarbakır",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mahabad Bulvarı üçüncü nesil kahveci incelemesi"
+        }
+      ],
+      "pros": [
+        "Şehirde V60 ve nitelikli kahveye odaklanan en saf duraklardan",
+        "Güleryüzlü, profesyonel barista ekibi"
+      ],
+      "cons": [
+        "Eski şehre göre Kayapınar çıkışında"
+      ],
+      "uncertainties": [
+        "Single-origin çekirdek seçenekleri kavrum döngüsüne göre yenileniyor."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-cup-of-coffee-kayapinar",
+      "categoryId": "kahve",
+      "resolvedName": "Cup of Coffee",
+      "branchName": "Medya Mahallesi, Mahabad Bulvarı, 629, Medya, 1 Sokak No:12A, 21070 Kayapınar/Diyarbakır",
+      "placeId": "ChIJB4Q00cAfdUARqgjN-BMYiEE",
+      "coordinates": {
+        "lat": 37.9562187,
+        "lng": 40.1705665
+      },
+      "rating": 4.5,
+      "userRatingCount": 139,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4722050683355596970",
+      "recommendedPrimary": [
+        "Filtre Kahve / Latte",
+        "Soğuk Kahve Çeşitleri",
+        "Tatlı Eşlikçileri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Geniş Masalı Rahat Buluşma Düzeni",
+          "note": "Küçük butik dükkanların aksine rahat oturumlu gruplar ve uzun sohbetler için ferah alan sağlıyor.",
+          "proof": "yandex.com.tr ve restoranim.net Medya kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç salon ve ferah masa aralıkları",
+        "crowdAndNoise": "Akşamları çevre mahalle sakinleri ve genç gruplar yoğunlukta",
+        "disadvantage": "Yoğun akşam saatlerinde kalabalığa bağlı olarak servis temposu biraz ağırlaşabiliyor.",
+        "transit": "Kayapınar Medya Mahallesi Mahabad Bulvarı 629. Sokak No:12A adresinde bulunuyor."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım — Cup of Coffee",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Üçüncü nesil kahve konsepti ve Medya konumu"
+        },
+        {
+          "title": "Yandex Maps Kayapınar",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Geniş oturma alanı ve temizlik değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Ferah masa düzeni ve temiz iç ortam",
+        "Zincirlerin yoğun olduğu bulvarda bağımsız seçenek"
+      ],
+      "cons": [
+        "Yoğun saatlerde masa servisi yavaşlayabiliyor"
+      ],
+      "uncertainties": [
+        "Akşam zirve saatlerinde dış ve cam önü koltuklar hızlı doluyor."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-seyir-cafe-ofis",
+      "categoryId": "kahve",
+      "resolvedName": "SEYİR CAFE",
+      "branchName": "ofis cami karşısı, Kooperatifler, Dicle Sk., 21100 Yenişehir/Diyarbakır",
+      "placeId": "ChIJx28syTAhdUARhA65ME6AZho",
+      "coordinates": {
+        "lat": 37.9211422,
+        "lng": 40.2207854
+      },
+      "rating": 4.4,
+      "userRatingCount": 35,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1902348965923851908",
+      "recommendedPrimary": [
+        "Türk Kahvesi & Espresso",
+        "Taze Demleme Çay",
+        "Sıcak-Soğuk Kafe İçecekleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ofis Semtinin Yerel Sosyal Doku Merkezi",
+          "note": "Turistik Suriçi kalabalığından çıkarak Diyarbakır’ın günlük semt yaşamını gözlemlemek için ideal sokak noktasında.",
+          "proof": "yandex.com.tr ve restaurantguru.com Ofis verileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş sokak kenarı açık oturma ve kapalı salon alanı",
+        "crowdAndNoise": "Gün boyu Ofis esnafı, öğrenciler ve kent sakinleri",
+        "disadvantage": "Dış alanda nargile ve yüksek kafe sohbet temposu bulunduğu için sakin özel kahve barı beklentisinden farklı.",
+        "transit": "Yenişehir Kooperatifler Mahallesi Dicle Sokak, Ofis Camii tam karşısında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yandex Maps Ofis",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ofis Camii karşısı merkez konum ve dış oturma"
+        },
+        {
+          "title": "Restaurant Guru — Seyir Cafe",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Güler yüzlü servis ve geniş oturma düzeni notları"
+        }
+      ],
+      "pros": [
+        "Ofis semtinin en kolay ulaşılır günlük buluşma noktası",
+        "Geniş oturum kapasitesi"
+      ],
+      "cons": [
+        "Açık alanda duman/nargile ve kalabalık sokak sesi olabiliyor"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamları açık masalar erken dolabiliyor."
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-cigerci-xale-meheme",
+      "categoryId": "denemelisin",
+      "resolvedName": "Ciğerci Xale Meheme",
+      "branchName": "Cami Nebi Mahallesi Kıbrıs Caddesi Yoğurtçu Sokak, Cami Nebi, 21300 Sur/Diyarbakır",
+      "placeId": "ChIJL9N8QTkgdUARMzdruVJT7Lk",
+      "coordinates": {
+        "lat": 37.9156741,
+        "lng": 40.2354075
+      },
+      "rating": 4,
+      "userRatingCount": 9879,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13397174606283618099",
+      "recommendedPrimary": [
+        "Klasik Kuzu Ciğer Şiş",
+        "Yürek & Kuşbaşı Şiş",
+        "Taze Sumaklı Soğan & Yayık Ayran"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "1978’den Bugüne Suriçi Ciğer Hafızası",
+          "note": "Şehrin gastronomi tanıtımlarında ve yerel hafızada en sık referans gösterilen tarihsel ciğer durağı.",
+          "proof": "gazetedetay.com 1978 tarihçesi ve google maps kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî çarşı caddesinde çok katlı yüksek devirli esnaf salonu",
+        "crowdAndNoise": "Sabah erken saatlerden geceye dek sürekli en kalabalık turist ve yerli akışı",
+        "disadvantage": "Aşırı yüksek sirkülasyon sebebiyle yoğun saatlerde masa bulmak zor, gürültü yüksek ve hizmet hızı dalgalı olabiliyor.",
+        "transit": "Sur Cami Nebi Mahallesi Kıbrıs Caddesi Yoğurtçu Sokak köşesinde Dağkapı girişinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Gazete Detay — 1978 Kuruluşu",
+          "url": "https://gazetedetay.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1978 yılına dayanan Diyarbakır ciğer mirası"
+        },
+        {
+          "title": "Yandex & Google Topluluk",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "On bine yaklaşan değerlendirmeyle semt simgesi"
+        }
+      ],
+      "pros": [
+        "Şehrin 1978’den beri en bilinen tarihî ciğercisi",
+        "Dağkapı girişinde hemen yürüyüş rotasında"
+      ],
+      "cons": [
+        "Yoğun kalabalıkta bekleme, yüksek ses ve değişken servis temposu"
+      ],
+      "uncertainties": [
+        "Çok kalabalık saatlerde üst kat veya sakin esnaf lokantaları daha konforlu olabiliyor."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-umut-cigercisi",
+      "categoryId": "denemelisin",
+      "resolvedName": "UMUT CİĞERCİSİ",
+      "branchName": "Lise caddesi 4 sokak yeşim apt.Altı, Yenişehir, 21120 Yenişehir/Diyarbakır",
+      "placeId": "ChIJPa5btyQgdUAROxKTCz-jxmc",
+      "coordinates": {
+        "lat": 37.9182363,
+        "lng": 40.2287344
+      },
+      "rating": 4.3,
+      "userRatingCount": 3268,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7477843722467742267",
+      "recommendedPrimary": [
+        "1972 Usulü Kuzu Ciğer Şiş",
+        "Urfa / Adana Kebap",
+        "Köz Biber & Lavaş"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yarım Asırlık Aile Ustalığı",
+          "note": "Sur dışı Yenişehir semtinde 1972’den bugüne bozulmadan gelen köklü esnaf devamlılığını temsil ediyor.",
+          "proof": "tigrishaber.com 1972 röportajı ve Google Maps binlerce kayıt"
+        }
+      ],
+      "suitability": {
+        "seating": "Lise Caddesi sokağında geniş ve düzenli aile-esnaf salonu",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde yüksek yerel müdavim trafiği",
+        "disadvantage": "Büyük kalabalık saatlerinde servis gürültülü ve bekleme süresi değişken olabiliyor.",
+        "transit": "Yenişehir Mahallesi Lise Caddesi 4. Sokak Yeşim Apartmanı altında bulunuyor."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Tigris Haber — Alan Ailesi Dosyası",
+          "url": "https://www.tigrishaber.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1972 kuruluşu ve yarım asırlık kuzu ciğeri geleneği"
+        },
+        {
+          "title": "Yandex Maps Yenişehir",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yenişehir Lise Caddesi kuzu ciğer şiş geleneği"
+        },
+        {
+          "title": "Google Maps Binlerce Kayıt",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "3200+ değerlendirme ile Yenişehir’in ikonik ciğercisi"
+        }
+      ],
+      "pros": [
+        "1972’den gelen köklü aile işletmesi",
+        "Yenişehir merkezinde kolay erişim"
+      ],
+      "cons": [
+        "Yoğun öğle-akşam seanslarında yüksek gürültü"
+      ],
+      "uncertainties": [
+        "Lise Caddesi çevresinde araç park alanı gün ortasında kısıtlı kalabiliyor."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-nasir-usta-adana",
+      "categoryId": "denemelisin",
+      "resolvedName": "Nasır Usta Adana Kebapçısı",
+      "branchName": "Yenişehir, Ali Emiri Cd., 21100 Yenişehir/Diyarbakır",
+      "placeId": "ChIJX-N5sTsgdUARt0JX-scc4y8",
+      "coordinates": {
+        "lat": 37.9157282,
+        "lng": 40.2316171
+      },
+      "rating": 4.7,
+      "userRatingCount": 3923,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3450633384720024247",
+      "recommendedPrimary": [
+        "Zırh Kıyma Kebap (1.5 Porsiyon)",
+        "Yarım Kebap - Yarım Ciğer Kombinasyonu",
+        "Külbastı & Kuzu Şiş"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Diyarbakır’a Özgü Yarım-Yarım Kombinasyon Kültürü",
+          "note": "Tek tabakta yarım zırh kebabı ile yarım kuzu ciğeri birleştiren servisiyle şehir sakinlerinin vazgeçilmez tercihi.",
+          "proof": "kebapcinasirusta.com ve nasirusta.com.tr menü bilgileri"
+        }
+      ],
+      "suitability": {
+        "seating": "Çok masalı, hızlı ve düzenli büyük şehir kebap salonu",
+        "crowdAndNoise": "Öğle yemekleri ve akşam saatlerinde sürekli yüksek doluluk",
+        "disadvantage": "Büyük şehir ölçeğinde çok yüksek devirli bir salon olduğu için samimi tarihî avlu arayanlar için fazla hareketli.",
+        "transit": "Yenişehir Mahallesi Ali Emiri Caddesi üzerinde Sur kapısı kuzeyinde bulunuyor."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Nasır Usta Resmi Sitesi",
+          "url": "https://kebapcinasirusta.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1974 kuruluşu, zırh kıyma ve yalnız Diyarbakır şubeleri"
+        },
+        {
+          "title": "Google Maps Binlerce Kayıt",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "3900+ değerlendirme ile yüksek puanlı merkez şube"
+        }
+      ],
+      "pros": [
+        "Şehir dışı zincir olmayan 1974 yerel kebap kurumu",
+        "Zengin ikram çeşitliliği ve tutarlı pişirim"
+      ],
+      "cons": [
+        "Yüksek ses ve çok kalabalık öğle-akşam masaları"
+      ],
+      "uncertainties": [
+        "Yoğun yemek saatlerinde kapı önünde kısa bekleme sırası oluşabiliyor."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-saray-kapi-kahvalti",
+      "categoryId": "denemelisin",
+      "resolvedName": "Saray Kapı Kahvaltı & Cafe",
+      "branchName": "Cevat Paşa, Kozlu Sk. no:19, 21200 Sur/Diyarbakır",
+      "placeId": "ChIJ43dOLj8gdUARw8iYyerZyFo",
+      "coordinates": {
+        "lat": 37.9150914,
+        "lng": 40.2390683
+      },
+      "rating": 4.4,
+      "userRatingCount": 2366,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6541718061183453379",
+      "recommendedPrimary": [
+        "Saray Kapı Serpme Kahvaltı",
+        "Kavurmalı Yumurta & Örgü Peyniri",
+        "Semaver Çay"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İçkale Gezisi Başlangıç Noktası",
+          "note": "Hz. Süleyman Camii ve İçkale Müze Kompleksi’ne yürüyüş mesafesinde kalabalık aile gruplarını kolaylıkla ağırlıyor.",
+          "proof": "nelerimeshur.com ve yandex.com.tr İçkale kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî doku içinde geniş iç salon ve avlu kapasitesi",
+        "crowdAndNoise": "Hafta sonu sabahları ve turistik tatil günlerinde oldukça yoğun",
+        "disadvantage": "Büyük ölçekli turist gruplarının tercih ettiği günlerde hizmet hızı düşebiliyor ve gürültü artıyor.",
+        "transit": "Sur Cevat Paşa Mahallesi Kozlu Sokak No:19, İçkale sur duvarlarına çok yakın."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Neleri Meşhur — Saray Kapı",
+          "url": "https://www.nelerimeshur.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Serpme kahvaltı profili ve İçkale yürüyüş rotası"
+        },
+        {
+          "title": "Google Maps Büyük Hacim",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "2360+ değerlendirme ile yüksek kahvaltı puanı"
+        }
+      ],
+      "pros": [
+        "İçkale bölgesine komşu güçlü konum",
+        "Geniş kapasite ve zengin kahvaltı çeşitliliği"
+      ],
+      "cons": [
+        "Hafta sonu kalabalığında hızlı devir ve ses yüksekliği"
+      ],
+      "uncertainties": [
+        "Tur otobüslerinin yoğunlaştığı sabah saatlerinde açık masa bulmak zorlaşabiliyor."
+      ],
+      "selectionScore": 71,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-tas-mahal-sur",
+      "categoryId": "denemelisin",
+      "resolvedName": "Taş Mahal KAHVALTI SALONU/CAFE",
+      "branchName": "Ziya Gökalp, Gökalp Sk. No:21, 21300 Sur/Diyarbakır",
+      "placeId": "ChIJi-0RzKYhdUARa7hh_zKKjN8",
+      "coordinates": {
+        "lat": 37.911034,
+        "lng": 40.2338808
+      },
+      "rating": 4.6,
+      "userRatingCount": 262,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.tasmahalsur.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=16108401918835013739",
+      "recommendedPrimary": [
+        "Yöresel Mırtoxe & Serpme Kahvaltı",
+        "Örgü Peyniri & Sıcak Hamur İşleri",
+        "Taze Çay"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Unutulmayan Yöresel Lezzet Mırtoxe",
+          "note": "Pek çok standart kahvaltıcıda bulunmayan geleneksel unlu-tereyağlı mırtoxeyi serpme menüye taşımasıyla fark yaratıyor.",
+          "proof": "tasmahalsur.com.tr ve yandex.com.tr incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Bazalt taş avlu ve mistik motifli kapalı odalar",
+        "crowdAndNoise": "Sabah kahvaltısı ve öğleden önce yerli-yabancı misafirler",
+        "disadvantage": "Güneşli günlerde avlu sıcaklığı yükselebiliyor; dar sokak nedeniyle araç girişi yok.",
+        "transit": "Sur Ziya Gökalp Mahallesi Gökalp Sokak No:21 adresinde yer alıyor."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Taş Mahal Sur Resmi Sitesi",
+          "url": "https://tasmahalsur.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Ziya Gökalp konumu ve mırtoxe özel kahvaltı kalemi"
+        },
+        {
+          "title": "Yandex Maps Suriçi",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mistik atmosfer ve çay servisi memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Mırtoxe gibi gerçek yöresel kahvaltılıkları koruyor",
+        "Otantik taş avlu ambiyansı"
+      ],
+      "cons": [
+        "Hafta sonu erken saatlerde dolan küçük avlu"
+      ],
+      "uncertainties": [
+        "Gölge avlu masaları için sabah erken saatlerde gitmek avantaj sağlıyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-ickale-muharrem-erim",
+      "categoryId": "denemelisin",
+      "resolvedName": "İçkale Kahvaltı & Cafe Muharrem Erim Diyarbakır Evi",
+      "branchName": "Ferit Köşk, 303. Sk. No:7, 21100 Yenişehir/Diyarbakır",
+      "placeId": "ChIJAfDDJz8gdUARpaOBDENW0QQ",
+      "coordinates": {
+        "lat": 37.9149256,
+        "lng": 40.2392246
+      },
+      "rating": 4.4,
+      "userRatingCount": 214,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=347153492256859045",
+      "recommendedPrimary": [
+        "Diyarbakır Evi Serpme Kahvaltı",
+        "Yöresel Peynir & Çörekler",
+        "Menengiç Kahvesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarihî Ev Dokusunda Canlı Müzik & Kahvaltı",
+          "note": "Yemeğin yanında kentin geleneksel müzik kültürünü de avluda dinlemek isteyen ziyaretçiler için seçkin bir atmosfer yaratıyor.",
+          "proof": "yandex.com.tr ve kültürel etkinlik kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî taş eyvan ve geniş konak avlusu",
+        "crowdAndNoise": "Hafta sonu müzikli kahvaltı saatlerinde oldukça hareketli",
+        "disadvantage": "Sakin kahvaltı arayanlar için hafta sonu akustik müzik dinletisi yüksek sesli gelebilir.",
+        "transit": "Yenişehir Ferit Köşk Mahallesi 303. Sokak No:7, İçkale sur duvarlarının hemen bitişiğinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yandex Maps İçkale",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Muharrem Erim Diyarbakır Evi tescilli avlusu ve serpme kahvaltı"
+        },
+        {
+          "title": "Kültürel Dinleti Arşivleri",
+          "url": "https://www.youtube.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Hafta sonu konak avlusunda yerel sanatçı dinletileri"
+        }
+      ],
+      "pros": [
+        "Tescilli tarihî konak dokusu ve kültürel dinleti",
+        "İçkale müzesine birkaç adım uzaklıkta"
+      ],
+      "cons": [
+        "Hafta sonları yoğun kalabalık ve müzik sesi"
+      ],
+      "uncertainties": [
+        "Hafta sonu dinletisi program saatleri mevsime göre değişebiliyor."
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-cigerci-ali-amca",
+      "categoryId": "denemelisin",
+      "resolvedName": "Ciğerci Ali Amca Diyarbakır",
+      "branchName": "Medya, Tekel Cd. Aydem Sitesi B/Blok No:8, 21100 Kayapınar/Diyarbakır",
+      "placeId": "ChIJFV65zHsfdUARSnwM79oM8M0",
+      "coordinates": {
+        "lat": 37.956011499999995,
+        "lng": 40.1772519
+      },
+      "rating": 4.6,
+      "userRatingCount": 330,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14839374906638761034",
+      "recommendedPrimary": [
+        "Acılı Kuzu Ciğer Şiş",
+        "Yürek Şiş & Kuşbaşı",
+        "Sumaklı Soğan & Yayık Ayran"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kayapınar Yakasında Tutarlı Ciğer Alternatifi",
+          "note": "Modern mahallelerde kalıp kaliteli ocakbaşı arayan misafirlere ulaşım kolaylığı sağlıyor.",
+          "proof": "firmakonum.com ve yandex.com.tr Kayapınar değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Düzenli modern semt restoranı masaları",
+        "crowdAndNoise": "Akşam yemeklerinde yerel mahalle sakinleri yoğunlukta",
+        "disadvantage": "Tarihî şehir merkezine uzak modern yerleşim aksında yer alıyor.",
+        "transit": "Kayapınar Medya Mahallesi Tekel Caddesi Aydem Sitesi B-Blok No:8."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Firmakonum Diyarbakır",
+          "url": "https://firmakonum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tekel Caddesi konumu ve ciğer/tava profili"
+        },
+        {
+          "title": "Google Maps Kayapınar",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "330+ değerlendirmeyle Kayapınar’ın yüksek puanlı ciğercisi"
+        }
+      ],
+      "pros": [
+        "Kayapınar merkezinde yüksek ciğer kalitesi",
+        "Temiz aile ortamı"
+      ],
+      "cons": [
+        "Turistik eski şehir yürüyüşünden uzak"
+      ],
+      "uncertainties": [
+        "Akşam yoğun saatlerinde masa doluluğu artabiliyor."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-hacibaba-cigercisi-mardinkapi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Hacıbaba Ciğercisi MardinKapı",
+      "branchName": "Abdaldede, Gazi Cd. No: 80 D:F, 21300 Sur/Diyarbakır",
+      "placeId": "ChIJKYdpXhohdUARFYxMxWGsOmg",
+      "coordinates": {
+        "lat": 37.908732,
+        "lng": 40.2360372
+      },
+      "rating": 4.5,
+      "userRatingCount": 184,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.hacibabacigercisi.com/",
+      "mapsUri": "https://maps.google.com/?cid=7510504864515656725",
+      "recommendedPrimary": [
+        "Kuzu Ciğer Şiş",
+        "Közde Biber & Sumaklı Soğan",
+        "Açık Ayran"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mardinkapı & Keçi Burcu Rotasının Yanında",
+          "note": "On Gözlü Köprü ve Keçi Burcu manzarasından Suriçi’ne girerken veya çıkarken en elverişli yemek molası.",
+          "proof": "restoranim.net ve keshfet.com Mardinkapı rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Gazi Caddesi üzerinde sade ve pratik ciğer salonu",
+        "crowdAndNoise": "Öğle ve akşamüstü sur yürüyüşü ziyaretçileri ve yerel halk",
+        "disadvantage": "Cadde gürültüsü ve dar esnaf salonu atmosferi sade kalıyor.",
+        "transit": "Sur Abdaldede Mahallesi Gazi Caddesi No:80/F adresinde Mardinkapı çıkışında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım — Mardinkapı Hacıbaba",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Abdaldede Mardinkapı konumu ve kuzu ciğer kebabı"
+        },
+        {
+          "title": "Keşfet & Google Maps",
+          "url": "https://www.keshfet.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "180+ değerlendirmeyle güney kapısının yüksek puanlı durağı"
+        }
+      ],
+      "pros": [
+        "Keçi Burcu ve Hevsel yürüyüşüne en yakın iyi ciğer adresi",
+        "Taze meze dengesi"
+      ],
+      "cons": [
+        "Cadde üstü basit esnaf dekorasyonu"
+      ],
+      "uncertainties": [
+        "Hafta sonları sur gezisi bitiminde öğleden sonra hızlı kalabalıklaşabiliyor."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-01-adana-ofis",
+      "categoryId": "denemelisin",
+      "resolvedName": "01 ADANA KEBAPÇISI",
+      "branchName": "Ofis, Gevran Cad Öğretmenler Sokak Burak Apt, 21100 Yenişehir/Diyarbakır",
+      "placeId": "ChIJg95fkt8fdUARiTyBosxsYwo",
+      "coordinates": {
+        "lat": 37.9228836,
+        "lng": 40.2194828
+      },
+      "rating": 4.6,
+      "userRatingCount": 281,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=748561589229141129",
+      "recommendedPrimary": [
+        "Zırh Kıyma Adana Kebap",
+        "Ciğer Şiş & Tablacı Salatası",
+        "Şalgam Suyu"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ofis Merkezinde Bol Salatalı Hızlı Ocakbaşı",
+          "note": "Özellikle bol soğanlı-maydanozlu taze tablacı salatası kebaba eşlik eden en güçlü yanı.",
+          "proof": "yandex.com.tr ve yerelesnaf.com Gevran Cd. kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Apartman altı düzenli şehir içi ocakbaşı salonu",
+        "crowdAndNoise": "Öğle yemekleri ve akşamüstü ofis çıkışında yüksek yerel talep",
+        "disadvantage": "Gevran Caddesi yoğun şehir içi trafiği nedeniyle park yeri bulmak zaman alabiliyor.",
+        "transit": "Yenişehir Ofis Gevran Caddesi Öğretmenler Sokak Burak Apartmanı altında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yerel Esnaf — Gevran Cd.",
+          "url": "https://yerelesnaf.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ofis konumu, ciğer şiş ve tablacı salatası"
+        },
+        {
+          "title": "Yandex & Google Maps",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "280+ değerlendirme ile yüksek puanlı Ofis kebapçısı"
+        }
+      ],
+      "pros": [
+        "Gevran Caddesi üzerinde hızlı ve taze kebap servisi",
+        "Tablacı salatası cömertliği"
+      ],
+      "cons": [
+        "Yoğun cadde park sıkıntısı"
+      ],
+      "uncertainties": [
+        "Öğle yemek saatinde ofis yoğunluğundan masa dolabiliyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "diyarbakir-sherin-cafe-sur",
+      "categoryId": "denemelisin",
+      "resolvedName": "Sherin Cafe",
+      "branchName": "Hasırlı, Yenikapı Sk., 21200 Sur/Diyarbakır",
+      "placeId": "ChIJl9i3vlAhdUARxP2bQhPt6_M",
+      "coordinates": {
+        "lat": 37.9098624,
+        "lng": 40.2436341
+      },
+      "rating": 4.8,
+      "userRatingCount": 141,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://sherincafe.com/",
+      "mapsUri": "https://maps.google.com/?cid=17576402637721173444",
+      "recommendedPrimary": [
+        "Serpme Kahvaltı Sofrası",
+        "Menengiç / Filtre Kahve",
+        "Günlük Tatlı Eşlikçileri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Hasırlı Sokakları Arasında Çok Yönlü Mola Noktası",
+          "note": "Hem güne başlamak hem de Suriçi yürüyüşü sonrası kahve-tatlı için aynı sokak üzerinde kolay erişim sunuyor.",
+          "proof": "sherincafe.com ve yandex.com.tr Sur değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihî taş sokak dokusuna uyumlu iç mekân masaları",
+        "crowdAndNoise": "Sabah kahvaltısı ve öğleden sonra ziyaretçileriyle hareketli",
+        "disadvantage": "Popüler gezi saatlerinde masa kapasitesi hızlıca dolduğundan yer bulmak için beklemek gerekebiliyor.",
+        "transit": "Sur Hasırlı Mahallesi Yenikapı 1. Sokak No:1 adresinde yer alıyor."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Sherin Cafe Resmi Sitesi",
+          "url": "https://sherincafe.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Hasırlı Yenikapı konumu ve kahvaltı/tatlı konsepti"
+        },
+        {
+          "title": "Yandex Maps Suriçi",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "140+ değerlendirmede yüksek atmosfer ve temizlik puanı"
+        },
+        {
+          "title": "Restoranım & Firmakonum",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Serpme kahvaltı tazeliği ve personel ilgisi"
+        }
+      ],
+      "pros": [
+        "Hasırlı içinde yüksek konuk memnuniyeti",
+        "Kahvaltı ve kahveyi tek noktada temiz sunuyor"
+      ],
+      "cons": [
+        "Yoğun saatlerde masa bekleme ihtimali"
+      ],
+      "uncertainties": [
+        "Hafta sonları kahvaltı saatinde önceden doluluk sormak avantaj sağlıyor."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    }
+  ]
+}

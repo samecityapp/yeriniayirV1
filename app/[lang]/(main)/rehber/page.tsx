@@ -4,7 +4,13 @@ import { getDictionary } from '@/lib/dictionary';
 
 export const revalidate = 0;
 
-export default async function GuidePage({ params: { lang } }: { params: { lang: 'tr' | 'en' } }) {
+export default async function GuidePage(props: { params: Promise<{ lang: 'tr' | 'en' }> }) {
+  const params = await props.params;
+
+  const {
+    lang
+  } = params;
+
   const dict = await getDictionary(lang);
 
   return (

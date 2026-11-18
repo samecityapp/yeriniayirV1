@@ -1,0 +1,2600 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "mugla-marmaris-merkez",
+  "displayName": "Marmaris Merkez, Muğla",
+  "verifiedAt": "2026-11-17T08:00:42.404Z",
+  "selectedCount": 35,
+  "rejectedControls": [
+    {
+      "id": "ctrl-marmaris-terra-pizza-chain",
+      "resolvedName": "Terra Pizza - Marmaris Blue Port Avm",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-marmaris-burger-king-chain",
+      "resolvedName": "Burger King - Marmaris Meydan",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-marmaris-roberts-coffee-chain",
+      "resolvedName": "Robert's Coffee Netsel Marina",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-marmaris-pizza-locale-chain",
+      "resolvedName": "Pizza Locale Marmaris Marina",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-marmaris-burger-yiyelim-chain",
+      "resolvedName": "Burger Yiyelim",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-marmaris-dominos-chain",
+      "resolvedName": "Domino's Pizza Marmaris",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-marmaris-obadan-chain",
+      "resolvedName": "Obadan Coffee in Bakery Marmaris Şube",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-marmaris-kircicegi-chain",
+      "resolvedName": "Kırçiçeği Restoran",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-marmaris-tekin-usta-chain",
+      "resolvedName": "Tekin Usta %100 Keçi Sütü Dondurma Marmaris",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-marmaris-meliha-hanim-chain",
+      "resolvedName": "Meliha Hanım Su Böreği ve Ev Lezzetleri Armutalan Marmaris Şubesi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-marmaris-books-coffee-chain",
+      "resolvedName": "Books & Coffee Marmaris",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-marmaris-kale-attraction",
+      "resolvedName": "Marmaris Kalesi ve Arkeoloji Müzesi",
+      "reason": "invalid_place_type:tourist_attraction"
+    },
+    {
+      "id": "ctrl-marmaris-netsel-marina",
+      "resolvedName": "Setur Netsel Marmaris Marina",
+      "reason": "invalid_place_type:marina"
+    },
+    {
+      "id": "ctrl-marmaris-netsel-avm",
+      "resolvedName": "NETSEL MARMARIS MARINA ALIŞVERİŞ MERKEZİ",
+      "reason": "invalid_place_type:shopping_mall"
+    },
+    {
+      "id": "ctrl-marmaris-marvella-kahve-purity",
+      "resolvedName": "Marvella Coffee & Bakery",
+      "reason": "kahve_category_not_coffee_specialist:pastry_shop"
+    },
+    {
+      "id": "ctrl-marmaris-sefler-kahve-purity",
+      "resolvedName": "Şefler & Cafe Pastane",
+      "reason": "kahve_category_not_coffee_specialist:pastry_shop"
+    },
+    {
+      "id": "ctrl-marmaris-pioverdo-inflation",
+      "resolvedName": "Pioverdo",
+      "reason": "suspected_rating_inflation_no_community_proof"
+    },
+    {
+      "id": "ctrl-marmaris-fredonia-low",
+      "resolvedName": "Fredonia Coffee",
+      "reason": "below_quality_threshold:★4.3(1268)"
+    },
+    {
+      "id": "ctrl-marmaris-nil-balik-low",
+      "resolvedName": "Nil Balık Restaurant",
+      "reason": "below_quality_threshold:★4.2(932)"
+    },
+    {
+      "id": "ctrl-marmaris-aslankok-low",
+      "resolvedName": "Aslankök Bistro",
+      "reason": "below_quality_threshold:★4.3(189)"
+    },
+    {
+      "id": "ctrl-marmaris-pide-maris-low-count",
+      "resolvedName": "Pide Maris Marmaris Kır Pidesi",
+      "reason": "below_quality_threshold:★5(33)"
+    },
+    {
+      "id": "ctrl-marmaris-cafe-anne-icmeler-outside",
+      "resolvedName": "Cafe Anne",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Tepe/Kemeraltı/Kemeralti/Çıldır/Cildir/Sarıana/Sariana/Siteler/Hatipirimi/Çamdibi/Camdibi/Netsel Marina/Uzunyalı/Uzunyali, adres: İçmeler, Kayabal Cd. No:45/A, 48720 Marmaris/Muğla)"
+    },
+    {
+      "id": "ctrl-marmaris-cosy-corner-armutalan-outside",
+      "resolvedName": "Cosy Corner",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Tepe/Kemeraltı/Kemeralti/Çıldır/Cildir/Sarıana/Sariana/Siteler/Hatipirimi/Çamdibi/Camdibi/Netsel Marina/Uzunyalı/Uzunyali, adres: Armutalan, 130. Sk., 48700 Marmaris/Muğla)"
+    },
+    {
+      "id": "ctrl-marmaris-turgutreis-balik-armutalan-outside",
+      "resolvedName": "TurgutReis Balık Marmaris",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Tepe/Kemeraltı/Kemeralti/Çıldır/Cildir/Sarıana/Sariana/Siteler/Hatipirimi/Çamdibi/Camdibi/Netsel Marina/Uzunyalı/Uzunyali, adres: Armutalan, Yunus Nadi Cd. No:116, 48700 Marmaris/Muğla)"
+    },
+    {
+      "id": "ctrl-marmaris-kocabahce-bozburun-outside",
+      "resolvedName": "Kocabahçe Restaurant",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Tepe/Kemeraltı/Kemeralti/Çıldır/Cildir/Sarıana/Sariana/Siteler/Hatipirimi/Çamdibi/Camdibi/Netsel Marina/Uzunyalı/Uzunyali, adres: Hisarönü Körfezi Kocabahçe Mevkii, Bozburun, 48700 Kocabahçe Mevkii/Marmaris/Muğla)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "marmaris-slice-of-pizza-luna",
+      "categoryId": "pizza",
+      "resolvedName": "Slice of Pizza Luna",
+      "branchName": "Pizza Luna, Tepe, 39/1. Sk. No:9A, 48700 Marmaris/Muğla",
+      "placeId": "ChIJnyq92di9vxQRxYfFHQ-E-6o",
+      "coordinates": {
+        "lat": 36.8517351,
+        "lng": 28.274290699999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 1003,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12320586406060984261",
+      "recommendedPrimary": [
+        "Margherita Pizza",
+        "Pepperoni Pizza",
+        "Dört Peynirli Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırınlanmış Sarımsaklı Ekmek & Dip Sos",
+          "note": "Ana pizza siparişi öncesinde paylaşımlık sıcak başlangıç alternatifi sunuyor.",
+          "proof": "Dijital QR menü ve Yandex işletme kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sınırlı iç masa ve dar sokak önü oturumu; dilim al-götür mümkün",
+        "crowdAndNoise": "Akşamüstü ve gece geç saatlerde yüksek",
+        "disadvantage": "Kaleiçi sokak dokusu nedeniyle araç parkı yok; yoğun akşamda sıra bekletir",
+        "transit": "Barbaros Caddesi ve Yat Limanı yürüyüş aksından birkaç dakikalık mesafe"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "QR Menü / Restoran Kaydı",
+          "url": "https://qrdos.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Günlük hamur ve pizza çeşitleri"
+        },
+        {
+          "title": "Restoranım & Yandex",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Marmaris Tepe Mahallesi bağımsız pizza önerileri"
+        }
+      ],
+      "pros": [
+        "Yüksek memnuniyet istikrarı",
+        "Dilim veya bütün esnek sipariş"
+      ],
+      "cons": [
+        "Küçük dükkân hacmi ve sınırlı oturum"
+      ],
+      "uncertainties": [
+        "Kış sezonunda servis saatleri yaz aylarına göre kısalabilir"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-gusto-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "Gusto Pizza & More Marmaris",
+      "branchName": "Tepe, 33. Sk. No:30D, 48700 Marmaris/Muğla",
+      "placeId": "ChIJJ-G0Hhq9vxQRl6g-Ceb2x3U",
+      "coordinates": {
+        "lat": 36.8543604,
+        "lng": 28.276346
+      },
+      "rating": 4.8,
+      "userRatingCount": 293,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.gustomarmaris.com/",
+      "mapsUri": "https://maps.google.com/?cid=8487023490661001367",
+      "recommendedPrimary": [
+        "Quattro Formaggio Pizza",
+        "Smoked Ribs (Füme Kaburgalı) Pizza",
+        "Tantuni Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Deniz Mahsullü Fettuccine & Enginar Salatası",
+          "note": "Pizza dışı İtalyan mutfağı alternatifi olarak masalarda sıkça paylaşılıyor.",
+          "proof": "gustomarmaris.com ve Restoranım menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "İç salon ve sakin ara sokak masaları",
+        "crowdAndNoise": "Akşam yemeği saatlerinde dengeli doluluk",
+        "disadvantage": "Geleneksel İtalyan hamuru dışında füzyon malzemeler de sunduğundan klasikler önceden seçilmeli",
+        "transit": "Marmaris Çarşısı ve Ulusal Egemenlik Caddesi kesişiminden yürüyerek ulaşım"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Menü (Gusto Marmaris)",
+          "url": "http://www.gustomarmaris.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "33 cm ince hamur pizzalar ve makarnalar"
+        },
+        {
+          "title": "Restoranım Rehberi",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tantuni pizza ve Quattro Formaggio incelemesi"
+        }
+      ],
+      "pros": [
+        "Zengin özgün malzeme seçenekleri",
+        "Tek şube kalite kontrolü"
+      ],
+      "cons": [
+        "Ara sokak konumu nedeniyle ilk kez gelenler harita takibi yapmalı"
+      ],
+      "uncertainties": [
+        "Mevsimsel füme et çeşitleri stok durumuna göre değişebilir"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-pizza-corners",
+      "categoryId": "pizza",
+      "resolvedName": "Pizza corner's",
+      "branchName": "Tepe, 61/1. Sk. no3, 48700 Marmaris/Muğla",
+      "placeId": "ChIJsUuYCga9vxQR2C3SlUW-1KQ",
+      "coordinates": {
+        "lat": 36.8548945,
+        "lng": 28.271875899999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 242,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.pizzacorners.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=11877327323358440920",
+      "recommendedPrimary": [
+        "Corner's Pizza",
+        "Marmaris Ateşi Pizza",
+        "Dört Peynirli Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Elma Dilim Patates & Baharatlı Tavuk Topları",
+          "note": "Gece servisi ve paylaşımlı masa siparişlerinde pizza yanına ekleniyor.",
+          "proof": "pizzacorners.com.tr resmi menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük sokak masaları ve hızlı paket/al-götür servisi",
+        "crowdAndNoise": "Akşam geç saatlerde sipariş sirkülasyonu yüksek",
+        "disadvantage": "Gastronomi odaklı odun fırını yerine pratik mahalle pizzacısı ölçeğinde çalışır",
+        "transit": "Marmaris Meydanı ve Kordon arkası çarşı bölgesinden yürüyüş mesafesi"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Pizza Corner's)",
+          "url": "https://www.pizzacorners.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Günlük hamur pizza çeşitleri ve sıcak yanlar"
+        },
+        {
+          "title": "Yandex & Yemeksepeti",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Gece geç saat servis puanları"
+        }
+      ],
+      "pros": [
+        "Gece geç saatlerde açık kalan nadir bağımsız nokta",
+        "Dengeli yerel hamur ve sos"
+      ],
+      "cons": [
+        "Ambiyans akşam yemeğinden çok pratik pizza molasına uygun"
+      ],
+      "uncertainties": [
+        "Yoğun paket saatlerinde masa servisi yavaşlayabilir"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-escado-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "ESCADO BURGER MARMARIS",
+      "branchName": "Çıldır, 140. Sk. 2A, 48700 Marmaris/Muğla",
+      "placeId": "ChIJu3SwAyC9vxQR7BAakKYJ5yM",
+      "coordinates": {
+        "lat": 36.852091,
+        "lng": 28.262403
+      },
+      "rating": 4.8,
+      "userRatingCount": 638,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://escadoburger.com/",
+      "mapsUri": "https://maps.google.com/?cid=2587047121934487788",
+      "recommendedPrimary": [
+        "Escado Klasik Burger",
+        "Et Sever (Füme Kaburgalı) Burger",
+        "Tex-Mex Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Baharatlı Kaşık Patates & Ev Yapımı Soslar",
+          "note": "Sıcak burger menülerinin temel tamamlayıcısı olarak sipariş ediliyor.",
+          "proof": "escadoburger.com ve QR menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "İç mekan ve ön teras masaları",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde yerel müdavim yoğunluğu",
+        "disadvantage": "Kısa süreli pik saatlerde taze köfte pişirme süresi nedeniyle bekleme olabilir",
+        "transit": "Kemal Seyfettin Elgin Bulvarı ara sokak bağlantısı üzerinden kolay yürüyüş"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Escado Burger)",
+          "url": "https://escadoburger.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Dana kaburga köfte ve brioche burger menüsü"
+        },
+        {
+          "title": "QR Menü & Topluluk Kayıtları",
+          "url": "https://qrdos.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çıldır burger puanlamaları ve içerikleri"
+        }
+      ],
+      "pros": [
+        "Yüzde yüz dana kaburga çekimi",
+        "Dengeli trüf sos ve ekmek uyumu"
+      ],
+      "cons": [
+        "Çarşı merkezine göre bir blok içeride kaldığı için sokak tarifi gerekir"
+      ],
+      "uncertainties": [
+        "Bazı vegan seçeneklerin dönemsel menüde kalma durumu değişebilir"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-munch-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Munch Burger & Sokak Lezzetleri",
+      "branchName": "Tepe, 39. Sk. No:39, 48700 Marmaris/Muğla",
+      "placeId": "ChIJSecmt_i9vxQRQ6X8dZ706_o",
+      "coordinates": {
+        "lat": 36.8523578,
+        "lng": 28.275108499999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 305,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18080814090430489923",
+      "recommendedPrimary": [
+        "Munch Burger",
+        "Fig Jam (İncir Reçelli & Rokforlu) Burger",
+        "Truffle Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Karışık Atıştırma Tabağı",
+          "note": "Soğan halkası ve çıtır tavuk parçalarıyla paylaşımlık başlangıç olarak alınıyor.",
+          "proof": "munch-more.com ve Yemeksepeti menü listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Sokak içi ve kapalı alan masaları",
+        "crowdAndNoise": "Akşam saatlerinde genç ziyaretçi yoğunluğu",
+        "disadvantage": "Sokak dar olduğu için araç girişi bulunmaz; akşam gürültüsü yüksek olabilir",
+        "transit": "Marmaris Çarşısı ve Yat Limanı bağlantısından birkaç dakikalık yürüyüş"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Munch & More)",
+          "url": "https://munch-more.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Kaburga döş köfte ve el yapımı ekmek reçeteleri"
+        },
+        {
+          "title": "Yemeksepeti & Yandex",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tepe Mahallesi burger müşteri notları"
+        }
+      ],
+      "pros": [
+        "Özgün sos kombinasyonları",
+        "El yapımı yumuşak burger ekmeği"
+      ],
+      "cons": [
+        "Yoğun yaz akşamlarında dar sokakta masa bekleme ihtimali"
+      ],
+      "uncertainties": [
+        "Reçel ve özel soslu çeşitlerin bazıları yüksek mevsim dışındaysa sınırlı çıkabilir"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-heat-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "H'eat Burger",
+      "branchName": "Çıldır, 164. Sk. No:8, 48700 Marmaris/Muğla",
+      "placeId": "ChIJvVfz8GO9vxQR5A-GYs0xmaM",
+      "coordinates": {
+        "lat": 36.8486755,
+        "lng": 28.258837200000002
+      },
+      "rating": 4.8,
+      "userRatingCount": 353,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.heatburger.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=11788508257809993700",
+      "recommendedPrimary": [
+        "H'eat Burger (Füme Antrikotlu)",
+        "Asado Burger",
+        "Classic Cheeseburger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kajun Baharatlı Patates Kızartması",
+          "note": "Ağır ateşte pişirilmiş etli burgerlerin yanında klasik tamamlayıcı olarak seçiliyor.",
+          "proof": "heatburger.com.tr ve Restoranım kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Rahat iç salon ve gölgelikli dış masa bölümü",
+        "crowdAndNoise": "Akşam ve öğle saatlerinde düzenli akış",
+        "disadvantage": "Asado eti uzun pişme süresi nedeniyle bazı akşamlarda erken tükenebilir",
+        "transit": "Çıldır sahil arkası bulvardan yürüyerek kısa mesafede"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (H'eat Burger)",
+          "url": "https://www.heatburger.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Asado ve füme antrikot burger çeşitleri"
+        },
+        {
+          "title": "Restoranım Rehberi",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "8 saat pişirilmiş asado et ve burger değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Farklılaşan 8 saatlik asado et seçeneği",
+        "Ferah oturma alanı"
+      ],
+      "cons": [
+        "Kaleiçi/Marina hattından biraz batıda konumlanır"
+      ],
+      "uncertainties": [
+        "Sezon dışında mutfak kapanış saatleri erken çekilebilir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-arada-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Arada Burger",
+      "branchName": "Çıldır, Hasan Işık Cd. No:9, 48000 Marmaris/Muğla",
+      "placeId": "ChIJ2SynfH29vxQRwZwca63D9zY",
+      "coordinates": {
+        "lat": 36.8521682,
+        "lng": 28.264184099999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 117,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3960849546889436353",
+      "recommendedPrimary": [
+        "Selimiye Burger (Füme Kaburga & Trüflü)",
+        "Amos Smash Burger",
+        "Marmaris Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kajun Patates & Çıtır Soğan Halkası",
+          "note": "Yarımada serisi burgerlerin yanında diner sunumunu tamamlıyor.",
+          "proof": "aradaburger.com resmi menü bilgisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Modern-vintage iç mekan ve cadde önü oturumu",
+        "crowdAndNoise": "Akşam yemeği saatlerinde genç ve yerel kitle",
+        "disadvantage": "Cadde trafiği üzerinde olduğu için dış masalarda araç sesi duyulabilir",
+        "transit": "Çıldır Hasan Işık Caddesi toplu taşıma ve yürüyüş güzergâhı üzeri"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Arada Burger)",
+          "url": "https://aradaburger.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Marmaris yarımadası temalı burger menüsü"
+        },
+        {
+          "title": "Yemeksepeti & Yandex",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çıldır Hasan Işık Caddesi yerel burger notları"
+        }
+      ],
+      "pros": [
+        "Yarımadaya özgü özgün reçete kurgusu",
+        "Smash ve kaburgalı çift alternatif"
+      ],
+      "cons": [
+        "Yaz aylarında yüksek soslu çeşitler hızlı doyurucu olabilir"
+      ],
+      "uncertainties": [
+        "Sezon içi yoğunlukta paket siparişler mutfak hızını etkileyebilir"
+      ],
+      "selectionScore": 82,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-foru-coffee-tea",
+      "categoryId": "kahve",
+      "resolvedName": "Foru Coffee + Tea",
+      "branchName": "Tepe, 38. Sk. Onat Pasajı No:54/A, 48700 Marmaris/Muğla",
+      "placeId": "ChIJmzEUen69vxQRCBCP2PyKUgg",
+      "coordinates": {
+        "lat": 36.8541198,
+        "lng": 28.2735252
+      },
+      "rating": 4.9,
+      "userRatingCount": 60,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/foru.tr/",
+      "mapsUri": "https://maps.google.com/?cid=599694518963343368",
+      "recommendedPrimary": [
+        "Flat White",
+        "V60 Filtre Kahve",
+        "Özel Harman Bitki & Siyah Çay"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Az Sayıda Ev Yapımı Kurabiye & Kek",
+          "note": "Saf kahve odağını bozmadan demleme içeceklerin yanında eşlikçi olarak servis ediliyor.",
+          "proof": "foru.tr resmi sitesi ve topluluk rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "İç bar çevresi ve serin pasaj içi niş oturumlar",
+        "crowdAndNoise": "Gün içinde sakin çalışma ve sohbet temposu",
+        "disadvantage": "Pasaj içinde yer aldığı için ilk kez gelenler tabelayı dikkatle aramalı",
+        "transit": "Kordon ve Kaleiçi çarşısı içinden 3 dakikalık yürüyüş"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Foru Coffee)",
+          "url": "https://foru.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Kahve ve çay harmanı odaklı butik menü"
+        },
+        {
+          "title": "Kutlarım Şehir Rehberi",
+          "url": "https://kutlarim.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tepe Mahallesi nitelikli kahve ve çay seçkisi"
+        },
+        {
+          "title": "Tecrübelerim & Yandex",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Onat Pasajı bağımsız kahve noktası doğrulaması"
+        }
+      ],
+      "pros": [
+        "Çarşı ortasında huzurlu pasaj iklimi",
+        "Hem nitelikli kahve hem seçkin çay harmanları"
+      ],
+      "cons": [
+        "Küçük alan nedeniyle büyük gruplar için uygun değil"
+      ],
+      "uncertainties": [
+        "Demleme çekirdek çeşitleri hasada göre mevsimlik yenilenebilir"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-avlu-coffee-etc",
+      "categoryId": "kahve",
+      "resolvedName": "AVLU Coffee, Etc.",
+      "branchName": "Cumhuriyet Bulvarı, Siteler, Ankara sitesi 25DA No:24, 48700 Marmaris/Muğla",
+      "placeId": "ChIJp9y5zYm_vxQRMsFvIT0897M",
+      "coordinates": {
+        "lat": 36.8366019,
+        "lng": 28.246518899999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 95,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/avlu.coffee/",
+      "mapsUri": "https://maps.google.com/?cid=12967899885288276274",
+      "recommendedPrimary": [
+        "Iced Latte",
+        "Flat White",
+        "Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Kruvasan & Taze Fırın Atıştırmalıkları",
+          "note": "Sabah ve öğleden sonra kahvesinin yanında hafif kahvaltılık olarak sunuluyor.",
+          "proof": "Wanderlog ve Instagram @avlu.coffee kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Açık zeytin ağaçlı geniş avlu ve klimalı iç alan",
+        "crowdAndNoise": "Sabah saatlerinde bilgisayarlı çalışanlar ve sakin yerel kitle",
+        "disadvantage": "Kaleiçi merkezden Siteler yönünde kaldığı için yürüyüş yaklaşık 20 dakika sürer",
+        "transit": "Siteler sahil dolmuş hattı üzerinde bulvar kenarı durak yakını"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Instagram (@avlu.coffee)",
+          "url": "https://www.instagram.com/avlu.coffee/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Avlu tasarımı ve üçüncü nesil kahve servisi"
+        },
+        {
+          "title": "Wanderlog Editöryal Rehberi",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Zeytin ağaçlı bağımsız Marmaris kahvecisi incelemesi"
+        },
+        {
+          "title": "Servis Kayıt & Yandex",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Cumhuriyet Bulvarı kahve puanlaması"
+        }
+      ],
+      "pros": [
+        "Ferah ve estetik zeytin ağaçlı bahçe avlusu",
+        "Net çekirdek karakteri"
+      ],
+      "cons": [
+        "Yat Limanı merkezinden toplu taşıma veya bisiklet gerektirebilir"
+      ],
+      "uncertainties": [
+        "Yüksek sezonda avlu gölge masaları erken dolabilir"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-oz-coffee-40-yil-sonra",
+      "categoryId": "kahve",
+      "resolvedName": "OZ COFFEE 40 YIL SONRA",
+      "branchName": "Kemeraltı, 62. Sk. No:18A, 48700 Marmaris/Muğla",
+      "placeId": "ChIJ5YfMtq29vxQRn_ZWCfZTkSM",
+      "coordinates": {
+        "lat": 36.8539391,
+        "lng": 28.2678397
+      },
+      "rating": 5,
+      "userRatingCount": 43,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2562921979134277279",
+      "recommendedPrimary": [
+        "Oz Special Latte",
+        "Türk Kahvesi",
+        "Iced Americano"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı San Sebastian Cheesecake & Kitap Kafe Atıştırmalıkları",
+          "note": "Kahve eşlikçisi olarak taze dilimlenen tatlı menüsünün başrolü.",
+          "proof": "ozcoffeebooks.com ve Restaurant Guru kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sakin okuma köşeleri ve iç salon",
+        "crowdAndNoise": "Gün boyu dingin, kitap okumaya uygun tempo",
+        "disadvantage": "Kapasitesi kısıtlı olduğu için kalabalık arkadaş gruplarına dar gelebilir",
+        "transit": "Kemeraltı yürüyüş yolu ve Atatürk Caddesi arkasından kolay erişim"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (OZ Coffee & Books)",
+          "url": "https://ozcoffeebooks.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "İmza kahve çeşitleri ve San Sebastian tatlı menüsü"
+        },
+        {
+          "title": "Restaurant Guru Seçkisi",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kemeraltı kitap-kafe ve kahve kalitesi incelemesi"
+        },
+        {
+          "title": "Servis Kayıt & Yandex",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Marmaris yüksek puanlı bağımsız kafe değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Gürültüden izole sakin okuma-kahve ortamı",
+        "Yüksek misafir memnuniyeti"
+      ],
+      "cons": [
+        "Dış teras alanı sınırlı"
+      ],
+      "uncertainties": [
+        "San Sebastian ve günlük tatlılar akşamüstü erken saatlerde tükenebilir"
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-milkshaker-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Milkshaker Coffee & More",
+      "branchName": "Tepe, Barbaros Cd. No : 157, 48700 Marmaris/Muğla",
+      "placeId": "ChIJSVlAAw29vxQRidSIOKT4fmk",
+      "coordinates": {
+        "lat": 36.851645,
+        "lng": 28.275615
+      },
+      "rating": 4.6,
+      "userRatingCount": 115,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7601786605254792329",
+      "recommendedPrimary": [
+        "Cortado",
+        "Espresso Tonic",
+        "Flat White"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Meyveli & Çikolatalı Milkshake Çeşitleri",
+          "note": "Yaz sıcaklarında kahve dışı serin alternatif arayanların tercih ettiği imza içecek grubu.",
+          "proof": "Restoranım ve Vota işletme kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük cadde önü oturumları ve hızlı al-götür tezgahı",
+        "crowdAndNoise": "Yürüyüş yapan misafirler nedeniyle akşamları hareketli",
+        "disadvantage": "Marina yürüyüş yolu üzerindeki konumundan dolayı uzun süre çalışma yerine kısa mola için daha uygun",
+        "transit": "Marmaris Yat Limanı sahil yürüyüş yolu üzeri"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım & Menü Kaydı",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Espresso tonic, cortado ve milkshake listesi"
+        },
+        {
+          "title": "Vota & Yandex Rehberi",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Barbaros Caddesi yüksek puanlı kahve noktası"
+        }
+      ],
+      "pros": [
+        "Kordon yürüyüşü sırasında hızlı ve özenli kahve molası",
+        "Gerçek espresso tonic ve cortado servisi"
+      ],
+      "cons": [
+        "Geniş kapalı dinlenme alanı sunmaz"
+      ],
+      "uncertainties": [
+        "Mevsim dışı aylarda çalışma saatleri kısalabilir"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-coast-zanzibar",
+      "categoryId": "date",
+      "resolvedName": "Coast Zanzibar Marmaris",
+      "branchName": "Tepe, Barbaros Cd. No: 95, 48700 Marmaris/Muğla",
+      "placeId": "ChIJ_fPcCAW9vxQRKtiGhikTnSc",
+      "coordinates": {
+        "lat": 36.850595,
+        "lng": 28.275267
+      },
+      "rating": 5,
+      "userRatingCount": 180,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://coastzanzibar.com/",
+      "mapsUri": "https://maps.google.com/?cid=2854458807894333482",
+      "recommendedPrimary": [
+        "Deniz Mahsullü Paylaşımlık Tabak",
+        "Taze Makarna Çeşitleri",
+        "İmza Günbatımı Kokteyli"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Yapımı İmza Kokteyller",
+          "note": "Yemek öncesinde veya gece sonunda iskele kenarı masalarda en sık seçilen eşlikçi.",
+          "proof": "coastzanzibar.com resmi sitesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Suya sıfır rıhtım masaları ve şık bar bölümü",
+        "crowdAndNoise": "Günbatımı ve akşam yemeği saatlerinde yüksek; ön sıralar rezervasyon ister",
+        "disadvantage": "Turistik yat limanı aksında yer aldığı için fiyat bandı merkez çarşıya göre yüksek kalır",
+        "transit": "Marmaris Kalesi altından Yat Limanı yürüyüş yolu üzeri"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Coast Zanzibar)",
+          "url": "http://coastzanzibar.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Günbatımı waterfront yemek ve el yapımı kokteyl menüsü"
+        },
+        {
+          "title": "Yandex & Misafir Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yüksek puanlı waterfront akşam deneyimi doğrulaması"
+        }
+      ],
+      "pros": [
+        "Kesintisiz körfez günbatımı ön sırası",
+        "Özenli kokteyl ve mutfak dengesi"
+      ],
+      "cons": [
+        "Sezonda önceden masa ayırtmak gerekir"
+      ],
+      "uncertainties": [
+        "Kış sezonunda kapalı/kısıtlı çalışma dönemleri olabilir"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-mona-roza-bistro",
+      "categoryId": "date",
+      "resolvedName": "Mona Roza Lunch&Bistro Marmaris",
+      "branchName": "Kemeraltı, Org. Mustafa Muğlalı Cd. NO :14, 48700 Marmaris/Muğla",
+      "placeId": "ChIJAU_XUeC9vxQRTveeB2BWPYg",
+      "coordinates": {
+        "lat": 36.855639,
+        "lng": 28.268519100000002
+      },
+      "rating": 4.8,
+      "userRatingCount": 145,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://monarozabistro.com/",
+      "mapsUri": "https://maps.google.com/?cid=9817097733182256974",
+      "recommendedPrimary": [
+        "Armutlu & Tavuklu Sezar Salata",
+        "Kremalı Alfredo Penne",
+        "İstanbul Salatası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Kokteyller & Bistro Tatlıları",
+          "note": "Akşam masalarında ana yemek sonrasında bar menüsü tamamlayıcısı olarak tercih ediliyor.",
+          "proof": "monarozabistro.com ve Gündem Gazetesi haberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Estetik iç salon ve özenli dış bistro masaları",
+        "crowdAndNoise": "Akşam yemeği ve hafta sonu buluşmalarında nezih ve sakin tempo",
+        "disadvantage": "Deniz kıyısında değil ana cadde üzerinde konumlandığı için deniz manzarası arayanlara hitap etmez",
+        "transit": "Marmaris merkez Ahu Hastanesi / Çarşı ana caddesi üzerinde yürüyüşle kolay ulaşım"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Mona Roza)",
+          "url": "https://monarozabistro.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Modern bistro menüsü ve sunum konsepti"
+        },
+        {
+          "title": "Gündem Gazetesi Yerel Haber",
+          "url": "https://gundemgazetesi.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Marmaris yeni nesil gastronomi alanı incelemesi"
+        },
+        {
+          "title": "Yemeksepeti & Migros & Yandex",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Makarna, salata ve servis puanları"
+        }
+      ],
+      "pros": [
+        "Şık ve gürültüsüz modern bistro tasarımı",
+        "Hem bistro akşam yemeği hem gün içi seçenekleri"
+      ],
+      "cons": [
+        "Sahil manzarası bulunmuyor"
+      ],
+      "uncertainties": [
+        "Menü içerikleri dönemsel bistro güncellemelerine göre değişebilir"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-fiskos-myhane",
+      "categoryId": "date",
+      "resolvedName": "Fiskos Myhane (Marmaris Meyhane)",
+      "branchName": "Tepe, Barbaros Cd. No:121, 48700 Marmaris/Muğla",
+      "placeId": "ChIJW_-5Zt29vxQRugjmxn5hDnw",
+      "coordinates": {
+        "lat": 36.8513399,
+        "lng": 28.2756831
+      },
+      "rating": 4.7,
+      "userRatingCount": 574,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.fiskosmeyhane.com/",
+      "mapsUri": "https://maps.google.com/?cid=8939189507507751098",
+      "recommendedPrimary": [
+        "Ege Otlu & Yoğurtlu Meze Seçkisi",
+        "Ahtapot & Kalamar Ara Sıcakları",
+        "Günün Taze Balığı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Deniz Mahsullü Meze Tabağı",
+          "note": "Soğuk mezeler sonrası ana balık öncesi paylaşım ritüelinin temel parçası.",
+          "proof": "fiskosmeyhane.com ve Wanderlog meyhane rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Samimi iç meyhane salonu ve liman yürüyüş yolu masaları",
+        "crowdAndNoise": "Akşam yemeklerinde canlı müzikle birlikte hareketli ve keyifli",
+        "disadvantage": "Canlı müzik saatlerinde ses seviyesi arttığı için çok sessiz bir akşam arayanlar erken saati seçmeli",
+        "transit": "Marmaris Yat Limanı Barbaros Caddesi üzeri"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Fiskos Meyhane)",
+          "url": "https://fiskosmeyhane.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Yat limanı meze ve balık konsepti"
+        },
+        {
+          "title": "Wanderlog Meyhane Rehberi",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ege otları ve deniz mahsulleri incelemesi"
+        }
+      ],
+      "pros": [
+        "Yapay turistik dekorasyondan uzak samimi meyhane dokusu",
+        "Taze meze dolabı"
+      ],
+      "cons": [
+        "Hafta sonu canlı müzik nedeniyle rezervasyon şart"
+      ],
+      "uncertainties": [
+        "Canlı müzik programı günlere göre değişiklik gösterebilir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-jan-de-wit",
+      "categoryId": "date",
+      "resolvedName": "Jan De Wit Restaurant",
+      "branchName": "Tepe, Barbaros Cd. No:123, 48700 Marmaris/Muğla",
+      "placeId": "ChIJBRXaZt29vxQR0omthfAalRg",
+      "coordinates": {
+        "lat": 36.851417999999995,
+        "lng": 28.275608599999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 693,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://jandewitmarmaris.com/",
+      "mapsUri": "https://maps.google.com/?cid=1771351648777374162",
+      "recommendedPrimary": [
+        "Fileto Bonfile Steak",
+        "Izgara Levrek & Jumbo Karides",
+        "Steak Salata"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Şarap Eşlikli Başlangıçlar & Tatlılar",
+          "note": "Klasik akşam yemeği servisinde başlangıç ve final tabağı olarak öne çıkıyor.",
+          "proof": "jandewitmarmaris.com ve Restaurant Guru kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Liman manzaralı ön teras ve şık kapalı yemek salonu",
+        "crowdAndNoise": "Akşam yemeklerinde dengeli yerli ve yabancı misafir dağılımı",
+        "disadvantage": "Girişte diğer liman restoranlarıyla yan yana dizili olduğu için masa yönü tercihini belirtmek faydalı",
+        "transit": "Yat Limanı Barbaros Caddesi merkezi yürüyüş hattı"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Jan De Wit)",
+          "url": "https://jandewitmarmaris.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Steak, deniz mahsulleri ve Avrupa mutfağı menüsü"
+        },
+        {
+          "title": "Restaurant Guru Rehberi",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bonfile ve levrek menü değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Et ve deniz ürününü aynı kalitede çıkaran profesyonel mutfak",
+        "Liman önü yerleşim"
+      ],
+      "cons": [
+        "Döviz bazlı marina bandında üst-orta fiyat seviyesi"
+      ],
+      "uncertainties": [
+        "Özel et kesimleri sezonda yoğunluğa göre hızlı tükenebilir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-pineapple-restaurant",
+      "categoryId": "date",
+      "resolvedName": "Pineapple Restaurant",
+      "branchName": "Sarıana, Netsel Marina, 48700 Marmaris/Muğla",
+      "placeId": "ChIJSTt6YOi9vxQREfZv7IqGT0o",
+      "coordinates": {
+        "lat": 36.8532278,
+        "lng": 28.2793806
+      },
+      "rating": 4.4,
+      "userRatingCount": 1016,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.pineapple.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=5354646413197178385",
+      "recommendedPrimary": [
+        "Fırında Kuzu Tandır",
+        "Surf & Turf (Bonfile & Jumbo Karides)",
+        "Kanlıca Mantarlı Paçanga Böreği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarçınlı Ilık Elmalı Turta (Vanilyalı Dondurma ile)",
+          "note": "1991 mirası menünün yıllardır en çok istenen imza tatlı kapanışı.",
+          "proof": "pineapple.com.tr ve Pineapplerestaurant menü arşivleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Netsel Marina teknelerine bakan begonvilli açık teras ve şık salon",
+        "crowdAndNoise": "Akşam yemeği saatlerinde düzenli dolu; marinanın en popüler buluşma noktalarından",
+        "disadvantage": "Netsel Marina üst segment fiyat çizgisinde; özellikle hafta sonu rezervasyon gerektirir",
+        "transit": "Netsel Marina içi araç otoparkı ve Yat Limanı köprü yürüyüş bağlantısı"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Pineapple Restaurant)",
+          "url": "http://www.pineapple.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1991'den beri Netsel Marina menü ve tarihçesi"
+        },
+        {
+          "title": "BujuYollarda Marmaris Rehberi",
+          "url": "https://bujuyollarda.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Netsel Marina ikonik akşam adresi değerlendirmesi"
+        },
+        {
+          "title": "Onedio & Küçük Oteller",
+          "url": "https://kucukoteller.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Begonvilli marina atmosferi ve Surf & Turf önerisi"
+        }
+      ],
+      "pros": [
+        "1991 kuruluşlu köklü marina kurumu",
+        "Begonvil gölgeli seçkin marina atmosferi"
+      ],
+      "cons": [
+        "Marina otoparkı giriş ücreti ve yüksek bütçe bandı"
+      ],
+      "uncertainties": [
+        "Kış sezonunda açık gün sayısı mevsime göre değişebilir"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-maree-cafe",
+      "categoryId": "kahvalti",
+      "resolvedName": "Maree Cafe",
+      "branchName": "Ilıca Parkı, Sarıana, 18. Sk. D:25/1, 48700 Marmaris/Muğla",
+      "placeId": "ChIJo3l4cp29vxQRm_rJBbqpPdQ",
+      "coordinates": {
+        "lat": 36.8536807,
+        "lng": 28.2806483
+      },
+      "rating": 4.9,
+      "userRatingCount": 311,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15293566526046206619",
+      "recommendedPrimary": [
+        "Maree Kahvaltı Tabağı",
+        "Serpme Kahvaltı",
+        "Yumurta & Omlet Seçenekleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Demleme Çay & Taze Portakal Suyu Eşliği",
+          "note": "Park manzaralı sabah servisinde kahvaltı tabağını tamamlayan taze içecekler.",
+          "proof": "TapMenu ve Yemek.com Marmaris kahvaltı seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Ilıca Parkı kenarında ferah bahçe oturumu ve iç masa alanı",
+        "crowdAndNoise": "Sabah kahvaltısı saatlerinde aileler ve yerel misafirlerle dengeli",
+        "disadvantage": "Popüler hafta sonu sabahlarında gölge bahçe masaları hızlı dolabilir",
+        "transit": "Netsel Marina girişi ve Sarıana Park yürüyüş aksı üzerinde"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "TapMenu Menü Kaydı",
+          "url": "https://tapmenu.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Maree Cafe kahvaltı ve gün boyu yemek menüsü"
+        },
+        {
+          "title": "Yemek.com & Servis Kayıt",
+          "url": "https://yemek.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Marina çevresi öne çıkan kahvaltı noktası"
+        }
+      ],
+      "pros": [
+        "Marina yanında park yeşilliği içinde sakin konum",
+        "Yüksek misafir puanı"
+      ],
+      "cons": [
+        "Doğrudan deniz manzarası yerine park içi konuma sahip"
+      ],
+      "uncertainties": [
+        "Yoğun sabah saatlerinde serpme servis hazırlığı 15-20 dakika sürebilir"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-gourmet-garden",
+      "categoryId": "kahvalti",
+      "resolvedName": "Gourmet Garden",
+      "branchName": "Kemeraltı, Org. Mustafa Muğlalı Cd. No:37/A, 48700 Marmaris/Muğla",
+      "placeId": "ChIJAXJuFJi9vxQRLyZAVr7fCyw",
+      "coordinates": {
+        "lat": 36.8540068,
+        "lng": 28.2654385
+      },
+      "rating": 4.9,
+      "userRatingCount": 221,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3173876370996471343",
+      "recommendedPrimary": [
+        "Geleneksel Türk Kahvaltı Tabağı",
+        "Full English Breakfast",
+        "Omlet & Taze Sıcak Hamurişleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Öğle Mezeleri & Türk Izgaraları",
+          "note": "Kahvaltı sonrası öğleden sonra kalan ziyaretçiler için mutfağın ikinci güçlü ayağı.",
+          "proof": "Yandex ve FirmaHizmeti restoran incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ferah yeşil bahçe ve havuz kenarı oturma düzeni",
+        "crowdAndNoise": "Sabah ve erken öğle saatlerinde düzenli doluluk",
+        "disadvantage": "Turistik çeşitliliğe göre çok dilli geniş bir menü kullandığından geleneksel köy kahvaltısından daha kozmopolittir",
+        "transit": "Marmaris merkez ana arterlerinden yürüme mesafesi"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yandex İnceleme & Rehber",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Türk ve İngiliz kahvaltısı ile bahçe atmosferi övgüleri"
+        },
+        {
+          "title": "Migros & Firma Rehberi",
+          "url": "https://www.migros.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kemeraltı konumu ve menü doğrulaması"
+        }
+      ],
+      "pros": [
+        "Merkez içinde beklenmedik şekilde sakin bahçe ortamı",
+        "Glütensiz seçenek imkânı"
+      ],
+      "cons": [
+        "Geniş menü nedeniyle uzmanlaşmış tek tip kahvaltı arayışında sade seçimler yapılmalı"
+      ],
+      "uncertainties": [
+        "Bazı dönemlerde havuz başı alan özel davetlere kapatılabilir"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-karabuberin-yeri",
+      "categoryId": "kahvalti",
+      "resolvedName": "Karabüberin yeri",
+      "branchName": "Tepe, 33. Sk. No:8, 48700 Marmaris/Muğla",
+      "placeId": "ChIJL_2P88a9vxQR30npbit6As8",
+      "coordinates": {
+        "lat": 36.8533995,
+        "lng": 28.2746331
+      },
+      "rating": 4.9,
+      "userRatingCount": 120,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14916619242767469023",
+      "recommendedPrimary": [
+        "Geleneksel Kahvaltı Tabağı",
+        "Karışık Esnaf Tostu",
+        "Sahanda Yumurta & Menemen"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Karışık Tost & Çay İkilisi",
+          "note": "Tam kahvaltıya vakti olmayan misafirler için sabahın en pratik yerel siparişi.",
+          "proof": "Restoranım, Dijital.link ve Yandex işletme kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük mahalle sokak masaları ve samimi iç alan",
+        "crowdAndNoise": "Sabah ve kuşluk vakti mahalle esnafı ile yerliler ağırlıkta",
+        "disadvantage": "Görsel gösterişli serpme sunumu yerine mütevazı, ev tipi ve pratik sabah masası kurar",
+        "transit": "Marmaris Tepe Mahallesi 33. Sokak çarşı bağlantısı içi"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım Rehberi",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kahvaltı tabakları ve tost çeşitleri"
+        },
+        {
+          "title": "Dijital.link & Yandex",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hijyen, malzeme tazeliği ve aile işletmesi notları"
+        }
+      ],
+      "pros": [
+        "Turistik fiyatlardan uzak samimi esnaf kahvaltısı",
+        "Yüksek temizlik ve lezzet istikrarı"
+      ],
+      "cons": [
+        "Sınırlı masa kapasitesi"
+      ],
+      "uncertainties": [
+        "Öğleden sonra kahvaltı menüsü daha çok tost ağırlığına dönebilir"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-ekin-cafe",
+      "categoryId": "kahvalti",
+      "resolvedName": "Ekin Cafe",
+      "branchName": "Tepe, Ulusal Egemenlik Cd. No:5, 48700 Marmaris/Muğla",
+      "placeId": "ChIJt3QDUsO9vxQRFKS9OdS5VQU",
+      "coordinates": {
+        "lat": 36.8543387,
+        "lng": 28.270917599999997
+      },
+      "rating": 4.5,
+      "userRatingCount": 1057,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.ekincafemarmaris.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=384417664362980372",
+      "recommendedPrimary": [
+        "Ekin Kahvaltı Tabağı",
+        "Sucuklu Menemen",
+        "Taze Sıkılmış Portakal & Nar Suyu"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Vitrin Pastaları & Taze Sıkım İçecekler",
+          "note": "Kahvaltı sonrası tekne turu veya yürüyüş öncesi en sık tercih edilen tatlı-içecek duraklaması.",
+          "proof": "ekincafemarmaris.com.tr ve Wanderlog rehberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş cadde terası ve iç salon oturumu",
+        "crowdAndNoise": "Sabah 8 itibarıyla tekne ve iş başı trafiği nedeniyle hareketli",
+        "disadvantage": "Ana cadde üzerinde bulunduğu için sessiz bahçe ortamı yerine şehir merkezi dinamizmi taşır",
+        "transit": "Marmaris Atatürk Meydanı ve Kordon girişine 2 dakika yürüyüş"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Menü (Ekin Cafe)",
+          "url": "https://menu.ekincafemarmaris.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Kahvaltı tabağı, menemen ve taze meyve suları"
+        },
+        {
+          "title": "Wanderlog & Şehir Pusulası",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Merkezi kahvaltı ve pratik sahil erişimi değerlendirmesi"
+        }
+      ],
+      "pros": [
+        "Sabah çok erken açılış ve hızlı servis",
+        "Limana ve çarşıya yürüme merkezi"
+      ],
+      "cons": [
+        "Cadde önü hareketliliği yüksek"
+      ],
+      "uncertainties": [
+        "Sezonda tekne kalkış saatlerinde servis yoğunluğu artar"
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-ege-sefasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "EGE SEFASI MARMARİS",
+      "branchName": "Kemeraltı, Org. Mustafa Muğlalı Cd. NO:5/ A, 48700 Marmaris/Muğla",
+      "placeId": "ChIJKeJbeOy9vxQRyCCzkqGEXIc",
+      "coordinates": {
+        "lat": 36.8554021,
+        "lng": 28.269602300000003
+      },
+      "rating": 4.9,
+      "userRatingCount": 2907,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9753816722463465672",
+      "recommendedPrimary": [
+        "Adana / Manisa Kebap",
+        "Karışık Izgara & Köfte",
+        "Günlük Sulu Ev Yemekleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Tencere Zeytinyağlıları & Sıcak Çorbalar",
+          "note": "Kebap yerine hafif ve ev yapımı öğle yemeği arayan müdavimlerin birinci tercihi.",
+          "proof": "Yemeksepeti ve Food.blog incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç salon ve cadde kenarı masalar",
+        "crowdAndNoise": "Öğle yemeği ve akşam saatlerinde yüksek yerli yoğunluğu",
+        "disadvantage": "Popüler yemek saatlerinde servis temposu hızlı ve salon gürültülü olabilir",
+        "transit": "Kemeraltı çarşı ana cadde üzerinde merkezi yürüyüş rotası"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Food.blog & Yerel Seçki",
+          "url": "https://food.blog/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Marmaris geleneksel esnaf ve ızgara mutfağı önerisi"
+        },
+        {
+          "title": "Yemeksepeti & Yandex",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yüksek puanlı kebap ve tencere yemeği notları"
+        }
+      ],
+      "pros": [
+        "Izgara ile tencere yemeğini aynı standartta çıkarması",
+        "Olağanüstü yüksek değerlendirme ortalaması"
+      ],
+      "cons": [
+        "Şık akşam restoranı yerine canlı lokanta ortamı"
+      ],
+      "uncertainties": [
+        "Seçili zeytinyağlı tencere çeşitleri akşam saatlerine kalmayabilir"
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-esnaf-marmaris",
+      "categoryId": "denemelisin",
+      "resolvedName": "Esnaf Marmaris",
+      "branchName": "Kemeraltı, 58. Sk. No:5/B, 48700 Marmaris/Muğla",
+      "placeId": "ChIJUZxLXjy9vxQRusDGg7UgHCg",
+      "coordinates": {
+        "lat": 36.853891,
+        "lng": 28.269689800000002
+      },
+      "rating": 4.9,
+      "userRatingCount": 264,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2890221024837025978",
+      "recommendedPrimary": [
+        "Et Kavurma & Pilav",
+        "Fırında Patlıcanlı Kebap",
+        "Ayak Paça Çorbası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kızartılmış Köfte & Ciğer Yahni",
+          "note": "Günlük değişen tezgâh yemekleri arasında müdavimlerin hızlıca aldığı klasik tabaklar.",
+          "proof": "Restoranım ve Dijital.link menü dökümleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı iç esnaf salonu ve dar sokak önü birkaç masa",
+        "crowdAndNoise": "Öğle yemek saatlerinde çarşı esnafıyla dolu",
+        "disadvantage": "Tezgâhtaki popüler kavurma ve ciğer çeşitleri öğleden sonra tükenebilir",
+        "transit": "Kemeraltı çarşısı içindeki ara sokakta merkez yürüyüş mesafesi"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım & Menü Kayıtları",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Et kavurma, orman kebabı ve paça çorbası değerlendirmesi"
+        },
+        {
+          "title": "Dijital.link & Yemeksepeti",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çarşı içi esnaf lokantası müşteri puanları"
+        }
+      ],
+      "pros": [
+        "Gerçek ev ve esnaf lokantası pişirme geleneği",
+        "Merkez çarşı içinde dürüst porsiyonlar"
+      ],
+      "cons": [
+        "Akşam geç saatlere açık değildir; öğle odaklı gidilmeli"
+      ],
+      "uncertainties": [
+        "Günlük menü çıkan malzemenin tazeliğine göre değişebilir"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-koftehor-hatay",
+      "categoryId": "denemelisin",
+      "resolvedName": "Köftehor & Hatay Lezzetleri",
+      "branchName": "Tepe, 36. Sk. 37/A, 48700 Marmaris/Muğla",
+      "placeId": "ChIJ6z7gAe-9vxQRrXFiVu6rKnE",
+      "coordinates": {
+        "lat": 36.8528339,
+        "lng": 28.2745249
+      },
+      "rating": 4.8,
+      "userRatingCount": 663,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/koftehor_mrmaris?igsh=ZTdzOGp1ZTg5Z3Nx",
+      "mapsUri": "https://maps.google.com/?cid=8154519115447562669",
+      "recommendedPrimary": [
+        "Tekirdağ Izgara Köfte (Porsiyon)",
+        "Ekmek Arası Köfte",
+        "Piyaz"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Hatay Usulü Soslar & Piyaz",
+          "note": "Izgara köfte tabağını dengeleyen yöresel yan eşlikçiler.",
+          "proof": "qrdos.tr ve Yandex işletme incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük sokak masaları ve hızlı tezgâh içi servis",
+        "crowdAndNoise": "Öğle ve erken akşam saatlerinde yüksek yerel sirkülasyon",
+        "disadvantage": "Küçük köfteci düzeni nedeniyle uzun süreli oturum yerine pratik yemek için idealdir",
+        "transit": "Marmaris Tepe Çarşısı 36. Sokak"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "QR Menü & İşletme Bilgisi",
+          "url": "https://qrdos.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Tekirdağ köftesi ve ekmek arası menüsü"
+        },
+        {
+          "title": "Yandex & Yemeksepeti",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bütçe dostu pratik köfte puanları"
+        }
+      ],
+      "pros": [
+        "Yüksek lezzet-fiyat dengesi",
+        "Sıcak ızgara çekirdek mutfağı"
+      ],
+      "cons": [
+        "Sınırlı masa kapasitesi"
+      ],
+      "uncertainties": [
+        "Yoğun öğle saatlerinde paket siparişi nedeniyle ızgara sırası uzayabilir"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-dr-gelato",
+      "categoryId": "denemelisin",
+      "resolvedName": "Dr. Gelato",
+      "branchName": "Kemeraltı, Org. Mustafa Muğlalı Cd. No:62, 48700 Marmaris/Muğla",
+      "placeId": "ChIJiSSdf9C9vxQRvYBbGTetqHY",
+      "coordinates": {
+        "lat": 36.8533811,
+        "lng": 28.264224199999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 1664,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.drgelato.info/",
+      "mapsUri": "https://maps.google.com/?cid=8550274344723120317",
+      "recommendedPrimary": [
+        "Antep Fıstıklı Gelato",
+        "Taze Mevsim Meyveli Sorbe",
+        "Yoğurtlu & Yaban Mersinli Gelato"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bitter Çikolata & Meyve Sorbeleri",
+          "note": "Süt ürünü tüketmeyenler ve yoğun kakao sevenler için ikinci vitrin seçeneği.",
+          "proof": "drgelato.info resmi sitesi ve Trip.com seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Genellikle al-götür; cadde önü küçük tabureler",
+        "crowdAndNoise": "Akşamüstü ve gece yürüyüşlerinde ön kapı kuyruğu oluşur",
+        "disadvantage": "Oturma alanı kısıtlı olduğundan dondurma genellikle yürüyüş eşliğinde tüketilir",
+        "transit": "Mustafa Muğlalı Caddesi (Kemeraltı) üzeri merkez yürüyüş rotası"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Dr. Gelato)",
+          "url": "https://drgelato.info/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Artizan gelato üretim tekniği ve çeşit yelpazesi"
+        },
+        {
+          "title": "Trip.com & Yandex",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Marmaris yoğun el yapımı gelato değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Endüstriyel dondurma zincirlerinden ayrışan gerçek artizan yapı",
+        "Zengin taze meyve sorbeleri"
+      ],
+      "cons": [
+        "Kış sezonunda vitrin çeşit sayısı daralabilir veya dönemlik kapanabilir"
+      ],
+      "uncertainties": [
+        "Özel aromalı gelato partileri günlük tükendiğinde değişir"
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-kirtil-ev-yemekleri",
+      "categoryId": "denemelisin",
+      "resolvedName": "Marmaris Kirtil Ev Yemekleri Döner Kebap Salonu",
+      "branchName": "Tepe, 36. Sk. No:51, 48700 Marmaris/Muğla",
+      "placeId": "ChIJpdb1y8K9vxQRdDClWuVzhqg",
+      "coordinates": {
+        "lat": 36.852664,
+        "lng": 28.274711999999997
+      },
+      "rating": 4.6,
+      "userRatingCount": 1074,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12143520874156601460",
+      "recommendedPrimary": [
+        "Patlıcan Musakka & Karnıyarık",
+        "Kuru Fasulye & Pirinç Pilavı",
+        "Yaprak Döner"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Sütlaç & Kabak Tatlısı",
+          "note": "Esnaf lokantası öğününün sonunda günlük ev tatlısı olarak servis ediliyor.",
+          "proof": "Marmaris Manşet yerel haberi ve QR menü dökümü"
+        }
+      ],
+      "suitability": {
+        "seating": "İç ve yarı açık geniş lokanta oturumu",
+        "crowdAndNoise": "Öğle saatlerinde yüksek yerel sirkülasyon",
+        "disadvantage": "Akşam geç saatlere kalındığında günlük tencere yemeklerinin çoğu tükenmiş olur",
+        "transit": "Tepe Mahallesi çarşı içi 36. Sokak"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Marmaris Manşet Yerel Haber",
+          "url": "https://marmarismanset.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yerel ustaların günlük tencere ve döner mutfağı"
+        },
+        {
+          "title": "Restaurant Guru & QR Menü",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tencere çeşitleri ve fırın sütlaç incelemeleri"
+        }
+      ],
+      "pros": [
+        "Çok geniş günlük ev yemeği benmarisi",
+        "İstikrarlı yerel müşteri güveni"
+      ],
+      "cons": [
+        "Turistik çarşı sokak arasında yüksek tempolu lokanta ambiyansı"
+      ],
+      "uncertainties": [
+        "Mantı ve et sote çeşitleri haftanın belirli günlerinde çıkabilir"
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-korkmaz-doner-pide",
+      "categoryId": "denemelisin",
+      "resolvedName": "Korkmaz Döner & Pide",
+      "branchName": "Çağlar Apart, Hatipirimi, İnönü Cd. No : 37 /C, 48700 Marmaris/Muğla",
+      "placeId": "ChIJYXxbpnW9vxQRtFlwJfm0MGE",
+      "coordinates": {
+        "lat": 36.851950099999996,
+        "lng": 28.257250199999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 112,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7003296402729097652",
+      "recommendedPrimary": [
+        "Pilav Üstü Döner",
+        "Cevizli Lahmacun",
+        "Kıymalı & Kaşarlı Pide"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Cevizli Lahmacun & Sıcak Pide Çeşitleri",
+          "note": "Döner servisine ek olarak öğle-akşam arası sıcak fırından çıkarılan temel ürünler.",
+          "proof": "YerelEsnaf ve Yemeksepeti sipariş listeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sade iç salon ve hızlı al-götür/paket düzeni",
+        "crowdAndNoise": "Öğle saatlerinde mahalle sakinleri ağırlıklı",
+        "disadvantage": "Turistik manzara veya geniş bahçe arayanlar yerine mahalle içi sıcak pide-döner durağıdır",
+        "transit": "Hatipirimi İnönü Caddesi üzeri; çarşı merkezinden kısa yürüyüş"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "YerelEsnaf Rehberi",
+          "url": "https://yerelesnaf.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Hatipirimi İnönü Caddesi yerel esnaf kaydı"
+        },
+        {
+          "title": "Yemeksepeti & Yandex",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Döner, lahmacun ve pide memnuniyet notları"
+        }
+      ],
+      "pros": [
+        "Turistik kalabalığın dışındaki yerel standart",
+        "Taze pişen cevizli lahmacun"
+      ],
+      "cons": [
+        "Şık oturum yerine pratik mahalle salonu"
+      ],
+      "uncertainties": [
+        "Öğle yoğunluğunda paket siparişleri servis hızını etkileyebilir"
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-hacinin-yeri-yigit",
+      "categoryId": "denemelisin",
+      "resolvedName": "Hacı'nın Yeri - Yigit Lokantası",
+      "branchName": "Çamdibi Mh., Ulusal Egemenlik Cd. 12:00AM No:53, 48700 Marmaris/Muğla",
+      "placeId": "ChIJB9nw38C9vxQRARjUGJ_umjI",
+      "coordinates": {
+        "lat": 36.8614311,
+        "lng": 28.2714844
+      },
+      "rating": 4.6,
+      "userRatingCount": 8346,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3646489215393601537",
+      "recommendedPrimary": [
+        "Günlük Sulu Ev Yemeği & Pilav",
+        "Mercimek / Tavuk Suyu Çorba",
+        "Döner & İskender"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Pideler & Sıcak Çorbalar",
+          "note": "Yemekle birlikte veya sabah-akşam hızlı duraklamalarda tercih edilen geleneksel seçenekler.",
+          "proof": "Harbiyiyorum.com ve Onedio Marmaris esnaf seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Büyük, hızlı dönen lokanta salonu ve dış masalar",
+        "crowdAndNoise": "Günün hemen her saatinde çok yoğun",
+        "disadvantage": "Çok yüksek sirkülasyon nedeniyle sakin, birebir masa hizmeti yerine hızlı esnaf düzeni işler",
+        "transit": "Çamdibi Ulusal Egemenlik Caddesi ana arter üzeri (Marmaris içi dolmuş güzergâhı)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Harbi Yiyorum İncelemesi",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Marmaris efsanevi esnaf lokantası kültürü değerlendirmesi"
+        },
+        {
+          "title": "Onedio & Restoranım",
+          "url": "https://onedio.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bütçe dostu yüksek sirkülasyonlu yerel mutfak haberi"
+        }
+      ],
+      "pros": [
+        "Sürekli taze dönen yemek tezgâhı",
+        "Bölgenin en erişilebilir fiyat-porsiyon dengesi"
+      ],
+      "cons": [
+        "Yüksek gürültü ve hızlı masa sirkülasyonu"
+      ],
+      "uncertainties": [
+        "Özel yemek saatlerinde masa boşluğu için kısa süre beklemek gerekebilir"
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-memed-ocakbasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Memed Ocakbaşı",
+      "branchName": "Sarıana, Mustafa Kemal Paşa Cd NO: 26 A, 48700 Marmaris/Muğla",
+      "placeId": "ChIJn_HZ-um9vxQRiLl-y3l44ik",
+      "coordinates": {
+        "lat": 36.8568103,
+        "lng": 28.2764228
+      },
+      "rating": 4.5,
+      "userRatingCount": 4313,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3018107164792109448",
+      "recommendedPrimary": [
+        "Satır Kebap / Memedim Kebap",
+        "Kuzu Kaburga & Dana Lokum",
+        "Buharlı Sarma Beyti"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fındık Lahmacun & Ocakbaşı Mezeleri (Kuru Cacık, Atom)",
+          "note": "Ana kebap gelişi öncesinde masayı açan başlangıç ikilisi.",
+          "proof": "Restoranım ve Marmaris en iyi ocakbaşı seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç ocakbaşı salonu ve açık cadde masaları",
+        "crowdAndNoise": "Akşam yemeklerinde özellikle gruplar ve yerlilerle kalabalık",
+        "disadvantage": "Akşam yoğunluğunda rezervasyonsuz gelenler için sıra bekleme ve duman-ızgara hareketliliği olabilir",
+        "transit": "Sarıana Mustafa Kemal Paşa Caddesi; Netsel Marina girişine yürüme mesafesi"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım & QR Menü",
+          "url": "https://qrdos.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Zırhta kebap, kuzu kaburga ve meze çeşitleri"
+        },
+        {
+          "title": "Eniyi.best & Yandex",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Marmaris ocakbaşı kültüründeki yerel konumu"
+        }
+      ],
+      "pros": [
+        "Kıyı kasabasında gerçek zırh kebap ve et işçiliği",
+        "Zengin başlangıç meze tepsisi"
+      ],
+      "cons": [
+        "Kalabalık grupların akşam saatlerindeki yüksek temposu"
+      ],
+      "uncertainties": [
+        "Kuzu kaburga gibi sınırlı kesimler akşam geç saatlerde bitebilir"
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-pamukkale-pide",
+      "categoryId": "denemelisin",
+      "resolvedName": "Pamukkale Pide",
+      "branchName": "Kemeraltı, 60. Sk. No:17C, 48700 Marmaris/Muğla",
+      "placeId": "ChIJXSrkNtu9vxQRf_-iubydYY0",
+      "coordinates": {
+        "lat": 36.8544218,
+        "lng": 28.2681851
+      },
+      "rating": 4.5,
+      "userRatingCount": 245,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10187597265982652287",
+      "recommendedPrimary": [
+        "Kıymalı Pide",
+        "Kuşbaşılı Pide",
+        "Acılı Lahmacun"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ballı & Cevizli Tahinli Pide",
+          "note": "Yemek sonunda paylaşılan geleneksel Ege sıcak tatlı klasiği.",
+          "proof": "Yemeksepeti ve Yandex çarşı incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sade çarşı içi salon ve sokak önü masaları",
+        "crowdAndNoise": "Öğle yemek saatlerinde düzenli akış",
+        "disadvantage": "Şık dekorasyondan ziyade fırın odaklı geleneksel pide salonu düzeninde çalışır",
+        "transit": "Kemeraltı çarşısı 60. Sokak içinde yaya erişimi"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemeksepeti Menü Kataloğu",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kıymalı, lahmacun ve tahinli pide seçenekleri"
+        },
+        {
+          "title": "Yandex İncelemeleri",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kemeraltı köklü pide salonu puanlaması"
+        }
+      ],
+      "pros": [
+        "İnce çıtır hamur ve dürüst malzeme",
+        "Efsanevi tahinli-ballı tatlı pidesi"
+      ],
+      "cons": [
+        "Küçük sokak arası konumu nedeniyle araç girişi yok"
+      ],
+      "uncertainties": [
+        "Öğle yoğunluğunda sıcak fırın sırası 15 dakika sürebilir"
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-rota-baris-usta",
+      "categoryId": "denemelisin",
+      "resolvedName": "Rota Barış Usta",
+      "branchName": "Sarıana, 48700 Marmaris/Muğla",
+      "placeId": "ChIJ3zRY5ei9vxQRl4cHyRp4hAc",
+      "coordinates": {
+        "lat": 36.8536244,
+        "lng": 28.279823999999998
+      },
+      "rating": 4.4,
+      "userRatingCount": 1179,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=541689911628498839",
+      "recommendedPrimary": [
+        "Kömürde Yaprak Et Döner (Porsiyon / İskender)",
+        "Naneli Yoğurtlu Döner",
+        "Izgara Köfte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Naneli Yoğurt & Köz Garnitür Eşliği",
+          "note": "Kömürde dönen yaprak etin yağını dengeleyen imza yan servis.",
+          "proof": "GurmeRehber ve Yandex incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sarıana / Marina yakınında iç ve yarı açık salon",
+        "crowdAndNoise": "Öğle servis saatlerinde pik yoğunluk",
+        "disadvantage": "Kömürde et döner bitince tekrar takılmadığı için akşam geç gidenler döner bulamaz",
+        "transit": "Netsel Marina girişi / Sarıana yürüme hattı üzeri"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "GurmeRehber Marmaris",
+          "url": "https://gurmerehber.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kömür ateşinde yaprak döner ve erken tükenen ocak incelemesi"
+        },
+        {
+          "title": "Yandex Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sarıana döner ve köfte müdavim notları"
+        }
+      ],
+      "pros": [
+        "Katkısız kömür ateşi yaprak döner işçiliği",
+        "Güçlü yerel usta itibarı"
+      ],
+      "cons": [
+        "Döner stokları erken bitebildiği için öğle saatleri hedeflenmeli"
+      ],
+      "uncertainties": [
+        "Sezona göre akşam saatlerinde yalnızca köfte-kebap menüsü kalabilir"
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-balikcil-balik",
+      "categoryId": "balik",
+      "resolvedName": "Balıkçıl Balık Restoranı",
+      "branchName": "Tepe, 35. Sk. No:1, 48700 Marmaris/Muğla",
+      "placeId": "ChIJE_GRNd29vxQRGLnUqURjwFU",
+      "coordinates": {
+        "lat": 36.852899,
+        "lng": 28.274538999999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 738,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6179047835310536984",
+      "recommendedPrimary": [
+        "Sübye Lokum & Ahtapot Lokum",
+        "Kaya Koruğu & Paşa Mezesi",
+        "Günlük Çipura / Levrek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Soğuk Meze Seçkisi (Girit Ezme, Fava, Kaya Koruğu)",
+          "note": "Masaya oturur oturmaz balık öncesi paylaşılan soğuk Ege klasikleri.",
+          "proof": "balikcilbalik.com resmi menüsü ve Yandex incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kaleiçi sokak içi masalar ve butik iç salon",
+        "crowdAndNoise": "Akşam yemeklerinde düzenli ama huzurlu doluluk",
+        "disadvantage": "Doğrudan deniz kıyısında olmadığı için liman manzarası yerine dar sokak atmosferi sunar",
+        "transit": "Barbaros Caddesi arkasındaki Tepe 35. Sokak yaya erişimi"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Balıkçıl Balık)",
+          "url": "https://balikcilbalik.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Mezeler, sübye lokum ve taze balık menüsü"
+        },
+        {
+          "title": "Yandex & Yemeksepeti",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tepe Mahallesi deniz ürünleri ve meze değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Yüksek tazelik standardına sahip meze ve sübye ara sıcakları",
+        "Marina kargaşasından bir sokak içeride samimi yapı"
+      ],
+      "cons": [
+        "Deniz manzaralı masa arayanlara göre iç sokak yerleşimi"
+      ],
+      "uncertainties": [
+        "Sübye ve özel av mezeleri günlük tekne gelişine göre değişir"
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-morina-restaurant",
+      "categoryId": "balik",
+      "resolvedName": "Morina Restaurant",
+      "branchName": "Tepe, Barbaros Cd. No:37/A, 48700 Marmaris/Muğla",
+      "placeId": "ChIJVSU4lOa9vxQRv-ttv7m3CDI",
+      "coordinates": {
+        "lat": 36.8501585,
+        "lng": 28.273999999999997
+      },
+      "rating": 4.6,
+      "userRatingCount": 642,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3605333510118566847",
+      "recommendedPrimary": [
+        "Günün Taze Izgara Balığı",
+        "Karides & Yengeç Dolgulu Deniz Mahsullü Tabak",
+        "Izgara Ahtapot"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Deniz Mahsullü Makarna & Ara Sıcaklar",
+          "note": "Taze balık yanında paylaşılan ya da ana yemek olarak tercih edilen Akdeniz tabağı.",
+          "proof": "Restaurant Guru ve Yandex marina kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Yat Limanı manzaralı açık kıyı masaları ve salon",
+        "crowdAndNoise": "Akşam yemeği saatlerinde yüksek; marina gezintisiyle birleşen kalabalık",
+        "disadvantage": "Yat Limanı ana yürüyüş yolu önü kalabalık ve fiyat seviyesi yukarıda olabilir",
+        "transit": "Marmaris Yat Limanı Barbaros Caddesi No:37/A"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restaurant Guru Rehberi",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Deniz ürünleri tabakları ve liman menüsü"
+        },
+        {
+          "title": "Skip.menu & Yandex",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Izgara balık ve karidesli makarna yorumlaması dışı objektif puanlar"
+        }
+      ],
+      "pros": [
+        "Doğrudan limana nazır masa düzeni",
+        "Taze deniz mahsulü çeşitliliği"
+      ],
+      "cons": [
+        "Yaz akşamları ön yürüyüş yolunda yaya trafiği yoğun"
+      ],
+      "uncertainties": [
+        "Sezon dışında mutfak ve canlılık daralabilir"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-dilek-balik-evi",
+      "categoryId": "balik",
+      "resolvedName": "Dilek Balık Evi(Dilek Fish House)",
+      "branchName": "Kemeraltı, 64. Sk. No:1, 48700 Marmaris/Muğla",
+      "placeId": "ChIJb1wwkfC9vxQR6ygdEMGlgQM",
+      "coordinates": {
+        "lat": 36.8531606,
+        "lng": 28.2673222
+      },
+      "rating": 4.5,
+      "userRatingCount": 577,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.dilekbalik.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=252665302727076075",
+      "recommendedPrimary": [
+        "Tezgâhtan Seçme Günlük Mevsim Balığı",
+        "Taze Kalamar & Karides Tava",
+        "Günün Zeytinyağlı Mezeleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mevsim Salataları & Ev Yapımı Mezeler",
+          "note": "Balık ızgarasının yanında sade ama taze eşlikçi olarak servis ediliyor.",
+          "proof": "dilekbalik.com.tr ve Wanderlog Marmaris seçkisi"
+        }
+      ],
+      "suitability": {
+        "seating": "İçeride ve çarşı sokağında samimi balık evi masaları",
+        "crowdAndNoise": "Akşam yemeğinde yerel müdavimlerle dengeli doluluk",
+        "disadvantage": "Deniz kenarı ambiyansı yerine doğrudan çarşı içi mahalle balıkçısı deneyimi sunar",
+        "transit": "Kemeraltı çarşı 64. Sokak (Atatürk Caddesi arkası yürüyüş mesafesi)"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Dilek Balık Evi)",
+          "url": "https://www.dilekbalik.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Günlük taze yakalanan balık ve dondurulmamış ürün ilkesi"
+        },
+        {
+          "title": "Wanderlog Seçkisi",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Samimi atmosfer ve balık tazeliği değerlendirmesi"
+        },
+        {
+          "title": "Yandex Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kemeraltı yerel balık evi müşteri değerlendirmeleri"
+        }
+      ],
+      "pros": [
+        "Yüksek tazelik hassasiyeti ve samimi fiyat-kalite oranı",
+        "Yerel halk tarafından tercih edilen dürüst balık evi"
+      ],
+      "cons": [
+        "Deniz kıyısı manzarası yok"
+      ],
+      "uncertainties": [
+        "Sezon balık türleri günlük balıkçı halinden gelen stoka bağlıdır"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-leyla-restaurant",
+      "categoryId": "balik",
+      "resolvedName": "Leyla Restaurant Marmaris",
+      "branchName": "Tepe, Barbaros Cd. No:81, 48700 Marmaris/Muğla",
+      "placeId": "ChIJ9dg9mwG9vxQRZ4zlAzk1IEA",
+      "coordinates": {
+        "lat": 36.8503372,
+        "lng": 28.2749261
+      },
+      "rating": 4.5,
+      "userRatingCount": 268,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4620751736676912231",
+      "recommendedPrimary": [
+        "Günün Taze Deniz Balığı",
+        "Soğuk & Sıcak Ege Mezeleri",
+        "Izgara Ahtapot"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Özel Soğuk Meze Tabağı & Rakı Eşlikçileri",
+          "note": "Ana balık öncesinde masa paylaşımını oluşturan taze günlük mezeler.",
+          "proof": "leylamarmaris.com resmi sitesi ve Yandex kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Deniz kenarı özenli açık masalar ve modern iç mekan",
+        "crowdAndNoise": "Akşam saatlerinde dengeli doluluk",
+        "disadvantage": "Çağdaş meyhane konumlandırması nedeniyle masabaşı maliyeti sade balıkçılara göre yüksektir",
+        "transit": "Tepe Barbaros Caddesi sahil yürüyüş aksı"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (Leyla Marmaris)",
+          "url": "https://leylamarmaris.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Modern kıyı meyhanesi konsepti ve günlük balık seçkisi"
+        },
+        {
+          "title": "Yandex Kayıtları",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Deniz kenarı meze ve balık deneyimi notları"
+        }
+      ],
+      "pros": [
+        "Özenli masa düzeni ve temiz modern meyhane çizgisi",
+        "Sakin kıyı akşam yemeği ortamı"
+      ],
+      "cons": [
+        "Hafta sonu ve yüksek yaz sezonunda önceden rezervasyon gerekir"
+      ],
+      "uncertainties": [
+        "Bazı özel meze çeşitleri dönemsel mutfak kartına göre yenilenir"
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "marmaris-oyes-restaurant",
+      "categoryId": "balik",
+      "resolvedName": "O`yes restaurant",
+      "branchName": "Yat Limanı, Tepe, Barbaros Cd. No:9, 48700 Marmaris/Muğla",
+      "placeId": "ChIJey5prN29vxQR_MEPcTmdPXM",
+      "coordinates": {
+        "lat": 36.85066,
+        "lng": 28.273567000000003
+      },
+      "rating": 4.6,
+      "userRatingCount": 660,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.oyesmarmaris.com/",
+      "mapsUri": "https://maps.google.com/?cid=8303966157976617468",
+      "recommendedPrimary": [
+        "Meşe Üzerinde Izgara Balık",
+        "Safran Soslu Karides & Yengeç Dolgulu Fileto",
+        "Deniz Mahsullü Güveç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Roquefort Soslu Bonfile & Dünya Mutfağı Alternatifleri",
+          "note": "Balık yemeyen masa eşlikçileri için restoranın 1991’den beri sunduğu güçlü ikinci kanat.",
+          "proof": "oyesmarmaris.com ve Restaurant Guru kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Denize nazır Yat Limanı girişi ön terası ve iç salon",
+        "crowdAndNoise": "Akşam yemeklerinde canlı liman atmosferi",
+        "disadvantage": "Çok geniş menülü klasik liman restoranı olduğundan sade lokal meyhaneden daha uluslararası hizmet verir",
+        "transit": "Marmaris Yat Limanı girişi Barbaros Caddesi No:9"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Resmi Site (O’Yes Restaurant)",
+          "url": "http://www.oyesmarmaris.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1991'den beri Yat Limanı aile işletmesi geçmişi"
+        },
+        {
+          "title": "Wanderlog Rehberi",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yat Limanı başında 1991 aile işletmesi değerlendirmesi"
+        },
+        {
+          "title": "Restaurant Guru Seçkisi",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Meşe ızgara balıklar ve safran soslu deniz mahsulleri"
+        }
+      ],
+      "pros": [
+        "35 yıla yaklaşan Yat Limanı kurumsal sürekliliği",
+        "Geniş mutfak ve deniz manzaralı giriş konumu"
+      ],
+      "cons": [
+        "Geniş menü ve turistik marina fiyatı"
+      ],
+      "uncertainties": [
+        "Kış döneminde çalışma saatleri ve teras kullanımı hava durumuna bağlıdır"
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    }
+  ]
+}

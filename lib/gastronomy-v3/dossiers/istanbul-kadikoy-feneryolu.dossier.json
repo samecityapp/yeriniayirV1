@@ -1,0 +1,1260 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "istanbul-kadikoy-feneryolu",
+  "displayName": "Feneryolu, Kadıköy, İstanbul",
+  "verifiedAt": "2026-11-14T15:23:43.843Z",
+  "selectedCount": 17,
+  "rejectedControls": [
+    {
+      "id": "ctrl-fen-starbucks",
+      "resolvedName": "Starbucks Kızıltoprak",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-fen-beyazfirin",
+      "resolvedName": "Beyaz Fırın Kızıltoprak",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-fen-adilesultan",
+      "resolvedName": "Adile Sultan Ev Yemekleri - Feneryolu Paket Servis Noktası",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-fen-dominos",
+      "resolvedName": "Domino's Pizza Göztepe Kuyubaşı",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-fen-nazar-chain",
+      "resolvedName": "Ziverbey Nazar Profiterol",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-fen-kerem-kahve-purity",
+      "resolvedName": "Kerem Pastanesi",
+      "reason": "kahve_category_not_coffee_specialist:pastry_shop"
+    },
+    {
+      "id": "ctrl-fen-largando-fenerbahce",
+      "resolvedName": "Largando",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Feneryolu, adres: Fenerbahçe, Dr. Faruk Ayanoğlu Cd. No:14, 34726 Kadıköy/İstanbul, Türkiye)"
+    },
+    {
+      "id": "ctrl-fen-lamora-below-44",
+      "resolvedName": "La Mora Pizza&Pasta",
+      "reason": "below_quality_threshold:★4.3(898)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "fen-il-bello",
+      "categoryId": "pizza",
+      "resolvedName": "il Bello",
+      "branchName": "Feneryolu, Feneryolu Hatboyu Sk 4F, 34724 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJtzqucgDHyhQRtUww18weuZg",
+      "coordinates": {
+        "lat": 40.979009999999995,
+        "lng": 29.047642
+      },
+      "rating": 5,
+      "userRatingCount": 123,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11004861029588946101",
+      "recommendedPrimary": [
+        "Margherita",
+        "Pepperoni / Salami Napoli Pizza",
+        "Dört Peynirli Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tiramisu & İtalyan Espresso",
+          "note": "Napoli pizzası sonrasında ikram veya tatlı kapanışı olarak tercih edilen kahve ve mascarpone ikilisi.",
+          "proof": "Feneryolu yerel gastronomi paylaşımları ve mekan menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt iç salon, dış sokak masaları ve rezervasyon imkanı",
+        "crowdAndNoise": "Akşamları samimi İtalyan mahalle pizzacısı atmosferi",
+        "disadvantage": "Kompakt iç mekan ve sınırlı masa sayısı nedeniyle akşam saatlerinde gitmeden önce yer sormak avantaj sağlar.",
+        "transit": "Feneryolu Marmaray İstasyonu çıkışındaki Feneryolu Hatboyu Sokak No:4F’de."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Feneryolu İtalyan & Pizza Mekanları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Hatboyu Sokak’ta gerçek Napoli stili pizza hamuru ve sıcak servisiyle parlayan butik pizzacı"
+        },
+        {
+          "title": "Müdavim — il Bello Feneryolu",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur dengesi, sos hafifliği ve işletmeci ilgisiyle 5.0 ortalamada öne çıkıyor"
+        }
+      ],
+      "pros": [
+        "Gerçek Napoli hamur dokusu ve taze malzeme",
+        "İstasyona birkaç adım mesafede sakin sokak"
+      ],
+      "cons": [
+        "Küçük dükkan kapasitesi nedeniyle yoğun akşamlar dolabiliyor"
+      ],
+      "uncertainties": [
+        "Sezonsal şarküteri ve peynir çeşitleri günlük stoğa göre değişebilir."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fen-niko-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "Niko Pizza & Sandviç",
+      "branchName": "Feneryolu, Fahrettin Kerim Gökay Cd No:78/B, 34724 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJR1jnXQDHyhQRbavT8XSD86Q",
+      "coordinates": {
+        "lat": 40.986091699999996,
+        "lng": 29.047481
+      },
+      "rating": 4.5,
+      "userRatingCount": 147,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11885988379857496941",
+      "recommendedPrimary": [
+        "Karışık Fırın Pizza",
+        "Karidesli Pizza",
+        "Üç Peynirli Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Fırın Sandviçleri & Dondurma",
+          "note": "Gündüz saatlerinde taze ekmekle hazırlanan doyurucu sandviçler ve yaz aylarında dondurma çeşitleri.",
+          "proof": "Feneryolu mahalle müdavim notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sınırlı iç oturma ve birkaç dış cadde masası",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde bölge sakinleriyle hareketli",
+        "disadvantage": "Yaklaşık yirmi kişilik küçük salonu cadde üstünde hızlı öğle-akşam oturumuna göre düzenlenmiştir.",
+        "transit": "Fahrettin Kerim Gökay Caddesi No:78/B üzerinde Kuyubaşı ve Ziverbey arasında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Kuyubaşı Feneryolu Sokak Lezzetleri",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bol peynirli pizzaları ve gündüz sandviç çeşitleriyle öne çıkan mahalle fırını"
+        },
+        {
+          "title": "Müdavim — Niko Pizza Feneryolu",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Karidesli, kokoreçli pizza seçenekleri ve sıcak servisiyle beğeniliyor"
+        }
+      ],
+      "pros": [
+        "Peynir kalitesi ve özgün pizza kombinasyonları",
+        "Gündüz sandviç ve dondurma çeşitliliği"
+      ],
+      "cons": [
+        "Ana cadde kenarında kompakt dükkan ölçeği"
+      ],
+      "uncertainties": [
+        "Özel kampanyalı gündüz sandviç menüsü haftanın günlerine göre güncellenebilir."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fen-spello-kitchen",
+      "categoryId": "hamburger",
+      "resolvedName": "Spello Kitchen",
+      "branchName": "Şen Apartmanı, Feneryolu, Gazi Muhtarpaşa Sok. No:12 D:F, 34724 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJ_W6AM-PHyhQRBqv_KH1rraY",
+      "coordinates": {
+        "lat": 40.983062700000005,
+        "lng": 29.052543099999994
+      },
+      "rating": 4.8,
+      "userRatingCount": 207,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "https://www.spellokitchen.com/",
+      "mapsUri": "https://maps.google.com/?cid=12010373966569908998",
+      "recommendedPrimary": [
+        "Double Smash Burger",
+        "Truffle Smash Burger",
+        "Kremalı Mantarlı Patates (Mushroom Fries)"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Yapımı Taze İtalyan Makarnaları",
+          "note": "Burger dışında mutfağın kendi açtığı günlük taze makarna tabakları da akşam servisinde öne çıkıyor.",
+          "proof": "spellokitchen.com menüsü ve Kadıköy semt notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Samimi iç salon, dış sokak masaları ve rezervasyon imkanı",
+        "crowdAndNoise": "Akşamları aileler ve müdavim genç kitleyle dengeli doluluk",
+        "disadvantage": "Küçük aile mutfağı düzeninde çalıştığı için akşam yoğunluğunda siparişler taze hazırlanırken kısa bekleme oluşabilir.",
+        "transit": "Feneryolu Gazi Muhtarpaşa Sokak No:12D’de Bağdat Caddesi ve Minibüs Yolu arasında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Spello Kitchen Resmi Sitesi",
+          "url": "https://www.spellokitchen.com/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Smash burger ve taze makarna odaklı butik mutfak menüsü"
+        },
+        {
+          "title": "ExploreKadikoy — Feneryolu Burger & Makarna Durakları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Gazi Muhtarpaşa Sokak’ta hem smash burger hem el yapımı makarnasıyla öne çıkan adres"
+        },
+        {
+          "title": "Müdavim — Spello Kitchen Feneryolu",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Büyük porsiyonlar, dengeli fiyatlar ve mantarlı patatesiyle yüksek övgü topluyor"
+        }
+      ],
+      "pros": [
+        "Çıtır kenarlı gerçek smash burger ve doyurucu porsiyonlar",
+        "Aynı mutfaktan taze makarna alternatifi"
+      ],
+      "cons": [
+        "Küçük dükkan mutfağında yoğun akşamlarda hazırlık süresi uzayabilir"
+      ],
+      "uncertainties": [
+        "Sezonsal soslu taze makarna çeşitleri haftalık değişebilir."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fen-rustie-eatery",
+      "categoryId": "hamburger",
+      "resolvedName": "Rustie Eatery",
+      "branchName": "Feneryolu, Gazi Muhtarpaşa Sok. No:15 İç Kapı No:20, 34724 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJdeMof5fHyhQRZArulMEN36w",
+      "coordinates": {
+        "lat": 40.9829066,
+        "lng": 29.052865599999997
+      },
+      "rating": 4.6,
+      "userRatingCount": 219,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12456690219408558692",
+      "recommendedPrimary": [
+        "Rustie Smash Burger",
+        "Tiftik Kaburgalı Burger",
+        "Çıtır Tavuk Burger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Ravioli & Sıcak Kase (Bowl) Tabakları",
+          "note": "Burger menüsünün yanında öğle ve akşamları sıkça tercih edilen dengeli kase ve taze ravioli çeşitleri.",
+          "proof": "Feneryolu yerel gastronomi paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Modern mahalle salonu ve sokak masaları",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde Feneryolu müdavimleriyle canlı",
+        "disadvantage": "Sokak içi butik dükkan kapasitesi sınırlı olduğundan yemek saatlerinde masa beklemek gerekebilir.",
+        "transit": "Feneryolu Gazi Muhtarpaşa Sokak No:15’te istasyon ve Bağdat Caddesi arasında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Feneryolu Butik Mekanlar",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Feneryolu’nun yükselen butik burger ve sıcak sandviç noktası"
+        },
+        {
+          "title": "Müdavim — Rustie Eatery",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze ekmeği, güler yüzlü servisi ve yüksek et kalitesiyle beğeniliyor"
+        }
+      ],
+      "pros": [
+        "Brioche ekmek ve sulu köfte uyumu",
+        "Kase ve ravioli gibi alternatif ana yemekler"
+      ],
+      "cons": [
+        "Sınırlı masa kapasitesi"
+      ],
+      "uncertainties": [
+        "Özel burger reçeteleri dönemsel güncellenebilir."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fen-orlando-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Orlando Coffee",
+      "branchName": "Feneryolu, Gazi Muhtarpaşa Sok. No:5, 34724 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJhahkqmfHyhQR2-Vk3qxHfYI",
+      "coordinates": {
+        "lat": 40.9839929,
+        "lng": 29.053338399999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 220,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": true
+      },
+      "websiteUri": "http://instagram.com/coffee.orlando",
+      "mapsUri": "https://maps.google.com/?cid=9402750404810565083",
+      "recommendedPrimary": [
+        "Flat White",
+        "V60 Filtre Kahve",
+        "Cortado"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Ev Yapımı Kek & Kurabiye Seçkisi",
+          "note": "Kahve yanında vitrinden taze sunulan butik fırın dilimleri.",
+          "proof": "Kadıköy üçüncü dalga kahve paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Samimi iç bar, kaldırım masaları ve rezervasyonlu oturma",
+        "crowdAndNoise": "Sabah ve öğleden sonra mahalle müdavimleriyle sıcak sohbet ortamı",
+        "disadvantage": "Kompakt mahalle barı yapısında olduğu için kalabalık çalışma gruplarından çok tekli veya ikili kahve molalarına uygundur.",
+        "transit": "Feneryolu Gazi Muhtarpaşa Sokak No:5’te Kuyubaşı köşesine birkaç adım mesafede."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "The Magger — Feneryolu Kahve Durakları",
+          "url": "https://www.themagger.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Gazi Muhtarpaşa girişinde sıcak atmosferi ve çekirdek kalitesiyle öne çıkan butik kahveci"
+        },
+        {
+          "title": "Müdavim — Orlando Coffee Feneryolu",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İlgili ekibi ve dengeli espresso bazlı içecekleriyle yüksek puan topluyor"
+        }
+      ],
+      "pros": [
+        "Nitelikli çekirdek ve istikrarlı espresso reçeteleri",
+        "Sıcak mahalle kahvecisi atmosferi"
+      ],
+      "cons": [
+        "Kompakt alan nedeniyle kalabalık çalışma gruplarına uygun değil"
+      ],
+      "uncertainties": [
+        "Misafir kavrum çekirdek seçkisi dönemsel değişebilir."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fen-seven-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Seven Specialty Coffee",
+      "branchName": "Saadet apartmanı, Feneryolu, Bestekar Leyla Sk. No:7/B, 34724 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJ2bALRFO5yhQRuVTYmmGVtgc",
+      "coordinates": {
+        "lat": 40.9860871,
+        "lng": 29.045377600000002
+      },
+      "rating": 5,
+      "userRatingCount": 102,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=555795850469070009",
+      "recommendedPrimary": [
+        "Espresso Freddo",
+        "V60 Tek Köken",
+        "Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Sandviçler & Günlük Tatlı Dilimleri",
+          "note": "Sabah ve öğleden sonra kahvesine eşlik eden doğal içerikli sandviç ve tatlılar.",
+          "proof": "Feneryolu semt topluluğu değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sessiz iç mekan ve apartman önü sokak masaları",
+        "crowdAndNoise": "Mahalle sakinleri ve sakin akşamüstü kahvesi arayanlarla huzurlu",
+        "disadvantage": "Akşamüstü geç saatlerde günlük tatlı vitrini erken tükenebiliyor.",
+        "transit": "Feneryolu Ziverbey tarafında Bestekar Leyla Sokak No:7/B’de."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Gizli Kalmış Mahalle Kahvecileri",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Bestekar Leyla Sokak’ta özenli espresso freddo ve filtre kahve sunan nitelikli bar"
+        },
+        {
+          "title": "Müdavim — Seven Specialty Coffee",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sessiz sokak atmosferi ve çekirdek kalitesiyle tam puana yakın değerlendiriliyor"
+        }
+      ],
+      "pros": [
+        "Yüksek soğuk espresso ve filtre kahve özeni",
+        "Ana caddelerden uzak sakin sokak konumu"
+      ],
+      "cons": [
+        "Geç saatlerde tatlı çeşitleri azalabiliyor"
+      ],
+      "uncertainties": [
+        "Tek köken çekirdek stokları kavrum takvimine göre yenilenir."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fen-sutlu-sade",
+      "categoryId": "kahve",
+      "resolvedName": "Sütlü Sade Kahve Dükkanı",
+      "branchName": "Feneryolu, Gazi Muhtarpaşa Sok. No:23B, 34724 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJcc3UsUDHyhQRIfPSX9sAL4k",
+      "coordinates": {
+        "lat": 40.9819921,
+        "lng": 29.052373099999997
+      },
+      "rating": 4.8,
+      "userRatingCount": 108,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9885120649307026209",
+      "recommendedPrimary": [
+        "Türk Kahvesi",
+        "Filtre Kahve",
+        "Cappuccino"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Usulü Tatlılar & Demleme Çay",
+          "note": "Uzun okuma ve çalışma oturumlarında kahve dışında sıkça tercih edilen taze tatlı ve çay ikilisi.",
+          "proof": "Feneryolu mahalle müdavim notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sessiz iç oturma düzeni ve dış sokak masaları",
+        "crowdAndNoise": "Ders çalışanlar, okuma yapanlar ve mahalle sakinleriyle dingin atmosfer",
+        "disadvantage": "Sessiz çalışma ve sohbet dengesini koruyan küçük bir mekan olduğundan yüksek sesli kalabalık gruplara hitap etmez.",
+        "transit": "Feneryolu Gazi Muhtarpaşa Sokak No:23B’de Marmaray hattına kısa yürüyüşle."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Feneryolu Çalışma Kafeleri",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Samimi işletmeciliği ve sakin oturma ortamıyla mahallenin çalışma-dinlenme durağı"
+        },
+        {
+          "title": "Ekşi Sözlük — Sütlü Sade Kahve Feneryolu",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Huzurlu havası, ekonomik fiyatları ve sıcak misafirperverliğiyle seviliyor"
+        }
+      ],
+      "pros": [
+        "Ekonomik bütçe seviyesi ve sakin çalışma atmosferi",
+        "Güler yüzlü aile işletmesi dokusu"
+      ],
+      "cons": [
+        "Küçük mekan kapasitesi nedeniyle yüksek sesli gruplara uygun değil"
+      ],
+      "uncertainties": [
+        "Ev yapımı günlük tatlı tepsisi günden güne değişir."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fen-kaffa-buna",
+      "categoryId": "kahve",
+      "resolvedName": "Kaffa Buna",
+      "branchName": "Feneryolu, Kuyubaşı Sk. No:9 D:1 b, 34724 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJDyY9HV3HyhQR0nqkVbmzjck",
+      "coordinates": {
+        "lat": 40.9843173,
+        "lng": 29.0506092
+      },
+      "rating": 4.6,
+      "userRatingCount": 224,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "http://www.kaffabuna.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=14523461981926882002",
+      "recommendedPrimary": [
+        "Filtre Kahve",
+        "Flat White",
+        "Iced Americano"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Kurabiyeleri & Soğuk Kahve Eşlikçileri",
+          "note": "Ders ve çalışma molalarında kahve yanında seçilen günlük tatlı atıştırmalıklar.",
+          "proof": "kaffabuna.com.tr ve semt rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Rahat iç masa düzeni ve Kuyubaşı sokak önü oturması",
+        "crowdAndNoise": "Gün boyu Marmara çevresi öğrenciler ve yerel müdavimlerle canlı",
+        "disadvantage": "Öğleden sonra öğrenci çalışma yoğunluğu nedeniyle prizli iç masalar hızla dolabilmektedir.",
+        "transit": "Feneryolu Kuyubaşı Sokak No:9’da Fahrettin Kerim Gökay Caddesi hemen arkasında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Kaffa Buna Resmi Sitesi",
+          "url": "https://www.kaffabuna.com.tr/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Kahve kavurma profilleri ve Feneryolu şube bilgileri"
+        },
+        {
+          "title": "Oggusto — Kadıköy Kahve Kavurmahaneleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kuyubaşı aksında yıllardır istikrarını koruyan yerel kavurmahane-kafe"
+        },
+        {
+          "title": "Müdavim — Kaffa Buna Feneryolu",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Düzenli müdavim kitlesi ve dengeli kahve standartlarıyla öne çıkıyor"
+        }
+      ],
+      "pros": [
+        "Yıllardır değişmeyen kavrum ve lezzet istikrarı",
+        "Çalışma ve uzun sohbete elverişli masa düzeni"
+      ],
+      "cons": [
+        "Öğleden sonra yoğun öğrenci kalabalığı"
+      ],
+      "uncertainties": [
+        "Sezonsal tek köken çekirdekler dönemsel güncellenir."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fen-alaturka",
+      "categoryId": "kahvalti",
+      "resolvedName": "Alaturka İstanbul",
+      "branchName": "Feneryolu, Mustafa Mazharbey Sok. No:53, 34718 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJL7N3z8THyhQRTIhnTe-96NM",
+      "coordinates": {
+        "lat": 40.98074,
+        "lng": 29.053801999999994
+      },
+      "rating": 4.7,
+      "userRatingCount": 245,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.alaturkaistanbul.com/",
+      "mapsUri": "https://maps.google.com/?cid=15269663372093130828",
+      "recommendedPrimary": [
+        "Avokadolu Poşe Yumurta Tabağı",
+        "Ekşi Mayalı Kahvaltı Sandviçi",
+        "Tereyağlı Kruvasan"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bademli Kruvasan & Demleme Filtre Kahve",
+          "note": "Sıcak kahvaltının yanında vitrinden seçilen çıtır bademli kruvasan ve taze demleme kahve.",
+          "proof": "alaturkaistanbul.com ve Feneryolu semt paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Oturmalı aydınlık iç salon ve sokak önü masaları",
+        "crowdAndNoise": "Sabahları sakin mahalle kahvaltısı, hafta sonu hareketli",
+        "disadvantage": "Klasik geniş serpme kahvaltı yerine fırın sandviçleri ve kompakt kahvaltı tabakları sunar; hafta sonu iç masalar çabuk dolar.",
+        "transit": "Feneryolu Marmaray ve Bağdat Caddesi arasındaki Mustafa Mazharbey Sokak No:53’te."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Alaturka İstanbul Resmi Sitesi",
+          "url": "https://www.alaturkaistanbul.com/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Ekşi maya fırıncılık ürünleri ve Feneryolu kahvaltı sunumları"
+        },
+        {
+          "title": "ExploreKadikoy — Feneryolu Kahvaltı Mekanları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Feneryolu’nun ekşi maya ekmek ve sabah kahvaltısı odağındaki butik adresi"
+        },
+        {
+          "title": "Müdavim — Alaturka İstanbul Feneryolu",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mücverli sandviçleri, ekşi maya ekmekleri ve kruvasanlarıyla öne çıkıyor"
+        }
+      ],
+      "pros": [
+        "Güçlü ekşi maya fırıncılık ve taze kahvaltı uyumu",
+        "Feneryolu’nda sessiz sokak içi konum"
+      ],
+      "cons": [
+        "Geniş serpme kahvaltı yerine kompakt tabak ve sandviç menüsü"
+      ],
+      "uncertainties": [
+        "Fırın vitrin çeşitleri günün saatine göre güncellenir."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fen-merveilleux",
+      "categoryId": "kahvalti",
+      "resolvedName": "Merveilleux Patisserie",
+      "branchName": "Feneryolu, Hamdibey Sok. 16/2 A, 34724 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJf__1X4C5yhQRg8ai7jobopo",
+      "coordinates": {
+        "lat": 40.9862974,
+        "lng": 29.045536300000002
+      },
+      "rating": 4.6,
+      "userRatingCount": 320,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.merveilleuxpatisserie.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=11142498367993726595",
+      "recommendedPrimary": [
+        "Tereyağlı Kruvasan & Reçel Seti",
+        "Füme Somonlu Kruvasan Sandviç",
+        "Ispanaklı Kiş"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Beze Tabanlı Merveilleux Pastası",
+          "note": "Kahvaltı veya öğle molasında hafif dokusuyla öne çıkan imza Fransız tatlısı.",
+          "proof": "merveilleuxpatisserie.com.tr ve Anadolu Yakası pastane rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Şık iç salon, sokak kenarı oturması ve paket pastane servisi",
+        "crowdAndNoise": "Sakin ve özenli mahalle pastanesi temposu",
+        "disadvantage": "Klasik serpme kahvaltı yerine pastane-brunch formatındadır; özel tasarım bütün pasta siparişlerindense günlük kruvasan ve kiş vitrini daha tutarlıdır.",
+        "transit": "Feneryolu Tren/Marmaray durağına kısa yürüme mesafesinde Hamdibey Sokak No:16’da."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Anadolu Yakası Fransız Pastaneleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Feneryolu’nda kruvasan ve adını aldığı Merveilleux tatlısıyla tanınıyor"
+        },
+        {
+          "title": "Ekşi Sözlük — Merveilleux Patisserie",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tereyağlı hamur işleri ve sakin Feneryolu konumuyla beğeniliyor"
+        }
+      ],
+      "pros": [
+        "Otantik Fransız kruvasan ve kiş işçiliği",
+        "İstasyona yakın sakin ara sokak konumu"
+      ],
+      "cons": [
+        "Sadece pasta siparişlerinde beklenti farkları bildirilebiliyor",
+        "Serpme kahvaltı bulunmuyor"
+      ],
+      "uncertainties": [
+        "Özel aromalı günlük porsiyon tatlılar erken saatlerde tükenebilir."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fen-kameriye",
+      "categoryId": "kahvalti",
+      "resolvedName": "Kameriye Kafe Çay Bahçesi",
+      "branchName": "Feneryolu, Mazhar Osman Sk. No:15A D:1, 34724 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJfSitRYbHyhQRbqfN1fTRR_w",
+      "coordinates": {
+        "lat": 40.9820932,
+        "lng": 29.050259099999998
+      },
+      "rating": 4.5,
+      "userRatingCount": 874,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": null,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "http://kameriye.com/",
+      "mapsUri": "https://maps.google.com/?cid=18178729270393546606",
+      "recommendedPrimary": [
+        "Köy Kahvaltısı Tabağı",
+        "Kaşarlı veya Sucuklu Menemen",
+        "Sıcak Pişi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kapalı Kıymalı Pide & Demleme Çay",
+          "note": "Sabah kahvaltısı dışındaki öğle oturumlarında ağaç altında çay eşliğinde en sık istenen klasik lezzetler.",
+          "proof": "kameriye.com ve Feneryolu yerel müdavim notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş ağaçlıklı gölgelikli bahçe oturma düzeni ve kapalı alan",
+        "crowdAndNoise": "Ağaçlıklı bahçesiyle şehrin gürültüsünden uzak dingin aile ortamı",
+        "disadvantage": "Güneşli hafta sonu sabahlarında ağaç altı masalar erken saatte dolmaktadır.",
+        "transit": "Feneryolu Mazhar Osman Sokak No:15A’da Bağdat Caddesi ve istasyon arasında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Feneryolu Bahçeli Mekanlar",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Feneryolu’nun asma ve ağaç gölgeli klasik mahalle bahçesi kahvaltısı"
+        },
+        {
+          "title": "Kadıköy Yerel Müdavim Notları",
+          "url": "https://eksisozluk.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sakin bahçe atmosferi, çayı, menemeni ve pidesiyle uzun yıllardır tercih ediliyor"
+        }
+      ],
+      "pros": [
+        "Ferah asma gölgelikli geniş bahçe",
+        "Klasik Türk kahvaltısı ve pide çeşitliliği"
+      ],
+      "cons": [
+        "Hafta sonları yoğunluk nedeniyle masa bekleme ihtimali"
+      ],
+      "uncertainties": [
+        "Serin ve yağışlı havalarda dış bahçe oturması sınırlanabilir."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fen-mantiquem",
+      "categoryId": "denemelisin",
+      "resolvedName": "Mantiquem",
+      "branchName": "Feneryolu, Mustafa Mazharbey Sok. No:24/B, 34000 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJgeG6u7zHyhQRl5xjVHyw-kk",
+      "coordinates": {
+        "lat": 40.9807299,
+        "lng": 29.0560161
+      },
+      "rating": 5,
+      "userRatingCount": 334,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": null,
+        "reservable": true
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5330767156984650903",
+      "recommendedPrimary": [
+        "Cevizli & Yoğurtlu Sinop Mantısı",
+        "Karışık Mantı Tabağı",
+        "El Açması Çi Börek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zeytinyağlı Sarma & Haşlama İçli Köfte",
+          "note": "Mantı ve çi börek yanında masaya paylaşımlık eklenen ev yapımı yan lezzetler.",
+          "proof": "Feneryolu yerel gastronomi notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tertemiz samimi iç salon ve rezervasyonlu masa imkanı",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde bölge sakinleri ile Sinop mantısı tutkunlarıyla canlı",
+        "disadvantage": "Ürünler sipariş üzerine taze haşlanıp kızartıldığı için yoğun akşam saatlerinde servis birkaç dakika bekletebilir.",
+        "transit": "Feneryolu Mustafa Mazharbey Sokak No:24/B’de Feneryolu İstasyonu’na 5 dakikalık yürüyüşle."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Anadolu Yakası Mantı Durakları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Feneryolu’nda geleneksel Sinop mantısı ve el açması çi böreğiyle tam puan alan aile mutfağı"
+        },
+        {
+          "title": "Müdavim — Mantiquem Feneryolu",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Temiz mutfağı, yağsız çıtır çi böreği ve cevizli mantısıyla 5.0 ortalamayı koruyor"
+        }
+      ],
+      "pros": [
+        "Gerçek cevizli Sinop mantısı ve yağ çekmeyen çi börek",
+        "Özenli ve güler yüzlü aile işletmeciliği"
+      ],
+      "cons": [
+        "Siparişe özel pişirme nedeniyle yoğun saatlerde kısa bekleme"
+      ],
+      "uncertainties": [
+        "Akşam geç saatlerde ev yapımı sarma ve içli köfte stoğu tükenebilir."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fen-tarhun",
+      "categoryId": "denemelisin",
+      "resolvedName": "Tarhun Restoran",
+      "branchName": "Feneryolu, Hüseyin Paşa Çk Sk No: 28/A, 34724 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJL1gJCsC5yhQRuEHt8G9ID0c",
+      "coordinates": {
+        "lat": 40.9820892,
+        "lng": 29.043878799999998
+      },
+      "rating": 4.9,
+      "userRatingCount": 265,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/tarhunyoresellezzetler/",
+      "mapsUri": "https://maps.google.com/?cid=5120390946964193720",
+      "recommendedPrimary": [
+        "Analı Kızlı Çorba",
+        "Zeytinyağlı Yaprak Sarma",
+        "Mevsimlik Yöresel Ev Yemeği Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günün Ev Tatlısı & Reyhan Şerbeti",
+          "note": "Yöresel öğle tabağını tamamlayan geleneksel ev yapımı tatlı ve ferahlatıcı içecek.",
+          "proof": "Tarhun Yöresel Lezzetler menü notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sessiz çıkmaz sokak içinde minik ahşap masalı bahçe ve küçük salon",
+        "crowdAndNoise": "Huzurlu, gürültüden tamamen uzak terapi gibi öğle-akşamüstü yemek ortamı",
+        "disadvantage": "Çıkmaz sokak içinde kaldığından ilk kez gidenler için tabelayı fark etmek biraz dikkat gerektirir ve günlük tencere yemekleri akşam geç saate kalmayabilir.",
+        "transit": "Feneryolu ile Kızıltoprak arasındaki Hüseyin Paşa Çıkmazı No:28/A’da Bağdat Caddesi’nin bir blok kuzeyinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "The Magger — Kadıköy Gizli Ev Yemekçileri",
+          "url": "https://www.themagger.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çıkmaz sokak içindeki küçük bahçesinde analı kızlı ve sarma sunan yöresel aile lokantası"
+        },
+        {
+          "title": "Müdavim — Tarhun Restoran Feneryolu",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yöresel tatları, ev yapımı porsiyonları ve sakin sokağıyla 4.9 puan ortalamasında"
+        }
+      ],
+      "pros": [
+        "Tamamen ev yapımı yöresel Antep-Anadolu tencere lezzetleri",
+        "Ana cadde karmaşasından izole minik bahçe"
+      ],
+      "cons": [
+        "Ara çıkmaz sokak konumu ve sınırlı günlük tencere üretimi"
+      ],
+      "uncertainties": [
+        "Mevsimsel günlük menü gün içinde erken tükenebilir."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fen-grain-mediterranean",
+      "categoryId": "denemelisin",
+      "resolvedName": "Grain Mediterranean",
+      "branchName": "Feneryolu, Bahçeler Sok. No:1 D:B, 34724 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJUyGfLEzHyhQR0i2h_XCq59o",
+      "coordinates": {
+        "lat": 40.9800061,
+        "lng": 29.050015799999997
+      },
+      "rating": 5,
+      "userRatingCount": 122,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15773763622156709330",
+      "recommendedPrimary": [
+        "Pita İçi Tavuk Gyros",
+        "Kömür Ateşi Dana/Kuzu Souvlaki Pita",
+        "Akdeniz Soslu Patates"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Izgara Hellim & Ev Yapımı Tzatziki Tabağı",
+          "note": "Sıcak pita dürümlerin yanında paylaşılan Akdeniz başlangıç eşlikçisi.",
+          "proof": "Feneryolu sokak lezzetleri değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Modern sokak önü masaları ve küçük iç salon",
+        "crowdAndNoise": "Öğle ve akşam taze Akdeniz sokak yemeği arayan semt sakinleriyle canlı",
+        "disadvantage": "Butik sokak mutfağı konseptinde olduğu için uzun akşam yemeklerinden çok taze ve hızlı öğünlere uygundur.",
+        "transit": "Feneryolu Bahçeler Sokak No:1D’de Feneryolu İstasyonu yürüyüş aksında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "ExploreKadikoy — Feneryolu Akdeniz & Pita Mekanları",
+          "url": "https://www.explorekadikoy.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kömür ateşi marine etleri taze pita ve Akdeniz soslarıyla sunan yenilikçi sokak mutfağı"
+        },
+        {
+          "title": "Müdavim — Grain Mediterranean Feneryolu",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Gyros pitası, tazeliği ve temiz mutfağıyla tam puanlara ulaşıyor"
+        }
+      ],
+      "pros": [
+        "Katkısız el yapımı pita ve kömür ateşi et işçiliği",
+        "Temiz mutfak ve güler yüzlü ekip"
+      ],
+      "cons": [
+        "Küçük oturma düzeni hızlı yemek formatındadır"
+      ],
+      "uncertainties": [
+        "Yoğun akşamlarda günlük marine et porsiyonları erken bitebilir."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fen-balkan-kavurma",
+      "categoryId": "denemelisin",
+      "resolvedName": "Balkan Kavurma & Cevapi",
+      "branchName": "Feneryolu mah./ Hüseyin hüsnü paşa sok./Göksel apartmanı, opet yanı, Feneryolu, no:2, 34724 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJg7Z0YEDHyhQRKEPyNugg5lw",
+      "coordinates": {
+        "lat": 40.9840659,
+        "lng": 29.0564791
+      },
+      "rating": 4.9,
+      "userRatingCount": 150,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": true,
+        "takeout": true,
+        "outdoorSeating": true,
+        "reservable": null
+      },
+      "websiteUri": "http://balkankavurma.com/",
+      "mapsUri": "https://maps.google.com/?cid=6694074077859169064",
+      "recommendedPrimary": [
+        "Balkan Köftesi (Ćevapi)",
+        "Tereyağlı Dana Kavurma",
+        "Kavurmalı Çorba"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak İrmik Helvası & İkram Ev Turşusu",
+          "note": "Balkan köftesi ve kavurma üstüne müdavimlerin özellikle övdüğü sıcak helva kapanışı.",
+          "proof": "balkankavurma.com ve mahalle değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "On dört masalık temiz iç salon ve küçük dış masa düzeni",
+        "crowdAndNoise": "Öğle saatlerinde bölge çalışanları ve semt müdavimleriyle dolu",
+        "disadvantage": "Yaklaşık on dört masalık küçük bir esnaf dükkanı olduğundan öğle yoğunluğunda yer bulmak zorlaşabilir.",
+        "transit": "Feneryolu–Göztepe sınırında Hüseyin Hüsnü Paşa Sokak No:2’de Göztepe istasyonuna yakın."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Balkan Kavurma Resmi Sitesi",
+          "url": "https://balkankavurma.com/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Boşnak cevapi, kavurma ve kuru et menüsü"
+        },
+        {
+          "title": "Harbiyiyorum — İstanbul Balkan Lokantaları",
+          "url": "https://harbiyiyorum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Feneryolu’nda gerçek Balkan köftesi ve yumuşak dana kavurma sunan yerel dükkan"
+        },
+        {
+          "title": "Müdavim — Balkan Kavurma & Cevapi",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kavurmalı çorbası, irmik helvası ve doyurucu porsiyonlarıyla 4.9 puanda"
+        }
+      ],
+      "pros": [
+        "Yumuşak dana kavurma ve otantik Boşnak cevapi",
+        "Bol porsiyon ve samimi aile servisi"
+      ],
+      "cons": [
+        "Küçük dükkan kapasitesi nedeniyle öğle vakti doluluk"
+      ],
+      "uncertainties": [
+        "Günlük kavurma ve çorba çeşitleri akşam erken saatte azalabilir."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fen-bake-bar",
+      "categoryId": "denemelisin",
+      "resolvedName": "Bake Bar",
+      "branchName": "Feneryolu, Kuyubaşı Sk. 9c, 34724 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJ61QIrwjHyhQRG7chRQRmWn8",
+      "coordinates": {
+        "lat": 40.9844678,
+        "lng": 29.0503707
+      },
+      "rating": 4.7,
+      "userRatingCount": 531,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9176759359246546715",
+      "recommendedPrimary": [
+        "Belçika Çikolatalı Dolgulu Cookie",
+        "Antep Fıstıklı veya Oreo Dolgulu Kurabiye",
+        "Fırın Brownie"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Filtre Kahve & Mini Kurabiye Kutusu",
+          "note": "Tatlı molasında kurabiyenin şeker dengesini tamamlayan sade kahve eşleşmesi.",
+          "proof": "Kadıköy tatlı ve kurabiye rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt fırın tezgahı ve al-götür ağırlıklı düzen",
+        "crowdAndNoise": "Öğleden sonra ve akşam tatlı krizi için uğrayan genç kitleyle canlı",
+        "disadvantage": "Küçük fırın-bar yerleşimi uzun oturmadan ziyade sıcak kurabiye molası ve paket alıma uygundur.",
+        "transit": "Feneryolu Kuyubaşı Sokak No:9C’de Fahrettin Kerim Gökay Caddesi hemen yanında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "The Magger — Kadıköy Butik Kurabiyecileri",
+          "url": "https://www.themagger.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Feneryolu Kuyubaşı’nda taze pişen dolgulu kurabiyeleriyle tanınan fırın"
+        },
+        {
+          "title": "Müdavim — Bake Bar Feneryolu",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur dokusu ve yoğun çikolata dengesiyle yüksek ziyaretçi beğenisi topluyor"
+        }
+      ],
+      "pros": [
+        "Şef tekniğiyle günlük taze pişen kurabiyeler",
+        "Beş yüzü aşkın değerlendirmede 4.7 istikrarı"
+      ],
+      "cons": [
+        "Uzun oturuma uygun geniş cafe alanı bulunmuyor"
+      ],
+      "uncertainties": [
+        "Bazı özel dolgulu kurabiye tepsileri çıkış saatine bağlı tükenebilir."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "fen-il-fico-gelato",
+      "categoryId": "denemelisin",
+      "resolvedName": "İl Fico Gelato",
+      "branchName": "Feneryolu Mah. Mustafa Mazhar Bey Sok. Gökalp Apt, Feneryolu, no:43/A, 34000 Kadıköy/İstanbul, Türkiye",
+      "placeId": "ChIJq7KRCG_HyhQR1he3GwSUJbA",
+      "coordinates": {
+        "lat": 40.9797559,
+        "lng": 29.0529065
+      },
+      "rating": 4.5,
+      "userRatingCount": 340,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.ilficogelato.com/",
+      "mapsUri": "https://maps.google.com/?cid=12692713870179375062",
+      "recommendedPrimary": [
+        "Mevsim Meyveli Sorbe & Gelato",
+        "Antep Fıstıklı Gelato",
+        "Bitter Çikolatalı Gelato"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Şef İmzalı Tereyağlı Pastane Tatlıları",
+          "note": "Dondurma tezgahının yanında günlük hazırlanan özenli fırın ve krema tatlıları.",
+          "proof": "ilficogelato.com ve semt müdavim notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Gel-al dondurma tezgahı ve kapı önü kısa oturma alanı",
+        "crowdAndNoise": "Özellikle yaz akşamları semt sakinleriyle canlı",
+        "disadvantage": "Oturma alanı oldukça kısıtlıdır; dondurma alıp Feneryolu veya Özgürlük Parkı yönünde yürüyüş yapmak için daha uygundur.",
+        "transit": "Feneryolu Mustafa Mazharbey Sokak No:43/A’da Özgürlük Parkı yürüyüş güzergahında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "İl Fico Gelato Resmi Sitesi",
+          "url": "https://www.ilficogelato.com/",
+          "date": "2026-11-14",
+          "kind": "operator",
+          "note": "Doğal meyveli artizan gelato ve butik tatlı üretimi"
+        },
+        {
+          "title": "Oggusto — İstanbul Artizan Gelato Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Datça kökenli doğal içerikli gelato ve şef tatlılarını Feneryolu’na taşıyan adres"
+        },
+        {
+          "title": "Müdavim — İl Fico Gelato Feneryolu",
+          "url": "https://mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yapay aroma kullanılmayan doğal tatlıları ve tereyağlı hamur işleriyle övülüyor"
+        }
+      ],
+      "pros": [
+        "Gerçek meyve ve hakiki süt-tereyağı içerikleri",
+        "Dondurma kadar şef tatlılarıyla da övgü topluyor"
+      ],
+      "cons": [
+        "Al-götür dükkan ölçeği nedeniyle oturma kapasitesi sınırlı"
+      ],
+      "uncertainties": [
+        "Meyve bazlı sorbe çeşitleri mevsime göre değişmektedir."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    }
+  ]
+}

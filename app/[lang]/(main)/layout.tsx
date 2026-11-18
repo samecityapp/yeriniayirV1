@@ -1,24 +1,30 @@
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
-import { CookieBanner } from '@/components/ui/CookieBanner';
+import {isLocalFoodPreview} from '@/lib/food/localPreview';
 import { getDictionary } from '@/lib/dictionary';
 
-export default async function PublicLayout({
-    children,
-    params,
-}: {
-    children: React.ReactNode;
-    params?: { lang: string };
-}) {
-    const lang = params?.lang as 'tr' | 'en' || 'tr';
-    const dict = await getDictionary(lang);
+export default async function PublicLayout(
+    props: {
+        children: React.ReactNode;
+        params?: Promise<{ lang: string }>;
+    }
+) {
+    const params = await props.params;
+
+    const {
+        children
+    } = props;
+
+    const lang = (params?.lang as 'tr' | 'en') || 'tr';
+    const preview = await isLocalFoodPreview();
+    const [{PublicLayoutWrapper},{Footer},dict]=await Promise.all([import('@/components/PublicLayoutWrapper'),import('@/components/Footer'),getDictionary(lang)]);
 
     return (
-        <>
-            <Header lang={lang} />
-            <main className="min-h-[100dvh]">{children}</main>
-            <Footer lang={lang} />
-            <CookieBanner dict={dict} />
-        </>
+        <PublicLayoutWrapper
+            preview={preview}
+            lang={lang}
+            dict={dict}
+            footer={<Footer lang={lang} localPreview={preview} />}
+        >
+            {children}
+        </PublicLayoutWrapper>
     );
 }

@@ -1,0 +1,778 @@
+{
+  "schemaVersion": 3,
+  "verifiedAt": "2026-11-17T15:05:28.268Z",
+  "region": {
+    "id": "iskenderun-merkez",
+    "slug": "iskenderun",
+    "city": "Hatay",
+    "district": "İskenderun",
+    "neighborhood": "İskenderun Merkez",
+    "officialQuarter": "Savaş, Yenişehir, Cumhuriyet, Kurtuluş, Çay, Hürriyet, Barbaros, Meydan, Süleymaniye, Pirireis, Dumlupınar, Muradiye, Numune, Mustafa Kemal & Sakarya",
+    "displayName": "İskenderun Merkez",
+    "locative": "İskenderun Merkez'de",
+    "path": [
+      "hatay",
+      "iskenderun"
+    ],
+    "aliases": [
+      "İskenderun Merkez",
+      "İskenderun",
+      "Iskenderun",
+      "İskenderun Sahil",
+      "Iskenderun Sahil",
+      "İskenderun Çarşı",
+      "Savaş Mahallesi İskenderun",
+      "Yenişehir İskenderun",
+      "Pac Meydani",
+      "Paç Meydanı"
+    ],
+    "scopeNote": "İskenderun Şehir Merkezi (Savaş, Yenişehir, Çay, Kurtuluş, Mustafa Kemal) · Doğrulanmış Seçki",
+    "characterSubtitle": "Savaş ve Yenişehir sokaklarından Paç Meydanı, Muradiye ve Mustafa Kemal sahil hattına uzanan özel soslu İskenderun döneri, sıcak tahinli humus, ciğer-kebap, Körfez balığı, közde künefe ve mahalle kahvecileri.",
+    "center": {
+      "lat": 36.5872,
+      "lng": 36.1685
+    },
+    "boundary": {
+      "bbox": {
+        "minLat": 36.555,
+        "maxLat": 36.61,
+        "minLng": 36.142,
+        "maxLng": 36.195
+      }
+    }
+  },
+  "categories": [
+    {
+      "id": "iskenderun-doner",
+      "slug": "iskenderun-doner",
+      "label": "İskenderun Döneri",
+      "title": "Özel Soslu Lavaş, Odun Ateşi Döner & Çarşı Ustaları",
+      "emoji": "🌯",
+      "isMustTry": false
+    },
+    {
+      "id": "humus-meze",
+      "slug": "humus-meze",
+      "label": "Humus & Meze",
+      "title": "Sıcak Tahinli Humus, Bakla & Geleneksel Meze Sofraları",
+      "emoji": "🥣",
+      "isMustTry": false
+    },
+    {
+      "id": "kebap",
+      "slug": "kebap-ocakbasi",
+      "label": "Kebap & Ocakbaşı",
+      "title": "Zırh Kıyma, Ciğer Şiş & Şehir Ocakbaşıları",
+      "emoji": "🥩",
+      "isMustTry": false
+    },
+    {
+      "id": "balik",
+      "slug": "balik-deniz-urunleri",
+      "label": "Balıkçılar",
+      "title": "Körfez Deniz Ürünleri, Mezeler & Sahil Balıkçıları",
+      "emoji": "🐟",
+      "isMustTry": false
+    },
+    {
+      "id": "kunefe",
+      "slug": "kunefe-tatli",
+      "label": "Künefe & Baklava",
+      "title": "Közde Künefe, Katmer & Fıstıklı Tatlı Ustaları",
+      "emoji": "🥮",
+      "isMustTry": false
+    },
+    {
+      "id": "kahve",
+      "slug": "kahve",
+      "label": "Kahve",
+      "title": "Nitelikli Kahve & Semt Kahvecileri",
+      "emoji": "☕",
+      "isMustTry": false
+    },
+    {
+      "id": "denemelisin",
+      "slug": "denemelisin",
+      "label": "Denemelisin",
+      "title": "Mutlaka Denemelisin",
+      "emoji": "⭐",
+      "isMustTry": false
+    }
+  ],
+  "venues": [
+    {
+      "id": "iskenderun-donerci-suleyman-usta",
+      "placeId": "ChIJ95XVkNReLxURNC1L9tjAauA",
+      "name": "Dönerci Süleyman Usta (Sanayi Merkez)",
+      "address": "Muradiye, Mehmet Akif Cd. No:126, 31300 İskenderun/Hatay",
+      "neighborhood": "Mehmet Akif Cd., Muradiye (Sanayi), İskenderun",
+      "categoryId": "iskenderun-doner",
+      "rating": 4.2,
+      "mapsUri": "https://maps.google.com/?cid=16170949450104778036",
+      "coordinates": {
+        "lat": 36.5789922,
+        "lng": 36.1778395
+      },
+      "description": "İskenderun’un adı şehir dışına taşan sokak lezzeti efsanesi; Muradiye Sanayi içindeki merkez tezgâhında yüksek ateşle “leopar desenli” kızaran derili-soslu tavuk dönerini sunuyor.",
+      "whatToOrder": [
+        "Leopar Desenli Özel Soslu Tavuk Döner",
+        "Çift Lavaş Sarımsak Soslu Dürüm"
+      ],
+      "menuFrom": [
+        "Özel Soslu Tavuk Döner",
+        "Zurna Dürüm",
+        "Kızarmış Patates İlaveli",
+        "Şalgam"
+      ],
+      "alsoTry": [
+        "Basın & Gastronomi Literatüründe Sanayi Döneri — Seyyar/sanayi kökenli ustalığı ulusal gastronomi yazılarında ve yemek belgesellerinde sıkça örnek gösteriliyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Sanayi içi esnaf tarzı iç salon ve hızlı ayakta/dış masa düzeni · Özellikle öğle saatlerinde şehir dışı ziyaretçiler dahil yoğun kuyruk",
+        "Dezavantaj: Sanayi bölgesindeki çok yüksek sirkülasyon ve yoğun sos kullanımı sade ve hafif tat arayanlara ağır gelebiliyor.",
+        "Ulaşım: Muradiye Mahallesi Mehmet Akif Caddesi No:126 (Sanayi Sitesi içi), İskenderun.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "iskenderun-asmaca-doner",
+      "placeId": "ChIJC0TZehVZLxURmDodi5TB7P0",
+      "name": "Asmaça Döner Rıdvan Usta",
+      "address": "Mithatpaşa Cad. No:53, Kurtuluş, Millet Parkı Otopark Karşısı, 31200 İskenderun/Hatay",
+      "neighborhood": "Mithatpaşa Cd., Kurtuluş, İskenderun",
+      "categoryId": "iskenderun-doner",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=18297212229832751768",
+      "coordinates": {
+        "lat": 36.5872552,
+        "lng": 36.1655504
+      },
+      "description": "Kurtuluş Mithatpaşa Caddesi Millet Parkı karşısında İskenderun ve Antakya usulü özel sarımsaklı mayonezi, közlenmiş biber-domatesli sosu ve çıtır lavaşıyla öne çıkan köklü şehir dönercisi.",
+      "whatToOrder": [
+        "İskenderun Usulü Tavuk Döner Dürüm",
+        "Antakya Usulü Bol Soslu Dürüm",
+        "Special Yaprak Döner"
+      ],
+      "menuFrom": [
+        "Tavuk Döner Dürüm",
+        "Et Döner",
+        "Zurna Dürüm",
+        "Patatesli Dürüm",
+        "Turşu Biber"
+      ],
+      "alsoTry": [
+        "Sos & Lavaş Kıvamı Dengesi — Lavaşın hamurlaşmadan iç sosu tutması ve sarımsaklı sosun ağırlaşmaması müdavim tercihlerinde belirleyici."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Kurtuluş cadde içi iç salon ve sade kapı önü masaları · Öğle arası ve akşamüstü gençlerin yoğun akınıyla hızlı masa dönüşü",
+        "Dezavantaj: Pik öğle saatlerinde tezgâh ve kurye yoğunluğundan sipariş sırası uzayabiliyor.",
+        "Ulaşım: Kurtuluş Mahallesi Mithatpaşa Caddesi No:53 (Millet Parkı Otopark karşısı), İskenderun.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "iskenderun-iste-doner",
+      "placeId": "ChIJsW2c4BNZLxURbOq-rbJ--fs",
+      "name": "İste Döner",
+      "address": "Meydan, 505. Sk. No:32, 31200 İskenderun/Hatay",
+      "neighborhood": "505. Sk., Meydan, İskenderun",
+      "categoryId": "iskenderun-doner",
+      "rating": 4.6,
+      "mapsUri": "https://maps.google.com/?cid=18156682678605113964",
+      "coordinates": {
+        "lat": 36.5798968,
+        "lng": 36.159695899999996
+      },
+      "description": "Meydan Mahallesi’nde hem İskenderun usulü hem Antakya usulü soslu tavuk ve yaprak et döner seçeneklerini tombik veya çıtır lavaşla sunan sevilen mahalle dönercisi.",
+      "whatToOrder": [
+        "Antakya Usulü Çift Lavaş Döner",
+        "Yaprak Et Döner Dürüm",
+        "Sosyete / Tombik Döner"
+      ],
+      "menuFrom": [
+        "Tavuk Döner",
+        "Et Döner",
+        "Tombik Ekmek Döner",
+        "Acılı Soslu Dürüm"
+      ],
+      "alsoTry": [
+        "Yaprak Et & Tavuk Alternatifi — Sadece soslu tavuk değil, yaprak et dönerde de yüksek pişirim memnuniyeti yakalamasıyla biliniyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Temiz iç salon masaları ve hızlı servis tezgâhı · Öğle arası üniversite çevresi ve mahalle sakinleriyle canlı",
+        "Dezavantaj: Butik semt ölçeğinde çalıştığı için büyük gruplar için oturum alanı sınırlı.",
+        "Ulaşım: Meydan Mahallesi 505. Sokak No:32 üzerinde Primemall ve üniversite aksına yakın.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "iskenderun-altinsoz-ates-doner",
+      "placeId": "ChIJK4hUq81ZLxURvzGxA2F5yFs",
+      "name": "Altınsöz Ateş Döner",
+      "address": "Yenişehir, Mareşal Fevzi Çakmak Cd. No:18/B, 31200 İskenderun/Hatay",
+      "neighborhood": "Mareşal Fevzi Çakmak Cd., Yenişehir, İskenderun",
+      "categoryId": "iskenderun-doner",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=6613669510374306239",
+      "coordinates": {
+        "lat": 36.591276799999996,
+        "lng": 36.1695159
+      },
+      "description": "Yenişehir Mareşal Fevzi Çakmak Caddesi üzerinde köz ateşinde çevrilen tavuk döneri, özel salça sosu ve ev yapımı sarımsaklı mayoneziyle hızlı çarşı klasiği.",
+      "whatToOrder": [
+        "Ateş Döner Soslu Dürüm",
+        "Hatay Usulü Zurna Dürüm",
+        "Bol Soslu Kaşarlı Tavuk Döner"
+      ],
+      "menuFrom": [
+        "Ateş Tavuk Döner",
+        "Zurna Dürüm",
+        "Hatay Usulü Sos",
+        "Ayran & Şalgam"
+      ],
+      "alsoTry": [
+        "Merkezi Çarşı İçi Hızlı Döner Noktası — Sahile ve Savaş-Yenişehir yürüyüş aksına birkaç adım mesafede sıcak ve soslu İskenderun döneri sunuyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Küçük dükkân içi hızlı oturum ve dış cadde masaları · Gün boyu çarşı gezginleri ve esnafla sürekli hareketli",
+        "Dezavantaj: Günün işlek saatlerinde cadde kalabalığı içinde hızlı ve dar oturum düzeni.",
+        "Ulaşım: Yenişehir Mahallesi Mareşal Fevzi Çakmak Caddesi No:18/B üzerinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "iskenderun-humuscu-vahit-usta",
+      "placeId": "ChIJb3CaYSRZLxURbHSKWQlaboU",
+      "name": "Humusçu Vahit Usta",
+      "address": "Cumhuriyet, Yavuz Sultan Selim Cd., 31200 İskenderun/Hatay",
+      "neighborhood": "Yavuz Sultan Selim Cd., Cumhuriyet, İskenderun",
+      "categoryId": "humus-meze",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=9614721250686039148",
+      "coordinates": {
+        "lat": 36.5884984,
+        "lng": 36.1618466
+      },
+      "description": "Cumhuriyet Mahallesi’nde sıcak güveç tabağında köpüren tereyağlı, pastırmalı ve zeytinyağlı tahinli humusuyla İskenderun’da humus dendiğinde ilk işaret edilen köklü esnaf durağı.",
+      "whatToOrder": [
+        "Tereyağlı Sıcak Humus",
+        "Pastırmalı Humus",
+        "Zeytinyağlı Çekme Humus"
+      ],
+      "menuFrom": [
+        "Sade Tereyağlı Humus",
+        "Pastırmalı Humus",
+        "Sucuklu Humus",
+        "Bakla Ezmesi",
+        "Zeytin & Turşu"
+      ],
+      "alsoTry": [
+        "Kıvamlı Taş Dokusu & Tereyağlı Servis Ritüeli — Sıcacık somun ekmek eşliğinde yenen tereyağlı humus güveci İskenderun sabahlarının en saf yerel ritüellerinden."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Temiz, aydınlık esnaf salonu masaları · Sabah kahvaltısı ve öğle saatlerinde düzenli yerel müdavim akışı",
+        "Dezavantaj: Akşam yemeği yerine gün içi erken ve öğle saatleri için kurgulanmış esnaf dükkanı.",
+        "Ulaşım: Cumhuriyet Mahallesi Yavuz Sultan Selim Caddesi üzerinde İskenderun merkezde.",
+        "Bütçe seviyesi (Google): Ekonomik"
+      ]
+    },
+    {
+      "id": "iskenderun-kebapci-heybet",
+      "placeId": "ChIJ4YpfUi9ZLxURpOG_54FkSfo",
+      "name": "Kebapçı Heybet (Heybet’in Yeri)",
+      "address": "Barbaros, Ziya Gökalp Cd., 31200 İskenderun/Hatay",
+      "neighborhood": "Ziya Gökalp Cd., Barbaros, İskenderun",
+      "categoryId": "kebap",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=18035056691883532708",
+      "coordinates": {
+        "lat": 36.5793515,
+        "lng": 36.1681425
+      },
+      "description": "Barbaros Ziya Gökalp Caddesi’nde taze kuzu ciğer şişi, közde kıyma kebabı ve hızlı samimi masalarıyla İskenderun akşamlarının sevilen salaş ocakbaşı noktası.",
+      "whatToOrder": [
+        "Kuzu Ciğer Şiş Porsiyon",
+        "Zırh Kıyma Kebap",
+        "Soğan Salatası & Sumaklı Lavaş"
+      ],
+      "menuFrom": [
+        "Kuzu Ciğer Şiş",
+        "Adana Kebap",
+        "Kuşbaşı Kebap",
+        "Köz Soğan",
+        "Ayran"
+      ],
+      "alsoTry": [
+        "Ciğer & Gece Ocakbaşı Geleneği — Ciğer şiş porsiyonlarının kurutulmadan baharatlanıp hızlıca masaya gelmesiyle mahalle klasiklerinden."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Sade iç ocakbaşı bölümü ve cadde kaldırım masaları · Akşam saatlerinde ciğer ve kebap müdavimleriyle canlı",
+        "Dezavantaj: Gösterişli dekorasyon yerine tamamen kömür ocağı etrafında şekillenen sade sokak düzeni.",
+        "Ulaşım: Barbaros Mahallesi Ziya Gökalp Caddesi üzerinde, İskenderun merkezde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "iskenderun-seydi-kebap",
+      "placeId": "ChIJP4E9folZLxURPNWzVpY-lsA",
+      "name": "Seydi Kebap",
+      "address": "Talip Apartmanı, Numune, 573. Sk. No:3, 31200 İskenderun/Hatay",
+      "neighborhood": "573. Sk., Numune, İskenderun",
+      "categoryId": "kebap",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=13877348117209404732",
+      "coordinates": {
+        "lat": 36.5679691,
+        "lng": 36.1595382
+      },
+      "description": "Numune Mahallesi’nde özenli zırh kıyması kebapları, yumuşak marine tavuk şişi ve yanında gelen taze közlenmiş garnitürleriyle mahalle sakinlerinin favori kebapçısı.",
+      "whatToOrder": [
+        "Zırh Kıyma Adana Kebap",
+        "Özel Terbiyeli Tavuk Şiş",
+        "Lavaşta Urfa Dürüm"
+      ],
+      "menuFrom": [
+        "Zırh Kıyma Kebap",
+        "Tavuk Şiş",
+        "Kuşbaşı Şiş",
+        "Köz Domates & Soğan"
+      ],
+      "alsoTry": [
+        "Numune’de Temiz Mahalle Ocakbaşısı — Merkez çarşının keşmekeşi dışında temiz pişirim ve dengeli baharat oranıyla dikkat çekiyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Düzenli iç salon masaları · Akşam saatlerinde mahalle aileleri ve paket siparişiyle hareketli",
+        "Dezavantaj: Sahil kesimine göre üst mahalle aksında yer alıyor.",
+        "Ulaşım: Numune Mahallesi 573. Sokak No:3 (Talip Apartmanı altı), İskenderun.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "iskenderun-kebapci-sebahattin",
+      "placeId": "ChIJXZzc5yRZLxURzs5l2eeh9to",
+      "name": "Kebapçı Sebahattin",
+      "address": "Cumhuriyet, Yavuz Sultan Selim Cd. No:63 D:2, 31200 İskenderun/Hatay",
+      "neighborhood": "Yavuz Sultan Selim Cd., Cumhuriyet, İskenderun",
+      "categoryId": "kebap",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=15777976361695956686",
+      "coordinates": {
+        "lat": 36.5883237,
+        "lng": 36.1616512
+      },
+      "description": "Cumhuriyet Yavuz Sultan Selim Caddesi’nde yıllardır değişmeyen esnaf samimiyetiyle hızlı kebap dürümleri ve ızgara porsiyonları hazırlayan köklü lezzet noktası.",
+      "whatToOrder": [
+        "Zırh Kıyma Kebap Dürüm",
+        "Ciğer Şiş Dürüm",
+        "Urfa Kebap Porsiyon"
+      ],
+      "menuFrom": [
+        "Kıyma Kebap",
+        "Ciğer Şiş",
+        "Tavuk Şiş",
+        "Sumaklı Soğanlı Dürüm"
+      ],
+      "alsoTry": [
+        "Gösterişsiz Eski Usul Esnaf Kebabı — Porsiyon dürüstlüğü ve hızlı öğle servisiyle şehir sakinlerinin nesillerdir uğradığı dükkânlardan."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Sade esnaf kebapçısı salonu ve birkaç küçük dış masa · Öğle ve iş çıkışı saatlerinde yerli müdavimlerle dolu",
+        "Dezavantaj: Mütevazı dekorasyona sahip geleneksel esnaf dükkanı; uzun akşam oturumuna göre değil.",
+        "Ulaşım: Cumhuriyet Mahallesi Yavuz Sultan Selim Caddesi No:63/D:2 üzerinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "iskenderun-sishane-ocakbasi",
+      "placeId": "ChIJ-3vktjFZLxURnNJLNbDKsSQ",
+      "name": "Şişhane Ocakbaşı",
+      "address": "Hürriyet, Kanatlı Cd. 31/2, 31200 İskenderun/Hatay",
+      "neighborhood": "Kanatlı Cd., Hürriyet, İskenderun",
+      "categoryId": "kebap",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=2644117314400408220",
+      "coordinates": {
+        "lat": 36.589274599999996,
+        "lng": 36.1684554
+      },
+      "description": "Hürriyet Kanatlı Caddesi’nde şehrin göbeğinde kömür ateşinde zırh kebapları, çöp şişleri ve ikram ezme-salata eşlikçileriyle güvenilir akşam kebabı sunan ocakbaşı.",
+      "whatToOrder": [
+        "Şişhane Özel Kebap",
+        "Kuzu Çöp Şiş",
+        "Bıçak Kıyma Dürüm"
+      ],
+      "menuFrom": [
+        "Zırh Kebap",
+        "Kuşbaşı",
+        "Çöp Şiş",
+        "Ezme & Cacık",
+        "Köz Patlıcan"
+      ],
+      "alsoTry": [
+        "Çarşı Merkezinde Tutarlı Ocakbaşı — Kanatlı Caddesi ve Savaş sınırında hem öğle hem akşam grupları için merkezi buluşma noktası işlevi görüyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: İç ocakbaşı salonu ve cadde kenarı masaları · Öğle iş yemekleri ve akşam saatlerinde hareketli",
+        "Dezavantaj: Yoğun akşam saatlerinde merkez caddenin uğultusu masalara yansıyabiliyor.",
+        "Ulaşım: Hürriyet Mahallesi Kanatlı Caddesi No:31/2 üzerinde çarşı merkezinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "iskenderun-denizce-balikevi",
+      "placeId": "ChIJlThIojFZLxURG_GDdIwS94M",
+      "name": "Denizce Balıkevi Restoran",
+      "address": "Çay, 47. Sk. çok katlı otopark altı no:19, 31200 İskenderun/Hatay",
+      "neighborhood": "47. Sk. (Balık Pazarı Çevresi), Çay, İskenderun",
+      "categoryId": "balik",
+      "rating": 4.3,
+      "mapsUri": "https://maps.google.com/?cid=9509089532675617051",
+      "coordinates": {
+        "lat": 36.589257599999996,
+        "lng": 36.1737562
+      },
+      "description": "Çay Mahallesi Balık Pazarı yanında taze seçilen Körfez balıklarını tava veya ızgarada pişiren, öğle balık çorbası ve salaş balık sofrası geleneğini yaşatan merkez balıkçısı.",
+      "whatToOrder": [
+        "Günlük Pişirim Izgara Barbun / Levrek",
+        "Sıcak Balık Çorbası",
+        "Roka & Tahinli Salata"
+      ],
+      "menuFrom": [
+        "Balık Çorbası",
+        "Izgara Levrek",
+        "Barbun Tava",
+        "Hamsi & İstavrit",
+        "Yeşil Salata"
+      ],
+      "alsoTry": [
+        "Semt Balık Pazarı Yanında Doğrudan Taze Seçim — Tezgâhtan seçilen günlük mevsim balığının birkaç dakikada sıcak pişirimle sofraya gelmesi klasik çarşı ritüeli."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Çok katlı otopark altı çarşı içi balıkçı masaları · Öğle balık çorbası ve akşamüstü taze balık servisiyle canlı",
+        "Dezavantaj: Balık hali yanındaki salaş pişirim düzeni şık akşam restoranı beklentisine göre gürültülü ve sade olabiliyor.",
+        "Ulaşım: Çay Mahallesi 47. Sokak Çok Katlı Otopark altı No:19 (Balık Semt Pazarı yanı), İskenderun.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "iskenderun-marina-et-balik",
+      "placeId": "ChIJpe2DiidZLxURO8au4CAUgM8",
+      "name": "Marina Et Balık Evi",
+      "address": "Mustafa Kemal, Hasan Ali Yücel Cd., 31230 İskenderun/Hatay",
+      "neighborhood": "Hasan Ali Yücel Cd., Mustafa Kemal, İskenderun",
+      "categoryId": "balik",
+      "rating": 4.4,
+      "mapsUri": "https://maps.google.com/?cid=14951972894311106107",
+      "coordinates": {
+        "lat": 36.562522099999995,
+        "lng": 36.1465489
+      },
+      "description": "Mustafa Kemal Mahallesi’nde İskenderun Körfezi’nden gelen günlük levrek, çupra ve deniz ürünlerini Hatay mezeleri ve ara sıcaklarla oturumlu sofralarda sunan restoran.",
+      "whatToOrder": [
+        "Mevsim Körfez Levreği / Çuprası",
+        "Tereyağlı Karides & Kalamar",
+        "Hatay Mezeleri"
+      ],
+      "menuFrom": [
+        "Levrek",
+        "Çupra",
+        "Kalamar Tava",
+        "Karides Güveç",
+        "Humus & Muhammara"
+      ],
+      "alsoTry": [
+        "Hem Deniz Ürünü Hem Et Alternatifi — Kalabalık sofralarda balık tercih etmeyen misafirler için de temiz hazırlanmış ızgara seçenekleri sunmasıyla kullanışlı."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Kapalı düzenli restoran salonu ve açık teras kısmı · Akşam yemeklerinde aileler ve iş gruplarıyla dengeli kalabalık",
+        "Dezavantaj: Atatürk Bulvarı sahil sıfırına göre biraz daha iç bulvarda yer alıyor.",
+        "Ulaşım: Mustafa Kemal Mahallesi Hasan Ali Yücel Caddesi üzerinde İskenderun merkezde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "iskenderun-damak-kunefe",
+      "placeId": "ChIJq6P2KwBZLxUR2lqO17eu54o",
+      "name": "Damak Künefe",
+      "address": "Ezra apt, Mustafa Kemal, 1013 sok no 4 B no:1, 31110 İskenderun/Hatay",
+      "neighborhood": "1013. Sk., Mustafa Kemal, İskenderun",
+      "categoryId": "kunefe",
+      "rating": 5,
+      "mapsUri": "https://maps.google.com/?cid=10009160801472895706",
+      "coordinates": {
+        "lat": 36.569364900000004,
+        "lng": 36.156351
+      },
+      "description": "Mustafa Kemal Mahallesi’nde birinci sınıf tereyağı, özel tuzsuz Hatay peyniri ve bol Antep fıstığıyla hazırladığı sıcak tepsi künefesiyle zincirlerin dışında kalitesini koruyan bağımsız İskenderun tatlıcısı.",
+      "whatToOrder": [
+        "Porsiyon Peynirli Antakya Künefe",
+        "Fıstıklı İrmik Helvası",
+        "Çıtır Kabak Tatlısı & Katmer"
+      ],
+      "menuFrom": [
+        "Porsiyon Künefe",
+        "Fıstıklı Künefe",
+        "Katmer",
+        "Fıstıklı İrmik Helvası",
+        "Çıtır Kabak Tatlısı"
+      ],
+      "alsoTry": [
+        "Fıstık Kalitesi & Tatlı Çeşitliliği — Künefenin yanı sıra taş kıvamında tahinli çıtır kabak tatlısı ve sıcak fıstıklı irmik helvasıyla da sıkça övülüyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Temiz, düzenli kapalı salon ve küçük dış masa alanı · Akşam yemek sonrası tatlı saatlerinde mahalle sakinleriyle yoğun",
+        "Dezavantaj: Sahil bulvarından içeride, Mustafa Kemal konut aksı üzerinde yer alıyor.",
+        "Ulaşım: Mustafa Kemal Mahallesi 1013. Sokak No:4/B (Ezra Apt.), İskenderun."
+      ]
+    },
+    {
+      "id": "iskenderun-northeast-cafe",
+      "placeId": "ChIJLSXqNXVZLxURh1IVtHwucGo",
+      "name": "Northeast Cafe",
+      "address": "Savaş, 40. Sk. no:1/C, 31200 İskenderun/Hatay",
+      "neighborhood": "40. Sk., Savaş, İskenderun",
+      "categoryId": "kahve",
+      "rating": 4.9,
+      "mapsUri": "https://maps.google.com/?cid=7669681278544073351",
+      "coordinates": {
+        "lat": 36.5912728,
+        "lng": 36.170314
+      },
+      "description": "Savaş Mahallesi 40. Sokak’ta özenli espresso bazlı soğuk-sıcak kahveleri, özellikle Antep fıstıklı özel içecekleri ve taze kruvasan eşlikçileriyle merkezdeki sevilen kahve noktası.",
+      "whatToOrder": [
+        "Ice Pistachio Latte",
+        "Iced Americano",
+        "Küp Kruvasan"
+      ],
+      "menuFrom": [
+        "Pistachio Latte",
+        "Espresso",
+        "Iced Mocha",
+        "Küp Kruvasan",
+        "Tatlı Eşlikçiler"
+      ],
+      "alsoTry": [
+        "Taze Kruvasan & Soğuk Bar Uyumu — Kahvelerin yanında günlük çıkan küp ve çikolatalı kruvasan çeşitleriyle öğleden sonra kahve molasını zenginleştiriyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Modern ve ferah iç kafe oturumu ile sokak masaları · Öğleden sonra ve akşam genç kitleyle hareketli",
+        "Dezavantaj: Küçük sokak yapısı nedeniyle çevre kahvehanelerden gelen gürültü ve yoğunluk hissedilebiliyor.",
+        "Ulaşım: Savaş Mahallesi 40. Sokak No:1/C üzerinde sahil Atatürk Bulvarı’na paralel konumda.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "iskenderun-batura-coffee",
+      "placeId": "ChIJn1BO2QZfLxURPQhXdciygQA",
+      "name": "Batura Coffee",
+      "address": "Sakarya, 1895 sokak no9/C, 31200 İskenderun/Hatay",
+      "neighborhood": "1895. Sk., Sakarya, İskenderun",
+      "categoryId": "kahve",
+      "rating": 4.8,
+      "mapsUri": "https://maps.google.com/?cid=36506846027515965",
+      "coordinates": {
+        "lat": 36.585412999999996,
+        "lng": 36.182415299999995
+      },
+      "description": "Sakarya Mahallesi’nde çarşı gürültüsünün dışında özgün tematik tasarımı, özenle çekilen espresso bazlı kahveleri ve sakin misafirperverliğiyle öne çıkan butik kahve dükkânı.",
+      "whatToOrder": [
+        "Flat White",
+        "Iced Latte",
+        "Cortado"
+      ],
+      "menuFrom": [
+        "Espresso",
+        "Flat White",
+        "Filtre Kahve",
+        "Soğuk Kahveler"
+      ],
+      "alsoTry": [
+        "Tematik Atmosfer & Sakin Çalışma Alanı — Dikkat çekici iç mekân tasarımıyla çarşı kafelerinden ayrışıp daha dingin bir kahve deneyimi sunuyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Konsept iç salon masaları ve sakin köşeler · Özellikle öğleden sonra çalışma ve kahve sohbeti gruplarıyla canlı",
+        "Dezavantaj: Sakarya Mahallesi konut bölgesinde kaldığından merkez çarşıdan kısa sürüş gerektiriyor.",
+        "Ulaşım: Sakarya Mahallesi 1895. Sokak No:9/C, İskenderun.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "iskenderun-florian-cafe",
+      "placeId": "ChIJ3azO-vhZLxURuGufZC2K0J8",
+      "name": "Florian Cafe İskenderun",
+      "address": "Mustafa Kemal, Hasan Ali Yücel Cd. 15/A, 31230 İskenderun/Hatay",
+      "neighborhood": "Hasan Ali Yücel Cd., Mustafa Kemal, İskenderun",
+      "categoryId": "kahve",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=11515856174752689080",
+      "coordinates": {
+        "lat": 36.5713751,
+        "lng": 36.1569773
+      },
+      "description": "Mustafa Kemal Hasan Ali Yücel Caddesi’nde klasik müzik ve sanat dokusunu nitelikli kahve çeşitleri ve el yapımı crème brûlée tatlısıyla buluşturan bağımsız yerel kafe.",
+      "whatToOrder": [
+        "Filtre Kahve & Espresso",
+        "Karamelize Crème Brûlée",
+        "Ice Americano"
+      ],
+      "menuFrom": [
+        "Filtre Kahve",
+        "Latte",
+        "Crème Brûlée",
+        "Artisan Çaylar",
+        "Soğuk İçecekler"
+      ],
+      "alsoTry": [
+        "Klasik Müzik & Sakin Çalışma/Okuma Kimliği — Bölgedeki büyük zincir ve nargile kafelerinden farklı olarak müziği ve tatlı sunumuyla butik bir buluşma noktası."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Sanat temalı iç mekân masaları ve düzenli kafe oturumu · Ders çalışma ve sakin sohbet saatlerinde dengeli doluluk",
+        "Dezavantaj: İstanbul’daki aynı adlı pasta zincirinden bağımsız, yerel İskenderun konseptli tek nokta olarak çalışıyor.",
+        "Ulaşım: Mustafa Kemal Mahallesi Hasan Ali Yücel Caddesi No:15/A, İskenderun.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "iskenderun-coffee-mulhem",
+      "placeId": "ChIJg9OOBJNZLxURAp_Kn19W0Fk",
+      "name": "Coffee Mülhem",
+      "address": "Süryani Katolik kilisesi yanı, Yenişehir, Ziya Gökalp Cd. 26/a, 31200 İskenderun/Hatay",
+      "neighborhood": "Ziya Gökalp Cd., Yenişehir, İskenderun",
+      "categoryId": "kahve",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=6471767633234140930",
+      "coordinates": {
+        "lat": 36.589292,
+        "lng": 36.168934
+      },
+      "description": "Yenişehir Ziya Gökalp Caddesi üzerinde tarihî Süryani Katolik Kilisesi yanında yer alan, sakin atmosferi ve dengeli kahveleriyle merkez yürüyüşlerinin vazgeçilmez molası.",
+      "whatToOrder": [
+        "Türk Kahvesi / Süvari",
+        "Flat White",
+        "Iced Latte"
+      ],
+      "menuFrom": [
+        "Espresso Çeşitleri",
+        "Türk Kahvesi",
+        "Soğuk Kahveler",
+        "Taze İçecekler"
+      ],
+      "alsoTry": [
+        "Tarihî Sokak Dokusu & Merkez Erişimi — Sahile ve Ziya Gökalp yürüyüş aksına yakın konumuyla kalabalık meydandan birkaç dakika içinde nefes aldırıyor."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Butik iç salon ve cadde kenarı samimi masalar · Gün içi merkez gezintilerinde dengeli yerel ziyaretçi trafiği",
+        "Dezavantaj: Mütevazı metrekareye sahip butik bir kahve noktası olduğundan kalabalık gruplara uygun değil.",
+        "Ulaşım: Yenişehir Mahallesi Ziya Gökalp Caddesi No:26/A (Süryani Katolik Kilisesi yanı), İskenderun."
+      ]
+    },
+    {
+      "id": "iskenderun-omran-kahve",
+      "placeId": "ChIJS_dIdyZZLxURaroO6mewXjA",
+      "name": "Omran Kahve",
+      "address": "Cumhuriyet, Mithatpaşa Cd. No:64, 31200 İskenderun/Hatay",
+      "neighborhood": "Mithatpaşa Cd., Cumhuriyet, İskenderun",
+      "categoryId": "denemelisin",
+      "rating": 4.7,
+      "mapsUri": "https://maps.google.com/?cid=3485417121986296426",
+      "coordinates": {
+        "lat": 36.5842186,
+        "lng": 36.1629724
+      },
+      "description": "Cumhuriyet Mithatpaşa Caddesi’nde taze kavrulan Türk kahvesi, kakuleli kahve çekirdekleri ve kendine özgü nostaljik atmosferiyle tanınan İskenderun kahve dükkânı.",
+      "whatToOrder": [
+        "Taze Çekilmiş Kakuleli Türk Kahvesi",
+        "Orta Kavrum Çekirdek Kahve Paketi",
+        "Sıcak Dibek"
+      ],
+      "menuFrom": [
+        "Türk Kahvesi Çeşitleri",
+        "Kakuleli Kahve",
+        "Kavrulmuş Çekirdek",
+        "Bitki Çayları"
+      ],
+      "alsoTry": [
+        "Taze Kavrum & Paket Alışveriş Durağı — Kafe oturumundan öte şehrin karakteristik taze çekilmiş kahve ve baharat kokusunu eve götürmek isteyenlerin adresi."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Al-götür ve tadım ağırlıklı tarihî kahve/kuruyemiş dükkânı (sınırlı tabure) · Gün boyu çekirdek kahve ve ikramlık alışverişi yapan yerlilerle canlı",
+        "Dezavantaj: Oturmalı kafe yerine çekirdek kavrum ve hızlı kahve sunumu öncelikli.",
+        "Ulaşım: Cumhuriyet Mahallesi Mithatpaşa Caddesi No:64 üzerinde merkez yürüyüş aksında.",
+        "Bütçe seviyesi (Google): Ekonomik"
+      ]
+    },
+    {
+      "id": "iskenderun-belgin-abla-mutfagi",
+      "placeId": "ChIJvbkbpy9ZLxURJYLztMbtUEw",
+      "name": "Belgin Abla Mutfağı",
+      "address": "Yenişehir, 19. Sk. No:20, 31200 İskenderun/Hatay",
+      "neighborhood": "19. Sk., Yenişehir, İskenderun",
+      "categoryId": "denemelisin",
+      "rating": 4.5,
+      "mapsUri": "https://maps.google.com/?cid=5499156582714540581",
+      "coordinates": {
+        "lat": 36.5900679,
+        "lng": 36.169110599999996
+      },
+      "description": "Yenişehir 19. Sokak’ta İskenderun’un hızlı döner ve kebap temposunun içinde gerçek anne eli Hatay ev yemeklerini, içli köfteyi, sarmayı ve zeytinyağlı tencere lezzetlerini yaşatan aile mutfağı.",
+      "whatToOrder": [
+        "Günün Hatay Ev Yemeği Tabağı",
+        "Haşlama & Kızartma İçli Köfte (Oruk)",
+        "Zeytinyağlı Yaprak Sarma"
+      ],
+      "menuFrom": [
+        "İçli Köfte (Oruk)",
+        "Yaprak Sarma",
+        "Aşur / Analı Kızlı",
+        "Tepsi Yemekleri",
+        "Zeytinyağlılar"
+      ],
+      "alsoTry": [
+        "Ev Pişirimi Tencere & Zeytinyağlı Geleneği — Şehir dışından gelen ziyaretçilerin ağır kebap sonrası ev yapımı yöresel tat bulabileceği nadir aile işletmelerinden."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Samimi küçük aile lokantası masaları · Öğle saatlerinde bölge çalışanları ve ev yemeği müdavimleriyle dolu",
+        "Dezavantaj: Gündüz ve erken akşam tencere menüsü bittiğinde servis sonlanıyor.",
+        "Ulaşım: Yenişehir Mahallesi 19. Sokak No:20 (Ziya Gökalp Caddesi çevresi), İskenderun.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    },
+    {
+      "id": "iskenderun-mavi-kose-doner",
+      "placeId": "ChIJsQMSuDFZLxUReRAktCuJSkc",
+      "name": "Mavi Köşe Döner (1975)",
+      "address": "Savaş, Ziya Gökalp Cd. No:43, 31200 İskenderun/Hatay",
+      "neighborhood": "Ziya Gökalp Cd., Savaş, İskenderun",
+      "categoryId": "denemelisin",
+      "secondaryCategoryIds": [
+        "iskenderun-doner"
+      ],
+      "rating": 4,
+      "mapsUri": "https://maps.google.com/?cid=5137069145768333433",
+      "coordinates": {
+        "lat": 36.58892,
+        "lng": 36.168862
+      },
+      "description": "Savaş Mahallesi Ziya Gökalp Caddesi’nde 1975’ten bu yana “gerçek et, gerçek tavuk” anlayışıyla klasik İskenderun dürüm ve ekmek arası döner kültürünü sürdüren tarihî köşe dükkânı.",
+      "whatToOrder": [
+        "1975 Klasik İskenderun Et Döner",
+        "Özel Soslu Tavuk Döner Dürüm"
+      ],
+      "menuFrom": [
+        "Klasik Et Döner",
+        "Soslu Tavuk Döner",
+        "Porsiyon İskenderun Döneri"
+      ],
+      "alsoTry": [
+        "Yarım Asırlık Merkez Köşe Dükkânı — Zincir soslu döner akımından çok daha eski, İskenderun çarşısının hafızasında yer etmiş köklü ustalık geleneği."
+      ],
+      "beforeYouGo": [
+        "Oturma & Servis: Tarihî köşe dükkân içi hızlı esnaf masaları · Gündüz çarşı kalabalığı içinde hızlı ve yoğun döner trafiği",
+        "Dezavantaj: Yarım asırlık yoğun öğle temposu ve eski çarşı düzeni nedeniyle zaman zaman servis puanlarında dalgalanma görülüyor.",
+        "Ulaşım: Savaş Mahallesi Ziya Gökalp Caddesi No:43 üzerinde çarşı merkezinde.",
+        "Bütçe seviyesi (Google): Orta"
+      ]
+    }
+  ],
+  "nearbyVenues": []
+}

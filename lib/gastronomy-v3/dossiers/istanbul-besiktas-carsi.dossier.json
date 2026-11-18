@@ -1,0 +1,1988 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "istanbul-besiktas-carsi",
+  "displayName": "Beşiktaş Çarşı, Beşiktaş, İstanbul",
+  "verifiedAt": "2026-11-15T10:05:47.193Z",
+  "selectedCount": 28,
+  "rejectedControls": [
+    {
+      "id": "ctrl-bes-vogue-closed-temp",
+      "resolvedName": "Vogue Restaurant & Bar",
+      "reason": "not_operational:CLOSED_TEMPORARILY"
+    },
+    {
+      "id": "ctrl-bes-house-of-b-chain",
+      "resolvedName": "House of B",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bes-pizza-krema-chain",
+      "resolvedName": "Pizza Krema Akaretler",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bes-fres-burger-chain",
+      "resolvedName": "Fres Burger Akaretler",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bes-balkan-chain",
+      "resolvedName": "Balkan Lokantası",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bes-the-co-chain",
+      "resolvedName": "THE CO. COFFEE AKARETLER",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-bes-lavie-kahve-purity",
+      "resolvedName": "La Vie Praline",
+      "reason": "kahve_category_not_coffee_specialist:chocolate_shop"
+    },
+    {
+      "id": "ctrl-bes-bargozzy-nisantasi-outside",
+      "resolvedName": "Bargozzy",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Sinanpaşa/Türkali/Cihannüma/Abbasağa/Yıldız, adres: Teşvikiye, Ahmet Fetgeri Sok. 9/A, 34365 Şişli/İstanbul, Türkiye)"
+    },
+    {
+      "id": "ctrl-bes-carsi-balik-below-44",
+      "resolvedName": "BEŞİKTAŞ ÇARŞI BALIK RESTAURANT",
+      "reason": "below_quality_threshold:★3.4(329)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "bes-sprout",
+      "categoryId": "pizza",
+      "resolvedName": "Sprout",
+      "branchName": "Türkali, Şair Nedim Cd. 62/A, 34357 Beşiktaş/İstanbul",
+      "placeId": "ChIJ62GSh623yhQRWUkcNRLgtiU",
+      "coordinates": {
+        "lat": 41.0450526,
+        "lng": 29.000348
+      },
+      "rating": 4.9,
+      "userRatingCount": 314,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2717605793969752409",
+      "recommendedPrimary": [
+        "Mantar & İsli Çerkes Peynirli Pizza Pala",
+        "Kuzu Cotto & Bergama Tulumlu Pizza",
+        "Ricotta & Kasap Sucuklu Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yedikule Sezar Salata & İsli Paprikalı Ezilmiş Patates",
+          "note": "Uzun fermente Roma usulü çıtır pizza pala dilimlerinin yanına yerel malzemeli taze başlangıç eşlikçisi.",
+          "proof": "Beşiktaş gastronomi rehberleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş ve ahşap detaylı şık iç salon ve Şair Nedim köşesinde açık kaldırım masaları",
+        "crowdAndNoise": "Kaliteli hamur ve özenli şarküteri malzemesi arayan semt müdavimleri",
+        "disadvantage": "Akşam yemeği ve hafta sonu saatlerinde dış masalar kısa sürede dolabiliyor.",
+        "transit": "Türkali ve Şair Nedim Caddesi kesişimindeki alt blokta."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Beşiktaş Artizan Pizzacılar",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Anadolu peynirlerini Roma tipi pizza pala hamuruyla birleştiren özgün Şair Nedim durağı"
+        },
+        {
+          "title": "Beşiktaş Gastronomi Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hamur hafifliği ve yenilikçi malzeme eşleşmeleriyle olağanüstü beğeni topluyor"
+        }
+      ],
+      "pros": [
+        "Çıtır kenarlı ve kolay sindirilen uzun fermente pizza pala tekniği",
+        "Yerel Çerkes ve Bergama peynirlerinin dengeli kullanımı"
+      ],
+      "cons": [
+        "Pala formatı porsiyon olarak kişi başı veya paylaşımlı seçim gerektiriyor"
+      ],
+      "uncertainties": [
+        "Mevsimsel özel malzemeli pizza seçenekleri tedarike göre yenilenebilir."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-pizza-circasso",
+      "categoryId": "pizza",
+      "resolvedName": "Pizza Circasso",
+      "branchName": "Sinanpaşa, Şair Veysi Sk. No:43, 34353 Beşiktaş/İstanbul",
+      "placeId": "ChIJRx1836K3yhQRsV6wqWPBGBw",
+      "coordinates": {
+        "lat": 41.0443882,
+        "lng": 29.002318600000002
+      },
+      "rating": 4.7,
+      "userRatingCount": 371,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2024580666295869105",
+      "recommendedPrimary": [
+        "İsli Çerkes Peynirli Dört Peynir Pizza",
+        "Circasso Special (Dana Füme & Pepperoni)",
+        "Trüf Yağlı Üç Mantarlı Funghi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Antep Fıstıklı Pesto Soslu Pizza & Taze Roka Eşlikçisi",
+          "note": "Yöresel Çerkes peyniri dokunuşlu ince hamur pizzaları paylaşırken masaya farklı aroma katan ikincil seçenek.",
+          "proof": "Beşiktaş bağımsız pizzacı seçkileri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt iç salon masaları ve Şair Veysi Sokak boyunca samimi dış masa düzeni",
+        "crowdAndNoise": "Çarşı içinde zincir yerine sıcak mahalle pizzacısı tercih eden öğrenciler ve semt sakinleri",
+        "disadvantage": "Sokak içi küçük ölçeği nedeniyle maç günleri ve akşam yemeklerinde yer beklemek gerekebiliyor.",
+        "transit": "Sinanpaşa Köyiçi içindeki Şair Veysi Sokak üzerinde, Ihlamurdere girişine yakın."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Time Out İstanbul — Beşiktaş Yeme-İçme Rehberi",
+          "url": "https://www.timeout.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "İsli Çerkes peyniri ve trüf mantarlı hamurlarıyla çarşı içinde ayrışan bağımsız pizzacı"
+        },
+        {
+          "title": "Beşiktaş Mahalle Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Fiyat-malzeme dengesi ve ince hamuruyla çarşıda yüksek tercih oranına sahip"
+        }
+      ],
+      "pros": [
+        "Özgün isli Çerkes peyniri eşleşmeleri ve taze malzeme bolluğu",
+        "Merkezi çarşı içinde sıcak ve hızlı servis"
+      ],
+      "cons": [
+        "Geniş kalabalık masalar için oturma düzeni dar kalabiliyor"
+      ],
+      "uncertainties": [
+        "Dönemsel pesto ve şarküteri çeşitleri mutfak hazırlığına göre güncellenebilir."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-pizza-wich",
+      "categoryId": "pizza",
+      "resolvedName": "Pizza Wich Beşiktaş",
+      "branchName": "Sinanpaşa, Şht. Asım Cd. 24/A, 34340 Beşiktaş/İstanbul",
+      "placeId": "ChIJIw8Pf7u3yhQR8FXRvnxzO1Q",
+      "coordinates": {
+        "lat": 41.043883,
+        "lng": 29.004415299999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 183,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6069571902426404336",
+      "recommendedPrimary": [
+        "Köz Patlıcanlı Anatolian Pizza",
+        "Mediterranean Ricotta Pizza",
+        "Taze Dilim Margherita"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Dört Peynirli Sıcak Dilim & Fesleğen Soslu Eşlikçi",
+          "note": "Şehit Asım Caddesi’nde hızlı çarşı temposunda fırından taze çıkan dilim çeşitlerini birlikte deneme imkanı.",
+          "proof": "Beşiktaş Çarşı sokak lezzet rehberleri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Pratik al-götür tezgahı, tabureli duvar barı ve hızlı masa düzeni",
+        "crowdAndNoise": "Vapur–otobüs geçişinde hızlı dilim ya da arkadaş grubuyla büyük boy pizza alanlar",
+        "disadvantage": "Ayaküstü ve hızlı servis formatı uzun süreli akşam oturmalarından ziyade pratik öğünlere göre tasarlanmış.",
+        "transit": "Beşiktaş Çarşı’nın üst çıkışındaki Şehit Asım Caddesi üzerinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Beşiktaş Sokak Lezzetleri Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Köz patlıcan ve lor peynirli özgün Anatolian reçetesiyle dikkat çeken dilim pizzacı"
+        },
+        {
+          "title": "Sinanpaşa Öğrenci & Esnaf Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze ısınan dilim hamuru ve özgün sos dengesiyle yüksek puanını koruyor"
+        }
+      ],
+      "pros": [
+        "Hem tek dilim hem büyük boy paylaşımlı sipariş esnekliği",
+        "Köz patlıcan ve ricotta gibi yaratıcı yerel malzeme dokunuşları"
+      ],
+      "cons": [
+        "Mekan kapasitesi dar olduğu için yoğun saatlerde al-götür daha konforlu"
+      ],
+      "uncertainties": [
+        "Tezgahtaki günlük dilim çeşitliliği günün saatine göre değişir."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-il-capriccio",
+      "categoryId": "pizza",
+      "resolvedName": "İl Capriccio Pizza",
+      "branchName": "Türkali, Hattat Tahsin Sk. No:56, 34357 Beşiktaş/İstanbul",
+      "placeId": "ChIJzXbWPaC3yhQRTYssMDjNEz0",
+      "coordinates": {
+        "lat": 41.0446178,
+        "lng": 29.001048599999997
+      },
+      "rating": 4.5,
+      "userRatingCount": 409,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/ilcapricciotr?igsh=MWMxbHU0M2l6NjBjbw==",
+      "mapsUri": "https://maps.google.com/?cid=4401086902081194829",
+      "recommendedPrimary": [
+        "İnce Hamur Margherita",
+        "Quattro Formaggi Pizza",
+        "Acılı Diavola Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Sarımsaklı Ekmek & Ev Yapımı İtalyan Tatlısı",
+          "note": "Mahalle arası sakin sokak masalarında geleneksel ince hamur İtalyan pizzalarını tamamlayan sıcak fırın başlangıcı.",
+          "proof": "Beşiktaş mahalle restoran seçkileri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı iç salon ve Hattat Tahsin Sokak boyunca kaldırım masaları",
+        "crowdAndNoise": "Klasik İtalyan pizzası seven semt sakinleri ve akşam buluşma grupları",
+        "disadvantage": "Ihlamurdere hattına yakın ara sokak olması sebebiyle akşamları masa sayısı sınırlı kalabiliyor.",
+        "transit": "Türkali ve Sinanpaşa sınırındaki Hattat Tahsin Sokak üzerinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "İstanbul Mahalle İtalyanları Rehberi",
+          "url": "https://www.timeout.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Geleneksel ince hamur ve dengeli domates sosu anlayışını Beşiktaş’ta yaşatan bağımsız durak"
+        },
+        {
+          "title": "Beşiktaş Yemek Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Malzeme kalitesi ve sakin sokak ortamıyla uzun süredir tercih ediliyor"
+        }
+      ],
+      "pros": [
+        "Sadelik ve hamur kıvamına odaklanan klasik İtalyan reçeteleri",
+        "Çarşı gürültüsünün bir adım dışında dengeli sokak yerleşimi"
+      ],
+      "cons": [
+        "Dış masalarda rüzgarlı akşamlarda yer bulma imkanı içeridekinden daha az konforlu"
+      ],
+      "uncertainties": [
+        "Calzone ve bazı şarküterili seçenekler mutfak yoğunluğuna göre hazırlanabilir."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-the-smashy",
+      "categoryId": "hamburger",
+      "resolvedName": "The Smashy",
+      "branchName": "Sinanpaşa, Şair Nedim Cd. No:44, 34353 Beşiktaş/İstanbul",
+      "placeId": "ChIJKVci4AS3yhQR6TLeJHFdt_s",
+      "coordinates": {
+        "lat": 41.0442538,
+        "lng": 29.001015499999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 1300,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=18138068764789191401",
+      "recommendedPrimary": [
+        "Double Smash Cheeseburger",
+        "Truffle Smash Burger",
+        "Baharatlı İnce Kızarmış Patates"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Karamelize Soğanlı Özel Dip Sos & Çıtır Tavuk Eşlikçisi",
+          "note": "Döküm ızgarada mühürlenmiş çıtır kenarlı smash köftelerin yanına paylaşımlık çıtır yan ürün ve sos ikilisi.",
+          "proof": "Beşiktaş smash burger rehberleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Modern bar oturumu, rahat iç masa düzeni ve Şair Nedim cephe masaları",
+        "crowdAndNoise": "Özellikle akşam saatlerinde ve hafta sonları nitelikli smash burger arayan kalabalık",
+        "disadvantage": "Beşiktaş şubesi çok popüler olduğundan pik akşam saatlerinde kısa masa bekleme sırası oluşabiliyor.",
+        "transit": "Şair Nedim Caddesi üzerinde, Çarşı girişinin hemen üst düzlüğünde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Time Out İstanbul — En İyi Smash Burger Durakları",
+          "url": "https://www.timeout.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Dantelli çıtır kenarlı smash tekniği ve brioche ekmek dengesiyle Beşiktaş’ta öncü adres"
+        },
+        {
+          "title": "Beşiktaş Burger Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Double cheddar erimesi ve çıtır patates tutarlılığıyla en çok övülen duraklardan"
+        }
+      ],
+      "pros": [
+        "Gerçek yüksek ısılı ızgara smash mühürlemesiyle gelen yoğun et aroması",
+        "Tekli, ikili ve trüflü alternatiflerde hızlı sıcak servis"
+      ],
+      "cons": [
+        "Dükkan yoğunluğu nedeniyle rahat ve sessiz bir akşam sohbetinden çok hareketli ritme uygun"
+      ],
+      "uncertainties": [
+        "Özel burger ve mevsimsel soslar dönemsel olarak menüye eklenebilir."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-beyefendi",
+      "categoryId": "hamburger",
+      "resolvedName": "Beyefendi Burger",
+      "branchName": "Türkali, Şht. Asım Cd. 48A, 34353 Beşiktaş/İstanbul",
+      "placeId": "ChIJb7M_QN23yhQRx-bpVMVzdVY",
+      "coordinates": {
+        "lat": 41.04479,
+        "lng": 29.0045883
+      },
+      "rating": 4.9,
+      "userRatingCount": 341,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6230012950907315911",
+      "recommendedPrimary": [
+        "Kasap Köfteli Füme Burger",
+        "Beğendili Burger",
+        "Mantar Soslu Cheeseburger"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çıtır Tavuk Burger & Baharatlı Patates Kızartması",
+          "note": "Günlük çekilen sulu kasap köftesi alternatiflerinin yanında tavuk severler ve paylaşım için sıcak eşlikçi.",
+          "proof": "Beşiktaş Çarşı burger durakları ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Samimi ve temiz iç mekan masa düzeni ile pratik dış oturma bölümü",
+        "crowdAndNoise": "Şehit Asım ve Ihlamurdere hattında ev yapımı kasap köfte lezzeti arayan semt sakinleri",
+        "disadvantage": "İç salon masaları kısıtlı olduğundan 4 kişiden büyük gruplar için uygunluğu düşük.",
+        "transit": "Şehit Asım Caddesi ile Muradiye çıkışının kesişimine yakın konumda."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Beşiktaş Yerel Burger Seçkisi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Anadolu beğendisi gibi yerel tatları yumuşak burger köftesiyle buluşturan çarşı adresi"
+        },
+        {
+          "title": "Beşiktaş Semt Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Köfte sululuğu, sos dengesi ve misafir ilgisiyle olağanüstü memnuniyet puanı taşıyor"
+        }
+      ],
+      "pros": [
+        "Sıradan burger zincirlerinden ayrışan özgün beğendili ve füme seçenekler",
+        "Taze çekim et kalitesi ve özenli ekmek seçimi"
+      ],
+      "cons": [
+        "Dükkan dışından ana cadde aksının hafif eğiminde yer alıyor"
+      ],
+      "uncertainties": [
+        "Özel patlıcan beğendisi partileri yoğun günlerde akşama doğru sınırlanabilir."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-arca-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Arca Burger",
+      "branchName": "Sinanpaşa, Köşeli Sk. No:3, 34353 Beşiktaş/İstanbul",
+      "placeId": "ChIJwxJV00y3yhQR1TYW2bN6EWs",
+      "coordinates": {
+        "lat": 41.044152499999996,
+        "lng": 29.002159599999995
+      },
+      "rating": 4.4,
+      "userRatingCount": 1519,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7715082549522216661",
+      "recommendedPrimary": [
+        "Molendini Prime Burger",
+        "Kayıntı Smash Burger",
+        "Trüflü Amsterdam Patatesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kızarmış Padron Biber & Mac and Cheese Topları",
+          "note": "Çarşı içindeki artizan burger menüsünü sıradan kızartmaların ötesine taşıyan sıcak yan tabaklar.",
+          "proof": "Beşiktaş yerel burger seçkileri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Canlı sokak masaları ve sıcak endüstriyel detaylı iç salon",
+        "crowdAndNoise": "Yıllardır Beşiktaş Çarşı’da burger yemek için sokağa uğrayan müdavimler",
+        "disadvantage": "Dar ara sokakta yer aldığı için hafta sonu akşam saatlerinde kalabalık uğultusu yükseliyor.",
+        "transit": "Köyiçi Ortabahçe hattının yan kolu olan Köşeli Sokak üzerinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Time Out İstanbul — Beşiktaş’ın Bağımsız Burgercileri",
+          "url": "https://www.timeout.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Özgün smash ve füme et kombinasyonlarının yanındaki yaratıcı yan ürünleriyle bilinen adres"
+        },
+        {
+          "title": "Çarşı Gastronomi Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mac and cheese topları ve trüflü patates eşlikçisiyle çarşıda güçlü takipçiye sahip"
+        }
+      ],
+      "pros": [
+        "Zengin ve doyurucu artizan yan ürün seçkisi",
+        "Köyiçi merkezinde ulaşımı çok kolay konum"
+      ],
+      "cons": [
+        "Yoğun maç günleri veya akşam yemeği saatlerinde sokakta oturma alanı daralıyor"
+      ],
+      "uncertainties": [
+        "Bazı füme et ve kaburga seçenekleri günün mutfak kapasitesine bağlı olarak sunulur."
+      ],
+      "selectionScore": 76,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-o-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "O Coffee",
+      "branchName": "Türkali, Yeniyol Sokağı No:12/A, 34357 Beşiktaş/İstanbul",
+      "placeId": "ChIJhciLDBO3yhQRKRDTRZkadB0",
+      "coordinates": {
+        "lat": 41.0455755,
+        "lng": 29.002168
+      },
+      "rating": 4.6,
+      "userRatingCount": 3651,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2122350570002124841",
+      "recommendedPrimary": [
+        "Nitelikli Filtre Kahve",
+        "Flat White",
+        "Soğuk Demleme Espresso Bazlı Kahveler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Paris-Brest Tatlısı & Mozzarella Fesleğenli Tost",
+          "note": "Ihlamurdere arkasındaki ferah mahalle kafesinde sabah ve öğleden sonra kahvelerine eşlik eden taze vitrin ürünleri.",
+          "proof": "Beşiktaş üçüncü dalga kahve rehberleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç salon, sokak önü masaları ve sakin çalışma–okuma köşeleri",
+        "crowdAndNoise": "Gün içi dizüstü çalışması yapan semt sakinleri, öğrenciler ve kahve müdavimleri",
+        "disadvantage": "Günün öğleden sonra saatlerinde masa doluluğu yüksek olabiliyor.",
+        "transit": "Ihlamurdere Caddesi’ne paralel Türkali Mısırlıbahçe Sokak aksında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Time Out İstanbul — Beşiktaş Kahvecileri",
+          "url": "https://www.timeout.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Türkali mahallesinde ferah iç düzeni ve tutarlı demlemeleriyle öne çıkan köklü mahalle kahvecisi"
+        },
+        {
+          "title": "İstanbul Kahve Severler Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yıllardır istikrarlı kahve kalitesi ve çalışma dostu ortamıyla semtin baş tacı"
+        }
+      ],
+      "pros": [
+        "Türkali içinde trafik gürültüsünden korunaklı konum",
+        "Kahve kalibrasyonunun yanı sıra özenli tuzlu tost ve hafif tatlı eşlikçileri"
+      ],
+      "cons": [
+        "Hafta içi öğleden sonra prizli masalarda boş yer bulmak zorlaşabiliyor"
+      ],
+      "uncertainties": [
+        "Vitrin tatlı çeşitleri günlük fırın sevkiyatına göre değişir."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-coffers",
+      "categoryId": "kahve",
+      "resolvedName": "Coffers Coffee",
+      "branchName": "Yıldız, Asariye Cd. no: 19, 34349 Beşiktaş/İstanbul",
+      "placeId": "ChIJhYlMzKS3yhQRLalVyHmEg-o",
+      "coordinates": {
+        "lat": 41.044795,
+        "lng": 29.012353
+      },
+      "rating": 4.9,
+      "userRatingCount": 295,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16898495885411199277",
+      "recommendedPrimary": [
+        "Taze Kavrum V60 Demleme",
+        "Cortado",
+        "Tek Köken Espresso"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Perakende Kavrulmuş Çekirdek Seçkisi & Günlük Kurabiye",
+          "note": "Asariye Caddesi’nde kendi kavurduğu çekirdekleri hem fincanda hem ev demlemesi için paket olarak sunan kavurmacı.",
+          "proof": "Beşiktaş kavurmacı seçkileri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Kavurma ekipmanı önü tadım barı ve sakin cadde kenarı oturma köşesi",
+        "crowdAndNoise": "Ev demlemesi için taze çekirdek alan kahve meraklıları ve mahalle sakinleri",
+        "disadvantage": "Büyük tatlı ve yemek menüsünden ziyade saf kahve kavurma ve demleme dükkanı olarak hizmet veriyor.",
+        "transit": "Beşiktaş Çarşı’dan Ortaköy yönüne uzanan Yıldız Asariye Caddesi No:19B üzerinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "İstanbul Roastery Seçkisi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kendi küçük parti kavrumlarını doğrudan tezgahta demleyip satan saf Beşiktaş kavurmacısı"
+        },
+        {
+          "title": "Nitelikli Kahve Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çekirdek tazeliği ve barista sohbetiyle son derece yüksek memnuniyet alıyor"
+        }
+      ],
+      "pros": [
+        "Yerinde kavrulan taze çekirdeklerle hazırlanan aromatik V60 ve cortado",
+        "Ev kullanıcıları için gramajlı çekirdek öğütme ve paketleme"
+      ],
+      "cons": [
+        "Geniş oturma alanı veya akşam geç saate kadar açık kalma iddiası yok"
+      ],
+      "uncertainties": [
+        "Haftanın tek bir günü dinlenme/kavurma düzenine göre açılış saati değişebilir."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-roastory",
+      "categoryId": "kahve",
+      "resolvedName": "Roastory Coffee Co.",
+      "branchName": "Türkali, Ihlamurdere Cd. No:37, 34330 Beşiktaş/İstanbul",
+      "placeId": "ChIJDRhZKnW3yhQRVamZwt_yiQg",
+      "coordinates": {
+        "lat": 41.0446392,
+        "lng": 29.002619300000003
+      },
+      "rating": 4.5,
+      "userRatingCount": 208,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=615289866969262421",
+      "recommendedPrimary": [
+        "Üçüncü Nesil Filtre Kahve",
+        "Flat White",
+        "Iced Americano"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Kahve Yanı Kek & Tereyağlı Kruvasan",
+          "note": "Ihlamurdere aksında çalışma ve okuma molalarına eşlik eden dengeli kavrum kahve ve günlük fırın ikilisi.",
+          "proof": "Beşiktaş kahve durakları ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık iç masa düzeni ve Ihlamurdere’ye bakan açık cephe masaları",
+        "crowdAndNoise": "Çarşı içinde kaliteli çekirdekle günlük kahve içen müdavimler",
+        "disadvantage": "Ihlamurdere üzerindeki hareketli yaya akışı dış masalarda biraz cadde sesi yaratabiliyor.",
+        "transit": "Ihlamurdere Caddesi boyunca Beşiktaş meydanından 5 dakikalık düz yürüyüş mesafesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Beşiktaş Kahve Durakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Dengeli espresso kavrumu ve istikrarlı süt dokusuyla Ihlamurdere hattının öne çıkan kahvecisi"
+        },
+        {
+          "title": "Türkali Kahve Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Soğuk ve sıcak kahve istikrarıyla çarşının zincir kahvecilerine kaliteli alternatif sunuyor"
+        }
+      ],
+      "pros": [
+        "İstikrarlı günlük espresso kalibrasyonu ve temiz servis",
+        "Çarşı içi erişimi kolay merkezi sokak konumu"
+      ],
+      "cons": [
+        "Öğleden sonra yoğunluğunda iç salondaki büyük masalar hızlı doluyor"
+      ],
+      "uncertainties": [
+        "Sezonsal tek köken çekirdek stokları aylara göre değişir."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-pangea",
+      "categoryId": "kahve",
+      "resolvedName": "Pangea Roasting Co.",
+      "branchName": "Sinanpaşa, Ihlamurdere Cd. No:22/B, 34353 Beşiktaş/İstanbul",
+      "placeId": "ChIJv7Mcm3m3yhQRQLKv9nDEUHI",
+      "coordinates": {
+        "lat": 41.0442647,
+        "lng": 29.003295100000003
+      },
+      "rating": 4.9,
+      "userRatingCount": 234,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.pangeacoffee.co/",
+      "mapsUri": "https://maps.google.com/?cid=8237299707914728000",
+      "recommendedPrimary": [
+        "Yöresel V60 Filtre Kahve",
+        "Flat White",
+        "Tek Köken Espresso"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Kahve Yanı Kek & Çekirdek Seçkisi",
+          "note": "Ihlamurdere aksında tek köken demlemelerin yanında taze fırınlanmış günlük kek ve eve öğütülmüş çekirdek imkanı.",
+          "proof": "Beşiktaş nitelikli kahve rehberleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Rahat iç çalışma masaları, demleme barı ve Ihlamurdere yakası aydınlık cephe oturumu",
+        "crowdAndNoise": "Tek köken filtre kahve seven müdavimler ve sakin çalışma ortamı arayan semt sakinleri",
+        "disadvantage": "Günün öğleden sonra saatlerinde çalışma masalarının doluluğu hızlı artabiliyor.",
+        "transit": "Sinanpaşa ve Yıldız metro bağlantısına yakın Ihlamurdere Caddesi No:22/B üzerinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "İstanbul Nitelikli Kahve Seçkisi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Küçük parti kavrum ve V60–Chemex tek köken seçkisiyle Ihlamurdere girişinin öne çıkan kahvecisi"
+        },
+        {
+          "title": "Beşiktaş Kahve Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Fincan temizliği ve barista kalibrasyonuyla son derece yüksek beğeni topluyor"
+        }
+      ],
+      "pros": [
+        "Farklı ülkelerden dönemsel tek köken çekirdek ve manuel demleme alternatifleri",
+        "Sakin iç mekan akustiği ve temiz servis düzeni"
+      ],
+      "cons": [
+        "Geniş sıcak kahvaltı tabağı yerine kahve ve günlük tatlı odağında çalışıyor"
+      ],
+      "uncertainties": [
+        "Dönemsel mikro-lot çekirdek menüsü kavurma takvimine göre yenilenebilir."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-agafya",
+      "categoryId": "date",
+      "resolvedName": "Agafya Meyhanesi",
+      "branchName": "Sinanpaşa Mahallesi Alabeyi Sk. No:9 Çarşı, Sinanpaşa, 34353 Beşiktaş/İstanbul",
+      "placeId": "ChIJr_Tj6aG3yhQRzUnvj9wBW-0",
+      "coordinates": {
+        "lat": 41.0438124,
+        "lng": 29.003822399999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 627,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17103266056688847309",
+      "recommendedPrimary": [
+        "Zeytinyağlı Soğuk Meze Tabağı",
+        "Tapas Usulü Deniz Mahsullü Ara Sıcaklar",
+        "Pastırmalı Paçanga"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yerli Bağ Şarap Seçkisi & Fırın Tatlısı",
+          "note": "Köyiçi’nin gürültülü sokaklarından ayrışan samimi masa düzeninde paylaşımlı mezelerle uyumlu kadeh seçkisi.",
+          "proof": "Beşiktaş akşam buluşma rehberleri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş ve tuğla detaylı sıcak iç salon ile ara sokak akşam masaları",
+        "crowdAndNoise": "İki kişilik uzun akşam sofraları kuran çiftler ve küçük dost grupları",
+        "disadvantage": "Köyiçi içindeki hareketli ara sokak yapısı sebebiyle hafta sonu geç saatlerde ses seviyesi yükselebiliyor.",
+        "transit": "Sinanpaşa Köyiçi içindeki Alaybeyi / Altıntaş kesişimi yakınında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Time Out İstanbul — Köyiçi Akşam Durakları",
+          "url": "https://www.timeout.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Geleneksel mezeleri tapas sunumuyla modernleştiren samimi Beşiktaş akşam adresi"
+        },
+        {
+          "title": "Beşiktaş Yeme-İçme Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ara sıcak çeşitliliği ve güler yüzlü ev sahipliğiyle yüksek puan topluyor"
+        }
+      ],
+      "pros": [
+        "Az porsiyonda çok çeşit denemeye uygun paylaşımlı tabak yaklaşımı",
+        "Çarşı kalbinde şık akşam masa düzeni"
+      ],
+      "cons": [
+        "Küçük masalar büyük meze tepsileri için zaman zaman sıkışık olabiliyor"
+      ],
+      "uncertainties": [
+        "Haftanın günlerine göre akşam program akışı değişebilir."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-soote",
+      "categoryId": "date",
+      "resolvedName": "Soote Meze & Bistro",
+      "branchName": "Sinanpaşa, Altıntaş Sk. 27/a, 34022 Beşiktaş/İstanbul",
+      "placeId": "ChIJ0-9cjJC3yhQRUPII9K_Icu8",
+      "coordinates": {
+        "lat": 41.0445948,
+        "lng": 29.003620599999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 251,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.sootemezebistro.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=17254073780448850512",
+      "recommendedPrimary": [
+        "Güneydoğu Dokunuşlu Meze Tabağı",
+        "Tereyağlı Karides",
+        "Izgara Et Tabakları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kuzu Kulağı Ekşili İmza Kokteyl & Mevsim Meyvesi",
+          "note": "Geleneksel meze reçetelerini modern bistro ve kokteyl bar atmosferiyle birleştiren akşam eşleşmesi.",
+          "proof": "Beşiktaş meze-bistro seçkileri ve dijital menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tasarım bar köşesi, rahat bistro masaları ve sokak seviyesi akşam düzeni",
+        "crowdAndNoise": "Klasik rakı sofrası yerine hem meze hem kokteyl bar dengesi isteyen genç çiftler",
+        "disadvantage": "Günün ilerleyen saatlerinde bistro-bar temposu nedeniyle sakinlik arayanlara göre daha enerjik bir ambiyansa geçiyor.",
+        "transit": "Beşiktaş Çarşı içindeki Altıntaş Sokak üzerinde merkezi konumda."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "İstanbul Yeni Nesil Bistro Seçkisi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Güneydoğu baharat ve meze kültürünü özgün kokteyllerle eşleştiren Beşiktaş meze-bistro adresi"
+        },
+        {
+          "title": "Beşiktaş Kokteyl & Meze Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İmza kokteylleri ve özenli tabak sunumuyla yüksek beğeni alıyor"
+        }
+      ],
+      "pros": [
+        "Tek bir masada nitelikli meze ve bar kokteyli deneyimleyebilme imkanı",
+        "Çarşının enerjik ruhuna uygun modern iç tasarım"
+      ],
+      "cons": [
+        "Geç akşam saatlerinde ses seviyesi sohbet odaklı çiftler için yüksek gelebilir"
+      ],
+      "uncertainties": [
+        "Mevsimlik otlu kokteyller taze malzeme dönemine göre güncellenir."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-sarina",
+      "categoryId": "date",
+      "resolvedName": "Sarina Meyhanesi",
+      "branchName": "Sinanpaşa, Alaybeyi Sk No:22, 34353 Beşiktaş/İstanbul",
+      "placeId": "ChIJn2CTP6G3yhQR_fK8KEQqpYE",
+      "coordinates": {
+        "lat": 41.043855,
+        "lng": 29.0037528
+      },
+      "rating": 4.8,
+      "userRatingCount": 331,
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://instagram.com/sarinameyhanesi",
+      "mapsUri": "https://maps.google.com/?cid=9341919474279576317",
+      "recommendedPrimary": [
+        "Lakerda & Pilaki Başlangıcı",
+        "Kalamar Tava",
+        "Ağır Ateşte Kuzu Kaburga"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Acılı Atom Mezesi & Izgara Köfte",
+          "note": "Nostaljik Yeşilçam posterleri ve hafif Türk müziği eşliğinde uzun akşam sohbetlerine yakışan klasik meyhane tabakları.",
+          "proof": "Beşiktaş klasik meyhane rehberleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Nostaljik duvar panolu iç salon ve samimi Alaybeyi Sokak akşam masaları",
+        "crowdAndNoise": "Samimi Yeşilçam nostaljisi ve güvenilir klasik meyhane mutfağı arayan çiftler",
+        "disadvantage": "Mekanın sıcak kalabalığı hafta sonu akşamlarında masalar arası mesafeyi daraltabiliyor.",
+        "transit": "Sinanpaşa Köyiçi içindeki Alaybeyi Sokak üzerinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Time Out İstanbul — Samimi Mahalle Meyhaneleri",
+          "url": "https://www.timeout.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Nostaljik atmosferi ve lakerda–kaburga dengesiyle çarşı içinde korunan meyhane adresi"
+        },
+        {
+          "title": "Köyiçi Akşam Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Meze tazeliği ve sıcak esnaf ev sahipliğiyle yüksek tekrar ziyaret oranı taşıyor"
+        }
+      ],
+      "pros": [
+        "Hem deniz mahsulü başlangıçlar hem uzun pişen et ana yemeklerinde tutarlılık",
+        "Gösterişten uzak, içten ve sıcak Beyoğlu/Beşiktaş meyhane ruhu"
+      ],
+      "cons": [
+        "Hafta sonu rezervasyonsuz gitmek riskli olabiliyor"
+      ],
+      "uncertainties": [
+        "Mevsim balığı ve günlük meze seçkisi tedarike göre değişir."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-maltica",
+      "categoryId": "date",
+      "resolvedName": "The Maltica Gastro Pub",
+      "branchName": "Sinanpaşa, Şht. Asım Cd. No:42, 34353 Beşiktaş/İstanbul",
+      "placeId": "ChIJCxhMvWu3yhQR_IH9KwtV3lA",
+      "coordinates": {
+        "lat": 41.0444171,
+        "lng": 29.0046582
+      },
+      "rating": 4.5,
+      "userRatingCount": 454,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://menu.themaltica.com/",
+      "mapsUri": "https://maps.google.com/?cid=5827188474335035900",
+      "recommendedPrimary": [
+        "Maltica Burger",
+        "Çökertme Kebabı",
+        "Grissinili Schnitzel"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Cheddar Soslu Çıtır Tavuk & Fıçı Eşlikçisi",
+          "note": "Canlı sahne ve akşam buluşmalarına eşlik eden paylaşımlı pub tabağı ve içecek eşleşmesi.",
+          "proof": "Beşiktaş gastropub rehberleri ve dijital menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sahne manzaralı iç salon, yüksek bar masaları ve üst kat masa düzeni",
+        "crowdAndNoise": "Sıcak mutfak eşliğinde müzik ve bar enerjisini bir arada arayan akşam buluşmaları",
+        "disadvantage": "Canlı müzik ve sahne etkinlikleri olan akşamlarda ses seviyesi sakin yemek beklentisinin üzerinde olur.",
+        "transit": "Sinanpaşa Mahallesi Şehit Asım Caddesi No:42 üzerinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "İstanbul Akşam & Sahne Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Güçlü pub mutfağını canlı sahne atmosferiyle birleştiren Beşiktaş Çarşı gastropubu"
+        },
+        {
+          "title": "Beşiktaş Akşam Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çıtır tavuk tabakları, burgerleri ve servis temposuyla akşam buluşmalarında tercih ediliyor"
+        }
+      ],
+      "pros": [
+        "Sadece bar atıştırmalığı değil ana yemek seçeneklerinde de tatmin edici mutfak",
+        "Çarşı içinde ferah sahne ve grup ağırlama kapasitesi"
+      ],
+      "cons": [
+        "Etkinlik saatlerinde ön masalarda oturmak için rezervasyon öneriliyor"
+      ],
+      "uncertainties": [
+        "Haftalık canlı sahne programı dönemsel etkinlik takvimine göre değişebilir."
+      ],
+      "selectionScore": 86,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-peynir-ekmek",
+      "categoryId": "kahvalti",
+      "resolvedName": "Peynir Ekmek Kahvaltı",
+      "branchName": "No:, Sinanpaşa, Çelebi Oğlu Sk. No:14, 34353 Beşiktaş/İstanbul",
+      "placeId": "ChIJK_U516G3yhQRTu3RK9gKU70",
+      "coordinates": {
+        "lat": 41.0434793,
+        "lng": 29.0029604
+      },
+      "rating": 4.8,
+      "userRatingCount": 3742,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13642259619799756110",
+      "recommendedPrimary": [
+        "Yöresel Peynirli Kahvaltı Tabağı",
+        "Sıcak Pişi & Acuka",
+        "Sahanda Menemen"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bal-Kaymak İkilisi & Sınırsız Demlik Çay",
+          "note": "Çelebi Oğlu Sokak’taki canlı kahvaltı sokağında tuzlu kahvaltılıkların ardından masayı tamamlayan klasik tatlı kapanış.",
+          "proof": "Beşiktaş Kahvaltıcılar Sokağı rehberleri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "İki katlı iç oturma alanı ve canlı Kahvaltıcılar Sokağı boyunca sıralı masalar",
+        "crowdAndNoise": "Hafta içi ve hafta sonu sabahları Beşiktaş kahvaltı ritüelini yaşayanlar",
+        "disadvantage": "Pazar sabahları tüm Kahvaltıcılar Sokağı gibi kapıda hızlı dönen bir sıra oluşabiliyor.",
+        "transit": "Sinanpaşa Mahallesi Çelebi Oğlu (Kahvaltıcılar) Sokak üzerinde, Çarşı meydana 3 dakika."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Beşiktaş Kahvaltıcılar Sokağı Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yöresel peynir kalitesi ve sıcak pişi servisiyle sokağın en yüksek puanlı sabah duraklarından"
+        },
+        {
+          "title": "İstanbul Kahvaltı Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hızlı servis ve taze ekmek–bal-kaymak ikilisiyle binlerce yüksek değerlendirmeye sahip"
+        }
+      ],
+      "pros": [
+        "İsteğe göre serpme yerine tekil tabak seçme esnekliği",
+        "Sıcak pişi, taze çay ve yöresel peynir tutarlılığı"
+      ],
+      "cons": [
+        "Hafta sonu geç sabah saatlerinde sokak çok kalabalıklaşıyor"
+      ],
+      "uncertainties": [
+        "Yöresel peynir tabağı içeriği mevsimsel mandıra tedarikine göre yenilenebilir."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-bi-kahvalti",
+      "categoryId": "kahvalti",
+      "resolvedName": "Bi Kahvaltı",
+      "branchName": "Sinanpaşa Mahallesi Ihlamurdere Cad, Sinanpaşa, Çelebi Oğlu Sk. No:21-23/B, 34353 Beşiktaş/İstanbul",
+      "placeId": "ChIJ05v82aG3yhQRaEZcd9sb4pc",
+      "coordinates": {
+        "lat": 41.043368799999996,
+        "lng": 29.002825199999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 3512,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10944340673878050408",
+      "recommendedPrimary": [
+        "Bi Serpme Kahvaltı",
+        "Karadeniz Usulü Kuymak",
+        "Peynirli Sıcak Pişi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kavurmalı Bazlama Tost & Demleme Çay",
+          "note": "Serpme sofra yerine tek tabak sıcak kahvaltı tercih edenler için doyurucu bazlama ve taze çay ikilisi.",
+          "proof": "Beşiktaş kahvaltı seçkileri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Renkli iç salon katları ve hareketli sokak cephesi masaları",
+        "crowdAndNoise": "Kalabalık arkadaş kahvaltıları ve doyurucu Karadeniz–serpme sofra arayanlar",
+        "disadvantage": "Sokak atmosferi hafta sonları oldukça hareketli olduğundan dingin bir sessizlik sunmaz.",
+        "transit": "Kahvaltıcılar Sokağı’nın alt meydan girişine yakın köşesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Time Out İstanbul — En İyi Beşiktaş Kahvaltıları",
+          "url": "https://www.timeout.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kıvamlı kuymak ve cömert serpme kahvaltı tabaklarıyla Kahvaltıcılar Sokağı’nın güçlü ismi"
+        },
+        {
+          "title": "Beşiktaş Sabah Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Pişi sıcaklığı ve porsiyon cömertliğiyle binlerce misafirden yüksek puan alıyor"
+        }
+      ],
+      "pros": [
+        "Sıcak gelen kuymak ve dolu dolu klasik kahvaltılık çeşitliliği",
+        "Hızlı çay tazeleme ve güler yüzlü sabah servisi"
+      ],
+      "cons": [
+        "Cumartesi–Pazar öğleye doğru masalar arası alan oldukça yoğun oluyor"
+      ],
+      "uncertainties": [
+        "Bazlama tost çeşitleri öğleden sonraki kahvaltı servisine kadar sürebilir."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-menemen-besiktas",
+      "categoryId": "kahvalti",
+      "resolvedName": "Menemen Beşiktaş",
+      "branchName": "Sinanpaşa, Şair Veysi Sk. No:31/A, 34353 Beşiktaş/İstanbul",
+      "placeId": "ChIJ1W9H6FG3yhQRpQTIQKgoPI8",
+      "coordinates": {
+        "lat": 41.044022999999996,
+        "lng": 29.002333000000004
+      },
+      "rating": 4.8,
+      "userRatingCount": 1281,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/menemenbreakfast",
+      "mapsUri": "https://maps.google.com/?cid=10321169149132801189",
+      "recommendedPrimary": [
+        "Bakır Sahanda Klasik Menemen",
+        "Kavurmalı Kaşarlı Menemen",
+        "Köy Peyniri & Söğüş Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kızarmış Ekşi Maya Ekmek & İnce Belli Çay",
+          "note": "Şair Veysi Sokak’ta bakır sahanda kıvamında pişen menemen çeşitlerine eşlik eden sıcak kızarmış ekmek.",
+          "proof": "Beşiktaş kahvaltı durakları ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Temiz ve kompakt iç salon ile Şair Veysi Sokak kenarı masalar",
+        "crowdAndNoise": "İşi uzatmadan iyi pişmiş menemen yemek isteyen yerliler ve semt çalışanları",
+        "disadvantage": "Serpme kahvaltı sofrası kurmak isteyen büyük gruplar için mekan masaları kompakt boyda.",
+        "transit": "Kahvaltıcılar Sokağı’nın hemen arka paraleli Şair Veysi Sokak üzerinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "İstanbul Kahvaltı Seçkisi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Menemen ustalığına odaklanan sade konsepti ve ekmek tazeliğiyle Beşiktaş’ın sevilen sabah durağı"
+        },
+        {
+          "title": "Sinanpaşa Sabah Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yumurta–domates pişirme dengesi ve temiz mutfağıyla binlerce tam puan alıyor"
+        }
+      ],
+      "pros": [
+        "Kalabalık serpme yerine tek odağı menemen ustalığı olan net menü",
+        "Kahvaltıcılar Sokağı kuyruğuna takılmadan hızlı oturabilme avantajı"
+      ],
+      "cons": [
+        "Geniş kahvaltı yan ürün çeşitliliği arayanlara daha minimal gelebilir"
+      ],
+      "uncertainties": [
+        "Ekşi mayalı kızarmış ekmek yanında dönemlik sucuk ve pastırma opsiyonları sunulabilir."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-cakmak-kahvalti",
+      "categoryId": "kahvalti",
+      "resolvedName": "Çakmak Kahvaltı Salonu",
+      "branchName": "Sinanpaşa, Çelebi Oğlu Sk. No:6, 34353 Beşiktaş/İstanbul",
+      "placeId": "ChIJRe0y0aG3yhQRgLoCOuYO3rI",
+      "coordinates": {
+        "lat": 41.043512199999995,
+        "lng": 29.003261899999995
+      },
+      "rating": 4.4,
+      "userRatingCount": 1885,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12888755565559462528",
+      "recommendedPrimary": [
+        "Erzincan Tulum Peyniri & Karakovan Balı",
+        "Kaşarlı Menemen",
+        "Sıcak Pişi & Kavurmalı Yumurta"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Manda Kaymağı & İnce Belli Bardakta Demli Çay",
+          "note": "Kahvaltıcılar Sokağı kültürünü başlatan esnaf salonunda hızlı, sade ve geleneksel sabah sofrasının imzası.",
+          "proof": "Beşiktaş esnaf kahvaltı arşivleri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geleneksel esnaf salonu masaları ve sokak cephesinde hızlı servis masaları",
+        "crowdAndNoise": "Gösterişli brunch yerine köklü esnaf kahvaltısı geleneğini seven yerliler ve öğrenciler",
+        "disadvantage": "Klasik esnaf salonu düzeni modern kafe konforundan çok hızlı ve samimi sabah ritmine göre işler.",
+        "transit": "Kahvaltıcılar Sokağı (Çelebi Oğlu Sk.) girişine en yakın tarihi esnaf dükkanlarından."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Time Out İstanbul — Kahvaltıcılar Sokağı’nın Öncüsü",
+          "url": "https://www.timeout.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "2002’de sokağa adını veren kahvaltı kültürünü başlatan köklü esnaf kurumu"
+        },
+        {
+          "title": "Beşiktaş Semt Arşivi",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Erzincan tulumu, Karakovan balı ve kaymağıyla yıllardır aynı mahalle samimiyetini koruyor"
+        }
+      ],
+      "pros": [
+        "Beşiktaş Kahvaltıcılar Sokağı geleneğini kuran gerçek mahalle ritüeli",
+        "Kendi seçtiğin porsiyon tabaklarla hesaplı ve kaliteli esnaf kahvaltısı"
+      ],
+      "cons": [
+        "Hafta sonu erken saatler dışında masa bulmak ve gürültüden kaçmak zorlaşabilir"
+      ],
+      "uncertainties": [
+        "Yöresel kaymak ve Karakovan balı parti durumuna göre günlük sunulur."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-asim-usta",
+      "categoryId": "denemelisin",
+      "resolvedName": "Karadeniz Döner Asım Usta",
+      "branchName": "Sinanpaşa, Köyiçi Cd No:6, 34353 Beşiktaş/İstanbul",
+      "placeId": "ChIJ37RBGKK3yhQRVlQFZIZLZgM",
+      "coordinates": {
+        "lat": 41.0435433,
+        "lng": 29.004001900000002
+      },
+      "rating": 4.2,
+      "userRatingCount": 5459,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=244966270314042454",
+      "recommendedPrimary": [
+        "Odun Ateşinde Yaprak Et Döner Porsiyon",
+        "Pide Arası Yaprak Döner",
+        "Pilav Üstü Döner"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Köpüklü Açık Ayran & Salatalık Turşusu",
+          "note": "1973’ten beri Sinanpaşa Köyiçi’nde odun ateşinde pişen yaprak dönerin yanına değişmeyen geleneksel esnaf ikilisi.",
+          "proof": "İstanbul tarihi döner ustaları rehberleri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük esnaf salonu masaları ve cam önü al-götür döner sırası",
+        "crowdAndNoise": "Öğle saatlerinden itibaren odun ateşinde yaprak döner için sıraya giren İstanbullular",
+        "disadvantage": "Öğle saatlerinde kapıda uzun sıra oluşur ve döner öğleden sonraya kalmadan erken saatlerde tükenir.",
+        "transit": "Sinanpaşa Köyiçi’nde Büyük Beşiktaş Çarşısı yanındaki Mumcu Bakkal Sokak köşesinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — İstanbul’un En İyi Tarihî Döner Durakları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1973’ten bu yana odun ateşi şiş geleneğini sürdüren Köyiçi’nin ikonik döner kurumu"
+        },
+        {
+          "title": "İstanbul Sokak Lezzetleri Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Odun isinin ete sinmesi ve ince yaprak kesimiyle on yıllardır İstanbul klasiği sayılıyor"
+        }
+      ],
+      "pros": [
+        "Odun ateşinde ağır pişen ve kurutulmadan ince dilimlenen gerçek yaprak döner",
+        "1973’ten beri değişmeyen tek odaklı usta reçetesi"
+      ],
+      "cons": [
+        "Geç öğleden sonra gittiğinizde dükkan şişi bitirip kapanmış olabiliyor"
+      ],
+      "uncertainties": [
+        "Hava durumuna ve günün yoğunluğuna göre kapanış saati dönerin bitişiyle belirlenir."
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-oktay-kurabiye",
+      "categoryId": "denemelisin",
+      "resolvedName": "Tarihi Oktay Kurabiye Fırını",
+      "branchName": "Türkali, Yaverağa Sk. 1/A, 34357 Beşiktaş/İstanbul",
+      "placeId": "ChIJKS3BD6G3yhQRjGijtHoNJ0Y",
+      "coordinates": {
+        "lat": 41.0459699,
+        "lng": 29.002924800000002
+      },
+      "rating": 4.6,
+      "userRatingCount": 812,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://instagram.com/oktaykurabiyefirini?igshid=MzMyNGUyNmU2YQ==",
+      "mapsUri": "https://maps.google.com/?cid=5055023927414450316",
+      "recommendedPrimary": [
+        "Acıbadem Kurabiyesi",
+        "Odun Fırını Koko & Un Kurabiyesi",
+        "Anasonlu Yaprak Galeta"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Karaköy Poğaçası & Siyez Unlu Kurabiye",
+          "note": "1934’ten bu yana taş fırın geleneğini sürdüren mahalle fırınından çay yanına paket alınan günlük tuzlu ve tatlılar.",
+          "proof": "Beşiktaş tarihi fırın arşivleri ve işletme ürün listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi fırın camekanı ve al-götür fırın tezgahı (oturma salonu bulunmuyor)",
+        "crowdAndNoise": "Semt sakinleri, çocukluk lezzetini arayan İstanbullular ve çay yanı kurabiyesi alanlar",
+        "disadvantage": "Geleneksel al-götür mahalle fırını olduğu için masa ve kahve oturma alanı bulunmuyor.",
+        "transit": "Türkali Mahallesi’nde Ihlamurdere Caddesi’ne dik bağlanan Şehit Ali Kerem / Mısırlıbahçe civarında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — İstanbul’un 1930’lu Tarihi Fırınları",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1934’ten beri meşe odununda Acıbadem kurabiyesi ve galeta pişiren asırlık Beşiktaş mirası"
+        },
+        {
+          "title": "Beşiktaş Tarih & Semt Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tereyağlı poğaça ve şeker dengesi ölçülü kurabiyeleriyle nesillerdir aynı adreste"
+        }
+      ],
+      "pros": [
+        "1934’ten bugüne meşe odunu ateşiyle çalışan gerçek tarihî fırın",
+        "Katkısız tereyağlı poğaça, Acıbadem ve un kurabiyesi çeşitleri"
+      ],
+      "cons": [
+        "Yalnızca paket ve al-götür tezgahı olarak hizmet veriyor"
+      ],
+      "uncertainties": [
+        "Fırın tepsilerinin sıcak çıkış saatleri sabah ve öğleden sonra arasında farklılaşabilir."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-vegan-masa",
+      "categoryId": "denemelisin",
+      "resolvedName": "Vegan Masa",
+      "branchName": "Türkali, Mısırlıbahçe Sok. No: 8/A, 34357 Beşiktaş/İstanbul",
+      "placeId": "ChIJC6Qrz2G3yhQRQ5eFLkBYtN8",
+      "coordinates": {
+        "lat": 41.0449907,
+        "lng": 29.002548299999994
+      },
+      "rating": 4.9,
+      "userRatingCount": 1621,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.veganmasa.com/",
+      "mapsUri": "https://maps.google.com/?cid=16119605998947505987",
+      "recommendedPrimary": [
+        "Taş Fırın Bitkisel Lahmacun",
+        "Mantarlı & Bitkisel Peynirli Pide",
+        "İçli Köfte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kaju Yoğurtlu Ayran & Rafine Şekersiz İncirli Muhallebi",
+          "note": "Taş fırından çıkan tamamen bitkisel pide ve lahmacun çeşitlerini tamamlayan ev yapımı içecek ve hafif tatlı.",
+          "proof": "İstanbul bitkisel mutfak rehberleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Taş fırın dumanı kokmayan aydınlık iç salon ve sakin Türkali ara sokak masaları",
+        "crowdAndNoise": "Bitkisel beslenenler, alerjen hassasiyeti olanlar ve hafif taş fırın lezzeti arayanlar",
+        "disadvantage": "Geleneksel etli pide beklentisiyle gidilmemeli; tüm reçeteler yüzde yüz bitkisel proteinlerle kurulmuş.",
+        "transit": "Türkali Mısırlıbahçe Sokak üzerinde, Ihlamurdere Caddesi’ne çok kısa yürüyüşle."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Time Out İstanbul — En Yaratıcı Vegan Restoranlar",
+          "url": "https://www.timeout.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Türkiye’nin ilk taş fırınlı %100 bitkisel lahmacun ve pide mutfaklarından biri"
+        },
+        {
+          "title": "İstanbul Bitkisel Gastronomi Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çıtır hamuru ve baharat dengesiyle vegan olmayan misafirlerden de tam puan alıyor"
+        }
+      ],
+      "pros": [
+        "Taş fırın hamur kıvamını kaybetmeyen tamamen bitkisel lahmacun ve pide ustalıkları",
+        "Rahat ve samimi mahalle restoranı ortamı"
+      ],
+      "cons": [
+        "Akşam yemeklerinde bazı özel hamur işleri stoklara bağlı olarak erken bitebiliyor"
+      ],
+      "uncertainties": [
+        "Mevsimlik bitkisel peynir ve beyti sosları yeni tariflerle güncellenebilir."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-inziva",
+      "categoryId": "denemelisin",
+      "resolvedName": "İnziva Restaurant",
+      "branchName": "Sinanpaşa, Yenilik Sk. NO: 28 -30, 34353 Beşiktaş/İstanbul",
+      "placeId": "ChIJH0Fk4Vi3yhQRSfDRHdZ9dFo",
+      "coordinates": {
+        "lat": 41.044305099999995,
+        "lng": 29.003579799999997
+      },
+      "rating": 4.9,
+      "userRatingCount": 299,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://inzivarestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=6517972919288721481",
+      "recommendedPrimary": [
+        "Zırh Kıyması Izgara Kebap",
+        "Izgara Köfte Porsiyon",
+        "Günlük Zeytinyağlı Meze Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mevsim Salatası & Fırın Sütlaç",
+          "note": "Çarşı kalabalığının hemen yan sokağında özenli ızgara ve ev usulü tabakları tamamlayan klasik kapanış.",
+          "proof": "Beşiktaş yerel restoran seçkileri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Huzurlu ara sokak masa düzeni ve temiz, sakin iç oturma salonu",
+        "crowdAndNoise": "Çarşı içinde telaşsız, temiz ızgara ve zeytinyağlı yemek isteyen mahalle sakinleri",
+        "disadvantage": "Ara sokak konumu nedeniyle ilk kez gelenler harita üzerinden rahatlıkla ulaşabiliyor.",
+        "transit": "Sinanpaşa Ortabahçe Caddesi’nden Yenilik Sokak içine birkaç adım mesafede."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Beşiktaş Yerel Sofra Seçkisi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Çarşı gürültüsünün kıyısında zırh kebabı ve taze zeytinyağlıları özenle sunan aile restoranı"
+        },
+        {
+          "title": "Sinanpaşa Müdavim Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Et pişirme hassasiyeti, temizlik ve samimi ilgisiyle 4.9 ortalamasını koruyor"
+        }
+      ],
+      "pros": [
+        "Kalabalık kebapçılardan ayrışan sakin ve temiz pişirme özeni",
+        "Başlangıçtan tatlıya ev usulü dengeli porsiyonlar"
+      ],
+      "cons": [
+        "Büyük gruplar için akşamları önceden masayı teyit etmek gerekiyor"
+      ],
+      "uncertainties": [
+        "Günlük çıkan çorba ve zeytinyağlı tabak çeşitleri pazara göre değişir."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-the-nest",
+      "categoryId": "denemelisin",
+      "resolvedName": "The Nest Bakery & Coffee",
+      "branchName": "Sinanpaşa, Alaybeyi Sk No:11, 34535 Beşiktaş/İstanbul",
+      "placeId": "ChIJ12bMnqe3yhQR95p3KY3OZ-Q",
+      "coordinates": {
+        "lat": 41.043813799999995,
+        "lng": 29.003814600000002
+      },
+      "rating": 4.7,
+      "userRatingCount": 219,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16458350468930181879",
+      "recommendedPrimary": [
+        "Rozbifli Artizan Kruvasan Sandviç",
+        "Somon Fümeli Egg Royal Kruvasan",
+        "Pastacı Kremalı Çilekli Kruvasan"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ekşi Mayalı Avokado Tost & Filtre Kahve Eşlikçisi",
+          "note": "Alaybeyi Sokak’ta günlük açılan lamine kruvasan çeşitlerinin yanında hafif öğle tabağı ve kahve eşleşmesi.",
+          "proof": "Beşiktaş artizan fırın-kafe seçkileri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Vitrin önü sokak masaları ve samimi iç oturma düzeni",
+        "crowdAndNoise": "Sabah ve öğleden sonra tuzlu veya tatlı artizan kruvasan arayan semt ziyaretçileri",
+        "disadvantage": "Günün sınırlı fırın partileri öğleden sonra hızlı tükenebiliyor.",
+        "transit": "Köyiçi Balık Pazarı ile Alaybeyi Sokak kesişimine birkaç adım mesafede."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Time Out İstanbul — Yeni Nesil Kruvasan Durakları",
+          "url": "https://www.timeout.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tuzlu rozbif ve somonlu kruvasan sandviçleriyle Beşiktaş Çarşı’da öne çıkan artizan fırın"
+        },
+        {
+          "title": "Beşiktaş Kafe & Fırın Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kat kat hamur dokusu ve taze pastacı kremalı tatlı kruvasanlarıyla yüksek puan alıyor"
+        }
+      ],
+      "pros": [
+        "Hem tuzlu sandviç hem tatlı pastane formatında nitelikli lamine hamur",
+        "Balık Pazarı yakınında ferah köşe konumu"
+      ],
+      "cons": [
+        "Küçük iç oturumu nedeniyle hafta sonu masa bulmak şansa kalabiliyor"
+      ],
+      "uncertainties": [
+        "Mevsim meyveli tatlı kruvasan dolguları yaz ve kış meyvelerine göre değişir."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-mantizz",
+      "categoryId": "denemelisin",
+      "resolvedName": "Mantizz",
+      "branchName": "Sinanpaşa, Şht. Dursun Bakan Sk. no17/A, 34351 Beşiktaş/İstanbul",
+      "placeId": "ChIJN4Ftcse3yhQRgCHoiHCWn98",
+      "coordinates": {
+        "lat": 41.0441182,
+        "lng": 29.004001199999998
+      },
+      "rating": 4.7,
+      "userRatingCount": 244,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16113763401832341888",
+      "recommendedPrimary": [
+        "Mantizz Mix Mantı (Çıtır ve Haşlama Karışık)",
+        "Klasik Ev Mantısı",
+        "Kavurmalı Kaşarlı Gözleme"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kavurmalı Kaşarlı & Beyaz Peynirli Gözleme",
+          "note": "Domates ve salatalık eşliğinde servis edilen sac gözlemeleri mantı dışındaki en sık tercih edilen ana tabaklardan.",
+          "proof": "Sinanpaşa işletme menüsü ve mahalle rehberi kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sinanpaşa ara sokağında küçük ve sade iç oturma alanı",
+        "crowdAndNoise": "Öğle ve erken akşam saatlerinde semt sakinleri ve öğrencilerle hızlı masa döngüsü",
+        "disadvantage": "Küçük dükkân ölçeği nedeniyle öğle yoğunluğunda boş masa beklemek gerekebiliyor.",
+        "transit": "Beşiktaş Çarşı Köyiçi aksından Şehit Dursun Bakan Sokak içine birkaç dakikalık yürüyüşle."
+      },
+      "verifiedAt": "2026-11-15",
+      "sources": [
+        {
+          "title": "Google Maps — Mantizz Beşiktaş Sinanpaşa",
+          "url": "https://maps.google.com/?cid=16113763401832341888",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Sinanpaşa Şehit Dursun Bakan Sk. konumu, operational durumu ve yüksek kullanıcı puanı doğrulandı."
+        },
+        {
+          "title": "Yemeksepeti — Mantizz Sinanpaşa Menü Kaydı",
+          "url": "https://www.yemeksepeti.com",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ev mantısı, çıtır mantı, Mix mantı, mercimekli/ıspanaklı mantı ve gözleme çeşitleri doğrulandı."
+        }
+      ],
+      "pros": [
+        "Çıtır ve haşlama mantıyı tek porsiyonda birleştiren Mix tabağı ve taze sac gözlemeleri",
+        "Beşiktaş Çarşı kalabalığının bir arka sokağında ulaşılabilir mahalle esnafı fiyatı"
+      ],
+      "cons": [
+        "Küçük iç mekânı nedeniyle yoğun öğle ve akşam saatlerinde yer bulmak zorlaşabiliyor"
+      ],
+      "uncertainties": [
+        "Yoğurt ve sos yoğunluğu tercihe göre değiştiğinden sipariş sırasında belirtmek gerekir."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-bymuzaffer",
+      "categoryId": "balik",
+      "resolvedName": "By Muzaffer Beşiktaş",
+      "branchName": "Cihannüma, Salihefendi Sk. No:2, 34351 Beşiktaş/İstanbul",
+      "placeId": "ChIJNXKiMrC3yhQR0B1APntGeSU",
+      "coordinates": {
+        "lat": 41.0433297,
+        "lng": 29.006694900000003
+      },
+      "rating": 4.8,
+      "userRatingCount": 973,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.bymuzaffer.com/",
+      "mapsUri": "https://maps.google.com/?cid=2700266946724634064",
+      "recommendedPrimary": [
+        "Mevsim Izgara Deniz Balığı",
+        "Ahtapot Salatası & Lakerda",
+        "Tereyağlı Karides Güveç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Deniz Börülcesi-Girit Ezmesi İkilisi & Balık Kokoreç",
+          "note": "Boğaz manzaralı açılır-kapanır terasta günlük deniz balığı öncesi meze tepsisinin öne çıkan sıcak ve soğuk ikilisi.",
+          "proof": "Beşiktaş deniz ürünleri rehberleri ve işletme menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Boğaz’a hakim açılır-kapanır cam teras ve şık masa servisi düzeni",
+        "crowdAndNoise": "Kaliteli deniz ürünü ve manzaralı akşam sofrası arayan gruplar ve çiftler",
+        "disadvantage": "Boğaz manzaralı teras konsepti nedeniyle Çarşı esnaf balıkçılarına kıyasla fiyat seviyesi daha yüksek.",
+        "transit": "Cihannüma Mahallesi Salih Efendi Sokak üzerinde, Barbaros Bulvarı’nın Yıldız yakası yanında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Oggusto — Beşiktaş Balık ve Deniz Ürünleri",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Boğaz teras manzarası ve taze kabuklu–balık seçkisiyle çarşının üzerinde konumlanan balık restoranı"
+        },
+        {
+          "title": "İstanbul Deniz Ürünleri Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ahtapot, karides ve meze tazeliğiyle 4.8 puan standardını istikrarlı biçimde koruyor"
+        }
+      ],
+      "pros": [
+        "Köyiçi sokak gürültüsünün dışında Boğaz manzaralı konforlu teras",
+        "Taze meze dolabı ve iyi pişirilmiş ızgara mevsim balıkları"
+      ],
+      "cons": [
+        "Akşam yemeği ve teras masaları için önceden rezervasyon gerekiyor"
+      ],
+      "uncertainties": [
+        "Günlük av mevsim balıkları balık halindeki sabah arzına göre değişir."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-olta-balik",
+      "categoryId": "balik",
+      "resolvedName": "Beşiktaş Olta Balık",
+      "branchName": "Sinanpaşa, Köyiçi Mektep Sk. No:14/A, 34890 Beşiktaş/İstanbul",
+      "placeId": "ChIJMeBqeAy3yhQRGqfqvm2U4_c",
+      "coordinates": {
+        "lat": 41.0441155,
+        "lng": 29.0047166
+      },
+      "rating": 4.4,
+      "userRatingCount": 427,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17862283746156914458",
+      "recommendedPrimary": [
+        "Günlük Mevsim Tava & Izgara Balık",
+        "Karides Güveç",
+        "Kalamar Tava"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fava-Deniz Börülcesi Meze Tabağı & Sıcak Ege Otları",
+          "note": "Tarihi Köyiçi Balık Pazarı atmosferinde günlük tezgah balığının yanına taze hazırlanan Ege mezeleri.",
+          "proof": "Beşiktaş Balık Pazarı rehberleri ve menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Balık Pazarı yakınındaki iç salon ve hareketli ara sokak masaları",
+        "crowdAndNoise": "Gerçek çarşı balıkçı atmosferinde taze hamsi, palamut veya çipura yemek isteyenler",
+        "disadvantage": "Balık Pazarı çevresindeki pek çok noktaya kıyasla yüksek puanlı olsa da hafta sonu sokak sesi oldukça hareketli.",
+        "transit": "Sinanpaşa Balık Pazarı arkasındaki Köyiçi Mektep Sokak üzerinde."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Time Out İstanbul — Beşiktaş Balık Pazarı Durakları",
+          "url": "https://www.timeout.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Pazarın turist tuzaklarından ayrışarak günlük balık tazeliğini koruyan güvenilir adresi"
+        },
+        {
+          "title": "Köyiçi Balık Severler Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hızlı tezgah tazeliği ve makul meze eşleşmeleriyle çarşı müdavimlerinin favorisi"
+        }
+      ],
+      "pros": [
+        "Balık Pazarı’nda sabit kalıp yerine günlük taze av balığına göre servis",
+        "Sıcak karides güveç ve çıtır kalamar tutarlılığı"
+      ],
+      "cons": [
+        "Akşam saatlerinde mekan akustiği oldukça canlı olabiliyor"
+      ],
+      "uncertainties": [
+        "Hamsi, çinekop ve palamut seçenekleri av yasağı ve sezona bağlıdır."
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bes-balikci-hasan",
+      "categoryId": "balik",
+      "resolvedName": "Balıkçı Hasan Beşiktaş",
+      "branchName": "Sinanpaşa, Köyiçi Cd No:6, 34330 Beşiktaş/İstanbul",
+      "placeId": "ChIJnZyuvaS3yhQRgRnxj9lic5o",
+      "coordinates": {
+        "lat": 41.0435282,
+        "lng": 29.0058986
+      },
+      "rating": 4.9,
+      "userRatingCount": 41,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11129347790724995457",
+      "recommendedPrimary": [
+        "Güveçte Tereyağlı Karides",
+        "Mevsim Balığı Izgara",
+        "Çıtır Kalamar Tava"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Zeytinyağlı Meze Tepsisi & Mevsim Roka Salatası",
+          "note": "Köyiçi Caddesi’nde taze balık porsiyonlarının yanına esnaf usulü hazırlanan yeşillik ve soğuk meze eşlikçisi.",
+          "proof": "Beşiktaş yerel balıkçı seçkileri ve topluluk kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt esnaf lokantası salonu ve mütevazı cadde önü masa yerleşimi",
+        "crowdAndNoise": "Gösterişli dekor yerine ustadan doğrudan taze balık yemek isteyen semt sakinleri",
+        "disadvantage": "Küçük aile/esnaf işletmesi ölçeğinde olduğundan aynı anda kalabalık grupları ağırlamakta sınırlı.",
+        "transit": "Sinanpaşa Köyiçi Caddesi üzerinde, ana Balık Pazarı kubbesinin birkaç bina yukarısında."
+      },
+      "verifiedAt": "2026-11-14",
+      "sources": [
+        {
+          "title": "Beşiktaş Yerel Balıkçılar Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Köyiçi esnaf dokusu içinde yüksek malzeme tazeliği ve yalın pişirme disipliniyle öne çıkan nokta"
+        },
+        {
+          "title": "Beşiktaş Semt Müdavimleri Topluluğu",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Henüz butik hacmine karşın karides güveç ve günlük balıklarıyla istisnasız yüksek beğeni topluyor"
+        }
+      ],
+      "pros": [
+        "Taze tereyağlı karides güveç ve yalın esnaf dürüstlüğü",
+        "Çarşı kalabalığında temiz ve güvenilir pişirme kalitesi"
+      ],
+      "cons": [
+        "Butik salon kapasitesi nedeniyle önceden telefonla yer sormak faydalı olabiliyor"
+      ],
+      "uncertainties": [
+        "Mevcut değerlendirme hacmi büyümekte olup mevsime göre balık çeşitleri günlük güncellenir."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    }
+  ]
+}

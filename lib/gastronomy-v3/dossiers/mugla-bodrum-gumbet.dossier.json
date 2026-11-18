@@ -1,0 +1,1268 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "mugla-bodrum-gumbet",
+  "displayName": "Gümbet, Bodrum, Muğla",
+  "verifiedAt": "2026-11-16T20:06:20.167Z",
+  "selectedCount": 11,
+  "rejectedControls": [
+    {
+      "id": "ctrl-gumbet-burger-king",
+      "resolvedName": "Burger King - Gümbet",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gumbet-mcdonalds",
+      "resolvedName": "McDonald's Bodrum Gümbet",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gumbet-little-caesars",
+      "resolvedName": "Little Caesars Bodrum Gümbet Şubesi",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gumbet-dominos",
+      "resolvedName": "Domino's Pizza Bodrum",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gumbet-royal-pastanesi",
+      "resolvedName": "Royal Pastanesi Gümbet 2 Şube",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gumbet-pizza-locale",
+      "resolvedName": "Pizza Locale Bodrum",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gumbet-starbucks-oasis",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gumbet-cookshop",
+      "resolvedName": "Bodrum Cookshop",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gumbet-maharet-manti-chain",
+      "resolvedName": "Maharet Mantı Bodrum",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gumbet-oses-cigkofte-chain",
+      "resolvedName": "Gümbet Oses çiğ köfte",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-gumbet-sahil-invalid-type",
+      "resolvedName": "Gümbet Sahil",
+      "reason": "invalid_place_type:none"
+    },
+    {
+      "id": "ctrl-gumbet-konya-nergiz-low",
+      "resolvedName": "Konya Nergiz",
+      "reason": "below_quality_threshold:★4.2(121)"
+    },
+    {
+      "id": "ctrl-gumbet-doner-low",
+      "resolvedName": "Gümbet Döner",
+      "reason": "below_quality_threshold:★4(221)"
+    },
+    {
+      "id": "ctrl-gumbet-ates-doner-low",
+      "resolvedName": "ATEŞ DÖNER GÜMBET",
+      "reason": "below_quality_threshold:★3.7(135)"
+    },
+    {
+      "id": "ctrl-gumbet-alora-beach-low",
+      "resolvedName": "ALORA BEACH CLUB",
+      "reason": "below_quality_threshold:★3.5(672)"
+    },
+    {
+      "id": "ctrl-gumbet-bonita-lounge-low",
+      "resolvedName": "Bonita lounge cafe",
+      "reason": "below_quality_threshold:★4(44)"
+    },
+    {
+      "id": "ctrl-gumbet-ozukara-low",
+      "resolvedName": "Özükara Restaurant",
+      "reason": "below_quality_threshold:★3.6(42)"
+    },
+    {
+      "id": "ctrl-gumbet-burnger-low",
+      "resolvedName": "Burnger Gümbet",
+      "reason": "below_quality_threshold:★3.6(17)"
+    },
+    {
+      "id": "ctrl-gumbet-gozleme-low-count",
+      "resolvedName": "Gümbet Gözleme",
+      "reason": "below_quality_threshold:★4.5(17)"
+    },
+    {
+      "id": "ctrl-gumbet-cali-kebap-low-count",
+      "resolvedName": "Çali Kebap Evi",
+      "reason": "below_quality_threshold:★5(33)"
+    },
+    {
+      "id": "ctrl-gumbet-nefiss-outside-low",
+      "resolvedName": "NEFİSS EV YEMEKLERİ GÜMBET",
+      "reason": "outside_strict_neighborhood:Bbox dışında (37.04006, 27.41013)"
+    },
+    {
+      "id": "ctrl-gumbet-whynot-outside-low",
+      "resolvedName": "WHY NOT BEACH BODRUM",
+      "reason": "outside_strict_neighborhood:Bbox dışında (37.02917, 27.39582)"
+    },
+    {
+      "id": "ctrl-gumbet-madu-inflation",
+      "resolvedName": "Madu Bodrum",
+      "reason": "suspected_rating_inflation_no_community_proof"
+    },
+    {
+      "id": "ctrl-gumbet-bosstans-inflation",
+      "resolvedName": "Bosstan's Fırın Gümbet",
+      "reason": "outside_strict_neighborhood:İlçe uyuşmazlığı (beklenen: Bodrum)"
+    },
+    {
+      "id": "ctrl-gumbet-family-door-karaoke",
+      "resolvedName": "FAMİLY DOOR RESTAURANT & KARAOKE FUN PUB",
+      "reason": "recent_quality_degradation:Karaoke ve bar eğlence konsepti baskın olduğundan sessiz akşam yemeği ve gastronomi seçkisi kapsamı dışında bırakıldı"
+    },
+    {
+      "id": "ctrl-gumbet-cheers-upsell",
+      "resolvedName": "Cheers Restaurant",
+      "reason": "recent_quality_degradation:Karaoke ve canlı maç barı atmosferinin yanında ziyaretçi incelemelerinde fiyat şeffaflığı ve yönlendirme baskısı uyarıları bulunuyor"
+    },
+    {
+      "id": "ctrl-gumbet-bamboo-house-adisyon",
+      "resolvedName": "Bamboo house",
+      "reason": "recent_quality_degradation:Çeşitli platformlarda adisyonda yer almayan ek kalemler, ikram çerezlere yazılan ücretler ve personel tutumu şikayetleri raporlanmıştır"
+    },
+    {
+      "id": "ctrl-gumbet-landscape-bistro-complaint",
+      "resolvedName": "Landscape Bistro",
+      "reason": "recent_quality_degradation:İnceleme platformlarında kuzu yemeği kaynaklı ciddi gıda zehirlenmesi şikayeti ve yoğun saat servis aksaklıkları yer almaktadır"
+    },
+    {
+      "id": "ctrl-gumbet-odd-burger-bitez-outside",
+      "resolvedName": "Odd Burger Co.",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Gümbet/Gumbet/Cevat Şakir/Cevat Sakir/Asarlık/Asarlik, adres: Bitez, Kavaklı Sarnıç Cd. No: 25 D:101, 48400 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-gumbet-fika-bitez-outside",
+      "resolvedName": "Fika Coffee Tea",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Gümbet/Gumbet/Cevat Şakir/Cevat Sakir/Asarlık/Asarlik, adres: Bitez, Kanuni Sultan Süleyman Cd. No:2, 48470 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-gumbet-rascal-bitez-excludebbox",
+      "resolvedName": "Rascal Napolitan Pizza & Panuozzo",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Gümbet/Gumbet/Cevat Şakir/Cevat Sakir/Asarlık/Asarlik, adres: Bitez, Yel Değirmeni Cd. No:7, 48400 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-gumbet-rubys-eskicesme-outside",
+      "resolvedName": "Rubys Pizzeria Food & Beverage pizza",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Gümbet/Gumbet/Cevat Şakir/Cevat Sakir/Asarlık/Asarlik, adres: Eskiçeşme, Cafer Paşa Cd. no: 39/B, 48400 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-gumbet-chives-eskicesme-outside",
+      "resolvedName": "Cafe Chives",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Gümbet/Gumbet/Cevat Şakir/Cevat Sakir/Asarlık/Asarlik, adres: Eskiçeşme, Cafer Paşa Cd. No:57/A, 48400 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-gumbet-kaya-balik-eskicesme-outside",
+      "resolvedName": "KAYA BALIK MEZE EVI",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Gümbet/Gumbet/Cevat Şakir/Cevat Sakir/Asarlık/Asarlik, adres: Eskiçeşme, Büyük İskender Cd. No:27.A D:1, 48400 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-gumbet-basar-balik-yenikoy-outside",
+      "resolvedName": "BAŞAR BALIKÇILIK / Balık Market / Pişirici / Meze",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Gümbet/Gumbet/Cevat Şakir/Cevat Sakir/Asarlık/Asarlik, adres: Yeniköy, Severcan Cd. no:8, 48400 Bodrum/Muğla)"
+    },
+    {
+      "id": "ctrl-gumbet-ile-kitabevi-cumhuriyet-outside",
+      "resolvedName": "İLE Kitabevi &Kafe",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Gümbet/Gumbet/Cevat Şakir/Cevat Sakir/Asarlık/Asarlik, adres: Emin Anter Bulv, Cumhuriyet, Kıbrıs Şehitleri Cd. Oasis Alışveriş Kültür Ve Eğlence Merkezi, 48400 Bodrum/Muğla)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "pixel-burger-gumbet",
+      "categoryId": "hamburger",
+      "resolvedName": "Pixel Burger Bodrum",
+      "branchName": "Cevat Şakir, İsmet İnönü Cd. No:58 D:c, 48400 Bodrum/Muğla",
+      "placeId": "ChIJ0Qh0nxZtvhQREtuy3rOJhvI",
+      "coordinates": {
+        "lat": 37.0395776,
+        "lng": 27.4073878
+      },
+      "rating": 4.7,
+      "userRatingCount": 55,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/pixel.bodrum/",
+      "mapsUri": "https://maps.google.com/?cid=17475806809686203154",
+      "recommendedPrimary": [
+        "Pixel Cheese Smash Burger",
+        "Trüf Soslu Dana Burger",
+        "Animal Fries"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çıtır Tavuk Tenders Box",
+          "note": "Altılı ve on ikili kutu seçenekleriyle dana burger siparişi yanında paylaşım veya tavuk tercihi için öne çıkar.",
+          "proof": "Yemeksepeti ve Migros Yemek menü kayıtları"
+        },
+        {
+          "name": "Chaos Fries",
+          "note": "Özel sos ve baharat dokunuşuyla smash burger menülerini tamamlayan yan patates seçeneğidir.",
+          "proof": "Yemeksepeti menü listesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Neon detaylı modern iç tezgah alanı ve paket servis odaklı kompakt oturma düzeni",
+        "crowdAndNoise": "Öğleden gece yarısı sonrasına kadar yerel gençler ve gece atıştırmalığı arayanlarla akıcı tempo",
+        "disadvantage": "Gümbet sahil şeridinden içeride, Cevat Şakir geçiş aksında yer alır; manzaralı uzun oturum mekanı değildir ve yoğun sezon gecelerinde paket servis bekleme süreleri uzayabilir",
+        "transit": "Cevat Şakir İsmet İnönü Caddesi No:58 D:c üzerinde Gümbet kavşağına yürüyüş mesafesinde"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Restoranim.net — Pixel Burger Bodrum",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İsmet İnönü Cd. 58/C konumu, et pişirme dengesi, trüf sosları ve gece servisi değerlendirmeleri"
+        },
+        {
+          "title": "Yemeksepeti — Pixel Burger Bodrum",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Pixel Cheese Smash Burger, Animal Fries, Chaos Fries ve Tenders Box menü doğrulaması"
+        },
+        {
+          "title": "Migros Yemek — Pixel Burger Bodrum",
+          "url": "https://www.migros.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Aktif paket servis menüsü ve bağımsız Bodrum şube doğrulaması"
+        },
+        {
+          "title": "Yandex Harita — Pixel Burger Bodrum",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Cevat Şakir İsmet İnönü Cd. No:58 konum ve ev yapımı burger geri bildirimleri"
+        },
+        {
+          "title": "Pixel Burger Bodrum Resmi Instagram",
+          "url": "https://www.instagram.com/pixel.bodrum/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Güncel burger çeşitleri ve işletme duyuruları"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=17475806809686203154",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Cevat Şakir İsmet İnönü Cd. No:58 D:c konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Taze smash köfteleri, trüflü sosları ve çıtır patates çeşitleriyle zincir fast-food markalarından ayrışması",
+        "Gece geç saatlere kadar açık kalarak Gümbet-Cevat Şakir hattında güvenilir sıcak yemek sunması"
+      ],
+      "cons": [
+        "Kompakt dükkan yapısı nedeniyle kalabalık gruplar için uzun süreli oturuma uygun değildir",
+        "Yüksek sezon gecelerinde teslimat ve hazırlık sürelerinde gecikme yaşanabiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışı dönemlerde gece kapanış saati günün yoğunluğuna göre erken çekilebiliyor"
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "annalivia-gumbet",
+      "categoryId": "date",
+      "resolvedName": "ANNALIVIA RESTAURANT GUMBET",
+      "branchName": "Gümbet, Şakir Esendemir Sk. No:6/B, 48409 Bodrum/Muğla",
+      "placeId": "ChIJnX7JErJtvhQRiSPgTHfd4Uc",
+      "coordinates": {
+        "lat": 37.034676,
+        "lng": 27.403164399999998
+      },
+      "rating": 4.8,
+      "userRatingCount": 443,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.facebook.com/annaliviarestaurant",
+      "mapsUri": "https://maps.google.com/?cid=5179664550913385353",
+      "recommendedPrimary": [
+        "Annalivia Steak",
+        "Fırınlanmış Kuzu Pirzola",
+        "Peynirli Çıtır Börek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çikolatalı Sufle",
+          "note": "Ana et yemeklerinin ardından taze pişmiş iç dokusuyla akşam masalarının en sık önerilen tatlı kapanışıdır.",
+          "proof": "Holiday Hypermarket ve Restaurant Guru kayıtları"
+        },
+        {
+          "name": "Karides Kokteyl & Paper Chicken",
+          "note": "Kırmızı et yerine hafif başlangıç veya kümes hayvanı tabağı tercih edenler için menüyü dengeler.",
+          "proof": "Restaurant Guru menü içerikleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Panoramik Gümbet manzaralı kapalı teras ve sıcak aydınlatmalı sakin masa düzeni",
+        "crowdAndNoise": "Akşamları çiftler, yıldönümü kutlamaları ve sakin yemek arayan ailelerle huzurlu tempo",
+        "disadvantage": "Gümbet eğlence hattının dışında kaldığından deniz sıfırı yürüyüş yolu üzerinde değildir; yaz akşamlarında teras masaları için önceden rezervasyon gerekir",
+        "transit": "Gümbet Mahallesi Şakir Esendemir Sokak No:6/B üzerinde yamaç ara sokak hattında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Holiday Hypermarket — Gümbet Yeme-İçme Rehberi",
+          "url": "https://www.holidayhypermarket.co.uk/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Teras manzarası, bonfile, kuzu pirzola, peynirli börek ve çikolatalı sufle incelemesi"
+        },
+        {
+          "title": "Bodrum Holiday — Annalivia Restaurant",
+          "url": "https://www.bodrumholiday.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Gürültülü gece hayatından uzak, çiftlere uygun romantik yemek atmosferi detayı"
+        },
+        {
+          "title": "Restaurant Guru — Annalivia Restaurant Gumbet",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Annalivia Steak, Paper Chicken, limonlu cheesecake ve servis kalitesi değerlendirmeleri"
+        },
+        {
+          "title": "Yandex Harita — Annalivia Restaurant",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Şakir Esendemir Sk. No:6/B teras konumu ve akşam servisi geri bildirimleri"
+        },
+        {
+          "title": "Annalivia Restaurant Resmi Sayfası",
+          "url": "https://www.facebook.com/annaliviarestaurant",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Aktif işletme duyuruları ve rezervasyon bilgisi"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=5179664550913385353",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Şakir Esendemir Sk. No:6/B konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Karaoke ve bar gürültüsünden tamamen sıyrılmış manzaralı teras ve özenli tabak sunumu",
+        "Bonfile ve kuzu pirzolanın yanında taze çikolatalı sufle gibi güçlü tatlı kapanışı sunması"
+      ],
+      "cons": [
+        "Yüksek sezonda teras masaları hızlı dolduğundan rezervasyonsuz yer bulmak zorlaşabiliyor",
+        "Kumsal kıyısında değil yamaçtaki ara sokakta konumlanır"
+      ],
+      "uncertainties": [
+        "Kış ve ara sezon dönemlerindeki açık kalma takvimi mevsime göre değişebiliyor"
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mistral-bay-gumbet",
+      "categoryId": "date",
+      "resolvedName": "Mistral Bay Steak & Wine House",
+      "branchName": "Gümbet, Melengeç Sk. No:16 D:16, 48400 Bodrum/Muğla",
+      "placeId": "ChIJ1TkvHK1tvhQRjyVC_gDLnb8",
+      "coordinates": {
+        "lat": 37.031250899999996,
+        "lng": 27.4067407
+      },
+      "rating": 4.6,
+      "userRatingCount": 254,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13807415237713995151",
+      "recommendedPrimary": [
+        "Bonfile Steak",
+        "Ribeye Steak",
+        "Izgara Levrek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Şarapları & Kadeh Eşleşmeleri",
+          "note": "Et ve balık tabaklarıyla birlikte sunulan şarap listesi akşam buluşmalarının temel unsurudur.",
+          "proof": "Restaurant Guru ve Yerels kayıtları"
+        },
+        {
+          "name": "Kremalı Mantar Çorbası",
+          "note": "Steak öncesi hafif sıcak başlangıç tercih eden misafirlerin öne çıkardığı seçenektir.",
+          "proof": "Restaurant Guru menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sakin Melengeç Sokak cephesinde geniş bahçe masaları ve klasik şarap evi iç salonu",
+        "crowdAndNoise": "Çiftler, uzun akşam yemeği tercih eden gruplar ve ailelerle dengeli ve nezih tempo",
+        "disadvantage": "Gümbet marinaları veya lüks otellere göre klasik bir steakhouse çizgisindedir; yüksek sezonda yoğun akşamlar için masa ayırtmak gerekir",
+        "transit": "Gümbet Mahallesi Melengeç Sokak No:16 D:16 üzerinde sahil otelleri arka hattında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Düğün.com & Düğün Buketi — Mistral Bay 1990 Arşivi",
+          "url": "https://dugun.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1990 yılından beri süregelen bahçeli steak ve şarap evi işletmeciliği kaydı"
+        },
+        {
+          "title": "Restaurant Guru — Mistral Bay Steak & Wine House",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bonfile, ribeye, ızgara levrek ve mantar çorbası değerlendirmeleri"
+        },
+        {
+          "title": "Meyhankoli — Mistral Bay Gümbet",
+          "url": "https://www.meyhankoli.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Melengeç Sk. konumu, nezih servis ve akşam yemeği deneyimi notları"
+        },
+        {
+          "title": "Yandex Harita — Mistral Bay Steak & Wine House",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Melengeç Sk. No:16 D:16 konum ve şarap evi doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=13807415237713995151",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Melengeç Sk. No:16 D:16 konum ve steak_house doğrulaması"
+        }
+      ],
+      "pros": [
+        "Otuz yılı aşkın geçmişiyle Gümbet karmaşasından uzak düzenli bahçe steakhouse ortamı sunması",
+        "Et kesimlerinin yanında taze levrek ve kapsamlı şarap eşleşmeleri barındırması"
+      ],
+      "cons": [
+        "Bölge ortalamasının üzerindeki et ve şarap kalemleri bütçe planlaması gerektirir",
+        "Denize sıfır kumsal manzarası yerine bahçe ve sokak dokusu sunar"
+      ],
+      "uncertainties": [
+        "Sezon dışında özel davet ve akşam servisi günleri dönemsel güncellenebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "the-colombia-gumbet",
+      "categoryId": "date",
+      "resolvedName": "The Colombia Restoran Steak House",
+      "branchName": "Gümbet, Mister Hadi Sk. No:6, 48400 Bodrum/Muğla",
+      "placeId": "ChIJ-fROaq1tvhQRmLqXlNkIcEs",
+      "coordinates": {
+        "lat": 37.0324577,
+        "lng": 27.4069146
+      },
+      "rating": 4.6,
+      "userRatingCount": 243,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5435854480830085784",
+      "recommendedPrimary": [
+        "Bonfile Steak",
+        "Chicken Tikka Masala",
+        "Izgara Fajita"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Balon Ekmek & Dip Soslar",
+          "note": "Ana sipariş öncesinde fırından yeni çıkmış haliyle masaya ikram edilen imza başlangıçtır.",
+          "proof": "Wanderlog ve Restaurant Guru kayıtları"
+        },
+        {
+          "name": "Vejetaryen & Hint Köri Seçenekleri",
+          "note": "Steak menüsünün yanında farklı damak tatlarına sahip çiftler ve gruplar için esneklik sağlar.",
+          "proof": "Yandex Harita ve Restaurant Guru menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Mister Hadi Sokak üzerinde ferah açık teras masaları ve düzenli iç salon",
+        "crowdAndNoise": "Sakin akşam yemeği arayan çiftler ve güler yüzlü aile işletmesi ortamı seven gruplarla rahat tempo",
+        "disadvantage": "Saf tek mutfaklı bir et restoranı yerine steakhouse ile Hint ve dünya mutfağını aynı menüde toplar; yaz akşamlarında sokak terası erken dolabilir",
+        "transit": "Gümbet Mahallesi Mister Hadi Sokak No:6 üzerinde sahil yakını sakin sokakta"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Bodrumdayız — The Colombia Gümbet Rehberi",
+          "url": "https://www.bodrumdayiz.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mister Hadi Sokak konumu ve Gümbet steakhouse tavsiyesi"
+        },
+        {
+          "title": "Wanderlog — The Colombia Restoran Steak House",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze balon ekmek ikramı, bonfile steak ve Chicken Tikka Masala değerlendirmeleri"
+        },
+        {
+          "title": "Restaurant Guru — The Colombia Restoran",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Aile işletmesi ilgisi, adil fiyatlandırma ve karaoke barlardan ayrılan yemek odaklı ortam"
+        },
+        {
+          "title": "Yandex Harita — The Colombia Restoran",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mister Hadi Sk. No:6 konum ve steakhouse doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=5435854480830085784",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Mister Hadi Sk. No:6 konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Gümbet barlar sokağı karmaşasından uzak, yüksek sesli eğlence olmadan rahat akşam yemeği sunması",
+        "Sıcak balon ekmek ikramı ve aile işletmesi sıcaklığıyla makul fiyat-kalite dengesi yakalaması"
+      ],
+      "cons": [
+        "Çok geniş yelpazeli dünya menüsü nedeniyle saf butik et lokantası arayanlara eklektik gelebilir",
+        "Yoğun yaz akşamlarında teras masalarında yer beklemek gerekebiliyor"
+      ],
+      "uncertainties": [
+        "Sabahtan gece geç saatlere uzanan çalışma takvimi sezon geçişlerinde kısalabiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "iconic-beach-gumbet",
+      "categoryId": "date",
+      "resolvedName": "Iconic Beach Bodrum",
+      "branchName": "Gümbet, Kaşif Ertekin Sk. 12/7, 48400 Bodrum/Muğla",
+      "placeId": "ChIJDauLUoxtvhQRqsZMlbI4v2Y",
+      "coordinates": {
+        "lat": 37.0297741,
+        "lng": 27.396836800000003
+      },
+      "rating": 4.4,
+      "userRatingCount": 786,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7403698652080555690",
+      "recommendedPrimary": [
+        "Taş Fırın Flatbread Pizza",
+        "Tavuk Quesadilla",
+        "Günlük Deniz Ürünleri & Ege Tabakları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İmza Kokteyller & Gün Batımı Servisi",
+          "note": "Akşamüstü iskele ve sahil masalarında gün batımı eşliğinde sunulan bar seçkisidir.",
+          "proof": "OGGUSTO Bodrum Asarlık rehberi"
+        },
+        {
+          "name": "Cheesecake & Tatlı Alternatifleri",
+          "note": "Bistro öğünlerinin ardından sahil ve teras masalarında tercih edilen tatlı eşlikçisidir.",
+          "proof": "Wanderlog ziyaretçi geri bildirimleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Asarlık Koyu kıyısında ince kumlu plaj, ahşap iskele ve bohem tarzda açık hava restoran masaları",
+        "crowdAndNoise": "Gündüz sakin deniz misafirleri, gün batımında DJ ve saksafon eşliğinde sosyal çiftler ve gruplar",
+        "disadvantage": "Çok yüksek bütçe segmentindedir; plaj bölümünde minimum harcama limiti ile servis ücreti uygulanabilir ve deniz tabanı yer yer taşlı yapıdadır",
+        "transit": "Gümbet Asarlık Mevkii Kaşif Ertekin Sokak 12/7 adresinde Bitez sınır koyunda"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "OGGUSTO — Iconic Beach Bodrum İncelemesi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Asarlık mevkii ince kumlu plaj, ahşap iskele ve gün batımı DJ/saksafon atmosferi"
+        },
+        {
+          "title": "Wanderlog — Iconic Beach Bodrum",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tavuk quesadilla, cheesecake, güler yüzlü servis ve yüksek fiyat/servis bedeli notları"
+        },
+        {
+          "title": "MenüHaritası — Iconic Beach Asarlık",
+          "url": "https://menuharitasi.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Akdeniz ve Ege plaj bistro menü kapsamı"
+        },
+        {
+          "title": "Iconic Bodrum Resmi Sitesi",
+          "url": "https://iconicbodrum.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Asarlık Koyu konum, dijital menü ve plaj-restoran hizmeti"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=7403698652080555690",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kaşif Ertekin Sk. 12/7 Asarlık konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Gümbet merkez karmaşasından uzakta, Asarlık Koyu üzerinde iskele ve gün batımı manzarası sunması",
+        "Plaj bistrosu standardının üzerinde düzenli servis ve modern tasarım çizgisi"
+      ],
+      "cons": [
+        "Üst segment fiyatlama, harcama limiti ve ek servis bedeli nedeniyle bütçe açısından yüksektir",
+        "Akşamüstü DJ performansı sessiz ve baş başa bir ortam arayanlara hareketli gelebilir"
+      ],
+      "uncertainties": [
+        "Sezon içi minimum harcama ve loca koşulları dönemsel olarak işletme tarafından güncelleniyor"
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "gumbet-dragon",
+      "categoryId": "denemelisin",
+      "resolvedName": "Gumbet Dragon Chinese and Indian Restaurant & Sushi Bar",
+      "branchName": "Gümbet, Ayaz Cd. No:41/A, 48400 Bodrum/Muğla",
+      "placeId": "ChIJ-XyBsI1tvhQRDq9LwDSWgEE",
+      "coordinates": {
+        "lat": 37.0330426,
+        "lng": 27.4060384
+      },
+      "rating": 4.8,
+      "userRatingCount": 1537,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.gumbetdragon.com/",
+      "mapsUri": "https://maps.google.com/?cid=4719937562792931086",
+      "recommendedPrimary": [
+        "Special Mixed Hint Körisi",
+        "Tatlı Ekşi Soslu Wok Tavuk",
+        "Salmon Philadelphia Sesame Sushi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Salmon Avocado Maki & Sushi Setleri",
+          "note": "Wok ve köri ana yemeklerinin yanında ayrı sushi bar bölümünde günlük taze hazırlanır.",
+          "proof": "Yemeksepeti ve gumbetdragon.com menü kayıtları"
+        },
+        {
+          "name": "Chow Mein Noodle & Wok Tabakları",
+          "note": "Sebzeli veya etli klasik Çin wok tekniğiyle pişirilen paylaşmalık ana tabaklardır.",
+          "proof": "gumbetdragon.com ve Yemeksepeti kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ayaz Caddesi üzerinde samimi iç salon ve sıcak akşam atmosferine sahip teras oturumu",
+        "crowdAndNoise": "Yıllardır gelen müdavimler, Asya mutfağı arayan tatilciler ve kalabalık ailelerle canlı ama düzenli tempo",
+        "disadvantage": "Geleneksel Türk mutfağı yerine Asya ve Hint füzyonu arayanlara hitap eder; yüksek sezon akşamlarında doluluk nedeniyle rezervasyon önerilir",
+        "transit": "Gümbet Mahallesi Ayaz Caddesi No:41/A üzerinde (Gümbet içi ücretsiz servis olanağıyla)"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Bodrum Mekan Rehberi — Gümbet Dragon",
+          "url": "https://www.bodrummekanrehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ayaz Cd. No:41/A konumu ve köklü Çin-Hint-Sushi mutfağı tanıtımı"
+        },
+        {
+          "title": "Restaurant Guru — Gümbet Dragon",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Köri çeşitleri, sushi bar, sıcak ev sahipliği ve porsiyon-fiyat dengesi değerlendirmeleri"
+        },
+        {
+          "title": "Yemeksepeti — Gümbet Dragon Menü",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Salmon Philadelphia Sesame, Salmon Avocado Maki ve Chow Mein menü doğrulaması"
+        },
+        {
+          "title": "Yandex Harita — Gümbet Dragon",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ayaz Cd. No:41/A konum ve Asya mutfağı geri bildirimleri"
+        },
+        {
+          "title": "Gümbet Dragon Resmi Web Sitesi",
+          "url": "https://www.gumbetdragon.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "1989 kuruluş yılı, Bülent Işık yönetimi ve güncel menü doğrulanması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=4719937562792931086",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Ayaz Cd. No:41/A konum ve chinese_restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "1989 yılından beri aynı adreste istikrarını koruyan nadir Gümbet Uzak Doğu ve Hint mutfağı klasiği olması",
+        "Çin wok, Hint körisi ve taze sushi bar seçeneklerini aynı çatı altında yüksek memnuniyetle sunması"
+      ],
+      "cons": [
+        "Yaz sezonunun yoğun akşamlarında masa bekleme süresi yaşanabiliyor",
+        "Türk mezeleri ve deniz ürünü klasiklerinden ziyade baharatlı Asya mutfağına odaklanır"
+      ],
+      "uncertainties": [
+        "Sezon dışı kış aylarındaki çalışma günleri işletme takvimine göre değişebiliyor"
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "hane-ocakbasi-gumbet",
+      "categoryId": "denemelisin",
+      "resolvedName": "Hane Ocakbaşı Gümbet",
+      "branchName": "Gümbet, Ayaz Cd. No:77 B02, 48400 Bodrum/Muğla",
+      "placeId": "ChIJJTnkLBJtvhQRh8xXIynS9yk",
+      "coordinates": {
+        "lat": 37.0351334,
+        "lng": 27.4036796
+      },
+      "rating": 4.9,
+      "userRatingCount": 1226,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3024116748931026055",
+      "recommendedPrimary": [
+        "Adana Kebap",
+        "Diyarbakır Usulü Ciğer Şiş",
+        "Patlıcanlı Kebap"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tavuk Şiş & Lahmacun",
+          "note": "Kırmızı et ve ciğer seçeneklerinin yanında hafif veya paylaşımlı sipariş arayan masalarda öne çıkar.",
+          "proof": "Restoranim.net ve Restaurant Guru kayıtları"
+        },
+        {
+          "name": "Günlük Soğuk Mezeler & Soslu Lavaş",
+          "note": "Kömür ateşinden çıkan kebaplara eşlik eden taze başlangıçlardır.",
+          "proof": "MyGuideBodrum ve Yandex Harita kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ayaz Caddesi cephesinde açık hava masaları ve ocakbaşı ateşi etrafında samimi iç salon",
+        "crowdAndNoise": "Öğleden gece yarısına kadar aileler, yerel çalışanlar ve kebap gruplarıyla hareketli tempo",
+        "disadvantage": "Gümbet merkez caddesinde yer aldığından deniz manzarası sunmaz; yoğun yaz akşamlarında servis hızı yavaşlayabileceği için rezervasyon faydalıdır",
+        "transit": "Gümbet Mahallesi Ayaz Caddesi No:77 B02 üzerinde merkezi yürüyüş aksında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "MyGuideBodrum — Hane Ocakbaşı Gümbet",
+          "url": "https://www.myguidebodrum.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ayaz Cd. No:77 B02 adresi, ocakbaşı düzeni ve Bodrum ortalamasına göre makul fiyat notu"
+        },
+        {
+          "title": "Restaurant Guru — Hane Ocakbaşı Gümbet",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Adana kebap, patlıcanlı kebap ve lahmacun lezzet geri bildirimleri"
+        },
+        {
+          "title": "Restoranim.net — Hane Ocakbaşı",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tavuk şiş, et pişirme kalitesi ve ilgili personel değerlendirmeleri"
+        },
+        {
+          "title": "Yandex Harita — Hane Ocakbaşı",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Diyarbakır usulü ciğer şiş ve taze meze övgüleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=3024116748931026055",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Ayaz Cd. No:77 B02 konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Kömür ateşinde pişen Diyarbakır usulü ciğer şiş, Adana ve patlıcanlı kebapta yüksek istikrar sağlaması",
+        "Turistik fiyat şişirmelerinden uzak, doyurucu ve ulaşılabilir ocakbaşı deneyimi sunması"
+      ],
+      "cons": [
+        "Yüksek yaz sezonunda akşam yoğunluğu nedeniyle masa bulma ve servis süresi uzayabiliyor",
+        "Cadde üzerinde bulunduğu için manzara veya sessiz bahçe beklentisine hitap etmez"
+      ],
+      "uncertainties": [
+        "Yoğun sezon dışındaki çalışma saatleri dönemsel esneklik gösterebiliyor"
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "bodrum-kalabalik-ocakbasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Bodrum Kalabalık Ocakbaşı Restaurant",
+      "branchName": "Gümbet, İsmet İnönü Cd. No:5 D:A, 48400 Bodrum/Muğla",
+      "placeId": "ChIJy9YszeJtvhQRlC0aTYHT83k",
+      "coordinates": {
+        "lat": 37.035618,
+        "lng": 27.4023938
+      },
+      "rating": 4.9,
+      "userRatingCount": 678,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8787599850227772820",
+      "recommendedPrimary": [
+        "Adana Kebap",
+        "Cağ Kebap",
+        "Lahmacun & Pide"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kelle Paça & Mercimek Çorbası",
+          "note": "Gece geç saatlere uzanan servisi boyunca sıcak çorba arayan misafirlerin öncelikli tercihidir.",
+          "proof": "Yemeksepeti menü kayıtları"
+        },
+        {
+          "name": "İkram Ezme, Haydari & Soslu Ekmek",
+          "note": "Ana kebap siparişinin yanında masaya taze getirilen geleneksel ocakbaşı eşlikçileridir.",
+          "proof": "Yemeksepeti ve Wanderlog kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "İsmet İnönü Caddesi üzerinde sade, ferah esnaf ocağı salonu ve hızlı servis düzeni",
+        "crowdAndNoise": "Öğle esnafından gece geç saatte kebap ve çorba arayan müdavimlere kesintisiz akış",
+        "disadvantage": "Geleneksel esnaf ocakbaşısı atmosferi sunar; romantik akşam yemeği veya sahil manzarası arayanlar için tasarlanmamıştır",
+        "transit": "Gümbet Mahallesi İsmet İnönü Caddesi No:5 D:A üzerinde Özükara Apart karşısında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Müdavim.net — Kalabalık Ocakbaşı Bodrum",
+          "url": "https://www.mudavim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Geleneksel ocakbaşı kültürü ve Bodrum kebap seçkisi değerlendirmesi"
+        },
+        {
+          "title": "Yemeksepeti — Bodrum Kalabalık Ocakbaşı",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Adana, cağ kebap, lahmacun, kelle paça çorbası ve soslu ekmek ikramları"
+        },
+        {
+          "title": "Restaurant Guru — Bodrum Kalabalık Ocakbaşı",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Et lezzeti, hızlı servis ve gece açık olma avantajı geri bildirimleri"
+        },
+        {
+          "title": "Yandex Harita — Kalabalık Ocakbaşı",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İsmet İnönü Cd. No:5 konum ve ikram mezeleri doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=8787599850227772820",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "İsmet İnönü Cd. No:5 D:A konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "Adana, cağ kebap, lahmacun ve kelle paça çorbasını aynı çatı altında gece geç saatlere dek sunması",
+        "Zengin ikram mezeleri ve soslu ekmekleriyle güçlü fiyat-performans dengesi sağlaması"
+      ],
+      "cons": [
+        "Ana cadde üzerinde esnaf lokantası düzeninde olduğundan romantik veya manzaralı oturum sunmaz",
+        "Çırkan yerleşimindeki Kalabalık Meyhane şubesiyle isim benzerliği nedeniyle karıştırılabiliyor"
+      ],
+      "uncertainties": [
+        "Cağ kebap şişinin günlük tükenme saatleri talebe göre değişebiliyor"
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "konya-ugurlu-gumbet",
+      "categoryId": "denemelisin",
+      "resolvedName": "Konya Uğurlu Restorant",
+      "branchName": "Gümbet, Ayaz Cd. No:79, 48400 Bodrum/Muğla",
+      "placeId": "ChIJ89BuELJtvhQRajOmqnn9WRk",
+      "coordinates": {
+        "lat": 37.0350623,
+        "lng": 27.4033592
+      },
+      "rating": 4.5,
+      "userRatingCount": 415,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1826769822871335786",
+      "recommendedPrimary": [
+        "Konya Etli Ekmek",
+        "Bıçakarası Pide",
+        "Mevlana Pidesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Dondurmalı Katmer & Künefe",
+          "note": "Etli ekmek ve pide sonrasında paylaşılan çıtır fırın tatlısı olarak en sık tavsiye edilen kapanıştır.",
+          "proof": "Wanderlog misafir değerlendirmeleri"
+        },
+        {
+          "name": "Adana Kebap & Izgara Köfte",
+          "note": "Pide dışında sıcak kömür ızgarası arayan aile masaları için menüyü tamamlar.",
+          "proof": "Yemeksepeti ve Yandex Harita kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ayaz Caddesi cephesinde temiz, ferah ve aile dostu açık-kapalı restoran masaları",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde yerel halk, aileler ve makul fiyatlı Türk mutfağı arayan tatilciler",
+        "disadvantage": "Gümbet ana caddesi üzerinde kaldığından manzara sunmaz; yoğun yaz akşamlarında taş fırın siparişlerinde servis temposu yavaşlayabiliyor",
+        "transit": "Gümbet Mahallesi Ayaz Caddesi No:79 üzerinde merkezi yürüyüş aksında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Restoranim.net — Konya Uğurlu Restorant Gümbet",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Aile işletmesi samimiyeti, temizlik ve Bodrum ortalamasına göre makul fiyat notları"
+        },
+        {
+          "title": "Wanderlog — Konya Uğurlu Restaurant",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Etli ekmek, Mevlana pidesi, dondurmalı katmer ve aile işletmeciliği övgüleri"
+        },
+        {
+          "title": "Yemeksepeti — Konya Uğurlu Restorant",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bıçakarası, etli ekmek, lahmacun ve kaşarlı pide menü doğrulaması"
+        },
+        {
+          "title": "Restaurant Guru — Konya Uğurlu",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ayaz Cd. No:79 konumu ve pide kalitesi değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=1826769822871335786",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Ayaz Cd. No:79 konum ve operasyon doğrulaması"
+        }
+      ],
+      "pros": [
+        "İnce hamurlu otantik Konya etli ekmeği, bıçakarası ve dondurmalı katmerde tutarlı fırın kalitesi",
+        "Gümbet turistik fiyatlarına karşı şeffaf ve adil fiyat politikası izleyen aile işletmesi olması"
+      ],
+      "cons": [
+        "Yoğun akşam saatlerinde taş fırın ve kurye yoğunluğu nedeniyle servis hızı düşebiliyor",
+        "Cadde konumu nedeniyle sahil veya bahçe atmosferi sunmaz"
+      ],
+      "uncertainties": [
+        "Sezon dışı kış dönemlerinde akşam kapanış saatleri talebe göre erken çekilebiliyor"
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "baki-ustanin-yeri-gumbet",
+      "categoryId": "denemelisin",
+      "resolvedName": "Baki Ustanın Yeri",
+      "branchName": "Gümbet, İsmet İnönü Cd. No:28, 48400 Bodrum/Muğla",
+      "placeId": "ChIJrxTn_4ZtvhQRHQ3YZP1Om0s",
+      "coordinates": {
+        "lat": 37.0375236,
+        "lng": 27.4041994
+      },
+      "rating": 4.7,
+      "userRatingCount": 111,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5448035024460320029",
+      "recommendedPrimary": [
+        "Kömürde Tavuk Kanat",
+        "Tavuk Kelebek & Pirzola",
+        "Adana Kebap"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çökertme Kebabı & Izgara Köfte",
+          "note": "Tavuk kanat uzmanlığının yanında yerel Ege ve klasik et tabağı tercih edenler için öne çıkar.",
+          "proof": "Yandex Harita ve Restaurant Guru kayıtları"
+        },
+        {
+          "name": "Soslu Lavaş & Ev Usulü Taze Salata",
+          "note": "Tüm ızgara ve kanat siparişlerinin yanında sıcak ve bol porsiyonlu sunulan imzalı eşlikçidir.",
+          "proof": "Yemeksepeti ve Restoranim.net geri bildirimleri"
+        }
+      ],
+      "suitability": {
+        "seating": "İsmet İnönü Caddesi üzerinde sade ve temiz esnaf-aile restoranı masa düzeni",
+        "crowdAndNoise": "Öğle ve akşam öğünlerinde Gümbet sakinleri, aileler ve sıcak kanat-ızgara arayan müdavimler",
+        "disadvantage": "Basit bir mahalle ızgara salonudur; alkollü gece ambiyansı veya manzara sunmaz ve akşam yoğun saatlerinde paket servislerde kısa gecikmeler olabilir",
+        "transit": "Gümbet Mahallesi İsmet İnönü Caddesi No:28 üzerinde ana cadde hattında"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Yemeksepeti — Baki Ustanın Yeri (Kanatçı Baki Usta)",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tavuk kanat, kelebek, pirzola, Adana kebap ve soslu lavaş menü doğrulaması"
+        },
+        {
+          "title": "Restoranim.net — Baki Ustanın Yeri",
+          "url": "https://www.restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kanat pişirme dengesi, sıcak servis ve ev usulü salata memnuniyeti"
+        },
+        {
+          "title": "Restaurant Guru — Baki Ustanın Yeri Gümbet",
+          "url": "https://restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çökertme kebabı, mantı seçenekleri ve aile lokantası ortamı değerlendirmeleri"
+        },
+        {
+          "title": "Yandex Harita — Baki Ustanın Yeri",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İsmet İnönü Cd. No:28 adres ve ızgara çeşitleri doğrulaması"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=5448035024460320029",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "İsmet İnönü Cd. No:28 konum ve family_restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "Kömür ızgarasında pişen tavuk kanat, kelebek ve pirzolada yerel müdavimlerin güvendiği esnaf noktası olması",
+        "Soslu lavaşı ve ev usulü taze salatasıyla doyurucu ve gösterişsiz lezzet sunması"
+      ],
+      "cons": [
+        "Mütevazı dekorasyonu nedeniyle özel akşam kutlaması yerine pratik ve lezzet odaklı öğünlere uygundur",
+        "Yoğun akşam saatlerinde paket sipariş yoğunluğu servis süresini etkileyebiliyor"
+      ],
+      "uncertainties": [
+        "Sezon dışı dönemlerde kiloluk pişmiş sipariş ve kapanış saatleri dönemsel değişebiliyor"
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kozhan-et-doner-gumbet",
+      "categoryId": "denemelisin",
+      "resolvedName": "KÖZHAN ET DÖNER BODRUM",
+      "branchName": "Gümbet, İsmet İnönü Cd. 3/2, 48400 Bodrum/Muğla",
+      "placeId": "ChIJwy9453ptvhQR2fHXLl3ge5Q",
+      "coordinates": {
+        "lat": 37.035243,
+        "lng": 27.4026726
+      },
+      "rating": 5,
+      "userRatingCount": 119,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10699392030571229657",
+      "recommendedPrimary": [
+        "Porsiyon Közde Et Döner",
+        "Ekmek Arası Et Döner",
+        "Lavaş Dürüm Et Döner"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kiloluk Közde Et Döner",
+          "note": "Kalabalık masalar ve ev tipi paylaşım siparişleri için gramajlı olarak hazırlanan seçenektir.",
+          "proof": "Yemeksepeti menü kayıtları"
+        },
+        {
+          "name": "Fırın Sütlaç",
+          "note": "Et döner öğününün ardından sunulan tek geleneksel sütlü tatlı eşlikçisidir.",
+          "proof": "Yemeksepeti tatlı menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük esnaf dükkanı içinde sınırlı masa düzeni ve paket servis tezgahı",
+        "crowdAndNoise": "Öğle saatlerinden akşama kadar bölge çalışanları ve esnaf döner arayan yerel sakinlerle pratik tempo",
+        "disadvantage": "Günün geç saatlerine kalındığında lavaş veya döner stoğu tükenebiliyor; bazı paket servis geri bildirimlerinde ambalajda yağ sızması ve porsiyon hassasiyeti not edilmiştir, gece geç saatlere kadar açık değildir",
+        "transit": "Gümbet Mahallesi İsmet İnönü Caddesi 3/2 (Gara Hasan Cd. kesişimi, Özükara Apart karşısı)"
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Yemeksepeti — Közhan Et Döner Bodrum",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Gramajlı et döner menüsü, fırın sütlaç ve ambalaj/lavaş stoğu üzerine gerçek kullanıcı geri bildirimleri"
+        },
+        {
+          "title": "Yerel Esnaf — Közhan Et Döner Bodrum",
+          "url": "https://www.yerelesnaf.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bodrum yerel esnaf vitrini kaydı ve gündüz servis çalışma düzeni"
+        },
+        {
+          "title": "Değermi — Közhan Et Döner (Köz-Han)",
+          "url": "https://degermi.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Közde et döner lezzeti ve Bodrum ortalamasına göre makul fiyat-performans notları"
+        },
+        {
+          "title": "Yandex Harita — Közhan Et Döner Bodrum",
+          "url": "https://yandex.com.tr/harita",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Gara Hasan Cd. / İsmet İnönü Cd. konumu ve közde döner değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Canlı Kayıt",
+          "url": "https://maps.google.com/?cid=10699392030571229657",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "İsmet İnönü Cd. 3/2 konum ve turkish_restaurant doğrulaması"
+        }
+      ],
+      "pros": [
+        "Köz ateşinde pişen gerçek et döneri seçilebilir gramaj opsiyonlarıyla sunması",
+        "Bodrum merkez ve sahil bandına kıyasla ulaşılabilir esnaf fiyatlarında kalması"
+      ],
+      "cons": [
+        "Küçük esnaf dükkanı olduğundan oturma kapasitesi sınırlıdır ve akşam erken saatlerde kapanır",
+        "Yoğun günlerde lavaş stoğu bitebiliyor ve paket serviste ambalaj sızması yaşanabiliyor"
+      ],
+      "uncertainties": [
+        "Pazar günleri ve sezon dışı dönemlerde açık olma durumu işletme kararına göre değişebiliyor"
+      ],
+      "selectionScore": 96,
+      "selectedForSnapshot": true
+    }
+  ]
+}

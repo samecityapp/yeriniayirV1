@@ -244,12 +244,12 @@ export default function SearchFilters({ lang = 'tr', dict }: SearchFiltersProps)
   };
 
   return (
-    <div className="w-full max-w-5xl mx-auto px-4 min-h-[160px]">
+    <div className="w-full max-w-5xl mx-auto px-0 sm:px-4 min-h-[140px] sm:min-h-[160px]">
       <div className="bg-white rounded-full shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-300">
         <div ref={searchRef} className="relative z-20">
           <form onSubmit={(e) => { e.preventDefault(); handleSearch(); }} className="flex items-center">
-            <div className="flex-1 relative">
-              <Search className="absolute left-6 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
+            <div className="flex-1 min-w-0 relative">
+              <Search className="absolute left-4 sm:left-6 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
               <input
                 type="text"
                 value={searchQuery}
@@ -259,13 +259,13 @@ export default function SearchFilters({ lang = 'tr', dict }: SearchFiltersProps)
                   if (suggestions.length > 0) setShowSuggestions(true);
                 }}
                 placeholder={dict?.search?.input_placeholder || "Otel, konum veya özellik arayın..."}
-                className="w-full pl-12 pr-4 py-3 text-sm font-medium text-gray-800 bg-transparent rounded-l-full focus:outline-none placeholder:text-gray-400"
+                className="w-full min-w-0 pl-10 sm:pl-12 pr-2 sm:pr-4 py-2.5 sm:py-3 text-sm font-medium text-gray-800 bg-transparent rounded-l-full focus:outline-none placeholder:text-gray-400 text-ellipsis"
                 autoComplete="off"
               />
             </div>
             <button
               type="submit"
-              className="bg-[#FF385C] hover:bg-[#D90B3E] text-white rounded-full p-3 m-1.5 shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center shrink-0"
+              className="bg-[#FF385C] hover:bg-[#D90B3E] text-white rounded-full p-2.5 sm:p-3 m-1 sm:m-1.5 shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center shrink-0"
               aria-label="Ara"
             >
               <Search className="h-5 w-5 stroke-[2.5]" />
@@ -281,14 +281,14 @@ export default function SearchFilters({ lang = 'tr', dict }: SearchFiltersProps)
                     <button
                       key={`${suggestion.type}-${suggestion.value}-${index}`}
                       onClick={() => handleSuggestionClick(suggestion)}
-                      className={`w-full flex items-center gap-4 px-6 py-4 text-left transition-all duration-150 ${index === selectedIndex ? 'bg-blue-50' : 'hover:bg-gray-50'
+                      className={`w-full flex items-center gap-3 sm:gap-4 px-4 sm:px-6 py-3 sm:py-4 text-left transition-all duration-150 ${index === selectedIndex ? 'bg-blue-50' : 'hover:bg-gray-50'
                         }`}
                     >
                       <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0">
                         <IconComponent className="w-5 h-5 text-gray-600" />
                       </div>
-                      <div className="flex-1">
-                        <p className="text-sm font-semibold text-gray-900">
+                      <div className="flex-1 min-w-0">
+                        <p className="text-sm font-semibold text-gray-900 break-words">
                           {suggestion.label}
                         </p>
                         <p className="text-xs text-gray-500 capitalize mt-0.5">
@@ -326,7 +326,7 @@ export default function SearchFilters({ lang = 'tr', dict }: SearchFiltersProps)
         )}
 
         {lang !== 'en' && priceTags.length > 0 && (
-          <div className="flex items-center justify-center gap-2">
+          <div className="flex items-center justify-center gap-2 flex-wrap">
             {priceTags.slice(0, 3).map((pt) => (
               <Link
                 key={pt.id}

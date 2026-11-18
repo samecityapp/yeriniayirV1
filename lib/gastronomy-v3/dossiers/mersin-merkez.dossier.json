@@ -1,0 +1,2039 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "mersin-merkez",
+  "displayName": "Mersin Merkez",
+  "verifiedAt": "2026-11-17T16:39:26.921Z",
+  "selectedCount": 26,
+  "rejectedControls": [
+    {
+      "id": "ctrl-mersin-yasin-usta-chain",
+      "resolvedName": "SAHİL Yasin Usta Tantuni",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-mersin-hasan-usta-chain",
+      "resolvedName": "Mersinli Hasan Usta - Mersin Tantuni",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-mersin-memos-tantuni-chain",
+      "resolvedName": "Memoş Tantuni",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-mersin-chefmezze-chain",
+      "resolvedName": "Chefmezze Mersin",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-mersin-olabi-chain",
+      "resolvedName": "Olabi Kahvesi Mezitli",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-mersin-espressolab-chain",
+      "resolvedName": "Espressolab Mersin",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-mersin-coffy-chain",
+      "resolvedName": "Coffy Mersin Kushimoto",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-mersin-soulmate-chain",
+      "resolvedName": "Soulmate Coffee Mezitli",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-mersin-starbucks-chain",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-mersin-tchibo-chain",
+      "resolvedName": "Tchibo",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-mersin-marina-nonfood",
+      "resolvedName": "Mersin Marina",
+      "reason": "invalid_place_type:marina"
+    },
+    {
+      "id": "ctrl-mersin-tarsus-orhan-dis",
+      "resolvedName": "Orhan Humus Salonu",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Cami Şerif/Kiremithane/Kültür/Çankaya/Gazi/İnönü/Palmiye/Güvenevler/Aydınlıkevler/Eğriçam/Çiftlikköy/Hürriyet/Akkent/Turunçlu/Barbaros/Ali Kaya/50. Yıl/Viranşehir/Menderes/Fatih/Yeni/Akdeniz/Merkez/Yenişehir/Mezitli/Toroslar, adres: No:9, 33410, Reşadiye Mahallesi, Adana Bulvarı, Reşadiye, 33400 Tarsus/Mersin)"
+    },
+    {
+      "id": "ctrl-mersin-aydincik-zeytinli-dis",
+      "resolvedName": "Zeytinli Bahçe Aydıncık | Kafe & Restoran",
+      "reason": "outside_strict_neighborhood:Bbox dışında (36.14970, 33.33005)"
+    },
+    {
+      "id": "ctrl-mersin-memetcan-low",
+      "resolvedName": "MEMETCAN TANTUNİ",
+      "reason": "below_quality_threshold:★3.5(1857)"
+    },
+    {
+      "id": "ctrl-mersin-bypatron-low",
+      "resolvedName": "By patron cafe",
+      "reason": "below_quality_threshold:★3.6(53)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "mersin-koksal-restoran-tantuni",
+      "categoryId": "tantuni",
+      "resolvedName": "Köksal Restoran (Tantuni & Döner)",
+      "branchName": "Cami Şerif, Çakmak Cd. No:19, 33050 Akdeniz/Mersin",
+      "placeId": "ChIJq3_9PP3zJxUR1uF-J0Y-c2I",
+      "coordinates": {
+        "lat": 36.8030942,
+        "lng": 34.6317138
+      },
+      "rating": 4.8,
+      "userRatingCount": 806,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://koksalrestoran.com/",
+      "mapsUri": "https://maps.google.com/?cid=7094082309069922774",
+      "recommendedPrimary": [
+        "Açık Ekmek / Lavaş Biftek Tantuni",
+        "Yoğurtlu Tantuni",
+        "Açık Köpüklü Ayran"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tarihî Çarşı İçinde Temiz Hızlı Servis",
+          "note": "Akdeniz merkez çarşısında öğle çalışanlarının yanı sıra şehir dışı ziyaretçilerin de ilk uğradığı temiz esnaf noktalarından.",
+          "proof": "koksalrestoran.com ve serviskayitlistesi.com Akdeniz kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "İki katlı düzenli esnaf salonu ve cadde kenarı masalar",
+        "crowdAndNoise": "Öğle saatlerinde çarşı esnafı ve müdavimlerle tam doluluk",
+        "disadvantage": "Eski çarşı trafiği içinde otopark yerine yaya veya toplu taşıma ulaşımı daha rahat.",
+        "transit": "Cami Şerif Mahallesi Çakmak Caddesi No:19 üzerinde Akdeniz çarşısında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Köksal Restoran Resmi Sitesi",
+          "url": "https://koksalrestoran.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Cami Şerif Çakmak Cd. konumu ve biftek tantuni menüsü"
+        },
+        {
+          "title": "Servis Kayıt Listesi Akdeniz",
+          "url": "https://serviskayitlistesi.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Temiz servis, et yumuşaklığı ve merkezi esnaf konumu"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "806+ değerlendirmeyle Mersin çarşı tantunicileri içinde zirve puan"
+        }
+      ],
+      "pros": [
+        "Eti kurutmadan pamuk yağı kıvamında tutan dengeli tantuni",
+        "Temiz çarşı esnaf lokantası"
+      ],
+      "cons": [
+        "Çakmak Caddesi çevresi mesai saatlerinde yoğun araç trafiğine sahip"
+      ],
+      "uncertainties": [
+        "Aynı isimli diğer şehirlerdeki işletmelerle ilgisi olmayan özgün Akdeniz merkez adresi."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-borsa-tantuni",
+      "categoryId": "tantuni",
+      "resolvedName": "Borsa Tantuni",
+      "branchName": "Palmiye, 1202. Sk. No:4, 33110 Yenişehir/Mersin",
+      "placeId": "ChIJz5GDM6bzJxURvNSZ1MnsheM",
+      "coordinates": {
+        "lat": 36.7831956,
+        "lng": 34.6111117
+      },
+      "rating": 4.4,
+      "userRatingCount": 6080,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://borsatantuni.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=16394770370111591612",
+      "recommendedPrimary": [
+        "Klasik Biftek Lavaş Tantuni",
+        "Özel Yoğurtlu Tantuni",
+        "Künefe"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Yeni Nesil Yoğurtlu Sunum & Klasik Denge",
+          "note": "Klasik sac tantuni reçetesinden kopmadan yoğurtlu ve domates soslu tabak sunumunu şık akşam oturumuna da uyarlıyor.",
+          "proof": "yemek.com Mersin dosyası, borsatantuni.com.tr ve Yandex Palmiye"
+        }
+      ],
+      "suitability": {
+        "seating": "Modern ve düzenli kapalı salon ile açık kaldırım masaları",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde hem yerliler hem ziyaretçilerle yoğun",
+        "disadvantage": "Çok yüksek günlük hacim nedeniyle akşam pik saatlerinde masa beklemesi oluşabiliyor; fiyatlandırması klasik sokak büfelerine kıyasla daha yüksek.",
+        "transit": "Palmiye Mahallesi 1202. Sokak No:4 (Adnan Menderes Bulvarı paralelinde), Yenişehir."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemek.com Mersin Rehberi",
+          "url": "https://yemek.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Palmiye 1202. Sokak konumu, yoğurtlu tantuni ve yemek sonrası künefe vurgusu"
+        },
+        {
+          "title": "Borsa Tantuni Resmi Sitesi",
+          "url": "http://borsatantuni.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Palmiye adresi, yoğurtlu ve klasik biftek tantuni menüsü"
+        },
+        {
+          "title": "Yandex Maps Palmiye",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sahile yakın konum ve istikrarlı et lezzeti değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "6.080+ değerlendirmeyle şehrin en bilinen bağımsız tantunicilerinden"
+        }
+      ],
+      "pros": [
+        "Şehir dışına franchise dağıtmadan yerel standardını Yenişehir’de koruyor",
+        "Yoğurtlu seçeneği doyurucu"
+      ],
+      "cons": [
+        "Adnan Menderes Blv. yakını hafta sonu kalabalık oluyor"
+      ],
+      "uncertainties": [
+        "Yoğurtlu tantuni sosu klasik dürüme göre daha ağır olduğundan porsiyon seçimi önemli."
+      ],
+      "selectionScore": 96,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-denizhan-2-tantuni",
+      "categoryId": "tantuni",
+      "resolvedName": "Denizhan 2 Tantuni (Mezitli)",
+      "branchName": "Menderes mahallesi barboros hayrettin paşa cad Denizhan 2 Sitesi İçerisi, Menderes, 33340 Mezitli/Mersin",
+      "placeId": "ChIJJTDHMBWKJxURHvUIduh04KI",
+      "coordinates": {
+        "lat": 36.7383309,
+        "lng": 34.5283385
+      },
+      "rating": 4.4,
+      "userRatingCount": 1314,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11736509170689045790",
+      "recommendedPrimary": [
+        "Somun Ekmek Biftek Tantuni",
+        "Lavaş Acılı Biftek Tantuni",
+        "Süzme Yoğurtlu Ayran"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Turistik Reklamsız Saf Mahalle Tantunisi",
+          "note": "Sahil vitrinlerinin arkasındaki yerleşim aksında tamamen et lezzeti ve salaş esnaf samimiyetiyle öne çıkıyor.",
+          "proof": "gurmerehber.com ve Yandex Menderes kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Site içi açık avlu masaları ve küçük iç salon",
+        "crowdAndNoise": "Özellikle akşamüstü ve akşam saatlerinde semt yerlileriyle hareketli",
+        "disadvantage": "Site içi konumu nedeniyle ilk kez gidecekler için tarif dikkat istiyor; otopark sokak içine kalıyor.",
+        "transit": "Menderes Mahallesi Barbaros Hayrettin Paşa Caddesi Denizhan 2 Sitesi içi, Mezitli."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Gurme Rehber Mersin",
+          "url": "https://gurmerehber.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Biftek tantuni kıvamı, masalardaki turşu ikramı ve samimi ortam vurgusu"
+        },
+        {
+          "title": "Yandex Maps Mezitli",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mezitli Menderes mahalle müdavimlerinden yüksek tat notları"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "1.314+ değerlendirmeyle Mezitli’nin öne çıkan yerel tantunicisi"
+        }
+      ],
+      "pros": [
+        "Etin sinirsiz ve ağızda dağılan pişirimi çok övülüyor",
+        "Gerçek semt esnafı havası"
+      ],
+      "cons": [
+        "Dışarıdan geçerken fark etmek zor, site içine girmek gerekiyor"
+      ],
+      "uncertainties": [
+        "Akşam geç saatte somun ekmek kalmazsa lavaş seçeneğiyle devam ediyor."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-asrin-tantunisi",
+      "categoryId": "tantuni",
+      "resolvedName": "Asrın Tantunisi",
+      "branchName": "Behiye, Eğriçam, Nevit Kodallı Cd. Gür Apt No:27/D, 33160 Yenişehir/Mersin",
+      "placeId": "ChIJoz_xC1WLJxURkS91lCH1pwE",
+      "coordinates": {
+        "lat": 36.778385,
+        "lng": 34.570772399999996
+      },
+      "rating": 4.4,
+      "userRatingCount": 819,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://asrintantunisi.com/",
+      "mapsUri": "https://maps.google.com/?cid=119333439722041233",
+      "recommendedPrimary": [
+        "Tombul Somun Biftek Tantuni",
+        "Çift Lavaş Tantuni",
+        "Köpüklü Şişe / Açık Ayran"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Göçmen Kavşağı Klasik Somun Kıvamı",
+          "note": "Eğriçam yerleşim merkezinde taze fırın somununun içine bol et ve soğan-domates dengesiyle klasik mahalle tantunisi çıkarıyor.",
+          "proof": "asrintantunisi.com ve Yandex Eğriçam kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "İç ve yarı açık kaldırım masaları",
+        "crowdAndNoise": "Öğle arası ve akşamüzeri Göçmen çevresi yerlileriyle yoğun",
+        "disadvantage": "Günün işlek saatlerinde kurye trafiği kaldırım önü huzurunu azaltabiliyor.",
+        "transit": "Eğriçam Mahallesi Nevit Kodallı Caddesi No:27/D üzerinde Göçmen mevkisinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Asrın Tantunisi Resmi Sitesi",
+          "url": "https://asrintantunisi.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Eğriçam Göçmen adresi ve geleneksel tantuni menüsü"
+        },
+        {
+          "title": "Yandex Maps Eğriçam",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Somun ekmek tantuni ve hızlı servis değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "819+ değerlendirmeyle istikrarlı yerel memnuniyet"
+        }
+      ],
+      "pros": [
+        "Taze somun ekmeğiyle doyurucu klasik Mersin tantunisi",
+        "Göçmen’de ulaşımı kolay"
+      ],
+      "cons": [
+        "Ana cadde kenarında araç trafiği gürültüsü hissedilebiliyor"
+      ],
+      "uncertainties": [
+        "Yoğun saatlerde acısız tercih edenlerin siparişte biber miktarını belirtmesi iyi oluyor."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-orfella-marin",
+      "categoryId": "balik",
+      "resolvedName": "Orfella Marin",
+      "branchName": "Mersin Marina Avm, Eğriçam, 33160 Yenişehir/Mersin",
+      "placeId": "ChIJ-3AJJfqLJxURTU9ELb6ZYsw",
+      "coordinates": {
+        "lat": 36.7717448,
+        "lng": 34.571229699999996
+      },
+      "rating": 4.6,
+      "userRatingCount": 58,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.orfella.com/",
+      "mapsUri": "https://maps.google.com/?cid=14727502773537230669",
+      "recommendedPrimary": [
+        "Izgara Akdeniz Lagosu",
+        "Ahtapot & Kalamar Tabağı",
+        "Ege-Akdeniz Deniz Mezeleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Marina Atmosferi & Sakin Akşam Yemeği",
+          "note": "Büyük kalabalık kebap-balık salonlarından sıyrılarak marinada daha nezih bir akşam yemeği deneyimi arayan çiftler ve gruplar için öne çıkıyor.",
+          "proof": "orfella.com ve dijital.link Marina kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Marina rıhtımına bakan açık teras ve şık kapalı salon",
+        "crowdAndNoise": "Özellikle akşam yemeklerinde ve hafta sonları sakin kalabalık",
+        "disadvantage": "Marina içi konumu gereği standart çarşı balıkçılarına göre üst fiyat segmentinde.",
+        "transit": "Eğriçam Mahallesi Adnan Menderes Bulvarı Mersin Marina AVM içi, Yenişehir."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Orfella Resmi Sitesi",
+          "url": "http://www.orfella.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Mersin Marina konumu, deniz ürünleri ve şarap-meze menüsü"
+        },
+        {
+          "title": "Dijital.link Marina Rehberi",
+          "url": "https://dijital.link/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mersin Marina balık restoranları menü ve servis doğrulaması"
+        }
+      ],
+      "pros": [
+        "Yat limanı kıyısında temiz ve özenli akşam ambiyansı",
+        "Taze günlük lagos ve ara sıcak kalitesi"
+      ],
+      "cons": [
+        "Fiyat seviyesi şehir içi balık evlerinin üzerinde"
+      ],
+      "uncertainties": [
+        "Hafta sonu yat kenarı masalar için rezervasyon öneriliyor."
+      ],
+      "selectionScore": 81,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-denizden-restaurant",
+      "categoryId": "balik",
+      "resolvedName": "Denizden Restaurant (Kültür Park)",
+      "branchName": "İnönü, Adnan Menderes Blv. no:25, 33130 Yenişehir/Mersin",
+      "placeId": "ChIJkc4A19n1JxURgGu3Fe1wMDo",
+      "coordinates": {
+        "lat": 36.7795663,
+        "lng": 34.5951168
+      },
+      "rating": 4.4,
+      "userRatingCount": 1479,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://denizkizi.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=4192975416655833984",
+      "recommendedPrimary": [
+        "Izgara Deniz Çuprası / Levreği",
+        "Tereyağlı Karides Güveç",
+        "Kültür Park Deniz Mezeleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Deniz Sıfırında Şeffaf Fiyatlı Sosyal Tesis Güveni",
+          "note": "Kıyıda yüksek hesap sürprizi yaşamadan doğrudan Akdeniz dalga sesine karşı taze balık yemek isteyen ailelerin ilk adreslerinden.",
+          "proof": "denizkizi.com.tr ve mersinsinemaofisi.com sahil kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Deniz sıfırı büyük açık hava güvertesi ve kapalı cam salon",
+        "crowdAndNoise": "Özellikle hafta sonu akşamları ve güneş batımında çok yoğun talep",
+        "disadvantage": "Popülerliği ve uygun fiyat dengesi nedeniyle rezervasyonsuz gelenlerde bekleme yaşanabiliyor.",
+        "transit": "İnönü Mahallesi Adnan Menderes Bulvarı No:25 (Kültür Park sahil içi), Yenişehir."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Denizkızı Turizm Resmi Sitesi",
+          "url": "http://denizkizi.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Kültür Park sahil restoranı işletme detayları ve şeffaf menü"
+        },
+        {
+          "title": "Mersin Sinema Ofisi Mekan Dosyası",
+          "url": "https://mersinsinemaofisi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yenişehir sahilinde Kültür Park deniz kenarı restoranı konumu"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "1.479+ değerlendirmeyle sahilde istikrarlı aile memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Tam deniz kenarında güvenli, temiz ve hesaplı balık sofrası",
+        "Geniş yürüme parkı erişimi"
+      ],
+      "cons": [
+        "Yemek saatlerinde servis ekibi yüksek masaya yetişmekte zaman zaman yavaşlayabiliyor"
+      ],
+      "uncertainties": [
+        "Hafta sonu gün batımı saatlerinde önceden masa ayırtmak gerekiyor."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-orfoz-balik",
+      "categoryId": "balik",
+      "resolvedName": "Orfoz Balık Restaurant",
+      "branchName": "Eğriçam, Adnan Menderes Blv. No:136, 33160 Yenişehir/Mersin",
+      "placeId": "ChIJr5d0GjeLJxURIAkKGdSUi_I",
+      "coordinates": {
+        "lat": 36.773427999999996,
+        "lng": 34.5712741
+      },
+      "rating": 4.4,
+      "userRatingCount": 368,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17477226417615407392",
+      "recommendedPrimary": [
+        "Izgara Lagos Şiş",
+        "Taze Kalamar Tava",
+        "Şakşuka & Deniz Mezeleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kıyı Bulvarında Dengeli Meze & Balık Uyumu",
+          "note": "Narlıkuyu geleneğini şehir içi Adnan Menderes aksında ulaşılabilir hâle getirerek akşam buluşmalarında güçlü seçenek sunuyor.",
+          "proof": "lezizmekanlar.com.tr ve Yandex Eğriçam kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Düzenli iç restoran salonu ve bulvara açılan cam cephe",
+        "crowdAndNoise": "Akşam yemeği saatlerinde düzenli balık müdavimleriyle dolu",
+        "disadvantage": "Büyük marina kompleksine göre daha klasik bulvar restoranı atmosferinde.",
+        "transit": "Eğriçam Mahallesi Adnan Menderes Bulvarı No:136 üzerinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Leziz Mekanlar Mersin",
+          "url": "https://lezizmekanlar.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yenişehir Adnan Menderes aksında taze balık ve meze önerisi"
+        },
+        {
+          "title": "Yandex Maps Eğriçam",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Balık tazeliği ve ara sıcak değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "368+ değerlendirmeyle istikrarlı puan profili"
+        }
+      ],
+      "pros": [
+        "Şehir merkezinden kolay ulaşılan köklü Akdeniz balıkçısı",
+        "Ara sıcak kalamar ve karides kıvamı başarılı"
+      ],
+      "cons": [
+        "Tam sahil içi yürüyüş yolunun karşısında bulvar üstünde kalıyor"
+      ],
+      "uncertainties": [
+        "Silifke Narlıkuyu şubesi ayrı olduğundan şehir içi ziyaretlerde Eğriçam adresi seçilmeli."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-balikci-kadir-mezitli",
+      "categoryId": "balik",
+      "resolvedName": "Balıkçı Kadir (İçkisiz Balık Lokantası)",
+      "branchName": "Mezitli Şb:, Viranşehir, Cengiz Topel Cd. Sütunların arkası No: 43/A, 33190 Mezitli/Mersin",
+      "placeId": "ChIJ2cwxsluKJxURcRNqbBsNcRI",
+      "coordinates": {
+        "lat": 36.7456466,
+        "lng": 34.5367131
+      },
+      "rating": 4.3,
+      "userRatingCount": 1510,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.balikcikadir.com/",
+      "mapsUri": "https://maps.google.com/?cid=1328857776485176177",
+      "recommendedPrimary": [
+        "Taze Barbun Tava",
+        "Izgara Çupra & Levrek",
+        "Mısır Ekmeği & Yeşil Salata"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Gösterişsiz & Aile Odaklı Balık Sofrası",
+          "note": "Mezitli’de alkolsüz, ekonomik ve hızlı balık akşamı yemek isteyen kalabalık ailelerin yıllardır değişmeyen klasiği.",
+          "proof": "nelerimeshur.com ve balikcikadir.com Mezitli kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç salon ve yarı açık yan bahçe aile masaları",
+        "crowdAndNoise": "Özellikle akşam yemekleri ve cuma balık günlerinde tam dolu",
+        "disadvantage": "Yüksek sirkülasyonlu alkolsüz balık lokantası atmosferi, meyhane keyfi arayanlara göre çok hızlı tempolu.",
+        "transit": "Viranşehir Mahallesi Cengiz Topel Caddesi Sütunlar arkası No:43/A, Mezitli."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Neleri Meşhur Mezitli Rehberi",
+          "url": "https://nelerimeshur.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mezitli’nin köklü içkisiz aile balık lokantası olarak anılıyor"
+        },
+        {
+          "title": "Balıkçı Kadir Resmi Sitesi",
+          "url": "http://www.balikcikadir.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Mezitli Viranşehir adresi ve günlük taze balık menüsü"
+        },
+        {
+          "title": "Yandex Maps Viranşehir",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ekonomik fiyat-kalite oranı ve hızlı aile servisi değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "1.510+ değerlendirmeyle Mezitli’nin en bilinen yerel balık lokantası"
+        }
+      ],
+      "pros": [
+        "Şişirilmemiş fiyatlarla ailece taze Akdeniz balığı yemek için güvenilir",
+        "Büyük ve pratik masa kapasitesi"
+      ],
+      "cons": [
+        "Çok yoğun akşam saatlerinde kalabalık uğultusu ve sıra olabiliyor"
+      ],
+      "uncertainties": [
+        "Mevsime bağlı küçük balık çeşitleri gün içinde erkenden tükenebiliyor."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-sanlihan-ocakbasi",
+      "categoryId": "kebap-meze",
+      "resolvedName": "Şanlıhan Ocakbaşı",
+      "branchName": "Merkez, Vatan Cd. No:116/31, 33010 Mezitli/Mersin",
+      "placeId": "ChIJ-8KRA16LJxURC-nLUs-uoiQ",
+      "coordinates": {
+        "lat": 36.74359,
+        "lng": 34.5191168
+      },
+      "rating": 4.9,
+      "userRatingCount": 837,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://sanlihanocakbasi.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=2639864537063090443",
+      "recommendedPrimary": [
+        "Haşhaşlı Urfa & Adana Kebap",
+        "Kuzu Kaburga & Ciğer",
+        "İçli Köfte & Köz Patlıcan"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mezitli’de Tutarlı Aile Ocakbaşısı",
+          "note": "Meze tazeliği, sıcak tırnak pidesi ve özenli et pişirimiyle hem yerel akşam yemekleri hem misafir ağırlamak için seçiliyor.",
+          "proof": "sanlihanocakbasi.com.tr ve lezizmekanlar.com.tr Mezitli"
+        }
+      ],
+      "suitability": {
+        "seating": "Büyük ve ferah iç salon ile açık hava akşam bölümü",
+        "crowdAndNoise": "Akşam yemekleri ve hafta sonlarında tam doluluk",
+        "disadvantage": "Merkez Pozcu’dan batıya Mezitli aksına araçla geçiş gerektiriyor.",
+        "transit": "Merkez Mahallesi Vatan Caddesi No:116/31 üzerinde Mezitli’de."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Şanlıhan Ocakbaşı Resmi Sitesi",
+          "url": "http://sanlihanocakbasi.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Vatan Caddesi adresi, haşhaşlı kebap ve meze menüsü"
+        },
+        {
+          "title": "Leziz Mekanlar & Neleri Meşhur",
+          "url": "https://lezizmekanlar.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mezitli’de ocakbaşı ve zengin ikram standardı değerlendirmesi"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "837+ değerlendirmede çok yüksek kent skoru"
+        }
+      ],
+      "pros": [
+        "Meze ve ana et kalitesi arasında kopukluk yok",
+        "Ferah ve temiz akşam yemeği düzeni"
+      ],
+      "cons": [
+        "Hafta sonu rezervasyon olmadan kalabalık saatte beklemek gerekebiliyor"
+      ],
+      "uncertainties": [
+        "Özel mezelerin bazıları akşam yoğunluğuna göre değişebiliyor."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-tarsuslu-murat-usta",
+      "categoryId": "kebap-meze",
+      "resolvedName": "Tarsuslu Murat Usta (1982)",
+      "branchName": "Kiremithane mah Eraslan apt, Kiremithane, 4406. Sk. 16/B, 33010 Akdeniz/Mersin",
+      "placeId": "ChIJgZeQSgzzJxURXJidLvFHgXY",
+      "coordinates": {
+        "lat": 36.795450800000005,
+        "lng": 34.6233712
+      },
+      "rating": 4.6,
+      "userRatingCount": 1486,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8539185469665941596",
+      "recommendedPrimary": [
+        "Patentli Tarmer Çorbası",
+        "Tereyağlı Sıcak Humus",
+        "Kuzu Tandır / Et Yemeği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tescilli Tarmer Çorbası & Tereyağlı Humus Ritüeli",
+          "note": "Tavuk suyunun kırmızı mercimek ve ince baharat ayarıyla buluştuğu özgün Tarmer çorbası şehrin yerel klasikleri arasında.",
+          "proof": "lezizmekanlar.com.tr ve Yandex Akdeniz değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık, köklü ve yüksek devirli merkez esnaf lokantası masaları",
+        "crowdAndNoise": "Sabah çorba saatlerinden ikindiye dek kesintisiz çarşı kalabalığı",
+        "disadvantage": "Klasik gündüz esnaf lokantası temposunda işlediğinden akşam geç saat ziyafetleri için uygun değil.",
+        "transit": "Kiremithane Mahallesi 4406. Sokak No:16/B üzerinde Akdeniz merkezde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Leziz Mekanlar Akdeniz Dosyası",
+          "url": "https://lezizmekanlar.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1982 kuruluşlu esnaf klasiği; patentli Tarmer çorbası ve sıcak humus incelemesi"
+        },
+        {
+          "title": "Yandex Maps Kiremithane",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Humus dokusu ve hijyenik hızlı esnaf servisi övgüleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "1.486+ değerlendirmeyle Mersin merkezin en sevilen geleneksel lokantası"
+        }
+      ],
+      "pros": [
+        "Tantuni dışında gerçek Mersin esnaf lokantası ve Tarmer çorbası mirası",
+        "Sıcak tahinli humusu çok başarılı"
+      ],
+      "cons": [
+        "Gündüz odaklı çalışma saatleri ve çarşı çevresi dar sokak parkı"
+      ],
+      "uncertainties": [
+        "Tencere et yemekleri öğleden sonra azalmaya başlıyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-migcioglu-ocakbasi",
+      "categoryId": "kebap-meze",
+      "resolvedName": "Mığçıoğlu Ocakbaşı",
+      "branchName": "Güvenevler, 1909. Sk. NO 4/A, 33140 Yenişehir/Mersin",
+      "placeId": "ChIJmxu9Dab0JxURZvf7xanLNEI",
+      "coordinates": {
+        "lat": 36.785636,
+        "lng": 34.5945482
+      },
+      "rating": 4.5,
+      "userRatingCount": 1125,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.migciogluocakbasi.com/",
+      "mapsUri": "https://maps.google.com/?cid=4770661835323733862",
+      "recommendedPrimary": [
+        "Haşhaşlı Zırh Kebap",
+        "Kuzu Ciğer Şiş",
+        "Babagannuş & Cevizli Muhammara"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Merkezi Pozcu-Güvenevler Akşam Konforu",
+          "note": "Yenişehir merkezden ayrılmadan aile veya iş akşamları için tutarlı kebap-meze sofrası sunuyor.",
+          "proof": "migciogluocakbasi.com ve yemeksepeti.com Yenişehir kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kapalı klimalı salon ve yan sokak oturumu",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde Yenişehir sakinleriyle dengeli yoğunluk",
+        "disadvantage": "Güneydoğu-Mersin karışık klasik menü yapısında sade mahalle restoranı atmosferi var.",
+        "transit": "Güvenevler Mahallesi 1909. Sokak No:4/A üzerinde Forum çevresi aksında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Mığçıoğlu Resmi Sitesi",
+          "url": "http://www.migciogluocakbasi.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Güvenevler konumu ve haşhaşlı kebap ağırlıklı menü"
+        },
+        {
+          "title": "Yemeksepeti & Yandex Güvenevler",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Et pişirim tutarlılığı ve taze meze değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "1.125+ değerlendirmeyle Yenişehir’de oturmuş ocakbaşı"
+        }
+      ],
+      "pros": [
+        "Pozcu/Yenişehir merkezinde yürüme kolaylığı",
+        "Haşhaşlı kebap ve ciğer kıvamı başarılı"
+      ],
+      "cons": [
+        "Sokak çevresinde otopark yoğun saatlerde zorlaşabiliyor"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamları aile masaları hızlı doluyor."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-zinar-ocakbasi",
+      "categoryId": "kebap-meze",
+      "resolvedName": "Zınar Ocakbaşı (Mezitli)",
+      "branchName": "Akdeniz, 39602. Sk., 33340 Mezitli/Mersin",
+      "placeId": "ChIJiwJ7z5iLJxURB_1l9RuQkHU",
+      "coordinates": {
+        "lat": 36.7348583,
+        "lng": 34.5155106
+      },
+      "rating": 4.4,
+      "userRatingCount": 194,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8471429348839521543",
+      "recommendedPrimary": [
+        "Tırnaklı Pide Üstü Zırh Kebap",
+        "Kuzu Ciğer Şiş Dürüm",
+        "Küp Köpüklü Ayran"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Geç Saatlerde Kapanmayan Sıcak Ocakbaşı",
+          "note": "Mersin’de akşam geç saatlerde bile taze kömür ateşinde kebap veya ciğer bulabilmek için sıkça tercih ediliyor.",
+          "proof": "lezizmekanlar.com.tr ve Yandex Mezitli kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Büyük açık cepheli ocakbaşı salonu ve sokak masaları",
+        "crowdAndNoise": "Özellikle akşam geç saatler ile gece yarısı arasında çok hareketli",
+        "disadvantage": "Büyük geç saat ocakbaşı düzeni sakin akşam sohbetinden çok hızlı gece doyumu için ideal.",
+        "transit": "Akdeniz Mahallesi 39602. Sokak üzerinde Mezitli Soli çevresinde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Leziz Mekanlar Mezitli",
+          "url": "https://lezizmekanlar.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mezitli ve Akdeniz şubeleriyle tırnaklı pide-kebap değerlendirmesi"
+        },
+        {
+          "title": "Yandex Maps Mezitli",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Geç saat servis hızı ve et lezzeti notları"
+        }
+      ],
+      "pros": [
+        "Gece geç saatlerde taze mangal kebap ve ciğer bulma kolaylığı",
+        "Köpüklü ayranı ferahlatıcı"
+      ],
+      "cons": [
+        "Soli-Mezitli batı ucunda kaldığı için merkezden araç gerektiriyor"
+      ],
+      "uncertainties": [
+        "İki Mersin şubesi arasında gece en uzun açık kalanlardan biri Mezitli şubesi."
+      ],
+      "selectionScore": 77,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-kerebicci-sabahat",
+      "categoryId": "kerebic-tatli",
+      "resolvedName": "Kerebiçci Sabahat",
+      "branchName": "Durmaz Apartmanı, Aydınlıkevler, 2015. Sk., 33140 Yenişehir/Mersin",
+      "placeId": "ChIJhUXEPwf1JxURlkBspLBEoY8",
+      "coordinates": {
+        "lat": 36.7835209,
+        "lng": 34.5845653
+      },
+      "rating": 4.5,
+      "userRatingCount": 432,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10349628944137601174",
+      "recommendedPrimary": [
+        "Çöven Köpüklü Fıstıklı Kerebiç",
+        "Cevizli Kerebiç",
+        "Hurmalı & Fıstıklı Mamul"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Katkısız El Yazısı Reçete & Günlük Çöven Köpüğü",
+          "note": "Büyük imalat fabrikalarına kıyasla günlük küçük partiler hâlinde tereyağlı irmik hamuruyla çalışması çıtır-yumuşak dengesini koruyor.",
+          "proof": "kerebiccisabahat.com ve Yandex Aydınlıkevler değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağırlıklı paket kutu satışı ve küçük tadım köşesi",
+        "crowdAndNoise": "Özellikle bayram öncesi ve şehir dışı hediye alımlarında yoğun",
+        "disadvantage": "Büyük pastane oturma salonu yerine geleneksel imalat ve satış dükkânı düzeninde.",
+        "transit": "Aydınlıkevler Mahallesi 2015. Sokak Durmaz Apt. üzerinde, Yenişehir."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Kerebiçci Sabahat Resmi Sitesi",
+          "url": "https://kerebiccisabahat.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "El yazısı aile reçetesi, fıstıklı kerebiç ve mamul üretim bilgisi"
+        },
+        {
+          "title": "Yandex Maps Aydınlıkevler",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tereyağlı hamur, çöven köpüğü kıvamı ve fıstık oranı övgüleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "432+ değerlendirmeyle Mersin’in en yüksek puanlı kerebiç adresi"
+        }
+      ],
+      "pros": [
+        "Şerbeti hafif, bol fıstıklı ve gerçek tereyağlı irmik dokusu",
+        "Hediyelik taze kutu hazırlığı temiz"
+      ],
+      "cons": [
+        "Uzun süreli oturup çay içilecek kafe konseptinde değil"
+      ],
+      "uncertainties": [
+        "Çöven otu köpüğü taze tüketildiğinde dokusunu koruyor; şehir dışı taşıma süresi uzarsa köpük sönüyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-dondurmaci-halil-mezitli",
+      "categoryId": "kerebic-tatli",
+      "resolvedName": "Dondurmacı Halil (Mezitli)",
+      "branchName": "Merkez, Gazi Mustafa Kemal Blv. No:796/A, 33340 Mezitli/Mersin",
+      "placeId": "ChIJZ_3uj2iKJxURpAUQmNI9lLw",
+      "coordinates": {
+        "lat": 36.7473576,
+        "lng": 34.527009
+      },
+      "rating": 4.1,
+      "userRatingCount": 1249,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13588553950387242404",
+      "recommendedPrimary": [
+        "Doğal Limonlu & Kaymaklı Dondurma",
+        "Antep Fıstıklı Çift Kavrulmuş Cezerye",
+        "Kerebiç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mersin Cezeryesi & Dondurma Eşleşmesi",
+          "note": "Sıcak Akdeniz akşamlarında dondurma keyfinin yanında şehrin coğrafi işaretli cezeryesini de aynı adreste alma olanağı veriyor.",
+          "proof": "yelkenciningazetesi.com ve gastrocarto.com Mersin dosyaları"
+        }
+      ],
+      "suitability": {
+        "seating": "Bulvar üstü pastane-dondurmacı masaları ve tezgâh düzeni",
+        "crowdAndNoise": "Özellikle yaz akşamları ve hafta sonlarında aile gruplarıyla yoğun",
+        "disadvantage": "Kalabalık akşamlarda servis hızı yavaşlayabiliyor ve şube içi klasik pastane temposu eleştiri alabiliyor.",
+        "transit": "Merkez Mahallesi Gazi Mustafa Kemal Bulvarı No:796/A üzerinde Mezitli’de."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yelkencinin Gazetesi Dosyası",
+          "url": "https://yelkenciningazetesi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tarihî Mersin dondurma ve cezerye geleneğinin temsilcisi"
+        },
+        {
+          "title": "GastroCarto & Yandex Mezitli",
+          "url": "https://gastrocarto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Cezerye, kerebiç ve doğal dondurma lezzet referansları"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "1.249+ değerlendirmeyle şehrin köklü yerel markası"
+        }
+      ],
+      "pros": [
+        "Başka şehre açılmamış gerçek Mersin dondurma ve cezerye geleneği",
+        "Doğal limon ve keçi sütü aroması belirgin"
+      ],
+      "cons": [
+        "Yaz geceleri tezgâh önü kuyruğu uzayabiliyor ve servis kalitesi şubelere göre değişken"
+      ],
+      "uncertainties": [
+        "Silifke Caddesi merkez şubesiyle saat ve kalabalık profili farklılaşabiliyor."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-kerebicci-oguz-yenisehir",
+      "categoryId": "kerebic-tatli",
+      "resolvedName": "Kerebiççi Oğuz (Hürriyet Merkez)",
+      "branchName": "İsmet İnönü bulvarı, Hürriyet, hilal apartmanı 274/A, 33050 Yenişehir/Mersin",
+      "placeId": "ChIJbWitlWDzJxURmKdNznyxRus",
+      "coordinates": {
+        "lat": 36.7913618,
+        "lng": 34.6011628
+      },
+      "rating": 3.8,
+      "userRatingCount": 491,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16953432996878067608",
+      "recommendedPrimary": [
+        "Çöven Köpüklü Fıstıklı Kerebiç",
+        "Hurmalı Mamul Kutusu"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Coğrafi İşaretli Kerebiç & Çöven Otu Geleneği",
+          "note": "1940’ların seyyar araba geleneğinden günümüze uzanan klasik beyaz köpüklü sunumu kesintisiz bulabileceğiniz merkez adreslerden.",
+          "proof": "hurriyet.com.tr ve memurlar.net Mersin kerebiç dosyaları"
+        }
+      ],
+      "suitability": {
+        "seating": "Paket satış ağırlıklı dükkân ve hızlı tadım alanı",
+        "crowdAndNoise": "Gün boyu hediye paketi ve kargo siparişi veren yerlilerle hareketli",
+        "disadvantage": "Çok bilinen marka popülerliği nedeniyle el yapımı butik rakiplerine göre hamur-fıstık oranı ve fiyat beklentisinde eleştiriler alabiliyor.",
+        "transit": "Hürriyet Mahallesi İsmet İnönü Bulvarı Hilal Apt. No:274/A, Yenişehir."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Hürriyet Mersin Lezzet Dosyası",
+          "url": "https://www.hurriyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mersin’in coğrafi işaretli kerebiç tatlısı ve köpük ritüeli"
+        },
+        {
+          "title": "Memurlar.net Kültür Haberi",
+          "url": "https://www.memurlar.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "30+ yıllık aile işletmesi ve geleneksel çöven köpüğü hazırlığı"
+        },
+        {
+          "title": "Kerebiççi Oğuz Resmi Sitesi",
+          "url": "http://www.kerebiccioguz.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "1940’lar Mersin kerebiç tarihçesi ve şube ağı"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "491+ değerlendirmeyle şehrin en bilinen klasik markalarından"
+        }
+      ],
+      "pros": [
+        "Şehir dışına göndermeye uygun vakumlu veya günlük kutu seçenekleri hazır",
+        "Her gün taze çöven köpüğü bulunuyor"
+      ],
+      "cons": [
+        "Puan ortalaması ve müşteri memnuniyeti el işi küçük üreticilere kıyasla daha düşük seyrediyor"
+      ],
+      "uncertainties": [
+        "Tatlıda yoğun fıstık ve el yapımı doku arayanlar Kerebiçci Sabahat ile kıyaslayabilir."
+      ],
+      "selectionScore": 75,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-kahvalti-duragi",
+      "categoryId": "kahvalti",
+      "resolvedName": "Mersin Kahvaltı Durağı",
+      "branchName": "Aydınlıkevler, 2002 NOLU SOKAK ASYA APT ALTI NO 5 / B NO :10, 33000 Yenişehir/Mersin",
+      "placeId": "ChIJmwv1EAr1JxURmeofgVSKs2w",
+      "coordinates": {
+        "lat": 36.783091,
+        "lng": 34.585816
+      },
+      "rating": 4.7,
+      "userRatingCount": 338,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/mersinkahvaltiduragi/",
+      "mapsUri": "https://maps.google.com/?cid=7832756272475663001",
+      "recommendedPrimary": [
+        "Çökelekli & Taze Soğanlı Mersin Sıkması",
+        "Patatesli Sac Gözleme",
+        "Demlik Çay"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Gösterişsiz Sabah Sıkması Ritüeli",
+          "note": "Kalabalık serpme sofralara ihtiyaç duymadan Mersin’in günlük sıkma geleneğini temiz ve sıcak biçimde yaşatıyor.",
+          "proof": "qrfix.com.tr ve Yandex Aydınlıkevler kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sade iç salon masaları ve birkaç küçük dış masa",
+        "crowdAndNoise": "Sabah çalışanlar, öğrenciler ve mahalle sakinleriyle canlı",
+        "disadvantage": "Büyük bahçeli serpme kahvaltı mekanı yerine sıcak hamur işi kahvaltı dükkânı düzeninde.",
+        "transit": "Aydınlıkevler Mahallesi 2002. Sokak Asya Apt. No:5/B, Yenişehir."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "QRFix Aydınlıkevler Menü",
+          "url": "https://qrfix.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sıkma, gözleme ve kahvaltı menü kapsamı doğrulaması"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "338+ değerlendirmeyle yüksek mahalle sabah puanı"
+        }
+      ],
+      "pros": [
+        "Şehir merkezinde taze açılmış sıcak Mersin sıkması bulmak çok kolay",
+        "Hızlı ve ekonomik kahvaltı"
+      ],
+      "cons": [
+        "Hafta sonları kalabalık gruplara uygun geniş bahçesi bulunmuyor"
+      ],
+      "uncertainties": [
+        "Öğleden sonra geç saatlere kıyasla sabah saatlerinde sac üstü tazeliği zirvede."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-daphne-restaurant",
+      "categoryId": "kahvalti",
+      "resolvedName": "Daphne Restaurant (Turunçlu)",
+      "branchName": "Turunçlu, 3726 sokak No 15, 33112 Yenişehir/Mersin",
+      "placeId": "ChIJGWstaS8L2BQRtxVi6WB9AF8",
+      "coordinates": {
+        "lat": 36.827567699999996,
+        "lng": 34.4530266
+      },
+      "rating": 4.6,
+      "userRatingCount": 282,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6845609288789005751",
+      "recommendedPrimary": [
+        "Turunçlu Bahçe Serpme Kahvaltı",
+        "Sac Gözleme",
+        "Odun Çaydanlık Çayı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Şehir Sıcağından Kaçış & Davet Bahçesi",
+          "note": "Adnan Menderes sahiline kıyasla daha yüksek ve ağaçlıklı konumuyla özellikle hafta sonu aile buluşmalarında seçiliyor.",
+          "proof": "mersinbarosu.org.tr ve Yandex Turunçlu kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaç altı açık kır bahçesi ve yarı kapalı cam bölmeler",
+        "crowdAndNoise": "Cumartesi-pazar sabahları aile gruplarıyla yoğun talep görüyor",
+        "disadvantage": "Şehir dışı köy geçişinde kaldığından özel araçsız toplu taşımayla ulaşım zahmetli.",
+        "transit": "Turunçlu Mahallesi 3726. Sokak No:15 üzerinde Yenişehir kuzey yamaçlarında."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yandex Maps Turunçlu",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yeşillikler içi huzurlu ortam ve kahvaltı değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "282+ değerlendirmede yüksek bahçe kahvaltısı memnuniyeti"
+        }
+      ],
+      "pros": [
+        "Şehir trafiğinden izole yeşil kır kahvaltısı ortamı",
+        "Rahat park imkânı"
+      ],
+      "cons": [
+        "Özel davet veya kalabalık organizasyon günlerinde bahçe yoğunlaşabiliyor"
+      ],
+      "uncertainties": [
+        "Hafta sonu sabah saatlerinde gitmeden önce davet/etkinlik yoğunluğu teyit edilebilir."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-sahmaran-kahvalti-evi",
+      "categoryId": "kahvalti",
+      "resolvedName": "Şahmaran Kahvaltı Evi",
+      "branchName": "Yeni, 33205. Sk. faik yıldız apartmanı no.6 3c, 33200 Mezitli/Mersin",
+      "placeId": "ChIJzxxI1MKLJxURexTDdOagigc",
+      "coordinates": {
+        "lat": 36.760632799999996,
+        "lng": 34.5386982
+      },
+      "rating": 4.5,
+      "userRatingCount": 67,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=543423616713430139",
+      "recommendedPrimary": [
+        "Yöresel Serpme Kahvaltı",
+        "Sıcak Pişi & Çökelekli Sıkma",
+        "Kavurmalı Yumurta"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mezitli Yerleşim İçinde Taze Sıcak Hamurlar",
+          "note": "Önceden hazırlanmış soğuk tabaklar yerine masaya sıcak inen pişi, börek ve yumurta çeşitleriyle beğeniliyor.",
+          "proof": "eniyitat.com ve gezivalizi.com Mezitli kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Düzenli iç salon ve küçük ön bahçe masaları",
+        "crowdAndNoise": "Hafta sonları Mezitli aileleriyle canlı",
+        "disadvantage": "Deniz manzaralı sahil tesisleri yerine mahalle içi apartman altı atmosferine sahip.",
+        "transit": "Yeni Mahalle 33205. Sokak Faik Yıldız Apt. No:6/3C, Mezitli."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restoranım Mezitli Kaydı",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mezitli serpme kahvaltı tazeliği ve samimi ilgi değerlendirmeleri"
+        },
+        {
+          "title": "Gezi Valizi Mersin",
+          "url": "https://gezivalizi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Zengin serpme çeşitliliğiyle Mezitli’de önerilen kahvaltı noktası"
+        }
+      ],
+      "pros": [
+        "Masaya gelen sıcak pişi-sıkma ve kahvaltılık kalitesi tutarlı",
+        "Samimi aile işletmesi yaklaşımı"
+      ],
+      "cons": [
+        "Deniz veya doğa manzarası sunmuyor"
+      ],
+      "uncertainties": [
+        "Hafta sonları öğleye yakın saatlerde masa doluluğu artıyor."
+      ],
+      "selectionScore": 84,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-rima-kahvalti-bostani",
+      "categoryId": "kahvalti",
+      "resolvedName": "Rima Kahvaltı Bostanı",
+      "branchName": "Güvenevler, 33140 Yenişehir/Mersin",
+      "placeId": "ChIJIaIZzqb0JxUR1zBNGB5trYQ",
+      "coordinates": {
+        "lat": 36.7873711,
+        "lng": 34.5936309
+      },
+      "rating": 4.4,
+      "userRatingCount": 467,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=9560417560001589463",
+      "recommendedPrimary": [
+        "Rima Yöresel Serpme Kahvaltı",
+        "Sıcak Biberli Ekmek",
+        "Zahter & Tuzlu Yoğurt"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Klasik Kahvaltı Dışında Bölge Reçeteleri",
+          "note": "Her yerde bulunan standart salam-kaşar tabağı yerine sürk, ceviz reçeli ve biberli ekmek gibi gerçek yöresel tatları öne çıkarıyor.",
+          "proof": "yemek.com ve rimakahvalti.com.tr Güvenevler dosyaları"
+        }
+      ],
+      "suitability": {
+        "seating": "Bostan/bahçe temalı ferah açık ve kapalı masalar",
+        "crowdAndNoise": "Özellikle cumartesi-pazar sabahları yüksek talep görüyor",
+        "disadvantage": "Yüksek popülerlik nedeniyle hafta sonu rezervasyonsuz gelenlerde bekleme sürebiliyor.",
+        "transit": "Güvenevler Mahallesi Forum/Pozcu merkez çevresinde, Yenişehir."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemek.com Mersin Kahvaltı Rehberi",
+          "url": "https://yemek.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Biberli ekmek, zahter ve doğal kahvaltılıklarıyla Yenişehir’de öne çıkıyor"
+        },
+        {
+          "title": "Rima Kahvaltı Resmi Sitesi",
+          "url": "https://rimakahvalti.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Güvenevler bostan konsepti ve el yapımı ürün listesi"
+        },
+        {
+          "title": "Leziz Mekanlar Yenişehir",
+          "url": "https://lezizmekanlar.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Hafta sonu kahvaltısı için popüler Yenişehir adresi"
+        }
+      ],
+      "pros": [
+        "Standart kahvaltının ötesinde gerçek yöresel sürk-zahter-biberli ekmek sunuyor",
+        "Merkezi Yenişehir erişimi"
+      ],
+      "cons": [
+        "Kalabalık sabahlarda servis ekibi yetişmekte zorlanabiliyor"
+      ],
+      "uncertainties": [
+        "Hafta sonları önceden rezervasyon yapılması bekleme riskini ortadan kaldırıyor."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-down-cafe-mezitli",
+      "categoryId": "kahve",
+      "resolvedName": "Down Cafe (Mezitli)",
+      "branchName": "Menderes, Turunç Cd. No:1, 33340 Mezitli/Mersin",
+      "placeId": "ChIJOxXTThKKJxURvZHM6oTGBNY",
+      "coordinates": {
+        "lat": 36.7371461,
+        "lng": 34.5219385
+      },
+      "rating": 4.6,
+      "userRatingCount": 530,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/downkafemezitli/",
+      "mapsUri": "https://maps.google.com/?cid=15421669298200678845",
+      "recommendedPrimary": [
+        "Türk Kahvesi & Ev Limonatası",
+        "Filtre Kahve / Latte",
+        "Günlük Ev Yapımı Kek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Toplumsal Katkı & Sakin Bahçe Huzuru",
+          "note": "Ticari zincirlerin gürültüsünden uzaklaşarak gençlerin emeğine destek olabileceğiniz temiz ve sıcacık bir kahve molası.",
+          "proof": "enuygun.com ve Yandex Mezitli kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ağaçlıklı sakin bahçe masaları ve aydınlık iç salon",
+        "crowdAndNoise": "Gündüz saatlerinde düzenli mahalle müdavimleriyle dengeli kalabalık",
+        "disadvantage": "Akşam geç saatlere kadar açık olan gece kafeleri yerine gündüz temposunda çalışıyor.",
+        "transit": "Menderes Mahallesi Turunç Caddesi No:1 üzerinde, Mezitli."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Enuygun Mersin Sosyal Noktalar",
+          "url": "https://www.enuygun.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Mezitli ve ZİÇEV ortaklığındaki örnek sosyal sorumluluk kafesi"
+        },
+        {
+          "title": "Yandex Maps Menderes",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sıcak misafirperverlik ve sakin ortam övgüleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "530+ değerlendirmeyle Mezitli’nin en yüksek beğenili duraklarından"
+        }
+      ],
+      "pros": [
+        "Anlamlı sosyal etkisi ve samimi, stressiz kafe atmosferi",
+        "Temiz, sakin ve huzurlu bahçe"
+      ],
+      "cons": [
+        "Üçüncü nesil tek köken kavurma laboratuvarı yerine klasik kafe menüsü sunuyor"
+      ],
+      "uncertainties": [
+        "Hafta sonları bahçe oturumu öğleden sonra dolabiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-joiee-cafe",
+      "categoryId": "kahve",
+      "resolvedName": "Joiee Cafe (Müze İçi Deniz Manzaralı)",
+      "branchName": "Yeşil Alan, Gazi, 1321. Sk. No:1, 33130 Yenişehir/Mersin",
+      "placeId": "ChIJ-asZ2siLJxURoDzNz6gXVwg",
+      "coordinates": {
+        "lat": 36.7811933,
+        "lng": 34.6009741
+      },
+      "rating": 4.6,
+      "userRatingCount": 149,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://joieecafe.com/",
+      "mapsUri": "https://maps.google.com/?cid=600975089085529248",
+      "recommendedPrimary": [
+        "Flat White / Iced Americano",
+        "San Sebastian / Günlük Cheesecake",
+        "Taze Limonata"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kültür Gezisi & Sahil Manzarası Kesişimi",
+          "note": "Pozcu sahil trafiğinin stresinden soyutlanmış müze alanı içinde ferah ve düzenli kahve oturumu sağlıyor.",
+          "proof": "joieecafe.com ve mersinsosyal.com.tr Yenişehir"
+        }
+      ],
+      "suitability": {
+        "seating": "Deniz manzaralı müze terası ve aydınlık iç salon",
+        "crowdAndNoise": "Öğle ve öğleden sonra müze ziyaretçileri ile sakin çalışma grupları",
+        "disadvantage": "Müze kapanış düzeni ve giriş alanına bağlı olarak geç gece saatlerine dek açık değil.",
+        "transit": "Gazi Mahallesi 1321. Sokak No:1 (Mersin Arkeoloji Müzesi içi), Yenişehir."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Joiee Cafe Resmi Sitesi",
+          "url": "https://joieecafe.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Müze içi konum, kahve barı ve mutfak detayları"
+        },
+        {
+          "title": "Mersin Sosyal Hayat Dosyası",
+          "url": "https://mersinsosyal.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Arkeoloji Müzesi içinde deniz manzaralı kafe deneyimi önerisi"
+        },
+        {
+          "title": "Yandex Maps Yenişehir",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sakin ortam, manzara ve tatlı-kahve kalitesi övgüleri"
+        }
+      ],
+      "pros": [
+        "Müze ve sahil aksını birleştiren nezih, gürültüsüz kahve ortamı",
+        "Ferah deniz manzarası"
+      ],
+      "cons": [
+        "Gece geç saat kahvesi arayanlar için müze alan saatleriyle sınırlı"
+      ],
+      "uncertainties": [
+        "Hafta sonu müze yoğunluğunda sahil tarafındaki dış masalar hızlı dolabiliyor."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-ak-kafe-kushimoto",
+      "categoryId": "kahve",
+      "resolvedName": "Ak Kafe (Kushimoto Sokağı)",
+      "branchName": "1402 19/E, İnönü, Kushimoto Sk. No:19, 33130 Yenişehir/Mersin",
+      "placeId": "ChIJ66Ypdqj0JxUR7PimwJ8u4Os",
+      "coordinates": {
+        "lat": 36.7827238,
+        "lng": 34.5952134
+      },
+      "rating": 4.4,
+      "userRatingCount": 1786,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16996636257363097836",
+      "recommendedPrimary": [
+        "Taze Sıkma Mersin Atomu / Muzlu Süt",
+        "Türk Kahvesi & Espresso Çeşitleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kushimoto Sokağı Sosyal Kalbi",
+          "note": "İnönü Pozcu bölgesinin yürüyüş ve kafe sokağında yıllardır aynı yerini koruyarak yerel buluşma kültürünü sürdürüyor.",
+          "proof": "mekan.com ve onedio.com Kushimoto dosyaları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kushimoto Sokağı cepheli geniş dış ve iç masa düzeni",
+        "crowdAndNoise": "Öğleden sonra ve gece geç saatlere dek üniversite gençliğiyle çok hareketli",
+        "disadvantage": "Canlı sokak temposu ve yüksek müşteri hacmi nedeniyle sessiz okuma veya odaklanma kafesi değil.",
+        "transit": "İnönü Mahallesi Kushimoto Sokak No:19 üzerinde Yenişehir merkezde."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Onedio Mersin Kushimoto Rehberi",
+          "url": "https://onedio.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Pozcu Kushimoto Sokağı kafe kültürü ve klasik buluşma noktaları"
+        },
+        {
+          "title": "Mekan.com Yenişehir Kaydı",
+          "url": "https://mekan.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kushimoto Sokağı merkez konumu, atom ve kahve popülerliği"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "1.786+ değerlendirmeyle Kushimoto’nun yüksek puanlı köklü kafesi"
+        }
+      ],
+      "pros": [
+        "Şehrin simge kafeler sokağı Kushimoto’yu yerinde hissettiriyor",
+        "Taze atom içecekleri ve ulaşılabilir konum"
+      ],
+      "cons": [
+        "Akşam saatlerinde sokak uğultusu ve kalabalık yüksek"
+      ],
+      "uncertainties": [
+        "Sessiz çalışma yerine sosyal sohbet ve yürüyüş molası için daha uygun."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-numerica-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Numerica Coffee",
+      "branchName": "Akkent, 32. Cd. Eliptika Sitesi B Blok No 49 BB 33160, 33160 Yenişehir/Mersin",
+      "placeId": "ChIJpRQNxEqLJxURrO59iPGezeA",
+      "coordinates": {
+        "lat": 36.7824265,
+        "lng": 34.5525012
+      },
+      "rating": 4.4,
+      "userRatingCount": 234,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.numerica.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=16198778194935803564",
+      "recommendedPrimary": [
+        "Double Espresso / Cortado",
+        "Iced Latte",
+        "V60 Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Pozcu Gürültüsünden Uzakta Nitelikli Bar",
+          "note": "Sahil ve Kushimoto kalabalığının dışında gerçekten çekirdek tadına ve çalışma konforuna odaklanan modern Yenişehir kafesi.",
+          "proof": "numerica.com.tr ve menuharitasi.com Akkent"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık iç oturum, çalışma masaları ve site bahçesi",
+        "crowdAndNoise": "Gündüz ders çalışanlar ve mahalle kahve müdavimleriyle sakin tempo",
+        "disadvantage": "Pozcu merkez yürüyüş aksından biraz batıda, Akkent tarafında kalıyor.",
+        "transit": "Akkent Mahallesi 32. Cadde Eliptika Sitesi B Blok No:49BB, Yenişehir."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Numerica Coffee Resmi Sitesi",
+          "url": "http://www.numerica.com.tr/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Akkent 32. Cadde espresso barı ve kahve konsepti"
+        },
+        {
+          "title": "Menü Haritası & Yandex Akkent",
+          "url": "https://menuharitasi.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Espresso çeşitleri, tatlı uyumu ve çalışma rahatlığı deneyim notları"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "234+ misafirle istikrarlı nitelikli kahve puanı"
+        }
+      ],
+      "pros": [
+        "Çekirdek kavrum ve espresso ekstraksiyon kalitesi net",
+        "Sakin çalışma veya sohbet atmosferi"
+      ],
+      "cons": [
+        "Sahil hattından yürüyerek ulaşmak uzak kalıyor"
+      ],
+      "uncertainties": [
+        "Özel tatlı stokları gün içi tüketime göre akşam değişebiliyor."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-rustemoglu-tantuni",
+      "categoryId": "denemelisin",
+      "resolvedName": "Rüstemoğlu Tantuni (Çiftlikköy)",
+      "branchName": "Çiftlikköy, 34. Cadde No:33 B, 33150 Yenişehir/Mersin",
+      "placeId": "ChIJGw4hQrOLJxUR4Ed3DXRQ5OQ",
+      "coordinates": {
+        "lat": 36.7755588,
+        "lng": 34.5474354
+      },
+      "rating": 4.4,
+      "userRatingCount": 1203,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://wa.me/905338146689",
+      "mapsUri": "https://maps.google.com/?cid=16493396194709948384",
+      "recommendedPrimary": [
+        "Çift Lavaş Biftek Tantuni",
+        "Somun Ekmek Et Tantuni",
+        "Açık Ayran"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Üniversite & Batı Yenişehir Klasik Durağı",
+          "note": "Akdeniz merkezine inmeden Yenişehir-Çiftlikköy tarafında hızlı ve temiz klasik tantuni sunmasıyla yüksek hacimli tercih topluyor.",
+          "proof": "onedio.com ve mynet.com Mersin tantuni listeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Düzenli iç salon masaları ve hızlı servis bankosu",
+        "crowdAndNoise": "Öğle arası üniversite gençliği ve akşamüstü mahalle sakinleriyle yoğun",
+        "disadvantage": "Tarihî Cami Şerif çarşısı havası yerine modern üniversite semti caddesi atmosferinde.",
+        "transit": "Çiftlikköy Mahallesi 34. Cadde No:33/B üzerinde, Yenişehir."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Onedio Mersin Tantuni Listesi",
+          "url": "https://onedio.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Geleneksel lezzeti koruyan önde gelen Mersin tantunicileri arasında"
+        },
+        {
+          "title": "Mynet Seyahat Mersin",
+          "url": "https://www.mynet.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Şehir tantuni rehberinde önerilen yerel duraklardan"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "1.203+ değerlendirmeyle istikrarlı puan profili"
+        }
+      ],
+      "pros": [
+        "Etin inceliği ve lavaş-yağ dengesi çok tutarlı",
+        "Temiz modern salon düzeni"
+      ],
+      "cons": [
+        "Hafta içi akşam saatlerinde paket sipariş yoğunluğu yüksek"
+      ],
+      "uncertainties": [
+        "Sipariş sırasında acı ve soğan oranını damak tadına göre söylemek önerilir."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-marech-cafe-restaurant",
+      "categoryId": "denemelisin",
+      "resolvedName": "Ma'Rech Cafe & Restaurant",
+      "branchName": "50.Yıl Mh, Kuzey İndigo Apt, Ali Kaya, Mutlu Cd No:14/D, 33150 Yenişehir/Mersin",
+      "placeId": "ChIJFQltvhX1JxURziazrbJsVc4",
+      "coordinates": {
+        "lat": 36.8014581,
+        "lng": 34.583041099999996
+      },
+      "rating": 4.6,
+      "userRatingCount": 203,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/marechcafe",
+      "mapsUri": "https://maps.google.com/?cid=14867909259507738318",
+      "recommendedPrimary": [
+        "Özel Soslu El Yapımı Burger",
+        "Taze Makarna / Bistro Ana Yemek",
+        "Tatlı & Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Klasik Yöresel Dışında Dünya Mutfağı Alternatifi",
+          "note": "Uzun Mersin seyahatlerinde modern bistro akşam yemeği veya kahve-tatlı oturumu arayan gruplara dengeli çözüm sunuyor.",
+          "proof": "lezizmekanlar.com.tr ve yemeksepeti.com Yenişehir kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Şık modern iç salon ve rahat açık veranda oturumu",
+        "crowdAndNoise": "Akşam yemekleri ve hafta sonu genç gruplarla canlı",
+        "disadvantage": "Geleneksel Mersin mutfağı yerine çağdaş bistro/kafe çizgisinde konumlanıyor.",
+        "transit": "50. Yıl Mahallesi Ali Kaya Mutlu Caddesi No:14/D (Kuzey İndigo Apt.), Yenişehir."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Leziz Mekanlar Yenişehir",
+          "url": "https://lezizmekanlar.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ali Kaya Mutlu Caddesi dünya mutfağı ve modern bistro incelemesi"
+        },
+        {
+          "title": "Yandex Maps Yenişehir",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Özenli tabak sunumu ve servis memnuniyeti notları"
+        }
+      ],
+      "pros": [
+        "Şık sunumlu bistro yemekleri ve rahat oturma düzeni",
+        "Yenişehir yeni aksında erişilebilir"
+      ],
+      "cons": [
+        "Yöresel Mersin lezzeti arayanlar için menü dünya mutfağı odaklı"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamları açık alan masaları hızlı doluyor."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "mersin-gul-kafe-restoran",
+      "categoryId": "denemelisin",
+      "resolvedName": "Gül Kafe Restoran (Fatih Sahil)",
+      "branchName": "Fatih Mahallesi Adnan Menderes Bulvarı Yavuz Tower altı, Fatih, No:210/B, 33200 Mezitli/Mersin",
+      "placeId": "ChIJ4zrwe-KKJxURVvjD2HNAEJc",
+      "coordinates": {
+        "lat": 36.7616136,
+        "lng": 34.552431299999995
+      },
+      "rating": 4.4,
+      "userRatingCount": 1394,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://gulkaferestoran.com/",
+      "mapsUri": "https://maps.google.com/?cid=10885271165656627286",
+      "recommendedPrimary": [
+        "Serpme Kahvaltı / Sıcak Sandviçler",
+        "Tavuk & Et Bistro Tabakları",
+        "Sütlü Tatlı & Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Grup Buluşmalarında Esnek Menü Güvenliği",
+          "note": "Farklı yemek beklentisi olan kalabalık aile veya arkadaş gruplarının sahil aksında ortak paydada buluşabileceği düzenli salon.",
+          "proof": "gulkaferestoran.com ve lezizmekanlar.com.tr Mezitli"
+        }
+      ],
+      "suitability": {
+        "seating": "Büyük açık teras ve konforlu kapalı salon masaları",
+        "crowdAndNoise": "Özellikle akşamüstü ve hafta sonları sürekli hareketli",
+        "disadvantage": "Geniş kapasiteli kafe-restoran temposunda butik uzman dükkan samimiyeti yerine kurumsal düzen hakim.",
+        "transit": "Fatih Mahallesi Adnan Menderes Bulvarı No:210/B (Yavuz Tower altı), Mezitli."
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Gül Kafe Resmi Sitesi",
+          "url": "http://gulkaferestoran.com/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Fatih sahil şubesi gün boyu mutfak ve tatlı menüsü"
+        },
+        {
+          "title": "Leziz Mekanlar Mezitli",
+          "url": "https://lezizmekanlar.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Sahil aksında grup yemekleri ve kafe oturumu referansı"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "1.394+ değerlendirmeyle Mezitli sahilinin yerleşik markası"
+        }
+      ],
+      "pros": [
+        "Günün her saatinde aynı kalitede ulaşılabilen geniş sahil kapasitesi",
+        "Hem tatlı hem yemek çeşitliliği"
+      ],
+      "cons": [
+        "Yoğun hafta sonu akşamlarında kalabalık düzeyi artıyor"
+      ],
+      "uncertainties": [
+        "Mutfak menüsü çok geniş olduğundan imza ürün yerine günlük klasiklere yönelmek daha güvenli."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    }
+  ]
+}

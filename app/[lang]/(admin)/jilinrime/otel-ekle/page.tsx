@@ -409,7 +409,7 @@ export default function OtelEklePage() {
                   Harita Koordinatları
                 </Label>
                 <p className="text-sm text-gray-500 mb-4">
-                  Google Maps'te oteli bulun, sağ tıklayın ve koordinatları kopyalayın
+                  Google Maps&apos;te oteli bulun, sağ tıklayın ve koordinatları kopyalayın
                 </p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -603,7 +603,7 @@ export default function OtelEklePage() {
                 Google Haritalar
               </Label>
               <p className="text-sm text-gray-500 mb-4">
-                Google Maps'te oteli bulun, "Paylaş" butonuna tıklayın ve linki buraya yapıştırın
+                Google Maps&apos;te oteli bulun, &quot;Paylaş&quot; butonuna tıklayın ve linki buraya yapıştırın
               </p>
               <div className="space-y-2">
                 <Label htmlFor="googleMaps" className="text-sm font-semibold">

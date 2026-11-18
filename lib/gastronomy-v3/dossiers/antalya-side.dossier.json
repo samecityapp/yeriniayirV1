@@ -1,0 +1,2546 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "antalya-side",
+  "displayName": "Side, Antalya",
+  "verifiedAt": "2026-11-16T09:32:45.241Z",
+  "selectedCount": 30,
+  "rejectedControls": [
+    {
+      "id": "ctrl-side-apollon-closed",
+      "resolvedName": "Apollon Exclusive Dining",
+      "reason": "not_operational:CLOSED_TEMPORARILY"
+    },
+    {
+      "id": "ctrl-side-miss-pizza-chain",
+      "resolvedName": "Side Miss Pizza",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-side-burger-king-chain",
+      "resolvedName": "Burger King - Side",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-side-mcdonalds-chain",
+      "resolvedName": "McDonald's Antalya Side",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-side-liman-lounge-low",
+      "resolvedName": "LİMAN RESTAURANT LOUNGE CLUB",
+      "reason": "below_quality_threshold:★4.2(2677)"
+    },
+    {
+      "id": "ctrl-side-zula-low",
+      "resolvedName": "Zula Side",
+      "reason": "below_quality_threshold:★4.3(1403)"
+    },
+    {
+      "id": "ctrl-side-grill-house-low",
+      "resolvedName": "Side Grill House",
+      "reason": "below_quality_threshold:★3.9(396)"
+    },
+    {
+      "id": "ctrl-side-by-rasim-low",
+      "resolvedName": "By Rasim Balıkçı",
+      "reason": "below_quality_threshold:★4.1(270)"
+    },
+    {
+      "id": "ctrl-side-burger-bros-low",
+      "resolvedName": "Burger Bros",
+      "reason": "below_quality_threshold:★3(5)"
+    },
+    {
+      "id": "ctrl-side-nehir-balik-outside",
+      "resolvedName": "NEHİR BALIK EVİ",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Side/Selimiye/Yalı/Yali/Kemer/Liman Cd/Apollon/Süleyman Demirel/Suleyman Demirel/Cennetler, adres: Aşağı Pazarcı, 1057 Sok No: 7 A, 07600 Manavgat/Antalya)"
+    },
+    {
+      "id": "ctrl-side-guney-deniz-outside",
+      "resolvedName": "Güney Deniz Balık",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Side/Selimiye/Yalı/Yali/Kemer/Liman Cd/Apollon/Süleyman Demirel/Suleyman Demirel/Cennetler, adres: Örnek Mah, 1501. Sk. 8/3 Z:2, 07600 Manavgat/Antalya)"
+    },
+    {
+      "id": "ctrl-side-la-pizza-outside",
+      "resolvedName": "La Pizza",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Side/Selimiye/Yalı/Yali/Kemer/Liman Cd/Apollon/Süleyman Demirel/Suleyman Demirel/Cennetler, adres: Yukarı Pazarcı, İbrahim Sözen Cd. No:31/B, 07600 Manavgat/Antalya)"
+    },
+    {
+      "id": "ctrl-side-burger-mood-outside",
+      "resolvedName": "Burger Mood",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Side/Selimiye/Yalı/Yali/Kemer/Liman Cd/Apollon/Süleyman Demirel/Suleyman Demirel/Cennetler, adres: Sorgun, Herford Cd No:12/A, 07600 Manavgat/Antalya)"
+    },
+    {
+      "id": "ctrl-side-tas-konak-outside",
+      "resolvedName": "Taş Konak Restaurant Manavgat",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Side/Selimiye/Yalı/Yali/Kemer/Liman Cd/Apollon/Süleyman Demirel/Suleyman Demirel/Cennetler, adres: Şelale, Küme Evleri, 07600 Manavgat/Antalya)"
+    },
+    {
+      "id": "ctrl-side-cihan-pide-outside",
+      "resolvedName": "Cihan Pide Restoran",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Side/Selimiye/Yalı/Yali/Kemer/Liman Cd/Apollon/Süleyman Demirel/Suleyman Demirel/Cennetler, adres: Çolaklı, 07600 Manavgat/Antalya)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "side-zagon-restaurant",
+      "categoryId": "pizza",
+      "resolvedName": "Zagon Restaurant",
+      "branchName": "Side, Side Bulvari NO: 40 A, 07600 Manavgat/Antalya",
+      "placeId": "ChIJCSfrTTJZwxQRE-SrknHNS1M",
+      "coordinates": {
+        "lat": 36.786696,
+        "lng": 31.3982743
+      },
+      "rating": 5,
+      "userRatingCount": 317,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://zagonside.com/",
+      "mapsUri": "https://maps.google.com/?cid=6002116816077054995",
+      "recommendedPrimary": [
+        "Zagon Affumicato",
+        "Armonia Dei Funghi",
+        "Pizza Stracciatella"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Yapımı Tagliatelle al Tartufo & Arancini",
+          "note": "Taş fırın pizzalar dışında taze hazırlanan trüflü tagliatelle, carbonara ve çıtır arancini başlangıcı akşam menüsünde sıkça tercih ediliyor.",
+          "proof": "zagonside.com resmi menüsü ve Vistus dijital menü kaydı"
+        }
+      ],
+      "suitability": {
+        "seating": "Düzenli iç salon ve Side Bulvarı tarafında açık teras masaları",
+        "crowdAndNoise": "Akşam yemeği saatlerinde pizzaya odaklı çiftler ve yerel müdavimlerle dengeli dolu",
+        "disadvantage": "Antik Liman yürüyüş hattının kuzeyinde, Side Bulvarı aksında yer alır ve haftanın bir günü kapalı kalabiliyor.",
+        "transit": "Side Bulvarı No:40A üzerinde Antik Kent girişinden araç veya kısa yürüyüşle ulaşılır."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Zagon Restaurant",
+          "url": "https://maps.google.com/?cid=6002116816077054995",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Side Blv. No:40A konumu ve operasyonel durumu doğrulandı."
+        },
+        {
+          "title": "Zagon Ristorante Pizzeria Resmi Sitesi",
+          "url": "https://zagonside.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Taş fırın pizza çeşitleri ve el yapımı makarna menüsü."
+        },
+        {
+          "title": "Restoranim — Zagon Restaurant Side",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taş fırın hamur dokusu ve malzeme dengesi değerlendirmeleri."
+        }
+      ],
+      "pros": [
+        "Özgün malzeme kombinasyonlu taş fırın pizzalar",
+        "El yapımı makarna ve arancini seçenekleri"
+      ],
+      "cons": [
+        "Antik Yarımada sahiline yürüyüş mesafesinin biraz uzun olması",
+        "Pazartesi günleri kapalı olabilmesi"
+      ],
+      "uncertainties": [
+        "Sezona göre özel pizza reçeteleri ve haftalık kapalı gün takvimi değişebiliyor."
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-the-harlem",
+      "categoryId": "pizza",
+      "resolvedName": "The Harlem Side",
+      "branchName": "Side, 1601. Sk. no1, 07600 Manavgat/Antalya",
+      "placeId": "ChIJfQVT7VVZwxQR5h8v6-JKiW8",
+      "coordinates": {
+        "lat": 36.7841795,
+        "lng": 31.406553300000002
+      },
+      "rating": 4.8,
+      "userRatingCount": 258,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.theharlemside.com/",
+      "mapsUri": "https://maps.google.com/?cid=8037037348488159206",
+      "recommendedPrimary": [
+        "Harlem Pizza (Füme Kaburga & Pastırmalı)",
+        "Dağ Mantarlı Pizza",
+        "Margherita Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Calzone Burger & Double Smash Burger",
+          "note": "Pizza hamuru cebinde füme kaburga ve cheddar ile pişen Calzone Burger ile trüf parmesan patatesli Smash Burger menünün sevilen ikinci ayağı.",
+          "proof": "The Harlem Side resmi hesabı ve online sipariş menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Samimi iç masa düzeni ve 1601. Sokak cephesinde açık hava masaları",
+        "crowdAndNoise": "Öğleden sonra ve akşam saatlerinde yerel yerleşikler ile pizza tutkunlarıyla hareketli",
+        "disadvantage": "Antik Kent merkezine kıyasla doğu yerleşim sokaklarında kaldığı için limandan yürüyüş yerine kısa araç erişimi daha rahat oluyor.",
+        "transit": "Side Mahallesi 1601. Sokak No:1 adresinde Kemer tarafı yan sokaklar içinde."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — The Harlem Side",
+          "url": "https://maps.google.com/?cid=8037037348488159206",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Side 1601. Sk. No:1 konumu ve operasyonel kaydı."
+        },
+        {
+          "title": "The Harlem Side Resmi Instagram",
+          "url": "https://www.instagram.com/theharlemside/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Meşe odunu fırınında Napoliten pizza ve burger sunumları."
+        },
+        {
+          "title": "Wanderlog — The Harlem Side",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ekşi mayalı ince Napoli hamuru ve taze malzeme değerlendirmeleri."
+        },
+        {
+          "title": "Restoranim — The Harlem Side",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Harlem Pizza, Calzone Burger ve samimi ortam notları."
+        }
+      ],
+      "pros": [
+        "Meşe odunu fırını ve San Marzano soslu gerçek Napoliten yaklaşım",
+        "Özgün Calzone Burger ve smash burger alternatifi"
+      ],
+      "cons": [
+        "Yoğun akşam saatlerinde sipariş hazırlık süresinin uzayabilmesi",
+        "Antik Liman yürüme rotasından içeride kalması"
+      ],
+      "uncertainties": [
+        "Sezon dışında öğleden sonra açılış ve paket servis saatleri değişiklik gösterebiliyor."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-pizza-point-bistro",
+      "categoryId": "pizza",
+      "resolvedName": "Pizza Point Bistro Cafe-Bar",
+      "branchName": "Side, 1003. Sk. No:11 Z03, 07330 Manavgat/Antalya",
+      "placeId": "ChIJ3fssdwBZwxQRRZxQ1bIkQ7s",
+      "coordinates": {
+        "lat": 36.7786384,
+        "lng": 31.397190600000002
+      },
+      "rating": 4.9,
+      "userRatingCount": 249,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13493669259033746501",
+      "recommendedPrimary": [
+        "Pizza Italiano",
+        "Ballı Hardallı Tavuklu Pizza",
+        "Bol Malzemeli Special Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Calzone & Bistro Sandviçleri",
+          "note": "Klasik açık pizzaların yanında dolgulu calzone çeşitleri ve hafif bistro atıştırmalıkları gün boyu tercih ediliyor.",
+          "proof": "Restoranim ve Yemeksepeti Pizza Point Bistro kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Rahat dış teras masaları ve sade bistro iç salonu",
+        "crowdAndNoise": "Gündüz sakin, akşam yemeği saatlerinde mahalle sakinleri ve gezginlerle canlı",
+        "disadvantage": "Turistik liman manzarası sunmaz; ara sokak bistrosu olarak sakin yemek odaklıdır.",
+        "transit": "Side Mahallesi 1003. Sokak No:11 üzerinde, Side Caddesi ara bağlantısında."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Pizza Point Bistro Cafe-Bar",
+          "url": "https://maps.google.com/?cid=13493669259033746501",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "1003. Sk. No:11 Z03 konumu ve operasyonel kaydı."
+        },
+        {
+          "title": "Restoranim — Pizza Point Bistro Cafe-Bar",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İnce hamur fırın pizzaları ve açık alan oturumu değerlendirmeleri."
+        },
+        {
+          "title": "Yemeksepeti — Pizza Point Bistro",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ballı hardallı tavuklu pizza, calzone ve çeşitli pizza boyutları."
+        }
+      ],
+      "pros": [
+        "Ağırlaşmayan ince fırın pizza hamuru",
+        "Kalabalık liman gürültüsünden uzak sakin sokak oturumu"
+      ],
+      "cons": [
+        "Sınırlı deniz manzarası",
+        "Geniş grup masalarından ziyade küçük gruplara uygun düzen"
+      ],
+      "uncertainties": [
+        "Sezona bağlı olarak akşam mutfak kapanış saatleri esneyebiliyor."
+      ],
+      "selectionScore": 96,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-ristorante-italiano",
+      "categoryId": "pizza",
+      "resolvedName": "Ristorante Italiano",
+      "branchName": "Selimiye mahallesi, Side, 613. Sk., 07330 Manavgat/Antalya",
+      "placeId": "ChIJ2-38aahZwxQRpAe2pw3Jk8A",
+      "coordinates": {
+        "lat": 36.7787809,
+        "lng": 31.3911275
+      },
+      "rating": 4.7,
+      "userRatingCount": 441,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.ristoranteitalianoside.com/",
+      "mapsUri": "https://maps.google.com/?cid=13876655937344112548",
+      "recommendedPrimary": [
+        "Dört Peynirli Pizza",
+        "Pizza Margherita",
+        "Karışık (Mix) Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fettuccine al Funghi & Spagetti Bolognese",
+          "note": "Odun fırını pizzaların yanı sıra parmesan ve taze mantar sosuyla hazırlanan makarna tabakları düzenli olarak övülüyor.",
+          "proof": "Restoranim ve Yandex Haritalar Ristorante Italiano kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Aydınlık iç salon ve sokak cephesinde düzenli açık masalar",
+        "crowdAndNoise": "Aileler ve İtalyan mutfağı seven tatilcilerle akşam saatlerinde düzenli dolu",
+        "disadvantage": "Menüde İtalyan klasiklerinin yanında ızgara ve güveç çeşitleri de bulunduğundan tam pürüzsüz bir sadece-pizza mutfağı değildir.",
+        "transit": "Selimiye 613. Sokak üzerinde, Side batı sahil yürüyüş aksına birkaç dakikalık mesafede."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Ristorante Italiano",
+          "url": "https://maps.google.com/?cid=13876655937344112548",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Selimiye 613. Sk. konumu ve operasyonel kaydı."
+        },
+        {
+          "title": "Restoranim — Ristorante Italiano Side",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Odun fırını ince hamur pizzalar ve bolonez spagetti geri bildirimleri."
+        },
+        {
+          "title": "Yandex Haritalar — Ristorante Italiano",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Fettuccine al Funghi ve taş fırın pizza menü detayları."
+        }
+      ],
+      "pros": [
+        "Taş fırında dengeli pişen ince İtalyan pizzaları",
+        "Makarna ve başlangıç seçenekleriyle ailelere uygun menü"
+      ],
+      "cons": [
+        "Geniş turistik menü karması içermesi",
+        "Akşam yoğunluğunda masa bekleme ihtimali"
+      ],
+      "uncertainties": [
+        "Yaz sezonu dışında bazı özel İtalyan tabakları günlük tedarike göre değişebiliyor."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-daily-core-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Daily Core Coffee&Shop",
+      "branchName": "Side, Çağla Sk. No:8/C, 07600 Manavgat/Antalya",
+      "placeId": "ChIJgbWP7q9ZwxQR1-K8Bn-8aio",
+      "coordinates": {
+        "lat": 36.7668311,
+        "lng": 31.391132
+      },
+      "rating": 4.9,
+      "userRatingCount": 42,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=3056462550884213463",
+      "recommendedPrimary": [
+        "Espresso Bazlı Sütlü Kahveler",
+        "Filtre Kahve",
+        "Soğuk Demleme & Iced Latte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Limonata & Hafif Atıştırmalıklar",
+          "note": "Sıcak Antik Kent yürüyüşü sırasında kahve dışında serinletici limonata ve günlük eşlikçiler sıkça tercih ediliyor.",
+          "proof": "Wanderlog ve Restoranim Daily Core değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Çağla Sokak üzerinde açık hava masaları ve kısmi deniz manzaralı köşe oturumu",
+        "crowdAndNoise": "Antik Kent gezisi veren gezginlerle gün boyu sakin ve dingin bir tempo",
+        "disadvantage": "Alkolsüz küçük bir kahve dükkanı konseptinde çalıştığı için kapsamlı yemek veya kahvaltı menüsü sunmaz.",
+        "transit": "Side Antik Kent içinde Çağla Sokak No:8/C adresinde yaya yürüyüş rotasında."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Daily Core Coffee&Shop",
+          "url": "https://maps.google.com/?cid=3056462550884213463",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Side Çağla Sk. No:8/C konumu ve operasyonel kaydı."
+        },
+        {
+          "title": "Restoranim — Daily Core Coffee & Shop",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Açık hava oturma alanı, kahve kalitesi ve deniz manzarası notları."
+        },
+        {
+          "title": "Wanderlog — Daily Core Coffee & Shop",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Antik Side gezisi kahve ve limonata molası değerlendirmeleri."
+        },
+        {
+          "title": "Yandex Haritalar — Daily Core Coffee & Shop",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Alkolsüz nitelikli kahve ve lifestyle dükkan konsepti."
+        }
+      ],
+      "pros": [
+        "Antik Kent kalabalığından bir adım içeride deniz esintili kahve molası",
+        "Sakin ve alkolsüz kafe atmosferi"
+      ],
+      "cons": [
+        "Küçük oturma alanı nedeniyle grup halinde yer bulma zorluğu",
+        "Sınırlı yiyecek eşlikçisi"
+      ],
+      "uncertainties": [
+        "Kış sezonunda gün içi çalışma saatleri mevsim koşullarına göre daralabiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-muddy-art-cafe",
+      "categoryId": "kahve",
+      "resolvedName": "Muddy Art Cafe",
+      "branchName": "Antik kent, Side, Çağla Sk., 07330 Manavgat/Antalya",
+      "placeId": "ChIJezFt8A9bwxQRC77bAPqhVu8",
+      "coordinates": {
+        "lat": 36.76666,
+        "lng": 31.391304100000003
+      },
+      "rating": 4.9,
+      "userRatingCount": 36,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17246149918190190091",
+      "recommendedPrimary": [
+        "Türk Kahvesi",
+        "Espresso & Sütlü Kahve Çeşitleri",
+        "Soğuk Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "El Yapımı Seramikler & Bitki Çayı Seçkisi",
+          "note": "Kahve eşliğinde sunulan demleme çaylar ile mekanda sergilenen el yapımı çömlek ve takılar ziyaretçilerin ilgisini çekiyor.",
+          "proof": "Restoranim ve Restaurant Guru Muddy Art Cafe değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi taş bina içi bohem köşeler ve güneşli sokak önü masaları",
+        "crowdAndNoise": "Apollon Tapınağı yürüyüşü sırasında özgün sanat durakları arayanlarla sakin",
+        "disadvantage": "Nakit ödeme tercih edilebildiği için gitmeden önce hazırlıklı olmakta yarar var; yemek servisi bulunmaz.",
+        "transit": "Antik Side Çağla Sokak üzerinde, Apollon Tapınağı bölgesinden yürüyerek birkaç dakika."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Muddy Art Cafe",
+          "url": "https://maps.google.com/?cid=17246149918190190091",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Antik Kent Çağla Sk. konumu ve operasyonel kaydı."
+        },
+        {
+          "title": "Restoranim — Muddy Art Cafe Side",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tarihi taş bina, bohem ortam ve nakit ödeme detayı."
+        },
+        {
+          "title": "Restaurant Guru — Muddy Art Cafe",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahve, müzik atmosferi ve konukseverlik değerlendirmeleri."
+        },
+        {
+          "title": "Yandex Haritalar — Muddy Art Cafe",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "El yapımı seramik atölye konsepti ve kahve sunumları."
+        }
+      ],
+      "pros": [
+        "Side içinde nadir bulunan bohem seramik-sanat kafe kimliği",
+        "Tarihi taş yapıda huzurlu mola"
+      ],
+      "cons": [
+        "Nakit ödeme gereksinimi olabilmesi",
+        "Sınırlı masa kapasitesi ve mutfak servisi olmaması"
+      ],
+      "uncertainties": [
+        "Sezon dışında açılış gün ve saatleri dönemsel olarak değişebiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-glow-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Glow Coffee",
+      "branchName": "Side, Kazım Karabekir Cd. No:119, 07600 Manavgat/Antalya",
+      "placeId": "ChIJBbJeEr5ZwxQREi0Zy4cX0mY",
+      "coordinates": {
+        "lat": 36.7820566,
+        "lng": 31.406486899999997
+      },
+      "rating": 4.9,
+      "userRatingCount": 41,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=7409010208973335826",
+      "recommendedPrimary": [
+        "Iced Latte",
+        "Flat White",
+        "Espresso Bazlı İmza Kahveler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Hafif Kafe Atıştırmalıkları & Akşam Kokteylleri",
+          "note": "Gündüz kahve menüsünün yanında sunulan hafif atıştırmalıklar ve akşam bar içecekleri sosyal buluşmaları tamamlıyor.",
+          "proof": "Restoranim ve Yandex Haritalar Glow Coffee kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Modern iç mekan oturumu ve cadde cephesinde geniş masalar",
+        "crowdAndNoise": "Gündüz kahve molası veren yerleşikler, akşam ise daha hareketli genç kitleyle dolu",
+        "disadvantage": "Antik Kent merkezine kıyasla modern cadde aksında yer alır ve akşam saatlerinde nargile-lounge temposuna kayabilir.",
+        "transit": "Side Mahallesi Kazım Karabekir Caddesi No:119 üzerinde yerel toplu taşıma hattında."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Glow Coffee",
+          "url": "https://maps.google.com/?cid=7409010208973335826",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kazım Karabekir Cd. No:119 konumu ve operasyonel kaydı."
+        },
+        {
+          "title": "Restoranim — Glow Coffee Side",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahve aroması, modern dekorasyon ve sosyal kafe değerlendirmeleri."
+        },
+        {
+          "title": "Yandex Haritalar — Glow Coffee",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kazım Karabekir Caddesi kahve dükkanı kaydı."
+        }
+      ],
+      "pros": [
+        "Modern ve temiz iç tasarım",
+        "Antik Kent dışındaki cadde aksında rahat erişim"
+      ],
+      "cons": [
+        "Akşam geç saatlerde nargile ve yüksek müzik temposu",
+        "Tarihi Antik Kent atmosferinden uzak kalması"
+      ],
+      "uncertainties": [
+        "Gündüz sakin kahve dükkanı akışı akşam saatlerinde lounge düzenine dönüşebiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-serenade-restaurant",
+      "categoryId": "date",
+      "resolvedName": "Serenade Restaurant Bar",
+      "branchName": "Side, Adnan Menderes Blv. 15 E, 07330 Manavgat/Antalya",
+      "placeId": "ChIJIxUtw5dZwxQR3gL6PZl01qw",
+      "coordinates": {
+        "lat": 36.7754137,
+        "lng": 31.399125800000004
+      },
+      "rating": 4.9,
+      "userRatingCount": 2508,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://serenaderestaurant.com/",
+      "mapsUri": "https://maps.google.com/?cid=12454270021058298590",
+      "recommendedPrimary": [
+        "Steak Fajita",
+        "Özel Soslu Bonfile Steak",
+        "Kızarmış Karides"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Çilekli Margarita & Ev Yapımı Tatlılar",
+          "note": "Akşam yemeğinin yanında özel hazırlanan kokteyller ve yemek sonu dondurmalı tatlı sunumları öne çıkıyor.",
+          "proof": "serenaderestaurant.com resmi menüsü ve Wanderlog değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Romantik akşam aydınlatmalı teras ve şık iç salon masaları",
+        "crowdAndNoise": "Özel akşam yemeği, yıl dönümü ve çift buluşmaları nedeniyle akşamları oldukça yoğun",
+        "disadvantage": "Antik Liman sahil şeridi yerine Adnan Menderes Bulvarı hattında konumlandığından deniz manzarası sunmaz ve rezervasyon önerilir.",
+        "transit": "Adnan Menderes Bulvarı No:15E üzerinde Side merkez bağlantı yolunda."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Serenade Restaurant Bar",
+          "url": "https://maps.google.com/?cid=12454270021058298590",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Adnan Menderes Blv. 15E konumu ve operasyonel kaydı."
+        },
+        {
+          "title": "Serenade Restaurant Bar Resmi Sitesi",
+          "url": "https://serenaderestaurant.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Füzyon steakhouse, fajita ve kokteyl menü bilgileri."
+        },
+        {
+          "title": "Wanderlog — Serenade Restaurant Bar",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Romantik aydınlatma, servis özeni ve canlı müzik notları."
+        },
+        {
+          "title": "Restaurant Guru — Serenade Restaurant & Bar",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Steak, deniz ürünleri ve çilekli margarita geri bildirimleri."
+        }
+      ],
+      "pros": [
+        "Özel kutlama ve çift akşamları için özenli servis",
+        "Steak, fajita ve kokteyl çeşitliliği"
+      ],
+      "cons": [
+        "Deniz manzarası olmaması",
+        "Kalabalık akşamlarda rezervasyonsuz masa bulma güçlüğü"
+      ],
+      "uncertainties": [
+        "Canlı müzik programı haftanın günlerine ve mevsime göre değişebiliyor."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-solis-restaurant",
+      "categoryId": "date",
+      "resolvedName": "Solis Side Restaurant",
+      "branchName": "Side, Yasemin Sk. No:46, 07600 Manavgat/Antalya",
+      "placeId": "ChIJtQT31QRbwxQR1s8sKo3U_MY",
+      "coordinates": {
+        "lat": 36.7686412,
+        "lng": 31.3889353
+      },
+      "rating": 4.9,
+      "userRatingCount": 194,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://solisside.com/",
+      "mapsUri": "https://maps.google.com/?cid=14338569016403873750",
+      "recommendedPrimary": [
+        "Tereyağlı Karides",
+        "Midyeli Spagetti",
+        "Artizan İtalyan Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Cheesecake & İmza Kokteyller",
+          "note": "Akşam yemeği sonrası dondurma eşliğinde servis edilen sıcak tatlılar, cheesecake ve loş bahçede hazırlanan kokteyller tercih ediliyor.",
+          "proof": "Restoranim Solis Side değerlendirmeleri ve solisside.com kaydı"
+        }
+      ],
+      "suitability": {
+        "seating": "Mum ışıklı açık bahçe masaları ve doğal ahşap detaylı samimi iç mekan",
+        "crowdAndNoise": "Sakin, baş başa akşam yemeği arayan çiftlerle dengeli bir dolulukta",
+        "disadvantage": "Üst segment fiyatlandırmaya sahiptir; popüler akşamlarda mum ışıklı bahçe masaları hızla dolar.",
+        "transit": "Antik Kent içinde Yasemin Sokak No:46 adresinde yaya yürüyüş rotasında."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Solis Side Restaurant",
+          "url": "https://maps.google.com/?cid=14338569016403873750",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Side Yasemin Sk. No:46 konumu ve operasyonel kaydı."
+        },
+        {
+          "title": "Solis Side Resmi Alanı",
+          "url": "https://solisside.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Resmi işletme kaydı ve marka kimliği."
+        },
+        {
+          "title": "Restoranim — Solis Side Restaurant",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Mum ışıklı romantik bahçe, karides ve cheesecake değerlendirmeleri."
+        }
+      ],
+      "pros": [
+        "Turistik gürültüden uzak butik ve romantik dekorasyon",
+        "Taze deniz mahsullü makarna ve karides"
+      ],
+      "cons": [
+        "Üst segment bütçe gereksinimi",
+        "Küçük kapasite nedeniyle erken dolabilmesi"
+      ],
+      "uncertainties": [
+        "Sezon dışında bahçe oturumu hava koşullarına bağlı olarak iç mekana çekilebiliyor."
+      ],
+      "selectionScore": 96,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-deja-vu-restaurant",
+      "categoryId": "date",
+      "resolvedName": "Deja Vu Restaurant",
+      "branchName": "Side, 507. Sk. No:13, 07330 Manavgat/Antalya",
+      "placeId": "ChIJkyAds1JZwxQR1vQnLm_bc7Y",
+      "coordinates": {
+        "lat": 36.774919,
+        "lng": 31.403121
+      },
+      "rating": 4.8,
+      "userRatingCount": 311,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://facebook.com/dejavurestaurantside",
+      "mapsUri": "https://maps.google.com/?cid=13147093007786833110",
+      "recommendedPrimary": [
+        "Özel Soslu Steak Çeşitleri",
+        "Deniz Ürünleri Tabağı",
+        "Izgara Kebap Spesiyalleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İmza Bar Kokteylleri & Kutlama Sunumları",
+          "note": "Yemek sonuna doğru bar bölümünde hazırlanan kokteyller ve yıl dönümü gibi özel gecelere eşlik eden küçük sürprizler öne çıkıyor.",
+          "proof": "Wanderlog ve Restaurant Guru Deja Vu Side değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sıcak aydınlatmalı iç salon ve sokak cephesi akşam masaları",
+        "crowdAndNoise": "Çiftler ve özel gün kutlayan konuklarla akşam saatlerinde hareketli",
+        "disadvantage": "Antik Yarımada dışındaki ara sokakta yer aldığı için deniz veya tapınak manzarası yoktur.",
+        "transit": "Side Mahallesi 507. Sokak No:13 adresinde doğu sahil oteller bölgesine yakın."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Deja Vu restaurant",
+          "url": "https://maps.google.com/?cid=13147093007786833110",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Side 507. Sk. No:13 konumu ve operasyonel kaydı."
+        },
+        {
+          "title": "Deja Vu Restaurant Resmi Facebook Sayfası",
+          "url": "https://www.facebook.com/dejavurestaurantside",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Canlı müzik ve akşam servis duyuruları."
+        },
+        {
+          "title": "Wanderlog — Deja Vu Restaurant Side",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Özenli personel, kutlama atmosferi ve yemek kalitesi notları."
+        },
+        {
+          "title": "Restaurant Guru — Deja Vu Restaurant",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Steak, deniz ürünleri ve kokteyl değerlendirmeleri."
+        }
+      ],
+      "pros": [
+        "Çiftler ve kutlama yemekleri için sıcak ve özenli servis",
+        "Hem steak hem deniz ürünü alternatifleri"
+      ],
+      "cons": [
+        "Deniz manzarası sunmaması",
+        "Canlı müzik gecelerinde konuşma temposunun hareketlenmesi"
+      ],
+      "uncertainties": [
+        "Canlı müzik günleri dönemsel takvime göre değişebiliyor."
+      ],
+      "selectionScore": 95,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-carpe-diem-restaurant",
+      "categoryId": "date",
+      "resolvedName": "Carpe Diem Restaurant in Side",
+      "branchName": "Side, Turgut Reis Cd. 44-2, 07330 Manavgat/Antalya",
+      "placeId": "ChIJi7FMCVJbwxQRqAWQZgp2ki8",
+      "coordinates": {
+        "lat": 36.7669455,
+        "lng": 31.3863057
+      },
+      "rating": 4.5,
+      "userRatingCount": 731,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.carpediemside.com/",
+      "mapsUri": "https://maps.google.com/?cid=3427932053424833960",
+      "recommendedPrimary": [
+        "Günlük Taze Deniz Balığı",
+        "El Yapımı Deniz Mahsullü Makarna",
+        "Akdeniz Başlangıç Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Gün Batımı Kokteylleri & Taze El Açması Pizza",
+          "note": "Akşam yemeği öncesi gün batımına karşı alınan imza kokteyller ve paylaşım için söylenen pizzalar teras deneyimini tamamlıyor.",
+          "proof": "carpediemside.com resmi sitesi ve Yandex incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Deniz ve gün batımı manzaralı açık bohem teras masaları",
+        "crowdAndNoise": "Gün batımı saatinden itibaren çiftler ve romantik akşam yemeği arayanlarla dolu",
+        "disadvantage": "Manzaralı ön sıra masalar gün batımı saatlerinde hızla dolduğu için önceden rezervasyon gerektirir.",
+        "transit": "Antik Side Turgut Reis Caddesi No:44-2 adresinde sahil yürüyüş aksında."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Carpe Diem Restaurant in Side",
+          "url": "https://maps.google.com/?cid=3427932053424833960",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Side Turgut Reis Cd. 44-2 konumu ve operasyonel kaydı."
+        },
+        {
+          "title": "Carpe Diem Side Resmi Sitesi",
+          "url": "https://carpediemside.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Deniz manzaralı bohem konsept, Akdeniz ve İtalyan mutfağı."
+        },
+        {
+          "title": "Yandex Haritalar — Carpe Diem Side",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Gün batımı atmosferi, taze balık ve makarna değerlendirmeleri."
+        },
+        {
+          "title": "Restoranim — Carpe Diem Restaurant Side",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Turgut Reis Caddesi sahil oturumu ve İtalyan-Akdeniz tabakları."
+        },
+        {
+          "title": "Restaurant Inside — Carpe Diem Side",
+          "url": "https://www.restaurantinside.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Deniz ürünleri, el yapımı pizza-makarna ve gün batımı manzarası."
+        }
+      ],
+      "pros": [
+        "Antik Side sahilinde bohem mimari ve gün batımı manzarası",
+        "Deniz ürünleri ile İtalyan tabaklarının dengesi"
+      ],
+      "cons": [
+        "Ön sıra manzaralı masalar için rezervasyon zorunluluğu",
+        "Yüksek sezonda yoğun yaya trafiği"
+      ],
+      "uncertainties": [
+        "Rüzgarlı havalarda açık kıyı terasında oturma konforu değişebiliyor."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-calypso-side",
+      "categoryId": "date",
+      "resolvedName": "Calypso Side",
+      "branchName": "Side, BARBAROS_1 CAD No:43 IÇ KAPI NO:Z01, 07330 Manavgat/Antalya",
+      "placeId": "ChIJ8YTL37JXwxQRCy8RtLnzhc8",
+      "coordinates": {
+        "lat": 36.764065599999995,
+        "lng": 31.388460400000003
+      },
+      "rating": 4.6,
+      "userRatingCount": 668,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://calypsofinefood.dijital.menu/",
+      "mapsUri": "https://maps.google.com/?cid=14953626116669124363",
+      "recommendedPrimary": [
+        "Calypso Chef Special Tabağı",
+        "Et & Tavuk Güveç",
+        "Kuzu Pirzola"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İmza & Kahve Bazlı Kokteyller + Şarap Seçkisi",
+          "note": "Gün batımı saatlerinden geceye uzanan barda imza kokteyller ve şarap menüsü akşam yemeğine eşlik ediyor.",
+          "proof": "calypsofinefood.dijital.menu resmi menüsü ve Restoranim değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sahil hattına açılan şık teras masaları ve lounge oturma düzeni",
+        "crowdAndNoise": "Gün batımından akşam geç saatlere kadar çiftler ve arkadaş gruplarıyla canlı",
+        "disadvantage": "Gün batımı yoğunluğunda servis hızı yavaşlayabiliyor ve sahil konumu nedeniyle fiyatlar ara sokaklara göre daha yüksek.",
+        "transit": "Antik Kent Barbaros Caddesi No:43 üzerinde liman yürüyüş hattında."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — CALYPSO SIDE",
+          "url": "https://maps.google.com/?cid=14953626116669124363",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Barbaros Cd. No:43 konumu ve operasyonel kaydı."
+        },
+        {
+          "title": "Calypso Fine Food Resmi Dijital Menüsü",
+          "url": "https://calypsofinefood.dijital.menu/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Calypso Chef Special, güveç ve kokteyl menü kayıtları."
+        },
+        {
+          "title": "Restoranim — Calypso Side",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Gün batımı manzarası, deniz esintisi ve akşam servis temposu notları."
+        },
+        {
+          "title": "Restaurant Guru — Calypso Side",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kokteyl, güveç ve şık lounge ortamı değerlendirmeleri."
+        }
+      ],
+      "pros": [
+        "Antik Side sahil şeridinde gün batımı konumu",
+        "Geniş kokteyl ve akşam yemeği menüsü"
+      ],
+      "cons": [
+        "Yoğun gün batımı saatlerinde servisin yavaşlayabilmesi",
+        "Turistik kıyı bandı fiyat seviyesi"
+      ],
+      "uncertainties": [
+        "Yaz akşamlarında ön teras masaları rezervasyonla dolabiliyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-gardenia-cafe-restaurant",
+      "categoryId": "kahvalti",
+      "resolvedName": "Gardenia Side Cafe&Restaurant",
+      "branchName": "Side, Mimar Sinan Cd. No:24, 07600 Manavgat/Antalya",
+      "placeId": "ChIJb5YaxbRZwxQRRrAoaMINN4A",
+      "coordinates": {
+        "lat": 36.7837378,
+        "lng": 31.402344699999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 316,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/gardenia_side?igsh=MXd0enZ2cjA1amd4ag==",
+      "mapsUri": "https://maps.google.com/?cid=9238868289196175430",
+      "recommendedPrimary": [
+        "Serpme Köy Kahvaltısı",
+        "El Açması Gözleme",
+        "Sıcak Pişi & Peynir Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Yöresel Reçeller & Taze Demleme Çay",
+          "note": "Narenciye ağaçlarının gölgesinde kahvaltıyla birlikte gelen ev yapımı reçeller ve çay ikramı sabah oturumlarını uzatıyor.",
+          "proof": "Gardenia Side resmi Instagram hesabı, Wanderlog ve Restoranim kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Narenciye ağaçlarıyla gölgelenmiş geniş bahçe ve aileler için ferah masa düzeni",
+        "crowdAndNoise": "Sabah kahvaltısı ve brunch saatlerinde çocuklu aileler ve kalabalık arkadaş masalarıyla canlı",
+        "disadvantage": "Antik Liman bölgesinin kuzeydoğusunda yer aldığı için yürüyüş yerine kısa araç ya da taksiyle gitmek daha pratiktir.",
+        "transit": "Mimar Sinan Caddesi No:24 üzerinde Side iç yerleşim aksında."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Gardenia Side Cafe&Restaurant",
+          "url": "https://maps.google.com/?cid=9238868289196175430",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Mimar Sinan Cd. No:24 konumu ve operasyonel kaydı."
+        },
+        {
+          "title": "Gardenia Side Resmi Instagram",
+          "url": "https://www.instagram.com/gardenia_side/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Serpme kahvaltı, gözleme ve narenciye bahçesi paylaşımları."
+        },
+        {
+          "title": "Wanderlog — Gardenia Side",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Narenciye ağaçlı bahçe ve aile dostu kahvaltı değerlendirmeleri."
+        },
+        {
+          "title": "Restoranim — Gardenia Side",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Pişi, ev yapımı reçel ve serpme kahvaltı çeşitleri."
+        }
+      ],
+      "pros": [
+        "Side içinde ferah narenciye bahçesi",
+        "El açması gözleme ve ev yapımı reçellerle güçlü serpme kahvaltı"
+      ],
+      "cons": [
+        "Antik Yarımada yürüme alanının dışında kalması",
+        "Hafta sonları aile masalarıyla kalabalıklaşabilmesi"
+      ],
+      "uncertainties": [
+        "Hafta sonu bahçe gölge masaları sabah erken saatlerden itibaren dolabiliyor."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-borek-cafe",
+      "categoryId": "kahvalti",
+      "resolvedName": "Side Börek Cafe",
+      "branchName": "Side, Kazım Karabekir Cd. no:51 /A, 07120 Manavgat/Antalya",
+      "placeId": "ChIJbdkp1CpZwxQRXSGX3Z0L4x4",
+      "coordinates": {
+        "lat": 36.780675599999995,
+        "lng": 31.402436
+      },
+      "rating": 4.8,
+      "userRatingCount": 36,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2225635413506597213",
+      "recommendedPrimary": [
+        "El Açması Serpme Börek",
+        "Dereotlu Börek",
+        "Tereyağlı Simit & Çay"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli Çörek & Fırın Açma Seçkisi",
+          "note": "Sabah fırınından taze çıkan tahinli çörekler, sade açmalar ve günlük poğaçalar böreğin yanında paket olarak da sıkça alınıyor.",
+          "proof": "Restoranim ve Yemeksepeti Side Börek Cafe menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sade iç salon, pratik sokak önü masaları ve paket tezgahı",
+        "crowdAndNoise": "Sabah işe ve sahile giden mahalle sakinleriyle erken saatlerde hareketli",
+        "disadvantage": "Serpme masa kahvaltısı yerine hızlı börek-simit-çay formatında çalışır ve oturma kapasitesi sınırlıdır.",
+        "transit": "Side Mahallesi Kazım Karabekir Caddesi No:51/A üzerinde Kemer hattında."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Side Börek Cafe",
+          "url": "https://maps.google.com/?cid=2225635413506597213",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kazım Karabekir Cd. No:51/A konumu ve operasyonel kaydı."
+        },
+        {
+          "title": "Restoranim — Side Börek Cafe",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Dereotlu börek, el açması serpme börek ve tereyağlı simit notları."
+        },
+        {
+          "title": "Yemeksepeti — Side Börek & Cafe",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Poğaça, açma, tahinli çörek ve günlük börek çeşitleri."
+        },
+        {
+          "title": "Yandex Haritalar — Side Börek Cafe",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kazım Karabekir Caddesi sabah börekçisi konum ve menü kaydı."
+        }
+      ],
+      "pros": [
+        "Antalya usulü taze el açması serpme ve dereotlu börek",
+        "Turistik fiyatlardan uzak yerel mahalle fırını çizgisi"
+      ],
+      "cons": [
+        "Kısıtlı oturma alanı",
+        "Uzun serpme kahvaltı yerine hızlı sabah öğünü sunması"
+      ],
+      "uncertainties": [
+        "Sıcak börek tepsileri gün ortasına doğru tükenebiliyor."
+      ],
+      "selectionScore": 89,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-kirinti-simit-kafe",
+      "categoryId": "kahvalti",
+      "resolvedName": "Kırıntı Simit Kafe",
+      "branchName": "Side, Kemer Bulvari No:4, 07330 Manavgat/Antalya",
+      "placeId": "ChIJxfZjfS5ZwxQRr9gTCvAATa8",
+      "coordinates": {
+        "lat": 36.7878331,
+        "lng": 31.4012945
+      },
+      "rating": 5,
+      "userRatingCount": 46,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12631753560805333167",
+      "recommendedPrimary": [
+        "Taze Simit & Peynir Tabağı",
+        "Kahvaltı Tabağı",
+        "Sahanda Menemen"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "İzmir Bombası & Üzümlü Fırın Kekleri",
+          "note": "Sabah kahvaltısı ya da öğleden sonra çay molasında taze çıkan İzmir bombası ve üzümlü ev kekleri vitrinde öne çıkıyor.",
+          "proof": "Wanderlog ve Restoranim Kırıntı Simit Kafe değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Temiz iç kafe salonu ve Kemer Bulvarı cephesinde küçük dış masalar",
+        "crowdAndNoise": "Sabah yerleşikler ve uygun fiyatlı kahvaltı arayan konuklarla sakin ve düzenli",
+        "disadvantage": "Antik Side sahilinden içeride, Kemer Bulvarı yerleşim aksında kaldığı için yürüyüş rotası dışında kalır.",
+        "transit": "Side Mahallesi Kemer Bulvarı No:4 adresinde."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Kırıntı Simit Kafe",
+          "url": "https://maps.google.com/?cid=12631753560805333167",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Side Kemer Blv. No:4 konumu ve operasyonel kaydı."
+        },
+        {
+          "title": "Wanderlog — Kırıntı Simit Kafe",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Temiz ortam, taze simit, İzmir bombası ve üzümlü kek notları."
+        },
+        {
+          "title": "Restoranim — Kırıntı Simit Kafe",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kahvaltı tabağı, menemen ve makul fiyat politikası değerlendirmeleri."
+        },
+        {
+          "title": "Yemeksepeti — Kırıntı Simit Kafe",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Simit, açma, poğaça ve tost çeşitleri."
+        }
+      ],
+      "pros": [
+        "Turistik bölgede makul fiyatlı ve temiz sabah durağı",
+        "Fırından sıcak simit yanında menemen ve tatlı çeşitleri"
+      ],
+      "cons": [
+        "Kemer Bulvarı konumunda deniz veya antik kent manzarası bulunmaması"
+      ],
+      "uncertainties": [
+        "Günün ilerleyen saatlerinde sıcak poğaça ve tatlı çeşitleri azalabiliyor."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-belize-simit",
+      "categoryId": "kahvalti",
+      "resolvedName": "Belize Simit",
+      "branchName": "Kemer Mh., Kazım Karabekir Cd., 07330 Side Bld./Manavgat/Antalya",
+      "placeId": "ChIJaf71qZ5ZwxQRvguM-jLZX88",
+      "coordinates": {
+        "lat": 36.781666,
+        "lng": 31.405257
+      },
+      "rating": 4.5,
+      "userRatingCount": 86,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14942900901613669310",
+      "recommendedPrimary": [
+        "Çıtır Susamlı Simit",
+        "Domatesli Kaşarlı Poğaça",
+        "Demleme Çay & Kahvaltılık"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Gölgeli Bahçede Sıcak Açma & Fırın Çeşitleri",
+          "note": "Sabah erken saatlerde fırından çıkan sıcak açmalar ve peynirli poğaçalar açık bahçe masalarında çay eşliğinde tüketiliyor.",
+          "proof": "Restoranim ve Yandex Haritalar Belize Simit kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Yeşillikler içinde gölgelikli ahşap bahçe masaları ve hızlı fırın tezgahı",
+        "crowdAndNoise": "Sabah saatlerinde mahalle sakinleri ve çevrede konaklayan tatilcilerle düzenli",
+        "disadvantage": "Büyük serpme kahvaltı sunmaz; sade simit, poğaça ve çay üzerine kurulu mütevazı bir fırındır.",
+        "transit": "Kemer Mahallesi Kazım Karabekir Caddesi üzerinde kolay yol üstü erişimle."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Belize Simit",
+          "url": "https://maps.google.com/?cid=14942900901613669310",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kemer Mh. Kazım Karabekir Cd. konumu ve operasyonel kaydı."
+        },
+        {
+          "title": "Restoranim — Belize Simit Side",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Gölgeli ahşap bahçe masaları, simit ve domates-kaşarlı poğaça notları."
+        },
+        {
+          "title": "Yandex Haritalar — Belize Simit",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kazım Karabekir Cd. fırın ve sabah simitçisi kaydı."
+        }
+      ],
+      "pros": [
+        "Yeşillikler içinde gölgeli ahşap masalı açık alan",
+        "Çıtır simit ve sıcak domates-kaşarlı poğaça"
+      ],
+      "cons": [
+        "Tam serpme kahvaltı menüsü bulunmaması",
+        "Kemer aksında sahil merkezine yürüme mesafesinde olmaması"
+      ],
+      "uncertainties": [
+        "Öğleden sonra sıcak fırın çeşitleri erken tükenebiliyor."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-kibrit-kasap-mangal",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kibrit Kasap & Mangal",
+      "branchName": "Side, Cemal Gürsel Blv. NO:14/A, 07330 Manavgat/Antalya",
+      "placeId": "ChIJp6eebXZZwxQRVQiznihv43o",
+      "coordinates": {
+        "lat": 36.7811878,
+        "lng": 31.399146499999997
+      },
+      "rating": 4.6,
+      "userRatingCount": 3838,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.facebook.com/kibritkasapmangal/",
+      "mapsUri": "https://maps.google.com/?cid=8855043512592435285",
+      "recommendedPrimary": [
+        "Kasap Reyonundan Dana Antrikot",
+        "Kuzu Pirzola",
+        "Ev Yapımı Kasap Köfte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Közlenmiş Sebze, Taze Salata & Pide Eşlikçisi",
+          "note": "Mangal etlerinin yanında masaya sıcak gelen köz domates-biber, mevsim salatası ve taze pide sofrayı tamamlıyor.",
+          "proof": "Kibrit Kasap resmi Facebook sayfası ve Restoranim değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Geniş iç salon ve aile gruplarına uygun büyük cadde teras masaları",
+        "crowdAndNoise": "Akşam yemekleri ve hafta sonları yerel halk ile kalabalık ailelerle çok yoğun",
+        "disadvantage": "Alkol servisi bulunmaz ve yoğun akşam saatlerinde mangal siparişlerinde bekleme süresi uzayabiliyor.",
+        "transit": "Cemal Gürsel Bulvarı No:14/A üzerinde Yalı-Side ana arterinde."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Kibrit Kasap & Mangal",
+          "url": "https://maps.google.com/?cid=8855043512592435285",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Side Cemal Gürsel Blv. No:14/A konumu ve yüksek değerlendirme hacmi."
+        },
+        {
+          "title": "Kibrit Kasap & Mangal Resmi Facebook",
+          "url": "https://www.facebook.com/kibritkasapmangal/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Kasap reyonu ve mangal konsepti paylaşımları."
+        },
+        {
+          "title": "Restoranim — Kibrit Kasap & Mangal",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Aile ortamı, taze et seçimi ve mangal kalitesi değerlendirmeleri."
+        },
+        {
+          "title": "Yandex Haritalar — Kibrit Kasap & Mangal",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Alkolsüz kasap-restoran düzeni ve geç saat servis notları."
+        }
+      ],
+      "pros": [
+        "Kasap tezgahından görerek et seçme imkanı",
+        "Yerli halkın da yoğun tercih ettiği dengeli porsiyonlar"
+      ],
+      "cons": [
+        "Alkolsüz konsept",
+        "Kalabalık akşam saatlerinde gürültülü ve yoğun olabilmesi"
+      ],
+      "uncertainties": [
+        "Sezon zirvesinde popüler özel kesimler akşam geç saatlerde azalabiliyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-umut-pide",
+      "categoryId": "denemelisin",
+      "resolvedName": "Side Umut Pide",
+      "branchName": "Side, İnönü Blv. no:26, 07600 Manavgat/Antalya",
+      "placeId": "ChIJc9KTw3FZwxQRdQGF8_rRPYk",
+      "coordinates": {
+        "lat": 36.7849315,
+        "lng": 31.388965400000004
+      },
+      "rating": 4.5,
+      "userRatingCount": 2307,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/sideumutpide?igsh=MWI3cnV2ZjZhNWQ4Zg==",
+      "mapsUri": "https://maps.google.com/?cid=9889291232533086581",
+      "recommendedPrimary": [
+        "Kuşbaşılı Kaşarlı Pide",
+        "Çıtır Lahmacun",
+        "Kiremitte Köfte & Tavuk"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Mercimek Çorbası & Fırın İkram Mezeleri",
+          "note": "Ana pide veya kebap öncesi gelen sıcak mercimek çorbası ile taze lavaş ve ikram ezme tabakları misafirlerce övülüyor.",
+          "proof": "Side Umut Pide resmi Instagram hesabı, Wanderlog ve Yemeksepeti menüsü"
+        }
+      ],
+      "suitability": {
+        "seating": "Temiz, geniş iç salon ve bulvar kenarı gölgeli açık alan",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde yerli esnaf, aileler ve müdavimlerle düzenli kalabalık",
+        "disadvantage": "Geleneksel pide-kebap salonu düzenindedir; şık sahil restoranı veya antik manzara atmosferi arayanlara hitap etmez.",
+        "transit": "İnönü Bulvarı No:26 üzerinde Side merkez bulvar aksında."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Side Umut Pide",
+          "url": "https://maps.google.com/?cid=9889291232533086581",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Side İnönü Blv. No:26 konumu ve yüksek değerlendirme hacmi."
+        },
+        {
+          "title": "Side Umut Pide Resmi Instagram",
+          "url": "https://www.instagram.com/sideumutpide/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Taş fırın pide, lahmacun ve kebap sunumları."
+        },
+        {
+          "title": "Wanderlog — Side Umut Pide",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hızlı servis, temiz salon ve zengin ikram kültürü notları."
+        },
+        {
+          "title": "Yemeksepeti — Side Umut Pide & Kebap",
+          "url": "https://www.yemeksepeti.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Pide çeşitleri, kiremitte ürünler ve kebap menüsü."
+        }
+      ],
+      "pros": [
+        "Side genelinde köklü pide ve lahmacun istikrarı",
+        "Hızlı servis ve doyurucu ikram mezeleri"
+      ],
+      "cons": [
+        "Bulvar üstü konum nedeniyle deniz manzarası bulunmaması"
+      ],
+      "uncertainties": [
+        "Yoğun akşam yemeklerinde paket sipariş temposu salon servisini hafif uzatabiliyor."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-kamer-restaurant",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kamer Restaurant",
+      "branchName": "Side, 07330 Manavgat/Antalya",
+      "placeId": "ChIJPzUFQQBbwxQR0AtqOfdms40",
+      "coordinates": {
+        "lat": 36.764831099999995,
+        "lng": 31.3894346
+      },
+      "rating": 4.9,
+      "userRatingCount": 688,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=10210617992185252816",
+      "recommendedPrimary": [
+        "Kamer Kebabı",
+        "Çıtır Yaprak Ciğer",
+        "Güveçte İspanyol Karides"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Okyanus Böreği & Balık Simit Başlangıçları",
+          "note": "Klasik ocakbaşı ızgaralarının dışında sebze ve deniz mahsullü Okyanus böreği ile balık simit ara sıcakları menünün imza detaylarından.",
+          "proof": "kamerrestoran.com resmi menüsü ve tarihçesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi Barbaros Caddesi aksında açık hava avlu ve ocakbaşı bölümü",
+        "crowdAndNoise": "Akşam yemeklerinde hem yerli gastronomi meraklıları hem uluslararası konuklarla yoğun",
+        "disadvantage": "Antik Kent merkezindeki köklü konumu nedeniyle akşamları yoğun olur ve fiyat seviyesi mahalle esnaf lokantalarının üzerindedir.",
+        "transit": "Antik Side Barbaros Caddesi yaya bölgesinde limana birkaç dakikalık yürüyüşte."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — KAMER RESTAURANT",
+          "url": "https://maps.google.com/?cid=10210617992185252816",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Antik Side konumu ve operasyonel kaydı."
+        },
+        {
+          "title": "Kamer Restaurant Resmi Sitesi",
+          "url": "https://www.kamerrestoran.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "1975 tarihçesi, Kamer Kebabı, Okyanus böreği ve ocakbaşı menüsü."
+        },
+        {
+          "title": "Yandex Haritalar — Kamer Restaurant Side",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ocakbaşı ve Akdeniz mutfağı geri bildirimleri."
+        },
+        {
+          "title": "Restoranim — Kamer Restaurant Side",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Antik Side kıyısında ocakbaşı ve gün batımı sofrası notları."
+        },
+        {
+          "title": "Restaurant Guru — Kamer Restaurant",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Izgara ahtapot, kalamar, kuzu pirzola ve kebap önerileri."
+        }
+      ],
+      "pros": [
+        "Yarım asra yaklaşan köklü Antik Side geçmişi",
+        "Ocakbaşı etleriyle deniz mahsullü ara sıcakların güçlü buluşması"
+      ],
+      "cons": [
+        "Yoğun sezonda yer bulmak için erken gitme gereği"
+      ],
+      "uncertainties": [
+        "Kış sezonunda açık gün ve mutfak saatleri dönemsel daralabiliyor."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-apollonik-cafe",
+      "categoryId": "denemelisin",
+      "resolvedName": "Apollonik Cafe",
+      "branchName": "Side Mah Nar Sokak No:35, Side, Nar Sk No:35, 07330 Manavgat/Antalya",
+      "placeId": "ChIJP2r5DNdbwxQRrOYConLNsr4",
+      "coordinates": {
+        "lat": 36.764651199999996,
+        "lng": 31.3863252
+      },
+      "rating": 4.6,
+      "userRatingCount": 1105,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.instagram.com/apollonik_side?igsh=dnlrenJrZ2VmamUx",
+      "mapsUri": "https://maps.google.com/?cid=13741271305288869548",
+      "recommendedPrimary": [
+        "Türk Kahvesi (Gün Batımı Eşliğinde)",
+        "İmza Bahçe Kokteylleri",
+        "Saç Kavurma & Akdeniz Tabakları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Apollon Gün Batımı İçecek & Kahve Molası",
+          "note": "Akşam yemeği dışında tapınak sütunlarına karşı gün batımını izlerken içilen soğuk kokteyller ve Türk kahvesi buranın başlıca ritüeli.",
+          "proof": "Oggusto Side rehberi ve Apollonik resmi Instagram paylaşımları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi taş yapı içinde otantik iç mekan ve denize bakan açık teras masaları",
+        "crowdAndNoise": "Özellikle gün batımı saatinden itibaren Antik Liman ziyaretçileriyle oldukça kalabalık",
+        "disadvantage": "Apollon Tapınağı komşuluğundaki yüksek turistik talep nedeniyle gün batımında servis temposu yavaşlayabiliyor.",
+        "transit": "Antik Liman Nar Sokak No:35 üzerinde Apollon Tapınağı yürüyüş yolunun hemen başında."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Apollonik Cafe",
+          "url": "https://maps.google.com/?cid=13741271305288869548",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Side Nar Sk. No:35 konumu ve yüksek değerlendirme hacmi."
+        },
+        {
+          "title": "Apollonik Side Resmi Instagram",
+          "url": "https://www.instagram.com/apollonik_side/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Apollon Tapınağı manzaralı mekan sunumları ve etkinlikler."
+        },
+        {
+          "title": "Oggusto — Side Mekan Rehberi",
+          "url": "https://www.oggusto.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Apollon ve Athena tapınakları yanında kahve ve gün batımı önerisi."
+        },
+        {
+          "title": "Restoranim — Apollonik Cafe Side",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tarihi taş bina, Türk kahvesi ve liman kıyısı atmosferi."
+        }
+      ],
+      "pros": [
+        "Antik Liman ve Apollon Tapınağı yanında benzersiz konum",
+        "Gündüz kahveden akşam kokteyline uzanan esnek ritim"
+      ],
+      "cons": [
+        "Gün batımı saatlerinde aşırı kalabalık olabilmesi",
+        "Turistik konum nedeniyle fiyatların yüksek seyretmesi"
+      ],
+      "uncertainties": [
+        "Yüksek yaz sezonunda ön masa bulmak için gün batımından önce gelmek gerekiyor."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-bardo-gelato",
+      "categoryId": "denemelisin",
+      "resolvedName": "Bardo Gelato",
+      "branchName": "no:5/A Yalı Mahallesi, Side, Cemal Gürsel Blv. no:5/A, 07330 Manavgat/Antalya",
+      "placeId": "ChIJ_4vO6HdZwxQRq0Vcfeu3W-M",
+      "coordinates": {
+        "lat": 36.7795908,
+        "lng": 31.3987992
+      },
+      "rating": 4.7,
+      "userRatingCount": 639,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16382890291538707883",
+      "recommendedPrimary": [
+        "El Yapımı İtalyan Gelato (Karpuz Çekirdekli)",
+        "Mevsim Meyveli Sorbe",
+        "Fıstıklı & Çikolatalı Gelato"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Waffle & Espresso Eşleşmesi",
+          "note": "El yapımı dondurmaların yanında sıcak waffle sunumları ve İtalyan kahve çeşitleri tatlı molasını tamamlıyor.",
+          "proof": "Restoranim Bardo Gelato profili ve Antalya City Guide kaydı"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük butik dükkan önü kaldırım oturumu ve hızlı külah-paket servisi",
+        "crowdAndNoise": "Özellikle akşam yürüyüşü saatlerinde dondurma sırasıyla hareketli",
+        "disadvantage": "Oturma alanı oldukça kısıtlıdır; daha çok alıp yürüyüşe devam etmeye uygun küçük bir dükkan yapısına sahiptir.",
+        "transit": "Yalı Mahallesi Cemal Gürsel Bulvarı No:5/A adresinde."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Bardo Gelato",
+          "url": "https://maps.google.com/?cid=16382890291538707883",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yalı Mah. Cemal Gürsel Blv. No:5/A konumu ve operasyonel kaydı."
+        },
+        {
+          "title": "Restoranim — Bardo Gelato Side",
+          "url": "https://www.restoranim.net/isletme/bardo-gelato",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Katkısız el yapımı gelato, waffle ve yüksek müşteri memnuniyeti."
+        },
+        {
+          "title": "Antalya City Guide — Bardo Gelato",
+          "url": "https://www.antalyacityguide.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Doğal malzemeli gelato ve karpuz çekirdekli dondurma detayı."
+        },
+        {
+          "title": "Wanderlog — Bardo Gelato Side",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze meyveli ve klasik İtalyan gelato lezzetleri."
+        }
+      ],
+      "pros": [
+        "Katkısız gerçek İtalyan gelato kıvamı",
+        "Karpuz çekirdeği gibi özgün mevsim aromaları"
+      ],
+      "cons": [
+        "Küçük oturma alanı",
+        "Bazı özel aromaların akşam geç saatlere kalmadan tükenmesi"
+      ],
+      "uncertainties": [
+        "Kış döneminde üretim çeşitliliği ve açılış günleri daralabiliyor."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-adelfia-coffee-bakery",
+      "categoryId": "denemelisin",
+      "resolvedName": "Adelfia Coffee & Bakery",
+      "branchName": "Side, Zambak Sk., 07330 Manavgat/Antalya",
+      "placeId": "ChIJ1eJYbgJbwxQRy9dNKZhRARQ",
+      "coordinates": {
+        "lat": 36.7645636,
+        "lng": 31.388468500000002
+      },
+      "rating": 5,
+      "userRatingCount": 233,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.instagram.com/adelfiacoffeeandbakery/&ved=2ahUKEwiX5tvd6-uOAxV1cPEDHTZ8CHMQFnoECBsQAQ&usg=AOvVaw3p8XCfep2sL-F_Gg68JdXU",
+      "mapsUri": "https://maps.google.com/?cid=1441523069705115595",
+      "recommendedPrimary": [
+        "Pesto Soslu Ciabatta Sandviç",
+        "Ev Yapımı Yulaf & Pekmezli Kurabiye",
+        "Günlük Cheesecake & Tiramisu"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Limonata & Glutensiz Fırın Tatlıları",
+          "note": "Fırın ürünlerinin yanında taze sıkım ev limonatası ve glutensiz alternatifler özenli kahve sunumlarıyla eşleştiriliyor.",
+          "proof": "Adelfia resmi Instagram hesabı ve Restoranim değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Antik kalıntı manzaralı cam zeminli butik alan ve sakin sokak masaları",
+        "crowdAndNoise": "Sabah ve öğleden sonra butik fırın-tatlı molası arayan gezginlerle huzurlu dolu",
+        "disadvantage": "Küçük butik işletme olduğu için yoğun saatlerde masa bulmak zorlaşabiliyor ve günlük fırın ürünleri sınırlı sayıda çıkıyor.",
+        "transit": "Antik Side içinde Zambak Sokak / Leylak Sokak kesişiminde yürüyerek ulaşılır."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Adelfia Coffe & Bakery",
+          "url": "https://maps.google.com/?cid=1441523069705115595",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Side Zambak Sk. konumu ve operasyonel kaydı."
+        },
+        {
+          "title": "Adelfia Resmi Instagram",
+          "url": "https://www.instagram.com/adelfiacoffeeandbakery/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Günlük fırın ürünleri, kurabiye ve tatlı paylaşımları."
+        },
+        {
+          "title": "Restoranim — Adelfia Coffe & Bakery",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Cam zemin altı antik kalıntı, pesto ciabatta ve ev yapımı kurabiyeler."
+        },
+        {
+          "title": "Restaurant Guru — Adelfia",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze cheesecake, tiramisu ve glutensiz seçenekler."
+        }
+      ],
+      "pros": [
+        "Cam zemin altında antik kalıntı görülebilen eşsiz butik atmosfer",
+        "Ev yapımı ciabatta, kurabiye ve glutensiz seçenekler"
+      ],
+      "cons": [
+        "Küçük oturma kapasitesi",
+        "Günlük fırın üretiminin erken azalabilmesi"
+      ],
+      "uncertainties": [
+        "Mevsim dışı dönemde fırın çeşitliliği güne göre değişebiliyor."
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-fika-people",
+      "categoryId": "denemelisin",
+      "resolvedName": "Fika People",
+      "branchName": "Side, Turgut Reis Cd. no:18, 07600 Manavgat/Antalya",
+      "placeId": "ChIJOdABUzNbwxQR6BNcDXVLxGE",
+      "coordinates": {
+        "lat": 36.767635399999996,
+        "lng": 31.388486800000003
+      },
+      "rating": 4.5,
+      "userRatingCount": 88,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://6roomsbyzula.com/",
+      "mapsUri": "https://maps.google.com/?cid=7044838683221693416",
+      "recommendedPrimary": [
+        "Budapeşte Roll",
+        "Özel Tart Çeşitleri",
+        "Glutensiz Bademli Kek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bitkisel Sütlü Nitelikli Kahve & Butik Kahvaltılıklar",
+          "note": "Artizan tatlı vitrininin yanında yulaf/badem sütlü kahveler ve sınırlı sayıdaki sabah atıştırmalıkları sunuluyor.",
+          "proof": "6roomsbyzula.com resmi bağlantısı, HappyCow ve Restoranim incelemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Kırmızı tente altında sokak masaları ve taş duvarlı sıcak iç mekan",
+        "crowdAndNoise": "Antik Side kalabalığından kaçıp tatlı ve kahve molası vermek isteyenlerle sakin",
+        "disadvantage": "Geleneksel büyük pastane vitrini yerine sınırlı sayıda günlük butik tatlı üretir.",
+        "transit": "Antik Side Turgut Reis Caddesi No:18 üzerinde 6 Rooms by Zula bünyesinde."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Fika people",
+          "url": "https://maps.google.com/?cid=7044838683221693416",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Turgut Reis Cd. No:18 konumu ve operasyonel kaydı."
+        },
+        {
+          "title": "6 Rooms by Zula / Fika People Resmi Sitesi",
+          "url": "https://6roomsbyzula.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Turgut Reis Caddesi butik pastane ve konaklama konsepti."
+        },
+        {
+          "title": "Restoranim — Fika People Side",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Budapeşte roll, özel tartlar ve taş duvarlı atmosfer notları."
+        },
+        {
+          "title": "HappyCow — Fika People Side",
+          "url": "https://www.happycow.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Vegan, glutensiz tatlılar ve arkeolojik kalıntılı teras detayı."
+        }
+      ],
+      "pros": [
+        "Vegan ve glutensiz artizan tatlı seçenekleri",
+        "Arkeolojik kalıntı üstü sakin butik atmosfer"
+      ],
+      "cons": [
+        "Küçük dükkan hacmi ve sınırlı günlük üretim adedi"
+      ],
+      "uncertainties": [
+        "Özel tatlı çeşitleri günlük fırın programına göre değişebiliyor."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-royal-castle-pub-steakhouse",
+      "categoryId": "denemelisin",
+      "resolvedName": "The Royal Castle Pub&Steakhouse",
+      "branchName": "Side, Turgut Reis Cd., 07330 Manavgat/Antalya",
+      "placeId": "ChIJnUAyStpbwxQR-kmoT0zVLCM",
+      "coordinates": {
+        "lat": 36.7665412,
+        "lng": 31.3864055
+      },
+      "rating": 4.7,
+      "userRatingCount": 561,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.royalcastleside.com/",
+      "mapsUri": "https://maps.google.com/?cid=2534635214033406458",
+      "recommendedPrimary": [
+        "Biftek Kesimleri (Pepper & Mushroom Steak)",
+        "Klasik Pub Tabağı",
+        "Izgara Et Çeşitleri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Pub İçecek Eşlikçileri & Paylaşımlı Başlangıçlar",
+          "note": "Biftek ana yemeklerinin öncesinde paylaşımlı pub atıştırmalıkları ve akşam bar kokteylleri tercih ediliyor.",
+          "proof": "royalcastleside.com resmi sitesi ve Trip rehber kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Tarihi sokak dokusuna bakan açık teras ve pub tarzı iç bar alanı",
+        "crowdAndNoise": "Akşam yemeklerinden gece saatlerine kadar pub atmosferi arayan ziyaretçilerle canlı",
+        "disadvantage": "Antik Kent merkezindeki pub-steakhouse konsepti nedeniyle geleneksel Türk lokantası fiyatlarının üzerindedir.",
+        "transit": "Antik Side Turgut Reis Caddesi üzerinde merkezi yaya güzergahında."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — The Royal Castle Pub&Steakhouse",
+          "url": "https://maps.google.com/?cid=2534635214033406458",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Side Turgut Reis Cd. konumu ve operasyonel kaydı."
+        },
+        {
+          "title": "The Royal Castle Side Resmi Sitesi",
+          "url": "https://www.royalcastleside.com/",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Steakhouse ve klasik pub konsept bilgileri."
+        },
+        {
+          "title": "Yandex Haritalar — The Royal Castle Pub&Steakhouse",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Biftek, pub atmosferi ve akşam servisi değerlendirmeleri."
+        }
+      ],
+      "pros": [
+        "Antik Side içinde güçlü steakhouse ve pub seçeneği",
+        "Dengeli akşam barı ve yemek servisi"
+      ],
+      "cons": [
+        "Turistik merkez fiyat seviyesi",
+        "Maç veya yoğun bar saatlerinde yüksek ses"
+      ],
+      "uncertainties": [
+        "Özel et kesimlerinin bulunabilirliği sezon yoğunluğuna bağlı değişebiliyor."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-lezzet-i-erdem",
+      "categoryId": "denemelisin",
+      "resolvedName": "Lezzet-i Erdem Ev Yemekleri",
+      "branchName": "Side, Kazım Karabekir Cd. 10/A, 07330 Manavgat/Antalya",
+      "placeId": "ChIJif_8Y3lZwxQRl56u-zAG_D0",
+      "coordinates": {
+        "lat": 36.7786105,
+        "lng": 31.399185600000003
+      },
+      "rating": 4.5,
+      "userRatingCount": 83,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=4466451737895411351",
+      "recommendedPrimary": [
+        "Günlük Sulu Ev Yemeği & Pilav",
+        "Mercimek & Ezogelin Çorba",
+        "Kıymalı & Kuşbaşılı Pide"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Usulü Fırın Sütlaç & Şekerpare",
+          "note": "Sıcak esnaf yemeğinin ardından geleneksel sütlaç ve şerbetli şekerpare tatlısı menünün sade kapanışını oluşturuyor.",
+          "proof": "Restoranim Lezzet-i Erdem menü listesi ve Yandex kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Mütevazı esnaf lokantası iç salonu ve hızlı öğle-akşam masaları",
+        "crowdAndNoise": "Öğle ve erken akşam saatlerinde bölge çalışanları ve yerel halkla düzenli dolu",
+        "disadvantage": "Gösterişsiz sade bir esnaf lokantasıdır; ambiyans veya manzara beklentisinden ziyade günlük ev yemeğine odaklanır.",
+        "transit": "Side Mahallesi Kazım Karabekir Caddesi No:10/A üzerinde."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Lezzet-i Erdem Ev Yemekleri / Pide Lahmacun",
+          "url": "https://maps.google.com/?cid=4466451737895411351",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Kazım Karabekir Cd. No:10/A konumu ve operasyonel kaydı."
+        },
+        {
+          "title": "Restoranim — Lezzet-i Erdem Side",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ev yemekleri, çorbalar, pide ve sütlaç-şekerpare menü kaydı."
+        },
+        {
+          "title": "Yandex Haritalar — Lezzet-i Erdem",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Doyurucu porsiyonlar ve yerel lokanta değerlendirmeleri."
+        }
+      ],
+      "pros": [
+        "Turistik fiyatlardan uzak gerçek ev yemekleri ve esnaf lokantası",
+        "Hem tencere yemeği hem fırın pide-lahmacun seçeneği"
+      ],
+      "cons": [
+        "Sade lokanta dekorasyonu",
+        "Günün sulu yemeklerinin akşam saatlerine kalmadan azalabilmesi"
+      ],
+      "uncertainties": [
+        "Günlük çıkan tencere yemekleri tezgaha göre değişiklik gösteriyor."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-efsane-kokorec",
+      "categoryId": "denemelisin",
+      "resolvedName": "Side Efsane Kokoreç",
+      "branchName": "Side, Kazım Karabekir Cd. no:5, 07600 Manavgat/Antalya",
+      "placeId": "ChIJN4mIICVZwxQRMMIVhiwU1ec",
+      "coordinates": {
+        "lat": 36.7799735,
+        "lng": 31.401272700000003
+      },
+      "rating": 4.4,
+      "userRatingCount": 128,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=16705280574261412400",
+      "recommendedPrimary": [
+        "İzmir & İstanbul Usulü Kuzu Kokoreç",
+        "Ekmek Arası Izgara Köfte",
+        "Sucuk Ekmek"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Izgara Köfte & Sucuk Ekmek + Şalgam Eşliği",
+          "note": "Sakatat tercih etmeyenler için sıcak ekmek arası ızgara köfte ve sucuk ekmek yanında soğuk şalgam suyu ile hızlı alternatif sunuyor.",
+          "proof": "Yandex Haritalar Side Efsane Kokoreç işletme kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Yol kenarı pratik masalar ve hızlı al-götür tezgah düzeni",
+        "crowdAndNoise": "Akşamüstü ve gece geç saatlerde sokak lezzeti arayanlarla hareketli",
+        "disadvantage": "Hızlı sokak büfesi düzenindedir; uzun akşam yemeği oturumu veya geniş aile servisi için uygun değildir.",
+        "transit": "Side Mahallesi Kazım Karabekir Caddesi No:5 üzerinde."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Side efsane kokoreç",
+          "url": "https://maps.google.com/?cid=16705280574261412400",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Side Kazım Karabekir Cd. No:5 konumu ve operasyonel kaydı."
+        },
+        {
+          "title": "Yandex Haritalar — Side Efsane Kokoreç",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "İstanbul ve İzmir usulü kuzu kokoreç, köfte ve sucuk ekmek detayları."
+        },
+        {
+          "title": "Restoranim — Side Sokak Lezzetleri Rehberi",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kazım Karabekir Caddesi hızlı gece atıştırmalığı notları."
+        }
+      ],
+      "pros": [
+        "Side içinde hem İzmir hem İstanbul usulü kuzu kokoreç bulabilme",
+        "Hızlı ve pratik gece sokak lezzeti"
+      ],
+      "cons": [
+        "Küçük yol kenarı oturumu",
+        "Sadece sakatat ve hızlı ızgara odaklı dar menü"
+      ],
+      "uncertainties": [
+        "Sezon dışında gece kapanış saatleri dönemsel kısalabiliyor."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-karadeniz-balikcisi",
+      "categoryId": "balik",
+      "resolvedName": "Karadeniz Balıkçısı Balıkevi",
+      "branchName": "Karadeniz balıkçısı, Side, Side Cd. No:40, 07330 Manavgat/Antalya",
+      "placeId": "ChIJ9-KCvFhZwxQRVV6hkY-SPZ0",
+      "coordinates": {
+        "lat": 36.7738885,
+        "lng": 31.394621299999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 1775,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11330373382855286357",
+      "recommendedPrimary": [
+        "Özel Balık Çorbası",
+        "Günlük Taze Izgara & Tava Balık (Levrek / Hamsi / Mezgit)",
+        "Kalamar Tava"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Mısır Ekmeği & Mevsim Roka Salatası",
+          "note": "Balık servisine eşlik eden sıcak mısır ekmeği veya Trabzon ekmeği ikramı ile taze roka salatası sofrayı tamamlıyor.",
+          "proof": "Yandex Haritalar, Wanderlog ve Promenu Karadeniz Balıkçısı kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Gösterişten uzak iç salon ve Side Caddesi tarafı dış masalar",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde taze balık yemek isteyen yerli aileler ve müdavimlerle dolu",
+        "disadvantage": "Antik Liman sahilindeki deniz manzaralı restoranlar yerine Side Caddesi üzerinde yer alır; manzara yerine taze balık odaklıdır.",
+        "transit": "Side Caddesi No:40 üzerinde merkez dolmuş güzergahında."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Karadeniz Balıkçısı Balıkevi",
+          "url": "https://maps.google.com/?cid=11330373382855286357",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Side Cd. No:40 konumu ve yüksek değerlendirme hacmi."
+        },
+        {
+          "title": "Wanderlog — Karadeniz Balıkçısı Side",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze balık porsiyonları, aile işletmesi sıcaklığı ve servis özeni."
+        },
+        {
+          "title": "Yandex Haritalar — Karadeniz Balıkçısı",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Balık çorbası, mısır ekmeği ikramı ve Karadeniz balıkları."
+        },
+        {
+          "title": "Restaurant Guru — Karadeniz Balıkçısı",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kalamar, karides ve günlük balık değerlendirmeleri."
+        }
+      ],
+      "pros": [
+        "Gösterişsiz ve güvenilir aile balıkçısı",
+        "Mısır ekmeği ve özel balık çorbasıyla Karadeniz dokunuşu"
+      ],
+      "cons": [
+        "Deniz manzarası olmaması",
+        "Akşam yoğunluğunda masa bekleme ihtimali"
+      ],
+      "uncertainties": [
+        "Karadeniz mevsim balıkları (hamsi, palamut) av sezonuna göre günlük değişiyor."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-iskele-balik",
+      "categoryId": "balik",
+      "resolvedName": "İskele Balık Side",
+      "branchName": "Side, 606. Sk. no:2, 07600 Manavgat/Antalya",
+      "placeId": "ChIJ03isfVlZwxQRB4ahls_mabw",
+      "coordinates": {
+        "lat": 36.7798641,
+        "lng": 31.390172099999997
+      },
+      "rating": 4.7,
+      "userRatingCount": 889,
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://iskelebalikpisiricisi.com/side",
+      "mapsUri": "https://maps.google.com/?cid=13576636330944857607",
+      "recommendedPrimary": [
+        "Kadayıflı Karides",
+        "Vitrinden Günlük Deniz Balığı (Grida / Sinarit / Barbun)",
+        "Karidesli & Pavuryalı Mantı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli Sıcak Helva & Antalya Kabak Tatlısı",
+          "note": "Zengin soğuk meze ve ara sıcakların ardından masaya gelen tahinli sıcak helva ve cevizli kabak tatlısı akşam yemeğini tamamlıyor.",
+          "proof": "iskelebalikpisiricisi.com/side resmi menüsü ve Gastronomi Dergisi haberi"
+        }
+      ],
+      "suitability": {
+        "seating": "Panoramik deniz manzaralı teras masaları ve şık iç salon",
+        "crowdAndNoise": "Özellikle akşamları rezervasyonlu konuklar ve özel balık yemeği gruplarıyla dolu",
+        "disadvantage": "Üst fiyat segmentinde yer alır; yüksek sezonda sahil terası için önceden rezervasyon gerekir.",
+        "transit": "Side Mahallesi 606. Sokak No:2 adresinde batı sahil kıyısında."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — İskele Balık Side",
+          "url": "https://maps.google.com/?cid=13576636330944857607",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Side 606. Sk. No:2 konumu ve operasyonel kaydı."
+        },
+        {
+          "title": "İskele Balık Pişiricisi — Side Resmi Sayfası",
+          "url": "https://iskelebalikpisiricisi.com/side",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Vitrinden günlük balıklar, kadayıflı karides, hibeş ve balık pastırması menüsü."
+        },
+        {
+          "title": "Gastronomi Dergisi — İskele Balık Side",
+          "url": "https://www.gastronomidergisi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Antalya köklü mutfağının Side sahilindeki fine-dining deniz ürünleri konsepti."
+        },
+        {
+          "title": "Wanderlog — İskele Balık Side",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Meze çeşitliliği, taze deniz ürünleri ve deniz manzarası değerlendirmeleri."
+        }
+      ],
+      "pros": [
+        "Side içinde nitelikli meze ve ara sıcak çeşitliliği en yüksek balıkçılardan",
+        "Panoramik sahil manzarası"
+      ],
+      "cons": [
+        "Yüksek fiyat seviyesi",
+        "Rezervasyonsuz akşam saatlerinde manzaralı masa bulma zorluğu"
+      ],
+      "uncertainties": [
+        "Vitrindeki büyük deniz balıkları günlük av durumuna ve kiloya göre değişiyor."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-olgun-balikcilik",
+      "categoryId": "balik",
+      "resolvedName": "Olgun Balıkçılık",
+      "branchName": "Side, Kazım Karabekir Cd., 07330 Manavgat/Antalya",
+      "placeId": "ChIJO2OFHnhZwxQRX7dkp-I3BLs",
+      "coordinates": {
+        "lat": 36.778458,
+        "lng": 31.3987808
+      },
+      "rating": 4.4,
+      "userRatingCount": 1023,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.tikla.com.tr/olgun-balikcilik-side.html",
+      "mapsUri": "https://maps.google.com/?cid=13475957431609898847",
+      "recommendedPrimary": [
+        "Izgara Levrek & Çipura",
+        "Kalamar Tava",
+        "Tereyağlı Karides"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Zengin Mevsim Salatası & Mahalle Pişirim Tezgahı",
+          "note": "Ana balık siparişlerinin yanında gelen bol yeşillikli salatalar ve tezgah usulü taze pişirim hızı özellikle övülüyor.",
+          "proof": "tikla.com.tr işletme kaydı ve Yandex Haritalar değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Sade iç salon ve Kazım Karabekir Caddesi önü pratik masalar",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde yerel yerleşikler ve müdavimlerle yüksek sirkülasyon",
+        "disadvantage": "Antik Liman manzarası ve uzun rakı-meze meyhane servisi sunmaz; tamamen pratik balık lokantasıdır.",
+        "transit": "Kazım Karabekir Caddesi üzerinde Side merkez cadde aksında."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Olgun Balıkçılık",
+          "url": "https://maps.google.com/?cid=13475957431609898847",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Side Kazım Karabekir Cd. konumu ve yüksek değerlendirme hacmi."
+        },
+        {
+          "title": "Olgun Balıkçılık İşletme Profili",
+          "url": "https://www.tikla.com.tr/olgun-balikcilik-side.html",
+          "date": "2026-11-16",
+          "kind": "operator",
+          "note": "Kazım Karabekir Cd. No:15 adres ve balık pişirim kaydı."
+        },
+        {
+          "title": "Yandex Haritalar — Olgun Balıkçılık Side",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hızlı servis, taze levrek-karides ve uygun fiyat dengesi değerlendirmeleri."
+        }
+      ],
+      "pros": [
+        "Liman bölgesine göre çok daha ulaşılabilir fiyat seviyesi",
+        "Hızlı servis ve taze balık sirkülasyonu"
+      ],
+      "cons": [
+        "Deniz manzarası bulunmaması",
+        "Kapsamlı soğuk meze ve meyhane ortamı sunmaması"
+      ],
+      "uncertainties": [
+        "Akşam geç saatlerde tezgah balık çeşitleri erkenden azalabiliyor."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "side-inci-balik",
+      "categoryId": "balik",
+      "resolvedName": "İnci Balık Restaurant",
+      "branchName": "Side, 07330 Manavgat/Antalya, Türkiye",
+      "placeId": "ChIJw1YtFXVZwxQRDz5-RrbyQhg",
+      "coordinates": {
+        "lat": 36.7871278,
+        "lng": 31.398468599999998
+      },
+      "rating": 4.5,
+      "userRatingCount": 95,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=1748226470053821967",
+      "recommendedPrimary": [
+        "Günlük Izgara Balık (Levrek & Çipura)",
+        "Kalamar & Karides Tava",
+        "Geleneksel Soğuk Mezeler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Soğuk Meze Seçkisi & Et Kavurma Alternatifi",
+          "note": "Masada balık dışındaki tercihler için taze soğuk mezeler ve sıcak et kavurma alternatifi bulunması karma gruplara kolaylık sağlıyor.",
+          "proof": "Restoranim ve Restaurant Guru İnci Balık değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Mavi-beyaz deniz temalı ferah salon ve açık masa düzeni",
+        "crowdAndNoise": "Aileler ve sakin akşam yemeği arayan konuklarla dengeli dolu",
+        "disadvantage": "Sahil şeridi yerine Side Bulvarı yerleşim aksında bulunduğu için deniz manzarası yoktur.",
+        "transit": "Side Mahallesi Side Bulvarı hattı üzerinde."
+      },
+      "verifiedAt": "2026-11-16",
+      "sources": [
+        {
+          "title": "Google Maps — Inci Balik Restaurant",
+          "url": "https://maps.google.com/?cid=1748226470053821967",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Side Bulvarı aksındaki konumu ve operasyonel kaydı."
+        },
+        {
+          "title": "Restoranim — İnci Balık Side",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Deniz temalı dekorasyon, aile sıcaklığı ve taze balık notları."
+        },
+        {
+          "title": "Restaurant Guru — İnci Balık Restaurant",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kalamar, karides, meze ve ızgara balık geri bildirimleri."
+        },
+        {
+          "title": "Yandex Haritalar — İnci Balık",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Side Bulvarı adresi ve samimi atmosfer değerlendirmeleri."
+        }
+      ],
+      "pros": [
+        "Samimi aile işletmesi atmosferi",
+        "Deniz ürünlerinin yanında meze ve et alternatifi sunması"
+      ],
+      "cons": [
+        "Deniz manzarası olmaması",
+        "Bulvar tarafında akşam park yeri yoğunluğu"
+      ],
+      "uncertainties": [
+        "Sezon dışında çalışma gün ve saatleri mevsime göre değişebiliyor."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    }
+  ]
+}

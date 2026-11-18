@@ -1,0 +1,604 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "mugla-fethiye-yaniklar",
+  "displayName": "Yanıklar, Fethiye, Muğla",
+  "verifiedAt": "2026-11-16T10:52:34.973Z",
+  "selectedCount": 6,
+  "rejectedControls": [
+    {
+      "id": "ctrl-yaniklar-rei",
+      "resolvedName": "Rei Fethiye",
+      "reason": "below_quality_threshold:★4.6(20)"
+    },
+    {
+      "id": "ctrl-yaniklar-misa",
+      "resolvedName": "Misa Kahvalti Evi",
+      "reason": "below_quality_threshold:★4.2(131)"
+    },
+    {
+      "id": "ctrl-yaniklar-morr",
+      "resolvedName": "MORR Garden",
+      "reason": "below_quality_threshold:★4.3(154)"
+    },
+    {
+      "id": "ctrl-yaniklar-soncare",
+      "resolvedName": "Sonçare Köftecisi/ Nogay Usta",
+      "reason": "below_quality_threshold:★4.1(393)"
+    },
+    {
+      "id": "ctrl-yaniklar-kafi",
+      "resolvedName": "Kâfi Fethiye",
+      "reason": "below_quality_threshold:★4.2(25)"
+    },
+    {
+      "id": "ctrl-yaniklar-yesil-vadi",
+      "resolvedName": "Yeşil Vadi Yanıklar",
+      "reason": "invalid_place_type:campground"
+    },
+    {
+      "id": "ctrl-yaniklar-suna-village",
+      "resolvedName": "Suna Village",
+      "reason": "invalid_place_type:hotel"
+    },
+    {
+      "id": "ctrl-yaniklar-pastoral-vadi",
+      "resolvedName": "Pastoral Vadi Ekolojik Yaşam Çiftliği",
+      "reason": "invalid_place_type:none"
+    },
+    {
+      "id": "ctrl-yaniklar-yonca-lodge",
+      "resolvedName": "Yonca Lodge",
+      "reason": "invalid_place_type:hotel"
+    },
+    {
+      "id": "ctrl-yaniklar-kerpic-evler",
+      "resolvedName": "Kerpiç Evler",
+      "reason": "insufficient_independent_sources"
+    },
+    {
+      "id": "ctrl-yaniklar-harput-dibek",
+      "resolvedName": "Coffee shop & Toast shop fethiyeharputdibek",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-yaniklar-asmali-bahce",
+      "resolvedName": "Asmalı Bahçe Köy Kahvaltısı Fethiye",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Yanıklar/Yaniklar/Karaot/Katrancı/Katranci/Akgöl/Akgol, adres: Kargı, 401.Göl Sokak, 48300 Fethiye/Muğla)"
+    },
+    {
+      "id": "ctrl-yaniklar-yoruk-muzesi",
+      "resolvedName": "Enver Yalçın Yörük Müzesi & Apart",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Yanıklar/Yaniklar/Karaot/Katrancı/Katranci/Akgöl/Akgol, adres: Kargı Köyü, Kargı, 48300 Fethiye/Muğla)"
+    },
+    {
+      "id": "ctrl-yaniklar-ciftlik-pisiricisi",
+      "resolvedName": "Çiftlik Pişiricisi",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Yanıklar/Yaniklar/Karaot/Katrancı/Katranci/Akgöl/Akgol, adres: Çiftlik, Atatürk Blv. No:31 D:1, 48300 Fethiye/Muğla)"
+    },
+    {
+      "id": "ctrl-yaniklar-soner-inlice",
+      "resolvedName": "Soner ustanın yeri inlice",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Yanıklar/Yaniklar/Karaot/Katrancı/Katranci/Akgöl/Akgol, adres: İnlice, 48300 Fethiye/Muğla)"
+    },
+    {
+      "id": "ctrl-yaniklar-zoi-fish",
+      "resolvedName": "Zoi Fish Restaurant",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Yanıklar/Yaniklar/Karaot/Katrancı/Katranci/Akgöl/Akgol, adres: FOÇA MAH 1085 SOK, Foça, Barış Manço Blv. No:19, 48300 Fethiye/Muğla)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "yaniklar-tabiat-ana",
+      "categoryId": "kahvalti",
+      "resolvedName": "Tabiat Ana Kahvaltı Bahçesi",
+      "branchName": "sağlık sok100 A, Yanıklar, 48300 Fethiye/Muğla",
+      "placeId": "ChIJ2Wj-S_dDwBQRy28daNSt9XE",
+      "coordinates": {
+        "lat": 36.6920437,
+        "lng": 29.067649600000003
+      },
+      "rating": 4.5,
+      "userRatingCount": 1077,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=8211660623371399115",
+      "recommendedPrimary": [
+        "Serpme köy kahvaltısı",
+        "Tereyağlı sıcak bazlama",
+        "Sahanda köy yumurtası"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev yapımı reçeller ve köy tereyağı",
+          "note": "Mevsim meyvelerinden hazırlanan katkısız reçeller ile ev yapımı tereyağı ve yoğurt serpme sofranın temel eşlikçisidir.",
+          "proof": "Yemek.com & Eniyikahvalti incelemeleri"
+        },
+        {
+          "name": "El açması gözleme ve pişi",
+          "note": "Sıcak servis edilen hamur işleri kalabalık aile sofralarında kahvaltıya sıklıkla ekleniyor.",
+          "proof": "Wanderlog & Restaurant Guru derlemeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Portakal ve çam ağaçları altında dere kenarı çardaklar ve geniş açık bahçe oturumu",
+        "crowdAndNoise": "Sabah saatlerinde aile ve çocuklu gruplarla canlı; hafta sonu ve yaz sezonunda yoğunluk artıyor",
+        "disadvantage": "Yaz dönemi ve hafta sonlarında masa bulmak zorlaşabiliyor; dar köy sokağında otopark alanı çabuk doluyor",
+        "transit": "Fethiye merkezden Yanıklar yönüne giden dolmuşlarla ana yoldan inip Sağlık Sokak içine yürünebilir; özel araçla erişim daha rahat"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Yemek.com Fethiye Kahvaltı Rehberi",
+          "url": "https://yemek.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yanıklar bahçe kahvaltısı seçkisinde bahçe sebzeleri, ev yoğurdu, özel tereyağı ve serpme köy kahvaltısıyla öne çıkarılıyor."
+        },
+        {
+          "title": "Wanderlog Fethiye Kahvaltı & Brunch Listesi",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Yeşil bahçe içinde aile işletmesi olarak sunduğu ev yapımı serpme kahvaltı ile yüksek değerlendirme alıyor."
+        },
+        {
+          "title": "Instagram (@tabiatanakahvalti)",
+          "url": "https://www.instagram.com/tabiatanakahvalti/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Sağlık Sokak No:100A bahçe çardakları, kahvaltı sofrası ve sezon paylaşımları."
+        },
+        {
+          "title": "Google Maps Kaydı (Tabiat Ana Kahvaltı Bahçesi)",
+          "url": "https://maps.google.com/?cid=8211660623371399115",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yanıklar Sağlık Sokak 100A konumu ve canlı operasyonel durum doğrulaması."
+        }
+      ],
+      "pros": [
+        "Dere kenarı çardaklar ve portakal ağaçları altında ferah aile bahçesi ortamı",
+        "Ev yapımı tereyağı, yoğurt, reçeller ve sıcak bazlamayla dengeli köy kahvaltısı"
+      ],
+      "cons": [
+        "Hafta sonları ve yüksek yaz sezonunda kalabalık ve yer bekleme riski",
+        "Köy içi dar yolda araç park alanı yoğun saatlerde kısıtlı kalabiliyor"
+      ],
+      "uncertainties": [
+        "Kış ve ara sezonlarda açık/kapalı alan çalışma günleri mevsime göre değişebiliyor."
+      ],
+      "selectionScore": 85,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yaniklar-avocado-garden",
+      "categoryId": "kahvalti",
+      "resolvedName": "Avocado Garden Coffee",
+      "branchName": "Yanıklar, Esenli Sokak 39/2, 48300 Fethiye/Muğla",
+      "placeId": "ChIJmxVjXrRDwBQRpJalfIxIcsk",
+      "coordinates": {
+        "lat": 36.6997278,
+        "lng": 29.064993599999998
+      },
+      "rating": 4.6,
+      "userRatingCount": 87,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14515744317192378020",
+      "recommendedPrimary": [
+        "Bahçe köy kahvaltısı",
+        "Avokadolu tost",
+        "Menemen ve taze sıkılmış meyve suları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Nitelikli kahve çeşitleri",
+          "note": "Kahvaltı sonrası ağaç gölgesinde dinlenme molası için espresso ve filtre kahve seçenekleri tercih ediliyor.",
+          "proof": "Wanderlog & Yandex Harita topluluk notları"
+        },
+        {
+          "name": "Ev yapımı sütlü tatlılar",
+          "note": "Günün taze tatlı ve puding çeşitleri kahve eşlikçisi olarak öne çıkıyor.",
+          "proof": "Wanderlog Fethiye bahçe kafe değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Avokado ve çam ağaçları altında bahçe masaları, dağ manzaralı salıncaklar ve açık oturma alanı",
+        "crowdAndNoise": "Ana yol kalabalığından uzak, sakin ve huzurlu; çiftler ile yol üstü kahvaltı molası verenlerle dengeli",
+        "disadvantage": "Açık bahçe ağırlıklı düzeni yağışlı havalarda kısıtlı; bahçede serbest dolaşan evcil kedi ve köpekler bulunuyor",
+        "transit": "Fethiye-Dalaman karayoluna yakın Esenli Sokak üzerinde yer alıyor; araçla kolay ulaşılırken toplu taşıma sonrası kısa yürüyüş gerektirir"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Wanderlog Fethiye Seçkisi (Avocado Garden)",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yanıklar ağaçlık bahçesinde serpme kahvaltı, menemen, taze sıkılmış meyve suları ve kahve sunan sakin mola noktası olarak öneriliyor."
+        },
+        {
+          "title": "Restaurant Guru & Harita Topluluk Notları",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Avokadolu tost, bahçe kahvaltısı ve sakin ağaçlık atmosferiyle yüksek memnuniyet alıyor."
+        },
+        {
+          "title": "Instagram (@avocadogardencoffee)",
+          "url": "https://www.instagram.com/avocadogardencoffee/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "Esenli Sokak 39/2 bahçe alanı ve kahvaltı-içecek sunumları."
+        },
+        {
+          "title": "Google Maps Kaydı (Avocado Garden Coffee)",
+          "url": "https://maps.google.com/?cid=14515744317192378020",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yanıklar Esenli Sokak 39/2 konumu, breakfast_restaurant türü ve canlı operasyonel durum doğrulaması."
+        }
+      ],
+      "pros": [
+        "Avokado ve çam ağaçları arasında ana cadde gürültüsünden uzak huzurlu bahçe",
+        "Hem klasik köy kahvaltısı hem avokadolu tost ve kahve molasına uygun esnek menü"
+      ],
+      "cons": [
+        "Yağışlı veya soğuk günlerde açık bahçe konforu azalabiliyor",
+        "Bahçede dolaşan kedi ve köpekler evcil hayvan hassasiyeti olanlar için uygun olmayabilir"
+      ],
+      "uncertainties": [
+        "Sezon dışı kış aylarında servis saatleri değişkenlik gösterebilir."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yaniklar-huzur-sofrasi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Huzur Sofrası Restaurant",
+      "branchName": "Dolmuş Cad. Ne.39, Yanıklar, 48300 Fethiye/Muğla",
+      "placeId": "ChIJ1Tb9y0NdwBQRO2Ec4OKqdvk",
+      "coordinates": {
+        "lat": 36.7333984,
+        "lng": 29.060590700000002
+      },
+      "rating": 4.6,
+      "userRatingCount": 330,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=17975742854095200571",
+      "recommendedPrimary": [
+        "Tandır ve saç kavurma",
+        "Serpme köy kahvaltısı",
+        "El açması gözleme"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev yapımı reçel ve yöresel peynir tabağı",
+          "note": "Doğal ve taze köy ürünleriyle kurulan sabah sofrasında ev yapımı reçeller ile peynir çeşitleri öne çıkıyor.",
+          "proof": "Kahvaltifiyatlari.com & Yandex Harita topluluk notları"
+        },
+        {
+          "name": "Sahanda yumurta ve omlet çeşitleri",
+          "note": "Sıcak kahvaltı eşlikçileri ve taze patates kızartması aile masalarında sıkça tercih ediliyor.",
+          "proof": "Restaurant Guru menü kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Açık ve kapalı kır lokantası oturma alanları, yeşillikler içinde aile masaları",
+        "crowdAndNoise": "Kalabalıktan uzak, sakin köy atmosferi; öğle ve hafta sonu sabahları daha hareketli",
+        "disadvantage": "Yanıklar köyünün iç kesiminde (Dolmuş Caddesi hattında) kaldığı için kıyı şeridinden araçsız ulaşım zaman alır",
+        "transit": "Fethiye merkezden kalkan Yanıklar dolmuş güzergahı üzerindeki Dolmuş Caddesi No:39 önünde; özel araçlar için park alanı mevcut"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Restaurant Guru Fethiye Listesi",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Dolmuş Caddesi üzerinde köy kahvaltısı, gözleme ve et yemekleri sunan yerel aile restoranı olarak yer alıyor."
+        },
+        {
+          "title": "Yandex Harita & Kahvaltı Rehberleri Topluluk Notları",
+          "url": "https://yandex.com.tr/harita/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Doğal köy kahvaltısının yanında tandır, saç kavurma ve sakin kır bahçesi atmosferi övülüyor."
+        },
+        {
+          "title": "Google Maps Kaydı (Huzur Sofrası Restaurant)",
+          "url": "https://maps.google.com/?cid=17975742854095200571",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yanıklar Dolmuş Caddesi No:39 konumu ve canlı operasyonel durum doğrulaması."
+        }
+      ],
+      "pros": [
+        "Sadece kahvaltı değil öğle ve akşam için tandır ile saç kavurma gibi sıcak ev yemekleri sunması",
+        "Kıyı turistik kalabalığından tamamen uzak, köy içi sakin ve gölgeli bahçe ortamı"
+      ],
+      "cons": [
+        "Sahil bandından (Karaot/Katrancı) içeri doğru araç veya dolmuşla mesafe katetmek gerekiyor",
+        "Sezon geçişlerinde sıcak tencere/tandır çeşitlerinin günlük çıkışı değişebiliyor"
+      ],
+      "uncertainties": [
+        "Kış sezonunda açık günler ve öğleden sonra mutfak saatleri önceden teyit edilmeli."
+      ],
+      "selectionScore": 90,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yaniklar-gozleme-duragi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Gözleme Durağı Yanıklar",
+      "branchName": "Yanıklar mahallesi sağlık sokak (YNK) 522/1, Yanıklar, 48300 Fethiye/Muğla",
+      "placeId": "ChIJe7dywN5DwBQRJrCV58JOuao",
+      "coordinates": {
+        "lat": 36.6941151,
+        "lng": 29.065919200000003
+      },
+      "rating": 5,
+      "userRatingCount": 298,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=12301950456155189286",
+      "recommendedPrimary": [
+        "Yöresel otlu ve peynirli gözleme",
+        "Kıymalı gözleme",
+        "Yayık ayran"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Tahinli veya ballı cevizli tatlı gözleme",
+          "note": "Tuzlu gözleme çeşitlerinin ardından çay eşliğinde tatlı kapanış için tercih ediliyor.",
+          "proof": "Yerel rehber ve menü kayıtları"
+        },
+        {
+          "name": "Ev yapımı reçelli kahvaltılık eşlikçiler",
+          "note": "Gözleme yanında servis edilen ev yapımı reçeller ve taze çay köy molasını tamamlıyor.",
+          "proof": "Yandex Harita topluluk notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Köy evi bahçesinde sade masa ve gölgelik oturma düzeni",
+        "crowdAndNoise": "Sakin mahalle arası durak; gün ortasında yol üstü mola verenlerle kısa süreli hareketlilik oluşabiliyor",
+        "disadvantage": "Gözleme hamuru sipariş üzerine tek tek açıldığı için yoğun saatlerde servis süresi uzayabiliyor",
+        "transit": "Yanıklar Sağlık Sokak üzerinde (No:522/1); Fethiye-Göcek ana yolundan kısa araç sürüşüyle ulaşılıyor"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Wanderlog Fethiye Yeme-İçme Rehberi",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Peynir, kıyma ve taze otlarla hazırlanan el açması gözlemeleriyle samimi ve bütçe dostu yerel durak olarak listeleniyor."
+        },
+        {
+          "title": "Restaurant Guru & Harita Topluluk Değerlendirmeleri",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Çıtır hamur dokusu, taze iç harçlar, ayran ve sıcak çay servisiyle yüksek ziyaretçi memnuniyeti alıyor."
+        },
+        {
+          "title": "Google Maps Kaydı (Gözleme Durağı Yanıklar)",
+          "url": "https://maps.google.com/?cid=12301950456155189286",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yanıklar Sağlık Sokak 522/1 konumu ve canlı operasyonel durum doğrulaması."
+        }
+      ],
+      "pros": [
+        "Sipariş üzerine elde açılan ince çıtır hamur ve yöresel otlu iç harç dengesi",
+        "Gösterişsiz, samimi mahalle içi aile işletmesi atmosferi"
+      ],
+      "cons": [
+        "Tek tek taze açım yapıldığı için öğle yoğunluğunda bekleme süresi olabiliyor",
+        "Menü kapsamı ağırlıklı olarak gözleme ve çay-ayran ikilisiyle sınırlı"
+      ],
+      "uncertainties": [
+        "Düşük sezonda günlük açılış-kapanış saatleri değişiklik gösterebilir."
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yaniklar-baraqa-hoolbox",
+      "categoryId": "denemelisin",
+      "resolvedName": "Baraqa Hoolbox Restaurant (Tiny House)",
+      "branchName": "Yanıklar, 48300 Fethiye/Muğla",
+      "placeId": "ChIJqygitFdDwBQRLRSPjOPezuw",
+      "coordinates": {
+        "lat": 36.692459,
+        "lng": 29.072230899999997
+      },
+      "rating": 4.6,
+      "userRatingCount": 78,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://instagram.com/baraqahoolbox?igshid=YmMyMTA2M2Y=",
+      "mapsUri": "https://maps.google.com/?cid=17063821107050517549",
+      "recommendedPrimary": [
+        "İmza kokteyller",
+        "Tapas ve taco tabakları",
+        "Izgara burgerler"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Bahçe kahvaltısı",
+          "note": "Oda-kahvaltı konseptiyle birlikte sabah saatlerinde hafif yöresel ürünlerle kahvaltı servisi sunuluyor.",
+          "proof": "Konaklama ve restoran rehber kayıtları"
+        },
+        {
+          "name": "Paylaşımlı bar atıştırmalıkları",
+          "note": "Akşam bahçe oturumunda kokteyl eşlikçisi olarak tercih ediliyor.",
+          "proof": "Wanderlog & Restaurant Guru notları"
+        }
+      ],
+      "suitability": {
+        "seating": "Doğayla iç içe tiny house bahçesinde açık hava oturma alanları ve iç mekanda bilardo masalı lounge",
+        "crowdAndNoise": "Kalabalıktan uzak, dinlendirici müzikli sakin akşam ve bahçe atmosferi",
+        "disadvantage": "Köy içi noktada otopark alanı sınırlı; mutfak ve bar servis saatleri sezona göre değişebildiği için önceden teyit önerilir",
+        "transit": "Yanıklar Sağlık Sokak (No:31/6) üzerinde; Çalış ve Katrancı hattından kısa araç sürüşüyle ulaşılır"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Wanderlog Fethiye Seçkisi (Baraqa Hoolbox)",
+          "url": "https://wanderlog.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Tiny house bahçesinde yerel tabaklar, kokteyller ve bilardo masasıyla Yanıklar içindeki sakin gizli durak olarak öne çıkarılıyor."
+        },
+        {
+          "title": "Restaurant Guru & Gezgin Değerlendirmeleri",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Bahçe bar-restoran atmosferi, taco/tapas çeşitleri, burger seçenekleri ve kokteyllerle olumlu geri dönüşler alıyor."
+        },
+        {
+          "title": "Instagram (@baraqahoolbox)",
+          "url": "https://www.instagram.com/baraqahoolbox/",
+          "date": "2026-11-13",
+          "kind": "operator",
+          "note": "İşletme resmi profili; Sağlık Sokak bahçe alanı, bar ve mutfak paylaşımları."
+        },
+        {
+          "title": "Google Maps Kaydı (Baraqa Hoolbox Restaurant)",
+          "url": "https://maps.google.com/?cid=17063821107050517549",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yanıklar konumu, bar/restoran türleri ve canlı operasyonel durum doğrulaması."
+        }
+      ],
+      "pros": [
+        "Yanıklar içinde akşam saatlerinde kokteyl ve sıcak atıştırmalık sunabilen ender bahçe mekanı",
+        "Sakin tiny house bahçesi ve içerideki bilardo masasıyla rahat sosyalleşme ortamı"
+      ],
+      "cons": [
+        "Özel araç için otopark kapasitesi sınırlı",
+        "Dönemsel ve sezon dışı günlerde mutfak menüsü ile bar saatleri değişkenlik gösterebiliyor"
+      ],
+      "uncertainties": [
+        "Burger ve tapas çeşitlerinin günlük menüde bulunurluğu mevsime göre teyit edilmelidir."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "yaniklar-kokobus48",
+      "categoryId": "denemelisin",
+      "resolvedName": "Kokobus48",
+      "branchName": "Yanıklar katrancı kavşağı karşısı, Yanıklar, 48300 Fethiye/Muğla",
+      "placeId": "ChIJayfAaLNpwBQRWkHZa89PmZ8",
+      "coordinates": {
+        "lat": 36.7121104,
+        "lng": 29.040523
+      },
+      "rating": 4.6,
+      "userRatingCount": 96,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11500310875753496922",
+      "recommendedPrimary": [
+        "Kuzu kokoreç (tabakta veya ekmek arası)",
+        "Uykuluk",
+        "Kuzu çöp şiş ve ızgara köfte"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Odun ateşinde semaver çayı",
+          "note": "Yemek sonrası açık alanda odun ateşinde demlenen çay keyfiyle tamamlanıyor.",
+          "proof": "Fethiye Rehberi işletme tanıtımı"
+        },
+        {
+          "name": "Sucuk ekmek",
+          "note": "Sakatat tercih etmeyenler için hızlı ızgara alternatifi olarak sunuluyor.",
+          "proof": "Fethiye Rehberi & Maptons menü özeti"
+        }
+      ],
+      "suitability": {
+        "seating": "Karayolu kenarında otobüs-karavan önü açık hava masa ve tabure düzeni",
+        "crowdAndNoise": "Yol üstü uğrak noktası; akşamüstü ve gece saatlerinde hızlı servis alanlarla canlı",
+        "disadvantage": "Ana karayolu kenarı açık hava konsepti nedeniyle yağışlı/rüzgarlı havalarda oturma konforu kısıtlı; mevsimsel çalışma durumu önceden teyit edilmeli",
+        "transit": "Fethiye-Muğla karayolu üzeri Katrancı Kavşağı karşısında; özel araçla doğrudan yol kenarından kolay erişim"
+      },
+      "verifiedAt": "2026-11-13",
+      "sources": [
+        {
+          "title": "Fethiye Rehberi (Kokobus48)",
+          "url": "https://www.fethiyerehberi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yanıklar Katrancı Kavşağı karşısında kuzu kokoreç, uykuluk, çöp şiş, köfte ve odun ateşinde semaver çayı sunan otobüs konseptli işletme olarak tanıtılıyor."
+        },
+        {
+          "title": "Restaurant Guru & Sokak Lezzeti Değerlendirmeleri",
+          "url": "https://www.restaurantguru.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze kuzu kokoreç ve uykuluk çeşitleriyle yol üstü sokak lezzeti durağı olarak olumlu değerlendiriliyor."
+        },
+        {
+          "title": "Google Maps Kaydı (Kokobus48)",
+          "url": "https://maps.google.com/?cid=11500310875753496922",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "Yanıklar Katrancı Kavşağı karşısı konumu ve canlı operasyonel durum doğrulaması."
+        }
+      ],
+      "pros": [
+        "Yanıklar-Katrancı hattında taze kuzu kokoreç, uykuluk ve çöp şiş odağında özgün otobüs-karavan durağı",
+        "Karayolu üzerinde kolay erişim ve odun ateşinde semaver çayı eşliği"
+      ],
+      "cons": [
+        "Bazı yerel harita dizinlerinde sezon dışı dönemde kapalı işaretlenebiliyor",
+        "Ana yol kenarı açık alan düzeni soğuk ve yağışlı havalarda konforu düşürüyor"
+      ],
+      "uncertainties": [
+        "Kış ve ara sezonlarda aktif açılış-kapanış günleri değişebildiğinden gitmeden önce telefonla teyit edilmesi gerekir."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    }
+  ]
+}

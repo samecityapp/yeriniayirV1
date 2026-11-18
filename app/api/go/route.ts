@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { supabase } from '@/lib/supabase';
+import { getDemoHotelById } from '@/lib/demoHotels';
 
 export const dynamic = 'force-dynamic';
 
@@ -10,6 +11,11 @@ export async function GET(request: NextRequest) {
 
     if (!hotelId) {
       return NextResponse.redirect(new URL('/', request.url));
+    }
+
+    const demoHotel = getDemoHotelById(hotelId);
+    if (demoHotel && demoHotel.website_url) {
+      return NextResponse.redirect(demoHotel.website_url);
     }
 
     const userIp = request.headers.get('x-forwarded-for') ||

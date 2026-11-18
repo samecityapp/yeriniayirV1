@@ -1,0 +1,1546 @@
+{
+  "schemaVersion": "3.4",
+  "regionKey": "ankara-cankaya-kizilay",
+  "displayName": "Kızılay, Çankaya, Ankara",
+  "verifiedAt": "2026-11-17T18:06:22.880Z",
+  "selectedCount": 19,
+  "rejectedControls": [
+    {
+      "id": "ctrl-kizilay-starbucks-karanfil",
+      "resolvedName": "Starbucks",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-kizilay-big-baker-chain",
+      "resolvedName": "Big Baker",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-kizilay-hosta-doner-chain",
+      "resolvedName": "Hosta Döner Kızılay",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-kizilay-coffee-big-hill-chain",
+      "resolvedName": "Coffee Big Hill Kızılay",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-kizilay-cajun-corner-chain",
+      "resolvedName": "Cajun Corner Ankara Kızılay Karanfil",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-kizilay-caribou-chain",
+      "resolvedName": "Caribou Coffee",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-kizilay-coffy-chain",
+      "resolvedName": "Coffy Ankara Kızılay Sakarya",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-kizilay-sr-doner-chain",
+      "resolvedName": "SR DÖNER Sakarya-2",
+      "reason": "chain_or_franchise"
+    },
+    {
+      "id": "ctrl-kizilay-cikolata-evim-noncoffee",
+      "resolvedName": "Çikolata Evim Kızılay",
+      "reason": "kahve_category_not_coffee_specialist:chocolate_shop"
+    },
+    {
+      "id": "ctrl-kizilay-6his-fal-nonfood",
+      "resolvedName": "6. His Fal Cafe - Ankara Tarot Falı Kahve Falı Ankara Kızılay Falcı",
+      "reason": "invalid_place_type:none"
+    },
+    {
+      "id": "ctrl-kizilay-out-tunali-allonsy",
+      "resolvedName": "Allons-y Burger",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Kızılay/Kizilay/Meşrutiyet/Mesrutiyet/Cumhuriyet/Kocatepe/Kültür/Kultur/Korkutreis/Sağlık/Saglik/Devlet, adres: Kavaklıdere, Bestekar Cd No:6/C, 06680 Çankaya/Ankara)"
+    },
+    {
+      "id": "ctrl-kizilay-out-anittepe-citir",
+      "resolvedName": "Çıtır'sss Tavuk & Pizza ANITTEPE-YÜCETEPE (çıtır restoran)",
+      "reason": "outside_strict_neighborhood:Mahalle uyuşmazlığı (beklenen: Kızılay/Kizilay/Meşrutiyet/Mesrutiyet/Cumhuriyet/Kocatepe/Kültür/Kultur/Korkutreis/Sağlık/Saglik/Devlet, adres: Yücetepe, Ordular Sk. no:1-a, 06570 Çankaya/Ankara)"
+    },
+    {
+      "id": "ctrl-kizilay-low-tarhana-kazani",
+      "resolvedName": "Tarhana Kazanı",
+      "reason": "below_quality_threshold:★4(350)"
+    },
+    {
+      "id": "ctrl-kizilay-low-eski-sofra",
+      "resolvedName": "Eski Sofra",
+      "reason": "below_quality_threshold:★4.3(123)"
+    }
+  ],
+  "venues": [
+    {
+      "id": "kizilay-fornellas-pizza",
+      "categoryId": "pizza",
+      "resolvedName": "Fornella'S Pizza",
+      "branchName": "Kızılay, Necatibey Cd. No: 27/B, 06690 Çankaya/Ankara",
+      "placeId": "ChIJb5_wjetP0xQR-Zuq3Kvkl1A",
+      "coordinates": {
+        "lat": 39.9242948,
+        "lng": 32.8508315
+      },
+      "rating": 4.8,
+      "userRatingCount": 130,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=5807361671310253049",
+      "recommendedPrimary": [
+        "Karışık İnce Hamur Pizza",
+        "Dört Peynirli Pizza",
+        "Vegan Sebzeli Pizza"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Vegan & Sebzeli Hamur Çeşitliliği",
+          "note": "Klasik şarküteri pizzalarının yanında bitki bazlı peynir ve köz sebze alternatifleriyle farklı beklentilere yanıt veriyor.",
+          "proof": "venuesreyon.com ve Menu-TR Kızılay kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "İç masa düzeni ve Necatibey Caddesi üzeri pratik oturum alanı",
+        "crowdAndNoise": "Öğle ve akşam saatlerinde Demirtepe-Necatibey çalışanları ve genç misafirlerle canlı",
+        "disadvantage": "Demirtepe tarafında kaldığı için Karanfil-Konur yaya aksından kısa bir yürüyüş gerektiriyor.",
+        "transit": "Kızılay, Necatibey Caddesi No:27/B (Demirtepe metro durağı yürüme mesafesi)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Kızılay Pizza",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Necatibey Cd. oturma düzeni ve ince hamurlu pizza incelemesi"
+        },
+        {
+          "title": "VenuesReyon Ankara",
+          "url": "https://venuesreyon.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Klasik ve vegan pizza çeşitleriyle yerel topluluk beğenisi"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "130+ değerlendirmeyle Kızılay merkezinin en yüksek puanlı pizzacısı"
+        }
+      ],
+      "pros": [
+        "Hafif ince hamur ve dengeli malzeme oranı",
+        "Klasik etli seçeneklerin yanında vegan alternatifler sunması"
+      ],
+      "cons": [
+        "Kızılay’ın Konur-Karanfil merkez çarşısına göre biraz daha batı yakasında kalıyor"
+      ],
+      "uncertainties": [
+        "Akşam paket servis yoğunluğunda masa siparişlerinin çıkışı biraz uzayabiliyor."
+      ],
+      "selectionScore": 92,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kizilay-bunzilla-burger",
+      "categoryId": "hamburger",
+      "resolvedName": "Bunzilla Burger",
+      "branchName": "Kültür, Sağlık-2 Sk. 52/A, 06670 Çankaya/Ankara",
+      "placeId": "ChIJzROpbyBP0xQR3aAu9zK7ne4",
+      "coordinates": {
+        "lat": 39.922468599999995,
+        "lng": 32.8609728
+      },
+      "rating": 4.8,
+      "userRatingCount": 154,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.bunzillaburger.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=17194104779940208861",
+      "recommendedPrimary": [
+        "Bunzilla Special Burger",
+        "Truffle & Karamelize Soğan Burger",
+        "Baharatlı Patates Kızartması"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Çıtır Soğan & İmza Sos Eşleştirmeleri",
+          "note": "Yumuşak brioche ekmek yapısını dengeleyen sarımsaklı ve karamelize soğanlı sos seçenekleri burgerlerin yanında öne çıkıyor.",
+          "proof": "bunzillaburger.com.tr ve Menu-TR Kültür kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kompakt iç salon masaları ve sokak önü oturumu",
+        "crowdAndNoise": "Üniversite öğrencileri ve öğle-akşam arası doyurucu burger arayanlarla yoğun",
+        "disadvantage": "Küçük sokak dükkânı ölçüsünde olduğu için kalabalık gruplarda masa bulmak zorlaşabiliyor.",
+        "transit": "Kültür Mahallesi Sağlık-2 Sokak No:52/A (Kolej ve Kızılay metro arası yaya hattı)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Bunzilla Burger Resmi Sitesi",
+          "url": "https://www.bunzillaburger.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Sağlık-2 Sk. menü, brioche ekmek ve dana köfte bilgisi"
+        },
+        {
+          "title": "Menu-TR Kültür & Çankaya",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Porsiyon doyuruculuğu ve ev yapımı sos dengesi incelemesi"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "154+ değerlendirmeyle Kızılay içinde yüksek puanlı tekil burgerci"
+        }
+      ],
+      "pros": [
+        "Sulu dana köftesi ve taze brioche ekmeği",
+        "Zincir kalıplarının dışında cömert porsiyonlar"
+      ],
+      "cons": [
+        "Kapalı oturma alanı sınırlı ve pik saatlerde kurye trafiği yoğun olabiliyor"
+      ],
+      "uncertainties": [
+        "Yoğun akşam servisinde sıcak patates ve sos stoğu hızlı tükenebiliyor."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kizilay-verte-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Verte Coffee House",
+      "branchName": "Kızılay, Sümer-2 Cd. 24-A, 06420 Çankaya/Ankara",
+      "placeId": "ChIJu38xAyhP0xQRjRIRycvj29M",
+      "coordinates": {
+        "lat": 39.9224919,
+        "lng": 32.850206899999996
+      },
+      "rating": 4.9,
+      "userRatingCount": 1122,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.vertecoffeehouse.com/",
+      "mapsUri": "https://maps.google.com/?cid=15266045826293633677",
+      "recommendedPrimary": [
+        "V60 Tek Köken Filtre Kahve",
+        "Soğuk Demleme Cold Brew",
+        "Cortado"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Ev Yapımı Tatlı & Kahve Eşliği",
+          "note": "Sade espresso barı çizgisini bozmadan kahvenin yanına taze cheesecake ve kurabiye alternatifleri eşlik ediyor.",
+          "proof": "vertecoffeehouse.com ve Ankara kahve rehberleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Doğal ışıklı ferah iç oturum ve çalışma masaları",
+        "crowdAndNoise": "Gündüz çalışanlar, öğrenciler ve sakin nitelikli kahve arayan müdavimler",
+        "disadvantage": "Günün ortasında ders ve laptop çalışanları nedeniyle sessiz köşe masaları erken dolabiliyor.",
+        "transit": "Kızılay Mahallesi Sümer-2 Caddesi No:24-A (Kumrular ve Necatibey arası)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Verte Coffee House Resmi Sitesi",
+          "url": "https://www.vertecoffeehouse.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Sümer-2 Cd. tekil konum ve kahve seçkisi"
+        },
+        {
+          "title": "Yandex Maps Kızılay Topluluğu",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Cold brew kalitesi ve ferah iç mekan vurgusu"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "1.122+ değerlendirmeyle Kızılay merkezinin en yüksek puanlı kahve evi"
+        }
+      ],
+      "pros": [
+        "Yüksek hacme rağmen demleme tutarlılığını koruyan ekip",
+        "Ana kalabalığın hemen yanında sakin sokak konumu"
+      ],
+      "cons": [
+        "Öğleden sonra çalışma masalarında yer bulmak beklemeyi gerektirebiliyor"
+      ],
+      "uncertainties": [
+        "Misafir kavrum tek köken çekirdekler sezona göre değişebiliyor."
+      ],
+      "selectionScore": 94,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kizilay-melanj-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Melanj Coffee Roastery",
+      "branchName": "Kızılay, Şht. Adem Yavuz Sk. 15/A, 06420 Çankaya/Ankara",
+      "placeId": "ChIJmVQKYyBP0xQRdstY9F678wQ",
+      "coordinates": {
+        "lat": 39.9199183,
+        "lng": 32.8515934
+      },
+      "rating": 4.9,
+      "userRatingCount": 452,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=356834811993181046",
+      "recommendedPrimary": [
+        "Günlük Kavrum Filtre Kahve",
+        "Flat White",
+        "AeroPress"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Kavrulmuş Çekirdek Paketleri",
+          "note": "Dükkan içinde içilen demlemelerin yanı sıra ev tipi öğütüm yaptırılabilen taze kavrum paket çekirdekler temin edilebiliyor.",
+          "proof": "Menu-TR ve Yandex Kızılay değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük butik iç bar ve sokak önü birkaç tabure",
+        "crowdAndNoise": "Kaliteli çekirdek ve sakin müzik eşliğinde kısa kahve molası veren kahve meraklıları",
+        "disadvantage": "Büyük zincirler gibi geniş toplantı masaları yok; kısa kahve molası düzeninde işliyor.",
+        "transit": "Kızılay Mahallesi Şehit Adem Yavuz Sokak No:15/A (Atatürk Bulvarı batı cephesi)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Kızılay Roastery",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kendi kavurma atölyesi ve nitelikli demleme odaklı butik dükkan incelemesi"
+        },
+        {
+          "title": "Yandex Maps Kızılay Topluluğu",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Caz atmosferi ve taze kavrum çekirdek övgüleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "452+ değerlendirmeyle istikrarlı mikro kavurucu profili"
+        }
+      ],
+      "pros": [
+        "Şehir merkezinde kendi çekirdeğini kavuran nadir bağımsız dükkanlardan",
+        "Sıcak ve gürültüsüz atmosfer"
+      ],
+      "cons": [
+        "Oturma alanı kompakt olduğundan kalabalık gruplara uygun değil"
+      ],
+      "uncertainties": [
+        "Haftalık kavrum takvimine göre farklı yöre çekirdekleri raflarda yer değiştiriyor."
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kizilay-ziryab-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Ziryab Coffee and Culture",
+      "branchName": "Kocatepe, Hatay Sk. No: 23B, 06420 Çankaya/Ankara",
+      "placeId": "ChIJK6uQdhpP0xQRDGoJZberxMA",
+      "coordinates": {
+        "lat": 39.9175466,
+        "lng": 32.8588822
+      },
+      "rating": 5,
+      "userRatingCount": 174,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=13890415954879932940",
+      "recommendedPrimary": [
+        "Single Origin Filtre Kahve",
+        "Latte",
+        "Türk Kahvesi"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Kültür Sohbetleri & Çay-Kahve Ritüeli",
+          "note": "Klasik kahve servisine ek olarak geleneksel demleme çay ve sakin okuma-sohbet düzeniyle öne çıkıyor.",
+          "proof": "Restoranım.net ve Yandex Kocatepe kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Rahat ahşap iç salon masaları ve sakin sokak cephesi",
+        "crowdAndNoise": "Kocatepe çevresinden gelen kitap, kültür ve kahve müdavimleri",
+        "disadvantage": "Merkezi metro çıkışına göre hafif yokuşlu Kocatepe arka sokağında yer alıyor.",
+        "transit": "Kocatepe Mahallesi Hatay Sokak No:23/B (Kocatepe Camii batı aksı)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Restoranım.net Kocatepe",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kocatepe Hatay Sk. kültür ve kahve atmosferi değerlendirmesi"
+        },
+        {
+          "title": "Yandex Maps Kocatepe",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Güler yüzlü hizmet ve sakin çalışma-sohbet ortamı notları"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "174+ misafirden yüksek puan ortalaması"
+        }
+      ],
+      "pros": [
+        "Konur-Karanfil kalabalığından tamamen izole sessiz Kocatepe sokağı",
+        "Kültür ve kahveyi buluşturan samimi ortam"
+      ],
+      "cons": [
+        "Geniş mutfak veya tatlı vitrini yerine içecek odaklı sade menü sunuyor"
+      ],
+      "uncertainties": [
+        "Hafta sonu etkinlik veya sohbet saatlerinde iç salon doluluk gösterebiliyor."
+      ],
+      "selectionScore": 97,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kizilay-ade-miel-coffee",
+      "categoryId": "kahve",
+      "resolvedName": "Ade Miel Coffee Shop",
+      "branchName": "Kocatepe, Hatay Sk. No 15 /a, 06420 Çankaya/Ankara",
+      "placeId": "ChIJQ5E2vElP0xQREwMBgPjDcL8",
+      "coordinates": {
+        "lat": 39.9181141,
+        "lng": 32.858501499999996
+      },
+      "rating": 4.7,
+      "userRatingCount": 463,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.ademielcoffee.com/",
+      "mapsUri": "https://maps.google.com/?cid=13794741130702684947",
+      "recommendedPrimary": [
+        "Double Shot Americano",
+        "Cortado",
+        "Pesto & Mozzarella Sandviç"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Günlük Taze Sandviç Eşlikçileri",
+          "note": "Sadece tatlı değil hafif tuzlu sandviç seçeneklerinin kahve yanında taze hazırlanması öğle molalarını kolaylaştırıyor.",
+          "proof": "ademielcoffee.com ve Yandex Kocatepe kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Modern iç oturum, çalışma köşeleri ve küçük sokak masaları",
+        "crowdAndNoise": "Yakın ofis çalışanları ve Kocatepe sakinleriyle gün boyu dengeli yoğunluk",
+        "disadvantage": "Kocatepe eğiminde bulunduğu için yürüyüşle çıkarken kısa bir yokuş mesafesi içeriyor.",
+        "transit": "Kocatepe Mahallesi Hatay Sokak No:15/A."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Ade Miel Coffee Resmi Sitesi",
+          "url": "https://www.ademielcoffee.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Nitelikli kahve yaklaşımı ve tek şube konum bilgisi"
+        },
+        {
+          "title": "Yandex Maps Kocatepe",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Espresso dengesi ve sandviç tazeliği övgüleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "463+ misafirden yüksek istikrar puanı"
+        }
+      ],
+      "pros": [
+        "Kahve yanında hafif ve taze sandviç bulmak kolay",
+        "Düzenli kavrum ve süt köpüğü standardı"
+      ],
+      "cons": [
+        "Sokak üzerinde otopark imkanı kısıtlı"
+      ],
+      "uncertainties": [
+        "Akşam geç saatlerde taze sandviç çeşitlerinin sayısı azalabiliyor."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kizilay-goksu-lokantasi",
+      "categoryId": "date",
+      "resolvedName": "Göksu Lokantası (Kızılay)",
+      "branchName": "Kızılay, Bayındır-1 Sk. No: 22, 06410 Çankaya/Ankara",
+      "placeId": "ChIJW71JsEFP0xQRx0xZtJcHqbA",
+      "coordinates": {
+        "lat": 39.9219444,
+        "lng": 32.856944399999996
+      },
+      "rating": 4.7,
+      "userRatingCount": 2575,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://goksulokantasi.com/",
+      "mapsUri": "https://maps.google.com/?cid=12729714169886624967",
+      "recommendedPrimary": [
+        "Tereyağlı Ankara Tava / Kuzu Tandır",
+        "Hünkar Beğendi",
+        "Seçme Meze Tabağı"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Klasik Kadeh Eşlikleri & Tatlı Kapanışı",
+          "note": "Uzun akşam sofralarına uygun meze seçkisi, et yemekleri sonrası irmik ve sütlü tatlı ikramlarıyla tamamlanıyor.",
+          "proof": "goksulokantasi.com arşivi ve Restoranım.net incelemesi"
+        }
+      ],
+      "suitability": {
+        "seating": "Beyaz örtülü şık ana salon ve özenli akşam masaları",
+        "crowdAndNoise": "İş yemekleri, yıldönümü çiftleri ve köklü Ankara müdavimleriyle nezih atmosfer",
+        "disadvantage": "Geleneksel şık lokanta düzeni ve geniş porsiyonlarıyla hızlı/ekonomik sokak duraklarından daha yüksek bütçe segmentinde; akşam masaları rezervasyon istiyor.",
+        "transit": "Kızılay Cumhuriyet Mahallesi Bayındır-1 Sokak No:22 (Kızılay Metro doğu çıkışı)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Göksu Lokantası Resmi Arşivi",
+          "url": "https://goksulokantasi.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "1963 kuruluş tarihi, Bayındır-1 Sk. adresi ve Osmanlı-Anadolu mutfak seçkisi"
+        },
+        {
+          "title": "Restoranım.net & Önerimekan",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Ankara kent belleğindeki klasik servis kültürü ve meze masası profili"
+        },
+        {
+          "title": "Yandex Maps Bayındır",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hünkar beğendi, kuzu tandır ve akşam servisi değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "2.575+ misafirle Kızılay’ın en yüksek puanlı köklü lokantası"
+        }
+      ],
+      "pros": [
+        "Yarım asrı aşan özenli garson servisi ve klasik Ankara ruhu",
+        "Çiftler ve özel akşam yemekleri için gürültüsüz, şık düzen"
+      ],
+      "cons": [
+        "Akşam ve hafta sonları önceden masa ayırtmadan yer bulmak zor olabiliyor"
+      ],
+      "uncertainties": [
+        "Tarihî Bayındır şubesi dışında Nenehatun şubesi de bulunduğundan rezervasyonu Kızılay şubesine teyit etmek önemli."
+      ],
+      "selectionScore": 91,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kizilay-ozen-lokantasi",
+      "categoryId": "date",
+      "resolvedName": "Özen Lokantası (Piliç & Meyhane)",
+      "branchName": "Kızılay, İnkılap Sk. 5/F D:5/F, 06430 Çankaya/Ankara",
+      "placeId": "ChIJWw99S1VO0xQRiUKqYJ8DOkc",
+      "coordinates": {
+        "lat": 39.9226475,
+        "lng": 32.8560468
+      },
+      "rating": 4.5,
+      "userRatingCount": 145,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://instagram.com/ozenlokantasi",
+      "mapsUri": "https://maps.google.com/?cid=5132418708398555785",
+      "recommendedPrimary": [
+        "Piliç Çevirme & İç Pilav",
+        "Günlük Soğuk Meze Tabağı",
+        "Arnavut Ciğeri"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Arnavut Ciğeri & Fava Eşlikçileri",
+          "note": "Piliç çevirme klasiğinin öncesinde masaya gelen sıcak ciğer ve sade mezeler uzun sohbet sofralarını kuruyor.",
+          "proof": "Menu-TR ve Yandex Kızılay değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Nostaljik kapalı meyhane salonu ve İnkılap Sokak masaları",
+        "crowdAndNoise": "Sanatçılar, gazeteciler, bürokratlar ve eski Ankara ruhunu seven akşam grupları",
+        "disadvantage": "Modern kokteyl bar ambiyansı değil, yüksek sohbetli klasik salaş Ankara meyhanesi temposunda.",
+        "transit": "Kızılay İnkılap Sokak No:5/F (Sakarya Caddesi hemen paraleli)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR İnkılap & Kızılay",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Piliç çevirme, günlük taze mezeler ve nostaljik meyhane profili"
+        },
+        {
+          "title": "Yandex Maps Kızılay Topluluğu",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1974 kuruluş mirası ve samimi meyhane kültürü notları"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "145+ misafirle köklü Sakarya-İnkılap klasiği"
+        }
+      ],
+      "pros": [
+        "1974’ten beri değişmeyen samimi Ankara meyhanesi karakteri",
+        "Ulaşılabilir meze ve piliç dengesi"
+      ],
+      "cons": [
+        "Cuma ve cumartesi akşamları gürültü seviyesi yüksek ve masalar dolu olabiliyor"
+      ],
+      "uncertainties": [
+        "Hafta sonu akşamları erken saatte gelmek veya önceden haber vermek yararlı."
+      ],
+      "selectionScore": 87,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kizilay-mekan-kafe",
+      "categoryId": "kahvalti",
+      "resolvedName": "Mekan Kafe Kitab & Kahve",
+      "branchName": "Kızılay, Atatürk Blv No:88/1, 06420, 06420 Çankaya/Ankara",
+      "placeId": "ChIJhxbdVlVO0xQRA2PRBQDA-1E",
+      "coordinates": {
+        "lat": 39.9222305,
+        "lng": 32.853759
+      },
+      "rating": 4.4,
+      "userRatingCount": 641,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://instagram.com/mekan_kafe",
+      "mapsUri": "https://maps.google.com/?cid=5907526442556678915",
+      "recommendedPrimary": [
+        "Klasik Kahvaltı Tabağı & Demli Çay",
+        "Kaşarlı & Sucuklu Tost",
+        "Filtre Kahve"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Okuma & Çalışma Sabahları",
+          "note": "Sabah kahvaltısı sonrası kitap okuyarak veya çalışarak uzun süre oturulabilen nadir merkezi Kızılay mekanlarından.",
+          "proof": "AnkaraKahve.com ve Yandex Kızılay kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Kitaplıklı iç salon masaları ve sakin okuma bölümleri",
+        "crowdAndNoise": "Sabah öğrencileri, okurlar ve merkezde sakin kahvaltı arayanlar",
+        "disadvantage": "Atatürk Bulvarı üzerinde üst kat/bina düzeninde olduğu için giriş tabelasına dikkat etmek gerekiyor; serpme kahvaltıdan ziyade pratik tabak odaklı.",
+        "transit": "Kızılay Mahallesi Atatürk Bulvarı No:88/1 (Kızılay Meydanı ve Zafer Çarşısı hattı)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Ankara Kahve & Kitap Kafe Rehberi",
+          "url": "https://ankarakahve.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Atatürk Bulvarı üzeri kitap kafe, kahvaltı ve sakin oturum profili"
+        },
+        {
+          "title": "Yandex Maps Kızılay",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sakin ortam ve kahvaltı/çalışma uygunluğu değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "641+ değerlendirmeyle istikrarlı Kızılay buluşma adresi"
+        }
+      ],
+      "pros": [
+        "Şehir göbeğinde gürültüden izole sakin sabah temposu",
+        "Ekonomik ve ulaşılabilir kahvaltı tabağı"
+      ],
+      "cons": [
+        "Geniş serpme masa bekleyen kalabalık gruplara hitap etmiyor"
+      ],
+      "uncertainties": [
+        "Sınav dönemleri ve öğleye doğru masa doluluğu hızla artabiliyor."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kizilay-tarihi-cicim",
+      "categoryId": "denemelisin",
+      "resolvedName": "Tarihi Cicim Lokantası",
+      "branchName": "Kızılay, İzmir-2 Cd. No:34 D:15, 06420 Çankaya/Ankara",
+      "placeId": "ChIJbeYAOABP0xQRTRjquEs4UNs",
+      "coordinates": {
+        "lat": 39.92143,
+        "lng": 32.851059
+      },
+      "rating": 4.9,
+      "userRatingCount": 273,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=15803192990319122509",
+      "recommendedPrimary": [
+        "Etli Kuru Fasulye & Tereyağlı Pilav",
+        "İzmir Köfte",
+        "Tavuk Haşlama"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Geleneksel Tezgâh Sulu Yemek & Tatlı Kapanışı",
+          "note": "Sabah erken pişen zeytinyağlılar ve ev yapımı sütlü tatlılar ana yemekle birlikte hızlıca seçilebiliyor.",
+          "proof": "Restoranım.net ve Yandex İzmir Cd. kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Klasik esnaf lokantası iç salon masaları",
+        "crowdAndNoise": "Öğle saatlerinde bölge esnafı, avukatlar ve beyaz yakalı çalışanlarla yoğun",
+        "disadvantage": "Gündüz esnaf temposunda işlediği için bazı gözde yemekler öğleden sonra erken bitebiliyor.",
+        "transit": "Kızılay Mahallesi İzmir-2 Caddesi No:34 D:15 (Turtes İş Hanı)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Restoranım.net Kızılay Esnaf",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "50+ yıllık esnaf geleneği ve ev yemekleri menüsü"
+        },
+        {
+          "title": "Yandex Maps İzmir Cd.",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kuru fasulye, İzmir köfte ve porsiyon tazeliği övgüleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "273+ misafirle Ankara merkez lokantaları arasında zirve puan"
+        }
+      ],
+      "pros": [
+        "Gerçek ev yemeği tadını ve temiz mutfak düzenini 50 yıldır koruyor",
+        "Hızlı ve samimi servis"
+      ],
+      "cons": [
+        "Akşam geç saatlere açık bir restoran değil, öğle ağırlıklı çalışıyor"
+      ],
+      "uncertainties": [
+        "Öğle yoğunluğu saatlerinde aynı masayı paylaşmak veya kısa beklemek gerekebiliyor."
+      ],
+      "selectionScore": 100,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kizilay-cici-piknik",
+      "categoryId": "denemelisin",
+      "resolvedName": "Cici Piknik",
+      "branchName": "Kızılay, Kumrular Cd. No:8 D:C, 06420 Çankaya/Ankara",
+      "placeId": "ChIJDSrCHAFP0xQRg1-nOOhtth8",
+      "coordinates": {
+        "lat": 39.9198648,
+        "lng": 32.8510031
+      },
+      "rating": 4.1,
+      "userRatingCount": 3072,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2285134705087438723",
+      "recommendedPrimary": [
+        "Kömür Ateşinde Ekmek Arası Et Döner",
+        "Porsiyon Yaprak Döner",
+        "Açık Ayran"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Taze Fırın Ekmeği & Turşu Biber Eşliği",
+          "note": "Domates veya ağır soslarla boğulmayan çıtır ekmek içi et döner yalnızca tuz ve taze malzemelerle servis ediliyor.",
+          "proof": "Milliyet / Türk Aşçı Haberleri Ankara döner dosyaları"
+        }
+      ],
+      "suitability": {
+        "seating": "Ayaküstü tezgâh düzeni ve sınırlı dar iç/dış tabure",
+        "crowdAndNoise": "Özellikle öğle arasında memurlar, eski Ankaralılar ve gastronomi meraklılarından uzun kuyruk",
+        "disadvantage": "Çok dar mekan ve yüksek talep nedeniyle öğleden sonra döner bitebiliyor; geniş oturma alanı yok, hızlı ve sıkışık tempoda yeniyor.",
+        "transit": "Kızılay Kumrular Caddesi No:8/C (Necatibey-Atatürk Bulvarı arası)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Milliyet & Türk Aşçı Haberleri",
+          "url": "https://www.milliyet.com.tr/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Kızılay’ın 1980’ler piknik kültürü ve kömür ateşinde Ankara döneri dosyası"
+        },
+        {
+          "title": "Ankara.com & HangiMekan",
+          "url": "https://www.ankara.com/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Kumrular önünde kuyruk oluşturan et döner lezzeti değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "3.072+ değerlendirmeyle şehrin yaşayan döner ritüeli"
+        }
+      ],
+      "pros": [
+        "Sosu gizlemeden gerçek kömürde yaprak et döner lezzeti vermesi",
+        "40 yıllık otantik büfe ruhu"
+      ],
+      "cons": [
+        "Döner tükendiğinde erken kapanabiliyor ve geniş masa imkanı yok"
+      ],
+      "uncertainties": [
+        "Hafta içi öğle vaktinde 10–15 dakikalık kuyruk beklemek olağan."
+      ],
+      "selectionScore": 83,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kizilay-rumeli-iskembecisi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Rumeli İşkembecisi (1945)",
+      "branchName": "Cumhuriyet, Bayındır-1 Sk. 25/A, 06420 Çankaya/Ankara",
+      "placeId": "ChIJGU-QwlRO0xQRzh1Y1RNyQ_M",
+      "coordinates": {
+        "lat": 39.921831,
+        "lng": 32.857276
+      },
+      "rating": 4,
+      "userRatingCount": 4371,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "http://www.rumeliiskembecisi.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=17528979604165369294",
+      "recommendedPrimary": [
+        "Tuzlama / Damar Çorbası",
+        "Karışık İşkembe",
+        "Kelle Paça"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sarımsaklı Sirke & Kızarmış Ekmek Masası",
+          "note": "Masada bekleyen taze sarımsaklı sirke, acı biber ve bol tereyağlı sos ikramı çorbanın karakterini tamamlıyor.",
+          "proof": "rumeliiskembecisi.com.tr ve Türkiye Turizm Ansiklopedisi"
+        }
+      ],
+      "suitability": {
+        "seating": "Büyük, aydınlık geleneksel çorbacı salon masaları",
+        "crowdAndNoise": "Gece tiyatro-meyhane çıkışı Ankaralılar, sabah erken çalışanlar ve geleneksel lezzet arayanlar",
+        "disadvantage": "Günün bazı saatlerinde çok kalabalık sirkülasyon ve yoğun sakatat mutfağı kokusu sebebiyle herkesin damağına veya beklentisine hitap etmeyebilir.",
+        "transit": "Cumhuriyet Mahallesi Bayındır-1 Sokak No:25/A (Kızılay merkez)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Türkiye Turizm Ansiklopedisi",
+          "url": "https://turkiyeturizmansiklopedisi.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1945’ten bu yana Ankara gastronomi tarihindeki Rumeli İşkembecisi kaydı"
+        },
+        {
+          "title": "Rumeli İşkembecisi Resmi Arşivi",
+          "url": "http://www.rumeliiskembecisi.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "1945 kuruluş tarihi, Bayındır Sk. merkez ve sakatat çorba reçeteleri"
+        },
+        {
+          "title": "Yandex Maps Cumhuriyet",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Tuzlama, kelle paça ve kesintisiz gece servisi değerlendirmeleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "4.371+ değerlendirmeyle Kızılay’ın 1945 mirası kurumu"
+        }
+      ],
+      "pros": [
+        "1945’ten gelen kesintisiz Ankara gece çorbacısı geleneği",
+        "Temiz, hızlı ve doyurucu porsiyonlar"
+      ],
+      "cons": [
+        "Geç gece saatlerinde masalar çok hızlı dolup boşalıyor"
+      ],
+      "uncertainties": [
+        "Hafif terbiyeli çorba isteyenler tuzlama/damar yerine süzme seçeneklerini belirtebilir."
+      ],
+      "selectionScore": 80,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kizilay-urfali-hayrag",
+      "categoryId": "denemelisin",
+      "resolvedName": "Urfalı Hayrağ’nın Yeri (1961)",
+      "branchName": "Cumhuriyet, Bayındır-1 Sk. 9/B, 06420 Çankaya/Ankara",
+      "placeId": "ChIJByCarFVO0xQRRMNv30Eqzso",
+      "coordinates": {
+        "lat": 39.9236383,
+        "lng": 32.856254199999995
+      },
+      "rating": 4.4,
+      "userRatingCount": 3444,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.urfalihayrag.com/",
+      "mapsUri": "https://maps.google.com/?cid=14613664303273722692",
+      "recommendedPrimary": [
+        "Zırh Kıyma Urfa Kebap",
+        "Taş Fırın Lahmacun",
+        "Haşhaşlı Kebap"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Sıcak Lavaş & Fırın İkramları",
+          "note": "Kebabın yanında taze çıkan ince taş fırın lahmacun ve içli köfte ikramları sofrayı zenginleştiriyor.",
+          "proof": "urfalihayrag.com ve Yandex Bayındır kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Çok katlı köklü kebap salonu",
+        "crowdAndNoise": "Öğle ve akşam Kızılay iş dünyası, aileler ve eski müdavimler",
+        "disadvantage": "Giriş katı yoğun saatlerde hareketli; daha sakin masa için üst salon tercih edilebilir.",
+        "transit": "Cumhuriyet Mahallesi Bayındır-1 Sokak No:9/B."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Urfalı Hayrağ’nın Yeri Resmi Sitesi",
+          "url": "https://www.urfalihayrag.com/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "1961 kuruluş tarihi ve Bayındır-1 Sk. ocakbaşı menüsü"
+        },
+        {
+          "title": "Restoranım.net Cumhuriyet & Kızılay",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "1961’den bu yana Kızılay’da zırh kıymalı kebap ve taş fırın geleneği profili"
+        },
+        {
+          "title": "Yandex Maps Cumhuriyet",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Zırh kebabı kıvamı ve 60+ yıllık hizmet tutarlılığı notları"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "3.444+ değerlendirmeyle Kızılay klasik kebapçısı"
+        }
+      ],
+      "pros": [
+        "1961’den bu yana aynı merkez sokakta kesintisiz ocakbaşı standardı",
+        "Zırh kıyma lezzeti"
+      ],
+      "cons": [
+        "Yoğun yemek saatlerinde servis temposu gürültülü olabiliyor"
+      ],
+      "uncertainties": [
+        "Lahmacun ve künefe siparişi kebap öncesinde birlikte verilirse bekleme azalıyor."
+      ],
+      "selectionScore": 78,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kizilay-asmaalti-manti",
+      "categoryId": "denemelisin",
+      "resolvedName": "Asmaaltı Mantı Çorba",
+      "branchName": "Kültür, Ataç-2 Sk. No:45 D:C, 06420 Çankaya/Ankara",
+      "placeId": "ChIJfyTknVNO0xQRnLox8qGDnB8",
+      "coordinates": {
+        "lat": 39.9218123,
+        "lng": 32.8603923
+      },
+      "rating": 4.8,
+      "userRatingCount": 610,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=2277840243118946972",
+      "recommendedPrimary": [
+        "Ev Yapımı Yoğurtlu Mantı",
+        "Süleymaniye / Muradiye Çorbası",
+        "Zeytinyağlı Yaprak Sarma"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Anadolu Yöresel Çorbaları",
+          "note": "Klasik mercimek-ezogelin dışında Muradiye ve Süleymaniye çorbası gibi ev tipi reçeteleri her gün sıcak çıkarıyor.",
+          "proof": "Menu-TR ve Yandex Kültür kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük, sıcak iç salon ve az sayıda sokak masası",
+        "crowdAndNoise": "Öğle arasında memurlar ve akşamüzeri el yapımı mantı arayan gençler",
+        "disadvantage": "Salon kapasitesi mütevazı olduğundan öğle 12–14 arası masa beklemesi yaşanabiliyor.",
+        "transit": "Kültür Mahallesi Ataç-2 Sokak No:45/C (Kolej Metro ile Kızılay arası)."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Kültür & Ataç",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "El açması mantı, Süleymaniye ve Muradiye çorbaları değerlendirmesi"
+        },
+        {
+          "title": "Yandex Maps Kültür",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Ev sıcaklığı, temizlik ve fiyat-performans dengesi övgüleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "610+ değerlendirmeyle yüksek memnuniyetli yerel mutfak"
+        }
+      ],
+      "pros": [
+        "Gerçek el açması hamur ve anne eli değmiş gibi taze günlük çorbalar",
+        "Merkezde erişilebilir fiyat"
+      ],
+      "cons": [
+        "Küçük dükkan yapısı nedeniyle kalabalık gruplara dar gelebiliyor"
+      ],
+      "uncertainties": [
+        "Bazı yöresel çorbalar ve sarma akşamüstü tükenebiliyor."
+      ],
+      "selectionScore": 96,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kizilay-cengiz-usta-tantuni",
+      "categoryId": "denemelisin",
+      "resolvedName": "Mersin Tantuni & Kebap Cengiz Usta",
+      "branchName": "Meşrutiyet, Konur Sok. Gönül Apt No:38/4, 06420 Çankaya/Ankara",
+      "placeId": "ChIJ9SOX559P0xQRSQeRmTvqbJ4",
+      "coordinates": {
+        "lat": 39.916443,
+        "lng": 32.8566898
+      },
+      "rating": 4.8,
+      "userRatingCount": 1573,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11415756697177753417",
+      "recommendedPrimary": [
+        "Çift Lavaş Biftek Tantuni",
+        "Yoğurtlu Tantuni",
+        "Turşu & Meze İkramları"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Masaya Gelen Taze Meze İkramları",
+          "note": "Sipariş öncesi ve yanında servis edilen yeşillik, ezme ve salata ikramları Konur Sokak’ın öğrenci ve esnaf müdavimlerini memnun ediyor.",
+          "proof": "Menu-TR ve Yandex Konur Sk. değerlendirmeleri"
+        }
+      ],
+      "suitability": {
+        "seating": "Konur Sokak üzeri açık oturum ve iç salon masaları",
+        "crowdAndNoise": "Günün her saatinde Konur Sokak gençliği ve semt sakinleriyle dolu",
+        "disadvantage": "İşlek Konur Sokak yaya aksında yer aldığı için pik saatlerde gürültülü ve kalabalık.",
+        "transit": "Meşrutiyet Mahallesi Konur Sokak No:38/4."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Konur & Kızılay",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Biftek tantuni porsiyonu ve meze ikramları değerlendirmesi"
+        },
+        {
+          "title": "Yandex Maps Konur Sk.",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "1.500+ kişilik istikrarlı sokak lezzeti memnuniyeti"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "1.573+ değerlendirmeyle Konur’un en sevilen tantunicisi"
+        }
+      ],
+      "pros": [
+        "Yüksek memnuniyet oranını 1.500+ misafirde koruyan istikrarlı mutfak",
+        "Cömert salata-turşu ikramları"
+      ],
+      "cons": [
+        "Konur Sokak gürültüsü içinde sakin bir akşam yemeği ortamı arayanlara uygun değil"
+      ],
+      "uncertainties": [
+        "Yoğun saatlerde acılı-acısız lavaş tercihini sipariş anında netleştirmek yararlı."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kizilay-selanik-esnaf",
+      "categoryId": "denemelisin",
+      "resolvedName": "Selanik Esnaf Lokantası",
+      "branchName": "Kızılay, Selanik Cd No:64/B, 06490 Çankaya/Ankara",
+      "placeId": "ChIJ21EcODdP0xQRi2yI8ac5A5o",
+      "coordinates": {
+        "lat": 39.9174564,
+        "lng": 32.8575635
+      },
+      "rating": 4.8,
+      "userRatingCount": 160,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=11097777300245605515",
+      "recommendedPrimary": [
+        "Hindi Kavurma & Pilav",
+        "Günlük Çorba & Zeytinyağlı Tabak",
+        "Etli Sebze Yemeği"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Hızlı & Hijyenik Tezgâh Seçkisi",
+          "note": "Öğle molasında beklemeden günlük taze sebze ve et yemeği seçilebilen temiz salon düzeni övgü topluyor.",
+          "proof": "Menu-TR ve Yandex Selanik Cd. kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Düzenli self-servis ağırlıklı esnaf lokantası salonu",
+        "crowdAndNoise": "Selanik ve Yüksel çevresi çalışanlarıyla öğle vaktinde hareketli",
+        "disadvantage": "Akşam geç saat restoranı değil; gündüz ev yemekleri servisine odaklanıyor.",
+        "transit": "Kızılay Selanik Caddesi No:64/B."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Selanik Kızılay",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Temiz salon düzeni ve günlük ev yemekleri incelemesi"
+        },
+        {
+          "title": "Yandex Maps Selanik Cd.",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Hindi kavurma, çorba ve hijyen övgüleri"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "160+ değerlendirmeyle Selanik Cd. esnaf yıldızı"
+        }
+      ],
+      "pros": [
+        "Şehir merkezinde sade, yağsız ve ev tipi temiz sulu yemek",
+        "Hızlı tezgah düzeni"
+      ],
+      "cons": [
+        "Geç akşam saatlerinde tencere yemekleri kapanmış oluyor"
+      ],
+      "uncertainties": [
+        "Haftalık çıkan hindi kavurma veya özel güveç günleri tezgâha göre değişiyor."
+      ],
+      "selectionScore": 93,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kizilay-neo-foods",
+      "categoryId": "denemelisin",
+      "resolvedName": "Neo Foods (European Bakery)",
+      "branchName": "Kızılay, Kumrular Cd. No: 6/ B, 06420 Çankaya/Ankara",
+      "placeId": "ChIJyRTUGE1P0xQRRMGW2AI6Bnc",
+      "coordinates": {
+        "lat": 39.9195771,
+        "lng": 32.8516105
+      },
+      "rating": 4.5,
+      "userRatingCount": 517,
+      "priceLevel": null,
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": "https://www.neofoods.com.tr/",
+      "mapsUri": "https://maps.google.com/?cid=8576606324271792452",
+      "recommendedPrimary": [
+        "Taze Pastel de Nata",
+        "Tarçınlı Chimney Cake (Baca Keki)",
+        "Sıcak Stroopwafel"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Karamelize Portekiz Tatlısı & Sıcak Kahve Eşliği",
+          "note": "Fırından yeni çıkmış ince milföy hamurlu Pastel de Nata porsiyonu kahve molasına güçlü eşlik sağlıyor.",
+          "proof": "neofoods.com.tr ve Restoranım.net Kızılay"
+        }
+      ],
+      "suitability": {
+        "seating": "Tatlı vitrini odaklı kompakt oturma alanı ve al-götür düzeni",
+        "crowdAndNoise": "Farklı tatlılar denemek isteyen gençler ve Kumrular yayaları",
+        "disadvantage": "Büyük pastane salonundan ziyade tatlı vitrini ve ayaküstü sıcak hamur işi durağı.",
+        "transit": "Kızılay Kumrular Caddesi No:6/B."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Neo Foods Resmi Sitesi",
+          "url": "https://www.neofoods.com.tr/",
+          "date": "2026-11-17",
+          "kind": "operator",
+          "note": "Kumrular Cd. konumu, Pastel de Nata ve Chimney Cake menüsü"
+        },
+        {
+          "title": "Restoranım.net & Menu-TR",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Avrupa sokak tatlıları uzmanlığı ve tazelik incelemesi"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "517+ değerlendirmeyle Kumrular’ın yüksek puanlı tatlıcısı"
+        }
+      ],
+      "pros": [
+        "Ankara’da benzeri nadir bulunan taze Pastel de Nata ve Chimney Cake reçeteleri",
+        "Zincirsiz tekil üretim"
+      ],
+      "cons": [
+        "Geniş oturma alanı bekleyen kalabalık arkadaş gruplarına küçük kalıyor"
+      ],
+      "uncertainties": [
+        "Fırın çıkış saatine denk gelinirse sıcak Nata ve baca keki tazeliği çok daha yüksek."
+      ],
+      "selectionScore": 88,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kizilay-baskent-donercisi",
+      "categoryId": "denemelisin",
+      "resolvedName": "Başkent Dönercisi",
+      "branchName": "Korkutreis, Sezenler Sk. No:4/E, 06430 Çankaya/Ankara",
+      "placeId": "ChIJr8Ta17ZP0xQRqgqVgl_zT8s",
+      "coordinates": {
+        "lat": 39.925736,
+        "lng": 32.852402999999995
+      },
+      "rating": 4.4,
+      "userRatingCount": 141,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=14650195704397761194",
+      "recommendedPrimary": [
+        "Közde Ekmek Arası Et Döner",
+        "Porsiyon Yaprak Döner",
+        "Şişe / Açık Ayran"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Korkutreis & Sıhhiye Çalışanları Öğle Klasiği",
+          "note": "Soslu dürüm modasından uzak durup klasik Ankara usulü et tadını arayan yerel müdavimlerle dolu.",
+          "proof": "Menu-TR ve Yandex Sezenler Sk. kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Sade iç salon masaları ve hızlı al-götür servis",
+        "crowdAndNoise": "Öğle vakti Sıhhiye ve Korkutreis çevresi çalışanları",
+        "disadvantage": "Hafta içi öğle yoğunluğu sonrası et stoğu tükendiğinde servis erken sonlanabiliyor.",
+        "transit": "Korkutreis Mahallesi Sezenler Sokak No:4/E."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Menu-TR Korkutreis",
+          "url": "https://menu-tr.com/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Közde ekmek arası et döner lezzeti ve temizlik incelemesi"
+        },
+        {
+          "title": "Yandex Maps Korkutreis",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Sezenler Sk. klasik et döneri müdavim deneyim notları"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "141+ değerlendirmeyle Kızılay kuzey aksının güvenilir dönercisi"
+        }
+      ],
+      "pros": [
+        "Sosa boğulmamış temiz közde et döner profili",
+        "Hızlı servis"
+      ],
+      "cons": [
+        "Geç akşam yemeği için değil ağırlıklı gündüz dönercisi"
+      ],
+      "uncertainties": [
+        "Hafta sonu erken öğleden sonra dönerin bitme ihtimali bulunuyor."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    },
+    {
+      "id": "kizilay-durmacun",
+      "categoryId": "denemelisin",
+      "resolvedName": "Dürmacun",
+      "branchName": "Kocatepe, Yüksel Cd. No:20 D:C, 06420 Çankaya/Ankara",
+      "placeId": "ChIJB7NfZEhP0xQRPFu48YaIQFk",
+      "coordinates": {
+        "lat": 39.9199167,
+        "lng": 32.8584195
+      },
+      "rating": 4.4,
+      "userRatingCount": 81,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "serviceFlags": {
+        "dineIn": null,
+        "takeout": null,
+        "outdoorSeating": null,
+        "reservable": null
+      },
+      "websiteUri": null,
+      "mapsUri": "https://maps.google.com/?cid=6431290381047454524",
+      "recommendedPrimary": [
+        "Çıtır Klasik Lahmacun Dürüm",
+        "Kaşarlı Özel Lahmacun",
+        "Köpüklü Ayran"
+      ],
+      "recommendedSecondary": [
+        {
+          "name": "Fırın Çıkışı Çıtırlık & Maydanoz-Limon Dengesi",
+          "note": "Hamuru yumuşamadan servis edilen sıcak lahmacunlar Yüksel Caddesi yürüyüşünde pratik bir mola noktası sunuyor.",
+          "proof": "Restoranım.net ve Menu-TR Yüksel Cd. kayıtları"
+        }
+      ],
+      "suitability": {
+        "seating": "Küçük oturma bölümü ve Yüksel Caddesi ayaküstü/al-götür düzeni",
+        "crowdAndNoise": "Yüksel yaya aksındaki öğrenciler ve hızlı yemek arayanlar",
+        "disadvantage": "Küçük esnaf dükkânı düzeninde; uzun oturumlu akşam sofrası yeri değil.",
+        "transit": "Kocatepe Mahallesi Yüksel Caddesi No:20/C."
+      },
+      "verifiedAt": "2026-11-17",
+      "sources": [
+        {
+          "title": "Restoranım.net & Menu-TR",
+          "url": "https://restoranim.net/",
+          "date": "2026-10-20",
+          "kind": "editorial",
+          "note": "Yüksel Cd. çıtır hamurlu lahmacun sunumu değerlendirmesi"
+        },
+        {
+          "title": "Yandex Maps Kocatepe",
+          "url": "https://yandex.com.tr/",
+          "date": "2026-10-20",
+          "kind": "community",
+          "note": "Taze harç ve hızlı fırın servisi beğeni notları"
+        },
+        {
+          "title": "Google Maps Topluluk",
+          "url": "https://maps.google.com/",
+          "date": "2026-10-20",
+          "kind": "maps",
+          "note": "81+ misafirden yüksek Kızılay sokak lezzeti puanı"
+        }
+      ],
+      "pros": [
+        "Merkezi Yüksel aksında taze ve çıtır lahmacun çıkarıyor",
+        "Hızlı ayaküstü veya pratik yemek"
+      ],
+      "cons": [
+        "Geniş masa veya kalabalık grup alanı sınırlı"
+      ],
+      "uncertainties": [
+        "Yoğun öğle saatlerinde sıcak fırın sırası birkaç dakika bekletebiliyor."
+      ],
+      "selectionScore": 79,
+      "selectedForSnapshot": true
+    }
+  ]
+}
