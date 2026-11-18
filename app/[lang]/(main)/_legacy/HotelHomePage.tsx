@@ -49,7 +49,7 @@ async function HotelGroups({ lang, domain }: { lang: 'tr' | 'en', domain?: strin
             <div className="sm:hidden overflow-x-auto -mx-4 px-4 pb-2 scrollbar-hide">
               <div className="flex gap-4" style={{ width: 'fit-content' }}>
                 {group.hotels.map((hotel: Hotel, hotelIndex: number) => (
-                  <div key={hotel.id} className="w-[calc(100vw-7rem)]" style={{ minWidth: 'calc(100vw - 7rem)' }}>
+                  <div key={hotel.id} className="w-[min(82vw,20rem)] min-[390px]:w-[calc(100vw-6rem)] shrink-0">
                     <HotelCard hotel={hotel} lang={lang} priority={groupIndex === 0 && hotelIndex === 0} />
                   </div>
                 ))}
@@ -91,7 +91,7 @@ function HomePageSkeleton() {
           <div className="sm:hidden overflow-x-auto -mx-4 px-4 pb-2">
             <div className="flex gap-4" style={{ width: 'fit-content' }}>
               {[1, 2, 3].map((idx) => (
-                <div key={idx} className="w-[calc(100vw-7rem)]" style={{ minWidth: 'calc(100vw - 7rem)' }}>
+                <div key={idx} className="w-[min(82vw,20rem)] min-[390px]:w-[calc(100vw-6rem)] shrink-0">
                   <HotelCardSkeleton />
                 </div>
               ))}
@@ -171,17 +171,17 @@ export default async function HomePage({
       <main className="container mx-auto px-4 pt-3 pb-12">
         {/* KOMPAKT SEKME (TAB) GEÇİŞİ: OTELLER / GASTRONOMİ KEŞFİ */}
         <div className="flex justify-center mb-5">
-          <div className="inline-flex items-center p-1 rounded-full bg-gray-100 border border-gray-200/80 shadow-xs">
+          <div className="inline-flex max-w-full items-center p-1 rounded-full bg-gray-100 border border-gray-200/80 shadow-sm">
             <a
               href={`/${lang}`}
-              className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white text-gray-900 font-bold text-xs sm:text-sm shadow-xs border border-gray-200/60 transition-all"
+              className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 min-[375px]:px-4 sm:px-5 py-2 rounded-full bg-white text-gray-900 font-bold text-[11px] min-[375px]:text-xs sm:text-sm whitespace-nowrap shadow-sm border border-gray-200/60 transition-all"
             >
               <span>🏨</span>
               <span>{lang === 'tr' ? 'Oteller' : 'Hotels'}</span>
             </a>
             <a
               href={`/${lang}?view=gastronomi`}
-              className="inline-flex items-center gap-2 px-5 py-2 rounded-full text-gray-600 hover:text-[#FF385C] font-bold text-xs sm:text-sm transition-all"
+              className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 min-[375px]:px-4 sm:px-5 py-2 rounded-full text-gray-600 hover:text-[#FF385C] font-bold text-[11px] min-[375px]:text-xs sm:text-sm whitespace-nowrap transition-all"
             >
               <span>🍽️</span>
               <span>{lang === 'tr' ? 'Gastronomi Keşfi' : 'Gastronomy Discovery'}</span>
@@ -193,7 +193,7 @@ export default async function HomePage({
         </div>
 
         <div className="text-center mt-1 mb-6">
-          <h1 className="text-xl min-[375px]:text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight whitespace-nowrap">
+          <h1 className="text-[clamp(1.25rem,5vw,2.25rem)] font-bold text-gray-900 mb-5 sm:mb-6 tracking-tight leading-tight [text-wrap:balance] px-1">
             {dict.home.hero_title}
           </h1>
 

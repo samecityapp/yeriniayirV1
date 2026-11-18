@@ -586,6 +586,62 @@ function formatLocationCategoryHeading(locative: string, categoryTitle?: string)
   return `${cleanLocative} ${cleanTitle}`;
 }
 
+const HOME_DISCOVERY_LIMIT = 11;
+
+const QUICK_DISCOVERY_SLUGS: readonly string[] = [
+  'moda',
+  'kadikoy',
+  'karakoy',
+  'nisantasi',
+  'besiktas-carsi',
+  'alacati',
+  'bodrum-merkez',
+  'kas-merkez',
+  'antalya-kaleici',
+  'tunali-hilmi',
+  'gaziantep',
+];
+
+const FEATURED_DISCOVERY_SLUGS: readonly string[] = [
+  'moda',
+  'kadikoy',
+  'karakoy',
+  'nisantasi',
+  'besiktas-carsi',
+  'alacati',
+  'bodrum-merkez',
+  'kas-merkez',
+  'antalya-kaleici',
+  'tunali-hilmi',
+  'gaziantep',
+];
+
+function selectCappedRegions(
+  regions: readonly FoodLocation[],
+  preferredSlugs: readonly string[],
+  limit = HOME_DISCOVERY_LIMIT
+): FoodLocation[] {
+  const bySlug = new Map(regions.map((r) => [r.slug, r]));
+  const picked: FoodLocation[] = [];
+  const seen = new Set<string>();
+  for (const slug of preferredSlugs) {
+    if (picked.length >= limit) break;
+    const match = bySlug.get(slug);
+    if (match && !seen.has(match.id)) {
+      picked.push(match);
+      seen.add(match.id);
+    }
+  }
+  for (const region of regions) {
+    if (picked.length >= limit) break;
+    if (!seen.has(region.id)) {
+      picked.push(region);
+      seen.add(region.id);
+    }
+  }
+  return picked.slice(0, limit);
+}
+
 interface GastronomyPageClientProps {
   discovery: VisitorFoodDiscovery;
   initialLocationSlug?: string;
@@ -699,6 +755,16 @@ export function GastronomyPageClient({
     return foodDiscoveryProvider.getReadyRegions();
   }, [foodDiscoveryProvider]);
 
+  const quickDiscoveryRegions = useMemo(
+    () => selectCappedRegions(readyRegions, QUICK_DISCOVERY_SLUGS, HOME_DISCOVERY_LIMIT),
+    [readyRegions]
+  );
+
+  const featuredDiscoveryRegions = useMemo(
+    () => selectCappedRegions(readyRegions, FEATURED_DISCOVERY_SLUGS, HOME_DISCOVERY_LIMIT),
+    [readyRegions]
+  );
+
   return (
     <div className={embedded ? "w-full bg-[#fafbfc] text-slate-900 flex flex-col font-sans antialiased" : "min-h-screen bg-[#fafbfc] text-slate-900 flex flex-col font-sans antialiased"}>
       {/* 1. ORTAK HEADER */}
@@ -709,20 +775,20 @@ export function GastronomyPageClient({
       />
 
       {/* ANA İÇERİK — ORİJİNAL TAM GENİŞLİK / MAX-W-2XL DÜZENİ */}
-      <main className="flex-1 max-w-2xl w-full mx-auto px-4 py-3 sm:py-5">
+      <main className="flex-1 max-w-2xl w-full mx-auto px-3.5 min-[375px]:px-4 sm:px-6 py-3 sm:py-5">
         {/* KOMPAKT SEKME (TAB) GEÇİŞİ: OTELLER / GASTRONOMİ KEŞFİ */}
         <div className="flex justify-center mb-4">
-          <div className="inline-flex items-center p-1 rounded-full bg-slate-200/70 border border-slate-200/90 shadow-2xs">
+          <div className="inline-flex max-w-full items-center p-1 rounded-full bg-slate-200/70 border border-slate-200/90 shadow-sm">
             <a
               href={`/${lang}`}
-              className="inline-flex items-center gap-2 px-5 py-2 rounded-full text-slate-600 hover:text-slate-900 font-bold text-xs sm:text-sm transition-all"
+              className="inline-flex items-center gap-1.5 sm:gap-2 px-3 min-[380px]:px-4 sm:px-5 py-2 rounded-full text-slate-600 hover:text-slate-900 font-bold text-[11px] min-[375px]:text-xs sm:text-sm whitespace-nowrap transition-all"
             >
               <span>🏨</span>
               <span>{lang === 'tr' ? 'Oteller' : 'Hotels'}</span>
             </a>
             <a
               href={`/${lang}?view=gastronomi`}
-              className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white text-slate-950 font-bold text-xs sm:text-sm shadow-xs border border-slate-200/70 transition-all"
+              className="inline-flex items-center gap-1.5 sm:gap-2 px-3 min-[380px]:px-4 sm:px-5 py-2 rounded-full bg-white text-slate-950 font-bold text-[11px] min-[375px]:text-xs sm:text-sm whitespace-nowrap shadow-sm border border-slate-200/70 transition-all"
             >
               <span>🍽️</span>
               <span>{lang === 'tr' ? 'Gastronomi Keşfi' : 'Gastronomy Discovery'}</span>
@@ -733,77 +799,77 @@ export function GastronomyPageClient({
         {/* 1. DURUM: KONUM HENÜZ SEÇİLMEDİ (YENİ MODERN HERO & KONUM SEÇİMİ)   */}
         {/* =================================================================== */}
         {regionParam && !selectedLocation ? (
-          <div className="py-12 text-center"><h1 className="text-xl font-bold">Bu konum için rehber henüz hazır değil.</h1><button className="mt-4 text-blue-600" onClick={()=>router.push(`/${lang}`)}>Konum seçimine dön</button></div>
+          <div className="py-12 px-2 text-center"><h1 className="text-xl font-bold break-words">Bu konum için rehber henüz hazır değil.</h1><button className="mt-4 text-blue-600 font-semibold" onClick={()=>router.push(`/${lang}`)}>Konum seçimine dön</button></div>
         ) : !selectedLocation ? (
           <div className="pt-2 sm:pt-4 pb-12 max-w-xl mx-auto">
             {/* BAŞLIK & METİN — İKONSUZ, HEADER'IN DİREKT BİR TIK ALTINDA */}
             <div className="text-center pt-2 sm:pt-4 pb-1">
-              <h1 className="text-3xl sm:text-4xl md:text-[44px] font-black tracking-tight text-slate-950 uppercase leading-none">
+              <h1 className="text-[clamp(1.5rem,6.5vw,2.75rem)] font-black tracking-tight text-slate-950 uppercase leading-[1.08] [text-wrap:balance]">
                 CANIN NE ÇEKİYOR?
               </h1>
-              <p className="text-sm sm:text-base font-medium text-slate-600 leading-relaxed mt-3 max-w-md mx-auto">
+              <p className="text-[13px] min-[375px]:text-sm sm:text-base font-medium text-slate-600 leading-relaxed mt-2.5 sm:mt-3 max-w-md mx-auto [text-wrap:pretty] px-1">
                 Konum seç! Kahvecileri, yemek mekanlarını ve yerel deneyimleri keşfet.
               </p>
             </div>
 
             {/* ŞIK & MODERN KONUM SEÇ ÇUBUĞU (ÖZEL HAP TASARIMI) */}
-            <div className="mt-6 mb-3">
+            <div className="mt-5 sm:mt-6 mb-3">
               <button
                 type="button"
                 onClick={() => setIsLocationModalOpen(true)}
-                className="w-full flex items-center justify-between gap-3 p-2.5 sm:p-3 bg-white hover:bg-slate-50/90 active:bg-slate-100 border border-slate-200/90 hover:border-blue-400 rounded-full shadow-[0_8px_24px_-4px_rgba(15,23,42,0.08),0_2px_6px_rgba(15,23,42,0.03)] hover:shadow-[0_16px_36px_-6px_rgba(37,99,235,0.15)] transition-all duration-200 group active:scale-[0.99] text-left"
+                className="w-full flex items-center justify-between gap-2 sm:gap-3 p-2 sm:p-3 bg-white hover:bg-slate-50/90 active:bg-slate-100 border border-slate-200/90 hover:border-blue-400 rounded-full shadow-[0_8px_24px_-4px_rgba(15,23,42,0.08),0_2px_6px_rgba(15,23,42,0.03)] hover:shadow-[0_16px_36px_-6px_rgba(37,99,235,0.15)] transition-all duration-200 group active:scale-[0.99] text-left"
               >
-                <div className="flex items-center gap-3 pl-1 sm:pl-1.5 min-w-0">
-                  <div className="w-11 h-11 rounded-full bg-blue-600 text-white flex items-center justify-center flex-shrink-0 shadow-md shadow-blue-500/25 group-hover:scale-105 transition-transform duration-200">
-                    <Search size={19} />
+                <div className="flex items-center gap-2.5 sm:gap-3 pl-0.5 sm:pl-1.5 min-w-0 flex-1">
+                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-blue-600 text-white flex items-center justify-center flex-shrink-0 shadow-md shadow-blue-500/25 group-hover:scale-105 transition-transform duration-200">
+                    <Search size={18} />
                   </div>
-                  <div className="min-w-0">
-                    <div className="text-base sm:text-lg font-black text-slate-950 tracking-tight leading-tight">
+                  <div className="min-w-0 flex-1">
+                    <div className="text-[15px] min-[375px]:text-base sm:text-lg font-black text-slate-950 tracking-tight leading-tight">
                       Konum Seç
                     </div>
-                    <div className="text-xs text-slate-500 font-medium truncate mt-0.5">
+                    <div className="text-[11px] sm:text-xs text-slate-500 font-medium truncate mt-0.5">
                       Taksim & İstiklal · Asmalımescit & Pera · Yeniköy · Göktürk · Balat · Çukurcuma · Etiler · Ortaköy · Akaretler · Bebek · Galata · Beşiktaş Çarşı · Karaköy · Cihangir · Nişantaşı · Üsküdar · Kuzguncuk · Çengelköy · Koşuyolu & Acıbadem · Kadıköy · Moda · Caddebostan · Suadiye · Bostancı · Kaleiçi · Konyaaltı Sahil · Lara · Kaş Merkez · Kalkan Merkez · Alanya Merkez · Side · Kemer (Antalya) · Gaziantep · Kuşadası · Akyaka & Akçapınar · Fethiye Merkez · Çalış · Ölüdeniz · Yanıklar · Göcek (Fethiye) · Bodrum Merkez · Yalıkavak · Gümüşlük · Türkbükü · Bitez · Turgutreis · Ortakent & Yahşi · Gündoğan · Gümbet · Torba · Akyarlar (Bodrum) · Marmaris Merkez · Datça Merkez · Alsancak · Bostanlı · Karşıyaka · Bornova · Göztepe & Güzelyalı · Mavişehir · Alaçatı · Urla · Sığacık · Foça (İzmir) · Şanlıurfa Merkez · Mardin Merkez · Diyarbakır Merkez · Hatay Merkez · İskenderun Merkez · Adana Merkez · Mersin Merkez · Kızılay · Tunalı Hilmi · Bahçelievler & 7. Cadde · Gaziosmanpaşa · Çayyolu & Park Caddesi · Ümitköy & Beysukent · Ayrancı · Çukurambar (Ankara) · Aydın Merkez · Balıkesir Merkez · Ayvalık Merkez · Cunda · Bursa Merkez · Çanakkale Merkez · Edirne Merkez · Eskişehir Merkez · Denizli Merkez · Rize Merkez · Trabzon Merkez
                     </div>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-1.5 text-xs font-bold text-white bg-slate-900 group-hover:bg-blue-600 px-4 py-2.5 rounded-full transition-colors duration-200 flex-shrink-0 mr-1 shadow-xs">
+                <div className="flex items-center gap-1 sm:gap-1.5 text-[11px] min-[375px]:text-xs font-bold text-white bg-slate-900 group-hover:bg-blue-600 px-3 min-[375px]:px-4 py-2 sm:py-2.5 rounded-full transition-colors duration-200 flex-shrink-0 mr-0.5 sm:mr-1 shadow-sm">
                   <span>Keşfet</span>
                   <ChevronRight size={14} />
                 </div>
               </button>
             </div>
 
-            {/* POPÜLER HIZLI SEÇİM ÇİPLERİ */}
-            <div className="flex items-center justify-center flex-wrap gap-2 mb-8">
+            {/* POPÜLER HIZLI SEÇİM ÇİPLERİ (11 KONUM) */}
+            <div data-testid="quick-discovery-list" className="flex items-center justify-center flex-wrap gap-1.5 sm:gap-2 mb-7 sm:mb-8">
               <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 mr-0.5">
                 Hızlı Keşif:
               </span>
-              {readyRegions.map((region) => (
+              {quickDiscoveryRegions.map((region) => (
                 <button
                   key={region.id}
                   onClick={() => handleSelectLocation(region)}
-                  className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-bold bg-white hover:bg-blue-50 text-slate-700 hover:text-blue-700 border border-slate-200/80 hover:border-blue-300 shadow-2xs hover:shadow-xs transition-all active:scale-95"
+                  className="inline-flex items-center gap-1 min-h-[34px] sm:min-h-[36px] max-w-full px-2.5 sm:px-3 py-1.5 rounded-full text-[11px] sm:text-xs font-bold bg-white hover:bg-blue-50 text-slate-700 hover:text-blue-700 border border-slate-200/80 hover:border-blue-300 shadow-sm transition-all active:scale-95"
                 >
-                  <MapPin size={11} className="text-blue-600" />
-                  <span>{region.name}</span>
+                  <MapPin size={11} className="text-blue-600 flex-shrink-0" />
+                  <span className="truncate">{region.name}</span>
                 </button>
               ))}
             </div>
 
-            {/* ÖRNEK KEŞİF BÖLGELERİ — ZENGİN GÖRSEL DERGİ KARTLARI (CERCEVELİ BASİT YAPILAR YERİNE) */}
+            {/* ÖRNEK KEŞİF BÖLGELERİ (11 BÖLGE) — ZENGİN GÖRSEL DERGİ KARTLARI */}
             <div>
-              <div className="flex items-center justify-between mb-3 px-1">
-                <span className="text-xs font-black uppercase tracking-wider text-slate-500">
+              <div className="flex items-center justify-between gap-2 mb-3 px-1">
+                <span className="text-[11px] sm:text-xs font-black uppercase tracking-wider text-slate-500">
                   Öne Çıkan Keşif Bölgeleri
                 </span>
-                <span className="text-[11px] font-bold text-slate-500">
+                <span className="text-[11px] font-bold text-slate-500 flex-shrink-0">
                   {readyRegions.length} Bölge Hazır
                 </span>
               </div>
 
-              <div className="space-y-4">
-                {readyRegions.map((region) => {
+              <div data-testid="featured-discovery-list" className="space-y-3.5 sm:space-y-4">
+                {featuredDiscoveryRegions.map((region, index) => {
                   const curated = REGION_CURATED_CARDS[region.id] || {
                     image: '/images/gastronomy/coffee-pour-over.svg',
                     badge: 'Temsili görsel',
@@ -823,37 +889,37 @@ export function GastronomyPageClient({
                           handleSelectLocation(region);
                         }
                       }}
-                      className="group relative w-full h-44 sm:h-48 rounded-3xl overflow-hidden cursor-pointer shadow-[0_6px_20px_-4px_rgba(0,0,0,0.1)] hover:shadow-[0_16px_36px_-6px_rgba(0,0,0,0.22)] border border-slate-200/80 transition-all duration-300 active:scale-[0.99] select-none"
+                      className="group relative w-full min-h-[11.5rem] sm:min-h-[12.5rem] rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer shadow-[0_6px_20px_-4px_rgba(0,0,0,0.1)] hover:shadow-[0_16px_36px_-6px_rgba(0,0,0,0.22)] border border-slate-200/80 transition-all duration-300 active:scale-[0.99] select-none flex flex-col"
                     >
                       {/* Arka Plan Görseli */}
                       <Image
                         src={curated.image}
-                        alt="Kahve kategorisi için temsili illüstrasyon"
+                        alt={`${curated.headline} temsili görseli`}
                         className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                         fill
                         sizes="(max-width: 640px) 100vw, 640px"
-                        priority
-                        fetchPriority="high"
+                        priority={index < 2}
+                        fetchPriority={index < 2 ? 'high' : undefined}
                       />
 
                       {/* Çok Katmanlı Karartma Gradyanı */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/45 to-black/25 group-hover:from-slate-950 transition-colors" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/60 to-slate-900/45 group-hover:from-slate-950 transition-colors" />
 
                       {/* Kart İçi İçerik */}
-                      <div className="relative h-full p-4 sm:p-5 flex flex-col justify-between">
+                      <div className="relative flex-1 p-4 sm:p-5 flex flex-col justify-between gap-4">
                         {/* Üst Bar: Rozet ve Ok Butonu */}
                         <div className="flex items-center justify-between gap-2">
-                          <span className="text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-full bg-white/20 backdrop-blur-md text-white border border-white/25">
+                          <span className="text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-full bg-slate-900/45 backdrop-blur-md text-white border border-white/25 truncate">
                             {curated.badge}
                           </span>
-                          <div className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white flex items-center justify-center group-hover:bg-blue-600 group-hover:border-blue-500 transition-colors">
+                          <div className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 group-hover:border-blue-500 transition-colors">
                             <ChevronRight size={16} />
                           </div>
                         </div>
 
                         {/* Alt Alan: Şehir/Semt Başlığı ve Vibe Açıklaması */}
-                        <div>
-                          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight leading-snug group-hover:text-blue-200 transition-colors">
+                        <div className="min-w-0">
+                          <h2 className="text-[clamp(1.125rem,4.5vw,1.5rem)] font-black text-white tracking-tight leading-snug break-words group-hover:text-blue-200 transition-colors">
                             {curated.headline}
                           </h2>
                           <p className="text-xs sm:text-[13px] text-slate-200 font-medium line-clamp-2 mt-1 leading-relaxed">
@@ -878,9 +944,9 @@ export function GastronomyPageClient({
           <div className="pt-1">
             {/* 1. BAŞLIK & AÇIKLAMA (MOCKUP İLE BİREBİR AYNI DİZİLİM) */}
             <div className="pt-1 pb-4 sm:pb-5">
-              <h1 className="text-2xl sm:text-3xl font-black text-slate-950 tracking-tight flex items-center gap-2 sm:gap-2.5 leading-tight">
-                <span className="text-2xl sm:text-3xl leading-none">{categoryResult?.category.emoji || '🍽️'}</span>
-                <span>{formatLocationCategoryHeading(selectedLocation.locative, categoryResult?.category.title)}</span>
+              <h1 className="text-[clamp(1.25rem,5vw,1.875rem)] font-black text-slate-950 tracking-tight flex items-start sm:items-center gap-2 sm:gap-2.5 leading-snug">
+                <span className="text-2xl sm:text-3xl leading-none flex-shrink-0 mt-0.5 sm:mt-0">{categoryResult?.category.emoji || '🍽️'}</span>
+                <span className="min-w-0 break-words [text-wrap:balance]">{formatLocationCategoryHeading(selectedLocation.locative, categoryResult?.category.title)}</span>
               </h1>
               {selectedLocation.characterSubtitle && (
                 <p className="text-xs sm:text-sm text-slate-500 font-medium mt-1.5 leading-relaxed">
@@ -983,13 +1049,13 @@ export function GastronomyPageClient({
       {/* ALT BİLGİ / FOOTER */}
       {!embedded && (
         <footer className="mt-auto border-t border-slate-200/70 bg-white py-6 px-4 text-center text-slate-500 text-xs select-none">
-          <div className="max-w-2xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px]">
-            <div className="flex items-center gap-1 font-bold text-slate-700">
+          <div className="max-w-2xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-3 text-[11px]">
+            <div className="flex items-center gap-1 font-bold text-slate-700 flex-shrink-0">
               <span>YERİNİ AYIR</span>
               <span className="text-blue-600">·</span>
               <span className="font-normal text-slate-500">Gastronomi Keşif Platformu</span>
             </div>
-            <div>
+            <div className="text-center sm:text-right break-words max-w-full">
               {selectedLocation ? `${selectedLocation.displayName} Rehberi` : 'Doğrulanmış Yerel Gastronomi Rehberi'}
             </div>
           </div>

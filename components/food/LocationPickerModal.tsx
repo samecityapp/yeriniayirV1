@@ -134,11 +134,11 @@ export function LocationPickerModal({
 
   return (
     <div 
-      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/60 backdrop-blur-xs transition-opacity duration-200 p-0 sm:p-4"
+      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/60 backdrop-blur-sm transition-opacity duration-200 p-0 sm:p-4"
       onClick={onClose}
     >
       <div ref={modalRef} role="dialog" aria-modal="true" aria-label="Konum seçimi"
-        className="w-full sm:max-w-md bg-white rounded-t-[28px] sm:rounded-3xl shadow-2xl flex flex-col max-h-[88vh] overflow-hidden animate-in slide-in-from-bottom duration-250 select-none"
+        className="w-full sm:max-w-md bg-white rounded-t-[28px] sm:rounded-3xl shadow-2xl flex flex-col max-h-[88vh] supports-[height:100dvh]:max-h-[88dvh] overflow-hidden animate-in slide-in-from-bottom duration-250 select-none"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Mobil Tutamaç */}
@@ -147,8 +147,8 @@ export function LocationPickerModal({
         </div>
 
         {/* Modal Başlığı */}
-        <div className="px-5 pt-3 pb-3 border-b border-slate-100 flex items-center justify-between">
-          <div>
+        <div className="px-4 sm:px-5 pt-3 pb-3 border-b border-slate-100 flex items-center justify-between gap-2">
+          <div className="min-w-0">
             <h3 className="text-base font-black text-slate-950 tracking-tight">
               Konum Seç
             </h3>
@@ -158,7 +158,7 @@ export function LocationPickerModal({
           </div>
           <button
             onClick={onClose}
-            className="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center transition"
+            className="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center flex-shrink-0 transition"
             aria-label="Kapat"
           >
             <X size={16} />
@@ -166,7 +166,7 @@ export function LocationPickerModal({
         </div>
 
         {/* Arama Inputu */}
-        <div className="p-4 border-b border-slate-100">
+        <div className="p-3.5 sm:p-4 border-b border-slate-100">
           <div className="relative">
             <Search size={18} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
             <input
@@ -175,7 +175,7 @@ export function LocationPickerModal({
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="İl, ilçe veya semt ara (Taksim & İstiklal, Asmalımescit & Pera, Yeniköy, Göktürk, Galata, Beşiktaş Çarşı, Karaköy, Cihangir, Nişantaşı, Fenerbahçe, Kalamış, Üsküdar, Kuzguncuk, Çengelköy, Feneryolu, Kadıköy, Kaleiçi, Konyaaltı Sahil, Lara, Kaş Merkez, Kalkan Merkez, Alanya Merkez, Side, Kemer, Akyaka & Akçapınar, Yanıklar, Göcek, Fethiye Merkez, Çalış, Ölüdeniz, Bodrum Merkez, Yalıkavak, Gümüşlük, Türkbükü, Bitez, Turgutreis, Ortakent & Yahşi, Gündoğan, Gümbet, Torba, Akyarlar, Marmaris Merkez, Datça Merkez, Alsancak, Bostanlı, Karşıyaka, Bornova, Göztepe & Güzelyalı, Mavişehir, Alaçatı, Urla, Sığacık, Foça, Şanlıurfa Merkez, Mardin Merkez, Diyarbakır Merkez, Hatay Merkez, İskenderun Merkez, Adana Merkez, Mersin Merkez, Kızılay, Tunalı Hilmi, Bahçelievler & 7. Cadde, Gaziosmanpaşa, Çayyolu & Park Caddesi, Ümitköy & Beysukent, Ayrancı, Çukurambar, Aydın Merkez, Balıkesir Merkez, Ayvalık Merkez, Cunda, Bursa Merkez, Çanakkale Merkez, Edirne Merkez, Eskişehir Merkez, Denizli Merkez, Rize Merkez, Trabzon Merkez)"
-              className="w-full pl-10 pr-9 py-2.5 bg-slate-50 hover:bg-slate-100/70 focus:bg-white border border-slate-200 focus:border-blue-600 rounded-xl text-sm font-semibold text-slate-900 placeholder:text-slate-400 focus:outline-hidden focus:ring-2 focus:ring-blue-600/20 transition"
+              className="w-full pl-10 pr-9 py-2.5 bg-slate-50 hover:bg-slate-100/70 focus:bg-white border border-slate-200 focus:border-blue-600 rounded-xl text-sm font-semibold text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600/20 transition"
             />
             {query && (
               <button
@@ -191,7 +191,7 @@ export function LocationPickerModal({
           <button
             onClick={handleUseCurrentLocation}
             disabled={gpsLoading}
-            className="w-full mt-2.5 flex items-center justify-center gap-2 py-2 px-3 rounded-xl bg-blue-50/80 hover:bg-blue-100 text-blue-700 text-xs font-bold transition active:scale-98 disabled:opacity-50"
+            className="w-full mt-2.5 flex items-center justify-center gap-2 py-2 px-3 rounded-xl bg-blue-50/80 hover:bg-blue-100 text-blue-700 text-xs font-bold transition active:scale-[0.98] disabled:opacity-50"
           >
             <Navigation size={14} className={gpsLoading ? 'animate-spin' : ''} />
             <span>{gpsLoading ? 'Konum belirleniyor...' : 'Konumumu Kullan (En Yakın Bölge)'}</span>
@@ -206,7 +206,7 @@ export function LocationPickerModal({
         </div>
 
         {/* Liste Alanı */}
-        <div className="flex-1 overflow-y-auto p-4 space-y-4 max-h-[60vh]">
+        <div className="flex-1 min-h-0 overflow-y-auto p-3.5 sm:p-4 pb-[max(1rem,env(safe-area-inset-bottom))] space-y-4">
           {/* Arama Sonuçları */}
           {query.trim() !== '' ? (
             <div>
@@ -233,34 +233,34 @@ export function LocationPickerModal({
                           }
                         }}
                         disabled={!isAvailable}
-                        className={`w-full flex items-center justify-between p-3 rounded-2xl text-left transition ${
+                        className={`w-full flex items-center justify-between gap-2.5 sm:gap-3 p-3 rounded-2xl text-left transition ${
                           isSelected
                             ? 'bg-blue-600 text-white shadow-md shadow-blue-600/20'
                             : isAvailable
-                            ? 'bg-slate-50 hover:bg-slate-100 text-slate-900 border border-slate-150'
+                            ? 'bg-slate-50 hover:bg-slate-100 text-slate-900 border border-slate-200/80'
                             : 'bg-slate-50/50 text-slate-400 border border-slate-100 cursor-not-allowed opacity-60'
                         }`}
                       >
-                        <div className="flex items-center gap-3">
+                        <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
                           <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
                             isSelected ? 'bg-white/20 text-white' : 'bg-slate-200 text-slate-600'
                           }`}>
                             <MapPin size={15} />
                           </div>
-                          <div>
+                          <div className="min-w-0">
                             {/* TAG'LER KALDIRILDI: SADECE TEMİZ ŞEHİR / BÖLGE İSMİ */}
-                            <div className="text-sm font-black leading-tight text-slate-900">
+                            <div className="text-sm font-black leading-tight text-slate-900 break-words">
                               <span className={isSelected ? 'text-white' : 'text-slate-950'}>
                                 {loc.displayName}
                               </span>
                             </div>
-                            <div className={`text-[11px] mt-0.5 font-medium ${isSelected ? 'text-blue-100' : 'text-slate-500'}`}>
+                            <div className={`text-[11px] mt-0.5 font-medium line-clamp-2 break-words ${isSelected ? 'text-blue-100' : 'text-slate-500'}`}>
                               {loc.characterSubtitle || loc.scopeNote || 'Gastronomi rehberi'}
                             </div>
                           </div>
                         </div>
 
-                        <div>
+                        <div className="flex-shrink-0">
                           {isSelected ? (
                             <div className="w-6 h-6 rounded-full bg-white text-blue-600 flex items-center justify-center">
                               <Check size={14} />
@@ -301,23 +301,23 @@ export function LocationPickerModal({
                               onSelectLocation(loc);
                               onClose();
                             }}
-                            className={`w-full flex items-center justify-between p-3.5 rounded-2xl text-left border transition active:scale-99 ${
+                            className={`w-full flex items-center justify-between gap-2.5 sm:gap-3 p-3.5 rounded-2xl text-left border transition active:scale-[0.99] ${
                               isSelected
                                 ? 'bg-blue-600 text-white border-blue-600 shadow-md shadow-blue-600/20'
-                                : 'bg-white hover:bg-slate-50 text-slate-900 border-slate-200 shadow-2xs'
+                                : 'bg-white hover:bg-slate-50 text-slate-900 border-slate-200 shadow-sm'
                             }`}
                           >
-                            <div className="flex items-center gap-3">
+                            <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
                               <div className={`w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 ${
                                 isSelected ? 'bg-white/20 text-white' : 'bg-blue-50 text-blue-600'
                               }`}>
                                 <MapPin size={17} />
                               </div>
-                              <div>
-                                <div className={`text-sm font-black leading-tight ${isSelected ? 'text-white' : 'text-slate-950'}`}>
+                              <div className="min-w-0">
+                                <div className={`text-sm font-black leading-tight break-words ${isSelected ? 'text-white' : 'text-slate-950'}`}>
                                   {loc.displayName}
                                 </div>
-                                <div className={`text-[11px] mt-0.5 font-medium ${isSelected ? 'text-blue-100' : 'text-slate-500'}`}>
+                                <div className={`text-[11px] mt-0.5 font-medium line-clamp-2 break-words ${isSelected ? 'text-blue-100' : 'text-slate-500'}`}>
                                   {loc.characterSubtitle || loc.scopeNote || 'Gastronomi rehberi'}
                                 </div>
                               </div>
