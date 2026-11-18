@@ -726,6 +726,15 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'filicori',
   'pause coffea',
   'pizza palermo',
+  'crakers pizza',
+  'nalia',
+  'fasuli',
+  'greenwich coffee',
+  'cups & clouds',
+  'fevzi hoca',
+  'cemilusta',
+  'cemil usta',
+  'nesh',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([

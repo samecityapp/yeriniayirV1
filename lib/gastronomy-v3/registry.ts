@@ -88,6 +88,8 @@ import canakkaleMerkezSnapshotJson from './regions/canakkale-merkez.json';
 import edirneMerkezSnapshotJson from './regions/edirne-merkez.json';
 import eskisehirMerkezSnapshotJson from './regions/eskisehir-merkez.json';
 import denizliMerkezSnapshotJson from './regions/denizli-merkez.json';
+import rizeMerkezSnapshotJson from './regions/rize-merkez.json';
+import trabzonMerkezSnapshotJson from './regions/trabzon-merkez.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -198,6 +200,10 @@ const ESKISEHIR_MERKEZ_SNAPSHOT =
   eskisehirMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 const DENIZLI_MERKEZ_SNAPSHOT =
   denizliMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
+const RIZE_MERKEZ_SNAPSHOT =
+  rizeMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
+const TRABZON_MERKEZ_SNAPSHOT =
+  trabzonMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -290,6 +296,8 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   EDIRNE_MERKEZ_SNAPSHOT,
   ESKISEHIR_MERKEZ_SNAPSHOT,
   DENIZLI_MERKEZ_SNAPSHOT,
+  RIZE_MERKEZ_SNAPSHOT,
+  TRABZON_MERKEZ_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -1138,6 +1146,37 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   sirakapilar: DENIZLI_MERKEZ_SNAPSHOT,
   'atalar-denizli': DENIZLI_MERKEZ_SNAPSHOT,
   incilipinar: DENIZLI_MERKEZ_SNAPSHOT,
+  'rize-merkez': RIZE_MERKEZ_SNAPSHOT,
+  rize: RIZE_MERKEZ_SNAPSHOT,
+  'islampasa-rize': RIZE_MERKEZ_SNAPSHOT,
+  piricelebi: RIZE_MERKEZ_SNAPSHOT,
+  portakallik: RIZE_MERKEZ_SNAPSHOT,
+  'fener-rize': RIZE_MERKEZ_SNAPSHOT,
+  'ziraat-rize': RIZE_MERKEZ_SNAPSHOT,
+  'yenikoy-rize': RIZE_MERKEZ_SNAPSHOT,
+  'tophane-rize': RIZE_MERKEZ_SNAPSHOT,
+  'gundogdu-rize': RIZE_MERKEZ_SNAPSHOT,
+  engindere: RIZE_MERKEZ_SNAPSHOT,
+  'atmeydani-rize': RIZE_MERKEZ_SNAPSHOT,
+  'trabzon-merkez': TRABZON_MERKEZ_SNAPSHOT,
+  trabzon: TRABZON_MERKEZ_SNAPSHOT,
+  ortahisar: TRABZON_MERKEZ_SNAPSHOT,
+  'ortahisar-trabzon': TRABZON_MERKEZ_SNAPSHOT,
+  'meydan-trabzon': TRABZON_MERKEZ_SNAPSHOT,
+  uzunsokak: TRABZON_MERKEZ_SNAPSHOT,
+  'uzun-sokak-trabzon': TRABZON_MERKEZ_SNAPSHOT,
+  kunduracilar: TRABZON_MERKEZ_SNAPSHOT,
+  pazarkapi: TRABZON_MERKEZ_SNAPSHOT,
+  kemerkaya: TRABZON_MERKEZ_SNAPSHOT,
+  'boztepe-trabzon': TRABZON_MERKEZ_SNAPSHOT,
+  ganita: TRABZON_MERKEZ_SNAPSHOT,
+  faroz: TRABZON_MERKEZ_SNAPSHOT,
+  besirli: TRABZON_MERKEZ_SNAPSHOT,
+  'besirli-trabzon': TRABZON_MERKEZ_SNAPSHOT,
+  'kalkinma-trabzon': TRABZON_MERKEZ_SNAPSHOT,
+  'konaklar-trabzon': TRABZON_MERKEZ_SNAPSHOT,
+  'degirmendere-trabzon': TRABZON_MERKEZ_SNAPSHOT,
+  yalincak: TRABZON_MERKEZ_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {
