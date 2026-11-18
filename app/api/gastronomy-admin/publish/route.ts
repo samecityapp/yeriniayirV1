@@ -1,4 +1,4 @@
-import {revalidateTag} from 'next/cache';
+import {revalidatePath,revalidateTag} from 'next/cache';
 import {cloudAdmin,PRIVATE_HEADERS,sameOrigin} from '@/lib/cloud/auth';
 import {publicationChange} from '@/lib/cloud/contracts';
 import {invalidateCloudPublication} from '@/lib/cloud/publication';
@@ -11,6 +11,6 @@ export async function POST(request:Request){
   const result=await admin.client.rpc('ya_publish_order',{p_scope:p.scope,p_expected:p.expectedRevision,p_order:p.order,p_reason:p.reason});
   if(result.error){const status=result.error.code==='PT409'?409:result.error.code==='42501'?403:result.error.code==='P0001'?400:503;
    return Response.json({error:'Değişiklik doğrulanamadı; güncel sürümü yeniden yükleyin.'},{status,headers:PRIVATE_HEADERS});}
-  invalidateCloudPublication();revalidateTag('ya-publication');return Response.json({revision:result.data},{headers:PRIVATE_HEADERS});
+  invalidateCloudPublication();revalidateTag('ya-publication');revalidatePath('/tr');revalidatePath('/en');revalidatePath('/api/gastronomy/regions/moda');return Response.json({revision:result.data},{headers:PRIVATE_HEADERS});
  }catch{return Response.json({error:'İşlem tamamlanamadı.'},{status:503,headers:PRIVATE_HEADERS});}
 }

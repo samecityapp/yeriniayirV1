@@ -25,7 +25,7 @@ import { formatCurrency } from '@/lib/utils';
 
 import LocationCard from '@/components/hotel/LocationCard';
 
-export const revalidate = 0;
+export const revalidate = 3600;
 
 import { LOCATIONS } from '@/lib/constants';
 import { LocationListingView } from '@/components/hotel/LocationListingView';

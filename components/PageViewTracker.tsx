@@ -1,47 +1,56 @@
 'use client';
 
 import { useEffect } from 'react';
-import { usePathname, useSearchParams } from 'next/navigation';
+import { usePathname } from 'next/navigation';
+
+const HOTEL_DETAIL_UUID_REGEX =
+  /^\/(?:tr|en|el)\/(?:otel|hotel)\/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})(?:\/|$)/i;
+
+const trackedHotelsInMemory = new Set<string>();
 
 export function PageViewTracker() {
-    const pathname = usePathname();
-    const searchParams = useSearchParams();
+  const pathname = usePathname();
 
-    useEffect(() => {
-        // Only track hotel detail pages for now, as the dashboard focuses on hotels
-        // Route format: /otel/[id]
-        // Or if we want to track all pages, we can do that too, but dashboard looks for 'page_view'
+  useEffect(() => {
+    if (!pathname) return;
 
-        // Let's track everything but identify hotel_id if present
-        const trackPage = async () => {
-            let hotelId = null;
+    const match = pathname.match(HOTEL_DETAIL_UUID_REGEX);
+    if (!match) return;
 
-            // Extract hotel ID from URL if possible
-            const match = pathname?.match(/\/otel\/([^/]+)/);
-            if (match) {
-                hotelId = match[1];
-            }
+    const hotelId = match[1].toLowerCase();
+    const storageKey = `ya_pv_tracked:${hotelId}`;
 
-            try {
-                await fetch('/api/track-event', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        event_type: 'page_view',
-                        hotel_id: hotelId, // Can be null if it's homepage or search
-                        metadata: {
-                            path: pathname,
-                            search: searchParams?.toString(),
-                        }
-                    })
-                });
-            } catch (err) {
-                console.error('Failed to track page view:', err);
-            }
-        };
+    if (trackedHotelsInMemory.has(hotelId)) {
+      return;
+    }
 
-        trackPage();
-    }, [pathname, searchParams]);
+    try {
+      if (window.sessionStorage.getItem(storageKey) === '1') {
+        trackedHotelsInMemory.add(hotelId);
+        return;
+      }
+      window.sessionStorage.setItem(storageKey, '1');
+    } catch {
+      // sessionStorage may be blocked in restricted contexts; in-memory Set still guards StrictMode
+    }
 
-    return null;
+    trackedHotelsInMemory.add(hotelId);
+
+    void fetch('/api/track-event', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      keepalive: true,
+      body: JSON.stringify({
+        event_type: 'page_view',
+        hotel_id: hotelId,
+        metadata: {
+          path: pathname,
+        },
+      }),
+    }).catch(() => {
+      // Analytics failures must never disrupt visitor navigation
+    });
+  }, [pathname]);
+
+  return null;
 }
