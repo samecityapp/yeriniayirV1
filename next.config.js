@@ -1,33 +1,40 @@
-const PRODUCTION_SUPABASE_HOSTS = new Set([
-  'jerkkxwgddujigsbeqwo.supabase.co',
-  'aknhkpevrlpsrfxzqtop.supabase.co',
-]);
+const policy = require('./lib/security/supabase-policy');
 
-function isProductionSupabaseHost(rawUrl) {
-  if (!rawUrl || typeof rawUrl !== 'string') return false;
+function resolveBuildSupabaseEnv(env) {
+  const explicitlyProduction =
+    env.APP_ENVIRONMENT === 'production' || env.VERCEL_ENV === 'production';
+
+  if (explicitlyProduction) {
+    const buildTarget = policy.configuration(env);
+    if (policy.authMode(env) !== 'supabase') {
+      throw new Error('Production build requires GASTRONOMY_AUTH_MODE=supabase');
+    }
+    return {
+      NEXT_PUBLIC_SUPABASE_POLICY: JSON.stringify(buildTarget),
+    };
+  }
+
   try {
-    return PRODUCTION_SUPABASE_HOSTS.has(new URL(rawUrl.trim()).hostname.toLowerCase());
+    const buildTarget = policy.configuration(env);
+    policy.authMode(env);
+    return {
+      NEXT_PUBLIC_SUPABASE_POLICY: JSON.stringify(buildTarget),
+    };
   } catch {
-    return false;
+    return {
+      NEXT_PUBLIC_SUPABASE_POLICY: 'ISOLATED',
+      NEXT_PUBLIC_SUPABASE_URL: 'https://isolated-preview-blocked.invalid',
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: 'isolated-preview-blocked-anon-key',
+    };
   }
 }
 
-const isNonProdBuild =
-  process.env.VERCEL_ENV === 'preview' ||
-  process.env.VERCEL_ENV === 'development' ||
-  process.env.APP_ENVIRONMENT === 'staging' ||
-  process.env.GASTRONOMY_CLOUD_ENV === 'staging';
+const buildPolicyEnv = resolveBuildSupabaseEnv(process.env);
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  ...(isNonProdBuild && isProductionSupabaseHost(process.env.NEXT_PUBLIC_SUPABASE_URL)
-    ? {
-        env: {
-          NEXT_PUBLIC_SUPABASE_URL: 'https://isolated-preview-blocked.invalid',
-          NEXT_PUBLIC_SUPABASE_ANON_KEY: 'isolated-preview-blocked-anon-key',
-        },
-      }
-    : {}),
+  ...(process.env.NEXT_DIST_DIR ? { distDir: process.env.NEXT_DIST_DIR } : {}),
+  env: buildPolicyEnv,
   webpack(config, {isServer}) {
     if (!isServer && process.env.PERFORMANCE_ANALYZE === '1') {
       config.plugins.push({apply(compiler) {compiler.hooks.done.tap('LocalPerformanceStats', stats => {

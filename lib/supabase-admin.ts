@@ -1,49 +1,60 @@
 import { createClient } from '@supabase/supabase-js';
-import {
-  ISOLATED_PREVIEW_SENTINEL_URL,
-  createBlockedSupabaseFetch,
-  isNonProductionRuntime,
-  isProductionSupabaseUrl,
-} from './supabase-env-guard';
+import { serviceRoleKey, target, type Target } from './security/supabase-policy';
+import { createBlockedSupabaseFetch, validatedSupabaseTarget } from './supabase-env-guard';
 
 // Prevent accidental client-side bundle exposure
 if (typeof window !== 'undefined') {
   throw new Error('SECURITY VIOLATION: lib/supabase-admin.ts must never be imported in client components.');
 }
 
-const rawUrl = process.env.NEXT_PUBLIC_SUPABASE_URL?.trim() || '';
-const rawServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY?.trim() || '';
+const rawUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const rawServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY?.trim();
 
-export const isServiceRoleBlockedByIsolation =
-  isNonProductionRuntime() &&
-  (isProductionSupabaseUrl(rawUrl) || rawUrl === ISOLATED_PREVIEW_SENTINEL_URL);
+let approvedTarget: Target | undefined;
+let validatedServiceKey: string | undefined;
 
-export const hasServiceRoleKey =
-  Boolean(rawServiceRoleKey) &&
-  Boolean(rawUrl) &&
-  !isServiceRoleBlockedByIsolation &&
-  rawUrl !== ISOLATED_PREVIEW_SENTINEL_URL;
-
-export function assertSupabaseAdminReady(): void {
-  if (isServiceRoleBlockedByIsolation || rawUrl === ISOLATED_PREVIEW_SENTINEL_URL) {
-    throw new Error(
-      'SECURITY BLOCK: Non-production environment cannot use service_role against production Supabase.'
-    );
-  }
-  if (!hasServiceRoleKey) {
-    throw new Error('SUPABASE_SERVICE_ROLE_KEY is not configured.');
-  }
+try {
+  const candidate = validatedSupabaseTarget();
+  validatedServiceKey = serviceRoleKey(rawServiceRoleKey, candidate.ref, candidate.environment);
+  approvedTarget = candidate;
+} catch {
+  // Disabled fail-closed: zero sockets will be opened.
 }
 
-const blockReason =
-  isServiceRoleBlockedByIsolation || rawUrl === ISOLATED_PREVIEW_SENTINEL_URL
-    ? 'Non-production environment is blocked from using service_role against production Supabase.'
-    : 'SUPABASE_SERVICE_ROLE_KEY is not configured; fail-closed admin client refused request.';
+export const isServiceRoleBlockedByIsolation = !approvedTarget;
 
-// This client bypasses RLS policies when configured in an authorized server runtime.
+export const hasServiceRoleKey = Boolean(approvedTarget && validatedServiceKey);
+
+export function validatedAdminTarget(): Target {
+  const current = validatedSupabaseTarget();
+  const currentUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const currentServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY?.trim();
+  if (
+    !hasServiceRoleKey ||
+    !approvedTarget ||
+    approvedTarget.url !== current.url ||
+    approvedTarget.ref !== current.ref ||
+    approvedTarget.environment !== current.environment ||
+    target(currentUrl, current.environment).url !== current.url
+  ) {
+    throw new Error('SECURITY BLOCK: Supabase admin configuration unavailable or mismatched.');
+  }
+  serviceRoleKey(currentServiceKey, current.ref, current.environment);
+  return current;
+}
+
+export function assertSupabaseAdminReady(): void {
+  validatedAdminTarget();
+}
+
+const blockReason = isServiceRoleBlockedByIsolation
+  ? 'Supabase environment isolation rejected privileged admin access.'
+  : 'SUPABASE_SERVICE_ROLE_KEY is invalid or missing; fail-closed admin client refused request.';
+
+// This client bypasses RLS policies only when configured in an authorized server runtime.
 // Never fall back to NEXT_PUBLIC_SUPABASE_ANON_KEY and never open sockets when disabled or isolated.
 export const supabaseAdmin = hasServiceRoleKey
-  ? createClient(rawUrl, rawServiceRoleKey, {
+  ? createClient(approvedTarget!.url, validatedServiceKey!, {
       auth: {
         autoRefreshToken: false,
         persistSession: false,

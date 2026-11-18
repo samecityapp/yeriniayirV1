@@ -1,17 +1,33 @@
-if(typeof window!=='undefined')throw new Error('Server module');
-export function cloudConfig(){
- const url=process.env.GASTRONOMY_SUPABASE_URL||'',key=process.env.GASTRONOMY_SUPABASE_ANON_KEY||'';
- const ref=process.env.GASTRONOMY_SUPABASE_REF||'';
- const env=process.env.GASTRONOMY_CLOUD_ENV||'';
- const u=new URL(url);
- if(!key||!ref||u.protocol!=='https:'||u.hostname!==ref+'.supabase.co'||u.pathname!=='/'||u.username||u.password||u.search||u.hash)throw new Error('Cloud configuration unavailable');
- // Production activation requires explicit two-key authorization, never accidental runtime activation.
- if(ref==='jerkkxwgddujigsbeqwo'||ref==='aknhkpevrlpsrfxzqtop'){
-  if(env!=='production'||process.env.GASTRONOMY_PRODUCTION_AUTHORIZED!=='1'||process.env.VERCEL_ENV==='preview'||process.env.VERCEL_ENV==='development'||process.env.APP_ENVIRONMENT==='staging'){
-   throw new Error('Production cloud activation requires explicit authorization');
+import { authMode, publicKey, target } from '../security/supabase-policy';
+import { validatedSupabaseTarget } from '../supabase-env-guard';
+
+if (typeof window !== 'undefined') throw new Error('Server module');
+
+export function cloudConfig() {
+  if (authMode(process.env) !== 'supabase') {
+    throw new Error('Cloud auth mode required');
   }
- } else {
-  if(env!=='staging')throw new Error('Isolated cloud environment required');
- }
- return {url:u.origin,key,ref};
+  const destination = validatedSupabaseTarget();
+  const auth = target(process.env.GASTRONOMY_SUPABASE_URL, destination.environment);
+  const expectedEnv =
+    destination.environment === 'production'
+      ? 'production'
+      : destination.ref === 'local'
+        ? 'local'
+        : 'staging';
+  if (
+    process.env.GASTRONOMY_CLOUD_ENV !== expectedEnv ||
+    auth.url !== destination.url ||
+    auth.ref !== process.env.GASTRONOMY_SUPABASE_REF ||
+    (destination.environment === 'production' &&
+      process.env.GASTRONOMY_PRODUCTION_AUTHORIZED !== '1')
+  ) {
+    throw new Error('Cloud auth/data trust boundary rejected');
+  }
+  return {
+    url: auth.url,
+    key: publicKey(process.env.GASTRONOMY_SUPABASE_ANON_KEY),
+    ref: auth.ref,
+    environment: destination.environment,
+  };
 }

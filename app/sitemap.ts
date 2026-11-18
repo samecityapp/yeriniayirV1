@@ -1,6 +1,8 @@
 import { MetadataRoute } from 'next';
 import { db } from '@/lib/db';
 
+export const revalidate = 3600;
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const TR_DOMAIN = 'https://www.yeriniayir.com';
   const EN_DOMAIN = 'https://www.worldandhotels.com';
@@ -93,6 +95,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...locationUrls,
   ];
   } catch (error) {
+    if ((error as { digest?: string })?.digest === 'DYNAMIC_SERVER_USAGE') {
+      throw error;
+    }
     console.warn('Sitemap fallback triggered during build:', error);
     return [
       {

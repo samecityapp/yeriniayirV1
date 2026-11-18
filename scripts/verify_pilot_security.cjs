@@ -21,14 +21,38 @@ function load(relative) {
   cache.set(filename, module);
   const localRequire = createRequire(filename);
   const output = ts.transpileModule(fs.readFileSync(filename, 'utf8'), {
-    compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020, jsx: ts.JsxEmit.ReactJSX },
+    compilerOptions: {
+      module: ts.ModuleKind.CommonJS,
+      target: ts.ScriptTarget.ES2020,
+      esModuleInterop: true,
+      ...(filename.endsWith('.tsx') ? { jsx: ts.JsxEmit.ReactJSX } : {}),
+    },
   }).outputText;
   function scopedRequire(id) {
     if (id === 'next/headers') return { headers: () => new Headers(pageAuthorization ? { authorization: pageAuthorization } : {}) };
     if (id === './PilotClient') return { __esModule: true, default: () => null };
     if (id === '@upstash/redis') return { Redis: class {} };
     if (id === '@upstash/ratelimit') return { Ratelimit: class { static slidingWindow() {} } };
-    if (id.startsWith('@/')) return load(id.slice(2) + '.ts');
+    if (id.startsWith('@/')) {
+      const target = path.join(root, id.slice(2));
+      for (const cand of [target, `${target}.ts`, `${target}.tsx`, `${target}.js`]) {
+        if (fs.existsSync(cand) && fs.statSync(cand).isFile()) {
+          return cand.endsWith('.ts') || cand.endsWith('.tsx')
+            ? load(path.relative(root, cand))
+            : localRequire(cand);
+        }
+      }
+    }
+    if (id.startsWith('./') || id.startsWith('../')) {
+      const target = path.resolve(path.dirname(filename), id);
+      for (const cand of [target, `${target}.ts`, `${target}.tsx`, `${target}.js`]) {
+        if (fs.existsSync(cand) && fs.statSync(cand).isFile()) {
+          return cand.endsWith('.ts') || cand.endsWith('.tsx')
+            ? load(path.relative(root, cand))
+            : localRequire(cand);
+        }
+      }
+    }
     return localRequire(id);
   }
   new Function('require', 'module', 'exports', output)(scopedRequire, module, module.exports);
@@ -47,6 +71,8 @@ function request(url, { authorization = basic(), origin = 'http://localhost:3000
 }
 async function main() {
   process.env.NODE_ENV = 'test';
+  process.env.APP_ENVIRONMENT = 'test';
+  process.env.GASTRONOMY_AUTH_MODE = 'basic';
   process.env.ADMIN_USER = 'pilot-admin';
   process.env.ADMIN_PASSWORD = 'test-only-secret:with-colon';
   global.fetch = () => { throw new Error('Outbound network forbidden in security tests'); };

@@ -1,11 +1,24 @@
 import { assertValidOfferAdminCapability, OfferAdminCapability } from './admin/offerAdminGuard';
 import { isSupabaseIsolated, supabase } from './supabase';
-import { assertSupabaseAdminReady, supabaseAdmin } from './supabase-admin';
+import { assertSupabaseAdminReady, supabaseAdmin, validatedAdminTarget } from './supabase-admin';
 import { Offer } from './types';
 
 const PUBLIC_SLUG_REGEX = /^[A-Za-z0-9_-]{1,120}$/;
 const ADMIN_SLUG_REGEX = /^[a-z0-9][a-z0-9_-]{0,119}$/;
 const UUID_REGEX = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
+function assertAdminCapabilityMatchesWriteTarget(capability: OfferAdminCapability): void {
+  assertValidOfferAdminCapability(capability);
+  assertSupabaseAdminReady();
+  const writeTarget = validatedAdminTarget();
+  if (
+    capability.targetUrl !== writeTarget.url ||
+    capability.projectRef !== writeTarget.ref ||
+    capability.environment !== writeTarget.environment
+  ) {
+    throw new Error('SECURITY VIOLATION: Offer admin capability does not match write target.');
+  }
+}
 
 function pickOfferFields(
   input: Partial<Omit<Offer, 'id' | 'created_at' | 'updated_at'>>
@@ -23,8 +36,7 @@ function pickOfferFields(
 
 export const offers = {
   async getAll(capability: OfferAdminCapability): Promise<Offer[]> {
-    assertValidOfferAdminCapability(capability);
-    assertSupabaseAdminReady();
+    assertAdminCapabilityMatchesWriteTarget(capability);
 
     try {
       const { data, error } = await supabaseAdmin
@@ -63,12 +75,16 @@ export const offers = {
           return data[0];
         }
       } catch (e) {
-        console.error('Error fetching offer, using fallback check:', e);
+        console.error('Error fetching offer:', e);
       }
     }
 
-    // FALLBACK MOCK DATA FOR SPECIFIC SLUG
-    if (slug === 'luvicavehotel-teklif') {
+    // Legacy demo fallback only when explicitly enabled in isolated local development.
+    if (
+      slug === 'luvicavehotel-teklif' &&
+      process.env.ALLOW_DEMO_OFFER_FALLBACK === '1' &&
+      process.env.APP_ENVIRONMENT === 'development'
+    ) {
       return {
         id: 'mock-luvi',
         slug: 'luvicavehotel-teklif',
@@ -99,8 +115,7 @@ export const offers = {
     capability: OfferAdminCapability,
     offer: Omit<Offer, 'id' | 'created_at' | 'updated_at'>
   ): Promise<Offer> {
-    assertValidOfferAdminCapability(capability);
-    assertSupabaseAdminReady();
+    assertAdminCapabilityMatchesWriteTarget(capability);
 
     if (!offer.slug || !ADMIN_SLUG_REGEX.test(offer.slug)) {
       throw new Error('Invalid offer slug');
@@ -121,9 +136,8 @@ export const offers = {
     capability: OfferAdminCapability,
     id: string,
     updates: Partial<Offer>
-  ): Promise<Offer> {
-    assertValidOfferAdminCapability(capability);
-    assertSupabaseAdminReady();
+  ): Promise<{ offer: Offer; previousSlug: string }> {
+    assertAdminCapabilityMatchesWriteTarget(capability);
 
     if (!id || !UUID_REGEX.test(id)) {
       throw new Error('Invalid offer id');
@@ -132,6 +146,9 @@ export const offers = {
     if (updates.slug !== undefined && !ADMIN_SLUG_REGEX.test(updates.slug)) {
       throw new Error('Invalid offer slug');
     }
+
+    const previous = await supabaseAdmin.from('offers').select('slug').eq('id', id).single();
+    if (previous.error) throw previous.error;
 
     const sanitizedUpdates = pickOfferFields(updates);
     const { data, error } = await supabaseAdmin
@@ -142,22 +159,24 @@ export const offers = {
       .single();
 
     if (error) throw error;
-    return data;
+    return { offer: data, previousSlug: previous.data.slug };
   },
 
-  async delete(capability: OfferAdminCapability, id: string): Promise<void> {
-    assertValidOfferAdminCapability(capability);
-    assertSupabaseAdminReady();
+  async delete(capability: OfferAdminCapability, id: string): Promise<string | null> {
+    assertAdminCapabilityMatchesWriteTarget(capability);
 
     if (!id || !UUID_REGEX.test(id)) {
       throw new Error('Invalid offer id');
     }
 
-    const { error } = await supabaseAdmin
+    const { data, error } = await supabaseAdmin
       .from('offers')
       .delete()
-      .eq('id', id);
+      .eq('id', id)
+      .select('slug')
+      .maybeSingle();
 
     if (error) throw error;
+    return data?.slug ?? null;
   },
 };

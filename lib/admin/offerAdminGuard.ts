@@ -1,19 +1,25 @@
 import { cookies, headers } from 'next/headers';
-import { ADMIN_COOKIE } from '@/lib/cloud/auth';
 import { cloudClient } from '@/lib/cloud/client';
+import { cloudConfig } from '@/lib/cloud/config';
 import { checkPilotAdmin } from '@/lib/pilot/adminAuth';
+import { authMode, hasValidCloudAdminJwtClaims } from '@/lib/pilot/securityPolicy';
+import { validatedSupabaseTarget } from '@/lib/supabase-env-guard';
 
 if (typeof window !== 'undefined') {
   throw new Error('SECURITY VIOLATION: lib/admin/offerAdminGuard.ts must never be imported in client components.');
 }
 
 const OFFER_ADMIN_CAPABILITY = Symbol('OfferAdminCapability');
+const ADMIN_COOKIE = 'ya_cloud_admin';
 const PENDING_COOKIE = 'ya_cloud_pending';
 
 export interface OfferAdminCapability {
   readonly [OFFER_ADMIN_CAPABILITY]: true;
   readonly mode: 'cloud_mfa' | 'pilot_basic';
   readonly userId?: string;
+  readonly targetUrl: string;
+  readonly environment: string;
+  readonly projectRef: string;
 }
 
 export type OfferAdminGuardResult =
@@ -27,6 +33,23 @@ export function assertValidOfferAdminCapability(cap: unknown): asserts cap is Of
     (cap as Record<symbol, unknown>)[OFFER_ADMIN_CAPABILITY] !== true
   ) {
     throw new Error('SECURITY VIOLATION: Validated admin capability is required.');
+  }
+
+  const current = validatedSupabaseTarget();
+  const currentMode = authMode(process.env);
+  const checked = cap as OfferAdminCapability;
+
+  if (
+    checked.targetUrl !== current.url ||
+    checked.environment !== current.environment ||
+    checked.projectRef !== current.ref ||
+    checked.mode !== (currentMode === 'supabase' ? 'cloud_mfa' : 'pilot_basic')
+  ) {
+    throw new Error('SECURITY VIOLATION: Capability target mismatch');
+  }
+
+  if (checked.mode === 'cloud_mfa') {
+    cloudConfig();
   }
 }
 
@@ -99,7 +122,28 @@ export async function verifyOfferAdminRequest(options: {
     };
   }
 
-  if (process.env.GASTRONOMY_AUTH_MODE === 'supabase') {
+  let mode: 'basic' | 'supabase';
+  let binding: { targetUrl: string; environment: string; projectRef: string };
+  try {
+    mode = authMode(process.env);
+    const destination = validatedSupabaseTarget();
+    binding = {
+      targetUrl: destination.url,
+      environment: destination.environment,
+      projectRef: destination.ref,
+    };
+    if (mode === 'supabase') {
+      cloudConfig();
+    }
+  } catch {
+    return {
+      ok: false,
+      status: 503,
+      error: 'Admin configuration unavailable',
+    };
+  }
+
+  if (mode === 'supabase') {
     if (!cookieToken) {
       if (hasNonAdminUserSessionSignals(requestHeaders, pendingCookieToken)) {
         return {
@@ -112,6 +156,18 @@ export async function verifyOfferAdminRequest(options: {
         ok: false,
         status: 401,
         error: 'Unauthorized',
+      };
+    }
+
+    const requireJwt =
+      binding.environment === 'production' ||
+      binding.environment === 'staging' ||
+      binding.environment === 'preview';
+    if (!hasValidCloudAdminJwtClaims(cookieToken, binding.targetUrl, requireJwt)) {
+      return {
+        ok: false,
+        status: 403,
+        error: 'Forbidden: MFA aal2 admin session required',
       };
     }
 
@@ -137,11 +193,12 @@ export async function verifyOfferAdminRequest(options: {
 
       return {
         ok: true,
-        capability: {
-          [OFFER_ADMIN_CAPABILITY]: true,
-          mode: 'cloud_mfa',
+        capability: Object.freeze({
+          [OFFER_ADMIN_CAPABILITY]: true as const,
+          ...binding,
+          mode: 'cloud_mfa' as const,
           userId: data.user.id,
-        },
+        }),
       };
     } catch {
       return {
@@ -186,10 +243,11 @@ export async function verifyOfferAdminRequest(options: {
 
   return {
     ok: true,
-    capability: {
-      [OFFER_ADMIN_CAPABILITY]: true,
-      mode: 'pilot_basic',
-    },
+    capability: Object.freeze({
+      [OFFER_ADMIN_CAPABILITY]: true as const,
+      ...binding,
+      mode: 'pilot_basic' as const,
+    }),
   };
 }
 

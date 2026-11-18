@@ -1,9 +1,11 @@
+import { authMode } from './securityPolicy';
+
 // Server/Edge-only: never import into a client component.
 export type PilotAdminAuthResult = { ok: true } | { ok: false; status: 401 | 503 };
 
 export const PILOT_PRIVATE_HEADERS = {
   'Cache-Control': 'private, no-store, max-age=0',
-  'Vary': 'Authorization',
+  Vary: 'Authorization',
 };
 
 // Compare fixed-size digests without short-circuiting on credential characters.
@@ -21,8 +23,15 @@ async function credentialsMatch(actual: string, expected: string): Promise<boole
 }
 
 export async function checkPilotAdmin(authorization: string | null): Promise<PilotAdminAuthResult> {
-  // Cloud activation retires legacy Basic access; no shared-password route may bypass MFA.
-  if(process.env.GASTRONOMY_AUTH_MODE==='supabase')return {ok:false,status:503};
+  // Auth mode is mandatory and fails closed; cloud/staging modes never accept legacy Basic auth.
+  let mode: 'basic' | 'supabase';
+  try {
+    mode = authMode(process.env);
+  } catch {
+    return { ok: false, status: 503 };
+  }
+  if (mode !== 'basic') return { ok: false, status: 503 };
+
   const password = process.env.ADMIN_PASSWORD?.trim();
   if (!password) return { ok: false, status: 503 };
   const username = process.env.ADMIN_USER?.trim() || 'admin';

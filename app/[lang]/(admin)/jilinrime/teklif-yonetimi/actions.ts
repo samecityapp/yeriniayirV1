@@ -6,6 +6,8 @@ import { requireOfferAdminAccess } from '@/lib/admin/offerAdminGuard';
 import { offers } from '@/lib/offers';
 import { IncludedItem } from '@/lib/types';
 
+const SUPPORTED_OFFER_LOCALES = ['tr', 'en', 'el'] as const;
+
 const IncludedItemSchema = z
   .object({
     id: z.string().trim().min(1).max(80),
@@ -81,6 +83,20 @@ function parseOfferFormData(
   return { ok: true, data: parsed.data };
 }
 
+function revalidateOfferUrls(...slugs: Array<string | null | undefined>) {
+  const uniqueSlugs = Array.from(
+    new Set(
+      slugs.filter((slug): slug is string => typeof slug === 'string' && slug.trim().length > 0)
+    )
+  );
+  for (const lang of SUPPORTED_OFFER_LOCALES) {
+    revalidatePath(`/${lang}/jilinrime/teklif-yonetimi`, 'page');
+    for (const slug of uniqueSlugs) {
+      revalidatePath(`/${lang}/${slug}`, 'page');
+    }
+  }
+}
+
 export async function createOffer(data: FormData) {
   const auth = await requireOfferAdminAccess({ requireSameOrigin: true });
   if (!auth.ok) {
@@ -93,12 +109,8 @@ export async function createOffer(data: FormData) {
   }
 
   try {
-    await offers.create(auth.capability, parsed.data);
-
-    revalidatePath('/[lang]/(admin)/jilinrime/teklif-yonetimi');
-    revalidatePath(`/tr/${parsed.data.slug}`);
-    revalidatePath(`/en/${parsed.data.slug}`);
-
+    const created = await offers.create(auth.capability, parsed.data);
+    revalidateOfferUrls(created?.slug ?? parsed.data.slug);
     return { success: true };
   } catch (error: unknown) {
     console.error('Create Offer Error:', error);
@@ -135,12 +147,8 @@ export async function updateOffer(id: string, data: FormData) {
   }
 
   try {
-    await offers.update(auth.capability, parsedId.data, parsed.data);
-
-    revalidatePath('/[lang]/(admin)/jilinrime/teklif-yonetimi');
-    revalidatePath(`/tr/${parsed.data.slug}`);
-    revalidatePath(`/en/${parsed.data.slug}`);
-
+    const { offer, previousSlug } = await offers.update(auth.capability, parsedId.data, parsed.data);
+    revalidateOfferUrls(previousSlug, offer?.slug ?? parsed.data.slug);
     return { success: true };
   } catch (error: unknown) {
     console.error('Update Offer Error:', error);
@@ -168,8 +176,8 @@ export async function deleteOffer(id: string) {
   }
 
   try {
-    await offers.delete(auth.capability, parsedId.data);
-    revalidatePath('/[lang]/(admin)/jilinrime/teklif-yonetimi');
+    const deletedSlug = await offers.delete(auth.capability, parsedId.data);
+    revalidateOfferUrls(deletedSlug);
     return { success: true };
   } catch (error: unknown) {
     console.error('Delete Offer Error:', error);
