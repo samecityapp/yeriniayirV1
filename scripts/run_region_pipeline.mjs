@@ -97,6 +97,7 @@ const PUBLISHED_REGION_KEYS = [
   'canakkale-merkez',
   'edirne-merkez',
   'eskisehir-merkez',
+  'denizli-merkez',
 ];
 const NEARBY_POOL_KEY = 'istanbul-kadikoy-nearby-pool';
 const DEFAULT_REGION_ORDER = [...PUBLISHED_REGION_KEYS, NEARBY_POOL_KEY];

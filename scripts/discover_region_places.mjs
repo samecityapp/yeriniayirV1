@@ -82,7 +82,7 @@ function printStats(cache) {
   );
 }
 
-async function discoverByQuery({ textQuery, center, radius, apiKey, cache, budget, forceRefresh }) {
+async function discoverByQuery({ textQuery, center, radius, apiKey, cache, budget, forceRefresh, confirmPaidSearch }) {
   const centerKey = center ? `${center.lat.toFixed(4)},${center.lng.toFixed(4)}:r${radius}` : 'global';
   const discoverKey = `discover::${centerKey}::${textQuery}`;
   if (!forceRefresh && Array.isArray(cache.byQuery[discoverKey]?.placeIds)) {
@@ -91,6 +91,12 @@ async function discoverByQuery({ textQuery, center, radius, apiKey, cache, budge
       .map((id) => cache.byPlaceId[id]?.payload)
       .filter(Boolean);
     return { source: 'cache', places: cachedPlaces };
+  }
+  const usage = getMonthUsage(cache);
+  if (usage.searchEnterprise >= FREE_MONTHLY_CAPS.searchEnterprise && !confirmPaidSearch) {
+    throw new Error(
+      `QUOTA_GUARD: Aylık ücretsiz ${FREE_MONTHLY_CAPS.searchEnterprise} Text Search Enterprise kotası doldu (${usage.searchEnterprise}/${FREE_MONTHLY_CAPS.searchEnterprise}). Ücretsiz IDs-Only çözümleme (--resolve="...") veya --ids="..." kullanın.`
+    );
   }
   if (!apiKey) {
     throw new Error('GOOGLE_PLACES_API_KEY is missing in .env.local or environment.');
@@ -141,6 +147,51 @@ async function discoverByQuery({ textQuery, center, radius, apiKey, cache, budge
   budget.networkFetches += 1;
   recordSkuUsage(cache, 'searchEnterprise', 1);
   return { source: 'live', places };
+}
+
+async function resolvePlaceIdsOnly({ textQuery, center, radius, resolveLimit, apiKey, cache, budget, forceRefresh }) {
+  const centerKey = center ? `${center.lat.toFixed(4)},${center.lng.toFixed(4)}:r${radius}` : 'global';
+  const idsKey = `idsOnly::${centerKey}::n${resolveLimit}::${textQuery}`;
+  if (!forceRefresh && Array.isArray(cache.byQuery[idsKey]?.placeIds)) {
+    return { source: 'cache', placeIds: cache.byQuery[idsKey].placeIds };
+  }
+  if (!apiKey) {
+    throw new Error('GOOGLE_PLACES_API_KEY is missing in .env.local or environment.');
+  }
+
+  const body = {
+    textQuery,
+    languageCode: 'tr',
+    regionCode: 'TR',
+    pageSize: resolveLimit,
+  };
+  if (center) {
+    body.locationBias = {
+      circle: {
+        center: { latitude: center.lat, longitude: center.lng },
+        radius,
+      },
+    };
+  }
+
+  const res = await fetch('https://places.googleapis.com/v1/places:searchText', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'X-Goog-Api-Key': apiKey,
+      'X-Goog-FieldMask': 'places.id',
+    },
+    body: JSON.stringify(body),
+  });
+  if (!res.ok) {
+    const errText = await res.text();
+    throw new Error(`Google Places IDs-Only "${textQuery}" failed (${res.status}): ${errText}`);
+  }
+  const data = await res.json();
+  const placeIds = (Array.isArray(data.places) ? data.places : []).map((p) => p?.id).filter(Boolean);
+  cache.byQuery[idsKey] = { fetchedAt: new Date().toISOString(), placeIds };
+  budget.idsOnlyFetches = (budget.idsOnlyFetches || 0) + 1;
+  return { source: 'live', placeIds };
 }
 
 async function discoverById({ placeId, apiKey, cache, budget, forceRefresh }) {
@@ -208,14 +259,17 @@ async function main() {
   const args = process.argv.slice(2);
   const showStats = args.includes('--stats');
   const forceRefresh = args.includes('--refresh');
+  const confirmPaidSearch = args.includes('--confirm-paid-search');
   const queries = [
     ...splitCsv(parseStringFlag(args, 'queries')),
     ...parseRepeatableFlag(args, 'query'),
   ];
+  const resolves = parseRepeatableFlag(args, 'resolve');
   const ids = splitCsv(parseStringFlag(args, 'ids'));
   const reviewIds = splitCsv(parseStringFlag(args, 'reviews'));
   const center = parseCenterFlag(parseStringFlag(args, 'center'));
   const radius = Math.min(50000, Math.max(100, parseNumericFlag(args, 'radius', 2500)));
+  const resolveLimit = Math.min(10, Math.max(1, parseNumericFlag(args, 'resolve-limit', 2)));
   const maxFetches = parseNumericFlag(args, 'max-fetches', 25);
 
   if (reviewIds.length > MAX_REVIEW_IDS_PER_RUN) {
@@ -225,14 +279,14 @@ async function main() {
   }
 
   const cache = loadPlacesCache();
-  if (showStats && queries.length === 0 && ids.length === 0 && reviewIds.length === 0) {
+  if (showStats && queries.length === 0 && resolves.length === 0 && ids.length === 0 && reviewIds.length === 0) {
     printStats(cache);
     return;
   }
 
-  if (queries.length === 0 && ids.length === 0 && reviewIds.length === 0) {
+  if (queries.length === 0 && resolves.length === 0 && ids.length === 0 && reviewIds.length === 0) {
     console.error(
-      'Kullanım: node scripts/discover_region_places.mjs [--stats] [--queries="q1,q2" --center="lat,lng" --radius=2500] [--ids="id1,id2"] [--reviews="id1,id2"] [--max-fetches=25] [--refresh]'
+      'Kullanım: node scripts/discover_region_places.mjs [--stats] [--queries="q1,q2" --center="lat,lng" --radius=2500] [--resolve="isim"] [--ids="id1,id2"] [--reviews="id1,id2"] [--max-fetches=25] [--refresh]'
     );
     process.exit(1);
   }
@@ -242,6 +296,7 @@ async function main() {
   const budget = {
     cacheHits: 0,
     networkFetches: 0,
+    idsOnlyFetches: 0,
     reservedFetches: 0,
     maxFetches,
   };
@@ -256,10 +311,29 @@ async function main() {
         cache,
         budget,
         forceRefresh,
+        confirmPaidSearch,
       });
       console.log(`\n[QUERY:${result.source}] "${textQuery}" -> ${result.places.length} mekan`);
       for (const place of result.places) {
         console.log(`  - ${formatPlaceRow(place)}`);
+      }
+    }
+
+    for (const textQuery of resolves) {
+      const resolved = await resolvePlaceIdsOnly({
+        textQuery,
+        center,
+        radius,
+        resolveLimit,
+        apiKey,
+        cache,
+        budget,
+        forceRefresh,
+      });
+      console.log(`\n[RESOLVE_IDS:${resolved.source}] "${textQuery}" -> ${resolved.placeIds.length} id`);
+      for (const placeId of resolved.placeIds) {
+        const result = await discoverById({ placeId, apiKey, cache, budget, forceRefresh });
+        console.log(`  - [DETAIL:${result.source}] ${formatPlaceRow(result.place)}`);
       }
     }
 
@@ -280,7 +354,7 @@ async function main() {
       }
     }
   } finally {
-    if (budget.networkFetches > 0) {
+    if (budget.networkFetches > 0 || budget.idsOnlyFetches > 0) {
       savePlacesCache(cache);
     }
   }
@@ -292,7 +366,7 @@ async function main() {
     const monthKey = getMonthKey();
     const usage = getMonthUsage(cache, monthKey);
     console.log(
-      `\n✓ Özet: ${budget.cacheHits} önbellek, ${budget.networkFetches} canlı sorgu | Aylık (${monthKey}): Details ${usage.detailsEnterprise}/${FREE_MONTHLY_CAPS.detailsEnterprise}, Search ${usage.searchEnterprise}/${FREE_MONTHLY_CAPS.searchEnterprise}, Atmosphere ${usage.detailsAtmosphere}/${FREE_MONTHLY_CAPS.detailsAtmosphere}`
+      `\n✓ Özet: ${budget.cacheHits} önbellek, ${budget.networkFetches} detay/arama sorgusu (${budget.idsOnlyFetches} ücretsiz IDs-Only) | Aylık (${monthKey}): Details ${usage.detailsEnterprise}/${FREE_MONTHLY_CAPS.detailsEnterprise}, Search ${usage.searchEnterprise}/${FREE_MONTHLY_CAPS.searchEnterprise}, Atmosphere ${usage.detailsAtmosphere}/${FREE_MONTHLY_CAPS.detailsAtmosphere}`
     );
   }
 }

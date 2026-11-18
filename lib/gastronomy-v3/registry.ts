@@ -87,6 +87,7 @@ import bursaMerkezSnapshotJson from './regions/bursa-merkez.json';
 import canakkaleMerkezSnapshotJson from './regions/canakkale-merkez.json';
 import edirneMerkezSnapshotJson from './regions/edirne-merkez.json';
 import eskisehirMerkezSnapshotJson from './regions/eskisehir-merkez.json';
+import denizliMerkezSnapshotJson from './regions/denizli-merkez.json';
 import type { FoodLocation } from '../food/types';
 import type { V3VerifiedRegionSnapshot } from './types';
 
@@ -195,6 +196,8 @@ const EDIRNE_MERKEZ_SNAPSHOT =
   edirneMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 const ESKISEHIR_MERKEZ_SNAPSHOT =
   eskisehirMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
+const DENIZLI_MERKEZ_SNAPSHOT =
+  denizliMerkezSnapshotJson as unknown as V3VerifiedRegionSnapshot;
 
 export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   MODA_SNAPSHOT,
@@ -286,6 +289,7 @@ export const V3_ALL_PUBLISHED_SNAPSHOTS: readonly V3VerifiedRegionSnapshot[] = [
   CANAKKALE_MERKEZ_SNAPSHOT,
   EDIRNE_MERKEZ_SNAPSHOT,
   ESKISEHIR_MERKEZ_SNAPSHOT,
+  DENIZLI_MERKEZ_SNAPSHOT,
 ];
 
 export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = {
@@ -1117,6 +1121,23 @@ export const V3_PUBLISHED_SNAPSHOTS: Record<string, V3VerifiedRegionSnapshot> = 
   visnelik: ESKISEHIR_MERKEZ_SNAPSHOT,
   'batikent-eskisehir': ESKISEHIR_MERKEZ_SNAPSHOT,
   'koprubasi-eskisehir': ESKISEHIR_MERKEZ_SNAPSHOT,
+  'denizli-merkez': DENIZLI_MERKEZ_SNAPSHOT,
+  denizli: DENIZLI_MERKEZ_SNAPSHOT,
+  merkezefendi: DENIZLI_MERKEZ_SNAPSHOT,
+  'pamukkale-merkez': DENIZLI_MERKEZ_SNAPSHOT,
+  'camlik-denizli': DENIZLI_MERKEZ_SNAPSHOT,
+  kinikli: DENIZLI_MERKEZ_SNAPSHOT,
+  bayramyeri: DENIZLI_MERKEZ_SNAPSHOT,
+  'kaleici-denizli': DENIZLI_MERKEZ_SNAPSHOT,
+  deliklicinar: DENIZLI_MERKEZ_SNAPSHOT,
+  'yenisehir-denizli': DENIZLI_MERKEZ_SNAPSHOT,
+  servergazi: DENIZLI_MERKEZ_SNAPSHOT,
+  selcukbey: DENIZLI_MERKEZ_SNAPSHOT,
+  'adalet-denizli': DENIZLI_MERKEZ_SNAPSHOT,
+  'bahcelievler-denizli': DENIZLI_MERKEZ_SNAPSHOT,
+  sirakapilar: DENIZLI_MERKEZ_SNAPSHOT,
+  'atalar-denizli': DENIZLI_MERKEZ_SNAPSHOT,
+  incilipinar: DENIZLI_MERKEZ_SNAPSHOT,
 };
 
 function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {

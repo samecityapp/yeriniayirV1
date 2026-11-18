@@ -720,6 +720,12 @@ export const CHAIN_BLOCKLIST: readonly string[] = [
   'guernica',
   'chaff coffee',
   'ayten usta',
+  'baget burger',
+  'hacı şerif',
+  'haci serif',
+  'filicori',
+  'pause coffea',
+  'pizza palermo',
 ];
 
 export const NON_COFFEE_SPECIALIST_PRIMARY_TYPES = new Set<string>([
