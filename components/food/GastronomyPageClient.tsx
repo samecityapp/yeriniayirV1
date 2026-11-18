@@ -23,13 +23,13 @@ import { VariantABottomSheet } from '@/components/mobile-detail-variants/Variant
 
 const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:string;vibe:string}> = {
   'moda-kadikoy': {
-    image: '/images/gastronomy/coffee-pour-over.svg',
+    image: '/images/gastronomy/bolge-moda.svg',
     badge: 'Doğrulanmış Seçki',
     headline: 'Moda, Kadıköy',
     vibe: 'Nitelikli kahve, ekşi maya fırınlar, odun fırını pizzacılar ve mahalle mutfağı',
   },
   'carsi-osmanaga-kadikoy': {
-    image: '/images/gastronomy/regional.svg',
+    image: '/images/gastronomy/bolge-kadikoy.svg',
     badge: 'Doğrulanmış Seçki',
     headline: 'Kadıköy, İstanbul',
     vibe: 'Tarihi Çarşı, Bahariye, Osmanağa ve Yoğurtçu Parkı hattında köklü klasikler ve seçkin duraklar',
@@ -77,13 +77,13 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     vibe: 'Merkez, Çarşı ve Setur Marina’dan Kirazlı, Caferli, Yaylaköy, Davutlar ve Güzelçamlı sahiline uzanan seçki',
   },
   'gaziantep-merkez': {
-    image: '/images/gastronomy/regional.svg',
+    image: '/images/gastronomy/bolge-gaziantep.svg',
     badge: 'Yöresel Miras Seçkisi',
     headline: 'Gaziantep · Şahinbey & Şehitkamil',
     vibe: 'Tarihi hanlar ve Kalealtı çarşılarından Gazimuhtar ile İbrahimli’ye uzanan küşleme, sabah beyranı, taş fırın baklava ve katmer durakları',
   },
   'kaleici-muratpasa-antalya': {
-    image: '/images/gastronomy/regional.svg',
+    image: '/images/gastronomy/bolge-antalya-kaleici.svg',
     badge: 'Doğrulanmış Seçki',
     headline: 'Kaleiçi, Antalya',
     vibe: 'Tarihi Kaleiçi, Yat Limanı, Üçkapılar ve Kalekapısı aksında odun fırını pizzacılar, yerel burgerler, nitelikli kahve, meyhane sofraları, tahinli piyaz ve serpme börek',
@@ -101,7 +101,7 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     vibe: 'Atatürk Kültür Parkı ve Akdeniz Bulvarı sahil hattında özel gün klasikleri, kruvasan-pastane durakları, nitelikli kahveciler, Napoli pizzaları ve taze deniz ürünleri',
   },
   'kas-merkez-antalya': {
-    image: '/images/gastronomy/gastronomy.svg',
+    image: '/images/gastronomy/bolge-kas-merkez.svg',
     badge: 'Doğrulanmış Seçki',
     headline: 'Kaş Merkez, Antalya',
     vibe: 'Uzun Çarşı ve Andifli ara sokaklarından Liman ile Küçük ve Büyük Çakıl kıyılarına uzanan taş fırın pizzacılar, smash burgerler, üçüncü dalga kahveciler ve akşam meyhaneleri',
@@ -167,7 +167,7 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     vibe: 'Belcekız sahili, Denizpark & Çarşı Caddesi, Kumburnu Lagünü ve Kıdrak hattında zeytin ağaçlı gün batımı terasları, nitelikli kahve, plaj kahvaltıları ve kıyı deniz ürünleri',
   },
   'bodrum-merkez-mugla': {
-    image: '/images/gastronomy/gastronomy.svg',
+    image: '/images/gastronomy/bolge-bodrum-merkez.svg',
     badge: 'Doğrulanmış Seçki',
     headline: 'Bodrum Merkez, Muğla',
     vibe: 'Çarşı ve Kumbahçe sokaklarından Eskiçeşme ve Neyzen Tevfik Marina hattına uzanan odun fırını Napoli pizzaları, bağımsız kahveciler, tarihi esnaf mutfağı ve kıyı deniz ürünleri',
@@ -281,7 +281,7 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     vibe: 'Yalı Mahallesi ara sokaklarından Caher Dudayev ve Aziz Nesin bulvarlarına uzanan taze makarna ve Napoli pizzacıları, tek şubeli burgerci, mikro kavurucu kahveciler, uzun brunch fırınları, Ege zeytinyağlı mezecileri, söğüşçü ve kıyı balıkçısı',
   },
   'alacati-cesme-izmir': {
-    image: '/images/gastronomy/gastronomy.svg',
+    image: '/images/gastronomy/bolge-alacati.svg',
     badge: 'Doğrulanmış Seçki',
     headline: 'Alaçatı, İzmir',
     vibe: 'Hacımemiş taş avlularından Kemalpaşa Caddesi meyhanelerine, Tokoğlu burger ve nitelikli kahve duraklarından Sakızlar fırınlarına ve Alaçatı Port balıkçı rıhtımına uzanan seçki',
@@ -353,7 +353,7 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     vibe: 'Necatibey’den Konur, Karanfil, Selanik ve Bayındır sokaklarına uzanan taş fırın pizza ve tek şubeli burger noktaları, nitelikli kahve kavurucuları, 1945–1984 mirası esnaf lokantaları, kömürde yaprak döner ve gece işkembecisi',
   },
   'ankara-cankaya-tunali': {
-    image: '/images/gastronomy/gastronomy.svg',
+    image: '/images/gastronomy/bolge-tunali-hilmi.svg',
     badge: 'Doğrulanmış Seçki',
     headline: 'Tunalı Hilmi, Çankaya, Ankara',
     vibe: 'Bestekâr, Bülten, Büklüm ve Tunus sokaklarından Kuğulu Park’a uzanan ekşi mayalı Napoli pizzacıları, sokak burgercileri, mikro kavurucu kahve barları, mahzen şarap evleri, artizan fırınlar ve 1970–1995 mirası Ankara klasikleri',
@@ -485,7 +485,7 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     vibe: 'Asırlık Tarihi Çınaraltı ve börek ritüelinden Kuleli kıyısındaki taş yalı balıkçılarına ve çarşı sokak lezzetlerine uzanan Boğaz seçkisi',
   },
   'karakoy-beyoglu': {
-    image: '/images/gastronomy/gastronomy.svg',
+    image: '/images/gastronomy/bolge-karakoy.svg',
     badge: 'Doğrulanmış Seçki',
     headline: 'Karaköy, Beyoğlu',
     vibe: 'Tarihi fıstıklı baklava ve esnaf lokantası klasiklerinden Kemankeş üçüncü dalga kahvecilerine, odun ateşi şef sofralarına ve Boğaz balıkçılarına uzanan semt seçkisi',
@@ -497,7 +497,7 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     vibe: 'Sıraselviler ve Akarsu Yokuşu’nun köklü pastane ve esnaf lezzetlerinden Defterdar Yokuşu ve Susam Sokak bistro durakları ile samimi mahalle kahvecilerine uzanan seçki',
   },
   'nisantasi-sisli': {
-    image: '/images/gastronomy/gastronomy.svg',
+    image: '/images/gastronomy/bolge-nisantasi.svg',
     badge: 'Doğrulanmış Seçki',
     headline: 'Nişantaşı, Şişli',
     vibe: 'Teşvikiye’nin beş denizli şef mutfağından Topağacı fırın ve üçüncü dalga kahvecilerine, Abdi İpekçi bistro duraklarına ve köklü ocakbaşılarına uzanan seçki',
@@ -509,7 +509,7 @@ const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:s
     vibe: 'Kuledibi’nin 1964–1971 kuşak klasiklerinden Serdar-ı Ekrem ve Tatar Beyi’nin üçüncü dalga kavurmacılarına, tarihi avlu İtalyan mutfaklarına ve şarap mahzenlerine uzanan semt seçkisi',
   },
   'carsi-besiktas': {
-    image: '/images/gastronomy/gastronomy.svg',
+    image: '/images/gastronomy/bolge-besiktas-carsi.svg',
     badge: 'Doğrulanmış Seçki',
     headline: 'Beşiktaş Çarşı, Beşiktaş',
     vibe: 'Köyiçi’nin odun ateşi döner ustası, Kahvaltıcılar Sokağı ve Balık Pazarı sofralarından Sinanpaşa ve Türkali’nin artizan pizzacılarına, mantıcılarına ve yeni nesil meyhanelerine uzanan seçki',
