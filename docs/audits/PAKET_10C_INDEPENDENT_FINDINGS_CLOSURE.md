@@ -3,7 +3,10 @@
 - **Depo:** `samecityapp/yeriniayirV1` (`/Users/erdems/Documents/Codex/yeriniayir-paket07-codex-closures`)
 - **Çalışma Dalı:** `fix/paket-10c-chatgpt-review-closures`
 - **Baz Alınan 10B Sürümü:** `07be6d65595210428453e1eb01f391c253f3af50` (`fix/paket-10b-codex-final-closures`)
-- **10C Kod, SQL ve Test Commit'i:** `d19c24711d6210273cd92b53b041e20163223e49` (`17` dosya: `14` güncelleme + `3` yeni dosya)
+- **10C Kod, SQL ve Test Commit'leri:** `d19c24711d6210273cd92b53b041e20163223e49` (B1–B6 kapatmaları, `17` dosya) ve `e6df43a116cafdb153ff8e4f1c513f61e253a6a9` (Son Güvenlik Kapısı RPC SQL sınır/`search_path` + `/api/go` SSRF/kesinti sertleştirmesi, `4` dosya)
+- **Migration Uygulanma Sırası (Canlı/Staging Öncesi):**
+  1. `supabase/migrations/20261119180000_enforce_cloud_mfa_admin_rls.sql` (72. migration — `is_admin_user()`, miras RLS + `restaurant-images` bucket koruması)
+  2. `supabase/migrations/20261119210000_paket10c_storage_scope_analytics_lockdown_atomic_rpcs.sql` (73. migration — `storage` kapsam onarımı, `analytics_events`/`hotel_clicks` istemci `INSERT` kilidi, `ya_admin_save_restaurant` & `ya_admin_save_group` RPC'leri)
 - **İncelenen Rapor:** `YERINIAYIR_10B_CHATGPT_BAGIMSIZ_INCELEME.md` (`B1`–`B6`)
 - **Canlı Yayın / DB Durumu:** Yerel kod, SQL migration'lar (`73` dosya), TypeScript denetimi, Next.js build (`181/181`) ve tüm yerel/PG17/Next SSR doğrulama kapıları **GEÇTİ (`exit 0`)**. Hiçbir canlı/staging Supabase veritabanına migration **uygulanmadı**, `main` dalına merge veya `git push` **yapılmadı**; operatör/bulut adımları canlıya çıkış öncesinde zorunlu ön koşul olarak açıktır.
 
@@ -69,38 +72,35 @@
 ### `B6` (`P2`) — `legacyAdminActions.ts` Çok Adımlı Yazmalarının Tek Transaction RPC'ye Alınması
 - **Kök Neden:** `saveAdminRestaurantAction` (restoran güncelleme -> not silme -> not ekleme) ve `saveAdminGroupAction` (grup güncelleme -> `group_hotels` silme -> yeniden ekleme) ardışık REST çağrıları yaptığından ikinci veya üçüncü adımdaki hata önceki silinen/güncellenen veriyi bozuk bırakabiliyordu.
 - **Yapılan Düzeltme:**
-  - [20261119210000_paket10c_storage_scope_analytics_lockdown_atomic_rpcs.sql](file:///Users/erdems/Documents/Codex/yeriniayir-paket07-codex-closures/supabase/migrations/20261119210000_paket10c_storage_scope_analytics_lockdown_atomic_rpcs.sql#L134-L355) içinde `public.ya_admin_save_restaurant` ve `public.ya_admin_save_group` (`SECURITY INVOKER`, girişte `service_role OR public.is_admin_user()` zorunlu `42501` kontrolü, `REVOKE ALL FROM PUBLIC, anon`) fonksiyonları oluşturuldu.
+  - [20261119210000_paket10c_storage_scope_analytics_lockdown_atomic_rpcs.sql](file:///Users/erdems/Documents/Codex/yeriniayir-paket07-codex-closures/supabase/migrations/20261119210000_paket10c_storage_scope_analytics_lockdown_atomic_rpcs.sql#L134-L403) içinde `public.ya_admin_save_restaurant` ve `public.ya_admin_save_group` (`SECURITY INVOKER`, sahip `postgres`, `SET search_path = pg_catalog, public` — `pg_temp` hariç, girişte `current_user <> 'service_role' AND NOT public.is_admin_user()` zorunlu `42501` kontrolü, `REVOKE ALL FROM PUBLIC, anon`, yalnızca `authenticated` ve `service_role` için `EXECUTE`) oluşturuldu. Fonksiyonlar Server Action Zod doğrulamasına güvenmeden doğrudan SQL sınır denetimleri (`rating 0..10`, boş/uzun alan ve `1..20` otel dizisi reddi) uygular.
   - [legacyAdminActions.ts](file:///Users/erdems/Documents/Codex/yeriniayir-paket07-codex-closures/app/%5Blang%5D/(admin)/jilinrime/legacyAdminActions.ts#L248-L510) her iki aksiyonda tekil `.rpc(...)` çağrısına geçirildi; hata durumunda `revalidatePublicCatalog()` çağrılmadan `403`/`500` döner.
-- **Önce -> Sonra Kanıtı (`verify_rls_security.mjs` PG17 Aşama 6 & `verify_paket10c` Check 5):**
-  - Gerçek PostgreSQL 17.11 üzerinde güncellemenin **2. notunda** veya **2. otelinde (FK ihlali)** hata oluşturulduğunda restoran konumu + önceki `2` notu ve grup başlığı + önceki `2` `group_hotels` satırı **%100 değişmeden kaldı**; `aal1` ve `anon` çağrıları `42501` / `permission denied` ile reddedildi.
+- **Önce -> Sonra Kanıtı (`verify_rls_security.mjs` PG17 Aşama 6 & `[B6-SEC]`):**
+  - **PG17 `pg_proc`/`proacl` Denetimi:** Her iki fonksiyonda `prosecdef=false` (`SECURITY INVOKER`), `owner=postgres`, `proconfig=["search_path=pg_catalog, public"]`, `anon_exec=false`, `auth_exec=true`, `service_exec=true`, `PUBLIC` ACL girişi `0`.
+  - **Doğrudan RPC Aktör Matrisi & Rollback:** `anon`, normal `authenticated` (`aal2`), eski `profiles.role=admin` (`aal2`), aktif Cloud Admin (`aal1`) ve üyeliği iptal edilmiş yönetici (`active=false`, `aal2`) aktörlerinin tamamı hem `INSERT` hem `UPDATE` RPC çağrılarında reddedildi (`0` satır/veri değişimi); SQL sınır ihlalleri (`google_rating = -1`, `21` otel) reddedildi; 2. not ve 2. otel FK hatalarında önceki kayıtların tam korunduğu (rollback) ve yalnız aktif `aal2` Cloud Admin / `service_role` yazmalarının geçtiği kanıtlandı.
 
 ---
 
-## 2. Koşulan Doğrulama Kapıları ve Gerçek Çıkış Kodları
+## 2. Koşulan Doğrulama Kapıları
 
-Tüm komutlar `d19c24711d6210273cd92b53b041e20163223e49` kod durumu üzerinde `/Users/erdems/Documents/Codex/yeriniayir-paket07-codex-closures` dizininde çalıştırıldı:
+`e6df43a116cafdb153ff8e4f1c513f61e253a6a9` üzerinde çalıştırılan temel doğrulamalar + `/api/go` SSRF/kesinti sertleştirmesi (`app/api/go/route.ts` loopback/özel IP/link-local engeli, `rl.policy === 'upstash'` ve otel doğrulaması sonrası click yazımı) ile Son Güvenlik Kapısı doğrulamaları:
 
-| # | Doğrulama Komutu | Özet Çıktı | Çıkış Kodu |
-|---|---|---|---|
-| 1 | `npx tsc --noEmit` | Sıfır tip hatası | `exit 0` |
-| 2 | `NEXT_DISABLE_WEBPACK_CACHE=1 npm run build` | `181/181` sayfa derlendi (`.next` = `56M`) | `exit 0` |
-| 3 | `node scripts/verify_rls_security.mjs` | PG17.11 izole UNIX soket: `30/30` PASS (`B1`/`B2`/`B6`) | `exit 0` |
-| 4 | `node scripts/verify_paket10c_independent_closures.cjs` | `7/7` PASS (`B1`–`B6`, canlı Next SSR dahil) | `exit 0` |
-| 5 | `node scripts/security/policy-tests.cjs` | `74` güvenlik/sınır testi PASS | `exit 0` |
-| 6 | `node scripts/verify_staging_preflight.cjs` | `32` staging preflight vakası PASS | `exit 0` |
-| 7 | `node scripts/verify_production_ratelimit_config.cjs` (env'siz / prod env ile) | Env'siz fail-closed reddeder (`exit 1`); geçerli prod env + `block` ile PASS | `exit 0` (prod env ile) |
-| 8 | `node scripts/verify_v3_gastronomy.cjs` | `21/21` V3.7 gastronomi kontrolü PASS | `exit 0` |
-| 9 | `node scripts/verify_visitor_content.cjs` | `10/10` ziyaretçi metin izolasyonu PASS | `exit 0` |
-| 10 | `node scripts/verify_p0_security_fixes.cjs` | `25/25` P0 güvenlik kontrolü PASS | `exit 0` |
-| 11 | `node scripts/verify_paket03_perf_and_analytics.cjs` | `7/7` performans ve analitik kontrolü PASS | `exit 0` |
-| 12 | `node scripts/verify_paket05_api_middleware_mobile.cjs` | `12/12` API, middleware & mobil kontrol PASS | `exit 0` |
-| 13 | `node scripts/verify_paket06_traffic_cost_resilience.cjs` | `8/8` trafik & maliyet dayanıklılığı PASS | `exit 0` |
-| 14 | `node scripts/verify_paket07_release_candidate.cjs` | `10/10` yayın adayı & runtime anahtarı PASS | `exit 0` |
-| 15 | `node scripts/verify_paket08_geo_ai_search.cjs` | `6/6` GEO & AI Search kontrolü PASS | `exit 0` |
-| 16 | `node scripts/verify_paket09_backup_recovery_and_geo_sitemap.cjs` | `9/9` yedek/felaket & `1529/1529` sitemap URL PASS | `exit 0` |
-| 17 | `node scripts/verify_paket10_final_release_audit.cjs` | `6/6` nihai uçtan uca denetim PASS | `exit 0` |
-| 18 | `node scripts/verify_paket10b_codex_closures.cjs` | `7/7` Paket 10B regresyonu PASS | `exit 0` |
-| 19 | `node scripts/security/scan-secrets.cjs` | `2723` taranan dosya, `0` sır bulgusu | `exit 0` |
+| # | Doğrulama Komutu | Kapsam Özeti |
+|---|---|---|
+| 1 | `npx tsc --noEmit` | Sıfır tip hatası |
+| 2 | `NEXT_DISABLE_WEBPACK_CACHE=1 npm run build` | `181/181` sayfa derlendi (`.next` = `56M`) |
+| 3 | `node scripts/verify_rls_security.mjs` | PG17.11 `32/32` PASS (`B1`/`B2`/`B6` + `pg_proc`/`proacl` + 5 rol matrisi + SQL sınırlar) |
+| 4 | `node scripts/verify_paket10c_independent_closures.cjs` | `8/8` PASS (`B1`–`B6` + canlı SSR + Check 8 `/api/track-event` & `/api/go` doğrulama, SSRF, kesinti, 0 sızıntı) |
+| 5 | `node scripts/verify_pilot_security.cjs` | `48/48` PASS |
+| 6 | `node scripts/verify_gastronomy_snapshot_integrity.cjs` | `92` bölge / `2272` mekan / tekil `placeId` PASS |
+| 7 | `node scripts/cloud/verify_secret_leakage.cjs` | `119` istemci paketi dosyası, `0` sızıntı PASS |
+| 8 | `node scripts/verify_codex_audit_closures.cjs` | `6/6` Codex audit kapanış kontrolü PASS |
+| 9 | `node scripts/verify_paket03_perf_and_analytics.cjs` | `7/7` performans ve analitik kontrolü PASS |
+| 10 | `node scripts/verify_paket05_api_middleware_mobile.cjs` | `12/12` API, middleware & mobil kontrol PASS |
+| 11 | `node scripts/verify_paket09_backup_recovery_and_geo_sitemap.cjs` | `9/9` yedek/felaket & `1529/1529` sitemap URL PASS |
+| 12 | `node scripts/verify_paket10b_codex_closures.cjs` | `7/7` Paket 10B regresyonu PASS |
+| 13 | `node scripts/security/scan-secrets.cjs --ref=HEAD` | Tüm izlenen dosyalarda `0` sır bulgusu PASS |
+
+*(Ayrıca `d19c247` üzerinde `policy-tests` (`74/74`), `verify_staging_preflight` (`32/32`), `verify_production_ratelimit_config` (prod env ile `exit 0`, env'siz `exit 1`), `verify_v3_gastronomy` (`21/21`), `verify_visitor_content` (`10/10`), `verify_p0_security_fixes` (`25/25`), `verify_paket06` (`8/8`), `verify_paket07` (`10/10`), `verify_paket08` (`6/6`), `verify_paket10` (`6/6`) `exit 0` ile doğrulandı.)*
 
 - **Korunan 5 Dosya (`git diff`):** `0` değişiklik (`RestaurantCard.tsx`, `PremiumRestaurantCard.tsx`, `lib/pilot/rateLimitConfig.ts`, `scripts/verify_production_ratelimit_config.cjs`, `tsconfig.json`).
 - **Route Envanteri (`app/` `route.ts`/`route.js`):** Tam **`20`** adet.
