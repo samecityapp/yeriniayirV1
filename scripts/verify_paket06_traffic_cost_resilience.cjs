@@ -13,7 +13,7 @@ const fs = require('node:fs');
 const http = require('node:http');
 const net = require('node:net');
 const path = require('node:path');
-const { execFileSync, spawn } = require('node:child_process');
+const { execFileSync, spawn, spawnSync } = require('node:child_process');
 const { performance } = require('node:perf_hooks');
 const { createRequire } = require('node:module');
 
@@ -411,9 +411,11 @@ async function main() {
       );
     });
 
-    await check('1.3 Production fail-closed 503 default & 10s Upstash outage cooldown skips 1500ms stalls', async () => {
+    await check('1.3 Production fail-closed 503 (missing/malformed/outage) & 10s Upstash outage cooldown', async () => {
       const savedAppEnv = process.env.APP_ENVIRONMENT;
       const savedOutageMode = process.env.RATE_LIMIT_CRITICAL_OUTAGE_MODE;
+      const savedUrl = process.env.UPSTASH_REDIS_REST_URL;
+      const savedToken = process.env.UPSTASH_REDIS_REST_TOKEN;
       let upstashCalls = 0;
 
       process.env.RATE_LIMIT_ENFORCE = '1';
@@ -442,17 +444,56 @@ async function main() {
       });
       rlProd.resetMemoryRateLimitersForTests();
 
-      // Missing Upstash in production -> fail-closed 503 outage-blocked on critical endpoints!
-      const missingRes = await rlProd.enforceRateLimit(
-        new Headers({ 'x-real-ip': '203.0.113.10' }),
-        'admin_auth',
-        { scope: 'api' }
-      );
-      assert.equal(missingRes.status, 503);
-      assert.equal(missingRes.policy, 'outage-blocked');
+      // Missing Upstash in production across 100 rotating IPs -> ALL return fail-closed 503 outage-blocked!
+      for (let i = 0; i < 100; i++) {
+        const missingRes = await rlProd.enforceRateLimit(
+          new Headers({ 'x-real-ip': `203.0.113.${(i % 200) + 1}` }),
+          'admin_auth',
+          { scope: 'api' }
+        );
+        assert.equal(missingRes.status, 503);
+        assert.equal(missingRes.policy, 'outage-blocked');
+      }
 
-      // Runtime Upstash failure engages 10s cooldown -> 2nd call skips slow remote call completely (<20ms)!
-      process.env.UPSTASH_REDIS_REST_URL = 'https://mock-upstash.example.invalid';
+      // Malformed Upstash URLs / tokens in production must NEVER fall back to unlimited memory-fallback!
+      for (const badCfg of [
+        { url: 'http://bad.upstash.io', token: 'dummy-token' },
+        { url: 'https://evil.example.com', token: 'dummy-token' },
+        { url: 'https://mock-prod-unit.upstash.io:8443', token: 'dummy-token' },
+        { url: 'https://mock-prod-unit.upstash.io/path', token: 'dummy-token' },
+        { url: 'https://mock-prod-unit.upstash.io', token: 'bad token' },
+        { url: 'https://mock-prod-unit.upstash.io', token: '' },
+      ]) {
+        process.env.UPSTASH_REDIS_REST_URL = badCfg.url;
+        process.env.UPSTASH_REDIS_REST_TOKEN = badCfg.token;
+        const badRes = await rlProd.enforceRateLimit(
+          new Headers({ 'x-real-ip': '203.0.113.210' }),
+          'admin_auth',
+          { scope: 'api' }
+        );
+        assert.equal(badRes.status, 503, `Malformed config (${badCfg.url}) must fail-closed 503`);
+        assert.equal(badRes.policy, 'outage-blocked');
+      }
+
+      // Emergency outage mode with missing config still enforces tight 6/60s global ceiling across 100 rotating IPs
+      delete process.env.UPSTASH_REDIS_REST_URL;
+      delete process.env.UPSTASH_REDIS_REST_TOKEN;
+      process.env.RATE_LIMIT_CRITICAL_OUTAGE_MODE = 'emergency';
+      let emergencyAllowed = 0;
+      for (let i = 0; i < 100; i++) {
+        const emRes = await rlProd.enforceRateLimit(
+          new Headers({ 'x-real-ip': `198.51.100.${(i % 200) + 1}` }),
+          'admin_auth',
+          { scope: 'api' }
+        );
+        if (emRes.ok) emergencyAllowed++;
+      }
+      assert.equal(emergencyAllowed, 6, 'Missing config in emergency mode must enforce 6/60s global cap');
+      rlProd.resetMemoryRateLimitersForTests();
+      delete process.env.RATE_LIMIT_CRITICAL_OUTAGE_MODE;
+
+      // Runtime Upstash failure on valid https://*.upstash.io engages 10s cooldown -> 2nd call skips slow remote call!
+      process.env.UPSTASH_REDIS_REST_URL = 'https://mock-prod-unit.upstash.io';
       process.env.UPSTASH_REDIS_REST_TOKEN = 'dummy-token';
       const firstFail = await rlProd.enforceRateLimit(
         new Headers({ 'x-real-ip': '203.0.113.11' }),
@@ -475,10 +516,103 @@ async function main() {
       assert.equal(upstashCalls, 1, 'Cooldown circuit breaker must skip calling failing Upstash');
       assert.ok(elapsed < 25, `Expected cooldown response < 25ms, got ${elapsed}ms`);
 
+      // Verify preflight production rate-limit config check script (positive + negative)
+      const preflightGood = spawnSync(process.execPath, ['scripts/verify_production_ratelimit_config.cjs'], {
+        cwd: root,
+        env: {
+          ...process.env,
+          UPSTASH_REDIS_REST_URL: 'https://preflight-unit.upstash.io',
+          UPSTASH_REDIS_REST_TOKEN: 'dummy-shape-token',
+          RATE_LIMIT_CRITICAL_OUTAGE_MODE: 'block',
+        },
+        encoding: 'utf8',
+      });
+      assert.equal(preflightGood.status, 0, preflightGood.stderr);
+      const preflightBad = spawnSync(process.execPath, ['scripts/verify_production_ratelimit_config.cjs'], {
+        cwd: root,
+        env: {
+          ...process.env,
+          UPSTASH_REDIS_REST_URL: 'https://not-upstash.example.com',
+          UPSTASH_REDIS_REST_TOKEN: 'dummy-shape-token',
+          RATE_LIMIT_CRITICAL_OUTAGE_MODE: 'emergency',
+        },
+        encoding: 'utf8',
+      });
+      assert.notEqual(preflightBad.status, 0);
+
       if (savedAppEnv === undefined) delete process.env.APP_ENVIRONMENT;
       else process.env.APP_ENVIRONMENT = savedAppEnv;
       if (savedOutageMode === undefined) delete process.env.RATE_LIMIT_CRITICAL_OUTAGE_MODE;
       else process.env.RATE_LIMIT_CRITICAL_OUTAGE_MODE = savedOutageMode;
+      if (savedUrl === undefined) delete process.env.UPSTASH_REDIS_REST_URL;
+      else process.env.UPSTASH_REDIS_REST_URL = savedUrl;
+      if (savedToken === undefined) delete process.env.UPSTASH_REDIS_REST_TOKEN;
+      else process.env.UPSTASH_REDIS_REST_TOKEN = savedToken;
+    });
+
+    await check('1.5 Sliding-window clock boundary never expires newer timestamps early & never evicts live buckets', async () => {
+      process.env.RATE_LIMIT_ENFORCE = '1';
+      process.env.APP_ENVIRONMENT = 'test';
+      delete process.env.UPSTASH_REDIS_REST_URL;
+      delete process.env.UPSTASH_REDIS_REST_TOKEN;
+      delete process.env.RATE_LIMIT_CRITICAL_OUTAGE_MODE;
+
+      const rlClock = loadTs('lib/pilot/rateLimit.ts', { cache: new Map() });
+      rlClock.resetMemoryRateLimitersForTests();
+
+      const tBase = Date.UTC(2026, 10, 19, 12, 0, 0);
+      const h = new Headers({
+        'x-real-ip': '203.0.113.77',
+        'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) SlidingTest/1.0',
+      });
+
+      // t = 0ms -> 1 request (oldest slot)
+      assert.equal((await rlClock.enforceRateLimit(h, 'visitor_redirect', { scope: 'api', nowMs: tBase })).ok, true);
+      // t = 9000ms -> 29 requests (total 30 within [0, 9000ms])
+      for (let i = 0; i < 29; i++) {
+        assert.equal(
+          (await rlClock.enforceRateLimit(h, 'visitor_redirect', { scope: 'api', nowMs: tBase + 9000 })).ok,
+          true
+        );
+      }
+      // t = 10001ms -> t=0ms expired, 29 requests at t=9000ms MUST remain live -> ONLY 1 new request accepted!
+      let acceptedAtBoundary = 0;
+      let rejectedAtBoundary = 0;
+      for (let i = 0; i < 30; i++) {
+        const res = await rlClock.enforceRateLimit(h, 'visitor_redirect', {
+          scope: 'api',
+          nowMs: tBase + 10001,
+        });
+        if (res.ok) acceptedAtBoundary++;
+        else rejectedAtBoundary++;
+      }
+      assert.equal(acceptedAtBoundary, 1, 'Rolling 10s window must keep all 29 newer timestamps alive');
+      assert.equal(rejectedAtBoundary, 29, 'Rolling 10s window must block remaining 29 burst requests');
+
+      // Visitor bucket pool overflow must fail closed for newcomers WITHOUT evicting existing budgets
+      rlClock.resetMemoryRateLimitersForTests();
+      const victimHdr = new Headers({ 'x-real-ip': '198.51.100.1', 'user-agent': 'VictimClient/1.0' });
+      for (let i = 0; i < 30; i++) {
+        assert.equal(
+          (await rlClock.enforceEdgeMemoryShield(victimHdr, 'visitor_public', { scope: 'mw', nowMs: tBase })).ok,
+          true
+        );
+      }
+      for (let i = 0; i < 4200; i++) {
+        await rlClock.enforceEdgeMemoryShield(
+          new Headers({
+            'x-real-ip': `100.64.${Math.floor(i / 250)}.${(i % 250) + 1}`,
+            'user-agent': `PoolFiller/${i}`,
+          }),
+          'visitor_public',
+          { scope: 'mw', nowMs: tBase + 100 }
+        );
+      }
+      const victimAfterFlood = await rlClock.enforceEdgeMemoryShield(victimHdr, 'visitor_public', {
+        scope: 'mw',
+        nowMs: tBase + 200,
+      });
+      assert.equal(victimAfterFlood.status, 429, 'Pool overflow must never evict existing active bucket');
     });
 
     await check('1.4 Scanner 0-DB guards on lib/db.ts & both opengraph-image handlers block invalid probes', async () => {

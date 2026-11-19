@@ -230,19 +230,6 @@ function purgeExpiredEntries<T extends { expiresAt: number }>(
   }
 }
 
-function pruneMapPool<T extends { expiresAt: number }>(
-  pool: Map<string, T>,
-  maxEntries: number,
-  now: number
-): void {
-  purgeExpiredEntries(pool, now);
-  while (pool.size >= maxEntries) {
-    const oldest = pool.keys().next().value;
-    if (!oldest) break;
-    pool.delete(oldest);
-  }
-}
-
 function consumeSlidingWindow(
   pool: Map<string, SlidingBucket>,
   maxEntries: number,
@@ -291,10 +278,13 @@ function resolveVisitorPrimaryKey(
   rawPrimaryKey: string,
   now: number
 ): string {
-  pruneMapPool(ipUaSets, MAX_IP_UA_TRACKERS, now);
+  purgeExpiredEntries(ipUaSets, now);
   const trackerKey = `${scope}:${tier}:${ipHash}`;
   let tracker = ipUaSets.get(trackerKey);
   if (!tracker || tracker.expiresAt <= now) {
+    if (!tracker && ipUaSets.size >= MAX_IP_UA_TRACKERS) {
+      return `${ipHash}:ua-churn`;
+    }
     tracker = { keys: new Set<string>(), expiresAt: now + UA_CHURN_WINDOW_MS };
     ipUaSets.set(trackerKey, tracker);
   }
@@ -308,15 +298,42 @@ function resolveVisitorPrimaryKey(
   return `${ipHash}:ua-churn`;
 }
 
-function hasValidUpstashConfig(): { url: string; token: string } | null {
-  const url = process.env.UPSTASH_REDIS_REST_URL?.trim() || '';
-  const token = process.env.UPSTASH_REDIS_REST_TOKEN?.trim() || '';
-  if (!url || !token) return null;
+const LOOPBACK_HOSTS = new Set(['127.0.0.1', 'localhost', '[::1]']);
+
+function resolveUpstashRuntimeConfig(
+  env: NodeJS.ProcessEnv = process.env
+): { url: string; token: string } | null {
+  const isCloudProdOrStaging =
+    env.APP_ENVIRONMENT === 'production' ||
+    env.APP_ENVIRONMENT === 'staging' ||
+    env.VERCEL_ENV === 'production';
+
+  if (isCloudProdOrStaging) {
+    return validUpstashConfig(env);
+  }
+
+  const strict = validUpstashConfig(env);
+  if (strict) return strict;
+
+  const url = env.UPSTASH_REDIS_REST_URL || '';
+  const token = env.UPSTASH_REDIS_REST_TOKEN || '';
+  if (!url || !token || url !== url.trim() || /\s|[\x00-\x1f\x7f]/.test(token)) {
+    return null;
+  }
 
   try {
     const parsed = new URL(url);
-    if (parsed.protocol !== 'https:' && parsed.protocol !== 'http:') return null;
-    return { url, token };
+    if (parsed.username || parsed.password || parsed.search || parsed.hash) {
+      return null;
+    }
+    const hostLower = parsed.hostname.toLowerCase();
+    if (parsed.protocol === 'http:' && LOOPBACK_HOSTS.has(hostLower)) {
+      return { url: `${parsed.origin}${parsed.pathname === '/' ? '' : parsed.pathname}`, token };
+    }
+    if (parsed.protocol === 'https:' && hostLower.endsWith('.invalid') && parsed.pathname === '/') {
+      return { url: parsed.origin, token };
+    }
+    return null;
   } catch {
     return null;
   }
@@ -476,7 +493,7 @@ function enforceLayer1(
 export async function enforceEdgeMemoryShield(
   headers: Headers,
   tier: RateLimitTier,
-  options?: { scope?: string }
+  options?: { scope?: string; nowMs?: number }
 ): Promise<RateLimitResult> {
   const cfg = TIER_CONFIGS[tier];
   if (!isRateLimitActive()) {
@@ -492,7 +509,7 @@ export async function enforceEdgeMemoryShield(
   }
 
   const scope = options?.scope || 'mw';
-  const now = Date.now();
+  const now = typeof options?.nowMs === 'number' && Number.isFinite(options.nowMs) ? options.nowMs : Date.now();
   const ip = extractClientIp(headers);
   const utcDay = new Date(now).toISOString().slice(0, 10);
   const ipHash = await sha256Hex32(`${ip}|${utcDay}`);
@@ -529,7 +546,7 @@ function handleCriticalOutageFallback(
 export async function enforceRateLimit(
   headers: Headers,
   tier: RateLimitTier,
-  options?: { scope?: string }
+  options?: { scope?: string; nowMs?: number }
 ): Promise<RateLimitResult> {
   const cfg = TIER_CONFIGS[tier];
   if (!isRateLimitActive()) {
@@ -545,7 +562,7 @@ export async function enforceRateLimit(
   }
 
   const scope = options?.scope || 'api';
-  const now = Date.now();
+  const now = typeof options?.nowMs === 'number' && Number.isFinite(options.nowMs) ? options.nowMs : Date.now();
   const ip = extractClientIp(headers);
   const utcDay = new Date(now).toISOString().slice(0, 10);
   const ipHash = await sha256Hex32(`${ip}|${utcDay}`);
@@ -562,11 +579,27 @@ export async function enforceRateLimit(
     return buildResult(429, l1.limit, l1.remaining, l1.reset, 'memory-l1');
   }
 
-  const upstashCfg = hasValidUpstashConfig();
+  const upstashCfg = resolveUpstashRuntimeConfig();
   if (!upstashCfg) {
     if (cfg.isCritical && resolveCriticalOutageMode() === 'block') {
       const reset = Math.ceil((now + cfg.outagePrimary.windowMs) / 1000);
       return buildResult(503, 0, 0, reset, 'outage-blocked');
+    }
+    const explicitOutageMode = Boolean((process.env.RATE_LIMIT_CRITICAL_OUTAGE_MODE || '').trim());
+    const isLocalTestOrDevHarness =
+      !explicitOutageMode &&
+      process.env.VERCEL !== '1' &&
+      !process.env.VERCEL_ENV &&
+      (process.env.APP_ENVIRONMENT === 'test' || process.env.APP_ENVIRONMENT === 'development');
+    const enforceCriticalEmergencyPolicy =
+      cfg.isCritical &&
+      !isLocalTestOrDevHarness &&
+      (process.env.NODE_ENV === 'production' ||
+        explicitOutageMode ||
+        process.env.APP_ENVIRONMENT === 'production' ||
+        process.env.APP_ENVIRONMENT === 'staging');
+    if (enforceCriticalEmergencyPolicy) {
+      return handleCriticalOutageFallback(scope, tier, cfg, primaryKey, ipHash, isCliBot, now);
     }
     return l1;
   }
@@ -614,7 +647,7 @@ export async function enforceRateLimit(
     );
   } catch (err) {
     // Log only error name (never full SDK exception objects containing URLs/headers).
-    upstashOutageUntil = Date.now() + UPSTASH_CIRCUIT_COOLDOWN_MS;
+    upstashOutageUntil = now + UPSTASH_CIRCUIT_COOLDOWN_MS;
     console.warn(`Rate limiter Upstash failure for ${scope}:${tier} (${(err as Error)?.name || 'Error'}); circuit breaker engaged.`);
     return handleCriticalOutageFallback(scope, tier, cfg, primaryKey, ipHash, isCliBot, now);
   }
