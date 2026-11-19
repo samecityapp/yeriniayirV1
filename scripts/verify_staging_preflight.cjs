@@ -73,6 +73,17 @@ const negatives = [
   ['prod-authorized-flag', { SUPABASE_PRODUCTION_AUTHORIZED: '1' }],
   ['malformed-upstash-url', { UPSTASH_REDIS_REST_URL: 'http://bad-upstash.example.com', UPSTASH_REDIS_REST_TOKEN: 'tok' }],
   ['upstash-url-without-token', { UPSTASH_REDIS_REST_URL: 'https://staging-rl.upstash.io' }],
+  ['invalid-emergency-redis-ns', { EMERGENCY_MODE_REDIS_NAMESPACE: 'prod!' }],
+  ['whitespace-emergency-redis-ns', { EMERGENCY_MODE_REDIS_NAMESPACE: ' prod ' }],
+  ['invalid-ratelimit-redis-ns', { RATE_LIMIT_REDIS_NAMESPACE: 'staging!' }],
+  [
+    'shared-upstash-without-namespace',
+    {
+      UPSTASH_REDIS_REST_URL: 'https://shared-rl.upstash.io',
+      UPSTASH_REDIS_REST_TOKEN: 'staging-dummy-token-value',
+      PRODUCTION_UPSTASH_REDIS_REST_URL: 'https://shared-rl.upstash.io',
+    },
+  ],
 ];
 
 for (const [label, changes] of negatives) {

@@ -25,6 +25,11 @@ const issues = [];
 try {
   const { cloudConfig } = require('../lib/cloud/config.ts');
   const { validUpstashConfig } = require('../lib/pilot/rateLimitConfig.ts');
+  const {
+    validateEmergencyRedisNamespace,
+    verifyEmergencyRedisIsolation,
+  } = require('../lib/pilot/emergencyMode.ts');
+  const { validateRateLimitRedisNamespace } = require('../lib/pilot/redisNamespace.ts');
   const config = cloudConfig();
   if (config.environment !== 'staging') {
     issues.push('APP_ENVIRONMENT must resolve to staging');
@@ -35,6 +40,33 @@ try {
   if (process.env.UPSTASH_REDIS_REST_URL || process.env.UPSTASH_REDIS_REST_TOKEN) {
     if (!validUpstashConfig(process.env)) {
       issues.push('Optional Upstash configuration is malformed (must be https://<id>.upstash.io with clean token)');
+    }
+  }
+  const emNs = validateEmergencyRedisNamespace(process.env);
+  if (!emNs.valid) {
+    issues.push('EMERGENCY_MODE_REDIS_NAMESPACE is invalid (must match /^[a-z0-9:_-]{1,40}$/i without whitespace)');
+  }
+  const rlNs = validateRateLimitRedisNamespace(process.env);
+  if (!rlNs.valid) {
+    issues.push('RATE_LIMIT_REDIS_NAMESPACE is invalid (must match /^[a-z0-9:_-]{1,40}$/i without whitespace)');
+  }
+  if (process.env.PRODUCTION_UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_URL) {
+    const prodEnv = {
+      UPSTASH_REDIS_REST_URL: process.env.PRODUCTION_UPSTASH_REDIS_REST_URL,
+      UPSTASH_REDIS_REST_TOKEN:
+        process.env.PRODUCTION_UPSTASH_REDIS_REST_TOKEN || 'prod-check-placeholder',
+      EMERGENCY_MODE_REDIS_NAMESPACE: process.env.PRODUCTION_EMERGENCY_MODE_REDIS_NAMESPACE,
+      RATE_LIMIT_REDIS_NAMESPACE: process.env.PRODUCTION_RATE_LIMIT_REDIS_NAMESPACE,
+    };
+    const emIsolation = verifyEmergencyRedisIsolation(prodEnv, process.env);
+    if (!emIsolation.isolated) {
+      issues.push(`Upstash Redis namespace isolation failed (${emIsolation.reason})`);
+    } else if (emIsolation.reason !== 'distinct-upstash-origin') {
+      const prodRlNs = validateRateLimitRedisNamespace(prodEnv).namespace || '';
+      const stagingRlNs = rlNs.namespace || '';
+      if (prodRlNs === stagingRlNs || !stagingRlNs) {
+        issues.push('RATE_LIMIT_REDIS_NAMESPACE must be explicitly isolated when sharing an Upstash origin');
+      }
     }
   }
 } catch {

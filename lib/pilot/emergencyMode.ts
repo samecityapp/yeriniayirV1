@@ -1,4 +1,8 @@
 import { validUpstashConfig } from './rateLimitConfig';
+import {
+  validateEmergencyRedisNamespace,
+  validateRateLimitRedisNamespace,
+} from './redisNamespace';
 
 export type EmergencyLevel = 'off' | 'shed' | 'lockdown';
 
@@ -51,14 +55,17 @@ export function resetEmergencyModeCacheForTests(): void {
 
 export type ParsedEmergencySetting = EmergencyLevel | 'invalid';
 
-const EMERGENCY_NAMESPACE_RE = /^[a-z0-9:_-]{1,40}$/i;
+export { validateEmergencyRedisNamespace };
 
 export function resolveEmergencyModeRedisKey(
   env: NodeJS.ProcessEnv = process.env
 ): string {
-  const ns = (env.EMERGENCY_MODE_REDIS_NAMESPACE || '').trim();
-  if (ns && EMERGENCY_NAMESPACE_RE.test(ns)) {
-    return `ya:${ns}:pilot:emergency_mode`;
+  const nsCheck = validateEmergencyRedisNamespace(env);
+  if (!nsCheck.valid) {
+    throw new Error('Invalid EMERGENCY_MODE_REDIS_NAMESPACE configuration');
+  }
+  if (nsCheck.namespace) {
+    return `ya:${nsCheck.namespace}:pilot:emergency_mode`;
   }
   return EMERGENCY_MODE_REDIS_KEY;
 }
@@ -67,6 +74,14 @@ export function verifyEmergencyRedisIsolation(
   prodEnv: NodeJS.ProcessEnv,
   stagingEnv: NodeJS.ProcessEnv
 ): { isolated: boolean; reason: string } {
+  const prodEmNs = validateEmergencyRedisNamespace(prodEnv);
+  const stagingEmNs = validateEmergencyRedisNamespace(stagingEnv);
+  const prodRlNs = validateRateLimitRedisNamespace(prodEnv);
+  const stagingRlNs = validateRateLimitRedisNamespace(stagingEnv);
+  if (!prodEmNs.valid || !stagingEmNs.valid || !prodRlNs.valid || !stagingRlNs.valid) {
+    return { isolated: false, reason: 'invalid-redis-namespace' };
+  }
+
   const prodCfg = validUpstashConfig(prodEnv);
   const stagingCfg = validUpstashConfig(stagingEnv);
   if (prodCfg && stagingCfg) {
@@ -83,11 +98,18 @@ export function verifyEmergencyRedisIsolation(
 
   const prodKey = resolveEmergencyModeRedisKey(prodEnv);
   const stagingKey = resolveEmergencyModeRedisKey(stagingEnv);
-  if (prodKey !== stagingKey) {
-    return { isolated: true, reason: 'distinct-redis-namespace-key' };
+  if (prodKey === stagingKey) {
+    return { isolated: false, reason: 'shared-upstash-origin-and-redis-key' };
   }
 
-  return { isolated: false, reason: 'shared-upstash-origin-and-redis-key' };
+  if (
+    (prodRlNs.namespace || stagingRlNs.namespace) &&
+    (prodRlNs.namespace || '') === (stagingRlNs.namespace || '')
+  ) {
+    return { isolated: false, reason: 'shared-ratelimit-redis-namespace' };
+  }
+
+  return { isolated: true, reason: 'distinct-redis-namespace-key' };
 }
 
 export function parseEmergencyModeSetting(
@@ -364,6 +386,15 @@ export async function resolveRuntimeEmergencyMode(
   const staticMode = getEmergencyMode(env);
   if (staticMode === 'lockdown') {
     return 'lockdown';
+  }
+
+  // Fail-safe to at least 'shed' whenever EMERGENCY_MODE_REDIS_NAMESPACE is malformed,
+  // regardless of endpoint validity, so a shared un-namespaced Redis key is never consulted.
+  const nsCheck = validateEmergencyRedisNamespace(env);
+  if (!nsCheck.valid) {
+    runtimeOutageUntil = Date.now() + resolveFailureCooldownMs(env);
+    cachedRuntimeMode = null;
+    return fallbackLevelDuringOutage(maxEmergencyLevel(staticMode, 'shed'));
   }
 
   const endpoint = resolveRuntimeEmergencyUpstashEndpoint(env);

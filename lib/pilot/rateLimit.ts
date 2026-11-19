@@ -1,6 +1,9 @@
 import { validUpstashConfig } from './rateLimitConfig';
+import { validateRateLimitRedisNamespace } from './redisNamespace';
 import { Ratelimit } from '@upstash/ratelimit';
 import { Redis } from '@upstash/redis';
+
+export { validateRateLimitRedisNamespace };
 
 export type RateLimitTier =
   | 'visitor_analytics'
@@ -23,7 +26,6 @@ export const RATE_LIMIT_COOKIE_NAME = 'ya_rl_anon';
 const ANON_COOKIE_TTL_SEC = 15 * 60;
 const MAX_NEW_COOKIES_PER_IP_WINDOW = 60;
 const NEW_COOKIE_WINDOW_MS = 10_000;
-const REDIS_NAMESPACE_RE = /^[a-z0-9:_-]{1,40}$/i;
 
 export interface RateLimitResult {
   ok: boolean;
@@ -490,6 +492,10 @@ const LOOPBACK_HOSTS = new Set(['127.0.0.1', 'localhost', '[::1]']);
 function resolveUpstashRuntimeConfig(
   env: NodeJS.ProcessEnv = process.env
 ): { url: string; token: string } | null {
+  if (!validateRateLimitRedisNamespace(env).valid) {
+    return null;
+  }
+
   const isCloudProdOrStaging =
     env.APP_ENVIRONMENT === 'production' ||
     env.APP_ENVIRONMENT === 'staging' ||
@@ -527,8 +533,11 @@ function resolveUpstashRuntimeConfig(
 }
 
 function resolveRedisNamespace(): string {
-  const ns = (process.env.RATE_LIMIT_REDIS_NAMESPACE || '').trim();
-  return ns && REDIS_NAMESPACE_RE.test(ns) ? ns : '';
+  const check = validateRateLimitRedisNamespace(process.env);
+  if (!check.valid) {
+    throw new Error('Invalid RATE_LIMIT_REDIS_NAMESPACE configuration');
+  }
+  return check.namespace || '';
 }
 
 function getUpstashLimiter(

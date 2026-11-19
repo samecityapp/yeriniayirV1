@@ -78,7 +78,7 @@ async function createIsolatedDb() {
     const trimmed = sqlText.trim().replace(/;\s*$/, '');
     let script = `${sessionPrefix ? `${sessionPrefix}\n` : ''}${trimmed};`;
     if (jsonRows) {
-      script = `${sessionPrefix ? `${sessionPrefix}\n` : ''}WITH _q AS (${trimmed}) SELECT COALESCE(json_agg(_q), '[]'::json)::text FROM _q;`;
+      script = `${sessionPrefix ? `${sessionPrefix}\n` : ''}WITH _q AS (${trimmed}) SELECT COALESCE(jsonb_agg(_q), '[]'::jsonb)::text FROM _q;`;
     }
     const res = spawnSync(
       path.join(pgBin, 'psql'),
@@ -579,6 +579,9 @@ async function runRlsVerification() {
         id serial PRIMARY KEY,
         name text NOT NULL
       );
+      CREATE TABLE IF NOT EXISTS public.valid_hotel_ids (
+        id uuid PRIMARY KEY
+      );
       CREATE TABLE IF NOT EXISTS public.tags (
         id serial PRIMARY KEY,
         name text NOT NULL
@@ -587,6 +590,25 @@ async function runRlsVerification() {
         id serial PRIMARY KEY,
         event_name text NOT NULL
       );
+      CREATE TABLE IF NOT EXISTS public.hotel_clicks (
+        id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+        hotel_id uuid NOT NULL,
+        created_at timestamptz DEFAULT now() NOT NULL,
+        user_ip text,
+        user_agent text,
+        referrer text
+      );
+      CREATE TABLE IF NOT EXISTS public.groups (
+        id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+        title text NOT NULL,
+        is_published boolean DEFAULT false,
+        domains text[] DEFAULT '{}',
+        created_at timestamptz DEFAULT now(),
+        updated_at timestamptz DEFAULT now()
+      );
+      ALTER TABLE public.group_hotels ADD COLUMN IF NOT EXISTS order_index integer DEFAULT 0;
+      ALTER TABLE public.group_hotels ADD CONSTRAINT group_hotels_hotel_fk FOREIGN KEY (hotel_id) REFERENCES public.valid_hotel_ids(id);
+      ALTER TABLE public.group_hotels ADD CONSTRAINT group_hotels_group_hotel_uniq UNIQUE (group_id, hotel_id);
       CREATE TABLE IF NOT EXISTS public.audit_logs (
         id serial PRIMARY KEY,
         action text NOT NULL
@@ -597,28 +619,42 @@ async function runRlsVerification() {
         name text NOT NULL
       );
 
-      GRANT SELECT, INSERT, UPDATE, DELETE ON public.hotels, public.tags, public.analytics_events, public.audit_logs TO authenticated;
-      GRANT INSERT ON public.analytics_events TO anon;
-      GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO anon, authenticated;
+      GRANT SELECT, INSERT, UPDATE, DELETE ON public.hotels, public.valid_hotel_ids, public.tags, public.analytics_events, public.hotel_clicks, public.groups, public.group_hotels, public.audit_logs TO authenticated;
+      GRANT INSERT ON public.analytics_events, public.hotel_clicks TO anon;
+      GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO service_role;
+      GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO anon, authenticated, service_role;
       GRANT SELECT, INSERT, UPDATE, DELETE ON storage.objects TO authenticated;
-      GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA storage TO authenticated;
+      GRANT SELECT ON storage.objects TO anon;
+      GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA storage TO authenticated, service_role;
 
       ALTER TABLE public.hotels ENABLE ROW LEVEL SECURITY;
       ALTER TABLE public.tags ENABLE ROW LEVEL SECURITY;
       ALTER TABLE public.analytics_events ENABLE ROW LEVEL SECURITY;
+      ALTER TABLE public.hotel_clicks ENABLE ROW LEVEL SECURITY;
+      ALTER TABLE public.groups ENABLE ROW LEVEL SECURITY;
       ALTER TABLE public.audit_logs ENABLE ROW LEVEL SECURITY;
       ALTER TABLE storage.objects ENABLE ROW LEVEL SECURITY;
 
-      -- Eski permissive politikalar + korunması gereken ya_permanent_* kalıcı politikası + gerçek SELECT politikaları
+      -- Eski permissive politikalar + korunması gereken ya_permanent_* + ikinci bucket ('hotel-media') politikaları
       CREATE POLICY "Public can read all hotels" ON public.hotels FOR SELECT TO anon, authenticated USING (true);
       CREATE POLICY "Authenticated users can manage hotels" ON public.hotels FOR ALL TO authenticated USING (true) WITH CHECK (true);
       CREATE POLICY "Public can read all tags" ON public.tags FOR SELECT TO anon, authenticated USING (true);
       CREATE POLICY "Allow all for authenticated" ON public.tags FOR ALL TO authenticated USING (true) WITH CHECK (true);
       CREATE POLICY "Public analytics select" ON public.analytics_events FOR SELECT TO authenticated USING (true);
       CREATE POLICY "ya_permanent_analytics_anon_insert" ON public.analytics_events FOR INSERT TO anon, authenticated WITH CHECK (true);
+      CREATE POLICY "Anyone can track hotel clicks" ON public.hotel_clicks FOR INSERT TO anon, authenticated WITH CHECK (true);
+      CREATE POLICY "Authenticated users can view all clicks" ON public.hotel_clicks FOR SELECT TO authenticated USING (true);
+      CREATE POLICY "Public read groups" ON public.groups FOR SELECT TO anon, authenticated USING (true);
+      CREATE POLICY "Public manage groups" ON public.groups FOR ALL TO authenticated USING (true) WITH CHECK (true);
       CREATE POLICY "Public audit select" ON public.audit_logs FOR SELECT TO authenticated USING (true);
       CREATE POLICY "Public Access Restaurant Images" ON storage.objects FOR SELECT TO anon, authenticated USING (bucket_id = 'restaurant-images');
       CREATE POLICY "Authenticated upload restaurant-images" ON storage.objects FOR INSERT TO authenticated WITH CHECK (bucket_id = 'restaurant-images');
+      CREATE POLICY "Authenticated update restaurant-images" ON storage.objects FOR UPDATE TO authenticated USING (bucket_id = 'restaurant-images') WITH CHECK (bucket_id = 'restaurant-images');
+      CREATE POLICY "Authenticated delete restaurant-images" ON storage.objects FOR DELETE TO authenticated USING (bucket_id = 'restaurant-images');
+      CREATE POLICY "Hotel media public select" ON storage.objects FOR SELECT TO anon, authenticated USING (bucket_id = 'hotel-media');
+      CREATE POLICY "Hotel media auth insert" ON storage.objects FOR INSERT TO authenticated WITH CHECK (bucket_id = 'hotel-media');
+      CREATE POLICY "Hotel media auth update" ON storage.objects FOR UPDATE TO authenticated USING (bucket_id = 'hotel-media') WITH CHECK (bucket_id = 'hotel-media');
+      CREATE POLICY "Hotel media auth delete" ON storage.objects FOR DELETE TO authenticated USING (bucket_id = 'hotel-media');
     `);
 
     const enforceCloudMfaSql = fs.readFileSync(
@@ -638,10 +674,12 @@ async function runRlsVerification() {
           SELECT set_config('request.jwt.claims', '${claimsJson.replace(/'/g, "''")}', false);
         `);
       } else {
+        const claimsPayload =
+          roleName === 'anon' ? '{"role":"anon"}' : JSON.stringify({ role: roleName });
         await db.exec(`
           SET ROLE ${roleName};
           SELECT set_config('request.jwt.claim.sub', '', false);
-          SELECT set_config('request.jwt.claims', '{"role":"anon"}', false);
+          SELECT set_config('request.jwt.claims', '${claimsPayload.replace(/'/g, "''")}', false);
         `);
       }
       try {
@@ -798,6 +836,302 @@ async function runRlsVerification() {
       expected: 'ALLOW tüm yetkili işlemler & is_admin=true',
       actual: JSON.stringify(mfaWriteResults.counts),
       passed: mfaWriteResults.ok,
+    });
+
+    // =========================================================================
+    // AŞAMA 6: Görev 10C (B1, B2, B6) — Forward Migration 20261119210000 Doğrulaması
+    // =========================================================================
+    console.log('\n[AŞAMA 6] Görev 10C (B1 Storage İzolasyonu, B2 Analitik/Click Kilidi, B6 Atomik RPC) Testleri:');
+
+    // 10C öncesi hotel-media politikalarının 20261119180000 tarafından silinmediğini doğrula (B1)
+    const pre210000HotelMediaWrite = await runAsUser('authenticated', adminUuid, 'aal1', async () => {
+      const ins = await db.query(
+        `INSERT INTO storage.objects (bucket_id, name) VALUES ('hotel-media', 'pre-210000.jpg') RETURNING id;`
+      );
+      const upd = await db.query(
+        `UPDATE storage.objects SET name = 'pre-210000-u.jpg' WHERE id = $1 RETURNING id;`,
+        [ins.rows[0].id]
+      );
+      const del = await db.query(
+        `DELETE FROM storage.objects WHERE id = $1 RETURNING id;`,
+        [ins.rows[0].id]
+      );
+      return ins.rows.length === 1 && upd.rows.length === 1 && del.rows.length === 1;
+    });
+    results.push({
+      test: '[B1 / 180000 SONRASI] İkinci Storage bucket (hotel-media) yazma yetkisi korundu',
+      expected: 'ALLOW INSERT/UPDATE/DELETE on hotel-media',
+      actual: `hotelMediaCrud=${pre210000HotelMediaWrite}`,
+      passed: pre210000HotelMediaWrite,
+    });
+
+    const paket10cSql = fs.readFileSync(
+      path.join(
+        process.cwd(),
+        'supabase/migrations/20261119210000_paket10c_storage_scope_analytics_lockdown_atomic_rpcs.sql'
+      ),
+      'utf8'
+    );
+    await db.exec(paket10cSql);
+
+    // B1 (210000 sonrası): ikinci bucket policy isimleri ve CRUD izni korunurken restaurant-images kilitli kalmalı
+    const hotelMediaPolicies = await db.query(
+      `SELECT policyname FROM pg_policies WHERE schemaname = 'storage' AND tablename = 'objects' AND policyname LIKE 'Hotel media auth%' ORDER BY policyname;`
+    );
+    const post210000HotelMediaWrite = await runAsUser('authenticated', adminUuid, 'aal1', async () => {
+      const ins = await db.query(
+        `INSERT INTO storage.objects (bucket_id, name) VALUES ('hotel-media', 'post-210000.jpg') RETURNING id;`
+      );
+      const upd = await db.query(
+        `UPDATE storage.objects SET name = 'post-210000-u.jpg' WHERE id = $1 RETURNING id;`,
+        [ins.rows[0].id]
+      );
+      const del = await db.query(
+        `DELETE FROM storage.objects WHERE id = $1 RETURNING id;`,
+        [ins.rows[0].id]
+      );
+      return ins.rows.length === 1 && upd.rows.length === 1 && del.rows.length === 1;
+    });
+    const nonAdminRestImgBlock = await expectRlsBlock(
+      'authenticated',
+      adminUuid,
+      'aal2',
+      `INSERT INTO storage.objects (bucket_id, name) VALUES ('restaurant-images', 'blocked.jpg') RETURNING id;`
+    );
+    const anonStorageBlock = await expectRlsBlock(
+      'anon',
+      null,
+      null,
+      `INSERT INTO storage.objects (bucket_id, name) VALUES ('restaurant-images', 'anon.jpg');`
+    );
+    const mfaRestImgWrite = await runAsUser('authenticated', cloudAdminUuid, 'aal2', () =>
+      db.query(
+        `INSERT INTO storage.objects (bucket_id, name) VALUES ('restaurant-images', 'mfa-ok.jpg') RETURNING id;`
+      )
+    );
+    results.push({
+      test: '[B1 / 210000 SONRASI] İkinci bucket (hotel-media) korunur, restaurant-images yalnız MFA Cloud Admin’e açık',
+      expected: 'policies=3 & hotelMediaCrud=true & nonAdminRestBlock=true & mfaRestAllow=true',
+      actual: `policies=${hotelMediaPolicies.rows.length}, hotelMedia=${post210000HotelMediaWrite}, nonAdminBlock=${nonAdminRestImgBlock.blocked}, anonBlock=${anonStorageBlock.blocked}, mfaAllow=${mfaRestImgWrite.rows.length === 1}`,
+      passed:
+        hotelMediaPolicies.rows.length === 3 &&
+        post210000HotelMediaWrite &&
+        nonAdminRestImgBlock.blocked &&
+        anonStorageBlock.blocked &&
+        mfaRestImgWrite.rows.length === 1,
+    });
+
+    // B2: analytics_events & hotel_clicks doğrudan anonim/istemci REST INSERT engellenmeli; yalnız service_role yazabilmeli
+    const validHotelId1 = '11111111-1111-4111-8111-111111111111';
+    const validHotelId2 = '22222222-2222-4222-8222-222222222222';
+    const invalidHotelId = '99999999-9999-4999-8999-999999999999';
+    await db.query(`INSERT INTO public.valid_hotel_ids (id) VALUES ($1), ($2) ON CONFLICT DO NOTHING;`, [
+      validHotelId1,
+      validHotelId2,
+    ]);
+
+    const anonAnalyticsInsBlock = await expectRlsBlock(
+      'anon',
+      null,
+      null,
+      `INSERT INTO public.analytics_events (event_name) VALUES ('anon_bypass');`
+    );
+    const authAnalyticsInsBlock = await expectRlsBlock(
+      'authenticated',
+      adminUuid,
+      'aal2',
+      `INSERT INTO public.analytics_events (event_name) VALUES ('auth_bypass');`
+    );
+    const adminDirectAnalyticsInsBlock = await expectRlsBlock(
+      'authenticated',
+      cloudAdminUuid,
+      'aal2',
+      `INSERT INTO public.analytics_events (event_name) VALUES ('direct_client_bypass');`
+    );
+    const anonClicksInsBlock = await expectRlsBlock(
+      'anon',
+      null,
+      null,
+      `INSERT INTO public.hotel_clicks (hotel_id, user_ip) VALUES ($1, 'hash1');`,
+      [validHotelId1]
+    );
+    const authClicksInsBlock = await expectRlsBlock(
+      'authenticated',
+      adminUuid,
+      'aal2',
+      `INSERT INTO public.hotel_clicks (hotel_id, user_ip) VALUES ($1, 'hash2');`,
+      [validHotelId1]
+    );
+    const anonClicksSelectBlock = await expectRlsBlock(
+      'anon',
+      null,
+      null,
+      `SELECT id FROM public.hotel_clicks;`
+    );
+    const serviceWrites = await runAsUser('service_role', null, null, async () => {
+      const a = await db.query(
+        `INSERT INTO public.analytics_events (event_name) VALUES ('srv_pv') RETURNING id;`
+      );
+      const c = await db.query(
+        `INSERT INTO public.hotel_clicks (hotel_id, user_ip) VALUES ($1, 'srv_hash') RETURNING id;`,
+        [validHotelId1]
+      );
+      return a.rows.length === 1 && c.rows.length === 1;
+    });
+    const mfaClicksSelect = await runAsUser('authenticated', cloudAdminUuid, 'aal2', () =>
+      db.query(`SELECT count(*)::int AS cnt FROM public.hotel_clicks;`)
+    );
+    results.push({
+      test: '[B2] analytics_events & hotel_clicks doğrudan anon/client INSERT engelli; service_role yazımı ve MFA SELECT açık',
+      expected: 'tüm client INSERT=BLOCK & anonClicksSelect=BLOCK & serviceWrites=true & mfaClicks>=1',
+      actual: `anonA=${anonAnalyticsInsBlock.blocked}, authA=${authAnalyticsInsBlock.blocked}, admDirA=${adminDirectAnalyticsInsBlock.blocked}, anonC=${anonClicksInsBlock.blocked}, authC=${authClicksInsBlock.blocked}, anonCSel=${anonClicksSelectBlock.blocked}, srv=${serviceWrites}, mfaCnt=${mfaClicksSelect.rows[0].cnt}`,
+      passed:
+        anonAnalyticsInsBlock.blocked &&
+        authAnalyticsInsBlock.blocked &&
+        adminDirectAnalyticsInsBlock.blocked &&
+        anonClicksInsBlock.blocked &&
+        authClicksInsBlock.blocked &&
+        anonClicksSelectBlock.blocked &&
+        serviceWrites &&
+        mfaClicksSelect.rows[0].cnt >= 1,
+    });
+
+    async function expectRpcAuthBlock(roleName, subUuid, aal, sql, params = []) {
+      try {
+        const res = await runAsUser(roleName, subUuid, aal, () => db.query(sql, params));
+        return { blocked: false, reason: `ALLOWED (rows=${res.rows.length})` };
+      } catch (err) {
+        return {
+          blocked: /permission denied|unauthorized/i.test(err.message),
+          reason: err.message,
+        };
+      }
+    }
+
+    // B6: Atomik RPC yetki kontrolü + kısmi hata rollback testleri
+    const aal1RpcRestBlock = await expectRpcAuthBlock(
+      'authenticated',
+      cloudAdminUuid,
+      'aal1',
+      `SELECT public.ya_admin_save_restaurant(NULL, $1::jsonb, '[]'::jsonb);`,
+      [
+        JSON.stringify({
+          category_id: categoryId,
+          location: 'Moda',
+          name: { tr: 'Yetkisiz' },
+        }),
+      ]
+    );
+    const anonRpcGroupBlock = await expectRpcAuthBlock(
+      'anon',
+      null,
+      null,
+      `SELECT public.ya_admin_save_group(NULL, 'Anon Grup', ARRAY['yeriniayir.com'], ARRAY[$1::uuid]);`,
+      [validHotelId1]
+    );
+
+    // Restoran pozitif + atomik rollback testi
+    const restCreateRes = await runAsUser('authenticated', cloudAdminUuid, 'aal2', () =>
+      db.query(
+        `SELECT public.ya_admin_save_restaurant(NULL, $1::jsonb, $2::jsonb) AS id;`,
+        [
+          JSON.stringify({
+            category_id: categoryId,
+            location: 'Moda, Kadıköy',
+            name: { tr: 'Atomik Kahve' },
+            google_rating: 4.7,
+            display_order: 2,
+          }),
+          JSON.stringify([
+            { emoji: '☕', text: { tr: 'Not 1' }, display_order: 0 },
+            { emoji: '🥐', text: { tr: 'Not 2' }, display_order: 1 },
+          ]),
+        ]
+      )
+    );
+    const atomicRestId = restCreateRes.rows[0].id;
+
+    let restRollbackTriggered = false;
+    try {
+      await runAsUser('authenticated', cloudAdminUuid, 'aal2', () =>
+        db.query(
+          `SELECT public.ya_admin_save_restaurant($1::uuid, $2::jsonb, $3::jsonb) AS id;`,
+          [
+            atomicRestId,
+            JSON.stringify({
+              category_id: categoryId,
+              location: 'BOZUK_LOKASYON_GERI_ALINMALI',
+              name: { tr: 'Atomik Kahve Bozuk' },
+              google_rating: 1.0,
+              display_order: 99,
+            }),
+            JSON.stringify([
+              { emoji: '☕', text: { tr: 'Yeni Geçici Not' }, display_order: 0 },
+              { emoji: '❌', text: '', display_order: 1 }, // 2. not başarısız -> tüm UPDATE + DELETE + 1. INSERT rollback!
+            ]),
+          ]
+        )
+      );
+    } catch {
+      restRollbackTriggered = true;
+    }
+
+    const restAfterRollback = await db.query(
+      `SELECT location, (name::text) AS name_txt FROM public.restaurants WHERE id = $1::uuid;`,
+      [atomicRestId]
+    );
+    const restNotesAfterRollback = await db.query(
+      `SELECT (text::text) AS txt FROM public.restaurant_notes WHERE restaurant_id = $1::uuid ORDER BY display_order;`,
+      [atomicRestId]
+    );
+
+    // Grup pozitif + atomik rollback testi
+    const grpCreateRes = await runAsUser('authenticated', cloudAdminUuid, 'aal2', () =>
+      db.query(
+        `SELECT public.ya_admin_save_group(NULL, 'İlk Grup Başlığı', ARRAY['yeriniayir.com'], ARRAY[$1::uuid, $2::uuid]) AS id;`,
+        [validHotelId1, validHotelId2]
+      )
+    );
+    const atomicGroupId = grpCreateRes.rows[0].id;
+
+    let grpRollbackTriggered = false;
+    try {
+      await runAsUser('authenticated', cloudAdminUuid, 'aal2', () =>
+        db.query(
+          `SELECT public.ya_admin_save_group($1::uuid, 'BOZUK_GRUP_GERI_ALINMALI', ARRAY['worldandhotels.com'], ARRAY[$2::uuid, $3::uuid]) AS id;`,
+          [atomicGroupId, validHotelId1, invalidHotelId] // 2. hotel FK hatası -> tüm UPDATE groups + DELETE group_hotels + 1. INSERT rollback!
+        )
+      );
+    } catch {
+      grpRollbackTriggered = true;
+    }
+
+    const grpAfterRollback = await db.query(
+      `SELECT title FROM public.groups WHERE id = $1::uuid;`,
+      [atomicGroupId]
+    );
+    const grpHotelsAfterRollback = await db.query(
+      `SELECT hotel_id::text FROM public.group_hotels WHERE group_id = $1::uuid ORDER BY order_index;`,
+      [atomicGroupId]
+    );
+
+    const b6Passed =
+      aal1RpcRestBlock.blocked &&
+      anonRpcGroupBlock.blocked &&
+      restRollbackTriggered &&
+      restAfterRollback.rows[0]?.location === 'Moda, Kadıköy' &&
+      restNotesAfterRollback.rows.length === 2 &&
+      restNotesAfterRollback.rows[0].txt.includes('Not 1') &&
+      restNotesAfterRollback.rows[1].txt.includes('Not 2') &&
+      grpRollbackTriggered &&
+      grpAfterRollback.rows[0]?.title === 'İlk Grup Başlığı' &&
+      grpHotelsAfterRollback.rows.map((r) => r.hotel_id).join(',') === `${validHotelId1},${validHotelId2}`;
+
+    results.push({
+      test: '[B6] ya_admin_save_restaurant & ya_admin_save_group atomik rollback ve MFA/admin kilidi',
+      expected: 'yetkisiz RPC=BLOCK & kısmi hata=tam rollback (eski restoran+2 not & eski grup+2 otel korunur)',
+      actual: `aal1Block=${aal1RpcRestBlock.blocked}, anonBlock=${anonRpcGroupBlock.blocked}, restRb=${restRollbackTriggered}, restLoc=${restAfterRollback.rows[0]?.location}, notes=${restNotesAfterRollback.rows.length}, grpRb=${grpRollbackTriggered}, grpTitle=${grpAfterRollback.rows[0]?.title}, grpHotels=${grpHotelsAfterRollback.rows.length}`,
+      passed: b6Passed,
     });
 
     console.log('[AŞAMA 3] Test Sonuç Tablosu:');

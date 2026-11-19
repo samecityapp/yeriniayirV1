@@ -47,12 +47,25 @@ export function generateHotelSchema(hotel: Hotel, lang: string = 'tr') {
       bestRating: '10',
       worstRating: '1',
     };
+  }
+
+  const rawReviewCount = (hotel as Hotel & { reviewCount?: unknown }).reviewCount;
+  const verifiedReviewCount =
+    typeof rawReviewCount === 'number'
+      ? Number.isInteger(rawReviewCount) && rawReviewCount > 0
+        ? String(rawReviewCount)
+        : null
+      : typeof rawReviewCount === 'string' && /^[1-9]\d*$/.test(rawReviewCount.trim())
+        ? rawReviewCount.trim()
+        : null;
+
+  if (hotel.gnkScore && verifiedReviewCount) {
     schema.aggregateRating = {
       '@type': 'AggregateRating',
       ratingValue: hotel.gnkScore.toString(),
       bestRating: '10',
       worstRating: '1',
-      reviewCount: '1',
+      reviewCount: verifiedReviewCount,
     };
   }
 
@@ -79,17 +92,29 @@ export function generateHotelSchema(hotel: Hotel, lang: string = 'tr') {
 }
 
 export function generateFAQSchema(faqs: { question: string; answer: string }[]) {
+  const validFaqs = Array.isArray(faqs)
+    ? faqs.filter(
+        (faq) =>
+          typeof faq?.question === 'string' &&
+          faq.question.trim().length > 0 &&
+          typeof faq?.answer === 'string' &&
+          faq.answer.trim().length > 0
+      )
+    : [];
+  if (validFaqs.length === 0) {
+    return null;
+  }
   return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: faqs.map(faq => ({
+    mainEntity: validFaqs.map(faq => ({
       '@type': 'Question',
-      name: faq.question,
+      name: faq.question.trim(),
       acceptedAnswer: {
         '@type': 'Answer',
-        text: faq.answer
-      }
-    }))
+        text: faq.answer.trim(),
+      },
+    })),
   };
 }
 

@@ -205,6 +205,46 @@ export async function fetchAdminDashboardStatsAction(): Promise<
   };
 }
 
+export async function getAdminHotelAnalyticsSummaryAction(
+  rawHotelId: string
+): Promise<LegacyAdminActionResult<{ views: number; clicks: number }>> {
+  const ctx = await getAuthorizedAdminClient({ readOnly: true });
+  if (!ctx.ok) return ctx;
+
+  const parsedId = UuidSchema.safeParse(rawHotelId);
+  if (!parsedId.success) {
+    return { ok: false, status: 400, error: 'Geçersiz otel kimliği.' };
+  }
+  if (isSupabaseIsolated) {
+    return { ok: true, data: { views: 0, clicks: 0 } };
+  }
+
+  const [viewsRes, clicksRes] = await Promise.all([
+    ctx.client
+      .from('analytics_events')
+      .select('*', { count: 'exact', head: true })
+      .eq('hotel_id', parsedId.data)
+      .eq('event_type', 'page_view'),
+    ctx.client
+      .from('analytics_events')
+      .select('*', { count: 'exact', head: true })
+      .eq('hotel_id', parsedId.data)
+      .neq('event_type', 'page_view'),
+  ]);
+
+  if (viewsRes.error || clicksRes.error) {
+    return { ok: false, status: 500, error: 'Analitik verisi alınamadı.' };
+  }
+
+  return {
+    ok: true,
+    data: {
+      views: viewsRes.count || 0,
+      clicks: clicksRes.count || 0,
+    },
+  };
+}
+
 export async function saveAdminRestaurantAction(
   rawInput: unknown
 ): Promise<LegacyAdminActionResult<{ id: string }>> {
@@ -217,43 +257,31 @@ export async function saveAdminRestaurantAction(
   }
 
   const { id, notes, ...restaurantData } = parsed.data;
-  let restaurantId: string;
+  const { data: savedId, error } = await ctx.client.rpc('ya_admin_save_restaurant', {
+    p_id: id ?? null,
+    p_restaurant: restaurantData,
+    p_notes: notes.map((note, idx) => ({
+      emoji: note.emoji,
+      text: note.text,
+      display_order: idx,
+    })),
+  });
 
-  if (id) {
-    const { error } = await ctx.client.from('restaurants').update(restaurantData).eq('id', id);
-    if (error) return { ok: false, status: 500, error: 'Restoran güncellenemedi.' };
-    restaurantId = id;
-    const { error: delNotesErr } = await ctx.client
-      .from('restaurant_notes')
-      .delete()
-      .eq('restaurant_id', restaurantId);
-    if (delNotesErr) return { ok: false, status: 500, error: 'Restoran notları temizlenemedi.' };
-  } else {
-    const { data, error } = await ctx.client
-      .from('restaurants')
-      .insert([restaurantData])
-      .select('id')
-      .single();
-    if (error || !data?.id) {
-      return { ok: false, status: 500, error: 'Restoran oluşturulamadı.' };
-    }
-    restaurantId = String(data.id);
-  }
-
-  if (notes.length > 0) {
-    const { error: notesErr } = await ctx.client.from('restaurant_notes').insert(
-      notes.map((note, idx) => ({
-        restaurant_id: restaurantId,
-        emoji: note.emoji,
-        text: note.text,
-        display_order: idx,
-      }))
-    );
-    if (notesErr) return { ok: false, status: 500, error: 'Restoran notları kaydedilemedi.' };
+  if (error || !savedId) {
+    const isForbidden = error?.code === '42501';
+    return {
+      ok: false,
+      status: isForbidden ? 403 : 500,
+      error: isForbidden
+        ? 'Bu işlem için yetkiniz yok.'
+        : id
+          ? 'Restoran güncellenemedi.'
+          : 'Restoran oluşturulamadı.',
+    };
   }
 
   revalidatePublicCatalog();
-  return { ok: true, data: { id: restaurantId } };
+  return { ok: true, data: { id: String(savedId) } };
 }
 
 export async function deleteAdminRestaurantAction(
@@ -453,35 +481,25 @@ export async function saveAdminGroupAction(rawInput: unknown): Promise<LegacyAdm
   if (!parsed.success) return { ok: false, status: 400, error: 'Geçersiz grup verisi.' };
 
   const { id, title, domains, hotelIds } = parsed.data;
-  let groupId: string;
+  const { error } = await ctx.client.rpc('ya_admin_save_group', {
+    p_id: id ?? null,
+    p_title: title,
+    p_domains: domains,
+    p_hotel_ids: hotelIds,
+  });
 
-  if (id) {
-    const { error } = await ctx.client
-      .from('groups')
-      .update({ title, domains, updated_at: new Date().toISOString() })
-      .eq('id', id);
-    if (error) return { ok: false, status: 500, error: 'Grup güncellenemedi.' };
-    groupId = id;
-    const { error: delErr } = await ctx.client.from('group_hotels').delete().eq('group_id', id);
-    if (delErr) return { ok: false, status: 500, error: 'Grup otelleri güncellenemedi.' };
-  } else {
-    const { data, error } = await ctx.client
-      .from('groups')
-      .insert([{ title, is_published: false, domains }])
-      .select('id')
-      .single();
-    if (error || !data?.id) return { ok: false, status: 500, error: 'Grup oluşturulamadı.' };
-    groupId = String(data.id);
+  if (error) {
+    const isForbidden = error.code === '42501';
+    return {
+      ok: false,
+      status: isForbidden ? 403 : 500,
+      error: isForbidden
+        ? 'Bu işlem için yetkiniz yok.'
+        : id
+          ? 'Grup güncellenemedi.'
+          : 'Grup oluşturulamadı.',
+    };
   }
-
-  const { error: relErr } = await ctx.client.from('group_hotels').insert(
-    hotelIds.map((hid, index) => ({
-      group_id: groupId,
-      hotel_id: hid,
-      display_order: index,
-    }))
-  );
-  if (relErr) return { ok: false, status: 500, error: 'Grup otelleri kaydedilemedi.' };
 
   revalidatePublicCatalog();
   return { ok: true };

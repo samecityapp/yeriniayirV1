@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Download, Loader2 } from 'lucide-react';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
-import { supabase } from '@/lib/supabase';
+import { getAdminHotelAnalyticsSummaryAction } from '@/app/[lang]/(admin)/jilinrime/legacyAdminActions';
 
 interface ReportGeneratorProps {
   hotelId: string;
@@ -18,18 +18,11 @@ export function ReportGenerator({ hotelId, hotelName }: ReportGeneratorProps) {
   const generateReport = async () => {
     setLoading(true);
     try {
-      // Fetch stats for this hotel
-      const { count: views } = await supabase
-        .from('analytics_events')
-        .select('*', { count: 'exact', head: true })
-        .eq('hotel_id', hotelId)
-        .eq('event_type', 'page_view');
-
-      const { count: clicks } = await supabase
-        .from('analytics_events')
-        .select('*', { count: 'exact', head: true })
-        .eq('hotel_id', hotelId)
-        .neq('event_type', 'page_view');
+      const summary = await getAdminHotelAnalyticsSummaryAction(hotelId);
+      if (!summary.ok) {
+        throw new Error(summary.error || 'Rapor verisi alınamadı.');
+      }
+      const { views, clicks } = summary.data;
 
       // Create a temporary DOM element for the report
       const reportDiv = document.createElement('div');

@@ -141,69 +141,22 @@ export default async function HotelDetailPage(props: Props) {
     { name: getLocalizedText(hotel.name, lang), url: buildHotelPublicUrl(hotel, lang) },
   ]);
 
-  const defaultFaqs = [
-    {
-      question: lang === 'tr' ? 'Giriş ve çıkış saatleri neler?' : 'What are the check-in and check-out times?',
-      answer: lang === 'tr' ? 'Giriş saati 14:00, çıkış saati 12:00\'dir. Erken giriş ve geç çıkış talepleri müsaitliğe bağlıdır.' : 'Check-in time is 14:00, check-out time is 12:00. Early check-in and late check-out requests are subject to availability.',
-    },
-    {
-      question: lang === 'tr' ? 'Tesisin kahvaltı saatleri?' : 'What are the breakfast hours?',
-      answer: lang === 'tr' ? 'Kahvaltı her gün 07:30 - 10:30 saatleri arasında servis edilmektedir.' : 'Breakfast is served daily between 07:30 - 10:30.',
-    },
-    {
-      question: lang === 'tr' ? 'Otopark var mı?' : 'Is there parking?',
-      answer: lang === 'tr' ? 'Evet, tesis bünyesinde misafirler için ücretsiz otopark mevcuttur.' : 'Yes, free parking is available on site for guests.',
-    },
-    {
-      question: lang === 'tr' ? 'Denize Uzaklığı Nedir?' : 'How far is it to the sea?',
-      answer: hotel.tags?.includes('denize-sifir')
-        ? (lang === 'tr' ? 'Tesisimiz denize sıfır konumdadır.' : 'Our facility is located on the seafront.')
-        : (lang === 'tr' ? 'Plaja yürüme mesafesindedir.' : 'It is within walking distance to the beach.'),
-    },
-    {
-      question: lang === 'tr' ? 'Engelliler için uygun mu?' : 'Is it suitable for the disabled?',
-      answer: lang === 'tr' ? 'Tesisimiz engelli misafirlerimizin erişimi için tekerlekli sandalye rampaları ve asansör ile donatılmıştır.' : 'Our facility is equipped with wheelchair ramps and an elevator for the access of our disabled guests.',
-    },
-    {
-      question: lang === 'tr' ? 'Çocuk Kabul Ediyor musunuz?' : 'Do you accept children?',
-      answer: hotel.tags?.includes('yetiskin-oteli')
-        ? (lang === 'tr' ? 'Hayır, tesisimiz +12 yaş yetişkin oteli konseptindedir.' : 'No, our facility is adult-only (+12 years old) concept.')
-        : (lang === 'tr' ? 'Evet, her yaş grubundan çocuk misafirimiz kabul edilmektedir.' : 'Yes, child guests of all age groups are accepted.'),
-    },
-    {
-      question: lang === 'tr' ? 'Bu otele gelmek için en iyi zaman ne zaman?' : 'When is the best time to visit this hotel?',
-      answer: lang === 'tr' ? 'Bahar ve yaz ayları (Mayıs-Ekim) deniz tatili için en ideal dönemdir.' : 'Spring and summer months (May-October) are the most ideal period for sea holiday.',
-    },
-    {
-      question: lang === 'tr' ? 'Bölgede mutlaka görülmesi gereken yerler nereler?' : 'Which places should be seen in the region?',
-      answer: lang === 'tr'
-        ? `Konumumuz ${getLocalizedText(hotel.location, lang).split(',')[0]} merkezine yakındır. Tarihi çarşı ve liman mutlaka görülmelidir.`
-        : `Our location is close to ${getLocalizedText(hotel.location, lang).split(',')[0]} center. The historical bazaar and harbor should definitely be seen.`,
-    },
-    {
-      question: lang === 'tr' ? 'Tesiste spor olanağı var mı? Gym, Yoga, Pilates?' : 'Are there sport facilities? Gym, Yoga, Pilates?',
-      answer: lang === 'tr' ? 'Otelimizde tam donanımlı fitness merkezi bulunmaktadır. Ayrıca sabahları yoga dersleri düzenlenmektedir.' : 'Our hotel has a fully equipped fitness center. Also, yoga classes are organized in the mornings.',
-    },
-    {
-      question: lang === 'tr' ? 'Evcil hayvan kabul ediyor musunuz?' : 'Do you accept pets?',
-      answer: lang === 'tr' ? 'Maalesef tesisimize evcil hayvan kabul edilmemektedir.' : 'Unfortunately, pets are not accepted in our facility.',
-    },
-  ];
+  const displayFaqs = Array.isArray(hotel.faqs)
+    ? hotel.faqs
+        .map((item) => ({
+          question: typeof item?.question === 'string' ? item.question.trim() : '',
+          answer: typeof item?.answer === 'string' ? item.answer.trim() : '',
+        }))
+        .filter((item) => item.question.length > 0 && item.answer.length > 0)
+    : [];
 
-  const displayFaqs = (hotel.faqs && hotel.faqs.length > 0)
-    ? hotel.faqs.filter(f => f.answer && f.answer.trim().length > 0)
-    : defaultFaqs;
-
-  const faqSchema = generateFAQSchema(displayFaqs);
+  const faqSchema = displayFaqs.length > 0 ? generateFAQSchema(displayFaqs) : null;
 
   return (
     <>
       <JsonLd data={hotelSchema} />
       <JsonLd data={breadcrumbSchema} />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      {faqSchema && <JsonLd data={faqSchema} />}
 
       {/* Mobile View */}
       <div className="md:hidden bg-gray-50 min-h-screen">
@@ -259,9 +212,11 @@ export default async function HotelDetailPage(props: Props) {
             </div>
           )}
 
-          <div className="order-7">
-            <HotelFAQ faqs={displayFaqs} lang={lang} />
-          </div>
+          {displayFaqs.length > 0 && (
+            <div className="order-7">
+              <HotelFAQ faqs={displayFaqs} lang={lang} />
+            </div>
+          )}
 
           <div className="order-5">
             <LocationCard latitude={hotel.latitude} longitude={hotel.longitude} address={getLocalizedText(hotel.location, lang)} dict={dict} />
@@ -401,9 +356,11 @@ export default async function HotelDetailPage(props: Props) {
             </Suspense>
           </div>
 
-          <div className="mb-6">
-            <HotelFAQ faqs={displayFaqs} lang={lang} />
-          </div>
+          {displayFaqs.length > 0 && (
+            <div className="mb-6">
+              <HotelFAQ faqs={displayFaqs} lang={lang} />
+            </div>
+          )}
 
           <Suspense fallback={
             <div className="mt-12 bg-white rounded-2xl border border-gray-200 overflow-hidden">

@@ -6,6 +6,7 @@ import {
   enforceRateLimit,
 } from '@/lib/pilot/rateLimit';
 import { isSupabaseIsolated, supabase } from '@/lib/supabase';
+import { hasServiceRoleKey, supabaseAdmin } from '@/lib/supabase-admin';
 
 const NO_STORE_HEADERS = {
   'Cache-Control': 'no-store, max-age=0',
@@ -185,19 +186,38 @@ export async function POST(request: Request) {
       );
     }
 
-    if (rl.policy === 'emergency-fallback' || rl.policy === 'outage-blocked') {
-      console.warn('[Analytics] Dropped event during rate-limit degradation');
+    if (rl.policy !== 'upstash') {
+      console.warn(
+        `[Analytics] Dropped event: distributed rate-limit unavailable (policy=${rl.policy})`
+      );
       return NextResponse.json(
         { ok: true, success: true, recorded: false },
         { status: 202, headers: { ...NO_STORE_HEADERS, ...rlHeaders } }
       );
     }
 
+    const isCloudRuntime =
+      process.env.APP_ENVIRONMENT === 'production' ||
+      process.env.APP_ENVIRONMENT === 'staging' ||
+      process.env.VERCEL === '1' ||
+      process.env.VERCEL_ENV === 'production' ||
+      process.env.VERCEL_ENV === 'preview';
+
+    if (isCloudRuntime && !hasServiceRoleKey) {
+      console.warn('[Analytics] Dropped event: server service_role writer unavailable');
+      return NextResponse.json(
+        { ok: true, success: true, recorded: false },
+        { status: 202, headers: { ...NO_STORE_HEADERS, ...rlHeaders } }
+      );
+    }
+
+    const analyticsClient = hasServiceRoleKey ? supabaseAdmin : supabase;
+
     const dbController = new AbortController();
     let dbAbortTimer: ReturnType<typeof setTimeout> | undefined;
     try {
       dbAbortTimer = setTimeout(() => dbController.abort(), DB_TIMEOUT_MS);
-      const baseInsert = supabase.from('analytics_events').insert({
+      const baseInsert = analyticsClient.from('analytics_events').insert({
         hotel_id: hotel_id ?? null,
         event_type,
         device_type: device_type || 'unknown',

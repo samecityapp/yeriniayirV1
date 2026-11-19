@@ -666,10 +666,10 @@ function parseSitemapEntries(xml) {
       await assert.rejects(() => pubMod.readCloudPublication('moda/kahve'));
       supabaseMode = 'empty';
 
-      // 7C: Migration inventory check (72 applied + 5 proposed)
+      // 7C: Migration inventory check (73 applied + 5 proposed)
       const migs = fs.readdirSync(path.join(ROOT, 'supabase/migrations')).filter((f) => f.endsWith('.sql'));
       const proposed = fs.readdirSync(path.join(ROOT, 'supabase/proposed')).filter((f) => f.endsWith('.sql'));
-      assert.equal(migs.length, 72);
+      assert.equal(migs.length, 73);
       assert.equal(proposed.length, 5);
     });
 

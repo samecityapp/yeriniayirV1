@@ -398,8 +398,9 @@ function extractSeoLinks(html) {
       }
 
       const migFiles = fs.readdirSync(path.join(ROOT, 'supabase/migrations')).filter((f) => f.endsWith('.sql'));
-      assert.equal(migFiles.length, 72);
+      assert.equal(migFiles.length, 73);
       assert.ok(migFiles.includes('20261119180000_enforce_cloud_mfa_admin_rls.sql'));
+      assert.ok(migFiles.includes('20261119210000_paket10c_storage_scope_analytics_lockdown_atomic_rpcs.sql'));
     });
 
     // Check 2 — F2 & F3 Emergency mode fail-safe + corrupt Redis + namespace isolation

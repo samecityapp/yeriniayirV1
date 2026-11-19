@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getDemoHotelById } from '@/lib/demoHotels';
 import { enforceRateLimit } from '@/lib/pilot/rateLimit';
 import { isSupabaseIsolated, supabase } from '@/lib/supabase';
+import { hasServiceRoleKey, supabaseAdmin } from '@/lib/supabase-admin';
 
 export const dynamic = 'force-dynamic';
 
@@ -115,15 +116,26 @@ export async function GET(request: NextRequest) {
       request.headers.get('referer') || request.headers.get('referrer')
     );
 
-    const clickPromise = withTimeout(
-      supabase.from('hotel_clicks').insert({
-        hotel_id: hotelId,
-        user_ip: userIpHash,
-        user_agent: userAgent,
-        referrer,
-      }),
-      DB_TIMEOUT_MS
-    );
+    const isCloudRuntime =
+      process.env.APP_ENVIRONMENT === 'production' ||
+      process.env.APP_ENVIRONMENT === 'staging' ||
+      process.env.VERCEL === '1' ||
+      process.env.VERCEL_ENV === 'production' ||
+      process.env.VERCEL_ENV === 'preview';
+
+    const canRecordClick = hasServiceRoleKey || !isCloudRuntime;
+    const clickClient = hasServiceRoleKey ? supabaseAdmin : supabase;
+    const clickPromise = canRecordClick
+      ? withTimeout(
+          clickClient.from('hotel_clicks').insert({
+            hotel_id: hotelId,
+            user_ip: userIpHash,
+            user_agent: userAgent,
+            referrer,
+          }),
+          DB_TIMEOUT_MS
+        ).then((res) => ({ ...res, recorded: !res?.error }))
+      : Promise.resolve({ error: null, recorded: false });
 
     const hotelPromise = withTimeout(
       supabase.from('hotels').select('website_url').eq('id', hotelId).maybeSingle(),
@@ -135,6 +147,9 @@ export async function GET(request: NextRequest) {
     if (clickResult.status === 'fulfilled' && clickResult.value.error) {
       console.error('Failed to track click:', clickResult.value.error.code || 'unknown');
     }
+
+    const clickTracked =
+      clickResult.status === 'fulfilled' && clickResult.value.recorded === true;
 
     const resolvedHotelUrl =
       hotelResult.status === 'fulfilled' && !hotelResult.value.error
@@ -150,7 +165,7 @@ export async function GET(request: NextRequest) {
     const response = NextResponse.redirect(resolvedHotelUrl, {
       headers: rlResponseHeaders,
     });
-    response.headers.set('X-Hotel-Click-Tracked', 'true');
+    response.headers.set('X-Hotel-Click-Tracked', clickTracked ? 'true' : 'false');
     return response;
   } catch (err) {
     const safeName = err && typeof err === 'object' && 'name' in err ? String((err as Error).name).slice(0, 64) : 'Error';

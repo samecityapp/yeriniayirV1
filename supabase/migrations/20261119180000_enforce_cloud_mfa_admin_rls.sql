@@ -288,7 +288,7 @@ BEGIN
 END
 $$;
 
--- 5. Enforce MFA + active membership on restaurant-images storage bucket writes
+-- 5. Enforce MFA + active membership on restaurant-images storage bucket writes (never drop or block other buckets)
 DO $$
 DECLARE
   pol record;
@@ -301,6 +301,11 @@ BEGIN
         AND tablename = 'objects'
         AND cmd IN ('INSERT', 'UPDATE', 'DELETE', 'ALL')
         AND policyname NOT LIKE 'ya_permanent_%'
+        AND (
+          coalesce(qual, '') ILIKE '%restaurant-images%'
+          OR coalesce(with_check, '') ILIKE '%restaurant-images%'
+          OR policyname LIKE 'ya_mfa_admin_storage_%'
+        )
     LOOP
       EXECUTE format('DROP POLICY IF EXISTS %I ON storage.objects', pol.policyname);
     END LOOP;
@@ -318,14 +323,14 @@ BEGIN
 
     CREATE POLICY ya_mfa_admin_storage_guard_insert
       ON storage.objects AS RESTRICTIVE FOR INSERT TO anon, authenticated
-      WITH CHECK (public.is_admin_user());
+      WITH CHECK (bucket_id <> 'restaurant-images' OR public.is_admin_user());
     CREATE POLICY ya_mfa_admin_storage_guard_update
       ON storage.objects AS RESTRICTIVE FOR UPDATE TO anon, authenticated
-      USING (public.is_admin_user())
-      WITH CHECK (public.is_admin_user());
+      USING (bucket_id <> 'restaurant-images' OR public.is_admin_user())
+      WITH CHECK (bucket_id <> 'restaurant-images' OR public.is_admin_user());
     CREATE POLICY ya_mfa_admin_storage_guard_delete
       ON storage.objects AS RESTRICTIVE FOR DELETE TO anon, authenticated
-      USING (public.is_admin_user());
+      USING (bucket_id <> 'restaurant-images' OR public.is_admin_user());
   END IF;
 END
 $$;
