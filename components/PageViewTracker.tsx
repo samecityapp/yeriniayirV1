@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
+import { hasExplicitlyRejectedAnalytics } from '@/lib/cookieConsent';
 
 const HOTEL_DETAIL_UUID_REGEX =
   /^\/(?:tr|en|el)\/(?:otel|hotel)\/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})(?:\/|$)/i;
@@ -13,6 +14,8 @@ export function PageViewTracker() {
 
   useEffect(() => {
     if (!pathname) return;
+    if (process.env.NEXT_PUBLIC_DISABLE_ANALYTICS === '1') return;
+    if (hasExplicitlyRejectedAnalytics()) return;
 
     const match = pathname.match(HOTEL_DETAIL_UUID_REGEX);
     if (!match) return;

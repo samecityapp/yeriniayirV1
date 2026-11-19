@@ -1,0 +1,24 @@
+name: Verification gates
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  offline-gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: node scripts/security/scan-secrets.cjs
+      - run: node scripts/security/policy-tests.cjs
+      - run: node scripts/verify_pilot_security.cjs
+      - run: node scripts/verify_staging_preflight.cjs
+      - run: UPSTASH_REDIS_REST_URL=https://preflight-shape.upstash.io UPSTASH_REDIS_REST_TOKEN=dummy-shape-token RATE_LIMIT_CRITICAL_OUTAGE_MODE=block node scripts/verify_production_ratelimit_config.cjs
+      - run: node scripts/verify_v3_gastronomy.cjs
+      - run: node scripts/verify_visitor_content.cjs
+      - run: npx tsc --noEmit

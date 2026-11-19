@@ -21,6 +21,19 @@ import { LocationPickerModal } from './LocationPickerModal';
 import { PremiumRestaurantCard } from '@/components/nearby-places/PremiumRestaurantCard';
 import { VariantABottomSheet } from '@/components/mobile-detail-variants/VariantABottomSheet';
 
+const DEFAULT_REGION_CLIENT_CACHE_TTL_MS = 5 * 60 * 1000;
+const MAX_CLIENT_CACHED_REGIONS = 32;
+
+function getRegionClientCacheTtlMs(): number {
+  if (typeof window !== 'undefined') {
+    const override = (window as unknown as { __YA_REGION_CACHE_TTL_MS?: unknown }).__YA_REGION_CACHE_TTL_MS;
+    if (typeof override === 'number' && Number.isFinite(override) && override >= 50) {
+      return Math.min(override, DEFAULT_REGION_CLIENT_CACHE_TTL_MS);
+    }
+  }
+  return DEFAULT_REGION_CLIENT_CACHE_TTL_MS;
+}
+
 const REGION_CURATED_CARDS: Record<string, {image:string;badge:string;headline:string;vibe:string}> = {
   'moda-kadikoy': {
     image: '/images/gastronomy/bolge-moda.svg',
@@ -663,24 +676,60 @@ export function GastronomyPageClient({
     [directoryProvider, initialLocationSlug]
   );
 
-  const regionCacheRef = useRef<Map<string, StaticRegionVenuePayload>>(new Map());
+  const regionCacheRef = useRef<Map<string, { payload: StaticRegionVenuePayload; expiresAt: number }>>(new Map());
+  const staleRevalidateRef = useRef<Set<string>>(new Set());
   const inFlightRequestsRef = useRef<Map<string, Promise<StaticRegionVenuePayload>>>(new Map());
   const failedRegionCooldownRef = useRef<Map<string, number>>(new Map());
   const activeRegionRequestRef = useRef<string | null>(initialLocation?.slug || null);
 
+  const getFreshCachedRegion = useCallback((slug: string): StaticRegionVenuePayload | null => {
+    const entry = regionCacheRef.current.get(slug);
+    if (!entry) return null;
+    if (Date.now() >= entry.expiresAt) {
+      regionCacheRef.current.delete(slug);
+      staleRevalidateRef.current.add(slug);
+      return null;
+    }
+    return entry.payload;
+  }, []);
+
+  const setCachedRegion = useCallback((slug: string, payload: StaticRegionVenuePayload) => {
+    const now = Date.now();
+    for (const [k, existing] of Array.from(regionCacheRef.current.entries())) {
+      if (now >= existing.expiresAt) {
+        regionCacheRef.current.delete(k);
+        staleRevalidateRef.current.add(k);
+      }
+    }
+    regionCacheRef.current.delete(slug);
+    while (regionCacheRef.current.size >= MAX_CLIENT_CACHED_REGIONS) {
+      const oldestKey = regionCacheRef.current.keys().next().value;
+      if (!oldestKey) break;
+      regionCacheRef.current.delete(oldestKey);
+    }
+    regionCacheRef.current.set(slug, {
+      payload,
+      expiresAt: now + getRegionClientCacheTtlMs(),
+    });
+    staleRevalidateRef.current.delete(slug);
+  }, []);
+
   if (initialLocation && discovery.venues.length > 0 && !regionCacheRef.current.has(initialLocation.slug)) {
     regionCacheRef.current.set(initialLocation.slug, {
-      regionSlug: initialLocation.slug,
-      categories: discovery.categories,
-      venues: discovery.venues,
-      nearbyVenues: discovery.nearbyVenues || [],
+      payload: {
+        regionSlug: initialLocation.slug,
+        categories: discovery.categories,
+        venues: discovery.venues,
+        nearbyVenues: discovery.nearbyVenues || [],
+      },
+      expiresAt: Date.now() + getRegionClientCacheTtlMs(),
     });
   }
 
   const [selectedLocation, setSelectedLocation] = useState<FoodLocation | null>(() => initialLocation);
   const [activePayload, setActivePayload] = useState<StaticRegionVenuePayload | null>(() =>
     initialLocation && discovery.venues.length > 0
-      ? regionCacheRef.current.get(initialLocation.slug) || null
+      ? regionCacheRef.current.get(initialLocation.slug)?.payload || null
       : null
   );
   const [selectedCategorySlug, setSelectedCategorySlug] = useState<string>(() => {
@@ -716,40 +765,49 @@ export function GastronomyPageClient({
     [mergedDiscovery]
   );
 
-  const fetchRegionPayload = useCallback(async (slug: string): Promise<StaticRegionVenuePayload> => {
-    const cached = regionCacheRef.current.get(slug);
-    if (cached) return cached;
-
-    const existingPromise = inFlightRequestsRef.current.get(slug);
-    if (existingPromise) return existingPromise;
-
-    const requestPromise = (async () => {
-      const controller = new AbortController();
-      const timer = setTimeout(() => controller.abort(), 8000);
-      try {
-        const res = await fetch(`/api/gastronomy/regions/${encodeURIComponent(slug)}`, {
-          signal: controller.signal,
-        });
-        if (!res.ok) {
-          throw new Error(`HTTP ${res.status}`);
-        }
-        const payload = (await res.json()) as StaticRegionVenuePayload;
-        regionCacheRef.current.set(slug, payload);
-        failedRegionCooldownRef.current.delete(slug);
-        return payload;
-      } catch (err) {
-        failedRegionCooldownRef.current.set(slug, Date.now() + 5000);
-        throw err;
-      } finally {
-        clearTimeout(timer);
+  const fetchRegionPayload = useCallback(
+    async (slug: string, options?: { forceRevalidate?: boolean }): Promise<StaticRegionVenuePayload> => {
+      if (!options?.forceRevalidate) {
+        const cached = getFreshCachedRegion(slug);
+        if (cached) return cached;
       }
-    })().finally(() => {
-      inFlightRequestsRef.current.delete(slug);
-    });
 
-    inFlightRequestsRef.current.set(slug, requestPromise);
-    return requestPromise;
-  }, []);
+      const existingPromise = inFlightRequestsRef.current.get(slug);
+      if (existingPromise) return existingPromise;
+
+      const shouldBypassHttpCache =
+        Boolean(options?.forceRevalidate) || staleRevalidateRef.current.has(slug);
+
+      const requestPromise = (async () => {
+        const controller = new AbortController();
+        const timer = setTimeout(() => controller.abort(), 8000);
+        try {
+          const res = await fetch(`/api/gastronomy/regions/${encodeURIComponent(slug)}`, {
+            signal: controller.signal,
+            ...(shouldBypassHttpCache ? { cache: 'no-cache' as RequestCache } : {}),
+          });
+          if (!res.ok) {
+            throw new Error(`HTTP ${res.status}`);
+          }
+          const payload = (await res.json()) as StaticRegionVenuePayload;
+          setCachedRegion(slug, payload);
+          failedRegionCooldownRef.current.delete(slug);
+          return payload;
+        } catch (err) {
+          failedRegionCooldownRef.current.set(slug, Date.now() + 5000);
+          throw err;
+        } finally {
+          clearTimeout(timer);
+        }
+      })().finally(() => {
+        inFlightRequestsRef.current.delete(slug);
+      });
+
+      inFlightRequestsRef.current.set(slug, requestPromise);
+      return requestPromise;
+    },
+    [getFreshCachedRegion, setCachedRegion]
+  );
 
   const syncFromBrowserUrl = useCallback(
     (options?: { bypassErrorCooldown?: boolean }) => {
@@ -790,7 +848,7 @@ export function GastronomyPageClient({
     setActiveVenueForModal(null);
     activeRegionRequestRef.current = location.slug;
 
-    const cached = regionCacheRef.current.get(location.slug);
+    const cached = getFreshCachedRegion(location.slug);
     if (cached) {
       setActivePayload(cached);
       setIsRegionLoading(false);
@@ -846,7 +904,7 @@ export function GastronomyPageClient({
         setIsRegionLoading(false);
         setRegionLoadError('Bölge verileri yüklenemedi. Lütfen tekrar deneyin.');
       });
-  }, [directoryProvider, fetchRegionPayload, initialCategorySlug, initialLocationSlug, lang]);
+  }, [directoryProvider, fetchRegionPayload, getFreshCachedRegion, initialCategorySlug, initialLocationSlug, lang]);
 
   useEffect(() => {
     syncFromBrowserUrl();
@@ -854,6 +912,28 @@ export function GastronomyPageClient({
     window.addEventListener('popstate', onPopState);
     return () => window.removeEventListener('popstate', onPopState);
   }, [syncFromBrowserUrl]);
+
+  // Uzun süre arka planda kalan açık sekmede TTL dolduysa aktif bölge verisini sessizce yenile
+  useEffect(() => {
+    if (typeof document === 'undefined' || !selectedLocation) return;
+    const activeSlug = selectedLocation.slug;
+    const onVisibilityChange = () => {
+      if (document.visibilityState !== 'visible') return;
+      if (activeRegionRequestRef.current !== activeSlug) return;
+      if (getFreshCachedRegion(activeSlug)) return;
+      staleRevalidateRef.current.add(activeSlug);
+      void fetchRegionPayload(activeSlug, { forceRevalidate: true })
+        .then((freshPayload) => {
+          if (activeRegionRequestRef.current !== activeSlug) return;
+          setActivePayload(freshPayload);
+        })
+        .catch(() => {
+          // Keep existing visible content if background refresh fails temporarily
+        });
+    };
+    document.addEventListener('visibilitychange', onVisibilityChange);
+    return () => document.removeEventListener('visibilitychange', onVisibilityChange);
+  }, [fetchRegionPayload, getFreshCachedRegion, selectedLocation]);
 
   // Konum seçimi değiştiğinde
   const handleSelectLocation = useCallback(
@@ -863,7 +943,7 @@ export function GastronomyPageClient({
       } catch {}
       failedRegionCooldownRef.current.delete(loc.slug);
 
-      const cached = regionCacheRef.current.get(loc.slug);
+      const cached = getFreshCachedRegion(loc.slug);
       const currentParams =
         typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : new URLSearchParams();
       currentParams.set('region', loc.slug);
@@ -891,7 +971,7 @@ export function GastronomyPageClient({
       window.history.pushState(null, '', nextUrl);
       syncFromBrowserUrl();
     },
-    [lang, selectedLocation, selectedCategorySlug, syncFromBrowserUrl]
+    [lang, selectedLocation, selectedCategorySlug, syncFromBrowserUrl, getFreshCachedRegion]
   );
 
   // Kategori seçimi değiştiğinde

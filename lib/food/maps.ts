@@ -39,6 +39,66 @@ export function distanceToBboxMeters(pt: { lat: number; lng: number }, bbox: Foo
   return haversineMeters(pt, { lat: clampedLat, lng: clampedLng });
 }
 
+function decomposeAllowedBoundaryRects(
+  bbox: FoodRegionBbox,
+  excludeBbox?: FoodRegionBbox
+): FoodRegionBbox[] {
+  if (!excludeBbox) return [bbox];
+  const rects: FoodRegionBbox[] = [];
+  if (excludeBbox.minLat > bbox.minLat) {
+    rects.push({
+      minLat: bbox.minLat,
+      maxLat: Math.min(bbox.maxLat, excludeBbox.minLat),
+      minLng: bbox.minLng,
+      maxLng: bbox.maxLng,
+    });
+  }
+  if (excludeBbox.maxLat < bbox.maxLat) {
+    rects.push({
+      minLat: Math.max(bbox.minLat, excludeBbox.maxLat),
+      maxLat: bbox.maxLat,
+      minLng: bbox.minLng,
+      maxLng: bbox.maxLng,
+    });
+  }
+  const midMinLat = Math.max(bbox.minLat, excludeBbox.minLat);
+  const midMaxLat = Math.min(bbox.maxLat, excludeBbox.maxLat);
+  if (midMaxLat > midMinLat) {
+    if (excludeBbox.minLng > bbox.minLng) {
+      rects.push({
+        minLat: midMinLat,
+        maxLat: midMaxLat,
+        minLng: bbox.minLng,
+        maxLng: Math.min(bbox.maxLng, excludeBbox.minLng),
+      });
+    }
+    if (excludeBbox.maxLng < bbox.maxLng) {
+      rects.push({
+        minLat: midMinLat,
+        maxLat: midMaxLat,
+        minLng: Math.max(bbox.minLng, excludeBbox.maxLng),
+        maxLng: bbox.maxLng,
+      });
+    }
+  }
+  return rects;
+}
+
+export function distanceToAllowedBoundaryMeters(
+  pt: { lat: number; lng: number },
+  bbox: FoodRegionBbox,
+  excludeBbox?: FoodRegionBbox
+): number {
+  const rects = decomposeAllowedBoundaryRects(bbox, excludeBbox);
+  if (rects.length === 0) return Infinity;
+  let best = Infinity;
+  for (const r of rects) {
+    const d = distanceToBboxMeters(pt, r);
+    if (d < best) best = d;
+  }
+  return best;
+}
+
 export interface NearestRegionMatch {
   location: FoodLocation;
   distanceMeters: number;
@@ -71,7 +131,10 @@ export function findNearestPublishedRegion(
       const inBox = isInsideBbox(coords, bbox);
       const excluded = Boolean(exclude && isInsideBbox(coords, exclude));
 
-      if (inBox && !excluded) {
+      // Deliberately excluded sub-areas must never fall back to this region at 0m/boundary distance.
+      if (excluded) continue;
+
+      if (inBox) {
         if (!bestInside || centerDist < bestInsideCenterDist) {
           bestInside = { location: loc, distanceMeters: 0, insideBoundary: true };
           bestInsideCenterDist = centerDist;
@@ -79,7 +142,7 @@ export function findNearestPublishedRegion(
         continue;
       }
 
-      const borderDist = distanceToBboxMeters(coords, bbox);
+      const borderDist = distanceToAllowedBoundaryMeters(coords, bbox, exclude);
       if (borderDist <= maxBorderDistanceMeters) {
         if (
           !bestOutside ||

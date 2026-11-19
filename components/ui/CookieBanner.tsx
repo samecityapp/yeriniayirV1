@@ -2,47 +2,28 @@
 
 import { useState, useEffect } from 'react';
 import { Cookie, Settings, ShieldCheck, ChevronLeft, Check, X } from 'lucide-react';
+import {
+  COOKIE_CONSENT_EVENT,
+  COOKIE_CONSENT_STORAGE_KEY,
+  DEFAULT_COOKIE_PREFERENCES,
+  readSavedCookieConsent,
+  type CookiePreferences,
+} from '@/lib/cookieConsent';
 
-type CookiePreferences = {
-  necessary: boolean;
-  analytics: boolean;
-  marketing: boolean;
-  functional: boolean;
-  performance: boolean;
-};
-
-const DEFAULT_PREFERENCES: CookiePreferences = {
-  necessary: true,
-  analytics: false,
-  marketing: false,
-  functional: false,
-  performance: false,
-};
+const DEFAULT_PREFERENCES = DEFAULT_COOKIE_PREFERENCES;
 
 export function CookieBanner({ dict }: { dict: any }) {
   const [isVisible, setIsVisible] = useState(false);
   const [view, setView] = useState<'banner' | 'settings'>('banner');
   const [preferences, setPreferences] = useState<CookiePreferences>(DEFAULT_PREFERENCES);
 
-  useEffect(() => {
-    const savedConsent = localStorage.getItem('cookie-consent-granular');
-    if (!savedConsent) {
-      setIsVisible(true);
-    } else {
-      try {
-        const parsed = JSON.parse(savedConsent);
-        setPreferences(parsed);
-      } catch (e) {
-        setIsVisible(true);
-      }
-    }
-  }, []);
-
   const updateGtagConsent = (prefs: CookiePreferences) => {
     if (typeof window !== 'undefined' && window.gtag) {
       window.gtag('consent', 'update', {
         analytics_storage: prefs.analytics ? 'granted' : 'denied',
         ad_storage: prefs.marketing ? 'granted' : 'denied',
+        ad_user_data: prefs.marketing ? 'granted' : 'denied',
+        ad_personalization: prefs.marketing ? 'granted' : 'denied',
         functionality_storage: prefs.functional ? 'granted' : 'denied',
         personalization_storage: prefs.marketing ? 'granted' : 'denied',
         security_storage: 'granted', // Necessary is always granted
@@ -50,9 +31,26 @@ export function CookieBanner({ dict }: { dict: any }) {
     }
   };
 
+  useEffect(() => {
+    const parsed = readSavedCookieConsent();
+    if (!parsed) {
+      setIsVisible(true);
+    } else {
+      setPreferences(parsed);
+      updateGtagConsent(parsed);
+    }
+  }, []);
+
   const saveConsent = (prefs: CookiePreferences) => {
-    localStorage.setItem('cookie-consent-granular', JSON.stringify(prefs));
+    try {
+      localStorage.setItem(COOKIE_CONSENT_STORAGE_KEY, JSON.stringify(prefs));
+    } catch {
+      // Ignore storage failures in restricted privacy modes
+    }
     updateGtagConsent(prefs);
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new CustomEvent(COOKIE_CONSENT_EVENT, { detail: prefs }));
+    }
     setIsVisible(false);
   };
 

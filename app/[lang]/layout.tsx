@@ -4,6 +4,7 @@ import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { Providers } from '@/components/Providers';
+import { ConsentManagedAnalytics } from '@/components/ConsentManagedAnalytics';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -80,10 +81,6 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   };
 }
 
-import Script from 'next/script';
-
-// ... existing imports
-
 import { generateOrganizationSchema, generateWebSiteSchema } from '@/lib/schema-generator';
 
 
@@ -123,30 +120,11 @@ export default async function RootLayout(
         <Providers disableTracking={localPreview}>
           {children}
         </Providers>
-        {!localPreview && <>
-        <Script id="microsoft-clarity" strategy="lazyOnload">
-          {`
-            (function(c,l,a,r,i,t,y){
-                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "ufxa278rg4");
-          `}
-        </Script>
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
-          strategy="afterInteractive"
+        <ConsentManagedAnalytics
+          gaId={gaId}
+          clarityId="ufxa278rg4"
+          disabled={localPreview || process.env.NEXT_PUBLIC_DISABLE_ANALYTICS === '1'}
         />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', '${gaId}');
-          `}
-        </Script>
-        </>}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}

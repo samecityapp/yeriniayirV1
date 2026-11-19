@@ -38,16 +38,21 @@ export function LocationPickerModal({
   const [gpsLoading, setGpsLoading] = useState(false);
   const [gpsMessage, setGpsMessage] = useState<string | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const gpsRequestRef = useRef(0);
   const isOpenRef = useRef(isOpen);
   isOpenRef.current = isOpen;
 
-  // Modal açıldığında inputa odaklan
+  // Modal açıldığında inputa odaklan; kapanış veya yeniden açılışta bekleyen GPS çağrısını geçersiz kıl
   useEffect(() => {
     if (isOpen) {
       const timer = setTimeout(() => inputRef.current?.focus(), 100);
       setGpsMessage(null);
-      return () => clearTimeout(timer);
+      return () => {
+        clearTimeout(timer);
+        gpsRequestRef.current += 1;
+      };
     } else {
+      gpsRequestRef.current += 1;
       setQuery('');
       setGpsLoading(false);
     }
@@ -89,12 +94,13 @@ export function LocationPickerModal({
       return;
     }
 
+    const requestId = ++gpsRequestRef.current;
     setGpsLoading(true);
     setGpsMessage(null);
 
     navigator.geolocation.getCurrentPosition(
       (position) => {
-        if (!isOpenRef.current) return;
+        if (!isOpenRef.current || requestId !== gpsRequestRef.current) return;
         setGpsLoading(false);
         const { latitude, longitude } = position.coords;
 
@@ -118,7 +124,7 @@ export function LocationPickerModal({
         }
       },
       (error) => {
-        if (!isOpenRef.current) return;
+        if (!isOpenRef.current || requestId !== gpsRequestRef.current) return;
         setGpsLoading(false);
         if (error.code === 1) {
           setGpsMessage('Konum izni verilmedi. Aşağıdaki listeden bölge seçebilirsiniz.');
