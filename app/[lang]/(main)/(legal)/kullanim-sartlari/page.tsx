@@ -1,117 +1,109 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { TR_SITE_ORIGIN } from '@/lib/gastronomy-v3/geoCatalog';
 
 export const metadata: Metadata = {
-    title: 'Kullanım Şartları | Yerini Ayır',
-    description: 'Yerini Ayır platformu kullanım koşulları ve yasal sorumluluk reddi beyanı.',
-    alternates: {
-        canonical: `${TR_SITE_ORIGIN}/kullanim-kosullari`,
-    },
-    robots: {
-        index: false,
-        follow: true,
-        googleBot: { index: false, follow: true },
-    },
+  title: 'Kullanım Şartları (Kanonik Bilgilendirme) | Yerini Ayır',
+  description:
+    'Yerini Ayır gastronomi platformu güncel kullanım koşullarına yönlendirme ve bilgilendirme özeti.',
+  alternates: {
+    canonical: `${TR_SITE_ORIGIN}/kullanim-kosullari`,
+  },
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: { index: false, follow: false },
+  },
 };
 
-export default function TermsOfUse() {
-    const lastUpdated = new Date().toLocaleDateString('tr-TR', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-    });
+export default async function TermsOfUseArchiveNotice(props: {
+  params?: Promise<{ lang: string }>;
+}) {
+  const params = props.params ? await props.params : undefined;
+  const isEn = params?.lang === 'en';
+  const canonicalTermsHref = `${isEn ? '/en' : '/tr'}/kullanim-kosullari`;
 
-    return (
-        <main className="min-h-screen bg-white py-16 px-4 sm:px-6 lg:px-8">
-            <article className="prose prose-zinc prose-lg max-w-4xl mx-auto">
+  return (
+    <main className="min-h-screen bg-white py-16 px-4 sm:px-6 lg:px-8">
+      <article className="prose prose-zinc prose-lg max-w-4xl mx-auto">
+        <div className="border-b border-zinc-200 pb-8 mb-8">
+          <h1 className="text-3xl sm:text-4xl font-bold text-zinc-900 mb-3 tracking-tight">
+            {isEn ? 'Terms of Use — Updated Canonical Page Notice' : 'Kullanım Şartları (Güncel Metin Bilgilendirmesi)'}
+          </h1>
+          <p className="text-base text-zinc-500 font-medium">
+            {isEn ? 'Last Updated: 19.11.2026' : 'Son Güncelleme: 19.11.2026'}
+          </p>
+          <div className="mt-5 p-4 rounded-xl bg-amber-50 border border-amber-200 text-sm text-amber-950">
+            {isEn ? (
+              <>
+                This legacy URL is retained only for compatibility (`noindex`). The authoritative Terms of Use for Yerini Ayır&apos;s Gastronomi Discovery release are published at{' '}
+                <Link href={canonicalTermsHref} className="font-bold underline text-red-700">
+                  Terms of Use (/kullanim-kosullari)
+                </Link>.
+              </>
+            ) : (
+              <>
+                Bu eski bağlantı yalnızca geriye dönük uyumluluk amacıyla indekse kapalı (<code>noindex</code>) olarak tutulmaktadır. Yerini Ayır’ın yalnızca gastronomi keşif yayını için geçerli tam ve güncel metin{' '}
+                <Link href={canonicalTermsHref} className="font-bold underline text-red-700">
+                  Kullanım Koşulları (/kullanim-kosullari)
+                </Link>{' '}
+                sayfasında yer almaktadır.
+              </>
+            )}
+          </div>
+        </div>
 
-                {/* Başlık Alanı */}
-                <div className="border-b border-zinc-200 pb-8 mb-10">
-                    <h1 className="text-4xl font-bold text-zinc-900 mb-4 tracking-tight">
-                        Kullanım Şartları
-                    </h1>
-                    <p className="text-base text-zinc-500 font-medium">
-                        Yürürlük Tarihi: {lastUpdated}
-                    </p>
-                </div>
+        <h2 className="text-xl font-bold text-zinc-900 mt-6 mb-3">1. Taraflar ve Gerçek Kişi İşletmeci</h2>
+        <p>
+          YeriniAyir.com (&quot;Platform&quot;), ilk yayın döneminde tüzel kişiliği olmaksızın gerçek kişi site işletmecisi tarafından bireysel olarak işletilen bağımsız bir yerel gastronomi keşif rehberidir.
+        </p>
 
-                {/* Giriş */}
-                <p>
-                    Bu Kullanım Şartları (&quot;Şartlar&quot;), <strong>Yerini Ayır</strong> platformu (&quot;Site&quot;, &quot;Hizmet&quot;) aracılığıyla sunulan tüm içerik ve hizmetlerden yararlanırken uymanız gereken koşulları düzenlemektedir.
-                    Siteyi kullanmanız, bu Şartları okuduğunuzu, anladığınızı ve kabul ettiğinizi gösterir.
-                </p>
+        <h2 className="text-xl font-bold text-zinc-900 mt-6 mb-3">2. Gastronomi Keşif Hizmetinin Kapsamı</h2>
+        <p>
+          Platform yalnızca restoran, kafe ve gastronomi mekânı seçkilerini, bölge/kategori filtrelerini, sokak seviyesi adres bilgilerini ve Google Maps yol tarifi bağlantılarını sunar. Platform üzerinden masa ayırtma, sipariş satışı veya ödeme işlemi gerçekleştirilmez.
+        </p>
 
-                <h3>1. Tanımlar</h3>
-                <ul>
-                    <li><strong>Kullanıcı:</strong> Platforma erişen, kayıt olan veya hizmetten yararlanan gerçek/tüzel kişi.</li>
-                    <li><strong>Hizmet:</strong> Yerini Ayır tarafından sunulan otel keşfi, içerik görüntüleme, blog yazıları ve ilgili tüm dijital hizmetler.</li>
-                    <li><strong>İçerik:</strong> Platformda yer alan tüm metin, görsel, video, veri ve yazılımlar.</li>
-                </ul>
+        <h2 className="text-xl font-bold text-zinc-900 mt-6 mb-3">3. İşletme Bilgilerinin Güncelliği ve Düzeltme Talepleri</h2>
+        <p>
+          Mekânların menü, fiyat seviyesi, çalışma saatleri veya açıklık durumu işletmeler tarafından değiştirilebilir. Hatalı veya güncelliğini yitirmiş bilgiler <strong>info@yeriniayir.com</strong> üzerinden bildirilebilir.
+        </p>
 
-                {/* Vurgulu Kutu: Hizmetin Kapsamı */}
-                <div className="bg-amber-50 p-6 rounded-xl border-l-4 border-amber-500 my-8">
-                    <h3 className="text-amber-900 mt-0">2. Hizmetin Kapsamı (Önemli)</h3>
-                    <p className="mb-2 text-amber-800">Yerini Ayır; oteller ve seyahat içerikleri sağlayan bir dijital keşif platformudur.</p>
-                    <ul className="list-disc pl-6 text-zinc-600 space-y-1">
-                        <li><strong>Yerini Ayır bir rezervasyon sitesi değildir.</strong></li>
-                        <li>Yerini Ayır otel fiyatlarını belirlemez veya rezervasyon işlemlerini doğrudan yürütmez.</li>
-                        <li>Platformda yer alan bilgiler yalnızca genel bilgilendirme amacı taşır. Nihai fiyat ve müsaitlik, yönlendirilen otelin kendi sitesinde geçerlidir.</li>
-                    </ul>
-                </div>
+        <h2 className="text-xl font-bold text-zinc-900 mt-6 mb-3">4. Üçüncü Taraf Harita ve Harici Bağlantılar</h2>
+        <p>
+          Harici Google Maps bağlantıları veya işletme sayfaları kendi kullanım ve gizlilik koşullarına tabidir. Platform dışındaki üçüncü taraf hizmetler ilgili sağlayıcının sorumluluğundadır.
+        </p>
 
-                <h3>3. Kullanıcı Yükümlülükleri</h3>
-                <p>Kullanıcı, hizmeti yalnızca hukuka uygun amaçlarla kullanacağını kabul eder. Platformun işleyişine zarar verecek (bot kullanımı, veri kazıma vb.) faaliyetlerde bulunamaz.</p>
+        <h2 className="text-xl font-bold text-zinc-900 mt-6 mb-3">5. Sponsorluk ve Ücretli Tanıtım Durumu</h2>
+        <p>
+          Mevcut gastronomi ilk yayınında sponsorlu sıralama, ücretli tanıtım veya satış komisyonlu yönlendirme aktif değildir.
+        </p>
 
-                <h3>4. Sorumluluk Reddi (Disclaimer)</h3>
-                <p>Yerini Ayır aşağıdaki konulardan sorumlu tutulamaz:</p>
-                <ul>
-                    <li>Listelenen otellerin hizmet kalitesi veya fiyat değişiklikleri.</li>
-                    <li>Üçüncü taraf (Booking.com vb.) sitelerdeki hatalı bilgiler.</li>
-                    <li>Kullanıcının platforma teknik nedenlerle erişememesi.</li>
-                </ul>
-                <p>Platform &quot;olduğu gibi&quot; sunulur ve kusursuzluk garantisi vermez.</p>
+        <h2 className="text-xl font-bold text-zinc-900 mt-6 mb-3">6. Kullanıcı Davranışı ve Fikri Mülkiyet Hakları</h2>
+        <p>
+          Platform içerikleri ve derleme yapısı 5846 sayılı FSEK kapsamında korunur. Otomatik veri kazıma (scraping), bot trafiği veya hizmet güvenliğini bozucu girişimler yasaktır.
+        </p>
 
-                <h3>5. Fikri Mülkiyet Hakları</h3>
-                <p>
-                    Platformdaki tüm içerikler (metinler, görseller, Yerini Ayır logosu, tasarım) Yerini Ayır&apos;a aittir veya lisanslıdır.
-                    İzinsiz kopyalanması, çoğaltılması veya ticari amaçla kullanılması yasaktır.
-                </p>
+        <h2 className="text-xl font-bold text-zinc-900 mt-6 mb-3">7. Sorumluluk Sınırı ve Zorunlu Haklar</h2>
+        <p>
+          Bu metin, yürürlükteki mevzuat uyarınca Kullanıcının sahip olduğu emredici yasal hakları ortadan kaldırmaz; yalnızca bilgilendirme amaçlı içerik kullanımının çerçevesini çizer.
+        </p>
 
-                <section className="mb-8">
-                    <h2 className="text-xl font-bold text-zinc-900 mb-4">6. Üçüncü Taraf Bağlantıları</h2>
-                    <p className="text-zinc-600 leading-relaxed">
-                        Sitemiz, otellerin web sitelerine veya sosyal medya platformlarına bağlantılar içerebilir.
-                        Bu bağlantılar sadece kolaylık sağlamak içindir; yönlendirilen sitelerin içeriğinden veya güvenliğinden Yerini Ayır sorumlu değildir.
-                    </p>
-                </section>
+        <h2 className="text-xl font-bold text-zinc-900 mt-6 mb-3">8. Uygulanacak Hukuk</h2>
+        <p>
+          Uyuşmazlıklarda Türkiye Cumhuriyeti hukuku uygulanır ve güncel bütünleşik düzenleme için{' '}
+          <Link href={canonicalTermsHref} className="text-red-700 underline">
+            Kullanım Koşulları
+          </Link>{' '}
+          sayfası esas alınır.
+        </p>
 
-                <section className="mb-8">
-                    <h2 className="text-xl font-bold text-zinc-900 mb-4">7. Değişiklikler</h2>
-                    <p className="text-zinc-600 leading-relaxed">
-                        Yerini Ayır, bu Şartları önceden bildirimde bulunmaksızın güncelleme hakkını saklı tutar.
-                        Güncellemeler yayınlandığı anda yürürlüğe girer.
-                    </p>
-                </section>
-
-                <h3>8. Uygulanacak Hukuk</h3>
-                <p>
-                    Bu Şartlar, Türkiye Cumhuriyeti kanunlarına tabidir. Her türlü uyuşmazlıkta İstanbul Mahkemeleri ve İcra Müdürlükleri yetkilidir.
-                </p>
-
-                <div className="mt-12 pt-8 border-t border-zinc-200">
-                    <h3>9. İletişim</h3>
-                    <p>
-                        Bu şartlarla ilgili sorularınız için bizimle iletişime geçebilirsiniz:
-                    </p>
-                    <p className="font-medium text-zinc-900">
-                        Yerini Ayır Hukuk Birimi<br />
-                        E-posta: info@yeriniayir.com<br />
-                        Konum: İstanbul, Türkiye
-                    </p>
-                </div>
-
-            </article>
-        </main>
-    );
+        <h2 className="text-xl font-bold text-zinc-900 mt-6 mb-3">9. İletişim</h2>
+        <p>
+          Gerçek kişi site işletmecisi ile tüm düzeltme, içerik ve hukuki bildirimler için:{' '}
+          <strong>info@yeriniayir.com</strong>
+        </p>
+      </article>
+    </main>
+  );
 }

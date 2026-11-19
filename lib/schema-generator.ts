@@ -2,6 +2,7 @@ import { Hotel } from './types';
 import { getLocalizedText } from './localization';
 import { buildHotelPublicUrl } from './hotelSeo';
 import { absoluteUrl } from './utils';
+import { isHotelSurfaceEnabled } from './hotelLaunchGate';
 
 export function generateHotelSchema(hotel: Hotel, lang: string = 'tr') {
   const hotelName = getLocalizedText(hotel.name, lang);
@@ -182,11 +183,16 @@ export function generateBreadcrumbSchema(items: { name: string; url: string }[])
 }
 
 export function generateOrganizationSchema(lang: string = 'tr') {
+  const hotelEnabled = isHotelSurfaceEnabled();
   const baseUrl = absoluteUrl('/', lang);
-  const orgName = lang === 'en' ? 'World And Hotels' : 'Yerini Ayır';
-  const description = lang === 'en'
-    ? 'Verified neighborhood gastronomy selections and curated hotel guide across Turkey.'
-    : 'Doğrulanmış yerel gastronomi seçkileri ve Türkiye genelinde seçkin konaklama rehberi.';
+  const orgName = lang === 'en' && hotelEnabled ? 'World And Hotels' : 'Yerini Ayır';
+  const description = hotelEnabled
+    ? lang === 'en'
+      ? 'Verified neighborhood gastronomy selections and curated hotel guide across Turkey.'
+      : 'Doğrulanmış yerel gastronomi seçkileri ve Türkiye genelinde seçkin konaklama rehberi.'
+    : lang === 'en'
+      ? 'Independent local gastronomy discovery guide featuring curated restaurants, cafes, and regional culinary stops across Turkey.'
+      : 'Türkiye genelinde bağımsız restoran, kafe ve yerel lezzet duraklarını derleyen gastronomi keşif rehberi.';
 
   return {
     '@context': 'https://schema.org',
@@ -208,8 +214,9 @@ export function generateOrganizationSchema(lang: string = 'tr') {
 }
 
 export function generateWebSiteSchema(lang: string = 'tr') {
+  const hotelEnabled = isHotelSurfaceEnabled();
   const baseUrl = absoluteUrl('/', lang);
-  const siteName = lang === 'en' ? 'World And Hotels' : 'Yerini Ayır';
+  const siteName = lang === 'en' && hotelEnabled ? 'World And Hotels' : 'Yerini Ayır';
 
   return {
     '@context': 'https://schema.org',
@@ -221,14 +228,18 @@ export function generateWebSiteSchema(lang: string = 'tr') {
     publisher: {
       '@id': `${baseUrl}#organization`,
     },
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: `${baseUrl}search?q={search_term_string}`
-      },
-      'query-input': 'required name=search_term_string'
-    }
+    ...(hotelEnabled
+      ? {
+          potentialAction: {
+            '@type': 'SearchAction',
+            target: {
+              '@type': 'EntryPoint',
+              urlTemplate: `${baseUrl}search?q={search_term_string}`
+            },
+            'query-input': 'required name=search_term_string'
+          },
+        }
+      : {}),
   };
 }
 

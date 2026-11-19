@@ -15,6 +15,8 @@ export function Header({ lang: propLang, variant = 'default' }: { lang?: string;
   const pathname = usePathname();
   const router = useRouter();
   const lang = (propLang || params.lang) as 'tr' | 'en' || 'tr';
+  const showHotelSurface = process.env.NEXT_PUBLIC_ENABLE_HOTEL_SURFACE === '1';
+  const gastronomyHref = lang === 'en' ? '/en/gastronomy' : '/tr/gastronomi';
 
   // Basic dictionary for Header
   const navLabels = {
@@ -35,8 +37,10 @@ export function Header({ lang: propLang, variant = 'default' }: { lang?: string;
           {/* Desktop Menu */}
           {variant === 'default' ? (
             <div className="hidden md:flex items-center md:space-x-5 lg:space-x-8 text-sm lg:text-base">
-              <Link href={`/${lang}#oteller`} className="text-gray-600 hover:text-primary transition font-medium">{navLabels.hotels}</Link>
-              <Link href={`/${lang}?view=gastronomi`} className="text-[#FF385C] hover:text-red-700 transition font-bold flex items-center gap-1.5">
+              {showHotelSurface && (
+                <Link href={`/${lang}#oteller`} className="text-gray-600 hover:text-primary transition font-medium">{navLabels.hotels}</Link>
+              )}
+              <Link href={showHotelSurface ? `/${lang}?view=gastronomi` : gastronomyHref} className="text-[#FF385C] hover:text-red-700 transition font-bold flex items-center gap-1.5">
                 <span className="inline-block w-2 h-2 rounded-full bg-[#FF385C] animate-pulse" />
                 {navLabels.gastronomy}
               </Link>
@@ -93,15 +97,17 @@ export function Header({ lang: propLang, variant = 'default' }: { lang?: string;
         {/* Mobile Menu Dropdown - Only for Default Variant */}
         {(isMenuOpen && variant === 'default') && (
           <div className="md:hidden mt-4 pb-4 space-y-4 flex flex-col border-t pt-4 bg-white">
+            {showHotelSurface && (
+              <Link
+                href={`/${lang}#oteller`}
+                className="text-gray-600 hover:text-primary transition font-medium py-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {navLabels.hotels}
+              </Link>
+            )}
             <Link
-              href={`/${lang}#oteller`}
-              className="text-gray-600 hover:text-primary transition font-medium py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {navLabels.hotels}
-            </Link>
-            <Link
-              href={`/${lang}?view=gastronomi`}
+              href={showHotelSurface ? `/${lang}?view=gastronomi` : gastronomyHref}
               className="text-[#FF385C] font-bold py-2 flex items-center gap-2"
               onClick={() => setIsMenuOpen(false)}
             >

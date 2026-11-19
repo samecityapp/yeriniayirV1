@@ -1,4 +1,5 @@
 import {isLocalFoodPreview} from '@/lib/food/localPreview';
+import { isHotelSurfaceEnabled } from '@/lib/hotelLaunchGate';
 import {getAllowedPublicSupabaseOrigin} from '@/lib/supabase-env-guard';
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
@@ -27,7 +28,8 @@ export const viewport: Viewport = {
 export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const params = await props.params;
   const lang = params.lang as 'tr' | 'en' || 'tr';
-  const siteName = lang === 'en' ? 'WorldandHotels' : 'Yerini Ayır';
+  const hotelEnabled = isHotelSurfaceEnabled();
+  const siteName = lang === 'en' && hotelEnabled ? 'WorldandHotels' : 'Yerini Ayır';
 
   return {
     // DOMAIN LOGIC: metadataBase needs a valid URL.
@@ -37,8 +39,14 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
       default: siteName,
       template: `%s | ${siteName}`,
     },
-    description: "Doğrulanmış yerel gastronomi seçkileri ve Türkiye'nin seçkin konaklama rehberi",
-    keywords: ['gastronomi rehberi', 'yerel restoranlar', 'nitelikli kahve', 'moda kadıköy rehberi', 'otel önerileri'],
+    description: hotelEnabled
+      ? "Doğrulanmış yerel gastronomi seçkileri ve Türkiye'nin seçkin konaklama rehberi"
+      : lang === 'en'
+        ? 'Verified neighborhood gastronomy selections and independent cafe and restaurant guide across Turkey.'
+        : 'Türkiye genelinde 21 il ve 92 bölgede doğrulanmış yerel gastronomi seçkileri ve bağımsız mekan rehberi.',
+    keywords: hotelEnabled
+      ? ['gastronomi rehberi', 'yerel restoranlar', 'nitelikli kahve', 'moda kadıköy rehberi', 'otel önerileri']
+      : ['gastronomi rehberi', 'yerel restoranlar', 'nitelikli kahve', 'mahalle mekanları', 'moda kadıköy rehberi'],
     authors: [{ name: siteName }],
     creator: siteName,
     publisher: siteName,
@@ -70,7 +78,12 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
     alternates: {
       types: {
         'application/rss+xml': [
-          { url: '/feed.xml', title: `${siteName} Gezi Rehberi RSS Feed` },
+          {
+            url: '/feed.xml',
+            title: hotelEnabled
+              ? `${siteName} Gezi Rehberi RSS Feed`
+              : `${siteName} Gastronomi Rehberi RSS Feed`,
+          },
         ],
       },
     },

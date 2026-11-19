@@ -2,6 +2,7 @@ import { fallbackArticles } from '@/data/fallbackArticles';
 import { mockArticles } from '@/data/mockArticles';
 import { db } from '@/lib/db';
 import { EN_SITE_ORIGIN, TR_SITE_ORIGIN } from '@/lib/gastronomy-v3/geoCatalog';
+import { isHotelSurfaceEnabled } from '@/lib/hotelLaunchGate';
 import { doesArticleSupportLang, getLocalizedText } from '@/lib/localization';
 import { isSupabaseIsolated } from '@/lib/supabase';
 
@@ -32,13 +33,21 @@ function getLocalFallbackArticles(lang: 'tr' | 'en') {
 }
 
 function renderRssXml(articles: any[], lang: 'tr' | 'en', siteUrl: string): string {
+  const hotelEnabled = isHotelSurfaceEnabled();
   const pathPrefix = lang === 'en' ? 'guide' : 'rehber';
   const channelTitle =
-    lang === 'en' ? 'World And Hotels Travel Guide' : 'Yerini Ayır Gezi Rehberi';
-  const channelDescription =
     lang === 'en'
+      ? hotelEnabled
+        ? 'World And Hotels Travel Guide'
+        : 'Yerini Ayır Gastronomy &amp; Travel Guide'
+      : 'Yerini Ayır Gastronomi ve Şehir Rehberi';
+  const channelDescription = hotelEnabled
+    ? lang === 'en'
       ? 'Verified neighborhood gastronomy picks, boutique stays, and city guides across Turkey.'
-      : 'Türkiye şehirleri ve kıyı rotaları için doğrulanmış gezi rehberi, konaklama ve yerel lezzet durakları.';
+      : 'Türkiye şehirleri ve kıyı rotaları için doğrulanmış gezi rehberi, konaklama ve yerel lezzet durakları.'
+    : lang === 'en'
+      ? 'Verified neighborhood gastronomy picks, independent restaurants, and city culinary guides across Turkey.'
+      : 'Türkiye genelinde 21 il ve 92 bölge için doğrulanmış yerel gastronomi seçkileri ve şehir lezzet rehberi.';
 
   const rssItems = articles
     .map((article: any) => {

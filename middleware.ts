@@ -4,6 +4,7 @@ import { cloudClient } from '@/lib/cloud/client';
 import { cloudConfig } from '@/lib/cloud/config';
 import { checkPilotAdmin, PILOT_PRIVATE_HEADERS, pilotAuthFailureHeaders } from '@/lib/pilot/adminAuth';
 import { evaluateRuntimeEmergencyShedding } from '@/lib/pilot/emergencyMode';
+import { isHotelSurfaceEnabled } from '@/lib/hotelLaunchGate';
 import {
   enforceEdgeMemoryShield,
   enforceRateLimit,
@@ -494,8 +495,13 @@ async function applicationMiddleware(
 
   const NOINDEX_PUBLIC_PATH_RE =
     /(?:^|\/)(?:design-demo|preview-food-card|fethiye-yemek-rehberi|search|hoteloffer[1-4]?|otel-listesi|kullanim-sartlari)(?:$|\/|\.)/i;
+  const NOINDEX_LEGACY_HOTEL_RE = /(?:^|\/)(?:otel|hotel)(?:$|\/)/i;
+  const hotelSurfaceEnabled = isHotelSurfaceEnabled();
   const withRobotsHeader = (response: NextResponse): NextResponse => {
-    if (NOINDEX_PUBLIC_PATH_RE.test(pathname)) {
+    if (
+      NOINDEX_PUBLIC_PATH_RE.test(pathname) ||
+      (!hotelSurfaceEnabled && NOINDEX_LEGACY_HOTEL_RE.test(pathname))
+    ) {
       response.headers.set('X-Robots-Tag', 'noindex, nofollow');
     }
     return response;

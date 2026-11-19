@@ -5,6 +5,11 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
     title: 'Yerini Ayır - Otel İşbirliği ve Başvuru',
     description: 'Seçkin oteller için özel işbirliği fırsatları.',
+    robots: {
+        index: false,
+        follow: false,
+        googleBot: { index: false, follow: false },
+    },
 };
 
 export default async function HotelOfferPage({ params }: { params: Promise<{ lang: string }> }) {

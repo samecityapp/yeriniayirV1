@@ -1,6 +1,11 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import { Check, Star, Users, BarChart3, Globe, Zap, Camera, Lock } from 'lucide-react';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  robots: { index: false, follow: false, googleBot: { index: false, follow: false } },
+};
 
 export default function PartnerPage() {
     return (

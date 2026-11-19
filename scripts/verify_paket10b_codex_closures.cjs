@@ -272,6 +272,7 @@ function extractSeoLinks(html) {
     PORT: String(nextPort),
     HOSTNAME: '127.0.0.1',
     APP_ENVIRONMENT: 'test',
+    ENABLE_HOTEL_SURFACE: '1',
     RATE_LIMIT_ENFORCE: '1',
     RATE_LIMIT_COOKIE_SECRET: 'paket10b-live-test-cookie-secret-9876543210',
     NEXT_PUBLIC_SUPABASE_URL: `http://127.0.0.1:${mockPort}`,
@@ -848,14 +849,22 @@ function extractSeoLinks(html) {
       assert.ok(fetchedByUuid && fetchedByUuid.id === dbHotelNoSlugUuid);
 
       const schemaMod = loadTs('lib/schema-generator.ts', { cache: new Map() });
-      const sitemapMod = loadTs('app/sitemap.ts', {
-        cache: new Map(),
-        mocks: {
-          '@/lib/db': { db: dbMod.db },
-          '@/lib/supabase': { isSupabaseIsolated: false },
-        },
-      });
-      const dbSitemap = await sitemapMod.default();
+      const prevHotelSurfaceFlag = process.env.ENABLE_HOTEL_SURFACE;
+      process.env.ENABLE_HOTEL_SURFACE = '1';
+      let dbSitemap;
+      try {
+        const sitemapMod = loadTs('app/sitemap.ts', {
+          cache: new Map(),
+          mocks: {
+            '@/lib/db': { db: dbMod.db },
+            '@/lib/supabase': { isSupabaseIsolated: false },
+          },
+        });
+        dbSitemap = await sitemapMod.default();
+      } finally {
+        if (prevHotelSurfaceFlag === undefined) delete process.env.ENABLE_HOTEL_SURFACE;
+        else process.env.ENABLE_HOTEL_SURFACE = prevHotelSurfaceFlag;
+      }
       const trSlugEntry = dbSitemap.find((u) => u.url === 'https://www.yeriniayir.com/otel/cappadocia-cave-palace');
       const enSlugEntry = dbSitemap.find((u) => u.url === 'https://www.worldandhotels.com/hotel/cappadocia-cave-palace');
       const trUuidEntry = dbSitemap.find((u) => u.url === `https://www.yeriniayir.com/otel/${dbHotelNoSlugUuid}`);

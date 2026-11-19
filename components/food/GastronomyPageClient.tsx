@@ -15,6 +15,7 @@ import { FoodLocation, VisitorFoodVenue as FoodVenue, VisitorFoodDiscovery } fro
 import { createRealFoodProvider } from '@/lib/food/realProvider';
 import { FOOD_DISCOVERY } from '@/lib/food/config';
 import { GastronomyHeader } from './GastronomyHeader';
+import { GastronomyLegalFooterLinks } from './GastronomyLegalFooterLinks';
 import { CategoryBar } from './CategoryBar';
 import { LocationPickerModal } from './LocationPickerModal';
 
@@ -1343,6 +1344,7 @@ export function GastronomyPageClient({
               {selectedLocation ? `${selectedLocation.displayName} Rehberi` : 'Doğrulanmış Yerel Gastronomi Rehberi'}
             </div>
           </div>
+          <GastronomyLegalFooterLinks lang={lang} maxWidthClass="max-w-2xl" />
         </footer>
       )}
     </div>

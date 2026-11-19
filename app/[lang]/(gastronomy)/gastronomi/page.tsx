@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { GeoBreadcrumbNav } from '@/components/food/GeoSemanticSections';
+import { GastronomyLegalFooterLinks } from '@/components/food/GastronomyLegalFooterLinks';
 import { isLocalFoodPreviewSync } from '@/lib/food/localPreview';
 import {
   buildGeoAlternates,
@@ -249,6 +250,7 @@ export default async function GastronomyIndexPage(props: {
             {isEn ? 'Verified Selections' : 'Doğrulanmış Seçki'}
           </span>
         </div>
+        <GastronomyLegalFooterLinks lang={lang} maxWidthClass="max-w-3xl" />
       </footer>
 
       <script

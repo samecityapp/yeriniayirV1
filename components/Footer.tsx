@@ -7,6 +7,7 @@ import { getLocalizedText } from '@/lib/localization';
 import { Article } from '@/lib/types';
 import { BrandLogo } from './ui/BrandLogo';
 import { getDictionary } from '@/lib/dictionary';
+import { isHotelSurfaceEnabled } from '@/lib/hotelLaunchGate';
 
 const getCachedLatestArticles = unstable_cache(
   async (targetLang: 'tr' | 'en') => db.articles.getLatest(3, targetLang),
@@ -16,9 +17,29 @@ const getCachedLatestArticles = unstable_cache(
 
 export async function Footer({ lang = 'tr', localPreview = false }: { lang?: 'tr' | 'en'; localPreview?:boolean }) {
   const currentYear = 2026;
+  const hotelSurfaceEnabled = isHotelSurfaceEnabled();
   const latestArticles =
     localPreview || isSupabaseIsolated ? [] : await getCachedLatestArticles(lang);
   const dict = await getDictionary(lang);
+  const gastronomyBase = lang === 'en' ? '/en/gastronomy' : '/tr/gastronomi';
+  const popularGastronomyLocations = [
+    {
+      label: lang === 'en' ? 'Moda, Kadikoy' : 'Kadıköy — Moda',
+      href: `${gastronomyBase}/istanbul/kadikoy/moda`,
+    },
+    {
+      label: lang === 'en' ? 'Istanbul Picks' : 'İstanbul Seçkisi',
+      href: `${gastronomyBase}/istanbul`,
+    },
+    {
+      label: lang === 'en' ? 'Alacati, Cesme' : 'İzmir — Alaçatı',
+      href: `${gastronomyBase}/izmir/cesme/alacati`,
+    },
+    {
+      label: lang === 'en' ? 'Gaziantep Selection' : 'Gaziantep Seçkisi',
+      href: `${gastronomyBase}/gaziantep`,
+    },
+  ];
 
   return (
     <footer className="bg-white text-gray-600 mt-12 sm:mt-20 border-t border-gray-200">
@@ -47,15 +68,29 @@ export async function Footer({ lang = 'tr', localPreview = false }: { lang?: 'tr
                 </Link>
               </li>
               <li>
-                <Link href={`/${lang}/search`} className="text-sm hover:text-blue-600 transition-colors">
-                  {dict.navigation.search}
+                <Link
+                  href={hotelSurfaceEnabled ? `/${lang}/search` : gastronomyBase}
+                  className="text-sm hover:text-blue-600 transition-colors"
+                >
+                  {hotelSurfaceEnabled
+                    ? dict.navigation.search
+                    : lang === 'en'
+                      ? 'Gastronomy Directory'
+                      : 'Gastronomi Dizini'}
                 </Link>
               </li>
               <li>
-                <Link href={`/${lang}/rehber`} className="text-sm hover:text-blue-600 transition-colors">
+                <Link href={`/${lang}/${lang === 'en' ? 'guide' : 'rehber'}`} className="text-sm hover:text-blue-600 transition-colors">
                   {dict.navigation.blog}
                 </Link>
               </li>
+              {!hotelSurfaceEnabled && (
+                <li>
+                  <Link href={`/${lang}/hakkimizda`} className="text-sm hover:text-blue-600 transition-colors">
+                    {dict.navigation.about}
+                  </Link>
+                </li>
+              )}
             </ul>
           </div>
 
@@ -86,13 +121,21 @@ export async function Footer({ lang = 'tr', localPreview = false }: { lang?: 'tr
           <div>
             <h3 className="text-gray-900 font-semibold text-lg mb-4">{dict.home.popular_locations}</h3>
             <ul className="space-y-2">
-              {['Fethiye', 'Antalya', 'Bodrum', 'Marmaris'].map((loc) => (
-                <li key={loc}>
-                  <Link href={`/${lang}/search?location=${loc}`} className="text-sm hover:text-blue-600 transition-colors">
-                    {loc} {lang === 'tr' ? 'Otelleri' : 'Hotels'}
-                  </Link>
-                </li>
-              ))}
+              {hotelSurfaceEnabled
+                ? ['Fethiye', 'Antalya', 'Bodrum', 'Marmaris'].map((loc) => (
+                    <li key={loc}>
+                      <Link href={`/${lang}/search?location=${loc}`} className="text-sm hover:text-blue-600 transition-colors">
+                        {loc} {lang === 'tr' ? 'Otelleri' : 'Hotels'}
+                      </Link>
+                    </li>
+                  ))
+                : popularGastronomyLocations.map((item) => (
+                    <li key={item.href}>
+                      <Link href={item.href} className="text-sm hover:text-blue-600 transition-colors">
+                        {item.label}
+                      </Link>
+                    </li>
+                  ))}
             </ul>
           </div>
         </div>
@@ -102,7 +145,7 @@ export async function Footer({ lang = 'tr', localPreview = false }: { lang?: 'tr
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex flex-col items-center md:items-start gap-3">
               <p className="text-sm text-gray-500">
-                &copy; {currentYear} {lang === 'en' ? 'WorldandHotels' : 'Yerini Ayır'}. {dict.footer.rights}
+                &copy; {currentYear} {lang === 'en' && hotelSurfaceEnabled ? 'WorldandHotels' : 'Yerini Ayır'}. {dict.footer.rights}
               </p>
               <div className="flex flex-wrap justify-center md:justify-start gap-4 text-xs text-gray-500">
                 <Link href={`/${lang}/kullanim-kosullari`} className="hover:text-blue-600 transition-colors">
@@ -117,23 +160,36 @@ export async function Footer({ lang = 'tr', localPreview = false }: { lang?: 'tr
                 <Link href={`/${lang}/kvkk-aydinlatma-metni`} className="hover:text-blue-600 transition-colors">
                   {dict.footer.kvkk}
                 </Link>
+                <a href="#cerez-ayarlari" className="hover:text-blue-600 transition-colors">
+                  {lang === 'en' ? 'Cookie Preferences' : 'Çerez Tercihleri'}
+                </a>
                 <Link href={`/${lang}/hakkimizda`} className="hover:text-blue-600 transition-colors">
                   {dict.navigation.about}
                 </Link>
               </div>
             </div>
 
-            {/* Social Media */}
+            {/* Contact / Social */}
             <div className="flex gap-4">
-              <a
-                href="https://instagram.com/gnkoteller"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 flex items-center justify-center transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
+              {hotelSurfaceEnabled ? (
+                <a
+                  href="https://instagram.com/gnkoteller"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 flex items-center justify-center transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
+              ) : (
+                <a
+                  href="mailto:info@yeriniayir.com"
+                  className="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 flex items-center justify-center transition-colors"
+                  aria-label="info@yeriniayir.com"
+                >
+                  <Mail className="w-5 h-5" />
+                </a>
+              )}
             </div>
           </div>
         </div>

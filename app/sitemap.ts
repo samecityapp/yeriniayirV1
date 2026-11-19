@@ -10,6 +10,7 @@ import {
 import { PILOT_VENUE_IDS } from '@/lib/gastronomy-v3/geoPilot';
 import { getPublishedV3Snapshot, V3_LOCATIONS } from '@/lib/gastronomy-v3/registry';
 import { buildHotelAlternates, buildHotelPublicUrl } from '@/lib/hotelSeo';
+import { isHotelSurfaceEnabled } from '@/lib/hotelLaunchGate';
 import { isSupabaseIsolated } from '@/lib/supabase';
 
 export const revalidate = 3600;
@@ -156,8 +157,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
   }
 
-  // 6. Eski Otel & Makale URL'leri (Yalnız Supabase aktifken; hata olursa gastronomi sitemap'ini bozmaz)
-  if (!isSupabaseIsolated) {
+  // 6. Eski Otel & Makale URL'leri (Otel URL'leri ilk gastronomi yayınında varsayılan kapalı; yalnız ENABLE_HOTEL_SURFACE=1 + Supabase aktifken eklenir)
+  if (!isSupabaseIsolated && isHotelSurfaceEnabled()) {
     try {
       const hotels = await db.hotels.getAll();
       for (const hotel of hotels) {

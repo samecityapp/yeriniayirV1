@@ -1,6 +1,11 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import { Check, Star, Users, Zap, Instagram, ChevronRight, BarChart3, Globe } from 'lucide-react';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  robots: { index: false, follow: false, googleBot: { index: false, follow: false } },
+};
 
 // Custom TikTok Icon
 const TikTokIcon = ({ className }: { className?: string }) => (

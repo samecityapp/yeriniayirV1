@@ -1,6 +1,11 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import { Check, ArrowRight, Instagram, Users, Star, Zap } from 'lucide-react';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  robots: { index: false, follow: false, googleBot: { index: false, follow: false } },
+};
 
 // Custom TikTok Icon since it's not in Lucide by default or commonly used one
 const TikTokIcon = ({ className }: { className?: string }) => (

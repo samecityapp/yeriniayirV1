@@ -21,6 +21,7 @@ import { getLocalizedText } from '@/lib/localization';
 import { getDictionary } from '@/lib/dictionary';
 import { EN_SITE_ORIGIN, TR_SITE_ORIGIN } from '@/lib/gastronomy-v3/geoCatalog';
 import { buildHotelAlternates, buildHotelPublicUrl } from '@/lib/hotelSeo';
+import { isHotelSurfaceEnabled } from '@/lib/hotelLaunchGate';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { generateHotelSchema, generateBreadcrumbSchema, generateFAQSchema } from '@/lib/schema-generator';
 import { formatCurrency } from '@/lib/utils';
@@ -39,6 +40,10 @@ type Props = {
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const params = await props.params;
   const lang = params.lang || 'tr';
+  const hotelEnabled = isHotelSurfaceEnabled();
+  const robotsPolicy = hotelEnabled
+    ? undefined
+    : { index: false, follow: false, googleBot: { index: false, follow: false } };
   const dict = await getDictionary(lang);
   const location = LOCATIONS.find(l => l.slug === params.id);
 
@@ -53,6 +58,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
     return {
       title,
       description,
+      ...(robotsPolicy ? { robots: robotsPolicy } : {}),
       openGraph: {
         title,
         description,
@@ -68,6 +74,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
     return {
       title: lang === 'tr' ? 'Otel Bulunamadı' : 'Hotel Not Found',
       description: lang === 'tr' ? 'Aradığınız otel sistemimizde mevcut değil.' : 'The hotel you are looking for is not available in our system.',
+      ...(robotsPolicy ? { robots: robotsPolicy } : {}),
     };
   }
 
@@ -75,11 +82,12 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   const locationName = getLocalizedText(hotel.location, lang);
   const aboutText = getLocalizedText(hotel.about, lang);
   const descText = getLocalizedText(hotel.description, lang);
-  const description = aboutText || descText || (lang === 'tr' ? `${hotelName} hakkında detaylı bilgi ve rezervasyon` : `Detailed information and reservation for ${hotelName}`);
+  const description = aboutText || descText || (lang === 'tr' ? `${hotelName} hakkında detaylı bilgi` : `Detailed information for ${hotelName}`);
 
   return {
     title: `${hotelName} - ${locationName}`,
     description: description.substring(0, 160),
+    ...(robotsPolicy ? { robots: robotsPolicy } : {}),
     keywords: [
       hotelName,
       locationName,

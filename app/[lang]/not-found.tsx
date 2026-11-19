@@ -1,7 +1,10 @@
 import Link from 'next/link';
 import { MapPinOff } from 'lucide-react';
+import { isHotelSurfaceEnabled } from '@/lib/hotelLaunchGate';
 
 export default function NotFound() {
+  const hotelEnabled = isHotelSurfaceEnabled();
+
   return (
     <div className="min-h-screen flex items-center justify-center px-4 bg-background">
       <div className="max-w-lg w-full text-center space-y-8">
@@ -14,7 +17,9 @@ export default function NotFound() {
             Rotanızı mı Kaybettiniz?
           </h1>
           <p className="text-lg text-zinc-500 leading-relaxed max-w-md mx-auto">
-            Aradığınız sayfa taşınmış veya silinmiş olabilir. Sizi en iyi otellere geri götürelim.
+            {hotelEnabled
+              ? 'Aradığınız sayfa taşınmış veya silinmiş olabilir. Sizi seçili otellere geri götürelim.'
+              : 'Aradığınız sayfa taşınmış veya kaldırılmış olabilir. Doğrulanmış yerel gastronomi seçkilerine geri dönebilirsiniz.'}
           </p>
         </div>
 
@@ -30,8 +35,11 @@ export default function NotFound() {
         <div className="pt-8">
           <p className="text-sm text-zinc-400">
             veya{' '}
-            <Link href="/search" className="text-zinc-600 hover:text-foreground font-medium underline underline-offset-4 transition-colors">
-              otellere göz atın
+            <Link
+              href={hotelEnabled ? '/search' : '/gastronomi'}
+              className="text-zinc-600 hover:text-foreground font-medium underline underline-offset-4 transition-colors"
+            >
+              {hotelEnabled ? 'otellere göz atın' : 'gastronomi dizinine göz atın'}
             </Link>
           </p>
         </div>

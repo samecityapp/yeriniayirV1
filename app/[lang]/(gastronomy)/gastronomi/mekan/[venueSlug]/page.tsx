@@ -5,6 +5,7 @@ import { MapPin, ExternalLink, Utensils, Sparkles, Info, ArrowLeft } from 'lucid
 import { VenueImage } from '@/components/food/VenueImage';
 import { GooglePlaceRating } from '@/components/food/GooglePlaceRating';
 import { GeoBreadcrumbNav, GeoFaqSection } from '@/components/food/GeoSemanticSections';
+import { GastronomyLegalFooterLinks } from '@/components/food/GastronomyLegalFooterLinks';
 import { isLocalFoodPreviewSync } from '@/lib/food/localPreview';
 import {
   buildGeoAlternates,
@@ -387,6 +388,7 @@ export default async function GeoPilotVenuePage(props: {
             {isEn ? `Back to ${primaryCategoryLabel}` : `${primaryCategoryLabel} Kategorisine Dön`}
           </Link>
         </div>
+        <GastronomyLegalFooterLinks lang={lang} maxWidthClass="max-w-2xl" />
       </footer>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(venueJsonLd) }} />

@@ -8,6 +8,7 @@ import {
   GeoRegionSelectionAtlas,
   GeoSubRegionsAndSiblingLinks,
 } from '@/components/food/GeoSemanticSections';
+import { GastronomyLegalFooterLinks } from '@/components/food/GastronomyLegalFooterLinks';
 import { isLocalFoodPreviewSync } from '@/lib/food/localPreview';
 import type { VisitorFoodDiscovery } from '@/lib/food/types';
 import {
@@ -289,6 +290,7 @@ export default async function GastronomyHierarchyPage(props: {
             <span className="font-bold text-[#181210]">YERİNİ AYIR · {cityName}</span>
             <span>{city.regions.length} {isEn ? 'Published Selections' : 'Yayınlı Seçki'}</span>
           </div>
+          <GastronomyLegalFooterLinks lang={lang} maxWidthClass="max-w-3xl" />
         </footer>
 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
@@ -390,6 +392,7 @@ export default async function GastronomyHierarchyPage(props: {
             <span className="font-bold text-[#181210]">YERİNİ AYIR · {resolved.districtName}</span>
             <span>{resolved.childRegions.length} {isEn ? 'Selections' : 'Seçki'}</span>
           </div>
+          <GastronomyLegalFooterLinks lang={lang} maxWidthClass="max-w-3xl" />
         </footer>
 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
@@ -530,6 +533,7 @@ export default async function GastronomyHierarchyPage(props: {
           <span className="font-bold text-[#181210]">YERİNİ AYIR · Gastronomi Keşif Platformu</span>
           <span>{location.displayName}</span>
         </div>
+        <GastronomyLegalFooterLinks lang={lang} maxWidthClass="max-w-2xl" />
       </footer>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />

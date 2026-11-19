@@ -19,6 +19,7 @@ import { getRandomAuthor } from '@/lib/authors';
 import { BlogAuthor } from '@/components/blog/BlogAuthor';
 import { SmartContent } from '@/components/blog/SmartContent';
 import { EN_SITE_ORIGIN, TR_SITE_ORIGIN } from '@/lib/gastronomy-v3/geoCatalog';
+import { isHotelSurfaceEnabled } from '@/lib/hotelLaunchGate';
 
 
 type Props = { params: Promise<{ slug: string; lang: 'tr' | 'en' }> };
@@ -367,7 +368,9 @@ export default async function ArticlePage(props: Props) {
               <QuickSummary items={[
                 `${getLocalizedText(article.location, lang)} ${lang === 'tr' ? 'bölgesinde gezilecek en iyi yerler' : 'best places to visit'}`,
                 lang === 'tr' ? 'Yerel restoran ve kafe önerileri' : 'Local restaurant and cafe recommendations',
-                lang === 'tr' ? 'Konaklama seçenekleri ve fiyat aralıkları' : 'Accommodation options and price ranges',
+                isHotelSurfaceEnabled()
+                  ? lang === 'tr' ? 'Konaklama seçenekleri ve fiyat aralıkları' : 'Accommodation options and price ranges'
+                  : lang === 'tr' ? 'Semt kültürü ve yerel keşif notları' : 'Neighborhood culture and local discovery notes',
                 lang === 'tr' ? 'Ulaşım bilgileri ve ipuçları' : 'Transportation info and tips',
               ]} />
 
@@ -377,9 +380,11 @@ export default async function ArticlePage(props: Props) {
             </div>
 
 
-            <div className="mt-20">
-              <RelatedHotels location={getLocalizedText(article.location, lang)} lang={lang} />
-            </div>
+            {isHotelSurfaceEnabled() && (
+              <div className="mt-20">
+                <RelatedHotels location={getLocalizedText(article.location, lang)} lang={lang} />
+              </div>
+            )}
 
             <div className="mt-8">
               <RelatedArticles location={getLocalizedText(article.location, lang).split(',')[0].trim()} lang={lang} />

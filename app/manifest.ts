@@ -1,10 +1,14 @@
 import { MetadataRoute } from 'next';
+import { isHotelSurfaceEnabled } from '@/lib/hotelLaunchGate';
 
 export default function manifest(): MetadataRoute.Manifest {
+  const hotelEnabled = isHotelSurfaceEnabled();
   return {
     name: 'Yerini Ayır',
     short_name: 'Yerini Ayır',
-    description: "Erdem'in Seçtiği En İyi Oteller - Türkiye'nin en güvenilir otel rehberi",
+    description: hotelEnabled
+      ? "Erdem'in Seçtiği Oteller - Türkiye'nin konaklama rehberi"
+      : 'Türkiye genelinde 21 il ve 92 bölgede doğrulanmış yerel gastronomi ve şehir lezzet rehberi',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',
