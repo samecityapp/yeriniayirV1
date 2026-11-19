@@ -72,7 +72,7 @@ export default function CerezPolitikasiPage() {
 
         <h3 className="text-xl font-bold text-gray-900 mt-6 mb-3">4. Onay Yönetimi ve Geri Alma</h3>
         <p>
-          Analitik/pazarlama çerezleri varsayılan olarak kapalı sunulmaktadır; Kullanıcı açıkça seçerek bunları aktif hale getirebilir. Onayınızı dilediğiniz an geri almak veya değiştirmek için <strong>&quot;Çerez Ayarları&quot;</strong> panelini kullanabilirsiniz.
+          Analitik/pazarlama çerezleri varsayılan olarak kapalı sunulmaktadır; Kullanıcı açıkça seçerek bunları aktif hale getirebilir. Onayınızı dilediğiniz an geri almak veya değiştirmek için <a href="#cerez-ayarlari" className="font-bold underline hover:text-red-600">&quot;Çerez Ayarları&quot;</a> panelini kullanabilirsiniz.
         </p>
 
         <h3 className="text-xl font-bold text-gray-900 mt-6 mb-3">5. Tarayıcı Üzerinden Yönetim</h3>

@@ -3,7 +3,7 @@ import type { NextRequest } from 'next/server';
 import { cloudClient } from '@/lib/cloud/client';
 import { cloudConfig } from '@/lib/cloud/config';
 import { checkPilotAdmin, PILOT_PRIVATE_HEADERS, pilotAuthFailureHeaders } from '@/lib/pilot/adminAuth';
-import { evaluateEmergencyShedding } from '@/lib/pilot/emergencyMode';
+import { evaluateRuntimeEmergencyShedding } from '@/lib/pilot/emergencyMode';
 import {
   enforceEdgeMemoryShield,
   enforceRateLimit,
@@ -527,7 +527,7 @@ export async function middleware(request: NextRequest) {
     }
   }
 
-  const shed = evaluateEmergencyShedding(canonical, request.method);
+  const shed = await evaluateRuntimeEmergencyShedding(canonical, request.method);
   if (shed.shed) {
     if (shed.status === 202) {
       return NextResponse.json(

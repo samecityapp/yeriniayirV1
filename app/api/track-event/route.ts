@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { Ratelimit } from '@upstash/ratelimit';
 import { Redis } from '@upstash/redis';
 import { z } from 'zod';
-import { getEmergencyMode } from '@/lib/pilot/emergencyMode';
+import { resolveRuntimeEmergencyMode } from '@/lib/pilot/emergencyMode';
 import {
   buildVisitorClientKey,
   enforceEdgeMemoryShield,
@@ -134,7 +134,7 @@ async function withTimeout<T>(promise: PromiseLike<T>, ms: number, message: stri
 }
 
 export async function POST(request: Request) {
-  if (getEmergencyMode() !== 'off') {
+  if ((await resolveRuntimeEmergencyMode()) !== 'off') {
     return NextResponse.json(
       { success: true, recorded: false, shed: true },
       { status: 202, headers: NO_STORE_HEADERS }

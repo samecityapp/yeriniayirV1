@@ -676,7 +676,9 @@ export function GastronomyPageClient({
     [directoryProvider, initialLocationSlug]
   );
 
-  const regionCacheRef = useRef<Map<string, { payload: StaticRegionVenuePayload; expiresAt: number }>>(new Map());
+  const regionCacheRef = useRef<
+    Map<string, { payload: StaticRegionVenuePayload; expiresAt: number; version?: string }>
+  >(new Map());
   const staleRevalidateRef = useRef<Set<string>>(new Set());
   const inFlightRequestsRef = useRef<Map<string, Promise<StaticRegionVenuePayload>>>(new Map());
   const failedRegionCooldownRef = useRef<Map<string, number>>(new Map());
@@ -709,19 +711,22 @@ export function GastronomyPageClient({
     }
     regionCacheRef.current.set(slug, {
       payload,
+      version: payload.version,
       expiresAt: now + getRegionClientCacheTtlMs(),
     });
     staleRevalidateRef.current.delete(slug);
   }, []);
 
   if (initialLocation && discovery.venues.length > 0 && !regionCacheRef.current.has(initialLocation.slug)) {
+    const initialPayload: StaticRegionVenuePayload = {
+      regionSlug: initialLocation.slug,
+      categories: discovery.categories,
+      venues: discovery.venues,
+      nearbyVenues: discovery.nearbyVenues || [],
+    };
     regionCacheRef.current.set(initialLocation.slug, {
-      payload: {
-        regionSlug: initialLocation.slug,
-        categories: discovery.categories,
-        venues: discovery.venues,
-        nearbyVenues: discovery.nearbyVenues || [],
-      },
+      payload: initialPayload,
+      version: initialPayload.version,
       expiresAt: Date.now() + getRegionClientCacheTtlMs(),
     });
   }

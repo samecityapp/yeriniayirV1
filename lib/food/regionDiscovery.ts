@@ -5,12 +5,31 @@ import { toFoodDiscovery } from '@/lib/pilot/integration/foodAdapter';
 
 export interface StaticRegionVenuePayload {
   regionSlug: string;
+  version?: string;
   categories: VisitorFoodDiscovery['categories'];
   venues: VisitorFoodDiscovery['venues'];
   nearbyVenues: VisitorFoodDiscovery['nearbyVenues'];
 }
 
 const REGION_SLUG_REGEX = /^[a-z0-9-]{1,80}$/;
+
+function computeRegionPayloadVersion(
+  regionSlug: string,
+  adapted: Pick<VisitorFoodDiscovery, 'categories' | 'venues' | 'nearbyVenues'>
+): string {
+  const basis = JSON.stringify({
+    r: regionSlug,
+    c: adapted.categories.map((c) => c.slug),
+    v: adapted.venues.map((v) => [v.id, v.name, (v.ratings || []).map((r) => r.value)]),
+    n: (adapted.nearbyVenues || []).map((v) => [v.id, v.distanceMeters]),
+  });
+  let h = 0x811c9dc5;
+  for (let i = 0; i < basis.length; i++) {
+    h ^= basis.charCodeAt(i);
+    h = Math.imul(h, 0x01000193) >>> 0;
+  }
+  return `v3-${h.toString(16).padStart(8, '0')}`;
+}
 
 /**
  * Returns only the published region directory metadata for the initial root shell.
@@ -42,6 +61,7 @@ export async function getStaticRegionVenuePayload(
 
   return {
     regionSlug: raw.region.slug,
+    version: computeRegionPayloadVersion(raw.region.slug, adapted),
     categories: adapted.categories,
     venues: adapted.venues,
     nearbyVenues: adapted.nearbyVenues || [],

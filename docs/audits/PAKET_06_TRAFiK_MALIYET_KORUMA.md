@@ -139,21 +139,23 @@ Ek tarama & DoS kapanışları:
 
 ---
 
-## 6. Uygulanabilir Acil Durum Planı (Operasyon Runbook — Aşama 5)
+## 6. Uygulanabilir Acil Durum Planı (Operasyon Runbook — Aşama 5 — Düzeltilmiş Mimari Not)
 
-Acil bir maliyet alarmı, yavaşlama veya bot saldırısında operatörün Vercel panelinden **tek ortam değişkeniyle (< 1 dakika, kod/deploy gerektirmeden)** uygulayabileceği 3 aşamalı kademeli müdahale planı ([emergencyMode.ts](file:///Users/erdems/Documents/Codex/yeriniayir-paket06-traffic-cost/lib/pilot/emergencyMode.ts)):
+> **DÜZELTİLMİŞ MİMARİ NOT (Vercel Env vs. 0-Deploy Müdahale):** Vercel üzerinde `TRAFFIC_EMERGENCY_MODE` gibi standart Environment Variable değişiklikleri mevcut canlı deployment'a kendiliğinden yansımaz; geçerli olması için **Vercel Dashboard'dan Redeploy (`~1–2 dk`)** gerekir. Bu nedenle kod, deploy gerektirmeyen anlık müdahale için ek olarak mevcut **Upstash Redis (`ya:pilot:emergency_mode`) runtime anahtarını** (`<= 15 sn` izole önbellekle, çekirdek Gastronomi V5 ziyaretlerinde `0` Upstash çağrısıyla) destekler.
 
-1. **Seviye 1 — Yumuşak Yük Atma (`TRAFFIC_EMERGENCY_MODE=shed`):**
+Acil bir maliyet alarmı, yavaşlama veya bot saldırısında operatörün uygulayabileceği kademeli müdahale planı ([emergencyMode.ts](file:///Users/erdems/Documents/Codex/yeriniayir-paket06-traffic-cost/lib/pilot/emergencyMode.ts)):
+
+1. **Seviye 1 — Anlık Yumuşak Yük Atma (0-Deploy: Upstash `SET ya:pilot:emergency_mode shed EX 3600` · Redeploy Yedeği: Vercel `TRAFFIC_EMERGENCY_MODE=shed` + Redeploy):**
    - **Ne zaman:** Vercel/Upstash/Supabase alarmı `%70–%80`'i geçtiğinde veya eski otel/arama/görsel/analitik rotalarına yüksek yük geldiğinde.
    - **Ne kapanır:** `/[lang]/search`, `/[lang]/otel/*`, `/[lang]/rehber*`, `/[lang]/feed.xml`, `/[lang]/[slug]`, `/_next/image*`, `/api/go`, `/api/gastronomy-public`, `/design-demo`, `/preview-food-card`, `/fethiye-yemek-rehberi` → **`503` (`Retry-After: 120`, `X-Emergency-Mode: shed`, `0` DB, `0` Image Opt)**; `POST /api/track-event` → **`202 { shed: true }` (`0` Upstash, `0` DB)**.
-   - **Ne ÇALIŞMAYA DEVAM EDER:** Kök sayfalar (`/`, `/tr`, `/en`), tüm `92` bölge JSON'u (`/api/gastronomy/regions/[slug]`), mekan kartları, tam sokak/cadde adresi, `Konumumu Kullan` GPS ve **`https://maps.google.com/?cid=...` yol tarifi CTA'ları %100 çalışır.** (`Check 3.1` ile derlenmiş `.next` + Puppeteer Mobile Chrome üzerinde `0` hata ile doğrulandı.)
-2. **Seviye 2 — Tam Saldırı & Admin Mutasyon Kilidi (`TRAFFIC_EMERGENCY_MODE=lockdown` + `RATE_LIMIT_CRITICAL_OUTAGE_MODE=block`):**
+   - **Ne ÇALIŞMAYA DEVAM EDER:** Kök sayfalar (`/`, `/tr`, `/en`), tüm `92` bölge JSON'u (`/api/gastronomy/regions/[slug]`), mekan kartları, tam sokak/cadde adresi, `Konumumu Kullan` GPS ve **`https://maps.google.com/?cid=...` yol tarifi CTA'ları `0` Upstash çağrısıyla %100 çalışır.** (`Check 3.1` ile derlenmiş `.next` + Puppeteer Mobile Chrome üzerinde `0` hata ile doğrulandı.)
+2. **Seviye 2 — Tam Saldırı & Admin Mutasyon Kilidi (0-Deploy: Upstash `SET ya:pilot:emergency_mode lockdown EX 3600` · Kalıcı: Vercel `TRAFFIC_EMERGENCY_MODE=lockdown` + `RATE_LIMIT_CRITICAL_OUTAGE_MODE=block` + Redeploy):**
    - **Ne zaman:** Yönetici uçlarına yönelik DDoS veya Upstash kesintisi sırasında yetkisiz zorlama tespit edildiğinde.
    - **Ek koruma:** Seviye 1'e ek olarak `/api/gastronomy-admin/publish`, `/research` ve `createOffer`/`updateOffer`/`deleteOffer` yazma aksiyonları **`503`** döner; Production'da Upstash çöktüğünde tüm kritik admin/auth uçları `503 outage-blocked` olarak tamamen kapanır. Temel Gastronomi V5 ziyaretçi akışı yine ayakta kalır.
-3. **Seviye 3 — Platform Firewall / Son Çare:**
-   - **Vercel Firewall / Attack Challenge Mode:** Belirli ülke/ASN veya path saldırısında Vercel Project Settings → Security → Attack Challenge Mode açılır.
+3. **Seviye 3 — Platform Firewall / Son Çare (0-Deploy Platform Kontrolü):**
+   - **Vercel Firewall / Attack Challenge Mode:** Belirli ülke/ASN veya path saldırısında Vercel Project Settings → Security → Attack Challenge Mode deploy beklemeden anında açılır.
    - **Vercel "Pause Production Deployments":** Yalnız fatura üst sınırı tehlikeye girdiğinde devreye alınır (tüm siteyi durdurur).
-   - **Müdahale Sonrası Geri Dönüş:** `TRAFFIC_EMERGENCY_MODE` değişkeni silinir veya `off` yapılır.
+   - **Müdahale Sonrası Geri Dönüş:** Upstash'ta `DEL ya:pilot:emergency_mode` (veya `SET ... off`) çalıştırılır ve tanımlandıysa `TRAFFIC_EMERGENCY_MODE` kaldırılıp yeniden deploy alınır.
 
 ---
 

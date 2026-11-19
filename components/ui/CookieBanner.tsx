@@ -5,7 +5,9 @@ import { Cookie, Settings, ShieldCheck, ChevronLeft, Check, X } from 'lucide-rea
 import {
   COOKIE_CONSENT_EVENT,
   COOKIE_CONSENT_STORAGE_KEY,
+  COOKIE_SETTINGS_HASH,
   DEFAULT_COOKIE_PREFERENCES,
+  OPEN_COOKIE_SETTINGS_EVENT,
   readSavedCookieConsent,
   type CookiePreferences,
 } from '@/lib/cookieConsent';
@@ -33,12 +35,41 @@ export function CookieBanner({ dict }: { dict: any }) {
 
   useEffect(() => {
     const parsed = readSavedCookieConsent();
+    const shouldOpenSettings =
+      typeof window !== 'undefined' && window.location.hash === COOKIE_SETTINGS_HASH;
+
     if (!parsed) {
       setIsVisible(true);
     } else {
       setPreferences(parsed);
       updateGtagConsent(parsed);
     }
+
+    if (shouldOpenSettings) {
+      setPreferences(parsed ?? DEFAULT_PREFERENCES);
+      setView('settings');
+      setIsVisible(true);
+    }
+
+    const openSettingsHandler = () => {
+      const latest = readSavedCookieConsent();
+      setPreferences(latest ?? DEFAULT_PREFERENCES);
+      setView('settings');
+      setIsVisible(true);
+    };
+
+    const onHashChange = () => {
+      if (window.location.hash === COOKIE_SETTINGS_HASH) {
+        openSettingsHandler();
+      }
+    };
+
+    window.addEventListener(OPEN_COOKIE_SETTINGS_EVENT, openSettingsHandler);
+    window.addEventListener('hashchange', onHashChange);
+    return () => {
+      window.removeEventListener(OPEN_COOKIE_SETTINGS_EVENT, openSettingsHandler);
+      window.removeEventListener('hashchange', onHashChange);
+    };
   }, []);
 
   const saveConsent = (prefs: CookiePreferences) => {

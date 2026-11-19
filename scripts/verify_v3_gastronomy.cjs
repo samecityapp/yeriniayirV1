@@ -3549,7 +3549,8 @@ test('policy gates reject closed, chain, out-of-neighborhood, and degraded candi
 
 test('Galata and Besiktas Carsi audit logs verify strict neighborhood, coffee purity, and chain rejections', () => {
   const galAuditPath = path.join(ROOT, 'work/gastronomy-v3/istanbul-beyoglu-galata.audit.json');
-  if (testFileExists(galAuditPath)) {
+  assert.ok(testFileExists(galAuditPath), 'Galata offline policy inputs must exist (never skip silently)');
+  {
     const galAudit = JSON.parse(readTestFile(galAuditPath, 'utf8'));
     const glMap = new Map(galAudit.decisions.map((d) => [d.id, d]));
     assert.equal(glMap.get('ctrl-gal-federal-chain').accepted, false);
@@ -3569,7 +3570,8 @@ test('Galata and Besiktas Carsi audit logs verify strict neighborhood, coffee pu
   }
 
   const besAuditPath = path.join(ROOT, 'work/gastronomy-v3/istanbul-besiktas-carsi.audit.json');
-  if (testFileExists(besAuditPath)) {
+  assert.ok(testFileExists(besAuditPath), 'Besiktas Carsi offline policy inputs must exist (never skip silently)');
+  {
     const besAudit = JSON.parse(readTestFile(besAuditPath, 'utf8'));
     const bsMap = new Map(besAudit.decisions.map((d) => [d.id, d]));
     assert.equal(bsMap.get('ctrl-bes-vogue-closed-temp').accepted, false);
@@ -3595,7 +3597,8 @@ test('Galata and Besiktas Carsi audit logs verify strict neighborhood, coffee pu
 
 test('Etiler and Ortakoy audit logs verify strict neighborhood, coffee purity, >=4.4 floor, and chain rejections', () => {
   const etilerAuditPath = path.join(ROOT, 'work/gastronomy-v3/istanbul-besiktas-etiler.audit.json');
-  if (testFileExists(etilerAuditPath)) {
+  assert.ok(testFileExists(etilerAuditPath), 'Etiler offline policy inputs must exist (never skip silently)');
+  {
     const etilerAudit = JSON.parse(readTestFile(etilerAuditPath, 'utf8'));
     const etMap = new Map(etilerAudit.decisions.map((d) => [d.id, d]));
     for (const chainId of [
@@ -3630,7 +3633,8 @@ test('Etiler and Ortakoy audit logs verify strict neighborhood, coffee purity, >
   }
 
   const ortakoyAuditPath = path.join(ROOT, 'work/gastronomy-v3/istanbul-besiktas-ortakoy.audit.json');
-  if (testFileExists(ortakoyAuditPath)) {
+  assert.ok(testFileExists(ortakoyAuditPath), 'Ortakoy offline policy inputs must exist (never skip silently)');
+  {
     const ortakoyAudit = JSON.parse(readTestFile(ortakoyAuditPath, 'utf8'));
     const orMap = new Map(ortakoyAudit.decisions.map((d) => [d.id, d]));
     for (const chainId of [
@@ -3666,7 +3670,8 @@ test('Cukurcuma and Balat audit logs enforce strict boundary, chain, coffee puri
   const auditDir = nodePath.resolve(__dirname, '..', 'work', 'gastronomy-v3');
   const cukAuditPath = nodePath.join(auditDir, 'istanbul-beyoglu-cukurcuma.audit.json');
   const balAuditPath = nodePath.join(auditDir, 'istanbul-fatih-balat.audit.json');
-  if (testFileExists(cukAuditPath)) {
+  assert.ok(testFileExists(cukAuditPath), 'Cukurcuma offline policy inputs must exist (never skip silently)');
+  {
     const cukAudit = JSON.parse(readTestFile(cukAuditPath, 'utf8'));
     const cukMap = new Map(cukAudit.decisions.map((d) => [d.id, d]));
     assert.equal(cukAudit.acceptedCount, 19);
@@ -3694,7 +3699,8 @@ test('Cukurcuma and Balat audit logs enforce strict boundary, chain, coffee puri
       assert.ok(cukMap.get(outId).reason.includes('outside_strict_neighborhood'));
     }
   }
-  if (testFileExists(balAuditPath)) {
+  assert.ok(testFileExists(balAuditPath), 'Balat offline policy inputs must exist (never skip silently)');
+  {
     const balAudit = JSON.parse(readTestFile(balAuditPath, 'utf8'));
     const balMap = new Map(balAudit.decisions.map((d) => [d.id, d]));
     assert.equal(balAudit.acceptedCount, 23);
@@ -3733,7 +3739,8 @@ test('Yenikoy and Gokturk audit logs enforce strict boundary, chain, coffee puri
   const auditDir = nodePath.resolve(__dirname, '..', 'work', 'gastronomy-v3');
   const yenAuditPath = nodePath.join(auditDir, 'istanbul-sariyer-yenikoy.audit.json');
   const gokAuditPath = nodePath.join(auditDir, 'istanbul-eyupsultan-gokturk.audit.json');
-  if (testFileExists(yenAuditPath)) {
+  assert.ok(testFileExists(yenAuditPath), 'Yenikoy offline policy inputs must exist (never skip silently)');
+  {
     const yenAudit = JSON.parse(readTestFile(yenAuditPath, 'utf8'));
     const yenMap = new Map(yenAudit.decisions.map((d) => [d.id, d]));
     assert.equal(yenAudit.acceptedCount, 18);
@@ -3764,7 +3771,8 @@ test('Yenikoy and Gokturk audit logs enforce strict boundary, chain, coffee puri
       assert.ok(yenMap.get(outId).reason.includes('outside_strict_neighborhood'));
     }
   }
-  if (testFileExists(gokAuditPath)) {
+  assert.ok(testFileExists(gokAuditPath), 'Gokturk offline policy inputs must exist (never skip silently)');
+  {
     const gokAudit = JSON.parse(readTestFile(gokAuditPath, 'utf8'));
     const gokMap = new Map(gokAudit.decisions.map((d) => [d.id, d]));
     assert.equal(gokAudit.acceptedCount, 25);
@@ -3802,7 +3810,8 @@ test('Asmalimescit-Pera and Taksim-Istiklal audit logs reject closed, chains, no
   const asmAuditPath = nodePath.join(auditDir, 'istanbul-beyoglu-asmalimescit.audit.json');
   const takAuditPath = nodePath.join(auditDir, 'istanbul-beyoglu-taksim.audit.json');
 
-  if (testFileExists(asmAuditPath)) {
+  assert.ok(testFileExists(asmAuditPath), 'Asmalimescit offline policy inputs must exist (never skip silently)');
+  {
     const asmAudit = JSON.parse(readTestFile(asmAuditPath, 'utf8'));
     const asmMap = new Map(asmAudit.decisions.map((d) => [d.id, d]));
     assert.equal(asmAudit.acceptedCount, 25);
@@ -3838,7 +3847,8 @@ test('Asmalimescit-Pera and Taksim-Istiklal audit logs reject closed, chains, no
     }
   }
 
-  if (testFileExists(takAuditPath)) {
+  assert.ok(testFileExists(takAuditPath), 'Taksim offline policy inputs must exist (never skip silently)');
+  {
     const takAudit = JSON.parse(readTestFile(takAuditPath, 'utf8'));
     const takMap = new Map(takAudit.decisions.map((d) => [d.id, d]));
     assert.equal(takAudit.acceptedCount, 28);

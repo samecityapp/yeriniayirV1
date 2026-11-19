@@ -16,6 +16,8 @@ export const DEFAULT_COOKIE_PREFERENCES: CookiePreferences = {
 
 export const COOKIE_CONSENT_STORAGE_KEY = 'cookie-consent-granular';
 export const COOKIE_CONSENT_EVENT = 'ya:cookie-consent-updated';
+export const OPEN_COOKIE_SETTINGS_EVENT = 'ya:open-cookie-settings';
+export const COOKIE_SETTINGS_HASH = '#cerez-ayarlari';
 
 const KNOWN_ANALYTICS_COOKIE_PREFIXES = ['_ga', '_gid', '_gat', '_clck', '_clsk'];
 
