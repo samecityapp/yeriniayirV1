@@ -1,17 +1,17 @@
 # Yerini Ayır — 48 Maddelik Nihai Yayın Kontrol Matrisi
 
 **Kaynak Liste:** `/Users/erdems/Downloads/YeriniAyir_Yayin_Kontrol_Listesi.md` (18 Kasım 2026)  
-**Denetlenen Sürüm:** `feat/paket-10-final-release-audit` (`dda2cd6a2d9a669fbee9e14b7a2d6defd93f01ed` + Paket 10 denetim belgeleri)  
-**Değerlendirme İlkesi:** Yalnızca bu oturumda yerel kod, derleme ve ağ kilitli testlerle doğrudan gözlemlenen bulgular `GEÇTİ` sayılmıştır. Canlı bulut panelleri, fiziksel mobil cihazlar, canlı işletme saatleri ve hukuki/telif onayları `TEST EDİLEMEDİ`, `ŞARTLI GEÇTİ` veya `KALDI` olarak işaretlenmiştir.
+**Denetlenen Sürüm:** `fix/paket-10b-codex-final-closures` (`4c05f15d21ca479873f931db2a0e5626d17b30c0` — Paket 10B `22/22` kapı `exit 0`)  
+**Değerlendirme İlkesi:** Yalnızca bu oturumda yerel kod, derleme ve ağ kilitli testlerle doğrudan gözlemlenen bulgular kapsamı belirtilerek değerlendirilmiştir. Yerel loopback / headless Chrome ile kısmen doğrulanan ve canlı CDN / gerçek cihaz / bulut paneli onayı gerektiren maddeler `ŞARTLI GEÇTİ` veya `TEST EDİLEMEDİ`, eksik `F0` / yasal alanlar / ön koşullar `KALDI` olarak işaretlenmiştir.
 
 ## Özet Durum Dağılımı (Toplam 48 Madde)
 
 | Durum | Adet | Maddeler |
 | :--- | ---: | :--- |
-| **GEÇTİ** | 6 | `04, 14, 15, 17, 20, 42` |
-| **ŞARTLI GEÇTİ** | 22 | `01, 02, 06, 09, 10, 11, 12, 13, 16, 19, 25, 26, 28, 29, 32, 33, 35, 36, 37, 38, 43, 44` |
+| **GEÇTİ** | 3 | `04, 14, 20` |
+| **ŞARTLI GEÇTİ** | 24 | `01, 02, 06, 09, 10, 11, 12, 13, 15, 16, 17, 19, 25, 26, 28, 29, 32, 33, 36, 37, 38, 42, 43, 44` |
 | **KALDI** | 4 | `08, 39, 45, 47` |
-| **TEST EDİLEMEDİ** | 15 | `03, 05, 07, 18, 21, 22, 23, 24, 27, 30, 31, 34, 40, 41, 46` |
+| **TEST EDİLEMEDİ** | 16 | `03, 05, 07, 18, 21, 22, 23, 24, 27, 30, 31, 34, 35, 40, 41, 46` |
 | **KAPSAM DIŞI** | 1 | `48` |
 
 ---
@@ -71,11 +71,11 @@
 ### Madde 06
 - **1. Madde numarası ve başlığı:** 06. Üç ayrı senaryoda maliyet tedbirini yaz: gerçek story yoğunluğu, otomatik bot trafiği, uygulamanın aynı işlemi tekrar tekrar çalıştırması. Her senaryo için ilk sinyal ve müdahale sahibi belli olsun.
 - **2. Durum:** `ŞARTLI GEÇTİ`
-- **3. Kanıt dosyası veya test komutu:** `node scripts/verify_paket06_traffic_cost_resilience.cjs` (`8/8`), `node scripts/verify_paket07_release_candidate.cjs` (`10/10`Check 8–9), `node scripts/verify_paket09_backup_recovery_and_geo_sitemap.cjs` (`Check 8`).
+- **3. Kanıt dosyası veya test komutu:** `node scripts/verify_paket06_traffic_cost_resilience.cjs` (`8/8`), `node scripts/verify_paket07_release_candidate.cjs` (`10/10`), `node scripts/verify_paket09_backup_recovery_and_geo_sitemap.cjs` (`9/9`), `node scripts/verify_paket10b_codex_closures.cjs` (Checks 2, 3, 4 — `F2/F3/F4/F5`).
 - **4. İlgili kod dosyaları:** `lib/pilot/emergencyMode.ts`, `lib/pilot/rateLimit.ts`, `middleware.ts`, `components/food/GastronomyPageClient.tsx` (`regionCacheRef`).
-- **5. Tespit edilen risk veya eksik:** Uygulama katmanındaki tedbirler (statik ISR, `shed`/`lockdown`, rate limit, tekilleştirme, `Places` `--max-fetches=0`) test edildi; ancak gerçek müdahale nöbetçisi ve canlı Vercel/Cloudflare WAF bot/alarm eşikleri ekipçe tanımlanmalıdır.
-- **6. Yapılan düzeltme:** Redis kesintisinde acil durum penceresini (`grace window`) koruyan Paket 09 düzeltmesi korundu ve yeniden doğrulandı.
-- **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Evet — İlk sinyal/alarm alıcılarını ve Vercel Firewall / Bot Protection kurallarını aktive edin.
+- **5. Tespit edilen risk veya eksik:** Paket 10B'de geçersiz statik/bozuk/beklenmedik-null acil durum anahtarlarında fail-safe (`shed`/grace) koruması (`F2/F3`), imzalı `ya_rl_anon` ile CGNAT + sahte çerez bot engeli (`F4`) ve kesintide analitik DB yazma kesici (`F5`) kodlandı; ancak gerçek müdahale nöbetçisi ve canlı Vercel/Cloudflare WAF bot/alarm eşikleri ekipçe tanımlanmalıdır.
+- **6. Yapılan düzeltme:** Paket 10B'de `F2/F3/F4/F5` kapanışları uygulandı ve `22/22` kapıyla doğrulandı.
+- **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Evet — İlk sinyal/alarm alıcılarını, `EMERGENCY_MODE_REDIS_NAMESPACE` / ayrı Upstash ayrımını ve Vercel Firewall kurallarını aktive edin.
 - **8. Öncelik seviyesi:** `P1`
 
 ---
@@ -105,50 +105,50 @@
 ### Madde 09
 - **1. Madde numarası ve başlığı:** 09. Supabase tabloları, görünümleri, fonksiyonları ve dosya depolarında herkese açık yetkileri incele. Ziyaretçi yalnızca yayınlanmış ve herkese gösterilecek bilgileri okuyabilsin.
 - **2. Durum:** `ŞARTLI GEÇTİ`
-- **3. Kanıt dosyası veya test komutu:** `node scripts/verify_rls_security.mjs` (`20/20` izole PostgreSQL RLS testi PASS).
-- **4. İlgili kod dosyaları:** `supabase/migrations/*`, `app/[lang]/(admin)/jilinrime/{restoranlar,dashboard,etiket-yonetimi,main-page-tags,otel-listesi}/page.tsx`.
-- **5. Tespit edilen risk veya eksik:** Yeni Gastronomi V5 tabloları (`ya_publications`, `ya_publication_heads`, `ya_private.admin_members`) izole PostgreSQL üzerinde %100 RLS kilitli çıktı; **ancak** eski `/jilinrime` istemci sayfaları doğrudan `anon` `@/lib/supabase` kullandığından canlı Supabase'de `hotels`, `restaurants`, `tags`, `price_tags`, `analytics_events` tablolarının `anon` yazmaya kapalı olduğu gerçek projede ayrıca doğrulanmalıdır.
-- **6. Yapılan düzeltme:** Paket 04–09 `ya_is_admin` / `REVOKE` migrasyonları korundu.
-- **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Evet — Canlı Supabase SQL Editor üzerinden tüm tablo/view/storage bucket RLS politikalarını doğrulayın.
+- **3. Kanıt dosyası veya test komutu:** `node scripts/verify_rls_security.mjs` (`26/26` izole PostgreSQL 17.11 RLS + forward migration `20261119180000` PASS), `node scripts/verify_paket10b_codex_closures.cjs` (Check 1).
+- **4. İlgili kod dosyaları:** `supabase/migrations/20261119180000_enforce_cloud_mfa_admin_rls.sql`, `app/[lang]/(admin)/jilinrime/legacyAdminActions.ts`, `app/[lang]/(admin)/jilinrime/{anasayfa-yonetimi,dashboard,etiket-yonetimi,main-page-tags,otel-ekle,otel-listesi,restoranlar}/page.tsx`.
+- **5. Tespit edilen risk veya eksik:** Paket 10B ile `public.is_admin_user()` fonksiyonu `ya_private.admin_members` + `aal2` MFA şartına bağlandı, 18 tablodaki açık legacy yazma politikaları, `analytics_events`/`hotel_clicks`/`audit_logs` okumaları ve `storage.objects` bucket yazmaları kilitlendi, tüm `/jilinrime` sayfaları sunucu aksiyonlarına geçirildi (`0` tarayıcı Supabase çağrısı). Ancak `20261119180000` migrasyonu canlı/staging Supabase projesinde henüz uygulanıp test edilmemiştir.
+- **6. Yapılan düzeltme:** Paket 10B `F1` ileri yönlü SQL migration + `/jilinrime` Server Action izolasyonu uygulandı.
+- **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Evet — Önce staging ardından production Supabase'e `20261119180000_enforce_cloud_mfa_admin_rls.sql` migrasyonunu uygulayıp `pg_policies` ve REST duman testiyle doğrulayın.
 - **8. Öncelik seviyesi:** `P1`
 
 ### Madde 10
 - **1. Madde numarası ve başlığı:** 10. Ayrı test verisiyle rol kontrollerini doğrula. Ziyaretçi taslağı okuyamasın, mekân düzenleyemesin veya silemesin. Yönetici işlemlerinde sunucu tarafı yetki kontrolünü doğrula.
 - **2. Durum:** `ŞARTLI GEÇTİ`
-- **3. Kanıt dosyası veya test komutu:** `node scripts/security/policy-tests.cjs` (`74` checks), `node scripts/verify_rls_security.mjs` (`20/20`), `node scripts/verify_paket10_final_release_audit.cjs` (Check 5).
-- **4. İlgili kod dosyaları:** `lib/cloud/auth.ts`, `app/api/gastronomy-admin/**`, `middleware.ts`, `lib/admin/offerAdminGuard.ts`.
-- **5. Tespit edilen risk veya eksik:** `aal1` JWT, anonim kullanıcı ve üye olmayan hesapların `401/403` reddi izole PG + sahte GoTrue üzerinde test edildi; canlı Supabase Staging/Prod Auth + `ya_publish_order` RPC üzerinde gerçek oturumla denenmesi gerekir.
-- **6. Yapılan düzeltme:** Paket 10'da `logout/route.ts` token bağlaması ve `ya_cloud_pending` temizliği tamamlandı, `Check 5` ile `/auth/v1/logout?scope=local` akışı doğrulandı.
-- **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Evet — Canlı Supabase üzerinde sıradan kullanıcı vs MFA (`aal2`) yönetici rolleriyle bir duman testi yapın.
+- **3. Kanıt dosyası veya test komutu:** `node scripts/security/policy-tests.cjs` (`74` checks), `node scripts/verify_rls_security.mjs` (`26/26` PG 17.11), `node scripts/verify_paket10_final_release_audit.cjs` (Check 5), `node scripts/verify_paket10b_codex_closures.cjs` (Check 1: `401`/`403`/`503`).
+- **4. İlgili kod dosyaları:** `lib/cloud/auth.ts`, `app/api/gastronomy-admin/**`, `middleware.ts`, `lib/admin/offerAdminGuard.ts`, `app/[lang]/(admin)/jilinrime/legacyAdminActions.ts`.
+- **5. Tespit edilen risk veya eksik:** `profiles.role='admin'` (üyeliksiz/`aal1`), pasif (`active=false`) üye, `aal1` üye ve `anon` kullanıcı reddi izole PostgreSQL 17.11 üzerinde ve `legacyAdminActions`'ta doğrulandı; canlı Supabase Auth + `aal2` + RPC üzerinde gerçek oturum duman testi beklenmektedir.
+- **6. Yapılan düzeltme:** Paket 10B (`F1`) ile `/jilinrime` Server Actions ve `20261119180000` SQL `is_admin_user()` kilidi tamamlandı.
+- **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Evet — Canlı/staging Supabase üzerinde sıradan, `aal1` ve `aal2` MFA yönetici rolleriyle bir duman testi yapın.
 - **8. Öncelik seviyesi:** `P1`
 
 ### Madde 11
 - **1. Madde numarası ve başlığı:** 11. Açık API’lerde veri doğrulama, sayfalama, sonuç sınırı, zaman aşımı ve tekrar deneme sınırlarını incele. Kullanılan paketlerde uygulanabilir güvenlik güncellemelerini kontrol et.
 - **2. Durum:** `ŞARTLI GEÇTİ`
-- **3. Kanıt dosyası veya test komutu:** `node scripts/verify_paket05_api_middleware_mobile.cjs` (`12/12`), `node scripts/verify_paket07_release_candidate.cjs` (`7A/7B` sayfalama), `package-lock.json` sürüm incelemesi (`next 15.5.28`, `zod 4.6.7`).
+- **3. Kanıt dosyası veya test komutu:** `node scripts/verify_paket05_api_middleware_mobile.cjs` (`12/12`), `node scripts/verify_paket07_release_candidate.cjs` (`10/10`), `node scripts/verify_paket10b_codex_closures.cjs` (Check 4 `2500ms` DB AbortController), `package-lock.json` (`next 15.5.28`, `zod 4.6.7`).
 - **4. İlgili kod dosyaları:** `next.config.js`, `app/api/gastronomy-public/route.ts`, `app/api/gastronomy/regions/[slug]/route.ts`, `app/api/go/route.ts`, `app/api/track-event/route.ts`, `lib/cloud/client.ts`.
-- **5. Tespit edilen risk veya eksik:** Tüm API giriş şemaları Zod + üst sınır + `15 sn` fetch AbortController zaman aşımıyla korundu; ancak ağ kilidi nedeniyle `npm audit` canlı danışma veri tabanına karşı koşturulmadı.
-- **6. Yapılan düzeltme:** Paket 10'da `next.config.js` içindeki tüm rotalara uygulanan global `Access-Control-Allow-Origin` ve `Access-Control-Allow-Credentials` CORS başlıkları kaldırıldı.
+- **5. Tespit edilen risk veya eksik:** `/api/track-event` Supabase eklemesine `2500ms` `AbortController` eklendi; ancak ağ kilidi nedeniyle `npm audit` canlı danışma veri tabanına karşı koşturulmadı.
+- **6. Yapılan düzeltme:** Paket 10B (`F5`) ile DB abort signal ve safe error redaction eklendi.
 - **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Evet — İnternet erişimli CI/terminalde `npm audit` ile güncel paket güvenlik açıklarını tarayın.
 - **8. Öncelik seviyesi:** `P2`
 
 ### Madde 12
 - **1. Madde numarası ve başlığı:** 12. Form, arama, yönetici girişi ve ücretli uçlarda uygun hız ve kota sınırlarını kontrol et. Doğrudan sağlayıcıya giden çağrıları ayrıca incele. Normal story ziyaretçisinin yanlışlıkla engellenmediğini test et.
 - **2. Durum:** `ŞARTLI GEÇTİ`
-- **3. Kanıt dosyası veya test komutu:** `node scripts/verify_paket05_api_middleware_mobile.cjs` (CGNAT 200-istek testi), `node scripts/verify_paket07_release_candidate.cjs` (Check 9), `verify_production_ratelimit_config.cjs` (geçerli şekil PASS).
-- **4. İlgili kod dosyaları:** `lib/pilot/rateLimit.ts`, `lib/pilot/rateLimitConfig.ts`, `middleware.ts`, `app/api/track-event/route.ts`, `app/api/gastronomy-admin/login/route.ts`.
-- **5. Tespit edilen risk veya eksik:** Instagram CGNAT patlamaları statik bölge/sayfalarda `0` 429 döndürdü; ancak `track-event/route.ts` ayrı Upstash `Ratelimit` örneği kurduğundan (`fail-open`) ortak devre kesici dışında kalır ve Vercel canlı ortamında `RATE_LIMIT_CRITICAL_OUTAGE_MODE=block` + gerçek `UPSTASH_*` env doğrulanmalıdır.
-- **6. Yapılan düzeltme:** Paket 07–09 hız sınırları korundu; Paket 10'da kök `/feed.xml` ve `/gastronomi-yonetimi` de aynı middleware hız/kapsam koruması altına alındı.
-- **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Evet — Production Vercel ortamında `UPSTASH_REDIS_REST_*` ve `RATE_LIMIT_CRITICAL_OUTAGE_MODE=block` varlığını doğrulayın.
+- **3. Kanıt dosyası veya test komutu:** `node scripts/verify_paket05_api_middleware_mobile.cjs` (`12/12`), `node scripts/verify_paket03_perf_and_analytics.cjs` (`7/7`), `node scripts/verify_paket10b_codex_closures.cjs` (Checks 3, 4, 6 — `75/75` CGNAT aynı-UA, sahte/çerezsiz bot `429` at #31, SSR 0 `Set-Cookie`), `verify_production_ratelimit_config.cjs`.
+- **4. İlgili kod dosyaları:** `lib/pilot/rateLimit.ts`, `lib/pilot/rateLimitConfig.ts`, `middleware.ts`, `app/api/track-event/route.ts`, `app/api/gastronomy-public/route.ts`, `app/api/go/route.ts`.
+- **5. Tespit edilen risk veya eksik:** Paket 10B (`F4/F5`) ile imzalı `ya_rl_anon` CGNAT fairness çerezi, bot/sahte çerez kova sınırlaması, `RATE_LIMIT_REDIS_NAMESPACE` desteği ve `/api/track-event` tekil `enforceRateLimit('visitor_analytics')` birleştirmesi + kesintide `0` DB yazması tamamlandı. Canlı Vercel ortamında `RATE_LIMIT_COOKIE_SECRET`, `RATE_LIMIT_CRITICAL_OUTAGE_MODE=block` ve ayrı Upstash bağlantısı doğrulanmalıdır.
+- **6. Yapılan düzeltme:** Paket 10B (`F4` ve `F5`) tam kapsamda kapatıldı.
+- **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Evet — Production Vercel ortamında `UPSTASH_REDIS_REST_*`, `RATE_LIMIT_COOKIE_SECRET` ve `RATE_LIMIT_CRITICAL_OUTAGE_MODE=block` varlığını doğrulayın.
 - **8. Öncelik seviyesi:** `P1`
 
 ### Madde 13
 - **1. Madde numarası ve başlığı:** 13. Varsa harita anahtarını gerekli alan adları ve hizmetlerle sınırla. Araştırma, toplu içerik üretimi ve AI işlerini kimin tetikleyebildiğini doğrula.
 - **2. Durum:** `ŞARTLI GEÇTİ`
-- **3. Kanıt dosyası veya test komutu:** `node scripts/verify_v3_gastronomy.cjs` (`21/21` — Atmosphere SKU/bulk CLI engeli), `node scripts/verify_pilot_security.cjs` (`48/48`).
+- **3. Kanıt dosyası veya test komutu:** `node scripts/verify_v3_gastronomy.cjs` (`21/21` — Atmosphere SKU/bulk CLI engeli), `node scripts/verify_pilot_security.cjs` (`48/48`), `node scripts/verify_staging_preflight.cjs` (`28`).
 - **4. İlgili kod dosyaları:** `middleware.ts`, `app/api/gastronomy-admin/{research,jobs,publish}/route.ts`, `scripts/run_region_pipeline.mjs`.
-- **5. Tespit edilen risk veya eksik:** Uygulama çalışma anında tarayıcıda Google Maps JS/Places anahtarı kullanmaz (yalnız `maps.google.com/?cid=...` linki verir) ve admin AI işleri çift katmanlı MFA (`aal2`) + Basic auth arkasındadır; ancak `origin/main`'deki eski Google anahtarları iptal edilmeli ve mevcut Google Places/GenAI anahtarlarına GCP HTTP/IP/API kısıtlaması panelden doğrulanmalıdır.
-- **6. Yapılan düzeltme:** Paket 02–09 korumaları korundu; Paket 10'da çıplak `/gastronomi-yonetimi` yönlendirme açığı kapatıldı.
+- **5. Tespit edilen risk veya eksik:** Uygulama çalışma anında tarayıcıda Google Maps JS/Places anahtarı kullanmaz (yalnız `maps.google.com/?cid=...` linki verir). İki ayrı yetki modu vardır: yerel/izole testlerde Basic auth, staging/production ortamlarında ise Basic auth yasak olup yalnızca Supabase `ya_cloud_admin` + `aal2` MFA zorunludur (çift katman değil, ayrı mod). `origin/main`'deki eski Google anahtarları iptal edilmeli ve aktif Places/GenAI anahtarlarına GCP HTTP/IP/API kısıtlaması panelden doğrulanmalıdır.
+- **6. Yapılan düzeltme:** Paket 02–10B korumaları korundu; auth modu açıklaması kodla hizalandı.
 - **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Evet — Google Cloud Console → Credentials altında tüm aktif anahtarlara API/IP kısıtlaması koyun ve eskileri silin.
 - **8. Öncelik seviyesi:** `P0`
 
@@ -168,13 +168,13 @@
 
 ### Madde 15
 - **1. Madde numarası ve başlığı:** 15. Aynı herkese açık içeriği temiz URL, farklı UTM ve varsa farklı fbclid değerleriyle karşılaştır. Önbellek göstergesi, fonksiyon çalışması ve sorgu sayısını birlikte ölç. Her tıklamada fbclid olacağını varsayma.
-- **2. Durum:** `GEÇTİ`
-- **3. Kanıt dosyası veya test komutu:** `node scripts/verify_paket03_perf_and_analytics.cjs` (Check 4.2), `node scripts/verify_paket06_traffic_cost_resilience.cjs` (Scenario A/B `utm_*`/`fbclid`), `node scripts/verify_paket10_final_release_audit.cjs` (Flow A).
+- **2. Durum:** `ŞARTLI GEÇTİ` *(yerel `next start` / headless Chrome kapsamı; gerçek Vercel Edge CDN `x-vercel-cache` canlı doğrulaması gerekir)*
+- **3. Kanıt dosyası veya test komutu:** `node scripts/verify_paket03_perf_and_analytics.cjs` (Check 4.2), `node scripts/verify_paket06_traffic_cost_resilience.cjs` (`8/8` `utm_*`/`fbclid`), `node scripts/verify_paket10_final_release_audit.cjs` (Flow A).
 - **4. İlgili kod dosyaları:** `components/food/GastronomyPageClient.tsx`, `app/api/gastronomy/regions/[slug]/route.ts`, `middleware.ts`.
-- **5. Tespit edilen risk veya eksik:** Vercel Edge CDN katmanında `fbclid`/`utm_*` query parametrelerinin cache-key ayrımı yapıp yapmadığı yerel `next start`'ta tam taklit edilemez, ancak uygulama katmanında `/api/gastronomy/regions/[slug]` bu parametreleri almaz (`0` DB/Upstash).
-- **6. Yapılan düzeltme:** Paket 10 Flow A'da `?utm_source=instagram&utm_medium=story` ve `?region=moda&category=pizza&utm_source=instagram` senaryoları doğrulandı.
-- **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Hayır *(canlı Vercel CDN `x-vercel-cache: HIT` gözlemi pilot sırasında teyit edilebilir)*.
-- **8. Öncelik seviyesi:** `P3`
+- **5. Tespit edilen risk veya eksik:** Yerel `next start`'ta `/tr` ve `/tr?utm_source=...&fbclid=...` özdeş önbellekli HTML verdi (`0` DB/Upstash); ancak gerçek Vercel Edge CDN katmanında `fbclid`/`utm_*` query parametrelerinin cache-key ayrımı yapıp yapmadığı yalnız canlı preview/prod ortamında `x-vercel-cache` üzerinden kanıtlanabilir.
+- **6. Yapılan düzeltme:** Paket 10 Flow A + Paket 10B tam regresyon (`22/22`) ile korundu.
+- **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Evet *(canlı Vercel CDN `x-vercel-cache: HIT` gözlemini `utm_source` ve `fbclid` ile teyit edin)*.
+- **8. Öncelik seviyesi:** `P2`
 
 ### Madde 16
 - **1. Madde numarası ve başlığı:** 16. Önbellek güncelliğini dene: editör bir adres değiştirince yeni adres ne zaman görünür? Taslak veya kişisel içerik ortak önbelleğe giriyor mu?
@@ -188,13 +188,13 @@
 
 ### Madde 17
 - **1. Madde numarası ve başlığı:** 17. Liste açılırken kartların önceden yüklenmesinin ağ isteği ve bayt maliyetini ölç. Arama yazarken her harfte sorgu gidiyor mu? Büyük listelerde sayfalama ve sorgu indekslerini kontrol et.
-- **2. Durum:** `GEÇTİ`
+- **2. Durum:** `ŞARTLI GEÇTİ` *(uygulama ve bellek içi arama test edildi; canlı DB sorgu/indeks ölçümü ve gerçek cihaz yükü gerekir)*
 - **3. Kanıt dosyası veya test komutu:** `node scripts/verify_paket05_api_middleware_mobile.cjs` (`loadHotelSearchCatalog`), `node scripts/verify_paket07_release_candidate.cjs` (Check 7A/7B `245` & `135` otel sayfalama), `node scripts/verify_paket10_final_release_audit.cjs` (Flow B).
 - **4. İlgili kod dosyaları:** `components/food/LocationPickerModal.tsx`, `components/food/GastronomyPageClient.tsx`, `lib/db.ts`.
-- **5. Tespit edilen risk veya eksik:** Gastronomi konum araması tarayıcı belleğindeki statik liste üzerinde çalışır (tuş vuruşunda `0` ağ isteği); eski otel araması tek seferlik sayfalanmış katalog kullanır.
-- **6. Yapılan düzeltme:** Paket 10 Flow B'de arama + sonuçsuz durum + geri/ileri geçmiş geçişi uçtan uca test edildi.
-- **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Hayır.
-- **8. Öncelik seviyesi:** `Yok`
+- **5. Tespit edilen risk veya eksik:** Gastronomi konum araması tarayıcı belleğindeki statik liste üzerinde çalışır (tuş vuruşunda `0` ağ isteği); eski otel araması tek seferlik sayfalanmış katalog kullanır, ancak gerçek production Supabase DB indeks planları/boyutları canlı veritabanı üzerinde ölçülmemiştir.
+- **6. Yapılan düzeltme:** Paket 10 Flow B + Paket 10B tam regresyon (`22/22`) ile doğrulandı.
+- **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Evet *(eski `/search` yolu kullanılacaksa production Postgres `EXPLAIN` / indeks doğrulaması yapılmalıdır)*.
+- **8. Öncelik seviyesi:** `P3`
 
 ### Madde 18
 - **1. Madde numarası ve başlığı:** 18. Fonksiyon ve veritabanı bölgelerini, kullanılan bağlantı yöntemini ve yük altında dolan kaynağı kontrol et. Ayar değişikliğini gerçek sorgu gecikmesiyle gerekçelendir.
@@ -347,11 +347,11 @@
 ### Madde 32
 - **1. Madde numarası ve başlığı:** 32. Gerekirse gömülü harita, pahalı arama veya yoğun görselleri kapatma yolunu dene. Rehberin temel listesi, adres ve yol tarifi çalışmaya devam etsin. Bu mekanizma yeniden dağıtım gerektiriyorsa süresini ölç.
 - **2. Durum:** `ŞARTLI GEÇTİ`
-- **3. Kanıt dosyası veya test komutu:** `node scripts/verify_paket07_release_candidate.cjs` (Check 8: yeniden derlemeden `shed -> lockdown -> off`), `node scripts/verify_paket09_backup_recovery_and_geo_sitemap.cjs` (Check 8: Redis kesintisi altında `shed` koruması).
+- **3. Kanıt dosyası veya test komutu:** `node scripts/verify_paket07_release_candidate.cjs` (`10/10`), `node scripts/verify_paket09_backup_recovery_and_geo_sitemap.cjs` (`9/9`), `node scripts/verify_paket10b_codex_closures.cjs` (Check 2 — `F2/F3`).
 - **4. İlgili kod dosyaları:** `lib/pilot/emergencyMode.ts`, `middleware.ts`.
-- **5. Tespit edilen risk veya eksik:** Yeniden dağıtım (redeploy) gerektirmeden `UPSTASH` anahtarı üzerinden pahalı arama/API rotaları kapanırken temel gastronomi seçkisi + adres + Google Maps CID linki `200 OK` çalışıyor; ancak canlı Upstash konsolundan tetikleme provası canlıda yapılmadı.
-- **6. Yapılan düzeltme:** Paket 09 kesinti penceresi ve Paket 10 regresyonuyla doğrulandı.
-- **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Evet — Staging ortamında Upstash anahtarını (`TRAFFIC_EMERGENCY_MODE=shed`) değiştirerek `0`-deploy kapanışı canlı gözlemleyin.
+- **5. Tespit edilen risk veya eksik:** Paket 10B (`F2/F3`) ile geçersiz statik/Redis değerlerinde `'shed'` fail-safe, bozuk JSON / beklenmedik-`null` altında aktif incident grace koruması ve `EMERGENCY_MODE_REDIS_NAMESPACE` ayrımı doğrulandı. Canlı Upstash anahtarıyla staging üzerinde `0`-deploy kapanış provası hâlâ manuel teyit beklemektedir.
+- **6. Yapılan düzeltme:** Paket 10B (`F2/F3`) kapatıldı.
+- **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Evet — Staging ortamında Upstash anahtarını (`shed` ↔ `off`) değiştirerek `0`-deploy kapanışı canlı gözlemleyin.
 - **8. Öncelik seviyesi:** `P1`
 
 ### Madde 33
@@ -376,12 +376,12 @@
 
 ### Madde 35
 - **1. Madde numarası ve başlığı:** 35. Önceki sağlam uygulama sürümüne dönüş provası yap. Eski sürümün mevcut veritabanı şeması ve ayarlarla çalıştığını doğrula.
-- **2. Durum:** `ŞARTLI GEÇTİ`
-- **3. Kanıt dosyası veya test komutu:** `node scripts/verify_paket09_backup_recovery_and_geo_sitemap.cjs` (Senaryo 4: `<1s` yerel rollback provası) ve eklemeli (`additive`) şema uyumu denetimi.
+- **2. Durum:** `TEST EDİLEMEDİ` *(yerel port switchover simülasyonu gerçek iki ayrı derleme + yeni DB şeması + Storage dönüşü kanıtı değildir)*
+- **3. Kanıt dosyası veya test komutu:** `node scripts/verify_paket09_backup_recovery_and_geo_sitemap.cjs` (Senaryo 4: **yerel upstream port değiştirme simülasyonu** `<1s`; eski commit artifact + yeni migrasyon uyumu canlıda denenmedi).
 - **4. İlgili kod dosyaları:** `supabase/migrations/*`, `next.config.js`, `middleware.ts`.
-- **5. Tespit edilen risk veya eksik:** Yerel rollback + geriye uyumlu eklemeli migrasyon kuralı doğrulansa da Vercel Dashboard üzerindeki tek tık **Instant Rollback** butonunun gerçek preview/prod üzerinde provası yapılmadı.
-- **6. Yapılan düzeltme:** Yok (`PAKET_09` runbook korundu).
-- **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Evet — Vercel Preview üzerinde bir önceki dağılıma Instant Rollback provası yapın.
+- **5. Tespit edilen risk veya eksik:** Senaryo 4 aynı derlemedeki Next sunucusuyla yapay HTTP 500 sunucusu arasında yerel port yönlendirir; bu, gerçek önceki sağlam deployment artifact'ının yeni Supabase şeması (`20261119180000` dahil) ve Storage verileriyle çalıştığını kanıtlamaz.
+- **6. Yapılan düzeltme:** Paket 10B (`F7`) kapsamında Senaryo 4 başlığı yerel upstream switchover simülasyonu olarak dürüstçe yeniden adlandırıldı ve bu madde `TEST EDİLEMEDİ` yapıldı.
+- **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Evet — Vercel Preview/Staging üzerinde gerçek önceki deployment'a Instant Rollback yapıp yeni DB şeması + Storage ile çalıştığını doğrulayın.
 - **8. Öncelik seviyesi:** `P1`
 
 ### Madde 36
@@ -421,11 +421,11 @@
 ### Madde 39
 - **1. Madde numarası ve başlığı:** 39. Toplanan verileri, analiz/çerez tercihlerini, gizlilik metnini ve log saklama süresini kontrol et. Kişisel bilgileri olay adlarına ve bağlantı parametrelerine koyma.
 - **2. Durum:** `KALDI`
-- **3. Kanıt dosyası veya test komutu:** `node scripts/verify_paket07_release_candidate.cjs` (Check 5 çerez rızası & `#cerez-ayarlari`), `app/[lang]/(main)/(legal)/{gizlilik-politikasi,kvkk-aydinlatma-metni}/page.tsx` kaynak kodu incelemesi.
-- **4. İlgili kod dosyaları:** `components/CookieConsent.tsx`, `app/api/track-event/route.ts`, `app/[lang]/(main)/(legal)/cerez-politikasi/page.tsx`, `gizlilik-politikasi/page.tsx`, `kvkk-aydinlatma-metni/page.tsx`, `kullanim-kosullari/page.tsx`, `kullanim-sartlari/page.tsx`.
-- **5. Tespit edilen risk veya eksik:** Çerez rızası ve PII parametre temizliği teknik olarak geçti; **ancak** yayındaki `gizlilik-politikasi` ve `kvkk-aydinlatma-metni` sayfalarında hâlâ **`MERSİS/Vergi No: [İlgili Bilgiler Eklenecektir] – Adres: [İlgili Bilgiler Eklenecektir]`** boş yer tutucuları duruyor, `kullanim-kosullari` metni yalnız otel keşfinden bahsediyor ve tekrar sayfa `kullanim-sartlari` içinde `legal@gnkotel.com` e-postası kalmış durumda.
-- **6. Yapılan düzeltme:** Paket 10'da 4 aktif yasal sayfaya canonical URL eklendi, tekrar `kullanim-sartlari` `noindex` yapılıp `kullanim-kosullari`'na canonicalize edildi.
-- **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Evet (ZORUNLU) — Gerçek MERSİS/Vergi No/Adres bilgilerini ve log saklama sürelerini hukuk onayıyla doldurun, `kullanim-kosullari` metnine gastronomi rehberi kapsamını ekleyin.
+- **3. Kanıt dosyası veya test komutu:** `node scripts/verify_paket07_release_candidate.cjs` (Check 5 çerez rızası & `#cerez-ayarlari`), `node scripts/verify_paket10b_codex_closures.cjs` (Checks 4, 5 — `F5/F6`), `app/[lang]/(main)/(legal)/` incelemesi.
+- **4. İlgili kod dosyaları:** `components/CookieConsent.tsx`, `app/api/track-event/route.ts`, `app/[lang]/(main)/(legal)/{cerez-politikasi,gizlilik-politikasi,kvkk-aydinlatma-metni,kullanim-kosullari,kullanim-sartlari}/page.tsx`.
+- **5. Tespit edilen risk veya eksik:** Paket 10B ile `/api/track-event` ham hata log sızıntısı kapatıldı (`F5`) ve tekrar sayfa `kullanim-sartlari/page.tsx` içindeki yinelenen başlık (`6 -> 7`) + `legal@gnkotel.com` -> `info@yeriniayir.com` düzeltildi (`F6`); **ancak** üç aktif yasal sayfada (`gizlilik-politikasi/page.tsx:23`, `kvkk-aydinlatma-metni/page.tsx:23`, `kullanim-kosullari/page.tsx:91`) **`[İlgili Bilgiler Eklenecektir]`** yer tutucuları operatör tarafından gerçek şirket/MERSİS/VKN/adres bilgisi sağlanana kadar hâlâ boştur ve `kullanim-kosullari` metni gastronomi kapsamını henüz içermez.
+- **6. Yapılan düzeltme:** Paket 10B (`F5` ve `F6` teknik düzeltmeleri); bilgi uydurmadan aktif yer tutucular korundu.
+- **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Evet (ZORUNLU) — Tüm 3 aktif yasal sayfadaki `[İlgili Bilgiler Eklenecektir]` alanlarını, log saklama sürelerini ve GA4/Clarity çerez rızası kabul→ret→yeniden kabul akışını hukuk onayıyla tamamlayın.
 - **8. Öncelik seviyesi:** `P1`
 
 ### Madde 40
@@ -450,21 +450,21 @@
 
 ### Madde 42
 - **1. Madde numarası ve başlığı:** 42. Mobil okunabilirlik, kontrast, dokunma alanları, klavye erişimi, boş liste, bozuk bağlantı, 404 ve ağ hatası ekranlarını dene.
-- **2. Durum:** `GEÇTİ` *(Yerel Headless Chrome & statik HTML kapsamı; noter: `not-found.tsx` İngilizce dil çevirisi P3 iyileştirme olarak açıktır)*
+- **2. Durum:** `ŞARTLI GEÇTİ` *(Yerel Headless Chrome & statik HTML kapsamı; tam WCAG/ekran okuyucu ve fiziksel mobil cihaz testi gerekir; `not-found.tsx` EN çevirisi P3 açık)*
 - **3. Kanıt dosyası veya test komutu:** `node scripts/verify_paket10_final_release_audit.cjs` (Flows B, C), `node scripts/verify_paket08_geo_ai_search.cjs` (Check 6).
 - **4. İlgili kod dosyaları:** `components/food/CategoryBar.tsx`, `components/food/LocationPickerModal.tsx`, `app/[lang]/not-found.tsx`.
-- **5. Tespit edilen risk veya eksik:** `390px`/`375px`/`1280px` sıfır taşma, klavye `Escape`, boş arama (`Arama Sonuçları (0)`), `404` ve GPS/hata ekranları doğrulandı (`not-found.tsx` yalnızca EN rotada Türkçe otel metni göstermektedir — P3).
-- **6. Yapılan düzeltme:** Paket 10'da Flow B/C ile mobil erişim, boş arama ve hata akışları doğrulandı.
-- **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Hayır *(Madde 21 kapsamındaki fiziksel cihaz deneyi hariç)*.
-- **8. Öncelik seviyesi:** `Yok` *(EN 404 çevirisi için `P3`)*
+- **5. Tespit edilen risk veya eksik:** `390px`/`375px`/`1280px` sıfır yatay taşma, klavye `Escape`, boş arama, `404` ve GPS/hata ekranları headless Chrome'da doğrulandı; ancak otomatik WCAG kontrast / ekran okuyucu taraması ve gerçek dokunmatik telefon kontrolü (Madde 21) henüz yürütülmemiştir (`not-found.tsx` EN rotada Türkçe metin verir — P3).
+- **6. Yapılan düzeltme:** Paket 10 Flow B/C + Paket 10B regresyonuyla korundu.
+- **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Evet *(Madde 21 fiziksel cihaz ve temel kontrast/ekran okuyucu kontrolü)*.
+- **8. Öncelik seviyesi:** `P2` *(EN 404 çevirisi için `P3`)*
 
 ### Madde 43
 - **1. Madde numarası ve başlığı:** 43. HTTPS, alan adı yönlendirmeleri ve yenileme bildirimlerini kontrol et. Canlı sayfalarda indeksleme, site haritası ve ana URL doğru olsun. Test sayfalarının görünürlüğünü ayrıca kontrol et.
 - **2. Durum:** `ŞARTLI GEÇTİ`
-- **3. Kanıt dosyası veya test komutu:** `node scripts/verify_paket09_backup_recovery_and_geo_sitemap.cjs` (`1.529/1.529` sitemap taraması + domain ayrımı + `noindex`), `node scripts/verify_paket10_final_release_audit.cjs` (Flow D).
-- **4. İlgili kod dosyaları:** `middleware.ts`, `app/sitemap.ts`, `app/robots.ts`, `next.config.js`, `app/[lang]/(main)/{otel-listesi,(legal)/*}`.
-- **5. Tespit edilen risk veya eksik:** `1.529` sitemap URL'si, TR/EN domain `308` yönlendirmeleri, kök `/feed.xml`, admin/test rotalarının `noindex` başlıkları yerelde %100 geçti; ancak gerçek DNS, SSL sertifika yenileme bildirimleri ve Google Search Console mülkiyet/sitemap gönderimi canlı ortam gerektirir (`design-demo`, `preview-food-card`, `fethiye-yemek-rehberi` rotaları `noindex` olsa da auth arkasında değildir).
-- **6. Yapılan düzeltme:** Paket 10'da kök `/feed.xml` HTML dönme hatası, Schema `@id` (`www.`), `otel-listesi`/`kullanim-sartlari` `noindex` ve yasal canonical'lar düzeltildi.
+- **3. Kanıt dosyası veya test komutu:** `node scripts/verify_paket09_backup_recovery_and_geo_sitemap.cjs` (`1.529/1.529` sitemap taraması + domain ayrımı + `noindex`), `node scripts/verify_paket10_final_release_audit.cjs` (`6/6`), `node scripts/verify_paket10b_codex_closures.cjs` (Check 7 — `F8` DB otelleri + demo oteller).
+- **4. İlgili kod dosyaları:** `middleware.ts`, `lib/hotelSeo.ts`, `app/sitemap.ts`, `app/[lang]/(main)/otel/[id]/page.tsx`, `lib/schema-generator.ts`, `lib/db.ts`, `app/robots.ts`, `next.config.js`.
+- **5. Tespit edilen risk veya eksik:** Paket 10B (`F8`) ile aktif DB otellerindeki EN `/en/otel/...` canonical ve sitemap/hreflang/JSON-LD uyumsuzluğu tamamen giderildi ve `db.hotels.getById` slug desteği eklendi. Gerçek DNS, SSL sertifika yenileme bildirimleri ve Google Search Console gönderimi canlı ortam gerektirir (`design-demo`, `preview-food-card`, `fethiye-yemek-rehberi` rotaları `noindex` olsa da auth arkasında değildir).
+- **6. Yapılan düzeltme:** Paket 10B (`F8`) ortak `lib/hotelSeo.ts` mimarisiyle kapatıldı.
 - **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Evet — DNS/SSL otomatik yenileme uyarılarını ve Search Console `sitemap.xml` gönderimini doğrulayın.
 - **8. Öncelik seviyesi:** `P2`
 
@@ -485,10 +485,10 @@
 ### Madde 45
 - **1. Madde numarası ve başlığı:** 45. Küçük pilot öncesi temel yolculuğun iki cihazda çalıştığını, verinin korunduğunu, ücretli uçların denetimli olduğunu, alarmın ulaştığını ve geri dönüş yolunu doğrula. Kritik bir kontrol başarısız veya doğrulanamamışsa riski ve gereken işi açıkça yaz.
 - **2. Durum:** `KALDI`
-- **3. Kanıt dosyası veya test komutu:** Paket 10 yerel testleri (`21/21`), açık kalan maddeler: `08` (P0), `39` (P1), `05/09/18/21/22/23/31/34` (P1).
-- **4. İlgili kod dosyaları:** Tüm aday dal (`dda2cd6`) + manuel panel/cihaz ön koşulları.
-- **5. Tespit edilen risk veya eksik:** Kod ve yerel güvenlik testleri hazır olmasına rağmen `origin/main` açık Google API anahtarları, yasal yer tutucu metinler, dış izleme deneme alarmı, canlı RLS/yedekten dönüş doğrulaması ve gerçek iki telefon testi henüz tamamlanmamıştır.
-- **6. Yapılan düzeltme:** Kod adayındaki bilinen tüm buglar (`10` düzeltme) Paket 10'da kapatıldı.
+- **3. Kanıt dosyası veya test komutu:** Paket 10B yerel testleri (`22/22` gerçek `exit 0`), açık kalan operatör maddeleri: `08` (P0 `F0`), `39` (P1 yasal yer tutucular), `05/09/18/21/22/23/31/34/35` (P1 canlı bulut, fiziksel cihaz ve DR/rollback provası).
+- **4. İlgili kod dosyaları:** Tüm aday dal (`4c05f15`) + manuel panel/cihaz ön koşulları.
+- **5. Tespit edilen risk veya eksik:** Paket 10B ile tüm yazılım kaynaklı P1/P2 Codex bulguları (`F1`–`F8`) kapatılmış ve `22/22` kapı `exit 0` geçmiştir; ancak `origin/main` açık Google API anahtarları (`F0`), yasal yer tutucu metinler, dış izleme deneme alarmı, canlı RLS migrasyon uygulaması, gerçek yedek/artifact geri dönüş provası ve gerçek iki telefon testi operatör tarafından tamamlanmamıştır.
+- **6. Yapılan düzeltme:** Paket 10B'de `F1`–`F8` kod ve test borçlarının tamamı kapatıldı.
 - **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Evet — Pilot açılmadan `MANUEL_YAYIN_ONCESI_ISLEMLER.md` P0/P1 listesini tamamlayın.
 - **8. Öncelik seviyesi:** `P0`
 
@@ -504,11 +504,11 @@
 
 ### Madde 47
 - **1. Madde numarası ve başlığı:** 47. Geniş duyuru kararı için hedef yükte iki senaryonun sonucunu, bütçe payını, yedekten dönüş kanıtını, gerçek cihaz sonuçlarını ve müdahale sorumlusunu birlikte değerlendir. Kararı “Hazır / Şartlı hazır / Ertele” olarak gerekçelendir.
-- **2. Durum:** `KALDI` *(Nihai Canlı Karar: **ERTELE** — ön koşullar sonrası pilot için **ŞARTLI HAZIR**)*
-- **3. Kanıt dosyası veya test komutu:** `docs/audits/PAKET_10_FINAL_RELEASE_AUDIT.md`, `21/21` yerel regresyon geçer sonucu, ancak canlı bulut/cihaz/sır/hukuk ön koşulları eksik.
-- **4. İlgili kod dosyaları:** Bütün yayın adayı (`dda2cd6`).
-- **5. Tespit edilen risk veya eksik:** 1 milyon takipçiye geniş duyuru öncesi `P0` anahtar iptali + `P1` yasal metin, bütçe/duraklatma kilidi, canlı yük (`100–500` VU), gerçek yedekten geri dönüş ve gerçek cihaz (`LCP/INP/CLS`) ölçümleri kanıtlanmadan geniş duyuru yapılmamalıdır.
-- **6. Yapılan düzeltme:** Tüm kod ve otomatik regresyon engelleri sıfırlandı (`GEÇTİ`).
+- **2. Durum:** `KALDI` *(Nihai Canlı Karar: **ERTELE** — yazılımsal/kod kapıları `22/22` GEÇTİ; operatör ön koşulları sonrası pilot için **ŞARTLI HAZIR**)*
+- **3. Kanıt dosyası veya test komutu:** `docs/audits/PAKET_10B_CODEX_FINAL_FINDINGS_CLOSURE.md`, **`22/22` yerel regresyon ve E2E kapısı gerçek `exit 0`**, ancak canlı bulut/cihaz/sır/hukuk ön koşulları eksik.
+- **4. İlgili kod dosyaları:** Bütün yayın adayı (`4c05f15`).
+- **5. Tespit edilen risk veya eksik:** 1 milyon takipçiye geniş duyuru öncesi `P0` anahtar iptali (`F0`) + `P1` yasal metin, bütçe/duraklatma kilidi, canlı `20261119180000` RLS/MFA doğrulaması, canlı yük (`100–500` VU), gerçek yedekten/sürümden geri dönüş ve gerçek cihaz (`LCP/INP/CLS`) ölçümleri kanıtlanmadan geniş duyuru yapılmamalıdır.
+- **6. Yapılan düzeltme:** Tüm kod ve otomatik regresyon engelleri sıfırlandı (`22/22` gerçek `exit 0`).
 - **7. Canlı yayından önce manuel işlem gerekiyor mu?:** Evet — Önce P0/P1 manuel işlemlerle küçük pilotu doğrulayın, ardından geniş duyuru onayı verin.
 - **8. Öncelik seviyesi:** `P0`
 

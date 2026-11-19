@@ -1,6 +1,6 @@
 # Yerini Ayır — Manuel Yayın Öncesi İşlemler ve Operatör Runbook'u
 
-**Kapsam:** `feat/paket-10-final-release-audit` (`dda2cd6a2d9a669fbee9e14b7a2d6defd93f01ed`) canlıya çıkarılmadan önce **insan/operatör tarafından** tamamlanması zorunlu güvenlik, hukuk, bulut paneli, fiziksel cihaz ve felaket kurtarma adımları.
+**Kapsam:** `fix/paket-10b-codex-final-closures` (`4c05f15d21ca479873f931db2a0e5626d17b30c0`, Paket 10/10B) canlıya çıkarılmadan önce **insan/operatör tarafından** tamamlanması zorunlu güvenlik, hukuk, bulut paneli, fiziksel cihaz ve felaket kurtarma adımları.
 
 ---
 
@@ -26,6 +26,8 @@
      - `GASTRONOMY_AUTH_MODE=supabase`, `GASTRONOMY_CLOUD_ENV=production`
      - `UPSTASH_REDIS_REST_URL` (`https://...`), `UPSTASH_REDIS_REST_TOKEN`
      - `RATE_LIMIT_CRITICAL_OUTAGE_MODE=block`
+     - `RATE_LIMIT_COOKIE_SECRET` (en az 32 karakter rasgele değer; imzalı `ya_rl_anon` CGNAT çerezi için).
+     - Staging / Preview ile Production Redis ortamlarını **ayrı Upstash veritabanlarıyla** ayırın; geçici paylaşım durumunda `EMERGENCY_MODE_REDIS_NAMESPACE=prod|staging` ve `RATE_LIMIT_REDIS_NAMESPACE=prod|staging` değişkenlerini farklı ayarlayın (`verifyEmergencyRedisIsolation`).
    - Deploy ortamında çalıştırarak teyit edin: `node scripts/verify_production_ratelimit_config.cjs` (`exit 0` vermeli).
    - Vercel Serverless Function bölgesini (ör. `fra1` Frankfurt) Supabase DB bölgesiyle aynı bölgeye sabitleyin.
 4. **Vercel & Supabase & Upstash Maliyet Sınırları ve Alarmları (Madde 03, 05, 06, 31):**
@@ -33,9 +35,10 @@
    - Supabase → **Billing / Spend Cap**: Spend Cap açık kalsın ve Auth MAU / PITR / Storage gibi Spend Cap dışı kalemleri ayrıca not edin.
    - Google Cloud Billing + Upstash Console'da günlük/aylık kota alarmı ve e-posta bildirimlerini açın.
    - Harici Sentetik Uptime İzleme (ör. Better Stack / UptimeRobot) ile `/tr`, `/tr/gastronomi/mekan/moda-gg-pizza` ve `/tr/search` uçlarını 1–5 dakikalık periyotla izleyin ve sorumluya **gerçek deneme alarmı gönderip ulaştığını doğrulayın**.
-5. **Canlı Supabase RLS Kilidi Doğrulaması (Madde 09, 10):**
-   - `jilinrime` eski istemci sayfaları (`restoranlar`, `dashboard`, `etiket-yonetimi`, `main-page-tags`, `otel-listesi`) tarayıcıdan `anon` `@/lib/supabase` kullandığından, canlı Supabase SQL Editor'de `hotels`, `restaurants`, `tags`, `price_tags`, `analytics_events`, `articles`, `offers` tablolarının `anon` rolüne karşı `INSERT`/`UPDATE`/`DELETE` yetkilerinin **kesin kapalı** olduğunu ve yalnızca `ya_publications` (yayınlanmış satırlar) vb. güvenli okumalara açık olduğunu SQL ile teyit edin.
-   - Canlı Staging'de 1 adet yetkisiz hesap (`401`/`403`) ve 1 adet MFA (`aal2`) yönetici hesabıyla duman testi yapın.
+5. **Canlı Supabase MFA+Üyelik Migration'ı (`20261119180000`) & RLS Kilidi Doğrulaması (Madde 09, 10):**
+   - Yeni forward SQL migration dosyasını (`supabase/migrations/20261119180000_enforce_cloud_mfa_admin_rls.sql`) **önce izole Staging projesine** uygulayın; öncesinde mevcut `pg_policies` envanterinin salt-okunur yedeğini alın.
+   - Staging'de yalnız: (a) `anon` ve normal `authenticated` kullanıcılarının yazma ve `analytics_events`/`audit_logs` `SELECT` yetkisinin reddedildiğini, (b) `aal1` üyenin reddedildiğini, (c) `active=false` üyenin reddedildiğini, (d) aktif Cloud Admin + `aal2` MFA hesabıyla `/jilinrime` (`legacyAdminActions`) ve `/gastronomi-yonetimi` akışlarının çalıştığını test edin — **asla `anon`/`authenticated` grant açarak geçici çözüm üretmeyin.**
+   - Staging onayı ardından aynı migration'ı Production'a uygulayıp tek duman testi yapın.
 6. **Canlı Yedekten Geri Yükleme & Instant Rollback Tatbikatı (Madde 32, 33, 34, 35):**
    - Supabase **Backups** sekmesinde otomatik günlük yedek / PITR sıklığı, saklama süresi ve Storage bucket yedek durumunu kaydedin.
    - Bir veritabanı yedeğini **ayrı bir test/staging projesine** geri yükleyin; örnek bir mekân/otel kaydı, bağlı görseli ve adresini açıp **gerçekleşen kurtarma süresini (RTO)** kaydedin.
@@ -46,8 +49,8 @@
 ## 3. P1 Hukuki Metinler, İçerik & Telif Doğrulamaları
 
 7. **Yasal Metinlerdeki Yer Tutucuları Doldurun (Madde 39 — `KALDI`):**
-   - [app/[lang]/(main)/(legal)/gizlilik-politikasi/page.tsx](file:///Users/erdems/Documents/Codex/yeriniayir-paket07-codex-closures/app/%5Blang%5D/(main)/(legal)/gizlilik-politikasi/page.tsx) ve [app/[lang]/(main)/(legal)/kvkk-aydinlatma-metni/page.tsx](file:///Users/erdems/Documents/Codex/yeriniayir-paket07-codex-closures/app/%5Blang%5D/(main)/(legal)/kvkk-aydinlatma-metni/page.tsx) dosyalarındaki `MERSİS/Vergi No: [İlgili Bilgiler Eklenecektir]` ve `Adres: [İlgili Bilgiler Eklenecektir]` ifadelerini gerçek şirket ünvanı, MERSİS/VKN ve tebligat adresiyle doldurun; log saklama sürelerini netleştirin.
-   - [kullanim-kosullari/page.tsx](file:///Users/erdems/Documents/Codex/yeriniayir-paket07-codex-closures/app/%5Blang%5D/(main)/(legal)/kullanim-kosullari/page.tsx) metninin gastronomi rehberini de kapsadığını hukuk açısından onaylayın.
+   - [gizlilik-politikasi/page.tsx](file:///Users/erdems/Documents/Codex/yeriniayir-paket07-codex-closures/app/%5Blang%5D/(main)/(legal)/gizlilik-politikasi/page.tsx) (`satır 23`), [kvkk-aydinlatma-metni/page.tsx](file:///Users/erdems/Documents/Codex/yeriniayir-paket07-codex-closures/app/%5Blang%5D/(main)/(legal)/kvkk-aydinlatma-metni/page.tsx) (`satır 23`) ve [kullanim-kosullari/page.tsx](file:///Users/erdems/Documents/Codex/yeriniayir-paket07-codex-closures/app/%5Blang%5D/(main)/(legal)/kullanim-kosullari/page.tsx) (`satır 22/27/91`) içindeki `[İlgili Bilgiler Eklenecektir]` alanlarını gerçek şirket ünvanı, MERSİS/VKN ve tebligat adresiyle doldurun; log saklama sürelerini ve GA4/Clarity çerez rızası kabul→ret→yeniden kabul akışını hukuk ekibiyle onaylayın.
+   - [kullanim-kosullari/page.tsx](file:///Users/erdems/Documents/Codex/yeriniayir-paket07-codex-closures/app/%5Blang%5D/(main)/(legal)/kullanim-kosullari/page.tsx) metninin gastronomi rehberini de kapsadığını hukuk açısından onaylayın (teknik başlık sırası ve `info@yeriniayir.com` e-postası Paket 10B'de düzeltilmiştir).
 8. **Paylaşılacak Pilot Seçkisi Saha ve Telif Kontrolü (Madde 40, 41):**
    - Instagram story ile duyurulacak ilk semtteki (ör. Moda/Kadıköy) tüm mekânların o gün açık olduğunu, doğru şube pinini (`cid=`), adını ve adresini manuel kontrol edin; hata bildirimi için aktif e-posta/iletişim yolunu (`info@yeriniayir.com`) teyit edin.
    - `public/` altında aktif gösterilecek tüm görsellerin kullanım/telif haklarını teyit edin.
