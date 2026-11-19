@@ -114,7 +114,7 @@ export function generateArticleSchema(article: {
   // EN: /guide/slug_en
   const pathPrefix = lang === 'en' ? 'guide' : 'rehber';
   const slug = (lang === 'en' && article.slug_en) ? article.slug_en : article.slug;
-  const url = absoluteUrl(`/${pathPrefix}/${slug}`, lang);
+  const url = encodeURI(absoluteUrl(`/${pathPrefix}/${slug}`, lang));
   const baseUrl = absoluteUrl('/', lang);
 
   const orgName = lang === 'en' ? 'World And Hotels' : 'Yerini Ayır';
@@ -124,7 +124,7 @@ export function generateArticleSchema(article: {
     '@type': 'BlogPosting',
     headline: article.title,
     description: article.description,
-    image: article.coverImage || `${baseUrl}og-image.jpg`,
+    image: article.coverImage || `${baseUrl}yeriniayir-logo.png`,
     datePublished: article.createdAt || new Date().toISOString(),
     dateModified: article.updatedAt || article.createdAt || new Date().toISOString(),
     url: url,

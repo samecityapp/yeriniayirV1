@@ -1,8 +1,13 @@
 import React from 'react';
+import type { Metadata } from 'next';
+import { TR_SITE_ORIGIN } from '@/lib/gastronomy-v3/geoCatalog';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Kullanım Koşulları | Yerini Ayır',
   description: 'Yerini Ayır kullanım koşulları, hizmet şartları ve yasal sorumluluklar hakkında bilgilendirme.',
+  alternates: {
+    canonical: `${TR_SITE_ORIGIN}/kullanim-kosullari`,
+  },
 };
 
 export default function KullanimKosullariPage() {

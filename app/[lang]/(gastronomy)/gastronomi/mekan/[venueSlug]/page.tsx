@@ -10,6 +10,7 @@ import {
   buildGeoAlternates,
   buildGeoPageHref,
   buildGeoPublicUrl,
+  buildGeoSocialMetadata,
   EN_SITE_ORIGIN,
   getCityNameLocalized,
   TR_SITE_ORIGIN,
@@ -68,17 +69,30 @@ export async function generateMetadata(props: {
 
   const { snapshotVenue, location, editorial } = resolved;
   const subPath = `/mekan/${snapshotVenue.id}`;
+  const placeLabelEn = location.slug === 'kadikoy' ? 'Kadikoy' : `${location.name}, Kadikoy`;
+  const title = isEn
+    ? `${snapshotVenue.name} (${placeLabelEn}) — What to Order & Guide`
+    : `${snapshotVenue.name} (${snapshotVenue.neighborhood}) — Ne Sipariş Etmeli & Rehber`;
+  const description = isEn
+    ? `${editorial.culinaryIdentity.en} Signature dishes: ${snapshotVenue.whatToOrder.join(', ')}. Address: ${snapshotVenue.address}.`
+    : `${snapshotVenue.description} Önerilen ürünler: ${snapshotVenue.whatToOrder.join(', ')}. Adres: ${snapshotVenue.address}.`;
+  const alternates = buildGeoAlternates(subPath, lang);
 
   return {
-    title: isEn
-      ? `${snapshotVenue.name} (${location.name}, Kadikoy) — What to Order & Guide`
-      : `${snapshotVenue.name} (${snapshotVenue.neighborhood}) — Ne Sipariş Etmeli & Rehber`,
-    description: isEn
-      ? `${editorial.culinaryIdentity.en} Signature dishes: ${snapshotVenue.whatToOrder.join(', ')}. Address: ${snapshotVenue.address}.`
-      : `${snapshotVenue.description} Önerilen ürünler: ${snapshotVenue.whatToOrder.join(', ')}. Adres: ${snapshotVenue.address}.`,
+    title,
+    description,
     ...(preview
       ? { robots: { index: false, follow: false } }
-      : { alternates: buildGeoAlternates(subPath, lang) }),
+      : {
+          alternates,
+          ...buildGeoSocialMetadata({
+            title,
+            description,
+            url: alternates.canonical,
+            lang,
+            type: 'article',
+          }),
+        }),
   };
 }
 

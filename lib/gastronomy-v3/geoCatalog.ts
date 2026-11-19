@@ -350,6 +350,43 @@ export function buildGeoRootAlternates(lang: 'tr' | 'en') {
   };
 }
 
+export function buildGeoSocialMetadata(params: {
+  title: string;
+  description: string;
+  url: string;
+  lang: 'tr' | 'en';
+  type?: 'website' | 'article';
+  imageUrl?: string;
+}) {
+  const origin = params.lang === 'en' ? EN_SITE_ORIGIN : TR_SITE_ORIGIN;
+  const siteName = params.lang === 'en' ? 'World And Hotels' : 'Yerini Ayır';
+  const locale = params.lang === 'en' ? 'en_US' : 'tr_TR';
+  const image = params.imageUrl || `${origin}/yeriniayir-logo.png`;
+
+  return {
+    openGraph: {
+      title: params.title,
+      description: params.description,
+      url: params.url,
+      siteName,
+      locale,
+      type: params.type ?? 'website',
+      images: [
+        {
+          url: image,
+          alt: `${siteName} — ${params.title}`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image' as const,
+      title: params.title,
+      description: params.description,
+      images: [image],
+    },
+  };
+}
+
 export function getModaKadikoyPilotStaticParamTuples(): Array<{ segments: string[] }> {
   const tuples: Array<{ segments: string[] }> = [
     { segments: ['istanbul'] },

@@ -1,8 +1,13 @@
 import React from 'react';
+import type { Metadata } from 'next';
+import { TR_SITE_ORIGIN } from '@/lib/gastronomy-v3/geoCatalog';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Gizlilik Politikası | Yerini Ayır',
   description: 'Yerini Ayır gizlilik politikası ve kişisel verilerin korunması hakkında bilgilendirme.',
+  alternates: {
+    canonical: `${TR_SITE_ORIGIN}/gizlilik-politikasi`,
+  },
 };
 
 export default function GizlilikPolitikasiPage() {

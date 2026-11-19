@@ -18,12 +18,17 @@ export async function POST(request: Request) {
   const token = jar.get(ADMIN_COOKIE)?.value;
   if (token) {
     try {
-      const client = cloudClient();
+      const client = cloudClient(token);
+      // GoTrueClient.signOut() skips HTTP revocation when persistSession is false;
+      // GoTrueAdminApi.signOut(jwt, 'local') posts /auth/v1/logout?scope=local with the user's JWT + anon apikey.
       await client.auth.admin.signOut(token, 'local');
     } catch {
       /* Cookie is still deleted; token expires shortly. */
     }
   }
   jar.delete(ADMIN_COOKIE);
+  if (jar.get('ya_cloud_pending')?.value) {
+    jar.delete('ya_cloud_pending');
+  }
   return Response.json({ ok: true }, { headers: { ...PRIVATE_HEADERS, ...rl.headers } });
 }

@@ -14,6 +14,7 @@ import {
   buildGeoAlternates,
   buildGeoPageHref,
   buildGeoPublicUrl,
+  buildGeoSocialMetadata,
   EN_SITE_ORIGIN,
   getCityNameLocalized,
   getFoodCategoryTitleEn,
@@ -66,55 +67,83 @@ export async function generateMetadata(props: {
 
   if (resolved.kind === 'city') {
     const cityName = getCityNameLocalized(resolved.city.citySlug, resolved.city.cityName, lang);
+    const title = isEn
+      ? `${cityName} Gastronomy Guide — ${resolved.city.regions.length} Neighborhoods`
+      : `${cityName} Gastronomi Rehberi — ${resolved.city.regions.length} Doğrulanmış Bölge`;
+    const description = isEn
+      ? `Curated neighborhood food and specialty coffee guides across ${resolved.city.regions.length} districts and quarters in ${cityName}.`
+      : `${cityName} ilindeki ${resolved.city.regions.length} farklı semt ve ilçede doğrulanmış restoran, kafe, fırın ve yerel lezzet seçkileri.`;
     return {
-      title: isEn
-        ? `${cityName} Gastronomy Guide — ${resolved.city.regions.length} Neighborhoods`
-        : `${cityName} Gastronomi Rehberi — ${resolved.city.regions.length} Doğrulanmış Bölge`,
-      description: isEn
-        ? `Curated neighborhood food and specialty coffee guides across ${resolved.city.regions.length} districts and quarters in ${cityName}.`
-        : `${cityName} ilindeki ${resolved.city.regions.length} farklı semt ve ilçede doğrulanmış restoran, kafe, fırın ve yerel lezzet seçkileri.`,
-      ...(preview ? { robots: { index: false, follow: false } } : { alternates }),
+      title,
+      description,
+      ...(preview
+        ? { robots: { index: false, follow: false } }
+        : {
+            alternates,
+            ...buildGeoSocialMetadata({ title, description, url: alternates.canonical, lang }),
+          }),
     };
   }
 
   if (resolved.kind === 'district-hub') {
     const cityName = getCityNameLocalized(resolved.citySlug, resolved.cityName, lang);
+    const title = isEn
+      ? `${resolved.districtName}, ${cityName} — Food & Coffee Selections`
+      : `${resolved.districtName}, ${cityName} Gastronomi Rehberi`;
+    const description = isEn
+      ? `Browse ${resolved.childRegions.length} curated neighborhood guides across ${resolved.districtName}, ${cityName}.`
+      : `${resolved.districtName} (${cityName}) içindeki ${resolved.childRegions.length} semtte doğrulanmış yemek ve kahve durakları.`;
     return {
-      title: isEn
-        ? `${resolved.districtName}, ${cityName} — Food & Coffee Selections`
-        : `${resolved.districtName}, ${cityName} Gastronomi Rehberi`,
-      description: isEn
-        ? `Browse ${resolved.childRegions.length} curated neighborhood guides across ${resolved.districtName}, ${cityName}.`
-        : `${resolved.districtName} (${cityName}) içindeki ${resolved.childRegions.length} semtte doğrulanmış yemek ve kahve durakları.`,
-      ...(preview ? { robots: { index: false, follow: false } } : { alternates }),
+      title,
+      description,
+      ...(preview
+        ? { robots: { index: false, follow: false } }
+        : {
+            alternates,
+            ...buildGeoSocialMetadata({ title, description, url: alternates.canonical, lang }),
+          }),
     };
   }
 
   if (resolved.kind === 'region') {
     const loc = resolved.location;
+    const title = isEn
+      ? `${loc.displayName} Food Guide (${resolved.payload.venues.length} Places)`
+      : `${loc.displayName} Gastronomi Rehberi (${resolved.payload.venues.length} Doğrulanmış Mekân)`;
+    const description = isEn
+      ? `${resolved.payload.venues.length} verified places across ${resolved.activeCategories.length} categories in ${loc.displayName}. ${loc.characterSubtitle || loc.scopeNote || ''}`
+      : `${loc.displayName} seçkisinde ${resolved.activeCategories.length} kategoride ${resolved.payload.venues.length} bağımsız mekân. ${loc.characterSubtitle || loc.scopeNote || ''}`;
     return {
-      title: isEn
-        ? `${loc.displayName} Food Guide (${resolved.payload.venues.length} Places)`
-        : `${loc.displayName} Gastronomi Rehberi (${resolved.payload.venues.length} Doğrulanmış Mekân)`,
-      description: isEn
-        ? `${resolved.payload.venues.length} verified places across ${resolved.activeCategories.length} categories in ${loc.displayName}. ${loc.characterSubtitle || loc.scopeNote || ''}`
-        : `${loc.displayName} seçkisinde ${resolved.activeCategories.length} kategoride ${resolved.payload.venues.length} bağımsız mekân. ${loc.characterSubtitle || loc.scopeNote || ''}`,
-      ...(preview ? { robots: { index: false, follow: false } } : { alternates }),
+      title,
+      description,
+      ...(preview
+        ? { robots: { index: false, follow: false } }
+        : {
+            alternates,
+            ...buildGeoSocialMetadata({ title, description, url: alternates.canonical, lang }),
+          }),
     };
   }
 
   const { location, category, payload } = resolved;
   const catCount = payload.venues.filter((v) => v.categorySlugs.includes(category.slug)).length;
   const catNameEn = getFoodCategoryTitleEn(category);
+  const title = isEn
+    ? `${catNameEn} in ${location.displayName} (${catCount} Spots)`
+    : `${location.locative} ${category.title} Seçkisi (${catCount} Mekân) · ${location.city}`;
+  const description = isEn
+    ? `${catCount} verified independent spots for ${catNameEn.toLowerCase()} in ${location.displayName}, with signature dishes and Google Maps links.`
+    : `${location.displayName} sınırları içinde ${category.title} kategorisinde doğrulanmış ${catCount} bağımsız durak, sipariş önerileri ve yol tarifi notları.`;
 
   return {
-    title: isEn
-      ? `${catNameEn} in ${location.displayName} (${catCount} Spots)`
-      : `${location.locative} ${category.title} Seçkisi (${catCount} Mekân) · ${location.city}`,
-    description: isEn
-      ? `${catCount} verified independent spots for ${catNameEn.toLowerCase()} in ${location.displayName}, with signature dishes and Google Maps links.`
-      : `${location.displayName} sınırları içinde ${category.title} kategorisinde doğrulanmış ${catCount} bağımsız durak, sipariş önerileri ve yol tarifi notları.`,
-    ...(preview ? { robots: { index: false, follow: false } } : { alternates }),
+    title,
+    description,
+    ...(preview
+      ? { robots: { index: false, follow: false } }
+      : {
+          alternates,
+          ...buildGeoSocialMetadata({ title, description, url: alternates.canonical, lang }),
+        }),
   };
 }
 

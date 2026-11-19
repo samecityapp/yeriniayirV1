@@ -96,23 +96,6 @@ const nextConfig = {
         source: '/:path*',
         headers: [
           {
-            key: 'Access-Control-Allow-Credentials',
-            value: 'true',
-          },
-          {
-            key: 'Access-Control-Allow-Origin',
-            // Update this to your specific domains in production
-            value: 'https://yeriniayir.com',
-          },
-          {
-            key: 'Access-Control-Allow-Methods',
-            value: 'GET,OPTIONS,PATCH,DELETE,POST,PUT',
-          },
-          {
-            key: 'Access-Control-Allow-Headers',
-            value: 'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version',
-          },
-          {
             key: 'Content-Security-Policy',
             // Added report-only or stricter directives. 
             // Note: 'unsafe-inline' is often needed for Next.js in some configs, 

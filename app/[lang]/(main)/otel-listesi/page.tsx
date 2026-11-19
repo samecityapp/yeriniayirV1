@@ -1,3 +1,14 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Otel Listesi | Yerini Ayır',
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: { index: false, follow: false },
+  },
+};
+
 export default function OtelListesiPage() {
   return (
     <div className="container mx-auto px-4 py-8">

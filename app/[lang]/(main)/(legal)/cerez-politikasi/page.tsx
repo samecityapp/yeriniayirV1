@@ -1,8 +1,13 @@
 import React from 'react';
+import type { Metadata } from 'next';
+import { TR_SITE_ORIGIN } from '@/lib/gastronomy-v3/geoCatalog';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Çerez Politikası | Yerini Ayır',
   description: 'Yerini Ayır çerez kullanım politikası ve tercihlerinizi nasıl yönetebileceğiniz hakkında bilgiler.',
+  alternates: {
+    canonical: `${TR_SITE_ORIGIN}/cerez-politikasi`,
+  },
 };
 
 export default function CerezPolitikasiPage() {

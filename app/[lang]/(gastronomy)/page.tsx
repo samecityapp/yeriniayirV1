@@ -6,6 +6,7 @@ import { getDirectoryOnlyFoodDiscovery } from '@/lib/food/regionDiscovery';
 import {
   buildGeoPublicUrl,
   buildGeoRootAlternates,
+  buildGeoSocialMetadata,
   EN_SITE_ORIGIN,
   getGeoCities,
   TR_SITE_ORIGIN,
@@ -25,17 +26,28 @@ export async function generateMetadata(props: {
   const isEn = params.lang === 'en';
   const lang = isEn ? 'en' : 'tr';
   const preview = isLocalFoodPreviewSync();
+  const title = isEn
+    ? 'Yerini Ayır — Verified Local Gastronomy Guide'
+    : 'Yerini Ayır — Doğrulanmış Yerel Gastronomi Rehberi';
+  const description = isEn
+    ? 'Discover independent coffee roasters, neighborhood kitchens, bakeries and verified local culinary stops across 21 Turkish cities.'
+    : 'Türkiye genelinde 21 il ve 92 bölgede bağımsız kahvecileri, yemek mekanlarını, ekşi maya fırınları ve doğrulanmış yerel lezzet duraklarını keşfet.';
+  const alternates = buildGeoRootAlternates(lang);
 
   return {
-    title: isEn
-      ? 'Yerini Ayır — Verified Local Gastronomy Guide'
-      : 'Yerini Ayır — Doğrulanmış Yerel Gastronomi Rehberi',
-    description: isEn
-      ? 'Discover independent coffee roasters, neighborhood kitchens, bakeries and verified local culinary stops across 21 Turkish cities.'
-      : 'Türkiye genelinde 21 il ve 92 bölgede bağımsız kahvecileri, yemek mekanlarını, ekşi maya fırınları ve doğrulanmış yerel lezzet duraklarını keşfet.',
+    title,
+    description,
     ...(preview
       ? { robots: { index: false, follow: false, googleBot: { index: false, follow: false } } }
-      : { alternates: buildGeoRootAlternates(lang) }),
+      : {
+          alternates,
+          ...buildGeoSocialMetadata({
+            title,
+            description,
+            url: alternates.canonical,
+            lang,
+          }),
+        }),
   };
 }
 

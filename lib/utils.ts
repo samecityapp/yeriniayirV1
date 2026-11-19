@@ -19,8 +19,8 @@ export function absoluteUrl(path: string, lang: string = 'tr'): string {
   const cleanPath = path.startsWith('/') ? path : `/${path}`;
 
   // Decide domain based on language
-  const DOMAIN_TR = 'yeriniayir.com';
-  const DOMAIN_EN = 'worldandhotels.com';
+  const DOMAIN_TR = 'www.yeriniayir.com';
+  const DOMAIN_EN = 'www.worldandhotels.com';
 
   const domain = lang === 'tr' ? DOMAIN_TR : DOMAIN_EN;
   const protocol = process.env.NODE_ENV === 'development' ? 'http' : 'https';

@@ -6,6 +6,7 @@ import {
   buildGeoAlternates,
   buildGeoPageHref,
   buildGeoPublicUrl,
+  buildGeoSocialMetadata,
   getCityNameLocalized,
   getGeoCities,
   TR_SITE_ORIGIN,
@@ -28,17 +29,28 @@ export async function generateMetadata(props: {
   const lang = params.lang === 'en' ? 'en' : 'tr';
   const isEn = lang === 'en';
   const preview = isLocalFoodPreviewSync();
+  const title = isEn
+    ? 'Turkey Gastronomy Guide — 21 Cities, 92 Neighborhood Selections'
+    : 'Türkiye Gastronomi Rehberi — 21 İl, 92 Doğrulanmış Semt Seçkisi';
+  const description = isEn
+    ? 'Explore verified neighborhood gastronomy selections across 21 cities in Turkey, featuring an in-depth Moda and Kadikoy pilot guide.'
+    : 'Türkiye genelinde 21 il ve 92 yayınlı bölgede bağımsız restoran, kafe, fırın ve sokak lezzetleri rehberi; Moda ve Kadıköy pilot seçkileriyle.';
+  const alternates = buildGeoAlternates('/', lang);
 
   return {
-    title: isEn
-      ? 'Turkey Gastronomy Guide — 21 Cities, 92 Neighborhood Selections'
-      : 'Türkiye Gastronomi Rehberi — 21 İl, 92 Doğrulanmış Semt Seçkisi',
-    description: isEn
-      ? 'Explore verified neighborhood gastronomy selections across 21 cities in Turkey, featuring an in-depth Moda and Kadikoy pilot guide.'
-      : 'Türkiye genelinde 21 il ve 92 yayınlı bölgede bağımsız restoran, kafe, fırın ve sokak lezzetleri rehberi; Moda ve Kadıköy pilot seçkileriyle.',
+    title,
+    description,
     ...(preview
       ? { robots: { index: false, follow: false, googleBot: { index: false, follow: false } } }
-      : { alternates: buildGeoAlternates('/', lang) }),
+      : {
+          alternates,
+          ...buildGeoSocialMetadata({
+            title,
+            description,
+            url: alternates.canonical,
+            lang,
+          }),
+        }),
   };
 }
 

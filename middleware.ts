@@ -296,7 +296,17 @@ async function applicationMiddleware(
     if (!rl.ok) {
       return rateLimitDeniedResponse(rl, false);
     }
-    const response = NextResponse.next();
+    const hasLocale = locales.some(
+      (locale) => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)
+    );
+    const response = hasLocale
+      ? NextResponse.next()
+      : NextResponse.rewrite(
+          new URL(
+            `/${hostname === 'worldandhotels.com' || hostname === 'www.worldandhotels.com' ? 'en' : 'tr'}${pathname}`,
+            request.url
+          )
+        );
     response.headers.set('Cache-Control', 'private, no-store, max-age=0');
     response.headers.set('Vary', 'Cookie');
     response.headers.set('X-Robots-Tag', 'noindex, nofollow');
@@ -414,6 +424,15 @@ async function applicationMiddleware(
     }
   }
 
+  if (pathname === '/feed.xml') {
+    const hostLower = (hostname.split(':')[0] || '').toLowerCase();
+    const targetFeedLang =
+      hostLower === 'worldandhotels.com' || hostLower === 'www.worldandhotels.com'
+        ? 'en'
+        : 'tr';
+    return NextResponse.rewrite(new URL(`/${targetFeedLang}/feed.xml`, request.url));
+  }
+
   // Skip internal Next.js paths and static files after admin route protections run.
   if (
     pathname.startsWith('/_next') ||
@@ -474,7 +493,7 @@ async function applicationMiddleware(
   };
 
   const NOINDEX_PUBLIC_PATH_RE =
-    /(?:^|\/)(?:design-demo|preview-food-card|fethiye-yemek-rehberi|search|hoteloffer[1-4]?)(?:$|\/|\.)/i;
+    /(?:^|\/)(?:design-demo|preview-food-card|fethiye-yemek-rehberi|search|hoteloffer[1-4]?|otel-listesi|kullanim-sartlari)(?:$|\/|\.)/i;
   const withRobotsHeader = (response: NextResponse): NextResponse => {
     if (NOINDEX_PUBLIC_PATH_RE.test(pathname)) {
       response.headers.set('X-Robots-Tag', 'noindex, nofollow');

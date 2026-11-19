@@ -1,8 +1,13 @@
 import React from 'react';
+import type { Metadata } from 'next';
+import { TR_SITE_ORIGIN } from '@/lib/gastronomy-v3/geoCatalog';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'KVKK Aydınlatma Metni | Yerini Ayır',
   description: '6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında aydınlatma metni.',
+  alternates: {
+    canonical: `${TR_SITE_ORIGIN}/kvkk-aydinlatma-metni`,
+  },
 };
 
 export default function KVKKAydinlatmaMetniPage() {

@@ -279,11 +279,12 @@ export default async function ArticlePage(props: Props) {
     title,
     description,
     content: getLocalizedText(article.content, lang),
-    slug: lang === 'tr' ? slugTr : slugEn,
+    slug: slugTr,
+    slug_en: slugEn,
     coverImage: article.cover_image_url || undefined,
     createdAt: article.published_at,
     updatedAt: article.updated_at,
-  });
+  }, lang);
 
   const siteOrigin = lang === 'en' ? EN_SITE_ORIGIN : TR_SITE_ORIGIN;
   const articleCanonicalUrl = encodeURI(
