@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { supabase } from '@/lib/supabase';
+import { loadHotelSearchCatalog } from '@/lib/hotelSearchCache';
 import { Tag, PriceTag } from '@/lib/types';
 import { getLocalizedText } from '@/lib/localization';
 import { LOCATIONS } from '@/lib/constants';
@@ -56,18 +56,17 @@ export default function SearchFilters({ lang = 'tr', dict }: SearchFiltersProps)
   }, [searchQuery]);
 
   useEffect(() => {
+    let cancelled = false;
     const fetchData = async () => {
       try {
-        const { data: tagsData, error: tagsError } = await supabase
-          .from('tags')
-          .select('*')
-          .is('deleted_at', null)
-          .order('name', { ascending: true });
+        const catalog = await loadHotelSearchCatalog();
+        if (cancelled) return;
 
+        const tagsData = catalog.tags;
         if (tagsData && tagsData.length > 0) {
           const mapped = tagsData.map(t => ({
             id: t.id,
-            name: typeof t.name === 'string' ? (t.name.startsWith('{') ? JSON.parse(t.name) : { tr: t.name }) : t.name,
+            name: typeof t.name === 'string' ? (t.name.startsWith('{') ? JSON.parse(t.name) : { tr: t.name }) : (t.name as any),
             slug: t.slug,
             icon: t.icon || 'Tag',
             isFeatured: Boolean(t.is_featured)
@@ -79,20 +78,11 @@ export default function SearchFilters({ lang = 'tr', dict }: SearchFiltersProps)
           if (featured.length > 0) {
             setFeaturedTags(featured);
           } else {
-            // If DB has tags but none marked featured, fallback to first few
-            // We don't overwrite with hardcoded fallback here because we prefer real DB data if slightly different
             setFeaturedTags(mapped.slice(0, 5));
           }
         }
-        // If undefined or empty array, we keep the initial FALLBACK_TAGS state
-        // No else block needed to set fallbacks.
 
-        const { data: priceTagsData, error: priceError } = await supabase
-          .from('price_tags')
-          .select('*')
-          .is('deleted_at', null)
-          .order('min_price', { ascending: true });
-
+        const priceTagsData = catalog.priceTags;
         if (priceTagsData && priceTagsData.length > 0) {
           setPriceTags(priceTagsData.map(p => ({
             id: p.id,
@@ -102,7 +92,6 @@ export default function SearchFilters({ lang = 'tr', dict }: SearchFiltersProps)
             maxPrice: p.max_price
           })));
         } else {
-          // Fallback prices
           setPriceTags([
             { id: 'p1', label: '2000 TL Altı', slug: '2000-alti', minPrice: 0, maxPrice: 2000 },
             { id: 'p2', label: '2000-4000 TL', slug: '2000-4000', minPrice: 2000, maxPrice: 4000 },
@@ -110,25 +99,21 @@ export default function SearchFilters({ lang = 'tr', dict }: SearchFiltersProps)
           ]);
         }
 
-        const { data: hotelsData } = await supabase
-          .from('hotels')
-          .select('id, name, location')
-          .is('deleted_at', null)
-          .order('name', { ascending: true });
-
-        if (hotelsData) {
-          setAllHotels(hotelsData);
+        if (catalog.hotels && catalog.hotels.length > 0) {
+          setAllHotels(catalog.hotels);
         }
 
         setLoading(false);
       } catch (error) {
         console.error('[SearchFilters] Catch error:', error);
-        // On error, we keep the existing (fallback) state
         setLoading(false);
       }
     };
 
     fetchData();
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   useEffect(() => {
@@ -204,9 +189,13 @@ export default function SearchFilters({ lang = 'tr', dict }: SearchFiltersProps)
   }, [debouncedQuery, allHotels, allTags]);
 
   const handleSearch = () => {
-    if (searchQuery.trim()) {
-      router.push(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+    const trimmed = searchQuery.trim().slice(0, 80);
+    if (!trimmed) return;
+    const nextUrl = `/search?q=${encodeURIComponent(trimmed)}`;
+    if (typeof window !== 'undefined' && `${window.location.pathname}${window.location.search}` === nextUrl) {
+      return;
     }
+    router.push(nextUrl);
   };
 
   const handleSuggestionClick = (suggestion: SearchSuggestion) => {
@@ -252,6 +241,7 @@ export default function SearchFilters({ lang = 'tr', dict }: SearchFiltersProps)
               <Search className="absolute left-4 sm:left-6 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
               <input
                 type="text"
+                maxLength={80}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onKeyDown={handleKeyDown}

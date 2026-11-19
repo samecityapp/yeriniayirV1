@@ -1,8 +1,12 @@
-import { createHash } from 'node:crypto';
 import { NextResponse } from 'next/server';
 import { Ratelimit } from '@upstash/ratelimit';
 import { Redis } from '@upstash/redis';
 import { z } from 'zod';
+import {
+  buildVisitorClientKey,
+  enforceEdgeMemoryShield,
+  isRateLimitActive,
+} from '@/lib/pilot/rateLimit';
 import { isSupabaseIsolated, supabase } from '@/lib/supabase';
 
 const NO_STORE_HEADERS = {
@@ -12,6 +16,8 @@ const NO_STORE_HEADERS = {
 const MAX_BODY_BYTES = 2048;
 const MAX_DEDUPE_ENTRIES = 2000;
 const DEDUPE_TTL_MS = 60_000;
+const UPSTASH_TIMEOUT_MS = 1500;
+const DB_TIMEOUT_MS = 4000;
 
 const eventSchema = z
   .object({
@@ -68,7 +74,7 @@ function getRateLimiter(): Ratelimit | null {
   const redis = new Redis({ url, token });
   cachedRateLimiter = new Ratelimit({
     redis,
-    limiter: Ratelimit.slidingWindow(5, '10 s'),
+    limiter: Ratelimit.slidingWindow(10, '10 s'),
     analytics: false,
     prefix: '@upstash/ratelimit/api/track-event',
   });
@@ -112,16 +118,18 @@ function sanitizeMetadata(
   return safe;
 }
 
-function hashClientIp(request: Request): string {
-  const rawIp =
-    request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ||
-    request.headers.get('x-real-ip')?.trim() ||
-    '127.0.0.1';
-  const utcDay = new Date().toISOString().slice(0, 10);
-  return createHash('sha256')
-    .update(`${rawIp}:${utcDay}`)
-    .digest('hex')
-    .slice(0, 32);
+async function withTimeout<T>(promise: PromiseLike<T>, ms: number, message: string): Promise<T> {
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  try {
+    return await Promise.race([
+      Promise.resolve(promise),
+      new Promise<never>((_, reject) => {
+        timer = setTimeout(() => reject(new Error(message)), ms);
+      }),
+    ]);
+  } finally {
+    if (timer) clearTimeout(timer);
+  }
 }
 
 export async function POST(request: Request) {
@@ -162,11 +170,11 @@ export async function POST(request: Request) {
 
     const { hotel_id, event_type, device_type, metadata } = validation.data;
     const safeMetadata = sanitizeMetadata(metadata);
-    const ipHash = hashClientIp(request);
+    const visitorKey = await buildVisitorClientKey(request.headers);
 
     const isViewEvent = event_type === 'page_view' || event_type === 'view';
     const dedupeKey = isViewEvent
-      ? `${ipHash}:${event_type}:${hotel_id || safeMetadata.path || 'root'}`
+      ? `${visitorKey}:${event_type}:${hotel_id || safeMetadata.path || 'root'}`
       : null;
 
     if (dedupeKey) {
@@ -181,36 +189,65 @@ export async function POST(request: Request) {
       }
     }
 
-    if (process.env.NODE_ENV === 'production') {
+    let rlHeaders: Record<string, string> = {};
+    if (isRateLimitActive()) {
+      // Layer 1 memory shield blocks CGNAT-safe / IP floods BEFORE billing Upstash.
+      const shield = await enforceEdgeMemoryShield(request.headers, 'visitor_analytics', {
+        scope: 'api',
+      });
+      rlHeaders = shield.headers;
+      if (!shield.ok) {
+        return NextResponse.json(
+          { error: 'Too Many Requests' },
+          { status: 429, headers: { ...NO_STORE_HEADERS, ...shield.headers } }
+        );
+      }
+
       const limiter = getRateLimiter();
       if (limiter) {
         try {
-          const { success } = await limiter.limit(ipHash);
-          if (!success) {
+          const remote = await withTimeout(
+            limiter.limit(visitorKey),
+            UPSTASH_TIMEOUT_MS,
+            'Analytics Upstash timeout'
+          );
+          if (!remote.success) {
             return NextResponse.json(
               { error: 'Too Many Requests' },
-              { status: 429, headers: NO_STORE_HEADERS }
+              {
+                status: 429,
+                headers: {
+                  ...NO_STORE_HEADERS,
+                  'Retry-After': '10',
+                  'X-RateLimit-Policy': 'upstash',
+                },
+              }
             );
           }
         } catch (rateError) {
+          // Layer 1 memory shield remains enforced; never unlimited.
           console.warn('Analytics ratelimit fail-open:', rateError);
         }
       }
     }
 
-    const { error } = await supabase.from('analytics_events').insert({
-      hotel_id: hotel_id ?? null,
-      event_type,
-      device_type: device_type || 'unknown',
-      metadata: safeMetadata,
-    });
+    const { error } = await withTimeout(
+      supabase.from('analytics_events').insert({
+        hotel_id: hotel_id ?? null,
+        event_type,
+        device_type: device_type || 'unknown',
+        metadata: safeMetadata,
+      }),
+      DB_TIMEOUT_MS,
+      'Analytics DB insert timeout'
+    );
 
     if (error) {
       // Do not emit HTTP 500 to visitors when analytics writes are blocked (e.g., RLS hold)
       console.warn('Analytics insert degraded:', error.code || error.message);
       return NextResponse.json(
         { success: true, recorded: false },
-        { status: 202, headers: NO_STORE_HEADERS }
+        { status: 202, headers: { ...NO_STORE_HEADERS, ...rlHeaders } }
       );
     }
 
@@ -220,7 +257,7 @@ export async function POST(request: Request) {
 
     return NextResponse.json(
       { success: true, recorded: true },
-      { status: 200, headers: NO_STORE_HEADERS }
+      { status: 200, headers: { ...NO_STORE_HEADERS, ...rlHeaders } }
     );
   } catch (error) {
     console.warn('Analytics route degraded cleanly:', error);

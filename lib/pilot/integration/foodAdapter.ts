@@ -114,6 +114,9 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    nearbyAreaLabel?: string;
    distanceKm?: number;
    distanceMeters?: number;
+   mapsUri?: string;
+   placeId?: string;
+   coordinates?: { lat: number; lng: number };
   },
   scope: 'core' | 'nearby'
  ) => {
@@ -156,6 +159,9 @@ export function toFoodDiscovery(data:IntegrationDiscovery):VisitorFoodDiscovery 
    ...(scope === 'nearby' && typeof v.distanceMeters === 'number'
     ? { distanceMeters: v.distanceMeters }
     : {}),
+   ...(v.mapsUri ? { mapsUri: v.mapsUri } : {}),
+   ...(v.placeId ? { placeId: v.placeId } : {}),
+   ...(v.coordinates ? { coordinates: v.coordinates } : {}),
    tagline:description,
    imageUrl:illustrations.get(v.id)!,imageIsRepresentative:true,imageCategory:v.categoryId,
    ratings:resolvedRatings,

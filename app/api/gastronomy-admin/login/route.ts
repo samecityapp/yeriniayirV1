@@ -3,17 +3,20 @@ import {z} from 'zod';
 import {createHash} from 'node:crypto';
 import {cloudClient} from '@/lib/cloud/client';
 import {ADMIN_COOKIE,PRIVATE_HEADERS,sameOrigin} from '@/lib/cloud/auth';
+import {enforceRateLimit} from '@/lib/pilot/rateLimit';
 const PENDING='ya_cloud_pending';
 const input=z.discriminatedUnion('action',[
  z.object({action:z.literal('login'),email:z.string().email().max(254),password:z.string().min(8).max(256)}).strict(),
  z.object({action:z.literal('verify'),code:z.string().regex(/^\d{6}$/)}).strict(),
 ]);
-// Secondary bounded process guard; Supabase Auth's distributed rate limits still apply.
+// Secondary bounded process guard; distributed enforceRateLimit & Supabase Auth limits also apply.
 const attempts=new Map<string,{count:number;until:number}>();
 function limited(key:string){const now=Date.now();for(const[k,v]of Array.from(attempts))if(v.until<now)attempts.delete(k);
  if(attempts.size>1000)return true;const a=attempts.get(key)||{count:0,until:now+600_000};attempts.set(key,a);return ++a.count>10;}
 export async function POST(request:Request){
  if(!sameOrigin(request))return Response.json({error:'Forbidden'},{status:403,headers:PRIVATE_HEADERS});
+ const rl=await enforceRateLimit(request.headers,'admin_auth',{scope:'api'});
+ if(!rl.ok)return Response.json({error:'Daha sonra tekrar deneyin.'},{status:rl.status,headers:{...PRIVATE_HEADERS,...rl.headers}});
  try{
   const raw=await request.text();if(raw.length>2000)throw Error('Input too large');const p=input.safeParse(JSON.parse(raw));
   if(!p.success)return Response.json({error:'Giriş bilgilerini kontrol edin.'},{status:400,headers:PRIVATE_HEADERS});

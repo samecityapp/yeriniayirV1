@@ -1194,6 +1194,7 @@ function toPublishedLocation(snap: V3VerifiedRegionSnapshot): FoodLocation {
     status: 'published',
     aliases: snap.region.aliases,
     center: snap.region.center,
+    boundary: snap.region.boundary,
     scopeNote: snap.region.scopeNote,
     characterSubtitle: snap.region.characterSubtitle,
   };

@@ -14,7 +14,7 @@ import {
 } from 'lucide-react';
 import { FoodLocation } from '@/lib/food/types';
 import type { createRealFoodProvider } from '@/lib/food/realProvider';
-import { haversineMeters } from '@/lib/food/text';
+import { findNearestPublishedRegion } from '@/lib/food/maps';
 import { useModalFocus } from '@/lib/food/useModalFocus';
 import { FOOD_DISCOVERY } from '@/lib/food/config';
 
@@ -38,6 +38,8 @@ export function LocationPickerModal({
   const [gpsLoading, setGpsLoading] = useState(false);
   const [gpsMessage, setGpsMessage] = useState<string | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const isOpenRef = useRef(isOpen);
+  isOpenRef.current = isOpen;
 
   // Modal açıldığında inputa odaklan
   useEffect(() => {
@@ -45,9 +47,9 @@ export function LocationPickerModal({
       const timer = setTimeout(() => inputRef.current?.focus(), 100);
       setGpsMessage(null);
       return () => clearTimeout(timer);
-      setGpsMessage(null);
     } else {
       setQuery('');
+      setGpsLoading(false);
     }
   }, [isOpen]);
 
@@ -80,8 +82,10 @@ export function LocationPickerModal({
 
   // GPS ile Konumumu Kullan
   const handleUseCurrentLocation = () => {
-    if (!navigator.geolocation) {
-      setGpsMessage('Tarayıcınız konum servisini desteklemiyor.');
+    if (gpsLoading) return;
+
+    if (typeof navigator === 'undefined' || !navigator.geolocation) {
+      setGpsMessage('Tarayıcınız konum servisini desteklemiyor. Aşağıdaki listeden seçebilirsiniz.');
       return;
     }
 
@@ -90,43 +94,41 @@ export function LocationPickerModal({
 
     navigator.geolocation.getCurrentPosition(
       (position) => {
+        if (!isOpenRef.current) return;
         setGpsLoading(false);
         const { latitude, longitude } = position.coords;
 
-        // En yakın hazır bölgeyi bul
-        let nearestLoc: FoodLocation | null = null;
-        let minDistance = Infinity;
+        const match = findNearestPublishedRegion(
+          { lat: latitude, lng: longitude },
+          readyRegions,
+          FOOD_DISCOVERY.nearbySuggestionRadiusMeters
+        );
 
-        for (const loc of readyRegions) {
-          if (loc.center) {
-            const dist = haversineMeters({ lat: latitude, lng: longitude }, loc.center);
-            if (dist < minDistance) {
-              minDistance = dist;
-              nearestLoc = loc;
-            }
-          }
-        }
-
-        if (nearestLoc && minDistance <= FOOD_DISCOVERY.nearbySuggestionRadiusMeters) {
-          const km = (minDistance / 1000).toFixed(1);
-          setGpsMessage(`Konumunuza en yakın bölge: ${nearestLoc.name} (~${km} km)`);
-          onSelectLocation(nearestLoc);
+        if (match) {
+          const distLabel = match.insideBoundary
+            ? 'Bölge içindesiniz'
+            : `~${(match.distanceMeters / 1000).toFixed(1)} km`;
+          setGpsMessage(`Konumunuza en yakın bölge: ${match.location.name} (${distLabel})`);
+          onSelectLocation(match.location);
           onClose();
         } else {
           setGpsMessage(
-            "Konumunuza yakın aktif bir rehber henüz bulunmuyor. Şu an Taksim & İstiklal, Asmalımescit & Pera, Yeniköy, Göktürk, Balat, Çukurcuma, Etiler, Ortaköy, Akaretler, Bebek, Galata, Beşiktaş Çarşı, Karaköy, Cihangir, Nişantaşı, Üsküdar, Kuzguncuk, Çengelköy, Koşuyolu & Acıbadem, Kadıköy, Moda, Yeldeğirmeni, Feneryolu, Fenerbahçe & Kalamış, Caddebostan, Suadiye, Bostancı, Kaleiçi, Konyaaltı Sahil, Lara, Kaş Merkez, Kalkan Merkez, Alanya Merkez, Side & Kemer (Antalya), Gaziantep, Kuşadası, Akyaka & Akçapınar, Fethiye Merkez, Çalış, Ölüdeniz, Yanıklar & Göcek (Fethiye), Bodrum Merkez, Yalıkavak, Gümüşlük, Türkbükü, Bitez, Turgutreis, Ortakent & Yahşi, Gündoğan, Gümbet, Torba & Akyarlar (Bodrum), Marmaris Merkez ve Datça Merkez ile Alsancak, Bostanlı, Karşıyaka, Bornova, Göztepe & Güzelyalı, Mavişehir, Alaçatı, Urla, Sığacık, Foça (İzmir), Şanlıurfa Merkez, Mardin Merkez, Diyarbakır Merkez, Hatay Merkez, İskenderun Merkez, Adana Merkez, Mersin Merkez ile Kızılay, Tunalı Hilmi, Bahçelievler & 7. Cadde, Gaziosmanpaşa, Çayyolu & Park Caddesi, Ümitköy & Beysukent, Ayrancı ve Çukurambar (Ankara) ile Aydın Merkez, Balıkesir Merkez, Ayvalık Merkez, Cunda, Bursa Merkez, Çanakkale Merkez, Edirne Merkez, Eskişehir Merkez, Denizli Merkez, Rize Merkez ve Trabzon Merkez rehberleri yayındadır."
+            `Konumunuza yakın aktif bir rehber bulunamadı (${readyRegions.length} bölgeden arama kutusuyla veya listeden seçebilirsiniz).`
           );
         }
       },
       (error) => {
+        if (!isOpenRef.current) return;
         setGpsLoading(false);
-        if (error.code === error.PERMISSION_DENIED) {
-          setGpsMessage('Konum izni verilmedi. Aşağıdaki listeden seçebilirsiniz.');
+        if (error.code === 1) {
+          setGpsMessage('Konum izni verilmedi. Aşağıdaki listeden bölge seçebilirsiniz.');
+        } else if (error.code === 3) {
+          setGpsMessage('Konum belirleme zaman aşımına uğradı. Aşağıdaki listeden seçebilirsiniz.');
         } else {
           setGpsMessage('Konum bilgisi alınamadı. Lütfen listeden bir bölge seçin.');
         }
       },
-      { timeout: 8000 }
+      { enableHighAccuracy: false, timeout: 10000, maximumAge: 120000 }
     );
   };
 
@@ -172,6 +174,7 @@ export function LocationPickerModal({
             <input
               ref={inputRef}
               type="text"
+              maxLength={80}
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="İl, ilçe veya semt ara (Taksim & İstiklal, Asmalımescit & Pera, Yeniköy, Göktürk, Galata, Beşiktaş Çarşı, Karaköy, Cihangir, Nişantaşı, Fenerbahçe, Kalamış, Üsküdar, Kuzguncuk, Çengelköy, Feneryolu, Kadıköy, Kaleiçi, Konyaaltı Sahil, Lara, Kaş Merkez, Kalkan Merkez, Alanya Merkez, Side, Kemer, Akyaka & Akçapınar, Yanıklar, Göcek, Fethiye Merkez, Çalış, Ölüdeniz, Bodrum Merkez, Yalıkavak, Gümüşlük, Türkbükü, Bitez, Turgutreis, Ortakent & Yahşi, Gündoğan, Gümbet, Torba, Akyarlar, Marmaris Merkez, Datça Merkez, Alsancak, Bostanlı, Karşıyaka, Bornova, Göztepe & Güzelyalı, Mavişehir, Alaçatı, Urla, Sığacık, Foça, Şanlıurfa Merkez, Mardin Merkez, Diyarbakır Merkez, Hatay Merkez, İskenderun Merkez, Adana Merkez, Mersin Merkez, Kızılay, Tunalı Hilmi, Bahçelievler & 7. Cadde, Gaziosmanpaşa, Çayyolu & Park Caddesi, Ümitköy & Beysukent, Ayrancı, Çukurambar, Aydın Merkez, Balıkesir Merkez, Ayvalık Merkez, Cunda, Bursa Merkez, Çanakkale Merkez, Edirne Merkez, Eskişehir Merkez, Denizli Merkez, Rize Merkez, Trabzon Merkez)"

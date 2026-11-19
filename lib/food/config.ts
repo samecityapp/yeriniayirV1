@@ -13,6 +13,6 @@ export const FOOD_DISCOVERY = {
     lastRegionKey: 'ya:food:lastRegion',
     pendingCategoryKey: 'ya:food:pendingCategory',
   },
-  /** "Konumumu kullan" sonrasında önerilecek bölge için azami kuş uçuşu mesafe */
-  nearbySuggestionRadiusMeters: 4000,
+  /** "Konumumu kullan" sonrasında bölge sınırından önerilecek azami mesafe */
+  nearbySuggestionRadiusMeters: 6000,
 } as const;

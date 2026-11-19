@@ -5,6 +5,7 @@ import { VenueImage } from '@/components/food/VenueImage';
 import type { VisitorFoodVenue } from '@/lib/food/types';
 import { GooglePlaceRating } from '@/components/food/GooglePlaceRating';
 import { useModalFocus } from '@/lib/food/useModalFocus';
+import { resolveSafeVenueMapsUrl } from '@/lib/food/maps';
 import { getLocalizedText } from '@/lib/localization';
 import {
   X,
@@ -36,13 +37,7 @@ function parseTip(raw: string): { label: string | null; value: string; isWarning
 
 export function VariantABottomSheet({ restaurant, onClose, lang = 'tr' }: VariantAParseProps) {
   const modalRef = useModalFocus(true, onClose);
-  const mapsUrl =
-    restaurant.ratings?.[0]?.attribution?.mapsUri ||
-    `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-      getLocalizedText(restaurant.name, lang) +
-        ' ' +
-        (restaurant.address || restaurant.neighborhood || getLocalizedText(restaurant.location, lang))
-    )}`;
+  const mapsUrl = resolveSafeVenueMapsUrl(restaurant, lang);
 
   return (
     <div

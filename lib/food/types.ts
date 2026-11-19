@@ -19,6 +19,13 @@ export type FoodLocationLevel = 'il' | 'ilce' | 'semt';
  */
 export type FoodRegionStatus = 'published' | 'demo' | 'coming_soon';
 
+export interface FoodRegionBbox {
+  minLat: number;
+  maxLat: number;
+  minLng: number;
+  maxLng: number;
+}
+
 export interface FoodLocation {
   /** URL yoluyla aynı: 'istanbul/kadikoy/moda' veya 'gaziantep' */
   id: string;
@@ -39,6 +46,10 @@ export interface FoodLocation {
   aliases?: string[];
   status: FoodRegionStatus;
   center?: { lat: number; lng: number };
+  boundary?: {
+    bbox: FoodRegionBbox;
+    excludeBbox?: FoodRegionBbox;
+  };
   /** Kullanıcıya gösterilecek kapsam notu */
   scopeNote?: string;
   /** Bölgenin gastronomi karakter özeti (örn. "Güneydoğu mutfak mirası & UNESCO tescilli gastronomi") */
@@ -123,6 +134,9 @@ export interface VisitorFoodVenue {
   nearbyAreaLabel?: string;
   distanceKm?: number;
   distanceMeters?: number;
+  mapsUri?: string;
+  placeId?: string;
+  coordinates?: { lat: number; lng: number };
   tagline:string|null; imageUrl:string; imageIsRepresentative:boolean; imageCategory:string; imageAttribution?:{label:string;url?:string}[];
   ratings:import('@/lib/pilot/googlePlaces/visitorRating').VisitorGoogleRating[];
   orderSuggestion:{title:string}|null; menuFrom:string[];

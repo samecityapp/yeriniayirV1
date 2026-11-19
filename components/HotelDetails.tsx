@@ -3,6 +3,7 @@
 import { MapPin, ExternalLink, Instagram, Map } from 'lucide-react';
 import * as LucideIcons from 'lucide-react';
 import { getLocalizedText } from '@/lib/localization';
+import { sanitizeExternalMapsUrl } from '@/lib/food/maps';
 import { LocalizedString } from '@/lib/types';
 import { NearbyPlacesTab } from './nearby-places/NearbyPlacesTab';
 
@@ -22,6 +23,7 @@ type HotelDetailsProps = {
 };
 
 export function HotelDetails({ features, tabs, mapImageUrl, location, websiteUrl, instagramUrl, googleMapsUrl, tags, coordinates }: HotelDetailsProps) {
+  const safeGoogleMapsUrl = sanitizeExternalMapsUrl(googleMapsUrl);
   return (
     <>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 mb-6">
@@ -138,9 +140,9 @@ export function HotelDetails({ features, tabs, mapImageUrl, location, websiteUrl
             Konum
           </h3>
           <p className="text-gray-600 text-sm sm:text-base mb-6">{location}</p>
-          {googleMapsUrl && (
+          {safeGoogleMapsUrl && (
             <a
-              href={googleMapsUrl}
+              href={safeGoogleMapsUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 sm:gap-3 bg-green-600 hover:bg-green-700 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-xl transition-colors shadow-md hover:shadow-lg group"
@@ -159,9 +161,9 @@ export function HotelDetails({ features, tabs, mapImageUrl, location, websiteUrl
             <MapPin className="w-5 h-5 text-gray-700 flex-shrink-0 mt-0.5" strokeWidth={2} />
             <p className="text-gray-700 text-[15px] leading-relaxed">{location}</p>
           </div>
-          {googleMapsUrl && (
+          {safeGoogleMapsUrl && (
             <a
-              href={googleMapsUrl}
+              href={safeGoogleMapsUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center h-[52px] bg-white border border-gray-300 hover:border-gray-900 active:bg-gray-50 text-gray-900 font-semibold rounded-xl transition-all text-[16px]"

@@ -1,4 +1,4 @@
-import { supabase } from './supabase';
+import { isSupabaseIsolated, supabase } from './supabase';
 import { Hotel, Group, Tag, PriceTag, SearchTerm } from './types';
 import { mockArticles, mockFethiyeArticle } from '@/data/mockArticles';
 import { fallbackArticles } from '@/data/fallbackArticles';
@@ -9,11 +9,13 @@ import { DEMO_HOTELS, DEMO_HOTEL_GROUPS, DEMO_TAGS, getDemoHotelById } from './d
 export const db = {
   hotels: {
     async getAll(): Promise<Hotel[]> {
+      if (isSupabaseIsolated) return DEMO_HOTELS;
       try {
         const { data, error } = await supabase
           .from('hotels')
           .select('*')
-          .order('created_at', { ascending: false });
+          .order('created_at', { ascending: false })
+          .limit(100);
 
         if (error) return DEMO_HOTELS;
         const dbHotels = (data || []).map(this.mapFromDb);
@@ -187,7 +189,7 @@ export const db = {
         query = query.gte('rating', filters.minRating);
       }
 
-      query = query.order('created_at', { ascending: false });
+      query = query.order('created_at', { ascending: false }).limit(100);
 
       const { data, error } = await query;
 
@@ -196,23 +198,27 @@ export const db = {
     },
 
     async getByTag(tag: string): Promise<Hotel[]> {
+      if (isSupabaseIsolated) return [];
       const { data, error } = await supabase
         .from('hotels')
         .select('*')
         .contains('tags', [tag])
-        .order('created_at', { ascending: false });
+        .order('created_at', { ascending: false })
+        .limit(100);
 
       if (error) throw error;
       return (data || []).map(this.mapFromDb);
     },
 
     async getByPriceRange(minPrice: number, maxPrice: number): Promise<Hotel[]> {
+      if (isSupabaseIsolated) return [];
       const { data, error } = await supabase
         .from('hotels')
         .select('*')
         .gte('price', minPrice)
         .lte('price', maxPrice)
-        .order('price', { ascending: true });
+        .order('price', { ascending: true })
+        .limit(100);
 
       if (error) throw error;
       return (data || []).map(this.mapFromDb);
@@ -754,12 +760,18 @@ export const db = {
 
   articles: {
     async getAll(lang: string = 'tr') {
+      if (isSupabaseIsolated) {
+        return [...fallbackArticles, ...mockArticles].filter((article: any) =>
+          doesArticleSupportLang(article, lang)
+        );
+      }
       const { data, error } = await supabase
         .from('articles')
         .select('*')
         .eq('is_published', true)
         .is('deleted_at', null)
-        .order('published_at', { ascending: false });
+        .order('published_at', { ascending: false })
+        .limit(50);
 
       if (error) throw error;
 

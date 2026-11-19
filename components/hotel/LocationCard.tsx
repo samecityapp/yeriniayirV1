@@ -5,6 +5,8 @@ import { MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
+import { isValidGeoPoint } from "@/lib/food/maps";
+
 const MapComponent = dynamic(() => import('@/components/MapComponent'), {
   ssr: false,
   loading: () => (
@@ -31,7 +33,7 @@ export default function LocationCard({
   const lat = Number(latitude);
   const lon = Number(longitude);
 
-  if (isNaN(lat) || isNaN(lon)) return null;
+  if (!isValidGeoPoint(lat, lon)) return null;
 
   const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lon}`;
 

@@ -1,10 +1,13 @@
 import { db } from '@/lib/db';
 import { getLocalizedText } from '@/lib/localization';
+import { isSupabaseIsolated } from '@/lib/supabase';
+
+export const revalidate = 3600;
 
 export async function GET() {
   try {
     const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gnkhotels.com';
-    const articles = await db.articles.getAll();
+    const articles = isSupabaseIsolated ? [] : await db.articles.getAll();
 
     const rssItems = articles
       .map((article: any) => {

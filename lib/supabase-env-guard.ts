@@ -101,6 +101,26 @@ export function createBlockedSupabaseFetch(reason: string): typeof fetch {
     );
 }
 
+export function createTimedSupabaseFetch(timeoutMs = 8000): typeof fetch {
+  return async (input, init) => {
+    const controller = new AbortController();
+    const externalSignal = init?.signal;
+    const abort = () => controller.abort();
+    if (externalSignal?.aborted) {
+      abort();
+    } else {
+      externalSignal?.addEventListener('abort', abort, { once: true });
+    }
+    const timer = setTimeout(abort, timeoutMs);
+    try {
+      return await globalThis.fetch(input, { ...init, signal: controller.signal });
+    } finally {
+      clearTimeout(timer);
+      externalSignal?.removeEventListener('abort', abort);
+    }
+  };
+}
+
 export interface ResolvedPublicSupabaseConfig {
   url: string;
   anonKey: string;

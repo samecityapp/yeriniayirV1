@@ -1,69 +1,154 @@
+import { createHash } from 'node:crypto';
 import { NextRequest, NextResponse } from 'next/server';
-import { supabase } from '@/lib/supabase';
 import { getDemoHotelById } from '@/lib/demoHotels';
+import { enforceRateLimit } from '@/lib/pilot/rateLimit';
+import { isSupabaseIsolated, supabase } from '@/lib/supabase';
 
 export const dynamic = 'force-dynamic';
 
+const MAX_URL_LENGTH = 512;
+const DB_TIMEOUT_MS = 4000;
+const UUID_REGEX = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+const NO_STORE_HEADERS = {
+  'Cache-Control': 'private, no-store, max-age=0',
+};
+
+function sanitizeHttpUrl(rawUrl: string | null | undefined): URL | null {
+  if (!rawUrl || typeof rawUrl !== 'string') return null;
+  try {
+    const parsed = new URL(rawUrl.trim());
+    if (parsed.protocol !== 'https:' && parsed.protocol !== 'http:') return null;
+    if (parsed.username || parsed.password) return null;
+    return parsed;
+  } catch {
+    return null;
+  }
+}
+
+function sanitizeReferrer(rawRef: string | null): string {
+  if (!rawRef) return '';
+  try {
+    const parsed = new URL(rawRef.trim());
+    if (parsed.protocol !== 'https:' && parsed.protocol !== 'http:') return '';
+    return `${parsed.origin}${parsed.pathname}`.slice(0, 200);
+  } catch {
+    return '';
+  }
+}
+
+function hashDailyIp(rawIp: string): string {
+  const utcDay = new Date().toISOString().slice(0, 10);
+  return createHash('sha256').update(`${rawIp}:${utcDay}`).digest('hex').slice(0, 32);
+}
+
+async function withTimeout<T>(promise: PromiseLike<T>, ms: number): Promise<T> {
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  try {
+    return await Promise.race([
+      Promise.resolve(promise),
+      new Promise<never>((_, reject) => {
+        timer = setTimeout(() => reject(new Error('Supabase query timeout')), ms);
+      }),
+    ]);
+  } finally {
+    if (timer) clearTimeout(timer);
+  }
+}
+
 export async function GET(request: NextRequest) {
   try {
-    const searchParams = request.nextUrl.searchParams;
-    const hotelId = searchParams.get('hotelId');
+    if (request.url.length > MAX_URL_LENGTH) {
+      return NextResponse.json(
+        { error: 'Request URI too long' },
+        { status: 400, headers: NO_STORE_HEADERS }
+      );
+    }
 
+    const hotelId = request.nextUrl.searchParams.get('hotelId')?.trim();
     if (!hotelId) {
-      return NextResponse.redirect(new URL('/', request.url));
+      return NextResponse.redirect(new URL('/', request.url), { headers: NO_STORE_HEADERS });
     }
 
-    const demoHotel = getDemoHotelById(hotelId);
+    const demoHotel = hotelId.length <= 120 ? getDemoHotelById(hotelId) : null;
     if (demoHotel && demoHotel.website_url) {
-      return NextResponse.redirect(demoHotel.website_url);
+      const safeDemoUrl = sanitizeHttpUrl(demoHotel.website_url);
+      if (safeDemoUrl) {
+        return NextResponse.redirect(safeDemoUrl, { headers: NO_STORE_HEADERS });
+      }
+      return NextResponse.redirect(new URL('/', request.url), { headers: NO_STORE_HEADERS });
     }
 
-    const userIp = request.headers.get('x-forwarded-for') ||
-      request.headers.get('x-real-ip') ||
-      'unknown';
-    const userAgent = request.headers.get('user-agent') || 'unknown';
-    const referrer = request.headers.get('referer') || request.headers.get('referrer') || '';
+    // Validate UUID BEFORE invoking Upstash or Supabase so invalid probes incur zero quota cost.
+    if (!UUID_REGEX.test(hotelId)) {
+      return NextResponse.json(
+        { error: 'Invalid hotelId' },
+        { status: 400, headers: NO_STORE_HEADERS }
+      );
+    }
 
-    // Insert click record
-    const clickPromise = supabase
-      .from('hotel_clicks')
-      .insert({
-        hotel_id: hotelId,
-        user_ip: userIp,
-        user_agent: userAgent,
-        referrer: referrer
+    const rl = await enforceRateLimit(request.headers, 'visitor_redirect', { scope: 'api' });
+    if (!rl.ok) {
+      return NextResponse.json(
+        { error: 'Too Many Requests' },
+        { status: rl.status, headers: { ...NO_STORE_HEADERS, ...rl.headers } }
+      );
+    }
+
+    if (isSupabaseIsolated) {
+      return NextResponse.redirect(new URL('/', request.url), {
+        headers: { ...NO_STORE_HEADERS, ...rl.headers },
       });
-
-    // Get hotel URL
-    const hotelPromise = supabase
-      .from('hotels')
-      .select('website_url')
-      .eq('id', hotelId)
-      .maybeSingle();
-
-    const [clickResult, hotelResult] = await Promise.all([clickPromise, hotelPromise]);
-
-    if (clickResult.error) {
-      console.error('Failed to track click:', clickResult.error);
     }
 
-    if (hotelResult.error || !hotelResult.data || !hotelResult.data.website_url) {
-      // If hotel not found or no URL, redirect home
-      return NextResponse.redirect(new URL('/', request.url));
+    const rawIp =
+      request.headers.get('x-real-ip')?.trim() ||
+      request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ||
+      '127.0.0.1';
+    const userIpHash = hashDailyIp(rawIp);
+    const userAgent = (request.headers.get('user-agent') || 'unknown').slice(0, 256);
+    const referrer = sanitizeReferrer(
+      request.headers.get('referer') || request.headers.get('referrer')
+    );
+
+    const clickPromise = withTimeout(
+      supabase.from('hotel_clicks').insert({
+        hotel_id: hotelId,
+        user_ip: userIpHash,
+        user_agent: userAgent,
+        referrer,
+      }),
+      DB_TIMEOUT_MS
+    );
+
+    const hotelPromise = withTimeout(
+      supabase.from('hotels').select('website_url').eq('id', hotelId).maybeSingle(),
+      DB_TIMEOUT_MS
+    );
+
+    const [clickResult, hotelResult] = await Promise.allSettled([clickPromise, hotelPromise]);
+
+    if (clickResult.status === 'fulfilled' && clickResult.value.error) {
+      console.error('Failed to track click:', clickResult.value.error.code || 'unknown');
     }
 
-    const bookingUrl = hotelResult.data.website_url;
+    const resolvedHotelUrl =
+      hotelResult.status === 'fulfilled' && !hotelResult.value.error
+        ? sanitizeHttpUrl(hotelResult.value.data?.website_url)
+        : null;
 
-    // Create redirect response
-    const response = NextResponse.redirect(bookingUrl);
+    if (!resolvedHotelUrl) {
+      return NextResponse.redirect(new URL('/', request.url), {
+        headers: { ...NO_STORE_HEADERS, ...rl.headers },
+      });
+    }
 
-    // Add custom header for debugging/tracking if needed
+    const response = NextResponse.redirect(resolvedHotelUrl, {
+      headers: { ...NO_STORE_HEADERS, ...rl.headers },
+    });
     response.headers.set('X-Hotel-Click-Tracked', 'true');
-
     return response;
-
   } catch (error) {
     console.error('Click tracking error:', error);
-    return NextResponse.redirect(new URL('/', request.url));
+    return NextResponse.redirect(new URL('/', request.url), { headers: NO_STORE_HEADERS });
   }
 }

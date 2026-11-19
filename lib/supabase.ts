@@ -1,6 +1,7 @@
 import { createClient } from '@supabase/supabase-js';
 import {
   createBlockedSupabaseFetch,
+  createTimedSupabaseFetch,
   resolvePublicSupabaseConfig,
 } from './supabase-env-guard';
 
@@ -22,4 +23,8 @@ export const supabase = resolvedConfig.isolated
         fetch: createBlockedSupabaseFetch(resolvedConfig.reason || 'Preview isolation active.'),
       },
     })
-  : createClient(resolvedConfig.url, resolvedConfig.anonKey);
+  : createClient(resolvedConfig.url, resolvedConfig.anonKey, {
+      global: {
+        fetch: createTimedSupabaseFetch(8000),
+      },
+    });

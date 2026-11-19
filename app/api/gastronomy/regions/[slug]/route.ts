@@ -3,6 +3,7 @@ import { getStaticRegionVenuePayload } from '@/lib/food/regionDiscovery';
 import { V3_LOCATIONS } from '@/lib/gastronomy-v3/registry';
 
 export const dynamic = 'force-static';
+export const dynamicParams = false;
 export const revalidate = 3600;
 
 export function generateStaticParams() {

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useSearchParams, useParams } from 'next/navigation';
 import { MapPin, Star, SlidersHorizontal, AlertCircle, Search } from 'lucide-react';
-import { supabase } from '@/lib/supabase';
+import { loadHotelSearchCatalog } from '@/lib/hotelSearchCache';
 import { Hotel, Tag, PriceTag } from '@/lib/types';
 import { getLocalizedText } from '@/lib/localization';
 import HotelListSkeleton from '@/components/skeletons/HotelListSkeleton';
@@ -27,40 +27,33 @@ export default function SearchClient() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [showFilters, setShowFilters] = useState(false);
+  const PAGE_SIZE = 12;
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
   useEffect(() => {
+    let cancelled = false;
     const fetchData = async () => {
       try {
-        const { data: hotelsData } = await supabase
-          .from('hotels')
-          .select('*')
-          .is('deleted_at', null);
+        const catalog = await loadHotelSearchCatalog();
+        if (cancelled) return;
 
-        const { data: tagsData } = await supabase
-          .from('tags')
-          .select('*')
-          .is('deleted_at', null)
-          .order('name', { ascending: true });
-
-        const { data: priceTagsData } = await supabase
-          .from('price_tags')
-          .select('*')
-          .is('deleted_at', null)
-          .order('min_price', { ascending: true });
+        const hotelsData = catalog.hotels;
+        const tagsData = catalog.tags;
+        const priceTagsData = catalog.priceTags;
 
         if (hotelsData) {
           const mappedHotels: Hotel[] = hotelsData.map(h => ({
             id: h.id,
-            name: h.name,
-            location: h.location,
-            price: h.price,
-            gnkScore: parseFloat(h.rating) || 0,
-            coverImageUrl: h.image_url,
+            name: h.name as Hotel['name'],
+            location: h.location as Hotel['location'],
+            price: Number(h.price) || 0,
+            gnkScore: parseFloat(String(h.rating ?? 0)) || 0,
+            coverImageUrl: h.image_url || undefined,
             tags: h.tags || [],
             amenities: h.amenities || [],
             galleryImages: h.gallery_images || [],
-            about: h.about || getLocalizedText(h.description, lang),
-            description: h.description || h.name
+            about: (h.about || getLocalizedText(h.description as any, lang)) as Hotel['about'],
+            description: (h.description || h.name) as Hotel['description']
           }));
           setAllHotels(mappedHotels);
         }
@@ -68,7 +61,7 @@ export default function SearchClient() {
         if (tagsData) {
           const mappedTags = tagsData.map(t => ({
             id: t.id,
-            name: typeof t.name === 'string' ? (t.name.startsWith('{') ? JSON.parse(t.name) : t.name) : t.name,
+            name: (typeof t.name === 'string' ? (t.name.startsWith('{') ? JSON.parse(t.name) : t.name) : t.name) as Tag['name'],
             slug: t.slug,
             icon: t.icon || 'Tag',
             isFeatured: t.is_featured || false
@@ -88,13 +81,20 @@ export default function SearchClient() {
         }
       } catch (error) {
         console.error('Error fetching data:', error);
-        setError(lang === 'tr' ? 'Veriler yüklenirken bir hata oluştu. Lütfen sayfayı yenileyin.' : 'An error occurred while loading data. Please refresh the page.');
+        if (!cancelled) {
+          setError(lang === 'tr' ? 'Veriler yüklenirken bir hata oluştu. Lütfen sayfayı yenileyin.' : 'An error occurred while loading data. Please refresh the page.');
+        }
       } finally {
-        setIsLoading(false);
+        if (!cancelled) {
+          setIsLoading(false);
+        }
       }
     };
 
     fetchData();
+    return () => {
+      cancelled = true;
+    };
   }, [lang]);
 
   useEffect(() => {
@@ -155,6 +155,7 @@ export default function SearchClient() {
       }
     });
     setFilteredHotels(processedHotels);
+    setVisibleCount(PAGE_SIZE);
   }, [query, locationQuery, allHotels, selectedTags, sortBy, isLoading, priceTags, allTags, lang]);
 
   const handleTagChange = (tagSlug: string) => {
@@ -182,8 +183,8 @@ export default function SearchClient() {
     if (tagQuery) return lang === 'tr' ? `${getLocalizedText(tagQuery.name, lang)} Oteller` : `${getLocalizedText(tagQuery.name, lang)} Hotels`;
 
     if (query) {
-      const decodedQuery = decodeURIComponent(query);
-      return lang === 'tr' ? `"${decodedQuery}" için Arama Sonuçları` : `Search Results for "${decodedQuery}"`;
+      const displayQuery = query.trim().slice(0, 80);
+      return lang === 'tr' ? `"${displayQuery}" için Arama Sonuçları` : `Search Results for "${displayQuery}"`;
     }
     return lang === 'tr' ? 'Tüm Oteller' : 'All Hotels';
   };
@@ -302,7 +303,8 @@ export default function SearchClient() {
                   <HotelListSkeleton key={idx} />
                 ))
               ) : filteredHotels.length > 0 ? (
-                filteredHotels.map((hotel) => (
+                <>
+                {filteredHotels.slice(0, visibleCount).map((hotel) => (
                   <Link key={hotel.id} href={`/${lang}/otel/${hotel.id}`} className="block">
                     <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden group">
                       <div className="flex flex-col md:flex-row">
@@ -349,7 +351,21 @@ export default function SearchClient() {
                       </div>
                     </div>
                   </Link>
-                ))
+                ))}
+                {filteredHotels.length > visibleCount && (
+                  <div className="pt-2 flex justify-center">
+                    <button
+                      type="button"
+                      onClick={() => setVisibleCount((prev) => prev + PAGE_SIZE)}
+                      className="px-6 py-2.5 rounded-full bg-gray-900 hover:bg-gray-800 text-white text-sm font-semibold transition-colors"
+                    >
+                      {lang === 'tr'
+                        ? `Daha Fazla Göster (${filteredHotels.length - visibleCount})`
+                        : `Show More (${filteredHotels.length - visibleCount})`}
+                    </button>
+                  </div>
+                )}
+                </>
               ) : (
                 <div className="text-center py-24 bg-white rounded-xl shadow-sm border border-gray-100">
                   <div className="w-20 h-20 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-6">

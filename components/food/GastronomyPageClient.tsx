@@ -723,13 +723,21 @@ export function GastronomyPageClient({
     if (existingPromise) return existingPromise;
 
     const requestPromise = (async () => {
-      const res = await fetch(`/api/gastronomy/regions/${encodeURIComponent(slug)}`);
-      if (!res.ok) {
-        throw new Error(`HTTP ${res.status}`);
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 8000);
+      try {
+        const res = await fetch(`/api/gastronomy/regions/${encodeURIComponent(slug)}`, {
+          signal: controller.signal,
+        });
+        if (!res.ok) {
+          throw new Error(`HTTP ${res.status}`);
+        }
+        const payload = (await res.json()) as StaticRegionVenuePayload;
+        regionCacheRef.current.set(slug, payload);
+        return payload;
+      } finally {
+        clearTimeout(timer);
       }
-      const payload = (await res.json()) as StaticRegionVenuePayload;
-      regionCacheRef.current.set(slug, payload);
-      return payload;
     })().finally(() => {
       inFlightRequestsRef.current.delete(slug);
     });
@@ -841,7 +849,10 @@ export function GastronomyPageClient({
       } catch {}
 
       const cached = regionCacheRef.current.get(loc.slug);
-      let nextUrl = `/${lang}?region=${loc.slug}`;
+      const currentParams =
+        typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : new URLSearchParams();
+      currentParams.set('region', loc.slug);
+      currentParams.delete('category');
       if (cached) {
         const cachedCats = cached.categories.filter((c) =>
           cached.venues.some((v) => v.categorySlugs.includes(c.slug))
@@ -853,8 +864,13 @@ export function GastronomyPageClient({
             ? selectedCategorySlug
             : cachedCats[0]?.slug || '';
         if (preferredCat) {
-          nextUrl = `/${lang}?region=${loc.slug}&category=${preferredCat}`;
+          currentParams.set('category', preferredCat);
         }
+      }
+
+      const nextUrl = `/${lang}?${currentParams.toString()}`;
+      if (typeof window !== 'undefined' && `${window.location.pathname}${window.location.search}` === nextUrl) {
+        return;
       }
 
       window.history.pushState(null, '', nextUrl);
@@ -866,13 +882,18 @@ export function GastronomyPageClient({
   // Kategori seçimi değiştiğinde
   const handleSelectCategory = useCallback(
     (catSlug: string) => {
+      if (catSlug === selectedCategorySlug) return;
       setSelectedCategorySlug(catSlug);
       if (selectedLocation) {
-        const newUrl = `/${lang}?region=${selectedLocation.slug}&category=${catSlug}`;
+        const currentParams =
+          typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : new URLSearchParams();
+        currentParams.set('region', selectedLocation.slug);
+        currentParams.set('category', catSlug);
+        const newUrl = `/${lang}?${currentParams.toString()}`;
         window.history.pushState(null, '', newUrl);
       }
     },
-    [lang, selectedLocation]
+    [lang, selectedLocation, selectedCategorySlug]
   );
 
   // Seçili bölgenin dinamik kategorileri

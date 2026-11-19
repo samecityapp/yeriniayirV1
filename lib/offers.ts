@@ -42,7 +42,8 @@ export const offers = {
       const { data, error } = await supabaseAdmin
         .from('offers')
         .select('*')
-        .order('created_at', { ascending: false });
+        .order('created_at', { ascending: false })
+        .limit(200);
 
       if (error) throw error;
       return data || [];

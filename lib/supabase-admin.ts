@@ -1,6 +1,10 @@
 import { createClient } from '@supabase/supabase-js';
 import { serviceRoleKey, target, type Target } from './security/supabase-policy';
-import { createBlockedSupabaseFetch, validatedSupabaseTarget } from './supabase-env-guard';
+import {
+  createBlockedSupabaseFetch,
+  createTimedSupabaseFetch,
+  validatedSupabaseTarget,
+} from './supabase-env-guard';
 
 // Prevent accidental client-side bundle exposure
 if (typeof window !== 'undefined') {
@@ -58,6 +62,9 @@ export const supabaseAdmin = hasServiceRoleKey
       auth: {
         autoRefreshToken: false,
         persistSession: false,
+      },
+      global: {
+        fetch: createTimedSupabaseFetch(10_000),
       },
     })
   : createClient('http://127.0.0.1:54321', 'disabled-service-role-key', {

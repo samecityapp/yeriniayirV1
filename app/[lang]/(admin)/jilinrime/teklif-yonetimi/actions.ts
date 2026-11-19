@@ -1,9 +1,11 @@
 'use server';
 
 import { revalidatePath } from 'next/cache';
+import { headers } from 'next/headers';
 import { z } from 'zod';
 import { requireOfferAdminAccess } from '@/lib/admin/offerAdminGuard';
 import { offers } from '@/lib/offers';
+import { enforceRateLimit } from '@/lib/pilot/rateLimit';
 import { IncludedItem } from '@/lib/types';
 
 const SUPPORTED_OFFER_LOCALES = ['tr', 'en', 'el'] as const;
@@ -97,8 +99,20 @@ function revalidateOfferUrls(...slugs: Array<string | null | undefined>) {
   }
 }
 
+async function authorizeAndRateLimitOfferAction() {
+  const rl = await enforceRateLimit(await headers(), 'costly_admin', { scope: 'action' });
+  if (!rl.ok) {
+    return {
+      ok: false as const,
+      error: 'Çok fazla istek gönderildi. Lütfen biraz bekleyin.',
+      status: rl.status,
+    };
+  }
+  return requireOfferAdminAccess({ requireSameOrigin: true });
+}
+
 export async function createOffer(data: FormData) {
-  const auth = await requireOfferAdminAccess({ requireSameOrigin: true });
+  const auth = await authorizeAndRateLimitOfferAction();
   if (!auth.ok) {
     return { success: false, error: auth.error, status: auth.status };
   }
@@ -127,7 +141,7 @@ export async function createOffer(data: FormData) {
 }
 
 export async function updateOffer(id: string, data: FormData) {
-  const auth = await requireOfferAdminAccess({ requireSameOrigin: true });
+  const auth = await authorizeAndRateLimitOfferAction();
   if (!auth.ok) {
     return { success: false, error: auth.error, status: auth.status };
   }
@@ -161,7 +175,7 @@ export async function updateOffer(id: string, data: FormData) {
 }
 
 export async function deleteOffer(id: string) {
-  const auth = await requireOfferAdminAccess({ requireSameOrigin: true });
+  const auth = await authorizeAndRateLimitOfferAction();
   if (!auth.ok) {
     return { success: false, error: auth.error, status: auth.status };
   }

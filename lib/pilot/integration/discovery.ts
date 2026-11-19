@@ -8,8 +8,8 @@ export interface IntegrationDiscovery {
  schemaVersion:1;dataKind:'real-research';mode:'integration-preparation';productionPublished:false;
  region:{id:string;slug:string;name:string;displayName:string;path:string[];characterSubtitle?:string;scopeNote?:string};
  categories:{slug:string;id:string;label:string;title?:string;isMustTry:boolean;emoji?:string}[];
- categorySlug:string;venues:Array<VisitorVenueData & { subAreaLabel?: string }>;
- nearbyVenues?: Array<VisitorVenueData & { nearbyAreaLabel: string; distanceKm: number; distanceMeters?: number }>;
+ categorySlug:string;venues:Array<VisitorVenueData & { subAreaLabel?: string; mapsUri?: string; placeId?: string; coordinates?: { lat: number; lng: number } }>;
+ nearbyVenues?: Array<VisitorVenueData & { nearbyAreaLabel: string; distanceKm: number; distanceMeters?: number; mapsUri?: string; placeId?: string; coordinates?: { lat: number; lng: number } }>;
  rituals:[];
 }
 export const MODA_CATEGORIES = [
@@ -6091,6 +6091,9 @@ export async function readIntegrationDiscovery(region='moda',category='kahve'){
    name: v.name,
    location: v.address,
    ...(v.neighborhood ? { subAreaLabel: v.neighborhood } : {}),
+   ...(v.mapsUri ? { mapsUri: v.mapsUri } : {}),
+   ...(v.placeId ? { placeId: v.placeId } : {}),
+   ...(v.coordinates ? { coordinates: v.coordinates } : {}),
    categoryId: v.categoryId,
    ...(v.secondaryCategoryIds?.length ? { secondaryCategoryIds: [...v.secondaryCategoryIds] } : {}),
    description: v.description,
@@ -6118,6 +6121,9 @@ export async function readIntegrationDiscovery(region='moda',category='kahve'){
    nearbyAreaLabel: v.nearbyAreaLabel,
    distanceKm: v.distanceKm,
    ...(typeof v.distanceMeters === 'number' ? { distanceMeters: v.distanceMeters } : {}),
+   ...(v.mapsUri ? { mapsUri: v.mapsUri } : {}),
+   ...(v.placeId ? { placeId: v.placeId } : {}),
+   ...(v.coordinates ? { coordinates: v.coordinates } : {}),
    categoryId: v.categoryId,
    ...(v.secondaryCategoryIds?.length ? { secondaryCategoryIds: [...v.secondaryCategoryIds] } : {}),
    description: v.description,
