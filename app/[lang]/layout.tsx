@@ -37,12 +37,12 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
       default: siteName,
       template: `%s | ${siteName}`,
     },
-    description: "Influencer gücüyle desteklenen, sadece en seçkin otellerin platformu",
-    keywords: ['otel', 'tatil', 'konaklama', 'türkiye otelleri', 'otel rehberi', 'otel önerileri'],
+    description: "Doğrulanmış yerel gastronomi seçkileri ve Türkiye'nin seçkin konaklama rehberi",
+    keywords: ['gastronomi rehberi', 'yerel restoranlar', 'nitelikli kahve', 'moda kadıköy rehberi', 'otel önerileri'],
     authors: [{ name: siteName }],
     creator: siteName,
     publisher: siteName,
-    manifest: '/manifest.json',
+    manifest: '/manifest.webmanifest',
 
     openGraph: {
       type: 'website',
@@ -100,8 +100,8 @@ export default async function RootLayout(
   const allowedSupabaseOrigin = localPreview
     ? null
     : getAllowedPublicSupabaseOrigin(process.env.NEXT_PUBLIC_SUPABASE_URL);
-  const orgSchema = generateOrganizationSchema();
-  const websiteSchema = generateWebSiteSchema();
+  const orgSchema = generateOrganizationSchema(params.lang);
+  const websiteSchema = generateWebSiteSchema(params.lang);
 
   // Dynamic Google Analytics ID
   // yeriniayir.com (TR) -> G-593PL85N6Q

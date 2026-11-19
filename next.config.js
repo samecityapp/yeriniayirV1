@@ -156,6 +156,18 @@ const nextConfig = {
   async rewrites() {
     return [
       {
+        source: '/en/gastronomy',
+        destination: '/en/gastronomi',
+      },
+      {
+        source: '/en/gastronomy/venue/:slug*',
+        destination: '/en/gastronomi/mekan/:slug*',
+      },
+      {
+        source: '/en/gastronomy/:slug*',
+        destination: '/en/gastronomi/:slug*',
+      },
+      {
         source: '/en/guide',
         destination: '/en/rehber',
       },

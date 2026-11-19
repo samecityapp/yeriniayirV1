@@ -21,9 +21,11 @@ const RUNTIME_FAILURE_COOLDOWN_MS = 10_000;
 
 const CORE_LEGAL_PATH_RE =
   /^\/(?:tr|en|el)\/(?:cerez-politikasi|gizlilik-politikasi|kullanim-kosullari|kullanim-sartlari|kvkk-aydinlatma-metni|hakkimizda)$/;
+const CORE_GEO_GASTRONOMY_PATH_RE =
+  /^\/(?:(?:tr|en|el)\/)?(?:gastronomi|gastronomy)(?:\/[a-z0-9-]+)*$/;
 const REGION_API_PATH_RE = /^\/api\/gastronomy\/regions\/[^/]+$/;
 const STATIC_ASSET_PATH_RE =
-  /^\/(?:_next\/static\/|images\/gastronomy\/|fonts\/|favicon\.ico$|icon\.png$|apple-icon\.png$|icon-192\.png$|icon-512\.png$|logo\.png$|logo-green\.png$|logo\.svg$|yeriniayir-logo\.png$|manifest\.webmanifest$|robots\.txt$|sitemap\.xml$)/;
+  /^\/(?:_next\/static\/|images\/gastronomy\/|fonts\/|favicon\.ico$|icon\.png$|apple-icon\.png$|icon-192\.png$|icon-512\.png$|logo\.png$|logo-green\.png$|logo\.svg$|yeriniayir-logo\.png$|manifest\.webmanifest$|robots\.txt$|sitemap\.xml$|llms\.txt$|llms-full\.txt$)/;
 const ADMIN_PATH_SEGMENT_RE =
   /(?:^|\/)(?:jilinrime|gastronomi-yonetimi|moda-kadikoy-pilot)(?:$|\/|\.)/i;
 const LOOPBACK_HOSTS = new Set(['127.0.0.1', 'localhost', '[::1]']);
@@ -82,6 +84,9 @@ export function isCoreGastronomyVisitorPath(canonicalPathname: string): boolean 
     return true;
   }
   if (CORE_LEGAL_PATH_RE.test(canonicalPathname)) {
+    return true;
+  }
+  if (CORE_GEO_GASTRONOMY_PATH_RE.test(canonicalPathname)) {
     return true;
   }
   return false;

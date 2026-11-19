@@ -421,11 +421,35 @@ async function applicationMiddleware(
     pathname.includes('.') ||
     pathname === '/favicon.ico' ||
     pathname === '/robots.txt' ||
-    pathname === '/sitemap.xml'
+    pathname === '/sitemap.xml' ||
+    pathname === '/llms.txt' ||
+    pathname === '/llms-full.txt'
   ) {
     const res = NextResponse.next();
     return isJilinrime ? applyJilinrimeHeaders(res, jilinrimeAuthMode) : res;
   }
+
+  const translateEnGeoInternalPath = (p: string): string | null => {
+    if (p === '/gastronomy' || p === '/en/gastronomy') {
+      return '/en/gastronomi';
+    }
+    if (p.startsWith('/gastronomy/')) {
+      return `/en/gastronomi${p.slice('/gastronomy'.length).replace(/^\/venue\//, '/mekan/')}`;
+    }
+    if (p.startsWith('/en/gastronomy/')) {
+      return `/en/gastronomi${p.slice('/en/gastronomy'.length).replace(/^\/venue\//, '/mekan/')}`;
+    }
+    return null;
+  };
+
+  const toPublicEnglishGeoPath = (p: string): string | null => {
+    const bare = p.replace(/^\/(?:en|tr)/, '');
+    if (bare === '/gastronomi') return '/gastronomy';
+    if (bare.startsWith('/gastronomi/')) {
+      return `/gastronomy${bare.slice('/gastronomi'.length).replace(/^\/mekan\//, '/venue/')}`;
+    }
+    return null;
+  };
 
   const DOMAIN_TR = 'yeriniayir.com';
   const DOMAIN_EN = 'worldandhotels.com';
@@ -446,13 +470,32 @@ async function applicationMiddleware(
     if (urlLocale === 'tr') {
       return NextResponse.redirect(new URL(pathname, `https://${DOMAIN_TR}`));
     }
+    const enGeoPublic = toPublicEnglishGeoPath(pathname);
+    if (enGeoPublic && (pathname === '/gastronomi' || pathname.startsWith('/gastronomi/'))) {
+      return NextResponse.redirect(new URL(enGeoPublic, `https://${DOMAIN_EN}`), 308);
+    }
+    const enGeoInternal = translateEnGeoInternalPath(pathname);
+    if (enGeoInternal) {
+      const res = NextResponse.rewrite(new URL(enGeoInternal, request.url));
+      return isJilinrime ? applyJilinrimeHeaders(res, jilinrimeAuthMode) : res;
+    }
     if (pathnameIsMissingLocale) {
       const res = NextResponse.rewrite(new URL(`/en${pathname === '/' ? '' : pathname}`, request.url));
       return isJilinrime ? applyJilinrimeHeaders(res, jilinrimeAuthMode) : res;
     }
   } else {
     if (urlLocale === 'en' && !isDev) {
-      return NextResponse.redirect(new URL(pathname, `https://${DOMAIN_EN}`));
+      const enGeoPublic = toPublicEnglishGeoPath(pathname);
+      const targetPath = enGeoPublic || pathname;
+      return NextResponse.redirect(new URL(targetPath, `https://${DOMAIN_EN}`));
+    }
+    if (!isDev && (pathname === '/gastronomy' || pathname.startsWith('/gastronomy/'))) {
+      return NextResponse.redirect(new URL(pathname, `https://${DOMAIN_EN}`), 308);
+    }
+    const enGeoInternal = translateEnGeoInternalPath(pathname);
+    if (enGeoInternal) {
+      const res = NextResponse.rewrite(new URL(enGeoInternal, request.url));
+      return isJilinrime ? applyJilinrimeHeaders(res, jilinrimeAuthMode) : res;
     }
     if (pathnameIsMissingLocale) {
       const res = NextResponse.rewrite(new URL(`/tr${pathname === '/' ? '' : pathname}`, request.url));
@@ -565,6 +608,6 @@ export async function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    '/((?!_next/static/|fonts/(?!.*(?:\\.\\.|%))[A-Za-z0-9._/-]+\\.(?:woff2|ttf|txt)$|images/(?!.*(?:\\.\\.|%))[A-Za-z0-9._/-]+\\.(?:svg|png|jpg|jpeg|webp|avif|gif)$|authors/(?!.*(?:\\.\\.|%))[A-Za-z0-9._/-]+\\.png$|restaurants/(?!.*(?:\\.\\.|%))[A-Za-z0-9._/-]+\\.png$|favicon\\.ico$|icon\\.png$|apple-icon\\.png$|icon-192\\.png$|icon-512\\.png$|logo\\.png$|logo-green\\.png$|logo\\.svg$|yeriniayir-logo\\.png$|manifest\\.webmanifest$|robots\\.txt$|sitemap\\.xml$).*)',
+    '/((?!_next/static/|fonts/(?!.*(?:\\.\\.|%))[A-Za-z0-9._/-]+\\.(?:woff2|ttf|txt)$|images/(?!.*(?:\\.\\.|%))[A-Za-z0-9._/-]+\\.(?:svg|png|jpg|jpeg|webp|avif|gif)$|authors/(?!.*(?:\\.\\.|%))[A-Za-z0-9._/-]+\\.png$|restaurants/(?!.*(?:\\.\\.|%))[A-Za-z0-9._/-]+\\.png$|favicon\\.ico$|icon\\.png$|apple-icon\\.png$|icon-192\\.png$|icon-512\\.png$|logo\\.png$|logo-green\\.png$|logo\\.svg$|yeriniayir-logo\\.png$|manifest\\.webmanifest$|robots\\.txt$|sitemap\\.xml$|llms\\.txt$|llms-full\\.txt$).*)',
   ],
 };

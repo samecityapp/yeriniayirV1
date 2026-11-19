@@ -165,8 +165,8 @@ export function generateOrganizationSchema(lang: string = 'tr') {
   const baseUrl = absoluteUrl('/', lang);
   const orgName = lang === 'en' ? 'World And Hotels' : 'Yerini Ayır';
   const description = lang === 'en'
-    ? "Turkey's most exclusive hotels and travel guide - Best accommodation suggestions"
-    : "Türkiye'nin en seçkin otelleri ve gezi rehberi - Erdem'in kaleminden en iyi konaklama önerileri";
+    ? 'Verified neighborhood gastronomy selections and curated hotel guide across Turkey.'
+    : 'Doğrulanmış yerel gastronomi seçkileri ve Türkiye genelinde seçkin konaklama rehberi.';
 
   return {
     '@context': 'https://schema.org',
@@ -182,7 +182,7 @@ export function generateOrganizationSchema(lang: string = 'tr') {
     },
     description: description,
     sameAs: [
-      // Add social media URLs here if available
+      'https://www.instagram.com/yeriniayir/',
     ],
   };
 }
@@ -193,9 +193,14 @@ export function generateWebSiteSchema(lang: string = 'tr') {
 
   return {
     '@context': 'https://schema.org',
+    '@id': `${baseUrl}#website`,
     '@type': 'WebSite',
     name: siteName,
     url: baseUrl,
+    inLanguage: lang === 'en' ? 'en' : 'tr-TR',
+    publisher: {
+      '@id': `${baseUrl}#organization`,
+    },
     potentialAction: {
       '@type': 'SearchAction',
       target: {

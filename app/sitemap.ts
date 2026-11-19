@@ -1,117 +1,210 @@
 import { MetadataRoute } from 'next';
 import { db } from '@/lib/db';
+import {
+  buildGeoPublicUrl,
+  EN_SITE_ORIGIN,
+  getGeoCities,
+  getGeoDistrictHubs,
+  TR_SITE_ORIGIN,
+} from '@/lib/gastronomy-v3/geoCatalog';
+import { PILOT_VENUE_IDS } from '@/lib/gastronomy-v3/geoPilot';
+import { getPublishedV3Snapshot, V3_LOCATIONS } from '@/lib/gastronomy-v3/registry';
+import { isSupabaseIsolated } from '@/lib/supabase';
 
 export const revalidate = 3600;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const TR_DOMAIN = 'https://www.yeriniayir.com';
-  const EN_DOMAIN = 'https://www.worldandhotels.com';
+  const entries: MetadataRoute.Sitemap = [];
+  const seenUrls = new Set<string>();
+
+  const pushEntry = (item: MetadataRoute.Sitemap[number]) => {
+    if (seenUrls.has(item.url)) return;
+    seenUrls.add(item.url);
+    entries.push(item);
+  };
+
+  // 1. Kök & Gastronomi Ana Dizin URL'leri
+  pushEntry({
+    url: TR_SITE_ORIGIN,
+    lastModified: new Date(),
+    changeFrequency: 'daily',
+    priority: 1.0,
+    alternates: { languages: { 'tr-TR': TR_SITE_ORIGIN, en: EN_SITE_ORIGIN } },
+  });
+  pushEntry({
+    url: EN_SITE_ORIGIN,
+    lastModified: new Date(),
+    changeFrequency: 'daily',
+    priority: 1.0,
+    alternates: { languages: { 'tr-TR': TR_SITE_ORIGIN, en: EN_SITE_ORIGIN } },
+  });
+
+  for (const lang of ['tr', 'en'] as const) {
+    pushEntry({
+      url: buildGeoPublicUrl('/', lang),
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.95,
+      alternates: {
+        languages: {
+          'tr-TR': buildGeoPublicUrl('/', 'tr'),
+          en: buildGeoPublicUrl('/', 'en'),
+        },
+      },
+    });
+  }
+
+  // 2. 21 Şehir Hub URL'leri
+  for (const city of getGeoCities()) {
+    for (const lang of ['tr', 'en'] as const) {
+      pushEntry({
+        url: buildGeoPublicUrl(`/${city.citySlug}`, lang),
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.85,
+        alternates: {
+          languages: {
+            'tr-TR': buildGeoPublicUrl(`/${city.citySlug}`, 'tr'),
+            en: buildGeoPublicUrl(`/${city.citySlug}`, 'en'),
+          },
+        },
+      });
+    }
+  }
+
+  // 3. Alt Semtleri Olan İlçe Hub Sayfaları
+  for (const hub of getGeoDistrictHubs()) {
+    const sub = `/${hub.citySlug}/${hub.districtSlug}`;
+    for (const lang of ['tr', 'en'] as const) {
+      pushEntry({
+        url: buildGeoPublicUrl(sub, lang),
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.85,
+        alternates: {
+          languages: {
+            'tr-TR': buildGeoPublicUrl(sub, 'tr'),
+            en: buildGeoPublicUrl(sub, 'en'),
+          },
+        },
+      });
+    }
+  }
+
+  // 4. 92 Yayınlı Semt / Bölge ve Aktif Kategori Sayfaları
+  for (const loc of V3_LOCATIONS) {
+    const snap = getPublishedV3Snapshot(loc.slug);
+    const verifiedDate = snap?.verifiedAt ? new Date(snap.verifiedAt) : new Date();
+    const regionSub = `/${loc.path.join('/')}`;
+    for (const lang of ['tr', 'en'] as const) {
+      pushEntry({
+        url: buildGeoPublicUrl(regionSub, lang),
+        lastModified: verifiedDate,
+        changeFrequency: 'weekly',
+        priority: loc.slug === 'moda' || loc.slug === 'kadikoy' ? 0.95 : 0.9,
+        alternates: {
+          languages: {
+            'tr-TR': buildGeoPublicUrl(regionSub, 'tr'),
+            en: buildGeoPublicUrl(regionSub, 'en'),
+          },
+        },
+      });
+    }
+
+    if (snap) {
+      for (const cat of snap.categories) {
+        const hasVenues = snap.venues.some(
+          (v) => v.categoryId === cat.id || (v.secondaryCategoryIds || []).includes(cat.id)
+        );
+        if (!hasVenues) continue;
+        const catSub = `${regionSub}/${cat.slug}`;
+        for (const lang of ['tr', 'en'] as const) {
+          pushEntry({
+            url: buildGeoPublicUrl(catSub, lang),
+            lastModified: verifiedDate,
+            changeFrequency: 'weekly',
+            priority: loc.slug === 'moda' || loc.slug === 'kadikoy' ? 0.9 : 0.8,
+            alternates: {
+              languages: {
+                'tr-TR': buildGeoPublicUrl(catSub, 'tr'),
+                en: buildGeoPublicUrl(catSub, 'en'),
+              },
+            },
+          });
+        }
+      }
+    }
+  }
+
+  // 5. Yalnızca 18 Doğrulanmış Moda & Kadıköy Pilot Mekân Sayfası (Asla 2.277 mekanın tamamı değil)
+  for (const venueId of PILOT_VENUE_IDS) {
+    const sub = `/mekan/${venueId}`;
+    for (const lang of ['tr', 'en'] as const) {
+      pushEntry({
+        url: buildGeoPublicUrl(sub, lang),
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.85,
+        alternates: {
+          languages: {
+            'tr-TR': buildGeoPublicUrl(sub, 'tr'),
+            en: buildGeoPublicUrl(sub, 'en'),
+          },
+        },
+      });
+    }
+  }
+
+  // 6. Eski Otel & Makale URL'leri (Yalnız Supabase aktifken; hata olursa gastronomi sitemap'ini bozmaz)
+  if (!isSupabaseIsolated) {
+    try {
+      const hotels = await db.hotels.getAll();
+      for (const hotel of hotels) {
+        pushEntry({
+          url: `${TR_SITE_ORIGIN}/otel/${hotel.slug || hotel.id}`,
+          lastModified: new Date(),
+          changeFrequency: 'weekly',
+          priority: 0.7,
+        });
+        pushEntry({
+          url: `${EN_SITE_ORIGIN}/hotel/${hotel.slug || hotel.id}`,
+          lastModified: new Date(),
+          changeFrequency: 'weekly',
+          priority: 0.7,
+        });
+      }
+    } catch {
+      // Keep verified gastronomy sitemap intact when legacy hotels table is unreachable
+    }
+  }
 
   try {
-
-  // Get all hotels
-  const hotels = await db.hotels.getAll();
-  const hotelUrls = hotels.flatMap((hotel) => {
-    // TR URL
-    const tr = {
-      url: `${TR_DOMAIN}/otel/${hotel.slug || hotel.id}`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    };
-    // EN URL
-    const en = {
-      url: `${EN_DOMAIN}/hotel/${hotel.slug || hotel.id}`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    };
-    return [tr, en];
-  });
-
-  // Get all articles
-  const articles = await db.articles.getAll();
-  const articleUrls = articles.flatMap((article) => {
-    // Turkish URL
-    const trUrl = {
-      url: `${TR_DOMAIN}/rehber/${article.slug}`,
-      lastModified: new Date(article.published_at || article.updated_at),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    };
-
-    // English URL
-    const enUrl = {
-      url: `${EN_DOMAIN}/guide/${(article as any).slug_en || article.slug}`,
-      lastModified: new Date(article.published_at || article.updated_at),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    };
-
-    return [trUrl, enUrl];
-  });
-
-  // Get all location pages
-  const locationUrls = (require('@/lib/constants').LOCATIONS as any[]).flatMap((loc) => {
-    // TR
-    const tr = {
-      url: `${TR_DOMAIN}/otel/${loc.slug}`, // Listing pages usually /otel/slug
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    };
-    // EN
-    const en = {
-      url: `${EN_DOMAIN}/hotel/${loc.slug}`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    };
-    return [tr, en];
-  });
-
-  // Static Pages
-  const staticPages = [
-    // Home
-    { url: TR_DOMAIN, priority: 1 },
-    { url: EN_DOMAIN, priority: 1 },
-    // Search
-    { url: `${TR_DOMAIN}/otel`, priority: 0.9 }, // assuming /otel is search/list
-    { url: `${EN_DOMAIN}/hotel`, priority: 0.9 },
-    // About / Static
-    { url: `${TR_DOMAIN}/hakkimizda`, priority: 0.5 },
-    { url: `${EN_DOMAIN}/about`, priority: 0.5 }, // Assuming /about exists or rewritten
-  ];
-
-  return [
-    ...staticPages.map(page => ({
-      url: page.url,
-      lastModified: new Date(),
-      changeFrequency: 'daily' as const,
-      priority: page.priority,
-    })),
-    ...hotelUrls,
-    ...articleUrls,
-    ...locationUrls,
-  ];
-  } catch (error) {
-    if ((error as { digest?: string })?.digest === 'DYNAMIC_SERVER_USAGE') {
-      throw error;
+    const articles = await db.articles.getAll();
+    for (const article of articles) {
+      const modDate = new Date(article.published_at || article.updated_at || Date.now());
+      pushEntry({
+        url: `${TR_SITE_ORIGIN}/rehber/${article.slug}`,
+        lastModified: modDate,
+        changeFrequency: 'weekly',
+        priority: 0.75,
+      });
+      pushEntry({
+        url: `${EN_SITE_ORIGIN}/guide/${(article as { slug_en?: string }).slug_en || article.slug}`,
+        lastModified: modDate,
+        changeFrequency: 'weekly',
+        priority: 0.75,
+      });
     }
-    console.warn('Sitemap fallback triggered during build:', error);
-    return [
-      {
-        url: TR_DOMAIN,
-        lastModified: new Date(),
-        changeFrequency: 'daily' as const,
-        priority: 1.0,
-      },
-      {
-        url: EN_DOMAIN,
-        lastModified: new Date(),
-        changeFrequency: 'daily' as const,
-        priority: 1.0,
-      },
-    ];
+  } catch {
+    // Keep verified gastronomy sitemap intact
   }
+
+  pushEntry({
+    url: `${TR_SITE_ORIGIN}/hakkimizda`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly',
+    priority: 0.5,
+  });
+
+  return entries;
 }

@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { FoodCategory } from '@/lib/food/types';
 
 const CATEGORY_FALLBACK_EMOJIS: Record<string, string> = {
@@ -53,12 +54,14 @@ interface CategoryBarProps {
   categories: FoodCategory[];
   activeCategorySlug: string;
   onSelectCategory: (slug: string) => void;
+  getCategoryHref?: (slug: string) => string;
 }
 
 export function CategoryBar({
   categories,
   activeCategorySlug,
   onSelectCategory,
+  getCategoryHref,
 }: CategoryBarProps) {
   return (
     <div className="select-none">
@@ -67,6 +70,27 @@ export function CategoryBar({
         {[...categories].sort((a,b)=>Number(!!b.isMustTry)-Number(!!a.isMustTry)).slice(0,9).map((cat) => {
           const isActive = cat.slug === activeCategorySlug;
           const emoji = cat.emoji || CATEGORY_FALLBACK_EMOJIS[cat.slug] || '🍽️';
+          const itemClassName = `min-w-0 w-full min-h-[42px] flex items-center justify-center gap-1 sm:gap-1.5 py-2.5 sm:py-3 px-2 rounded-2xl sm:rounded-full text-[11px] min-[375px]:text-xs sm:text-[13px] font-bold text-center transition-all duration-150 active:scale-95 select-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C42B1C] ${
+            isActive
+              ? 'bg-[#C42B1C] text-white shadow-md shadow-[#C42B1C]/25 ring-2 ring-[#C42B1C]/20'
+              : 'bg-white hover:bg-[#FFF5F3] text-[#181210] hover:text-[#B82516] border border-[#EFE5DF] hover:border-[#E5C5BC] shadow-sm'
+          }`;
+
+          if (getCategoryHref) {
+            return (
+              <Link
+                key={cat.slug}
+                href={getCategoryHref(cat.slug)}
+                prefetch={false}
+                aria-current={isActive ? 'page' : undefined}
+                onClick={() => onSelectCategory(cat.slug)}
+                className={itemClassName}
+              >
+                <span className="text-sm sm:text-base leading-none flex-shrink-0">{emoji}</span>
+                <span className="min-w-0 break-words leading-snug">{cat.label}</span>
+              </Link>
+            );
+          }
 
           return (
             <button
@@ -74,11 +98,7 @@ export function CategoryBar({
               aria-pressed={isActive}
               type="button"
               onClick={() => onSelectCategory(cat.slug)}
-              className={`min-w-0 w-full min-h-[42px] flex items-center justify-center gap-1 sm:gap-1.5 py-2.5 sm:py-3 px-2 rounded-2xl sm:rounded-full text-[11px] min-[375px]:text-xs sm:text-[13px] font-bold text-center transition-all duration-150 active:scale-95 select-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C42B1C] ${
-                isActive
-                  ? 'bg-[#C42B1C] text-white shadow-md shadow-[#C42B1C]/25 ring-2 ring-[#C42B1C]/20'
-                  : 'bg-white hover:bg-[#FFF5F3] text-[#181210] hover:text-[#B82516] border border-[#EFE5DF] hover:border-[#E5C5BC] shadow-sm'
-              }`}
+              className={itemClassName}
             >
               <span className="text-sm sm:text-base leading-none flex-shrink-0">{emoji}</span>
               <span className="min-w-0 break-words leading-snug">{cat.label}</span>

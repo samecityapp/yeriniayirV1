@@ -2,6 +2,7 @@ import { revalidatePath, revalidateTag } from 'next/cache';
 import { cloudAdmin, PRIVATE_HEADERS, sameOrigin } from '@/lib/cloud/auth';
 import { publicationChange } from '@/lib/cloud/contracts';
 import { invalidateCloudPublication } from '@/lib/cloud/publication';
+import { V3_LOCATIONS } from '@/lib/gastronomy-v3/registry';
 import { enforceRateLimit } from '@/lib/pilot/rateLimit';
 
 export async function POST(request: Request) {
@@ -66,6 +67,14 @@ export async function POST(request: Request) {
     revalidatePath('/el');
     if (regionSlug && /^[a-z0-9-]+$/.test(regionSlug)) {
       revalidatePath(`/api/gastronomy/regions/${regionSlug}`);
+      const loc = V3_LOCATIONS.find((l) => l.slug === regionSlug);
+      revalidatePath('/tr/gastronomi');
+      revalidatePath('/en/gastronomi');
+      if (loc) {
+        const sub = loc.path.join('/');
+        revalidatePath(`/tr/gastronomi/${sub}`);
+        revalidatePath(`/en/gastronomi/${sub}`);
+      }
     }
     return Response.json(
       { revision: result.data },

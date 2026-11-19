@@ -659,6 +659,7 @@ interface GastronomyPageClientProps {
   discovery: VisitorFoodDiscovery;
   initialLocationSlug?: string;
   initialCategorySlug?: string;
+  categoryHrefBase?: string;
   lang?: 'tr' | 'en';
   embedded?: boolean;
 }
@@ -667,6 +668,7 @@ export function GastronomyPageClient({
   discovery,
   initialLocationSlug,
   initialCategorySlug,
+  categoryHrefBase,
   lang = 'tr',
   embedded = false,
 }: GastronomyPageClientProps) {
@@ -951,6 +953,11 @@ export function GastronomyPageClient({
       const cached = getFreshCachedRegion(loc.slug);
       const currentParams =
         typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : new URLSearchParams();
+      if (categoryHrefBase && typeof window !== 'undefined') {
+        const prefix = lang === 'en' ? '/en/gastronomy' : '/tr/gastronomi';
+        window.location.assign(`${prefix}/${loc.path.join('/')}`);
+        return;
+      }
       currentParams.set('region', loc.slug);
       currentParams.delete('category');
       if (cached) {
@@ -976,7 +983,7 @@ export function GastronomyPageClient({
       window.history.pushState(null, '', nextUrl);
       syncFromBrowserUrl();
     },
-    [lang, selectedLocation, selectedCategorySlug, syncFromBrowserUrl, getFreshCachedRegion]
+    [lang, selectedLocation, selectedCategorySlug, syncFromBrowserUrl, getFreshCachedRegion, categoryHrefBase]
   );
 
   // Kategori seçimi değiştiğinde
@@ -984,6 +991,9 @@ export function GastronomyPageClient({
     (catSlug: string) => {
       if (catSlug === selectedCategorySlug) return;
       setSelectedCategorySlug(catSlug);
+      if (categoryHrefBase) {
+        return;
+      }
       if (selectedLocation) {
         const currentParams =
           typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : new URLSearchParams();
@@ -993,7 +1003,7 @@ export function GastronomyPageClient({
         window.history.pushState(null, '', newUrl);
       }
     },
-    [lang, selectedLocation, selectedCategorySlug]
+    [lang, selectedLocation, selectedCategorySlug, categoryHrefBase]
   );
 
   // Seçili bölgenin dinamik kategorileri
@@ -1208,6 +1218,7 @@ export function GastronomyPageClient({
                   categories={currentCategories}
                   activeCategorySlug={selectedCategorySlug}
                   onSelectCategory={handleSelectCategory}
+                  getCategoryHref={categoryHrefBase ? (slug) => `${categoryHrefBase}/${slug}` : undefined}
                 />
               </div>
             )}
