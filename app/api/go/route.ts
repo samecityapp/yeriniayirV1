@@ -87,16 +87,21 @@ export async function GET(request: NextRequest) {
     }
 
     const rl = await enforceRateLimit(request.headers, 'visitor_redirect', { scope: 'api' });
+    const rlResponseHeaders: Record<string, string> = {
+      ...NO_STORE_HEADERS,
+      ...rl.headers,
+      ...(rl.setCookieHeader ? { 'Set-Cookie': rl.setCookieHeader } : {}),
+    };
     if (!rl.ok) {
       return NextResponse.json(
         { error: 'Too Many Requests' },
-        { status: rl.status, headers: { ...NO_STORE_HEADERS, ...rl.headers } }
+        { status: rl.status, headers: rlResponseHeaders }
       );
     }
 
     if (isSupabaseIsolated) {
       return NextResponse.redirect(new URL('/', request.url), {
-        headers: { ...NO_STORE_HEADERS, ...rl.headers },
+        headers: rlResponseHeaders,
       });
     }
 
@@ -138,17 +143,18 @@ export async function GET(request: NextRequest) {
 
     if (!resolvedHotelUrl) {
       return NextResponse.redirect(new URL('/', request.url), {
-        headers: { ...NO_STORE_HEADERS, ...rl.headers },
+        headers: rlResponseHeaders,
       });
     }
 
     const response = NextResponse.redirect(resolvedHotelUrl, {
-      headers: { ...NO_STORE_HEADERS, ...rl.headers },
+      headers: rlResponseHeaders,
     });
     response.headers.set('X-Hotel-Click-Tracked', 'true');
     return response;
-  } catch (error) {
-    console.error('Click tracking error:', error);
+  } catch (err) {
+    const safeName = err && typeof err === 'object' && 'name' in err ? String((err as Error).name).slice(0, 64) : 'Error';
+    console.warn('Click tracking error:', safeName);
     return NextResponse.redirect(new URL('/', request.url), { headers: NO_STORE_HEADERS });
   }
 }

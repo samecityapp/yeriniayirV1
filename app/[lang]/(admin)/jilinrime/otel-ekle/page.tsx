@@ -2,7 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { supabase } from '@/lib/supabase';
+import {
+  getAdminHotelByIdAction,
+  listAdminTagsAction,
+  saveAdminHotelAction,
+} from '../legacyAdminActions';
 import { Hotel, Tag, LocalizedString } from '@/lib/types';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -134,23 +138,16 @@ export default function OtelEklePage() {
     const fetchData = async () => {
       setIsFetching(true);
       try {
-        const { data: tagsData, error: tagsError } = await supabase
-          .from('tags')
-          .select('*')
-          .order('name', { ascending: true });
-
-        if (!tagsError && tagsData) {
-          setAllTags(tagsData as Tag[]);
+        const tagsRes = await listAdminTagsAction();
+        if (tagsRes.ok && tagsRes.data) {
+          setAllTags(tagsRes.data as Tag[]);
         }
 
         if (isEdit && hotelId) {
-          const { data: hotelData, error: hotelError } = await supabase
-            .from('hotels')
-            .select('*')
-            .eq('id', hotelId)
-            .maybeSingle();
+          const hotelRes = await getAdminHotelByIdAction(hotelId);
+          const hotelData = hotelRes.ok ? hotelRes.data : null;
 
-          if (!hotelError && hotelData) {
+          if (hotelData) {
             setName(tryParseLocalized(hotelData.name));
             setLocation(tryParseLocalized(hotelData.location));
             setLatitude(hotelData.latitude?.toString() || '');
@@ -234,8 +231,9 @@ export default function OtelEklePage() {
     setIsLoading(true);
 
     const hotelData = {
+      ...(isEdit && hotelId ? { id: hotelId } : {}),
       name: name,
-      slug: slugify(name.tr),
+      slug: slugify(name.tr) || `otel-${Date.now()}`,
       location: location,
       latitude: lat,
       longitude: lng,
@@ -259,22 +257,9 @@ export default function OtelEklePage() {
     };
 
     try {
-      if (isEdit && hotelId) {
-        const { error } = await supabase
-          .from('hotels')
-          .update(hotelData)
-          .eq('id', hotelId);
-
-        if (error) throw error;
-        alert('Otel güncellendi!');
-      } else {
-        const { error } = await supabase
-          .from('hotels')
-          .insert([hotelData]);
-
-        if (error) throw error;
-        alert('Otel eklendi!');
-      }
+      const res = await saveAdminHotelAction(hotelData);
+      if (!res.ok) throw new Error(res.error);
+      alert(isEdit && hotelId ? 'Otel güncellendi!' : 'Otel eklendi!');
       router.push('/jilinrime/otel-listesi');
     } catch (error: any) {
       console.error('Kaydetme hatası:', error);

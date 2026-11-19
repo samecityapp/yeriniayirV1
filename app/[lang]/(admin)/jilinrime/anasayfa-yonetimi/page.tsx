@@ -2,6 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import { db } from '@/lib/db';
+import {
+  deleteAdminGroupAction,
+  saveAdminGroupAction,
+  toggleAdminGroupPublishAction,
+} from '../legacyAdminActions';
 import { Hotel, Group } from '@/lib/types';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -128,23 +133,13 @@ export default function AnasayfaYonetimiPage() {
         en: newGroupTitleEn.trim()
       });
 
-      if (editingGroupId) {
-        // UPDATE EXISTING GROUP
-        await db.groups.update(editingGroupId, {
-          title: titleJson,
-          domains: newGroupDomains
-        });
-        // Update hotels relationships
-        await db.groups.setHotels(editingGroupId, selectedHotelIds);
-      } else {
-        // CREATE NEW GROUP
-        await db.groups.create({
-          title: titleJson, // Save as JSON string
-          isPublished: false,
-          hotelIds: [],
-          domains: newGroupDomains
-        }, selectedHotelIds);
-      }
+      const res = await saveAdminGroupAction({
+        ...(editingGroupId ? { id: editingGroupId } : {}),
+        title: titleJson,
+        domains: newGroupDomains,
+        hotelIds: selectedHotelIds,
+      });
+      if (!res.ok) throw new Error(res.error);
 
       resetForm();
       await loadData();
@@ -180,7 +175,8 @@ export default function AnasayfaYonetimiPage() {
     const group = groups.find(g => g.id === groupId);
     if (group) {
       try {
-        await db.groups.update(groupId, { isPublished: !group.isPublished });
+        const res = await toggleAdminGroupPublishAction(groupId, !group.isPublished);
+        if (!res.ok) throw new Error(res.error);
         await loadData();
       } catch (error) {
         console.error('Error updating group:', error);
@@ -197,9 +193,8 @@ export default function AnasayfaYonetimiPage() {
 
     setIsLoading(true);
     try {
-      console.log('Deleting group:', groupId);
-      const result = await db.groups.delete(groupId);
-      console.log('Delete result:', result);
+      const res = await deleteAdminGroupAction(groupId);
+      if (!res.ok) throw new Error(res.error);
 
       await loadData();
       alert('Grup başarıyla silindi!');

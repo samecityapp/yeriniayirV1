@@ -382,8 +382,8 @@ async function runRlsVerification() {
       [categoryId]
     );
     results.push({
-      test: 'AUTHENTICATED (profiles.role=admin) INSERT public.restaurants',
-      expected: 'ALLOW (1 satır eklendi)',
+      test: '[TARİHSEL YAMA ÖNCESİ REPRO] AUTHENTICATED (profiles.role=admin, MFA/üyelik yok) INSERT public.restaurants',
+      expected: 'ALLOW (eski is_admin_user zaafiyeti — Aşama 5 ile kapatılır)',
       actual: `ALLOW (${adminInsert.rows.length} satır eklendi)`,
       passed: adminInsert.rows.length === 1,
     });
@@ -563,6 +563,241 @@ async function runRlsVerification() {
       expected: 'BLOCK (permission denied for schema)',
       actual: privateSchemaErr ? `BLOCKED: ${privateSchemaErr}` : 'ALLOWED (HATA!)',
       passed: Boolean(privateSchemaErr && /permission denied/i.test(privateSchemaErr)),
+    });
+
+    // =========================================================================
+    // AŞAMA 5: Görev 10B (F1) — Forward Migration (20261119180000) Doğrulaması
+    // =========================================================================
+    console.log('\n[AŞAMA 5] Görev 10B (F1) Cloud MFA + Üyelik Zorunlu RLS Migration Testleri:');
+
+    // Eski açık izinli miras tabloları ve açık storage.objects politikalarını simüle et
+    await db.exec(`
+      CREATE SCHEMA IF NOT EXISTS storage;
+      GRANT USAGE ON SCHEMA storage TO anon, authenticated, service_role;
+
+      CREATE TABLE IF NOT EXISTS public.hotels (
+        id serial PRIMARY KEY,
+        name text NOT NULL
+      );
+      CREATE TABLE IF NOT EXISTS public.tags (
+        id serial PRIMARY KEY,
+        name text NOT NULL
+      );
+      CREATE TABLE IF NOT EXISTS public.analytics_events (
+        id serial PRIMARY KEY,
+        event_name text NOT NULL
+      );
+      CREATE TABLE IF NOT EXISTS public.audit_logs (
+        id serial PRIMARY KEY,
+        action text NOT NULL
+      );
+      CREATE TABLE IF NOT EXISTS storage.objects (
+        id serial PRIMARY KEY,
+        bucket_id text NOT NULL,
+        name text NOT NULL
+      );
+
+      GRANT SELECT, INSERT, UPDATE, DELETE ON public.hotels, public.tags, public.analytics_events, public.audit_logs TO authenticated;
+      GRANT INSERT ON public.analytics_events TO anon;
+      GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO anon, authenticated;
+      GRANT SELECT, INSERT, UPDATE, DELETE ON storage.objects TO authenticated;
+      GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA storage TO authenticated;
+
+      ALTER TABLE public.hotels ENABLE ROW LEVEL SECURITY;
+      ALTER TABLE public.tags ENABLE ROW LEVEL SECURITY;
+      ALTER TABLE public.analytics_events ENABLE ROW LEVEL SECURITY;
+      ALTER TABLE public.audit_logs ENABLE ROW LEVEL SECURITY;
+      ALTER TABLE storage.objects ENABLE ROW LEVEL SECURITY;
+
+      -- Eski permissive politikalar + korunması gereken ya_permanent_* kalıcı politikası + gerçek SELECT politikaları
+      CREATE POLICY "Public can read all hotels" ON public.hotels FOR SELECT TO anon, authenticated USING (true);
+      CREATE POLICY "Authenticated users can manage hotels" ON public.hotels FOR ALL TO authenticated USING (true) WITH CHECK (true);
+      CREATE POLICY "Public can read all tags" ON public.tags FOR SELECT TO anon, authenticated USING (true);
+      CREATE POLICY "Allow all for authenticated" ON public.tags FOR ALL TO authenticated USING (true) WITH CHECK (true);
+      CREATE POLICY "Public analytics select" ON public.analytics_events FOR SELECT TO authenticated USING (true);
+      CREATE POLICY "ya_permanent_analytics_anon_insert" ON public.analytics_events FOR INSERT TO anon, authenticated WITH CHECK (true);
+      CREATE POLICY "Public audit select" ON public.audit_logs FOR SELECT TO authenticated USING (true);
+      CREATE POLICY "Public Access Restaurant Images" ON storage.objects FOR SELECT TO anon, authenticated USING (bucket_id = 'restaurant-images');
+      CREATE POLICY "Authenticated upload restaurant-images" ON storage.objects FOR INSERT TO authenticated WITH CHECK (bucket_id = 'restaurant-images');
+    `);
+
+    const enforceCloudMfaSql = fs.readFileSync(
+      path.join(process.cwd(), 'supabase/migrations/20261119180000_enforce_cloud_mfa_admin_rls.sql'),
+      'utf8'
+    );
+    await db.exec(enforceCloudMfaSql);
+
+    // Yardımcı test çalıştırıcı
+    async function runAsUser(roleName, subUuid, aal, queryFn) {
+      await db.exec(`RESET ROLE;`);
+      if (subUuid) {
+        const claimsJson = JSON.stringify({ role: roleName, sub: subUuid, ...(aal ? { aal } : {}) });
+        await db.exec(`
+          SET ROLE ${roleName};
+          SELECT set_config('request.jwt.claim.sub', '${subUuid}', false);
+          SELECT set_config('request.jwt.claims', '${claimsJson.replace(/'/g, "''")}', false);
+        `);
+      } else {
+        await db.exec(`
+          SET ROLE ${roleName};
+          SELECT set_config('request.jwt.claim.sub', '', false);
+          SELECT set_config('request.jwt.claims', '{"role":"anon"}', false);
+        `);
+      }
+      try {
+        return await queryFn();
+      } finally {
+        await db.exec(`RESET ROLE;`);
+      }
+    }
+
+    async function expectRlsBlock(roleName, subUuid, aal, sql, params = []) {
+      try {
+        const res = await runAsUser(roleName, subUuid, aal, () => db.query(sql, params));
+        return { blocked: false, reason: `ALLOWED (rows=${res.rows.length}, rowCount=${res.rowCount})` };
+      } catch (err) {
+        return { blocked: /row-level security|permission denied/i.test(err.message), reason: err.message };
+      }
+    }
+
+    // 1. Eski profiles.role=admin (üye değil, aal2 bile olsa) ARTIK engellenmeli!
+    const legacyAdminRestaurantBlock = await expectRlsBlock(
+      'authenticated',
+      adminUuid,
+      'aal2',
+      `INSERT INTO public.restaurants (category_id, location, name) VALUES ($1, 'Moda, Kadıköy', '{"tr": "Legacy Blocked"}'::jsonb) RETURNING id;`,
+      [categoryId]
+    );
+    results.push({
+      test: '[F1 SONRASI] Eski profiles.role=admin (üye değil) INSERT restaurants',
+      expected: 'BLOCK (RLS)',
+      actual: legacyAdminRestaurantBlock.blocked ? 'BLOCKED' : legacyAdminRestaurantBlock.reason,
+      passed: legacyAdminRestaurantBlock.blocked,
+    });
+
+    const legacyAdminHotelsBlock = await expectRlsBlock(
+      'authenticated',
+      adminUuid,
+      'aal2',
+      `INSERT INTO public.hotels (name) VALUES ('Bypass Otel') RETURNING id;`
+    );
+    const legacyAdminTagsBlock = await expectRlsBlock(
+      'authenticated',
+      adminUuid,
+      'aal2',
+      `INSERT INTO public.tags (name) VALUES ('Bypass Tag') RETURNING id;`
+    );
+    await db.exec(`INSERT INTO public.analytics_events (event_name) VALUES ('page_view');`);
+    const legacyAdminAnalyticsSelect = await runAsUser('authenticated', adminUuid, 'aal2', () =>
+      db.query(`SELECT id FROM public.analytics_events;`)
+    );
+    results.push({
+      test: '[F1 SONRASI] Eski admin INSERT hotels/tags & SELECT analytics_events',
+      expected: 'BLOCK & 0 rows',
+      actual: `hotels=${legacyAdminHotelsBlock.blocked}, tags=${legacyAdminTagsBlock.blocked}, analyticsRows=${legacyAdminAnalyticsSelect.rows.length}`,
+      passed:
+        legacyAdminHotelsBlock.blocked &&
+        legacyAdminTagsBlock.blocked &&
+        legacyAdminAnalyticsSelect.rows.length === 0,
+    });
+
+    // 2. Aktif Cloud Admin + aal1 (MFA yok) engellenmeli
+    const aal1RestaurantsBlock = await expectRlsBlock(
+      'authenticated',
+      cloudAdminUuid,
+      'aal1',
+      `INSERT INTO public.restaurants (category_id, location, name) VALUES ($1, 'Moda, Kadıköy', '{"tr": "AAL1 Blocked"}'::jsonb) RETURNING id;`,
+      [categoryId]
+    );
+    const aal1StorageBlock = await expectRlsBlock(
+      'authenticated',
+      cloudAdminUuid,
+      'aal1',
+      `INSERT INTO storage.objects (bucket_id, name) VALUES ('restaurant-images', 'a.jpg') RETURNING id;`
+    );
+    const aal1IsAdmin = await runAsUser('authenticated', cloudAdminUuid, 'aal1', () =>
+      db.query(`SELECT public.is_admin_user() AS is_admin;`)
+    );
+    results.push({
+      test: '[F1 SONRASI] Aktif Cloud Admin + aal1 (MFA yok) INSERT restaurants/storage & is_admin_user()',
+      expected: 'BLOCK & is_admin=false',
+      actual: `rest=${aal1RestaurantsBlock.blocked}, storage=${aal1StorageBlock.blocked}, is_admin=${aal1IsAdmin.rows[0].is_admin}`,
+      passed:
+        aal1RestaurantsBlock.blocked &&
+        aal1StorageBlock.blocked &&
+        aal1IsAdmin.rows[0].is_admin === false,
+    });
+
+    // 3. Pasif (revoked) Cloud Admin + aal2 engellenmeli
+    const revokedHotelsBlock = await expectRlsBlock(
+      'authenticated',
+      revokedAdminUuid,
+      'aal2',
+      `INSERT INTO public.hotels (name) VALUES ('Revoked Otel') RETURNING id;`
+    );
+    results.push({
+      test: '[F1 SONRASI] Pasif (revoked) üye + aal2 INSERT hotels',
+      expected: 'BLOCK (RLS)',
+      actual: revokedHotelsBlock.blocked ? 'BLOCKED' : revokedHotelsBlock.reason,
+      passed: revokedHotelsBlock.blocked,
+    });
+
+    // 4. Anon: hotels yazamaz, analytics/audit SELECT alamaz ama ya_permanent_analytics_anon_insert ile analytics yazabilir (RETURNING olmadan)
+    let anonAnalyticsInserted = false;
+    try {
+      await runAsUser('anon', null, null, () =>
+        db.query(`INSERT INTO public.analytics_events (event_name) VALUES ('anon_pv');`)
+      );
+      anonAnalyticsInserted = true;
+    } catch {
+      anonAnalyticsInserted = false;
+    }
+    const anonAnalyticsSelectBlock = await expectRlsBlock('anon', null, null, `SELECT id FROM public.analytics_events;`);
+    const anonAuditSelectBlock = await expectRlsBlock('anon', null, null, `SELECT id FROM public.audit_logs;`);
+    results.push({
+      test: '[F1 SONRASI] ANON: ya_permanent analytics INSERT açık & analytics/audit SELECT kapalı',
+      expected: 'insert=true & analyticsSelect=BLOCK & auditSelect=BLOCK',
+      actual: `insert=${anonAnalyticsInserted}, analyticsSelectBlocked=${anonAnalyticsSelectBlock.blocked}, auditBlocked=${anonAuditSelectBlock.blocked}`,
+      passed: anonAnalyticsInserted && anonAnalyticsSelectBlock.blocked && anonAuditSelectBlock.blocked,
+    });
+
+    // 5. Aktif Cloud Admin + aal2 tüm tablolara ve storage.objects'e yazabilmeli & analytics okuyabilmeli
+    const mfaWriteResults = await runAsUser('authenticated', cloudAdminUuid, 'aal2', async () => {
+      const r = await db.query(
+        `INSERT INTO public.restaurants (category_id, location, name) VALUES ($1, 'Moda, Kadıköy', '{"tr": "MFA Approved"}'::jsonb) RETURNING id;`,
+        [categoryId]
+      );
+      const o = await db.query(
+        `INSERT INTO public.offers (slug, hotel_name, price) VALUES ('mfa-teklif', 'MFA Otel', '19000') RETURNING id;`
+      );
+      const h = await db.query(
+        `INSERT INTO public.hotels (name) VALUES ('MFA Hotel') RETURNING id;`
+      );
+      const t = await db.query(
+        `INSERT INTO public.tags (name) VALUES ('MFA Tag') RETURNING id;`
+      );
+      const s = await db.query(
+        `INSERT INTO storage.objects (bucket_id, name) VALUES ('restaurant-images', 'ok.jpg') RETURNING id;`
+      );
+      const a = await db.query(`SELECT count(*)::int AS cnt FROM public.analytics_events;`);
+      const adm = await db.query(`SELECT public.is_admin_user() AS is_admin;`);
+      return {
+        ok:
+          r.rows.length === 1 &&
+          o.rows.length === 1 &&
+          h.rows.length === 1 &&
+          t.rows.length === 1 &&
+          s.rows.length === 1 &&
+          a.rows[0].cnt >= 2 &&
+          adm.rows[0].is_admin === true,
+        counts: { r: r.rows.length, o: o.rows.length, h: h.rows.length, t: t.rows.length, s: s.rows.length, a: a.rows[0].cnt, adm: adm.rows[0].is_admin },
+      };
+    });
+    results.push({
+      test: '[F1 SONRASI] Aktif Cloud Admin + aal2 yazma/analytics/storage tam yetki',
+      expected: 'ALLOW tüm yetkili işlemler & is_admin=true',
+      actual: JSON.stringify(mfaWriteResults.counts),
+      passed: mfaWriteResults.ok,
     });
 
     console.log('[AŞAMA 3] Test Sonuç Tablosu:');

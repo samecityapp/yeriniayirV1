@@ -30,14 +30,15 @@ export const db = {
     async getById(id: string): Promise<Hotel | null> {
       const demo = getDemoHotelById(id);
       if (demo) return demo;
-      if (isSupabaseIsolated || !id || !UUID_REGEX.test(id)) return null;
+      if (isSupabaseIsolated || !id) return null;
+
+      const isUuid = UUID_REGEX.test(id);
+      const isSlug = !isUuid && ARTICLE_SLUG_REGEX.test(id);
+      if (!isUuid && !isSlug) return null;
 
       try {
-        const { data, error } = await supabase
-          .from('hotels')
-          .select('*')
-          .eq('id', id)
-          .maybeSingle();
+        const query = supabase.from('hotels').select('*');
+        const { data, error } = await (isUuid ? query.eq('id', id) : query.eq('slug', id)).maybeSingle();
 
         if (error) return null;
         return data ? this.mapFromDb(data) : null;

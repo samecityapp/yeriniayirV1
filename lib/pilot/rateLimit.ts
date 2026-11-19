@@ -19,6 +19,12 @@ export type RateLimitPolicySource =
   | 'emergency-fallback'
   | 'outage-blocked';
 
+export const RATE_LIMIT_COOKIE_NAME = 'ya_rl_anon';
+const ANON_COOKIE_TTL_SEC = 15 * 60;
+const MAX_NEW_COOKIES_PER_IP_WINDOW = 60;
+const NEW_COOKIE_WINDOW_MS = 10_000;
+const REDIS_NAMESPACE_RE = /^[a-z0-9:_-]{1,40}$/i;
+
 export interface RateLimitResult {
   ok: boolean;
   status: 200 | 429 | 503;
@@ -27,6 +33,7 @@ export interface RateLimitResult {
   reset: number;
   policy: RateLimitPolicySource;
   headers: Record<string, string>;
+  setCookieHeader?: string;
 }
 
 interface WindowSpec {
@@ -40,6 +47,7 @@ interface TierConfig {
   isCritical: boolean;
   primary: WindowSpec;
   ipCeiling?: WindowSpec;
+  skipRemoteIpCeiling?: boolean;
   outagePrimary: WindowSpec;
   outageIpCeiling?: WindowSpec;
   outageGlobal?: WindowSpec;
@@ -50,25 +58,26 @@ const TIER_CONFIGS: Record<RateLimitTier, TierConfig> = {
     mode: 'visitor',
     isCritical: false,
     primary: { limit: 10, windowMs: 10_000, windowText: '10 s' },
-    ipCeiling: { limit: 120, windowMs: 10_000, windowText: '10 s' },
+    ipCeiling: { limit: 150, windowMs: 10_000, windowText: '10 s' },
+    skipRemoteIpCeiling: true,
     outagePrimary: { limit: 10, windowMs: 10_000, windowText: '10 s' },
-    outageIpCeiling: { limit: 120, windowMs: 10_000, windowText: '10 s' },
+    outageIpCeiling: { limit: 150, windowMs: 10_000, windowText: '10 s' },
   },
   visitor_redirect: {
     mode: 'visitor',
     isCritical: false,
     primary: { limit: 30, windowMs: 10_000, windowText: '10 s' },
-    ipCeiling: { limit: 150, windowMs: 10_000, windowText: '10 s' },
+    ipCeiling: { limit: 200, windowMs: 10_000, windowText: '10 s' },
     outagePrimary: { limit: 20, windowMs: 10_000, windowText: '10 s' },
-    outageIpCeiling: { limit: 100, windowMs: 10_000, windowText: '10 s' },
+    outageIpCeiling: { limit: 150, windowMs: 10_000, windowText: '10 s' },
   },
   visitor_public: {
     mode: 'visitor',
     isCritical: false,
     primary: { limit: 30, windowMs: 10_000, windowText: '10 s' },
-    ipCeiling: { limit: 150, windowMs: 10_000, windowText: '10 s' },
+    ipCeiling: { limit: 200, windowMs: 10_000, windowText: '10 s' },
     outagePrimary: { limit: 20, windowMs: 10_000, windowText: '10 s' },
-    outageIpCeiling: { limit: 100, windowMs: 10_000, windowText: '10 s' },
+    outageIpCeiling: { limit: 150, windowMs: 10_000, windowText: '10 s' },
   },
   admin_read: {
     mode: 'ip',
@@ -133,19 +142,25 @@ const adminBuckets = new Map<string, SlidingBucket>();
 const ipCeilingBuckets = new Map<string, SlidingBucket>();
 const visitorDeviceBuckets = new Map<string, SlidingBucket>();
 const ipUaSets = new Map<string, IpUaTracker>();
+const ipCookieIssueBuckets = new Map<string, SlidingBucket>();
 
 let upstashOutageUntil = 0;
 let cachedRedisSignature: string | null = null;
 const cachedUpstashLimiters = new Map<string, Ratelimit>();
+let cachedHmacSecret: string | null = null;
+let cachedHmacKey: CryptoKey | null = null;
 
 export function resetMemoryRateLimitersForTests(): void {
   adminBuckets.clear();
   ipCeilingBuckets.clear();
   visitorDeviceBuckets.clear();
   ipUaSets.clear();
+  ipCookieIssueBuckets.clear();
   upstashOutageUntil = 0;
   cachedRedisSignature = null;
   cachedUpstashLimiters.clear();
+  cachedHmacSecret = null;
+  cachedHmacKey = null;
 }
 
 export function isRateLimitActive(): boolean {
@@ -217,6 +232,178 @@ export async function buildVisitorClientKey(headers: Headers): Promise<string> {
   const acceptLang = (headers.get('accept-language') || '').slice(0, 32);
   const mobileHint = (headers.get('sec-ch-ua-mobile') || '').slice(0, 8);
   return sha256Hex32(`${ip}|${utcDay}|${ua}|${acceptLang}|${mobileHint}`);
+}
+
+function bytesToBase64Url(bytes: Uint8Array): string {
+  let binary = '';
+  for (let i = 0; i < bytes.length; i++) {
+    binary += String.fromCharCode(bytes[i]);
+  }
+  return btoa(binary).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+
+function base64UrlToBytes(input: string): Uint8Array | null {
+  if (!/^[A-Za-z0-9_-]{32,64}$/.test(input)) return null;
+  const padded = input.replace(/-/g, '+').replace(/_/g, '/') + '==='.slice((input.length + 3) % 4);
+  try {
+    const binary = atob(padded);
+    const buf = new ArrayBuffer(binary.length);
+    const out = new Uint8Array(buf);
+    for (let i = 0; i < binary.length; i++) {
+      out[i] = binary.charCodeAt(i);
+    }
+    return out;
+  } catch {
+    return null;
+  }
+}
+
+function resolveAnonCookieSecret(
+  env: NodeJS.ProcessEnv = process.env
+): { secret: string; trusted: boolean } {
+  const candidate =
+    env.RATE_LIMIT_COOKIE_SECRET?.trim() ||
+    env.ADMIN_SESSION_SECRET?.trim() ||
+    env.CRON_SECRET?.trim() ||
+    '';
+
+  const isCloudProdOrStaging =
+    env.APP_ENVIRONMENT === 'production' ||
+    env.APP_ENVIRONMENT === 'staging' ||
+    env.VERCEL_ENV === 'production';
+
+  if (candidate.length >= 16) {
+    return { secret: candidate, trusted: true };
+  }
+  if (isCloudProdOrStaging) {
+    return { secret: '', trusted: false };
+  }
+  return { secret: 'ya-local-dev-fairness-v1', trusted: true };
+}
+
+async function getAnonCookieHmacKey(secret: string): Promise<CryptoKey | null> {
+  if (typeof globalThis.crypto === 'undefined' || !globalThis.crypto.subtle) {
+    return null;
+  }
+  if (cachedHmacSecret === secret && cachedHmacKey) {
+    return cachedHmacKey;
+  }
+  const key = await globalThis.crypto.subtle.importKey(
+    'raw',
+    new TextEncoder().encode(secret),
+    { name: 'HMAC', hash: 'SHA-256' },
+    false,
+    ['sign', 'verify']
+  );
+  cachedHmacSecret = secret;
+  cachedHmacKey = key;
+  return key;
+}
+
+function readCookieValue(cookieHeader: string | null, cookieName: string): string | null {
+  if (!cookieHeader) return null;
+  const parts = cookieHeader.split(';');
+  for (const part of parts) {
+    const eqIdx = part.indexOf('=');
+    if (eqIdx <= 0) continue;
+    const name = part.slice(0, eqIdx).trim();
+    if (name === cookieName) {
+      return part.slice(eqIdx + 1).trim();
+    }
+  }
+  return null;
+}
+
+async function verifyAnonFairnessCookie(headers: Headers, nowSec: number): Promise<string | null> {
+  const { secret, trusted } = resolveAnonCookieSecret();
+  if (!trusted || !secret) return null;
+
+  const rawCookie = readCookieValue(headers.get('cookie'), RATE_LIMIT_COOKIE_NAME);
+  if (!rawCookie) return null;
+
+  const segments = rawCookie.split('.');
+  if (segments.length !== 3) return null;
+  const [issuedAtStr, nonceHex, sigB64u] = segments;
+  if (!/^\d{10,12}$/.test(issuedAtStr) || !/^[0-9a-f]{32}$/.test(nonceHex)) {
+    return null;
+  }
+
+  const issuedAtSec = Number(issuedAtStr);
+  if (!Number.isSafeInteger(issuedAtSec)) return null;
+  if (issuedAtSec > nowSec + 30 || nowSec - issuedAtSec > ANON_COOKIE_TTL_SEC) {
+    return null;
+  }
+
+  const sigBytes = base64UrlToBytes(sigB64u);
+  if (!sigBytes) return null;
+
+  const hmacKey = await getAnonCookieHmacKey(secret);
+  if (!hmacKey) return null;
+
+  const payload = `${issuedAtStr}.${nonceHex}`;
+  const verified = await globalThis.crypto.subtle.verify(
+    'HMAC',
+    hmacKey,
+    sigBytes as BufferSource,
+    new TextEncoder().encode(payload)
+  );
+  return verified ? payload : null;
+}
+
+async function issueAnonFairnessCookieHeader(
+  headers: Headers,
+  nowSec: number
+): Promise<string | undefined> {
+  const { secret, trusted } = resolveAnonCookieSecret();
+  if (!trusted || !secret || typeof globalThis.crypto === 'undefined' || !globalThis.crypto.subtle) {
+    return undefined;
+  }
+  const hmacKey = await getAnonCookieHmacKey(secret);
+  if (!hmacKey) return undefined;
+
+  const randomBytes = new Uint8Array(16);
+  globalThis.crypto.getRandomValues(randomBytes);
+  let nonceHex = '';
+  for (let i = 0; i < randomBytes.length; i++) {
+    nonceHex += randomBytes[i].toString(16).padStart(2, '0');
+  }
+  const payload = `${nowSec}.${nonceHex}`;
+  const sigBuf = await globalThis.crypto.subtle.sign(
+    'HMAC',
+    hmacKey,
+    new TextEncoder().encode(payload)
+  );
+  const sigB64u = bytesToBase64Url(new Uint8Array(sigBuf));
+  const isSecure =
+    headers.get('x-forwarded-proto') === 'https' ||
+    process.env.VERCEL === '1' ||
+    process.env.APP_ENVIRONMENT === 'production' ||
+    process.env.APP_ENVIRONMENT === 'staging' ||
+    process.env.VERCEL_ENV === 'production';
+
+  return `${RATE_LIMIT_COOKIE_NAME}=${payload}.${sigB64u}; Path=/; Max-Age=${ANON_COOKIE_TTL_SEC}; HttpOnly; SameSite=Lax${isSecure ? '; Secure' : ''}`;
+}
+
+export async function resolveVisitorIdentity(
+  scope: string,
+  tier: RateLimitTier,
+  headers: Headers,
+  ipHash: string,
+  utcDay: string,
+  now: number,
+  isCliBot: boolean
+): Promise<{ primaryKey: string; verifiedAnon: boolean }> {
+  const nowSec = Math.floor(now / 1000);
+  if (!isCliBot) {
+    const verifiedPayload = await verifyAnonFairnessCookie(headers, nowSec);
+    if (verifiedPayload) {
+      const tokenHash = await sha256Hex32(`${verifiedPayload}|${utcDay}`);
+      return { primaryKey: `anon:${tokenHash}`, verifiedAnon: true };
+    }
+  }
+  const rawFingerprint = await buildVisitorClientKey(headers);
+  const resolved = resolveVisitorPrimaryKey(scope, tier, ipHash, rawFingerprint, now);
+  return { primaryKey: `unverified:${resolved}`, verifiedAnon: false };
 }
 
 function purgeExpiredEntries<T extends { expiresAt: number }>(
@@ -339,12 +526,18 @@ function resolveUpstashRuntimeConfig(
   }
 }
 
+function resolveRedisNamespace(): string {
+  const ns = (process.env.RATE_LIMIT_REDIS_NAMESPACE || '').trim();
+  return ns && REDIS_NAMESPACE_RE.test(ns) ? ns : '';
+}
+
 function getUpstashLimiter(
   limiterName: string,
   spec: WindowSpec,
   cfg: { url: string; token: string }
 ): Ratelimit {
-  const signature = `${cfg.url}|${cfg.token}`;
+  const ns = resolveRedisNamespace();
+  const signature = `${cfg.url}|${cfg.token}|${ns}`;
   if (cachedRedisSignature !== signature) {
     cachedRedisSignature = signature;
     cachedUpstashLimiters.clear();
@@ -353,12 +546,15 @@ function getUpstashLimiter(
   const cached = cachedUpstashLimiters.get(limiterName);
   if (cached) return cached;
 
+  const prefix = ns
+    ? `@upstash/ratelimit/${ns}/${limiterName}`
+    : `@upstash/ratelimit/${limiterName}`;
   const redis = new Redis({ url: cfg.url, token: cfg.token });
   const limiter = new Ratelimit({
     redis,
     limiter: Ratelimit.slidingWindow(spec.limit, spec.windowText),
     analytics: false,
-    prefix: `@upstash/ratelimit/${limiterName}`,
+    prefix,
     timeout: 0, // Disable SDK fail-open timeout; our timeout rejects into outage policy.
   });
   cachedUpstashLimiters.set(limiterName, limiter);
@@ -413,11 +609,45 @@ function buildResult(
   limit: number,
   remaining: number,
   reset: number,
-  policy: RateLimitPolicySource
+  policy: RateLimitPolicySource,
+  setCookieHeader?: string
 ): RateLimitResult {
   const ok = status === 200;
   const headers = rateLimitHeaders({ ok, limit, remaining, reset, policy });
-  return { ok, status, limit, remaining, reset, policy, headers };
+  return setCookieHeader
+    ? { ok, status, limit, remaining, reset, policy, headers, setCookieHeader }
+    : { ok, status, limit, remaining, reset, policy, headers };
+}
+
+async function maybeAttachAnonCookie(
+  result: RateLimitResult,
+  cfg: TierConfig,
+  headers: Headers,
+  ipHash: string,
+  now: number,
+  verifiedAnon: boolean,
+  isCliBot: boolean,
+  allowSetCookie: boolean
+): Promise<RateLimitResult> {
+  if (!result.ok || cfg.mode !== 'visitor' || verifiedAnon || isCliBot || !allowSetCookie) {
+    return result;
+  }
+  const issueBucket = consumeSlidingWindow(
+    ipCookieIssueBuckets,
+    MAX_IP_BUCKETS,
+    `cookie:${ipHash}`,
+    {
+      limit: MAX_NEW_COOKIES_PER_IP_WINDOW,
+      windowMs: NEW_COOKIE_WINDOW_MS,
+      windowText: '10 s',
+    },
+    now
+  );
+  if (!issueBucket.success) {
+    return result;
+  }
+  const setCookieHeader = await issueAnonFairnessCookieHeader(headers, Math.floor(now / 1000));
+  return setCookieHeader ? { ...result, setCookieHeader } : result;
 }
 
 function enforceLayer1(
@@ -493,7 +723,7 @@ function enforceLayer1(
 export async function enforceEdgeMemoryShield(
   headers: Headers,
   tier: RateLimitTier,
-  options?: { scope?: string; nowMs?: number }
+  options?: { scope?: string; nowMs?: number; allowSetCookie?: boolean }
 ): Promise<RateLimitResult> {
   const cfg = TIER_CONFIGS[tier];
   if (!isRateLimitActive()) {
@@ -509,22 +739,32 @@ export async function enforceEdgeMemoryShield(
   }
 
   const scope = options?.scope || 'mw';
+  const allowSetCookie = options?.allowSetCookie ?? scope === 'api';
   const now = typeof options?.nowMs === 'number' && Number.isFinite(options.nowMs) ? options.nowMs : Date.now();
   const ip = extractClientIp(headers);
   const utcDay = new Date(now).toISOString().slice(0, 10);
   const ipHash = await sha256Hex32(`${ip}|${utcDay}`);
   const isCliBot = cfg.mode === 'visitor' && isAutomatedCliUserAgent(headers.get('user-agent'));
-  const rawPrimaryKey = cfg.mode === 'visitor' ? await buildVisitorClientKey(headers) : ipHash;
-  const primaryKey =
+  const identity =
     cfg.mode === 'visitor'
-      ? resolveVisitorPrimaryKey(scope, tier, ipHash, rawPrimaryKey, now)
-      : rawPrimaryKey;
+      ? await resolveVisitorIdentity(scope, tier, headers, ipHash, utcDay, now, isCliBot)
+      : { primaryKey: ipHash, verifiedAnon: false };
 
-  const l1 = enforceLayer1(scope, tier, primaryKey, ipHash, isCliBot, now, false);
+  const l1 = enforceLayer1(scope, tier, identity.primaryKey, ipHash, isCliBot, now, false);
   if (!l1.ok) {
     return buildResult(429, l1.limit, l1.remaining, l1.reset, 'memory-l1');
   }
-  return buildResult(200, l1.limit, l1.remaining, l1.reset, 'memory-l1');
+  const okRes = buildResult(200, l1.limit, l1.remaining, l1.reset, 'memory-l1');
+  return maybeAttachAnonCookie(
+    okRes,
+    cfg,
+    headers,
+    ipHash,
+    now,
+    identity.verifiedAnon,
+    isCliBot,
+    allowSetCookie
+  );
 }
 
 function handleCriticalOutageFallback(
@@ -546,7 +786,7 @@ function handleCriticalOutageFallback(
 export async function enforceRateLimit(
   headers: Headers,
   tier: RateLimitTier,
-  options?: { scope?: string; nowMs?: number }
+  options?: { scope?: string; nowMs?: number; allowSetCookie?: boolean }
 ): Promise<RateLimitResult> {
   const cfg = TIER_CONFIGS[tier];
   if (!isRateLimitActive()) {
@@ -562,16 +802,17 @@ export async function enforceRateLimit(
   }
 
   const scope = options?.scope || 'api';
+  const allowSetCookie = options?.allowSetCookie ?? scope === 'api';
   const now = typeof options?.nowMs === 'number' && Number.isFinite(options.nowMs) ? options.nowMs : Date.now();
   const ip = extractClientIp(headers);
   const utcDay = new Date(now).toISOString().slice(0, 10);
   const ipHash = await sha256Hex32(`${ip}|${utcDay}`);
   const isCliBot = cfg.mode === 'visitor' && isAutomatedCliUserAgent(headers.get('user-agent'));
-  const rawPrimaryKey = cfg.mode === 'visitor' ? await buildVisitorClientKey(headers) : ipHash;
-  const primaryKey =
+  const identity =
     cfg.mode === 'visitor'
-      ? resolveVisitorPrimaryKey(scope, tier, ipHash, rawPrimaryKey, now)
-      : rawPrimaryKey;
+      ? await resolveVisitorIdentity(scope, tier, headers, ipHash, utcDay, now, isCliBot)
+      : { primaryKey: ipHash, verifiedAnon: false };
+  const primaryKey = identity.primaryKey;
 
   // Layer 1: Bounded in-memory shield stops floods BEFORE invoking Upstash.
   const l1 = enforceLayer1(scope, tier, primaryKey, ipHash, isCliBot, now, false);
@@ -599,14 +840,59 @@ export async function enforceRateLimit(
         process.env.APP_ENVIRONMENT === 'production' ||
         process.env.APP_ENVIRONMENT === 'staging');
     if (enforceCriticalEmergencyPolicy) {
-      return handleCriticalOutageFallback(scope, tier, cfg, primaryKey, ipHash, isCliBot, now);
+      const fallbackRes = handleCriticalOutageFallback(
+        scope,
+        tier,
+        cfg,
+        primaryKey,
+        ipHash,
+        isCliBot,
+        now
+      );
+      return maybeAttachAnonCookie(
+        fallbackRes,
+        cfg,
+        headers,
+        ipHash,
+        now,
+        identity.verifiedAnon,
+        isCliBot,
+        allowSetCookie
+      );
     }
-    return l1;
+    return maybeAttachAnonCookie(
+      l1,
+      cfg,
+      headers,
+      ipHash,
+      now,
+      identity.verifiedAnon,
+      isCliBot,
+      allowSetCookie
+    );
   }
 
   // Cooldown circuit breaker skips hanging 1500ms Upstash timeouts during active outages.
   if (now < upstashOutageUntil) {
-    return handleCriticalOutageFallback(scope, tier, cfg, primaryKey, ipHash, isCliBot, now);
+    const fallbackRes = handleCriticalOutageFallback(
+      scope,
+      tier,
+      cfg,
+      primaryKey,
+      ipHash,
+      isCliBot,
+      now
+    );
+    return maybeAttachAnonCookie(
+      fallbackRes,
+      cfg,
+      headers,
+      ipHash,
+      now,
+      identity.verifiedAnon,
+      isCliBot,
+      allowSetCookie
+    );
   }
 
   // Layer 2: Distributed Upstash Redis sliding window.
@@ -623,7 +909,7 @@ export async function enforceRateLimit(
       );
     }
 
-    if (cfg.ipCeiling) {
+    if (cfg.ipCeiling && !cfg.skipRemoteIpCeiling) {
       const ipLimiter = getUpstashLimiter(`${scope}/${tier}/ip`, cfg.ipCeiling, upstashCfg);
       const ipRemote = await limitWithTimeout(ipLimiter, ipHash);
       if (!ipRemote.success) {
@@ -638,17 +924,45 @@ export async function enforceRateLimit(
     }
 
     upstashOutageUntil = 0;
-    return buildResult(
+    const okRes = buildResult(
       200,
       pRemote.limit || cfg.primary.limit,
       pRemote.remaining,
       pRemote.reset,
       'upstash'
     );
+    return maybeAttachAnonCookie(
+      okRes,
+      cfg,
+      headers,
+      ipHash,
+      now,
+      identity.verifiedAnon,
+      isCliBot,
+      allowSetCookie
+    );
   } catch (err) {
     // Log only error name (never full SDK exception objects containing URLs/headers).
     upstashOutageUntil = now + UPSTASH_CIRCUIT_COOLDOWN_MS;
     console.warn(`Rate limiter Upstash failure for ${scope}:${tier} (${(err as Error)?.name || 'Error'}); circuit breaker engaged.`);
-    return handleCriticalOutageFallback(scope, tier, cfg, primaryKey, ipHash, isCliBot, now);
+    const fallbackRes = handleCriticalOutageFallback(
+      scope,
+      tier,
+      cfg,
+      primaryKey,
+      ipHash,
+      isCliBot,
+      now
+    );
+    return maybeAttachAnonCookie(
+      fallbackRes,
+      cfg,
+      headers,
+      ipHash,
+      now,
+      identity.verifiedAnon,
+      isCliBot,
+      allowSetCookie
+    );
   }
 }

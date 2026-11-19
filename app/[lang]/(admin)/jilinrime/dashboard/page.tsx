@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { supabase } from '@/lib/supabase';
+import { fetchAdminDashboardStatsAction } from '../legacyAdminActions';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line } from 'recharts';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -43,33 +43,14 @@ export default function AdminDashboard() {
     const fetchStats = async () => {
         setLoading(true);
         try {
-            // Fetch total views (page_view)
-            const { count: viewsCount } = await supabase
-                .from('analytics_events')
-                .select('*', { count: 'exact', head: true })
-                .eq('event_type', 'page_view');
-
-            // Fetch total clicks (website_click, instagram_click, etc.)
-            const { count: clicksCount } = await supabase
-                .from('analytics_events')
-                .select('*', { count: 'exact', head: true })
-                .in('event_type', ['website_click', 'instagram_click', 'whatsapp_click', 'phone_click']);
-
-            // Fetch daily stats for chart
-            const { data: events } = await supabase
-                .from('analytics_events')
-                .select('created_at, event_type')
-                .gte('created_at', new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString())
-                .order('created_at', { ascending: true });
+            const statsRes = await fetchAdminDashboardStatsAction();
+            if (!statsRes.ok) {
+                throw new Error(statsRes.error);
+            }
+            const { viewsCount, clicksCount, events, allEvents } = statsRes.data;
 
             // Process daily stats
             const dailyData = processDailyStats(events || []);
-
-            // Fetch top hotels - Client side processing for MVP
-            const { data: allEvents } = await supabase
-                .from('analytics_events')
-                .select('hotel_id, hotels(name)')
-                .not('hotel_id', 'is', null);
 
             const hotelCounts: Record<string, number> = {};
             allEvents?.forEach((e: any) => {

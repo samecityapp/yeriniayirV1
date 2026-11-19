@@ -136,6 +136,12 @@ const nextConfig = {
       },
     ];
   },
+  webpack(config) {
+    if (process.env.NEXT_DISABLE_WEBPACK_CACHE === '1') {
+      config.cache = false;
+    }
+    return config;
+  },
   async rewrites() {
     return [
       {

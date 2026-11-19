@@ -9,6 +9,7 @@ import {
 } from '@/lib/gastronomy-v3/geoCatalog';
 import { PILOT_VENUE_IDS } from '@/lib/gastronomy-v3/geoPilot';
 import { getPublishedV3Snapshot, V3_LOCATIONS } from '@/lib/gastronomy-v3/registry';
+import { buildHotelAlternates, buildHotelPublicUrl } from '@/lib/hotelSeo';
 import { isSupabaseIsolated } from '@/lib/supabase';
 
 export const revalidate = 3600;
@@ -160,17 +161,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     try {
       const hotels = await db.hotels.getAll();
       for (const hotel of hotels) {
+        const { languages } = buildHotelAlternates(hotel, 'tr');
         pushEntry({
-          url: `${TR_SITE_ORIGIN}/otel/${hotel.slug || hotel.id}`,
+          url: buildHotelPublicUrl(hotel, 'tr'),
           lastModified: new Date(),
           changeFrequency: 'weekly',
           priority: 0.7,
+          alternates: { languages },
         });
         pushEntry({
-          url: `${EN_SITE_ORIGIN}/hotel/${hotel.slug || hotel.id}`,
+          url: buildHotelPublicUrl(hotel, 'en'),
           lastModified: new Date(),
           changeFrequency: 'weekly',
           priority: 0.7,
+          alternates: { languages },
         });
       }
     } catch {

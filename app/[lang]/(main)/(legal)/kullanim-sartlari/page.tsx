@@ -87,7 +87,7 @@ export default function TermsOfUse() {
                 </section>
 
                 <section className="mb-8">
-                    <h2 className="text-xl font-bold text-zinc-900 mb-4">6. Değişiklikler</h2>
+                    <h2 className="text-xl font-bold text-zinc-900 mb-4">7. Değişiklikler</h2>
                     <p className="text-zinc-600 leading-relaxed">
                         Yerini Ayır, bu Şartları önceden bildirimde bulunmaksızın güncelleme hakkını saklı tutar.
                         Güncellemeler yayınlandığı anda yürürlüğe girer.
@@ -106,7 +106,7 @@ export default function TermsOfUse() {
                     </p>
                     <p className="font-medium text-zinc-900">
                         Yerini Ayır Hukuk Birimi<br />
-                        E-posta: legal@gnkotel.com<br />
+                        E-posta: info@yeriniayir.com<br />
                         Konum: İstanbul, Türkiye
                     </p>
                 </div>

@@ -19,6 +19,8 @@ import { HotelFAQ } from '@/components/hotel/HotelFAQ';
 import PremiumClassic from '@/components/hotel/ScoreCard/PremiumClassic';
 import { getLocalizedText } from '@/lib/localization';
 import { getDictionary } from '@/lib/dictionary';
+import { EN_SITE_ORIGIN, TR_SITE_ORIGIN } from '@/lib/gastronomy-v3/geoCatalog';
+import { buildHotelAlternates, buildHotelPublicUrl } from '@/lib/hotelSeo';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { generateHotelSchema, generateBreadcrumbSchema, generateFAQSchema } from '@/lib/schema-generator';
 import { formatCurrency } from '@/lib/utils';
@@ -56,9 +58,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
         description,
         images: [location.image],
       },
-      alternates: {
-        canonical: `https://www.yeriniayir.com/${lang}/otel/${location.slug}`,
-      }
+      alternates: buildHotelAlternates(location.slug, lang),
     };
   }
 
@@ -94,9 +94,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
       images: hotel.coverImageUrl ? [hotel.coverImageUrl] : [],
       type: 'website',
     },
-    alternates: {
-      canonical: `https://www.yeriniayir.com/${lang}/otel/${hotel.id}`,
-    },
+    alternates: buildHotelAlternates(hotel, lang),
     twitter: {
       card: 'summary_large_image',
       title: `${hotelName} - ${locationName}`,
@@ -134,13 +132,13 @@ export default async function HotelDetailPage(props: Props) {
     text: lang === 'tr' ? 'İyi' : 'Good',
   };
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.yeriniayir.com';
+  const siteOrigin = lang === 'en' ? EN_SITE_ORIGIN : TR_SITE_ORIGIN;
   const hotelSchema = generateHotelSchema(hotel, lang);
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: dict.navigation.home, url: `${baseUrl}/${lang}` },
-    { name: dict.navigation.hotels || 'Oteller', url: `${baseUrl}/${lang}/search` },
-    { name: getLocalizedText(hotel.location, lang), url: `${baseUrl}/${lang}/search?location=${encodeURIComponent(getLocalizedText(hotel.location, lang))}` },
-    { name: getLocalizedText(hotel.name, lang), url: `${baseUrl}/${lang}/otel/${hotel.id}` },
+    { name: dict.navigation.home, url: siteOrigin },
+    { name: dict.navigation.hotels || (lang === 'en' ? 'Hotels' : 'Oteller'), url: `${siteOrigin}/search` },
+    { name: getLocalizedText(hotel.location, lang), url: `${siteOrigin}/search?location=${encodeURIComponent(getLocalizedText(hotel.location, lang))}` },
+    { name: getLocalizedText(hotel.name, lang), url: buildHotelPublicUrl(hotel, lang) },
   ]);
 
   const defaultFaqs = [

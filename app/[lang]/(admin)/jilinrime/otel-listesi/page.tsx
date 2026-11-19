@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { supabase } from '@/lib/supabase';
+import { deleteAdminHotelAction, listAdminHotelsAction } from '../legacyAdminActions';
 import { Hotel } from '@/lib/types';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -61,14 +61,10 @@ export default function OtelListesiPage() {
     setIsLoading(true);
     setError(null);
     try {
-      const { data, error } = await supabase
-        .from('hotels')
-        .select('*')
-        .order('name', { ascending: true });
+      const res = await listAdminHotelsAction();
+      if (!res.ok) throw new Error(res.error);
 
-      if (error) throw error;
-
-      const mappedHotels: Hotel[] = (data || []).map(hotel => ({
+      const mappedHotels: Hotel[] = (res.data || []).map((hotel: any) => ({
         id: hotel.id,
         name: tryParseLocalized(hotel.name),
         location: tryParseLocalized(hotel.location),
@@ -114,12 +110,8 @@ export default function OtelListesiPage() {
     }
 
     try {
-      const { error } = await supabase
-        .from('hotels')
-        .delete()
-        .eq('id', id);
-
-      if (error) throw error;
+      const res = await deleteAdminHotelAction(id);
+      if (!res.ok) throw new Error(res.error);
 
       await fetchHotels();
     } catch (err: any) {

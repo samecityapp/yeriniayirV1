@@ -1,7 +1,12 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { supabase } from '@/lib/supabase';
+import {
+  createAdminTagAction,
+  listAdminTagsAction,
+  softDeleteAdminTagAction,
+  updateAdminTagAction,
+} from '../legacyAdminActions';
 import { Tag } from '@/lib/types';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -20,16 +25,11 @@ export default function EtiketYonetimiPage() {
 
   const loadTags = async () => {
     try {
-      const { data, error } = await supabase
-        .from('tags')
-        .select('*')
-        .is('deleted_at', null)
-        .order('name', { ascending: true });
+      const res = await listAdminTagsAction();
+      if (!res.ok) throw new Error(res.error);
 
-      if (error) throw error;
-
-      if (data) {
-        setTags(data.map(t => ({
+      if (res.data) {
+        setTags(res.data.map((t: any) => ({
           id: t.id,
           name: t.name,
           slug: t.slug,
@@ -67,16 +67,13 @@ export default function EtiketYonetimiPage() {
         .replace(/[^a-z0-9]+/g, '-')
         .replace(/^-|-$/g, '');
 
-      const { error } = await supabase
-        .from('tags')
-        .insert([{
-          name: newTagName.trim(),
-          slug: slug,
-          icon: newTagIcon.trim() || 'Tag',
-          is_featured: false
-        }]);
+      const res = await createAdminTagAction({
+        name: newTagName.trim(),
+        slug,
+        icon: newTagIcon.trim() || 'Tag',
+      });
 
-      if (error) throw error;
+      if (!res.ok) throw new Error(res.error);
 
       setNewTagName('');
       setNewTagIcon('Tag');
@@ -91,12 +88,8 @@ export default function EtiketYonetimiPage() {
     if (!confirm('Bu etiketi silmek istediğinizden emin misiniz?')) return;
 
     try {
-      const { error } = await supabase
-        .from('tags')
-        .update({ deleted_at: new Date().toISOString() })
-        .eq('id', id);
-
-      if (error) throw error;
+      const res = await softDeleteAdminTagAction(id);
+      if (!res.ok) throw new Error(res.error);
       loadTags();
     } catch (error) {
       console.error('Error deleting tag:', error);
@@ -128,16 +121,13 @@ export default function EtiketYonetimiPage() {
         .replace(/[^a-z0-9]+/g, '-')
         .replace(/^-|-$/g, '');
 
-      const { error } = await supabase
-        .from('tags')
-        .update({
-          name: editingValues.name.trim(),
-          slug: slug,
-          icon: editingValues.icon.trim() || 'Tag'
-        })
-        .eq('id', editingTagId);
+      const res = await updateAdminTagAction(editingTagId, {
+        name: editingValues.name.trim(),
+        slug,
+        icon: editingValues.icon.trim() || 'Tag',
+      });
 
-      if (error) throw error;
+      if (!res.ok) throw new Error(res.error);
 
       setEditingTagId(null);
       loadTags();

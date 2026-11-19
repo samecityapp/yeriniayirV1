@@ -17,6 +17,11 @@ const puppeteer = repoRequire('puppeteer');
 const loadTs = require('./security/load-ts.cjs');
 
 let passed = 0;
+const watchdog = setTimeout(() => {
+  console.error('\nFAIL: verify_paket10_final_release_audit exceeded 180s watchdog.');
+  process.exit(1);
+}, 180_000);
+watchdog.unref();
 async function check(label, fn) {
   await fn();
   passed++;
@@ -753,13 +758,43 @@ function collectStrings(node, acc = []) {
       }
       console.log('PAKET10_HTML_BENCHMARK ' + JSON.stringify(benchRows));
     });
-
-    console.log(`\nALL PAKET 10 FINAL RELEASE AUDIT CHECKS PASSED: ${passed}/6 checks.`);
   } finally {
     if (browser) await browser.close().catch(() => {});
-    nextProc.kill('SIGTERM');
-    mockServer.close();
+    if (nextProc && nextProc.exitCode === null) {
+      await new Promise((resolve) => {
+        let done = false;
+        const finish = () => {
+          if (done) return;
+          done = true;
+          resolve();
+        };
+        const killTimer = setTimeout(() => {
+          try {
+            if (nextProc.exitCode === null) nextProc.kill('SIGKILL');
+          } catch {}
+          finish();
+        }, 1500);
+        nextProc.once('exit', () => {
+          clearTimeout(killTimer);
+          finish();
+        });
+        try {
+          nextProc.kill('SIGTERM');
+        } catch {
+          clearTimeout(killTimer);
+          finish();
+        }
+      });
+    }
+    mockServer.closeAllConnections?.();
+    await new Promise((r) => mockServer.close(r));
+    const globalDispatcher = globalThis[Symbol.for('undici.globalDispatcher.1')];
+    if (globalDispatcher && typeof globalDispatcher.close === 'function') {
+      await globalDispatcher.close().catch(() => {});
+    }
   }
+
+  console.log(`\nALL PAKET 10 FINAL RELEASE AUDIT CHECKS PASSED: ${passed}/6 checks.`);
 })().catch((err) => {
   console.error(err);
   process.exit(1);

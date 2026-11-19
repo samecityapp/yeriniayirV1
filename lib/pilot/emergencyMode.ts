@@ -49,8 +49,73 @@ export function resetEmergencyModeCacheForTests(): void {
   inFlightRuntimeFetch = null;
 }
 
-export function parseEmergencyLevel(raw: unknown): EmergencyLevel {
-  const normalized = String(raw || '').trim().toLowerCase();
+export type ParsedEmergencySetting = EmergencyLevel | 'invalid';
+
+const EMERGENCY_NAMESPACE_RE = /^[a-z0-9:_-]{1,40}$/i;
+
+export function resolveEmergencyModeRedisKey(
+  env: NodeJS.ProcessEnv = process.env
+): string {
+  const ns = (env.EMERGENCY_MODE_REDIS_NAMESPACE || '').trim();
+  if (ns && EMERGENCY_NAMESPACE_RE.test(ns)) {
+    return `ya:${ns}:pilot:emergency_mode`;
+  }
+  return EMERGENCY_MODE_REDIS_KEY;
+}
+
+export function verifyEmergencyRedisIsolation(
+  prodEnv: NodeJS.ProcessEnv,
+  stagingEnv: NodeJS.ProcessEnv
+): { isolated: boolean; reason: string } {
+  const prodCfg = validUpstashConfig(prodEnv);
+  const stagingCfg = validUpstashConfig(stagingEnv);
+  if (prodCfg && stagingCfg) {
+    try {
+      const prodOrigin = new URL(prodCfg.url).origin;
+      const stagingOrigin = new URL(stagingCfg.url).origin;
+      if (prodOrigin !== stagingOrigin) {
+        return { isolated: true, reason: 'distinct-upstash-origin' };
+      }
+    } catch {
+      // Fallback to namespace comparison below
+    }
+  }
+
+  const prodKey = resolveEmergencyModeRedisKey(prodEnv);
+  const stagingKey = resolveEmergencyModeRedisKey(stagingEnv);
+  if (prodKey !== stagingKey) {
+    return { isolated: true, reason: 'distinct-redis-namespace-key' };
+  }
+
+  return { isolated: false, reason: 'shared-upstash-origin-and-redis-key' };
+}
+
+export function parseEmergencyModeSetting(
+  raw: unknown,
+  options?: { emptyIsOff?: boolean }
+): ParsedEmergencySetting {
+  const emptyIsOff = options?.emptyIsOff ?? true;
+  if (raw === undefined || raw === null) {
+    return emptyIsOff ? 'off' : 'invalid';
+  }
+  if (typeof raw === 'boolean') {
+    return raw ? 'shed' : 'off';
+  }
+  if (typeof raw === 'number') {
+    if (!Number.isInteger(raw)) return 'invalid';
+    if (raw === 0) return 'off';
+    if (raw === 1) return 'shed';
+    if (raw === 2) return 'lockdown';
+    return 'invalid';
+  }
+  if (typeof raw !== 'string') {
+    return 'invalid';
+  }
+
+  const normalized = raw.trim().toLowerCase();
+  if (normalized === '') {
+    return emptyIsOff ? 'off' : 'invalid';
+  }
   if (
     normalized === '2' ||
     normalized === 'lockdown' ||
@@ -67,11 +132,26 @@ export function parseEmergencyLevel(raw: unknown): EmergencyLevel {
   ) {
     return 'shed';
   }
-  return 'off';
+  if (
+    normalized === '0' ||
+    normalized === 'false' ||
+    normalized === 'off' ||
+    normalized === 'normal' ||
+    normalized === 'none'
+  ) {
+    return 'off';
+  }
+  return 'invalid';
+}
+
+export function parseEmergencyLevel(raw: unknown): EmergencyLevel {
+  const parsed = parseEmergencyModeSetting(raw, { emptyIsOff: true });
+  return parsed === 'invalid' ? 'shed' : parsed;
 }
 
 export function getEmergencyMode(env: NodeJS.ProcessEnv = process.env): EmergencyLevel {
-  return parseEmergencyLevel(env.TRAFFIC_EMERGENCY_MODE);
+  const parsed = parseEmergencyModeSetting(env.TRAFFIC_EMERGENCY_MODE, { emptyIsOff: true });
+  return parsed === 'invalid' ? 'shed' : parsed;
 }
 
 export function isCoreGastronomyVisitorPath(canonicalPathname: string): boolean {
@@ -312,7 +392,8 @@ export async function resolveRuntimeEmergencyMode(
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), RUNTIME_FETCH_TIMEOUT_MS);
     try {
-      const targetUrl = `${endpoint.url}/get/${encodeURIComponent(EMERGENCY_MODE_REDIS_KEY)}`;
+      const redisKey = resolveEmergencyModeRedisKey(env);
+      const targetUrl = `${endpoint.url}/get/${encodeURIComponent(redisKey)}`;
       const res = await fetch(targetUrl, {
         method: 'GET',
         headers: {
@@ -323,26 +404,86 @@ export async function resolveRuntimeEmergencyMode(
       });
       if (!res.ok) {
         runtimeOutageUntil = Date.now() + cooldownMs;
+        cachedRuntimeMode = null;
         return fallbackLevelDuringOutage('off');
       }
-      const data = (await res.json()) as { result?: unknown };
-      const parsed = parseEmergencyLevel(data?.result);
+
+      let data: unknown;
+      try {
+        data = await res.json();
+      } catch {
+        runtimeOutageUntil = Date.now() + cooldownMs;
+        cachedRuntimeMode = null;
+        if (lastKnownActiveRuntimeMode && Date.now() < lastKnownActiveRuntimeMode.expiresAt) {
+          return fallbackLevelDuringOutage('off');
+        }
+        cachedRuntimeMode = { value: 'shed', expiresAt: Date.now() + cooldownMs };
+        return 'shed';
+      }
+
+      const hasResultKey =
+        Boolean(data) &&
+        typeof data === 'object' &&
+        !Array.isArray(data) &&
+        Object.prototype.hasOwnProperty.call(data, 'result');
+
+      if (!hasResultKey) {
+        runtimeOutageUntil = Date.now() + cooldownMs;
+        cachedRuntimeMode = null;
+        if (lastKnownActiveRuntimeMode && Date.now() < lastKnownActiveRuntimeMode.expiresAt) {
+          return fallbackLevelDuringOutage('off');
+        }
+        cachedRuntimeMode = { value: 'shed', expiresAt: Date.now() + cooldownMs };
+        return 'shed';
+      }
+
+      const rawResult = (data as { result?: unknown }).result;
+      const nowInner = Date.now();
+
+      // Explicit Redis null: uninitialized key normally resolves to 'off', EXCEPT mid-incident!
+      // Only an explicit 'off' / '0' / 'false' immediately clears an active incident before grace expiry.
+      if (rawResult === null || rawResult === undefined) {
+        if (lastKnownActiveRuntimeMode && nowInner < lastKnownActiveRuntimeMode.expiresAt) {
+          runtimeOutageUntil = nowInner + cooldownMs;
+          cachedRuntimeMode = null;
+          return fallbackLevelDuringOutage('off');
+        }
+        cachedRuntimeMode = {
+          value: 'off',
+          expiresAt: nowInner + ttlMs,
+        };
+        runtimeOutageUntil = 0;
+        return 'off';
+      }
+
+      const parsedSetting = parseEmergencyModeSetting(rawResult, { emptyIsOff: false });
+      if (parsedSetting === 'invalid') {
+        runtimeOutageUntil = nowInner + cooldownMs;
+        cachedRuntimeMode = null;
+        if (lastKnownActiveRuntimeMode && nowInner < lastKnownActiveRuntimeMode.expiresAt) {
+          return fallbackLevelDuringOutage('off');
+        }
+        cachedRuntimeMode = { value: 'shed', expiresAt: nowInner + cooldownMs };
+        return 'shed';
+      }
+
       cachedRuntimeMode = {
-        value: parsed,
-        expiresAt: Date.now() + ttlMs,
+        value: parsedSetting,
+        expiresAt: nowInner + ttlMs,
       };
-      if (parsed === 'off') {
+      if (parsedSetting === 'off') {
         lastKnownActiveRuntimeMode = null;
       } else {
         lastKnownActiveRuntimeMode = {
-          value: parsed,
-          expiresAt: Date.now() + graceMs,
+          value: parsedSetting,
+          expiresAt: nowInner + graceMs,
         };
       }
       runtimeOutageUntil = 0;
-      return parsed;
+      return parsedSetting;
     } catch {
       runtimeOutageUntil = Date.now() + cooldownMs;
+      cachedRuntimeMode = null;
       return fallbackLevelDuringOutage('off');
     } finally {
       clearTimeout(timer);

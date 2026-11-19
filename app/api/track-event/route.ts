@@ -1,12 +1,9 @@
 import { NextResponse } from 'next/server';
-import { Ratelimit } from '@upstash/ratelimit';
-import { Redis } from '@upstash/redis';
 import { z } from 'zod';
 import { resolveRuntimeEmergencyMode } from '@/lib/pilot/emergencyMode';
 import {
   buildVisitorClientKey,
-  enforceEdgeMemoryShield,
-  isRateLimitActive,
+  enforceRateLimit,
 } from '@/lib/pilot/rateLimit';
 import { isSupabaseIsolated, supabase } from '@/lib/supabase';
 
@@ -17,8 +14,20 @@ const NO_STORE_HEADERS = {
 const MAX_BODY_BYTES = 2048;
 const MAX_DEDUPE_ENTRIES = 2000;
 const DEDUPE_TTL_MS = 60_000;
-const UPSTASH_TIMEOUT_MS = 1500;
-const DB_TIMEOUT_MS = 4000;
+const DB_TIMEOUT_MS = 2500;
+
+function safeAnalyticsErrorMeta(err: unknown): { name: string; code?: string } {
+  if (!err || typeof err !== 'object') {
+    return { name: 'UnknownError' };
+  }
+  const rawName = 'name' in err && typeof err.name === 'string' ? err.name : 'Error';
+  const name = /^[A-Za-z0-9_.-]{1,64}$/.test(rawName) ? rawName : 'Error';
+  const rawCode = 'code' in err && (typeof err.code === 'string' || typeof err.code === 'number')
+    ? String(err.code)
+    : '';
+  const code = /^[A-Za-z0-9_.-]{1,32}$/.test(rawCode) ? rawCode : undefined;
+  return code ? { name, code } : { name };
+}
 
 const eventSchema = z
   .object({
@@ -46,42 +55,6 @@ const eventSchema = z
       });
     }
   });
-
-let cachedLimiterSignature: string | null = null;
-let cachedRateLimiter: Ratelimit | null = null;
-
-function getRateLimiter(): Ratelimit | null {
-  const url = process.env.UPSTASH_REDIS_REST_URL?.trim() || '';
-  const token = process.env.UPSTASH_REDIS_REST_TOKEN?.trim() || '';
-  if (!url || !token) {
-    return null;
-  }
-
-  let parsed: URL;
-  try {
-    parsed = new URL(url);
-  } catch {
-    return null;
-  }
-  if (parsed.protocol !== 'https:' && parsed.protocol !== 'http:') {
-    return null;
-  }
-
-  const signature = `${url}|${token}`;
-  if (cachedLimiterSignature === signature && cachedRateLimiter) {
-    return cachedRateLimiter;
-  }
-
-  const redis = new Redis({ url, token });
-  cachedRateLimiter = new Ratelimit({
-    redis,
-    limiter: Ratelimit.slidingWindow(10, '10 s'),
-    analytics: false,
-    prefix: '@upstash/ratelimit/api/track-event',
-  });
-  cachedLimiterSignature = signature;
-  return cachedRateLimiter;
-}
 
 const recentViewEvents = new Map<string, number>();
 
@@ -168,9 +141,13 @@ export async function POST(request: Request) {
       );
     }
 
-    if (isSupabaseIsolated || process.env.ANALYTICS_DB_ENABLED === '0') {
+    if (
+      isSupabaseIsolated ||
+      process.env.ANALYTICS_DB_ENABLED === '0' ||
+      process.env.NEXT_PUBLIC_DISABLE_ANALYTICS === '1'
+    ) {
       return NextResponse.json(
-        { success: true, recorded: false },
+        { ok: true, success: true, recorded: false },
         { status: 202, headers: NO_STORE_HEADERS }
       );
     }
@@ -190,72 +167,67 @@ export async function POST(request: Request) {
       const existingExpiry = recentViewEvents.get(dedupeKey);
       if (existingExpiry && existingExpiry > now) {
         return NextResponse.json(
-          { success: true, deduplicated: true },
+          { ok: true, success: true, deduplicated: true },
           { status: 200, headers: NO_STORE_HEADERS }
         );
       }
     }
 
-    let rlHeaders: Record<string, string> = {};
-    if (isRateLimitActive()) {
-      // Layer 1 memory shield blocks CGNAT-safe / IP floods BEFORE billing Upstash.
-      const shield = await enforceEdgeMemoryShield(request.headers, 'visitor_analytics', {
-        scope: 'api',
-      });
-      rlHeaders = shield.headers;
-      if (!shield.ok) {
-        return NextResponse.json(
-          { error: 'Too Many Requests' },
-          { status: 429, headers: { ...NO_STORE_HEADERS, ...shield.headers } }
-        );
-      }
-
-      const limiter = getRateLimiter();
-      if (limiter) {
-        try {
-          const remote = await withTimeout(
-            limiter.limit(visitorKey),
-            UPSTASH_TIMEOUT_MS,
-            'Analytics Upstash timeout'
-          );
-          if (!remote.success) {
-            return NextResponse.json(
-              { error: 'Too Many Requests' },
-              {
-                status: 429,
-                headers: {
-                  ...NO_STORE_HEADERS,
-                  'Retry-After': '10',
-                  'X-RateLimit-Policy': 'upstash',
-                },
-              }
-            );
-          }
-        } catch (rateError) {
-          // Layer 1 memory shield remains enforced; never unlimited.
-          console.warn('Analytics ratelimit fail-open:', rateError);
-        }
-      }
+    const rl = await enforceRateLimit(request.headers, 'visitor_analytics', { scope: 'api' });
+    const rlHeaders: Record<string, string> = {
+      ...rl.headers,
+      ...(rl.setCookieHeader ? { 'Set-Cookie': rl.setCookieHeader } : {}),
+    };
+    if (!rl.ok) {
+      return NextResponse.json(
+        { error: 'Too many requests' },
+        { status: 429, headers: { ...NO_STORE_HEADERS, ...rlHeaders } }
+      );
     }
 
-    const { error } = await withTimeout(
-      supabase.from('analytics_events').insert({
+    if (rl.policy === 'emergency-fallback' || rl.policy === 'outage-blocked') {
+      console.warn('[Analytics] Dropped event during rate-limit degradation');
+      return NextResponse.json(
+        { ok: true, success: true, recorded: false },
+        { status: 202, headers: { ...NO_STORE_HEADERS, ...rlHeaders } }
+      );
+    }
+
+    const dbController = new AbortController();
+    let dbAbortTimer: ReturnType<typeof setTimeout> | undefined;
+    try {
+      dbAbortTimer = setTimeout(() => dbController.abort(), DB_TIMEOUT_MS);
+      const baseInsert = supabase.from('analytics_events').insert({
         hotel_id: hotel_id ?? null,
         event_type,
         device_type: device_type || 'unknown',
         metadata: safeMetadata,
-      }),
-      DB_TIMEOUT_MS,
-      'Analytics DB insert timeout'
-    );
+      });
+      const abortableInsert =
+        baseInsert &&
+        typeof (baseInsert as { abortSignal?: (s: AbortSignal) => typeof baseInsert }).abortSignal ===
+          'function'
+          ? (baseInsert as unknown as { abortSignal: (s: AbortSignal) => PromiseLike<{ error: unknown }> }).abortSignal(
+              dbController.signal
+            )
+          : baseInsert;
 
-    if (error) {
-      // Do not emit HTTP 500 to visitors when analytics writes are blocked (e.g., RLS hold)
-      console.warn('Analytics insert degraded:', error.code || error.message);
-      return NextResponse.json(
-        { success: true, recorded: false },
-        { status: 202, headers: { ...NO_STORE_HEADERS, ...rlHeaders } }
+      const { error } = await withTimeout(
+        abortableInsert as PromiseLike<{ error: unknown }>,
+        DB_TIMEOUT_MS,
+        'Analytics DB insert timeout'
       );
+
+      if (error) {
+        // Do not emit HTTP 500 to visitors when analytics writes are blocked (e.g., RLS hold)
+        console.warn('[Analytics] Insert degraded:', JSON.stringify(safeAnalyticsErrorMeta(error)));
+        return NextResponse.json(
+          { ok: true, success: true, recorded: false },
+          { status: 202, headers: { ...NO_STORE_HEADERS, ...rlHeaders } }
+        );
+      }
+    } finally {
+      if (dbAbortTimer) clearTimeout(dbAbortTimer);
     }
 
     if (dedupeKey) {
@@ -263,13 +235,13 @@ export async function POST(request: Request) {
     }
 
     return NextResponse.json(
-      { success: true, recorded: true },
+      { ok: true, success: true, recorded: true },
       { status: 200, headers: { ...NO_STORE_HEADERS, ...rlHeaders } }
     );
   } catch (error) {
-    console.warn('Analytics route degraded cleanly:', error);
+    console.warn('[Analytics] Route degraded cleanly:', JSON.stringify(safeAnalyticsErrorMeta(error)));
     return NextResponse.json(
-      { success: true, recorded: false },
+      { ok: true, success: true, recorded: false },
       { status: 202, headers: NO_STORE_HEADERS }
     );
   }

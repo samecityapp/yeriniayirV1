@@ -543,7 +543,10 @@ function buildMockHotels(total) {
   const mockOrigin = `http://127.0.0.1:${mockBackendPort}`;
 
   try {
-    const buildEnv = { ...cleanChildEnv };
+    const buildEnv = {
+      ...cleanChildEnv,
+      NEXT_DISABLE_WEBPACK_CACHE: '1',
+    };
     delete buildEnv.NODE_OPTIONS;
     await new Promise((resolve, reject) => {
       const b = spawn(process.execPath, ['node_modules/next/dist/bin/next', 'build'], {
@@ -890,11 +893,43 @@ function buildMockHotels(total) {
       assert.equal(recoveredSearch.status, 200);
     });
   } finally {
-    if (browser) await browser.close();
-    if (liveNext) liveNext.kill('SIGTERM');
+    if (browser) await browser.close().catch(() => {});
+    if (liveNext && liveNext.exitCode === null) {
+      await new Promise((resolve) => {
+        let done = false;
+        const finish = () => {
+          if (done) return;
+          done = true;
+          resolve();
+        };
+        const killTimer = setTimeout(() => {
+          try {
+            if (liveNext.exitCode === null) liveNext.kill('SIGKILL');
+          } catch {}
+          finish();
+        }, 1500);
+        liveNext.once('exit', () => {
+          clearTimeout(killTimer);
+          finish();
+        });
+        try {
+          liveNext.kill('SIGTERM');
+        } catch {
+          clearTimeout(killTimer);
+          finish();
+        }
+      });
+    }
+    proxyServer.closeAllConnections?.();
+    mockBackendServer.closeAllConnections?.();
     await new Promise((r) => proxyServer.close(r));
     await new Promise((r) => mockBackendServer.close(r));
+    const globalDispatcher = globalThis[Symbol.for('undici.globalDispatcher.1')];
+    if (globalDispatcher && typeof globalDispatcher.close === 'function') {
+      await globalDispatcher.close().catch(() => {});
+    }
     fs.rmSync(path.join(root, tempDistDir), { recursive: true, force: true });
+    fs.rmSync(path.join(root, '.next/cache'), { recursive: true, force: true });
     if (savedTsconfig !== null) {
       fs.writeFileSync(tsconfigPath, savedTsconfig);
     }

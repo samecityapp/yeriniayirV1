@@ -1,7 +1,12 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { supabase } from '@/lib/supabase';
+import {
+  deleteAdminRestaurantAction,
+  listAdminRestaurantCategoriesAction,
+  listAdminRestaurantsAction,
+  saveAdminRestaurantAction,
+} from '../legacyAdminActions';
 import { Restaurant, RestaurantCategory, RestaurantNote } from '@/lib/types';
 import { Plus, Edit, Trash2, Save, X } from 'lucide-react';
 import { turkeyLocations } from '@/data/turkeyLocations';
@@ -39,15 +44,11 @@ export default function RestaurantsAdminPage() {
 
   async function fetchCategories() {
     try {
-      const { data, error } = await supabase
-        .from('restaurant_categories')
-        .select('*')
-        .order('display_order');
-
-      if (error) throw error;
-      setCategories(data || []);
-      if (data && data.length > 0) {
-        setSelectedCategory(data[0].id);
+      const res = await listAdminRestaurantCategoriesAction();
+      if (!res.ok) throw new Error(res.error);
+      setCategories(res.data || []);
+      if (res.data && res.data.length > 0) {
+        setSelectedCategory(res.data[0].id);
       }
     } catch (error) {
       console.error('Error fetching categories:', error);
@@ -57,17 +58,9 @@ export default function RestaurantsAdminPage() {
   async function fetchRestaurants() {
     try {
       setLoading(true);
-      const { data, error } = await supabase
-        .from('restaurants')
-        .select(`
-          *,
-          notes:restaurant_notes(*)
-        `)
-        .eq('location', selectedLocation)
-        .order('display_order');
-
-      if (error) throw error;
-      setRestaurants(data || []);
+      const res = await listAdminRestaurantsAction(selectedLocation);
+      if (!res.ok) throw new Error(res.error);
+      setRestaurants(res.data || []);
     } catch (error) {
       console.error('Error fetching restaurants:', error);
     } finally {
@@ -82,54 +75,23 @@ export default function RestaurantsAdminPage() {
         return;
       }
 
-      const restaurantData = {
+      const res = await saveAdminRestaurantAction({
+        ...(editingRestaurant?.id ? { id: editingRestaurant.id } : {}),
         category_id: selectedCategory,
         location: selectedLocation,
         name: formData.name,
         image_url: formData.image_url,
         description: formData.description,
-        google_rating: formData.google_rating,
+        google_rating: Number(formData.google_rating) || 0,
         review_count: formData.review_count,
         order_suggestion: formData.order_suggestion,
-        display_order: formData.display_order
-      };
+        display_order: Number(formData.display_order) || 0,
+        notes: formData.notes,
+      });
 
-      let restaurantId: string;
-
-      if (editingRestaurant) {
-        const { error } = await supabase
-          .from('restaurants')
-          .update(restaurantData)
-          .eq('id', editingRestaurant.id);
-
-        if (error) throw error;
-        restaurantId = editingRestaurant.id!;
-
-        await supabase
-          .from('restaurant_notes')
-          .delete()
-          .eq('restaurant_id', restaurantId);
-      } else {
-        const { data, error } = await supabase
-          .from('restaurants')
-          .insert([restaurantData])
-          .select()
-          .single();
-
-        if (error) throw error;
-        restaurantId = data.id;
-      }
-
-      for (let i = 0; i < formData.notes.length; i++) {
-        const note = formData.notes[i];
-        await supabase
-          .from('restaurant_notes')
-          .insert([{
-            restaurant_id: restaurantId,
-            emoji: note.emoji,
-            text: note.text,
-            display_order: i
-          }]);
+      if (!res.ok) {
+        alert(res.error || 'Kayıt sırasında hata oluştu');
+        return;
       }
 
       resetForm();
@@ -144,12 +106,11 @@ export default function RestaurantsAdminPage() {
     if (!confirm('Bu restoranı silmek istediğinize emin misiniz?')) return;
 
     try {
-      const { error } = await supabase
-        .from('restaurants')
-        .delete()
-        .eq('id', id);
-
-      if (error) throw error;
+      const res = await deleteAdminRestaurantAction(id);
+      if (!res.ok) {
+        alert(res.error || 'Silme işlemi başarısız');
+        return;
+      }
       fetchRestaurants();
     } catch (error) {
       console.error('Error deleting restaurant:', error);

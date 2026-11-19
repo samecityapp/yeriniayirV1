@@ -1,5 +1,6 @@
 import { Hotel } from './types';
 import { getLocalizedText } from './localization';
+import { buildHotelPublicUrl } from './hotelSeo';
 import { absoluteUrl } from './utils';
 
 export function generateHotelSchema(hotel: Hotel, lang: string = 'tr') {
@@ -10,13 +11,7 @@ export function generateHotelSchema(hotel: Hotel, lang: string = 'tr') {
 
   const [city, country] = location.split(',').map(s => s.trim());
 
-  // Determine standard path. TR -> /otel/, EN -> /hotel/ (per rewritten logic)
-  // But strictly internal ID should match the canonical URL.
-  // absoluteUrl handles domain. We just need to give it the correct path prefix relative to lang.
-  // TR: /otel/slug
-  // EN: /hotel/slug
-  const pathPrefix = lang === 'en' ? 'hotel' : 'otel';
-  const url = absoluteUrl(`/${pathPrefix}/${hotel.slug || hotel.id}`, lang);
+  const url = buildHotelPublicUrl(hotel, lang);
 
   const schema: Record<string, any> = {
     '@context': 'https://schema.org',

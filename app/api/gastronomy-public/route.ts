@@ -25,10 +25,15 @@ export async function GET(request: Request) {
     }
 
     const rl = await enforceRateLimit(request.headers, 'visitor_public', { scope: 'api' });
+    const rlHeaders: Record<string, string> = {
+      ...BASE_HEADERS,
+      ...rl.headers,
+      ...(rl.setCookieHeader ? { 'Set-Cookie': rl.setCookieHeader } : {}),
+    };
     if (!rl.ok) {
       return Response.json(
         { error: 'Çok fazla istek gönderildi.' },
-        { status: rl.status, headers: { ...BASE_HEADERS, ...rl.headers } }
+        { status: rl.status, headers: rlHeaders }
       );
     }
 
@@ -36,7 +41,7 @@ export async function GET(request: Request) {
     // Server/Data Cache handles query reduction; browser/CDN must not extend evidence expiry.
     return Response.json(data, {
       status: data ? 200 : 404,
-      headers: { ...BASE_HEADERS, ...rl.headers },
+      headers: rlHeaders,
     });
   } catch {
     return Response.json(

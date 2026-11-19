@@ -397,6 +397,34 @@ async function startNextServer({ port, cwd, env }) {
   });
 }
 
+async function stopChildProcess(proc) {
+  if (!proc || proc.exitCode !== null) return;
+  await new Promise((resolve) => {
+    let settled = false;
+    const finish = () => {
+      if (settled) return;
+      settled = true;
+      resolve();
+    };
+    const killTimer = setTimeout(() => {
+      try {
+        if (proc.exitCode === null) proc.kill('SIGKILL');
+      } catch {}
+      finish();
+    }, 1500);
+    proc.once('exit', () => {
+      clearTimeout(killTimer);
+      finish();
+    });
+    try {
+      proc.kill('SIGTERM');
+    } catch {
+      clearTimeout(killTimer);
+      finish();
+    }
+  });
+}
+
 function clearPolicyEnv() {
   for (const k of Object.keys(process.env)) {
     if (/^(VERCEL|NEXT_PUBLIC_|APP_ENVIRONMENT|GASTRONOMY_|SUPABASE_|NODE_ENV|ADMIN_|ALLOW_DEMO_OFFER_FALLBACK)/.test(k)) {
@@ -949,7 +977,7 @@ async function run() {
         });
         assert.equal(postRetired.status, 401);
       } finally {
-        stagingSrv.kill('SIGTERM');
+        await stopChildProcess(stagingSrv);
       }
     });
 
@@ -961,6 +989,7 @@ async function run() {
         ...savedEnv,
         NODE_ENV: 'production',
         NEXT_DIST_DIR: tempDistDir,
+        NEXT_DISABLE_WEBPACK_CACHE: '1',
         APP_ENVIRONMENT: 'test',
         GASTRONOMY_AUTH_MODE: 'supabase',
         GASTRONOMY_CLOUD_ENV: 'local',
@@ -1271,21 +1300,23 @@ async function run() {
         await assertOfferNotFound(`${base}/el/canli-teklif-2`, 'Deleted EL slug');
         await assertOfferNotFound(`${base}/tr/luvicavehotel-teklif`, 'Zombie luvicavehotel-teklif fallback');
       } finally {
-        srv.kill('SIGTERM');
+        await stopChildProcess(srv);
       }
     });
-
-    console.log(`\nALL P0 SECURITY FIX VERIFICATION CHECKS PASSED: ${passed} checks.`);
   } finally {
     global.fetch = REAL_FETCH;
     clearPolicyEnv();
     Object.assign(process.env, savedEnv);
     fs.rmSync(path.join(root, tempDistDir), { recursive: true, force: true });
+    fs.rmSync(path.join(root, '.next/cache'), { recursive: true, force: true });
     if (savedTsconfig !== null) {
       fs.writeFileSync(tsconfigPath, savedTsconfig);
     }
+    mockServer.closeAllConnections?.();
     await new Promise((resolve) => mockServer.close(resolve));
   }
+
+  console.log(`\nALL P0 SECURITY FIX VERIFICATION CHECKS PASSED: ${passed} checks.`);
 }
 
 run().catch((err) => {

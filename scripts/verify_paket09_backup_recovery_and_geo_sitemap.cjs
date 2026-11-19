@@ -436,7 +436,7 @@ function parseSitemapEntries(xml) {
     // -------------------------------------------------------------------------
     // SCENARIO 4 + ASAMA 4: Bad app deployment & Local Isolated Rollback Drill
     // -------------------------------------------------------------------------
-    await check('4. Scenario 4 (Bad release + Local Rollback Drill): auto-detect 500 on broken backend and roll back to healthy build < 1s', async () => {
+    await check('4. Scenario 4 (Bad release + Local Upstream Switchover Simulation): auto-detect 500 on broken backend and switch upstream port to healthy build < 1s (local port simulation, not Vercel Edge alias rollback)', async () => {
       const badPort = await getFreePort();
       const badServer = http.createServer((_req, res) => {
         res.writeHead(500, { 'Content-Type': 'text/plain' });
@@ -488,6 +488,8 @@ function parseSitemapEntries(xml) {
         assert.ok(body.includes('GG Pizza Moda') && body.includes('maps.google.com/?cid='));
         assert.ok(rollbackDurationMs < 2000, `Expected instant pointer rollback < 2s, got ${rollbackDurationMs} ms`);
       } finally {
+        routerProxy.closeAllConnections?.();
+        badServer.closeAllConnections?.();
         await new Promise((r) => routerProxy.close(r));
         await new Promise((r) => badServer.close(r));
       }
@@ -664,10 +666,10 @@ function parseSitemapEntries(xml) {
       await assert.rejects(() => pubMod.readCloudPublication('moda/kahve'));
       supabaseMode = 'empty';
 
-      // 7C: Migration inventory check (71 applied + 5 proposed)
+      // 7C: Migration inventory check (72 applied + 5 proposed)
       const migs = fs.readdirSync(path.join(ROOT, 'supabase/migrations')).filter((f) => f.endsWith('.sql'));
       const proposed = fs.readdirSync(path.join(ROOT, 'supabase/proposed')).filter((f) => f.endsWith('.sql'));
-      assert.equal(migs.length, 71);
+      assert.equal(migs.length, 72);
       assert.equal(proposed.length, 5);
     });
 
@@ -851,7 +853,12 @@ function parseSitemapEntries(xml) {
     });
   } finally {
     await stopChild(nextProc);
+    mockServer.closeAllConnections?.();
     await new Promise((r) => mockServer.close(r));
+    const globalDispatcher = globalThis[Symbol.for('undici.globalDispatcher.1')];
+    if (globalDispatcher && typeof globalDispatcher.close === 'function') {
+      await globalDispatcher.close().catch(() => {});
+    }
   }
 
   console.log(`\nPASS Paket 09 backup, disaster recovery, rollback & 100% sitemap GEO verification: ${passed}/${passed} checks passed!`);

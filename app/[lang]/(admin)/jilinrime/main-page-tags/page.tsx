@@ -1,7 +1,13 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { supabase } from '@/lib/supabase';
+import {
+  createAdminPriceTagAction,
+  listAdminPriceTagsAction,
+  listAdminTagsAction,
+  softDeleteAdminPriceTagAction,
+  toggleAdminTagFeaturedAction,
+} from '../legacyAdminActions';
 import { Tag, PriceTag } from '@/lib/types';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -20,20 +26,15 @@ export default function MainPageTagsPage() {
   const loadData = async () => {
     setIsLoading(true);
     try {
-      const { data: tagsData } = await supabase
-        .from('tags')
-        .select('*')
-        .is('deleted_at', null)
-        .order('name', { ascending: true });
-
-      const { data: priceTagsData } = await supabase
-        .from('price_tags')
-        .select('*')
-        .is('deleted_at', null)
-        .order('min_price', { ascending: true });
+      const [tagsRes, priceTagsRes] = await Promise.all([
+        listAdminTagsAction(),
+        listAdminPriceTagsAction(),
+      ]);
+      const tagsData = tagsRes.ok ? tagsRes.data : [];
+      const priceTagsData = priceTagsRes.ok ? priceTagsRes.data : [];
 
       if (tagsData) {
-        setAllTags(tagsData.map(t => ({
+        setAllTags(tagsData.map((t: any) => ({
           id: t.id,
           name: t.name,
           slug: t.slug,
@@ -43,7 +44,7 @@ export default function MainPageTagsPage() {
       }
 
       if (priceTagsData) {
-        setPriceTags(priceTagsData.map(p => ({
+        setPriceTags(priceTagsData.map((p: any) => ({
           id: p.id,
           label: p.label,
           slug: p.slug,
@@ -64,12 +65,8 @@ export default function MainPageTagsPage() {
 
   const handleFeatureToggle = async (tagId: string, isFeatured: boolean) => {
     try {
-      const { error } = await supabase
-        .from('tags')
-        .update({ is_featured: isFeatured })
-        .eq('id', tagId);
-
-      if (error) throw error;
+      const res = await toggleAdminTagFeaturedAction(tagId, isFeatured);
+      if (!res.ok) throw new Error(res.error);
       loadData();
     } catch (error) {
       console.error('Error updating tag:', error);
@@ -95,16 +92,14 @@ export default function MainPageTagsPage() {
         .replace(/[^a-z0-9]+/g, '-')
         .replace(/^-|-$/g, '');
 
-      const { error } = await supabase
-        .from('price_tags')
-        .insert([{
-          label: newPriceTag.label,
-          slug: slug,
-          min_price: newPriceTag.minPrice,
-          max_price: newPriceTag.maxPrice
-        }]);
+      const res = await createAdminPriceTagAction({
+        label: newPriceTag.label,
+        slug,
+        min_price: newPriceTag.minPrice,
+        max_price: newPriceTag.maxPrice,
+      });
 
-      if (error) throw error;
+      if (!res.ok) throw new Error(res.error);
       setNewPriceTag({ label: '', minPrice: 0, maxPrice: 0 });
       loadData();
     } catch (error) {
@@ -117,12 +112,8 @@ export default function MainPageTagsPage() {
     if (!confirm('Bu fiyat aralığını silmek istediğinizden emin misiniz?')) return;
 
     try {
-      const { error } = await supabase
-        .from('price_tags')
-        .update({ deleted_at: new Date().toISOString() })
-        .eq('id', id);
-
-      if (error) throw error;
+      const res = await softDeleteAdminPriceTagAction(id);
+      if (!res.ok) throw new Error(res.error);
       loadData();
     } catch (error) {
       console.error('Error deleting price tag:', error);
