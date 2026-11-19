@@ -429,7 +429,7 @@ async function applicationMiddleware(
     return isJilinrime ? applyJilinrimeHeaders(res, jilinrimeAuthMode) : res;
   }
 
-  const translateEnGeoInternalPath = (p: string): string | null => {
+  const translateEnPublicInternalPath = (p: string): string | null => {
     if (p === '/gastronomy' || p === '/en/gastronomy') {
       return '/en/gastronomi';
     }
@@ -439,27 +439,60 @@ async function applicationMiddleware(
     if (p.startsWith('/en/gastronomy/')) {
       return `/en/gastronomi${p.slice('/en/gastronomy'.length).replace(/^\/venue\//, '/mekan/')}`;
     }
+    if (p === '/guide' || p === '/en/guide') {
+      return '/en/rehber';
+    }
+    if (p.startsWith('/guide/')) {
+      return `/en/rehber${p.slice('/guide'.length)}`;
+    }
+    if (p.startsWith('/en/guide/')) {
+      return `/en/rehber${p.slice('/en/guide'.length)}`;
+    }
+    if (p.startsWith('/hotel/')) {
+      return `/en/otel${p.slice('/hotel'.length)}`;
+    }
+    if (p.startsWith('/en/hotel/')) {
+      return `/en/otel${p.slice('/en/hotel'.length)}`;
+    }
     return null;
   };
 
-  const toPublicEnglishGeoPath = (p: string): string | null => {
+  const toPublicEnglishPath = (p: string): string | null => {
     const bare = p.replace(/^\/(?:en|tr)/, '');
     if (bare === '/gastronomi') return '/gastronomy';
     if (bare.startsWith('/gastronomi/')) {
       return `/gastronomy${bare.slice('/gastronomi'.length).replace(/^\/mekan\//, '/venue/')}`;
     }
+    if (bare === '/rehber') return '/guide';
+    if (bare.startsWith('/rehber/')) {
+      return `/guide${bare.slice('/rehber'.length)}`;
+    }
+    if (bare.startsWith('/otel/')) {
+      return `/hotel${bare.slice('/otel'.length)}`;
+    }
     return null;
   };
 
-  const DOMAIN_TR = 'yeriniayir.com';
-  const DOMAIN_EN = 'worldandhotels.com';
+  const NOINDEX_PUBLIC_PATH_RE =
+    /(?:^|\/)(?:design-demo|preview-food-card|fethiye-yemek-rehberi|search|hoteloffer[1-4]?)(?:$|\/|\.)/i;
+  const withRobotsHeader = (response: NextResponse): NextResponse => {
+    if (NOINDEX_PUBLIC_PATH_RE.test(pathname)) {
+      response.headers.set('X-Robots-Tag', 'noindex, nofollow');
+    }
+    return response;
+  };
+
+  const DOMAIN_TR = 'www.yeriniayir.com';
+  const DOMAIN_EN = 'www.worldandhotels.com';
+  const hostOnly = (hostname.split(':')[0] || '').toLowerCase();
   const isDev =
-    hostname.includes('localhost') ||
-    hostname.startsWith('127.0.0.1') ||
-    hostname.endsWith('.vercel.app') ||
+    hostOnly === 'localhost' ||
+    hostOnly.startsWith('127.0.0.1') ||
+    hostOnly.endsWith('.vercel.app') ||
     process.env.APP_ENVIRONMENT === 'staging' ||
     process.env.VERCEL_ENV === 'preview';
-  const isEnglishDomain = hostname === DOMAIN_EN || hostname === `www.${DOMAIN_EN}`;
+  const isEnglishDomain =
+    hostOnly === 'worldandhotels.com' || hostOnly === 'www.worldandhotels.com';
 
   const pathnameIsMissingLocale = locales.every(
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
@@ -468,42 +501,62 @@ async function applicationMiddleware(
 
   if (isEnglishDomain) {
     if (urlLocale === 'tr') {
-      return NextResponse.redirect(new URL(pathname, `https://${DOMAIN_TR}`));
+      const targetTr = pathname === '/tr' ? '/' : pathname.slice('/tr'.length) || '/';
+      return NextResponse.redirect(new URL(targetTr, `https://${DOMAIN_TR}`), 308);
     }
-    const enGeoPublic = toPublicEnglishGeoPath(pathname);
-    if (enGeoPublic && (pathname === '/gastronomi' || pathname.startsWith('/gastronomi/'))) {
-      return NextResponse.redirect(new URL(enGeoPublic, `https://${DOMAIN_EN}`), 308);
+    const enPublic = toPublicEnglishPath(pathname);
+    if (
+      enPublic &&
+      (pathname === '/gastronomi' ||
+        pathname.startsWith('/gastronomi/') ||
+        pathname === '/rehber' ||
+        pathname.startsWith('/rehber/') ||
+        pathname.startsWith('/otel/'))
+    ) {
+      return NextResponse.redirect(new URL(enPublic, `https://${DOMAIN_EN}`), 308);
     }
-    const enGeoInternal = translateEnGeoInternalPath(pathname);
-    if (enGeoInternal) {
-      const res = NextResponse.rewrite(new URL(enGeoInternal, request.url));
+    const enPublicInternal = translateEnPublicInternalPath(pathname);
+    if (enPublicInternal) {
+      const res = withRobotsHeader(NextResponse.rewrite(new URL(enPublicInternal, request.url)));
       return isJilinrime ? applyJilinrimeHeaders(res, jilinrimeAuthMode) : res;
     }
     if (pathnameIsMissingLocale) {
-      const res = NextResponse.rewrite(new URL(`/en${pathname === '/' ? '' : pathname}`, request.url));
+      const res = withRobotsHeader(
+        NextResponse.rewrite(new URL(`/en${pathname === '/' ? '' : pathname}`, request.url))
+      );
       return isJilinrime ? applyJilinrimeHeaders(res, jilinrimeAuthMode) : res;
     }
   } else {
     if (urlLocale === 'en' && !isDev) {
-      const enGeoPublic = toPublicEnglishGeoPath(pathname);
-      const targetPath = enGeoPublic || pathname;
-      return NextResponse.redirect(new URL(targetPath, `https://${DOMAIN_EN}`));
+      const enPublic = toPublicEnglishPath(pathname);
+      const targetPath =
+        enPublic || (pathname === '/en' ? '/' : pathname.slice('/en'.length) || '/');
+      return NextResponse.redirect(new URL(targetPath, `https://${DOMAIN_EN}`), 308);
     }
-    if (!isDev && (pathname === '/gastronomy' || pathname.startsWith('/gastronomy/'))) {
+    if (
+      !isDev &&
+      (pathname === '/gastronomy' ||
+        pathname.startsWith('/gastronomy/') ||
+        pathname === '/guide' ||
+        pathname.startsWith('/guide/') ||
+        pathname.startsWith('/hotel/'))
+    ) {
       return NextResponse.redirect(new URL(pathname, `https://${DOMAIN_EN}`), 308);
     }
-    const enGeoInternal = translateEnGeoInternalPath(pathname);
-    if (enGeoInternal) {
-      const res = NextResponse.rewrite(new URL(enGeoInternal, request.url));
+    const enPublicInternal = translateEnPublicInternalPath(pathname);
+    if (enPublicInternal) {
+      const res = withRobotsHeader(NextResponse.rewrite(new URL(enPublicInternal, request.url)));
       return isJilinrime ? applyJilinrimeHeaders(res, jilinrimeAuthMode) : res;
     }
     if (pathnameIsMissingLocale) {
-      const res = NextResponse.rewrite(new URL(`/tr${pathname === '/' ? '' : pathname}`, request.url));
+      const res = withRobotsHeader(
+        NextResponse.rewrite(new URL(`/tr${pathname === '/' ? '' : pathname}`, request.url))
+      );
       return isJilinrime ? applyJilinrimeHeaders(res, jilinrimeAuthMode) : res;
     }
   }
 
-  const res = NextResponse.next();
+  const res = withRobotsHeader(NextResponse.next());
   return isJilinrime ? applyJilinrimeHeaders(res, jilinrimeAuthMode) : res;
 }
 

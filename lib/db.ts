@@ -6,7 +6,7 @@ import { doesArticleSupportLang } from '@/lib/localization';
 import { DEMO_HOTELS, DEMO_HOTEL_GROUPS, DEMO_TAGS, getDemoHotelById } from './demoHotels';
 
 const UUID_REGEX = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
-const ARTICLE_SLUG_REGEX = /^[a-z0-9-]{1,120}$/i;
+const ARTICLE_SLUG_REGEX = /^[\p{L}\p{N}-]{1,140}$/u;
 
 export const db = {
   hotels: {
@@ -825,7 +825,18 @@ export const db = {
     },
 
     async getBySlug(slug: string) {
-      if (!slug || typeof slug !== 'string' || !ARTICLE_SLUG_REGEX.test(slug)) {
+      if (!slug || typeof slug !== 'string') {
+        return null;
+      }
+      let normalizedSlug = slug;
+      if (normalizedSlug.includes('%')) {
+        try {
+          normalizedSlug = decodeURIComponent(normalizedSlug);
+        } catch {
+          return null;
+        }
+      }
+      if (!ARTICLE_SLUG_REGEX.test(normalizedSlug)) {
         return null;
       }
 
@@ -834,7 +845,7 @@ export const db = {
           const { data, error } = await supabase
             .from('articles')
             .select('*')
-            .or(`slug.eq.${slug},slug_en.eq.${slug}`)
+            .or(`slug.eq.${normalizedSlug},slug_en.eq.${normalizedSlug}`)
             .maybeSingle();
 
           if (error) throw error;
@@ -845,10 +856,14 @@ export const db = {
       }
 
       // Fallback: search in fallbackArticles and mockArticles
-      const fallbackResult = fallbackArticles.find((a: any) => a.slug === slug);
+      const fallbackResult = fallbackArticles.find(
+        (a: any) => a.slug === normalizedSlug || a.slug_en === normalizedSlug
+      );
       if (fallbackResult) return fallbackResult;
 
-      const mockResult = mockArticles.find((a: any) => a.slug === slug);
+      const mockResult = mockArticles.find(
+        (a: any) => a.slug === normalizedSlug || (a as any).slug_en === normalizedSlug
+      );
       if (mockResult) return mockResult;
 
       return null;

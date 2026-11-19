@@ -29,14 +29,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified: new Date(),
     changeFrequency: 'daily',
     priority: 1.0,
-    alternates: { languages: { 'tr-TR': TR_SITE_ORIGIN, en: EN_SITE_ORIGIN } },
+    alternates: { languages: { 'tr-TR': TR_SITE_ORIGIN, en: EN_SITE_ORIGIN, 'x-default': TR_SITE_ORIGIN } },
   });
   pushEntry({
     url: EN_SITE_ORIGIN,
     lastModified: new Date(),
     changeFrequency: 'daily',
     priority: 1.0,
-    alternates: { languages: { 'tr-TR': TR_SITE_ORIGIN, en: EN_SITE_ORIGIN } },
+    alternates: { languages: { 'tr-TR': TR_SITE_ORIGIN, en: EN_SITE_ORIGIN, 'x-default': TR_SITE_ORIGIN } },
   });
 
   for (const lang of ['tr', 'en'] as const) {
@@ -178,21 +178,72 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
   }
 
+  pushEntry({
+    url: `${TR_SITE_ORIGIN}/rehber`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
+    priority: 0.8,
+    alternates: {
+      languages: {
+        'tr-TR': `${TR_SITE_ORIGIN}/rehber`,
+        en: `${EN_SITE_ORIGIN}/guide`,
+        'x-default': `${TR_SITE_ORIGIN}/rehber`,
+      },
+    },
+  });
+  pushEntry({
+    url: `${EN_SITE_ORIGIN}/guide`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
+    priority: 0.8,
+    alternates: {
+      languages: {
+        'tr-TR': `${TR_SITE_ORIGIN}/rehber`,
+        en: `${EN_SITE_ORIGIN}/guide`,
+        'x-default': `${TR_SITE_ORIGIN}/rehber`,
+      },
+    },
+  });
+
   try {
-    const articles = await db.articles.getAll();
-    for (const article of articles) {
+    const [trArticles, enArticles] = await Promise.all([
+      db.articles.getAll('tr'),
+      db.articles.getAll('en'),
+    ]);
+    const enIds = new Set(enArticles.map((a: any) => String(a.id || a.slug_en || a.slug)));
+    const trIds = new Set(trArticles.map((a: any) => String(a.id || a.slug)));
+
+    for (const article of trArticles) {
       const modDate = new Date(article.published_at || article.updated_at || Date.now());
+      const trUrl = encodeURI(`${TR_SITE_ORIGIN}/rehber/${article.slug}`);
+      const slugEn = (article as { slug_en?: string }).slug_en || article.slug;
+      const enUrl = encodeURI(`${EN_SITE_ORIGIN}/guide/${slugEn}`);
+      const hasEnPair = enIds.has(String((article as any).id || slugEn));
       pushEntry({
-        url: `${TR_SITE_ORIGIN}/rehber/${article.slug}`,
+        url: trUrl,
         lastModified: modDate,
         changeFrequency: 'weekly',
         priority: 0.75,
+        ...(hasEnPair
+          ? { alternates: { languages: { 'tr-TR': trUrl, en: enUrl, 'x-default': trUrl } } }
+          : {}),
       });
+    }
+
+    for (const article of enArticles) {
+      const modDate = new Date(article.published_at || article.updated_at || Date.now());
+      const slugEn = (article as { slug_en?: string }).slug_en || article.slug;
+      const trUrl = encodeURI(`${TR_SITE_ORIGIN}/rehber/${article.slug}`);
+      const enUrl = encodeURI(`${EN_SITE_ORIGIN}/guide/${slugEn}`);
+      const hasTrPair = trIds.has(String((article as any).id || article.slug));
       pushEntry({
-        url: `${EN_SITE_ORIGIN}/guide/${(article as { slug_en?: string }).slug_en || article.slug}`,
+        url: enUrl,
         lastModified: modDate,
         changeFrequency: 'weekly',
         priority: 0.75,
+        ...(hasTrPair
+          ? { alternates: { languages: { 'tr-TR': trUrl, en: enUrl, 'x-default': trUrl } } }
+          : {}),
       });
     }
   } catch {
@@ -204,6 +255,26 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified: new Date(),
     changeFrequency: 'monthly',
     priority: 0.5,
+    alternates: {
+      languages: {
+        'tr-TR': `${TR_SITE_ORIGIN}/hakkimizda`,
+        en: `${EN_SITE_ORIGIN}/hakkimizda`,
+        'x-default': `${TR_SITE_ORIGIN}/hakkimizda`,
+      },
+    },
+  });
+  pushEntry({
+    url: `${EN_SITE_ORIGIN}/hakkimizda`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly',
+    priority: 0.5,
+    alternates: {
+      languages: {
+        'tr-TR': `${TR_SITE_ORIGIN}/hakkimizda`,
+        en: `${EN_SITE_ORIGIN}/hakkimizda`,
+        'x-default': `${TR_SITE_ORIGIN}/hakkimizda`,
+      },
+    },
   });
 
   return entries;

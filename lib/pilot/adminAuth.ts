@@ -6,6 +6,7 @@ export type PilotAdminAuthResult = { ok: true } | { ok: false; status: 401 | 503
 export const PILOT_PRIVATE_HEADERS = {
   'Cache-Control': 'private, no-store, max-age=0',
   Vary: 'Authorization',
+  'X-Robots-Tag': 'noindex, nofollow',
 };
 
 // Compare fixed-size digests without short-circuiting on credential characters.

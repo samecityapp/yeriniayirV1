@@ -17,7 +17,8 @@ export type EmergencyLevel = 'off' | 'shed' | 'lockdown';
 export const EMERGENCY_MODE_REDIS_KEY = 'ya:pilot:emergency_mode';
 const DEFAULT_RUNTIME_CACHE_TTL_MS = 15_000;
 const RUNTIME_FETCH_TIMEOUT_MS = 400;
-const RUNTIME_FAILURE_COOLDOWN_MS = 10_000;
+const DEFAULT_RUNTIME_FAILURE_COOLDOWN_MS = 10_000;
+const DEFAULT_OUTAGE_GRACE_MS = 5 * 60 * 1000;
 
 const CORE_LEGAL_PATH_RE =
   /^\/(?:tr|en|el)\/(?:cerez-politikasi|gizlilik-politikasi|kullanim-kosullari|kullanim-sartlari|kvkk-aydinlatma-metni|hakkimizda)$/;
@@ -37,11 +38,13 @@ const EMERGENCY_RANK: Record<EmergencyLevel, number> = {
 };
 
 let cachedRuntimeMode: { value: EmergencyLevel; expiresAt: number } | null = null;
+let lastKnownActiveRuntimeMode: { value: Exclude<EmergencyLevel, 'off'>; expiresAt: number } | null = null;
 let runtimeOutageUntil = 0;
 let inFlightRuntimeFetch: Promise<EmergencyLevel> | null = null;
 
 export function resetEmergencyModeCacheForTests(): void {
   cachedRuntimeMode = null;
+  lastKnownActiveRuntimeMode = null;
   runtimeOutageUntil = 0;
   inFlightRuntimeFetch = null;
 }
@@ -201,6 +204,29 @@ function resolveRuntimeCacheTtlMs(env: NodeJS.ProcessEnv): number {
   return DEFAULT_RUNTIME_CACHE_TTL_MS;
 }
 
+function resolveOutageGraceMs(env: NodeJS.ProcessEnv): number {
+  const override = Number(env.EMERGENCY_OUTAGE_GRACE_MS);
+  if (Number.isFinite(override) && override >= 50 && override <= 3_600_000) {
+    return override;
+  }
+  return DEFAULT_OUTAGE_GRACE_MS;
+}
+
+function resolveFailureCooldownMs(env: NodeJS.ProcessEnv): number {
+  const override = Number(env.EMERGENCY_OUTAGE_COOLDOWN_MS);
+  if (Number.isFinite(override) && override >= 50 && override <= 60_000) {
+    return override;
+  }
+  return DEFAULT_RUNTIME_FAILURE_COOLDOWN_MS;
+}
+
+function fallbackLevelDuringOutage(staticMode: EmergencyLevel): EmergencyLevel {
+  if (lastKnownActiveRuntimeMode && Date.now() < lastKnownActiveRuntimeMode.expiresAt) {
+    return maxEmergencyLevel(staticMode, lastKnownActiveRuntimeMode.value);
+  }
+  return staticMode;
+}
+
 function resolveRuntimeEmergencyUpstashEndpoint(
   env: NodeJS.ProcessEnv
 ): { url: string; token: string } | null {
@@ -271,7 +297,7 @@ export async function resolveRuntimeEmergencyMode(
   }
 
   if (now < runtimeOutageUntil) {
-    return staticMode;
+    return fallbackLevelDuringOutage(staticMode);
   }
 
   if (inFlightRuntimeFetch) {
@@ -280,6 +306,8 @@ export async function resolveRuntimeEmergencyMode(
   }
 
   const ttlMs = resolveRuntimeCacheTtlMs(env);
+  const graceMs = resolveOutageGraceMs(env);
+  const cooldownMs = resolveFailureCooldownMs(env);
   inFlightRuntimeFetch = (async () => {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), RUNTIME_FETCH_TIMEOUT_MS);
@@ -294,8 +322,8 @@ export async function resolveRuntimeEmergencyMode(
         signal: controller.signal,
       });
       if (!res.ok) {
-        runtimeOutageUntil = Date.now() + RUNTIME_FAILURE_COOLDOWN_MS;
-        return 'off';
+        runtimeOutageUntil = Date.now() + cooldownMs;
+        return fallbackLevelDuringOutage('off');
       }
       const data = (await res.json()) as { result?: unknown };
       const parsed = parseEmergencyLevel(data?.result);
@@ -303,11 +331,19 @@ export async function resolveRuntimeEmergencyMode(
         value: parsed,
         expiresAt: Date.now() + ttlMs,
       };
+      if (parsed === 'off') {
+        lastKnownActiveRuntimeMode = null;
+      } else {
+        lastKnownActiveRuntimeMode = {
+          value: parsed,
+          expiresAt: Date.now() + graceMs,
+        };
+      }
       runtimeOutageUntil = 0;
       return parsed;
     } catch {
-      runtimeOutageUntil = Date.now() + RUNTIME_FAILURE_COOLDOWN_MS;
-      return 'off';
+      runtimeOutageUntil = Date.now() + cooldownMs;
+      return fallbackLevelDuringOutage('off');
     } finally {
       clearTimeout(timer);
       inFlightRuntimeFetch = null;

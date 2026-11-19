@@ -6,7 +6,7 @@ import { getLocalizedText } from '@/lib/localization';
 import { Article } from '@/lib/types';
 
 export async function RelatedArticles({ location, lang = 'tr' }: { location: string; lang?: 'tr' | 'en' }) {
-  const articles = await db.articles.getAllByLocation(location);
+  const articles = await db.articles.getAllByLocation(location, lang);
 
   if (!articles || articles.length === 0) return null;
 

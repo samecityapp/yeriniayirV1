@@ -1,11 +1,39 @@
+import type { Metadata } from 'next';
 import { LOCATIONS } from '@/lib/constants';
 import { LocationCard } from '@/components/LocationCard';
 import { getDictionary } from '@/lib/dictionary';
+import { EN_SITE_ORIGIN, TR_SITE_ORIGIN } from '@/lib/gastronomy-v3/geoCatalog';
 
 export const revalidate = 3600;
 
 export function generateStaticParams() {
   return [{ lang: 'tr' }, { lang: 'en' }];
+}
+
+export async function generateMetadata(props: {
+  params: Promise<{ lang: 'tr' | 'en' }>;
+}): Promise<Metadata> {
+  const params = await props.params;
+  const isEn = params.lang === 'en';
+  const trUrl = `${TR_SITE_ORIGIN}/rehber`;
+  const enUrl = `${EN_SITE_ORIGIN}/guide`;
+
+  return {
+    title: isEn
+      ? 'Turkey Travel Guides & Regional Routes'
+      : 'Türkiye Gezi Rehberleri ve Bölgesel Rotalar',
+    description: isEn
+      ? 'Explore regional travel guides, coastal routes and practical tips across destinations in Turkey.'
+      : 'Türkiye genelindeki destinasyonlar için bölgesel gezi rehberleri, sahil rotaları ve pratik seyahat bilgileri.',
+    alternates: {
+      canonical: isEn ? enUrl : trUrl,
+      languages: {
+        'tr-TR': trUrl,
+        en: enUrl,
+        'x-default': trUrl,
+      },
+    },
+  };
 }
 
 export default async function GuidePage(props: { params: Promise<{ lang: 'tr' | 'en' }> }) {

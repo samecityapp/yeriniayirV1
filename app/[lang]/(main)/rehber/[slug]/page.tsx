@@ -6,7 +6,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, Calendar, Clock } from 'lucide-react';
-import { getLocalizedText } from '@/lib/localization';
+import { getLocalizedText, doesArticleSupportLang } from '@/lib/localization';
 import { getDictionary } from '@/lib/dictionary';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { generateArticleSchema, generateBreadcrumbSchema, generateFAQSchema } from '@/lib/schema-generator';
@@ -18,6 +18,7 @@ import { ArticleList } from '@/components/ArticleList';
 import { getRandomAuthor } from '@/lib/authors';
 import { BlogAuthor } from '@/components/blog/BlogAuthor';
 import { SmartContent } from '@/components/blog/SmartContent';
+import { EN_SITE_ORIGIN, TR_SITE_ORIGIN } from '@/lib/gastronomy-v3/geoCatalog';
 
 
 type Props = { params: Promise<{ slug: string; lang: 'tr' | 'en' }> };
@@ -36,6 +37,8 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
     const title = lang === 'tr'
       ? `${location.title} Gezi Rehberi - Gezilecek Yerler ve Öneriler`
       : `${location.title} Travel Guide - Places to Visit and Recommendations`;
+    const trLocationUrl = encodeURI(`${TR_SITE_ORIGIN}/rehber/${params.slug}`);
+    const enLocationUrl = encodeURI(`${EN_SITE_ORIGIN}/guide/${params.slug}`);
 
     return {
       title: title,
@@ -46,10 +49,11 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
         images: [location.image],
       },
       alternates: {
-        canonical: `https://www.yeriniayir.com/${lang}/rehber/${params.slug}`,
+        canonical: lang === 'en' ? enLocationUrl : trLocationUrl,
         languages: {
-          'tr': `https://www.yeriniayir.com/tr/rehber/${params.slug}`,
-          'en': `https://www.yeriniayir.com/en/rehber/${params.slug}`,
+          'tr-TR': trLocationUrl,
+          en: enLocationUrl,
+          'x-default': trLocationUrl,
         },
       }
     };
@@ -57,38 +61,43 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 
   // If it's an article page
   const article = await db.articles.getBySlug(params.slug);
-  if (!article) {
+  if (!article || !doesArticleSupportLang(article, lang)) {
     return {
-      title: 'Yazı Bulunamadı',
-      description: 'Aradığınız rehber yazısı sistemimizde mevcut değil.',
+      title: lang === 'en' ? 'Guide Not Found' : 'Yazı Bulunamadı',
+      description: lang === 'en'
+        ? 'The requested guide article is not available.'
+        : 'Aradığınız rehber yazısı sistemimizde mevcut değil.',
+      robots: { index: false, follow: false },
     };
   }
-
-  // CHECK: If article is English-only (marked as TR Pasif or similar) and we are on TR locale, return 404 metadata or handle gracefully
-  // However, metadata generation usually happens before page render. 
-  // For now, let's allow metadata but 404 the page content below.
-  // Actually, for SEO it's better to 404 here too if possible, but let's stick to page logic for safety first.
 
   const title = getLocalizedText(article.title, lang);
   const description = getLocalizedText(article.meta_description, lang);
   const articleLocation = getLocalizedText(article.location, lang);
 
-  // Determine slugs for both languages
+  // Determine slugs and language availability
   const slugTr = article.slug;
-  const slugEn = (article as any).slug_en || article.slug; // Fallback if not set but DB should have it
+  const slugEn = (article as any).slug_en || article.slug;
+  const trUrl = encodeURI(`${TR_SITE_ORIGIN}/rehber/${slugTr}`);
+  const enUrl = encodeURI(`${EN_SITE_ORIGIN}/guide/${slugEn}`);
+  const supportsTr = doesArticleSupportLang(article, 'tr');
+  const supportsEn = doesArticleSupportLang(article, 'en');
 
   return {
     title: `${title}`,
     description: description,
     keywords: [title, articleLocation, 'rehber', 'gezi', 'otel', 'türkiye'],
     alternates: {
-      canonical: lang === 'tr'
-        ? `https://www.yeriniayir.com/tr/rehber/${slugTr}`
-        : `https://www.yeriniayir.com/en/guide/${slugEn}`,
-      languages: {
-        'tr': `https://www.yeriniayir.com/tr/rehber/${slugTr}`,
-        'en': `https://www.yeriniayir.com/en/guide/${slugEn}`,
-      },
+      canonical: lang === 'en' ? enUrl : trUrl,
+      ...(supportsTr && supportsEn
+        ? {
+            languages: {
+              'tr-TR': trUrl,
+              en: enUrl,
+              'x-default': trUrl,
+            },
+          }
+        : {}),
     },
     openGraph: {
       title: title,
@@ -158,7 +167,7 @@ export default async function ArticlePage(props: Props) {
   // --- ARTICLE DETAIL PAGE LOGIC (Existing) ---
   const article = await db.articles.getBySlug(params.slug);
 
-  if (!article) {
+  if (!article || !doesArticleSupportLang(article, lang)) {
     notFound();
   }
 
@@ -276,18 +285,24 @@ export default async function ArticlePage(props: Props) {
     updatedAt: article.updated_at,
   });
 
+  const siteOrigin = lang === 'en' ? EN_SITE_ORIGIN : TR_SITE_ORIGIN;
+  const articleCanonicalUrl = encodeURI(
+    lang === 'en'
+      ? `${EN_SITE_ORIGIN}/guide/${slugEn}`
+      : `${TR_SITE_ORIGIN}/rehber/${slugTr}`
+  );
   const breadcrumbSchema = generateBreadcrumbSchema([
     {
       name: lang === 'tr' ? 'Ana Sayfa' : 'Home',
-      url: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.yeriniayir.com'
+      url: siteOrigin,
     },
     {
       name: lang === 'tr' ? 'Rehber' : 'Guide',
-      url: `${process.env.NEXT_PUBLIC_SITE_URL}/${lang === 'tr' ? 'tr/rehber' : 'en/guide'}`
+      url: `${siteOrigin}/${lang === 'en' ? 'guide' : 'rehber'}`,
     },
     {
       name: title,
-      url: `${process.env.NEXT_PUBLIC_SITE_URL}/${lang === 'tr' ? 'tr/rehber' : 'en/guide'}/${lang === 'tr' ? slugTr : slugEn}`
+      url: articleCanonicalUrl,
     }
   ]);
 

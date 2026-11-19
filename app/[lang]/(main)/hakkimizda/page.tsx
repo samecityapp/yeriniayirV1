@@ -1,6 +1,32 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import { Instagram } from 'lucide-react';
 import { getDictionary } from '@/lib/dictionary';
+import { EN_SITE_ORIGIN, TR_SITE_ORIGIN } from '@/lib/gastronomy-v3/geoCatalog';
+
+export async function generateMetadata(props: {
+  params: Promise<{ lang: 'tr' | 'en' }>;
+}): Promise<Metadata> {
+  const params = await props.params;
+  const isEn = params.lang === 'en';
+  const trUrl = `${TR_SITE_ORIGIN}/hakkimizda`;
+  const enUrl = `${EN_SITE_ORIGIN}/hakkimizda`;
+
+  return {
+    title: isEn ? 'About Us' : 'Hakkımızda',
+    description: isEn
+      ? 'About Yerini Ayır and WorldandHotels curated culinary and boutique hospitality platform.'
+      : 'Yerini Ayır hakkında: doğrulanmış mahalle gastronomi seçkileri ve seçkin konaklama platformu.',
+    alternates: {
+      canonical: isEn ? enUrl : trUrl,
+      languages: {
+        'tr-TR': trUrl,
+        en: enUrl,
+        'x-default': trUrl,
+      },
+    },
+  };
+}
 
 export default async function AboutPage(props: { params: Promise<{ lang: 'tr' | 'en' }> }) {
   const params = await props.params;
