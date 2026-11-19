@@ -804,7 +804,279 @@ async function stopChild(proc) {
       }
     }
 
-    console.log(`\nALL PAKET 10C INDEPENDENT CLOSURES PASSED (${passed}/7 checks).`);
+    // -------------------------------------------------------------------------
+    // Direct security gate checks for service_role routes (/api/track-event & /api/go)
+    // -------------------------------------------------------------------------
+    await check('8. Direct API security checks for /api/track-event and /api/go (validation, SSRF/open-redirect, rate-limit, outage, 0 secret leak)', async () => {
+      const savedEnv = { ...process.env };
+      const origWarn = console.warn;
+      const origError = console.error;
+      const logs = [];
+      const fakeServiceKey = 'eyJhbGciOiJIUzI1NiJ9.FAKE_SERVICE_ROLE_SECRET_TOKEN_XYZ_10C.sig';
+      const fakeUpstashToken = 'FAKE_UPSTASH_REST_SECRET_10C';
+      console.warn = (...args) => logs.push(args.map(String).join(' '));
+      console.error = (...args) => logs.push(args.map(String).join(' '));
+
+      try {
+        process.env.NODE_ENV = 'production';
+        process.env.APP_ENVIRONMENT = 'production';
+        process.env.VERCEL = '1';
+        process.env.VERCEL_ENV = 'production';
+        process.env.RATE_LIMIT_ENFORCE = '1';
+        process.env.UPSTASH_REDIS_REST_URL = 'https://prod-rl.upstash.io';
+        process.env.UPSTASH_REDIS_REST_TOKEN = fakeUpstashToken;
+        delete process.env.ANALYTICS_DB_ENABLED;
+        delete process.env.NEXT_PUBLIC_DISABLE_ANALYTICS;
+
+        let rlBehavior = 'allow'; // 'allow' | 'limit' | 'throw'
+        let upstashCalls = 0;
+        let adminAnalyticsWrites = 0;
+        let adminClickWrites = 0;
+        let dbAnalyticsBehavior = 'ok'; // 'ok' | 'leak-error'
+        let dbHotelUrl = 'https://safe-hotel.example.com/book';
+
+        const makeMocks = () => ({
+          '@/lib/pilot/emergencyMode': { resolveRuntimeEmergencyMode: async () => 'off' },
+          '@upstash/redis': { Redis: class {} },
+          '@upstash/ratelimit': {
+            Ratelimit: class {
+              static slidingWindow() {
+                return {};
+              }
+              async limit() {
+                upstashCalls++;
+                if (rlBehavior === 'throw') {
+                  throw new Error(`Upstash failed with token=${fakeUpstashToken} key=${fakeServiceKey}`);
+                }
+                if (rlBehavior === 'limit') {
+                  return { success: false, limit: 20, remaining: 0, reset: Math.ceil(Date.now() / 1000) + 10 };
+                }
+                return { success: true, limit: 20, remaining: 19, reset: Math.ceil(Date.now() / 1000) + 10 };
+              }
+            },
+          },
+          '@/lib/supabase': {
+            isSupabaseIsolated: false,
+            supabase: {
+              from: (table) => {
+                if (table === 'hotels') {
+                  return {
+                    select: () => ({
+                      eq: () => ({
+                        maybeSingle: async () =>
+                          dbHotelUrl === '__NOT_FOUND__'
+                            ? { data: null, error: null }
+                            : { data: { website_url: dbHotelUrl }, error: null },
+                      }),
+                    }),
+                  };
+                }
+                return {
+                  insert: async () => {
+                    throw new Error('Anon client must never be called for writes in cloud');
+                  },
+                };
+              },
+            },
+          },
+          '@/lib/supabase-admin': {
+            hasServiceRoleKey: true,
+            supabaseAdmin: {
+              from: (table) => ({
+                insert: async () => {
+                  if (table === 'analytics_events') {
+                    if (dbAnalyticsBehavior === 'leak-error') {
+                      return {
+                        error: {
+                          name: 'PostgrestError',
+                          code: '42501',
+                          message: `Failed with ${fakeServiceKey}`,
+                        },
+                      };
+                    }
+                    adminAnalyticsWrites++;
+                    return { error: null };
+                  }
+                  if (table === 'hotel_clicks') {
+                    if (dbAnalyticsBehavior === 'leak-error') {
+                      return { error: { code: '42501', message: `Click err ${fakeServiceKey}` } };
+                    }
+                    adminClickWrites++;
+                    return { error: null };
+                  }
+                  return { error: null };
+                },
+              }),
+            },
+          },
+        });
+
+        const trackRoute = loadTs('app/api/track-event/route.ts', {
+          cache: new Map(),
+          mocks: makeMocks(),
+        });
+        const goRoute = loadTs('app/api/go/route.ts', {
+          cache: new Map(),
+          mocks: makeMocks(),
+        });
+        const { NextRequest } = require('next/server');
+
+        // A. Input validation (/api/track-event & /api/go): malformed calls incur 0 Upstash and 0 admin DB calls
+        const oversizedRes = await trackRoute.POST(
+          new Request('https://www.yeriniayir.com/api/track-event', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'x-real-ip': '203.0.113.80' },
+            body: 'x'.repeat(2100),
+          })
+        );
+        assert.equal(oversizedRes.status, 413);
+
+        const badTypeRes = await trackRoute.POST(
+          new Request('https://www.yeriniayir.com/api/track-event', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'x-real-ip': '203.0.113.80' },
+            body: JSON.stringify({ event_type: 'admin_login_attempt' }),
+          })
+        );
+        assert.equal(badTypeRes.status, 400);
+
+        const badGoUrlRes = await goRoute.GET(
+          new NextRequest(`https://www.yeriniayir.com/api/go?hotelId=${'a'.repeat(500)}`)
+        );
+        assert.equal(badGoUrlRes.status, 400);
+
+        const badGoUuidRes = await goRoute.GET(
+          new NextRequest('https://www.yeriniayir.com/api/go?hotelId=11111111-evil')
+        );
+        assert.equal(badGoUuidRes.status, 400);
+        assert.equal(upstashCalls, 0);
+        assert.equal(adminAnalyticsWrites, 0);
+        assert.equal(adminClickWrites, 0);
+
+        // B. Unsafe / SSRF / credentialed external redirect URLs + open-redirect ?url= param never win, 0 service_role writes
+        const validHotelUuid = '11111111-1111-4111-8111-111111111111';
+        const badRedirects = [
+          'javascript:alert(1)',
+          'data:text/html,<script>alert(1)</script>',
+          'https://user:pass@evil.example/steal',
+          'http://169.254.169.254/latest/meta-data/',
+          'http://127.0.0.1:8080/internal',
+          'http://[::1]:3000/',
+          'http://192.168.1.50/router',
+          'http://10.0.0.5/db',
+          'http://metadata.internal/',
+          '__NOT_FOUND__',
+        ];
+        for (let idx = 0; idx < badRedirects.length; idx++) {
+          dbHotelUrl = badRedirects[idx];
+          const r = await goRoute.GET(
+            new NextRequest(
+              `https://www.yeriniayir.com/api/go?hotelId=${validHotelUuid}&url=https://evil.example`,
+              {
+                headers: {
+                  'x-real-ip': `203.0.113.${100 + idx}`,
+                  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
+                },
+              }
+            )
+          );
+          assert.equal(r.status, 307);
+          assert.equal(r.headers.get('location'), 'https://www.yeriniayir.com/');
+        }
+        assert.equal(adminClickWrites, 0, 'Unsafe or missing hotel URLs must incur 0 hotel_clicks writes');
+
+        // Valid hotel URL + open-redirect ?url param still uses safe DB URL only
+        dbHotelUrl = 'https://safe-hotel.example.com/book';
+        const goodGo = await goRoute.GET(
+          new NextRequest(
+            `https://www.yeriniayir.com/api/go?hotelId=${validHotelUuid}&url=https://evil.example`,
+            { headers: { 'x-real-ip': '203.0.113.82' } }
+          )
+        );
+        assert.equal(goodGo.status, 307);
+        assert.equal(goodGo.headers.get('location'), 'https://safe-hotel.example.com/book');
+        assert.equal(goodGo.headers.get('x-hotel-click-tracked'), 'true');
+        assert.equal(adminClickWrites, 1);
+
+        // C. Rate limit exceeded (429) blocks writes on both routes
+        rlBehavior = 'limit';
+        const rlTrack = await trackRoute.POST(
+          new Request('https://www.yeriniayir.com/api/track-event', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'x-real-ip': '203.0.113.83' },
+            body: JSON.stringify({ event_type: 'website_click', hotel_id: validHotelUuid }),
+          })
+        );
+        const rlGo = await goRoute.GET(
+          new NextRequest(`https://www.yeriniayir.com/api/go?hotelId=${validHotelUuid}`, {
+            headers: { 'x-real-ip': '203.0.113.84' },
+          })
+        );
+        assert.equal(rlTrack.status, 429);
+        assert.equal(rlGo.status, 429);
+        assert.equal(adminAnalyticsWrites, 0);
+        assert.equal(adminClickWrites, 1);
+
+        // D. Upstash outage skips click/analytics service_role writes while /api/go continues safe redirect
+        rlBehavior = 'throw';
+        const outageTrack = await trackRoute.POST(
+          new Request('https://www.yeriniayir.com/api/track-event', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'x-real-ip': '203.0.113.85' },
+            body: JSON.stringify({ event_type: 'website_click', hotel_id: validHotelUuid }),
+          })
+        );
+        const outageGo = await goRoute.GET(
+          new NextRequest(`https://www.yeriniayir.com/api/go?hotelId=${validHotelUuid}`, {
+            headers: { 'x-real-ip': '203.0.113.86' },
+          })
+        );
+        assert.equal(outageTrack.status, 202);
+        assert.equal((await outageTrack.json()).recorded, false);
+        assert.equal(outageGo.status, 307);
+        assert.equal(outageGo.headers.get('location'), 'https://safe-hotel.example.com/book');
+        assert.equal(outageGo.headers.get('x-hotel-click-tracked'), 'false');
+        assert.equal(adminAnalyticsWrites, 0);
+        assert.equal(adminClickWrites, 1);
+
+        // E. Error redaction & client browser guard on lib/supabase-admin.ts
+        rlBehavior = 'allow';
+        dbAnalyticsBehavior = 'leak-error';
+        const errTrack = await trackRoute.POST(
+          new Request('https://www.yeriniayir.com/api/track-event', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'x-real-ip': '203.0.113.87' },
+            body: JSON.stringify({ event_type: 'website_click', hotel_id: validHotelUuid }),
+          })
+        );
+        assert.equal(errTrack.status, 202);
+        const errTrackText = await errTrack.text();
+        assert.equal(errTrackText.includes(fakeServiceKey), false);
+
+        const joinedLogs = logs.join('\n');
+        assert.equal(joinedLogs.includes(fakeServiceKey), false, 'Service role key leaked in logs');
+        assert.equal(joinedLogs.includes(fakeUpstashToken), false, 'Upstash token leaked in logs');
+
+        // Confirm client-side window guard throws immediately on lib/supabase-admin.ts
+        const prevWindow = globalThis.window;
+        try {
+          globalThis.window = {};
+          assert.throws(
+            () => loadTs('lib/supabase-admin.ts', { cache: new Map() }),
+            /SECURITY VIOLATION.*must never be imported in client components/
+          );
+        } finally {
+          if (prevWindow === undefined) delete globalThis.window;
+          else globalThis.window = prevWindow;
+        }
+      } finally {
+        console.warn = origWarn;
+        console.error = origError;
+        process.env = savedEnv;
+      }
+    });
+
+    console.log(`\nALL PAKET 10C INDEPENDENT CLOSURES PASSED (${passed}/8 checks).`);
   } catch (err) {
     console.error('\nFAIL:', err && err.stack ? err.stack : err);
     process.exitCode = 1;

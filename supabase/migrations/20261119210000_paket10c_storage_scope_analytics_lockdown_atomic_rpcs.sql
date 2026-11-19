@@ -141,7 +141,7 @@ CREATE OR REPLACE FUNCTION public.ya_admin_save_restaurant(
 RETURNS uuid
 LANGUAGE plpgsql
 SECURITY INVOKER
-SET search_path = public, pg_temp
+SET search_path = pg_catalog, public
 AS $$
 DECLARE
   v_existing public.restaurants%ROWTYPE;
@@ -153,6 +153,8 @@ DECLARE
   v_idx integer;
   v_note_count integer;
   v_note_text text;
+  v_note_emoji text;
+  v_raw_name text;
 BEGIN
   IF current_user <> 'service_role' AND NOT public.is_admin_user() THEN
     RAISE EXCEPTION 'unauthorized' USING ERRCODE = '42501';
@@ -164,6 +166,18 @@ BEGIN
 
   IF p_notes IS NOT NULL AND jsonb_typeof(p_notes) <> 'array' THEN
     RAISE EXCEPTION 'invalid_notes_payload' USING ERRCODE = '22023';
+  END IF;
+
+  IF (p_restaurant ? 'name') THEN
+    v_raw_name := COALESCE(
+      NULLIF(btrim(p_restaurant ->> 'name'), ''),
+      NULLIF(btrim(p_restaurant #>> '{name,tr}'), ''),
+      NULLIF(btrim(p_restaurant #>> '{name,en}'), ''),
+      ''
+    );
+    IF v_raw_name = '' OR char_length(v_raw_name) > 200 THEN
+      RAISE EXCEPTION 'invalid_restaurant_name' USING ERRCODE = '22023';
+    END IF;
   END IF;
 
   IF p_id IS NOT NULL THEN
@@ -180,6 +194,25 @@ BEGIN
       v_existing,
       p_restaurant || jsonb_build_object('id', p_id)
     );
+
+    IF v_row.category_id IS NULL THEN
+      RAISE EXCEPTION 'invalid_restaurant_category' USING ERRCODE = '22023';
+    END IF;
+    IF v_row.location IS NULL OR btrim(v_row.location) = '' OR char_length(v_row.location) > 200 THEN
+      RAISE EXCEPTION 'invalid_restaurant_location' USING ERRCODE = '22023';
+    END IF;
+    IF v_row.name IS NULL OR btrim(v_row.name::text, ' "') = '' THEN
+      RAISE EXCEPTION 'invalid_restaurant_name' USING ERRCODE = '22023';
+    END IF;
+    IF COALESCE(v_row.google_rating, 0) < 0 OR COALESCE(v_row.google_rating, 0) > 10 THEN
+      RAISE EXCEPTION 'invalid_restaurant_rating' USING ERRCODE = '22023';
+    END IF;
+    IF COALESCE(v_row.display_order, 0) < 0 OR COALESCE(v_row.display_order, 0) > 10000 THEN
+      RAISE EXCEPTION 'invalid_restaurant_display_order' USING ERRCODE = '22023';
+    END IF;
+    IF char_length(COALESCE(v_row.image_url, '')) > 1000 OR char_length(COALESCE(v_row.review_count, '')) > 100 THEN
+      RAISE EXCEPTION 'invalid_restaurant_field_length' USING ERRCODE = '22023';
+    END IF;
 
     UPDATE public.restaurants
     SET
@@ -207,6 +240,25 @@ BEGIN
     ) || p_restaurant || jsonb_build_object('id', v_restaurant_id);
 
     v_row := jsonb_populate_record(NULL::public.restaurants, v_payload);
+
+    IF v_row.category_id IS NULL THEN
+      RAISE EXCEPTION 'invalid_restaurant_category' USING ERRCODE = '22023';
+    END IF;
+    IF v_row.location IS NULL OR btrim(v_row.location) = '' OR char_length(v_row.location) > 200 THEN
+      RAISE EXCEPTION 'invalid_restaurant_location' USING ERRCODE = '22023';
+    END IF;
+    IF v_row.name IS NULL OR btrim(v_row.name::text, ' "') = '' THEN
+      RAISE EXCEPTION 'invalid_restaurant_name' USING ERRCODE = '22023';
+    END IF;
+    IF COALESCE(v_row.google_rating, 0) < 0 OR COALESCE(v_row.google_rating, 0) > 10 THEN
+      RAISE EXCEPTION 'invalid_restaurant_rating' USING ERRCODE = '22023';
+    END IF;
+    IF COALESCE(v_row.display_order, 0) < 0 OR COALESCE(v_row.display_order, 0) > 10000 THEN
+      RAISE EXCEPTION 'invalid_restaurant_display_order' USING ERRCODE = '22023';
+    END IF;
+    IF char_length(COALESCE(v_row.image_url, '')) > 1000 OR char_length(COALESCE(v_row.review_count, '')) > 100 THEN
+      RAISE EXCEPTION 'invalid_restaurant_field_length' USING ERRCODE = '22023';
+    END IF;
 
     INSERT INTO public.restaurants (
       id,
@@ -248,16 +300,22 @@ BEGIN
         RAISE EXCEPTION 'invalid_restaurant_note' USING ERRCODE = '22023';
       END IF;
 
-      v_note_text := COALESCE(btrim(v_note ->> 'text'), '');
-      IF v_note_text = '' THEN
-        RAISE EXCEPTION 'empty_restaurant_note_text' USING ERRCODE = '22023';
+      v_note_text := COALESCE(
+        NULLIF(btrim(v_note ->> 'text'), ''),
+        NULLIF(btrim(v_note #>> '{text,tr}'), ''),
+        NULLIF(btrim(v_note #>> '{text,en}'), ''),
+        ''
+      );
+      v_note_emoji := COALESCE(v_note ->> 'emoji', '');
+      IF v_note_text = '' OR char_length(v_note_text) > 500 OR char_length(v_note_emoji) > 32 THEN
+        RAISE EXCEPTION 'invalid_restaurant_note_fields' USING ERRCODE = '22023';
       END IF;
 
       v_note_row := jsonb_populate_record(
         NULL::public.restaurant_notes,
         jsonb_build_object(
           'restaurant_id', v_restaurant_id,
-          'emoji', COALESCE(v_note ->> 'emoji', ''),
+          'emoji', v_note_emoji,
           'text', v_note -> 'text',
           'display_order', CASE
             WHEN (v_note ? 'display_order') AND jsonb_typeof(v_note -> 'display_order') = 'number'
@@ -294,7 +352,7 @@ CREATE OR REPLACE FUNCTION public.ya_admin_save_group(
 RETURNS uuid
 LANGUAGE plpgsql
 SECURITY INVOKER
-SET search_path = public, pg_temp
+SET search_path = pg_catalog, public
 AS $$
 DECLARE
   v_group_id uuid;
@@ -309,12 +367,19 @@ BEGIN
     RAISE EXCEPTION 'unauthorized' USING ERRCODE = '42501';
   END IF;
 
-  IF p_title IS NULL OR btrim(p_title) = '' THEN
+  IF p_title IS NULL OR btrim(p_title) = '' OR char_length(btrim(p_title)) > 1000 THEN
     RAISE EXCEPTION 'invalid_group_title' USING ERRCODE = '22023';
   END IF;
 
-  v_hotel_count := COALESCE(array_length(p_hotel_ids, 1), 0);
-  IF v_hotel_count < 1 OR v_hotel_count > 20 THEN
+  IF p_domains IS NOT NULL AND (
+    (array_ndims(p_domains) IS NOT NULL AND array_ndims(p_domains) <> 1)
+    OR COALESCE(cardinality(p_domains), 0) > 20
+  ) THEN
+    RAISE EXCEPTION 'invalid_group_domains' USING ERRCODE = '22023';
+  END IF;
+
+  v_hotel_count := COALESCE(cardinality(p_hotel_ids), 0);
+  IF p_hotel_ids IS NULL OR array_ndims(p_hotel_ids) IS DISTINCT FROM 1 OR v_hotel_count < 1 OR v_hotel_count > 20 THEN
     RAISE EXCEPTION 'invalid_group_hotel_ids' USING ERRCODE = '22023';
   END IF;
 

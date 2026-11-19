@@ -14,12 +14,55 @@ const NO_STORE_HEADERS = {
   'Cache-Control': 'private, no-store, max-age=0',
 };
 
+function isUnsafeRedirectHost(rawHost: string): boolean {
+  const host = rawHost.toLowerCase().replace(/\.$/, '').replace(/^\[|\]$/g, '');
+  if (!host) return true;
+  if (
+    host === 'localhost' ||
+    host.endsWith('.localhost') ||
+    host.endsWith('.local') ||
+    host.endsWith('.internal')
+  ) {
+    return true;
+  }
+  if (
+    host === '::1' ||
+    host === '::' ||
+    host.startsWith('fe80:') ||
+    host.startsWith('fc') ||
+    host.startsWith('fd') ||
+    host.startsWith('::ffff:')
+  ) {
+    return true;
+  }
+  const ipv4Match = /^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$/.exec(host);
+  if (ipv4Match) {
+    const a = Number(ipv4Match[1]);
+    const b = Number(ipv4Match[2]);
+    if (a === 10 || a === 127 || a === 0) return true;
+    if (a === 169 && b === 254) return true;
+    if (a === 192 && b === 168) return true;
+    if (a === 172 && b >= 16 && b <= 31) return true;
+    if (a === 100 && b >= 64 && b <= 127) return true;
+  }
+  return false;
+}
+
+function safeClickErrorCode(err: unknown): string {
+  if (!err || typeof err !== 'object') return 'unknown';
+  const raw = 'code' in err && (typeof err.code === 'string' || typeof err.code === 'number')
+    ? String(err.code)
+    : '';
+  return /^[A-Za-z0-9_.-]{1,32}$/.test(raw) ? raw : 'unknown';
+}
+
 function sanitizeHttpUrl(rawUrl: string | null | undefined): URL | null {
   if (!rawUrl || typeof rawUrl !== 'string') return null;
   try {
     const parsed = new URL(rawUrl.trim());
     if (parsed.protocol !== 'https:' && parsed.protocol !== 'http:') return null;
     if (parsed.username || parsed.password) return null;
+    if (isUnsafeRedirectHost(parsed.hostname)) return null;
     return parsed;
   } catch {
     return null;
@@ -123,10 +166,30 @@ export async function GET(request: NextRequest) {
       process.env.VERCEL_ENV === 'production' ||
       process.env.VERCEL_ENV === 'preview';
 
-    const canRecordClick = hasServiceRoleKey || !isCloudRuntime;
+    const canRecordClick =
+      rl.policy === 'upstash' && (hasServiceRoleKey || !isCloudRuntime);
     const clickClient = hasServiceRoleKey ? supabaseAdmin : supabase;
-    const clickPromise = canRecordClick
-      ? withTimeout(
+
+    const hotelResult = await withTimeout(
+      supabase.from('hotels').select('website_url').eq('id', hotelId).maybeSingle(),
+      DB_TIMEOUT_MS
+    ).catch((err) => ({ data: null, error: err }));
+
+    const resolvedHotelUrl =
+      hotelResult && !hotelResult.error
+        ? sanitizeHttpUrl(hotelResult.data?.website_url)
+        : null;
+
+    if (!resolvedHotelUrl) {
+      return NextResponse.redirect(new URL('/', request.url), {
+        headers: rlResponseHeaders,
+      });
+    }
+
+    let clickTracked = false;
+    if (canRecordClick) {
+      try {
+        const clickResult = await withTimeout(
           clickClient.from('hotel_clicks').insert({
             hotel_id: hotelId,
             user_ip: userIpHash,
@@ -134,32 +197,15 @@ export async function GET(request: NextRequest) {
             referrer,
           }),
           DB_TIMEOUT_MS
-        ).then((res) => ({ ...res, recorded: !res?.error }))
-      : Promise.resolve({ error: null, recorded: false });
-
-    const hotelPromise = withTimeout(
-      supabase.from('hotels').select('website_url').eq('id', hotelId).maybeSingle(),
-      DB_TIMEOUT_MS
-    );
-
-    const [clickResult, hotelResult] = await Promise.allSettled([clickPromise, hotelPromise]);
-
-    if (clickResult.status === 'fulfilled' && clickResult.value.error) {
-      console.error('Failed to track click:', clickResult.value.error.code || 'unknown');
-    }
-
-    const clickTracked =
-      clickResult.status === 'fulfilled' && clickResult.value.recorded === true;
-
-    const resolvedHotelUrl =
-      hotelResult.status === 'fulfilled' && !hotelResult.value.error
-        ? sanitizeHttpUrl(hotelResult.value.data?.website_url)
-        : null;
-
-    if (!resolvedHotelUrl) {
-      return NextResponse.redirect(new URL('/', request.url), {
-        headers: rlResponseHeaders,
-      });
+        );
+        if (clickResult?.error) {
+          console.error('Failed to track click:', safeClickErrorCode(clickResult.error));
+        } else {
+          clickTracked = true;
+        }
+      } catch (clickErr) {
+        console.error('Failed to track click:', safeClickErrorCode(clickErr));
+      }
     }
 
     const response = NextResponse.redirect(resolvedHotelUrl, {

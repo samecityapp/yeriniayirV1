@@ -1134,6 +1134,202 @@ async function runRlsVerification() {
       passed: b6Passed,
     });
 
+    // B6-SEC: PG17 Fonksiyon Katalog Denetimi, Tüm Yetkisiz Roller İçin 0 Veri Değişimi & SQL Sınır Kontrolleri
+    const procCatalog = await db.query(`
+      SELECT
+        p.proname,
+        pg_get_userbyid(p.proowner) AS owner_name,
+        p.prosecdef,
+        p.proconfig,
+        has_function_privilege('anon', p.oid, 'EXECUTE') AS anon_exec,
+        has_function_privilege('authenticated', p.oid, 'EXECUTE') AS auth_exec,
+        has_function_privilege('service_role', p.oid, 'EXECUTE') AS service_exec,
+        COALESCE(
+          (
+            SELECT jsonb_agg(
+              jsonb_build_object(
+                'grantee', CASE WHEN a.grantee = 0 THEN 'PUBLIC' ELSE pg_get_userbyid(a.grantee) END,
+                'privilege', a.privilege_type
+              )
+              ORDER BY a.grantee, a.privilege_type
+            )
+            FROM aclexplode(COALESCE(p.proacl, acldefault('f', p.proowner))) a
+          ),
+          '[]'::jsonb
+        ) AS acl_entries
+      FROM pg_proc p
+      JOIN pg_namespace n ON n.oid = p.pronamespace
+      WHERE n.nspname = 'public'
+        AND p.proname IN ('ya_admin_save_restaurant', 'ya_admin_save_group')
+      ORDER BY p.proname;
+    `);
+    console.log('\n[B6-SEC PG17 KATALOG] RPC İzin ve Yapılandırma Raporu:');
+    for (const fn of procCatalog.rows) {
+      console.log(`  - ${fn.proname}: owner=${fn.owner_name}, prosecdef=${fn.prosecdef} (SECURITY INVOKER), config=${JSON.stringify(fn.proconfig)}, anon_exec=${fn.anon_exec}, auth_exec=${fn.auth_exec}, service_exec=${fn.service_exec}, acl=${JSON.stringify(fn.acl_entries)}`);
+    }
+
+    const catalogValid =
+      procCatalog.rows.length === 2 &&
+      procCatalog.rows.every((fn) => {
+        const cfg = Array.isArray(fn.proconfig) ? fn.proconfig : [];
+        const hasSafeSearchPath =
+          cfg.includes('search_path=pg_catalog, public') &&
+          !cfg.some((c) => /pg_temp/i.test(c));
+        const acl = Array.isArray(fn.acl_entries) ? fn.acl_entries : [];
+        const hasPublicAcl = acl.some((e) => e.grantee === 'PUBLIC');
+        const hasAnonAcl = acl.some((e) => e.grantee === 'anon');
+        return (
+          fn.prosecdef === false &&
+          fn.owner_name === 'postgres' &&
+          hasSafeSearchPath &&
+          !hasPublicAcl &&
+          !hasAnonAcl &&
+          fn.anon_exec === false &&
+          fn.auth_exec === true &&
+          fn.service_exec === true
+        );
+      });
+
+    results.push({
+      test: '[B6-SEC] PG17 pg_proc/proacl: SECURITY INVOKER, search_path=pg_catalog,public, zero PUBLIC/anon EXECUTE',
+      expected: '2 RPC için INVOKER, pg_temp yok, PUBLIC/anon EXECUTE=false, authenticated/service_role EXECUTE=true',
+      actual: JSON.stringify(
+        procCatalog.rows.map((f) => ({
+          name: f.proname,
+          invoker: !f.prosecdef,
+          cfg: f.proconfig,
+          anon: f.anon_exec,
+          auth: f.auth_exec,
+          srv: f.service_exec,
+        }))
+      ),
+      passed: catalogValid,
+    });
+
+    const snapshotBeforeUnauthorized = await db.query(`
+      SELECT
+        (SELECT count(*)::int FROM public.restaurants) AS rest_cnt,
+        (SELECT count(*)::int FROM public.restaurant_notes) AS note_cnt,
+        (SELECT count(*)::int FROM public.groups) AS grp_cnt,
+        (SELECT count(*)::int FROM public.group_hotels) AS grp_hotel_cnt,
+        (SELECT location FROM public.restaurants WHERE id = $1::uuid) AS rest_loc,
+        (SELECT title FROM public.groups WHERE id = $2::uuid) AS grp_title;
+    `, [atomicRestId, atomicGroupId]);
+
+    const deniedActors = [
+      { label: 'anon', role: 'anon', sub: null, aal: null },
+      { label: 'normal_user_aal2', role: 'authenticated', sub: outsiderUuid, aal: 'aal2' },
+      { label: 'legacy_admin_aal2', role: 'authenticated', sub: adminUuid, aal: 'aal2' },
+      { label: 'cloud_admin_aal1', role: 'authenticated', sub: cloudAdminUuid, aal: 'aal1' },
+      { label: 'revoked_admin_aal2', role: 'authenticated', sub: revokedAdminUuid, aal: 'aal2' },
+    ];
+
+    let allActorsBlockedCleanly = true;
+    const deniedDetails = [];
+    for (const actor of deniedActors) {
+      const restIns = await expectRpcAuthBlock(
+        actor.role,
+        actor.sub,
+        actor.aal,
+        `SELECT public.ya_admin_save_restaurant(NULL, $1::jsonb, '[]'::jsonb);`,
+        [JSON.stringify({ category_id: categoryId, location: 'Hack', name: { tr: 'Hack' } })]
+      );
+      const restUpd = await expectRpcAuthBlock(
+        actor.role,
+        actor.sub,
+        actor.aal,
+        `SELECT public.ya_admin_save_restaurant($1::uuid, $2::jsonb, '[]'::jsonb);`,
+        [atomicRestId, JSON.stringify({ category_id: categoryId, location: 'HackUpd', name: { tr: 'HackUpd' } })]
+      );
+      const grpIns = await expectRpcAuthBlock(
+        actor.role,
+        actor.sub,
+        actor.aal,
+        `SELECT public.ya_admin_save_group(NULL, 'Hack Grup', ARRAY['evil.test'], ARRAY[$1::uuid]);`,
+        [validHotelId1]
+      );
+      const grpUpd = await expectRpcAuthBlock(
+        actor.role,
+        actor.sub,
+        actor.aal,
+        `SELECT public.ya_admin_save_group($1::uuid, 'Hack Grup Upd', ARRAY['evil.test'], ARRAY[$2::uuid]);`,
+        [atomicGroupId, validHotelId1]
+      );
+      if (!restIns.blocked || !restUpd.blocked || !grpIns.blocked || !grpUpd.blocked) {
+        allActorsBlockedCleanly = false;
+      }
+      deniedDetails.push(`${actor.label}:${restIns.blocked}/${restUpd.blocked}/${grpIns.blocked}/${grpUpd.blocked}`);
+    }
+
+    // Doğrudan SQL sınır kontrolleri (Server Action atlanarak gönderilen geçersiz değerler reddedilmeli)
+    async function expectRpcInputReject(sql, params) {
+      try {
+        await runAsUser('authenticated', cloudAdminUuid, 'aal2', () => db.query(sql, params));
+        return false;
+      } catch (err) {
+        return /invalid_restaurant|invalid_group|too_many/i.test(err.message);
+      }
+    }
+    const badRatingRejected = await expectRpcInputReject(
+      `SELECT public.ya_admin_save_restaurant($1::uuid, $2::jsonb, '[]'::jsonb);`,
+      [atomicRestId, JSON.stringify({ category_id: categoryId, location: 'Moda', name: { tr: 'X' }, google_rating: -1 })]
+    );
+    const badGroupHotelsRejected = await expectRpcInputReject(
+      `SELECT public.ya_admin_save_group($1::uuid, 'G', '{}'::text[], ARRAY(SELECT $2::uuid FROM generate_series(1, 21)));`,
+      [atomicGroupId, validHotelId1]
+    );
+
+    const snapshotAfterUnauthorized = await db.query(`
+      SELECT
+        (SELECT count(*)::int FROM public.restaurants) AS rest_cnt,
+        (SELECT count(*)::int FROM public.restaurant_notes) AS note_cnt,
+        (SELECT count(*)::int FROM public.groups) AS grp_cnt,
+        (SELECT count(*)::int FROM public.group_hotels) AS grp_hotel_cnt,
+        (SELECT location FROM public.restaurants WHERE id = $1::uuid) AS rest_loc,
+        (SELECT title FROM public.groups WHERE id = $2::uuid) AS grp_title;
+    `, [atomicRestId, atomicGroupId]);
+
+    const zeroMutationProven =
+      JSON.stringify(snapshotBeforeUnauthorized.rows[0]) ===
+      JSON.stringify(snapshotAfterUnauthorized.rows[0]);
+
+    // Pozitif doğrulama: yetkili aal2 Cloud Admin update & service_role RPC execution
+    const aal2UpdateOk = await runAsUser('authenticated', cloudAdminUuid, 'aal2', async () => {
+      const rUpd = await db.query(
+        `SELECT public.ya_admin_save_restaurant($1::uuid, $2::jsonb, $3::jsonb) AS id;`,
+        [
+          atomicRestId,
+          JSON.stringify({ category_id: categoryId, location: 'Moda Sahil, Kadıköy', name: { tr: 'Atomik Kahve v2' }, google_rating: 4.8 }),
+          JSON.stringify([{ emoji: '⭐', text: { tr: 'Güncel Not' }, display_order: 0 }]),
+        ]
+      );
+      const gUpd = await db.query(
+        `SELECT public.ya_admin_save_group($1::uuid, 'Güncel Grup v2', ARRAY['yeriniayir.com'], ARRAY[$2::uuid]) AS id;`,
+        [atomicGroupId, validHotelId1]
+      );
+      return rUpd.rows[0]?.id === atomicRestId && gUpd.rows[0]?.id === atomicGroupId;
+    });
+    const serviceRoleRpcOk = await runAsUser('service_role', null, null, async () => {
+      const gUpd2 = await db.query(
+        `SELECT public.ya_admin_save_group($1::uuid, 'Service Role Grup', ARRAY['yeriniayir.com'], ARRAY[$2::uuid]) AS id;`,
+        [atomicGroupId, validHotelId1]
+      );
+      return gUpd2.rows[0]?.id === atomicGroupId;
+    });
+
+    results.push({
+      test: '[B6-SEC] Doğrudan RPC aktör matrisi (5 yetkisiz rol + SQL sınırları -> 0 veri değişimi vs aal2/service_role ALLOW)',
+      expected: '5 yetkisiz aktör=BLOCK & SQL bounds=BLOCK & 0 veri değişimi & aal2+service_role ALLOW',
+      actual: `${deniedDetails.join(' | ')} | badRating=${badRatingRejected}, badGrp=${badGroupHotelsRejected}, zeroMut=${zeroMutationProven}, aal2Upd=${aal2UpdateOk}, srvOk=${serviceRoleRpcOk}`,
+      passed:
+        allActorsBlockedCleanly &&
+        badRatingRejected &&
+        badGroupHotelsRejected &&
+        zeroMutationProven &&
+        aal2UpdateOk &&
+        serviceRoleRpcOk,
+    });
+
     console.log('[AŞAMA 3] Test Sonuç Tablosu:');
     for (const r of results) {
       console.log(`  [${r.passed ? 'PASS ✅' : 'FAIL ❌'}] ${r.test}`);
