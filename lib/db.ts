@@ -5,6 +5,8 @@ import { fallbackArticles } from '@/data/fallbackArticles';
 import { doesArticleSupportLang } from '@/lib/localization';
 import { DEMO_HOTELS, DEMO_HOTEL_GROUPS, DEMO_TAGS, getDemoHotelById } from './demoHotels';
 
+const UUID_REGEX = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+const ARTICLE_SLUG_REGEX = /^[a-z0-9-]{1,120}$/i;
 
 export const db = {
   hotels: {
@@ -28,6 +30,7 @@ export const db = {
     async getById(id: string): Promise<Hotel | null> {
       const demo = getDemoHotelById(id);
       if (demo) return demo;
+      if (isSupabaseIsolated || !id || !UUID_REGEX.test(id)) return null;
 
       try {
         const { data, error } = await supabase
@@ -780,6 +783,23 @@ export const db = {
     },
 
     async getAllByLocation(location: string, lang: string = 'tr') {
+      const localMatches = () => {
+        const safeLoc = (location || '').toLowerCase();
+        const fallbackMatches = fallbackArticles.filter((a: any) =>
+          (a.location || '').toLowerCase().includes(safeLoc) && doesArticleSupportLang(a, lang)
+        );
+        const mockMatches = mockArticles.filter((a: any) =>
+          (a.location || '').toLowerCase().includes(safeLoc) && doesArticleSupportLang(a, lang)
+        );
+        const combined = [...fallbackMatches, ...mockMatches];
+        if (combined.length > 0) return combined;
+        return mockArticles.filter((a: any) => doesArticleSupportLang(a, lang)).slice(0, 3);
+      };
+
+      if (isSupabaseIsolated || !location || location.length > 80) {
+        return localMatches();
+      }
+
       try {
         const { data, error } = await supabase
           .from('articles')
@@ -787,7 +807,8 @@ export const db = {
           .ilike('location', `%${location}%`)
           .eq('is_published', true)
           .is('deleted_at', null)
-          .order('published_at', { ascending: false });
+          .order('published_at', { ascending: false })
+          .limit(20);
 
         if (error) throw error;
 
@@ -796,51 +817,31 @@ export const db = {
         // Return DB matches if found
         if (dbMatches.length > 0) return dbMatches;
 
-        // Fallback: search in fallbackArticles and mockArticles for matches
-        // FILTER: Only return fallback articles that support the requested language
-        const fallbackMatches = fallbackArticles.filter((a: any) =>
-          (a.location || '').toLowerCase().includes(location.toLowerCase()) && doesArticleSupportLang(a, lang)
-        );
-
-        const mockMatches = mockArticles.filter((a: any) =>
-          (a.location || '').toLowerCase().includes(location.toLowerCase()) && doesArticleSupportLang(a, lang)
-        );
-
-        const combined = [...fallbackMatches, ...mockMatches];
-        if (combined.length > 0) return combined;
-        return mockArticles.filter((a: any) => doesArticleSupportLang(a, lang)).slice(0, 3);
-
+        return localMatches();
       } catch (error) {
         console.warn('Error in getAllByLocation:', error);
-
-        // Fallback: search in fallbackArticles and mockArticles for matches
-        // FILTER: Only return fallback articles that support the requested language
-        const fallbackMatches = fallbackArticles.filter((a: any) =>
-          (a.location || '').toLowerCase().includes(location.toLowerCase()) && doesArticleSupportLang(a, lang)
-        );
-
-        const mockMatches = mockArticles.filter((a: any) =>
-          (a.location || '').toLowerCase().includes(location.toLowerCase()) && doesArticleSupportLang(a, lang)
-        );
-
-        const combined = [...fallbackMatches, ...mockMatches];
-        if (combined.length > 0) return combined;
-        return mockArticles.filter((a: any) => doesArticleSupportLang(a, lang)).slice(0, 3);
+        return localMatches();
       }
     },
 
     async getBySlug(slug: string) {
-      try {
-        const { data, error } = await supabase
-          .from('articles')
-          .select('*')
-          .or(`slug.eq.${slug},slug_en.eq.${slug}`)
-          .maybeSingle();
+      if (!slug || typeof slug !== 'string' || !ARTICLE_SLUG_REGEX.test(slug)) {
+        return null;
+      }
 
-        if (error) throw error;
-        if (data) return { ...data, slug_en: data.slug_en };
-      } catch (e) {
-        console.warn('Database error in getBySlug, using fallback:', e);
+      if (!isSupabaseIsolated) {
+        try {
+          const { data, error } = await supabase
+            .from('articles')
+            .select('*')
+            .or(`slug.eq.${slug},slug_en.eq.${slug}`)
+            .maybeSingle();
+
+          if (error) throw error;
+          if (data) return { ...data, slug_en: data.slug_en };
+        } catch (e) {
+          console.warn('Database error in getBySlug, using fallback:', e);
+        }
       }
 
       // Fallback: search in fallbackArticles and mockArticles

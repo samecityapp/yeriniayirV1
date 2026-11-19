@@ -3,6 +3,7 @@ import type { NextRequest } from 'next/server';
 import { cloudClient } from '@/lib/cloud/client';
 import { cloudConfig } from '@/lib/cloud/config';
 import { checkPilotAdmin, PILOT_PRIVATE_HEADERS, pilotAuthFailureHeaders } from '@/lib/pilot/adminAuth';
+import { evaluateEmergencyShedding } from '@/lib/pilot/emergencyMode';
 import {
   enforceEdgeMemoryShield,
   enforceRateLimit,
@@ -44,43 +45,43 @@ const API_ROUTE_RULES: Record<string, ApiRouteRule> = {
   '/api/gastronomy-admin/login': {
     methods: ['POST'],
     tier: 'admin_auth',
-    mode: 'upstash',
+    mode: 'edge-shield',
     isAdmin: true,
   },
   '/api/gastronomy-admin/logout': {
     methods: ['POST'],
     tier: 'admin_read',
-    mode: 'upstash',
+    mode: 'edge-shield',
     isAdmin: true,
   },
   '/api/gastronomy-admin/publish': {
     methods: ['POST'],
     tier: 'costly_admin',
-    mode: 'upstash',
+    mode: 'edge-shield',
     isAdmin: true,
   },
   '/api/gastronomy-admin/session': {
     methods: ['GET', 'HEAD'],
     tier: 'admin_read',
-    mode: 'upstash',
+    mode: 'edge-shield',
     isAdmin: true,
   },
   '/api/gastronomy-admin/workspace': {
     methods: ['GET', 'HEAD'],
     tier: 'admin_read',
-    mode: 'upstash',
+    mode: 'edge-shield',
     isAdmin: true,
   },
   '/api/gastronomy-admin/jobs': {
     methods: ['GET', 'HEAD'],
     tier: 'admin_read',
-    mode: 'upstash',
+    mode: 'edge-shield',
     isAdmin: true,
   },
   '/api/gastronomy-admin/research': {
     methods: ['GET', 'HEAD'],
     tier: 'costly_admin',
-    mode: 'upstash',
+    mode: 'edge-shield',
     isAdmin: true,
   },
 };
@@ -524,6 +525,29 @@ export async function middleware(request: NextRequest) {
         );
       }
     }
+  }
+
+  const shed = evaluateEmergencyShedding(canonical, request.method);
+  if (shed.shed) {
+    if (shed.status === 202) {
+      return NextResponse.json(
+        { success: true, recorded: false, shed: true },
+        { status: 202, headers: privateSecurityHeaders({ 'X-Emergency-Mode': shed.mode }) }
+      );
+    }
+    const headers = privateSecurityHeaders({
+      'Retry-After': '120',
+      'X-Emergency-Mode': shed.mode,
+    });
+    return shed.asJson
+      ? NextResponse.json(
+          { error: 'Service temporarily shed due to high traffic', reason: shed.reason },
+          { status: 503, headers }
+        )
+      : new NextResponse('Service temporarily unavailable due to high traffic', {
+          status: 503,
+          headers,
+        });
   }
 
   const isApi = canonical === '/api' || canonical.startsWith('/api/');

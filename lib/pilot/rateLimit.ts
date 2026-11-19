@@ -1,3 +1,4 @@
+import { validUpstashConfig } from './rateLimitConfig';
 import { Ratelimit } from '@upstash/ratelimit';
 import { Redis } from '@upstash/redis';
 
@@ -99,21 +100,50 @@ const TIER_CONFIGS: Record<RateLimitTier, TierConfig> = {
   },
 };
 
-const MAX_MEMORY_BUCKETS = 4096;
+const MAX_ADMIN_BUCKETS = 1024;
+const MAX_IP_BUCKETS = 2048;
+const MAX_VISITOR_BUCKETS = 4096;
+const MAX_IP_UA_TRACKERS = 2048;
+const MAX_DISTINCT_UAS_PER_IP_WINDOW = 40;
+const UA_CHURN_WINDOW_MS = 10_000;
 const UPSTASH_TIMEOUT_MS = 1500;
+const UPSTASH_CIRCUIT_COOLDOWN_MS = 10_000;
+
+const CLI_BOT_SUBCAP: WindowSpec = {
+  limit: 6,
+  windowMs: 10_000,
+  windowText: '10 s',
+};
+
+const AUTOMATED_CLI_UA_RE =
+  /^(?:curl|wget|python-requests|python-urllib|go-http-client|scrapy|httpie|libwww-perl|java\/|okhttp\/)/i;
 
 interface SlidingBucket {
   timestamps: number[];
   expiresAt: number;
 }
 
-const memoryBuckets = new Map<string, SlidingBucket>();
+interface IpUaTracker {
+  keys: Set<string>;
+  expiresAt: number;
+}
 
+// Isolated pools prevent visitor UA churn from evicting IP ceilings or admin rate limits.
+const adminBuckets = new Map<string, SlidingBucket>();
+const ipCeilingBuckets = new Map<string, SlidingBucket>();
+const visitorDeviceBuckets = new Map<string, SlidingBucket>();
+const ipUaSets = new Map<string, IpUaTracker>();
+
+let upstashOutageUntil = 0;
 let cachedRedisSignature: string | null = null;
 const cachedUpstashLimiters = new Map<string, Ratelimit>();
 
 export function resetMemoryRateLimitersForTests(): void {
-  memoryBuckets.clear();
+  adminBuckets.clear();
+  ipCeilingBuckets.clear();
+  visitorDeviceBuckets.clear();
+  ipUaSets.clear();
+  upstashOutageUntil = 0;
   cachedRedisSignature = null;
   cachedUpstashLimiters.clear();
 }
@@ -122,7 +152,33 @@ export function isRateLimitActive(): boolean {
   return process.env.NODE_ENV === 'production' || process.env.RATE_LIMIT_ENFORCE === '1';
 }
 
+export function isAutomatedCliUserAgent(uaRaw: string | null): boolean {
+  const ua = (uaRaw || '').trim();
+  if (ua.length < 4) return true;
+  return AUTOMATED_CLI_UA_RE.test(ua);
+}
+
+export function resolveCriticalOutageMode(env: NodeJS.ProcessEnv = process.env): 'block' | 'emergency' {
+  const explicit = (env.RATE_LIMIT_CRITICAL_OUTAGE_MODE || '').trim().toLowerCase();
+  if (explicit === 'block') return 'block';
+  if (explicit === 'emergency') return 'emergency';
+  if (env.APP_ENVIRONMENT === 'production' || env.VERCEL_ENV === 'production') {
+    return 'block';
+  }
+  return 'emergency';
+}
+
 export function extractClientIp(headers: Headers): string {
+  if (process.env.VERCEL === '1') {
+    const vercelForwarded = headers.get('x-vercel-forwarded-for')?.split(',')[0]?.trim();
+    if (vercelForwarded) return vercelForwarded.slice(0, 64);
+
+    const realIp = headers.get('x-real-ip')?.trim();
+    if (realIp) return realIp.slice(0, 64);
+
+    return '127.0.0.1';
+  }
+
   const realIp = headers.get('x-real-ip')?.trim();
   if (realIp) return realIp.slice(0, 64);
 
@@ -163,33 +219,51 @@ export async function buildVisitorClientKey(headers: Headers): Promise<string> {
   return sha256Hex32(`${ip}|${utcDay}|${ua}|${acceptLang}|${mobileHint}`);
 }
 
-function pruneMemoryBuckets(now: number): void {
-  for (const [k, bucket] of Array.from(memoryBuckets.entries())) {
-    if (bucket.expiresAt <= now) {
-      memoryBuckets.delete(k);
+function purgeExpiredEntries<T extends { expiresAt: number }>(
+  pool: Map<string, T>,
+  now: number
+): void {
+  for (const [k, entry] of Array.from(pool.entries())) {
+    if (entry.expiresAt <= now) {
+      pool.delete(k);
     }
   }
-  while (memoryBuckets.size >= MAX_MEMORY_BUCKETS) {
-    const oldest = memoryBuckets.keys().next().value;
+}
+
+function pruneMapPool<T extends { expiresAt: number }>(
+  pool: Map<string, T>,
+  maxEntries: number,
+  now: number
+): void {
+  purgeExpiredEntries(pool, now);
+  while (pool.size >= maxEntries) {
+    const oldest = pool.keys().next().value;
     if (!oldest) break;
-    memoryBuckets.delete(oldest);
+    pool.delete(oldest);
   }
 }
 
 function consumeSlidingWindow(
+  pool: Map<string, SlidingBucket>,
+  maxEntries: number,
   bucketKey: string,
   spec: WindowSpec,
   now: number
 ): { success: boolean; limit: number; remaining: number; reset: number } {
-  pruneMemoryBuckets(now);
+  purgeExpiredEntries(pool, now);
   const cutoff = now - spec.windowMs;
-  const existing = memoryBuckets.get(bucketKey);
+  const existing = pool.get(bucketKey);
+  // Never evict live counters: rotating identities must not reset another budget.
+  if (!existing && pool.size >= maxEntries) {
+    const earliestExpiry = Math.min(...Array.from(pool.values(), (b) => b.expiresAt));
+    return { success: false, limit: spec.limit, remaining: 0, reset: Math.ceil(earliestExpiry / 1000) };
+  }
   const timestamps = existing ? existing.timestamps.filter((t) => t > cutoff) : [];
 
   if (timestamps.length >= spec.limit) {
-    const oldest = timestamps[0] || now;
+    const oldest = timestamps[0] ?? now;
     const resetMs = oldest + spec.windowMs;
-    memoryBuckets.set(bucketKey, { timestamps, expiresAt: resetMs });
+    pool.set(bucketKey, { timestamps, expiresAt: timestamps[timestamps.length - 1] + spec.windowMs });
     return {
       success: false,
       limit: spec.limit,
@@ -199,15 +273,39 @@ function consumeSlidingWindow(
   }
 
   timestamps.push(now);
-  const oldest = timestamps[0] || now;
+  const oldest = timestamps[0] ?? now;
   const resetMs = oldest + spec.windowMs;
-  memoryBuckets.set(bucketKey, { timestamps, expiresAt: resetMs });
+  pool.set(bucketKey, { timestamps, expiresAt: timestamps[timestamps.length - 1] + spec.windowMs });
   return {
     success: true,
     limit: spec.limit,
     remaining: Math.max(0, spec.limit - timestamps.length),
     reset: Math.ceil(resetMs / 1000),
   };
+}
+
+function resolveVisitorPrimaryKey(
+  scope: string,
+  tier: RateLimitTier,
+  ipHash: string,
+  rawPrimaryKey: string,
+  now: number
+): string {
+  pruneMapPool(ipUaSets, MAX_IP_UA_TRACKERS, now);
+  const trackerKey = `${scope}:${tier}:${ipHash}`;
+  let tracker = ipUaSets.get(trackerKey);
+  if (!tracker || tracker.expiresAt <= now) {
+    tracker = { keys: new Set<string>(), expiresAt: now + UA_CHURN_WINDOW_MS };
+    ipUaSets.set(trackerKey, tracker);
+  }
+  if (tracker.keys.has(rawPrimaryKey)) {
+    return rawPrimaryKey;
+  }
+  if (tracker.keys.size < MAX_DISTINCT_UAS_PER_IP_WINDOW) {
+    tracker.keys.add(rawPrimaryKey);
+    return rawPrimaryKey;
+  }
+  return `${ipHash}:ua-churn`;
 }
 
 function hasValidUpstashConfig(): { url: string; token: string } | null {
@@ -244,6 +342,7 @@ function getUpstashLimiter(
     limiter: Ratelimit.slidingWindow(spec.limit, spec.windowText),
     analytics: false,
     prefix: `@upstash/ratelimit/${limiterName}`,
+    timeout: 0, // Disable SDK fail-open timeout; our timeout rejects into outage policy.
   });
   cachedUpstashLimiters.set(limiterName, limiter);
   return limiter;
@@ -309,6 +408,7 @@ function enforceLayer1(
   tier: RateLimitTier,
   primaryKey: string,
   ipHash: string,
+  isCliBot: boolean,
   now: number,
   useOutageSpecs: boolean
 ): RateLimitResult {
@@ -318,13 +418,36 @@ function enforceLayer1(
   const policy: RateLimitPolicySource = useOutageSpecs ? 'emergency-fallback' : 'memory-fallback';
 
   if (ipCeilingSpec) {
-    const ipRes = consumeSlidingWindow(`${scope}:${useOutageSpecs ? 'outage:' : ''}${tier}:ip:${ipHash}`, ipCeilingSpec, now);
+    const ipRes = consumeSlidingWindow(
+      ipCeilingBuckets,
+      MAX_IP_BUCKETS,
+      `${scope}:${useOutageSpecs ? 'outage:' : ''}${tier}:ip:${ipHash}`,
+      ipCeilingSpec,
+      now
+    );
     if (!ipRes.success) {
-      return buildResult(429, ipRes.limit, ipRes.remaining, ipRes.reset, useOutageSpecs ? 'emergency-fallback' : policy);
+      return buildResult(429, ipRes.limit, ipRes.remaining, ipRes.reset, policy);
     }
   }
 
+  if (cfg.mode === 'visitor' && isCliBot) {
+    const cliRes = consumeSlidingWindow(
+      ipCeilingBuckets,
+      MAX_IP_BUCKETS,
+      `${scope}:${useOutageSpecs ? 'outage:' : ''}${tier}:cli:${ipHash}`,
+      CLI_BOT_SUBCAP,
+      now
+    );
+    if (!cliRes.success) {
+      return buildResult(429, cliRes.limit, cliRes.remaining, cliRes.reset, policy);
+    }
+  }
+
+  const primaryPool = cfg.mode === 'visitor' ? visitorDeviceBuckets : adminBuckets;
+  const primaryMax = cfg.mode === 'visitor' ? MAX_VISITOR_BUCKETS : MAX_ADMIN_BUCKETS;
   const pRes = consumeSlidingWindow(
+    primaryPool,
+    primaryMax,
     `${scope}:${useOutageSpecs ? 'outage:' : ''}${tier}:p:${primaryKey}`,
     primarySpec,
     now
@@ -335,7 +458,13 @@ function enforceLayer1(
 
   // Check outage global circuit-breaker AFTER per-key checks so one throttled IP cannot exhaust global admin budget.
   if (useOutageSpecs && cfg.outageGlobal) {
-    const gRes = consumeSlidingWindow(`${scope}:outage:${tier}:__global__`, cfg.outageGlobal, now);
+    const gRes = consumeSlidingWindow(
+      adminBuckets,
+      MAX_ADMIN_BUCKETS,
+      `${scope}:outage:${tier}:__global__`,
+      cfg.outageGlobal,
+      now
+    );
     if (!gRes.success) {
       return buildResult(429, gRes.limit, gRes.remaining, gRes.reset, 'emergency-fallback');
     }
@@ -367,13 +496,34 @@ export async function enforceEdgeMemoryShield(
   const ip = extractClientIp(headers);
   const utcDay = new Date(now).toISOString().slice(0, 10);
   const ipHash = await sha256Hex32(`${ip}|${utcDay}`);
-  const primaryKey = cfg.mode === 'visitor' ? await buildVisitorClientKey(headers) : ipHash;
+  const isCliBot = cfg.mode === 'visitor' && isAutomatedCliUserAgent(headers.get('user-agent'));
+  const rawPrimaryKey = cfg.mode === 'visitor' ? await buildVisitorClientKey(headers) : ipHash;
+  const primaryKey =
+    cfg.mode === 'visitor'
+      ? resolveVisitorPrimaryKey(scope, tier, ipHash, rawPrimaryKey, now)
+      : rawPrimaryKey;
 
-  const l1 = enforceLayer1(scope, tier, primaryKey, ipHash, now, false);
+  const l1 = enforceLayer1(scope, tier, primaryKey, ipHash, isCliBot, now, false);
   if (!l1.ok) {
     return buildResult(429, l1.limit, l1.remaining, l1.reset, 'memory-l1');
   }
   return buildResult(200, l1.limit, l1.remaining, l1.reset, 'memory-l1');
+}
+
+function handleCriticalOutageFallback(
+  scope: string,
+  tier: RateLimitTier,
+  cfg: TierConfig,
+  primaryKey: string,
+  ipHash: string,
+  isCliBot: boolean,
+  now: number
+): RateLimitResult {
+  if (cfg.isCritical && resolveCriticalOutageMode() === 'block') {
+    const reset = Math.ceil((now + cfg.outagePrimary.windowMs) / 1000);
+    return buildResult(503, 0, 0, reset, 'outage-blocked');
+  }
+  return enforceLayer1(scope, tier, primaryKey, ipHash, isCliBot, now, true);
 }
 
 export async function enforceRateLimit(
@@ -399,17 +549,31 @@ export async function enforceRateLimit(
   const ip = extractClientIp(headers);
   const utcDay = new Date(now).toISOString().slice(0, 10);
   const ipHash = await sha256Hex32(`${ip}|${utcDay}`);
-  const primaryKey = cfg.mode === 'visitor' ? await buildVisitorClientKey(headers) : ipHash;
+  const isCliBot = cfg.mode === 'visitor' && isAutomatedCliUserAgent(headers.get('user-agent'));
+  const rawPrimaryKey = cfg.mode === 'visitor' ? await buildVisitorClientKey(headers) : ipHash;
+  const primaryKey =
+    cfg.mode === 'visitor'
+      ? resolveVisitorPrimaryKey(scope, tier, ipHash, rawPrimaryKey, now)
+      : rawPrimaryKey;
 
   // Layer 1: Bounded in-memory shield stops floods BEFORE invoking Upstash.
-  const l1 = enforceLayer1(scope, tier, primaryKey, ipHash, now, false);
+  const l1 = enforceLayer1(scope, tier, primaryKey, ipHash, isCliBot, now, false);
   if (!l1.ok) {
     return buildResult(429, l1.limit, l1.remaining, l1.reset, 'memory-l1');
   }
 
   const upstashCfg = hasValidUpstashConfig();
   if (!upstashCfg) {
+    if (cfg.isCritical && resolveCriticalOutageMode() === 'block') {
+      const reset = Math.ceil((now + cfg.outagePrimary.windowMs) / 1000);
+      return buildResult(503, 0, 0, reset, 'outage-blocked');
+    }
     return l1;
+  }
+
+  // Cooldown circuit breaker skips hanging 1500ms Upstash timeouts during active outages.
+  if (now < upstashOutageUntil) {
+    return handleCriticalOutageFallback(scope, tier, cfg, primaryKey, ipHash, isCliBot, now);
   }
 
   // Layer 2: Distributed Upstash Redis sliding window.
@@ -440,6 +604,7 @@ export async function enforceRateLimit(
       }
     }
 
+    upstashOutageUntil = 0;
     return buildResult(
       200,
       pRemote.limit || cfg.primary.limit,
@@ -448,11 +613,9 @@ export async function enforceRateLimit(
       'upstash'
     );
   } catch (err) {
-    console.warn(`Rate limiter Upstash failure for ${scope}:${tier}; switching to emergency fallback:`, err);
-    if (cfg.isCritical && process.env.RATE_LIMIT_CRITICAL_OUTAGE_MODE === 'block') {
-      const reset = Math.ceil((now + cfg.outagePrimary.windowMs) / 1000);
-      return buildResult(503, 0, 0, reset, 'outage-blocked');
-    }
-    return enforceLayer1(scope, tier, primaryKey, ipHash, now, true);
+    // Log only error name (never full SDK exception objects containing URLs/headers).
+    upstashOutageUntil = Date.now() + UPSTASH_CIRCUIT_COOLDOWN_MS;
+    console.warn(`Rate limiter Upstash failure for ${scope}:${tier} (${(err as Error)?.name || 'Error'}); circuit breaker engaged.`);
+    return handleCriticalOutageFallback(scope, tier, cfg, primaryKey, ipHash, isCliBot, now);
   }
 }

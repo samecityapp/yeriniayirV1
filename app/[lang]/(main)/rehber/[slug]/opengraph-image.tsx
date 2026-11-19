@@ -9,10 +9,18 @@ export const size = {
   height: 630,
 };
 export const contentType = 'image/png';
+const SLUG_REGEX = /^[a-z0-9-]{1,120}$/i;
 
 export default async function Image({ params }: { params: { slug: string } }) {
+  const slug = params?.slug || '';
+  if (!SLUG_REGEX.test(slug)) {
+    return new Response('Not Found', {
+      status: 404,
+      headers: { 'Cache-Control': 'public, max-age=60, s-maxage=300' },
+    });
+  }
   try {
-    const article = await db.articles.getBySlug(params.slug);
+    const article = await db.articles.getBySlug(slug);
 
     if (!article) {
       return new ImageResponse(

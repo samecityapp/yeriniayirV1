@@ -1,5 +1,6 @@
 import { ImageResponse } from 'next/og';
 import { db } from '@/lib/db';
+import { getDemoHotelById } from '@/lib/demoHotels';
 import { getLocalizedText } from '@/lib/localization';
 
 export const runtime = 'edge';
@@ -9,10 +10,18 @@ export const size = {
   height: 630,
 };
 export const contentType = 'image/png';
+const HOTEL_UUID_REGEX = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
 export default async function Image({ params }: { params: { id: string } }) {
+  const id = params?.id || '';
+  if (!getDemoHotelById(id) && !HOTEL_UUID_REGEX.test(id)) {
+    return new Response('Not Found', {
+      status: 404,
+      headers: { 'Cache-Control': 'public, max-age=60, s-maxage=300' },
+    });
+  }
   try {
-    const hotel = await db.hotels.getById(params.id);
+    const hotel = await db.hotels.getById(id);
 
     if (!hotel) {
       return new ImageResponse(

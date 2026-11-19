@@ -665,6 +665,7 @@ export function GastronomyPageClient({
 
   const regionCacheRef = useRef<Map<string, StaticRegionVenuePayload>>(new Map());
   const inFlightRequestsRef = useRef<Map<string, Promise<StaticRegionVenuePayload>>>(new Map());
+  const failedRegionCooldownRef = useRef<Map<string, number>>(new Map());
   const activeRegionRequestRef = useRef<string | null>(initialLocation?.slug || null);
 
   if (initialLocation && discovery.venues.length > 0 && !regionCacheRef.current.has(initialLocation.slug)) {
@@ -734,7 +735,11 @@ export function GastronomyPageClient({
         }
         const payload = (await res.json()) as StaticRegionVenuePayload;
         regionCacheRef.current.set(slug, payload);
+        failedRegionCooldownRef.current.delete(slug);
         return payload;
+      } catch (err) {
+        failedRegionCooldownRef.current.set(slug, Date.now() + 5000);
+        throw err;
       } finally {
         clearTimeout(timer);
       }
@@ -746,8 +751,9 @@ export function GastronomyPageClient({
     return requestPromise;
   }, []);
 
-  const syncFromBrowserUrl = useCallback(() => {
-    if (typeof window === 'undefined') return;
+  const syncFromBrowserUrl = useCallback(
+    (options?: { bypassErrorCooldown?: boolean }) => {
+      if (typeof window === 'undefined') return;
     const params = new URLSearchParams(window.location.search);
     const hasRegionParam = params.has('region');
     const rParam = params.get('region') || (hasRegionParam ? '' : initialLocationSlug || '');
@@ -803,6 +809,14 @@ export function GastronomyPageClient({
       return;
     }
 
+    const cooldownUntil = failedRegionCooldownRef.current.get(location.slug) || 0;
+    if (!options?.bypassErrorCooldown && cooldownUntil > Date.now()) {
+      setActivePayload(null);
+      setIsRegionLoading(false);
+      setRegionLoadError('Bölge verileri yüklenemedi. Lütfen tekrar deneyin.');
+      return;
+    }
+
     setActivePayload(null);
     setIsRegionLoading(true);
     setSelectedCategorySlug(cParam);
@@ -847,6 +861,7 @@ export function GastronomyPageClient({
       try {
         localStorage.setItem(FOOD_DISCOVERY.storage.lastRegionKey, loc.slug);
       } catch {}
+      failedRegionCooldownRef.current.delete(loc.slug);
 
       const cached = regionCacheRef.current.get(loc.slug);
       const currentParams =
@@ -1134,7 +1149,7 @@ export function GastronomyPageClient({
                 <p>{regionLoadError}</p>
                 <button
                   type="button"
-                  onClick={() => syncFromBrowserUrl()}
+                  onClick={() => syncFromBrowserUrl({ bypassErrorCooldown: true })}
                   className="inline-flex items-center px-4 py-2 rounded-full bg-[#C42B1C] hover:bg-[#A61E11] text-white text-xs font-bold transition-colors"
                 >
                   Tekrar Dene

@@ -5,6 +5,7 @@ import { headers } from 'next/headers';
 import { z } from 'zod';
 import { requireOfferAdminAccess } from '@/lib/admin/offerAdminGuard';
 import { offers } from '@/lib/offers';
+import { getEmergencyMode } from '@/lib/pilot/emergencyMode';
 import { enforceRateLimit } from '@/lib/pilot/rateLimit';
 import { IncludedItem } from '@/lib/types';
 
@@ -100,6 +101,13 @@ function revalidateOfferUrls(...slugs: Array<string | null | undefined>) {
 }
 
 async function authorizeAndRateLimitOfferAction() {
+  if (getEmergencyMode() === 'lockdown') {
+    return {
+      ok: false as const,
+      error: 'Acil durum kilidi aktif.',
+      status: 503,
+    };
+  }
   const rl = await enforceRateLimit(await headers(), 'costly_admin', { scope: 'action' });
   if (!rl.ok) {
     return {
